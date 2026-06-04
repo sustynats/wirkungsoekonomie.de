@@ -234,6 +234,35 @@ const overrides = {
       ["Verlustangst sinkt.", "Loss Aversion", "Wasserstoff beruhigt Angst vor Heizungs- oder Autoverlust.", "Sorge anerkennen und No-Regret-Priorität erklären."],
     ],
   },
+  "e-fuels-retten-den-verbrenner": {
+    claim: "E-Fuels retten den Verbrenner.",
+    short: "Wahrer Spezialanwendungs-Kern, falsches Verbrenner-Rettungsnarrativ.",
+    say: "E-Fuels ja - aber nicht als Ausrede für den Verbrenner-Massenmarkt.",
+    live:
+      "E-Fuels funktionieren technisch. Der Denkfehler ist, daraus eine Massenlösung für Pkw zu machen. Für Autos nutzt der Akku denselben grünen Strom viel effizienter; E-Fuels brauchen wir eher für Flugzeuge, Schiffe und Spezialfälle.",
+    panel:
+      "E-Fuels sind nicht Unsinn. Sie sind wichtig für Anwendungen, die sich schwer direkt elektrifizieren lassen: Luftfahrt, Schifffahrt, Spezialmaschinen, kritische Infrastruktur oder begrenzte Bestandsflotten. Aber der Pkw-Massenmarkt ist der falsche Hauptpfad, weil der Umweg über Wasserstoff, CO2, Synthese, Transport und Verbrennung sehr viel erneuerbaren Strom verliert.",
+    exampleTitle: "Flugzeug vs. Stadtauto",
+    example:
+      "Ein Flugzeug braucht vielleicht synthetische Moleküle, weil Batterien zu schwer sind. Ein Stadtauto kann direkt mit Strom geladen werden. Dass E-Fuels für Flugzeuge sinnvoll sein können, heißt nicht, dass sie für Millionen Pkw sinnvoll sind.",
+    question: "Redest du über E-Fuels für Flugzeuge und Schiffe - oder über E-Fuels als Vorwand, den normalen Pkw-Verbrenner weiterzuführen?",
+    oldFrame: "E-Fuels retten den Verbrenner.",
+    notThis: "E-Fuels sind Unsinn.",
+    better: "Wo erzeugt dieselbe Kilowattstunde erneuerbarer Strom die höchste Netto-Wirkung?",
+    impacts: [
+      ["Effizienz", "Der Pkw-E-Fuel-Pfad verliert über mehrere Umwandlungsschritte viel Energie.", "Direktpfad mitprüfen."],
+      ["Knappheit", "Synthetische Kraftstoffe bleiben absehbar knapp und teuer.", "Priorität statt Wunschliste."],
+      ["Luftfahrt", "E-Kerosin kann für Flugverkehr wichtig sein.", "Spezialanwendung anerkennen."],
+      ["Schifffahrt", "Methanol, Ammoniak oder andere Derivate können relevant werden.", "Molekül-Hierarchie anwenden."],
+      ["Industrie", "Autojobs schützt man durch neue Wertschöpfung, nicht durch Restlauf-Rhetorik.", "Batterie, Software, Leistungselektronik, Laden und Recycling nennen."],
+      ["Demokratie", "Technologieoffenheit darf nicht zur Unentschiedenheit werden.", "Wirkungsoffenheit verlangen."],
+    ],
+    psychology: [
+      ["Alles kann bleiben.", "Status-quo-Bias", "E-Fuels versprechen Auto, Motor, Tankstelle und Fahrgefühl ohne großen Umbau.", "Spezialfall und Massenmarkt trennen."],
+      ["Verlustangst sinkt.", "Loss Aversion", "Der Frame beruhigt Angst vor Wertverlust, Verboten und Industriebruch.", "Sorge anerkennen, aber Wirkungspfad prüfen."],
+      ["Technik rettet es.", "Technological Fix Bias", "Technische Machbarkeit wird zur Systemlösung überdehnt.", "Effizienz, Menge, Kosten und Zeitfenster sichtbar machen."],
+    ],
+  },
   "radwege-in-peru": {
     claim: "Für Radwege in Peru ist Geld da, aber für unsere Probleme nicht.",
     short: "Wahrer Prioritätenkern, falscher Steuergeld-Frame.",

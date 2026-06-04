@@ -952,7 +952,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Fossile Mobilität bleibt länger bestehen, wenn Herstellung isoliert betrachtet wird.", "critical"],
       ["WÖk-Lösung", "Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Batteriechemie, Ladequelle, Lebensdauer, Brandrisiko und Recycling.", "positive"],
     ],
-    claims: ["e-autos-schlimmer-als-verbrenner", "batterien-sind-nicht-recyclebar", "wasserstoff-fuer-alles"],
+    claims: ["e-autos-schlimmer-als-verbrenner", "batterien-sind-nicht-recyclebar", "wasserstoff-fuer-alles", "e-fuels-retten-den-verbrenner"],
   },
   {
     slug: "kernenergie-fusion",
@@ -980,7 +980,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Zukunftsinvestitionen werden blockiert, alte Abhängigkeiten bleiben bestehen.", "critical"],
       ["WÖk-Lösung", "Industriepolitik nach Zukunftswirkung: Netze, sauberer Strom, Kreislaufwirtschaft und Qualifizierung.", "positive"],
     ],
-    claims: ["klimaschutz-deindustrialisiert-deutschland", "wasserstoff-fuer-alles"],
+    claims: ["klimaschutz-deindustrialisiert-deutschland", "wasserstoff-fuer-alles", "e-fuels-retten-den-verbrenner"],
   },
 ];
 
@@ -2089,6 +2089,103 @@ const claims = [
     ],
   },
   {
+    title: "E-Fuels retten den Verbrenner?",
+    slug: "e-fuels-retten-den-verbrenner",
+    claimPhrase: "„E-Fuels retten den Verbrenner.“",
+    shortJudgement: "Wahrer Spezialanwendungs-Kern, falsches Verbrenner-Rettungsnarrativ.",
+    narrativeFamilies: ["Verbrenner-Rettungsnarrativ", "Technologieoffenheit als Verzögerung", "Weiter-tanken-wie-bisher", "Auto-Freiheitsframe", "Industriearbeitsplatz-Schutzframe"],
+    riskLevel: "hoch",
+    themes: ["E-Fuels", "Mobilität", "Autoindustrie", "Luftfahrt", "Schifffahrt", "Industrie", "Steuergeld"],
+    sdgs: ["SDG 3", "SDG 6", "SDG 7", "SDG 8", "SDG 9", "SDG 11", "SDG 12", "SDG 13", "SDG 16"],
+    sdgPlus: ["Quellenklarheit", "Diskursfähigkeit", "Schutz vor Technologie-Hype", "institutionelles Vertrauen", "Transformationsresilienz", "Industrie- und Beschäftigungssicherheit"],
+    subtitle: "Warum synthetische Kraftstoffe wichtig sind - aber nicht für den Pkw-Massenmarkt.",
+    abstract:
+      "Die Aussage „E-Fuels retten den Verbrenner“ enthält einen wahren Kern: Synthetische Kraftstoffe können mit erneuerbarem Strom, Wasserstoff und CO2 hergestellt werden und dort wichtig werden, wo direkte Elektrifizierung kaum möglich ist - etwa in Teilen der Luftfahrt, Schifffahrt, bestimmten Spezialanwendungen, Bestandsflotten oder kritischen Einsatzbereichen. Irreführend wird das Narrativ, wenn daraus folgt, der normale Pkw-Verbrenner könne einfach klimaneutral weiterlaufen. Denn E-Fuels sind energieintensiv, knapp, teuer und ineffizient. Eine Kilowattstunde erneuerbarer Strom bringt im batterieelektrischen Auto deutlich mehr Fahrleistung als über den Umweg Strom, Wasserstoff, Synthesekraftstoff und Verbrennungsmotor. Wirkungsökonomisch ist E-Fuel kein Freiheitsversprechen, sondern eine knappe Systemressource.",
+    summary: {
+      judgement: "Wahrer Spezialanwendungs-Kern, falsches Verbrenner-Rettungsnarrativ.",
+      true_core: "E-Fuels können für Luftfahrt, Schifffahrt, Spezialanwendungen, kritische Infrastruktur und begrenzte Bestandsflotten wichtig werden.",
+      problem: "Aus dieser Spezialrolle wird ein Rettungsnarrativ für den normalen Pkw-Verbrenner gemacht.",
+      narrative: "Verbrenner-Rettungsnarrativ / Weiter-tanken-wie-bisher / Technologieoffenheit als Verzögerung.",
+      risk: "Knapper erneuerbarer Strom wird ineffizient eingesetzt; E-Mobilität, Ladeinfrastruktur, E-Lkw, Schiene und klare Standards werden verzögert.",
+      host_answer: "E-Fuels ja. Aber nicht als Ausrede für den Verbrenner-Massenmarkt.",
+    },
+    answers: {
+      ten_seconds: "E-Fuels funktionieren technisch. Der Denkfehler ist, daraus eine Massenlösung für Pkw zu machen. Für Autos nutzt der Akku denselben grünen Strom viel effizienter; E-Fuels brauchen wir eher für Flugzeuge, Schiffe und Spezialfälle.",
+      thirty_seconds:
+        "Der wahre Kern ist: E-Fuels können klimaneutrale Moleküle liefern, wo Batterien schwierig sind. Der Denkfehler ist: damit den normalen Verbrenner retten zu wollen. Beispiel: Wenn ich grünen Strom direkt in ein E-Auto lade, bewegt er das Auto fast direkt. Wenn ich daraus erst Wasserstoff mache, dann synthetischen Kraftstoff, ihn transportiere und im Motor verbrenne, verliere ich sehr viel Energie. Deshalb gehören E-Fuels zuerst in Flugzeuge, Schiffe, Chemie oder Spezialanwendungen - nicht in Millionen Alltags-Pkw.",
+      two_minutes:
+        "E-Fuels sind nicht Unsinn. Sie sind sogar wichtig. Wir werden klimaneutrale Moleküle brauchen: für Flugzeuge, Schiffe, bestimmte Industrieprozesse, vielleicht für Spezialmaschinen, Militär, Rettungsdienste, Oldtimer oder Bestandsflotten, die nicht schnell elektrifiziert werden können. Der Fehler beginnt, wenn aus dieser Spezialrolle ein Rettungsnarrativ für den normalen Pkw-Verbrenner wird. Der Grund ist einfach: E-Fuels brauchen sehr viel erneuerbaren Strom. Aus Strom wird erst Wasserstoff. Dann braucht man CO2, Syntheseanlagen, Raffination, Transport, Tankstellenlogik und am Ende einen Verbrennungsmotor. Jeder Schritt verliert Energie. Ein Akkuauto nutzt den Strom viel direkter. Anschaulich: Mit derselben Menge grünem Strom fährt ein E-Auto viele Kilometer. Der E-Fuel-Verbrenner macht aus einem großen Teil dieser Energie erst Wärme, Verluste und Abgasbehandlung. Das heißt nicht, dass E-Fuels verboten oder lächerlich sind. Es heißt: Sie sind zu wertvoll für den falschen Einsatz. Wenn wir knappe erneuerbare Energie in Pkw-E-Fuels stecken, fehlt sie dort, wo wir kaum Alternativen haben: Luftfahrt, Schifffahrt, Stahl, Chemie, Langzeitspeicher oder Spezialanwendungen. Wirkungsökonomisch zählt nicht, welche Technologie vertraut wirkt, sondern welche pro Kilowattstunde, pro Euro und pro Jahr die größte positive Netto-Wirkung erzeugt.",
+    },
+    answersFinal: true,
+    effectPath: [
+      ["Aussage", "„E-Fuels retten den Verbrenner.“"],
+      ["Wirkstoff", "E-Fuel als Verbrenner-Beruhigung."],
+      ["Verkürzung", "Technische Kompatibilität wird mit systemischer Sinnhaftigkeit verwechselt."],
+      ["Ausblendung", "Strombedarf, Effizienzverluste, Knappheit, CO2-Quelle, Kosten, Priorisierung und Alternativen verschwinden."],
+      ["Resonanz", "Autoidentität, Arbeitsplatzangst, Freiheitsgefühl, Technikhoffnung, Besitzstandsschutz."],
+      ["Narrativ", "„Wir können klimaneutral werden, ohne Auto, Motor und Tanklogik zu verändern.“"],
+      ["Wirkung erster Ordnung", "Zweifel an E-Mobilität und Ladeinfrastruktur werden verstärkt."],
+      ["Wirkung zweiter Ordnung", "Investitionen in Elektrifizierung, Batterien, E-Lkw und Ladeinfrastruktur werden politisch relativiert."],
+      ["Wirkung dritter Ordnung", "Die Transformation richtet sich nach Erhalt vertrauter Technik statt nach höchster Netto-Wirkung."],
+    ],
+    frameKey: "technikwunder",
+    redirectQuestion: "Redest du über E-Fuels für Flugzeuge und Schiffe - oder über E-Fuels als Vorwand, den normalen Pkw-Verbrenner weiterzuführen?",
+    dontDo: [
+      "Nicht sagen: E-Fuels sind komplett Unsinn.",
+      "Nicht behaupten: E-Fuels braucht niemand.",
+      "Nicht nur E-Autos als immer und überall richtige Lösung darstellen.",
+      "Nicht Verbrennerfahrer:innen beschämen.",
+      "Nicht Luftfahrt und Schifffahrt vergessen.",
+      "Nicht so tun, als seien E-Fuels automatisch klimaneutral.",
+      "Nicht mit E-Fuels behaupten, alles könne bleiben wie es ist.",
+      "Nicht Technologieoffenheit als Ausrede für Verzögerung übernehmen.",
+    ],
+    facts: [
+      "E-Fuels sind technisch herstellbar.",
+      "Sie können in bestimmten bestehenden Motoren oder Infrastrukturen genutzt werden.",
+      "Sie können für Luftfahrt und Schifffahrt wichtig sein.",
+      "Sie können Bestandsflotten begrenzt dekarbonisieren, wenn Austausch langsam ist.",
+      "Sie können für Sonderfahrzeuge, Katastrophenschutz, Militär, Landwirtschaft, Oldtimer oder Spezialmaschinen relevant sein.",
+      "Forschung und Hochlauf von PtL-Kraftstoffen sind sinnvoll.",
+      "Im Pkw-Massenmarkt ist direkte Elektrifizierung deutlich effizienter.",
+      "E-Fuels sind nur bei strengen Kriterien klimawirksam: zusätzlicher erneuerbarer Strom, nachhaltige CO2-Quelle, geringe Prozess- und Transportemissionen.",
+    ],
+    consequences: [
+      "Emissionen sinken langsamer, wenn E-Fuels den Verbrenner-Massenmarkt verlängern.",
+      "Knapper erneuerbarer Strom wird ineffizient eingesetzt.",
+      "Deutschland verliert Zeit beim Aufbau elektrischer Wertschöpfung: Batterien, Leistungselektronik, Software, Ladeinfrastruktur, E-Lkw.",
+      "Menschen kaufen Verbrenner in der Erwartung späterer E-Fuels, die möglicherweise knapp und teuer bleiben.",
+      "Ladeinfrastruktur, ÖPNV, Schiene und Effizienz werden politisch weniger dringlich.",
+      "E-Fuel-Mengen fehlen dort, wo sie am dringendsten gebraucht werden: Luftfahrt, Schifffahrt und Industrie.",
+      "Enttäuschte Technologieversprechen erzeugen Misstrauen gegen Klimapolitik und Industriepolitik.",
+    ],
+    woekSolution: [
+      { title: "E-Fuel-Hierarchie einführen", text: "E-Fuels zuerst für Luftfahrt, Schifffahrt, Spezialanwendungen, kritische Infrastruktur und begrenzte Bestandsflotten einsetzen." },
+      { title: "Wirkungsgate für jede Anwendung", text: "Jede E-Fuel-Anwendung muss Strombedarf, CO2-Quelle, Wirkungsgrad, Kosten, Zeitfenster, Alternativen und Mengenkonkurrenz zeigen." },
+      { title: "Direkte Elektrifizierung zuerst prüfen", text: "Pkw, viele Lkw, Busse und städtischer Verkehr müssen zuerst gegen batterieelektrische Lösungen, Ladeinfrastruktur und Effizienz verglichen werden." },
+      { title: "Keine neuen Verbrenner-Lock-ins", text: "E-Fuels dürfen nicht als Begründung dienen, neue fossile Infrastruktur oder neue Verbrennerflotten zu verlängern." },
+      { title: "Bestandsflotten realistisch behandeln", text: "Für schwer ersetzbare Bestandsflotten können E-Fuels begrenzt eingesetzt werden, aber nicht als Hauptpfad für Neuzulassungen." },
+      { title: "E-Fuel-Zertifizierung streng machen", text: "Nur Kraftstoffe mit zusätzlichem erneuerbarem Strom, nachhaltiger CO2-Quelle, hoher Nachweisqualität und niedriger Lebenszykluswirkung gelten als wirksam." },
+      { title: "Industriearbeitsplätze transformieren", text: "Autozulieferer und Beschäftigte brauchen Qualifizierung und Investitionen in Batterie, Leistungselektronik, Software, Ladeinfrastruktur, Recycling und E-Lkw." },
+      { title: "Technologieoffenheit als Wirkungsoffenheit definieren", text: "Offen ist nicht, was vertraut klingt. Offen ist, was nachweisbar die beste Netto-Wirkung erzeugt." },
+    ],
+    mpd: {
+      mensch: "Falsche E-Fuel-Versprechen können Haushalte, Beschäftigte und Regionen in teure Übergangspfade führen. Lösung: ehrliche Transformationskommunikation, Qualifizierung, Ladeinfrastruktur, neue Industriecluster und sozial faire Mobilität.",
+      planet: "Ineffizienter Einsatz knapper erneuerbarer Energie verlängert fossile Emissionen und Ressourcenverbrauch. Lösung: direkte Elektrifizierung zuerst; E-Fuels für schwer elektrifizierbare Bereiche priorisieren.",
+      demokratie: "Technologieoffenheit wird zum Nebelwort, wenn sie klare Entscheidungen verhindert. Lösung: Quellenklarheit, E-Fuel-Hierarchie, offene Mengen- und Kostenpfade, Wirkungsgates.",
+    },
+    sources: [
+      "Fraunhofer ISI - Wasserstoff-Fakten: systematisches Review",
+      "Umweltbundesamt - Wasserstoff im Verkehr FAQ",
+      "Umweltbundesamt - Klimaschutz im Verkehr",
+      "Europäische Kommission - CO2-Standards für Pkw und Vans",
+      "Regulation (EU) 2023/851",
+      "ICCT - CO2 emission standards for new passenger cars and vans in the EU",
+      "IEA - Transport",
+      "eFuel Alliance - politische Empfehlungen",
+    ],
+  },
+  {
     title: "„Klimaschutz deindustrialisiert Deutschland“",
     slug: "klimaschutz-deindustrialisiert-deutschland",
     shortJudgement: "Wahrer Transformationsstress, falsches Niedergangsnarrativ.",
@@ -2229,6 +2326,7 @@ const deepDiveSlugs = [
   "kernenergie-einfache-loesung",
   "fusion-loest-das-energieproblem",
   "wasserstoff-fuer-alles",
+  "e-fuels-retten-den-verbrenner",
 ];
 
 const deepDiveDetails = {
@@ -2808,6 +2906,61 @@ const deepDiveDetails = {
     clipHook: "Wasserstoff ja. Aber dort, wo er wirkt.",
     caption: "Wasserstoff ist zu wertvoll, um ihn zu verschwenden.",
   },
+  "e-fuels-retten-den-verbrenner": {
+    title: "E-Fuels retten den Verbrenner?",
+    subtitle: "Warum synthetische Kraftstoffe wichtig sind - aber nicht für den Pkw-Massenmarkt",
+    confidence: "hoch",
+    readingTime: "22 Minuten",
+    leadQuestion: "Wo erzeugt dieselbe Kilowattstunde erneuerbarer Strom die höchste positive Netto-Wirkung?",
+    claimAnatomy: {
+      original: "E-Fuels retten den Verbrenner.",
+      extended: "Pkw können einfach klimaneutral weiterfahren, weil synthetische Kraftstoffe den Verbrenner erhalten.",
+      trueCore: "E-Fuels können für Luftfahrt, Schifffahrt, Spezialanwendungen und begrenzte Bestandsflotten wichtig werden.",
+      missingContext: "E-Fuels brauchen erneuerbaren Strom, Wasserstoff, CO2, Synthese, Transport und Verbrennung - mit hohen Verlusten.",
+      falseConclusion: "Aus Spezialanwendungen folgt kein sinnvoller Massenpfad für neue Pkw-Verbrenner.",
+    },
+    trueText:
+      "E-Fuels sind eine wichtige Spezialressource. Gerade deshalb müssen sie nach Knappheit, Effizienz, Zeitfenster, Kosten und Alternativen priorisiert werden.",
+    missingItems: [
+      "E-Fuels brauchen sehr viel erneuerbaren Strom.",
+      "Aus Strom wird erst Wasserstoff; daraus wird mit CO2 ein synthetischer Kraftstoff.",
+      "Elektrolyse, CO2-Bereitstellung, Synthese, Raffination, Transport und Verbrennung verursachen Verluste.",
+      "Im Pkw-Massenmarkt ist direkte Elektrifizierung deutlich effizienter.",
+      "E-Fuels sind kurzfristig knapp und teuer.",
+      "E-Fuels können fossile Lock-ins verlängern, wenn sie neue Verbrennerkäufe rechtfertigen.",
+    ],
+    evidence: {
+      status: "datenbasiert",
+      level: "hoch",
+      uncertainty: "Hoch bei künftigen Kosten, Mengen, CO2-Quellen, Nachhaltigkeitskriterien und politischer Ausgestaltung.",
+      sourceKeys: ["iea", "uba", "fraunhofer"],
+    },
+    wirkstoff: {
+      label: "E-Fuel als Verbrenner-Beruhigung",
+      description: "Eine technisch mögliche Speziallösung wird als emotionale Entlastung genutzt, damit bestehende Verbrenner-, Tank- und Besitzstandslogik erhalten bleibt.",
+      mechanism: "Der Frame verschiebt Aufmerksamkeit von Effizienz, Knappheit und Priorisierung auf Komfort, Technologieoffenheit und Weiter-so.",
+      resonance: ["Autoidentität", "Arbeitsplatzangst", "Freiheitsgefühl", "Technikhoffnung", "Besitzstandsschutz"],
+    },
+    narrative: {
+      message: "Wir müssen nicht auf E-Autos umsteigen, weil E-Fuels den Verbrenner klimaneutral machen.",
+      emotional: "Verlustangst senken, Identität schützen, Veränderung vermeiden.",
+      political: "Elektrifizierung, Ladeinfrastruktur, Flottenumstellung und klare CO2-Standards werden verzögert.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Zweifel an E-Mobilität und Ladeinfrastruktur werden verstärkt."],
+      ["Wirkung 2. Ordnung", "Investitionen in Elektrifizierung und Ladeinfrastruktur werden relativiert."],
+      ["Wirkung 3. Ordnung", "Die Transformation richtet sich nach Erhalt vertrauter Technik statt nach höchster Netto-Wirkung."],
+    ],
+    falseActions: [
+      ["Klima", "Emissionen sinken langsamer."],
+      ["Energie", "Knapper erneuerbarer Strom wird ineffizient eingesetzt."],
+      ["Industrie", "Elektrische Wertschöpfung wird verzögert."],
+      ["Demokratie", "Enttäuschte Technologieversprechen beschädigen Vertrauen."],
+    ],
+    solutionLead: "Die WÖk trennt Spezialanwendungen und Pkw-Massenmarkt und bewertet synthetische Kraftstoffe nach Wirkungsgates.",
+    clipHook: "E-Fuels ja - aber nicht als Ausrede für den Verbrenner-Massenmarkt.",
+    caption: "Das Flugzeug braucht vielleicht Moleküle. Das Stadtauto braucht keinen synthetischen Umweg.",
+  },
 };
 
 function escapeHtml(value) {
@@ -3020,6 +3173,12 @@ const psychologyBySlug = {
     triggers: ["Hoffnung auf Weiter-so", "Angst vor Heizungsumbau", "Angst vor Autoverlust", "Technologieoffenheit", "Kontrollgefühl"],
     patterns: ["technische Möglichkeit als Systemlösung", "Knappheit ausblenden", "H2-ready als Sicherheitsanker", "Gasnetz-Rettung", "Aufschub durch Technologieoffenheit"],
     why: "Wasserstoff verspricht, dass sich möglichst wenig ändern muss: Gasheizung bleibt, Verbrenner bleibt, Tanklogik bleibt, Industrie bleibt. Gleichzeitig klingt Wasserstoff modern und klimafreundlich.",
+  },
+  "e-fuels-retten-den-verbrenner": {
+    effects: ["Status-quo-Bias", "Loss Aversion", "Technological Fix Bias", "Optimism Bias", "Identity Protective Cognition", "Motivated Reasoning"],
+    triggers: ["Angst vor Autoverlust", "Wertverlust des eigenen Autos", "Sorge um Arbeitsplätze", "Misstrauen gegen Verbote", "Freiheitsgefühl durch Tanken", "Nostalgie und Motoridentität"],
+    patterns: ["Spezialfall als Massenargument", "technische Möglichkeit als Systemlösung", "Effizienzverluste ausblenden", "Knappheit ausblenden", "Industrieangst als Verzögerung", "Besitzstandsschutz als Klimalösung"],
+    why: "E-Fuels versprechen, dass sich möglichst wenig ändern muss: Auto, Motor, Tankstelle, Werkstatt, Fahrgefühl und Industrieidentität bleiben erhalten. Das reduziert Verlustangst und wirkt wie eine technische Erlösung.",
   },
 };
 
@@ -3685,6 +3844,7 @@ function renderDeepDiveDetail(claim) {
   if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "detail");
   if (claim.slug === "fusion-loest-das-energieproblem") return renderFusionDossier(claim, "detail");
   if (claim.slug === "wasserstoff-fuer-alles") return renderHydrogenDossier(claim, "detail");
+  if (claim.slug === "e-fuels-retten-den-verbrenner") return renderEFuelDossier(claim, "detail");
   const detail = deepDiveDetailFor(claim);
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero theme-hero deep-dive-hero">
@@ -4526,6 +4686,89 @@ const hydrogenExternalSources = [
   ["Fraunhofer ISI - CO2-neutrale Prozesswärme", "Policy Brief zu Prozesswärme, Elektrifizierung und Wasserstoff.", "Prozesswärme, Elektrifizierung vs Wasserstoff, Industrieanwendungen.", "Branchen- und Temperaturbereiche unterscheiden.", "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/policy-briefs/2024-07_policy_brief_prozesswaerme_co2-neutral_elektrifizierung_wasserstoff.pdf"],
 ];
 
+const eFuelKeyPoints = [
+  ["E-Fuels sind technisch möglich", "Sie können aus grünem Wasserstoff und CO2 hergestellt und in bestimmten Verbrennungssystemen genutzt werden.", "positive"],
+  ["Sie sind nicht automatisch klimaneutral", "Entscheidend sind erneuerbarer Strom, CO2-Quelle, Herstellungsprozess, Transport, Nutzung, zusätzliche Emissionen und Lebenszyklus.", "warning"],
+  ["Im Pkw sind sie sehr ineffizient", "Der Umweg über Wasserstoff, Synthese und Verbrennung verliert viel Energie. Batterieelektrische Fahrzeuge nutzen denselben Strom deutlich besser.", "critical"],
+  ["Für Luftfahrt und Schifffahrt sind sie wichtiger", "Dort sind Batterien oft zu schwer oder technisch begrenzt. E-Kerosin, Methanol oder Ammoniak können wichtige Rollen spielen.", "positive"],
+  ["Bestandsflotten nur begrenzt", "Bei Fahrzeugen, Maschinen oder Spezialanwendungen, die nicht schnell ersetzt werden können, können E-Fuels eine Übergangswirkung haben.", "neutral"],
+  ["WÖk-Lösung: Molekül-Hierarchie", "E-Fuels werden zuerst dort eingesetzt, wo direkte Elektrifizierung nicht reicht und der Transformationsnutzen am größten ist.", "positive"],
+];
+
+const eFuelTrueItems = [
+  "E-Fuels sind technisch herstellbar.",
+  "Sie können in bestimmten bestehenden Motoren oder Infrastrukturen genutzt werden.",
+  "Sie können für Luftfahrt und Schifffahrt wichtig sein.",
+  "Sie können Bestandsflotten begrenzt dekarbonisieren, wenn Austausch langsam ist.",
+  "Sie können für Sonderfahrzeuge, Katastrophenschutz, Militär, Landwirtschaft, Oldtimer oder Spezialmaschinen relevant sein.",
+  "Sie können strategische Resilienz schaffen, wenn sie nachhaltig erzeugt und gelagert werden.",
+  "Forschung und Hochlauf von PtL-Kraftstoffen sind sinnvoll.",
+];
+
+const eFuelMissingItems = [
+  "E-Fuels brauchen sehr viel erneuerbaren Strom.",
+  "Aus Strom wird erst Wasserstoff; daraus wird mit CO2 ein synthetischer Kraftstoff.",
+  "Elektrolyse, CO2-Bereitstellung, Synthese, Raffination, Transport und Verbrennung verursachen Verluste.",
+  "Im Pkw-Massenmarkt ist direkte Elektrifizierung deutlich effizienter.",
+  "E-Fuels sind kurzfristig knapp und teuer.",
+  "Klimaneutral sind sie nur bei strengen Kriterien: zusätzlicher erneuerbarer Strom, nachhaltige CO2-Quelle und geringe Prozess- und Transportemissionen.",
+  "Beim Verbrennen entstehen weiterhin lokale Schadstoffe, insbesondere Stickoxide und Partikel je nach Kraftstoff und Motor.",
+  "E-Fuels lösen nicht Flächenverbrauch, Stau, Lärm, Unfallrisiken und Autodominanz.",
+  "Wenn E-Fuels als Ausrede dienen, verzögern sie E-Mobilität, Ladeinfrastruktur, ÖPNV, Schiene und Effizienz.",
+  "Jede Menge E-Fuel im Pkw fehlt potenziell in Luftfahrt, Schifffahrt oder Industrie.",
+  "E-Fuels können fossile Lock-ins verlängern, wenn sie neue Verbrennerkäufe rechtfertigen.",
+];
+
+const eFuelHierarchy = [
+  ["A) Höchste Priorität / No-Regret", "E-Kerosin für Luftfahrt; E-Methanol, Ammoniak und Derivate für Schifffahrt; Spezialanwendungen mit hoher Energiedichte; strategische Reserven; bestimmte chemische Grundstoffe.", "zuerst versorgen"],
+  ["B) Hohe Priorität, kontextabhängig", "Bestandsflotten, die nicht schnell ersetzt werden können; Spezialmaschinen in Landwirtschaft, Bau, Katastrophenschutz und Militär; Oldtimer in kleinen Mengen; Offroad- oder Langstrecken-Spezialfälle.", "streng prüfen"],
+  ["C) Prüfbereich", "Teile des schweren Straßengüterverkehrs nur, wenn Batterie, Oberleitung, Megawattladen oder H2 nicht besser wirken; entlegene Regionen; Übergangsmengen unter strengen Nachhaltigkeitskriterien.", "Alternativenvergleich erzwingen"],
+  ["D) Niedrige Priorität / meist ineffizient", "Neue Pkw-Verbrenner im Massenmarkt; Alltags-Pkw in Städten und Pendelverkehr; Rettung der Tankstellen- und Verbrennerlogik; breite Beimischung ohne klare Klimawirkung.", "nicht als Standardpfad verkaufen"],
+];
+
+const eFuelBoundaryMatrix = [
+  ["Tank", "Kann der Kraftstoff im Auto genutzt werden?", "Kompatibilität mit Verbrennerlogik", "Herstellung, Strombedarf, CO2-Quelle"],
+  ["Auspuff", "Was kommt bei Nutzung raus?", "lokale Emissionen, CO2-Kreislaufbehauptung", "Vorkette und Gesamtenergiebedarf"],
+  ["Well-to-Wheel", "Wie viel Energie wird von Strom bis Bewegung genutzt?", "Effizienz und Verluste", "Spezialanwendungen mit Alternativlosigkeit"],
+  ["Lebenszyklus", "Welche Emissionen entstehen über Herstellung, Transport, Nutzung?", "reale Klimabilanz", "Verfügbarkeit und Kosten"],
+  ["Zeit", "Wann sind Mengen verfügbar?", "2030/2035/2045-Wirkung", "spätere Potenziale"],
+  ["Knappheit", "Wer braucht synthetische Kraftstoffe am dringendsten?", "Priorisierung", "politische Lieblingsanwendungen"],
+  ["Kosten", "Was kostet pro vermiedener Tonne CO2?", "T-SROI, Subventionsbedarf", "strategische Resilienz"],
+  ["Infrastruktur", "Welche Anlagen, Häfen, Pipelines, Tanklager braucht es?", "Systemaufwand", "direkte Alternativen"],
+  ["Demokratie", "Wie wird Technologieoffenheit kommuniziert?", "Aufschubrisiko, Vertrauen", "technische Details"],
+];
+
+const eFuelSubclaims = [
+  ["„E-Fuels sind klimaneutral“", "Nur unter strengen Bedingungen.", "E-Fuels können bilanziell klimafreundlich sein, wenn der Wasserstoff mit zusätzlichem erneuerbarem Strom hergestellt wird, die CO2-Quelle nachhaltig ist und Herstellung, Transport, Lagerung und Nutzung streng bilanziert werden. Werden sie mit fossilem Strom, zweifelhafter CO2-Quelle oder hohen Prozessverlusten hergestellt, sind sie nicht klimaneutral.", "Welche Emissionen entstehen über die gesamte Kette - und gibt es einen besseren Einsatz derselben erneuerbaren Energie?"],
+  ["„E-Fuels retten den Verbrenner“", "Für Spezialfälle möglich, für den Pkw-Massenmarkt ineffizient und zu knapp.", "Synthetische Kraftstoffe können für schwer elektrifizierbare Anwendungen wichtig sein. Der Denkfehler ist, diese Spezialrolle auf Millionen Alltags-Pkw zu übertragen.", "Wo sind Moleküle unverzichtbar - und wo ist Strom direkt besser?"],
+  ["„Man kann einfach weiter tanken wie bisher“", "Komfortversprechen mit ausgeblendeter Herstellungsrealität.", "Der Satz vermeidet Veränderung: Auto behalten, Tankstelle behalten, Motor behalten. Aber E-Fuels entstehen nicht an der Zapfsäule. Sie brauchen Strom, Wasserstoff, CO2, Synthese, Transport und Verteilung. Diese Mengen sind knapp.", "Ist weiter tanken wirklich Klimaschutz - oder nur die bequemste Erzählung?"],
+  ["„E-Fuels sind technologieoffen“", "Offenheit darf keine Verzögerungsstrategie sein.", "Technologieoffenheit ist sinnvoll, wenn Technologien nach Wirkung, Kosten, Zeit und Alternativen geprüft werden. Sie wird irreführend, wenn sie klare Infrastrukturentscheidungen immer weiter vertagt.", "Ist das Wirkungsoffenheit - oder nur Unentschiedenheit zugunsten alter Pfade?"],
+  ["„E-Fuels sind besser als E-Autos“", "Für Pkw meist falsch.", "Für normale Pkw nutzt der direkte Batteriepfad erneuerbaren Strom deutlich effizienter. E-Fuels können Spezialfälle haben, sind aber kein Massenargument gegen E-Mobilität.", "Welche Lösung erzeugt pro kWh erneuerbaren Strom die meiste Mobilitätswirkung?"],
+  ["„E-Fuels sichern deutsche Autojobs“", "Wahrer Transformationsangst-Kern, aber riskanter Verzögerungsframe.", "Die Sorge um Arbeitsplätze ist real. Aber E-Fuels als Hauptstrategie können Arbeitsplätze langfristig gefährden, wenn sie den Umstieg auf Batterie, Software, Leistungselektronik, Ladeinfrastruktur, E-Lkw, Recycling und neue Wertschöpfung verzögern.", "Welche Industriekompetenz braucht Deutschland 2030 und 2040 - Verbrenner-Restlauf oder elektrische Wertschöpfung?"],
+  ["„Bestandsflotte nur mit E-Fuels klimaneutral“", "Teilweise Übergangsoption, aber begrenzter Beitrag.", "E-Fuels können für schwer ersetzbare Bestandsflotten eine Rolle spielen. Daraus folgt aber kein Hauptpfad für neue Pkw-Verbrenner oder allgemeine Autopolitik.", "Welche Bestandsflotte ist wirklich schwer ersetzbar - und welche wird nur rhetorisch geschützt?"],
+  ["„E-Fuels lösen auch Lkw und Schwerlast“", "Nur Einzelfall; Alternativen vergleichen.", "Schwerlastverkehr braucht Routenvergleich: Depotladen, Megawattladen, Oberleitung, Batterie, H2 und E-Fuels. E-Fuels können Spezialfälle haben, aber nicht als Pauschalargument dienen.", "Welche Route, welches Ladefenster und welcher Infrastrukturpfad erzeugen die beste Wirkung?"],
+];
+
+const eFuelManipulationPatterns = [
+  ["Spezialfall als Massenargument", "E-Fuels sind für Flugzeuge oder Schiffe sinnvoll, daraus wird aber ein Argument für normale Pkw.", "Anwendungen trennen: Luftfahrt/Schifffahrt vs. Pkw-Massenmarkt."],
+  ["Technische Möglichkeit als Systemlösung", "Weil ein Verbrenner mit E-Fuel fahren kann, wird es als sinnvolle Klimastrategie dargestellt.", "Effizienz, Mengen, Kosten, Zeit und Alternativen prüfen."],
+  ["Weiter-tanken-wie-bisher", "Die vertraute Tanklogik wird als Freiheits- und Komfortversprechen genutzt.", "Vorkette sichtbar machen: Strom, H2, CO2, Synthese, Transport."],
+  ["Effizienzverluste ausblenden", "Nur der klimaneutrale Kraftstoff wird gezeigt, nicht der Energieverlust.", "Well-to-Wheel-Vergleich zeigen."],
+  ["Industrieangst als Verzögerung", "Arbeitsplatzsorgen werden genutzt, um alte Technologien zu verlängern.", "Transformationsjobs und neue Wertschöpfung sichtbar machen."],
+  ["Technologieoffenheit als Unentschiedenheit", "Offenheit wird zur Ausrede, klare Infrastrukturentscheidungen zu vertagen.", "Wirkungsoffenheit: Was wirkt wann, zu welchen Kosten?"],
+];
+
+const eFuelExternalSources = [
+  ["Fraunhofer ISI - Wasserstoff-Fakten: systematisches Review", "Systematisches Review zu Wasserstoff, E-Fuels, Effizienz und Anwendungen.", "E-Fuels im Pkw; 15 Prozent Well-to-Wheel-Wirkungsgrad; BEV fünf- bis sechsmal effizienter; PtL-Kerosin im Luftverkehr.", "Reviewquelle; Aussagen kontextbezogen darstellen.", "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/t/2026/2026-03_wasserstoff-fakten_review.pdf"],
+  ["Umweltbundesamt - Wasserstoff im Verkehr FAQ", "UBA ordnet direkte Stromnutzung, Wasserstoff und PtL im Verkehr ein.", "direkte Stromnutzung vs H2/PtL; BEV-Wirkungsgrad; PtL im Pkw ineffizient.", "Nicht nur Wasserstoff, sondern auch PtL und direkte Elektrifizierung einordnen.", "https://www.umweltbundesamt.de/themen/verkehr/kraftstoffe-antriebe/wasserstoff-im-verkehr-haeufig-gestellte-fragen"],
+  ["Umweltbundesamt - Klimaschutz im Verkehr", "UBA-Seite zu postfossilen Kraftstoffen, RFNBO und Verkehr 2045.", "postfossile Kraftstoffe, RFNBO, Verkehr 2045, Rolle von EE-Strom.", "Politikpfade und Szenarien nicht als exakte Prognosen lesen.", "https://www.umweltbundesamt.de/themen/verkehr/klimaschutz-im-verkehr"],
+  ["Europäische Kommission - CO2-Standards für Pkw und Vans", "EU-Seite zu CO2-Standards, 2035-Regelstand und Automotive Package.", "2035-Ziel, Automotive Package 2025, E-Fuels als Flexibilitätsframe.", "Zwischen geltendem Recht und Kommissionsvorschlag unterscheiden.", "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/road-transport/cars-and-vans_en"],
+  ["Regulation (EU) 2023/851", "Rechtsquelle zu CO2-Standards für neue Pkw und Vans.", "2035 100 Prozent Reduktion im geltenden Recht, Zero-emission vehicle pathway.", "Rechtsstand regelmäßig prüfen.", "https://eur-lex.europa.eu/eli/reg/2023/851/oj/eng"],
+  ["ICCT - CO2 emission standards for new passenger cars and vans in the EU", "Analyse zur EU-Regelung und zum E-Fuel-Kompromiss.", "2030/2035-Ziele, Einordnung der EU-Regelung, E-Fuel-Kompromiss.", "Analysequelle, nicht Rechtsquelle.", "https://theicct.org/wp-content/uploads/2023/05/eu-co2-standards-cars-vans-may23.pdf"],
+  ["IEA - Transport", "IEA-Überblick zu globalem Verkehr, Elektrifizierung und alternativen Kraftstoffen.", "globale Verkehrstrends, Elektrifizierung, alternative Kraftstoffe.", "Globale Trends nicht direkt auf deutsche Detailpolitik übertragen.", "https://www.iea.org/energy-system/transport"],
+  ["eFuel Alliance - politische Empfehlungen", "Branchenposition zu E-Fuels und Technologieoffenheit.", "Pro-E-Fuel-Argumentation, Industrie- und Technologieoffenheitsframe, Gegenposition fair darstellen.", "Interessengeleitete Branchenquelle; als Narrativquelle nutzen, nicht als neutrale Faktenbasis.", "https://www.efuel-alliance.eu/political-recommendations"],
+];
+
 const windKeyPoints = [
   ["Vögel und Fledermäuse sind reale Schutzgüter", "Windenergie kann Kollisionen, Störungen und Habitatkonflikte verursachen. Das muss über Standortwahl, Monitoring und Schutzmaßnahmen ernsthaft minimiert werden.", "warning"],
   ["Fossile Alternativen sind nicht naturneutral", "Kohle, Öl und Gas verursachen Klimaschäden, Luftschadstoffe, Wasserbelastungen, Bergbaufolgen, Flächenverbrauch und Biodiversitätsverluste.", "critical"],
@@ -4694,6 +4937,125 @@ function renderHydrogenDossier(claim, mode = "live") {
     </main>`;
   return pageShell({
     title: `Wasserstoff für alles? - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
+    description: sentence(claim.abstract),
+    canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
+    base: "../../../",
+    main,
+  });
+}
+
+function renderEFuelDossier(claim, mode = "live") {
+  const answers = expandedAnswers(claim);
+  const sectionLabel = mode === "detail" ? "Detail" : "Live";
+  const canonicalPath = mode === "detail" ? "detail" : "live";
+  const matrixTable = (caption, rows, columns) => `<div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>${escapeHtml(caption)}</caption>
+              <thead><tr>${columns.map((column) => `<th>${escapeHtml(column)}</th>`).join("")}</tr></thead>
+              <tbody>${rows.map((row) => `<tr>${row.map((cell, index) => index === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+            </table>
+          </div>`;
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero theme-hero dossier-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / E-Fuels</nav>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <h1 class="hero-title">E-Fuels retten den Verbrenner?</h1>
+          <p class="hero-subtitle">Warum synthetische Kraftstoffe wichtig sind - aber nicht für den Pkw-Massenmarkt.</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
+          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Hinweis: E-Fuels sind Systemressource, nicht Verbrenner-Freifahrtschein</span></p>
+        </div>
+      </section>
+      ${summaryGrid(eFuelKeyPoints, "Das Wichtigste in 6 Punkten")}
+      <nav class="topic-subnav" aria-label="Dossier Navigation" data-search-exclude>
+        <a href="#live-antworten">Live antworten</a>
+        <a href="#efuel-hierarchie">E-Fuels richtig einordnen</a>
+        <a href="#deep-dive-quellen">Deep Dive &amp; Quellen</a>
+      </nav>
+      <section class="section dossier-tab-panel" id="live-antworten">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>E-Fuels anerkennen, Pkw-Umweg stoppen.</h2></div>
+          <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
+            <details class="radar-answer-item" open><summary><span class="radar-answer-time">One-Liner</span><span class="radar-answer-label">Kernformel</span></summary><p>„E-Fuels sind wichtig für Flugzeuge, Schiffe und Spezialfälle - aber viel zu knapp und ineffizient, um den normalen Pkw-Verbrenner zu retten.“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Mit Beispiel · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Mit Beispiel und Lösung · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
+          </div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Host-Beispiel</p><h3 class="card-title">Der Wasserflaschen-Umweg</h3><p class="card-text">Stell dir vor, du hast einen Eimer Wasser und willst eine Pflanze gießen. Du kannst direkt gießen. Oder du füllst es erst in kleine Flaschen, transportierst sie einmal um den Block, schüttest sie in einen zweiten Eimer und gießt dann. Es funktioniert - aber es ist der lange, verlustreiche Weg.</p><p class="card-text"><strong>Host-Line:</strong> E-Fuels sind wie der lange Umweg mit Wasserflaschen: Wenn der direkte Weg möglich ist, ist der Umweg Verschwendung.</p></article>
+            <article class="card"><p class="card-kicker">Systembeispiel</p><h3 class="card-title">Flugzeug vs. Stadtauto</h3><p class="card-text">Ein Flugzeug kann nicht einfach mit einem riesigen Akku über den Atlantik fliegen. Dort können synthetische Kraftstoffe sinnvoll sein. Ein Stadtauto steht viel herum, fährt kurze Strecken und kann direkt mit Strom geladen werden.</p><p class="card-text"><strong>Host-Line:</strong> Das Flugzeug braucht vielleicht Moleküle. Das Stadtauto braucht keinen synthetischen Umweg.</p></article>
+            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Frame nicht übernehmen</p><p class="card-text">Ich übernehme nicht den Frame „E-Fuels retten den Verbrenner“. E-Fuels sind keine Rettung der alten Tanklogik, sondern eine knappe Ressource für Anwendungen, die sich schwer direkt elektrifizieren lassen.</p><p class="card-text"><strong>Bessere Wirkungsfrage:</strong> Wo erzeugt dieselbe Kilowattstunde erneuerbarer Strom die höchste Netto-Wirkung: direkt im Akku oder über den Umweg E-Fuel?</p></article>
+            <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p>${htmlList(claim.dontDo)}</article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft dossier-tab-panel" id="efuel-hierarchie">
+        <div>
+          <div class="section-header"><p class="hero-kicker">E-Fuels richtig einordnen</p><h2>Der Strom-Umweg zählt.</h2><p>E-Fuels sind synthetische Kraftstoffe, die mit erneuerbarem Strom, Wasserstoff und einer Kohlenstoffquelle hergestellt werden können. Genau das macht sie politisch attraktiv: Sie versprechen Klimaschutz ohne sichtbaren Bruch mit der alten Verbrennerwelt. Aber dieser Komfort hat einen Preis: Energieverluste, hohe Kosten, knappe Mengen und starke Konkurrenz um erneuerbaren Strom.</p></div>
+          ${summaryGrid([["Kernsatz", "E-Fuels sind kein Primärenergieträger. Sie sind ein aufwendig hergestelltes Speicher- und Kraftstoffprodukt.", "warning"], ["Zweiter Kernsatz", "Der entscheidende Vergleich ist nicht E-Fuel gegen fossilen Kraftstoff, sondern E-Fuel gegen bessere Einsatzmöglichkeiten derselben erneuerbaren Energie.", "critical"], ["Kurzformel", "E-Fuels ja. Aber nicht als Ausrede für den Verbrenner-Massenmarkt.", "positive"]], "E-Fuels Kernsätze")}
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Was stimmt?</p>${htmlList(eFuelTrueItems)}</article>
+            <article class="card"><p class="card-kicker">Was fehlt?</p>${htmlList(eFuelMissingItems)}<p class="card-text"><strong>Kernsatz:</strong> Der Denkfehler ist nicht E-Fuels. Der Denkfehler ist E-Fuels ohne Knappheit, Effizienz und Priorisierung.</p></article>
+          </div>
+          ${matrixTable("Die E-Fuel-Hierarchie: Wo synthetische Kraftstoffe zuerst wirken sollten", eFuelHierarchy, ["Priorität", "Anwendungen", "WÖk-Regel"])}
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Direkter Strompfad</p><h3 class="card-title">Erneuerbarer Strom → Batterie → Elektromotor → Bewegung</h3><p class="card-text">Beim direkten Strompfad wird Strom relativ direkt in Bewegung übersetzt.</p></article>
+            <article class="card"><p class="card-kicker">E-Fuel-Pfad</p><h3 class="card-title">Erneuerbarer Strom → Elektrolyse → Wasserstoff → CO2 → Synthese → Transport → Verbrennungsmotor → Bewegung</h3><p class="card-text">Beim E-Fuel-Pfad wird Strom mehrfach umgewandelt, gespeichert, transportiert und am Ende in einem Verbrennungsmotor genutzt. Jeder Schritt verursacht Verluste.</p></article>
+          </div>
+          <p class="radar-status-line"><span>Pflicht-Hinweis: Exakte Wirkungsgrade hängen von Technologie, Stromquelle, CO2-Quelle, Prozess, Transport und Motor ab.</span><span>Grundrichtung: Der Pkw-E-Fuel-Pfad ist deutlich ineffizienter als der batterieelektrische Pfad.</span></p>
+          ${matrixTable("Welche Systemgrenze wird falsch gesetzt?", eFuelBoundaryMatrix, ["Bilanzgrenze", "Leitfrage", "Was sie zeigt", "Was sie ausblenden kann"])}
+          <section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Unterclaims</p><h2>Typische E-Fuel-Stöckchen sauber einordnen.</h2></div><div class="radar-answer-accordion">
+            ${eFuelSubclaims.map(([title, shortJudgement, text, question]) => `<details class="radar-answer-item"><summary><span class="radar-answer-time">${escapeHtml(title)}</span> <span class="radar-answer-label">${escapeHtml(shortJudgement)}</span></summary><p>${escapeHtml(text)}</p><p><strong>Bessere Wirkungsfrage:</strong> ${escapeHtml(question)}</p></details>`).join("\n            ")}
+          </div></div></section>
+        </div>
+      </section>
+      <section class="section dossier-tab-panel" id="deep-dive-quellen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Deep Dive &amp; Quellen</p><h2>Effizienz, Knappheit, Identität und Lock-in.</h2></div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Wirkstoffanalyse</p><h3 class="card-title">E-Fuel als Verbrenner-Beruhigung</h3><p class="card-text">Eine technisch mögliche Speziallösung wird als emotionale Entlastung genutzt, damit bestehende Verbrenner-, Tank- und Besitzstandslogik erhalten bleibt.</p>${htmlList(["erneuerbarer Strombedarf", "Wasserstoffbedarf", "CO2-Quelle", "Syntheseverluste", "Transport und Raffination", "Well-to-Wheel-Wirkungsgrad", "Luftfahrt und Schifffahrt als No-Regret-Anwendungen", "E-Pkw und E-Lkw als direkte Alternativen", "Ladeinfrastruktur", "Autoindustrie-Transformation", "Subventionsbedarf", "Opportunitätskosten", "fossile Lock-ins", "lokale Schadstoffe"])}</article>
+            <article class="card"><p class="card-kicker">Narrativanalyse</p><h3 class="card-title">Verbrenner-Rettungsnarrativ.</h3><p class="card-text">Typische Botschaft: Wir müssen nicht auf E-Autos umsteigen, weil E-Fuels den Verbrenner klimaneutral machen. Emotional senkt das Verlustangst und schützt Identität; politisch kann es Elektrifizierung, Ladeinfrastruktur und klare CO2-Standards verzögern.</p></article>
+          </div>
+          ${renderPsychologyModule(claim)}
+          <div class="section-header"><p class="hero-kicker">Manipulationsmuster</p><h2>Welche Spielchen im Frame stecken.</h2></div>
+          <div class="card-grid deep-dive-source-grid">${eFuelManipulationPatterns.map(([label, description, counter]) => `<article class="card"><p class="card-kicker">Manipulationsmuster</p><h3 class="card-title">${escapeHtml(label)}</h3><p class="card-text">${escapeHtml(description)}</p><p class="card-text"><strong>Gegenbewegung:</strong> ${escapeHtml(counter)}</p></article>`).join("")}</div>
+          <div class="section-header"><p class="hero-kicker">Wirkungspfad</p><h2>Von Technikhoffnung zu Lock-in.</h2></div>
+          <ol class="timeline radar-flow radar-effect-path">${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("")}</ol>
+          <section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Folgen falschen Handelns</p><h2>Was wahrscheinlicher wird.</h2></div><div class="card-grid">${claim.consequences.map((item) => `<article class="card"><p class="card-kicker">Folge</p><h3 class="card-title">${escapeHtml(item)}</h3></article>`).join("")}</div></div></section>
+          ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], `${claim.title} MPD`, "mpd-impact-panel")}
+          ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, "critical"]], `${claim.title} SDG`, "climate-sdg-panel")}
+          ${woekSolutionMatrix(claim.woekSolution)}
+          ${summaryGrid([["SDG 7", "Erneuerbarer Strombedarf pro Nutzkilometer und Priorisierung knapper Moleküle.", "positive"], ["SDG 9", "Transformationsfähigkeit der Autoindustrie und neue elektrische Wertschöpfung.", "positive"], ["SDG 11", "Mobilitätswirkung jenseits des Antriebs: Stau, Fläche, Luft, Lärm und Sicherheit.", "neutral"], ["SDG 12", "CO2-Quelle und Kraftstoff-Lebenszyklus.", "warning"], ["SDG 13", "CO2-Minderung im relevanten Zeitfenster 2030/2035/2045.", "critical"], ["SDG+", "Aufschub- und Lock-in-Risiko.", "warning"]], "Relevante WÖk-Indikatorfamilien", "deep-dive-inline-summary")}
+          <section class="section section-soft" aria-labelledby="efuel-links">
+            <div class="card">
+              <p class="card-kicker">Interne Links</p>
+              <h2 class="card-title" id="efuel-links">Narrative, Begriffe und verwandte Dossiers.</h2>
+              <div class="radar-link-cluster">
+                <a href="/wirkungsradar/narrative/verbrenner-rettungsnarrativ/">Verbrenner-Rettungsnarrativ</a>
+                <a href="/wirkungsradar/narrative/weiter-tanken-wie-bisher/">Weiter tanken wie bisher</a>
+                <a href="/wirkungsradar/narrative/autofreiheitsframe/">Auto-Freiheitsframe</a>
+                <a href="/wirkungsradar/narrative/technologieoffenheit-als-verzoegerung/">Technologieoffenheit als Verzögerung</a>
+                <a href="/wirkungsradar/narrative/wasserstoff-als-allheilmittel/">Wasserstoff als Allheilmittel</a>
+                <a href="/begriffe/e-fuel/">E-Fuel</a>
+                <a href="/begriffe/ptl-kraftstoff/">PtL-Kraftstoff</a>
+                <a href="/begriffe/well-to-wheel/">Well-to-Wheel</a>
+                <a href="/begriffe/molekuel-hierarchie/">Molekül-Hierarchie</a>
+                <a href="/begriffe/direkte-elektrifizierung/">Direkte Elektrifizierung</a>
+                <a href="/begriffe/fossiler-lock-in/">Fossiler Lock-in</a>
+                <a href="/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/">E-Autos und Lebenszyklus</a>
+                <a href="/wirkungsradar/live/wasserstoff-fuer-alles/">Wasserstoff für alles?</a>
+              </div>
+            </div>
+          </section>
+          ${sourceCards(eFuelExternalSources)}
+          ${internalLinks()}
+          ${factStatusBadge()}
+        </div>
+      </section>
+    </main>`;
+  return pageShell({
+    title: `E-Fuels retten den Verbrenner? - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
     description: sentence(claim.abstract),
     canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
     base: "../../../",
@@ -5074,6 +5436,7 @@ function renderLiveCard(claim) {
   if (claim.slug === "windraeder-voegel-wald-beton-rueckbau") return renderWindEnergyNatureDossier(claim, "live");
   if (claim.slug === "fusion-loest-das-energieproblem") return renderFusionDossier(claim, "live");
   if (claim.slug === "wasserstoff-fuer-alles") return renderHydrogenDossier(claim, "live");
+  if (claim.slug === "e-fuels-retten-den-verbrenner") return renderEFuelDossier(claim, "live");
   if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "live");
   const sources = claim.sources.map(slugSource);
   const answers = expandedAnswers(claim);
@@ -5240,6 +5603,23 @@ const hydrogenGlossaryTerms = [
   ["fossiler-lock-in", "Fossiler Lock-in", "Festlegung auf fossile Technik oder Infrastruktur, die spätere klimaneutrale Lösungen erschwert oder verteuert.", "H2-Versprechen können fossile Lock-ins erzeugen, wenn sie heutige Gas- oder Verbrennerentscheidungen rechtfertigen."],
 ];
 
+const eFuelNarrativePages = [
+  ["verbrenner-rettungsnarrativ", "Verbrenner-Rettungsnarrativ", "Wenn eine Speziallösung als Rettung des Pkw-Massenmarkts verkauft wird.", "hoch", "E-Fuels können in Spezialfällen wichtig sein. Problematisch wird der Frame, wenn daraus folgt, normale Pkw-Verbrenner könnten als Massenpfad einfach klimaneutral weiterlaufen.", "Spezialanwendung und Massenmarkt trennen."],
+  ["weiter-tanken-wie-bisher", "Weiter tanken wie bisher", "Wenn Komfort als Klimastrategie erscheint.", "hoch", "Der Frame verspricht, dass Auto, Tankstelle und Verbrennungsmotor bleiben können. Ausgeblendet werden Strombedarf, Wasserstoff, CO2-Quelle, Synthese, Kosten und Knappheit.", "Die Vorkette sichtbar machen: Strom, H2, CO2, Synthese, Transport."],
+  ["autofreiheitsframe", "Auto-Freiheitsframe", "Wenn Tanken, Motor und Sound als Freiheit gegen Wirkung ausgespielt werden.", "mittel", "Der Freiheitsframe bindet Mobilität an vertraute Verbrennerlogik. Wirkungsökonomisch zählt aber, welche Mobilität bezahlbar, sauber, sicher und zugänglich wird.", "Freiheit nicht verspotten, sondern auf reale Mobilitätswirkung drehen."],
+  ["industriearbeitsplatz-schutzframe", "Industriearbeitsplatz-Schutzframe", "Wenn berechtigte Arbeitsplatzsorgen alte Pfade verlängern.", "hoch", "Arbeitsplatzangst ist real. Riskant wird sie, wenn E-Fuels als Hauptstrategie den Aufbau elektrischer Wertschöpfung bei Batterie, Software, Leistungselektronik, Ladeinfrastruktur und Recycling verzögern.", "Arbeitsplätze durch Transformation schützen, nicht durch Restlauf-Rhetorik."],
+  ["efuel-bestandsflotten-frame", "Bestandsflotten-Frame", "Wenn ein begrenzter Übergangspfad zur Neuwagenstrategie wird.", "mittel", "Bestandsflotten können in engen Grenzen E-Fuels benötigen. Der Denkfehler entsteht, wenn daraus ein Argument für neue Pkw-Verbrenner im Massenmarkt wird.", "Bestand, Spezialfall und Neuzulassung trennen."],
+];
+
+const eFuelGlossaryTerms = [
+  ["e-fuel", "E-Fuel", "Synthetischer Kraftstoff, der mit Strom, Wasserstoff und einer Kohlenstoffquelle hergestellt werden kann.", "E-Fuels sind nicht automatisch klimaneutral. Entscheidend sind Stromquelle, CO2-Quelle, Prozess, Transport und Anwendung."],
+  ["ptl-kraftstoff", "PtL-Kraftstoff", "Power-to-Liquid-Kraftstoff, bei dem elektrische Energie über Wasserstoff und Synthese in flüssige Kraftstoffe umgewandelt wird.", "PtL kann für Luftfahrt und Schifffahrt wichtig sein, ist im Pkw aber meist ein ineffizienter Umweg."],
+  ["well-to-wheel", "Well-to-Wheel", "Bilanz vom Energieursprung bis zur Bewegung des Fahrzeugs.", "Well-to-Wheel macht sichtbar, wie viel Energie über Strom, Wasserstoff, Synthese, Transport und Motor verloren geht."],
+  ["molekuel-hierarchie", "Molekül-Hierarchie", "Priorisierung knapper synthetischer Moleküle nach Alternativen, Effizienz, Klimawirkung, Kosten und Systemnutzen.", "E-Fuels zuerst dort einsetzen, wo direkte Elektrifizierung nicht reicht."],
+  ["synthetischer-kraftstoff", "Synthetischer Kraftstoff", "Künstlich hergestellter Kraftstoff, der fossile Moleküle ersetzen kann, aber selbst Energie, Rohstoffe und Infrastruktur braucht.", "Synthetisch heißt nicht automatisch wirksam oder klimaneutral."],
+  ["verbrenner-lock-in", "Verbrenner-Lock-in", "Pfadabhängigkeit durch neue Fahrzeuge, Infrastruktur oder Erwartungen, die den Umstieg auf wirksamere Lösungen verzögern.", "E-Fuel-Versprechen können Verbrenner-Lock-ins verlängern, wenn sie als Neuwagenstrategie verkauft werden."],
+];
+
 const evGlossaryTerms = [
   ["ladeangst", "Ladeangst", "Sorge, ein Elektrofahrzeug nicht rechtzeitig, nicht zuverlässig oder nicht schnell genug laden zu können.", "Ladeangst entsteht oft aus realen Einzelfällen, fehlender Erfahrung oder schlechter Infrastruktur. Gegenmittel sind Verfügbarkeit, Schnellladen, Alltagsladen und transparente Informationen."],
   ["alltagsladen", "Alltagsladen", "Laden an Orten, an denen Fahrzeuge ohnehin stehen, etwa zuhause, am Arbeitsplatz, beim Einkauf, im Parkhaus oder am Hotel.", "Alltagsladen reduziert Ladezeit als Zusatzaufwand, weil Standzeit zu Ladezeit wird."],
@@ -5346,6 +5726,31 @@ function renderHydrogenNarrativePage([slug, title, subtitle, riskLevel, abstract
           <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht technikfeindlich klingen. Erst Wasserstoff als wichtige Ressource anerkennen, dann Knappheit, Effizienz, Verfügbarkeit, Alternativen und No-Regret-Anwendungen klären.</p></article>
         </div>
         <p><a class="btn btn-primary" href="../../live/wasserstoff-fuer-alles/">Wasserstoff-Dossier öffnen</a></p>
+      </section>
+    </main>`;
+  return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
+}
+
+function renderEFuelNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Narrative</a> / ${escapeHtml(title)}</nav>
+          <p class="hero-kicker">Narrativbibliothek · E-Fuels &amp; Priorisierung</p>
+          <h1 class="hero-title">${escapeHtml(title)}</h1>
+          <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(abstract)}</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Wirkungsrisiko: ${escapeHtml(riskLevel)}</span></p>
+        </div>
+      </section>
+      ${topicSubnav("Narrative", "../")}
+      ${summaryGrid([["Risiko", riskLevel, riskLevel === "hoch" ? "critical" : "warning"], ["Typische Wirkung", "Spezialfälle werden als Massenargument für Pkw-Verbrenner genutzt.", "warning"], ["Gegenbewegung", response, "positive"], ["Leuchtturm-Dossier", "E-Fuels retten den Verbrenner?", "positive"]], `${title} Summary`)}
+      <section class="section">
+        <div class="card-grid two">
+          <article class="card"><p class="card-kicker">Psychologischer Hebel</p><h2 class="card-title">Weiter-so fühlt sich leichter an.</h2><p class="card-text">Status-quo-Bias, Verlustaversion, Identitätsschutz und technologische Hoffnung machen E-Fuels als Beruhigungsframe stark.</p></article>
+          <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht e-fuel-feindlich klingen. Erst Spezialanwendungen anerkennen, dann Knappheit, Effizienz, Verfügbarkeit und Pkw-Massenmarkt trennen.</p></article>
+        </div>
+        <p><a class="btn btn-primary" href="../../live/e-fuels-retten-den-verbrenner/">E-Fuels-Dossier öffnen</a></p>
       </section>
     </main>`;
   return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
@@ -5464,6 +5869,27 @@ function renderHydrogenGlossaryPage([slug, label, definition, hover]) {
   return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
 }
 
+function renderEFuelGlossaryPage([slug, label, definition, hover]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="term-hero">
+        <div class="term-hero__copy">
+          <nav class="breadcrumb"><a href="../">Begriffe</a> / ${escapeHtml(label)}</nav>
+          <p class="eyebrow">Glossar der Wirkungsökonomie</p>
+          <h1>${escapeHtml(label)}</h1>
+          <p class="lead">${escapeHtml(definition)}</p>
+          <p class="term-meta">Kategorie: Wirkungsradar · E-Fuels · Priorisierung · Datenstand: ${UPDATED_AT}</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsradar/live/e-fuels-retten-den-verbrenner/">E-Fuels-Dossier</a><a class="btn btn-secondary" href="../">Alle Begriffe</a></div>
+        </div>
+      </section>
+      <div class="term-page">
+        <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
+        <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
+        <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, synthetische Kraftstoffe als knappe Systemressource zu bewerten: nach Strombedarf, CO2-Quelle, Effizienz, Alternativen, Kosten, Zeitfenster und Lock-in-Risiko.</p></section>
+      </div>
+    </main>`;
+  return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
+}
+
 function renderEvGlossaryPage([slug, label, definition, hover]) {
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="term-hero">
@@ -5571,6 +5997,16 @@ writeFile("content/wirkungsradar/source-packs/hydrogen-prioritisation-v1.yaml", 
     { label: title, url, use_for: [use_for], warning, shows },
   ])),
 }).trim()}\n`);
+writeFile("content/wirkungsradar/source-packs/e-fuels-transport-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
+  id: "e-fuels-transport-v1",
+  last_verified: UPDATED_AT,
+  update_frequency: "quarterly",
+  dossier: "e-fuels-retten-den-verbrenner",
+  sources: Object.fromEntries(eFuelExternalSources.map(([title, shows, use_for, warning, url]) => [
+    title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, ""),
+    { label: title, url, use_for: [use_for], warning, shows },
+  ])),
+}).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/industry-transformation-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(industrySourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/nuclear-germany-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
   id: "nuclear-germany-v1",
@@ -5660,6 +6096,9 @@ for (const narrative of fusionNarrativePages) {
 for (const narrative of hydrogenNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderHydrogenNarrativePage(narrative));
 }
+for (const narrative of eFuelNarrativePages) {
+  writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderEFuelNarrativePage(narrative));
+}
 for (const narrative of industryNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderIndustryNarrativePage(narrative));
 }
@@ -5676,6 +6115,9 @@ for (const term of fusionGlossaryTerms) {
 }
 for (const term of hydrogenGlossaryTerms) {
   writeFile(`begriffe/${term[0]}/index.html`, renderHydrogenGlossaryPage(term));
+}
+for (const term of eFuelGlossaryTerms) {
+  writeFile(`begriffe/${term[0]}/index.html`, renderEFuelGlossaryPage(term));
 }
 for (const term of evGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;
