@@ -3,7 +3,27 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const DATA_STAND = "2026-06-04";
-const VERSION = "20260604-open-radar-packages";
+const VERSION = "20260604-open-radar-packages-patch49";
+
+function readJson(file, fallback) {
+  const full = path.join(ROOT, file);
+  if (!fs.existsSync(full)) return fallback;
+  return JSON.parse(fs.readFileSync(full, "utf8"));
+}
+
+function slugify(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/&/g, " und ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 const openPackages = [
   {
@@ -470,6 +490,47 @@ const missingDetailPackages = [
   ["windraeder-zerstoeren-natur", "Windräder zerstören Natur", "Klima & Energie", "Zielkonflikt, aber falsches Totalbild."],
 ];
 
+const routeAliasPackages = [
+  ["fuenfzehn-minuten-stadt-klimakaefig", "15-Minuten-Stadt oder Klimakäfig?", "Wohnen, Stadt & Infrastruktur", "Nähe kann Alltag erleichtern. Zum Käfig wird es erst im Angstframe.", "15-Minuten-Stadt heißt nicht, dass Menschen eingesperrt werden.", "Welche Stadtplanung verkürzt Wege, ohne Freiheit, Eigentum und demokratische Entscheidung einzuschränken?"],
+  ["oeffentlicher-rundfunk-staatsfunk", "Öffentlicher Rundfunk oder Staatsfunk?", "Medien, Demokratie & Öffentlichkeit", "Reformbedarf ja. Staatsfunk-Frame nein.", "Öffentlich-rechtliche Medien brauchen Kritik, Kontrolle und Reform. Das ist aber nicht dasselbe wie Staatspropaganda.", "Welche Kontrolle, Transparenz und Vielfalt machen öffentlich-rechtliche Medien demokratisch besser?"],
+  ["verfassungsschutz-regierungsschutz", "Verfassungsschutz oder Regierungsschutz?", "Medien, Demokratie & Öffentlichkeit", "Kontrollfrage ja. Pauschale Delegitimierung nein.", "Sicherheitsbehörden brauchen Kontrolle und Rechtswege. Daraus folgt nicht, dass jede Extremismusprüfung Regierungsschutz ist.", "Welche rechtsstaatliche Kontrolle schützt Grundrechte und Demokratie zugleich?"],
+];
+
+function narrativeCasePackage(input) {
+  const mechanisms = input.mechanisms || [];
+  const hidden = input.perception_shift?.hidden || [];
+  const effects = input.democratic_effects || [];
+  const resonance = input.resonance_spaces || [];
+  const question = input.woek_question || input.system_questions?.[0] || "Welche konkrete Wirkung entsteht, wenn Menschen diesem Frame folgen?";
+  const title = /\?$/.test(input.title) ? input.title : `${input.title}?`;
+  const cluster = String(input.cluster || "Mythen & Narrative").replace(/\s*\/\s*/g, ", ");
+  return {
+    slug: slugify(input.id || input.title),
+    title,
+    cluster,
+    claim: input.title,
+    judgement: input.short_thesis || "Ein vorbereiteter Narrativ-Seed wird als Debattenkarte sichtbar gemacht.",
+    truePoints: [
+      "Kritik an Politik, Institutionen, Medien oder Transformation ist legitim, wenn sie konkret, überprüfbar und verhältnismäßig bleibt.",
+      `Der Satz aktiviert nachvollziehbare Resonanzräume: ${resonance.slice(0, 4).join(", ") || "Unsicherheit, Ärger, Kontrollwunsch"}.`,
+      input.source?.title ? `Der Seed ist als öffentlicher Sprach- und Frame-Fall aus ${input.source.title} dokumentiert.` : "Der Seed ist als öffentlicher Sprach- und Frame-Fall dokumentiert.",
+    ],
+    missingPoints: [
+      input.short_thesis || "Der Begriff verkürzt eine komplexe Lage zu einem schnellen Deutungsbild.",
+      hidden.length ? `Ausgeblendet werden: ${hidden.slice(0, 4).join(", ")}.` : "Ausgeblendet werden konkrete Zuständigkeiten, Daten, Alternativen und demokratische Korrekturwege.",
+      effects.length ? `Demokratisches Risiko: ${effects.slice(0, 4).join(", ")}.` : "Demokratisch riskant wird der Frame, wenn Kritik zu Pauschalverdacht oder Feindbild wird.",
+    ],
+    betterQuestion: question,
+    hostLine: input.counterframe || `Den wahren Punkt konkret prüfen, aber den Frame nicht übernehmen: ${question}`,
+    source: input.source,
+    narrativeEffects: mechanisms,
+    resonanceSpaces: resonance,
+    generatedFromNarrativeCase: true,
+  };
+}
+
+const narrativeCasePackages = readJson("assets/data/narrative-cases.json", []).map(narrativeCasePackage);
+
 function esc(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -495,8 +556,8 @@ function shell({ title, description, canonical, base, main }) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(title)} | Wirkungsökonomie</title>
     <meta name="description" content="${esc(description)}">
-    <meta name="search_section" content="Wirkungsradar">
-    <meta name="search_type" content="Radar-Paket">
+    <meta name="search_section" content="Debatten-Kompass">
+    <meta name="search_type" content="Debattenkarte">
     <meta name="wirkungsradar_status" content="live">
     <meta name="wirkungsradar_data_stand" content="${DATA_STAND}">
     <link rel="canonical" href="${esc(canonical)}">
@@ -540,6 +601,28 @@ function fallbackPackage([slug, title, cluster, judgement]) {
     betterQuestion: "Welche konkrete Wirkung entsteht, wenn Menschen dieser Aussage folgen?",
     hostLine: "Der wahre Punkt gehört in die Rechnung. Aber die Schlussfolgerung braucht Fakten, Bilanzgrenze und Folgencheck.",
     generatedFromExistingLive: true,
+  };
+}
+
+function routeAliasPackage([slug, title, cluster, judgement, hostLine, betterQuestion]) {
+  return {
+    slug,
+    title,
+    cluster,
+    claim: title,
+    judgement,
+    truePoints: [
+      "Die Aussage berührt einen realen Prüfpunkt: öffentliche Regeln, Kosten, Freiheit, Kontrolle oder institutionelle Verantwortung müssen nachvollziehbar sein.",
+      "Kritik ist legitim, wenn sie konkrete Entscheidungen, Zuständigkeiten, Daten und Alternativen prüft.",
+    ],
+    missingPoints: [
+      "Aus einem berechtigten Prüfpunkt wird ein pauschales Misstrauens- oder Verbotsbild.",
+      "Demokratische Kontrolle, Rechtswege, lokale Unterschiede, Folgekosten und bessere Gestaltungsoptionen werden ausgeblendet.",
+      "Der bessere Weg ist nicht Pauschalverdacht, sondern konkrete Wirkungsprüfung.",
+    ],
+    betterQuestion,
+    hostLine,
+    generatedFromAliasClosure: true,
   };
 }
 
@@ -591,7 +674,7 @@ function livePage(item) {
         <article class="card"><p class="v2-badge">Frame-Effekt</p><h3 class="card-title">Ein Bild entscheidet vor der Prüfung.</h3><p class="card-text">Der Satz setzt ein schnelles Bild. Wer nur widerspricht, bleibt oft im alten Frame.</p><p class="card-text"><strong>Rauskommen:</strong> Wahren Punkt anerkennen und Bilanzgrenze öffnen.</p></article>
         <article class="card"><p class="v2-badge">Verfügbarkeitsheuristik</p><h3 class="card-title">Das auffällige Beispiel wirkt wie die ganze Lage.</h3><p class="card-text">Ein emotionales Einzelbild wird leichter erinnert als eine differenzierte Wirkungsrechnung.</p><p class="card-text"><strong>Rauskommen:</strong> Daten, Zeitpfad und Gegenbeispiel ergänzen.</p></article>
         <article class="card"><p class="v2-badge">Kontrollbedürfnis</p><h3 class="card-title">Eine einfache Ursache beruhigt.</h3><p class="card-text">Komplexität wird auf eine Schuldfigur oder eine einfache Blockade reduziert.</p><p class="card-text"><strong>Rauskommen:</strong> Konkrete Hebel nennen, die den Zustand verbessern.</p></article>
-      </div></div></section>
+      </div>${item.narrativeEffects?.length || item.resonanceSpaces?.length ? `<article class="card"><p class="card-kicker">Seed-Signale</p>${chips([...(item.narrativeEffects || []), ...(item.resonanceSpaces || [])].slice(0, 10))}</article>` : ""}</div></section>
       <section class="section" id="weiter"><div><article class="card"><p class="card-kicker">Vertiefung</p><h2 class="card-title">Detailseite öffnen.</h2><p class="card-text">Die Detailseite bündelt Faktenlage, Folgencheck, psychologische Mechanik, Antwortformate und offene Quellenpflege.</p><p><a class="btn btn-primary" href="../../detail/${esc(item.slug)}/">Detailanalyse öffnen</a></p></article></div></section>`;
   return shell({
     title: `${item.title} | Debatten-Kompass`,
@@ -632,6 +715,7 @@ function detailPage(item) {
         <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span><span class="radar-answer-label">Vertiefung</span></summary><p>${esc(answer2(item))}</p></details>
       </div></div></section>
       <section class="section" id="quellenstatus"><div><article class="card"><p class="card-kicker">Quellenstatus</p><h2 class="card-title">Veröffentlicht, Quellenpflege sichtbar.</h2><p class="card-text">Dieses Paket wurde aus dem offenen Backlog in eine Debattenkarte und Detailseite überführt. Wo noch keine spezifische Quellenkette im vorhandenen Dossierbestand hinterlegt war, ist die Quellenprüfung ausdrücklich als redaktionell nachzuführen markiert.</p><p><a class="btn btn-secondary" href="../../quellen/">Quellenhub öffnen</a></p></article></div></section>
+      ${item.source?.url ? `<section class="section section-soft" id="seed-quelle"><div><article class="card"><p class="card-kicker">Seed-Quelle</p><h2 class="card-title">${esc(item.source.title || "Quelle")}</h2><p class="card-text">${esc(item.source.context || "Quelle des vorbereiteten Narrativ-Seeds.")}</p><p><a class="btn btn-secondary" href="${esc(item.source.url)}" target="_blank" rel="noopener">Quelle öffnen</a></p></article></div></section>` : ""}
       <section class="section section-soft" id="debattenkarte"><div><article class="card"><p class="card-kicker">Debattenkarte</p><h2 class="card-title">Schnell nutzbare Antwort.</h2><p class="card-text">${esc(item.hostLine)}</p><p><a class="btn btn-primary" href="../../live/${esc(item.slug)}/">Antwort öffnen</a></p></article></div></section>`;
   return shell({
     title: `${item.title} | Debatten-Kompass Detail`,
@@ -689,7 +773,8 @@ function updateStatusPage(packages) {
   }));
 }
 
-const allPackages = [...openPackages, ...missingDetailPackages.map(fallbackPackage)];
+const aliasPackages = routeAliasPackages.map(routeAliasPackage);
+const allPackages = [...openPackages, ...aliasPackages, ...narrativeCasePackages, ...missingDetailPackages.map(fallbackPackage)];
 
 for (const item of allPackages) {
   if (!item.generatedFromExistingLive) {
@@ -704,7 +789,7 @@ writeFile("wirkungsradar/live/sdgs-sind-weltregierung/index.html", livePage(sdgL
 injectBeforeMainEnd(
   "wirkungsradar/live/index.html",
   "offene-radar-pakete-geschlossen",
-  `<section class="section section-soft" id="offene-radar-pakete-geschlossen"><div><div class="section-header"><p class="hero-kicker">Backlog geschlossen</p><h2>${openPackages.length} zusätzliche Debattenkarten.</h2><p>Diese Karten waren bisher nur als Seed, Backlog oder Themenhinweis sichtbar und sind jetzt als Debattenkarten veröffentlicht.</p></div><div class="card-grid three">${openPackages.map((item) => card(item)).join("")}</div></div></section>`,
+  `<section class="section section-soft" id="offene-radar-pakete-geschlossen"><div><div class="section-header"><p class="hero-kicker">Backlog geschlossen</p><h2>${openPackages.length + aliasPackages.length + narrativeCasePackages.length} zusätzliche Debattenkarten.</h2><p>Diese Karten waren bisher nur als Seed, Backlog, Alias oder Themenhinweis sichtbar und sind jetzt als Debattenkarten veröffentlicht.</p></div><div class="card-grid three">${[...openPackages, ...aliasPackages, ...narrativeCasePackages].map((item) => card(item)).join("")}</div></div></section>`,
 );
 
 injectBeforeMainEnd(
@@ -713,7 +798,7 @@ injectBeforeMainEnd(
   `<section class="section section-soft" id="offene-radar-detailpakete-geschlossen"><div><div class="section-header"><p class="hero-kicker">Backlog geschlossen</p><h2>${allPackages.length + 1} zusätzliche Detailseiten.</h2><p>Offene Radar-Pakete und bisher nur als Live-Seite vorhandene Karten haben jetzt Detailseiten.</p></div><div class="card-grid three">${[...openPackages, sdgLegacy].map((item) => card(item)).join("")}</div></div></section>`,
 );
 
-updateStatusPage([...openPackages, ...missingDetailPackages.map(fallbackPackage), sdgLegacy]);
+updateStatusPage([...openPackages, ...aliasPackages, ...narrativeCasePackages, ...missingDetailPackages.map(fallbackPackage), sdgLegacy]);
 
 writeFile(
   "reports/wirkungsradar-live-inventory.json",
@@ -722,6 +807,8 @@ writeFile(
       dataStand: DATA_STAND,
       generator: VERSION,
       openedPackagesClosed: openPackages.map((item) => item.slug),
+      aliasRoutesClosed: aliasPackages.map((item) => item.slug),
+      narrativeCaseRoutesClosed: narrativeCasePackages.map((item) => item.slug),
       existingLiveDetailsAdded: missingDetailPackages.map(([slug]) => slug),
       legacyLiveAliasAdded: "sdgs-sind-weltregierung",
       note: "Backlog/Seed-Pakete wurden in Live- und Detailseiten ueberfuehrt. Spezifische Quellenketten bleiben sichtbar als redaktionelle Pflege markiert.",
@@ -731,4 +818,4 @@ writeFile(
   ),
 );
 
-console.log(`Open radar packages built: ${openPackages.length} live packages, ${allPackages.length + 1} detail/live-alias closures.`);
+console.log(`Open radar packages built: ${openPackages.length + aliasPackages.length + narrativeCasePackages.length} live packages, ${allPackages.length + 1} detail/live-alias closures.`);
