@@ -141,6 +141,36 @@ const overrides = {
       ["Eine Maximalzahl wird Normalfall.", "Ankereffekt", "100.000 Euro bleibt hängen, auch wenn Förderung, Gebäudezustand und Fälle variieren.", "Standardfall, Härtefall und Extremfall sauber auseinanderhalten."],
     ],
   },
+  "arbeit-lohnt-sich-nicht-mehr": {
+    claim: "Arbeit lohnt sich nicht mehr?",
+    short: "Wahrer Lohnabstands- und Frustkern, falsches Faulheitsnarrativ.",
+    say:
+      "Arbeit muss sich stärker lohnen. Aber die Lösung ist bessere Arbeit, Wohnen und Anreize - nicht Menschen im Bürgergeld arm oder würdelos zu machen.",
+    live:
+      "Der Frust ist real: Niedrige Löhne, hohe Mieten, Betreuung und Pendeln können Arbeit zu wenig spürbar machen. Der Denkfehler ist, daraus zu schließen, Bürgergeld sei Luxus oder Menschen seien faul.",
+    panel:
+      "Der wahre Kern ist: Arbeit muss sich klar lohnen. Aber das Problem liegt oft nicht beim Bürgergeld, sondern bei Niedriglohn, Miete, Kinderbetreuung, Pendelkosten und Transferentzug. Wenn jemand 40 Stunden arbeitet, aber hohe Miete, Kita, Bus, wegfallende Leistungen und Bürokratie den Vorteil auffressen, entsteht berechtigter Frust. Dann ist die Lösung nicht, die Grundsicherung zu drücken, sondern Arbeit, Wohnen, Betreuung, Qualifikation, Mobilität und Transfers so zu bauen, dass mehr Arbeit echte Teilhabe schafft.",
+    exampleTitle: "Der Lohn-Eimer mit Löchern",
+    example:
+      "Mehr Arbeit füllt den Eimer. Miete, Kinderbetreuung, Pendeln, wegfallende Leistungen, Bürokratie und Stress können ihn wieder leeren. Wer Arbeit stärken will, muss diese Löcher schließen.",
+    question: "Meinst du, dass Bürgergeld zu hoch ist - oder dass Löhne, Mieten, Kinderbetreuung, Pendeln und Transferentzug Arbeit zu wenig spürbar machen?",
+    oldFrame: "Bürgergeld macht faul.",
+    notThis: "Bürgergeld ist zu hoch, also muss man Druck nach unten machen.",
+    better: "Welche Kombination aus Lohn, Wohnen, Betreuung, Mobilität, Qualifikation und Transferregeln sorgt dafür, dass Arbeit echte Teilhabe schafft?",
+    impacts: [
+      ["Lohn", "Niedrige Löhne schwächen Teilhabe.", "Living-Wage-Logik statt bloßer Beschäftigungszählung."],
+      ["Wohnen", "Hohe Mieten können den Arbeitsvorteil auffressen.", "Wohnpolitik ist auch Arbeitsmarktpolitik."],
+      ["Betreuung", "Ohne Kita, Pflegeentlastung und Planbarkeit bleibt Mehrarbeit theoretisch.", "Care ist Teil des Arbeitsanreizes."],
+      ["Transferentzug", "Wenn Leistungen zu schnell sinken, kommt Mehrarbeit kaum an.", "Übergänge müssen einfacher und glatter werden."],
+      ["Jobcenter", "Kontrolle ersetzt keine Qualifikation und kein gutes Matching.", "Jobcenter als Wirkungszentren denken."],
+      ["Demokratie", "Faulheitsframes spalten Erwerbstätige und Leistungsbeziehende.", "Frust ernst nehmen, Sündenbocklogik stoppen."],
+    ],
+    psychology: [
+      ["Der Vergleich schmerzt.", "Relative Deprivation", "Menschen vergleichen reale Haushaltslagen, nicht abstrakte Tabellen.", "Frust anerkennen und die echte Haushaltsrechnung öffnen."],
+      ["Struktur wird Charakter.", "Fundamentaler Attributionsfehler", "Miete, Gesundheit, Qualifikation und Betreuung verschwinden hinter dem Wort faul.", "Von der Person zur Barriere wechseln."],
+      ["Die anderen nehmen mir etwas weg.", "Zero-Sum-Bias", "Grundsicherung erscheint als Verlust der Arbeitenden.", "Zeigen, dass gute Arbeit und gute Sicherung zusammen wirken."],
+    ],
+  },
   "windraeder-voegel-wald-beton-rueckbau": {
     claim: "Windräder töten Vögel, zerstören Wald, machen krank und hinterlassen Beton.",
     short: "Reale Zielkonflikte, aber falsches Blockadenarrativ.",
