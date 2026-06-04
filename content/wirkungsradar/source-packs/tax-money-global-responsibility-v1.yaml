@@ -64,8 +64,38 @@ sources:
     label: "Bundesregierung - So unterstützt Deutschland die Ukraine"
     url: "https://www.bundesregierung.de/breg-de/aktuelles/deutschland-hilft-der-ukraine-2160274"
     use_for:
-      - "Offizielle Zahlen, zivile und militärische Unterstützung, Energieinfrastruktur, humanitäre Hilfe."
-    warning: "Bilanzgrenzen und Aktualisierung prüfen."
+      - "offizielle Deutschland-Übersicht"
+      - "militärische, zivile und humanitäre Unterstützung"
+      - "Energieinfrastruktur"
+      - "Zahlen und Aktualisierungen"
+    warning: "Bilanzgrenzen und Aktualisierung prüfen; nicht jede Zusage ist bereits Auszahlung."
+  auswaertiges_amt_ukraine_solidaritaet:
+    label: "Auswärtiges Amt - Solidarität mit der Ukraine"
+    url: "https://www.auswaertiges-amt.de/de/service/laender/ukraine-node/ukraine-solidaritaet-2513956"
+    use_for:
+      - "Stand 24.02.2026"
+      - "rund 41 Mrd. Euro zivile Unterstützung"
+      - "rund 55,5 Mrd. Euro militärische Unterstützung"
+      - "geleistet beziehungsweise für kommende Jahre bereitgestellt"
+    warning: "AA-Zahlen sind politische Gesamtübersicht; Zusagen, Bereitstellungen und Auszahlungen sauber trennen."
+  bundesregierung_ukraine_detail_pdf_2026:
+    label: "Bundesregierung - Detailübersicht Ukraine-Unterstützung 2026"
+    url: "https://www.bundesregierung.de/resource/blob/975228/2423058/b49e873efda519b0e6be3a12d1e306ee/2026-04-24-ukraine-unterstuetzung-data.pdf?download=1"
+    use_for:
+      - "Detailübersicht Stand 31.03.2026"
+      - "Bilanzgrenzen"
+      - "reguläre Beiträge teils nicht enthalten"
+      - "Länder, Kommunen und private Hilfe teils nicht enthalten"
+      - "Garantien und Bürgschaften in zivilen Summen"
+    warning: "PDF-Stand beachten; bei Aktualisierung immer neue PDF-Version prüfen."
+  bmvg_vier_jahre_ukraine_unterstuetzung:
+    label: "BMVg - Vier Jahre Ukraine-Unterstützung"
+    url: "https://www.bmvg.de/de/aktuelles/vier-jahre-ukraine-unterstuetzung-6071848"
+    use_for:
+      - "militärische Unterstützungslogik"
+      - "Ausrüstung, Ausbildung und Fähigkeitsaufbau"
+      - "Sicherheits- und Verteidigungsfähigkeit"
+    warning: "Ministeriumsquelle; mit Haushalts- und Lieferdaten abgleichen."
   bmf_beirat_ukraine:
     label: "BMF Wissenschaftlicher Beirat - Ukraine-Hilfe"
     url: "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Ministerium/Wissenschaftlicher-Beirat/Gutachten/ukraine-hilfe-der-bundesregierung.pdf"
@@ -76,8 +106,64 @@ sources:
     label: "Kiel Institute - Ukraine Support Tracker"
     url: "https://www.kielinstitut.de/topics/war-against-ukraine/ukraine-support-tracker/"
     use_for:
-      - "Internationaler Vergleich, militärische, finanzielle und humanitäre Hilfe."
-    warning: "Methodik und Datenstand beachten."
+      - "internationaler Vergleich"
+      - "militärische, finanzielle und humanitäre Hilfe"
+      - "staatliche Zusagen und Leistungen"
+      - "faktenbasierte Debatte"
+    warning: "Methodik und Datenstand beachten; nationale Haushaltslogiken sind nicht vollständig identisch."
+  kiel_ukraine_tracker_data:
+    label: "Kiel Institute - Ukraine Support Tracker Data"
+    url: "https://www.kielinstitut.de/publications/ukraine-support-tracker-data-6453/"
+    use_for:
+      - "Datensatz zum Ukraine Support Tracker"
+      - "Vergleichbarkeit"
+      - "Update-Methodik"
+    warning: "Datensatz regelmäßig aktualisieren und Methodikhinweise übernehmen."
+  eu_ukraine_facility:
+    label: "EU-Kommission - Ukraine Facility"
+    url: "https://enlargement.ec.europa.eu/funding-technical-assistance/ukraine-facility_en"
+    use_for:
+      - "bis zu 50 Mrd. Euro 2024-2027"
+      - "Resilienz"
+      - "Wiederaufbau"
+      - "Modernisierung"
+      - "Reformen"
+      - "laufende Finanzierungsbedarfe"
+    warning: "EU-Instrument; Zuschüsse, Darlehen, Bedingungen und Zahlungen trennen."
+  eu_commission_ukraine_facility_general:
+    label: "EU-Kommission - EU assistance to Ukraine"
+    url: "https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-assistance-ukraine/ukraine-facility_en"
+    use_for:
+      - "Ukraine Facility"
+      - "EU-Solidarität"
+      - "Finanzierungslogik und Reformauflagen"
+    warning: "Mit Facility-Seite und Ratsbeschlüssen abgleichen."
+  consilium_ukraine_facility:
+    label: "Rat der EU - Ukraine Facility"
+    url: "https://www.consilium.europa.eu/en/policies/ukraine-facility/"
+    use_for:
+      - "50 Mrd. Euro 2024-2027"
+      - "33 Mrd. Euro Darlehen"
+      - "17 Mrd. Euro Zuschüsse"
+      - "Audit- und Kontrollrahmen"
+    warning: "Ratseite kann technische Zugriffssperren für Skripte haben; Browser-/Suchprüfung nutzen."
+  unhcr_ukraine_situation:
+    label: "UNHCR - Ukraine Refugee Situation"
+    url: "https://data.unhcr.org/en/situations/ukraine"
+    use_for:
+      - "Flucht- und Schutzlage"
+      - "regionale Daten"
+      - "Humanitäre Lage"
+    warning: "Fluchtdaten ändern sich; immer Datenstand sichtbar machen."
+  world_bank_ukraine_rdna5:
+    label: "World Bank - Ukraine RDNA5"
+    url: "https://www.worldbank.org/en/news/press-release/2026/02/23/updated-ukraine-recovery-and-reconstruction-needs-assessment-released"
+    use_for:
+      - "RDNA5 Stand 23.02.2026"
+      - "Wiederaufbau- und Erholungsbedarf"
+      - "direkte Schäden"
+      - "Folgekosten und Infrastrukturbedarf"
+    warning: "Aktuellere RDNA5 ersetzt veraltete RDNA4-Linkziele; Zahlen kontextualisieren."
   bundesbank_phf:
     label: "Bundesbank - Vermögen privater Haushalte"
     url: "https://www.bundesbank.de/de/bundesbank/forschung/studie-zur-wirtschaftlichen-lage-privater-haushalte-phf/ergebnisse-604886"

@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const UPDATED_AT = "2026-06-04";
-const ASSET_VERSION = "20260604-radwege-peru-v2";
+const ASSET_VERSION = "20260604-ukraine-support-v1";
 const clusterSlug = "steuergeld-globale-verantwortung-fairness";
 const clusterTitle = "Steuergeld, globale Verantwortung & Fairness";
 const clusterSubtitle = "Warum „unser Geld geht weg“ oft die falsche Bilanzgrenze setzt.";
@@ -16,9 +16,18 @@ const sources = [
   ["KfW Entwicklungsbank - Transparenzportal", "kfw_transparenzportal", "https://www.kfw-entwicklungsbank.de/Internationale-Finanzierung/KfW-Entwicklungsbank/Transparenz/", ["Projekttransparenz", "Daten zu Finanzierungen", "Kontrolle und Evaluierung"], "Konkrete Projektdaten auffindbar halten."],
   ["BMZ - Transparenzportal", "bmz_transparenzportal", "https://www.bmz.de/de/ministerium/zahlen-fakten/bmz-transparenzportal", ["Transparenz öffentlicher Entwicklungszusammenarbeit", "Projekt- und Finanzdaten"], "Bei jeder Aktualisierung Datenstand prüfen."],
   ["KfW - Evaluierungen", "kfw_evaluierung", "https://www.kfw-entwicklungsbank.de/Evaluierung/", ["Wirkungsprüfung", "Lernen aus Projekten", "Qualitätssicherung"], "Falls keine projektspezifische Evaluierung vorliegt, klar sagen: noch nicht abschließend evaluiert."],
-  ["Bundesregierung - So unterstützt Deutschland die Ukraine", "bundesregierung_ukraine_hilfe", "https://www.bundesregierung.de/breg-de/aktuelles/deutschland-hilft-der-ukraine-2160274", "Offizielle Zahlen, zivile und militärische Unterstützung, Energieinfrastruktur, humanitäre Hilfe.", "Bilanzgrenzen und Aktualisierung prüfen."],
+  ["Bundesregierung - So unterstützt Deutschland die Ukraine", "bundesregierung_ukraine_hilfe", "https://www.bundesregierung.de/breg-de/aktuelles/deutschland-hilft-der-ukraine-2160274", ["offizielle Deutschland-Übersicht", "militärische, zivile und humanitäre Unterstützung", "Energieinfrastruktur", "Zahlen und Aktualisierungen"], "Bilanzgrenzen und Aktualisierung prüfen; nicht jede Zusage ist bereits Auszahlung."],
+  ["Auswärtiges Amt - Solidarität mit der Ukraine", "auswaertiges_amt_ukraine_solidaritaet", "https://www.auswaertiges-amt.de/de/service/laender/ukraine-node/ukraine-solidaritaet-2513956", ["Stand 24.02.2026", "rund 41 Mrd. Euro zivile Unterstützung", "rund 55,5 Mrd. Euro militärische Unterstützung", "geleistet beziehungsweise für kommende Jahre bereitgestellt"], "AA-Zahlen sind politische Gesamtübersicht; Zusagen, Bereitstellungen und Auszahlungen sauber trennen."],
+  ["Bundesregierung - Detailübersicht Ukraine-Unterstützung 2026", "bundesregierung_ukraine_detail_pdf_2026", "https://www.bundesregierung.de/resource/blob/975228/2423058/b49e873efda519b0e6be3a12d1e306ee/2026-04-24-ukraine-unterstuetzung-data.pdf?download=1", ["Detailübersicht Stand 31.03.2026", "Bilanzgrenzen", "reguläre Beiträge teils nicht enthalten", "Länder, Kommunen und private Hilfe teils nicht enthalten", "Garantien und Bürgschaften in zivilen Summen"], "PDF-Stand beachten; bei Aktualisierung immer neue PDF-Version prüfen."],
+  ["BMVg - Vier Jahre Ukraine-Unterstützung", "bmvg_vier_jahre_ukraine_unterstuetzung", "https://www.bmvg.de/de/aktuelles/vier-jahre-ukraine-unterstuetzung-6071848", ["militärische Unterstützungslogik", "Ausrüstung, Ausbildung und Fähigkeitsaufbau", "Sicherheits- und Verteidigungsfähigkeit"], "Ministeriumsquelle; mit Haushalts- und Lieferdaten abgleichen."],
   ["BMF Wissenschaftlicher Beirat - Ukraine-Hilfe", "bmf_beirat_ukraine", "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Ministerium/Wissenschaftlicher-Beirat/Gutachten/ukraine-hilfe-der-bundesregierung.pdf", "Finanzpolitische Einordnung, jährliche Kosten, BIP-Anteil, Kosten von Nicht-Unterstützung.", "Gutachtenstand und Annahmen mit neueren Daten abgleichen."],
-  ["Kiel Institute - Ukraine Support Tracker", "kiel_ukraine_tracker", "https://www.kielinstitut.de/topics/war-against-ukraine/ukraine-support-tracker/", "Internationaler Vergleich, militärische, finanzielle und humanitäre Hilfe.", "Methodik und Datenstand beachten."],
+  ["Kiel Institute - Ukraine Support Tracker", "kiel_ukraine_tracker", "https://www.kielinstitut.de/topics/war-against-ukraine/ukraine-support-tracker/", ["internationaler Vergleich", "militärische, finanzielle und humanitäre Hilfe", "staatliche Zusagen und Leistungen", "faktenbasierte Debatte"], "Methodik und Datenstand beachten; nationale Haushaltslogiken sind nicht vollständig identisch."],
+  ["Kiel Institute - Ukraine Support Tracker Data", "kiel_ukraine_tracker_data", "https://www.kielinstitut.de/publications/ukraine-support-tracker-data-6453/", ["Datensatz zum Ukraine Support Tracker", "Vergleichbarkeit", "Update-Methodik"], "Datensatz regelmäßig aktualisieren und Methodikhinweise übernehmen."],
+  ["EU-Kommission - Ukraine Facility", "eu_ukraine_facility", "https://enlargement.ec.europa.eu/funding-technical-assistance/ukraine-facility_en", ["bis zu 50 Mrd. Euro 2024-2027", "Resilienz", "Wiederaufbau", "Modernisierung", "Reformen", "laufende Finanzierungsbedarfe"], "EU-Instrument; Zuschüsse, Darlehen, Bedingungen und Zahlungen trennen."],
+  ["EU-Kommission - EU assistance to Ukraine", "eu_commission_ukraine_facility_general", "https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-assistance-ukraine/ukraine-facility_en", ["Ukraine Facility", "EU-Solidarität", "Finanzierungslogik und Reformauflagen"], "Mit Facility-Seite und Ratsbeschlüssen abgleichen."],
+  ["Rat der EU - Ukraine Facility", "consilium_ukraine_facility", "https://www.consilium.europa.eu/en/policies/ukraine-facility/", ["50 Mrd. Euro 2024-2027", "33 Mrd. Euro Darlehen", "17 Mrd. Euro Zuschüsse", "Audit- und Kontrollrahmen"], "Ratseite kann technische Zugriffssperren für Skripte haben; Browser-/Suchprüfung nutzen."],
+  ["UNHCR - Ukraine Refugee Situation", "unhcr_ukraine_situation", "https://data.unhcr.org/en/situations/ukraine", ["Flucht- und Schutzlage", "regionale Daten", "Humanitäre Lage"], "Fluchtdaten ändern sich; immer Datenstand sichtbar machen."],
+  ["World Bank - Ukraine RDNA5", "world_bank_ukraine_rdna5", "https://www.worldbank.org/en/news/press-release/2026/02/23/updated-ukraine-recovery-and-reconstruction-needs-assessment-released", ["RDNA5 Stand 23.02.2026", "Wiederaufbau- und Erholungsbedarf", "direkte Schäden", "Folgekosten und Infrastrukturbedarf"], "Aktuellere RDNA5 ersetzt veraltete RDNA4-Linkziele; Zahlen kontextualisieren."],
   ["Bundesbank - Vermögen privater Haushalte", "bundesbank_phf", "https://www.bundesbank.de/de/bundesbank/forschung/studie-zur-wirtschaftlichen-lage-privater-haushalte-phf/ergebnisse-604886", "Vermögensverteilung, Nettovermögen und Ungleichheitsdaten Deutschland.", "Vermögen ist Verteilungsindikator, kein Personenurteil."],
   ["World Inequality Database", "wid", "https://wid.world/", "Internationale Einkommens- und Vermögensungleichheit.", "Länder- und Methodikunterschiede beachten."],
   ["Oxfam - globale Ungleichheit", "oxfam_inequality", "https://www.oxfam.org/", "Globale Vermögenskonzentration, politische Macht durch Vermögen, Klimagerechtigkeit.", "Advocacy-Quelle; Methodik transparent einordnen."],
@@ -146,29 +155,115 @@ const dossiers = [
   {
     slug: "ukraine-unterstuetzung-steuergeld",
     title: "Unser Steuergeld geht in die Ukraine?",
-    subtitle: "Warum Unterstützung auch Sicherheits- und Präventionspolitik ist.",
-    judgement: "Wahrer Kostenkern, falscher Geld-weg-Frame.",
-    claim: "Wir könnten das Geld selbst besser gebrauchen.",
+    subtitle: "Hilfe ist kein Loch im Haushalt. Sie ist Schutzleistung.",
+    judgement: "Echte Haushaltsfrage. Falsches Verlustbild.",
+    status: "checked_v2_positive_examples",
+    claim: "Unser Steuergeld geht in die Ukraine?",
+    claimVariants: ["Wir könnten das Geld hier besser gebrauchen.", "Erst Deutschland, dann Ukraine.", "Ukraine-Hilfe ist ein Fass ohne Boden.", "Wir bezahlen den Krieg.", "Das Geld versickert in der Ukraine.", "Für die Ukraine ist Geld da, für Rentner nicht.", "Deutschland soll nicht Zahlmeister sein.", "Ukraine-Unterstützung bringt uns nichts."],
     abstract:
-      "Die Aussage „Unser Steuergeld geht in die Ukraine, während wir es hier besser brauchen könnten“ enthält einen wahren Kern: Ukraine-Unterstützung kostet reales Geld, und Deutschland hat große eigene Aufgaben. Irreführend wird sie, wenn die Unterstützung als reiner Geldabfluss dargestellt wird. Wirkungsökonomisch ist Ukraine-Hilfe eine Sicherheits-, Stabilitäts-, Rechtsstaats- und Präventionsfrage.",
+      "Das Narrativ enthält einen wahren Punkt: Öffentliche Ausgaben müssen transparent, kontrolliert und begründet sein. Der Denkfehler ist: Ukraine-Unterstützung wird als Geldverlust erzählt, obwohl sie Schutz von Menschenleben, staatliche Handlungsfähigkeit, europäische Sicherheit, regelbasierte Ordnung, Wiederaufbau, Energie- und Wirtschaftsresilienz sowie die Vermeidung größerer Folgekosten berührt.",
     points: [
-      ["Es geht um reales Geld", "Ukraine-Hilfe muss transparent, kontrolliert und europäisch fair verteilt werden."],
-      ["Es ist kein reiner Geldabfluss", "Unterstützung wirkt auf Sicherheit, Völkerrecht, Energieinfrastruktur, Flüchtlingskosten und europäische Stabilität."],
-      ["Nicht-Unterstützung hätte Kosten", "Eine militärische Niederlage der Ukraine könnte höhere Sicherheits-, Flüchtlings-, Handels- und Verteidigungskosten erzeugen."],
-      ["Zahlen sauber trennen", "Militärhilfe, zivile Hilfe, EU-Kredite, Geflüchtetenkosten und künftige Verpflichtungen sind verschiedene Bilanzgrenzen."],
-      ["Kontrolle bleibt Pflicht", "Korruptionsschutz, Beschaffungsprüfung, Priorisierung und europäische Lastenteilung sind zentral."],
-      ["WÖk-Antwort: Sicherheits-T-SROI", "Jede Unterstützung wird nach Risiko, Wirkung, Prävention, Resilienz und demokratischer Ordnung bewertet."],
+      ["Was stimmt?", "Deutschland hat hohe Unterstützungsleistungen für die Ukraine zugesagt und geleistet. Öffentliche Gelder müssen transparent, kontrolliert und sinnvoll priorisiert werden."],
+      ["Was fehlt?", "Ukraine-Hilfe ist nicht nur Bargeldtransfer. Viele Leistungen sind Ausrüstung, Ausbildung, Industrieaufträge, Garantien, Kredite, europäische Programme oder konkrete zivile Stabilisierung."],
+      ["Zivile Wirkung", "Zivile Hilfe hält Energie, Gesundheit, Verwaltung, kommunale Versorgung, Schulen und Wasser stabiler."],
+      ["Sicherheitswirkung", "Militärische Unterstützung soll die Verteidigungsfähigkeit eines angegriffenen Staates sichern und europäische Abschreckung stärken."],
+      ["Bilanzgrenze", "Nicht jede Zusage ist sofort ausgegebenes Geld. Nicht jede Summe ist Geschenk; Garantien, Kredite, Sachleistungen und Haushaltsmittel unterscheiden sich."],
+      ["Kernsatz", "Der wahre Punkt ist Kontrolle. Der falsche Sprung ist Verlustbild."],
     ],
     answers: {
-      ten: "Ukraine-Hilfe ist nicht einfach Geld weg. Sie ist Sicherheits- und Präventionspolitik. Die bessere Frage ist: Was kostet Unterstützung - und was kostet Nicht-Unterstützung?",
+      ten: "Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe hält Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Die richtige Frage ist: Was bewirkt sie konkret - und wie wird sie kontrolliert?",
       thirty:
-        "Der wahre Kern ist: Deutschland hat eigene Probleme und Ukraine-Hilfe kostet Geld. Der Denkfehler ist: sie als reinen Geldabfluss zu sehen. Wenn die Ukraine verliert, können die Kosten für Europa höher werden: mehr Sicherheitsdruck, mehr Flucht, mehr Verteidigungsausgaben, mehr Erpressbarkeit. Wirkung heißt hier: Risiko vermeiden.",
+        "Der wahre Punkt ist: Steuergeld muss kontrolliert werden. Der falsche Sprung ist: Ukraine-Hilfe sei einfach ein Verlust. Unterstützung hält Infrastruktur, Kliniken, Verwaltung und Verteidigung handlungsfähig. Sie schützt auch Europas Sicherheitsordnung. Darum prüfen wir Wirkung, Kontrolle und Folgekosten - nicht nur die Schlagzeile.",
       two:
-        "Natürlich muss Ukraine-Hilfe kontrolliert werden. Es geht um reale Haushaltsmittel, reale Prioritäten und reale Beschaffung. Aber der Satz „das Geld geht weg“ setzt eine zu enge Bilanzgrenze. Unterstützung kann Sicherheitskosten vermeiden, Völkerrecht schützen, europäische Stabilität sichern, Energie- und Versorgungsinfrastruktur stabilisieren, weitere Fluchtbewegungen begrenzen und Abschreckung stärken. Wirkungsökonomisch fragt man deshalb nicht nur: Was kostet die Hilfe? Sondern auch: Was kostet Nicht-Hilfe? Entscheidend sind Transparenz, europäische Lastenteilung, Korruptionsschutz, Beschaffungswirkung, Resilienz und eine klare Friedens- und Sicherheitslogik.",
+        "Ich verstehe den Reflex. In Deutschland fehlen Investitionen in Schulen, Brücken, Pflege, Bahn und Wohnen. Deshalb muss jede Ausgabe gut erklärt und kontrolliert werden. Aber bei der Ukraine-Unterstützung ist der Satz „Unser Geld ist weg“ zu kurz. Ein Teil der Hilfe stabilisiert den ukrainischen Staat: Energie, Verwaltung, Krankenhäuser, Kommunen, Geflüchtete und Wiederaufbau. Ein Teil ist militärische Unterstützung, damit die Ukraine sich verteidigen kann. Ein Teil läuft über europäische Instrumente, Garantien, Kredite, Ausbildung, Industriekooperation oder Wiederaufbauprogramme. Das ist nicht alles dasselbe. Das positive Bild ist: Ein Krankenhaus hat Strom. Wasserpumpen laufen. Eine Kommune kann Menschen versorgen. Ein Staat bleibt handlungsfähig. Und Europa zeigt: Grenzen dürfen nicht mit Gewalt verschoben werden. Das schützt nicht nur die Ukraine, sondern auch unsere Sicherheitsordnung. Natürlich muss man fragen: Welche Summe ist zugesagt, welche schon ausgezahlt? Was ist Zuschuss, Kredit, Garantie, Material oder Ausbildung? Was wird kontrolliert? Was stärkt auch deutsche und europäische Sicherheit? Genau diese Prüfung brauchen wir. Aber ein Pauschalframe „Ukraine frisst unser Geld“ macht die Debatte nicht ehrlicher. Er macht nur die Wirkung unsichtbar.",
+      comment:
+        "Ukraine-Hilfe ist nicht einfach „Geld weg“. Sie hält Strom, Kliniken, Verwaltung, Schutz und europäische Sicherheit stabil. Die richtige Frage ist: Was bewirkt sie konkret, wie wird sie kontrolliert, und welche Folgekosten verhindert sie?",
+      calm:
+        "Die Haushaltsfrage ist berechtigt. Lass uns sauber prüfen: Welche Hilfe ist militärisch, welche zivil, welche Kredit oder Garantie, welche schon ausgezahlt - und welche Folgekosten würden entstehen, wenn die Ukraine nicht stabil bleibt?",
     },
-    question: "Reden wir über die Haushaltsausgabe - oder über die Kosten einer ukrainischen Niederlage für Deutschland und Europa?",
-    frame: "Ich übernehme nicht den Frame „Ukraine gegen Deutschland“. Die Wirkungsfrage lautet: Welche Unterstützung verhindert größere Schäden für Europa, Rechtsstaat und Sicherheit?",
-    sourceKeys: ["bundesregierung_ukraine_hilfe", "bmf_beirat_ukraine", "kiel_ukraine_tracker"],
+    question: "Was bewirkt die Unterstützung konkret - und welche Kosten würden entstehen, wenn wir nicht helfen?",
+    frame: "Nicht Inland gegen Ukraine. Sondern: Welche Ausgaben schützen Menschen, Infrastruktur und Sicherheit am wirksamsten?",
+    oldFrame: "Deutschland verschenkt Geld, während hier alles fehlt.",
+    newFrame: "Öffentliche Hilfe muss Wirkung, Kontrolle und Sicherheitsnutzen zeigen.",
+    better:
+      "Die Frage nach Kontrolle ist richtig. Aber Ukraine-Hilfe ist nicht einfach Geldverlust. Sie schützt Menschen, Infrastruktur, europäische Sicherheit und die Regel, dass Grenzen nicht mit Gewalt verschoben werden dürfen.",
+    positiveExamples: [
+      {
+        title: "Das Krankenhaus, in dem das Licht anbleibt",
+        situation:
+          "Eine ukrainische Stadt bekommt Unterstützung für Energie, Ersatzteile und Schutz kritischer Infrastruktur. Das Krankenhaus kann weiter arbeiten. Wasserpumpen laufen. Kinder können zur Schule gehen. Die Verwaltung bleibt erreichbar. Hilfe wird so nicht zu einem abstrakten Betrag, sondern zu funktionierendem Alltag.",
+        getsBetter: ["Krankenhäuser bleiben handlungsfähig", "Wasser und Wärme bleiben stabiler", "Kinder und Familien bekommen Alltag zurück", "Kommunen können weiter arbeiten", "weniger Wiederaufbaukosten entstehen später", "Menschen müssen seltener fliehen", "Europa gewinnt Stabilität"],
+        hostLine: "Hilfe ist nicht nur Geld. Hilfe heißt: Licht bleibt an, Kliniken arbeiten, Wasser läuft, Verwaltung funktioniert.",
+        whyItWorks: "Das Beispiel startet nicht mit Milliarden oder Angst. Es zeigt einen besseren Zustand, den Unterstützung möglich macht.",
+      },
+      {
+        title: "Die gemeinsame Sicherheitskette",
+        situation:
+          "Mehrere europäische Länder unterstützen ein angegriffenes Nachbarland. Jedes Land trägt einen Teil bei: Energie, Medizin, Ausbildung, Luftverteidigung, Wiederaufbau, Kredite, Garantien. Allein wäre jede Unterstützung schwächer. Gemeinsam entsteht eine Sicherheitskette, die Europa stabiler macht.",
+        getsBetter: ["Lasten werden geteilt", "Europa handelt gemeinsam", "Abschreckung wird glaubwürdiger", "kleinere Länder fühlen sich sicherer", "die regelbasierte Ordnung wird gestärkt", "Deutschland steht nicht allein"],
+        hostLine: "Sicherheit funktioniert wie eine Kette: Sie hält besser, wenn mehrere Glieder tragen.",
+        whyItWorks: "Das Beispiel zeigt Unterstützung als gemeinsame Sicherheitsarchitektur, nicht als einseitige Zahlung.",
+      },
+      {
+        title: "Wiederaufbau, der Zusammenarbeit schafft",
+        situation:
+          "Ein deutsches Unternehmen liefert Technik für Stromnetze, Wasser, Schienen oder Krankenhäuser. Ukrainische Fachkräfte bauen damit Infrastruktur wieder auf. Deutschland unterstützt Standards, Ausbildung und Finanzierung. Aus Hilfe entsteht Wiederaufbau - und aus Wiederaufbau entsteht Partnerschaft.",
+        getsBetter: ["Infrastruktur wird erneuert", "ukrainische Fachkräfte werden gestärkt", "deutsche Unternehmen können mitwirken", "europäische Standards verbreiten sich", "Wirtschaftsbeziehungen entstehen", "Wiederaufbau wird planbarer"],
+        hostLine: "Gute Ukraine-Hilfe endet nicht bei Lieferung. Sie baut Fähigkeiten, Standards und Partnerschaft auf.",
+        whyItWorks: "Das Beispiel macht sichtbar, dass Unterstützung auch auf europäische Wirtschaft, Standards und Stabilität zurückwirkt.",
+      },
+    ],
+    impactFan: [
+      ["Menschen", "Hilfe hält Alltag möglich.", "Kliniken, Schulen, Wasser, Wärme, Verwaltung."],
+      ["Sicherheit", "Ein stabileres Nachbarland macht Europa sicherer.", "Grenzen, Abschreckung, Verteidigungsfähigkeit."],
+      ["Energie", "Reparierte Netze halten Versorgung aufrecht.", "Transformatoren, Ersatzteile, dezentrale Energie."],
+      ["Flucht", "Stabile Versorgung kann Fluchtgründe verringern.", "Wenn Strom, Wasser und Arbeit bleiben, bleiben mehr Menschen vor Ort."],
+      ["Wirtschaft", "Wiederaufbau schafft Partnerschaften und Aufträge.", "Energie, Bahn, Bau, Medizin, Digitalisierung."],
+      ["Demokratie", "Unterstützung verteidigt die Regel: Gewalt darf Grenzen nicht verschieben.", "Rechtsstaatliche Ordnung statt Machtpolitik."],
+      ["Haushalt", "Nicht jede Summe ist dasselbe.", "Zuschuss, Kredit, Garantie, Material, Ausbildung."],
+      ["Kontrolle", "Hilfe braucht Nachweis, Prüfung und Bericht.", "Tranchen, Beschaffung, EU-Auflagen, Monitoring."],
+      ["Folgekosten", "Nicht-Handeln kann teurer werden.", "Mehr Instabilität, mehr Wiederaufbau, mehr Sicherheitsausgaben."],
+    ],
+    psychology: [
+      ["Nullsummenfehler", "Das Geld fehlt gefühlt hier.", "Jeder Euro für die Ukraine fühlt sich wie ein Euro weniger für die eigene Straße an.", "Inlandslücken anerkennen und dann Wirkung, Finanzierungsform und Folgekosten prüfen."],
+      ["Nahbereichsbias", "Der Krieg ist weit weg, die eigene kaputte Brücke ist nah.", "Der sichtbare Mangel vor Ort wirkt stärker als Sicherheitsrisiken außerhalb.", "Ein positives Alltagsbild zeigen: Klinik, Strom, Wasser, Schule, Verwaltung."],
+      ["Überforderungsreaktion", "Große Zahlen machen müde.", "Menschen schalten ab oder suchen einfache Schuldige.", "Summen zerlegen: zivil, militärisch, Kredit, Garantie, Sachleistung, Ausbildung."],
+    ],
+    gate: [
+      ["Klarer Zweck", "Energieversorgung, Luftschutz, medizinische Versorgung, kommunale Stabilität, Ausbildung oder Wiederaufbau sind benannt."],
+      ["Konkreter Schutz", "Menschen und Infrastruktur werden geschützt: Kliniken, Wasserwerke, Stromnetze, Schulen, Notdienste."],
+      ["Verteidigungsfähigkeit", "Die Maßnahme stärkt Schutz, Ausbildung, Wartung, Munition, Luftverteidigung oder Verhandlungsfähigkeit."],
+      ["Europäische Sicherheit", "Sie stärkt Abschreckung, regelbasierte Ordnung, Schutz von Grenzen und Stabilität im Nachbarschaftsraum."],
+      ["Transparente Finanzierung", "Zuschuss, Kredit, Garantie, Material, Ausbildung, EU-Anteil und Bundeshaushalt sind unterscheidbar."],
+      ["Kontrolle", "Bericht, Auflagen, Beschaffungskontrolle, parlamentarische Kontrolle und EU-Reformauflagen sind sichtbar."],
+      ["Folgekosten senken", "Weniger Zerstörung, weniger Flucht, weniger späterer Wiederaufbau und weniger Ausweitung des Konflikts sind plausibel."],
+      ["Keine blinde Dauerlogik", "Ziel, Wirkung, Kosten, Risiken und Ausstiegspfade werden regelmäßig geprüft."],
+    ],
+    subclaims: [
+      ["Wir könnten das Geld hier besser gebrauchen", "Berechtigter Investitionsfrust, falsches Entweder-oder.", "Viele Menschen erleben in Deutschland marode Schulen, verspätete Bahn, hohe Mieten, Pflegeprobleme und schlechte digitale Verwaltung. Dieser Frust ist real. Falsch wird es, wenn Ukraine-Hilfe als Ursache dieser Probleme erzählt wird. Deutschland braucht Investitionen im Inland und zugleich Sicherheit im europäischen Umfeld.", "Deutschland muss hier investieren. Aber Ukraine-Hilfe ist nicht automatisch der Grund, warum hier eine Brücke kaputt ist.", "Welche Investitionen fehlen hier - und welche Ukraine-Hilfen verhindern größere Folgekosten?"],
+      ["Deutschland bezahlt den Krieg", "Falscher Frame: Unterstützung soll Verteidigung, Schutz und Stabilität ermöglichen.", "Deutschland unterstützt nicht den Krieg als Zustand. Deutschland unterstützt die Fähigkeit der Ukraine, sich gegen einen völkerrechtswidrigen Angriff zu verteidigen, Menschen zu schützen und staatliche Handlungsfähigkeit zu erhalten.", "Das Ziel ist nicht Krieg. Das Ziel ist Schutz, Verteidigungsfähigkeit und eine bessere Ausgangslage für Frieden.", "Kommt Frieden eher durch ungeschützte Schwäche oder durch Schutz, Stabilität und Verhandlungsfähigkeit?"],
+      ["Das Geld versickert", "Kontrollfrage berechtigt; Pauschalurteil ohne Belege ist Frame-Verstärkung.", "Korruptionsrisiken und Missbrauch müssen ernst genommen werden. Aber ein pauschaler Versickerungsverdacht ersetzt keine Prüfung. Entscheidend ist: Welche Hilfeform, welche Auflage, welche Kontrolle, welche Auszahlung, welche Wirkung?", "Kontrolle ja. Pauschalverdacht nein. Lass uns prüfen, welche Mittel wie kontrolliert werden.", "Welche Mittel sind belegt, welche Risiken bestehen, und welche Kontrollmechanismen greifen?"],
+      ["Ukraine-Hilfe bringt Deutschland nichts", "Verkürzt: Sicherheit, Stabilität, Handel, Energie und Regelordnung wirken zurück.", "Deutschland profitiert von einer stabileren europäischen Sicherheitsordnung, weniger Erpressbarkeit, geringeren Folgekosten, gemeinsamen Standards und Wiederaufbaupartnerschaften. Das macht nicht jede Maßnahme automatisch gut, aber der Nutzen endet nicht an der Grenze.", "Sicherheit, Stabilität und regelbasierte Ordnung wirken nach Deutschland zurück.", "Welche konkrete Rückwirkung hat diese Unterstützung auf Sicherheit, Stabilität, Wirtschaft und Folgekosten?"],
+      ["Wir sind der Zahlmeister", "Lastenteilung und EU-/NATO-/G7-Kontext fehlen.", "Deutschland trägt viel, aber nicht allein. Unterstützung läuft über EU, NATO, G7 und weitere Partner. Saubere Debatte muss Beiträge, Zusagen, Auszahlungen, Kredite, Garantien und Sachleistungen vergleichbar machen.", "Die Frage ist nicht nur, wer zahlt. Die Frage ist, ob Lasten fair geteilt und wirksam eingesetzt werden.", "Wie sind Beiträge international verteilt - und welche Hilfeform wird verglichen?"],
+      ["Frieden statt Waffen", "Friedensziel richtig; Schutz und Verhandlungsfähigkeit müssen mitgedacht werden.", "Frieden ist das Ziel. Die Streitfrage ist, ob weniger Unterstützung die Chancen auf Frieden verbessert oder ob dadurch Schutz, Verteidigungsfähigkeit und Verhandlungsmacht sinken. Das muss sachlich geprüft werden.", "Frieden ist das Ziel. Die schwierige Frage ist, welche Unterstützung Schutz und Verhandlungschancen stärkt.", "Welche Maßnahme verkürzt Leid und erhöht realistische Friedenschancen?"],
+    ],
+    solution: [
+      ["Wirkungskarte für Ukraine-Hilfe", "Jede größere Unterstützung zeigt Zweck, Betrag, Form, Partner, Stand, erwartete Wirkung und Quelle."],
+      ["Hilfeformen trennen", "Militärisch, zivil, humanitär, finanziell, Garantie, Kredit, Sachleistung, Ausbildung und Industrieauftrag werden getrennt ausgewiesen."],
+      ["Zusage und Auszahlung trennen", "Politische Zusagen, Haushaltsbereitstellungen und tatsächliche Auszahlungen stehen nicht in einer Zahlenschublade."],
+      ["Kontrolle öffentlich machen", "Parlamentarische Kontrolle, EU-Auflagen, Beschaffungsprüfung, Audits und Korruptionsschutz werden sichtbar."],
+      ["Folgekosten bilanzieren", "Nicht-Hilfe wird als Risiko mitgerechnet: Flucht, Wiederaufbau, Sicherheitsdruck, Erpressbarkeit und Ausweitung."],
+      ["Europäische Lastenteilung zeigen", "Deutschlandbeiträge werden im EU-, NATO-, G7- und Partnerkontext eingeordnet."],
+      ["Positive Beispiele erzählen", "Kommunikation beginnt mit Strom, Kliniken, Wasser, Verwaltung und Schutz - nicht mit Angstbildern."],
+      ["Lernschleife einbauen", "Maßnahmen werden beendet, angepasst oder skaliert, wenn Wirkung, Kontrolle oder Lage sich ändern."],
+      ["Haushaltsfrust ernst nehmen", "Inlandslücken werden anerkannt, ohne die Ukraine zum Sündenbock für deutsche Investitionsprobleme zu machen."],
+    ],
+    trust: {
+      sourceStand: "AA 24.02.2026; Bundesregierung-Detailübersicht 31.03.2026; EU Ukraine Facility 2024-2027; World Bank RDNA5 23.02.2026.",
+      sicher: ["Das Auswärtige Amt weist bis 24.02.2026 rund 41 Mrd. Euro zivile und rund 55,5 Mrd. Euro militärische Unterstützung aus, geleistet beziehungsweise für kommende Jahre bereitgestellt.", "Die Bundesregierung markiert in der Detailübersicht Bilanzgrenzen wie reguläre Beiträge, Länder-/Kommunalhilfe, private Hilfe sowie Garantien und Bürgschaften.", "Die EU Ukraine Facility umfasst bis zu 50 Mrd. Euro für 2024 bis 2027.", "Der Kiel Ukraine Support Tracker ist eine vergleichende Datenbank für militärische, finanzielle und humanitäre staatliche Unterstützung."],
+      pruefen: ["Neue Datenstände nach jeder Bundesregierung-, AA-, EU- und Kiel-Aktualisierung.", "Welche Zusagen tatsächlich ausgezahlt wurden.", "Welche Mittel Zuschüsse, Kredite, Garantien oder Sachleistungen sind.", "Wirksamkeit einzelner Maßnahmen vor Ort.", "Korruptionsschutz und Beschaffungskontrolle je Programm."],
+    },
+    sourceKeys: ["auswaertiges_amt_ukraine_solidaritaet", "bundesregierung_ukraine_hilfe", "bundesregierung_ukraine_detail_pdf_2026", "bmvg_vier_jahre_ukraine_unterstuetzung", "kiel_ukraine_tracker", "kiel_ukraine_tracker_data", "eu_ukraine_facility", "eu_commission_ukraine_facility_general", "consilium_ukraine_facility", "unhcr_ukraine_situation", "world_bank_ukraine_rdna5"],
   },
   {
     slug: "die-boesen-reichen",
@@ -249,6 +344,14 @@ const glossaryTerms = [
   ["internationale-zusammenarbeit", "Internationale Zusammenarbeit", "Kooperation zwischen Staaten und Institutionen, um gemeinsame Probleme wie Klima, Gesundheit, Handel, Sicherheit und Entwicklung zu lösen.", "Gute Zusammenarbeit ist kein Almosen, sondern gemeinsame Problemlösung."],
   ["wirkungshaushalt-ausland", "Wirkungshaushalt für Auslandsprojekte", "Haushaltslogik, die Auslandsprojekte nach Zweck, Finanzierungsform, Kontrolle, Rückzahlung, Nutzen und langfristiger Wirkung bewertet.", "Nicht Spott entscheidet, sondern nachweisbare Wirkung."],
   ["sicherheits-t-sroi", "Sicherheits-T-SROI", "Wirkungsbewertung von Sicherheits- und Präventionsausgaben nach vermiedenen Schäden, Resilienz, Stabilität und demokratischer Ordnung.", "Nicht nur fragen: Was kostet Hilfe? Sondern auch: Was kostet Nicht-Hilfe?"],
+  ["ukraine-hilfe", "Ukraine-Hilfe", "Sammelbegriff für zivile, humanitäre, finanzielle, militärische und wirtschaftliche Unterstützung der Ukraine.", "Ukraine-Hilfe ist keine einzige Geldart. Zuschüsse, Kredite, Garantien, Sachleistungen, Ausbildung und EU-Programme müssen getrennt werden."],
+  ["sachleistung", "Sachleistung", "Unterstützung, die als Material, Ausrüstung, Technik, Ersatzteil, Ausbildung oder Dienstleistung erfolgt statt als direkte Geldzahlung.", "Sachleistungen dürfen nicht so behandelt werden, als wäre es immer ein unkontrollierter Bargeldtransfer."],
+  ["garantie", "Garantie", "Finanzielle Absicherung für Risiken, bei der Geld nicht automatisch sofort ausgezahlt wird.", "Garantien sind Haushaltsrisiken, aber nicht identisch mit sofort ausgegebenem Geld."],
+  ["verteidigungsfaehigkeit", "Verteidigungsfähigkeit", "Fähigkeit eines Staates, Menschen, Infrastruktur, Gebiet und demokratische Institutionen gegen Angriffe zu schützen.", "Verteidigungsfähigkeit ist ein Sicherheitsnutzen, der in der Steuergelddebatte oft unsichtbar bleibt."],
+  ["regelbasierte-ordnung", "Regelbasierte Ordnung", "Internationale Ordnung, in der Grenzen, Verträge und Rechte nicht einfach durch Gewalt ersetzt werden sollen.", "Diese Ordnung schützt auch kleinere und mittlere Staaten, weil Macht nicht allein Recht setzen soll."],
+  ["folgekosten", "Folgekosten", "Spätere Kosten, die entstehen, wenn ein Problem nicht stabilisiert, verhindert oder rechtzeitig begrenzt wird.", "Nicht nur Hilfe kostet Geld. Auch Nicht-Hilfe kann teuer werden."],
+  ["sicherheitsresilienz", "Sicherheitsresilienz", "Fähigkeit von Gesellschaften, Infrastruktur und Institutionen, unter Druck handlungsfähig zu bleiben.", "Strom, Wasser, Kliniken, Verwaltung und Schutz sind Sicherheitsresilienz im Alltag."],
+  ["ukraine-facility", "Ukraine Facility", "EU-Instrument für Unterstützung der Ukraine von 2024 bis 2027 mit Darlehen, Zuschüssen, Reformauflagen, Wiederaufbau- und Resilienzzielen.", "Die Ukraine Facility muss nach Darlehen, Zuschüssen, Bedingungen, Zahlungen und Wirkung gelesen werden."],
   ["kapitalwirkung", "Kapitalwirkung", "Wirkung von Kapital auf Innovation, Arbeit, Klima, Wohnen, Demokratie, Machtverteilung und gesellschaftliche Resilienz.", "Kapital ist nicht gut oder schlecht. Entscheidend ist, welche Zustände es verändert."],
   ["wirkungsausgabe", "Wirkungsausgabe", "Öffentliche Ausgabe, die eine nachvollziehbare positive Netto-Wirkung erzeugt.", "Eine Wirkungsausgabe braucht Ziel, Daten, Wirkungspfad, Kontrolle und Evaluation."],
   ["symbolausgabe", "Symbolausgabe", "Ausgabe, die politisch gut klingt, aber keine ausreichende Zustandsveränderung erzeugt.", "Symbolausgaben bewegen Geld, aber erzeugen wenig Wirkung."],
@@ -369,8 +472,31 @@ function radwegePage(dossier, detail = false) {
   return shell({ title: `${dossier.title} | Wirkungsradar ${pageType}`, description: dossier.subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/${folder}/${dossier.slug}/`, base: "../../../", main });
 }
 
+function ukrainePage(dossier, detail = false) {
+  const pageType = detail ? "Detail" : "Live";
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / ${pageType}</nav><p class="hero-kicker">Steuergeld, Sicherheit &amp; Resilienz · geprüft mit positiven Beispielen</p><h1 class="hero-title">${esc(dossier.title)}</h1><p class="hero-subtitle">${esc(dossier.subtitle)}</p><p class="radar-abstract"><strong>Kurzformel:</strong> Nicht Geld weg. Sicherheit, Stabilität und Ordnung erhalten.</p><p class="radar-abstract">${esc(dossier.abstract)}</p><p class="radar-status-line"><span>Kurzurteil: ${esc(dossier.judgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Quellenstand: AA 24.02.2026 · Bundesregierung 31.03.2026 · EU 2024-2027</span></p></div></section>
+      ${nav("../../../")}
+      <section class="section v2-host-cockpit" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Host-Cockpit · positiv starten</p><h2>Was wurde gesagt?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p></div><div class="v2-cockpit-grid"><article class="v2-cockpit-card v2-card-strong"><p class="v2-badge">Kurzurteil</p><h3>${esc(dossier.judgement)}</h3></article><article class="v2-cockpit-card"><p class="v2-badge">Sag das jetzt</p><p>${esc(dossier.answers.ten)}</p><button class="copy-chip" type="button" data-copy-text="${esc(dossier.answers.ten)}">Kopieren</button></article><article class="v2-cockpit-card"><p class="v2-badge">Positives Bild</p><h3>${esc(dossier.positiveExamples[0].title)}</h3><p>${esc(dossier.positiveExamples[0].hostLine)}</p><button class="copy-chip" type="button" data-copy-text="${esc(dossier.positiveExamples[0].hostLine)}">Beispiel kopieren</button></article><article class="v2-cockpit-card"><p class="v2-badge">Bessere Frage</p><p>${esc(dossier.question)}</p><button class="copy-chip" type="button" data-copy-text="${esc(dossier.question)}">Frage kopieren</button></article></div><div class="v2-frame-card" id="frame-nicht-uebernehmen"><p class="v2-badge">Frame nicht übernehmen</p><div><strong>Alter Frame:</strong> ${esc(dossier.oldFrame)}</div><div><strong>Neuer Frame:</strong> ${esc(dossier.newFrame)}</div><div><strong>Besser:</strong> ${esc(dossier.better)}</div><div><strong>Warum:</strong> Die Antwort nimmt Steuergeld-Sorgen ernst, bleibt aber nicht im Verlustbild. Sie öffnet Schutz, Stabilität, Sicherheit, Regeln und Folgekosten.</div></div></div></section>
+      <section class="section" id="positive-beispiele"><div><div class="section-header"><p class="hero-kicker">Positive Beispiele</p><h2>Erst zeigen, was stabil bleibt.</h2><p>Keine Angstbilder oben. Die Seite startet mit Alltag, Schutz, Infrastruktur und gemeinsamer Sicherheit.</p></div>${positiveExamples(dossier.positiveExamples)}</div></section>
+      <section class="section section-soft" id="antwortformate"><div><div class="section-header"><p class="hero-kicker">Antwortformate</p><h2>Kurz anerkennen, sauber trennen, Wirkung prüfen.</h2></div><div class="radar-answer-accordion host-answer-tabs"><details class="radar-answer-item" open><summary><span class="radar-answer-time">Kommentar</span><span class="radar-answer-label">${words(dossier.answers.comment)} Wörter</span></summary><p>${esc(dossier.answers.comment)}</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Live</span><span class="radar-answer-label">${words(dossier.answers.thirty)} Wörter</span></summary><p>${esc(dossier.answers.thirty)}</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Panel</span><span class="radar-answer-label">${words(dossier.answers.two)} Wörter</span></summary><p>${esc(dossier.answers.two)}</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Konter ohne Streit</span><span class="radar-answer-label">${words(dossier.answers.calm)} Wörter</span></summary><p>${esc(dossier.answers.calm)}</p></details></div></div></section>
+      <section class="section" id="was-stimmt-was-fehlt"><div><div class="section-header"><p class="hero-kicker">Was stimmt? Was fehlt?</p><h2>Wahren Punkt anerkennen, Verlustbild öffnen.</h2></div>${cardGrid(dossier.points, "Prüfung")}</div></section>
+      <section class="section section-soft v2-impact-fan" id="impact-fan" data-v2-impact-fan><div><div class="section-header"><p class="hero-kicker">Impact-Fan</p><h2>Was wirkt alles mit?</h2><p>Ukraine-Unterstützung berührt Alltag, Sicherheit, Energie, Flucht, Wirtschaft, Demokratie, Haushalt, Kontrolle und Folgekosten.</p></div>${impactFan(dossier.impactFan)}</div></section>
+      <section class="section v2-psychology-lite" id="psychologie"><div><div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum der Satz zieht.</h2></div>${psychologyLite(dossier.psychology)}<div class="card"><p class="card-kicker">Host-Control-Moves</p>${list(["Die Frage nach Kontrolle ist richtig.", "Lass uns die Summe zerlegen.", "Was ist Zuschuss, was Kredit, was Sachleistung?", "Was schützt diese Ausgabe konkret?", "Welche Folgekosten entstehen ohne Stabilisierung?", "Nicht Deutschland gegen Ukraine - sondern Wirkung und Kontrolle."])}</div></div></section>
+      <section class="section section-soft v2-consequence-stack" id="folgenkarte"><div><div class="section-header"><p class="hero-kicker">Folgenkarte</p><h2>Was passiert, wenn man dem Verlustframe folgt?</h2></div><div class="card-grid three"><article class="card"><p class="v2-badge">Sofort</p><p class="card-text">Ukraine-Hilfe wirkt wie Geldverlust. Die konkrete Wirkung verschwindet.</p></article><article class="card"><p class="v2-badge">Danach</p><p class="card-text">Zivile Stabilisierung, Schutz, Wiederaufbau und europäische Sicherheit werden gegeneinander ausgespielt.</p></article><article class="card"><p class="v2-badge">Auf Dauer</p><p class="card-text">Europa verliert Handlungsfähigkeit, Partnervertrauen und Abschreckung. Die späteren Kosten können steigen.</p></article></div><div class="section-header"><h2>Was passiert, wenn man richtig prüft?</h2></div><div class="card-grid three"><article class="card"><p class="v2-badge">Sofort</p><p class="card-text">Hilfe wird nach Zweck, Form und Wirkung sortiert.</p></article><article class="card"><p class="v2-badge">Danach</p><p class="card-text">Gute Unterstützung wird gestärkt, schlechte oder unklare Maßnahmen werden korrigiert.</p></article><article class="card"><p class="v2-badge">Auf Dauer</p><p class="card-text">Europa wird sicherer, Unterstützung wird transparenter und öffentliche Debatten werden fairer.</p></article></div></div></section>
+      <section class="section" id="wirkungsgate"><div><div class="section-header"><p class="hero-kicker">Wirkungsgate</p><h2>Wann ist Ukraine-Unterstützung sinnvoll?</h2><p>Nicht jede Hilfe ist automatisch gut. Jede Hilfe muss nach Wirkung, Kontrolle und Sicherheitsnutzen geprüft werden.</p></div>${gateCards(dossier.gate)}</div></section>
+      <section class="section section-soft" id="subclaims"><div><div class="section-header"><p class="hero-kicker">Subclaims</p><h2>Häufige Varianten aufklappen.</h2></div>${subclaimAccordion(dossier.subclaims)}</div></section>
+      <section class="section" id="loesung"><div><div class="section-header"><p class="hero-kicker">Wirkungsökonomische Lösung</p><h2>Aus dem Verlustbild eine Wirkungskarte machen.</h2><p>Gute Kommunikation trennt Hilfeformen, zeigt Kontrolle und erklärt den besseren Zustand: Strom, Kliniken, Wasser, Verwaltung, Schutz.</p></div>${solutionCards(dossier.solution)}</div></section>
+      <section class="section section-soft v2-trust-block" id="warum-vertrauen"><div class="card"><p class="hero-kicker">Warum diese Einordnung vertrauenswürdig sein soll</p><div class="v2-trust-grid"><div><strong>Datenstand</strong><span>${UPDATED_AT}</span></div><div><strong>Quellenstand</strong><span>${esc(dossier.trust.sourceStand)}</span></div><div><strong>Bilanzgrenze</strong><span>Militärisch, zivil, humanitär, finanziell, Garantie, Kredit, Sachleistung, Ausbildung, Industrieauftrag, EU-Programm.</span></div><div><strong>Gegenposition</strong><span>Kontrollkritik ist legitim. Pauschale Verlustbilder ersetzen aber keine Wirkungsprüfung.</span></div></div><details class="v2-source-drawer" open><summary>Sicher / prüfpflichtig anzeigen</summary><div class="card-grid two"><article class="card"><h3 class="card-title">Sicher</h3>${list(dossier.trust.sicher)}</article><article class="card"><h3 class="card-title">Prüfpflichtig</h3>${list(dossier.trust.pruefen)}</article></div></details></div></section>
+      <section class="section dossier-tab-panel" id="deep-dive-quellen"><div><div class="section-header"><p class="hero-kicker">Quellen</p><h2>Quellenkarten statt Linkliste.</h2><p>Datenstand: ${UPDATED_AT}. Jede Quelle ist mit Verwendung und Grenze eingeordnet.</p></div>${sourceCards(dossier.sourceKeys)}</div></section>
+    </main>`;
+  const folder = detail ? "detail" : "live";
+  return shell({ title: `${dossier.title} | Wirkungsradar ${pageType}`, description: dossier.subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/${folder}/${dossier.slug}/`, base: "../../../", main });
+}
+
 function livePage(dossier, detail = false) {
   if (dossier.slug === "radwege-in-peru") return radwegePage(dossier, detail);
+  if (dossier.slug === "ukraine-unterstuetzung-steuergeld") return ukrainePage(dossier, detail);
   const pageType = detail ? "Detail" : "Live";
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / ${pageType}</nav><p class="hero-kicker">Steuergeld, globale Verantwortung &amp; Fairness · checked_candidate</p><h1 class="hero-title">${esc(dossier.title)}</h1><p class="hero-subtitle">${esc(dossier.subtitle)}</p><p class="radar-abstract"><strong>Abstract:</strong> ${esc(dossier.abstract)}</p><p class="radar-status-line"><span>Kurzurteil: ${esc(dossier.judgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Bilanzgrenze prüfen</span></p></div></section>
@@ -456,6 +582,14 @@ function writeRadwegeSourcePack() {
   writeFile("content/wirkungsradar/source-packs/radwege-peru-v1.yaml", `# Generated by scripts/wirkungsradar/build-tax-money-global-responsibility-cluster.mjs\n${toYaml({ id: "radwege-peru-v1", last_verified: UPDATED_AT, update_frequency: "quarterly", sources: sourceMap }).trim()}\n`);
 }
 
+function writeUkraineSourcePack() {
+  const ukraine = dossiers.find((item) => item.slug === "ukraine-unterstuetzung-steuergeld");
+  const sourceMap = Object.fromEntries(sources
+    .filter(([, key]) => ukraine.sourceKeys.includes(key))
+    .map(([label, key, url, useFor, warning]) => [key, { label, url, use_for: Array.isArray(useFor) ? useFor : [useFor], warning }]));
+  writeFile("content/wirkungsradar/source-packs/ukraine-support-v1.yaml", `# Generated by scripts/wirkungsradar/build-tax-money-global-responsibility-cluster.mjs\n${toYaml({ id: "ukraine-support-v1", last_verified: UPDATED_AT, update_frequency: "quarterly", sources: sourceMap }).trim()}\n`);
+}
+
 function augmentIndexes() {
   injectBeforeMainEnd("wirkungsradar/themen/index.html", clusterSlug, `<section class="section section-soft" id="${clusterSlug}"><div><div class="section-header"><p class="hero-kicker">Steuergeld &amp; globale Verantwortung</p><h2>Neuer Themencluster.</h2></div><div class="card-grid"><a class="card text-link-card" href="${clusterSlug}/"><p class="card-kicker">Nicht Ort zählt. Wirkung zählt.</p><h3 class="card-title">${esc(clusterTitle)}</h3><p class="card-text">${esc(clusterSubtitle)}</p></a></div></div></section>`);
   injectBeforeMainEnd("wirkungsradar/live/index.html", "steuergeld-globale-verantwortung-live", `<section class="section section-soft" id="steuergeld-globale-verantwortung-live"><div><div class="section-header"><p class="hero-kicker">Steuergeld, globale Verantwortung &amp; Fairness</p><h2>4 neue Live-Karten.</h2></div><div class="card-grid">${dossiers.map((item) => `<a class="card text-link-card radar-live-card" href="${esc(item.slug)}/"><p class="card-kicker">${esc(item.judgement)}</p><h3 class="card-title">${esc(item.title)}</h3><p class="card-text"><strong>10 Sekunden:</strong> ${esc(item.answers.ten)}</p></a>`).join("")}</div></div></section>`);
@@ -465,6 +599,7 @@ function augmentIndexes() {
 
 writeSourcePack();
 writeRadwegeSourcePack();
+writeUkraineSourcePack();
 writeFile(`wirkungsradar/themen/${clusterSlug}/index.html`, clusterPage());
 for (const item of dossiers) {
   writeFile(`wirkungsradar/live/${item.slug}/index.html`, livePage(item));
@@ -477,4 +612,4 @@ for (const term of glossaryTerms) {
 }
 augmentIndexes();
 
-console.log("Built tax-money-global-responsibility cluster: 4 live dossiers, 4 detail pages, 1 topic cluster, 1 narrative, 7 glossary pages.");
+console.log(`Built tax-money-global-responsibility cluster: ${dossiers.length} live dossiers, ${dossiers.length} detail pages, 1 topic cluster, 1 narrative, ${glossaryTerms.length} glossary pages.`);
