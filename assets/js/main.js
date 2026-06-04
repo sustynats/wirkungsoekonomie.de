@@ -1273,6 +1273,7 @@ function initRadarPsychologyPanel() {
   const path = window.location.pathname;
   const isRadarPage = path.includes("/wirkungsradar/");
   const isNarrativeDetail = path.includes("/wirkungsradar/narrative/") && !path.endsWith("/narrative/");
+  const isDebateCardsOverview = /\/wirkungsradar\/(?:live|debattenkarten)\/?$/.test(path);
   const isDistributionToolPage = [
     "/wirkungsradar/studio/",
     "/wirkungsradar/templates/",
@@ -1284,7 +1285,7 @@ function initRadarPsychologyPanel() {
     "/wirkungsradar/nutzung/",
     "/wirkungsradar/host-playbook/",
   ].some((prefix) => path.includes(prefix));
-  if (!isRadarPage || isNarrativeDetail || isDistributionToolPage) {
+  if (!isRadarPage || isNarrativeDetail || isDebateCardsOverview || isDistributionToolPage) {
     return;
   }
 
