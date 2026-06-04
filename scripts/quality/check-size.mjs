@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const target = fs.existsSync("dist") ? "dist" : ".";
+const target = fs.existsSync("_site") ? "_site" : fs.existsSync("dist") ? "dist" : ".";
 let total = 0;
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if ([".git", ".codex-backup", ".next", "node_modules", "outputs", "tiktok_archive", "tiktok_library"].includes(entry.name)) continue;
+    if ([".git", ".codex-backup", ".next", "_site", "node_modules", "outputs", "tiktok_archive", "tiktok_library"].includes(entry.name)) continue;
     const full = path.join(dir, entry.name);
     if (full === path.join("content", "internal-documents")) continue;
     if (entry.isDirectory()) walk(full);

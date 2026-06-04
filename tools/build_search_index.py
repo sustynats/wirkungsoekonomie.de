@@ -56,6 +56,7 @@ EXCLUDED_DIRS = {
     ".git",
     ".codex-backup",
     "_internal",
+    "_site",
     "assets",
     "node_modules",
     "outputs",
