@@ -98,7 +98,13 @@ function formPage(file) {
     <p class="radar-sprint-lead">Neue Einreichungen werden nicht automatisch veröffentlicht. Wir prüfen zuerst Relevanz, Verbreitung, Dubletten, Quellenlage, Wirkpfad und das Risiko, problematische Frames unnötig zu verstärken.</p>
   </div>
 </section>${radarNav("../")}<section class="section"><div class="community-submission-form-layout">
-  <form class="card sprint5-report-form community-submission-form" action="mailto:kontakt@wirkungsoekonomie.de" method="post" enctype="text/plain" data-community-submission-form>
+  <form class="card sprint5-report-form community-submission-form" action="https://akademie.wirkungsoekonomie.de/fragen/einreichen" method="get" data-community-submission-form>
+    <input type="hidden" name="context" value="Debatten-Kompass: Narrativ einreichen">
+    <input type="hidden" name="url" value="${SITE_URL}/wirkungsradar/narrativ-einreichen/">
+    <input type="hidden" name="title" value="Narrativ einreichen">
+    <input type="hidden" name="pageType" value="narrative_submission">
+    <input type="hidden" name="source" value="debate_compass_narrative">
+    <input type="hidden" name="moderation_area" value="narrativ_queue">
     <label>Aussage / Narrativ / Behauptung<input name="claim_text" required placeholder="Was wurde gesagt?"></label>
     <label>Wo gesehen? Link oder Plattform<input name="source_url" required placeholder="Link, Plattform, Sendung, Gesprächskontext"></label>
     <label>Thema / Kategorie<select name="topic" required><option value="">Bitte wählen</option><option>Klima</option><option>Energie</option><option>Mobilität</option><option>Migration</option><option>Sozialstaat</option><option>Arbeit</option><option>Demokratie</option><option>Medien</option><option>Wissenschaft</option><option>Ausland & Sicherheit</option><option>Geld / Steuern</option><option>Wohnen</option><option>anderes</option></select></label>
@@ -108,7 +114,7 @@ function formPage(file) {
     <label class="checkbox-line"><input type="checkbox" required name="editorial_notice"> Ich verstehe: Bitte reiche nicht massenhaft problematische Inhalte ein. Es geht nicht darum, Narrative zu verbreiten, sondern ihre Wirkung einzuordnen.</label>
     <input class="sr-only" name="website" tabindex="-1" autocomplete="off">
     <button class="btn btn-primary" type="submit">Zur redaktionellen Prüfung einreichen</button>
-    <p class="community-submission-hint">Die Einreichung startet einen Prüfprozess. Eine Veröffentlichung erfolgt nur, wenn Aufklärung mehr Nutzen stiftet als die Wiederholung des Frames Schaden erzeugt.</p>
+    <p class="community-submission-hint">Die Einreichung läuft über die Akademie-Fragenstrecke mit Discord-Identifikation gegen Spam. In der Dozenten-Redaktion wird sie als Narrativ-Einreichung markiert und nicht automatisch veröffentlicht.</p>
   </form>
   <aside class="card community-submission-workflow">
     <p class="card-kicker">Redaktionsworkflow</p>
@@ -121,6 +127,7 @@ function formPage(file) {
       <li>Gibt es belastbare Fakten, Quellen und eine ableitbare Antwortstrategie?</li>
     </ol>
     <p><a class="btn btn-secondary" href="../pruefprozess/">Prüfprozess verstehen</a></p>
+    <p><a class="text-link" href="../../akademie.html#dozenten-redaktion">Dozenten-Redaktion ansehen</a></p>
   </aside>
 </div></section>`;
   return shell({
@@ -271,6 +278,13 @@ function writeSubmissionSchema() {
       "related_existing_page",
       "created_page_url",
     ],
+    transport: {
+      route: "https://akademie.wirkungsoekonomie.de/fragen/einreichen",
+      pageType: "narrative_submission",
+      source: "debate_compass_narrative",
+      moderation_area: "narrativ_queue",
+      spamProtection: "Discord-Login der Akademie-Fragenstrecke",
+    },
     statuses: [
       "eingereicht",
       "in Prüfung",
