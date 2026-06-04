@@ -13034,6 +13034,119 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   margin: 0;
 }
 
+.document-paper-reader.document-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: min(1360px, calc(100vw - 3rem));
+  margin-inline: auto;
+  gap: 1.2rem;
+}
+
+.document-paper-reader .document-paper-meta {
+  position: static;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr);
+  gap: 1.2rem 2rem;
+  align-items: start;
+  padding: 1.25rem 1.5rem;
+}
+
+.document-paper-reader .document-paper-meta h2 {
+  margin: 0 0 0.55rem;
+}
+
+.document-paper-reader .document-paper-meta ul {
+  columns: 2;
+  column-gap: 2rem;
+  margin: 0;
+}
+
+.document-paper-reader .document-detail-main {
+  padding: clamp(1.35rem, 2.2vw, 2.4rem);
+  font-size: 1.075rem;
+  line-height: 1.72;
+}
+
+.document-paper-reader .document-detail-main > p,
+.document-paper-reader .document-detail-main li,
+.document-paper-reader .document-detail-main dd,
+.document-paper-reader .document-detail-main td {
+  font-size: 1.03rem;
+  line-height: 1.68;
+}
+
+.document-paper-reader .document-detail-main .lead {
+  max-width: 82ch;
+  font-size: 1.16rem;
+  line-height: 1.65;
+}
+
+.document-paper-reader .document-detail-main h2 {
+  margin-top: 2.1rem;
+  font-size: clamp(1.65rem, 2.2vw, 2.05rem);
+  line-height: 1.18;
+  scroll-margin-top: 6rem;
+}
+
+.document-paper-reader .document-detail-main h3 {
+  margin-top: 1.65rem;
+  font-size: clamp(1.28rem, 1.6vw, 1.48rem);
+  line-height: 1.25;
+  scroll-margin-top: 6rem;
+}
+
+.document-paper-reader .cite-anchor {
+  opacity: 1;
+}
+
+.document-paper-reader .paper-toc {
+  max-width: 92ch;
+}
+
+.document-paper-reader .paper-toc + p,
+.document-paper-reader .paper-toc + p + p,
+.document-paper-reader .paper-toc + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p + p + p + p + p + p + p,
+.document-paper-reader .paper-toc + p + p + p + p + p + p + p + p + p + p + p + p + p + p {
+  display: none;
+}
+
+.document-paper-reader .table-scroll {
+  margin: 1.45rem 0;
+}
+
+.document-paper-reader .table-scroll table {
+  width: 100%;
+  min-width: min(100%, 58rem);
+}
+
+.document-paper-reader .table-scroll th,
+.document-paper-reader .table-scroll td {
+  padding: 0.95rem 1rem;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
+}
+
+.document-paper-reader .table-scroll th:first-child,
+.document-paper-reader .table-scroll td:first-child {
+  min-width: 8.5rem;
+}
+
+.document-paper-reader .document-term-row a {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 .document-restricted {
   border-left: 4px solid #a86420;
   background: #fff6ea;
@@ -13058,6 +13171,18 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
   .document-detail-aside {
     position: static;
+  }
+
+  .document-paper-reader.document-detail-grid {
+    max-width: min(100%, calc(100vw - 1.25rem));
+  }
+
+  .document-paper-reader .document-paper-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .document-paper-reader .document-paper-meta ul {
+    columns: 1;
   }
 }
 

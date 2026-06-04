@@ -1091,7 +1091,7 @@ function initGlobalWirkungsradarBridge() {
   const normalizedPath = path.endsWith("/") ? path : `${path}/`;
   const isRadarPage = normalizedPath.includes("/wirkungsradar/");
 
-  if (isRadarPage || document.querySelector("[data-global-radar-bridge]")) {
+  if (isRadarPage || document.querySelector("[data-global-radar-bridge]") || document.querySelector(".document-paper-reader")) {
     return;
   }
 

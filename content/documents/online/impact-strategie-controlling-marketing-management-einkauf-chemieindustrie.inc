@@ -6,42 +6,28 @@
   <h2>Inhaltsverzeichnis</h2>
   <ol><li class="toc-level-2"><a href="#executive-summary">Executive Summary</a></li><li class="toc-level-2"><a href="#ausgangspunkt-warum-der-einkauf-in-der-chemieindustrie-ein-impact-hebel-ist">Ausgangspunkt: Warum der Einkauf in der Chemieindustrie ein Impact-Hebel ist</a></li><li class="toc-level-2"><a href="#begriffe-impact-controlling-und-impact-marketing-im-einkauf">Begriffe: Impact-Controlling und Impact-Marketing im Einkauf</a></li><li class="toc-level-2"><a href="#doppelte-wesentlichkeit-als-strategischer-ausgangspunkt">Doppelte Wesentlichkeit als strategischer Ausgangspunkt</a></li><li class="toc-level-2"><a href="#impact-strategie-fuer-den-strategischen-einkauf">Impact-Strategie für den strategischen Einkauf</a></li><li class="toc-level-2"><a href="#impact-management-operating-model-prozesse-rollen">Impact-Management: Operating Model, Prozesse, Rollen</a></li><li class="toc-level-2"><a href="#impact-controlling-scorecards-kiis-nwi-und-t-sroi">Impact-Controlling: Scorecards, KIIs, NWI und T-SROI</a></li><li class="toc-level-2"><a href="#operativer-kii-katalog-fuer-den-strategischen-einkauf">Operativer KII-Katalog für den strategischen Einkauf</a></li><li class="toc-level-2"><a href="#steuerung-in-einkaufsprozessen-vom-lieferanten-onboarding-bis-zum-vertrag">Steuerung in Einkaufsprozessen: vom Lieferanten-Onboarding bis zum Vertrag</a></li><li class="toc-level-2"><a href="#kategorie-playbooks-fuer-chemieindustrietypische-beschaffung">Kategorie-Playbooks für chemieindustrietypische Beschaffung</a></li><li class="toc-level-2"><a href="#impact-marketing-wirkung-glaubwuerdig-in-den-markt-uebersetzen">Impact-Marketing: Wirkung glaubwürdig in den Markt übersetzen</a></li><li class="toc-level-2"><a href="#governance-incentives-datenqualitaet-und-assurance">Governance, Incentives, Datenqualität und Assurance</a></li><li class="toc-level-2"><a href="#roadmap-und-pilotdesign">Roadmap und Pilotdesign</a></li><li class="toc-level-2"><a href="#anhang-glossar-und-quellen">Anhang: Glossar und Quellen</a></li></ol>
 </nav>
-<p>1. Executive Summary</p>
-<p>2. Ausgangspunkt: Warum der Einkauf in der Chemieindustrie ein Impact-Hebel ist</p>
-<p>3. Begriffe: Impact-Controlling und Impact-Marketing im Einkauf</p>
-<p>4. Doppelte Wesentlichkeit als strategischer Ausgangspunkt</p>
-<p>5. Impact-Strategie für den strategischen Einkauf</p>
-<p>6. Impact-Management: Operating Model, Prozesse, Rollen</p>
-<p>7. Impact-Controlling: Scorecards, KIIs, NWI und T-SROI</p>
-<p>8. Operativer KII-Katalog für den strategischen Einkauf</p>
-<p>9. Steuerung in Einkaufsprozessen: vom Lieferanten-Onboarding bis zum Vertrag</p>
-<p>10. Kategorie-Playbooks für chemieindustrietypische Beschaffung</p>
-<p>11. Impact-Marketing: Wirkung glaubwürdig in den Markt übersetzen</p>
-<p>12. Governance, Incentives, Datenqualität und Assurance</p>
-<p>13. Roadmap und Pilotdesign</p>
-<p>14. Anhang: Glossar und Quellen</p>
-<h2 id="executive-summary">1. Executive Summary</h2>
+<h2 id="executive-summary">1. Executive Summary <a class="cite-anchor no-print" href="#executive-summary" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
 <p>Für ein globales Chemie- und Industrieunternehmen liegt ein erheblicher Teil der ökologischen und sozialen Wirkung in der vorgelagerten Wertschöpfung: Rohstoffe, Energie, Verpackungen, Logistik, Kontraktfertigung, mineralische und erneuerbare Rohstoffe, Services und indirekte Beschaffung. Die hier dargestellte Falllogik wurde für eine Veröffentlichung anonymisiert und auf eine Branchenperspektive übertragen. Sie geht davon aus, dass Lieferantenkodizes, ESG-Assessments, Audits, PCF-Datenprogramme und Entwicklungsmaßnahmen bereits als Anker vorhanden sind, aber noch konsequenter in Einkaufsentscheidungen zurückgekoppelt werden müssen.</p>
 <p>Impact-Controlling bedeutet in diesem Kontext: die Übersetzung von doppelter Wesentlichkeit, Lieferkettenwirkung und strategischen Unternehmens- und Transformationszielen in messbare Key Impact Indicators (KIIs), Scorecards, Ziele, Abweichungsanalysen, Entscheidungsregeln, Korrekturmaßnahmen und Management-Rhythmen. Impact-Marketing bedeutet: diese Wirkung nicht nur zu berichten, sondern glaubwürdig, beweisbar und geschäftsrelevant in interne Entscheidungsräume, Lieferantenmärkte und Kundenkommunikation zu übersetzen.</p>
 <p>Die Beschaffung ist dabei kein nachgelagerter ESG-Administrationsbereich. Sie entscheidet, welche Vorleistungen in Produktionsnetzwerke und Produktportfolios eingehen. Damit prägt sie Produkt-CO2-Fußabdrücke, Ressourceneinsatz, Wasser- und Biodiversitätsrisiken, Arbeitsbedingungen in Lieferketten, Versorgungssicherheit, Produktclaims und Kundenwert. In der Chemieindustrie sind rohstoffbezogene Scope-3.1-Emissionen, PCF-Transparenz und belastbare Lieferantendaten zentrale Voraussetzungen dafür, Wirkung nicht nur zu berichten, sondern operativ zu steuern.</p>
-<h3 id="die-drei-kernverschiebungen">1.1 Die drei Kernverschiebungen</h3>
+<h3 id="die-drei-kernverschiebungen">1.1 Die drei Kernverschiebungen <a class="cite-anchor no-print" href="#die-drei-kernverschiebungen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Heute oft</th><th>Wirkungsökonomische Erweiterung</th><th>Konkrete Folge für den Einkauf</th></tr></thead><tbody>
 <tr><td>Preis, Versorgungssicherheit, Qualität und Compliance als dominante Einkaufslogik.</td><td>Preis bleibt relevant, wird aber um nachweisbare Netto-Wirkung, Transformationswirkung, Resilienz und Datenqualität ergänzt.</td><td>RFx, Lieferantenauswahl, Rahmenverträge und Kategorieziele enthalten KIIs neben klassischen KPIs.</td></tr>
 <tr><td>Nachhaltigkeitsdaten werden vorrangig berichtet.</td><td>Daten wirken in Entscheidungen zurück: kaufen, entwickeln, substituieren, bündeln, ausphasen oder gemeinsam transformieren.</td><td>Scorecards werden zu Einkaufs-Gates und nicht nur zu Reportingtabellen.</td></tr>
 <tr><td>Marketing nutzt Nachhaltigkeitsbotschaften produkt- oder kampagnenbezogen.</td><td>Impact-Marketing nutzt belegbare Beschaffungsdaten als Beweisführung für Kundenwert, Risikoabbau und Transformation.</td><td>Jede externe Impact-Story braucht Claim File, KII, Systemgrenze, Datenqualität und Freigabe.</td></tr>
 </tbody></table></div>
-<h3 id="zielbild-in-einem-satz">1.2 Zielbild in einem Satz</h3>
+<h3 id="zielbild-in-einem-satz">1.2 Zielbild in einem Satz <a class="cite-anchor no-print" href="#zielbild-in-einem-satz" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <aside class="callout"><p>Zielbild In der Zielarchitektur verfügt der strategische Einkauf über ein wirkungsorientiertes Steuerungssystem, in dem jede wesentliche Einkaufsentscheidung eine prüfbare Wirkungsspur hat: Materialität, KII, Datenquelle, Lieferantenmaßnahme, Zielpfad, Score, finanzielle Relevanz und Kommunikationsfreigabe.</p></aside>
-<h2 id="ausgangspunkt-warum-der-einkauf-in-der-chemieindustrie-ein-impact-hebel-ist">2. Ausgangspunkt: Warum der Einkauf in der Chemieindustrie ein Impact-Hebel ist</h2>
-<h3 id="branchen-und-fallkontext">2.1 Branchen- und Fallkontext</h3>
+<h2 id="ausgangspunkt-warum-der-einkauf-in-der-chemieindustrie-ein-impact-hebel-ist">2. Ausgangspunkt: Warum der Einkauf in der Chemieindustrie ein Impact-Hebel ist <a class="cite-anchor no-print" href="#ausgangspunkt-warum-der-einkauf-in-der-chemieindustrie-ein-impact-hebel-ist" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="branchen-und-fallkontext">2.1 Branchen- und Fallkontext <a class="cite-anchor no-print" href="#branchen-und-fallkontext" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Das anonymisierte Fallunternehmen steht stellvertretend für die Chemieindustrie: Nachhaltigkeit wird strategisch als Beitrag zur Transformation der Kunden, zur Versorgungssicherheit und zur Zukunftsfähigkeit des Produktportfolios verstanden. Die Beschaffung sitzt am Eingang des Systems. Sie entscheidet über die Qualität der Inputs, die in Produktionsnetzwerke, Produktlinien und Kundenlösungen gelangen.</p>
 <p>Die Rolle des Einkaufs ist besonders relevant, weil rohstoffbezogene Scope-3.1-Emissionen, PCF-Daten, Kreislaufattribute und Lieferkettenrisiken in vielen Chemieunternehmen einen wesentlichen Teil der Wirkung bestimmen. Typische Zielbilder sind die Senkung der spezifischen rohstoffbezogenen Emissionen, der Ausbau validierter Primärdaten und die systematische Entwicklung von Lieferanten mit hohem Wirkungshebel.</p>
 <p>Für soziale und menschenrechtliche Wirkung nutzen große Industrieunternehmen typischerweise risikobasierte Lieferantenbewertungen, externe ESG-Assessments, Brancheninitiativen, Audits und Corrective Actions. Wirkung entsteht jedoch erst, wenn diese Instrumente nicht nur dokumentieren, sondern Volumenentscheidungen, Lieferantenentwicklung, Eskalationen und Vertragsbedingungen tatsächlich verändern.</p>
-<h3 id="warum-klassische-einkaufs-kpis-nicht-ausreichen">2.2 Warum klassische Einkaufs-KPIs nicht ausreichen</h3>
+<h3 id="warum-klassische-einkaufs-kpis-nicht-ausreichen">2.2 Warum klassische Einkaufs-KPIs nicht ausreichen <a class="cite-anchor no-print" href="#warum-klassische-einkaufs-kpis-nicht-ausreichen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Klassische Einkaufs-KPIs beantworten wichtige, aber begrenzte Fragen: Wie viel kostet es? Kommt es pünktlich? Entspricht es der Spezifikation? Ist der Lieferant auditierbar? Diese Fragen sichern Betriebsfähigkeit. Sie beantworten aber nicht vollständig, ob ein Einkaufsentscheid Treibhausgasemissionen senkt, Wasserstress verlagert, Menschenrechtsrisiken reduziert, Biodiversität schützt, Produktclaims ermöglicht oder die Resilienz der Wertschöpfung erhöht.</p>
 <p>Der wirkungsökonomische Ansatz ergänzt deshalb die Beschaffungslogik um KIIs. KIIs messen nicht nur Aktivität, sondern Zustandsveränderung: weniger CO2e je kg Rohstoff, bessere PCF-Datenqualität, geschlossene Corrective Actions, geringere Wasserstress-Exposition, höhere Lieferkettenresilienz, mehr zertifizierte erneuerbare oder recycelte Rohstoffe, weniger kritische EHS- oder Menschenrechtsfälle.</p>
-<h3 id="die-wirkungskette-des-einkaufs">2.3 Die Wirkungskette des Einkaufs</h3>
+<h3 id="die-wirkungskette-des-einkaufs">2.3 Die Wirkungskette des Einkaufs <a class="cite-anchor no-print" href="#die-wirkungskette-des-einkaufs" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Stufe</th><th>Beschaffungsentscheidung</th><th>Wirkungspfad</th><th>Managementfrage</th></tr></thead><tbody>
 <tr><td>Input</td><td>Welche Rohstoffe, Energie, Services und Vorprodukte werden gekauft?</td><td>PCF, Ressourcenverbrauch, Wasser, Biodiversität, Arbeit, Gesundheit, Compliance.</td><td>Welche Wirkung bringt der Input in Produktgruppen und Kundenketten ein?</td></tr>
@@ -49,11 +35,11 @@
 <tr><td>Produkt</td><td>Welche Input-Alternativen ermöglichen niedrigere Produktwirkung?</td><td>Niedrigerer Product Carbon Footprint, Recyclinganteil, zertifizierte Rohstoffe, geringere Schadstoff- und Risikoprofile.</td><td>Welche Input-Wahl verbessert die Kundenlösung?</td></tr>
 <tr><td>Markt</td><td>Welche Wirkung kann belegt kommuniziert werden?</td><td>Kundendekarbonisierung, glaubwürdige Claims, Lieferkettenvertrauen, regulatorische Anschlussfähigkeit.</td><td>Was darf Sales/Marketing belastbar sagen?</td></tr>
 </tbody></table></div>
-<h2 id="begriffe-impact-controlling-und-impact-marketing-im-einkauf">3. Begriffe: Impact-Controlling und Impact-Marketing im Einkauf</h2>
-<h3 id="wirkungsbegriff">3.1 Wirkungsbegriff</h3>
+<h2 id="begriffe-impact-controlling-und-impact-marketing-im-einkauf">3. Begriffe: Impact-Controlling und Impact-Marketing im Einkauf <a class="cite-anchor no-print" href="#begriffe-impact-controlling-und-impact-marketing-im-einkauf" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="wirkungsbegriff">3.1 Wirkungsbegriff <a class="cite-anchor no-print" href="#wirkungsbegriff" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Ausgangspunkt ist eine präzise Begriffsverwendung: Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist zunächst neutral und relational; sie kann positiv, negativ oder neutral sein und wirkt immer auf jemanden oder etwas. Bewertet wird sie im Referenzrahmen der SDGs, der Agenda 2030 und der SDG+-Dimensionen wie Demokratie, Rechtsstaatlichkeit, Medienqualität und gesellschaftlicher Zusammenhalt [WÖk-Leitfaden].</p>
 <p>Für den Einkauf heißt das: Ein niedriger Einkaufspreis ist keine Wirkung. Ein bestandener Audit ist noch keine Wirkung. Eine Maßnahme ist noch keine Wirkung. Wirkung entsteht erst, wenn sich ein relevanter Zustand verändert: Emissionen sinken, Exposition sinkt, Datenqualität steigt, Arbeitsbedingungen verbessern sich, Risiken werden beherrschbar, Kunden können Produkte mit geringerer Belastung einsetzen.</p>
-<h3 id="impact-controlling">3.2 Impact-Controlling</h3>
+<h3 id="impact-controlling">3.2 Impact-Controlling <a class="cite-anchor no-print" href="#impact-controlling" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <aside class="callout"><p>Definition Impact-Controlling im strategischen Einkauf ist das System aus Planung, Messung, Bewertung, Steuerung und Rückkopplung der Beschaffungswirkung auf Mensch, Planet und Demokratie. Es übersetzt doppelte Wesentlichkeit in KIIs, Scorecards, Ziele, Entscheidungs-Gates, Lieferantenmaßnahmen, finanzielle Risiko-/Chancenlogik und Management-Cockpits.</p></aside>
 <div class="table-scroll"><table>
 <thead><tr><th>Element</th><th>Bedeutung</th><th>Konkretes Einkaufsartefakt</th></tr></thead><tbody>
@@ -63,19 +49,19 @@
 <tr><td>Steuerung</td><td>Entscheiden: vergeben, entwickeln, substituieren, absichern, ausphasen.</td><td>RFx-Gates, Vertragsklauseln, Bonus/Malus, Corrective Action Plan.</td></tr>
 <tr><td>Rückkopplung</td><td>Lernen, Ziele nachschärfen, Lieferantenmärkte entwickeln.</td><td>Quartalsreview, Impact Board, T-SROI-Review für Transformationsprogramme.</td></tr>
 </tbody></table></div>
-<h3 id="impact-marketing">3.3 Impact-Marketing</h3>
+<h3 id="impact-marketing">3.3 Impact-Marketing <a class="cite-anchor no-print" href="#impact-marketing" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <aside class="callout"><p>Definition Impact-Marketing im strategischen Einkauf ist die beweisgestützte Übersetzung von Beschaffungswirkung in Markt-, Lieferanten- und interne Entscheidungssignale. Es ist kein Greenwashing und keine reine Kommunikation. Es schafft Nachfrage und Vertrauen durch belegbare Wirkungsdaten, klare Grenzen und überprüfbare Claims.</p></aside>
 <p>Impact-Marketing hat drei Zielgruppen: erstens interne Entscheiderinnen und Entscheider, die Impact-Daten in Portfolio-, Kategorie- und Investitionsentscheidungen brauchen; zweitens Lieferanten, die durch klare Wirkungskriterien, Entwicklungsprogramme und Anerkennung motiviert werden; drittens Kunden und Märkte, die verlässliche PCF-, Kreislauf-, Menschenrechts- und Rohstoffinformationen benötigen.</p>
-<h2 id="doppelte-wesentlichkeit-als-strategischer-ausgangspunkt">4. Doppelte Wesentlichkeit als strategischer Ausgangspunkt</h2>
+<h2 id="doppelte-wesentlichkeit-als-strategischer-ausgangspunkt">4. Doppelte Wesentlichkeit als strategischer Ausgangspunkt <a class="cite-anchor no-print" href="#doppelte-wesentlichkeit-als-strategischer-ausgangspunkt" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
 <p>Doppelte Wesentlichkeit ist für den strategischen Einkauf nicht nur eine Reportingpflicht, sondern der Filter, welche Impact-Themen steuerungsrelevant sind. Die ESRS unterscheiden Impact Materiality und Financial Materiality; EFRAG beschreibt, dass impact materiality Informationen über Auswirkungen auf Menschen oder Umwelt betrifft, während financial materiality Informationen über Risiken und Chancen für das Unternehmen betrifft [EFRAG-IG1].</p>
 <p>Für den Einkauf ist entscheidend, dass Auswirkungen, Risiken und Chancen entlang der Wertschöpfungskette betrachtet werden. EFRAG IG2 stellt klar, dass wesentliche IROs auch aus direkten und indirekten Geschäftsbeziehungen in der upstream und downstream value chain entstehen können und dass Geschäftsbeziehungen nicht auf direkte Vertragsbeziehungen begrenzt sind [EFRAG-IG2]. Damit wird der Einkauf zum operativen Ort, an dem doppelte Wesentlichkeit in Lieferantenauswahl, Datenanforderungen, Vertragsmechaniken und Transformationsprogramme übersetzt wird.</p>
-<h3 id="die-zwei-achsen-fuer-den-einkauf">4.1 Die zwei Achsen für den Einkauf</h3>
+<h3 id="die-zwei-achsen-fuer-den-einkauf">4.1 Die zwei Achsen für den Einkauf <a class="cite-anchor no-print" href="#die-zwei-achsen-fuer-den-einkauf" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Achse</th><th>Leitfrage für den Einkauf</th><th>Typische Beispiele</th><th>Steuerungsfolge</th></tr></thead><tbody>
 <tr><td>Impact Materiality</td><td>Welche tatsächlichen oder potenziellen Auswirkungen entstehen durch die Beschaffung auf Menschen, Umwelt und gesellschaftliche Systeme?</td><td>Scope-3.1-Emissionen, Wasserstress, Biodiversitätsverlust bei erneuerbaren Rohstoffen, Arbeits- und Menschenrechtsrisiken, EHS-Risiken bei Rohstofflieferanten, Chemikalienrisiken.</td><td>KII-Priorität auch bei niedrigem Spend, wenn Schwere hoch ist; Red Flags und Nichtkompensation.</td></tr>
 <tr><td>Financial Materiality</td><td>Welche Nachhaltigkeitsthemen erzeugen finanzielle Risiken oder Chancen für das Unternehmen?</td><td>CO2-Kosten, Kundenanforderungen an PCF, Lieferengpässe, regulatorische Risiken, Haftung, Reputationsrisiken, Versicherbarkeit, Kapitalmarktvertrauen, Zugang zu strategischen Lieferanten.</td><td>Integration in Risiko-, Kosten-, Resilienz-, Portfolio- und Investitionsentscheidungen.</td></tr>
 </tbody></table></div>
-<h3 id="materialitaets-zu-kii-uebersetzung">4.2 Materialitäts-zu-KII-Übersetzung</h3>
+<h3 id="materialitaets-zu-kii-uebersetzung">4.2 Materialitäts-zu-KII-Übersetzung <a class="cite-anchor no-print" href="#materialitaets-zu-kii-uebersetzung" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <ol>
 <li>Wertschöpfungskette mappen: Rohstoffgruppen, Lieferanten-Tiers, Herkunftsländer, Produktionsschritte, Produktionsnetzwerk- und Produktgruppenbezug.</li>
 <li>IROs identifizieren: tatsächliche und potenzielle Auswirkungen, Abhängigkeiten, Risiken und Chancen je Kategorie.</li>
@@ -84,7 +70,7 @@
 <li>KIIs definieren: maximal 5-8 Management-KIIs je Kategorie, ergänzt um operative Unterindikatoren.</li>
 <li>Steuerungsgrenzen festlegen: Red Flags, Mindestdatenqualität, Zeitpfade, Eskalationslogik und Kommunikationsfreigaben.</li>
 </ol>
-<h3 id="wesentlichkeitsmatrix-fuer-den-einkauf">4.3 Wesentlichkeitsmatrix für den Einkauf</h3>
+<h3 id="wesentlichkeitsmatrix-fuer-den-einkauf">4.3 Wesentlichkeitsmatrix für den Einkauf <a class="cite-anchor no-print" href="#wesentlichkeitsmatrix-fuer-den-einkauf" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Procurement-Hotspot</th><th>Impact-Wesentlichkeit</th><th>Financial-Wesentlichkeit</th><th>Priorität</th></tr></thead><tbody>
 <tr><td>High-carbon raw materials</td><td>Hoch: direkter Einfluss auf Scope 3.1 und Produkt-PCF.</td><td>Hoch: Kunden-PCF, CO2-Kosten, Substitutionsrisiken, Marktposition.</td><td>A: Kategorie-Scorecard und Lieferanten-PCF-Pflicht.</td></tr>
@@ -94,11 +80,11 @@
 <tr><td>Logistik und Verpackung</td><td>Mittel bis hoch: Transportemissionen, Abfall, Arbeitsschutz.</td><td>Mittel: Kosten, Lieferfähigkeit, Kundenanforderungen, regulatorische Verpackungspflichten.</td><td>B: Transport-PCF und Circular Packaging.</td></tr>
 <tr><td>Indirekte Services</td><td>Variabel: Arbeitsbedingungen, Datenschutz, Korruption, Energieverbrauch digitaler Services.</td><td>Variabel: Compliance, Business Continuity, Reputation.</td><td>B/C: risikobasierte Segmentierung.</td></tr>
 </tbody></table></div>
-<h2 id="impact-strategie-fuer-den-strategischen-einkauf">5. Impact-Strategie für den strategischen Einkauf</h2>
-<h3 id="strategisches-leitbild">5.1 Strategisches Leitbild</h3>
+<h2 id="impact-strategie-fuer-den-strategischen-einkauf">5. Impact-Strategie für den strategischen Einkauf <a class="cite-anchor no-print" href="#impact-strategie-fuer-den-strategischen-einkauf" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="strategisches-leitbild">5.1 Strategisches Leitbild <a class="cite-anchor no-print" href="#strategisches-leitbild" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Leitbild: Der strategische Einkauf beschafft nicht nur Materialien und Services, sondern steuert die Wirkung der Vorleistungen. Er macht upstream Wirkung sichtbar, vergleichbar und entscheidungsrelevant, damit Produktportfolios ein besseres Wirkungsprofil erreichen, Risiken sinken und Kunden bei ihrer Transformation unterstützt werden können.</p>
 <p>Dieses Leitbild passt zu einem modernen Verständnis von Industrieunternehmen als Wirkungssystemen: Produktportfolios, Lieferketten, Rohstoffpfade und Kundenlösungen werden nicht nur nach Preis und Verfügbarkeit bewertet, sondern nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie.</p>
-<h3 id="strategische-ziele">5.2 Strategische Ziele</h3>
+<h3 id="strategische-ziele">5.2 Strategische Ziele <a class="cite-anchor no-print" href="#strategische-ziele" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Zieldimension</th><th>Öffentlich anschlussfähiger Branchen-/Unternehmensanker</th><th>Empfohlene Einkaufs-Übersetzung</th></tr></thead><tbody>
 <tr><td>Klima</td><td>Unternehmensziel zur Senkung rohstoffbezogener Scope-3.1-Intensitäten entlang eines mehrjährigen Zielpfads.</td><td>Jede high-carbon Kategorie erhält PCF-KIIs, Lieferantenpfade und Vergabevorteile für validierte Low-PCF-Angebote.</td></tr>
@@ -108,7 +94,7 @@
 <tr><td>Menschenrechte &amp; Arbeit</td><td>Das Unternehmen nutzt risikobasierte Lieferantenbewertungen, ESG-Assessments, Audits und Corrective Actions.</td><td>Menschenrechts- und EHS-Red Flags wirken als harte Einkaufs-Gates, nicht als weiche Durchschnittskomponente.</td></tr>
 <tr><td>Markt &amp; Kunde</td><td>Das Unternehmen nutzt PCF-Daten und Portfolio-Nachhaltigkeitsbewertung zur Portfolio- und Kundentransformation.</td><td>Impact-Marketing liefert Claim Files und customer-ready Impact Evidence aus Procurement-Daten.</td></tr>
 </tbody></table></div>
-<h3 id="strategische-prinzipien">5.3 Strategische Prinzipien</h3>
+<h3 id="strategische-prinzipien">5.3 Strategische Prinzipien <a class="cite-anchor no-print" href="#strategische-prinzipien" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <ul>
 <li>Nichtkompensation: Kritische negative Wirkungen wie Kinder-/Zwangsarbeit, schwere EHS-Verstöße, illegale Entwaldung, Korruption oder nicht beherrschte Chemikalienrisiken dürfen nicht durch gute Klima- oder Preiswerte kompensiert werden.</li>
 <li>Materialität vor Durchschnitt: Ein kleiner Spend kann hohe Priorität haben, wenn Schwere, Irreversibilität oder Reputations-/Haftungswirkung hoch sind.</li>
@@ -116,8 +102,8 @@
 <li>Wirkung in Verträge: KII-Ziele, Datenlieferpflichten, Audit-/CAP-Regeln und Eskalationen gehören in Verträge und Rahmenvereinbarungen.</li>
 <li>Wirkung als Lieferantenmarkt-Signal: Unternehmen sollten bevorzugt Volumen, längere Laufzeiten, Entwicklungsunterstützung oder Ko-Innovation dort einsetzen, wo Lieferanten belastbar Wirkung verbessern.</li>
 </ul>
-<h2 id="impact-management-operating-model-prozesse-rollen">6. Impact-Management: Operating Model, Prozesse, Rollen</h2>
-<h3 id="target-operating-model">6.1 Target Operating Model</h3>
+<h2 id="impact-management-operating-model-prozesse-rollen">6. Impact-Management: Operating Model, Prozesse, Rollen <a class="cite-anchor no-print" href="#impact-management-operating-model-prozesse-rollen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="target-operating-model">6.1 Target Operating Model <a class="cite-anchor no-print" href="#target-operating-model" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Ebene</th><th>Funktion</th><th>Konkret im Einkauf</th><th>Rhythmus</th></tr></thead><tbody>
 <tr><td>Strategie</td><td>Impact-Ziele und Materialitätsfokus festlegen.</td><td>Impact Procurement Charter, Kategorieprioritäten, mehrjährige Zielpfade, Verbindung zu Scope 3.1 und Portfolio-Nachhaltigkeitsbewertung.</td><td>jährlich</td></tr>
@@ -127,7 +113,7 @@
 <tr><td>Entscheidung</td><td>Impact in Sourcing Gates integrieren.</td><td>RFx, Total Cost &amp; Impact of Ownership, Vertragsklauseln, Vergabevorschlag.</td><td>anlassbezogen</td></tr>
 <tr><td>Kommunikation</td><td>Wirkung intern und extern beweisbar machen.</td><td>Impact Claim File, Customer Evidence Pack, Supplier Impact Dialogue.</td><td>laufend</td></tr>
 </tbody></table></div>
-<h3 id="rollenmodell">6.2 Rollenmodell</h3>
+<h3 id="rollenmodell">6.2 Rollenmodell <a class="cite-anchor no-print" href="#rollenmodell" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Rolle</th><th>Verantwortung</th><th>Entscheidungsrechte</th></tr></thead><tbody>
 <tr><td>Chief Procurement Officer / Global Procurement</td><td>Verantwortet Impact Procurement Charter, Zielarchitektur und Integration in Einkaufsrichtlinien.</td><td>Freigabe von KII-Standards, Kategorieprioritäten, Eskalation kritischer Red Flags.</td></tr>
@@ -137,7 +123,7 @@
 <tr><td>Impact Controlling</td><td>KII-Methodik, Dashboard, Abweichungsanalyse, Datenqualität, NWI/T-SROI-Logik.</td><td>Methodenfreigabe und Reporting an CPO/Board.</td></tr>
 <tr><td>Impact Marketing / Sales Enablement</td><td>Übersetzt geprüfte Wirkung in Claim Files, Kundenargumentation und Lieferantenkommunikation.</td><td>Kommunikationsfreigabe gemeinsam mit Legal/Sustainability.</td></tr>
 </tbody></table></div>
-<h3 id="management-loop">6.3 Management-Loop</h3>
+<h3 id="management-loop">6.3 Management-Loop <a class="cite-anchor no-print" href="#management-loop" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Der operative Management-Loop besteht aus acht Schritten: Materialität, Datenerhebung, Bewertung, Zielpfad, Maßnahme, Entscheidung, Kommunikation, Lernen. Die Wirkung liegt nicht im Bericht, sondern in der Rückkopplung in neue Entscheidungen. Deshalb muss jede KII-Abweichung eine Managementantwort auslösen: Datenverbesserung, Lieferantenentwicklung, Verhandlung, Substitution, Eskalation oder Claim-Sperre.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Schritt</th><th>Output</th><th>Beispiel</th></tr></thead><tbody>
@@ -150,8 +136,8 @@
 <tr><td>7. Kommunikation</td><td>Impact Claim File oder interne Entscheidungsvorlage.</td><td>Customer-ready PCF evidence pack.</td></tr>
 <tr><td>8. Lernen</td><td>Methoden- und Zielanpassung.</td><td>Thresholds an neue Benchmarks, Datenqualität oder ESRS-Anforderungen anpassen.</td></tr>
 </tbody></table></div>
-<h2 id="impact-controlling-scorecards-kiis-nwi-und-t-sroi">7. Impact-Controlling: Scorecards, KIIs, NWI und T-SROI</h2>
-<h3 id="kpi-versus-kii">7.1 KPI versus KII</h3>
+<h2 id="impact-controlling-scorecards-kiis-nwi-und-t-sroi">7. Impact-Controlling: Scorecards, KIIs, NWI und T-SROI <a class="cite-anchor no-print" href="#impact-controlling-scorecards-kiis-nwi-und-t-sroi" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="kpi-versus-kii">7.1 KPI versus KII <a class="cite-anchor no-print" href="#kpi-versus-kii" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>KPI und KII dürfen nicht gegeneinander ausgespielt werden. Der Einkauf braucht weiterhin Preis-, Qualitäts-, Liefer- und Risiko-KPIs. Die neue Frage lautet: Welche Wirkung erzeugen diese Entscheidungen zusätzlich oder trotz guter KPIs? KIIs ergänzen die wirtschaftliche Steuerung um Wirkungswahrheit.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Kriterium</th><th>KPI</th><th>KII</th></tr></thead><tbody>
@@ -160,7 +146,7 @@
 <tr><td>Risiko</td><td>Optimiert Kosten, kann Externalitäten übersehen.</td><td>Kann komplex sein, braucht Datenqualität und klare Grenzen.</td></tr>
 <tr><td>Steuerung</td><td>Kosten-, Liefer- und Qualitätscontrolling.</td><td>Wirkungs-, Risiko-, Resilienz- und Kommunikationscontrolling.</td></tr>
 </tbody></table></div>
-<h3 id="scorecard-architektur">7.2 Scorecard-Architektur</h3>
+<h3 id="scorecard-architektur">7.2 Scorecard-Architektur <a class="cite-anchor no-print" href="#scorecard-architektur" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Die Scorecard-Architektur arbeitet auf mehreren Ebenen. Wichtig ist, dass Unternehmens- oder Kategorie-Durchschnitte kritische Produkt- oder Lieferantenwirkungen nicht verdecken. Eine Produktgruppen-Scorecard kann CSRD-/ESRS-Daten auf Produktgruppen, NACE-Codes, Anlagen, Lieferantenpfade und Wirkungsfelder herunterbrechen; das schwächste Wirkungsfeld kann die Gesamtbewertung begrenzen.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Ebene</th><th>Objekt</th><th>Score / Kennzahl</th><th>Entscheidung</th></tr></thead><tbody>
@@ -170,7 +156,7 @@
 <tr><td>Produktgruppe</td><td>Produktfamilie / NACE-Bezug</td><td>Produkt-/Cradle-to-gate Score, PCF, Wirkung im Kundenpfad.</td><td>Portfolio, Portfolio-Nachhaltigkeitsbewertung, Customer Evidence.</td></tr>
 <tr><td>Transformationsprojekt</td><td>z. B. Low-PCF-Feedstock, Recyclingnetzwerk</td><td>T-SROI: Transformationswirkung, Hebel, Zeit, Resilienz, Datenqualität.</td><td>Investition, Partnerschaft, langfristiger Vertrag.</td></tr>
 </tbody></table></div>
-<h3 id="nwi-und-t-sroi-im-einkauf">7.3 NWI und T-SROI im Einkauf</h3>
+<h3 id="nwi-und-t-sroi-im-einkauf">7.3 NWI und T-SROI im Einkauf <a class="cite-anchor no-print" href="#nwi-und-t-sroi-im-einkauf" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Der Netto-Wirkungs-Index (NWI) ist die operative Netto-Wirkungskennzahl: Er verdichtet Scorecards, Mindestbedingungen, Datenqualität, Nichtkompensation und Reverse Merit Order. Der T-SROI bewertet dagegen Transformationswirkung und systemische Hebelwirkung. Für den strategischen Einkauf heißt das: NWI steuert laufende Kategorie-, Material- und Lieferantenentscheidungen; T-SROI bewertet größere Transformationsprogramme wie Lieferanten-Dekarbonisierung, Rohstoffsubstitution, Recycling-Ökosysteme oder gemeinsame PCF-Dateninfrastrukturen [WÖk-T-SROI].</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Kennzahl</th><th>Einsatz im Einkauf</th><th>Nicht dafür verwenden</th></tr></thead><tbody>
@@ -180,7 +166,7 @@
 <tr><td>NWI</td><td>Netto-Wirkung je Kategorie, Materialgruppe, Produktpfad.</td><td>Als Transformations- oder PR-Kennzahl.</td></tr>
 <tr><td>T-SROI</td><td>Investitionen/Programme bewerten: Skalierung, Standards, Resilienz, Marktpfad.</td><td>Negative Netto-Wirkung durch große Transformationsversprechen überdecken.</td></tr>
 </tbody></table></div>
-<h3 id="datenqualitaet-als-eigene-steuerungsgroesse">7.4 Datenqualität als eigene Steuerungsgröße</h3>
+<h3 id="datenqualitaet-als-eigene-steuerungsgroesse">7.4 Datenqualität als eigene Steuerungsgröße <a class="cite-anchor no-print" href="#datenqualitaet-als-eigene-steuerungsgroesse" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Wirkungssteuerung steht und fällt mit Datenqualität. Viele Industrieunternehmen nutzen bereits PCF-Daten, Lieferantenassessments und Audits; dennoch muss der Einkauf die Datenqualität selbst als KII führen. Ein Lieferant mit gutem Proxywert, aber ohne Primärdaten, ist anders zu steuern als ein Lieferant mit validiertem PCF und auditierter Lieferkette.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Datenklasse</th><th>Beschreibung</th><th>Steuerungsfolge</th></tr></thead><tbody>
@@ -190,7 +176,7 @@
 <tr><td>Q1 Proxy</td><td>Länder-/Sektor-/Spend-Proxy, hohe Unsicherheit.</td><td>Nur Hotspot-Screening; keine positive Marketingaussage.</td></tr>
 <tr><td>Q0 unbekannt</td><td>Keine belastbaren Daten.</td><td>Risk Flag; bei wesentlicher Kategorie Vergabesperre oder Datenpflicht.</td></tr>
 </tbody></table></div>
-<h2 id="operativer-kii-katalog-fuer-den-strategischen-einkauf">8. Operativer KII-Katalog für den strategischen Einkauf</h2>
+<h2 id="operativer-kii-katalog-fuer-den-strategischen-einkauf">8. Operativer KII-Katalog für den strategischen Einkauf <a class="cite-anchor no-print" href="#operativer-kii-katalog-fuer-den-strategischen-einkauf" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
 <p>Der folgende Katalog ist als Startpunkt für einen chemieindustriellen KII-Baukasten gedacht. Er kombiniert die ESRS-DMA-Logik, öffentlich anschlussfähige Beschaffungs- und Nachhaltigkeitsanker sowie die Wirkungsökonomie-Logik von Scorecards, WÖk-IDs und Nichtkompensation. Die konkreten Schwellenwerte müssen pro Materialgruppe, Region und Produktpfad kalibriert werden.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Cluster</th><th>KII</th><th>Steuerungsfunktion</th></tr></thead><tbody>
@@ -230,7 +216,7 @@
 <tr><td>Finanzen</td><td>Impact-adjusted Total Cost of Ownership</td><td>Erweitert TCO um CO2, Wasser, Compliance, Datenqualität, Risiko und Resilienz.</td></tr>
 <tr><td>Finanzen</td><td>Avoided risk value</td><td>Quantifiziert vermiedene Kosten aus Auditmängeln, Ausfällen, CO2, Claims, Haftung oder Kundenausschlüssen.</td></tr>
 </tbody></table></div>
-<h3 id="top-10-management-kiis-fuer-den-start">8.1 Top-10-Management-KIIs für den Start</h3>
+<h3 id="top-10-management-kiis-fuer-den-start">8.1 Top-10-Management-KIIs für den Start <a class="cite-anchor no-print" href="#top-10-management-kiis-fuer-den-start" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <ul>
 <li>1. Scope-3.1-Intensität je kg eingekaufter Rohstoff.</li>
 <li>2. Validierte PCF-Abdeckung in relevanten Rohstoffkategorien.</li>
@@ -243,7 +229,7 @@
 <li>9. Impact Data Quality Index.</li>
 <li>10. Claim substantiation readiness für kundenrelevante Impact-Aussagen.</li>
 </ul>
-<h2 id="steuerung-in-einkaufsprozessen-vom-lieferanten-onboarding-bis-zum-vertrag">9. Steuerung in Einkaufsprozessen: vom Lieferanten-Onboarding bis zum Vertrag</h2>
+<h2 id="steuerung-in-einkaufsprozessen-vom-lieferanten-onboarding-bis-zum-vertrag">9. Steuerung in Einkaufsprozessen: vom Lieferanten-Onboarding bis zum Vertrag <a class="cite-anchor no-print" href="#steuerung-in-einkaufsprozessen-vom-lieferanten-onboarding-bis-zum-vertrag" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
 <p>Impact-Steuerung wird nur wirksam, wenn sie in die Einkaufsprozesse eingebaut wird. Ein separates Nachhaltigkeitsdashboard reicht nicht aus. Die folgenden Gates verankern Wirkung in den Entscheidungen, die Einkaufsvolumen, Lieferantenmacht und Produktwirkung tatsächlich verändern.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Prozessschritt</th><th>Impact-Prüfung</th><th>KII / Artefakt</th><th>Entscheidung</th></tr></thead><tbody>
@@ -256,7 +242,7 @@
 <tr><td>Performance Review</td><td>Quartalsweise KII-Abweichung und Trend.</td><td>Supplier Impact Dashboard.</td><td>Action plan und Management-Eskalation.</td></tr>
 <tr><td>Claim Approval</td><td>Ist die Aussage belegbar, relevant, nicht irreführend und freigegeben?</td><td>Impact Claim File.</td><td>Freigabe, Einschränkung oder Claim-Sperre.</td></tr>
 </tbody></table></div>
-<h3 id="impact-adjusted-total-cost-of-ownership">9.1 Impact-adjusted Total Cost of Ownership</h3>
+<h3 id="impact-adjusted-total-cost-of-ownership">9.1 Impact-adjusted Total Cost of Ownership <a class="cite-anchor no-print" href="#impact-adjusted-total-cost-of-ownership" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Für den Einkauf braucht es eine Erweiterung des TCO. Preis bleibt wichtig, aber er wird um Wirkungs-, Risiko- und Datenkosten ergänzt. Die Logik lautet nicht: niedrigster Preis gewinnt. Die Logik lautet: beste tragfähige Kombination aus Kosten, Versorgungssicherheit, Qualität, Wirkung, Datenqualität und Transformationsfähigkeit gewinnt.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>TCO-Bestandteil</th><th>Beispielhafte Berechnung</th><th>Einkaufsnutzen</th></tr></thead><tbody>
@@ -266,7 +252,7 @@
 <tr><td>Data Cost</td><td>Kosten der Datenerhebung, Validierung, Lücken, Claimsperren.</td><td>Gute Daten werden ökonomisch relevant.</td></tr>
 <tr><td>Transformation Value</td><td>T-SROI-Indikation für langfristige Markt-, Standard- oder Resilienzwirkung.</td><td>Legitimiert Pilotkosten und langfristige Verträge.</td></tr>
 </tbody></table></div>
-<h2 id="kategorie-playbooks-fuer-chemieindustrietypische-beschaffung">10. Kategorie-Playbooks für chemieindustrietypische Beschaffung</h2>
+<h2 id="kategorie-playbooks-fuer-chemieindustrietypische-beschaffung">10. Kategorie-Playbooks für chemieindustrietypische Beschaffung <a class="cite-anchor no-print" href="#kategorie-playbooks-fuer-chemieindustrietypische-beschaffung" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
 <p>Die folgenden Playbooks zeigen, wie Impact-Controlling und Impact-Marketing konkret je Beschaffungskategorie aussehen können. Sie sind bewusst als steuerungsfähige Blaupausen formuliert und müssen pro Business Unit und Materialgruppe kalibriert werden.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Kategorie</th><th>Wesentliche Themen</th><th>KIIs</th><th>Steuerungshebel</th><th>Impact-Marketing-Nutzen</th></tr></thead><tbody>
@@ -277,7 +263,7 @@
 <tr><td>Kontraktfertigung</td><td>EHS, Arbeitsschutz, Prozesssicherheit, lokale Emissionen, Qualität.</td><td>RC audit score, severe incident rate, CAP closure, emissions/water compliance.</td><td>Bedingte Freigaben, RC-Audits, Training, Exit bei schweren Verstößen.</td><td>Vertrauenssignal für sichere und verantwortliche Produktion.</td></tr>
 <tr><td>Logistik und Verpackung</td><td>Transportemissionen, Verpackungsabfall, Lieferfähigkeit.</td><td>Transport-PCF, Modal Split, Verpackungsrezyklat, Rücknahmefähigkeit, Lieferausfälle.</td><td>Low-carbon logistics options, Packaging Design Rules, Lieferantenbonus.</td><td>Bessere Produkt- und Lieferketteninformationen für Kunden.</td></tr>
 </tbody></table></div>
-<h3 id="beispiel-anonymisierte-technische-produktgruppe-als-scorecard-denke">10.1 Beispiel: anonymisierte technische Produktgruppe als Scorecard-Denke</h3>
+<h3 id="beispiel-anonymisierte-technische-produktgruppe-als-scorecard-denke">10.1 Beispiel: anonymisierte technische Produktgruppe als Scorecard-Denke <a class="cite-anchor no-print" href="#beispiel-anonymisierte-technische-produktgruppe-als-scorecard-denke" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Das anonymisierte anonymisierte technische Produktgruppe-Beispiel zeigt exemplarisch, wie Unternehmens- und Standortdaten nicht im Durchschnitt verbleiben, sondern auf Produktgruppen, NACE-Codes, Anlagen und Wirkungsfelder heruntergebrochen werden können. In einer Einkaufslogik wird diese Denkweise auf die Vorleistungen übertragen: Welche Lieferanten und Rohstoffe treiben Klima-, Wasser-, Ressourcen-, Arbeits- und Gesundheitswirkungen des Produktpfads?</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Wirkungsfeld</th><th>Einkaufsfrage</th><th>Beispiel-KII</th><th>Steuerung</th></tr></thead><tbody>
@@ -287,11 +273,11 @@
 <tr><td>Arbeit/Fairness</td><td>Sind Arbeiter:innen in der Vorleistung geschützt und fair behandelt?</td><td>Evaluation coverage, CAP closure, severe red flags</td><td>Audit, Training, Vertragsauflage, Exit.</td></tr>
 <tr><td>Gesundheit/Sicherheit</td><td>Bestehen Produkt-/Chemikalienrisiken oder EHS-Verstöße beim Lieferanten?</td><td>SVHC incidents, EHS severe incident rate</td><td>Block, CAP, technische Substitution.</td></tr>
 </tbody></table></div>
-<h2 id="impact-marketing-wirkung-glaubwuerdig-in-den-markt-uebersetzen">11. Impact-Marketing: Wirkung glaubwürdig in den Markt übersetzen</h2>
-<h3 id="vom-einkaufsscore-zum-marktwert">11.1 Vom Einkaufsscore zum Marktwert</h3>
+<h2 id="impact-marketing-wirkung-glaubwuerdig-in-den-markt-uebersetzen">11. Impact-Marketing: Wirkung glaubwürdig in den Markt übersetzen <a class="cite-anchor no-print" href="#impact-marketing-wirkung-glaubwuerdig-in-den-markt-uebersetzen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="vom-einkaufsscore-zum-marktwert">11.1 Vom Einkaufsscore zum Marktwert <a class="cite-anchor no-print" href="#vom-einkaufsscore-zum-marktwert" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Impact-Marketing macht aus Beschaffungswirkung keine Imagebotschaft, sondern einen geschäftsrelevanten Beweis. Gerade im B2B-Chemiegeschäft entsteht Kundenwert, wenn ein Unternehmen nachweisen kann, dass ein Produktpfad einen niedrigeren PCF, bessere Kreislaufattribute, verantwortliche Rohstoffherkunft oder geringere Lieferkettenrisiken hat. PCF-Transparenz, Datenqualität und klare Systemgrenzen werden damit zu Voraussetzungen glaubwürdiger Kundenkommunikation.</p>
 <p>Der Einkauf liefert dafür die upstream Beweisführung. Ohne Lieferanten-PCF, Traceability, Auditstatus, Zertifizierung, Datenqualität und KII-Historie bleibt Marketing eine Behauptung. Mit diesen Daten wird Marketing zum Wirkungsnachweis.</p>
-<h3 id="impact-claim-file">11.2 Impact Claim File</h3>
+<h3 id="impact-claim-file">11.2 Impact Claim File <a class="cite-anchor no-print" href="#impact-claim-file" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Baustein</th><th>Pflichtinhalt</th><th>Warum wichtig</th></tr></thead><tbody>
 <tr><td>Claim</td><td>Exakte Aussage, z. B. &#x27;Rohstoff X mit validiertem PCF von ...&#x27; oder &#x27;zertifiziertes palm-basiertes Derivat&#x27;.</td><td>Verhindert unklare Nachhaltigkeitsversprechen.</td></tr>
@@ -302,14 +288,14 @@
 <tr><td>Nichtkompensation</td><td>Red-Flag-Check: keine schweren Menschenrechts-, EHS-, Korruptions- oder Entwaldungsrisiken.</td><td>Verhindert Greenwashing durch Durchschnittslogik.</td></tr>
 <tr><td>Freigabe</td><td>Legal, Sustainability, Procurement, Business Unit, ggf. Product Stewardship.</td><td>Schützt Kunden, Unternehmen und Lieferanten.</td></tr>
 </tbody></table></div>
-<h3 id="drei-marketing-arenen">11.3 Drei Marketing-Arenen</h3>
+<h3 id="drei-marketing-arenen">11.3 Drei Marketing-Arenen <a class="cite-anchor no-print" href="#drei-marketing-arenen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Arena</th><th>Ziel</th><th>Konkrete Formate</th></tr></thead><tbody>
 <tr><td>Internes Impact-Marketing</td><td>Einkauf wird als Wert- und Wirkungshebel sichtbar, nicht nur als Kostenstelle.</td><td>Board cockpit, Category impact one-pager, Impact savings story, Business Unit roadshows.</td></tr>
 <tr><td>Lieferantenmarkt</td><td>Lieferanten verstehen, dass Wirkung kaufentscheidend wird.</td><td>Supplier Impact Days, Impact scorecards, Supplier awards, Co-innovation briefs, clear RFx criteria.</td></tr>
 <tr><td>Kundenmarkt</td><td>Kunden erhalten belegbare, kaufentscheidende Wirkungsvorteile.</td><td>PCF evidence packs, circularity claim files, responsible sourcing dossiers, sales battlecards.</td></tr>
 </tbody></table></div>
-<h3 id="grenzen-was-impact-marketing-nicht-tun-darf">11.4 Grenzen: Was Impact-Marketing nicht tun darf</h3>
+<h3 id="grenzen-was-impact-marketing-nicht-tun-darf">11.4 Grenzen: Was Impact-Marketing nicht tun darf <a class="cite-anchor no-print" href="#grenzen-was-impact-marketing-nicht-tun-darf" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <ul>
 <li>Keine Claims ohne Systemgrenze und Datenqualität.</li>
 <li>Keine positiven Durchschnittsaussagen, wenn ein kritischer Red Flag im gleichen Produktpfad besteht.</li>
@@ -317,8 +303,8 @@
 <li>Keine Übertragung eines Lieferanten- oder Standortwerts auf alle Produkte, wenn Daten nur für eine Teilmenge gelten.</li>
 <li>Keine Wirkungssprache, wenn nur Maßnahmen, Inputs oder Absichten beschrieben werden.</li>
 </ul>
-<h2 id="governance-incentives-datenqualitaet-und-assurance">12. Governance, Incentives, Datenqualität und Assurance</h2>
-<h3 id="governance-regeln">12.1 Governance-Regeln</h3>
+<h2 id="governance-incentives-datenqualitaet-und-assurance">12. Governance, Incentives, Datenqualität und Assurance <a class="cite-anchor no-print" href="#governance-incentives-datenqualitaet-und-assurance" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="governance-regeln">12.1 Governance-Regeln <a class="cite-anchor no-print" href="#governance-regeln" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Regel</th><th>Operationalisierung</th></tr></thead><tbody>
 <tr><td>Ein KII braucht einen Owner</td><td>Jeder Top-KII hat Business Owner, Data Owner, Method Owner und Escalation Owner.</td></tr>
@@ -328,7 +314,7 @@
 <tr><td>Claims brauchen Freigabe</td><td>Extern verwendbare Impact-Aussagen benötigen Claim File, Legal/Sustainability/Procurement-Freigabe.</td></tr>
 <tr><td>Audit ist kein Selbstzweck</td><td>Audits werden nach Risikopriorität eingesetzt; Erfolg ist CAP-Closure und Wiederholungsvermeidung.</td></tr>
 </tbody></table></div>
-<h3 id="incentives">12.2 Incentives</h3>
+<h3 id="incentives">12.2 Incentives <a class="cite-anchor no-print" href="#incentives" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Wenn der Einkauf weiterhin nur auf Savings und Versorgungssicherheit incentiviert wird, bleibt Impact sekundär. Die Zielarchitektur sollte deshalb klassische KPIs und KIIs kombinieren. Ein mögliches Zielbild für Einkaufsrollen:</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Rolle</th><th>KPI-Anteil</th><th>KII-Anteil</th><th>KII-Beispiele</th></tr></thead><tbody>
@@ -337,7 +323,7 @@
 <tr><td>Supplier Manager</td><td>40-50%</td><td>50-60%</td><td>Evaluation coverage, Corrective Actions, audit recurrence, training, data completeness.</td></tr>
 <tr><td>Impact Marketing / Sales Enablement</td><td>40-50%</td><td>50-60%</td><td>Claim readiness, Kundenadoption, keine Claim-Vorfälle, Datenqualität.</td></tr>
 </tbody></table></div>
-<h3 id="assurance-und-interne-kontrollen">12.3 Assurance und interne Kontrollen</h3>
+<h3 id="assurance-und-interne-kontrollen">12.3 Assurance und interne Kontrollen <a class="cite-anchor no-print" href="#assurance-und-interne-kontrollen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Ein wirksames internes Kontrollsystem für Nachhaltigkeits- und Impact-Daten umfasst mindestens Kontrollumgebung, Risikobewertung, Kontrollaktivitäten sowie Information und Kommunikation. Für den Einkauf muss Impact-Controlling an diese Kontrolllogik anschließen, aber operativer werden: Datenanforderungen müssen in Bestellungen, Verträge, Lieferantenportale, Freigabeworkflows und Auditprozesse einfließen.</p>
 <ul>
 <li>Kontrollpunkt 1: Datenherkunft und Systemgrenze je KII.</li>
@@ -346,8 +332,8 @@
 <li>Kontrollpunkt 4: Abgleich zwischen Lieferantenclaim, Einkaufssystem und kundenbezogener Aussage.</li>
 <li>Kontrollpunkt 5: Stichprobenprüfung durch Internal Audit / externe Assurance für hochrelevante KIIs und Claims.</li>
 </ul>
-<h2 id="roadmap-und-pilotdesign">13. Roadmap und Pilotdesign</h2>
-<h3 id="90-tage-start">13.1 90-Tage-Start</h3>
+<h2 id="roadmap-und-pilotdesign">13. Roadmap und Pilotdesign <a class="cite-anchor no-print" href="#roadmap-und-pilotdesign" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="90-tage-start">13.1 90-Tage-Start <a class="cite-anchor no-print" href="#90-tage-start" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Zeitraum</th><th>Arbeitspaket</th><th>Ergebnis</th></tr></thead><tbody>
 <tr><td>Woche 1-2</td><td>Impact Procurement Charter, Scope und Pilotkategorien definieren.</td><td>Mandat, Rollen, Pilotumfang, Entscheidungsgremium.</td></tr>
@@ -357,7 +343,7 @@
 <tr><td>Woche 8-10</td><td>RFx-/Vertragsklauseln und Claim-File-Muster entwerfen.</td><td>Standardanhang für Ausschreibungen und Claims.</td></tr>
 <tr><td>Woche 10-12</td><td>Pilotentscheidung und Managementreview.</td><td>Go/No-Go, Rolloutplan, Zielwerte, Ressourcen.</td></tr>
 </tbody></table></div>
-<h3 id="12-monats-rollout">13.2 12-Monats-Rollout</h3>
+<h3 id="12-monats-rollout">13.2 12-Monats-Rollout <a class="cite-anchor no-print" href="#12-monats-rollout" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <ul>
 <li>Top-10-KIIs in Procurement Dashboard integrieren.</li>
 <li>Impact Gates in RFx und Lieferanten-Onboarding testen.</li>
@@ -366,7 +352,7 @@
 <li>Impact Claim Files für erste kundenrelevante Produktpfade erstellen.</li>
 <li>Managementvergütung / Zielvereinbarung um KII-Komponenten ergänzen.</li>
 </ul>
-<h3 id="36-monats-zielbild">13.3 36-Monats-Zielbild</h3>
+<h3 id="36-monats-zielbild">13.3 36-Monats-Zielbild <a class="cite-anchor no-print" href="#36-monats-zielbild" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Nach drei Jahren sollte der strategische Einkauf über eine skalierte Impact-Architektur verfügen: wesentliche Kategorien mit KII-Zielen, Lieferanten-Scores und Datenqualität; standardisierte RFx- und Vertragsmechanik; Impact-adjusted TCO; NWI für operative Portfolioentscheidungen; T-SROI für strategische Transformationsprogramme; Claim Governance für kundenfähige Wirkungskommunikation; regelmäßige Assurance für kritische Daten und Claims.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Reifegrad</th><th>Beschreibung</th><th>Nachweis</th></tr></thead><tbody>
@@ -375,8 +361,8 @@
 <tr><td>Level 3: Transformation</td><td>Einkauf verändert Lieferantenmärkte und Produktpfade.</td><td>T-SROI, Co-Innovation, neue Rohstoffpfade, Kundenimpact.</td></tr>
 <tr><td>Level 4: Marktführerschaft</td><td>Das Unternehmen nutzt Impact-Evidence als Differenzierung im B2B-Markt.</td><td>Claim Files, Kundenprojekte, validierte PCF-/Kreislaufdaten.</td></tr>
 </tbody></table></div>
-<h2 id="anhang-glossar-und-quellen">14. Anhang: Glossar und Quellen</h2>
-<h3 id="glossar">14.1 Glossar</h3>
+<h2 id="anhang-glossar-und-quellen">14. Anhang: Glossar und Quellen <a class="cite-anchor no-print" href="#anhang-glossar-und-quellen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<h3 id="glossar">14.1 Glossar <a class="cite-anchor no-print" href="#glossar" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table>
 <thead><tr><th>Begriff</th><th>Arbeitsdefinition im Dokument</th></tr></thead><tbody>
 <tr><td>Wirkung</td><td>Tatsächliche Veränderung von Zuständen; neutral und relational; Bewertung am Referenzrahmen SDGs/Agenda 2030/SDG+.</td></tr>
@@ -389,7 +375,7 @@
 <tr><td>Reverse Merit Order</td><td>Das kritischste Wirkungsfeld begrenzt die Gesamtbewertung; Schutz vor Kompensation.</td></tr>
 <tr><td>Impact Claim File</td><td>Dokumentationspaket für jede externe Impact-Aussage: Claim, Grenze, KII, Daten, Qualität, Freigabe.</td></tr>
 </tbody></table></div>
-<h3 id="quellen-und-arbeitsgrundlagen">14.2 Quellen und Arbeitsgrundlagen</h3>
+<h3 id="quellen-und-arbeitsgrundlagen">14.2 Quellen und Arbeitsgrundlagen <a class="cite-anchor no-print" href="#quellen-und-arbeitsgrundlagen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Die folgenden Quellen wurden für die Konzeption herangezogen. Sie werden im Text über Kurzlabels referenziert.</p>
 <p>[Branchenfall - anonymisiert]: Generalisierte Fallstudie eines globalen Chemie- und Industrieunternehmens. Unternehmensname, spezifische Zielzahlen, Programme, Standorte und Quellen wurden für die Publikationsfassung entfernt; die methodische Logik wurde auf eine Branchenperspektive übertragen.</p>
 <p>[CSRD/ESRS]: Corporate Sustainability Reporting Directive und European Sustainability Reporting Standards als Rahmen für doppelte Wesentlichkeit, IROs, Wertschöpfungsketteninformationen und Nachhaltigkeitsdaten.</p>
