@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T21:27:53.832Z",
+  "generatedAt": "2026-06-04T09:22:16.776Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -9006,6 +9006,35 @@
       ],
       "relatedObjections": []
     },
+    "financial-materiality": {
+      "label": "Financial Materiality",
+      "slug": "financial-materiality",
+      "url": "/begriffe/financial-materiality/",
+      "hoverDefinition": "Financial Materiality bezeichnet Nachhaltigkeitsthemen, die für Kosten, Chancen, Risiken, Finanzierung, Resilienz oder Geschäftsmodell eines Unternehmens wesentlich werden.",
+      "shortDefinition": "Financial Materiality bezeichnet Nachhaltigkeitsthemen, die für Kosten, Chancen, Risiken, Finanzierung, Resilienz oder Geschäftsmodell eines Unternehmens wesentlich werden.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Financial Materiality",
+        "Finanzielle Wesentlichkeit",
+        "Outside-In-Wesentlichkeit"
+      ],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "csrd",
+        "esrs"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
     "finanzmarktkapitalismus": {
       "label": "Finanzmarktkapitalismus",
       "slug": "finanzmarktkapitalismus",
@@ -13471,6 +13500,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "impact-materiality": {
+      "label": "Impact Materiality",
+      "slug": "impact-materiality",
+      "url": "/begriffe/impact-materiality/",
+      "hoverDefinition": "Impact Materiality bezeichnet die Wesentlichkeit tatsächlicher oder potenzieller Auswirkungen eines Unternehmens auf Menschen, Umwelt und Gesellschaft.",
+      "shortDefinition": "Impact Materiality bezeichnet die Wesentlichkeit tatsächlicher oder potenzieller Auswirkungen eines Unternehmens auf Menschen, Umwelt und Gesellschaft.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Impact Materiality",
+        "Impact-Wesentlichkeit",
+        "Inside-Out-Wesentlichkeit",
+        "Auswirkungswesentlichkeit"
+      ],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "impact-management",
+        "wirkungsbewertung",
+        "csrd",
+        "esrs"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
     "impact-value": {
       "label": "Impact Value / Wirkungswert",
       "slug": "impact-value",
@@ -13496,6 +13555,116 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "impact-controlling": {
+      "label": "Impact-Controlling",
+      "slug": "impact-controlling",
+      "url": "/begriffe/impact-controlling/",
+      "hoverDefinition": "Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.",
+      "shortDefinition": "Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Impact-Controlling",
+        "Impact Controlling",
+        "Wirkungscontrolling",
+        "Wirkungssteuerung im Controlling"
+      ],
+      "relatedTerms": [
+        "impact-management",
+        "key-impact-indicator",
+        "nwi",
+        "t-sroi",
+        "scorecard",
+        "datenqualitaet",
+        "steuerungsdaten",
+        "wirkungsdatenraum",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "Impact Controlling",
+        "Scorecards",
+        "Netto-Wirkungs-Index",
+        "T-SROI"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
+    "impact-management": {
+      "label": "Impact-Management",
+      "slug": "impact-management",
+      "url": "/begriffe/impact-management/",
+      "hoverDefinition": "Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen.",
+      "shortDefinition": "Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Impact-Management",
+        "Impact Management",
+        "Wirkungsmanagement",
+        "Wirkungsmanagement im Unternehmen"
+      ],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "impact-controlling",
+        "wirkungsrueckkopplung",
+        "steuerungsdaten",
+        "wirkungsdaten",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [
+        "Impact Controlling",
+        "Wirkungsrückkopplung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
+    "impact-marketing": {
+      "label": "Impact-Marketing",
+      "slug": "impact-marketing",
+      "url": "/begriffe/impact-marketing/",
+      "hoverDefinition": "Impact-Marketing übersetzt geprüfte Wirkung verständlich, belegbar und ohne Wirkungssimulation in Kommunikation.",
+      "shortDefinition": "Impact-Marketing übersetzt geprüfte Wirkung verständlich, belegbar und ohne Wirkungssimulation in Kommunikation.",
+      "category": "Kommunikationsbegriff",
+      "synonyms": [
+        "Impact-Marketing",
+        "Impact Marketing",
+        "Wirkungsmarketing",
+        "Wirkungskommunikation"
+      ],
+      "relatedTerms": [
+        "impact-washing",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "greenwashing",
+        "wirkungswahrheit",
+        "impact-management",
+        "impact-controlling"
+      ],
+      "relatedMethods": [
+        "Folgencheck",
+        "Impact Controlling"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Unternehmen",
+        "Medien & Öffentlichkeit"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "impact-washing": {
@@ -14836,6 +15005,41 @@
       "relatedDemos": [],
       "relatedDocuments": [
         "kernenergie-wieder-in-deutschland"
+      ],
+      "relatedObjections": []
+    },
+    "key-impact-indicator": {
+      "label": "Key Impact Indicator / KII",
+      "slug": "key-impact-indicator",
+      "url": "/begriffe/key-impact-indicator/",
+      "hoverDefinition": "Ein Key Impact Indicator ist eine steuerbare Beobachtungsgröße für Zustandsveränderungen, Wirkungsrisiken oder Wirkungspotenziale.",
+      "shortDefinition": "Ein Key Impact Indicator ist eine steuerbare Beobachtungsgröße für Zustandsveränderungen, Wirkungsrisiken oder Wirkungspotenziale.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Key Impact Indicator / KII",
+        "KII",
+        "Key Impact Indicator",
+        "Key Impact Indicators",
+        "Wirkungskennzahl"
+      ],
+      "relatedTerms": [
+        "impact-controlling",
+        "impact-management",
+        "kpi",
+        "iro",
+        "wirkungsdaten",
+        "scorecard",
+        "nwi",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [
+        "Impact Controlling",
+        "Scorecards"
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "relatedObjections": []
     },

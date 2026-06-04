@@ -1,8 +1,8 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-03T21:29:08.782Z
-- Content pages scanned: 1005
-- Glossary terms indexed: 1317
+- Generated: 2026-06-04T09:23:41.674Z
+- Content pages scanned: 1007
+- Glossary terms indexed: 1323
 - Warnings: 561
 
 ## Stichproben
@@ -16,13 +16,13 @@
 ### Wirkung (wirkung)
 
 - 1784 · defined · Kapitel 10 - Wirkung - Wirkungsökonomie Online · /referenz/kapitel-010-wirkung/ · manual override +1000, title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 5, 254 occurrences, book-chapter +80
-- 1104 · defined · Was ist Wirkungsökonomie? · /wirkungsoekonomie.html · manual override +650, h2 match, lead match, definition pattern, related proximity 4, 46 occurrences, page +20
+- 1104 · defined · Was ist Wirkungsökonomie? · /wirkungsoekonomie.html · manual override +650, h2 match, lead match, definition pattern, related proximity 4, 50 occurrences, page +20
 - 754 · defined · Kapitel 1 - Meine Reise zur Wirkung - Wirkungsökonomie Online · /referenz/kapitel-001-meine-reise-zur-wirkung/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 138 occurrences, book-chapter +80
+- 724 · defined · Wirkung politischer Sprache - Frames, Narrative und Demokratie · /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 4, 57 occurrences, page +20
 - 709 · defined · Wirkung statt Weltbild - eine wirkungsökonomische Analyse des AfD-Regierungsprogramms · /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 95 occurrences, blog +25
 - 679 · defined · Journalismus: Wirkung statt Klicks | Medien & Öffentlichkeit · /wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 2, 32 occurrences, field +35
 - 674 · defined · Kapitel 30 - Von Wirkung zu Messung - Wirkungsökonomie Online · /referenz/kapitel-030-von-wirkung-zu-messung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 93 occurrences, book-chapter +80
 - 674 · defined · Kapitel 92 - Handel, Lieferketten und globale Wirkung - Wirkungsökonomie Online · /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 106 occurrences, book-chapter +80
-- 659 · defined · Resiliente Wertschöpfungsketten und Einkauf nach Wirkung · /wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 3, 69 occurrences, field +35
 
 ### Wirkungspotenzial (wirkungspotenzial)
 

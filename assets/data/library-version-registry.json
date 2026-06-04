@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T23:09:26.199Z",
+  "generatedAt": "2026-06-04T09:23:58.028Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,10 +204,10 @@
     }
   ],
   "counts": {
-    "total": 1475,
+    "total": 1477,
     "byStatus": {
       "führend": 5,
-      "aktuell": 940,
+      "aktuell": 942,
       "Arbeitsfassung": 274,
       "ältere Fassung": 256
     },
@@ -215,7 +215,7 @@
       "Grundlagenwerk": 63,
       "Glossar": 41,
       "Methodik": 110,
-      "Arbeitspapier": 1190,
+      "Arbeitspapier": 1192,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -224,11 +224,11 @@
     },
     "bySource": {
       "leading-reference": 7,
-      "download-or-document": 711,
-      "online-version": 757
+      "download-or-document": 712,
+      "online-version": 758
     },
-    "downloadFiles": 711,
-    "onlineVersions": 757
+    "downloadFiles": 712,
+    "onlineVersions": 758
   },
   "documents": [
     {
@@ -601,6 +601,54 @@
         "sourcePath": "werkstatt/arbeitsbibliothek/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-dokumente-arbeitspapier-doppelte-wesentlichkeit-impact-controlling-index-html",
+      "title": "Arbeitspapier doppelte wesentlichkeit impact controlling",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/",
+        "sourcePath": "dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-arbeitspapier-doppelte-wesentlichkeit-impact-con",
+      "title": "Arbeitspapier Doppelte Wesentlichkeit Impact Controlling Wirkungsoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+        "sourcePath": "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T06:36:13.154Z",
+  "generatedAt": "2026-06-04T09:24:13.168Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -1843,6 +1843,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "betriebsemissionen": {
+      "terms": [
+        "lebenszyklus-emissionen",
+        "kernkraft-neubau",
+        "stromgestehungskosten"
+      ],
+      "documents": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "bewegungs-ngo": {
       "terms": [
         "ngo",
@@ -3293,6 +3309,16 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "debiasing": {
+      "terms": [],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "degradation-batterie": {
       "terms": [
         "batteriealterung",
@@ -3396,6 +3422,22 @@
         "liberale-demokratie"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "demokratie-umdeutung": {
+      "terms": [
+        "demokratie",
+        "gewaltenteilung",
+        "rechtsstaatsprinzip"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -4287,14 +4329,40 @@
     },
     "doppelte-wesentlichkeit": {
       "terms": [
+        "wirkung",
+        "netto-wirkung",
+        "wirkungscontrolling",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "resilienz",
+        "t-sroi",
         "csrd",
         "esrs",
+        "esg",
         "iro",
-        "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "positive-netto-wirkung"
       ],
-      "documents": [],
-      "methods": [],
+      "documents": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
+      "methods": [
+        {
+          "label": "Wirkungscontrolling / Impact Controlling",
+          "url": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/"
+        },
+        {
+          "label": "T-SROI",
+          "url": "/werkzeuge/impact-controlling/t-sroi/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "url": "/werkzeuge/reverse-merit-order/"
+        }
+      ],
       "tools": [],
       "demos": [],
       "impactFields": [],
@@ -4825,6 +4893,22 @@
         "energie"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "endlager": {
+      "terms": [
+        "transmutation",
+        "intergenerationelle-verantwortung",
+        "wirkungsrisiko"
+      ],
+      "documents": [
+        "kernenergie-wieder-in-deutschland"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -6217,6 +6301,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "feindbild": {
+      "terms": [
+        "suendenbockmechanismus",
+        "polarisierung",
+        "demokratiefeindlichkeit"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "feindbildlogik": {
       "terms": [
         "faschismus",
@@ -6433,6 +6533,26 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "financial-materiality": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "csrd",
+        "esrs"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "finanzmarktkapitalismus": {
       "terms": [
         "kapitalismus",
@@ -6441,6 +6561,22 @@
         "trickle-down-oekonomie"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "finanzschuld": {
+      "terms": [
+        "unterlassungsschuld",
+        "wirkungshaushalt",
+        "generationenbilanz"
+      ],
+      "documents": [
+        "schulden-machen-oder-sparen"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -6568,6 +6704,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "fossile-systemkosten": {
+      "terms": [
+        "co2-preis",
+        "unsichtbare-rechnung",
+        "rueckkopplungspreis",
+        "wirkungsrisiko"
+      ],
+      "documents": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "fossiles-kraftwerk": {
       "terms": [
         "kohlekraftwerk",
@@ -6577,6 +6730,23 @@
         "energiewirtschaft"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "frame": {
+      "terms": [
+        "narrativ",
+        "sprachlicher-trigger",
+        "gegenframe",
+        "resonanzraum"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -6610,6 +6780,16 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "framekontrolle": {
+      "terms": [],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -6934,6 +7114,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "gegenframe": {
+      "terms": [
+        "frame",
+        "reframing",
+        "wirkungskommunikation"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "geld": {
       "terms": [
         "wirkung",
@@ -7176,6 +7372,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "generationenbilanz": {
+      "terms": [
+        "finanzschuld",
+        "unterlassungsschuld",
+        "investitionsschuld",
+        "intertemporale-freiheit"
+      ],
+      "documents": [
+        "schulden-machen-oder-sparen"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "generationengerechtigkeit": {
       "terms": [
         "wirkungshaushalt",
@@ -7399,6 +7612,34 @@
         "kapazitaetsreserve"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "gesichtswahrende_korrektur": {
+      "terms": [],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "gestrandeter-kredit": {
+      "terms": [
+        "strandinggefaehrdeter-kredit",
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "scheinkapital",
+        "wirkungsrisiko"
+      ],
+      "documents": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -8093,6 +8334,23 @@
         "wirkungsrisiko"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "goldene-wirkungsregel": {
+      "terms": [
+        "t-sroi",
+        "positive-netto-wirkung",
+        "wirkungshaushalt",
+        "blindleistung"
+      ],
+      "documents": [
+        "schulden-machen-oder-sparen"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -9436,6 +9694,26 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "impact-materiality": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "impact-management",
+        "wirkungsbewertung",
+        "csrd",
+        "esrs"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "impact-value": {
       "terms": [
         "business-value",
@@ -9451,6 +9729,88 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "impact-controlling": {
+      "terms": [
+        "impact-management",
+        "key-impact-indicator",
+        "nwi",
+        "t-sroi",
+        "scorecard",
+        "datenqualitaet",
+        "steuerungsdaten",
+        "wirkungsdatenraum",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Impact Controlling",
+        "Scorecards",
+        "Netto-Wirkungs-Index",
+        "T-SROI"
+      ],
+      "tools": [
+        "Impact-Controlling-Rechner"
+      ],
+      "demos": [],
+      "impactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "impact-management": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "impact-controlling",
+        "wirkungsrueckkopplung",
+        "steuerungsdaten",
+        "wirkungsdaten",
+        "wirkungsrisiko"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Impact Controlling",
+        "Wirkungsrückkopplung"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "impact-marketing": {
+      "terms": [
+        "impact-washing",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "greenwashing",
+        "wirkungswahrheit",
+        "impact-management",
+        "impact-controlling"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Folgencheck",
+        "Impact Controlling"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "Wirtschaft & Unternehmen",
+        "Medien & Öffentlichkeit"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -9930,6 +10290,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "investitionsschuld": {
+      "terms": [
+        "unterlassungsschuld",
+        "generationenbilanz",
+        "wirkungshaushalt"
+      ],
+      "documents": [
+        "schulden-machen-oder-sparen"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "ipbes": {
       "terms": [
         "biodiversitaetsrisiko",
@@ -10390,6 +10766,47 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "kernkraft-neubau": {
+      "terms": [
+        "betriebsemissionen",
+        "lebenszyklus-emissionen",
+        "opportunitaetskosten",
+        "endlager"
+      ],
+      "documents": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "key-impact-indicator": {
+      "terms": [
+        "impact-controlling",
+        "impact-management",
+        "kpi",
+        "iro",
+        "wirkungsdaten",
+        "scorecard",
+        "nwi",
+        "datenqualitaet"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Impact Controlling",
+        "Scorecards"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "ki-und-arbeit": {
       "terms": [
         "automatisierung",
@@ -10844,6 +11261,16 @@
         "mieterstrom",
         "energieautonomie"
       ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "kommunikative_souveraenitaet": {
+      "terms": [],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -11760,6 +12187,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "lebenszyklus-emissionen": {
+      "terms": [
+        "betriebsemissionen",
+        "produktlebenszyklus",
+        "systemgrenze"
+      ],
+      "documents": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "lebenszyklusanalyse": {
       "terms": [
         "lebenszyklusinventar",
@@ -12091,6 +12534,30 @@
         "produktbesteuerung-durch-wirkung",
         "technische-leitlinien-wustg",
         "systemmodell-der-wirkungsoekonomie"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "lieferkettenbelasteter-kredit": {
+      "terms": [
+        "wirkungsbelasteter-kredit",
+        "digitaler-produktpass",
+        "scorecard",
+        "woek-id",
+        "wirkungstraeger",
+        "wirkungsdaten",
+        "wirkungsrisiko",
+        "lieferkettenwirkung",
+        "lieferantenbewertung",
+        "supply-chain-resilienz"
+      ],
+      "documents": [
+        "wirkungsoekonomie-lieferkette",
+        "standardwerk-neue-ordnung-wohlstands-2026"
       ],
       "methods": [],
       "tools": [],
@@ -15339,6 +15806,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "opferumkehr": {
+      "terms": [
+        "narrativ",
+        "feindbild",
+        "medienfeindbild"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "opportunitaetskosten": {
       "terms": [
         "allokation",
@@ -16254,6 +16737,22 @@
         "dark-money"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "polarisierung": {
+      "terms": [
+        "feindbild",
+        "diskursfaehigkeit",
+        "resonanzraum"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -17357,6 +17856,26 @@
         "nicht-dualitaet",
         "alan-watts-daoismus"
       ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "psychologischer_wirkungscheck": {
+      "terms": [],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "psychologisches_stoeckchen": {
+      "terms": [],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -19345,6 +19864,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "rueckkopplungspreis": {
+      "terms": [
+        "co2-preis",
+        "wirkungslenkung",
+        "wirkungssteuer",
+        "positive-netto-wirkung"
+      ],
+      "documents": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "salienz": {
       "terms": [
         "salienzsteuerung",
@@ -19436,6 +19972,25 @@
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "scheinkapital": {
+      "terms": [
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "wirkungsrisiko",
+        "wirkungsfonds",
+        "wirkungsrueckkopplung",
+        "kapitalwirkung"
+      ],
+      "documents": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
       ],
       "methods": [],
       "tools": [],
@@ -20262,6 +20817,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "sichtbare-rechnung": {
+      "terms": [
+        "unsichtbare-rechnung",
+        "co2-preis",
+        "fossile-systemkosten"
+      ],
+      "documents": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "skandinavisches-modell": {
       "terms": [
         "wohlfahrtsstaat",
@@ -20271,6 +20842,22 @@
         "gleichstellung"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "small-modular-reactor": {
+      "terms": [
+        "kernkraft-neubau",
+        "zeitwirkung",
+        "technikwunder"
+      ],
+      "documents": [
+        "kernenergie-wieder-in-deutschland"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -20752,6 +21339,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "sprachlicher-trigger": {
+      "terms": [
+        "frame",
+        "resonanzraum",
+        "wirkstoff",
+        "polarisierung"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "sprachspiel": {
       "terms": [
         "bedeutung-als-gebrauch",
@@ -21187,11 +21791,37 @@
         "lock-in-pfadabhaengigkeit",
         "spekulationslogik",
         "uebergangstaetigkeit",
-        "wix-vi"
+        "wix-vi",
+        "wirkungsbedingte-stranded-assets",
+        "strandinggefaehrdeter-kredit",
+        "gestrandeter-kredit",
+        "scheinkapital",
+        "wirkungsbelasteter-kredit"
       ],
       "documents": [
         "wp-wohnungsmarkt",
         "stranded-assets-gebaeudebestand"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "strandinggefaehrdeter-kredit": {
+      "terms": [
+        "wirkungsbelasteter-kredit",
+        "gestrandeter-kredit",
+        "wirkungsbedingte-stranded-assets",
+        "stranded-assets",
+        "wirkungsrisikoposition",
+        "wirkungsrisiko",
+        "versicherbarkeit"
+      ],
+      "documents": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
       ],
       "methods": [],
       "tools": [],
@@ -22516,6 +23146,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "transmutation": {
+      "terms": [
+        "endlager",
+        "kernkraft-neubau",
+        "intergenerationelle-verantwortung"
+      ],
+      "documents": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "transparenz": {
       "terms": [
         "rechenschaft",
@@ -22901,6 +23547,39 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "unsichtbare-rechnung": {
+      "terms": [
+        "sichtbare-rechnung",
+        "fossile-systemkosten",
+        "wirkungsblindheit"
+      ],
+      "documents": [
+        "wirkungsradar-co2-preis-oder-fossile-systemkosten"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "unterlassungsschuld": {
+      "terms": [
+        "finanzschuld",
+        "investitionsschuld",
+        "wirkungsrisiko",
+        "generationenbilanz"
+      ],
+      "documents": [
+        "schulden-machen-oder-sparen"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "unternehmen-2035": {
       "terms": [
         "alltag-2035",
@@ -23200,6 +23879,28 @@
     "vehicle-to-load": {
       "terms": [
         "bidirektionales-laden"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "verantwortungsverkuerzung": {
+      "terms": [
+        "wirkung",
+        "wirkungspfad",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "produktwirkung",
+        "lieferkettenwirkung",
+        "scope-3",
+        "reverse-merit-order",
+        "woek-id",
+        "wirkungssteuer"
       ],
       "documents": [],
       "methods": [],
@@ -24256,6 +24957,16 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wertebruecke": {
+      "terms": [],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wertekonflikt": {
       "terms": [
         "werte",
@@ -25001,6 +25712,23 @@
         "SDG-/SDG+-Mapping"
       ]
     },
+    "wirkungsanalyse-von-sprache": {
+      "terms": [
+        "folgencheck",
+        "frame",
+        "sprachlicher-trigger",
+        "resonanzraum"
+      ],
+      "documents": [
+        "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungsarchitektur": {
       "terms": [
         "wirkungsbewertung",
@@ -25274,6 +26002,48 @@
       "dataRegisters": [
         "woek-id-register"
       ]
+    },
+    "wirkungsbedingte-stranded-assets": {
+      "terms": [
+        "stranded-assets",
+        "scheinkapital",
+        "strandinggefaehrdeter-kredit",
+        "gestrandeter-kredit",
+        "wirkungsrisiko",
+        "negative-wirkung"
+      ],
+      "documents": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsbelasteter-kredit": {
+      "terms": [
+        "lieferkettenbelasteter-kredit",
+        "wirkungsrisiko",
+        "wirkungsrisikoposition",
+        "strandinggefaehrdeter-kredit",
+        "wirkungskredit",
+        "scorecard",
+        "woek-id",
+        "kapitalwirkung"
+      ],
+      "documents": [
+        "wirkungsoekonomie-lieferkette",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
     },
     "wirkungsbewertung": {
       "terms": [
@@ -26810,6 +27580,48 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungskonversionskredit": {
+      "terms": [
+        "wirkungskredit",
+        "wirkungsbelasteter-kredit",
+        "lieferkettenbelasteter-kredit",
+        "transformationswirkung",
+        "scorecard",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": [
+        "wirkungsoekonomie-lieferkette",
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungskredit": {
+      "terms": [
+        "wirkungskonversionskredit",
+        "wirkungsbelasteter-kredit",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "scorecard",
+        "kapitalwirkung"
+      ],
+      "documents": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungslenkung": {
       "terms": [
         "wirkungsbewertung",
@@ -28165,6 +28977,27 @@
         "systemmodell-der-wirkungsoekonomie",
         "whitepaper-t-sroi",
         "wirkungsrat-konzept"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsrisikoposition": {
+      "terms": [
+        "wirkungsrisiko",
+        "wirkungsbelasteter-kredit",
+        "strandinggefaehrdeter-kredit",
+        "stranded-assets",
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "kapitalwirkung"
+      ],
+      "documents": [
+        "standardwerk-neue-ordnung-wohlstands-2026",
+        "wirkungsoekonomie-lieferkette"
       ],
       "methods": [],
       "tools": [],

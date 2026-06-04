@@ -35,7 +35,7 @@ export function renderDemoGovernanceBlock(root, fromFile, demo) {
           <p>Dieser Standardblock gilt für Demos, Rechner, Scanner und interaktive Tools. Er trennt modellhafte Darstellung von amtlicher Bewertung, Beratung oder automatisierter Entscheidung.</p>
         </div>
         <aside class="protection-notice" role="note" aria-label="Schutzlinien dieser Demo">
-          <p class="card-kicker">ProtectionNotice</p>
+          <p class="card-kicker">Schutzlinien</p>
           <h3 class="card-title">Nicht amtlich. Keine Beratung. Keine Personenbewertung.</h3>
           <ul class="protection-notice-list">
             <li>Nicht amtlich und keine WÖk-Zertifizierung.</li>

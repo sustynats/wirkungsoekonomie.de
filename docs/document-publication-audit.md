@@ -4,11 +4,11 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Ergebnis
 
-- Kuratierte Metadatenkarten: 34
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 16
+- Kuratierte Metadatenkarten: 35
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 17
 - Archivdokumente nur im Archiv: 2
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 16
-- Red-Flag-Treffer: 36
+- Red-Flag-Treffer: 38
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -37,6 +37,8 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Nachhaltigkeitstransformation im Handwerk | assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Whitepaper T-SROI | public/downloads/originals/Whitepaper-T-SROI.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Whitepaper T-SROI | public/downloads/originals/Whitepaper-T-SROI.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie | public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie | public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Technische Leitlinien WUStG | public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Technische Leitlinien WUStG | public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Wirkungsrat Konzept | public/downloads/originals/Wirkungsrat_Konzept.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |

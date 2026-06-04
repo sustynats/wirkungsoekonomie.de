@@ -1477,13 +1477,21 @@ function methodTypeBadges(types = []) {
   return types.map((type) => `<span class="method-type-badge">${escapeHtml(type)}</span>`).join("");
 }
 
+function plainSearchText(value) {
+  return String(value ?? "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function methodToolCard(base, tool) {
   const { title, text, cluster, status, target, related = [], notice = "Bereitet Entscheidungen vor, ersetzt sie aber nicht.", types = [], isDemo = false, isPrepared = false, method = "" } = tool;
   const clusterInfo = methodClusters.find((item) => item.key === cluster);
   const action = target
     ? `<a class="text-link" href="${href(base, target)}">Detailseite öffnen</a>`
     : `<span class="method-card-pending">Detailseite in Vorbereitung</span>`;
-  return `<article class="card method-tool-card" data-method-card data-cluster="${escapeHtml(cluster)}" data-status="${escapeHtml(status)}" data-type="${escapeHtml(types.join(" "))}" data-method="${escapeHtml(method)}" data-demo="${isDemo ? "ja" : "nein"}" data-prepared="${isPrepared ? "ja" : "nein"}" data-search="${escapeHtml([title, text, clusterInfo?.title, status, types.join(" "), related.join(" ")].filter(Boolean).join(" "))}">
+  const searchText = [title, plainSearchText(text), clusterInfo?.title, status, types.join(" "), related.join(" ")].filter(Boolean).join(" ");
+  return `<article class="card method-tool-card" data-method-card data-cluster="${escapeHtml(cluster)}" data-status="${escapeHtml(status)}" data-type="${escapeHtml(types.join(" "))}" data-method="${escapeHtml(method)}" data-demo="${isDemo ? "ja" : "nein"}" data-prepared="${isPrepared ? "ja" : "nein"}" data-search="${escapeHtml(searchText)}">
     <div class="method-tool-card-head">
       <p class="card-kicker">Cluster ${escapeHtml(cluster)} · ${escapeHtml(clusterInfo?.title || "Methoden")}</p>
       ${StatusBadge(status)}

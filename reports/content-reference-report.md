@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-03T21:29:09.735Z
-Resolved references: 6487
-Warnings: 835
+Erzeugt: 2026-06-04T09:23:42.738Z
+Resolved references: 6532
+Warnings: 829
 
 ## Warnungen
 
@@ -84,8 +84,6 @@ Warnings: 835
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
-- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
@@ -139,8 +137,6 @@ Warnings: 835
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
-- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
@@ -187,6 +183,7 @@ Warnings: 835
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
@@ -245,6 +242,10 @@ Warnings: 835
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
@@ -254,8 +255,7 @@ Warnings: 835
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
-- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
@@ -290,8 +290,6 @@ Warnings: 835
 - [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] kernenergie-wieder-in-deutschland - Titel aus Slug erzeugt
-- [unresolved-reference] kernenergie-wieder-in-deutschland - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [unresolved-reference] [empty] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
@@ -506,6 +504,8 @@ Warnings: 835
 - [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
 
 ## Aufgelöste Verweise
 
@@ -583,7 +583,7 @@ Warnings: 835
 - /referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s001 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/ -> Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO2-Bilanz (Journalartikel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#woek-main-2026-k032-s001 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-030-von-wirkung-zu-messung/#woek-main-2026-k030-s001 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -592,7 +592,7 @@ Warnings: 835
 - /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#woek-main-2026-k032-s001 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-030-von-wirkung-zu-messung/#woek-main-2026-k030-s001 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-050-produktscorecards/#woek-main-2026-k050-s001 -> Kapitel 50: Produktscorecards (Online-Buch-Kapitel, Beschreibung: ja)
-- /portale/zukunftsbilder-wirkungswohlstand/alltag-2035/ -> Detailkonzept 1: Alltag 2035 und wirkungsfaehiger Alltag (Website, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/alltag-2035/ -> Detailkonzept 1: Alltag 2035 und wirkungsfähiger Alltag (Website, Beschreibung: ja)
 - /referenz/kapitel-107-zukunftsbilder/#woek-main-2026-k107-s001 -> Kapitel 107: Zukunftsbilder (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/zukunftsbilder-wirkungswohlstand/ -> Portalstartseite Zukunftsbilder Wirkungswohlstand (Website, Beschreibung: ja)
@@ -614,9 +614,9 @@ Warnings: 835
 - /portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/ -> Detailkonzept: Multipolare Ordnung und kulturelle Anschlussfähigkeit (Website, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
-- /portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/ -> Politische Anschlussfaehigkeit (Website, Beschreibung: ja)
 - /portale/migration-vielfalt/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
 - /portale/wirkungsakademie-fachbibliothek/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
 - /wirkungsfelder/rente-soziale-sicherung/politische-umsetzung/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -768,7 +768,7 @@ Warnings: 835
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#woek-main-2026-k092-s001 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/ -> Resiliente Wertschöpfungsketten und Einkauf nach Wirkung (Wirkungsfeld, Beschreibung: ja)
-- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO2-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#woek-main-2026-k085-s001 -> Kapitel 85: DPP-Infrastruktur und technische Umsetzung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/#woek-main-2026-k093-s001 -> Kapitel 93: Globale Institutionen und Wirkungsgovernance (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -899,10 +899,11 @@ Warnings: 835
 - /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#woek-main-2026-k089-s001 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#woek-main-2026-k090-s001 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /wirkungsradar/studio/embed/kernenergie-wieder-in-deutschland/ -> Embed-Widget – Kernenergie wieder in Deutschland? (Distribution, Beschreibung: ja)
 - /wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/ -> Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /dokumente/woek-partei/#political-implementation -> WÖK-Partei – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
-- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO2-Bilanz (Journalartikel, Beschreibung: ja)
 - /bibliothek/nachhaltiger-einzelhandel/ -> Nachhaltiger Einzelhandel | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html -> Von der Wertschöpfungskette zum Wirkungskreislauf (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-015-leistung-neu-definieren/#woek-main-2026-k015-s001 -> Kapitel 15: Leistung neu definieren (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1005,30 +1006,23 @@ Warnings: 835
 - /referenz/kapitel-028-demokratie-als-wirkungsraum/#woek-main-2026-k028-s001 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/#woek-main-2026-k029-s001 -> Kapitel 29: Zeit, Endlichkeit und Generationenverantwortung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-060-verteilung-eigentum-und-wohlstand/#woek-main-2026-k060-s001 -> Kapitel 60: Verteilung, Eigentum und Wohlstand (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html -> Der CO2-Preis ist nicht die Kosten – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.html -> Der CO2-Preis könnte zu einem der wirksamsten Kostenentlastungsinstrumente für Bürger:innen werden (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.html -> Warum Politik immer zu spät handelt – und wir genau das immer wieder belohnen (Journalartikel, Beschreibung: ja)
+- /bibliothek/wirkungsradar-dossiers/#dossiers-title -> Wirkungsradar-Dossiers | Bibliothek der Wirkungsökonomie (Whitepaper, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/dossiers/wirkungssteuer-preise.html -> Wirkungssteuer und Preise – Dossier der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/linkedin-artikel.html -> LinkedIn-Artikel (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/#woek-main-2026-k106-s001 -> Kapitel 106: Die Fehlbarkeit der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/#woek-main-2026-k013-s001 -> Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-018-wirkungsordnungen/#woek-main-2026-k018-s001 -> Kapitel 18: Wirkungsordnungen (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-019-nichttriviale-systeme/#woek-main-2026-k019-s001 -> Kapitel 19: Nichttriviale Systeme (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/#woek-main-2026-k020-s001 -> Kapitel 20: Systemhebel, Engpässe und Interdependenzen (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#woek-main-2026-k008-s001 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/#woek-main-2026-k106-s001 -> Kapitel 106: Die Fehlbarkeit der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/#woek-main-2026-k013-s001 -> Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-018-wirkungsordnungen/#woek-main-2026-k018-s001 -> Kapitel 18: Wirkungsordnungen (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-019-nichttriviale-systeme/#woek-main-2026-k019-s001 -> Kapitel 19: Nichttriviale Systeme (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/#woek-main-2026-k020-s001 -> Kapitel 20: Systemhebel, Engpässe und Interdependenzen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /dokumente/wp-wohnungsmarkt/#political-implementation -> WP Wohnungsmarkt – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/nats-woek-allgemein/#political-implementation -> NATS WÖk allgemein – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/wp-produkte/#political-implementation -> WP Produkte – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/ -> Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
-- /wirkungsfelder/produkte-konsum/apfelbeispiel/ -> Regionaler Apfel vs. Chile-Apfel | Wirkungssteuer-Beispiel (Wirkungsfeld, Beschreibung: ja)
-- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#woek-main-2026-k031-s001 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-050-produktscorecards/#woek-main-2026-k050-s001 -> Kapitel 50: Produktscorecards (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/#woek-main-2026-k052-s001 -> Kapitel 52: Konsumwirkung und Verbraucherinformation (Online-Buch-Kapitel, Beschreibung: ja)
-- /wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/ -> Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
-- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#woek-main-2026-k031-s001 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-050-produktscorecards/#woek-main-2026-k050-s001 -> Kapitel 50: Produktscorecards (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/#woek-main-2026-k052-s001 -> Kapitel 52: Konsumwirkung und Verbraucherinformation (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1201,13 +1195,13 @@ Warnings: 835
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /werkstatt/gesetze/wirkungssteuergesetz/#book-anchors -> Wirkungssteuergesetz WStG | Online-Gesetzestext mit Kommentaren (Website, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /werkzeuge/cyberresilienz-check/ -> Cyberresilienz-Check (Methode, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
 - /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /portale/migration-vielfalt/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html -> Vom Nachhaltigkeitsbewusstsein zur Wirkungsökonomie (Journalartikel, Beschreibung: ja)
@@ -1295,7 +1289,7 @@ Warnings: 835
 - /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit – Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO2-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/#woek-main-2026-k034-s001 -> Kapitel 34: T-SROI und systemische Transformationsmessung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1425,19 +1419,16 @@ Warnings: 835
 - /referenz/kapitel-001-meine-reise-zur-wirkung/#woek-main-2026-k001-s001 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#woek-main-2026-k017-s001 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-011-wirkungspotenzial/#woek-main-2026-k011-s001 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /bibliothek/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/ -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /werkzeuge/impact-controlling/ -> Impact Controlling (Methode, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/ -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#woek-main-2026-k008-s001 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
-- /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-030-von-wirkung-zu-messung/#woek-main-2026-k030-s001 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#woek-main-2026-k008-s001 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-030-von-wirkung-zu-messung/#woek-main-2026-k030-s001 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1450,8 +1441,8 @@ Warnings: 835
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/#woek-main-2026-k055-s001 -> Kapitel 55: Wachstum, Innovation und Transformation innerhalb planetarer Grenzen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO2-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO2-Bilanz (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html -> Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert – sondern an seiner Logik (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html -> AI First ist eine Sackgasse – nicht, weil KI schlecht ist, sondern weil wir sie falsch denken. (Journalartikel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -1509,3 +1500,12 @@ Warnings: 835
 - /wirkungsfelder/wirtschaft-unternehmen/bilanz-finanzierung-finanzkommunikation/ -> Bilanz, Finanzierung und Finanzkommunikation nach Wirkung (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/investoren-vermieter/ -> Investor:innen & Vermieter:innen | Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/konzept/ -> Konzeptpapier Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#woek-main-2026-k004-s001 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-070-wohnen/#woek-main-2026-k070-s001 -> Kapitel 70: Wohnen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-107-zukunftsbilder/#woek-main-2026-k107-s001 -> Kapitel 107: Zukunftsbilder (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-099-wirkungsoekonomie-im-alltag/#woek-main-2026-k099-s001 -> Kapitel 99 – Wirkungsökonomie im Alltag (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-098-pilotprojekte/#woek-main-2026-k098-s001 -> Kapitel 98: Pilotprojekte (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wp-wohnungsmarkt/#political-implementation -> WP Wohnungsmarkt – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-107-zukunftsbilder/#woek-main-2026-k107-s001 -> Kapitel 107: Zukunftsbilder (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-099-wirkungsoekonomie-im-alltag/#woek-main-2026-k099-s001 -> Kapitel 99 – Wirkungsökonomie im Alltag (Online-Buch-Kapitel, Beschreibung: ja)

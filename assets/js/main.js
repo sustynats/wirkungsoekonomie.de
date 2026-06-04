@@ -1915,7 +1915,8 @@ function initGlossaryCards() {
 loadGlossaryTermsAndInit();
 
 function loadBlogJournal() {
-  if (window.__wirkungBlogJournalScriptLoaded) {
+  if (window.__wirkungBlogJournalScriptLoaded || document.querySelector('script[src*="blog-journal.js"]')) {
+    window.__wirkungBlogJournalScriptLoaded = true;
     return;
   }
 
