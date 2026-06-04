@@ -345,7 +345,7 @@ function updateLiveIndexCount() {
 function sourcePackYaml() {
   return `id: debt-investment-v1
 last_verified: "${UPDATED_AT}"
-status: draft_missing_positive_example
+status: draft
 sources:
 ${sourceCards.map(([title, shows, useFor, warning, url, stand]) => `  ${slugify(title)}:
     label: "${title}"
