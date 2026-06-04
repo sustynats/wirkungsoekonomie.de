@@ -696,7 +696,7 @@ function renderPage(doc, body, toc) {
         </nav>
       </div>
     </footer>
-    <script src="/assets/js/main.js?v=20260604-debate-use-order" defer></script>
+    <script src="/assets/js/main.js?v=20260604-wirkungsraum" defer></script>
   </body>
 </html>`;
 }

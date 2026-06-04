@@ -3351,7 +3351,7 @@ ${main}
         <a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a>
       </div>
     </footer>
-    <script src="${base}assets/js/main.js?v=20260604-debate-use-order)}"></script>
+    <script src="${base}assets/js/main.js?v=20260604-wirkungsraum"></script>
   </body>
 </html>
 `;

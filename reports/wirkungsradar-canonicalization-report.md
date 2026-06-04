@@ -1,6 +1,6 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-04T17:49:50.395Z
+Stand: 2026-06-04T21:01:37.313Z
 
 | Kennzahl | Wert |
 |---|---:|
@@ -83,12 +83,12 @@ Stand: 2026-06-04T17:49:50.395Z
 | /wirkungsradar/detail/planwirtschaftliche-energiewende/ | /wirkungsradar/live/planwirtschaftliche-energiewende/ | Planwirtschaftliche Energiewende? |
 | /wirkungsradar/detail/praevention-ist-zu-teuer/ | /wirkungsradar/live/praevention-ist-zu-teuer/ | Prävention ist zu teuer? |
 | /wirkungsradar/detail/queere-sichtbarkeit-bedroht-kinder/ | /wirkungsradar/live/queere-sichtbarkeit-bedroht-kinder/ | Queere Sichtbarkeit bedroht Kinder? |
-| /wirkungsradar/detail/radwege-in-peru/ | /wirkungsradar/live/radwege-in-peru/ | Radwege in Peru? |
+| /wirkungsradar/detail/radwege-in-peru/ | /wirkungsradar/live/radwege-in-peru/ | Radwege in Peru - verschenktes Geld oder verkürzte Empörung? |
 | /wirkungsradar/detail/remigration/ | /wirkungsradar/live/remigration/ | Remigration / Remigrationslotsen? |
 | /wirkungsradar/detail/rente-unbezahlbar/ | /wirkungsradar/live/rente-unbezahlbar/ | Rente ist unbezahlbar? |
 | /wirkungsradar/detail/resilienz-ist-autarkie/ | /wirkungsradar/live/resilienz-ist-autarkie/ | Resilienz ist Autarkie? |
 | /wirkungsradar/detail/schulden-machen-oder-sparen/ | /wirkungsradar/live/schulden-machen-oder-sparen/ | Schulden machen oder sparen? |
-| /wirkungsradar/detail/sdgs-sind-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | „SDGs / Agenda 2030 sind Weltregierung“ |
+| /wirkungsradar/detail/sdgs-sind-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | Diese Aussage wurde zusammengeführt |
 | /wirkungsradar/detail/sdgs-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | „SDGs / Agenda 2030 sind Weltregierung“ |
 | /wirkungsradar/detail/sozialschmarotzer-frame/ | /wirkungsradar/live/sozialschmarotzer-frame/ | Sozialschmarotzer? |
 | /wirkungsradar/detail/sozialtourismus-frame/ | /wirkungsradar/live/migration-kostet-nur/ | Sozialtourismus? |

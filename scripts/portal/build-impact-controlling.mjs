@@ -324,7 +324,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=20260604-debate-use-order}"></script>
+    <script src="${base}assets/js/main.js?v=20260604-wirkungsraum"></script>
     ${extraScript ? `<script src="${base}${extraScript}"></script>` : ""}
   </body>
 </html>

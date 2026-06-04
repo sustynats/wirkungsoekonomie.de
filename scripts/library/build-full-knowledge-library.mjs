@@ -341,7 +341,7 @@ const html = `<!DOCTYPE html>
         <div class="knowledge-library-grid" data-library-results>${allCards}</div>
       </section>
     </main>
-    <script src="../assets/js/main.js?v=20260604-debate-use-order"></script>
+    <script src="../assets/js/main.js?v=20260604-wirkungsraum"></script>
     <script src="../assets/js/full-library.js?v=20260531-full-knowledge-library"></script>
   </body>
 </html>`;

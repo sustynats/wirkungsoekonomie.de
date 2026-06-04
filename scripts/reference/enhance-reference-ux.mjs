@@ -237,7 +237,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=20260604-debate-use-order"></script>
+  return `<script src="${base}assets/js/main.js?v=20260604-wirkungsraum"></script>
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 

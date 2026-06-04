@@ -3405,6 +3405,376 @@ const CopyAnswerLayer = (() => {
   return { init };
 })();
 
+const WirkungsraumLayer = (() => {
+  const keys = {
+    saved: "saved_items",
+    progress: "woek_reading_progress",
+    collections: "woek_collections",
+    lastVisit: "woek_wirkungsraum_last_visit"
+  };
+
+  const relevantPathPattern =
+    /\/(begriffe|glossar|referenz|buch|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
+  const progressPathPattern = /\/(referenz|buch|dokumente|downloads|wirkungsradar\/(live|detail)|portale|wirkungsfelder|werkstatt|wissen|blog)\b|\/buch\.html$/;
+  const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal)\b|\/(datenschutz|impressum)\.html$/;
+
+  function readJson(key, fallback) {
+    try {
+      const value = window.localStorage.getItem(key);
+      return value ? JSON.parse(value) : fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
+  function writeJson(key, value) {
+    try {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch {
+      // Local storage can be unavailable in private browsing modes.
+    }
+  }
+
+  function canonicalPath() {
+    return `${window.location.pathname}${window.location.hash || ""}`.replace(/\/index\.html$/, "/");
+  }
+
+  function pageTitle() {
+    const h1 = document.querySelector("h1");
+    const raw = h1?.textContent || document.title || "Wirkungsökonomie";
+    return raw.replace(/\s+/g, " ").replace(/\s+\|\s+.*$/, "").trim();
+  }
+
+  function pageType(path = window.location.pathname) {
+    if (path.includes("/wirkungsradar/")) return "Debatten-Kompass";
+    if (path.includes("/begriffe/") || path.includes("/glossar")) return "Glossar";
+    if (path.includes("/referenz/") || path.includes("/buch")) return "Buchkapitel";
+    if (path.includes("/downloads") || path.includes("/dokumente") || path.includes("/werkstatt/")) return "Dokument";
+    if (path.includes("/werkzeuge/") || path.includes("/tools/")) return "Werkzeug";
+    if (path.includes("/akademie")) return "Akademie";
+    if (path.includes("/wirkungsfelder/") || path.includes("/portale/")) return "Wirkungsfeld";
+    if (path.includes("/blog") || path.includes("/journal") || path.includes("/wissen/")) return "Journal";
+    return "Inhalt";
+  }
+
+  function pageTags() {
+    const tags = new Set();
+    document.querySelectorAll(".hero-kicker, .card-kicker, .chip, [data-tag]").forEach((node) => {
+      const text = (node.textContent || node.getAttribute("data-tag") || "").replace(/\s+/g, " ").trim();
+      if (text && text.length <= 42) tags.add(text);
+    });
+    return Array.from(tags).slice(0, 8);
+  }
+
+  function currentItem() {
+    const url = canonicalPath();
+    return {
+      id: url.replace(/^\/+/, "") || "start",
+      type: pageType(),
+      title: pageTitle(),
+      url,
+      saved_at: new Date().toISOString(),
+      tags: pageTags(),
+      category: document.querySelector(".breadcrumb a:last-of-type, .hero-kicker")?.textContent?.trim() || pageType()
+    };
+  }
+
+  function savedItems() {
+    const items = readJson(keys.saved, []);
+    return Array.isArray(items) ? items : [];
+  }
+
+  function saveItem(item) {
+    const next = [item, ...savedItems().filter((existing) => existing.id !== item.id)].slice(0, 300);
+    writeJson(keys.saved, next);
+    document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+  }
+
+  function removeItem(id) {
+    writeJson(
+      keys.saved,
+      savedItems().filter((item) => item.id !== id)
+    );
+    document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+  }
+
+  function isSaved(id) {
+    return savedItems().some((item) => item.id === id);
+  }
+
+  function buttonLabel(button, saved) {
+    button.textContent = saved ? "★ Gemerkt" : "☆ Merken";
+    button.setAttribute("aria-pressed", String(saved));
+  }
+
+  function injectSaveButton() {
+    const path = window.location.pathname;
+    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    if (document.querySelector("[data-wirkungsraum-save]")) return;
+
+    const item = currentItem();
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "btn btn-secondary wirkungsraum-save-button";
+    button.dataset.wirkungsraumSave = item.id;
+    buttonLabel(button, isSaved(item.id));
+    button.addEventListener("click", () => {
+      if (isSaved(item.id)) {
+        removeItem(item.id);
+        buttonLabel(button, false);
+        return;
+      }
+      saveItem(currentItem());
+      buttonLabel(button, true);
+    });
+
+    const actions = document.querySelector(".hero-actions");
+    if (actions) {
+      actions.append(button);
+      return;
+    }
+    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
+    if (heroCopy) {
+      const wrap = document.createElement("p");
+      wrap.className = "wirkungsraum-save-row";
+      wrap.append(button);
+      heroCopy.append(wrap);
+    }
+  }
+
+  function progressPercent() {
+    const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    return Math.max(0, Math.min(100, Math.round((window.scrollY / scrollable) * 100)));
+  }
+
+  function trackReadingProgress() {
+    const path = window.location.pathname;
+    if (excludedPathPattern.test(path) || !progressPathPattern.test(path)) return;
+
+    let timeout;
+    const persist = () => {
+      window.clearTimeout(timeout);
+      timeout = window.setTimeout(() => {
+        const url = canonicalPath();
+        const all = readJson(keys.progress, {});
+        all[url] = {
+          id: url.replace(/^\/+/, ""),
+          title: pageTitle(),
+          type: pageType(path),
+          url,
+          scroll_position: Math.round(window.scrollY),
+          progress: progressPercent(),
+          updated_at: new Date().toISOString()
+        };
+        writeJson(keys.progress, all);
+      }, 250);
+    };
+    window.addEventListener("scroll", persist, { passive: true });
+    window.addEventListener("beforeunload", persist);
+    persist();
+  }
+
+  function itemCard(item, options = {}) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-item";
+    const tags = Array.isArray(item.tags) ? item.tags.slice(0, 4) : [];
+    const progress = Number.isFinite(item.progress) ? `<p class="wirkungsraum-progress"><span style="width:${Math.max(3, item.progress)}%"></span></p>` : "";
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")}</p>
+      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      ${progress}
+      ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">${options.readLabel || "Öffnen"}</a>
+        ${options.removable ? `<button class="btn btn-secondary" type="button" data-remove-saved="${escapeAttribute(item.id || "")}">Entfernen</button>` : ""}
+      </p>
+    `;
+    return article;
+  }
+
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[char]);
+  }
+
+  function escapeAttribute(value) {
+    return escapeHtml(value).replace(/`/g, "&#096;");
+  }
+
+  function renderList(container, items, emptyText, options = {}) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">${escapeHtml(emptyText)}</p>`;
+      container.append(empty);
+      return;
+    }
+    items.forEach((item) => container.append(itemCard(item, options)));
+  }
+
+  function collections() {
+    const value = readJson(keys.collections, []);
+    return Array.isArray(value) ? value : [];
+  }
+
+  function renderCollections(root) {
+    const list = root.querySelector("[data-collection-list]");
+    const all = collections();
+    if (!list) return;
+    list.innerHTML = "";
+    if (!all.length) {
+      list.innerHTML = '<article class="card"><p class="card-text">Noch keine Sammlung angelegt.</p></article>';
+      return;
+    }
+    all.forEach((collection) => {
+      const article = document.createElement("article");
+      article.className = "card";
+      article.innerHTML = `<p class="card-kicker">Sammlung</p><h3 class="card-title">${escapeHtml(collection.name)}</h3><p class="card-text">${collection.itemIds?.length || 0} Inhalte</p>`;
+      list.append(article);
+    });
+  }
+
+  function renderDashboard() {
+    const root = document.querySelector("[data-wirkungsraum-dashboard]");
+    if (!root) return;
+
+    const saved = savedItems();
+    const progress = Object.values(readJson(keys.progress, {})).sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
+    const savedList = root.querySelector("[data-saved-list]");
+    const readingList = root.querySelector("[data-reading-list]");
+    const filter = root.querySelector("[data-saved-filter]");
+
+    const drawSaved = () => {
+      const query = filter instanceof HTMLInputElement ? filter.value.trim().toLowerCase() : "";
+      const filtered = query ? saved.filter((item) => `${item.title} ${item.type} ${(item.tags || []).join(" ")}`.toLowerCase().includes(query)) : saved;
+      renderList(savedList, filtered, "Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „☆ Merken“.", { removable: true });
+    };
+
+    renderList(readingList, progress.slice(0, 12), "Noch kein Lesestand gespeichert. Öffne ein Kapitel oder eine Debatten-Kompass-Seite und scrolle ein Stück.", {
+      readLabel: "Weiterlesen"
+    });
+    drawSaved();
+    renderCollections(root);
+
+    root.querySelector("[data-stat-saved]").textContent = String(saved.length);
+    root.querySelector("[data-stat-progress]").textContent = String(progress.length);
+    root.querySelector("[data-stat-collections]").textContent = String(collections().length);
+    root.querySelector("[data-stat-academy]").textContent = progress.some((item) => item.type === "Akademie") ? "◐" : "○";
+
+    const lastVisit = window.localStorage.getItem(keys.lastVisit);
+    const note = root.querySelector("[data-last-visit-note]");
+    if (note && lastVisit) {
+      note.textContent = `Letzter Besuch deines Wirkungsraums: ${new Date(lastVisit).toLocaleString("de-DE")}.`;
+    }
+    writeJson(keys.lastVisit, new Date().toISOString());
+
+    filter?.addEventListener("input", drawSaved);
+    root.addEventListener("click", (event) => {
+      const remove = event.target instanceof HTMLElement ? event.target.closest("[data-remove-saved]") : null;
+      if (remove instanceof HTMLButtonElement) {
+        removeItem(remove.dataset.removeSaved || "");
+        renderDashboard();
+      }
+      const clear = event.target instanceof HTMLElement ? event.target.closest("[data-clear-wirkungsraum]") : null;
+      if (clear instanceof HTMLButtonElement && window.confirm("Alle lokal gespeicherten Wirkungsraum-Daten löschen?")) {
+        [keys.saved, keys.progress, keys.collections].forEach((key) => window.localStorage.removeItem(key));
+        renderDashboard();
+      }
+      const exportButton = event.target instanceof HTMLElement ? event.target.closest("[data-export-wirkungsraum]") : null;
+      if (exportButton instanceof HTMLButtonElement) {
+        const payload = JSON.stringify({ saved_items: savedItems(), reading_progress: readJson(keys.progress, {}), collections: collections() }, null, 2);
+        navigator.clipboard?.writeText(payload);
+        exportButton.textContent = "Export kopiert";
+        window.setTimeout(() => (exportButton.textContent = "Exportieren"), 1400);
+      }
+    });
+
+    root.querySelector("[data-collection-form]")?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      if (!(form instanceof HTMLFormElement)) return;
+      const input = form.elements.namedItem("collectionName");
+      if (!(input instanceof HTMLInputElement)) return;
+      const name = input.value.trim();
+      if (!name) return;
+      const all = collections();
+      all.push({ id: name.toLowerCase().replace(/\s+/g, "-"), name, itemIds: [], created_at: new Date().toISOString() });
+      writeJson(keys.collections, all);
+      input.value = "";
+      renderDashboard();
+    });
+  }
+
+  function initGlossaryLearningFilter() {
+    const path = window.location.pathname;
+    if (!/\/begriffe\/|\/glossar/.test(path)) return;
+    const main = document.querySelector("main");
+    if (!main || document.querySelector("[data-glossary-saved-filter]")) return;
+
+    const panel = document.createElement("section");
+    panel.className = "section section-soft glossary-saved-filter";
+    panel.dataset.glossarySavedFilter = "true";
+    panel.innerHTML = `
+      <div>
+        <div class="section-header compact">
+          <p class="hero-kicker">Lernmodus</p>
+          <h2>Gemerkte Begriffe üben</h2>
+          <p>Schalte auf „nur gemerkte Begriffe“, wenn du dein persönliches Glossar wiederholen willst.</p>
+          <button class="btn btn-secondary" type="button" data-show-saved-terms>Nur gemerkte Begriffe</button>
+        </div>
+      </div>
+    `;
+    const firstSection = main.querySelector(".section");
+    main.insertBefore(panel, firstSection || main.firstChild);
+
+    panel.querySelector("[data-show-saved-terms]")?.addEventListener("click", (event) => {
+      const button = event.currentTarget;
+      if (!(button instanceof HTMLButtonElement)) return;
+      const onlySaved = button.dataset.active !== "true";
+      button.dataset.active = String(onlySaved);
+      button.textContent = onlySaved ? "Alle Begriffe zeigen" : "Nur gemerkte Begriffe";
+      const savedUrls = new Set(savedItems().filter((item) => item.type === "Glossar").map((item) => item.url.replace(/\/$/, "")));
+      document.querySelectorAll("a[href*='/begriffe/']").forEach((link) => {
+        const href = link.getAttribute("href") || "";
+        const normalized = new URL(href, window.location.origin).pathname.replace(/\/$/, "");
+        const holder = link.closest("article, li, .card") || link;
+        if (holder instanceof HTMLElement) holder.hidden = onlySaved && !savedUrls.has(normalized);
+      });
+    });
+  }
+
+  function decorateProgressLinks() {
+    const progress = readJson(keys.progress, {});
+    document.querySelectorAll("a[href]").forEach((link) => {
+      if (!(link instanceof HTMLAnchorElement) || link.dataset.progressDecorated) return;
+      const path = new URL(link.href, window.location.origin).pathname.replace(/\/index\.html$/, "/");
+      const item = progress[path] || progress[`${path}/`];
+      if (!item) return;
+      const marker = document.createElement("span");
+      marker.className = "wirkungsraum-progress-dot";
+      marker.textContent = item.progress >= 85 ? "●" : item.progress > 10 ? "◐" : "○";
+      marker.title = `Lesefortschritt: ${item.progress || 0}%`;
+      link.prepend(marker, " ");
+      link.dataset.progressDecorated = "true";
+    });
+  }
+
+  function init() {
+    injectSaveButton();
+    trackReadingProgress();
+    renderDashboard();
+    initGlossaryLearningFilter();
+    decorateProgressLinks();
+    document.addEventListener("wirkungsraum:changed", () => {
+      renderDashboard();
+      decorateProgressLinks();
+    });
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
   ToolSpecialBoxLayer.init();
@@ -3414,4 +3784,5 @@ document.addEventListener("DOMContentLoaded", () => {
   ToolTermInlineLayer.init();
   MethodToolFilterLayer.init();
   CopyAnswerLayer.init();
+  WirkungsraumLayer.init();
 });

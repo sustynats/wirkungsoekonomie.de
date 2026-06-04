@@ -32,6 +32,128 @@
   --shadow-card: 0 16px 44px rgba(11, 16, 32, 0.08);
 }
 
+/* Mein Wirkungsraum */
+.wirkungsraum-hero {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(239, 248, 243, 0.78)),
+    var(--paper);
+}
+
+.wirkungsraum-save-row {
+  margin-top: 1.25rem;
+}
+
+.wirkungsraum-save-button[aria-pressed="true"] {
+  border-color: var(--green);
+  background: rgba(46, 132, 99, 0.1);
+  color: var(--green);
+}
+
+.wirkungsraum-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.wirkungsraum-stats .card {
+  min-height: 9rem;
+}
+
+.wirkungsraum-stats strong {
+  display: block;
+  margin: 0.4rem 0;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  line-height: 1;
+}
+
+.wirkungsraum-stats span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.wirkungsraum-toolbar,
+.wirkungsraum-collection-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.wirkungsraum-toolbar input,
+.wirkungsraum-collection-form input {
+  min-width: min(100%, 22rem);
+  flex: 1 1 18rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  background: #fff;
+  color: var(--navy);
+  font: inherit;
+}
+
+.wirkungsraum-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.wirkungsraum-list .card {
+  min-height: 0;
+}
+
+.wirkungsraum-item .card-title {
+  margin-bottom: 0.75rem;
+}
+
+.wirkungsraum-item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+}
+
+.wirkungsraum-progress {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0.55rem;
+  margin: 0.75rem 0 1rem;
+  border-radius: 999px;
+  background: rgba(46, 132, 99, 0.13);
+}
+
+.wirkungsraum-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green);
+}
+
+.wirkungsraum-progress-dot {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.glossary-saved-filter {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 860px) {
+  .wirkungsraum-stats,
+  .wirkungsraum-list {
+    grid-template-columns: 1fr;
+  }
+
+  .wirkungsraum-toolbar .btn,
+  .wirkungsraum-collection-form .btn {
+    width: 100%;
+  }
+}
+
 * {
   box-sizing: border-box;
   min-width: 0;
@@ -14794,7 +14916,7 @@ a.principle-card:hover,
 .radar-topic-card h3 {
   margin: 0;
   color: var(--navy);
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: clamp(1.45rem, 2.5vw, 2.1rem);
   line-height: 1.05;
 }
@@ -14951,7 +15073,7 @@ a.principle-card:hover,
 
 .radar-search-result strong {
   color: var(--navy);
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.12;
 }
@@ -16200,7 +16322,7 @@ a.principle-card:hover,
 .host-example-box h4 {
   margin: 0;
   color: var(--navy);
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: clamp(1.08rem, 1.8vw, 1.28rem);
   line-height: 1.18;
 }

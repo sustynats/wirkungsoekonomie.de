@@ -572,7 +572,7 @@ function shell({ title, description, canonical, base, main }) {
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Debattenkarten-Inventar gepflegt.</h2><p>Dieses Paket ist als Debattenkarte und Detailseite veröffentlicht. Quellen und Fachstand werden im Inventar nachgeführt.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/status/">Status öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260604-debate-use-order}"></script>
+    <script src="${base}assets/js/main.js?v=20260604-wirkungsraum"></script>
   </body>
 </html>`;
 }

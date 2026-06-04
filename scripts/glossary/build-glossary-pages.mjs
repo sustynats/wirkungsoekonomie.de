@@ -281,7 +281,7 @@ ${renderHeader(depth)}
 ${body}
     </main>
 ${renderFooter(depth)}
-    <script src="${depth}assets/js/main.js?v=20260604-debate-use-order"></script>
+    <script src="${depth}assets/js/main.js?v=20260604-wirkungsraum"></script>
   </body>
 </html>
 `.replace(/[ \t]+$/gm, "");

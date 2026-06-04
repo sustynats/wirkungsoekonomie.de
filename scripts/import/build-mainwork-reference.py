@@ -418,7 +418,7 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
       </nav>
     </header>
     {body}
-    <script src="{prefix}assets/js/main.js?v=20260604-debate-use-order"></script>
+    <script src="{prefix}assets/js/main.js?v=20260604-wirkungsraum"></script>
     <script src="{prefix}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>
   </body>
 </html>

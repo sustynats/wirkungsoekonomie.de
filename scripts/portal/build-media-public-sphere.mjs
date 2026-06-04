@@ -463,7 +463,7 @@ ${renderHeader(base)}
 ${body(base, canonical)}
     </main>
 ${renderFooter(base)}
-    <script src="${base}assets/js/main.js?v=20260604-debate-use-order}"></script>
+    <script src="${base}assets/js/main.js?v=20260604-wirkungsraum"></script>
   </body>
 </html>`);
 }

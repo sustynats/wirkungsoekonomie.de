@@ -770,7 +770,7 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
       <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Downloadbereich</h2></div>{download_table(entries, prefix)}</section>
     </main>
     <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Portal</h2><div><a href="{href(prefix, PORTAL_REL + '/')}">Wirkungsakademie</a><a href="{href(prefix, PORTAL_REL + '/downloads/')}">Downloads</a><a href="{href(prefix, PORTAL_REL + '/toolkarten/')}">Toolkarten</a></div></div><div class="footer-nav-group"><h2>Referenz</h2><div><a href="{href(prefix, 'verstehen/sdgs-sdgplus/')}">SDG-/SDG+-Referenzrahmen</a><a href="{href(prefix, 'glossar.html')}">Glossar</a><a href="{href(prefix, 'referenz/')}">Online-Buch</a></div></div></div></footer>
-    <script src="{href(prefix, 'assets/js/main.js?v=20260604-debate-use-order')}"></script>
+    <script src="{href(prefix, 'assets/js/main.js?v=20260604-wirkungsraum')}"></script>
   </body>
 </html>"""
     (path / "index.html").write_text(html_doc, encoding="utf-8")

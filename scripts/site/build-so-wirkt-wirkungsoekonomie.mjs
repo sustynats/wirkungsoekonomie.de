@@ -398,7 +398,7 @@ const body = `
     </section>
   </main>
   ${renderFooter()}
-  <script src="${BASE}assets/js/main.js?v=20260604-debate-use-order" defer></script>
+  <script src="${BASE}assets/js/main.js?v=20260604-wirkungsraum" defer></script>
   <script src="${BASE}assets/js/search.js" defer></script>
 `;
 
