@@ -28,6 +28,8 @@ const P0_SLUGS = [
   "ukraine-unterstuetzung-steuergeld",
 ];
 
+const SPECIALIZED_LIVE_SLUGS = new Set();
+
 function walk(target) {
   const full = path.join(ROOT, target);
   if (!fs.existsSync(full)) return [];
@@ -93,6 +95,7 @@ for (const slug of P0_SLUGS) {
     errors.push(`P0-Dossier fehlt in p0DossiersV2: ${slug}`);
     continue;
   }
+  if (SPECIALIZED_LIVE_SLUGS.has(slug)) continue;
   const live = path.join(ROOT, "wirkungsradar/live", slug, "index.html");
   const html = fs.existsSync(live) ? fs.readFileSync(live, "utf8") : "";
   const result = validateDossierV3(dossier, html);
@@ -107,6 +110,7 @@ for (const file of liveFiles) {
   const slug = path.basename(path.dirname(file));
   const isP0 = P0_SLUGS.includes(slug);
   const isP0Live = isP0 && relative.startsWith("wirkungsradar/live/");
+  const isSpecializedLive = isP0Live && SPECIALIZED_LIVE_SLUGS.has(slug);
   const html = fs.readFileSync(file, "utf8");
   const plain = stripHtml(html);
   const isV2Checked = html.includes("checked_v2_positive_examples") || html.includes("data-v3-facts-layer");
@@ -120,7 +124,7 @@ for (const file of liveFiles) {
   const hasV3 = html.includes("data-v3-facts-layer");
   const firstVisible = stripHtml(html.slice(0, 4500));
 
-  if (isP0Live && isV2Checked && !hasV3) {
+  if (isP0Live && !isSpecializedLive && isV2Checked && !hasV3) {
     const missing = [];
     if (!hasQuickAnswer) missing.push("Kurzantwort oben");
     if (!hasPositiveImage) missing.push("positives Erklaerbild");
@@ -143,7 +147,7 @@ for (const file of liveFiles) {
     }
   }
 
-  if (isP0Live && hasQuickAnswer && !hasPositiveImage) {
+  if (isP0Live && !isSpecializedLive && hasQuickAnswer && !hasPositiveImage) {
     errors.push(`${rel(file)} hat Schnellantwort ohne "Ein gutes Bild"`);
   }
 }
