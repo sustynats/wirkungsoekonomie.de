@@ -212,7 +212,7 @@ function variantFor(file) {
 function normalizeHtml(file) {
   let html = fs.readFileSync(file, "utf8");
   const before = html;
-  const formHref = relDir(file, FORM_ROUTE);
+  const formHref = ACADEMY_NARRATIVE_URL;
   const processHref = relDir(file, PROCESS_ROUTE);
   const methodHref = relDir(file, path.join(ROOT, "wirkungsradar/methode"));
   const compassHref = relDir(file, path.join(ROOT, "wirkungsradar"));
