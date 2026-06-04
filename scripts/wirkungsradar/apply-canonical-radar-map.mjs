@@ -236,7 +236,7 @@ function cardHrefToCanonical(href, currentDir) {
 }
 
 function rewriteLinksAndDropDuplicateCards(file, html) {
-  const currentDir = path.posix.dirname(urlFromFile(file).replace(/^\//, ""));
+  const currentDir = urlFromFile(file).replace(/^\//, "").replace(/\/$/, "");
   const seenCards = new Set();
   return html.replace(/<a\b([^>]*?)href="([^"]+)"([^>]*)>([\s\S]*?)<\/a>/gi, (full, before, href, after, body) => {
     const newHref = cardHrefToCanonical(href, currentDir);
