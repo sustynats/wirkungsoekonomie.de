@@ -37,6 +37,24 @@ function firstMatch(source, pattern) {
   return match ? stripTags(match[1]) : "";
 }
 
+function meaningfulTokens(value) {
+  const stop = new Set(["oder", "und", "der", "die", "das", "ist", "sind", "nur", "ein", "eine", "einer", "eines", "mit", "als", "für", "fuer", "von", "zur", "zum"]);
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9äöüß]+/gi, " ")
+    .split(/\s+/)
+    .filter((token) => token.length > 3 && !stop.has(token));
+}
+
+function hasMeaningfulOverlap(left, right) {
+  const leftTokens = new Set(meaningfulTokens(left));
+  const rightTokens = meaningfulTokens(right);
+  if (!leftTokens.size || !rightTokens.length) return true;
+  return rightTokens.some((token) => leftTokens.has(token));
+}
+
 function compactPsychologySection(section, attrs) {
   const id = firstMatch(attrs, /\bid\s*=\s*["']([^"']+)["']/i) || "warum-der-satz-zieht";
   const articles = [...section.matchAll(/<article\b[^>]*class="[^"]*\bcard\b[^"]*"[^>]*>([\s\S]*?)<\/article>/gi)]
@@ -421,11 +439,14 @@ function normalizeClaimSection(html, file) {
   if (!isDebatePage(file)) return html;
   const section = sectionAtId(html, "host-cockpit");
   if (!section) return html;
-  if (!/Kurzantwort - 10 Sekunden|Sag das jetzt|Frame nicht übernehmen|Die bessere Frage|Implizite Botschaft|Kurzurteil|Was fehlt im Frame/i.test(section.section)) return html;
   const h1 = firstMatch(html, /<h1\b[^>]*>([\s\S]*?)<\/h1>/i);
-  const claim = firstMatch(section.section, /<p class="v2-claim-line">[\s\S]*?<strong>([\s\S]*?)<\/strong>/i) ||
-    firstMatch(section.section, /<h3 class="card-title">([\s\S]*?)<\/h3>/i) ||
-    h1;
+  const existingClaim = firstMatch(section.section, /<p class="v2-claim-line">[\s\S]*?<strong>([\s\S]*?)<\/strong>/i);
+  const hasLegacyClaimContent = /Kurzantwort - 10 Sekunden|Sag das jetzt|Frame nicht übernehmen|Die bessere Frage|Implizite Botschaft|Kurzurteil|Was fehlt im Frame/i.test(section.section);
+  if (!hasLegacyClaimContent && (!existingClaim || hasMeaningfulOverlap(existingClaim, h1))) return html;
+  const fallbackCardTitle = firstMatch(section.section, /<h3 class="card-title">([\s\S]*?)<\/h3>/i);
+  const claim = existingClaim && hasMeaningfulOverlap(existingClaim, h1)
+    ? existingClaim
+    : (h1 || existingClaim || fallbackCardTitle);
   const replacement = `<section class="section v2-host-cockpit debate-claim-section" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Die Frage / Behauptung</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(claim)}</strong></p></div></div></section>`;
   return `${html.slice(0, section.start)}${replacement}${html.slice(section.end)}`;
 }
