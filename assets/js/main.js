@@ -999,37 +999,59 @@ initRadarSearch();
 
 function initWirkungsradarLiveFilter() {
   const root = document.querySelector("[data-radar-live-filter]");
-  const grid = document.querySelector("[data-live-grid]");
-  if (!root || !grid) return;
+  const main = document.querySelector("main");
+  if (!root || !main) return;
 
   const input = root.querySelector("[data-live-query]");
   const topicButtons = Array.from(root.querySelectorAll("[data-live-filter]"));
   const statusButtons = Array.from(root.querySelectorAll("[data-live-status]"));
   const count = root.querySelector("[data-live-count]");
-  const cards = Array.from(grid.querySelectorAll("[data-radar-card]"));
+  const cards = Array.from(main.querySelectorAll("[data-radar-card]"));
   const normalize = (value) =>
     String(value || "")
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/ß/g, "ss");
-  const state = { topic: "all", status: "checked_v2_positive_examples", query: "" };
+  const state = { topic: "all", status: "all", query: "" };
 
   const setPressed = (buttons, key, value) => {
     buttons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset[key] === value)));
   };
 
+  const topicMatches = (card, topic) => topic === "all" || normalize(card.dataset.topic).includes(normalize(topic));
+  const statusMatches = (card, status) => {
+    if (status === "all") return true;
+    if (status === "checked_v2_positive_examples") return card.dataset.status === "checked_v2_positive_examples";
+    if (status === "sources") return normalize(card.dataset.source).includes("quelle");
+    if (status === "drafts") return normalize(card.dataset.status).includes("draft");
+    return false;
+  };
+
+  topicButtons.forEach((button) => {
+    const topic = button.dataset.liveFilter || "all";
+    const hasCards = cards.some((card) => topicMatches(card, topic));
+    if (topic !== "all" && !hasCards) {
+      button.hidden = true;
+      button.disabled = true;
+    }
+  });
+
+  statusButtons.forEach((button) => {
+    const status = button.dataset.liveStatus || "all";
+    const hasCards = cards.some((card) => statusMatches(card, status));
+    if (status !== "all" && !hasCards) {
+      button.hidden = true;
+      button.disabled = true;
+    }
+  });
+
   const apply = () => {
     const tokens = normalize(state.query).split(/\s+/).filter(Boolean);
     let visible = 0;
     cards.forEach((card) => {
-      const topicOk = state.topic === "all" || normalize(card.dataset.topic).includes(normalize(state.topic));
-      const statusOk =
-        state.status === "checked_v2_positive_examples"
-          ? card.dataset.status === "checked_v2_positive_examples"
-          : state.status === "sources"
-            ? normalize(card.dataset.source).includes("quelle")
-            : false;
+      const topicOk = topicMatches(card, state.topic);
+      const statusOk = statusMatches(card, state.status);
       const searchOk = !tokens.length || tokens.every((token) => normalize(card.dataset.search).includes(token));
       const show = topicOk && statusOk && searchOk;
       card.hidden = !show;
@@ -1051,7 +1073,7 @@ function initWirkungsradarLiveFilter() {
   });
   statusButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      state.status = button.dataset.liveStatus || "checked_v2_positive_examples";
+      state.status = button.dataset.liveStatus || "all";
       setPressed(statusButtons, "liveStatus", state.status);
       apply();
     });

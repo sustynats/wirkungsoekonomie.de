@@ -735,16 +735,78 @@ function card(item, base = "") {
   </a>`;
 }
 
+function removeSection(html, id) {
+  const pattern = new RegExp(`\\n\\s*<section[^>]+id="${id}"[\\s\\S]*?\\n\\s*</section>`, "m");
+  return html.replace(pattern, "");
+}
+
 function injectBeforeMainEnd(file, id, section) {
   if (!fs.existsSync(file)) return;
   const html = fs.readFileSync(file, "utf8");
   if (html.includes(`id="${id}"`)) {
-    const pattern = new RegExp(`\\n\\s*<section[^>]+id="${id}"[\\s\\S]*?\\n\\s*</section>`, "m");
-    const cleaned = html.replace(pattern, "");
+    const cleaned = removeSection(html, id);
     writeFile(file, cleaned.replace(/\s*<\/main>/, `\n${section}\n    </main>`));
     return;
   }
   writeFile(file, html.replace(/\s*<\/main>/, `\n${section}\n    </main>`));
+}
+
+function extractPublishedRouteCard(slug) {
+  const file = `wirkungsradar/live/${slug}/index.html`;
+  if (!fs.existsSync(file)) return null;
+  const html = fs.readFileSync(file, "utf8");
+  const text = (pattern, fallback = "") => {
+    const match = html.match(pattern);
+    return match ? match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim() : fallback;
+  };
+  const title = text(/<h1[^>]*class="[^"]*hero-title[^"]*"[^>]*>([\s\S]*?)<\/h1>/, slug.replace(/-/g, " "));
+  const cluster = text(/<p[^>]*class="[^"]*hero-kicker[^"]*"[^>]*>([\s\S]*?)<\/p>/, "Debattenkarte")
+    .replace(/\s*·\s*(checked|geprüft|v2|Live|Detail|positives Erklärbild).*$/i, "")
+    .replace(/^Wirkungsradar\s*/i, "")
+    .trim() || "Debattenkarte";
+  const subtitle = text(/<p[^>]*class="[^"]*hero-subtitle[^"]*"[^>]*>([\s\S]*?)<\/p>/, "Veröffentlichte Debattenkarte.");
+  return {
+    slug,
+    title: /\?$/.test(title) ? title : `${title}?`,
+    cluster,
+    claim: title,
+    judgement: subtitle,
+    betterQuestion: "Welche Aussage steckt dahinter - und welche Antwort führt zur Wirkung statt in den Frame?",
+  };
+}
+
+function updatePublishedLiveRouteCards(file, base = "") {
+  if (!fs.existsSync(file)) return;
+  let html = removeSection(fs.readFileSync(file, "utf8"), "weitere-veroeffentlichte-live-routen");
+  const linked = new Set();
+  for (const match of html.matchAll(/href="(?:\.\.\/live\/|)([^"\/]+)\/"/g)) {
+    linked.add(match[1]);
+  }
+  const routeSlugs = fs
+    .readdirSync("wirkungsradar/live", { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && fs.existsSync(`wirkungsradar/live/${entry.name}/index.html`))
+    .map((entry) => entry.name)
+    .filter((slug) => !linked.has(slug))
+    .sort();
+  const cards = routeSlugs.map(extractPublishedRouteCard).filter(Boolean);
+  writeFile(file, html);
+  if (!cards.length) return;
+  injectBeforeMainEnd(
+    file,
+    "weitere-veroeffentlichte-live-routen",
+    `<section class="section section-soft" id="weitere-veroeffentlichte-live-routen"><div><div class="section-header"><p class="hero-kicker">Weitere veröffentlichte Karten</p><h2>${cards.length} zusätzliche Live-Routen in der Antwortsuche.</h2><p>Diese veröffentlichten Karten stammen aus älteren oder spezialisierten Generatorpfaden und werden automatisch in die Suche aufgenommen.</p></div><div class="card-grid three">${cards.map((item) => card(item, base)).join("")}</div></div></section>`,
+  );
+}
+
+function updateLiveCount(file) {
+  if (!fs.existsSync(file)) return;
+  const html = fs.readFileSync(file, "utf8");
+  const count = (html.match(/data-radar-card/g) || []).length;
+  const updated = html.replace(
+    /<p class="radar-search-status" data-live-count>[\s\S]*?<\/p>/,
+    `<p class="radar-search-status" data-live-count>${count} Karten gefunden</p>`,
+  );
+  writeFile(file, updated);
 }
 
 function updateStatusPage(packages) {
@@ -791,6 +853,16 @@ injectBeforeMainEnd(
   "offene-radar-pakete-geschlossen",
   `<section class="section section-soft" id="offene-radar-pakete-geschlossen"><div><div class="section-header"><p class="hero-kicker">Backlog geschlossen</p><h2>${openPackages.length + aliasPackages.length + narrativeCasePackages.length} zusätzliche Debattenkarten.</h2><p>Diese Karten waren bisher nur als Seed, Backlog, Alias oder Themenhinweis sichtbar und sind jetzt als Debattenkarten veröffentlicht.</p></div><div class="card-grid three">${[...openPackages, ...aliasPackages, ...narrativeCasePackages].map((item) => card(item)).join("")}</div></div></section>`,
 );
+updatePublishedLiveRouteCards("wirkungsradar/live/index.html");
+updateLiveCount("wirkungsradar/live/index.html");
+
+injectBeforeMainEnd(
+  "wirkungsradar/debattenkarten/index.html",
+  "offene-radar-pakete-geschlossen",
+  `<section class="section section-soft" id="offene-radar-pakete-geschlossen"><div><div class="section-header"><p class="hero-kicker">Backlog geschlossen</p><h2>${openPackages.length + aliasPackages.length + narrativeCasePackages.length} zusätzliche Debattenkarten.</h2><p>Diese Karten waren bisher nur als Seed, Backlog, Alias oder Themenhinweis sichtbar und sind jetzt als Debattenkarten veröffentlicht.</p></div><div class="card-grid three">${[...openPackages, ...aliasPackages, ...narrativeCasePackages].map((item) => card(item, "../live/")).join("")}</div></div></section>`,
+);
+updatePublishedLiveRouteCards("wirkungsradar/debattenkarten/index.html", "../live/");
+updateLiveCount("wirkungsradar/debattenkarten/index.html");
 
 injectBeforeMainEnd(
   "wirkungsradar/detail/index.html",
