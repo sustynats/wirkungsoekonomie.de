@@ -651,12 +651,25 @@ function insertAfterHero(html, block) {
 
 function stripGeneratedV2(html) {
   return html.replace(
-    /\n\s*<section class="section(?: section-soft)? v2-(?:host-cockpit|impact-fan|answer-tabs|psychology-lite|consequence-stack|trust-block)"[\s\S]*?<\/section>\s*/g,
+    /\n\s*<section class="section(?: section-soft)? (?:v2|v3)-(?:host-cockpit|impact-fan|answer-tabs|psychology-lite|consequence-stack|trust-block|layer[\s\S]*?)"[\s\S]*?<\/section>\s*/g,
     "\n"
   ).replace(
-    /\n?\s*<section\b(?=[^>]*(?:data-v2-host-cockpit|data-v2-impact-fan|id="antwortformate-v2"|id="warum-der-satz-zieht"|id="folgenkarte-v2"|id="was-passiert-danach"|id="warum-vertrauen"|id="warum-belastbar"|id="verstehen"|id="was-macht-es-besser"|id="linkhub"))[\s\S]*?<\/section>\s*/g,
+    /\n?\s*<section\b(?=[^>]*(?:data-v2-host-cockpit|data-v2-impact-fan|data-v3-facts-layer|data-v3-consequence-check|data-v3-impact-matrix|data-v3-narrative-mechanism|data-v3-psychology-check|data-v3-frame-shift|data-v3-solution-path|id="antwortformate-v2"|id="warum-der-satz-zieht"|id="folgenkarte-v2"|id="was-passiert-danach"|id="warum-vertrauen"|id="warum-belastbar"|id="verstehen"|id="was-macht-es-besser"|id="linkhub"|id="faktenlage"|id="folgencheck"|id="systemische-wirkungen"|id="narrativ-psychologie"|id="reaktion"|id="loesungspfad"|id="warum-der-radar-so-prueft"))[\s\S]*?<\/section>\s*/g,
+    "\n"
+  ).replace(
+    /\n?\s*<nav class="dossier-tab-nav v3-radar-nav"[\s\S]*?<\/nav>\s*/g,
     "\n"
   );
+}
+
+function stripLegacyP0Body(html) {
+  const heroStart = html.indexOf("<section class=\"hero");
+  if (heroStart < 0) return html;
+  const heroEnd = html.indexOf("</section>", heroStart);
+  const mainEnd = html.indexOf("</main>", heroEnd);
+  if (heroEnd < 0 || mainEnd < 0) return html;
+  const keepUntil = heroEnd + "</section>".length;
+  return `${html.slice(0, keepUntil)}\n${html.slice(mainEnd)}`;
 }
 
 function stripP0HeroProblemCopy(html) {
@@ -675,8 +688,8 @@ function transformLivePage(file) {
   const slug = path.basename(path.dirname(file));
   if (slug === "live") return false;
   const html = fs.readFileSync(file, "utf8");
-  const baseHtml = p0DossiersBySlug.has(slug) ? stripP0HeroProblemCopy(stripGeneratedV2(html)) : stripGeneratedV2(html);
   const p0Dossier = p0DossiersBySlug.get(slug);
+  const baseHtml = p0Dossier ? stripLegacyP0Body(stripP0HeroProblemCopy(stripGeneratedV2(html))) : stripGeneratedV2(html);
   const data = p0Dossier ? null : buildData(slug, baseHtml);
   const v2 = p0Dossier ? renderDossierV2Sections(p0Dossier) : [
     renderCockpit(slug, data),

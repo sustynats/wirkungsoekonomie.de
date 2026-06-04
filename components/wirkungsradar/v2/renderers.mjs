@@ -62,6 +62,69 @@ export function ConsequenceStack({ consequenceStack }) {
   return `<section class="section section-soft v2-consequence-stack" id="was-passiert-danach"><div><div class="section-header"><p class="hero-kicker">Was passiert, wenn man danach handelt?</p><h2>Folgen in drei Stufen.</h2></div><div class="card-grid three">${items.map((item) => `<article class="card"><p class="v2-badge">${esc(item.label)}</p><p class="card-text">${esc(item.text)}</p></article>`).join("")}</div></div></section>`;
 }
 
+export function V3PageNav() {
+  const items = [
+    ["Klartext", "#host-cockpit"],
+    ["Fakten", "#faktenlage"],
+    ["Folgen", "#folgencheck"],
+    ["System", "#systemische-wirkungen"],
+    ["Frame", "#narrativ-psychologie"],
+    ["Antwort", "#reaktion"],
+    ["Lösung", "#loesungspfad"],
+    ["Quellen", "#warum-belastbar"],
+    ["Deep Dive", "#warum-der-radar-so-prueft"],
+  ];
+  return `<nav class="dossier-tab-nav v3-radar-nav" aria-label="Wirkungsradar Seitenbereiche" data-search-exclude>${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
+}
+
+export function FactsLayer({ factsLayer }) {
+  if (!factsLayer?.coreFacts?.length) return "";
+  const facts = factsLayer.coreFacts.map((fact) => `<article class="card v3-fact-card"><p class="v2-badge">Fakt · ${esc(fact.confidence || "mittel")}</p><h3 class="card-title">${esc(fact.title)}</h3><p class="card-text">${esc(fact.statement)}</p><p class="card-text"><strong>Beweist:</strong> ${esc(fact.whatItProves)}</p><p class="card-text"><strong>Beweist nicht:</strong> ${esc(fact.whatItDoesNotProve)}</p>${fact.sourceRefs?.length ? `<p class="card-text"><strong>Quellen:</strong> ${esc(fact.sourceRefs.join(", "))}</p>` : ""}</article>`).join("");
+  const boundaries = factsLayer.accountingBoundaries?.length
+    ? `<div class="card-grid three">${factsLayer.accountingBoundaries.map((item) => `<article class="card"><p class="card-kicker">Bilanzgrenze</p><h3 class="card-title">${esc(item.label)}</h3><p class="card-text">${esc(item.explanation)}</p><p class="card-text"><strong>Warum wichtig:</strong> ${esc(item.whyItMatters)}</p></article>`).join("")}</div>`
+    : "";
+  const misuse = factsLayer.commonMisuse?.length
+    ? `<div class="card-grid three">${factsLayer.commonMisuse.map((item) => `<article class="card"><p class="card-kicker">Faktenmissbrauch vermeiden</p><h3 class="card-title">${esc(item.misuse)}</h3><p class="card-text">${esc(item.correction)}</p></article>`).join("")}</div>`
+    : "";
+  return `<section class="section v3-layer v3-layer-facts" id="faktenlage" data-v3-facts-layer><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Was ist konkret prüfbar?</h2><p>Jeder Fakt sagt hier ausdrücklich, was er belegt - und was daraus nicht folgt.</p></div><div class="card-grid three">${facts}</div>${boundaries}${misuse}</div></section>`;
+}
+
+export function ConsequenceCheck({ consequenceCheck }) {
+  if (!consequenceCheck?.ifNarrativeWins?.length || !consequenceCheck?.ifCorrectlyHandled?.length) return "";
+  const rows = (items) => items.map((item) => `<article class="card"><p class="v2-badge">${esc(item.level)}</p><p class="card-text">${esc(item.text)}</p>${item.affectedSystems?.length ? chips(item.affectedSystems) : ""}</article>`).join("");
+  return `<section class="section section-soft v3-layer v3-layer-consequences" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was passiert, wenn Menschen danach handeln?</h2><p>Der Wirkungsradar prüft nicht nur, ob ein Satz stimmt. Er prüft, welche Entscheidungen wahrscheinlicher werden.</p></div><div class="card-grid two"><article class="card v3-check-column"><p class="card-kicker">Wenn das Narrativ gewinnt</p><div class="card-grid">${rows(consequenceCheck.ifNarrativeWins)}</div></article><article class="card v3-check-column"><p class="card-kicker">Wenn wir richtig reagieren</p><div class="card-grid">${rows(consequenceCheck.ifCorrectlyHandled)}</div></article></div><div class="card-grid three"><article class="card"><p class="card-kicker">Kosten des Nicht-Handelns</p><p>${esc(consequenceCheck.nonActionCost)}</p></article>${consequenceCheck.lockInRisk ? `<article class="card"><p class="card-kicker">Lock-in-Risiko</p><p>${esc(consequenceCheck.lockInRisk)}</p></article>` : ""}${consequenceCheck.feedbackLoop ? `<article class="card"><p class="card-kicker">Rückkopplung</p><p>${esc(consequenceCheck.feedbackLoop)}</p></article>` : ""}</div></div></section>`;
+}
+
+export function ImpactMatrix({ impactMatrix }) {
+  if (!impactMatrix?.length) return "";
+  return `<section class="section v3-layer v3-layer-system" id="systemische-wirkungen" data-v3-impact-matrix><div><div class="section-header"><p class="hero-kicker">Systemische Wirkungen</p><h2>Nicht nur ein Faktor. Die ganze Wirkungskette.</h2></div><div class="card-grid three">${impactMatrix.map((item) => `<article class="card v3-impact-matrix-card"><p class="v2-badge">System</p><h3 class="card-title">${esc(item.dimension)}</h3><p class="card-text"><strong>Direkt:</strong> ${esc(item.directEffect)}</p><p class="card-text"><strong>Indirekt:</strong> ${esc(item.indirectEffect)}</p><p class="card-text"><strong>Langfristig:</strong> ${esc(item.longTermEffect)}</p>${item.hiddenCost ? `<p class="card-text"><strong>Verdeckte Kosten:</strong> ${esc(item.hiddenCost)}</p>` : ""}${item.solutionLever ? `<p class="card-text"><strong>Hebel:</strong> ${esc(item.solutionLever)}</p>` : ""}</article>`).join("")}</div></div></section>`;
+}
+
+export function NarrativeMechanism({ narrativeMechanism }) {
+  if (!narrativeMechanism?.story) return "";
+  return `<section class="section section-soft v3-layer v3-layer-frame" id="narrativ-psychologie" data-v3-narrative-mechanism><div><div class="section-header"><p class="hero-kicker">Welche Geschichte wird erzählt?</p><h2>Narrativanalyse.</h2></div><div class="card-grid two"><article class="card"><p class="card-kicker">Geschichte</p><h3 class="card-title">${esc(narrativeMechanism.story)}</h3><p class="card-text"><strong>Verdeckte Annahme:</strong> ${esc(narrativeMechanism.hiddenAssumption)}</p>${narrativeMechanism.targetEmotion?.length ? `<p class="card-text"><strong>Aktiviert:</strong> ${esc(narrativeMechanism.targetEmotion.join(", "))}</p>` : ""}${narrativeMechanism.whoBenefitsFromFrame?.length ? `<p class="card-text"><strong>Nützt dem Frame von:</strong> ${esc(narrativeMechanism.whoBenefitsFromFrame.join(", "))}</p>` : ""}</article><article class="card"><p class="card-kicker">Was verschwindet?</p><ul class="clean-list">${(narrativeMechanism.whatGetsHidden || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div>${narrativeMechanism.chainNarrative?.length ? `<article class="card"><p class="card-kicker">Narrativkette</p><ol class="clean-list">${narrativeMechanism.chainNarrative.map((item) => `<li>${esc(item)}</li>`).join("")}</ol></article>` : ""}${narrativeMechanism.narrativeFamily?.length ? chips(narrativeMechanism.narrativeFamily) : ""}</div></section>`;
+}
+
+export function PsychologicalEffectCheck({ psychologicalEffectCheck }) {
+  if (!psychologicalEffectCheck?.length) return "";
+  return `<section class="section v3-layer v3-layer-psychology" id="warum-der-satz-zieht" data-v3-psychology-check><div><div class="section-header"><p class="hero-kicker">Warum der Satz zieht</p><h2>Psychologischer Wirkungscheck.</h2><p>Oben stehen maximal drei Mechanismen, die in der Debatte wirklich tragen.</p></div><div class="card-grid three">${psychologicalEffectCheck.slice(0, 3).map((item) => `<article class="card"><p class="v2-badge">${esc(item.technicalName)}</p><h3 class="card-title">${esc(item.simpleName)}</h3><p class="card-text"><strong>So fühlt es sich an:</strong> ${esc(item.howItFeels)}</p><p class="card-text"><strong>So wirkt es:</strong> ${esc(item.howItWorks)}</p><p class="card-text"><strong>Debatteneffekt:</strong> ${esc(item.debateEffect)}</p><p class="card-text"><strong>Rauskommen:</strong> ${esc(item.howToBypass)}</p><p class="card-text"><strong>Host-Move:</strong> ${esc(item.hostMove)}</p></article>`).join("")}</div></div></section>`;
+}
+
+export function FrameShiftPlaybook({ frameShiftPlaybook }) {
+  if (!frameShiftPlaybook?.oldFrame) return "";
+  const formats = frameShiftPlaybook.answerFormats || {};
+  return `<section class="section v3-layer v3-layer-answer" id="reaktion" data-v3-frame-shift><div><div class="section-header"><p class="hero-kicker">So verschiebst du den Frame</p><h2>Antworten, ohne die falsche Rechnung zu wiederholen.</h2></div><div class="card-grid two"><article class="card"><p class="card-kicker">Alter Frame</p><h3 class="card-title">${esc(frameShiftPlaybook.oldFrame)}</h3><p class="card-text"><strong>Warum er andockt:</strong> ${esc(frameShiftPlaybook.whyItHooks)}</p><p class="card-text"><strong>Gefahr beim Wiederholen:</strong> ${esc(frameShiftPlaybook.dangerIfRepeated)}</p><p class="card-text"><strong>Brückensatz:</strong> ${esc(frameShiftPlaybook.bridgeSentence)}</p><p class="card-text"><strong>Bessere Frage:</strong> ${esc(frameShiftPlaybook.betterQuestion)}</p></article><article class="card"><p class="card-kicker">Nicht so / besser so</p><h3 class="card-title">Kurz kontrollieren.</h3><p class="card-text"><strong>Nicht sagen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.doNotSay || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul><p class="card-text"><strong>Stattdessen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.sayInstead || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div><div class="radar-answer-accordion host-answer-tabs">${[["Kommentar", formats.comment], ["Live", formats.live30s], ["Panel", formats.panel2min], ["Ruhig", formats.calmConversation]].filter(([, text]) => text).map(([label, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">v3 Antwortformat</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+}
+
+export function SolutionPath({ solutionPath }) {
+  if (!solutionPath?.levers?.length) return "";
+  return `<section class="section v3-layer v3-layer-solution" id="loesungspfad" data-v3-solution-path><div><div class="section-header"><p class="hero-kicker">Was macht den Zustand besser?</p><h2>${esc(solutionPath.plainLanguageSummary)}</h2></div><div class="card-grid three">${solutionPath.levers.map((item) => `<article class="card"><p class="v2-badge">Hebel</p><h3 class="card-title">${esc(item.title)}</h3><p class="card-text"><strong>Was tun:</strong> ${esc(item.whatToDo)}</p><p class="card-text"><strong>Warum wirkt es:</strong> ${esc(item.whyItWorks)}</p><p class="card-text"><strong>Systemwirkung:</strong> ${esc(item.systemEffect)}</p>${item.indicators?.length ? `<p class="card-text"><strong>Indikatoren:</strong> ${esc(item.indicators.join(", "))}</p>` : ""}</article>`).join("")}</div>${solutionPath.woekConnection ? `<article class="card"><p class="card-kicker">WÖk-Bezug</p><h3 class="card-title">${esc(solutionPath.woekConnection.principle)}</h3><p class="card-text">${esc(solutionPath.woekConnection.explanation)}</p>${solutionPath.woekConnection.internalLinks?.length ? `<p>${solutionPath.woekConnection.internalLinks.map((href) => `<a class="text-link" href="${esc(href)}">${esc(href.replace(/\/$/, "").split("/").pop()?.replace(/-/g, " ") || href)}</a>`).join(" · ")}</p>` : ""}</article>` : ""}</div></section>`;
+}
+
+export function MethodologyDeepDive({ dossier }) {
+  return `<section class="section section-soft v3-layer v3-layer-method" id="warum-der-radar-so-prueft"><div><div class="section-header"><p class="hero-kicker">Warum der Wirkungsradar so prüft</p><h2>Faktencheck ist Grundlage. Folgencheck ist Zweck.</h2></div><div class="radar-answer-accordion host-answer-tabs"><details class="radar-answer-item"><summary><span class="radar-answer-time">Wirkung</span><span class="radar-answer-label">Zustandsveränderung</span></summary><p>Wirkung ist nicht Absicht, Reichweite oder Image. Wirkung ist die tatsächliche Veränderung von Zuständen und wird erst am Referenzrahmen bewertet.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Fakten</span><span class="radar-answer-label">Warum Faktencheck allein nicht reicht</span></summary><p>Eine Aussage kann einen wahren Teil enthalten und trotzdem schlechte Entscheidungen wahrscheinlicher machen. Deshalb trennt der Radar Faktenlage, Bilanzgrenze, Frame und Folgen.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Folgen</span><span class="radar-answer-label">Erste, zweite und dritte Ordnung</span></summary><p>Geprüft wird, was sofort passiert, was danach plausibler wird und welche Systempfade sich auf Dauer verfestigen.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Quellen</span><span class="radar-answer-label">Grenzen statt Autoritätsersatz</span></summary><p>Quellen zeigen, was belegt ist. Sie zeigen auch, was offen bleibt. Genau deshalb nennt die Faktenlage, was ein Fakt beweist und was nicht.</p></details></div><p><a class="btn btn-secondary" href="../../detail/${esc(dossier.slug)}/">Fachlich vertiefen</a></p></div></section>`;
+}
+
 export function UnderstandSection({ explain }) {
   const trueItems = explain.whatIsTrue || [];
   const missingItems = explain.whatIsMissing || [];
@@ -100,7 +163,7 @@ export function LinkHub({ internalLinks = {} }) {
     ["Glossar", internalLinks.glossary || []],
     ["Narrative", internalLinks.narratives || []],
     ["Ähnliche Live-Karten", internalLinks.relatedDossiers || []],
-    ["WÖk-Lösungsbausteine", internalLinks.woek || []],
+    ["Lösungsbausteine", internalLinks.woek || []],
   ];
   return `<section class="section" id="linkhub"><div><div class="section-header"><p class="hero-kicker">Weiter prüfen</p><h2>Links in die Tiefe.</h2></div><div class="card-grid four">${groups.map(([label, links]) => `<article class="card"><p class="card-kicker">${esc(label)}</p>${links.length ? links.map((href) => `<p><a class="text-link" href="${esc(href)}">${esc(linkLabel(href))}</a></p>`).join("") : `<p class="card-text">Noch nicht verknüpft.</p>`}</article>`).join("")}</div></div></section>`;
 }
@@ -110,6 +173,22 @@ export function HostCockpitV2({ dossier }) {
 }
 
 export function renderDossierV2Sections(dossier) {
+  if (dossier.v3) {
+    return [
+      HostCockpitV2({ dossier }),
+      V3PageNav(),
+      FactsLayer({ factsLayer: dossier.v3.factsLayer }),
+      ConsequenceCheck({ consequenceCheck: dossier.v3.consequenceCheck }),
+      ImpactMatrix({ impactMatrix: dossier.v3.impactMatrix }),
+      NarrativeMechanism({ narrativeMechanism: dossier.v3.narrativeMechanism }),
+      PsychologicalEffectCheck({ psychologicalEffectCheck: dossier.v3.psychologicalEffectCheck }),
+      FrameShiftPlaybook({ frameShiftPlaybook: dossier.v3.frameShiftPlaybook }),
+      SolutionPath({ solutionPath: dossier.v3.solutionPath }),
+      TrustBlock({ trustBlock: dossier.trustBlock, sources: dossier.sources }),
+      LinkHub({ internalLinks: dossier.internalLinks }),
+      MethodologyDeepDive({ dossier }),
+    ].join("\n");
+  }
   return [
     HostCockpitV2({ dossier }),
     ResponseFormats({ dossier }),

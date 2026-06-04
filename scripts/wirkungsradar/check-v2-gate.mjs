@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import { p0DossiersV2 } from "../../lib/wirkungsradar/p0-dossiers-v2.mjs";
+import { validateDossierV3 } from "../../lib/wirkungsradar/validateDossierV3.mjs";
 
 const ROOT = process.cwd();
 const LEGACY_CANDIDATE_STATUS = "checked" + "_candidate";
@@ -78,12 +80,27 @@ for (const slug of P0_SLUGS) {
   }
 }
 
+const p0BySlug = new Map(p0DossiersV2.map((dossier) => [dossier.slug, dossier]));
+for (const slug of P0_SLUGS) {
+  const dossier = p0BySlug.get(slug);
+  if (!dossier) {
+    errors.push(`P0-Dossier fehlt in p0DossiersV2: ${slug}`);
+    continue;
+  }
+  const live = path.join(ROOT, "wirkungsradar/live", slug, "index.html");
+  const html = fs.existsSync(live) ? fs.readFileSync(live, "utf8") : "";
+  const result = validateDossierV3(dossier, html);
+  if (result.status !== "checked_v3_facts_consequences_frame_solution") {
+    errors.push(`${slug} V3 unvollständig: ${result.errors.join("; ")}`);
+  }
+}
+
 for (const file of liveFiles) {
   const relative = rel(file);
   if (/wirkungsradar\/(?:live|detail)\/index\.html$/.test(relative)) continue;
   const html = fs.readFileSync(file, "utf8");
   const plain = stripHtml(html);
-  const isV2Checked = html.includes("checked_v2_positive_examples");
+  const isV2Checked = html.includes("checked_v2_positive_examples") || html.includes("data-v3-facts-layer");
   const hasHostCockpit = html.includes("data-v2-host-cockpit");
   const hasImpactFan = html.includes("data-v2-impact-fan") || html.includes("Was wird ausgeblendet?");
   const hasFrameShift = html.includes("Frame nicht übernehmen") && html.includes("Alter Frame:") && /Besser(?: so)?:/.test(plain);
@@ -91,9 +108,10 @@ for (const file of liveFiles) {
   const hasBetterQuestion = html.includes("Die bessere Frage") || html.includes("Rechnung öffnen");
   const hasConsequenceStack = /Sofort[\s\S]*Danach[\s\S]*Auf Dauer/.test(plain) || html.includes("v2-consequence-stack");
   const hasTrustBlock = html.includes("Warum du dieser Einordnung vertrauen kannst") || html.includes("v2-trust-block");
+  const hasV3 = html.includes("data-v3-facts-layer");
   const firstVisible = stripHtml(html.slice(0, 4500));
 
-  if (isV2Checked) {
+  if (isV2Checked && !hasV3) {
     const missing = [];
     if (!hasHostCockpit) missing.push("Host-Cockpit v2");
     if (!hasPositiveImage) missing.push("positives Erklaerbild");

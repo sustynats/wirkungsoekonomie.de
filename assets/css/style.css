@@ -15568,6 +15568,84 @@ a.principle-card:hover,
   font-size: 0.92rem;
 }
 
+.v3-radar-nav {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.v3-layer {
+  scroll-margin-top: 6rem;
+}
+
+.v3-layer > div {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.4rem);
+}
+
+.v3-layer .section-header {
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(11, 16, 32, 0.1);
+}
+
+.v3-layer-facts .hero-kicker,
+.v3-layer-facts .v2-badge {
+  color: var(--green-dark);
+}
+
+.v3-layer-consequences {
+  border-top: 1px solid rgba(47, 125, 92, 0.14);
+  border-bottom: 1px solid rgba(47, 125, 92, 0.14);
+}
+
+.v3-layer-consequences .hero-kicker,
+.v3-layer-consequences .v2-badge {
+  color: #8a4f00;
+}
+
+.v3-layer-system .hero-kicker,
+.v3-layer-system .v2-badge {
+  color: #245f78;
+}
+
+.v3-layer-frame .hero-kicker,
+.v3-layer-psychology .hero-kicker,
+.v3-layer-frame .v2-badge,
+.v3-layer-psychology .v2-badge {
+  color: #6b4a1f;
+}
+
+.v3-layer-answer .hero-kicker,
+.v3-layer-answer .v2-badge,
+.v3-layer-solution .hero-kicker,
+.v3-layer-solution .v2-badge {
+  color: var(--green-dark);
+}
+
+.v3-fact-card,
+.v3-impact-matrix-card {
+  border-left: 4px solid rgba(47, 125, 92, 0.55);
+}
+
+.v3-check-column {
+  background: rgba(255, 252, 245, 0.88);
+}
+
+.v3-check-column > .card-grid {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 980px) {
+  .v3-radar-nav {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+  }
+
+  .v3-radar-nav a {
+    min-width: max-content;
+    scroll-snap-align: start;
+  }
+}
+
 .v2-home-search {
   width: min(100% - (2 * var(--space-gutter)), var(--container));
   margin: clamp(1rem, 2vw, 1.5rem) auto 0;

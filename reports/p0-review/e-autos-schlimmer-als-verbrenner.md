@@ -22,8 +22,8 @@ Entscheidung: FREIGEBEN
 
 - Erwartet: Der Supermarkt-Lader
 - Verwendet: Der Supermarkt-Lader
-- Host-Satz: Gute E-Mobilität lädt dort, wo Alltag sowieso passiert - und mit sauberem Strom wird der Lebenszyklusvergleich deutlich besser.
-- Was wird besser: Laden, Luft, Ölabhängigkeit, Alltag, Lebenszyklus
+- Host-Satz: Gute E-Mobilität lädt dort, wo Alltag sowieso passiert.
+- Was wird besser: Laden, Luft, Ölabhängigkeit, Alltag
 
 ## 4. Menschenschutz
 
