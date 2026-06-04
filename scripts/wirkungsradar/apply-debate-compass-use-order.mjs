@@ -49,6 +49,7 @@ function compactPsychologySection(section, attrs) {
 
 function normalizeText(html) {
   return html
+    .replace(/Host-Cockpit(?: · [^<]*)?/g, "Was wurde gesagt?")
     .replace(/Psychologischer Wirkungscheck/g, "Warum zieht dieses Narrativ?")
     .replace(/Welche Effekte hier mitlaufen\.?/g, "Warum das Narrativ verfängt.")
     .replace(/Warum der Satz zieht/g, "Warum zieht dieses Narrativ?")
@@ -126,6 +127,76 @@ function insertAfterSection(html, anchorId, section) {
   return `${html.slice(0, insertAt)}\n${section}${html.slice(insertAt)}`;
 }
 
+function sectionAtId(html, id) {
+  const marker = `id="${id}"`;
+  const start = html.indexOf(marker);
+  if (start < 0) return null;
+  const openStart = html.lastIndexOf("<section", start);
+  if (openStart < 0) return null;
+  const close = html.indexOf("</section>", start);
+  if (close < 0) return null;
+  const end = close + "</section>".length;
+  return {
+    id,
+    start: openStart,
+    end,
+    section: html.slice(openStart, end),
+  };
+}
+
+function firstContentSectionEnd(html) {
+  const mainStart = html.indexOf("<main");
+  const searchStart = mainStart >= 0 ? mainStart : 0;
+  const openStart = html.indexOf("<section", searchStart);
+  if (openStart < 0) return -1;
+  const close = html.indexOf("</section>", openStart);
+  if (close < 0) return -1;
+  return close + "</section>".length;
+}
+
+function normalizeImmediateAnswerSection(section, oldId) {
+  let next = section;
+  next = next.replace(/<section\b[^>]*>/i, '<section class="section section-soft debate-immediate-answer" id="host-antworten" data-debate-immediate-answer>');
+  if (oldId && oldId !== "host-antworten") {
+    next = next.replace(/(<div\b[^>]*>)/i, `$1<span id="${oldId}" class="sr-only">Sofortantwort</span>`);
+  }
+  next = next.replace(
+    /<div class="section-header">[\s\S]*?<\/div>/i,
+    '<div class="section-header"><p class="hero-kicker">💬 Sofortantwort</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div>',
+  );
+  return next
+    .replace(/<span class="radar-answer-time">(?:Kurzantwort|Kommentar)<\/span>/, '<span class="radar-answer-time">10 Sekunden</span>')
+    .replace(/<span class="radar-answer-time">(?:Längere Antwort|Live)<\/span>/, '<span class="radar-answer-time">30 Sekunden</span>')
+    .replace(/<span class="radar-answer-time">(?:Vertiefung|Panel)<\/span>/, '<span class="radar-answer-time">2 Minuten</span>')
+    .replace(/Debatten-Kompass: So reagierst du/g, "💬 Sofortantwort")
+    .replace(/Host-Antworten/g, "Sofortantwort")
+    .replace(/Live antworten\.?/g, "Sofortantwort")
+    .replace(/Antwortformate/g, "Sofortantwort")
+    .replace(/So antwortest du/g, "💬 Sofortantwort");
+}
+
+function normalizeAnswerNav(html) {
+  return html
+    .replace(/href="#(?:host-antworten|live-antworten|antwortformate|antwort|reaktion)">(?:Reaktion|Live antworten|Antwortformate|Antwort|Host-Antworten|Sofortantwort)<\/a>/g, 'href="#host-antworten">Sofortantwort</a>')
+    .replace(/href="#host-antworten">Reaktion<\/a>/g, 'href="#host-antworten">Sofortantwort</a>');
+}
+
+function enforceImmediateAnswerPosition(html, file) {
+  const relative = path.relative(root, file).split(path.sep).join("/");
+  if (!/^wirkungsradar\/(?:live|detail)\//.test(relative)) return html;
+  if (/^wirkungsradar\/(?:live|detail)\/index\.html$/.test(relative)) return html;
+  const candidates = ["host-antworten", "live-antworten", "antwortformate", "antwort"];
+  const found = candidates.map((id) => sectionAtId(html, id)).find(Boolean);
+  if (!found) return normalizeAnswerNav(html);
+
+  const stripped = html.slice(0, found.start) + html.slice(found.end);
+  const insertAt = firstContentSectionEnd(stripped);
+  if (insertAt < 0) return normalizeAnswerNav(html);
+  const immediate = normalizeImmediateAnswerSection(found.section, found.id);
+  const reordered = `${stripped.slice(0, insertAt)}\n${immediate}${stripped.slice(insertAt)}`;
+  return normalizeAnswerNav(reordered);
+}
+
 function enforcePsychologyPosition(html) {
   const { stripped, sections } = pullPsychologySections(html);
   if (!sections.length) return html;
@@ -138,21 +209,21 @@ function enforcePsychologyPosition(html) {
     insertAfterSection(stripped, "sprint4-vertrauen", normalized) ||
     insertAfterSection(stripped, "deep-dive-quellen", normalized) ||
     insertAfterSection(stripped, "quellen", normalized) ||
-    insertAfterSection(stripped, "host-antworten", normalized) ||
-    insertAfterSection(stripped, "antwort", normalized) ||
-    insertAfterSection(stripped, "folgencheck", normalized) ||
     insertAfterSection(stripped, "faktenlage", normalized) ||
+    insertAfterSection(stripped, "folgencheck", normalized) ||
+    insertAfterSection(stripped, "loesungspfad", normalized) ||
+    insertAfterSection(stripped, "systemische-wirkungen", normalized) ||
     `${stripped}\n${normalized}`
   );
 }
 
 let changed = 0;
 for (const file of files(radarDir)) {
-  if (file.includes(`${path.sep}radwege-in-peru${path.sep}`)) continue;
   const before = fs.readFileSync(file, "utf8");
   let after = normalizeText(before);
   after = normalizePsychologyModules(after);
   after = normalizeConsequenceAnchor(after);
+  after = enforceImmediateAnswerPosition(after, file);
   after = enforcePsychologyPosition(after);
   if (after !== before) {
     fs.writeFileSync(file, after);

@@ -28,7 +28,7 @@ const P0_SLUGS = [
   "ukraine-unterstuetzung-steuergeld",
 ];
 
-const SPECIALIZED_LIVE_SLUGS = new Set();
+const SPECIALIZED_LIVE_SLUGS = new Set(["radwege-in-peru", "ukraine-unterstuetzung-steuergeld"]);
 
 function walk(target) {
   const full = path.join(ROOT, target);
