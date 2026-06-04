@@ -14741,16 +14741,16 @@ a.principle-card:hover,
 }
 
 .radar-page-hero {
-  padding-block: clamp(0.85rem, 1.7vw, 1.45rem);
+  padding-block: clamp(0.55rem, 1.15vw, 0.95rem);
 }
 
 .radar-page-hero .hero-title {
-  font-size: clamp(2.55rem, 5.2vw, 4.25rem);
+  font-size: clamp(2.35rem, 4.6vw, 3.75rem);
 }
 
 .radar-hero-copy {
   display: grid;
-  gap: 0.55rem;
+  gap: 0.42rem;
 }
 
 .radar-abstract {
@@ -14773,10 +14773,10 @@ a.principle-card:hover,
 .radar-status-line {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 0.34rem;
   margin: 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 720;
 }
 
@@ -15666,12 +15666,12 @@ a.principle-card:hover,
 }
 
 .debate-claim-section {
-  padding-block: clamp(0.5rem, 1.1vw, 0.8rem);
+  padding-block: clamp(0.25rem, 0.7vw, 0.48rem);
 }
 
 .debate-claim-section .v2-cockpit-shell {
-  gap: clamp(0.65rem, 1.2vw, 0.9rem);
-  padding: clamp(0.65rem, 1.2vw, 0.85rem);
+  gap: clamp(0.46rem, 0.9vw, 0.68rem);
+  padding: clamp(0.52rem, 0.95vw, 0.72rem);
 }
 
 .debate-claim-section .v2-cockpit-head {
@@ -15684,11 +15684,11 @@ a.principle-card:hover,
 }
 
 .debate-claim-section .v2-cockpit-head h2 {
-  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  font-size: clamp(1.42rem, 2.45vw, 1.88rem);
 }
 
 .debate-claim-section .v2-claim-line {
-  margin-top: 0.12rem;
+  margin-top: 0.06rem;
 }
 
 .debate-claim-section .card {
@@ -15701,7 +15701,7 @@ a.principle-card:hover,
 }
 
 .debate-immediate-answer {
-  padding-top: clamp(0.9rem, 1.7vw, 1.3rem);
+  padding-top: clamp(0.45rem, 1vw, 0.8rem);
 }
 
 .v2-cockpit-shell {
@@ -16327,14 +16327,14 @@ a.principle-card:hover,
 }
 
 .debate-toc-section {
-  padding-top: clamp(0.6rem, 1.4vw, 1rem);
-  padding-bottom: clamp(0.35rem, 0.9vw, 0.75rem);
+  padding-top: clamp(0.32rem, 0.8vw, 0.62rem);
+  padding-bottom: clamp(0.2rem, 0.55vw, 0.42rem);
 }
 
 .debate-toc-card {
   max-width: var(--container);
   margin-inline: auto;
-  padding: clamp(0.72rem, 1.3vw, 0.9rem);
+  padding: clamp(0.52rem, 0.95vw, 0.72rem);
 }
 
 .debate-toc-card .card-kicker {
@@ -16345,9 +16345,9 @@ a.principle-card:hover,
   position: static;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 0.32rem;
   width: 100%;
-  margin: 0.55rem 0 0;
+  margin: 0.36rem 0 0;
   padding: 0;
   border: 0;
   background: transparent;
@@ -16356,8 +16356,8 @@ a.principle-card:hover,
 }
 
 .debate-toc-card .dossier-tab-nav a {
-  min-height: 2.15rem;
-  padding: 0.35rem 0.62rem;
+  min-height: 1.9rem;
+  padding: 0.26rem 0.52rem;
   border-color: rgba(47, 125, 92, 0.18);
   background: rgba(47, 125, 92, 0.045);
   line-height: 1.15;
