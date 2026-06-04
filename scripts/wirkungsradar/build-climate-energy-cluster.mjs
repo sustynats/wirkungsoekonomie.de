@@ -1922,15 +1922,16 @@ const claims = [
       problem: "Aus Zukunftspotenzial wird ein Aufschubargument gegen heute verfügbare Klimaschutz-, Energie- und Effizienzmaßnahmen.",
       narrative: "Technikwunder-Aufschub / Fusion als Rettung / Zeitfensterblindheit / Hype als Sedativ.",
       risk: "Heute verfügbare Systemhebel werden verzögert, obwohl Emissionen, Kosten, Abhängigkeiten und Risiken bis 2030 und 2035 sinken müssen.",
-      host_answer: "Fusion erforschen. Aber nicht auf Fusion warten.",
+      host_answer: "Fusion ist wichtig. Aber sie ersetzt nicht die Baustellen, die heute Strom, Wärme und Netze besser machen.",
     },
     answers: {
-      ten_seconds: "Fusion ist wichtig und soll erforscht werden. Aber sie löst nicht unsere 2030er-Klimaprobleme. Forschung ja - Aufschub nein.",
+      ten_seconds: "Fusion ist wichtig und soll erforscht werden. Aber Kliniken, Fabriken, Wohnungen und Netze brauchen in diesem Jahrzehnt sauberen, verlässlichen Strom. Forschung ja - Aufschub nein.",
       thirty_seconds:
-        "Der wahre Kern ist: Fusion macht Fortschritte und kann langfristig wertvoll werden. Der Denkfehler ist: daraus abzuleiten, dass wir Erneuerbare, Netze, Speicher, Effizienz und Wärmewende verschieben können. Klimaschutz braucht Wirkung in diesem Jahrzehnt, nicht nur Hoffnung für die 2040er.",
+        "Stell dir zwei Orte vor: Im Labor wird an Fusion geforscht. Auf der Baustelle entstehen Wind, Solar, Speicher, Netze, Wärmepumpen und flexible Industrie. Beides ist sinnvoll. Der Fehler beginnt, wenn das Labor als Grund dient, die Baustelle zu stoppen. Fusion kann später helfen. Für 2030 und 2035 zählen aber die Lösungen, die jetzt Strom, Wärme, Kosten und Abhängigkeiten verbessern.",
       two_minutes:
-        "Ich ordne das sauber ein. Fusion ist faszinierend und wichtig. Die Forschung macht Fortschritte, und es wäre falsch, sie kleinzureden. Aber ein Laborerfolg, ein Target Gain oder ein geplanter Prototyp ist noch kein kommerzielles Kraftwerk, das zuverlässig, bezahlbar und massenhaft Strom liefert. Dafür braucht es kontinuierlichen Betrieb, Tritium-Selbstversorgung, Materialien, Wartung, Netzintegration, Sicherheitskonzepte, Finanzierung und industrielle Skalierung. ITER plant Deuterium-Tritium-Betrieb erst für die späten 2030er, STEP zielt auf einen Prototyp um 2040, und DEMO soll danach Kraftwerkstechnologien demonstrieren. Wirkungsökonomisch ist deshalb entscheidend: Was senkt Emissionen bis 2030 und 2035? Wenn Fusion später kommt, wunderbar. Aber heute verfügbare Lösungen zu verzögern, wäre ein Wirkungsfehler.",
+        "Ich würde Fusion nicht kleinreden. Gute Forschung ist wichtig, und echte Durchbrüche bei Plasma, Magneten, Lasern, Materialien oder Kraftwerkskomponenten können langfristig sehr wertvoll werden. Aber ein Laborerfolg ist noch kein Kraftwerk im Stromnetz. Zwischen Experiment und Alltag liegen viele Schritte: Dauerbetrieb, Wärmeauskopplung, Turbine, Wartung, Materialien, Tritiumkreislauf, Genehmigung, Finanzierung, Bauzeit und bezahlbarer Strom. Darum hilft ein einfaches Bild: Im Labor wird an der möglichen Energiequelle von morgen gearbeitet. Draußen bauen wir währenddessen die Energieversorgung, die heute und in den nächsten Jahren wirkt: Wind, Solar, Netze, Speicher, Effizienz, Wärmepumpen, elektrische Mobilität, flexible Lasten und saubere Industrieprozesse. Wenn Fusion später dazukommt, gut. Dann kann sie ein weiterer Baustein sein. Aber sie kann nicht rückwirkend die Emissionen senken, die wir bis 2030 unnötig ausstoßen. Die faire Frage lautet deshalb nicht: Fusion oder Energiewende? Sondern: Welche Lösung wirkt wann? Was ist Forschung, was ist Demonstrator, was ist Kraftwerk, was ist bezahlbarer Netzstrom? Und welche Maßnahmen machen das Energiesystem schon jetzt sauberer, günstiger, unabhängiger und robuster?",
     },
+    answersFinal: true,
     effectPath: [
       ["Aussage", "„Fusion löst bald das Energieproblem.“"],
       ["Wirkstoff", "Zukunftstechnologie als Aufschubsedativ."],
@@ -1943,7 +1944,7 @@ const claims = [
       ["Wirkung dritter Ordnung", "Gesellschaftliche Handlungsfähigkeit wird an Zukunftshoffnung delegiert, statt in reale Rückkopplung übersetzt."],
     ],
     frameKey: "technikwunder",
-    redirectQuestion: "Redest du über Fusionsforschung - oder benutzt du Fusion als Grund, heute verfügbare Maßnahmen zu verschieben?",
+    redirectQuestion: "Welche Lösung liefert wann Strom, Wärme und Sicherheit - Laborforschung später oder verfügbare Infrastruktur jetzt?",
     dontDo: [
       "Nicht sagen: Fusion ist Unsinn.",
       "Nicht Wissenschaftler:innen abwerten.",
@@ -4542,11 +4543,11 @@ function sourceCards(cards) {
 
 const fusionKeyPoints = [
   ["Fusion ist wissenschaftlich wichtig", "Fortschritte bei Plasma, Magneten, Lasern, Materialien und Diagnostik sind real und verdienen Forschung.", "positive"],
-  ["Aber noch kein kommerzielles Stromsystem", "Bisher gibt es keine breit verfügbare, netzrelevante, wirtschaftliche Fusionsstromerzeugung.", "warning"],
-  ["Target Gain ist nicht Kraftwerksbetrieb", "Ein erfolgreicher Fusionsschuss im Labor ist nicht dasselbe wie kontinuierliche, bezahlbare Stromproduktion mit Wartung, Verfügbarkeit und Netzeinspeisung.", "critical"],
-  ["ITER, STEP und DEMO zeigen die Zeitachse", "Große Programme liegen im Bereich 2030er bis 2040er Jahre für Forschungsbetrieb, Prototypen oder Demonstratoren - nicht für sofortige Massenstromversorgung.", "warning"],
-  ["Tritium und Materialien bleiben zentrale Hürden", "Kommerzielle Deuterium-Tritium-Fusion braucht Tritium-Selbstversorgung, Brutblankets, strahlenresistente Materialien, Wartung und sichere Brennstoffkreisläufe.", "warning"],
-  ["WÖk-Lösung: Forschung plus Sofortwirkung", "Fusion fördern, aber Klimaschutz nicht darauf verschieben: Erneuerbare, Netze, Speicher, Effizienz, Elektrifizierung und Flexibilität jetzt skalieren.", "positive"],
+  ["Labor und Baustelle gehören zusammen", "Während Forschung läuft, müssen Wind, Solar, Netze, Speicher, Effizienz und flexible Nachfrage weitergebaut werden.", "positive"],
+  ["Vom Schuss zur Steckdose fehlen Stufen", "Ein erfolgreicher Fusionsschuss ist ein Meilenstein, aber noch kein Kraftwerk mit Dauerbetrieb, Turbine, Wartung, Kosten und Netzeinspeisung.", "warning"],
+  ["Zeitachsen ehrlich lesen", "ITER, STEP und DEMO liegen eher bei Forschung, Prototypen und Demonstration als bei sofortiger Massenstromversorgung.", "warning"],
+  ["Brennstoff und Material bleiben echte Aufgaben", "Tritium-Selbstversorgung, Brutblankets, Neutronenbelastung, Komponentenwechsel und Wartung müssen im Kraftwerksbetrieb funktionieren.", "warning"],
+  ["Lösung: forschen und jetzt bauen", "Fusion fördern, aber die heutigen Systemhebel nicht verschieben: Erneuerbare, Netze, Speicher, Effizienz, Elektrifizierung und Flexibilität.", "positive"],
 ];
 
 const fusionStageMatrix = [
@@ -5120,13 +5121,13 @@ function renderFusionDossier(claim, mode = "live") {
       <section class="hero radar-page-hero theme-hero dossier-hero">
         <div class="radar-hero-copy">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / Fusion</nav>
-          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm · geprüft mit positivem Erklärbild</p>
           <h1 class="hero-title">Fusion löst das Energieproblem?</h1>
           <p class="hero-subtitle">${escapeHtml(claim.subtitle)}</p>
-          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
-          <p class="radar-abstract"><strong>Kurzformel:</strong> Fusion erforschen. Aber nicht auf Fusion warten.</p>
-          <p class="formula-note"><strong>Hero-Hinweis:</strong> Fusion ist Forschung mit Zukunftspotenzial. Dieses Dossier kritisiert nicht Forschung, sondern das Aufschubnarrativ.</p>
-          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Status: checked_candidate</span></p>
+          <p class="radar-abstract"><strong>Einfaches Bild:</strong> Im Labor wird an möglicher Energie von morgen geforscht. Draußen müssen Strom, Wärme, Netze und Speicher heute besser werden. Beides gehört zusammen.</p>
+          <p class="radar-abstract"><strong>Kurzformel:</strong> Fusion erforschen. Die Energie-Baustelle von heute weiterbauen.</p>
+          <p class="formula-note"><strong>Einordnung:</strong> Diese Seite kritisiert nicht Fusionsforschung. Sie kritisiert, wenn Zukunftshoffnung als Grund dient, heute verfügbare Lösungen zu verschieben.</p>
+          <p class="radar-status-line"><span>Kurzurteil: Gute Forschung. Schlechte Ausrede.</span><span>Datenstand: ${UPDATED_AT}</span><span>Forschung ja · Aufschub nein</span></p>
         </div>
       </section>
       ${summaryGrid(fusionKeyPoints, "Fusion Dossier - Das Wichtigste in 6 Punkten")}
@@ -5137,7 +5138,7 @@ function renderFusionDossier(claim, mode = "live") {
       </nav>
       <section class="section dossier-tab-panel" id="live-antworten">
         <div>
-          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Forschung anerkennen, Aufschub stoppen.</h2></div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Forschung anerkennen, die Baustelle offen halten.</h2><p>Erst ein gutes Bild, dann die Technik: Labor und Energiesystem dürfen nicht gegeneinander ausgespielt werden.</p></div>
           <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
             <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
@@ -5145,14 +5146,14 @@ function renderFusionDossier(claim, mode = "live") {
           </div>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
-            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Fusion statt Energiewende“. Die richtige Wirkungsfrage lautet: Welche Technologie wirkt wann, zu welchen Kosten und mit welchen Risiken?</p></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Fusion statt Energiewende“. Die bessere Frage lautet: Welche Lösung wirkt wann - und was darf deshalb heute nicht liegen bleiben?</p></article>
           </div>
           <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
         </div>
       </section>
       <section class="section section-soft dossier-tab-panel" id="zeitfenster-technologie">
         <div>
-          <div class="section-header"><p class="hero-kicker">Zeitfenster &amp; Technologie verstehen</p><h2>Forschung ist nicht dasselbe wie Systemwirkung.</h2><p>Fusion ist ein gutes Beispiel dafür, warum der Wirkungsradar zwischen Hoffnung, Forschung, Demonstration, Industrialisierung und realer Systemwirkung unterscheiden muss. Ein technologischer Durchbruch kann wissenschaftlich enorm sein und trotzdem für aktuelle Energiepolitik noch keine verfügbare Infrastruktur darstellen.</p></div>
+          <div class="section-header"><p class="hero-kicker">Zeitfenster &amp; Technologie verstehen</p><h2>Vom Labor bis zur Steckdose sind es mehrere Stufen.</h2><p>Fusion kann wissenschaftlich enorm wichtig sein. Für Energiepolitik zählt zusätzlich: Wann kommt Strom verlässlich, bezahlbar und in Menge aus einem Kraftwerk ins Netz?</p></div>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list"><li>Fusion hat langfristig enormes Potenzial.</li><li>Fusionsreaktionen können sehr hohe Energiedichten erreichen.</li><li>Deuterium ist vergleichsweise gut verfügbar.</li><li>Im Betrieb entstehen keine CO₂-Emissionen wie bei fossilen Kraftwerken.</li><li>Fusion hat keine klassische Kettenreaktion wie Kernspaltung.</li><li>Forschungserfolge bei Magneten, Lasern, Plasmaeinschluss und Diagnostik sind real.</li><li>ITER, STEP, DEMO und private Start-ups zeigen internationale Dynamik.</li><li>Forschung kann technologische Spillover erzeugen.</li><li>Langfristig könnte Fusion ein Baustein einer sauberen Energieversorgung werden.</li></ul></article>
             <article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list"><li>Es gibt noch keine kommerziell verfügbare Fusionsstromversorgung.</li><li>Ein physikalischer Durchbruch ist nicht gleich Kraftwerksbetrieb.</li><li>Target Gain ist nicht Net Electricity Gain.</li><li>Dauerbetrieb, Wartung und Anlagenverfügbarkeit sind nicht ausreichend skalierte Kraftwerksfragen.</li><li>Deuterium-Tritium-Fusion braucht Tritium-Selbstversorgung über Brutblankets.</li><li>Neutronen belasten Materialien, aktivieren Komponenten und erschweren Wartung.</li><li>Kosten, Finanzierung, Genehmigung, Lieferketten und Bauzeiten sind offen.</li><li>Selbst optimistische Demonstratoren ersetzen nicht die Emissionsminderung bis 2030.</li><li>Der Denkfehler ist, Zukunftspotenzial mit Gegenwartsverfügbarkeit zu verwechseln.</li></ul></article>
