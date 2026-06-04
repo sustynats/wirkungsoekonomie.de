@@ -65,11 +65,12 @@ export function ConsequenceStack({ consequenceStack }) {
 export function V3PageNav() {
   const items = [
     ["Klartext", "#host-cockpit"],
+    ["Antworten", "#host-antworten"],
     ["Fakten", "#faktenlage"],
     ["Folgen", "#folgencheck"],
     ["System", "#systemische-wirkungen"],
     ["Frame", "#narrativ-psychologie"],
-    ["Antwort", "#reaktion"],
+    ["Psychologie", "#warum-der-satz-zieht"],
     ["Lösung", "#loesungspfad"],
     ["Quellen", "#warum-belastbar"],
     ["Deep Dive", "#warum-der-radar-so-prueft"],
@@ -113,7 +114,13 @@ export function PsychologicalEffectCheck({ psychologicalEffectCheck }) {
 export function FrameShiftPlaybook({ frameShiftPlaybook }) {
   if (!frameShiftPlaybook?.oldFrame) return "";
   const formats = frameShiftPlaybook.answerFormats || {};
-  return `<section class="section v3-layer v3-layer-answer" id="reaktion" data-v3-frame-shift><div><div class="section-header"><p class="hero-kicker">So verschiebst du den Frame</p><h2>Antworten, ohne die falsche Rechnung zu wiederholen.</h2></div><div class="card-grid two"><article class="card"><p class="card-kicker">Alter Frame</p><h3 class="card-title">${esc(frameShiftPlaybook.oldFrame)}</h3><p class="card-text"><strong>Warum er andockt:</strong> ${esc(frameShiftPlaybook.whyItHooks)}</p><p class="card-text"><strong>Gefahr beim Wiederholen:</strong> ${esc(frameShiftPlaybook.dangerIfRepeated)}</p><p class="card-text"><strong>Brückensatz:</strong> ${esc(frameShiftPlaybook.bridgeSentence)}</p><p class="card-text"><strong>Bessere Frage:</strong> ${esc(frameShiftPlaybook.betterQuestion)}</p></article><article class="card"><p class="card-kicker">Nicht so / besser so</p><h3 class="card-title">Kurz kontrollieren.</h3><p class="card-text"><strong>Nicht sagen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.doNotSay || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul><p class="card-text"><strong>Stattdessen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.sayInstead || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div><div class="radar-answer-accordion host-answer-tabs">${[["Kommentar", formats.comment], ["Live", formats.live30s], ["Panel", formats.panel2min], ["Ruhig", formats.calmConversation]].filter(([, text]) => text).map(([label, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">v3 Antwortformat</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+  const answerItems = [
+    ["10 Sekunden", "Kurzantwort", formats.short10s || formats.comment],
+    ["30 Sekunden", "Einordnung", formats.medium30s || formats.live30s],
+    ["2 Minuten", "Langantwort", formats.long2min || formats.panel2min],
+    ["Ruhig kontern", "Gespräch", formats.calmConversation],
+  ].filter(([, , text]) => text);
+  return `<section class="section v3-layer v3-layer-answer" id="host-antworten" data-v3-frame-shift><span id="reaktion" class="sr-only">Antworten</span><div><div class="section-header"><p class="hero-kicker">Host-Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Erst den wahren Kern anerkennen, dann die fehlende Bilanzgrenze öffnen und zur besseren Wirkungsfrage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${answerItems.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div><div class="card-grid two v3-frame-control-grid"><article class="card"><p class="card-kicker">Alter Frame</p><h3 class="card-title">${esc(frameShiftPlaybook.oldFrame)}</h3><p class="card-text"><strong>Warum er andockt:</strong> ${esc(frameShiftPlaybook.whyItHooks)}</p><p class="card-text"><strong>Gefahr beim Wiederholen:</strong> ${esc(frameShiftPlaybook.dangerIfRepeated)}</p><p class="card-text"><strong>Brückensatz:</strong> ${esc(frameShiftPlaybook.bridgeSentence)}</p><p class="card-text"><strong>Bessere Frage:</strong> ${esc(frameShiftPlaybook.betterQuestion)}</p></article><article class="card"><p class="card-kicker">Nicht so / besser so</p><h3 class="card-title">Frame kontrollieren.</h3><p class="card-text"><strong>Nicht sagen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.doNotSay || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul><p class="card-text"><strong>Stattdessen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.sayInstead || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></div></section>`;
 }
 
 export function SolutionPath({ solutionPath }) {
@@ -128,25 +135,25 @@ export function MethodologyDeepDive({ dossier }) {
 export function UnderstandSection({ explain }) {
   const trueItems = explain.whatIsTrue || [];
   const missingItems = explain.whatIsMissing || [];
-  return `<section class="section" id="verstehen"><div><div class="section-header"><p class="hero-kicker">Verstehen</p><h2>Was stimmt - und was fehlt?</h2><p>${esc(explain.simpleMechanism)}</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list">${trueItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list">${missingItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></div></section>`;
+  return `<section class="section v2-understand" id="verstehen"><div><div class="section-header"><p class="hero-kicker">Verstehen</p><h2>Was stimmt - und was fehlt?</h2><p>${esc(explain.simpleMechanism)}</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list">${trueItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list">${missingItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></div></section>`;
 }
 
 export function SolutionCard({ solution }) {
-  return `<section class="section" id="was-macht-es-besser"><div><div class="section-header"><p class="hero-kicker">Was macht es besser?</p><h2>${esc(solution.plainLanguage)}</h2></div><div class="card-grid">${solution.measures.map((item) => `<article class="card"><h3 class="card-title">${esc(item.title)}</h3><p class="card-text">${esc(item.text)}</p></article>`).join("")}</div></div></section>`;
+  return `<section class="section v2-solution" id="was-macht-es-besser"><div><div class="section-header"><p class="hero-kicker">Was macht es besser?</p><h2>${esc(solution.plainLanguage)}</h2></div><div class="card-grid">${solution.measures.map((item) => `<article class="card"><h3 class="card-title">${esc(item.title)}</h3><p class="card-text">${esc(item.text)}</p></article>`).join("")}</div></div></section>`;
 }
 
 export function ResponseFormats({ dossier }) {
-  const comment = dossier.responses?.comment?.text || dossier.cockpit.sayThisNow;
-  const live = dossier.responses?.live?.text || uniqueSentences(dossier.cockpit.sayThisNow, dossier.cockpit.positiveExample.hostLine);
-  const panel = dossier.responses?.panel?.text || uniqueSentences(dossier.cockpit.sayThisNow, dossier.cockpit.frameShift.betterAnswer, dossier.cockpit.positiveExample.hostLine);
+  const comment = dossier.responses?.short10s?.text || dossier.responses?.comment?.text || dossier.cockpit.sayThisNow;
+  const live = dossier.responses?.medium30s?.text || dossier.responses?.live?.text || uniqueSentences(dossier.cockpit.sayThisNow, dossier.cockpit.positiveExample.hostLine);
+  const panel = dossier.responses?.long2min?.text || dossier.responses?.panel?.text || uniqueSentences(dossier.cockpit.sayThisNow, dossier.cockpit.frameShift.betterAnswer, dossier.cockpit.positiveExample.hostLine);
   const calmCounter = dossier.responses?.calmCounter?.text || uniqueSentences(dossier.cockpit.frameShift.betterAnswer, dossier.cockpit.betterQuestion);
   const items = [
-    ["Kommentar", "Kommentarspalten", comment, "Antwort kopieren"],
-    ["Live", "Stream / Host-Reaktion", live, "Antwort kopieren"],
-    ["Panel", "Diskussion / Interview", panel, "Panel-Antwort kopieren"],
-    ["Ruhig kontern", "Gespräch ohne Streit", calmCounter, "Antwort kopieren"],
+    ["10 Sekunden", "Kurzantwort", comment, "Antwort kopieren"],
+    ["30 Sekunden", "Einordnung", live, "Antwort kopieren"],
+    ["2 Minuten", "Langantwort", panel, "Antwort kopieren"],
+    ["Ruhig kontern", "Gespräch", calmCounter, "Antwort kopieren"],
   ];
-  return `<section class="section v2-answer-tabs" id="antwortformate-v2"><div><div class="section-header"><p class="hero-kicker">Antwortformate</p><h2>Kurz sagen. Dann vertiefen.</h2></div><div class="radar-answer-accordion host-answer-tabs">${items.map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
+  return `<section class="section v2-answer-tabs" id="host-antworten"><span id="antwortformate-v2" class="sr-only">Antwortformate</span><div><div class="section-header"><p class="hero-kicker">Host-Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Den wahren Kern anerkennen, die Bilanzgrenze öffnen und zur besseren Wirkungsfrage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${items.map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SourceDrawer({ sources }) {
@@ -165,7 +172,7 @@ export function LinkHub({ internalLinks = {} }) {
     ["Ähnliche Live-Karten", internalLinks.relatedDossiers || []],
     ["Lösungsbausteine", internalLinks.woek || []],
   ];
-  return `<section class="section" id="linkhub"><div><div class="section-header"><p class="hero-kicker">Weiter prüfen</p><h2>Links in die Tiefe.</h2></div><div class="card-grid four">${groups.map(([label, links]) => `<article class="card"><p class="card-kicker">${esc(label)}</p>${links.length ? links.map((href) => `<p><a class="text-link" href="${esc(href)}">${esc(linkLabel(href))}</a></p>`).join("") : `<p class="card-text">Noch nicht verknüpft.</p>`}</article>`).join("")}</div></div></section>`;
+  return `<section class="section v2-linkhub" id="linkhub"><div><div class="section-header"><p class="hero-kicker">Weiter prüfen</p><h2>Links in die Tiefe.</h2></div><div class="card-grid four">${groups.map(([label, links]) => `<article class="card"><p class="card-kicker">${esc(label)}</p>${links.length ? links.map((href) => `<p><a class="text-link" href="${esc(href)}">${esc(linkLabel(href))}</a></p>`).join("") : `<p class="card-text">Noch nicht verknüpft.</p>`}</article>`).join("")}</div></div></section>`;
 }
 
 export function HostCockpitV2({ dossier }) {
@@ -176,13 +183,13 @@ export function renderDossierV2Sections(dossier) {
   if (dossier.v3) {
     return [
       HostCockpitV2({ dossier }),
+      FrameShiftPlaybook({ frameShiftPlaybook: dossier.v3.frameShiftPlaybook }),
       V3PageNav(),
       FactsLayer({ factsLayer: dossier.v3.factsLayer }),
       ConsequenceCheck({ consequenceCheck: dossier.v3.consequenceCheck }),
       ImpactMatrix({ impactMatrix: dossier.v3.impactMatrix }),
       NarrativeMechanism({ narrativeMechanism: dossier.v3.narrativeMechanism }),
       PsychologicalEffectCheck({ psychologicalEffectCheck: dossier.v3.psychologicalEffectCheck }),
-      FrameShiftPlaybook({ frameShiftPlaybook: dossier.v3.frameShiftPlaybook }),
       SolutionPath({ solutionPath: dossier.v3.solutionPath }),
       TrustBlock({ trustBlock: dossier.trustBlock, sources: dossier.sources }),
       LinkHub({ internalLinks: dossier.internalLinks }),
