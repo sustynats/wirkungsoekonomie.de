@@ -173,6 +173,36 @@ const overrides = {
       ["Ein starkes Wort bleibt hängen.", "Angstanker", "Sondermüll, Beton oder Infraschall überdecken schnell die konkrete Prüf- und Lösungsfrage.", "Das Wort präzisieren und zur Lösung zurückführen."],
     ],
   },
+  "fusion-loest-das-energieproblem": {
+    claim: "Warum jetzt teure Energiewende, wenn bald Fusion kommt?",
+    short: "Wahrer Forschungsoptimismus, falscher Verzögerungsframe.",
+    say:
+      "Fusion erforschen. Aber nicht auf Fusion warten.",
+    live:
+      "Fusion ist wichtig und soll erforscht werden. Aber sie löst nicht unsere 2030er-Klimaprobleme. Forschung ja - Aufschub nein.",
+    panel:
+      "Fusion ist faszinierend und wichtig. Aber ein Laborerfolg, ein Target Gain oder ein geplanter Prototyp ist noch kein kommerzielles Kraftwerk, das zuverlässig, bezahlbar und massenhaft Strom liefert. Dafür braucht es kontinuierlichen Betrieb, Tritium-Selbstversorgung, Materialien, Wartung, Netzintegration, Sicherheitskonzepte, Finanzierung und industrielle Skalierung. Wenn Fusion später kommt, wunderbar. Aber heute verfügbare Lösungen zu verzögern, wäre ein Wirkungsfehler.",
+    exampleTitle: "Target Gain ist nicht Netzstrom",
+    example:
+      "Ein erfolgreicher Fusionsschuss kann ein echter Meilenstein sein. Für das Energiesystem zählt aber, ob ein Kraftwerk dauerhaft Strom ins Netz liefert - mit Wartung, Kosten, Brennstoffkreislauf und Verfügbarkeit.",
+    question: "Redest du über Fusionsforschung - oder benutzt du Fusion als Grund, heute verfügbare Maßnahmen zu verschieben?",
+    oldFrame: "Fusion statt Energiewende.",
+    notThis: "Fusion ist Unsinn und wird nie funktionieren.",
+    better: "Forschung ja. Aber welche Maßnahme senkt bis 2030 und 2035 real Emissionen und Risiken?",
+    impacts: [
+      ["Zeitfenster", "Klimawirkung entscheidet sich bis 2030, 2035 und 2045.", "Jahreszahlen statt Zukunftsgefühl."],
+      ["Netzstrom", "Target Gain ist nicht Kraftwerks-Nettoleistung.", "Target, Anlage, Turbine und Netz trennen."],
+      ["Tritium", "Deuterium ist verfügbarer; Tritium-Selbstversorgung bleibt eine zentrale Hürde.", "Brennstoffkreislauf benennen."],
+      ["Material", "Neutronen belasten und aktivieren Komponenten.", "Wartung und Entsorgung mitzählen."],
+      ["Opportunitätskosten", "Geld und Aufmerksamkeit können nur einmal eingesetzt werden.", "Was wirkt mit demselben Einsatz schneller?"],
+      ["Forschung", "Überhype kann Wissenschaftsvertrauen beschädigen.", "Ehrliche Stufenlogik schützt Forschung."],
+    ],
+    psychology: [
+      ["Technik löst alles.", "Technological Fix Bias", "Eine spätere technische Lösung wirkt einfacher als heutige Systemarbeit.", "Forschung anerkennen und Zeitfenster abfragen."],
+      ["Der Durchbruch kommt bald.", "Optimism Bias", "Zeit-, Kosten- und Skalierungsrisiken werden unterschätzt.", "Demonstrator, Kraftwerk und Markt trennen."],
+      ["Wir können warten.", "Status-quo-Bias", "Zukunftshoffnung schützt bestehende Routinen.", "Kosten des Wartens sichtbar machen."],
+    ],
+  },
   "radwege-in-peru": {
     claim: "Für Radwege in Peru ist Geld da, aber für unsere Probleme nicht.",
     short: "Wahrer Prioritätenkern, falscher Steuergeld-Frame.",

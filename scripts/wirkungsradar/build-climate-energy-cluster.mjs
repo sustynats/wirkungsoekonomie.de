@@ -459,11 +459,32 @@ const sourcePack = {
       use_for: ["SMR-Forschung", "Sicherheits-, Rechts- und Infrastrukturfragen"],
     },
     {
-      label: "ITER - In a Few Lines",
+      label: "ITER - Updated baseline and timeline",
       publisher: "ITER Organization",
       url: "https://www.iter.org/few-lines",
       type: "wissenschaft_technik",
-      use_for: ["Fusionsforschung", "ITER Zielsetzung"],
+      use_for: ["ITER Zeitplan", "2036 volle magnetische Energie", "2039 Deuterium-Tritium-Betrieb"],
+    },
+    {
+      label: "Max-Planck-Institut für Plasmaphysik - Neuer ITER-Zeitplan",
+      publisher: "Max-Planck-Institut für Plasmaphysik",
+      url: "https://www.ipp.mpg.de/5434926/ITER_baseline_2024",
+      type: "wissenschaft_technik",
+      use_for: ["wissenschaftliche Einordnung ITER-Zeitplan", "2034 wissenschaftlicher Betrieb", "2036 volle magnetische Energie"],
+    },
+    {
+      label: "LLNL / National Ignition Facility - Achieving Fusion Ignition",
+      publisher: "Lawrence Livermore National Laboratory",
+      url: "https://lasers.llnl.gov/science/achieving-fusion-ignition",
+      type: "wissenschaft_technik",
+      use_for: ["Fusionszündung", "Target Gain", "NIF-Ergebnisse"],
+    },
+    {
+      label: "STEP Fusion - UK prototype fusion powerplant",
+      publisher: "STEP Fusion",
+      url: "https://stepfusion.com/",
+      type: "wissenschaft_technik",
+      use_for: ["Prototyp-Ziel bis 2040", "UK-Programm"],
     },
     {
       label: "EUROfusion - DEMO",
@@ -471,6 +492,27 @@ const sourcePack = {
       url: "https://euro-fusion.org/programme/demo/",
       type: "wissenschaft_technik",
       use_for: ["Fusionskraftwerke", "DEMO", "Technologiereife"],
+    },
+    {
+      label: "IAEA - Tritium Breeding",
+      publisher: "International Atomic Energy Agency",
+      url: "https://nucleus.iaea.org/sites/connect/FUSEpublic/SitePages/Tritium-Breeding.aspx",
+      type: "wissenschaft_technik",
+      use_for: ["Tritium-Selbstversorgung", "Breeding Blankets", "Brennstoffkreislauf"],
+    },
+    {
+      label: "ITER - Tritium breeding",
+      publisher: "ITER Organization",
+      url: "https://www.iter.org/machine/supporting-systems/tritium-breeding",
+      type: "wissenschaft_technik",
+      use_for: ["ITER Test Blanket Modules", "Brutblanket-Technologie"],
+    },
+    {
+      label: "UKAEA - Materials challenges for commercial fusion",
+      publisher: "UK Atomic Energy Authority",
+      url: "https://scientific-publications.ukaea.uk/wp-content/uploads/UKAEA-CCFE-PR2152.PDF",
+      type: "fachbericht",
+      use_for: ["Materialschäden", "Tritium", "Neutronenbeschuss"],
     },
   ],
 };
@@ -840,7 +882,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Schnellere Lösungen werden verzögert, wenn Zukunftstechnik heutige Wirkung ersetzt.", "critical"],
       ["WÖk-Lösung", "Technologien nach Zeithorizont, Kosten, Risiken, Alternativen und Systemwirkung bewerten.", "positive"],
     ],
-    claims: ["kernenergie-wieder-in-deutschland", "kernenergie-einfache-loesung", "fusion-loest-das-problem"],
+    claims: ["kernenergie-wieder-in-deutschland", "kernenergie-einfache-loesung", "fusion-loest-das-energieproblem"],
   },
   {
     slug: "industrie-wirtschaft",
@@ -1763,52 +1805,99 @@ const claims = [
     sources: ["BASE - Endlagersuche", "Fraunhofer ISE / Energy-Charts"],
   },
   {
-    title: "„Fusion löst das Problem“",
-    slug: "fusion-loest-das-problem",
-    shortJudgement: "Forschung wichtig, aber kein Ersatz für heutige Emissionsminderung.",
-    narrativeFamilies: ["Technikwunder-Aufschub", "Verzögerung"],
+    title: "Fusion löst das Energieproblem?",
+    slug: "fusion-loest-das-energieproblem",
+    claimPhrase: "„Warum jetzt teure Energiewende, wenn bald Fusion kommt?“",
+    shortJudgement: "Wahrer Forschungsoptimismus, falscher Verzögerungsframe.",
+    narrativeFamilies: ["Technikwunder-Aufschub", "Fusion als Rettung", "Zeitfensterblindheit", "Hype als Sedativ"],
     riskLevel: "hoch",
-    themes: ["Fusion", "Energiezukunft"],
-    sdgs: ["SDG 7", "SDG 9", "SDG 13"],
-    sdgPlus: ["Zeithorizontklarheit"],
-    subtitle: "Forschung ja, Aufschub nein",
+    themes: ["Fusion", "Energiezukunft", "Innovation", "Zeitfenster"],
+    sdgs: ["SDG 7", "SDG 9", "SDG 12", "SDG 13", "SDG 16", "SDG 17"],
+    sdgPlus: ["Quellenklarheit", "Wissenschaftsvertrauen", "Diskursfähigkeit", "Schutz vor Hype und Verzögerung", "institutionelles Vertrauen", "intergenerationelle Verantwortung"],
+    subtitle: "Warum Zukunftstechnologie kein Aufschubargument sein darf.",
     abstract:
-      "Die Aussage enthält einen hoffnungsvollen Kern: Fusionsforschung kann langfristig eine wichtige Energieoption werden. Irreführend wird sie, wenn ungewisse Zukunftstechnologie als Ersatz für heute verfügbare Emissionsminderung genutzt wird. Wirkungsökonomisch ist das ein Technikwunder-Aufschub: Die Debatte verschiebt Verantwortung aus dem aktuellen Zeitfenster in eine mögliche Zukunft.",
+      "Die Aussage „Fusion löst bald unser Energieproblem“ enthält einen wahren Kern: Fusionsforschung macht Fortschritte, große Programme wie ITER, STEP, DEMO und private Start-ups treiben Plasma- und Kraftwerkstechnologien voran, und langfristig könnte Fusion eine wichtige saubere Energiequelle werden. Irreführend wird die Aussage, wenn daraus folgt, heutige Energiewende, Erneuerbare, Netze, Speicher, Effizienz, Wärmewende, Elektromobilität oder Industrieumbau könnten warten. Wirkungsökonomisch ist das ein Zeitfensterfehler: Eine mögliche spätere Technologie wird gegen heute verfügbare Maßnahmen gestellt. Für Klimaschutz, Versorgungssicherheit und industrielle Transformation zählen aber die Jahre bis 2030, 2035 und 2045. Die bessere Frage lautet nicht: Fusion oder Erneuerbare? Sondern: Welche Energieinvestition erzeugt wann welche positive Netto-Wirkung - und welche Investition darf nicht als Vorwand für Verzögerung dienen?",
     summary: {
-      judgement: "Forschung wichtig, aber kein Ersatz für heutige Emissionsminderung.",
-      true_core: "Fusion kann langfristig eine bedeutende Technologie werden.",
-      problem: "Ungewisse Zukunftstechnik wird als Aufschubargument genutzt.",
-      narrative: "Technikwunder-Aufschub / Verzögerung.",
-      risk: "Heute verfügbare Lösungen werden langsamer umgesetzt.",
-      host_answer: "Fusion erforschen: ja. Aber sie ersetzt keine Emissionsminderung in diesem Jahrzehnt.",
+      judgement: "Wahrer Forschungsoptimismus, falscher Verzögerungsframe.",
+      true_core: "Fusion ist eine wichtige Zukunftstechnologie und sollte erforscht werden.",
+      problem: "Aus Zukunftspotenzial wird ein Aufschubargument gegen heute verfügbare Klimaschutz-, Energie- und Effizienzmaßnahmen.",
+      narrative: "Technikwunder-Aufschub / Fusion als Rettung / Zeitfensterblindheit / Hype als Sedativ.",
+      risk: "Heute verfügbare Systemhebel werden verzögert, obwohl Emissionen, Kosten, Abhängigkeiten und Risiken bis 2030 und 2035 sinken müssen.",
+      host_answer: "Fusion erforschen. Aber nicht auf Fusion warten.",
     },
     answers: {
-      ten_seconds: "Fusion erforschen: ja. Aber sie ersetzt keine Emissionsminderung in diesem Jahrzehnt.",
+      ten_seconds: "Fusion ist wichtig und soll erforscht werden. Aber sie löst nicht unsere 2030er-Klimaprobleme. Forschung ja - Aufschub nein.",
       thirty_seconds:
-        "Der wahre Kern ist: Fusion ist wissenschaftlich spannend und langfristig relevant. Der Denkfehler ist, sie als heutige Lösung zu verkaufen. Wirkungsökonomisch zählt der Zeithorizont: Was senkt Emissionen rechtzeitig, skalierbar und bezahlbar?",
+        "Der wahre Kern ist: Fusion macht Fortschritte und kann langfristig wertvoll werden. Der Denkfehler ist: daraus abzuleiten, dass wir Erneuerbare, Netze, Speicher, Effizienz und Wärmewende verschieben können. Klimaschutz braucht Wirkung in diesem Jahrzehnt, nicht nur Hoffnung für die 2040er.",
       two_minutes:
-        "Ich ordne das ein. Fusion ist kein Grund, Forschung kleinzureden - im Gegenteil. Aber Forschung und heutige Klimapolitik haben unterschiedliche Zeithorizonte. Wenn wir eine künftige Technologie als Argument gegen heutige Maßnahmen benutzen, wird sie zum Verzögerungsnarrativ. Die WÖk bewertet Technik nach Wirkung, Zeithorizont, Skalierbarkeit, Kosten, Risiken und Alternativen. Also: Fusion weiterentwickeln, aber Netze, Speicher, Erneuerbare, Effizienz und Industrieumbau jetzt umsetzen.",
+        "Ich ordne das sauber ein. Fusion ist faszinierend und wichtig. Die Forschung macht Fortschritte, und es wäre falsch, sie kleinzureden. Aber ein Laborerfolg, ein Target Gain oder ein geplanter Prototyp ist noch kein kommerzielles Kraftwerk, das zuverlässig, bezahlbar und massenhaft Strom liefert. Dafür braucht es kontinuierlichen Betrieb, Tritium-Selbstversorgung, Materialien, Wartung, Netzintegration, Sicherheitskonzepte, Finanzierung und industrielle Skalierung. ITER plant Deuterium-Tritium-Betrieb erst für die späten 2030er, STEP zielt auf einen Prototyp um 2040, und DEMO soll danach Kraftwerkstechnologien demonstrieren. Wirkungsökonomisch ist deshalb entscheidend: Was senkt Emissionen bis 2030 und 2035? Wenn Fusion später kommt, wunderbar. Aber heute verfügbare Lösungen zu verzögern, wäre ein Wirkungsfehler.",
     },
     effectPath: [
-      ["Aussage", "Fusion löst das Problem."],
-      ["Wirkstoff", "Zukunftstechnologie als Aufschubargument."],
-      ["Resonanz", "Hoffnung, Entlastung, Technikoptimismus."],
-      ["Wirkungspotenzial", "Heute verfügbare Lösungen wirken weniger dringlich."],
-      ["Wirkungsrisiko", "Emissionen werden im aktuellen Jahrzehnt nicht ausreichend gesenkt."],
-      ["Folge falschen Handelns", "Zeitfenster schließen sich und Folgekosten steigen."],
+      ["Aussage", "„Fusion löst bald das Energieproblem.“"],
+      ["Wirkstoff", "Zukunftstechnologie als Aufschubsedativ."],
+      ["Verkürzung", "Forschungspotenzial wird mit aktueller Systemverfügbarkeit verwechselt."],
+      ["Ausblendung", "Zeitfenster, Kraftwerksbetrieb, Tritium, Materialien, Wartung, Kosten, Netzintegration und Opportunitätskosten verschwinden."],
+      ["Resonanz", "Hoffnung, Technikstolz, Beruhigung, Transformationsmüdigkeit."],
+      ["Narrativ", "„Wir müssen jetzt nicht so stark umbauen, weil bald der Durchbruch kommt.“"],
+      ["Wirkung erster Ordnung", "Dringlichkeit für Erneuerbare, Netze, Effizienz und Elektrifizierung sinkt."],
+      ["Wirkung zweiter Ordnung", "Investitionen und politische Entscheidungen werden verzögert."],
+      ["Wirkung dritter Ordnung", "Gesellschaftliche Handlungsfähigkeit wird an Zukunftshoffnung delegiert, statt in reale Rückkopplung übersetzt."],
     ],
     frameKey: "technikwunder",
-    redirectQuestion: "Was senkt Emissionen rechtzeitig - und was ist langfristige Forschung?",
-    dontDo: ["Fusionsforschung nicht lächerlich machen.", "Nicht ungewisse Zukunftstechnik als heutige Lösung akzeptieren."],
-    facts: ["Fusion ist langfristig relevant, aber zeitlich anders als heutige Emissionsminderung.", "Technologiereife und Netzwirkung müssen konkret geprüft werden."],
-    consequences: ["Erneuerbare, Netze, Speicher und Effizienz werden langsamer umgesetzt.", "Heute vermeidbare Emissionen bleiben bestehen.", "Technikoptimismus ersetzt Wirkungspfad."],
-    woekSolution: ["Forschung weiterführen und gleichzeitig heute skalierbare Lösungen umsetzen.", "Technik nach Zeithorizont, Skalierbarkeit, Kosten und Alternativen bewerten.", "Opportunitätskosten in Investitionsentscheidungen sichtbar machen."],
+    redirectQuestion: "Redest du über Fusionsforschung - oder benutzt du Fusion als Grund, heute verfügbare Maßnahmen zu verschieben?",
+    dontDo: [
+      "Nicht sagen: Fusion ist Unsinn.",
+      "Nicht Wissenschaftler:innen abwerten.",
+      "Nicht so tun, als wären Laborerfolge irrelevant.",
+      "Nicht behaupten, Fusion werde nie funktionieren.",
+      "Nicht Target Gain mit Kraftwerks-Nettoleistung verwechseln.",
+      "Nicht ITER, STEP, DEMO und private Start-ups vermischen.",
+      "Nicht Forschung gegen Erneuerbare ausspielen.",
+      "Nicht Erneuerbare als perfekt darstellen.",
+      "Nicht Zeitfenster 2030/2035 ausblenden.",
+    ],
+    facts: [
+      "Fusion hat langfristig enormes Potenzial und verdient Forschung.",
+      "Bisher gibt es keine breit verfügbare, netzrelevante, wirtschaftliche Fusionsstromerzeugung.",
+      "Target Gain ist nicht Kraftwerks-Nettoleistung.",
+      "ITER, STEP und DEMO zeigen eher Forschungs-, Prototyp- und Demonstrationszeitachsen als sofortige Massenstromversorgung.",
+      "Tritium-Selbstversorgung, Brutblankets, Materialien, Wartung und Kraftwerksintegration bleiben zentrale Hürden.",
+      "Erneuerbare, Netze, Speicher, Effizienz, Elektrifizierung und Flexibilität wirken bereits im aktuellen Klimazeitfenster.",
+    ],
+    consequences: [
+      "Emissionen sinken zu spät, wenn heutige Maßnahmen auf spätere Fusion verschoben werden.",
+      "Netze, Speicher, Effizienz, Lastmanagement und Erneuerbare werden langsamer ausgebaut.",
+      "Industrie wartet auf Zukunftsstrom, statt Standortvorteile durch erneuerbare Systemarchitektur aufzubauen.",
+      "Fusion wird politisch überfrachtet und verliert Glaubwürdigkeit, wenn sie als Sofortlösung verkauft wird.",
+      "Kapital kann in Optionen mit spätem Wirkungseintritt fließen, während schnelle Maßnahmen unterfinanziert bleiben.",
+      "Wenn Versprechen nicht schnell eintreten, wächst Misstrauen gegen Wissenschaft und Politik.",
+      "Klimaschäden und Biodiversitätsverluste steigen durch Verzögerung.",
+    ],
+    woekSolution: [
+      { title: "Fusion als Forschungsportfolio führen", text: "Fusion erhält langfristige Förderung, aber mit ehrlicher Stufenlogik: Experiment, Demonstrator, Kraftwerk, Skalierung." },
+      { title: "Zeitfenster-Gate einführen", text: "Jede Technologie wird nach Wirkung bis 2030, 2035 und 2045 bewertet." },
+      { title: "Soforthebel priorisieren", text: "Wind, Solar, Netze, Speicher, Effizienz, Wärmepumpen, Elektromobilität, E-Lkw, Lastmanagement und Flexibilität senken heute Risiken." },
+      { title: "Tritium- und Materialrisiken sichtbar machen", text: "Fusionsforschung muss Brennstoffkreislauf, Brutblankets, Neutronenschäden, Wartung und Entsorgung transparent berichten." },
+      { title: "Hype-Schutz in Wissenschaftskommunikation", text: "Kommunikation unterscheidet klar zwischen Laborerfolg, Anlagen-Nettoenergie, Demonstrator und kommerziellem Betrieb." },
+      { title: "Opportunitätskosten prüfen", text: "Große Forschungsausgaben werden im Vergleich zu anderen Emissions-, Resilienz- und Innovationshebeln bewertet." },
+      { title: "Forschung nicht gegen Erneuerbare ausspielen", text: "Fusion kann langfristig ergänzen, aber die erneuerbare Systemarchitektur muss jetzt entstehen." },
+      { title: "Lernendes Innovationssystem bauen", text: "Fortschritte, Rückschläge, Kosten, Zeitpläne und technische Engpässe werden regelmäßig öffentlich aktualisiert." },
+    ],
     mpd: {
-      mensch: "Spätere Klimaschäden treffen Menschen heute und in naher Zukunft.",
-      planet: "Zeitkritische Emissionsminderung darf nicht verschoben werden.",
-      demokratie: "Zeithorizontklarheit verhindert Aufschubframes.",
+      mensch: "Aufschub erhöht künftige Kosten, Energiepreisrisiken, Klimaschäden und soziale Belastungen.",
+      planet: "Verzögerung hält fossile Emissionen länger im System.",
+      demokratie: "Technikhype kann Handlungsfähigkeit ersetzen; enttäuschte Erwartungen können Wissenschaftsvertrauen beschädigen.",
     },
-    sources: ["ITER - In a Few Lines", "EUROfusion - DEMO"],
+    sources: [
+      "ITER - Updated baseline and timeline",
+      "Max-Planck-Institut für Plasmaphysik - Neuer ITER-Zeitplan",
+      "LLNL / National Ignition Facility - Achieving Fusion Ignition",
+      "STEP Fusion - UK prototype fusion powerplant",
+      "EUROfusion - DEMO",
+      "IAEA - Tritium Breeding",
+      "ITER - Tritium breeding",
+      "UKAEA - Materials challenges for commercial fusion",
+    ],
   },
   {
     title: "„Klimaschutz deindustrialisiert Deutschland“",
@@ -1927,7 +2016,7 @@ const answerExpansions = {
     two_minutes:
       "Die faire Einordnung ist: Kernenergie hat Stärken, aber einfach ist sie als politische Lösung nicht. Niedrige Betriebsemissionen sind ein relevanter Punkt. Aber ein Energiesystem entscheidet sich nicht allein im Betrieb. Es geht um Neubauzeiten, Finanzierung, Bau- und Kostenrisiken, Endlagerung, Sicherheitsarchitektur, Fachkräfte, Lieferketten, gesellschaftliche Akzeptanz, Versicherung, Regulierung und die Frage, was im gleichen Zeitraum mit Netzen, Speichern, Erneuerbaren, Effizienz, Lastmanagement und Industrieumbau möglich wäre. Wirkungsökonomisch sind Opportunitätskosten zentral: Jeder Euro, jedes politische Mandat und jedes Jahr kann nur einmal eingesetzt werden. Eine Technologie kann also abstrakt funktionieren und trotzdem im konkreten Zeitfenster nicht die beste Netto-Wirkung haben. Die bessere Debatte lautet nicht Kernenergie als Identitätsfrage, sondern: Welche Investition senkt rechtzeitig die meisten Risiken für Mensch, Planet und Demokratie?",
   },
-  "fusion-loest-das-problem": {
+  "fusion-loest-das-energieproblem": {
     thirty_seconds:
       "Deshalb muss man Zeithorizonte trennen: Forschung kann langfristige Optionen schaffen. Klimaschutz braucht aber Wirkung in den nächsten Jahren, nicht erst nach möglicher Industrialisierung. Zukunftsforschung ist Ergänzung, keine Ausrede für heutigen Aufschub.",
     two_minutes:
@@ -1949,7 +2038,7 @@ const deepDiveSlugs = [
   "klimaschutz-deindustrialisiert-deutschland",
   "kernenergie-wieder-in-deutschland",
   "kernenergie-einfache-loesung",
-  "fusion-loest-das-problem",
+  "fusion-loest-das-energieproblem",
 ];
 
 const deepDiveDetails = {
@@ -2417,24 +2506,26 @@ const deepDiveDetails = {
     clipHook: "Atomkraft ist nicht die Frage. Die Frage ist: Welche Option wirkt rechtzeitig?",
     caption: "Technologievergleich nach Wirkung: Zeit, Kosten, Risiko, Alternativen.",
   },
-  "fusion-loest-das-problem": {
-    title: "„Fusion löst das Problem“",
-    subtitle: "Forschung ja, Aufschub nein",
+  "fusion-loest-das-energieproblem": {
+    title: "Fusion löst das Energieproblem?",
+    subtitle: "Warum Zukunftstechnologie kein Aufschubargument sein darf",
     confidence: "hoch",
-    readingTime: "13 Minuten",
-    leadQuestion: "Welche Lösung wirkt jetzt - und welche Forschung schafft langfristige Optionen?",
+    readingTime: "20 Minuten",
+    leadQuestion: "Welche Maßnahme senkt im relevanten Zeitfenster real Emissionen, Kosten, Abhängigkeiten und Risiken?",
     claimAnatomy: {
-      original: "Fusion löst das Problem.",
-      extended: "Wir müssen nicht so stark auf heutige Klimaschutzmaßnahmen setzen, weil Fusion das Energieproblem später lösen wird.",
-      trueCore: "Fusion ist wissenschaftlich relevant und kann langfristig eine wichtige Energieoption werden.",
-      missingContext: "Kommerzielle, skalierte Fusionsstromerzeugung ist nicht kurzfristig verfügbar.",
-      falseConclusion: "Aus langfristiger Forschung folgt nicht, dass heutige Emissionsminderung verzichtbar ist.",
+      original: "Fusion löst bald das Energieproblem.",
+      extended: "Wir müssen jetzt nicht so stark auf heutige Klimaschutzmaßnahmen setzen, weil Fusion das Energieproblem später lösen wird.",
+      trueCore: "Fusion ist wissenschaftlich relevant, faszinierend und kann langfristig eine wichtige Energieoption werden.",
+      missingContext: "Kommerzielle, skalierte, netzrelevante Fusionsstromerzeugung ist nicht kurzfristig verfügbar.",
+      falseConclusion: "Aus langfristiger Forschung folgt nicht, dass heutige Emissionsminderung, Netze, Speicher, Effizienz und Elektrifizierung warten können.",
     },
     trueText:
-      "Fusion ist ein bedeutendes Forschungsfeld. Bei erfolgreicher Entwicklung könnte sie langfristig neue Energieoptionen eröffnen.",
+      "Fusion ist ein bedeutendes Forschungsfeld. Bei erfolgreicher Entwicklung könnte sie langfristig neue Energieoptionen eröffnen. Forschung an Plasma, Magneten, Lasern, Materialien, Simulation und Robotik ist wertvoll.",
     missingItems: [
-      "Klimaschutz hat ein akutes Zeitfenster.",
-      "Fusion ist noch keine verfügbare, skalierte Stromquelle.",
+      "Klimaschutz hat ein akutes Zeitfenster bis 2030, 2035 und 2045.",
+      "Fusion ist noch keine verfügbare, skalierte und netzdienliche Stromquelle.",
+      "Target Gain ist nicht Kraftwerks-Nettoleistung.",
+      "Tritium-Selbstversorgung, Brutblankets, Materialien, Wartung, Kosten und Netzintegration bleiben zentrale Fragen.",
       "Netze, Erneuerbare, Speicher, Effizienz, Wärmewende und Industrieumbau wirken jetzt.",
       "Forschung darf nicht gegen Implementierung ausgespielt werden.",
     ],
@@ -2671,7 +2762,7 @@ const psychologyBySlug = {
     patterns: ["Einzelindikator als Gesamturteil", "Zeitfenster ausblenden", "Kosten ausblenden", "Transmutation-Joker", "Opportunitätskosten unsichtbar machen"],
     why: "Kernkraft bietet psychologisch ein starkes Versprechen: viel Energie, wenig CO₂, große Technik und scheinbare Kontrolle. Dadurch erscheint sie einfacher, obwohl sie institutionell, finanziell und sicherheitlich hochkomplex ist.",
   },
-  "fusion-loest-das-problem": {
+  "fusion-loest-das-energieproblem": {
     effects: ["Optimismusbias", "Gegenwartsbias", "Technikwunder-Aufschub"],
     triggers: ["Hoffnung", "Aufschubentlastung", "Erlösungsversprechen"],
     patterns: ["Potenzial mit Wirkung verwechseln", "Zeitpfad verschieben", "heutige Lösungen entwerten"],
@@ -3339,6 +3430,7 @@ function renderIndustryTransformationDossier(claim, sectionLabel = "live") {
 
 function renderDeepDiveDetail(claim) {
   if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "detail");
+  if (claim.slug === "fusion-loest-das-energieproblem") return renderFusionDossier(claim, "detail");
   const detail = deepDiveDetailFor(claim);
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero theme-hero deep-dive-hero">
@@ -4019,6 +4111,78 @@ function sourceCards(cards) {
           </div>`;
 }
 
+const fusionKeyPoints = [
+  ["Fusion ist wissenschaftlich wichtig", "Fortschritte bei Plasma, Magneten, Lasern, Materialien und Diagnostik sind real und verdienen Forschung.", "positive"],
+  ["Aber noch kein kommerzielles Stromsystem", "Bisher gibt es keine breit verfügbare, netzrelevante, wirtschaftliche Fusionsstromerzeugung.", "warning"],
+  ["Target Gain ist nicht Kraftwerksbetrieb", "Ein erfolgreicher Fusionsschuss im Labor ist nicht dasselbe wie kontinuierliche, bezahlbare Stromproduktion mit Wartung, Verfügbarkeit und Netzeinspeisung.", "critical"],
+  ["ITER, STEP und DEMO zeigen die Zeitachse", "Große Programme liegen im Bereich 2030er bis 2040er Jahre für Forschungsbetrieb, Prototypen oder Demonstratoren - nicht für sofortige Massenstromversorgung.", "warning"],
+  ["Tritium und Materialien bleiben zentrale Hürden", "Kommerzielle Deuterium-Tritium-Fusion braucht Tritium-Selbstversorgung, Brutblankets, strahlenresistente Materialien, Wartung und sichere Brennstoffkreisläufe.", "warning"],
+  ["WÖk-Lösung: Forschung plus Sofortwirkung", "Fusion fördern, aber Klimaschutz nicht darauf verschieben: Erneuerbare, Netze, Speicher, Effizienz, Elektrifizierung und Flexibilität jetzt skalieren.", "positive"],
+];
+
+const fusionStageMatrix = [
+  ["Physikalischer Effekt", "Kann Fusion prinzipiell Energie freisetzen?", "Fusionsreaktionen", "kein Kraftwerksbeweis"],
+  ["Plasmaexperiment", "Kann ein Plasma eingeschlossen oder gezündet werden?", "Tokamak, Stellarator, Laserfusion", "keine kontinuierliche Stromproduktion"],
+  ["Target Gain / Q plasma", "Erzeugt das Plasma mehr Energie als direkt eingebracht?", "NIF, ITER-Zielgrößen", "nicht automatisch Nettoanlage"],
+  ["Kraftwerkskomponenten", "Funktionieren Blanket, Materialien, Divertor, Tritiumkreislauf, Wartung?", "DEMO-Technologien", "oft noch nicht industriell qualifiziert"],
+  ["Demonstrationskraftwerk", "Kann Strom erzeugt und Betrieb demonstriert werden?", "STEP, DEMO", "noch keine Massenmarkttechnologie"],
+  ["Kommerzielle Skalierung", "Ist Strom bezahlbar, verfügbar, genehmigt, finanziert und skalierbar?", "zukünftige FPP", "noch offen"],
+  ["Systemwirkung", "Senkt es im Zeitfenster Emissionen und Kosten?", "2030/2035/2045", "entscheidend für Politik heute"],
+];
+
+const fusionTimelineMatrix = [
+  ["bis 2030", "Forschung, Experimente, private Demonstratoren in Entwicklung", "Erneuerbare, Netze, Speicher, Effizienz, Wärmepumpen, E-Mobilität, Lastmanagement"],
+  ["2030-2035", "ITER-Inbetriebnahme/Research-Phasen, private Demonstrationsziele möglich, aber unsicher", "schnelle CO₂-Minderung, Industrieelektrifizierung, Wasserstoff für harte Sektoren"],
+  ["2035-2045", "STEP/DEMO-nahe Demonstration möglich, aber kommerzielle Breite offen", "nahezu klimaneutrales Energiesystem braucht bereits Infrastruktur"],
+  ["nach 2045", "mögliche industrielle Skalierung je nach Erfolg", "potenzieller Zusatzbaustein für saubere Energie, nicht Ersatz für heutiges Handeln"],
+];
+
+const fusionBoundaryMatrix = [
+  ["Physik", "Kann Fusion Energie freisetzen?", "Grundprinzip und Fortschritt", "Kraftwerksbetrieb"],
+  ["Experiment", "Wurde Zündung oder Gain erreicht?", "wissenschaftlicher Durchbruch", "Anlagenenergie, Wiederholrate, Kosten"],
+  ["Kraftwerk", "Kann kontinuierlich Strom erzeugt werden?", "Verfügbarkeit, Wartung, Netz", "Plasmaerfolg allein"],
+  ["Brennstoff", "Gibt es genügend Tritium?", "Tritiumkreislauf und Brutblankets", "Deuterium-Verfügbarkeit allein"],
+  ["Material", "Halten Komponenten Neutronen aus?", "Aktivierung, Schaden, Wartung", "CO₂-Vorteil"],
+  ["Zeit", "Wann ist die Technologie verfügbar?", "Klimawirkung im relevanten Fenster", "langfristige Vision"],
+  ["Kosten", "Was kostet Strom und Infrastruktur?", "Finanzierung, Skalierung, Risiken", "reine Forschungserfolge"],
+  ["Alternativen", "Was könnte stattdessen schneller wirken?", "Opportunitätskosten", "Technikoptimismus"],
+  ["Demokratie", "Wie wird Zukunftshoffnung kommuniziert?", "Vertrauen, Akzeptanz, Aufschubrisiko", "reine Technikdaten"],
+];
+
+const fusionSubclaims = [
+  ["„Fusion liefert bald unbegrenzte Energie“", "Langfristiges Potenzial, aber kein gesicherter kurzfristiger Systemhebel.", "Fusion hat theoretisch enormes Potenzial. Aber „bald unbegrenzt“ überspringt Technologiereife, Kraftwerksbetrieb, Kosten, Wartung, Brennstoffkreislauf, Genehmigung und Skalierung. Für Energiepolitik zählt, wann eine Technologie real verfügbar, bezahlbar und netzdienlich wirkt.", "Welche Emissionen, Kosten und Systemrisiken senkt Fusion bis 2030 oder 2035 konkret?"],
+  ["„NIF hat Nettoenergie erzeugt“", "Target Gain ist real, aber nicht gleich Kraftwerks-Nettoleistung.", "Die National Ignition Facility hat Fusionszündung und Target-Gain-Erfolge erzielt. Das ist wissenschaftlich enorm wichtig. Aber ein NIF-Schuss ist kein Kraftwerksbetrieb. Bei Laserfusion muss man zwischen Energie am Target, Laserenergie, Anlagenenergie, Wiederholrate, Target-Herstellung, Wärmeauskopplung, Turbine, Wartung und Netzeinspeisung unterscheiden.", "Welche Stufe wurde erreicht: physikalischer Schuss, Anlagen-Nettoenergie oder kommerzielle Stromerzeugung?"],
+  ["„ITER beweist, dass Fusion bald kommt“", "ITER ist Forschungsinfrastruktur, kein kommerzielles Kraftwerk.", "ITER soll wichtige Physik- und Technologiefragen des magnetischen Plasmaeinschlusses klären. Er soll aber keinen kommerziellen Strom liefern. Nach neuer Planung liegen wichtige Deuterium-Tritium-Phasen in den späten 2030ern. Danach braucht es Demonstrationskraftwerke wie DEMO, die Stromerzeugung, Wartung, Materialien, Tritiumkreislauf und Verfügbarkeit zeigen.", "Was liefert ITER wann - und welche Maßnahmen liefern bis dahin reale Emissionsminderung?"],
+  ["„Fusion braucht keine Brennstofffrage“", "Deuterium ist verfügbar, Tritium-Selbstversorgung bleibt eine zentrale Hürde.", "Viele Fusionskonzepte nutzen Deuterium und Tritium. Deuterium ist vergleichsweise gut verfügbar. Tritium ist radioaktiv, zerfällt mit einer Halbwertszeit von rund 12 Jahren und muss für kommerzielle Anlagen in ausreichender Menge verfügbar sein. Künftige Anlagen müssen Tritium über Brutblankets aus Lithium selbst erzeugen.", "Ist Tritium-Selbstversorgung in realem Kraftwerksbetrieb gezeigt - oder als Konzept geplant?"],
+  ["„Fusion hat keinen Atommüll“", "Keine Spaltprodukte wie bei Kernspaltung, aber aktivierte Materialien und Wartungsabfälle müssen bilanziert werden.", "Fusion erzeugt keine langlebigen Spaltprodukte wie klassische Kernspaltung. Das ist ein wichtiger Unterschied. Viele Deuterium-Tritium-Konzepte erzeugen aber energiereiche Neutronen, die Materialien aktivieren und beschädigen können. Komponenten müssen ausgetauscht, abgeschirmt, ferngesteuert gewartet und entsorgt werden.", "Welche radioaktiven Materialströme entstehen, wie lange, in welcher Menge und mit welchen Entsorgungswegen?"],
+  ["„Wir können auf Fusion warten“", "Falsches Aufschubargument: Emissionen müssen vor kommerzieller Fusion massiv sinken.", "Die Klimakrise wird durch kumulierte Emissionen getrieben. Warten erhöht spätere Schäden, Anpassungskosten und Risiken. Selbst wenn Fusion später gelingt, ersetzt sie nicht den Aufbau von Netzen, Speichern, Effizienz, Elektrifizierung und erneuerbarer Infrastruktur im aktuellen Zeitfenster.", "Welche Maßnahmen senken bis 2030 und 2035 real Emissionen und Risiken?"],
+  ["„Private Start-ups sind schneller als Politik“", "Dynamik ist real, aber Demonstrator, Finanzierung, Regulierung und Skalierung bleiben offen.", "Private Fusion-Start-ups erhöhen Tempo, Kapital und Ideenvielfalt. Aber Ankündigungen, Demonstrationsziele und Prototypen sind nicht gleich kommerzieller Massenmarkt. Auch private Projekte müssen Kraftwerksbetrieb, Verfügbarkeit, Kosten, Genehmigung, Lieferketten, Wartung, Sicherheit und Netzintegration zeigen.", "Was ist angekündigt, was ist demonstriert, und was ist im Stromsystem verfügbar?"],
+];
+
+const fusionManipulationPatterns = [
+  ["Zukunftsversprechen als Gegenwartsersatz", "Eine mögliche spätere Technologie ersetzt heutiges Handeln.", "Zeitfenster 2030, 2035 und 2045 abfragen."],
+  ["Forschungsdurchbruch als Systembeweis", "Ein wissenschaftlicher Erfolg wird als Beweis für kommerzielle Verfügbarkeit behandelt.", "Entwicklungsstufen trennen: Experiment, Demonstrator, Kraftwerk, Markt."],
+  ["Target Gain als Netzstrom", "Energiegewinn am Target wird mit Kraftwerks-Nettoleistung verwechselt.", "Target, Laser, Anlage, Turbine und Netz getrennt erklären."],
+  ["Tritium ausblenden", "Fusion wird als Brennstofffrage ohne Engpass erzählt.", "Tritium-Selbstversorgung und Brutblankets sichtbar machen."],
+  ["Opportunitätskosten unsichtbar", "Forschung, Kapital und politische Aufmerksamkeit werden als unbegrenzt behandelt.", "Was wirkt mit demselben Geld bis 2030?"],
+  ["Hype als Sedativ", "Technikoptimismus beruhigt Transformationsangst und senkt Handlungsdruck.", "Hoffnung mit Handlungspflicht koppeln."],
+];
+
+const fusionExternalSources = [
+  ["ITER - Updated baseline and timeline", "ITER beschreibt Zielsetzung, neue Baseline und Zeitachsen der Forschungsanlage.", "ITER Zeitplan, volle magnetische Energie, Deuterium-Tritium-Betrieb.", "ITER ist Forschungsanlage, kein kommerzielles Stromkraftwerk.", "https://www.iter.org/few-lines"],
+  ["Max-Planck-Institut für Plasmaphysik - Neuer ITER-Zeitplan", "Wissenschaftliche Einordnung des aktualisierten ITER-Zeitplans.", "2034 wissenschaftlicher Betrieb, 2036 volle magnetische Energie, Zeitplanrisiko.", "Zeitpläne können sich ändern.", "https://www.ipp.mpg.de/5434926/ITER_baseline_2024"],
+  ["LLNL / National Ignition Facility - Achieving Fusion Ignition", "Einordnung der NIF-Zündungs- und Target-Gain-Erfolge.", "Fusionszündung, Target Gain, April-2025-Ergebnis.", "Target Gain ist nicht Kraftwerks-Nettoleistung.", "https://lasers.llnl.gov/science/achieving-fusion-ignition"],
+  ["U.S. Department of Energy - Fusion ignition announcement", "Historischer Kontext des Zündungsdurchbruchs am DOE National Laboratory.", "wissenschaftlicher Kontext und Forschungsdurchbruch.", "Presseereignis nicht als kommerzielle Verfügbarkeit lesen.", "https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition"],
+  ["STEP Fusion - UK prototype fusion powerplant", "Britisches Programm für einen Prototyp-Fusionskraftwerksdemonstrator.", "Prototyp-Ziel bis 2040 und UK-Programm.", "Prototyp ist nicht gleich kommerzieller Massenmarkt.", "https://stepfusion.com/"],
+  ["UKAEA - STEP Programme", "Programmseite zur Entwicklung von STEP und industrieller Fusionskraftwerkstechnologie.", "STEP-Programm, Kraftwerksdemonstration, Industrieentwicklung.", "Projektziele regelmäßig aktualisieren.", "https://www.ukaea.org/work/step/"],
+  ["EUROfusion - DEMO", "DEMO soll nach ITER Kraftwerkstechnologien, Stromerzeugung, Wartung und Integration demonstrieren.", "DEMO als ITER-Nachfolger und Technologie-Demonstration.", "DEMO ist Demonstration, nicht kommerzielle Serienanlage.", "https://euro-fusion.org/programme/demo/"],
+  ["EUROfusion - Roadmap", "Europäische Roadmap von Forschung über ITER/DEMO zu kommerzieller Energie.", "Schritte zu kommerzieller Fusionsenergie.", "Roadmap ist Planungsrahmen, nicht gesicherter Markteintritt.", "https://euro-fusion.org/eurofusion/roadmap/"],
+  ["IAEA - Tritium Breeding", "IAEA-Portal zu Tritium-Brutblankets und deren Funktionen.", "Tritium-Selbstversorgung, Breeding Blankets, Brennstoffkreislauf.", "Fachportal; mit ITER/DEMO-Quellen ergänzen.", "https://nucleus.iaea.org/sites/connect/FUSEpublic/SitePages/Tritium-Breeding.aspx"],
+  ["ITER - Tritium breeding", "ITER erklärt Test Blanket Modules und Brutblanket-Technologie.", "ITER Test Blanket Modules und Brutblanket-Technologie.", "ITER testet Mockups; kommerzielle Selbstversorgung ist eine spätere Hürde.", "https://www.iter.org/machine/supporting-systems/tritium-breeding"],
+  ["IAEA - Fusion Energy", "Grundlagenpapier zu Fusion, Brennstoffen und künftigen Kraftwerken.", "Grundlagen Fusion, Deuterium-Tritium, künftige Kraftwerke.", "Grundlagenquelle; aktuelle Projektstände separat prüfen.", "https://www.iaea.org/sites/default/files/fusionenergy.pdf"],
+  ["UKAEA - Materials challenges for commercial fusion", "Fachpaper zu Materialschäden, Tritium, Transmutation und Neutronenbeschuss.", "Materialschäden, Tritium, Transmutation, Neutronenbeschuss.", "Fachpaper; verständlich zusammenfassen.", "https://scientific-publications.ukaea.uk/wp-content/uploads/UKAEA-CCFE-PR2152.PDF"],
+];
+
 const windKeyPoints = [
   ["Vögel und Fledermäuse sind reale Schutzgüter", "Windenergie kann Kollisionen, Störungen und Habitatkonflikte verursachen. Das muss über Standortwahl, Monitoring und Schutzmaßnahmen ernsthaft minimiert werden.", "warning"],
   ["Fossile Alternativen sind nicht naturneutral", "Kohle, Öl und Gas verursachen Klimaschäden, Luftschadstoffe, Wasserbelastungen, Bergbaufolgen, Flächenverbrauch und Biodiversitätsverluste.", "critical"],
@@ -4073,6 +4237,130 @@ const windExternalSources = [
   ["Fraunhofer ISE - Stromgestehungskosten 2024", "Kostenvergleich verschiedener Stromerzeugungstechnologien.", "Kosten- und Alternativenvergleich.", "Stromgestehungskosten sind nicht Endkundenpreis; Systemkosten ergänzen.", "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/studie-stromgestehungskosten-erneuerbare-energien.html"],
   ["UBA - Emissionsbilanz erneuerbarer Energieträger", "Vermiedene Emissionen durch erneuerbare Energien.", "Systemnutzen und fossile Verdrängung.", "Jahresbezogene Bilanz; Standortwirkung separat prüfen.", "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/03_2025_cc_emissionsbilanz_erneuerbarer_energien_2023.pdf"],
 ];
+
+function renderFusionDossier(claim, mode = "live") {
+  const answers = expandedAnswers(claim);
+  const sectionLabel = mode === "detail" ? "Detail" : "Live";
+  const canonicalPath = mode === "detail" ? "detail" : "live";
+  const matrixTable = (caption, rows, columns = ["Stufe", "Leitfrage", "Beispiel", "Was oft verwechselt wird"]) => `<div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>${escapeHtml(caption)}</caption>
+              <thead><tr>${columns.map((column) => `<th>${escapeHtml(column)}</th>`).join("")}</tr></thead>
+              <tbody>${rows.map((row) => `<tr>${row.map((cell, index) => index === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+            </table>
+          </div>`;
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero theme-hero dossier-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / Fusion</nav>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <h1 class="hero-title">Fusion löst das Energieproblem?</h1>
+          <p class="hero-subtitle">${escapeHtml(claim.subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
+          <p class="radar-abstract"><strong>Kurzformel:</strong> Fusion erforschen. Aber nicht auf Fusion warten.</p>
+          <p class="formula-note"><strong>Hero-Hinweis:</strong> Fusion ist Forschung mit Zukunftspotenzial. Dieses Dossier kritisiert nicht Forschung, sondern das Aufschubnarrativ.</p>
+          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Status: checked_candidate</span></p>
+        </div>
+      </section>
+      ${summaryGrid(fusionKeyPoints, "Fusion Dossier - Das Wichtigste in 6 Punkten")}
+      <nav class="topic-subnav" aria-label="Dossier Navigation" data-search-exclude>
+        <a href="#live-antworten">Live antworten</a>
+        <a href="#zeitfenster-technologie">Zeitfenster &amp; Technologie verstehen</a>
+        <a href="#deep-dive-quellen">Deep Dive &amp; Quellen</a>
+      </nav>
+      <section class="section dossier-tab-panel" id="live-antworten">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Forschung anerkennen, Aufschub stoppen.</h2></div>
+          <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
+            <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
+          </div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Fusion statt Energiewende“. Die richtige Wirkungsfrage lautet: Welche Technologie wirkt wann, zu welchen Kosten und mit welchen Risiken?</p></article>
+          </div>
+          <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+        </div>
+      </section>
+      <section class="section section-soft dossier-tab-panel" id="zeitfenster-technologie">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Zeitfenster &amp; Technologie verstehen</p><h2>Forschung ist nicht dasselbe wie Systemwirkung.</h2><p>Fusion ist ein gutes Beispiel dafür, warum der Wirkungsradar zwischen Hoffnung, Forschung, Demonstration, Industrialisierung und realer Systemwirkung unterscheiden muss. Ein technologischer Durchbruch kann wissenschaftlich enorm sein und trotzdem für aktuelle Energiepolitik noch keine verfügbare Infrastruktur darstellen.</p></div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list"><li>Fusion hat langfristig enormes Potenzial.</li><li>Fusionsreaktionen können sehr hohe Energiedichten erreichen.</li><li>Deuterium ist vergleichsweise gut verfügbar.</li><li>Im Betrieb entstehen keine CO₂-Emissionen wie bei fossilen Kraftwerken.</li><li>Fusion hat keine klassische Kettenreaktion wie Kernspaltung.</li><li>Forschungserfolge bei Magneten, Lasern, Plasmaeinschluss und Diagnostik sind real.</li><li>ITER, STEP, DEMO und private Start-ups zeigen internationale Dynamik.</li><li>Forschung kann technologische Spillover erzeugen.</li><li>Langfristig könnte Fusion ein Baustein einer sauberen Energieversorgung werden.</li></ul></article>
+            <article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list"><li>Es gibt noch keine kommerziell verfügbare Fusionsstromversorgung.</li><li>Ein physikalischer Durchbruch ist nicht gleich Kraftwerksbetrieb.</li><li>Target Gain ist nicht Net Electricity Gain.</li><li>Dauerbetrieb, Wartung und Anlagenverfügbarkeit sind nicht ausreichend skalierte Kraftwerksfragen.</li><li>Deuterium-Tritium-Fusion braucht Tritium-Selbstversorgung über Brutblankets.</li><li>Neutronen belasten Materialien, aktivieren Komponenten und erschweren Wartung.</li><li>Kosten, Finanzierung, Genehmigung, Lieferketten und Bauzeiten sind offen.</li><li>Selbst optimistische Demonstratoren ersetzen nicht die Emissionsminderung bis 2030.</li><li>Der Denkfehler ist, Zukunftspotenzial mit Gegenwartsverfügbarkeit zu verwechseln.</li></ul></article>
+          </div>
+          ${matrixTable("Welche Entwicklungsstufe wird verwechselt?", fusionStageMatrix)}
+          ${matrixTable("Wann wirkt was?", fusionTimelineMatrix, ["Zeitfenster", "Fusionsstatus", "Relevante Energiepolitik"])}
+          ${matrixTable("Welche Bilanzgrenze wird falsch gesetzt?", fusionBoundaryMatrix, ["Bilanzgrenze", "Leitfrage", "Was sie zeigt", "Was sie ausblenden kann"])}
+          <p class="formula-note">Fusion kann eine Option für spätere Systemarchitektur sein. Sie ist keine Entschuldigung für Verzögerung in diesem Jahrzehnt.</p>
+        </div>
+      </section>
+      <section class="section dossier-tab-panel" id="unterclaims">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Unterclaims</p><h2>Hype-Sätze sauber aufklappen.</h2></div>
+          <div class="radar-answer-accordion">${fusionSubclaims.map(([title, judgement, text, question]) => `<details class="radar-answer-item"><summary><span class="radar-answer-time">${escapeHtml(title)}</span> <span class="radar-answer-label">${escapeHtml(judgement)}</span></summary><p>${escapeHtml(text)}</p><p><strong>Bessere Wirkungsfrage:</strong> ${escapeHtml(question)}</p></details>`).join("\n            ")}</div>
+        </div>
+      </section>
+      <section class="section section-soft" id="psychologischer-wirkungscheck">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum Fusion als Aufschub so gut funktioniert.</h2><p>Fusion bietet psychologisch eine ideale Entlastung: große Energie, wenig CO₂, Hightech-Optimismus und scheinbar weniger Veränderungsdruck. Zukunftshoffnung reduziert Gegenwartsdruck.</p></div>
+          ${summaryGrid([["Technological Fix Bias", "Eine technische Zukunftslösung wirkt attraktiver als unbequeme Gegenwartsmaßnahmen.", "warning"], ["Optimism Bias", "Menschen überschätzen die Wahrscheinlichkeit schneller Durchbrüche und unterschätzen Zeit-, Kosten- und Skalierungsrisiken.", "warning"], ["Present Bias", "Unbequeme heutige Investitionen werden leichter verschoben, wenn eine spätere Lösung plausibel klingt.", "critical"], ["Status-quo-Bias", "Fusion erlaubt, bestehende fossile oder träge Strukturen länger als Übergang zu rahmen.", "critical"], ["Komplexitätsreduktion", "Viele Systemfragen werden zu einem einfachen Versprechen: bald kommt die perfekte Energiequelle.", "warning"], ["Motivated Reasoning", "Wer Transformation ablehnt, nutzt Fusion als rational klingende Begründung für Aufschub.", "warning"]], "Fusion Psychologie", "deep-dive-inline-summary")}
+        </div>
+      </section>
+      <section class="section" id="deep-dive-quellen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Deep Dive &amp; Quellen</p><h2>Wirkstoff, Manipulationsmuster, Wirkungspfad und Quellen.</h2></div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Wirkstoff</p><h3 class="card-title">Zukunftstechnologie als Aufschubsedativ</h3><p class="card-text">Eine reale oder mögliche künftige Technologie wird genutzt, um heutige Handlungsnotwendigkeit zu beruhigen oder zu verschieben. Der Blick wandert vom aktuellen Emissions- und Infrastrukturzeitfenster auf eine spätere technische Lösung.</p></article>
+            <article class="card"><p class="card-kicker">Narrativanalyse</p><h3 class="card-title">Technikwunder-Aufschub</h3><p class="card-text">Hoffnung ist nicht das Problem. Problematisch wird Hoffnung, wenn sie Handeln ersetzt und politisch verfügbare Maßnahmen entwertet.</p></article>
+          </div>
+          <div class="card-grid deep-dive-source-grid">${fusionManipulationPatterns.map(([label, description, counter]) => `<article class="card"><p class="card-kicker">Manipulationsmuster</p><h3 class="card-title">${escapeHtml(label)}</h3><p class="card-text">${escapeHtml(description)}</p><p class="card-text"><strong>Gegenbewegung:</strong> ${escapeHtml(counter)}</p></article>`).join("")}</div>
+          <ol class="timeline radar-flow radar-effect-path">${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("")}</ol>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Folgen falschen Handelns</p><ul class="clean-list">${claim.consequences.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+            <article class="card"><p class="card-kicker">Leitsatz</p><h3 class="card-title">Eine Technologie, die vielleicht später hilft, darf nicht verhindern, dass wir heute handeln.</h3><p class="card-text">Die Klimakrise wird im Zeitfenster entschieden, nicht im Zukunftsversprechen.</p></article>
+          </div>
+          ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], "Fusion MPD", "mpd-impact-panel")}
+          ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, "critical"]], "Fusion SDG", "climate-sdg-panel")}
+          ${summaryGrid([["Zeit bis netzdienlicher Wirkung", "Bewertet, wann eine Technologie real Strom oder Systemdienstleistung liefert.", "warning"], ["Kraftwerks-Nettoleistung", "Unterscheidet physikalischen Gain von realer Stromabgabe ins Netz.", "critical"], ["Technologiereifegrad", "Bewertet Stufe von Forschung, Demonstrator, Pilot und kommerzieller Skalierung.", "warning"], ["Tritium- und Materialkreislauf", "Bewertet Brennstoff, Brutblanket, Aktivierung, Komponentenwechsel und Entsorgung.", "warning"], ["CO₂-Minderung im relevanten Zeitfenster", "Bewertet Emissionswirkung bis 2030, 2035 und 2045.", "positive"], ["Wissenschaftsvertrauen", "Bewertet transparente Kommunikation von Fortschritt, Unsicherheit und Grenzen.", "positive"]], "Fusion Indikatorfamilien", "deep-dive-inline-summary")}
+          ${woekSolutionMatrix(claim.woekSolution)}
+          <section class="section section-soft" aria-labelledby="fusion-internal-links">
+            <div class="card">
+              <p class="card-kicker">Interne Links</p>
+              <h2 class="card-title" id="fusion-internal-links">Narrative, Begriffe und verwandte Dossiers.</h2>
+              <div class="radar-link-cluster">
+                <a href="/wirkungsradar/narrative/technikwunder-aufschub/">Technikwunder-Aufschub</a>
+                <a href="/wirkungsradar/narrative/fusion-als-rettung/">Fusion als Rettung</a>
+                <a href="/wirkungsradar/narrative/target-gain-verwechslung/">Target-Gain-Verwechslung</a>
+                <a href="/wirkungsradar/narrative/zeitfensterblindheit/">Zeitfensterblindheit</a>
+                <a href="/wirkungsradar/narrative/hype-als-sedativ/">Hype als Sedativ</a>
+                <a href="/wirkungsradar/narrative/forschung-gegen-transformation/">Forschung gegen Transformation</a>
+                <a href="/begriffe/fusion/">Fusion</a>
+                <a href="/begriffe/target-gain/">Target Gain</a>
+                <a href="/begriffe/kraftwerks-nettoleistung/">Kraftwerks-Nettoleistung</a>
+                <a href="/begriffe/tritium/">Tritium</a>
+                <a href="/begriffe/brutblanket/">Brutblanket</a>
+                <a href="/begriffe/technologiereifegrad/">Technologiereifegrad</a>
+                <a href="/begriffe/zeitfensterblindheit/">Zeitfensterblindheit</a>
+                <a href="/begriffe/aufschubnarrativ/">Aufschubnarrativ</a>
+              </div>
+            </div>
+          </section>
+          ${sourceCards(fusionExternalSources)}
+          ${internalLinks()}
+          ${factStatusBadge()}
+        </div>
+      </section>
+    </main>`;
+  return pageShell({
+    title: `Fusion löst das Energieproblem? - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
+    description: sentence(claim.abstract),
+    canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
+    base: "../../../",
+    main,
+  });
+}
 
 function renderWindEnergyNatureDossier(claim, mode = "live") {
   const answers = expandedAnswers(claim);
@@ -4321,6 +4609,7 @@ function renderLiveCard(claim) {
   if (claim.slug === "deutschland-nur-zwei-prozent") return renderGermanyTwoPercentDossier(claim);
   if (claim.slug === "co2-preis-oder-fossile-systemkosten") return renderCo2SystemCostsDossier(claim, "live");
   if (claim.slug === "windraeder-voegel-wald-beton-rueckbau") return renderWindEnergyNatureDossier(claim, "live");
+  if (claim.slug === "fusion-loest-das-energieproblem") return renderFusionDossier(claim, "live");
   if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "live");
   const sources = claim.sources.map(slugSource);
   const answers = expandedAnswers(claim);
@@ -4446,6 +4735,26 @@ const windGlossaryTerms = [
   ["fledermausabschaltung", "Fledermausabschaltung", "Betriebsregel, bei der Windenergieanlagen zu Zeiten hoher Fledermausaktivität temporär abgeschaltet werden.", "Fledermausabschaltungen sind ein zentraler Baustein zur Risikominderung."],
 ];
 
+const fusionNarrativePages = [
+  ["technikwunder-aufschub", "Technikwunder-Aufschub", "Wenn zukünftige Technologien heutiges Handeln ersetzen sollen.", "hoch", "Das Narrativ nutzt reale Forschung oder mögliche künftige Durchbrüche, um heutige Maßnahmen weniger dringlich erscheinen zu lassen. Der wahre Kern ist: Forschung kann langfristig wichtig sein. Der Denkfehler ist, Zukunftspotenzial mit Gegenwartsverfügbarkeit zu verwechseln.", "Forschung anerkennen, Zeitfenster öffnen und nach Wirkung bis 2030, 2035 und 2045 fragen."],
+  ["fusion-als-rettung", "Fusion als Rettung", "Wenn Fusionsforschung als Sofortlösung für Energiepolitik gerahmt wird.", "hoch", "Fusion kann langfristig ein wichtiger Baustein werden. Problematisch wird der Rettungsframe, wenn er Erneuerbare, Netze, Speicher, Effizienz und Elektrifizierung als unnötige Übergangslösungen abwertet.", "Fusion als Forschungsoption stärken, aber Soforthebel nicht verschieben."],
+  ["target-gain-verwechslung", "Target-Gain-Verwechslung", "Wenn physikalischer Energiegewinn mit Kraftwerks-Nettoleistung verwechselt wird.", "hoch", "Target Gain kann ein beeindruckender wissenschaftlicher Meilenstein sein. Er ersetzt aber nicht die Frage nach Anlagenenergie, Wiederholrate, Turbine, Wartung, Kosten und Netzeinspeisung.", "Target, Anlage, Kraftwerk und Netz sauber trennen."],
+  ["zeitfensterblindheit", "Zeitfensterblindheit", "Wenn eine Lösung bewertet wird, ohne zu fragen, wann sie wirkt.", "hoch", "Zeitfensterblindheit macht aus einer möglichen späteren Option eine heutige Antwort. In der Klimakrise zählt aber, welche Maßnahme bis 2030, 2035 und 2045 real Emissionen, Kosten und Risiken senkt.", "Jede Technologie mit Jahreszahl, Baupfad, Genehmigung, Finanzierung und Alternativenkosten prüfen."],
+  ["hype-als-sedativ", "Hype als Sedativ", "Wenn Technologieoptimismus gesellschaftlichen Handlungsdruck beruhigt.", "mittel", "Hype kann Hoffnung geben, aber auch Gegenwartsdruck senken. Bei Fusion wirkt das besonders stark, weil die Vision sauberer, großer Energie psychologisch entlastet.", "Hoffnung mit Handlungspflicht koppeln: Wenn es später hilft, gut; bis dahin muss das System wirken."],
+  ["forschung-gegen-transformation", "Forschung gegen Transformation", "Wenn Forschung rhetorisch gegen heute verfügbare Lösungen ausgespielt wird.", "hoch", "Forschung und Transformation sind keine Gegensätze. Problematisch wird es, wenn Forschungsförderung als Argument dient, Erneuerbare, Netze, Speicher, Effizienz und Elektrifizierung zu bremsen.", "Forschung plus Umsetzung denken, nicht Forschung statt Umsetzung."],
+];
+
+const fusionGlossaryTerms = [
+  ["fusion", "Fusion", "Kernfusion ist die Verschmelzung leichter Atomkerne zu schwereren Kernen, wobei Energie freiwerden kann.", "Fusion ist wissenschaftlich vielversprechend, aber kommerzielle Stromproduktion ist noch nicht breit verfügbar."],
+  ["target-gain", "Target Gain", "Target Gain beschreibt das Verhältnis der Fusionsenergie, die aus einem Target freigesetzt wird, zur Energie, die direkt auf das Target eingebracht wurde.", "Target Gain ist nicht dasselbe wie Netto-Stromerzeugung eines Kraftwerks."],
+  ["kraftwerks-nettoleistung", "Kraftwerks-Nettoleistung", "Kraftwerks-Nettoleistung ist die elektrische Leistung, die ein Kraftwerk nach Abzug seines Eigenverbrauchs tatsächlich ins Netz einspeist.", "Für Energiesysteme zählt nicht nur Plasmaenergie, sondern nutzbarer Netzstrom."],
+  ["tritium", "Tritium", "Tritium ist ein radioaktives Wasserstoffisotop, das in vielen Fusionskonzepten zusammen mit Deuterium als Brennstoff genutzt wird.", "Tritium ist knapp und muss für kommerzielle Fusionskraftwerke voraussichtlich im Reaktor selbst gebrütet werden."],
+  ["brutblanket", "Brutblanket", "Ein Brutblanket ist eine Komponente eines Fusionsreaktors, die mit Hilfe von Neutronen aus Lithium Tritium erzeugen und zugleich Wärme sowie Strahlung managen soll.", "Brutblankets sind eine Schlüsseltechnologie für Tritium-Selbstversorgung."],
+  ["technologiereifegrad", "Technologiereifegrad", "Der Technologiereifegrad beschreibt, wie weit eine Technologie von Grundlagenforschung über Demonstration bis zur kommerziellen Anwendung entwickelt ist.", "Ein Laborerfolg hat einen anderen Reifegrad als ein marktfähiges Kraftwerk."],
+  ["zeitfensterblindheit", "Zeitfensterblindheit", "Zeitfensterblindheit ist ein Denkfehler, bei dem eine Lösung bewertet wird, ohne zu prüfen, ob sie im relevanten Zeitraum wirkt.", "Für Klimapolitik zählt, was bis 2030, 2035 und 2045 real Wirkung erzeugt."],
+  ["aufschubnarrativ", "Aufschubnarrativ", "Ein Aufschubnarrativ verzögert heutiges Handeln mit Verweis auf spätere Technologien oder spätere Lösungen.", "Aufschubnarrative wirken beruhigend, erhöhen aber künftige Risiken."],
+];
+
 const evGlossaryTerms = [
   ["ladeangst", "Ladeangst", "Sorge, ein Elektrofahrzeug nicht rechtzeitig, nicht zuverlässig oder nicht schnell genug laden zu können.", "Ladeangst entsteht oft aus realen Einzelfällen, fehlender Erfahrung oder schlechter Infrastruktur. Gegenmittel sind Verfügbarkeit, Schnellladen, Alltagsladen und transparente Informationen."],
   ["alltagsladen", "Alltagsladen", "Laden an Orten, an denen Fahrzeuge ohnehin stehen, etwa zuhause, am Arbeitsplatz, beim Einkauf, im Parkhaus oder am Hotel.", "Alltagsladen reduziert Ladezeit als Zusatzaufwand, weil Standzeit zu Ladezeit wird."],
@@ -4502,6 +4811,31 @@ function renderWindNarrativePage([slug, title, subtitle, riskLevel, abstract, re
           <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht beschwichtigen, nicht spiegeln, nicht entwerten. Sondern Zielkonflikt anerkennen und zur besseren Wirkungsfrage zurückführen.</p></article>
         </div>
         <p><a class="btn btn-primary" href="../../live/windraeder-voegel-wald-beton-rueckbau/">Windenergie-Dossier öffnen</a></p>
+      </section>
+    </main>`;
+  return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
+}
+
+function renderFusionNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Narrative</a> / ${escapeHtml(title)}</nav>
+          <p class="hero-kicker">Narrativbibliothek · Fusion &amp; Zeitfenster</p>
+          <h1 class="hero-title">${escapeHtml(title)}</h1>
+          <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(abstract)}</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Wirkungsrisiko: ${escapeHtml(riskLevel)}</span></p>
+        </div>
+      </section>
+      ${topicSubnav("Narrative", "../")}
+      ${summaryGrid([["Risiko", riskLevel, riskLevel === "hoch" ? "critical" : "warning"], ["Typische Wirkung", "Zukunftshoffnung senkt Gegenwartsdruck.", "warning"], ["Gegenbewegung", response, "positive"], ["Leuchtturm-Dossier", "Fusion löst das Energieproblem?", "positive"]], `${title} Summary`)}
+      <section class="section">
+        <div class="card-grid two">
+          <article class="card"><p class="card-kicker">Psychologischer Hebel</p><h2 class="card-title">Hoffnung ersetzt Handlungsdruck.</h2><p class="card-text">Technological Fix Bias, Optimism Bias, Status-quo-Bias und Komplexitätsreduktion machen spätere Hightech-Lösungen emotional attraktiv.</p></article>
+          <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht zynisch werden. Erst Forschung anerkennen, dann Entwicklungsstufe, Zeitfenster, Netzwirkung und Opportunitätskosten klären.</p></article>
+        </div>
+        <p><a class="btn btn-primary" href="../../live/fusion-loest-das-energieproblem/">Fusion-Dossier öffnen</a></p>
       </section>
     </main>`;
   return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
@@ -4573,6 +4907,27 @@ function renderWindGlossaryPage([slug, label, definition, hover]) {
         <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
         <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
         <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, Windenergie nicht als Lagerfrage, sondern als konkrete Wirkungsprüfung nach Mensch, Planet und Demokratie zu behandeln.</p></section>
+      </div>
+    </main>`;
+  return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
+}
+
+function renderFusionGlossaryPage([slug, label, definition, hover]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="term-hero">
+        <div class="term-hero__copy">
+          <nav class="breadcrumb"><a href="../">Begriffe</a> / ${escapeHtml(label)}</nav>
+          <p class="eyebrow">Glossar der Wirkungsökonomie</p>
+          <h1>${escapeHtml(label)}</h1>
+          <p class="lead">${escapeHtml(definition)}</p>
+          <p class="term-meta">Kategorie: Wirkungsradar · Fusion · Datenstand: ${UPDATED_AT}</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsradar/live/fusion-loest-das-energieproblem/">Fusion-Dossier</a><a class="btn btn-secondary" href="../">Alle Begriffe</a></div>
+        </div>
+      </section>
+      <div class="term-page">
+        <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
+        <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
+        <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, Fusionsforschung nicht als Lagerfrage zu behandeln, sondern nach Entwicklungsstufe, Zeitfenster, Netzwirkung, Kosten und Alternativenwirkung zu prüfen.</p></section>
       </div>
     </main>`;
   return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
@@ -4665,6 +5020,16 @@ writeFile("content/wirkungsradar/source-packs/wind-energy-nature-v1.yaml", `# Ge
     { label: title, url, use_for: [use_for], warning, shows },
   ])),
 }).trim()}\n`);
+writeFile("content/wirkungsradar/source-packs/fusion-energy-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
+  id: "fusion-energy-v1",
+  last_verified: UPDATED_AT,
+  update_frequency: "quarterly",
+  dossier: "fusion-loest-das-energieproblem",
+  sources: Object.fromEntries(fusionExternalSources.map(([title, shows, use_for, warning, url]) => [
+    title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, ""),
+    { label: title, url, use_for: [use_for], warning, shows },
+  ])),
+}).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/industry-transformation-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(industrySourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/nuclear-germany-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
   id: "nuclear-germany-v1",
@@ -4748,6 +5113,9 @@ if (windEnergyNatureClaim) {
 for (const narrative of windNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderWindNarrativePage(narrative));
 }
+for (const narrative of fusionNarrativePages) {
+  writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderFusionNarrativePage(narrative));
+}
 for (const narrative of industryNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderIndustryNarrativePage(narrative));
 }
@@ -4757,6 +5125,10 @@ for (const narrative of nuclearNarrativePages) {
 for (const term of windGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;
   if (!fs.existsSync(termPath)) writeFile(termPath, renderWindGlossaryPage(term));
+}
+for (const term of fusionGlossaryTerms) {
+  const termPath = `begriffe/${term[0]}/index.html`;
+  if (!fs.existsSync(termPath)) writeFile(termPath, renderFusionGlossaryPage(term));
 }
 for (const term of evGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;

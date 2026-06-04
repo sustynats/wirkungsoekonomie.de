@@ -446,7 +446,7 @@ const existingClimateDetails = [
   ["batterien-sind-nicht-recyclebar/", "Klima & Energie", "„Batterien sind nicht recyclebar“", "Akku-Faktencheck, Batteriechemie, Recycling und Kreislaufanalyse."],
   ["kernenergie-wieder-in-deutschland/", "Klima & Energie", "„Kernkraft zurück?“", "CO₂-armer Betrieb, Zeitfenster, Kosten, Endlager und Alternativen."],
   ["kernenergie-einfache-loesung/", "Klima & Energie", "„Kernenergie wäre die einfache Lösung“", "Zeit-, Kosten- und Risikooffenheiten."],
-  ["fusion-loest-das-problem/", "Klima & Energie", "„Fusion löst das Problem“", "Forschung ja, Aufschub nein."],
+  ["fusion-loest-das-energieproblem/", "Klima & Energie", "Fusion löst das Energieproblem?", "Forschung ja, Aufschub nein."],
 ];
 
 const freedomBox = {
@@ -912,7 +912,7 @@ const climateLiveSlugs = [
   "batterien-sind-nicht-recyclebar",
   "kernenergie-wieder-in-deutschland",
   "kernenergie-einfache-loesung",
-  "fusion-loest-das-problem",
+  "fusion-loest-das-energieproblem",
   "klimaschutz-deindustrialisiert-deutschland",
 ];
 
