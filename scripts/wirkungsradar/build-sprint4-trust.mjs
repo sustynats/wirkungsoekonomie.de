@@ -11,6 +11,7 @@ const editorialSentence =
   "Vertrauen entsteht nicht durch Autorität, sondern durch sichtbare Prüfung: Datenstand, Quellen, Grenzen, Gegenposition, Bilanzgrenze und Korrekturfähigkeit. Der Wirkungsradar muss nicht unfehlbar wirken. Er muss lernfähig, transparent und überprüfbar sein.";
 
 const p0Slugs = p0DossiersV2.map((dossier) => dossier.slug);
+const curatedStandaloneSlugs = new Set(["radwege-in-peru"]);
 
 const sources = [
   source("uba_emissions_inventory", "Umweltbundesamt Emissionsdaten", "Umweltbundesamt", "https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland", "official_agency", "Deutschland", "de", "annual", "A", ["Emissionen Deutschland", "Bilanzgrenzen", "Klima-Datenstand"], ["Die Quelle entscheidet nicht allein, wie Verantwortung politisch verteilt wird."]),
@@ -485,6 +486,7 @@ function feedbackBox(dossier) {
 
 function injectTrustIntoDossierPages() {
   for (const dossier of p0DossiersV2) {
+    if (curatedStandaloneSlugs.has(dossier.slug)) continue;
     for (const area of ["live", "detail"]) {
       const file = OUT("wirkungsradar", area, dossier.slug, "index.html");
       if (!fs.existsSync(file)) continue;

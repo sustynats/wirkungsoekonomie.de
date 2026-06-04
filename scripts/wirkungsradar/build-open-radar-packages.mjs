@@ -850,8 +850,10 @@ function updateStatusPage(packages) {
 
 const aliasPackages = routeAliasPackages.map(routeAliasPackage);
 const allPackages = [...openPackages, ...aliasPackages, ...narrativeCasePackages, ...missingDetailPackages.map(fallbackPackage)];
+const curatedStandaloneSlugs = new Set(["radwege-in-peru"]);
 
 for (const item of allPackages) {
+  if (curatedStandaloneSlugs.has(item.slug)) continue;
   if (!item.generatedFromExistingLive) {
     writeFile(`wirkungsradar/live/${item.slug}/index.html`, livePage(item));
   }

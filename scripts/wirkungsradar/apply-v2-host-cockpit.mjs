@@ -7,6 +7,7 @@ const ROOT = process.cwd();
 const LIVE_DIR = path.join(ROOT, "wirkungsradar/live");
 const UPDATED_AT = "03.06.2026";
 const p0DossiersBySlug = new Map(p0DossiersV2.map((dossier) => [dossier.slug, dossier]));
+const curatedStandaloneSlugs = new Set(["radwege-in-peru"]);
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -687,6 +688,7 @@ function stripP0HeroProblemCopy(html) {
 function transformLivePage(file) {
   const slug = path.basename(path.dirname(file));
   if (slug === "live") return false;
+  if (curatedStandaloneSlugs.has(slug)) return false;
   const html = fs.readFileSync(file, "utf8");
   const p0Dossier = p0DossiersBySlug.get(slug);
   const baseHtml = p0Dossier ? stripLegacyP0Body(stripP0HeroProblemCopy(stripGeneratedV2(html))) : stripGeneratedV2(html);

@@ -148,6 +148,7 @@ function enforcePsychologyPosition(html) {
 
 let changed = 0;
 for (const file of files(radarDir)) {
+  if (file.includes(`${path.sep}radwege-in-peru${path.sep}`)) continue;
   const before = fs.readFileSync(file, "utf8");
   let after = normalizeText(before);
   after = normalizePsychologyModules(after);
