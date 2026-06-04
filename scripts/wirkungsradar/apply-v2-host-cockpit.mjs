@@ -569,7 +569,7 @@ function renderAnswerTabs(data) {
             <details class="radar-answer-item"><summary><span class="radar-answer-time">Live</span><span class="radar-answer-label">20–35 Sekunden</span></summary><p>${escapeHtml(data.live)}</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">Ein gutes Bild</span><span class="radar-answer-label">anschaulich</span></summary><p>${escapeHtml(data.example)}</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">Panel</span><span class="radar-answer-label">längere Antwort</span></summary><p>${escapeHtml(data.panel)}</p></details>
-            <details class="radar-answer-item"><summary><span class="radar-answer-time">Rückfrage</span><span class="radar-answer-label">Frame öffnen</span></summary><p>${escapeHtml(data.question)}</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">Die bessere Frage</span><span class="radar-answer-label">Rechnung öffnen</span></summary><p>${escapeHtml(data.question)}</p></details>
           </div>
         </div>
       </section>`;
@@ -612,7 +612,9 @@ function buildData(slug, html) {
     example: override.example || fallbackExample,
     secondExampleTitle: override.secondExampleTitle || "",
     secondExample: override.secondExample || "",
-    question: override.question || shortText(firstMatch(html, /<p class="card-kicker">Gute Rückfrage<\/p>[\s\S]*?<p class="card-text">([\s\S]*?)<\/p>/i) || "Wie sieht die bessere Lösung aus, und was wird dadurch messbar besser?", 180),
+    question:
+      override.question ||
+      shortText(firstMatch(html, /<p class="card-kicker">(?:Die bessere Frage|Die bessere Frage)<\/p>[\s\S]*?<p class="card-text">([\s\S]*?)<\/p>/i) || "Wie sieht die bessere Lösung aus, und was wird dadurch messbar besser?", 180),
     oldFrame: override.oldFrame || `${claim} - und damit sei die Sache erledigt.`,
     notThis: doNot[0] || "Das ist einfach falsch.",
     better: override.better || shortText(answer, 260),

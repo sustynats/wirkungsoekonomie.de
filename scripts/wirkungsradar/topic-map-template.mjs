@@ -1,6 +1,6 @@
 const UPDATED_AT = "2026-06-04";
 
-function topicCard({ kicker, title, checked, seeds, narratives, psychology, ctaHref, ctaLabel = "Cluster öffnen" }) {
+function topicCard({ kicker, title, seeds, narratives, psychology, ctaHref, ctaLabel = "Cluster öffnen" }) {
   const checkedItems = checked.map((item) => `<li>${item.href ? `<a href="${item.href}">${item.label}</a>` : item.label}</li>`).join("");
   const seedItems = seeds.map((item) => `<li>${item}</li>`).join("");
   const cta = ctaHref
@@ -227,7 +227,7 @@ export function renderRadarTopicMapPage(pageShell) {
           <div class="section-header"><p class="hero-kicker">Redaktionelle Regeln</p><h2>So wird ein Backlog-Eintrag ein Wirkungscheck.</h2></div>
           <div class="radar-rule-grid">
             <article class="card"><p class="card-kicker">Pflichtfelder</p><p class="card-text">Cluster, Claim, wahrer Kern, zentrale Verkürzung, Narrativfamilien, psychologische Haupthebel, Manipulationsmuster, MPD-Risiko, WÖk-Lösungspfad, Quellenbedarf, Status und Priorität.</p></article>
-            <article class="card"><p class="card-kicker">Statuswerte</p><p class="card-text">seed, draft, draft_missing_sources, draft_missing_psychology, draft_missing_woek_solution, checked_candidate, checked, checked_lighthouse, needs_update, archived.</p></article>
+            <article class="card"><p class="card-kicker">Statuswerte</p><p class="card-text">seed, draft, draft_missing_sources, draft_missing_psychology, draft_missing_woek_solution, draft_missing_positive_example, needs_update, archived.</p></article>
             <article class="card"><p class="card-kicker">Schutzregeln</p><p class="card-text">Wahre Kerne anerkennen. Keine Gruppen abwerten. Keine Menschen pathologisieren. Psychologie als Wirkmechanismus erklären, nicht als Diagnose verwenden.</p></article>
           </div>
         </div>

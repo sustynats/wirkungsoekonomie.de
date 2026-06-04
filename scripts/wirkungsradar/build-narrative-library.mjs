@@ -2266,7 +2266,7 @@ function renderDetail(item) {
                 <ul>
                   ${item.dontDo.map((entry) => `<li>${escapeHtml(entry)}</li>`).join("\n                  ")}
                 </ul>
-                <p><strong>Gute Rückfrage:</strong> ${escapeHtml(item.redirectQuestion)}</p>
+                <p><strong>Die bessere Frage:</strong> ${escapeHtml(item.redirectQuestion)}</p>
               </div>
             </div>
 

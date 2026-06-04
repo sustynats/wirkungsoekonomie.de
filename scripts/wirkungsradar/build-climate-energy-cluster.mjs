@@ -2494,7 +2494,7 @@ const deepDiveDetails = {
     trueText: "Schlecht gestaltete Transformation kann Industrie belasten. Nicht-Transformation ist aber ebenfalls ein Standort- und Kostenrisiko.",
     missingItems: ["CAPEX/OPEX-Unterschiede", "fossile Systemkosten", "neue Transformationscluster", "Netze, Speicher und Standortnähe", "Batterien, Halbleiter, Rechenzentren, E-Lkw und Ladeinfrastruktur"],
     evidence: {
-      status: "checked_candidate",
+      status: "draft_missing_positive_example",
       level: "mittel bis hoch",
       uncertainty: "Projektstatus, Industriepreise, Förderungen, Netzausbau und Investitionsentscheidungen müssen laufend aktualisiert werden.",
       sourceKeys: ["industry_transformation_v1"],
@@ -3833,13 +3833,13 @@ function renderIndustryTransformationDossier(claim, sectionLabel = "live") {
           <h1 class="hero-title">Klimaschutz deindustrialisiert Deutschland?</h1>
           <p class="hero-subtitle">${escapeHtml(claim.subtitle)}</p>
           <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)} Die bessere Frage lautet nicht: Klimaschutz oder Industrie? Sondern: Welche Industrie bleibt in Deutschland wettbewerbsfähig, wenn Energie, Mobilität, Halbleiter, Rechenzentren, Batterien, Wärme, Logistik und Produktion klimaneutral, resilient und bezahlbar werden müssen?</p>
-          <p class="radar-status-line"><span>Status: checked_candidate</span><span>Datenstand: ${UPDATED_AT}</span><span>Hinweis: Strukturwandel ist real, aber Niedergangsframe ist verkürzt</span></p>
+          <p class="radar-status-line"><span>v2-Prüfung läuft</span><span>Datenstand: ${UPDATED_AT}</span><span>Hinweis: Strukturwandel ist real, aber Niedergangsframe ist verkürzt</span></p>
         </div>
       </section>
       ${summaryGrid([["Kurzurteil", claim.summary.judgement, "warning"], ["Leitsatz", "Industrie bleibt nicht, indem man alte Kostenstrukturen konserviert. Industrie bleibt, wenn der Standort die nächste Technologie- und Energiephase gewinnt.", "positive"], ["Kernthese", "Nicht Klimaschutz deindustrialisiert Deutschland. Fossile Abhängigkeit, verschleppte Infrastruktur, hohe Systemkosten und fehlende Transformationsfähigkeit gefährden Industrie.", "critical"], ["Kurzformel", "Transformation ist nicht Deindustrialisierung. Transformation ist Standortumbau.", "positive"], ["Noch kürzer", "Nicht Industrie bewahren, wie sie war. Industrie erneuern, damit sie bleibt.", "positive"], ["Risiko", claim.summary.risk, "critical"]], `${claim.title} Summary`, "deep-dive-summary-grid")}
       <section class="section radar-summary-section" id="sechs-punkte"><div class="radar-section-intro"><p class="hero-kicker">Das Wichtigste</p><h2>Sechs Punkte zur Standortrechnung.</h2></div>${summaryGrid(industryKeyPoints, "Industrie Transformation Summary")}</section>
       ${topicSubnav(sectionLabel === "detail" ? "Detail" : "Live", "../")}
-      <section class="section" id="live-antworten"><div><div class="section-header"><p class="hero-kicker">Tab 1</p><h2>Live antworten.</h2></div><div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge"><details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details></div><div class="card-grid two"><article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article><article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Niedergangsframe. Die bessere Wirkungsfrage ist: Welche Standortbedingungen machen Industrie in der klimaneutralen Wirtschaft wettbewerbsfähig?</p></article></div></div></section>
+      <section class="section" id="live-antworten"><div><div class="section-header"><p class="hero-kicker">Tab 1</p><h2>Live antworten.</h2></div><div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge"><details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details></div><div class="card-grid two"><article class="card"><p class="card-kicker">Die bessere Frage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article><article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Niedergangsframe. Die bessere Wirkungsfrage ist: Welche Standortbedingungen machen Industrie in der klimaneutralen Wirtschaft wettbewerbsfähig?</p></article></div></div></section>
       <section class="section section-soft"><div class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><h2 class="card-title">Was man nicht tun sollte.</h2>${htmlList(claim.dontDo)}</div></section>
       ${renderIndustryUnderstandingSections()}
       <section class="section dossier-tab-panel" id="wirkstoffanalyse"><div><div class="section-header"><p class="hero-kicker">Wirkstoffanalyse</p><h2>Transformationskosten als Niedergangsbeweis.</h2><p>Der Frame verschiebt Aufmerksamkeit von fossilen Systemkosten, neuen Wertschöpfungsfeldern und Standorthebeln auf kurzfristige Belastungen.</p></div>${htmlList(["fossile Brennstoffkosten", "Importabhängigkeit", "CO₂-Kosten", "Klimaschäden", "neue Industriecluster", "LCOE erneuerbarer Energien", "CAPEX/OPEX-Unterschiede", "Netz- und Speicherinfrastruktur", "Power Purchase Agreements", "Batteriezellfertigung", "Halbleiter und Leistungselektronik", "KI-Rechenzentren", "Ladeinfrastruktur und E-Lkw", "T-SROI von Infrastrukturinvestitionen"])}</div></section>
@@ -4330,7 +4330,7 @@ function renderGermanyTwoPercentDossier(claim) {
             </div>
           </article>
           <div class="card-grid two dossier-live-support">
-            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">Zur Wirkungsfrage zurück.</h3><p class="card-text">${escapeHtml(claim.redirectQuestion)}</p></article>
+            <article class="card"><p class="card-kicker">Die bessere Frage</p><h3 class="card-title">Zur Wirkungsfrage zurück.</h3><p class="card-text">${escapeHtml(claim.redirectQuestion)}</p></article>
             <article class="card"><p class="card-kicker">Frame nicht übernehmen</p><h3 class="card-title">Erst die Bilanzgrenze klären.</h3><p class="card-text">${escapeHtml(liveResponse.frameCheck)}</p></article>
           </div>
           <div class="card dossier-dont-card">
@@ -4934,7 +4934,7 @@ function renderHydrogenDossier(claim, mode = "live") {
             <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
           </div>
           <div class="card-grid two">
-            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Die bessere Frage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
             <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Wasserstoff löst alles“. Die richtige Wirkungsfrage lautet: Wo wirkt direkter Strom besser - und wo braucht das System wirklich Wasserstoff?</p></article>
             <article class="card"><p class="card-kicker">Kernformel</p><h3 class="card-title">Wasserstoffstrom ist der Notvorrat, nicht das tägliche Brot.</h3><p class="card-text">Wasserstoff ja. Dauerverstromung nein.</p></article>
             <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
@@ -5040,7 +5040,7 @@ function renderEFuelDossier(claim, mode = "live") {
       <section class="hero radar-page-hero theme-hero dossier-hero">
         <div class="radar-hero-copy">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / E-Fuels</nav>
-          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm</p>
           <h1 class="hero-title">E-Fuels retten den Verbrenner?</h1>
           <p class="hero-subtitle">Warum synthetische Kraftstoffe wichtig sind - aber nicht für den Pkw-Massenmarkt.</p>
           <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
@@ -5065,7 +5065,7 @@ function renderEFuelDossier(claim, mode = "live") {
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Host-Beispiel</p><h3 class="card-title">Der Wasserflaschen-Umweg</h3><p class="card-text">Stell dir vor, du hast einen Eimer Wasser und willst eine Pflanze gießen. Du kannst direkt gießen. Oder du füllst es erst in kleine Flaschen, transportierst sie einmal um den Block, schüttest sie in einen zweiten Eimer und gießt dann. Es funktioniert - aber es ist der lange, verlustreiche Weg.</p><p class="card-text"><strong>Host-Line:</strong> E-Fuels sind wie der lange Umweg mit Wasserflaschen: Wenn der direkte Weg möglich ist, ist der Umweg Verschwendung.</p></article>
             <article class="card"><p class="card-kicker">Systembeispiel</p><h3 class="card-title">Flugzeug vs. Stadtauto</h3><p class="card-text">Ein Flugzeug kann nicht einfach mit einem riesigen Akku über den Atlantik fliegen. Dort können synthetische Kraftstoffe sinnvoll sein. Ein Stadtauto steht viel herum, fährt kurze Strecken und kann direkt mit Strom geladen werden.</p><p class="card-text"><strong>Host-Line:</strong> Das Flugzeug braucht vielleicht Moleküle. Das Stadtauto braucht keinen synthetischen Umweg.</p></article>
-            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Die bessere Frage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
             <article class="card"><p class="card-kicker">Frame nicht übernehmen</p><p class="card-text">Ich übernehme nicht den Frame „E-Fuels retten den Verbrenner“. E-Fuels sind keine Rettung der alten Tanklogik, sondern eine knappe Ressource für Anwendungen, die sich schwer direkt elektrifizieren lassen.</p><p class="card-text"><strong>Bessere Wirkungsfrage:</strong> Wo erzeugt dieselbe Kilowattstunde erneuerbarer Strom die höchste Netto-Wirkung: direkt im Akku oder über den Umweg E-Fuel?</p></article>
             <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p>${htmlList(claim.dontDo)}</article>
           </div>
@@ -5183,7 +5183,7 @@ function renderFusionDossier(claim, mode = "live") {
             <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
           </div>
           <div class="card-grid two">
-            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Die bessere Frage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
             <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Fusion statt Energiewende“. Die bessere Frage lautet: Welche Lösung wirkt wann - und was darf deshalb heute nicht liegen bleiben?</p></article>
           </div>
           <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
@@ -5276,13 +5276,13 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
       <section class="hero radar-page-hero theme-hero dossier-hero">
         <div class="radar-hero-copy">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / Windenergie</nav>
-          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm</p>
           <h1 class="hero-title">Windräder zerstören Natur?</h1>
           <p class="hero-subtitle">${escapeHtml(claim.subtitle)}</p>
           <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
           <p class="radar-abstract"><strong>Kurzformel:</strong> Artenschutz ist real. Blockade ist keine Lösung. Standortscorecard statt Lagerkampf.</p>
           <p class="formula-note"><strong>Hero-Hinweis:</strong> Dieses Dossier verharmlost keine Artenschutzkonflikte. Es prüft, wann Windenergie schädlich, vertretbar oder besonders wirksam ist.</p>
-          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Status: checked_candidate</span></p>
+          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>v2-Prüfung läuft</span></p>
         </div>
       </section>
       ${summaryGrid(windKeyPoints, "Windenergie Dossier - Das Wichtigste in 6 Punkten")}
@@ -5301,7 +5301,7 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
             <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
           </div>
           <div class="card-grid two">
-            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Die bessere Frage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
             <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Alter Frame: Windrad gegen Natur, Windräder als Sondermüll oder Windkraft wegen SF₆ als heuchlerisch. Besser: Welche Stromquelle schützt Natur, Klima, Gesundheit und Sicherheit insgesamt am besten?</p></article>
           </div>
           <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
@@ -5433,7 +5433,7 @@ function renderCo2SystemCostsDossier(claim, mode = "live") {
             <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
           </div>
           <div class="card-grid two">
-            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Die bessere Frage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
             <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame. Der Frame lautet: Der CO₂-Preis sei die Belastung. Wirkungsökonomisch ist die Belastung die fossile Wirkung - der CO₂-Preis macht sie sichtbar und steuerbar.</p></article>
           </div>
           <div class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
@@ -5562,7 +5562,7 @@ function renderLiveCard(claim) {
       <section class="section section-soft">
         <div class="card-grid two">
           <article class="card"><p class="card-kicker">Frame sichtbar machen</p><h2 class="card-title">Nicht hineinspringen.</h2><p class="card-text">${escapeHtml(frameResponses[claim.frameKey] || frameResponses.verzoegerung)}</p></article>
-          <article class="card"><p class="card-kicker">Gute Rückfrage</p><h2 class="card-title">Zur Wirkung zurück.</h2><p class="card-text">${escapeHtml(claim.redirectQuestion)}</p></article>
+          <article class="card"><p class="card-kicker">Die bessere Frage</p><h2 class="card-title">Zur Wirkung zurück.</h2><p class="card-text">${escapeHtml(claim.redirectQuestion)}</p></article>
         </div>
       </section>
       <section class="section section-soft">
