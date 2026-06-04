@@ -7,6 +7,7 @@ import { validateDossierV2 } from "../../lib/wirkungsradar/validateDossierV2.mjs
 const ROOT = process.cwd();
 const OUT = (...parts) => path.join(ROOT, ...parts);
 const DATA_STAND = "2026-06-04";
+const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
 
 const synonymMap = {
   "migration-kostet-nur": ["Migration kostet", "Auslaender kosten", "Sozialsysteme", "Sozialschmarotzer", "Sozialtourismus", "Sozialbetrug", "Sozialmissbrauch", "nie eingezahlt", "noch nie eingezahlt", "kommen nur wegen Sozialleistungen", "Buergergeld fuer Auslaender", "Fluechtlinge kosten", "Integration", "Zuwanderung", "Fachkraefte", "Kommunen ueberfordert"],
@@ -122,7 +123,7 @@ function radarNav(base = "") {
     ["Mythen & Narrative", `${base}narrative/`],
     ["Antwort-Playbooks", `${base}antwort-playbooks/`],
     ["Studio", `${base}studio/`],
-    ["Narrativ einreichen", `${base}narrativ-einreichen/`],
+    ["Narrativ einreichen", ACADEMY_NARRATIVE_URL],
     ["Wirkungsradar-Methode", `${base}methode/`],
     ["Quellen", `${base}quellen/`],
   ];

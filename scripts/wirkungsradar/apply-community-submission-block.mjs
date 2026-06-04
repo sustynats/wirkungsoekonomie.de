@@ -4,6 +4,7 @@ import { communitySubmissionBlock, escapeHtml } from "../../components/wirkungsr
 
 const ROOT = process.cwd();
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirkungsoekonomie.de";
+const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
 const FORM_ROUTE = path.join(ROOT, "wirkungsradar/narrativ-einreichen");
 const PROCESS_ROUTE = path.join(ROOT, "wirkungsradar/pruefprozess");
 const CSS_VERSION = "20260604-community-layout-fix";
@@ -66,7 +67,7 @@ function shell({ file, title, description, canonical, main }) {
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Aufklärung ohne Frame-Verstärkung.</h2><p>Der Debatten-Kompass prüft Aussagen, Narrative und Frames nach Faktenkern, Wirkpfad und demokratischem Aufklärungsnutzen.</p><p><a class="text-link" href="${base}wirkungsradar/">Debatten-Kompass</a> · <a class="text-link" href="${base}wirkungsradar/pruefprozess/">Prüfprozess</a> · <a class="text-link" href="${base}wirkungsradar/narrativ-einreichen/">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
+    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Aufklärung ohne Frame-Verstärkung.</h2><p>Der Debatten-Kompass prüft Aussagen, Narrative und Frames nach Faktenkern, Wirkpfad und demokratischem Aufklärungsnutzen.</p><p><a class="text-link" href="${base}wirkungsradar/">Debatten-Kompass</a> · <a class="text-link" href="${base}wirkungsradar/pruefprozess/">Prüfprozess</a> · <a class="text-link" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
   </body>
 </html>`;
@@ -79,7 +80,7 @@ function radarNav(base = "") {
     ["Narrative", `${base}narrative/`],
     ["Antwort-Playbooks", `${base}antwort-playbooks/`],
     ["Studio", `${base}studio/`],
-    ["Narrativ einreichen", `${base}narrativ-einreichen/`],
+    ["Narrativ einreichen", ACADEMY_NARRATIVE_URL],
     ["Prüfprozess", `${base}pruefprozess/`],
     ["Methode", `${base}methode/`],
     ["Quellen", `${base}quellen/`],
@@ -94,28 +95,17 @@ function formPage(file) {
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Narrativ einreichen</nav>
     <p class="hero-kicker">Redaktionelle Einreichung</p>
     <h1 class="hero-title">Narrativ einreichen</h1>
-    <p class="hero-subtitle">Reiche eine Aussage, ein Narrativ, einen Frame oder eine Behauptung ein, die Wirkung entfaltet und geprüft werden sollte.</p>
-    <p class="radar-sprint-lead">Neue Einreichungen werden nicht automatisch veröffentlicht. Wir prüfen zuerst Relevanz, Verbreitung, Dubletten, Quellenlage, Wirkpfad und das Risiko, problematische Frames unnötig zu verstärken.</p>
+    <p class="hero-subtitle">Einreichungen laufen geschützt über die Akademie-App mit Discord-Login.</p>
+    <p class="radar-sprint-lead">Du landest dort auf einer eigenen Narrativ-Seite, nicht auf der Fragenstrecke. Erst nach dem Login öffnet sich das Formular.</p>
+    <p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Zur Akademie-App wechseln</a></p>
   </div>
 </section>${radarNav("../")}<section class="section"><div class="community-submission-form-layout">
-  <form class="card sprint5-report-form community-submission-form" action="https://akademie.wirkungsoekonomie.de/fragen/einreichen" method="get" data-community-submission-form>
-    <input type="hidden" name="context" value="Debatten-Kompass: Narrativ einreichen">
-    <input type="hidden" name="url" value="${SITE_URL}/wirkungsradar/narrativ-einreichen/">
-    <input type="hidden" name="title" value="Narrativ einreichen">
-    <input type="hidden" name="pageType" value="narrative_submission">
-    <input type="hidden" name="source" value="debate_compass_narrative">
-    <input type="hidden" name="moderation_area" value="narrativ_queue">
-    <label>Aussage / Narrativ / Behauptung<input name="claim_text" required placeholder="Was wurde gesagt?"></label>
-    <label>Wo gesehen? Link oder Plattform<input name="source_url" required placeholder="Link, Plattform, Sendung, Gesprächskontext"></label>
-    <label>Thema / Kategorie<select name="topic" required><option value="">Bitte wählen</option><option>Klima</option><option>Energie</option><option>Mobilität</option><option>Migration</option><option>Sozialstaat</option><option>Arbeit</option><option>Demokratie</option><option>Medien</option><option>Wissenschaft</option><option>Ausland & Sicherheit</option><option>Geld / Steuern</option><option>Wohnen</option><option>anderes</option></select></label>
-    <label>Warum relevant?<textarea name="user_relevance_note" rows="6" required placeholder="Welche Wirkung entfaltet die Aussage? Wo taucht sie auf? Welche Entscheidung oder Stimmung beeinflusst sie?"></textarea></label>
-    <label>Screenshot-Hinweis optional<input name="screenshot_note" placeholder="Falls vorhanden: Was ist auf dem Screenshot zu sehen?"></label>
-    <label>Kontakt für Rückfragen optional<input name="contact" type="email" placeholder="E-Mail, falls Rückfragen möglich sind"></label>
-    <label class="checkbox-line"><input type="checkbox" required name="editorial_notice"> Ich verstehe: Bitte reiche nicht massenhaft problematische Inhalte ein. Es geht nicht darum, Narrative zu verbreiten, sondern ihre Wirkung einzuordnen.</label>
-    <input class="sr-only" name="website" tabindex="-1" autocomplete="off">
-    <button class="btn btn-primary" type="submit">Zur redaktionellen Prüfung einreichen</button>
-    <p class="community-submission-hint">Die Einreichung läuft über die Akademie-Fragenstrecke mit Discord-Identifikation gegen Spam. In der Dozenten-Redaktion wird sie als Narrativ-Einreichung markiert und nicht automatisch veröffentlicht.</p>
-  </form>
+  <article class="card community-submission-workflow">
+    <p class="card-kicker">Warum Akademie-App?</p>
+    <h2>Geschützt einreichen statt öffentlich posten.</h2>
+    <p>Der Discord-Login schützt die Redaktion vor Spam und verhindert, dass problematische Rohzitate ohne Prüfung öffentlich weiterverbreitet werden.</p>
+    <p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p>
+  </article>
   <aside class="card community-submission-workflow">
     <p class="card-kicker">Redaktionsworkflow</p>
     <h2>Was geprüft wird.</h2>
@@ -127,7 +117,7 @@ function formPage(file) {
       <li>Gibt es belastbare Fakten, Quellen und eine ableitbare Antwortstrategie?</li>
     </ol>
     <p><a class="btn btn-secondary" href="../pruefprozess/">Prüfprozess verstehen</a></p>
-    <p><a class="text-link" href="../../akademie.html#dozenten-redaktion">Dozenten-Redaktion ansehen</a></p>
+    <p><a class="text-link" href="${ACADEMY_NARRATIVE_URL}">Akademie-Login öffnen</a></p>
   </aside>
 </div></section>`;
   return shell({
@@ -162,7 +152,7 @@ function processPage(file) {
   <p>Ein Faktencheck fragt, ob eine Aussage stimmt. Der Folgencheck fragt zusätzlich: Was macht diese Aussage mit Wahrnehmung, Verantwortung, Handlung und demokratischer Entscheidung? Wirkungsökonomisch zählt beides: Faktenkern und Wirkpfad.</p>
   <h2>Wann eine Debatten-Kompass-Seite entsteht</h2>
   <p>Eine Seite entsteht, wenn die Aussage relevant, verbreitet oder wirkungsstark genug ist, sich von bestehenden Karten unterscheidet, eine belastbare Quellenlage hat und eine faire, klare Reaktion ableitbar ist. Bewertet wird nach Mensch, Planet und Demokratie.</p>
-  ${communitySubmissionBlock({ variant: "method", formHref: "../narrativ-einreichen/", processHref: "./", methodHref: "../methode/", compassHref: "../", includeProcessLink: false })}
+  ${communitySubmissionBlock({ variant: "method", formHref: ACADEMY_NARRATIVE_URL, processHref: "./", methodHref: "../methode/", compassHref: "../", includeProcessLink: false })}
 </div></section>`;
   return shell({
     file,
@@ -182,12 +172,12 @@ function aliasPage(file) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Narrativ einreichen | Wirkungsökonomie</title>
     <meta name="robots" content="noindex">
-    <meta http-equiv="refresh" content="0; url=../narrativ-einreichen/">
-    <link rel="canonical" href="${SITE_URL}/wirkungsradar/narrativ-einreichen/">
+    <meta http-equiv="refresh" content="0; url=${ACADEMY_NARRATIVE_URL}">
+    <link rel="canonical" href="${ACADEMY_NARRATIVE_URL}">
     <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
   </head>
   <body>
-    <main class="section"><div><article class="card"><p class="card-kicker">Weiterleitung</p><h1>Narrativ einreichen</h1><p>Der Meldeworkflow heißt jetzt Narrativ einreichen.</p><p><a class="btn btn-primary" href="../narrativ-einreichen/">Narrativ einreichen</a></p></article></div></main>
+    <main class="section"><div><article class="card"><p class="card-kicker">Weiterleitung</p><h1>Narrativ einreichen</h1><p>Der Meldeworkflow liegt in der Akademie-App.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></article></div></main>
     <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
   </body>
 </html>`;
@@ -279,11 +269,11 @@ function writeSubmissionSchema() {
       "created_page_url",
     ],
     transport: {
-      route: "https://akademie.wirkungsoekonomie.de/fragen/einreichen",
+      route: ACADEMY_NARRATIVE_URL,
       pageType: "narrative_submission",
       source: "debate_compass_narrative",
       moderation_area: "narrativ_queue",
-      spamProtection: "Discord-Login der Akademie-Fragenstrecke",
+      spamProtection: "Discord-Login der Akademie-Narrativstrecke",
     },
     statuses: [
       "eingereicht",

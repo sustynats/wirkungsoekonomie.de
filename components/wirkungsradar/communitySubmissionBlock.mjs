@@ -36,7 +36,7 @@ export function escapeHtml(value) {
 
 export function communitySubmissionBlock({
   variant = "default",
-  formHref = "narrativ-einreichen/",
+  formHref = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/",
   processHref = "pruefprozess/",
   methodHref = "methode/",
   compassHref = "./",
@@ -71,7 +71,7 @@ export function communitySubmissionBlock({
 </section>`;
 }
 
-export function communitySubmissionNoResults({ formHref = "narrativ-einreichen/", processHref = "pruefprozess/" } = {}) {
+export function communitySubmissionNoResults({ formHref = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/", processHref = "pruefprozess/" } = {}) {
   return communitySubmissionBlock({
     variant: "noResults",
     formHref,

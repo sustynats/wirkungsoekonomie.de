@@ -6,6 +6,7 @@ const ROOT = process.cwd();
 const OUT = (...parts) => path.join(ROOT, ...parts);
 const DATA_STAND = "2026-06-04";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirkungsoekonomie.de";
+const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
 const allowedStatuses = new Set(["reviewed", "published", "checked_v2_positive_examples"]);
 const blockedStatuses = new Set(["draft_dehumanization_risk", "draft_example_amplifies_frame", "draft_core_error"]);
 const seedTriagePolicy = {
@@ -65,7 +66,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Weitergeben ohne Frame-Verstärkung.</h2><p>Studio, Antwort-Playbooks, Quellen und Meldeworkflow helfen, Aussagen sicher in Kommentar, Unterricht, Workshop und Redaktion zu nutzen.</p><p><a class="text-link" href="${base}wirkungsradar/studio/">Studio</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${base}wirkungsradar/narrativ-einreichen/">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
+    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Weitergeben ohne Frame-Verstärkung.</h2><p>Studio, Antwort-Playbooks, Quellen und Meldeworkflow helfen, Aussagen sicher in Kommentar, Unterricht, Workshop und Redaktion zu nutzen.</p><p><a class="text-link" href="${base}wirkungsradar/studio/">Studio</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=20260604-debate-use-order"></script>
   </body>
 </html>`;
@@ -78,7 +79,7 @@ function radarNav(base = "") {
     ["Mythen & Narrative", `${base}narrative/`],
     ["Antwort-Playbooks", `${base}antwort-playbooks/`],
     ["Studio", `${base}studio/`],
-    ["Narrativ einreichen", `${base}narrativ-einreichen/`],
+    ["Narrativ einreichen", ACADEMY_NARRATIVE_URL],
     ["Wirkungsradar-Methode", `${base}methode/`],
     ["Quellen", `${base}quellen/`],
   ];
@@ -407,7 +408,7 @@ function embedCardPage(dossier) {
 }
 
 function mythReportPage() {
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Narrativ einreichen</nav><p class="hero-kicker">Meldeworkflow</p><h1 class="hero-title">Narrativ einreichen</h1><p class="hero-subtitle">Hast du eine Aussage gesehen, die geprüft werden sollte? Melde sie hier.</p><p class="radar-sprint-lead">Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen intern zuerst auf Dubletten, bestehende Karten, Frame-Risiken und Schutzbedarf.</p></div></section>${radarNav("../")}<section class="section"><div><form class="card sprint5-report-form" action="https://akademie.wirkungsoekonomie.de/fragen/einreichen" method="get"><input type="hidden" name="context" value="Debatten-Kompass: Narrativ einreichen"><input type="hidden" name="title" value="Narrativ einreichen"><input type="hidden" name="pageType" value="narrative_submission"><input type="hidden" name="source" value="debate_compass_narrative"><input type="hidden" name="moderation_area" value="narrativ_queue"><label>Aussage / Claim<input name="claim_text" required placeholder="Was wurde gesagt?"></label><label>Kontext<select name="platform"><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>X/Twitter</option><option>Telegram</option><option>Gespräch</option><option>Partei/Programm</option><option>Medienartikel</option><option>Sonstiges</option></select></label><label>Thema<select name="topic"><option>Klima</option><option>Energie</option><option>Mobilität</option><option>Migration</option><option>Sozialstaat</option><option>Arbeit</option><option>Demokratie</option><option>Medien</option><option>Wissenschaft</option><option>Ausland/Sicherheit</option><option>Geld/Steuern</option><option>Wohnen</option><option>anderes</option></select></label><label>Link / Screenshot optional<input name="url" placeholder="https://..."></label><label>Warum ist es relevant?<textarea name="user_relevance_note" rows="5"></textarea></label><label>Häufigkeit<select name="frequency"><option>einmal gesehen</option><option>mehrfach gesehen</option><option>viral</option><option>in meinem Umfeld häufig</option><option>weiß nicht</option></select></label><label>Kontakt optional<input name="contactEmail" type="email" placeholder="E-Mail, falls Rückmeldung gewünscht"></label><label class="checkbox-line"><input type="checkbox" required name="consent"> Ich verstehe, dass der Debatten-Kompass keine persönliche Beratung und keine Meldestelle für Strafverfolgung ist.</label><input class="sr-only" name="website" tabindex="-1" autocomplete="off"><button class="btn btn-primary" type="submit">Zur Prüfung einreichen</button><p>Danke. Die Einreichung läuft über die Akademie-Fragenstrecke und wird dort redaktionell als Narrativ markiert.</p></form><article class="card"><p class="card-kicker">Sichere Redaktion</p><ul class="clean-list"><li>Rohzitate werden nicht automatisch veröffentlicht</li><li>Dubletten werden mit bestehenden Karten zusammengeführt</li><li>Schutzbedarf und Menschenabwertung werden intern markiert</li><li>Verschwörungsframes bekommen gesonderte redaktionelle Prüfung</li></ul><p>Keine toxischen Originalzitate in öffentlicher Statistik.</p></article></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Narrativ einreichen</nav><p class="hero-kicker">Meldeworkflow</p><h1 class="hero-title">Narrativ einreichen</h1><p class="hero-subtitle">Hast du eine Aussage gesehen, die geprüft werden sollte?</p><p class="radar-sprint-lead">Die Einreichung läuft geschützt über die Akademie-App mit Discord-Login. Du landest dort auf einer eigenen Narrativ-Seite, nicht auf der Fragenstrecke.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Zur Akademie-App wechseln</a></p></div></section>${radarNav("../")}<section class="section"><div><article class="card"><p class="card-kicker">Sichere Redaktion</p><h2>Erst Login, dann Formular.</h2><p>Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen intern zuerst auf Dubletten, bestehende Karten, Frame-Risiken, Schutzbedarf und Aufklärungsnutzen.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></article><article class="card"><p class="card-kicker">Redaktion</p><ul class="clean-list"><li>Rohzitate werden nicht automatisch veröffentlicht</li><li>Dubletten werden mit bestehenden Karten zusammengeführt</li><li>Schutzbedarf und Menschenabwertung werden intern markiert</li><li>Verschwörungsframes bekommen gesonderte redaktionelle Prüfung</li></ul><p>Keine toxischen Originalzitate in öffentlicher Statistik.</p></article></div></section>`;
   return shell({ title: "Narrativ einreichen", description: "Sicherer Meldeworkflow für neue Narrative, Frames und problematische Aussagen.", canonical: `${SITE_URL}/wirkungsradar/narrativ-einreichen/`, base: "../../", main });
 }
 
@@ -430,7 +431,7 @@ function usagePage() {
 }
 
 function adminPage() {
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><p class="hero-kicker">Intern</p><h1 class="hero-title">Narrativ-Queue</h1><p class="hero-subtitle">Einreichungen aus dem Debatten-Kompass werden über die Akademie-Fragenstrecke angenommen und hier redaktionell triagiert.</p><div class="hero-actions"><a class="btn btn-primary" href="https://akademie.wirkungsoekonomie.de/dozentin/fragen" target="_blank" rel="noopener noreferrer">Akademie-Queue öffnen</a><a class="btn btn-secondary" href="../../../wirkungsradar/narrativ-einreichen/">Einreichen-Formular testen</a><a class="btn btn-secondary" href="../../../akademie.html#dozenten-redaktion">Dozenten-Redaktion</a></div></div></section><section class="section"><div><div class="card-grid three"><article class="card"><p class="card-kicker">Eingang</p><h2>Metadaten prüfen</h2><ul class="clean-list"><li><code>pageType=narrative_submission</code></li><li><code>source=debate_compass_narrative</code></li><li><code>moderation_area=narrativ_queue</code></li><li>Discord-Login schützt gegen Spam</li><li>Öffentlich erscheint keine Personendaten-Zuordnung</li></ul></article><article class="card"><p class="card-kicker">Triage</p><h2>Nicht automatisch veröffentlichen</h2><ul class="clean-list"><li>Dubletten mit bestehenden Karten zusammenführen</li><li>Rohzitate sparsam und nur wenn nötig wiederholen</li><li>Menschenabwertung intern markieren</li><li>Screenshots nicht öffentlich ohne Rechteprüfung</li><li>Frame-Verstärkung gegen Aufklärungsnutzen abwägen</li></ul></article><article class="card"><p class="card-kicker">Redaktion</p><h2>Prüfkriterien</h2><ul class="clean-list"><li>Relevanz und Verbreitung</li><li>Faktenkern und Quellenlage</li><li>Wirkpfad für Mensch, Planet und Demokratie</li><li>Antwortstrategie für Hosts und Unterricht</li><li>Entscheidung: ablehnen, zusammenführen, beobachten oder Karte erstellen</li></ul></article></div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><p class="hero-kicker">Intern</p><h1 class="hero-title">Narrativ-Queue</h1><p class="hero-subtitle">Einreichungen aus dem Debatten-Kompass werden über die eigene Akademie-Narrativstrecke angenommen und redaktionell triagiert.</p><div class="hero-actions"><a class="btn btn-primary" href="https://akademie.wirkungsoekonomie.de/dozentin/narrative" target="_blank" rel="noopener noreferrer">Akademie-Queue öffnen</a><a class="btn btn-secondary" href="${ACADEMY_NARRATIVE_URL}">Einreichen-Formular testen</a><a class="btn btn-secondary" href="../../../akademie.html#dozenten-redaktion">Dozenten-Redaktion</a></div></div></section><section class="section"><div><div class="card-grid three"><article class="card"><p class="card-kicker">Eingang</p><h2>Metadaten prüfen</h2><ul class="clean-list"><li><code>pageType=narrative_submission</code></li><li><code>source=debate_compass_narrative</code></li><li><code>moderation_area=narrativ_queue</code></li><li>Discord-Login schützt gegen Spam</li><li>Öffentlich erscheint keine Personendaten-Zuordnung</li></ul></article><article class="card"><p class="card-kicker">Triage</p><h2>Nicht automatisch veröffentlichen</h2><ul class="clean-list"><li>Dubletten mit bestehenden Karten zusammenführen</li><li>Rohzitate sparsam und nur wenn nötig wiederholen</li><li>Menschenabwertung intern markieren</li><li>Screenshots nicht öffentlich ohne Rechteprüfung</li><li>Frame-Verstärkung gegen Aufklärungsnutzen abwägen</li></ul></article><article class="card"><p class="card-kicker">Redaktion</p><h2>Prüfkriterien</h2><ul class="clean-list"><li>Relevanz und Verbreitung</li><li>Faktenkern und Quellenlage</li><li>Wirkpfad für Mensch, Planet und Demokratie</li><li>Antwortstrategie für Hosts und Unterricht</li><li>Entscheidung: ablehnen, zusammenführen, beobachten oder Karte erstellen</li></ul></article></div></div></section>`;
   return shell({ title: "Narrativ-Queue", description: "Internes Triage-Dashboard für gemeldete Wirkungsradar-Claims.", canonical: `${SITE_URL}/admin/wirkungsradar/narrativ-queue/`, base: "../../../", main, extraHead: `<meta name="robots" content="noindex">` });
 }
 
@@ -465,8 +466,8 @@ function writeApis() {
     write(OUT("api/wirkungsradar/embed", `${card.slug}.json`), JSON.stringify({ ...card, embed: pack.platformAssets.embed }, null, 2));
   }
   write(OUT("api/wirkungsradar/report-narrative/index.html"), `<pre>${esc(JSON.stringify({
-    status: "academy_question_flow",
-    submissionRoute: "https://akademie.wirkungsoekonomie.de/fragen/einreichen",
+    status: "academy_narrative_flow",
+    submissionRoute: ACADEMY_NARRATIVE_URL,
     moderationArea: "narrativ_queue",
     rateLimit: "academy_discord_login",
     honeypot: "website",
@@ -475,7 +476,7 @@ function writeApis() {
   }, null, 2))}</pre>`);
 }
 
-function mythCta(href = "narrativ-einreichen/") {
+function mythCta(href = ACADEMY_NARRATIVE_URL) {
   return `<section class="section sprint5-myth-cta" data-sprint5-myth-cta data-search-exclude><div><article class="card"><p class="card-kicker">Fehlt ein Narrativ?</p><h2>Hast du eine Aussage gesehen, die geprüft werden sollte?</h2><p>Hast du eine Aussage, ein Narrativ, einen Frame oder eine Behauptung gesehen, die Wirkung entfaltet? Reiche sie ein. Nicht jede Einreichung wird veröffentlicht.</p><a class="btn btn-primary" href="${esc(href)}">Narrativ einreichen</a></article></div></section>`;
 }
 
@@ -494,7 +495,7 @@ function injectCtas() {
     if (!fs.existsSync(file)) continue;
     let html = fs.readFileSync(file, "utf8");
     html = html.replace(/<section class="section sprint5-myth-cta"[\s\S]*?<\/section>\n?/g, "");
-    const href = `${path.relative(path.dirname(file), OUT("wirkungsradar/narrativ-einreichen")).split(path.sep).join("/")}/`;
+    const href = ACADEMY_NARRATIVE_URL;
     if (html.includes("</main>")) {
       html = html.replace("</main>", `${mythCta(href)}\n</main>`);
       fs.writeFileSync(file, html);

@@ -815,7 +815,7 @@ function initRadarSearch() {
           <p>Wenn du eine Aussage, einen Frame oder ein Debattenmuster gesucht hast, reiche es ein. Wir prüfen, ob daraus eine neue Einordnung entstehen sollte.</p>
         </div>
         <div class="community-submission-actions">
-          <a class="btn btn-primary" href="${relativeSiteUrl("wirkungsradar/narrativ-einreichen/")}">Narrativ einreichen</a>
+          <a class="btn btn-primary" href="https://akademie.wirkungsoekonomie.de/narrativ-einreichen/">Narrativ einreichen</a>
           <a class="btn btn-secondary" href="${relativeSiteUrl("wirkungsradar/pruefprozess/")}">Prüfprozess verstehen</a>
         </div>
       </article>
@@ -1036,7 +1036,7 @@ function initWirkungsradarLiveFilter() {
           <p>Wenn du eine Aussage, einen Frame oder ein Debattenmuster gesucht hast, reiche es ein. Wir prüfen, ob daraus eine neue Einordnung entstehen sollte.</p>
         </div>
         <div class="community-submission-actions">
-          <a class="btn btn-primary" href="${relativeSiteUrl("wirkungsradar/narrativ-einreichen/")}">Narrativ einreichen</a>
+          <a class="btn btn-primary" href="https://akademie.wirkungsoekonomie.de/narrativ-einreichen/">Narrativ einreichen</a>
           <a class="btn btn-secondary" href="${relativeSiteUrl("wirkungsradar/pruefprozess/")}">Prüfprozess verstehen</a>
         </div>
       </article>

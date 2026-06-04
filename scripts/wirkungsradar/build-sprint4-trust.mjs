@@ -6,6 +6,7 @@ const ROOT = process.cwd();
 const OUT = (...parts) => path.join(ROOT, ...parts);
 const DATA_STAND = "2026-06";
 const LAST_ACCESSED = "2026-06-04";
+const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
 
 const editorialSentence =
   "Vertrauen entsteht nicht durch Autorität, sondern durch sichtbare Prüfung: Datenstand, Quellen, Grenzen, Gegenposition, Bilanzgrenze und Korrekturfähigkeit. Der Wirkungsradar muss nicht unfehlbar wirken. Er muss lernfähig, transparent und überprüfbar sein.";
@@ -525,7 +526,7 @@ function shell({ title, description, canonical, base = "../", main }) {
 }
 
 function radarNav(base = "../") {
-  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude><a href="${base}">Antwort finden</a><a href="${base}debattenkarten/">Debattenkarten</a><a href="${base}narrative/">Mythen & Narrative</a><a href="${base}antwort-playbooks/">Antwort-Playbooks</a><a href="${base}studio/">Studio</a><a href="${base}narrativ-einreichen/">Narrativ einreichen</a><a href="${base}methode/">Wirkungsradar-Methode</a><a href="${base}quellen/">Quellen</a></nav>`;
+  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude><a href="${base}">Antwort finden</a><a href="${base}debattenkarten/">Debattenkarten</a><a href="${base}narrative/">Mythen & Narrative</a><a href="${base}antwort-playbooks/">Antwort-Playbooks</a><a href="${base}studio/">Studio</a><a href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a><a href="${base}methode/">Wirkungsradar-Methode</a><a href="${base}quellen/">Quellen</a></nav>`;
 }
 
 function statusPage() {
