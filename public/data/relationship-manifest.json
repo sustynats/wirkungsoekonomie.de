@@ -1,14 +1,17 @@
 {
-  "generatedAt": "2026-05-31T20:54:53.606Z",
+  "generatedAt": "2026-06-04T14:56:29.036Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
         "responsible-marketing",
         "greenwashing",
         "produktdaten",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "impact-marketing"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -744,6 +747,144 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "automatisierung": {
+      "terms": [
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende",
+        "wirkungseinkommen",
+        "sozialfinanzierung",
+        "ki-und-arbeit",
+        "robotik",
+        "autonome-systeme"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "automatisierungsdividende": {
+      "terms": [
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "wirkungsrente",
+        "sozialfinanzierung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "automatisierungsrendite": {
+      "terms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungseinkommensteuer",
+        "produktivitaetsgewinne",
+        "kapitalrendite"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "autonome-systeme": {
+      "terms": [
+        "automatisierung",
+        "robotik",
+        "maschinenleistung",
+        "wirkungsrisiko",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "autopoiesis": {
       "terms": [
         "nichttriviales-system",
@@ -1111,6 +1252,39 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "bedingungsloses-grundeinkommen": {
+      "terms": [
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "sozialfinanzierung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "bedrohungsverarbeitung": {
       "terms": [
         "reaktanz",
@@ -1150,6 +1324,76 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "beitragsbasis": {
+      "terms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsluecke",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "beitragsluecke": {
+      "terms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -1237,9 +1481,13 @@
         "nfrd",
         "taxonomy-kpis",
         "vsme",
-        "xbrl"
+        "xbrl",
+        "doppelte-wesentlichkeit",
+        "impact-controlling"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -2098,9 +2346,15 @@
         "social-taxonomy",
         "sustainable-finance",
         "vsme",
-        "thg-emissions-scopes"
+        "thg-emissions-scopes",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -2915,9 +3169,16 @@
         "esrs",
         "iro",
         "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -3825,6 +4086,73 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "erwerbsarbeitslogik": {
+      "terms": [
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "wirkungsbiografie",
+        "maschinenleistung",
+        "sozialfinanzierung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "erwerbsbiografie": {
+      "terms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "lebenswirkung",
+        "sozialabgaben",
+        "beitragsbasis"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "esap": {
       "terms": [
         "csrd",
@@ -3911,9 +4239,15 @@
         "nfrd",
         "social-taxonomy",
         "sustainable-finance",
-        "vsme"
+        "vsme",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -4513,6 +4847,26 @@
         "nwi"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "financial-materiality": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "csrd",
+        "esrs"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -5668,6 +6022,39 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "grunddividende": {
+      "terms": [
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "bedingungsloses-grundeinkommen"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "grundgesetz": {
       "terms": [
         "menschenwuerde",
@@ -6607,6 +6994,26 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "impact-materiality": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "impact-management",
+        "wirkungsbewertung",
+        "csrd",
+        "esrs"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "impact-value": {
       "terms": [
         "business-value",
@@ -6625,6 +7032,88 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "impact-controlling": {
+      "terms": [
+        "impact-management",
+        "key-impact-indicator",
+        "nwi",
+        "t-sroi",
+        "scorecard",
+        "datenqualitaet",
+        "steuerungsdaten",
+        "wirkungsdatenraum",
+        "wirkungsrueckkopplung"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Impact Controlling",
+        "Scorecards",
+        "Netto-Wirkungs-Index",
+        "T-SROI"
+      ],
+      "tools": [
+        "Impact-Controlling-Rechner"
+      ],
+      "demos": [],
+      "impactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "impact-management": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "impact-controlling",
+        "wirkungsrueckkopplung",
+        "steuerungsdaten",
+        "wirkungsdaten",
+        "wirkungsrisiko"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Impact Controlling",
+        "Wirkungsrückkopplung"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "impact-marketing": {
+      "terms": [
+        "impact-washing",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "greenwashing",
+        "wirkungswahrheit",
+        "impact-management",
+        "impact-controlling"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Folgencheck",
+        "Impact Controlling"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [
+        "Wirtschaft & Unternehmen",
+        "Medien & Öffentlichkeit"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "impact-washing": {
       "terms": [
         "greenwashing",
@@ -6633,9 +7122,13 @@
         "datenqualitaet",
         "folgencheck",
         "green-claims-directive",
-        "responsible-marketing"
+        "responsible-marketing",
+        "impact-marketing",
+        "impact-controlling"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -6810,9 +7303,13 @@
       "terms": [
         "doppelte-wesentlichkeit",
         "iro",
-        "csrd"
+        "csrd",
+        "impact-materiality",
+        "financial-materiality"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -6981,9 +7478,16 @@
         "doppelte-wesentlichkeit",
         "wirkungsrisiko",
         "csrd",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -7351,6 +7855,64 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "key-impact-indicator": {
+      "terms": [
+        "impact-controlling",
+        "impact-management",
+        "kpi",
+        "iro",
+        "wirkungsdaten",
+        "scorecard",
+        "nwi",
+        "datenqualitaet"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [
+        "Impact Controlling",
+        "Scorecards"
+      ],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "ki-und-arbeit": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistung",
+        "plattformarbeit",
+        "transformationsbonus",
+        "wirkungseinkommen",
+        "erwerbsarbeitslogik"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -8318,6 +8880,39 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "lebenswirkung": {
+      "terms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "wirkungsbonus",
+        "wirkleistung",
+        "erwerbsbiografie"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "lebenszyklusanalyse": {
       "terms": [
         "lebenszyklusinventar",
@@ -9061,6 +9656,113 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "maschinenleistung": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkleistung",
+        "sozialabgaben"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "maschinenleistungsrueckkopplung": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "transformationsbonus",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "maschinenwertschoepfungsbeitrag": {
+      "terms": [
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -10073,10 +10775,13 @@
         "finalscore",
         "t-sroi",
         "reverse-merit-order",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
       "documents": [
-        "technische-leitlinien-wustg"
+        "technische-leitlinien-wustg",
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [],
       "tools": [],
@@ -11567,6 +12272,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "plattformarbeit": {
+      "terms": [
+        "ki-und-arbeit",
+        "erwerbsarbeitslogik",
+        "sozialabgaben",
+        "beitragsbasis",
+        "wirkungseinkommen",
+        "wirkungsbonus"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "plattformkapitalismus": {
       "terms": [
         "aufmerksamkeitsoekonomie",
@@ -12176,6 +12915,72 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "produktivitaetsgewinne": {
+      "terms": [
+        "automatisierung",
+        "automatisierungsdividende",
+        "maschinenleistungsrueckkopplung",
+        "produktivitaetssteuer",
+        "transformationsbonus"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "produktivitaetssteuer": {
+      "terms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistungsrueckkopplung",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -13192,6 +13997,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "rentenfinanzierung": {
+      "terms": [
+        "wirkungsrente",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "beitragsluecke",
+        "automatisierungsdividende",
+        "lebenswirkung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "reparatur": {
       "terms": [
         "recht-auf-reparatur",
@@ -13505,9 +14344,12 @@
         "greenwashing",
         "impact-washing",
         "green-claims-directive",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "impact-marketing"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -13670,6 +14512,110 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "roboteroekonomie": {
+      "terms": [
+        "robotik",
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "robotersteuer": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "sozialabgaben",
+        "bedingungsloses-grundeinkommen",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "robotik": {
+      "terms": [
+        "automatisierung",
+        "maschinenleistung",
+        "autonome-systeme",
+        "robotersteuer",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -14678,6 +15624,41 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "sozialabgaben": {
+      "terms": [
+        "beitragsluecke",
+        "beitragsbasis",
+        "sozialfinanzierung",
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "soziale-bewaehrtheit": {
       "terms": [
         "normalisierung",
@@ -14725,6 +15706,42 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "sozialfinanzierung": {
+      "terms": [
+        "sozialabgaben",
+        "beitragsluecke",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -15217,9 +16234,14 @@
         "wirkungsdaten",
         "wirkungsrueckkopplung",
         "scorecard",
-        "sustainable-finance"
+        "sustainable-finance",
+        "impact-management",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -15761,10 +16783,13 @@
         "impact-value",
         "systemgrenze",
         "sechster-kondratieff",
-        "wirkungswert"
+        "wirkungswert",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
       "documents": [
-        "whitepaper-t-sroi"
+        "whitepaper-t-sroi",
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [],
       "tools": [],
@@ -16184,6 +17209,41 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "transformationsbonus": {
+      "terms": [
+        "uebergangsschutz",
+        "weiterbildung",
+        "automatisierung",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "transformationsrente",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -17752,13 +18812,35 @@
         "blindleistung",
         "verlustleistung",
         "wirkung",
-        "wirkungsgrad"
+        "wirkungsgrad",
+        "leistung",
+        "maschinenleistung",
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "wirkungsbiografie"
       ],
-      "documents": [],
-      "methods": [],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
       "tools": [],
-      "demos": [],
-      "impactFields": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -17979,6 +19061,41 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungsbiografie": {
+      "terms": [
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "lebenswirkung",
+        "wirkungsbonus",
+        "wirkleistung",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungsblindheit": {
       "terms": [
         "wirkungswahrheit",
@@ -18007,6 +19124,41 @@
       "tools": [],
       "demos": [],
       "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsbonus": {
+      "terms": [
+        "wirkleistung",
+        "wirkungsbiografie",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsrente",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -18045,9 +19197,14 @@
         "vollstaendige-information",
         "transaktionskosten",
         "oesterreichische-schule",
-        "transparenz"
+        "transparenz",
+        "impact-controlling",
+        "impact-management",
+        "key-impact-indicator"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18066,9 +19223,14 @@
         "commons-gemeingueter",
         "esap",
         "wirkungsblindheit",
-        "wirkungswahrheit"
+        "wirkungswahrheit",
+        "impact-controlling",
+        "steuerungsdaten",
+        "doppelte-wesentlichkeit"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18087,15 +19249,71 @@
         "care-oekonomie",
         "feministische-oekonomie",
         "unbezahlte-arbeit",
-        "feminisierung-von-armut"
+        "feminisierung-von-armut",
+        "grunddividende",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "wirkungseinkommensteuer",
+        "maschinenwertschoepfungsbeitrag",
+        "bedingungsloses-grundeinkommen",
+        "wirkleistung"
       ],
       "documents": [
-        "wp-einkommen"
+        "wp-einkommen",
+        "wenn-maschinen-arbeiten",
+        "wp-rente"
       ],
-      "methods": [],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
       "tools": [],
-      "demos": [],
-      "impactFields": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungseinkommensteuer": {
+      "terms": [
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungssteuer",
+        "wstg"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -18142,13 +19360,35 @@
         "wirkungsrueckkopplung",
         "wirkungseinkommen",
         "wirkungshaushalt",
-        "just-transition-mechanism"
+        "just-transition-mechanism",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "transformationsbonus",
+        "wirkungsrente"
       ],
-      "documents": [],
-      "methods": [],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
       "tools": [],
-      "demos": [],
-      "impactFields": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -18631,15 +19871,38 @@
         "feministische-oekonomie",
         "gender-pay-gap",
         "gender-pension-gap",
-        "feminisierung-von-armut"
+        "feminisierung-von-armut",
+        "wirkungsbiografie",
+        "erwerbsbiografie",
+        "lebenswirkung",
+        "wirkungsdividende",
+        "buergerinnenfonds",
+        "transformationsrente",
+        "automatisierungsdividende",
+        "wirkungsbonus"
       ],
       "documents": [
-        "wp-rente"
+        "wp-rente",
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen"
       ],
-      "methods": [],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
       "tools": [],
-      "demos": [],
-      "impactFields": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -18670,9 +19933,14 @@
         "systemischer-wert",
         "versorgungssicherheit",
         "viabilitaet",
-        "zukunftsfaehigkeit"
+        "zukunftsfaehigkeit",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18721,9 +19989,14 @@
         "wirkungsblindheit",
         "wirkungskompetenz",
         "wirkungsradar",
-        "zeitwirkung"
+        "zeitwirkung",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18750,9 +20023,14 @@
         "wirkungsfonds",
         "wirkungshaushalt",
         "wirkungssteuer",
-        "zentralverwaltungswirtschaft"
+        "zentralverwaltungswirtschaft",
+        "impact-management",
+        "impact-controlling",
+        "doppelte-wesentlichkeit"
       ],
-      "documents": [],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],

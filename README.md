@@ -32,6 +32,10 @@ python3 tools/sync_layout.py
 
 Der Schritt synchronisiert Header/Footer und baut den Suchindex automatisch neu. Dadurch werden neue veröffentlichte Seiten, Blogartikel und ältere Beiträge ohne manuelle Indexpflege über `suche.html` auffindbar.
 
+## Online-Styleguide
+
+Der verbindliche Website-Styleguide liegt unter `styleguide.html`. Neue Seiten und Komponenten verwenden zuerst die zentralen Design-Tokens und Komponentenregeln aus `assets/css/style.css`: Typografie, Abstände, Buttons, Karten, Tabellen, Bildsprache und Responsive-Verhalten werden dort gepflegt.
+
 ## Kontakt
 
 impact@wirkungsoekonomie.org

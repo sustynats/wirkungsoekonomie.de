@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const DATE = "2026-05-24";
+const DATE = "2026-06-01";
 const CSS_VERSION = "20260525-result-interpretation";
 const JS_VERSION = "20260525-cta-cleanup";
 
@@ -170,6 +170,21 @@ const go10MethodPapers = [
     relatedPages: ["werkzeuge/t-sroi/", "werkzeuge/impact-controlling/t-sroi/", "werkzeuge/impact-controlling/"],
   },
 ];
+
+const wirkungscontrollingDetailDossier = {
+  slug: "wirkungscontrolling",
+  title: "Wirkungscontrolling / Impact Controlling",
+  text: "Umfassende zitierfähige Onlinefassung mit Rechenlogik, Scorecards, NWI, T-SROI, Datenqualität, Assurance und Umsetzungspfaden.",
+  href: "werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+  pdf: "assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf",
+};
+
+const doubleMaterialityWorkpaper = {
+  title: "Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie",
+  text: "Arbeitspapier zur Brücke von CSRD-/ESRS-Wesentlichkeitsprüfung über Impact-Management und Impact-Controlling bis zur wirkungsökonomischen Rückkopplung.",
+  href: "dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/",
+  pdf: "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+};
 
 const go10ToolCards = [
   ["WÖk-ID-Browser", "Methodenseite vorhanden", "werkzeuge/woek-ids/", "Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen."],
@@ -609,7 +624,7 @@ function overviewPage() {
       title: "Impact Controlling",
       subtitle: "Wirkung sichtbar, bewertbar und entscheidungsrelevant machen.",
       text: "Impact Controlling ist der methodische Dachbereich der Wirkungsökonomie. Es verbindet WÖk-IDs, Scorecards, NWI, T-SROI, Datenqualität, Benchmarks und Wirkungsdatenräume.",
-      action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Gesamtdossier lesen</a>`,
+      action: `<a class="btn btn-primary" href="${href(base, wirkungscontrollingDetailDossier.href)}">Neues Detailkonzept-Dossier lesen</a><a class="btn btn-secondary" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF herunterladen</a><a class="btn btn-secondary" href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Gesamtdossier lesen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta("Methodenportal / Online-Volltext")}</section>
@@ -632,7 +647,20 @@ function overviewPage() {
         ${sectionTitle("methodenpapiere", "Ausführliche Methodenpapiere")}
         <p>Diese Veröffentlichungen sind Methodenpapiere für Impact Controlling, WÖk-IDs, Scorecards, NWI und T-SROI. Sie sind keine Ausarbeitungen eines einzelnen Wirkungsfelds, sondern methodische Grundlagen für mehrere Wirkungsfelder.</p>
       </div>
-      ${methodPaperCardGrid(base)}
+      <div class="card-grid three">
+        <article class="card">
+          <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+          <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
+          <p class="card-text">Planung, Messung, Bewertung, Steuerung und Rückkopplung von Wirkung für Mensch, Planet und Demokratie.</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Online lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Arbeitspapier · CSRD-Brücke</p>
+          <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
+          <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
+        </article>${methodPaperCardGrid(base).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
+      </div>
     </section>
     ${go10ToolGrid(base)}
     ${impactCrossLinks(base)}
@@ -642,12 +670,25 @@ function overviewPage() {
         ${sectionTitle("dossiers", "Dossiers online lesen")}
         <p>Alle Dossiers sind als Webfassung mit Ankern angelegt. Downloads stehen gesammelt am Seitenende.</p>
       </div>
-      ${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
+      <div class="card-grid three">
+        <article class="card">
+          <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+          <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
+          <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Dossier lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Arbeitspapier · Doppelte Wesentlichkeit</p>
+          <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
+          <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
+        </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
         title,
         text,
         href: `werkzeuge/impact-controlling/dossiers/${slug}/`,
         label: "Dossier lesen",
-      })))}
+      }))).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
+      </div>
     </section>
     ${politicalBlock(base)}
     ${sdgBlock()}
@@ -655,6 +696,7 @@ function overviewPage() {
     ${externalSourcesBlock()}
     ${downloadBlock(base, [
       ...impactDownloads,
+      { label: doubleMaterialityWorkpaper.title, href: doubleMaterialityWorkpaper.pdf },
       ...go10MethodPapers.flatMap(methodPaperDownloadItems),
     ])}`,
   });
@@ -700,7 +742,14 @@ function dossierOverview() {
         ])}
         ${sectionTitle("einzeldossiers", "Einzeldossiers")}
         <p>Die Einzeldossiers vertiefen die Methodik. Jede Seite ist online lesbar, druckbar und mit Buchankern verbunden.</p>
-        ${cardGrid(base, dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/`, label: "Einzeldossier lesen" })))}
+        <div class="card-grid three">
+          <article class="card">
+            <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+            <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
+            <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
+            <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Dossier lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+          </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/`, label: "Einzeldossier lesen" }))).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
+        </div>
         ${sectionTitle("methodik-demo", "Methodik und Demo-Grenzen")}
         <p>Der Impact-Controlling-Rechner startet als einfache Demo mit Scorecard-, NWI- und T-SROI-Modul. Er ist keine Prüfung, keine Beratung und keine amtliche Einstufung.</p>
       </article>
@@ -833,12 +882,25 @@ function singleDossiersIndexPage() {
         ${sectionTitle("dossier-list", "Dossiers auswählen")}
         <p>Die Karten führen zu eigenständigen Dossierseiten. Downloads stehen auf den jeweiligen Seiten am Ende.</p>
       </div>
-      ${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
+      <div class="card-grid three">
+    <article class="card">
+      <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+      <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
+      <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
+      <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Dossier lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+    </article>
+    <article class="card">
+      <p class="card-kicker">Arbeitspapier · CSRD-Brücke</p>
+      <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
+      <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
+      <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
+    </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
         title,
         text,
         href: `werkzeuge/impact-controlling/dossiers/${slug}/`,
         label: "Dossier lesen",
-      })))}
+      }))).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
+  </div>
     </section>
     ${politicalBlock(base)}
     ${sdgBlock()}
@@ -1114,6 +1176,7 @@ function updateSitemap() {
     "werkzeuge/impact-controlling/dossier/",
     "werkzeuge/impact-controlling/methodenpapiere/",
     ...go10MethodPapers.map((paper) => `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`),
+    wirkungscontrollingDetailDossier.href,
     ...dossierPages.map(([slug]) => `werkzeuge/impact-controlling/dossiers/${slug}/`),
     "werkzeuge/impact-controlling/t-sroi/",
     "werkzeuge/t-sroi/",

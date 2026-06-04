@@ -1,7 +1,7 @@
 {
   "metadata": {
     "status": "published",
-    "last_updated": "2026-05-22",
+    "last_updated": "2026-06-01",
     "purpose": "Kuratierte Wissenskarten für Kompass, Suche, Glossar, Anwendungen und Zielgruppen. kuratierter Stand, keine finale Bewertung."
   },
   "cards": [
@@ -11,11 +11,30 @@
       "short_answer": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist nicht automatisch gut, sondern kann positiv, negativ oder neutral sein.",
       "one_sentence": "Wirkung beschreibt, was sich tatsächlich verändert.",
       "why_important": "Ohne diesen neutralen Wirkungsbegriff werden Absicht, Output, Image und Nachhaltigkeitsbehauptung verwechselt.",
-      "impact_path": ["Auslöser", "Wirkungspotenzial", "Zustandsveränderung", "Wirkungsbewertung", "Netto-Wirkung", "Rückkopplung"],
+      "impact_path": [
+        "Auslöser",
+        "Wirkungspotenzial",
+        "Zustandsveränderung",
+        "Wirkungsbewertung",
+        "Netto-Wirkung",
+        "Rückkopplung"
+      ],
       "example": "Ein Produkt kann verkauft werden und trotzdem negative Wirkungen auf Wasser, Arbeit oder Demokratie auslagern.",
-      "terms": ["Wirkungspotenzial", "Wirkungsbewertung", "Netto-Wirkung"],
-      "related_pages": ["glossar.html", "kompass.html", "modell.html"],
-      "sources": ["Führender Begriffsleitfaden", "Die neue Ordnung des Wohlstands", "Systemmodell der Wirkungsökonomie"],
+      "terms": [
+        "Wirkungspotenzial",
+        "Wirkungsbewertung",
+        "Netto-Wirkung"
+      ],
+      "related_pages": [
+        "glossar.html",
+        "kompass.html",
+        "modell.html"
+      ],
+      "sources": [
+        "Führender Begriffsleitfaden",
+        "Die neue Ordnung des Wohlstands",
+        "Systemmodell der Wirkungsökonomie"
+      ],
       "status": "published"
     },
     {
@@ -24,11 +43,29 @@
       "short_answer": "Wirkungspotenzial ist die Möglichkeit, dass eine Wirkung entsteht. Es ist noch keine eingetretene Zustandsveränderung.",
       "one_sentence": "Wirkungspotenzial ist Möglichkeit, nicht Nachweis.",
       "why_important": "Gerade bei Sprache, Medien, Politik und neuen Technologien muss zwischen plausiblen Risiken und empirisch belegter Wirkung unterschieden werden.",
-      "impact_path": ["Auslöser", "Frame oder Mechanismus", "Resonanzraum", "Wirkungspotenzial", "Datenbedarf", "Prüfung"],
+      "impact_path": [
+        "Auslöser",
+        "Frame oder Mechanismus",
+        "Resonanzraum",
+        "Wirkungspotenzial",
+        "Datenbedarf",
+        "Prüfung"
+      ],
       "example": "Eine politische Aussage kann ein Demokratierisiko öffnen, ohne dass ein Einzelschaden bereits nachgewiesen ist.",
-      "terms": ["Resonanzraum", "Wirkungsrisiko", "Wirkung"],
-      "related_pages": ["kompass.html", "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html", "fuer/journalismus.html"],
-      "sources": ["Führender Begriffsleitfaden", "Kapitel Öffentlichkeit und Sprache"],
+      "terms": [
+        "Resonanzraum",
+        "Wirkungsrisiko",
+        "Wirkung"
+      ],
+      "related_pages": [
+        "kompass.html",
+        "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+        "fuer/journalismus.html"
+      ],
+      "sources": [
+        "Führender Begriffsleitfaden",
+        "Kapitel Öffentlichkeit und Sprache"
+      ],
       "status": "published"
     },
     {
@@ -37,11 +74,30 @@
       "short_answer": "Positive Netto-Wirkung ist die Zielgröße der WÖk. Sie entsteht nur, wenn positive Beiträge kritische Schäden nicht verdecken und Schutzregeln eingehalten werden.",
       "one_sentence": "Nicht jede gute Teilwirkung reicht für positive Netto-Wirkung.",
       "why_important": "Die Zielgröße verhindert Greenwashing und einfache Verrechnung schwerer Schäden mit attraktiven Einzelwerten.",
-      "impact_path": ["positive Wirkungen", "negative Wirkungen", "Wirkungsgrenzen", "Schutzregel", "Netto-Wirkung", "Entscheidung"],
+      "impact_path": [
+        "positive Wirkungen",
+        "negative Wirkungen",
+        "Wirkungsgrenzen",
+        "Schutzregel",
+        "Netto-Wirkung",
+        "Entscheidung"
+      ],
       "example": "Ein klimafreundliches Produkt kann trotzdem problematisch sein, wenn schwere Arbeits- oder Demokratierisiken verborgen bleiben.",
-      "terms": ["Netto-Wirkung", "Reverse Merit Order", "Schutzregel"],
-      "related_pages": ["modell.html", "kompass.html", "glossar.html"],
-      "sources": ["Führender Begriffsleitfaden", "Systemmodell", "WStG / WUStG Arbeitspapiere"],
+      "terms": [
+        "Netto-Wirkung",
+        "Reverse Merit Order",
+        "Schutzregel"
+      ],
+      "related_pages": [
+        "modell.html",
+        "kompass.html",
+        "glossar.html"
+      ],
+      "sources": [
+        "Führender Begriffsleitfaden",
+        "Systemmodell",
+        "WStG / WUStG Arbeitspapiere"
+      ],
       "status": "published"
     },
     {
@@ -50,11 +106,30 @@
       "short_answer": "Wirkungsbewertung ordnet Zustandsveränderungen am Referenzrahmen SDGs, Agenda 2030 und SDG+ ein.",
       "one_sentence": "Bewertung gibt Wirkung Richtung.",
       "why_important": "Daten allein sagen noch nicht, ob eine Veränderung gut, schlecht oder neutral ist.",
-      "impact_path": ["Daten", "Referenzrahmen", "Mensch / Planet / Demokratie", "Scorecard", "Wirkungsklasse", "Rückkopplung"],
+      "impact_path": [
+        "Daten",
+        "Referenzrahmen",
+        "Mensch / Planet / Demokratie",
+        "Scorecard",
+        "Wirkungsklasse",
+        "Rückkopplung"
+      ],
       "example": "CO2-Daten, Arbeitsdaten und Demokratiedaten werden erst durch Bewertungslogik steuerungsfähig.",
-      "terms": ["SDG+", "Scorecard", "Wirkungsklasse"],
-      "related_pages": ["methodik/datenbasis.html", "modell.html", "kompass.html"],
-      "sources": ["Führender Begriffsleitfaden", "Methodikseiten", "Systemmodell"],
+      "terms": [
+        "SDG+",
+        "Scorecard",
+        "Wirkungsklasse"
+      ],
+      "related_pages": [
+        "methodik/datenbasis.html",
+        "modell.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "Führender Begriffsleitfaden",
+        "Methodikseiten",
+        "Systemmodell"
+      ],
       "status": "published"
     },
     {
@@ -63,11 +138,29 @@
       "short_answer": "Wirkungsrückkopplung bedeutet, dass Bewertung in Preise, Steuern, Kapital, Beschaffung, Haushalte und Entscheidungen zurückfließt.",
       "one_sentence": "Reporting beschreibt. Rückkopplung verändert.",
       "why_important": "Ohne Rückkopplung bleibt Wirkung Information ohne Steuerung.",
-      "impact_path": ["Wirkungsbewertung", "Wirkungsklasse", "Preis / Steuer / Kapital", "Entscheidung", "neue Daten", "Lernen"],
+      "impact_path": [
+        "Wirkungsbewertung",
+        "Wirkungsklasse",
+        "Preis / Steuer / Kapital",
+        "Entscheidung",
+        "neue Daten",
+        "Lernen"
+      ],
       "example": "Ein Produkt wird nicht nur berichtet, sondern seine Wirkung verändert Preis- oder Beschaffungssignale.",
-      "terms": ["Wirkungslenkung", "Wirkungssteuer", "Lernen"],
-      "related_pages": ["modell.html", "anwendungen.html", "kompass.html"],
-      "sources": ["Systemmodell", "Die neue Ordnung des Wohlstands"],
+      "terms": [
+        "Wirkungslenkung",
+        "Wirkungssteuer",
+        "Lernen"
+      ],
+      "related_pages": [
+        "modell.html",
+        "anwendungen.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "Systemmodell",
+        "Die neue Ordnung des Wohlstands"
+      ],
       "status": "published"
     },
     {
@@ -76,11 +169,29 @@
       "short_answer": "Wirkungslenkung verändert Anreize so, dass positive Netto-Wirkung wahrscheinlicher und schädliche Wirkung sichtbarer, teurer oder riskanter wird.",
       "one_sentence": "Lenkung heißt bessere Signale, nicht zentrale Detailsteuerung.",
       "why_important": "Die WÖk will nicht nur erklären, sondern Entscheidungen in Richtung Mensch, Planet und Demokratie verändern.",
-      "impact_path": ["Daten", "Bewertung", "Anreiz", "Entscheidung", "Zustandsveränderung", "Evaluation"],
+      "impact_path": [
+        "Daten",
+        "Bewertung",
+        "Anreiz",
+        "Entscheidung",
+        "Zustandsveränderung",
+        "Evaluation"
+      ],
       "example": "Beschaffung priorisiert nicht billigste Angebote, sondern resilientere Wirkungspfade.",
-      "terms": ["Wirkungssteuer", "Wirkungsrückkopplung", "Wirkungsarchitektur"],
-      "related_pages": ["anwendungen.html", "fuer/politik.html", "fuer/unternehmen.html"],
-      "sources": ["Systemmodell", "Wirkungslenkung-Arbeitspapiere"],
+      "terms": [
+        "Wirkungssteuer",
+        "Wirkungsrückkopplung",
+        "Wirkungsarchitektur"
+      ],
+      "related_pages": [
+        "anwendungen.html",
+        "fuer/politik.html",
+        "fuer/unternehmen.html"
+      ],
+      "sources": [
+        "Systemmodell",
+        "Wirkungslenkung-Arbeitspapiere"
+      ],
       "status": "published"
     },
     {
@@ -89,11 +200,30 @@
       "short_answer": "Wirkungsarchitektur beschreibt die Ordnung aus Daten, Bewertung, Schutzregeln, Rückkopplung, Governance und Lernen.",
       "one_sentence": "Architektur verbindet Maßstab, Daten und Entscheidung.",
       "why_important": "Nachhaltigkeit bleibt unterbestimmt, wenn sie nicht als Systemarchitektur in Entscheidungen eingebaut wird.",
-      "impact_path": ["Referenzrahmen", "Datenräume", "Scorecards", "Schutzregeln", "Rückkopplung", "Wirkungsrat", "Lernen"],
+      "impact_path": [
+        "Referenzrahmen",
+        "Datenräume",
+        "Scorecards",
+        "Schutzregeln",
+        "Rückkopplung",
+        "Wirkungsrat",
+        "Lernen"
+      ],
       "example": "Ein Staat wird vom Reparaturstaat zur Wirkungsarchitektur, wenn Haushalte und Gesetze nach Wirkung rückkoppeln.",
-      "terms": ["Wirkungsrat", "Scorecard", "Rückkopplung"],
-      "related_pages": ["ordnung/", "fuer/politik.html", "modell.html"],
-      "sources": ["Systemmodell", "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur"],
+      "terms": [
+        "Wirkungsrat",
+        "Scorecard",
+        "Rückkopplung"
+      ],
+      "related_pages": [
+        "ordnung/",
+        "fuer/politik.html",
+        "modell.html"
+      ],
+      "sources": [
+        "Systemmodell",
+        "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur"
+      ],
       "status": "published"
     },
     {
@@ -102,11 +232,30 @@
       "short_answer": "Die WÖk-ID ist die gedachte Zuordnungseinheit, die Produkte, Tätigkeiten, Organisationen oder Entscheidungen mit Wirkungsdaten und Bewertungslogik verbindet.",
       "one_sentence": "Die WÖk-ID macht Wirkung adressierbar.",
       "why_important": "Ohne eindeutige Zuordnung bleiben Daten, Scorecards und Rückkopplung lose nebeneinander.",
-      "impact_path": ["Gegenstand", "Datenquellen", "WÖk-ID", "Scorecard", "Wirkungsklasse", "Rückkopplung"],
+      "impact_path": [
+        "Gegenstand",
+        "Datenquellen",
+        "WÖk-ID",
+        "Scorecard",
+        "Wirkungsklasse",
+        "Rückkopplung"
+      ],
       "example": "Ein Produkt kann über Kategorie, Lieferkette, Hersteller und Datenstand einer vorläufigen WÖk-ID-Hypothese zugeordnet werden.",
-      "terms": ["Scorecard", "Datenqualität", "DPP"],
-      "related_pages": ["methodik/datenbasis.html", "anwendungen.html", "kompass.html"],
-      "sources": ["Technische Leitlinien", "Systemmodell", "Methodikseiten"],
+      "terms": [
+        "Scorecard",
+        "Datenqualität",
+        "DPP"
+      ],
+      "related_pages": [
+        "methodik/datenbasis.html",
+        "anwendungen.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "Technische Leitlinien",
+        "Systemmodell",
+        "Methodikseiten"
+      ],
       "status": "published"
     },
     {
@@ -115,11 +264,30 @@
       "short_answer": "Die Scorecard bündelt Wirkungsdaten über Mensch, Planet und Demokratie, macht Datenlücken sichtbar und bereitet Wirkungsklassen vor.",
       "one_sentence": "Die Scorecard übersetzt Daten in prüfbare Wirkungslogik.",
       "why_important": "Einzelwerte dürfen nicht isoliert über Erfolg entscheiden.",
-      "impact_path": ["Daten", "Indikatoren", "Scorecard", "Schutzregel", "Netto-Wirkung", "Wirkungsklasse"],
+      "impact_path": [
+        "Daten",
+        "Indikatoren",
+        "Scorecard",
+        "Schutzregel",
+        "Netto-Wirkung",
+        "Wirkungsklasse"
+      ],
       "example": "Ein Produkt mit guten Klimadaten, aber kritischen Arbeitsdaten kann nicht einfach als positiv gelten.",
-      "terms": ["Reverse Merit Order", "Netto-Wirkung", "WÖk-ID"],
-      "related_pages": ["scorecard-dashboard.html", "modell.html", "kompass.html"],
-      "sources": ["WÖk Master Items", "Technische Leitlinien", "Systemmodell"],
+      "terms": [
+        "Reverse Merit Order",
+        "Netto-Wirkung",
+        "WÖk-ID"
+      ],
+      "related_pages": [
+        "scorecard-dashboard.html",
+        "modell.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "WÖk Master Items",
+        "Technische Leitlinien",
+        "Systemmodell"
+      ],
       "status": "published"
     },
     {
@@ -128,11 +296,29 @@
       "short_answer": "Reverse Merit Order ist die Schutzregel: Kritische Schäden dürfen nicht durch gute Einzelwerte schöngerechnet werden.",
       "one_sentence": "Das schwächste kritische Wirkungsfeld begrenzt die Gesamtbewertung.",
       "why_important": "Sie schützt vor Greenwashing, Kompensationslogik und falscher Gesamtbewertung.",
-      "impact_path": ["Scorecard", "kritische Schwelle", "Schutzregel", "Begrenzung", "keine Kompensation", "Korrektur"],
+      "impact_path": [
+        "Scorecard",
+        "kritische Schwelle",
+        "Schutzregel",
+        "Begrenzung",
+        "keine Kompensation",
+        "Korrektur"
+      ],
       "example": "Faire Verpackung kompensiert keine schwerwiegende Kinderarbeit in der Lieferkette.",
-      "terms": ["Schutzregel", "Netto-Wirkung", "Wirkungsgrenzen"],
-      "related_pages": ["modell.html", "anwendungen.html", "fuer/unternehmen.html"],
-      "sources": ["Führender Begriffsleitfaden", "WStG / WUStG Arbeitspapiere"],
+      "terms": [
+        "Schutzregel",
+        "Netto-Wirkung",
+        "Wirkungsgrenzen"
+      ],
+      "related_pages": [
+        "modell.html",
+        "anwendungen.html",
+        "fuer/unternehmen.html"
+      ],
+      "sources": [
+        "Führender Begriffsleitfaden",
+        "WStG / WUStG Arbeitspapiere"
+      ],
       "status": "published"
     },
     {
@@ -141,11 +327,29 @@
       "short_answer": "SDG+ erweitert den SDG-Referenzrahmen um demokratische Wirkungsräume wie Wahrheit, Vertrauen, Öffentlichkeit, Rückkopplung und institutionelle Stabilität.",
       "one_sentence": "SDG+ macht Demokratie als Wirkungsraum sichtbar.",
       "why_important": "Viele Gegenwartsrisiken entstehen in Öffentlichkeit, Medien, Datenräumen und Institutionen und sind in klassischen SDG-Listen zu wenig sichtbar.",
-      "impact_path": ["Agenda 2030", "SDGs", "demokratische Lücken", "SDG+", "Bewertung", "Rückkopplung"],
+      "impact_path": [
+        "Agenda 2030",
+        "SDGs",
+        "demokratische Lücken",
+        "SDG+",
+        "Bewertung",
+        "Rückkopplung"
+      ],
       "example": "Desinformation kann SDG+ negativ wirken, auch wenn kein klassischer Umweltindikator betroffen ist.",
-      "terms": ["Demokratie", "Resonanzraum", "Wirkungsrisiko"],
-      "related_pages": ["sdg-plus.html", "sdg-plus/medien-demokratie.html", "kompass.html"],
-      "sources": ["SDG+-Seiten", "Buchkapitel Öffentlichkeit und Demokratie"],
+      "terms": [
+        "Demokratie",
+        "Resonanzraum",
+        "Wirkungsrisiko"
+      ],
+      "related_pages": [
+        "sdg-plus.html",
+        "sdg-plus/medien-demokratie.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "SDG+-Seiten",
+        "Buchkapitel Öffentlichkeit und Demokratie"
+      ],
       "status": "published"
     },
     {
@@ -154,11 +358,29 @@
       "short_answer": "Wirkungskapital beschreibt Kapital als Verstärker von Richtung. Kapital bleibt Werkzeug, aber seine Wirkung auf Zukunftsfähigkeit wird sichtbar.",
       "one_sentence": "Kapital verstärkt, was es finanziert.",
       "why_important": "Rendite kann kurzfristig attraktiv sein und zugleich langfristige Wirkungsrisiken aufbauen.",
-      "impact_path": ["Kapitalentscheidung", "Geschäftsmodell", "Wirkung", "Risiko / Resilienz", "T-SROI", "Kapitalrückkopplung"],
+      "impact_path": [
+        "Kapitalentscheidung",
+        "Geschäftsmodell",
+        "Wirkung",
+        "Risiko / Resilienz",
+        "T-SROI",
+        "Kapitalrückkopplung"
+      ],
       "example": "Investitionen in Pflege, Bildung, Kreisläufe oder fossile Pfade erzeugen unterschiedliche Zukunftswirkungen.",
-      "terms": ["T-SROI", "Kapitalwirkung", "Resilienz"],
-      "related_pages": ["fuer/investoren.html", "fuer/unternehmen.html", "anwendungen.html"],
-      "sources": ["Kapitel Kapitalmärkte und Fonds", "T-SROI Whitepaper"],
+      "terms": [
+        "T-SROI",
+        "Kapitalwirkung",
+        "Resilienz"
+      ],
+      "related_pages": [
+        "fuer/investoren.html",
+        "fuer/unternehmen.html",
+        "anwendungen.html"
+      ],
+      "sources": [
+        "Kapitel Kapitalmärkte und Fonds",
+        "T-SROI Whitepaper"
+      ],
       "status": "published"
     },
     {
@@ -167,11 +389,30 @@
       "short_answer": "Das Wirkungseinkommen verbindet Grunddividende, Markteinkommen und Wirkungsbonus. Es ist ein Konzeptstand, keine Leistungszusage.",
       "one_sentence": "Wenn Maschinen Produktivität erzeugen, muss Produktivität gesellschaftlich zurückgekoppelt werden.",
       "why_important": "KI, Robotik und Automatisierung lösen Einkommen, Produktivität und Erwerbsarbeit zunehmend voneinander.",
-      "impact_path": ["Automatisierung", "Produktivität", "Rückführung", "Wirkungsfonds", "Grunddividende", "Wirkungsbonus", "Teilhabe"],
+      "impact_path": [
+        "Automatisierung",
+        "Produktivität",
+        "Rückführung",
+        "Wirkungsfonds",
+        "Grunddividende",
+        "Wirkungsbonus",
+        "Teilhabe"
+      ],
       "example": "Der Rechner zeigt Bruttovolumen und Finanzierungsstack als Modelllogik.",
-      "terms": ["Grunddividende", "Automatisierungsdividende", "Wirkungsfonds"],
-      "related_pages": ["fuer/wirkungseinkommen.html", "fuer/rente.html", "kompass.html"],
-      "sources": ["Arbeitspapier Wirkungseinkommen", "Buchkapitel Arbeit und Automatisierung"],
+      "terms": [
+        "Grunddividende",
+        "Automatisierungsdividende",
+        "Wirkungsfonds"
+      ],
+      "related_pages": [
+        "fuer/wirkungseinkommen.html",
+        "fuer/rente.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "Arbeitspapier Wirkungseinkommen",
+        "Buchkapitel Arbeit und Automatisierung"
+      ],
       "status": "published"
     },
     {
@@ -180,11 +421,30 @@
       "short_answer": "Die Wirkungsrente erweitert Erwerbsbiografie zur Wirkungsbiografie. Sie ist eine Arbeitspapier-Modellrechnung, keine Leistungszusage.",
       "one_sentence": "Alterssicherung wird um Lebenswirkung lesbar.",
       "why_important": "Care, Pflege, Bildung, Prävention und Gemeinwesen tragen Systeme, werden aber im alten Rentenmaßstab oft unterbewertet.",
-      "impact_path": ["Lebenswirkung", "Wirkungsbiografie", "Basisrente", "Wirkungsdividende", "Wirkungsfonds", "Modellrente"],
+      "impact_path": [
+        "Lebenswirkung",
+        "Wirkungsbiografie",
+        "Basisrente",
+        "Wirkungsdividende",
+        "Wirkungsfonds",
+        "Modellrente"
+      ],
       "example": "Der Rechner berechnet Wirkungspunkte aus Einkommen, Wirkungsfaktor, Jahren, Gewichtung und Lernfaktor.",
-      "terms": ["Wirkungsbiografie", "Wirkungsdividende", "Wirkungsfonds"],
-      "related_pages": ["fuer/rente.html", "fuer/wirkungseinkommen.html", "kompass.html"],
-      "sources": ["WP_Rente", "Arbeitspapier Wirkungseinkommensteuer", "Buchkapitel Wirkungsrente"],
+      "terms": [
+        "Wirkungsbiografie",
+        "Wirkungsdividende",
+        "Wirkungsfonds"
+      ],
+      "related_pages": [
+        "fuer/rente.html",
+        "fuer/wirkungseinkommen.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "WP_Rente",
+        "Arbeitspapier Wirkungseinkommensteuer",
+        "Buchkapitel Wirkungsrente"
+      ],
       "status": "published"
     },
     {
@@ -193,11 +453,122 @@
       "short_answer": "Wirkungskompetenz ist die Fähigkeit, Zustandsveränderungen, Wirkungspotenziale, Daten, Zielkonflikte und Rückkopplungen sauber zu unterscheiden.",
       "one_sentence": "Wirkungskompetenz macht komplexe Systeme lesbar.",
       "why_important": "Ohne Wirkungskompetenz werden Fakten, Frames, Gefühle, Interessen und Daten in Debatten vermischt.",
-      "impact_path": ["Begriffe", "Wirkungspfad", "Bewertung", "Zielkonflikte", "Rückkopplung", "Praxisprojekt"],
+      "impact_path": [
+        "Begriffe",
+        "Wirkungspfad",
+        "Bewertung",
+        "Zielkonflikte",
+        "Rückkopplung",
+        "Praxisprojekt"
+      ],
       "example": "Ein Lernmodul zu politischer Sprache prüft Frames und Resonanzräume statt Parteisympathie.",
-      "terms": ["Wirkungspfad", "Resonanzraum", "Systemdenken"],
-      "related_pages": ["akademie.html", "fuer/akademie.html", "kompass.html"],
-      "sources": ["Akademie-Logik", "Buchkapitel Bildung und Wirkungskompetenz"],
+      "terms": [
+        "Wirkungspfad",
+        "Resonanzraum",
+        "Systemdenken"
+      ],
+      "related_pages": [
+        "akademie.html",
+        "fuer/akademie.html",
+        "kompass.html"
+      ],
+      "sources": [
+        "Akademie-Logik",
+        "Buchkapitel Bildung und Wirkungskompetenz"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "maschinenleistungsrueckkopplung",
+      "title": "Maschinenleistungsrückkopplung",
+      "short_answer": "Maschinenleistungsrückkopplung ist die WÖk-Alternative zur Robotersteuer: Maschinenleistung wird nicht bestraft, sondern Produktivitätsgewinne werden wirkungsorientiert in Sozialfinanzierung, Wirkungseinkommen, Weiterbildung und Wirkungsfonds zurückgeführt.",
+      "one_sentence": "Nicht Maschinenstrafe, sondern Rückkopplung automatisierter Produktivität.",
+      "why_important": "Automatisierung kann Einkommen, Lohnsumme und Sozialbeiträge entkoppeln. Ohne Rückkopplung steigen Produktivität und Kapitalgewinne, während Beitragsbasis und Teilhabe schwächer werden.",
+      "impact_path": [
+        "KI / Robotik / Automatisierung",
+        "Maschinenleistung",
+        "Produktivitätsgewinn",
+        "Beitragslücke",
+        "Maschinenwertschöpfungsbeitrag",
+        "Wirkungsfonds",
+        "Wirkungseinkommen"
+      ],
+      "example": "Ein Unternehmen automatisiert Produktion und nutzt Teile der Produktivitätsgewinne für Qualifizierung, Arbeitszeitverkürzung und einen Wirkungsfonds.",
+      "terms": [
+        "Maschinenwertschöpfungsbeitrag",
+        "Automatisierungsdividende",
+        "Wirkungseinkommen"
+      ],
+      "related_pages": [
+        "begriffe/maschinenleistungsrueckkopplung/",
+        "wirkungsfelder/arbeit-einkommen/",
+        "erleben/automatisierungs-wirkungseinkommensrechner/"
+      ],
+      "sources": [
+        "Wenn Maschinen arbeiten",
+        "Online-Buch Kapitel 56",
+        "Online-Buch Kapitel 57"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "robotersteuer-abgrenzung",
+      "title": "Robotersteuer richtig einordnen",
+      "short_answer": "Robotersteuer ist in der WÖk kein Zielbegriff, sondern ein Kritik- und Suchbegriff. Präziser sind Maschinenleistungsrückkopplung, Maschinenwertschöpfungsbeitrag und Automatisierungsdividende.",
+      "one_sentence": "Robotersteuer beschreibt die alte Debatte; WÖk spricht von Rückkopplung statt Maschinenstrafe.",
+      "why_important": "Der Begriff Robotersteuer kann Automatisierung als Gegner rahmen. Die WÖk ist innovationsfreundlich und adressiert die alte Finanzierungslogik Arbeit → Einkommen → Sozialbeiträge.",
+      "impact_path": [
+        "Robotersteuer-Debatte",
+        "Ersatzarbeitslogik",
+        "Abgrenzung",
+        "Maschinenleistungsrückkopplung",
+        "Automatisierungsdividende"
+      ],
+      "example": "Eine Suche nach Robotersteuer führt zur Abgrenzungsseite und verweist auf Maschinenleistungsrückkopplung.",
+      "terms": [
+        "Robotersteuer",
+        "Produktivitätssteuer",
+        "Maschinenleistungsrückkopplung"
+      ],
+      "related_pages": [
+        "begriffe/robotersteuer/",
+        "begriffe/maschinenleistungsrueckkopplung/",
+        "begriffe/automatisierungsdividende/"
+      ],
+      "sources": [
+        "Automatisierungsseite",
+        "Wenn Maschinen arbeiten"
+      ],
+      "status": "published"
+    },
+    {
+      "id": "wirkungsbiografie",
+      "title": "Wirkungsbiografie",
+      "short_answer": "Die Wirkungsbiografie erweitert die Erwerbsbiografie um gesellschaftliche Wirkleistung: Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "one_sentence": "Alterssicherung wird nicht nur über Erwerbsjahre, sondern über Lebenswirkung denkbar.",
+      "why_important": "Viele systemtragende Beiträge sind im alten Rentenmaßstab unterbewertet. Die WÖk macht sie sichtbar, ohne Personen moralisch zu bewerten.",
+      "impact_path": [
+        "Erwerbsbiografie",
+        "unterbewertete Beiträge",
+        "Wirkungsbiografie",
+        "Wirkungspunkte",
+        "Wirkungsrente"
+      ],
+      "example": "Pflege, Bildungsarbeit und Prävention können in einer Modellrechnung als Wirkleistung sichtbar werden.",
+      "terms": [
+        "Wirkungsrente",
+        "Lebenswirkung",
+        "Wirkleistungsbonus"
+      ],
+      "related_pages": [
+        "begriffe/wirkungsbiografie/",
+        "begriffe/wirkungsrente/",
+        "erleben/wirkungsrenten-rechner/"
+      ],
+      "sources": [
+        "Online-Buch Kapitel 58",
+        "WP_Rente"
+      ],
       "status": "published"
     }
   ]

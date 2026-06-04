@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T20:54:20.550Z",
+  "generatedAt": "2026-06-04T14:56:04.554Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -20,12 +20,15 @@
         "responsible-marketing",
         "greenwashing",
         "produktdaten",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "impact-marketing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "sechster-kondratieff": {
@@ -1090,6 +1093,198 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "automatisierung": {
+      "label": "Automatisierung",
+      "slug": "automatisierung",
+      "url": "/begriffe/automatisierung/",
+      "hoverDefinition": "Automatisierung ist in der WÖk nicht das Problem; problematisch ist die alte Kopplung von Arbeit, Einkommen und Sozialfinanzierung.",
+      "shortDefinition": "Automatisierung bezeichnet die Übernahme von Aufgaben durch Maschinen, Software, KI, Robotik oder autonome Systeme. In der WÖk ist sie kein Gegner, sondern eine Produktivitätsquelle mit Rückkopplungsbedarf.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Automatisierung",
+        "Automation",
+        "Automatisierung von Arbeit",
+        "digitale Automatisierung",
+        "KI-Automatisierung"
+      ],
+      "relatedTerms": [
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende",
+        "wirkungseinkommen",
+        "sozialfinanzierung",
+        "ki-und-arbeit",
+        "robotik",
+        "autonome-systeme"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "automatisierungsdividende": {
+      "label": "Automatisierungsdividende",
+      "slug": "automatisierungsdividende",
+      "url": "/begriffe/automatisierungsdividende/",
+      "hoverDefinition": "Automatisierungsdividende meint gesellschaftliche Beteiligung an Produktivitätsgewinnen aus Automatisierung, nicht Maschinenstrafe.",
+      "shortDefinition": "Die Automatisierungsdividende bezeichnet den gesellschaftlichen Anteil an Produktivitätsgewinnen aus KI, Robotik, Digitalisierung und autonomen Systemen. Sie führt Maschinenleistung in Wirkungsfonds, Wirkungseinkommen, Weiterbildung, Transformationsschutz oder Wirkungsrente zurück.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Automatisierungsdividende",
+        "Produktivitätsdividende",
+        "Maschinenleistungsdividende",
+        "KI-Dividende",
+        "Digitalisierungsdividende",
+        "Automationsdividende",
+        "Produktivitätssteuer",
+        "Produktivitätsabgabe",
+        "Automatisierungsabgabe",
+        "Produktivitätsrückführung",
+        "Kapitalerträge aus Automatisierung",
+        "Automatisierungsrendite",
+        "Produktivitätsgewinne",
+        "Wirkungsdividende"
+      ],
+      "relatedTerms": [
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "wirkungsrente",
+        "sozialfinanzierung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "automatisierungsrendite": {
+      "label": "Automatisierungsrendite",
+      "slug": "automatisierungsrendite",
+      "url": "/begriffe/automatisierungsrendite/",
+      "hoverDefinition": "Automatisierungsrendite fragt, wem Produktivitätsgewinne aus KI, Robotik und Automatisierung zufallen.",
+      "shortDefinition": "Automatisierungsrendite bezeichnet Kapital- oder Gewinnanteile, die aus automatisierter Produktivität entstehen.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Automatisierungsrendite",
+        "Kapitalerträge aus Automatisierung",
+        "Automatisierungsertrag",
+        "KI-Rendite",
+        "Roboter-Rendite",
+        "Produktivitätsrendite"
+      ],
+      "relatedTerms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungseinkommensteuer",
+        "produktivitaetsgewinne",
+        "kapitalrendite"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "autonome-systeme": {
+      "label": "Autonome Systeme",
+      "slug": "autonome-systeme",
+      "url": "/begriffe/autonome-systeme/",
+      "hoverDefinition": "Autonome Systeme erhöhen Maschinenleistung und Verantwortungslücken; WÖk fragt nach Wirkung, Schutz und Rückkopplung.",
+      "shortDefinition": "Autonome Systeme treffen oder steuern Entscheidungen teilweise selbstständig und können dadurch Maschinenleistung, Risiken und Verantwortungsfragen verändern.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Autonome Systeme",
+        "autonome Maschinen",
+        "selbststeuernde Systeme",
+        "autonome Roboter",
+        "autonome KI-Systeme"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "robotik",
+        "maschinenleistung",
+        "wirkungsrisiko",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "autopoiesis": {
       "label": "Autopoiesis",
       "slug": "autopoiesis",
@@ -1613,6 +1808,51 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "bedingungsloses-grundeinkommen": {
+      "label": "Bedingungsloses Grundeinkommen",
+      "slug": "bedingungsloses-grundeinkommen",
+      "url": "/begriffe/bedingungsloses-grundeinkommen/",
+      "hoverDefinition": "BGE ist ein universeller Transfer; Wirkungseinkommen ist die WÖk-Architektur aus Grunddividende, Markteinkommen und Wirkungsbonus.",
+      "shortDefinition": "Das bedingungslose Grundeinkommen ist ein universeller Geldtransfer unabhängig von Arbeit, Bedürftigkeit oder Wirkung. Die WÖk grenzt Wirkungseinkommen davon ab: Es enthält eine Grunddividende, verbindet sie aber mit Markteinkommen, Wirkungsbonus und Rückkopplung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Bedingungsloses Grundeinkommen",
+        "BGE",
+        "Grundeinkommen",
+        "Universal Basic Income",
+        "UBI",
+        "Grundsicherung"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "sozialfinanzierung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "bedrohungsverarbeitung": {
       "label": "Bedrohungsverarbeitung",
       "slug": "bedrohungsverarbeitung",
@@ -1674,6 +1914,98 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "beitragsbasis": {
+      "label": "Beitragsbasis",
+      "slug": "beitragsbasis",
+      "url": "/begriffe/beitragsbasis/",
+      "hoverDefinition": "Beitragsbasis beschreibt, worauf soziale Sicherung finanziell aufsetzt: heute stark auf Löhnen, künftig auch auf rückgekoppelter Wertschöpfung.",
+      "shortDefinition": "Die Beitragsbasis ist die Grundlage, aus der Beiträge zur sozialen Sicherung entstehen. In der WÖk wird geprüft, ob sie bei Automatisierung über Lohnarbeit hinaus erweitert werden muss.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Beitragsbasis",
+        "Finanzierungsbasis",
+        "Sozialbeitragsbasis",
+        "Rentenbasis",
+        "Lohnsummenbasis"
+      ],
+      "relatedTerms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsluecke",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "beitragsluecke": {
+      "label": "Beitragslücke",
+      "slug": "beitragsluecke",
+      "url": "/begriffe/beitragsluecke/",
+      "hoverDefinition": "Beitragslücke heißt: Wertschöpfung bleibt oder steigt, aber Lohnsumme und Sozialbeiträge tragen weniger.",
+      "shortDefinition": "Die Beitragslücke entsteht, wenn durch Automatisierung Lohnsumme und Sozialbeiträge sinken, obwohl Wertschöpfung und Produktivität weiter bestehen oder steigen.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Beitragslücke",
+        "Beitragsloch",
+        "Sozialbeitragslücke",
+        "Rentenbeitragslücke",
+        "Lohnsummenlücke"
+      ],
+      "relatedTerms": [
+        "sozialabgaben",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "belohnungslernen": {
@@ -1799,12 +2131,16 @@
         "nfrd",
         "taxonomy-kpis",
         "vsme",
-        "xbrl"
+        "xbrl",
+        "doppelte-wesentlichkeit",
+        "impact-controlling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "beschwerdemechanismus-access-to-remedy": {
@@ -3100,12 +3436,18 @@
         "social-taxonomy",
         "sustainable-finance",
         "vsme",
-        "thg-emissions-scopes"
+        "thg-emissions-scopes",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "dao": {
@@ -4255,12 +4597,19 @@
         "esrs",
         "iro",
         "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "downcycling": {
@@ -5596,6 +5945,95 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "erwerbsarbeitslogik": {
+      "label": "Erwerbsarbeitslogik",
+      "slug": "erwerbsarbeitslogik",
+      "url": "/begriffe/erwerbsarbeitslogik/",
+      "hoverDefinition": "Erwerbsarbeitslogik ist die alte Kette Arbeit -> Einkommen -> Sozialabgaben -> Sozialstaat; Automatisierung macht sie brüchig.",
+      "shortDefinition": "Erwerbsarbeitslogik bezeichnet die alte Kopplung von Arbeit, Einkommen, Steuern, Sozialabgaben und sozialer Anerkennung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Erwerbsarbeitslogik",
+        "Erwerbsarbeitszentrierung",
+        "Arbeitsgesellschaft",
+        "Lohnarbeitslogik",
+        "Arbeit-Einkommen-Kopplung"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "wirkungsbiografie",
+        "maschinenleistung",
+        "sozialfinanzierung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "erwerbsbiografie": {
+      "label": "Erwerbsbiografie",
+      "slug": "erwerbsbiografie",
+      "url": "/begriffe/erwerbsbiografie/",
+      "hoverDefinition": "Erwerbsbiografie erfasst Arbeit, Einkommen und Beitragszeiten; Wirkungsbiografie macht zusätzlich gesellschaftliche Wirkleistung sichtbar.",
+      "shortDefinition": "Die Erwerbsbiografie beschreibt den Lebensverlauf über Beschäftigung, Einkommen und Beitragszeiten. In der WÖk wird sie durch die Wirkungsbiografie ergänzt, nicht ersetzt.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Erwerbsbiografie",
+        "Erwerbsbiographie",
+        "Arbeitsbiografie",
+        "Beschäftigungsbiografie",
+        "Beitragsbiografie"
+      ],
+      "relatedTerms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "lebenswirkung",
+        "sozialabgaben",
+        "beitragsbasis"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "esap": {
       "label": "ESAP / European Single Access Point",
       "slug": "esap",
@@ -5727,12 +6165,18 @@
         "nfrd",
         "social-taxonomy",
         "sustainable-finance",
-        "vsme"
+        "vsme",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "esrs-themenstandards": {
@@ -6584,6 +7028,35 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "financial-materiality": {
+      "label": "Financial Materiality",
+      "slug": "financial-materiality",
+      "url": "/begriffe/financial-materiality/",
+      "hoverDefinition": "Financial Materiality bezeichnet Nachhaltigkeitsthemen, die für Kosten, Chancen, Risiken, Finanzierung, Resilienz oder Geschäftsmodell eines Unternehmens wesentlich werden.",
+      "shortDefinition": "Financial Materiality bezeichnet Nachhaltigkeitsthemen, die für Kosten, Chancen, Risiken, Finanzierung, Resilienz oder Geschäftsmodell eines Unternehmens wesentlich werden.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Financial Materiality",
+        "Finanzielle Wesentlichkeit",
+        "Outside-In-Wesentlichkeit"
+      ],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "csrd",
+        "esrs"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "finanzmarktkapitalismus": {
@@ -8274,6 +8747,53 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "grunddividende": {
+      "label": "Grunddividende",
+      "slug": "grunddividende",
+      "url": "/begriffe/grunddividende/",
+      "hoverDefinition": "Grunddividende ist der universelle Sockel im Wirkungseinkommen: Sicherheit und Teilhabe ohne Personenbewertung.",
+      "shortDefinition": "Die Grunddividende ist der universelle Sockel des Wirkungseinkommens. Sie steht jedem Menschen als Anteil an gemeinsamer gesellschaftlicher Produktivität zu und schützt Würde, Sicherheit und Zugehörigkeit.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Grunddividende",
+        "Basisdividende",
+        "Wirkungsdividende",
+        "Sockelbetrag",
+        "universeller Sockel",
+        "BGE",
+        "Grundeinkommen",
+        "bedingungsloses Grundeinkommen"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "bedingungsloses-grundeinkommen"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "grundgesetz": {
       "label": "Grundgesetz",
       "slug": "grundgesetz",
@@ -9800,6 +10320,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "impact-materiality": {
+      "label": "Impact Materiality",
+      "slug": "impact-materiality",
+      "url": "/begriffe/impact-materiality/",
+      "hoverDefinition": "Impact Materiality bezeichnet die Wesentlichkeit tatsächlicher oder potenzieller Auswirkungen eines Unternehmens auf Menschen, Umwelt und Gesellschaft.",
+      "shortDefinition": "Impact Materiality bezeichnet die Wesentlichkeit tatsächlicher oder potenzieller Auswirkungen eines Unternehmens auf Menschen, Umwelt und Gesellschaft.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Impact Materiality",
+        "Impact-Wesentlichkeit",
+        "Inside-Out-Wesentlichkeit",
+        "Auswirkungswesentlichkeit"
+      ],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "impact-management",
+        "wirkungsbewertung",
+        "csrd",
+        "esrs"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
     "impact-value": {
       "label": "Impact Value / Wirkungswert",
       "slug": "impact-value",
@@ -9827,6 +10377,116 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "impact-controlling": {
+      "label": "Impact-Controlling",
+      "slug": "impact-controlling",
+      "url": "/begriffe/impact-controlling/",
+      "hoverDefinition": "Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.",
+      "shortDefinition": "Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Impact-Controlling",
+        "Impact Controlling",
+        "Wirkungscontrolling",
+        "Wirkungssteuerung im Controlling"
+      ],
+      "relatedTerms": [
+        "impact-management",
+        "key-impact-indicator",
+        "nwi",
+        "t-sroi",
+        "scorecard",
+        "datenqualitaet",
+        "steuerungsdaten",
+        "wirkungsdatenraum",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "Impact Controlling",
+        "Scorecards",
+        "Netto-Wirkungs-Index",
+        "T-SROI"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
+    "impact-management": {
+      "label": "Impact-Management",
+      "slug": "impact-management",
+      "url": "/begriffe/impact-management/",
+      "hoverDefinition": "Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen.",
+      "shortDefinition": "Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Impact-Management",
+        "Impact Management",
+        "Wirkungsmanagement",
+        "Wirkungsmanagement im Unternehmen"
+      ],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "iro",
+        "impact-controlling",
+        "wirkungsrueckkopplung",
+        "steuerungsdaten",
+        "wirkungsdaten",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [
+        "Impact Controlling",
+        "Wirkungsrückkopplung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
+    "impact-marketing": {
+      "label": "Impact-Marketing",
+      "slug": "impact-marketing",
+      "url": "/begriffe/impact-marketing/",
+      "hoverDefinition": "Impact-Marketing übersetzt geprüfte Wirkung verständlich, belegbar und ohne Wirkungssimulation in Kommunikation.",
+      "shortDefinition": "Impact-Marketing übersetzt geprüfte Wirkung verständlich, belegbar und ohne Wirkungssimulation in Kommunikation.",
+      "category": "Kommunikationsbegriff",
+      "synonyms": [
+        "Impact-Marketing",
+        "Impact Marketing",
+        "Wirkungsmarketing",
+        "Wirkungskommunikation"
+      ],
+      "relatedTerms": [
+        "impact-washing",
+        "responsible-marketing",
+        "fuenftes-p-planet",
+        "greenwashing",
+        "wirkungswahrheit",
+        "impact-management",
+        "impact-controlling"
+      ],
+      "relatedMethods": [
+        "Folgencheck",
+        "Impact Controlling"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Unternehmen",
+        "Medien & Öffentlichkeit"
+      ],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
     "impact-washing": {
       "label": "Impact-Washing",
       "slug": "impact-washing",
@@ -9844,12 +10504,16 @@
         "datenqualitaet",
         "folgencheck",
         "green-claims-directive",
-        "responsible-marketing"
+        "responsible-marketing",
+        "impact-marketing",
+        "impact-controlling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "ingroup-outgroup-dynamik": {
@@ -10107,12 +10771,16 @@
       "relatedTerms": [
         "doppelte-wesentlichkeit",
         "iro",
-        "csrd"
+        "csrd",
+        "impact-materiality",
+        "financial-materiality"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "institutioneller-rassismus": {
@@ -10365,12 +11033,19 @@
         "doppelte-wesentlichkeit",
         "wirkungsrisiko",
         "csrd",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "impact-materiality",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "iso-14040-14044": {
@@ -10893,6 +11568,86 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "key-impact-indicator": {
+      "label": "Key Impact Indicator / KII",
+      "slug": "key-impact-indicator",
+      "url": "/begriffe/key-impact-indicator/",
+      "hoverDefinition": "Ein Key Impact Indicator ist eine steuerbare Beobachtungsgröße für Zustandsveränderungen, Wirkungsrisiken oder Wirkungspotenziale.",
+      "shortDefinition": "Ein Key Impact Indicator ist eine steuerbare Beobachtungsgröße für Zustandsveränderungen, Wirkungsrisiken oder Wirkungspotenziale.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Key Impact Indicator / KII",
+        "KII",
+        "Key Impact Indicator",
+        "Key Impact Indicators",
+        "Wirkungskennzahl"
+      ],
+      "relatedTerms": [
+        "impact-controlling",
+        "impact-management",
+        "kpi",
+        "iro",
+        "wirkungsdaten",
+        "scorecard",
+        "nwi",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [
+        "Impact Controlling",
+        "Scorecards"
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
+    "ki-und-arbeit": {
+      "label": "KI und Arbeit",
+      "slug": "ki-und-arbeit",
+      "url": "/begriffe/ki-und-arbeit/",
+      "hoverDefinition": "KI und Arbeit fragt nicht nur nach Jobverlust, sondern nach Entlastung, Qualifizierung, Macht und Rückkopplung von Produktivität.",
+      "shortDefinition": "KI und Arbeit bezeichnet die Veränderung von Tätigkeiten, Qualifikationen, Machtverhältnissen und Einkommenslogiken durch künstliche Intelligenz.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "KI und Arbeit",
+        "AI und Arbeit",
+        "Künstliche Intelligenz und Arbeit",
+        "KI-Arbeit",
+        "KI am Arbeitsplatz"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistung",
+        "plattformarbeit",
+        "transformationsbonus",
+        "wirkungseinkommen",
+        "erwerbsarbeitslogik"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "kipppunkt": {
@@ -12306,6 +13061,49 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "lebenswirkung": {
+      "label": "Lebenswirkung",
+      "slug": "lebenswirkung",
+      "url": "/begriffe/lebenswirkung/",
+      "hoverDefinition": "Lebenswirkung macht Beiträge über den Lebensverlauf sichtbar, ohne Menschen zu ranken.",
+      "shortDefinition": "Lebenswirkung bezeichnet die über den Lebensverlauf ermöglichte, unterstützte oder stabilisierte positive Zustandsveränderung, ohne daraus eine moralische Bewertung einer Person abzuleiten.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Lebenswirkung",
+        "Lebensleistung im WÖk-Sinn",
+        "Wirkung über den Lebensverlauf",
+        "Lebenswirkleistung"
+      ],
+      "relatedTerms": [
+        "wirkungsbiografie",
+        "wirkungsrente",
+        "wirkungsbonus",
+        "wirkleistung",
+        "erwerbsbiografie"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "lebenszyklusanalyse": {
       "label": "Lebenszyklusanalyse / LCA",
       "slug": "lebenszyklusanalyse",
@@ -13393,6 +14191,161 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "maschinenleistung": {
+      "label": "Maschinenleistung",
+      "slug": "maschinenleistung",
+      "url": "/begriffe/maschinenleistung/",
+      "hoverDefinition": "Maschinenleistung macht sichtbar, wo Produktivität entsteht, ohne dass im gleichen Umfang Löhne und Sozialbeiträge entstehen.",
+      "shortDefinition": "Maschinenleistung bezeichnet produktive Leistung, die durch Maschinen, KI, Robotik oder autonome Systeme erbracht wird und nicht mehr direkt als menschliche Erwerbsarbeit erscheint.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Maschinenleistung",
+        "Maschinenarbeit",
+        "automatisierte Leistung",
+        "Leistung von Maschinen",
+        "KI-Leistung",
+        "Roboterleistung"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkleistung",
+        "sozialabgaben"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "maschinenleistungsrueckkopplung": {
+      "label": "Maschinenleistungsrückkopplung",
+      "slug": "maschinenleistungsrueckkopplung",
+      "url": "/begriffe/maschinenleistungsrueckkopplung/",
+      "hoverDefinition": "Maschinenleistungsrückkopplung ist die WÖk-Alternative zur Robotersteuer: nicht Maschinenstrafe, sondern Rückführung automatisierter Produktivität.",
+      "shortDefinition": "Maschinenleistungsrückkopplung beschreibt das Prinzip, Produktivität aus KI, Robotik, Digitalisierung und autonomen Systemen so in Gesellschaft, Sozialfinanzierung, Wirkungseinkommen, Weiterbildung und Wirkungsfonds zurückzuführen, dass Automatisierung stabilisiert statt spaltet.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Maschinenleistungsrückkopplung",
+        "Maschinenleistung rückkoppeln",
+        "Rückkopplung von Maschinenleistung",
+        "Produktivitätsrückführung",
+        "Maschinenleistungs-Rückkopplung",
+        "Automatisierung",
+        "Maschinenleistung",
+        "Roboterökonomie",
+        "Roboteroekonomie",
+        "KI und Arbeit",
+        "autonome Systeme"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente",
+        "transformationsbonus",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "maschinenwertschoepfungsbeitrag": {
+      "label": "Maschinenwertschöpfungsbeitrag",
+      "slug": "maschinenwertschoepfungsbeitrag",
+      "url": "/begriffe/maschinenwertschoepfungsbeitrag/",
+      "hoverDefinition": "Maschinenwertschöpfungsbeitrag beschreibt die operative Rückführung automatisierter Wertschöpfung in soziale Sicherung, Weiterbildung und Wirkungsfonds.",
+      "shortDefinition": "Der Maschinenwertschöpfungsbeitrag ist ein modellhafter Beitrag aus automatisierter Wertschöpfung, der in soziale Sicherung, Weiterbildung, Wirkungsfonds, Wirkungseinkommen oder Transformationsschutz zurückfließen kann.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Maschinenwertschöpfungsbeitrag",
+        "Maschinenwertschöpfung",
+        "Maschinenwertschöpfungsabgabe",
+        "Wertschöpfungsbeitrag Automatisierung",
+        "KI-Wertschöpfungsbeitrag",
+        "Automatisierungsbeitrag",
+        "Produktivitätssteuer",
+        "Produktivitätsabgabe",
+        "Automatisierungsabgabe",
+        "Produktivitätsbeitrag",
+        "Kapitalerträge aus Automatisierung",
+        "Automatisierungsrendite",
+        "Produktivitätsgewinne"
+      ],
+      "relatedTerms": [
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "material-footprint": {
@@ -14874,13 +15827,16 @@
         "finalscore",
         "t-sroi",
         "reverse-merit-order",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "technische-leitlinien-wustg"
+        "technische-leitlinien-wustg",
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "relatedObjections": []
     },
@@ -17058,6 +18014,51 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "plattformarbeit": {
+      "label": "Plattformarbeit",
+      "slug": "plattformarbeit",
+      "url": "/begriffe/plattformarbeit/",
+      "hoverDefinition": "Plattformarbeit zeigt, wie Arbeit, Daten, Kontrolle, Einkommen und Sozialbeiträge auseinanderfallen können.",
+      "shortDefinition": "Plattformarbeit beschreibt Arbeit, die über digitale Plattformen vermittelt, gesteuert oder bewertet wird und oft neue Abhängigkeits- und Beitragsfragen erzeugt.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Plattformarbeit",
+        "Gig Work",
+        "Gig Economy",
+        "Plattformökonomie Arbeit",
+        "digitale Plattformarbeit"
+      ],
+      "relatedTerms": [
+        "ki-und-arbeit",
+        "erwerbsarbeitslogik",
+        "sozialabgaben",
+        "beitragsbasis",
+        "wirkungseinkommen",
+        "wirkungsbonus"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "plattformkapitalismus": {
       "label": "Plattformkapitalismus",
       "slug": "plattformkapitalismus",
@@ -17953,6 +18954,95 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "produktivitaetsgewinne": {
+      "label": "Produktivitätsgewinne",
+      "slug": "produktivitaetsgewinne",
+      "url": "/begriffe/produktivitaetsgewinne/",
+      "hoverDefinition": "Produktivitätsgewinne sind in der WÖk erwünscht, brauchen aber faire und wirkungsorientierte Rückkopplung.",
+      "shortDefinition": "Produktivitätsgewinne sind Mehrerträge oder Effizienzgewinne durch bessere Technik, Organisation, Wissen oder Automatisierung.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Produktivitätsgewinne",
+        "Produktivitätsgewinn",
+        "Produktivitätszuwachs",
+        "Produktivitätssteigerung",
+        "Produktivitätsfortschritt"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "automatisierungsdividende",
+        "maschinenleistungsrueckkopplung",
+        "produktivitaetssteuer",
+        "transformationsbonus"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "produktivitaetssteuer": {
+      "label": "Produktivitätssteuer",
+      "slug": "produktivitaetssteuer",
+      "url": "/begriffe/produktivitaetssteuer/",
+      "hoverDefinition": "Produktivitätssteuer ist ein Suchbegriff; WÖk-präziser ist die wirkungsorientierte Rückkopplung automatisierter Wertschöpfung.",
+      "shortDefinition": "Produktivitätssteuer bezeichnet allgemein die Idee, Produktivitätsgewinne steuerlich abzuschöpfen. In der WÖk ist der Begriff unscharf; präziser sind Automatisierungsdividende, Maschinenwertschöpfungsbeitrag und Maschinenleistungsrückkopplung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Produktivitätssteuer",
+        "Produktivitätsabgabe",
+        "Produktivitätsbeitrag",
+        "Produktivitätsdividende",
+        "Produktivitätsrückführung",
+        "Automatisierungsabgabe"
+      ],
+      "relatedTerms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistungsrueckkopplung",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "progressiv": {
@@ -19452,6 +20542,50 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "rentenfinanzierung": {
+      "label": "Rentenfinanzierung",
+      "slug": "rentenfinanzierung",
+      "url": "/begriffe/rentenfinanzierung/",
+      "hoverDefinition": "Rentenfinanzierung wird brüchig, wenn Produktivität wächst, aber Lohnsumme und Beitragsbasis nicht mitwachsen.",
+      "shortDefinition": "Rentenfinanzierung beschreibt, wie Alterssicherung getragen wird. In der WÖk wird geprüft, wie Automatisierung die lohnbezogene Beitragsbasis verändert.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Rentenfinanzierung",
+        "Finanzierung der Rente",
+        "Rentenbeiträge",
+        "Alterssicherungsfinanzierung"
+      ],
+      "relatedTerms": [
+        "wirkungsrente",
+        "sozialfinanzierung",
+        "beitragsbasis",
+        "beitragsluecke",
+        "automatisierungsdividende",
+        "lebenswirkung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "reparatur": {
       "label": "Reparatur",
       "slug": "reparatur",
@@ -19968,12 +21102,15 @@
         "greenwashing",
         "impact-washing",
         "green-claims-directive",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "impact-marketing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "responsivitaet": {
@@ -20202,6 +21339,145 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "roboteroekonomie": {
+      "label": "Roboterökonomie",
+      "slug": "roboteroekonomie",
+      "url": "/begriffe/roboteroekonomie/",
+      "hoverDefinition": "Roboterökonomie führt in der WÖk zum präziseren Cluster Maschinenleistung, Automatisierungsdividende und Wirkungseinkommen.",
+      "shortDefinition": "Roboterökonomie ist ein Such- und Kontextbegriff für Wirtschaftsfragen rund um Robotik, Automatisierung und Maschinenleistung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Roboterökonomie",
+        "Roboteroekonomie",
+        "Roboter-Ökonomie",
+        "Roboterökonomik",
+        "Robot Economy"
+      ],
+      "relatedTerms": [
+        "robotik",
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "automatisierungsdividende"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "robotersteuer": {
+      "label": "Robotersteuer",
+      "slug": "robotersteuer",
+      "url": "/begriffe/robotersteuer/",
+      "hoverDefinition": "Robotersteuer ist in der WÖk ein Kritikbegriff: präziser ist Maschinenleistungsrückkopplung statt Maschinenstrafe.",
+      "shortDefinition": "Robotersteuer bezeichnet die Idee, Maschinen oder Roboter steuerlich zu belasten, wenn sie menschliche Arbeit ersetzen. In der WÖk ist sie ein Abgrenzungsbegriff, weil sie Automatisierung zu schnell als Maschinenstrafe rahmt.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Robotersteuer",
+        "Robotertax",
+        "Maschinensteuer",
+        "KI-Steuer",
+        "Steuer auf Roboter",
+        "Steuer auf Automatisierung",
+        "Automation Tax"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistung",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "sozialabgaben",
+        "bedingungsloses-grundeinkommen",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "robotik": {
+      "label": "Robotik",
+      "slug": "robotik",
+      "url": "/begriffe/robotik/",
+      "hoverDefinition": "Robotik ist eine Technologiequelle für Maschinenleistung; bewertet werden ihre tatsächlichen Wirkungen.",
+      "shortDefinition": "Robotik umfasst Entwicklung und Einsatz von Robotern. In der WÖk ist sie eine mögliche Quelle von Maschinenleistung und Entlastung.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Robotik",
+        "Robotics",
+        "Robotertechnik",
+        "Industrierobotik",
+        "Servicerobotik"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "maschinenleistung",
+        "autonome-systeme",
+        "robotersteuer",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "rohstoffkritikalitaet": {
@@ -21661,6 +22937,52 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "sozialabgaben": {
+      "label": "Sozialabgaben",
+      "slug": "sozialabgaben",
+      "url": "/begriffe/sozialabgaben/",
+      "hoverDefinition": "Sozialabgaben hängen stark an Erwerbsarbeit; Automatisierung kann diese Beitragsbasis schwächen.",
+      "shortDefinition": "Sozialabgaben sind Beiträge aus Erwerbsarbeit zur Finanzierung von Rente, Gesundheit, Pflege und Arbeitslosenversicherung. In der WÖk werden sie wichtig, weil Automatisierung diese arbeitsbezogene Finanzierungsbasis schwächen kann.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Sozialabgaben",
+        "Sozialbeiträge",
+        "Rentenbeiträge",
+        "Beiträge zur Sozialversicherung",
+        "Sozialversicherungsbeiträge"
+      ],
+      "relatedTerms": [
+        "beitragsluecke",
+        "beitragsbasis",
+        "sozialfinanzierung",
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "wirkungsfonds",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "soziale-bewaehrtheit": {
       "label": "Soziale Bewährtheit / Social Proof",
       "slug": "soziale-bewaehrtheit",
@@ -21733,6 +23055,55 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "sozialfinanzierung": {
+      "label": "Sozialfinanzierung",
+      "slug": "sozialfinanzierung",
+      "url": "/begriffe/sozialfinanzierung/",
+      "hoverDefinition": "Sozialfinanzierung wird in der WÖk breiter gedacht: nicht nur Lohnbeiträge, sondern Rückkopplung von Wertschöpfung und Wirkung.",
+      "shortDefinition": "Sozialfinanzierung beschreibt, wie Rente, Gesundheit, Pflege, Arbeitslosenversicherung, Weiterbildung und Übergangsschutz finanziert werden. Die WÖk erweitert die Perspektive von Lohnbeiträgen auf Wertschöpfung und Wirkung.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Sozialfinanzierung",
+        "Finanzierung der sozialen Sicherung",
+        "Finanzierung von Rente und Pflege",
+        "Sozialsystem-Finanzierung",
+        "Rentenfinanzierung",
+        "Rentenbeiträge",
+        "Sozialbeiträge"
+      ],
+      "relatedTerms": [
+        "sozialabgaben",
+        "beitragsluecke",
+        "beitragsbasis",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "sozialisation": {
@@ -22461,12 +23832,17 @@
         "wirkungsdaten",
         "wirkungsrueckkopplung",
         "scorecard",
-        "sustainable-finance"
+        "sustainable-finance",
+        "impact-management",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "stiftung": {
@@ -23258,13 +24634,16 @@
         "impact-value",
         "systemgrenze",
         "sechster-kondratieff",
-        "wirkungswert"
+        "wirkungswert",
+        "impact-controlling",
+        "key-impact-indicator"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "whitepaper-t-sroi"
+        "whitepaper-t-sroi",
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "relatedObjections": []
     },
@@ -23882,6 +25261,52 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "transformationsbonus": {
+      "label": "Transformationsbonus",
+      "slug": "transformationsbonus",
+      "url": "/begriffe/transformationsbonus/",
+      "hoverDefinition": "Transformationsbonus macht Übergänge möglich: Qualifizierung, Schutz und neue Wirkleistung statt Absturz durch Strukturwandel.",
+      "shortDefinition": "Der Transformationsbonus beschreibt eine Entlastung oder Unterstützung für Menschen, Unternehmen oder Regionen, die durch Automatisierung, Dekarbonisierung oder Strukturwandel in Richtung positiver Wirkung wechseln.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Transformationsbonus",
+        "Übergangsbonus",
+        "Transformationsschutz",
+        "Übergangsschutz",
+        "Weiterbildungsbonus"
+      ],
+      "relatedTerms": [
+        "uebergangsschutz",
+        "weiterbildung",
+        "automatisierung",
+        "wirkungsfonds",
+        "wirkungseinkommen",
+        "transformationsrente",
+        "maschinenleistungsrueckkopplung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "transformationswelle": {
@@ -26164,8 +27589,8 @@
       "label": "Wirkleistung",
       "slug": "wirkleistung",
       "url": "/begriffe/wirkleistung/",
-      "hoverDefinition": "Wirkleistung ist in der Elektrotechnik die nutzbare Leistung, die tatsächlich Arbeit verrichtet.",
-      "shortDefinition": "Wirkleistung ist in der Elektrotechnik die nutzbare Leistung, die tatsächlich Arbeit verrichtet.",
+      "hoverDefinition": "Wirkleistung ist reale positive Zustandsveränderung oder die Vermeidung negativer Zustandsveränderung.",
+      "shortDefinition": "Wirkleistung ist Leistung, die tatsächlich positive Zustandsveränderung erzeugt oder negative Zustandsveränderung verhindert.",
       "category": "Physik, Energie und Wirkungsmetaphern",
       "synonyms": [
         "Wirkleistung"
@@ -26175,12 +27600,34 @@
         "blindleistung",
         "verlustleistung",
         "wirkung",
-        "wirkungsgrad"
+        "wirkungsgrad",
+        "leistung",
+        "maschinenleistung",
+        "wirkungseinkommen",
+        "wirkungsbonus",
+        "wirkungsbiografie"
       ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "wirklichkeitsbindung": {
@@ -26468,6 +27915,52 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "wirkungsbiografie": {
+      "label": "Wirkungsbiografie",
+      "slug": "wirkungsbiografie",
+      "url": "/begriffe/wirkungsbiografie/",
+      "hoverDefinition": "Wirkungsbiografie erweitert Erwerbsbiografie um Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "shortDefinition": "Die Wirkungsbiografie beschreibt den Lebensverlauf nicht nur als Erwerbsbiografie, sondern als Summe gesellschaftlicher Wirkleistungen: Arbeit, Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Wirkungsbiografie",
+        "Wirkungsbiographie",
+        "Lebenswirkung",
+        "Wirkungslebenslauf",
+        "Lebensleistungsbiografie"
+      ],
+      "relatedTerms": [
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "lebenswirkung",
+        "wirkungsbonus",
+        "wirkleistung",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "wirkungsblindheit": {
       "label": "Wirkungsblindheit",
       "slug": "wirkungsblindheit",
@@ -26505,6 +27998,51 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wirkungsbonus": {
+      "label": "Wirkungsbonus",
+      "slug": "wirkungsbonus",
+      "url": "/begriffe/wirkungsbonus/",
+      "hoverDefinition": "Wirkungsbonus erkennt gesellschaftliche Wirkleistung an, ohne den Wert einer Person zu bewerten.",
+      "shortDefinition": "Der Wirkungsbonus ist der variable Teil des Wirkungseinkommens, der reale gesellschaftliche Wirkleistung sichtbar und materiell anerkennbar macht.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Wirkungsbonus",
+        "Wirkbonus",
+        "Bonus für Wirkleistung",
+        "Wirkleistungsbonus"
+      ],
+      "relatedTerms": [
+        "wirkleistung",
+        "wirkungsbiografie",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsrente",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "wirkungsdaten": {
@@ -26561,12 +28099,17 @@
         "vollstaendige-information",
         "transaktionskosten",
         "oesterreichische-schule",
-        "transparenz"
+        "transparenz",
+        "impact-controlling",
+        "impact-management",
+        "key-impact-indicator"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "wirkungsdatenraum": {
@@ -26590,24 +28133,39 @@
         "commons-gemeingueter",
         "esap",
         "wirkungsblindheit",
-        "wirkungswahrheit"
+        "wirkungswahrheit",
+        "impact-controlling",
+        "steuerungsdaten",
+        "doppelte-wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "wirkungseinkommen": {
       "label": "Wirkungseinkommen",
       "slug": "wirkungseinkommen",
       "url": "/begriffe/wirkungseinkommen/",
-      "hoverDefinition": "Wirkungseinkommen verknüpft Einkommen mit gesellschaftlich relevanter positiver Wirkung.",
-      "shortDefinition": "Wirkungseinkommen beschreibt Einkommenslogiken, die gesellschaftlich relevante positive Wirkung berücksichtigen.",
+      "hoverDefinition": "Wirkungseinkommen = Grunddividende + Markteinkommen + Wirkungsbonus; keine Personenbewertung und kein bloßes BGE.",
+      "shortDefinition": "Das Wirkungseinkommen verbindet Grunddividende, Markteinkommen und Wirkungsbonus. Es ist das Einkommensmodell einer automatisierten Gesellschaft, in der Einkommen nicht mehr allein an Erwerbsarbeit gebunden werden kann.",
       "category": "Messbegriff",
       "synonyms": [
         "Wirkungseinkommen",
-        "Wirkungsdividende"
+        "Wirkungsdividende",
+        "Grundeinkommen Wirkung",
+        "Einkommen aus Wirkung",
+        "BGE",
+        "Grundeinkommen",
+        "bedingungsloses Grundeinkommen",
+        "Universal Basic Income",
+        "UBI",
+        "Erwerbsarbeitslogik",
+        "Wirkungseinkommensteuer",
+        "WEstG"
       ],
       "relatedTerms": [
         "positive-netto-wirkung",
@@ -26619,13 +28177,80 @@
         "care-oekonomie",
         "feministische-oekonomie",
         "unbezahlte-arbeit",
-        "feminisierung-von-armut"
+        "feminisierung-von-armut",
+        "grunddividende",
+        "wirkungsbonus",
+        "automatisierungsdividende",
+        "wirkungseinkommensteuer",
+        "maschinenwertschoepfungsbeitrag",
+        "bedingungsloses-grundeinkommen",
+        "wirkleistung"
       ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
       "relatedDocuments": [
-        "wp-einkommen"
+        "wp-einkommen",
+        "wenn-maschinen-arbeiten",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungseinkommensteuer": {
+      "label": "Wirkungseinkommensteuer",
+      "slug": "wirkungseinkommensteuer",
+      "url": "/begriffe/wirkungseinkommensteuer/",
+      "hoverDefinition": "Wirkungseinkommensteuer ist ein Modellbegriff: Einkommen einordnen, nicht Menschen bewerten.",
+      "shortDefinition": "Die Wirkungseinkommensteuer ist ein modellhafter Steuerbaustein, der Einkommen nach Höhe, Entstehungskontext und Wirkung einordnet, ohne Personen zu bewerten.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Wirkungseinkommensteuer",
+        "WEstG",
+        "Wirkungseinkommensteuergesetz",
+        "Wirkungseinkommenssteuer",
+        "Wirkungs-Einkommensteuer"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungssteuer",
+        "wstg"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
       ],
       "relatedObjections": []
     },
@@ -26692,18 +28317,42 @@
       "synonyms": [
         "Wirkungsfonds",
         "Transformationsfonds",
-        "Rückkopplungsfonds"
+        "Rückkopplungsfonds",
+        "Bürger:innenfonds",
+        "Buergerinnenfonds"
       ],
       "relatedTerms": [
         "wirkungsrueckkopplung",
         "wirkungseinkommen",
         "wirkungshaushalt",
-        "just-transition-mechanism"
+        "just-transition-mechanism",
+        "maschinenleistungsrueckkopplung",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "transformationsbonus",
+        "wirkungsrente"
       ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
       "relatedObjections": []
     },
     "wirkungsfreiheit": {
@@ -27372,12 +29021,15 @@
       "label": "Wirkungsrente",
       "slug": "wirkungsrente",
       "url": "/begriffe/wirkungsrente/",
-      "hoverDefinition": "Wirkungsrente fragt, wie Lebensleistung und gesellschaftliche Wirkung im Alter abgesichert werden.",
-      "shortDefinition": "Wirkungsrente beschreibt eine rentenpolitische Perspektive, die Lebensleistung und gesellschaftliche Wirkung sichtbarer macht.",
+      "hoverDefinition": "Wirkungsrente erweitert Erwerbsbiografie zur Wirkungsbiografie; sie ist keine moralische Lebensbewertung.",
+      "shortDefinition": "Die Wirkungsrente erweitert die Erwerbsbiografie zur Wirkungsbiografie. Sie verbindet Basisrente, Wirkungsdividende und Fondsanteil und macht Lebenswirkung wie Care, Bildung, Pflege, Ehrenamt, Prävention und Transformation sichtbar.",
       "category": "Messbegriff",
       "synonyms": [
         "Wirkungsrente",
-        "wirkungsbasierte Rente"
+        "wirkungsbasierte Rente",
+        "Wirkungsdividende Alter",
+        "Transformationsrente",
+        "Rentenfinanzierung"
       ],
       "relatedTerms": [
         "wirkungseinkommen",
@@ -27386,13 +29038,36 @@
         "feministische-oekonomie",
         "gender-pay-gap",
         "gender-pension-gap",
-        "feminisierung-von-armut"
+        "feminisierung-von-armut",
+        "wirkungsbiografie",
+        "erwerbsbiografie",
+        "lebenswirkung",
+        "wirkungsdividende",
+        "buergerinnenfonds",
+        "transformationsrente",
+        "automatisierungsdividende",
+        "wirkungsbonus"
       ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
       "relatedDocuments": [
-        "wp-rente"
+        "wp-rente",
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen"
       ],
       "relatedObjections": []
     },
@@ -27440,12 +29115,17 @@
         "systemischer-wert",
         "versorgungssicherheit",
         "viabilitaet",
-        "zukunftsfaehigkeit"
+        "zukunftsfaehigkeit",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "wirkungsrisiko": {
@@ -27498,12 +29178,17 @@
         "wirkungsblindheit",
         "wirkungskompetenz",
         "wirkungsradar",
-        "zeitwirkung"
+        "zeitwirkung",
+        "financial-materiality",
+        "impact-management",
+        "impact-controlling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "wirkungsrueckkopplung": {
@@ -27535,12 +29220,17 @@
         "wirkungsfonds",
         "wirkungshaushalt",
         "wirkungssteuer",
-        "zentralverwaltungswirtschaft"
+        "zentralverwaltungswirtschaft",
+        "impact-management",
+        "impact-controlling",
+        "doppelte-wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
       "relatedObjections": []
     },
     "wirkungsschule": {

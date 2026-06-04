@@ -34,14 +34,20 @@ const SCAN_TARGETS = [
   "portale",
   "referenz",
   "referenzrahmen",
+  "scanner.html",
+  "scorecard-dashboard.html",
+  "so-wirkt-wirkungsoekonomie",
   "suche.html",
   "tools",
   "verstehen",
   "werkstatt",
   "werkzeuge",
   "wirkungsoekonomie.html",
+  "wirkungsradar",
   "wirkungsfelder",
   "wissen",
+  "woek-ki",
+  "woek-id-register",
   "workflow.html",
   "assets/downloads",
 ];
@@ -68,9 +74,34 @@ const BLOCKED_TERMS = [
   "Einzeldossier-Set",
   "online zitierfähig als CTA",
   "Export und Archiv im Einstieg",
+  "ProtectionNotice",
+  "fachoeffentlich",
+  "wirkungsoekonomisch",
+  "Wirkungsoekonomisch",
+  "Oeffentlichkeit",
+  "oeffentlich",
+  "Oeffentlich",
+  "Pruef",
+  "pruef",
+  "E`ekt",
+  "scha`",
+];
+
+const BLOCKED_PATTERNS = [
+  {
+    label: "sichtbarer wortinterner Backtick aus PDF-Extraktion",
+    pattern: /[A-Za-zÄÖÜäöüß]`[A-Za-zÄÖÜäöüß]/g,
+    recommendation: "PDF-Extraktion normalisieren; Backtick im Wort meist zu ff korrigieren",
+  },
+  {
+    label: "sichtbarer Markup-Rest",
+    pattern: /(?:">|<\/[a-z][^>]*>)/gi,
+    recommendation: "HTML/Markdown-Sanitizer prüfen; sichtbare Markup-Reste entfernen",
+  },
 ];
 
 const TECHNICAL_CANONICAL_RE = /<link\b[^>]*rel=["']canonical["'][^>]*>/gi;
+const HIDDEN_FROM_SCREEN_RE = /<([a-z0-9:-]+)\b(?=[^>]*(?:data-search-exclude|class=["'][^"']*(?:no-print|print-meta|sr-only)[^"']*["']))[^>]*>[\s\S]*?<\/\1>/gi;
 
 function walk(entry, files = []) {
   const full = path.join(ROOT, entry);
@@ -100,7 +131,7 @@ function decodeEntities(value) {
 function visibleText(html) {
   const withoutTechnicalCanonical = html.replace(TECHNICAL_CANONICAL_RE, "");
   const bodyMatch = /<body\b[^>]*>([\s\S]*?)<\/body>/i.exec(withoutTechnicalCanonical);
-  const body = bodyMatch ? bodyMatch[1] : withoutTechnicalCanonical;
+  const body = (bodyMatch ? bodyMatch[1] : withoutTechnicalCanonical).replace(HIDDEN_FROM_SCREEN_RE, " ");
   return decodeEntities(
     body
       .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
@@ -143,6 +174,18 @@ for (const file of files) {
           ? "ersetzen durch Onlinefassung, zentrale Übersicht oder entfernen"
           : "entfernen oder nutzerverständlich ersetzen",
       });
+    }
+  }
+  for (const blockedPattern of BLOCKED_PATTERNS) {
+    for (const match of text.matchAll(blockedPattern.pattern)) {
+      const index = match.index || 0;
+      findings.push({
+        file: path.relative(ROOT, file),
+        term: blockedPattern.label,
+        context: text.slice(Math.max(0, index - 90), Math.min(text.length, index + String(match[0]).length + 90)),
+        recommendation: blockedPattern.recommendation,
+      });
+      if (findings.length >= 5000) break;
     }
   }
 }

@@ -147,7 +147,7 @@ Der Methodenbereich ist kein eigenes Nachhaltigkeitsziel, sondern eine Rückkopp
 
 ## Website- und Portalintegration
 
-Auf der Website sollte dieses Methodenpapier nicht als bloßer Download erscheinen. Es braucht eine Online-Volltextseite mit Kapitelankern, Kurzfassung, Anwendungsbeispielen, verlinkten WÖk-ID-Familien und Toolkarten. Wichtig ist die Trennung zwischen Portaltext, Methodenpapier, Tool-Spezifikation und Glossar. Eine Kurzbeschreibung darf nicht als vollständiges Methodenpapier erscheinen.
+Auf der Website sollte dieses Methodenpapier nicht als bloßer Download erscheinen. Es braucht eine Online-Volltextseite mit Kapitelankern, Kurzfassung, Anwendungsbeispielen, verlinkten WÖk-ID-Familien und Toolkarten. Wichtig ist die Trennung zwischen Seiteneinstieg, Methodenpapier, Methodikbeschreibung und Glossar. Eine Kurzbeschreibung darf nicht als vollständiges Methodenpapier erscheinen.
 
 Empfohlene URL: /werkzeuge/woek-ids/ sowie Querverlinkung zu /werkzeuge/scorecards/, /werkzeuge/t-sroi/, /wirkungsfelder/produkte-konsum/, /wirkungsfelder/wirtschaft-unternehmen/, /verstehen/sdgs-sdgplus/ und zum Online-Buch.
 

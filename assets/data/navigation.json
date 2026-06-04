@@ -2,6 +2,7 @@
   "header": [
     { "label": "Start", "href": "index.html", "match": ["index.html"] },
     { "label": "Verstehen", "href": "verstehen.html", "match": ["verstehen.html", "wirkungsoekonomie.html", "wirkungsoekonomie/", "verstehen/"] },
+    { "label": "So wirkt WÖk", "href": "so-wirkt-wirkungsoekonomie/", "match": ["so-wirkt-wirkungsoekonomie/", "so-wirkt-wirkungsoekonomie.html"] },
     { "label": "Wirkungsfelder", "href": "wirkungsfelder/", "match": ["wirkungsfelder/", "anwendungen.html"] },
     { "label": "Methoden & Werkzeuge", "href": "werkzeuge/", "match": ["werkzeuge/", "tools/", "methodik/", "workflow.html", "scanner.html", "anwendungen/scanner.html", "scorecard-dashboard.html", "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
     { "label": "Erleben", "href": "erleben/", "match": ["erleben.html", "erleben/", "ausprobieren/"] },
@@ -71,49 +72,20 @@
         { "label": "Netto-Wirkungs-Index", "href": "werkzeuge/netto-wirkungs-index/", "match": ["werkzeuge/netto-wirkungs-index/"] },
         { "label": "T-SROI", "href": "werkzeuge/t-sroi/", "match": ["werkzeuge/t-sroi/", "werkzeuge/impact-controlling/t-sroi/"] },
         { "label": "Reverse Merit Order", "href": "werkzeuge/reverse-merit-order/", "match": ["werkzeuge/reverse-merit-order/"] },
-        { "label": "Impact Controlling", "href": "werkzeuge/impact-controlling/", "match": ["werkzeuge/impact-controlling/"] },
-        { "label": "Datenqualität & Assurance", "href": "werkzeuge/datenqualitaet-assurance/", "match": ["werkzeuge/datenqualitaet-assurance/"] },
-        { "label": "Digitale Produktpässe", "href": "werkzeuge/digitale-produktpaesse/", "match": ["werkzeuge/digitale-produktpaesse/"] },
-        { "label": "Wirkungsdatenräume", "href": "werkzeuge/wirkungsdatenraeume/", "match": ["werkzeuge/wirkungsdatenraeume/"] },
-        { "label": "Wirkungsregister", "href": "werkzeuge/wirkungsregister/", "match": ["werkzeuge/wirkungsregister/"] },
-        { "label": "Wirkungsaudit", "href": "werkzeuge/wirkungsaudit/", "match": ["werkzeuge/wirkungsaudit/"] },
-        { "label": "Öffentliche Beschaffung", "href": "werkzeuge/oeffentliche-beschaffung/", "match": ["werkzeuge/oeffentliche-beschaffung/"] },
-        { "label": "Wirkungshaushalt", "href": "werkzeuge/wirkungshaushalt/", "match": ["werkzeuge/wirkungshaushalt/"] },
-        { "label": "Wirkungsumsatzsteuer", "href": "werkzeuge/wirkungsumsatzsteuer/", "match": ["werkzeuge/wirkungsumsatzsteuer/"] },
-        { "label": "Wirkungseinkommensteuer", "href": "werkzeuge/wirkungseinkommensteuer/", "match": ["werkzeuge/wirkungseinkommensteuer/"] },
-        { "label": "Wirkungsfonds", "href": "werkzeuge/wirkungsfonds/", "match": ["werkzeuge/wirkungsfonds/"] },
-        { "label": "Wirkungsrat", "href": "werkzeuge/wirkungsrat/", "match": ["werkzeuge/wirkungsrat/"] }
+        { "label": "Alle Werkzeuge", "href": "werkzeuge/", "match": ["werkzeuge/"] }
       ]
     },
     {
       "title": "Erleben",
       "items": [
         { "label": "Interaktive Demos", "href": "erleben/", "match": ["erleben.html", "erleben/"] },
+        { "label": "WÖk-KI Beta", "href": "woek-ki/", "match": ["woek-ki/"] },
         { "label": "Produktwirkungsrechner", "href": "erleben/produktwirkungsrechner/", "match": ["erleben/produktwirkungsrechner/"] },
         { "label": "Impact-Controlling-Rechner", "href": "erleben/impact-controlling-rechner/", "match": ["erleben/impact-controlling-rechner/"] },
         { "label": "Medienwirkungscheck", "href": "erleben/medienwirkungscheck/", "match": ["erleben/medienwirkungscheck/"] },
         { "label": "Unternehmens-Wirkungscheck", "href": "erleben/unternehmens-wirkungscheck/", "match": ["erleben/unternehmens-wirkungscheck/"] },
         { "label": "Wirkungsportfolio-Generator", "href": "erleben/wirkungsportfolio-generator/", "match": ["erleben/wirkungsportfolio-generator/"] },
-        { "label": "Wohnwirkungsrechner", "href": "erleben/wohnwirkungsrechner/", "match": ["erleben/wohnwirkungsrechner/"] },
-        { "label": "Wirkungsrenten-Rechner", "href": "erleben/wirkungsrenten-rechner/", "match": ["erleben/wirkungsrenten-rechner/"] }
-      ]
-    },
-    {
-      "title": "Für wen",
-      "items": [
-        { "label": "Alle Zielgruppen", "href": "fuer/", "match": ["fuer/"] },
-        { "label": "Unternehmen", "href": "fuer/unternehmen.html", "match": ["fuer/unternehmen.html"] },
-        { "label": "Kommunen & Verwaltung", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] },
-        { "label": "Politik", "href": "fuer/politik.html", "match": ["fuer/politik.html"] },
-        { "label": "Investor:innen", "href": "fuer/investoren.html", "match": ["fuer/investoren.html"] },
-        { "label": "Journalismus & Medien", "href": "fuer/journalismus.html", "match": ["fuer/journalismus.html"] },
-        { "label": "Wissenschaft & Forschung", "href": "fuer/wissenschaft-forschung.html", "match": ["fuer/wissenschaft-forschung.html"] },
-        { "label": "Bürger:innen", "href": "fuer/buergerinnen.html", "match": ["fuer/buergerinnen.html"] },
-        { "label": "Gesundheit", "href": "fuer/gesundheit.html", "match": ["fuer/gesundheit.html"] },
-        { "label": "Wohnen & Miete", "href": "fuer/mieter.html", "match": ["fuer/mieter.html"] },
-        { "label": "Wirkungseinkommen", "href": "fuer/wirkungseinkommen.html", "match": ["fuer/wirkungseinkommen.html"] },
-        { "label": "Wirkungsrente", "href": "fuer/rente.html", "match": ["fuer/rente.html"] },
-        { "label": "Akademie", "href": "fuer/akademie.html", "match": ["fuer/akademie.html"] }
+        { "label": "Alle Demos", "href": "erleben/", "match": ["erleben/"] }
       ]
     },
     {
@@ -126,20 +98,14 @@
         { "label": "Working Papers", "href": "wissen/working-papers/", "match": ["wissen/working-papers/"] },
         { "label": "Gesetze", "href": "werkstatt/gesetze/wirkungssteuergesetz/", "match": ["werkstatt/gesetze/"] },
         { "label": "Leitlinien", "href": "werkstatt/leitlinien/wustg/", "match": ["werkstatt/leitlinien/"] },
-        { "label": "Dossiers", "href": "blog/dossiers/grundlagen.html", "match": ["blog/dossiers/"] },
-        { "label": "Historische Dokumente", "href": "werkstatt/arbeitsbibliothek/historische-dokumente/", "match": ["werkstatt/arbeitsbibliothek/historische-dokumente/"] }
-      ]
-    },
-    {
-      "title": "Projekt",
-      "items": [
-        { "label": "Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
-        { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] },
-        { "label": "Über die Wirkungsökonomie", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] },
-        { "label": "Impressum", "href": "impressum.html", "match": ["impressum.html", "impressum/"] },
-        { "label": "Datenschutz", "href": "datenschutz.html", "match": ["datenschutz.html", "datenschutz/"] }
+        { "label": "Alle Bibliotheksbereiche", "href": "downloads.html", "match": ["downloads.html"] }
       ]
     }
   ],
-  "footerLegal": []
+  "footerLegal": [
+    { "label": "Journal", "href": "blog.html", "match": ["blog.html", "blog/"] },
+    { "label": "Über die Wirkungsökonomie", "href": "ueber.html", "match": ["ueber.html", "ueber/", "ueber-die-woek/", "ueber-die-w-oek/"] },
+    { "label": "Impressum", "href": "impressum.html", "match": ["impressum.html", "impressum/"] },
+    { "label": "Datenschutz", "href": "datenschutz.html", "match": ["datenschutz.html", "datenschutz/"] }
+  ]
 }

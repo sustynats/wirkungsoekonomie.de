@@ -405,6 +405,24 @@ Komponentenrollen:
 - Modellgrafiken: Steuerungslogik sichtbar machen
 - CTA-Bereiche: nächste Handlung klar führen
 
+### Website-Styleguide Umsetzung
+
+Stand der Website-Umsetzung: 2026-06-03
+
+Der verbindliche Online-Styleguide liegt unter `styleguide.html`. Die technische Grundlage liegt in `assets/css/style.css` im Abschnitt `Website design system 2026-06`.
+
+Umsetzungsregeln:
+
+- neue Seiten nutzen die zentralen Tokens für Typografie, Spacing, Radius, Farben und Schatten
+- Hauptüberschriften bleiben kompakt und werden nicht seitenweise größer gezogen
+- Buttons werden nur für klare Handlungen genutzt
+- Links zu Seiten, Downloads, Mail und Ankern sind `a.btn[href]`
+- Zustandswechsel in Tools, Filtern, Tabs und Dialogen sind `button.btn`
+- Karten sind für vergleichbare Einheiten, nicht für verschachtelte Layoutflächen
+- Tabellen erhalten einen Wrapper und müssen auf Mobile lesbar oder scrollbar sein
+- Bilder müssen orientieren: Buch, Systemgrafik, konkrete Objekte oder klare Diagramme
+- dekorative Stockmotive, Blätter-Klischees und generische Glanzbilder werden vermieden
+
 ## 12. Offene Designentscheidungen
 
 Noch zu entscheiden:
