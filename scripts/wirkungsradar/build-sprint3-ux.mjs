@@ -122,7 +122,7 @@ function radarNav(base = "") {
     ["Mythen & Narrative", `${base}narrative/`],
     ["Antwort-Playbooks", `${base}antwort-playbooks/`],
     ["Studio", `${base}studio/`],
-    ["Mythos melden", `${base}mythos-melden/`],
+    ["Narrativ einreichen", `${base}narrativ-einreichen/`],
     ["Wirkungsradar-Methode", `${base}methode/`],
     ["Quellen", `${base}quellen/`],
   ];
@@ -204,7 +204,7 @@ function searchPanel({ id = "radar-suche", placeholder }) {
 
 function homePage() {
   const cards = lighthouseSlugs.map((slug) => p0DossiersV2.find((dossier) => dossier.slug === slug)).filter(Boolean).slice(0, 12);
-  const extraHead = `<meta name="search_tags" content="Wirkungsradar, Fakten, Folgen, Frames, Psychologie, bessere Antworten, Mythos melden">`;
+  const extraHead = `<meta name="search_tags" content="Wirkungsradar, Fakten, Folgen, Frames, Psychologie, bessere Antworten, Narrativ einreichen">`;
   const main = `
     <section class="hero radar-page-hero radar-sprint-hero">
       <div class="hero-grid">

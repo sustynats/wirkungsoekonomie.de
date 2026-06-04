@@ -16725,6 +16725,103 @@ a.principle-card:hover,
   background: rgba(255, 252, 245, 0.96);
 }
 
+.community-submission-section {
+  padding-top: clamp(1.3rem, 4vw, 2.2rem);
+}
+
+.community-submission-section > div {
+  max-width: min(100% - 2rem, 62rem);
+}
+
+.community-submission-section--default > div,
+.community-submission-section--noResults > div {
+  max-width: min(100% - 2rem, 72rem);
+}
+
+.community-submission-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1rem, 3vw, 1.8rem);
+  align-items: start;
+  border-left: 5px solid rgba(47, 125, 92, 0.72);
+  background: rgba(255, 252, 245, 0.96);
+}
+
+.community-submission-section--method .community-submission-block,
+.community-submission-section--compact .community-submission-block,
+.community-submission-section--playbook .community-submission-block {
+  background: rgba(255, 252, 245, 0.9);
+  box-shadow: none;
+}
+
+.community-submission-copy {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.community-submission-copy h2 {
+  margin: 0;
+  max-width: 18ch;
+}
+
+.community-submission-copy p {
+  max-width: 62ch;
+  margin: 0;
+}
+
+.community-submission-rules {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.community-submission-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: min(100%, 18rem);
+}
+
+.community-submission-actions .text-link {
+  font-weight: 850;
+}
+
+.community-submission-form-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+  gap: clamp(1rem, 3vw, 1.6rem);
+  align-items: start;
+}
+
+.community-submission-form {
+  border-left: 5px solid rgba(47, 125, 92, 0.72);
+}
+
+.community-submission-hint {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.community-submission-workflow {
+  position: sticky;
+  top: 5.5rem;
+}
+
+.community-process-body .community-submission-section {
+  padding-top: 1rem;
+}
+
+.community-process-body .community-submission-section > div {
+  width: 100%;
+  max-width: 100%;
+}
+
 .sprint5-report-form {
   display: grid;
   gap: 0.9rem;
@@ -16814,6 +16911,23 @@ a.principle-card:hover,
 }
 
 @media (max-width: 720px) {
+  .community-submission-block,
+  .community-submission-form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .community-submission-actions {
+    justify-content: flex-start;
+  }
+
+  .community-submission-actions .btn {
+    width: 100%;
+  }
+
+  .community-submission-workflow {
+    position: static;
+  }
+
   .card-grid.five {
     grid-template-columns: 1fr;
   }

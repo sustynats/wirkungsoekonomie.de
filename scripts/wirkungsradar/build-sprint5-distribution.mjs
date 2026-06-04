@@ -65,7 +65,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Weitergeben ohne Frame-Verstärkung.</h2><p>Studio, Antwort-Playbooks, Quellen und Meldeworkflow helfen, Aussagen sicher in Kommentar, Unterricht, Workshop und Redaktion zu nutzen.</p><p><a class="text-link" href="${base}wirkungsradar/studio/">Studio</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${base}wirkungsradar/mythos-melden/">Mythos melden</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
+    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Weitergeben ohne Frame-Verstärkung.</h2><p>Studio, Antwort-Playbooks, Quellen und Meldeworkflow helfen, Aussagen sicher in Kommentar, Unterricht, Workshop und Redaktion zu nutzen.</p><p><a class="text-link" href="${base}wirkungsradar/studio/">Studio</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${base}wirkungsradar/narrativ-einreichen/">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=20260604-debate-use-order"></script>
   </body>
 </html>`;
@@ -78,7 +78,7 @@ function radarNav(base = "") {
     ["Mythen & Narrative", `${base}narrative/`],
     ["Antwort-Playbooks", `${base}antwort-playbooks/`],
     ["Studio", `${base}studio/`],
-    ["Mythos melden", `${base}mythos-melden/`],
+    ["Narrativ einreichen", `${base}narrativ-einreichen/`],
     ["Wirkungsradar-Methode", `${base}methode/`],
     ["Quellen", `${base}quellen/`],
   ];
@@ -407,8 +407,8 @@ function embedCardPage(dossier) {
 }
 
 function mythReportPage() {
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Mythos melden</nav><p class="hero-kicker">Meldeworkflow</p><h1 class="hero-title">Mythos melden</h1><p class="hero-subtitle">Hast du eine Aussage gesehen, die geprüft werden sollte? Melde sie hier.</p><p class="radar-sprint-lead">Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen intern zuerst auf Dubletten, bestehende Karten, Frame-Risiken und Schutzbedarf.</p></div></section>${radarNav("../")}<section class="section"><div><form class="card sprint5-report-form" action="mailto:impact@wirkungsoekonomie.org" method="post" enctype="text/plain"><label>Aussage / Claim<input name="claim" required placeholder="Was wurde gesagt?"></label><label>Kontext<select name="context"><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>X/Twitter</option><option>Telegram</option><option>Gespräch</option><option>Partei/Programm</option><option>Medienartikel</option><option>Sonstiges</option></select></label><label>Thema<select name="topic"><option>Klima</option><option>Energie</option><option>Mobilität</option><option>Migration</option><option>Sozialstaat</option><option>Arbeit</option><option>Demokratie</option><option>Medien</option><option>Wissenschaft</option><option>Ausland/Sicherheit</option><option>Geld/Steuern</option><option>Wohnen</option><option>anderes</option></select></label><label>Link / Screenshot optional<input name="url" placeholder="https://..."></label><label>Warum ist es relevant?<textarea name="relevanceText" rows="5"></textarea></label><label>Häufigkeit<select name="frequency"><option>einmal gesehen</option><option>mehrfach gesehen</option><option>viral</option><option>in meinem Umfeld häufig</option><option>weiß nicht</option></select></label><label>Kontakt optional<input name="contactEmail" type="email" placeholder="E-Mail, falls Rückmeldung gewünscht"></label><label class="checkbox-line"><input type="checkbox" required name="consent"> Ich verstehe, dass der Wirkungsradar keine persönliche Beratung und keine Meldestelle für Strafverfolgung ist.</label><input class="sr-only" name="website" tabindex="-1" autocomplete="off"><button class="btn btn-primary" type="submit">Zur Prüfung einreichen</button><p>Danke. Wir prüfen, ob daraus eine Wirkungsradar-Karte, ein Narrativ-Eintrag oder eine Ergänzung entsteht.</p></form><article class="card"><p class="card-kicker">Sichere Redaktion</p><ul class="clean-list"><li>Rohzitate werden nicht automatisch veröffentlicht</li><li>Dubletten werden mit bestehenden Karten zusammengeführt</li><li>Schutzbedarf und Menschenabwertung werden intern markiert</li><li>Verschwörungsframes bekommen gesonderte redaktionelle Prüfung</li></ul><p>Keine toxischen Originalzitate in öffentlicher Statistik.</p></article></div></section>`;
-  return shell({ title: "Mythos melden", description: "Sicherer Meldeworkflow für neue Mythen, Narrative und problematische Aussagen.", canonical: `${SITE_URL}/wirkungsradar/mythos-melden/`, base: "../../", main });
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Narrativ einreichen</nav><p class="hero-kicker">Meldeworkflow</p><h1 class="hero-title">Narrativ einreichen</h1><p class="hero-subtitle">Hast du eine Aussage gesehen, die geprüft werden sollte? Melde sie hier.</p><p class="radar-sprint-lead">Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen intern zuerst auf Dubletten, bestehende Karten, Frame-Risiken und Schutzbedarf.</p></div></section>${radarNav("../")}<section class="section"><div><form class="card sprint5-report-form" action="mailto:impact@wirkungsoekonomie.org" method="post" enctype="text/plain"><label>Aussage / Claim<input name="claim" required placeholder="Was wurde gesagt?"></label><label>Kontext<select name="context"><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>X/Twitter</option><option>Telegram</option><option>Gespräch</option><option>Partei/Programm</option><option>Medienartikel</option><option>Sonstiges</option></select></label><label>Thema<select name="topic"><option>Klima</option><option>Energie</option><option>Mobilität</option><option>Migration</option><option>Sozialstaat</option><option>Arbeit</option><option>Demokratie</option><option>Medien</option><option>Wissenschaft</option><option>Ausland/Sicherheit</option><option>Geld/Steuern</option><option>Wohnen</option><option>anderes</option></select></label><label>Link / Screenshot optional<input name="url" placeholder="https://..."></label><label>Warum ist es relevant?<textarea name="relevanceText" rows="5"></textarea></label><label>Häufigkeit<select name="frequency"><option>einmal gesehen</option><option>mehrfach gesehen</option><option>viral</option><option>in meinem Umfeld häufig</option><option>weiß nicht</option></select></label><label>Kontakt optional<input name="contactEmail" type="email" placeholder="E-Mail, falls Rückmeldung gewünscht"></label><label class="checkbox-line"><input type="checkbox" required name="consent"> Ich verstehe, dass der Wirkungsradar keine persönliche Beratung und keine Meldestelle für Strafverfolgung ist.</label><input class="sr-only" name="website" tabindex="-1" autocomplete="off"><button class="btn btn-primary" type="submit">Zur Prüfung einreichen</button><p>Danke. Wir prüfen, ob daraus eine Wirkungsradar-Karte, ein Narrativ-Eintrag oder eine Ergänzung entsteht.</p></form><article class="card"><p class="card-kicker">Sichere Redaktion</p><ul class="clean-list"><li>Rohzitate werden nicht automatisch veröffentlicht</li><li>Dubletten werden mit bestehenden Karten zusammengeführt</li><li>Schutzbedarf und Menschenabwertung werden intern markiert</li><li>Verschwörungsframes bekommen gesonderte redaktionelle Prüfung</li></ul><p>Keine toxischen Originalzitate in öffentlicher Statistik.</p></article></div></section>`;
+  return shell({ title: "Narrativ einreichen", description: "Sicherer Meldeworkflow für neue Narrative, Frames und problematische Aussagen.", canonical: `${SITE_URL}/wirkungsradar/narrativ-einreichen/`, base: "../../", main });
 }
 
 function templatesPage() {
@@ -430,12 +430,12 @@ function usagePage() {
 }
 
 function adminPage() {
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><p class="hero-kicker">Intern</p><h1 class="hero-title">Mythos-Queue</h1><p class="hero-subtitle">Ungeprüfte Claims werden intern triagiert und nicht öffentlich verstärkt.</p></div></section><section class="section"><div><div class="card-grid two"><article class="card"><h2>Triage-Regeln</h2><ul class="clean-list"><li>Nicht automatisch veröffentlichen</li><li>Duplikate ab Score 0,82 zusammenführen</li><li>Menschenabwertung intern markieren</li><li>Persönliche Daten entfernen</li><li>Screenshots nicht öffentlich ohne Rechteprüfung</li></ul></article><article class="card"><h2>Seed-Matching</h2><ul class="clean-list"><li>matchSeedClaim(report.claim)</li><li>publicDisplay=false</li><li>never_public_raw</li><li>minderheitenschutz = humanTopicReview</li><li>elitenverschwoerung = conspiracyReview</li></ul></article><article class="card"><h2>Priorisierung</h2><ul class="clean-list"><li>Häufigkeit</li><li>gesellschaftliches Risiko</li><li>P0-Themenbezug</li><li>demokratiegefährdende Narrative</li><li>bestehende Quellenlage</li></ul></article></div></div></section>`;
-  return shell({ title: "Mythos-Queue", description: "Internes Triage-Dashboard für gemeldete Wirkungsradar-Claims.", canonical: `${SITE_URL}/admin/wirkungsradar/mythos-queue/`, base: "../../../", main, extraHead: `<meta name="robots" content="noindex">` });
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><p class="hero-kicker">Intern</p><h1 class="hero-title">Narrativ-Queue</h1><p class="hero-subtitle">Ungeprüfte Claims werden intern triagiert und nicht öffentlich verstärkt.</p></div></section><section class="section"><div><div class="card-grid two"><article class="card"><h2>Triage-Regeln</h2><ul class="clean-list"><li>Nicht automatisch veröffentlichen</li><li>Duplikate ab Score 0,82 zusammenführen</li><li>Menschenabwertung intern markieren</li><li>Persönliche Daten entfernen</li><li>Screenshots nicht öffentlich ohne Rechteprüfung</li></ul></article><article class="card"><h2>Seed-Matching</h2><ul class="clean-list"><li>matchSeedClaim(report.claim)</li><li>publicDisplay=false</li><li>never_public_raw</li><li>minderheitenschutz = humanTopicReview</li><li>elitenverschwoerung = conspiracyReview</li></ul></article><article class="card"><h2>Priorisierung</h2><ul class="clean-list"><li>Häufigkeit</li><li>gesellschaftliches Risiko</li><li>P0-Themenbezug</li><li>demokratiegefährdende Narrative</li><li>bestehende Quellenlage</li></ul></article></div></div></section>`;
+  return shell({ title: "Narrativ-Queue", description: "Internes Triage-Dashboard für gemeldete Wirkungsradar-Claims.", canonical: `${SITE_URL}/admin/wirkungsradar/narrativ-queue/`, base: "../../../", main, extraHead: `<meta name="robots" content="noindex">` });
 }
 
 function analyticsPage() {
-  const metrics = ["kopierte Antworten", "exportierte Skripte", "gemeldete Mythen", "neue Dossier-Kandidaten", "Feedback: Frame-Risiko", "Feedback: Quelle fehlt", "Feedback: Sprache zu kompliziert", "Workshop-Downloads", "Embed-Nutzung", "kopierte bessere Fragen", "kopierte positive Beispiele"];
+  const metrics = ["kopierte Antworten", "exportierte Skripte", "eingereichte Narrative", "neue Dossier-Kandidaten", "Feedback: Frame-Risiko", "Feedback: Quelle fehlt", "Feedback: Sprache zu kompliziert", "Workshop-Downloads", "Embed-Nutzung", "kopierte bessere Fragen", "kopierte positive Beispiele"];
   const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><p class="hero-kicker">Intern</p><h1 class="hero-title">Distribution Analytics</h1><p class="hero-subtitle">Gemessen wird Bedarf nach Klarheit, nicht Empörung.</p></div></section><section class="section"><div><div class="card-grid three">${metrics.map((metric) => `<article class="card"><p class="card-kicker">Metrik</p><h3>${esc(metric)}</h3><p>Nicht nach Rage-Kommentaren, toxischer Viralität oder Gegnerbindung optimieren.</p></article>`).join("")}</div></div></section>`;
   return shell({ title: "Distribution Analytics", description: "Wirkungsorientierte Metriken für Wirkungsradar-Verbreitung.", canonical: `${SITE_URL}/admin/wirkungsradar/distribution-analytics/`, base: "../../../", main, extraHead: `<meta name="robots" content="noindex">` });
 }
@@ -464,7 +464,7 @@ function writeApis() {
     write(OUT("api/wirkungsradar/distribution", card.slug, "index.html"), `<pre>${esc(JSON.stringify(pack, null, 2))}</pre>`);
     write(OUT("api/wirkungsradar/embed", `${card.slug}.json`), JSON.stringify({ ...card, embed: pack.platformAssets.embed }, null, 2));
   }
-  write(OUT("api/wirkungsradar/report-myth/index.html"), `<pre>${esc(JSON.stringify({
+  write(OUT("api/wirkungsradar/report-narrative/index.html"), `<pre>${esc(JSON.stringify({
     status: "static_site_mailto_fallback",
     rateLimit: "planned_server_side",
     honeypot: "website",
@@ -473,8 +473,8 @@ function writeApis() {
   }, null, 2))}</pre>`);
 }
 
-function mythCta(href = "mythos-melden/") {
-  return `<section class="section sprint5-myth-cta" data-sprint5-myth-cta data-search-exclude><div><article class="card"><p class="card-kicker">Fehlt ein Mythos?</p><h2>Hast du eine Aussage gesehen, die geprüft werden sollte?</h2><p>Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen zuerst, ob eine Veröffentlichung den Frame verstärken würde.</p><a class="btn btn-primary" href="${esc(href)}">Mythos melden</a></article></div></section>`;
+function mythCta(href = "narrativ-einreichen/") {
+  return `<section class="section sprint5-myth-cta" data-sprint5-myth-cta data-search-exclude><div><article class="card"><p class="card-kicker">Fehlt ein Narrativ?</p><h2>Hast du eine Aussage gesehen, die geprüft werden sollte?</h2><p>Hast du eine Aussage, ein Narrativ, einen Frame oder eine Behauptung gesehen, die Wirkung entfaltet? Reiche sie ein. Nicht jede Einreichung wird veröffentlicht.</p><a class="btn btn-primary" href="${esc(href)}">Narrativ einreichen</a></article></div></section>`;
 }
 
 function injectCtas() {
@@ -492,7 +492,7 @@ function injectCtas() {
     if (!fs.existsSync(file)) continue;
     let html = fs.readFileSync(file, "utf8");
     html = html.replace(/<section class="section sprint5-myth-cta"[\s\S]*?<\/section>\n?/g, "");
-    const href = `${path.relative(path.dirname(file), OUT("wirkungsradar/mythos-melden")).split(path.sep).join("/")}/`;
+    const href = `${path.relative(path.dirname(file), OUT("wirkungsradar/narrativ-einreichen")).split(path.sep).join("/")}/`;
     if (html.includes("</main>")) {
       html = html.replace("</main>", `${mythCta(href)}\n</main>`);
       fs.writeFileSync(file, html);
@@ -557,11 +557,11 @@ write(OUT("wirkungsradar/workshops/print/klima-energie/index.html"), workshopPri
 write(OUT("wirkungsradar/unterricht/index.html"), simpleMaterialPage("unterricht"));
 write(OUT("wirkungsradar/newsletter/index.html"), simpleMaterialPage("newsletter"));
 write(OUT("wirkungsradar/embed/index.html"), embedIndexPage());
-write(OUT("wirkungsradar/embed/report-myth/index.html"), mythReportPage());
-write(OUT("wirkungsradar/mythos-melden/index.html"), mythReportPage());
+write(OUT("wirkungsradar/embed/report-narrative/index.html"), mythReportPage());
+write(OUT("wirkungsradar/narrativ-einreichen/index.html"), mythReportPage());
 write(OUT("wirkungsradar/templates/index.html"), templatesPage());
 write(OUT("wirkungsradar/nutzung/index.html"), usagePage());
-write(OUT("admin/wirkungsradar/mythos-queue/index.html"), adminPage());
+write(OUT("admin/wirkungsradar/narrativ-queue/index.html"), adminPage());
 write(OUT("admin/wirkungsradar/distribution-analytics/index.html"), analyticsPage());
 injectCtas();
 

@@ -523,7 +523,7 @@ function shell({ title, description, canonical, base = "../", main }) {
 }
 
 function radarNav(base = "../") {
-  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude><a href="${base}">Antwort finden</a><a href="${base}debattenkarten/">Debattenkarten</a><a href="${base}narrative/">Mythen & Narrative</a><a href="${base}antwort-playbooks/">Antwort-Playbooks</a><a href="${base}studio/">Studio</a><a href="${base}mythos-melden/">Mythos melden</a><a href="${base}methode/">Wirkungsradar-Methode</a><a href="${base}quellen/">Quellen</a></nav>`;
+  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude><a href="${base}">Antwort finden</a><a href="${base}debattenkarten/">Debattenkarten</a><a href="${base}narrative/">Mythen & Narrative</a><a href="${base}antwort-playbooks/">Antwort-Playbooks</a><a href="${base}studio/">Studio</a><a href="${base}narrativ-einreichen/">Narrativ einreichen</a><a href="${base}methode/">Wirkungsradar-Methode</a><a href="${base}quellen/">Quellen</a></nav>`;
 }
 
 function statusPage() {

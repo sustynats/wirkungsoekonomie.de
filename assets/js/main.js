@@ -806,6 +806,22 @@ function initRadarSearch() {
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
 
+  const renderCommunityNoResults = () => `<section class="community-submission-section community-submission-section--noResults" data-community-submission-block data-community-submission-variant="noResults" data-search-exclude>
+    <div>
+      <article class="card community-submission-block">
+        <div class="community-submission-copy">
+          <p class="card-kicker">Nichts gefunden?</p>
+          <h2>Soll dieses Narrativ in den Debatten-Kompass aufgenommen werden?</h2>
+          <p>Wenn du eine Aussage, einen Frame oder ein Debattenmuster gesucht hast, reiche es ein. Wir prüfen, ob daraus eine neue Einordnung entstehen sollte.</p>
+        </div>
+        <div class="community-submission-actions">
+          <a class="btn btn-primary" href="${relativeSiteUrl("wirkungsradar/narrativ-einreichen/")}">Narrativ einreichen</a>
+          <a class="btn btn-secondary" href="${relativeSiteUrl("wirkungsradar/pruefprozess/")}">Prüfprozess verstehen</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+
   const tagStopwords = new Set([
     "aber",
     "alle",
@@ -920,7 +936,7 @@ function initRadarSearch() {
       : `${items.length} Radar-Seiten bereit`;
 
     if (!visibleItems.length) {
-      resultsNode.innerHTML = '<p class="radar-search-empty">Keine passenden Radar-Inhalte gefunden.</p>';
+      resultsNode.innerHTML = renderCommunityNoResults();
       return;
     }
 
@@ -989,6 +1005,25 @@ function initWirkungsradarLiveFilter() {
   const statusButtons = Array.from(root.querySelectorAll("[data-live-status]"));
   const count = root.querySelector("[data-live-count]");
   const cards = Array.from(main.querySelectorAll("[data-radar-card]"));
+  const noResults = document.createElement("div");
+  noResults.className = "radar-live-no-results";
+  noResults.hidden = true;
+  noResults.innerHTML = `<section class="community-submission-section community-submission-section--noResults" data-community-submission-block data-community-submission-variant="noResults" data-search-exclude>
+    <div>
+      <article class="card community-submission-block">
+        <div class="community-submission-copy">
+          <p class="card-kicker">Nichts gefunden?</p>
+          <h2>Soll dieses Narrativ in den Debatten-Kompass aufgenommen werden?</h2>
+          <p>Wenn du eine Aussage, einen Frame oder ein Debattenmuster gesucht hast, reiche es ein. Wir prüfen, ob daraus eine neue Einordnung entstehen sollte.</p>
+        </div>
+        <div class="community-submission-actions">
+          <a class="btn btn-primary" href="${relativeSiteUrl("wirkungsradar/narrativ-einreichen/")}">Narrativ einreichen</a>
+          <a class="btn btn-secondary" href="${relativeSiteUrl("wirkungsradar/pruefprozess/")}">Prüfprozess verstehen</a>
+        </div>
+      </article>
+    </div>
+  </section>`;
+  root.after(noResults);
   const normalize = (value) =>
     String(value || "")
       .toLowerCase()
@@ -1040,6 +1075,7 @@ function initWirkungsradarLiveFilter() {
       if (show) visible += 1;
     });
     if (count) count.textContent = `${visible} Karten gefunden`;
+    noResults.hidden = visible !== 0;
   };
 
   input?.addEventListener("input", () => {
@@ -1288,7 +1324,7 @@ function initRadarPsychologyPanel() {
     "/wirkungsradar/workshops/",
     "/wirkungsradar/unterricht/",
     "/wirkungsradar/embed/",
-    "/wirkungsradar/mythos-melden/",
+    "/wirkungsradar/narrativ-einreichen/",
     "/wirkungsradar/newsletter/",
     "/wirkungsradar/nutzung/",
     "/wirkungsradar/host-playbook/",
