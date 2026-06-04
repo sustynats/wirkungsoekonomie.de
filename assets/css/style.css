@@ -5122,6 +5122,14 @@ textarea {
   gap: clamp(1.4rem, 4vw, 3rem);
 }
 
+.so-woek-hero-grid {
+  align-items: center;
+}
+
+.so-woek-hero-grid .hero-copy {
+  max-width: 760px;
+}
+
 .hero-fact-panel {
   display: grid;
   align-content: center;
@@ -5136,6 +5144,17 @@ textarea {
 
 .hero-fact-panel p {
   margin: 0;
+}
+
+@media (min-width: 900px) {
+  .so-woek-hero-grid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+  }
+
+  .so-woek-hero-grid .hero-fact-panel {
+    justify-self: end;
+    width: min(100%, 24rem);
+  }
 }
 
 .impact-process,
