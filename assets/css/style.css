@@ -16100,6 +16100,133 @@ a.principle-card:hover,
   min-height: 8rem;
 }
 
+.radar-sprint-hero {
+  background:
+    radial-gradient(circle at 80% 12%, rgba(47, 125, 92, 0.08), transparent 34rem),
+    linear-gradient(135deg, rgba(255, 252, 245, 0.98), rgba(246, 250, 247, 0.96));
+}
+
+.radar-sprint-lead {
+  max-width: 72ch;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.04rem, 1.7vw, 1.18rem);
+  line-height: 1.62;
+}
+
+.radar-sprint-search > div,
+.radar-live-controls > div {
+  display: grid;
+  gap: 0.9rem;
+  width: min(100% - (2 * var(--space-gutter)), var(--container));
+  margin-inline: auto;
+  padding: clamp(1rem, 2.5vw, 1.45rem);
+  border: 1px solid rgba(47, 125, 92, 0.2);
+  border-left: 4px solid rgba(47, 125, 92, 0.72);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.9);
+  box-shadow: var(--shadow-card);
+}
+
+.radar-search-field span:not(.sr-only) {
+  display: block;
+  margin: 0 0 0.35rem;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.radar-sprint-card {
+  display: grid;
+  align-content: start;
+  gap: 0.72rem;
+  border-left: 4px solid rgba(47, 125, 92, 0.55);
+}
+
+.radar-sprint-card[hidden] {
+  display: none;
+}
+
+.radar-card-badges,
+.radar-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.radar-card-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.7rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid rgba(47, 125, 92, 0.18);
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.06);
+  color: var(--green-dark);
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.radar-card-judgement {
+  margin: 0;
+  color: var(--navy);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.radar-sprint-nav {
+  margin-top: 0;
+}
+
+.radar-draft-card {
+  border-left: 4px solid rgba(191, 137, 46, 0.65);
+  background: rgba(255, 252, 245, 0.82);
+}
+
+.radar-narrative-card,
+.radar-psych-card {
+  display: grid;
+  align-content: start;
+  gap: 0.72rem;
+}
+
+.radar-standard-formula {
+  margin-top: 1rem;
+  border-left: 4px solid rgba(47, 125, 92, 0.7);
+}
+
+.card-grid.six {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.filter-chip-row button[aria-pressed="true"],
+.filter-chip-row button.active {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--white);
+}
+
+@media (max-width: 1180px) {
+  .card-grid.six {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .card-grid.six {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-card-actions .btn,
+  .radar-card-actions .copy-chip {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 980px) {
   .radar-detail-layout {
     max-width: min(100% - (2 * var(--space-gutter)), 1120px);

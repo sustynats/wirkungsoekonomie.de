@@ -963,13 +963,19 @@ function initRadarSearch() {
       .join("");
   };
 
-  fetch(relativeSiteUrl("assets/search/search-index.json"))
-    .then((response) => (response.ok ? response.json() : Promise.reject(new Error("search-index"))))
-    .then((entries) => {
+  Promise.all([
+    fetch(relativeSiteUrl("assets/search/search-index.json")).then((response) => (response.ok ? response.json() : Promise.reject(new Error("search-index")))),
+    fetch(relativeSiteUrl("assets/data/wirkungsradar-synonyms.json")).then((response) => (response.ok ? response.json() : {})).catch(() => ({})),
+  ])
+    .then(([entries, synonymMap]) => {
+      const synonymsFor = (entry) => {
+        const slug = String(entry?.url || "").match(/^\/wirkungsradar\/(?:live|detail)\/([^/]+)\//)?.[1] || "";
+        return Array.isArray(synonymMap?.[slug]) ? synonymMap[slug] : [];
+      };
       const radarEntries = canonicalizeRadarEntries(
         (Array.isArray(entries) ? entries : []).filter((entry) => entry?.url?.startsWith("/wirkungsradar/")),
       )
-        .map((entry) => ({ ...entry, searchText: searchableText(entry) }))
+        .map((entry) => ({ ...entry, aliases: [...(entry.aliases || []), ...synonymsFor(entry)], searchText: searchableText({ ...entry, aliases: [...(entry.aliases || []), ...synonymsFor(entry)] }) }))
         .sort((a, b) => (a.priority || 9999) - (b.priority || 9999) || a.title.localeCompare(b.title, "de"));
 
       const update = () => {
@@ -990,6 +996,70 @@ function initRadarSearch() {
 }
 
 initRadarSearch();
+
+function initWirkungsradarLiveFilter() {
+  const root = document.querySelector("[data-radar-live-filter]");
+  const grid = document.querySelector("[data-live-grid]");
+  if (!root || !grid) return;
+
+  const input = root.querySelector("[data-live-query]");
+  const topicButtons = Array.from(root.querySelectorAll("[data-live-filter]"));
+  const statusButtons = Array.from(root.querySelectorAll("[data-live-status]"));
+  const count = root.querySelector("[data-live-count]");
+  const cards = Array.from(grid.querySelectorAll("[data-radar-card]"));
+  const normalize = (value) =>
+    String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ß/g, "ss");
+  const state = { topic: "all", status: "checked_v2_positive_examples", query: "" };
+
+  const setPressed = (buttons, key, value) => {
+    buttons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset[key] === value)));
+  };
+
+  const apply = () => {
+    const tokens = normalize(state.query).split(/\s+/).filter(Boolean);
+    let visible = 0;
+    cards.forEach((card) => {
+      const topicOk = state.topic === "all" || normalize(card.dataset.topic).includes(normalize(state.topic));
+      const statusOk =
+        state.status === "checked_v2_positive_examples"
+          ? card.dataset.status === "checked_v2_positive_examples"
+          : state.status === "sources"
+            ? normalize(card.dataset.source).includes("quelle")
+            : false;
+      const searchOk = !tokens.length || tokens.every((token) => normalize(card.dataset.search).includes(token));
+      const show = topicOk && statusOk && searchOk;
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+    if (count) count.textContent = `${visible} Karten gefunden`;
+  };
+
+  input?.addEventListener("input", () => {
+    state.query = input.value;
+    apply();
+  });
+  topicButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.topic = button.dataset.liveFilter || "all";
+      setPressed(topicButtons, "liveFilter", state.topic);
+      apply();
+    });
+  });
+  statusButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.status = button.dataset.liveStatus || "checked_v2_positive_examples";
+      setPressed(statusButtons, "liveStatus", state.status);
+      apply();
+    });
+  });
+  apply();
+}
+
+initWirkungsradarLiveFilter();
 
 function initCopyChips() {
   document.querySelectorAll("[data-copy-text]").forEach((button) => {

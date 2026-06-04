@@ -18,7 +18,7 @@ Jede neue oder geaenderte Live-Karte muss vorn sofort liefern:
 - Kurzurteil
 - Sag das jetzt
 - Beispiel
-- Gute Rueckfrage
+- Die bessere Frage
 - Nicht in den Frame gehen
 - Versteckte Wirkungen
 
@@ -108,4 +108,3 @@ Moegliche Status:
 - draft_too_abstract
 - draft_missing_system_effects
 - draft_repetitive_psychology
-
