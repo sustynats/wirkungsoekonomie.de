@@ -1273,7 +1273,18 @@ function initRadarPsychologyPanel() {
   const path = window.location.pathname;
   const isRadarPage = path.includes("/wirkungsradar/");
   const isNarrativeDetail = path.includes("/wirkungsradar/narrative/") && !path.endsWith("/narrative/");
-  if (!isRadarPage || isNarrativeDetail) {
+  const isDistributionToolPage = [
+    "/wirkungsradar/studio/",
+    "/wirkungsradar/templates/",
+    "/wirkungsradar/workshops/",
+    "/wirkungsradar/unterricht/",
+    "/wirkungsradar/embed/",
+    "/wirkungsradar/mythos-melden/",
+    "/wirkungsradar/newsletter/",
+    "/wirkungsradar/nutzung/",
+    "/wirkungsradar/host-playbook/",
+  ].some((prefix) => path.includes(prefix));
+  if (!isRadarPage || isNarrativeDetail || isDistributionToolPage) {
     return;
   }
 

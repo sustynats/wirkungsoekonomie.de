@@ -93,7 +93,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
     ${extraHead}
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-sprint3">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-sprint5b">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -103,7 +103,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Wirkungsradar</p><h2>Werkzeug statt Textarchiv.</h2><p>Quellen, Glossar, Status und Feedback machen die Einordnung nachvollziehbar.</p><p><a class="text-link" href="${base}wirkungsradar/methode/">Methodik</a> · <a class="text-link" href="${base}wirkungsradar/host-playbook/">Host-Playbook</a> · <a class="text-link" href="mailto:impact@wirkungsoekonomie.org?subject=Wirkungsradar%20Feedback">Feedback</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Wirkungsradar öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260604-sprint3"></script>
+    <script src="${base}assets/js/main.js?v=20260604-sprint5b"></script>
   </body>
 </html>`;
 }
@@ -112,6 +112,12 @@ function radarNav(base = "") {
   const links = [
     ["Suchen", `${base}`],
     ["Live-Karten", `${base}live/`],
+    ["Studio", `${base}studio/`],
+    ["Templates", `${base}templates/`],
+    ["Workshops", `${base}workshops/`],
+    ["Unterricht", `${base}unterricht/`],
+    ["Embed", `${base}embed/`],
+    ["Mythos melden", `${base}mythos-melden/`],
     ["Narrative", `${base}narrative/`],
     ["Psychologie", `${base}psychologie/`],
     ["Themen", `${base}themen/`],
