@@ -34,7 +34,7 @@ const synonymMap = {
 const topicLabels = {
   Klima: "Klima",
   Energie: "Energie",
-  Mobilitaet: "Mobilitaet",
+  Mobilitaet: "Mobilität",
   Mobilität: "Mobilität",
   Migration: "Migration",
   Sozialstaat: "Sozialstaat",
@@ -248,7 +248,7 @@ function methodLine(title) {
 }
 
 function livePage() {
-  const filters = ["Klima", "Energie", "Mobilitaet", "Migration", "Sozialstaat", "Arbeit", "Staat & Schulden", "Steuern", "Demokratie", "Medien", "Wirtschaft", "Wohnen", "Ausland & Sicherheit"];
+  const filters = ["Klima", "Energie", "Mobilität", "Migration", "Sozialstaat", "Arbeit", "Staat & Schulden", "Steuern", "Demokratie", "Medien", "Wirtschaft", "Wohnen", "Ausland & Sicherheit"];
   const main = `
     <section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Live-Karten</nav><p class="hero-kicker">Host-Modus</p><h1 class="hero-title">Live-Karten</h1><p class="hero-subtitle">Schnelle Antworten für Debatten, Kommentarspalten, Panels und Social Media.</p></div></section>
     ${radarNav("../")}

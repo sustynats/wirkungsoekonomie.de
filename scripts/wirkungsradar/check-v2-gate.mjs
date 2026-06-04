@@ -79,12 +79,14 @@ for (const slug of P0_SLUGS) {
 }
 
 for (const file of liveFiles) {
+  const relative = rel(file);
+  if (/wirkungsradar\/(?:live|detail)\/index\.html$/.test(relative)) continue;
   const html = fs.readFileSync(file, "utf8");
   const plain = stripHtml(html);
   const isV2Checked = html.includes("checked_v2_positive_examples");
   const hasHostCockpit = html.includes("data-v2-host-cockpit");
   const hasImpactFan = html.includes("data-v2-impact-fan") || html.includes("Was wird ausgeblendet?");
-  const hasFrameShift = html.includes("Frame nicht übernehmen") && html.includes("Alter Frame:") && html.includes("Besser:");
+  const hasFrameShift = html.includes("Frame nicht übernehmen") && html.includes("Alter Frame:") && /Besser(?: so)?:/.test(plain);
   const hasPositiveImage = html.includes("Ein gutes Bild");
   const hasBetterQuestion = html.includes("Die bessere Frage") || html.includes("Rechnung öffnen");
   const hasConsequenceStack = /Sofort[\s\S]*Danach[\s\S]*Auf Dauer/.test(plain) || html.includes("v2-consequence-stack");

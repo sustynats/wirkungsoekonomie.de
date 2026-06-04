@@ -8,9 +8,9 @@ Entscheidung: FREIGEBEN
 ## 1. 10-Sekunden-Test
 
 - PASS: Kurzurteil: Echte Zinsfrage. Falsches Haushaltsbild.
-- PASS: Sag-das-jetzt <= 280 Zeichen (149)
+- PASS: Sag-das-jetzt <= 280 Zeichen (148)
 - PASS: Positives Bild sichtbar: Die Schule mit neuem Dach
-- PASS: Bessere Frage <= 180 Zeichen: Reden wir ueber schlechte Schulden - oder ueber Investitionen, die spaetere Kosten senken?
+- PASS: Bessere Frage <= 180 Zeichen: Reden wir über schlechte Schulden - oder über Investitionen, die spätere Kosten senken?
 
 ## 2. Frame-Risiko
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 7.0 Woerter
-- Kommentar: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Faellige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft.
-- Live: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Faellige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Gute Schulden erkennt man daran, dass am Ende etwas besser funktioniert.
-- Panel: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Faellige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Faellige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Gute Schulden erkennt man daran, dass am Ende etwas besser funktioniert.
-- Ruhig kontern: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Faellige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Reden wir ueber schlechte Schulden - oder ueber Investitionen, die spaetere Kosten senken?
+- Kommentar: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Fällige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft.
+- Live: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Fällige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Gute Schulden erkennt man daran, dass am Ende etwas besser funktioniert.
+- Panel: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Fällige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Fällige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Gute Schulden erkennt man daran, dass am Ende etwas besser funktioniert.
+- Ruhig kontern: Der Staat zahlt Schulden nicht wie einen Privatkredit ab. Fällige Anleihen werden meist refinanziert. Entscheidend ist, ob das Geld Zukunft schafft. Reden wir über schlechte Schulden - oder über Investitionen, die spätere Kosten senken?
 
 ## 6. Systemik
 

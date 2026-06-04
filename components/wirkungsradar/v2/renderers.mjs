@@ -14,6 +14,21 @@ function chips(items = []) {
   return `<div class="chip-row">${items.map((item) => `<span class="chip">${esc(item)}</span>`).join("")}</div>`;
 }
 
+function uniqueSentences(...parts) {
+  const seen = new Set();
+  return parts
+    .flatMap((part) => String(part ?? "").split(/(?<=[.!?])\s+/))
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .filter((part) => {
+      const key = part.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .join(" ");
+}
+
 export function ShortJudgementCard({ text }) {
   return `<article class="v2-cockpit-card v2-card-strong"><p class="v2-badge">Kurzurteil</p><h3>${esc(text)}</h3></article>`;
 }
@@ -59,9 +74,9 @@ export function SolutionCard({ solution }) {
 
 export function ResponseFormats({ dossier }) {
   const comment = dossier.responses?.comment?.text || dossier.cockpit.sayThisNow;
-  const live = dossier.responses?.live?.text || `${dossier.cockpit.sayThisNow} ${dossier.cockpit.positiveExample.hostLine}`;
-  const panel = dossier.responses?.panel?.text || `${dossier.cockpit.sayThisNow} ${dossier.cockpit.frameShift.betterAnswer} ${dossier.cockpit.positiveExample.hostLine}`;
-  const calmCounter = dossier.responses?.calmCounter?.text || `${dossier.cockpit.frameShift.betterAnswer} ${dossier.cockpit.betterQuestion}`;
+  const live = dossier.responses?.live?.text || uniqueSentences(dossier.cockpit.sayThisNow, dossier.cockpit.positiveExample.hostLine);
+  const panel = dossier.responses?.panel?.text || uniqueSentences(dossier.cockpit.sayThisNow, dossier.cockpit.frameShift.betterAnswer, dossier.cockpit.positiveExample.hostLine);
+  const calmCounter = dossier.responses?.calmCounter?.text || uniqueSentences(dossier.cockpit.frameShift.betterAnswer, dossier.cockpit.betterQuestion);
   const items = [
     ["Kommentar", "Kommentarspalten", comment, "Antwort kopieren"],
     ["Live", "Stream / Host-Reaktion", live, "Antwort kopieren"],

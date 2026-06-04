@@ -8,7 +8,7 @@ Entscheidung: FREIGEBEN
 ## 1. 10-Sekunden-Test
 
 - PASS: Kurzurteil: Richtige Teilzahl. Falsche Entlastung.
-- PASS: Sag-das-jetzt <= 280 Zeichen (146)
+- PASS: Sag-das-jetzt <= 280 Zeichen (142)
 - PASS: Positives Bild sichtbar: Der Produktpass im Laden
 - PASS: Bessere Frage <= 180 Zeichen: Zaehlst du nur den Schornstein hier - oder auch Konsum, Lieferketten, Produkte und Standards?
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 10.5 Woerter
-- Kommentar: 2 % zaehlt nur, was hier ausgestossen wird. Unsere Wirkung laeuft aber auch ueber Konsum, Lieferketten, Produkte, Standards und historische Pfade.
-- Live: 2 % zaehlt nur, was hier ausgestossen wird. Unsere Wirkung laeuft aber auch ueber Konsum, Lieferketten, Produkte, Standards und historische Pfade. Wenn Wirkung sichtbar wird, verschwindet Verantwortung nicht an der Grenze.
-- Panel: 2 % zaehlt nur, was hier ausgestossen wird. Unsere Wirkung laeuft aber auch ueber Konsum, Lieferketten, Produkte, Standards und historische Pfade. 2 % zaehlt nur, was hier ausgestossen wird. Unsere Wirkung laeuft aber auch ueber Konsum, Lieferketten, Produkte, Standards und historische Pfade. Wenn Wirkung sichtbar wird, verschwindet Verantwortung nicht an der Grenze.
-- Ruhig kontern: 2 % zaehlt nur, was hier ausgestossen wird. Unsere Wirkung laeuft aber auch ueber Konsum, Lieferketten, Produkte, Standards und historische Pfade. Zaehlst du nur den Schornstein hier - oder auch Konsum, Lieferketten, Produkte und Standards?
+- Kommentar: 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirkung läuft aber auch über Konsum, Lieferketten, Produkte, Standards und historische Pfade.
+- Live: 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirkung läuft aber auch über Konsum, Lieferketten, Produkte, Standards und historische Pfade. Wenn Wirkung sichtbar wird, verschwindet Verantwortung nicht an der Grenze.
+- Panel: 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirkung läuft aber auch über Konsum, Lieferketten, Produkte, Standards und historische Pfade. 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirkung läuft aber auch über Konsum, Lieferketten, Produkte, Standards und historische Pfade. Wenn Wirkung sichtbar wird, verschwindet Verantwortung nicht an der Grenze.
+- Ruhig kontern: 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirkung läuft aber auch über Konsum, Lieferketten, Produkte, Standards und historische Pfade. Zaehlst du nur den Schornstein hier - oder auch Konsum, Lieferketten, Produkte und Standards?
 
 ## 6. Systemik
 

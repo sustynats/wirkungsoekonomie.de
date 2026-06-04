@@ -8,9 +8,9 @@ Entscheidung: FREIGEBEN
 ## 1. 10-Sekunden-Test
 
 - PASS: Kurzurteil: Forschung ja. Stromversprechen nein.
-- PASS: Sag-das-jetzt <= 280 Zeichen (154)
+- PASS: Sag-das-jetzt <= 280 Zeichen (152)
 - PASS: Positives Bild sichtbar: Das direkte Stromquartier
-- PASS: Bessere Frage <= 180 Zeichen: Reden wir ueber Forschungsertrag - oder ueber ein sinnvolles Stromsystem?
+- PASS: Bessere Frage <= 180 Zeichen: Reden wir über Forschungsertrag - oder über ein sinnvolles Stromsystem?
 
 ## 2. Frame-Risiko
 
@@ -23,7 +23,7 @@ Entscheidung: FREIGEBEN
 - Erwartet: Das direkte Stromquartier
 - Verwendet: Das direkte Stromquartier
 - Host-Satz: Gute Energiearchitektur macht Strom moeglichst direkt.
-- Was wird besser: Zeitpfad, Direktstrom, Waerme, Netze
+- Was wird besser: Zeitpfad, Direktstrom, Wärme, Netze
 
 ## 4. Menschenschutz
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 11.0 Woerter
-- Kommentar: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Waerme, Kuehlung, Turbine - statt Strom direkt zu erzeugen.
-- Live: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Waerme, Kuehlung, Turbine - statt Strom direkt zu erzeugen. Gute Energiearchitektur macht Strom moeglichst direkt.
-- Panel: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Waerme, Kuehlung, Turbine - statt Strom direkt zu erzeugen. Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Waerme, Kuehlung, Turbine - statt Strom direkt zu erzeugen. Gute Energiearchitektur macht Strom moeglichst direkt.
-- Ruhig kontern: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Waerme, Kuehlung, Turbine - statt Strom direkt zu erzeugen. Reden wir ueber Forschungsertrag - oder ueber ein sinnvolles Stromsystem?
+- Kommentar: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Wärme, Kühlung, Turbine - statt Strom direkt zu erzeugen.
+- Live: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Wärme, Kühlung, Turbine - statt Strom direkt zu erzeugen. Gute Energiearchitektur macht Strom moeglichst direkt.
+- Panel: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Wärme, Kühlung, Turbine - statt Strom direkt zu erzeugen. Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Wärme, Kühlung, Turbine - statt Strom direkt zu erzeugen. Gute Energiearchitektur macht Strom moeglichst direkt.
+- Ruhig kontern: Fusion ist spannende Forschung. Als Stromsystem ist sie ein riesiger Umweg: Plasma, Neutronen, Wärme, Kühlung, Turbine - statt Strom direkt zu erzeugen. Reden wir über Forschungsertrag - oder über ein sinnvolles Stromsystem?
 
 ## 6. Systemik
 

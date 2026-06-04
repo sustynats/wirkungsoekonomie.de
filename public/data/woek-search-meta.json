@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T14:49:58.453Z",
+  "generatedAt": "2026-06-04T07:34:17.142Z",
   "entries": {
     "/begriffe/fuenftes-p-planet/": {
       "documentType": "begriff",
@@ -1822,6 +1822,22 @@
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
       "searchBoost": 110
     },
+    "/begriffe/betriebsemissionen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-betriebsemissionen",
+      "documentId": "betriebsemissionen",
+      "relatedTerms": [
+        "lebenszyklus-emissionen",
+        "kernkraft-neubau",
+        "stromgestehungskosten"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "searchBoost": 110
+    },
     "/begriffe/bewegungs-ngo/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -3287,6 +3303,16 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/debiasing/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-debiasing",
+      "documentId": "debiasing",
+      "relatedTerms": [],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/degradation-batterie/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -3405,6 +3431,7 @@
     "/begriffe/demokratie-umdeutung/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-demokratie-umdeutung",
       "documentId": "demokratie-umdeutung",
       "relatedTerms": [
@@ -4309,13 +4336,26 @@
       "sectionId": "begriff-doppelte-wesentlichkeit",
       "documentId": "doppelte-wesentlichkeit",
       "relatedTerms": [
+        "wirkung",
+        "netto-wirkung",
+        "wirkungscontrolling",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "resilienz",
+        "t-sroi",
         "csrd",
         "esrs",
+        "esg",
         "iro",
-        "wirkungsbewertung",
-        "inside-out-outside-in"
+        "inside-out-outside-in",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "positive-netto-wirkung"
       ],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungscontrolling-detailkonzept-dossier-v1-0"
+      ],
       "sourceFile": "CSRD und ESRS",
       "searchBoost": 110
     },
@@ -4878,6 +4918,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/endlager/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-endlager",
+      "documentId": "endlager",
+      "relatedTerms": [
+        "transmutation",
+        "intergenerationelle-verantwortung",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
       "searchBoost": 110
     },
     "/begriffe/energie/": {
@@ -6297,6 +6353,7 @@
     "/begriffe/feindbild/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-feindbild",
       "documentId": "feindbild",
       "relatedTerms": [
@@ -6551,6 +6608,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/finanzschuld/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-finanzschuld",
+      "documentId": "finanzschuld",
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "wirkungshaushalt",
+        "generationenbilanz"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "searchBoost": 110
+    },
     "/begriffe/fit-for-55/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -6715,6 +6788,7 @@
     "/begriffe/frame/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-frame",
       "documentId": "frame",
       "relatedTerms": [
@@ -6761,6 +6835,16 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
+      "searchBoost": 110
+    },
+    "/begriffe/framekontrolle/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-framekontrolle",
+      "documentId": "framekontrolle",
+      "relatedTerms": [],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/framing-sprache-tonalitaet/": {
@@ -7098,6 +7182,7 @@
     "/begriffe/gegenframe/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-gegenframe",
       "documentId": "gegenframe",
       "relatedTerms": [
@@ -7338,6 +7423,23 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/generationenbilanz/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-generationenbilanz",
+      "documentId": "generationenbilanz",
+      "relatedTerms": [
+        "finanzschuld",
+        "unterlassungsschuld",
+        "investitionsschuld",
+        "intertemporale-freiheit"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "searchBoost": 110
+    },
     "/begriffe/generationengerechtigkeit/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -7576,6 +7678,16 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/gesichtswahrende-korrektur/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-gesichtswahrende-korrektur",
+      "documentId": "gesichtswahrende_korrektur",
+      "relatedTerms": [],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/gestrandeter-kredit/": {
@@ -8207,6 +8319,23 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/goldene-wirkungsregel/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-goldene-wirkungsregel",
+      "documentId": "goldene-wirkungsregel",
+      "relatedTerms": [
+        "t-sroi",
+        "positive-netto-wirkung",
+        "wirkungshaushalt",
+        "blindleistung"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "searchBoost": 110
     },
     "/begriffe/gongo/": {
@@ -10080,6 +10209,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/investitionsschuld/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-investitionsschuld",
+      "documentId": "investitionsschuld",
+      "relatedTerms": [
+        "unterlassungsschuld",
+        "generationenbilanz",
+        "wirkungshaushalt"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
+      "searchBoost": 110
+    },
     "/begriffe/ipbes/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -10564,6 +10709,23 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/kernkraft-neubau/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-kernkraft-neubau",
+      "documentId": "kernkraft-neubau",
+      "relatedTerms": [
+        "betriebsemissionen",
+        "lebenszyklus-emissionen",
+        "opportunitaetskosten",
+        "endlager"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "searchBoost": 110
+    },
     "/begriffe/ki-und-arbeit/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -11019,6 +11181,16 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/kommunikative-souveraenitaet/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-kommunikative-souveraenitaet",
+      "documentId": "kommunikative_souveraenitaet",
+      "relatedTerms": [],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/kommunismus/": {
@@ -11945,6 +12117,22 @@
       ],
       "sourceFile": "Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente",
       "searchBoost": 140
+    },
+    "/begriffe/lebenszyklus-emissionen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-lebenszyklus-emissionen",
+      "documentId": "lebenszyklus-emissionen",
+      "relatedTerms": [
+        "betriebsemissionen",
+        "produktlebenszyklus",
+        "systemgrenze"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "searchBoost": 110
     },
     "/begriffe/lebenszyklusanalyse/": {
       "documentType": "begriff",
@@ -15649,6 +15837,7 @@
     "/begriffe/opferumkehr/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-opferumkehr",
       "documentId": "opferumkehr",
       "relatedTerms": [
@@ -16549,6 +16738,7 @@
     "/begriffe/polarisierung/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-polarisierung",
       "documentId": "polarisierung",
       "relatedTerms": [
@@ -17553,6 +17743,26 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/psychologischer-wirkungscheck/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-psychologischer-wirkungscheck",
+      "documentId": "psychologischer_wirkungscheck",
+      "relatedTerms": [],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
+    "/begriffe/psychologisches-stoeckchen/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-psychologisches-stoeckchen",
+      "documentId": "psychologisches_stoeckchen",
+      "relatedTerms": [],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/public-affairs/": {
@@ -20551,6 +20761,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/small-modular-reactor/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-small-modular-reactor",
+      "documentId": "small-modular-reactor",
+      "relatedTerms": [
+        "kernkraft-neubau",
+        "zeitwirkung",
+        "technikwunder"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "searchBoost": 110
+    },
     "/begriffe/smart-charging/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -20991,6 +21217,7 @@
     "/begriffe/sprachlicher-trigger/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-sprachlicher-trigger",
       "documentId": "sprachlicher-trigger",
       "relatedTerms": [
@@ -22857,6 +23084,22 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 110
     },
+    "/begriffe/transmutation/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-transmutation",
+      "documentId": "transmutation",
+      "relatedTerms": [
+        "endlager",
+        "kernkraft-neubau",
+        "intergenerationelle-verantwortung"
+      ],
+      "relatedDocuments": [
+        "kernenergie-wieder-in-deutschland"
+      ],
+      "searchBoost": 110
+    },
     "/begriffe/transparenz/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -23247,6 +23490,23 @@
         "wirkungsradar-co2-preis-oder-fossile-systemkosten"
       ],
       "sourceFile": "Wirkungsradar CO2-Preis oder fossile Systemkosten",
+      "searchBoost": 110
+    },
+    "/begriffe/unterlassungsschuld/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-unterlassungsschuld",
+      "documentId": "unterlassungsschuld",
+      "relatedTerms": [
+        "finanzschuld",
+        "investitionsschuld",
+        "wirkungsrisiko",
+        "generationenbilanz"
+      ],
+      "relatedDocuments": [
+        "schulden-machen-oder-sparen"
+      ],
       "searchBoost": 110
     },
     "/begriffe/unternehmen-2035/": {
@@ -24683,6 +24943,16 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/wertebruecke/": {
+      "documentType": "begriff",
+      "status": "wirkungsradar-begriff",
+      "version": "1.0",
+      "sectionId": "begriff-wertebruecke",
+      "documentId": "wertebruecke",
+      "relatedTerms": [],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/wertekonflikt/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -25410,6 +25680,7 @@
     "/begriffe/wirkungsanalyse-von-sprache/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
+      "version": "1.0",
       "sectionId": "begriff-wirkungsanalyse-von-sprache",
       "documentId": "wirkungsanalyse-von-sprache",
       "relatedTerms": [
@@ -40735,6 +41006,22 @@
       "contentHash": "4ad9c91f08289c6c",
       "sectionId": "woek-page-49937491ad49b469"
     },
+    "/bibliothek/wirkungsradar-dossiers/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/wirkungsradar-dossiers/index.html",
+      "contentHash": "d02b5d6f7e59bec6",
+      "sectionId": "woek-page-965bfc6d1382a4ad"
+    },
+    "/bibliothek/wirkungsradar-dossiers/#dossiers-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/wirkungsradar-dossiers/index.html",
+      "contentHash": "d02b5d6f7e59bec6",
+      "sectionId": "dossiers-title"
+    },
     "/bibliothek/wirkungsrat-konzept/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -54735,12 +55022,20 @@
       "contentHash": "9172369737298e19",
       "sectionId": "downloads"
     },
+    "/anwendungen/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "anwendungen/index.html",
+      "contentHash": "001c4498f6b82961",
+      "sectionId": "woek-page-bd117d71dd68b656"
+    },
     "/anwendungen/scanner.html": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "anwendungen/scanner.html",
-      "contentHash": "2591a21e55f1e80c",
+      "contentHash": "c1d17a1a96aa2158",
       "sectionId": "woek-page-aefca2bb07352f71"
     },
     "/anwendungen/scanner.html#stage8-demo-scanner-title": {
@@ -54748,7 +55043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "anwendungen/scanner.html",
-      "contentHash": "2591a21e55f1e80c",
+      "contentHash": "c1d17a1a96aa2158",
       "sectionId": "stage8-demo-scanner-title"
     },
     "/anwendungen/scanner.html#scanner-mvp-title": {
@@ -54756,7 +55051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "anwendungen/scanner.html",
-      "contentHash": "2591a21e55f1e80c",
+      "contentHash": "c1d17a1a96aa2158",
       "sectionId": "scanner-mvp-title"
     },
     "/anwendungen/scanner.html#folgencheck-title": {
@@ -54764,7 +55059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "anwendungen/scanner.html",
-      "contentHash": "2591a21e55f1e80c",
+      "contentHash": "c1d17a1a96aa2158",
       "sectionId": "folgencheck-title"
     },
     "/anwendungen/scanner.html#scanner-related-title": {
@@ -54772,7 +55067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "anwendungen/scanner.html",
-      "contentHash": "2591a21e55f1e80c",
+      "contentHash": "c1d17a1a96aa2158",
       "sectionId": "scanner-related-title"
     },
     "/anwendungen/scanner.html#data-architecture-title": {
@@ -54780,7 +55075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "anwendungen/scanner.html",
-      "contentHash": "2591a21e55f1e80c",
+      "contentHash": "c1d17a1a96aa2158",
       "sectionId": "data-architecture-title"
     },
     "/anwendungen/scanner.html#scanner-links-title": {
@@ -54788,15 +55083,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "anwendungen/scanner.html",
-      "contentHash": "2591a21e55f1e80c",
+      "contentHash": "c1d17a1a96aa2158",
       "sectionId": "scanner-links-title"
+    },
+    "/verstehen/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/index.html",
+      "contentHash": "70c06be4be1be991",
+      "sectionId": "woek-page-3513b68e976194bb"
     },
     "/verstehen/regularien-standards/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/regularien-standards/index.html",
-      "contentHash": "9d54768304dd8ef5",
+      "contentHash": "9f3653da549813dc",
       "sectionId": "woek-page-8ff2f239ac925cf5"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/": {
@@ -54804,7 +55107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "woek-page-57156639ac83ae12"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#shortbox": {
@@ -54812,7 +55115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "shortbox"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#toc-heading": {
@@ -54820,7 +55123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "toc-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#1-executive-summary-heading": {
@@ -54828,7 +55131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "1-executive-summary-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#2-ausgangsdiagnose-warum-ein-referenzrahmen-noetig-ist-heading": {
@@ -54836,7 +55139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "2-ausgangsdiagnose-warum-ein-referenzrahmen-noetig-ist-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#3-was-die-agenda-2030-ist-heading": {
@@ -54844,7 +55147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "3-was-die-agenda-2030-ist-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#4-was-die-sdgs-leisten-und-was-nicht-heading": {
@@ -54852,7 +55155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "4-was-die-sdgs-leisten-und-was-nicht-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#5-warum-die-sdgs-global-anschlussfaehig-sind-heading": {
@@ -54860,7 +55163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "5-warum-die-sdgs-global-anschlussfaehig-sind-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#6-die-sdgs-als-risiko-und-resilienzrahmen-heading": {
@@ -54868,7 +55171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "6-die-sdgs-als-risiko-und-resilienzrahmen-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#7-wirkungsoekonomische-einordnung-vom-zielkatalog-zur-rueckkopplungsarchitektur-heading": {
@@ -54876,7 +55179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "7-wirkungsoekonomische-einordnung-vom-zielkatalog-zur-rueckkopplungsarchitektur-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#8-akteursgruppen-und-nutzungsebenen-heading": {
@@ -54884,7 +55187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "8-akteursgruppen-und-nutzungsebenen-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#9-daten-indikatoren-und-monitoring-heading": {
@@ -54892,7 +55195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "9-daten-indikatoren-und-monitoring-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#10-europa-und-deutschland-als-uebersetzungsraeume-heading": {
@@ -54900,7 +55203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "10-europa-und-deutschland-als-uebersetzungsraeume-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#11-fehlinterpretationen-ideologiefreiheit-und-kritikfaehigkeit-heading": {
@@ -54908,7 +55211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "11-fehlinterpretationen-ideologiefreiheit-und-kritikfaehigkeit-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#12-woek-mechanik-woek-id-scorecard-nwi-t-sroi-und-wirkungshaushalt-heading": {
@@ -54916,7 +55219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "12-woek-mechanik-woek-id-scorecard-nwi-t-sroi-und-wirkungshaushalt-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#politische-anschlussfaehigkeit-und-umsetzungsoptionen-heading": {
@@ -54924,7 +55227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "politische-anschlussfaehigkeit-und-umsetzungsoptionen-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#14-website-und-portalintegration-heading": {
@@ -54932,7 +55235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "14-website-und-portalintegration-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#15-fazit-heading": {
@@ -54940,7 +55243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "15-fazit-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#quellen-und-online-referenzen-heading": {
@@ -54948,7 +55251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "quellen-und-online-referenzen-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#website-und-portalintegration-heading": {
@@ -54956,7 +55259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "website-und-portalintegration-heading"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#political": {
@@ -54964,7 +55267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#sdg-badges": {
@@ -54972,7 +55275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#book-anchors": {
@@ -54980,7 +55283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#sources": {
@@ -54988,7 +55291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/agenda-2030/#downloads": {
@@ -54996,7 +55299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/agenda-2030/index.html",
-      "contentHash": "6cb30da4ca40735a",
+      "contentHash": "9bd77b11dc2e3cd5",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/": {
@@ -56516,7 +56819,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "woek-page-83e7815aaecb95a9"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#why-important": {
@@ -56524,7 +56827,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "why-important"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#sdgs-one-sentence": {
@@ -56532,7 +56835,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "sdgs-one-sentence"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#timeline": {
@@ -56540,7 +56843,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "timeline"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#decision-2015": {
@@ -56548,7 +56851,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "decision-2015"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#not-ideology": {
@@ -56556,7 +56859,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "not-ideology"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#risk-management": {
@@ -56564,7 +56867,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "risk-management"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#finance-companies": {
@@ -56572,7 +56875,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "finance-companies"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#woek-reading": {
@@ -56580,7 +56883,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "woek-reading"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#why-sdgplus-history": {
@@ -56588,7 +56891,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "why-sdgplus-history"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#official-references": {
@@ -56596,7 +56899,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#internal-anchors": {
@@ -56604,7 +56907,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "internal-anchors"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#book-anchors": {
@@ -56612,7 +56915,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/geschichte/#history-export": {
@@ -56620,7 +56923,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/geschichte/index.html",
-      "contentHash": "b3d0c48565cfb321",
+      "contentHash": "93f4dd31bd9ecf18",
       "sectionId": "history-export"
     },
     "/verstehen/sdgs-sdgplus/": {
@@ -56628,7 +56931,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "woek-page-f821d47c89fe154d"
     },
     "/verstehen/sdgs-sdgplus/#sdg-agenda-short": {
@@ -56636,7 +56939,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdg-agenda-short"
     },
     "/verstehen/sdgs-sdgplus/#go3-sdg-publications": {
@@ -56644,7 +56947,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "go3-sdg-publications"
     },
     "/verstehen/sdgs-sdgplus/#idg-wirkungskompetenz": {
@@ -56652,7 +56955,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "idg-wirkungskompetenz"
     },
     "/verstehen/sdgs-sdgplus/#sdg-list": {
@@ -56660,7 +56963,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdg-list"
     },
     "/verstehen/sdgs-sdgplus/#why-sdgplus": {
@@ -56668,7 +56971,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "why-sdgplus"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-publications": {
@@ -56676,7 +56979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-publications"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-detail": {
@@ -56684,7 +56987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-detail"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-demokratie-title": {
@@ -56692,7 +56995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-demokratie-title"
     },
     "/verstehen/sdgs-sdgplus/#political-implementation-sdgplus-demokratie": {
@@ -56700,7 +57003,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "political-implementation-sdgplus-demokratie"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-medienqualitaet-title": {
@@ -56708,7 +57011,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-medienqualitaet-title"
     },
     "/verstehen/sdgs-sdgplus/#political-implementation-sdgplus-medienqualitaet": {
@@ -56716,7 +57019,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "political-implementation-sdgplus-medienqualitaet"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit-title": {
@@ -56724,7 +57027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-rechtsstaatlichkeit-title"
     },
     "/verstehen/sdgs-sdgplus/#political-implementation-sdgplus-rechtsstaatlichkeit": {
@@ -56732,7 +57035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "political-implementation-sdgplus-rechtsstaatlichkeit"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-diskursfaehigkeit-title": {
@@ -56740,7 +57043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-diskursfaehigkeit-title"
     },
     "/verstehen/sdgs-sdgplus/#political-implementation-sdgplus-diskursfaehigkeit": {
@@ -56748,7 +57051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "political-implementation-sdgplus-diskursfaehigkeit"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen-title": {
@@ -56756,7 +57059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-institutionelles-vertrauen-title"
     },
     "/verstehen/sdgs-sdgplus/#political-implementation-sdgplus-institutionelles-vertrauen": {
@@ -56764,7 +57067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "political-implementation-sdgplus-institutionelles-vertrauen"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-gesellschaftlicher-zusammenhalt-title": {
@@ -56772,7 +57075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-gesellschaftlicher-zusammenhalt-title"
     },
     "/verstehen/sdgs-sdgplus/#political-implementation-sdgplus-gesellschaftlicher-zusammenhalt": {
@@ -56780,7 +57083,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "political-implementation-sdgplus-gesellschaftlicher-zusammenhalt"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung-title": {
@@ -56788,7 +57091,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-digitale-selbstbestimmung-title"
     },
     "/verstehen/sdgs-sdgplus/#political-implementation-sdgplus-digitale-selbstbestimmung": {
@@ -56796,7 +57099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "political-implementation-sdgplus-digitale-selbstbestimmung"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-dossier-title": {
@@ -56804,7 +57107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-dossier-title"
     },
     "/verstehen/sdgs-sdgplus/#usage": {
@@ -56812,7 +57115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "usage"
     },
     "/verstehen/sdgs-sdgplus/#woekids-sdgplus": {
@@ -56820,7 +57123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "woekids-sdgplus"
     },
     "/verstehen/sdgs-sdgplus/#sdgplus-download": {
@@ -56828,7 +57131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "sdgplus-download"
     },
     "/verstehen/sdgs-sdgplus/#official-references": {
@@ -56836,7 +57139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/#book-anchors": {
@@ -56844,7 +57147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/#glossary-anchors": {
@@ -56852,7 +57155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "glossary-anchors"
     },
     "/verstehen/sdgs-sdgplus/#export-title": {
@@ -56860,7 +57163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/index.html",
-      "contentHash": "1128bab48aa08bb2",
+      "contentHash": "49a0ac1cb12e9238",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/": {
@@ -56868,7 +57171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "woek-page-3955fa011390d452"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#status-downloads": {
@@ -56876,7 +57179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "status-downloads"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#go4-risk-matrix": {
@@ -56884,7 +57187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "go4-risk-matrix"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#finance-tools": {
@@ -56892,7 +57195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "finance-tools"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-einleitung": {
@@ -56900,7 +57203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-einleitung"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-executive-summary": {
@@ -56908,7 +57211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-executive-summary"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-warum-die-sdgs-fuer-den-finanzmarkt-relevant-sind": {
@@ -56916,7 +57219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-warum-die-sdgs-fuer-den-finanzmarkt-relevant-sind"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-sdgs-als-risikokarte-statt-als-ideologie": {
@@ -56924,7 +57227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-sdgs-als-risikokarte-statt-als-ideologie"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-die-17-ziele-als-strukturierte-risikofelder": {
@@ -56932,7 +57235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-die-17-ziele-als-strukturierte-risikofelder"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-finanzielle-uebertragungskanaele-kredit-kapital-versicherung-bewertung": {
@@ -56940,7 +57243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-finanzielle-uebertragungskanaele-kredit-kapital-versicherung-bewertung"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-heutige-regulierungs-und-marktanschluesse": {
@@ -56948,7 +57251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-heutige-regulierungs-und-marktanschluesse"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-banken-esg-risiken-kreditpruefung-und-eba-anschluss": {
@@ -56956,7 +57259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-banken-esg-risiken-kreditpruefung-und-eba-anschluss"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-versicherungen-versicherbarkeit-als-wirklichkeitspruefung": {
@@ -56964,7 +57267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-versicherungen-versicherbarkeit-als-wirklichkeitspruefung"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-boerse-esg-ratings-und-investorenerwartungen": {
@@ -56972,7 +57275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-boerse-esg-ratings-und-investorenerwartungen"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-kmu-und-mittelbare-betroffenheit": {
@@ -56980,7 +57283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-kmu-und-mittelbare-betroffenheit"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-wirkungsoekonomische-einordnung-von-risiko-zu-rueckkopplung": {
@@ -56988,7 +57291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-wirkungsoekonomische-einordnung-von-risiko-zu-rueckkopplung"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-woek-datenarchitektur-sdgs-woek-ids-scorecards-und-nwi": {
@@ -56996,7 +57299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-woek-datenarchitektur-sdgs-woek-ids-scorecards-und-nwi"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-unternehmenspraxis-was-heute-schon-vorbereitet-werden-muss": {
@@ -57004,7 +57307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-unternehmenspraxis-was-heute-schon-vorbereitet-werden-muss"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-tool-und-dossierlogik-fuer-die-website": {
@@ -57012,7 +57315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-tool-und-dossierlogik-fuer-die-website"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-politische-anschlussfaehigkeit-und-umsetzungsoptionen": {
@@ -57020,7 +57323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-politische-anschlussfaehigkeit-und-umsetzungsoptionen"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#heading-quellen-und-referenzen": {
@@ -57028,7 +57331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "heading-quellen-und-referenzen"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#related-links": {
@@ -57036,7 +57339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "related-links"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#book-anchors": {
@@ -57044,7 +57347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#official-sources": {
@@ -57052,7 +57355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
-      "contentHash": "c6865b552647958c",
+      "contentHash": "f4ef348ea76eaeff",
       "sectionId": "official-sources"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/": {
@@ -57060,7 +57363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "woek-page-49cffbd76a69f746"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#short": {
@@ -57068,7 +57371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#targets": {
@@ -57076,7 +57379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#de-eu": {
@@ -57084,7 +57387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#woek-meaning": {
@@ -57092,7 +57395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#woek-ids": {
@@ -57100,7 +57403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#fields": {
@@ -57108,7 +57411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#tools": {
@@ -57116,7 +57419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#political-implementation-sdg-1": {
@@ -57124,7 +57427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "political-implementation-sdg-1"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#plus-interactions": {
@@ -57132,7 +57435,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#book-anchors": {
@@ -57140,7 +57443,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#official-references": {
@@ -57148,7 +57451,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-1-keine-armut/#export-title": {
@@ -57156,7 +57459,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html",
-      "contentHash": "59800dfe0cb52278",
+      "contentHash": "3830a94955ce351b",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/": {
@@ -57164,7 +57467,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "woek-page-4dfca5aef578cf70"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#short": {
@@ -57172,7 +57475,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#targets": {
@@ -57180,7 +57483,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#de-eu": {
@@ -57188,7 +57491,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#woek-meaning": {
@@ -57196,7 +57499,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#woek-ids": {
@@ -57204,7 +57507,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#fields": {
@@ -57212,7 +57515,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#tools": {
@@ -57220,7 +57523,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#political-implementation-sdg-10": {
@@ -57228,7 +57531,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "political-implementation-sdg-10"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#plus-interactions": {
@@ -57236,7 +57539,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#book-anchors": {
@@ -57244,7 +57547,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#official-references": {
@@ -57252,7 +57555,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/#export-title": {
@@ -57260,7 +57563,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html",
-      "contentHash": "37f2ccb3cf942f82",
+      "contentHash": "273ada999e420b9d",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/": {
@@ -57268,7 +57571,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "woek-page-939f288f5ab1a29d"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#short": {
@@ -57276,7 +57579,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#targets": {
@@ -57284,7 +57587,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#de-eu": {
@@ -57292,7 +57595,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#woek-meaning": {
@@ -57300,7 +57603,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#woek-ids": {
@@ -57308,7 +57611,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#fields": {
@@ -57316,7 +57619,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#tools": {
@@ -57324,7 +57627,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#political-implementation-sdg-11": {
@@ -57332,7 +57635,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "political-implementation-sdg-11"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#plus-interactions": {
@@ -57340,7 +57643,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#book-anchors": {
@@ -57348,7 +57651,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#official-references": {
@@ -57356,7 +57659,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/#export-title": {
@@ -57364,7 +57667,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html",
-      "contentHash": "d89f5aaf8449c683",
+      "contentHash": "a89c0dec1210c2cd",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/": {
@@ -57372,7 +57675,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "woek-page-f1234b024ba38534"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#short": {
@@ -57380,7 +57683,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#targets": {
@@ -57388,7 +57691,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#de-eu": {
@@ -57396,7 +57699,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#woek-meaning": {
@@ -57404,7 +57707,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#woek-ids": {
@@ -57412,7 +57715,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#fields": {
@@ -57420,7 +57723,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#tools": {
@@ -57428,7 +57731,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#political-implementation-sdg-12": {
@@ -57436,7 +57739,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "political-implementation-sdg-12"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#plus-interactions": {
@@ -57444,7 +57747,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#book-anchors": {
@@ -57452,7 +57755,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#official-references": {
@@ -57460,7 +57763,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/#export-title": {
@@ -57468,7 +57771,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html",
-      "contentHash": "c9836d30ddbe43b8",
+      "contentHash": "ccd97c4528c01e15",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/": {
@@ -57476,7 +57779,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "woek-page-4e967695ec226bb5"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#short": {
@@ -57484,7 +57787,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#targets": {
@@ -57492,7 +57795,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#de-eu": {
@@ -57500,7 +57803,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#woek-meaning": {
@@ -57508,7 +57811,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#woek-ids": {
@@ -57516,7 +57819,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#fields": {
@@ -57524,7 +57827,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#tools": {
@@ -57532,7 +57835,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#political-implementation-sdg-13": {
@@ -57540,7 +57843,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "political-implementation-sdg-13"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#plus-interactions": {
@@ -57548,7 +57851,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#book-anchors": {
@@ -57556,7 +57859,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#official-references": {
@@ -57564,7 +57867,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/#export-title": {
@@ -57572,7 +57875,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html",
-      "contentHash": "85746ef840293f42",
+      "contentHash": "58e98bcb43f0209c",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/": {
@@ -57580,7 +57883,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "woek-page-32bdb9803b5ffae5"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#short": {
@@ -57588,7 +57891,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#targets": {
@@ -57596,7 +57899,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#de-eu": {
@@ -57604,7 +57907,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#woek-meaning": {
@@ -57612,7 +57915,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#woek-ids": {
@@ -57620,7 +57923,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#fields": {
@@ -57628,7 +57931,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#tools": {
@@ -57636,7 +57939,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#political-implementation-sdg-14": {
@@ -57644,7 +57947,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "political-implementation-sdg-14"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#plus-interactions": {
@@ -57652,7 +57955,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#book-anchors": {
@@ -57660,7 +57963,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#official-references": {
@@ -57668,7 +57971,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/#export-title": {
@@ -57676,7 +57979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html",
-      "contentHash": "7050c946fabc4aaf",
+      "contentHash": "36f86ffcce745a4d",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/": {
@@ -57684,7 +57987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "woek-page-394b7869f7b1b821"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#short": {
@@ -57692,7 +57995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#targets": {
@@ -57700,7 +58003,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#de-eu": {
@@ -57708,7 +58011,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#woek-meaning": {
@@ -57716,7 +58019,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#woek-ids": {
@@ -57724,7 +58027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#fields": {
@@ -57732,7 +58035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#tools": {
@@ -57740,7 +58043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#political-implementation-sdg-15": {
@@ -57748,7 +58051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "political-implementation-sdg-15"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#plus-interactions": {
@@ -57756,7 +58059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#book-anchors": {
@@ -57764,7 +58067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#official-references": {
@@ -57772,7 +58075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/#export-title": {
@@ -57780,7 +58083,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html",
-      "contentHash": "170f098f9cb0ab15",
+      "contentHash": "543ad91719f9905b",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/": {
@@ -57788,7 +58091,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "woek-page-9a92c8a403144074"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#short": {
@@ -57796,7 +58099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#targets": {
@@ -57804,7 +58107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#de-eu": {
@@ -57812,7 +58115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#woek-meaning": {
@@ -57820,7 +58123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#woek-ids": {
@@ -57828,7 +58131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#fields": {
@@ -57836,7 +58139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#tools": {
@@ -57844,7 +58147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#political-implementation-sdg-16": {
@@ -57852,7 +58155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "political-implementation-sdg-16"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#plus-interactions": {
@@ -57860,7 +58163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#book-anchors": {
@@ -57868,7 +58171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#official-references": {
@@ -57876,7 +58179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#export-title": {
@@ -57884,7 +58187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html",
-      "contentHash": "8fb79539137809d1",
+      "contentHash": "885f144e8f7d2081",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/": {
@@ -57892,7 +58195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "woek-page-9acfb2632bae25c7"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#short": {
@@ -57900,7 +58203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#targets": {
@@ -57908,7 +58211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#de-eu": {
@@ -57916,7 +58219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#woek-meaning": {
@@ -57924,7 +58227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#woek-ids": {
@@ -57932,7 +58235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#fields": {
@@ -57940,7 +58243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#tools": {
@@ -57948,7 +58251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#political-implementation-sdg-17": {
@@ -57956,7 +58259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "political-implementation-sdg-17"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#plus-interactions": {
@@ -57964,7 +58267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#book-anchors": {
@@ -57972,7 +58275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#official-references": {
@@ -57980,7 +58283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/#export-title": {
@@ -57988,7 +58291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html",
-      "contentHash": "017ae732849552b6",
+      "contentHash": "bca7784399a7ca39",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/": {
@@ -57996,7 +58299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "woek-page-a1bf5f007d05bb45"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#short": {
@@ -58004,7 +58307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#targets": {
@@ -58012,7 +58315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#de-eu": {
@@ -58020,7 +58323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#woek-meaning": {
@@ -58028,7 +58331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#woek-ids": {
@@ -58036,7 +58339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#fields": {
@@ -58044,7 +58347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#tools": {
@@ -58052,7 +58355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#political-implementation-sdg-2": {
@@ -58060,7 +58363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "political-implementation-sdg-2"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#plus-interactions": {
@@ -58068,7 +58371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#book-anchors": {
@@ -58076,7 +58379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#official-references": {
@@ -58084,7 +58387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/#export-title": {
@@ -58092,7 +58395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html",
-      "contentHash": "c2024cdd31e5420b",
+      "contentHash": "5b9a508f2a4ad147",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/": {
@@ -58100,7 +58403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "woek-page-2f2a09d86d379447"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#short": {
@@ -58108,7 +58411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#targets": {
@@ -58116,7 +58419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#de-eu": {
@@ -58124,7 +58427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#woek-meaning": {
@@ -58132,7 +58435,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#woek-ids": {
@@ -58140,7 +58443,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#fields": {
@@ -58148,7 +58451,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#tools": {
@@ -58156,7 +58459,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#political-implementation-sdg-3": {
@@ -58164,7 +58467,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "political-implementation-sdg-3"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#plus-interactions": {
@@ -58172,7 +58475,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#book-anchors": {
@@ -58180,7 +58483,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#official-references": {
@@ -58188,7 +58491,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/#export-title": {
@@ -58196,7 +58499,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html",
-      "contentHash": "fc84604774a79165",
+      "contentHash": "affca74e95bfc256",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/": {
@@ -58204,7 +58507,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "woek-page-8e92a78904b18b2b"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#short": {
@@ -58212,7 +58515,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#targets": {
@@ -58220,7 +58523,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#de-eu": {
@@ -58228,7 +58531,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#woek-meaning": {
@@ -58236,7 +58539,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#woek-ids": {
@@ -58244,7 +58547,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#fields": {
@@ -58252,7 +58555,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#tools": {
@@ -58260,7 +58563,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#political-implementation-sdg-4": {
@@ -58268,7 +58571,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "political-implementation-sdg-4"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#plus-interactions": {
@@ -58276,7 +58579,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#book-anchors": {
@@ -58284,7 +58587,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#official-references": {
@@ -58292,7 +58595,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/#export-title": {
@@ -58300,7 +58603,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html",
-      "contentHash": "b7572d5c35a3d176",
+      "contentHash": "971917af7d333c6d",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/": {
@@ -58308,7 +58611,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "woek-page-f3473962d4bda4d9"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#short": {
@@ -58316,7 +58619,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#targets": {
@@ -58324,7 +58627,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#de-eu": {
@@ -58332,7 +58635,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#woek-meaning": {
@@ -58340,7 +58643,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#woek-ids": {
@@ -58348,7 +58651,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#fields": {
@@ -58356,7 +58659,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#tools": {
@@ -58364,7 +58667,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#political-implementation-sdg-5": {
@@ -58372,7 +58675,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "political-implementation-sdg-5"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#plus-interactions": {
@@ -58380,7 +58683,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#book-anchors": {
@@ -58388,7 +58691,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#official-references": {
@@ -58396,7 +58699,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/#export-title": {
@@ -58404,7 +58707,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html",
-      "contentHash": "2ef255203e90d3e2",
+      "contentHash": "b7b8e460bb2a6cda",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/": {
@@ -58412,7 +58715,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "woek-page-c088ee5c2c43a446"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#short": {
@@ -58420,7 +58723,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#targets": {
@@ -58428,7 +58731,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#de-eu": {
@@ -58436,7 +58739,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#woek-meaning": {
@@ -58444,7 +58747,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#woek-ids": {
@@ -58452,7 +58755,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#fields": {
@@ -58460,7 +58763,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#tools": {
@@ -58468,7 +58771,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#political-implementation-sdg-6": {
@@ -58476,7 +58779,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "political-implementation-sdg-6"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#plus-interactions": {
@@ -58484,7 +58787,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#book-anchors": {
@@ -58492,7 +58795,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#official-references": {
@@ -58500,7 +58803,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/#export-title": {
@@ -58508,7 +58811,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html",
-      "contentHash": "b420470125c9f3b1",
+      "contentHash": "1f10340353f419f9",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/": {
@@ -58516,7 +58819,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "woek-page-95ce3563db8c8ea0"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#short": {
@@ -58524,7 +58827,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#targets": {
@@ -58532,7 +58835,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#de-eu": {
@@ -58540,7 +58843,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#woek-meaning": {
@@ -58548,7 +58851,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#woek-ids": {
@@ -58556,7 +58859,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#fields": {
@@ -58564,7 +58867,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#tools": {
@@ -58572,7 +58875,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#political-implementation-sdg-7": {
@@ -58580,7 +58883,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "political-implementation-sdg-7"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#plus-interactions": {
@@ -58588,7 +58891,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#book-anchors": {
@@ -58596,7 +58899,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#official-references": {
@@ -58604,7 +58907,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/#export-title": {
@@ -58612,7 +58915,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html",
-      "contentHash": "0b06f95700403b0b",
+      "contentHash": "b3611bc9ca272792",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/": {
@@ -58620,7 +58923,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "woek-page-1e8a5b456bb42a17"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#short": {
@@ -58628,7 +58931,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#targets": {
@@ -58636,7 +58939,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#de-eu": {
@@ -58644,7 +58947,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#woek-meaning": {
@@ -58652,7 +58955,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#woek-ids": {
@@ -58660,7 +58963,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#fields": {
@@ -58668,7 +58971,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#tools": {
@@ -58676,7 +58979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#political-implementation-sdg-8": {
@@ -58684,7 +58987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "political-implementation-sdg-8"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#plus-interactions": {
@@ -58692,7 +58995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#book-anchors": {
@@ -58700,7 +59003,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#official-references": {
@@ -58708,7 +59011,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/#export-title": {
@@ -58716,7 +59019,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html",
-      "contentHash": "c9a01cc56a626cc4",
+      "contentHash": "be7d46a56a6d1520",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/": {
@@ -58724,7 +59027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "woek-page-50d582a7587367e1"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#short": {
@@ -58732,7 +59035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "short"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#targets": {
@@ -58740,7 +59043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#de-eu": {
@@ -58748,7 +59051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "de-eu"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#woek-meaning": {
@@ -58756,7 +59059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "woek-meaning"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#woek-ids": {
@@ -58764,7 +59067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "woek-ids"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#fields": {
@@ -58772,7 +59075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "fields"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#tools": {
@@ -58780,7 +59083,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "tools"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#political-implementation-sdg-9": {
@@ -58788,7 +59091,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "political-implementation-sdg-9"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#plus-interactions": {
@@ -58796,7 +59099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "plus-interactions"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#book-anchors": {
@@ -58804,7 +59107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#official-references": {
@@ -58812,7 +59115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "official-references"
     },
     "/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/#export-title": {
@@ -58820,7 +59123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html",
-      "contentHash": "33889ee535e822cc",
+      "contentHash": "ca5736fea5d5dcf1",
       "sectionId": "export-title"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/": {
@@ -58828,7 +59131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "woek-page-599775876a30acc5"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#sdgplus-notice": {
@@ -58836,7 +59139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "sdgplus-notice"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#toc-heading": {
@@ -58844,7 +59147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "toc-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#1-executive-summary-heading": {
@@ -58852,7 +59155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "1-executive-summary-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#2-ausgangsdiagnose-warum-die-sdgs-nicht-vollstaendig-ausreichen-heading": {
@@ -58860,7 +59163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "2-ausgangsdiagnose-warum-die-sdgs-nicht-vollstaendig-ausreichen-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#3-definition-von-sdgplus-heading": {
@@ -58868,7 +59171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "3-definition-von-sdgplus-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#4-die-sieben-kerndimensionen-heading": {
@@ -58876,7 +59179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "4-die-sieben-kerndimensionen-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#5-warum-sdgplus-keine-offizielle-un-kategorie-ist-heading": {
@@ -58884,7 +59187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "5-warum-sdgplus-keine-offizielle-un-kategorie-ist-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#6-wirkungsoekonomische-begruendung-heading": {
@@ -58892,7 +59195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "6-wirkungsoekonomische-begruendung-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#7-sdgplus-und-demokratie-als-systemvoraussetzung-heading": {
@@ -58900,7 +59203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "7-sdgplus-und-demokratie-als-systemvoraussetzung-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#8-sdgplus-und-digitale-oeffentlichkeit-heading": {
@@ -58908,7 +59211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "8-sdgplus-und-digitale-oeffentlichkeit-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#9-sdgplus-in-woek-ids-scorecards-und-portalen-heading": {
@@ -58916,7 +59219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "9-sdgplus-in-woek-ids-scorecards-und-portalen-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#10-akteursgruppen-und-anwendungsfaelle-heading": {
@@ -58924,7 +59227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "10-akteursgruppen-und-anwendungsfaelle-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#11-messbarkeit-datenquellen-und-grenzen-heading": {
@@ -58932,7 +59235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "11-messbarkeit-datenquellen-und-grenzen-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#12-missbrauchsschutz-keine-meinungskontrolle-kein-social-credit-heading": {
@@ -58940,7 +59243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "12-missbrauchsschutz-keine-meinungskontrolle-kein-social-credit-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#politische-anschlussfaehigkeit-und-umsetzungsoptionen-heading": {
@@ -58948,7 +59251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "politische-anschlussfaehigkeit-und-umsetzungsoptionen-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#14-website-und-portalintegration-heading": {
@@ -58956,7 +59259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "14-website-und-portalintegration-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#15-fazit-heading": {
@@ -58964,7 +59267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "15-fazit-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#quellen-und-online-referenzen-heading": {
@@ -58972,7 +59275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "quellen-und-online-referenzen-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#website-und-portalintegration-heading": {
@@ -58980,7 +59283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "website-und-portalintegration-heading"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#political": {
@@ -58988,7 +59291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#sdg-badges": {
@@ -58996,7 +59299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#book-anchors": {
@@ -59004,7 +59307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#sources": {
@@ -59012,7 +59315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/sdgplus/#downloads": {
@@ -59020,7 +59323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus/index.html",
-      "contentHash": "abfd66769b13c3f9",
+      "contentHash": "17bd661c05ceed99",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/sdgplus-demokratie/": {
@@ -59028,7 +59331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus-demokratie/index.html",
-      "contentHash": "e8fd1b2cb73c5410",
+      "contentHash": "e34bbb5c6b7d0c6d",
       "sectionId": "woek-page-35b60e676a4a522b"
     },
     "/verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/": {
@@ -59036,7 +59339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/index.html",
-      "contentHash": "cd5be4a76de4d1cd",
+      "contentHash": "6f1d4c958b0f875d",
       "sectionId": "woek-page-f5647fc3f422e875"
     },
     "/verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/": {
@@ -59044,7 +59347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/index.html",
-      "contentHash": "f3d65c06d2f050de",
+      "contentHash": "9e2a7e1041aa1caa",
       "sectionId": "woek-page-739521c6c119333c"
     },
     "/verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/": {
@@ -59052,7 +59355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/index.html",
-      "contentHash": "77030daa3abbde28",
+      "contentHash": "215086824bde6a52",
       "sectionId": "woek-page-a1129ff4681386d3"
     },
     "/verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/": {
@@ -59060,7 +59363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/index.html",
-      "contentHash": "9650f41d17086198",
+      "contentHash": "154c9ece00c40c80",
       "sectionId": "woek-page-31b7e64f00755eab"
     },
     "/verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/": {
@@ -59068,7 +59371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/index.html",
-      "contentHash": "8ffeb352ef519a07",
+      "contentHash": "03c317f942a871c9",
       "sectionId": "woek-page-889fe598a0e1ac68"
     },
     "/verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/": {
@@ -59076,7 +59379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/index.html",
-      "contentHash": "599d0b59f9853064",
+      "contentHash": "7b4199a175998af7",
       "sectionId": "woek-page-fa0877ee0dd7a229"
     },
     "/verstehen/sdgs-sdgplus/unterziele/": {
@@ -59084,7 +59387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "woek-page-6f3668156d30020f"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#toc-heading": {
@@ -59092,7 +59395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "toc-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#1-executive-summary-heading": {
@@ -59100,7 +59403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "1-executive-summary-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#2-warum-unterziele-entscheidend-sind-heading": {
@@ -59108,7 +59411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "2-warum-unterziele-entscheidend-sind-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#3-drei-uebersetzungsebenen-global-europa-deutschland-heading": {
@@ -59116,7 +59419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "3-drei-uebersetzungsebenen-global-europa-deutschland-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#4-methodik-der-unterziel-ableitung-heading": {
@@ -59124,7 +59427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "4-methodik-der-unterziel-ableitung-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#5-vom-target-zur-woek-id-heading": {
@@ -59132,7 +59435,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "5-vom-target-zur-woek-id-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#6-unterzielmatrix-nach-sdg-1-bis-17-heading": {
@@ -59140,7 +59443,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "6-unterzielmatrix-nach-sdg-1-bis-17-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#7-deutschland-europa-bezug-systematisch-bestimmen-heading": {
@@ -59148,7 +59451,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "7-deutschland-europa-bezug-systematisch-bestimmen-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#8-datenquellen-und-indikatoren-heading": {
@@ -59156,7 +59459,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "8-datenquellen-und-indikatoren-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#9-zielkonflikte-interdependenzen-und-nichtkompensation-heading": {
@@ -59164,7 +59467,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "9-zielkonflikte-interdependenzen-und-nichtkompensation-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#politische-anschlussfaehigkeit-und-umsetzungsoptionen-heading": {
@@ -59172,7 +59475,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "politische-anschlussfaehigkeit-und-umsetzungsoptionen-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#11-website-und-portalintegration-heading": {
@@ -59180,7 +59483,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "11-website-und-portalintegration-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#12-fazit-heading": {
@@ -59188,7 +59491,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "12-fazit-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#quellen-und-online-referenzen-heading": {
@@ -59196,7 +59499,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "quellen-und-online-referenzen-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#website-und-portalintegration-heading": {
@@ -59204,7 +59507,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "website-und-portalintegration-heading"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#sdg-target-pages": {
@@ -59212,7 +59515,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "sdg-target-pages"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#full-matrix": {
@@ -59220,7 +59523,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "full-matrix"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#matrix-downloads": {
@@ -59228,7 +59531,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "matrix-downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#political": {
@@ -59236,7 +59539,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#sdg-badges": {
@@ -59244,7 +59547,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#book-anchors": {
@@ -59252,7 +59555,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "book-anchors"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#sources": {
@@ -59260,7 +59563,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/#downloads": {
@@ -59268,7 +59571,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/index.html",
-      "contentHash": "170fb2e18dcd9186",
+      "contentHash": "3fea2acd39b44e80",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-1/": {
@@ -59276,7 +59579,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html",
-      "contentHash": "17e9bbfc2fcd4cae",
+      "contentHash": "45a2d10633ec0668",
       "sectionId": "woek-page-085f9531c4ab9916"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-1/#targets": {
@@ -59284,7 +59587,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html",
-      "contentHash": "17e9bbfc2fcd4cae",
+      "contentHash": "45a2d10633ec0668",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-1/#political": {
@@ -59292,7 +59595,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html",
-      "contentHash": "17e9bbfc2fcd4cae",
+      "contentHash": "45a2d10633ec0668",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-1/#sdg-badges": {
@@ -59300,7 +59603,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html",
-      "contentHash": "17e9bbfc2fcd4cae",
+      "contentHash": "45a2d10633ec0668",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-1/#sources": {
@@ -59308,7 +59611,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html",
-      "contentHash": "17e9bbfc2fcd4cae",
+      "contentHash": "45a2d10633ec0668",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-1/#downloads": {
@@ -59316,7 +59619,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html",
-      "contentHash": "17e9bbfc2fcd4cae",
+      "contentHash": "45a2d10633ec0668",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-10/": {
@@ -59324,7 +59627,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html",
-      "contentHash": "32858307a6be6c11",
+      "contentHash": "a9edb72602531eca",
       "sectionId": "woek-page-747f6612c1f5008d"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-10/#targets": {
@@ -59332,7 +59635,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html",
-      "contentHash": "32858307a6be6c11",
+      "contentHash": "a9edb72602531eca",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-10/#political": {
@@ -59340,7 +59643,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html",
-      "contentHash": "32858307a6be6c11",
+      "contentHash": "a9edb72602531eca",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-10/#sdg-badges": {
@@ -59348,7 +59651,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html",
-      "contentHash": "32858307a6be6c11",
+      "contentHash": "a9edb72602531eca",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-10/#sources": {
@@ -59356,7 +59659,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html",
-      "contentHash": "32858307a6be6c11",
+      "contentHash": "a9edb72602531eca",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-10/#downloads": {
@@ -59364,7 +59667,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html",
-      "contentHash": "32858307a6be6c11",
+      "contentHash": "a9edb72602531eca",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-11/": {
@@ -59372,7 +59675,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html",
-      "contentHash": "71da32cc849d11c3",
+      "contentHash": "59d0ead172afde17",
       "sectionId": "woek-page-cbcb34f3a0bcadb0"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-11/#targets": {
@@ -59380,7 +59683,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html",
-      "contentHash": "71da32cc849d11c3",
+      "contentHash": "59d0ead172afde17",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-11/#political": {
@@ -59388,7 +59691,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html",
-      "contentHash": "71da32cc849d11c3",
+      "contentHash": "59d0ead172afde17",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-11/#sdg-badges": {
@@ -59396,7 +59699,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html",
-      "contentHash": "71da32cc849d11c3",
+      "contentHash": "59d0ead172afde17",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-11/#sources": {
@@ -59404,7 +59707,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html",
-      "contentHash": "71da32cc849d11c3",
+      "contentHash": "59d0ead172afde17",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-11/#downloads": {
@@ -59412,7 +59715,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html",
-      "contentHash": "71da32cc849d11c3",
+      "contentHash": "59d0ead172afde17",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-12/": {
@@ -59420,7 +59723,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html",
-      "contentHash": "ee8abd7c63904ea8",
+      "contentHash": "895abfb6179e02a8",
       "sectionId": "woek-page-cebad7a08bd8b23d"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-12/#targets": {
@@ -59428,7 +59731,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html",
-      "contentHash": "ee8abd7c63904ea8",
+      "contentHash": "895abfb6179e02a8",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-12/#political": {
@@ -59436,7 +59739,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html",
-      "contentHash": "ee8abd7c63904ea8",
+      "contentHash": "895abfb6179e02a8",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-12/#sdg-badges": {
@@ -59444,7 +59747,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html",
-      "contentHash": "ee8abd7c63904ea8",
+      "contentHash": "895abfb6179e02a8",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-12/#sources": {
@@ -59452,7 +59755,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html",
-      "contentHash": "ee8abd7c63904ea8",
+      "contentHash": "895abfb6179e02a8",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-12/#downloads": {
@@ -59460,7 +59763,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html",
-      "contentHash": "ee8abd7c63904ea8",
+      "contentHash": "895abfb6179e02a8",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-13/": {
@@ -59468,7 +59771,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html",
-      "contentHash": "bfb430795ecfa631",
+      "contentHash": "479db1a90ff89a24",
       "sectionId": "woek-page-9091743cc39f6c81"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-13/#targets": {
@@ -59476,7 +59779,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html",
-      "contentHash": "bfb430795ecfa631",
+      "contentHash": "479db1a90ff89a24",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-13/#political": {
@@ -59484,7 +59787,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html",
-      "contentHash": "bfb430795ecfa631",
+      "contentHash": "479db1a90ff89a24",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-13/#sdg-badges": {
@@ -59492,7 +59795,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html",
-      "contentHash": "bfb430795ecfa631",
+      "contentHash": "479db1a90ff89a24",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-13/#sources": {
@@ -59500,7 +59803,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html",
-      "contentHash": "bfb430795ecfa631",
+      "contentHash": "479db1a90ff89a24",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-13/#downloads": {
@@ -59508,7 +59811,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html",
-      "contentHash": "bfb430795ecfa631",
+      "contentHash": "479db1a90ff89a24",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-14/": {
@@ -59516,7 +59819,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html",
-      "contentHash": "40d2a2a5e91ecd32",
+      "contentHash": "ef6fd1848529ba22",
       "sectionId": "woek-page-52f627d41aaf498e"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-14/#targets": {
@@ -59524,7 +59827,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html",
-      "contentHash": "40d2a2a5e91ecd32",
+      "contentHash": "ef6fd1848529ba22",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-14/#political": {
@@ -59532,7 +59835,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html",
-      "contentHash": "40d2a2a5e91ecd32",
+      "contentHash": "ef6fd1848529ba22",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-14/#sdg-badges": {
@@ -59540,7 +59843,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html",
-      "contentHash": "40d2a2a5e91ecd32",
+      "contentHash": "ef6fd1848529ba22",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-14/#sources": {
@@ -59548,7 +59851,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html",
-      "contentHash": "40d2a2a5e91ecd32",
+      "contentHash": "ef6fd1848529ba22",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-14/#downloads": {
@@ -59556,7 +59859,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html",
-      "contentHash": "40d2a2a5e91ecd32",
+      "contentHash": "ef6fd1848529ba22",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-15/": {
@@ -59564,7 +59867,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html",
-      "contentHash": "614d2b8226fc4c64",
+      "contentHash": "9f18e43482bb914b",
       "sectionId": "woek-page-7b05e23c748071bb"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-15/#targets": {
@@ -59572,7 +59875,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html",
-      "contentHash": "614d2b8226fc4c64",
+      "contentHash": "9f18e43482bb914b",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-15/#political": {
@@ -59580,7 +59883,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html",
-      "contentHash": "614d2b8226fc4c64",
+      "contentHash": "9f18e43482bb914b",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-15/#sdg-badges": {
@@ -59588,7 +59891,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html",
-      "contentHash": "614d2b8226fc4c64",
+      "contentHash": "9f18e43482bb914b",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-15/#sources": {
@@ -59596,7 +59899,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html",
-      "contentHash": "614d2b8226fc4c64",
+      "contentHash": "9f18e43482bb914b",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-15/#downloads": {
@@ -59604,7 +59907,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html",
-      "contentHash": "614d2b8226fc4c64",
+      "contentHash": "9f18e43482bb914b",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-16/": {
@@ -59612,7 +59915,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html",
-      "contentHash": "035e1ada41497b28",
+      "contentHash": "ff17a9e65d226c15",
       "sectionId": "woek-page-b38dae875264a089"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-16/#targets": {
@@ -59620,7 +59923,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html",
-      "contentHash": "035e1ada41497b28",
+      "contentHash": "ff17a9e65d226c15",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-16/#political": {
@@ -59628,7 +59931,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html",
-      "contentHash": "035e1ada41497b28",
+      "contentHash": "ff17a9e65d226c15",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-16/#sdg-badges": {
@@ -59636,7 +59939,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html",
-      "contentHash": "035e1ada41497b28",
+      "contentHash": "ff17a9e65d226c15",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-16/#sources": {
@@ -59644,7 +59947,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html",
-      "contentHash": "035e1ada41497b28",
+      "contentHash": "ff17a9e65d226c15",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-16/#downloads": {
@@ -59652,7 +59955,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html",
-      "contentHash": "035e1ada41497b28",
+      "contentHash": "ff17a9e65d226c15",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-17/": {
@@ -59660,7 +59963,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html",
-      "contentHash": "6186da05696abf32",
+      "contentHash": "f35462c9bd3f387d",
       "sectionId": "woek-page-e492d81d8bd8e348"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-17/#targets": {
@@ -59668,7 +59971,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html",
-      "contentHash": "6186da05696abf32",
+      "contentHash": "f35462c9bd3f387d",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-17/#political": {
@@ -59676,7 +59979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html",
-      "contentHash": "6186da05696abf32",
+      "contentHash": "f35462c9bd3f387d",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-17/#sdg-badges": {
@@ -59684,7 +59987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html",
-      "contentHash": "6186da05696abf32",
+      "contentHash": "f35462c9bd3f387d",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-17/#sources": {
@@ -59692,7 +59995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html",
-      "contentHash": "6186da05696abf32",
+      "contentHash": "f35462c9bd3f387d",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-17/#downloads": {
@@ -59700,7 +60003,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html",
-      "contentHash": "6186da05696abf32",
+      "contentHash": "f35462c9bd3f387d",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-2/": {
@@ -59708,7 +60011,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html",
-      "contentHash": "ee0111783cea3b74",
+      "contentHash": "39c708a2f9165139",
       "sectionId": "woek-page-845f70e8d38db818"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-2/#targets": {
@@ -59716,7 +60019,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html",
-      "contentHash": "ee0111783cea3b74",
+      "contentHash": "39c708a2f9165139",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-2/#political": {
@@ -59724,7 +60027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html",
-      "contentHash": "ee0111783cea3b74",
+      "contentHash": "39c708a2f9165139",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-2/#sdg-badges": {
@@ -59732,7 +60035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html",
-      "contentHash": "ee0111783cea3b74",
+      "contentHash": "39c708a2f9165139",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-2/#sources": {
@@ -59740,7 +60043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html",
-      "contentHash": "ee0111783cea3b74",
+      "contentHash": "39c708a2f9165139",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-2/#downloads": {
@@ -59748,7 +60051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html",
-      "contentHash": "ee0111783cea3b74",
+      "contentHash": "39c708a2f9165139",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-3/": {
@@ -59756,7 +60059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html",
-      "contentHash": "2dde5a2d363874d9",
+      "contentHash": "d27250050e68fdf3",
       "sectionId": "woek-page-fff8f1cd0edf0310"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-3/#targets": {
@@ -59764,7 +60067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html",
-      "contentHash": "2dde5a2d363874d9",
+      "contentHash": "d27250050e68fdf3",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-3/#political": {
@@ -59772,7 +60075,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html",
-      "contentHash": "2dde5a2d363874d9",
+      "contentHash": "d27250050e68fdf3",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-3/#sdg-badges": {
@@ -59780,7 +60083,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html",
-      "contentHash": "2dde5a2d363874d9",
+      "contentHash": "d27250050e68fdf3",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-3/#sources": {
@@ -59788,7 +60091,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html",
-      "contentHash": "2dde5a2d363874d9",
+      "contentHash": "d27250050e68fdf3",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-3/#downloads": {
@@ -59796,7 +60099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html",
-      "contentHash": "2dde5a2d363874d9",
+      "contentHash": "d27250050e68fdf3",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-4/": {
@@ -59804,7 +60107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html",
-      "contentHash": "967157495cdcfa6e",
+      "contentHash": "720822f8aa56ba04",
       "sectionId": "woek-page-539131fe520cc5c5"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-4/#targets": {
@@ -59812,7 +60115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html",
-      "contentHash": "967157495cdcfa6e",
+      "contentHash": "720822f8aa56ba04",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-4/#political": {
@@ -59820,7 +60123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html",
-      "contentHash": "967157495cdcfa6e",
+      "contentHash": "720822f8aa56ba04",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-4/#sdg-badges": {
@@ -59828,7 +60131,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html",
-      "contentHash": "967157495cdcfa6e",
+      "contentHash": "720822f8aa56ba04",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-4/#sources": {
@@ -59836,7 +60139,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html",
-      "contentHash": "967157495cdcfa6e",
+      "contentHash": "720822f8aa56ba04",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-4/#downloads": {
@@ -59844,7 +60147,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html",
-      "contentHash": "967157495cdcfa6e",
+      "contentHash": "720822f8aa56ba04",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-5/": {
@@ -59852,7 +60155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html",
-      "contentHash": "ed03582af4acfacc",
+      "contentHash": "8bc0fa6e6f6bb37c",
       "sectionId": "woek-page-540ae648712853ae"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-5/#targets": {
@@ -59860,7 +60163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html",
-      "contentHash": "ed03582af4acfacc",
+      "contentHash": "8bc0fa6e6f6bb37c",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-5/#political": {
@@ -59868,7 +60171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html",
-      "contentHash": "ed03582af4acfacc",
+      "contentHash": "8bc0fa6e6f6bb37c",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-5/#sdg-badges": {
@@ -59876,7 +60179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html",
-      "contentHash": "ed03582af4acfacc",
+      "contentHash": "8bc0fa6e6f6bb37c",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-5/#sources": {
@@ -59884,7 +60187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html",
-      "contentHash": "ed03582af4acfacc",
+      "contentHash": "8bc0fa6e6f6bb37c",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-5/#downloads": {
@@ -59892,7 +60195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html",
-      "contentHash": "ed03582af4acfacc",
+      "contentHash": "8bc0fa6e6f6bb37c",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-6/": {
@@ -59900,7 +60203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html",
-      "contentHash": "d19146b1164a59cf",
+      "contentHash": "d2bd2725af58c393",
       "sectionId": "woek-page-3e97c4de18edcd83"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-6/#targets": {
@@ -59908,7 +60211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html",
-      "contentHash": "d19146b1164a59cf",
+      "contentHash": "d2bd2725af58c393",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-6/#political": {
@@ -59916,7 +60219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html",
-      "contentHash": "d19146b1164a59cf",
+      "contentHash": "d2bd2725af58c393",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-6/#sdg-badges": {
@@ -59924,7 +60227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html",
-      "contentHash": "d19146b1164a59cf",
+      "contentHash": "d2bd2725af58c393",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-6/#sources": {
@@ -59932,7 +60235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html",
-      "contentHash": "d19146b1164a59cf",
+      "contentHash": "d2bd2725af58c393",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-6/#downloads": {
@@ -59940,7 +60243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html",
-      "contentHash": "d19146b1164a59cf",
+      "contentHash": "d2bd2725af58c393",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-7/": {
@@ -59948,7 +60251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html",
-      "contentHash": "204cc6a409e1a221",
+      "contentHash": "23bfa28a20771b4c",
       "sectionId": "woek-page-48f36862e4e9706c"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-7/#targets": {
@@ -59956,7 +60259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html",
-      "contentHash": "204cc6a409e1a221",
+      "contentHash": "23bfa28a20771b4c",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-7/#political": {
@@ -59964,7 +60267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html",
-      "contentHash": "204cc6a409e1a221",
+      "contentHash": "23bfa28a20771b4c",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-7/#sdg-badges": {
@@ -59972,7 +60275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html",
-      "contentHash": "204cc6a409e1a221",
+      "contentHash": "23bfa28a20771b4c",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-7/#sources": {
@@ -59980,7 +60283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html",
-      "contentHash": "204cc6a409e1a221",
+      "contentHash": "23bfa28a20771b4c",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-7/#downloads": {
@@ -59988,7 +60291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html",
-      "contentHash": "204cc6a409e1a221",
+      "contentHash": "23bfa28a20771b4c",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-8/": {
@@ -59996,7 +60299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html",
-      "contentHash": "75ebdb123a199a6a",
+      "contentHash": "673088bb787bff0b",
       "sectionId": "woek-page-a379d84ae9ec47a9"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-8/#targets": {
@@ -60004,7 +60307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html",
-      "contentHash": "75ebdb123a199a6a",
+      "contentHash": "673088bb787bff0b",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-8/#political": {
@@ -60012,7 +60315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html",
-      "contentHash": "75ebdb123a199a6a",
+      "contentHash": "673088bb787bff0b",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-8/#sdg-badges": {
@@ -60020,7 +60323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html",
-      "contentHash": "75ebdb123a199a6a",
+      "contentHash": "673088bb787bff0b",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-8/#sources": {
@@ -60028,7 +60331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html",
-      "contentHash": "75ebdb123a199a6a",
+      "contentHash": "673088bb787bff0b",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-8/#downloads": {
@@ -60036,7 +60339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html",
-      "contentHash": "75ebdb123a199a6a",
+      "contentHash": "673088bb787bff0b",
       "sectionId": "downloads"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-9/": {
@@ -60044,7 +60347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html",
-      "contentHash": "b9f3cc5db0357256",
+      "contentHash": "63f14bf20a8a8660",
       "sectionId": "woek-page-5d9fafbc8f874d0e"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-9/#targets": {
@@ -60052,7 +60355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html",
-      "contentHash": "b9f3cc5db0357256",
+      "contentHash": "63f14bf20a8a8660",
       "sectionId": "targets"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-9/#political": {
@@ -60060,7 +60363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html",
-      "contentHash": "b9f3cc5db0357256",
+      "contentHash": "63f14bf20a8a8660",
       "sectionId": "political"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-9/#sdg-badges": {
@@ -60068,7 +60371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html",
-      "contentHash": "b9f3cc5db0357256",
+      "contentHash": "63f14bf20a8a8660",
       "sectionId": "sdg-badges"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-9/#sources": {
@@ -60076,7 +60379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html",
-      "contentHash": "b9f3cc5db0357256",
+      "contentHash": "63f14bf20a8a8660",
       "sectionId": "sources"
     },
     "/verstehen/sdgs-sdgplus/unterziele/sdg-9/#downloads": {
@@ -60084,7 +60387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html",
-      "contentHash": "b9f3cc5db0357256",
+      "contentHash": "63f14bf20a8a8660",
       "sectionId": "downloads"
     },
     "/verstehen/woek-auf-einer-seite/": {
@@ -60092,7 +60395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/woek-auf-einer-seite/index.html",
-      "contentHash": "7008ddce7fa612ca",
+      "contentHash": "10af144416e64da5",
       "sectionId": "woek-page-6c2ccbfe6e8fcbec"
     },
     "/verstehen/woek-auf-einer-seite/#mastermap-title": {
@@ -60100,7 +60403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/woek-auf-einer-seite/index.html",
-      "contentHash": "7008ddce7fa612ca",
+      "contentHash": "10af144416e64da5",
       "sectionId": "mastermap-title"
     },
     "/verstehen/woek-auf-einer-seite/#du-bist-hier-title": {
@@ -60108,7 +60411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/woek-auf-einer-seite/index.html",
-      "contentHash": "7008ddce7fa612ca",
+      "contentHash": "10af144416e64da5",
       "sectionId": "du-bist-hier-title"
     },
     "/verstehen/woek-auf-einer-seite/#bruecken-title": {
@@ -60116,7 +60419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/woek-auf-einer-seite/index.html",
-      "contentHash": "7008ddce7fa612ca",
+      "contentHash": "10af144416e64da5",
       "sectionId": "bruecken-title"
     },
     "/verstehen/woek-auf-einer-seite/#schutz-title": {
@@ -60124,7 +60427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/woek-auf-einer-seite/index.html",
-      "contentHash": "7008ddce7fa612ca",
+      "contentHash": "10af144416e64da5",
       "sectionId": "schutz-title"
     }
   }

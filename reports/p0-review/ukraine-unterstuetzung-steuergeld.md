@@ -1,4 +1,4 @@
-# P0-Review: Ukraine-Unterstuetzung und Steuergeld?
+# P0-Review: Ukraine-Unterstützung und Steuergeld?
 
 Slug: `ukraine-unterstuetzung-steuergeld`
 Rang: 13
@@ -8,9 +8,9 @@ Entscheidung: FREIGEBEN
 ## 1. 10-Sekunden-Test
 
 - PASS: Kurzurteil: Echte Kontrolle. Falsches Verlustbild.
-- PASS: Sag-das-jetzt <= 280 Zeichen (113)
+- PASS: Sag-das-jetzt <= 280 Zeichen (112)
 - PASS: Positives Bild sichtbar: Das Krankenhaus, in dem das Licht anbleibt
-- PASS: Bessere Frage <= 180 Zeichen: Was bewirkt die Unterstuetzung konkret - und welche Kosten wuerden entstehen, wenn wir nicht helfen?
+- PASS: Bessere Frage <= 180 Zeichen: Was bewirkt die Unterstützung konkret - und welche Kosten würden entstehen, wenn wir nicht helfen?
 
 ## 2. Frame-Risiko
 
@@ -22,7 +22,7 @@ Entscheidung: FREIGEBEN
 
 - Erwartet: Das Krankenhaus, in dem das Licht anbleibt
 - Verwendet: Das Krankenhaus, in dem das Licht anbleibt
-- Host-Satz: Hilfe ist nicht nur Geld. Hilfe kann bedeuten: Licht bleibt an, Kliniken arbeiten, Wasser laeuft.
+- Host-Satz: Hilfe ist nicht nur Geld. Hilfe kann bedeuten: Licht bleibt an, Kliniken arbeiten, Wasser läuft.
 - Was wird besser: Klinik, Strom, Wasser, Stabilitaet
 
 ## 4. Menschenschutz
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 8.0 Woerter
-- Kommentar: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe haelt Kliniken, Strom, Wasser, Verwaltung und Schutz stabil.
-- Live: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe haelt Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Hilfe ist nicht nur Geld. Hilfe kann bedeuten: Licht bleibt an, Kliniken arbeiten, Wasser laeuft.
-- Panel: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe haelt Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe haelt Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Hilfe ist nicht nur Geld. Hilfe kann bedeuten: Licht bleibt an, Kliniken arbeiten, Wasser laeuft.
-- Ruhig kontern: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe haelt Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Was bewirkt die Unterstuetzung konkret - und welche Kosten wuerden entstehen, wenn wir nicht helfen?
+- Kommentar: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe hält Kliniken, Strom, Wasser, Verwaltung und Schutz stabil.
+- Live: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe hält Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Hilfe ist nicht nur Geld. Hilfe kann bedeuten: Licht bleibt an, Kliniken arbeiten, Wasser läuft.
+- Panel: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe hält Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe hält Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Hilfe ist nicht nur Geld. Hilfe kann bedeuten: Licht bleibt an, Kliniken arbeiten, Wasser läuft.
+- Ruhig kontern: Ukraine-Hilfe ist nicht einfach Geld weg. Gute Hilfe hält Kliniken, Strom, Wasser, Verwaltung und Schutz stabil. Was bewirkt die Unterstützung konkret - und welche Kosten würden entstehen, wenn wir nicht helfen?
 
 ## 6. Systemik
 

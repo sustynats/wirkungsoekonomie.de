@@ -144,22 +144,24 @@
     "p0Rank": 6,
     "oldStatus": "checked_v2_positive_examples",
     "newStatus": "checked_v2_positive_examples",
-    "frameRisk": "Batterie als Dreckbild / E-Auto nur CO2",
+    "frameRisk": "Batterie als Dreckbild / alter Strommix als Zukunft / E-Auto nur CO2",
     "mustAvoidFirstViewport": [
       "Kinderarbeit als erstes Bild",
       "brennende Akkus",
       "Sondermuell",
-      "nur CO2"
+      "nur CO2",
+      "nur Strommix ohne Ladequelle",
+      "nur Batterieproduktion"
     ],
     "requiredPositiveImage": "Der Supermarkt-Lader",
-    "requiredBetterQuestion": "Vergleichen wir nur die Batterie - oder den ganzen Lebensweg von Oel, Strom, Luft und Wartung?",
+    "requiredBetterQuestion": "Vergleichen wir nur die Batterie - oder den ganzen Lebensweg von Oel, Produktionsstrom, Ladestrom, Luft, Wartung und Recycling?",
     "requiredTrustSources": [
-      "UBA / ICCT / Fraunhofer zu Lebenszyklus",
-      "IEA Global EV Outlook",
-      "UBA Luftschadstoffe",
+      "ADAC Lebenszyklusanalyse",
+      "BMV geförderte Ladeinfrastruktur / erneuerbarer Strom",
+      "ICCT / IEA zu Lebenszyklus und EV-Marktdaten",
       "Batterierecycling-Quellen"
     ],
-    "finalReviewerNote": "Verbrenner nicht nur Klima: Oelimporte, NOx, Feinstaub, Laerm, Wartung, Geopolitik, Stadtluft.",
+    "finalReviewerNote": "Verbrenner nicht nur Klima: Oelimporte, NOx, Feinstaub, Laerm, Wartung, Geopolitik, Stadtluft. E-Auto-Bilanz nicht mit altem Pauschalstrommix einfrieren; Ladequelle und Produktionsstrom sauber trennen.",
     "errors": [],
     "warnings": [],
     "missingFields": [],

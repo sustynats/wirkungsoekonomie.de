@@ -7,10 +7,10 @@ Entscheidung: FREIGEBEN
 
 ## 1. 10-Sekunden-Test
 
-- PASS: Kurzurteil: Teure Waermelogik. Schlechter Zeitpfad.
-- PASS: Sag-das-jetzt <= 280 Zeichen (148)
+- PASS: Kurzurteil: Teure Wärmelogik. Schlechter Zeitpfad.
+- PASS: Sag-das-jetzt <= 280 Zeichen (146)
 - PASS: Positives Bild sichtbar: Der schnelle Wirkungs-Euro
-- PASS: Bessere Frage <= 180 Zeichen: Was liefert vor 2030 und 2035 sicher, guenstig und flexibel Strom?
+- PASS: Bessere Frage <= 180 Zeichen: Was liefert vor 2030 und 2035 sicher, günstig und flexibel Strom?
 
 ## 2. Frame-Risiko
 
@@ -22,7 +22,7 @@ Entscheidung: FREIGEBEN
 
 - Erwartet: Der schnelle Wirkungs-Euro
 - Verwendet: Der schnelle Wirkungs-Euro
-- Host-Satz: Gute Energiepolitik fragt: Was liefert rechtzeitig guenstigen Strom?
+- Host-Satz: Gute Energiepolitik fragt: Was liefert rechtzeitig günstigen Strom?
 - Was wird besser: Zeit, Kosten, Flexibilitaet, Importe
 
 ## 4. Menschenschutz
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 7.0 Woerter
-- Kommentar: Kernkraft macht nicht direkt Strom. Sie macht Waerme, daraus Dampf, daraus Turbinenstrom. Fuer Deutschland ist das zu langsam, teuer und unflexibel.
-- Live: Kernkraft macht nicht direkt Strom. Sie macht Waerme, daraus Dampf, daraus Turbinenstrom. Fuer Deutschland ist das zu langsam, teuer und unflexibel. Gute Energiepolitik fragt: Was liefert rechtzeitig guenstigen Strom?
-- Panel: Kernkraft macht nicht direkt Strom. Sie macht Waerme, daraus Dampf, daraus Turbinenstrom. Fuer Deutschland ist das zu langsam, teuer und unflexibel. Kernkraft macht nicht direkt Strom. Sie macht Waerme, daraus Dampf, daraus Turbinenstrom. Fuer Deutschland ist das zu langsam, teuer und unflexibel. Gute Energiepolitik fragt: Was liefert rechtzeitig guenstigen Strom?
-- Ruhig kontern: Kernkraft macht nicht direkt Strom. Sie macht Waerme, daraus Dampf, daraus Turbinenstrom. Fuer Deutschland ist das zu langsam, teuer und unflexibel. Was liefert vor 2030 und 2035 sicher, guenstig und flexibel Strom?
+- Kommentar: Kernkraft macht nicht direkt Strom. Sie macht Wärme, daraus Dampf, daraus Turbinenstrom. Für Deutschland ist das zu langsam, teuer und unflexibel.
+- Live: Kernkraft macht nicht direkt Strom. Sie macht Wärme, daraus Dampf, daraus Turbinenstrom. Für Deutschland ist das zu langsam, teuer und unflexibel. Gute Energiepolitik fragt: Was liefert rechtzeitig günstigen Strom?
+- Panel: Kernkraft macht nicht direkt Strom. Sie macht Wärme, daraus Dampf, daraus Turbinenstrom. Für Deutschland ist das zu langsam, teuer und unflexibel. Kernkraft macht nicht direkt Strom. Sie macht Wärme, daraus Dampf, daraus Turbinenstrom. Für Deutschland ist das zu langsam, teuer und unflexibel. Gute Energiepolitik fragt: Was liefert rechtzeitig günstigen Strom?
+- Ruhig kontern: Kernkraft macht nicht direkt Strom. Sie macht Wärme, daraus Dampf, daraus Turbinenstrom. Für Deutschland ist das zu langsam, teuer und unflexibel. Was liefert vor 2030 und 2035 sicher, günstig und flexibel Strom?
 
 ## 6. Systemik
 

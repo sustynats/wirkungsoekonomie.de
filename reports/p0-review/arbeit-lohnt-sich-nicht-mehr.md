@@ -8,9 +8,9 @@ Entscheidung: FREIGEBEN
 ## 1. 10-Sekunden-Test
 
 - PASS: Kurzurteil: Echter Arbeitsfrust. Falscher Schuldiger.
-- PASS: Sag-das-jetzt <= 280 Zeichen (113)
+- PASS: Sag-das-jetzt <= 280 Zeichen (109)
 - PASS: Positives Bild sichtbar: Mehr Stunden, mehr Sicherheit
-- PASS: Bessere Frage <= 180 Zeichen: Was muss sich aendern, damit Arbeit wirklich mehr Sicherheit und Teilhabe schafft?
+- PASS: Bessere Frage <= 180 Zeichen: Was muss sich ändern, damit Arbeit wirklich mehr Sicherheit und Teilhabe schafft?
 
 ## 2. Frame-Risiko
 
@@ -23,7 +23,7 @@ Entscheidung: FREIGEBEN
 - Erwartet: Mehr Stunden, mehr Sicherheit
 - Verwendet: Mehr Stunden, mehr Sicherheit
 - Host-Satz: Arbeit lohnt sich, wenn mehr Arbeit auch mehr Sicherheit bringt.
-- Was wird besser: Lohn, Betreuung, Mobilitaet, Sicherheit
+- Was wird besser: Lohn, Betreuung, Mobilität, Sicherheit
 
 ## 4. Menschenschutz
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 6.5 Woerter
-- Kommentar: Arbeit muss spuerbar tragen. Dafuer muessen Lohn, Miete, Betreuung, Qualifikation und Uebergaenge zusammenpassen.
-- Live: Arbeit muss spuerbar tragen. Dafuer muessen Lohn, Miete, Betreuung, Qualifikation und Uebergaenge zusammenpassen. Arbeit lohnt sich, wenn mehr Arbeit auch mehr Sicherheit bringt.
-- Panel: Arbeit muss spuerbar tragen. Dafuer muessen Lohn, Miete, Betreuung, Qualifikation und Uebergaenge zusammenpassen. Arbeit muss spuerbar tragen. Dafuer muessen Lohn, Miete, Betreuung, Qualifikation und Uebergaenge zusammenpassen. Arbeit lohnt sich, wenn mehr Arbeit auch mehr Sicherheit bringt.
-- Ruhig kontern: Arbeit muss spuerbar tragen. Dafuer muessen Lohn, Miete, Betreuung, Qualifikation und Uebergaenge zusammenpassen. Was muss sich aendern, damit Arbeit wirklich mehr Sicherheit und Teilhabe schafft?
+- Kommentar: Arbeit muss spürbar tragen. Dafür müssen Lohn, Miete, Betreuung, Qualifikation und Übergaenge zusammenpassen.
+- Live: Arbeit muss spürbar tragen. Dafür müssen Lohn, Miete, Betreuung, Qualifikation und Übergaenge zusammenpassen. Arbeit lohnt sich, wenn mehr Arbeit auch mehr Sicherheit bringt.
+- Panel: Arbeit muss spürbar tragen. Dafür müssen Lohn, Miete, Betreuung, Qualifikation und Übergaenge zusammenpassen. Arbeit muss spürbar tragen. Dafür müssen Lohn, Miete, Betreuung, Qualifikation und Übergaenge zusammenpassen. Arbeit lohnt sich, wenn mehr Arbeit auch mehr Sicherheit bringt.
+- Ruhig kontern: Arbeit muss spürbar tragen. Dafür müssen Lohn, Miete, Betreuung, Qualifikation und Übergaenge zusammenpassen. Was muss sich ändern, damit Arbeit wirklich mehr Sicherheit und Teilhabe schafft?
 
 ## 6. Systemik
 

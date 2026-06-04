@@ -9,7 +9,7 @@ Entscheidung: FREIGEBEN
 
 - PASS: Kurzurteil: Echter Startaufwand. Falsches Lastbild.
 - PASS: Sag-das-jetzt <= 280 Zeichen (119)
-- PASS: Positives Bild sichtbar: Der Sprachkurs, der zur Pflegekraft fuehrt
+- PASS: Positives Bild sichtbar: Der Sprachkurs, der zur Pflegekraft führt
 - PASS: Bessere Frage <= 180 Zeichen: Welche Integration macht aus Ankommen Teilhabe?
 
 ## 2. Frame-Risiko
@@ -21,7 +21,7 @@ Entscheidung: FREIGEBEN
 ## 3. Positives Beispiel
 
 - Erwartet: Der Sprachkurs, der zur Pflegekraft fuehrt
-- Verwendet: Der Sprachkurs, der zur Pflegekraft fuehrt
+- Verwendet: Der Sprachkurs, der zur Pflegekraft führt
 - Host-Satz: Ein Sprachkurs ist kein verlorenes Geld. Er kann der Anfang von Pflege, Arbeit, Steuern und Nachbarschaft sein.
 - Was wird besser: Sprache, Pflege, Arbeit, Nachbarschaft
 

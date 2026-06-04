@@ -7,10 +7,10 @@ Entscheidung: FREIGEBEN
 
 ## 1. 10-Sekunden-Test
 
-- PASS: Kurzurteil: Echte Pruefpflicht. Falsches Gesamturteil.
-- PASS: Sag-das-jetzt <= 280 Zeichen (120)
-- PASS: Positives Bild sichtbar: Der gut geplante Buergerwindpark
-- PASS: Bessere Frage <= 180 Zeichen: Welche Energieform schuetzt Natur, Klima, Gesundheit und Versorgung insgesamt am besten?
+- PASS: Kurzurteil: Echte Prüfpflicht. Falsches Gesamturteil.
+- PASS: Sag-das-jetzt <= 280 Zeichen (119)
+- PASS: Positives Bild sichtbar: Der gut geplante Bürgerwindpark
+- PASS: Bessere Frage <= 180 Zeichen: Welche Energieform schützt Natur, Klima, Gesundheit und Versorgung insgesamt am besten?
 
 ## 2. Frame-Risiko
 
@@ -21,9 +21,9 @@ Entscheidung: FREIGEBEN
 ## 3. Positives Beispiel
 
 - Erwartet: Der gut geplante Buergerwindpark
-- Verwendet: Der gut geplante Buergerwindpark
-- Host-Satz: Gute Windkraft heisst: planen, schuetzen, beteiligen, zurueckbauen.
-- Was wird besser: Artenschutz, Rueckbau, Recycling, Gemeinde
+- Verwendet: Der gut geplante Bürgerwindpark
+- Host-Satz: Gute Windkraft heißt: planen, schuetzen, beteiligen, zurückbauen.
+- Was wird besser: Artenschutz, Rückbau, Recycling, Gemeinde
 
 ## 4. Menschenschutz
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 13.0 Woerter
-- Kommentar: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rueckbau, Recycling und Beteiligung.
-- Live: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rueckbau, Recycling und Beteiligung. Gute Windkraft heisst: planen, schuetzen, beteiligen, zurueckbauen.
-- Panel: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rueckbau, Recycling und Beteiligung. Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rueckbau, Recycling und Beteiligung. Gute Windkraft heisst: planen, schuetzen, beteiligen, zurueckbauen.
-- Ruhig kontern: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rueckbau, Recycling und Beteiligung. Welche Energieform schuetzt Natur, Klima, Gesundheit und Versorgung insgesamt am besten?
+- Kommentar: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rückbau, Recycling und Beteiligung.
+- Live: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rückbau, Recycling und Beteiligung. Gute Windkraft heißt: planen, schuetzen, beteiligen, zurückbauen.
+- Panel: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rückbau, Recycling und Beteiligung. Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rückbau, Recycling und Beteiligung. Gute Windkraft heißt: planen, schuetzen, beteiligen, zurückbauen.
+- Ruhig kontern: Gute Windkraft beginnt mit Planung: passende Standorte, Artenschutz, Abschaltungen, Rückbau, Recycling und Beteiligung. Welche Energieform schützt Natur, Klima, Gesundheit und Versorgung insgesamt am besten?
 
 ## 6. Systemik
 

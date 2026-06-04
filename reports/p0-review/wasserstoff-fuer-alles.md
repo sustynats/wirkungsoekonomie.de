@@ -1,4 +1,4 @@
-# P0-Review: Wasserstoff fuer alles?
+# P0-Review: Wasserstoff für alles?
 
 Slug: `wasserstoff-fuer-alles`
 Rang: 8
@@ -7,9 +7,9 @@ Entscheidung: FREIGEBEN
 
 ## 1. 10-Sekunden-Test
 
-- PASS: Kurzurteil: Wertvoll. Deshalb nicht ueberall.
-- PASS: Sag-das-jetzt <= 280 Zeichen (141)
-- PASS: Positives Bild sichtbar: Der gruene Stahl
+- PASS: Kurzurteil: Wertvoll. Deshalb nicht überall.
+- PASS: Sag-das-jetzt <= 280 Zeichen (140)
+- PASS: Positives Bild sichtbar: Der grüne Stahl
 - PASS: Bessere Frage <= 180 Zeichen: Wo brauchen wir Wasserstoff wirklich - und wo geht Strom direkter?
 
 ## 2. Frame-Risiko
@@ -21,9 +21,9 @@ Entscheidung: FREIGEBEN
 ## 3. Positives Beispiel
 
 - Erwartet: Der gruene Stahl
-- Verwendet: Der gruene Stahl
-- Host-Satz: Wasserstoff ist zu wertvoll fuer alles. Er gehoert zuerst dorthin, wo er wirklich gebraucht wird.
-- Was wird besser: Stahl, Molekuele, Prioritaet, Resilienz
+- Verwendet: Der grüne Stahl
+- Host-Satz: Wasserstoff ist zu wertvoll für alles. Er gehört zuerst dorthin, wo er wirklich gebraucht wird.
+- Was wird besser: Stahl, Moleküle, Priorität, Resilienz
 
 ## 4. Menschenschutz
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 9.5 Woerter
-- Kommentar: Wasserstoff ist wichtig. Aber er gehoert zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher.
-- Live: Wasserstoff ist wichtig. Aber er gehoert zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wasserstoff ist zu wertvoll fuer alles. Er gehoert zuerst dorthin, wo er wirklich gebraucht wird.
-- Panel: Wasserstoff ist wichtig. Aber er gehoert zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wasserstoff ist wichtig. Aber er gehoert zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wasserstoff ist zu wertvoll fuer alles. Er gehoert zuerst dorthin, wo er wirklich gebraucht wird.
-- Ruhig kontern: Wasserstoff ist wichtig. Aber er gehoert zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wo brauchen wir Wasserstoff wirklich - und wo geht Strom direkter?
+- Kommentar: Wasserstoff ist wichtig. Aber er gehört zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher.
+- Live: Wasserstoff ist wichtig. Aber er gehört zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wasserstoff ist zu wertvoll für alles. Er gehört zuerst dorthin, wo er wirklich gebraucht wird.
+- Panel: Wasserstoff ist wichtig. Aber er gehört zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wasserstoff ist wichtig. Aber er gehört zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wasserstoff ist zu wertvoll für alles. Er gehört zuerst dorthin, wo er wirklich gebraucht wird.
+- Ruhig kontern: Wasserstoff ist wichtig. Aber er gehört zuerst dahin, wo Strom direkt schwer reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher. Wo brauchen wir Wasserstoff wirklich - und wo geht Strom direkter?
 
 ## 6. Systemik
 

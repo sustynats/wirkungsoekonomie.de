@@ -7,10 +7,10 @@ Entscheidung: FREIGEBEN
 
 ## 1. 10-Sekunden-Test
 
-- PASS: Kurzurteil: Wertvolle Molekuele. Falscher Alltagsumweg.
-- PASS: Sag-das-jetzt <= 280 Zeichen (123)
-- PASS: Positives Bild sichtbar: Direkt laden, Molekuele sparen
-- PASS: Bessere Frage <= 180 Zeichen: Fuer welchen Einsatz meinst du E-Fuels: Flugzeug, Schiff, Spezialfall - oder Alltagsauto?
+- PASS: Kurzurteil: Wertvolle Moleküle. Falscher Alltagsumweg.
+- PASS: Sag-das-jetzt <= 280 Zeichen (120)
+- PASS: Positives Bild sichtbar: Direkt laden, Moleküle sparen
+- PASS: Bessere Frage <= 180 Zeichen: Für welchen Einsatz meinst du E-Fuels: Flugzeug, Schiff, Spezialfall - oder Alltagsauto?
 
 ## 2. Frame-Risiko
 
@@ -21,9 +21,9 @@ Entscheidung: FREIGEBEN
 ## 3. Positives Beispiel
 
 - Erwartet: Direkt laden, Molekuele sparen
-- Verwendet: Direkt laden, Molekuele sparen
-- Host-Satz: Direkt laden, wo es geht. Molekuele sparen, wo sie gebraucht werden.
-- Was wird besser: Direktstrom, Flugverkehr, Knappheit, Prioritaet
+- Verwendet: Direkt laden, Moleküle sparen
+- Host-Satz: Direkt laden, wo es geht. Moleküle sparen, wo sie gebraucht werden.
+- Was wird besser: Direktstrom, Flugverkehr, Knappheit, Priorität
 
 ## 4. Menschenschutz
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 8.5 Woerter
-- Kommentar: E-Fuels sind wichtig fuer Flugzeuge, Schiffe und Spezialfaelle. Fuer Alltagsautos ist direkter Strom meist der bessere Weg.
-- Live: E-Fuels sind wichtig fuer Flugzeuge, Schiffe und Spezialfaelle. Fuer Alltagsautos ist direkter Strom meist der bessere Weg. Direkt laden, wo es geht. Molekuele sparen, wo sie gebraucht werden.
-- Panel: E-Fuels sind wichtig fuer Flugzeuge, Schiffe und Spezialfaelle. Fuer Alltagsautos ist direkter Strom meist der bessere Weg. E-Fuels sind wichtig fuer Flugzeuge, Schiffe und Spezialfaelle. Fuer Alltagsautos ist direkter Strom meist der bessere Weg. Direkt laden, wo es geht. Molekuele sparen, wo sie gebraucht werden.
-- Ruhig kontern: E-Fuels sind wichtig fuer Flugzeuge, Schiffe und Spezialfaelle. Fuer Alltagsautos ist direkter Strom meist der bessere Weg. Fuer welchen Einsatz meinst du E-Fuels: Flugzeug, Schiff, Spezialfall - oder Alltagsauto?
+- Kommentar: E-Fuels sind wichtig für Flugzeuge, Schiffe und Spezialfälle. Für Alltagsautos ist direkter Strom meist der bessere Weg.
+- Live: E-Fuels sind wichtig für Flugzeuge, Schiffe und Spezialfälle. Für Alltagsautos ist direkter Strom meist der bessere Weg. Direkt laden, wo es geht. Moleküle sparen, wo sie gebraucht werden.
+- Panel: E-Fuels sind wichtig für Flugzeuge, Schiffe und Spezialfälle. Für Alltagsautos ist direkter Strom meist der bessere Weg. E-Fuels sind wichtig für Flugzeuge, Schiffe und Spezialfälle. Für Alltagsautos ist direkter Strom meist der bessere Weg. Direkt laden, wo es geht. Moleküle sparen, wo sie gebraucht werden.
+- Ruhig kontern: E-Fuels sind wichtig für Flugzeuge, Schiffe und Spezialfälle. Für Alltagsautos ist direkter Strom meist der bessere Weg. Für welchen Einsatz meinst du E-Fuels: Flugzeug, Schiff, Spezialfall - oder Alltagsauto?
 
 ## 6. Systemik
 

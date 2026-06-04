@@ -1,4 +1,4 @@
-# P0-Review: CO2-Preis oder fossile Systemkosten?
+# P0-Review: CO₂-Preis oder fossile Systemkosten?
 
 Slug: `co2-preis-oder-fossile-systemkosten`
 Rang: 10
@@ -7,9 +7,9 @@ Entscheidung: FREIGEBEN
 
 ## 1. 10-Sekunden-Test
 
-- PASS: Kurzurteil: Sichtbare Steuerung statt versteckte Schaeden.
-- PASS: Sag-das-jetzt <= 280 Zeichen (142)
-- PASS: Positives Bild sichtbar: Das Geld, das zurueckarbeitet
+- PASS: Kurzurteil: Sichtbare Steuerung statt versteckte Schäden.
+- PASS: Sag-das-jetzt <= 280 Zeichen (140)
+- PASS: Positives Bild sichtbar: Das Geld, das zurückarbeitet
 - PASS: Bessere Frage <= 180 Zeichen: Zahlen wir fossile Kosten unsichtbar als Schaden - oder sichtbar und lenkend als Umbau?
 
 ## 2. Frame-Risiko
@@ -21,9 +21,9 @@ Entscheidung: FREIGEBEN
 ## 3. Positives Beispiel
 
 - Erwartet: Das Geld, das zurueckarbeitet
-- Verwendet: Das Geld, das zurueckarbeitet
-- Host-Satz: Der CO2-Preis ist nicht die Strafe. Er ist die Rueckfuehrung versteckter Folgekosten.
-- Was wird besser: Klimageld, Bus, Gebaeude, Lenkung
+- Verwendet: Das Geld, das zurückarbeitet
+- Host-Satz: Der CO₂-Preis ist nicht die Strafe. Er ist die Rückführung versteckter Folgekosten.
+- Was wird besser: Klimageld, Bus, Gebäude, Lenkung
 
 ## 4. Menschenschutz
 
@@ -33,10 +33,10 @@ Entscheidung: FREIGEBEN
 ## 5. Maus-Modus
 
 - PASS: Durchschnittliche Satzlaenge in Sag-das-jetzt: 10.5 Woerter
-- Kommentar: Der CO2-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurueckgeben, dass saubere Loesungen leichter werden.
-- Live: Der CO2-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurueckgeben, dass saubere Loesungen leichter werden. Der CO2-Preis ist nicht die Strafe. Er ist die Rueckfuehrung versteckter Folgekosten.
-- Panel: Der CO2-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurueckgeben, dass saubere Loesungen leichter werden. Der CO2-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurueckgeben, dass saubere Loesungen leichter werden. Der CO2-Preis ist nicht die Strafe. Er ist die Rueckfuehrung versteckter Folgekosten.
-- Ruhig kontern: Der CO2-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurueckgeben, dass saubere Loesungen leichter werden. Zahlen wir fossile Kosten unsichtbar als Schaden - oder sichtbar und lenkend als Umbau?
+- Kommentar: Der CO₂-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurückgeben, dass saubere Lösungen leichter werden.
+- Live: Der CO₂-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurückgeben, dass saubere Lösungen leichter werden. Der CO₂-Preis ist nicht die Strafe. Er ist die Rückführung versteckter Folgekosten.
+- Panel: Der CO₂-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurückgeben, dass saubere Lösungen leichter werden. Der CO₂-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurückgeben, dass saubere Lösungen leichter werden. Der CO₂-Preis ist nicht die Strafe. Er ist die Rückführung versteckter Folgekosten.
+- Ruhig kontern: Der CO₂-Preis ist nicht das Ziel. Er macht fossile Folgekosten sichtbar und kann Geld so zurückgeben, dass saubere Lösungen leichter werden. Zahlen wir fossile Kosten unsichtbar als Schaden - oder sichtbar und lenkend als Umbau?
 
 ## 6. Systemik
 

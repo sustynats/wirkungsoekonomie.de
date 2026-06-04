@@ -145,6 +145,78 @@ export const SourceRegistry: SourceCard[] = [
     "reliabilityTier": "B"
   },
   {
+    "id": "adac_lca_drives",
+    "label": "ADAC Lebenszyklusanalyse Antriebe",
+    "organization": "ADAC",
+    "url": "https://www.adac.de/verkehr/tanken-kraftstoff-antrieb/alternative-antriebe/klimabilanz/",
+    "sourceType": "mobility_association",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "Lebenszyklusvergleich",
+      "Strommix-Sensitivität",
+      "regenerativer Strom"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Modellannahmen zu Fahrzeugklasse, Laufleistung, Batteriegröße und Strompfad prüfen."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "adac_emobility_facts",
+    "label": "ADAC Fakten zur Elektromobilität",
+    "organization": "ADAC",
+    "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/elektroauto/elektroauto-pro-und-contra/",
+    "sourceType": "mobility_association",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "CO2-Rucksack",
+      "Betrieb",
+      "Akku und Garantie",
+      "Ladeinfrastruktur"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Ratgeberquelle; Detailzahlen können sich mit Markt und Datenstand ändern."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "B"
+  },
+  {
+    "id": "bmv_ladeinfrastruktur_erneuerbar",
+    "label": "BMV Förderprogramm Ladeinfrastruktur",
+    "organization": "Bundesministerium für Verkehr",
+    "url": "https://www.bmv.de/SharedDocs/DE/Artikel/G/infopapier-sechster-foerderaufruf-ladeinfrastruktur.html",
+    "sourceType": "government",
+    "countryOrRegion": "Deutschland",
+    "language": "de",
+    "publicationDate": "",
+    "lastAccessed": "2026-06-04",
+    "useFor": [
+      "geförderte öffentliche Ladeinfrastruktur",
+      "erneuerbarer Strom als Fördervoraussetzung"
+    ],
+    "doesNotProve": [
+      "Sie beweist nicht allein die politische Schlussfolgerung."
+    ],
+    "limitations": [
+      "Belegt Fördervoraussetzungen, nicht jede private oder ungeförderte Ladesituation."
+    ],
+    "updateFrequency": "event_based",
+    "reliabilityTier": "A"
+  },
+  {
     "id": "transport_environment_efuels",
     "label": "Transport & Environment zu E-Fuels",
     "organization": "Transport & Environment",
