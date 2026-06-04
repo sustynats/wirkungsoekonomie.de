@@ -88,16 +88,17 @@ export function ConsequenceStack({ consequenceStack }) {
 
 export function V3PageNav() {
   const items = [
-    ["Behauptung", "#host-cockpit"],
+    ["Frage", "#host-cockpit"],
+    ["10 Sekunden", "#host-antworten"],
+    ["30 Sekunden", "#host-antworten"],
+    ["2 Minuten", "#host-antworten"],
     ["Folgencheck", "#folgencheck"],
-    ["Wirkpfad", "#systemische-wirkungen"],
-    ["Reaktion", "#host-antworten"],
+    ["Wirkpfad", "#loesungspfad"],
+    ["Kritische Fragen", "#kritische-fragen"],
     ["Faktenlage", "#faktenlage"],
-    ["Quellen", "#warum-belastbar"],
-    ["Warum verfängt es?", "#warum-der-satz-zieht"],
-    ["Methode", "#warum-der-radar-so-prueft"],
+    ["Quellen", "#quellen"],
   ];
-  return `<nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche" data-search-exclude>${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
+  return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche">${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav></article></div></section>`;
 }
 
 export function FactsLayer({ factsLayer }) {
@@ -145,12 +146,11 @@ export function FrameShiftPlaybook({ frameShiftPlaybook }) {
   if (!frameShiftPlaybook?.oldFrame) return "";
   const formats = frameShiftPlaybook.answerFormats || {};
   const answerItems = [
-    ["10 Sekunden", "Kurzantwort", formats.short10s || formats.comment],
+    ["10 Sekunden", "Kernsatz", formats.short10s || formats.comment],
     ["30 Sekunden", "Einordnung", formats.medium30s || formats.live30s],
-    ["2 Minuten", "Langantwort", formats.long2min || formats.panel2min],
-    ["Ruhig kontern", "Gespräch", formats.calmConversation],
+    ["2 Minuten", "Vertiefung", formats.long2min || formats.panel2min],
   ].filter(([, , text]) => text);
-  return `<section class="section v3-layer v3-layer-answer" id="host-antworten" data-v3-frame-shift><span id="reaktion" class="sr-only">Antworten</span><div><div class="section-header"><p class="hero-kicker">Direkt nutzbare Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Erst den wahren Kern anerkennen, dann die fehlende Bilanzgrenze öffnen und zur besseren Frage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${answerItems.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+  return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="host-antworten" data-v3-frame-shift data-debate-immediate-answer><span id="reaktion" class="sr-only">Antworten</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${answerItems.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SolutionPath({ solutionPath }) {
@@ -189,7 +189,7 @@ export function ResponseFormats({ dossier }) {
     ["2 Minuten", "Langantwort", panel, "Antwort kopieren"],
     ["Ruhig kontern", "Gespräch", calmCounter, "Antwort kopieren"],
   ];
-  return `<section class="section v2-answer-tabs" id="host-antworten"><span id="antwortformate-v2" class="sr-only">Antwortformate</span><div><div class="section-header"><p class="hero-kicker">Direkt nutzbare Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Den wahren Kern anerkennen, die Bilanzgrenze öffnen und zur besseren Frage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${items.map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
+  return `<section class="section section-soft v2-answer-tabs debate-immediate-answer" id="host-antworten" data-debate-immediate-answer><span id="antwortformate-v2" class="sr-only">Antwortformate</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${items.slice(0, 3).map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SourceDrawer({ sources }) {
@@ -197,7 +197,7 @@ export function SourceDrawer({ sources }) {
 }
 
 export function TrustBlock({ trustBlock, sources }) {
-  return `<section class="section v2-trust-block" id="warum-belastbar"><div class="card"><p class="hero-kicker">Warum diese Einordnung belastbar ist</p><div class="v2-trust-grid"><div><strong>Datenstand</strong><span>${esc(trustBlock.dataStand)}</span></div><div><strong>Sicher</strong><span>${esc(trustBlock.sicher.join(" "))}</span></div><div><strong>Unsicher</strong><span>${esc(trustBlock.unsicherOderPruefpflichtig.join(" "))}</span></div><div><strong>Bilanzgrenze</strong><span>${esc(trustBlock.bilanzgrenze)}</span></div></div>${SourceDrawer({ sources })}</div></section>`;
+  return `<section class="section v2-trust-block" id="quellen"><span id="warum-belastbar" class="sr-only">Quellen</span><div class="card"><p class="hero-kicker">Quellen</p><h2 class="card-title">Belege, Grenzen und Datenstand.</h2><div class="v2-trust-grid"><div><strong>Datenstand</strong><span>${esc(trustBlock.dataStand)}</span></div><div><strong>Sicher</strong><span>${esc(trustBlock.sicher.join(" "))}</span></div><div><strong>Unsicher</strong><span>${esc(trustBlock.unsicherOderPruefpflichtig.join(" "))}</span></div><div><strong>Bilanzgrenze</strong><span>${esc(trustBlock.bilanzgrenze)}</span></div></div>${SourceDrawer({ sources })}</div></section>`;
 }
 
 export function LinkHub({ internalLinks = {} }) {
@@ -208,41 +208,52 @@ export function LinkHub({ internalLinks = {} }) {
     ["Ähnliche Debattenkarten", internalLinks.relatedDossiers || []],
     ["Lösungsbausteine", internalLinks.woek || []],
   ];
-  return `<section class="section v2-linkhub" id="linkhub"><div><div class="section-header"><p class="hero-kicker">Weiter prüfen</p><h2>Links in die Tiefe.</h2></div><div class="card-grid four">${groups.map(([label, links]) => `<article class="card"><p class="card-kicker">${esc(label)}</p>${links.length ? links.map((href) => `<p><a class="text-link" href="${esc(href)}">${esc(linkLabel(href))}</a></p>`).join("") : `<p class="card-text">Noch nicht verknüpft.</p>`}</article>`).join("")}</div></div></section>`;
+  return `<section class="section v2-linkhub" id="verwandte-inhalte"><span id="linkhub" class="sr-only">Verwandte Inhalte</span><div><div class="section-header"><p class="hero-kicker">Verwandte Inhalte</p><h2>Weiter prüfen.</h2></div><div class="card-grid four">${groups.map(([label, links]) => `<article class="card"><p class="card-kicker">${esc(label)}</p>${links.length ? links.map((href) => `<p><a class="text-link" href="${esc(href)}">${esc(linkLabel(href))}</a></p>`).join("") : `<p class="card-text">Noch nicht verknüpft.</p>`}</article>`).join("")}</div></div></section>`;
 }
 
 export function HostCockpitV2({ dossier }) {
-  const frameShift = {
-    ...dossier.cockpit.frameShift,
-    bridgeSentence: dossier.v3?.frameShiftPlaybook?.bridgeSentence,
-    betterQuestion: dossier.v3?.frameShiftPlaybook?.betterQuestion || dossier.cockpit.betterQuestion,
-  };
-  return `<section class="section v2-host-cockpit" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Schnellantwort</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p>${dossier.claimVariants?.length ? `<p class="card-text"><strong>Varianten:</strong> ${esc(dossier.claimVariants.slice(0, 3).join(" · "))}</p>` : ""}</div><div class="v2-cockpit-grid">${SayThisNowCard({ text: dossier.cockpit.sayThisNow })}${ShortJudgementCard({ text: dossier.cockpit.shortJudgement })}${BehindNarrativeCard({ dossier })}${TriggeredEffectsCard({ dossier })}</div>${FrameShiftCard({ frameShift })}<div class="v2-cockpit-grid">${PositiveExampleCard({ example: dossier.cockpit.positiveExample })}${BetterQuestionCard({ question: dossier.cockpit.betterQuestion })}</div></div></section>`;
+  return `<section class="section v2-host-cockpit debate-claim-section" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Die Frage / Behauptung</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p></div></div></section>`;
+}
+
+export function CriticalQuestions({ dossier }) {
+  const factsLayer = dossier.v3?.factsLayer;
+  const frameShift = dossier.v3?.frameShiftPlaybook;
+  const questions = [
+    frameShift?.betterQuestion,
+    ...(factsLayer?.accountingBoundaries || []).map((item) => `Welche Bilanzgrenze wird hier gesetzt: ${item.label}?`),
+    ...(factsLayer?.commonMisuse || []).map((item) => item.correction),
+    ...(dossier.trustBlock?.unsicherOderPruefpflichtig || []),
+  ]
+    .filter(Boolean)
+    .map((item) => String(item).trim())
+    .filter(Boolean);
+  const unique = [...new Set(questions)].slice(0, 5);
+  if (!unique.length) return "";
+  return `<section class="section v3-layer debate-critical-questions" id="kritische-fragen" data-debate-critical-questions><div><div class="section-header"><p class="hero-kicker">Kritische Fragen</p><h2>Was berechtigt kritisch gefragt werden darf.</h2></div><div class="card-grid two">${unique.map((item) => `<article class="card"><p class="card-text">${esc(item)}</p></article>`).join("")}</div></div></section>`;
 }
 
 export function renderDossierV2Sections(dossier) {
   if (dossier.v3) {
     return [
-      HostCockpitV2({ dossier }),
       V3PageNav(),
-      ConsequenceCheck({ consequenceCheck: dossier.v3.consequenceCheck }),
-      ImpactMatrix({ impactMatrix: dossier.v3.impactMatrix }),
-      SolutionPath({ solutionPath: dossier.v3.solutionPath }),
+      HostCockpitV2({ dossier }),
       FrameShiftPlaybook({ frameShiftPlaybook: dossier.v3.frameShiftPlaybook }),
+      ConsequenceCheck({ consequenceCheck: dossier.v3.consequenceCheck }),
+      SolutionPath({ solutionPath: dossier.v3.solutionPath }),
+      CriticalQuestions({ dossier }),
       FactsLayer({ factsLayer: dossier.v3.factsLayer }),
-      NarrativeMechanism({ narrativeMechanism: dossier.v3.narrativeMechanism }),
       TrustBlock({ trustBlock: dossier.trustBlock, sources: dossier.sources }),
       PsychologicalEffectCheck({ psychologicalEffectCheck: dossier.v3.psychologicalEffectCheck }),
       LinkHub({ internalLinks: dossier.internalLinks }),
-      MethodologyDeepDive({ dossier }),
     ].join("\n");
   }
   return [
+    V3PageNav(),
     HostCockpitV2({ dossier }),
-    ConsequenceStack({ consequenceStack: dossier.consequenceStack }),
-    ImpactFan({ impactFan: dossier.impactFan }),
-    SolutionCard({ solution: dossier.solution }),
     ResponseFormats({ dossier }),
+    ConsequenceStack({ consequenceStack: dossier.consequenceStack }),
+    SolutionCard({ solution: dossier.solution }),
+    CriticalQuestions({ dossier }),
     UnderstandSection({ explain: dossier.explain }),
     TrustBlock({ trustBlock: dossier.trustBlock, sources: dossier.sources }),
     PsychologyLiteCard({ psychologyLite: dossier.psychologyLite }),

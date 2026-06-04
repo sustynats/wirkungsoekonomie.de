@@ -14740,9 +14740,17 @@ a.principle-card:hover,
   grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.82fr);
 }
 
+.radar-page-hero {
+  padding-block: clamp(0.85rem, 1.7vw, 1.45rem);
+}
+
+.radar-page-hero .hero-title {
+  font-size: clamp(2.55rem, 5.2vw, 4.25rem);
+}
+
 .radar-hero-copy {
   display: grid;
-  gap: 1rem;
+  gap: 0.55rem;
 }
 
 .radar-abstract {
@@ -15657,6 +15665,45 @@ a.principle-card:hover,
   padding-top: clamp(1.25rem, 3vw, 2.4rem);
 }
 
+.debate-claim-section {
+  padding-block: clamp(0.5rem, 1.1vw, 0.8rem);
+}
+
+.debate-claim-section .v2-cockpit-shell {
+  gap: clamp(0.65rem, 1.2vw, 0.9rem);
+  padding: clamp(0.65rem, 1.2vw, 0.85rem);
+}
+
+.debate-claim-section .v2-cockpit-head {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.debate-claim-section .hero-kicker {
+  margin: 0;
+}
+
+.debate-claim-section .v2-cockpit-head h2 {
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+}
+
+.debate-claim-section .v2-claim-line {
+  margin-top: 0.12rem;
+}
+
+.debate-claim-section .card {
+  padding: clamp(0.85rem, 1.4vw, 1rem);
+}
+
+.debate-claim-section .card-title {
+  font-size: clamp(1.28rem, 2.4vw, 1.85rem);
+  line-height: 1.08;
+}
+
+.debate-immediate-answer {
+  padding-top: clamp(0.9rem, 1.7vw, 1.3rem);
+}
+
 .v2-cockpit-shell {
   width: min(100% - (2 * var(--space-gutter)), var(--container));
   margin-inline: auto;
@@ -16277,6 +16324,44 @@ a.principle-card:hover,
 .dossier-tab-nav a:focus-visible {
   border-color: rgba(47, 125, 92, 0.32);
   background: rgba(47, 125, 92, 0.08);
+}
+
+.debate-toc-section {
+  padding-top: clamp(0.6rem, 1.4vw, 1rem);
+  padding-bottom: clamp(0.35rem, 0.9vw, 0.75rem);
+}
+
+.debate-toc-card {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: clamp(0.72rem, 1.3vw, 0.9rem);
+}
+
+.debate-toc-card .card-kicker {
+  margin: 0;
+}
+
+.debate-toc-card .dossier-tab-nav {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  width: 100%;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.debate-toc-card .dossier-tab-nav a {
+  min-height: 2.15rem;
+  padding: 0.35rem 0.62rem;
+  border-color: rgba(47, 125, 92, 0.18);
+  background: rgba(47, 125, 92, 0.045);
+  line-height: 1.15;
+  white-space: nowrap;
 }
 
 .dossier-tab-panel {
