@@ -65,7 +65,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Wirkungsradar</p><h2>Weitergeben ohne Frame-Verstärkung.</h2><p>Studio, Host-Kits, Quellen und Meldeworkflow helfen, Aussagen sicher in Kommentar, Unterricht, Workshop und Redaktion zu nutzen.</p><p><a class="text-link" href="${base}wirkungsradar/studio/">Studio</a> · <a class="text-link" href="${base}wirkungsradar/templates/">Templates</a> · <a class="text-link" href="${base}wirkungsradar/mythos-melden/">Mythos melden</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Wirkungsradar öffnen</a></div></footer>
+    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Weitergeben ohne Frame-Verstärkung.</h2><p>Studio, Antwort-Playbooks, Quellen und Meldeworkflow helfen, Aussagen sicher in Kommentar, Unterricht, Workshop und Redaktion zu nutzen.</p><p><a class="text-link" href="${base}wirkungsradar/studio/">Studio</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${base}wirkungsradar/mythos-melden/">Mythos melden</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=20260604-sprint5b"></script>
   </body>
 </html>`;
@@ -73,19 +73,16 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
 
 function radarNav(base = "") {
   const links = [
-    ["Suchen", `${base}`],
-    ["Live-Karten", `${base}live/`],
+    ["Antwort finden", `${base}`],
+    ["Debattenkarten", `${base}debattenkarten/`],
+    ["Mythen & Narrative", `${base}narrative/`],
+    ["Antwort-Playbooks", `${base}antwort-playbooks/`],
     ["Studio", `${base}studio/`],
-    ["Templates", `${base}templates/`],
-    ["Workshops", `${base}workshops/`],
-    ["Unterricht", `${base}unterricht/`],
-    ["Embed", `${base}embed/`],
     ["Mythos melden", `${base}mythos-melden/`],
-    ["Host-Playbook", `${base}host-playbook/`],
+    ["Wirkungsradar-Methode", `${base}methode/`],
     ["Quellen", `${base}quellen/`],
-    ["Methode", `${base}methode/`],
   ];
-  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Wirkungsradar Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
+  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
 }
 
 function topicFor(dossier) {
@@ -330,8 +327,8 @@ function hostPlaybookPage() {
     ["Jemand nutzt Geldverlust-Frame", "Ukraine-Hilfe frisst unser Geld", "Kontrolle ist richtig. Aber Hilfe ist nicht nur Geld weg. Was schützt sie und welche Folgekosten verhindert sie?"],
   ];
   const areas = ["Schnellstart für Hosts", "5-Schritt-Antwort", "Was du nie tun solltest", "Frame sicher verschieben", "Kommentarspalten moderieren", "Live-Stöckchen erkennen", "Mit Wut umgehen", "Mit ehrlicher Sorge umgehen", "Mit störendem Verhalten umgehen", "Mit rechtsextremen Frames umgehen", "Mit Menschen reden, nicht mit dem Frame", "Gute Fragen statt Gegenangriff", "Quellen nennen, ohne Vortrag zu halten", "Plattformformate"];
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Host-Playbook</nav><p class="hero-kicker">Host-Kit</p><h1 class="hero-title">Host-Playbook</h1><p class="hero-subtitle">Nicht das Stöckchen tragen. Die Rechnung öffnen.</p></div></section>${radarNav("../")}<section class="section"><div><article class="card sprint5-important-rule"><p class="card-kicker">Die wichtigste Regel</p><h2>Du musst nicht jeden Satz widerlegen.</h2><p>Du musst zeigen, welche Rechnung fehlt.</p><p><strong>Standardformel:</strong> Ich sehe den Punkt. Der wahre Kern ist ... Der falsche Sprung ist ... Ein gutes Bild ist ... Die bessere Frage ist ... Die Lösung ist ...</p></article><div class="card-grid two">${areas.map((area) => `<article class="card"><h3>${esc(area)}</h3><p>${esc(playbookText(area))}</p></article>`).join("")}</div></div></section><section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Live-Situationen</p><h2>Antwortmuster für schwierige Momente.</h2></div><div class="card-grid two">${situations.map(([title, example, answer]) => `<article class="card"><p class="card-kicker">${esc(example)}</p><h3>${esc(title)}</h3><p>${esc(answer)}</p></article>`).join("")}</div><p><a class="btn btn-primary" href="moderationskarten/">Moderationskarten öffnen</a></p></div></section>`;
-  return shell({ title: "Host-Playbook", description: "Schnellstart, Standardformel, Live-Situationen und Moderationskarten für sichere Wirkungsradar-Kommunikation.", canonical: `${SITE_URL}/wirkungsradar/host-playbook/`, base: "../../", main });
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Antwort-Playbooks</nav><p class="hero-kicker">Antwort-Playbooks</p><h1 class="hero-title">Antwort-Playbooks</h1><p class="hero-subtitle">Nicht das Stöckchen tragen. Die Rechnung öffnen.</p></div></section>${radarNav("../")}<section class="section"><div><article class="card sprint5-important-rule"><p class="card-kicker">Die wichtigste Regel</p><h2>Du musst nicht jeden Satz widerlegen.</h2><p>Du musst zeigen, welche Rechnung fehlt.</p><p><strong>Standardformel:</strong> Ich sehe den Punkt. Der wahre Kern ist ... Der falsche Sprung ist ... Ein gutes Bild ist ... Die bessere Frage ist ... Die Lösung ist ...</p></article><div class="card-grid two">${areas.map((area) => `<article class="card"><h3>${esc(area)}</h3><p>${esc(playbookText(area))}</p></article>`).join("")}</div></div></section><section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Debattensituationen</p><h2>Antwortmuster für schwierige Momente.</h2></div><div class="card-grid two">${situations.map(([title, example, answer]) => `<article class="card"><p class="card-kicker">${esc(example)}</p><h3>${esc(title)}</h3><p>${esc(answer)}</p></article>`).join("")}</div><p><a class="btn btn-primary" href="moderationskarten/">Moderationskarten öffnen</a></p></div></section>`;
+  return shell({ title: "Antwort-Playbooks", description: "Schnellstart, Standardformel, Debattensituationen und Moderationskarten für sichere Debatten-Kompass-Kommunikation.", canonical: `${SITE_URL}/wirkungsradar/antwort-playbooks/`, base: "../../", main });
 }
 
 function playbookText(area) {
@@ -367,8 +364,8 @@ function moderationCardsPage() {
     ["Nicht alles ist Zensur. Widerspruch gehört dazu.", "Sagbarkeitsframe öffnen", "Wenn Kritik als Verbot erzählt wird.", "Bei realen Rechtsfragen zu pauschal.", "Geht es um Verbot oder um Widerspruch?"],
     ["Forschung ist Korrektursystem.", "Wissenschaft beantworten", "Wenn Wissenschaft pauschal delegitimiert wird.", "Wenn konkrete Studie geprüft wird.", "Welche Aussage prüfen wir mit welchem Datenstand?"],
   ];
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../">Wirkungsradar</a> / <a href="../">Host-Playbook</a> / Moderationskarten</nav><p class="hero-kicker">Host-Kit</p><h1 class="hero-title">Moderationskarten</h1><p class="hero-subtitle">Sätze, die Debatten wieder prüfbar machen.</p></div></section>${radarNav("../../")}<section class="section"><div><div class="card-grid two">${cards.map(([sentence, purpose, when, notWhen, example]) => `<article class="card"><p class="card-kicker">${esc(purpose)}</p><h3>${esc(sentence)}</h3><p><strong>Wann nutzen?</strong> ${esc(when)}</p><p><strong>Nicht nutzen, wenn:</strong> ${esc(notWhen)}</p><p><strong>Beispiel:</strong> ${esc(example)}</p></article>`).join("")}</div></div></section>`;
-  return shell({ title: "Moderationskarten", description: "Host-Moderationskarten für Quellenklarheit, Bilanzgrenzen, Folgencheck und Menschenwürde.", canonical: `${SITE_URL}/wirkungsradar/host-playbook/moderationskarten/`, base: "../../../", main });
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../">Debatten-Kompass</a> / <a href="../">Antwort-Playbooks</a> / Moderationskarten</nav><p class="hero-kicker">Antwort-Playbooks</p><h1 class="hero-title">Moderationskarten</h1><p class="hero-subtitle">Sätze, die Debatten wieder prüfbar machen.</p></div></section>${radarNav("../../")}<section class="section"><div><div class="card-grid two">${cards.map(([sentence, purpose, when, notWhen, example]) => `<article class="card"><p class="card-kicker">${esc(purpose)}</p><h3>${esc(sentence)}</h3><p><strong>Wann nutzen?</strong> ${esc(when)}</p><p><strong>Nicht nutzen, wenn:</strong> ${esc(notWhen)}</p><p><strong>Beispiel:</strong> ${esc(example)}</p></article>`).join("")}</div></div></section>`;
+  return shell({ title: "Moderationskarten", description: "Moderationskarten für Quellenklarheit, Bilanzgrenzen, Folgencheck und Menschenwürde.", canonical: `${SITE_URL}/wirkungsradar/antwort-playbooks/moderationskarten/`, base: "../../../", main });
 }
 
 function workshopsPage() {
@@ -484,8 +481,10 @@ function injectCtas() {
   const targets = [
     OUT("wirkungsradar/index.html"),
     OUT("wirkungsradar/live/index.html"),
+    OUT("wirkungsradar/debattenkarten/index.html"),
     OUT("wirkungsradar/narrative/index.html"),
     OUT("wirkungsradar/host-playbook/index.html"),
+    OUT("wirkungsradar/antwort-playbooks/index.html"),
     ...listHtml(OUT("wirkungsradar/live")),
     ...listHtml(OUT("wirkungsradar/narrative")),
   ];
@@ -515,7 +514,7 @@ function listHtml(dir) {
 }
 
 function writeDocs() {
-  write(OUT("docs/wirkungsradar-distribution-guidelines.md"), `# Multiplizierungsleitlinien Wirkungsradar
+  write(OUT("docs/wirkungsradar-distribution-guidelines.md"), `# Multiplizierungsleitlinien Debatten-Kompass
 
 1. Keine Rage-Hooks.
 2. Keine Menschenabwertung.
@@ -534,7 +533,7 @@ function writeDocs() {
 15. Der Host soll souveraen wirken, nicht triumphierend.
 
 Kernsatz:
-"Ein gutes Wirkungsradar-Format gewinnt nicht durch Empoerung, sondern durch Klarheit."
+"Ein gutes Debatten-Kompass-Format gewinnt nicht durch Empoerung, sondern durch Klarheit."
 `);
 }
 
@@ -551,6 +550,8 @@ for (const dossier of p0DossiersV2) {
 }
 write(OUT("wirkungsradar/host-playbook/index.html"), hostPlaybookPage());
 write(OUT("wirkungsradar/host-playbook/moderationskarten/index.html"), moderationCardsPage());
+write(OUT("wirkungsradar/antwort-playbooks/index.html"), hostPlaybookPage());
+write(OUT("wirkungsradar/antwort-playbooks/moderationskarten/index.html"), moderationCardsPage());
 write(OUT("wirkungsradar/workshops/index.html"), workshopsPage());
 write(OUT("wirkungsradar/workshops/print/klima-energie/index.html"), workshopPrintPage());
 write(OUT("wirkungsradar/unterricht/index.html"), simpleMaterialPage("unterricht"));

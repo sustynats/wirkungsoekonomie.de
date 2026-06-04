@@ -1,9 +1,9 @@
-# Wirkungsradar Review-Checkliste
+# Debatten-Kompass Review-Checkliste
 
-## 1. Host-Cockpit
+## 1. Schnellantwort
 - Ist der Claim klar?
+- Ist die Kurzantwort direkt nutzbar?
 - Ist das Kurzurteil maximal 8 Wörter?
-- Startet "Sag das jetzt" mit dem besseren Zustand?
 - Gibt es "Ein gutes Bild"?
 - Verstärkt das gute Bild keinen Mythos?
 - Gibt es eine echte bessere Frage?
@@ -16,13 +16,13 @@
 - Gibt es eine menschenwürdige Lösung?
 
 ## 3. Sprache
-- Maus-Modus?
+- Klar, ruhig und konkret?
 - Keine Fachwortwand?
 - Keine WÖk-Dauerwerbung?
-- Host-Satz sprechbar?
+- Antwort sprechbar?
 
 ## 4. Fakten
-- Was stimmt?
+- Faktenlage konkret?
 - Was fehlt?
 - Sind Zahlen aktuell?
 - Sind Unsicherheiten sichtbar?
@@ -51,6 +51,6 @@
 ## Entscheidung
 - published
 - reviewed
-- checked_v2_positive_examples
+- checked_v4_debattenkompass
 - needs_update
 - draft_...

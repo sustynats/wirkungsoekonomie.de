@@ -34,7 +34,7 @@ export function ShortJudgementCard({ text }) {
 }
 
 export function SayThisNowCard({ text }) {
-  return `<article class="v2-cockpit-card"><p class="v2-badge">Sag das jetzt</p><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></article>`;
+  return `<article class="v2-cockpit-card v2-card-strong"><p class="v2-badge">Kurzantwort - 10 Sekunden</p><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></article>`;
 }
 
 export function PositiveExampleCard({ example }) {
@@ -46,7 +46,30 @@ export function BetterQuestionCard({ question }) {
 }
 
 export function FrameShiftCard({ frameShift }) {
-  return `<div class="v2-frame-card" id="frame-nicht-uebernehmen"><p class="v2-badge">Frame nicht übernehmen</p><div><strong>Alter Frame:</strong> ${esc(frameShift.oldFrame)}</div><div><strong>Warum problematisch:</strong> ${esc(frameShift.whyProblematic)}</div><div><strong>Nicht so antworten:</strong> ${esc((frameShift.doNotAnswer || []).join(" "))}</div><div><strong>Besser so:</strong> ${esc(frameShift.betterAnswer)}</div><div><strong>Warum besser:</strong> ${esc(frameShift.whyBetter)}</div></div>`;
+  return `<div class="v2-frame-card" id="frame-nicht-uebernehmen"><p class="v2-badge">So verschiebst du den Frame</p><div><strong>Nicht so antworten:</strong> ${esc((frameShift.doNotAnswer || []).join(" "))}</div><div><strong>Besser so antworten:</strong> ${esc(frameShift.betterAnswer)}</div><div><strong>Brückensatz:</strong> ${esc(frameShift.bridgeSentence || frameShift.whyBetter)}</div><div><strong>Die bessere Frage:</strong> ${esc(frameShift.betterQuestion || "")}</div></div>`;
+}
+
+export function BehindNarrativeCard({ dossier }) {
+  const frame = dossier.v3?.frameShiftPlaybook;
+  const narrative = dossier.v3?.narrativeMechanism;
+  const items = [
+    frame?.whyItHooks,
+    ...(narrative?.whatGetsHidden || []),
+    narrative?.hiddenAssumption,
+  ].filter(Boolean).slice(0, 5);
+  if (!items.length) return "";
+  return `<article class="v2-cockpit-card"><p class="v2-badge">Was steckt dahinter?</p><ul class="clean-list">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article>`;
+}
+
+export function TriggeredEffectsCard({ dossier }) {
+  const effectNames = [
+    ...(dossier.v3?.narrativeMechanism?.targetEmotion || []),
+    ...(dossier.v3?.psychologicalEffectCheck || []).map((item) => item.simpleName || item.technicalName),
+    ...(dossier.psychologyLite?.items || []).map((item) => item.simple || item.technical),
+  ].filter(Boolean);
+  const unique = [...new Set(effectNames)].slice(0, 8);
+  if (!unique.length) return "";
+  return `<article class="v2-cockpit-card"><p class="v2-badge">Was soll es auslösen?</p>${chips(unique)}</article>`;
 }
 
 export function ImpactFan({ impactFan }) {
@@ -64,18 +87,18 @@ export function ConsequenceStack({ consequenceStack }) {
 
 export function V3PageNav() {
   const items = [
-    ["Klartext", "#host-cockpit"],
+    ["Schnellantwort", "#host-cockpit"],
     ["Antworten", "#host-antworten"],
-    ["Fakten", "#faktenlage"],
-    ["Folgen", "#folgencheck"],
+    ["Faktenlage", "#faktenlage"],
+    ["Folgencheck", "#folgencheck"],
     ["System", "#systemische-wirkungen"],
     ["Frame", "#narrativ-psychologie"],
     ["Psychologie", "#warum-der-satz-zieht"],
     ["Lösung", "#loesungspfad"],
     ["Quellen", "#warum-belastbar"],
-    ["Deep Dive", "#warum-der-radar-so-prueft"],
+    ["Methode", "#warum-der-radar-so-prueft"],
   ];
-  return `<nav class="dossier-tab-nav v3-radar-nav" aria-label="Wirkungsradar Seitenbereiche" data-search-exclude>${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
+  return `<nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche" data-search-exclude>${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
 }
 
 export function FactsLayer({ factsLayer }) {
@@ -93,7 +116,7 @@ export function FactsLayer({ factsLayer }) {
 export function ConsequenceCheck({ consequenceCheck }) {
   if (!consequenceCheck?.ifNarrativeWins?.length || !consequenceCheck?.ifCorrectlyHandled?.length) return "";
   const rows = (items) => items.map((item) => `<article class="card"><p class="v2-badge">${esc(item.level)}</p><p class="card-text">${esc(item.text)}</p>${item.affectedSystems?.length ? chips(item.affectedSystems) : ""}</article>`).join("");
-  return `<section class="section section-soft v3-layer v3-layer-consequences" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was passiert, wenn Menschen danach handeln?</h2><p>Der Wirkungsradar prüft nicht nur, ob ein Satz stimmt. Er prüft, welche Entscheidungen wahrscheinlicher werden.</p></div><div class="card-grid two"><article class="card v3-check-column"><p class="card-kicker">Wenn das Narrativ gewinnt</p><div class="card-grid">${rows(consequenceCheck.ifNarrativeWins)}</div></article><article class="card v3-check-column"><p class="card-kicker">Wenn wir richtig reagieren</p><div class="card-grid">${rows(consequenceCheck.ifCorrectlyHandled)}</div></article></div><div class="card-grid three"><article class="card"><p class="card-kicker">Kosten des Nicht-Handelns</p><p>${esc(consequenceCheck.nonActionCost)}</p></article>${consequenceCheck.lockInRisk ? `<article class="card"><p class="card-kicker">Lock-in-Risiko</p><p>${esc(consequenceCheck.lockInRisk)}</p></article>` : ""}${consequenceCheck.feedbackLoop ? `<article class="card"><p class="card-kicker">Rückkopplung</p><p>${esc(consequenceCheck.feedbackLoop)}</p></article>` : ""}</div></div></section>`;
+  return `<section class="section section-soft v3-layer v3-layer-consequences" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was passiert, wenn Menschen danach handeln?</h2><p>Der Debatten-Kompass prüft nicht nur, ob ein Satz stimmt. Er prüft, welche Entscheidungen wahrscheinlicher werden.</p></div><div class="card-grid two"><article class="card v3-check-column"><p class="card-kicker">Wenn das Narrativ gewinnt</p><div class="card-grid">${rows(consequenceCheck.ifNarrativeWins)}</div></article><article class="card v3-check-column"><p class="card-kicker">Wenn wir richtig reagieren</p><div class="card-grid">${rows(consequenceCheck.ifCorrectlyHandled)}</div></article></div><div class="card-grid three"><article class="card"><p class="card-kicker">Kosten des Nicht-Handelns</p><p>${esc(consequenceCheck.nonActionCost)}</p></article>${consequenceCheck.lockInRisk ? `<article class="card"><p class="card-kicker">Lock-in-Risiko</p><p>${esc(consequenceCheck.lockInRisk)}</p></article>` : ""}${consequenceCheck.feedbackLoop ? `<article class="card"><p class="card-kicker">Rückkopplung</p><p>${esc(consequenceCheck.feedbackLoop)}</p></article>` : ""}</div></div></section>`;
 }
 
 export function ImpactMatrix({ impactMatrix }) {
@@ -120,7 +143,7 @@ export function FrameShiftPlaybook({ frameShiftPlaybook }) {
     ["2 Minuten", "Langantwort", formats.long2min || formats.panel2min],
     ["Ruhig kontern", "Gespräch", formats.calmConversation],
   ].filter(([, , text]) => text);
-  return `<section class="section v3-layer v3-layer-answer" id="host-antworten" data-v3-frame-shift><span id="reaktion" class="sr-only">Antworten</span><div><div class="section-header"><p class="hero-kicker">Host-Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Erst den wahren Kern anerkennen, dann die fehlende Bilanzgrenze öffnen und zur besseren Wirkungsfrage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${answerItems.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div><div class="card-grid two v3-frame-control-grid"><article class="card"><p class="card-kicker">Alter Frame</p><h3 class="card-title">${esc(frameShiftPlaybook.oldFrame)}</h3><p class="card-text"><strong>Warum er andockt:</strong> ${esc(frameShiftPlaybook.whyItHooks)}</p><p class="card-text"><strong>Gefahr beim Wiederholen:</strong> ${esc(frameShiftPlaybook.dangerIfRepeated)}</p><p class="card-text"><strong>Brückensatz:</strong> ${esc(frameShiftPlaybook.bridgeSentence)}</p><p class="card-text"><strong>Bessere Frage:</strong> ${esc(frameShiftPlaybook.betterQuestion)}</p></article><article class="card"><p class="card-kicker">Nicht so / besser so</p><h3 class="card-title">Frame kontrollieren.</h3><p class="card-text"><strong>Nicht sagen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.doNotSay || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul><p class="card-text"><strong>Stattdessen:</strong></p><ul class="clean-list">${(frameShiftPlaybook.sayInstead || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></div></section>`;
+  return `<section class="section v3-layer v3-layer-answer" id="host-antworten" data-v3-frame-shift><span id="reaktion" class="sr-only">Antworten</span><div><div class="section-header"><p class="hero-kicker">Direkt nutzbare Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Erst den wahren Kern anerkennen, dann die fehlende Bilanzgrenze öffnen und zur besseren Frage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${answerItems.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SolutionPath({ solutionPath }) {
@@ -129,7 +152,7 @@ export function SolutionPath({ solutionPath }) {
 }
 
 export function MethodologyDeepDive({ dossier }) {
-  return `<section class="section section-soft v3-layer v3-layer-method" id="warum-der-radar-so-prueft"><div><div class="section-header"><p class="hero-kicker">Warum der Wirkungsradar so prüft</p><h2>Faktencheck ist Grundlage. Folgencheck ist Zweck.</h2></div><div class="radar-answer-accordion host-answer-tabs"><details class="radar-answer-item"><summary><span class="radar-answer-time">Wirkung</span><span class="radar-answer-label">Zustandsveränderung</span></summary><p>Wirkung ist nicht Absicht, Reichweite oder Image. Wirkung ist die tatsächliche Veränderung von Zuständen und wird erst am Referenzrahmen bewertet.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Fakten</span><span class="radar-answer-label">Warum Faktencheck allein nicht reicht</span></summary><p>Eine Aussage kann einen wahren Teil enthalten und trotzdem schlechte Entscheidungen wahrscheinlicher machen. Deshalb trennt der Radar Faktenlage, Bilanzgrenze, Frame und Folgen.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Folgen</span><span class="radar-answer-label">Erste, zweite und dritte Ordnung</span></summary><p>Geprüft wird, was sofort passiert, was danach plausibler wird und welche Systempfade sich auf Dauer verfestigen.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Quellen</span><span class="radar-answer-label">Grenzen statt Autoritätsersatz</span></summary><p>Quellen zeigen, was belegt ist. Sie zeigen auch, was offen bleibt. Genau deshalb nennt die Faktenlage, was ein Fakt beweist und was nicht.</p></details></div><p><a class="btn btn-secondary" href="../../detail/${esc(dossier.slug)}/">Fachlich vertiefen</a></p></div></section>`;
+  return `<section class="section section-soft v3-layer v3-layer-method" id="warum-der-radar-so-prueft"><div><div class="section-header"><p class="hero-kicker">Wirkungsradar-Methode</p><h2>Warum der Debatten-Kompass mehr macht als einen Faktencheck.</h2></div><div class="radar-answer-accordion host-answer-tabs"><details class="radar-answer-item"><summary><span class="radar-answer-time">Faktenlage</span><span class="radar-answer-label">Was ist belegt?</span></summary><p>Eine Aussage kann einen wahren Teil enthalten und trotzdem schlechte Entscheidungen wahrscheinlicher machen. Deshalb trennt die Wirkungsradar-Methode Faktenlage, Bilanzgrenze, Frame und Folgen.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Folgencheck</span><span class="radar-answer-label">Was löst der Satz aus?</span></summary><p>Geprüft wird, was sofort passiert, was danach plausibler wird und welche Systempfade sich auf Dauer verfestigen.</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Unsicherheit</span><span class="radar-answer-label">Grenzen statt Autoritätsersatz</span></summary><p>Quellen zeigen, was belegt ist. Sie zeigen auch, was offen bleibt. Genau deshalb nennt die Faktenlage, was ein Fakt beweist und was nicht.</p></details></div><p><a class="btn btn-secondary" href="../../detail/${esc(dossier.slug)}/">Fachlich vertiefen</a></p></div></section>`;
 }
 
 export function UnderstandSection({ explain }) {
@@ -153,7 +176,7 @@ export function ResponseFormats({ dossier }) {
     ["2 Minuten", "Langantwort", panel, "Antwort kopieren"],
     ["Ruhig kontern", "Gespräch", calmCounter, "Antwort kopieren"],
   ];
-  return `<section class="section v2-answer-tabs" id="host-antworten"><span id="antwortformate-v2" class="sr-only">Antwortformate</span><div><div class="section-header"><p class="hero-kicker">Host-Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Den wahren Kern anerkennen, die Bilanzgrenze öffnen und zur besseren Wirkungsfrage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${items.map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
+  return `<section class="section v2-answer-tabs" id="host-antworten"><span id="antwortformate-v2" class="sr-only">Antwortformate</span><div><div class="section-header"><p class="hero-kicker">Direkt nutzbare Antworten</p><h2>Kurz, mittellang und vertieft antworten.</h2><p>Den wahren Kern anerkennen, die Bilanzgrenze öffnen und zur besseren Frage führen.</p></div><div class="radar-answer-accordion host-answer-tabs">${items.map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SourceDrawer({ sources }) {
@@ -169,14 +192,19 @@ export function LinkHub({ internalLinks = {} }) {
   const groups = [
     ["Glossar", internalLinks.glossary || []],
     ["Narrative", internalLinks.narratives || []],
-    ["Ähnliche Live-Karten", internalLinks.relatedDossiers || []],
+    ["Ähnliche Debattenkarten", internalLinks.relatedDossiers || []],
     ["Lösungsbausteine", internalLinks.woek || []],
   ];
   return `<section class="section v2-linkhub" id="linkhub"><div><div class="section-header"><p class="hero-kicker">Weiter prüfen</p><h2>Links in die Tiefe.</h2></div><div class="card-grid four">${groups.map(([label, links]) => `<article class="card"><p class="card-kicker">${esc(label)}</p>${links.length ? links.map((href) => `<p><a class="text-link" href="${esc(href)}">${esc(linkLabel(href))}</a></p>`).join("") : `<p class="card-text">Noch nicht verknüpft.</p>`}</article>`).join("")}</div></div></section>`;
 }
 
 export function HostCockpitV2({ dossier }) {
-  return `<section class="section v2-host-cockpit" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Host-Cockpit</p><h2>Was wurde gesagt?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p></div><div class="v2-cockpit-grid">${ShortJudgementCard({ text: dossier.cockpit.shortJudgement })}${SayThisNowCard({ text: dossier.cockpit.sayThisNow })}${PositiveExampleCard({ example: dossier.cockpit.positiveExample })}${BetterQuestionCard({ question: dossier.cockpit.betterQuestion })}</div>${FrameShiftCard({ frameShift: dossier.cockpit.frameShift })}</div></section>`;
+  const frameShift = {
+    ...dossier.cockpit.frameShift,
+    bridgeSentence: dossier.v3?.frameShiftPlaybook?.bridgeSentence,
+    betterQuestion: dossier.v3?.frameShiftPlaybook?.betterQuestion || dossier.cockpit.betterQuestion,
+  };
+  return `<section class="section v2-host-cockpit" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Schnellantwort</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p>${dossier.claimVariants?.length ? `<p class="card-text"><strong>Varianten:</strong> ${esc(dossier.claimVariants.slice(0, 3).join(" · "))}</p>` : ""}</div><div class="v2-cockpit-grid">${SayThisNowCard({ text: dossier.cockpit.sayThisNow })}${ShortJudgementCard({ text: dossier.cockpit.shortJudgement })}${BehindNarrativeCard({ dossier })}${TriggeredEffectsCard({ dossier })}</div>${FrameShiftCard({ frameShift })}<div class="v2-cockpit-grid">${PositiveExampleCard({ example: dossier.cockpit.positiveExample })}${BetterQuestionCard({ question: dossier.cockpit.betterQuestion })}</div></div></section>`;
 }
 
 export function renderDossierV2Sections(dossier) {

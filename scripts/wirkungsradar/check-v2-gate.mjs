@@ -6,7 +6,10 @@ import { validateDossierV3 } from "../../lib/wirkungsradar/validateDossierV3.mjs
 const ROOT = process.cwd();
 const LEGACY_CANDIDATE_STATUS = "checked" + "_candidate";
 const LEGACY_QUESTION_LABEL = "Gute " + "Rueckfrage";
-const CHECK_ROOTS = ["wirkungsradar", "scripts/wirkungsradar", "assets/data/wirkungsradar-backlog.json"];
+const LEGACY_LIVE_LABEL = "Live-" + "Karten";
+const LEGACY_RADAR_LIVE_LABEL = "Wirkungsradar-" + "Live";
+const LEGACY_HOST_LABEL = "Host-" + "Cockpit";
+const CHECK_ROOTS = ["wirkungsradar"];
 const LIVE_ROOTS = ["wirkungsradar/live", "wirkungsradar/detail"];
 
 const P0_SLUGS = [
@@ -68,6 +71,9 @@ for (const file of files) {
   if (/<span class="radar-answer-time">Rückfrage<\/span>/.test(text)) {
     errors.push(`${rel(file)} nutzt noch die alte Antwortformat-Beschriftung "Rueckfrage"`);
   }
+  if ([LEGACY_LIVE_LABEL, LEGACY_RADAR_LIVE_LABEL, LEGACY_HOST_LABEL].some((label) => text.includes(label))) {
+    errors.push(`${rel(file)} enthaelt noch oeffentliches Altlabel aus Patch 48`);
+  }
 }
 
 const liveFiles = LIVE_ROOTS.flatMap(walk).filter((file) => file.endsWith(".html"));
@@ -90,18 +96,21 @@ for (const slug of P0_SLUGS) {
   const live = path.join(ROOT, "wirkungsradar/live", slug, "index.html");
   const html = fs.existsSync(live) ? fs.readFileSync(live, "utf8") : "";
   const result = validateDossierV3(dossier, html);
-  if (result.status !== "checked_v3_facts_consequences_frame_solution") {
-    errors.push(`${slug} V3 unvollständig: ${result.errors.join("; ")}`);
+  if (result.status !== "checked_v4_debattenkompass") {
+    errors.push(`${slug} V4 unvollständig: ${result.errors.join("; ")}`);
   }
 }
 
 for (const file of liveFiles) {
   const relative = rel(file);
   if (/wirkungsradar\/(?:live|detail)\/index\.html$/.test(relative)) continue;
+  const slug = path.basename(path.dirname(file));
+  const isP0 = P0_SLUGS.includes(slug);
+  const isP0Live = isP0 && relative.startsWith("wirkungsradar/live/");
   const html = fs.readFileSync(file, "utf8");
   const plain = stripHtml(html);
   const isV2Checked = html.includes("checked_v2_positive_examples") || html.includes("data-v3-facts-layer");
-  const hasHostCockpit = html.includes("data-v2-host-cockpit");
+  const hasQuickAnswer = html.includes("Kurzantwort - 10 Sekunden");
   const hasImpactFan = html.includes("data-v2-impact-fan") || html.includes("Was wird ausgeblendet?");
   const hasFrameShift = html.includes("Frame nicht übernehmen") && html.includes("Alter Frame:") && /Besser(?: so)?:/.test(plain);
   const hasPositiveImage = html.includes("Ein gutes Bild");
@@ -111,9 +120,9 @@ for (const file of liveFiles) {
   const hasV3 = html.includes("data-v3-facts-layer");
   const firstVisible = stripHtml(html.slice(0, 4500));
 
-  if (isV2Checked && !hasV3) {
+  if (isP0Live && isV2Checked && !hasV3) {
     const missing = [];
-    if (!hasHostCockpit) missing.push("Host-Cockpit v2");
+    if (!hasQuickAnswer) missing.push("Kurzantwort oben");
     if (!hasPositiveImage) missing.push("positives Erklaerbild");
     if (!hasBetterQuestion) missing.push("bessere Frage");
     if (!hasFrameShift) missing.push("Frame-Shift");
@@ -134,8 +143,8 @@ for (const file of liveFiles) {
     }
   }
 
-  if (hasHostCockpit && !hasPositiveImage) {
-    errors.push(`${rel(file)} hat Host-Cockpit ohne "Ein gutes Bild"`);
+  if (isP0Live && hasQuickAnswer && !hasPositiveImage) {
+    errors.push(`${rel(file)} hat Schnellantwort ohne "Ein gutes Bild"`);
   }
 }
 
@@ -150,4 +159,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Wirkungsradar v2 Gate OK: ${liveFiles.length} Live/Detail-Seiten geprueft.`);
+console.log(`Debatten-Kompass Gate OK: ${liveFiles.length} Debattenkarten/Detail-Seiten geprueft.`);

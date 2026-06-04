@@ -1,12 +1,12 @@
-# Redaktionelle Leitlinien Wirkungsradar
+# Redaktionelle Leitlinien Debatten-Kompass
 
 ## Grundsatz
-Der Wirkungsradar zeigt zuerst den gelingenden Pfad. Probleme werden nicht verschwiegen, aber nicht im ersten Bild verstärkt.
+Der Debatten-Kompass zeigt zuerst eine brauchbare Antwort und ein gutes Bild. Probleme werden nicht verschwiegen, aber nicht im ersten Bild verstärkt.
 
 ## Sprache
-Maus-Modus: klar, ruhig, konkret, professionell.
+Klar, ruhig, konkret, professionell.
 
-## Host-Cockpit
+## Schnellantwort
 - positives Beispiel
 - keine Abstracts
 - keine Problemstapel
@@ -35,4 +35,4 @@ Maus-Modus: klar, ruhig, konkret, professionell.
 - Gegenposition sichtbar
 
 ## Status
-- keine Seite ohne v2-Gate prominent
+- keine Seite ohne Gate prominent

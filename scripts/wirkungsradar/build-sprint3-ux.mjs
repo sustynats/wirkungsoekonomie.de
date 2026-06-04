@@ -93,10 +93,10 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>${esc(title)} | Wirkungsökonomie</title>
+    <title>${esc(title)} | Wirkungsoekonomie.de</title>
     <meta name="description" content="${esc(description)}">
-    <meta name="search_section" content="Wirkungsradar">
-    <meta name="search_type" content="Debatten-Cockpit">
+    <meta name="search_section" content="Debatten-Kompass">
+    <meta name="search_type" content="Debattenkarte">
     ${extraHead}
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
@@ -109,7 +109,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Wirkungsradar</p><h2>Werkzeug statt Textarchiv.</h2><p>Quellen, Glossar, Status und Feedback machen die Einordnung nachvollziehbar.</p><p><a class="text-link" href="${base}wirkungsradar/methode/">Methodik</a> · <a class="text-link" href="${base}wirkungsradar/host-playbook/">Host-Playbook</a> · <a class="text-link" href="mailto:impact@wirkungsoekonomie.org?subject=Wirkungsradar%20Feedback">Feedback</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Wirkungsradar öffnen</a></div></footer>
+    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Werkzeug statt Textarchiv.</h2><p>Quellen, Glossar, Status und Feedback machen die Einordnung nachvollziehbar. Die Wirkungsradar-Methode liefert den Prüfprozess im Hintergrund.</p><p><a class="text-link" href="${base}wirkungsradar/methode/">Wirkungsradar-Methode</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="mailto:impact@wirkungsoekonomie.org?subject=Debatten-Kompass%20Feedback">Feedback</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=20260604-sprint5b"></script>
   </body>
 </html>`;
@@ -117,25 +117,16 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
 
 function radarNav(base = "") {
   const links = [
-    ["Suchen", `${base}`],
-    ["Live-Karten", `${base}live/`],
+    ["Antwort finden", `${base}`],
+    ["Debattenkarten", `${base}debattenkarten/`],
+    ["Mythen & Narrative", `${base}narrative/`],
+    ["Antwort-Playbooks", `${base}antwort-playbooks/`],
     ["Studio", `${base}studio/`],
-    ["Templates", `${base}templates/`],
-    ["Workshops", `${base}workshops/`],
-    ["Unterricht", `${base}unterricht/`],
-    ["Embed", `${base}embed/`],
     ["Mythos melden", `${base}mythos-melden/`],
-    ["Narrative", `${base}narrative/`],
-    ["Psychologie", `${base}psychologie/`],
-    ["Themen", `${base}themen/`],
-    ["Host-Playbook", `${base}host-playbook/`],
+    ["Wirkungsradar-Methode", `${base}methode/`],
     ["Quellen", `${base}quellen/`],
-    ["Status", `${base}status/`],
-    ["Redaktion", `${base}redaktion/`],
-    ["Glossar", `${base}glossar/`],
-    ["Methode", `${base}methode/`],
   ];
-  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Wirkungsradar Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
+  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
 }
 
 function topicFor(dossier) {
@@ -183,14 +174,14 @@ function card(dossier, { base = "live/", compact = false } = {}) {
     <p class="card-text"><strong>Sag das jetzt:</strong> ${esc(dossier.cockpit.sayThisNow)}</p>
     <p class="card-text"><strong>Ein gutes Bild:</strong> ${esc(positiveLine)}</p>
     ${compact ? "" : `<p class="card-text"><strong>Die bessere Frage:</strong> ${esc(dossier.cockpit.betterQuestion)}</p>`}
-    <div class="radar-card-actions"><a class="btn btn-primary" href="${esc(href)}">Live-Karte öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(dossier.cockpit.sayThisNow)}' aria-label="Antwort zu ${attr(dossier.title)} kopieren">Antwort kopieren</button></div>
+    <div class="radar-card-actions"><a class="btn btn-primary" href="${esc(href)}">Antwort öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(dossier.cockpit.sayThisNow)}' aria-label="Kurzantwort zu ${attr(dossier.title)} kopieren">Kurzantwort kopieren</button></div>
   </article>`;
 }
 
 function searchPanel({ id = "radar-suche", placeholder }) {
   return `<section class="section radar-sprint-search" id="${esc(id)}" data-radar-search>
     <div>
-      <label class="radar-search-field"><span>Was wurde gesagt?</span><input type="search" placeholder="${esc(placeholder)}" autocomplete="off" data-radar-search-input></label>
+      <label class="radar-search-field"><span>Welche Aussage willst du beantworten?</span><input type="search" placeholder="${esc(placeholder)}" autocomplete="off" data-radar-search-input></label>
       <div class="v2-home-chip-row" aria-label="Schnellchips">${[
         ["Deutschland nur 2 %", "live/deutschland-nur-zwei-prozent/"],
         ["Migration kostet nur", "live/migration-kostet-nur/"],
@@ -218,22 +209,22 @@ function homePage() {
     <section class="hero radar-page-hero radar-sprint-hero">
       <div class="hero-grid">
         <div class="radar-hero-copy">
-          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Wirkungsradar</nav>
-          <p class="hero-kicker">Debatten-Cockpit</p>
-          <h1 class="hero-title">Wirkungsradar</h1>
-          <p class="hero-subtitle">Mythen, Narrative und öffentliche Aussagen verständlich prüfen — mit Fakten, Folgen, Frames und besseren Antworten.</p>
-          <p class="radar-sprint-lead">Der Wirkungsradar zeigt nicht nur, ob eine Aussage stimmt. Er zeigt auch, welche Geschichte sie erzählt, welche Gefühle sie aktiviert, was sie ausblendet, welche Folgen falsches Handeln hätte und welche Lösung den Zustand verbessert.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#radar-suche">Aussage suchen</a><a class="btn btn-secondary" href="live/">Live-Karten öffnen</a><a class="btn btn-secondary" href="narrative/">Narrative verstehen</a><a class="btn btn-secondary" href="themen/">Themen entdecken</a></div>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Debatten-Kompass</nav>
+          <p class="hero-kicker">Debatten-Kompass</p>
+          <h1 class="hero-title">Debatten-Kompass</h1>
+          <p class="hero-subtitle">Mythen erkennen. Fakten klären. Folgen verstehen. Besser antworten.</p>
+          <p class="radar-sprint-lead">Der Debatten-Kompass hilft dir, öffentliche Aussagen schnell einzuordnen: Was stimmt? Was fehlt? Welcher Frame wird gesetzt? Welche Folgen hätte falsches Handeln? Und wie antwortest du, ohne das Narrativ zu verstärken?</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#radar-suche">Antwort finden</a><a class="btn btn-secondary" href="debattenkarten/">Debattenkarten öffnen</a><a class="btn btn-secondary" href="narrative/">Mythen & Narrative</a><a class="btn btn-secondary" href="methode/">Wirkungsradar-Methode</a></div>
         </div>
-        <figure class="radar-hero-visual"><img src="../assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp" alt="Wirkungsradar: Fakten, Frames und Folgen" width="1659" height="948" decoding="async"></figure>
+        <figure class="radar-hero-visual"><img src="../assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp" alt="Debatten-Kompass: Fakten, Frames und Folgen" width="1659" height="948" decoding="async"></figure>
       </div>
     </section>
-    ${searchPanel({ placeholder: "Zum Beispiel: Deutschland nur 2 %, Migration kostet nur, E-Autos sind schlimmer, Bürgergeld macht faul..." })}
+    ${searchPanel({ placeholder: "E-Autos sind schlimmer, Deutschland nur 2 %, Migration kostet nur..." })}
     ${radarNav("./")}
-    <section class="section" id="leuchtturm-karten"><div><div class="section-header"><p class="hero-kicker">Sofort nutzbar</p><h2>12 geprüfte Leuchtturm-Karten.</h2><p>Kompakt für Host-Modus, Kommentarspalten, Unterricht und Redaktion. Keine Abstracts, keine Textwand.</p></div><div class="card-grid three">${cards.map((dossier) => card(dossier, { base: "live/", compact: true })).join("")}</div></div></section>
-    <section class="section section-soft" id="methodik-kurz"><div><div class="section-header"><p class="hero-kicker">Methode nach dem Werkzeug</p><h2>Warum der Wirkungsradar anders prüft.</h2><p>Ein Faktencheck fragt: Stimmt das? Der Wirkungsradar fragt zusätzlich, was die Aussage mit Menschen, Entscheidungen und Systemen macht.</p></div><div class="card-grid six">${["Fakt", "Frame", "Psychologie", "Folgen", "Systemwirkung", "Lösung"].map((title) => `<article class="card"><p class="card-kicker">${esc(title)}</p><p class="card-text">${esc(methodLine(title))}</p></article>`).join("")}</div><p><a class="btn btn-primary" href="methode/">Methodik vertiefen</a></p></div></section>
+    <section class="section" id="schnell-antworten"><div><div class="section-header"><p class="hero-kicker">Schnell antworten</p><h2>Geprüfte Debattenkarten.</h2><p>Kompakt für Kommentare, Livestreams, Panels, Unterricht und Redaktion. Keine Abstracts, keine Textwand.</p></div><div class="card-grid three">${cards.map((dossier) => card(dossier, { base: "live/", compact: true })).join("")}</div></div></section>
+    <section class="section section-soft" id="mythen-narrative"><div><div class="section-header"><p class="hero-kicker">Mythen & Narrative verstehen</p><h2>Warum mehr als Faktencheck?</h2><p>Ein Faktencheck fragt, ob eine Aussage stimmt. Der Debatten-Kompass fragt zusätzlich, was die Aussage bewirkt: welche Gefühle sie aktiviert, was sie ausblendet, welche Folgen sie hat und welche Lösung den Zustand verbessert.</p></div><div class="card-grid six">${["Fakt", "Frame", "Psychologie", "Folgen", "Systemwirkung", "Lösung"].map((title) => `<article class="card"><p class="card-kicker">${esc(title)}</p><p class="card-text">${esc(methodLine(title))}</p></article>`).join("")}</div><p><a class="btn btn-primary" href="methode/">Wirkungsradar-Methode verstehen</a></p></div></section>
   `;
-  return shell({ title: "Wirkungsradar - Aussagen suchen, Frames erkennen, besser antworten", description: "Such- und Orientierungscockpit für öffentliche Aussagen: Fakten, Folgen, Frames, Psychologie, Quellen und bessere Antworten.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/", base: "../", main, extraHead });
+  return shell({ title: "Debatten-Kompass - Mythen erkennen, Fakten klären, besser antworten", description: "Schnelle Antwort, Faktenlage, Folgencheck, Frame-Shift und Quellen zu öffentlichen Aussagen, Mythen und Narrativen.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/", base: "../", main, extraHead });
 }
 
 function methodLine(title) {
@@ -247,16 +238,16 @@ function methodLine(title) {
   }[title];
 }
 
-function livePage() {
+function debateCardsPage({ canonical = "https://wirkungsoekonomie.de/wirkungsradar/debattenkarten/", legacyRoute = false } = {}) {
   const filters = ["Klima", "Energie", "Mobilität", "Migration", "Sozialstaat", "Arbeit", "Staat & Schulden", "Steuern", "Demokratie", "Medien", "Wirtschaft", "Wohnen", "Ausland & Sicherheit"];
   const main = `
-    <section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Live-Karten</nav><p class="hero-kicker">Host-Modus</p><h1 class="hero-title">Live-Karten</h1><p class="hero-subtitle">Schnelle Antworten für Debatten, Kommentarspalten, Panels und Social Media.</p></div></section>
+    <section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Debattenkarten</nav><p class="hero-kicker">Debattenkarten</p><h1 class="hero-title">Debattenkarten</h1><p class="hero-subtitle">Schnelle Antworten auf Mythen, Narrative und Stöckchen.</p>${legacyRoute ? `<p class="radar-sprint-lead">Diese Debattenkarten gehören zum Debatten-Kompass. Die Wirkungsradar-Methode liefert Faktenlage, Folgencheck und Quellen im Hintergrund.</p>` : ""}</div></section>
     ${radarNav("../")}
     <section class="section radar-live-controls" data-radar-live-filter><div><label class="radar-search-field"><span>Welche Aussage willst du beantworten?</span><input type="search" placeholder="Deutschland nur 2 %, Windrad SF6, Bürgergeld macht faul..." data-live-query></label><div class="filter-chip-row" aria-label="Themenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle</button>${filters.map((filter) => `<button type="button" data-live-filter="${attr(filter)}">${esc(filter)}</button>`).join("")}</div><div class="filter-chip-row" aria-label="Statusfilter"><button type="button" data-live-status="checked_v2_positive_examples" aria-pressed="true">geprüft v2</button><button type="button" data-live-status="sources">mit Quellen</button><button type="button" data-live-status="drafts">in Überarbeitung</button></div><p class="radar-search-status" data-live-count>${p0DossiersV2.length} geprüfte Karten</p></div></section>
-    <section class="section" id="p0-geprueft"><div><div class="section-header"><p class="hero-kicker">Sortierung: P0 geprüft</p><h2>In Sekunden zur passenden Antwort.</h2></div><div class="card-grid three" data-live-grid>${p0DossiersV2.map((dossier) => card(dossier, { base: "", compact: false })).join("")}</div></div></section>
+    <section class="section" id="p0-geprueft"><div><div class="section-header"><p class="hero-kicker">Debattenkarten</p><h2>In Sekunden zur passenden Antwort.</h2></div><div class="card-grid three" data-live-grid>${p0DossiersV2.map((dossier) => card(dossier, { base: "../live/", compact: false })).join("")}</div></div></section>
     <section class="section section-soft" id="ueberarbeitung"><div><div class="section-header"><p class="hero-kicker">In Überarbeitung</p><h2>Nicht prominent empfehlen.</h2><p>Diese Karte wird überarbeitet, damit sie keine problematischen Frames verstärkt.</p></div><div class="card-grid three"><article class="card radar-draft-card"><p class="card-kicker">Warnbadge</p><h3 class="card-title">draft_dehumanization_risk</h3><p class="card-text">Nur hier anzeigen, nicht auf Startseite oder als Empfehlung.</p></article><article class="card radar-draft-card"><p class="card-kicker">Warnbadge</p><h3 class="card-title">draft_example_amplifies_frame</h3><p class="card-text">Erst positives Bild und bessere Frage reparieren.</p></article></div></div></section>
   `;
-  return shell({ title: "Live-Karten - schnelle Antworten für Hosts", description: "Geprüfte Wirkungsradar-Live-Karten mit Suche, Filtern, Copy-Buttons, guten Bildern und besseren Fragen.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/live/", base: "../../", main });
+  return shell({ title: "Debattenkarten - schnelle Antworten auf Mythen und Narrative", description: "Schnelle Antworten auf Mythen, Narrative und Stöckchen mit Kurzantwort, Kurzurteil, Faktenlage, Folgencheck und Quellen.", canonical, base: "../../", main });
 }
 
 const narrativeGroups = [
@@ -276,12 +267,12 @@ function narrativeIndex() {
 }
 
 function narrativeCard([slug, title, text, examples, effects, liveSlugs]) {
-  return `<a class="card text-link-card radar-narrative-card" href="${slug}/"><p class="card-kicker">${esc(effects.join(" · "))}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p><p class="card-text"><strong>Der Trick:</strong> Ein Gefühl wird schneller gemacht als die Prüfung.</p><p class="card-text"><strong>So kommst du raus:</strong> Wahren Punkt anerkennen, gutes Bild setzen, bessere Frage stellen.</p><div class="radar-card-badges">${examples.slice(0, 4).map((item) => `<span>${esc(item)}</span>`).join("")}</div>${liveSlugs.length ? `<p class="card-text"><strong>Live-Karten:</strong> ${liveSlugs.map((slug) => p0DossiersV2.find((dossier) => dossier.slug === slug)?.title).filter(Boolean).join(", ")}</p>` : ""}</a>`;
+  return `<a class="card text-link-card radar-narrative-card" href="${slug}/"><p class="card-kicker">${esc(effects.join(" · "))}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p><p class="card-text"><strong>Der Trick:</strong> Ein Gefühl wird schneller gemacht als die Prüfung.</p><p class="card-text"><strong>So kommst du raus:</strong> Wahren Punkt anerkennen, gutes Bild setzen, bessere Frage stellen.</p><div class="radar-card-badges">${examples.slice(0, 4).map((item) => `<span>${esc(item)}</span>`).join("")}</div>${liveSlugs.length ? `<p class="card-text"><strong>Debattenkarten:</strong> ${liveSlugs.map((slug) => p0DossiersV2.find((dossier) => dossier.slug === slug)?.title).filter(Boolean).join(", ")}</p>` : ""}</a>`;
 }
 
 function narrativeDetail([slug, title, text, examples, effects, liveSlugs]) {
   const liveCards = liveSlugs.map((slug) => p0DossiersV2.find((dossier) => dossier.slug === slug)).filter(Boolean);
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../">Narrative</a> / ${esc(title)}</nav><p class="hero-kicker">Was diese Geschichte mit Menschen macht</p><h1 class="hero-title">${esc(title)}</h1><p class="hero-subtitle">${esc(text)}</p><p class="radar-sprint-lead"><strong>Ein gutes Bild:</strong> Eine Debatte gewinnt Orientierung, wenn sie nicht beim Vorwurf stehen bleibt, sondern zeigt, welcher bessere Zustand erreichbar ist.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid two"><article class="card"><p class="card-kicker">So erkennt man es</p><ul class="clean-list">${examples.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><p class="card-kicker">Was es auslösen soll</p><ul class="clean-list">${effects.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><p class="card-kicker">Frame nicht übernehmen</p><p class="card-text"><strong>Nicht so:</strong> Den Vorwurf lange wiederholen.</p><p class="card-text"><strong>Besser so:</strong> Den wahren Punkt benennen und die Wirkung prüfen.</p><p class="card-text"><strong>Bessere Frage:</strong> Was wird besser, wenn wir dieser Geschichte folgen?</p></article><article class="card"><p class="card-kicker">Psychologische Effekte</p><ul class="clean-list">${effects.slice(0, 3).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></div></section><section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Typische Live-Karten</p><h2>Passende Beispiele.</h2></div><div class="card-grid three">${liveCards.length ? liveCards.map((dossier) => card(dossier, { base: "../../live/", compact: true })).join("") : `<article class="card"><p class="card-text">Weitere Live-Karten werden redaktionell verknüpft.</p></article>`}</div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Debatten-Kompass</a> / <a href="../">Narrative</a> / ${esc(title)}</nav><p class="hero-kicker">Mythen & Narrative</p><h1 class="hero-title">${esc(title)}</h1><p class="hero-subtitle">${esc(text)}</p><p class="radar-sprint-lead"><strong>Ein gutes Bild:</strong> Eine Debatte gewinnt Orientierung, wenn sie nicht beim Vorwurf stehen bleibt, sondern zeigt, welcher bessere Zustand erreichbar ist.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid two"><article class="card"><p class="card-kicker">Was ist das Narrativ?</p><p class="card-text">${esc(text)}</p></article><article class="card"><p class="card-kicker">Was soll es auslösen?</p>${effects.length ? `<div class="radar-card-badges">${effects.map((item) => `<span>${esc(item)}</span>`).join("")}</div>` : ""}</article><article class="card"><p class="card-kicker">Woran erkennst du es?</p><ul class="clean-list">${examples.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article><article class="card"><p class="card-kicker">So reagierst du</p><p class="card-text"><strong>Nicht so:</strong> Den Vorwurf lange wiederholen.</p><p class="card-text"><strong>Besser so:</strong> Den wahren Punkt benennen und die Wirkung prüfen.</p><p class="card-text"><strong>Die bessere Frage:</strong> Was wird besser, wenn wir dieser Geschichte folgen?</p></article></div></div></section><section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Passende Debattenkarten</p><h2>Beispiele zum Anwenden.</h2></div><div class="card-grid three">${liveCards.length ? liveCards.map((dossier) => card(dossier, { base: "../../live/", compact: true })).join("") : `<article class="card"><p class="card-text">Weitere Debattenkarten werden redaktionell verknüpft.</p></article>`}</div></div></section>`;
   return shell({ title, description: text, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
 }
 
@@ -297,11 +288,11 @@ const psychologyItems = [
 ];
 
 function psychologyPage() {
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Psychologie</nav><p class="hero-kicker">Lern-Modus</p><h1 class="hero-title">Warum Sätze hängen bleiben</h1><p class="hero-subtitle">Psychologische Effekte im Wirkungsradar — einfach erklärt.</p><p class="radar-sprint-lead">Viele Aussagen wirken nicht, weil sie besonders wahr sind. Sie wirken, weil sie ein Gefühl sortieren: Angst, Wut, Entlastung, Zugehörigkeit, Kontrolle oder Ohnmacht.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid two">${psychologyItems.map(([title, term, example, out, slugs]) => `<article class="card radar-psych-card"><p class="card-kicker">${esc(term)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text"><strong>Typischer Claim:</strong> ${esc(example)}</p><p class="card-text"><strong>So kommst du raus:</strong> ${esc(out)}</p><div class="radar-link-cluster">${slugs.map((slug) => `<a href="../live/${esc(slug)}/">${esc(p0DossiersV2.find((dossier) => dossier.slug === slug)?.title || slug)}</a>`).join("")}</div></article>`).join("")}</div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Psychologie</nav><p class="hero-kicker">Vertiefung</p><h1 class="hero-title">Warum Sätze hängen bleiben</h1><p class="hero-subtitle">Psychologische Effekte im Debatten-Kompass — einfach erklärt.</p><p class="radar-sprint-lead">Viele Aussagen wirken nicht, weil sie besonders wahr sind. Sie wirken, weil sie ein Gefühl sortieren: Angst, Wut, Entlastung, Zugehörigkeit, Kontrolle oder Ohnmacht.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid two">${psychologyItems.map(([title, term, example, out, slugs]) => `<article class="card radar-psych-card"><p class="card-kicker">${esc(term)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text"><strong>Typischer Claim:</strong> ${esc(example)}</p><p class="card-text"><strong>So kommst du raus:</strong> ${esc(out)}</p><div class="radar-link-cluster">${slugs.map((slug) => `<a href="../live/${esc(slug)}/">${esc(p0DossiersV2.find((dossier) => dossier.slug === slug)?.title || slug)}</a>`).join("")}</div></article>`).join("")}</div></div></section>`;
   return shell({ title: "Warum Sätze hängen bleiben", description: "Psychologische Effekte im Wirkungsradar einfach erklärt: Verantwortungsdiffusion, Verfügbarkeitsheuristik, Status-quo-Bias und mehr.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/psychologie/", base: "../../", main });
 }
 
-function hostPlaybookPage() {
+function answerPlaybookPage() {
   const steps = [
     ["Nicht sofort widersprechen.", "Ich sehe den Punkt."],
     ["Wahren Kern kurz anerkennen.", "Ja, da gibt es eine echte Frage."],
@@ -309,20 +300,20 @@ function hostPlaybookPage() {
     ["Gutes Bild setzen.", "So sieht es aus, wenn es funktioniert..."],
     ["Bessere Frage stellen.", "Die bessere Frage ist..."],
   ];
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Host-Playbook</nav><p class="hero-kicker">Host-Modus</p><h1 class="hero-title">Host-Playbook</h1><p class="hero-subtitle">Wie du in Debatten ruhig bleibst, Frames erkennst und die Rechnung öffnest.</p></div></section>${radarNav("../")}<section class="section"><div><div class="section-header"><p class="hero-kicker">Die 5-Schritt-Antwort</p><h2>Ruhig bleiben, Rechnung öffnen.</h2></div><ol class="timeline radar-flow">${steps.map(([title, sentence], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${esc(title)}</strong><p>${esc(sentence)}</p></div></li>`).join("")}</ol><article class="card radar-standard-formula"><p class="card-kicker">Standardformel</p><p class="card-text">Der Punkt ist nicht völlig aus der Luft. Der falsche Sprung ist ... Ein gutes Bild ist ... Die bessere Frage lautet ... Die Lösung ist ...</p><button class="copy-chip" type="button" data-copy-text="Der Punkt ist nicht völlig aus der Luft. Der falsche Sprung ist ... Ein gutes Bild ist ... Die bessere Frage lautet ... Die Lösung ist ...">Formel kopieren</button></article></div></section><section class="section section-soft"><div><div class="card-grid three"><article class="card"><p class="card-kicker">Vermeiden</p><ul class="clean-list"><li>Mythos lange wiederholen</li><li>Menschen beschämen</li><li>mit Moral starten</li><li>nur Fakten stapeln</li><li>negative Bilder nachmalen</li></ul></article><article class="card"><p class="card-kicker">Migration</p><p class="card-text"><strong>Nicht:</strong> Migration kostet nicht nur.</p><p class="card-text"><strong>Besser:</strong> Ankommen braucht Organisation. Gute Integration macht daraus Sprache, Arbeit, Wohnen und Teilhabe.</p></article><article class="card"><p class="card-kicker">Wind</p><p class="card-text"><strong>Nicht:</strong> Windräder zerstören Natur nicht.</p><p class="card-text"><strong>Besser:</strong> Gute Windkraft heißt: planen, schützen, beteiligen, zurückbauen.</p></article><article class="card"><p class="card-kicker">Schulden</p><p class="card-text"><strong>Nicht:</strong> Schulden sind egal.</p><p class="card-text"><strong>Besser:</strong> Der Staat refinanziert Anleihen. Wichtig ist, ob das Geld Zukunft schafft.</p></article></div></div></section>`;
-  return shell({ title: "Host-Playbook", description: "Konkrete Antwortformeln für Hosts, Panels, Kommentare, Unterricht und Familiengespräche.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/host-playbook/", base: "../../", main });
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Antwort-Playbooks</nav><p class="hero-kicker">Antwort-Playbooks</p><h1 class="hero-title">Antwort-Playbooks</h1><p class="hero-subtitle">So reagierst du ruhig, klar und frame-sicher.</p></div></section>${radarNav("../")}<section class="section"><div><div class="section-header"><p class="hero-kicker">Die 5-Schritt-Antwort</p><h2>Ruhig bleiben, Rechnung öffnen.</h2></div><ol class="timeline radar-flow">${steps.map(([title, sentence], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${esc(title)}</strong><p>${esc(sentence)}</p></div></li>`).join("")}</ol><article class="card radar-standard-formula"><p class="card-kicker">Standardformel</p><p class="card-text">Der Punkt ist nicht völlig aus der Luft. Der falsche Sprung ist ... Ein gutes Bild ist ... Die bessere Frage lautet ... Die Lösung ist ...</p><button class="copy-chip" type="button" data-copy-text="Der Punkt ist nicht völlig aus der Luft. Der falsche Sprung ist ... Ein gutes Bild ist ... Die bessere Frage lautet ... Die Lösung ist ...">Formel kopieren</button></article></div></section><section class="section section-soft"><div><div class="card-grid three"><article class="card"><p class="card-kicker">Kommentarspalte</p><p class="card-text">Kurz, ruhig, ohne Frame-Wiederholung. Eine klare Antwort plus bessere Frage.</p></article><article class="card"><p class="card-kicker">TikTok-Live</p><p class="card-text">Erst wahren Kern anerkennen, dann die Rechnung öffnen und ein gutes Bild setzen.</p></article><article class="card"><p class="card-kicker">Panel / Interview</p><p class="card-text">Bilanzgrenze, Faktenlage, Folgencheck und Lösungspfad in zwei Minuten sortieren.</p></article><article class="card"><p class="card-kicker">Vermeiden</p><ul class="clean-list"><li>Mythos lange wiederholen</li><li>Menschen beschämen</li><li>mit Moral starten</li><li>nur Fakten stapeln</li><li>negative Bilder nachmalen</li></ul></article></div></div></section>`;
+  return shell({ title: "Antwort-Playbooks", description: "Konkrete Antwortformeln für Kommentarspalten, TikTok-Live, Panels, Unterricht, Provokation, echte Sorge und Desinformation.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/antwort-playbooks/", base: "../../", main });
 }
 
 function themesPage() {
   const themes = ["Klima", "Energie", "Mobilität", "Migration", "Sozialstaat", "Arbeit", "Staat & Schulden", "Steuern", "Wirtschaft", "Demokratie", "Medien", "Wohnen", "Gesundheit", "Ausland & Sicherheit", "Technologie"];
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Themen</nav><p class="hero-kicker">Prüf-Modus</p><h1 class="hero-title">Themen entdecken</h1><p class="hero-subtitle">Top-Claims, typische Narrative, psychologische Muster, passende Lösungen und Quellencluster.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid three">${themes.map((theme) => { const dossiers = p0DossiersV2.filter((dossier) => topicFor(dossier) === theme || dossier.topicCluster?.join(" ").includes(theme.split(" ")[0])); return `<article class="card"><p class="card-kicker">${esc(theme)}</p><h3 class="card-title">${esc(theme)}</h3><p class="card-text">Top-Claims: ${dossiers.map((dossier) => dossier.title).slice(0, 3).join(", ") || "wird redaktionell ergänzt"}</p><p class="card-text">Typische Narrative: ${dossiers.map(narrativeFor).filter((v, i, a) => a.indexOf(v) === i).slice(0, 3).join(", ") || "in Prüfung"}</p><p><a class="btn btn-secondary" href="../live/">Passende Karten öffnen</a></p></article>`; }).join("")}</div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Themen</nav><p class="hero-kicker">Themencluster</p><h1 class="hero-title">Themen entdecken</h1><p class="hero-subtitle">Top-Claims, typische Narrative, psychologische Muster, passende Lösungen und Quellencluster.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid three">${themes.map((theme) => { const dossiers = p0DossiersV2.filter((dossier) => topicFor(dossier) === theme || dossier.topicCluster?.join(" ").includes(theme.split(" ")[0])); return `<article class="card"><p class="card-kicker">${esc(theme)}</p><h3 class="card-title">${esc(theme)}</h3><p class="card-text">Top-Claims: ${dossiers.map((dossier) => dossier.title).slice(0, 3).join(", ") || "wird redaktionell ergänzt"}</p><p class="card-text">Typische Narrative: ${dossiers.map(narrativeFor).filter((v, i, a) => a.indexOf(v) === i).slice(0, 3).join(", ") || "in Prüfung"}</p><p><a class="btn btn-secondary" href="../debattenkarten/">Passende Karten öffnen</a></p></article>`; }).join("")}</div></div></section>`;
   return shell({ title: "Wirkungsradar Themen", description: "Themenzugang zu Klima, Energie, Mobilität, Migration, Sozialstaat, Arbeit, Staat, Steuern, Demokratie, Medien und Sicherheit.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/themen/", base: "../../", main });
 }
 
 function methodPage() {
   const sections = ["Warum Faktencheck allein nicht reicht", "Der Folgencheck", "Frameanalyse", "Psychologischer Wirkungscheck", "Bilanzgrenzen", "Wirkung erster, zweiter, dritter Ordnung", "Systemische Wirkungen", "Quellen und Unsicherheit", "Wie wir Status vergeben", "Was der Wirkungsradar nicht ist"];
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Methode</nav><p class="hero-kicker">Prüf-Modus</p><h1 class="hero-title">Methode</h1><p class="hero-subtitle">Der Wirkungsradar ersetzt keinen Faktencheck. Er ergänzt ihn um die Frage: Was macht die Aussage mit Menschen, Entscheidungen und Systemen?</p><p class="radar-sprint-lead">Wirkung ist zunächst neutral: die tatsächliche Veränderung von Zuständen. Bewertet wird sie erst am Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid two">${sections.map((title, index) => `<article class="card"><p class="card-kicker">${String(index + 1).padStart(2, "0")}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(methodDescription(title))}</p></article>`).join("")}</div></div></section>`;
-  return shell({ title: "Wirkungsradar Methode", description: "Warum Faktencheck allein nicht reicht: Folgencheck, Frameanalyse, Psychologie, Bilanzgrenzen, Quellen und Statuslogik.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/methode/", base: "../../", main });
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Wirkungsradar-Methode</nav><p class="hero-kicker">Wirkungsradar-Methode</p><h1 class="hero-title">Die Wirkungsradar-Methode</h1><p class="hero-subtitle">Warum der Debatten-Kompass mehr macht als einen Faktencheck.</p><p class="radar-sprint-lead">Der Debatten-Kompass nutzt die Wirkungsradar-Methode. Sie verbindet Faktenlage, Folgencheck, Frameanalyse, psychologische Wirkung und lösungsorientierte Antwort.</p></div></section>${radarNav("../")}<section class="section"><div><div class="card-grid two">${sections.map((title, index) => `<article class="card"><p class="card-kicker">${String(index + 1).padStart(2, "0")}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(methodDescription(title))}</p></article>`).join("")}</div></div></section>`;
+  return shell({ title: "Die Wirkungsradar-Methode", description: "Warum der Debatten-Kompass mehr macht als Faktencheck: Faktenlage, Folgencheck, Bilanzgrenzen, Frames, Psychologie, Lösungspfad und Quellen.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/methode/", base: "../../", main });
 }
 
 function methodDescription(title) {
@@ -344,8 +335,8 @@ function reviewReport() {
   const checks = [
     ["Startseite", "PASS", "Suche oben sichtbar, Schnellchips und 12 P0-Karten kompakt; Methodik nach unten verschoben."],
     ["Live-Übersicht", "PASS", "Suche, Themenfilter, Statusfilter, geprüfte P0-Karten und Copy-Buttons vorhanden."],
-    ["Narrative", "PASS", "Nach menschlicher Wirkung gruppiert und mit typischen Claims/Live-Karten verlinkt."],
-    ["Psychologie", "PASS", "Alltagssprache, Fachbegriffe als Badge, passende Live-Karten."],
+    ["Narrative", "PASS", "Nach menschlicher Wirkung gruppiert und mit typischen Claims/Debattenkarten verlinkt."],
+    ["Psychologie", "PASS", "Alltagssprache, Fachbegriffe als Badge, passende Debattenkarten."],
     ["Host-Playbook", "PASS", "5-Schritt-Antwort, Standardformel und Beispiele vorhanden."],
     ["Mobile", "PASS", "Grid fällt auf einspaltige Karten zurück; Suche und Buttons bleiben erreichbar."],
     ["Trust / Quellen", "PASS", "TrustBlock bleibt auf Dossiers; Übersichten zeigen Quellenstatus und geprüften Status."],
@@ -361,11 +352,13 @@ function writeData() {
 
 writeData();
 write(OUT("wirkungsradar/index.html"), homePage());
-write(OUT("wirkungsradar/live/index.html"), livePage());
+write(OUT("wirkungsradar/live/index.html"), debateCardsPage({ canonical: "https://wirkungsoekonomie.de/wirkungsradar/live/", legacyRoute: true }));
+write(OUT("wirkungsradar/debattenkarten/index.html"), debateCardsPage());
 write(OUT("wirkungsradar/narrative/index.html"), narrativeIndex());
 for (const group of narrativeGroups) write(OUT("wirkungsradar/narrative", group[0], "index.html"), narrativeDetail(group));
 write(OUT("wirkungsradar/psychologie/index.html"), psychologyPage());
-write(OUT("wirkungsradar/host-playbook/index.html"), hostPlaybookPage());
+write(OUT("wirkungsradar/host-playbook/index.html"), answerPlaybookPage());
+write(OUT("wirkungsradar/antwort-playbooks/index.html"), answerPlaybookPage());
 write(OUT("wirkungsradar/themen/index.html"), themesPage());
 write(OUT("wirkungsradar/methode/index.html"), methodPage());
 write(OUT("reports/sprint-3-ux-review.md"), reviewReport());

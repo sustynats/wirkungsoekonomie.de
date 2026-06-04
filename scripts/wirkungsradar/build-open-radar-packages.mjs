@@ -510,7 +510,7 @@ function shell({ title, description, canonical, base, main }) {
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Wirkungsradar</p><h2>Live-Inventar gepflegt.</h2><p>Dieses Paket ist als Live- und Detailseite veröffentlicht. Quellen und Fachstand werden im Radar-Inventar nachgeführt.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/status/">Status öffnen</a></div></footer>
+    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Debattenkarten-Inventar gepflegt.</h2><p>Dieses Paket ist als Debattenkarte und Detailseite veröffentlicht. Quellen und Fachstand werden im Inventar nachgeführt.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/status/">Status öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=${VERSION}"></script>
   </body>
 </html>`;
@@ -518,15 +518,14 @@ function shell({ title, description, canonical, base, main }) {
 
 function radarNav(base) {
   const links = [
-    ["Überblick", `${base}wirkungsradar/`],
-    ["Live", `${base}wirkungsradar/live/`],
-    ["Details", `${base}wirkungsradar/detail/`],
-    ["Themen", `${base}wirkungsradar/themen/`],
-    ["Narrative", `${base}wirkungsradar/narrative/`],
-    ["Psychologie", `${base}wirkungsradar/psychologie/`],
-    ["Status", `${base}wirkungsradar/status/`],
+    ["Antwort finden", `${base}wirkungsradar/`],
+    ["Debattenkarten", `${base}wirkungsradar/debattenkarten/`],
+    ["Mythen & Narrative", `${base}wirkungsradar/narrative/`],
+    ["Antwort-Playbooks", `${base}wirkungsradar/antwort-playbooks/`],
+    ["Wirkungsradar-Methode", `${base}wirkungsradar/methode/`],
+    ["Quellen", `${base}wirkungsradar/quellen/`],
   ];
-  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Wirkungsradar Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
+  return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
 }
 
 function fallbackPackage([slug, title, cluster, judgement]) {
@@ -553,7 +552,7 @@ function answer30(item) {
 }
 
 function answer2(item) {
-  return `${item.claim} klingt stark, weil die Aussage einen echten Punkt berührt: ${item.truePoints.join(" ")} Irreführend wird sie, wenn daraus ein geschlossenes Gesamtbild gemacht wird. ${item.missingPoints.join(" ")} Der Wirkungsradar fragt deshalb nicht nur, ob ein Teil stimmt, sondern welche Entscheidung wahrscheinlicher wird, wenn Menschen dem Frame folgen. Die bessere Frage lautet: ${item.betterQuestion} So bleibt der reale Punkt sichtbar, ohne dass aus Sorge, Ärger oder Kontrollbedürfnis eine falsche politische Schlussfolgerung wird.`;
+  return `${item.claim} klingt stark, weil die Aussage einen echten Punkt berührt: ${item.truePoints.join(" ")} Irreführend wird sie, wenn daraus ein geschlossenes Gesamtbild gemacht wird. ${item.missingPoints.join(" ")} Der Debatten-Kompass fragt deshalb nicht nur, ob ein Teil stimmt, sondern welche Entscheidung wahrscheinlicher wird, wenn Menschen dem Frame folgen. Die bessere Frage lautet: ${item.betterQuestion} So bleibt der reale Punkt sichtbar, ohne dass aus Sorge, Ärger oder Kontrollbedürfnis eine falsche politische Schlussfolgerung wird.`;
 }
 
 function chips(items) {
@@ -565,21 +564,21 @@ function livePage(item) {
   const main = `
       <section class="hero radar-page-hero">
         <div class="radar-hero-copy">
-          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}wirkungsradar/">Wirkungsradar</a> / Live</nav>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a> / Debattenkarte</nav>
           <p class="hero-kicker">${esc(item.cluster)}</p>
           <h1 class="hero-title">${esc(item.title)}</h1>
           <p class="hero-subtitle">${esc(item.judgement)}</p>
-          <p class="radar-status-line"><span>Status: Live-Paket</span><span>Datenstand: ${DATA_STAND}</span><span>Quellenprüfung: redaktionell nachführen</span></p>
+          <p class="radar-status-line"><span>Status: Debattenkarte</span><span>Datenstand: ${DATA_STAND}</span><span>Quellenprüfung: redaktionell nachführen</span></p>
         </div>
       </section>
       ${radarNav(base)}
-      <section class="section" id="host-cockpit"><div><div class="section-header"><p class="hero-kicker">Host-Cockpit</p><h2>Kurz antworten, dann vertiefen.</h2></div><div class="card-grid two">
+      <section class="section" id="host-cockpit"><div><div class="section-header"><p class="hero-kicker">Schnellantwort</p><h2>Was wird behauptet?</h2></div><div class="card-grid two">
+        <article class="card"><p class="v2-badge">Kurzantwort - 10 Sekunden</p><p class="card-text">${esc(item.hostLine)}</p><button class="copy-chip" type="button" data-copy-text='${copy(item.hostLine)}'>Antwort kopieren</button></article>
         <article class="card v2-card-strong"><p class="v2-badge">Kurzurteil</p><h3 class="card-title">${esc(item.judgement)}</h3></article>
-        <article class="card"><p class="v2-badge">Sag das jetzt</p><p class="card-text">${esc(item.hostLine)}</p><button class="copy-chip" type="button" data-copy-text='${copy(item.hostLine)}'>Antwort kopieren</button></article>
-        <article class="card"><p class="v2-badge">Bessere Frage</p><p class="card-text">${esc(item.betterQuestion)}</p><button class="copy-chip" type="button" data-copy-text='${copy(item.betterQuestion)}'>Frage kopieren</button></article>
+        <article class="card"><p class="v2-badge">Die bessere Frage</p><p class="card-text">${esc(item.betterQuestion)}</p><button class="copy-chip" type="button" data-copy-text='${copy(item.betterQuestion)}'>Frage kopieren</button></article>
         <article class="card"><p class="v2-badge">Frame nicht übernehmen</p><p class="card-text"><strong>Alter Frame:</strong> ${esc(item.claim)}</p><p class="card-text"><strong>Besser:</strong> ${esc(item.hostLine)}</p></article>
       </div></div></section>
-      <section class="section section-soft" id="antworten"><div><div class="section-header"><p class="hero-kicker">Antwortformate</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2></div><div class="radar-answer-accordion host-answer-tabs">
+      <section class="section section-soft" id="host-antworten"><div><div class="section-header"><p class="hero-kicker">Direkt nutzbare Antworten</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2></div><div class="radar-answer-accordion host-answer-tabs">
         <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span><span class="radar-answer-label">Kernsatz</span></summary><p>${esc(answer10(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer10(item))}'>Antwort kopieren</button></details>
         <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span><span class="radar-answer-label">Einordnung</span></summary><p>${esc(answer30(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer30(item))}'>Antwort kopieren</button></details>
         <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span><span class="radar-answer-label">Vertiefung</span></summary><p>${esc(answer2(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer2(item))}'>Antwort kopieren</button></details>
@@ -595,8 +594,8 @@ function livePage(item) {
       </div></div></section>
       <section class="section" id="weiter"><div><article class="card"><p class="card-kicker">Vertiefung</p><h2 class="card-title">Detailseite öffnen.</h2><p class="card-text">Die Detailseite bündelt Faktenlage, Folgencheck, psychologische Mechanik, Antwortformate und offene Quellenpflege.</p><p><a class="btn btn-primary" href="../../detail/${esc(item.slug)}/">Detailanalyse öffnen</a></p></article></div></section>`;
   return shell({
-    title: `${item.title} | Wirkungsradar Live`,
-    description: `${item.title}: schnelle Antwort, Faktenkern, Denkfehler und bessere Frage im Wirkungsradar.`,
+    title: `${item.title} | Debatten-Kompass`,
+    description: `${item.title}: schnelle Antwort, Faktenkern, Denkfehler und bessere Frage im Debatten-Kompass.`,
     canonical: `https://wirkungsoekonomie.de/wirkungsradar/live/${item.slug}/`,
     base,
     main,
@@ -608,16 +607,16 @@ function detailPage(item) {
   const main = `
       <section class="hero radar-page-hero">
         <div class="radar-hero-copy">
-          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}wirkungsradar/">Wirkungsradar</a> / Detail</nav>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a> / Detail</nav>
           <p class="hero-kicker">${esc(item.cluster)}</p>
           <h1 class="hero-title">${esc(item.title)}</h1>
           <p class="hero-subtitle">${esc(item.judgement)}</p>
           <p class="radar-abstract"><strong>Abstract:</strong> Diese Detailseite schließt ein zuvor nur vorbereitetes Radar-Paket. Sie trennt wahren Kern, fehlende Bilanzgrenze, psychologische Wirkung, bessere Frage und demokratische Anschlussfähigkeit.</p>
-          <p class="radar-status-line"><span>Status: Detail-Paket live</span><span>Datenstand: ${DATA_STAND}</span><span>Quellenprüfung: redaktionell nachführen</span></p>
+          <p class="radar-status-line"><span>Status: Detail-Paket veröffentlicht</span><span>Datenstand: ${DATA_STAND}</span><span>Quellenprüfung: redaktionell nachführen</span></p>
         </div>
       </section>
       ${radarNav(base)}
-      <section class="section" id="aussage"><div><article class="card"><p class="card-kicker">Aussage</p><h2 class="card-title">${esc(item.claim)}</h2><p class="card-text">${esc(item.judgement)}</p>${chips([item.cluster, "Live-Paket", "Folgencheck"])}</article></div></section>
+      <section class="section" id="aussage"><div><article class="card"><p class="card-kicker">Aussage</p><h2 class="card-title">${esc(item.claim)}</h2><p class="card-text">${esc(item.judgement)}</p>${chips([item.cluster, "Debattenkarte", "Folgencheck"])}</article></div></section>
       <section class="section section-soft" id="faktenlage"><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Was der Satz belegt - und was nicht.</h2></div><div class="card-grid two">
         <article class="card"><p class="card-kicker">Prüfbarer Kern</p><ul class="clean-list">${item.truePoints.map((point) => `<li>${esc(point)}</li>`).join("")}</ul></article>
         <article class="card"><p class="card-kicker">Denkfehler</p><ul class="clean-list">${item.missingPoints.map((point) => `<li>${esc(point)}</li>`).join("")}</ul></article>
@@ -632,10 +631,10 @@ function detailPage(item) {
         <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span><span class="radar-answer-label">Einordnung</span></summary><p>${esc(answer30(item))}</p></details>
         <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span><span class="radar-answer-label">Vertiefung</span></summary><p>${esc(answer2(item))}</p></details>
       </div></div></section>
-      <section class="section" id="quellenstatus"><div><article class="card"><p class="card-kicker">Quellenstatus</p><h2 class="card-title">Live geschlossen, Quellenpflege sichtbar.</h2><p class="card-text">Dieses Paket wurde aus dem offenen Radar-Backlog in eine echte Live- und Detailseite überführt. Wo noch keine spezifische Quellenkette im vorhandenen Dossierbestand hinterlegt war, ist die Quellenprüfung ausdrücklich als redaktionell nachzuführen markiert.</p><p><a class="btn btn-secondary" href="../../quellen/">Quellenhub öffnen</a></p></article></div></section>
-      <section class="section section-soft" id="live"><div><article class="card"><p class="card-kicker">Live-Modus</p><h2 class="card-title">Schnell nutzbare Antwort.</h2><p class="card-text">${esc(item.hostLine)}</p><p><a class="btn btn-primary" href="../../live/${esc(item.slug)}/">Live-Karte öffnen</a></p></article></div></section>`;
+      <section class="section" id="quellenstatus"><div><article class="card"><p class="card-kicker">Quellenstatus</p><h2 class="card-title">Veröffentlicht, Quellenpflege sichtbar.</h2><p class="card-text">Dieses Paket wurde aus dem offenen Backlog in eine Debattenkarte und Detailseite überführt. Wo noch keine spezifische Quellenkette im vorhandenen Dossierbestand hinterlegt war, ist die Quellenprüfung ausdrücklich als redaktionell nachzuführen markiert.</p><p><a class="btn btn-secondary" href="../../quellen/">Quellenhub öffnen</a></p></article></div></section>
+      <section class="section section-soft" id="debattenkarte"><div><article class="card"><p class="card-kicker">Debattenkarte</p><h2 class="card-title">Schnell nutzbare Antwort.</h2><p class="card-text">${esc(item.hostLine)}</p><p><a class="btn btn-primary" href="../../live/${esc(item.slug)}/">Antwort öffnen</a></p></article></div></section>`;
   return shell({
-    title: `${item.title} | Wirkungsradar Detail`,
+    title: `${item.title} | Debatten-Kompass Detail`,
     description: `${item.title}: Detailanalyse mit Faktenkern, Denkfehler, Folgencheck und Antwortformaten.`,
     canonical: `https://wirkungsoekonomie.de/wirkungsradar/detail/${item.slug}/`,
     base,
@@ -645,7 +644,7 @@ function detailPage(item) {
 
 function card(item, base = "") {
   return `<a class="card text-link-card radar-live-card" href="${base}${esc(item.slug)}/" data-radar-card data-topic="${esc(item.cluster)}" data-search="${esc([item.title, item.claim, item.cluster, item.judgement, item.betterQuestion].join(" "))}">
-    <div class="radar-card-badges"><span>${esc(item.cluster)}</span><span>Live</span></div>
+    <div class="radar-card-badges"><span>${esc(item.cluster)}</span><span>Debattenkarte</span></div>
     <h3 class="card-title">${esc(item.title)}</h3>
     <p class="card-text">${esc(item.judgement)}</p>
     <p class="card-text"><strong>Bessere Frage:</strong> ${esc(item.betterQuestion)}</p>
@@ -667,23 +666,23 @@ function injectBeforeMainEnd(file, id, section) {
 function updateStatusPage(packages) {
   const base = "../../";
   const rows = packages
-    .map((item) => `<tr><td><a class="text-link" href="../live/${esc(item.slug)}/">${esc(item.title)}</a></td><td>${esc(item.cluster)}</td><td>live + detail</td><td>Quellenpflege nachführen</td></tr>`)
+    .map((item) => `<tr><td><a class="text-link" href="../live/${esc(item.slug)}/">${esc(item.title)}</a></td><td>${esc(item.cluster)}</td><td>Debattenkarte + Detail</td><td>Quellenpflege nachführen</td></tr>`)
     .join("");
   const main = `
       <section class="hero radar-page-hero">
         <div class="radar-hero-copy">
-          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Status</nav>
-          <p class="hero-kicker">Live-Inventar</p>
-          <h1 class="hero-title">Wirkungsradar Status</h1>
-          <p class="hero-subtitle">Welche Pakete live sind, welche aus dem Backlog geschlossen wurden und wo Quellenpflege offen bleibt.</p>
-          <p class="radar-status-line"><span>Datenstand: ${DATA_STAND}</span><span>Live: ${packages.length} Backlog-Pakete geschlossen</span><span>Generator: ${VERSION}</span></p>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Status</nav>
+          <p class="hero-kicker">Debattenkarten-Inventar</p>
+          <h1 class="hero-title">Debatten-Kompass Status</h1>
+          <p class="hero-subtitle">Welche Pakete veröffentlicht sind, welche aus dem Backlog geschlossen wurden und wo Quellenpflege offen bleibt.</p>
+          <p class="radar-status-line"><span>Datenstand: ${DATA_STAND}</span><span>Veröffentlicht: ${packages.length} Backlog-Pakete geschlossen</span><span>Generator: ${VERSION}</span></p>
         </div>
       </section>
       ${radarNav(base)}
-      <section class="section"><div><div class="section-header"><p class="hero-kicker">Geschlossene offene Pakete</p><h2>Aus Backlog/Seed in Live + Detail überführt.</h2></div><div class="table-wrap"><table><thead><tr><th>Paket</th><th>Cluster</th><th>Status</th><th>Hinweis</th></tr></thead><tbody>${rows}</tbody></table></div></div></section>`;
+      <section class="section"><div><div class="section-header"><p class="hero-kicker">Geschlossene offene Pakete</p><h2>Aus Backlog/Seed in Debattenkarte + Detail überführt.</h2></div><div class="table-wrap"><table><thead><tr><th>Paket</th><th>Cluster</th><th>Status</th><th>Hinweis</th></tr></thead><tbody>${rows}</tbody></table></div></div></section>`;
   writeFile("wirkungsradar/status/index.html", shell({
-    title: "Wirkungsradar Status",
-    description: "Live-Inventar der Wirkungsradar-Pakete.",
+    title: "Debatten-Kompass Status",
+    description: "Inventar der Debatten-Kompass-Pakete.",
     canonical: "https://wirkungsoekonomie.de/wirkungsradar/status/",
     base,
     main,
@@ -705,7 +704,7 @@ writeFile("wirkungsradar/live/sdgs-sind-weltregierung/index.html", livePage(sdgL
 injectBeforeMainEnd(
   "wirkungsradar/live/index.html",
   "offene-radar-pakete-geschlossen",
-  `<section class="section section-soft" id="offene-radar-pakete-geschlossen"><div><div class="section-header"><p class="hero-kicker">Backlog geschlossen</p><h2>${openPackages.length} zusätzliche Live-Pakete.</h2><p>Diese Karten waren bisher nur als Seed, Backlog oder Themenhinweis sichtbar und sind jetzt als Live-Seiten veröffentlicht.</p></div><div class="card-grid three">${openPackages.map((item) => card(item)).join("")}</div></div></section>`,
+  `<section class="section section-soft" id="offene-radar-pakete-geschlossen"><div><div class="section-header"><p class="hero-kicker">Backlog geschlossen</p><h2>${openPackages.length} zusätzliche Debattenkarten.</h2><p>Diese Karten waren bisher nur als Seed, Backlog oder Themenhinweis sichtbar und sind jetzt als Debattenkarten veröffentlicht.</p></div><div class="card-grid three">${openPackages.map((item) => card(item)).join("")}</div></div></section>`,
 );
 
 injectBeforeMainEnd(

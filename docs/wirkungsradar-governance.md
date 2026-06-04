@@ -1,4 +1,4 @@
-# Wirkungsradar Governance
+# Debatten-Kompass Governance
 
 Vertrauen entsteht nicht durch Autorität, sondern durch sichtbare Prüfung: Datenstand, Quellen, Grenzen, Gegenposition, Bilanzgrenze und Korrekturfähigkeit. Der Wirkungsradar muss nicht unfehlbar wirken. Er muss lernfähig, transparent und überprüfbar sein.
 
@@ -6,8 +6,8 @@ Vertrauen entsteht nicht durch Autorität, sondern durch sichtbare Prüfung: Dat
 
 - Autor:in: erstellt oder überarbeitet Dossier.
 - Faktenprüfer:in: prüft Zahlen, Quellen und Bilanzgrenzen.
-- Frame-Prüfer:in: prüft, ob das Host-Cockpit Frames verstärkt.
-- Maus-Modus-Prüfer:in: prüft Sprache, Verständlichkeit und positive Beispiele.
+- Frame-Prüfer:in: prüft, ob die Schnellantwort Frames verstärkt.
+- Sprachprüfer:in: prüft Klarheit, Verständlichkeit und positive Beispiele.
 - Quellenkurator:in: pflegt Source-Packs und Datenstand.
 - Final Review: setzt Status reviewed oder published.
 

@@ -1,4 +1,4 @@
-# Multiplizierungsleitlinien Wirkungsradar
+# Multiplizierungsleitlinien Debatten-Kompass
 
 1. Keine Rage-Hooks.
 2. Keine Menschenabwertung.
@@ -17,4 +17,4 @@
 15. Der Host soll souveraen wirken, nicht triumphierend.
 
 Kernsatz:
-"Ein gutes Wirkungsradar-Format gewinnt nicht durch Empoerung, sondern durch Klarheit."
+"Ein gutes Debatten-Kompass-Format gewinnt nicht durch Empoerung, sondern durch Klarheit."

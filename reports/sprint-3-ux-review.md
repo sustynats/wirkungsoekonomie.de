@@ -13,12 +13,12 @@ Probleme:
 ## Narrative
 PASS
 Probleme:
-- Nach menschlicher Wirkung gruppiert und mit typischen Claims/Live-Karten verlinkt.
+- Nach menschlicher Wirkung gruppiert und mit typischen Claims/Debattenkarten verlinkt.
 
 ## Psychologie
 PASS
 Probleme:
-- Alltagssprache, Fachbegriffe als Badge, passende Live-Karten.
+- Alltagssprache, Fachbegriffe als Badge, passende Debattenkarten.
 
 ## Host-Playbook
 PASS
