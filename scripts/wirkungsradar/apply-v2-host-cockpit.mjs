@@ -107,6 +107,42 @@ const overrides = {
     notThis: "Deutschland allein rettet die Welt oder ist allein schuld.",
     better: "Territoriale Emissionen, Lieferketten, Produktdesign, Standards und Kapitalwirkung nebeneinander sichtbar machen.",
   },
+  "migration-kostet-nur": {
+    claim: "Migration kostet nur?",
+    short: "Echter Startaufwand. Falsches Lastbild.",
+    say:
+      "Ankommen braucht Organisation. Gute Integration macht daraus Sprache, Schule, Arbeit, Wohnen, Anerkennung und Teilhabe.",
+    live:
+      "Am Anfang braucht Ankommen gute Organisation. Entscheidend ist, ob daraus Teilhabe wird: Sprache, Schule, Arbeit, Wohnen, Anerkennung und klare Regeln.",
+    panel:
+      "Ich würde den Startaufwand nicht leugnen. Kommunen brauchen Geld, Personal und gute Verfahren. Aber Menschen sind keine Kostenstelle. Die faire Frage ist, ob Integration funktioniert: Sprache, Schule, Arbeit, Wohnen, Anerkennung, Kita, klare Regeln und schnelle Verfahren. Wenn das klappt, entstehen Pflege, Arbeit, Steuern, Nachbarschaft und Zusammenhalt.",
+    exampleTitle: "Der Sprachkurs, der zur Pflegekraft führt",
+    example:
+      "Eine Frau kommt nach Deutschland. Ihr Abschluss wird schnell geprüft. Sie lernt Deutsch im Betrieb. Eine Kommune hilft bei Wohnung, Kita und Anmeldung. Ein Jahr später arbeitet sie in der Pflege. Ein Team ist entlastet. Menschen werden versorgt. Sie zahlt Steuern und ist Teil der Nachbarschaft.",
+    question: "Welche Integration macht aus Ankommen Teilhabe?",
+    oldFrame: "Migration = Last.",
+    notThis: "Migration kostet gar nichts.",
+    better:
+      "Am Anfang braucht Integration Geld und Organisation. Entscheidend ist, ob Sprache, Arbeit, Schule, Wohnen und Anerkennung funktionieren.",
+    impacts: [
+      ["Sprache", "Menschen kommen schneller in Kontakt und Arbeit.", "Deutsch im Alltag und im Betrieb lernen."],
+      ["Arbeit", "Fähigkeiten werden nutzbar.", "Anerkennung und Matching statt Wartezeit."],
+      ["Pflege", "Teams werden entlastet.", "Versorgung wird stabiler."],
+      ["Kommune", "Gute Verfahren schaffen Ordnung.", "Anmeldung, Kita, Wohnen und Beratung greifen zusammen."],
+      ["Sozialstaat", "Aus Startaufwand können Beiträge werden.", "Arbeit stärkt Steuern und Kassen."],
+      ["Nachbarschaft", "Teilhabe entsteht im Alltag.", "Menschen werden sichtbar als Kolleg:innen und Nachbar:innen."],
+    ],
+    psychology: [
+      ["Startaufwand sieht man sofort.", "Gegenwartsbias", "Spätere Beiträge wirken weiter weg als heutige Aufgaben.", "Den gelingenden Pfad zeigen: Sprache, Arbeit, Beitrag."],
+      ["Eine Gruppe wird zum Bild.", "Sündenbocklogik", "Strukturprobleme werden auf Menschen geschoben.", "Auf Verfahren, Wohnen, Schule und Arbeit zurückführen."],
+      ["Einzelfälle bleiben hängen.", "Verfügbarkeitsheuristik", "Auffällige Fälle wirken wie das Ganze.", "Einzelfall prüfen, aber Systemlösung zeigen."],
+    ],
+    consequences: [
+      "Menschen erscheinen als Last, bevor Lösungen sichtbar werden.",
+      "Kommunale Aufgaben werden mit Gruppenabwertung verwechselt.",
+      "Integration wird schwerer, weil Vertrauen, Sprache und Arbeit später beginnen.",
+    ],
+  },
   "klimaschutz-deindustrialisiert-deutschland": {
     short: "Echter Druck, falscher Niedergangsframe.",
     question: "Reden wir über Standortprobleme oder über die Geschichte, dass Klimaschutz Industrie zerstört?",
@@ -450,7 +486,7 @@ function renderImpactFan(items) {
 function renderCockpit(slug, data) {
   const copy = (text) => escapeHtml(text).replace(/'/g, "&#039;");
   const secondExampleCard = data.secondExample
-    ? `\n            <article class="v2-cockpit-card"><p class="v2-badge">Positives Beispiel</p><h3>${escapeHtml(data.secondExampleTitle || "So sieht es besser aus")}</h3><p>${escapeHtml(data.secondExample)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.secondExample)}'>Beispiel kopieren</button></article>`
+    ? `\n            <article class="v2-cockpit-card"><p class="v2-badge">Ein gutes Bild</p><h3>${escapeHtml(data.secondExampleTitle || "So sieht es besser aus")}</h3><p>${escapeHtml(data.secondExample)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.secondExample)}'>Bild kopieren</button></article>`
     : "";
   return `<section class="section v2-host-cockpit" id="host-cockpit" data-v2-host-cockpit>
         <div class="v2-cockpit-shell">
@@ -462,7 +498,7 @@ function renderCockpit(slug, data) {
           <div class="v2-cockpit-grid">
             <article class="v2-cockpit-card v2-card-strong"><p class="v2-badge">Kurzurteil</p><h3>${escapeHtml(data.short)}</h3></article>
             <article class="v2-cockpit-card"><p class="v2-badge">Sag das jetzt</p><p>${escapeHtml(data.say)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.say)}'>Kopieren</button></article>
-            <article class="v2-cockpit-card"><p class="v2-badge">Positives Beispiel</p><h3>${escapeHtml(data.exampleTitle)}</h3><p>${escapeHtml(data.example)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.example)}'>Beispiel kopieren</button></article>${secondExampleCard}
+            <article class="v2-cockpit-card"><p class="v2-badge">Ein gutes Bild</p><h3>${escapeHtml(data.exampleTitle)}</h3><p>${escapeHtml(data.example)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.example)}'>Bild kopieren</button></article>${secondExampleCard}
             <article class="v2-cockpit-card"><p class="v2-badge">Die bessere Frage</p><p>${escapeHtml(data.question)}</p><button class="copy-chip" type="button" data-copy-text='${copy(data.question)}'>Frage kopieren</button></article>
           </div>
           <div class="v2-frame-card" id="frame-nicht-uebernehmen">
@@ -531,7 +567,7 @@ function renderAnswerTabs(data) {
           <div class="radar-answer-accordion host-answer-tabs">
             <details class="radar-answer-item" open><summary><span class="radar-answer-time">Kommentar</span><span class="radar-answer-label">bis 280 Zeichen</span></summary><p>${escapeHtml(shortText(data.say, 280))}</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">Live</span><span class="radar-answer-label">20–35 Sekunden</span></summary><p>${escapeHtml(data.live)}</p></details>
-            <details class="radar-answer-item"><summary><span class="radar-answer-time">Beispiel</span><span class="radar-answer-label">anschaulich</span></summary><p>${escapeHtml(data.example)}</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">Ein gutes Bild</span><span class="radar-answer-label">anschaulich</span></summary><p>${escapeHtml(data.example)}</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">Panel</span><span class="radar-answer-label">längere Antwort</span></summary><p>${escapeHtml(data.panel)}</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">Rückfrage</span><span class="radar-answer-label">Frame öffnen</span></summary><p>${escapeHtml(data.question)}</p></details>
           </div>
@@ -611,6 +647,9 @@ function insertAfterHero(html, block) {
 function stripGeneratedV2(html) {
   return html.replace(
     /\n\s*<section class="section(?: section-soft)? v2-(?:host-cockpit|impact-fan|answer-tabs|psychology-lite|consequence-stack|trust-block)"[\s\S]*?<\/section>\s*/g,
+    "\n"
+  ).replace(
+    /\n?\s*<section\b(?=[^>]*(?:data-v2-host-cockpit|data-v2-impact-fan|id="antwortformate-v2"|id="warum-der-satz-zieht"|id="folgenkarte-v2"|id="warum-vertrauen"))[\s\S]*?<\/section>\s*/g,
     "\n"
   );
 }
