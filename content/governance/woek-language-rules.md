@@ -70,6 +70,19 @@ Bevorzugt:
 - "positive Netto-Wirkung für Mensch, Planet und Demokratie"
 - "SDG+ als transparente WÖk-Erweiterung"
 
+## Erklärtexte: Maiwald-Prinzip
+
+Alle Erklärungstexte der Wirkungsökonomie müssen nach dem Maiwald-Prinzip geschrieben sein: erst anschaulich, dann fachlich; erst Beispiel, dann Begriff; einfache Ursache-Wirkung-Kette; wissenschaftlich korrekt; keine Verniedlichung; keine Kürzung fachlicher Substanz.
+
+Das bedeutet praktisch:
+
+- Ein erklärender Text beginnt nach Möglichkeit mit einer Alltagssituation.
+- Danach wird der Fachbegriff eingeführt und kurz erklärt.
+- Ein konkretes Beispiel zeigt, was sich tatsächlich verändert.
+- Grenzen, Datenqualität, Modellannahmen und demokratische Entscheidungen bleiben sichtbar.
+- Wirkung wird neutral verwendet; positive Netto-Wirkung ist die Zielgröße.
+- SDG+ wird als transparente WÖk-Erweiterung erklärt, nicht als offizielle UN-Kategorie.
+
 Vermeiden oder präzisieren:
 
 - "das wirkt positiv", wenn nur Potenzial oder Annahme gemeint ist
