@@ -365,7 +365,7 @@ function glossaryTermPage(entry) {
     <meta name="description" content="${esc(entry.shortDefinition)}">
     <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/${esc(entry.slug)}/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260604-debate-use-order">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260604-menu-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude><a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a><button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button><nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav></header>
@@ -512,7 +512,7 @@ function shell({ title, description, canonical, base = "../", main }) {
     <meta name="search_section" content="Wirkungsradar">
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-menu-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude><a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a><button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button><nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav></header>

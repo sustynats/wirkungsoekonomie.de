@@ -254,7 +254,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-menu-fix}">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}

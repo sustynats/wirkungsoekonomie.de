@@ -306,7 +306,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <meta name="twitter:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-menu-fix">
   </head>
   <body>
     <header class="site-header">

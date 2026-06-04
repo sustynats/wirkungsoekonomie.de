@@ -401,7 +401,7 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
     <meta name="search_description" content="{escape(description)}">
     <meta name="search_section" content="Hauptwerk">
     <meta name="search_type" content="{escape(search_type)}">
-    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260604-debate-use-order">
+    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260604-menu-fix">
   </head>
   <body>
     <header class="site-header">

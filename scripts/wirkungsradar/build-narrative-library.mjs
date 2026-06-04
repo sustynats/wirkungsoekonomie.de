@@ -1137,7 +1137,7 @@ function pageShell({ title, description, canonical, base, main }) {
     <meta name="search_type" content="Narrativbibliothek">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-menu-fix}">
   </head>
   <body>
     <header class="site-header" data-search-exclude>

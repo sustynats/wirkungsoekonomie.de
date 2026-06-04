@@ -16882,7 +16882,7 @@ a.principle-card:hover,
 /* Online-Styleguide v1 guardrails: keep recurring legacy templates readable. */
 .site-header {
   max-width: 100%;
-  overflow: clip;
+  overflow: visible;
 }
 
 @media (max-width: 1479px) {
@@ -16901,16 +16901,33 @@ a.principle-card:hover,
   .site-header .site-nav {
     position: fixed;
     top: 4.8rem;
-    left: var(--space-gutter);
     right: var(--space-gutter);
-    z-index: 1300;
+    left: auto;
+    z-index: 2500;
     display: none;
+    width: min(24rem, calc(100vw - (2 * var(--space-gutter))));
+    grid-template-columns: 1fr;
+    align-content: start;
+    align-items: stretch;
+    justify-content: stretch;
     max-height: min(70vh, 36rem);
     overflow: auto;
+    padding: 0.9rem;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
   }
 
   .site-header .site-nav.open {
     display: grid;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header .site-nav {
+    left: var(--space-gutter);
+    width: auto;
   }
 }
 

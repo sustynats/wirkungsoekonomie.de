@@ -351,7 +351,7 @@ function shell({ title, description, canonical, base, main }) {
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(description)}">
     <link rel="canonical" href="${esc(canonical)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-menu-fix">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
