@@ -514,6 +514,90 @@ const sourcePack = {
       type: "fachbericht",
       use_for: ["Materialschäden", "Tritium", "Neutronenbeschuss"],
     },
+    {
+      label: "Bundesnetzagentur - Wasserstoff-Kernnetz",
+      publisher: "Bundesnetzagentur",
+      url: "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Wasserstoff/Kernnetz/start.html",
+      type: "amtlich",
+      use_for: ["9.040 km Kernnetz", "60 Prozent Umstellung bestehender Erdgasleitungen", "18,9 Mrd. Euro Investitionskosten", "Inbetriebnahme bis 2032"],
+    },
+    {
+      label: "Bundesnetzagentur - Genehmigung Wasserstoff-Kernnetz",
+      publisher: "Bundesnetzagentur",
+      url: "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2024/20241022_H2Kernnetz.html",
+      type: "amtlich",
+      use_for: ["Genehmigung am 22.10.2024", "40 Prozent Neubau", "60 Prozent Umstellung", "Investitionskosten"],
+    },
+    {
+      label: "BMWK - Fortschreibung Nationale Wasserstoffstrategie",
+      publisher: "Bundesministerium für Wirtschaft und Klimaschutz",
+      url: "https://www.bmwk.de/Redaktion/DE/Publikationen/Energie/fortschreibung-nationale-wasserstoffstrategie.html",
+      type: "strategie",
+      use_for: ["10 GW Elektrolyseziel 2030", "Importstrategie", "Wasserstoffhochlauf"],
+    },
+    {
+      label: "IEA - Global Hydrogen Review 2025",
+      publisher: "International Energy Agency",
+      url: "https://www.iea.org/reports/global-hydrogen-review-2025",
+      type: "international",
+      use_for: ["globale Wasserstoffproduktion", "emissionsarmer Wasserstoff", "Projektpipeline", "Markthochlauf"],
+    },
+    {
+      label: "IEA - Hydrogen",
+      publisher: "International Energy Agency",
+      url: "https://www.iea.org/energy-system/low-emission-fuels/hydrogen",
+      type: "international",
+      use_for: ["fast 100 Mio. t globale Nachfrage 2024", "fossile Dominanz heutiger H2-Produktion", "Raffinerien und Industrie"],
+    },
+    {
+      label: "Agora Energiewende - No-regret hydrogen",
+      publisher: "Agora Energiewende",
+      url: "https://www.agora-energiewende.org/publications/no-regret-hydrogen",
+      type: "studie",
+      use_for: ["No-Regret-Anwendungen", "kleineres H2-Netz als heutiges Erdgasnetz", "Risiko von Oversizing", "grüne Korridore und Speicher"],
+    },
+    {
+      label: "Agora Industry - Prioritising hydrogen for the most effective uses",
+      publisher: "Agora Industry",
+      url: "https://www.agora-industry.org/fileadmin/Projekte/2025/2025-04_INT_No-regret-H2/A_IND_Prioritising_hydrogen_WEB.pdf",
+      type: "studie",
+      use_for: ["Priorisierung von H2-Anwendungen", "Industriefeedstocks", "Aviation, shipping, seasonal storage"],
+    },
+    {
+      label: "Umweltbundesamt - Wasserstoff im künftigen Energiesystem",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/themen/klima-energie/klimaschutz-energiepolitik-in-deutschland/wasserstoff-schluessel-im-kuenftigen-energiesystem",
+      type: "amtlich",
+      use_for: ["grüner Wasserstoff", "Elektrolyse", "Rolle im Energiesystem"],
+    },
+    {
+      label: "Umweltbundesamt - Wasserstoff im Verkehr FAQ",
+      publisher: "Umweltbundesamt",
+      url: "https://www.umweltbundesamt.de/themen/verkehr/kraftstoffe-antriebe/wasserstoff-im-verkehr-haeufig-gestellte-fragen",
+      type: "amtlich",
+      use_for: ["Wasserstoff im Verkehr", "Pkw, Lkw, Luftfahrt, Schifffahrt", "Verkehrswende"],
+    },
+    {
+      label: "Fraunhofer ISI - Wasserstoff-Fakten",
+      publisher: "Fraunhofer ISI",
+      url: "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/t/2026/2026-03_wasserstoff-fakten_review.pdf",
+      type: "review",
+      use_for: ["Effizienz", "E-Fuels im Pkw", "15 Prozent Well-to-Wheel-Wirkungsgrad", "Straßenverkehr vs Luftverkehr"],
+    },
+    {
+      label: "SRU - Wasserstoff im Klimaschutz: Klasse statt Masse",
+      publisher: "Sachverständigenrat für Umweltfragen",
+      url: "https://www.umweltrat.de/DE/Themen/Klima-und-Energie/klima-und-energie_node.html",
+      type: "stellungnahme",
+      use_for: ["Wasserstoff als knapper Energieträger", "Priorisierung", "direkte Elektrifizierung"],
+    },
+    {
+      label: "Fraunhofer ISI - CO2-neutrale Prozesswärme",
+      publisher: "Fraunhofer ISI",
+      url: "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/policy-briefs/2024-07_policy_brief_prozesswaerme_co2-neutral_elektrifizierung_wasserstoff.pdf",
+      type: "policy_brief",
+      use_for: ["Prozesswärme", "Elektrifizierung vs Wasserstoff", "Industrieanwendungen"],
+    },
   ],
 };
 
@@ -868,7 +952,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Fossile Mobilität bleibt länger bestehen, wenn Herstellung isoliert betrachtet wird.", "critical"],
       ["WÖk-Lösung", "Produktscorecards für CO₂, Ressourcen, Arbeit, Gesundheit, Batteriechemie, Ladequelle, Lebensdauer, Brandrisiko und Recycling.", "positive"],
     ],
-    claims: ["e-autos-schlimmer-als-verbrenner", "batterien-sind-nicht-recyclebar"],
+    claims: ["e-autos-schlimmer-als-verbrenner", "batterien-sind-nicht-recyclebar", "wasserstoff-fuer-alles"],
   },
   {
     slug: "kernenergie-fusion",
@@ -896,7 +980,7 @@ const subtopics = [
       ["Wirkungsrisiko", "Zukunftsinvestitionen werden blockiert, alte Abhängigkeiten bleiben bestehen.", "critical"],
       ["WÖk-Lösung", "Industriepolitik nach Zukunftswirkung: Netze, sauberer Strom, Kreislaufwirtschaft und Qualifizierung.", "positive"],
     ],
-    claims: ["klimaschutz-deindustrialisiert-deutschland"],
+    claims: ["klimaschutz-deindustrialisiert-deutschland", "wasserstoff-fuer-alles"],
   },
 ];
 
@@ -1900,6 +1984,111 @@ const claims = [
     ],
   },
   {
+    title: "Wasserstoff für alles?",
+    slug: "wasserstoff-fuer-alles",
+    claimPhrase: "„Wir machen das einfach mit Wasserstoff.“",
+    shortJudgement: "Wahrer Schlüsseltechnologie-Kern, falsches Allzwecknarrativ.",
+    narrativeFamilies: ["Wasserstoff als Allheilmittel", "Technologieoffenheit als Verzögerung", "H2-ready-Zukunftsversprechen", "Gasnetz-Rettungsframe"],
+    riskLevel: "hoch",
+    themes: ["Wasserstoff", "Industrie", "Wärme", "Mobilität", "Speicher", "Infrastruktur"],
+    sdgs: ["SDG 6", "SDG 7", "SDG 8", "SDG 9", "SDG 11", "SDG 12", "SDG 13", "SDG 16", "SDG 17"],
+    sdgPlus: ["Quellenklarheit", "Diskursfähigkeit", "Schutz vor Hype", "institutionelles Vertrauen", "intergenerationelle Verantwortung", "Versorgungssicherheit", "Transformationsresilienz"],
+    subtitle: "Warum Wasserstoff wertvoll ist - aber nicht überall sinnvoll.",
+    abstract:
+      "Die Aussage „Wir machen das einfach mit Wasserstoff“ enthält einen wahren Kern: Grüner Wasserstoff wird für Klimaneutralität gebraucht. Besonders in Industrie, Chemie, Stahl, Düngemitteln, bestimmten Hochtemperaturprozessen, Langzeitspeichern, Schifffahrt, Luftfahrt und als strategische Reserve kann Wasserstoff eine zentrale Rolle spielen. Irreführend wird die Aussage, wenn Wasserstoff als universeller Ersatz für fossile Energie dargestellt wird - für Autos, private Heizungen, breite Gebäudewärme oder als Grund, Elektrifizierung und Effizienz zu verzögern. Wirkungsökonomisch ist Wasserstoff ein knapper Systemträger. Die bessere Frage lautet nicht: Wasserstoff ja oder nein? Sondern: Wo erzeugt eine Kilowattstunde erneuerbarer Strom über Wasserstoff die höchste positive Netto-Wirkung - und wo ist direkte Elektrifizierung schneller, günstiger und effizienter?",
+    summary: {
+      judgement: "Wahrer Schlüsseltechnologie-Kern, falsches Allzwecknarrativ.",
+      true_core: "Grüner Wasserstoff wird für Stahl, Chemie, bestimmte Prozesswärme, Langzeitspeicher, Luftfahrt, Schifffahrt und Resilienz gebraucht.",
+      problem: "Aus einer knappen Schlüsselressource wird ein Allzweckersatz für fossile Energie gemacht.",
+      narrative: "Wasserstoff als Allheilmittel / H2-ready-Zukunftsversprechen / Gasnetz-Rettungsframe.",
+      risk: "Direkte Elektrifizierung, Wärmepumpen, E-Mobilität, Netze, Speicher und Effizienz werden verzögert; No-Regret-Anwendungen bekommen zu spät Versorgung.",
+      host_answer: "Wasserstoff ist zu wertvoll, um ihn überall zu verschwenden.",
+    },
+    answers: {
+      ten_seconds: "Wasserstoff ist wichtig - aber zu knapp und zu wertvoll für alles. Wir brauchen ihn zuerst dort, wo direkte Elektrifizierung nicht reicht: Stahl, Chemie, Schiffe, Flugverkehr und Langzeitspeicher.",
+      thirty_seconds:
+        "Der wahre Kern ist: Grüner Wasserstoff ist ein Schlüssel für Klimaneutralität. Der Denkfehler ist: daraus Wasserstoff für Autos, Heizungen und alles Mögliche zu machen. Wenn Strom direkt genutzt werden kann, ist das meistens effizienter. Wasserstoff gehört dorthin, wo er die größte Systemwirkung hat.",
+      two_minutes:
+        "Ich ordne das sauber ein. Wasserstoff ist nicht falsch - im Gegenteil. Ohne grünen Wasserstoff wird Klimaneutralität in Stahl, Chemie, Ammoniak, Methanol, bestimmten Hochtemperaturprozessen, Luftfahrt, Schifffahrt und saisonaler Stromspeicherung sehr schwierig. Aber Wasserstoff ist knapp, teuer in der Herstellung, braucht erneuerbaren Strom, Infrastruktur, Speicher, Transport und oft weitere Umwandlungsschritte. Deshalb ist die Frage nicht: Wasserstoff ja oder nein? Sondern: Wo ist Wasserstoff wirklich die beste Lösung? Bei vielen Anwendungen ist direkte Elektrifizierung effizienter: Wärmepumpen statt Wasserstoffheizung, E-Autos statt Wasserstoff-Pkw, vielfach E-Lkw statt Wasserstoff-Lkw, direkte Prozesswärme statt Umweg über H2. Wirkungsökonomisch brauchen wir eine Wasserstoff-Hierarchie: zuerst No-Regret-Anwendungen, dann Speicher und Resilienz, dann Spezialfälle - aber kein Wasserstoff als Verzögerungsargument.",
+    },
+    answersFinal: true,
+    effectPath: [
+      ["Aussage", "„Wir machen das einfach mit Wasserstoff.“"],
+      ["Wirkstoff", "Wasserstoff als Allzweckversprechen."],
+      ["Verkürzung", "Technische Möglichkeit wird mit systemischer Sinnhaftigkeit verwechselt."],
+      ["Ausblendung", "Knappheit, Strombedarf, Umwandlungsverluste, direkte Elektrifizierung, No-Regret-Anwendungen, Infrastruktur und Importabhängigkeit verschwinden."],
+      ["Resonanz", "Hoffnung, Besitzstandsschutz, Technikoptimismus, Angstvermeidung."],
+      ["Narrativ", "„Wir können die alte fossile Infrastruktur später klimaneutral weiterführen.“"],
+      ["Wirkung erster Ordnung", "Wärmepumpen, E-Mobilität, Effizienz und direkte Elektrifizierung wirken weniger dringend."],
+      ["Wirkung zweiter Ordnung", "Investitionen fließen in H2-Erwartungen statt in sichere Soforthebel."],
+      ["Wirkung dritter Ordnung", "Die Transformation wird nicht nach Wirkung priorisiert, sondern nach Erhalt vertrauter Technologien."],
+    ],
+    frameKey: "technikwunder",
+    redirectQuestion: "Redest du über Wasserstoff für Stahl, Chemie und Langzeitspeicher - oder über Wasserstoff als Ausrede, Elektrifizierung zu verschieben?",
+    dontDo: [
+      "Nicht sagen: Wasserstoff ist Unsinn.",
+      "Nicht Wasserstoff-Forschung abwerten.",
+      "Nicht Stahl, Chemie, Luftfahrt und Schifffahrt vergessen.",
+      "Nicht jeden H2-Einsatz als Greenwashing abtun.",
+      "Nicht direkte Elektrifizierung unterschätzen.",
+      "Nicht so tun, als werde jedes Gasnetz einfach H2-ready.",
+      "Nicht Wasserstoffheizungen als breite Lösung darstellen.",
+      "Nicht Wasserstoff-Pkw als Hauptpfad verkaufen.",
+      "Nicht Importe ohne Nachhaltigkeits- und Abhängigkeitsprüfung romantisieren.",
+      "Nicht Technologieoffenheit als Ausrede für Verzögerung übernehmen.",
+    ],
+    facts: [
+      "Grüner Wasserstoff ist ein wichtiger Baustein der Klimaneutralität.",
+      "Stahlproduktion, Chemie, Ammoniak, Methanol und bestimmte Hochtemperaturprozesse können Wasserstoff oder Derivate benötigen.",
+      "Luftfahrt und Schifffahrt brauchen wahrscheinlich Wasserstoff-Derivate wie E-Kerosin, Ammoniak oder Methanol.",
+      "Langzeitspeicher und Rückverstromung können für Dunkelflauten und Systemresilienz relevant sein.",
+      "Das genehmigte deutsche Wasserstoff-Kernnetz umfasst 9.040 km und soll Industriecluster, Speicher, Häfen, Importpunkte und Kraftwerksstandorte verbinden.",
+      "Emissionsarmer Wasserstoff ist global bisher sehr knapp; viele heutige Wasserstoffmengen werden fossil hergestellt.",
+      "Direkte Elektrifizierung ist in vielen Anwendungen effizienter und schneller.",
+      "H2-ready ist keine Versorgungsgarantie.",
+      "Blauer Wasserstoff ist nicht emissionsfrei und hängt von Methanleckagen, CCS-Rate, Prozessenergie und Speicherqualität ab.",
+    ],
+    consequences: [
+      "Stahl, Chemie und andere No-Regret-Anwendungen bekommen zu wenig oder zu spät grünen Wasserstoff.",
+      "Haushalte kaufen H2-ready-Gasheizungen, obwohl kein bezahlbarer grüner Wasserstoff verfügbar wird.",
+      "Batterieelektrische Mobilität, E-Lkw, Ladeinfrastruktur und Effizienz werden verzögert.",
+      "Erneuerbarer Strom wird ineffizient genutzt, statt direkt dort zu wirken, wo es möglich ist.",
+      "Subventionen und Infrastruktur können in überdimensionierte oder falsche H2-Pfade fließen.",
+      "Emissionen sinken langsamer, wenn Wasserstoff als Aufschubnarrativ wirkt.",
+      "Enttäuschte Wasserstoffversprechen erzeugen Misstrauen gegen Transformation und Wissenschaft.",
+    ],
+    woekSolution: [
+      { title: "Wasserstoff-Hierarchie verbindlich machen", text: "No-Regret-Anwendungen wie Stahl, Chemie, Ammoniak, Methanol, Langzeitspeicher, Luftfahrt und Schifffahrt erhalten Vorrang." },
+      { title: "H2-Wirkungsgate für jede Anwendung", text: "Jede H2-Anwendung muss Verfügbarkeit, Kosten, CO2-Minderung, Alternativenvergleich, Infrastrukturbedarf und Zeitfenster zeigen." },
+      { title: "Direkte Elektrifizierung zuerst prüfen", text: "Wo Strom direkt genutzt werden kann, muss dieser Pfad gegen den H2-Pfad verglichen werden." },
+      { title: "H2-ready-Kommunikation regulieren", text: "H2-ready darf nicht als Zukunftssicherheitsversprechen verkauft werden, wenn kein lokaler H2-Versorgungspfad besteht." },
+      { title: "Kernnetz und Verteilnetz trennen", text: "Das Wasserstoff-Kernnetz wird für Industrie, Speicher, Häfen, Kraftwerke und Korridore geplant - nicht als pauschale Zusage an jede Gasheizung." },
+      { title: "Importe wirkungsbasiert absichern", text: "Importe brauchen Nachhaltigkeitsstandards, Menschenrechtsprüfung, Wasserstressprüfung, Diversifizierung und Partnerschaftslogik." },
+      { title: "Blauen Wasserstoff streng bilanzieren", text: "Methanleckagen, CO2-Abscheidung, Speicherintegrität und Übergangspfad müssen transparent nachgewiesen werden." },
+      { title: "H2-Subventionen nach T-SROI prüfen", text: "Förderung nur dort, wo Wasserstoff robuste Transformationswirkung erzeugt und keine schnellere, günstigere direkte Lösung verdrängt." },
+      { title: "Lernende Wasserstoffstrategie", text: "Bedarf, Erzeugung, Importe, Kosten, Netze, Speicher und Anwendungen werden jährlich als Wirkungsbericht aktualisiert." },
+    ],
+    mpd: {
+      mensch: "Falsche H2-Versprechen können Haushalte, Kommunen und Unternehmen in teure Lock-ins führen. Lösung: transparente Wärmeplanung, H2-Verfügbarkeitsprüfung, soziale Abfederung und klare Priorisierung.",
+      planet: "Knapper grüner Strom wird über ineffiziente H2-Pfade verschwendet, während fossile Emissionen länger bestehen bleiben. Lösung: direkte Elektrifizierung zuerst, Wasserstoff für No-Regret-Anwendungen und Speicher.",
+      demokratie: "Technologieversprechen können als Aufschub wirken und später Vertrauen zerstören. Lösung: Quellenklarheit, Wasserstoff-Hierarchie, offene Daten, Wirkungsberichte und Anti-Hype-Kommunikation.",
+    },
+    sources: [
+      "Bundesnetzagentur - Wasserstoff-Kernnetz",
+      "Bundesnetzagentur - Genehmigung Wasserstoff-Kernnetz",
+      "BMWK - Fortschreibung Nationale Wasserstoffstrategie",
+      "IEA - Global Hydrogen Review 2025",
+      "IEA - Hydrogen",
+      "Agora Energiewende - No-regret hydrogen",
+      "Agora Industry - Prioritising hydrogen for the most effective uses",
+      "Umweltbundesamt - Wasserstoff im künftigen Energiesystem",
+      "Umweltbundesamt - Wasserstoff im Verkehr FAQ",
+      "Fraunhofer ISI - Wasserstoff-Fakten",
+      "SRU - Wasserstoff im Klimaschutz: Klasse statt Masse",
+      "Fraunhofer ISI - CO2-neutrale Prozesswärme",
+    ],
+  },
+  {
     title: "„Klimaschutz deindustrialisiert Deutschland“",
     slug: "klimaschutz-deindustrialisiert-deutschland",
     shortJudgement: "Wahrer Transformationsstress, falsches Niedergangsnarrativ.",
@@ -2039,6 +2228,7 @@ const deepDiveSlugs = [
   "kernenergie-wieder-in-deutschland",
   "kernenergie-einfache-loesung",
   "fusion-loest-das-energieproblem",
+  "wasserstoff-fuer-alles",
 ];
 
 const deepDiveDetails = {
@@ -2561,6 +2751,63 @@ const deepDiveDetails = {
     clipHook: "Fusion ist Hoffnung - aber kein Ersatz für Handeln.",
     caption: "Forschung ja. Aufschub nein.",
   },
+  "wasserstoff-fuer-alles": {
+    title: "Wasserstoff für alles?",
+    subtitle: "Warum Wasserstoff wertvoll ist - aber nicht überall sinnvoll",
+    confidence: "hoch",
+    readingTime: "22 Minuten",
+    leadQuestion: "Wo erzeugt knapper grüner Wasserstoff die höchste positive Netto-Wirkung?",
+    claimAnatomy: {
+      original: "Wir machen das einfach mit Wasserstoff.",
+      extended: "Autos, Heizungen, Gasnetze und Industrie können später einfach mit Wasserstoff weiterlaufen.",
+      trueCore: "Grüner Wasserstoff ist für Klimaneutralität in Stahl, Chemie, bestimmten Hochtemperaturprozessen, Langzeitspeichern, Luftfahrt und Schifffahrt wichtig.",
+      missingContext: "Wasserstoff braucht erneuerbaren Strom, Infrastruktur, Speicher, Transport und Umwandlungsschritte; emissionsarmer Wasserstoff ist bisher knapp.",
+      falseConclusion: "Aus technischer Möglichkeit folgt nicht, dass Wasserstoff überall die beste oder rechtzeitig verfügbare Lösung ist.",
+    },
+    trueText:
+      "Wasserstoff ist eine Schlüsselressource für schwer elektrifizierbare Anwendungen. Gerade deshalb darf er nicht als Allzweckversprechen gegen direkte Elektrifizierung, Effizienz und schnelle Infrastrukturmaßnahmen eingesetzt werden.",
+    missingItems: [
+      "Grüner Wasserstoff braucht erneuerbaren Strom.",
+      "Jeder Umwandlungsschritt verursacht Verluste.",
+      "Emissionsarmer Wasserstoff ist global bisher knapp.",
+      "Direkte Elektrifizierung ist oft effizienter und schneller.",
+      "H2-ready ist keine lokale Versorgungsgarantie.",
+      "Kernnetz und Gasverteilnetz sind nicht dasselbe.",
+      "Importe können neue Abhängigkeiten und Nachhaltigkeitsrisiken schaffen.",
+    ],
+    evidence: {
+      status: "datenbasiert",
+      level: "hoch",
+      uncertainty: "Hoch bei künftigen Kosten, Importmengen, lokalem Netzanschluss, Wasserstress und Verfügbarkeit einzelner Anwendungen.",
+      sourceKeys: ["iea", "agora", "bnetza"],
+    },
+    wirkstoff: {
+      label: "Wasserstoff als Allzweckversprechen",
+      description: "Ein real wichtiger Energieträger wird als universelle Lösung für nahezu alle fossilen Anwendungen gerahmt.",
+      mechanism: "Das Narrativ verschiebt Aufmerksamkeit von Knappheit, Effizienz und Priorisierung auf technische Möglichkeit und Zukunftshoffnung.",
+      resonance: ["Hoffnung auf Weiter-so", "Angst vor Heizungsumbau", "Verbrenneridentität", "Technologieoffenheit", "Kontrollgefühl"],
+    },
+    narrative: {
+      message: "Wir müssen nichts grundsätzlich ändern, weil Wasserstoff später alles ersetzt.",
+      emotional: "Beruhigung, Besitzstandsschutz, Vermeidung von Umbau, Technikhoffnung.",
+      political: "Direkte Elektrifizierung, Wärmewende, E-Mobilität, Effizienz und Netzausbau werden verzögert.",
+    },
+    orders: [
+      ["Wirkung 1. Ordnung", "Wasserstoff wirkt als psychologische Beruhigung für alte Technikpfade."],
+      ["Wirkung 2. Ordnung", "Investitionen in direkte Elektrifizierung, Wärmepumpen, E-Mobilität und Effizienz verlieren Dringlichkeit."],
+      ["Wirkung 3. Ordnung", "Knappe Systemressourcen werden nicht nach Wirkung priorisiert, sondern nach Erhalt vertrauter Infrastruktur."],
+    ],
+    falseActions: [
+      ["Industrie", "Stahl, Chemie und andere No-Regret-Anwendungen bekommen zu wenig oder zu spät grünen Wasserstoff."],
+      ["Gebäude", "Haushalte kaufen H2-ready-Gasheizungen ohne realen Versorgungspfad."],
+      ["Verkehr", "Batterieelektrische Mobilität, E-Lkw, Ladeinfrastruktur und Effizienz werden verzögert."],
+      ["Haushalt", "Subventionen und Infrastruktur fließen in überdimensionierte oder falsche H2-Pfade."],
+      ["Demokratie", "Enttäuschte Wasserstoffversprechen erzeugen Misstrauen gegen Transformation und Wissenschaft."],
+    ],
+    solutionLead: "Die WÖk lehnt Wasserstoff nicht ab. Sie priorisiert ihn als knappe Systemressource.",
+    clipHook: "Wasserstoff ja. Aber dort, wo er wirkt.",
+    caption: "Wasserstoff ist zu wertvoll, um ihn zu verschwenden.",
+  },
 };
 
 function escapeHtml(value) {
@@ -2767,6 +3014,12 @@ const psychologyBySlug = {
     triggers: ["Hoffnung", "Aufschubentlastung", "Erlösungsversprechen"],
     patterns: ["Potenzial mit Wirkung verwechseln", "Zeitpfad verschieben", "heutige Lösungen entwerten"],
     why: "Eine mögliche Zukunftstechnologie nimmt Druck aus heutigen Entscheidungen, obwohl heutige Emissionen weiter wirken.",
+  },
+  "wasserstoff-fuer-alles": {
+    effects: ["Technological Fix Bias", "Status-quo-Bias", "Optimism Bias", "Loss Aversion", "Komplexitätsreduktion"],
+    triggers: ["Hoffnung auf Weiter-so", "Angst vor Heizungsumbau", "Angst vor Autoverlust", "Technologieoffenheit", "Kontrollgefühl"],
+    patterns: ["technische Möglichkeit als Systemlösung", "Knappheit ausblenden", "H2-ready als Sicherheitsanker", "Gasnetz-Rettung", "Aufschub durch Technologieoffenheit"],
+    why: "Wasserstoff verspricht, dass sich möglichst wenig ändern muss: Gasheizung bleibt, Verbrenner bleibt, Tanklogik bleibt, Industrie bleibt. Gleichzeitig klingt Wasserstoff modern und klimafreundlich.",
   },
 };
 
@@ -3431,6 +3684,7 @@ function renderIndustryTransformationDossier(claim, sectionLabel = "live") {
 function renderDeepDiveDetail(claim) {
   if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "detail");
   if (claim.slug === "fusion-loest-das-energieproblem") return renderFusionDossier(claim, "detail");
+  if (claim.slug === "wasserstoff-fuer-alles") return renderHydrogenDossier(claim, "detail");
   const detail = deepDiveDetailFor(claim);
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero theme-hero deep-dive-hero">
@@ -4183,6 +4437,95 @@ const fusionExternalSources = [
   ["UKAEA - Materials challenges for commercial fusion", "Fachpaper zu Materialschäden, Tritium, Transmutation und Neutronenbeschuss.", "Materialschäden, Tritium, Transmutation, Neutronenbeschuss.", "Fachpaper; verständlich zusammenfassen.", "https://scientific-publications.ukaea.uk/wp-content/uploads/UKAEA-CCFE-PR2152.PDF"],
 ];
 
+const hydrogenKeyPoints = [
+  ["Grüner Wasserstoff ist unverzichtbar", "Für Stahl, Chemie, Ammoniak, Methanol, bestimmte Prozesswärme, Langzeitspeicher, Luftfahrt und Schifffahrt wird Wasserstoff oder ein Derivat voraussichtlich benötigt.", "positive"],
+  ["Wasserstoff ist knapp", "Emissionsarmer Wasserstoff ist global noch sehr gering verfügbar. Deshalb muss er priorisiert werden.", "critical"],
+  ["Direkte Elektrifizierung ist oft effizienter", "Wo Strom direkt genutzt werden kann - etwa bei Wärmepumpen, E-Pkw, vielen Industrieprozessen und E-Lkw - ist Wasserstoff häufig energetisch und wirtschaftlich schlechter.", "warning"],
+  ["Nicht jedes Gasnetz wird ein Wasserstoffnetz", "Das deutsche Wasserstoff-Kernnetz ist wichtig, aber kein 1:1-Ersatz für das heutige flächendeckende Erdgasnetz.", "warning"],
+  ["Importe bleiben ein Risiko", "Deutschland wird Wasserstoff und Derivate importieren müssen. Deshalb sind Diversifizierung, Nachhaltigkeitsstandards und Vermeidung neuer Abhängigkeiten zentral.", "warning"],
+  ["WÖk-Lösung: Wasserstoff-Hierarchie", "Wasserstoff wird nach Wirkungspriorität verteilt: zuerst No-Regret-Anwendungen, dann Systemresilienz, zuletzt nur dort, wo keine bessere Alternative existiert.", "positive"],
+];
+
+const hydrogenTrueItems = [
+  "Grüner Wasserstoff ist ein wichtiger Baustein der Klimaneutralität.",
+  "Stahlproduktion kann Wasserstoff als Reduktionsmittel benötigen.",
+  "Chemie, Ammoniak, Methanol und Raffinerieersatzpfade brauchen klimaneutrale Moleküle.",
+  "Luftfahrt und Schifffahrt benötigen wahrscheinlich Wasserstoff-Derivate wie E-Kerosin, Ammoniak oder Methanol.",
+  "Langzeitspeicher und Rückverstromung können für Dunkelflauten und Systemresilienz relevant sein.",
+  "Ein Wasserstoff-Kernnetz kann Industriecluster, Speicher, Häfen, Importpunkte und Kraftwerksstandorte verbinden.",
+  "Importe können notwendig sein, weil Deutschland nicht alle H2-Bedarfe inländisch erzeugen wird.",
+  "Forschung, Elektrolyseure, Infrastruktur, Speicher und Wasserstoffmärkte sind strategisch wichtig.",
+];
+
+const hydrogenMissingItems = [
+  "Grüner Wasserstoff braucht erneuerbaren Strom.",
+  "Elektrolyse, Kompression, Transport, Speicherung, Rückverstromung und Derivateerzeugung verursachen Verluste.",
+  "Emissionsarmer Wasserstoff ist global bisher sehr knapp.",
+  "Viele heutige Wasserstoffmengen werden fossil hergestellt.",
+  "Direkte Elektrifizierung ist oft effizienter und günstiger.",
+  "Wasserstoff fürs Heizen von Gebäuden wäre in vielen Fällen ineffizient und teuer.",
+  "Wasserstoff-Pkw sind für den Massenmarkt gegenüber Batterieautos meist ineffizienter.",
+  "Auch E-Fuels aus Wasserstoff sind im Pkw sehr ineffizient.",
+  "Ein Wasserstoffnetz wird nicht automatisch das heutige Gasnetz ersetzen.",
+  "Importe können neue Abhängigkeiten schaffen.",
+  "Blauer Wasserstoff ist nicht emissionsfrei.",
+  "Wasserstoff darf nicht als Verzögerungsargument gegen heute verfügbare Technologien dienen.",
+];
+
+const hydrogenHierarchy = [
+  ["A) Höchste Priorität / No-Regret", "Stahl-Direktreduktion; Ammoniak und Düngemittel; Methanol und Grundchemikalien; Ersatz fossilen Wasserstoffs in Raffinerien; bestimmte Hochtemperaturprozesse; Langzeitspeicher; bestimmte Kraftwerksreserve.", "zuerst versorgen"],
+  ["B) Hohe Priorität, technologieabhängig", "Schifffahrt über Ammoniak, Methanol oder andere H2-Derivate; Luftfahrt über E-Kerosin/SAF; bestimmte industrielle Wärmeprozesse; schwer elektrifizierbare Spezialtransporte; kritische Resilienz-Anwendungen.", "pfadbezogen prüfen"],
+  ["C) Prüfbereich / Einzelfall", "Schwere Langstrecken-Lkw; nicht elektrifizierte Bahnstrecken; Insel- oder Spezialnetze; Kraft-Wärme-Kopplung in besonderen Industrieclustern.", "route- und systembezogen vergleichen"],
+  ["D) Niedrige Priorität / meist ineffizient", "Private Gebäudewärme im großen Stil; H2-ready-Gasheizungen als allgemeine Lösung; Wasserstoff-Pkw im Massenmarkt; E-Fuels für normale Pkw-Neuwagen; breite Niedertemperaturwärme; ineffiziente Beimischung ins Gasnetz.", "nicht als Standardpfad verkaufen"],
+];
+
+const hydrogenBoundaryMatrix = [
+  ["Molekül", "Kann Wasserstoff fossile Moleküle ersetzen?", "Ja, besonders in Chemie und Industrie", "Strombedarf und Knappheit"],
+  ["Anwendung", "Wo wird H2 genutzt?", "Stahl, Chemie, Verkehr, Wärme, Speicher", "Alternativenvergleich"],
+  ["Effizienz", "Wie viel Nutzenergie bleibt übrig?", "Umwandlungsverluste", "Systemresilienz und Speicherbedarf"],
+  ["Infrastruktur", "Welche Netze, Speicher und Häfen braucht es?", "Kernnetz, Importpunkte, Speicher", "lokale Verfügbarkeit"],
+  ["Zeit", "Wann ist H2 verfügbar?", "2030/2035/2045-Pfade", "kurzfristige Elektrifizierung"],
+  ["Herkunft", "Wie wird H2 erzeugt?", "grün, blau, grau, türkise Pfade", "Methanleckagen, CCS, Strommix"],
+  ["Kosten", "Was kostet die Anwendung?", "CAPEX/OPEX, Strompreis, Transport", "vermiedene fossile Folgekosten"],
+  ["Systemwirkung", "Wo senkt H2 die meisten Emissionen pro kWh Strom?", "Priorisierung", "politische Lieblingsanwendungen"],
+  ["Demokratie", "Wie wird H2 kommuniziert?", "Hoffnung, Technologieoffenheit, Aufschub", "reale Knappheit"],
+];
+
+const hydrogenSubclaims = [
+  ["„Wir heizen künftig einfach mit Wasserstoff“", "Für breite Gebäudewärme meist ineffizient und teuer.", "Wasserstoff kann verbrannt werden und theoretisch Wärme liefern. Der Denkfehler liegt darin, diese technische Möglichkeit mit einer sinnvollen Massenlösung zu verwechseln. Für Niedertemperaturwärme in Gebäuden sind Wärmepumpen, Wärmenetze, Effizienz, Abwärme und Solarthermie in vielen Fällen deutlich sinnvollere Pfade.", "Welche Wärmelösung senkt über 20 Jahre Kosten, Emissionen und Infrastruktur-Risiken am stärksten?"],
+  ["„H2-ready-Heizungen sind zukunftssicher“", "Technische Bereitschaft ist keine Versorgungsgarantie.", "H2-ready klingt nach Zukunftssicherheit. Entscheidend ist aber, ob am konkreten Ort grüner Wasserstoff in ausreichender Menge, zu bezahlbaren Preisen und über ein geeignetes Netz verfügbar sein wird. Ohne Wärmeplanung und Versorgungspfad kann H2-ready zur fossilen Lock-in-Erzählung werden.", "Ist Wasserstoff hier geplant, verfügbar, bezahlbar und wirkungsvoll - oder nur ein Zukunftsversprechen?"],
+  ["„Wasserstoffautos sind besser als E-Autos“", "Für den Massenmarkt meist nicht.", "Wasserstoff-Pkw funktionieren technisch und können in Spezialfällen Vorteile haben. Über die Energiekette ist der Batteriepfad im Massenmarkt aber meist deutlich effizienter, weil Elektrolyse, Verdichtung, Transport, Tankstelle und Brennstoffzelle zusätzliche Verluste erzeugen.", "Welche Mobilitätslösung erzeugt pro kWh erneuerbaren Strom die meiste Nutzwirkung?"],
+  ["„Wasserstoff rettet den Verbrenner“", "E-Fuels und H2-Derivate sind wichtig, aber nicht als Pkw-Massenpfad.", "Synthetische Kraftstoffe können für Luftfahrt, Schifffahrt und bestimmte Spezialfälle nötig sein. Für normale Pkw-Neuwagen ist der Umweg über Wasserstoff und E-Fuels meist sehr ineffizient im Vergleich zur direkten Batterieelektrifizierung.", "Wo sind Moleküle unverzichtbar - und wo ist Strom direkt besser?"],
+  ["„E-Lkw gehen nicht, also brauchen wir H2-Lkw“", "Einzelfallfrage statt Pauschalurteil.", "Schwerlastverkehr muss route- und systembezogen verglichen werden: Depotladen, Megawattladen, Oberleitung, Batteriegröße, Nutzlast, Standzeiten, Strompreis, Netzanschluss und H2-Infrastruktur. Wasserstoff kann Spezialfälle haben, aber nicht als Ausrede gegen E-Lkw-Ausbau dienen.", "Welche Route, welches Ladefenster und welcher Infrastrukturpfad erzeugen die beste Wirkung?"],
+  ["„Blauer Wasserstoff ist klimaneutral“", "Nicht automatisch: Methanleckagen, CCS-Rate, Prozessenergie und Speicherqualität entscheiden.", "Blauer Wasserstoff wird meist aus Erdgas hergestellt, wobei CO2 abgeschieden und gespeichert werden soll. Seine Klimawirkung hängt stark von Methanleckagen, Abscheiderate, Energieeinsatz, Transport, Speicherintegrität und Systemgrenzen ab.", "Welche Emissionen entstehen über die gesamte Kette - und beschleunigt oder verzögert blauer Wasserstoff den grünen Pfad?"],
+  ["„Das Gasnetz wird einfach Wasserstoffnetz“", "Teilweise Umstellung ja, 1:1-Ersatz nein.", "Ein Teil bestehender Erdgasleitungen kann für Wasserstoff umgestellt werden. Aber daraus folgt nicht, dass das gesamte heutige Gasverteilnetz in Wohngebieten einfach weitergenutzt wird. Kernnetz, Verteilnetz und Hausanschluss sind unterschiedliche Fragen.", "Welche Leitungen verbinden echte Wasserstoff-Bedarfe - und welche Gasnetze müssen stattdessen zurückgebaut oder umgewidmet werden?"],
+  ["„Wasserstoff macht uns unabhängig“", "Nur mit diversifizierten, nachhaltigen Lieferketten.", "Deutschland wird Wasserstoff und Derivate importieren müssen. Das kann Resilienz erhöhen, kann aber auch neue Abhängigkeiten, Wasserstress, Menschenrechtsrisiken oder geopolitische Konzentrationen erzeugen.", "Welche Importpfade sind diversifiziert, nachhaltig, überprüfbar und partnerschaftlich?"],
+];
+
+const hydrogenManipulationPatterns = [
+  ["Technische Möglichkeit als Systemlösung", "Weil Wasserstoff technisch verwendet werden kann, wird er als sinnvolle Lösung dargestellt.", "Technik, Effizienz, Kosten, Verfügbarkeit und Alternativen trennen."],
+  ["Knappheit ausblenden", "Wasserstoff wird behandelt, als stünde er künftig unbegrenzt zur Verfügung.", "Verfügbarkeit, erneuerbaren Strombedarf und Prioritäten zeigen."],
+  ["H2-ready als Sicherheitsanker", "Technische Umrüstbarkeit wird als Zukunftssicherheit verkauft.", "H2-ready ist nicht H2-verfügbar."],
+  ["Gasnetz-Rettung", "Das Kernnetz wird als Argument genutzt, das heutige Gasverteilnetz unverändert zu erhalten.", "Kernnetz, Verteilnetz und Hausanschluss trennen."],
+  ["Fossile Infrastruktur retten", "Wasserstoff dient als Erzählung, fossile Heizungen, Verbrenner oder Gasnetze weiter zu rechtfertigen.", "Lock-in-Risiken und Alternativenvergleich sichtbar machen."],
+  ["Aufschub durch Technologieoffenheit", "Technologieoffenheit wird zur Begründung, wirksame Entscheidungen zu vertagen.", "Wirkungsoffenheit statt Schein-Offenheit: Was wirkt wann?"],
+];
+
+const hydrogenExternalSources = [
+  ["Bundesnetzagentur - Wasserstoff-Kernnetz", "BNetzA beschreibt Umfang, Inbetriebnahme, Umstellungsanteil und Investitionskosten des genehmigten Kernnetzes.", "9.040 km Kernnetz; 60 Prozent Umstellung bestehender Erdgasleitungen; 18,9 Mrd. Euro Investitionskosten; Inbetriebnahme bis 2032.", "Kernnetz nicht mit flächendeckendem Gasverteilnetz verwechseln.", "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Wasserstoff/Kernnetz/start.html"],
+  ["Bundesnetzagentur - Genehmigung Wasserstoff-Kernnetz", "Pressemitteilung zur Genehmigung des Wasserstoff-Kernnetzes am 22. Oktober 2024.", "Genehmigung, Neubau-/Umstellungsanteile, Investitionskosten.", "Projektfortschritt regelmäßig prüfen.", "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2024/20241022_H2Kernnetz.html"],
+  ["BMWK - Fortschreibung Nationale Wasserstoffstrategie", "Strategie der Bundesregierung zu Elektrolyseziel, Importen und Hochlauf.", "10 GW Elektrolyseziel 2030, Importstrategie, Wasserstoffhochlauf.", "Strategieziele sind keine gesicherte tatsächliche Verfügbarkeit.", "https://www.bmwk.de/Redaktion/DE/Publikationen/Energie/fortschreibung-nationale-wasserstoffstrategie.html"],
+  ["IEA - Global Hydrogen Review 2025", "Globaler Überblick über Produktion, Projektpipeline und emissionsarmen Wasserstoff.", "globale Wasserstoffproduktion, emissionsarmer Wasserstoff, Markthochlauf.", "Globale Daten nicht direkt auf lokale Verfügbarkeit übertragen.", "https://www.iea.org/reports/global-hydrogen-review-2025"],
+  ["IEA - Hydrogen", "IEA-Seite zur heutigen Nachfrage, fossilen Dominanz und Einsatzsektoren.", "fast 100 Mio. t globale Nachfrage 2024, fossile Dominanz heutiger H2-Produktion.", "Low-emissions, renewable und fossil sauber trennen.", "https://www.iea.org/energy-system/low-emission-fuels/hydrogen"],
+  ["Agora Energiewende - No-regret hydrogen", "Studie zu unverzichtbarer Nachfrage, Infrastruktur und grünem Korridor.", "No-Regret-Anwendungen, kleineres H2-Netz als heutiges Erdgasnetz, Oversizing-Risiko.", "Strategische Studie, nicht Rechtsquelle.", "https://www.agora-energiewende.org/publications/no-regret-hydrogen"],
+  ["Agora Industry - Prioritising hydrogen", "Priorisierung von Wasserstoff für die wirksamsten Anwendungen.", "Industriefeedstocks, Aviation, Shipping, seasonal storage.", "Nicht jede Anwendung ist überall gleich zu bewerten.", "https://www.agora-industry.org/fileadmin/Projekte/2025/2025-04_INT_No-regret-H2/A_IND_Prioritising_hydrogen_WEB.pdf"],
+  ["Umweltbundesamt - Wasserstoff im Energiesystem", "Grundsatzquelle zu grünem Wasserstoff und seiner Rolle im künftigen Energiesystem.", "grüner Wasserstoff, Elektrolyse, Rolle im Energiesystem.", "Grundsatzquelle; Anwendungsspezifika ergänzen.", "https://www.umweltbundesamt.de/themen/klima-energie/klimaschutz-energiepolitik-in-deutschland/wasserstoff-schluessel-im-kuenftigen-energiesystem"],
+  ["Umweltbundesamt - Wasserstoff im Verkehr FAQ", "UBA differenziert Wasserstoffanwendungen im Verkehr.", "Pkw, Lkw, Luftfahrt, Schifffahrt, Verkehrswende.", "Anwendungen differenziert darstellen.", "https://www.umweltbundesamt.de/themen/verkehr/kraftstoffe-antriebe/wasserstoff-im-verkehr-haeufig-gestellte-fragen"],
+  ["Fraunhofer ISI - Wasserstoff-Fakten", "Systematisches Review zu Wasserstoff, Effizienz und Anwendungen.", "Effizienz, E-Fuels im Pkw, 15 Prozent Well-to-Wheel-Wirkungsgrad.", "Einzelzahlen kontextualisieren.", "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/t/2026/2026-03_wasserstoff-fakten_review.pdf"],
+  ["SRU - Wasserstoff im Klimaschutz: Klasse statt Masse", "SRU-Themenseite Klima und Energie mit Publikation Wasserstoff im Klimaschutz: Klasse statt Masse.", "knapper Energieträger, Priorisierung, direkte Elektrifizierung.", "Themenseite statt direkter PDF-Link, weil der PDF-/Pressepfad serverseitig teils 400 liefert.", "https://www.umweltrat.de/DE/Themen/Klima-und-Energie/klima-und-energie_node.html"],
+  ["Fraunhofer ISI - CO2-neutrale Prozesswärme", "Policy Brief zu Prozesswärme, Elektrifizierung und Wasserstoff.", "Prozesswärme, Elektrifizierung vs Wasserstoff, Industrieanwendungen.", "Branchen- und Temperaturbereiche unterscheiden.", "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/policy-briefs/2024-07_policy_brief_prozesswaerme_co2-neutral_elektrifizierung_wasserstoff.pdf"],
+];
+
 const windKeyPoints = [
   ["Vögel und Fledermäuse sind reale Schutzgüter", "Windenergie kann Kollisionen, Störungen und Habitatkonflikte verursachen. Das muss über Standortwahl, Monitoring und Schutzmaßnahmen ernsthaft minimiert werden.", "warning"],
   ["Fossile Alternativen sind nicht naturneutral", "Kohle, Öl und Gas verursachen Klimaschäden, Luftschadstoffe, Wasserbelastungen, Bergbaufolgen, Flächenverbrauch und Biodiversitätsverluste.", "critical"],
@@ -4237,6 +4580,126 @@ const windExternalSources = [
   ["Fraunhofer ISE - Stromgestehungskosten 2024", "Kostenvergleich verschiedener Stromerzeugungstechnologien.", "Kosten- und Alternativenvergleich.", "Stromgestehungskosten sind nicht Endkundenpreis; Systemkosten ergänzen.", "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/studie-stromgestehungskosten-erneuerbare-energien.html"],
   ["UBA - Emissionsbilanz erneuerbarer Energieträger", "Vermiedene Emissionen durch erneuerbare Energien.", "Systemnutzen und fossile Verdrängung.", "Jahresbezogene Bilanz; Standortwirkung separat prüfen.", "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/03_2025_cc_emissionsbilanz_erneuerbarer_energien_2023.pdf"],
 ];
+
+function renderHydrogenDossier(claim, mode = "live") {
+  const answers = expandedAnswers(claim);
+  const sectionLabel = mode === "detail" ? "Detail" : "Live";
+  const canonicalPath = mode === "detail" ? "detail" : "live";
+  const matrixTable = (caption, rows, columns) => `<div class="dossier-matrix-wrap">
+            <table class="dossier-matrix">
+              <caption>${escapeHtml(caption)}</caption>
+              <thead><tr>${columns.map((column) => `<th>${escapeHtml(column)}</th>`).join("")}</tr></thead>
+              <tbody>${rows.map((row) => `<tr>${row.map((cell, index) => index === 0 ? `<th scope="row">${escapeHtml(cell)}</th>` : `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+            </table>
+          </div>`;
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero theme-hero dossier-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / Wasserstoff</nav>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <h1 class="hero-title">Wasserstoff für alles?</h1>
+          <p class="hero-subtitle">Warum Wasserstoff wertvoll ist - aber nicht überall sinnvoll.</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
+          <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Hinweis: Wasserstoff ist Systemressource, nicht Universalenergie</span></p>
+        </div>
+      </section>
+      ${summaryGrid(hydrogenKeyPoints, "Das Wichtigste in 6 Punkten")}
+      <nav class="topic-subnav" aria-label="Dossier Navigation" data-search-exclude>
+        <a href="#live-antworten">Live antworten</a>
+        <a href="#wasserstoff-hierarchie">Wasserstoff-Hierarchie verstehen</a>
+        <a href="#deep-dive-quellen">Deep Dive &amp; Quellen</a>
+      </nav>
+      <section class="section dossier-tab-panel" id="live-antworten">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Wasserstoff anerkennen, Verschwendung stoppen.</h2></div>
+          <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
+            <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
+            <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span> <span class="radar-answer-label">Lange Antwort · ${words(answers.two_minutes)} Wörter</span></summary><p>„${escapeHtml(answers.two_minutes)}“</p></details>
+          </div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Wasserstoff löst alles“. Die richtige Wirkungsfrage lautet: Wo erzeugt knapper grüner Wasserstoff die höchste Netto-Wirkung?</p></article>
+            <article class="card"><p class="card-kicker">Kernformel</p><h3 class="card-title">Wasserstoff ist zu wertvoll, um ihn zu verschwenden.</h3><p class="card-text">Wasserstoff ja. Aber dort, wo er wirkt.</p></article>
+            <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft dossier-tab-panel" id="wasserstoff-hierarchie">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Wasserstoff-Hierarchie verstehen</p><h2>Der Umweg zählt.</h2><p>Wasserstoff ist kein Primärenergieträger, der einfach aus der Erde kommt. Grüner Wasserstoff wird mit erneuerbarem Strom hergestellt. Jeder Umwandlungsschritt kostet Energie, Infrastruktur und Geld. Deshalb muss Wasserstoff dort eingesetzt werden, wo er wirklich gebraucht wird - nicht dort, wo direkte Elektrifizierung besser funktioniert.</p></div>
+          ${summaryGrid([["Kernsatz", "Wasserstoff ist keine Energiequelle wie Sonne oder Wind. Er ist ein Energieträger, der erst mit Aufwand hergestellt werden muss.", "warning"], ["Zweiter Kernsatz", "Ist Wasserstoff hier die beste Lösung - oder nur die bequemste Erzählung?", "critical"], ["Leitsatz", "Die Wasserstoffwirtschaft scheitert nicht an zu wenig Euphorie, sondern an falscher Priorisierung.", "positive"]], "Wasserstoff Kernsätze")}
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Was stimmt?</p>${htmlList(hydrogenTrueItems)}</article>
+            <article class="card"><p class="card-kicker">Was fehlt?</p>${htmlList(hydrogenMissingItems)}<p class="card-text"><strong>Kernsatz:</strong> Der Denkfehler ist nicht Wasserstoff. Der Denkfehler ist Wasserstoff ohne Priorisierung.</p></article>
+          </div>
+          ${matrixTable("Die Wasserstoff-Hierarchie: Wo H2 zuerst wirken sollte", hydrogenHierarchy, ["Priorität", "Anwendungen", "WÖk-Regel"])}
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Direktstrom</p><h3 class="card-title">Erneuerbarer Strom → Elektromotor / Wärmepumpe / Prozesswärme</h3><p class="card-text">Der direkte Pfad vermeidet Umwandlungsschritte und ist häufig effizienter.</p></article>
+            <article class="card"><p class="card-kicker">Wasserstoffpfad</p><h3 class="card-title">Erneuerbarer Strom → Elektrolyse → H2 → Transport/Speicher → Nutzenergie</h3><p class="card-text">Der H2-Pfad ist dort sinnvoll, wo der Umweg nötig ist. Nicht dort, wo der direkte Weg funktioniert.</p></article>
+          </div>
+          ${matrixTable("Welche Systemgrenze wird falsch gesetzt?", hydrogenBoundaryMatrix, ["Bilanzgrenze", "Leitfrage", "Was sie zeigt", "Was sie ausblenden kann"])}
+          <section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Unterclaims</p><h2>Typische Wasserstoff-Stöckchen sauber einordnen.</h2></div><div class="radar-answer-accordion">
+            ${hydrogenSubclaims.map(([title, shortJudgement, text, question]) => `<details class="radar-answer-item"><summary><span class="radar-answer-time">${escapeHtml(title)}</span> <span class="radar-answer-label">${escapeHtml(shortJudgement)}</span></summary><p>${escapeHtml(text)}</p><p><strong>Bessere Wirkungsfrage:</strong> ${escapeHtml(question)}</p></details>`).join("\n            ")}
+          </div></div></section>
+        </div>
+      </section>
+      <section class="section dossier-tab-panel" id="deep-dive-quellen">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Deep Dive &amp; Quellen</p><h2>Knappheit, Effizienz, Priorisierung und Lock-in.</h2></div>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker">Wirkstoffanalyse</p><h3 class="card-title">Wasserstoff als Allzweckversprechen</h3><p class="card-text">Ein real wichtiger Energieträger wird als universelle Lösung für nahezu alle fossilen Anwendungen gerahmt. Das verschiebt Aufmerksamkeit von Knappheit, Effizienz und Priorisierung auf technische Möglichkeit und Zukunftshoffnung.</p>${htmlList(["erneuerbarer Strombedarf", "Elektrolyseverluste", "Transport und Speicherung", "direkte Elektrifizierung", "Wärmepumpen", "E-Mobilität", "Stahl und Chemie als No-Regret", "Importabhängigkeiten", "blauer Wasserstoff und Methanleckagen", "Wasserstoff-Kernnetz vs Gasverteilnetz", "Opportunitätskosten", "fossile Lock-ins"])}</article>
+            <article class="card"><p class="card-kicker">Narrativanalyse</p><h3 class="card-title">Wasserstoff als psychologische Beruhigung.</h3><p class="card-text">Typische Botschaft: Wir müssen nichts grundsätzlich ändern, weil Wasserstoff später alles ersetzt. Emotional wirkt das als Besitzstandsschutz; politisch kann es direkte Elektrifizierung, Wärmewende, E-Mobilität, Effizienz und Netzausbau verzögern.</p></article>
+          </div>
+          ${renderPsychologyModule(claim)}
+          <div class="section-header"><p class="hero-kicker">Manipulationsmuster</p><h2>Welche Spielchen im Frame stecken.</h2></div>
+          <div class="card-grid deep-dive-source-grid">${hydrogenManipulationPatterns.map(([label, description, counter]) => `<article class="card"><p class="card-kicker">Manipulationsmuster</p><h3 class="card-title">${escapeHtml(label)}</h3><p class="card-text">${escapeHtml(description)}</p><p class="card-text"><strong>Gegenbewegung:</strong> ${escapeHtml(counter)}</p></article>`).join("")}</div>
+          <div class="section-header"><p class="hero-kicker">Wirkungspfad</p><h2>Von Hoffnung zu Lock-in.</h2></div>
+          <ol class="timeline radar-flow radar-effect-path">${claim.effectPath.map(([label, description], index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p></div></li>`).join("")}</ol>
+          <section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Folgen falschen Handelns</p><h2>Was wahrscheinlicher wird.</h2></div><div class="card-grid">${claim.consequences.map((item) => `<article class="card"><p class="card-kicker">Folge</p><h3 class="card-title">${escapeHtml(item)}</h3></article>`).join("")}</div></div></section>
+          ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], `${claim.title} MPD`, "mpd-impact-panel")}
+          ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, "critical"]], `${claim.title} SDG`, "climate-sdg-panel")}
+          ${woekSolutionMatrix(claim.woekSolution)}
+          ${summaryGrid([["SDG 7", "Erneuerbarer Strombedarf pro Nutzwirkung und H2-Verfügbarkeit.", "positive"], ["SDG 9", "Dekarbonisierung schwer elektrifizierbarer Prozesse und Kernnetz-/Speicherwirkung.", "positive"], ["SDG 12", "H2-Derivate, Ammoniak, Methanol, E-Kerosin und chemische Grundstoffe.", "neutral"], ["SDG 13", "CO2-Minderung im relevanten Zeitfenster 2030/2035/2045.", "critical"], ["SDG 6", "Wasserstress in H2-Erzeugungsregionen und Importpartnerschaften.", "warning"], ["SDG+", "Hype- und Lock-in-Risiko.", "warning"]], "Relevante WÖk-Indikatorfamilien", "deep-dive-inline-summary")}
+          <section class="section section-soft" aria-labelledby="hydrogen-links">
+            <div class="card">
+              <p class="card-kicker">Interne Links</p>
+              <h2 class="card-title" id="hydrogen-links">Narrative, Begriffe und verwandte Dossiers.</h2>
+              <div class="radar-link-cluster">
+                <a href="/wirkungsradar/narrative/wasserstoff-als-allheilmittel/">Wasserstoff als Allheilmittel</a>
+                <a href="/wirkungsradar/narrative/h2-ready-zukunftsversprechen/">H2-ready-Zukunftsversprechen</a>
+                <a href="/wirkungsradar/narrative/gasnetz-rettungsframe/">Gasnetz-Rettungsframe</a>
+                <a href="/wirkungsradar/narrative/technologieoffenheit-als-verzoegerung/">Technologieoffenheit als Verzögerung</a>
+                <a href="/wirkungsradar/narrative/wasserstoff-heizungsversprechen/">Wasserstoff-Heizungsversprechen</a>
+                <a href="/wirkungsradar/narrative/knappheit-ausblenden/">Knappheit ausblenden</a>
+                <a href="/begriffe/gruener-wasserstoff/">Grüner Wasserstoff</a>
+                <a href="/begriffe/blauer-wasserstoff/">Blauer Wasserstoff</a>
+                <a href="/begriffe/wasserstoff-hierarchie/">Wasserstoff-Hierarchie</a>
+                <a href="/begriffe/no-regret-anwendung/">No-Regret-Anwendung</a>
+                <a href="/begriffe/h2-ready/">H2-ready</a>
+                <a href="/begriffe/wasserstoff-kernnetz/">Wasserstoff-Kernnetz</a>
+                <a href="/begriffe/direkte-elektrifizierung/">Direkte Elektrifizierung</a>
+                <a href="/begriffe/fossiler-lock-in/">Fossiler Lock-in</a>
+                <a href="/wirkungsradar/live/heizgesetz-heizhammer-narrativ/">Heizgesetz / Heizhammer</a>
+                <a href="/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/">E-Autos und Lebenszyklus</a>
+                <a href="/wirkungsradar/live/fusion-loest-das-energieproblem/">Fusion löst das Energieproblem?</a>
+              </div>
+            </div>
+          </section>
+          ${sourceCards(hydrogenExternalSources)}
+          ${internalLinks()}
+          ${factStatusBadge()}
+        </div>
+      </section>
+    </main>`;
+  return pageShell({
+    title: `Wasserstoff für alles? - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
+    description: sentence(claim.abstract),
+    canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
+    base: "../../../",
+    main,
+  });
+}
 
 function renderFusionDossier(claim, mode = "live") {
   const answers = expandedAnswers(claim);
@@ -4610,6 +5073,7 @@ function renderLiveCard(claim) {
   if (claim.slug === "co2-preis-oder-fossile-systemkosten") return renderCo2SystemCostsDossier(claim, "live");
   if (claim.slug === "windraeder-voegel-wald-beton-rueckbau") return renderWindEnergyNatureDossier(claim, "live");
   if (claim.slug === "fusion-loest-das-energieproblem") return renderFusionDossier(claim, "live");
+  if (claim.slug === "wasserstoff-fuer-alles") return renderHydrogenDossier(claim, "live");
   if (claim.slug === "klimaschutz-deindustrialisiert-deutschland") return renderIndustryTransformationDossier(claim, "live");
   const sources = claim.sources.map(slugSource);
   const answers = expandedAnswers(claim);
@@ -4755,6 +5219,27 @@ const fusionGlossaryTerms = [
   ["aufschubnarrativ", "Aufschubnarrativ", "Ein Aufschubnarrativ verzögert heutiges Handeln mit Verweis auf spätere Technologien oder spätere Lösungen.", "Aufschubnarrative wirken beruhigend, erhöhen aber künftige Risiken."],
 ];
 
+const hydrogenNarrativePages = [
+  ["wasserstoff-als-allheilmittel", "Wasserstoff als Allheilmittel", "Wenn ein wichtiger Energieträger zur universellen Lösung überdehnt wird.", "hoch", "Wasserstoff ist wichtig. Problematisch wird der Frame, wenn daraus eine universelle Weiter-so-Lösung für Autos, Heizungen, Gasnetze und fossile Infrastruktur wird. Knappheit, Effizienz und Priorisierung verschwinden.", "Wasserstoff anerkennen, Knappheit zeigen und die Wasserstoff-Hierarchie verlangen."],
+  ["h2-ready-zukunftsversprechen", "H2-ready-Zukunftsversprechen", "Wenn technische Umrüstbarkeit als Versorgungssicherheit verkauft wird.", "hoch", "H2-ready klingt nach Sicherheit. Der Denkfehler liegt darin, technische Möglichkeit mit realer lokaler Verfügbarkeit, bezahlbarem Preis und Netzentscheidung zu verwechseln.", "H2-ready und H2-verfügbar trennen."],
+  ["gasnetz-rettungsframe", "Gasnetz-Rettungsframe", "Wenn Wasserstoff alte fossile Infrastruktur politisch absichert.", "hoch", "Das Kernnetz ist relevant für Industrie, Speicher, Häfen und Korridore. Problematisch wird es, wenn daraus ein Versprechen für jedes heutige Gasverteilnetz und jede Gasheizung gemacht wird.", "Kernnetz, Verteilnetz und Hausanschluss trennen."],
+  ["technologieoffenheit-als-verzoegerung", "Technologieoffenheit als Verzögerung", "Wenn Offenheit zur Ausrede gegen wirksame Entscheidungen wird.", "hoch", "Technologieoffenheit ist sinnvoll, wenn sie Wirkung vergleicht. Sie wird zum Verzögerungsframe, wenn verfügbare Lösungen blockiert werden, obwohl ihre Wirkung schneller, günstiger und effizienter ist.", "Nicht Schein-Offenheit akzeptieren, sondern fragen: Was wirkt wann?"],
+  ["wasserstoff-heizungsversprechen", "Wasserstoff-Heizungsversprechen", "Wenn Gebäudewärme auf eine knappe Industrie-Ressource verschoben wird.", "hoch", "Wasserstoff kann Wärme erzeugen, ist aber für breite Niedertemperaturwärme meist ein ineffizienter Pfad. Das Versprechen wirkt, weil es Umbauangst reduziert.", "Wärmepumpe, Wärmenetz, Effizienz und lokalen H2-Pfad vergleichen."],
+  ["knappheit-ausblenden", "Knappheit ausblenden", "Wenn eine Ressource so behandelt wird, als sei sie unbegrenzt verfügbar.", "hoch", "Der Frame überspringt die zentrale Frage: Wie viel grüner Wasserstoff ist wann verfügbar und wo erzeugt er die größte Wirkung? Ohne Knappheit wird Priorisierung unsichtbar.", "Verfügbarkeit, Strombedarf, Kosten und No-Regret-Anwendungen zuerst klären."],
+];
+
+const hydrogenGlossaryTerms = [
+  ["gruener-wasserstoff", "Grüner Wasserstoff", "Wasserstoff, der durch Elektrolyse mit Strom aus erneuerbaren Energien hergestellt wird.", "Grüner Wasserstoff ist klimawirksam, wenn der Strom wirklich erneuerbar und zusätzlich verfügbar ist."],
+  ["blauer-wasserstoff", "Blauer Wasserstoff", "Wasserstoff aus fossilem Erdgas, bei dem CO2 abgeschieden und gespeichert werden soll.", "Blauer Wasserstoff ist nicht automatisch klimaneutral. Methanleckagen, CCS-Rate und Speicherqualität entscheiden."],
+  ["wasserstoff-hierarchie", "Wasserstoff-Hierarchie", "Priorisierung von Wasserstoff-Anwendungen nach Knappheit, Alternativen, Emissionswirkung, Systemnutzen und Effizienz.", "Wasserstoff zuerst dort einsetzen, wo er wirklich gebraucht wird."],
+  ["no-regret-anwendung", "No-Regret-Anwendung", "Anwendung, bei der Wasserstoff mit hoher Wahrscheinlichkeit auch langfristig sinnvoll und schwer ersetzbar ist.", "Typische No-Regret-Felder sind Stahl, Chemie, Ammoniak, Methanol, Langzeitspeicher, Luftfahrt und Schifffahrt."],
+  ["h2-ready", "H2-ready", "Technische Eigenschaft, dass eine Anlage perspektivisch auf Wasserstoff umgestellt werden könnte.", "H2-ready heißt nicht, dass grüner Wasserstoff verfügbar oder bezahlbar sein wird."],
+  ["wasserstoff-kernnetz", "Wasserstoff-Kernnetz", "Geplantes deutsches Leitungsnetz für den Transport von Wasserstoff zwischen Erzeugung, Import, Speichern und großen Verbrauchszentren.", "Das Kernnetz ist keine Zusage, dass jede heutige Gasheizung Wasserstoff bekommt."],
+  ["elektrolyse", "Elektrolyse", "Verfahren, bei dem Wasser mit elektrischer Energie in Wasserstoff und Sauerstoff gespalten wird.", "Elektrolyse braucht viel Strom. Deshalb zählt die Herkunft und Verfügbarkeit des Stroms."],
+  ["direkte-elektrifizierung", "Direkte Elektrifizierung", "Nutzung von Strom direkt in Anwendungen wie Elektromotoren, Wärmepumpen oder elektrischer Prozesswärme.", "Direkte Elektrifizierung vermeidet Umwandlungsverluste und ist oft effizienter als Wasserstoffpfade."],
+  ["fossiler-lock-in", "Fossiler Lock-in", "Festlegung auf fossile Technik oder Infrastruktur, die spätere klimaneutrale Lösungen erschwert oder verteuert.", "H2-Versprechen können fossile Lock-ins erzeugen, wenn sie heutige Gas- oder Verbrennerentscheidungen rechtfertigen."],
+];
+
 const evGlossaryTerms = [
   ["ladeangst", "Ladeangst", "Sorge, ein Elektrofahrzeug nicht rechtzeitig, nicht zuverlässig oder nicht schnell genug laden zu können.", "Ladeangst entsteht oft aus realen Einzelfällen, fehlender Erfahrung oder schlechter Infrastruktur. Gegenmittel sind Verfügbarkeit, Schnellladen, Alltagsladen und transparente Informationen."],
   ["alltagsladen", "Alltagsladen", "Laden an Orten, an denen Fahrzeuge ohnehin stehen, etwa zuhause, am Arbeitsplatz, beim Einkauf, im Parkhaus oder am Hotel.", "Alltagsladen reduziert Ladezeit als Zusatzaufwand, weil Standzeit zu Ladezeit wird."],
@@ -4836,6 +5321,31 @@ function renderFusionNarrativePage([slug, title, subtitle, riskLevel, abstract, 
           <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht zynisch werden. Erst Forschung anerkennen, dann Entwicklungsstufe, Zeitfenster, Netzwirkung und Opportunitätskosten klären.</p></article>
         </div>
         <p><a class="btn btn-primary" href="../../live/fusion-loest-das-energieproblem/">Fusion-Dossier öffnen</a></p>
+      </section>
+    </main>`;
+  return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
+}
+
+function renderHydrogenNarrativePage([slug, title, subtitle, riskLevel, abstract, response]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero narrative-hero">
+        <div class="radar-hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">Narrative</a> / ${escapeHtml(title)}</nav>
+          <p class="hero-kicker">Narrativbibliothek · Wasserstoff &amp; Priorisierung</p>
+          <h1 class="hero-title">${escapeHtml(title)}</h1>
+          <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(abstract)}</p>
+          <p class="radar-status-line"><span>Status: veröffentlicht</span><span>Datenstand: ${UPDATED_AT}</span><span>Wirkungsrisiko: ${escapeHtml(riskLevel)}</span></p>
+        </div>
+      </section>
+      ${topicSubnav("Narrative", "../")}
+      ${summaryGrid([["Risiko", riskLevel, riskLevel === "hoch" ? "critical" : "warning"], ["Typische Wirkung", "Knappheit und Effizienz verschwinden hinter Weiter-so-Hoffnung.", "warning"], ["Gegenbewegung", response, "positive"], ["Leuchtturm-Dossier", "Wasserstoff für alles?", "positive"]], `${title} Summary`)}
+      <section class="section">
+        <div class="card-grid two">
+          <article class="card"><p class="card-kicker">Psychologischer Hebel</p><h2 class="card-title">Zukunft und Besitzstandsschutz zugleich.</h2><p class="card-text">Technological Fix Bias, Status-quo-Bias, Optimism Bias, Loss Aversion und Komplexitätsreduktion machen Wasserstoff als Weiter-so-Versprechen besonders attraktiv.</p></article>
+          <article class="card"><p class="card-kicker">Souverän reagieren</p><h2 class="card-title">${escapeHtml(response)}</h2><p class="card-text">Nicht technikfeindlich klingen. Erst Wasserstoff als wichtige Ressource anerkennen, dann Knappheit, Effizienz, Verfügbarkeit, Alternativen und No-Regret-Anwendungen klären.</p></article>
+        </div>
+        <p><a class="btn btn-primary" href="../../live/wasserstoff-fuer-alles/">Wasserstoff-Dossier öffnen</a></p>
       </section>
     </main>`;
   return pageShell({ title: `${title} | Wirkungsradar Narrative | Wirkungsökonomie`, description: subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/narrative/${slug}/`, base: "../../../", main });
@@ -4928,6 +5438,27 @@ function renderFusionGlossaryPage([slug, label, definition, hover]) {
         <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
         <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
         <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, Fusionsforschung nicht als Lagerfrage zu behandeln, sondern nach Entwicklungsstufe, Zeitfenster, Netzwirkung, Kosten und Alternativenwirkung zu prüfen.</p></section>
+      </div>
+    </main>`;
+  return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
+}
+
+function renderHydrogenGlossaryPage([slug, label, definition, hover]) {
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="term-hero">
+        <div class="term-hero__copy">
+          <nav class="breadcrumb"><a href="../">Begriffe</a> / ${escapeHtml(label)}</nav>
+          <p class="eyebrow">Glossar der Wirkungsökonomie</p>
+          <h1>${escapeHtml(label)}</h1>
+          <p class="lead">${escapeHtml(definition)}</p>
+          <p class="term-meta">Kategorie: Wirkungsradar · Wasserstoff · Priorisierung · Datenstand: ${UPDATED_AT}</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsradar/live/wasserstoff-fuer-alles/">Wasserstoff-Dossier</a><a class="btn btn-secondary" href="../">Alle Begriffe</a></div>
+        </div>
+      </section>
+      <div class="term-page">
+        <section class="term-section-card"><h2>Kurz erklärt</h2><p>${escapeHtml(definition)}</p></section>
+        <section class="term-section-card"><h2>Warum wichtig?</h2><p>${escapeHtml(hover)}</p></section>
+        <section class="term-section-card"><h2>WÖk-Bezug</h2><p>Der Begriff hilft, Wasserstoff als knappe Systemressource zu bewerten: nach Verfügbarkeit, Effizienz, Infrastruktur, Alternativenvergleich, Lock-in-Risiko und positiver Netto-Wirkung.</p></section>
       </div>
     </main>`;
   return pageShell({ title: `${label} | Glossar der Wirkungsökonomie`, description: definition, canonical: `https://wirkungsoekonomie.de/begriffe/${slug}/`, base: "../../", main });
@@ -5030,6 +5561,16 @@ writeFile("content/wirkungsradar/source-packs/fusion-energy-v1.yaml", `# Generat
     { label: title, url, use_for: [use_for], warning, shows },
   ])),
 }).trim()}\n`);
+writeFile("content/wirkungsradar/source-packs/hydrogen-prioritisation-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
+  id: "hydrogen-prioritisation-v1",
+  last_verified: UPDATED_AT,
+  update_frequency: "quarterly",
+  dossier: "wasserstoff-fuer-alles",
+  sources: Object.fromEntries(hydrogenExternalSources.map(([title, shows, use_for, warning, url]) => [
+    title.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, ""),
+    { label: title, url, use_for: [use_for], warning, shows },
+  ])),
+}).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/industry-transformation-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml(industrySourcePack).trim()}\n`);
 writeFile("content/wirkungsradar/source-packs/nuclear-germany-v1.yaml", `# Generated by scripts/wirkungsradar/build-climate-energy-cluster.mjs\n${toYaml({
   id: "nuclear-germany-v1",
@@ -5116,6 +5657,9 @@ for (const narrative of windNarrativePages) {
 for (const narrative of fusionNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderFusionNarrativePage(narrative));
 }
+for (const narrative of hydrogenNarrativePages) {
+  writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderHydrogenNarrativePage(narrative));
+}
 for (const narrative of industryNarrativePages) {
   writeFile(`wirkungsradar/narrative/${narrative[0]}/index.html`, renderIndustryNarrativePage(narrative));
 }
@@ -5129,6 +5673,9 @@ for (const term of windGlossaryTerms) {
 for (const term of fusionGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;
   if (!fs.existsSync(termPath)) writeFile(termPath, renderFusionGlossaryPage(term));
+}
+for (const term of hydrogenGlossaryTerms) {
+  writeFile(`begriffe/${term[0]}/index.html`, renderHydrogenGlossaryPage(term));
 }
 for (const term of evGlossaryTerms) {
   const termPath = `begriffe/${term[0]}/index.html`;

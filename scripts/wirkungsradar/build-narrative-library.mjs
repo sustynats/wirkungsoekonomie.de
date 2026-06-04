@@ -96,6 +96,8 @@ const claimUrlByTitle = new Map(
     ["Energiewende gescheitert", "../../live/energiewende-gescheitert/"],
     ["Fusion löst das später", "../../live/fusion-loest-das-energieproblem/"],
     ["Fusion löst das Energieproblem?", "../../live/fusion-loest-das-energieproblem/"],
+    ["Wasserstoff für alles?", "../../live/wasserstoff-fuer-alles/"],
+    ["Wasserstoff macht alles klimaneutral", "../../live/wasserstoff-fuer-alles/"],
     ["Kernenergie wäre die einfache Lösung", "../../live/kernenergie-einfache-loesung/"],
     ["Klimaschutz bringt nichts, solange China nicht handelt", "../../live/deutschland-nur-zwei-prozent/"],
     ["Klimaschutz ist Ökodiktatur", "../../live/klimaschutz-ist-oekodiktatur/"],
@@ -845,7 +847,7 @@ const narratives = [
     },
     definition:
       "Technikwunder-Aufschub ist nicht Technikoptimismus, sondern die Nutzung ungewisser Zukunftstechnik als Ausrede gegen verfügbare Wirkung heute.",
-    phrases: ["Fusion löst das.", "CO₂-Filter lösen das später.", "Wasserstoff macht alles klimaneutral.", "KI wird das schon regeln."],
+    phrases: ["Fusion löst das.", "CO₂-Filter lösen das später.", "Wasserstoff für alles?", "KI wird das schon regeln."],
     wirkstoff: "Zukunftsversprechen, das heutige Dringlichkeit senkt.",
     resonanceText: "Entlastung, Technikvertrauen und Abwehr unbequemer Gegenwartsentscheidungen.",
     effectSteps: [
@@ -871,7 +873,7 @@ const narratives = [
     dontDo: ["Nicht technikfeindlich klingen.", "Nicht Forschung gegen Umsetzung ausspielen."],
     redirectQuestion: "Bis wann skaliert diese Technik - und was tun wir bis dahin?",
     related: ["verzoegerung", "scheiternsframe", "ohnmacht"],
-    claims: [{ title: "Fusion löst das später" }, { title: "Wasserstoff macht alles klimaneutral" }, { title: "CO₂-Filter lösen das" }],
+    claims: [{ title: "Fusion löst das später" }, { title: "Wasserstoff für alles?" }, { title: "CO₂-Filter lösen das" }],
   },
   {
     slug: "normalisierung",

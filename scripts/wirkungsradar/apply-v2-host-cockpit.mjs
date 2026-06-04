@@ -203,6 +203,37 @@ const overrides = {
       ["Wir können warten.", "Status-quo-Bias", "Zukunftshoffnung schützt bestehende Routinen.", "Kosten des Wartens sichtbar machen."],
     ],
   },
+  "wasserstoff-fuer-alles": {
+    claim: "Wir machen das einfach mit Wasserstoff.",
+    short: "Wahrer Schlüsseltechnologie-Kern, falsches Allzwecknarrativ.",
+    say:
+      "Wasserstoff ist zu wertvoll, um ihn überall zu verschwenden.",
+    live:
+      "Wasserstoff ist wichtig - aber zu knapp und zu wertvoll für alles. Wir brauchen ihn zuerst dort, wo direkte Elektrifizierung nicht reicht: Stahl, Chemie, Schiffe, Flugverkehr und Langzeitspeicher.",
+    panel:
+      "Wasserstoff ist nicht falsch - im Gegenteil. Ohne grünen Wasserstoff wird Klimaneutralität in Stahl, Chemie, Ammoniak, Methanol, bestimmten Hochtemperaturprozessen, Luftfahrt, Schifffahrt und saisonaler Stromspeicherung sehr schwierig. Aber Wasserstoff ist knapp, braucht erneuerbaren Strom, Infrastruktur, Speicher, Transport und oft weitere Umwandlungsschritte. Deshalb ist die Frage nicht Wasserstoff ja oder nein, sondern: Wo wirkt er besser als direkte Elektrifizierung?",
+    exampleTitle: "H2-ready ist nicht H2-verfügbar",
+    example:
+      "Eine Heizung kann technisch auf Wasserstoff vorbereitet sein. Das sagt aber noch nicht, ob in dieser Straße grüner Wasserstoff verfügbar, bezahlbar und sinnvoll sein wird.",
+    question: "Redest du über Wasserstoff für Stahl, Chemie und Langzeitspeicher - oder über Wasserstoff als Ausrede, Elektrifizierung zu verschieben?",
+    oldFrame: "Wasserstoff löst alles.",
+    notThis: "Wasserstoff ist Unsinn.",
+    better: "Wasserstoff ja. Aber dort, wo er wirkt.",
+    impacts: [
+      ["Knappheit", "Emissionsarmer Wasserstoff ist global bisher knapp.", "Priorität statt Wunschliste."],
+      ["Effizienz", "Direkte Elektrifizierung ist oft schneller und effizienter.", "Direktpfad immer mitprüfen."],
+      ["Industrie", "Stahl, Chemie, Ammoniak und Methanol sind No-Regret-Felder.", "Nicht mit Pkw-Heizung vermischen."],
+      ["Wärme", "H2-ready ist keine Versorgungsgarantie.", "Straße, Netz und Preis konkret prüfen."],
+      ["Mobilität", "H2-Pkw und E-Fuels sind im Massenmarkt meist ineffizient.", "Spezialfälle getrennt bewerten."],
+      ["Kernnetz", "Das Kernnetz ist kein Versprechen für jedes Gasverteilnetz.", "Kernnetz, Verteilnetz und Hausanschluss trennen."],
+      ["Importe", "Importe können neue Abhängigkeiten schaffen.", "Standards und Diversifizierung verlangen."],
+    ],
+    psychology: [
+      ["Alles kann bleiben.", "Status-quo-Bias", "Wasserstoff verspricht Gasheizung, Verbrenner und Tanklogik ohne großen Umbau.", "Knappheit und lokalen Versorgungspfad sichtbar machen."],
+      ["Technik macht es bequem.", "Technological Fix Bias", "Technische Möglichkeit wirkt wie eine Systemlösung.", "Effizienz, Kosten und Alternativen vergleichen."],
+      ["Verlustangst sinkt.", "Loss Aversion", "Wasserstoff beruhigt Angst vor Heizungs- oder Autoverlust.", "Sorge anerkennen und No-Regret-Priorität erklären."],
+    ],
+  },
   "radwege-in-peru": {
     claim: "Für Radwege in Peru ist Geld da, aber für unsere Probleme nicht.",
     short: "Wahrer Prioritätenkern, falscher Steuergeld-Frame.",
