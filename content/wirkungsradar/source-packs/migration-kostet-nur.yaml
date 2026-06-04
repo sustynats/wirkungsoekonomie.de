@@ -1,0 +1,28 @@
+sourcePack:
+  slug: "migration-kostet-nur"
+  dossier: "Migration kostet nur?"
+  dataStand: "2026-06"
+  nextReviewDate: "2026-12"
+  requiredSources:
+    - "bamf_migration"
+    - "oecd_migration"
+    - "iab_buergergeld_arbeitsmarkt"
+    - "bpb_desinformation"
+  optionalSources:
+    - "debunking_handbook"
+  missingSources:
+
+  evidenceSummary:
+    secure:
+      - "Der Claim enthält einen prüfbaren wahren Kern."
+      - "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+    uncertain:
+      - "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+    contested:
+      - "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+  accountingBoundary: "sozial"
+  counterposition: "Kommunen können überfordert sein. Deshalb braucht Integration Finanzierung, Personal, Wohnraum, Schule, Sprache und Arbeitsmarktzugang."
+  doesNotClaim: "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt."
+  sourceNotes:
+    - "C-Quellen werden nur mit A- oder B-Quellen verwendet."
+    - "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."

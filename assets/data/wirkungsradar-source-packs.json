@@ -1,0 +1,434 @@
+{
+  "migration-kostet-nur": {
+    "slug": "migration-kostet-nur",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2026-12",
+    "requiredSources": [
+      "bamf_migration",
+      "oecd_migration",
+      "iab_buergergeld_arbeitsmarkt",
+      "bpb_desinformation"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "sozial",
+    "counterposition": "Kommunen können überfordert sein. Deshalb braucht Integration Finanzierung, Personal, Wohnraum, Schule, Sprache und Arbeitsmarktzugang.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "deutschland-nur-zwei-prozent": {
+    "slug": "deutschland-nur-zwei-prozent",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "uba_emissions_inventory",
+      "global_carbon_project",
+      "destatis_environmental_accounts",
+      "ipcc_ar6_synthesis"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "territorial, konsumbezogen, historisch, produktbezogen",
+    "counterposition": "Man kann fragen, welche Verantwortung Deutschland realistisch allein tragen kann. Deshalb werden territoriale Emissionen, Konsum, Lieferketten und Standards getrennt.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "windraeder-voegel-wald-beton-rueckbau": {
+    "slug": "windraeder-voegel-wald-beton-rueckbau",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "uba_emissions_inventory",
+      "ipcc_ar6_synthesis",
+      "bpb_desinformation"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "lebenszyklusbezogen, infrastrukturell, gesundheitlich",
+    "counterposition": "Windkraft braucht Artenschutz, Rückbau und Materialstandards. Daraus folgt bessere Planung, nicht ein Pauschalurteil gegen Windstrom.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "fusion-loest-das-energieproblem": {
+    "slug": "fusion-loest-das-energieproblem",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "iter_fusion",
+      "iea_hydrogen",
+      "ipcc_ar6_synthesis"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "zeitlich, systemisch, infrastrukturell",
+    "counterposition": "Forschung kann wertvoll sein. Aber Forschungsertrag ist nicht automatisch Stromsystemnutzen.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "schulden-machen-oder-sparen": {
+    "slug": "schulden-machen-oder-sparen",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2026-09",
+    "requiredSources": [
+      "bundeshaushalt",
+      "bundesbank_staatsfinanzen",
+      "destatis_environmental_accounts"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "fiskalisch, zeitlich, infrastrukturell",
+    "counterposition": "Zinsen und Tragfähigkeit sind berechtigte Fragen. Entscheidend ist zusätzlich, ob Ausgaben Zukunft schaffen oder Unterlassungskosten vermeiden.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "e-autos-schlimmer-als-verbrenner": {
+    "slug": "e-autos-schlimmer-als-verbrenner",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "iea_evs",
+      "icct_lifecycle_evs",
+      "uba_emissions_inventory"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "lebenszyklusbezogen, gesundheitlich, geopolitisch",
+    "counterposition": "Batterien brauchen Rohstoffe. Deshalb sind Lieferketten, Recycling, kleinere Fahrzeuge und sauberer Strom wichtig.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "e-fuels-retten-den-verbrenner": {
+    "slug": "e-fuels-retten-den-verbrenner",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "uba_emissions_inventory",
+      "transport_environment_efuels",
+      "iea_hydrogen",
+      "icct_lifecycle_evs"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "lebenszyklusbezogen, zeitlich, systemisch",
+    "counterposition": "E-Fuels können für Spezialfälle wichtig sein. Die Grenze ist der Pkw-Massenmarkt, weil direkter Strom meist besser wirkt.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "wasserstoff-fuer-alles": {
+    "slug": "wasserstoff-fuer-alles",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "iea_hydrogen",
+      "ipcc_ar6_synthesis",
+      "uba_emissions_inventory"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "systemisch, infrastrukturell, zeitlich",
+    "counterposition": "Wasserstoff ist wichtig für bestimmte Anwendungen. Die berechtigte Frage ist, wo er mehr Wirkung erzeugt als direkter Strom.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "arbeit-lohnt-sich-nicht-mehr": {
+    "slug": "arbeit-lohnt-sich-nicht-mehr",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2026-12",
+    "requiredSources": [
+      "iab_buergergeld_arbeitsmarkt",
+      "bundeshaushalt",
+      "destatis_environmental_accounts"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "sozial, fiskalisch, haushaltsbezogen",
+    "counterposition": "Arbeit muss sich lohnen. Die Lösung liegt bei Lohn, Wohnen, Betreuung, Qualifikation und Transferregeln, nicht bei Menschenabwertung.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "co2-preis-oder-fossile-systemkosten": {
+    "slug": "co2-preis-oder-fossile-systemkosten",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2026-09",
+    "requiredSources": [
+      "uba_emissions_inventory",
+      "ipcc_ar6_synthesis",
+      "bundeshaushalt"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "fiskalisch, gesundheitlich, systemisch",
+    "counterposition": "Ein CO2-Preis kann sozial ungerecht wirken. Deshalb braucht er Rückverteilung, Entlastung und gute Alternativen.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "kernenergie-wieder-in-deutschland": {
+    "slug": "kernenergie-wieder-in-deutschland",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "ipcc_ar6_synthesis",
+      "bundeshaushalt",
+      "iea_hydrogen"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "zeitlich, systemisch, infrastrukturell",
+    "counterposition": "Kernenergie kann als CO2-arme Option diskutiert werden. Berechtigt sind aber Kosten, Bauzeit, Endlager, Flexibilität und Alternativenvergleich.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "radwege-in-peru": {
+    "slug": "radwege-in-peru",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2027-06",
+    "requiredSources": [
+      "kfw_development_projects",
+      "bundeshaushalt",
+      "bpb_desinformation"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "fiskalisch, geopolitisch, demokratisch",
+    "counterposition": "Auslandsprojekte brauchen Wirkungskontrolle. Einzelne Projekte dürfen aber nicht als Beleg gegen jede Entwicklungsfinanzierung dienen.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  },
+  "ukraine-unterstuetzung-steuergeld": {
+    "slug": "ukraine-unterstuetzung-steuergeld",
+    "dataStand": "2026-06",
+    "nextReviewDate": "2026-07",
+    "requiredSources": [
+      "bundesregierung_ukraine_hilfe",
+      "kiel_ukraine_tracker",
+      "bundeshaushalt"
+    ],
+    "optionalSources": [
+      "debunking_handbook"
+    ],
+    "missingSources": [],
+    "evidenceSummary": {
+      "secure": [
+        "Der Claim enthält einen prüfbaren wahren Kern.",
+        "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+      ],
+      "uncertain": [
+        "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+      ],
+      "contested": [
+        "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+      ]
+    },
+    "accountingBoundary": "geopolitisch, fiskalisch, sicherheitlich",
+    "counterposition": "Hilfe braucht Kontrolle. Zusagen, Auszahlungen, Sachleistungen, Kredite und Garantien müssen getrennt werden.",
+    "doesNotClaim": "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt.",
+    "sourceNotes": [
+      "C-Quellen werden nur mit A- oder B-Quellen verwendet.",
+      "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
+    ]
+  }
+}

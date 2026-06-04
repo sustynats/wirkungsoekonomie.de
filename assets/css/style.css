@@ -16198,6 +16198,55 @@ a.principle-card:hover,
   border-left: 4px solid rgba(47, 125, 92, 0.7);
 }
 
+.sprint4-trust-block .section-header.compact {
+  margin-top: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.sprint4-trust-block .radar-status-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.sprint4-trust-block .radar-status-line span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.8rem;
+  padding: 0.18rem 0.62rem;
+  border: 1px solid rgba(47, 125, 92, 0.22);
+  border-radius: 999px;
+  background: rgba(47, 125, 92, 0.07);
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.sprint4-source-card,
+.sprint4-linkhub .card,
+.sprint4-feedback .card {
+  display: grid;
+  align-content: start;
+  gap: 0.72rem;
+}
+
+.sprint4-source-card {
+  border-left: 4px solid rgba(47, 125, 92, 0.55);
+}
+
+.sprint4-linkhub .card {
+  border-top: 3px solid rgba(47, 125, 92, 0.35);
+}
+
+.sprint4-feedback .card {
+  border-left: 4px solid rgba(191, 137, 46, 0.65);
+  background: rgba(255, 252, 245, 0.92);
+}
+
+.card-grid.five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .card-grid.six {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -16210,12 +16259,20 @@ a.principle-card:hover,
 }
 
 @media (max-width: 1180px) {
+  .card-grid.five {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .card-grid.six {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 720px) {
+  .card-grid.five {
+    grid-template-columns: 1fr;
+  }
+
   .card-grid.six {
     grid-template-columns: 1fr;
   }

@@ -1,0 +1,27 @@
+sourcePack:
+  slug: "schulden-machen-oder-sparen"
+  dossier: "Schulden machen oder sparen?"
+  dataStand: "2026-06"
+  nextReviewDate: "2026-09"
+  requiredSources:
+    - "bundeshaushalt"
+    - "bundesbank_staatsfinanzen"
+    - "destatis_environmental_accounts"
+  optionalSources:
+    - "debunking_handbook"
+  missingSources:
+
+  evidenceSummary:
+    secure:
+      - "Der Claim enthält einen prüfbaren wahren Kern."
+      - "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+    uncertain:
+      - "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+    contested:
+      - "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+  accountingBoundary: "fiskalisch, zeitlich, infrastrukturell"
+  counterposition: "Zinsen und Tragfähigkeit sind berechtigte Fragen. Entscheidend ist zusätzlich, ob Ausgaben Zukunft schaffen oder Unterlassungskosten vermeiden."
+  doesNotClaim: "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt."
+  sourceNotes:
+    - "C-Quellen werden nur mit A- oder B-Quellen verwendet."
+    - "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."
