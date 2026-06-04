@@ -1515,34 +1515,34 @@ const claims = [
   {
     title: "Windräder zerstören Natur?",
     slug: "windraeder-voegel-wald-beton-rueckbau",
-    claimPhrase: "„Windräder töten Vögel, zerstören Wald, machen krank und hinterlassen Beton.“",
-    shortJudgement: "Reale Zielkonflikte, aber falsches Blockadenarrativ.",
+    claimPhrase: "„Windräder zerstören Natur?“",
+    shortJudgement: "Echte Prüfpflicht. Falsches Gesamturteil.",
     narrativeFamilies: ["Naturschutz gegen Klimaschutz", "Teilkonflikt als Blockade", "fossile Alternative unsichtbar", "Scheiternsframe"],
     riskLevel: "hoch",
     themes: ["Windkraft", "Artenschutz", "Wald", "Rückbau", "Gesundheit"],
     sdgs: ["SDG 3", "SDG 7", "SDG 9", "SDG 11", "SDG 12", "SDG 13", "SDG 15", "SDG 16"],
     sdgPlus: ["Diskursfähigkeit", "institutionelles Vertrauen", "kommunale Beteiligung", "Quellenklarheit", "Schutz vor Manipulation"],
-    subtitle: "Vögel, Fledermäuse, Wald, Beton, Infraschall und Rückbau im Folgencheck.",
+    subtitle: "Artenschutz, SF₆, Recycling, Rotorblätter und Rückbau im fairen Folgencheck.",
     abstract:
-      "Die Aussage „Windräder zerstören Natur“ enthält einen wahren Kern: Windenergieanlagen können Vögel und Fledermäuse gefährden, Waldstandorte verändern, Flächen beanspruchen, Betonfundamente benötigen, Landschaftsbilder prägen, Anwohner:innen belasten und beim Rückbau Recyclingfragen aufwerfen. Irreführend wird die Aussage, wenn daraus folgt, Windenergie sei grundsätzlich naturfeindlich oder fossile Energie sei die bessere Naturschutzoption. Wirkungsökonomisch liegt ein Zielkonflikt vor, kein Totalurteil. Ein fairer Vergleich betrachtet Standort, Artenschutz, Abschaltalgorithmen, Repowering, Rückbau, Materialkreislauf, Netzwirkung, fossile Alternativen, Klimaschäden, Luftschadstoffe und langfristige Biodiversitätsrisiken zusammen.",
+      "Die Aussage „Windräder zerstören Natur“ enthält einen wahren Kern: Windenergie braucht Artenschutz, sensible Standortwahl, sauberen Rückbau, Recyclingstandards und eine korrekte Einordnung von SF₆ in Schaltanlagen. Irreführend wird die Aussage, wenn daraus folgt, Windenergie sei grundsätzlich naturfeindlich oder fossile Energie sei die bessere Naturschutzoption. Über 90 Prozent der Masse einer Windenergieanlage sind gut recyclingfähig; schwieriger sind vor allem Rotorblätter aus Verbundstoffen. SF₆ ist klimaschädlich, wenn es entweicht, aber ein lösbares Schaltanlagen-Thema, kein Rotorblatt- oder Windkraft-Killerargument. Wirkungsökonomisch gilt: Prüfaufgaben lösen, nicht fossile Schäden verlängern.",
     summary: {
-      judgement: "Reale Zielkonflikte, aber falsches Blockadenarrativ.",
-      true_core: "Windenergie hat reale Zielkonflikte: Vögel, Fledermäuse, Waldstandorte, Betonfundamente, Landschaft, Schall, Schattenwurf, Akzeptanz, Rückbau und Recycling müssen ernst genommen werden.",
-      problem: "Aus konkreten Standort- und Schutzfragen wird ein pauschales Nein zu Windenergie, während fossile Klima-, Luft-, Wasser-, Bergbau- und Biodiversitätsschäden unsichtbar bleiben.",
+      judgement: "Echte Prüfpflicht. Falsches Gesamturteil.",
+      true_core: "Windenergie hat reale Prüfaufgaben: Artenschutz, Waldstandorte, Schall, Beteiligung, SF₆ in Schaltanlagen, Fundamentrückbau und Rotorblatt-Recycling müssen ernst genommen werden.",
+      problem: "Aus lösbaren Technik-, Standort- und Kreislauffragen wird ein pauschales Nein zu Windenergie, während fossile Klima-, Luft-, Wasser-, Bergbau- und Biodiversitätsschäden unsichtbar bleiben.",
       narrative: "Naturschutz gegen Klimaschutz / Teilkonflikt als Blockade / fossile Alternative unsichtbar.",
       risk: "Legitime Prüfpflichten kippen in fossile Verzögerung; Klima-, Luft-, Gesundheits- und Biodiversitätsschäden bleiben länger im System.",
-      host_answer: "Artenschutz ist real. Blockade ist keine Lösung. Die Antwort heißt Standortscorecard, Abschaltungen, Monitoring, Rückbau und Beteiligung.",
+      host_answer: "Ja, Windkraft braucht Artenschutz und sauberen Rückbau. Aber Windräder sind kein Sondermüll-Argument gegen Windstrom.",
     },
     answers: {
       ten_seconds:
-        "Ja, Windräder haben Artenschutzkonflikte. Aber fossile Energie zerstört Natur systemisch. Die Lösung ist Standortscorecard, Abschaltung, Monitoring und Rückbau - nicht fossile Dauerabhängigkeit.",
+        "Windkraft braucht Artenschutz und sauberen Rückbau. Aber Windräder sind kein Sondermüll-Argument: Über 90 Prozent der Masse ist recycelbar, SF₆ wird aus neuen Schaltanlagen verdrängt, und fossile Energie hat eigene massive Schäden.",
       thirty_seconds:
-        "Der wahre Kern ist: Windräder können Vögel, Fledermäuse, Waldstandorte und Landschaft beeinträchtigen. Der Denkfehler ist: daraus ein pauschales Nein zu Windenergie zu machen. Fossile Alternativen verursachen Klima-, Luft-, Wasser- und Biodiversitätsschäden. Die bessere Frage lautet: Welcher Standort, welche Schutzmaßnahmen und welche Energiealternative haben die beste Netto-Wirkung?",
+        "Der wahre Punkt ist: Windkraft braucht gute Standorte, Artenschutz und Rückbau. Der falsche Sprung ist: Deshalb sei Windenergie Naturzerstörung. Der Großteil einer Anlage ist recycelbar, Rotorblatt-Recycling entwickelt sich, und SF₆ ist ein Schaltanlagen-Thema mit Ausstiegspfad. Die faire Frage ist: Welche Stromquelle liefert stattdessen - und welche Folgen hat sie?",
       two_minutes:
-        "Ich ordne das sauber ein. Windenergie ist nicht wirkungsfrei. Es gibt reale Konflikte mit Vögeln, Fledermäusen, Waldstandorten, Landschaft, Beton, Rückbau und Akzeptanz. Das muss man ernst nehmen. Aber daraus folgt nicht, dass fossile Energie die bessere Naturschutzoption ist. Kohle, Öl und Gas verursachen Klimaschäden, Luftschadstoffe, Bergbaufolgen, Wasserbelastungen, fossile Importabhängigkeit und massive Biodiversitätsrisiken. Wirkungsökonomisch vergleichen wir deshalb nicht Windrad gegen ideale Natur, sondern Windenergie am konkreten Standort gegen die realen Alternativen im Energiesystem. Die Lösung heißt: sensible Gebiete vermeiden, Artenschutzdaten nutzen, Fledermausabschaltungen, Antikollisionssysteme, Repowering, Rückbaupflichten, Recycling, Bürgerbeteiligung und eine Standortscorecard. Dann wird aus dem Kulturkampf ein echter Folgencheck.",
+        "Ich würde das nicht wegwischen. Windenergie hat echte Prüfaufgaben: Standorte, Vögel, Fledermäuse, Wald, Rückbau, Rotorblätter und SF₆ in Schaltanlagen. Aber das sind lösbare Aufgaben, kein Pauschalargument gegen Windstrom. Der größte Teil einer Windenergieanlage besteht aus Stahl, Beton, Kupfer und Aluminium und ist gut recycelbar. Die schwierigere Fraktion sind Rotorblätter aus Faserverbundstoffen. Dort gibt es bereits Verwertungswege, neue Verfahren und kommerziell verfügbare recyclebare Blattdesigns. Bei SF₆ gilt: Das Gas ist klimaschädlich, wenn es entweicht. Aber es steckt nicht im Rotorblatt, sondern in Schaltanlagen. Neue EU-Regeln drängen F-Gase in neuen Schaltanlagen schrittweise zurück. Deshalb lautet die seriöse Antwort nicht: alles egal. Sie lautet: Artenschutz, SF₆-freie Technik, Rückbaupflichten, Recyclingstandards und Materialpässe. Und dann vergleichen wir mit der realen Alternative: Kohle, Gas, Atom, Importstrom oder weniger Versorgungssicherheit. Fossile Energie ist nicht Natur pur. Sie verursacht Tagebau, Methan, CO₂, Feinstaub, Luftschadstoffe, Wasserbelastung und Abhängigkeit. Der faire Vergleich ist Gesamtwirkung gegen Gesamtwirkung.",
     },
     effectPath: [
-      ["Aussage", "„Windräder töten Vögel, zerstören Wald, machen krank und hinterlassen Beton.“"],
+      ["Aussage", "„Windräder zerstören Natur, sind Sondermüll oder wegen SF₆ gar nicht grün.“"],
       ["Wirkstoff", "Einzelkonflikt als Totalblockade."],
       ["Verkürzung", "Lokale Zielkonflikte werden mit Gesamtwirkung verwechselt."],
       ["Ausblendung", "Fossile Klimaschäden, Luftschadstoffe, Bergbau, Wasserbelastungen, Biodiversitätsrisiko durch Erderwärmung und Schutzmaßnahmen verschwinden."],
@@ -1553,13 +1553,16 @@ const claims = [
       ["Wirkung dritter Ordnung", "Fossile Energie bleibt länger im System; Klimaschäden für Natur und Gesellschaft steigen."],
     ],
     frameKey: "verzoegerung",
-    redirectQuestion: "Vergleichst du Windräder gerade mit unberührter Natur - oder mit den realen Folgen von Kohle, Öl und Gas?",
+    redirectQuestion: "Welche Stromquelle soll stattdessen liefern - und wie schneiden Rückbau, Schadstoffe, Klima, Gesundheit und Abhängigkeit dort ab?",
     dontDo: [
       "Nicht sagen: Windräder töten keine Vögel.",
       "Nicht Artenschutz gegen Klimaschutz ausspielen.",
       "Nicht mit „Katzen töten mehr Vögel“ als Hauptargument reagieren.",
       "Nicht Waldkonflikte kleinreden.",
       "Nicht Infraschall-Sorgen verspotten.",
+      "Nicht sagen: SF₆ ist nicht schlimm.",
+      "Nicht behaupten: SF₆ steckt im Rotorblatt.",
+      "Nicht sagen: Windräder sind zu 100 Prozent problemlos recycelbar.",
       "Nicht Beton, Rückbau und Rotorblatt-Recycling ignorieren.",
       "Nicht fossile Alternativen als neutral behandeln.",
       "Nicht jede Kritik als Desinformation abtun.",
@@ -1569,7 +1572,9 @@ const claims = [
       "Windenergie kann für bestimmte Vogel- und Fledermausarten reale Risiken erzeugen.",
       "Wind im Wald erfordert besonders sorgfältige Standortprüfung und Naturschutzmaßnahmen.",
       "Fundamente, Kranstellflächen, Wege und Kabeltrassen verändern lokale Böden und Flächen.",
-      "Rotorblätter und faserverstärkte Kunststoffe sind beim Recycling anspruchsvoller als Stahl oder Beton.",
+      "Mehr als 90 Prozent der Masse einer Windenergieanlage haben hohe Recyclingfähigkeit.",
+      "Rotorblätter und faserverstärkte Kunststoffe sind beim Recycling anspruchsvoller als Stahl, Beton, Kupfer oder Aluminium.",
+      "SF₆ ist Schwefelhexafluorid, ein sehr starkes Treibhausgas bei Freisetzung; es ist ein Schaltanlagen-Thema, kein Rotorblatt-Thema.",
       "Nach aktuellem Forschungsstand stützt die Evidenz keine pauschale Gesundheitsbehauptung durch Windenergie-Infraschall unterhalb der Wahrnehmungsschwelle.",
       "Fossile Alternativen verursachen Klima-, Luft-, Wasser-, Bergbau- und Biodiversitätsschäden.",
     ],
@@ -1585,14 +1590,15 @@ const claims = [
       { title: "Abschaltregeln und Antikollisionssysteme", text: "Temporäre Abschaltungen bei Fledermausaktivität, Brutzeiten oder kritischen Flugereignissen senken Risiken." },
       { title: "Wald differenziert bewerten", text: "Alte, naturnahe, artenreiche oder geschützte Wälder anders bewerten als vorbelastete, monotone oder bereits geschädigte Flächen." },
       { title: "Repowering priorisieren", text: "Alte Anlagen werden ersetzt, wenn dadurch mehr Strom mit weniger Anlagen und besserem Artenschutz möglich wird." },
-      { title: "Rückbau und Recycling verpflichtend machen", text: "Fundamente, Wege, Betriebsmittel, Stahl, Beton und Rotorblätter brauchen Rückstellungen, Rückbaupflichten, Recyclingpfade und Nachweis." },
+      { title: "Rückbau und Recycling verpflichtend machen", text: "Fundamente, Wege, Betriebsmittel, Stahl, Beton, Metalle und Rotorblätter brauchen Rückstellungen, Rückbaupflichten, Materialpässe, Recyclingpfade und Nachweis." },
+      { title: "SF₆ sauber aussteuern", text: "Neue Schaltanlagen brauchen SF₆-freie Technik, bestehende Anlagen Dichtheit, Monitoring, Rückgewinnung und sauberen Austausch." },
       { title: "Kommunale Beteiligung und lokale Wertschöpfung", text: "Kommunen, Bürger:innen und Anwohner:innen müssen finanziell, planerisch und kommunikativ beteiligt werden." },
       { title: "Fossile Alternativen mitbilanzieren", text: "Jede Ablehnung muss zeigen, welche Stromquelle stattdessen genutzt wird und welche Klima-, Gesundheits- und Naturwirkung daraus entsteht." },
       { title: "Beschwerde- und Monitoringpflicht", text: "Betriebserfahrungen, Beschwerden, Artenschutzdaten und Schallmessungen fließen in lernende Standortbewertung ein." },
     ],
     mpd: {
       mensch: "Schlechte Standortplanung, mangelnde Beteiligung, Schall- und Schattenbelastung oder Vertrauensverlust können Menschen real belasten.",
-      planet: "Einzelne Windstandorte können Arten, Wald und Boden schädigen; fossile Verzögerung verschärft Klima- und Biodiversitätsrisiken.",
+      planet: "Einzelne Windstandorte können Arten, Wald und Boden schädigen; SF₆-Leckagen und Rotorblatt-Abfälle brauchen Kontrolle. Fossile Verzögerung verschärft Klima- und Biodiversitätsrisiken.",
       demokratie: "Zielkonflikte werden emotionalisiert und polarisieren Kommunen; legitime Sorgen können in Desinformation kippen.",
     },
     sources: [
@@ -1603,6 +1609,15 @@ const claims = [
       "KNE - Studien zu Windenergie, Biodiversität, Vögeln und Fledermäusen",
       "Fachagentur Wind & Solar - Natur- und Artenschutz",
       "Umweltbundesamt - Windenergieanlagen Rückbau Recycling Repowering",
+      "Umweltbundesamt - Rotorblattaufbereitung und Recycling",
+      "Umweltbundesamt - Verbot des klimaschädlichen SF6 in Mittelspannungsanlagen möglich",
+      "EU-Kommission - About F-gases",
+      "EU-Verordnung 2024/573 - F-Gase",
+      "WindEurope - Circularity",
+      "WindEurope - Decommissioned Blades 2025/2026",
+      "Fachagentur Wind & Solar - Rückbau und Recycling",
+      "Siemens Gamesa - RecyclableBlade",
+      "Vestas - Recycling von Windturbinen",
       "Umweltbundesamt - Gute Praxis Rückbau und Recycling von Windenergieanlagen",
       "Umweltbundesamt - Infraschall von Windenergieanlagen",
       "Umweltbundesamt - Infraschall einfach erklärt",
@@ -4770,11 +4785,12 @@ const eFuelExternalSources = [
 ];
 
 const windKeyPoints = [
+  ["Echte Prüfpflicht, falsches Pauschalurteil", "Artenschutz, Rückbau, Rotorblätter und SF₆ müssen geprüft werden. Daraus folgt aber bessere Regelung, nicht fossile Dauerabhängigkeit.", "warning"],
   ["Vögel und Fledermäuse sind reale Schutzgüter", "Windenergie kann Kollisionen, Störungen und Habitatkonflikte verursachen. Das muss über Standortwahl, Monitoring und Schutzmaßnahmen ernsthaft minimiert werden.", "warning"],
   ["Fossile Alternativen sind nicht naturneutral", "Kohle, Öl und Gas verursachen Klimaschäden, Luftschadstoffe, Wasserbelastungen, Bergbaufolgen, Flächenverbrauch und Biodiversitätsverluste.", "critical"],
-  ["Waldstandorte sind besonders sensibel", "Wind im Wald kann möglich sein, erfordert aber strenge Standortprüfung, Ausschluss ökologisch wertvoller Flächen und wirksame Schutzmaßnahmen.", "warning"],
-  ["Beton und Rückbau müssen geregelt sein", "Fundamente, Wege, Kabel, Stahl, Rotorblätter und Betriebsmittel brauchen Rückbau-, Recycling- und Sicherungsstandards.", "neutral"],
-  ["Infraschall darf nicht als Panikframe dienen", "Sorgen müssen ernst genommen werden. Nach aktuellem Forschungsstand gibt es aber keine belastbare Evidenz für gesundheitliche Schäden durch Windenergie-Infraschall unterhalb der Wahrnehmungsschwelle.", "warning"],
+  ["Über 90 Prozent Masse sind gut recycelbar", "Stahl, Beton, Kupfer, Aluminium und viele Elektroteile laufen in etablierten Recyclingströmen; Rotorblätter bleiben die anspruchsvollere Fraktion.", "positive"],
+  ["SF₆ ist Schaltanlagen-Thema", "Schwefelhexafluorid ist klimaschädlich, wenn es entweicht. Es gehört ersetzt, abgedichtet, überwacht und zurückgewonnen.", "warning"],
+  ["Rotorblätter sind Kreislaufaufgabe", "GFK/CFK-Verbundstoffe sind schwieriger, aber Verwertung, neue Verfahren und recyclebare Harzsysteme entwickeln sich.", "neutral"],
   ["WÖk-Lösung: Standortscorecard", "Jeder Standort wird nach Klima, Arten, Wald, Boden, Landschaft, Gesundheit, Akzeptanz, Rückbau, Netznutzen und Alternativenvergleich bewertet.", "positive"],
 ];
 
@@ -4782,19 +4798,36 @@ const windBoundaryMatrix = [
   ["Einzelanlage", "Welche Wirkung hat dieses Windrad?", "Standort, Arten, Schall, Schatten, Fundament", "Energiesystem und fossile Alternativen"],
   ["Artenschutz", "Welche Arten sind betroffen?", "Vögel, Fledermäuse, Habitate, Zugrouten", "Klimarisiko für Arten und Lebensräume"],
   ["Waldstandort", "Welche Waldwirkung entsteht?", "Rodung, Wege, Quartiere, Boden", "Standortunterschiede und Alternativen"],
-  ["Material", "Welche Rohstoffe und Baustoffe werden genutzt?", "Beton, Stahl, Verbundstoffe, Seltene Erden je nach Technik", "vermiedene fossile Brennstoffe"],
-  ["Rückbau", "Was passiert nach Betriebsende?", "Fundament, Rotorblätter, Recycling, Boden", "Lebenszyklusnutzen der Stromerzeugung"],
+  ["Material", "Welche Rohstoffe und Baustoffe werden genutzt?", "Beton, Stahl, Kupfer, Aluminium, Verbundstoffe, Seltene Erden je nach Technik", "vermiedene fossile Brennstoffe und etablierte Recyclingströme"],
+  ["Recycling", "Welche Fraktionen sind schwierig?", "Rotorblätter aus GFK/CFK, Logistik, Sortierung, Qualität der Verwertung", "dass der größte Teil der Anlage gut recycelbar ist"],
+  ["SF₆", "Wo entsteht das Klimagas-Risiko?", "Schaltanlagen, Dichtheit, Wartung, Rückgewinnung, EU-Ausstieg", "dass SF₆ nicht im Rotorblatt steckt und auch andere Strominfrastruktur betrifft"],
+  ["Rückbau", "Was passiert nach Betriebsende?", "Fundament, Rotorblätter, Recycling, Boden", "Lebenszyklusnutzen der Stromerzeugung und fossile Alternative"],
   ["Energiesystem", "Was ersetzt Windstrom?", "CO₂-Minderung, Versorgung, Preis, Speicherbedarf", "lokale Konflikte"],
   ["Gesundheit", "Welche Belastungen entstehen?", "Schall, Schatten, Stress, Akzeptanz", "Klimagesundheit und Luftschadstoffe fossiler Alternativen"],
   ["Demokratie", "Wie wird entschieden?", "Beteiligung, Vertrauen, Transparenz, Konfliktkultur", "technische Detailfragen"],
+];
+
+const windImpactFan = [
+  ["Artenschutz", "Vögel und Fledermäuse brauchen gute Standortwahl und Schutzregeln.", "Abschaltungen, Monitoring, Brutplatzdaten, Antikollisionssysteme."],
+  ["Recycling", "Der Großteil der Anlage geht in etablierte Recyclingkreisläufe.", "Stahl, Beton, Kupfer, Aluminium."],
+  ["Rotorblätter", "Sie waren die schwierigere Fraktion, werden aber zunehmend verwertet und recyclebar designt.", "GFK in Zementwerken, neue Harzsysteme, RecyclableBlade."],
+  ["SF₆", "SF₆ ist ein Schaltanlagen-Thema, kein Rotorblatt-Thema.", "EU-Ausstieg aus F-Gasen in neuen Schaltanlagen."],
+  ["Rückbau", "Fundamente und Türme können zurückgebaut und recycelt werden.", "Betonbruch im Wegebau, Stahl zurück in die Stahlproduktion."],
+  ["Fossile Alternative", "Kohle und Gas sind nicht naturschonend.", "Tagebau, Luftschadstoffe, Methan, CO₂, Wasserbelastung."],
+  ["Gesundheit", "Weniger fossiler Strom bedeutet weniger Luftschadstoffe.", "NOx, Feinstaub, Quecksilber, Ozonbildung."],
+  ["Abhängigkeit", "Windstrom senkt Import- und Erpressungsrisiken.", "Weniger Gas- und Kohleimporte."],
+  ["Demokratie", "Lokale Konflikte brauchen Beteiligung, nicht Angstbilder.", "Bürgerenergie, kommunale Einnahmen, offene Daten."],
 ];
 
 const windSubclaims = [
   ["„Windräder töten Vögel“", "Realer Artenschutzkonflikt, aber kein pauschales Blockadeargument.", "Ja, Windenergieanlagen können für bestimmte Vogelarten gefährlich sein. Besonders relevant sind kollisionsgefährdete Arten und Standorte mit Brutplätzen, Nahrungshabitaten oder Flugkorridoren. Der Denkfehler beginnt, wenn aus diesem realen Konflikt ein pauschales Nein zu Windenergie abgeleitet wird. Wirkungsökonomisch zählt der Standort: Welche Arten sind betroffen? Welche Daten liegen vor? Welche Abstände, Abschaltungen, Antikollisionssysteme oder Ausgleichsmaßnahmen sind möglich? Und welche fossilen Klima- und Biodiversitätsschäden werden durch Windenergie vermieden?", "Welche Kombination aus Standortwahl, Artenschutzdaten, Abschaltregeln und Alternativenvergleich schützt Arten und Klima am besten?"],
   ["„Windräder töten Fledermäuse“", "Reales Risiko; Abschaltalgorithmen, Standortwahl und Monitoring sind zentrale Gegenmaßnahmen.", "Fledermäuse können durch Kollision oder Druckunterschiede gefährdet werden. Das ist kein Randthema, sondern ein echter Betriebskonflikt. Gerade deshalb braucht es Standortdaten, Aktivitätsmessungen, temporäre Abschaltungen bei hoher Fledermausaktivität, Monitoring und lernende Betriebsregeln. Der falsche Schluss wäre, aus einem lösbaren Risikomanagementproblem ein pauschales Nein zu Windenergie zu machen.", "Welche Abschaltregeln und Standortdaten senken das Fledermausrisiko konkret?"],
   ["„Windräder zerstören den Wald“", "Wahrer Waldschutzkern, falsches Pauschalurteil.", "Windenergie im Wald ist besonders sensibel. Alte Wälder, naturnahe Wälder, Schutzgebiete, Fledermausquartiere, Brutplätze, Feuchtgebiete und ökologisch wertvolle Lebensräume dürfen nicht leichtfertig überplant werden. Aber nicht jeder Waldstandort ist gleich. Monotone Wirtschaftswälder, vorbelastete Flächen, Kalamitätsflächen oder Standorte mit geringer ökologischer Konfliktlage müssen anders bewertet werden als alte naturnahe Wälder. Wirkungsökonomisch braucht es eine Wald-Standortscorecard: Arten, Boden, Wasser, Kohlenstoffspeicher, Zuwegung, Rückbau, Netzanbindung und fossile Alternativen.", "Wo kann Windenergie mit geringster Wald- und Artenwirkung den größten fossilen Schaden ersetzen?"],
-  ["„Betonfundamente verseuchen den Boden“", "Reales Material- und Rückbauthema, aber kein Gesamtargument gegen Windenergie.", "Windenergieanlagen benötigen Fundamente, Zuwegungen, Stahl, Beton, Kabel, Transformatoren und Rotorblätter. Das ist Wirkung. Deshalb braucht Windenergie klare Rückbau- und Recyclingregeln. Flachgründungen sollten nach UBA-Empfehlung vollständig zurückgebaut werden; Beton und Stahl können getrennt und materialspezifisch verwertet werden. Schwieriger sind Rotorblätter aus faserverstärkten Kunststoffen. Hier braucht es Produktverantwortung, Recyclingkapazitäten, Design for Recycling, Rückstellungen und behördliche Kontrolle.", "Welche Rückbau-, Recycling- und Materialstandards machen Windenergie über den Lebenszyklus am wirkungsvollsten?"],
-  ["„Windrad-Rotorblätter sind Sondermüll“", "Recycling ist anspruchsvoll, aber lösbar und regulierungsbedürftig.", "Rotorblätter sind wegen Verbundmaterialien anspruchsvoller als Stahl oder Beton. Daraus folgt aber nicht, dass Windkraft insgesamt ein Entsorgungsproblem ohne Lösung ist. Mechanische, thermische und chemische Verfahren, Zement-Koprozessierung, neue Harze und recyclebare Blattdesigns verschieben die Bilanz. Entscheidend ist, ob Projekte Rückbau, Logistik, Nachweis und echte Kreislaufpfade verbindlich mitplanen.", "Wird hier über alte Rotorblätter, aktuelle Recyclingverfahren oder neue recyclebare Designs gesprochen?"],
+  ["„Windräder sind Sondermüll“", "Überholt: Die Gesamtanlage ist größtenteils recycelbar; Rotorblätter sind die anspruchsvollere Fraktion.", "Der Satz wirkt stark, ist aber zu pauschal. Windenergieanlagen bestehen zum großen Teil aus Stahl, Beton, Kupfer, Aluminium und Elektroteilen. Diese Materialien sind etabliert recycelbar. Schwieriger sind Rotorblätter aus GFK/CFK-Verbundstoffen. Aber auch dafür gibt es Verwertungspfade, Forschung, neue Verfahren und recyclebare Blattdesigns. Die richtige Forderung lautet: Materialpässe, Rückbauinformationen, getrennte Erfassung, Recyclingkapazitäten und Design for Recycling.", "Nicht Sondermüll, sondern Kreislaufaufgabe: Welche Standards sichern Rückbau, Trennung und hochwertige Verwertung?"],
+  ["„Rotorblätter kann man nicht recyceln“", "Früher berechtigter Problemkern, heute zu pauschal.", "Rotorblätter waren lange die schwierigste Fraktion, weil GFK/CFK-Verbundstoffe schwer zu trennen sind. Ein Teil wird stofflich und energetisch verwertet, zum Beispiel in der Zementindustrie. CFK ist anspruchsvoller und braucht spezialisierte Verfahren. Gleichzeitig entwickeln Hersteller recyclebare Harzsysteme und kommerzielle recyclebare Rotorblätter. Der Satz „nicht recyclebar“ ist deshalb veraltet. Korrekt ist: anspruchsvoll, aber technisch in Bewegung und politisch regelbar.", "Wird hier über alte Rotorblätter, aktuelle Recyclingverfahren oder neue recyclebare Designs gesprochen?"],
+  ["„SF₆ macht Windräder klimaschädlich“", "SF₆ ist ernst, aber falsch als Windkraft-Killer gerahmt.", "SF₆ heißt Schwefelhexafluorid. Es ist ein starkes Treibhausgas, wenn es entweicht. Es wurde bzw. wird in elektrischen Schaltanlagen eingesetzt. Windenergieanlagen haben solche Schaltanlagen, aber das betrifft Strominfrastruktur insgesamt. Der richtige Umgang ist: SF₆-freie Alternativen, EU-Ausstieg bei neuen Anlagen, Dichtheit, Monitoring, Rückgewinnung und Recycling des Gases. Der Satz ist falsch, wenn er suggeriert, Windenergie sei deshalb schlechter als fossile Energie.", "Reden wir über Schaltanlagen-Dichtheit und Ausstieg - oder über ein Pauschalargument gegen Windstrom?"],
+  ["„Betonsockel bleiben für immer im Boden“", "Meist falsch: Rückbau und Recycling sind möglich und oft vorgesehen.", "Fundamente werden meist vollständig zurückgebaut. Flachgründungen sollen nach Empfehlung des UBA vollständig zurückgebaut werden. Beton und Stahl werden getrennt und recycelt; Betonbruch kann zum Beispiel im Wegebau genutzt werden. Bei Pfahlgründungen kann es bodenschutzfachlich komplizierter sein. Deshalb braucht es keine Pauschalbehauptung, sondern klare Rückbaupflichten, Sicherheitsleistungen und Kontrolle.", "Welche Rückbaupflicht, Sicherheitsleistung und Kontrolle gelten für den konkreten Standort?"],
+  ["„Windräder werden vergraben“", "In Deutschland und Europa nicht als seriöser Zukunftsstandard; Deponierung wird zurückgedrängt.", "Bilder von vergrabenen Rotorblättern stammen häufig aus anderen Ländern oder aus älteren Entsorgungspfaden. In Europa wird Deponierung politisch und branchenintern zurückgedrängt. Die europäische Windbranche hat sich zu einem Deponieverbot für Rotorblätter ab 2026 verpflichtet. Korrekt ist: Recycling und Verwertung müssen weiter skaliert werden; Vergraben ist kein Zukunftspfad.", "Geht es um alte Bilder oder um heutige Rückbau-, Verwertungs- und Deponieregeln?"],
   ["„Infraschall macht krank“", "Sorgen ernst nehmen, Panikframe vermeiden.", "Windenergieanlagen erzeugen Schall, darunter auch tieffrequenten Schall und Infraschall. Anwohner:innen können sich durch hörbaren Schall, Schattenwurf, Befeuerung oder visuelle Dominanz belastet fühlen. Diese Belastungen sind ernst zu nehmen. Nach aktuellem Stand der Forschung gibt es jedoch keine belastbare Evidenz dafür, dass Infraschall von Windenergieanlagen unterhalb der Wahrnehmungsschwelle gesundheitliche Schäden verursacht. Wirkungsökonomisch heißt das: Beschwerden nicht verspotten, aber Ursache, Wahrnehmung, Abstand, Schallgutachten, Beteiligung, Stress und Nocebo-Effekte sauber trennen.", "Welche Standort-, Schall-, Schatten- und Beteiligungsregeln minimieren reale Belastung und Angst?"],
   ["„Windräder verschandeln die Landschaft“", "Landschaftswirkung ist real, aber kein objektiver Beweis gegen Windenergie.", "Landschaft, Heimatgefühl und Sichtbeziehungen sind reale Akzeptanzfaktoren. Sie dürfen nicht als bloße Einbildung abgetan werden. Zugleich ist Landschaftswirkung kein automatischer Systembeweis gegen Windenergie. Entscheidend sind Beteiligung, Abstände, Konzentrationszonen, Repowering, lokale Wertschöpfung und der Vergleich mit fossiler Infrastruktur, Tagebau, Leitungen und Klimafolgen.", "Welche Planung reduziert Landschaftsbelastung und stärkt lokale Beteiligung?"],
   ["„Ohne Wind gibt es keinen Strom“", "Systemfrage: Wind braucht Netze, Speicher, Flexibilität, europäische Kopplung und andere Erneuerbare.", "Windenergie ist kein isolierter Dauerlieferant, sondern Teil eines Stromsystems. Dunkelflauten, Netze, Speicher, Lastmanagement, europäische Kopplung, Solarenergie, Biomasse, Wasserkraft, flexible Kraftwerke und Effizienz gehören in dieselbe Bilanz. Der Fehler liegt darin, einzelne Wetterlagen als Beweis gegen den gesamten erneuerbaren Systemumbau zu verwenden.", "Welche Kombination aus Wind, Solar, Netzen, Speichern und Flexibilität liefert zuverlässig die beste Netto-Wirkung?"],
@@ -4817,6 +4850,15 @@ const windExternalSources = [
   ["KNE - Studien zu Windenergie, Biodiversität, Vögeln und Fledermäusen", "Überblick über deutsche Studien zu Windenergie, Biodiversität, Vögeln und Fledermäusen.", "Artenschutz, Studienlage und Konflikteinordnung.", "Studienüberblick; einzelne Arten und Standorte separat prüfen.", "https://www.naturschutz-energiewende.de/fragenundantworten/277-deutsche-studien-windenergie-biodiversitaet-voegel-fledermaeuse/"],
   ["Fachagentur Wind & Solar - Natur- und Artenschutz", "Praxisnahe Übersicht zu Natur- und Artenschutz bei Windenergieprojekten.", "Planung, Genehmigung, Artenschutz und Kommunikation.", "Praxisportal; Rechtsstand und Landesvorgaben prüfen.", "https://www.fachagentur-wind-solar.de/wind/natur-und-artenschutz"],
   ["UBA - Rückbau, Recycling, Repowering", "Rückbau, Recycling und Repowering von Windenergieanlagen.", "Fundamente, Beton, Stahl, Rotorblätter und Produktverantwortung.", "Rotorblätter und Verbundstoffe bleiben besondere Herausforderung.", "https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen-rueckbau-recycling-repowering"],
+  ["UBA - Rotorblattaufbereitung und Recycling", "Mehr als 90 Prozent der Masse einer Windenergieanlage hat hohe Recyclingfähigkeit; Rotorblätter bleiben die schwierigere Fraktion.", "Korrektur des Pauschalnarrativs „Windräder sind nicht recycelbar“.", "Hohe Recyclingfähigkeit der Gesamtanlage heißt nicht, dass jedes alte Rotorblatt bereits hochwertig stofflich recycelt wird.", "https://www.umweltbundesamt.de/themen/abfall-ressourcen/produktverantwortung-in-der-abfallwirtschaft/windenergieanlagen/rotorblattaufbereitung-recycling-von"],
+  ["UBA - SF6 in Mittelspannungsschaltanlagen", "Jedes Windrad verfügt über eine Mittelspannungsschaltanlage; SF₆ dient zum Schalten und Isolieren; Alternativen sind vorhanden.", "Korrektur des Frames: SF₆ ist Schaltanlagen-Thema, nicht Rotorblatt-Thema.", "Artikel älter, aber fachlich wichtig; aktuelle EU-Verordnung ergänzen.", "https://www.umweltbundesamt.de/themen/verbot-des-klimaschaedlichen-sf6-in"],
+  ["EU-Kommission - F-Gase und Treibhauspotenzial", "SF₆ hat über 100 Jahre ein Treibhauspotenzial von rund 24.300 gegenüber CO₂.", "SF₆ korrekt einordnen: sehr klimaschädlich bei Entweichen.", "GWP ist Klimawirkung bei Freisetzung, nicht Aussage über reale Leckagemenge je Anlage.", "https://climate.ec.europa.eu/eu-action/fluorinated-greenhouse-gases/about-f-gases_en"],
+  ["EU-Verordnung 2024/573 - F-Gase", "Stufenweise Verbote für neue elektrische Schaltanlagen mit F-Gasen ab 2026/2028/2030/2032 und Vorgaben zu rückgewonnenem oder recyceltem SF₆ im Service.", "Regulatorischer Ausstieg aus SF₆.", "Ausnahmen und technische Verfügbarkeiten beachten.", "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202400573"],
+  ["Fachagentur Wind & Solar - Rückbau und Recycling", "Weit mehr als 90 Prozent einer Anlage lassen sich recyceln; Fundamente, Türme und Beton/Stahl werden zurückgebaut und recycelt; Rotorblattverwertung ist differenziert.", "Praxisnahe Darstellung Rückbau, Recycling, Rotorblätter.", "Branchennahe Fachagentur; mit UBA ergänzen.", "https://www.fachagentur-wind-solar.de/wind/rueckbau-und-recycling"],
+  ["WindEurope - Circularity", "Bis zu 90 Prozent der Masse einer Windenergieanlage ist recyclebar; Branchencommitment zu Reuse, Repurpose, Recycle oder Recovery von Rotorblättern.", "Europäische Kreislaufwirtschaftsperspektive.", "Branchenquelle; mit UBA und Fachagentur ergänzen.", "https://windeurope.org/about-wind/circularity/"],
+  ["WindEurope - Decommissioned Blades 2025/2026", "Die europäische Windindustrie hat sich zu einem selbst auferlegten Deponieverbot für Rotorblätter ab 1. Januar 2026 verpflichtet.", "Aktuelle Entwicklung gegen das Vergraben-Narrativ.", "Selbstverpflichtung ist noch kein EU-weites Gesetz; Umsetzung und Kontrolle bleiben wichtig.", "https://windeurope.org/news/where-do-wind-turbine-blades-go-when-they-are-decommissioned/"],
+  ["Siemens Gamesa - RecyclableBlade", "Kommerziell verfügbare recyclebare Rotorblätter; erste Installation 2021; neues Harz ermöglicht Materialtrennung.", "Nachweis, dass recyclebare Rotorblattdesigns existieren.", "Herstellerquelle; nicht automatisch für alle Altanlagen verallgemeinern.", "https://www.siemensgamesa.com/global/en/home/explore/journal/recyclable-blade.html"],
+  ["Vestas - Recycling von Windturbinen", "Vestas-Turbinen derzeit zu 85 Prozent recycelbar; Zielpfade für höhere Rotorblatt-Recyclingfähigkeit und Zero-Waste-Turbinen.", "Herstellerperspektive und Zielpfade.", "Herstellerangaben; mit unabhängigen Quellen ergänzen.", "https://www.vestas.com/en/energy-solutions/development/turnwindrecyclable"],
   ["UBA - Gute Praxis Rückbau und Recycling von Windenergieanlagen", "Konzept und Maßnahmen zur Sicherung guter Praxis bei Rückbau und Recycling von Windenergieanlagen.", "Rückbaupflicht, Fundamentrückbau, Beton/Stahl-Trennung und Recyclingstandards.", "PDF; projektspezifische Genehmigungsauflagen bleiben entscheidend.", "https://www.umweltbundesamt.de/system/files/medien/479/publikationen/texte_48-2023_entwicklung_eines_konzepts_und_massnahmen_zur_sicherung_einer_guten_praxis_bei_rueckbau_und_recycling_von_windenergieanlagen.pdf"],
   ["UBA - Infraschall von Windenergieanlagen", "Einordnung tieffrequenten Schalls und Infraschalls bei Windenergieanlagen.", "Gesundheitsframe, Evidenzlage und Bürgerkommunikation.", "Beschwerden ernst nehmen; hörbaren Schall, Schatten, Stress und Nocebo sauber trennen.", "https://www.umweltbundesamt.de/system/files/medien/2380/dokumente/umid_01-2021-infraschall1.pdf"],
   ["UBA - Infraschall einfach erklärt", "Allgemein verständliche Erklärung zu Infraschall, Quellen und Einordnung.", "Einordnung von Sorgen, Messbarkeit und Kommunikation.", "Grundlagenquelle; konkrete Immissionswerte standortbezogen prüfen.", "https://www.umweltbundesamt.de/publikationen/infraschall-einfach-erklaert"],
@@ -5208,11 +5250,12 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
       <nav class="topic-subnav" aria-label="Dossier Navigation" data-search-exclude>
         <a href="#live-antworten">Live antworten</a>
         <a href="#zielkonflikt-verstehen">Zielkonflikt verstehen</a>
+        <a href="#was-wird-ausgeblendet">Was wird ausgeblendet?</a>
         <a href="#deep-dive-quellen">Deep Dive &amp; Quellen</a>
       </nav>
       <section class="section dossier-tab-panel" id="live-antworten">
         <div>
-          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Artenschutz anerkennen, Blockadenarrativ trennen.</h2></div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Echte Prüfpflicht. Falsches Entsorgungsnarrativ.</h2></div>
           <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
             <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
@@ -5220,21 +5263,21 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
           </div>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
-            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich beantworte das, aber ich übernehme nicht den Frame „Wind gegen Natur“. Die bessere Wirkungsfrage lautet: Welche Energieform schützt Klima, Arten, Gesundheit und Versorgung am besten im Gesamtsystem?</p></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Alter Frame: Windrad gegen Natur, Windräder als Sondermüll oder Windkraft wegen SF₆ als heuchlerisch. Besser: Welche Stromquelle schützt Natur, Klima, Gesundheit und Sicherheit insgesamt am besten?</p></article>
           </div>
           <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
         </div>
       </section>
       <section class="section section-soft dossier-tab-panel" id="zielkonflikt-verstehen">
         <div>
-          <div class="section-header"><p class="hero-kicker">Zielkonflikt verstehen</p><h2>Nicht Natur gegen Klima. Natur und Klima gegen fossile Folgekosten.</h2><p>Die Windenergie-Debatte ist ein Musterfall für Zielkonflikte. Sie berührt Klima, Arten, Landschaft, Wald, Gesundheit, Anwohner:innen, Energiepreise, Versorgungssicherheit, Industrie, Kommunen und Demokratie. Der Fehler vieler Narrative liegt darin, nur einen Ausschnitt sichtbar zu machen: den toten Vogel, den gefällten Baum, das Betonfundament oder die Angst vor Infraschall. Diese Punkte können real sein. Aber sie sind kein vollständiger Wirkungsvergleich.</p></div>
+          <div class="section-header"><p class="hero-kicker">Zielkonflikt verstehen</p><h2>Nicht Wind gegen Natur. Prüfaufgaben gegen fossile Folgekosten.</h2><p>Windenergie ist nicht wirkungsfrei. Aber Kohle, Gas und Öl sind es auch nicht. Die Frage ist deshalb nicht: Hat Windenergie Prüfaufgaben? Ja, hat sie. Die Frage ist: Welche Energieform hat im realen Vergleich die geringsten Schäden, die besten Schutzregeln und die schnellste Klimawirkung?</p></div>
           <div class="card-grid two">
-            <article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list"><li>Windenergieanlagen können für bestimmte Vogelarten ein Kollisionsrisiko darstellen.</li><li>Fledermäuse können durch Kollision oder Druckunterschiede gefährdet werden.</li><li>Windenergie im Wald kann Lebensräume beeinträchtigen und braucht besonders sorgfältige Standortprüfung.</li><li>Fundamente, Kranstellflächen, Wege und Kabeltrassen verändern lokale Böden und Flächen.</li><li>Rotorblätter und faserverstärkte Kunststoffe sind beim Recycling anspruchsvoller als Stahl oder Beton.</li><li>Schall, Schattenwurf und nächtliche Befeuerung können Anwohner:innen belasten.</li><li>Landschaftsbild und Heimatgefühl sind reale Akzeptanzfaktoren.</li><li>Schlechte Standortplanung kann Vertrauen zerstören.</li><li>Kommunen brauchen Beteiligung, finanzielle Rückflüsse und transparente Verfahren.</li><li>Artenschutz darf nicht nur formal abgearbeitet werden.</li></ul></article>
-            <article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list"><li>Fossile Energie zerstört Natur ebenfalls: durch Klimaschäden, Luftschadstoffe, Bergbau, Wasserbelastung, Infrastruktur, Transport und Extremwetter.</li><li>Klimawandel ist selbst ein massives Risiko für Arten, Wälder, Böden und Ökosysteme.</li><li>Nicht jeder Standort ist gleich: Brutgebiete, Zugrouten, alte Wälder und Fledermaus-Hotspots müssen anders bewertet werden als vorbelastete Flächen.</li><li>Moderne Schutzmaßnahmen können Risiken senken: Abschaltzeiten, Monitoring, Antikollisionssysteme, Mindestabstände, Standortdaten und Repowering.</li><li>Windenergie ersetzt fossile Stromerzeugung und senkt dadurch Klima- und Gesundheitsschäden.</li><li>Betonfundamente sind ein Rückbau- und Recyclingthema, aber kein Gesamtargument gegen Windenergie.</li><li>Bürgerenergie, kommunale Beteiligung und lokale Wertschöpfung können Akzeptanz stärken.</li><li>Der Denkfehler ist nicht, Artenschutz zu fordern. Der Denkfehler ist, Artenschutz als fossiles Verzögerungsargument zu benutzen.</li></ul></article>
+            <article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list"><li>Artenschutzkonflikte sind real.</li><li>Standorte müssen sorgfältig geprüft werden.</li><li>Rotorblätter waren lange die schwierigste Recyclingfraktion.</li><li>SF₆ ist bei Freisetzung ein sehr starkes Treibhausgas.</li><li>Rückbau und Recycling brauchen klare Standards.</li><li>Waldstandorte sind besonders sensibel.</li><li>Schlechte Planung kann Vertrauen zerstören.</li></ul></article>
+            <article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list"><li>Die Alternative ist nicht unberührte Natur, sondern eine andere Stromquelle.</li><li>Fossile Energie verursacht Klima-, Gesundheits-, Wasser-, Luft- und Bergbauschäden.</li><li>Über 90 Prozent der Masse einer Windenergieanlage ist hoch recyclingfähig.</li><li>Fundamente, Türme, Stahl, Beton und Metalle sind etablierte Recyclingströme.</li><li>Rotorblatt-Recycling entwickelt sich; recyclebare Blätter sind kommerziell verfügbar.</li><li>SF₆ betrifft Schaltanlagen und wird in neuen Anlagen regulatorisch verdrängt.</li><li>Gute Planung, Monitoring, Abschaltungen, Rückbaupflichten und Kreislaufstandards sind die Lösung.</li><li>Pauschale Windblockade verlängert fossile Abhängigkeit.</li></ul></article>
           </div>
           <div class="card-grid two">
-            <article class="card"><p class="card-kicker">Infraschall sauber einordnen</p><h3 class="card-title">Sorgen ernst nehmen, Panikframe vermeiden.</h3><p class="card-text">Windenergieanlagen erzeugen hörbaren Schall, tieffrequenten Schall und Infraschall. Belastung durch hörbaren Schall, Schattenwurf, Befeuerung, Stress und fehlende Beteiligung muss ernst genommen werden. Nach aktueller Evidenz stützt Infraschall unterhalb der Wahrnehmungsschwelle aber keine pauschale Gesundheitsbehauptung.</p><p class="card-text"><strong>Kurzsatz:</strong> Beschwerden prüfen, Ursachen trennen, Angst nicht als Beweis verwenden.</p></article>
-            <article class="card"><p class="card-kicker">Recycling und Rückbau</p><h3 class="card-title">Nicht Sondermüll-Frame, sondern Kreislaufpflicht.</h3><p class="card-text">Windenergieanlagen brauchen klare Rückbaupflichten, Rückstellungen und Recyclingpfade. Beton, Stahl und Metalle sind anders zu behandeln als Rotorblätter aus Verbundwerkstoffen. Die Standortscorecard fragt deshalb nach Materialbilanz, Fundamentrückbau, Bodenwiederherstellung und Produktverantwortung.</p><p class="card-text"><strong>Kurzsatz:</strong> Prüfaufgaben lösen - nicht fossile Schäden verlängern.</p></article>
+            <article class="card"><p class="card-kicker">SF₆: nicht harmlos, aber falsch gerahmt</p><h3 class="card-title">Schaltanlagen-Thema, kein Windrad-Gift im Flügel.</h3><p class="card-text">SF₆ heißt Schwefelhexafluorid. Es ist ein sehr starkes Treibhausgas, wenn es entweicht. In der Windenergie-Debatte wird es aber oft falsch eingesetzt: SF₆ steckt nicht im Rotorblatt und macht Windstrom nicht automatisch klimaschädlich. Es wurde bzw. wird in elektrischen Schaltanlagen verwendet - auch außerhalb der Windenergie.</p><p class="card-text"><strong>Kurzsatz:</strong> SF₆ vermeiden, Anlagen abdichten, Gas zurückgewinnen und neue Schaltanlagen SF₆-frei bauen.</p></article>
+            <article class="card"><p class="card-kicker">Windräder und Recycling</p><h3 class="card-title">Größtenteils recycelbar, Rotorblätter als anspruchsvolle Fraktion.</h3><p class="card-text">Die Aussage „Windräder sind nicht recyclebar“ ist überholt und irreführend. Türme, Fundamente, Stahl, Beton, Kupfer, Aluminium und viele Elektroteile gehen in etablierte Recyclingkreisläufe. Schwieriger sind Rotorblätter aus Faserverbundstoffen. Dort gibt es Verwertung, neue Harzsysteme, Verfahren und recyclebare Blattdesigns.</p><p class="card-text"><strong>Kurzsatz:</strong> Kreislaufaufgabe lösen - nicht fossile Schäden verlängern.</p></article>
           </div>
           <div class="dossier-matrix-wrap">
             <table class="dossier-matrix">
@@ -5246,6 +5289,12 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
           <p class="formula-note">Keine Bilanzgrenze allein reicht. Windenergie muss standortspezifisch und systemisch bewertet werden.</p>
         </div>
       </section>
+      <section class="section" id="was-wird-ausgeblendet">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Was wird ausgeblendet?</p><h2>Der Impact-Fan öffnet die Gesamtbilanz.</h2></div>
+          <div class="card-grid deep-dive-source-grid">${windImpactFan.map(([label, sentence, example]) => `<article class="card"><p class="card-kicker">Wirkungsdimension</p><h3 class="card-title">${escapeHtml(label)}</h3><p class="card-text">${escapeHtml(sentence)}</p><p class="card-text"><strong>Beispiel:</strong> ${escapeHtml(example)}</p></article>`).join("")}</div>
+        </div>
+      </section>
       <section class="section dossier-tab-panel" id="unterclaims">
         <div>
           <div class="section-header"><p class="hero-kicker">Unterclaims</p><h2>Einzelkonflikte sauber aufklappen.</h2></div>
@@ -5254,8 +5303,8 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
       </section>
       <section class="section section-soft" id="psychologischer-wirkungscheck">
         <div>
-          <div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum Tier-, Wald- und Heimatbilder so stark wirken.</h2><p>Bilder von toten Vögeln, gerodetem Wald oder riesigen Betonfundamenten sind konkret und emotional. Fossile Klimaschäden sind dagegen verteilt, zeitverzögert und weniger sichtbar. Dadurch wirkt der lokale Windkonflikt oft größer als die systemischen Schäden der fossilen Alternative.</p></div>
-          ${summaryGrid([["Verfügbarkeitsheuristik", "Tote Vögel, gerodete Flächen oder Betonfundamente sind sichtbarer als verteilte fossile Schäden.", "warning"], ["Negativity Bias", "Ein lokaler Schaden wirkt emotional stärker als vermiedene Klima-, Gesundheits- und Biodiversitätsschäden.", "warning"], ["Verlustaversion und Heimatbindung", "Landschaftsveränderung fühlt sich wie Verlust an und braucht Beteiligung, Sichtbarkeit von Nutzen und faire Verfahren.", "warning"], ["Nocebo-Risiko", "Angst, Kontrollverlust und schlechte Kommunikation können Belastung verstärken, auch wenn Infraschall selbst nicht als pauschaler Gesundheitsbeleg trägt.", "neutral"], ["Scope Neglect", "Ein einzelner Konflikt wird größer wahrgenommen als die systemische Wirkung von Kohle, Öl und Gas.", "critical"], ["Kognitive Dissonanz", "Wer Natur schützen will und zugleich fossile Alternativen ausblendet, hält zwei widersprüchliche Wirkungsbilder auseinander.", "warning"]], "Wind Psychologie", "deep-dive-inline-summary")}
+          <div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum der Satz zieht.</h2><p>Bilder von Windrädern, Tieren, Wald und Müll sind konkret. Fossile Schäden sind oft verteilt, zeitverzögert oder weit weg. Genau diese Wahrnehmungslücke nutzt das Narrativ.</p></div>
+          ${summaryGrid([["Verfügbarkeitsheuristik", "Man sieht das Windrad. Die fossilen Schäden sind oft weit weg. Das Sichtbare wirkt größer als das Verteilte. Gegenbewegung: Den Vergleich öffnen - welche Stromquelle stattdessen?", "warning"], ["Moralischer Schutzimpuls", "Tiere und Wald lösen Schutzinstinkt aus. Aus einem Standortkonflikt wird schnell ein Total-Nein. Gegenbewegung: Artenschutz anerkennen, aber Pauschalblockade trennen.", "warning"], ["Angstanker", "Das Wort „Sondermüll“ macht aus Recycling ein Angstbild. Menschen erinnern den Müll, nicht die Recyclingquote. Gegenbewegung: Erst sagen, dass die Anlage größtenteils recycelbar ist, dann Rotorblätter differenzieren.", "critical"]], "Wind Psychologie", "deep-dive-inline-summary")}
         </div>
       </section>
       <section class="section" id="deep-dive-quellen">
@@ -5273,7 +5322,7 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
           </div>
           ${summaryGrid([["Mensch", claim.mpd.mensch, "warning"], ["Planet", claim.mpd.planet, "warning"], ["Demokratie", claim.mpd.demokratie, "critical"]], "Wind MPD", "mpd-impact-panel")}
           ${summaryGrid([["SDGs", claim.sdgs.join(" / "), "positive"], ["SDG+", claim.sdgPlus.join(" / "), "positive"], ["Wirkungsrisiko", claim.riskLevel, "critical"]], "Wind SDG", "climate-sdg-panel")}
-          ${summaryGrid([["Artenschutzrisiko", "Kollisionsrisiko, Habitatwirkung, Abschaltzeiten, Monitoring und Artennachweise.", "warning"], ["Wald- und Bodenwirkung", "Rodung, Wege, Kranstellflächen, Wasserhaushalt, Bodenverdichtung und Wiederherstellung.", "warning"], ["Gesundheit und Akzeptanz", "Schall, Schattenwurf, Befeuerung, Beteiligung, Beschwerdepfade und Vertrauen.", "neutral"], ["Material und Rückbau", "Beton, Stahl, Rotorblätter, Betriebsmittel, Rückstellungen, Rückbaupflicht und Recyclingpfade.", "neutral"], ["Systemnutzen", "Ersetzter fossiler Strom, CO₂-Minderung, Luftschadstoffe, Importabhängigkeit und Versorgungssicherheit.", "positive"], ["Demokratiequalität", "Transparenz, kommunale Beteiligung, lokale Wertschöpfung und nachvollziehbare Abwägung.", "positive"]], "Wind Indikatorfamilien", "deep-dive-inline-summary")}
+          ${summaryGrid([["Artenschutzrisiko", "Kollisionsrisiko, Habitatwirkung, Abschaltzeiten, Monitoring und Artennachweise.", "warning"], ["Recyclingfähigkeit", "Masseanteil recycelbarer Stoffe, Rotorblattpfad, Materialpass, Rückbauinformation und getrennte Erfassung.", "positive"], ["SF₆-Kontrolle", "Schaltanlagen-Typ, Dichtheit, Monitoring, Rückgewinnung, SF₆-freie Alternativen und EU-Ausstiegspfad.", "warning"], ["Fundamentrückbau", "Rückbaupflicht, Sicherheitsleistung, Flach- oder Pfahlgründung, Beton- und Stahlverwertung.", "neutral"], ["Systemnutzen", "Ersetzter fossiler Strom, CO₂-Minderung, Luftschadstoffe, Importabhängigkeit und Versorgungssicherheit.", "positive"], ["Demokratiequalität", "Transparenz, kommunale Beteiligung, lokale Wertschöpfung und nachvollziehbare Abwägung.", "positive"]], "Wind Indikatorfamilien", "deep-dive-inline-summary")}
           ${woekSolutionMatrix(claim.woekSolution)}
           <section class="section section-soft" aria-labelledby="wind-internal-links">
             <div class="card">
@@ -5306,7 +5355,7 @@ function renderWindEnergyNatureDossier(claim, mode = "live") {
       </section>
     </main>`;
   return pageShell({
-    title: `Windräder, Vögel, Wald, Beton und Rückbau - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
+    title: `Windräder zerstören Natur? - Wirkungsradar ${sectionLabel} | Wirkungsökonomie`,
     description: sentence(claim.abstract),
     canonical: `https://wirkungsoekonomie.de/wirkungsradar/${canonicalPath}/${claim.slug}/`,
     base: "../../../",
