@@ -1,8 +1,8 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-04T09:23:41.674Z
-- Content pages scanned: 1007
-- Glossary terms indexed: 1323
+- Generated: 2026-06-04T15:09:41.113Z
+- Content pages scanned: 1009
+- Glossary terms indexed: 1324
 - Warnings: 561
 
 ## Stichproben
@@ -97,7 +97,6 @@
 - term has no content references: batteriemodul
 - term has no content references: batteriepack
 - term has no content references: batteriepass
-- term has no content references: batterierecycling
 - term has no content references: batterierohstoffe
 - term has no content references: batteriezelle
 - term has no content references: baukostenzuschuss
@@ -128,6 +127,8 @@
 - term has no content references: zirkularitaetsindikator
 - term has no content references: clean-industrial-deal
 - term has no content references: climate-neutral-claim
+- term has no content references: co2-preis
+- term has no content references: co2e
 - term has no content references: coase-theorem
 - term has no content references: conflict-minerals-regulation
 - term has no content references: contracts-for-difference
@@ -358,5 +359,4 @@
 - term has no content references: netzentgeltsystematik
 - term has no content references: netzreserve
 - term has no content references: netzspeicher
-- term has no content references: netzverlust
 - ... 261 weitere Warnungen

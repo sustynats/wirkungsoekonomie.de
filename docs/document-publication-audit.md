@@ -4,11 +4,11 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Ergebnis
 
-- Kuratierte Metadatenkarten: 35
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 17
+- Kuratierte Metadatenkarten: 36
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 18
 - Archivdokumente nur im Archiv: 2
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 16
-- Red-Flag-Treffer: 38
+- Red-Flag-Treffer: 39
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -39,6 +39,7 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Whitepaper T-SROI | public/downloads/originals/Whitepaper-T-SROI.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie | public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie | public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Technische Leitlinien WUStG | public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Technische Leitlinien WUStG | public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Wirkungsrat Konzept | public/downloads/originals/Wirkungsrat_Konzept.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |

@@ -16,8 +16,17 @@
   --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --container: 1180px;
   --container-wide: 1400px;
+  --content-readable: 860px;
   --space-section: clamp(1.5rem, 3vw, 2.75rem);
   --space-gutter: clamp(1rem, 4vw, 3rem);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
   --radius: 8px;
   --shadow-soft: 0 24px 70px rgba(11, 16, 32, 0.10);
   --shadow-card: 0 16px 44px rgba(11, 16, 32, 0.08);
@@ -3345,18 +3354,15 @@ textarea {
 }
 
 .footer-nav {
-  display: block;
-  columns: 13rem;
-  column-gap: clamp(1.2rem, 4vw, 2.4rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: clamp(1.2rem, 3vw, 2rem);
   padding-top: 1.5rem;
   border-top: 1px solid rgba(246, 241, 232, 0.18);
 }
 
 .footer-nav-group {
-  display: inline-block;
-  width: 100%;
-  margin: 0 0 1.45rem;
-  break-inside: avoid;
+  min-width: 0;
 }
 
 .footer-nav-group h3 {
@@ -16748,5 +16754,118 @@ a.principle-card:hover,
 
   .dossier-hero .hero-title {
     max-width: 100%;
+  }
+}
+
+/* Online-Styleguide v1 guardrails: keep recurring legacy templates readable. */
+.site-header {
+  max-width: 100%;
+  overflow: clip;
+}
+
+@media (max-width: 1479px) {
+  body .site-header .nav-toggle {
+    position: relative;
+    inset: auto;
+    z-index: 1400;
+    display: inline-flex !important;
+    justify-self: end;
+    width: 2.65rem;
+    height: 2.65rem;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .site-header .site-nav {
+    position: fixed;
+    top: 4.8rem;
+    left: var(--space-gutter);
+    right: var(--space-gutter);
+    z-index: 1300;
+    display: none;
+    max-height: min(70vh, 36rem);
+    overflow: auto;
+  }
+
+  .site-header .site-nav.open {
+    display: grid;
+  }
+}
+
+.prose,
+.readable-prose,
+.article-body,
+.document-body,
+.reference-prose,
+.online-document-body,
+.detail-document-body,
+.article-content,
+.document-content {
+  max-width: var(--content-readable);
+  margin-inline: auto;
+}
+
+.prose p,
+.readable-prose p,
+.article-body p,
+.document-body p,
+.reference-prose p,
+.online-document-body p,
+.detail-document-body p,
+.article-content p,
+.document-content p {
+  max-width: 72ch;
+}
+
+.article-toc,
+.toc-card,
+.page-toc,
+.document-toc {
+  max-width: var(--content-readable);
+  margin-inline: auto;
+}
+
+.article-toc ol,
+.toc-card ol,
+.page-toc ol,
+.document-toc ol,
+.toc-links {
+  columns: initial;
+  column-count: initial;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content-with-sidebar,
+.document-shell,
+.document-layout,
+.online-document-layout,
+.reference-chapter-layout,
+.portal-document-layout,
+.radar-detail-layout,
+.reference-work.reference-reader,
+body[data-reader-mode] .reference-work.reference-reader,
+.workpaper-reader.reference-reader,
+body[data-reader-mode] .workpaper-reader.reference-reader {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: min(100%, calc(var(--content-readable) + (2 * var(--space-gutter))));
+  overflow-x: clip;
+}
+
+.reference-work.reference-reader .article-shell,
+.workpaper-reader.reference-reader .article-shell {
+  max-width: var(--content-readable);
+  margin-inline: auto;
+}
+
+@media (min-width: 1120px) {
+  .content-with-sidebar,
+  .document-shell,
+  .document-layout,
+  .online-document-layout,
+  .reference-chapter-layout,
+  .portal-document-layout {
+    grid-template-columns: minmax(0, var(--content-readable));
+    justify-content: center;
   }
 }

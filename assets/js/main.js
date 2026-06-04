@@ -28,24 +28,6 @@ if (mainElement && !document.querySelector(".skip-link")) {
 
 document.querySelectorAll(".article-status-note").forEach((note) => note.remove());
 
-if (siteNav) {
-  const navItems = [
-    ["Start", "index.html", "index.html"],
-    ["Verstehen", "verstehen.html", "verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|verstehen/|modell.html|modell/|kompass.html|begriffe/|glossar.html"],
-    ["So wirkt WÖk", "so-wirkt-wirkungsoekonomie/", "so-wirkt-wirkungsoekonomie/|so-wirkt-wirkungsoekonomie.html"],
-    ["Wirkungsfelder", "wirkungsfelder/", "wirkungsfelder/"],
-    ["Methoden & Werkzeuge", "werkzeuge/", "werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html"],
-    ["Erleben", "erleben/", "erleben.html|erleben/|ausprobieren/"],
-    ["Akademie", "akademie.html", "akademie.html|akademie/"],
-    ["Bibliothek", "bibliothek/", "bibliothek/|werkstatt/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/"],
-    ["Mitmachen", "mitmachen.html", "mitmachen.html|mitmachen/|fuer/"],
-    ["Suche", "suche.html", "suche.html"],
-  ];
-  siteNav.innerHTML = navItems
-    .map(([label, url, match]) => `<a href="${relativeSiteUrl(url)}" data-nav-match="${match}">${label}</a>`)
-    .join("");
-}
-
 if (navToggle && siteNav) {
   let navReturnFocus = null;
   const focusableSelector = [

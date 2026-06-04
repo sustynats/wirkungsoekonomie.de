@@ -4,8 +4,8 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 
 ## Ergebnis
 
-- HTML-Dateien geprüft: 3897
-- HTML-Dateien geändert: 426
+- HTML-Dateien geprüft: 3992
+- HTML-Dateien geändert: 424
 - blockierte Rohformat-Links gefunden: 1397
 - auf vorhandene PDF-Fassung umgelegt: 1397
 - ohne PDF-Fassung als "PDF-Fassung in Produktion" markiert: 0
@@ -32,7 +32,6 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 - `begriffe/eu-taxonomie/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/gri/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/host-wirkungsscore/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
-- `begriffe/impact-controlling/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/lokale-energie-als-wirkungsinfrastruktur/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/mensch-planet-demokratie/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/nace/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
@@ -57,7 +56,6 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 - `begriffe/warmmietenneutralitaet/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/wirkmechanismus/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/wirkstoff/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
-- `begriffe/wirkungscontrolling/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/wirkungsdaten/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/wirkungsdatenraum/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `begriffe/wirkungsempfaenger/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
