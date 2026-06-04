@@ -376,6 +376,38 @@ const DOCUMENTS = [
     order: 110
   },
   {
+    id: "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+    slug: "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+    title: "Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie",
+    subtitle: "Arbeitspapier zur Verbindung von CSRD/ESRS, IRO-Logik, Wirkungsdaten und Steuerung",
+    fileName: "Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+    filePath: "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+    documentType: "working-paper",
+    status: "arbeitsfassung",
+    visibility: "expert_public",
+    audience: ["Fachöffentlichkeit", "Unternehmen", "Nachhaltigkeit", "Controlling", "Marketing"],
+    level: "expert",
+    summaryShort: "Arbeitspapier zur doppelten Wesentlichkeit als Brücke von Berichtspflichten zu Impact-Controlling, Wirkungsdaten und wirkungsorientierter Steuerung.",
+    whatToExpect: "Eine fachliche Einordnung, wie CSRD/ESRS, IROs, Impact Materiality, Financial Materiality, Key Impact Indicators und Impact-Marketing in eine steuerbare Wirkungsarchitektur übersetzt werden.",
+    keyQuestions: [
+      "Wie wird doppelte Wesentlichkeit von einer Berichtspflicht zu einer Steuerungslogik?",
+      "Welche Rolle spielen Impact-Controlling, Impact-Management und Key Impact Indicators?",
+      "Wie schützt Wirkungsökonomie vor Impact-Washing und bloßer Wirkungssimulation?"
+    ],
+    topics: ["Doppelte Wesentlichkeit", "Impact-Controlling", "Impact-Management", "Impact-Marketing", "CSRD", "ESRS", "IRO", "Wirkungsdaten"],
+    methods: ["Wesentlichkeitsanalyse", "Impact-Controlling", "Key Impact Indicators", "Wirkungsdatenraum"],
+    impactFields: ["Mensch", "Planet", "Demokratie"],
+    relatedDocuments: ["whitepaper-t-sroi", "grundlagenpapier-wirkungsoekonomie", "woek-begriffsleitfaden-fuehrend"],
+    version: "Arbeitsfassung 2026-06",
+    date: "2026-06",
+    legalNotice: "Keine Rechts-, Steuer-, Prüfungs-, Nachhaltigkeits-, Anlage- oder Unternehmensberatung.",
+    editorialNote: "Als Arbeitspapier für PDF-Download, Website-Verankerung und Glossar-Erweiterung bereitgestellt.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Methoden & Werkzeuge",
+    order: 112
+  },
+  {
     id: "technische-leitlinien-wustg",
     slug: "technische-leitlinien-wustg",
     title: "Technische Leitlinien WUStG",

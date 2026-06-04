@@ -179,6 +179,13 @@ const wirkungscontrollingDetailDossier = {
   pdf: "assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf",
 };
 
+const doubleMaterialityWorkpaper = {
+  title: "Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie",
+  text: "Arbeitspapier zur Verbindung von CSRD/ESRS, IRO-Logik, Wirkungsdaten, Impact-Management und wirkungsorientierter Steuerung.",
+  href: "dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/",
+  pdf: "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+};
+
 const go10ToolCards = [
   ["WÖk-ID-Browser", "Methodenseite vorhanden", "werkzeuge/woek-ids/", "Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen."],
   ["Scorecard-Generator", "Methodik", "werkzeuge/scorecards/", "Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten."],
@@ -646,6 +653,12 @@ function overviewPage() {
           <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
           <p class="card-text">Planung, Messung, Bewertung, Steuerung und Rückkopplung von Wirkung für Mensch, Planet und Demokratie.</p>
           <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Online lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Neu · Arbeitspapier</p>
+          <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
+          <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
         </article>${methodPaperCardGrid(base).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
       </div>
     </section>
@@ -663,6 +676,12 @@ function overviewPage() {
           <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
           <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
           <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Dossier lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Arbeitspapier · Doppelte Wesentlichkeit</p>
+          <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
+          <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
         </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
         title,
         text,
@@ -678,6 +697,7 @@ function overviewPage() {
     ${downloadBlock(base, [
       ...impactDownloads,
       ...go10MethodPapers.flatMap(methodPaperDownloadItems),
+      { label: doubleMaterialityWorkpaper.title, href: doubleMaterialityWorkpaper.pdf },
     ])}`,
   });
 }

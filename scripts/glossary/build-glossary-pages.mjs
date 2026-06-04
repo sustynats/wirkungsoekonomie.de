@@ -465,6 +465,8 @@ const relatedContentTargets = new Map([
   ["nachhaltiger-einzelhandel", ["Nachhaltiger Einzelhandel", "../../bibliothek/nachhaltiger-einzelhandel/"]],
   ["nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen", ["Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen", "../../bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/"]],
   ["nachhaltigkeitstransformation-im-handwerk", ["Nachhaltigkeitstransformation im Handwerk", "../../bibliothek/nachhaltigkeitstransformation-im-handwerk/"]],
+  ["arbeitspapier-doppelte-wesentlichkeit-impact-controlling", ["Arbeitspapier Doppelte Wesentlichkeit", "../../dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/"]],
+  ["doppelte-wesentlichkeit-impact-controlling", ["Arbeitspapier Doppelte Wesentlichkeit", "../../dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/"]],
   ["von-der-pigou-steuer-zur-wirkungsoekonomie", ["Von der Pigou-Steuer zur Wirkungsökonomie", "../../blog/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.html"]],
   ["scorecard", ["Scorecards", "../../werkzeuge/scorecards/"]],
   ["scorecards", ["Scorecards", "../../werkzeuge/scorecards/"]],
@@ -476,6 +478,12 @@ const relatedContentTargets = new Map([
   ["wirkungsumsatzsteuer", ["Wirkungsumsatzsteuer", "../../werkzeuge/wirkungsumsatzsteuer/"]],
   ["produktwirkungsrechner", ["Produktwirkungsrechner", "../../erleben/produktwirkungsrechner/"]],
   ["impact-controlling-rechner", ["Impact-Controlling-Rechner", "../../erleben/impact-controlling-rechner/"]],
+  ["impact-management", ["Impact-Management", "../../begriffe/impact-management/"]],
+  ["impact-controlling", ["Impact-Controlling", "../../begriffe/impact-controlling/"]],
+  ["impact-marketing", ["Impact-Marketing", "../../begriffe/impact-marketing/"]],
+  ["impact-materiality", ["Impact Materiality", "../../begriffe/impact-materiality/"]],
+  ["financial-materiality", ["Financial Materiality", "../../begriffe/financial-materiality/"]],
+  ["key-impact-indicator", ["Key Impact Indicator / KII", "../../begriffe/key-impact-indicator/"]],
   ["produkte-konsum", ["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]],
   ["staat-recht-demokratie", ["Staat, Recht & Demokratie", "../../wirkungsfelder/staat-recht-demokratie/"]],
   ["finanzsystem-kapital", ["Finanzsystem & Kapital", "../../wirkungsfelder/finanzsystem-kapital/"]],
@@ -724,7 +732,20 @@ function resolveContentReference(input, options = {}) {
     || contentByTitle.get(titleKey);
   if (!entry && relatedContentTargets.has(slug)) {
     const [title, href] = relatedContentTargets.get(slug);
-    return resolveContentReference(href, { ...options, fallbackTitle: title });
+    const canonicalTarget = normalizeReferenceUrl(href);
+    const mappedEntry = contentByUrl.get(canonicalTarget) || contentByUrl.get(canonicalTarget.split("#")[0]);
+    if (mappedEntry) return resolveContentReference(canonicalTarget, { ...options, fallbackTitle: title });
+    return {
+      url: canonicalTarget || href,
+      canonicalUrl: canonicalTarget || href,
+      title: cleanReferenceTitle(title),
+      description: options.description || "Redaktionelle Glossarquelle oder interne Arbeitsgrundlage dieses Begriffs.",
+      contentTypeLabel: options.contentTypeLabel || "Quelle",
+      scopeLabel: options.scopeLabel || "",
+      extentLabel: options.extentLabel || "",
+      relevanceReason: options.relevanceReason || "",
+      isFallback: true,
+    };
   }
   if (!entry) {
     if (options.allowTextFallback) {
