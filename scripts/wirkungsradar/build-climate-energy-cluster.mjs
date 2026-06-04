@@ -2003,7 +2003,7 @@ const claims = [
     title: "Wasserstoff für alles?",
     slug: "wasserstoff-fuer-alles",
     claimPhrase: "„Wir machen das einfach mit Wasserstoff.“",
-    shortJudgement: "Wahrer Schlüsseltechnologie-Kern, falsches Allzwecknarrativ.",
+    shortJudgement: "Speicherreserve. Kein Dauerstrom.",
     narrativeFamilies: ["Wasserstoff als Allheilmittel", "Technologieoffenheit als Verzögerung", "H2-ready-Zukunftsversprechen", "Gasnetz-Rettungsframe"],
     riskLevel: "hoch",
     themes: ["Wasserstoff", "Industrie", "Wärme", "Mobilität", "Speicher", "Infrastruktur"],
@@ -2011,21 +2011,21 @@ const claims = [
     sdgPlus: ["Quellenklarheit", "Diskursfähigkeit", "Schutz vor Hype", "institutionelles Vertrauen", "intergenerationelle Verantwortung", "Versorgungssicherheit", "Transformationsresilienz"],
     subtitle: "Warum Wasserstoff wertvoll ist - aber nicht überall sinnvoll.",
     abstract:
-      "Die Aussage „Wir machen das einfach mit Wasserstoff“ enthält einen wahren Kern: Grüner Wasserstoff wird für Klimaneutralität gebraucht. Besonders in Industrie, Chemie, Stahl, Düngemitteln, bestimmten Hochtemperaturprozessen, Langzeitspeichern, Schifffahrt, Luftfahrt und als strategische Reserve kann Wasserstoff eine zentrale Rolle spielen. Irreführend wird die Aussage, wenn Wasserstoff als universeller Ersatz für fossile Energie dargestellt wird - für Autos, private Heizungen, breite Gebäudewärme oder als Grund, Elektrifizierung und Effizienz zu verzögern. Wirkungsökonomisch ist Wasserstoff ein knapper Systemträger. Die bessere Frage lautet nicht: Wasserstoff ja oder nein? Sondern: Wo erzeugt eine Kilowattstunde erneuerbarer Strom über Wasserstoff die höchste positive Netto-Wirkung - und wo ist direkte Elektrifizierung schneller, günstiger und effizienter?",
+      "Die Aussage „Wir machen das einfach mit Wasserstoff“ enthält einen wahren Kern: Grüner Wasserstoff wird für Klimaneutralität gebraucht. Besonders in Stahl, Chemie, Ammoniak, Methanol, bestimmten Hochtemperaturprozessen, Langzeitspeichern, Schifffahrt, Luftfahrt und als strategische Reserve kann Wasserstoff eine zentrale Rolle spielen. Irreführend wird die Aussage, wenn Wasserstoff als universeller Ersatz für fossile Energie dargestellt wird - für Autos, private Heizungen, breite Gebäudewärme oder als Dauerbrennstoff für Strom. Wasserstoff wird mit Strom hergestellt. Rückverstromung ist deshalb ein später, verlustreicher Reservepfad, nicht die Leitarchitektur eines modernen Stromsystems. Die bessere Frage lautet: Wo wirkt direkter Strom besser - und wo braucht das System wirklich Wasserstoff als Molekül oder Reserve?",
     summary: {
-      judgement: "Wahrer Schlüsseltechnologie-Kern, falsches Allzwecknarrativ.",
+      judgement: "Speicherreserve. Kein Dauerstrom.",
       true_core: "Grüner Wasserstoff wird für Stahl, Chemie, bestimmte Prozesswärme, Langzeitspeicher, Luftfahrt, Schifffahrt und Resilienz gebraucht.",
       problem: "Aus einer knappen Schlüsselressource wird ein Allzweckersatz für fossile Energie gemacht.",
       narrative: "Wasserstoff als Allheilmittel / H2-ready-Zukunftsversprechen / Gasnetz-Rettungsframe.",
-      risk: "Direkte Elektrifizierung, Wärmepumpen, E-Mobilität, Netze, Speicher und Effizienz werden verzögert; No-Regret-Anwendungen bekommen zu spät Versorgung.",
-      host_answer: "Wasserstoff ist zu wertvoll, um ihn überall zu verschwenden.",
+      risk: "Direktstrom, Wärmepumpen, E-Mobilität, Netze, Speicher und Effizienz werden verzögert; No-Regret-Anwendungen bekommen zu spät Versorgung.",
+      host_answer: "Direktstrom zuerst. Wasserstoff gezielt.",
     },
     answers: {
-      ten_seconds: "Wasserstoff ist wichtig - aber zu knapp und zu wertvoll für alles. Wir brauchen ihn zuerst dort, wo direkte Elektrifizierung nicht reicht: Stahl, Chemie, Schiffe, Flugverkehr und Langzeitspeicher.",
+      ten_seconds: "Wasserstoff kann Stromlücken absichern. Aber ihn dauerhaft zu verstromen ist ein teurer Umweg. Zuerst gehört er dahin, wo Strom direkt nicht reicht: Stahl, Chemie, Schiffe, Flugzeuge und Langzeitspeicher.",
       thirty_seconds:
-        "Der wahre Kern ist: Grüner Wasserstoff ist ein Schlüssel für Klimaneutralität. Der Denkfehler ist: daraus Wasserstoff für Autos, Heizungen und alles Mögliche zu machen. Wenn Strom direkt genutzt werden kann, ist das meistens effizienter. Wasserstoff gehört dorthin, wo er die größte Systemwirkung hat.",
+        "Der wahre Kern ist: Grüner Wasserstoff ist ein Schlüssel für Klimaneutralität. Der Denkfehler ist: daraus Wasserstoff für Autos, Heizungen oder Dauerstrom zu machen. Gute Energiearchitektur nutzt Strom möglichst direkt: Wind und Solar ins Netz, Strom in Motoren, Wärmepumpen, Speicher und flexible Lasten. Wasserstoff gehört dorthin, wo dieser direkte Pfad nicht reicht: Stahl, Chemie, Schiffe, Flugzeuge, Langzeitspeicher und seltene Reservephasen.",
       two_minutes:
-        "Ich ordne das sauber ein. Wasserstoff ist nicht falsch - im Gegenteil. Ohne grünen Wasserstoff wird Klimaneutralität in Stahl, Chemie, Ammoniak, Methanol, bestimmten Hochtemperaturprozessen, Luftfahrt, Schifffahrt und saisonaler Stromspeicherung sehr schwierig. Aber Wasserstoff ist knapp, teuer in der Herstellung, braucht erneuerbaren Strom, Infrastruktur, Speicher, Transport und oft weitere Umwandlungsschritte. Deshalb ist die Frage nicht: Wasserstoff ja oder nein? Sondern: Wo ist Wasserstoff wirklich die beste Lösung? Bei vielen Anwendungen ist direkte Elektrifizierung effizienter: Wärmepumpen statt Wasserstoffheizung, E-Autos statt Wasserstoff-Pkw, vielfach E-Lkw statt Wasserstoff-Lkw, direkte Prozesswärme statt Umweg über H2. Wirkungsökonomisch brauchen wir eine Wasserstoff-Hierarchie: zuerst No-Regret-Anwendungen, dann Speicher und Resilienz, dann Spezialfälle - aber kein Wasserstoff als Verzögerungsargument.",
+        "Ich würde Wasserstoff nicht kleinreden. Ohne grünen Wasserstoff wird Klimaneutralität in Stahl, Chemie, Ammoniak, Methanol, bestimmten Hochtemperaturprozessen, Luftfahrt, Schifffahrt und saisonaler Stromspeicherung sehr schwierig. Aber Wasserstoff ist kein Zauberstrom aus der Leitung. Er muss mit erneuerbarem Strom erzeugt, gespeichert, transportiert und oft wieder umgewandelt werden. Wenn daraus wieder Strom werden soll, ist das ein später und verlustreicher Reservepfad. Genau deshalb gilt: Direktstrom zuerst. Wind und Solar liefern Strom; dieser Strom sollte möglichst direkt in Elektromotoren, Wärmepumpen, Prozesswärme, Batterien, Netze und flexible Verbraucher gehen. Wasserstoff ist der Notvorrat und das Spezialmolekül: für Stahl, Chemie, Schiffe, Flugzeuge, Langzeitspeicher und Resilienz. Die richtige Frage ist also nicht Wasserstoff ja oder nein, sondern: Wo ist der Umweg wirklich nötig - und wo verschwendet er knappen erneuerbaren Strom?",
     },
     answersFinal: true,
     effectPath: [
@@ -2040,13 +2040,15 @@ const claims = [
       ["Wirkung dritter Ordnung", "Die Transformation wird nicht nach Wirkung priorisiert, sondern nach Erhalt vertrauter Technologien."],
     ],
     frameKey: "technikwunder",
-    redirectQuestion: "Redest du über Wasserstoff für Stahl, Chemie und Langzeitspeicher - oder über Wasserstoff als Ausrede, Elektrifizierung zu verschieben?",
+    redirectQuestion: "Wo wirkt direkter Strom besser - und wo braucht das System wirklich Wasserstoff als Molekül oder Reserve?",
     dontDo: [
       "Nicht sagen: Wasserstoff ist Unsinn.",
       "Nicht Wasserstoff-Forschung abwerten.",
       "Nicht Stahl, Chemie, Luftfahrt und Schifffahrt vergessen.",
       "Nicht jeden H2-Einsatz als Greenwashing abtun.",
       "Nicht direkte Elektrifizierung unterschätzen.",
+      "Nicht Wasserstoff-Rückverstromung als Dauerstrom verkaufen.",
+      "Nicht Reserve mit Grundlast verwechseln.",
       "Nicht so tun, als werde jedes Gasnetz einfach H2-ready.",
       "Nicht Wasserstoffheizungen als breite Lösung darstellen.",
       "Nicht Wasserstoff-Pkw als Hauptpfad verkaufen.",
@@ -2058,9 +2060,11 @@ const claims = [
       "Stahlproduktion, Chemie, Ammoniak, Methanol und bestimmte Hochtemperaturprozesse können Wasserstoff oder Derivate benötigen.",
       "Luftfahrt und Schifffahrt brauchen wahrscheinlich Wasserstoff-Derivate wie E-Kerosin, Ammoniak oder Methanol.",
       "Langzeitspeicher und Rückverstromung können für Dunkelflauten und Systemresilienz relevant sein.",
+      "Rückverstromung ist ein Reservepfad für seltene Lücken, kein Dauerstrommodell.",
       "Das genehmigte deutsche Wasserstoff-Kernnetz umfasst 9.040 km und soll Industriecluster, Speicher, Häfen, Importpunkte und Kraftwerksstandorte verbinden.",
       "Emissionsarmer Wasserstoff ist global bisher sehr knapp; viele heutige Wasserstoffmengen werden fossil hergestellt.",
       "Direkte Elektrifizierung ist in vielen Anwendungen effizienter und schneller.",
+      "Direkte elektrische Pfade haben im künftigen Stromsystem Vorrang vor thermischen Umwandlungspfaden.",
       "H2-ready ist keine Versorgungsgarantie.",
       "Blauer Wasserstoff ist nicht emissionsfrei und hängt von Methanleckagen, CCS-Rate, Prozessenergie und Speicherqualität ab.",
     ],
@@ -2069,6 +2073,7 @@ const claims = [
       "Haushalte kaufen H2-ready-Gasheizungen, obwohl kein bezahlbarer grüner Wasserstoff verfügbar wird.",
       "Batterieelektrische Mobilität, E-Lkw, Ladeinfrastruktur und Effizienz werden verzögert.",
       "Erneuerbarer Strom wird ineffizient genutzt, statt direkt dort zu wirken, wo es möglich ist.",
+      "Wasserstoff-Dauerverstromung bindet knappe Moleküle, die in Industrie, Schifffahrt, Luftfahrt oder Langzeitspeichern dringender gebraucht werden.",
       "Subventionen und Infrastruktur können in überdimensionierte oder falsche H2-Pfade fließen.",
       "Emissionen sinken langsamer, wenn Wasserstoff als Aufschubnarrativ wirkt.",
       "Enttäuschte Wasserstoffversprechen erzeugen Misstrauen gegen Transformation und Wissenschaft.",
@@ -2077,6 +2082,7 @@ const claims = [
       { title: "Wasserstoff-Hierarchie verbindlich machen", text: "No-Regret-Anwendungen wie Stahl, Chemie, Ammoniak, Methanol, Langzeitspeicher, Luftfahrt und Schifffahrt erhalten Vorrang." },
       { title: "H2-Wirkungsgate für jede Anwendung", text: "Jede H2-Anwendung muss Verfügbarkeit, Kosten, CO2-Minderung, Alternativenvergleich, Infrastrukturbedarf und Zeitfenster zeigen." },
       { title: "Direkte Elektrifizierung zuerst prüfen", text: "Wo Strom direkt genutzt werden kann, muss dieser Pfad gegen den H2-Pfad verglichen werden." },
+      { title: "Rückverstromung als Reserve begrenzen", text: "Wasserstoffkraftwerke werden als seltenes Sicherheitsnetz geplant, nicht als neue Dauerstrom- oder Grundlastarchitektur." },
       { title: "H2-ready-Kommunikation regulieren", text: "H2-ready darf nicht als Zukunftssicherheitsversprechen verkauft werden, wenn kein lokaler H2-Versorgungspfad besteht." },
       { title: "Kernnetz und Verteilnetz trennen", text: "Das Wasserstoff-Kernnetz wird für Industrie, Speicher, Häfen, Kraftwerke und Korridore geplant - nicht als pauschale Zusage an jede Gasheizung." },
       { title: "Importe wirkungsbasiert absichern", text: "Importe brauchen Nachhaltigkeitsstandards, Menschenrechtsprüfung, Wasserstressprüfung, Diversifizierung und Partnerschaftslogik." },
@@ -4616,10 +4622,10 @@ const fusionExternalSources = [
 const hydrogenKeyPoints = [
   ["Grüner Wasserstoff ist unverzichtbar", "Für Stahl, Chemie, Ammoniak, Methanol, bestimmte Prozesswärme, Langzeitspeicher, Luftfahrt und Schifffahrt wird Wasserstoff oder ein Derivat voraussichtlich benötigt.", "positive"],
   ["Wasserstoff ist knapp", "Emissionsarmer Wasserstoff ist global noch sehr gering verfügbar. Deshalb muss er priorisiert werden.", "critical"],
+  ["Direktstrom zuerst", "Strom möglichst direkt erzeugen, speichern, verteilen und nutzen. Wasserstoff kommt dort dazu, wo der direkte Pfad nicht reicht.", "positive"],
+  ["Rückverstromung ist Reserve", "Wasserstoff kann seltene Stromlücken absichern. Als Dauerbrennstoff für Strom wäre er ein teurer Umweg.", "warning"],
   ["Direkte Elektrifizierung ist oft effizienter", "Wo Strom direkt genutzt werden kann - etwa bei Wärmepumpen, E-Pkw, vielen Industrieprozessen und E-Lkw - ist Wasserstoff häufig energetisch und wirtschaftlich schlechter.", "warning"],
-  ["Nicht jedes Gasnetz wird ein Wasserstoffnetz", "Das deutsche Wasserstoff-Kernnetz ist wichtig, aber kein 1:1-Ersatz für das heutige flächendeckende Erdgasnetz.", "warning"],
-  ["Importe bleiben ein Risiko", "Deutschland wird Wasserstoff und Derivate importieren müssen. Deshalb sind Diversifizierung, Nachhaltigkeitsstandards und Vermeidung neuer Abhängigkeiten zentral.", "warning"],
-  ["WÖk-Lösung: Wasserstoff-Hierarchie", "Wasserstoff wird nach Wirkungspriorität verteilt: zuerst No-Regret-Anwendungen, dann Systemresilienz, zuletzt nur dort, wo keine bessere Alternative existiert.", "positive"],
+  ["WÖk-Lösung: Wasserstoff-Hierarchie", "Wasserstoff wird nach Wirkungspriorität verteilt: zuerst No-Regret-Anwendungen, dann Langzeitspeicher und Resilienz, zuletzt nur dort, wo keine bessere Alternative existiert.", "positive"],
 ];
 
 const hydrogenTrueItems = [
@@ -4628,6 +4634,7 @@ const hydrogenTrueItems = [
   "Chemie, Ammoniak, Methanol und Raffinerieersatzpfade brauchen klimaneutrale Moleküle.",
   "Luftfahrt und Schifffahrt benötigen wahrscheinlich Wasserstoff-Derivate wie E-Kerosin, Ammoniak oder Methanol.",
   "Langzeitspeicher und Rückverstromung können für Dunkelflauten und Systemresilienz relevant sein.",
+  "Flexible H2-Kraftwerke können Sicherheitsnetz sein, wenn sie selten laufen und klar begrenzt werden.",
   "Ein Wasserstoff-Kernnetz kann Industriecluster, Speicher, Häfen, Importpunkte und Kraftwerksstandorte verbinden.",
   "Importe können notwendig sein, weil Deutschland nicht alle H2-Bedarfe inländisch erzeugen wird.",
   "Forschung, Elektrolyseure, Infrastruktur, Speicher und Wasserstoffmärkte sind strategisch wichtig.",
@@ -4636,6 +4643,7 @@ const hydrogenTrueItems = [
 const hydrogenMissingItems = [
   "Grüner Wasserstoff braucht erneuerbaren Strom.",
   "Elektrolyse, Kompression, Transport, Speicherung, Rückverstromung und Derivateerzeugung verursachen Verluste.",
+  "Wasserstoff-Dauerverstromung ist keine moderne Leitarchitektur, sondern ein Wärme-zu-Strom-Umweg.",
   "Emissionsarmer Wasserstoff ist global bisher sehr knapp.",
   "Viele heutige Wasserstoffmengen werden fossil hergestellt.",
   "Direkte Elektrifizierung ist oft effizienter und günstiger.",
@@ -4646,13 +4654,33 @@ const hydrogenMissingItems = [
   "Importe können neue Abhängigkeiten schaffen.",
   "Blauer Wasserstoff ist nicht emissionsfrei.",
   "Wasserstoff darf nicht als Verzögerungsargument gegen heute verfügbare Technologien dienen.",
+  "Reserve ist nicht Grundlast: Ziel ist, Wasserstoffkraftwerke möglichst selten zu brauchen.",
 ];
 
 const hydrogenHierarchy = [
-  ["A) Höchste Priorität / No-Regret", "Stahl-Direktreduktion; Ammoniak und Düngemittel; Methanol und Grundchemikalien; Ersatz fossilen Wasserstoffs in Raffinerien; bestimmte Hochtemperaturprozesse; Langzeitspeicher; bestimmte Kraftwerksreserve.", "zuerst versorgen"],
-  ["B) Hohe Priorität, technologieabhängig", "Schifffahrt über Ammoniak, Methanol oder andere H2-Derivate; Luftfahrt über E-Kerosin/SAF; bestimmte industrielle Wärmeprozesse; schwer elektrifizierbare Spezialtransporte; kritische Resilienz-Anwendungen.", "pfadbezogen prüfen"],
-  ["C) Prüfbereich / Einzelfall", "Schwere Langstrecken-Lkw; nicht elektrifizierte Bahnstrecken; Insel- oder Spezialnetze; Kraft-Wärme-Kopplung in besonderen Industrieclustern.", "route- und systembezogen vergleichen"],
-  ["D) Niedrige Priorität / meist ineffizient", "Private Gebäudewärme im großen Stil; H2-ready-Gasheizungen als allgemeine Lösung; Wasserstoff-Pkw im Massenmarkt; E-Fuels für normale Pkw-Neuwagen; breite Niedertemperaturwärme; ineffiziente Beimischung ins Gasnetz.", "nicht als Standardpfad verkaufen"],
+  ["A) Höchste Priorität / No-Regret", "Stahl-Direktreduktion; Ammoniak und Düngemittel; Methanol und Grundchemikalien; Ersatz fossilen Wasserstoffs in Raffinerien; bestimmte Hochtemperaturprozesse.", "zuerst versorgen"],
+  ["B) Hohe Priorität / Moleküle", "Schifffahrt über Ammoniak, Methanol oder andere H2-Derivate; Luftfahrt über E-Kerosin/SAF; schwer elektrifizierbare Spezialanwendungen.", "pfadbezogen prüfen"],
+  ["C) Systemreserve", "Langzeitspeicher; seltene Dunkelflauten; H2-ready-Turbinen als Sicherheitsnetz; kritische Resilienz-Anwendungen.", "bereitstellen, selten nutzen"],
+  ["D) Prüfbereich / Einzelfall", "Schwere Langstrecken-Lkw; nicht elektrifizierte Bahnstrecken; Insel- oder Spezialnetze; Kraft-Wärme-Kopplung in besonderen Industrieclustern.", "route- und systembezogen vergleichen"],
+  ["E) Niedrige Priorität / meist ineffizient", "Private Gebäudewärme im großen Stil; H2-ready-Gasheizungen als allgemeine Lösung; Wasserstoff-Pkw im Massenmarkt; E-Fuels für normale Pkw-Neuwagen; breite Niedertemperaturwärme; Wasserstoff-Dauerverstromung.", "nicht als Standardpfad verkaufen"],
+];
+
+const directPowerHierarchy = [
+  ["1. Strom direkt erzeugen", "Photovoltaik, Wind an Land, Wind auf See, Wasserkraft wo sinnvoll.", "Licht, Wind oder Wasser liefern Strom ohne Brennstoffkette."],
+  ["2. Strom klug nutzen", "Effizienz, Lastmanagement, flexible Industrie, dynamische Tarife, Wärmepumpen, E-Autos, E-Lkw, Elektrolyseure als flexible Verbraucher.", "Verbrauch passt besser zur Erzeugung."],
+  ["3. Strom speichern", "Batterien, Pumpspeicher, Wärmespeicher, Quartiersspeicher, Fahrzeugbatterien, langfristig Wasserstoffspeicher.", "Stunden zuerst direkt, seltene lange Lücken später mit H2."],
+  ["4. Strom transportieren und teilen", "Netzausbau, Verteilnetze, europäische Stromkopplung, regionale Flexibilitätsmärkte, Netzbooster.", "Strom kommt dorthin, wo er gebraucht wird."],
+  ["5. Steuerbare Reserve", "H2-ready-Gasturbinen, streng begrenzte Biomasse, Notfall- und Kapazitätsreserve.", "Sicherheitsnetz statt Dauerbetrieb."],
+  ["6. Niedrige Priorität", "Wasserstoff-Dauerverstromung, E-Fuel-Verstromung, fossile Grundlast, neue thermische Dauerstrom-Logik.", "Zu viele Umwandlungsschritte für den Alltag."],
+];
+
+const hydrogenPowerPlantCheck = [
+  ["Direktstrom", "Kann Strom direkt genutzt werden?", "Wenn ja: Direktpfad bevorzugen."],
+  ["Umwandlung", "Wird aus Strom erst Wasserstoff und später wieder Strom?", "Dann ist es Reserve, nicht Hauptpfad."],
+  ["Betriebsstunden", "Wie oft soll die Anlage laufen?", "Selten: plausibel. Dauerbetrieb: kritisch."],
+  ["Brennstoff", "Woher kommt grüner Wasserstoff?", "Knappheit, Importpfad und Industriebedarf mitprüfen."],
+  ["Alternative", "Können Speicher, Netze, flexible Lasten oder Effizienz den Bedarf senken?", "Reservebedarf zuerst kleiner machen."],
+  ["Systemrolle", "Ist die Anlage Feuerwehr oder Alltag?", "Feuerwehr ja. Dauerfeuer nein."],
 ];
 
 const hydrogenBoundaryMatrix = [
@@ -4882,22 +4910,24 @@ function renderHydrogenDossier(claim, mode = "live") {
       <section class="hero radar-page-hero theme-hero dossier-hero">
         <div class="radar-hero-copy">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / <a href="../">${sectionLabel}</a> / Wasserstoff</nav>
-          <p class="hero-kicker">Wirkungsradar Leuchtturm · checked_candidate</p>
+          <p class="hero-kicker">Wirkungsradar Leuchtturm · Direktstrom-Architektur</p>
           <h1 class="hero-title">Wasserstoff für alles?</h1>
-          <p class="hero-subtitle">Warum Wasserstoff wertvoll ist - aber nicht überall sinnvoll.</p>
-          <p class="radar-abstract"><strong>Abstract:</strong> ${escapeHtml(claim.abstract)}</p>
+          <p class="hero-subtitle">Warum Wasserstoff wertvoll ist - aber kein Dauerstrom und kein Allzweckersatz.</p>
+          <p class="radar-abstract"><strong>Einfaches Bild:</strong> Wenn du Licht brauchst, zündest du nicht erst ein Feuer an, erhitzt Wasser, drehst eine Turbine und machst daraus Strom. Du nutzt Strom möglichst direkt. Wasserstoff ist der Notvorrat und das Spezialmolekül - nicht das tägliche Brot.</p>
+          <p class="radar-abstract"><strong>Kurzformel:</strong> Direktstrom zuerst. Wasserstoff gezielt. Rückverstromung nur als Reserve.</p>
           <p class="radar-status-line"><span>Kurzurteil: ${escapeHtml(claim.shortJudgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Hinweis: Wasserstoff ist Systemressource, nicht Universalenergie</span></p>
         </div>
       </section>
       ${summaryGrid(hydrogenKeyPoints, "Das Wichtigste in 6 Punkten")}
       <nav class="topic-subnav" aria-label="Dossier Navigation" data-search-exclude>
         <a href="#live-antworten">Live antworten</a>
+        <a href="#direktstrom-architektur">Direktstrom-Architektur</a>
         <a href="#wasserstoff-hierarchie">Wasserstoff-Hierarchie verstehen</a>
         <a href="#deep-dive-quellen">Deep Dive &amp; Quellen</a>
       </nav>
       <section class="section dossier-tab-panel" id="live-antworten">
         <div>
-          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Wasserstoff anerkennen, Verschwendung stoppen.</h2></div>
+          <div class="section-header"><p class="hero-kicker">Live antworten</p><h2>Wasserstoff anerkennen, Direktstrom schützen.</h2></div>
           <div class="radar-answer-accordion host-answer-tabs" aria-label="Host-Antworten nach Länge">
             <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span> <span class="radar-answer-label">Kurzantwort · ${words(answers.ten_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.ten_seconds)}“</p></details>
             <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span> <span class="radar-answer-label">Einordnung · ${words(answers.thirty_seconds)} Wörter</span></summary><p>„${escapeHtml(answers.thirty_seconds)}“</p></details>
@@ -4905,16 +4935,24 @@ function renderHydrogenDossier(claim, mode = "live") {
           </div>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Gute Rückfrage</p><h3 class="card-title">${escapeHtml(claim.redirectQuestion)}</h3></article>
-            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Wasserstoff löst alles“. Die richtige Wirkungsfrage lautet: Wo erzeugt knapper grüner Wasserstoff die höchste Netto-Wirkung?</p></article>
-            <article class="card"><p class="card-kicker">Kernformel</p><h3 class="card-title">Wasserstoff ist zu wertvoll, um ihn zu verschwenden.</h3><p class="card-text">Wasserstoff ja. Aber dort, wo er wirkt.</p></article>
+            <article class="card"><p class="card-kicker">Frame sichtbar machen</p><p class="card-text">Ich übernehme nicht den Frame „Wasserstoff löst alles“. Die richtige Wirkungsfrage lautet: Wo wirkt direkter Strom besser - und wo braucht das System wirklich Wasserstoff?</p></article>
+            <article class="card"><p class="card-kicker">Kernformel</p><h3 class="card-title">Wasserstoffstrom ist der Notvorrat, nicht das tägliche Brot.</h3><p class="card-text">Wasserstoff ja. Dauerverstromung nein.</p></article>
             <article class="card"><p class="card-kicker">Nicht ins Stöckchen springen</p><ul class="clean-list">${claim.dontDo.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
           </div>
         </div>
       </section>
+      <section class="section section-soft dossier-tab-panel" id="direktstrom-architektur">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Energiearchitektur</p><h2>Direktstrom zuerst. Wärme-zu-Strom nur als Sonderfall.</h2><p>Die Zukunft des Stromsystems ist keine immer kompliziertere Wärmemaschine. Gute Energiearchitektur erzeugt Strom möglichst direkt, nutzt ihn klug, speichert ihn, teilt ihn über Netze und hält steuerbare Reserve für seltene Lücken bereit.</p></div>
+          ${summaryGrid([["Maus-Modus", "Wenn du Licht brauchst, zündest du nicht erst ein Feuer an, erhitzt Wasser, drehst eine Turbine und machst daraus Strom. Du nutzt den Strom möglichst direkt.", "positive"], ["Professionell", "Direkte elektrische Pfade haben Vorrang vor thermischen Umwandlungspfaden, weil sie weniger Stufen, geringere variable Betriebskosten und bessere Modularität ermöglichen.", "positive"], ["Host-Satz", "Gute Energiearchitektur macht Strom möglichst direkt. Wasserstoffstrom ist Reserve, nicht Grundlast.", "warning"]], "Direktstrom Prinzip")}
+          ${matrixTable("Die Direktstrom-Hierarchie", directPowerHierarchy, ["Stufe", "Beispiele", "Wirkungsregel"])}
+          ${matrixTable("Der Wärmekraftwerks-Check für Wasserstoff-Rückverstromung", hydrogenPowerPlantCheck, ["Frage", "Prüfung", "Regel"])}
+        </div>
+      </section>
       <section class="section section-soft dossier-tab-panel" id="wasserstoff-hierarchie">
         <div>
-          <div class="section-header"><p class="hero-kicker">Wasserstoff-Hierarchie verstehen</p><h2>Der Umweg zählt.</h2><p>Wasserstoff ist kein Primärenergieträger, der einfach aus der Erde kommt. Grüner Wasserstoff wird mit erneuerbarem Strom hergestellt. Jeder Umwandlungsschritt kostet Energie, Infrastruktur und Geld. Deshalb muss Wasserstoff dort eingesetzt werden, wo er wirklich gebraucht wird - nicht dort, wo direkte Elektrifizierung besser funktioniert.</p></div>
-          ${summaryGrid([["Kernsatz", "Wasserstoff ist keine Energiequelle wie Sonne oder Wind. Er ist ein Energieträger, der erst mit Aufwand hergestellt werden muss.", "warning"], ["Zweiter Kernsatz", "Ist Wasserstoff hier die beste Lösung - oder nur die bequemste Erzählung?", "critical"], ["Leitsatz", "Die Wasserstoffwirtschaft scheitert nicht an zu wenig Euphorie, sondern an falscher Priorisierung.", "positive"]], "Wasserstoff Kernsätze")}
+          <div class="section-header"><p class="hero-kicker">Wasserstoff-Hierarchie verstehen</p><h2>Der Umweg zählt.</h2><p>Wasserstoff ist kein Primärenergieträger, der einfach aus der Erde kommt. Grüner Wasserstoff wird mit erneuerbarem Strom hergestellt. Jeder Umwandlungsschritt kostet Energie, Infrastruktur und Geld. Deshalb muss Wasserstoff dort eingesetzt werden, wo er wirklich gebraucht wird - nicht dort, wo direkte Elektrifizierung oder direkte Stromnutzung besser funktioniert.</p></div>
+          ${summaryGrid([["Kernsatz", "Wasserstoff ist keine Energiequelle wie Sonne oder Wind. Er ist ein Energieträger, der erst mit Aufwand hergestellt werden muss.", "warning"], ["Zweiter Kernsatz", "Ist Wasserstoff hier die beste Lösung - oder nur die bequemste Erzählung?", "critical"], ["Leitsatz", "Die Wasserstoffwirtschaft scheitert nicht an zu wenig Euphorie, sondern an falscher Priorisierung.", "positive"], ["Reserveformel", "Reserve ja. Dauerfeuer nein.", "warning"]], "Wasserstoff Kernsätze")}
           <div class="card-grid two">
             <article class="card"><p class="card-kicker">Was stimmt?</p>${htmlList(hydrogenTrueItems)}</article>
             <article class="card"><p class="card-kicker">Was fehlt?</p>${htmlList(hydrogenMissingItems)}<p class="card-text"><strong>Kernsatz:</strong> Der Denkfehler ist nicht Wasserstoff. Der Denkfehler ist Wasserstoff ohne Priorisierung.</p></article>

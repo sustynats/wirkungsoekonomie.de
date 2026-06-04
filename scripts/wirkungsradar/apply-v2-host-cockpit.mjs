@@ -256,23 +256,24 @@ const overrides = {
   },
   "wasserstoff-fuer-alles": {
     claim: "Wir machen das einfach mit Wasserstoff.",
-    short: "Wahrer Schlüsseltechnologie-Kern, falsches Allzwecknarrativ.",
+    short: "Speicherreserve. Kein Dauerstrom.",
     say:
-      "Wasserstoff ist zu wertvoll, um ihn überall zu verschwenden.",
+      "Wasserstoff kann Stromlücken absichern. Aber ihn dauerhaft zu verstromen ist ein teurer Umweg. Zuerst gehört er dahin, wo Strom direkt nicht reicht.",
     live:
-      "Wasserstoff ist wichtig - aber zu knapp und zu wertvoll für alles. Wir brauchen ihn zuerst dort, wo direkte Elektrifizierung nicht reicht: Stahl, Chemie, Schiffe, Flugverkehr und Langzeitspeicher.",
+      "Wasserstoff ist wichtig - aber nicht als Alltagsbrennstoff für alles. Direkter Strom gehört zuerst in Motoren, Wärmepumpen, Netze und Speicher. Wasserstoff gehört dorthin, wo Strom direkt nicht reicht: Stahl, Chemie, Schiffe, Flugzeuge und seltene Stromlücken.",
     panel:
-      "Wasserstoff ist nicht falsch - im Gegenteil. Ohne grünen Wasserstoff wird Klimaneutralität in Stahl, Chemie, Ammoniak, Methanol, bestimmten Hochtemperaturprozessen, Luftfahrt, Schifffahrt und saisonaler Stromspeicherung sehr schwierig. Aber Wasserstoff ist knapp, braucht erneuerbaren Strom, Infrastruktur, Speicher, Transport und oft weitere Umwandlungsschritte. Deshalb ist die Frage nicht Wasserstoff ja oder nein, sondern: Wo wirkt er besser als direkte Elektrifizierung?",
-    exampleTitle: "Der grüne Stahl",
+      "Gute Energiearchitektur macht Strom möglichst direkt. Wasserstoff wird erst aus Strom hergestellt, muss gespeichert, transportiert und später wieder genutzt oder verstromt werden. Das kann für Industrie, Moleküle und seltene Reservephasen sinnvoll sein. Als Dauerstrompfad ist es aber ein verlustreicher Wärme-zu-Strom-Umweg.",
+    exampleTitle: "Der Wasserstoffspeicher für seltene Wochen",
     example:
-      "Ein Stahlwerk ersetzt Kohle durch grünen Wasserstoff. Der Wasserstoff geht nicht in jede Heizung, sondern dorthin, wo Strom allein schwer reicht. Aus einem klimaschweren Grundstoff wird ein Baustein für Brücken, Züge, Windräder und Gebäude.",
-    question: "Wo wird knapper Wasserstoff wirklich gebraucht und wo wirkt direkter Strom besser?",
+      "Ein Energiesystem nutzt Wind und Solar direkt. Batterien glätten Stunden. Wärmespeicher helfen im Alltag. Für wenige lange Engpassphasen gibt es Wasserstoffspeicher und flexible Turbinen. Sie laufen selten - aber sie sichern das System.",
+    question: "Wo wirkt direkter Strom besser - und wo braucht das System wirklich Wasserstoff als Molekül oder Reserve?",
     oldFrame: "Wasserstoff löst alles.",
     notThis: "Wasserstoff ist Unsinn.",
-    better: "Wasserstoff ja. Aber dort, wo er wirkt.",
+    better: "Direktstrom zuerst. Wasserstoff gezielt.",
     impacts: [
       ["Knappheit", "Emissionsarmer Wasserstoff ist global bisher knapp.", "Priorität statt Wunschliste."],
-      ["Effizienz", "Direkte Elektrifizierung ist oft schneller und effizienter.", "Direktpfad immer mitprüfen."],
+      ["Effizienz", "Direkte Elektrifizierung ist oft schneller und effizienter.", "Direktpfad zuerst prüfen."],
+      ["Reserve", "Rückverstromung kann seltene Lücken absichern.", "Sicherheitsnetz, nicht Dauerbetrieb."],
       ["Industrie", "Stahl, Chemie, Ammoniak und Methanol sind No-Regret-Felder.", "Nicht mit Pkw-Heizung vermischen."],
       ["Wärme", "H2-ready ist keine Versorgungsgarantie.", "Straße, Netz und Preis konkret prüfen."],
       ["Mobilität", "H2-Pkw und E-Fuels sind im Massenmarkt meist ineffizient.", "Spezialfälle getrennt bewerten."],
@@ -281,7 +282,7 @@ const overrides = {
     ],
     psychology: [
       ["Alles kann bleiben.", "Status-quo-Bias", "Wasserstoff verspricht Gasheizung, Verbrenner und Tanklogik ohne großen Umbau.", "Knappheit und lokalen Versorgungspfad sichtbar machen."],
-      ["Technik macht es bequem.", "Technological Fix Bias", "Technische Möglichkeit wirkt wie eine Systemlösung.", "Effizienz, Kosten und Alternativen vergleichen."],
+      ["Technik macht es bequem.", "Technological Fix Bias", "Technische Möglichkeit wirkt wie eine Systemlösung.", "Umwandlungskette und Direktstromvergleich zeigen."],
       ["Verlustangst sinkt.", "Loss Aversion", "Wasserstoff beruhigt Angst vor Heizungs- oder Autoverlust.", "Sorge anerkennen und No-Regret-Priorität erklären."],
     ],
   },
