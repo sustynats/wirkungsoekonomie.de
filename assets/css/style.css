@@ -3345,11 +3345,18 @@ textarea {
 }
 
 .footer-nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-  gap: 1.6rem;
+  display: block;
+  columns: 13rem;
+  column-gap: clamp(1.2rem, 4vw, 2.4rem);
   padding-top: 1.5rem;
   border-top: 1px solid rgba(246, 241, 232, 0.18);
+}
+
+.footer-nav-group {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.45rem;
+  break-inside: avoid;
 }
 
 .footer-nav-group h3 {
@@ -3369,6 +3376,7 @@ textarea {
 }
 
 .footer-nav a {
+  overflow-wrap: anywhere;
   color: var(--ivory);
   font-size: 0.92rem;
   font-weight: 700;
