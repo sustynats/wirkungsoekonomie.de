@@ -273,7 +273,7 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(metaTitle)}</title>
     <meta name="description" content="${esc(metaDescription)}">
-    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260601-glossary-cards">
+    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260604-debate-use-order">
   </head>
   <body>
 ${renderHeader(depth)}
@@ -281,7 +281,7 @@ ${renderHeader(depth)}
 ${body}
     </main>
 ${renderFooter(depth)}
-    <script src="${depth}assets/js/main.js?v=20260529-glossary-hover-audit"></script>
+    <script src="${depth}assets/js/main.js?v=20260604-debate-use-order"></script>
   </body>
 </html>
 `.replace(/[ \t]+$/gm, "");

@@ -398,7 +398,7 @@ const body = `
     </section>
   </main>
   ${renderFooter()}
-  <script src="${BASE}assets/js/main.js?v=20260525-cta-cleanup" defer></script>
+  <script src="${BASE}assets/js/main.js?v=20260604-debate-use-order" defer></script>
   <script src="${BASE}assets/js/search.js" defer></script>
 `;
 
@@ -422,7 +422,7 @@ const html = `<!doctype html>
     <meta property="og:description" content="${esc(meta.description)}">
     <meta property="og:url" content="${esc(meta.url)}">
     <link rel="icon" href="${BASE}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${BASE}assets/css/style.css?v=20260602-so-wirkt-woek">
+    <link rel="stylesheet" href="${BASE}assets/css/style.css?v=20260604-debate-use-order">
   </head>
   <body>
 ${body}

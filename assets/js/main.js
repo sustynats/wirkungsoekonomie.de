@@ -1270,7 +1270,11 @@ function initGlobalWirkungsradarBridge() {
 initGlobalWirkungsradarBridge();
 
 function initRadarPsychologyPanel() {
-  if (!mainElement || document.querySelector("[data-radar-psychology-panel]")) {
+  if (
+    !mainElement ||
+    document.querySelector("[data-radar-psychology-panel]") ||
+    document.querySelector(".debate-psychology-accordion, [data-v3-psychology-check], .debate-psychology-secondary")
+  ) {
     return;
   }
 
@@ -1340,43 +1344,45 @@ function initRadarPsychologyPanel() {
   };
 
   const panel = document.createElement("section");
-  panel.className = "section radar-psychology-panel";
+  panel.className = "section radar-psychology-panel debate-psychology-secondary";
   panel.dataset.radarPsychologyPanel = "true";
   panel.innerHTML = `
     <div>
-      <div class="section-header">
-        <p class="hero-kicker">Psychologischer Wirkungscheck</p>
-        <h2>Welche Effekte hier mitlaufen.</h2>
-        <p>Viele Wirkungsradar-Aussagen funktionieren nicht nur über Fakten, sondern über psychologische Abkürzungen. Wer sie erkennt, muss nicht in den Frame springen.</p>
-      </div>
-      <div class="card-grid radar-psychology-grid">
-        ${selected.effects
-          .map(
-            ([label, text]) => `<article class="card radar-psychology-card">
-          <p class="card-kicker">Effekt</p>
-          <h3 class="card-title">${label}</h3>
-          <p class="card-text">${text}</p>
-        </article>`,
-          )
-          .join("")}
-      </div>
-      <div class="card-grid two radar-psychology-practice">
-        <article class="card">
-          <p class="card-kicker">Psychologisches Spielchen</p>
-          <h3 class="card-title">So wird die Debatte verschoben</h3>
-          <p class="card-text">${selected.game}</p>
-        </article>
-        <article class="card">
-          <p class="card-kicker">Oberhand gewinnen</p>
-          <h3 class="card-title">So umgehst du den Trigger</h3>
-          <p class="card-text">${selected.counter}</p>
-          <p class="card-text"><strong>Merksatz:</strong> Wahren Kern retten, Denkfehler trennen, Wirkungspfad zurückholen.</p>
-        </article>
-      </div>
+      <details class="debate-psychology-accordion">
+        <summary><span>Warum zieht dieses Narrativ?</span><span>Ergänzende Mechanik</span></summary>
+        <p class="card-text">Viele Narrative wirken nicht, weil sie wahr sind, sondern weil sie Angst, Kontrollverlust oder Zugehörigkeit ansprechen. Wer den Mechanismus erkennt, kann die Debatte auf den Wirkpfad zurückholen.</p>
+        <div class="debate-psychology-list">
+          ${selected.effects
+            .slice(0, 3)
+            .map(
+              ([label, text]) => `<article class="card debate-psychology-item">
+            <p class="v2-badge">Mechanismus</p>
+            <h3 class="card-title">${label}</h3>
+            <p class="card-text">${text}</p>
+          </article>`,
+            )
+            .join("")}
+        </div>
+        <div class="card-grid two radar-psychology-practice">
+          <article class="card">
+            <p class="card-kicker">Debattenverschiebung</p>
+            <h3 class="card-title">So kommt die Debatte zurück zum Wirkpfad</h3>
+            <p class="card-text">${selected.game}</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Reaktion</p>
+            <h3 class="card-title">So umgehst du den Trigger</h3>
+            <p class="card-text">${selected.counter}</p>
+            <p class="card-text"><strong>Merksatz:</strong> Wahren Kern retten, Denkfehler trennen, Wirkungspfad zurückholen.</p>
+          </article>
+        </div>
+      </details>
     </div>
   `;
 
-  const anchor = mainElement.querySelector(".radar-summary-section, .topic-subnav, .section");
+  const anchor =
+    mainElement.querySelector("#warum-belastbar, #faktenlage, #quellen, #host-antworten") ||
+    mainElement.querySelector(".radar-summary-section, .topic-subnav, .section");
   if (anchor?.nextElementSibling) {
     anchor.after(panel);
   } else {

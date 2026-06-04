@@ -15802,6 +15802,8 @@ a.principle-card:hover,
 .v3-layer-consequences {
   border-top: 1px solid rgba(47, 125, 92, 0.14);
   border-bottom: 1px solid rgba(47, 125, 92, 0.14);
+  background:
+    linear-gradient(135deg, rgba(47, 125, 92, 0.08), rgba(255, 252, 245, 0.92));
 }
 
 .v3-layer-consequences .hero-kicker,
@@ -15841,6 +15843,113 @@ a.principle-card:hover,
   margin-top: 0.75rem;
 }
 
+.v3-consequence-orders,
+.v3-mpd-risk-card,
+.impact-path-stepper,
+.debate-psychology-accordion {
+  width: min(100%, 980px);
+  margin-inline: auto;
+}
+
+.v3-order-card {
+  border-left: 5px solid rgba(138, 79, 0, 0.55);
+}
+
+.v3-mpd-risk-card {
+  border-left: 5px solid rgba(47, 125, 92, 0.7);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.v3-mpd-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.9rem;
+}
+
+.v3-mpd-risk-grid div,
+.impact-path-step {
+  padding: 0.85rem;
+  border: 1px solid rgba(47, 125, 92, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.72);
+}
+
+.v3-mpd-risk-grid strong,
+.v3-mpd-risk-grid span {
+  display: block;
+}
+
+.v3-mpd-risk-grid span {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.impact-path-stepper {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.impact-path-step {
+  position: relative;
+  min-width: 0;
+}
+
+.impact-path-step:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  right: -0.55rem;
+  transform: translateY(-50%);
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.impact-path-step p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.debate-psychology-secondary {
+  padding-top: clamp(1rem, 2vw, 1.5rem);
+  padding-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.debate-psychology-accordion {
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(107, 74, 31, 0.2);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.78);
+}
+
+.debate-psychology-accordion summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.debate-psychology-accordion summary span:last-child {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.debate-psychology-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.debate-psychology-item {
+  box-shadow: none;
+}
+
 @media (max-width: 980px) {
   .v3-radar-nav {
     display: flex;
@@ -15851,6 +15960,19 @@ a.principle-card:hover,
   .v3-radar-nav a {
     min-width: max-content;
     scroll-snap-align: start;
+  }
+
+  .v3-mpd-risk-grid,
+  .impact-path-stepper {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-path-step:not(:last-child)::after {
+    content: "↓";
+    top: auto;
+    right: 1rem;
+    bottom: -0.85rem;
+    transform: none;
   }
 }
 

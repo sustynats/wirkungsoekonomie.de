@@ -187,7 +187,7 @@ const overrides = {
       ["Miete", "Modernisierung kann belasten, wenn Mieterschutz und Förderung nicht greifen.", "Soziale Abfederung ist Teil der Wirkung."],
       ["Kommune", "Wärmeplanung soll zeigen, wo Fernwärme, Quartierslösung oder dezentrale Wärme plausibel ist.", "Planung verhindert Blindinvestitionen."],
       ["Klima", "Fossile Wärme bindet Emissionen bis weit in die Zukunft.", "2045 ist für Heizungszyklen nicht weit weg."],
-      ["Abhängigkeit", "Gaspreise, CO2-Preis und Netzumbau können fossile Heizungen riskanter machen.", "Vertraut heißt nicht automatisch sicher."],
+      ["Abhängigkeit", "Gaspreise, CO₂-Preis und Netzumbau können fossile Heizungen riskanter machen.", "Vertraut heißt nicht automatisch sicher."],
       ["Demokratie", "Verlorene Deutungshoheit schwächt Vertrauen in Transformationspolitik.", "Sprache entscheidet, ob Menschen Wirkung oder Bedrohung sehen."],
     ],
     psychology: [

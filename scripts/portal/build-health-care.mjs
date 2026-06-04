@@ -259,7 +259,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260602-responsive-tables">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order">
   </head>
   <body>
     <header class="site-header">
@@ -271,7 +271,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
       <p class="print-meta">Wirkungsökonomie · ${esc(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: ${DATE}</p>
 ${body(base)}
     </main>
-    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260604-debate-use-order}"></script>
   </body>
 </html>`);
 }

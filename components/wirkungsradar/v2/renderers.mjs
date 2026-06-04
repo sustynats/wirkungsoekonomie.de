@@ -77,25 +77,24 @@ export function ImpactFan({ impactFan }) {
 }
 
 export function PsychologyLiteCard({ psychologyLite }) {
-  return `<section class="section v2-psychology-lite" id="warum-der-satz-zieht"><div><div class="section-header"><p class="hero-kicker">Warum der Satz zieht</p><h2>Einfacher psychologischer Check.</h2></div><div class="card-grid three">${psychologyLite.items.slice(0, 3).map((item) => `<article class="card"><p class="v2-badge">${esc(item.technical || "Effekt")}</p><h3 class="card-title">${esc(item.simple)}</h3><p class="card-text">${esc(item.debateEffect)}</p><p class="card-text"><strong>So kommst du raus:</strong> ${esc(item.howToBypass)}</p></article>`).join("")}</div></div></section>`;
+  if (!psychologyLite?.items?.length) return "";
+  return `<section class="section v2-psychology-lite debate-psychology-secondary" id="warum-der-satz-zieht"><div><details class="debate-psychology-accordion"><summary><span>Warum zieht dieses Narrativ?</span><span>Ergänzende Mechanik</span></summary><p class="card-text">Viele Narrative wirken nicht, weil sie wahr sind, sondern weil sie Angst, Kontrollverlust oder Zugehörigkeit ansprechen. Wer den Mechanismus erkennt, kann die Debatte auf den Wirkpfad zurückholen.</p><div class="debate-psychology-list">${psychologyLite.items.slice(0, 3).map((item) => `<article class="card debate-psychology-item"><p class="v2-badge">${esc(item.technical || "Mechanismus")}</p><h3 class="card-title">${esc(item.simple)}</h3><p class="card-text"><strong>Wie er hier wirkt:</strong> ${esc(item.debateEffect)}</p><p class="card-text"><strong>Wie du ihn entschärfst:</strong> ${esc(item.howToBypass)}</p></article>`).join("")}</div></details></div></section>`;
 }
 
 export function ConsequenceStack({ consequenceStack }) {
   const items = [consequenceStack.order1, consequenceStack.order2, consequenceStack.order3];
-  return `<section class="section section-soft v2-consequence-stack" id="was-passiert-danach"><div><div class="section-header"><p class="hero-kicker">Was passiert, wenn man danach handelt?</p><h2>Folgen in drei Stufen.</h2></div><div class="card-grid three">${items.map((item) => `<article class="card"><p class="v2-badge">${esc(item.label)}</p><p class="card-text">${esc(item.text)}</p></article>`).join("")}</div></div></section>`;
+  return `<section class="section section-soft v2-consequence-stack v3-layer-consequences" id="folgencheck"><span id="was-passiert-danach" class="sr-only">Folgencheck</span><div><div class="section-header"><p class="hero-kicker">Wirkung statt bloßer Faktenprüfung</p><h2>Folgencheck: Was dieses Narrativ bewirkt</h2><p>Der Debatten-Kompass prüft, was sich verändert, wenn Menschen der Behauptung folgen.</p></div><div class="card-grid three v3-consequence-orders">${items.map((item, index) => `<article class="card v3-order-card"><p class="v2-badge">Wirkung ${index + 1}. Ordnung</p><h3 class="card-title">${esc(item.label)}</h3><p class="card-text">${esc(item.text)}</p></article>`).join("")}</div></div></section>`;
 }
 
 export function V3PageNav() {
   const items = [
-    ["Schnellantwort", "#host-cockpit"],
-    ["Antworten", "#host-antworten"],
-    ["Faktenlage", "#faktenlage"],
+    ["Behauptung", "#host-cockpit"],
     ["Folgencheck", "#folgencheck"],
-    ["System", "#systemische-wirkungen"],
-    ["Frame", "#narrativ-psychologie"],
-    ["Psychologie", "#warum-der-satz-zieht"],
-    ["Lösung", "#loesungspfad"],
+    ["Wirkpfad", "#systemische-wirkungen"],
+    ["Reaktion", "#host-antworten"],
+    ["Faktenlage", "#faktenlage"],
     ["Quellen", "#warum-belastbar"],
+    ["Warum verfängt es?", "#warum-der-satz-zieht"],
     ["Methode", "#warum-der-radar-so-prueft"],
   ];
   return `<nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche" data-search-exclude>${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
@@ -115,8 +114,16 @@ export function FactsLayer({ factsLayer }) {
 
 export function ConsequenceCheck({ consequenceCheck }) {
   if (!consequenceCheck?.ifNarrativeWins?.length || !consequenceCheck?.ifCorrectlyHandled?.length) return "";
-  const rows = (items) => items.map((item) => `<article class="card"><p class="v2-badge">${esc(item.level)}</p><p class="card-text">${esc(item.text)}</p>${item.affectedSystems?.length ? chips(item.affectedSystems) : ""}</article>`).join("");
-  return `<section class="section section-soft v3-layer v3-layer-consequences" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was passiert, wenn Menschen danach handeln?</h2><p>Der Debatten-Kompass prüft nicht nur, ob ein Satz stimmt. Er prüft, welche Entscheidungen wahrscheinlicher werden.</p></div><div class="card-grid two"><article class="card v3-check-column"><p class="card-kicker">Wenn das Narrativ gewinnt</p><div class="card-grid">${rows(consequenceCheck.ifNarrativeWins)}</div></article><article class="card v3-check-column"><p class="card-kicker">Wenn wir richtig reagieren</p><div class="card-grid">${rows(consequenceCheck.ifCorrectlyHandled)}</div></article></div><div class="card-grid three"><article class="card"><p class="card-kicker">Kosten des Nicht-Handelns</p><p>${esc(consequenceCheck.nonActionCost)}</p></article>${consequenceCheck.lockInRisk ? `<article class="card"><p class="card-kicker">Lock-in-Risiko</p><p>${esc(consequenceCheck.lockInRisk)}</p></article>` : ""}${consequenceCheck.feedbackLoop ? `<article class="card"><p class="card-kicker">Rückkopplung</p><p>${esc(consequenceCheck.feedbackLoop)}</p></article>` : ""}</div></div></section>`;
+  const orderLabels = ["Wirkung 1. Ordnung", "Wirkung 2. Ordnung", "Wirkung 3. Ordnung"];
+  const narrativeRows = consequenceCheck.ifNarrativeWins.slice(0, 3).map((item, index) => `<article class="card v3-order-card"><p class="v2-badge">${esc(orderLabels[index] || item.level)}</p><h3 class="card-title">${esc(item.level)}</h3><p class="card-text">${esc(item.text)}</p>${item.affectedSystems?.length ? chips(item.affectedSystems) : ""}</article>`).join("");
+  const responseRows = consequenceCheck.ifCorrectlyHandled.slice(0, 3).map((item) => `<article class="card v3-response-card"><p class="v2-badge">${esc(item.level)}</p><p class="card-text">${esc(item.text)}</p>${item.affectedSystems?.length ? chips(item.affectedSystems) : ""}</article>`).join("");
+  const affected = [...new Set(consequenceCheck.ifNarrativeWins.flatMap((item) => item.affectedSystems || []))];
+  const mpd = [
+    ["Mensch", affected.find((item) => /mensch|sozial|arbeit|gesund|sicherheit|teilhabe/i.test(item)) || "Risiken für Teilhabe, Sicherheit, Alltag oder Vertrauen werden sichtbar gemacht."],
+    ["Planet", affected.find((item) => /planet|klima|energie|natur|ressource|infrastruktur/i.test(item)) || "Ökologische Folgekosten und bessere Alternativen dürfen nicht aus der Rechnung fallen."],
+    ["Demokratie", affected.find((item) => /demokratie|vertrauen|politik|institution|medien|recht/i.test(item)) || "Demokratische Entscheidung braucht klare Zuständigkeit, Quellen und Bilanzgrenzen."],
+  ];
+  return `<section class="section section-soft v3-layer v3-layer-consequences" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Wirkung statt bloßer Faktenprüfung</p><h2>Folgencheck: Was dieses Narrativ bewirkt</h2><p>Der Debatten-Kompass prüft, was sich verändert, wenn Menschen der Behauptung folgen: Wahrnehmung, Verhalten, Entscheidungen und Systempfade.</p></div><div class="card-grid three v3-consequence-orders">${narrativeRows}</div><div class="card v3-mpd-risk-card"><p class="card-kicker">Risiken nach Mensch, Planet und Demokratie</p><div class="v3-mpd-risk-grid">${mpd.map(([label, text]) => `<div><strong>${esc(label)}</strong><span>${esc(text)}</span></div>`).join("")}</div></div><div class="card-grid two"><article class="card v3-check-column"><p class="card-kicker">Rote Linie / Unterlassungskosten</p><p>${esc(consequenceCheck.nonActionCost)}</p>${consequenceCheck.lockInRisk ? `<p><strong>Lock-in:</strong> ${esc(consequenceCheck.lockInRisk)}</p>` : ""}${consequenceCheck.feedbackLoop ? `<p><strong>Rückkopplung:</strong> ${esc(consequenceCheck.feedbackLoop)}</p>` : ""}</article><article class="card v3-check-column"><p class="card-kicker">Wirkungsökonomische Einordnung</p><p>Die Frage ist nicht nur, ob ein Satz einen wahren Kern hat. Entscheidend ist, welche Entscheidung wahrscheinlicher wird und welcher Zustand dadurch für Mensch, Planet und Demokratie entsteht.</p><div class="card-grid">${responseRows}</div></article></div></div></section>`;
 }
 
 export function ImpactMatrix({ impactMatrix }) {
@@ -131,7 +138,7 @@ export function NarrativeMechanism({ narrativeMechanism }) {
 
 export function PsychologicalEffectCheck({ psychologicalEffectCheck }) {
   if (!psychologicalEffectCheck?.length) return "";
-  return `<section class="section v3-layer v3-layer-psychology" id="warum-der-satz-zieht" data-v3-psychology-check><div><div class="section-header"><p class="hero-kicker">Warum der Satz zieht</p><h2>Psychologischer Wirkungscheck.</h2><p>Oben stehen maximal drei Mechanismen, die in der Debatte wirklich tragen.</p></div><div class="card-grid three">${psychologicalEffectCheck.slice(0, 3).map((item) => `<article class="card"><p class="v2-badge">${esc(item.technicalName)}</p><h3 class="card-title">${esc(item.simpleName)}</h3><p class="card-text"><strong>So fühlt es sich an:</strong> ${esc(item.howItFeels)}</p><p class="card-text"><strong>So wirkt es:</strong> ${esc(item.howItWorks)}</p><p class="card-text"><strong>Debatteneffekt:</strong> ${esc(item.debateEffect)}</p><p class="card-text"><strong>Rauskommen:</strong> ${esc(item.howToBypass)}</p><p class="card-text"><strong>Host-Move:</strong> ${esc(item.hostMove)}</p></article>`).join("")}</div></div></section>`;
+  return `<section class="section v3-layer v3-layer-psychology debate-psychology-secondary" id="warum-der-satz-zieht" data-v3-psychology-check><div><details class="debate-psychology-accordion"><summary><span>Warum zieht dieses Narrativ?</span><span>Ergänzende Mechanik</span></summary><p class="card-text">Nicht jede falsche Behauptung wirkt wegen Fakten. Viele Narrative wirken nicht, weil sie wahr sind, sondern weil sie Angst, Kontrollverlust oder Zugehörigkeit ansprechen.</p><div class="debate-psychology-list">${psychologicalEffectCheck.slice(0, 3).map((item) => `<article class="card debate-psychology-item"><p class="v2-badge">${esc(item.technicalName)}</p><h3 class="card-title">${esc(item.simpleName)}</h3><p class="card-text"><strong>Wie er hier wirkt:</strong> ${esc(item.howItWorks || item.debateEffect || item.howItFeels)}</p><p class="card-text"><strong>Wie du ihn entschärfst:</strong> ${esc(item.howToBypass || item.hostMove)}</p>${item.hostMove ? `<p class="card-text"><strong>Host-Move:</strong> ${esc(item.hostMove)}</p>` : ""}</article>`).join("")}</div></details></div></section>`;
 }
 
 export function FrameShiftPlaybook({ frameShiftPlaybook }) {
@@ -148,7 +155,13 @@ export function FrameShiftPlaybook({ frameShiftPlaybook }) {
 
 export function SolutionPath({ solutionPath }) {
   if (!solutionPath?.levers?.length) return "";
-  return `<section class="section v3-layer v3-layer-solution" id="loesungspfad" data-v3-solution-path><div><div class="section-header"><p class="hero-kicker">Was macht den Zustand besser?</p><h2>${esc(solutionPath.plainLanguageSummary)}</h2></div><div class="card-grid three">${solutionPath.levers.map((item) => `<article class="card"><p class="v2-badge">Hebel</p><h3 class="card-title">${esc(item.title)}</h3><p class="card-text"><strong>Was tun:</strong> ${esc(item.whatToDo)}</p><p class="card-text"><strong>Warum wirkt es:</strong> ${esc(item.whyItWorks)}</p><p class="card-text"><strong>Systemwirkung:</strong> ${esc(item.systemEffect)}</p>${item.indicators?.length ? `<p class="card-text"><strong>Indikatoren:</strong> ${esc(item.indicators.join(", "))}</p>` : ""}</article>`).join("")}</div>${solutionPath.woekConnection ? `<article class="card"><p class="card-kicker">WÖk-Bezug</p><h3 class="card-title">${esc(solutionPath.woekConnection.principle)}</h3><p class="card-text">${esc(solutionPath.woekConnection.explanation)}</p>${solutionPath.woekConnection.internalLinks?.length ? `<p>${solutionPath.woekConnection.internalLinks.map((href) => `<a class="text-link" href="${esc(href)}">${esc(href.replace(/\/$/, "").split("/").pop()?.replace(/-/g, " ") || href)}</a>`).join(" · ")}</p>` : ""}</article>` : ""}</div></section>`;
+  const steps = ["Auslöser", "Wirkungspotenzial", "Wirkmechanismus", "Zustandsveränderung", "Rückkopplung", "Gegensteuerung"];
+  const levers = solutionPath.levers.slice(0, 6);
+  return `<section class="section v3-layer v3-layer-solution" id="loesungspfad" data-v3-solution-path><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>${esc(solutionPath.plainLanguageSummary)}</h2><p>Der Wirkpfad zeigt kompakt, wie aus einer Behauptung Wirkung entsteht - und wo Gegensteuerung möglich wird.</p></div><div class="impact-path-stepper">${steps.map((label, index) => {
+    const lever = levers[index % Math.max(1, levers.length)];
+    const text = index < 3 ? lever?.whatToDo : index === 3 ? lever?.systemEffect : index === 4 ? lever?.whyItWorks : lever?.title;
+    return `<article class="impact-path-step"><p class="v2-badge">${esc(label)}</p><p>${esc(text || solutionPath.plainLanguageSummary)}</p></article>`;
+  }).join("")}</div><div class="card-grid three">${levers.map((item) => `<article class="card"><p class="v2-badge">Gegensteuerung</p><h3 class="card-title">${esc(item.title)}</h3><p class="card-text"><strong>Was tun:</strong> ${esc(item.whatToDo)}</p><p class="card-text"><strong>Warum wirkt es:</strong> ${esc(item.whyItWorks)}</p><p class="card-text"><strong>Systemwirkung:</strong> ${esc(item.systemEffect)}</p>${item.indicators?.length ? `<p class="card-text"><strong>Indikatoren:</strong> ${esc(item.indicators.join(", "))}</p>` : ""}</article>`).join("")}</div>${solutionPath.woekConnection ? `<article class="card"><p class="card-kicker">WÖk-Bezug</p><h3 class="card-title">${esc(solutionPath.woekConnection.principle)}</h3><p class="card-text">${esc(solutionPath.woekConnection.explanation)}</p>${solutionPath.woekConnection.internalLinks?.length ? `<p>${solutionPath.woekConnection.internalLinks.map((href) => `<a class="text-link" href="${esc(href)}">${esc(href.replace(/\/$/, "").split("/").pop()?.replace(/-/g, " ") || href)}</a>`).join(" · ")}</p>` : ""}</article>` : ""}</div></section>`;
 }
 
 export function MethodologyDeepDive({ dossier }) {
@@ -211,28 +224,28 @@ export function renderDossierV2Sections(dossier) {
   if (dossier.v3) {
     return [
       HostCockpitV2({ dossier }),
-      FrameShiftPlaybook({ frameShiftPlaybook: dossier.v3.frameShiftPlaybook }),
       V3PageNav(),
-      FactsLayer({ factsLayer: dossier.v3.factsLayer }),
       ConsequenceCheck({ consequenceCheck: dossier.v3.consequenceCheck }),
       ImpactMatrix({ impactMatrix: dossier.v3.impactMatrix }),
-      NarrativeMechanism({ narrativeMechanism: dossier.v3.narrativeMechanism }),
-      PsychologicalEffectCheck({ psychologicalEffectCheck: dossier.v3.psychologicalEffectCheck }),
       SolutionPath({ solutionPath: dossier.v3.solutionPath }),
+      FrameShiftPlaybook({ frameShiftPlaybook: dossier.v3.frameShiftPlaybook }),
+      FactsLayer({ factsLayer: dossier.v3.factsLayer }),
+      NarrativeMechanism({ narrativeMechanism: dossier.v3.narrativeMechanism }),
       TrustBlock({ trustBlock: dossier.trustBlock, sources: dossier.sources }),
+      PsychologicalEffectCheck({ psychologicalEffectCheck: dossier.v3.psychologicalEffectCheck }),
       LinkHub({ internalLinks: dossier.internalLinks }),
       MethodologyDeepDive({ dossier }),
     ].join("\n");
   }
   return [
     HostCockpitV2({ dossier }),
+    ConsequenceStack({ consequenceStack: dossier.consequenceStack }),
+    ImpactFan({ impactFan: dossier.impactFan }),
+    SolutionCard({ solution: dossier.solution }),
     ResponseFormats({ dossier }),
     UnderstandSection({ explain: dossier.explain }),
-    ImpactFan({ impactFan: dossier.impactFan }),
-    PsychologyLiteCard({ psychologyLite: dossier.psychologyLite }),
-    ConsequenceStack({ consequenceStack: dossier.consequenceStack }),
-    SolutionCard({ solution: dossier.solution }),
     TrustBlock({ trustBlock: dossier.trustBlock, sources: dossier.sources }),
+    PsychologyLiteCard({ psychologyLite: dossier.psychologyLite }),
     LinkHub({ internalLinks: dossier.internalLinks }),
   ].join("\n");
 }

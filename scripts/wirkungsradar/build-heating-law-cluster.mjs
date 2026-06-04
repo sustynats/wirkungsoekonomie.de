@@ -60,8 +60,8 @@ const whatIsMissing = [
   "Funktionierende Heizungen mussten nicht pauschal sofort herausgerissen werden.",
   "Neubau, Bestand, neue Heizungen, bestehende Heizungen und kommunale Wärmeplanung wurden oft vermischt.",
   "Übergangsfristen, Härtefallregelungen und Förderungen wurden wenig sichtbar.",
-  "Fossile Heizungen erzeugen langfristige Preis-, CO2- und Abhängigkeitsrisiken.",
-  "Gasheizungen können zu Kostenfallen werden, wenn Gasnetze schrumpfen, CO2-Preise steigen oder Wasserstoffversprechen nicht realistisch sind.",
+  "Fossile Heizungen erzeugen langfristige Preis-, CO₂- und Abhängigkeitsrisiken.",
+  "Gasheizungen können zu Kostenfallen werden, wenn Gasnetze schrumpfen, CO₂-Preise steigen oder Wasserstoffversprechen nicht realistisch sind.",
   "Wärmewende ist nicht nur Wärmepumpe: Fernwärme, Gebäudenetze, Solarthermie, Biomasse, Hybridlösungen und Effizienz spielen je nach Gebäude und Kommune unterschiedliche Rollen.",
   "Kommunale Wärmeplanung soll gerade verhindern, dass Eigentümer:innen blind investieren.",
   "Der Gebäudesektor ist für Klimaziele, Heizkosten, Energieimporte und soziale Stabilität zentral.",
@@ -69,11 +69,11 @@ const whatIsMissing = [
 ];
 
 const boundaryRows = [
-  ["Einzelhaushalt", "Was kostet mich die neue Heizung?", "reale Belastung und Finanzierungsfrage", "Förderung, Betriebskosten, CO2-Preis, fossile Preisrisiken"],
+  ["Einzelhaushalt", "Was kostet mich die neue Heizung?", "reale Belastung und Finanzierungsfrage", "Förderung, Betriebskosten, CO₂-Preis, fossile Preisrisiken"],
   ["Gebäude", "Welche Lösung passt zum Haus?", "Dämmung, Heizlast, Heizkörper, Wärmebedarf", "kommunale Wärmeplanung und Netzoptionen"],
   ["Kommune", "Welche Wärmeoptionen gibt es vor Ort?", "Fernwärme, Quartierslösung, Abwärme, Wärmepumpe", "individuelle Kostenlage"],
   ["Energiesystem", "Welche Infrastruktur braucht Wärme?", "Stromnetze, Gasnetze, Wärmenetze, Speicher", "Eigentumsangst und soziale Akzeptanz"],
-  ["Klima", "Welche Emissionen entstehen bis 2045?", "CO2-Pfad, fossile Lock-ins", "kurzfristige Haushaltskosten"],
+  ["Klima", "Welche Emissionen entstehen bis 2045?", "CO₂-Pfad, fossile Lock-ins", "kurzfristige Haushaltskosten"],
   ["Sozialstaat", "Wer kann sich den Umbau leisten?", "Förderung, Mieterschutz, Härtefälle", "Klimarisiko und Betriebskosten"],
   ["Demokratie", "Welche Wirkung hat Sprache?", "Vertrauen, Angst, Reaktanz, Polarisierung", "technische Details"],
 ];
@@ -122,7 +122,7 @@ const glossaryTerms = [
   ["kommunale-waermeplanung", "Kommunale Wärmeplanung", "Planungsinstrument, mit dem Städte und Gemeinden klären, wo Fernwärme, dezentrale Lösungen, Abwärme oder andere Wärmeoptionen sinnvoll sind.", "Sie soll blinde Einzelinvestitionen vermeiden und lokale Planungssicherheit schaffen."],
   ["fossiler-lock-in", "Fossiler Lock-in", "Pfadabhängigkeit, bei der neue fossile Anlagen oder Netze langfristig Kosten, Emissionen und Abhängigkeiten festschreiben.", "Billig im Moment kann teuer im System werden."],
   ["waerme-t-sroi", "Wärme-T-SROI", "Wirkungsbewertung von Wärmelösungen nach Kosten, Emissionen, Versorgungssicherheit, sozialer Fairness, Gesundheit und Resilienz.", "Nicht nur Anschaffungskosten zählen, sondern Netto-Wirkung über Zeit."],
-  ["heizkostenrisiko", "Heizkostenrisiko", "Risiko steigender oder unsicherer Wärmekosten durch Energiepreise, CO2-Preise, Netzentwicklung, Gebäudeeffizienz und Technikpfad.", "Fossile Heizungen können vertraut wirken und trotzdem langfristig riskant sein."],
+  ["heizkostenrisiko", "Heizkostenrisiko", "Risiko steigender oder unsicherer Wärmekosten durch Energiepreise, CO₂-Preise, Netzentwicklung, Gebäudeeffizienz und Technikpfad.", "Fossile Heizungen können vertraut wirken und trotzdem langfristig riskant sein."],
   ["eigentumsangst", "Eigentumsangst", "Emotionale Sorge, dass politische Regeln Haus, Wohnung, Erspartes oder Alterssicherung gefährden.", "Die Sorge muss ernst genommen werden, ohne sie als Blockadeframe zu übernehmen."],
 ];
 
@@ -130,7 +130,7 @@ const subclaims = [
   ["staat-reisst-heizungen-raus", "Der Staat reißt Heizungen raus", "Falsche Pauschalisierung von Bestand, Reparatur und neuer Heizung."],
   ["waermepumpe-ist-zwang", "Die Wärmepumpe ist Zwang", "Technologieoptionen werden zu einem Bevormundungsbild verdichtet."],
   ["heizungstausch-ruiniert-hausbesitzer", "Heizungstausch ruiniert Hausbesitzer", "Realer Kostenkern, aber Förderung, Fristen, Gebäudezustand und Betriebskosten fehlen."],
-  ["gasheizung-technologieoffen-sicher", "Gas bleibt technologieoffen und sicher", "Kann ein fossiler Lock-in sein, wenn Gasnetze, CO2-Preise und Wasserstoffversprechen unrealistisch bleiben."],
+  ["gasheizung-technologieoffen-sicher", "Gas bleibt technologieoffen und sicher", "Kann ein fossiler Lock-in sein, wenn Gasnetze, CO₂-Preise und Wasserstoffversprechen unrealistisch bleiben."],
 ];
 
 function esc(value) {
@@ -169,13 +169,13 @@ function shell({ pageTitle, description, canonical, base, main }) {
     <title>${esc(pageTitle)}</title>
     <meta name="description" content="${esc(description)}">
     <link rel="canonical" href="${esc(canonical)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${ASSET_VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order}">
   </head>
   <body>
     <header class="site-header" data-search-exclude><a class="brand" href="${base}index.html"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a><button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button><nav id="site-nav" class="site-nav" aria-label="Hauptnavigation"><a href="${base}kompass.html">Kompass</a><a href="${base}wirkungsradar/">Wirkungsradar</a><a href="${base}begriffe/">Begriffe</a></nav></header>
 ${main}
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Wirkungsökonomie</p><h2>Wirkung statt Verlustangst</h2><p>Wirkungsradar: Faktenkern, Narrativ, Psychologie, Wirkungspfad und bessere Handlungsfrage.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Wirkungsradar öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=${ASSET_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260604-debate-use-order}"></script>
   </body>
 </html>
 `;
@@ -233,7 +233,7 @@ function topicPage() {
       ${nav("../../../")}
       <section class="section"><div><div class="section-header"><p class="hero-kicker">Leuchtturm-Dossier</p><h2>Heizgesetz oder Heizhammer?</h2></div><div class="card-grid"><a class="card text-link-card" href="../../live/${slug}/"><p class="card-kicker">${esc(judgement)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(answers.ten)}</p></a></div></div></section>
       <section class="section section-soft"><div><div class="section-header"><p class="hero-kicker">Subclaims</p><h2>Vier Sätze, die in die Tiefe springen.</h2></div>${cardGrid(subclaims, "Wirkungscheck")}</div></section>
-      <section class="section"><div><div class="section-header"><p class="hero-kicker">WÖk-Lösung</p><h2>Wärme als Wirkungssystem bauen.</h2></div>${cardGrid([["Gebäude statt Schlagwort", "Heizlast, Dämmung, Technikpfad, Betriebsrisiko und Lebenszykluskosten pro Gebäude sichtbar machen."], ["Kommune statt Blindkauf", "Wärmeplanung so kommunizieren, dass Eigentümer:innen wissen, ob Fernwärme, Quartierslösung oder dezentrale Wärme plausibel ist."], ["Sozial statt symbolisch", "Förderung, Mieterschutz und Härtefälle früh erklären, bevor Angstanker den Raum füllen."], ["Fossile Risiken mitzählen", "Gaspreis, CO2-Preis, Netzrückbau, Importabhängigkeit und Wasserstoffrealismus in die Kostenbilanz holen."]], "Maßnahme")}</div></section>
+      <section class="section"><div><div class="section-header"><p class="hero-kicker">WÖk-Lösung</p><h2>Wärme als Wirkungssystem bauen.</h2></div>${cardGrid([["Gebäude statt Schlagwort", "Heizlast, Dämmung, Technikpfad, Betriebsrisiko und Lebenszykluskosten pro Gebäude sichtbar machen."], ["Kommune statt Blindkauf", "Wärmeplanung so kommunizieren, dass Eigentümer:innen wissen, ob Fernwärme, Quartierslösung oder dezentrale Wärme plausibel ist."], ["Sozial statt symbolisch", "Förderung, Mieterschutz und Härtefälle früh erklären, bevor Angstanker den Raum füllen."], ["Fossile Risiken mitzählen", "Gaspreis, CO₂-Preis, Netzrückbau, Importabhängigkeit und Wasserstoffrealismus in die Kostenbilanz holen."]], "Maßnahme")}</div></section>
     </main>`;
   return shell({ pageTitle: "Wohnen, Gebäude & Wärme | Wirkungsradar Themen", description: "Wirkungsradar-Themencluster zu Gebäude, Heizen, Miete, Eigentum und kommunaler Wärmeplanung.", canonical: `https://wirkungsoekonomie.de/wirkungsradar/themen/${topicSlug}/`, base: "../../../", main });
 }

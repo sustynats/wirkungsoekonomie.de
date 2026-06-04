@@ -562,7 +562,7 @@ function shell({ title, description, canonical, base, main }) {
     <meta name="wirkungsradar_data_stand" content="${DATA_STAND}">
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260604-debate-use-order}">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -572,7 +572,7 @@ function shell({ title, description, canonical, base, main }) {
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Debattenkarten-Inventar gepflegt.</h2><p>Dieses Paket ist als Debattenkarte und Detailseite veröffentlicht. Quellen und Fachstand werden im Inventar nachgeführt.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/status/">Status öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=${VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260604-debate-use-order}"></script>
   </body>
 </html>`;
 }
@@ -661,20 +661,33 @@ function livePage(item) {
         <article class="card"><p class="v2-badge">Die bessere Frage</p><p class="card-text">${esc(item.betterQuestion)}</p><button class="copy-chip" type="button" data-copy-text='${copy(item.betterQuestion)}'>Frage kopieren</button></article>
         <article class="card"><p class="v2-badge">Frame nicht übernehmen</p><p class="card-text"><strong>Alter Frame:</strong> ${esc(item.claim)}</p><p class="card-text"><strong>Besser:</strong> ${esc(item.hostLine)}</p></article>
       </div></div></section>
-      <section class="section section-soft" id="host-antworten"><div><div class="section-header"><p class="hero-kicker">Direkt nutzbare Antworten</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2></div><div class="radar-answer-accordion host-answer-tabs">
-        <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span><span class="radar-answer-label">Kernsatz</span></summary><p>${esc(answer10(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer10(item))}'>Antwort kopieren</button></details>
-        <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span><span class="radar-answer-label">Einordnung</span></summary><p>${esc(answer30(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer30(item))}'>Antwort kopieren</button></details>
-        <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span><span class="radar-answer-label">Vertiefung</span></summary><p>${esc(answer2(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer2(item))}'>Antwort kopieren</button></details>
-      </div></div></section>
       <section class="section" id="verstehen"><div><div class="section-header"><p class="hero-kicker">Verstehen</p><h2>Was stimmt - und was fehlt?</h2></div><div class="card-grid two">
         <article class="card"><p class="card-kicker">Was stimmt?</p><ul class="clean-list">${item.truePoints.map((point) => `<li>${esc(point)}</li>`).join("")}</ul></article>
         <article class="card"><p class="card-kicker">Was fehlt?</p><ul class="clean-list">${item.missingPoints.map((point) => `<li>${esc(point)}</li>`).join("")}</ul></article>
       </div></div></section>
-      <section class="section section-soft" id="psychologie"><div><div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum der Satz zieht.</h2></div><div class="card-grid three">
-        <article class="card"><p class="v2-badge">Frame-Effekt</p><h3 class="card-title">Ein Bild entscheidet vor der Prüfung.</h3><p class="card-text">Der Satz setzt ein schnelles Bild. Wer nur widerspricht, bleibt oft im alten Frame.</p><p class="card-text"><strong>Rauskommen:</strong> Wahren Punkt anerkennen und Bilanzgrenze öffnen.</p></article>
-        <article class="card"><p class="v2-badge">Verfügbarkeitsheuristik</p><h3 class="card-title">Das auffällige Beispiel wirkt wie die ganze Lage.</h3><p class="card-text">Ein emotionales Einzelbild wird leichter erinnert als eine differenzierte Wirkungsrechnung.</p><p class="card-text"><strong>Rauskommen:</strong> Daten, Zeitpfad und Gegenbeispiel ergänzen.</p></article>
-        <article class="card"><p class="v2-badge">Kontrollbedürfnis</p><h3 class="card-title">Eine einfache Ursache beruhigt.</h3><p class="card-text">Komplexität wird auf eine Schuldfigur oder eine einfache Blockade reduziert.</p><p class="card-text"><strong>Rauskommen:</strong> Konkrete Hebel nennen, die den Zustand verbessern.</p></article>
-      </div>${item.narrativeEffects?.length || item.resonanceSpaces?.length ? `<article class="card"><p class="card-kicker">Seed-Signale</p>${chips([...(item.narrativeEffects || []), ...(item.resonanceSpaces || [])].slice(0, 10))}</article>` : ""}</div></section>
+      <section class="section section-soft v3-layer-consequences" id="folgencheck"><div><div class="section-header"><p class="hero-kicker">Wirkung statt bloßer Faktenprüfung</p><h2>Folgencheck: Was dieses Narrativ bewirkt</h2><p>Der Debatten-Kompass fragt, was wahrscheinlicher wird, wenn Menschen dem Frame folgen.</p></div><div class="card-grid three v3-consequence-orders">
+        <article class="card v3-order-card"><p class="v2-badge">Wirkung 1. Ordnung</p><h3 class="card-title">Wahrnehmung</h3><p class="card-text">Die Debatte springt auf den alten Frame: ${esc(item.claim)}</p></article>
+        <article class="card v3-order-card"><p class="v2-badge">Wirkung 2. Ordnung</p><h3 class="card-title">Entscheidung</h3><p class="card-text">Die konkrete Wirkungsfrage wird verdrängt: ${esc(item.betterQuestion)}</p></article>
+        <article class="card v3-order-card"><p class="v2-badge">Wirkung 3. Ordnung</p><h3 class="card-title">Systempfad</h3><p class="card-text">Schlechtere Entscheidungen wirken plausibler, weil Ursache, Alternative und Folgekosten unscharf bleiben.</p></article>
+      </div><div class="card v3-mpd-risk-card"><p class="card-kicker">Wirkungsökonomische Einordnung</p><p class="card-text">Relevant ist nicht nur, ob ein Teil der Aussage stimmt. Relevant ist, welcher Zustand für Mensch, Planet und Demokratie wahrscheinlicher wird.</p></div></div></section>
+      <section class="section" id="loesungspfad"><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>Vom Frame zurück zur Wirkung.</h2></div><div class="impact-path-stepper">
+        <article class="impact-path-step"><p class="v2-badge">Auslöser</p><p>${esc(item.claim)}</p></article>
+        <article class="impact-path-step"><p class="v2-badge">Wirkungspotenzial</p><p>${esc(item.judgement)}</p></article>
+        <article class="impact-path-step"><p class="v2-badge">Wirkmechanismus</p><p>Ein Teilaspekt wird zur ganzen Erklärung gemacht.</p></article>
+        <article class="impact-path-step"><p class="v2-badge">Zustandsveränderung</p><p>Die bessere Frage verschwindet aus der Debatte.</p></article>
+        <article class="impact-path-step"><p class="v2-badge">Rückkopplung</p><p>Der alte Frame wirkt später noch plausibler.</p></article>
+        <article class="impact-path-step"><p class="v2-badge">Gegensteuerung</p><p>${esc(item.betterQuestion)}</p></article>
+      </div></div></section>
+      <section class="section section-soft" id="host-antworten"><div><div class="section-header"><p class="hero-kicker">Debatten-Kompass: So reagierst du</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2></div><div class="radar-answer-accordion host-answer-tabs">
+        <details class="radar-answer-item" open><summary><span class="radar-answer-time">10 Sekunden</span><span class="radar-answer-label">Kernsatz</span></summary><p>${esc(answer10(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer10(item))}'>Antwort kopieren</button></details>
+        <details class="radar-answer-item"><summary><span class="radar-answer-time">30 Sekunden</span><span class="radar-answer-label">Einordnung</span></summary><p>${esc(answer30(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer30(item))}'>Antwort kopieren</button></details>
+        <details class="radar-answer-item"><summary><span class="radar-answer-time">2 Minuten</span><span class="radar-answer-label">Vertiefung</span></summary><p>${esc(answer2(item))}</p><button class="copy-chip" type="button" data-copy-text='${copy(answer2(item))}'>Antwort kopieren</button></details>
+      </div></div></section>
+      <section class="section debate-psychology-secondary" id="psychologie"><div><details class="debate-psychology-accordion"><summary><span>Warum zieht dieses Narrativ?</span><span>Ergänzende Mechanik</span></summary><p class="card-text">Viele Narrative wirken nicht, weil sie wahr sind, sondern weil sie Angst, Kontrollverlust oder Zugehörigkeit ansprechen. Wer den Mechanismus erkennt, kann die Debatte auf den Wirkpfad zurückholen.</p><div class="debate-psychology-list">
+        <article class="card debate-psychology-item"><p class="v2-badge">Frame-Effekt</p><h3 class="card-title">Ein Bild entscheidet vor der Prüfung.</h3><p class="card-text"><strong>Wie er hier wirkt:</strong> Der Satz setzt ein schnelles Bild. Wer nur widerspricht, bleibt oft im alten Frame.</p><p class="card-text"><strong>Wie du ihn entschärfst:</strong> Wahren Punkt anerkennen und Bilanzgrenze öffnen.</p></article>
+        <article class="card debate-psychology-item"><p class="v2-badge">Verfügbarkeitsheuristik</p><h3 class="card-title">Das auffällige Beispiel wirkt wie die ganze Lage.</h3><p class="card-text"><strong>Wie er hier wirkt:</strong> Ein emotionales Einzelbild wird leichter erinnert als eine differenzierte Wirkungsrechnung.</p><p class="card-text"><strong>Wie du ihn entschärfst:</strong> Daten, Zeitpfad und Gegenbeispiel ergänzen.</p></article>
+        <article class="card debate-psychology-item"><p class="v2-badge">Kontrollbedürfnis</p><h3 class="card-title">Eine einfache Ursache beruhigt.</h3><p class="card-text"><strong>Wie er hier wirkt:</strong> Komplexität wird auf eine Schuldfigur oder eine einfache Blockade reduziert.</p><p class="card-text"><strong>Wie du ihn entschärfst:</strong> Konkrete Hebel nennen, die den Zustand verbessern.</p></article>
+      </div>${item.narrativeEffects?.length || item.resonanceSpaces?.length ? `<article class="card"><p class="card-kicker">Seed-Signale</p>${chips([...(item.narrativeEffects || []), ...(item.resonanceSpaces || [])].slice(0, 10))}</article>` : ""}</details></div></section>
       <section class="section" id="weiter"><div><article class="card"><p class="card-kicker">Vertiefung</p><h2 class="card-title">Detailseite öffnen.</h2><p class="card-text">Die Detailseite bündelt Faktenlage, Folgencheck, psychologische Mechanik, Antwortformate und offene Quellenpflege.</p><p><a class="btn btn-primary" href="../../detail/${esc(item.slug)}/">Detailanalyse öffnen</a></p></article></div></section>`;
   return shell({
     title: `${item.title} | Debatten-Kompass`,
