@@ -6,7 +6,7 @@ const ROOT = process.cwd();
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirkungsoekonomie.de";
 const FORM_ROUTE = path.join(ROOT, "wirkungsradar/narrativ-einreichen");
 const PROCESS_ROUTE = path.join(ROOT, "wirkungsradar/pruefprozess");
-const CSS_VERSION = "20260604-community-submit";
+const CSS_VERSION = "20260604-community-layout-fix";
 const JS_VERSION = "20260604-community-submit";
 
 function write(file, text) {

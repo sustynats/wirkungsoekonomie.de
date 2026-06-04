@@ -16750,6 +16750,7 @@ a.principle-card:hover,
 .community-submission-section--method .community-submission-block,
 .community-submission-section--compact .community-submission-block,
 .community-submission-section--playbook .community-submission-block {
+  grid-template-columns: 1fr;
   background: rgba(255, 252, 245, 0.9);
   box-shadow: none;
 }
@@ -16781,10 +16782,11 @@ a.principle-card:hover,
 .community-submission-actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.7rem;
-  min-width: min(100%, 18rem);
+  min-width: 0;
+  max-width: 100%;
 }
 
 .community-submission-actions .text-link {
