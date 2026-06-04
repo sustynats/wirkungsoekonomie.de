@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:23:58.028Z",
+  "generatedAt": "2026-06-04T11:31:16.348Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -66,7 +66,7 @@
       "id": "unternehmen",
       "title": "Für Unternehmen",
       "audience": "Strategie, Controlling, Nachhaltigkeit",
-      "summary": "Unternehmen als Wirkungssysteme, operative Kennzahlen und Produkt-/Lieferkettenwirkung.",
+      "summary": "Unternehmen als Wirkungssysteme, operative Kennzahlen, Einkauf, Produkt- und Lieferkettenwirkung.",
       "links": [
         [
           "Wirtschaft & Unternehmen",
@@ -79,6 +79,10 @@
         [
           "Wirkungsfelder Wirtschaft",
           "wirkungsfelder/wirtschaft-unternehmen/"
+        ],
+        [
+          "Praxispaper Impact-Strategie im Unternehmenseinkauf",
+          "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/"
         ]
       ]
     },
@@ -227,8 +231,8 @@
       "download-or-document": 712,
       "online-version": 758
     },
-    "downloadFiles": 712,
-    "onlineVersions": 758
+    "downloadFiles": 713,
+    "onlineVersions": 759
   },
   "documents": [
     {
@@ -35563,6 +35567,57 @@
       },
       "source": "online-version",
       "isLeadingReference": false
+    },
+    {
+      "id": "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+      "title": "Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf",
+      "shortDescription": "Anonymisiertes Praxispaper zur Verankerung von Impact-Management, Impact-Controlling, KII, Scorecards und Impact-Marketing im strategischen Einkauf eines Industrieunternehmens.",
+      "type": "Methodik",
+      "status": "aktuell",
+      "dateOrStand": "04. Juni 2026",
+      "topics": [
+        "Impact-Strategie",
+        "Impact-Management",
+        "Impact-Controlling",
+        "Impact-Marketing",
+        "Doppelte Wesentlichkeit",
+        "Einkauf",
+        "Lieferkette",
+        "Chemieindustrie"
+      ],
+      "relatedMethods": [
+        "Key Impact Indicators",
+        "Scorecards",
+        "T-SROI",
+        "Reverse Merit Order",
+        "WÖk-IDs"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Produkte & Konsum",
+        "Daten & Infrastruktur",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "Online",
+        "PDF"
+      ],
+      "source": "curated-document",
+      "urls": {
+        "primary": "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+        "sourcePath": "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf"
+      },
+      "variants": [
+        {
+          "kind": "online",
+          "primary": "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/"
+        },
+        {
+          "kind": "pdf",
+          "primary": "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+          "sourcePath": "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf"
+        }
+      ]
     }
   ]
 }

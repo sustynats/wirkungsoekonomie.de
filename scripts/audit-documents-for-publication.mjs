@@ -408,6 +408,39 @@ const DOCUMENTS = [
     order: 112
   },
   {
+    id: "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+    slug: "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+    title: "Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf",
+    subtitle: "Ein anonymisiertes Praxispaper aus der Chemieindustrie",
+    fileName: "woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+    filePath: "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+    contentHtmlPath: "content/documents/online/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.inc",
+    documentType: "paper",
+    status: "aktuell",
+    visibility: "expert_public",
+    audience: ["Fachöffentlichkeit", "Unternehmen", "Einkauf", "Controlling", "Marketing"],
+    level: "expert",
+    summaryShort: "Anonymisiertes Praxispaper zur operativen Verankerung von Impact-Strategie, Impact-Management, Impact-Controlling und Impact-Marketing im Unternehmenseinkauf.",
+    whatToExpect: "Ein praxisnaher Weg von doppelter Wesentlichkeit über Key Impact Indicators, Scorecards, Lieferantensteuerung, Warengruppenlogik und Claim-Freigaben bis zur Roadmap.",
+    keyQuestions: [
+      "Wie wird doppelte Wesentlichkeit im strategischen Einkauf operationalisiert?",
+      "Welche KIIs und Scorecards machen Lieferanten, Warengruppen und Transformationsmaßnahmen steuerbar?",
+      "Wie wird Impact-Marketing als belegbare Wirkungskommunikation statt Green Marketing verankert?"
+    ],
+    topics: ["Wirkungsökonomie", "Impact-Strategie", "Impact-Management", "Impact-Controlling", "Impact-Marketing", "Key Impact Indicators", "Doppelte Wesentlichkeit", "Einkauf", "Lieferkette", "Chemieindustrie", "Unternehmenssteuerung", "T-SROI", "Wirkungsdaten", "WÖk-IDs", "Scorecard"],
+    methods: ["Impact-Controlling", "Key Impact Indicators", "Scorecards", "T-SROI", "Reverse Merit Order", "Wesentlichkeitsanalyse"],
+    impactFields: ["Wirtschaft & Kapital", "Produkte & Konsum", "Daten & Infrastruktur", "Planet & Resilienz"],
+    relatedDocuments: ["arbeitspapier-doppelte-wesentlichkeit-impact-controlling", "whitepaper-t-sroi", "wirkungsoekonomie-lieferkette", "technische-leitlinien-wustg"],
+    version: "Anonymisierte Publikationsfassung 2026-06",
+    date: "2026-06-04",
+    legalNotice: "Anonymisiertes Praxispaper. Keine Rechts-, Steuer-, Prüfungs-, Nachhaltigkeits-, Anlage- oder Unternehmensberatung; keine offizielle Position eines Unternehmens.",
+    editorialNote: "Das Word-Ausgangsdokument wurde anonymisiert übernommen; Produktgruppen- und Zielpfadbeispiele wurden in der Publikationsfassung zusätzlich neutralisiert.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Methoden & Werkzeuge",
+    order: 113
+  },
+  {
     id: "technische-leitlinien-wustg",
     slug: "technische-leitlinien-wustg",
     title: "Technische Leitlinien WUStG",
@@ -1545,7 +1578,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
         </div>
         <div class="document-reading-path-grid">
           ${path("Einstieg in 30 Minuten", "Vom schnellen Einstieg zum Leitbild und Grundmodell.", ["minifest-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "grundlagenpapier-wirkungsoekonomie"])}
-          ${path("Für Unternehmen", "Von Grundlagen über T-SROI und Lieferketten zu technischer Methodik.", ["grundlagenpapier-wirkungsoekonomie", "whitepaper-t-sroi", "wirkungsoekonomie-lieferkette", "technische-leitlinien-wustg"])}
+          ${path("Für Unternehmen", "Von Grundlagen über T-SROI und Lieferketten zu konkreter Einkaufssteuerung.", ["grundlagenpapier-wirkungsoekonomie", "whitepaper-t-sroi", "wirkungsoekonomie-lieferkette", "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie", "technische-leitlinien-wustg"])}
           ${path("Für Politik und Verwaltung", "Recht, Wirkungshaushalt, Wirkungsrat und Schutzlinien.", ["grundlagenpapier-wirkungsoekonomie", "wstg-oktober-2025", "wirkungsrat-konzept"])}
           ${path("Für Wissenschaft und Methodik", "Systemarchitektur, T-SROI und technische Leitlinien.", ["systemmodell-wirkungsoekonomie", "whitepaper-t-sroi", "technische-leitlinien-wustg"])}
           ${path("Für Bürger:innen", "Kurz und verständlich starten.", ["minifest-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "woek-manifest"])}
@@ -1792,7 +1825,7 @@ function writeModel(gatedDocs) {
   write(DOC_MODEL, `${JSON.stringify({
     schemaVersion: "2026-05-document-library-redesign",
     allowedValues: {
-      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "buch", "whitepaper", "working-paper", "konzept", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
+      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "buch", "whitepaper", "working-paper", "paper", "konzept", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
       status: ["fuehrend", "aktuell", "fachoeffentlich", "diskussionsfassung", "arbeitsfassung", "in-pruefung", "archiv", "ersetzt", "intern", "review-erforderlich"],
       visibility: ["public", "expert_public", "archive", "review_required", "internal", "hidden"]
     },

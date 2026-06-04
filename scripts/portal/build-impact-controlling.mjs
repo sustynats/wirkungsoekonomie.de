@@ -186,6 +186,13 @@ const doubleMaterialityWorkpaper = {
   pdf: "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
 };
 
+const procurementPracticePaper = {
+  title: "Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf",
+  text: "Anonymisiertes Praxispaper aus der Chemieindustrie: vom Materialitätsfilter über KII, Scorecards und Lieferantensteuerung bis zur belegbaren Wirkungskommunikation.",
+  href: "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+  pdf: "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+};
+
 const go10ToolCards = [
   ["WÖk-ID-Browser", "Methodenseite vorhanden", "werkzeuge/woek-ids/", "Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen."],
   ["Scorecard-Generator", "Methodik", "werkzeuge/scorecards/", "Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten."],
@@ -659,6 +666,12 @@ function overviewPage() {
           <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
           <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
           <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Praxispaper · Einkauf</p>
+          <h3 class="card-title">${escapeHtml(procurementPracticePaper.title)}</h3>
+          <p class="card-text">${escapeHtml(procurementPracticePaper.text)}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, procurementPracticePaper.href)}">Online lesen</a><a class="text-link" href="${href(base, procurementPracticePaper.pdf)}">PDF</a></div>
         </article>${methodPaperCardGrid(base).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
       </div>
     </section>
@@ -682,6 +695,12 @@ function overviewPage() {
           <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
           <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
           <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
+        </article>
+        <article class="card">
+          <p class="card-kicker">Praxispaper · Chemieindustrie</p>
+          <h3 class="card-title">${escapeHtml(procurementPracticePaper.title)}</h3>
+          <p class="card-text">${escapeHtml(procurementPracticePaper.text)}</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, procurementPracticePaper.href)}">Online lesen</a><a class="text-link" href="${href(base, procurementPracticePaper.pdf)}">PDF</a></div>
         </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
         title,
         text,
@@ -698,6 +717,7 @@ function overviewPage() {
       ...impactDownloads,
       ...go10MethodPapers.flatMap(methodPaperDownloadItems),
       { label: doubleMaterialityWorkpaper.title, href: doubleMaterialityWorkpaper.pdf },
+      { label: procurementPracticePaper.title, href: procurementPracticePaper.pdf },
     ])}`,
   });
 }
