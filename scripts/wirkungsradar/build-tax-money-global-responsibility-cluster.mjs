@@ -1,8 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const UPDATED_AT = "2026-06-03";
-const ASSET_VERSION = "20260603-tax-money-global";
+const UPDATED_AT = "2026-06-04";
+const ASSET_VERSION = "20260604-radwege-peru-v2";
 const clusterSlug = "steuergeld-globale-verantwortung-fairness";
 const clusterTitle = "Steuergeld, globale Verantwortung & Fairness";
 const clusterSubtitle = "Warum „unser Geld geht weg“ oft die falsche Bilanzgrenze setzt.";
@@ -10,10 +10,12 @@ const clusterAbstract =
   "Viele politische Narrative funktionieren über denselben Impuls: Steuergeld wird als knappe Ressource gezeigt, die angeblich „für andere“ ausgegeben wird, während „wir hier“ Probleme haben. Diese Sorge ist nicht falsch: Öffentliche Mittel sind begrenzt und müssen wirksam, transparent und kontrolliert eingesetzt werden. Irreführend wird das Narrativ, wenn es falsche Gegensätze baut: Inland gegen Ausland, Bauern gegen Radwege, Rentner gegen Ukraine, Arme gegen Migrant:innen, Steuerzahler gegen Entwicklungszusammenarbeit, Mittelstand gegen Reiche. Wirkungsökonomisch lautet die bessere Frage: Welche Ausgabe erzeugt welche Netto-Wirkung, welche Risiken vermeidet sie, welche Folgekosten senkt sie und welche Zustände verbessert sie für Mensch, Planet und Demokratie?";
 
 const sources = [
-  ["BMZ FAQ - Radwege in Peru", "bmz_radwege_faq", "https://www.bmz.de/de/fragen-an-das-entwicklungsministerium", "Korrektur der 315-Millionen-Zahl; 20 Mio. Euro Zuschuss Lima; 24 Mio. Euro weitere Zusage.", "BMZ ist Regierungsquelle; KfW und unabhängige Einordnung ergänzen."],
-  ["BMZ - Nachhaltige Mobilität in Lima", "bmz_lima_mobilitaet", "https://www.bmz.de/de/laender/peru/nachhaltige-mobilitaet-in-lima", "Integriertes Verkehrssystem, Kredite vs. Zuschüsse, Radwege als Zubringer.", "Projekt- und Finanzierungsstand regelmäßig prüfen."],
-  ["KfW - Stellungnahme zu Peru", "kfw_peru_stellungnahme", "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/News-Details_843072.html", "Radwege als Teil des Verkehrskonzepts, CO2- und Teilhabewirkung, deutsche Unternehmensaufträge.", "KfW ist Umsetzungs-/Finanzierungsakteur; Wirkungsdaten ergänzen."],
-  ["KfW - Fakten zur Entwicklungszusammenarbeit", "kfw_entwicklungszusammenarbeit", "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Entwicklungszusammenarbeit.html", "Kredite vs. Zuschüsse, Rückzahlung, Evaluation und deutsches Interesse.", "Allgemeine Einordnung; konkrete Projektbilanz separat prüfen."],
+  ["BMZ - Nachhaltige Mobilität in Lima", "bmz_lima_mobilitaet", "https://www.bmz.de/de/laender/peru/nachhaltige-mobilitaet-in-lima", ["20 Mio. Euro Zuschuss für Radwege in Lima", "bis zu 24 Mio. Euro weitere Zusage 2022", "114 km Radwege geplant; erste rund 30 km gebaut", "Radwege als Teil integrierter Verkehrssysteme und Zubringer zu Bus und Metro", "Nutzen für Mobilität, Gesundheit, Klima, Wirtschaft und internationale Beziehungen"], "BMZ ist Ministeriumsquelle; bei Kritik und Umsetzung zusätzlich KfW-Projektdaten und unabhängige Evaluierungen prüfen."],
+  ["KfW - Fakten zur Entwicklungszusammenarbeit", "kfw_entwicklungszusammenarbeit", "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Entwicklungszusammenarbeit.html", ["KfW-Förderkredite", "weniger als die Hälfte der KfW-Zusagen stammt aus Bundeshaushalt", "überwiegend Kredite", "Kreditnehmer zahlen verzinst zurück", "Metro als Hauptposten in Lima", "Radwege als ergänzende Maßnahme", "deutsche Unternehmen mit Aufträgen", "internationale Kooperation im deutschen Interesse"], "KfW ist Umsetzungs- und Finanzierungsakteur; Angaben durch externe Evaluierungen ergänzen."],
+  ["KfW Projektdatenbank - Fahrradwegnetz Lima", "kfw_projektdatenbank_radweg_lima", "https://www.kfw-entwicklungsbank.de/ipfz/Projektdatenbank/Aufbau-Eines-Fahrradwegnetzes-Im-Metropolbereich-Lima-35874.htm", ["Projektbeschreibung", "Anbindung an Schnellbus- und Metrolinien", "Teilhabe ärmerer Bevölkerung", "Umwelt- und Sozialverträglichkeit", "deutscher Finanzierungsbeitrag 20 Mio. EUR", "Projektpartner Municipalidad Metropolitana de Lima"], "Projektstatus aktiv; Baufortschritt und Nutzung regelmäßig aktualisieren."],
+  ["KfW Entwicklungsbank - Transparenzportal", "kfw_transparenzportal", "https://www.kfw-entwicklungsbank.de/Internationale-Finanzierung/KfW-Entwicklungsbank/Transparenz/", ["Projekttransparenz", "Daten zu Finanzierungen", "Kontrolle und Evaluierung"], "Konkrete Projektdaten auffindbar halten."],
+  ["BMZ - Transparenzportal", "bmz_transparenzportal", "https://www.bmz.de/de/ministerium/zahlen-fakten/bmz-transparenzportal", ["Transparenz öffentlicher Entwicklungszusammenarbeit", "Projekt- und Finanzdaten"], "Bei jeder Aktualisierung Datenstand prüfen."],
+  ["KfW - Evaluierungen", "kfw_evaluierung", "https://www.kfw-entwicklungsbank.de/Evaluierung/", ["Wirkungsprüfung", "Lernen aus Projekten", "Qualitätssicherung"], "Falls keine projektspezifische Evaluierung vorliegt, klar sagen: noch nicht abschließend evaluiert."],
   ["Bundesregierung - So unterstützt Deutschland die Ukraine", "bundesregierung_ukraine_hilfe", "https://www.bundesregierung.de/breg-de/aktuelles/deutschland-hilft-der-ukraine-2160274", "Offizielle Zahlen, zivile und militärische Unterstützung, Energieinfrastruktur, humanitäre Hilfe.", "Bilanzgrenzen und Aktualisierung prüfen."],
   ["BMF Wissenschaftlicher Beirat - Ukraine-Hilfe", "bmf_beirat_ukraine", "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Ministerium/Wissenschaftlicher-Beirat/Gutachten/ukraine-hilfe-der-bundesregierung.pdf", "Finanzpolitische Einordnung, jährliche Kosten, BIP-Anteil, Kosten von Nicht-Unterstützung.", "Gutachtenstand und Annahmen mit neueren Daten abgleichen."],
   ["Kiel Institute - Ukraine Support Tracker", "kiel_ukraine_tracker", "https://www.kielinstitut.de/topics/war-against-ukraine/ukraine-support-tracker/", "Internationaler Vergleich, militärische, finanzielle und humanitäre Hilfe.", "Methodik und Datenstand beachten."],
@@ -26,29 +28,120 @@ const dossiers = [
   {
     slug: "radwege-in-peru",
     title: "Radwege in Peru?",
-    subtitle: "Warum dieses Beispiel größer ist als ein Fahrradweg.",
-    judgement: "Wahrer Prioritätenkern, falscher Steuergeld-Frame.",
-    claim: "Für Radwege in Peru ist Geld da, aber für unsere Probleme nicht.",
+    subtitle: "Nicht Spottbild. Wirkungsfrage.",
+    judgement: "Spottbild statt Wirkungsprüfung.",
+    status: "checked_v2_positive_examples",
+    claim: "Deutschland bezahlt Radwege in Peru?",
+    claimVariants: [
+      "Unser Steuergeld geht nach Peru.",
+      "Radwege in Peru statt Schulen in Deutschland.",
+      "Für Peru ist Geld da, für uns nicht.",
+      "Entwicklungshilfe ist Geldverschwendung.",
+      "Wir finanzieren Luxusprojekte im Ausland.",
+      "Erst Deutschland, dann die Welt.",
+      "Warum zahlen wir Radwege in Lima?",
+    ],
     abstract:
-      "Das Narrativ „Deutschland zahlt Radwege in Peru, während hier Geld fehlt“ enthält einen wahren Kern: Bürger:innen dürfen fragen, wofür öffentliche Mittel eingesetzt werden und ob Projekte wirksam, transparent und zusätzlich sind. Irreführend wird das Narrativ, wenn falsche Zahlen, falsche Gegensätze und eine zu enge Bilanzgrenze verwendet werden. Bei Peru geht es nicht um ein isoliertes Luxusprojekt, sondern um nachhaltige urbane Mobilität, Klimaschutz, Luftqualität, Teilhabe, Stadtentwicklung, internationale Kooperation und teilweise auch wirtschaftliche Rückwirkungen nach Deutschland.",
+      "Das Radwege-in-Peru-Narrativ macht ein einzelnes, leicht verspottbares Bild zum Symbol angeblicher Steuergeldverschwendung. Der wahre Kern ist: Öffentliche Mittel im Ausland müssen gut begründet, transparent, kontrolliert und wirksam eingesetzt werden. Der Denkfehler ist: Aus einem Infrastrukturprojekt wird ein Lächerlichkeitsbild gemacht, während Nutzen, Finanzierungsform, Kredite, Rückzahlungen, Klimaeffekte, Verkehrssicherheit, Entwicklungswirkung, deutsche Wirtschaftsinteressen und internationale Partnerschaft unsichtbar werden.",
     points: [
-      ["Die 315-Millionen-Zahl ist falsch verkürzt", "Für Radwege nennt das BMZ 20 Mio. Euro Zuschuss für Lima und weitere 24 Mio. Euro Zusage für Radwege in Peru."],
-      ["Nicht alles ist Zuschuss", "Größere Mobilitätsbestandteile laufen als Entwicklungskredite und sind rückzahlbar."],
-      ["Radwege sind Teil eines Verkehrssystems", "Sie dienen als Zubringer zu Metro- und Schnellbussystemen."],
-      ["Nutzen entsteht durch Klima, Luft und Teilhabe", "Weniger Emissionen, weniger Luftverschmutzung und günstigere Mobilität wirken auf Gesundheit und soziale Teilhabe."],
-      ["Deutschland profitiert auch strategisch", "Klimaschutz, Handelsbeziehungen, Exportchancen und globale Stabilität liegen im deutschen Interesse."],
-      ["WÖk verlangt Wirkungskontrolle", "Nicht Symbolpolitik, sondern T-SROI, Evaluierung, Transparenz und Additionality."],
+      ["Was stimmt?", "Öffentliche Mittel müssen transparent, kontrolliert und wirksam eingesetzt werden. Zuschüsse und Kredite müssen klar unterschieden werden. Nicht jedes Entwicklungsprojekt ist automatisch gut."],
+      ["Was fehlt?", "Radwege in Lima sind Teil eines integrierten Verkehrssystems. Es geht um sichere Wege zu Bus, Metro, Schule, Ausbildung, Arbeit und Markt."],
+      ["Zuschuss und Kredit trennen", "Deutschland bezuschusst Radwege in Lima mit 20 Mio. Euro. Größere Mobilitätsbestandteile laufen als Entwicklungskredite und sind rückzahlbar."],
+      ["Nicht nur Peru profitiert", "Kooperation kann Klima, Handel, Standards, Aufträge, Partnerschaft und Stabilität stärken. Gute Entwicklungspolitik ist kein Almosen, sondern Partnerschaft."],
+      ["Kritik bleibt möglich", "Schlecht geplante, schlecht genutzte oder intransparente Projekte muss man kritisieren. Aber Kritik braucht Projektdaten, nicht Spottwert."],
+      ["Kernsatz", "Der wahre Punkt ist Kontrolle. Der falsche Sprung ist Spott statt Prüfung."],
     ],
     answers: {
-      ten: "Die 315-Millionen-Zahl für Radwege ist falsch. Tatsächlich geht es um 20 Mio. Euro Zuschuss plus weitere 24 Mio. Euro Zusage - als Teil eines Verkehrssystems mit Klima-, Luft- und Teilhabewirkung.",
+      ten: "Bei Radwegen in Peru geht es nicht um Luxus, sondern um sichere Wege zu Metro, Bus, Schule und Arbeit. Entscheidend ist: Was bewirkt das Projekt - und wird es sauber kontrolliert?",
       thirty:
-        "Der wahre Kern ist: Steuergeld muss geprüft werden. Der Denkfehler ist: Radwege in Peru als Luxusprojekt gegen deutsche Probleme auszuspielen. Es geht um ein integriertes Verkehrssystem, weniger CO2, weniger Luftverschmutzung, günstigere Mobilität und internationale Stabilität. Die bessere Frage ist: Welche Wirkung hat das Projekt - und wird sie geprüft?",
+        "Der wahre Punkt ist: Öffentliches Geld muss gut geprüft werden. Der falsche Sprung ist, ein Projekt im Ausland lächerlich zu machen, bevor man seine Wirkung anschaut. Bei Lima geht es um sichere Wege zu Bus, Metro, Schule und Arbeit. Entscheidend ist: Zuschuss oder Kredit, Kontrolle, Nutzen und Wirkung.",
       two:
-        "Ich würde zuerst die Bilanzgrenze prüfen. Reden wir über Zuschuss oder Kredit? Über einen isolierten Radweg oder ein Verkehrssystem? Über Kosten oder Wirkung? Das Peru-Beispiel wirkt als Stöckchen, weil ein konkretes fremdes Projekt gegen ein nahes deutsches Problem gestellt wird. Aber laut BMZ geht es bei den Radwegen nicht um 315 Millionen Euro Zuschuss, sondern um deutlich kleinere Zuschüsse und um ein größeres Mobilitätspaket mit Krediten. Wirkungsökonomisch ist die Frage deshalb nicht: Peru oder Deutschland? Sondern: Welche Ausgabe erzeugt welche Wirkung, welche Rückflüsse oder Stabilitätsgewinne entstehen, und wird die Wirkung transparent kontrolliert?",
+        "Das Radwege-in-Peru-Narrativ funktioniert, weil es ein einfaches Spottbild liefert: Dort Radwege, hier Probleme. Aber so einfach ist die Rechnung nicht. In Lima geht es nicht um ein paar beliebige Fahrradstreifen, sondern um nachhaltige Mobilität in einer Millionenstadt: Radwege als Zubringer zu Bus, Metro, Schule, Arbeit und Ausbildung. Ein Teil ist Zuschuss, andere Mobilitätsbestandteile laufen über rückzahlbare Entwicklungskredite. Das muss transparent sein und geprüft werden. Die bessere Frage lautet also nicht: Warum zahlen wir für Peru? Sondern: Was bewirkt das Projekt konkret? Hilft es Menschen, günstiger und sicherer zur Arbeit zu kommen? Senkt es Stau und Luftbelastung? Ist es Teil eines Verkehrssystems? Wird das Geld in Tranchen und nach Fortschritt ausgezahlt? Gibt es Kontrolle? Und hat Deutschland dadurch auch Klima-, Wirtschafts- und Partnerschaftsnutzen? Gute Entwicklungspolitik ist kein Wegwerfen von Geld. Sie ist ein Werkzeug für Stabilität, Klimaschutz, Handel, Vertrauen und Zusammenarbeit. Schlechte Projekte muss man kritisieren. Aber aus einem einzelnen Schlagwort ein Pauschalurteil gegen internationale Zusammenarbeit zu machen, ist keine Haushaltskontrolle. Es ist ein Frame.",
+      comment:
+        "Radwege in Lima sind kein Luxusbild, sondern Teil eines Verkehrssystems zu Bus, Metro, Schule und Arbeit. Die richtige Frage ist nicht Spott, sondern Wirkung: Was bewirkt es, wer zahlt was, und wie wird es kontrolliert?",
+      calm:
+        "Ich verstehe den Reflex: Man fragt sich, warum Geld ins Ausland geht, wenn hier auch viel fehlt. Aber lass uns das Projekt prüfen: Ist es Zuschuss oder Kredit? Was bewirkt es? Wird es kontrolliert? Und welchen Nutzen hat es auch für Deutschland?",
     },
-    question: "Vergleichst du gerade eine falsche Schlagzeile mit einem deutschen Problem - oder prüfst du Zuschuss, Kredit, Wirkung und Rückflüsse?",
-    frame: "Ich beantworte das, aber ich übernehme nicht den Frame „Peru gegen Deutschland“. Die bessere Wirkungsfrage ist: Welche Ausgabe erzeugt welche Wirkung - hier und global?",
-    sourceKeys: ["bmz_radwege_faq", "bmz_lima_mobilitaet", "kfw_peru_stellungnahme", "kfw_entwicklungszusammenarbeit"],
+    question: "Was bewirkt das Projekt konkret - und wird es transparent, kontrolliert und wirksam umgesetzt?",
+    frame: "Die Frage ist nicht Inland gegen Ausland. Die Frage ist: Welche Projekte erzeugen nachweisbare Wirkung - hier und dort?",
+    oldFrame: "Deutschland verschenkt Steuergeld für absurde Projekte im Ausland.",
+    newFrame: "Deutschland investiert in geprüfte Wirkung, wenn ein Projekt transparent, kontrolliert und nützlich ist.",
+    better:
+      "Ein Haushalt wird nicht besser, wenn wir jedes Auslandsprojekt verspotten. Er wird besser, wenn jede Ausgabe Wirkung nachweist.",
+    positiveExamples: [
+      {
+        title: "Der sichere Weg zur Metro",
+        situation:
+          "In Lima fährt eine Schülerin morgens mit dem Rad zur Metrostation. Der Radweg ist sicher, beleuchtet und an Bus und Bahn angebunden. Ihre Familie spart Fahrgeld. Die Straße wird entlastet. Die Stadt bekommt bessere Mobilität, und Menschen kommen verlässlicher zur Schule, Ausbildung und Arbeit.",
+        getsBetter: ["sicherer Schul- und Arbeitsweg", "bessere Anbindung an Bus und Metro", "weniger Stau", "geringere Mobilitätskosten", "weniger Luftbelastung", "mehr Teilhabe für Menschen ohne Auto", "stärkere kommunale Planung"],
+        hostLine: "Ein guter Radweg ist nicht nur Asphalt. Er verbindet Schule, Arbeit, Metro, Gesundheit und Teilhabe.",
+        whyItWorks: "Das Beispiel startet nicht beim Spottbild. Es zeigt den besseren Alltag, der durch gute Infrastruktur entstehen kann.",
+      },
+      {
+        title: "Die Stadt, die Verkehr neu ordnet",
+        situation:
+          "Eine Millionenstadt baut Bus, Metro und Radwege als Netz. Menschen fahren nicht mehr jeden kurzen Weg mit dem Auto oder im Stau. Radwege bringen sie sicher zu Haltestellen. Busse und Metro werden besser genutzt. Kleine Geschäfte werden erreichbar. Die Stadt spart Zeit, Abgase und Verkehrsfläche.",
+        getsBetter: ["mehr Menschen erreichen den ÖPNV", "weniger Zeitverlust im Stau", "bessere Luft in der Stadt", "günstigere Mobilität", "bessere Erreichbarkeit kleiner Betriebe", "mehr Planungskompetenz in der Kommune"],
+        hostLine: "Radwege sind dann stark, wenn sie Teil eines Netzes sind: zu Bus, Metro, Schule, Arbeit und Markt.",
+        whyItWorks: "Das Beispiel zeigt Radwege nicht als Einzelmaßnahme, sondern als Teil eines Verkehrssystems.",
+      },
+      {
+        title: "Partnerschaft, die Türen öffnet",
+        situation:
+          "Deutschland arbeitet mit Peru an nachhaltiger Mobilität. Dabei entstehen Standards, Ausschreibungen, Beratung, Technik und Vertrauen. Deutsche und europäische Unternehmen können sich an Projekten beteiligen. Gleichzeitig wird eine wachsende Stadt klimafreundlicher. Gute Entwicklungspolitik ist nicht Almosen, sondern Partnerschaft.",
+        getsBetter: ["verlässliche internationale Beziehungen", "Marktzugang für deutsche und europäische Unternehmen", "gemeinsame Klimawirkung", "mehr Vertrauen in regelbasierte Zusammenarbeit", "weniger Einfluss autoritärer Geldgeber", "bessere Standards bei Stadtentwicklung"],
+        hostLine: "Gute Zusammenarbeit ist keine Einbahnstraße. Sie schafft Wirkung vor Ort und Partnerschaft für Deutschland.",
+        whyItWorks: "Das Beispiel zeigt den Nutzen für Deutschland, ohne das Projekt nur als Eigennutz zu verkaufen.",
+      },
+    ],
+    impactFan: [
+      ["Mobilität", "Sichere Wege verbinden Menschen mit Bus, Metro, Schule und Arbeit.", "Radweg als Zubringer zur Haltestelle."],
+      ["Teilhabe", "Günstige Mobilität hilft besonders Menschen ohne eigenes Auto.", "Arbeitsweg ohne hohe Kraftstoffkosten."],
+      ["Gesundheit", "Weniger Stau und Abgase verbessern Stadtluft.", "Weniger Feinstaub und Abgase an Hauptstraßen."],
+      ["Klima", "Stadtverkehr entscheidet mit über Emissionen.", "Mehr Wege mit Rad, Bus und Metro statt Auto."],
+      ["Wirtschaft", "Weniger Stau spart Zeit und stärkt Erreichbarkeit.", "Menschen kommen pünktlicher zu Arbeit und Markt."],
+      ["Deutschland", "Kooperation kann Handel, Vertrauen und Aufträge stärken.", "Deutsche Unternehmen beteiligen sich an Verkehrsprojekten."],
+      ["Finanzierung", "Zuschüsse und Kredite sind unterschiedliche Dinge.", "Rückzahlbare Entwicklungskredite sind kein Geschenk."],
+      ["Vertrauen", "Transparenz entscheidet, ob Zusammenarbeit glaubwürdig bleibt.", "Datenstand, Tranchen, Kontrolle, Evaluierung."],
+      ["Demokratie", "Spottframes schwächen sachliche Haushaltsdebatten.", "Ein Schlagwort ersetzt Prüfung."],
+    ],
+    psychology: [
+      ["Lächerlichkeitsframe", "Das Beispiel klingt sofort lächerlich.", "Menschen prüfen nicht mehr die Wirkung, sondern lachen über das Bild.", "Nicht das Spottbild wiederholen. Den konkreten Nutzen zeigen."],
+      ["Nullsummenfehler", "Es fühlt sich an, als würde uns etwas weggenommen.", "Aus jedem Euro im Ausland wird gefühlt ein fehlender Euro in der eigenen Straße.", "Zuschuss, Kredit, Budget, Rückzahlung und Wirkung trennen."],
+      ["Nahbereichsbias", "Das Nahe fühlt sich wichtiger an als das Ferne.", "Globale Klima-, Handels- und Stabilitätswirkungen wirken abstrakt.", "Ein positives Alltagsbild zeigen: sicher zur Schule, Arbeit, Metro."],
+    ],
+    gate: [
+      ["Konkretes Problem", "Verkehrssicherheit, Wasser, Energie, Gesundheit, Bildung oder Klima werden praktisch verbessert."],
+      ["Direkte Wirkung für Menschen", "Zum Beispiel sicherer Weg zur Schule, bessere Anbindung an Arbeit oder bezahlbare Mobilität."],
+      ["Systembezug", "Radwege sind Zubringer zu Bus, Metro, Schule, Arbeit und Markt - nicht nur Asphalt."],
+      ["Transparente Finanzierung", "Zuschuss, Darlehen, Eigenbeitrag, Tranchen und Rückzahlung sind klar ausgewiesen."],
+      ["Kontrolle", "Umwelt- und Sozialprüfung, Baufortschritt, Beschwerdemechanismus und Evaluierung sind sichtbar."],
+      ["Deutsches Interesse", "Klima, Handelsbeziehungen, Standards, Stabilität, Aufträge und Partnerschaften werden offengelegt."],
+      ["Keine Symbolpolitik", "Nutzung, klare Ziele und öffentlicher Bericht müssen prüfbar sein."],
+    ],
+    subclaims: [
+      ["315 Millionen Euro für Radwege in Peru", "Zahl, Zweck und Finanzierung werden vermischt.", "Diese Erzählung funktioniert, weil eine große Zahl mit einem kleinen Bild verbunden wird. Richtig ist: Deutschland unterstützt in Peru nachhaltige Mobilität. Dazu gehören Metro, Bus, integrierte Verkehrssysteme und Radwege. Radwege in Lima sind ein deutlich kleinerer Zuschussbestandteil. Andere Mittel sind Kredite oder betreffen andere Verkehrsprojekte. Deshalb muss man sauber trennen: Was ist Zuschuss? Was ist Kredit? Was ist Metro? Was ist Bus? Was ist Radweg? Und was wird zurückgezahlt?", "Die Zahl allein erklärt nichts. Man muss trennen: Zuschuss, Kredit, Metro, Bus, Radweg und Rückzahlung.", "Welche Summe ist Zuschuss, welche ist Kredit, und welcher Teil geht wirklich in Radwege?"],
+      ["Erst Schulen hier, dann Radwege dort", "Berechtigter Frust, falsches Entweder-oder.", "Viele Menschen erleben marode Schulen, kaputte Brücken oder schlechte Bahnverbindungen. Dieser Frust ist real. Aber er wird falsch gelenkt, wenn jedes Auslandsprojekt automatisch als Ursache deutscher Probleme gilt. Deutschland kann und muss im Inland investieren. Gleichzeitig können internationale Projekte sinnvoll sein, wenn sie Klima, Stabilität, Handel, Sicherheit und Partnerschaft stärken.", "Unsere Schulen müssen besser werden. Aber ein gutes Auslandsprojekt ist nicht automatisch der Grund, warum hier etwas kaputt ist.", "Welche Investitionen fehlen hier - und welche internationalen Projekte erzeugen nachweislich Nutzen?"],
+      ["Entwicklungshilfe bringt Deutschland nichts", "Zu eng gedacht.", "Deutschland ist stark in internationale Lieferketten, Handel, Sicherheit und Klimafragen eingebunden. Wenn Städte in Partnerländern besser funktionieren, Märkte stabiler werden, Klimaschutz vorankommt und demokratische Partnerschaften wachsen, wirkt das auch auf Deutschland zurück. Das bedeutet nicht, dass jedes Projekt gut ist. Aber es bedeutet: Der Nutzen endet nicht an der Landesgrenze.", "Deutschland lebt von Handel, Stabilität und Kooperation. Gute Entwicklungspolitik ist auch Eigeninteresse.", "Stärkt das Projekt Stabilität, Klima, Handel oder Partnerschaft - und ist die Wirkung belegt?"],
+      ["Das Geld wird verschenkt", "Oft falsch oder unvollständig.", "Entwicklungsfinanzierung besteht nicht nur aus Zuschüssen. Es gibt auch Darlehen, Förderkredite, Eigenmittel, Mischfinanzierung und Rückzahlungen. Ein Zuschuss muss besonders gut begründet werden. Ein Kredit muss tragfähig sein und zurückgezahlt werden. Beides muss kontrolliert werden.", "Nicht alles ist Geschenk. Viele Mittel sind Kredite. Und bei Zuschüssen zählt: Was bewirken sie konkret?", "Ist es Zuschuss, Kredit oder Mischfinanzierung - und wie wird die Wirkung geprüft?"],
+      ["Solche Projekte sind nur Symbolpolitik", "Prüfbar statt pauschal.", "Symbolpolitik erkennt man nicht am Ort des Projekts, sondern an fehlender Wirkung. Entscheidend sind Nutzung, Kosten, Kontrolle, Systemnutzen, Standards und Evaluierung. Wenn ein Projekt diese Prüfung nicht besteht, muss es verbessert oder beendet werden. Wenn es sie besteht, sollte es nicht durch ein Spottbild entwertet werden.", "Gute Kritik fragt nach Nutzung, Kontrolle und Wirkung - nicht nach Spottwert.", "Welche Ziele, Nutzungsdaten und Kontrollberichte liegen vor?"],
+    ],
+    solution: [
+      ["Wirkungskarte für jedes Auslandsprojekt", "Jedes Projekt zeigt auf einer öffentlichen Seite Zweck, Betrag, Finanzierungsform, Partner, Baufortschritt, Wirkung und Quellen."],
+      ["Zuschuss und Kredit sichtbar trennen", "Menschen müssen sofort sehen: Was ist Zuschuss? Was ist Darlehen? Was wird zurückgezahlt? Wer trägt Risiko?"],
+      ["Positive Beispiele statt Spottbilder", "Kommunikation erklärt nicht nur Zahlen, sondern den besseren Alltag: sicher zur Schule, zur Arbeit, zur Metro, zum Markt."],
+      ["Wirkung vor Auszahlung prüfen", "Tranchen werden an Fortschritt, Standards und Wirkung gekoppelt."],
+      ["Kontrolle öffentlich machen", "Umwelt- und Sozialprüfung, Vergabe, Beschwerdemechanismus und Evaluierung werden leicht auffindbar."],
+      ["Deutschland-Nutzen offenlegen", "Klima, Stabilität, Handel, Partnerschaft, Aufträge und strategische Beziehungen werden transparent erklärt."],
+      ["Lernschleife einbauen", "Was funktioniert, wird skaliert. Was nicht funktioniert, wird beendet oder angepasst."],
+      ["Kommunikation entgiften", "Nicht moralisch verteidigen, sondern sauber erklären: Wirkung, Kontrolle, Finanzierungsform, Nutzen."],
+    ],
+    trust: {
+      sourceStand: "BMZ-Seite Stand 14.02.2025; KfW-Seite Stand 25.09.2025.",
+      sicher: ["Radwege in Lima sind Teil eines integrierten Verkehrssystems.", "Deutschland bezuschusst Radwege in Lima mit 20 Mio. Euro.", "Weitere bis zu 24 Mio. Euro wurden 2022 für integrierte Verkehrssysteme einschließlich Radwegen in weiteren Städten zugesagt.", "Entwicklungskredite für das Schnellbussystem sind rückzahlbar.", "KfW-Förderkredite werden überwiegend über den Kapitalmarkt refinanziert und von Kreditnehmern verzinst zurückgezahlt."],
+      pruefen: ["Konkrete Nutzung der neu gebauten Radwege nach Fertigstellung.", "Baufortschritt je Abschnitt.", "Langfristige Verkehrswirkung.", "Wirtschaftliche Aufträge im weiteren Projektverlauf.", "Qualität der lokalen Umsetzung."],
+    },
+    sourceKeys: ["bmz_lima_mobilitaet", "kfw_entwicklungszusammenarbeit", "kfw_projektdatenbank_radweg_lima", "kfw_transparenzportal", "bmz_transparenzportal", "kfw_evaluierung"],
   },
   {
     slug: "ukraine-unterstuetzung-steuergeld",
@@ -148,6 +241,13 @@ const glossaryTerms = [
   ["steuergeld-frame", "Steuergeld-Frame", "Deutungsrahmen, der öffentliche Ausgaben primär als Wegnahme oder Verlust darstellt.", "Der Frame ist berechtigt, wenn Transparenz fehlt. Er wird problematisch, wenn Wirkung, Rückflüsse und Risikovermeidung ausgeblendet werden."],
   ["ausland-statt-inland-narrativ", "Ausland-statt-Inland-Narrativ", "Narrativ, das Ausgaben im Ausland gegen Probleme im Inland ausspielt.", "Nicht jede Auslandsausgabe ist sinnvoll. Aber nicht jede Inlandsausgabe ist wirksam. Entscheidend ist die Netto-Wirkung."],
   ["globale-oeffentliche-gueter", "Globale öffentliche Güter", "Güter und Stabilitätsbedingungen, von denen viele Länder profitieren, etwa Klima, Frieden, Biodiversität, Pandemievorsorge, Handelswege und internationale Ordnung.", "Globale öffentliche Güter schützen auch Deutschland, weil Klima, Sicherheit, Handel und Gesundheit nicht an Grenzen enden."],
+  ["entwicklungskredit", "Entwicklungskredit", "Kredit für ein Entwicklungsprojekt, der zurückgezahlt werden muss und oft zu günstigeren Konditionen vergeben wird.", "Ein Entwicklungskredit ist kein Geschenk. Er muss bedient werden."],
+  ["zuschuss", "Zuschuss", "Öffentliche Finanzierung, die nicht zurückgezahlt wird.", "Zuschüsse brauchen besonders klare Begründung und Wirkungsprüfung."],
+  ["laecherlichkeitsframe", "Lächerlichkeitsframe", "Kommunikationsmuster, das ein Projekt über ein spöttisches Bild entwertet, bevor seine Wirkung geprüft wird.", "Spott ersetzt keine Wirkungsprüfung."],
+  ["nullsummenfehler", "Nullsummenfehler", "Denkfehler, bei dem jede Ausgabe an einem Ort automatisch als Verlust an einem anderen Ort erlebt wird.", "Haushalte brauchen Prioritäten, aber nicht jede internationale Ausgabe ist automatisch ein Verlust im Inland."],
+  ["nahbereichsbias", "Nahbereichsbias", "Tendenz, nahe Probleme stärker wahrzunehmen als weiter entfernte Wirkungen, auch wenn diese zurückwirken.", "Das Nahe fühlt sich wichtiger an. Das Ferne kann trotzdem auf uns zurückwirken."],
+  ["internationale-zusammenarbeit", "Internationale Zusammenarbeit", "Kooperation zwischen Staaten und Institutionen, um gemeinsame Probleme wie Klima, Gesundheit, Handel, Sicherheit und Entwicklung zu lösen.", "Gute Zusammenarbeit ist kein Almosen, sondern gemeinsame Problemlösung."],
+  ["wirkungshaushalt-ausland", "Wirkungshaushalt für Auslandsprojekte", "Haushaltslogik, die Auslandsprojekte nach Zweck, Finanzierungsform, Kontrolle, Rückzahlung, Nutzen und langfristiger Wirkung bewertet.", "Nicht Spott entscheidet, sondern nachweisbare Wirkung."],
   ["sicherheits-t-sroi", "Sicherheits-T-SROI", "Wirkungsbewertung von Sicherheits- und Präventionsausgaben nach vermiedenen Schäden, Resilienz, Stabilität und demokratischer Ordnung.", "Nicht nur fragen: Was kostet Hilfe? Sondern auch: Was kostet Nicht-Hilfe?"],
   ["kapitalwirkung", "Kapitalwirkung", "Wirkung von Kapital auf Innovation, Arbeit, Klima, Wohnen, Demokratie, Machtverteilung und gesellschaftliche Resilienz.", "Kapital ist nicht gut oder schlecht. Entscheidend ist, welche Zustände es verändert."],
   ["wirkungsausgabe", "Wirkungsausgabe", "Öffentliche Ausgabe, die eine nachvollziehbare positive Netto-Wirkung erzeugt.", "Eine Wirkungsausgabe braucht Ziel, Daten, Wirkungspfad, Kontrolle und Evaluation."],
@@ -216,10 +316,61 @@ function nav(base) {
 
 function sourceCards(keys) {
   const items = sources.filter(([, key]) => keys.includes(key));
-  return `<div class="card-grid">${items.map(([label, key, url, useFor, warning]) => `<article class="card" id="quelle-${esc(key)}"><p class="card-kicker">Quelle vorbereiten</p><h3 class="card-title">${esc(label)}</h3><p class="card-text"><strong>Verwendet für:</strong> ${esc(useFor)}</p><p class="card-text"><strong>Grenze:</strong> ${esc(warning)}</p><p><a class="text-link" href="${esc(url)}">Quelle öffnen</a></p></article>`).join("")}</div>`;
+  return `<div class="card-grid">${items.map(([label, key, url, useFor, warning]) => `<article class="card" id="quelle-${esc(key)}"><p class="card-kicker">Quelle vorbereiten</p><h3 class="card-title">${esc(label)}</h3>${Array.isArray(useFor) ? `<ul class="clean-list">${useFor.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : `<p class="card-text"><strong>Verwendet für:</strong> ${esc(useFor)}</p>`}<p class="card-text"><strong>Grenze:</strong> ${esc(warning)}</p><p><a class="text-link" href="${esc(url)}">Quelle öffnen</a></p></article>`).join("")}</div>`;
+}
+
+function list(items) {
+  return `<ul class="clean-list">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`;
+}
+
+function positiveExamples(examples) {
+  return `<div class="card-grid three">${examples.map((item) => `<article class="card"><p class="card-kicker">Positives Beispiel</p><h3 class="card-title">${esc(item.title)}</h3><p class="card-text">${esc(item.situation)}</p><p class="card-text"><strong>Host-Satz:</strong> ${esc(item.hostLine)}</p><details class="v2-source-drawer"><summary>Was wird besser?</summary>${list(item.getsBetter)}<p class="card-text"><strong>Warum es wirkt:</strong> ${esc(item.whyItWorks)}</p></details></article>`).join("")}</div>`;
+}
+
+function impactFan(items) {
+  return `<div class="v2-impact-grid">${items.map(([label, sentence, example]) => `<article class="v2-impact-card"><p class="v2-badge">Wirkt mit</p><h3>${esc(label)}</h3><p>${esc(sentence)}</p><small>${esc(example)}</small></article>`).join("")}</div>`;
+}
+
+function psychologyLite(items) {
+  return `<div class="card-grid three">${items.map(([technical, simple, debateEffect, howToBypass]) => `<article class="card"><p class="v2-badge">${esc(technical)}</p><h3 class="card-title">${esc(simple)}</h3><p class="card-text">${esc(debateEffect)}</p><p class="card-text"><strong>Umgehen:</strong> ${esc(howToBypass)}</p></article>`).join("")}</div>`;
+}
+
+function gateCards(items) {
+  return `<div class="card-grid">${items.map(([title, text], index) => `<article class="card"><p class="card-kicker">Prüfpunkt ${index + 1}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div>`;
+}
+
+function subclaimAccordion(items) {
+  return `<div class="radar-answer-accordion host-answer-tabs">${items.map(([title, judgement, text, answer, question], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(title)}</span><span class="radar-answer-label">${esc(judgement)}</span></summary><p>${esc(text)}</p><p><strong>Host-Antwort:</strong> ${esc(answer)}</p><p><strong>Bessere Frage:</strong> ${esc(question)}</p></details>`).join("")}</div>`;
+}
+
+function solutionCards(items) {
+  return `<div class="card-grid">${items.map(([title, text]) => `<article class="card"><p class="card-kicker">Lösung</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div>`;
+}
+
+function radwegePage(dossier, detail = false) {
+  const pageType = detail ? "Detail" : "Live";
+  const main = `    <main id="inhalt" data-pagefind-body>
+      <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / ${pageType}</nav><p class="hero-kicker">Steuergeld, Entwicklung &amp; Mobilität · ${esc(dossier.status)}</p><h1 class="hero-title">${esc(dossier.title)}</h1><p class="hero-subtitle">${esc(dossier.subtitle)}</p><p class="radar-abstract"><strong>Kurzformel:</strong> Nicht Geld weg. Wirkung prüfen.</p><p class="radar-abstract">${esc(dossier.abstract)}</p><p class="radar-status-line"><span>Kurzurteil: ${esc(dossier.judgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Quellenstand: BMZ 14.02.2025 · KfW 25.09.2025</span></p></div></section>
+      ${nav("../../../")}
+      <section class="section v2-host-cockpit" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Host-Cockpit · Maus-Modus</p><h2>Was wurde gesagt?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p></div><div class="v2-cockpit-grid"><article class="v2-cockpit-card v2-card-strong"><p class="v2-badge">Kurzurteil</p><h3>${esc(dossier.judgement)}</h3></article><article class="v2-cockpit-card"><p class="v2-badge">Sag das jetzt</p><p>${esc(dossier.answers.ten)}</p><button class="copy-chip" type="button" data-copy-text="${esc(dossier.answers.ten)}">Kopieren</button></article><article class="v2-cockpit-card"><p class="v2-badge">Positives Beispiel</p><h3>${esc(dossier.positiveExamples[0].title)}</h3><p>${esc(dossier.positiveExamples[0].hostLine)}</p><button class="copy-chip" type="button" data-copy-text="${esc(dossier.positiveExamples[0].hostLine)}">Beispiel kopieren</button></article><article class="v2-cockpit-card"><p class="v2-badge">Bessere Frage</p><p>${esc(dossier.question)}</p><button class="copy-chip" type="button" data-copy-text="${esc(dossier.question)}">Frage kopieren</button></article></div><div class="v2-frame-card" id="frame-nicht-uebernehmen"><p class="v2-badge">Frame nicht übernehmen</p><div><strong>Alter Frame:</strong> ${esc(dossier.oldFrame)}</div><div><strong>Neuer Frame:</strong> ${esc(dossier.newFrame)}</div><div><strong>Besser:</strong> ${esc(dossier.better)}</div><div><strong>Warum:</strong> Die Antwort verteidigt nicht blind. Sie verschiebt vom Spottbild zur Wirkungsprüfung.</div></div></div></section>
+      <section class="section" id="positive-beispiele"><div><div class="section-header"><p class="hero-kicker">Positive Beispiele</p><h2>Erst den besseren Alltag zeigen.</h2><p>Nicht beim Spottbild starten. Zeigen, was ein gutes Projekt konkret verändert.</p></div>${positiveExamples(dossier.positiveExamples)}</div></section>
+      <section class="section section-soft" id="antwortformate"><div><div class="section-header"><p class="hero-kicker">Antwortformate</p><h2>Kurz sagen. Dann vertiefen.</h2></div><div class="radar-answer-accordion host-answer-tabs"><details class="radar-answer-item" open><summary><span class="radar-answer-time">Kommentar</span><span class="radar-answer-label">${words(dossier.answers.comment)} Wörter</span></summary><p>${esc(dossier.answers.comment)}</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Live</span><span class="radar-answer-label">${words(dossier.answers.thirty)} Wörter</span></summary><p>${esc(dossier.answers.thirty)}</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Panel</span><span class="radar-answer-label">${words(dossier.answers.two)} Wörter</span></summary><p>${esc(dossier.answers.two)}</p></details><details class="radar-answer-item"><summary><span class="radar-answer-time">Konter ohne Streit</span><span class="radar-answer-label">${words(dossier.answers.calm)} Wörter</span></summary><p>${esc(dossier.answers.calm)}</p></details></div></div></section>
+      <section class="section" id="was-stimmt-was-fehlt"><div><div class="section-header"><p class="hero-kicker">Was stimmt? Was fehlt?</p><h2>Wahren Punkt anerkennen, falschen Sprung öffnen.</h2></div>${cardGrid(dossier.points, "Prüfung")}</div></section>
+      <section class="section section-soft v2-impact-fan" id="impact-fan" data-v2-impact-fan><div><div class="section-header"><p class="hero-kicker">Was wirkt alles mit?</p><h2>Die ganze Rechnung öffnen.</h2><p>Radwege sind hier nicht das Spottbild, sondern ein Teil von Mobilität, Teilhabe, Gesundheit, Klima, Wirtschaft und Partnerschaft.</p></div>${impactFan(dossier.impactFan)}</div></section>
+      <section class="section v2-psychology-lite" id="psychologie"><div><div class="section-header"><p class="hero-kicker">Psychologischer Wirkungscheck</p><h2>Warum der Satz zieht.</h2></div>${psychologyLite(dossier.psychology)}<div class="card"><p class="card-kicker">Host-Control-Moves</p>${list(["Lass uns nicht über das Schlagwort lachen, sondern die Wirkung prüfen.", "Ist es Zuschuss oder Kredit?", "Wird es kontrolliert?", "Was verbessert sich konkret?", "Welchen Nutzen hat das für Menschen dort und für Deutschland?"])}</div></div></section>
+      <section class="section section-soft v2-consequence-stack" id="folgenkarte"><div><div class="section-header"><p class="hero-kicker">Folgenkarte</p><h2>Was passiert, wenn man dem Frame folgt?</h2></div><div class="card-grid three"><article class="card"><p class="v2-badge">Sofort</p><p class="card-text">Ein Projekt wird zum Spottbild. Die genaue Wirkung interessiert kaum noch.</p></article><article class="card"><p class="v2-badge">Danach</p><p class="card-text">Internationale Zusammenarbeit wirkt wie Verschwendung, auch wenn Kredite zurückfließen oder Projekte Nutzen erzeugen.</p></article><article class="card"><p class="v2-badge">Auf Dauer</p><p class="card-text">Deutschland verliert Vertrauen, Partner, Einfluss und gemeinsame Lösungskraft bei Klima, Handel und Sicherheit.</p></article></div><div class="section-header"><h2>Was passiert, wenn man richtig prüft?</h2></div><div class="card-grid three"><article class="card"><p class="v2-badge">Sofort</p><p class="card-text">Zuschuss, Kredit, Zweck, Kontrolle und Nutzen werden getrennt.</p></article><article class="card"><p class="v2-badge">Danach</p><p class="card-text">Gute Projekte werden verbessert, schlechte Projekte gestoppt.</p></article><article class="card"><p class="v2-badge">Auf Dauer</p><p class="card-text">Internationale Zusammenarbeit wird wirksamer, transparenter und glaubwürdiger.</p></article></div></div></section>
+      <section class="section" id="wirkungsgate"><div><div class="section-header"><p class="hero-kicker">Wirkungsgate</p><h2>Wann ist ein Auslandsprojekt sinnvoll?</h2><p>Nicht jeder Euro im Ausland ist gut. Aber jeder Euro muss nach Wirkung geprüft werden - nicht nach Spottwert.</p></div>${gateCards(dossier.gate)}</div></section>
+      <section class="section section-soft" id="subclaims"><div><div class="section-header"><p class="hero-kicker">Subclaims</p><h2>Häufige Varianten aufklappen.</h2></div>${subclaimAccordion(dossier.subclaims)}</div></section>
+      <section class="section" id="loesung"><div><div class="section-header"><p class="hero-kicker">Wirkungsökonomische Lösung</p><h2>Auslandsprojekte sichtbar prüfen.</h2><p>Gute Projekte zeigen klar: Was wird besser? Wer profitiert? Wer zahlt? Was wird zurückgezahlt? Welche Kontrolle gibt es? Was lernt man daraus?</p></div>${solutionCards(dossier.solution)}</div></section>
+      <section class="section section-soft v2-trust-block" id="warum-vertrauen"><div class="card"><p class="hero-kicker">Warum diese Einordnung vertrauenswürdig sein soll</p><div class="v2-trust-grid"><div><strong>Datenstand</strong><span>${UPDATED_AT}</span></div><div><strong>Quellenstand</strong><span>${esc(dossier.trust.sourceStand)}</span></div><div><strong>Bilanzgrenze</strong><span>Finanzierungsform, Rückzahlung, Mobilitätsnutzen, Klima, Gesundheit, Teilhabe, Partnerschaft und deutsche Interessen.</span></div><div><strong>Gegenposition</strong><span>Kritik ist legitim, wenn Projekte schlecht geplant, schlecht genutzt, intransparent oder zu teuer sind.</span></div></div><details class="v2-source-drawer" open><summary>Sicher / prüfpflichtig anzeigen</summary><div class="card-grid two"><article class="card"><h3 class="card-title">Sicher</h3>${list(dossier.trust.sicher)}</article><article class="card"><h3 class="card-title">Prüfpflichtig</h3>${list(dossier.trust.pruefen)}</article></div></details></div></section>
+      <section class="section dossier-tab-panel" id="deep-dive-quellen"><div><div class="section-header"><p class="hero-kicker">Quellen</p><h2>Quellenkarten statt Linkliste.</h2><p>Datenstand: ${UPDATED_AT}. Jede Quelle ist mit Verwendung und Grenze eingeordnet.</p></div>${sourceCards(dossier.sourceKeys)}</div></section>
+    </main>`;
+  const folder = detail ? "detail" : "live";
+  return shell({ title: `${dossier.title} | Wirkungsradar ${pageType}`, description: dossier.subtitle, canonical: `https://wirkungsoekonomie.de/wirkungsradar/${folder}/${dossier.slug}/`, base: "../../../", main });
 }
 
 function livePage(dossier, detail = false) {
+  if (dossier.slug === "radwege-in-peru") return radwegePage(dossier, detail);
   const pageType = detail ? "Detail" : "Live";
   const main = `    <main id="inhalt" data-pagefind-body>
       <section class="hero radar-page-hero"><div class="radar-hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Wirkungsradar</a> / ${pageType}</nav><p class="hero-kicker">Steuergeld, globale Verantwortung &amp; Fairness · checked_candidate</p><h1 class="hero-title">${esc(dossier.title)}</h1><p class="hero-subtitle">${esc(dossier.subtitle)}</p><p class="radar-abstract"><strong>Abstract:</strong> ${esc(dossier.abstract)}</p><p class="radar-status-line"><span>Kurzurteil: ${esc(dossier.judgement)}</span><span>Datenstand: ${UPDATED_AT}</span><span>Bilanzgrenze prüfen</span></p></div></section>
@@ -271,8 +422,8 @@ function glossaryPage([slug, label, definition, hover]) {
 function injectBeforeMainEnd(file, marker, section) {
   if (!fs.existsSync(file)) return;
   const html = fs.readFileSync(file, "utf8");
-  if (html.includes(marker)) return;
   const withoutOld = html.replace(new RegExp(`\\n?<section class="section(?: section-soft)?" id="${marker}"[\\s\\S]*?<\\/section>\\n?`, "g"), "\n");
+  if (withoutOld.includes(marker)) return;
   fs.writeFileSync(file, withoutOld.replace(/\s*<\/main>/, `\n${section}\n    </main>`));
 }
 
@@ -293,8 +444,16 @@ function updateLiveIndexCount() {
 }
 
 function writeSourcePack() {
-  const sourceMap = Object.fromEntries(sources.map(([label, key, url, useFor, warning]) => [key, { label, url, use_for: [useFor], warning }]));
+  const sourceMap = Object.fromEntries(sources.map(([label, key, url, useFor, warning]) => [key, { label, url, use_for: Array.isArray(useFor) ? useFor : [useFor], warning }]));
   writeFile("content/wirkungsradar/source-packs/tax-money-global-responsibility-v1.yaml", `# Generated by scripts/wirkungsradar/build-tax-money-global-responsibility-cluster.mjs\n${toYaml({ id: "tax-money-global-responsibility-v1", last_verified: UPDATED_AT, update_frequency: "quarterly", sources: sourceMap }).trim()}\n`);
+}
+
+function writeRadwegeSourcePack() {
+  const radwege = dossiers.find((item) => item.slug === "radwege-in-peru");
+  const sourceMap = Object.fromEntries(sources
+    .filter(([, key]) => radwege.sourceKeys.includes(key))
+    .map(([label, key, url, useFor, warning]) => [key, { label, url, use_for: Array.isArray(useFor) ? useFor : [useFor], warning }]));
+  writeFile("content/wirkungsradar/source-packs/radwege-peru-v1.yaml", `# Generated by scripts/wirkungsradar/build-tax-money-global-responsibility-cluster.mjs\n${toYaml({ id: "radwege-peru-v1", last_verified: UPDATED_AT, update_frequency: "quarterly", sources: sourceMap }).trim()}\n`);
 }
 
 function augmentIndexes() {
@@ -305,6 +464,7 @@ function augmentIndexes() {
 }
 
 writeSourcePack();
+writeRadwegeSourcePack();
 writeFile(`wirkungsradar/themen/${clusterSlug}/index.html`, clusterPage());
 for (const item of dossiers) {
   writeFile(`wirkungsradar/live/${item.slug}/index.html`, livePage(item));
