@@ -9,7 +9,14 @@ const OUT = (...parts) => path.join(ROOT, ...parts);
 const DATA_STAND = "2026-06-04";
 
 const synonymMap = {
-  "migration-kostet-nur": ["Migration kostet", "Auslaender kosten", "Sozialsysteme", "Sozialschmarotzer", "nie eingezahlt", "Fluechtlinge kosten", "Integration", "Zuwanderung", "Fachkraefte", "Kommunen ueberfordert"],
+  "migration-kostet-nur": ["Migration kostet", "Auslaender kosten", "Sozialsysteme", "Sozialschmarotzer", "Sozialtourismus", "Sozialbetrug", "Sozialmissbrauch", "nie eingezahlt", "noch nie eingezahlt", "kommen nur wegen Sozialleistungen", "Buergergeld fuer Auslaender", "Fluechtlinge kosten", "Integration", "Zuwanderung", "Fachkraefte", "Kommunen ueberfordert"],
+  "migration-kriminalitaet": ["Migration Kriminalitaet", "Auslaenderkriminalitaet", "Messerkriminalitaet", "Grenzkriminalitaet", "innere Sicherheit", "Migration Terror", "Gefaehrder", "Kriminalitaetsstatistik", "Tatverdaechtige"],
+  "migration-identitaet": ["Ueberfremdung", "Bevoelkerungsaustausch", "Umvolkung", "Islamisierung", "Migration Identitaet", "Werteverfall durch Migration", "Deutschland wird abgeschafft", "Great Replacement"],
+  "klimadiktatur": ["Klimadiktatur", "Oekodiktatur", "Klima Diktatur", "Klimapolitik Zwang", "Verbote Klima", "gruenes Verbot", "Klimaschutz Planwirtschaft"],
+  "medienvertrauen": ["Luegenpresse", "Mainstreammedien luegen", "Systemmedien", "Medien manipulieren", "gekaufte Medien", "Medienvertrauen", "einseitige Berichterstattung"],
+  "wissenschaftsdelegitimierung": ["Wissenschaft ist gekauft", "Klimawissenschaft gekauft", "Experten luegen", "Studien gefaelscht", "IPCC gekauft", "Forscher gekauft", "Wissenschaft vertrauen"],
+  "eu-souveraenitaet": ["EU-Diktatur", "EU Fremdbestimmung", "Bruessel diktiert", "Deutschland Zahlmeister", "EU kostet nur", "Souveraenitaet", "Deutschland nicht souveraen"],
+  "gender-kulturkampf": ["Gender-Wahn", "Gender Ideologie", "Fruehsexualisierung", "Gender Kinder", "Gendern zerstoert Sprache", "Familie wird abgeschafft", "Kulturkampf", "Kinderschutz Schule"],
   "deutschland-nur-zwei-prozent": ["2 Prozent", "zwei Prozent", "Deutschland kann nichts aendern", "China ist schuld", "wir sind zu klein", "CO2 Anteil Deutschland", "Territorialemissionen", "Territorialbilanz", "Konsumbilanz", "Scope 3", "Lieferkette"],
   "windraeder-voegel-wald-beton-rueckbau": ["Windraeder toeten Voegel", "Fledermaeuse", "Wald", "Beton", "Rueckbau", "Sondermuell", "Rotorblaetter", "SF6", "Schwefelhexafluorid", "Recycling", "Windkraft Natur"],
   "fusion-loest-das-energieproblem": ["Fusion", "Fusionskraftwerk", "ITER", "DEMO", "kleine Sonne", "unbegrenzte Energie", "Technikwunder", "thermisches Kraftwerk", "Turbine", "Tritium"],
@@ -206,7 +213,7 @@ function searchPanel({ id = "radar-suche", placeholder }) {
 
 function homePage() {
   const cards = lighthouseSlugs.map((slug) => p0DossiersV2.find((dossier) => dossier.slug === slug)).filter(Boolean).slice(0, 12);
-  const extraHead = `<meta name="search_tags" content="${esc(Object.values(synonymMap).flat().join(", "))}">`;
+  const extraHead = `<meta name="search_tags" content="Wirkungsradar, Fakten, Folgen, Frames, Psychologie, bessere Antworten, Mythos melden">`;
   const main = `
     <section class="hero radar-page-hero radar-sprint-hero">
       <div class="hero-grid">

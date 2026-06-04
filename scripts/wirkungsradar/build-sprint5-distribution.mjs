@@ -8,6 +8,18 @@ const DATA_STAND = "2026-06-04";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://wirkungsoekonomie.de";
 const allowedStatuses = new Set(["reviewed", "published", "checked_v2_positive_examples"]);
 const blockedStatuses = new Set(["draft_dehumanization_risk", "draft_example_amplifies_frame", "draft_core_error"]);
+const seedTriagePolicy = {
+  enabled: true,
+  matcher: "matchSeedClaim(report.claim)",
+  duplicateThreshold: 0.82,
+  publicDisplay: false,
+  neverPublicRaw: true,
+  riskFlags: {
+    minderheitenschutz: "humanTopicReview",
+    elitenverschwoerung: "conspiracyReview",
+    toxicRaw: "blocked_frame_risk",
+  },
+};
 
 function esc(value) {
   return String(value ?? "")
@@ -398,7 +410,7 @@ function embedCardPage(dossier) {
 }
 
 function mythReportPage() {
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Mythos melden</nav><p class="hero-kicker">Meldeworkflow</p><h1 class="hero-title">Mythos melden</h1><p class="hero-subtitle">Hast du eine Aussage gesehen, die geprüft werden sollte? Melde sie hier.</p><p class="radar-sprint-lead">Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen zuerst, ob eine Veröffentlichung den Frame verstärken würde.</p></div></section>${radarNav("../")}<section class="section"><div><form class="card sprint5-report-form" action="mailto:impact@wirkungsoekonomie.org" method="post" enctype="text/plain"><label>Aussage / Claim<input name="claim" required placeholder="Was wurde gesagt?"></label><label>Kontext<select name="context"><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>X/Twitter</option><option>Telegram</option><option>Gespräch</option><option>Partei/Programm</option><option>Medienartikel</option><option>Sonstiges</option></select></label><label>Thema<select name="topic"><option>Klima</option><option>Energie</option><option>Mobilität</option><option>Migration</option><option>Sozialstaat</option><option>Arbeit</option><option>Demokratie</option><option>Medien</option><option>Wissenschaft</option><option>Ausland/Sicherheit</option><option>Geld/Steuern</option><option>Wohnen</option><option>anderes</option></select></label><label>Link / Screenshot optional<input name="url" placeholder="https://..."></label><label>Warum ist es relevant?<textarea name="relevanceText" rows="5"></textarea></label><label>Häufigkeit<select name="frequency"><option>einmal gesehen</option><option>mehrfach gesehen</option><option>viral</option><option>in meinem Umfeld häufig</option><option>weiß nicht</option></select></label><label>Kontakt optional<input name="contactEmail" type="email" placeholder="E-Mail, falls Rückmeldung gewünscht"></label><label class="checkbox-line"><input type="checkbox" required name="consent"> Ich verstehe, dass der Wirkungsradar keine persönliche Beratung und keine Meldestelle für Strafverfolgung ist.</label><input class="sr-only" name="website" tabindex="-1" autocomplete="off"><button class="btn btn-primary" type="submit">Zur Prüfung einreichen</button><p>Danke. Wir prüfen, ob daraus eine Wirkungsradar-Karte, ein Narrativ-Eintrag oder eine Ergänzung entsteht.</p></form><article class="card"><p class="card-kicker">Diese Woche häufig gemeldet</p><ul class="clean-list"><li>Klima-Aufschub</li><li>Migration/Sozialstaat</li><li>Medienvertrauen</li><li>Energiepreise</li></ul><p>Keine toxischen Originalzitate in öffentlicher Statistik.</p></article></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Wirkungsradar</a> / Mythos melden</nav><p class="hero-kicker">Meldeworkflow</p><h1 class="hero-title">Mythos melden</h1><p class="hero-subtitle">Hast du eine Aussage gesehen, die geprüft werden sollte? Melde sie hier.</p><p class="radar-sprint-lead">Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen intern zuerst auf Dubletten, bestehende Karten, Frame-Risiken und Schutzbedarf.</p></div></section>${radarNav("../")}<section class="section"><div><form class="card sprint5-report-form" action="mailto:impact@wirkungsoekonomie.org" method="post" enctype="text/plain"><label>Aussage / Claim<input name="claim" required placeholder="Was wurde gesagt?"></label><label>Kontext<select name="context"><option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>X/Twitter</option><option>Telegram</option><option>Gespräch</option><option>Partei/Programm</option><option>Medienartikel</option><option>Sonstiges</option></select></label><label>Thema<select name="topic"><option>Klima</option><option>Energie</option><option>Mobilität</option><option>Migration</option><option>Sozialstaat</option><option>Arbeit</option><option>Demokratie</option><option>Medien</option><option>Wissenschaft</option><option>Ausland/Sicherheit</option><option>Geld/Steuern</option><option>Wohnen</option><option>anderes</option></select></label><label>Link / Screenshot optional<input name="url" placeholder="https://..."></label><label>Warum ist es relevant?<textarea name="relevanceText" rows="5"></textarea></label><label>Häufigkeit<select name="frequency"><option>einmal gesehen</option><option>mehrfach gesehen</option><option>viral</option><option>in meinem Umfeld häufig</option><option>weiß nicht</option></select></label><label>Kontakt optional<input name="contactEmail" type="email" placeholder="E-Mail, falls Rückmeldung gewünscht"></label><label class="checkbox-line"><input type="checkbox" required name="consent"> Ich verstehe, dass der Wirkungsradar keine persönliche Beratung und keine Meldestelle für Strafverfolgung ist.</label><input class="sr-only" name="website" tabindex="-1" autocomplete="off"><button class="btn btn-primary" type="submit">Zur Prüfung einreichen</button><p>Danke. Wir prüfen, ob daraus eine Wirkungsradar-Karte, ein Narrativ-Eintrag oder eine Ergänzung entsteht.</p></form><article class="card"><p class="card-kicker">Sichere Redaktion</p><ul class="clean-list"><li>Rohzitate werden nicht automatisch veröffentlicht</li><li>Dubletten werden mit bestehenden Karten zusammengeführt</li><li>Schutzbedarf und Menschenabwertung werden intern markiert</li><li>Verschwörungsframes bekommen gesonderte redaktionelle Prüfung</li></ul><p>Keine toxischen Originalzitate in öffentlicher Statistik.</p></article></div></section>`;
   return shell({ title: "Mythos melden", description: "Sicherer Meldeworkflow für neue Mythen, Narrative und problematische Aussagen.", canonical: `${SITE_URL}/wirkungsradar/mythos-melden/`, base: "../../", main });
 }
 
@@ -421,7 +433,7 @@ function usagePage() {
 }
 
 function adminPage() {
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><p class="hero-kicker">Intern</p><h1 class="hero-title">Mythos-Queue</h1><p class="hero-subtitle">Ungeprüfte Claims werden intern triagiert und nicht öffentlich verstärkt.</p></div></section><section class="section"><div><div class="card-grid two"><article class="card"><h2>Triage-Regeln</h2><ul class="clean-list"><li>Nicht automatisch veröffentlichen</li><li>Duplikate zusammenführen</li><li>Menschenabwertung intern markieren</li><li>Persönliche Daten entfernen</li><li>Screenshots nicht öffentlich ohne Rechteprüfung</li></ul></article><article class="card"><h2>Priorisierung</h2><ul class="clean-list"><li>Häufigkeit</li><li>gesellschaftliches Risiko</li><li>P0-Themenbezug</li><li>demokratiegefährdende Narrative</li><li>bestehende Quellenlage</li></ul></article></div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><p class="hero-kicker">Intern</p><h1 class="hero-title">Mythos-Queue</h1><p class="hero-subtitle">Ungeprüfte Claims werden intern triagiert und nicht öffentlich verstärkt.</p></div></section><section class="section"><div><div class="card-grid two"><article class="card"><h2>Triage-Regeln</h2><ul class="clean-list"><li>Nicht automatisch veröffentlichen</li><li>Duplikate ab Score 0,82 zusammenführen</li><li>Menschenabwertung intern markieren</li><li>Persönliche Daten entfernen</li><li>Screenshots nicht öffentlich ohne Rechteprüfung</li></ul></article><article class="card"><h2>Seed-Matching</h2><ul class="clean-list"><li>matchSeedClaim(report.claim)</li><li>publicDisplay=false</li><li>never_public_raw</li><li>minderheitenschutz = humanTopicReview</li><li>elitenverschwoerung = conspiracyReview</li></ul></article><article class="card"><h2>Priorisierung</h2><ul class="clean-list"><li>Häufigkeit</li><li>gesellschaftliches Risiko</li><li>P0-Themenbezug</li><li>demokratiegefährdende Narrative</li><li>bestehende Quellenlage</li></ul></article></div></div></section>`;
   return shell({ title: "Mythos-Queue", description: "Internes Triage-Dashboard für gemeldete Wirkungsradar-Claims.", canonical: `${SITE_URL}/admin/wirkungsradar/mythos-queue/`, base: "../../../", main, extraHead: `<meta name="robots" content="noindex">` });
 }
 
@@ -455,7 +467,13 @@ function writeApis() {
     write(OUT("api/wirkungsradar/distribution", card.slug, "index.html"), `<pre>${esc(JSON.stringify(pack, null, 2))}</pre>`);
     write(OUT("api/wirkungsradar/embed", `${card.slug}.json`), JSON.stringify({ ...card, embed: pack.platformAssets.embed }, null, 2));
   }
-  write(OUT("api/wirkungsradar/report-myth/index.html"), `<pre>${esc(JSON.stringify({ status: "static_site_mailto_fallback", rateLimit: "planned_server_side", honeypot: "website", publicDisplay: false }, null, 2))}</pre>`);
+  write(OUT("api/wirkungsradar/report-myth/index.html"), `<pre>${esc(JSON.stringify({
+    status: "static_site_mailto_fallback",
+    rateLimit: "planned_server_side",
+    honeypot: "website",
+    publicDisplay: false,
+    seedMatching: seedTriagePolicy,
+  }, null, 2))}</pre>`);
 }
 
 function mythCta(href = "mythos-melden/") {
