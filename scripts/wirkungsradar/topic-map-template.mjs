@@ -1,6 +1,6 @@
 const UPDATED_AT = "2026-06-04";
 
-function topicCard({ kicker, title, seeds, narratives, psychology, ctaHref, ctaLabel = "Cluster öffnen" }) {
+function topicCard({ kicker, title, checked, seeds, narratives, psychology, ctaHref, ctaLabel = "Cluster öffnen" }) {
   const checkedItems = checked.map((item) => `<li>${item.href ? `<a href="${item.href}">${item.label}</a>` : item.label}</li>`).join("");
   const seedItems = seeds.map((item) => `<li>${item}</li>`).join("");
   const cta = ctaHref
@@ -9,7 +9,7 @@ function topicCard({ kicker, title, seeds, narratives, psychology, ctaHref, ctaL
   return `<article class="radar-topic-card">
               <p class="card-kicker">${kicker}</p>
               <h3>${title}</h3>
-              <div class="radar-topic-columns"><div><h4>Geprüfte Grundlage</h4><ul>${checkedItems}</ul></div><div><h4>In Vorbereitung</h4><ul>${seedItems}</ul></div></div>
+              <div class="radar-topic-columns"><div><h4>Grundlage im Umbau</h4><ul>${checkedItems}</ul></div><div><h4>In Vorbereitung</h4><ul>${seedItems}</ul></div></div>
               <p><strong>Narrative:</strong> ${narratives}</p><p><strong>Psychologie:</strong> ${psychology}</p>${cta}
             </article>`;
 }

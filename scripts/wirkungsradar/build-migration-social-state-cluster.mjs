@@ -553,7 +553,7 @@ const workSdgMapping = [
 ];
 
 const workClaimIndex = [
-  ["„Arbeit lohnt sich nicht mehr?“", "draft_missing_positive_example", "Wahrer Frust- und Lohnabstandskern, falsches Faulheitsnarrativ.", "Faulheitsnarrativ, Wer arbeitet ist der Dumme, Sozialneid gegen unten, Totalverweigerer-Frame, Lohnproblem als Sozialstaatsproblem", "Relative Deprivation, Zero-Sum Bias, Fundamentaler Attributionsfehler, Statusbedrohung, Sündenbockmechanismus", "../../live/arbeit-lohnt-sich-nicht-mehr/"],
+  ["„Arbeit lohnt sich nicht mehr?“", "v2-Prüfung läuft", "Wahrer Frust- und Lohnabstandskern, falsches Faulheitsnarrativ.", "Faulheitsnarrativ, Wer arbeitet ist der Dumme, Sozialneid gegen unten, Totalverweigerer-Frame, Lohnproblem als Sozialstaatsproblem", "Relative Deprivation, Zero-Sum Bias, Fundamentaler Attributionsfehler, Statusbedrohung, Sündenbockmechanismus", "../../live/arbeit-lohnt-sich-nicht-mehr/"],
   ["„Bürgergeld macht faul“", "subclaim", "Abwertungsframe: Einzelfälle werden zum Gruppenurteil.", "Faulheitsnarrativ, Armut als Charakterfehler", "Fundamentaler Attributionsfehler, moralische Emotion", "../../live/arbeit-lohnt-sich-nicht-mehr/#buergergeld-macht-faul"],
   ["„Wer arbeitet, ist der Dumme“", "subclaim", "Wahrer Anerkennungskern, falsches Gegeneinander.", "Wer arbeitet ist der Dumme, Sozialneid gegen unten", "Relative Deprivation, Statusbedrohung", "../../live/arbeit-lohnt-sich-nicht-mehr/#wer-arbeitet-ist-der-dumme"],
   ["„Totalverweigerer leben auf unsere Kosten“", "subclaim", "Empirisch kleiner Kern, politisch stark überhöhter Frame.", "Totalverweigerer-Frame, Extremfall als Systembeweis", "Verfügbarkeitsheuristik, Empörungsheuristik", "../../live/arbeit-lohnt-sich-nicht-mehr/#totalverweigerer"],

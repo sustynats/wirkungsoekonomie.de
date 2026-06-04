@@ -2494,7 +2494,7 @@ const deepDiveDetails = {
     trueText: "Schlecht gestaltete Transformation kann Industrie belasten. Nicht-Transformation ist aber ebenfalls ein Standort- und Kostenrisiko.",
     missingItems: ["CAPEX/OPEX-Unterschiede", "fossile Systemkosten", "neue Transformationscluster", "Netze, Speicher und Standortnähe", "Batterien, Halbleiter, Rechenzentren, E-Lkw und Ladeinfrastruktur"],
     evidence: {
-      status: "draft_missing_positive_example",
+      status: "v2-Prüfung läuft",
       level: "mittel bis hoch",
       uncertainty: "Projektstatus, Industriepreise, Förderungen, Netzausbau und Investitionsentscheidungen müssen laufend aktualisiert werden.",
       sourceKeys: ["industry_transformation_v1"],

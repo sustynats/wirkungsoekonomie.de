@@ -22,7 +22,7 @@ const dossier = {
   title: "Schulden machen oder sparen?",
   subtitle: "Warum die richtige Frage nicht Schuldenhöhe, sondern Wirkungsbilanz ist.",
   judgement: "Wahrer Stabilitätskern, falsche Haushaltsanalogie.",
-  status: "draft_missing_positive_example",
+  status: "v2-Prüfung läuft",
   abstract: "Die Aussage „Der Steuerzahler muss die Schulden zurückzahlen“ ist als Privatkredit-Bild irreführend. Bürger:innen bekommen keine Rechnung über die gesamte Staatsschuld. Staaten refinanzieren fällige Anleihen in der Regel durch neue Anleihen. Der relevante Unterschied liegt nicht zwischen Schulden und keinen Schulden, sondern zwischen produktiver Staatsverschuldung und wirkungsarmer Verschuldung. Produktive Schulden finanzieren Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Sicherheit, Netze, Schienen, Gesundheit und Zukunftsfähigkeit. Wirkungsarme Schulden finanzieren Blindleistung, politische Geschenke, Dauerlöcher oder reine Konsumausgaben ohne positive Netto-Wirkung. Die Schwarze Null kann wirtschaftsfeindlich wirken, wenn sie notwendige Investitionen verhindert und Unterlassungskosten erzeugt.",
   note: "Staatsschulden funktionieren nicht wie private Schulden. Fällige Anleihen werden häufig refinanziert; belastend werden Schulden vor allem dann, wenn sie keine Wirkung erzeugen, Zinslasten steigen oder Vertrauen verloren geht.",
   principle: "Nicht der Schuldenstand allein entscheidet, sondern die Wirkung der finanzierten Zukunft.",
