@@ -59,15 +59,16 @@
             </ul>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#zuletzt-gelesen">Weiterlesen</a>
-            <a class="btn btn-secondary" href="#gemerkte-inhalte">Gemerkte Inhalte ansehen</a>
+            <a class="btn btn-primary" href="#gemerkte-inhalte">Gemerkte Inhalte ansehen</a>
             <a class="btn btn-secondary" href="#sammlungen">Sammlungen</a>
-            <a class="btn btn-secondary" href="#lernliste">Lernliste</a>
             <a class="btn btn-secondary" href="#notizen">Notizen</a>
-            <a class="btn btn-secondary" href="#wissensnetz">Wissensnetz</a>
-            <a class="btn btn-secondary" href="#datenkontrolle">Datenkontrolle</a>
+            <a class="btn btn-secondary" href="#zuletzt-gelesen">Weiterlesen</a>
             <a class="btn btn-secondary" href="#neue-inhalte">Neue Inhalte</a>
+            <a class="btn btn-secondary" href="#verwandte-inhalte">Wissensnetz</a>
             <a class="btn btn-secondary" href="#naechste-schritte">Nächste Schritte</a>
+            <a class="btn btn-secondary" href="#lernliste">Lernliste</a>
+            <a class="btn btn-secondary" href="#akademie-fortschritt">Akademie</a>
+            <a class="btn btn-secondary" href="#datenkontrolle">Datenkontrolle</a>
             <a class="btn btn-secondary" href="../suche.html">Inhalte suchen</a>
           </div>
         </div>
@@ -84,108 +85,6 @@
             <article class="card"><p class="card-kicker">Lernliste</p><strong data-stat-learning>0</strong><span>aktive Lerninhalte</span></article>
             <article class="card"><p class="card-kicker">Akademie</p><strong data-stat-academy>0</strong><span>Module mit Fortschritt</span></article>
             <article class="card"><p class="card-kicker">Sammlungen</p><strong data-stat-collections>0</strong><span>thematische Bündel</span></article>
-          </div>
-          <div class="wirkungsraum-data-control" id="datenkontrolle" aria-labelledby="datenkontrolle-title">
-            <div class="section-header">
-              <p class="hero-kicker">Datenspeicherung &amp; Synchronisation</p>
-              <h2 id="datenkontrolle-title">Auf anderem Gerät nutzen</h2>
-              <p>Mein Wirkungsraum ist nur in deinem Browser gespeichert. Ohne Login werden keine persönlichen Daten an den Server übertragen. Du kannst ihn per privatem Wiederherstellungslink, JSON-Datei oder lokaler Löschung selbst kontrollieren.</p>
-              <p>Die Datenstruktur enthält bereits optionale Sync-Felder für eine spätere Konto-Anbindung. Registrierung, Login und Server-Speicherung sind nicht aktiv.</p>
-            </div>
-            <div class="wirkungsraum-sync-card" aria-labelledby="wiederherstellungslink-title">
-              <div>
-                <p class="card-kicker">Privater Wiederherstellungslink</p>
-                <h3 id="wiederherstellungslink-title">Persönlichen Wirkungsraum-Link erstellen</h3>
-                <p>Mit diesem privaten Link kannst du deinen Wirkungsraum auf einem anderen Gerät wiederherstellen. Wer den Link hat, kann deine gespeicherten Inhalte laden. Speichere ihn deshalb sicher.</p>
-              </div>
-              <div class="wirkungsraum-data-toolbar">
-                <label class="wirkungsraum-import-mode">
-                  <span>Ablaufdatum</span>
-                  <select data-recovery-expiry>
-                    <option value="7">7 Tage</option>
-                    <option value="30" selected>30 Tage</option>
-                    <option value="none">ohne Ablauf</option>
-                  </select>
-                </label>
-                <label class="wirkungsraum-check">
-                  <input type="checkbox" data-recovery-include-notes>
-                  <span>Persönliche Notizen in den Wiederherstellungslink aufnehmen</span>
-                </label>
-                <button class="btn btn-secondary" type="button" data-show-local-data>Lokale Daten anzeigen</button>
-                <button class="btn btn-primary" type="button" data-create-recovery-link>Privaten Wiederherstellungslink erstellen</button>
-              </div>
-              <div class="wirkungsraum-recovery-result" data-recovery-result hidden>
-                <label class="wirkungsraum-link-output">
-                  <span>Privater Link</span>
-                  <input type="text" readonly data-recovery-link-output>
-                </label>
-                <div class="wirkungsraum-data-toolbar">
-                  <button class="btn btn-secondary" type="button" data-copy-recovery-link>Link kopieren</button>
-                  <button class="btn btn-secondary" type="button" data-toggle-recovery-qr>QR-Code anzeigen</button>
-                  <a class="btn btn-secondary" href="#" data-recovery-email>per E-Mail öffnen</a>
-                  <button class="btn btn-secondary" type="button" data-export-recovery-file>als Datei exportieren</button>
-                </div>
-                <div class="wirkungsraum-qr-panel" data-recovery-qr-panel hidden>
-                  <div class="wirkungsraum-qr-code" data-recovery-qr></div>
-                  <p>Der QR-Code wird lokal in deinem Browser erzeugt. Bei sehr langen Links nutze besser „Link kopieren“ oder die JSON-Datei.</p>
-                </div>
-              </div>
-            </div>
-            <div class="wirkungsraum-recovery-import" data-recovery-import-panel hidden>
-              <p class="card-kicker">Privaten Link öffnen</p>
-              <h3>Diesen Wirkungsraum auf diesem Gerät übernehmen?</h3>
-              <p data-recovery-import-summary>Ein Wiederherstellungslink wurde erkannt. Entscheide selbst, ob du ihn mit deinen lokalen Daten zusammenführst oder deine lokalen Daten ersetzt.</p>
-              <div class="wirkungsraum-data-toolbar">
-                <button class="btn btn-primary" type="button" data-recovery-import-mode="merge">Zusammenführen</button>
-                <button class="btn btn-secondary" type="button" data-recovery-import-mode="replace">Lokale Daten ersetzen</button>
-                <button class="btn btn-secondary" type="button" data-recovery-import-cancel>Abbrechen</button>
-              </div>
-            </div>
-            <div class="wirkungsraum-sync-card">
-              <p class="card-kicker">Backup ohne Link</p>
-              <h3>Wirkungsraum als JSON sichern</h3>
-              <p>Nutze Export und Import als Backup, wenn du keinen privaten Link verwenden möchtest.</p>
-            <div class="wirkungsraum-data-toolbar">
-              <button class="btn btn-primary" type="button" data-export-wirkungsraum>JSON exportieren</button>
-              <label class="wirkungsraum-import-mode">
-                <span>Importmodus</span>
-                <select data-import-wirkungsraum-mode>
-                  <option value="merge">mit bestehenden Daten zusammenführen</option>
-                  <option value="replace">lokale Daten durch Import ersetzen</option>
-                </select>
-              </label>
-              <button class="btn btn-secondary" type="button" data-import-wirkungsraum-trigger>JSON importieren</button>
-              <input class="sr-only" type="file" accept="application/json,.json" data-import-wirkungsraum-file>
-              <a class="btn btn-secondary" href="../datenschutz.html#mein-wirkungsraum">Datenschutzhinweis lesen</a>
-            </div>
-            </div>
-            <div class="wirkungsraum-sync-card">
-              <p class="card-kicker">Optionales Konto</p>
-              <h3>Mit Akademie/Discord verbinden</h3>
-              <p>Eine Konto-Verbindung ist vorbereitet, aber noch nicht aktiv. Mein Wirkungsraum funktioniert vollständig ohne Login.</p>
-              <button class="btn btn-secondary" type="button" disabled>Verbindung noch nicht verfügbar</button>
-            </div>
-            <div class="wirkungsraum-reset-row" aria-label="Lokale Wirkungsraum-Daten löschen">
-              <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="saved_items">Merkliste löschen</button>
-              <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="reading_progress">Fortschritt löschen</button>
-              <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="collections">Sammlungen löschen</button>
-              <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="notes">Notizen löschen</button>
-              <button class="btn btn-danger" type="button" data-reset-wirkungsraum-all>Alle lokalen Daten löschen</button>
-            </div>
-            <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Keine Datenübertragung an den Server. Export, Import und private Wiederherstellungslinks laufen ausschließlich in deinem Browser. Synchronisation ist technisch vorbereitet, aber ausgeschaltet.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-soft" id="zuletzt-gelesen">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Weiterlesen</p>
-            <h2>Zuletzt gelesen</h2>
-            <p>Referenzkapitel, Buchkapitel, Online-Dokumente, Dossiers und Akademie-Module speichern ihren Lesestand lokal. ○ heißt ungelesen, ◐ begonnen, ● gelesen.</p>
-          </div>
-          <div class="wirkungsraum-list" data-reading-list>
-            <article class="card"><p class="card-text">Noch kein Lesefortschritt. Öffne ein Referenzkapitel, Buchkapitel, Dokument, Dossier oder Akademie-Modul.</p></article>
           </div>
         </div>
       </section>
@@ -245,6 +144,71 @@
         </div>
       </section>
 
+      <section class="section section-soft" id="notizen">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Notizen</p>
+            <h2>Meine Notizen</h2>
+            <p>Eigene Gedanken zu Inhalten bleiben ausschließlich in diesem Browser. Sie werden nicht hochgeladen und nicht serverseitig verarbeitet.</p>
+          </div>
+          <div class="wirkungsraum-list" data-notes-list>
+            <article class="card"><p class="card-text">Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="zuletzt-gelesen">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Weiterlesen</p>
+            <h2>Zuletzt gelesen</h2>
+            <p>Referenzkapitel, Buchkapitel, Online-Dokumente, Dossiers und Akademie-Module speichern ihren Lesestand lokal. ○ heißt ungelesen, ◐ begonnen, ● gelesen.</p>
+          </div>
+          <div class="wirkungsraum-list" data-reading-list>
+            <article class="card"><p class="card-text">Noch kein Lesefortschritt. Öffne ein Referenzkapitel, Buchkapitel, Dokument, Dossier oder Akademie-Modul.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="neue-inhalte">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Seit letztem Besuch</p>
+            <h2>Neue Inhalte seit letztem Besuch</h2>
+            <p data-last-visit-note>Beim nächsten Besuch zeigt dieser Bereich, wann dein Wirkungsraum zuletzt geöffnet wurde.</p>
+          </div>
+          <div class="wirkungsraum-list" data-new-content-list>
+            <article class="card"><p class="card-text">Neue Inhalte werden geladen.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="verwandte-inhalte">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Wissensnetz</p>
+            <h2>Verwandte Inhalte zu deinen gemerkten Themen</h2>
+            <p>Aus deinen gemerkten Begriffen, Kapiteln, Dokumenten, Werkzeugen, Debatten und Akademie-Modulen entsteht lokal eine einfache Wissensstruktur. Die Karten zeigen zunächst passende Anschlüsse statt einer komplexen Grafik.</p>
+          </div>
+          <div class="wirkungsraum-list wirkungsraum-related-list" data-related-content-list>
+            <article class="card"><p class="card-text">Merke zuerst Inhalte. Danach zeigt dir das Wissensnetz verwandte Begriffe, Kapitel, Dokumente, Werkzeuge, Debatten und Akademie-Module.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="naechste-schritte">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Orientierung</p>
+            <h2>Empfohlene nächste Schritte</h2>
+            <p>Die Vorschläge bleiben ruhig und arbeitsbezogen: weiterlesen, merken, sammeln, lernen oder Notizen ergänzen.</p>
+          </div>
+          <div class="wirkungsraum-list" data-next-steps>
+            <article class="card"><p class="card-text">Nächste Schritte werden aus deinem lokalen Arbeitsstand abgeleitet.</p></article>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-soft" id="lernliste">
         <div>
           <div class="section-header">
@@ -261,7 +225,7 @@
       <section class="section section-soft" id="akademie-fortschritt">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Akademie-Fortschritt</p>
+            <p class="hero-kicker">Akademie-Bereich</p>
             <h2>Akademie-Fortschritt</h2>
             <p>Die Teile des Grundstudiums werden aus deiner Lernliste und deinem lokalen Lesefortschritt zusammengeführt.</p>
           </div>
@@ -285,55 +249,95 @@
         </div>
       </section>
 
-      <section class="section section-soft" id="notizen">
-        <div>
+      <section class="section section-soft" id="datenkontrolle">
+        <div class="wirkungsraum-data-control" aria-labelledby="datenkontrolle-title">
           <div class="section-header">
-            <p class="hero-kicker">Notizen</p>
-            <h2>Meine Notizen</h2>
-            <p>Eigene Gedanken zu Inhalten bleiben ausschließlich in diesem Browser. Sie werden nicht hochgeladen und nicht serverseitig verarbeitet.</p>
+            <p class="hero-kicker">Datenspeicherung &amp; Synchronisation</p>
+            <h2 id="datenkontrolle-title">Auf anderem Gerät nutzen</h2>
+            <p>Mein Wirkungsraum ist nur in deinem Browser gespeichert. Ohne Login werden keine persönlichen Daten an den Server übertragen. Du kannst ihn per privatem Wiederherstellungslink, JSON-Datei oder lokaler Löschung selbst kontrollieren.</p>
+            <p>Die Datenstruktur enthält bereits optionale Sync-Felder für eine spätere Konto-Anbindung. Registrierung, Login und Server-Speicherung sind nicht aktiv.</p>
           </div>
-          <div class="wirkungsraum-list" data-notes-list>
-            <article class="card"><p class="card-text">Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.</p></article>
+          <div class="wirkungsraum-sync-card" aria-labelledby="wiederherstellungslink-title">
+            <div>
+              <p class="card-kicker">Privater Wiederherstellungslink</p>
+              <h3 id="wiederherstellungslink-title">Persönlichen Wirkungsraum-Link erstellen</h3>
+              <p>Mit diesem privaten Link kannst du deinen Wirkungsraum auf einem anderen Gerät wiederherstellen. Wer den Link hat, kann deine gespeicherten Inhalte laden. Speichere ihn deshalb sicher.</p>
+            </div>
+            <div class="wirkungsraum-data-toolbar">
+              <label class="wirkungsraum-import-mode">
+                <span>Ablaufdatum</span>
+                <select data-recovery-expiry>
+                  <option value="7">7 Tage</option>
+                  <option value="30" selected>30 Tage</option>
+                  <option value="none">ohne Ablauf</option>
+                </select>
+              </label>
+              <label class="wirkungsraum-check">
+                <input type="checkbox" data-recovery-include-notes>
+                <span>Persönliche Notizen in den Wiederherstellungslink aufnehmen</span>
+              </label>
+              <button class="btn btn-secondary" type="button" data-show-local-data>Lokale Daten anzeigen</button>
+              <button class="btn btn-primary" type="button" data-create-recovery-link>Privaten Wiederherstellungslink erstellen</button>
+            </div>
+            <div class="wirkungsraum-recovery-result" data-recovery-result hidden>
+              <label class="wirkungsraum-link-output">
+                <span>Privater Link</span>
+                <input type="text" readonly data-recovery-link-output>
+              </label>
+              <div class="wirkungsraum-data-toolbar">
+                <button class="btn btn-secondary" type="button" data-copy-recovery-link>Link kopieren</button>
+                <button class="btn btn-secondary" type="button" data-toggle-recovery-qr>QR-Code anzeigen</button>
+                <a class="btn btn-secondary" href="#" data-recovery-email>per E-Mail öffnen</a>
+                <button class="btn btn-secondary" type="button" data-export-recovery-file>als Datei exportieren</button>
+              </div>
+              <div class="wirkungsraum-qr-panel" data-recovery-qr-panel hidden>
+                <div class="wirkungsraum-qr-code" data-recovery-qr></div>
+                <p>Der QR-Code wird lokal in deinem Browser erzeugt. Bei sehr langen Links nutze besser „Link kopieren“ oder die JSON-Datei.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section section-soft" id="verwandte-inhalte">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Wissensnetz</p>
-            <h2>Verwandte Inhalte zu deinen gemerkten Themen</h2>
-            <p>Aus deinen gemerkten Begriffen, Kapiteln, Dokumenten, Werkzeugen, Debatten und Akademie-Modulen entsteht lokal eine einfache Wissensstruktur. Die Karten zeigen zunächst passende Anschlüsse statt einer komplexen Grafik.</p>
+          <div class="wirkungsraum-recovery-import" data-recovery-import-panel hidden>
+            <p class="card-kicker">Privaten Link öffnen</p>
+            <h3>Diesen Wirkungsraum auf diesem Gerät übernehmen?</h3>
+            <p data-recovery-import-summary>Ein Wiederherstellungslink wurde erkannt. Entscheide selbst, ob du ihn mit deinen lokalen Daten zusammenführst oder deine lokalen Daten ersetzt.</p>
+            <div class="wirkungsraum-data-toolbar">
+              <button class="btn btn-primary" type="button" data-recovery-import-mode="merge">Zusammenführen</button>
+              <button class="btn btn-secondary" type="button" data-recovery-import-mode="replace">Lokale Daten ersetzen</button>
+              <button class="btn btn-secondary" type="button" data-recovery-import-cancel>Abbrechen</button>
+            </div>
           </div>
-          <div class="wirkungsraum-list wirkungsraum-related-list" data-related-content-list>
-            <article class="card"><p class="card-text">Merke zuerst Inhalte. Danach zeigt dir das Wissensnetz verwandte Begriffe, Kapitel, Dokumente, Werkzeuge, Debatten und Akademie-Module.</p></article>
+          <div class="wirkungsraum-sync-card">
+            <p class="card-kicker">Backup ohne Link</p>
+            <h3>Wirkungsraum als JSON sichern</h3>
+            <p>Nutze Export und Import als Backup, wenn du keinen privaten Link verwenden möchtest.</p>
+            <div class="wirkungsraum-data-toolbar">
+              <button class="btn btn-primary" type="button" data-export-wirkungsraum>JSON exportieren</button>
+              <label class="wirkungsraum-import-mode">
+                <span>Importmodus</span>
+                <select data-import-wirkungsraum-mode>
+                  <option value="merge">mit bestehenden Daten zusammenführen</option>
+                  <option value="replace">lokale Daten durch Import ersetzen</option>
+                </select>
+              </label>
+              <button class="btn btn-secondary" type="button" data-import-wirkungsraum-trigger>JSON importieren</button>
+              <input class="sr-only" type="file" accept="application/json,.json" data-import-wirkungsraum-file>
+              <a class="btn btn-secondary" href="../datenschutz.html#mein-wirkungsraum">Datenschutzhinweis lesen</a>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section section-soft" id="neue-inhalte">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Seit letztem Besuch</p>
-            <h2>Neue Inhalte seit letztem Besuch</h2>
-            <p data-last-visit-note>Beim nächsten Besuch zeigt dieser Bereich, wann dein Wirkungsraum zuletzt geöffnet wurde.</p>
+          <div class="wirkungsraum-sync-card">
+            <p class="card-kicker">Optionales Konto</p>
+            <h3>Mit Akademie/Discord verbinden</h3>
+            <p>Eine Konto-Verbindung ist vorbereitet, aber noch nicht aktiv. Mein Wirkungsraum funktioniert vollständig ohne Login.</p>
+            <button class="btn btn-secondary" type="button" disabled>Verbindung noch nicht verfügbar</button>
           </div>
-          <div class="wirkungsraum-list" data-new-content-list>
-            <article class="card"><p class="card-text">Neue Inhalte werden geladen.</p></article>
+          <div class="wirkungsraum-reset-row" aria-label="Lokale Wirkungsraum-Daten löschen">
+            <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="saved_items">Merkliste löschen</button>
+            <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="reading_progress">Fortschritt löschen</button>
+            <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="collections">Sammlungen löschen</button>
+            <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="notes">Notizen löschen</button>
+            <button class="btn btn-danger" type="button" data-reset-wirkungsraum-all>Alle lokalen Daten löschen</button>
           </div>
-        </div>
-      </section>
-
-      <section class="section section-soft" id="naechste-schritte">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Orientierung</p>
-            <h2>Empfohlene nächste Schritte</h2>
-            <p>Die Vorschläge bleiben ruhig und arbeitsbezogen: weiterlesen, merken, sammeln, lernen oder Notizen ergänzen.</p>
-          </div>
-          <div class="wirkungsraum-list" data-next-steps>
-            <article class="card"><p class="card-text">Nächste Schritte werden aus deinem lokalen Arbeitsstand abgeleitet.</p></article>
-          </div>
+          <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Keine Datenübertragung an den Server. Export, Import und private Wiederherstellungslinks laufen ausschließlich in deinem Browser. Synchronisation ist technisch vorbereitet, aber ausgeschaltet.</p>
         </div>
       </section>
     </main>
