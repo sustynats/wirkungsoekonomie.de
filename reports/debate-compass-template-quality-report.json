@@ -1,16 +1,16 @@
 {
   "version": "20260605-debate-compass-template",
-  "generatedAt": "2026-06-05T00:34:34.186Z",
+  "generatedAt": "2026-06-05T02:46:42.159Z",
   "rule": "Eine Aussage = eine kanonische Seite. Debattenseiten folgen dem DebateCompassPageTemplate.",
   "counts": {
     "totalRadarPages": 454,
     "debatePages": 79,
-    "A": 22,
-    "B": 57,
+    "A": 20,
+    "B": 59,
     "C": 0,
     "D": 0,
     "canonicalNarratives": 80,
-    "duplicates": 4934,
+    "duplicates": 232,
     "merged": 99,
     "synonyms": 36,
     "redirects": 99
@@ -1853,7 +1853,19 @@
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
       "title": "Unser Steuergeld geht in die Ukraine?",
       "slug": "ukraine-unterstuetzung-steuergeld",
-      "tags": [],
+      "tags": [
+        "Debatte",
+        "Aufmerksamkeit",
+        "Politik",
+        "Investitionen",
+        "Medien",
+        "Infrastruktur",
+        "Vertrauen",
+        "Zukunft",
+        "Faktenlage",
+        "Lösung",
+        "Wirkungspfad"
+      ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/"
     },
@@ -4147,10 +4159,10 @@
       "anchors": true,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/die-da-oben/",
@@ -4814,10 +4826,10 @@
       "anchors": true,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
@@ -5308,7 +5320,19 @@
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
       "title": "Unser Steuergeld geht in die Ukraine?",
       "slug": "ukraine-unterstuetzung-steuergeld",
-      "tags": [],
+      "tags": [
+        "Debatte",
+        "Aufmerksamkeit",
+        "Politik",
+        "Investitionen",
+        "Medien",
+        "Infrastruktur",
+        "Vertrauen",
+        "Zukunft",
+        "Faktenlage",
+        "Lösung",
+        "Wirkungspfad"
+      ],
       "canonicalTarget": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
       "template": "DebateCompassPageTemplate",
       "duplicatesRemoved": true,
@@ -5637,6 +5661,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/die-boesen-reichen/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/e-fuels-retten-den-verbrenner/",
       "quality": "B",
       "missingSources": true,
@@ -5827,6 +5860,15 @@
     },
     {
       "url": "/wirkungsradar/live/laden-dauert-viel-zu-lange/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
       "quality": "B",
       "missingSources": true,
       "missingOrders": false,

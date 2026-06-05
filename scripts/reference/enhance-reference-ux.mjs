@@ -237,7 +237,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage2"></script>
+  return `<script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage3"></script>
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 

@@ -8,7 +8,7 @@ const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-ei
 const FORM_ROUTE = path.join(ROOT, "wirkungsradar/narrativ-einreichen");
 const PROCESS_ROUTE = path.join(ROOT, "wirkungsradar/pruefprozess");
 const CSS_VERSION = "20260604-debate-answer-top";
-const JS_VERSION = "20260605-wirkungsraum-stage2";
+const JS_VERSION = "20260605-wirkungsraum-stage3";
 
 function write(file, text) {
   fs.mkdirSync(path.dirname(file), { recursive: true });

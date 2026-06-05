@@ -126,6 +126,59 @@
   outline: none;
 }
 
+.wirkungsraum-hub-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  width: min(var(--container), calc(100% - (2 * var(--space-gutter))));
+  margin: 0 auto var(--space-5);
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(23, 79, 56, 0.18);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  background: rgba(255, 252, 245, 0.94);
+  box-shadow: 0 12px 34px rgba(11, 16, 32, 0.06);
+}
+
+.wirkungsraum-hub-filter .filter-chip {
+  border: 1px solid rgba(23, 79, 56, 0.24);
+  border-radius: 999px;
+  padding: 0.6rem 0.95rem;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.wirkungsraum-hub-filter .filter-chip:hover,
+.wirkungsraum-hub-filter .filter-chip:focus-visible,
+.wirkungsraum-hub-filter .filter-chip.active,
+.wirkungsraum-hub-filter .filter-chip[aria-pressed="true"] {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--white);
+  outline: none;
+}
+
+.wirkungsraum-hub-filter-count {
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 850;
+}
+
+.wirkungsraum-hub-empty {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+[data-wirkungsraum-filter-hidden="true"] {
+  display: none !important;
+}
+
 .wirkungsraum-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

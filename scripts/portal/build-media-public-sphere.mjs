@@ -463,7 +463,7 @@ ${renderHeader(base)}
 ${body(base, canonical)}
     </main>
 ${renderFooter(base)}
-    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage2"></script>
+    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage3"></script>
   </body>
 </html>`);
 }

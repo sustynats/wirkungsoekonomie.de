@@ -137,7 +137,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
       <p class="print-meta">Wirkungsökonomie · ${esc(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: ${DATE}</p>
 ${body(b)}
     </main>
-    <script src="${b}assets/js/main.js?v=20260605-wirkungsraum-stage2"></script>
+    <script src="${b}assets/js/main.js?v=20260605-wirkungsraum-stage3"></script>
   </body>
 </html>`);
 }

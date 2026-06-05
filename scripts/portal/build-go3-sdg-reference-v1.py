@@ -400,7 +400,7 @@ def page_template(doc: dict, body: str) -> str:
     <footer class="site-footer">
       <p>© Wirkungsökonomie · Online-Volltext ist Hauptzugang, Downloads sind Export und Archiv.</p>
     </footer>
-    <script src="{base}assets/js/main.js?v=20260605-wirkungsraum-stage2" defer></script>
+    <script src="{base}assets/js/main.js?v=20260605-wirkungsraum-stage3" defer></script>
   </body>
 </html>
 """

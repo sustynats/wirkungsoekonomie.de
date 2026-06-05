@@ -281,7 +281,7 @@ ${renderHeader(depth)}
 ${body}
     </main>
 ${renderFooter(depth)}
-    <script src="${depth}assets/js/main.js?v=20260605-wirkungsraum-stage2"></script>
+    <script src="${depth}assets/js/main.js?v=20260605-wirkungsraum-stage3"></script>
   </body>
 </html>
 `.replace(/[ \t]+$/gm, "");

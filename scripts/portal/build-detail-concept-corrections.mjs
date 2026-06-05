@@ -392,7 +392,7 @@ function page({ rel, title, description, section, type, body }) {
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage2"></script>
+    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage3"></script>
   </body>
 </html>
 `);

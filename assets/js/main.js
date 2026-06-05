@@ -4220,6 +4220,202 @@ const WirkungsraumLayer = (() => {
     drawReadingDashboard(root);
   }
 
+  function comparablePath(value) {
+    try {
+      const url = new URL(value || "/", window.location.origin);
+      if (url.origin !== window.location.origin) return "";
+      const path = url.pathname.replace(/\/index\.html$/, "/");
+      return path.length > 1 ? path.replace(/\/$/, "") : path;
+    } catch {
+      return "";
+    }
+  }
+
+  function savedPathSet() {
+    const paths = new Set();
+    savedItems().forEach((item) => {
+      [item.url, item.href].forEach((value) => {
+        const path = comparablePath(value);
+        if (path) paths.add(path);
+      });
+    });
+    return paths;
+  }
+
+  function hubFilterConfig(path = window.location.pathname) {
+    const normalized = path.replace(/\/index\.html$/, "/");
+    if (normalized === "/begriffe/" || normalized === "/glossar/" || normalized === "/glossar.html") {
+      return {
+        kind: "glossar",
+        label: "Nur gemerkte Begriffe anzeigen",
+        countLabel: "gemerkte Begriffe",
+        empty: "In diesem Browser sind noch keine Begriffe gemerkt."
+      };
+    }
+    if (normalized === "/suche/" || normalized === "/suche.html") {
+      return {
+        kind: "suche",
+        label: "Nur meine gemerkten Inhalte",
+        countLabel: "gemerkte Treffer",
+        empty: "Zu dieser Suche sind keine gemerkten Inhalte sichtbar."
+      };
+    }
+    if (
+      normalized === "/bibliothek/" ||
+      normalized === "/downloads/" ||
+      normalized === "/downloads.html" ||
+      normalized === "/werkstatt/arbeitsbibliothek/"
+    ) {
+      return { kind: "bibliothek", label: "Nur gemerkt", countLabel: "gemerkte Inhalte", empty: "In diesem Verzeichnis ist noch nichts gemerkt." };
+    }
+    if (normalized === "/referenz/" || normalized === "/buch/" || normalized === "/buch.html") {
+      return { kind: "referenz", label: "Nur gemerkt", countLabel: "gemerkte Kapitel", empty: "In diesem Referenzverzeichnis ist noch nichts gemerkt." };
+    }
+    if (
+      normalized === "/wirkungsradar/" ||
+      normalized === "/wirkungsradar/live/" ||
+      normalized === "/wirkungsradar/debattenkarten/" ||
+      normalized === "/wirkungsradar/antwort-playbooks/" ||
+      normalized === "/wirkungsradar/narrative/" ||
+      normalized === "/wirkungsradar/themen/"
+    ) {
+      return { kind: "debatten", label: "Nur gemerkt", countLabel: "gemerkte Debatten", empty: "Im Debatten-Kompass ist noch keine Seite gemerkt." };
+    }
+    if (normalized === "/werkzeuge/" || normalized === "/tools/" || normalized === "/methoden/" || normalized === "/methodik/") {
+      return { kind: "werkzeuge", label: "Nur gemerkt", countLabel: "gemerkte Werkzeuge", empty: "In Methoden & Werkzeugen ist noch nichts gemerkt." };
+    }
+    if (normalized === "/akademie/" || normalized === "/akademie.html") {
+      return { kind: "akademie", label: "Nur gemerkt", countLabel: "gemerkte Akademie-Inhalte", empty: "In der Akademie ist noch nichts gemerkt." };
+    }
+    return null;
+  }
+
+  const hubCandidateSelector = [
+    "[data-radar-card]",
+    "[data-glossary-card]",
+    "[data-document-card]",
+    "[data-tool-card]",
+    "[data-wirkungsraum-card]",
+    "[data-search-results] .search-result-card",
+    ".card-grid > article",
+    ".card-grid > a",
+    ".document-card-grid > article",
+    ".document-card-grid > a",
+    ".reference-card-grid > article",
+    ".reference-card-grid > a",
+    ".chapter-card-grid > article",
+    ".chapter-card-grid > a",
+    "article.glossary-result-card",
+    "article.card",
+    "a.card"
+  ].join(",");
+
+  function localContentLinks(element) {
+    const links = [];
+    if (element instanceof HTMLAnchorElement) links.push(element);
+    element.querySelectorAll("a[href]").forEach((link) => {
+      if (link instanceof HTMLAnchorElement) links.push(link);
+    });
+    return links.filter((link, index, list) => {
+      if (list.indexOf(link) !== index) return false;
+      if (link.closest("[data-search-exclude], .breadcrumb, .site-nav, .footer, .footer-nav, .footer-legal-nav, .glossary-card, .glossary-sheet, .glossary-term, .tool-term-tooltip")) return false;
+      const href = link.getAttribute("href") || "";
+      if (!href || href.startsWith("#") || /^(mailto|tel|javascript):/i.test(href)) return false;
+      return Boolean(comparablePath(link.href));
+    });
+  }
+
+  function hubCandidates(root) {
+    const candidates = Array.from(root.querySelectorAll(hubCandidateSelector)).filter((element) => {
+      if (!(element instanceof HTMLElement)) return false;
+      if (element.closest("[data-wirkungsraum-hub-filter], [data-search-exclude], header, footer, nav, .breadcrumb")) return false;
+      return localContentLinks(element).length > 0;
+    });
+    return Array.from(new Set(candidates));
+  }
+
+  function candidateIsSaved(element, savedPaths) {
+    return localContentLinks(element).some((link) => savedPaths.has(comparablePath(link.href)));
+  }
+
+  function insertHubFilter(root, config, control) {
+    if (config.kind === "suche") {
+      const target = root.querySelector(".search-quick-filter-panel") || root.querySelector(".search-box");
+      if (target) {
+        target.insertAdjacentElement("afterend", control);
+        return;
+      }
+    }
+    const hero = root.querySelector(".hero, .radar-hero, .page-hero, .wirkungsraum-hero");
+    if (hero) {
+      hero.insertAdjacentElement("afterend", control);
+      return;
+    }
+    const firstSection = root.querySelector(".section, .content-band, .search-shell");
+    root.insertBefore(control, firstSection || root.firstChild);
+  }
+
+  function initSavedOnlyHubFilters() {
+    const config = hubFilterConfig();
+    if (!config) return;
+    const root = document.querySelector("main");
+    if (!root || document.querySelector("[data-wirkungsraum-hub-filter]")) return;
+
+    const control = document.createElement("section");
+    control.className = `wirkungsraum-hub-filter wirkungsraum-hub-filter-${config.kind}`;
+    control.dataset.wirkungsraumHubFilter = config.kind;
+    control.dataset.searchExclude = "true";
+    control.innerHTML = `
+      <button class="filter-chip" type="button" aria-pressed="false" data-wirkungsraum-saved-only>${escapeHtml(config.label)}</button>
+      <span class="wirkungsraum-hub-filter-count" data-wirkungsraum-hub-filter-count></span>
+      <p class="wirkungsraum-hub-empty" data-wirkungsraum-hub-empty hidden>${escapeHtml(config.empty)}</p>
+    `;
+    insertHubFilter(root, config, control);
+
+    const button = control.querySelector("[data-wirkungsraum-saved-only]");
+    const count = control.querySelector("[data-wirkungsraum-hub-filter-count]");
+    const empty = control.querySelector("[data-wirkungsraum-hub-empty]");
+    if (!(button instanceof HTMLButtonElement)) return;
+
+    const apply = () => {
+      const active = button.getAttribute("aria-pressed") === "true";
+      const paths = savedPathSet();
+      const candidates = hubCandidates(root);
+      let savedCount = 0;
+
+      candidates.forEach((candidate) => {
+        const saved = candidateIsSaved(candidate, paths);
+        if (saved) savedCount += 1;
+        if (active && !saved) candidate.dataset.wirkungsraumFilterHidden = "true";
+        else delete candidate.dataset.wirkungsraumFilterHidden;
+      });
+
+      button.classList.toggle("active", active);
+      if (count) {
+        count.textContent = active
+          ? `${savedCount} von ${candidates.length} sichtbar`
+          : `${savedCount} ${config.countLabel}`;
+      }
+      if (empty instanceof HTMLElement) empty.hidden = !(active && savedCount === 0);
+    };
+
+    button.addEventListener("click", () => {
+      const active = button.getAttribute("aria-pressed") !== "true";
+      button.setAttribute("aria-pressed", String(active));
+      apply();
+    });
+
+    let pending = 0;
+    const observer = new MutationObserver(() => {
+      window.clearTimeout(pending);
+      pending = window.setTimeout(apply, 80);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    document.addEventListener("wirkungsraum:changed", apply);
+    window.setTimeout(apply, 50);
+    window.setTimeout(apply, 500);
+  }
+
   function initGlossaryLearningFilter() {
     const path = window.location.pathname;
     if (!/\/begriffe\/|\/glossar/.test(path)) return;
@@ -4287,7 +4483,7 @@ const WirkungsraumLayer = (() => {
     restoreReadingPosition();
     trackReadingProgress();
     renderDashboard();
-    initGlossaryLearningFilter();
+    initSavedOnlyHubFilters();
     decorateProgressLinks();
     document.addEventListener("wirkungsraum:changed", () => {
       renderDashboard();

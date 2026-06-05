@@ -1,17 +1,17 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-05T00:34:34.186Z
+Stand: 2026-06-05T02:46:42.159Z
 
 | Kennzahl | Wert |
 |---|---:|
 | Wirkungsradar-Seiten gesamt | 454 |
 | Debattenseiten vereinheitlicht | 79 |
-| Qualitätsstufe A | 22 |
-| Qualitätsstufe B | 57 |
+| Qualitätsstufe A | 20 |
+| Qualitätsstufe B | 59 |
 | Qualitätsstufe C | 0 |
 | Qualitätsstufe D | 0 |
 | Kanonische Narrative | 80 |
-| Dubletten / Kandidaten | 4934 |
+| Dubletten / Kandidaten | 232 |
 | Zusammengeführt | 99 |
 | Synonyme | 36 |
 | Redirects | 99 |
@@ -36,7 +36,7 @@ Stand: 2026-06-05T00:34:34.186Z
 | /wirkungsradar/live/datenschutz-verhindert-innovation/ | B | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/deutschland-nur-zwei-prozent/ | B | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/die-bauern-werden-geopfert/ | B | ja | ja | ja | ja | ja | ja |
-| /wirkungsradar/live/die-boesen-reichen/ | A | ja | ja | ja | ja | ja | ja |
+| /wirkungsradar/live/die-boesen-reichen/ | B | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/die-da-oben/ | A | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/die-wissenschaft-ist-gekauft/ | A | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/e-autos-schlimmer-als-verbrenner/ | A | ja | ja | ja | ja | ja | ja |
@@ -66,7 +66,7 @@ Stand: 2026-06-05T00:34:34.186Z
 | /wirkungsradar/live/kriminalitaet-und-migration/ | B | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/kultur-gender-luxusprojekte/ | B | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/laden-dauert-viel-zu-lange/ | B | ja | ja | ja | ja | ja | ja |
-| /wirkungsradar/live/leistungstraeger-werden-ausgepresst/ | A | ja | ja | ja | ja | ja | ja |
+| /wirkungsradar/live/leistungstraeger-werden-ausgepresst/ | B | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/mainstreammedien-luegen-alle/ | A | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/ | A | ja | ja | ja | ja | ja | ja |
 | /wirkungsradar/live/man-wird-doch-wohl-fragen-duerfen/ | A | ja | ja | ja | ja | ja | ja |
