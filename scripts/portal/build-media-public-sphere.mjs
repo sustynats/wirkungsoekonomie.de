@@ -454,7 +454,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage6">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage7">
   </head>
   <body>
 ${renderHeader(base)}
@@ -463,7 +463,7 @@ ${renderHeader(base)}
 ${body(base, canonical)}
     </main>
 ${renderFooter(base)}
-    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage6"></script>
+    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage7"></script>
   </body>
 </html>`);
 }

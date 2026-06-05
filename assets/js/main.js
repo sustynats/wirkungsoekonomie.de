@@ -3932,6 +3932,418 @@ const WirkungsraumLayer = (() => {
     return Array.isArray(items) ? items : [];
   }
 
+  const knowledgeGraphConfig = {
+    nodeTypes: ["Begriff", "Kapitel", "Dokument", "Werkzeug", "Debatte", "Akademie-Modul"],
+    relationTypes: ["erklärt", "vertieft", "verwendet", "gehört zu", "baut auf", "widerspricht", "ergänzt"],
+    searchIndexUrl: "/assets/search/search-index.json",
+    relationshipManifestUrl: "/public/data/relationship-manifest.json",
+    maxSources: 24,
+    maxRelatedCards: 12
+  };
+
+  const graphStopWords = new Set([
+    "und",
+    "oder",
+    "der",
+    "die",
+    "das",
+    "ein",
+    "eine",
+    "einer",
+    "eines",
+    "mit",
+    "fuer",
+    "für",
+    "von",
+    "zur",
+    "zum",
+    "auf",
+    "als",
+    "wie",
+    "was",
+    "warum",
+    "wird",
+    "sind",
+    "ist",
+    "seite",
+    "inhalt",
+    "online",
+    "wirkungsradar",
+    "wirkungsoekonomie",
+    "wirkungsökonomie",
+    "woek",
+    "wök"
+  ]);
+
+  let knowledgeCatalogPromise = null;
+  let relatedRenderRun = 0;
+
+  function toArray(value) {
+    if (Array.isArray(value)) return value;
+    if (value === null || typeof value === "undefined") return [];
+    return [value];
+  }
+
+  function cleanText(value) {
+    return String(value || "").replace(/\s+/g, " ").trim();
+  }
+
+  function uniqueStrings(values, limit = 24) {
+    const seen = new Set();
+    const result = [];
+    values.flatMap(toArray).forEach((value) => {
+      const text = cleanText(typeof value === "object" ? value?.label || value?.title || value?.name || value?.id || value?.slug || "" : value);
+      if (!text) return;
+      const key = text.toLowerCase();
+      if (seen.has(key)) return;
+      seen.add(key);
+      result.push(text);
+    });
+    return result.slice(0, limit);
+  }
+
+  function graphSlug(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/&/g, " und ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
+  function graphPath(value) {
+    try {
+      const raw = String(value || "").trim();
+      if (!raw) return "";
+      const url = new URL(raw, window.location.origin);
+      if (url.origin !== window.location.origin) return "";
+      const path = url.pathname.replace(/\/index\.html$/, "/");
+      return path.length > 1 ? path.replace(/\/$/, "") : path;
+    } catch {
+      return "";
+    }
+  }
+
+  function isKnowledgeHubPath(path) {
+    const normalized = graphPath(path);
+    return [
+      "/",
+      "/akademie",
+      "/begriffe",
+      "/bibliothek",
+      "/mein-wirkungsraum",
+      "/referenz",
+      "/suche",
+      "/werkzeuge",
+      "/wirkungsradar",
+      "/wirkungsradar/detail",
+      "/wirkungsradar/live",
+      "/wirkungsradar/narrative",
+      "/wirkungsradar/themen"
+    ].includes(normalized);
+  }
+
+  function graphTokens(values, limit = 36) {
+    const tokens = new Set();
+    values.flatMap(toArray).forEach((value) => {
+      cleanText(typeof value === "object" ? value?.label || value?.title || value?.name || value?.id || value?.slug || "" : value)
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .split(/[^a-z0-9äöüß]+/i)
+        .map((part) => part.trim())
+        .filter((part) => part.length >= 3 && !graphStopWords.has(part))
+        .forEach((part) => tokens.add(part));
+    });
+    return Array.from(tokens).slice(0, limit);
+  }
+
+  function nodeTypeFromEntry(entry = {}) {
+    const text = [entry.type, entry.section, entry.url, entry.format].join(" ").toLowerCase();
+    if (text.includes("begriff") || text.includes("glossar")) return "Begriff";
+    if (text.includes("referenz") || text.includes("kapitel") || text.includes("/buch")) return "Kapitel";
+    if (text.includes("werkzeug") || text.includes("tool") || text.includes("scanner") || text.includes("rechner")) return "Werkzeug";
+    if (text.includes("wirkungsradar") || text.includes("debatten-kompass") || text.includes("/wirkungsradar/")) return "Debatte";
+    if (text.includes("akademie")) return "Akademie-Modul";
+    return "Dokument";
+  }
+
+  function knowledgeNodeFromEntry(entry = {}) {
+    const url = graphPath(entry.url);
+    if (!url || !entry.title || isKnowledgeHubPath(url)) return null;
+    const type = nodeTypeFromEntry(entry);
+    const tags = uniqueStrings([entry.tags, entry.aliases, entry.standards, entry.instruments, entry.impactSpaces, entry.section], 18);
+    const id = entry.id || url.replace(/^\/+/, "") || graphSlug(entry.title);
+    return {
+      id,
+      type,
+      title: cleanText(entry.title),
+      url,
+      category: cleanText(entry.section || entry.category || type),
+      description: cleanText(entry.description || "").slice(0, 220),
+      tags,
+      priority: Number(entry.priority || 0),
+      slug: graphSlug(url.split("/").filter(Boolean).pop() || entry.title),
+      titleSlug: graphSlug(entry.title),
+      tokens: graphTokens([entry.title, entry.description, tags, entry.type, entry.section, entry.format], 42)
+    };
+  }
+
+  function knowledgeNodeFromUserItem(item = {}) {
+    const url = graphPath(item.url || "/");
+    const type = knowledgeGraphConfig.nodeTypes.includes(item.type) ? item.type : nodeTypeFromEntry(item);
+    const tags = uniqueStrings([item.tags, item.category, item.type], 18);
+    return {
+      id: item.id || url.replace(/^\/+/, "") || graphSlug(item.title),
+      type,
+      title: cleanText(item.title || "Gemerkter Inhalt"),
+      url,
+      category: cleanText(item.category || type),
+      description: cleanText(item.description || ""),
+      tags,
+      priority: 0,
+      slug: graphSlug((url || "").split("/").filter(Boolean).pop() || item.title),
+      titleSlug: graphSlug(item.title),
+      tokens: graphTokens([item.title, item.category, item.type, tags], 42)
+    };
+  }
+
+  async function fetchJson(path, fallback) {
+    try {
+      const response = await fetch(new URL(path, window.location.origin).href, { credentials: "same-origin" });
+      if (!response.ok) return fallback;
+      return await response.json();
+    } catch {
+      return fallback;
+    }
+  }
+
+  async function knowledgeCatalog() {
+    if (!knowledgeCatalogPromise) {
+      knowledgeCatalogPromise = Promise.all([
+        fetchJson(knowledgeGraphConfig.searchIndexUrl, []),
+        fetchJson(knowledgeGraphConfig.relationshipManifestUrl, { relationships: {} })
+      ]).then(([searchIndex, relationshipManifest]) => {
+        const nodes = Array.isArray(searchIndex) ? searchIndex.map(knowledgeNodeFromEntry).filter(Boolean) : [];
+        const byPath = new Map();
+        const byId = new Map();
+        const bySlug = new Map();
+        const tokenIndex = new Map();
+        nodes.forEach((node) => {
+          if (!byPath.has(node.url)) byPath.set(node.url, node);
+          if (node.id && !byId.has(node.id)) byId.set(node.id, node);
+          [node.slug, node.titleSlug, graphSlug(node.id)].filter(Boolean).forEach((slug) => {
+            if (!bySlug.has(slug)) bySlug.set(slug, node);
+          });
+          node.tokens.slice(0, 32).forEach((token) => {
+            const bucket = tokenIndex.get(token) || [];
+            if (bucket.length < 80) bucket.push(node);
+            tokenIndex.set(token, bucket);
+          });
+        });
+        return {
+          generatedAt: new Date().toISOString(),
+          nodeTypes: knowledgeGraphConfig.nodeTypes,
+          relationTypes: knowledgeGraphConfig.relationTypes,
+          nodes,
+          byPath,
+          byId,
+          bySlug,
+          tokenIndex,
+          relationships: relationshipManifest?.relationships || {}
+        };
+      });
+    }
+    return knowledgeCatalogPromise;
+  }
+
+  function relationTargetLabel(value) {
+    const label = value && typeof value === "object" ? cleanText(value.label || value.title || value.name || value.id || value.slug || value.href) : cleanText(value);
+    return label === "[object Object]" ? "" : label;
+  }
+
+  function relationTargetHref(value) {
+    if (value && typeof value === "object") return value.href || value.url || "";
+    const text = cleanText(value);
+    if (text.startsWith("/") || text.startsWith("http")) return text;
+    return "";
+  }
+
+  function resolveKnowledgeTarget(catalog, value, fallbackType = "Dokument") {
+    const href = relationTargetHref(value);
+    const label = relationTargetLabel(value);
+    const hrefPath = graphPath(href);
+    if (!hrefPath && !label) return null;
+    if (hrefPath && isKnowledgeHubPath(hrefPath)) return null;
+    if (hrefPath && catalog.byPath.has(hrefPath)) return catalog.byPath.get(hrefPath);
+    const slug = graphSlug(label);
+    const direct = catalog.byId.get(label) || catalog.bySlug.get(slug);
+    if (direct) return direct;
+    if (hrefPath) {
+      return {
+        id: hrefPath.replace(/^\/+/, ""),
+        type: fallbackType,
+        title: label || hrefPath.split("/").filter(Boolean).pop(),
+        url: hrefPath,
+        category: fallbackType,
+        description: "",
+        tags: [],
+        priority: 0,
+        slug: graphSlug(hrefPath.split("/").filter(Boolean).pop() || label),
+        titleSlug: graphSlug(label),
+        tokens: graphTokens([label, fallbackType])
+      };
+    }
+    if (fallbackType === "Begriff" && slug) {
+      return catalog.byPath.get(`/begriffe/${slug}`) || {
+        id: `begriff-${slug}`,
+        type: "Begriff",
+        title: label,
+        url: `/begriffe/${slug}/`,
+        category: "Begriffe",
+        description: "",
+        tags: [],
+        priority: 0,
+        slug,
+        titleSlug: slug,
+        tokens: graphTokens([label, "Begriff"])
+      };
+    }
+    return null;
+  }
+
+  function relationForTarget(source, target, preferred = "") {
+    if (knowledgeGraphConfig.relationTypes.includes(preferred)) return preferred;
+    if (target.type === "Begriff") return "erklärt";
+    if (target.type === "Kapitel" || target.type === "Dokument") return "vertieft";
+    if (target.type === "Werkzeug") return "verwendet";
+    if (target.type === "Akademie-Modul") return "baut auf";
+    if (source.category && target.category && source.category === target.category) return "gehört zu";
+    const text = `${target.title} ${target.category}`.toLowerCase();
+    if (/(gegen|kritik|widerspruch|problem|risiko)/.test(text)) return "widerspricht";
+    return "ergänzt";
+  }
+
+  function addKnowledgeCandidate(map, source, target, relation, score, reason) {
+    if (!target?.url || source.url === target.url) return;
+    const key = target.url;
+    const existing = map.get(key);
+    const nextScore = Number(score || 0);
+    if (existing && existing.score >= nextScore) return;
+    map.set(key, {
+      ...target,
+      relation: relationForTarget(source, target, relation),
+      sourceTitle: source.title,
+      sourceType: source.type,
+      score: nextScore,
+      reason: cleanText(reason)
+    });
+  }
+
+  function relationshipSlugsForSource(source) {
+    return uniqueStrings([source.slug, source.titleSlug, source.tags.map(graphSlug), source.tokens], 18)
+      .map(graphSlug)
+      .filter(Boolean);
+  }
+
+  function addExplicitKnowledgeCandidates(catalog, source, candidates) {
+    relationshipSlugsForSource(source).forEach((slug) => {
+      const relations = catalog.relationships[slug];
+      if (!relations) return;
+      toArray(relations.terms)
+        .slice(0, 10)
+        .forEach((target) => {
+          const node = resolveKnowledgeTarget(catalog, target, "Begriff");
+          addKnowledgeCandidate(candidates, source, node, "erklärt", 90, "Begriff aus dem Wissensnetz");
+        });
+      toArray(relations.documents)
+        .slice(0, 8)
+        .forEach((target) => {
+          const node = resolveKnowledgeTarget(catalog, target, "Dokument");
+          addKnowledgeCandidate(candidates, source, node, "vertieft", 82, "Dokument vertieft das gemerkte Thema");
+        });
+      toArray(relations.tools)
+        .slice(0, 6)
+        .forEach((target) => {
+          const node = resolveKnowledgeTarget(catalog, target, "Werkzeug");
+          addKnowledgeCandidate(candidates, source, node, "verwendet", 78, "Werkzeug wendet das Thema an");
+        });
+      toArray(relations.methods)
+        .slice(0, 6)
+        .forEach((target) => {
+          const node = resolveKnowledgeTarget(catalog, target, "Werkzeug");
+          addKnowledgeCandidate(candidates, source, node, "verwendet", 74, "Methode passt zum gemerkten Thema");
+        });
+      toArray(relations.academyModules)
+        .slice(0, 4)
+        .forEach((target) => {
+          const node = resolveKnowledgeTarget(catalog, target, "Akademie-Modul");
+          addKnowledgeCandidate(candidates, source, node, "baut auf", 72, "Lernmodul baut auf dem Thema auf");
+        });
+      toArray(relations.impactFields)
+        .slice(0, 6)
+        .forEach((target) => {
+          const node = resolveKnowledgeTarget(catalog, target, "Dokument");
+          addKnowledgeCandidate(candidates, source, node, "gehört zu", 68, "Gehört zum selben Wirkungsfeld");
+        });
+    });
+  }
+
+  function addTokenKnowledgeCandidates(catalog, source, candidates, savedPaths) {
+    const touched = new Set();
+    source.tokens.slice(0, 18).forEach((token) => {
+      (catalog.tokenIndex.get(token) || []).forEach((node) => {
+        if (touched.has(node.url) || savedPaths.has(node.url)) return;
+        touched.add(node.url);
+        const shared = node.tokens.filter((candidateToken) => source.tokens.includes(candidateToken)).slice(0, 5);
+        if (!shared.length) return;
+        const categoryBoost = source.category && node.category && source.category === node.category ? 10 : 0;
+        const typeBoost = source.type !== node.type ? 6 : 0;
+        const score = 28 + shared.length * 7 + categoryBoost + typeBoost + Math.min(12, node.priority / 12);
+        const reason = shared.length ? `Gemeinsame Begriffe: ${shared.slice(0, 3).join(", ")}` : "Thematische Nähe";
+        addKnowledgeCandidate(candidates, source, node, "", score, reason);
+      });
+    });
+  }
+
+  async function relatedKnowledgeForSaved(saved) {
+    const catalog = await knowledgeCatalog();
+    const savedPaths = new Set(saved.map((item) => graphPath(item.url)).filter(Boolean));
+    const sources = saved.slice(0, knowledgeGraphConfig.maxSources).map(knowledgeNodeFromUserItem);
+    const candidates = new Map();
+    sources.forEach((source) => {
+      addExplicitKnowledgeCandidates(catalog, source, candidates);
+      addTokenKnowledgeCandidates(catalog, source, candidates, savedPaths);
+    });
+    const sorted = Array.from(candidates.values())
+      .filter((item) => !savedPaths.has(item.url))
+      .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, "de"));
+    const balanced = [];
+    const typeCounts = new Map();
+    sorted.forEach((item) => {
+      if (balanced.length >= knowledgeGraphConfig.maxRelatedCards) return;
+      const count = typeCounts.get(item.type) || 0;
+      if (count >= 4 && sorted.length > knowledgeGraphConfig.maxRelatedCards) return;
+      balanced.push(item);
+      typeCounts.set(item.type, count + 1);
+    });
+    return {
+      graph: {
+        nodeTypes: knowledgeGraphConfig.nodeTypes,
+        relationTypes: knowledgeGraphConfig.relationTypes,
+        nodes: [...sources, ...balanced],
+        edges: balanced.map((target) => ({
+          from: graphSlug(target.sourceTitle),
+          to: target.id,
+          relation: target.relation
+        }))
+      },
+      related: balanced
+    };
+  }
+
   function notes() {
     const items = WoekUserSpace.getItems("notes");
     return Array.isArray(items)
@@ -4709,6 +5121,66 @@ const WirkungsraumLayer = (() => {
     updateFilterButtons(root);
   }
 
+  function relatedKnowledgeCard(item) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-related-card";
+    const tags = uniqueStrings([item.category, item.tags], 4);
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")} · ${escapeHtml(item.relation || "ergänzt")}</p>
+      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      ${item.description ? `<p class="card-text">${escapeHtml(item.description)}</p>` : ""}
+      <p class="wirkungsraum-knowledge-path">
+        <span>${escapeHtml(item.sourceTitle || "Gemerkter Inhalt")}</span>
+        <span>${escapeHtml(item.relation || "ergänzt")}</span>
+        <span>${escapeHtml(item.title || "Inhalt")}</span>
+      </p>
+      ${item.reason ? `<p class="wirkungsraum-meta">${escapeHtml(item.reason)}</p>` : ""}
+      ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Inhalt öffnen</a>
+      </p>
+    `;
+    return article;
+  }
+
+  function renderRelatedKnowledgeList(container, items, emptyText) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">${escapeHtml(emptyText)}</p>`;
+      container.append(empty);
+      return;
+    }
+    items.forEach((item) => container.append(relatedKnowledgeCard(item)));
+  }
+
+  function drawRelatedDashboard(root) {
+    const container = root.querySelector("[data-related-content-list]");
+    if (!container) return;
+    const saved = savedItems();
+    if (!saved.length) {
+      renderRelatedKnowledgeList(container, [], "Merke zuerst Begriffe, Kapitel, Dokumente, Werkzeuge oder Debatten. Danach zeigt dir das Wissensnetz passende Anschlüsse.");
+      root.dataset.knowledgeGraphNodes = "0";
+      root.dataset.knowledgeGraphEdges = "0";
+      return;
+    }
+    const run = ++relatedRenderRun;
+    container.innerHTML = `<article class="card"><p class="card-text">Wissensnetz wird aus deinen gemerkten Inhalten aufgebaut.</p></article>`;
+    relatedKnowledgeForSaved(saved)
+      .then(({ graph, related }) => {
+        if (run !== relatedRenderRun) return;
+        root.dataset.knowledgeGraphNodes = String(graph.nodes.length);
+        root.dataset.knowledgeGraphEdges = String(graph.edges.length);
+        renderRelatedKnowledgeList(container, related, "Noch keine belastbaren Verknüpfungen gefunden. Merke weitere Inhalte aus Glossar, Referenz, Werkzeugen oder Debatten.");
+      })
+      .catch(() => {
+        if (run !== relatedRenderRun) return;
+        renderRelatedKnowledgeList(container, [], "Das Wissensnetz konnte gerade nicht geladen werden. Deine gemerkten Inhalte bleiben unverändert lokal gespeichert.");
+      });
+  }
+
   function drawReadingDashboard(root) {
     const reading = readingProgressItems();
     const readingList = root.querySelector("[data-reading-list]");
@@ -5061,6 +5533,7 @@ const WirkungsraumLayer = (() => {
         if (remove instanceof HTMLButtonElement) {
           removeItem(remove.dataset.removeSaved || "");
           drawSavedDashboard(root);
+          drawRelatedDashboard(root);
           return;
         }
         const removeLearning = event.target instanceof HTMLElement ? event.target.closest("[data-remove-learning]") : null;
@@ -5090,6 +5563,7 @@ const WirkungsraumLayer = (() => {
           clearCollectionItemIds();
           drawSavedDashboard(root);
           drawCollectionsDashboard(root);
+          drawRelatedDashboard(root);
           return;
         }
         const templateButton = event.target instanceof HTMLElement ? event.target.closest("[data-collection-template]") : null;
@@ -5141,6 +5615,7 @@ const WirkungsraumLayer = (() => {
 
     drawSavedDashboard(root);
     drawReadingDashboard(root);
+    drawRelatedDashboard(root);
     drawCollectionsDashboard(root);
     drawLearningDashboard(root);
     drawNotesDashboard(root);

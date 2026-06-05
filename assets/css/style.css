@@ -116,6 +116,33 @@
   gap: 0.65rem;
 }
 
+.wirkungsraum-related-card {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.wirkungsraum-knowledge-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.wirkungsraum-knowledge-path span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.wirkungsraum-knowledge-path span + span::before {
+  content: "→";
+  margin-right: 0.45rem;
+  color: var(--green);
+}
+
 .wirkungsraum-collection-panel {
   display: grid;
   gap: 1rem;
