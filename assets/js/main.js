@@ -4207,12 +4207,12 @@ const WoekUserSpace = (() => {
 
 const WirkungsraumLayer = (() => {
   const relevantPathPattern =
-    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
   const progressScopePattern =
     /\/(referenz|buch|dokumente|downloads|bibliothek|akademie|portale)\b|\/(buch|akademie|downloads)\.html$/;
   const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
   const noteScopePattern =
-    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
 
   function canonicalPath() {
     return window.location.pathname.replace(/\/index\.html$/, "/");
@@ -4235,6 +4235,22 @@ const WirkungsraumLayer = (() => {
     if (path.includes("/wirkungsfelder/")) return "Wirkungsfeld";
     if (path.includes("/blog") || path.includes("/journal")) return "Journal";
     return "Inhalt";
+  }
+
+  function hasPublicContentSurface() {
+    const main = document.querySelector("main");
+    if (!main || main.closest("[data-search-exclude]")) return false;
+    if (document.body?.dataset?.wirkungsraumExclude === "true") return false;
+    return Boolean(main.querySelector("h1"));
+  }
+
+  function isContentPath(path = window.location.pathname) {
+    if (excludedPathPattern.test(path)) return false;
+    if (relevantPathPattern.test(path)) return true;
+    if (!hasPublicContentSurface()) return false;
+    const normalized = path.replace(/\/index\.html$/, "/");
+    if (normalized === "/") return true;
+    return normalized.endsWith("/") || normalized.endsWith(".html");
   }
 
   function pageTags() {
@@ -4309,13 +4325,15 @@ const WirkungsraumLayer = (() => {
     row.className = "wirkungsraum-save-row";
     row.dataset.wirkungsraumActionsRow = "true";
 
-    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
+    const heroCopy = document.querySelector(
+      ".hero-copy, .radar-hero-copy, .term-hero__copy, .document-detail-hero, .portal-hero__copy, .section-header"
+    );
     if (heroCopy) {
       heroCopy.append(row);
       return { container: row, panelAfter: row };
     }
 
-    const hero = document.querySelector(".hero, .radar-hero, .page-hero, .document-detail-hero");
+    const hero = document.querySelector(".hero, .radar-hero, .page-hero, .term-hero, .compact-hero, .document-detail-hero, .portal-hero");
     if (hero) {
       hero.append(row);
       return { container: row, panelAfter: row };
@@ -5143,7 +5161,7 @@ const WirkungsraumLayer = (() => {
 
   function injectSaveButton() {
     const path = window.location.pathname;
-    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    if (!isContentPath(path)) return;
     if (document.querySelector("[data-wirkungsraum-save]")) return;
 
     const item = currentItem();
@@ -5212,7 +5230,7 @@ const WirkungsraumLayer = (() => {
 
   function injectCollectionButton() {
     const path = window.location.pathname;
-    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    if (!isContentPath(path)) return;
     if (document.querySelector("[data-wirkungsraum-collection-button]")) return;
 
     const item = currentItem();
@@ -5266,7 +5284,7 @@ const WirkungsraumLayer = (() => {
 
   function injectLearningButton() {
     const path = window.location.pathname;
-    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    if (!isContentPath(path)) return;
     if (document.querySelector("[data-wirkungsraum-learning-button]")) return;
 
     const item = currentItem();
@@ -5289,7 +5307,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function isNotePath(path = window.location.pathname) {
-    return noteScopePattern.test(path) && !excludedPathPattern.test(path);
+    return !excludedPathPattern.test(path) && (noteScopePattern.test(path) || isContentPath(path));
   }
 
   function injectNotePanel() {
@@ -5376,7 +5394,7 @@ const WirkungsraumLayer = (() => {
       }
     }
 
-    const hero = document.querySelector(".hero, .radar-hero, .page-hero, .wirkungsraum-hero");
+    const hero = document.querySelector(".hero, .radar-hero, .page-hero, .term-hero, .compact-hero, .document-detail-hero, .portal-hero, .wirkungsraum-hero");
     if (hero) {
       hero.insertAdjacentElement("afterend", panel);
       return;
@@ -7037,7 +7055,7 @@ const WirkungsraumLayer = (() => {
 
   function trackVisit() {
     const path = window.location.pathname;
-    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    if (!isContentPath(path)) return;
     WoekUserSpace.recordVisit(currentItem());
   }
 
