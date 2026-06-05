@@ -110,7 +110,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Werkzeug statt Textarchiv.</h2><p>Quellen, Glossar, Status und Feedback machen die Einordnung nachvollziehbar. Die Wirkungsradar-Methode liefert den Prüfprozess im Hintergrund.</p><p><a class="text-link" href="${base}wirkungsradar/methode/">Wirkungsradar-Methode</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="mailto:impact@wirkungsoekonomie.org?subject=Debatten-Kompass%20Feedback">Feedback</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
+    <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Werkzeug statt Textarchiv.</h2><p>Quellen, Glossar, Status und Feedback machen die Einordnung nachvollziehbar. Die Wirkungsradar-Methode liefert den Prüfprozess im Hintergrund.</p><p><a class="text-link" href="${base}wirkungsradar/methode/">Wirkungsradar-Methode</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${base}wirkungsradar/narrativ-einreichen/">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
     <script src="${base}assets/js/main.js?v=20260605-debate-tool-order"></script>
   </body>
 </html>`;

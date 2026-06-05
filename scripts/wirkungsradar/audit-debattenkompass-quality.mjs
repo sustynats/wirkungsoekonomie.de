@@ -41,6 +41,12 @@ const genericConsequencePatterns = [
   "Faktenlage Lösung Wirkungspfad",
   "Faktenlage Loesung Wirkungspfad",
   "Das Problem wirkt kleiner",
+  "Risiken für Teilhabe, Sicherheit, Alltag oder Vertrauen werden sichtbar gemacht",
+  "Ökologische Folgekosten und bessere Alternativen dürfen nicht aus der Rechnung fallen",
+  "Demokratische Entscheidung braucht klare Zuständigkeit, Quellen und Bilanzgrenzen",
+  "Menschen, Alltag, Arbeit, Teilhabe, Sicherheit oder Würde dürfen nicht auf den Frame reduziert werden",
+  "Ökologische Folgen, Ressourcen, Infrastruktur und Langfristwirkung müssen mitgezählt werden",
+  "Fakten, Folgen, Alternativen, Unterlassungskosten und bessere Lösung",
 ];
 
 const genericPsychologyPatterns = [
@@ -165,6 +171,43 @@ function extractSectionHtml(mainHtml, id) {
   const rest = mainHtml.slice(start + match[0].length);
   const next = rest.search(/<section\b/i);
   return next >= 0 ? mainHtml.slice(start, start + match[0].length + next) : mainHtml.slice(start);
+}
+
+function extractArticles(html) {
+  return [...String(html || "").matchAll(/<article\b[\s\S]*?<\/article>/gi)].map((match) => match[0]);
+}
+
+function extractConsequenceCards(row, mainHtml, mainText) {
+  const section = extractSectionHtml(mainHtml, "folgencheck");
+  if (!section) return [];
+  const claim =
+    matchText(mainHtml, /<p class="v2-claim-line">[\s\S]*?<strong>([\s\S]*?)<\/strong>/i) ||
+    row.title;
+  const normalizedClaim = normalizeForCompare(claim);
+  const claimTokens = new Set(normalizedClaim.split(/\s+/).filter((token) => token.length >= 5));
+  return extractArticles(section).filter((article) => /v3-order-card/i.test(article)).map((article, index) => {
+    const text = stripTags(article);
+    const normalized = normalizeForCompare(text);
+    const explicitPath = /Wirkungspfad|Wirkpfad|Wirkmechanismus|Narrativ:|Begründung:/i.test(text);
+    const hasNarrativeReference =
+      /Narrativ:/i.test(text) ||
+      (claimTokens.size > 0 && [...claimTokens].some((token) => normalized.includes(token)));
+    const genericHits = countMatches(text, genericConsequencePatterns);
+    const generic =
+      genericHits.length > 0 ||
+      (/^(Wahrnehmung|Entscheidung|Systempfad|Mensch|Planet|Demokratie)$/i.test(matchText(article, /<h3\b[^>]*>([\s\S]*?)<\/h3>/i)) && !explicitPath);
+    return {
+      url: row.url,
+      title: row.title,
+      card_index: index + 1,
+      card_title: matchText(article, /<(?:h3|p)\b[^>]*class=["'][^"']*(?:card-title|card-kicker|v2-badge)[^"']*["'][^>]*>([\s\S]*?)<\/(?:h3|p)>/i) || `Karte ${index + 1}`,
+      narrative_reference: hasNarrativeReference ? "ja" : "nein",
+      impact_path: explicitPath ? "ja" : "nein",
+      generic: generic ? "ja" : "nein",
+      pattern: genericHits.slice(0, 2).join("; "),
+      text_sample: text.slice(0, 240),
+    };
+  });
 }
 
 function matchText(html, regex, fallback = "") {
@@ -411,6 +454,10 @@ function initialFindings(row, mainHtml, mainText) {
   const placeholders = countMatches(mainText, placeholderPatterns);
   const psychHits = countMatches(mainText, genericPsychologyPatterns);
   const repeated = repeatedSnippets(mainHtml);
+  const consequenceCards = extractConsequenceCards(row, mainHtml, mainText);
+  const genericCards = consequenceCards.filter((card) => card.generic === "ja");
+  const cardsWithoutPath = consequenceCards.filter((card) => card.impact_path === "nein");
+  const cardsWithoutNarrative = consequenceCards.filter((card) => card.narrative_reference === "nein");
 
   if (knownReviewUrls.has(row.url)) {
     findings.push({
@@ -427,6 +474,33 @@ function initialFindings(row, mainHtml, mainText) {
       severity: 2,
       message: "Generische Folgeblöcke oder Standardformulierungen gefunden.",
       pattern: genericConsequences.slice(0, 3).join("; "),
+    });
+  }
+
+  if (genericCards.length) {
+    findings.push({
+      code: "generic_effect_card",
+      severity: 3,
+      message: "Wirkungskarte wirkt generisch oder ohne expliziten Narrativpfad.",
+      pattern: genericCards.slice(0, 3).map((card) => card.card_title).join("; "),
+    });
+  }
+
+  if (cardsWithoutPath.length) {
+    findings.push({
+      code: "effect_card_without_path",
+      severity: 2,
+      message: "Wirkungskarte ohne sichtbaren Wirkmechanismus/Wirkungspfad.",
+      pattern: cardsWithoutPath.slice(0, 3).map((card) => card.card_title).join("; "),
+    });
+  }
+
+  if (cardsWithoutNarrative.length) {
+    findings.push({
+      code: "effect_card_without_narrative",
+      severity: 2,
+      message: "Wirkungskarte ohne klaren Bezug zur konkreten Behauptung.",
+      pattern: cardsWithoutNarrative.slice(0, 3).map((card) => card.card_title).join("; "),
     });
   }
 
@@ -626,9 +700,11 @@ function inventoryRows() {
       concrete_finding: "",
       recommended_action: "",
       findings: [],
+      effect_cards: [],
       tokens: tokenizeForSimilarity(mainText),
       file: path.relative(root, file).replaceAll(path.sep, "/"),
     };
+    row.effect_cards = extractConsequenceCards(row, mainHtml, mainText);
     row.findings = initialFindings(row, mainHtml, mainText);
     rows.push(row);
   }
@@ -660,6 +736,7 @@ function inventoryRows() {
             pattern: "missing",
           },
         ],
+        effect_cards: [],
         tokens: new Set(),
         file: "",
       });
@@ -681,7 +758,7 @@ function inventoryRows() {
 }
 
 function publicRow(row) {
-  const { tokens, ...rest } = row;
+  const { tokens, effect_cards, ...rest } = row;
   return {
     ...rest,
     duplicate_suspicion: row.duplicate_suspicion.join("; ") || "nein",
@@ -707,6 +784,10 @@ function makeSummary(rows, duplicates) {
     generic_consequence_pages: countRows(rows, (row) => row.findings.some((finding) => finding.code === "generic_consequence")),
     psychology_overload_pages: countRows(rows, (row) => row.findings.some((finding) => ["generic_psychology", "psychology_overload"].includes(finding.code))),
     placeholder_pages: countRows(rows, (row) => row.findings.some((finding) => finding.code === "placeholder")),
+    effect_cards_checked: rows.reduce((sum, row) => sum + row.effect_cards.length, 0),
+    generic_effect_cards_remaining: rows.reduce((sum, row) => sum + row.effect_cards.filter((card) => card.generic === "ja").length, 0),
+    effect_cards_without_path: rows.reduce((sum, row) => sum + row.effect_cards.filter((card) => card.impact_path === "nein").length, 0),
+    effect_cards_without_narrative_reference: rows.reduce((sum, row) => sum + row.effect_cards.filter((card) => card.narrative_reference === "nein").length, 0),
   };
 }
 
@@ -763,6 +844,19 @@ function buildMarkdown(summary, rows, duplicates) {
   ]);
 
   const duplicateRows = duplicates.slice(0, 160).map((item) => [item.type, item.pattern, item.urls.join(", ")]);
+  const effectCardRows = sortedRows
+    .flatMap((row) => row.effect_cards)
+    .filter((card) => card.generic === "ja" || card.impact_path === "nein" || card.narrative_reference === "nein")
+    .slice(0, 220)
+    .map((card) => [
+      card.url,
+      card.title,
+      card.card_title,
+      card.narrative_reference,
+      card.impact_path,
+      card.generic,
+      card.pattern || card.text_sample,
+    ]);
 
   return [
     "# Debatten-Kompass Quality Audit",
@@ -784,6 +878,10 @@ function buildMarkdown(summary, rows, duplicates) {
         ["Seiten mit generischem Folgencheck", summary.generic_consequence_pages],
         ["Seiten mit Psychologie-Überladung", summary.psychology_overload_pages],
         ["Seiten mit Platzhalter", summary.placeholder_pages],
+        ["Geprüfte Wirkungskarten", summary.effect_cards_checked],
+        ["Generische Wirkungskarten verbleibend", summary.generic_effect_cards_remaining],
+        ["Wirkungskarten ohne Wirkpfad", summary.effect_cards_without_path],
+        ["Wirkungskarten ohne Narrativbezug", summary.effect_cards_without_narrative_reference],
       ]
     ),
     "",
@@ -807,6 +905,12 @@ function buildMarkdown(summary, rows, duplicates) {
       ? mdTable(["Typ", "Muster", "URLs"], duplicateRows)
       : "Keine Dubletten-Gruppen erkannt.",
     "",
+    "## Wirkungskarten-Audit",
+    "",
+    effectCardRows.length
+      ? mdTable(["URL", "Titel", "Kartentitel", "Narrativbezug vorhanden?", "Wirkpfad vorhanden?", "Generisch?", "Fundstelle / Textmuster"], effectCardRows)
+      : "Keine problematischen Wirkungskarten erkannt.",
+    "",
   ].join("\n");
 }
 
@@ -826,6 +930,7 @@ const output = {
   summary,
   inventory: publicRows,
   weak_pages: publicRows.filter((row) => ["B", "C", "D"].includes(row.quality_grade)),
+  effect_card_audit: rows.flatMap((row) => row.effect_cards),
   duplicates,
 };
 

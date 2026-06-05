@@ -1169,7 +1169,7 @@ ${main}
           <p class="hero-kicker">Wirkungsökonomie</p>
           <h2>Die neue Ordnung des Wohlstands</h2>
           <p>Website der Wirkungsökonomie: ein Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht.</p>
-          <p>Kontakt: <a class="text-link" href="mailto:impact@wirkungsoekonomie.org">impact@wirkungsoekonomie.org</a></p>
+          <p><a class="text-link" href="${base}wirkungsradar/narrativ-einreichen/">Narrativ zur Prüfung einreichen</a></p>
         </div>
         <a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a>
       </div>

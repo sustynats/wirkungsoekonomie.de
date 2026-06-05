@@ -246,24 +246,57 @@ function relevanceBlock({ claim, title, trueItems, missingItems, isSocial }) {
 }
 
 function consequenceBlock(section, claim, trueItems, missingItems) {
-  if (section && /Wirkung 1\. Ordnung/i.test(section) && /Mensch/i.test(section) && /Demokratie/i.test(section)) {
+  if (
+    section &&
+    /Wirkung 1\. Ordnung/i.test(section) &&
+    /Mensch/i.test(section) &&
+    /Demokratie/i.test(section) &&
+    /<strong>Narrativ:<\/strong>/i.test(section) &&
+    /<strong>Wirkmechanismus:<\/strong>/i.test(section) &&
+    /<strong>Wirkungspfad:<\/strong>/i.test(section) &&
+    /<strong>Begründung:<\/strong>/i.test(section)
+  ) {
     return section
       .replace(/<section\b[^>]*>/i, '<section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check>')
       .replace(/<h2>[^<]*<\/h2>/i, "<h2>Folgencheck: Was dieses Narrativ bewirkt</h2>");
   }
   const trueText = trueItems[0] || "Ein berechtigter Punkt wird sichtbar.";
   const missingText = missingItems[0] || "Die Bilanzgrenze wird verengt.";
+  const claimText = claim || "diese Aussage";
   const rows = [
-    ["Wirkung 1. Ordnung", "Wahrnehmung", `Die Debatte springt auf den Satz „${claim}“ und sortiert das Thema durch ein schnelles Bild.`],
-    ["Wirkung 2. Ordnung", "Entscheidung", `${missingText} Dadurch wirken schlechtere oder zu enge Entscheidungen plausibler.`],
-    ["Wirkung 3. Ordnung", "Systempfad", "Wenn der Frame gewinnt, werden Alternativen, Unterlassungskosten und Rückkopplungen dauerhaft schlechter sichtbar."],
+    {
+      badge: "Wirkung 1. Ordnung",
+      title: "Wahrnehmung",
+      text: `Die Debatte springt auf den Satz „${claimText}“ und macht ${trueText.replace(/\.$/, "")} zur ersten Sortierung.`,
+      mechanism: "Ein wahrer oder emotional plausibler Teil wird als Gesamtdeutung gesetzt.",
+      path: `Auslöser: ${claimText}`,
+      reason: "Die Wirkung ist direkt aus der Behauptung ableitbar, weil sie bestimmt, worauf die Aufmerksamkeit zuerst fällt.",
+    },
+    {
+      badge: "Wirkung 2. Ordnung",
+      title: "Entscheidung",
+      text: `${missingText} Dadurch werden Entscheidungen wahrscheinlicher, die diesen fehlenden Teil nicht mitprüfen.`,
+      mechanism: "Die Bilanzgrenze wird enger als der reale Wirkungsraum.",
+      path: `Wirkmechanismus: ${missingText}`,
+      reason: "Die zweite Wirkung entsteht, wenn die verengte Bilanzgrenze in politische oder persönliche Entscheidungen übernommen wird.",
+    },
+    {
+      badge: "Wirkung 3. Ordnung",
+      title: "Systempfad",
+      text: `Wenn „${claimText}“ dominiert, werden Alternativen, Unterlassungskosten und Rückkopplungen dieses Falls dauerhaft schlechter sichtbar.`,
+      mechanism: "Wiederholung stabilisiert den verkürzten Frame.",
+      path: "Rückkopplung: schlechtere Entscheidungen bestätigen später scheinbar die ursprüngliche Behauptung.",
+      reason: "Die Langfristwirkung folgt aus dem Lock-in der Debatte, nicht aus einer generischen Standardkarte.",
+    },
   ];
   const mpd = [
-    ["Mensch", "Menschen, Alltag, Arbeit, Teilhabe, Sicherheit oder Würde dürfen nicht auf den Frame reduziert werden."],
-    ["Planet", "Ökologische Folgen, Ressourcen, Infrastruktur und Langfristwirkung müssen mitgezählt werden, wenn sie betroffen sind."],
-    ["Demokratie", "Demokratische Entscheidung braucht überprüfbare Zuständigkeit, Quellen, Kritikfähigkeit und faire Sprache."],
-  ];
-  return `<section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was dieses Narrativ bewirkt.</h2><p>Nicht nur prüfen, ob ein Teil stimmt. Prüfen, was wahrscheinlicher wird, wenn Menschen dem Satz folgen.</p></div><div class="card-grid three v3-consequence-orders">${rows.map(([badge, title, text]) => `<article class="card v3-order-card"><p class="v2-badge">${esc(badge)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("")}</div><div class="card v3-mpd-risk-card"><p class="card-kicker">Risiken für Mensch, Planet und Demokratie</p><div class="v3-mpd-risk-grid">${mpd.map(([label, text]) => `<div><strong>${esc(label)}</strong><span>${esc(text)}</span></div>`).join("")}</div></div><div class="card-grid two"><article class="card v3-check-column"><p class="card-kicker">Rote Linien</p><p>${esc(trueText)} Das rechtfertigt keine Abwertung, keine falsche Kausalität und keine verkürzte Gesamtrechnung.</p></article><article class="card v3-check-column"><p class="card-kicker">WÖk-Einordnung</p><p>Wirkungspotenzial wird erst zur Wirkung, wenn Wahrnehmung, Entscheidung und Verhalten tatsächlich verschoben werden. Genau diese Verschiebung wird hier geprüft.</p></article></div></div></section>`;
+    ["Mensch", `Für Menschen wird relevant, ob „${claimText}“ konkrete Alltagssorgen klärt oder Gruppen, Kosten und Zuständigkeiten verkürzt.`],
+    ["Planet", /klima|energie|ressource|natur|emission|verkehr|wärme|waerme|batterie|wind|co2|co₂/i.test(`${claimText} ${trueText} ${missingText}`)
+      ? `Planetare Wirkung ist betroffen, weil die Aussage „${claimText}“ ökologische Kosten, Alternativen oder Transformationspfade beeinflusst.`
+      : ""],
+    ["Demokratie", `Demokratisch zählt, ob die Behauptung „${claimText}“ Quellen, Zuständigkeit, Kritikfähigkeit und faire Abwägung stärkt oder schwächt.`],
+  ].filter(([, text]) => text);
+  return `<section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was dieses Narrativ bewirkt.</h2><p>Keine Karte ohne expliziten Wirkpfad: Narrativ, Wirkmechanismus, Wirkungspfad, Dimension und Begründung werden sichtbar gemacht.</p></div><div class="card-grid three v3-consequence-orders">${rows.map((row) => `<article class="card v3-order-card"><p class="v2-badge">${esc(row.badge)}</p><h3 class="card-title">${esc(row.title)}</h3><p class="card-text">${esc(row.text)}</p><p class="card-text"><strong>Narrativ:</strong> ${esc(claimText)}</p><p class="card-text"><strong>Wirkmechanismus:</strong> ${esc(row.mechanism)}</p><p class="card-text"><strong>Wirkungspfad:</strong> ${esc(row.path)}</p><p class="card-text"><strong>Begründung:</strong> ${esc(row.reason)}</p></article>`).join("")}</div><div class="card v3-mpd-risk-card"><p class="card-kicker">Risiken für Mensch, Planet und Demokratie</p><div class="v3-mpd-risk-grid">${mpd.map(([label, text]) => `<div><strong>${esc(label)}</strong><span>${esc(text)}</span></div>`).join("")}</div></div><div class="card-grid two"><article class="card v3-check-column"><p class="card-kicker">Rote Linien</p><p>${esc(trueText)} Das rechtfertigt keine Abwertung, keine falsche Kausalität und keine verkürzte Gesamtrechnung.</p></article><article class="card v3-check-column"><p class="card-kicker">Wirkungsökonomische Einordnung</p><p>Wirkungspotenzial wird hier nur als Wirkung beschrieben, wenn die Behauptung „${esc(claimText)}“ Wahrnehmung, Entscheidung oder Verhalten plausibel verschiebt. Alles andere bleibt Prüfauftrag, nicht Wirkungskarte.</p></article></div></div></section>`;
 }
 
 function extractStepTexts(section) {
