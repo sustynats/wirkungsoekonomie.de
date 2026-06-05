@@ -398,7 +398,7 @@ const body = `
     </section>
   </main>
   ${renderFooter()}
-  <script src="${BASE}assets/js/main.js?v=20260604-wirkungsraum" defer></script>
+  <script src="${BASE}assets/js/main.js?v=20260605-wirkungsraum-stage1" defer></script>
   <script src="${BASE}assets/js/search.js" defer></script>
 `;
 
