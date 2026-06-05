@@ -7,7 +7,7 @@
     <meta name="description" content="Mein Wirkungsraum ist das lokale Dashboard für Lesen, Lernen, Sammeln, Notizen, Export, Import und Datenschutzkontrolle im eigenen Browser.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage10">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage11">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -71,11 +71,64 @@
           </div>
           <div class="wirkungsraum-data-control" id="datenkontrolle" aria-labelledby="datenkontrolle-title">
             <div class="section-header">
-              <p class="hero-kicker">Datenkontrolle</p>
-              <h2 id="datenkontrolle-title">Export, Import und lokale Löschung</h2>
-              <p>Mein Wirkungsraum speichert Daten lokal in deinem Browser. Ohne Login werden keine persönlichen Daten an den Server übertragen. Exportiere deine Daten als JSON, importiere eine Sicherung oder lösche einzelne lokale Kategorien.</p>
+              <p class="hero-kicker">Datenspeicherung &amp; Synchronisation</p>
+              <h2 id="datenkontrolle-title">Auf anderem Gerät nutzen</h2>
+              <p>Mein Wirkungsraum ist nur in deinem Browser gespeichert. Ohne Login werden keine persönlichen Daten an den Server übertragen. Du kannst ihn per privatem Wiederherstellungslink, JSON-Datei oder lokaler Löschung selbst kontrollieren.</p>
               <p>Die Datenstruktur enthält bereits optionale Sync-Felder für eine spätere Konto-Anbindung. Registrierung, Login und Server-Speicherung sind nicht aktiv.</p>
             </div>
+            <div class="wirkungsraum-sync-card" aria-labelledby="wiederherstellungslink-title">
+              <div>
+                <p class="card-kicker">Privater Wiederherstellungslink</p>
+                <h3 id="wiederherstellungslink-title">Persönlichen Wirkungsraum-Link erstellen</h3>
+                <p>Mit diesem privaten Link kannst du deinen Wirkungsraum auf einem anderen Gerät wiederherstellen. Wer den Link hat, kann deine gespeicherten Inhalte laden. Speichere ihn deshalb sicher.</p>
+              </div>
+              <div class="wirkungsraum-data-toolbar">
+                <label class="wirkungsraum-import-mode">
+                  <span>Ablaufdatum</span>
+                  <select data-recovery-expiry>
+                    <option value="7">7 Tage</option>
+                    <option value="30" selected>30 Tage</option>
+                    <option value="none">ohne Ablauf</option>
+                  </select>
+                </label>
+                <label class="wirkungsraum-check">
+                  <input type="checkbox" data-recovery-include-notes>
+                  <span>Persönliche Notizen in den Wiederherstellungslink aufnehmen</span>
+                </label>
+                <button class="btn btn-secondary" type="button" data-show-local-data>Lokale Daten anzeigen</button>
+                <button class="btn btn-primary" type="button" data-create-recovery-link>Privaten Wiederherstellungslink erstellen</button>
+              </div>
+              <div class="wirkungsraum-recovery-result" data-recovery-result hidden>
+                <label class="wirkungsraum-link-output">
+                  <span>Privater Link</span>
+                  <input type="text" readonly data-recovery-link-output>
+                </label>
+                <div class="wirkungsraum-data-toolbar">
+                  <button class="btn btn-secondary" type="button" data-copy-recovery-link>Link kopieren</button>
+                  <button class="btn btn-secondary" type="button" data-toggle-recovery-qr>QR-Code anzeigen</button>
+                  <a class="btn btn-secondary" href="#" data-recovery-email>per E-Mail öffnen</a>
+                  <button class="btn btn-secondary" type="button" data-export-recovery-file>als Datei exportieren</button>
+                </div>
+                <div class="wirkungsraum-qr-panel" data-recovery-qr-panel hidden>
+                  <div class="wirkungsraum-qr-code" data-recovery-qr></div>
+                  <p>Der QR-Code wird lokal in deinem Browser erzeugt. Bei sehr langen Links nutze besser „Link kopieren“ oder die JSON-Datei.</p>
+                </div>
+              </div>
+            </div>
+            <div class="wirkungsraum-recovery-import" data-recovery-import-panel hidden>
+              <p class="card-kicker">Privaten Link öffnen</p>
+              <h3>Diesen Wirkungsraum auf diesem Gerät übernehmen?</h3>
+              <p data-recovery-import-summary>Ein Wiederherstellungslink wurde erkannt. Entscheide selbst, ob du ihn mit deinen lokalen Daten zusammenführst oder deine lokalen Daten ersetzt.</p>
+              <div class="wirkungsraum-data-toolbar">
+                <button class="btn btn-primary" type="button" data-recovery-import-mode="merge">Zusammenführen</button>
+                <button class="btn btn-secondary" type="button" data-recovery-import-mode="replace">Lokale Daten ersetzen</button>
+                <button class="btn btn-secondary" type="button" data-recovery-import-cancel>Abbrechen</button>
+              </div>
+            </div>
+            <div class="wirkungsraum-sync-card">
+              <p class="card-kicker">Backup ohne Link</p>
+              <h3>Wirkungsraum als JSON sichern</h3>
+              <p>Nutze Export und Import als Backup, wenn du keinen privaten Link verwenden möchtest.</p>
             <div class="wirkungsraum-data-toolbar">
               <button class="btn btn-primary" type="button" data-export-wirkungsraum>JSON exportieren</button>
               <label class="wirkungsraum-import-mode">
@@ -89,6 +142,13 @@
               <input class="sr-only" type="file" accept="application/json,.json" data-import-wirkungsraum-file>
               <a class="btn btn-secondary" href="../datenschutz.html#mein-wirkungsraum">Datenschutzhinweis lesen</a>
             </div>
+            </div>
+            <div class="wirkungsraum-sync-card">
+              <p class="card-kicker">Optionales Konto</p>
+              <h3>Mit Akademie/Discord verbinden</h3>
+              <p>Eine Konto-Verbindung ist vorbereitet, aber noch nicht aktiv. Mein Wirkungsraum funktioniert vollständig ohne Login.</p>
+              <button class="btn btn-secondary" type="button" disabled>Verbindung noch nicht verfügbar</button>
+            </div>
             <div class="wirkungsraum-reset-row" aria-label="Lokale Wirkungsraum-Daten löschen">
               <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="saved_items">Merkliste löschen</button>
               <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="reading_progress">Fortschritt löschen</button>
@@ -96,7 +156,7 @@
               <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="notes">Notizen löschen</button>
               <button class="btn btn-danger" type="button" data-reset-wirkungsraum-all>Alle lokalen Daten löschen</button>
             </div>
-            <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Keine Datenübertragung an den Server. Export und Import laufen ausschließlich in deinem Browser. Synchronisation ist technisch vorbereitet, aber ausgeschaltet.</p>
+            <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Keine Datenübertragung an den Server. Export, Import und private Wiederherstellungslinks laufen ausschließlich in deinem Browser. Synchronisation ist technisch vorbereitet, aber ausgeschaltet.</p>
           </div>
         </div>
       </section>
@@ -345,6 +405,7 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage10"></script>
+    <script src="../assets/js/vendor/qrcode-generator.js?v=20260605-wirkungsraum-stage11"></script>
+    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage11"></script>
   </body>
 </html>

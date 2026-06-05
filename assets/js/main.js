@@ -3420,7 +3420,10 @@ const WoekUserSpace = (() => {
   const namespace = "woek_user_space";
   const schemaVersion = 2;
   const exportVersion = 2;
+  const recoveryLinkVersion = 1;
+  const recoveryHashKey = "wrl";
   const conflictStrategy = "latest_updated_at_wins";
+  const recoveryObjectNames = ["saved_items", "reading_progress", "collections", "learning_items", "notes"];
   const objectDefinitions = {
     saved_items: { version: 1, kind: "list" },
     reading_progress: { version: 1, kind: "map" },
@@ -3463,6 +3466,7 @@ const WoekUserSpace = (() => {
       login_enabled: false,
       server_storage_enabled: false,
       user_id: Object.prototype.hasOwnProperty.call(sync, "user_id") ? sync.user_id : null,
+      auth_provider: Object.prototype.hasOwnProperty.call(sync, "auth_provider") ? sync.auth_provider : null,
       device_id: sync.device_id || deviceId(),
       synced_at: Object.prototype.hasOwnProperty.call(sync, "synced_at") ? sync.synced_at : null,
       status: sync.status || "local_only",
@@ -3505,7 +3509,7 @@ const WoekUserSpace = (() => {
         prepared_for_accounts: true,
         login_enabled: false,
         server_storage_enabled: false,
-        sync_fields: ["user_id", "device_id", "synced_at"]
+        sync_fields: ["user_id", "auth_provider", "device_id", "synced_at"]
       }
     };
   }
@@ -3592,15 +3596,65 @@ const WoekUserSpace = (() => {
       prepared_for_accounts: true,
       login_enabled: false,
       server_storage_enabled: false,
-      sync_fields: ["user_id", "device_id", "synced_at"],
+      sync_fields: ["user_id", "auth_provider", "device_id", "synced_at"],
       ...(base.export_import || {})
     };
     base.export_import.export_version = exportVersion;
     base.export_import.prepared_for_accounts = true;
     base.export_import.login_enabled = false;
     base.export_import.server_storage_enabled = false;
-    base.export_import.sync_fields = ["user_id", "device_id", "synced_at"];
+    base.export_import.sync_fields = ["user_id", "auth_provider", "device_id", "synced_at"];
     return base;
+  }
+
+  function stableStringify(value) {
+    if (Array.isArray(value)) return `[${value.map((entry) => stableStringify(entry)).join(",")}]`;
+    if (value && typeof value === "object") {
+      return `{${Object.keys(value)
+        .sort()
+        .map((key) => `${JSON.stringify(key)}:${stableStringify(value[key])}`)
+        .join(",")}}`;
+    }
+    return JSON.stringify(value);
+  }
+
+  function checksumString(value) {
+    let hash = 0x811c9dc5;
+    for (let index = 0; index < value.length; index += 1) {
+      hash ^= value.charCodeAt(index);
+      hash += (hash << 1) + (hash << 4) + (hash << 7) + (hash << 8) + (hash << 24);
+    }
+    return `fnv1a-${(hash >>> 0).toString(16).padStart(8, "0")}`;
+  }
+
+  function withChecksum(packageData) {
+    const unsigned = { ...packageData };
+    delete unsigned.checksum;
+    return { ...packageData, checksum: checksumString(stableStringify(unsigned)) };
+  }
+
+  function verifyChecksum(packageData) {
+    if (!packageData || typeof packageData !== "object" || !packageData.checksum) return false;
+    return withChecksum(packageData).checksum === packageData.checksum;
+  }
+
+  function encodeBase64Url(value) {
+    const bytes = new TextEncoder().encode(value);
+    let binary = "";
+    const chunkSize = 0x8000;
+    for (let index = 0; index < bytes.length; index += chunkSize) {
+      binary += String.fromCharCode(...bytes.slice(index, index + chunkSize));
+    }
+    return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+  }
+
+  function decodeBase64Url(value) {
+    const normalized = String(value || "").replace(/-/g, "+").replace(/_/g, "/");
+    const padded = normalized.padEnd(Math.ceil(normalized.length / 4) * 4, "=");
+    const binary = atob(padded);
+    const bytes = new Uint8Array(binary.length);
+    for (let index = 0; index < binary.length; index += 1) bytes[index] = binary.charCodeAt(index);
+    return new TextDecoder().decode(bytes);
   }
 
   function normalizeSyncRecord(record, sync = syncDefaults()) {
@@ -3863,7 +3917,109 @@ const WoekUserSpace = (() => {
       import_updated_at: normalizedIncoming.updated_at || null,
       detected_at: timestamp()
     });
+    if (objectName === "collections") {
+      const itemIds = Array.from(new Set([...(normalizedExisting.item_ids || []), ...(normalizedIncoming.item_ids || [])].filter(Boolean)));
+      return { ...winner, item_ids: itemIds, sync_status: "conflict_resolved", synced_at: winner.synced_at || null };
+    }
     return { ...winner, sync_status: "conflict_resolved", synced_at: winner.synced_at || null };
+  }
+
+  function expiryFromOption(expiry = "30") {
+    if (expiry === "none") return { expiry: "none", expires_at: null };
+    const days = expiry === "7" ? 7 : 30;
+    return {
+      expiry: String(days),
+      expires_at: new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString()
+    };
+  }
+
+  function createRecoveryPackage(options = {}) {
+    const store = loadStore();
+    const now = timestamp();
+    const includeNotes = options.includeNotes === true;
+    const expiry = expiryFromOption(String(options.expiry || "30"));
+    const packageData = {
+      format: "woek_user_space_recovery_link",
+      namespace,
+      version: recoveryLinkVersion,
+      created_at: now,
+      expires_at: expiry.expires_at,
+      expiry: expiry.expiry,
+      includes_notes: includeNotes,
+      saved_items: clone(store.objects.saved_items.items),
+      reading_progress: clone(store.objects.reading_progress.items),
+      collections: clone(store.objects.collections.items),
+      learning_items: clone(store.objects.learning_items.items)
+    };
+    if (includeNotes) packageData.notes = clone(store.objects.notes.items);
+    return withChecksum(packageData);
+  }
+
+  function recoveryPackageToImportPayload(packageData, options = {}) {
+    const validation = validateRecoveryPackage(packageData);
+    if (!validation.ok) return { ok: false, error: validation.error };
+    const objects = {};
+    for (const name of recoveryObjectNames) {
+      if (packageData[name]) {
+        const source = packageData[name];
+        if (source && typeof source === "object" && !Array.isArray(source) && (source.items || source.data)) {
+          objects[name] = source;
+        } else if (objectDefinitions[name]?.kind === "map") {
+          objects[name] = { ...emptyObject(name), items: source && typeof source === "object" && !Array.isArray(source) ? source : {} };
+        } else {
+          objects[name] = { ...emptyObject(name), items: Array.isArray(source) ? source : [] };
+        }
+      } else if (options.mode === "replace" && name === "notes") {
+        objects[name] = emptyObject(name);
+      }
+    }
+    return {
+      ok: true,
+      payload: {
+        format: "woek_user_space_export",
+        namespace,
+        schema_version: schemaVersion,
+        export_version: exportVersion,
+        imported_from_recovery_link: true,
+        objects
+      }
+    };
+  }
+
+  function validateRecoveryPackage(packageData) {
+    if (!packageData || typeof packageData !== "object") return { ok: false, error: "Der Wiederherstellungslink ist ungültig." };
+    if (packageData.format !== "woek_user_space_recovery_link" || packageData.namespace !== namespace) {
+      return { ok: false, error: "Der Wiederherstellungslink gehört nicht zu Mein Wirkungsraum." };
+    }
+    if (!verifyChecksum(packageData)) return { ok: false, error: "Der Wiederherstellungslink ist beschädigt." };
+    if (packageData.expires_at) {
+      const expiry = Date.parse(packageData.expires_at);
+      if (Number.isFinite(expiry) && Date.now() > expiry) return { ok: false, error: "Dieser Wiederherstellungslink ist abgelaufen." };
+    }
+    return { ok: true };
+  }
+
+  function encodeRecoveryPackage(packageData) {
+    return encodeBase64Url(JSON.stringify(packageData));
+  }
+
+  function decodeRecoveryPackage(value) {
+    try {
+      const packageData = JSON.parse(decodeBase64Url(value));
+      const validation = validateRecoveryPackage(packageData);
+      if (!validation.ok) return { ok: false, error: validation.error };
+      return { ok: true, package: packageData };
+    } catch {
+      return { ok: false, error: "Der Wiederherstellungslink kann nicht gelesen werden." };
+    }
+  }
+
+  function recoveryPackageFromHash(hashValue) {
+    const hash = String(hashValue || "").replace(/^#/, "");
+    if (!hash) return null;
+    const params = new URLSearchParams(hash);
+    const encoded = params.get(recoveryHashKey) || params.get("wirkungsraum-link");
+    return encoded ? decodeRecoveryPackage(encoded) : null;
   }
 
   function exportData() {
@@ -3883,11 +4039,17 @@ const WoekUserSpace = (() => {
   }
 
   function importData(payload, options = {}) {
-    const incoming = payload?.objects ? payload.objects : payload?.data?.objects ? payload.data.objects : null;
+    const mode = options.mode === "replace" ? "replace" : "merge";
+    let normalizedPayload = payload;
+    if (payload?.format === "woek_user_space_recovery_link") {
+      const recovery = recoveryPackageToImportPayload(payload, { mode });
+      if (!recovery.ok) return { ok: false, imported: [], error: recovery.error };
+      normalizedPayload = recovery.payload;
+    }
+    const incoming = normalizedPayload?.objects ? normalizedPayload.objects : normalizedPayload?.data?.objects ? normalizedPayload.data.objects : null;
     if (!incoming || typeof incoming !== "object") {
       return { ok: false, imported: [], error: "Ungültige Importstruktur." };
     }
-    const mode = options.mode === "replace" ? "replace" : "merge";
     const imported = [];
     const conflicts = [];
     updateStore((store) => {
@@ -3968,6 +4130,11 @@ const WoekUserSpace = (() => {
     importData,
     syncInfo,
     prepareSyncPayload,
+    createRecoveryPackage,
+    encodeRecoveryPackage,
+    decodeRecoveryPackage,
+    recoveryPackageFromHash,
+    validateRecoveryPackage,
     getItems,
     getRecordItems,
     getSettings,
@@ -5275,6 +5442,142 @@ const WirkungsraumLayer = (() => {
     status.dataset.statusTone = tone;
   }
 
+  let currentRecoveryPackage = null;
+  let currentRecoveryLink = "";
+  let pendingRecoveryPackage = null;
+
+  function recoveryFileName() {
+    return `woek-wiederherstellungslink-${new Date().toISOString().slice(0, 10)}.json`;
+  }
+
+  function activeDashboardUrl() {
+    const base = new URL("/mein-wirkungsraum/", window.location.origin);
+    return base.toString();
+  }
+
+  function recoveryLink(packageData) {
+    return `${activeDashboardUrl()}#wrl=${WoekUserSpace.encodeRecoveryPackage(packageData)}`;
+  }
+
+  function countObjectEntries(object) {
+    if (!object) return 0;
+    if (Array.isArray(object)) return object.length;
+    if (Array.isArray(object.items)) return object.items.length;
+    if (object.items && typeof object.items === "object") return Object.keys(object.items).length;
+    if (object.data && typeof object.data === "object") return Object.keys(object.data).length;
+    if (typeof object === "object") return Object.keys(object).length;
+    return 0;
+  }
+
+  function localDataSummary() {
+    const snapshot = WoekUserSpace.snapshot();
+    return [
+      `Merkliste: ${countObjectEntries(snapshot.objects.saved_items)}`,
+      `Fortschritt: ${countObjectEntries(snapshot.objects.reading_progress)}`,
+      `Sammlungen: ${countObjectEntries(snapshot.objects.collections)}`,
+      `Lernliste: ${countObjectEntries(snapshot.objects.learning_items)}`,
+      `Notizen: ${countObjectEntries(snapshot.objects.notes)}`
+    ].join(" · ");
+  }
+
+  function recoverySummary(packageData) {
+    const parts = [
+      `${countObjectEntries(packageData.saved_items)} gemerkte Inhalte`,
+      `${countObjectEntries(packageData.reading_progress)} Lesestände`,
+      `${countObjectEntries(packageData.collections)} Sammlungen`,
+      `${countObjectEntries(packageData.learning_items)} Lernlisteneinträge`
+    ];
+    parts.push(packageData.includes_notes ? `${countObjectEntries(packageData.notes)} Notizen` : "ohne persönliche Notizen");
+    if (packageData.expires_at) parts.push(`gültig bis ${new Date(packageData.expires_at).toLocaleDateString("de-DE")}`);
+    else parts.push("ohne Ablaufdatum");
+    return parts.join(" · ");
+  }
+
+  function setRecoveryOutput(root, packageData, link) {
+    currentRecoveryPackage = packageData;
+    currentRecoveryLink = link;
+    const result = root.querySelector("[data-recovery-result]");
+    const output = root.querySelector("[data-recovery-link-output]");
+    const email = root.querySelector("[data-recovery-email]");
+    const qrPanel = root.querySelector("[data-recovery-qr-panel]");
+    const qrHost = root.querySelector("[data-recovery-qr]");
+    if (result instanceof HTMLElement) result.hidden = false;
+    if (output instanceof HTMLInputElement) {
+      output.value = link;
+      output.focus();
+      output.select();
+    }
+    if (email instanceof HTMLAnchorElement) {
+      const subject = encodeURIComponent("Mein Wirkungsraum Wiederherstellungslink");
+      const body = encodeURIComponent(`Hier ist mein privater Wiederherstellungslink für Mein Wirkungsraum:\n\n${link}\n\nWer den Link hat, kann die enthaltenen gespeicherten Inhalte laden.`);
+      email.href = `mailto:?subject=${subject}&body=${body}`;
+    }
+    if (qrPanel instanceof HTMLElement) qrPanel.hidden = true;
+    if (qrHost instanceof HTMLElement) qrHost.innerHTML = "";
+    dataStatus(root, `Privater Wiederherstellungslink erstellt: ${recoverySummary(packageData)}.`, "success");
+  }
+
+  function renderRecoveryQr(root) {
+    const qrPanel = root.querySelector("[data-recovery-qr-panel]");
+    const qrHost = root.querySelector("[data-recovery-qr]");
+    if (!(qrPanel instanceof HTMLElement) || !(qrHost instanceof HTMLElement)) return;
+    qrPanel.hidden = false;
+    qrHost.innerHTML = "";
+    try {
+      if (typeof window.qrcode !== "function") throw new Error("QR-Code-Erzeugung nicht verfügbar.");
+      const qr = window.qrcode(0, "M");
+      qr.addData(currentRecoveryLink);
+      qr.make();
+      qrHost.innerHTML = qr.createSvgTag({
+        cellSize: 4,
+        margin: 4,
+        scalable: true,
+        title: "Privater Wiederherstellungslink",
+        alt: "QR-Code für den privaten Wiederherstellungslink"
+      });
+      dataStatus(root, "QR-Code lokal erzeugt. Bei sehr langen Links ist Kopieren oder Datei-Export oft zuverlässiger.", "success");
+    } catch {
+      qrHost.innerHTML = '<p class="card-text">Der Link ist für einen QR-Code zu lang. Nutze „Link kopieren“, „per E-Mail öffnen“ oder „als Datei exportieren“.</p>';
+      dataStatus(root, "Der Link ist für einen QR-Code zu lang. Nutze Kopieren, E-Mail oder Datei-Export.", "error");
+    }
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(text);
+    return Promise.reject(new Error("Zwischenablage nicht verfügbar."));
+  }
+
+  function cleanRecoveryHash() {
+    if (window.location.hash.includes("wrl=") || window.location.hash.includes("wirkungsraum-link=")) {
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#datenkontrolle`);
+    }
+  }
+
+  function showRecoveryImportPanel(root, packageData) {
+    pendingRecoveryPackage = packageData;
+    const panel = root.querySelector("[data-recovery-import-panel]");
+    const summary = root.querySelector("[data-recovery-import-summary]");
+    if (summary instanceof HTMLElement) {
+      summary.textContent = `Ein Wiederherstellungslink wurde erkannt: ${recoverySummary(packageData)}. Entscheide selbst, ob du ihn mit deinen lokalen Daten zusammenführst oder deine lokalen Daten ersetzt.`;
+    }
+    if (panel instanceof HTMLElement) {
+      panel.hidden = false;
+      panel.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+    dataStatus(root, "Privater Wiederherstellungslink erkannt. Es wurde noch nichts übernommen.", "success");
+  }
+
+  function handleRecoveryHash(root) {
+    const decoded = WoekUserSpace.recoveryPackageFromHash(window.location.hash);
+    if (!decoded) return;
+    if (!decoded.ok) {
+      dataStatus(root, decoded.error || "Der Wiederherstellungslink kann nicht gelesen werden.", "error");
+      cleanRecoveryHash();
+      return;
+    }
+    showRecoveryImportPanel(root, decoded.package);
+  }
+
   function refreshDashboardPanels(root, lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null)) {
     drawSavedDashboard(root);
     drawReadingDashboard(root);
@@ -5992,6 +6295,85 @@ const WirkungsraumLayer = (() => {
           dataStatus(root, "Merkliste gelöscht. Sammlungen wurden von Verweisen auf gelöschte Inhalte bereinigt.", "success");
           return;
         }
+        const showLocalData = event.target instanceof HTMLElement ? event.target.closest("[data-show-local-data]") : null;
+        if (showLocalData instanceof HTMLButtonElement) {
+          dataStatus(root, `Nur in deinem Browser gespeichert: ${localDataSummary()}.`, "success");
+          return;
+        }
+        const createRecovery = event.target instanceof HTMLElement ? event.target.closest("[data-create-recovery-link]") : null;
+        if (createRecovery instanceof HTMLButtonElement) {
+          const includeNotes = root.querySelector("[data-recovery-include-notes]") instanceof HTMLInputElement
+            ? root.querySelector("[data-recovery-include-notes]").checked
+            : false;
+          const expirySelect = root.querySelector("[data-recovery-expiry]");
+          const expiry = expirySelect instanceof HTMLSelectElement ? expirySelect.value : "30";
+          const packageData = WoekUserSpace.createRecoveryPackage({ includeNotes, expiry });
+          const link = recoveryLink(packageData);
+          setRecoveryOutput(root, packageData, link);
+          createRecovery.textContent = "Link erstellt";
+          window.setTimeout(() => (createRecovery.textContent = "Privaten Wiederherstellungslink erstellen"), 1400);
+          return;
+        }
+        const copyRecovery = event.target instanceof HTMLElement ? event.target.closest("[data-copy-recovery-link]") : null;
+        if (copyRecovery instanceof HTMLButtonElement) {
+          if (!currentRecoveryLink) {
+            dataStatus(root, "Erstelle zuerst einen privaten Wiederherstellungslink.", "error");
+            return;
+          }
+          copyText(currentRecoveryLink)
+            .then(() => dataStatus(root, "Privater Wiederherstellungslink kopiert.", "success"))
+            .catch(() => dataStatus(root, "Kopieren ist in diesem Browser nicht verfügbar. Markiere den Link im Feld und kopiere ihn manuell.", "error"));
+          return;
+        }
+        const toggleQr = event.target instanceof HTMLElement ? event.target.closest("[data-toggle-recovery-qr]") : null;
+        if (toggleQr instanceof HTMLButtonElement) {
+          if (!currentRecoveryLink) {
+            dataStatus(root, "Erstelle zuerst einen privaten Wiederherstellungslink.", "error");
+            return;
+          }
+          renderRecoveryQr(root);
+          return;
+        }
+        const exportRecovery = event.target instanceof HTMLElement ? event.target.closest("[data-export-recovery-file]") : null;
+        if (exportRecovery instanceof HTMLButtonElement) {
+          if (!currentRecoveryPackage || !currentRecoveryLink) {
+            dataStatus(root, "Erstelle zuerst einen privaten Wiederherstellungslink.", "error");
+            return;
+          }
+          downloadJsonFile(recoveryFileName(), JSON.stringify({ ...currentRecoveryPackage, recovery_link: currentRecoveryLink }, null, 2));
+          dataStatus(root, "Wiederherstellungslink als Datei exportiert.", "success");
+          return;
+        }
+        const recoveryImport = event.target instanceof HTMLElement ? event.target.closest("[data-recovery-import-mode]") : null;
+        if (recoveryImport instanceof HTMLButtonElement) {
+          if (!pendingRecoveryPackage) {
+            dataStatus(root, "Kein Wiederherstellungslink geladen.", "error");
+            return;
+          }
+          const mode = recoveryImport.dataset.recoveryImportMode === "replace" ? "replace" : "merge";
+          const result = WoekUserSpace.importData(pendingRecoveryPackage, { mode });
+          if (!result.ok) {
+            dataStatus(root, result.error || "Wiederherstellung fehlgeschlagen.", "error");
+            return;
+          }
+          pendingRecoveryPackage = null;
+          const panel = root.querySelector("[data-recovery-import-panel]");
+          if (panel instanceof HTMLElement) panel.hidden = true;
+          cleanRecoveryHash();
+          refreshDashboardPanels(root);
+          const conflictNote = result.conflicts?.length ? ` ${result.conflicts.length} mögliche Konflikte wurden nach Zeitstempel aufgelöst.` : "";
+          dataStatus(root, `Wirkungsraum ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.${conflictNote}`, "success");
+          return;
+        }
+        const cancelRecoveryImport = event.target instanceof HTMLElement ? event.target.closest("[data-recovery-import-cancel]") : null;
+        if (cancelRecoveryImport instanceof HTMLButtonElement) {
+          pendingRecoveryPackage = null;
+          const panel = root.querySelector("[data-recovery-import-panel]");
+          if (panel instanceof HTMLElement) panel.hidden = true;
+          cleanRecoveryHash();
+          dataStatus(root, "Wiederherstellung abgebrochen. Lokale Daten bleiben unverändert.", "success");
+          return;
+        }
         const resetObject = event.target instanceof HTMLElement ? event.target.closest("[data-reset-wirkungsraum-object]") : null;
         if (resetObject instanceof HTMLButtonElement) {
           const objectName = resetObject.dataset.resetWirkungsraumObject || "";
@@ -6104,9 +6486,11 @@ const WirkungsraumLayer = (() => {
           window.setTimeout(() => (exportButton.textContent = "JSON exportieren"), 1400);
         }
       });
+      window.addEventListener("hashchange", () => handleRecoveryHash(root));
     }
 
     refreshDashboardPanels(root, lastVisit);
+    handleRecoveryHash(root);
   }
 
   function comparablePath(value) {

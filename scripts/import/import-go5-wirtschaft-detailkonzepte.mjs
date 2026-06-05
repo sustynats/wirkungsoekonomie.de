@@ -570,7 +570,7 @@ function renderPage(doc, body, toc) {
     <meta property="og:url" content="https://wirkungsoekonomie.de/wirkungsfelder/wirtschaft-unternehmen/${doc.slug}/">
     <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260605-wirkungsraum-stage10">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260605-wirkungsraum-stage11">
   </head>
   <body>
     <header class="site-header">
@@ -696,7 +696,7 @@ function renderPage(doc, body, toc) {
         </nav>
       </div>
     </footer>
-    <script src="/assets/js/main.js?v=20260605-wirkungsraum-stage10" defer></script>
+    <script src="/assets/js/main.js?v=20260605-wirkungsraum-stage11" defer></script>
   </body>
 </html>`;
 }
