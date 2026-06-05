@@ -3418,8 +3418,9 @@ const CopyAnswerLayer = (() => {
 
 const WoekUserSpace = (() => {
   const namespace = "woek_user_space";
-  const schemaVersion = 1;
-  const exportVersion = 1;
+  const schemaVersion = 2;
+  const exportVersion = 2;
+  const conflictStrategy = "latest_updated_at_wins";
   const objectDefinitions = {
     saved_items: { version: 1, kind: "list" },
     reading_progress: { version: 1, kind: "map" },
@@ -3446,11 +3447,40 @@ const WoekUserSpace = (() => {
     return JSON.parse(JSON.stringify(value));
   }
 
+  function deviceId() {
+    try {
+      if (typeof crypto !== "undefined" && crypto.randomUUID) return `local-${crypto.randomUUID()}`;
+    } catch {
+      // Fall through to a timestamp based local identifier.
+    }
+    return `local-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+  }
+
+  function syncDefaults(sync = {}) {
+    return {
+      prepared: true,
+      enabled: false,
+      login_enabled: false,
+      server_storage_enabled: false,
+      user_id: Object.prototype.hasOwnProperty.call(sync, "user_id") ? sync.user_id : null,
+      device_id: sync.device_id || deviceId(),
+      synced_at: Object.prototype.hasOwnProperty.call(sync, "synced_at") ? sync.synced_at : null,
+      status: sync.status || "local_only",
+      conflict_strategy: sync.conflict_strategy || conflictStrategy,
+      conflict_log: Array.isArray(sync.conflict_log) ? sync.conflict_log.slice(-100) : []
+    };
+  }
+
   function emptyObject(name) {
     const definition = objectDefinitions[name];
     const base = {
       version: definition.version,
-      updated_at: null
+      updated_at: null,
+      user_id: null,
+      device_id: null,
+      synced_at: null,
+      sync_status: "local",
+      conflicts: []
     };
     if (definition.kind === "map") return { ...base, items: {} };
     if (definition.kind === "settings") return { ...base, data: {} };
@@ -3465,11 +3495,17 @@ const WoekUserSpace = (() => {
       created_at: created,
       updated_at: created,
       local_only: true,
+      sync_ready: true,
+      server_storage_enabled: false,
+      sync: syncDefaults(),
       objects: Object.fromEntries(Object.keys(objectDefinitions).map((name) => [name, emptyObject(name)])),
       export_import: {
         export_version: exportVersion,
         supported_modes: ["replace", "merge"],
-        prepared_for_accounts: false
+        prepared_for_accounts: true,
+        login_enabled: false,
+        server_storage_enabled: false,
+        sync_fields: ["user_id", "device_id", "synced_at"]
       }
     };
   }
@@ -3519,30 +3555,63 @@ const WoekUserSpace = (() => {
 
   function normalizeStore(value) {
     const base = value && typeof value === "object" && value.namespace === namespace ? value : emptyStore();
-    base.schema_version = Number(base.schema_version || schemaVersion);
+    base.schema_version = Math.max(Number(base.schema_version || 0), schemaVersion);
     base.local_only = true;
+    base.sync_ready = true;
+    base.server_storage_enabled = false;
+    base.sync = syncDefaults(base.sync || {});
     base.objects = base.objects && typeof base.objects === "object" ? base.objects : {};
     for (const [name, definition] of Object.entries(objectDefinitions)) {
       const current = base.objects[name] && typeof base.objects[name] === "object" ? base.objects[name] : {};
       const shell = emptyObject(name);
       current.version = Number(current.version || definition.version);
       current.updated_at = current.updated_at || null;
+      current.user_id = Object.prototype.hasOwnProperty.call(current, "user_id") ? current.user_id : base.sync.user_id;
+      current.device_id = current.device_id || base.sync.device_id;
+      current.synced_at = Object.prototype.hasOwnProperty.call(current, "synced_at") ? current.synced_at : null;
+      current.sync_status = current.sync_status || "local";
+      current.conflicts = Array.isArray(current.conflicts) ? current.conflicts.slice(-50) : [];
       if (definition.kind === "map") {
         current.items = current.items && !Array.isArray(current.items) && typeof current.items === "object" ? current.items : {};
+        current.items = Object.fromEntries(
+          Object.entries(current.items).map(([id, item]) => [id, normalizeSyncRecord({ id, ...(item || {}) }, base.sync)])
+        );
       } else if (definition.kind === "settings") {
         current.data = current.data && !Array.isArray(current.data) && typeof current.data === "object" ? current.data : {};
       } else {
         current.items = Array.isArray(current.items) ? current.items : [];
+        current.items = current.items
+          .filter((item) => item && typeof item === "object" && !Array.isArray(item))
+          .map((item) => normalizeSyncRecord(item, base.sync));
       }
       base.objects[name] = { ...shell, ...current };
     }
     base.export_import = {
       export_version: exportVersion,
       supported_modes: ["replace", "merge"],
-      prepared_for_accounts: false,
+      prepared_for_accounts: true,
+      login_enabled: false,
+      server_storage_enabled: false,
+      sync_fields: ["user_id", "device_id", "synced_at"],
       ...(base.export_import || {})
     };
+    base.export_import.export_version = exportVersion;
+    base.export_import.prepared_for_accounts = true;
+    base.export_import.login_enabled = false;
+    base.export_import.server_storage_enabled = false;
+    base.export_import.sync_fields = ["user_id", "device_id", "synced_at"];
     return base;
+  }
+
+  function normalizeSyncRecord(record, sync = syncDefaults()) {
+    if (!record || typeof record !== "object" || Array.isArray(record)) return record;
+    return {
+      ...record,
+      user_id: Object.prototype.hasOwnProperty.call(record, "user_id") ? record.user_id : sync.user_id,
+      device_id: record.device_id || sync.device_id || null,
+      synced_at: Object.prototype.hasOwnProperty.call(record, "synced_at") ? record.synced_at : null,
+      sync_status: record.sync_status || "local"
+    };
   }
 
   function hasEntries(objectName, store) {
@@ -3612,8 +3681,14 @@ const WoekUserSpace = (() => {
     return result;
   }
 
-  function touchObject(store, objectName) {
-    store.objects[objectName].updated_at = timestamp();
+  function touchObject(store, objectName, now = timestamp()) {
+    store.objects[objectName].updated_at = now;
+    store.objects[objectName].user_id = store.sync.user_id;
+    store.objects[objectName].device_id = store.sync.device_id;
+    store.objects[objectName].synced_at = null;
+    store.objects[objectName].sync_status = "local_changed";
+    store.sync.synced_at = null;
+    store.sync.status = "local_only";
   }
 
   function normalizeId(value) {
@@ -3649,10 +3724,13 @@ const WoekUserSpace = (() => {
       const now = timestamp();
       const id = item.id || normalizeId(item.url || item.title || `${objectName}-${now}`);
       const timestampField = options.timestampField || "updated_at";
-      const nextItem = { ...item, id, [timestampField]: item[timestampField] || now, updated_at: now };
+      const nextItem = normalizeSyncRecord(
+        { ...item, id, [timestampField]: item[timestampField] || now, updated_at: now, synced_at: null, sync_status: "local_changed" },
+        store.sync
+      );
       object.items = [nextItem, ...object.items.filter((existing) => existing.id !== id)];
       if (options.limit) object.items = object.items.slice(0, options.limit);
-      touchObject(store, objectName);
+      touchObject(store, objectName, now);
       return clone(nextItem);
     });
   }
@@ -3675,8 +3753,9 @@ const WoekUserSpace = (() => {
       const object = store.objects[objectName];
       const key = String(id || "").trim();
       if (!key) return null;
-      object.items[key] = { ...value, id: value.id || key, updated_at: timestamp() };
-      touchObject(store, objectName);
+      const now = timestamp();
+      object.items[key] = normalizeSyncRecord({ ...value, id: value.id || key, updated_at: now, synced_at: null, sync_status: "local_changed" }, store.sync);
+      touchObject(store, objectName, now);
       return clone(object.items[key]);
     });
   }
@@ -3684,6 +3763,8 @@ const WoekUserSpace = (() => {
   function setSetting(key, value) {
     return updateStore((store) => {
       store.objects.user_settings.data[key] = value;
+      store.objects.user_settings.synced_at = null;
+      store.objects.user_settings.sync_status = "local_changed";
       touchObject(store, "user_settings");
       return clone(value);
     });
@@ -3721,7 +3802,12 @@ const WoekUserSpace = (() => {
   function resetObject(objectName) {
     if (!objectDefinitions[objectName]) return false;
     return updateStore((store) => {
-      store.objects[objectName] = emptyObject(objectName);
+      store.objects[objectName] = {
+        ...emptyObject(objectName),
+        user_id: store.sync.user_id,
+        device_id: store.sync.device_id,
+        sync_status: "local_changed"
+      };
       touchObject(store, objectName);
       return true;
     });
@@ -3735,6 +3821,51 @@ const WoekUserSpace = (() => {
     return true;
   }
 
+  function recordTime(value) {
+    if (!value || typeof value !== "object") return 0;
+    const candidates = [value.updated_at, value.saved_at, value.visited_at, value.created_at, value.synced_at];
+    for (const candidate of candidates) {
+      const parsed = Date.parse(candidate || "");
+      if (Number.isFinite(parsed)) return parsed;
+    }
+    return 0;
+  }
+
+  function comparableRecord(value) {
+    if (!value || typeof value !== "object") return value;
+    const copy = { ...value };
+    delete copy.sync_status;
+    delete copy.synced_at;
+    return copy;
+  }
+
+  function recordsDiffer(left, right) {
+    return JSON.stringify(comparableRecord(left)) !== JSON.stringify(comparableRecord(right));
+  }
+
+  function resolveRecordConflict(objectName, id, existing, incoming, store, conflicts) {
+    const normalizedIncoming = normalizeSyncRecord({ ...incoming, id: incoming.id || id }, store.sync);
+    if (!existing) return normalizedIncoming;
+    const normalizedExisting = normalizeSyncRecord(existing, store.sync);
+    if (!recordsDiffer(normalizedExisting, normalizedIncoming)) {
+      return { ...normalizedExisting, ...normalizedIncoming, sync_status: normalizedExisting.sync_status || "local" };
+    }
+    const localTime = recordTime(normalizedExisting);
+    const incomingTime = recordTime(normalizedIncoming);
+    const incomingWins = incomingTime > localTime;
+    const winner = incomingWins ? normalizedIncoming : normalizedExisting;
+    conflicts.push({
+      object: objectName,
+      id,
+      strategy: conflictStrategy,
+      kept: incomingWins ? "import" : "local",
+      local_updated_at: normalizedExisting.updated_at || null,
+      import_updated_at: normalizedIncoming.updated_at || null,
+      detected_at: timestamp()
+    });
+    return { ...winner, sync_status: "conflict_resolved", synced_at: winner.synced_at || null };
+  }
+
   function exportData() {
     const store = loadStore();
     return {
@@ -3744,6 +3875,9 @@ const WoekUserSpace = (() => {
       schema_version: store.schema_version,
       exported_at: timestamp(),
       local_only: true,
+      sync_ready: true,
+      server_storage_enabled: false,
+      sync: clone(store.sync),
       objects: clone(store.objects)
     };
   }
@@ -3755,24 +3889,44 @@ const WoekUserSpace = (() => {
     }
     const mode = options.mode === "replace" ? "replace" : "merge";
     const imported = [];
+    const conflicts = [];
     updateStore((store) => {
       for (const [name, definition] of Object.entries(objectDefinitions)) {
         if (!incoming[name]) continue;
         const source = incoming[name];
         if (mode === "replace") {
-          store.objects[name] = normalizeStore({ namespace, objects: { [name]: source } }).objects[name];
+          store.objects[name] = normalizeStore({ namespace, sync: store.sync, objects: { [name]: source } }).objects[name];
           touchObject(store, name);
           imported.push(name);
           continue;
         }
         if (definition.kind === "map") {
-          store.objects[name].items = { ...store.objects[name].items, ...(source.items || {}) };
+          const sourceItems = source.items && typeof source.items === "object" && !Array.isArray(source.items) ? source.items : {};
+          for (const [id, item] of Object.entries(sourceItems)) {
+            store.objects[name].items[id] = resolveRecordConflict(name, id, store.objects[name].items[id], item, store, conflicts);
+          }
         } else if (definition.kind === "settings") {
-          store.objects[name].data = { ...store.objects[name].data, ...(source.data || {}) };
+          const sourceData = source.data && typeof source.data === "object" && !Array.isArray(source.data) ? source.data : {};
+          for (const [key, value] of Object.entries(sourceData)) {
+            if (
+              Object.prototype.hasOwnProperty.call(store.objects[name].data, key) &&
+              JSON.stringify(store.objects[name].data[key]) !== JSON.stringify(value)
+            ) {
+              conflicts.push({
+                object: name,
+                id: key,
+                strategy: "import_setting_overwrites_local",
+                kept: "import",
+                detected_at: timestamp()
+              });
+            }
+            store.objects[name].data[key] = value;
+          }
         } else {
           const byId = new Map(store.objects[name].items.map((item) => [item.id, item]));
           for (const item of Array.isArray(source.items) ? source.items : []) {
-            byId.set(item.id || normalizeId(item.url || item.title), item);
+            const id = item.id || normalizeId(item.url || item.title);
+            byId.set(id, resolveRecordConflict(name, id, byId.get(id), item, store, conflicts));
           }
           store.objects[name].items = Array.from(byId.values());
         }
@@ -3780,8 +3934,25 @@ const WoekUserSpace = (() => {
         imported.push(name);
       }
       store.last_import_at = timestamp();
+      if (conflicts.length) {
+        store.sync.conflict_log = [...(store.sync.conflict_log || []), ...conflicts].slice(-100);
+      }
     });
-    return { ok: true, mode, imported };
+    return { ok: true, mode, imported, conflicts };
+  }
+
+  function syncInfo() {
+    return clone(loadStore().sync);
+  }
+
+  function prepareSyncPayload() {
+    const payload = exportData();
+    return {
+      ...payload,
+      sync_transport_enabled: false,
+      login_enabled: false,
+      message: "Dieses Paket ist serverfähig strukturiert, wird aber ohne Login nicht an einen Server übertragen."
+    };
   }
 
   function snapshot() {
@@ -3795,6 +3966,8 @@ const WoekUserSpace = (() => {
     snapshot,
     exportData,
     importData,
+    syncInfo,
+    prepareSyncPayload,
     getItems,
     getRecordItems,
     getSettings,
@@ -5764,7 +5937,14 @@ const WirkungsraumLayer = (() => {
                 return;
               }
               refreshDashboardPanels(root);
-              dataStatus(root, `Import abgeschlossen: ${result.imported.length} Kategorien ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.`, "success");
+              const conflictNote = result.conflicts?.length
+                ? ` ${result.conflicts.length} mögliche Konflikte wurden lokal nach Zeitstempel aufgelöst.`
+                : "";
+              dataStatus(
+                root,
+                `Import abgeschlossen: ${result.imported.length} Kategorien ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.${conflictNote}`,
+                "success"
+              );
             })
             .catch(() => dataStatus(root, "Import fehlgeschlagen: Die Datei ist keine gültige Wirkungsraum-JSON-Datei.", "error"))
             .finally(() => {

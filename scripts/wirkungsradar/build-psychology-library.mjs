@@ -373,7 +373,7 @@ function pageShell({ title, description, canonical, main, base = "../../" }) {
     <meta name="search_type" content="Psychologie">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage9}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage10}">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -383,7 +383,7 @@ function pageShell({ title, description, canonical, main, base = "../../" }) {
     </header>
 ${main}
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Wirkungsökonomie</p><h2>Die neue Ordnung des Wohlstands</h2><p>Für Mensch, Planet und Demokratie.</p></div><a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage9"></script>
+    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage10"></script>
   </body>
 </html>`;
 }

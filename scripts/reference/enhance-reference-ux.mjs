@@ -237,7 +237,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage9"></script>
+  return `<script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage10"></script>
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 
@@ -254,7 +254,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage9}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage10}">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}

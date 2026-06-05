@@ -7,7 +7,7 @@
     <meta name="description" content="Mein Wirkungsraum ist das lokale Dashboard für Lesen, Lernen, Sammeln, Notizen, Export, Import und Datenschutzkontrolle im eigenen Browser.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage9">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage10">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -74,6 +74,7 @@
               <p class="hero-kicker">Datenkontrolle</p>
               <h2 id="datenkontrolle-title">Export, Import und lokale Löschung</h2>
               <p>Mein Wirkungsraum speichert Daten lokal in deinem Browser. Ohne Login werden keine persönlichen Daten an den Server übertragen. Exportiere deine Daten als JSON, importiere eine Sicherung oder lösche einzelne lokale Kategorien.</p>
+              <p>Die Datenstruktur enthält bereits optionale Sync-Felder für eine spätere Konto-Anbindung. Registrierung, Login und Server-Speicherung sind nicht aktiv.</p>
             </div>
             <div class="wirkungsraum-data-toolbar">
               <button class="btn btn-primary" type="button" data-export-wirkungsraum>JSON exportieren</button>
@@ -95,7 +96,7 @@
               <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="notes">Notizen löschen</button>
               <button class="btn btn-danger" type="button" data-reset-wirkungsraum-all>Alle lokalen Daten löschen</button>
             </div>
-            <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Keine Datenübertragung an den Server. Export und Import laufen ausschließlich in deinem Browser.</p>
+            <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Keine Datenübertragung an den Server. Export und Import laufen ausschließlich in deinem Browser. Synchronisation ist technisch vorbereitet, aber ausgeschaltet.</p>
           </div>
         </div>
       </section>
@@ -344,6 +345,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage9"></script>
+    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage10"></script>
   </body>
 </html>
