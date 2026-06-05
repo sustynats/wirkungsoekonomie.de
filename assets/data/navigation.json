@@ -527,6 +527,14 @@
       "title": "Bibliothek",
       "items": [
         {
+          "label": "Journal",
+          "href": "blog.html",
+          "match": [
+            "blog.html",
+            "blog/"
+          ]
+        },
+        {
           "label": "Online-Buch",
           "href": "referenz/",
           "match": [
@@ -575,27 +583,11 @@
           "match": [
             "werkstatt/leitlinien/"
           ]
-        },
-        {
-          "label": "Dossiers",
-          "href": "werkstatt/arbeitsbibliothek/konzepte-dossiers/",
-          "match": [
-            "werkstatt/arbeitsbibliothek/konzepte-dossiers/",
-            "blog/dossiers/"
-          ]
         }
       ]
     }
   ],
   "footerLegal": [
-    {
-      "label": "Journal",
-      "href": "blog.html",
-      "match": [
-        "blog.html",
-        "blog/"
-      ]
-    },
     {
       "label": "Mitmachen",
       "href": "mitmachen.html",
