@@ -7061,6 +7061,80 @@ const WirkungsraumLayer = (() => {
   return { init };
 })();
 
+const AudioExplanationLayer = (() => {
+  const dataUrl = "/assets/data/audio-explanations.json";
+
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function normalizedPath(path = window.location.pathname) {
+    if (!path || path === "/") return "/";
+    if (path.endsWith("/index.html")) return path.replace(/index\.html$/, "");
+    return path.endsWith("/") || path.endsWith(".html") ? path : `${path}/`;
+  }
+
+  function transcriptHtml(text) {
+    return String(text || "")
+      .split(/\n{2,}/)
+      .map((paragraph) => paragraph.trim())
+      .filter(Boolean)
+      .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+      .join("");
+  }
+
+  function createBlock(item) {
+    const section = document.createElement("section");
+    section.className = "audio-explanation-block";
+    section.dataset.audioExplanationBlock = item.id || "audio";
+    section.dataset.searchExclude = "true";
+    section.innerHTML = `
+      <article class="card hero-audio audio-explanation-card">
+        <p class="card-kicker">Audio-Erklärung</p>
+        <label class="audio-label" for="audio-explanation-${escapeHtml(item.id || "seite")}">${escapeHtml(item.title || "Anhören")}</label>
+        <audio id="audio-explanation-${escapeHtml(item.id || "seite")}" controls preload="metadata" aria-label="${escapeHtml(item.title || "Audio-Erklärung anhören")}">
+          <source src="${escapeHtml(item.audio_file)}" type="audio/mpeg">
+          Dein Browser kann diese Audiodatei nicht direkt abspielen.
+        </audio>
+        <p class="audio-explanation-meta">
+          <span>Sprecherin: ${escapeHtml(item.speaker_name || "Natalie Weber")}</span>
+          <span>Dauer: ${escapeHtml(item.duration_estimate || "ca. 60 bis 90 Sekunden")}</span>
+          <span>Stand: ${escapeHtml(item.version_date || "2026-06-04")}</span>
+        </p>
+        <details class="audio-transcript audio-explanation-transcript">
+          <summary>Transkript anzeigen</summary>
+          ${transcriptHtml(item.transcript)}
+        </details>
+      </article>
+    `;
+    return section;
+  }
+
+  async function init() {
+    if (document.querySelector("[data-audio-explanation-block]")) return;
+    const hero = document.querySelector("main .hero");
+    if (!hero) return;
+    try {
+      const response = await fetch(dataUrl, { cache: "no-cache" });
+      if (!response.ok) return;
+      const data = await response.json();
+      const path = normalizedPath();
+      const item = (data.items || []).find((entry) => normalizedPath(entry.url) === path);
+      if (!item?.audio_file) return;
+      hero.insertAdjacentElement("afterend", createBlock(item));
+    } catch (error) {
+      // Audio explanations are an enhancement; pages remain usable without them.
+    }
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
   ToolSpecialBoxLayer.init();
@@ -7070,5 +7144,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ToolTermInlineLayer.init();
   MethodToolFilterLayer.init();
   CopyAnswerLayer.init();
+  AudioExplanationLayer.init();
   WirkungsraumLayer.init();
 });

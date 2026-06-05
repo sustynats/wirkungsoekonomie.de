@@ -2400,6 +2400,36 @@ body.nav-is-open {
   line-height: 1.4;
 }
 
+.audio-explanation-block {
+  width: min(980px, calc(100% - (2 * var(--space-gutter))));
+  margin: 0 auto var(--space-5);
+  padding: 0 var(--space-1);
+}
+
+.audio-explanation-card {
+  width: 100%;
+  margin: 0;
+  border-left: 4px solid var(--green);
+}
+
+.audio-explanation-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.audio-explanation-transcript {
+  margin-top: 1rem;
+}
+
+.audio-explanation-transcript p {
+  max-width: 72ch;
+}
+
 .hero-system-visual {
   width: min(100%, var(--container-wide));
   margin: clamp(2.5rem, 6vw, 5rem) auto 0;
