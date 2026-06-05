@@ -18259,3 +18259,216 @@ body[data-reader-mode] .workpaper-reader.reference-reader {
     justify-content: center;
   }
 }
+
+/* Debatten-Kompass styleguide consolidation */
+.radar-page-hero.theme-hero,
+.debate-toc-section,
+.debate-claim-section,
+.debate-immediate-answer,
+.debate-compass-template .section,
+main:has(.debate-claim-section) > .section {
+  font-family: var(--font-body);
+}
+
+.radar-page-hero.theme-hero > div,
+.debate-toc-section > div,
+.debate-claim-section > div,
+main:has(.debate-claim-section) > .section > div {
+  width: min(100% - (2 * var(--space-gutter)), 980px);
+  margin-inline: auto;
+}
+
+.radar-page-hero.theme-hero {
+  padding-block: clamp(2.25rem, 5vw, 4.25rem) clamp(1.25rem, 3vw, 2rem);
+}
+
+.radar-page-hero.theme-hero .hero-title {
+  margin-bottom: 0.8rem;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.radar-page-hero.theme-hero .hero-subtitle {
+  max-width: 78ch;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.22vw, 1.1rem);
+  line-height: 1.62;
+}
+
+.radar-page-hero.theme-hero .radar-status-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  max-width: 78ch;
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.topic-subnav.radar-sprint-nav,
+.wirkungsraum-save-row {
+  width: min(100% - (2 * var(--space-gutter)), 980px);
+  margin-inline: auto;
+}
+
+.topic-subnav.radar-sprint-nav {
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.topic-subnav.radar-sprint-nav a,
+.debate-toc-card .dossier-tab-nav a,
+.wirkungsraum-save-row .btn {
+  min-height: 2.24rem;
+  padding: 0.42rem 0.72rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 820;
+  line-height: 1.15;
+}
+
+.debate-toc-section {
+  padding-block: 0.72rem 0.9rem;
+}
+
+.debate-toc-card {
+  padding: 0.82rem 0.92rem;
+}
+
+.debate-toc-card .dossier-tab-nav {
+  gap: 0.34rem;
+}
+
+.debate-claim-section {
+  padding-block: clamp(0.75rem, 1.6vw, 1.15rem);
+}
+
+.debate-claim-section .v2-cockpit-shell {
+  width: min(100%, 980px);
+  gap: clamp(0.9rem, 1.7vw, 1.2rem);
+  padding: clamp(1rem, 2vw, 1.35rem);
+}
+
+.debate-claim-section .v2-cockpit-head {
+  gap: 0.28rem;
+}
+
+.debate-claim-section .v2-cockpit-head h2,
+.v2-cockpit-shell .v2-cockpit-head h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+.debate-claim-section .v2-claim-line,
+.v2-cockpit-shell .v2-claim-line {
+  max-width: 76ch;
+  margin-top: 0.24rem;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.12vw, 1.08rem);
+  line-height: 1.62;
+}
+
+.debate-claim-section .card-grid,
+main:has(.debate-claim-section) .card-grid.two,
+main:has(.debate-claim-section) .card-grid.three,
+main:has(.debate-claim-section) .card-grid.four,
+main:has(.debate-claim-section) .card-grid.five,
+main:has(.debate-claim-section) .card-grid.six {
+  width: min(100%, 980px);
+  margin-inline: auto;
+  gap: 0.85rem;
+}
+
+.debate-claim-section .card-grid.two,
+main:has(.debate-claim-section) .card-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+main:has(.debate-claim-section) .card {
+  padding: clamp(0.95rem, 1.8vw, 1.2rem);
+}
+
+main:has(.debate-claim-section) .card h3,
+main:has(.debate-claim-section) .card-title {
+  margin: 0.18rem 0 0.45rem;
+  font-family: var(--font-body);
+  font-size: clamp(1.04rem, 1.35vw, 1.22rem);
+  font-weight: 820;
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+main:has(.debate-claim-section) .card p,
+main:has(.debate-claim-section) .card-text,
+main:has(.debate-claim-section) .clean-list,
+main:has(.debate-claim-section) .radar-answer-item p {
+  max-width: 78ch;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+main:has(.debate-claim-section) .card-kicker,
+main:has(.debate-claim-section) .hero-kicker,
+main:has(.debate-claim-section) .v2-badge {
+  margin: 0 0 0.42rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 860;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+}
+
+main:has(.debate-claim-section) .section-header {
+  width: min(100%, 980px);
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+main:has(.debate-claim-section) .section-header h2 {
+  margin-top: 0;
+  font-size: clamp(1.75rem, 3.1vw, 2.45rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+main:has(.debate-claim-section) .section-header p:not(.hero-kicker) {
+  max-width: 76ch;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+main:has(.debate-claim-section) .radar-answer-item {
+  padding: clamp(0.95rem, 1.8vw, 1.18rem);
+}
+
+main:has(.debate-claim-section) .radar-answer-item summary {
+  gap: 0.45rem;
+}
+
+main:has(.debate-claim-section) .sr-only {
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 760px) {
+  .debate-claim-section .card-grid.two,
+  main:has(.debate-claim-section) .card-grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-subnav.radar-sprint-nav a,
+  .debate-toc-card .dossier-tab-nav a {
+    white-space: normal;
+  }
+}
