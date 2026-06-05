@@ -5709,6 +5709,7 @@ const WirkungsraumLayer = (() => {
   };
 
   function parseContentDate(value) {
+    if (!value || value === "Invalid Date") return null;
     const date = new Date(value);
     return Number.isNaN(date.getTime()) ? null : date;
   }
@@ -5718,27 +5719,56 @@ const WirkungsraumLayer = (() => {
     return path || cleanText(value || "#");
   }
 
+  function canonicalContentId(entry) {
+    return normalizeContentUrl(entry?.url) || entry?.id || graphSlug(entry?.title || "");
+  }
+
+  function explicitPublicationDate(entry) {
+    return parseContentDate(entry?.date || entry?.published_at || entry?.publishedAt || entry?.datePublished || entry?.publication_date || entry?.publicationDate);
+  }
+
+  function normalizeRecentContentEntry(entry, defaults = {}) {
+    const date = explicitPublicationDate(entry);
+    const now = new Date();
+    if (!date || date > now) return null;
+    const url = normalizeContentUrl(entry.url);
+    const title = cleanText(entry.title);
+    if (!title || !url) return null;
+    return {
+      id: canonicalContentId(entry),
+      type: cleanText(entry.type || defaults.type || "Inhalt"),
+      title,
+      url,
+      category: cleanText(entry.category || entry.documentType || defaults.category || ""),
+      description: cleanText(entry.excerpt || entry.description || entry.summaryShort || entry.summary || "").slice(0, 220),
+      tags: uniqueStrings(entry.tags || entry.topics || [], 4),
+      date,
+      dateLabel: formatDate(date)
+    };
+  }
+
   async function recentContentItems() {
     if (!recentContentPromise) {
-      recentContentPromise = fetchJson("/assets/data/blog-index.json", []).then((entries) => {
-        const now = new Date();
-        return (Array.isArray(entries) ? entries : [])
-          .map((entry) => {
-            const date = parseContentDate(entry.date || entry.published_at || entry.updated_at);
-            if (!date || date > now) return null;
-            return {
-              id: entry.id || normalizeContentUrl(entry.url) || graphSlug(entry.title),
-              type: entry.type || "Journalartikel",
-              title: cleanText(entry.title),
-              url: normalizeContentUrl(entry.url),
-              category: cleanText(entry.category || "Journal"),
-              description: cleanText(entry.excerpt || entry.description || "").slice(0, 220),
-              tags: uniqueStrings(entry.tags, 4),
-              date,
-              dateLabel: formatDate(date)
-            };
-          })
+      recentContentPromise = Promise.all([
+        fetchJson("/assets/data/blog-index.json", []),
+        fetchJson("/assets/data/document-library.json", {})
+      ]).then(([blogEntries, documentLibrary]) => {
+        const documentEntries = Array.isArray(documentLibrary)
+          ? documentLibrary
+          : (Array.isArray(documentLibrary.documents) ? documentLibrary.documents : []);
+        const journalItems = (Array.isArray(blogEntries) ? blogEntries : [])
+          .filter((entry) => !entry.status || entry.status === "published")
+          .map((entry) => normalizeRecentContentEntry(entry, { type: "Journalartikel", category: "Journal" }));
+        const documentItems = documentEntries
+          .filter((entry) => entry.visibility === "public" && (!entry.status || entry.status === "aktuell" || entry.status === "published"))
+          .map((entry) => normalizeRecentContentEntry(entry, { type: "Veröffentlichung", category: "Bibliothek" }));
+        const byId = new Map();
+        [...journalItems, ...documentItems]
           .filter((entry) => entry?.title && entry.url)
+          .forEach((entry) => {
+            if (!byId.has(entry.id)) byId.set(entry.id, entry);
+          });
+        return [...byId.values()]
           .sort((a, b) => b.date - a.date || a.title.localeCompare(b.title, "de"));
       });
     }
@@ -5780,11 +5810,15 @@ const WirkungsraumLayer = (() => {
     recentContentItems()
       .then((items) => {
         const since = parseContentDate(lastVisit);
-        const visible = since ? items.filter((item) => item.date > since).slice(0, 6) : items.slice(0, 6);
+        const knownIds = new Set(WoekUserSpace.getSetting("known_published_content_ids", []));
+        const visible = since
+          ? items.filter((item) => item.date > since && !knownIds.has(item.id)).slice(0, 6)
+          : [];
         const emptyText = since
-          ? "Seit deinem letzten Besuch wurden keine neuen datierten Journalinhalte gefunden."
-          : "Beim ersten Besuch zeigt dieser Bereich die jüngsten datierten Inhalte.";
+          ? "Seit deinem letzten Besuch wurden keine neuen, erstmals veröffentlichten Inhalte gefunden."
+          : "Ab jetzt merkt sich dein Wirkungsraum den aktuellen Veröffentlichungsstand. Beim nächsten Besuch erscheinen hier nur wirklich neue Inhalte.";
         renderNewContentList(container, visible, emptyText);
+        WoekUserSpace.setSetting("known_published_content_ids", items.map((item) => item.id));
       })
       .catch(() => {
         renderNewContentList(container, [], "Neue Inhalte konnten gerade nicht geladen werden.");
@@ -6315,11 +6349,12 @@ const WirkungsraumLayer = (() => {
     if (!root) return;
 
     const lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null);
+    const validLastVisit = parseContentDate(lastVisit);
     const note = root.querySelector("[data-last-visit-note]");
     if (note) {
-      note.textContent = lastVisit
-        ? `Letzter Besuch deines Wirkungsraums: ${new Date(lastVisit).toLocaleString("de-DE")}.`
-        : "Dies ist dein erster Dashboard-Besuch in diesem Browser. Wir zeigen zunächst die jüngsten datierten Inhalte.";
+      note.textContent = validLastVisit
+        ? `Letzter Besuch deines Wirkungsraums: ${validLastVisit.toLocaleString("de-DE")}.`
+        : "Dies ist dein erster gültiger Dashboard-Besuch in diesem Browser. Ab jetzt erscheinen hier nur wirklich neue Veröffentlichungen.";
     }
     WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
 
@@ -6601,7 +6636,7 @@ const WirkungsraumLayer = (() => {
       window.addEventListener("hashchange", () => handleRecoveryHash(root));
     }
 
-    refreshDashboardPanels(root, lastVisit);
+    refreshDashboardPanels(root, validLastVisit ? validLastVisit.toISOString() : null);
     handleRecoveryHash(root);
   }
 
