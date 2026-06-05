@@ -267,7 +267,9 @@
 }
 
 .wirkungsraum-toolbar,
-.wirkungsraum-collection-form {
+.wirkungsraum-collection-form,
+.wirkungsraum-data-toolbar,
+.wirkungsraum-reset-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -276,7 +278,8 @@
 }
 
 .wirkungsraum-toolbar input,
-.wirkungsraum-collection-form input {
+.wirkungsraum-collection-form input,
+.wirkungsraum-import-mode select {
   min-width: min(100%, 22rem);
   flex: 1 1 18rem;
   border: 1px solid var(--line);
@@ -285,6 +288,52 @@
   background: #fff;
   color: var(--navy);
   font: inherit;
+}
+
+.wirkungsraum-data-control {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+}
+
+.wirkungsraum-import-mode {
+  display: grid;
+  gap: 0.35rem;
+  flex: 1 1 19rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.wirkungsraum-import-mode select {
+  width: 100%;
+  min-width: 0;
+}
+
+.wirkungsraum-reset-row {
+  margin-bottom: 1rem;
+}
+
+.wirkungsraum-data-status {
+  max-width: 62rem;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(23, 79, 56, 0.18);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  background: rgba(255, 252, 245, 0.82);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.wirkungsraum-data-status[data-status-tone="success"] {
+  border-left-color: var(--green);
+  color: var(--green-dark);
+}
+
+.wirkungsraum-data-status[data-status-tone="error"] {
+  border-left-color: #9b2c2c;
+  color: #7f1d1d;
 }
 
 .wirkungsraum-template-row {
@@ -576,7 +625,9 @@
   }
 
   .wirkungsraum-toolbar .btn,
-  .wirkungsraum-collection-form .btn {
+  .wirkungsraum-collection-form .btn,
+  .wirkungsraum-data-toolbar .btn,
+  .wirkungsraum-reset-row .btn {
     width: 100%;
   }
 }
@@ -2109,6 +2160,17 @@ textarea {
 .btn-secondary:hover,
 .button.secondary:hover {
   background: var(--white);
+}
+
+.btn-danger {
+  background: #7f1d1d;
+  color: #fff;
+}
+
+.btn-danger:hover,
+.btn-danger:focus-visible {
+  background: #991b1b;
+  color: #fff;
 }
 
 .btn-ghost {
@@ -14298,6 +14360,19 @@ li {
   border-color: rgba(47, 125, 92, 0.42);
   background: var(--white);
   color: var(--green-dark);
+}
+
+.btn-danger {
+  border-color: #7f1d1d;
+  background: #7f1d1d;
+  color: #fff;
+}
+
+.btn-danger:hover,
+.btn-danger:focus-visible {
+  border-color: #991b1b;
+  background: #991b1b;
+  color: #fff;
 }
 
 .btn-ghost,

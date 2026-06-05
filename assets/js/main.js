@@ -5078,6 +5078,48 @@ const WirkungsraumLayer = (() => {
     items.forEach((item) => container.append(itemCard(item, options)));
   }
 
+  function exportFileName() {
+    return `woek-user-space-${new Date().toISOString().slice(0, 10)}.json`;
+  }
+
+  function downloadJsonFile(filename, payload) {
+    const blob = new Blob([payload], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    link.hidden = true;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 500);
+  }
+
+  function dataStatus(root, text, tone = "neutral") {
+    const status = root.querySelector("[data-wirkungsraum-data-status]");
+    if (!status) return;
+    status.textContent = text;
+    status.dataset.statusTone = tone;
+  }
+
+  function refreshDashboardPanels(root, lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null)) {
+    drawSavedDashboard(root);
+    drawReadingDashboard(root);
+    drawRelatedDashboard(root);
+    drawCollectionsDashboard(root);
+    drawLearningDashboard(root);
+    drawNotesDashboard(root);
+    drawNewContentDashboard(root, lastVisit);
+    drawNextStepsDashboard(root);
+  }
+
+  const resetObjectLabels = {
+    saved_items: "Merkliste",
+    reading_progress: "Fortschritt",
+    collections: "Sammlungen",
+    notes: "Notizen"
+  };
+
   function parseContentDate(value) {
     const date = new Date(value);
     return Number.isNaN(date.getTime()) ? null : date;
@@ -5707,6 +5749,28 @@ const WirkungsraumLayer = (() => {
           drawLearningDashboard(root);
           drawNextStepsDashboard(root);
         }
+        const importInput = event.target instanceof HTMLElement ? event.target.closest("[data-import-wirkungsraum-file]") : null;
+        if (importInput instanceof HTMLInputElement && importInput.files?.[0]) {
+          const file = importInput.files[0];
+          const modeSelect = root.querySelector("[data-import-wirkungsraum-mode]");
+          const mode = modeSelect instanceof HTMLSelectElement && modeSelect.value === "replace" ? "replace" : "merge";
+          file
+            .text()
+            .then((text) => {
+              const payload = JSON.parse(text);
+              const result = WoekUserSpace.importData(payload, { mode });
+              if (!result.ok) {
+                dataStatus(root, result.error || "Import fehlgeschlagen.", "error");
+                return;
+              }
+              refreshDashboardPanels(root);
+              dataStatus(root, `Import abgeschlossen: ${result.imported.length} Kategorien ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.`, "success");
+            })
+            .catch(() => dataStatus(root, "Import fehlgeschlagen: Die Datei ist keine gültige Wirkungsraum-JSON-Datei.", "error"))
+            .finally(() => {
+              importInput.value = "";
+            });
+        }
       });
       root.addEventListener("submit", (event) => {
         const form = event.target;
@@ -5745,6 +5809,33 @@ const WirkungsraumLayer = (() => {
           drawCollectionsDashboard(root);
           drawRelatedDashboard(root);
           drawNextStepsDashboard(root);
+          dataStatus(root, "Merkliste gelöscht. Sammlungen wurden von Verweisen auf gelöschte Inhalte bereinigt.", "success");
+          return;
+        }
+        const resetObject = event.target instanceof HTMLElement ? event.target.closest("[data-reset-wirkungsraum-object]") : null;
+        if (resetObject instanceof HTMLButtonElement) {
+          const objectName = resetObject.dataset.resetWirkungsraumObject || "";
+          const label = resetObjectLabels[objectName] || "Kategorie";
+          if (!window.confirm(`${label} lokal aus diesem Browser löschen?`)) return;
+          WoekUserSpace.resetObject(objectName);
+          if (objectName === "saved_items") clearCollectionItemIds();
+          refreshDashboardPanels(root);
+          dataStatus(root, `${label} gelöscht.`, "success");
+          return;
+        }
+        const resetAll = event.target instanceof HTMLElement ? event.target.closest("[data-reset-wirkungsraum-all]") : null;
+        if (resetAll instanceof HTMLButtonElement) {
+          if (!window.confirm("Alle lokalen Wirkungsraum-Daten in diesem Browser löschen? Dies betrifft Merkliste, Fortschritt, Sammlungen, Lernliste, Notizen, Besuchshistorie und Einstellungen.")) return;
+          WoekUserSpace.resetAll();
+          WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
+          refreshDashboardPanels(root, null);
+          dataStatus(root, "Alle lokalen Wirkungsraum-Daten wurden gelöscht.", "success");
+          return;
+        }
+        const importTrigger = event.target instanceof HTMLElement ? event.target.closest("[data-import-wirkungsraum-trigger]") : null;
+        if (importTrigger instanceof HTMLButtonElement) {
+          const importInput = root.querySelector("[data-import-wirkungsraum-file]");
+          if (importInput instanceof HTMLInputElement) importInput.click();
           return;
         }
         const removeLearning = event.target instanceof HTMLElement ? event.target.closest("[data-remove-learning]") : null;
@@ -5824,21 +5915,18 @@ const WirkungsraumLayer = (() => {
         const exportButton = event.target instanceof HTMLElement ? event.target.closest("[data-export-wirkungsraum]") : null;
         if (exportButton instanceof HTMLButtonElement) {
           const payload = JSON.stringify(WoekUserSpace.exportData(), null, 2);
-          navigator.clipboard?.writeText(payload);
-          exportButton.textContent = "Export kopiert";
-          window.setTimeout(() => (exportButton.textContent = "Exportieren"), 1400);
+          downloadJsonFile(exportFileName(), payload);
+          if (navigator.clipboard?.writeText) {
+            navigator.clipboard.writeText(payload).catch(() => {});
+          }
+          dataStatus(root, "JSON-Export wurde erstellt. Eine Kopie liegt zusätzlich in der Zwischenablage, falls der Browser das erlaubt.", "success");
+          exportButton.textContent = "JSON exportiert";
+          window.setTimeout(() => (exportButton.textContent = "JSON exportieren"), 1400);
         }
       });
     }
 
-    drawSavedDashboard(root);
-    drawReadingDashboard(root);
-    drawRelatedDashboard(root);
-    drawCollectionsDashboard(root);
-    drawLearningDashboard(root);
-    drawNotesDashboard(root);
-    drawNewContentDashboard(root, lastVisit);
-    drawNextStepsDashboard(root);
+    refreshDashboardPanels(root, lastVisit);
   }
 
   function comparablePath(value) {

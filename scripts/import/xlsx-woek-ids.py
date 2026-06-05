@@ -96,7 +96,7 @@ page = f"""<!DOCTYPE html>
     <meta name="search_description" content="Strukturiertes WÖk-ID-Register mit SDG/SDG+-Zuordnung und Indikatorfamilien.">
     <meta name="search_section" content="Dokumente">
     <meta name="search_type" content="WÖk-ID-Register">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260605-wirkungsraum-stage8">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260605-wirkungsraum-stage9">
   </head>
   <body>
     <header class="site-header">

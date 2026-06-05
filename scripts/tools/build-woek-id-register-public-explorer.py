@@ -240,7 +240,7 @@ def layout(title: str, description: str, body: str, prefix: str = "../") -> str:
     <meta name="search_type" content="WÖk-ID Register">
     <link rel="canonical" href="https://wirkungsoekonomie.de/{'' if prefix == '../' else 'woek-id-register/'}">
     <link rel="icon" href="{prefix}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260605-wirkungsraum-stage8">
+    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260605-wirkungsraum-stage9">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -473,7 +473,7 @@ def legacy_tool_alias():
     <meta name="description" content="Weiterleitung zum öffentlichen WÖk-ID Register Explorer v2.1.">
     <meta http-equiv="refresh" content="0; url=../../woek-id-register/">
     <link rel="canonical" href="https://wirkungsoekonomie.de/woek-id-register/">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260605-wirkungsraum-stage8">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260605-wirkungsraum-stage9">
   </head>
   <body>
     <main class="section narrow">
