@@ -406,18 +406,70 @@ function getSiteAnalyticsVisitorId() {
   }
 }
 
+function clientAnalyticsDeviceInfo() {
+  const width = Math.max(window.innerWidth || 0, document.documentElement?.clientWidth || 0);
+  const coarsePointer = window.matchMedia?.("(pointer: coarse)")?.matches === true;
+  const touchPoints = Number(navigator.maxTouchPoints || 0);
+  const deviceType =
+    /ipad|tablet/i.test(navigator.userAgent || "") || (coarsePointer && width >= 720)
+      ? "tablet"
+      : /mobi|android|iphone|ipod/i.test(navigator.userAgent || "") || (coarsePointer && width < 720)
+        ? "mobile"
+        : "desktop";
+
+  return {
+    deviceType,
+    viewportWidth: width || null,
+    viewportHeight: Math.max(window.innerHeight || 0, document.documentElement?.clientHeight || 0) || null,
+    screenWidth: window.screen?.width || null,
+    screenHeight: window.screen?.height || null,
+    language: navigator.language || null,
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || null
+  };
+}
+
+function analyticsDetails(details = {}) {
+  const safe = {};
+  Object.entries(details || {}).forEach(([key, value]) => {
+    if (value === undefined || value === null || typeof value === "function") return;
+    if (typeof value === "string") {
+      safe[key] = value.slice(0, key === "metadata" ? 2000 : 500);
+      return;
+    }
+    if (typeof value === "number" || typeof value === "boolean") {
+      safe[key] = value;
+      return;
+    }
+    if (Array.isArray(value)) {
+      safe[key] = value.slice(0, 12).map((item) => String(item).slice(0, 120));
+      return;
+    }
+    if (typeof value === "object") {
+      safe[key] = Object.fromEntries(
+        Object.entries(value)
+          .slice(0, 24)
+          .map(([nestedKey, nestedValue]) => [nestedKey, String(nestedValue ?? "").slice(0, 240)])
+      );
+    }
+  });
+  return safe;
+}
+
 function sendSiteAnalyticsEvent(eventType, details = {}) {
   if (shouldSkipSiteAnalytics()) {
     return;
   }
 
+  const safeDetails = analyticsDetails(details);
   const payload = JSON.stringify({
     eventType,
     path: `${window.location.pathname}${window.location.search}`,
-    title: details.title || document.title,
+    title: safeDetails.title || document.title,
     referrer: document.referrer,
     sessionId: getSiteAnalyticsSessionId(),
     visitorId: getSiteAnalyticsVisitorId(),
+    device: clientAnalyticsDeviceInfo(),
+    ...safeDetails
   });
 
   fetch(siteAnalyticsEndpoint, {
@@ -5006,17 +5058,30 @@ const WirkungsraumLayer = (() => {
     const storedItem = savedItemById(item.id) || item;
     WoekUserSpace.upsertItem("saved_items", storedItem, { limit: 300, timestampField: "saved_at" });
     const itemIds = Array.from(new Set([item.id, ...collection.item_ids]));
-    return updateCollection(collection.id, { item_ids: itemIds }, true);
+    const updated = updateCollection(collection.id, { item_ids: itemIds }, true);
+    trackWirkungsraumEvent("collection_item_add", storedItem, {
+      collection_id: collection.id,
+      collection_title: collection.title
+    });
+    return updated;
   }
 
   function removeItemFromCollection(collectionIdValue, itemId) {
     const collection = findCollection(collectionIdValue);
     if (!collection || !itemId) return null;
-    return updateCollection(
+    const storedItem = savedItemById(itemId);
+    const updated = updateCollection(
       collection.id,
       { item_ids: collection.item_ids.filter((existingId) => existingId !== itemId) },
       true
     );
+    if (storedItem) {
+      trackWirkungsraumEvent("collection_item_remove", storedItem, {
+        collection_id: collection.id,
+        collection_title: collection.title
+      });
+    }
+    return updated;
   }
 
   function removeItemFromAllCollections(itemId) {
@@ -5037,14 +5102,31 @@ const WirkungsraumLayer = (() => {
     });
   }
 
+  function trackWirkungsraumEvent(eventType, item = currentItem(), extra = {}) {
+    if (typeof sendSiteAnalyticsEvent !== "function" || !item?.id) return;
+    sendSiteAnalyticsEvent(eventType, {
+      title: `Merkzettel: ${eventType}: ${item.title}`,
+      entityType: item.type || "Inhalt",
+      entityId: item.id,
+      entityTitle: item.title,
+      entityUrl: item.url,
+      entityCategory: item.category,
+      tags: Array.isArray(item.tags) ? item.tags.slice(0, 8) : [],
+      metadata: extra
+    });
+  }
+
   function saveItem(item) {
-    WoekUserSpace.upsertItem("saved_items", item, { limit: 300, timestampField: "saved_at" });
+    const stored = WoekUserSpace.upsertItem("saved_items", item, { limit: 300, timestampField: "saved_at" });
+    trackWirkungsraumEvent("saved_item_add", stored || item);
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
   }
 
   function removeItem(id) {
+    const existing = savedItemById(id);
     WoekUserSpace.removeItem("saved_items", id);
     removeItemFromAllCollections(id);
+    if (existing) trackWirkungsraumEvent("saved_item_remove", existing);
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
   }
 
