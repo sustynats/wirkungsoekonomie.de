@@ -7,7 +7,8 @@ const IMPORT_VERSION = "2026.1-import";
 const SOURCE_VERSION = "2026.0";
 const TERM_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
 const TERM_BASE_DATE = "2026-05-21";
-const referenceReaderAssetVersion = "20260603-reference-reader-toc";
+const referenceReaderAssetVersion = "20260605-referenz-merkliste-ux";
+const sharedAssetVersion = "20260605-referenz-merkliste-ux";
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
@@ -237,7 +238,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage11"></script>
+  return `<script src="${base}assets/js/main.js?v=${sharedAssetVersion}"></script>
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 
@@ -254,7 +255,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage11}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${sharedAssetVersion}">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}

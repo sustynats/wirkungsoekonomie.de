@@ -5019,9 +5019,11 @@ const WirkungsraumLayer = (() => {
     return savedItems().some((item) => item.id === id);
   }
 
-  function buttonLabel(button, saved) {
-    button.textContent = saved ? "★ Gemerkt" : "⭐ Merken";
+  function buttonLabel(button, saved, item = currentItem()) {
+    button.textContent = saved ? "Nicht mehr merken" : "☆ Merken";
     button.setAttribute("aria-pressed", String(saved));
+    button.setAttribute("aria-label", saved ? `${item.title} aus der Merkliste entfernen` : `${item.title} merken`);
+    button.classList.toggle("is-saved", saved);
   }
 
   function injectSaveButton() {
@@ -5034,15 +5036,15 @@ const WirkungsraumLayer = (() => {
     button.type = "button";
     button.className = "btn btn-secondary wirkungsraum-save-button";
     button.dataset.wirkungsraumSave = item.id;
-    buttonLabel(button, isSaved(item.id));
+    buttonLabel(button, isSaved(item.id), item);
     button.addEventListener("click", () => {
       if (isSaved(item.id)) {
         removeItem(item.id);
-        buttonLabel(button, false);
+        buttonLabel(button, false, item);
         return;
       }
       saveItem(currentItem());
-      buttonLabel(button, true);
+      buttonLabel(button, true, currentItem());
     });
 
     const actions = document.querySelector(".hero-actions");
@@ -6542,7 +6544,15 @@ const WirkungsraumLayer = (() => {
       return { kind: "bibliothek", label: "Nur gemerkt", countLabel: "gemerkte Inhalte", empty: "In diesem Verzeichnis ist noch nichts gemerkt." };
     }
     if (normalized === "/referenz/" || normalized === "/buch/" || normalized === "/buch.html") {
-      return { kind: "referenz", label: "Nur gemerkt", countLabel: "gemerkte Kapitel", empty: "In diesem Referenzverzeichnis ist noch nichts gemerkt." };
+      return {
+        kind: "referenz",
+        label: "Merkliste",
+        countLabel: "gemerkt",
+        empty: "Noch keine Kapitel in deiner Merkliste.",
+        emptyHelp: "Tippe bei einem Kapitel auf „Merken“, dann erscheint es hier.",
+        allLabel: "Alle Kapitel",
+        savedLabel: "Merkliste"
+      };
     }
     if (
       normalized === "/wirkungsradar/" ||
@@ -6598,7 +6608,12 @@ const WirkungsraumLayer = (() => {
     });
   }
 
-  function hubCandidates(root) {
+  function referenceChapterCards(root) {
+    return Array.from(root.querySelectorAll(".chapter-card-grid[data-chapter-grid] > .chapter-card")).filter((element) => element instanceof HTMLElement);
+  }
+
+  function hubCandidates(root, config = null) {
+    if (config?.kind === "referenz") return referenceChapterCards(root);
     const candidates = Array.from(root.querySelectorAll(hubCandidateSelector)).filter((element) => {
       if (!(element instanceof HTMLElement)) return false;
       if (element.closest("[data-wirkungsraum-hub-filter], [data-search-exclude], header, footer, nav, .breadcrumb")) return false;
@@ -6611,7 +6626,110 @@ const WirkungsraumLayer = (() => {
     return localContentLinks(element).some((link) => savedPaths.has(comparablePath(link.href)));
   }
 
+  function uniqueCompactStrings(values, limit = 12) {
+    const seen = new Set();
+    const result = [];
+    values.forEach((value) => {
+      const text = String(value || "").replace(/\s+/g, " ").trim();
+      if (!text) return;
+      const key = text.toLowerCase();
+      if (seen.has(key)) return;
+      seen.add(key);
+      result.push(text);
+    });
+    return result.slice(0, limit);
+  }
+
+  function referenceChapterItem(card) {
+    if (!(card instanceof HTMLElement)) return null;
+    const link = card.querySelector(".chapter-card-main[href]");
+    if (!(link instanceof HTMLAnchorElement)) return null;
+    const path = new URL(link.href, window.location.origin).pathname.replace(/\/index\.html$/, "/");
+    const title = (card.querySelector("h3")?.textContent || link.textContent || "Referenzkapitel").replace(/\s+/g, " ").trim();
+    const number = (card.querySelector(".chapter-number")?.textContent || "").replace(/\s+/g, " ").trim();
+    const meta = Array.from(card.querySelectorAll(".chapter-card-meta span")).map((node) => node.textContent || "");
+    const pills = Array.from(card.querySelectorAll(".reference-pill-list li")).map((node) => node.textContent || "");
+    const tags = uniqueCompactStrings([...meta, ...pills], 10);
+    return {
+      id: path.replace(/^\/+/, "") || "referenz/",
+      type: "Kapitel",
+      title: number ? `${number}: ${title}` : title,
+      url: path,
+      saved_at: new Date().toISOString(),
+      tags,
+      category: meta[0] || "Online-Referenz"
+    };
+  }
+
+  function itemSavedByPath(item, savedPaths = savedPathSet()) {
+    return Boolean(item?.id && (isSaved(item.id) || savedPaths.has(comparablePath(item.url))));
+  }
+
+  function removeItemByPath(item) {
+    const targetPath = comparablePath(item?.url);
+    const ids = savedItems()
+      .filter((saved) => saved.id === item?.id || comparablePath(saved.url) === targetPath || comparablePath(saved.href) === targetPath)
+      .map((saved) => saved.id)
+      .filter(Boolean);
+    if (!ids.length && item?.id) {
+      removeItem(item.id);
+      return;
+    }
+    Array.from(new Set(ids)).forEach((id) => removeItem(id));
+  }
+
+  function renderReferenceChapterBookmark(card, savedPaths = savedPathSet()) {
+    const item = referenceChapterItem(card);
+    if (!item) return;
+    let row = card.querySelector("[data-reference-bookmark-row]");
+    if (!row) {
+      row = document.createElement("div");
+      row.className = "reference-bookmark-row";
+      row.dataset.referenceBookmarkRow = "true";
+      row.innerHTML = `
+        <span class="reference-bookmark-status" data-reference-bookmark-status hidden>★ Gemerkt</span>
+        <button class="reference-bookmark-button" type="button" data-reference-bookmark-button></button>
+      `;
+      const meta = card.querySelector(".chapter-card-meta");
+      if (meta) meta.insertAdjacentElement("afterend", row);
+      else card.append(row);
+    }
+
+    const saved = itemSavedByPath(item, savedPaths);
+    const status = row.querySelector("[data-reference-bookmark-status]");
+    const button = row.querySelector("[data-reference-bookmark-button]");
+    if (status instanceof HTMLElement) status.hidden = !saved;
+    if (button instanceof HTMLButtonElement) {
+      button.textContent = saved ? "Nicht mehr merken" : "☆ Merken";
+      button.classList.toggle("is-saved", saved);
+      button.setAttribute("aria-pressed", String(saved));
+      button.setAttribute("aria-label", saved ? `${item.title} aus der Merkliste entfernen` : `${item.title} merken`);
+      if (!button.dataset.referenceBookmarkBound) {
+        button.dataset.referenceBookmarkBound = "true";
+        button.addEventListener("click", () => {
+          const nextItem = referenceChapterItem(card);
+          if (!nextItem) return;
+          if (itemSavedByPath(nextItem)) removeItemByPath(nextItem);
+          else saveItem({ ...nextItem, saved_at: new Date().toISOString() });
+          renderReferenceChapterBookmark(card);
+        });
+      }
+    }
+  }
+
+  function renderReferenceChapterBookmarks(root) {
+    const paths = savedPathSet();
+    referenceChapterCards(root).forEach((card) => renderReferenceChapterBookmark(card, paths));
+  }
+
   function insertHubFilter(root, config, control) {
+    if (config.kind === "referenz") {
+      const filterbar = root.querySelector("#kapitel [data-reference-filterbar]");
+      if (filterbar) {
+        filterbar.insertAdjacentElement("beforebegin", control);
+        return;
+      }
+    }
     if (config.kind === "suche") {
       const target = root.querySelector(".search-quick-filter-panel") || root.querySelector(".search-box");
       if (target) {
@@ -6628,11 +6746,92 @@ const WirkungsraumLayer = (() => {
     root.insertBefore(control, firstSection || root.firstChild);
   }
 
+  function initReferenceSavedFilter(root, config) {
+    const control = document.createElement("section");
+    control.className = "wirkungsraum-hub-filter wirkungsraum-reference-filter";
+    control.dataset.wirkungsraumHubFilter = config.kind;
+    control.dataset.searchExclude = "true";
+    control.innerHTML = `
+      <div class="wirkungsraum-reference-filter-copy">
+        <p class="card-kicker">Merkliste</p>
+        <strong>Kapitelansicht</strong>
+      </div>
+      <div class="wirkungsraum-segmented-control" role="group" aria-label="Kapitelansicht wählen">
+        <button type="button" aria-pressed="true" data-reference-view="all">${escapeHtml(config.allLabel)}</button>
+        <button type="button" aria-pressed="false" data-reference-view="saved">${escapeHtml(config.savedLabel)}</button>
+      </div>
+      <span class="wirkungsraum-hub-filter-count" data-wirkungsraum-hub-filter-count aria-live="polite"></span>
+      <div class="wirkungsraum-hub-empty wirkungsraum-reference-empty" data-wirkungsraum-hub-empty hidden>
+        <strong>${escapeHtml(config.empty)}</strong>
+        <span>${escapeHtml(config.emptyHelp)}</span>
+        <button class="text-link" type="button" data-reference-show-all>Alle Kapitel anzeigen</button>
+      </div>
+    `;
+    insertHubFilter(root, config, control);
+
+    const allButton = control.querySelector("[data-reference-view='all']");
+    const savedButton = control.querySelector("[data-reference-view='saved']");
+    const count = control.querySelector("[data-wirkungsraum-hub-filter-count]");
+    const empty = control.querySelector("[data-wirkungsraum-hub-empty]");
+    let mode = "all";
+
+    const setMode = (nextMode) => {
+      mode = nextMode === "saved" ? "saved" : "all";
+      [allButton, savedButton].forEach((button) => {
+        if (!(button instanceof HTMLButtonElement)) return;
+        const active = button.dataset.referenceView === mode;
+        button.setAttribute("aria-pressed", String(active));
+        button.classList.toggle("active", active);
+      });
+      apply();
+    };
+
+    const apply = () => {
+      renderReferenceChapterBookmarks(root);
+      const cards = referenceChapterCards(root);
+      const paths = savedPathSet();
+      let savedCount = 0;
+
+      cards.forEach((card) => {
+        const item = referenceChapterItem(card);
+        const saved = itemSavedByPath(item, paths);
+        if (saved) savedCount += 1;
+        if (mode === "saved" && !saved) card.dataset.wirkungsraumFilterHidden = "true";
+        else delete card.dataset.wirkungsraumFilterHidden;
+      });
+
+      if (count) {
+        count.textContent = mode === "saved"
+          ? `${savedCount} gemerkt · ${cards.length} Kapitel gesamt`
+          : `${savedCount} gemerkt · ${cards.length} Kapitel gesamt`;
+      }
+      if (empty instanceof HTMLElement) empty.hidden = !(mode === "saved" && savedCount === 0);
+    };
+
+    if (allButton instanceof HTMLButtonElement) allButton.addEventListener("click", () => setMode("all"));
+    if (savedButton instanceof HTMLButtonElement) savedButton.addEventListener("click", () => setMode("saved"));
+    control.querySelector("[data-reference-show-all]")?.addEventListener("click", () => setMode("all"));
+
+    let pending = 0;
+    const observer = new MutationObserver(() => {
+      window.clearTimeout(pending);
+      pending = window.setTimeout(apply, 80);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    document.addEventListener("wirkungsraum:changed", apply);
+    apply();
+    window.setTimeout(apply, 250);
+  }
+
   function initSavedOnlyHubFilters() {
     const config = hubFilterConfig();
     if (!config) return;
     const root = document.querySelector("main");
     if (!root || document.querySelector("[data-wirkungsraum-hub-filter]")) return;
+    if (config.kind === "referenz") {
+      initReferenceSavedFilter(root, config);
+      return;
+    }
 
     const control = document.createElement("section");
     control.className = `wirkungsraum-hub-filter wirkungsraum-hub-filter-${config.kind}`;
@@ -6653,7 +6852,7 @@ const WirkungsraumLayer = (() => {
     const apply = () => {
       const active = button.getAttribute("aria-pressed") === "true";
       const paths = savedPathSet();
-      const candidates = hubCandidates(root);
+      const candidates = hubCandidates(root, config);
       let savedCount = 0;
 
       candidates.forEach((candidate) => {

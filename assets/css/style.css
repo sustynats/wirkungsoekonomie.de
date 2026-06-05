@@ -543,6 +543,154 @@
   font-weight: 700;
 }
 
+.wirkungsraum-reference-filter {
+  display: grid;
+  grid-template-columns: auto minmax(0, max-content) minmax(12rem, 1fr);
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+
+.wirkungsraum-reference-filter-copy {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.wirkungsraum-reference-filter-copy .card-kicker {
+  margin: 0;
+}
+
+.wirkungsraum-reference-filter-copy strong {
+  color: var(--navy);
+}
+
+.wirkungsraum-segmented-control {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.wirkungsraum-segmented-control button {
+  min-height: 2.45rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.52rem 0.9rem;
+  background: transparent;
+  color: var(--navy);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 850;
+}
+
+.wirkungsraum-segmented-control button:hover,
+.wirkungsraum-segmented-control button:focus-visible {
+  border-color: rgba(47, 125, 92, 0.35);
+  outline: none;
+}
+
+.wirkungsraum-segmented-control button[aria-pressed="true"],
+.wirkungsraum-segmented-control button.active {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--white);
+}
+
+.wirkungsraum-reference-empty {
+  display: grid;
+  gap: 0.35rem;
+  padding-top: 0.4rem;
+}
+
+.wirkungsraum-reference-empty[hidden] {
+  display: none;
+}
+
+.wirkungsraum-reference-empty button.text-link {
+  justify-self: start;
+  border: 0;
+  background: transparent;
+  color: var(--green-dark);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 850;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.reference-bookmark-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.reference-bookmark-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  border: 1px solid rgba(47, 125, 92, 0.28);
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  background: rgba(47, 125, 92, 0.1);
+  color: var(--green-dark);
+  font-weight: 850;
+}
+
+.reference-bookmark-button {
+  min-height: 2rem;
+  border: 1px solid rgba(11, 16, 32, 0.18);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  background: transparent;
+  color: var(--navy);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 850;
+}
+
+.reference-bookmark-button:hover,
+.reference-bookmark-button:focus-visible {
+  border-color: rgba(47, 125, 92, 0.5);
+  background: rgba(47, 125, 92, 0.08);
+  outline: none;
+}
+
+.reference-bookmark-button.is-saved {
+  border-color: rgba(11, 16, 32, 0.2);
+  background: var(--white);
+  color: var(--navy);
+}
+
+@media (max-width: 720px) {
+  .wirkungsraum-reference-filter {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .wirkungsraum-segmented-control {
+    width: 100%;
+  }
+
+  .wirkungsraum-segmented-control button {
+    flex: 1 1 9rem;
+  }
+
+  .reference-bookmark-row {
+    align-items: stretch;
+  }
+
+  .reference-bookmark-button {
+    flex: 1 1 100%;
+  }
+}
+
 [data-wirkungsraum-filter-hidden="true"] {
   display: none !important;
 }
