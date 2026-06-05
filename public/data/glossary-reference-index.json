@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T13:41:54.548Z",
+  "generatedAt": "2026-06-05T14:47:27.323Z",
   "source": "build-glossary-reference-index",
   "pages": 1009,
   "terms": {
@@ -15429,8 +15429,7 @@
       ],
       "totalReferences": 2,
       "storedReferences": 2,
-      "determining": [],
-      "related": [
+      "determining": [
         {
           "termSlug": "biogas",
           "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
@@ -15439,18 +15438,21 @@
           "contentType": "blog",
           "date": "2026-03-03",
           "anchor": "",
-          "score": 111,
+          "score": 171,
           "matchCount": 2,
-          "matchType": "medium",
+          "matchType": "strong",
           "reasons": [
             "lead match",
+            "related proximity 2",
             "2 occurrences",
             "blog +25"
           ],
           "snippets": [
             "...werden dabei in der politischen Debatte insbesondere verstanden: Biomethan (aufbereitetes Biogas) synthetisches Methan aus Power-to-Gas-Prozessen perspektivisch auch grüner Wasserstoff Der politische Anspruch lautet, Klimaschutz mit bestehender Infrastrukt..."
           ]
-        },
+        }
+      ],
+      "related": [
         {
           "termSlug": "biogas",
           "pageUrl": "/bibliothek/nachhaltiger-einzelhandel/",
@@ -15480,11 +15482,12 @@
           "contentType": "blog",
           "date": "2026-03-03",
           "anchor": "",
-          "score": 111,
+          "score": 171,
           "matchCount": 2,
-          "matchType": "medium",
+          "matchType": "strong",
           "reasons": [
             "lead match",
+            "related proximity 2",
             "2 occurrences",
             "blog +25"
           ],
@@ -15578,6 +15581,220 @@
       "determining": [],
       "related": [],
       "references": []
+    },
+    "biomasse": {
+      "label": "Biomasse",
+      "aliases": [
+        "organische Masse",
+        "Biomasse",
+        "biomasse"
+      ],
+      "totalReferences": 5,
+      "storedReferences": 5,
+      "determining": [
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/blog/was-ist-nachhaltigkeit-wirklich.html",
+          "canonicalUrl": "/blog/was-ist-nachhaltigkeit-wirklich.html",
+          "pageTitle": "Was ist Nachhaltigkeit wirklich? - Journal der Wirkungsökonomie",
+          "contentType": "blog",
+          "date": "",
+          "anchor": "",
+          "score": 161,
+          "matchCount": 2,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...n. Erneuerbare Energien sind dafür das beste Beispiel. Strom aus Sonne, Wind, Wasser oder Biomasse bedeutet nicht nur Klimaschutz. Er bedeutet auch: weniger Abhängigkeit von Öl, Gas und Kohle aus anderen Ländern. Jede Kilowattstunde, die wir selbst erzeugen,..."
+          ]
+        },
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "pageTitle": "Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz",
+          "contentType": "blog",
+          "date": "2026-03-03",
+          "anchor": "",
+          "score": 159,
+          "matchCount": 8,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "8 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...m Wesentlichen sind drei Varianten relevant: 1. Biomethan Es entsteht durch Vergärung von Biomasse (z. B. Mais, Gülle, Bioabfälle). Das Rohbiogas wird auf Erdgasqualität aufbereitet und in das Gasnetz eingespeist. 2. Synthetisches Methan (Power-to-Gas) Hier ..."
+          ]
+        }
+      ],
+      "related": [
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 116,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...ich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontrolle [I-K53-1..."
+          ]
+        },
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/referenz/kapitel-053-markttransformation/",
+          "canonicalUrl": "/referenz/kapitel-053-markttransformation/",
+          "pageTitle": "Kapitel 53 - Markttransformation - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontrolle [I-K53-1..."
+          ]
+        },
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 81,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...einput wird potenziell diversifizierbar. Strom kann erzeugt werden aus: Wind Sonne Wasser Biomasse Geothermie konventionellen Quellen Die strukturelle Frage lautet daher nicht: „Ist Strom heute sauber?“ Sondern: „Ist das System transformierbar?“ 3. Zentralis..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/blog/was-ist-nachhaltigkeit-wirklich.html",
+          "canonicalUrl": "/blog/was-ist-nachhaltigkeit-wirklich.html",
+          "pageTitle": "Was ist Nachhaltigkeit wirklich? - Journal der Wirkungsökonomie",
+          "contentType": "blog",
+          "date": "",
+          "anchor": "",
+          "score": 161,
+          "matchCount": 2,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...n. Erneuerbare Energien sind dafür das beste Beispiel. Strom aus Sonne, Wind, Wasser oder Biomasse bedeutet nicht nur Klimaschutz. Er bedeutet auch: weniger Abhängigkeit von Öl, Gas und Kohle aus anderen Ländern. Jede Kilowattstunde, die wir selbst erzeugen,..."
+          ]
+        },
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "pageTitle": "Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz",
+          "contentType": "blog",
+          "date": "2026-03-03",
+          "anchor": "",
+          "score": 159,
+          "matchCount": 8,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "8 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...m Wesentlichen sind drei Varianten relevant: 1. Biomethan Es entsteht durch Vergärung von Biomasse (z. B. Mais, Gülle, Bioabfälle). Das Rohbiogas wird auf Erdgasqualität aufbereitet und in das Gasnetz eingespeist. 2. Synthetisches Methan (Power-to-Gas) Hier ..."
+          ]
+        },
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 116,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...ich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontrolle [I-K53-1..."
+          ]
+        },
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/referenz/kapitel-053-markttransformation/",
+          "canonicalUrl": "/referenz/kapitel-053-markttransformation/",
+          "pageTitle": "Kapitel 53 - Markttransformation - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontrolle [I-K53-1..."
+          ]
+        },
+        {
+          "termSlug": "biomasse",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 81,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...einput wird potenziell diversifizierbar. Strom kann erzeugt werden aus: Wind Sonne Wasser Biomasse Geothermie konventionellen Quellen Die strukturelle Frage lautet daher nicht: „Ist Strom heute sauber?“ Sondern: „Ist das System transformierbar?“ 3. Zentralis..."
+          ]
+        }
+      ]
     },
     "black-mass": {
       "label": "Black Mass",
@@ -16149,6 +16366,20 @@
           ]
         }
       ]
+    },
+    "brennstoffkette": {
+      "label": "Brennstoffkette",
+      "aliases": [
+        "Brennstoffkette",
+        "brennstoffkette",
+        "Brennstoffketten",
+        "Fuel Chain"
+      ],
+      "totalReferences": 0,
+      "storedReferences": 0,
+      "determining": [],
+      "related": [],
+      "references": []
     },
     "bundesregierung": {
       "label": "Bundesregierung",
@@ -34406,12 +34637,247 @@
         }
       ]
     },
+    "direkte-elektrifizierung": {
+      "label": "Direkte Elektrifizierung",
+      "aliases": [
+        "Direkte Elektrifizierung",
+        "direkte elektrifizierung",
+        "Direktnutzung von Strom",
+        "direkt elektrifizieren",
+        "Elektrifizierung"
+      ],
+      "totalReferences": 5,
+      "storedReferences": 5,
+      "determining": [
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 389,
+          "matchCount": 11,
+          "matchType": "defined",
+          "reasons": [
+            "h3 match",
+            "definition pattern",
+            "related proximity 4",
+            "11 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...e tauchen im CO₂-Rucksack nicht auf - sind aber gesellschaftlich relevant. Neben direkter Elektrifizierung existiert mit synthetischen Kraftstoffen (eFuels) ein alternativer Energiepfad, der gesondert betrachtet werden muss. III. Nach dem Betrieb - Zirkularität oder..."
+          ]
+        },
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "pageTitle": "Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz",
+          "contentType": "blog",
+          "date": "2026-03-03",
+          "anchor": "",
+          "score": 199,
+          "matchCount": 19,
+          "matchType": "strong",
+          "reasons": [
+            "h2 match",
+            "related proximity 1",
+            "19 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "... Physikalische Effizienz und Energiepfadlänge: Warum Moleküle energetisch teurer sind als direkte Elektrifizierung Unabhängig von Emissionsbilanzen stellt sich eine grundlegende Frage: Wie effizient ist der Energiepfad selbst? Denn Klimapolitik ist nicht nur eine Frage der ..."
+          ]
+        },
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 121,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...ndustrie als verpflichtender Transformationspfad (Prozessoptimierung, Wärmerückgewinnung, Elektrifizierung, Lastmanagement) • Energiekrisen-Resilienz: Schutz vor Blackouts, geopolitischen Risiken, Preisvolatilität Seite 33 Begleitdokument zum Systemmodell der Wirkun..."
+          ]
+        }
+      ],
+      "related": [
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "canonicalUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "pageTitle": "Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 93,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "1 occurrence",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...tistik, LCA/EPD, Lieferantennachweise, Audits oder Nutzerfeedback sein. Integritätsregel: Elektrifizierung allein genügt nicht, wenn Rohstoffe, Flächen und Zugang negativ bleiben. Die Reverse Merit Order stellt sicher, dass zentrale Schäden nicht durch gut vermarktb..."
+          ]
+        },
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...Energien senkt keine Systemkosten - sie verlagert sie . Denn der Strombedarf sinkt nicht. Elektrifizierung von Industrie, Wärme und Verkehr erhöht ihn weiter. Wird erneuerbare Erzeugung gedeckelt, entsteht zwangsläufig eine Lücke, die durch: fossile Restkapazitäten,..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 389,
+          "matchCount": 11,
+          "matchType": "defined",
+          "reasons": [
+            "h3 match",
+            "definition pattern",
+            "related proximity 4",
+            "11 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...e tauchen im CO₂-Rucksack nicht auf - sind aber gesellschaftlich relevant. Neben direkter Elektrifizierung existiert mit synthetischen Kraftstoffen (eFuels) ein alternativer Energiepfad, der gesondert betrachtet werden muss. III. Nach dem Betrieb - Zirkularität oder..."
+          ]
+        },
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "pageTitle": "Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz",
+          "contentType": "blog",
+          "date": "2026-03-03",
+          "anchor": "",
+          "score": 199,
+          "matchCount": 19,
+          "matchType": "strong",
+          "reasons": [
+            "h2 match",
+            "related proximity 1",
+            "19 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "... Physikalische Effizienz und Energiepfadlänge: Warum Moleküle energetisch teurer sind als direkte Elektrifizierung Unabhängig von Emissionsbilanzen stellt sich eine grundlegende Frage: Wie effizient ist der Energiepfad selbst? Denn Klimapolitik ist nicht nur eine Frage der ..."
+          ]
+        },
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 121,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...ndustrie als verpflichtender Transformationspfad (Prozessoptimierung, Wärmerückgewinnung, Elektrifizierung, Lastmanagement) • Energiekrisen-Resilienz: Schutz vor Blackouts, geopolitischen Risiken, Preisvolatilität Seite 33 Begleitdokument zum Systemmodell der Wirkun..."
+          ]
+        },
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "canonicalUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "pageTitle": "Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 93,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "1 occurrence",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...tistik, LCA/EPD, Lieferantennachweise, Audits oder Nutzerfeedback sein. Integritätsregel: Elektrifizierung allein genügt nicht, wenn Rohstoffe, Flächen und Zugang negativ bleiben. Die Reverse Merit Order stellt sicher, dass zentrale Schäden nicht durch gut vermarktb..."
+          ]
+        },
+        {
+          "termSlug": "direkte-elektrifizierung",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...Energien senkt keine Systemkosten - sie verlagert sie . Denn der Strombedarf sinkt nicht. Elektrifizierung von Industrie, Wärme und Verkehr erhöht ihn weiter. Wird erneuerbare Erzeugung gedeckelt, entsteht zwangsläufig eine Lücke, die durch: fossile Restkapazitäten,..."
+          ]
+        }
+      ]
+    },
     "direktrecycling-batterie": {
       "label": "Direktrecycling",
       "aliases": [
         "Direktrecycling",
         "direktrecycling batterie",
         "Direktrecycling Batterie"
+      ],
+      "totalReferences": 0,
+      "storedReferences": 0,
+      "determining": [],
+      "related": [],
+      "references": []
+    },
+    "direktstrom": {
+      "label": "Direktstrom",
+      "aliases": [
+        "Direktstrom",
+        "direktstrom",
+        "direkter Strom"
       ],
       "totalReferences": 0,
       "storedReferences": 0,
@@ -38680,6 +39146,108 @@
           ],
           "snippets": [
             "...li/reg_del/2023/2772/oj/eng - GRI Standards: https://www.globalreporting.org/standards/ - EFRAG - ESRS: https://www.efrag.org/en/sustainability-reporting/esrs Zentrale Begriffe dieses Kapitels Produktwirkung Produktwirkung bezeichnet die tatsächlichen pos..."
+          ]
+        }
+      ]
+    },
+    "efuels": {
+      "label": "eFuels",
+      "aliases": [
+        "synthetische Kraftstoffe",
+        "synthetischer Kraftstoff",
+        "Power-to-Liquid",
+        "E-Fuels",
+        "e-Fuels",
+        "eFuels",
+        "efuels"
+      ],
+      "totalReferences": 2,
+      "storedReferences": 2,
+      "determining": [
+        {
+          "termSlug": "efuels",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 339,
+          "matchCount": 32,
+          "matchType": "defined",
+          "reasons": [
+            "h2 match",
+            "h3 match",
+            "related proximity 5",
+            "32 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...tlich relevant. Neben direkter Elektrifizierung existiert mit synthetischen Kraftstoffen (eFuels) ein alternativer Energiepfad, der gesondert betrachtet werden muss. III. Nach dem Betrieb - Zirkularität oder Verlust? Der dritte Zeitabschnitt wird häufig un..."
+          ]
+        }
+      ],
+      "related": [
+        {
+          "termSlug": "efuels",
+          "pageUrl": "/blog/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.html",
+          "canonicalUrl": "/blog/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.html",
+          "pageTitle": "Technologieoffenheit - Freiheit oder Fossilfalle?",
+          "contentType": "blog",
+          "date": "2025-10-10",
+          "anchor": "",
+          "score": 78,
+          "matchCount": 6,
+          "matchType": "medium",
+          "reasons": [
+            "6 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...erin Reiche fordert Technologieoffenheit in der Autoindustrie - und meint damit vor allem E-Fuels . Doch E-Fuels sind ein Energieverlustgeschäft . Sie brauchen fünfmal mehr Strom als batterieelektrische Fahrzeuge, stoßen weiter Stickoxide (NOx) aus und veru..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "efuels",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 339,
+          "matchCount": 32,
+          "matchType": "defined",
+          "reasons": [
+            "h2 match",
+            "h3 match",
+            "related proximity 5",
+            "32 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...tlich relevant. Neben direkter Elektrifizierung existiert mit synthetischen Kraftstoffen (eFuels) ein alternativer Energiepfad, der gesondert betrachtet werden muss. III. Nach dem Betrieb - Zirkularität oder Verlust? Der dritte Zeitabschnitt wird häufig un..."
+          ]
+        },
+        {
+          "termSlug": "efuels",
+          "pageUrl": "/blog/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.html",
+          "canonicalUrl": "/blog/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.html",
+          "pageTitle": "Technologieoffenheit - Freiheit oder Fossilfalle?",
+          "contentType": "blog",
+          "date": "2025-10-10",
+          "anchor": "",
+          "score": 78,
+          "matchCount": 6,
+          "matchType": "medium",
+          "reasons": [
+            "6 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...erin Reiche fordert Technologieoffenheit in der Autoindustrie - und meint damit vor allem E-Fuels . Doch E-Fuels sind ein Energieverlustgeschäft . Sie brauchen fünfmal mehr Strom als batterieelektrische Fahrzeuge, stoßen weiter Stickoxide (NOx) aus und veru..."
           ]
         }
       ]
@@ -43904,6 +44472,235 @@
         }
       ]
     },
+    "energiefluss": {
+      "label": "Energiefluss",
+      "aliases": [
+        "natürlicher Energiefluss",
+        "natürliche Energieflüsse",
+        "Energieflüsse",
+        "Energiefluss",
+        "energiefluss"
+      ],
+      "totalReferences": 5,
+      "storedReferences": 5,
+      "determining": [],
+      "related": [
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 116,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...ist immer Veränderung von Wirklichkeit. Wenn produziert wird, verändern sich Materialien, Energieflüsse, Arbeitsbedingungen, Lieferketten, Landschaften, Körper, Beziehungen, Erwartungen und Risiken. Wenn investiert wird, entstehen Möglichkeiten für bestimmte Zukü..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/dokumente/wp-wohnungsmarkt/",
+          "canonicalUrl": "/dokumente/wp-wohnungsmarkt/",
+          "pageTitle": "WP Wohnungsmarkt - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 107,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...hnungsmarkt: Bezahlbar, nachhaltig, gerecht 75 3. Wirkungsflüsse in den Hauptprozessen a) Energiefluss Quelle Wirkung Datenerfassung Steuerwirkung PV-Mieterstrom +3 Smart Meter, EVU-API 0 % WUStG + Bonus für Mieter:innen Wärmepumpe (EE) +2 Smart Meter Wärme Steu..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/",
+          "canonicalUrl": "/referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/",
+          "pageTitle": "Kapitel 55 - Wachstum, Innovation und Transformation innerhalb planetarer Grenzen - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 88,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "1 occurrence",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ehen, wenn vorhandene Stoffe, Bauteile, Produkte, Maschinen, Gebäude, Daten, Kompetenzen, Energieflüsse und Organisationsformen neu kombiniert werden. Genau hier berühren sich Schumpeter und Kreislaufwirtschaft [I-K55-2; I-K55-3]. Ein altes Produkt wird dann nich..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/referenz/kapitel-009-die-einfache-idee/",
+          "canonicalUrl": "/referenz/kapitel-009-die-einfache-idee/",
+          "pageTitle": "Kapitel 9 - Die einfache Idee - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 88,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "1 occurrence",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ist immer Veränderung von Wirklichkeit. Wenn produziert wird, verändern sich Materialien, Energieflüsse, Arbeitsbedingungen, Lieferketten, Landschaften, Körper, Beziehungen, Erwartungen und Risiken. Wenn investiert wird, entstehen Möglichkeiten für bestimmte Zukü..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 73,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "1 occurrence",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ine Energieprobleme, sondern Verteilungs- und Steuerungsprobleme . Sie entstehen dort, wo Energieflüsse nicht intelligent gelenkt, gespeichert oder zeitlich genutzt werden. Wer in einer solchen Situation die Energiequelle begrenzt, statt die Verteilung zu optimie..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 116,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...ist immer Veränderung von Wirklichkeit. Wenn produziert wird, verändern sich Materialien, Energieflüsse, Arbeitsbedingungen, Lieferketten, Landschaften, Körper, Beziehungen, Erwartungen und Risiken. Wenn investiert wird, entstehen Möglichkeiten für bestimmte Zukü..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/dokumente/wp-wohnungsmarkt/",
+          "canonicalUrl": "/dokumente/wp-wohnungsmarkt/",
+          "pageTitle": "WP Wohnungsmarkt - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 107,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...hnungsmarkt: Bezahlbar, nachhaltig, gerecht 75 3. Wirkungsflüsse in den Hauptprozessen a) Energiefluss Quelle Wirkung Datenerfassung Steuerwirkung PV-Mieterstrom +3 Smart Meter, EVU-API 0 % WUStG + Bonus für Mieter:innen Wärmepumpe (EE) +2 Smart Meter Wärme Steu..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/",
+          "canonicalUrl": "/referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/",
+          "pageTitle": "Kapitel 55 - Wachstum, Innovation und Transformation innerhalb planetarer Grenzen - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 88,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "1 occurrence",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ehen, wenn vorhandene Stoffe, Bauteile, Produkte, Maschinen, Gebäude, Daten, Kompetenzen, Energieflüsse und Organisationsformen neu kombiniert werden. Genau hier berühren sich Schumpeter und Kreislaufwirtschaft [I-K55-2; I-K55-3]. Ein altes Produkt wird dann nich..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/referenz/kapitel-009-die-einfache-idee/",
+          "canonicalUrl": "/referenz/kapitel-009-die-einfache-idee/",
+          "pageTitle": "Kapitel 9 - Die einfache Idee - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 88,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "1 occurrence",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ist immer Veränderung von Wirklichkeit. Wenn produziert wird, verändern sich Materialien, Energieflüsse, Arbeitsbedingungen, Lieferketten, Landschaften, Körper, Beziehungen, Erwartungen und Risiken. Wenn investiert wird, entstehen Möglichkeiten für bestimmte Zukü..."
+          ]
+        },
+        {
+          "termSlug": "energiefluss",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 73,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "1 occurrence",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ine Energieprobleme, sondern Verteilungs- und Steuerungsprobleme . Sie entstehen dort, wo Energieflüsse nicht intelligent gelenkt, gespeichert oder zeitlich genutzt werden. Wer in einer solchen Situation die Energiequelle begrenzt, statt die Verteilung zu optimie..."
+          ]
+        }
+      ]
+    },
+    "energieflussstrom": {
+      "label": "Energieflussstrom",
+      "aliases": [
+        "Energieflussstrom",
+        "energieflussstrom",
+        "Direktstrom",
+        "direkter Strom",
+        "Strom aus Energieflüssen",
+        "Strom aus natürlichen Energieflüssen"
+      ],
+      "totalReferences": 0,
+      "storedReferences": 0,
+      "determining": [],
+      "related": [],
+      "references": []
+    },
     "energiegemeinschaft": {
       "label": "Energiegemeinschaft",
       "aliases": [
@@ -44693,6 +45490,467 @@
       "related": [],
       "references": []
     },
+    "energietraeger": {
+      "label": "Energieträger",
+      "aliases": [
+        "Energiespeicherstoff",
+        "Primärenergieträger",
+        "energietraeger",
+        "Energieträger",
+        "Brennstoff"
+      ],
+      "totalReferences": 14,
+      "storedReferences": 14,
+      "determining": [
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 279,
+          "matchCount": 12,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 2",
+            "12 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...t Geologie. Der Verbrenner basiert primär auf: Stahl Aluminium Kupfer Kunststoffe fossile Energieträger (als Betriebsgrundlage) Das Elektrofahrzeug benötigt zusätzlich: Lithium Nickel / Mangan / Kobalt (je nach Zellchemie) Graphit Seltene Erden (für bestimmte Mot..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 222,
+          "matchCount": 4,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "4 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...uktion ist nicht wirklich billig. Ein Teil seines Preises wurde ausgelagert. Ein fossiler Energieträger ist nicht wirklich billig. Ein Teil seines Preises erscheint später als Klimaschaden, Gesundheitskosten, Anpassungsaufwand oder Sicherheitsrisiko. Ein Apfel au..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "canonicalUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "pageTitle": "Kapitel 3 - Kapital als Werkzeug und falscher Kompass - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 216,
+          "matchCount": 2,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...uktion ist nicht wirklich billig. Ein Teil seines Preises wurde ausgelagert. Ein fossiler Energieträger ist nicht wirklich billig. Ein Teil seines Preises erscheint später als Klimaschaden, Gesundheitskosten, Anpassungsaufwand oder Sicherheitsrisiko. Ein Apfel au..."
+          ]
+        }
+      ],
+      "related": [
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/dokumente/wp-wohnungsmarkt/",
+          "canonicalUrl": "/dokumente/wp-wohnungsmarkt/",
+          "pageTitle": "WP Wohnungsmarkt - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 107,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...eses Feld bewertet die direkte Klimawirkung eines Gebäudes: Emissionen, Energieeffizienz, Energieträger und Eigenversorgung. Es ist der stärkste Hebel zur Dekarbonisierung und zugleich der sichtbarste Kostenfaktor für Mieter:innen. Indikator Einheit Benchmark Sco..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "pageTitle": "Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz",
+          "contentType": "blog",
+          "date": "2026-03-03",
+          "anchor": "",
+          "score": 99,
+          "matchCount": 14,
+          "matchType": "medium",
+          "reasons": [
+            "14 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...her, sondern ein politischer Sammelbegriff. Technisch umfasst er mehrere unterschiedliche Energieträger, die jedoch eines gemeinsam haben: Es handelt sich um gasförmige Moleküle, die fossiles Erdgas ersetzen sollen. Im Wesentlichen sind drei Varianten relevant: 1..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/",
+          "canonicalUrl": "/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/",
+          "pageTitle": "Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ße kann Unfallrisiken erhöhen. Eine Wohnung kann Schimmelbelastung erzeugen. Ein fossiler Energieträger kann direkte Emissionen verursachen. Diese Risiken liegen nah an der Handlung, am Produkt oder am Zustand. Wirkungsrisiko zweiter Ordnung betrifft indirekte Fo..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/dokumente/wp-produkte/",
+          "canonicalUrl": "/dokumente/wp-produkte/",
+          "pageTitle": "WP Produkte - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 69,
+          "matchCount": 3,
+          "matchType": "medium",
+          "reasons": [
+            "3 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "... Produktionsstufe Kohle-basierter Strom (90 %) Erneuerbarer Strom (90 %) Quelle / Bericht Brennstoff / Rohstoff Steinkohle (Import, Tagebau) Wind-/Solarstrom (Inland) IEA Energy Statistics 2024; BMWK Energiedaten Erzeugung / Technologie Kraftwerksemissionen ≈ ..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "canonicalUrl": "/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "pageTitle": "Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert - sondern an seiner Logik",
+          "contentType": "blog",
+          "date": "2026-04-19",
+          "anchor": "",
+          "score": 67,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "4 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...folgt einem wiederkehrenden Muster: Rückgriff auf bestehende Strukturen Betonung fossiler Energieträger Ablehnung zentraler Transformationsprozesse Darstellung erneuerbarer Energien als problematisch Diese Positionen werden als pragmatisch inszeniert. Die implizi..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 279,
+          "matchCount": 12,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 2",
+            "12 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...t Geologie. Der Verbrenner basiert primär auf: Stahl Aluminium Kupfer Kunststoffe fossile Energieträger (als Betriebsgrundlage) Das Elektrofahrzeug benötigt zusätzlich: Lithium Nickel / Mangan / Kobalt (je nach Zellchemie) Graphit Seltene Erden (für bestimmte Mot..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 222,
+          "matchCount": 4,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "4 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...uktion ist nicht wirklich billig. Ein Teil seines Preises wurde ausgelagert. Ein fossiler Energieträger ist nicht wirklich billig. Ein Teil seines Preises erscheint später als Klimaschaden, Gesundheitskosten, Anpassungsaufwand oder Sicherheitsrisiko. Ein Apfel au..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "canonicalUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "pageTitle": "Kapitel 3 - Kapital als Werkzeug und falscher Kompass - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 216,
+          "matchCount": 2,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...uktion ist nicht wirklich billig. Ein Teil seines Preises wurde ausgelagert. Ein fossiler Energieträger ist nicht wirklich billig. Ein Teil seines Preises erscheint später als Klimaschaden, Gesundheitskosten, Anpassungsaufwand oder Sicherheitsrisiko. Ein Apfel au..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/dokumente/wp-wohnungsmarkt/",
+          "canonicalUrl": "/dokumente/wp-wohnungsmarkt/",
+          "pageTitle": "WP Wohnungsmarkt - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 107,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...eses Feld bewertet die direkte Klimawirkung eines Gebäudes: Emissionen, Energieeffizienz, Energieträger und Eigenversorgung. Es ist der stärkste Hebel zur Dekarbonisierung und zugleich der sichtbarste Kostenfaktor für Mieter:innen. Indikator Einheit Benchmark Sco..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "pageTitle": "Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz",
+          "contentType": "blog",
+          "date": "2026-03-03",
+          "anchor": "",
+          "score": 99,
+          "matchCount": 14,
+          "matchType": "medium",
+          "reasons": [
+            "14 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...her, sondern ein politischer Sammelbegriff. Technisch umfasst er mehrere unterschiedliche Energieträger, die jedoch eines gemeinsam haben: Es handelt sich um gasförmige Moleküle, die fossiles Erdgas ersetzen sollen. Im Wesentlichen sind drei Varianten relevant: 1..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/",
+          "canonicalUrl": "/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/",
+          "pageTitle": "Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ße kann Unfallrisiken erhöhen. Eine Wohnung kann Schimmelbelastung erzeugen. Ein fossiler Energieträger kann direkte Emissionen verursachen. Diese Risiken liegen nah an der Handlung, am Produkt oder am Zustand. Wirkungsrisiko zweiter Ordnung betrifft indirekte Fo..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/dokumente/wp-produkte/",
+          "canonicalUrl": "/dokumente/wp-produkte/",
+          "pageTitle": "WP Produkte - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 69,
+          "matchCount": 3,
+          "matchType": "medium",
+          "reasons": [
+            "3 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "... Produktionsstufe Kohle-basierter Strom (90 %) Erneuerbarer Strom (90 %) Quelle / Bericht Brennstoff / Rohstoff Steinkohle (Import, Tagebau) Wind-/Solarstrom (Inland) IEA Energy Statistics 2024; BMWK Energiedaten Erzeugung / Technologie Kraftwerksemissionen ≈ ..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "canonicalUrl": "/blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html",
+          "pageTitle": "Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert - sondern an seiner Logik",
+          "contentType": "blog",
+          "date": "2026-04-19",
+          "anchor": "",
+          "score": 67,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "4 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...folgt einem wiederkehrenden Muster: Rückgriff auf bestehende Strukturen Betonung fossiler Energieträger Ablehnung zentraler Transformationsprozesse Darstellung erneuerbarer Energien als problematisch Diese Positionen werden als pragmatisch inszeniert. Die implizi..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 67,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "4 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...n einer anderen physikalischen Logik. Sie erzeugen Strom dezentral, fluktuierend und ohne Brennstoff. Genau darin liegt ihre Stärke - und zugleich die Herausforderung für ein System, das auf Zentralität und Trägheit ausgelegt ist. Ein Architekturproblem, kein ..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/dokumente/woek-partei/",
+          "canonicalUrl": "/dokumente/woek-partei/",
+          "pageTitle": "WÖK-Partei - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 61,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...leunigen: Wind, Sonne, Speicher, Netze und WasserstoI werden prioritär gefördert, fossile Energieträger konsequent abgebaut. • Verkehrswende und nachhaltige Mobilität: Förderung von ÖPNV , Radverkehr, Elektromobilität und Fußgängerinfrastruktur, Reduktion des mot..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.html",
+          "pageTitle": "25 % der Bevölkerung gegen unsere Wirtschaft. Unser System steht von innen unter Spannung - und von außen unter Druck*",
+          "contentType": "blog",
+          "date": "2026-03-19",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ustriellen Wertschöpfung. Und sie ist: begrenzt handelbar politisch beeinflussbar Fossile Energieträger wie Öl und Gas sind historisch eng mit geopolitischen Abhängigkeiten verknüpft. Wer sie nutzt, ist häufig auf: bestimmte Regionen politische Systeme fragile Li..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/blog/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.html",
+          "pageTitle": "Multipolare Systemdynamik 2025 - Sicherheit, Transformation und die stille Destabilisierung Europas",
+          "contentType": "blog",
+          "date": "2026-02-20",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...eise Rückzug aus internationalen Klimaverpflichtungen und die stärkere Förderung fossiler Energieträger hatten nicht nur ökologische Konsequenzen. Sie veränderten auch Investitionssignale und internationale Kooperationsdynamiken. Globale Klimapolitik funktioniert..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/",
+          "canonicalUrl": "/wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/",
+          "pageTitle": "Produkte als Wirkungsträger | Produkte & Konsum",
+          "contentType": "field",
+          "date": "",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "field +35"
+          ],
+          "snippets": [
+            "...chutz, Löhne, Abfall CSRD/ESRS, GRI, Scorecards, Benchmarking Transport Transportdistanz, Energieträger, Kühlkette, Verpackung, Lagerung DPP, PCF, Logistikdaten Nutzung Energieverbrauch, Gesundheit, Sicherheit, Reparatur, Barrierefreiheit DPP, Produktsicherheit, ..."
+          ]
+        },
+        {
+          "termSlug": "energietraeger",
+          "pageUrl": "/wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/",
+          "canonicalUrl": "/wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/",
+          "pageTitle": "Produktscorecards, Reverse Merit Order und digitale Produktpässe | Produkte & Konsum",
+          "contentType": "field",
+          "date": "",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "field +35"
+          ],
+          "snippets": [
+            "...ernmittelwerte auf Produktgruppen herunterbrechen Produktscorecard-Generator Stromprodukt Energieträger, Emissionsintensität, Herkunftsnachweis Energie-Mix-Wirkungsrechner Assurance, Governance und Missbrauchsschutz # Produktscorecards werden relevant für Preise,..."
+          ]
+        }
+      ]
+    },
+    "energietraegerstrom": {
+      "label": "Energieträgerstrom",
+      "aliases": [
+        "Energieträgerstrom",
+        "energietraegerstrom",
+        "Strom aus Energieträgern",
+        "Brennstoffstrom",
+        "strom aus Brennstoffen"
+      ],
+      "totalReferences": 0,
+      "storedReferences": 0,
+      "determining": [],
+      "related": [],
+      "references": []
+    },
     "energieumwandlung": {
       "label": "Energieumwandlung",
       "aliases": [
@@ -44946,6 +46204,509 @@
           ],
           "snippets": [
             "...e folgt Physik Energiesysteme unterliegen physikalischen Gesetzmäßigkeiten. Das bedeutet: Energieumwandlung hat Wirkungsgrade Ressourcen sind begrenzt Emissionen haben reale, messbare Effekte Systeme reagieren auf Belastung Diese Zusammenhänge sind nicht verhandelbar..."
+          ]
+        }
+      ]
+    },
+    "energiewende": {
+      "label": "Energiewende",
+      "aliases": [
+        "Umbau des Energiesystems",
+        "Energie-Wende",
+        "Energiewende",
+        "energiewende"
+      ],
+      "totalReferences": 24,
+      "storedReferences": 16,
+      "determining": [
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "pageTitle": "SDG 7 Bezahlbare und saubere Energie",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 262,
+          "matchCount": 4,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 3",
+            "4 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "... (externe Quelle) 7.a internationale Energiekooperation Technologietransfer und Forschung Energiewende ist global gekoppelt UN-Zielseite (externe Quelle) UN Indicators (externe Quelle) 7.b Infrastruktur ausbauen Netze, Speicher, Wärme, ländliche Räume Infrastruk..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html",
+          "pageTitle": "Warum der Rückhalt für Klimaschutz sinkt - und was das über unsere Demokratie verrät",
+          "contentType": "blog",
+          "date": "2026-02-11",
+          "anchor": "",
+          "score": 247,
+          "matchCount": 4,
+          "matchType": "defined",
+          "reasons": [
+            "lead match",
+            "definition pattern",
+            "4 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ensbach-Studie (Februar 2026) zeigt ein deutliches Bild: Der Rückhalt für Klimaschutz und Energiewende ist spürbar gesunken. Nur noch rund ein Drittel der Bevölkerung äußert „große Sorgen“ über die Klimafolgen. Die Energiewende wird nicht mehr mehrheitlich getra..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "pageTitle": "SDG-Unterziele global, Europa und Deutschland",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 246,
+          "matchCount": 2,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 3",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...d saubere Energie 7.a internationale Energiekooperation Technologietransfer und Forschung Energiewende ist global gekoppelt SDG 7 - Bezahlbare und saubere Energie 7.b Infrastruktur ausbauen Netze, Speicher, Wärme, ländliche Räume Infrastruktur ist Wirkungsarchit..."
+          ]
+        }
+      ],
+      "related": [
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 209,
+          "matchCount": 3,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 1",
+            "3 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...tunden. Nicht um Netzengpässe. Nicht um kurzfristige Kosten. Sondern um die Frage, ob die Energiewende als demokratisierender Strukturwandel verstanden wird - oder als Störung bestehender Ordnungen, die begrenzt werden muss. Spätestens hier verlässt die Debatte ..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 194,
+          "matchCount": 18,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "18 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...verteilung. Diese Perspektive ist besonders wichtig für Ressourcenfairness. Rohstoffe für Energiewende, Digitalisierung, Batterien, Rechenzentren, Elektronik, Medizin und Infrastruktur entstehen oft in Regionen mit schwacher Verhandlungsmacht, hoher ökologischer..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
+          "canonicalUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
+          "pageTitle": "Wenn Politik Unternehmen nach Argumenten fragt - und was das über unser System sagt",
+          "contentType": "blog",
+          "date": "2026-04-15",
+          "anchor": "",
+          "score": 151,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "h2 match",
+            "related proximity 1",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ls gute Lösung gilt - und auf welcher Grundlage? Der scheinbare Widerspruch: EnBW und die Energiewende An dieser Stelle entsteht ein Bruch im Verständnis. Denn EnBW steht öffentlich für den Ausbau erneuerbarer Energien, für Ladeinfrastruktur, für Batteriespeiche..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/wirkungsfelder/wohnen-stadt/dossiers/mieterstrom-energie-gemeinschaften/",
+          "canonicalUrl": "/wirkungsfelder/wohnen-stadt/dossiers/mieterstrom-energie-gemeinschaften/",
+          "pageTitle": "Einzeldossier Mieterstrom und Energie-Gemeinschaften",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 147,
+          "matchCount": 4,
+          "matchType": "strong",
+          "reasons": [
+            "lead match",
+            "4 occurrences",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...tadt Einzeldossier Mieterstrom und Energie-Gemeinschaften Dezentrale Energie, Teilhabe an Energiewende und Preiswirkung. Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, politische Optionen, Werkzeugbezug und Grenzen. Seite drucken Detailkonzept lesen Praxisf..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/quellen/",
+          "canonicalUrl": "/referenz/quellen/",
+          "pageTitle": "Quellenregister",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 146,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...stands, Fassung 2026, Kapitel zu Ressourcenfairness. Grundlage für den Gedanken, dass die Energiewende nicht nur CO₂ senken darf, sondern Ressourcenmacht, Wasserstress und Ausbeutung mittransformieren muss. Verwendet in Kapitel 94 WÖk-interne Quelle · Interne Qu..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "pageTitle": "SDG 7 Bezahlbare und saubere Energie",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 262,
+          "matchCount": 4,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 3",
+            "4 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "... (externe Quelle) 7.a internationale Energiekooperation Technologietransfer und Forschung Energiewende ist global gekoppelt UN-Zielseite (externe Quelle) UN Indicators (externe Quelle) 7.b Infrastruktur ausbauen Netze, Speicher, Wärme, ländliche Räume Infrastruk..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html",
+          "pageTitle": "Warum der Rückhalt für Klimaschutz sinkt - und was das über unsere Demokratie verrät",
+          "contentType": "blog",
+          "date": "2026-02-11",
+          "anchor": "",
+          "score": 247,
+          "matchCount": 4,
+          "matchType": "defined",
+          "reasons": [
+            "lead match",
+            "definition pattern",
+            "4 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ensbach-Studie (Februar 2026) zeigt ein deutliches Bild: Der Rückhalt für Klimaschutz und Energiewende ist spürbar gesunken. Nur noch rund ein Drittel der Bevölkerung äußert „große Sorgen“ über die Klimafolgen. Die Energiewende wird nicht mehr mehrheitlich getra..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "pageTitle": "SDG-Unterziele global, Europa und Deutschland",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 246,
+          "matchCount": 2,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 3",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...d saubere Energie 7.a internationale Energiekooperation Technologietransfer und Forschung Energiewende ist global gekoppelt SDG 7 - Bezahlbare und saubere Energie 7.b Infrastruktur ausbauen Netze, Speicher, Wärme, ländliche Räume Infrastruktur ist Wirkungsarchit..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 209,
+          "matchCount": 3,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 1",
+            "3 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...tunden. Nicht um Netzengpässe. Nicht um kurzfristige Kosten. Sondern um die Frage, ob die Energiewende als demokratisierender Strukturwandel verstanden wird - oder als Störung bestehender Ordnungen, die begrenzt werden muss. Spätestens hier verlässt die Debatte ..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 194,
+          "matchCount": 18,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "18 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...verteilung. Diese Perspektive ist besonders wichtig für Ressourcenfairness. Rohstoffe für Energiewende, Digitalisierung, Batterien, Rechenzentren, Elektronik, Medizin und Infrastruktur entstehen oft in Regionen mit schwacher Verhandlungsmacht, hoher ökologischer..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
+          "canonicalUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
+          "pageTitle": "Wenn Politik Unternehmen nach Argumenten fragt - und was das über unser System sagt",
+          "contentType": "blog",
+          "date": "2026-04-15",
+          "anchor": "",
+          "score": 151,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "h2 match",
+            "related proximity 1",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ls gute Lösung gilt - und auf welcher Grundlage? Der scheinbare Widerspruch: EnBW und die Energiewende An dieser Stelle entsteht ein Bruch im Verständnis. Denn EnBW steht öffentlich für den Ausbau erneuerbarer Energien, für Ladeinfrastruktur, für Batteriespeiche..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/wirkungsfelder/wohnen-stadt/dossiers/mieterstrom-energie-gemeinschaften/",
+          "canonicalUrl": "/wirkungsfelder/wohnen-stadt/dossiers/mieterstrom-energie-gemeinschaften/",
+          "pageTitle": "Einzeldossier Mieterstrom und Energie-Gemeinschaften",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 147,
+          "matchCount": 4,
+          "matchType": "strong",
+          "reasons": [
+            "lead match",
+            "4 occurrences",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...tadt Einzeldossier Mieterstrom und Energie-Gemeinschaften Dezentrale Energie, Teilhabe an Energiewende und Preiswirkung. Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, politische Optionen, Werkzeugbezug und Grenzen. Seite drucken Detailkonzept lesen Praxisf..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/quellen/",
+          "canonicalUrl": "/referenz/quellen/",
+          "pageTitle": "Quellenregister",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 146,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...stands, Fassung 2026, Kapitel zu Ressourcenfairness. Grundlage für den Gedanken, dass die Energiewende nicht nur CO₂ senken darf, sondern Ressourcenmacht, Wasserstress und Ausbeutung mittransformieren muss. Verwendet in Kapitel 94 WÖk-interne Quelle · Interne Qu..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/wirkungsfelder/wohnen-stadt/detailkonzepte/mieterstrom-energie-gemeinschaften/",
+          "canonicalUrl": "/wirkungsfelder/wohnen-stadt/detailkonzepte/mieterstrom-energie-gemeinschaften/",
+          "pageTitle": "Detailkonzept Mieterstrom und Energie-Gemeinschaften",
+          "contentType": "field",
+          "date": "",
+          "anchor": "",
+          "score": 143,
+          "matchCount": 6,
+          "matchType": "strong",
+          "reasons": [
+            "lead match",
+            "6 occurrences",
+            "field +35"
+          ],
+          "snippets": [
+            "...tadt Detailkonzept Mieterstrom und Energie-Gemeinschaften Dezentrale Energie, Teilhabe an Energiewende und Preiswirkung. Fachliche Onlinefassung mit politischer Anschlussfähigkeit, Werkzeugbezug und Arbeitsmaterial. Seite drucken Dossier lesen Kurzfassung und Zi..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/",
+          "canonicalUrl": "/referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/",
+          "pageTitle": "Kapitel 93 - Globale Institutionen und Wirkungsgovernance - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 128,
+          "matchCount": 6,
+          "matchType": "strong",
+          "reasons": [
+            "6 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...esteuert werden und innen demokratische Resonanzräume zerstören. Ein Rohstoffmonopol kann Energiewende, Industrie, digitale Infrastruktur und geopolitische Abhängigkeiten zugleich betreffen. Globale Wirkungsgovernance beginnt deshalb mit einer nüchternen Einsich..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/",
+          "canonicalUrl": "/referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/",
+          "pageTitle": "Kapitel 94 - Kulturelle Anschlussfähigkeit und multipolare Ordnung - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 128,
+          "matchCount": 6,
+          "matchType": "strong",
+          "reasons": [
+            "6 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...icht einfach durch neue Rohstoffabhängigkeiten ersetzen. Die Fassung betont deshalb, dass Energiewende erst dann wirkungsökonomisch ist, wenn sie nicht nur CO₂ senkt, sondern Ressourcenmacht, Wasserstress und Ausbeutung mittransformiert [I-K94-8] . Energie ist M..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/dokumente/wp-produkte/",
+          "canonicalUrl": "/dokumente/wp-produkte/",
+          "pageTitle": "WP Produkte - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 121,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...oziale Wirkung +3 15 % 45 000 € 6 750 € 38 250 € B) Green-Tech-Ingenieur – Innovation für Energiewende +2 20 % 70 000 € 14 000 € 56 000 € C) Finanzsektor – nicht ESG-konform (Investmentbanking, spekulative Kapitalströme) –2 40 % 200 000 € 80 000 € 120 000 € D) E..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/",
+          "canonicalUrl": "/referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/",
+          "pageTitle": "Kapitel 95 - Globale Resilienz, Sicherheit und Kooperation - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 112,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "4 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...d 70 Prozent Marktanteil [E-K95-7] . Für die Wirkungsökonomie ist das kein Argument gegen Energiewende oder Digitalisierung. Es ist ein Argument für ressourcenfaire, kreislauffähige, diversifizierte und resiliente Transformation. Globale Krisenvorsorge betrifft ..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html",
+          "pageTitle": "Die Architektur der europäischen Nachhaltigkeitsregulierung",
+          "contentType": "blog",
+          "date": "2026-03-13",
+          "anchor": "",
+          "score": 111,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...rgiesysteme Neben der Energieproduktion selbst rückt zunehmend auch die Infrastruktur der Energiewende in den Fokus europäischer Regulierung. Ein wichtiger Baustein ist die Alternative Fuels Infrastructure Regulation (AFIR) . Diese Verordnung legt Mindestanforde..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/dokumente/woek-partei/",
+          "canonicalUrl": "/dokumente/woek-partei/",
+          "pageTitle": "WÖK-Partei - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 107,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "..., bei der Bezahlbarkeit, Versorgungssicherheit und der sozial gerechten Ausgestaltung der Energiewende. Weltweit haben hunderte Millionen Menschen keinen Zugang zu Elektrizität oder sind von unsicheren, teuren Energiequellen abhängig. Fossile Energien und nuklea..."
+          ]
+        },
+        {
+          "termSlug": "energiewende",
+          "pageUrl": "/referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/",
+          "canonicalUrl": "/referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/",
+          "pageTitle": "Kapitel 92 - Handel, Lieferketten und globale Wirkung - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...verteilung. Diese Perspektive ist besonders wichtig für Ressourcenfairness. Rohstoffe für Energiewende, Digitalisierung, Batterien, Rechenzentren, Elektronik, Medizin und Infrastruktur entstehen oft in Regionen mit schwacher Verhandlungsmacht, hoher ökologischer..."
           ]
         }
       ]
@@ -47902,12 +49663,40 @@
     "erneuerbare-energien": {
       "label": "Erneuerbare Energien",
       "aliases": [
+        "erneuerbare Energiequellen",
+        "regenerative Energien",
         "Erneuerbare Energien",
-        "erneuerbare energien"
+        "erneuerbare energien",
+        "erneuerbare Energie"
       ],
-      "totalReferences": 27,
+      "totalReferences": 53,
       "storedReferences": 16,
       "determining": [
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "pageTitle": "Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist",
+          "contentType": "blog",
+          "date": "2026-02-26",
+          "anchor": "",
+          "score": 579,
+          "matchCount": 13,
+          "matchType": "defined",
+          "reasons": [
+            "title match",
+            "h1 match",
+            "h3 match",
+            "lead match",
+            "definition pattern",
+            "related proximity 1",
+            "13 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist Journalartikel · 26. Februar 2026 Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist Zuerst veröffe..."
+          ]
+        },
         {
           "termSlug": "erneuerbare-energien",
           "pageUrl": "/referenz/volltext/",
@@ -47916,12 +49705,13 @@
           "contentType": "book",
           "date": "",
           "anchor": "",
-          "score": 224,
-          "matchCount": 16,
+          "score": 344,
+          "matchCount": 42,
           "matchType": "defined",
           "reasons": [
+            "definition pattern",
             "related proximity 3",
-            "16 occurrences",
+            "42 occurrences",
             "book +70"
           ],
           "snippets": [
@@ -47930,304 +49720,44 @@
         },
         {
           "termSlug": "erneuerbare-energien",
-          "pageUrl": "/referenz/kapitel-065-resilienzstaat/",
-          "canonicalUrl": "/referenz/kapitel-065-resilienzstaat/",
-          "pageTitle": "Kapitel 65 - Resilienzstaat - Wirkungsökonomie Online",
+          "pageUrl": "/referenz/kapitel-098-pilotprojekte/",
+          "canonicalUrl": "/referenz/kapitel-098-pilotprojekte/",
+          "pageTitle": "Kapitel 98 - Pilotprojekte - Wirkungsökonomie Online",
           "contentType": "book-chapter",
           "date": "",
           "anchor": "",
-          "score": 142,
-          "matchCount": 4,
-          "matchType": "strong",
+          "score": 224,
+          "matchCount": 3,
+          "matchType": "defined",
           "reasons": [
-            "related proximity 1",
-            "4 occurrences",
+            "definition pattern",
+            "3 occurrences",
             "book-chapter +80"
           ],
           "snippets": [
-            "...Strom, Kühlung, Abwärme, Lastflexibilität und Wasser verantwortungsvoll gesteuert werden. Erneuerbare Energien verändern die Logik der Energieordnung. Fossile Energie folgt einer Brennstofflogik: Sie muss gefördert, importiert, transportiert, geopolitisch abgesichert un..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 137,
-          "matchCount": 4,
-          "matchType": "strong",
-          "reasons": [
-            "related proximity 2",
-            "4 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "...oaufschläge, Reshoring-Impulse • Energie-Schock → Förderpflichten für Speicherung, Netze, erneuerbare Energien • Sozial-Schock (z. B. extreme Ungleichheit) → Einschränkung von Dividenden, höhere soziale Kapitalanforderungen • KI-/Algorithmus-Schock → sofortige Modellabs..."
+            "...ass die Wirkungsökonomie nicht nur Produktbewertung, sondern Infrastrukturdenken braucht. Erneuerbare Energie ist nicht einfach ein weiteres Marktprodukt neben fossiler Energie. Fossile Energie folgt einer Brennstofflogik: fördern, importieren, transportieren, verbrenn..."
           ]
         }
       ],
       "related": [
         {
           "termSlug": "erneuerbare-energien",
-          "pageUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
-          "canonicalUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
-          "pageTitle": "Kapitel 3 - Kapital als Werkzeug und falscher Kompass - Wirkungsökonomie Online",
-          "contentType": "book-chapter",
-          "date": "",
-          "anchor": "",
-          "score": 128,
-          "matchCount": 6,
-          "matchType": "strong",
-          "reasons": [
-            "6 occurrences",
-            "book-chapter +80"
-          ],
-          "snippets": [
-            "...in Pflege, Bildung, energetische Sanierung, kommunale Resilienz, Kreislaufwirtschaft oder erneuerbare Energien kann wirtschaftlich tragfähig sein und hohe positive Wirkung erzeugen. Dann ist Rendite willkommen, weil sie Wirkung stabilisiert. Eine Investition in Spekulat..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/dokumente/wenn-maschinen-arbeiten/",
-          "canonicalUrl": "/dokumente/wenn-maschinen-arbeiten/",
-          "pageTitle": "Wenn Maschinen arbeiten - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 123,
-          "matchCount": 6,
-          "matchType": "strong",
-          "reasons": [
-            "related proximity 1",
-            "6 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "... sind, um systemische Wirkung zu erhöhen – beispielsweise die Umstellung von fossilen auf erneuerbare Energien, Kreislaufwirtschaft, Digitalisierung der Verwaltung oder soziale Innovationen. Der dritte Teil ist der Wirkungsrentenfonds, der die demografische Stabilität s..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/dokumente/woek-partei/",
-          "canonicalUrl": "/dokumente/woek-partei/",
-          "pageTitle": "WÖK-Partei - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 123,
-          "matchCount": 6,
-          "matchType": "strong",
-          "reasons": [
-            "related proximity 1",
-            "6 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "...einfrastruktur, stehen aber vor großen Herausforderungen beim schnellen Umstieg auf 100 % erneuerbare Energien, bei der Bezahlbarkeit, Versorgungssicherheit und der sozial gerechten Ausgestaltung der Energiewende. Weltweit haben hunderte Millionen Menschen keinen Zugang..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
-          "canonicalUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
-          "pageTitle": "Wenn Politik Unternehmen nach Argumenten fragt - und was das über unser System sagt",
-          "contentType": "blog",
-          "date": "2026-04-15",
-          "anchor": "",
-          "score": 113,
-          "matchCount": 6,
-          "matchType": "medium",
-          "reasons": [
-            "related proximity 1",
-            "6 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...men mit unterschiedlichen Wirkungsmechaniken. Auf der einen Seite stehen Investitionen in erneuerbare Energien und neue Infrastrukturen, die langfristig ein flexibles, dezentrales und emissionsarmes System ermöglichen. Auf der anderen Seite existieren Strukturen, die au..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
-          "canonicalUrl": "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
-          "pageTitle": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
-          "contentType": "blog",
-          "date": "2026-02-22",
-          "anchor": "",
-          "score": 101,
-          "matchCount": 2,
-          "matchType": "strong",
-          "reasons": [
-            "h3 match",
-            "2 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...riger. Erst hier wird Eskalation nicht nur gestoppt - sie wird transformiert. Beispiel 1: Erneuerbare Energien Frame (Alarmraum): „Windräder zerstören unsere Heimat.“ → Bedrohung → Identität → Verlust Typische falsche Reaktion (Fakten): „Studien zeigen, dass Windräder k..."
-          ]
-        }
-      ],
-      "references": [
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/referenz/volltext/",
-          "canonicalUrl": "/referenz/volltext/",
-          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
-          "contentType": "book",
-          "date": "",
-          "anchor": "",
-          "score": 224,
-          "matchCount": 16,
-          "matchType": "defined",
-          "reasons": [
-            "related proximity 3",
-            "16 occurrences",
-            "book +70"
-          ],
-          "snippets": [
-            "...in Pflege, Bildung, energetische Sanierung, kommunale Resilienz, Kreislaufwirtschaft oder erneuerbare Energien kann wirtschaftlich tragfähig sein und hohe positive Wirkung erzeugen. Dann ist Rendite willkommen, weil sie Wirkung stabilisiert. Eine Investition in Spekulat..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
           "pageUrl": "/referenz/kapitel-065-resilienzstaat/",
           "canonicalUrl": "/referenz/kapitel-065-resilienzstaat/",
           "pageTitle": "Kapitel 65 - Resilienzstaat - Wirkungsökonomie Online",
           "contentType": "book-chapter",
           "date": "",
           "anchor": "",
-          "score": 142,
-          "matchCount": 4,
+          "score": 158,
+          "matchCount": 6,
           "matchType": "strong",
           "reasons": [
             "related proximity 1",
-            "4 occurrences",
+            "6 occurrences",
             "book-chapter +80"
           ],
           "snippets": [
             "...Strom, Kühlung, Abwärme, Lastflexibilität und Wasser verantwortungsvoll gesteuert werden. Erneuerbare Energien verändern die Logik der Energieordnung. Fossile Energie folgt einer Brennstofflogik: Sie muss gefördert, importiert, transportiert, geopolitisch abgesichert un..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 137,
-          "matchCount": 4,
-          "matchType": "strong",
-          "reasons": [
-            "related proximity 2",
-            "4 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "...oaufschläge, Reshoring-Impulse • Energie-Schock → Förderpflichten für Speicherung, Netze, erneuerbare Energien • Sozial-Schock (z. B. extreme Ungleichheit) → Einschränkung von Dividenden, höhere soziale Kapitalanforderungen • KI-/Algorithmus-Schock → sofortige Modellabs..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
-          "canonicalUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
-          "pageTitle": "Kapitel 3 - Kapital als Werkzeug und falscher Kompass - Wirkungsökonomie Online",
-          "contentType": "book-chapter",
-          "date": "",
-          "anchor": "",
-          "score": 128,
-          "matchCount": 6,
-          "matchType": "strong",
-          "reasons": [
-            "6 occurrences",
-            "book-chapter +80"
-          ],
-          "snippets": [
-            "...in Pflege, Bildung, energetische Sanierung, kommunale Resilienz, Kreislaufwirtschaft oder erneuerbare Energien kann wirtschaftlich tragfähig sein und hohe positive Wirkung erzeugen. Dann ist Rendite willkommen, weil sie Wirkung stabilisiert. Eine Investition in Spekulat..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/dokumente/wenn-maschinen-arbeiten/",
-          "canonicalUrl": "/dokumente/wenn-maschinen-arbeiten/",
-          "pageTitle": "Wenn Maschinen arbeiten - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 123,
-          "matchCount": 6,
-          "matchType": "strong",
-          "reasons": [
-            "related proximity 1",
-            "6 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "... sind, um systemische Wirkung zu erhöhen – beispielsweise die Umstellung von fossilen auf erneuerbare Energien, Kreislaufwirtschaft, Digitalisierung der Verwaltung oder soziale Innovationen. Der dritte Teil ist der Wirkungsrentenfonds, der die demografische Stabilität s..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/dokumente/woek-partei/",
-          "canonicalUrl": "/dokumente/woek-partei/",
-          "pageTitle": "WÖK-Partei - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 123,
-          "matchCount": 6,
-          "matchType": "strong",
-          "reasons": [
-            "related proximity 1",
-            "6 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "...einfrastruktur, stehen aber vor großen Herausforderungen beim schnellen Umstieg auf 100 % erneuerbare Energien, bei der Bezahlbarkeit, Versorgungssicherheit und der sozial gerechten Ausgestaltung der Energiewende. Weltweit haben hunderte Millionen Menschen keinen Zugang..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
-          "canonicalUrl": "/blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html",
-          "pageTitle": "Wenn Politik Unternehmen nach Argumenten fragt - und was das über unser System sagt",
-          "contentType": "blog",
-          "date": "2026-04-15",
-          "anchor": "",
-          "score": 113,
-          "matchCount": 6,
-          "matchType": "medium",
-          "reasons": [
-            "related proximity 1",
-            "6 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...men mit unterschiedlichen Wirkungsmechaniken. Auf der einen Seite stehen Investitionen in erneuerbare Energien und neue Infrastrukturen, die langfristig ein flexibles, dezentrales und emissionsarmes System ermöglichen. Auf der anderen Seite existieren Strukturen, die au..."
-          ]
-        },
-        {
-          "termSlug": "erneuerbare-energien",
-          "pageUrl": "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
-          "canonicalUrl": "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
-          "pageTitle": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
-          "contentType": "blog",
-          "date": "2026-02-22",
-          "anchor": "",
-          "score": 101,
-          "matchCount": 2,
-          "matchType": "strong",
-          "reasons": [
-            "h3 match",
-            "2 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...riger. Erst hier wird Eskalation nicht nur gestoppt - sie wird transformiert. Beispiel 1: Erneuerbare Energien Frame (Alarmraum): „Windräder zerstören unsere Heimat.“ → Bedrohung → Identität → Verlust Typische falsche Reaktion (Fakten): „Studien zeigen, dass Windräder k..."
           ]
         },
         {
@@ -48238,11 +49768,12 @@
           "contentType": "blog",
           "date": "2026-02-10",
           "anchor": "",
-          "score": 99,
-          "matchCount": 12,
-          "matchType": "medium",
+          "score": 149,
+          "matchCount": 13,
+          "matchType": "strong",
           "reasons": [
-            "12 occurrences",
+            "h3 match",
+            "13 occurrences",
             "blog +25"
           ],
           "snippets": [
@@ -48251,40 +49782,228 @@
         },
         {
           "termSlug": "erneuerbare-energien",
-          "pageUrl": "/referenz/kapitel-017-wirkungsoekonomie-im-vergleich/",
-          "canonicalUrl": "/referenz/kapitel-017-wirkungsoekonomie-im-vergleich/",
-          "pageTitle": "Kapitel 17 - Wirkungsökonomie im Vergleich",
-          "contentType": "book-chapter",
+          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
+          "contentType": "working-paper",
           "date": "",
           "anchor": "",
-          "score": 96,
-          "matchCount": 2,
-          "matchType": "medium",
+          "score": 137,
+          "matchCount": 4,
+          "matchType": "strong",
           "reasons": [
-            "2 occurrences",
-            "book-chapter +80"
+            "related proximity 2",
+            "4 occurrences",
+            "working-paper +45"
           ],
           "snippets": [
-            "...nanzialisierung und destruktive Produkte müssen zurückgehen. Pflege, Bildung, Gesundheit, erneuerbare Energien, Kreislaufwirtschaft, Resilienz, demokratische Stabilität und regenerative Infrastruktur müssen wachsen können [I-K17-10] . Die Wirkungsökonomie übernimmt die ..."
+            "...oaufschläge, Reshoring-Impulse • Energie-Schock → Förderpflichten für Speicherung, Netze, erneuerbare Energien • Sozial-Schock (z. B. extreme Ungleichheit) → Einschränkung von Dividenden, höhere soziale Kapitalanforderungen • KI-/Algorithmus-Schock → sofortige Modellabs..."
           ]
         },
         {
           "termSlug": "erneuerbare-energien",
-          "pageUrl": "/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/",
-          "canonicalUrl": "/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/",
-          "pageTitle": "Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz - Wirkungsökonomie Online",
+          "pageUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "canonicalUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "pageTitle": "Kapitel 3 - Kapital als Werkzeug und falscher Kompass - Wirkungsökonomie Online",
           "contentType": "book-chapter",
           "date": "",
           "anchor": "",
-          "score": 96,
-          "matchCount": 2,
-          "matchType": "medium",
+          "score": 136,
+          "matchCount": 7,
+          "matchType": "strong",
           "reasons": [
-            "2 occurrences",
+            "7 occurrences",
             "book-chapter +80"
           ],
           "snippets": [
-            "...uktbesteuerung durch Wirkung, 2025. Grundlage für Strombeispiele, ehrliche Energiepreise, erneuerbare Energien und Systemkosten. [I-23-21] Weber, Natalie: Die neue Ordnung des Wohlstands, Fassung, Kapitel zu Wirkleistung, Pflege, Bildung, Prävention und gesellschaftlich..."
+            "...in Pflege, Bildung, energetische Sanierung, kommunale Resilienz, Kreislaufwirtschaft oder erneuerbare Energien kann wirtschaftlich tragfähig sein und hohe positive Wirkung erzeugen. Dann ist Rendite willkommen, weil sie Wirkung stabilisiert. Eine Investition in Spekulat..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/dokumente/woek-partei/",
+          "canonicalUrl": "/dokumente/woek-partei/",
+          "pageTitle": "WÖK-Partei - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 123,
+          "matchCount": 6,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 1",
+            "6 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...einfrastruktur, stehen aber vor großen Herausforderungen beim schnellen Umstieg auf 100 % erneuerbare Energien, bei der Bezahlbarkeit, Versorgungssicherheit und der sozial gerechten Ausgestaltung der Energiewende. Weltweit haben hunderte Millionen Menschen keinen Zugang..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html",
+          "pageTitle": "Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist",
+          "contentType": "blog",
+          "date": "2026-02-26",
+          "anchor": "",
+          "score": 579,
+          "matchCount": 13,
+          "matchType": "defined",
+          "reasons": [
+            "title match",
+            "h1 match",
+            "h3 match",
+            "lead match",
+            "definition pattern",
+            "related proximity 1",
+            "13 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist Journalartikel · 26. Februar 2026 Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist Zuerst veröffe..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 344,
+          "matchCount": 42,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "related proximity 3",
+            "42 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...in Pflege, Bildung, energetische Sanierung, kommunale Resilienz, Kreislaufwirtschaft oder erneuerbare Energien kann wirtschaftlich tragfähig sein und hohe positive Wirkung erzeugen. Dann ist Rendite willkommen, weil sie Wirkung stabilisiert. Eine Investition in Spekulat..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/referenz/kapitel-098-pilotprojekte/",
+          "canonicalUrl": "/referenz/kapitel-098-pilotprojekte/",
+          "pageTitle": "Kapitel 98 - Pilotprojekte - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 224,
+          "matchCount": 3,
+          "matchType": "defined",
+          "reasons": [
+            "definition pattern",
+            "3 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ass die Wirkungsökonomie nicht nur Produktbewertung, sondern Infrastrukturdenken braucht. Erneuerbare Energie ist nicht einfach ein weiteres Marktprodukt neben fossiler Energie. Fossile Energie folgt einer Brennstofflogik: fördern, importieren, transportieren, verbrenn..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/referenz/kapitel-065-resilienzstaat/",
+          "canonicalUrl": "/referenz/kapitel-065-resilienzstaat/",
+          "pageTitle": "Kapitel 65 - Resilienzstaat - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 158,
+          "matchCount": 6,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 1",
+            "6 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...Strom, Kühlung, Abwärme, Lastflexibilität und Wasser verantwortungsvoll gesteuert werden. Erneuerbare Energien verändern die Logik der Energieordnung. Fossile Energie folgt einer Brennstofflogik: Sie muss gefördert, importiert, transportiert, geopolitisch abgesichert un..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html",
+          "pageTitle": "Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst - Eine wirkungsökonomische Einordnung",
+          "contentType": "blog",
+          "date": "2026-02-10",
+          "anchor": "",
+          "score": 149,
+          "matchCount": 13,
+          "matchType": "strong",
+          "reasons": [
+            "h3 match",
+            "13 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...zeugt, kontrolliert hoch- und heruntergefahren und entlang klarer Trassen verteilt wurde. Erneuerbare Energien folgen einer anderen physikalischen Logik. Sie erzeugen Strom dezentral, fluktuierend und ohne Brennstoff. Genau darin liegt ihre Stärke - und zugleich die Her..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 137,
+          "matchCount": 4,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...oaufschläge, Reshoring-Impulse • Energie-Schock → Förderpflichten für Speicherung, Netze, erneuerbare Energien • Sozial-Schock (z. B. extreme Ungleichheit) → Einschränkung von Dividenden, höhere soziale Kapitalanforderungen • KI-/Algorithmus-Schock → sofortige Modellabs..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "canonicalUrl": "/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/",
+          "pageTitle": "Kapitel 3 - Kapital als Werkzeug und falscher Kompass - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 136,
+          "matchCount": 7,
+          "matchType": "strong",
+          "reasons": [
+            "7 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...in Pflege, Bildung, energetische Sanierung, kommunale Resilienz, Kreislaufwirtschaft oder erneuerbare Energien kann wirtschaftlich tragfähig sein und hohe positive Wirkung erzeugen. Dann ist Rendite willkommen, weil sie Wirkung stabilisiert. Eine Investition in Spekulat..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/dokumente/woek-partei/",
+          "canonicalUrl": "/dokumente/woek-partei/",
+          "pageTitle": "WÖK-Partei - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 123,
+          "matchCount": 6,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 1",
+            "6 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...einfrastruktur, stehen aber vor großen Herausforderungen beim schnellen Umstieg auf 100 % erneuerbare Energien, bei der Bezahlbarkeit, Versorgungssicherheit und der sozial gerechten Ausgestaltung der Energiewende. Weltweit haben hunderte Millionen Menschen keinen Zugang..."
           ]
         },
         {
@@ -48295,53 +50014,55 @@
           "contentType": "book-chapter",
           "date": "",
           "anchor": "",
-          "score": 96,
-          "matchCount": 2,
-          "matchType": "medium",
+          "score": 120,
+          "matchCount": 5,
+          "matchType": "strong",
           "reasons": [
-            "2 occurrences",
+            "5 occurrences",
             "book-chapter +80"
           ],
           "snippets": [
-            "...tems final v1.2, 2025. Grundlage für Energieindikatoren in der Wirkungsökonomie, darunter erneuerbare Energien, Energieeffizienz, spezifische Emissionen Strom, Gebäude-Energieperformance, Energiearmut, Netzverluste/IT-Effizienz, Energie-Daten in Lieferketten und Transpa..."
+            "...ie sicher, sauber, bezahlbar und resilient verfügbar ist. Deshalb sind digitale Netze und erneuerbare Energiesysteme zwei Seiten derselben Wirkungsinfrastruktur: Das eine verbindet Informationen, das andere ermöglicht Betrieb. Beide dürfen nicht allein als Marktprodukt..."
           ]
         },
         {
           "termSlug": "erneuerbare-energien",
-          "pageUrl": "/dokumente/woek-master-items-final-v1-2/",
-          "canonicalUrl": "/dokumente/woek-master-items-final-v1-2/",
-          "pageTitle": "WÖk Master Items final v1.2 - Wirkungsökonomie Online",
-          "contentType": "working-paper",
+          "pageUrl": "/referenz/kapitel-107-zukunftsbilder/",
+          "canonicalUrl": "/referenz/kapitel-107-zukunftsbilder/",
+          "pageTitle": "Kapitel 107 - Zukunftsbilder - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
           "date": "",
           "anchor": "",
-          "score": 93,
-          "matchCount": 6,
+          "score": 118,
+          "matchCount": 1,
           "matchType": "medium",
           "reasons": [
-            "6 occurrences",
-            "working-paper +45"
+            "related proximity 1",
+            "1 occurrence",
+            "book-chapter +80"
           ],
           "snippets": [
-            "...Quelle: Definition gemäß Standard (ESRS/GRI/Taxonomie/ISO). WOK-E-137 SDG 7 – Energie 7.2 Erneuerbare Energien Erneuerbare Energien – EE‐Anteil Anteil erneuerbarer Energien am Strombezug % higher_is_better ESRS E1; GHG Protocol C20 Chemie; C24 Stahl; C29 Fahrzeuge ≥90%:..."
+            "...adtwerke, Energiegenossenschaften, Quartiere und Bürger:innen Modelle aufgebaut, in denen erneuerbare Energie stärker als Infrastruktur wirkt. Dächer von Schulen, Pflegeeinrichtungen, Verwaltungsgebäuden und Wohnhäusern erzeugen Strom. Quartiersspeicher stabilisieren l..."
           ]
         },
         {
           "termSlug": "erneuerbare-energien",
-          "pageUrl": "/referenz/quellen/",
-          "canonicalUrl": "/referenz/quellen/",
-          "pageTitle": "Quellenregister",
-          "contentType": "book",
+          "pageUrl": "/referenz/kapitel-053-markttransformation/",
+          "canonicalUrl": "/referenz/kapitel-053-markttransformation/",
+          "pageTitle": "Kapitel 53 - Markttransformation - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
           "date": "",
           "anchor": "",
-          "score": 86,
-          "matchCount": 2,
+          "score": 118,
+          "matchCount": 1,
           "matchType": "medium",
           "reasons": [
-            "2 occurrences",
-            "book +70"
+            "related proximity 1",
+            "1 occurrence",
+            "book-chapter +80"
           ],
           "snippets": [
-            "...tems final v1.2, 2025. Grundlage für Energieindikatoren in der Wirkungsökonomie, darunter erneuerbare Energien, Energieeffizienz, spezifische Emissionen Strom, Gebäude-Energieperformance, Energiearmut, Netzverluste/IT-Effizienz, Energie-Daten in Lieferketten und Transpa..."
+            "...ndustriellen Gütern kann ein Wirkungsmodell Investitionssignale setzen, sodass Recycling, erneuerbare Energie, bessere Materialien und geringere Emissionen wirtschaftlich attraktiver werden. Das Produktpapier beschreibt, dass sich bei Polyamid Investitionen in Recyclin..."
           ]
         },
         {
@@ -48352,10 +50073,11 @@
           "contentType": "page",
           "date": "",
           "anchor": "",
-          "score": 84,
+          "score": 114,
           "matchCount": 8,
           "matchType": "medium",
           "reasons": [
+            "related proximity 1",
             "8 occurrences",
             "page +20"
           ],
@@ -48365,22 +50087,80 @@
         },
         {
           "termSlug": "erneuerbare-energien",
-          "pageUrl": "/blog/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.html",
-          "canonicalUrl": "/blog/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.html",
-          "pageTitle": "Was China mit Solar macht - und warum wir davon profitieren",
-          "contentType": "blog",
-          "date": "2025-10-10",
+          "pageUrl": "/referenz/kapitel-099-wirkungsoekonomie-im-alltag/",
+          "canonicalUrl": "/referenz/kapitel-099-wirkungsoekonomie-im-alltag/",
+          "pageTitle": "Kapitel 99 - Wirkungsökonomie im Alltag",
+          "contentType": "book-chapter",
+          "date": "",
           "anchor": "",
-          "score": 76,
-          "matchCount": 2,
+          "score": 104,
+          "matchCount": 3,
           "matchType": "medium",
           "reasons": [
-            "related proximity 1",
+            "3 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ahlbare gute Lebensmittel, erreichbare Mobilität, reparierbare Geräte, sichere Wohnungen, erneuerbare Energie, lokale Angebote, transparente Produktinformationen und öffentliche Räume [I-K99-4; I-K99-8]. Die Kaufkraftlogik ist zentral. Nachhaltigere oder wirkungspositi..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 103,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 2",
+            "1 occurrence",
+            "blog +25"
+          ],
+          "snippets": [
+            "...uktur eFuels werden in der Regel in großindustriellen Anlagen produziert, häufig dort, wo erneuerbare Energie im Überschuss vorhanden ist - etwa in sonnen- oder windreichen Regionen. Das bedeutet: hohe Kapitalintensität großskalige Produktionsanlagen internationale Tra..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+          "pageTitle": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
+          "contentType": "blog",
+          "date": "2026-02-22",
+          "anchor": "",
+          "score": 101,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "h3 match",
             "2 occurrences",
             "blog +25"
           ],
           "snippets": [
-            "...eren, wäre klar: Fossile Energien sind die teuersten, weil sie unsere Zukunft verbrennen. Erneuerbare Energien sind die günstigsten, weil sie sie erhalten. China subventioniert Solarzellen - und senkt damit auch unsere Klimafolgekosten. Was wie ein industriepolitisches ..."
+            "...riger. Erst hier wird Eskalation nicht nur gestoppt - sie wird transformiert. Beispiel 1: Erneuerbare Energien Frame (Alarmraum): „Windräder zerstören unsere Heimat.“ → Bedrohung → Identität → Verlust Typische falsche Reaktion (Fakten): „Studien zeigen, dass Windräder k..."
+          ]
+        },
+        {
+          "termSlug": "erneuerbare-energien",
+          "pageUrl": "/referenz/kapitel-100-transformationspfade/",
+          "canonicalUrl": "/referenz/kapitel-100-transformationspfade/",
+          "pageTitle": "Kapitel 100 - Transformationspfade - Wirkungsökonomie Online",
+          "contentType": "book-chapter",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book-chapter +80"
+          ],
+          "snippets": [
+            "...ge Handlungsfähigkeit [I-K100-2; I-K100-9]. Sofort beginnen können Energiegemeinschaften. Erneuerbare Energie kann in kommunalen, genossenschaftlichen, dezentralen und öffentlichen Modellen stärker als Infrastruktur gedacht werden: Bürgerenergie, Quartiersstrom, Mieter..."
           ]
         }
       ]
@@ -52493,6 +54273,150 @@
       "determining": [],
       "related": [],
       "references": []
+    },
+    "exergie": {
+      "label": "Exergie",
+      "aliases": [
+        "Arbeitsfähigkeit von Energie",
+        "nutzbare Energie",
+        "Exergie",
+        "exergie"
+      ],
+      "totalReferences": 3,
+      "storedReferences": 3,
+      "determining": [
+        {
+          "termSlug": "exergie",
+          "pageUrl": "/blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html",
+          "pageTitle": "Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik",
+          "contentType": "blog",
+          "date": "2026-03-07",
+          "anchor": "",
+          "score": 569,
+          "matchCount": 56,
+          "matchType": "defined",
+          "reasons": [
+            "title match",
+            "h1 match",
+            "h2 match",
+            "lead match",
+            "definition pattern",
+            "56 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik Journalartikel · 7. März 2026 Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-..."
+          ]
+        },
+        {
+          "termSlug": "exergie",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 149,
+          "matchCount": 3,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 3",
+            "3 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ichtet werden. Der zweite Hauptsatz ergänzt: Jede Energieumwandlung erhöht die Entropie - nutzbare Energie (Exergie) nimmt ab. Jede technische Mobilitätslösung ist daher eine Umwandlungskaskade. Beim Verbrenner beginnt diese Kaskade mit der Förderung von Rohöl, gefo..."
+          ]
+        },
+        {
+          "termSlug": "exergie",
+          "pageUrl": "/blog/linkedin-artikel.html",
+          "canonicalUrl": "/blog/linkedin-artikel.html",
+          "pageTitle": "LinkedIn-Artikel",
+          "contentType": "blog",
+          "date": "",
+          "anchor": "",
+          "score": 91,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "h3 match",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...r erfahren Journalartikel 7. März 2026 Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik Warum wir ein neues Modell für Kommunikation brauchen Wir leben in einer Zeit, in der noch nie so viel kommuniziert wurd..."
+          ]
+        }
+      ],
+      "related": [],
+      "references": [
+        {
+          "termSlug": "exergie",
+          "pageUrl": "/blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html",
+          "pageTitle": "Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik",
+          "contentType": "blog",
+          "date": "2026-03-07",
+          "anchor": "",
+          "score": 569,
+          "matchCount": 56,
+          "matchType": "defined",
+          "reasons": [
+            "title match",
+            "h1 match",
+            "h2 match",
+            "lead match",
+            "definition pattern",
+            "56 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik Journalartikel · 7. März 2026 Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-..."
+          ]
+        },
+        {
+          "termSlug": "exergie",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 149,
+          "matchCount": 3,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 3",
+            "3 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ichtet werden. Der zweite Hauptsatz ergänzt: Jede Energieumwandlung erhöht die Entropie - nutzbare Energie (Exergie) nimmt ab. Jede technische Mobilitätslösung ist daher eine Umwandlungskaskade. Beim Verbrenner beginnt diese Kaskade mit der Förderung von Rohöl, gefo..."
+          ]
+        },
+        {
+          "termSlug": "exergie",
+          "pageUrl": "/blog/linkedin-artikel.html",
+          "canonicalUrl": "/blog/linkedin-artikel.html",
+          "pageTitle": "LinkedIn-Artikel",
+          "contentType": "blog",
+          "date": "",
+          "anchor": "",
+          "score": 91,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "h3 match",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...r erfahren Journalartikel 7. März 2026 Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik Warum wir ein neues Modell für Kommunikation brauchen Wir leben in einer Zeit, in der noch nie so viel kommuniziert wurd..."
+          ]
+        }
+      ]
     },
     "expertinnenlobbyismus": {
       "label": "Expert:innenlobbyismus",
@@ -151120,6 +153044,28 @@
           "snippets": [
             "...en wird historisch als Marktgut organisiert. Haushalte investieren privat in Heizsysteme, Photovoltaik oder Speicher. Strom wird produziert, gehandelt und bepreist. Energie erscheint als Ware - nicht als Infrastruktur. Gleichzeitig ist Energie heute ebenso grund..."
           ]
+        }
+      ],
+      "related": [
+        {
+          "termSlug": "photovoltaik",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 111,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ektrische Systeme sind netzbasiert. Netze können zentral oder dezentral organisiert sein. Photovoltaik auf Dächern, Quartiersspeicher, kommunale Energiegenossenschaften - all das sind strukturelle Optionen. Das bedeutet nicht, dass Elektrizität automatisch dezen..."
+          ]
         },
         {
           "termSlug": "photovoltaik",
@@ -151129,39 +153075,16 @@
           "contentType": "blog",
           "date": "2025-10-10",
           "anchor": "",
-          "score": 136,
+          "score": 106,
           "matchCount": 2,
-          "matchType": "strong",
+          "matchType": "medium",
           "reasons": [
             "lead match",
-            "related proximity 1",
             "2 occurrences",
             "blog +25"
           ],
           "snippets": [
             "...o günstig wie nie. Dadurch können sich auch in Europa immer mehr Menschen und Unternehmen Photovoltaik leisten - und China selbst installiert jeden Monat mehr Solarleistung als wir in einem Jahr. Das Ergebnis: sinkende Klimafolgekosten - weltweit. Jede installie..."
-          ]
-        }
-      ],
-      "related": [
-        {
-          "termSlug": "photovoltaik",
-          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 91,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "related proximity 1",
-            "2 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "...und Demokratie. Kommunen müssen sicherstellen: • erneuerbare Stadtwerke (Strom + Wärme) • Photovoltaik auf allen kommunalen Gebäuden • Geothermie (Tief- und Oberflächengeothermie) • Windkraft (kommunal, genossenschaftlich) • Speicher (Batterie, Wärme, WasserstoY..."
           ]
         },
         {
@@ -151186,6 +153109,25 @@
         },
         {
           "termSlug": "photovoltaik",
+          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 61,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...und Demokratie. Kommunen müssen sicherstellen: • erneuerbare Stadtwerke (Strom + Wärme) • Photovoltaik auf allen kommunalen Gebäuden • Geothermie (Tief- und Oberflächengeothermie) • Windkraft (kommunal, genossenschaftlich) • Speicher (Batterie, Wärme, WasserstoY..."
+          ]
+        },
+        {
+          "termSlug": "photovoltaik",
           "pageUrl": "/dokumente/wp-produkte/",
           "canonicalUrl": "/dokumente/wp-produkte/",
           "pageTitle": "WP Produkte - Wirkungsökonomie Online",
@@ -151201,25 +153143,6 @@
           ],
           "snippets": [
             "...:innen werden durch digitale Wirkungskonten entlastet: Sie können positive Wirkung (z. B. Photovoltaik, Bahnfahren, Pflegearbeit) steuerlich gutschreiben lassen. So entsteht ein sanfter Übergang vom Kapital- zum Wirkungssystem. § 7 Institutionelle Begleitung 1. ..."
-          ]
-        },
-        {
-          "termSlug": "photovoltaik",
-          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
-          "contentType": "blog",
-          "date": "2026-02-16",
-          "anchor": "",
-          "score": 51,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "2 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...ektrische Systeme sind netzbasiert. Netze können zentral oder dezentral organisiert sein. Photovoltaik auf Dächern, Quartiersspeicher, kommunale Energiegenossenschaften - all das sind strukturelle Optionen. Das bedeutet nicht, dass Elektrizität automatisch dezen..."
           ]
         },
         {
@@ -151265,43 +153188,42 @@
         },
         {
           "termSlug": "photovoltaik",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 111,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ektrische Systeme sind netzbasiert. Netze können zentral oder dezentral organisiert sein. Photovoltaik auf Dächern, Quartiersspeicher, kommunale Energiegenossenschaften - all das sind strukturelle Optionen. Das bedeutet nicht, dass Elektrizität automatisch dezen..."
+          ]
+        },
+        {
+          "termSlug": "photovoltaik",
           "pageUrl": "/blog/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.html",
           "canonicalUrl": "/blog/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.html",
           "pageTitle": "Was China mit Solar macht - und warum wir davon profitieren",
           "contentType": "blog",
           "date": "2025-10-10",
           "anchor": "",
-          "score": 136,
+          "score": 106,
           "matchCount": 2,
-          "matchType": "strong",
+          "matchType": "medium",
           "reasons": [
             "lead match",
-            "related proximity 1",
             "2 occurrences",
             "blog +25"
           ],
           "snippets": [
             "...o günstig wie nie. Dadurch können sich auch in Europa immer mehr Menschen und Unternehmen Photovoltaik leisten - und China selbst installiert jeden Monat mehr Solarleistung als wir in einem Jahr. Das Ergebnis: sinkende Klimafolgekosten - weltweit. Jede installie..."
-          ]
-        },
-        {
-          "termSlug": "photovoltaik",
-          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
-          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
-          "contentType": "working-paper",
-          "date": "",
-          "anchor": "",
-          "score": 91,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "related proximity 1",
-            "2 occurrences",
-            "working-paper +45"
-          ],
-          "snippets": [
-            "...und Demokratie. Kommunen müssen sicherstellen: • erneuerbare Stadtwerke (Strom + Wärme) • Photovoltaik auf allen kommunalen Gebäuden • Geothermie (Tief- und Oberflächengeothermie) • Windkraft (kommunal, genossenschaftlich) • Speicher (Batterie, Wärme, WasserstoY..."
           ]
         },
         {
@@ -151326,6 +153248,25 @@
         },
         {
           "termSlug": "photovoltaik",
+          "pageUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "canonicalUrl": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+          "pageTitle": "Systemmodell der Wirkungsökonomie - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 61,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...und Demokratie. Kommunen müssen sicherstellen: • erneuerbare Stadtwerke (Strom + Wärme) • Photovoltaik auf allen kommunalen Gebäuden • Geothermie (Tief- und Oberflächengeothermie) • Windkraft (kommunal, genossenschaftlich) • Speicher (Batterie, Wärme, WasserstoY..."
+          ]
+        },
+        {
+          "termSlug": "photovoltaik",
           "pageUrl": "/dokumente/wp-produkte/",
           "canonicalUrl": "/dokumente/wp-produkte/",
           "pageTitle": "WP Produkte - Wirkungsökonomie Online",
@@ -151341,25 +153282,6 @@
           ],
           "snippets": [
             "...:innen werden durch digitale Wirkungskonten entlastet: Sie können positive Wirkung (z. B. Photovoltaik, Bahnfahren, Pflegearbeit) steuerlich gutschreiben lassen. So entsteht ein sanfter Übergang vom Kapital- zum Wirkungssystem. § 7 Institutionelle Begleitung 1. ..."
-          ]
-        },
-        {
-          "termSlug": "photovoltaik",
-          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
-          "contentType": "blog",
-          "date": "2026-02-16",
-          "anchor": "",
-          "score": 51,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "2 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...ektrische Systeme sind netzbasiert. Netze können zentral oder dezentral organisiert sein. Photovoltaik auf Dächern, Quartiersspeicher, kommunale Energiegenossenschaften - all das sind strukturelle Optionen. Das bedeutet nicht, dass Elektrizität automatisch dezen..."
           ]
         },
         {
@@ -173071,6 +174993,63 @@
         }
       ]
     },
+    "regenerative-energiequellen": {
+      "label": "Regenerative Energiequellen",
+      "aliases": [
+        "Regenerative Energiequellen",
+        "regenerative energiequellen",
+        "regenerative Energiequelle",
+        "erneuerbare Energiequellen",
+        "regenerative Energien"
+      ],
+      "totalReferences": 1,
+      "storedReferences": 1,
+      "determining": [],
+      "related": [
+        {
+          "termSlug": "regenerative-energiequellen",
+          "pageUrl": "/blog/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.html",
+          "pageTitle": "Warum wir schneller „grün“ werden, als es sich AfD und CDU je vorstellen konnten",
+          "contentType": "blog",
+          "date": "2026-03-25",
+          "anchor": "",
+          "score": 73,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "1 occurrence",
+            "blog +25"
+          ],
+          "snippets": [
+            "...logisch, sondern ökonomisch. Sie reduzieren Abhängigkeiten. Sie investieren in eigene und erneuerbare Energiequellen. Sie bauen redundante und diversifizierte Lieferketten auf. Sie sichern sich technologisch ab und schaffen Transparenz über ihre Wertschöpfung. Parallel dazu v..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "regenerative-energiequellen",
+          "pageUrl": "/blog/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.html",
+          "pageTitle": "Warum wir schneller „grün“ werden, als es sich AfD und CDU je vorstellen konnten",
+          "contentType": "blog",
+          "date": "2026-03-25",
+          "anchor": "",
+          "score": 73,
+          "matchCount": 1,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "1 occurrence",
+            "blog +25"
+          ],
+          "snippets": [
+            "...logisch, sondern ökonomisch. Sie reduzieren Abhängigkeiten. Sie investieren in eigene und erneuerbare Energiequellen. Sie bauen redundante und diversifizierte Lieferketten auf. Sie sichern sich technologisch ab und schaffen Transparenz über ihre Wertschöpfung. Parallel dazu v..."
+          ]
+        }
+      ]
+    },
     "regenerative-landwirtschaft": {
       "label": "Regenerative Landwirtschaft",
       "aliases": [
@@ -184846,6 +186825,23 @@
           ]
         }
       ]
+    },
+    "rueckverstromung": {
+      "label": "Rückverstromung",
+      "aliases": [
+        "Rückverstromung",
+        "rueckverstromung",
+        "Power-to-Gas-to-Power",
+        "Power to Gas to Power",
+        "Wasserstoffkraftwerk",
+        "eFuel-Kraftwerk",
+        "synthetisches Methan verstromen"
+      ],
+      "totalReferences": 0,
+      "storedReferences": 0,
+      "determining": [],
+      "related": [],
+      "references": []
     },
     "rueckkopplungspreis": {
       "label": "Rückkopplungspreis",
@@ -202194,6 +204190,454 @@
       "related": [],
       "references": []
     },
+    "strommix": {
+      "label": "Strommix",
+      "aliases": [
+        "Erzeugungsmix",
+        "Verbrauchsmix",
+        "Strom-Mix",
+        "Strommix",
+        "strommix"
+      ],
+      "totalReferences": 14,
+      "storedReferences": 14,
+      "determining": [
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 149,
+          "matchCount": 10,
+          "matchType": "strong",
+          "reasons": [
+            "h3 match",
+            "10 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...e methodische Begrenzungen: Sie arbeiten häufig mit Durchschnittswerten (z. B. nationaler Strommix). Sie setzen klare Systemgrenzen - und alles außerhalb bleibt unsichtbar. Sie aggregieren komplexe Effekte zu einer einzigen Kennzahl. Sie bilden Macht- und Ab..."
+          ]
+        }
+      ],
+      "related": [
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/",
+          "pageTitle": "Dossier SDG-Unterziele global, Europa und Deutschland",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 101,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...d Grundversorgung SDG 7 - Bezahlbare und saubere Energie 7.2 Erneuerbare Energien erhöhen Strommix, Wärme, Verkehr, Industrie SDG 7 - Bezahlbare und saubere Energie 7.3 Energieeffizienz verdoppeln Gebäude, Geräte, Produktion, Rechenzentren SDG 7 - Bezahlbare..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "pageTitle": "SDG 7 Bezahlbare und saubere Energie",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...ielseite (externe Quelle) UN Indicators (externe Quelle) 7.2 Erneuerbare Energien erhöhen Strommix, Wärme, Verkehr, Industrie Energiewirkung beeinflusst Produktwirkung UN-Zielseite (externe Quelle) UN Indicators (externe Quelle) 7.3 Energieeffizienz verdoppe..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "canonicalUrl": "/dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "pageTitle": "Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 91,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...orie-Benchmark Zeigt tatsächliche Marktverschiebung im Einkauf. Klima/Energie Lieferanten-Strommix: % erneuerbare Energie bei kritischen Lieferanten Steuert Lieferantenentwicklung und Vertragsanforderungen, wo Energie Treiber des PCF ist. Ressourcen Erneuerb..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/dokumente/wp-produkte/",
+          "canonicalUrl": "/dokumente/wp-produkte/",
+          "pageTitle": "WP Produkte - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 77,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "... WWF Water Risk Filter (2022) Spinnen / Weben GOTS-zertifizierte Spinnerei (Türkei) Kohle-Strommix (Bangladesch) Higg MSI v3.6 (2024); IEA Energy Statistics Konfektion Fair Wear Foundation Audit, 100 % Living Wage 80 h Woche, < 60 % Living Wage Fair Wear Imp..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "canonicalUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "pageTitle": "Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 71,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...azu? Welche Wirkungen entstehen in Vorstufen, Nutzung und Folgekosten? Typische KII: PUE, Strommix, Datenpannen, Bias-Score, Moderationsqualität, RTO. Diese Kennzahlen werden nicht als Durchschnittsset eingesetzt, sondern über Branchenbenchmarks und Archetyp..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "canonicalUrl": "/bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "pageTitle": "Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 66,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...orie-Benchmark Zeigt tatsächliche Marktverschiebung im Einkauf. Klima/Energie Lieferanten-Strommix: % erneuerbare Energie bei kritischen Lieferanten Steuert Lieferantenentwicklung und Vertragsanforderungen, wo Energie Treiber des PCF ist. Ressourcen Erneuerb..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "pageTitle": "SDG-Unterziele global, Europa und Deutschland",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 66,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...gang ist Teilhabe SDG 7 - Bezahlbare und saubere Energie 7.2 Erneuerbare Energien erhöhen Strommix, Wärme, Verkehr, Industrie Energiewirkung beeinflusst Produktwirkung SDG 7 - Bezahlbare und saubere Energie 7.3 Energieeffizienz verdoppeln Gebäude, Geräte, Pr..."
+          ]
+        }
+      ],
+      "references": [
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 149,
+          "matchCount": 10,
+          "matchType": "strong",
+          "reasons": [
+            "h3 match",
+            "10 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...e methodische Begrenzungen: Sie arbeiten häufig mit Durchschnittswerten (z. B. nationaler Strommix). Sie setzen klare Systemgrenzen - und alles außerhalb bleibt unsichtbar. Sie aggregieren komplexe Effekte zu einer einzigen Kennzahl. Sie bilden Macht- und Ab..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/",
+          "pageTitle": "Dossier SDG-Unterziele global, Europa und Deutschland",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 101,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...d Grundversorgung SDG 7 - Bezahlbare und saubere Energie 7.2 Erneuerbare Energien erhöhen Strommix, Wärme, Verkehr, Industrie SDG 7 - Bezahlbare und saubere Energie 7.3 Energieeffizienz verdoppeln Gebäude, Geräte, Produktion, Rechenzentren SDG 7 - Bezahlbare..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/",
+          "pageTitle": "SDG 7 Bezahlbare und saubere Energie",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 96,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 2",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...ielseite (externe Quelle) UN Indicators (externe Quelle) 7.2 Erneuerbare Energien erhöhen Strommix, Wärme, Verkehr, Industrie Energiewirkung beeinflusst Produktwirkung UN-Zielseite (externe Quelle) UN Indicators (externe Quelle) 7.3 Energieeffizienz verdoppe..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "canonicalUrl": "/dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "pageTitle": "Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 91,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...orie-Benchmark Zeigt tatsächliche Marktverschiebung im Einkauf. Klima/Energie Lieferanten-Strommix: % erneuerbare Energie bei kritischen Lieferanten Steuert Lieferantenentwicklung und Vertragsanforderungen, wo Energie Treiber des PCF ist. Ressourcen Erneuerb..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/dokumente/wp-produkte/",
+          "canonicalUrl": "/dokumente/wp-produkte/",
+          "pageTitle": "WP Produkte - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 77,
+          "matchCount": 4,
+          "matchType": "medium",
+          "reasons": [
+            "4 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "... WWF Water Risk Filter (2022) Spinnen / Weben GOTS-zertifizierte Spinnerei (Türkei) Kohle-Strommix (Bangladesch) Higg MSI v3.6 (2024); IEA Energy Statistics Konfektion Fair Wear Foundation Audit, 100 % Living Wage 80 h Woche, < 60 % Living Wage Fair Wear Imp..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "canonicalUrl": "/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
+          "pageTitle": "Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier",
+          "contentType": "whitepaper",
+          "date": "",
+          "anchor": "",
+          "score": 71,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "whitepaper +55"
+          ],
+          "snippets": [
+            "...azu? Welche Wirkungen entstehen in Vorstufen, Nutzung und Folgekosten? Typische KII: PUE, Strommix, Datenpannen, Bias-Score, Moderationsqualität, RTO. Diese Kennzahlen werden nicht als Durchschnittsset eingesetzt, sondern über Branchenbenchmarks und Archetyp..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "canonicalUrl": "/bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+          "pageTitle": "Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 66,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...orie-Benchmark Zeigt tatsächliche Marktverschiebung im Einkauf. Klima/Energie Lieferanten-Strommix: % erneuerbare Energie bei kritischen Lieferanten Steuert Lieferantenentwicklung und Vertragsanforderungen, wo Energie Treiber des PCF ist. Ressourcen Erneuerb..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "canonicalUrl": "/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/",
+          "pageTitle": "SDG-Unterziele global, Europa und Deutschland",
+          "contentType": "page",
+          "date": "",
+          "anchor": "",
+          "score": 66,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "page +20"
+          ],
+          "snippets": [
+            "...gang ist Teilhabe SDG 7 - Bezahlbare und saubere Energie 7.2 Erneuerbare Energien erhöhen Strommix, Wärme, Verkehr, Industrie Energiewirkung beeinflusst Produktwirkung SDG 7 - Bezahlbare und saubere Energie 7.3 Energieeffizienz verdoppeln Gebäude, Geräte, Pr..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "canonicalUrl": "/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+          "pageTitle": "Wirkungsökonomie in der Lieferkette - Wirkungsökonomie Online",
+          "contentType": "working-paper",
+          "date": "",
+          "anchor": "",
+          "score": 61,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "working-paper +45"
+          ],
+          "snippets": [
+            "...leister <50 MA, Deutschland Software/Support, DE 0 (neutral: Standard-Arbeitsbedingungen, Strommix) 10 % 👉 So sieht man: Kleine Betriebe bekommen sofort eine faire Einstufung. Wer nichts macht, bleibt beim Default. Wer besser wird, kann aufsteigen und damit..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/",
+          "canonicalUrl": "/wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/",
+          "pageTitle": "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum",
+          "contentType": "field",
+          "date": "",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "field +35"
+          ],
+          "snippets": [
+            "...rbeit und Pestizide bleiben prüfpflichtig. Regional lange gelagert Kühlenergie, Verluste, Strommix Regionalität allein garantiert keine positive Wirkung. Import per Schiff Transportemissionen, Herkunftswasser, Arbeitsstandards Kann logistisch effizient sein,..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html",
+          "pageTitle": "Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz",
+          "contentType": "blog",
+          "date": "2026-03-03",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...biogen bereitgestellt werden muss. Auch hier entstehen systemische Verluste und - je nach Strommix - indirekte Emissionen. Grüner Wasserstoff Grüner Wasserstoff ist emissionsarm, sofern der eingesetzte Strom vollständig erneuerbar ist. Doch auch hier gilt: E..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/blog/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.html",
+          "canonicalUrl": "/blog/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.html",
+          "pageTitle": "Reporting-Burnout oder Resilienz-Chance? Warum Daten allein keine Krise lösen.",
+          "contentType": "blog",
+          "date": "2026-03-21",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...tandort in Europa, verschiebt die energieintensive Produktion aber in Länder mit fossilem Strommix. Man unterschreibt Verhaltenskodizes für Lieferanten, kontrolliert aber nicht, ob die Preise die Einhaltung dieser Standards überhaupt zulassen. Das Ergebnis i..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/wirkungsfelder/produkte-konsum/basf-polyamid/",
+          "canonicalUrl": "/wirkungsfelder/produkte-konsum/basf-polyamid/",
+          "pageTitle": "Von der CSRD zur Produktscorecard | BASF Polyamid",
+          "contentType": "field",
+          "date": "",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "field +35"
+          ],
+          "snippets": [
+            "...oduktgruppe C regulatorische Schwellen prüfen Energie Energieintensität Standort/Anlage B Strommix relevant Kreislauf Recyclingfähigkeit Produktdesign C End-of-Life beachten Lieferkette kritische Vorprodukte Lieferanten D Datenlücken markieren 8. Reverse Mer..."
+          ]
+        },
+        {
+          "termSlug": "strommix",
+          "pageUrl": "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
+          "canonicalUrl": "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
+          "pageTitle": "Wirkungsorientiertes Risikomanagement, Resilienz und Finanzmarktanforderungen",
+          "contentType": "field",
+          "date": "",
+          "anchor": "",
+          "score": 51,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "field +35"
+          ],
+          "snippets": [
+            "...1/2/3 Klimarisiko, CSRD, Banken, Kunden Kreditprüfung, Produktwirkung, T-SROI Energie und Strommix Kosten- und Übergangsrisiko Energieeffizienz, Standortstrategie Wasser, Abwasser, Standortstress Produktions- und physisches Risiko Versicherung, Lieferkettenr..."
+          ]
+        }
+      ]
+    },
     "stromnetz": {
       "label": "Stromnetz",
       "aliases": [
@@ -213460,6 +215904,63 @@
       "related": [],
       "references": []
     },
+    "umwandlungskette": {
+      "label": "Umwandlungskette",
+      "aliases": [
+        "Energieumwandlungskette",
+        "Umwandlungsketten",
+        "Umwandlungskette",
+        "umwandlungskette",
+        "Conversion Chain"
+      ],
+      "totalReferences": 1,
+      "storedReferences": 1,
+      "determining": [
+        {
+          "termSlug": "umwandlungskette",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 159,
+          "matchCount": 10,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "10 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ende Größe. Ein nachhaltiger Vergleich muss berücksichtigen: Energieeffizienz entlang der Umwandlungskette Rohstoffprofile und Recyclingfähigkeit Luft- und Gesundheitswirkungen Infrastrukturabhängigkeiten Macht- und Marktstrukturen Resilienz gegenüber externen Schoc..."
+          ]
+        }
+      ],
+      "related": [],
+      "references": [
+        {
+          "termSlug": "umwandlungskette",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 159,
+          "matchCount": 10,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 2",
+            "10 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...ende Größe. Ein nachhaltiger Vergleich muss berücksichtigen: Energieeffizienz entlang der Umwandlungskette Rohstoffprofile und Recyclingfähigkeit Luft- und Gesundheitswirkungen Infrastrukturabhängigkeiten Macht- und Marktstrukturen Resilienz gegenüber externen Schoc..."
+          ]
+        }
+      ]
+    },
     "umweltgerechtigkeit": {
       "label": "Umweltgerechtigkeit",
       "aliases": [
@@ -223673,26 +226174,6 @@
       "related": [
         {
           "termSlug": "wasserkraft",
-          "pageUrl": "/referenz/volltext/",
-          "canonicalUrl": "/referenz/volltext/",
-          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
-          "contentType": "book",
-          "date": "",
-          "anchor": "",
-          "score": 116,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "related proximity 1",
-            "2 occurrences",
-            "book +70"
-          ],
-          "snippets": [
-            "...sikalisch gleich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontroll..."
-          ]
-        },
-        {
-          "termSlug": "wasserkraft",
           "pageUrl": "/referenz/kapitel-053-markttransformation/",
           "canonicalUrl": "/referenz/kapitel-053-markttransformation/",
           "pageTitle": "Kapitel 53 - Markttransformation - Wirkungsökonomie Online",
@@ -223705,6 +226186,25 @@
           "reasons": [
             "2 occurrences",
             "book-chapter +80"
+          ],
+          "snippets": [
+            "...sikalisch gleich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontroll..."
+          ]
+        },
+        {
+          "termSlug": "wasserkraft",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 86,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book +70"
           ],
           "snippets": [
             "...sikalisch gleich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontroll..."
@@ -223714,26 +226214,6 @@
       "references": [
         {
           "termSlug": "wasserkraft",
-          "pageUrl": "/referenz/volltext/",
-          "canonicalUrl": "/referenz/volltext/",
-          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
-          "contentType": "book",
-          "date": "",
-          "anchor": "",
-          "score": 116,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "related proximity 1",
-            "2 occurrences",
-            "book +70"
-          ],
-          "snippets": [
-            "...sikalisch gleich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontroll..."
-          ]
-        },
-        {
-          "termSlug": "wasserkraft",
           "pageUrl": "/referenz/kapitel-053-markttransformation/",
           "canonicalUrl": "/referenz/kapitel-053-markttransformation/",
           "pageTitle": "Kapitel 53 - Markttransformation - Wirkungsökonomie Online",
@@ -223746,6 +226226,25 @@
           "reasons": [
             "2 occurrences",
             "book-chapter +80"
+          ],
+          "snippets": [
+            "...sikalisch gleich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontroll..."
+          ]
+        },
+        {
+          "termSlug": "wasserkraft",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 86,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "2 occurrences",
+            "book +70"
           ],
           "snippets": [
             "...sikalisch gleich. Ihre Wirkung ist es nicht. Kohlestrom, Gasstrom, Solarstrom, Windstrom, Wasserkraft, Biomasse oder Speicherstrom unterscheiden sich nach Emission, Standort, Netzbedarf, Material, Biodiversität, Versorgungssicherheit und demokratischer Kontroll..."
@@ -223770,23 +226269,63 @@
           "contentType": "blog",
           "date": "2026-03-03",
           "anchor": "",
-          "score": 359,
+          "score": 389,
           "matchCount": 26,
           "matchType": "defined",
           "reasons": [
             "h3 match",
             "lead match",
             "definition pattern",
-            "related proximity 1",
+            "related proximity 2",
             "26 occurrences",
             "blog +25"
           ],
           "snippets": [
             "...itetes Biogas) synthetisches Methan aus Power-to-Gas-Prozessen perspektivisch auch grüner Wasserstoff Der politische Anspruch lautet, Klimaschutz mit bestehender Infrastruktur und Investitionssicherheit zu verbinden. Das Gasnetz bleibt erhalten, fossiles Erdgas..."
           ]
+        },
+        {
+          "termSlug": "wasserstoff",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 141,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 3",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...erfolgt typischerweise in mehreren Schritten: Erzeugung erneuerbaren Stroms Elektrolyse → Wasserstoff Synthese (z. B. Fischer-Tropsch oder Methanolroute) Aufbereitung und Transport Verbrennung im Motor Methodischer Hinweis: Für alle drei Energiepfade gilt: Der ..."
+          ]
         }
       ],
       "related": [
+        {
+          "termSlug": "wasserstoff",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 116,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...ssionen, Ressourcen, Kosten, technische Verfügbarkeit. Kohle, Gas, Solarstrom, Windstrom, Wasserstoff, Speicherleistung und Netzdienstleistung erzeugen nicht dieselbe Zustandsveränderung, auch wenn sie am Ende dieselbe Einheit liefern [I-K18-17]. Die zweite Ord..."
+          ]
+        },
         {
           "termSlug": "wasserstoff",
           "pageUrl": "/referenz/kapitel-018-wirkungsordnungen/",
@@ -223804,25 +226343,6 @@
           ],
           "snippets": [
             "...ssionen, Ressourcen, Kosten, technische Verfügbarkeit. Kohle, Gas, Solarstrom, Windstrom, Wasserstoff, Speicherleistung und Netzdienstleistung erzeugen nicht dieselbe Zustandsveränderung, auch wenn sie am Ende dieselbe Einheit liefern [I-K18-17] . Die zweite Or..."
-          ]
-        },
-        {
-          "termSlug": "wasserstoff",
-          "pageUrl": "/referenz/volltext/",
-          "canonicalUrl": "/referenz/volltext/",
-          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
-          "contentType": "book",
-          "date": "",
-          "anchor": "",
-          "score": 86,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "2 occurrences",
-            "book +70"
-          ],
-          "snippets": [
-            "...ssionen, Ressourcen, Kosten, technische Verfügbarkeit. Kohle, Gas, Solarstrom, Windstrom, Wasserstoff, Speicherleistung und Netzdienstleistung erzeugen nicht dieselbe Zustandsveränderung, auch wenn sie am Ende dieselbe Einheit liefern [I-K18-17]. Die zweite Ord..."
           ]
         },
         {
@@ -223861,25 +226381,6 @@
           ],
           "snippets": [
             "...denten wie Daniel Günther und Hendrik Wüst zum Teil andere Akzente: erneuerbare Energien, Wasserstoff, Kohleausstieg, Klimaschutz und industrielle Transformation. [16] [17] [18] Die Wirkungsökonomie müsste daraus keine parteipolemische Anklage machen. Sie würde..."
-          ]
-        },
-        {
-          "termSlug": "wasserstoff",
-          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
-          "contentType": "blog",
-          "date": "2026-02-16",
-          "anchor": "",
-          "score": 51,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "2 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...erfolgt typischerweise in mehreren Schritten: Erzeugung erneuerbaren Stroms Elektrolyse → Wasserstoff Synthese (z. B. Fischer-Tropsch oder Methanolroute) Aufbereitung und Transport Verbrennung im Motor Methodischer Hinweis: Für alle drei Energiepfade gilt: Der ..."
           ]
         },
         {
@@ -223911,19 +226412,59 @@
           "contentType": "blog",
           "date": "2026-03-03",
           "anchor": "",
-          "score": 359,
+          "score": 389,
           "matchCount": 26,
           "matchType": "defined",
           "reasons": [
             "h3 match",
             "lead match",
             "definition pattern",
-            "related proximity 1",
+            "related proximity 2",
             "26 occurrences",
             "blog +25"
           ],
           "snippets": [
             "...itetes Biogas) synthetisches Methan aus Power-to-Gas-Prozessen perspektivisch auch grüner Wasserstoff Der politische Anspruch lautet, Klimaschutz mit bestehender Infrastruktur und Investitionssicherheit zu verbinden. Das Gasnetz bleibt erhalten, fossiles Erdgas..."
+          ]
+        },
+        {
+          "termSlug": "wasserstoff",
+          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
+          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
+          "contentType": "blog",
+          "date": "2026-02-16",
+          "anchor": "",
+          "score": 141,
+          "matchCount": 2,
+          "matchType": "strong",
+          "reasons": [
+            "related proximity 3",
+            "2 occurrences",
+            "blog +25"
+          ],
+          "snippets": [
+            "...erfolgt typischerweise in mehreren Schritten: Erzeugung erneuerbaren Stroms Elektrolyse → Wasserstoff Synthese (z. B. Fischer-Tropsch oder Methanolroute) Aufbereitung und Transport Verbrennung im Motor Methodischer Hinweis: Für alle drei Energiepfade gilt: Der ..."
+          ]
+        },
+        {
+          "termSlug": "wasserstoff",
+          "pageUrl": "/referenz/volltext/",
+          "canonicalUrl": "/referenz/volltext/",
+          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
+          "contentType": "book",
+          "date": "",
+          "anchor": "",
+          "score": 116,
+          "matchCount": 2,
+          "matchType": "medium",
+          "reasons": [
+            "related proximity 1",
+            "2 occurrences",
+            "book +70"
+          ],
+          "snippets": [
+            "...ssionen, Ressourcen, Kosten, technische Verfügbarkeit. Kohle, Gas, Solarstrom, Windstrom, Wasserstoff, Speicherleistung und Netzdienstleistung erzeugen nicht dieselbe Zustandsveränderung, auch wenn sie am Ende dieselbe Einheit liefern [I-K18-17]. Die zweite Ord..."
           ]
         },
         {
@@ -223943,25 +226484,6 @@
           ],
           "snippets": [
             "...ssionen, Ressourcen, Kosten, technische Verfügbarkeit. Kohle, Gas, Solarstrom, Windstrom, Wasserstoff, Speicherleistung und Netzdienstleistung erzeugen nicht dieselbe Zustandsveränderung, auch wenn sie am Ende dieselbe Einheit liefern [I-K18-17] . Die zweite Or..."
-          ]
-        },
-        {
-          "termSlug": "wasserstoff",
-          "pageUrl": "/referenz/volltext/",
-          "canonicalUrl": "/referenz/volltext/",
-          "pageTitle": "Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online",
-          "contentType": "book",
-          "date": "",
-          "anchor": "",
-          "score": 86,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "2 occurrences",
-            "book +70"
-          ],
-          "snippets": [
-            "...ssionen, Ressourcen, Kosten, technische Verfügbarkeit. Kohle, Gas, Solarstrom, Windstrom, Wasserstoff, Speicherleistung und Netzdienstleistung erzeugen nicht dieselbe Zustandsveränderung, auch wenn sie am Ende dieselbe Einheit liefern [I-K18-17]. Die zweite Ord..."
           ]
         },
         {
@@ -224000,25 +226522,6 @@
           ],
           "snippets": [
             "...denten wie Daniel Günther und Hendrik Wüst zum Teil andere Akzente: erneuerbare Energien, Wasserstoff, Kohleausstieg, Klimaschutz und industrielle Transformation. [16] [17] [18] Die Wirkungsökonomie müsste daraus keine parteipolemische Anklage machen. Sie würde..."
-          ]
-        },
-        {
-          "termSlug": "wasserstoff",
-          "pageUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "canonicalUrl": "/blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html",
-          "pageTitle": "Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen.",
-          "contentType": "blog",
-          "date": "2026-02-16",
-          "anchor": "",
-          "score": 51,
-          "matchCount": 2,
-          "matchType": "medium",
-          "reasons": [
-            "2 occurrences",
-            "blog +25"
-          ],
-          "snippets": [
-            "...erfolgt typischerweise in mehreren Schritten: Erzeugung erneuerbaren Stroms Elektrolyse → Wasserstoff Synthese (z. B. Fischer-Tropsch oder Methanolroute) Aufbereitung und Transport Verbrennung im Motor Methodischer Hinweis: Für alle drei Energiepfade gilt: Der ..."
           ]
         },
         {

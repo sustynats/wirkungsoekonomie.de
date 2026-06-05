@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T13:43:43.324Z",
+  "generatedAt": "2026-06-05T14:48:53.511Z",
   "entries": {
     "/begriffe/fuenftes-p-planet/": {
       "documentType": "begriff",
@@ -1946,8 +1946,10 @@
       "sectionId": "begriff-bioenergie",
       "documentId": "bioenergie",
       "relatedTerms": [
-        "biogas",
-        "erneuerbare-energien"
+        "biomasse",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -1960,8 +1962,10 @@
       "sectionId": "begriff-biogas",
       "documentId": "biogas",
       "relatedTerms": [
-        "anaerobe-vergaerung",
-        "bioenergie"
+        "biomasse",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -2003,6 +2007,23 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/biomasse/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-biomasse",
+      "documentId": "biomasse",
+      "relatedTerms": [
+        "bioenergie",
+        "biogas",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen",
+        "kaskadennutzung"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/black-mass/": {
@@ -2131,6 +2152,21 @@
         "Arbeitspapier Wirkungseinkommensteuer"
       ],
       "sourceFile": "Glossar-Pack 009: Volkswirtschaft & neue Wohlstandsmessung",
+      "searchBoost": 110
+    },
+    "/begriffe/brennstoffkette/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-brennstoffkette",
+      "documentId": "brennstoffkette",
+      "relatedTerms": [
+        "energietraeger",
+        "energietraegerstrom",
+        "umwandlungskette",
+        "fossiles-kraftwerk"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/bundesregierung/": {
@@ -4100,6 +4136,23 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/direkte-elektrifizierung/": {
+      "documentType": "begriff",
+      "status": "steuerungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-direkte-elektrifizierung",
+      "documentId": "direkte-elektrifizierung",
+      "relatedTerms": [
+        "energieflussstrom",
+        "direktstrom",
+        "umwandlungskette",
+        "exergie",
+        "energieeffizienz",
+        "wasserstoff"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/direktrecycling-batterie/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -4112,6 +4165,21 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/direktstrom/": {
+      "documentType": "begriff",
+      "status": "synonym",
+      "version": "1.0",
+      "sectionId": "begriff-direktstrom",
+      "documentId": "direktstrom",
+      "relatedTerms": [
+        "energieflussstrom",
+        "direkte-elektrifizierung",
+        "energietraegerstrom",
+        "rueckverstromung"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/diskriminierungsverbot/": {
@@ -4527,6 +4595,23 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 110
+    },
+    "/begriffe/efuels/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-efuels",
+      "documentId": "efuels",
+      "relatedTerms": [
+        "wasserstoff",
+        "rueckverstromung",
+        "umwandlungskette",
+        "energietraeger",
+        "direkte-elektrifizierung",
+        "exergie"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/ehrliche-preise/": {
@@ -5021,6 +5106,40 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/energiefluss/": {
+      "documentType": "begriff",
+      "status": "grundbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-energiefluss",
+      "documentId": "energiefluss",
+      "relatedTerms": [
+        "energieflussstrom",
+        "energietraeger",
+        "regenerative-energiequellen"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
+    "/begriffe/energieflussstrom/": {
+      "documentType": "begriff",
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-energieflussstrom",
+      "documentId": "energieflussstrom",
+      "relatedTerms": [
+        "direktstrom",
+        "energietraegerstrom",
+        "rueckverstromung",
+        "regenerative-energiequellen",
+        "direkte-elektrifizierung",
+        "umwandlungskette",
+        "exergie",
+        "energieeffizienz",
+        "energiewende"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/energiegemeinschaft/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -5110,6 +5229,38 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/energietraeger/": {
+      "documentType": "begriff",
+      "status": "grundbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-energietraeger",
+      "documentId": "energietraeger",
+      "relatedTerms": [
+        "energiefluss",
+        "energietraegerstrom",
+        "brennstoffkette",
+        "umwandlungskette"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
+    "/begriffe/energietraegerstrom/": {
+      "documentType": "begriff",
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-energietraegerstrom",
+      "documentId": "energietraegerstrom",
+      "relatedTerms": [
+        "brennstoffkette",
+        "energieflussstrom",
+        "rueckverstromung",
+        "exergie",
+        "umwandlungskette",
+        "energietraeger"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/energieumwandlung/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -5125,6 +5276,23 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/energiewende/": {
+      "documentType": "begriff",
+      "status": "praxisbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-energiewende",
+      "documentId": "energiewende",
+      "relatedTerms": [
+        "erneuerbare-energien",
+        "regenerative-energiequellen",
+        "energieflussstrom",
+        "direkte-elektrifizierung",
+        "strommix",
+        "energieeffizienz"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/energiewirtschaft/": {
@@ -5540,15 +5708,19 @@
       "sectionId": "begriff-erneuerbare-energien",
       "documentId": "erneuerbare-energien",
       "relatedTerms": [
+        "regenerative-energiequellen",
+        "energieflussstrom",
+        "direktstrom",
+        "energietraegerstrom",
         "photovoltaik",
         "windenergie",
         "wasserkraft",
         "bioenergie",
+        "biogas",
         "geothermie",
         "solarthermie",
-        "abregelung",
         "gruenstrom",
-        "energiewirtschaft"
+        "energiewende"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -5983,6 +6155,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/exergie/": {
+      "documentType": "begriff",
+      "status": "grundbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-exergie",
+      "documentId": "exergie",
+      "relatedTerms": [
+        "umwandlungskette",
+        "energieflussstrom",
+        "energietraegerstrom",
+        "direkte-elektrifizierung",
+        "energieeffizienz"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/expertinnenlobbyismus/": {
@@ -8755,9 +8943,9 @@
       "sectionId": "begriff-gruenstrom",
       "documentId": "gruenstrom",
       "relatedTerms": [
-        "herkunftsnachweis",
+        "strommix",
         "erneuerbare-energien",
-        "power-purchase-agreement"
+        "energieflussstrom"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -16481,17 +16669,9 @@
       "sectionId": "begriff-photovoltaik",
       "documentId": "photovoltaik",
       "relatedTerms": [
-        "photoelektrischer-effekt",
-        "strommarkt",
-        "quantenphysik",
-        "halbleiter",
-        "bandluecke",
-        "quantensolarzelle",
-        "perowskit-solarzelle",
-        "tandem-solarzelle",
-        "erneuerbare-energien",
-        "capture-price",
-        "prosumer"
+        "energieflussstrom",
+        "energiefluss",
+        "direkte-elektrifizierung"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -18851,6 +19031,24 @@
       "relatedDocuments": [],
       "searchBoost": 110
     },
+    "/begriffe/regenerative-energiequellen/": {
+      "documentType": "begriff",
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-regenerative-energiequellen",
+      "documentId": "regenerative-energiequellen",
+      "relatedTerms": [
+        "erneuerbare-energien",
+        "energiefluss",
+        "energieflussstrom",
+        "energietraeger",
+        "energietraegerstrom",
+        "bioenergie",
+        "biogas"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/regenerative-landwirtschaft/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -19912,6 +20110,23 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/rueckverstromung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-rueckverstromung",
+      "documentId": "rueckverstromung",
+      "relatedTerms": [
+        "wasserstoff",
+        "efuels",
+        "energietraegerstrom",
+        "umwandlungskette",
+        "exergie",
+        "energieflussstrom"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/rueckkopplungspreis/": {
@@ -22011,6 +22226,23 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/strommix/": {
+      "documentType": "begriff",
+      "status": "messbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-strommix",
+      "documentId": "strommix",
+      "relatedTerms": [
+        "gruenstrom",
+        "erneuerbare-energien",
+        "energieflussstrom",
+        "energietraegerstrom",
+        "herkunftsnachweis",
+        "strommarkt"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/stromnetz/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -23575,6 +23807,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/umwandlungskette/": {
+      "documentType": "begriff",
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-umwandlungskette",
+      "documentId": "umwandlungskette",
+      "relatedTerms": [
+        "energieflussstrom",
+        "energietraegerstrom",
+        "rueckverstromung",
+        "exergie",
+        "direkte-elektrifizierung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/umweltgerechtigkeit/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -24930,7 +25178,8 @@
       "sectionId": "begriff-wasserkraft",
       "documentId": "wasserkraft",
       "relatedTerms": [
-        "erneuerbare-energien"
+        "energieflussstrom",
+        "energiefluss"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -24943,11 +25192,10 @@
       "sectionId": "begriff-wasserstoff",
       "documentId": "wasserstoff",
       "relatedTerms": [
-        "gruener-wasserstoff",
-        "blauer-wasserstoff",
-        "grauer-wasserstoff",
-        "power-to-x",
-        "wasserstoffspeicher"
+        "rueckverstromung",
+        "umwandlungskette",
+        "energietraeger",
+        "direkte-elektrifizierung"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -25304,11 +25552,9 @@
       "sectionId": "begriff-windenergie",
       "documentId": "windenergie",
       "relatedTerms": [
-        "onshore-windenergie",
-        "offshore-windenergie",
-        "erneuerbare-energien",
-        "capture-price",
-        "repowering"
+        "energieflussstrom",
+        "energiefluss",
+        "direkte-elektrifizierung"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -40877,7 +41123,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/teil-15-ohne-eigene-teilueberschrift/index.html",
-      "contentHash": "6bbcda9a7b279132",
+      "contentHash": "722c5298163b9e64",
       "sectionId": "woek-page-f32a9aac5c2dd354"
     },
     "/referenz/teil-16-transformation-uebergaenge-und-implementierung/": {
@@ -40909,7 +41155,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "referenz/teil-17-ohne-eigene-teilueberschrift/index.html",
-      "contentHash": "121855460d6bb2ad",
+      "contentHash": "636e54672d941b66",
       "sectionId": "woek-page-bbb43f3bd46832f5"
     },
     "/referenz/teil-18-schluss-ausblick-und-zivilisatorische-perspektive/": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T13:40:20.881Z",
+  "generatedAt": "2026-06-05T14:46:10.277Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -2745,8 +2745,10 @@
         "Bioenergie"
       ],
       "relatedTerms": [
-        "biogas",
-        "erneuerbare-energien"
+        "biomasse",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2765,8 +2767,10 @@
         "Biogas"
       ],
       "relatedTerms": [
-        "anaerobe-vergaerung",
-        "bioenergie"
+        "biomasse",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2817,6 +2821,31 @@
         "materialgesundheit",
         "kompostierung",
         "verbrauchsgueter"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "biomasse": {
+      "label": "Biomasse",
+      "slug": "biomasse",
+      "url": "/begriffe/biomasse/",
+      "hoverDefinition": "Organisches Material wie Holz, Pflanzenreste oder Reststoffe als Energie- oder Rohstoffquelle.",
+      "shortDefinition": "Biomasse ist organisches Material, das energetisch oder stofflich genutzt werden kann.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Biomasse",
+        "organische Masse"
+      ],
+      "relatedTerms": [
+        "bioenergie",
+        "biogas",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen",
+        "kaskadennutzung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2982,6 +3011,30 @@
         "Wenn Maschinen arbeiten",
         "Arbeitspapier Wirkungseinkommensteuer"
       ],
+      "relatedObjections": []
+    },
+    "brennstoffkette": {
+      "label": "Brennstoffkette",
+      "slug": "brennstoffkette",
+      "url": "/begriffe/brennstoffkette/",
+      "hoverDefinition": "Vom Abbau oder der Herstellung eines Energieträgers bis zur Nutzung im Kraftwerk.",
+      "shortDefinition": "Die Brennstoffkette umfasst Gewinnung, Herstellung, Verarbeitung, Transport, Speicherung und Nutzung eines Energieträgers.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Brennstoffkette",
+        "Brennstoffketten",
+        "Fuel Chain"
+      ],
+      "relatedTerms": [
+        "energietraeger",
+        "energietraegerstrom",
+        "umwandlungskette",
+        "fossiles-kraftwerk"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "bundesregierung": {
@@ -5625,6 +5678,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "direkte-elektrifizierung": {
+      "label": "Direkte Elektrifizierung",
+      "slug": "direkte-elektrifizierung",
+      "url": "/begriffe/direkte-elektrifizierung/",
+      "hoverDefinition": "Strom direkt nutzen, statt ihn erst in Brennstoffe oder Moleküle umzuwandeln.",
+      "shortDefinition": "Direkte Elektrifizierung bezeichnet die direkte Nutzung von Energieflussstrom ohne Zwischenschritt über Energieträger.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Direkte Elektrifizierung",
+        "direkt elektrifizieren",
+        "Elektrifizierung",
+        "Direktnutzung von Strom"
+      ],
+      "relatedTerms": [
+        "energieflussstrom",
+        "direktstrom",
+        "umwandlungskette",
+        "exergie",
+        "energieeffizienz",
+        "wasserstoff"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "direktrecycling-batterie": {
       "label": "Direktrecycling",
       "slug": "direktrecycling-batterie",
@@ -5639,6 +5719,29 @@
       "relatedTerms": [
         "batterierecycling",
         "werterhalt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "direktstrom": {
+      "label": "Direktstrom",
+      "slug": "direktstrom",
+      "url": "/begriffe/direktstrom/",
+      "hoverDefinition": "Alltagssprache für Energieflussstrom: Strom direkt aus Energieflüssen.",
+      "shortDefinition": "Direktstrom ist die allgemein verständliche Bezeichnung für Energieflussstrom.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Direktstrom",
+        "direkter Strom"
+      ],
+      "relatedTerms": [
+        "energieflussstrom",
+        "direkte-elektrifizierung",
+        "energietraegerstrom",
+        "rueckverstromung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6206,6 +6309,35 @@
         "csrd",
         "vsme",
         "xbrl"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "efuels": {
+      "label": "eFuels",
+      "slug": "efuels",
+      "url": "/begriffe/efuels/",
+      "hoverDefinition": "Strombasierte synthetische Kraftstoffe für Anwendungen, in denen direkte Elektrifizierung schwer ist.",
+      "shortDefinition": "eFuels sind synthetische Kraftstoffe, die mit Strom, Wasserstoff und Kohlenstoffverbindungen hergestellt werden.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "eFuels",
+        "E-Fuels",
+        "e-Fuels",
+        "synthetische Kraftstoffe",
+        "synthetischer Kraftstoff",
+        "Power-to-Liquid"
+      ],
+      "relatedTerms": [
+        "wasserstoff",
+        "rueckverstromung",
+        "umwandlungskette",
+        "energietraeger",
+        "direkte-elektrifizierung",
+        "exergie"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6880,6 +7012,61 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "energiefluss": {
+      "label": "Energiefluss",
+      "slug": "energiefluss",
+      "url": "/begriffe/energiefluss/",
+      "hoverDefinition": "Sonnenstrahlung, Wind, Wasserkreislauf, Gezeiten, Meeresströmungen oder Umweltwärme.",
+      "shortDefinition": "Ein Energiefluss ist eine kontinuierlich verfügbare natürliche Energiebewegung.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energiefluss",
+        "natürlicher Energiefluss",
+        "Energieflüsse",
+        "natürliche Energieflüsse"
+      ],
+      "relatedTerms": [
+        "energieflussstrom",
+        "energietraeger",
+        "regenerative-energiequellen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "energieflussstrom": {
+      "label": "Energieflussstrom",
+      "slug": "energieflussstrom",
+      "url": "/begriffe/energieflussstrom/",
+      "hoverDefinition": "Strom aus Sonne, Wind, Wasser oder anderen natürlichen Energieflüssen ohne Brennstoffkette.",
+      "shortDefinition": "Energieflussstrom bezeichnet Strom, der unmittelbar aus natürlichen Energieflüssen gewonnen wird, ohne stofflichen Energieträger, Brennstoffkette oder vorgelagerte Energieträgerumwandlung.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energieflussstrom",
+        "Direktstrom",
+        "direkter Strom",
+        "Strom aus Energieflüssen",
+        "Strom aus natürlichen Energieflüssen"
+      ],
+      "relatedTerms": [
+        "direktstrom",
+        "energietraegerstrom",
+        "rueckverstromung",
+        "regenerative-energiequellen",
+        "direkte-elektrifizierung",
+        "umwandlungskette",
+        "exergie",
+        "energieeffizienz",
+        "energiewende"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "energiegemeinschaft": {
       "label": "Energiegemeinschaft",
       "slug": "energiegemeinschaft",
@@ -7006,6 +7193,58 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "energietraeger": {
+      "label": "Energieträger",
+      "slug": "energietraeger",
+      "url": "/begriffe/energietraeger/",
+      "hoverDefinition": "Kohle, Erdgas, Erdöl, Uran, Biomasse, Wasserstoff oder eFuels tragen Energie als Stoff oder Medium.",
+      "shortDefinition": "Ein Energieträger ist ein Stoff oder Medium, in dem Energie gespeichert, transportiert oder bereitgestellt wird.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energieträger",
+        "Primärenergieträger",
+        "Brennstoff",
+        "Energiespeicherstoff"
+      ],
+      "relatedTerms": [
+        "energiefluss",
+        "energietraegerstrom",
+        "brennstoffkette",
+        "umwandlungskette"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "energietraegerstrom": {
+      "label": "Energieträgerstrom",
+      "slug": "energietraegerstrom",
+      "url": "/begriffe/energietraegerstrom/",
+      "hoverDefinition": "Strom aus Kohle, Gas, Öl, Uran, Biomasse, Biogas oder anderen Energieträgern.",
+      "shortDefinition": "Energieträgerstrom bezeichnet Strom, der aus einem stofflichen Energieträger gewonnen wird.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energieträgerstrom",
+        "Strom aus Energieträgern",
+        "Brennstoffstrom",
+        "strom aus Brennstoffen"
+      ],
+      "relatedTerms": [
+        "brennstoffkette",
+        "energieflussstrom",
+        "rueckverstromung",
+        "exergie",
+        "umwandlungskette",
+        "energietraeger"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "energieumwandlung": {
       "label": "Energieumwandlung",
       "slug": "energieumwandlung",
@@ -7022,6 +7261,32 @@
         "photoelektrischer-effekt",
         "supraleitung",
         "primaerenergie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "energiewende": {
+      "label": "Energiewende",
+      "slug": "energiewende",
+      "url": "/begriffe/energiewende/",
+      "hoverDefinition": "Umbau von fossilen und nuklearen Pfaden zu erneuerbaren, effizienten und resilienten Energiesystemen.",
+      "shortDefinition": "Energiewende bezeichnet den Umbau des Energiesystems hin zu klimaverträglichen, resilienten und effizienteren Energiepfaden.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Energiewende",
+        "Energie-Wende",
+        "Umbau des Energiesystems"
+      ],
+      "relatedTerms": [
+        "erneuerbare-energien",
+        "regenerative-energiequellen",
+        "energieflussstrom",
+        "direkte-elektrifizierung",
+        "strommix",
+        "energieeffizienz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7567,22 +7832,29 @@
       "label": "Erneuerbare Energien",
       "slug": "erneuerbare-energien",
       "url": "/begriffe/erneuerbare-energien/",
-      "hoverDefinition": "Erneuerbare Energien stammen aus Quellen, die sich natürlich erneuern oder dauerhaft verfügbar sind.",
-      "shortDefinition": "Erneuerbare Energien stammen aus Quellen, die sich natürlich erneuern oder dauerhaft verfügbar sind.",
+      "hoverDefinition": "Nicht Energie erneuert sich, sondern Quellen, Energieflüsse oder Energieträger erneuern sich auf menschlichen Zeitskalen.",
+      "shortDefinition": "Erneuerbare Energien stammen aus Quellen, die sich auf menschlichen Zeitskalen erneuern oder dauerhaft verfügbar sind.",
       "category": "Energie, Strommarkt und Systemkosten",
       "synonyms": [
-        "Erneuerbare Energien"
+        "Erneuerbare Energien",
+        "regenerative Energien",
+        "erneuerbare Energie",
+        "erneuerbare Energiequellen"
       ],
       "relatedTerms": [
+        "regenerative-energiequellen",
+        "energieflussstrom",
+        "direktstrom",
+        "energietraegerstrom",
         "photovoltaik",
         "windenergie",
         "wasserkraft",
         "bioenergie",
+        "biogas",
         "geothermie",
         "solarthermie",
-        "abregelung",
         "gruenstrom",
-        "energiewirtschaft"
+        "energiewende"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8209,6 +8481,31 @@
         "wirkungsinnovation",
         "transformationswelle",
         "jochen-roepke"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "exergie": {
+      "label": "Exergie",
+      "slug": "exergie",
+      "url": "/begriffe/exergie/",
+      "hoverDefinition": "Der Teil von Energie, der technisch Arbeit leisten kann.",
+      "shortDefinition": "Exergie bezeichnet den nutzbaren Anteil einer Energieform zur Verrichtung technischer Arbeit.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Exergie",
+        "nutzbare Energie",
+        "Arbeitsfähigkeit von Energie"
+      ],
+      "relatedTerms": [
+        "umwandlungskette",
+        "energieflussstrom",
+        "energietraegerstrom",
+        "direkte-elektrifizierung",
+        "energieeffizienz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -12008,9 +12305,9 @@
         "Grünstrom"
       ],
       "relatedTerms": [
-        "herkunftsnachweis",
+        "strommix",
         "erneuerbare-energien",
-        "power-purchase-agreement"
+        "energieflussstrom"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22756,17 +23053,9 @@
         "Photovoltaik"
       ],
       "relatedTerms": [
-        "photoelektrischer-effekt",
-        "strommarkt",
-        "quantenphysik",
-        "halbleiter",
-        "bandluecke",
-        "quantensolarzelle",
-        "perowskit-solarzelle",
-        "tandem-solarzelle",
-        "erneuerbare-energien",
-        "capture-price",
-        "prosumer"
+        "energieflussstrom",
+        "energiefluss",
+        "direkte-elektrifizierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -26062,6 +26351,34 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "regenerative-energiequellen": {
+      "label": "Regenerative Energiequellen",
+      "slug": "regenerative-energiequellen",
+      "url": "/begriffe/regenerative-energiequellen/",
+      "hoverDefinition": "Sonne, Wind und Wasser sind Energieflussquellen; Biomasse und Biogas sind regenerative Energieträger.",
+      "shortDefinition": "Regenerative Energiequellen sind Energiequellen, die sich auf menschlichen Zeitskalen erneuern oder dauerhaft verfügbar sind.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Regenerative Energiequellen",
+        "regenerative Energiequelle",
+        "regenerative Energien",
+        "erneuerbare Energiequellen"
+      ],
+      "relatedTerms": [
+        "erneuerbare-energien",
+        "energiefluss",
+        "energieflussstrom",
+        "energietraeger",
+        "energietraegerstrom",
+        "bioenergie",
+        "biogas"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "regenerative-landwirtschaft": {
       "label": "Regenerative Landwirtschaft",
       "slug": "regenerative-landwirtschaft",
@@ -27618,6 +27935,35 @@
         "reverse-logistics",
         "zirkulaeres-geschaeftsmodell",
         "erweiterte-herstellerverantwortung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "rueckverstromung": {
+      "label": "Rückverstromung",
+      "slug": "rueckverstromung",
+      "url": "/begriffe/rueckverstromung/",
+      "hoverDefinition": "Erst Strom in einen Energieträger umwandeln, später daraus wieder Strom erzeugen.",
+      "shortDefinition": "Rückverstromung bezeichnet die Erzeugung von Strom aus einem Energieträger, der zuvor unter Energieaufwand hergestellt wurde.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Rückverstromung",
+        "Power-to-Gas-to-Power",
+        "Power to Gas to Power",
+        "Wasserstoffkraftwerk",
+        "eFuel-Kraftwerk",
+        "synthetisches Methan verstromen"
+      ],
+      "relatedTerms": [
+        "wasserstoff",
+        "efuels",
+        "energietraegerstrom",
+        "umwandlungskette",
+        "exergie",
+        "energieflussstrom"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -30550,6 +30896,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "strommix": {
+      "label": "Strommix",
+      "slug": "strommix",
+      "url": "/begriffe/strommix/",
+      "hoverDefinition": "Welche Quellen und Energieträger stecken im erzeugten oder genutzten Strom?",
+      "shortDefinition": "Strommix bezeichnet die Zusammensetzung des erzeugten oder verbrauchten Stroms nach Energieträgern und Energiequellen.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Strommix",
+        "Strom-Mix",
+        "Erzeugungsmix",
+        "Verbrauchsmix"
+      ],
+      "relatedTerms": [
+        "gruenstrom",
+        "erneuerbare-energien",
+        "energieflussstrom",
+        "energietraegerstrom",
+        "herkunftsnachweis",
+        "strommarkt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "stromnetz": {
       "label": "Stromnetz",
       "slug": "stromnetz",
@@ -32681,6 +33054,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "umwandlungskette": {
+      "label": "Umwandlungskette",
+      "slug": "umwandlungskette",
+      "url": "/begriffe/umwandlungskette/",
+      "hoverDefinition": "Jede Stufe zwischen Quelle und Nutzung: erzeugen, umwandeln, speichern, transportieren, nutzen.",
+      "shortDefinition": "Eine Umwandlungskette ist die Abfolge aller Energieumwandlungen zwischen Quelle und Endnutzung.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Umwandlungskette",
+        "Umwandlungsketten",
+        "Energieumwandlungskette",
+        "Conversion Chain"
+      ],
+      "relatedTerms": [
+        "energieflussstrom",
+        "energietraegerstrom",
+        "rueckverstromung",
+        "exergie",
+        "direkte-elektrifizierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "umweltgerechtigkeit": {
       "label": "Umweltgerechtigkeit",
       "slug": "umweltgerechtigkeit",
@@ -34493,7 +34892,8 @@
         "Wasserkraft"
       ],
       "relatedTerms": [
-        "erneuerbare-energien"
+        "energieflussstrom",
+        "energiefluss"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -34512,11 +34912,10 @@
         "Wasserstoff"
       ],
       "relatedTerms": [
-        "gruener-wasserstoff",
-        "blauer-wasserstoff",
-        "grauer-wasserstoff",
-        "power-to-x",
-        "wasserstoffspeicher"
+        "rueckverstromung",
+        "umwandlungskette",
+        "energietraeger",
+        "direkte-elektrifizierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35016,11 +35415,9 @@
         "Windenergie"
       ],
       "relatedTerms": [
-        "onshore-windenergie",
-        "offshore-windenergie",
-        "erneuerbare-energien",
-        "capture-price",
-        "repowering"
+        "energieflussstrom",
+        "energiefluss",
+        "direkte-elektrifizierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

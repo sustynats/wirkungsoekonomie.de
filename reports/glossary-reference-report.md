@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-05T13:41:54.639Z
+- Generated: 2026-06-05T14:47:27.366Z
 - Content pages scanned: 1009
-- Glossary terms indexed: 1324
-- Warnings: 561
+- Glossary terms indexed: 1339
+- Warnings: 566
 
 ## Stichproben
 
@@ -113,6 +113,7 @@
 - term has no content references: black-mass
 - term has no content references: blauer-wasserstoff
 - term has no content references: blei-saeure-batterie
+- term has no content references: brennstoffkette
 - term has no content references: buergerinitiative
 - term has no content references: business-model-canvas
 - term has no content references: c-rate
@@ -151,6 +152,7 @@
 - term has no content references: destruktives-narrativ
 - term has no content references: dezentralisierung-von-macht
 - term has no content references: direktrecycling-batterie
+- term has no content references: direktstrom
 - term has no content references: dissonanzreduktion
 - term has no content references: donor-dependency
 - term has no content references: drehtuer-effekt
@@ -167,8 +169,10 @@
 - term has no content references: elektromobilitaetsdienstleister
 - term has no content references: endlager
 - term has no content references: energiedichte
+- term has no content references: energieflussstrom
 - term has no content references: energiemanagementsystem
 - term has no content references: energiesicherheit
+- term has no content references: energietraegerstrom
 - term has no content references: energy-only-markt
 - term has no content references: epistemische-gemeinschaft
 - term has no content references: erlernte-hilflosigkeit
@@ -355,8 +359,4 @@
 - term has no content references: netzdienlichkeit
 - term has no content references: netzebene
 - term has no content references: netzengpass
-- term has no content references: netzentgelt
-- term has no content references: netzentgeltsystematik
-- term has no content references: netzreserve
-- term has no content references: netzspeicher
-- ... 261 weitere Warnungen
+- ... 266 weitere Warnungen
