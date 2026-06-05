@@ -3930,6 +3930,120 @@ const WirkungsraumLayer = (() => {
     return Array.isArray(items) ? items : [];
   }
 
+  const learningStatuses = {
+    offen: "offen",
+    in_arbeit: "in Arbeit",
+    verstanden: "verstanden",
+    wiederholen: "wiederholen"
+  };
+
+  const learningStatusScores = {
+    offen: 0,
+    in_arbeit: 50,
+    wiederholen: 70,
+    verstanden: 100
+  };
+
+  const academyParts = [
+    { id: "teil-1", label: "Teil I", title: "Grundverständnis", href: "/akademie.html#studienstruktur", keywords: ["teil 1", "teil i", "g1.", "zp1", "grundverständnis", "grundverstaendnis"] },
+    { id: "teil-2", label: "Teil II", title: "Wirkungskompetenz", href: "/akademie.html#studienstruktur", keywords: ["teil 2", "teil ii", "g2.", "zp2", "wirkungskompetenz"] },
+    { id: "teil-3", label: "Teil III", title: "Maßstab und Bewertung", href: "/akademie.html#studienstruktur", keywords: ["teil 3", "teil iii", "g3.", "zp3", "maßstab", "massstab", "bewertung"] },
+    { id: "teil-4", label: "Teil IV", title: "Steuerung und Rückkopplung", href: "/akademie.html#studienstruktur", keywords: ["teil 4", "teil iv", "g4.", "zp4", "steuerung", "rückkopplung", "rueckkopplung"] },
+    { id: "teil-5", label: "Teil V", title: "Anwendung", href: "/akademie.html#studienstruktur", keywords: ["teil 5", "teil v", "g5.", "zp5", "anwendung"] },
+    { id: "teil-6", label: "Teil VI", title: "Transformation und Systemdesign", href: "/akademie.html#studienstruktur", keywords: ["teil 6", "teil vi", "g6.", "zp6", "transformation", "systemdesign"] },
+    { id: "teil-7", label: "Teil VII", title: "Praxisprojekt und Abschluss", href: "/akademie.html#studienstruktur", keywords: ["teil 7", "teil vii", "g7.", "zp7", "praxisprojekt", "abschluss"] }
+  ];
+
+  function normalizeLearningStatus(status) {
+    return Object.prototype.hasOwnProperty.call(learningStatuses, status) ? status : "offen";
+  }
+
+  function learningStatusLabel(status) {
+    return learningStatuses[normalizeLearningStatus(status)];
+  }
+
+  function learningItems() {
+    const items = WoekUserSpace.getItems("learning_items");
+    return Array.isArray(items)
+      ? items
+          .filter((item) => item && typeof item === "object")
+          .map((item) => ({
+            ...item,
+            learning_status: normalizeLearningStatus(item.learning_status),
+            tags: Array.isArray(item.tags) ? item.tags : [],
+            added_at: item.added_at || item.created_at || item.updated_at || new Date().toISOString(),
+            updated_at: item.updated_at || item.added_at || null
+          }))
+          .sort((a, b) => new Date(b.updated_at || b.added_at || 0) - new Date(a.updated_at || a.added_at || 0))
+      : [];
+  }
+
+  function learningItemById(id) {
+    return learningItems().find((item) => item.id === id) || null;
+  }
+
+  function isLearningItem(id) {
+    return Boolean(learningItemById(id));
+  }
+
+  function inferAcademyPart(item) {
+    if (item?.part_id) return academyParts.find((part) => part.id === item.part_id) || null;
+    const text = [item?.title, item?.url, item?.category, ...(Array.isArray(item?.tags) ? item.tags : [])]
+      .join(" ")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+    return academyParts.find((part) => part.keywords.some((keyword) => text.includes(keyword.normalize("NFD").replace(/[\u0300-\u036f]/g, "")))) || null;
+  }
+
+  function learningItemFromPage(status = "offen") {
+    const item = currentItem();
+    const part = inferAcademyPart(item);
+    return {
+      ...item,
+      learning_status: normalizeLearningStatus(status),
+      added_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+      part_id: part?.id || "",
+      part_label: part?.label || ""
+    };
+  }
+
+  function upsertLearningItem(item, notify = true) {
+    if (!item?.id) return null;
+    const existing = learningItemById(item.id);
+    const normalizedStatus = normalizeLearningStatus(item.learning_status || existing?.learning_status);
+    const part = inferAcademyPart(item) || inferAcademyPart(existing);
+    const next = {
+      ...existing,
+      ...item,
+      learning_status: normalizedStatus,
+      added_at: existing?.added_at || item.added_at || new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+      part_id: item.part_id || existing?.part_id || part?.id || "",
+      part_label: item.part_label || existing?.part_label || part?.label || ""
+    };
+    const stored = WoekUserSpace.upsertItem("learning_items", next, { limit: 300, timestampField: "updated_at" });
+    if (notify) document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+    return stored;
+  }
+
+  function removeLearningItem(id) {
+    WoekUserSpace.removeItem("learning_items", id);
+    document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+  }
+
+  function updateLearningStatus(id, status) {
+    const item = learningItemById(id);
+    if (!item) return null;
+    return upsertLearningItem({ ...item, learning_status: normalizeLearningStatus(status) });
+  }
+
+  function learningButtonLabel(button, active) {
+    button.textContent = active ? "✓ In Lernliste" : "Zur Lernliste hinzufügen";
+    button.setAttribute("aria-pressed", String(active));
+  }
+
   function collectionSlug(value) {
     const slug = String(value || "sammlung")
       .trim()
@@ -4251,6 +4365,48 @@ const WirkungsraumLayer = (() => {
     }
   }
 
+  function injectLearningButton() {
+    const path = window.location.pathname;
+    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    if (document.querySelector("[data-wirkungsraum-learning-button]")) return;
+
+    const item = currentItem();
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "btn btn-secondary wirkungsraum-learning-button";
+    button.dataset.wirkungsraumLearningButton = item.id;
+    learningButtonLabel(button, isLearningItem(item.id));
+    button.addEventListener("click", () => {
+      if (isLearningItem(item.id)) {
+        removeLearningItem(item.id);
+        learningButtonLabel(button, false);
+        return;
+      }
+      upsertLearningItem(learningItemFromPage("offen"));
+      learningButtonLabel(button, true);
+    });
+
+    const actions = document.querySelector(".hero-actions");
+    if (actions) {
+      actions.append(button);
+      return;
+    }
+
+    const existingRow = document.querySelector(".wirkungsraum-save-row");
+    if (existingRow) {
+      existingRow.append(button);
+      return;
+    }
+
+    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
+    if (heroCopy) {
+      const wrap = document.createElement("p");
+      wrap.className = "wirkungsraum-save-row";
+      wrap.append(button);
+      heroCopy.append(wrap);
+    }
+  }
+
   function progressPercent() {
     const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     return Math.max(0, Math.min(100, Math.round((window.scrollY / scrollable) * 100)));
@@ -4436,6 +4592,165 @@ const WirkungsraumLayer = (() => {
     if (statRead) statRead.textContent = String(reading.filter((item) => itemStatus(item) === "gelesen").length);
   }
 
+  function learningCard(item) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-learning-card";
+    article.dataset.learningId = item.id;
+    const tags = Array.isArray(item.tags) ? item.tags.slice(0, 4) : [];
+    const part = item.part_label ? `<span class="chip">${escapeHtml(item.part_label)}</span>` : "";
+    const statusOptions = Object.entries(learningStatuses)
+      .map(([value, label]) => `<option value="${escapeAttribute(value)}" ${normalizeLearningStatus(item.learning_status) === value ? "selected" : ""}>${escapeHtml(label)}</option>`)
+      .join("");
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(item.type || "Lerninhalt")}</p>
+      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      <p class="wirkungsraum-meta">Lernstatus: ${escapeHtml(learningStatusLabel(item.learning_status))}</p>
+      <label class="wirkungsraum-status-select">
+        <span>Status ändern</span>
+        <select data-learning-status="${escapeAttribute(item.id)}">${statusOptions}</select>
+      </label>
+      ${(part || tags.length) ? `<div class="chip-row">${part}${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Öffnen</a>
+        <button class="btn btn-secondary" type="button" data-remove-learning="${escapeAttribute(item.id || "")}">Entfernen</button>
+      </p>
+    `;
+    return article;
+  }
+
+  function renderLearningList(container, items) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">Noch keine Lernliste. Auf Inhaltsseiten erscheint automatisch „Zur Lernliste hinzufügen“.</p>`;
+      container.append(empty);
+      return;
+    }
+    items.forEach((item) => container.append(learningCard(item)));
+  }
+
+  function academyItemFromPart(part) {
+    return {
+      id: `akademie-${part.id}`,
+      type: "Akademie",
+      title: `${part.label}: ${part.title}`,
+      url: part.href,
+      category: "Akademie-Grundstudium",
+      tags: ["Akademie", "Lernpfad", part.label],
+      learning_status: "offen",
+      part_id: part.id,
+      part_label: part.label,
+      added_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    };
+  }
+
+  function academyProgressRows() {
+    const learning = learningItems();
+    const reading = readingProgressItems();
+    return academyParts.map((part) => {
+      const partLearning = learning.filter((item) => item.part_id === part.id || inferAcademyPart(item)?.id === part.id);
+      const partReading = reading.filter((item) => inferAcademyPart(item)?.id === part.id);
+      const statusScore = partLearning.length
+        ? Math.round(partLearning.reduce((sum, item) => sum + learningStatusScores[normalizeLearningStatus(item.learning_status)], 0) / partLearning.length)
+        : 0;
+      const readingScore = partReading.length ? Math.max(...partReading.map((item) => normalizedProgress(item.progress))) : 0;
+      const progress = Math.max(statusScore, readingScore);
+      const understood = partLearning.filter((item) => normalizeLearningStatus(item.learning_status) === "verstanden").length;
+      const repeat = partLearning.filter((item) => normalizeLearningStatus(item.learning_status) === "wiederholen").length;
+      const inWork = partLearning.filter((item) => normalizeLearningStatus(item.learning_status) === "in_arbeit").length;
+      return { part, partLearning, progress, understood, repeat, inWork };
+    });
+  }
+
+  function drawAcademyProgress(root) {
+    const container = root.querySelector("[data-academy-progress]");
+    const moduleList = root.querySelector("[data-academy-module-list]");
+    const statAcademy = root.querySelector("[data-stat-academy]");
+    const rows = academyProgressRows();
+    const academyLearning = learningItems().filter((item) => item.type === "Akademie" || /\/akademie/.test(item.url || ""));
+    const academyReading = readingProgressItems().filter((item) => item.type === "Akademie" || /\/akademie/.test(item.url || ""));
+    if (statAcademy) statAcademy.textContent = String(academyLearning.length || academyReading.length);
+
+    if (container) {
+      container.innerHTML = rows
+        .map(({ part, partLearning, progress, understood, repeat, inWork }) => `
+          <article class="card wirkungsraum-part-progress" data-academy-part="${escapeAttribute(part.id)}">
+            <div>
+              <p class="card-kicker">${escapeHtml(part.label)}</p>
+              <h3 class="card-title">${escapeHtml(part.title)}</h3>
+              <p class="wirkungsraum-meta">${partLearning.length} Lerninhalt${partLearning.length === 1 ? "" : "e"} · ${progress}%</p>
+            </div>
+            <p class="wirkungsraum-progress" aria-label="${escapeAttribute(part.label)} Fortschritt ${progress}%"><span style="width:${Math.max(3, progress)}%"></span></p>
+            <p class="wirkungsraum-part-meta">verstanden: ${understood} · in Arbeit: ${inWork} · wiederholen: ${repeat}</p>
+          </article>
+        `)
+        .join("");
+    }
+
+    if (moduleList) {
+      const modulesById = new Map();
+      academyLearning.forEach((item) => {
+        const status = normalizeLearningStatus(item.learning_status);
+        modulesById.set(item.id || item.url, {
+          ...item,
+          progress: learningStatusScores[status],
+          status: status === "verstanden" ? "gelesen" : status === "offen" ? "ungelesen" : "begonnen",
+          last_read_at: item.updated_at || item.added_at || null
+        });
+      });
+      academyReading.forEach((item) => {
+        const key = item.id || item.url;
+        const existing = modulesById.get(key);
+        modulesById.set(key, existing ? { ...existing, ...item, progress: Math.max(normalizedProgress(existing.progress), normalizedProgress(item.progress)) } : item);
+      });
+      const academyModules = [...modulesById.values()].sort((a, b) => new Date(b.last_read_at || b.updated_at || b.added_at || 0) - new Date(a.last_read_at || a.updated_at || a.added_at || 0));
+      renderList(moduleList, academyModules.slice(0, 6), "Noch kein Akademie-Lesefortschritt. Öffne Akademie-Seiten oder füge Teile zur Lernliste hinzu.", {
+        readLabel: "Weiterlernen",
+        showStatus: true,
+        showLastRead: true,
+        href: (item) => continueUrl(item.url)
+      });
+    }
+  }
+
+  function drawLearningRecommendations(root) {
+    const container = root.querySelector("[data-learning-recommendations]");
+    if (!container) return;
+    const rows = academyProgressRows();
+    const nextRows = rows.filter((row) => row.progress < 100).slice(0, 3);
+    const fallbackRows = rows.slice(0, 3);
+    const visibleRows = nextRows.length ? nextRows : fallbackRows;
+    container.innerHTML = visibleRows
+      .map(({ part, progress }) => {
+        const already = Boolean(learningItemById(`akademie-${part.id}`));
+        return `
+          <article class="card text-link-card">
+            <p class="card-kicker">${escapeHtml(part.label)} · ${progress}%</p>
+            <h3 class="card-title">${escapeHtml(part.title)}</h3>
+            <p class="card-text">Nächster sinnvoller Lernschritt im Grundstudium.</p>
+            <p class="wirkungsraum-item-actions">
+              <a class="btn btn-secondary" href="${escapeAttribute(part.href)}">Modul öffnen</a>
+              <button class="btn btn-primary" type="button" data-add-learning-suggestion="${escapeAttribute(part.id)}">${already ? "In Lernliste" : "Zur Lernliste hinzufügen"}</button>
+            </p>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  function drawLearningDashboard(root) {
+    const learningList = root.querySelector("[data-learning-list]");
+    const learning = learningItems();
+    renderLearningList(learningList, learning);
+    const statLearning = root.querySelector("[data-stat-learning]");
+    if (statLearning) statLearning.textContent = String(learning.length);
+    drawAcademyProgress(root);
+    drawLearningRecommendations(root);
+  }
+
   function collectionItemMarkup(collection, savedById) {
     if (!collection.item_ids.length) return `<p class="card-text">Noch keine Inhalte in dieser Sammlung.</p>`;
     return `
@@ -4535,6 +4850,13 @@ const WirkungsraumLayer = (() => {
           drawSavedDashboard(root);
         }
       });
+      root.addEventListener("change", (event) => {
+        const statusSelect = event.target instanceof HTMLElement ? event.target.closest("[data-learning-status]") : null;
+        if (statusSelect instanceof HTMLSelectElement) {
+          updateLearningStatus(statusSelect.dataset.learningStatus || "", statusSelect.value);
+          drawLearningDashboard(root);
+        }
+      });
       root.addEventListener("submit", (event) => {
         const form = event.target;
         if (!(form instanceof HTMLFormElement)) return;
@@ -4567,6 +4889,21 @@ const WirkungsraumLayer = (() => {
         if (remove instanceof HTMLButtonElement) {
           removeItem(remove.dataset.removeSaved || "");
           drawSavedDashboard(root);
+          return;
+        }
+        const removeLearning = event.target instanceof HTMLElement ? event.target.closest("[data-remove-learning]") : null;
+        if (removeLearning instanceof HTMLButtonElement) {
+          removeLearningItem(removeLearning.dataset.removeLearning || "");
+          drawLearningDashboard(root);
+          return;
+        }
+        const learningSuggestion = event.target instanceof HTMLElement ? event.target.closest("[data-add-learning-suggestion]") : null;
+        if (learningSuggestion instanceof HTMLButtonElement) {
+          const part = academyParts.find((entry) => entry.id === learningSuggestion.dataset.addLearningSuggestion);
+          if (part) {
+            upsertLearningItem(academyItemFromPart(part));
+            drawLearningDashboard(root);
+          }
           return;
         }
         const clear = event.target instanceof HTMLElement ? event.target.closest("[data-clear-wirkungsraum]") : null;
@@ -4627,6 +4964,7 @@ const WirkungsraumLayer = (() => {
     drawSavedDashboard(root);
     drawReadingDashboard(root);
     drawCollectionsDashboard(root);
+    drawLearningDashboard(root);
   }
 
   function comparablePath(value) {
@@ -4890,6 +5228,7 @@ const WirkungsraumLayer = (() => {
     trackVisit();
     injectSaveButton();
     injectCollectionButton();
+    injectLearningButton();
     restoreReadingPosition();
     trackReadingProgress();
     renderDashboard();

@@ -43,7 +43,8 @@
   margin-top: 1.25rem;
 }
 
-.wirkungsraum-save-button[aria-pressed="true"] {
+.wirkungsraum-save-button[aria-pressed="true"],
+.wirkungsraum-learning-button[aria-pressed="true"] {
   border-color: var(--green);
   background: rgba(46, 132, 99, 0.1);
   color: var(--green);
@@ -319,6 +320,58 @@
   flex-wrap: wrap;
   gap: 0.65rem;
   margin: 1rem 0 0;
+}
+
+.wirkungsraum-learning-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.wirkungsraum-status-select {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+.wirkungsraum-status-select select {
+  width: min(100%, 18rem);
+  border: 1px solid rgba(23, 79, 56, 0.24);
+  border-radius: 8px;
+  padding: 0.78rem 0.9rem;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 800;
+}
+
+.wirkungsraum-academy-progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.wirkungsraum-part-progress {
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+}
+
+.wirkungsraum-part-progress .card-title {
+  margin-bottom: 0;
+}
+
+.wirkungsraum-part-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.wirkungsraum-section-subheader {
+  margin-top: 2rem;
 }
 
 .wirkungsraum-collection-list {

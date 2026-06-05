@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mein Wirkungsraum | Gemerkte Inhalte</title>
-    <meta name="description" content="Mein Wirkungsraum zeigt lokal gemerkte Begriffe, Kapitel, Dokumente, Debattenseiten, Werkzeuge und Akademie-Module auf wirkungsoekonomie.de.">
+    <title>Mein Wirkungsraum | Lerncockpit und gemerkte Inhalte</title>
+    <meta name="description" content="Mein Wirkungsraum zeigt lokal gemerkte Inhalte, Lernlisten, Lesefortschritt, Akademie-Fortschritt und persönliche Sammlungen auf wirkungsoekonomie.de.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage4">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage5">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -41,10 +41,12 @@
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Mein Wirkungsraum</nav>
           <p class="hero-kicker">Persönlicher Arbeitsraum</p>
           <h1 class="hero-title">Mein Wirkungsraum</h1>
-          <p class="hero-subtitle">Deine lokal gemerkten Inhalte und dein Lesefortschritt auf wirkungsoekonomie.de.</p>
-          <p class="card-text">Speichere Inhalte mit „⭐ Merken“ und lies lange Seiten später weiter. Alles bleibt in diesem Browser. Es gibt noch kein Login und keine Server-Synchronisierung.</p>
+          <p class="hero-subtitle">Deine lokal gemerkten Inhalte, Lernliste und Akademie-Fortschritte auf wirkungsoekonomie.de.</p>
+          <p class="card-text">Speichere Inhalte mit „⭐ Merken“, lege Lerninhalte mit „Zur Lernliste hinzufügen“ ab und lies lange Seiten später weiter. Alles bleibt in diesem Browser. Es gibt noch kein Login und keine Server-Synchronisierung.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#zuletzt-gelesen">Weiterlesen</a>
+            <a class="btn btn-secondary" href="#lernliste">Lernliste</a>
+            <a class="btn btn-secondary" href="#akademie-fortschritt">Akademie-Fortschritt</a>
             <a class="btn btn-secondary" href="#gemerkte-inhalte">Gemerkte Inhalte ansehen</a>
             <a class="btn btn-secondary" href="#sammlungen">Sammlungen</a>
             <a class="btn btn-secondary" href="../suche.html">Inhalte suchen</a>
@@ -59,6 +61,8 @@
             <article class="card"><p class="card-kicker">Aktueller Filter</p><strong data-stat-visible>0</strong><span>sichtbare Treffer</span></article>
             <article class="card"><p class="card-kicker">Weiterlesen</p><strong data-stat-progress>0</strong><span>Inhalte mit Fortschritt</span></article>
             <article class="card"><p class="card-kicker">Gelesen</p><strong data-stat-read>0</strong><span>abgeschlossene Inhalte</span></article>
+            <article class="card"><p class="card-kicker">Lernliste</p><strong data-stat-learning>0</strong><span>aktive Lerninhalte</span></article>
+            <article class="card"><p class="card-kicker">Akademie</p><strong data-stat-academy>0</strong><span>Module mit Fortschritt</span></article>
             <article class="card"><p class="card-kicker">Sammlungen</p><strong data-stat-collections>0</strong><span>thematische Bündel</span></article>
           </div>
         </div>
@@ -73,6 +77,52 @@
           </div>
           <div class="wirkungsraum-list" data-reading-list>
             <article class="card"><p class="card-text">Noch kein Lesefortschritt. Öffne ein Referenzkapitel, Buchkapitel, Dokument, Dossier oder Akademie-Modul.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="lernliste">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Lernliste</p>
+            <h2>Meine Lernliste</h2>
+            <p>Lege Akademie-Module, Werkzeuge, Referenzseiten und Debattenkarten auf deine Lernliste. Der Status bleibt lokal im Browser und kann jederzeit geändert werden.</p>
+          </div>
+          <div class="wirkungsraum-list" data-learning-list>
+            <article class="card"><p class="card-text">Noch keine Lernliste. Auf Inhaltsseiten erscheint automatisch „Zur Lernliste hinzufügen“.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="akademie-fortschritt">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Akademie-Fortschritt</p>
+            <h2>Akademie-Fortschritt</h2>
+            <p>Die Teile des Grundstudiums werden aus deiner Lernliste und deinem lokalen Lesefortschritt zusammengeführt.</p>
+          </div>
+          <div class="wirkungsraum-academy-progress" data-academy-progress>
+            <article class="card"><p class="card-text">Noch kein Akademie-Fortschritt. Füge Akademie-Teile zur Lernliste hinzu oder öffne Akademie-Module.</p></article>
+          </div>
+          <div class="section-header wirkungsraum-section-subheader">
+            <p class="hero-kicker">Akademie-Module</p>
+            <h3>Module mit Lesefortschritt</h3>
+          </div>
+          <div class="wirkungsraum-list" data-academy-module-list>
+            <article class="card"><p class="card-text">Noch kein Akademie-Lesefortschritt.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="naechste-module">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Nächste Module</p>
+            <h2>Nächste empfohlene Module</h2>
+            <p>Die Vorschläge orientieren sich an den noch offenen Teilen des Akademie-Grundstudiums.</p>
+          </div>
+          <div class="card-grid three" data-learning-recommendations>
+            <article class="card"><p class="card-text">Empfehlungen erscheinen, sobald der Wirkungsraum geladen ist.</p></article>
           </div>
         </div>
       </section>
@@ -248,6 +298,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage4"></script>
+    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage5"></script>
   </body>
 </html>
