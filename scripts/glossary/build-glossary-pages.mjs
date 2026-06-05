@@ -273,7 +273,7 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(metaTitle)}</title>
     <meta name="description" content="${esc(metaDescription)}">
-    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260604-menu-fix">
+    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260605-wirkungsraum-stage4">
   </head>
   <body>
 ${renderHeader(depth)}
@@ -281,7 +281,7 @@ ${renderHeader(depth)}
 ${body}
     </main>
 ${renderFooter(depth)}
-    <script src="${depth}assets/js/main.js?v=20260605-wirkungsraum-stage3"></script>
+    <script src="${depth}assets/js/main.js?v=20260605-wirkungsraum-stage4"></script>
   </body>
 </html>
 `.replace(/[ \t]+$/gm, "");

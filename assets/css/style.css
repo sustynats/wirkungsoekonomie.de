@@ -49,14 +49,98 @@
   color: var(--green);
 }
 
+.wirkungsraum-collection-panel {
+  display: grid;
+  gap: 1rem;
+  max-width: 42rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(23, 79, 56, 0.22);
+  border-left: 4px solid var(--green);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 245, 0.98);
+  box-shadow: var(--shadow-card);
+}
+
+.wirkungsraum-collection-panel[hidden] {
+  display: none;
+}
+
+.wirkungsraum-collection-panel-header {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.wirkungsraum-collection-panel-header .card-kicker {
+  margin: 0;
+}
+
+.wirkungsraum-collection-options {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.wirkungsraum-collection-option {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: start;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--navy);
+  cursor: pointer;
+}
+
+.wirkungsraum-collection-option input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.15rem;
+  accent-color: var(--green);
+}
+
+.wirkungsraum-collection-option small {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.wirkungsraum-collection-inline-form,
+.wirkungsraum-collection-edit-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.wirkungsraum-collection-inline-form label,
+.wirkungsraum-collection-edit-form label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.wirkungsraum-collection-inline-form input,
+.wirkungsraum-collection-edit-form input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.82rem 0.95rem;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+}
+
 .wirkungsraum-stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   gap: 1rem;
 }
 
 .wirkungsraum-stats.compact {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 }
 
 .wirkungsraum-stats .card {
@@ -98,6 +182,13 @@
   font: inherit;
 }
 
+.wirkungsraum-template-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0 0 1.25rem;
+}
+
 .wirkungsraum-filter-row {
   display: flex;
   flex-wrap: wrap;
@@ -123,6 +214,24 @@
   border-color: var(--green);
   background: var(--green);
   color: var(--white);
+  outline: none;
+}
+
+.wirkungsraum-template-row .filter-chip {
+  border: 1px solid rgba(23, 79, 56, 0.22);
+  border-radius: 999px;
+  padding: 0.6rem 0.9rem;
+  background: var(--white);
+  color: var(--green-dark);
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.wirkungsraum-template-row .filter-chip:hover,
+.wirkungsraum-template-row .filter-chip:focus-visible {
+  border-color: var(--green);
+  background: rgba(47, 125, 92, 0.08);
   outline: none;
 }
 
@@ -206,6 +315,64 @@
 }
 
 .wirkungsraum-item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+}
+
+.wirkungsraum-collection-list {
+  align-items: start;
+}
+
+.wirkungsraum-collection-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.wirkungsraum-collection-items {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.wirkungsraum-collection-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(23, 79, 56, 0.16);
+  border-radius: 8px;
+  background: rgba(47, 125, 92, 0.05);
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.wirkungsraum-collection-item.muted {
+  color: var(--muted);
+}
+
+.wirkungsraum-collection-item a {
+  color: var(--green-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.wirkungsraum-collection-item button {
+  border: 0;
+  background: transparent;
+  color: var(--green-dark);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  cursor: pointer;
+}
+
+.wirkungsraum-collection-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;

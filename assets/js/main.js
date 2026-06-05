@@ -3930,6 +3930,155 @@ const WirkungsraumLayer = (() => {
     return Array.isArray(items) ? items : [];
   }
 
+  function collectionSlug(value) {
+    const slug = String(value || "sammlung")
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 48);
+    return slug || "sammlung";
+  }
+
+  function collectionId(title) {
+    return `collection-${Date.now()}-${collectionSlug(title)}`;
+  }
+
+  function normalizedCollection(collection) {
+    if (!collection || typeof collection !== "object") return null;
+    const title = String(collection.title || "").replace(/\s+/g, " ").trim() || "Unbenannte Sammlung";
+    const now = new Date().toISOString();
+    const itemIds = Array.from(
+      new Set(Array.isArray(collection.item_ids) ? collection.item_ids.filter(Boolean).map((id) => String(id)) : [])
+    );
+    return {
+      id: collection.id || collectionId(title),
+      title,
+      description: String(collection.description || "").replace(/\s+/g, " ").trim(),
+      created_at: collection.created_at || collection.updated_at || now,
+      updated_at: collection.updated_at || collection.created_at || now,
+      item_ids: itemIds
+    };
+  }
+
+  function collections() {
+    const items = WoekUserSpace.getItems("collections");
+    return Array.isArray(items)
+      ? items
+          .map(normalizedCollection)
+          .filter(Boolean)
+          .sort((a, b) => new Date(b.updated_at || 0) - new Date(a.updated_at || 0))
+      : [];
+  }
+
+  function findCollection(id) {
+    return collections().find((collection) => collection.id === id) || null;
+  }
+
+  function upsertCollection(collection, notify = true) {
+    const normalized = normalizedCollection({ ...collection, updated_at: collection.updated_at || new Date().toISOString() });
+    if (!normalized) return null;
+    WoekUserSpace.upsertItem("collections", normalized, { limit: 80, timestampField: "updated_at" });
+    if (notify) document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+    return normalized;
+  }
+
+  function createCollection(title, description = "", notify = true) {
+    const trimmedTitle = String(title || "").replace(/\s+/g, " ").trim();
+    if (!trimmedTitle) return null;
+    const existing = collections().find((collection) => collection.title.toLowerCase() === trimmedTitle.toLowerCase());
+    if (existing) {
+      const trimmedDescription = String(description || "").replace(/\s+/g, " ").trim();
+      if (trimmedDescription && !existing.description) return updateCollection(existing.id, { description: trimmedDescription }, notify);
+      return existing;
+    }
+    const now = new Date().toISOString();
+    return upsertCollection(
+      {
+        id: collectionId(trimmedTitle),
+        title: trimmedTitle,
+        description: String(description || "").replace(/\s+/g, " ").trim(),
+        created_at: now,
+        updated_at: now,
+        item_ids: []
+      },
+      notify
+    );
+  }
+
+  function updateCollection(id, patch = {}, notify = true) {
+    const collection = findCollection(id);
+    if (!collection) return null;
+    const title = Object.prototype.hasOwnProperty.call(patch, "title")
+      ? String(patch.title || "").replace(/\s+/g, " ").trim()
+      : collection.title;
+    if (!title) return null;
+    const itemIds = Object.prototype.hasOwnProperty.call(patch, "item_ids")
+      ? Array.from(new Set((Array.isArray(patch.item_ids) ? patch.item_ids : []).filter(Boolean).map((itemId) => String(itemId))))
+      : collection.item_ids;
+    return upsertCollection(
+      {
+        ...collection,
+        ...patch,
+        title,
+        description: Object.prototype.hasOwnProperty.call(patch, "description")
+          ? String(patch.description || "").replace(/\s+/g, " ").trim()
+          : collection.description,
+        item_ids: itemIds,
+        updated_at: new Date().toISOString()
+      },
+      notify
+    );
+  }
+
+  function deleteCollection(id) {
+    WoekUserSpace.removeItem("collections", id);
+    document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+  }
+
+  function savedItemById(id) {
+    return savedItems().find((item) => item.id === id) || null;
+  }
+
+  function addItemToCollection(collectionIdValue, item = currentItem()) {
+    const collection = findCollection(collectionIdValue);
+    if (!collection || !item?.id) return null;
+    const storedItem = savedItemById(item.id) || item;
+    WoekUserSpace.upsertItem("saved_items", storedItem, { limit: 300, timestampField: "saved_at" });
+    const itemIds = Array.from(new Set([item.id, ...collection.item_ids]));
+    return updateCollection(collection.id, { item_ids: itemIds }, true);
+  }
+
+  function removeItemFromCollection(collectionIdValue, itemId) {
+    const collection = findCollection(collectionIdValue);
+    if (!collection || !itemId) return null;
+    return updateCollection(
+      collection.id,
+      { item_ids: collection.item_ids.filter((existingId) => existingId !== itemId) },
+      true
+    );
+  }
+
+  function removeItemFromAllCollections(itemId) {
+    collections().forEach((collection) => {
+      if (!collection.item_ids.includes(itemId)) return;
+      updateCollection(
+        collection.id,
+        { item_ids: collection.item_ids.filter((existingId) => existingId !== itemId) },
+        false
+      );
+    });
+  }
+
+  function clearCollectionItemIds() {
+    collections().forEach((collection) => {
+      if (!collection.item_ids.length) return;
+      updateCollection(collection.id, { item_ids: [] }, false);
+    });
+  }
+
   function saveItem(item) {
     WoekUserSpace.upsertItem("saved_items", item, { limit: 300, timestampField: "saved_at" });
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
@@ -3937,6 +4086,7 @@ const WirkungsraumLayer = (() => {
 
   function removeItem(id) {
     WoekUserSpace.removeItem("saved_items", id);
+    removeItemFromAllCollections(id);
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
   }
 
@@ -3981,6 +4131,123 @@ const WirkungsraumLayer = (() => {
       wrap.className = "wirkungsraum-save-row";
       wrap.append(button);
       heroCopy.append(wrap);
+    }
+  }
+
+  function renderCollectionPanel(panel, item) {
+    const currentCollections = collections();
+    const options = currentCollections.length
+      ? currentCollections
+          .map((collection) => {
+            const checked = collection.item_ids.includes(item.id);
+            return `
+              <label class="wirkungsraum-collection-option">
+                <input type="checkbox" value="${escapeAttribute(collection.id)}" data-collection-toggle ${checked ? "checked" : ""}>
+                <span>
+                  <strong>${escapeHtml(collection.title)}</strong>
+                  <small>${collection.item_ids.length} Inhalt${collection.item_ids.length === 1 ? "" : "e"}</small>
+                </span>
+              </label>
+            `;
+          })
+          .join("")
+      : `<p class="card-text">Noch keine Sammlung. Lege unten die erste an und speichere diese Seite direkt darin.</p>`;
+
+    panel.innerHTML = `
+      <div class="wirkungsraum-collection-panel-header">
+        <p class="card-kicker">Sammlungen</p>
+        <strong>In Sammlung ablegen</strong>
+      </div>
+      <div class="wirkungsraum-collection-options">${options}</div>
+      <form class="wirkungsraum-collection-inline-form" data-collection-inline-create>
+        <label>
+          <span>Neue Sammlung</span>
+          <input type="text" name="collection-title" placeholder="z. B. Debatten-Kompass" required>
+        </label>
+        <label>
+          <span>Beschreibung</span>
+          <input type="text" name="collection-description" placeholder="optional">
+        </label>
+        <button class="btn btn-primary" type="submit">Erstellen und hinzufügen</button>
+      </form>
+    `;
+  }
+
+  function collectionPanelOpen(panel, button, open) {
+    panel.hidden = !open;
+    button.setAttribute("aria-expanded", String(open));
+    if (open) renderCollectionPanel(panel, currentItem());
+  }
+
+  function injectCollectionButton() {
+    const path = window.location.pathname;
+    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    if (document.querySelector("[data-wirkungsraum-collection-button]")) return;
+
+    const item = currentItem();
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "btn btn-secondary wirkungsraum-collection-button";
+    button.dataset.wirkungsraumCollectionButton = item.id;
+    button.setAttribute("aria-expanded", "false");
+    button.textContent = "Zu Sammlung hinzufügen";
+
+    const panel = document.createElement("div");
+    panel.className = "wirkungsraum-collection-panel";
+    panel.dataset.wirkungsraumCollectionPanel = item.id;
+    panel.hidden = true;
+
+    button.addEventListener("click", () => {
+      collectionPanelOpen(panel, button, panel.hidden);
+    });
+
+    panel.addEventListener("change", (event) => {
+      const toggle = event.target instanceof HTMLElement ? event.target.closest("[data-collection-toggle]") : null;
+      if (!(toggle instanceof HTMLInputElement)) return;
+      const current = currentItem();
+      if (toggle.checked) addItemToCollection(toggle.value, current);
+      else removeItemFromCollection(toggle.value, current.id);
+      renderCollectionPanel(panel, current);
+    });
+
+    panel.addEventListener("submit", (event) => {
+      const form = event.target;
+      if (!(form instanceof HTMLFormElement) || !form.matches("[data-collection-inline-create]")) return;
+      event.preventDefault();
+      const title = form.querySelector("[name='collection-title']")?.value || "";
+      const description = form.querySelector("[name='collection-description']")?.value || "";
+      const collection = createCollection(title, description, false);
+      if (!collection) return;
+      addItemToCollection(collection.id, currentItem());
+      form.reset();
+      renderCollectionPanel(panel, currentItem());
+    });
+
+    document.addEventListener("wirkungsraum:changed", () => {
+      if (!panel.hidden) renderCollectionPanel(panel, currentItem());
+    });
+
+    const actions = document.querySelector(".hero-actions");
+    if (actions) {
+      actions.append(button);
+      actions.insertAdjacentElement("afterend", panel);
+      return;
+    }
+
+    const existingRow = document.querySelector(".wirkungsraum-save-row");
+    if (existingRow) {
+      existingRow.append(button);
+      existingRow.insertAdjacentElement("afterend", panel);
+      return;
+    }
+
+    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
+    if (heroCopy) {
+      const wrap = document.createElement("p");
+      wrap.className = "wirkungsraum-save-row";
+      wrap.append(button);
+      heroCopy.append(wrap);
+      wrap.insertAdjacentElement("afterend", panel);
     }
   }
 
@@ -4169,6 +4436,87 @@ const WirkungsraumLayer = (() => {
     if (statRead) statRead.textContent = String(reading.filter((item) => itemStatus(item) === "gelesen").length);
   }
 
+  function collectionItemMarkup(collection, savedById) {
+    if (!collection.item_ids.length) return `<p class="card-text">Noch keine Inhalte in dieser Sammlung.</p>`;
+    return `
+      <div class="wirkungsraum-collection-items">
+        ${collection.item_ids
+          .map((itemId) => {
+            const item = savedById.get(itemId);
+            if (!item) {
+              return `
+                <span class="wirkungsraum-collection-item muted">
+                  <span>Nicht mehr gemerkt</span>
+                  <button type="button" data-remove-collection-item data-collection-id="${escapeAttribute(collection.id)}" data-item-id="${escapeAttribute(itemId)}">Entfernen</button>
+                </span>
+              `;
+            }
+            return `
+              <span class="wirkungsraum-collection-item">
+                <a href="${escapeAttribute(item.url || "#")}">${escapeHtml(item.title || "Ohne Titel")}</a>
+                <button type="button" data-remove-collection-item data-collection-id="${escapeAttribute(collection.id)}" data-item-id="${escapeAttribute(itemId)}">Entfernen</button>
+              </span>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
+  }
+
+  function collectionCard(collection, savedById) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-collection-card";
+    article.dataset.collectionId = collection.id;
+    const updated = collection.updated_at ? `<p class="wirkungsraum-meta">Aktualisiert: ${escapeHtml(formatDateTime(collection.updated_at))}</p>` : "";
+    article.innerHTML = `
+      <div data-collection-view>
+        <p class="card-kicker">Sammlung</p>
+        <h3 class="card-title">${escapeHtml(collection.title)}</h3>
+        ${collection.description ? `<p class="card-text">${escapeHtml(collection.description)}</p>` : ""}
+        <p class="wirkungsraum-meta">${collection.item_ids.length} Inhalt${collection.item_ids.length === 1 ? "" : "e"}</p>
+        ${updated}
+        ${collectionItemMarkup(collection, savedById)}
+        <p class="wirkungsraum-collection-actions">
+          <button class="btn btn-secondary" type="button" data-edit-collection="${escapeAttribute(collection.id)}">Umbenennen</button>
+          <button class="btn btn-secondary" type="button" data-delete-collection="${escapeAttribute(collection.id)}">Löschen</button>
+        </p>
+      </div>
+      <form class="wirkungsraum-collection-edit-form" data-collection-edit-form hidden>
+        <label>
+          <span>Titel</span>
+          <input type="text" name="collection-title" value="${escapeAttribute(collection.title)}" required>
+        </label>
+        <label>
+          <span>Beschreibung</span>
+          <input type="text" name="collection-description" value="${escapeAttribute(collection.description || "")}">
+        </label>
+        <p class="wirkungsraum-collection-actions">
+          <button class="btn btn-primary" type="submit">Speichern</button>
+          <button class="btn btn-secondary" type="button" data-cancel-collection-edit>Abbrechen</button>
+        </p>
+      </form>
+    `;
+    return article;
+  }
+
+  function drawCollectionsDashboard(root) {
+    const collectionList = root.querySelector("[data-collection-list]");
+    const statCollections = root.querySelector("[data-stat-collections]");
+    const currentCollections = collections();
+    if (statCollections) statCollections.textContent = String(currentCollections.length);
+    if (!collectionList) return;
+    collectionList.innerHTML = "";
+    if (!currentCollections.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">Noch keine Sammlung. Erstelle eine Sammlung oder füge eine Inhaltsseite mit „Zu Sammlung hinzufügen“ hinzu.</p>`;
+      collectionList.append(empty);
+      return;
+    }
+    const savedById = new Map(savedItems().map((item) => [item.id, item]));
+    currentCollections.forEach((collection) => collectionList.append(collectionCard(collection, savedById)));
+  }
+
   function renderDashboard() {
     const root = document.querySelector("[data-wirkungsraum-dashboard]");
     if (!root) return;
@@ -4187,6 +4535,27 @@ const WirkungsraumLayer = (() => {
           drawSavedDashboard(root);
         }
       });
+      root.addEventListener("submit", (event) => {
+        const form = event.target;
+        if (!(form instanceof HTMLFormElement)) return;
+        if (form.matches("[data-collection-create-form]")) {
+          event.preventDefault();
+          const title = form.querySelector("[name='collection-title']")?.value || "";
+          const description = form.querySelector("[name='collection-description']")?.value || "";
+          if (createCollection(title, description)) form.reset();
+          drawCollectionsDashboard(root);
+          return;
+        }
+        if (form.matches("[data-collection-edit-form]")) {
+          event.preventDefault();
+          const card = form.closest("[data-collection-id]");
+          if (!(card instanceof HTMLElement)) return;
+          const title = form.querySelector("[name='collection-title']")?.value || "";
+          const description = form.querySelector("[name='collection-description']")?.value || "";
+          updateCollection(card.dataset.collectionId || "", { title, description });
+          drawCollectionsDashboard(root);
+        }
+      });
       root.addEventListener("click", (event) => {
         const filterButton = event.target instanceof HTMLElement ? event.target.closest("[data-saved-type-filter]") : null;
         if (filterButton instanceof HTMLButtonElement) {
@@ -4203,7 +4572,46 @@ const WirkungsraumLayer = (() => {
         const clear = event.target instanceof HTMLElement ? event.target.closest("[data-clear-wirkungsraum]") : null;
         if (clear instanceof HTMLButtonElement && window.confirm("Alle lokal gemerkten Inhalte aus diesem Browser löschen?")) {
           WoekUserSpace.resetObject("saved_items");
+          clearCollectionItemIds();
           drawSavedDashboard(root);
+          drawCollectionsDashboard(root);
+          return;
+        }
+        const templateButton = event.target instanceof HTMLElement ? event.target.closest("[data-collection-template]") : null;
+        if (templateButton instanceof HTMLButtonElement) {
+          createCollection(templateButton.dataset.collectionTemplate || templateButton.textContent || "", templateButton.dataset.collectionDescription || "");
+          drawCollectionsDashboard(root);
+          return;
+        }
+        const editButton = event.target instanceof HTMLElement ? event.target.closest("[data-edit-collection]") : null;
+        if (editButton instanceof HTMLButtonElement) {
+          const card = editButton.closest("[data-collection-id]");
+          if (card instanceof HTMLElement) {
+            const view = card.querySelector("[data-collection-view]");
+            const form = card.querySelector("[data-collection-edit-form]");
+            if (view instanceof HTMLElement && form instanceof HTMLElement) {
+              view.hidden = true;
+              form.hidden = false;
+              form.querySelector("input")?.focus();
+            }
+          }
+          return;
+        }
+        const cancelEdit = event.target instanceof HTMLElement ? event.target.closest("[data-cancel-collection-edit]") : null;
+        if (cancelEdit instanceof HTMLButtonElement) {
+          drawCollectionsDashboard(root);
+          return;
+        }
+        const deleteButton = event.target instanceof HTMLElement ? event.target.closest("[data-delete-collection]") : null;
+        if (deleteButton instanceof HTMLButtonElement && window.confirm("Diese Sammlung löschen? Die gemerkten Inhalte bleiben erhalten.")) {
+          deleteCollection(deleteButton.dataset.deleteCollection || "");
+          drawCollectionsDashboard(root);
+          return;
+        }
+        const removeCollectionItem = event.target instanceof HTMLElement ? event.target.closest("[data-remove-collection-item]") : null;
+        if (removeCollectionItem instanceof HTMLButtonElement) {
+          removeItemFromCollection(removeCollectionItem.dataset.collectionId || "", removeCollectionItem.dataset.itemId || "");
+          drawCollectionsDashboard(root);
           return;
         }
         const exportButton = event.target instanceof HTMLElement ? event.target.closest("[data-export-wirkungsraum]") : null;
@@ -4218,6 +4626,7 @@ const WirkungsraumLayer = (() => {
 
     drawSavedDashboard(root);
     drawReadingDashboard(root);
+    drawCollectionsDashboard(root);
   }
 
   function comparablePath(value) {
@@ -4480,6 +4889,7 @@ const WirkungsraumLayer = (() => {
   function init() {
     trackVisit();
     injectSaveButton();
+    injectCollectionButton();
     restoreReadingPosition();
     trackReadingProgress();
     renderDashboard();
