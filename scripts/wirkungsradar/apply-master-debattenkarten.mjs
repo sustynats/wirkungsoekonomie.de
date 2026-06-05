@@ -121,6 +121,220 @@ const clusterLabels = {
   woek: "Wirkungsökonomie",
 };
 
+const p0RescueOverlays = {
+  "migration-kostet-nur": {
+    answers: {
+      seconds10:
+        "Ja, Ankommen braucht zunächst Geld und Organisation. Menschen sind aber kein Rechnungsposten. Integration entscheidet, ob daraus Arbeit, Beiträge, Versorgung und Teilhabe werden.",
+      seconds30:
+        "Der wahre Kern ist: Aufnahme, Unterbringung, Schule, Sprache und Verwaltung brauchen am Anfang Geld und Personal. Der Denkfehler ist: Daraus folgt nicht, dass Migration nur kostet oder Menschen als Rechnungsposten gelesen werden dürfen. Entscheidend ist der Zeitpfad. Wenn Verfahren, Sprachkurse, Anerkennung von Abschlüssen, Wohnen, Kita und Arbeitsmarktzugang funktionieren, entstehen Arbeit, Beiträge, Steuern, Fachkräfte, Nachbarschaft und Versorgung. Wenn diese Infrastruktur fehlt, werden Menschen länger abhängig und Kommunen bleiben belastet.",
+      seconds120:
+        "Ich würde die Kosten nicht wegreden. Kommunen brauchen Unterkünfte, Verwaltung, Schulen, Kitas, Sprachkurse, Beratung und Sicherheit. Das ist realer Startaufwand. Aber die Aussage 'Migration kostet nur' macht aus diesem Startaufwand ein dauerhaftes Pauschalurteil über Menschen. Fachlich sauber ist eine andere Rechnung: Erstens müssen wir Zeit unterscheiden. In den ersten Jahren entstehen höhere Integrations- und Unterstützungsaufgaben. Zweitens müssen wir die Integrationsqualität prüfen: Sprache, Schulbildung, Anerkennung von Abschlüssen, schneller Arbeitsmarktzugang, Wohnen, Kinderbetreuung und klare Verfahren. Drittens müssen wir die Alternative mitzählen: Fachkräftelücken, unbesetzte Pflege- und Ausbildungsstellen, demografischer Druck, Schwarzarbeit, lange Wartezeiten und Vertrauensverlust, wenn Integration schlecht organisiert ist. Das IAB zeigt am Beispiel der 2015 zugezogenen Geflüchteten, dass Erwerbsintegration Zeit braucht, aber deutlich vorankommt: 2024 lag ihre Beschäftigungsquote bei 64 Prozent und damit nahe am Durchschnitt der Gesamtbevölkerung von 70 Prozent. Die Bundesagentur für Arbeit weist außerdem darauf hin, dass absolute Zahlen allein nicht reichen; entscheidend sind Beschäftigungs-, Arbeitslosen- und SGB-II-Quoten. Die bessere Frage lautet deshalb nicht: Kostet Migration? Natürlich kostet Aufnahme am Anfang. Die bessere Frage lautet: Welche Integration macht aus Ankommen möglichst schnell Sprache, Arbeit, Beiträge, Versorgung, Sicherheit und Teilhabe?",
+    },
+    systemLever:
+      "Integrationsqualität messbar machen: Sprache, Schule, Anerkennung, Arbeitsmarktzugang, Wohnen, Kinderbetreuung, kommunale Kapazität und faire Verfahren entscheiden, ob aus Startaufwand gesellschaftliche Wirkleistung wird.",
+    mpd:
+      "Mensch: Menschen werden nicht als Kostenstelle gelesen, sondern nach Schutz, Sprache, Bildung, Arbeit, Wohnen und Teilhabe. Planet: Nicht der Kern dieser Karte; relevant ist indirekt, ob Kommunen resilient und lernfähig bleiben. Demokratie: Die Debatte bleibt prüfbar, wenn Startkosten, Statusgruppen, Zeitpfade, Quoten und Integrationsbedingungen getrennt werden.",
+    facts: [
+      {
+        title: "Startaufwand ist real",
+        text: "Aufnahme, Unterbringung, Verwaltung, Sprachkurse, Schule, Kita und Beratung brauchen am Anfang Geld, Personal und Koordination.",
+        proves: "Kosten und kommunale Belastung dürfen nicht beschönigt werden.",
+        notProves: "Es beweist nicht, dass Migration dauerhaft nur kostet oder dass Menschen als Kostenstelle gelesen werden dürfen.",
+        sources: "SVR Jahresgutachten 2024, BA Migration und Arbeitsmarkt",
+      },
+      {
+        title: "Erwerbsintegration ist ein Zeitpfad",
+        text: "Das IAB berichtet, dass die 2015 zugezogenen Geflüchteten 2024 eine Beschäftigungsquote von 64 Prozent erreichten und sich damit dem Durchschnitt der Gesamtbevölkerung von 70 Prozent deutlich angenähert haben.",
+        proves: "Integration kann, wenn sie gelingt, aus anfänglicher Unterstützung Erwerbsarbeit machen.",
+        notProves: "Es beweist nicht, dass jede Gruppe, jeder Ort und jede politische Maßnahme automatisch erfolgreich ist.",
+        sources: "IAB: 10 Jahre Fluchtmigration",
+      },
+      {
+        title: "Indikatoren statt Bauchgefühl",
+        text: "Die Bundesagentur für Arbeit betont für Migration und Arbeitsmarkt, dass Beschäftigungs-, Arbeitslosen- und SGB-II-Hilfequoten oft aussagekräftiger sind als absolute Zahlen.",
+        proves: "Die Debatte braucht Verhältniswerte, Zeitreihen und Statusgruppen.",
+        notProves: "Eine einzelne Quote ersetzt keine Analyse von Bildung, Herkunft, Aufenthaltsstatus, Region und Arbeitsmarkt.",
+        sources: "Bundesagentur für Arbeit",
+      },
+      {
+        title: "Kommunale Struktur entscheidet",
+        text: "Der SVR beschreibt, dass Kommunen mit aufrechterhaltenen Aufnahme- und Integrationsstrukturen schneller und pragmatischer reagieren konnten.",
+        proves: "Integration ist auch eine Frage von Infrastruktur, Zuständigkeiten und Finanzierung.",
+        notProves: "Es beweist nicht, dass unbegrenzte Aufnahme ohne Kapazitätsplanung funktioniert.",
+        sources: "SVR Jahresgutachten 2024",
+      },
+      {
+        title: "Arbeits- und Fachkräftebedarf gehört in die Rechnung",
+        text: "OECD und SVR verweisen auf Arbeitsmarktintegration und Fachkräfteeinwanderung als zentrale politische Felder in Deutschland.",
+        proves: "Migration wirkt nicht nur auf Ausgaben, sondern auch auf Arbeit, Versorgung, Beiträge und Standortfähigkeit.",
+        notProves: "Es beweist nicht, dass jede Form von Migration kurzfristig fiskalisch positiv ist.",
+        sources: "OECD International Migration Outlook 2024, SVR Jahresgutachten 2024",
+      },
+    ],
+    boundaries: [
+      ["Zeit", "Startkosten, Übergangskosten, Erwerbsintegration und langfristige Beiträge getrennt betrachten.", "Ohne Zeitpfad wirkt jeder Anfang wie Dauerzustand."],
+      ["Statusgruppen", "Schutzmigration, Arbeitsmigration, Familiennachzug, EU-Freizügigkeit und lange ansässige Menschen getrennt auswerten.", "Eine Gruppe erklärt nicht die Wirkung aller Gruppen."],
+      ["Alternativen", "Auch die Kosten schlechter Integration, unbesetzter Arbeit und überforderter Kommunen mitzählen.", "Nicht-Handeln ist ebenfalls eine Entscheidung mit Folgekosten."],
+    ],
+    misuse: [
+      ["Startkosten werden als dauerhafte Nettobilanz erzählt.", "Startaufwand, Integrationspfad und spätere Beiträge trennen."],
+      ["Absolute Zahlen werden ohne Quoten und Zeitreihen genutzt.", "Beschäftigungs-, Arbeitslosen- und SGB-II-Quoten mit Status und Zeitraum prüfen."],
+      ["Kommunale Überlastung wird Menschen zugeschrieben.", "Zuständigkeit, Finanzierung, Verfahren und Wohnungsmarkt als Systemfragen behandeln."],
+    ],
+    sources: [
+      ["IAB: 10 Jahre Fluchtmigration", "https://iab.de/presseinfo/10-jahre-fluchtmigration-beschaeftigungsquote-von-gefluechteten-naehert-sich-dem-durchschnitt-in-deutschland-an/", "Beschäftigungsquote 2015 zugezogener Geflüchteter und Zeitpfad der Erwerbsintegration.", "Primärnah / Forschungsinstitut"],
+      ["Bundesagentur für Arbeit: Migration und Arbeitsmarkt", "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Interaktive-Statistiken/Migration-Zuwanderung-Flucht/Migration-Zuwanderung-Flucht-Nav.html", "Beschäftigungs-, Arbeitslosen- und SGB-II-Quoten sowie Indikatorenlogik.", "Primärquelle / Behörde"],
+      ["SVR Jahresgutachten 2024", "https://www.svr-migration.de/publikationen/jahresgutachten/2024/", "Kommunale Aufnahmestrukturen, Integrationsbedingungen und Handlungsempfehlungen.", "Fachgutachten"],
+      ["OECD International Migration Outlook 2024: Germany", "https://www.oecd.org/en/publications/international-migration-outlook-2024_50b0353e-en/full-report/germany_1c19b40c", "Arbeitsmigration, Integrations- und Rechtsentwicklung im internationalen Kontext.", "Internationale Fachquelle"],
+    ],
+    secure:
+      "Startkosten und kommunale Belastung sind real. Erwerbsintegration ist zeitabhängig und wird durch Institutionen, Sprache, Anerkennung und Arbeitsmarktzugang beeinflusst. Pauschale absolute Zahlen sind ohne Quoten, Gruppen und Zeiträume wenig aussagekräftig.",
+    uncertain:
+      "Konkrete lokale Kosten, Wohnraumlage, Schulkapazität, Aufenthaltsstatus, Bildungsstand und Arbeitsmarktlage müssen fallbezogen geprüft werden.",
+  },
+  "radwege-in-peru": {
+    answers: {
+      seconds10:
+        "Die Rechnung ist verkürzt. Ein Teil sind Zuschüsse, vieles läuft über Kredite. Außerdem gibt es wirtschaftliche, geopolitische und klimapolitische Gründe. Entscheidend ist die Frage nach Wirkung und Kontrolle.",
+      seconds30:
+        "Die Rechnung ist verkürzt. Ein Teil sind Zuschüsse, etwa für Radwege. Ein großer Teil nachhaltiger Mobilitätsfinanzierung läuft aber über KfW-Kredite, die zurückgezahlt werden müssen. Außerdem geht es nicht nur um Radwege, sondern um Metro, Bus, ÖPNV und sichere Wege zur Arbeit, Schule und Haltestelle. Kritik ist berechtigt, wenn Nutzung, Vergabe, Baufortschritt oder Wirkung unklar sind. Aber seriös wird sie erst, wenn Zuschuss, Kredit, Rückzahlung, Kontrolle und deutscher Nutzen getrennt geprüft werden.",
+      seconds120:
+        "Das Radwege-in-Peru-Narrativ wirkt, weil es aus einem komplexen Finanzierungs- und Mobilitätsprogramm ein einziges Spottbild macht: dort Radwege, hier Probleme. Der wahre Kern ist: Öffentliche Mittel müssen begründet, kontrolliert und wirksam eingesetzt werden. Der falsche Sprung ist: Alles werde verschenkt und Deutschland habe nichts davon. Erstens muss man die Finanzierungsform trennen: Zuschüsse sind nicht rückzahlbar; Entwicklungskredite und Förderkredite sind anders zu bewerten, weil sie bedient werden müssen. Zweitens muss man das Projekt trennen: Es geht nicht nur um Radwege, sondern um nachhaltige Stadtmobilität mit Metro, Bus, ÖPNV-Organisation und sicheren Zubringern. Drittens muss man Wirkung prüfen: Kommen Menschen günstiger und sicherer zu Schule, Arbeit, Markt und Metro? Sinken Stau, Luftbelastung und CO₂? Viertens muss man den deutschen Nutzen offenlegen: Klima wirkt global, Peru ist Partner, und KfW nennt Beteiligungen deutscher Unternehmen an laufenden Vorhaben. Fünftens bleibt Kritik notwendig: Nutzung, Vergabe, Korruptionsschutz, Baufortschritt und Evaluation müssen öffentlich prüfbar sein. Die bessere Frage lautet deshalb: Welche Finanzierungsform, welche Wirkung, welche Rückzahlung, welcher Nutzen und welche Risiken liegen tatsächlich vor?",
+    },
+    systemLever:
+      "Finanzierungsart offenlegen: Kredit, Zuschuss, Rückzahlung, Zweck, Projektträger, beteiligte Unternehmen und messbare Wirkung getrennt prüfen.",
+    trueCoreAppend:
+      " Konkret wichtig: Die bekannte 315-Mio.-Erzählung vermischt Projektvolumen, Kredit, Zuschuss und verschiedene Mobilitätsbausteine. Ein Kredit ist kein Geschenk; er wird zurückgezahlt. Ein Zuschuss ist anders zu bewerten als ein rückzahlbarer Förderkredit. In geprüften Darstellungen müssen Radwege, Bus- und Metro-Anbindung, Sicherheit, Klimaanpassung und städtische Erreichbarkeit getrennt werden. Für Deutschland ist das nicht nur Wohltätigkeit: Stabilere Städte, weniger Emissionen, weniger Krisen- und Importfolgen sowie mögliche Aufträge für deutsche und europäische Unternehmen sind eigene Wirkungsinteressen.",
+    falseJumpAppend:
+      " Falsch ist insbesondere, aus einem zusammengeschnittenen 315-Mio.-Bild so zu tun, als sei jeder Euro ein verlorener deutscher Zuschuss für einen einzelnen Radweg. Zahlen wie 315 Mio., 155 Mio. oder 33 Mio. müssen immer nach Finanzierungsart, Zweck, Rückzahlung, Projektträger und Wirkung gelesen werden.",
+    mpd:
+      "Mensch: sichere Wege, Metro-Erreichbarkeit, weniger Unfall- und Luftbelastung. Planet: weniger lokale Emissionen und bessere Klimaanpassung, wenn der Verkehrsverbund tatsächlich wirkt. Demokratie: bessere Rechenschaft, wenn Kredit, Zuschuss, Rückzahlung, Ausschreibung, deutsche Unternehmensbezüge und Projektwirkung offen getrennt werden.",
+    facts: [
+      {
+        title: "Kredit ist nicht Zuschuss",
+        text: "Entwicklungskredite und Förderkredite müssen anders bewertet werden als nicht rückzahlbare Zuschüsse.",
+        proves: "Die pauschale Erzählung 'Deutschland verschenkt Geld' ist ohne Finanzierungsart nicht belastbar.",
+        notProves: "Es beweist nicht automatisch, dass jedes Projekt wirksam oder gut kontrolliert ist.",
+        sources: "KfW Entwicklungsbank, BMZ Transparenzportal",
+      },
+      {
+        title: "Das Projekt ist mehr als ein Symbolbild Radweg",
+        text: "Nachhaltige Stadtmobilität umfasst sichere Zubringer, Bus, Metro-Anbindung, Verkehrsorganisation, Erreichbarkeit und Luftqualität.",
+        proves: "Der Projektzweck ist breiter als das empörungsstarke Einzelbild.",
+        notProves: "Es ersetzt keine Prüfung von Baufortschritt, Nutzung und lokaler Wirkung.",
+        sources: "KfW Projektdatenbank Lima, Projekttransparenz",
+      },
+      {
+        title: "Deutscher Nutzen gehört zur Bilanz",
+        text: "Deutschland hat ein Eigeninteresse an stabilen Partnern, Klimawirkung, geringeren Krisenfolgen und möglichen Aufträgen für deutsche oder europäische Unternehmen.",
+        proves: "Auslandsfinanzierung ist nicht automatisch altruistische Einbahnstraße.",
+        notProves: "Es beweist nicht, dass jeder Auftrag oder jede Wirkung automatisch eintritt.",
+        sources: "KfW Entwicklungsbank, BMZ Projekt- und Transparenzdaten",
+      },
+      {
+        title: "Kritik bleibt notwendig",
+        text: "Nutzung, Vergabe, Korruptionsschutz, Baufortschritt, Evaluation und Rückzahlung müssen öffentlich prüfbar sein.",
+        proves: "Seriöse Kritik fragt nach Kontrolle und Wirkung statt nur nach Empörung.",
+        notProves: "Die Kontrollfrage ist kein Beleg dafür, dass das Projekt wirkungslos ist.",
+        sources: "KfW Evaluierungen, BMZ Transparenzportal",
+      },
+    ],
+    boundaries: [
+      ["Finanzierungsform", "Zuschuss, Kredit, Garantie, Rückzahlung und Projektvolumen getrennt betrachten.", "Sonst wird aus einer Finanzierungsstruktur ein Geschenkbild."],
+      ["Projektzweck", "Radweg, Bus, Metro, Sicherheit, Erreichbarkeit, Luftqualität und Stadtplanung getrennt prüfen.", "Sonst ersetzt ein Spottbild die Wirkungskette."],
+      ["Deutschland-Nutzen", "Klimawirkung, Stabilität, Kooperation, Wirtschaftsbeteiligung und Krisenkosten mitzählen.", "Auslandswirkung kann auch Eigeninteresse sein."],
+    ],
+    misuse: [
+      ["Projektvolumen wird als verlorener Zuschuss erzählt.", "Finanzierungsart und Rückzahlung zuerst klären."],
+      ["Ein Radweg-Bild ersetzt Mobilitätswirkung.", "Metro, Bus, Sicherheit und Erreichbarkeit in die Bilanz nehmen."],
+      ["Kontrollfragen werden als Totalablehnung genutzt.", "Kontrolle, Vergabe und Evaluation prüfen, ohne Wirkung pauschal abzuschreiben."],
+    ],
+    sources: [
+      ["KfW Entwicklungsbank: Fahrradwegnetz im Metropolbereich Lima", "https://www.kfw-entwicklungsbank.de/ipfz/Projektdatenbank/Aufbau-Eines-Fahrradwegnetzes-Im-Metropolbereich-Lima-35874.htm", "Projektpartner, Projektzweck, Finanzierungsrahmen und Status.", "Primärquelle / Projektbank"],
+      ["KfW Entwicklungsbank: Transparenzportal", "https://www.kfw-entwicklungsbank.de/Internationale-Finanzierung/KfW-Entwicklungsbank/Transparenz/", "Projekttransparenz, Finanzierungsdaten und Kontrolllogik.", "Primärquelle / Institution"],
+      ["BMZ Transparenzportal", "https://www.bmz.de/de/ministerium/zahlen-fakten/bmz-transparenzportal", "Transparenz öffentlicher Entwicklungszusammenarbeit sowie Projekt- und Finanzdaten.", "Primärquelle / Ministerium"],
+      ["KfW Evaluierungen", "https://www.kfw-entwicklungsbank.de/Evaluierung/", "Wirkungsprüfung und Lernen aus Projekten; projektspezifische Evaluierung separat prüfen.", "Institutionelle Evaluierungsquelle"],
+    ],
+    secure:
+      "Zuschüsse, Kredite, Projektvolumen und Rückzahlung müssen getrennt werden. Wirkung entsteht nur, wenn Mobilität, Sicherheit, Erreichbarkeit und Kontrolle tatsächlich verbessert werden.",
+    uncertain:
+      "Baufortschritt, Nutzung, Vergabe, Korruptionsschutz und messbare Wirkung müssen projektbezogen aktualisiert werden.",
+  },
+  "e-autos-schlimmer-als-verbrenner": {
+    answers: {
+      seconds10:
+        "Der Akku hat einen CO₂-Rucksack. Fair ist aber der ganze Lebenszyklus: Batterie, Produktionsstrom, Ladestrom, Wartung, Recycling und der Kraftstoff, den der Verbrenner über Jahre verbrennt.",
+      seconds30:
+        "Das E-Auto ist nicht wirkungsfrei. Der Akku zählt. Aber Benzin, Diesel, Ölimporte, Abgase, Ladestrom, Produktion und Recycling zählen auch. Wer nur die Batterie vergleicht, lässt den dauernden fossilen Verbrauch des Verbrenners aus der Rechnung. Entscheidend ist der Lebenszyklus: Fahrzeuggröße, Batteriechemie, Produktionsstrom, Ladequelle, Laufleistung, Wartung, Luftschadstoffe und Recycling.",
+      seconds120:
+        "Das E-Auto ist nicht wirkungsfrei. Batterieproduktion, Rohstoffe, Fahrzeuggröße, Produktionsstrom und Recycling müssen in die Bilanz. Aber der Vergleich darf nicht beim Akku stehenbleiben. Der Verbrenner verbrennt über seine Lebensdauer Benzin oder Diesel, verursacht lokale Abgase und hängt an Ölimporten. Bei geförderter öffentlicher Ladeinfrastruktur ist erneuerbarer Strom eine Fördervoraussetzung; Produktionsstrom und Batteriechemie verändern die Startbilanz ebenfalls. Viele Studien rechnen mit Durchschnittsstrommixen, obwohl reale Lade- und Produktionspfade stärker erneuerbar werden können. Das macht die Studien nicht wertlos, aber es zeigt: Annahmen müssen offenliegen. Darum ist die bessere Frage: Welche Mobilität hat über den ganzen Lebenszyklus weniger CO₂, weniger Öl, weniger Abgase, bessere Recyclingpfade und die passendere Infrastruktur?",
+    },
+    systemLever:
+      "Lebenszyklus vollständig öffnen: Rohstoffe, Batterie, Fahrzeugbau, Produktionsstrom, Ladestrom, Nutzung, Wartung, Luftschadstoffe, Recycling, fossile Kraftstoffbereitstellung und Ölimporte fair vergleichen.",
+    mpd:
+      "Mensch: Stadtluft, Lärm, Betriebskosten, Ladezugang und alltagstaugliche Mobilität prüfen. Planet: CO₂-Rucksack, Strompfad, Batteriegröße, Recycling und dauerhaft vermiedene fossile Verbrennung bilanzieren. Demokratie: Annahmen offenlegen, damit Strommix, Ladequelle, Produktionsstrom und Rohstofffragen nicht als Schlagwort gegeneinander ausgespielt werden.",
+    facts: [
+      {
+        title: "Batterieproduktion braucht Energie und Rohstoffe",
+        text: "Akkuherstellung, Batteriegröße, Zellchemie, Produktionsstrom und Lieferketten beeinflussen den Start der CO₂-Bilanz.",
+        proves: "Der Akku muss in jede seriöse Lebenszyklusrechnung.",
+        notProves: "Es beweist nicht, dass der Verbrenner über den Lebenszyklus besser ist.",
+        sources: "ADAC Lebenszyklusanalyse, ICCT, IEA",
+      },
+      {
+        title: "Verbrenner verbrennen dauerhaft fossilen Kraftstoff",
+        text: "Benzin und Diesel werden über die ganze Nutzung verbrannt; CO₂, Luftschadstoffe, Ölimporte und Preisrisiken entstehen laufend.",
+        proves: "Der Betrieb des Verbrenners ist kein neutraler Restposten.",
+        notProves: "Es beweist nicht, dass jedes E-Auto in jeder Größe und Nutzung optimal ist.",
+        sources: "ADAC Lebenszyklusanalyse, Umweltbundesamt",
+      },
+      {
+        title: "Lebenszyklusanalysen müssen die ganze Nutzung einbeziehen",
+        text: "Herstellung, Nutzung, Stromquelle, Wartung, Recycling und Kraftstoffbereitstellung verändern das Ergebnis.",
+        proves: "Halbe Rechnungen können zu falschen Schlussfolgerungen führen.",
+        notProves: "Eine einzelne Modellrechnung ersetzt nicht die Prüfung von Fahrzeugklasse, Laufleistung und Strompfad.",
+        sources: "ADAC, ICCT",
+      },
+      {
+        title: "Ladestrom und Produktionsstrom verändern die Bilanz",
+        text: "Regenerativer Ladestrom und erneuerbarer Produktionsstrom verkürzen den CO₂-Rucksack; alte Durchschnittswerte können Zukunftspfade verzerren.",
+        proves: "Stromquelle und Infrastruktur sind entscheidende Bilanzgrößen.",
+        notProves: "Es beweist nicht, dass jede private oder ungeförderte Ladesituation automatisch Ökostrom ist.",
+        sources: "BMV Förderprogramm Ladeinfrastruktur, ADAC, IEA",
+      },
+      {
+        title: "Recycling und Second Life verändern Materialwirkung",
+        text: "Batterien sind Produkte mit Rücknahme-, Wiederverwendungs- und Recyclingpfaden; fossiler Kraftstoff ist nach dem Verbrennen weg.",
+        proves: "Materialkreisläufe müssen in die Bewertung.",
+        notProves: "Es beweist nicht, dass Rohstoffabbau automatisch unproblematisch ist.",
+        sources: "ADAC Fakten zur Elektromobilität, IEA Global EV Outlook",
+      },
+    ],
+    boundaries: [
+      ["Lebenszyklus", "Rohstoffe, Batterie, Fahrzeugbau, Produktionsstrom, Ladestrom, Nutzung, Wartung, Recycling und fossile Kraftstoffbereitstellung.", "Nur so werden Akku-Rucksack und dauerhaftes Verbrennen fair verglichen."],
+      ["Strompfad", "Strommix, Ökostromvertrag, geförderte Ladeinfrastruktur, eigene PV und realer Produktionsstrom getrennt betrachten.", "Alte Durchschnittswerte dürfen nicht automatisch als Zukunft ausgegeben werden."],
+      ["Alltag und Infrastruktur", "Supermarkt, Arbeitsplatz, Depot, Parkhaus, Autobahn und Megawattladen nach Standzeit und Verfügbarkeit bewerten.", "Akzeptanz entsteht, wenn Infrastruktur zum Nutzungsverhalten passt."],
+    ],
+    misuse: [
+      ["Nur der Akku wird gezählt.", "Der Akku zählt, aber Verbrennung, Öl, Wartung, Luft, Stromquelle und Recycling zählen ebenfalls."],
+      ["Alter Strommix wird als Zukunft behandelt.", "Strommix, geförderter Ökostrom, eigener Ökostrom und Produktionsstrom müssen getrennt werden."],
+      ["Ein Ladeproblem wird zur Gesamtbilanz gemacht.", "Ladeleistung, Standort, Standzeit und Verfügbarkeit sind Umsetzungsfragen, keine automatische Widerlegung der Technologie."],
+    ],
+    sources: [
+      ["ADAC Lebenszyklusanalyse Antriebe", "https://www.adac.de/verkehr/tanken-kraftstoff-antrieb/alternative-antriebe/klimabilanz/", "Lebenszyklusvergleich, Strommix-Sensitivität und Wirkung regenerativen Stroms.", "Fachquelle / Mobilität"],
+      ["ADAC Fakten zur Elektromobilität", "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/elektroauto/elektroauto-pro-und-contra/", "CO₂-Rucksack, Betrieb, Akku, Garantie und Ladeinfrastruktur.", "Fachquelle / Ratgeber"],
+      ["BMV Förderprogramm Ladeinfrastruktur", "https://www.bmv.de/SharedDocs/DE/Artikel/G/infopapier-sechster-foerderaufruf-ladeinfrastruktur.html", "Erneuerbarer Strom als Fördervoraussetzung für geförderte öffentliche Ladeinfrastruktur.", "Primärquelle / Ministerium"],
+      ["ICCT Lebenszyklusvergleich Fahrzeuge", "https://theicct.org/publication/a-global-comparison-of-the-life-cycle-greenhouse-gas-emissions-of-combustion-engine-and-electric-passenger-cars/", "Lebenszyklusvergleich von Verbrennern und Elektrofahrzeugen mit Strommix-Sensitivität.", "Wissenschaftsnahe Fachquelle"],
+      ["IEA Global EV Outlook 2024", "https://www.iea.org/reports/global-ev-outlook-2024", "Elektromobilität, Batterien, Markt- und Infrastrukturdaten.", "Internationale Fachquelle"],
+    ],
+    secure:
+      "Ein fairer Vergleich muss Lebenszyklus und Energiequelle betrachten. Der Akku zählt, aber der dauerhaft verbrannte fossile Kraftstoff des Verbrenners zählt ebenfalls.",
+    uncertain:
+      "Konkrete Werte hängen von Fahrzeuggröße, Batterie, Produktionsort, Fahrleistung, Ladestrom, Lebensdauer und Recyclingannahmen ab.",
+  },
+};
+
 function esc(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -325,17 +539,17 @@ function parseCardsFromText(rawText) {
 }
 
 function applyEditorialOverlays(card) {
-  if (card.slug !== "radwege-in-peru") return;
-  const financingCore = " Konkret wichtig: Die bekannte 315-Mio.-Erzählung vermischt Projektvolumen, Kredit, Zuschuss und verschiedene Mobilitätsbausteine. Ein Kredit ist kein Geschenk; er wird zurückgezahlt. Ein Zuschuss ist anders zu bewerten als ein rückzahlbarer Förderkredit. In den geprüften Darstellungen müssen Radwege, Bus- und Metro-Anbindung, Sicherheit, Klimaanpassung und städtische Erreichbarkeit getrennt werden.";
-  const germanyCore = " Für Deutschland ist das nicht nur Wohltätigkeit: Stabilere Städte, weniger Emissionen, weniger Krisen- und Importfolgen sowie mögliche Aufträge für deutsche und europäische Unternehmen sind eigene Wirkungsinteressen.";
-  card.trueCore = `${card.trueCore}${financingCore}${germanyCore}`;
-  card.falseJump = `${card.falseJump} Falsch ist insbesondere, aus einem zusammengeschnittenen 315-Mio.-Bild so zu tun, als sei jeder Euro ein verlorener deutscher Zuschuss für einen einzelnen Radweg. Zahlen wie 155 Mio oder 33 Mio müssen immer nach Finanzierungsart, Zweck, Rückzahlung, Projektträger und Wirkung gelesen werden.`;
-  card.answers.seconds10 = "Ja, internationale Projekte müssen geprüft werden. Aber beim Peru-Beispiel werden Kredit, Zuschuss und Projektzweck oft vermischt. Ein Kredit wird zurückgezahlt; entscheidend ist, welche Wirkung entstehen soll: sichere Wege, Metro-Anbindung, weniger Stau, weniger Emissionen und stabile Partner.";
-  card.answers.seconds30 = "Der berechtigte Kern ist: Auslandsausgaben brauchen Transparenz und Wirkungskontrolle. Der falsche Sprung ist, aus der 315-Mio.-Erzählung ein Geschenkbild zu machen. Man muss trennen: Was ist Zuschuss, was ist Kredit, was wird zurückgezahlt, was betrifft Radwege, was betrifft Metro, Busse und sichere Mobilität? Wirkung entsteht, wenn Menschen besser zur Schule, Arbeit und Versorgung kommen und wenn deutsche oder europäische Unternehmen sowie Deutschland insgesamt von stabileren Partnern, geringeren Krisenkosten und Klimawirkung profitieren.";
-  card.answers.seconds120 = "Bei Radwegen in Peru ist die bessere Antwort nicht: Ausland gut oder Ausland schlecht. Die bessere Antwort ist Bilanzgrenze. Erstens: Finanzierungsart klären. Ein Kredit ist kein Geschenk, sondern wird zurückgezahlt; ein Zuschuss muss separat begründet werden. Zweitens: Projektzweck klären. Es geht nicht nur um ein Symbolbild Fahrradweg, sondern um städtische Mobilität, Sicherheit, Bus- und Metro-Anbindung, weniger Stau, Luftqualität und Teilhabe. Drittens: Eigeninteresse klären. Deutschland hat ein Interesse an stabilen Partnerländern, weniger Klima- und Krisenfolgen, verlässlicher Kooperation und an Projekten, bei denen deutsche und europäische Unternehmen Know-how, Technik oder Dienstleistungen liefern können. Viertens: Zahlen sauber halten. 315-Mio., 155 Mio und 33 Mio dürfen nicht als ein und dieselbe Zahlung erzählt werden; sie müssen nach Kredit, Zuschuss, Rückzahlung, Empfänger, Zweck und Wirkung getrennt geprüft werden. Wirkungsökonomisch ist ein solches Projekt nur dann gut, wenn es nachweisbar Sicherheit, Erreichbarkeit, Klimaresilienz, lokale Wertschöpfung und demokratische Transparenz verbessert. Genau diese Prüfung ist seriöser als Empörung über ein einzelnes Projektbild.";
-  card.effectPath.mpd = `${card.effectPath.mpd} Mensch: sichere Wege, Metro-Erreichbarkeit, weniger Unfall- und Luftbelastung. Planet: weniger lokale Emissionen und bessere Klimaanpassung, wenn der Verkehrsverbund tatsächlich wirkt. Demokratie: bessere Rechenschaft, wenn Kredit, Zuschuss, Rückzahlung, Ausschreibung, deutsche Unternehmensbezüge und Projektwirkung offen getrennt werden.`;
-  card.systemLever = `${card.systemLever} Finanzierungsart offenlegen: Kredit, Zuschuss, Rückzahlung, Zweck, beteiligte Unternehmen und messbare Wirkung getrennt prüfen.`;
-  card.sourceHints = `${card.sourceHints}, BMZ/KfW Projektinformationen, Kredit- und Zuschussstruktur, Ausschreibungen, Metro- und Mobilitätsplanung, Wirkungsindikatoren zu Sicherheit, Luftqualität und Erreichbarkeit`;
+  const overlay = p0RescueOverlays[card.slug];
+  if (!overlay) return;
+  card.answers = { ...card.answers, ...overlay.answers };
+  if (overlay.systemLever) card.systemLever = overlay.systemLever;
+  if (overlay.trueCoreAppend) card.trueCore = `${card.trueCore}${overlay.trueCoreAppend}`;
+  if (overlay.falseJumpAppend) card.falseJump = `${card.falseJump}${overlay.falseJumpAppend}`;
+  if (overlay.mpd) card.effectPath.mpd = overlay.mpd;
+  card.p0Rescue = overlay;
+  if (!card.editorialStatus.includes("P0 gerettet")) {
+    card.editorialStatus = `${card.editorialStatus} · P0 gerettet`;
+  }
 }
 
 function readMasterData() {
@@ -417,7 +631,8 @@ function renderToc() {
     ["#wirkpfad", "Wirkpfad"],
     ["#kritische-fragen", "Kritische Fragen"],
     ["#loesung", "Besserer Frame"],
-    ["#faktenlage", "Prüfhinweise"],
+    ["#faktenlage", "Faktenlage"],
+    ["#quellen", "Quellen"],
   ];
   return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Seitenbereiche">${links.map(([href, label]) => `<a href="${href}">${label}</a>`).join("")}</nav></article></div></section>`;
 }
@@ -429,6 +644,18 @@ function answerAccordion(card) {
     ["2 Minuten", "Systemische Antwort", card.answers.seconds120],
   ];
   return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="sofortantwort" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktion</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist. Die Sekunden sind Kommunikationsstufen, keine Stoppuhr.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${rows.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary>${paragraphize(text)}<button class="copy-chip" type="button" data-copy-text='${attr(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+}
+
+function rescueFactsAndSources(card) {
+  const rescue = card.p0Rescue;
+  if (!rescue) {
+    return `<section class="section section-soft" id="faktenlage"><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Was redaktionell geprüft werden muss.</h2></div><article class="card"><p>Die Masterquelle nennt Prüfhinweise. Daraus werden keine erfundenen Quellenbelege gemacht; konkrete Links und Primärquellen bleiben redaktionell zu prüfen.</p><div id="quellen">${card.sourceHints ? list(card.sourceHints.split(/,\s*/)) : "<p>Quellenprüfung offen.</p>"}</div></article></div></section>`;
+  }
+  const facts = (rescue.facts || []).map((fact) => `<article class="card v3-fact-card"><p class="v2-badge">Fakt · geprüft</p><h3 class="card-title">${esc(fact.title)}</h3><p class="card-text">${esc(fact.text)}</p><p class="card-text"><strong>Beweist:</strong> ${esc(fact.proves)}</p><p class="card-text"><strong>Beweist nicht:</strong> ${esc(fact.notProves)}</p><p class="card-text"><strong>Quellen:</strong> ${esc(fact.sources)}</p></article>`).join("");
+  const boundaries = (rescue.boundaries || []).map(([title, text, why]) => `<article class="card"><p class="card-kicker">Bilanzgrenze</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p><p class="card-text"><strong>Warum wichtig:</strong> ${esc(why)}</p></article>`).join("");
+  const misuse = (rescue.misuse || []).map(([title, text]) => `<article class="card"><p class="card-kicker">Faktenmissbrauch vermeiden</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p></article>`).join("");
+  const sources = (rescue.sources || []).map(([title, url, proof, type]) => `<a class="card text-link-card" href="${esc(url)}"><p class="card-kicker">${esc(type)}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text"><strong>Was belegt sie?</strong> ${esc(proof)}</p><p class="text-link">Quelle öffnen</p></a>`).join("");
+  return `<section class="section section-soft v3-layer v3-layer-facts" id="faktenlage" data-v3-facts-layer><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Was ist konkret prüfbar?</h2><p>Jeder Fakt sagt ausdrücklich, was er belegt - und was daraus nicht folgt.</p></div><div class="card-grid three">${facts}</div><div class="card-grid three">${boundaries}</div><div class="card-grid three">${misuse}</div><article class="card"><p class="card-kicker">Einordnung</p><h3 class="card-title">Belege, Grenzen und Datenstand.</h3><p class="card-text"><strong>Sicher:</strong> ${esc(rescue.secure)}</p><p class="card-text"><strong>Unsicher:</strong> ${esc(rescue.uncertain)}</p></article><div id="quellen" class="section-header"><p class="hero-kicker">Quellen &amp; Vertiefung</p><h2>Welche Quelle belegt welchen Fakt?</h2></div><div class="card-grid two">${sources}</div></div></section>`;
 }
 
 function renderCardPage(card, mode = "live") {
@@ -456,7 +683,7 @@ function renderCardPage(card, mode = "live") {
     <section class="section" id="wirkpfad"><span id="loesungspfad" class="sr-only">Lösungspfad</span><span id="host-antworten" class="sr-only">Antwortblock</span><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>Mensch, Planet und Demokratie.</h2></div><article class="card">${paragraphize(card.effectPath.mpd)}<p><strong>Wirkungsökonomische Einordnung:</strong> Die Karte prüft, ob die Aussage Wahrnehmung, Entscheidung und Rückkopplung so verändert, dass positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher oder unwahrscheinlicher wird.</p></article></div></section>
     <section class="section section-soft" id="kritische-fragen"><span id="einwaende" class="sr-only">Einwände</span><div><div class="section-header"><p class="hero-kicker">Einwände und Antwortlinien</p><h2>Was berechtigt kritisch gefragt werden darf.</h2></div><div class="card-grid two">${card.objections.length ? card.objections.map((item) => `<article class="card"><p class="card-kicker">Einwand</p><h3>${esc(item.objection)}</h3>${paragraphize(item.answer)}</article>`).join("") : `<article class="card"><p>Konkrete Einwände werden redaktionell weiter ergänzt. Die bessere Prüfspur steht im Faktenkern, Wirkpfad und in den Prüfhinweisen.</p></article>`}</div></div></section>
     <section class="section" id="loesung"><div><div class="section-header"><p class="hero-kicker">Besserer Frame</p><h2>Was macht den Zustand besser?</h2></div><article class="card"><p><strong>Bessere Frage:</strong> ${esc(card.betterQuestion)}</p><p><strong>Systemischer Hebel:</strong> ${esc(card.systemLever)}</p>${card.moderation["Konkreten Hebel anbieten"] ? `<p><strong>Konkreter Hebel:</strong> ${esc(card.moderation["Konkreten Hebel anbieten"])}</p>` : ""}${card.moderation["Zum Schluss nicht demütigen. Eine gute Antwort lässt dem Gegenüber eine Brücke zurück in eine sachliche Position."] ? "" : "<p>Zum Schluss nicht demütigen. Eine gute Antwort lässt dem Gegenüber eine Brücke zurück in eine sachliche Position.</p>"}</article></div></section>
-    <section class="section section-soft" id="faktenlage"><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Was redaktionell geprüft werden muss.</h2></div><article class="card"><p>Die Masterquelle nennt Prüfhinweise. Daraus werden keine erfundenen Quellenbelege gemacht; konkrete Links und Primärquellen bleiben redaktionell zu prüfen.</p><div id="quellen">${card.sourceHints ? list(card.sourceHints.split(/,\s*/)) : "<p>Quellenprüfung offen.</p>"}</div></article></div></section>
+    ${rescueFactsAndSources(card)}
     <section class="section" id="narrativ-einreichen" data-community-submission-block><div><article class="card"><p class="card-kicker">Fehlt ein Narrativ?</p><h2>Hast du eine Aussage gesehen, die geprüft werden sollte?</h2><p>Reiche sie über die Akademie-App ein. Dort kann die Redaktion die Aussage prüfen, clustern und in den Debatten-Kompass übernehmen.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></article></div></section>
   `;
   return shell({
