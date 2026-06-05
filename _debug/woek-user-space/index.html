@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Debug: woek_user_space | Wirkungsökonomie</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Interne Debug-Testseite für den lokalen Mein-Wirkungsraum-Speicher.">
+    <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260605-user-space">
+  </head>
+  <body data-search-exclude>
+    <main id="inhalt" class="section">
+      <div class="content-readable user-space-debug">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / Debug / woek_user_space</nav>
+        <p class="hero-kicker">Debug-Testseite</p>
+        <h1>woek_user_space</h1>
+        <p>Lokaler Test für die Grundarchitektur von „Mein Wirkungsraum“. Keine Anmeldung, keine Serverdaten, keine Synchronisierung.</p>
+
+        <section class="card" aria-labelledby="debug-status-title">
+          <p class="card-kicker">Status</p>
+          <h2 id="debug-status-title" class="card-title">Namespace und Objekte</h2>
+          <div class="card-grid three" data-debug-stats></div>
+        </section>
+
+        <section class="card" aria-labelledby="debug-actions-title">
+          <p class="card-kicker">Aktionen</p>
+          <h2 id="debug-actions-title" class="card-title">Lokalen Speicher testen</h2>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-debug-action="seed">Testdaten anlegen</button>
+            <button class="btn btn-secondary" type="button" data-debug-action="export">Export erzeugen</button>
+            <button class="btn btn-secondary" type="button" data-debug-action="import">Import testen</button>
+            <button class="btn btn-secondary" type="button" data-debug-action="reset">Debug-Speicher leeren</button>
+          </div>
+          <label for="debug-import-export">Export / Import JSON</label>
+          <textarea id="debug-import-export" rows="12" style="width:100%;margin-top:0.75rem;font:0.9rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;"></textarea>
+          <p class="card-text" data-debug-message></p>
+        </section>
+
+        <section class="card" aria-labelledby="debug-snapshot-title">
+          <p class="card-kicker">Snapshot</p>
+          <h2 id="debug-snapshot-title" class="card-title">Aktueller Speicherstand</h2>
+          <pre data-debug-snapshot style="overflow:auto;max-height:34rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:1rem;font-size:0.85rem;"></pre>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/js/main.js?v=20260605-user-space"></script>
+    <script>
+      (() => {
+        const api = window.WoekUserSpace;
+        const stats = document.querySelector("[data-debug-stats]");
+        const snapshot = document.querySelector("[data-debug-snapshot]");
+        const message = document.querySelector("[data-debug-message]");
+        const textarea = document.querySelector("#debug-import-export");
+
+        function objectCount(object) {
+          if (!object) return 0;
+          if (Array.isArray(object.items)) return object.items.length;
+          if (object.items && typeof object.items === "object") return Object.keys(object.items).length;
+          if (object.data && typeof object.data === "object") return Object.keys(object.data).length;
+          return 0;
+        }
+
+        function render(note) {
+          if (!api) {
+            message.textContent = "WoekUserSpace ist nicht geladen.";
+            return;
+          }
+          const data = api.snapshot();
+          stats.innerHTML = Object.entries(data.objects)
+            .map(([name, object]) => `<article class="card"><p class="card-kicker">${name}</p><strong>${objectCount(object)}</strong><p>Version ${object.version}</p></article>`)
+            .join("");
+          snapshot.textContent = JSON.stringify(data, null, 2);
+          if (note) message.textContent = note;
+        }
+
+        function seed() {
+          api.upsertItem("saved_items", {
+            id: "debug-wirkung",
+            title: "Debug: Wirkung",
+            type: "Begriff",
+            url: "/begriffe/wirkung/",
+            tags: ["Debug", "Wirkung"],
+            category: "Grundbegriff"
+          });
+          api.upsertRecord("reading_progress", "/referenz/kapitel-010-wirkung/", {
+            id: "referenz/kapitel-010-wirkung/",
+            title: "Kapitel 10 - Wirkung",
+            type: "Buchkapitel",
+            url: "/referenz/kapitel-010-wirkung/",
+            progress: 42,
+            scroll_position: 1200
+          });
+          api.upsertItem("collections", {
+            id: "debug-sammlung",
+            name: "Debug-Sammlung",
+            itemIds: ["debug-wirkung"],
+            created_at: new Date().toISOString()
+          });
+          api.upsertItem("learning_items", {
+            id: "debug-lernen-wirkung",
+            title: "Wirkung wiederholen",
+            url: "/begriffe/wirkung/",
+            status: "started"
+          });
+          api.addNote({
+            target_id: "debug-wirkung",
+            target_url: "/begriffe/wirkung/",
+            text: "Debug-Notiz für die Export-/Importstruktur."
+          });
+          api.recordVisit({
+            id: "debug-visit",
+            title: "Debug-Testseite",
+            type: "Debug",
+            url: "/_debug/woek-user-space/"
+          });
+          api.setSetting("debug_mode_checked_at", new Date().toISOString());
+          render("Testdaten wurden lokal im Namespace woek_user_space angelegt.");
+        }
+
+        document.addEventListener("click", (event) => {
+          const target = event.target instanceof HTMLElement ? event.target : null;
+          const button = target?.closest("[data-debug-action]");
+          if (!button || !api) return;
+          const action = button.dataset.debugAction;
+          if (action === "seed") seed();
+          if (action === "export") {
+            textarea.value = JSON.stringify(api.exportData(), null, 2);
+            render("Exportstruktur wurde erzeugt.");
+          }
+          if (action === "import") {
+            try {
+              const result = api.importData(JSON.parse(textarea.value || "{}"));
+              render(result.ok ? `Import OK: ${result.imported.join(", ")}` : result.error);
+            } catch {
+              render("Import fehlgeschlagen: JSON ist ungültig.");
+            }
+          }
+          if (action === "reset") {
+            api.resetAll();
+            textarea.value = "";
+            render("Debug-Speicher wurde lokal geleert.");
+          }
+        });
+
+        render();
+      })();
+    </script>
+  </body>
+</html>

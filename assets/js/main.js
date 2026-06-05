@@ -173,6 +173,10 @@ function relatedQuestionLink(href, label, tag = "Frage") {
   return { href: relativeSiteUrl(href), label, tag };
 }
 
+function isDebugPath(path = window.location.pathname) {
+  return /^\/?_debug(\/|$)/.test(path);
+}
+
 function getQuestionSubmissionContext() {
   const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
   const title = document.querySelector("h1")?.textContent?.trim() || document.title || "Website";
@@ -320,7 +324,7 @@ function getContextualQuestions() {
 }
 
 function injectContextualQuestions() {
-  if (!mainElement || document.querySelector(".related-questions-block")) {
+  if (isDebugPath() || !mainElement || document.querySelector(".related-questions-block")) {
     return;
   }
   const questions = getContextualQuestions().slice(0, 4);
@@ -348,6 +352,9 @@ function injectContextualQuestions() {
 }
 
 function enhanceRelatedQuestionBlocks() {
+  if (isDebugPath()) {
+    return;
+  }
   document.querySelectorAll(".related-questions-block").forEach((block) => {
     if (!(block instanceof HTMLElement) || block.querySelector("[data-question-submit-link]")) {
       return;
@@ -1559,6 +1566,9 @@ function getGlossaryContext() {
 }
 
 function loadGlossaryTermsAndInit() {
+  if (isDebugPath()) {
+    return;
+  }
   if (window.__wirkungGlossaryInitialized) {
     return;
   }
@@ -3205,6 +3215,7 @@ const ToolTermInlineLayer = (() => {
 
   function shouldRun() {
     const path = window.location.pathname;
+    if (isDebugPath(path)) return false;
     return allowedPathParts.some((part) => path.includes(part)) || path.endsWith("/scorecard-dashboard.html");
   }
 
@@ -3405,35 +3416,408 @@ const CopyAnswerLayer = (() => {
   return { init };
 })();
 
-const WirkungsraumLayer = (() => {
-  const keys = {
-    saved: "saved_items",
-    progress: "woek_reading_progress",
-    collections: "woek_collections",
-    lastVisit: "woek_wirkungsraum_last_visit"
+const WoekUserSpace = (() => {
+  const namespace = "woek_user_space";
+  const schemaVersion = 1;
+  const exportVersion = 1;
+  const objectDefinitions = {
+    saved_items: { version: 1, kind: "list" },
+    reading_progress: { version: 1, kind: "map" },
+    collections: { version: 1, kind: "list" },
+    learning_items: { version: 1, kind: "list" },
+    notes: { version: 1, kind: "list" },
+    visit_history: { version: 1, kind: "list" },
+    user_settings: { version: 1, kind: "settings" }
   };
+  const legacyKeys = {
+    saved_items: "saved_items",
+    reading_progress: "woek_reading_progress",
+    collections: "woek_collections",
+    last_wirkungsraum_visit: "woek_wirkungsraum_last_visit"
+  };
+  let memoryStore = null;
+  let legacyMigrationChecked = false;
 
-  const relevantPathPattern =
-    /\/(begriffe|glossar|referenz|buch|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
-  const progressPathPattern = /\/(referenz|buch|dokumente|downloads|wirkungsradar\/(live|detail)|portale|wirkungsfelder|werkstatt|wissen|blog)\b|\/buch\.html$/;
-  const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal)\b|\/(datenschutz|impressum)\.html$/;
+  function timestamp() {
+    return new Date().toISOString();
+  }
 
-  function readJson(key, fallback) {
+  function clone(value) {
+    return JSON.parse(JSON.stringify(value));
+  }
+
+  function emptyObject(name) {
+    const definition = objectDefinitions[name];
+    const base = {
+      version: definition.version,
+      updated_at: null
+    };
+    if (definition.kind === "map") return { ...base, items: {} };
+    if (definition.kind === "settings") return { ...base, data: {} };
+    return { ...base, items: [] };
+  }
+
+  function emptyStore() {
+    const created = timestamp();
+    return {
+      namespace,
+      schema_version: schemaVersion,
+      created_at: created,
+      updated_at: created,
+      local_only: true,
+      objects: Object.fromEntries(Object.keys(objectDefinitions).map((name) => [name, emptyObject(name)])),
+      export_import: {
+        export_version: exportVersion,
+        supported_modes: ["replace", "merge"],
+        prepared_for_accounts: false
+      }
+    };
+  }
+
+  function parseJson(value, fallback) {
+    if (!value) return fallback;
     try {
-      const value = window.localStorage.getItem(key);
-      return value ? JSON.parse(value) : fallback;
+      return JSON.parse(value);
     } catch {
       return fallback;
     }
   }
 
-  function writeJson(key, value) {
+  function localStorageSafe() {
     try {
-      window.localStorage.setItem(key, JSON.stringify(value));
+      if (typeof window === "undefined" || !window.localStorage) return null;
+      const probe = "__woek_user_space_probe__";
+      window.localStorage.setItem(probe, "1");
+      window.localStorage.removeItem(probe);
+      return window.localStorage;
     } catch {
-      // Local storage can be unavailable in private browsing modes.
+      return null;
     }
   }
+
+  function readRawStore() {
+    const storage = localStorageSafe();
+    if (!storage) return memoryStore || emptyStore();
+    return parseJson(storage.getItem(namespace), emptyStore());
+  }
+
+  function saveRawStore(store) {
+    store.updated_at = timestamp();
+    const normalized = normalizeStore(store);
+    const storage = localStorageSafe();
+    if (!storage) {
+      memoryStore = normalized;
+      return normalized;
+    }
+    try {
+      storage.setItem(namespace, JSON.stringify(normalized));
+    } catch {
+      memoryStore = normalized;
+    }
+    return normalized;
+  }
+
+  function normalizeStore(value) {
+    const base = value && typeof value === "object" && value.namespace === namespace ? value : emptyStore();
+    base.schema_version = Number(base.schema_version || schemaVersion);
+    base.local_only = true;
+    base.objects = base.objects && typeof base.objects === "object" ? base.objects : {};
+    for (const [name, definition] of Object.entries(objectDefinitions)) {
+      const current = base.objects[name] && typeof base.objects[name] === "object" ? base.objects[name] : {};
+      const shell = emptyObject(name);
+      current.version = Number(current.version || definition.version);
+      current.updated_at = current.updated_at || null;
+      if (definition.kind === "map") {
+        current.items = current.items && !Array.isArray(current.items) && typeof current.items === "object" ? current.items : {};
+      } else if (definition.kind === "settings") {
+        current.data = current.data && !Array.isArray(current.data) && typeof current.data === "object" ? current.data : {};
+      } else {
+        current.items = Array.isArray(current.items) ? current.items : [];
+      }
+      base.objects[name] = { ...shell, ...current };
+    }
+    base.export_import = {
+      export_version: exportVersion,
+      supported_modes: ["replace", "merge"],
+      prepared_for_accounts: false,
+      ...(base.export_import || {})
+    };
+    return base;
+  }
+
+  function hasEntries(objectName, store) {
+    const definition = objectDefinitions[objectName];
+    const object = store.objects[objectName];
+    if (definition.kind === "settings") return Object.keys(object.data || {}).length > 0;
+    if (definition.kind === "map") return Object.keys(object.items || {}).length > 0;
+    return Array.isArray(object.items) && object.items.length > 0;
+  }
+
+  function readLegacyJson(key, fallback) {
+    const storage = localStorageSafe();
+    if (!storage) return fallback;
+    return parseJson(storage.getItem(key), fallback);
+  }
+
+  function migrateLegacyInto(store) {
+    if (legacyMigrationChecked || store.legacy_migration_completed) {
+      legacyMigrationChecked = true;
+      return false;
+    }
+    legacyMigrationChecked = true;
+    const migrated = [];
+    const saved = readLegacyJson(legacyKeys.saved_items, []);
+    if (!hasEntries("saved_items", store) && Array.isArray(saved) && saved.length) {
+      store.objects.saved_items.items = saved;
+      store.objects.saved_items.updated_at = timestamp();
+      migrated.push(legacyKeys.saved_items);
+    }
+    const progress = readLegacyJson(legacyKeys.reading_progress, {});
+    if (!hasEntries("reading_progress", store) && progress && typeof progress === "object" && !Array.isArray(progress) && Object.keys(progress).length) {
+      store.objects.reading_progress.items = progress;
+      store.objects.reading_progress.updated_at = timestamp();
+      migrated.push(legacyKeys.reading_progress);
+    }
+    const collections = readLegacyJson(legacyKeys.collections, []);
+    if (!hasEntries("collections", store) && Array.isArray(collections) && collections.length) {
+      store.objects.collections.items = collections;
+      store.objects.collections.updated_at = timestamp();
+      migrated.push(legacyKeys.collections);
+    }
+    const storage = localStorageSafe();
+    const lastVisit = storage?.getItem(legacyKeys.last_wirkungsraum_visit);
+    if (lastVisit && !store.objects.user_settings.data.last_wirkungsraum_visit) {
+      store.objects.user_settings.data.last_wirkungsraum_visit = lastVisit;
+      store.objects.user_settings.updated_at = timestamp();
+      migrated.push(legacyKeys.last_wirkungsraum_visit);
+    }
+    if (migrated.length) {
+      store.migrated_from = Array.from(new Set([...(store.migrated_from || []), ...migrated]));
+    }
+    store.legacy_migration_completed = true;
+    store.legacy_migration_checked_at = timestamp();
+    return true;
+  }
+
+  function loadStore() {
+    const store = normalizeStore(readRawStore());
+    if (migrateLegacyInto(store)) return saveRawStore(store);
+    return store;
+  }
+
+  function updateStore(mutator) {
+    const store = loadStore();
+    const result = mutator(store);
+    saveRawStore(store);
+    return result;
+  }
+
+  function touchObject(store, objectName) {
+    store.objects[objectName].updated_at = timestamp();
+  }
+
+  function normalizeId(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 96);
+  }
+
+  function getItems(objectName) {
+    const object = loadStore().objects[objectName];
+    return clone(Array.isArray(object?.items) ? object.items : []);
+  }
+
+  function getRecordItems(objectName) {
+    const object = loadStore().objects[objectName];
+    return clone(object?.items && typeof object.items === "object" && !Array.isArray(object.items) ? object.items : {});
+  }
+
+  function getSettings() {
+    return clone(loadStore().objects.user_settings.data || {});
+  }
+
+  function upsertItem(objectName, item, options = {}) {
+    const definition = objectDefinitions[objectName];
+    if (!definition || definition.kind === "map" || definition.kind === "settings") return null;
+    return updateStore((store) => {
+      const object = store.objects[objectName];
+      const now = timestamp();
+      const id = item.id || normalizeId(item.url || item.title || `${objectName}-${now}`);
+      const timestampField = options.timestampField || "updated_at";
+      const nextItem = { ...item, id, [timestampField]: item[timestampField] || now, updated_at: now };
+      object.items = [nextItem, ...object.items.filter((existing) => existing.id !== id)];
+      if (options.limit) object.items = object.items.slice(0, options.limit);
+      touchObject(store, objectName);
+      return clone(nextItem);
+    });
+  }
+
+  function removeItem(objectName, id) {
+    return updateStore((store) => {
+      const object = store.objects[objectName];
+      if (!Array.isArray(object?.items)) return false;
+      const before = object.items.length;
+      object.items = object.items.filter((item) => item.id !== id);
+      if (object.items.length !== before) touchObject(store, objectName);
+      return object.items.length !== before;
+    });
+  }
+
+  function upsertRecord(objectName, id, value) {
+    const definition = objectDefinitions[objectName];
+    if (!definition || definition.kind !== "map") return null;
+    return updateStore((store) => {
+      const object = store.objects[objectName];
+      const key = String(id || "").trim();
+      if (!key) return null;
+      object.items[key] = { ...value, id: value.id || key, updated_at: timestamp() };
+      touchObject(store, objectName);
+      return clone(object.items[key]);
+    });
+  }
+
+  function setSetting(key, value) {
+    return updateStore((store) => {
+      store.objects.user_settings.data[key] = value;
+      touchObject(store, "user_settings");
+      return clone(value);
+    });
+  }
+
+  function getSetting(key, fallback = null) {
+    const settings = getSettings();
+    return Object.prototype.hasOwnProperty.call(settings, key) ? settings[key] : fallback;
+  }
+
+  function addNote(note) {
+    return upsertItem(
+      "notes",
+      {
+        ...note,
+        id: note.id || normalizeId(`${note.target_url || note.target_id || "note"}-${Date.now()}`),
+        created_at: note.created_at || timestamp()
+      },
+      { limit: 1000 }
+    );
+  }
+
+  function recordVisit(item) {
+    return upsertItem(
+      "visit_history",
+      {
+        ...item,
+        id: item.id || normalizeId(item.url || item.title),
+        visited_at: timestamp()
+      },
+      { limit: 500, timestampField: "visited_at" }
+    );
+  }
+
+  function resetObject(objectName) {
+    if (!objectDefinitions[objectName]) return false;
+    return updateStore((store) => {
+      store.objects[objectName] = emptyObject(objectName);
+      touchObject(store, objectName);
+      return true;
+    });
+  }
+
+  function resetAll() {
+    const store = emptyStore();
+    store.legacy_migration_completed = true;
+    store.legacy_migration_checked_at = timestamp();
+    saveRawStore(store);
+    return true;
+  }
+
+  function exportData() {
+    const store = loadStore();
+    return {
+      format: "woek_user_space_export",
+      export_version: exportVersion,
+      namespace,
+      schema_version: store.schema_version,
+      exported_at: timestamp(),
+      local_only: true,
+      objects: clone(store.objects)
+    };
+  }
+
+  function importData(payload, options = {}) {
+    const incoming = payload?.objects ? payload.objects : payload?.data?.objects ? payload.data.objects : null;
+    if (!incoming || typeof incoming !== "object") {
+      return { ok: false, imported: [], error: "Ungültige Importstruktur." };
+    }
+    const mode = options.mode === "replace" ? "replace" : "merge";
+    const imported = [];
+    updateStore((store) => {
+      for (const [name, definition] of Object.entries(objectDefinitions)) {
+        if (!incoming[name]) continue;
+        const source = incoming[name];
+        if (mode === "replace") {
+          store.objects[name] = normalizeStore({ namespace, objects: { [name]: source } }).objects[name];
+          touchObject(store, name);
+          imported.push(name);
+          continue;
+        }
+        if (definition.kind === "map") {
+          store.objects[name].items = { ...store.objects[name].items, ...(source.items || {}) };
+        } else if (definition.kind === "settings") {
+          store.objects[name].data = { ...store.objects[name].data, ...(source.data || {}) };
+        } else {
+          const byId = new Map(store.objects[name].items.map((item) => [item.id, item]));
+          for (const item of Array.isArray(source.items) ? source.items : []) {
+            byId.set(item.id || normalizeId(item.url || item.title), item);
+          }
+          store.objects[name].items = Array.from(byId.values());
+        }
+        touchObject(store, name);
+        imported.push(name);
+      }
+      store.last_import_at = timestamp();
+    });
+    return { ok: true, mode, imported };
+  }
+
+  function snapshot() {
+    return clone(loadStore());
+  }
+
+  const api = {
+    namespace,
+    schemaVersion,
+    objectDefinitions: clone(objectDefinitions),
+    snapshot,
+    exportData,
+    importData,
+    getItems,
+    getRecordItems,
+    getSettings,
+    getSetting,
+    setSetting,
+    upsertItem,
+    removeItem,
+    upsertRecord,
+    addNote,
+    recordVisit,
+    resetObject,
+    resetAll
+  };
+
+  window.WoekUserSpace = api;
+  return api;
+})();
+
+const WirkungsraumLayer = (() => {
+  const relevantPathPattern =
+    /\/(begriffe|glossar|referenz|buch|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
+  const progressPathPattern = /\/(referenz|buch|dokumente|downloads|wirkungsradar\/(live|detail)|portale|wirkungsfelder|werkstatt|wissen|blog)\b|\/buch\.html$/;
+  const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
 
   function canonicalPath() {
     return `${window.location.pathname}${window.location.hash || ""}`.replace(/\/index\.html$/, "/");
@@ -3480,21 +3864,17 @@ const WirkungsraumLayer = (() => {
   }
 
   function savedItems() {
-    const items = readJson(keys.saved, []);
+    const items = WoekUserSpace.getItems("saved_items");
     return Array.isArray(items) ? items : [];
   }
 
   function saveItem(item) {
-    const next = [item, ...savedItems().filter((existing) => existing.id !== item.id)].slice(0, 300);
-    writeJson(keys.saved, next);
+    WoekUserSpace.upsertItem("saved_items", item, { limit: 300, timestampField: "saved_at" });
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
   }
 
   function removeItem(id) {
-    writeJson(
-      keys.saved,
-      savedItems().filter((item) => item.id !== id)
-    );
+    WoekUserSpace.removeItem("saved_items", id);
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
   }
 
@@ -3556,8 +3936,7 @@ const WirkungsraumLayer = (() => {
       window.clearTimeout(timeout);
       timeout = window.setTimeout(() => {
         const url = canonicalPath();
-        const all = readJson(keys.progress, {});
-        all[url] = {
+        WoekUserSpace.upsertRecord("reading_progress", url, {
           id: url.replace(/^\/+/, ""),
           title: pageTitle(),
           type: pageType(path),
@@ -3565,8 +3944,7 @@ const WirkungsraumLayer = (() => {
           scroll_position: Math.round(window.scrollY),
           progress: progressPercent(),
           updated_at: new Date().toISOString()
-        };
-        writeJson(keys.progress, all);
+        });
       }, 250);
     };
     window.addEventListener("scroll", persist, { passive: true });
@@ -3614,7 +3992,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function collections() {
-    const value = readJson(keys.collections, []);
+    const value = WoekUserSpace.getItems("collections");
     return Array.isArray(value) ? value : [];
   }
 
@@ -3640,7 +4018,7 @@ const WirkungsraumLayer = (() => {
     if (!root) return;
 
     const saved = savedItems();
-    const progress = Object.values(readJson(keys.progress, {})).sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
+    const progress = Object.values(WoekUserSpace.getRecordItems("reading_progress")).sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
     const savedList = root.querySelector("[data-saved-list]");
     const readingList = root.querySelector("[data-reading-list]");
     const filter = root.querySelector("[data-saved-filter]");
@@ -3662,12 +4040,12 @@ const WirkungsraumLayer = (() => {
     root.querySelector("[data-stat-collections]").textContent = String(collections().length);
     root.querySelector("[data-stat-academy]").textContent = progress.some((item) => item.type === "Akademie") ? "◐" : "○";
 
-    const lastVisit = window.localStorage.getItem(keys.lastVisit);
+    const lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null);
     const note = root.querySelector("[data-last-visit-note]");
     if (note && lastVisit) {
       note.textContent = `Letzter Besuch deines Wirkungsraums: ${new Date(lastVisit).toLocaleString("de-DE")}.`;
     }
-    writeJson(keys.lastVisit, new Date().toISOString());
+    WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
 
     filter?.addEventListener("input", drawSaved);
     root.addEventListener("click", (event) => {
@@ -3678,12 +4056,12 @@ const WirkungsraumLayer = (() => {
       }
       const clear = event.target instanceof HTMLElement ? event.target.closest("[data-clear-wirkungsraum]") : null;
       if (clear instanceof HTMLButtonElement && window.confirm("Alle lokal gespeicherten Wirkungsraum-Daten löschen?")) {
-        [keys.saved, keys.progress, keys.collections].forEach((key) => window.localStorage.removeItem(key));
+        WoekUserSpace.resetAll();
         renderDashboard();
       }
       const exportButton = event.target instanceof HTMLElement ? event.target.closest("[data-export-wirkungsraum]") : null;
       if (exportButton instanceof HTMLButtonElement) {
-        const payload = JSON.stringify({ saved_items: savedItems(), reading_progress: readJson(keys.progress, {}), collections: collections() }, null, 2);
+        const payload = JSON.stringify(WoekUserSpace.exportData(), null, 2);
         navigator.clipboard?.writeText(payload);
         exportButton.textContent = "Export kopiert";
         window.setTimeout(() => (exportButton.textContent = "Exportieren"), 1400);
@@ -3698,9 +4076,7 @@ const WirkungsraumLayer = (() => {
       if (!(input instanceof HTMLInputElement)) return;
       const name = input.value.trim();
       if (!name) return;
-      const all = collections();
-      all.push({ id: name.toLowerCase().replace(/\s+/g, "-"), name, itemIds: [], created_at: new Date().toISOString() });
-      writeJson(keys.collections, all);
+      WoekUserSpace.upsertItem("collections", { id: name.toLowerCase().replace(/\s+/g, "-"), name, itemIds: [], created_at: new Date().toISOString() });
       input.value = "";
       renderDashboard();
     });
@@ -3745,7 +4121,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function decorateProgressLinks() {
-    const progress = readJson(keys.progress, {});
+    const progress = WoekUserSpace.getRecordItems("reading_progress");
     document.querySelectorAll("a[href]").forEach((link) => {
       if (!(link instanceof HTMLAnchorElement) || link.dataset.progressDecorated) return;
       const path = new URL(link.href, window.location.origin).pathname.replace(/\/index\.html$/, "/");
@@ -3760,7 +4136,14 @@ const WirkungsraumLayer = (() => {
     });
   }
 
+  function trackVisit() {
+    const path = window.location.pathname;
+    if (excludedPathPattern.test(path) || !relevantPathPattern.test(path)) return;
+    WoekUserSpace.recordVisit(currentItem());
+  }
+
   function init() {
+    trackVisit();
     injectSaveButton();
     trackReadingProgress();
     renderDashboard();
