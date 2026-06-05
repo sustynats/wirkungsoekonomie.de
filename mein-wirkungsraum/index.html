@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mein Wirkungsraum | Persönliches Wissens- und Arbeitssystem</title>
-    <meta name="description" content="Mein Wirkungsraum bündelt gemerkte Inhalte, Weiterlesen-Stände, Sammlungen und nächste Schritte auf wirkungsoekonomie.de.">
+    <title>Mein Wirkungsraum | Gemerkte Inhalte</title>
+    <meta name="description" content="Mein Wirkungsraum zeigt lokal gemerkte Begriffe, Kapitel, Dokumente, Debattenseiten, Werkzeuge und Akademie-Module auf wirkungsoekonomie.de.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260604-wirkungsraum">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage1">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -41,35 +41,20 @@
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Mein Wirkungsraum</nav>
           <p class="hero-kicker">Persönlicher Arbeitsraum</p>
           <h1 class="hero-title">Mein Wirkungsraum</h1>
-          <p class="hero-subtitle">Dein lokales Wissens-, Lern- und Arbeitssystem für Wirkungsökonomie.</p>
-          <p class="card-text">Hier sammelst du Begriffe, Kapitel, Debatten-Kompass-Seiten, Dossiers, Werkzeuge und Lernstände. Ohne Login, zunächst nur in deinem Browser gespeichert.</p>
+          <p class="hero-subtitle">Deine lokal gemerkten Inhalte auf wirkungsoekonomie.de.</p>
+          <p class="card-text">Speichere Begriffe, Kapitel, Dokumente, Dossiers, Debatten-Kompass-Seiten, Werkzeuge, Akademie-Module, Wirkungsfelder und Journalartikel mit „⭐ Merken“. Alles bleibt in diesem Browser. Es gibt noch kein Login und keine Server-Synchronisierung.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#gemerkte-inhalte">Gemerkte Inhalte ansehen</a>
-            <a class="btn btn-secondary" href="#zuletzt-gelesen">Weiterlesen</a>
+            <a class="btn btn-secondary" href="../suche.html">Inhalte suchen</a>
           </div>
         </div>
       </section>
 
       <section class="section section-soft wirkungsraum-status" aria-label="Wirkungsraum Überblick">
         <div>
-          <div class="wirkungsraum-stats" data-wirkungsraum-stats>
-            <article class="card"><p class="card-kicker">Gemerkte Inhalte</p><strong data-stat-saved>0</strong><span>lokal gespeichert</span></article>
-            <article class="card"><p class="card-kicker">Weiterlesen</p><strong data-stat-progress>0</strong><span>begonnene Inhalte</span></article>
-            <article class="card"><p class="card-kicker">Sammlungen</p><strong data-stat-collections>0</strong><span>eigene Ordnungen</span></article>
-            <article class="card"><p class="card-kicker">Akademie</p><strong data-stat-academy>○</strong><span>lokaler Fortschritt</span></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="zuletzt-gelesen">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Weiterlesen</p>
-            <h2>Zuletzt gelesen</h2>
-            <p>Lesestände für Kapitel, Referenzseiten, Dossiers und Debatten-Kompass-Seiten werden automatisch lokal gespeichert.</p>
-          </div>
-          <div class="wirkungsraum-list" data-reading-list>
-            <article class="card"><p class="card-text">Noch kein Lesestand gespeichert. Öffne ein Kapitel oder eine Debatten-Kompass-Seite und scrolle ein Stück.</p></article>
+          <div class="wirkungsraum-stats compact" data-wirkungsraum-stats>
+            <article class="card"><p class="card-kicker">Gespeichert</p><strong data-stat-saved>0</strong><span>Inhalte im Browser</span></article>
+            <article class="card"><p class="card-kicker">Aktueller Filter</p><strong data-stat-visible>0</strong><span>sichtbare Treffer</span></article>
           </div>
         </div>
       </section>
@@ -77,51 +62,27 @@
       <section class="section section-soft" id="gemerkte-inhalte">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Sammlung</p>
+            <p class="hero-kicker">Merkliste</p>
             <h2>Gemerkte Inhalte</h2>
-            <p>Alles, was du mit „⭐ Merken“ speicherst, landet hier: Begriffe, Kapitel, Dokumente, Dossiers, Werkzeuge und Debattenkarten.</p>
+            <p>Alles, was du mit „⭐ Merken“ speicherst, landet hier mit Titel, Typ, URL, Kategorie, Tags und Speicherzeitpunkt.</p>
+          </div>
+          <div class="wirkungsraum-filter-row" role="group" aria-label="Gemerkte Inhalte nach Typ filtern">
+            <button class="filter-chip active" type="button" data-saved-type-filter="all" aria-pressed="true">Alle</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="begriffe" aria-pressed="false">Begriffe</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="kapitel" aria-pressed="false">Kapitel</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="dokumente" aria-pressed="false">Dokumente</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="debatten" aria-pressed="false">Debatten</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="werkzeuge" aria-pressed="false">Werkzeuge</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="akademie" aria-pressed="false">Akademie</button>
           </div>
           <div class="wirkungsraum-toolbar">
             <label class="sr-only" for="wirkungsraum-filter">In gemerkten Inhalten suchen</label>
-            <input id="wirkungsraum-filter" type="search" placeholder="Gemerkte Inhalte filtern" data-saved-filter>
+            <input id="wirkungsraum-filter" type="search" placeholder="In gemerkten Inhalten suchen" data-saved-search>
             <button class="btn btn-secondary" type="button" data-export-wirkungsraum>Exportieren</button>
-            <button class="btn btn-secondary" type="button" data-clear-wirkungsraum>Alles leeren</button>
+            <button class="btn btn-secondary" type="button" data-clear-wirkungsraum>Merkliste leeren</button>
           </div>
           <div class="wirkungsraum-list" data-saved-list>
             <article class="card"><p class="card-text">Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „⭐ Merken“.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="sammlungen">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Eigene Ordnung</p>
-            <h2>Persönliche Sammlungen</h2>
-            <p>Lege Arbeitsmappen an, zum Beispiel Grundlagen, Debatten-Kompass, Medien &amp; Demokratie, T-SROI oder Lieblingsbegriffe.</p>
-          </div>
-          <form class="wirkungsraum-collection-form" data-collection-form>
-            <label class="sr-only" for="collection-name">Sammlung benennen</label>
-            <input id="collection-name" name="collectionName" type="text" placeholder="Neue Sammlung, z. B. Grundlagen">
-            <button class="btn btn-primary" type="submit">Sammlung anlegen</button>
-          </form>
-          <div class="wirkungsraum-list" data-collection-list>
-            <article class="card"><p class="card-text">Noch keine Sammlung angelegt.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-soft" id="akademie-fortschritt">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Lernen</p>
-            <h2>Akademie-Fortschritt</h2>
-            <p>Bis die Akademie-App echte Konten liefert, zeigt dieser Bereich deinen lokalen Lernstatus: ungelesen ○, begonnen ◐, gelesen ●.</p>
-          </div>
-          <div class="card-grid three" data-academy-progress>
-            <article class="card"><p class="card-kicker">Grundlagen</p><h3 class="card-title">○ Wirkung verstehen</h3><p class="card-text">Starte mit Wirkung, positiver Netto-Wirkung und Wirkpfad.</p></article>
-            <article class="card"><p class="card-kicker">Debatten</p><h3 class="card-title">○ Debatten-Kompass nutzen</h3><p class="card-text">Merke eine Debattenkarte und prüfe die Sofortantworten.</p></article>
-            <article class="card"><p class="card-kicker">Praxis</p><h3 class="card-title">○ Werkzeug anwenden</h3><p class="card-text">Öffne ein Werkzeug oder einen Rechner und speichere es im Wirkungsraum.</p></article>
           </div>
         </div>
       </section>
@@ -241,6 +202,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../assets/js/main.js?v=20260604-wirkungsraum"></script>
+    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage1"></script>
   </body>
 </html>

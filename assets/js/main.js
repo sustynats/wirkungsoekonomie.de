@@ -3820,7 +3820,7 @@ const WirkungsraumLayer = (() => {
   const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
 
   function canonicalPath() {
-    return `${window.location.pathname}${window.location.hash || ""}`.replace(/\/index\.html$/, "/");
+    return window.location.pathname.replace(/\/index\.html$/, "/");
   }
 
   function pageTitle() {
@@ -3830,14 +3830,15 @@ const WirkungsraumLayer = (() => {
   }
 
   function pageType(path = window.location.pathname) {
-    if (path.includes("/wirkungsradar/")) return "Debatten-Kompass";
-    if (path.includes("/begriffe/") || path.includes("/glossar")) return "Glossar";
-    if (path.includes("/referenz/") || path.includes("/buch")) return "Buchkapitel";
-    if (path.includes("/downloads") || path.includes("/dokumente") || path.includes("/werkstatt/")) return "Dokument";
+    if (path.includes("/wirkungsradar/")) return "Debatte";
+    if (path.includes("/begriffe/") || path.includes("/glossar")) return "Begriff";
+    if (path.includes("/referenz/") || path.includes("/buch")) return "Kapitel";
+    if (path.includes("/dossiers/") || path.includes("/portale/")) return "Dossier";
+    if (path.includes("/downloads") || path.includes("/dokumente") || path.includes("/werkstatt/") || path.includes("/wissen/")) return "Dokument";
     if (path.includes("/werkzeuge/") || path.includes("/tools/")) return "Werkzeug";
     if (path.includes("/akademie")) return "Akademie";
-    if (path.includes("/wirkungsfelder/") || path.includes("/portale/")) return "Wirkungsfeld";
-    if (path.includes("/blog") || path.includes("/journal") || path.includes("/wissen/")) return "Journal";
+    if (path.includes("/wirkungsfelder/")) return "Wirkungsfeld";
+    if (path.includes("/blog") || path.includes("/journal")) return "Journal";
     return "Inhalt";
   }
 
@@ -3883,7 +3884,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function buttonLabel(button, saved) {
-    button.textContent = saved ? "★ Gemerkt" : "☆ Merken";
+    button.textContent = saved ? "★ Gemerkt" : "⭐ Merken";
     button.setAttribute("aria-pressed", String(saved));
   }
 
@@ -3991,54 +3992,59 @@ const WirkungsraumLayer = (() => {
     items.forEach((item) => container.append(itemCard(item, options)));
   }
 
-  function collections() {
-    const value = WoekUserSpace.getItems("collections");
-    return Array.isArray(value) ? value : [];
+  const savedFilterGroups = {
+    all: null,
+    begriffe: ["Begriff", "Glossar"],
+    kapitel: ["Kapitel", "Buchkapitel", "Referenzkapitel"],
+    dokumente: ["Dokument", "Dossier"],
+    debatten: ["Debatte", "Debatten-Kompass"],
+    werkzeuge: ["Werkzeug"],
+    akademie: ["Akademie", "Akademie-Modul"]
+  };
+
+  function matchesSavedFilter(item, filterKey) {
+    const allowed = savedFilterGroups[filterKey] || null;
+    if (!allowed) return true;
+    return allowed.includes(item.type);
   }
 
-  function renderCollections(root) {
-    const list = root.querySelector("[data-collection-list]");
-    const all = collections();
-    if (!list) return;
-    list.innerHTML = "";
-    if (!all.length) {
-      list.innerHTML = '<article class="card"><p class="card-text">Noch keine Sammlung angelegt.</p></article>';
-      return;
-    }
-    all.forEach((collection) => {
-      const article = document.createElement("article");
-      article.className = "card";
-      article.innerHTML = `<p class="card-kicker">Sammlung</p><h3 class="card-title">${escapeHtml(collection.name)}</h3><p class="card-text">${collection.itemIds?.length || 0} Inhalte</p>`;
-      list.append(article);
+  function savedSearchText(item) {
+    return [item.title, item.type, item.category, ...(Array.isArray(item.tags) ? item.tags : [])].join(" ").toLowerCase();
+  }
+
+  function activeSavedFilter(root) {
+    return root.dataset.savedTypeFilter || "all";
+  }
+
+  function updateFilterButtons(root) {
+    const active = activeSavedFilter(root);
+    root.querySelectorAll("[data-saved-type-filter]").forEach((button) => {
+      if (!(button instanceof HTMLButtonElement)) return;
+      const pressed = (button.dataset.savedTypeFilter || "all") === active;
+      button.classList.toggle("active", pressed);
+      button.setAttribute("aria-pressed", String(pressed));
     });
+  }
+
+  function drawSavedDashboard(root) {
+    const saved = savedItems();
+    const savedList = root.querySelector("[data-saved-list]");
+    const searchInput = root.querySelector("[data-saved-search], [data-saved-filter]");
+    const query = searchInput instanceof HTMLInputElement ? searchInput.value.trim().toLowerCase() : "";
+    const filterKey = activeSavedFilter(root);
+    const filtered = saved.filter((item) => matchesSavedFilter(item, filterKey) && (!query || savedSearchText(item).includes(query)));
+
+    renderList(savedList, filtered, "Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „⭐ Merken“.", { removable: true });
+    const statSaved = root.querySelector("[data-stat-saved]");
+    if (statSaved) statSaved.textContent = String(saved.length);
+    const statVisible = root.querySelector("[data-stat-visible]");
+    if (statVisible) statVisible.textContent = String(filtered.length);
+    updateFilterButtons(root);
   }
 
   function renderDashboard() {
     const root = document.querySelector("[data-wirkungsraum-dashboard]");
     if (!root) return;
-
-    const saved = savedItems();
-    const progress = Object.values(WoekUserSpace.getRecordItems("reading_progress")).sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
-    const savedList = root.querySelector("[data-saved-list]");
-    const readingList = root.querySelector("[data-reading-list]");
-    const filter = root.querySelector("[data-saved-filter]");
-
-    const drawSaved = () => {
-      const query = filter instanceof HTMLInputElement ? filter.value.trim().toLowerCase() : "";
-      const filtered = query ? saved.filter((item) => `${item.title} ${item.type} ${(item.tags || []).join(" ")}`.toLowerCase().includes(query)) : saved;
-      renderList(savedList, filtered, "Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „☆ Merken“.", { removable: true });
-    };
-
-    renderList(readingList, progress.slice(0, 12), "Noch kein Lesestand gespeichert. Öffne ein Kapitel oder eine Debatten-Kompass-Seite und scrolle ein Stück.", {
-      readLabel: "Weiterlesen"
-    });
-    drawSaved();
-    renderCollections(root);
-
-    root.querySelector("[data-stat-saved]").textContent = String(saved.length);
-    root.querySelector("[data-stat-progress]").textContent = String(progress.length);
-    root.querySelector("[data-stat-collections]").textContent = String(collections().length);
-    root.querySelector("[data-stat-academy]").textContent = progress.some((item) => item.type === "Akademie") ? "◐" : "○";
 
     const lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null);
     const note = root.querySelector("[data-last-visit-note]");
@@ -4047,39 +4053,43 @@ const WirkungsraumLayer = (() => {
     }
     WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
 
-    filter?.addEventListener("input", drawSaved);
-    root.addEventListener("click", (event) => {
-      const remove = event.target instanceof HTMLElement ? event.target.closest("[data-remove-saved]") : null;
-      if (remove instanceof HTMLButtonElement) {
-        removeItem(remove.dataset.removeSaved || "");
-        renderDashboard();
-      }
-      const clear = event.target instanceof HTMLElement ? event.target.closest("[data-clear-wirkungsraum]") : null;
-      if (clear instanceof HTMLButtonElement && window.confirm("Alle lokal gespeicherten Wirkungsraum-Daten löschen?")) {
-        WoekUserSpace.resetAll();
-        renderDashboard();
-      }
-      const exportButton = event.target instanceof HTMLElement ? event.target.closest("[data-export-wirkungsraum]") : null;
-      if (exportButton instanceof HTMLButtonElement) {
-        const payload = JSON.stringify(WoekUserSpace.exportData(), null, 2);
-        navigator.clipboard?.writeText(payload);
-        exportButton.textContent = "Export kopiert";
-        window.setTimeout(() => (exportButton.textContent = "Exportieren"), 1400);
-      }
-    });
+    if (root.dataset.wirkungsraumDashboardBound !== "true") {
+      root.dataset.wirkungsraumDashboardBound = "true";
+      root.addEventListener("input", (event) => {
+        if (event.target instanceof HTMLInputElement && (event.target.matches("[data-saved-search]") || event.target.matches("[data-saved-filter]"))) {
+          drawSavedDashboard(root);
+        }
+      });
+      root.addEventListener("click", (event) => {
+        const filterButton = event.target instanceof HTMLElement ? event.target.closest("[data-saved-type-filter]") : null;
+        if (filterButton instanceof HTMLButtonElement) {
+          root.dataset.savedTypeFilter = filterButton.dataset.savedTypeFilter || "all";
+          drawSavedDashboard(root);
+          return;
+        }
+        const remove = event.target instanceof HTMLElement ? event.target.closest("[data-remove-saved]") : null;
+        if (remove instanceof HTMLButtonElement) {
+          removeItem(remove.dataset.removeSaved || "");
+          drawSavedDashboard(root);
+          return;
+        }
+        const clear = event.target instanceof HTMLElement ? event.target.closest("[data-clear-wirkungsraum]") : null;
+        if (clear instanceof HTMLButtonElement && window.confirm("Alle lokal gemerkten Inhalte aus diesem Browser löschen?")) {
+          WoekUserSpace.resetObject("saved_items");
+          drawSavedDashboard(root);
+          return;
+        }
+        const exportButton = event.target instanceof HTMLElement ? event.target.closest("[data-export-wirkungsraum]") : null;
+        if (exportButton instanceof HTMLButtonElement) {
+          const payload = JSON.stringify(WoekUserSpace.exportData(), null, 2);
+          navigator.clipboard?.writeText(payload);
+          exportButton.textContent = "Export kopiert";
+          window.setTimeout(() => (exportButton.textContent = "Exportieren"), 1400);
+        }
+      });
+    }
 
-    root.querySelector("[data-collection-form]")?.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const form = event.currentTarget;
-      if (!(form instanceof HTMLFormElement)) return;
-      const input = form.elements.namedItem("collectionName");
-      if (!(input instanceof HTMLInputElement)) return;
-      const name = input.value.trim();
-      if (!name) return;
-      WoekUserSpace.upsertItem("collections", { id: name.toLowerCase().replace(/\s+/g, "-"), name, itemIds: [], created_at: new Date().toISOString() });
-      input.value = "";
-      renderDashboard();
-    });
+    drawSavedDashboard(root);
   }
 
   function initGlossaryLearningFilter() {
@@ -4110,7 +4120,7 @@ const WirkungsraumLayer = (() => {
       const onlySaved = button.dataset.active !== "true";
       button.dataset.active = String(onlySaved);
       button.textContent = onlySaved ? "Alle Begriffe zeigen" : "Nur gemerkte Begriffe";
-      const savedUrls = new Set(savedItems().filter((item) => item.type === "Glossar").map((item) => item.url.replace(/\/$/, "")));
+      const savedUrls = new Set(savedItems().filter((item) => item.type === "Begriff" || item.type === "Glossar").map((item) => item.url.replace(/\/$/, "")));
       document.querySelectorAll("a[href*='/begriffe/']").forEach((link) => {
         const href = link.getAttribute("href") || "";
         const normalized = new URL(href, window.location.origin).pathname.replace(/\/$/, "");
