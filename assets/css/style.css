@@ -15898,6 +15898,61 @@ a.principle-card:hover,
   scroll-margin-top: 6rem;
 }
 
+.debate-compass-template > .section > div,
+.debate-compass-template .hero > div {
+  width: min(100% - (2 * var(--space-gutter)), 980px);
+  margin-inline: auto;
+}
+
+.debate-compass-template .card-grid,
+.debate-compass-template .card-grid.two,
+.debate-compass-template .card-grid.three,
+.debate-compass-template .card-grid.four,
+.debate-compass-template .v3-mpd-risk-grid,
+.debate-compass-template .source-proof-grid,
+.debate-compass-template .debate-psychology-list {
+  grid-template-columns: 1fr;
+  width: min(100%, 980px);
+  margin-inline: auto;
+}
+
+.debate-compass-template .section-header,
+.debate-compass-template .card,
+.debate-compass-template .radar-answer-item,
+.debate-compass-template .impact-path-step {
+  max-width: 980px;
+}
+
+.debate-compass-template .section-header p,
+.debate-compass-template .card p,
+.debate-compass-template .card-text,
+.debate-compass-template .clean-list,
+.debate-compass-template .radar-answer-item p {
+  max-width: 86ch;
+}
+
+.debate-relevance-block .card,
+.debate-source-block > div.card {
+  border-left: 5px solid rgba(47, 125, 92, 0.62);
+}
+
+.debate-consequence-main {
+  padding-block: clamp(2.2rem, 5vw, 4.4rem);
+}
+
+.debate-consequence-main .section-header h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.debate-source-block .source-proof-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.source-proof-card {
+  box-shadow: none;
+}
+
 .v3-layer > div {
   display: grid;
   gap: clamp(1rem, 2vw, 1.4rem);
@@ -16057,7 +16112,7 @@ a.principle-card:hover,
 
 .impact-path-stepper {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.65rem;
 }
 
@@ -16067,11 +16122,12 @@ a.principle-card:hover,
 }
 
 .impact-path-step:not(:last-child)::after {
-  content: "→";
+  content: "↓";
   position: absolute;
-  top: 50%;
-  right: -0.55rem;
-  transform: translateY(-50%);
+  top: auto;
+  right: 1rem;
+  bottom: -0.85rem;
+  transform: none;
   color: var(--green-dark);
   font-weight: 900;
 }
