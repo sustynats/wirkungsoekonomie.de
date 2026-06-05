@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-04",
+  "version": "2026-06-05",
   "component": "AudioExplanationBlock",
   "items": [
     {
@@ -469,26 +469,45 @@
       "version_date": "2026-06-04",
       "priority": "P2",
       "source_wav": "politik-parteien-esv2-86p-bg-10p-music-10p.wav"
-    }
-  ],
-  "missing_audio": [
-    {
-      "no": 5,
-      "title": "Erleben / Demos",
-      "url": "https://wirkungsoekonomie.de/erleben/",
-      "reason": "keine passende WAV-Datei im Anhang gefunden"
     },
     {
-      "no": 19,
-      "title": "Wirkungsrat",
-      "url": "https://wirkungsoekonomie.de/werkzeuge/wirkungsrat/",
-      "reason": "keine passende WAV-Datei im Anhang gefunden"
+      "id": "erleben-demos",
+      "url": "/erleben/",
+      "title": "Anhören: Demos machen Wirkung greifbar",
+      "audio_file": "/assets/audio/explanations/erleben-demos.mp3",
+      "transcript": "Die Demos auf dieser Seite sollen dir die Wirkungslogik praktisch zeigen. Sie sind keine amtliche Bewertung, keine Zertifizierung und keine Beratung. Sie bewerten auch keine Menschen.\n\nEine Demo arbeitet mit vereinfachten Annahmen. Sie zeigt zum Beispiel, wie Produktdaten, Lieferketten, schwächste Wirkungsfelder oder Medienframes eine Bewertung beeinflussen könnten. Das hilft, die Struktur zu verstehen. Aber reale Entscheidungen brauchen geprüfte Daten, Kontext, Zuständigkeiten, Rechtsschutz und transparente Unsicherheiten.\n\nDer Nutzen dieser Seite liegt also nicht darin, endgültige Urteile zu bekommen. Der Nutzen liegt darin, bessere Fragen zu stellen: Welche Wirkung entsteht? Welche Daten fehlen? Welche roten Linien dürfen nicht kompensiert werden? Und wie würde sich unser Handeln verändern, wenn Wirkung nicht nur beschrieben, sondern zurückgekoppelt würde?",
+      "placement": "Direkt unter Hero",
+      "duration_estimate": "ca. 54 Sekunden",
+      "speaker_name": "Natalie Weber",
+      "version_date": "2026-06-05",
+      "priority": "P2",
+      "source_wav": "erleben-demos.wav"
     },
     {
-      "no": 31,
-      "title": "Rente & soziale Sicherung",
-      "url": "https://wirkungsoekonomie.de/wirkungsfelder/rente-soziale-sicherung/",
-      "reason": "keine passende WAV-Datei im Anhang gefunden"
+      "id": "wirkungsrat",
+      "url": "/werkzeuge/wirkungsrat/",
+      "title": "Anhören: Warum der Wirkungsrat gebraucht wird",
+      "audio_file": "/assets/audio/explanations/wirkungsrat.mp3",
+      "transcript": "Ein Wirkungsrat wäre keine Behörde, die Menschen sagt, was sie denken sollen. Er wäre auch kein Wahrheitsministerium. Seine Aufgabe wäre, die Wirkungslogik überprüfbar, lernfähig und vor Missbrauch geschützt zu halten.\n\nWenn Wirkung in Steuern, Förderungen, Kapital oder öffentliche Entscheidungen zurückfließt, braucht es unabhängige Kontrolle. Indikatoren können falsch sein. Daten können lückenhaft sein. Schwellenwerte müssen überprüft werden. Lobbyinteressen können versuchen, Regeln zu verwässern. Genau deshalb braucht eine Wirkungsarchitektur eine Institution, die offen prüft, veröffentlicht, korrigiert und weiterentwickelt.\n\nWichtig ist die Zusammensetzung: Wissenschaft, Zivilgesellschaft, Wirtschaft, Verwaltung und Bürger:innen dürfen nicht von einer Seite dominiert werden. Der Wirkungsrat ersetzt keine Demokratie. Er schafft bessere Prüf- und Korrekturbedingungen für demokratische Entscheidungen.",
+      "placement": "Direkt unter Hero",
+      "duration_estimate": "ca. 57 Sekunden",
+      "speaker_name": "Natalie Weber",
+      "version_date": "2026-06-05",
+      "priority": "P2",
+      "source_wav": "wirkungsrat.wav"
+    },
+    {
+      "id": "rente-soziale-sicherung",
+      "url": "/wirkungsfelder/rente-soziale-sicherung/",
+      "title": "Anhören: Rente und soziale Sicherung wirkungsökonomisch lesen",
+      "audio_file": "/assets/audio/explanations/rente-soziale-sicherung.mp3",
+      "transcript": "Rente ist nicht nur eine Rechenfrage. Sie ist eine Vertrauensfrage. Menschen müssen darauf vertrauen können, dass ein Gemeinwesen Lebensleistung, Würde und Sicherheit im Alter ernst nimmt.\n\nDas heutige System misst sehr präzise Beitragsjahre und Einkommen. Aber viele wirksame Beiträge bleiben unterbelichtet: Pflege, Care, Bildung, Ehrenamt, Prävention, Demokratiearbeit oder Transformationsleistung. Dazu kommt Automatisierung: Wenn Wertschöpfung stärker durch Maschinen und Algorithmen entsteht, gerät eine reine Lohn- und Beitragslogik unter Druck.\n\nDie Wirkungsökonomie schlägt deshalb keine einfache Abschaffung vor, sondern eine Erweiterung: Würdesicherung, bestehende Ansprüche, Lebenswirkung, Wirkungsfonds und demokratische Korrekturverfahren müssen zusammengedacht werden. Rente wird dann nicht nur Auszahlung vergangener Beiträge, sondern Teil einer sozialen Wirkungsarchitektur.",
+      "placement": "Direkt unter Hero",
+      "duration_estimate": "ca. 57 Sekunden",
+      "speaker_name": "Natalie Weber",
+      "version_date": "2026-06-05",
+      "priority": "P2",
+      "source_wav": "rente-soziale-sicherung.wav"
     }
   ]
 }
