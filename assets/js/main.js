@@ -4155,12 +4155,12 @@ const WoekUserSpace = (() => {
 
 const WirkungsraumLayer = (() => {
   const relevantPathPattern =
-    /\/(begriffe|glossar|referenz|buch|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
   const progressScopePattern =
     /\/(referenz|buch|dokumente|downloads|bibliothek|akademie|portale)\b|\/(buch|akademie|downloads)\.html$/;
   const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
   const noteScopePattern =
-    /\/(begriffe|glossar|referenz|buch|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
 
   function canonicalPath() {
     return window.location.pathname.replace(/\/index\.html$/, "/");
@@ -4177,7 +4177,7 @@ const WirkungsraumLayer = (() => {
     if (path.includes("/begriffe/") || path.includes("/glossar")) return "Begriff";
     if (path.includes("/referenz/") || path.includes("/buch")) return "Kapitel";
     if (path.includes("/dossiers/") || path.includes("/portale/")) return "Dossier";
-    if (path.includes("/downloads") || path.includes("/dokumente") || path.includes("/werkstatt/") || path.includes("/wissen/")) return "Dokument";
+    if (path.includes("/bibliothek/") || path.includes("/downloads") || path.includes("/dokumente") || path.includes("/werkstatt/") || path.includes("/wissen/")) return "Dokument";
     if (path.includes("/werkzeuge/") || path.includes("/tools/")) return "Werkzeug";
     if (path.includes("/akademie")) return "Akademie";
     if (path.includes("/wirkungsfelder/")) return "Wirkungsfeld";
@@ -4244,6 +4244,39 @@ const WirkungsraumLayer = (() => {
       tags: pageTags(),
       category: document.querySelector(".breadcrumb a:last-of-type, .hero-kicker")?.textContent?.trim() || pageType()
     };
+  }
+
+  function actionTarget() {
+    const actions = document.querySelector(".hero-actions");
+    if (actions) return { container: actions, panelAfter: actions };
+
+    let row = document.querySelector("[data-wirkungsraum-actions-row]");
+    if (row) return { container: row, panelAfter: row };
+
+    row = document.createElement("p");
+    row.className = "wirkungsraum-save-row";
+    row.dataset.wirkungsraumActionsRow = "true";
+
+    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
+    if (heroCopy) {
+      heroCopy.append(row);
+      return { container: row, panelAfter: row };
+    }
+
+    const hero = document.querySelector(".hero, .radar-hero, .page-hero, .document-detail-hero");
+    if (hero) {
+      hero.append(row);
+      return { container: row, panelAfter: row };
+    }
+
+    const main = document.querySelector("main");
+    if (main) {
+      const firstSection = main.querySelector(".section, .content-band, article");
+      main.insertBefore(row, firstSection || main.firstChild);
+      return { container: row, panelAfter: row };
+    }
+
+    return null;
   }
 
   function progressRecord(path = window.location.pathname) {
@@ -5047,18 +5080,7 @@ const WirkungsraumLayer = (() => {
       buttonLabel(button, true, currentItem());
     });
 
-    const actions = document.querySelector(".hero-actions");
-    if (actions) {
-      actions.append(button);
-      return;
-    }
-    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
-    if (heroCopy) {
-      const wrap = document.createElement("p");
-      wrap.className = "wirkungsraum-save-row";
-      wrap.append(button);
-      heroCopy.append(wrap);
-    }
+    actionTarget()?.container.append(button);
   }
 
   function renderCollectionPanel(panel, item) {
@@ -5154,28 +5176,10 @@ const WirkungsraumLayer = (() => {
       if (!panel.hidden) renderCollectionPanel(panel, currentItem());
     });
 
-    const actions = document.querySelector(".hero-actions");
-    if (actions) {
-      actions.append(button);
-      actions.insertAdjacentElement("afterend", panel);
-      return;
-    }
-
-    const existingRow = document.querySelector(".wirkungsraum-save-row");
-    if (existingRow) {
-      existingRow.append(button);
-      existingRow.insertAdjacentElement("afterend", panel);
-      return;
-    }
-
-    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
-    if (heroCopy) {
-      const wrap = document.createElement("p");
-      wrap.className = "wirkungsraum-save-row";
-      wrap.append(button);
-      heroCopy.append(wrap);
-      wrap.insertAdjacentElement("afterend", panel);
-    }
+    const target = actionTarget();
+    if (!target) return;
+    target.container.append(button);
+    target.panelAfter.insertAdjacentElement("afterend", panel);
   }
 
   function injectLearningButton() {
@@ -5199,25 +5203,7 @@ const WirkungsraumLayer = (() => {
       learningButtonLabel(button, true);
     });
 
-    const actions = document.querySelector(".hero-actions");
-    if (actions) {
-      actions.append(button);
-      return;
-    }
-
-    const existingRow = document.querySelector(".wirkungsraum-save-row");
-    if (existingRow) {
-      existingRow.append(button);
-      return;
-    }
-
-    const heroCopy = document.querySelector(".hero-copy, .radar-hero-copy, .section-header");
-    if (heroCopy) {
-      const wrap = document.createElement("p");
-      wrap.className = "wirkungsraum-save-row";
-      wrap.append(button);
-      heroCopy.append(wrap);
-    }
+    actionTarget()?.container.append(button);
   }
 
   function isNotePath(path = window.location.pathname) {
@@ -5230,16 +5216,23 @@ const WirkungsraumLayer = (() => {
 
     const item = currentItem();
     const existing = noteForItem(item);
-    const panel = document.createElement("section");
+    const hasExistingNote = Boolean(existing?.content?.trim());
+    const panel = document.createElement("details");
     panel.className = "wirkungsraum-note-panel";
     panel.dataset.wirkungsraumNotePanel = item.id;
+    panel.dataset.hasNote = String(hasExistingNote);
     panel.dataset.searchExclude = "true";
     panel.innerHTML = `
-      <div class="wirkungsraum-note-panel-header">
-        <p class="card-kicker">Persönliche Notiz</p>
-        <h2>Eigene Gedanken zu dieser Seite</h2>
-        <p class="wirkungsraum-note-hint">Diese Notiz wird nur in deinem Browser gespeichert.</p>
-      </div>
+      <summary class="wirkungsraum-note-summary">
+        <span class="wirkungsraum-note-summary-copy">
+          <span class="card-kicker">Persönliche Notiz</span>
+          <span class="wirkungsraum-note-title">Eigene Gedanken zu dieser Seite</span>
+          <span class="wirkungsraum-note-hint">Diese Notiz wird nur in deinem Browser gespeichert.</span>
+        </span>
+        <span class="wirkungsraum-note-state" data-wirkungsraum-note-state ${hasExistingNote ? "" : "hidden"}>
+          <span aria-hidden="true">✎</span> Notiz vorhanden
+        </span>
+      </summary>
       <form class="wirkungsraum-note-form" data-wirkungsraum-note-form>
         <label>
           <span class="sr-only">Notiztext</span>
@@ -5257,6 +5250,12 @@ const WirkungsraumLayer = (() => {
     const status = panel.querySelector("[data-wirkungsraum-note-status]");
     const deleteButton = panel.querySelector("[data-delete-note]");
     const submitButton = panel.querySelector("button[type='submit']");
+    const noteState = panel.querySelector("[data-wirkungsraum-note-state]");
+
+    const setNoteState = (hasNote) => {
+      panel.dataset.hasNote = String(hasNote);
+      if (noteState instanceof HTMLElement) noteState.hidden = !hasNote;
+    };
 
     panel.addEventListener("submit", (event) => {
       const form = event.target;
@@ -5272,6 +5271,7 @@ const WirkungsraumLayer = (() => {
       if (deleteButton instanceof HTMLButtonElement) deleteButton.disabled = false;
       if (submitButton instanceof HTMLButtonElement) submitButton.textContent = "Notiz aktualisieren";
       if (status) status.textContent = stored?.updated_at ? `Gespeichert: ${formatDateTime(stored.updated_at)}` : "Gespeichert.";
+      setNoteState(Boolean(stored?.content?.trim()));
     });
 
     deleteButton?.addEventListener("click", () => {
@@ -5282,6 +5282,7 @@ const WirkungsraumLayer = (() => {
       deleteButton.disabled = true;
       if (submitButton instanceof HTMLButtonElement) submitButton.textContent = "Notiz speichern";
       if (status) status.textContent = "Notiz gelöscht.";
+      setNoteState(false);
     });
 
     const isDebateCompassPage = /^\/wirkungsradar\/live\/[^/]+\/?/.test(path);

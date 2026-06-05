@@ -84,8 +84,6 @@
 }
 
 .wirkungsraum-note-panel {
-  display: grid;
-  gap: 1rem;
   width: min(var(--container), calc(100% - (2 * var(--space-gutter))));
   margin: 0 auto var(--space-5);
   padding: 1rem;
@@ -96,14 +94,63 @@
   box-shadow: 0 12px 34px rgba(11, 16, 32, 0.06);
 }
 
+.wirkungsraum-note-panel[open] {
+  display: grid;
+  gap: 1rem;
+}
+
+.wirkungsraum-note-panel:not([open]) .wirkungsraum-note-form {
+  display: none;
+}
+
+.wirkungsraum-note-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.wirkungsraum-note-summary::-webkit-details-marker {
+  display: none;
+}
+
+.wirkungsraum-note-summary::after {
+  content: "+";
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 1px solid rgba(23, 79, 56, 0.26);
+  border-radius: 999px;
+  color: var(--green);
+  font-weight: 900;
+}
+
+.wirkungsraum-note-panel[open] .wirkungsraum-note-summary::after {
+  content: "-";
+}
+
+.wirkungsraum-note-summary-copy {
+  display: grid;
+  gap: 0.25rem;
+}
+
 .wirkungsraum-note-panel-header {
   display: grid;
   gap: 0.25rem;
 }
 
-.wirkungsraum-note-panel h2 {
+.wirkungsraum-note-panel h2,
+.wirkungsraum-note-title {
   margin: 0;
   font-size: clamp(1.35rem, 2vw, 1.8rem);
+  color: var(--navy);
+  font-family: var(--font-serif);
+  font-weight: 900;
+  line-height: 1.05;
 }
 
 .wirkungsraum-note-hint,
@@ -117,6 +164,24 @@
 .wirkungsraum-note-form {
   display: grid;
   gap: 0.8rem;
+}
+
+.wirkungsraum-note-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  border: 1px solid rgba(23, 79, 56, 0.22);
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  background: rgba(46, 132, 99, 0.08);
+  color: var(--green);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.wirkungsraum-note-state[hidden] {
+  display: none;
 }
 
 .wirkungsraum-note-form textarea {
