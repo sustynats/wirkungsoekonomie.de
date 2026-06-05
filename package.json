@@ -36,6 +36,7 @@
     "check:detaildossiers": "node scripts/quality/build-detaildossier-sanierung-status.mjs && node scripts/quality/check-detaildossier-sanierung-status.mjs",
     "check:links": "python3 tools/build_search_index.py",
     "check:styleguide-p0": "node scripts/quality/check-online-styleguide-p0.mjs",
+    "audit:website-2-0": "node scripts/quality/build-website-2-0-inventory.mjs",
     "check:manifest": "node scripts/import/build-content-manifest.mjs && node scripts/quality/check-phase1.mjs",
     "check:ids": "node scripts/quality/check-phase1.mjs",
     "check:size": "node scripts/quality/check-size.mjs",

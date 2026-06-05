@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T13:42:47.849Z",
+  "generatedAt": "2026-06-05T20:48:29.671Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -1957,8 +1957,10 @@
     },
     "bioenergie": {
       "terms": [
-        "biogas",
-        "erneuerbare-energien"
+        "biomasse",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen"
       ],
       "documents": [],
       "methods": [],
@@ -1970,8 +1972,10 @@
     },
     "biogas": {
       "terms": [
-        "anaerobe-vergaerung",
-        "bioenergie"
+        "biomasse",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen"
       ],
       "documents": [],
       "methods": [],
@@ -2008,6 +2012,23 @@
         "materialgesundheit",
         "kompostierung",
         "verbrauchsgueter"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "biomasse": {
+      "terms": [
+        "bioenergie",
+        "biogas",
+        "energietraeger",
+        "energietraegerstrom",
+        "regenerative-energiequellen",
+        "kaskadennutzung"
       ],
       "documents": [],
       "methods": [],
@@ -2134,6 +2155,21 @@
         "Wenn Maschinen arbeiten",
         "Arbeitspapier Wirkungseinkommensteuer"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "brennstoffkette": {
+      "terms": [
+        "energietraeger",
+        "energietraegerstrom",
+        "umwandlungskette",
+        "fossiles-kraftwerk"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -4107,10 +4143,42 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "direkte-elektrifizierung": {
+      "terms": [
+        "energieflussstrom",
+        "direktstrom",
+        "umwandlungskette",
+        "exergie",
+        "energieeffizienz",
+        "wasserstoff"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "direktrecycling-batterie": {
       "terms": [
         "batterierecycling",
         "werterhalt"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "direktstrom": {
+      "terms": [
+        "energieflussstrom",
+        "direkte-elektrifizierung",
+        "energietraegerstrom",
+        "rueckverstromung"
       ],
       "documents": [],
       "methods": [],
@@ -4520,6 +4588,23 @@
         "csrd",
         "vsme",
         "xbrl"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "efuels": {
+      "terms": [
+        "wasserstoff",
+        "rueckverstromung",
+        "umwandlungskette",
+        "energietraeger",
+        "direkte-elektrifizierung",
+        "exergie"
       ],
       "documents": [],
       "methods": [],
@@ -4997,6 +5082,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "energiefluss": {
+      "terms": [
+        "energieflussstrom",
+        "energietraeger",
+        "regenerative-energiequellen"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "energieflussstrom": {
+      "terms": [
+        "direktstrom",
+        "energietraegerstrom",
+        "rueckverstromung",
+        "regenerative-energiequellen",
+        "direkte-elektrifizierung",
+        "umwandlungskette",
+        "exergie",
+        "energieeffizienz",
+        "energiewende"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "energiegemeinschaft": {
       "terms": [
         "energy-sharing",
@@ -5081,6 +5200,38 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "energietraeger": {
+      "terms": [
+        "energiefluss",
+        "energietraegerstrom",
+        "brennstoffkette",
+        "umwandlungskette"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "energietraegerstrom": {
+      "terms": [
+        "brennstoffkette",
+        "energieflussstrom",
+        "rueckverstromung",
+        "exergie",
+        "umwandlungskette",
+        "energietraeger"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "energieumwandlung": {
       "terms": [
         "wirkungsgrad",
@@ -5088,6 +5239,23 @@
         "photoelektrischer-effekt",
         "supraleitung",
         "primaerenergie"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "energiewende": {
+      "terms": [
+        "erneuerbare-energien",
+        "regenerative-energiequellen",
+        "energieflussstrom",
+        "direkte-elektrifizierung",
+        "strommix",
+        "energieeffizienz"
       ],
       "documents": [],
       "methods": [],
@@ -5490,15 +5658,19 @@
     },
     "erneuerbare-energien": {
       "terms": [
+        "regenerative-energiequellen",
+        "energieflussstrom",
+        "direktstrom",
+        "energietraegerstrom",
         "photovoltaik",
         "windenergie",
         "wasserkraft",
         "bioenergie",
+        "biogas",
         "geothermie",
         "solarthermie",
-        "abregelung",
         "gruenstrom",
-        "energiewirtschaft"
+        "energiewende"
       ],
       "documents": [],
       "methods": [],
@@ -5943,6 +6115,22 @@
         "wirkungsinnovation",
         "transformationswelle",
         "jochen-roepke"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "exergie": {
+      "terms": [
+        "umwandlungskette",
+        "energieflussstrom",
+        "energietraegerstrom",
+        "direkte-elektrifizierung",
+        "energieeffizienz"
       ],
       "documents": [],
       "methods": [],
@@ -8760,9 +8948,9 @@
     },
     "gruenstrom": {
       "terms": [
-        "herkunftsnachweis",
+        "strommix",
         "erneuerbare-energien",
-        "power-purchase-agreement"
+        "energieflussstrom"
       ],
       "documents": [],
       "methods": [],
@@ -16310,17 +16498,9 @@
     },
     "photovoltaik": {
       "terms": [
-        "photoelektrischer-effekt",
-        "strommarkt",
-        "quantenphysik",
-        "halbleiter",
-        "bandluecke",
-        "quantensolarzelle",
-        "perowskit-solarzelle",
-        "tandem-solarzelle",
-        "erneuerbare-energien",
-        "capture-price",
-        "prosumer"
+        "energieflussstrom",
+        "energiefluss",
+        "direkte-elektrifizierung"
       ],
       "documents": [],
       "methods": [],
@@ -18813,6 +18993,24 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "regenerative-energiequellen": {
+      "terms": [
+        "erneuerbare-energien",
+        "energiefluss",
+        "energieflussstrom",
+        "energietraeger",
+        "energietraegerstrom",
+        "bioenergie",
+        "biogas"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "regenerative-landwirtschaft": {
       "terms": [
         "biologischer-kreislauf",
@@ -19895,6 +20093,23 @@
         "reverse-logistics",
         "zirkulaeres-geschaeftsmodell",
         "erweiterte-herstellerverantwortung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "rueckverstromung": {
+      "terms": [
+        "wasserstoff",
+        "efuels",
+        "energietraegerstrom",
+        "umwandlungskette",
+        "exergie",
+        "energieflussstrom"
       ],
       "documents": [],
       "methods": [],
@@ -21977,6 +22192,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "strommix": {
+      "terms": [
+        "gruenstrom",
+        "erneuerbare-energien",
+        "energieflussstrom",
+        "energietraegerstrom",
+        "herkunftsnachweis",
+        "strommarkt"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "stromnetz": {
       "terms": [
         "uebertragungsnetz",
@@ -23526,6 +23758,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "umwandlungskette": {
+      "terms": [
+        "energieflussstrom",
+        "energietraegerstrom",
+        "rueckverstromung",
+        "exergie",
+        "direkte-elektrifizierung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "umweltgerechtigkeit": {
       "terms": [
         "hitzestress",
@@ -24827,7 +25075,8 @@
     },
     "wasserkraft": {
       "terms": [
-        "erneuerbare-energien"
+        "energieflussstrom",
+        "energiefluss"
       ],
       "documents": [],
       "methods": [],
@@ -24839,11 +25088,10 @@
     },
     "wasserstoff": {
       "terms": [
-        "gruener-wasserstoff",
-        "blauer-wasserstoff",
-        "grauer-wasserstoff",
-        "power-to-x",
-        "wasserstoffspeicher"
+        "rueckverstromung",
+        "umwandlungskette",
+        "energietraeger",
+        "direkte-elektrifizierung"
       ],
       "documents": [],
       "methods": [],
@@ -25180,11 +25428,9 @@
     },
     "windenergie": {
       "terms": [
-        "onshore-windenergie",
-        "offshore-windenergie",
-        "erneuerbare-energien",
-        "capture-price",
-        "repowering"
+        "energieflussstrom",
+        "energiefluss",
+        "direkte-elektrifizierung"
       ],
       "documents": [],
       "methods": [],

@@ -1,13 +1,13 @@
-# Debattenkarten Masterintegration
+# Debattenkarten Website 2.0 Integration
 
 Stand: 2026-06-05
 
 ## Ergebnis
 
-- Masterkarten im Dokument: 89
-- Bestehende Live-Routen überschrieben/aktualisiert: 89
-- Neue Live-Routen aus Masterquelle angelegt: 0
-- Quelle: `Wirkungsradar_Debattenkarten_Langfassung.docx`
+- Karten im Textmaster: 88
+- Bestehende Live-Routen überschrieben/aktualisiert: 88
+- Neue Live-Routen angelegt: 0
+- Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
 ## Cluster
 
@@ -16,7 +16,7 @@ Stand: 2026-06-05
 - Demokratie & Öffentlichkeit: 15
 - Digitalisierung & KI: 3
 - Gesundheit & Pflege: 3
-- Klima & Energie: 19
+- Klima & Energie: 18
 - Kultur, Familie & Geschlecht: 4
 - Landwirtschaft & Ernährung: 3
 - Migration: 9
@@ -28,8 +28,8 @@ Stand: 2026-06-05
 
 - Keine
 
-## Redaktionell offen
+## Hinweise
 
-- Prüfhinweise sind übernommen, aber nicht als harte Quellenbelege ausgegeben.
-- Konkrete Primärquellen müssen je Karte weiter verlinkt werden.
-- Karten aus der Masterquelle überschreiben kürzere oder floskelhaftere Online-Texte.
+- Öffentliche Seiten zeigen keine internen Arbeitslabels.
+- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.
+- Bestehende Routen bleiben erhalten und werden in den 2.0-Contract überführt.

@@ -4,9 +4,12 @@ import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
 const MASTER_JSON = path.join(ROOT, "content/wirkungsradar/debattenkarten-master.json");
+const MASTER_DOCX_V2 = "/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx";
+const MASTER_DOCX_LEGACY =
+  "/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsradar_Debattenkarten_Langfassung.docx";
 const MASTER_DOCX =
   process.env.WOEK_DEBATTENKARTEN_MASTER_DOCX ||
-  "/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsradar_Debattenkarten_Langfassung.docx";
+  (fs.existsSync(MASTER_DOCX_V2) ? MASTER_DOCX_V2 : MASTER_DOCX_LEGACY);
 const PUBLIC_BASE = "https://wirkungsoekonomie.de";
 const DATA_STAND = "2026-06-05";
 const CSS_VERSION = "20260605-master-debattenkarten";
@@ -97,12 +100,19 @@ const knownSlugByTitle = new Map(Object.entries({
   "Windräder zerstören die Natur?": "windraeder-zerstoeren-natur",
   "Wirkungsökonomie ist Planwirtschaft?": "wirkungsoekonomie-planwirtschaft",
   "Wirkungsökonomie ist Social Credit?": "wirkungsoekonomie-social-credit",
+  "Wärmepumpe ist unbezahlbar?": "waermepumpe-ist-unbezahlbar",
   "Wärmepumpe ist unbezahlbar? (redaktionelle Ergänzung)": "waermepumpe-ist-unbezahlbar",
+  "Solarstrom ist unzuverlässig?": "solarstrom-ist-unzuverlaessig",
   "Solarstrom ist unzuverlässig? (redaktionelle Ergänzung)": "solarstrom-ist-unzuverlaessig",
+  "Verbrennerverbot nimmt Freiheit?": "verbrennerverbot-nimmt-freiheit",
   "Verbrennerverbot nimmt Freiheit? (redaktionelle Ergänzung)": "verbrennerverbot-nimmt-freiheit",
+  "Tempolimit bringt nichts?": "tempolimit-bringt-nichts",
   "Tempolimit bringt nichts? (redaktionelle Ergänzung)": "tempolimit-bringt-nichts",
+  "Klimaschutz ist zu teuer?": "klimaschutz-ist-zu-teuer",
   "Klimaschutz ist zu teuer? (redaktionelle Ergänzung)": "klimaschutz-ist-zu-teuer",
+  "Bürokratieabbau statt Wirkung?": "buerokratieabbau-statt-wirkung",
   "Bürokratieabbau statt Wirkung? (redaktionelle Ergänzung)": "buerokratieabbau-statt-wirkung",
+  "Deutschland schafft sich ab?": "deutschland-schafft-sich-ab",
   "Deutschland schafft sich ab? (redaktionelle Ergänzung)": "deutschland-schafft-sich-ab",
 }));
 
@@ -120,6 +130,10 @@ const clusterLabels = {
   agri_food: "Landwirtschaft & Ernährung",
   woek: "Wirkungsökonomie",
 };
+
+const redirectAliasBySlug = new Map([
+  ["windraeder-zerstoeren-natur", "windraeder-voegel-wald-beton-rueckbau"],
+]);
 
 const p0RescueOverlays = {
   "migration-kostet-nur": {
@@ -426,6 +440,177 @@ function valueBetween(body, label, nextLabels) {
   return cleanText(body.slice(after, next ?? undefined));
 }
 
+function parseSourceLibraryV2(text) {
+  const block = valueBetween(text, "4. Quellenbibliothek", ["5. Kartenindex"]);
+  const sources = {};
+  for (const line of block.split("\n").map((item) => item.trim()).filter(Boolean)) {
+    const match = line.match(/^([IE]-[A-Z-]+)\s+—\s+([^:]+):\s+(.+)$/);
+    if (!match) continue;
+    const [, id, title, description] = match;
+    sources[id] = {
+      id,
+      title: cleanText(title),
+      description: cleanText(description),
+      type: id.startsWith("I-") ? "Interne Referenz" : "Externe Quelle",
+    };
+  }
+  return sources;
+}
+
+function parseRegisterV2(text) {
+  const block = valueBetween(text, "5. Kartenindex", ["Codex-Umsetzung"]);
+  const rows = [];
+  for (const line of block.split("\n").map((item) => item.trim()).filter(Boolean)) {
+    const match = line.match(/^(\d{2})\.\s+(.+?)\s+—\s+(.+)$/);
+    if (!match) continue;
+    rows.push({
+      number: Number(match[1]),
+      numberLabel: match[1],
+      title: cleanText(match[2]),
+      cluster: cleanText(match[3]),
+    });
+  }
+  return rows;
+}
+
+function sectionBetweenV2(body, heading, nextHeadings) {
+  return valueBetween(body, heading, nextHeadings);
+}
+
+function sourceIdsFromLine(block, label) {
+  return valueBetween(block, label, ["Interne Quellen:", "Externe Quellen:", "Glossar-Hover:", "9. Warum zieht das Narrativ?"])
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function parseQuestionsV2(block) {
+  return block
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.endsWith("?"));
+}
+
+function publicRelatedText(value) {
+  const text = cleanText(value)
+    .replace(/^Verknüpfen mit\s+/i, "Passend dazu: ")
+    .replace(/\s+sowie mindestens zwei Karten mit ähnlichem Frame oder Gegenframe\.?$/i, ".");
+  return text || "Passende Vertiefungen werden über Themenfeld, Glossar und verwandte Debattenkarten erschlossen.";
+}
+
+function parsePathStepsV2(block) {
+  return block
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => /^\d+\.\s+/.test(line))
+    .map((line) => line.replace(/^\d+\.\s+/, ""));
+}
+
+function parseCardsFromTextV2(rawText) {
+  const text = cleanText(rawText);
+  const register = parseRegisterV2(text);
+  if (register.length < 80) throw new Error(`Textmaster 2.0 unvollständig: ${register.length} Karten gefunden.`);
+  const sourceLibrary = parseSourceLibraryV2(text);
+  const bodyStart = text.indexOf("Codex-Umsetzung:");
+  const cardText = text.slice(bodyStart >= 0 ? bodyStart : 0);
+  const matches = register.map((row) => {
+    const needle = `${row.numberLabel}. ${row.title}`;
+    const index = cardText.indexOf(needle);
+    if (index < 0) throw new Error(`Karte aus Textmaster 2.0 nicht gefunden: ${needle}`);
+    return { ...row, index, headerLength: needle.length };
+  }).sort((a, b) => a.index - b.index);
+  const cards = [];
+  for (let index = 0; index < matches.length; index += 1) {
+    const match = matches[index];
+    const next = matches[index + 1];
+    const body = cleanText(cardText.slice(match.index + match.headerLength, next ? next.index : cardText.length));
+    const hero = sectionBetweenV2(body, "1. Hero", ["2. Was wird behauptet?"]);
+    const claim = sectionBetweenV2(body, "2. Was wird behauptet?", ["3. Sofortantwort"]);
+    const answers = sectionBetweenV2(body, "3. Sofortantwort", ["4. Folgencheck"]);
+    const consequences = sectionBetweenV2(body, "4. Folgencheck", ["5. Wirkpfad"]);
+    const impactPath = sectionBetweenV2(body, "5. Wirkpfad", ["6. Kritische Fragen"]);
+    const critical = sectionBetweenV2(body, "6. Kritische Fragen", ["7. Faktenlage"]);
+    const facts = sectionBetweenV2(body, "7. Faktenlage", ["8. Quellen"]);
+    const sourcesBlock = sectionBetweenV2(body, "8. Quellen", ["9. Warum zieht das Narrativ?"]);
+    const resonance = sectionBetweenV2(body, "9. Warum zieht das Narrativ?", ["10. Methodik"]);
+    const method = sectionBetweenV2(body, "10. Methodik", ["11. Verwandte Inhalte"]);
+    const related = sectionBetweenV2(body, "11. Verwandte Inhalte", ["12. Narrativ einreichen"]);
+    const title = valueBetween(hero, "Titel:", ["Untertitel:"]) || match.title;
+    const subtitle = valueBetween(hero, "Untertitel:", []) || "";
+    const rawFacts = valueBetween(facts, "Faktenkern / Prüfhinweis:", []) || facts;
+    const sourceIds = [
+      ...sourceIdsFromLine(sourcesBlock, "Interne Quellen:"),
+      ...sourceIdsFromLine(sourcesBlock, "Externe Quellen:"),
+    ];
+    const sourceCards = sourceIds.map((id) => sourceLibrary[id] || {
+      id,
+      title: id,
+      description: "Quellenreferenz aus dem redaktionellen Textmaster.",
+      type: id.startsWith("I-") ? "Interne Referenz" : "Externe Quelle",
+    });
+    const glossary = sourceIdsFromLine(sourcesBlock, "Glossar-Hover:");
+    const slug = knownSlugByTitle.get(title) || knownSlugByTitle.get(match.title) || slugify(title);
+    const redirectTarget = redirectAliasBySlug.get(slug);
+    const card = {
+      templateVersion: "2.0",
+      number: match.number,
+      title,
+      originalTitle: match.title,
+      slug,
+      redirectTarget,
+      cluster: match.cluster,
+      category: clusterLabels[match.cluster] || match.cluster,
+      editorialStatus: "Website 2.0",
+      shortJudgement: subtitle,
+      claim: {
+        statement: valueBetween(claim, "Behauptung:", ["Implizite Botschaft:"]),
+        implicitMessage: valueBetween(claim, "Implizite Botschaft:", ["Warum das wichtig ist:"]),
+        whyImportant: valueBetween(claim, "Warum das wichtig ist:", []),
+      },
+      answers: {
+        seconds10: valueBetween(answers, "10 Sekunden:", ["30 Sekunden:"]),
+        seconds30: valueBetween(answers, "30 Sekunden:", ["2 Minuten:"]),
+        seconds120: valueBetween(answers, "2 Minuten:", []),
+      },
+      consequences: {
+        resonanceRoom: valueBetween(consequences, "Ausgelöster Resonanzraum:", ["Wirkungsrisiko erster Ordnung:"]),
+        order1: valueBetween(consequences, "Wirkungsrisiko erster Ordnung:", ["Wirkungsrisiko zweiter Ordnung:"]),
+        order2: valueBetween(consequences, "Wirkungsrisiko zweiter Ordnung:", ["Wirkungsrisiko dritter Ordnung:"]),
+        order3: valueBetween(consequences, "Wirkungsrisiko dritter Ordnung:", ["Wirkungsökonomische Korrektur:"]),
+        correction: valueBetween(consequences, "Wirkungsökonomische Korrektur:", []),
+      },
+      impactPathSteps: parsePathStepsV2(impactPath),
+      criticalQuestions: parseQuestionsV2(critical),
+      facts: rawFacts,
+      sourceCards,
+      glossary,
+      whyItWorks: valueBetween(resonance, "Resonanzprofil:", []) || resonance,
+      methodology: valueBetween(method, "Methode:", []) || method,
+      relatedContent: publicRelatedText(related),
+      masterSource: {
+        document: path.basename(MASTER_DOCX),
+        stand: DATA_STAND,
+      },
+      trueCore: rawFacts,
+      falseJump: valueBetween(claim, "Implizite Botschaft:", ["Warum das wichtig ist:"]),
+      betterQuestion: subtitle,
+      systemLever: valueBetween(consequences, "Wirkungsökonomische Korrektur:", []),
+      effectPath: {
+        order1: valueBetween(consequences, "Wirkungsrisiko erster Ordnung:", ["Wirkungsrisiko zweiter Ordnung:"]),
+        order2: valueBetween(consequences, "Wirkungsrisiko zweiter Ordnung:", ["Wirkungsrisiko dritter Ordnung:"]),
+        order3: valueBetween(consequences, "Wirkungsrisiko dritter Ordnung:", ["Wirkungsökonomische Korrektur:"]),
+        mpd: "",
+      },
+      objections: [],
+      moderation: {},
+      sourceHints: sourceIds.join(", "),
+    };
+    applyEditorialOverlays(card);
+    cards.push(card);
+  }
+  return { version: "2.0", stand: DATA_STAND, source: path.basename(MASTER_DOCX), sourceLibrary, cards };
+}
+
 function parseObjections(value) {
   const text = cleanText(value);
   if (!text) return [];
@@ -452,6 +637,9 @@ function parseModeration(value) {
 
 function parseCardsFromText(rawText) {
   const text = cleanText(rawText);
+  if (text.includes("WirkungsökonomieDebatten-Kompass 2.0") || text.includes("Finaler Textmaster")) {
+    return parseCardsFromTextV2(rawText);
+  }
   const register = parseRegister(text);
   if (register.length < 80) throw new Error(`Kartenregister unvollständig: ${register.length} Einträge gefunden.`);
   const start = text.search(/\n1\. Migration kostet nur\?/);
@@ -541,6 +729,31 @@ function parseCardsFromText(rawText) {
 function applyEditorialOverlays(card) {
   const overlay = p0RescueOverlays[card.slug];
   if (!overlay) return;
+  if (card.templateVersion === "2.0") {
+    card.answers = { ...card.answers, ...overlay.answers };
+    if (overlay.systemLever) {
+      card.systemLever = overlay.systemLever;
+      card.consequences.correction = overlay.systemLever;
+    }
+    if (overlay.trueCoreAppend || overlay.falseJumpAppend || overlay.mpd) {
+      card.facts = cleanText([card.facts, overlay.trueCoreAppend, overlay.falseJumpAppend, overlay.mpd].filter(Boolean).join("\n\n"));
+      card.trueCore = card.facts;
+    }
+    if (overlay.sources?.length) {
+      card.sourceCards = [
+        ...card.sourceCards,
+        ...overlay.sources.map(([title, url, description, type], index) => ({
+          id: `P0-${card.slug}-${index + 1}`,
+          title,
+          url,
+          description,
+          type,
+        })),
+      ];
+    }
+    card.p0Rescue = overlay;
+    return;
+  }
   card.answers = { ...card.answers, ...overlay.answers };
   if (overlay.systemLever) card.systemLever = overlay.systemLever;
   if (overlay.trueCoreAppend) card.trueCore = `${card.trueCore}${overlay.trueCoreAppend}`;
@@ -597,13 +810,42 @@ function shell({ title, description, canonical, base, main, searchType = "Debatt
         <div>
           <p class="hero-kicker">Debatten-Kompass</p>
           <h2>Werkzeug statt Kartenfriedhof.</h2>
-          <p>Diese Debattenkarte folgt der redaktionellen Masterquelle vom ${DATA_STAND}: wahrer Kern, falscher Sprung, Wirkpfad, Antwort und Prüfhinweise.</p>
+          <p>Diese Debattenkarte folgt dem Website-2.0-Contract: Behauptung verstehen, Sofortantwort finden, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p>
           <p><a class="text-link" href="${base}wirkungsradar/methode/">Methode</a> · <a class="text-link" href="${base}wirkungsradar/debattenkarten/">Alle Debattenkarten</a> · <a class="text-link" href="${base}mitmachen.html">Kontakt und Mitmachen</a></p>
         </div>
         <a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a>
       </div>
     </footer>
     <script src="${base}assets/js/main.js?v=${CSS_VERSION}"></script>
+  </body>
+</html>`;
+}
+
+function redirectShell({ title, description, canonical, target, base }) {
+  return `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${esc(title)} | Weiterleitung</title>
+    <meta name="description" content="${esc(description)}">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="${esc(canonical)}">
+    <meta http-equiv="refresh" content="0; url=${esc(target)}">
+    <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+  </head>
+  <body>
+    <main class="section" data-search-exclude>
+      <div>
+        <article class="card">
+          <p class="card-kicker">Weiterleitung</p>
+          <h1>${esc(title)}</h1>
+          <p>Diese Aussage wird kanonisch auf einer zentralen Debattenkarte geführt.</p>
+          <p><a class="btn btn-primary" href="${esc(target)}">Kanonische Karte öffnen</a></p>
+        </article>
+      </div>
+    </main>
   </body>
 </html>`;
 }
@@ -625,14 +867,13 @@ function renderToc() {
   const links = [
     ["#behauptung", "Behauptung"],
     ["#sofortantwort", "Sofortantwort"],
-    ["#faktenkern", "Faktenkern"],
-    ["#frameanalyse", "Frameanalyse"],
     ["#folgencheck", "Folgencheck"],
     ["#wirkpfad", "Wirkpfad"],
     ["#kritische-fragen", "Kritische Fragen"],
-    ["#loesung", "Besserer Frame"],
     ["#faktenlage", "Faktenlage"],
     ["#quellen", "Quellen"],
+    ["#warum-zieht-das", "Warum zieht das?"],
+    ["#methodik", "Methodik"],
   ];
   return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Seitenbereiche">${links.map(([href, label]) => `<a href="${href}">${label}</a>`).join("")}</nav></article></div></section>`;
 }
@@ -647,9 +888,14 @@ function answerAccordion(card) {
 }
 
 function rescueFactsAndSources(card) {
+  if (card.templateVersion === "2.0") {
+    const sources = (card.sourceCards || []).map((source) => `<article class="card"><p class="card-kicker">${esc(source.type)} · ${esc(source.id)}</p><h3 class="card-title">${esc(source.title)}</h3><p class="card-text"><strong>Was belegt sie?</strong> ${esc(source.description)}</p>${source.url ? `<p><a class="text-link" href="${esc(source.url)}">Quelle öffnen</a></p>` : ""}</article>`).join("");
+    const glossary = (card.glossary || []).length ? `<p class="card-text"><strong>Glossar:</strong> ${esc(card.glossary.join(", "))}</p>` : "";
+    return `<section class="section" id="faktenlage"><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Welche Fakten sind wichtig?</h2></div><article class="card">${paragraphize(card.facts)}${glossary}</article></div></section><section class="section section-soft" id="quellen"><div><div class="section-header"><p class="hero-kicker">Quellen &amp; Vertiefung</p><h2>Welche Quelle belegt welchen Fakt?</h2></div><div class="debate-source-stack">${sources}</div></div></section>`;
+  }
   const rescue = card.p0Rescue;
   if (!rescue) {
-    return `<section class="section section-soft" id="faktenlage"><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Was redaktionell geprüft werden muss.</h2></div><article class="card"><p>Die Masterquelle nennt Prüfhinweise. Daraus werden keine erfundenen Quellenbelege gemacht; konkrete Links und Primärquellen bleiben redaktionell zu prüfen.</p><div id="quellen">${card.sourceHints ? list(card.sourceHints.split(/,\s*/)) : "<p>Quellenprüfung offen.</p>"}</div></article></div></section>`;
+    return `<section class="section section-soft" id="faktenlage"><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Welche Fakten sind wichtig?</h2></div><article class="card"><p>Diese Karte nennt die verfügbare Quellenbasis und trennt Einordnung von Belegen. Eine Aussage gilt erst als geprüft, wenn die Belegfunktion klar benannt ist.</p><div id="quellen">${card.sourceHints ? list(card.sourceHints.split(/,\s*/)) : ""}</div></article></div></section>`;
   }
   const facts = (rescue.facts || []).map((fact) => `<article class="card v3-fact-card"><p class="v2-badge">Fakt · geprüft</p><h3 class="card-title">${esc(fact.title)}</h3><p class="card-text">${esc(fact.text)}</p><p class="card-text"><strong>Beweist:</strong> ${esc(fact.proves)}</p><p class="card-text"><strong>Beweist nicht:</strong> ${esc(fact.notProves)}</p><p class="card-text"><strong>Quellen:</strong> ${esc(fact.sources)}</p></article>`).join("");
   const boundaries = (rescue.boundaries || []).map(([title, text, why]) => `<article class="card"><p class="card-kicker">Bilanzgrenze</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(text)}</p><p class="card-text"><strong>Warum wichtig:</strong> ${esc(why)}</p></article>`).join("");
@@ -658,7 +904,72 @@ function rescueFactsAndSources(card) {
   return `<section class="section section-soft v3-layer v3-layer-facts" id="faktenlage" data-v3-facts-layer><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Was ist konkret prüfbar?</h2><p>Jeder Fakt sagt ausdrücklich, was er belegt - und was daraus nicht folgt.</p></div><div class="card-grid three">${facts}</div><div class="card-grid three">${boundaries}</div><div class="card-grid three">${misuse}</div><article class="card"><p class="card-kicker">Einordnung</p><h3 class="card-title">Belege, Grenzen und Datenstand.</h3><p class="card-text"><strong>Sicher:</strong> ${esc(rescue.secure)}</p><p class="card-text"><strong>Unsicher:</strong> ${esc(rescue.uncertain)}</p></article><div id="quellen" class="section-header"><p class="hero-kicker">Quellen &amp; Vertiefung</p><h2>Welche Quelle belegt welchen Fakt?</h2></div><div class="card-grid two">${sources}</div></div></section>`;
 }
 
+function renderCardPageV2(card, mode = "live") {
+  const base = mode === "live" ? "../../../" : "../../../";
+  const canonicalPath = `/wirkungsradar/${mode}/${card.slug}/`;
+  const pathSteps = (card.impactPathSteps || []).map((step) => `<li>${esc(step)}</li>`).join("");
+  const questions = (card.criticalQuestions || []).map((question) => `<li>${esc(question)}</li>`).join("");
+  const guardLine = /migration|sozial|arbeit/i.test(`${card.category} ${card.title}`)
+    ? `<p class="radar-status-line"><span>Menschen sind keine Kostenstelle.</span><span>Geprüft wird der Frame, nicht Personen.</span></p>`
+    : "";
+  const main = `
+    <section class="hero radar-page-hero theme-hero">
+      <div class="radar-hero-copy">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a> / ${esc(card.category)}</nav>
+        <p class="hero-kicker">Debattenkarte · ${esc(card.category)}</p>
+        <h1 class="hero-title">${esc(card.title)}</h1>
+        <p class="hero-subtitle">${esc(card.shortJudgement)}</p>
+        <p class="radar-status-line"><span>Website 2.0</span><span>Datenstand: ${DATA_STAND}</span></p>
+        ${guardLine}
+      </div>
+    </section>
+    ${radarNav(base)}
+    ${renderToc()}
+    <span id="host-cockpit" class="sr-only">Debattenhilfe</span>
+    <section class="section debate-claim-section" id="behauptung">
+      <div>
+        <article class="v2-cockpit-shell">
+          <div class="v2-cockpit-head">
+            <p class="hero-kicker">Was wird behauptet?</p>
+            <h2>${esc(card.title)}</h2>
+          </div>
+          <article class="card"><p class="card-kicker">Behauptung</p>${paragraphize(card.claim.statement)}</article>
+          <article class="card"><p class="card-kicker">Implizite Botschaft</p>${paragraphize(card.claim.implicitMessage)}</article>
+          <article class="card"><p class="card-kicker">Warum das wichtig ist</p>${paragraphize(card.claim.whyImportant)}</article>
+        </article>
+      </div>
+    </section>
+    ${answerAccordion(card)}
+    <span id="relevanz" class="sr-only">Warum relevant?</span>
+    <section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check>
+      <div>
+        <div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was dieses Narrativ bewirken kann.</h2><p>Der Folgencheck beschreibt Wirkungspotenzial und Wirkungsrisiken, nicht automatisch eingetretene Schäden.</p></div>
+        <article class="card"><p class="card-kicker">Ausgelöster Resonanzraum</p>${paragraphize(card.consequences.resonanceRoom)}</article>
+        <article class="card"><p class="card-kicker">Wirkungsrisiko erster Ordnung</p>${paragraphize(card.consequences.order1)}</article>
+        <article class="card"><p class="card-kicker">Wirkungsrisiko zweiter Ordnung</p>${paragraphize(card.consequences.order2)}</article>
+        <article class="card"><p class="card-kicker">Wirkungsrisiko dritter Ordnung</p>${paragraphize(card.consequences.order3)}</article>
+        <article class="card"><p class="card-kicker">Wirkungsökonomische Korrektur</p>${paragraphize(card.consequences.correction)}</article>
+      </div>
+    </section>
+    <section class="section" id="wirkpfad"><span id="loesungspfad" class="sr-only">Lösungspfad</span><span id="host-antworten" class="sr-only">Antwortblock</span><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>Wie aus dem Satz Wirkung entstehen kann.</h2></div><article class="card"><ol class="content-list">${pathSteps}</ol></article></div></section>
+    <section class="section section-soft" id="kritische-fragen"><div><div class="section-header"><p class="hero-kicker">Kritische Fragen</p><h2>Was berechtigt gefragt werden darf.</h2></div><article class="card"><ul class="content-list">${questions}</ul></article></div></section>
+    ${rescueFactsAndSources(card)}
+    <section class="section" id="warum-zieht-das"><div><details class="source-panel"><summary>Warum zieht dieses Narrativ?</summary>${paragraphize(card.whyItWorks)}</details></div></section>
+    <section class="section" id="methodik"><div><details class="source-panel"><summary>Methodik</summary>${paragraphize(card.methodology)}</details></div></section>
+    <section class="section section-soft" id="verwandte-inhalte"><div><article class="card"><p class="card-kicker">Verwandte Inhalte</p>${paragraphize(card.relatedContent)}</article></div></section>
+    <section class="section" id="narrativ-einreichen" data-community-submission-block><div><article class="card"><p class="card-kicker">Fehlt ein Narrativ?</p><h2>Hast du eine Aussage gesehen, die geprüft werden sollte?</h2><p>Reiche sie über die Akademie-App ein. Dort kann die Redaktion Faktenkern, Frame, Folgencheck, Wirkpfad und Quellenstatus prüfen.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></article></div></section>
+  `;
+  return shell({
+    title: card.title,
+    description: card.shortJudgement || card.claim.whyImportant,
+    canonical: `${PUBLIC_BASE}${canonicalPath}`,
+    base,
+    main,
+  });
+}
+
 function renderCardPage(card, mode = "live") {
+  if (card.templateVersion === "2.0") return renderCardPageV2(card, mode);
   const base = mode === "live" ? "../../../" : "../../../";
   const canonicalPath = `/wirkungsradar/${mode}/${card.slug}/`;
   const main = `
@@ -668,7 +979,7 @@ function renderCardPage(card, mode = "live") {
         <p class="hero-kicker">Debattenkarte · ${esc(card.category)}</p>
         <h1 class="hero-title">${esc(card.title)}</h1>
         <p class="hero-subtitle">${esc(card.shortJudgement)}</p>
-        <p class="radar-status-line"><span>${esc(card.editorialStatus)}</span><span>Masterquelle: ${esc(card.masterSource.document)}</span><span>Datenstand: ${DATA_STAND}</span></p>
+        <p class="radar-status-line"><span>${esc(card.editorialStatus)}</span><span>Datenstand: ${DATA_STAND}</span></p>
       </div>
     </section>
     ${radarNav(base)}
@@ -699,10 +1010,10 @@ function renderIndex(cards, mode = "live") {
   const base = mode === "live" ? "../../" : "../../";
   const clusters = [...new Set(cards.map((card) => card.category))].sort((a, b) => a.localeCompare(b, "de"));
   const cardHtml = cards.map((card) => `<article class="card radar-sprint-card" data-radar-card data-topic="${attr(card.category)}" data-search="${attr([card.title, card.shortJudgement, card.trueCore, card.falseJump, card.betterQuestion, card.systemLever, card.category].join(" "))}"><div class="radar-card-badges"><span>${esc(card.category)}</span><span>${esc(card.editorialStatus)}</span></div><h3 class="card-title">${esc(card.title)}</h3><p class="radar-card-judgement">${esc(card.shortJudgement)}</p><p class="card-text"><strong>10 Sekunden:</strong> ${esc(card.answers.seconds10)}</p><div class="radar-card-actions"><a class="btn btn-primary" href="${mode === "live" ? "" : "../live/"}${card.slug}/">Antwort öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(card.answers.seconds10)}'>Kurzantwort kopieren</button></div></article>`).join("");
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / Debatten-Kompass</nav><p class="hero-kicker">Debatten-Kompass</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten aus der redaktionellen Masterquelle vom ${DATA_STAND}. Übersicht kompakt, Langfassung auf der Detailseite.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Masterquelle statt Kurzfloskeln.</h2><p>Jede Karte enthält Faktenkern, falschen Sprung, Wirkpfad, Antwortstufen, Einwände und Prüfhinweise.</p></div><div class="card-grid three" data-live-grid>${cardHtml}</div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / Debatten-Kompass</nav><p class="hero-kicker">Debatten-Kompass</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten im Website-2.0-Format: Behauptung verstehen, Sofortantwort finden, Folgencheck und Wirkpfad vertiefen.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Behauptung verstehen. Antwort finden.</h2><p>Jede Karte folgt derselben Reihenfolge: Behauptung, Sofortantwort, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p></div><div class="card-grid three" data-live-grid>${cardHtml}</div></div></section>`;
   return shell({
     title: "Debattenkarten",
-    description: `${cards.length} Debattenkarten aus der redaktionellen Masterquelle.`,
+    description: `${cards.length} Debattenkarten im Website-2.0-Format.`,
     canonical: `${PUBLIC_BASE}/wirkungsradar/${mode}/`,
     base,
     main,
@@ -717,7 +1028,7 @@ function renderReport(cards, routeStateBeforeWrite) {
     acc[card.category] = (acc[card.category] || 0) + 1;
     return acc;
   }, {})).sort((a, b) => a[0].localeCompare(b[0], "de"));
-  return `# Debattenkarten Masterintegration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Masterkarten im Dokument: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen aus Masterquelle angelegt: ${newCards.length}\n- Quelle: \`Wirkungsradar_Debattenkarten_Langfassung.docx\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ — ${card.title}`).join("\n") || "- Keine"}\n\n## Redaktionell offen\n\n- Prüfhinweise sind übernommen, aber nicht als harte Quellenbelege ausgegeben.\n- Konkrete Primärquellen müssen je Karte weiter verlinkt werden.\n- Karten aus der Masterquelle überschreiben kürzere oder floskelhaftere Online-Texte.\n`;
+  return `# Debattenkarten Website 2.0 Integration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Karten im Textmaster: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen angelegt: ${newCards.length}\n- Interne Quelle: \`${path.basename(MASTER_DOCX)}\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ — ${card.title}`).join("\n") || "- Keine"}\n\n## Hinweise\n\n- Öffentliche Seiten zeigen keine internen Arbeitslabels.\n- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.\n- Bestehende Routen bleiben erhalten und werden in den 2.0-Contract überführt.\n`;
 }
 
 function isTracked(filePath) {
@@ -747,6 +1058,9 @@ function normalizeLegacyPublicLabels() {
       .replace(/Wirkungsradar-Live/g, "Debatten-Kompass")
       .replace(/Live-Karten/g, "Antwortkarten")
       .replace(/v3 Antwortformat/g, "Antwortformat")
+      .replace(/aus Masterquelle integriert(?: · P0 gerettet)?/g, "Website 2.0")
+      .replace(/redaktionelle Ergänzung aus Masterquelle/g, "Website 2.0")
+      .replace(/Masterquelle: [^<]+/g, `Datenstand: ${DATA_STAND}`)
       .replace(/Gute Rückfrage/g, "Kritische Frage")
       .replace(/Gute Rueckfrage/g, "Kritische Frage");
     if (after !== before) {
@@ -768,14 +1082,34 @@ const routeStateBeforeWrite = new Map(master.cards.map((card) => [
 ]));
 
 for (const card of master.cards) {
+  if (card.redirectTarget) {
+    const liveTarget = `../${card.redirectTarget}/`;
+    const detailTarget = `../${card.redirectTarget}/`;
+    write(`wirkungsradar/live/${card.slug}/index.html`, redirectShell({
+      title: card.title,
+      description: `Weiterleitung zur kanonischen Debattenkarte ${card.redirectTarget}.`,
+      canonical: `${PUBLIC_BASE}/wirkungsradar/live/${card.redirectTarget}/`,
+      target: liveTarget,
+      base: "../../../",
+    }));
+    write(`wirkungsradar/detail/${card.slug}/index.html`, redirectShell({
+      title: card.title,
+      description: `Weiterleitung zur kanonischen Debattenkarte ${card.redirectTarget}.`,
+      canonical: `${PUBLIC_BASE}/wirkungsradar/detail/${card.redirectTarget}/`,
+      target: detailTarget,
+      base: "../../../",
+    }));
+    continue;
+  }
   write(`wirkungsradar/live/${card.slug}/index.html`, renderCardPage(card, "live"));
   write(`wirkungsradar/detail/${card.slug}/index.html`, renderCardPage(card, "detail"));
 }
 
-write("wirkungsradar/live/index.html", renderIndex(master.cards, "live"));
-write("wirkungsradar/debattenkarten/index.html", renderIndex(master.cards, "debattenkarten"));
-write("reports/debattenkarten-masterintegration.md", renderReport(master.cards, routeStateBeforeWrite));
+const canonicalCards = master.cards.filter((card) => !card.redirectTarget);
+write("wirkungsradar/live/index.html", renderIndex(canonicalCards, "live"));
+write("wirkungsradar/debattenkarten/index.html", renderIndex(canonicalCards, "debattenkarten"));
+write("reports/debattenkarten-masterintegration.md", renderReport(canonicalCards, routeStateBeforeWrite));
 
 const normalizedLegacyFiles = normalizeLegacyPublicLabels();
 
-console.log(`Debattenkarten-Masterintegration OK: ${master.cards.length} Karten gerendert, ${normalizedLegacyFiles} Radar-Dateien normalisiert.`);
+console.log(`Debattenkarten-Masterintegration OK: ${canonicalCards.length} kanonische Karten gerendert, ${master.cards.length - canonicalCards.length} Alias-Weiterleitungen, ${normalizedLegacyFiles} Radar-Dateien normalisiert.`);

@@ -1,16 +1,16 @@
 {
   "version": "20260605-debate-compass-tool-order",
-  "generatedAt": "2026-06-05T13:43:28.406Z",
+  "generatedAt": "2026-06-05T20:49:04.530Z",
   "rule": "Eine Aussage = eine kanonische Seite. Debattenseiten folgen dem DebateCompassPageTemplate.",
   "counts": {
     "totalRadarPages": 476,
     "debatePages": 90,
-    "A": 31,
-    "B": 59,
+    "A": 20,
+    "B": 70,
     "C": 0,
     "D": 0,
     "canonicalNarratives": 91,
-    "duplicates": 270,
+    "duplicates": 287,
     "merged": 110,
     "synonyms": 36,
     "redirects": 110
@@ -4077,10 +4077,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/co2-ist-nur-ein-spurengas/",
@@ -4234,10 +4234,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/die-bauern-werden-geopfert/",
@@ -4339,10 +4339,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/",
@@ -4874,10 +4874,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/kriminalitaet-und-migration/",
@@ -4958,10 +4958,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
@@ -5336,10 +5336,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/rente-unbezahlbar/",
@@ -5446,10 +5446,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
@@ -5467,10 +5467,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/sozialschmarotzer-frame/",
@@ -5530,10 +5530,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
@@ -5577,10 +5577,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
@@ -5619,10 +5619,10 @@
       "anchors": false,
       "community": true,
       "hasExternalSources": true,
-      "hasFallbackSources": false,
+      "hasFallbackSources": true,
       "hasMpd": true,
       "hasThreeOrders": true,
-      "quality": "A"
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/",
@@ -5872,6 +5872,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/",
       "quality": "B",
       "missingSources": true,
@@ -5899,6 +5908,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/die-bauern-werden-geopfert/",
       "quality": "B",
       "missingSources": true,
@@ -5909,6 +5927,15 @@
     },
     {
       "url": "/wirkungsradar/live/die-boesen-reichen/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/diktatur-der-altparteien/",
       "quality": "B",
       "missingSources": true,
       "missingOrders": false,
@@ -6088,6 +6115,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/kriminalitaet-und-migration/",
       "quality": "B",
       "missingSources": true,
@@ -6107,6 +6143,15 @@
     },
     {
       "url": "/wirkungsradar/live/laden-dauert-viel-zu-lange/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
       "quality": "B",
       "missingSources": true,
       "missingOrders": false,
@@ -6223,6 +6268,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/remigration-remigrationslotsen/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/rente-unbezahlbar/",
       "quality": "B",
       "missingSources": true,
@@ -6250,6 +6304,24 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/sind-die-reichen-schuld/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/sozialschmarotzer-frame/",
       "quality": "B",
       "missingSources": true,
@@ -6268,6 +6340,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/tempolimit-bringt-nichts/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
       "quality": "B",
       "missingSources": true,
@@ -6277,7 +6358,25 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
       "quality": "B",
       "missingSources": true,
       "missingOrders": false,
