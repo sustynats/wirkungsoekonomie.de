@@ -1,19 +1,19 @@
 {
   "version": "20260605-debate-compass-tool-order",
-  "generatedAt": "2026-06-05T12:00:40.259Z",
+  "generatedAt": "2026-06-05T13:13:15.061Z",
   "rule": "Eine Aussage = eine kanonische Seite. Debattenseiten folgen dem DebateCompassPageTemplate.",
   "counts": {
-    "totalRadarPages": 454,
-    "debatePages": 79,
+    "totalRadarPages": 476,
+    "debatePages": 90,
     "A": 20,
-    "B": 59,
+    "B": 70,
     "C": 0,
     "D": 0,
-    "canonicalNarratives": 80,
-    "duplicates": 232,
-    "merged": 99,
+    "canonicalNarratives": 91,
+    "duplicates": 270,
+    "merged": 110,
     "synonyms": 36,
-    "redirects": 99
+    "redirects": 110
   },
   "normalizedGeneralPages": 276,
   "inventory": [
@@ -114,6 +114,14 @@
       "canonicalTarget": "/wirkungsradar/live/buergergeld-macht-faul/"
     },
     {
+      "url": "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "buerokratieabbau-statt-wirkung",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/"
+    },
+    {
       "url": "/wirkungsradar/detail/co2-ist-nur-ein-spurengas/",
       "title": "Diese Aussage wurde zusammengeführt",
       "slug": "co2-ist-nur-ein-spurengas",
@@ -162,6 +170,14 @@
       "canonicalTarget": "/wirkungsradar/live/deutschland-nur-zwei-prozent/"
     },
     {
+      "url": "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "deutschland-schafft-sich-ab",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/deutschland-schafft-sich-ab/"
+    },
+    {
       "url": "/wirkungsradar/detail/die-bauern-werden-geopfert/",
       "title": "Diese Aussage wurde zusammengeführt",
       "slug": "die-bauern-werden-geopfert",
@@ -192,6 +208,14 @@
       "tags": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/die-wissenschaft-ist-gekauft/"
+    },
+    {
+      "url": "/wirkungsradar/detail/diktatur-der-altparteien/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "diktatur-der-altparteien",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/detail/e-autos-schlimmer-als-verbrenner/",
@@ -418,6 +442,14 @@
       "canonicalTarget": "/wirkungsradar/live/klimaschutz-ist-oekodiktatur/"
     },
     {
+      "url": "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "klimaschutz-ist-zu-teuer",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/"
+    },
+    {
       "url": "/wirkungsradar/detail/kriminalitaet-und-migration/",
       "title": "Diese Aussage wurde zusammengeführt",
       "slug": "kriminalitaet-und-migration",
@@ -440,6 +472,14 @@
       "tags": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/laden-dauert-viel-zu-lange/"
+    },
+    {
+      "url": "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "leistungstraeger-ausgepresst",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
     {
       "url": "/wirkungsradar/detail/leistungstraeger-werden-ausgepresst/",
@@ -602,6 +642,14 @@
       "canonicalTarget": "/wirkungsradar/live/remigration/"
     },
     {
+      "url": "/wirkungsradar/detail/remigration-remigrationslotsen/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "remigration-remigrationslotsen",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
+    },
+    {
       "url": "/wirkungsradar/detail/rente-unbezahlbar/",
       "title": "Diese Aussage wurde zusammengeführt",
       "slug": "rente-unbezahlbar",
@@ -642,6 +690,22 @@
       "canonicalTarget": "/wirkungsradar/live/sdgs-sind-weltregierung/"
     },
     {
+      "url": "/wirkungsradar/detail/sind-die-reichen-schuld/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "sind-die-reichen-schuld",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
+    },
+    {
+      "url": "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "solarstrom-ist-unzuverlaessig",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
+    },
+    {
       "url": "/wirkungsradar/detail/sozialschmarotzer-frame/",
       "title": "Diese Aussage wurde zusammengeführt",
       "slug": "sozialschmarotzer-frame",
@@ -666,12 +730,28 @@
       "canonicalTarget": "/wirkungsradar/live/steuerverschwendung-buerokratie/"
     },
     {
+      "url": "/wirkungsradar/detail/tempolimit-bringt-nichts/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "tempolimit-bringt-nichts",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/tempolimit-bringt-nichts/"
+    },
+    {
       "url": "/wirkungsradar/detail/ukraine-unterstuetzung-steuergeld/",
       "title": "Diese Aussage wurde zusammengeführt",
       "slug": "ukraine-unterstuetzung-steuergeld",
       "tags": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/"
+    },
+    {
+      "url": "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "verbrennerverbot-nimmt-freiheit",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
     },
     {
       "url": "/wirkungsradar/detail/verfassungsschutz-oder-regierungsschutz/",
@@ -688,6 +768,14 @@
       "tags": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/"
+    },
+    {
+      "url": "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "waermepumpe-ist-unbezahlbar",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
     },
     {
       "url": "/wirkungsradar/detail/waffenlieferungen-verlaengern-den-krieg/",
@@ -1207,6 +1295,14 @@
       "canonicalTarget": "/wirkungsradar/live/buergergeld-macht-faul/"
     },
     {
+      "url": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+      "title": "Bürokratieabbau statt Wirkung?",
+      "slug": "buerokratieabbau-statt-wirkung",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/"
+    },
+    {
       "url": "/wirkungsradar/live/co2-ist-nur-ein-spurengas/",
       "title": "CO2 ist nur ein Spurengas?",
       "slug": "co2-ist-nur-ein-spurengas",
@@ -1265,6 +1361,14 @@
       "canonicalTarget": "/wirkungsradar/live/deutschland-nur-zwei-prozent/"
     },
     {
+      "url": "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+      "title": "Deutschland schafft sich ab?",
+      "slug": "deutschland-schafft-sich-ab",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/deutschland-schafft-sich-ab/"
+    },
+    {
       "url": "/wirkungsradar/live/die-bauern-werden-geopfert/",
       "title": "Die Bauern werden geopfert?",
       "slug": "die-bauern-werden-geopfert",
@@ -1295,6 +1399,14 @@
       "tags": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/die-wissenschaft-ist-gekauft/"
+    },
+    {
+      "url": "/wirkungsradar/live/diktatur-der-altparteien/",
+      "title": "Diktatur der Altparteien?",
+      "slug": "diktatur-der-altparteien",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/",
@@ -1531,6 +1643,14 @@
       "canonicalTarget": "/wirkungsradar/live/klimaschutz-ist-oekodiktatur/"
     },
     {
+      "url": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
+      "title": "Klimaschutz ist zu teuer?",
+      "slug": "klimaschutz-ist-zu-teuer",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/"
+    },
+    {
       "url": "/wirkungsradar/live/kriminalitaet-und-migration/",
       "title": "Kriminalität und Migration?",
       "slug": "kriminalitaet-und-migration",
@@ -1553,6 +1673,14 @@
       "tags": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/laden-dauert-viel-zu-lange/"
+    },
+    {
+      "url": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
+      "title": "Werden Leistungsträger ausgepresst?",
+      "slug": "leistungstraeger-ausgepresst",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
     {
       "url": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
@@ -1715,6 +1843,14 @@
       "canonicalTarget": "/wirkungsradar/live/remigration/"
     },
     {
+      "url": "/wirkungsradar/live/remigration-remigrationslotsen/",
+      "title": "Remigration / Remigrationslotsen?",
+      "slug": "remigration-remigrationslotsen",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
+    },
+    {
       "url": "/wirkungsradar/live/rente-unbezahlbar/",
       "title": "Rente ist unbezahlbar?",
       "slug": "rente-unbezahlbar",
@@ -1760,6 +1896,22 @@
       "canonicalTarget": "/wirkungsradar/live/sdgs-sind-weltregierung/"
     },
     {
+      "url": "/wirkungsradar/live/sind-die-reichen-schuld/",
+      "title": "Sind die Reichen schuld?",
+      "slug": "sind-die-reichen-schuld",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
+    },
+    {
+      "url": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
+      "title": "Solarstrom ist unzuverlässig?",
+      "slug": "solarstrom-ist-unzuverlaessig",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
+    },
+    {
       "url": "/wirkungsradar/live/sozialschmarotzer-frame/",
       "title": "Sozialschmarotzer?",
       "slug": "sozialschmarotzer-frame",
@@ -1784,6 +1936,14 @@
       "canonicalTarget": "/wirkungsradar/live/steuerverschwendung-buerokratie/"
     },
     {
+      "url": "/wirkungsradar/live/tempolimit-bringt-nichts/",
+      "title": "Tempolimit bringt nichts?",
+      "slug": "tempolimit-bringt-nichts",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/tempolimit-bringt-nichts/"
+    },
+    {
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
       "title": "Unser Steuergeld geht in die Ukraine?",
       "slug": "ukraine-unterstuetzung-steuergeld",
@@ -1795,6 +1955,14 @@
       ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/"
+    },
+    {
+      "url": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/",
+      "title": "Verbrennerverbot nimmt Freiheit?",
+      "slug": "verbrennerverbot-nimmt-freiheit",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
     },
     {
       "url": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
@@ -1811,6 +1979,14 @@
       "tags": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/"
+    },
+    {
+      "url": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
+      "title": "Wärmepumpe ist unbezahlbar?",
+      "slug": "waermepumpe-ist-unbezahlbar",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
     },
     {
       "url": "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/",
@@ -3886,6 +4062,27 @@
       "quality": "B"
     },
     {
+      "url": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+      "title": "Bürokratieabbau statt Wirkung?",
+      "slug": "buerokratieabbau-statt-wirkung",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
       "url": "/wirkungsradar/live/co2-ist-nur-ein-spurengas/",
       "title": "CO2 ist nur ein Spurengas?",
       "slug": "co2-ist-nur-ein-spurengas",
@@ -4022,6 +4219,27 @@
       "quality": "B"
     },
     {
+      "url": "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+      "title": "Deutschland schafft sich ab?",
+      "slug": "deutschland-schafft-sich-ab",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
       "url": "/wirkungsradar/live/die-bauern-werden-geopfert/",
       "title": "Die Bauern werden geopfert?",
       "slug": "die-bauern-werden-geopfert",
@@ -4104,6 +4322,27 @@
       "hasMpd": true,
       "hasThreeOrders": true,
       "quality": "A"
+    },
+    {
+      "url": "/wirkungsradar/live/diktatur-der-altparteien/",
+      "title": "Diktatur der Altparteien?",
+      "slug": "diktatur-der-altparteien",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
     },
     {
       "url": "/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/",
@@ -4620,6 +4859,27 @@
       "quality": "A"
     },
     {
+      "url": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
+      "title": "Klimaschutz ist zu teuer?",
+      "slug": "klimaschutz-ist-zu-teuer",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
       "url": "/wirkungsradar/live/kriminalitaet-und-migration/",
       "title": "Kriminalität und Migration?",
       "slug": "kriminalitaet-und-migration",
@@ -4667,6 +4927,27 @@
       "slug": "laden-dauert-viel-zu-lange",
       "tags": [],
       "canonicalTarget": "/wirkungsradar/live/laden-dauert-viel-zu-lange/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
+      "url": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
+      "title": "Werden Leistungsträger ausgepresst?",
+      "slug": "leistungstraeger-ausgepresst",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
       "template": "DebateCompassPageTemplate",
       "duplicatesRemoved": true,
       "folgencheck": true,
@@ -5040,6 +5321,27 @@
       "quality": "B"
     },
     {
+      "url": "/wirkungsradar/live/remigration-remigrationslotsen/",
+      "title": "Remigration / Remigrationslotsen?",
+      "slug": "remigration-remigrationslotsen",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
       "url": "/wirkungsradar/live/rente-unbezahlbar/",
       "title": "Rente ist unbezahlbar?",
       "slug": "rente-unbezahlbar",
@@ -5129,6 +5431,48 @@
       "quality": "A"
     },
     {
+      "url": "/wirkungsradar/live/sind-die-reichen-schuld/",
+      "title": "Sind die Reichen schuld?",
+      "slug": "sind-die-reichen-schuld",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
+      "url": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
+      "title": "Solarstrom ist unzuverlässig?",
+      "slug": "solarstrom-ist-unzuverlaessig",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
       "url": "/wirkungsradar/live/sozialschmarotzer-frame/",
       "title": "Sozialschmarotzer?",
       "slug": "sozialschmarotzer-frame",
@@ -5171,6 +5515,27 @@
       "quality": "B"
     },
     {
+      "url": "/wirkungsradar/live/tempolimit-bringt-nichts/",
+      "title": "Tempolimit bringt nichts?",
+      "slug": "tempolimit-bringt-nichts",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/tempolimit-bringt-nichts/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
       "title": "Unser Steuergeld geht in die Ukraine?",
       "slug": "ukraine-unterstuetzung-steuergeld",
@@ -5197,11 +5562,53 @@
       "quality": "B"
     },
     {
+      "url": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/",
+      "title": "Verbrennerverbot nimmt Freiheit?",
+      "slug": "verbrennerverbot-nimmt-freiheit",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
       "url": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
       "title": "Verfassungsschutz oder Regierungsschutz?",
       "slug": "verfassungsschutz-oder-regierungsschutz",
       "tags": [],
       "canonicalTarget": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": true,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": true,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "B"
+    },
+    {
+      "url": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
+      "title": "Wärmepumpe ist unbezahlbar?",
+      "slug": "waermepumpe-ist-unbezahlbar",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
       "template": "DebateCompassPageTemplate",
       "duplicatesRemoved": true,
       "folgencheck": true,
@@ -5465,6 +5872,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/",
       "quality": "B",
       "missingSources": true,
@@ -5492,6 +5908,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/die-bauern-werden-geopfert/",
       "quality": "B",
       "missingSources": true,
@@ -5502,6 +5927,15 @@
     },
     {
       "url": "/wirkungsradar/live/die-boesen-reichen/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/diktatur-der-altparteien/",
       "quality": "B",
       "missingSources": true,
       "missingOrders": false,
@@ -5681,6 +6115,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/kriminalitaet-und-migration/",
       "quality": "B",
       "missingSources": true,
@@ -5700,6 +6143,15 @@
     },
     {
       "url": "/wirkungsradar/live/laden-dauert-viel-zu-lange/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
       "quality": "B",
       "missingSources": true,
       "missingOrders": false,
@@ -5816,6 +6268,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/remigration-remigrationslotsen/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/rente-unbezahlbar/",
       "quality": "B",
       "missingSources": true,
@@ -5843,6 +6304,24 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/sind-die-reichen-schuld/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/sozialschmarotzer-frame/",
       "quality": "B",
       "missingSources": true,
@@ -5861,6 +6340,15 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/tempolimit-bringt-nichts/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
       "quality": "B",
       "missingSources": true,
@@ -5870,7 +6358,25 @@
       "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
     },
     {
+      "url": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
       "url": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
+      "quality": "B",
+      "missingSources": true,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Quellenkette redaktionell mit Primärquellen nachziehen."
+    },
+    {
+      "url": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
       "quality": "B",
       "missingSources": true,
       "missingOrders": false,
