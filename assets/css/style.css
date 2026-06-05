@@ -56,7 +56,7 @@
 }
 
 .wirkungsraum-stats.compact {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .wirkungsraum-stats .card {
@@ -140,6 +140,18 @@
   margin-bottom: 0.75rem;
 }
 
+.wirkungsraum-reading-status,
+.wirkungsraum-meta {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.wirkungsraum-reading-status {
+  color: var(--green-dark);
+}
+
 .wirkungsraum-item-actions {
   display: flex;
   flex-wrap: wrap;
@@ -172,6 +184,12 @@
 .glossary-saved-filter {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 1080px) {
+  .wirkungsraum-stats.compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 860px) {

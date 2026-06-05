@@ -3816,7 +3816,8 @@ const WoekUserSpace = (() => {
 const WirkungsraumLayer = (() => {
   const relevantPathPattern =
     /\/(begriffe|glossar|referenz|buch|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
-  const progressPathPattern = /\/(referenz|buch|dokumente|downloads|wirkungsradar\/(live|detail)|portale|wirkungsfelder|werkstatt|wissen|blog)\b|\/buch\.html$/;
+  const progressScopePattern =
+    /\/(referenz|buch|dokumente|downloads|bibliothek|akademie|portale)\b|\/(buch|akademie|downloads)\.html$/;
   const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
 
   function canonicalPath() {
@@ -3851,6 +3852,45 @@ const WirkungsraumLayer = (() => {
     return Array.from(tags).slice(0, 8);
   }
 
+  function isProgressPath(path) {
+    return (
+      progressScopePattern.test(path) ||
+      /\/dossiers?\//.test(path) ||
+      /\/werkstatt\/arbeitsbibliothek\//.test(path) ||
+      /\/wissen\/working-papers\//.test(path)
+    );
+  }
+
+  function normalizedProgress(value) {
+    const progress = Number(value);
+    if (!Number.isFinite(progress)) return 0;
+    return Math.max(0, Math.min(100, Math.round(progress)));
+  }
+
+  function readingStatus(progress) {
+    const percent = normalizedProgress(progress);
+    if (percent >= 85) return "gelesen";
+    if (percent > 0) return "begonnen";
+    return "ungelesen";
+  }
+
+  function statusSymbol(status) {
+    if (status === "gelesen") return "●";
+    if (status === "begonnen") return "◐";
+    return "○";
+  }
+
+  function statusLabel(status) {
+    if (status === "gelesen") return "gelesen";
+    if (status === "begonnen") return "begonnen";
+    return "ungelesen";
+  }
+
+  function itemStatus(item) {
+    if (["ungelesen", "begonnen", "gelesen"].includes(item?.status)) return item.status;
+    return readingStatus(item?.progress);
+  }
+
   function currentItem() {
     const url = canonicalPath();
     return {
@@ -3861,6 +3901,27 @@ const WirkungsraumLayer = (() => {
       saved_at: new Date().toISOString(),
       tags: pageTags(),
       category: document.querySelector(".breadcrumb a:last-of-type, .hero-kicker")?.textContent?.trim() || pageType()
+    };
+  }
+
+  function progressRecord(path = window.location.pathname) {
+    const url = canonicalPath();
+    const progress = progressPercent();
+    const status = readingStatus(progress);
+    const now = new Date().toISOString();
+    return {
+      id: url.replace(/^\/+/, "") || "start",
+      title: pageTitle(),
+      type: pageType(path),
+      url,
+      category: document.querySelector(".breadcrumb a:last-of-type, .hero-kicker")?.textContent?.trim() || pageType(path),
+      tags: pageTags(),
+      scroll_position: Math.round(window.scrollY),
+      progress,
+      status,
+      status_symbol: statusSymbol(status),
+      last_read_at: now,
+      updated_at: now
     };
   }
 
@@ -3930,41 +3991,92 @@ const WirkungsraumLayer = (() => {
 
   function trackReadingProgress() {
     const path = window.location.pathname;
-    if (excludedPathPattern.test(path) || !progressPathPattern.test(path)) return;
+    if (excludedPathPattern.test(path) || !isProgressPath(path)) return;
 
     let timeout;
+    const persistNow = () => {
+      const url = canonicalPath();
+      WoekUserSpace.upsertRecord("reading_progress", url, progressRecord(path));
+    };
     const persist = () => {
       window.clearTimeout(timeout);
-      timeout = window.setTimeout(() => {
-        const url = canonicalPath();
-        WoekUserSpace.upsertRecord("reading_progress", url, {
-          id: url.replace(/^\/+/, ""),
-          title: pageTitle(),
-          type: pageType(path),
-          url,
-          scroll_position: Math.round(window.scrollY),
-          progress: progressPercent(),
-          updated_at: new Date().toISOString()
-        });
-      }, 250);
+      timeout = window.setTimeout(persistNow, 250);
     };
     window.addEventListener("scroll", persist, { passive: true });
-    window.addEventListener("beforeunload", persist);
-    persist();
+    window.addEventListener("beforeunload", () => {
+      window.clearTimeout(timeout);
+      persistNow();
+    });
+    persistNow();
+  }
+
+  function restoreReadingPosition() {
+    const params = new URLSearchParams(window.location.search);
+    if (!params.has("weiterlesen") && !params.has("continue")) return;
+    const path = window.location.pathname;
+    if (excludedPathPattern.test(path) || !isProgressPath(path)) return;
+    const url = canonicalPath();
+    const records = WoekUserSpace.getRecordItems("reading_progress");
+    const item = records[url] || records[`${url}/`];
+    const position = Number(item?.scroll_position || 0);
+    if (!Number.isFinite(position) || position < 40) return;
+    window.setTimeout(() => {
+      window.scrollTo({ top: position, behavior: "auto" });
+    }, 120);
+  }
+
+  function readingProgressItems() {
+    const records = WoekUserSpace.getRecordItems("reading_progress");
+    return Object.values(records)
+      .filter((item) => item && item.url && item.title)
+      .map((item) => {
+        const progress = normalizedProgress(item.progress);
+        const status = itemStatus({ ...item, progress });
+        return {
+          ...item,
+          progress,
+          status,
+          status_symbol: statusSymbol(status),
+          last_read_at: item.last_read_at || item.updated_at || null
+        };
+      })
+      .sort((a, b) => new Date(b.last_read_at || b.updated_at || 0) - new Date(a.last_read_at || a.updated_at || 0));
+  }
+
+  function continueUrl(url) {
+    const target = new URL(url || "/", window.location.origin);
+    target.searchParams.set("weiterlesen", "1");
+    return `${target.pathname}${target.search}${target.hash}`;
+  }
+
+  function formatDateTime(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return date.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" });
   }
 
   function itemCard(item, options = {}) {
     const article = document.createElement("article");
     article.className = "card wirkungsraum-item";
     const tags = Array.isArray(item.tags) ? item.tags.slice(0, 4) : [];
-    const progress = Number.isFinite(item.progress) ? `<p class="wirkungsraum-progress"><span style="width:${Math.max(3, item.progress)}%"></span></p>` : "";
+    const hasProgress = Number.isFinite(Number(item.progress));
+    const progressValue = hasProgress ? normalizedProgress(item.progress) : null;
+    const status = hasProgress ? itemStatus({ ...item, progress: progressValue }) : null;
+    const statusText = status ? `${statusSymbol(status)} ${statusLabel(status)}${progressValue !== null ? ` · ${progressValue}%` : ""}` : "";
+    const progress = hasProgress
+      ? `<p class="wirkungsraum-progress" aria-label="Lesefortschritt ${progressValue}%"><span style="width:${Math.max(3, progressValue)}%"></span></p>`
+      : "";
+    const lastRead = options.showLastRead && item.last_read_at ? `<p class="wirkungsraum-meta">Zuletzt gelesen: ${escapeHtml(formatDateTime(item.last_read_at))}</p>` : "";
+    const href = typeof options.href === "function" ? options.href(item) : item.url || "#";
     article.innerHTML = `
       <p class="card-kicker">${escapeHtml(item.type || "Inhalt")}</p>
       <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      ${options.showStatus && statusText ? `<p class="wirkungsraum-reading-status">${escapeHtml(statusText)}</p>` : ""}
       ${progress}
+      ${lastRead}
       ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">${options.readLabel || "Öffnen"}</a>
+        <a class="btn btn-primary" href="${escapeAttribute(href)}">${options.readLabel || "Öffnen"}</a>
         ${options.removable ? `<button class="btn btn-secondary" type="button" data-remove-saved="${escapeAttribute(item.id || "")}">Entfernen</button>` : ""}
       </p>
     `;
@@ -4042,6 +4154,21 @@ const WirkungsraumLayer = (() => {
     updateFilterButtons(root);
   }
 
+  function drawReadingDashboard(root) {
+    const reading = readingProgressItems();
+    const readingList = root.querySelector("[data-reading-list]");
+    renderList(readingList, reading.slice(0, 12), "Noch kein Lesefortschritt. Öffne ein Referenzkapitel, Buchkapitel, Dokument, Dossier oder Akademie-Modul.", {
+      readLabel: "Weiterlesen",
+      showStatus: true,
+      showLastRead: true,
+      href: (item) => continueUrl(item.url)
+    });
+    const statProgress = root.querySelector("[data-stat-progress]");
+    if (statProgress) statProgress.textContent = String(reading.length);
+    const statRead = root.querySelector("[data-stat-read]");
+    if (statRead) statRead.textContent = String(reading.filter((item) => itemStatus(item) === "gelesen").length);
+  }
+
   function renderDashboard() {
     const root = document.querySelector("[data-wirkungsraum-dashboard]");
     if (!root) return;
@@ -4090,6 +4217,7 @@ const WirkungsraumLayer = (() => {
     }
 
     drawSavedDashboard(root);
+    drawReadingDashboard(root);
   }
 
   function initGlossaryLearningFilter() {
@@ -4139,8 +4267,9 @@ const WirkungsraumLayer = (() => {
       if (!item) return;
       const marker = document.createElement("span");
       marker.className = "wirkungsraum-progress-dot";
-      marker.textContent = item.progress >= 85 ? "●" : item.progress > 10 ? "◐" : "○";
-      marker.title = `Lesefortschritt: ${item.progress || 0}%`;
+      const status = itemStatus(item);
+      marker.textContent = statusSymbol(status);
+      marker.title = `Lesestatus: ${statusLabel(status)}, ${normalizedProgress(item.progress)}%`;
       link.prepend(marker, " ");
       link.dataset.progressDecorated = "true";
     });
@@ -4155,6 +4284,7 @@ const WirkungsraumLayer = (() => {
   function init() {
     trackVisit();
     injectSaveButton();
+    restoreReadingPosition();
     trackReadingProgress();
     renderDashboard();
     initGlossaryLearningFilter();

@@ -383,7 +383,7 @@ function pageShell({ title, description, canonical, main, base = "../../" }) {
     </header>
 ${main}
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Wirkungsökonomie</p><h2>Die neue Ordnung des Wohlstands</h2><p>Für Mensch, Planet und Demokratie.</p></div><a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage1"></script>
+    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage2"></script>
   </body>
 </html>`;
 }

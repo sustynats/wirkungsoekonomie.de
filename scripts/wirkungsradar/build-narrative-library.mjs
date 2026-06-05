@@ -1174,7 +1174,7 @@ ${main}
         <a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a>
       </div>
     </footer>
-    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage1"></script>
+    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage2"></script>
   </body>
 </html>
 `;
