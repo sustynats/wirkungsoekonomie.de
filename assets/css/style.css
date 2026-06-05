@@ -84,7 +84,7 @@
 }
 
 .wirkungsraum-note-panel {
-  width: min(var(--container), calc(100% - (2 * var(--space-gutter))));
+  width: min(980px, calc(100% - (2 * var(--space-gutter))));
   margin: 0 auto var(--space-5);
   padding: 1rem;
   border: 1px solid rgba(23, 79, 56, 0.22);
