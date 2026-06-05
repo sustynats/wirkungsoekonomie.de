@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mein Wirkungsraum | Lerncockpit und gemerkte Inhalte</title>
-    <meta name="description" content="Mein Wirkungsraum zeigt lokal gemerkte Inhalte, Lernlisten, Lesefortschritt, Akademie-Fortschritt und persönliche Sammlungen auf wirkungsoekonomie.de.">
+    <title>Mein Wirkungsraum | Lerncockpit, Notizen und gemerkte Inhalte</title>
+    <meta name="description" content="Mein Wirkungsraum zeigt lokal gemerkte Inhalte, persönliche Notizen, Lernlisten, Lesefortschritt, Akademie-Fortschritt und Sammlungen auf wirkungsoekonomie.de.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage5">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage6">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -41,10 +41,11 @@
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Mein Wirkungsraum</nav>
           <p class="hero-kicker">Persönlicher Arbeitsraum</p>
           <h1 class="hero-title">Mein Wirkungsraum</h1>
-          <p class="hero-subtitle">Deine lokal gemerkten Inhalte, Lernliste und Akademie-Fortschritte auf wirkungsoekonomie.de.</p>
-          <p class="card-text">Speichere Inhalte mit „⭐ Merken“, lege Lerninhalte mit „Zur Lernliste hinzufügen“ ab und lies lange Seiten später weiter. Alles bleibt in diesem Browser. Es gibt noch kein Login und keine Server-Synchronisierung.</p>
+          <p class="hero-subtitle">Deine lokal gemerkten Inhalte, Notizen, Lernliste und Akademie-Fortschritte auf wirkungsoekonomie.de.</p>
+          <p class="card-text">Speichere Inhalte mit „⭐ Merken“, notiere eigene Gedanken, lege Lerninhalte mit „Zur Lernliste hinzufügen“ ab und lies lange Seiten später weiter. Alles bleibt in diesem Browser. Es gibt noch kein Login und keine Server-Synchronisierung.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#zuletzt-gelesen">Weiterlesen</a>
+            <a class="btn btn-secondary" href="#notizen">Notizen</a>
             <a class="btn btn-secondary" href="#lernliste">Lernliste</a>
             <a class="btn btn-secondary" href="#akademie-fortschritt">Akademie-Fortschritt</a>
             <a class="btn btn-secondary" href="#gemerkte-inhalte">Gemerkte Inhalte ansehen</a>
@@ -61,6 +62,7 @@
             <article class="card"><p class="card-kicker">Aktueller Filter</p><strong data-stat-visible>0</strong><span>sichtbare Treffer</span></article>
             <article class="card"><p class="card-kicker">Weiterlesen</p><strong data-stat-progress>0</strong><span>Inhalte mit Fortschritt</span></article>
             <article class="card"><p class="card-kicker">Gelesen</p><strong data-stat-read>0</strong><span>abgeschlossene Inhalte</span></article>
+            <article class="card"><p class="card-kicker">Notizen</p><strong data-stat-notes>0</strong><span>lokale Gedanken</span></article>
             <article class="card"><p class="card-kicker">Lernliste</p><strong data-stat-learning>0</strong><span>aktive Lerninhalte</span></article>
             <article class="card"><p class="card-kicker">Akademie</p><strong data-stat-academy>0</strong><span>Module mit Fortschritt</span></article>
             <article class="card"><p class="card-kicker">Sammlungen</p><strong data-stat-collections>0</strong><span>thematische Bündel</span></article>
@@ -77,6 +79,19 @@
           </div>
           <div class="wirkungsraum-list" data-reading-list>
             <article class="card"><p class="card-text">Noch kein Lesefortschritt. Öffne ein Referenzkapitel, Buchkapitel, Dokument, Dossier oder Akademie-Modul.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="notizen">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Notizen</p>
+            <h2>Meine Notizen</h2>
+            <p>Eigene Gedanken zu Inhalten bleiben ausschließlich in diesem Browser. Sie werden nicht hochgeladen und nicht serverseitig verarbeitet.</p>
+          </div>
+          <div class="wirkungsraum-list" data-notes-list>
+            <article class="card"><p class="card-text">Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.</p></article>
           </div>
         </div>
       </section>
@@ -298,6 +313,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage5"></script>
+    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage6"></script>
   </body>
 </html>

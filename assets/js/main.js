@@ -3819,6 +3819,8 @@ const WirkungsraumLayer = (() => {
   const progressScopePattern =
     /\/(referenz|buch|dokumente|downloads|bibliothek|akademie|portale)\b|\/(buch|akademie|downloads)\.html$/;
   const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
+  const noteScopePattern =
+    /\/(begriffe|glossar|referenz|buch|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie)\b|\/(akademie|buch|downloads|glossar|kompass)\.html$/;
 
   function canonicalPath() {
     return window.location.pathname.replace(/\/index\.html$/, "/");
@@ -3928,6 +3930,62 @@ const WirkungsraumLayer = (() => {
   function savedItems() {
     const items = WoekUserSpace.getItems("saved_items");
     return Array.isArray(items) ? items : [];
+  }
+
+  function notes() {
+    const items = WoekUserSpace.getItems("notes");
+    return Array.isArray(items)
+      ? items
+          .filter((item) => item && typeof item === "object" && String(item.content || "").trim())
+          .map((item) => ({
+            ...item,
+            content: String(item.content || "").trim(),
+            tags: Array.isArray(item.tags) ? item.tags : [],
+            updated_at: item.updated_at || item.created_at || null,
+            created_at: item.created_at || item.updated_at || null
+          }))
+          .sort((a, b) => new Date(b.updated_at || b.created_at || 0) - new Date(a.updated_at || a.created_at || 0))
+      : [];
+  }
+
+  function noteIdForItem(item) {
+    return `note-${String(item?.id || item?.url || "inhalt").replace(/[^a-zA-Z0-9_-]+/g, "-").replace(/^-+|-+$/g, "") || "inhalt"}`;
+  }
+
+  function noteForItem(item = currentItem()) {
+    const id = noteIdForItem(item);
+    return notes().find((note) => note.id === id || note.target_id === item.id || note.target_url === item.url) || null;
+  }
+
+  function noteRecord(item, content) {
+    const existing = noteForItem(item);
+    const now = new Date().toISOString();
+    return {
+      id: noteIdForItem(item),
+      target_id: item.id,
+      target_url: item.url,
+      target_title: item.title,
+      target_type: item.type,
+      target_category: item.category,
+      tags: Array.isArray(item.tags) ? item.tags : [],
+      content: String(content || "").trim(),
+      local_only: true,
+      created_at: existing?.created_at || now,
+      updated_at: now
+    };
+  }
+
+  function saveNoteForItem(item, content) {
+    const note = noteRecord(item, content);
+    if (!note.content) return null;
+    const stored = WoekUserSpace.upsertItem("notes", note, { limit: 1000, timestampField: "updated_at" });
+    document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+    return stored;
+  }
+
+  function removeNote(id) {
+    WoekUserSpace.removeItem("notes", id);
+    document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
   }
 
   const learningStatuses = {
@@ -4407,6 +4465,80 @@ const WirkungsraumLayer = (() => {
     }
   }
 
+  function isNotePath(path = window.location.pathname) {
+    return noteScopePattern.test(path) && !excludedPathPattern.test(path);
+  }
+
+  function injectNotePanel() {
+    const path = window.location.pathname;
+    if (!isNotePath(path) || document.querySelector("[data-wirkungsraum-note-panel]")) return;
+
+    const item = currentItem();
+    const existing = noteForItem(item);
+    const panel = document.createElement("section");
+    panel.className = "wirkungsraum-note-panel";
+    panel.dataset.wirkungsraumNotePanel = item.id;
+    panel.dataset.searchExclude = "true";
+    panel.innerHTML = `
+      <div class="wirkungsraum-note-panel-header">
+        <p class="card-kicker">Persönliche Notiz</p>
+        <h2>Eigene Gedanken zu dieser Seite</h2>
+        <p class="wirkungsraum-note-hint">Diese Notiz wird nur in deinem Browser gespeichert.</p>
+      </div>
+      <form class="wirkungsraum-note-form" data-wirkungsraum-note-form>
+        <label>
+          <span class="sr-only">Notiztext</span>
+          <textarea data-wirkungsraum-note-text rows="5" placeholder="Was willst du dir zu diesem Inhalt merken?">${escapeHtml(existing?.content || "")}</textarea>
+        </label>
+        <p class="wirkungsraum-note-actions">
+          <button class="btn btn-primary" type="submit">${existing ? "Notiz aktualisieren" : "Notiz speichern"}</button>
+          <button class="btn btn-secondary" type="button" data-delete-note="${escapeAttribute(noteIdForItem(item))}" ${existing ? "" : "disabled"}>Notiz löschen</button>
+        </p>
+        <p class="wirkungsraum-note-status" data-wirkungsraum-note-status>${existing?.updated_at ? `Gespeichert: ${escapeHtml(formatDateTime(existing.updated_at))}` : ""}</p>
+      </form>
+    `;
+
+    const textarea = panel.querySelector("[data-wirkungsraum-note-text]");
+    const status = panel.querySelector("[data-wirkungsraum-note-status]");
+    const deleteButton = panel.querySelector("[data-delete-note]");
+    const submitButton = panel.querySelector("button[type='submit']");
+
+    panel.addEventListener("submit", (event) => {
+      const form = event.target;
+      if (!(form instanceof HTMLFormElement) || !(textarea instanceof HTMLTextAreaElement)) return;
+      event.preventDefault();
+      const content = textarea.value.trim();
+      if (!content) {
+        if (status) status.textContent = "Schreibe zuerst eine Notiz.";
+        textarea.focus();
+        return;
+      }
+      const stored = saveNoteForItem(item, content);
+      if (deleteButton instanceof HTMLButtonElement) deleteButton.disabled = false;
+      if (submitButton instanceof HTMLButtonElement) submitButton.textContent = "Notiz aktualisieren";
+      if (status) status.textContent = stored?.updated_at ? `Gespeichert: ${formatDateTime(stored.updated_at)}` : "Gespeichert.";
+    });
+
+    deleteButton?.addEventListener("click", () => {
+      if (!(deleteButton instanceof HTMLButtonElement) || deleteButton.disabled) return;
+      if (!window.confirm("Diese lokale Notiz löschen?")) return;
+      removeNote(noteIdForItem(item));
+      if (textarea instanceof HTMLTextAreaElement) textarea.value = "";
+      deleteButton.disabled = true;
+      if (submitButton instanceof HTMLButtonElement) submitButton.textContent = "Notiz speichern";
+      if (status) status.textContent = "Notiz gelöscht.";
+    });
+
+    const hero = document.querySelector(".hero, .radar-hero, .page-hero, .wirkungsraum-hero");
+    if (hero) {
+      hero.insertAdjacentElement("afterend", panel);
+      return;
+    }
+    const main = document.querySelector("main");
+    const firstSection = main?.querySelector(".section, .content-band, article");
+    if (main) main.insertBefore(panel, firstSection || main.firstChild);
+  }
+
   function progressPercent() {
     const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     return Math.max(0, Math.min(100, Math.round((window.scrollY / scrollable) * 100)));
@@ -4590,6 +4722,46 @@ const WirkungsraumLayer = (() => {
     if (statProgress) statProgress.textContent = String(reading.length);
     const statRead = root.querySelector("[data-stat-read]");
     if (statRead) statRead.textContent = String(reading.filter((item) => itemStatus(item) === "gelesen").length);
+  }
+
+  function noteCard(note) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-note-card";
+    article.dataset.noteId = note.id;
+    const tags = Array.isArray(note.tags) ? note.tags.slice(0, 4) : [];
+    const updated = note.updated_at ? `<p class="wirkungsraum-meta">Aktualisiert: ${escapeHtml(formatDateTime(note.updated_at))}</p>` : "";
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(note.target_type || "Notiz")}</p>
+      <h3 class="card-title">${escapeHtml(note.target_title || "Ohne Titel")}</h3>
+      <p class="wirkungsraum-note-text">${escapeHtml(note.content || "")}</p>
+      ${updated}
+      ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(note.target_url || "#")}">Seite öffnen</a>
+        <button class="btn btn-secondary" type="button" data-remove-note="${escapeAttribute(note.id || "")}">Notiz löschen</button>
+      </p>
+    `;
+    return article;
+  }
+
+  function renderNotesList(container, items) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.</p>`;
+      container.append(empty);
+      return;
+    }
+    items.forEach((item) => container.append(noteCard(item)));
+  }
+
+  function drawNotesDashboard(root) {
+    const currentNotes = notes();
+    renderNotesList(root.querySelector("[data-notes-list]"), currentNotes);
+    const statNotes = root.querySelector("[data-stat-notes]");
+    if (statNotes) statNotes.textContent = String(currentNotes.length);
   }
 
   function learningCard(item) {
@@ -4897,6 +5069,12 @@ const WirkungsraumLayer = (() => {
           drawLearningDashboard(root);
           return;
         }
+        const removeNoteButton = event.target instanceof HTMLElement ? event.target.closest("[data-remove-note]") : null;
+        if (removeNoteButton instanceof HTMLButtonElement && window.confirm("Diese lokale Notiz löschen?")) {
+          removeNote(removeNoteButton.dataset.removeNote || "");
+          drawNotesDashboard(root);
+          return;
+        }
         const learningSuggestion = event.target instanceof HTMLElement ? event.target.closest("[data-add-learning-suggestion]") : null;
         if (learningSuggestion instanceof HTMLButtonElement) {
           const part = academyParts.find((entry) => entry.id === learningSuggestion.dataset.addLearningSuggestion);
@@ -4965,6 +5143,7 @@ const WirkungsraumLayer = (() => {
     drawReadingDashboard(root);
     drawCollectionsDashboard(root);
     drawLearningDashboard(root);
+    drawNotesDashboard(root);
   }
 
   function comparablePath(value) {
@@ -5229,6 +5408,7 @@ const WirkungsraumLayer = (() => {
     injectSaveButton();
     injectCollectionButton();
     injectLearningButton();
+    injectNotePanel();
     restoreReadingPosition();
     trackReadingProgress();
     renderDashboard();
