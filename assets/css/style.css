@@ -39,6 +39,39 @@
     var(--paper);
 }
 
+.wirkungsraum-connect {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.2rem 0 1.4rem;
+}
+
+.wirkungsraum-connect-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.45rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wirkungsraum-connect-list li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.wirkungsraum-connect-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: var(--green);
+}
+
 .wirkungsraum-save-row {
   margin-top: 1.25rem;
 }
