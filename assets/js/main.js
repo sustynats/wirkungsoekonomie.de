@@ -3976,6 +3976,7 @@ const WirkungsraumLayer = (() => {
   ]);
 
   let knowledgeCatalogPromise = null;
+  let recentContentPromise = null;
   let relatedRenderRun = 0;
 
   function toArray(value) {
@@ -5022,6 +5023,12 @@ const WirkungsraumLayer = (() => {
     return date.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" });
   }
 
+  function formatDate(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    return date.toLocaleDateString("de-DE", { dateStyle: "medium" });
+  }
+
   function itemCard(item, options = {}) {
     const article = document.createElement("article");
     article.className = "card wirkungsraum-item";
@@ -5069,6 +5076,203 @@ const WirkungsraumLayer = (() => {
       return;
     }
     items.forEach((item) => container.append(itemCard(item, options)));
+  }
+
+  function parseContentDate(value) {
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? null : date;
+  }
+
+  function normalizeContentUrl(value) {
+    const path = graphPath(value);
+    return path || cleanText(value || "#");
+  }
+
+  async function recentContentItems() {
+    if (!recentContentPromise) {
+      recentContentPromise = fetchJson("/assets/data/blog-index.json", []).then((entries) => {
+        const now = new Date();
+        return (Array.isArray(entries) ? entries : [])
+          .map((entry) => {
+            const date = parseContentDate(entry.date || entry.published_at || entry.updated_at);
+            if (!date || date > now) return null;
+            return {
+              id: entry.id || normalizeContentUrl(entry.url) || graphSlug(entry.title),
+              type: entry.type || "Journalartikel",
+              title: cleanText(entry.title),
+              url: normalizeContentUrl(entry.url),
+              category: cleanText(entry.category || "Journal"),
+              description: cleanText(entry.excerpt || entry.description || "").slice(0, 220),
+              tags: uniqueStrings(entry.tags, 4),
+              date,
+              dateLabel: formatDate(date)
+            };
+          })
+          .filter((entry) => entry?.title && entry.url)
+          .sort((a, b) => b.date - a.date || a.title.localeCompare(b.title, "de"));
+      });
+    }
+    return recentContentPromise;
+  }
+
+  function newContentCard(item) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-update-card";
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")}${item.dateLabel ? ` · ${escapeHtml(item.dateLabel)}` : ""}</p>
+      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      ${item.description ? `<p class="card-text">${escapeHtml(item.description)}</p>` : ""}
+      ${item.category || item.tags.length ? `<div class="chip-row">${[item.category, ...item.tags].filter(Boolean).slice(0, 4).map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Inhalt öffnen</a>
+      </p>
+    `;
+    return article;
+  }
+
+  function renderNewContentList(container, items, emptyText) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">${escapeHtml(emptyText)}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="/blog.html">Journal öffnen</a></p>`;
+      container.append(empty);
+      return;
+    }
+    items.forEach((item) => container.append(newContentCard(item)));
+  }
+
+  function drawNewContentDashboard(root, lastVisit) {
+    const container = root.querySelector("[data-new-content-list]");
+    if (!container) return;
+    container.innerHTML = `<article class="card"><p class="card-text">Neue Inhalte werden geladen.</p></article>`;
+    recentContentItems()
+      .then((items) => {
+        const since = parseContentDate(lastVisit);
+        const visible = since ? items.filter((item) => item.date > since).slice(0, 6) : items.slice(0, 6);
+        const emptyText = since
+          ? "Seit deinem letzten Besuch wurden keine neuen datierten Journalinhalte gefunden."
+          : "Beim ersten Besuch zeigt dieser Bereich die jüngsten datierten Inhalte.";
+        renderNewContentList(container, visible, emptyText);
+      })
+      .catch(() => {
+        renderNewContentList(container, [], "Neue Inhalte konnten gerade nicht geladen werden.");
+      });
+  }
+
+  function nextStepCard(step) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-step-card";
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(step.kicker || "Nächster Schritt")}</p>
+      <h3 class="card-title">${escapeHtml(step.title || "Weiterarbeiten")}</h3>
+      <p class="card-text">${escapeHtml(step.text || "")}</p>
+      <p class="wirkungsraum-item-actions">
+        <a class="btn ${step.primary ? "btn-primary" : "btn-secondary"}" href="${escapeAttribute(step.href || "#")}">${escapeHtml(step.label || "Öffnen")}</a>
+      </p>
+    `;
+    return article;
+  }
+
+  function drawNextStepsDashboard(root) {
+    const container = root.querySelector("[data-next-steps]");
+    if (!container) return;
+    const saved = savedItems();
+    const reading = readingProgressItems();
+    const learning = learningItems();
+    const currentCollections = collections();
+    const currentNotes = notes();
+    const activeReading = reading.find((item) => itemStatus(item) === "begonnen") || reading.find((item) => itemStatus(item) !== "gelesen") || reading[0];
+    const activeLearning = learning.find((item) => normalizeLearningStatus(item.learning_status) !== "verstanden");
+    const steps = [];
+
+    if (activeReading) {
+      steps.push({
+        kicker: "Weiterlesen",
+        title: activeReading.title || "Zuletzt gelesenen Inhalt fortsetzen",
+        text: "Dort weitermachen, wo du zuletzt aufgehört hast.",
+        href: continueUrl(activeReading.url),
+        label: "Weiterlesen",
+        primary: true
+      });
+    } else {
+      steps.push({
+        kicker: "Start",
+        title: "Einen Grundlagentext beginnen",
+        text: "Ein Referenzkapitel oder Dokument öffnen und den Lesefortschritt starten.",
+        href: "/referenz/",
+        label: "Referenz öffnen",
+        primary: true
+      });
+    }
+
+    if (saved.length) {
+      steps.push({
+        kicker: "Anschlüsse",
+        title: "Verwandte Inhalte prüfen",
+        text: "Zu deinen gemerkten Themen passende Begriffe, Werkzeuge, Dokumente und Debatten ansehen.",
+        href: "#verwandte-inhalte",
+        label: "Verwandte öffnen"
+      });
+    } else {
+      steps.push({
+        kicker: "Merken",
+        title: "Erste Inhalte speichern",
+        text: "Suche einen Begriff, ein Kapitel, ein Werkzeug oder eine Debattenkarte und lege sie in deinem Wirkungsraum ab.",
+        href: "/suche.html",
+        label: "Suche öffnen"
+      });
+    }
+
+    if (saved.length && !currentCollections.length) {
+      steps.push({
+        kicker: "Sammeln",
+        title: "Eine Sammlung anlegen",
+        text: "Gemerkte Inhalte thematisch bündeln, damit sie später leichter wiederzufinden sind.",
+        href: "#sammlungen",
+        label: "Sammlungen öffnen"
+      });
+    } else if (currentCollections.length) {
+      steps.push({
+        kicker: "Sammeln",
+        title: "Sammlungen prüfen",
+        text: "Bestehende Materialbündel öffnen, ergänzen oder bereinigen.",
+        href: "#sammlungen",
+        label: "Sammlungen öffnen"
+      });
+    }
+
+    if (activeLearning) {
+      steps.push({
+        kicker: "Lernen",
+        title: activeLearning.title || "Lernliste fortsetzen",
+        text: "Den nächsten offenen Lerninhalt bearbeiten oder seinen Status aktualisieren.",
+        href: activeLearning.url || "#lernliste",
+        label: "Weiterlernen"
+      });
+    } else {
+      steps.push({
+        kicker: "Lernen",
+        title: "Akademie-Lernpfad aufnehmen",
+        text: "Ein Modul zur Lernliste hinzufügen und den eigenen Fortschritt sichtbar machen.",
+        href: "#akademie-fortschritt",
+        label: "Akademie öffnen"
+      });
+    }
+
+    if ((saved.length || reading.length || learning.length) && !currentNotes.length) {
+      steps.push({
+        kicker: "Notizen",
+        title: "Eine eigene Notiz ergänzen",
+        text: "Auf einer Inhaltsseite festhalten, was du dir merken oder prüfen willst.",
+        href: (activeReading || saved[0] || learning[0])?.url || "#notizen",
+        label: "Inhalt öffnen"
+      });
+    }
+
+    container.innerHTML = "";
+    steps.slice(0, 6).forEach((step) => container.append(nextStepCard(step)));
   }
 
   const savedFilterGroups = {
@@ -5482,8 +5686,10 @@ const WirkungsraumLayer = (() => {
 
     const lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null);
     const note = root.querySelector("[data-last-visit-note]");
-    if (note && lastVisit) {
-      note.textContent = `Letzter Besuch deines Wirkungsraums: ${new Date(lastVisit).toLocaleString("de-DE")}.`;
+    if (note) {
+      note.textContent = lastVisit
+        ? `Letzter Besuch deines Wirkungsraums: ${new Date(lastVisit).toLocaleString("de-DE")}.`
+        : "Dies ist dein erster Dashboard-Besuch in diesem Browser. Wir zeigen zunächst die jüngsten datierten Inhalte.";
     }
     WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
 
@@ -5499,6 +5705,7 @@ const WirkungsraumLayer = (() => {
         if (statusSelect instanceof HTMLSelectElement) {
           updateLearningStatus(statusSelect.dataset.learningStatus || "", statusSelect.value);
           drawLearningDashboard(root);
+          drawNextStepsDashboard(root);
         }
       });
       root.addEventListener("submit", (event) => {
@@ -5510,6 +5717,7 @@ const WirkungsraumLayer = (() => {
           const description = form.querySelector("[name='collection-description']")?.value || "";
           if (createCollection(title, description)) form.reset();
           drawCollectionsDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         if (form.matches("[data-collection-edit-form]")) {
@@ -5520,6 +5728,7 @@ const WirkungsraumLayer = (() => {
           const description = form.querySelector("[name='collection-description']")?.value || "";
           updateCollection(card.dataset.collectionId || "", { title, description });
           drawCollectionsDashboard(root);
+          drawNextStepsDashboard(root);
         }
       });
       root.addEventListener("click", (event) => {
@@ -5533,19 +5742,23 @@ const WirkungsraumLayer = (() => {
         if (remove instanceof HTMLButtonElement) {
           removeItem(remove.dataset.removeSaved || "");
           drawSavedDashboard(root);
+          drawCollectionsDashboard(root);
           drawRelatedDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         const removeLearning = event.target instanceof HTMLElement ? event.target.closest("[data-remove-learning]") : null;
         if (removeLearning instanceof HTMLButtonElement) {
           removeLearningItem(removeLearning.dataset.removeLearning || "");
           drawLearningDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         const removeNoteButton = event.target instanceof HTMLElement ? event.target.closest("[data-remove-note]") : null;
         if (removeNoteButton instanceof HTMLButtonElement && window.confirm("Diese lokale Notiz löschen?")) {
           removeNote(removeNoteButton.dataset.removeNote || "");
           drawNotesDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         const learningSuggestion = event.target instanceof HTMLElement ? event.target.closest("[data-add-learning-suggestion]") : null;
@@ -5554,6 +5767,7 @@ const WirkungsraumLayer = (() => {
           if (part) {
             upsertLearningItem(academyItemFromPart(part));
             drawLearningDashboard(root);
+            drawNextStepsDashboard(root);
           }
           return;
         }
@@ -5564,12 +5778,14 @@ const WirkungsraumLayer = (() => {
           drawSavedDashboard(root);
           drawCollectionsDashboard(root);
           drawRelatedDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         const templateButton = event.target instanceof HTMLElement ? event.target.closest("[data-collection-template]") : null;
         if (templateButton instanceof HTMLButtonElement) {
           createCollection(templateButton.dataset.collectionTemplate || templateButton.textContent || "", templateButton.dataset.collectionDescription || "");
           drawCollectionsDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         const editButton = event.target instanceof HTMLElement ? event.target.closest("[data-edit-collection]") : null;
@@ -5595,12 +5811,14 @@ const WirkungsraumLayer = (() => {
         if (deleteButton instanceof HTMLButtonElement && window.confirm("Diese Sammlung löschen? Die gemerkten Inhalte bleiben erhalten.")) {
           deleteCollection(deleteButton.dataset.deleteCollection || "");
           drawCollectionsDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         const removeCollectionItem = event.target instanceof HTMLElement ? event.target.closest("[data-remove-collection-item]") : null;
         if (removeCollectionItem instanceof HTMLButtonElement) {
           removeItemFromCollection(removeCollectionItem.dataset.collectionId || "", removeCollectionItem.dataset.itemId || "");
           drawCollectionsDashboard(root);
+          drawNextStepsDashboard(root);
           return;
         }
         const exportButton = event.target instanceof HTMLElement ? event.target.closest("[data-export-wirkungsraum]") : null;
@@ -5619,6 +5837,8 @@ const WirkungsraumLayer = (() => {
     drawCollectionsDashboard(root);
     drawLearningDashboard(root);
     drawNotesDashboard(root);
+    drawNewContentDashboard(root, lastVisit);
+    drawNextStepsDashboard(root);
   }
 
   function comparablePath(value) {

@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mein Wirkungsraum | Lerncockpit, Wissensnetz, Notizen und gemerkte Inhalte</title>
-    <meta name="description" content="Mein Wirkungsraum zeigt lokal gemerkte Inhalte, verwandte Inhalte im Wissensnetz, persönliche Notizen, Lernlisten, Lesefortschritt, Akademie-Fortschritt und Sammlungen auf wirkungsoekonomie.de.">
+    <title>Mein Wirkungsraum | Persönliches Dashboard für Lesen, Lernen und Sammeln</title>
+    <meta name="description" content="Mein Wirkungsraum ist das lokale Dashboard für zuletzt gelesene Inhalte, Merkliste, Sammlungen, Lernliste, Akademie-Fortschritt, Notizen, verwandte Inhalte, neue Inhalte und nächste Schritte.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage7">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage8">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -41,16 +41,16 @@
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Mein Wirkungsraum</nav>
           <p class="hero-kicker">Persönlicher Arbeitsraum</p>
           <h1 class="hero-title">Mein Wirkungsraum</h1>
-          <p class="hero-subtitle">Deine lokal gemerkten Inhalte, dein Wissensnetz, Notizen, Lernliste und Akademie-Fortschritte auf wirkungsoekonomie.de.</p>
-          <p class="card-text">Speichere Inhalte mit „⭐ Merken“, sieh verwandte Inhalte zu deinen Themen, notiere eigene Gedanken, lege Lerninhalte mit „Zur Lernliste hinzufügen“ ab und lies lange Seiten später weiter. Alles bleibt in diesem Browser. Es gibt noch kein Login und keine Server-Synchronisierung.</p>
+          <p class="hero-subtitle">Deine lokale Startseite zum Lesen, Lernen, Sammeln und Weiterarbeiten auf wirkungsoekonomie.de.</p>
+          <p class="card-text">Speichere Inhalte mit „⭐ Merken“, lies lange Texte später weiter, bündle Materialien in Sammlungen, halte Notizen fest und sieh passende Anschlüsse im Wissensnetz. Alles bleibt in diesem Browser. Es gibt noch kein Login und keine Server-Synchronisierung.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#zuletzt-gelesen">Weiterlesen</a>
-            <a class="btn btn-secondary" href="#notizen">Notizen</a>
-            <a class="btn btn-secondary" href="#lernliste">Lernliste</a>
-            <a class="btn btn-secondary" href="#akademie-fortschritt">Akademie-Fortschritt</a>
             <a class="btn btn-secondary" href="#gemerkte-inhalte">Gemerkte Inhalte ansehen</a>
-            <a class="btn btn-secondary" href="#wissensnetz">Wissensnetz</a>
             <a class="btn btn-secondary" href="#sammlungen">Sammlungen</a>
+            <a class="btn btn-secondary" href="#lernliste">Lernliste</a>
+            <a class="btn btn-secondary" href="#notizen">Notizen</a>
+            <a class="btn btn-secondary" href="#neue-inhalte">Neue Inhalte</a>
+            <a class="btn btn-secondary" href="#naechste-schritte">Nächste Schritte</a>
             <a class="btn btn-secondary" href="../suche.html">Inhalte suchen</a>
           </div>
         </div>
@@ -84,15 +84,58 @@
         </div>
       </section>
 
-      <section class="section section-soft" id="notizen">
+      <section class="section section-soft" id="gemerkte-inhalte">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Notizen</p>
-            <h2>Meine Notizen</h2>
-            <p>Eigene Gedanken zu Inhalten bleiben ausschließlich in diesem Browser. Sie werden nicht hochgeladen und nicht serverseitig verarbeitet.</p>
+            <p class="hero-kicker">Merkliste</p>
+            <h2>Gemerkte Inhalte</h2>
+            <p>Alles, was du mit „⭐ Merken“ speicherst, landet hier mit Titel, Typ, URL, Kategorie, Tags und Speicherzeitpunkt.</p>
           </div>
-          <div class="wirkungsraum-list" data-notes-list>
-            <article class="card"><p class="card-text">Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.</p></article>
+          <div class="wirkungsraum-filter-row" role="group" aria-label="Gemerkte Inhalte nach Typ filtern">
+            <button class="filter-chip active" type="button" data-saved-type-filter="all" aria-pressed="true">Alle</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="begriffe" aria-pressed="false">Begriffe</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="kapitel" aria-pressed="false">Kapitel</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="dokumente" aria-pressed="false">Dokumente</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="debatten" aria-pressed="false">Debatten</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="werkzeuge" aria-pressed="false">Werkzeuge</button>
+            <button class="filter-chip" type="button" data-saved-type-filter="akademie" aria-pressed="false">Akademie</button>
+          </div>
+          <div class="wirkungsraum-toolbar">
+            <label class="sr-only" for="wirkungsraum-filter">In gemerkten Inhalten suchen</label>
+            <input id="wirkungsraum-filter" type="search" placeholder="In gemerkten Inhalten suchen" data-saved-search>
+            <button class="btn btn-secondary" type="button" data-export-wirkungsraum>Exportieren</button>
+            <button class="btn btn-secondary" type="button" data-clear-wirkungsraum>Merkliste leeren</button>
+          </div>
+          <div class="wirkungsraum-list" data-saved-list>
+            <article class="card"><p class="card-text">Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „⭐ Merken“.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="sammlungen">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Sammlungen</p>
+            <h2>Persönliche Sammlungen</h2>
+            <p>Bündle gemerkte Inhalte thematisch. Sammlungen bleiben lokal in diesem Browser und können über den Wirkungsraum-Export gesichert werden.</p>
+          </div>
+          <form class="wirkungsraum-collection-form" data-collection-create-form>
+            <label class="sr-only" for="collection-title">Sammlungstitel</label>
+            <input id="collection-title" type="text" name="collection-title" placeholder="Neue Sammlung, z. B. Grundlagen" required>
+            <label class="sr-only" for="collection-description">Beschreibung</label>
+            <input id="collection-description" type="text" name="collection-description" placeholder="Beschreibung optional">
+            <button class="btn btn-primary" type="submit">Sammlung erstellen</button>
+          </form>
+          <div class="wirkungsraum-template-row" aria-label="Sammlungsvorlagen">
+            <button class="filter-chip" type="button" data-collection-template="Grundlagen" data-collection-description="Zentrale Einstiege, Begriffe und Referenzseiten.">Grundlagen</button>
+            <button class="filter-chip" type="button" data-collection-template="Wirkungssteuer" data-collection-description="Materialien zu Preisen, Regeln, Kapital und Lenkung.">Wirkungssteuer</button>
+            <button class="filter-chip" type="button" data-collection-template="T-SROI" data-collection-description="Vertiefung zu Transformations-SROI und Bewertung.">T-SROI</button>
+            <button class="filter-chip" type="button" data-collection-template="Medien & Demokratie" data-collection-description="Debatten, Narrative und Öffentlichkeit.">Medien &amp; Demokratie</button>
+            <button class="filter-chip" type="button" data-collection-template="Debatten-Kompass" data-collection-description="Aussagen, Antworten und Playbooks.">Debatten-Kompass</button>
+            <button class="filter-chip" type="button" data-collection-template="Akademie-Lernpfad" data-collection-description="Module und Materialien für den eigenen Lernweg.">Akademie-Lernpfad</button>
+          </div>
+          <div class="wirkungsraum-list wirkungsraum-collection-list" data-collection-list>
+            <article class="card"><p class="card-text">Noch keine Sammlung. Erstelle eine Sammlung oder füge eine Inhaltsseite mit „Zu Sammlung hinzufügen“ hinzu.</p></article>
           </div>
         </div>
       </section>
@@ -127,51 +170,30 @@
           <div class="wirkungsraum-list" data-academy-module-list>
             <article class="card"><p class="card-text">Noch kein Akademie-Lesefortschritt.</p></article>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="naechste-module">
-        <div>
-          <div class="section-header">
+          <div class="section-header wirkungsraum-section-subheader">
             <p class="hero-kicker">Nächste Module</p>
-            <h2>Nächste empfohlene Module</h2>
-            <p>Die Vorschläge orientieren sich an den noch offenen Teilen des Akademie-Grundstudiums.</p>
+            <h3>Nächste empfohlene Module</h3>
           </div>
-          <div class="card-grid three" data-learning-recommendations>
+          <div class="wirkungsraum-list" data-learning-recommendations>
             <article class="card"><p class="card-text">Empfehlungen erscheinen, sobald der Wirkungsraum geladen ist.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section section-soft" id="gemerkte-inhalte">
+      <section class="section section-soft" id="notizen">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Merkliste</p>
-            <h2>Gemerkte Inhalte</h2>
-            <p>Alles, was du mit „⭐ Merken“ speicherst, landet hier mit Titel, Typ, URL, Kategorie, Tags und Speicherzeitpunkt.</p>
+            <p class="hero-kicker">Notizen</p>
+            <h2>Meine Notizen</h2>
+            <p>Eigene Gedanken zu Inhalten bleiben ausschließlich in diesem Browser. Sie werden nicht hochgeladen und nicht serverseitig verarbeitet.</p>
           </div>
-          <div class="wirkungsraum-filter-row" role="group" aria-label="Gemerkte Inhalte nach Typ filtern">
-            <button class="filter-chip active" type="button" data-saved-type-filter="all" aria-pressed="true">Alle</button>
-            <button class="filter-chip" type="button" data-saved-type-filter="begriffe" aria-pressed="false">Begriffe</button>
-            <button class="filter-chip" type="button" data-saved-type-filter="kapitel" aria-pressed="false">Kapitel</button>
-            <button class="filter-chip" type="button" data-saved-type-filter="dokumente" aria-pressed="false">Dokumente</button>
-            <button class="filter-chip" type="button" data-saved-type-filter="debatten" aria-pressed="false">Debatten</button>
-            <button class="filter-chip" type="button" data-saved-type-filter="werkzeuge" aria-pressed="false">Werkzeuge</button>
-            <button class="filter-chip" type="button" data-saved-type-filter="akademie" aria-pressed="false">Akademie</button>
-          </div>
-          <div class="wirkungsraum-toolbar">
-            <label class="sr-only" for="wirkungsraum-filter">In gemerkten Inhalten suchen</label>
-            <input id="wirkungsraum-filter" type="search" placeholder="In gemerkten Inhalten suchen" data-saved-search>
-            <button class="btn btn-secondary" type="button" data-export-wirkungsraum>Exportieren</button>
-            <button class="btn btn-secondary" type="button" data-clear-wirkungsraum>Merkliste leeren</button>
-          </div>
-          <div class="wirkungsraum-list" data-saved-list>
-            <article class="card"><p class="card-text">Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „⭐ Merken“.</p></article>
+          <div class="wirkungsraum-list" data-notes-list>
+            <article class="card"><p class="card-text">Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section section-soft" id="wissensnetz">
+      <section class="section section-soft" id="verwandte-inhalte">
         <div>
           <div class="section-header">
             <p class="hero-kicker">Wissensnetz</p>
@@ -184,61 +206,28 @@
         </div>
       </section>
 
-      <section class="section section-soft" id="sammlungen">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Sammlungen</p>
-            <h2>Persönliche Sammlungen</h2>
-            <p>Bündle gemerkte Inhalte thematisch. Sammlungen bleiben lokal in diesem Browser und können über den Wirkungsraum-Export gesichert werden.</p>
-          </div>
-          <form class="wirkungsraum-collection-form" data-collection-create-form>
-            <label class="sr-only" for="collection-title">Sammlungstitel</label>
-            <input id="collection-title" type="text" name="collection-title" placeholder="Neue Sammlung, z. B. Grundlagen" required>
-            <label class="sr-only" for="collection-description">Beschreibung</label>
-            <input id="collection-description" type="text" name="collection-description" placeholder="Beschreibung optional">
-            <button class="btn btn-primary" type="submit">Sammlung erstellen</button>
-          </form>
-          <div class="wirkungsraum-template-row" aria-label="Sammlungsvorlagen">
-            <button class="filter-chip" type="button" data-collection-template="Grundlagen" data-collection-description="Zentrale Einstiege, Begriffe und Referenzseiten.">Grundlagen</button>
-            <button class="filter-chip" type="button" data-collection-template="Wirkungssteuer" data-collection-description="Materialien zu Preisen, Regeln, Kapital und Lenkung.">Wirkungssteuer</button>
-            <button class="filter-chip" type="button" data-collection-template="T-SROI" data-collection-description="Vertiefung zu Transformations-SROI und Bewertung.">T-SROI</button>
-            <button class="filter-chip" type="button" data-collection-template="Medien & Demokratie" data-collection-description="Debatten, Narrative und Öffentlichkeit.">Medien &amp; Demokratie</button>
-            <button class="filter-chip" type="button" data-collection-template="Debatten-Kompass" data-collection-description="Aussagen, Antworten und Playbooks.">Debatten-Kompass</button>
-            <button class="filter-chip" type="button" data-collection-template="Akademie-Lernpfad" data-collection-description="Module und Materialien für den eigenen Lernweg.">Akademie-Lernpfad</button>
-          </div>
-          <div class="wirkungsraum-list wirkungsraum-collection-list" data-collection-list>
-            <article class="card"><p class="card-text">Noch keine Sammlung. Erstelle eine Sammlung oder füge eine Inhaltsseite mit „Zu Sammlung hinzufügen“ hinzu.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="naechste-schritte">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Orientierung</p>
-            <h2>Empfohlene nächste Schritte</h2>
-            <p>Der Wirkungsraum schlägt dir stabile Einstiege vor. Je mehr du merkst und liest, desto brauchbarer wird deine eigene Arbeitsstruktur.</p>
-          </div>
-          <div class="card-grid four" data-next-steps>
-            <a class="card text-link-card" href="../begriffe/wirkung/"><h3 class="card-title">Wirkung</h3><p class="card-text">Grundbegriff öffnen.</p></a>
-            <a class="card text-link-card" href="../wirkungsradar/live/"><h3 class="card-title">Debattenkarten</h3><p class="card-text">Eine Aussage beantworten.</p></a>
-            <a class="card text-link-card" href="../referenz/"><h3 class="card-title">Referenz</h3><p class="card-text">Online-Buch weiterlesen.</p></a>
-            <a class="card text-link-card" href="../werkzeuge/"><h3 class="card-title">Werkzeuge</h3><p class="card-text">Methode anwenden.</p></a>
-          </div>
-        </div>
-      </section>
-
       <section class="section section-soft" id="neue-inhalte">
         <div>
           <div class="section-header">
             <p class="hero-kicker">Seit letztem Besuch</p>
-            <h2>Neue Inhalte</h2>
+            <h2>Neue Inhalte seit letztem Besuch</h2>
             <p data-last-visit-note>Beim nächsten Besuch zeigt dieser Bereich, wann dein Wirkungsraum zuletzt geöffnet wurde.</p>
           </div>
-          <div class="card-grid three">
-            <a class="card text-link-card" href="../wirkungsradar/"><h3 class="card-title">Debatten-Kompass</h3><p class="card-text">Neue und überarbeitete Karten prüfen.</p></a>
-            <a class="card text-link-card" href="../begriffe/"><h3 class="card-title">Glossar</h3><p class="card-text">Begriffe vertiefen und merken.</p></a>
-            <a class="card text-link-card" href="../downloads.html"><h3 class="card-title">Bibliothek</h3><p class="card-text">Dossiers, Whitepaper und Dokumente öffnen.</p></a>
+          <div class="wirkungsraum-list" data-new-content-list>
+            <article class="card"><p class="card-text">Neue Inhalte werden geladen.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="naechste-schritte">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Orientierung</p>
+            <h2>Empfohlene nächste Schritte</h2>
+            <p>Die Vorschläge bleiben ruhig und arbeitsbezogen: weiterlesen, merken, sammeln, lernen oder Notizen ergänzen.</p>
+          </div>
+          <div class="wirkungsraum-list" data-next-steps>
+            <article class="card"><p class="card-text">Nächste Schritte werden aus deinem lokalen Arbeitsstand abgeleitet.</p></article>
           </div>
         </div>
       </section>
@@ -327,6 +316,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage7"></script>
+    <script src="../assets/js/main.js?v=20260605-wirkungsraum-stage8"></script>
   </body>
 </html>

@@ -618,7 +618,7 @@ function processPage(file) {
   const after = `${parts.before}${normalizedMainOpen}\n${rendered}\n${remaining ? `\n<!-- Nicht zugeordnete Restinhalte nach Template-Vereinheitlichung ausgeblendet, um Doppelungen zu vermeiden. -->\n` : ""}</main>${parts.after.replace(/^<\/main>/, "")}`;
   const finalHtml = cleanPublicTitles(after)
     .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=${VERSION}`)
-    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, "assets/js/main.js?v=20260605-wirkungsraum-stage7")
+    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, "assets/js/main.js?v=20260605-wirkungsraum-stage8")
     .replace(/Debatten-Kompass: So reagierst du/g, "So antwortest du")
     .replace(/Psychologischer Wirkungscheck/g, "Warum zieht dieses Narrativ?")
     .replace(/Wirkungsradar Dossier/g, "Debattenkarte");
