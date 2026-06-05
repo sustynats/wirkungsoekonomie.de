@@ -1258,6 +1258,20 @@ a {
   max-width: 64rem;
 }
 
+.term-hero,
+.term-page {
+  width: min(var(--container), calc(100% - (2 * var(--space-gutter))));
+  margin-inline: auto;
+}
+
+.term-hero {
+  padding-block: clamp(1.5rem, 4vw, 2.7rem);
+}
+
+.term-hero__copy {
+  max-width: var(--content-measure);
+}
+
 .term-meta-row,
 .term-action-row,
 .term-chip-row {
