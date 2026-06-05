@@ -74,6 +74,7 @@
     "build:wirkungsradar-sprint4": "node scripts/wirkungsradar/build-sprint4-trust.mjs",
     "build:wirkungsradar-sprint5": "node scripts/wirkungsradar/build-sprint5-distribution.mjs",
     "build:wirkungsradar-seeds": "node scripts/wirkungsradar/build-narrative-seed-audit.mjs",
+    "audit:debattkompass-quality": "node scripts/wirkungsradar/audit-debattenkompass-quality.mjs",
     "check:wirkungsradar-links": "node scripts/check-wirkungsradar-links.mjs",
     "check:wirkungsradar-sources": "node scripts/check-wirkungsradar-sources.mjs",
     "report:wirkungsradar": "npm run audit:wirkungsradar-v2 && npm run check:wirkungsradar-links && npm run check:wirkungsradar-sources && npm run check:glossary",

@@ -62,7 +62,11 @@ const allowedRootFileExtensions = new Set([
   ".webmanifest",
 ]);
 
-const allowedRootFiles = new Set(["CNAME"]);
+const allowedRootFiles = new Set([
+  "CNAME",
+  "debattkompass_quality_audit.json",
+  "debattkompass_quality_audit.md",
+]);
 
 function removeArtifact() {
   fs.rmSync(artifactDir, { recursive: true, force: true });
