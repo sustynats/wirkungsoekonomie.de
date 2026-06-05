@@ -88,10 +88,10 @@ export function ConsequenceStack({ consequenceStack }) {
 
 export function V3PageNav() {
   const items = [
-    ["Frage", "#host-cockpit"],
-    ["10 Sekunden", "#host-antworten"],
-    ["30 Sekunden", "#host-antworten"],
-    ["2 Minuten", "#host-antworten"],
+    ["Frage", "#behauptung"],
+    ["10 Sekunden", "#10-sekunden"],
+    ["30 Sekunden", "#30-sekunden"],
+    ["2 Minuten", "#2-minuten"],
     ["Folgencheck", "#folgencheck"],
     ["Wirkpfad", "#loesungspfad"],
     ["Kritische Fragen", "#kritische-fragen"],
@@ -150,7 +150,8 @@ export function FrameShiftPlaybook({ frameShiftPlaybook }) {
     ["30 Sekunden", "Einordnung", formats.medium30s || formats.live30s],
     ["2 Minuten", "Vertiefung", formats.long2min || formats.panel2min],
   ].filter(([, , text]) => text);
-  return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="host-antworten" data-v3-frame-shift data-debate-immediate-answer><span id="reaktion" class="sr-only">Antworten</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${answerItems.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+  const idFor = (label, index) => (/10/.test(label) ? "10-sekunden" : /30/.test(label) ? "30-sekunden" : /2/.test(label) ? "2-minuten" : `antwort-${index + 1}`);
+  return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="host-antworten" data-v3-frame-shift data-debate-immediate-answer><span id="reaktion" class="sr-only">Antworten</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${answerItems.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""} id="${idFor(label, index)}"><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SolutionPath({ solutionPath }) {
@@ -189,7 +190,8 @@ export function ResponseFormats({ dossier }) {
     ["2 Minuten", "Langantwort", panel, "Antwort kopieren"],
     ["Ruhig kontern", "Gespräch", calmCounter, "Antwort kopieren"],
   ];
-  return `<section class="section section-soft v2-answer-tabs debate-immediate-answer" id="host-antworten" data-debate-immediate-answer><span id="antwortformate-v2" class="sr-only">Antwortformate</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>10 Sekunden, 30 Sekunden, 2 Minuten.</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${items.slice(0, 3).map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
+  const idFor = (label, index) => (/10/.test(label) ? "10-sekunden" : /30/.test(label) ? "30-sekunden" : /2/.test(label) ? "2-minuten" : `antwort-${index + 1}`);
+  return `<section class="section section-soft v2-answer-tabs debate-immediate-answer" id="host-antworten" data-debate-immediate-answer><span id="antwortformate-v2" class="sr-only">Antwortformate</span><span id="reaktion" class="sr-only">Reaktionshilfe</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${items.slice(0, 3).map(([label, purpose, text, button], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""} id="${idFor(label, index)}"><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary><p>${esc(text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(text)}'>${esc(button)}</button></details>`).join("")}</div></div></section>`;
 }
 
 export function SourceDrawer({ sources }) {
@@ -212,7 +214,7 @@ export function LinkHub({ internalLinks = {} }) {
 }
 
 export function HostCockpitV2({ dossier }) {
-  return `<section class="section v2-host-cockpit debate-claim-section" id="host-cockpit" data-v2-host-cockpit><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Die Frage / Behauptung</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p></div></div></section>`;
+  return `<section class="section v2-host-cockpit debate-claim-section" id="behauptung" data-v2-host-cockpit><span id="host-cockpit" class="sr-only">Host-Cockpit</span><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Die Frage / Behauptung</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(dossier.claim)}</strong></p></div></div></section>`;
 }
 
 export function CriticalQuestions({ dossier }) {

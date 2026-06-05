@@ -367,7 +367,7 @@ function glossaryTermPage(entry) {
     <meta name="description" content="${esc(entry.shortDefinition)}">
     <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/${esc(entry.slug)}/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260605-wirkungsraum-stage11">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260605-debate-tool-order">
   </head>
   <body>
     <header class="site-header" data-search-exclude><a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a><button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button><nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav></header>
@@ -375,7 +375,7 @@ function glossaryTermPage(entry) {
       <section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb"><a href="../../index.html">Start</a> / <a href="../../wirkungsradar/glossar/">Wirkungsradar Glossar</a> / ${esc(entry.label)}</nav><p class="hero-kicker">Glossar</p><h1 class="hero-title">${esc(entry.label)}</h1><p class="hero-subtitle">${esc(entry.shortDefinition)}</p></div></section>
       <section class="section"><div><article class="card"><p class="card-kicker">Einfach erklärt</p><p class="card-text">${esc(entry.hoverDefinition)}</p><p class="card-text">${esc(entry.fullDefinition)}</p><p class="card-text"><strong>Beispiel:</strong> ${esc(entry.plainLanguageExample)}</p><p><a class="btn btn-secondary" href="../../wirkungsradar/glossar/">Zum Wirkungsradar-Glossar</a></p></article></div></section>
     </main>
-    <script src="../../assets/js/main.js?v=20260605-wirkungsraum-stage11"></script>
+    <script src="../../assets/js/main.js?v=20260605-debate-tool-order"></script>
   </body>
 </html>`;
 }
@@ -515,12 +515,12 @@ function shell({ title, description, canonical, base = "../", main }) {
     <meta name="search_section" content="Wirkungsradar">
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-wirkungsraum-stage11">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-debate-tool-order">
   </head>
   <body>
     <header class="site-header" data-search-exclude><a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a><button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button><nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav></header>
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <script src="${base}assets/js/main.js?v=20260605-wirkungsraum-stage11"></script>
+    <script src="${base}assets/js/main.js?v=20260605-debate-tool-order"></script>
   </body>
 </html>`;
 }

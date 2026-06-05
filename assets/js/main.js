@@ -5284,6 +5284,15 @@ const WirkungsraumLayer = (() => {
       if (status) status.textContent = "Notiz gelöscht.";
     });
 
+    const isDebateCompassPage = /^\/wirkungsradar\/live\/[^/]+\/?/.test(path);
+    if (isDebateCompassPage) {
+      const lateAnchor = document.querySelector("[data-community-submission-block], #verwandte-inhalte, #warum-der-satz-zieht, #quellen");
+      if (lateAnchor) {
+        lateAnchor.insertAdjacentElement("afterend", panel);
+        return;
+      }
+    }
+
     const hero = document.querySelector(".hero, .radar-hero, .page-hero, .wirkungsraum-hero");
     if (hero) {
       hero.insertAdjacentElement("afterend", panel);

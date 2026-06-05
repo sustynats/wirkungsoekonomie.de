@@ -4,7 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const RADAR_ROOT = path.join(ROOT, "wirkungsradar");
 const SITE_URL = "https://wirkungsoekonomie.de";
-const VERSION = "20260605-debate-compass-template";
+const VERSION = "20260605-debate-compass-tool-order";
 
 function esc(value) {
   return String(value ?? "")
@@ -219,11 +219,12 @@ function answerTexts(section, claim, title, trueItems, missingItems) {
 
 function toc() {
   const items = [
-    ["Behauptung", "#behauptung"],
-    ["Relevanz", "#relevanz"],
+    ["Frage", "#behauptung"],
+    ["10 Sekunden", "#10-sekunden"],
+    ["30 Sekunden", "#30-sekunden"],
+    ["2 Minuten", "#2-minuten"],
     ["Folgencheck", "#folgencheck"],
     ["Wirkpfad", "#wirkpfad"],
-    ["Antwort", "#reaktion"],
     ["Kritische Fragen", "#kritische-fragen"],
     ["Faktenlage", "#faktenlage"],
     ["Quellen", "#quellen"],
@@ -232,7 +233,7 @@ function toc() {
 }
 
 function claimBlock(claim) {
-  return `<section class="section v2-host-cockpit debate-claim-section" id="host-cockpit" data-v2-host-cockpit><span id="behauptung" class="sr-only">Behauptung</span><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Die Frage / Behauptung</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(claim)}</strong></p></div></div></section>`;
+  return `<section class="section v2-host-cockpit debate-claim-section" id="behauptung" data-v2-host-cockpit><span id="host-cockpit" class="sr-only">Host-Cockpit</span><div class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Die Frage / Behauptung</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">Jemand sagt: <strong>${esc(claim)}</strong></p></div></div></section>`;
 }
 
 function relevanceBlock({ claim, title, trueItems, missingItems, isSocial }) {
@@ -289,7 +290,13 @@ function impactPathBlock(section, claim, answers, trueItems, missingItems) {
 }
 
 function responseBlock(answers) {
-  return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="host-antworten" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktionshilfe</span><div><div class="section-header"><p class="hero-kicker">Reaktionshilfe</p><h2>So antwortest du.</h2><p>10 Sekunden, 30 Sekunden oder 2 Minuten - ohne den Frame zu übernehmen.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${answers.map((item, index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(item.label)}</span><span class="radar-answer-label">${esc(item.purpose)}</span></summary><p>${esc(item.text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(item.text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+  const idFor = (label, index) => {
+    if (/10/.test(label)) return "10-sekunden";
+    if (/30/.test(label)) return "30-sekunden";
+    if (/2/.test(label)) return "2-minuten";
+    return `antwort-${index + 1}`;
+  };
+  return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="host-antworten" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktionshilfe</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${answers.map((item, index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""} id="${idFor(item.label, index)}"><summary><span class="radar-answer-time">${esc(item.label)}</span><span class="radar-answer-label">${esc(item.purpose)}</span></summary><p>${esc(item.text)}</p><button class="copy-chip" type="button" data-copy-text='${copy(item.text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
 }
 
 function criticalQuestionsBlock(section, claim) {
@@ -553,10 +560,9 @@ function DebateCompassPageTemplate(model) {
     model.hero,
     toc(),
     claimBlock(model.claim),
-    relevanceBlock(model),
+    responseBlock(model.answers),
     consequenceBlock(model.consequenceSection, model.claim, model.trueItems, model.missingItems),
     impactPathBlock(model.impactSection, model.claim, model.answers, model.trueItems, model.missingItems),
-    responseBlock(model.answers),
     criticalQuestionsBlock(model.criticalSection, model.claim),
     factsBlock(model.factsSection, model.trueItems, model.missingItems),
     sourcesBlock(model.sourcesSection),
@@ -618,7 +624,7 @@ function processPage(file) {
   const after = `${parts.before}${normalizedMainOpen}\n${rendered}\n${remaining ? `\n<!-- Nicht zugeordnete Restinhalte nach Template-Vereinheitlichung ausgeblendet, um Doppelungen zu vermeiden. -->\n` : ""}</main>${parts.after.replace(/^<\/main>/, "")}`;
   const finalHtml = cleanPublicTitles(after)
     .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=${VERSION}`)
-    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, "assets/js/main.js?v=20260605-wirkungsraum-stage11")
+    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, "assets/js/main.js?v=20260605-debate-tool-order")
     .replace(/Debatten-Kompass: So reagierst du/g, "So antwortest du")
     .replace(/Psychologischer Wirkungscheck/g, "Warum zieht dieses Narrativ?")
     .replace(/Wirkungsradar Dossier/g, "Debattenkarte");
