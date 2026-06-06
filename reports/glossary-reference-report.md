@@ -1,6 +1,6 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-06T12:58:53.403Z
+- Generated: 2026-06-06T14:14:59.649Z
 - Content pages scanned: 1009
 - Glossary terms indexed: 1341
 - Warnings: 566
@@ -39,7 +39,7 @@
 
 - 754 · defined · Kapitel 38 - Das WUStG und die Produktwirkungssteuer - Wirkungsökonomie Online · /referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 27 occurrences, book-chapter +80
 - 739 · defined · Wirkungsumsatzsteuer / Produktwirkungssteuer | Produkte & Konsum · /wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 4, 42 occurrences, field +35
-- 614 · defined · Wirkungsumsatzsteuer · /werkzeuge/wirkungsumsatzsteuer/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 3, 18 occurrences, method +60
+- 614 · defined · Wirkungsumsatzsteuer · /werkzeuge/wirkungsumsatzsteuer/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 3, 21 occurrences, method +60
 - 494 · defined · Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online · /referenz/volltext/ · h2 match, h3 match, definition pattern, related proximity 9, 129 occurrences, book +70
 - 489 · defined · Detailkonzept Wirkungsumsatzsteuer im Rechtsrahmen · /werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/ · title match, h1 match, lead match, related proximity 3, 13 occurrences, whitepaper +55
 - 489 · defined · Detailkonzepte Produkte & Konsum / Wirkungsumsatzsteuer · /wirkungsfelder/produkte-konsum/detailkonzepte/ · title match, h1 match, h3 match, lead match, related proximity 2, 8 occurrences, field +35

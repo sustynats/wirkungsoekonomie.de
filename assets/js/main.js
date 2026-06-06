@@ -1548,7 +1548,11 @@ function getArticleReadMinutes() {
 
 function enhanceLongArticleToc() {
   const articleBody = document.querySelector(".article-body");
-  if (!articleBody || document.querySelector(".article-toc")) {
+  const existingExplicitToc = document.querySelector(
+    ".article-toc, .toc-card[aria-label='Inhaltsverzeichnis'], [data-debate-toc]"
+  );
+
+  if (!articleBody || existingExplicitToc) {
     return;
   }
 

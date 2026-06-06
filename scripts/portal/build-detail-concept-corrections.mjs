@@ -324,7 +324,9 @@ function paragraph(text) {
   return `<p>${escapeHtml(text)}</p>`;
 }
 
-function mdishToHtml(lines, topicTitle) {
+function mdishToHtml(lines, topicTitle, options = {}) {
+  const reservedIds = options.reservedIds || new Set();
+  const usedIds = new Set();
   const html = [];
   const toc = [];
   let para = [];
@@ -336,12 +338,23 @@ function mdishToHtml(lines, topicTitle) {
   for (const raw of lines) {
     const line = raw.trim();
     if (!line || line === topicTitle) continue;
+    if (/^(Inhaltsverzeichnis|Inhaltsübersicht)$/i.test(line)) continue;
     const numbered = line.match(/^(\d{1,2})\.\s+(.+)$/);
     if (numbered) {
       flush();
-      const id = slugify(numbered[2]);
-      toc.push([id, numbered[2]]);
-      html.push(heading(2, id, numbered[2]));
+      const baseId = slugify(numbered[2]);
+      const isRepeat = reservedIds.has(baseId);
+      const preferredId = isRepeat ? `korrekturfassung-${baseId}` : baseId;
+      let id = preferredId;
+      let counter = 2;
+      while (usedIds.has(id)) {
+        id = `${preferredId}-${counter}`;
+        counter += 1;
+      }
+      usedIds.add(id);
+      const label = isRepeat ? `${numbered[2]} aus der Korrekturfassung` : numbered[2];
+      toc.push([id, label]);
+      html.push(heading(isRepeat ? 3 : 2, id, label));
     } else if (/^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß /&+-]{2,80}$/.test(line) && !line.endsWith(".")) {
       flush();
       html.push(`<p class="card-kicker">${escapeHtml(line)}</p>`);
@@ -522,7 +535,11 @@ function dossierBody(rank, title, summary) {
 function detailPage(rank, topic, detailHtml, detailToc) {
   const [slug, title, summary] = topic;
   const rel = `${rank.base}/detailkonzepte/${slug}/index.html`;
-  const fullToc = [...detailChapters.map((chapter) => [slugify(chapter), chapter]), ...detailToc.filter(([id]) => !detailChapters.some((chapter) => slugify(chapter) === id))];
+  const generatedChapterIds = new Set(detailChapters.map((chapter) => slugify(chapter)));
+  const fullToc = [
+    ...detailChapters.map((chapter) => [slugify(chapter), chapter]),
+    ...detailToc.filter(([id]) => !generatedChapterIds.has(id.replace(/^korrekturfassung-/, ""))),
+  ];
   page({
     rel,
     title: `Detailkonzept ${title} | Wirkungsökonomie`,
@@ -616,7 +633,9 @@ function buildRank(rank) {
   for (const topic of rank.topics) {
     const [, title] = topic;
     const extracted = sections.get(title) || [title];
-    const rendered = mdishToHtml(extracted, title);
+    const rendered = mdishToHtml(extracted, title, {
+      reservedIds: new Set(detailChapters.map((chapter) => slugify(chapter))),
+    });
     detailPage(rank, topic, rendered.html, rendered.toc);
     dossierPage(rank, topic);
   }

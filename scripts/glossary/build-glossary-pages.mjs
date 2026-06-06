@@ -67,6 +67,10 @@ const genericUsageNotes = new Set([
   "zwischen wirkung, wirkungspotenzial, wirkungsrisiko, wirkmechanismus, resonanzraum und wirkpfad unterscheiden.",
 ]);
 
+const genericWhyNotes = new Set([
+  "wirkung entsteht erst über deutung, resonanz, vertrauen, handlungsoptionen und rückkopplung.",
+]);
+
 function esc(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -107,6 +111,11 @@ function normalizedPublicText(value) {
 function isGenericUsageNote(value) {
   const normalized = normalizedPublicText(value);
   return !normalized || genericUsageNotes.has(normalized);
+}
+
+function isGenericWhyNote(value) {
+  const normalized = normalizedPublicText(value);
+  return !normalized || genericWhyNotes.has(normalized) || genericUsageNotes.has(normalized);
 }
 
 function normalizedLabel(value) {
@@ -1231,6 +1240,106 @@ function termSummary(term) {
   return publicText(candidates.find((value) => hasRealText(value) && !containsForbiddenPublicText(value)) || termLead(term));
 }
 
+function termCategory(term) {
+  return publicText(term.category || term.themeLabel || term.cluster || "Wirkungsökonomie");
+}
+
+function termLabel(term) {
+  return publicText(term.canonicalLabel || term.label || term.termId);
+}
+
+function termTypeLabel(term) {
+  return publicText(publicTermType(term));
+}
+
+function termRelatedLabels(term, limit = 8) {
+  return (term.relatedTerms || [])
+    .map((slug) => termsBySlug.get(slug)?.canonicalLabel || slug)
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
+function fallbackWhyHtml(term) {
+  const label = termLabel(term);
+  const summary = termSummary(term);
+  const category = termCategory(term);
+  return `<p>Für die Wirkungsökonomie ist „${esc(label)}“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. ${esc(summary)}</p>
+          <p>Im Bereich ${esc(category)} hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.</p>`;
+}
+
+function fallbackUsageHtml(term) {
+  const label = termLabel(term);
+  const type = termTypeLabel(term);
+  const category = termCategory(term);
+  const summary = termSummary(term);
+  return `<p>Den Begriff „${esc(label)}“ nutzen wir, wenn eine Aussage, ein Werkzeug, eine Quelle oder eine Entscheidung präzise eingeordnet werden muss: ${esc(summary)}</p>
+          <p>Als ${esc(type)} aus dem Bereich ${esc(category)} ist er kein dekoratives Stichwort. Er soll helfen, die richtige Prüffrage zu stellen: Was verändert sich, für wen, auf welcher Datenbasis und mit welchen Nebenfolgen?</p>`;
+}
+
+function fallbackAbgrenzungHtml(term) {
+  const label = termLabel(term);
+  const type = termTypeLabel(term);
+  return `<ul>
+            <li>Nicht als bloßes Schlagwort verwenden: „${esc(label)}“ braucht Kontext, Bilanzgrenze und Prüffrage.</li>
+            <li>Nicht mit einer fertigen Bewertung verwechseln: Der Begriff ordnet ein, er entscheidet nicht automatisch.</li>
+            <li>Nicht von Datenqualität trennen: Als ${esc(type)} bleibt er nur belastbar, wenn Quelle, Bedeutung und Grenze sichtbar sind.</li>
+          </ul>`;
+}
+
+function termAtAGlanceHtml(term) {
+  const label = termLabel(term);
+  const summary = termSummary(term);
+  const category = termCategory(term);
+  const related = termRelatedLabels(term, 3);
+  const relatedText = related.length ? ` Er ist besonders anschlussfähig an ${related.map(esc).join(", ")}.` : "";
+  return `<ul>
+            <li>${esc(summary)}</li>
+            <li>Der Begriff gehört zum Bereich ${esc(category)} und dient der präzisen Wirkungsprüfung.</li>
+            <li>Wirkungsökonomisch fragt „${esc(label)}“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.</li>
+            <li>Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie.${relatedText}</li>
+          </ul>`;
+}
+
+function fallbackExamplesHtml(term) {
+  const label = termLabel(term);
+  const category = termCategory(term);
+  return `<ul>
+            <li>In einer Debatte klärt der Begriff, ob über Fakten, Deutung, Wirkungspotenzial oder eingetretene Wirkung gesprochen wird.</li>
+            <li>In einem Werkzeug markiert „${esc(label)}“, welche Eingaben, Quellen oder Grenzen für eine belastbare Einordnung nötig sind.</li>
+            <li>In ${esc(category)} hilft der Begriff, verkürzte Aussagen in eine überprüfbare Wirkungsfrage zu übersetzen.</li>
+          </ul>`;
+}
+
+function fallbackMeasurementHtml(term) {
+  const label = termLabel(term);
+  return `<p>Prüfbar wird „${esc(label)}“, wenn klar ist, welcher Zustand betrachtet wird, welche Quelle herangezogen wird, welche Bilanzgrenze gilt und welche Veränderung tatsächlich gemeint ist.</p>
+          <p>Für die Steuerung zählen deshalb nicht nur Definitionen, sondern Datenqualität, Vergleichsmaßstab, Zeitbezug, Nebenfolgen und die Rückkopplung in Entscheidung, Preis, Regel, Kapital, Kommunikation oder Verhalten.</p>`;
+}
+
+function fallbackDeepGlossaryBlock(term) {
+  if (deepGlossarySectionsBlock(term)) return "";
+  const related = termRelatedLabels(term, 8);
+  const relatedHtml = related.length
+    ? `<section class="term-summary-card"><p class="section-eyebrow">Querverweise</p><h2>Begriffe, die du mitdenken solltest</h2><p>${related.map(esc).join(" · ")}</p></section>`
+    : "";
+  return `<section class="term-summary-card">
+            <p class="section-eyebrow">Wirkungsökonomische Sicht &amp; Einordnung</p>
+            <h2>Wie der Begriff in der WÖk gelesen wird</h2>
+            ${fallbackWhyHtml(term)}
+          </section>
+          <section class="term-summary-card">
+            <p class="section-eyebrow">Beispiele</p>
+            <h2>Wo der Begriff praktisch auftaucht</h2>
+            ${fallbackExamplesHtml(term)}
+          </section>
+          <section class="term-summary-card">
+            <p class="section-eyebrow">Mess- und Steuerungsbezug</p>
+            <h2>Wie daraus eine prüfbare Wirkungsfrage wird</h2>
+            ${fallbackMeasurementHtml(term)}
+          </section>
+          ${relatedHtml}`;
+}
+
 function termDefinitionHtml(term) {
   if (term.termId === "mensch-planet-demokratie") {
     return `<p>Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
@@ -1245,7 +1354,10 @@ function termWhyHtml(term) {
             <p>Der Dreiklang ersetzt die SDGs nicht. Er übersetzt sie.</p>`;
   }
   const usage = !isGenericUsageNote(term.usageNote) ? term.usageNote : "";
-  return paragraphs(term.woekRelation || term.woek_einordnung || term.preferredUsage || usage);
+  const why = !isGenericWhyNote(term.woekRelation || term.woek_einordnung) ? term.woekRelation || term.woek_einordnung : "";
+  const preferred = !isGenericWhyNote(term.preferredUsage) ? term.preferredUsage : "";
+  const html = paragraphs(why || preferred || usage);
+  return html || fallbackWhyHtml(term);
 }
 
 function termUsageHtml(term) {
@@ -1257,12 +1369,7 @@ function termUsageHtml(term) {
   if (hasRealText(explicitUsage) && !containsForbiddenPublicText(explicitUsage)) {
     return paragraphs(explicitUsage);
   }
-  const label = publicText(term.canonicalLabel || term.label || term.termId);
-  const type = publicText(publicTermType(term));
-  const category = publicText(term.category || "Begriff");
-  const summary = termSummary(term);
-  return `<p>Der Begriff „${esc(label)}“ wird in der Wirkungsökonomie genutzt, um die dahinterliegende Frage wirkungsbezogen einzuordnen: ${esc(summary)}</p>
-          <p>Als ${esc(type)} aus dem Bereich ${esc(category)} hilft er, nicht beim Schlagwort stehen zu bleiben, sondern Zustände, Wirkpfade, Bilanzgrenzen und Rückkopplungen genauer zu prüfen.</p>`;
+  return fallbackUsageHtml(term);
 }
 
 function mythBlock(term) {
@@ -1934,9 +2041,9 @@ for (const term of indexedTerms) {
   ].filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)).map((item) => `<span>${esc(item)}</span>`).join("");
   const sectionCards = [
     optionalTermSection({ eyebrow: "Definition", title: "Was bedeutet der Begriff?", html: termDefinitionHtml(term) }),
-    optionalTermSection({ eyebrow: "Wirkungsökonomie", title: "Warum ist das wichtig?", html: termWhyHtml(term) }),
-    optionalTermSection({ eyebrow: "Verwendung", title: "So wird der Begriff genutzt", html: termUsageHtml(term) }),
-    optionalTermSection({ eyebrow: "Abgrenzung", title: "Nicht verwechseln mit", html: listItems(term.doNotConfuseWith) }),
+    optionalTermSection({ eyebrow: "Wirkungsökonomie", title: "Einordnung in der Wirkungsökonomie", html: termWhyHtml(term) }),
+    optionalTermSection({ eyebrow: "Verwendung", title: "Verwendung", html: termUsageHtml(term) }),
+    optionalTermSection({ eyebrow: "Abgrenzung", title: "Abgrenzung", html: listItems(term.doNotConfuseWith) || fallbackAbgrenzungHtml(term) }),
   ].filter(Boolean).join("");
   const sourceHtml = [sourceReferenceBlock(term), sourceList(term)].filter(Boolean).join("");
   const body = term.slug === "sexarbeit"
@@ -1956,13 +2063,14 @@ for (const term of indexedTerms) {
         </header>
         <section class="term-summary-card" aria-labelledby="term-summary-title">
           <h2 id="term-summary-title">Auf einen Blick</h2>
-          <p>${esc(termSummary(term))}</p>
+          ${termAtAGlanceHtml(term)}
         </section>
         ${sectionCards ? `<div class="term-section-grid">${sectionCards}</div>` : ""}
 ${termExtraBlock(term)}
 ${mythBlock(term)}
 ${learningBlock(term)}
 ${deepGlossarySectionsBlock(term)}
+${fallbackDeepGlossaryBlock(term)}
 ${relatedTermsChips(term)}${relatedContentBlock(term)}
 ${chapterBlock(term)}
         ${sourceHtml ? `<section class="meta-box">
