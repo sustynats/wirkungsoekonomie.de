@@ -48,6 +48,7 @@ const feedSpecs = [
     title: "Journal der Wirkungsökonomie",
     link: `${site}/blog.html`,
     description: "Neue Journalartikel und Einordnungen der Wirkungsökonomie zu Politik, Wirtschaft, Medien, Klima, Demokratie und Wirkung.",
+    fromBlogIndex: true,
     patterns: [
       "blog/*/index.html",
       "journal/*/index.html",
@@ -169,6 +170,26 @@ function itemsFor(patterns) {
   return matched.slice(0, 120);
 }
 
+function itemsFromBlogIndex() {
+  const indexFile = path.join(root, "assets", "data", "blog-index.json");
+  if (!fs.existsSync(indexFile)) return [];
+  const posts = JSON.parse(fs.readFileSync(indexFile, "utf8"));
+  return posts
+    .filter((post) => post.status === "published")
+    .map((post) => {
+      const date = new Date(`${post.date || ""}T00:00:00`);
+      return {
+        title: stripTags(post.title || "Journalbeitrag"),
+        description: stripTags(post.excerpt || post.description || "").slice(0, 320),
+        url: new URL(post.url || "/blog.html", site).href,
+        date: Number.isNaN(date.getTime()) ? new Date() : date,
+      };
+    })
+    .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
+    .sort((a, b) => b.date - a.date)
+    .slice(0, 120);
+}
+
 function renderFeed(spec, items) {
   const now = new Date().toUTCString();
   const itemXml = items.map((item) => `    <item>
@@ -215,7 +236,7 @@ function upsertHeadLinks(file, specs) {
 fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
-  const items = itemsFor(spec.patterns);
+  const items = spec.fromBlogIndex ? itemsFromBlogIndex() : itemsFor(spec.patterns);
   fs.writeFileSync(path.join(feedDir, spec.file), renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);
 }

@@ -40,6 +40,20 @@ function stripTags(html) {
 }
 
 function finalLabel(inner, relativeFile) {
+  const knownLabels = {
+    "wirkungsradar/debattenkarten/index.html": "Debattenkarten",
+    "wirkungsradar/live/index.html": "Antwortkarten",
+    "wirkungsradar/narrative/index.html": "Narrative",
+    "wirkungsradar/antwort-playbooks/index.html": "Antwort-Playbooks",
+    "wirkungsradar/host-playbook/index.html": "Antwort-Playbooks",
+    "wirkungsradar/methode/index.html": "Methode",
+    "wirkungsradar/psychologie/index.html": "Psychologie",
+    "wirkungsradar/themen/index.html": "Themen",
+    "wirkungsradar/narrativ-einreichen/index.html": "Narrativ einreichen",
+    "wirkungsradar/pruefprozess/index.html": "Prüfprozess",
+  };
+  if (knownLabels[relativeFile]) return knownLabels[relativeFile];
+
   const visible = stripTags(inner);
   const parts = visible
     .split(/\s+\/\s+/)

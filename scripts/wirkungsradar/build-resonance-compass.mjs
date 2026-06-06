@@ -346,6 +346,11 @@ function enhanceRadarHome() {
   const file = path.join(ROOT, "wirkungsradar/index.html");
   if (!fs.existsSync(file)) return;
   let html = fs.readFileSync(file, "utf8");
+  if (html.includes('id="orientierung"')) {
+    html = html.replace(/\s*<section class="section section-soft" data-public-impact-room>[\s\S]*?<\/section>\s*/, "\n");
+    fs.writeFileSync(file, html, "utf8");
+    return;
+  }
   if (!html.includes("data-public-impact-room")) {
     const block = `<section class="section section-soft" data-public-impact-room>
       <div>

@@ -13,7 +13,20 @@ function walk(dir) {
   });
 }
 
-function normalize(html) {
+function normalize(html, relativeFile = "") {
+  if (relativeFile === "wirkungsradar/index.html") {
+    return html
+      .replace(/Wirkungsradar Narrative/g, "Narrative")
+      .replace(/Wirkungsradar-Narrative/g, "Narrative")
+      .replace(/Wirkungsradar-Live/g, "Debatten-Kompass")
+      .replace(/Wirkungsradar Live/g, "Debatten-Kompass")
+      .replace(/Live-Karten/g, "Debattenkarten")
+      .replace(/Live-Karte/g, "Debattenkarte")
+      .replace(/Host-Cockpit(?: · [^<]*)?/g, "Schnellantwort")
+      .replace(/Host-Playbook/g, "Antwort-Playbooks")
+      .replace(/Gute R(?:ü|ue)ckfrage/g, "Die bessere Frage");
+  }
+
   return html
     .replace(/(<title>[^<]*?)\s+\|\s+Wirkungsradar Narrative(\s*\|\s*Wirkungsökonomie)?(<\/title>)/g, "$1 | Mythen & Narrative$2$3")
     .replace(/(<title>[^<]*?)\s+\|\s+Wirkungsradar Themen(\s*\|\s*Wirkungsökonomie)?(<\/title>)/g, "$1 | Themencluster$2$3")
@@ -76,7 +89,8 @@ function normalize(html) {
 let changed = 0;
 for (const file of walk(TARGET)) {
   const before = fs.readFileSync(file, "utf8");
-  const after = normalize(before);
+  const relative = path.relative(ROOT, file).split(path.sep).join("/");
+  const after = normalize(before, relative);
   if (after !== before) {
     fs.writeFileSync(file, after);
     changed += 1;

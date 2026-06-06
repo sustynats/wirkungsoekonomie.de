@@ -209,9 +209,11 @@
       .join("");
     const cardClass = featured ? "journal-card journal-feature-card" : "journal-card";
     const titleLevel = featured ? "h3" : "h3";
+    const image = normalizeImagePath(post.image);
 
     return `
       <article class="${cardClass}">
+        ${image ? `<div class="blog-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt || post.title)}" decoding="async" loading="lazy"></div>` : ""}
         <p class="journal-meta">
           <span>${escapeHtml(post.category)}</span>
           <span aria-hidden="true">·</span>

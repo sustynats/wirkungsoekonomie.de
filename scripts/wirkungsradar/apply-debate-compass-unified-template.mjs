@@ -580,7 +580,7 @@ function shouldHaveCommunity(file, html) {
 function normalizeGeneralRadarPage(file) {
   let html = fs.readFileSync(file, "utf8");
   const before = html;
-  html = cleanPublicTitles(html)
+  html = (rel(file) === "wirkungsradar/index.html" ? html : cleanPublicTitles(html))
     .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=${VERSION}`);
   if (shouldHaveCommunity(file, html) && !/data-community-submission-block/.test(html) && html.includes("</main>")) {
     html = html.replace("</main>", `${communityBlock(file)}\n</main>`);

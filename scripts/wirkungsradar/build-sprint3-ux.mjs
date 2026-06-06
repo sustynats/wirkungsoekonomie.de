@@ -203,29 +203,186 @@ function searchPanel({ id = "radar-suche", placeholder }) {
   </section>`;
 }
 
+function publicImpactRoomNav() {
+  const links = [
+    ["Öffentlicher Wirkungsraum", "../oeffentlicher-wirkungsraum/"],
+    ["Debattenkarten", "debattenkarten/"],
+    ["Narrative", "narrative/"],
+    ["Resonanz-Kompass", "resonanz-kompass/"],
+    ["Agenda-Radar", "agenda-radar/"],
+    ["Ursachen-Navigator", "ursachen-navigator/"],
+    ["Resilienz-Prinzipien", "resilienz-prinzipien/"],
+  ];
+  return `<nav class="topic-subnav public-impact-room-nav" aria-label="Öffentlicher Wirkungsraum Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
+}
+
+function intentCard({ kicker, title, text, href, button }) {
+  return `<article class="card radar-entry-card">
+    <p class="card-kicker">${esc(kicker)}</p>
+    <h3 class="card-title">${esc(title)}</h3>
+    <p class="card-text">${esc(text)}</p>
+    <p><a class="btn btn-secondary" href="${esc(href)}">${esc(button)}</a></p>
+  </article>`;
+}
+
+function toolCard({ title, text, href }) {
+  return `<a class="card text-link-card radar-tool-card" href="${esc(href)}">
+    <p class="card-kicker">Werkzeug</p>
+    <h3 class="card-title">${esc(title)}</h3>
+    <p class="card-text">${esc(text)}</p>
+  </a>`;
+}
+
+function directoryCard({ kicker, title, text, href, button }) {
+  return `<article class="card radar-directory-card">
+    <p class="card-kicker">${esc(kicker)}</p>
+    <h3 class="card-title">${esc(title)}</h3>
+    <p class="card-text">${esc(text)}</p>
+    <p><a class="btn btn-secondary" href="${esc(href)}">${esc(button)}</a></p>
+  </article>`;
+}
+
+function landingDebateCard(dossier) {
+  const href = `live/${dossier.slug}/`;
+  const claim = dossier.claim || dossier.title;
+  const question = dossier.cockpit?.betterQuestion || "Welche Wirkung entsteht, wenn wir dieser Deutung folgen?";
+  return `<article class="card radar-landing-debate-card" data-radar-card data-search="${attr([dossier.title, claim, question, topicFor(dossier), narrativeFor(dossier)].join(" "))}">
+    <div class="radar-card-badges"><span>${esc(topicFor(dossier))}</span><span>${esc(narrativeFor(dossier))}</span></div>
+    <h3 class="card-title">${esc(dossier.title)}</h3>
+    <p class="card-text"><strong>Behauptung:</strong> ${esc(claim)}</p>
+    <p class="card-text"><strong>Systemfrage:</strong> ${esc(question)}</p>
+    <p><a class="btn btn-primary" href="${esc(href)}">Karte öffnen</a></p>
+  </article>`;
+}
+
 function homePage() {
   const cards = lighthouseSlugs.map((slug) => p0DossiersV2.find((dossier) => dossier.slug === slug)).filter(Boolean).slice(0, 12);
-  const extraHead = `<meta name="search_tags" content="Wirkungsradar, Fakten, Folgen, Frames, Psychologie, bessere Antworten, Narrativ einreichen">`;
+  const extraHead = `<meta name="search_tags" content="Wirkungsradar, Öffentlicher Wirkungsraum, Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator, Resilienz-Prinzipien, Debattenkarten">`;
+  const intentCards = [
+    {
+      kicker: "Debattenkarte",
+      title: "Eine konkrete Debatte verstehen",
+      text: "Du hast einen Satz gehört und suchst eine konkrete Antwort mit Behauptung, Sofortantwort, Folgencheck, Wirkpfad und Quellen.",
+      href: "debattenkarten/",
+      button: "Debattenkarten ansehen",
+    },
+    {
+      kicker: "Narrativ",
+      title: "Ein Narrativ analysieren",
+      text: "Du willst erkennen, welche Geschichte unter einer Aussage liegt: Schuldige, Ohnmacht, Aufschub, Kontrollverlust oder falsche Freiheit.",
+      href: "narrative/",
+      button: "Narrative öffnen",
+    },
+    {
+      kicker: "Resonanz",
+      title: "Aufmerksamkeit einordnen",
+      text: "Ein Thema dominiert gerade alles. Der Resonanz-Kompass fragt, ob die öffentliche Aufmerksamkeit zum tatsächlichen Wirkungsgewicht passt.",
+      href: "resonanz-kompass/",
+      button: "Resonanz prüfen",
+    },
+    {
+      kicker: "Agenda",
+      title: "Unsichtbare Themen finden",
+      text: "Du fragst dich, welche Wirkungsfragen leise bleiben, obwohl sie für Mensch, Planet und Demokratie wichtig sind.",
+      href: "agenda-radar/",
+      button: "Agenda-Radar öffnen",
+    },
+    {
+      kicker: "Ursache",
+      title: "Ursachen verstehen",
+      text: "Der Aufreger ist nur die Oberfläche. Der Ursachen-Navigator führt von Symptomen zu Systemfragen und wirksamen Hebeln.",
+      href: "ursachen-navigator/",
+      button: "Ursachen öffnen",
+    },
+    {
+      kicker: "Resilienz",
+      title: "Demokratie resilienter machen",
+      text: "Du willst Debatten widerstandsfähiger gegen Empörung, Ablenkung und Manipulation machen.",
+      href: "resilienz-prinzipien/",
+      button: "Prinzipien ansehen",
+    },
+  ];
+  const tools = [
+    {
+      title: "Debatten-Kompass",
+      text: "Richtig antworten, wenn ein Narrativ schon wirkt: Behauptung verstehen, Antwort finden, Wirkpfad prüfen.",
+      href: "debattenkarten/",
+    },
+    {
+      title: "Resonanz-Kompass",
+      text: "Erkennen, wann Aufmerksamkeit selbst zum Problem wird und andere Wirkungsfragen verdrängt.",
+      href: "resonanz-kompass/",
+    },
+    {
+      title: "Agenda-Radar",
+      text: "Sichtbar machen, welche wichtigen Wirkungsfragen zu wenig öffentlichen Raum bekommen.",
+      href: "agenda-radar/",
+    },
+    {
+      title: "Ursachen-Navigator",
+      text: "Vom Stöckchen zur Systemfrage: Welche Ursache liegt unter dem sichtbaren Aufreger?",
+      href: "ursachen-navigator/",
+    },
+    {
+      title: "Resilienz-Prinzipien",
+      text: "Prüfen, wie Öffentlichkeit trotz Konflikt lernfähig, fair und handlungsfähig bleibt.",
+      href: "resilienz-prinzipien/",
+    },
+  ];
+  const directories = [
+    {
+      kicker: "Vollständiges Verzeichnis",
+      title: "Alle Debattenkarten",
+      text: "Die 12 Karten auf dieser Seite sind nur eine kuratierte Auswahl. Hier findest du das vollständige Kartenraster mit Suche, Themenfiltern und allen veröffentlichten Antwortseiten.",
+      href: "debattenkarten/",
+      button: "Alle Debattenkarten öffnen",
+    },
+    {
+      kicker: "Schnellantworten",
+      title: "Antwortkarten",
+      text: "Für Kommentarspalten, Live-Situationen und Panels: kurze Antwort, längere Einordnung und Quellenzugang.",
+      href: "live/",
+      button: "Antwortkarten öffnen",
+    },
+    {
+      kicker: "Muster verstehen",
+      title: "Narrativbibliothek",
+      text: "Ohnmacht, Sündenbock, Kontrollverlust, Aufschub und andere Muster erklären, ohne sie unnötig zu verstärken.",
+      href: "narrative/",
+      button: "Narrative öffnen",
+    },
+    {
+      kicker: "Öffentlicher Wirkungsraum",
+      title: "Alle Werkzeuge",
+      text: "Vom Debatten-Kompass zu Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator und Resilienz-Prinzipien.",
+      href: "../oeffentlicher-wirkungsraum/",
+      button: "Wirkungsraum öffnen",
+    },
+  ];
   const main = `
     <section class="hero radar-page-hero radar-sprint-hero">
       <div class="hero-grid">
         <div class="radar-hero-copy">
-          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / Debatten-Kompass</nav>
-          <p class="hero-kicker">Debatten-Kompass</p>
-          <h1 class="hero-title">Debatten-Kompass</h1>
-          <p class="hero-subtitle">Mythen erkennen. Fakten klären. Folgen verstehen. Besser antworten.</p>
-          <p class="radar-sprint-lead">Der Debatten-Kompass hilft dir, öffentliche Aussagen schnell einzuordnen: Was stimmt? Was fehlt? Welcher Frame wird gesetzt? Welche Folgen hätte falsches Handeln? Und wie antwortest du, ohne das Narrativ zu verstärken?</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#radar-suche">Antwort finden</a><a class="btn btn-secondary" href="debattenkarten/">Debattenkarten öffnen</a><a class="btn btn-secondary" href="narrative/">Mythen & Narrative</a><a class="btn btn-secondary" href="methode/">Wirkungsradar-Methode</a></div>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / <a href="../oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / Debatten-Kompass</nav>
+          <p class="hero-kicker">Öffentlicher Wirkungsraum</p>
+          <h1 class="hero-title">Wirkungsradar</h1>
+          <p class="hero-subtitle">Nicht jedes laute Thema ist wichtig. Und nicht jedes wichtige Thema ist laut.</p>
+          <p class="radar-sprint-lead">Das Wirkungsradar hilft, öffentliche Debatten nicht nur als Streit über Aussagen zu lesen, sondern als Wirkungsräume: Welche Narrative erzeugen Resonanz? Welche Themen bekommen zu viel Aufmerksamkeit? Welche wichtigen Fragen bleiben unsichtbar? Und welche Ursachen liegen unter den Aufregern?</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="debattenkarten/">Debattenkarten ansehen</a><a class="btn btn-secondary" href="../oeffentlicher-wirkungsraum/">Öffentlichen Wirkungsraum verstehen</a></div>
         </div>
         <figure class="radar-hero-visual"><img src="../assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp" alt="Debatten-Kompass: Fakten, Frames und Folgen" width="1659" height="948" decoding="async"></figure>
       </div>
     </section>
-    ${searchPanel({ placeholder: "E-Autos sind schlimmer, Deutschland nur 2 %, Migration kostet nur..." })}
-    ${radarNav("./")}
-    <section class="section" id="schnell-antworten"><div><div class="section-header"><p class="hero-kicker">Schnell antworten</p><h2>Debattenkarten mit Quellenstand.</h2><p>Kompakt für Kommentare, Livestreams, Panels, Unterricht und Redaktion. Keine Abstracts, keine Textwand.</p></div><div class="card-grid three">${cards.map((dossier) => card(dossier, { base: "live/", compact: true })).join("")}</div></div></section>
-    <section class="section section-soft" id="mythen-narrative"><div><div class="section-header"><p class="hero-kicker">Mythen & Narrative verstehen</p><h2>Warum mehr als Faktencheck?</h2><p>Ein Faktencheck fragt, ob eine Aussage stimmt. Der Debatten-Kompass fragt zusätzlich, was die Aussage bewirkt: welche Gefühle sie aktiviert, was sie ausblendet, welche Folgen sie hat und welche Lösung den Zustand verbessert.</p></div><div class="card-grid six">${["Fakt", "Frame", "Psychologie", "Folgen", "Systemwirkung", "Lösung"].map((title) => `<article class="card"><p class="card-kicker">${esc(title)}</p><p class="card-text">${esc(methodLine(title))}</p></article>`).join("")}</div><p><a class="btn btn-primary" href="methode/">Wirkungsradar-Methode verstehen</a></p></div></section>
+    ${publicImpactRoomNav()}
+    <section class="section radar-intent-section" id="orientierung"><div><div class="section-header"><p class="hero-kicker">Orientierung</p><h2>Was möchtest Du gerade verstehen?</h2><p>Wähle den Einstieg nach Deiner Situation: konkrete Aussage, Narrativ, Aufmerksamkeit, Agenda, Ursache oder demokratische Resilienz.</p></div><div class="card-grid two">${intentCards.map(intentCard).join("")}</div></div></section>
+    <section class="section section-soft" id="alle-radar-seiten"><div><div class="section-header"><p class="hero-kicker">Alle Radar-Seiten</p><h2>Die folgenden Karten sind nur der schnelle Einstieg.</h2><p>Das Wirkungsradar besteht aus deutlich mehr als den ausgewählten Einstiegskarten: Debattenkarten, Antwortkarten, Narrative, Resonanzmuster, Agenda-Themen, Ursachenpfade und Methodenseiten. Wenn du nicht sofort die passende Karte siehst, öffne das vollständige Verzeichnis oder nutze die Suche.</p></div><div class="card-grid two">${directories.map(directoryCard).join("")}</div></div></section>
+    <section class="section" id="begriffe"><div><div class="section-header"><p class="hero-kicker">Begriffe sauber trennen</p><h2>Wirkungsradar, Debatten-Kompass und Debattenkarten.</h2><p>Die Begriffe gehören zusammen, meinen aber nicht dasselbe.</p></div><div class="card-grid three"><article class="card"><p class="card-kicker">Wirkungsradar</p><h3 class="card-title">Der gesamte Analysebereich</h3><p class="card-text">Das Wirkungsradar ist der Einstieg in öffentliche Aussagen, Narrative, Resonanz, Agenda, Ursachen und Resilienz.</p></article><article class="card"><p class="card-kicker">Debatten-Kompass</p><h3 class="card-title">Das Antwortwerkzeug</h3><p class="card-text">Der Debatten-Kompass hilft bei einer konkreten Behauptung: Was wird behauptet, was antworte ich, welche Folgen und Quellen zählen?</p></article><article class="card"><p class="card-kicker">Debattenkarten</p><h3 class="card-title">Die einzelnen Fallseiten</h3><p class="card-text">Debattenkarten sind konkrete Seiten zu einzelnen Aussagen. Jede Karte führt von der Behauptung zur besseren Systemfrage.</p></article></div></div></section>
+    <section class="section section-soft" id="aktuelle-debattenkarten"><div><div class="section-header"><p class="hero-kicker">Kuratierte Auswahl</p><h2>Direkt in konkrete Aussagen einsteigen.</h2><p>Diese Auswahl zeigt typische Einstiege. Die vollständige Übersicht mit allen veröffentlichten Radar-Seiten liegt unter Debattenkarten und Antwortkarten.</p></div><div class="card-grid two radar-landing-card-grid">${cards.map(landingDebateCard).join("")}</div><p class="section-action"><a class="btn btn-primary" href="debattenkarten/">Alle Debattenkarten anzeigen</a><a class="btn btn-secondary" href="live/">Alle Antwortkarten anzeigen</a></p></div></section>
+    <section class="section" id="mehr-als-faktencheck"><div><div class="section-header"><p class="hero-kicker">Methode</p><h2>Warum das Wirkungsradar mehr ist als ein Faktencheck.</h2></div><article class="card radar-method-card"><p>Ein Faktencheck fragt: <strong>Stimmt das?</strong></p><p>Das Wirkungsradar fragt zusätzlich: <strong>Warum findet diese Aussage Resonanz? Welche Aufmerksamkeit bindet sie? Welche Ursachen verdeckt sie? Welche Wirkungspotenziale entstehen für Mensch, Planet und Demokratie?</strong></p><p>Ein Faktencheck prüft Aussagen. Das Wirkungsradar liest Wirkpfade.</p><p>Wirkung ist neutral: Sie ist die tatsächliche Veränderung von Zuständen. Entscheidend ist, ob aus Wirkungspotenzial, Resonanzraum und Wirkpfad positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher wird - oder ob Wirkungsrisiken verdeckt werden.</p></article></div></section>
+    <section class="section section-soft" id="werkzeuge"><div><div class="section-header"><p class="hero-kicker">Öffentlicher Wirkungsraum</p><h2>Die fünf Werkzeuge.</h2><p>Die Werkzeuge gehören zusammen: Debatten verstehen, Resonanz erkennen, Agenda-Lücken sehen, Ursachen klären und demokratische Resilienz stärken.</p></div><div class="card-grid two">${tools.map(toolCard).join("")}</div></div></section>
+    <section class="section" id="merkhilfe"><div><article class="card radar-memory-card"><p class="card-kicker">Die einfache Merkhilfe</p><h2>Die meisten Menschen diskutieren über den Stein. Das Wirkungsradar analysiert die Wellen.</h2><p>Der Stein ist die Aussage. Die Wellen sind Aufmerksamkeit, Resonanz, Narrative, Wirkpfade und Folgen. Wirkungsökonomisch wird erst dann sichtbar, ob eine Debatte Probleme löst - oder sie nur lauter macht.</p></article></div></section>
   `;
-  return shell({ title: "Debatten-Kompass - Mythen erkennen, Fakten klären, besser antworten", description: "Schnelle Antwort, Faktenlage, Folgencheck, Frame-Shift und Quellen zu öffentlichen Aussagen, Mythen und Narrativen.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/", base: "../", main, extraHead });
+  return shell({ title: "Wirkungsradar - Debatten verstehen, Aufmerksamkeit gewichten, Ursachen erkennen", description: "Das Wirkungsradar der Wirkungsökonomie hilft, öffentliche Debatten systemisch zu lesen: Narrative verstehen, Aufmerksamkeit gewichten, Ursachen erkennen und demokratische Resilienz stärken.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/", base: "../", main, extraHead });
 }
 
 function methodLine(title) {
