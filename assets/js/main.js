@@ -1208,8 +1208,9 @@ function initGlobalWirkungsradarBridge() {
   const path = window.location.pathname;
   const normalizedPath = path.endsWith("/") ? path : `${path}/`;
   const isRadarPage = normalizedPath.includes("/wirkungsradar/");
+  const isFocusedToolPage = /\/erleben\/medienwirkungscheck\/$/.test(normalizedPath);
 
-  if (isRadarPage || document.querySelector("[data-global-radar-bridge]") || document.querySelector(".document-paper-reader")) {
+  if (isRadarPage || isFocusedToolPage || document.querySelector("[data-global-radar-bridge]") || document.querySelector(".document-paper-reader")) {
     return;
   }
 

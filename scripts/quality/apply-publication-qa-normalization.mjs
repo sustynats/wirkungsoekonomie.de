@@ -202,7 +202,7 @@ function normalizeText(value) {
     .replace(/<\/?(?:strong|em|sub|sup|span|br)\b[^>]*>/gi, "");
   for (const [from, to] of TEXT_REPLACEMENTS) text = text.replaceAll(from, to);
   text = text.replace(/CO2e/g, "CO₂e");
-  text = text.replace(/\bCO2(?=(?:\b|[-–—]))/g, "CO₂");
+  text = text.replace(/\bCO2(?=(?:\b|[-–-]))/g, "CO₂");
   return text;
 }
 

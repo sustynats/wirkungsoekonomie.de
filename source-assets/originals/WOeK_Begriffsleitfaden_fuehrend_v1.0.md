@@ -59,7 +59,7 @@ Die Wirkungsökonomie entscheidet nicht aus privater Moral heraus, was positiv o
    Wirkungspotenzial ist die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung.
 
 5. **Bei Sprache, Medien und Narrativen vorsichtig sein.**  
-   Dort geht es meist um Wirkungspotenziale, Resonanzräume, Wirkpfade und Risiken — nicht um bereits empirisch nachgewiesene Wirkung.
+   Dort geht es meist um Wirkungspotenziale, Resonanzräume, Wirkpfade und Risiken - nicht um bereits empirisch nachgewiesene Wirkung.
 
 6. **Wirkstoff nur als Analogie verwenden.**  
    Ein Wirkstoff ist nicht selbst Wirkung. Er ist ein Auslöser mit Wirkungspotenzial.
@@ -71,7 +71,7 @@ Die Wirkungsökonomie entscheidet nicht aus privater Moral heraus, was positiv o
    Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Tiere, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität sind nicht beliebig verrechenbar.
 
 9. **Wirkungswahrheit nicht als Wahrheitsmonopol formulieren.**  
-   Der Begriff beschreibt Wirkungsnähe, Datenklarheit und Transparenz über Folgen — keine absolute Wahrheitshoheit.
+   Der Begriff beschreibt Wirkungsnähe, Datenklarheit und Transparenz über Folgen - keine absolute Wahrheitshoheit.
 
 10. **Wenige WÖk-Prägungsbegriffe konsequent verwenden.**  
    Keine Begriffsflut. Präzision vor Neologismen.
@@ -260,7 +260,7 @@ Diese Begriffe sollen künftig erkennbar mit der Wirkungsökonomie verbunden wer
 
 **Verwendung:** Ein gesellschaftlicher Wirkstoff kann ein Gesetz, eine Steuer, ein Preis, ein Produkt, ein Narrativ, ein Medienformat, eine Technologie oder ein Kapitalfluss sein. Er ist nicht selbst Wirkung. Er kann erwünschte Wirkung, Nebenwirkungen, Wechselwirkungen oder schädliche Wirkung auslösen.
 
-**Pflichtformulierung:** Wenn der Begriff verwendet wird, möglichst schreiben: „gesellschaftlicher Wirkstoff — als Analogie“.
+**Pflichtformulierung:** Wenn der Begriff verwendet wird, möglichst schreiben: „gesellschaftlicher Wirkstoff - als Analogie“.
 
 ### Wirkungspotenzial
 
@@ -529,7 +529,7 @@ Diese Begriffe sollen künftig erkennbar mit der Wirkungsökonomie verbunden wer
 | Wirkung misst Richtung. | Wirkung zeigt Zustandsveränderung; die Wirkungsbewertung zeigt Richtung. |
 | Das Narrativ wirkt demokratiefeindlich. | Das Narrativ öffnet Resonanzräume, die Vertrauen, Diskursfähigkeit und demokratische Stabilität schwächen. |
 | Das ist die Wirkung der Aussage. | Das ist ein plausibler Wirkpfad bzw. ein Wirkungspotenzial der Aussage. |
-| Wirkstoffe der Spaltung. | Resonanzfaktoren der Spaltung oder gesellschaftliche Wirkstoffe der Spaltung — als Analogie. |
+| Wirkstoffe der Spaltung. | Resonanzfaktoren der Spaltung oder gesellschaftliche Wirkstoffe der Spaltung - als Analogie. |
 | Gute Wirkung muss sich lohnen. | Positive Netto-Wirkung muss sich lohnen. |
 | Das Reporting zeigt Wirkung. | Das Reporting zeigt Daten; erst Bewertung und Rückkopplung machen Wirkung steuerungsrelevant. |
 
@@ -583,7 +583,7 @@ Diese drei Begriffe sollen künftig besonders bewusst geprägt werden:
 
 ### Wirkungsblindheit
 
-Beschreibt das Problem: Wir messen Kapital, Gewinn, Wachstum, Output und Reichweite — aber nicht konsequent, was dadurch mit Mensch, Planet und Demokratie geschieht.
+Beschreibt das Problem: Wir messen Kapital, Gewinn, Wachstum, Output und Reichweite - aber nicht konsequent, was dadurch mit Mensch, Planet und Demokratie geschieht.
 
 ### Wirkungswahrheit
 
@@ -625,7 +625,7 @@ Diese Kurzdefinitionen sind für Hover, Suche, Karten und kurze Website-Texte zu
 - **Wirkung:** tatsächliche Zustandsveränderung; positiv, negativ oder neutral.
 - **Positive Wirkung:** Veränderung, die auf SDGs, Agenda 2030 und SDG+ einzahlt.
 - **Negative Wirkung:** Veränderung, die SDGs, Agenda 2030 oder SDG+ schwächt.
-- **Wirkungspotenzial:** Möglichkeit, dass Wirkung eintreten kann — positiv, negativ oder ambivalent.
+- **Wirkungspotenzial:** Möglichkeit, dass Wirkung eintreten kann - positiv, negativ oder ambivalent.
 - **Wirkstoff:** didaktische Analogie für einen Auslöser mit Wirkungspotenzial.
 - **Wirkungsrisiko:** Möglichkeit negativer oder destabilisierender Wirkung.
 - **Wirkungsbewertung:** Einordnung von Wirkung am Referenzrahmen SDGs / Agenda 2030 / SDG+.
@@ -652,4 +652,4 @@ Die Wirkungsökonomie prägt ihre Sprache nicht durch viele neue Wörter, sonder
 
 Die tragende Logik lautet:
 
-> **Wirkung ist neutral. Wirkung ist relational. Wirkung braucht einen Referenzrahmen. Positiv ist, was auf SDGs, Agenda 2030 und SDG+ einzahlt. Negativ ist, was diesen Rahmen schwächt. Ziel der Wirkungsökonomie ist positive Netto-Wirkung für Mensch, Planet und Demokratie — sichtbar gemacht, bewertet und in Entscheidungen zurückgekoppelt.**
+> **Wirkung ist neutral. Wirkung ist relational. Wirkung braucht einen Referenzrahmen. Positiv ist, was auf SDGs, Agenda 2030 und SDG+ einzahlt. Negativ ist, was diesen Rahmen schwächt. Ziel der Wirkungsökonomie ist positive Netto-Wirkung für Mensch, Planet und Demokratie - sichtbar gemacht, bewertet und in Entscheidungen zurückgekoppelt.**

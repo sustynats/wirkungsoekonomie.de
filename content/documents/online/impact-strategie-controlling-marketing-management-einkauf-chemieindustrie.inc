@@ -384,9 +384,9 @@
 <p>[Datenqualität]: Primärdaten, validierte PCFs, Systemgrenzen, Aktualität, Unsicherheiten und Prüfniveau als eigenständige Steuerungsgrößen im Einkauf.</p>
 <p>[WÖk-Scorecard]: Natalie Weber, WÖk-Scorecard- und WÖk-ID-Logik. Grundlage für Produktgruppen-, NACE-, Lieferketten- und Scorecard-Logik in komplexen Unternehmen.</p>
 <p>[WÖk-Nichtkompensation]: Natalie Weber, Wirkungsökonomie in der Lieferkette. Grundlage für Reverse Merit Order, Nichtkompensation, Red Flags und Lieferkettenwirkung.</p>
-<p><strong>[EFRAG-IG1]:</strong> EFRAG, Materiality Assessment Implementation Guidance, May 2024. Nicht autoritative Umsetzungshilfe zu ESRS-Materialitätsanalyse. —</p>
-<p><strong>[EFRAG-IG2]:</strong> EFRAG, Value Chain Implementation Guidance, May 2024. Nicht autoritative Umsetzungshilfe zu ESRS-Wertschöpfungsketteninformationen. —</p>
-<p><strong>[ESRS-Implementation]:</strong> EFRAG, ESRS implementation guidance documents. Hinweis, dass die Guidance sich auf ESRS 2023 nach Delegated Regulation (EU) 2023/2772 bezieht. —</p>
+<p><strong>[EFRAG-IG1]:</strong> EFRAG, Materiality Assessment Implementation Guidance, May 2024. Nicht autoritative Umsetzungshilfe zu ESRS-Materialitätsanalyse. -</p>
+<p><strong>[EFRAG-IG2]:</strong> EFRAG, Value Chain Implementation Guidance, May 2024. Nicht autoritative Umsetzungshilfe zu ESRS-Wertschöpfungsketteninformationen. -</p>
+<p><strong>[ESRS-Implementation]:</strong> EFRAG, ESRS implementation guidance documents. Hinweis, dass die Guidance sich auf ESRS 2023 nach Delegated Regulation (EU) 2023/2772 bezieht. -</p>
 <p><strong>[WÖk-Leitfaden]:</strong> Natalie Weber, Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026. Führende Begriffsgrundlage für Wirkung, Netto-Wirkung und SDG+.</p>
 <p><strong>[WÖk-T-SROI]:</strong> Natalie Weber, Whitepaper T-SROI und Die neue Ordnung des Wohlstands 2026, Kapitel zu NWI/T-SROI. Grundlage für Abgrenzung von operativer Netto-Wirkung und Transformationswirkung.</p>
 <p><strong>[WÖk-Lieferkette]:</strong> Natalie Weber, Wirkungsökonomie in der Lieferkette, 2025. Grundlage für Scorecards, Reverse Merit Order, Vorsteuer-/Bonuslogik und Lieferkettenwirkung.</p>

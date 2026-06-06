@@ -444,7 +444,7 @@ function parseSourceLibraryV2(text) {
   const block = valueBetween(text, "4. Quellenbibliothek", ["5. Kartenindex"]);
   const sources = {};
   for (const line of block.split("\n").map((item) => item.trim()).filter(Boolean)) {
-    const match = line.match(/^([IE]-[A-Z-]+)\s+—\s+([^:]+):\s+(.+)$/);
+    const match = line.match(/^([IE]-[A-Z-]+)\s+[-\u2013\u2014]\s+([^:]+):\s+(.+)$/);
     if (!match) continue;
     const [, id, title, description] = match;
     sources[id] = {
@@ -461,7 +461,7 @@ function parseRegisterV2(text) {
   const block = valueBetween(text, "5. Kartenindex", ["Codex-Umsetzung"]);
   const rows = [];
   for (const line of block.split("\n").map((item) => item.trim()).filter(Boolean)) {
-    const match = line.match(/^(\d{2})\.\s+(.+?)\s+—\s+(.+)$/);
+    const match = line.match(/^(\d{2})\.\s+(.+?)\s+[-\u2013\u2014]\s+(.+)$/);
     if (!match) continue;
     rows.push({
       number: Number(match[1]),
@@ -481,7 +481,242 @@ function sourceIdsFromLine(block, label) {
   return valueBetween(block, label, ["Interne Quellen:", "Externe Quellen:", "Glossar-Hover:", "9. Warum zieht das Narrativ?"])
     .split(",")
     .map((item) => item.trim())
-    .filter(Boolean);
+    .filter((item) => item && !/^keine$/i.test(item));
+}
+
+const debateSourceDirectory = {
+  "I-BEG": {
+    title: "Führender Begriffsleitfaden der Wirkungsökonomie",
+    url: "/referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt die WÖk-Begriffslogik, aber keine externe Tatsachenbehauptung.",
+  },
+  "I-WOHL": {
+    title: "Die neue Ordnung des Wohlstands",
+    url: "/referenz/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt das Modell und die Systemlogik der Wirkungsökonomie, nicht automatisch empirische Einzelfakten.",
+  },
+  "I-SYS": {
+    title: "Systemmodell der Wirkungsökonomie",
+    url: "/dokumente/systemmodell-der-wirkungsoekonomie/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt die Systemarchitektur, nicht die konkrete Datenlage eines Einzelfalls.",
+  },
+  "I-NACH": {
+    title: "Nachhaltigkeit als Systemarchitektur",
+    url: "/referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt die WÖk-Einordnung von Nachhaltigkeit, aber keine tagesaktuellen Emissionsdaten.",
+  },
+  "I-WSTG": {
+    title: "Wirkungssteuergesetz",
+    url: "/dokumente/wstg-oktober-2025/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt den WÖk-Vorschlag, nicht geltendes Steuerrecht.",
+  },
+  "I-WUSTG": {
+    title: "Technische Leitlinien WUStG",
+    url: "/dokumente/technische-leitlinien-wustg-v2/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt die Modell- und Scorecardlogik, nicht die amtliche Einführung eines Systems.",
+  },
+  "I-PROD": {
+    title: "Produktwirkung und Produktwirkungssteuer",
+    url: "/dokumente/wp-produkte/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt die WÖk-Produktlogik, nicht einzelne Markt- oder Ökobilanzdaten.",
+  },
+  "I-LIEFER": {
+    title: "Wirkungsoekonomie in der Lieferkette",
+    url: "/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt die Lieferkettenlogik, nicht jede konkrete Unternehmenspraxis.",
+  },
+  "I-RAT": {
+    title: "Wirkungsrat-Konzept",
+    url: "/dokumente/wirkungsrat-konzept/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt den institutionellen Vorschlag, nicht bestehende Behördenpraxis.",
+  },
+  "I-TSROI": {
+    title: "Whitepaper T-SROI",
+    url: "/dokumente/whitepaper-t-sroi/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt Bewertungslogik und Transformationsmessung, nicht automatisch konkrete Projektdaten.",
+  },
+  "I-WOHN": {
+    title: "Wohnen als Wirkungsfeld",
+    url: "/dokumente/wp-wohnungsmarkt/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt die WÖk-Wohnlogik, nicht jede lokale Wohnungsmarktzahl.",
+  },
+  "I-RENTE": {
+    title: "Wirkungsrente",
+    url: "/dokumente/wp-rente/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt den WÖk-Vorschlag, nicht geltendes Rentenrecht.",
+  },
+  "I-WESTG": {
+    title: "Wirkungseinkommen",
+    url: "/dokumente/wp-einkommen/",
+    type: "Interne WÖk-Quelle",
+    limitation: "Belegt den WÖk-Vorschlag, nicht geltendes Einkommensteuerrecht.",
+  },
+  "E-SDG": {
+    url: "https://sdgs.un.org/2030agenda",
+    type: "Externe Primärquelle",
+    limitation: "Belegt Ziele und UN-Rahmen, aber keine geheime Steuerungsabsicht.",
+  },
+  "E-IPCC": {
+    url: "https://www.ipcc.ch/report/ar6/syr/",
+    type: "Externe Fachquelle",
+    limitation: "Belegt Klimawissenschaft und Risikopfade, nicht jede einzelne nationale Maßnahme.",
+  },
+  "E-GCP": {
+    url: "https://globalcarbonproject.org/carbonbudget/",
+    type: "Datensatz / Forschungsquelle",
+    limitation: "Belegt globale Emissionsdaten, nicht allein politische Verantwortungsverteilung.",
+  },
+  "E-EDGAR": {
+    url: "https://edgar.jrc.ec.europa.eu/report_2024",
+    type: "Datensatz / EU-Fachquelle",
+    limitation: "Belegt Emissionsinventare und Vergleiche, nicht die Bewertung einzelner Politikpfade.",
+  },
+  "E-UBA": {
+    url: "https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland",
+    type: "Externe Behördenquelle",
+    limitation: "Belegt Umwelt- und Emissionsdaten, nicht allein normative Schlussfolgerungen.",
+  },
+  "E-IEA": {
+    url: "https://www.iea.org/reports/world-energy-outlook-2024",
+    type: "Externe Fachquelle",
+    limitation: "Belegt Energiepfade und Szenarien, die von Annahmen abhängen.",
+  },
+  "E-FRAUNHOFER": {
+    url: "https://www.energy-charts.info/",
+    type: "Datensatz / Forschungsquelle",
+    limitation: "Belegt Stromdaten und Zeitreihen, nicht die Gesamtwirkung einzelner Maßnahmen.",
+  },
+  "E-ICCT": {
+    url: "https://theicct.org/publication/a-global-comparison-of-the-life-cycle-greenhouse-gas-emissions-of-combustion-engine-and-electric-passenger-cars/",
+    type: "Externe Fachquelle",
+    limitation: "Belegt Lebenszyklusvergleiche; Annahmen zu Strommix, Batterie und Fahrleistung bleiben relevant.",
+  },
+  "E-IAB": {
+    url: "https://iab.de/presseinfo/10-jahre-fluchtmigration-beschaeftigungsquote-von-gefluechteten-naehert-sich-dem-durchschnitt-in-deutschland-an/",
+    type: "Externe Fachquelle",
+    limitation: "Belegt Arbeitsmarktintegration und Zeitpfade, nicht jede kommunale Einzelsituation.",
+  },
+  "E-DEST": {
+    url: "https://www.destatis.de/DE/Home/_inhalt.html",
+    type: "Externe Statistikquelle",
+    limitation: "Belegt amtliche Statistik, aber keine vollständige Wirkungsbewertung.",
+  },
+  "E-BA": {
+    url: "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Interaktive-Statistiken/Migration-Zuwanderung-Flucht/Migration-Zuwanderung-Flucht-Nav.html",
+    type: "Externe Behördenquelle",
+    limitation: "Belegt Arbeitsmarktdaten; Statusgruppen und Zeiträume müssen getrennt werden.",
+  },
+  "E-OECD": {
+    url: "https://www.oecd.org/en/data.html",
+    type: "Externe Fachquelle",
+    limitation: "Belegt internationale Vergleichsdaten, nicht automatisch deutsche Detailentscheidungen.",
+  },
+  "E-BMZ": {
+    url: "https://www.bmz.de/de/ministerium/zahlen-fakten/bmz-transparenzportal",
+    type: "Externe Behördenquelle",
+    limitation: "Belegt Entwicklungszusammenarbeit und Transparenzdaten; Kredit, Zuschuss und Bürgschaft müssen getrennt werden.",
+  },
+  "E-UN-CHARTER": {
+    url: "https://www.un.org/en/about-us/un-charter",
+    type: "Externe Primärquelle",
+    limitation: "Belegt den UN-Rechtsrahmen, nicht einzelne politische Deutungen.",
+  },
+  "E-UNESCO": {
+    url: "https://www.unesco.org/en/media-information-literacy",
+    type: "Externe Fachquelle",
+    limitation: "Belegt Medienkompetenz- und Bildungsrahmen, nicht jede konkrete Plattformwirkung.",
+  },
+  "E-WHO": {
+    url: "https://www.who.int/health-topics",
+    type: "Externe Fachquelle",
+    limitation: "Belegt Gesundheitsrahmen und Fachinformationen, nicht automatisch nationale Priorisierung.",
+  },
+  "E-DSA": {
+    url: "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package",
+    type: "Externe Rechtsquelle",
+    limitation: "Belegt EU-Plattformregeln, nicht die Moderationsentscheidung in jedem Einzelfall.",
+  },
+  "E-EMFA": {
+    url: "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/new-push-european-democracy/protecting-democracy/european-media-freedom-act_en",
+    type: "Externe Rechtsquelle",
+    limitation: "Belegt den europäischen Medienfreiheitsrahmen, nicht alle nationalen Medienkonflikte.",
+  },
+  "E-BFV": {
+    url: "https://www.verfassungsschutz.de/DE/themen/desinformation-und-hybride-bedrohungen/desinformation-und-hybride-bedrohungen_node.html",
+    type: "Externe Behördenquelle",
+    limitation: "Belegt Gefährdungs- und Desinformationsrahmen, nicht die Wahrheit jeder politischen Aussage.",
+  },
+  "E-BVERFG": {
+    url: "https://www.bundesverfassungsgericht.de/DE/Home/home_node.html",
+    type: "Externe Rechtsquelle",
+    limitation: "Belegt verfassungsrechtliche Orientierung, nicht jede politische Zweckmäßigkeit.",
+  },
+  "E-BUNDESBANK": {
+    url: "https://www.bundesbank.de/de/aufgaben/themen/eu-haushalt-und-finanzbeziehungen-672658",
+    type: "Externe Behördenquelle",
+    limitation: "Belegt Finanzbeziehungen und Salden, nicht die gesamte Wirkung europäischer Integration.",
+  },
+  "E-IMF": {
+    url: "https://www.imf.org/en/Data",
+    type: "Externe Fachquelle",
+    limitation: "Belegt makroökonomische Daten, nicht die WÖk-Bewertung sozialer Wirkung.",
+  },
+  "E-ILO": {
+    url: "https://ilostat.ilo.org/",
+    type: "Datensatz / Fachquelle",
+    limitation: "Belegt Arbeitsmarktdaten, nicht automatisch die Wirkung einzelner nationaler Regeln.",
+  },
+  "E-FAO": {
+    url: "https://www.fao.org/interactive/state-of-food-agriculture/en/",
+    type: "Externe Fachquelle",
+    limitation: "Belegt Ernährungssysteme und Folgekosten, nicht individuelle Konsumentscheidungen.",
+  },
+};
+
+function cleanPublicSourceTitle(title) {
+  return String(title || "")
+    .replace(/WOeK_Begriffsleitfaden_fuehrend_v1\.0\.md/g, "Führender Begriffsleitfaden der Wirkungsökonomie")
+    .replace(/Natalie-Weber_Die neue Ordnung des Wohlstands_2026\.pdf/g, "Die neue Ordnung des Wohlstands")
+    .replace(/Systemmodell-der-Wirkungsoekonomie\.pdf/g, "Systemmodell der Wirkungsökonomie")
+    .replace(/Nachhaltigkeit-Systemarchitektur\.pdf/g, "Nachhaltigkeit als Systemarchitektur")
+    .replace(/WStG_Oktober2025\.pdf/g, "Wirkungssteuergesetz")
+    .replace(/Technische_Leitlinien_WUStG_Vollversion_Extended_v2\.pdf/g, "Technische Leitlinien WUStG")
+    .replace(/WP_Produkte\.pdf/g, "Produktwirkung und Produktwirkungssteuer")
+    .replace(/Whitepaper-T-SROI\.pdf/g, "Whitepaper T-SROI")
+    .replace(/WP_Wohnungsmarkt_\.pdf/g, "Wohnen als Wirkungsfeld")
+    .replace(/WP_Rente\.pdf/g, "Wirkungsrente")
+    .replace(/WP_Einkommen\.pdf/g, "Wirkungseinkommen")
+    .replace(/_/g, " ")
+    .trim();
+}
+
+function normalizeDebateSource(source) {
+  const directory = debateSourceDirectory[source.id] || {};
+  const title = directory.title || cleanPublicSourceTitle(source.title || source.id);
+  const url = source.url || directory.url || "/wirkungsradar/quellen/";
+  const type = directory.type || source.type || (source.id?.startsWith("I-") ? "Interne WÖk-Quelle" : "Externe Quelle");
+  const limitation = directory.limitation || "Belegt den genannten Prüfpunkt, ersetzt aber keine vollständige Wirkungsabwägung.";
+  return {
+    ...source,
+    title,
+    url,
+    type,
+    limitation,
+    dataStatus: source.dataStatus || DATA_STAND,
+    lastChecked: source.lastChecked || DATA_STAND,
+  };
 }
 
 function parseQuestionsV2(block) {
@@ -542,12 +777,12 @@ function parseCardsFromTextV2(rawText) {
       ...sourceIdsFromLine(sourcesBlock, "Interne Quellen:"),
       ...sourceIdsFromLine(sourcesBlock, "Externe Quellen:"),
     ];
-    const sourceCards = sourceIds.map((id) => sourceLibrary[id] || {
+    const sourceCards = sourceIds.map((id) => normalizeDebateSource(sourceLibrary[id] || {
       id,
       title: id,
       description: "Quellenreferenz aus dem redaktionellen Textmaster.",
       type: id.startsWith("I-") ? "Interne Referenz" : "Externe Quelle",
-    });
+    }));
     const glossary = sourceIdsFromLine(sourcesBlock, "Glossar-Hover:");
     const slug = knownSlugByTitle.get(title) || knownSlugByTitle.get(match.title) || slugify(title);
     const redirectTarget = redirectAliasBySlug.get(slug);
@@ -889,7 +1124,7 @@ function answerAccordion(card) {
 
 function rescueFactsAndSources(card) {
   if (card.templateVersion === "2.0") {
-    const sources = (card.sourceCards || []).map((source) => `<article class="card"><p class="card-kicker">${esc(source.type)} · ${esc(source.id)}</p><h3 class="card-title">${esc(source.title)}</h3><p class="card-text"><strong>Was belegt sie?</strong> ${esc(source.description)}</p>${source.url ? `<p><a class="text-link" href="${esc(source.url)}">Quelle öffnen</a></p>` : ""}</article>`).join("");
+    const sources = (card.sourceCards || []).map(normalizeDebateSource).map((source) => `<article class="card source-proof-card"><p class="card-kicker">${esc(source.type)} · ${esc(source.id)}</p><h3 class="card-title"><a class="text-link" href="${esc(source.url)}">${esc(source.title)}</a></h3><p class="card-text"><strong>Belegt hier:</strong> ${esc(source.description)}</p><p class="card-text"><strong>Grenze:</strong> ${esc(source.limitation)}</p><p class="card-text"><strong>Datenstand / Prüfung:</strong> ${esc(source.dataStatus || DATA_STAND)} · geprüft ${esc(source.lastChecked || DATA_STAND)}</p><p><a class="text-link" href="${esc(source.url)}">Quelle öffnen</a></p></article>`).join("");
     const glossary = (card.glossary || []).length ? `<p class="card-text"><strong>Glossar:</strong> ${esc(card.glossary.join(", "))}</p>` : "";
     return `<section class="section" id="faktenlage"><div><div class="section-header"><p class="hero-kicker">Faktenlage</p><h2>Welche Fakten sind wichtig?</h2></div><article class="card">${paragraphize(card.facts)}${glossary}</article></div></section><section class="section section-soft" id="quellen"><div><div class="section-header"><p class="hero-kicker">Quellen &amp; Vertiefung</p><h2>Welche Quelle belegt welchen Fakt?</h2></div><div class="debate-source-stack">${sources}</div></div></section>`;
   }
@@ -1028,7 +1263,7 @@ function renderReport(cards, routeStateBeforeWrite) {
     acc[card.category] = (acc[card.category] || 0) + 1;
     return acc;
   }, {})).sort((a, b) => a[0].localeCompare(b[0], "de"));
-  return `# Debattenkarten Website 2.0 Integration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Karten im Textmaster: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen angelegt: ${newCards.length}\n- Interne Quelle: \`${path.basename(MASTER_DOCX)}\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ — ${card.title}`).join("\n") || "- Keine"}\n\n## Hinweise\n\n- Öffentliche Seiten zeigen keine internen Arbeitslabels.\n- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.\n- Bestehende Routen bleiben erhalten und werden in den 2.0-Contract überführt.\n`;
+  return `# Debattenkarten Website 2.0 Integration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Karten im Textmaster: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen angelegt: ${newCards.length}\n- Interne Quelle: \`${path.basename(MASTER_DOCX)}\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ - ${card.title}`).join("\n") || "- Keine"}\n\n## Hinweise\n\n- Öffentliche Seiten zeigen keine internen Arbeitslabels.\n- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.\n- Bestehende Routen bleiben erhalten und werden in den 2.0-Contract überführt.\n`;
 }
 
 function isTracked(filePath) {

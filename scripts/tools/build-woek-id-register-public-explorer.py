@@ -31,13 +31,27 @@ def source_xlsx() -> Path:
     return SOURCE_XLSX_PUBLIC
 
 
+def public_text(value: object) -> object:
+    if isinstance(value, str):
+        return value.replace("—", "-")
+    return value
+
+
+def sanitize_public_payload(value: object) -> object:
+    if isinstance(value, dict):
+        return {key: sanitize_public_payload(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [sanitize_public_payload(item) for item in value]
+    return public_text(value)
+
+
 def esc(value: object) -> str:
-    return html.escape("" if value is None else str(value), quote=True)
+    return html.escape("" if value is None else str(public_text(value)), quote=True)
 
 
 def slugify(value: object) -> str:
     text = str(value or "").strip().lower()
-    for old, new in {"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "–": "-", "—": "-", "‑": "-"}.items():
+    for old, new in {"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "–": "-", "-": "-", "‑": "-"}.items():
         text = text.replace(old, new)
     return "-".join("".join(char if char.isalnum() else "-" for char in text).split("-"))
 
@@ -203,7 +217,7 @@ def normalize_methods(raw_methods):
 
 def write_json(path: Path, payload: object):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(sanitize_public_payload(payload), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def write_csv(path: Path, items: list[dict[str, object]]):
@@ -220,7 +234,7 @@ def write_csv(path: Path, items: list[dict[str, object]]):
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
         for item in items:
-            row = {field: item.get(field, "") for field in fields}
+            row = {field: public_text(item.get(field, "")) for field in fields}
             row["source_ids"] = "; ".join(item.get("source_ids", []))
             row["badges"] = "; ".join(item.get("badges", []))
             writer.writerow(row)

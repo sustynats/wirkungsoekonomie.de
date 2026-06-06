@@ -290,7 +290,7 @@ function packPage(dossier, format) {
   const title = `${formatLabel(format)} - ${dossier.title}`;
   const body = renderAsset(asset, format, dossier);
   const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../">Wirkungsradar</a> / <a href="../../">Studio</a> / ${esc(formatLabel(format))}</nav><p class="hero-kicker">Exportformat</p><h1 class="hero-title">${esc(title)}</h1><p class="hero-subtitle">${esc(dossier.cockpit.shortJudgement)}</p></div></section>${radarNav("../../../")}<section class="section"><div><div class="card-grid two"><article class="card sprint5-safety-card"><p class="card-kicker">Safety-Check</p><ul class="clean-list"><li>positives Beispiel sichtbar</li><li>bessere Frage sichtbar</li><li>Quellenhinweis sichtbar</li><li>keine Menschenabwertung</li><li>keine Rage-Hooks</li><li>Status: ${esc(pack.status)}</li></ul></article><article class="card"><p class="card-kicker">Export</p><div class="radar-card-actions"><button class="copy-chip" type="button" data-copy-text='${attr(JSON.stringify(asset, null, 2))}'>JSON kopieren</button><a class="btn btn-secondary" href="../../../live/${esc(dossier.slug)}/">Karte öffnen</a></div></article></div>${body}</div></section>`;
-  return shell({ title, description: `Wirkungsradar Studio Export ${formatLabel(format)} für ${dossier.title}.`, canonical: `${SITE_URL}/wirkungsradar/studio/${format}/${dossier.slug}/`, base: "../../../", main });
+  return shell({ title, description: `Wirkungsradar Studio Export ${formatLabel(format)} für ${dossier.title}.`, canonical: `${SITE_URL}/wirkungsradar/studio/${format}/${dossier.slug}/`, base: "../../../../", main });
 }
 
 function formatLabel(format) {
@@ -407,9 +407,9 @@ function embedCardPage(dossier) {
   return shell({ title: `Embed ${dossier.title}`, description: `Kompakte Wirkungsradar-Embed-Karte für ${dossier.title}.`, canonical: `${SITE_URL}/wirkungsradar/embed/card/${dossier.slug}/`, base: "../../../../", main, extraHead: `<meta name="robots" content="noindex">` });
 }
 
-function mythReportPage() {
+function mythReportPage(base = "../../") {
   const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Debatten-Kompass</a> / Narrativ einreichen</nav><p class="hero-kicker">Meldeworkflow</p><h1 class="hero-title">Narrativ einreichen</h1><p class="hero-subtitle">Hast du eine Aussage gesehen, die geprüft werden sollte?</p><p class="radar-sprint-lead">Die Einreichung läuft geschützt über die Akademie-App mit Discord-Login. Du landest dort auf einer eigenen Narrativ-Seite, nicht auf der Fragenstrecke.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Zur Akademie-App wechseln</a></p></div></section>${radarNav("../")}<section class="section"><div><article class="card"><p class="card-kicker">Sichere Redaktion</p><h2>Erst Login, dann Formular.</h2><p>Gemeldete Aussagen werden nicht automatisch veröffentlicht. Wir prüfen intern zuerst auf Dubletten, bestehende Karten, Frame-Risiken, Schutzbedarf und Aufklärungsnutzen.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></article><article class="card"><p class="card-kicker">Redaktion</p><ul class="clean-list"><li>Rohzitate werden nicht automatisch veröffentlicht</li><li>Dubletten werden mit bestehenden Karten zusammengeführt</li><li>Schutzbedarf und Menschenabwertung werden intern markiert</li><li>Verschwörungsframes bekommen gesonderte redaktionelle Prüfung</li></ul><p>Keine toxischen Originalzitate in öffentlicher Statistik.</p></article></div></section>`;
-  return shell({ title: "Narrativ einreichen", description: "Sicherer Meldeworkflow für neue Narrative, Frames und problematische Aussagen.", canonical: `${SITE_URL}/wirkungsradar/narrativ-einreichen/`, base: "../../", main });
+  return shell({ title: "Narrativ einreichen", description: "Sicherer Meldeworkflow für neue Narrative, Frames und problematische Aussagen.", canonical: `${SITE_URL}/wirkungsradar/narrativ-einreichen/`, base, main });
 }
 
 function templatesPage() {
@@ -560,7 +560,7 @@ write(OUT("wirkungsradar/workshops/print/klima-energie/index.html"), workshopPri
 write(OUT("wirkungsradar/unterricht/index.html"), simpleMaterialPage("unterricht"));
 write(OUT("wirkungsradar/newsletter/index.html"), simpleMaterialPage("newsletter"));
 write(OUT("wirkungsradar/embed/index.html"), embedIndexPage());
-write(OUT("wirkungsradar/embed/report-narrative/index.html"), mythReportPage());
+write(OUT("wirkungsradar/embed/report-narrative/index.html"), mythReportPage("../../../"));
 write(OUT("wirkungsradar/narrativ-einreichen/index.html"), mythReportPage());
 write(OUT("wirkungsradar/templates/index.html"), templatesPage());
 write(OUT("wirkungsradar/nutzung/index.html"), usagePage());

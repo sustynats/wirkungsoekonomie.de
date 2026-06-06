@@ -6060,6 +6060,16 @@ textarea {
   -webkit-overflow-scrolling: touch;
 }
 
+.article-body .article-list {
+  margin: 1rem 0 1.4rem;
+  padding-left: 1.35rem;
+}
+
+.article-body .article-list li {
+  margin: 0 0 0.65rem;
+  line-height: 1.7;
+}
+
 .table-scroll table,
 .readable-prose .table-scroll table,
 .article-body .table-scroll table,

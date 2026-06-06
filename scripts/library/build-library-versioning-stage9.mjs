@@ -387,7 +387,7 @@ function docxSibling(relativePath) {
 function cleanInsightLine(line = "") {
   return line
     .replace(/\s+/g, " ")
-    .replace(/^[-–—]\s*/, "")
+    .replace(/^[-–-]\s*/, "")
     .trim();
 }
 

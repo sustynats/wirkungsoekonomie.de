@@ -21,7 +21,8 @@ Stand: 2026-06-05
 - Landwirtschaft & Ernährung: 3
 - Migration: 9
 - Mobilität: 9
-- Staat, Geld & Verantwortung: 9
+- Staat, Geld & Verantwortung: 8
+- verschenktes Geld oder verkürzte Empörung? - Staat, Geld & Verantwortung: 1
 - Wirkungsökonomie: 6
 
 ## Neue Routen

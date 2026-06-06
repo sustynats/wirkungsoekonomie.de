@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T20:46:28.886Z",
+  "generatedAt": "2026-06-06T01:03:08.821Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -376,7 +376,9 @@
       "relatedTerms": [
         "kapital",
         "kapital-als-machtverhaeltnis",
-        "kapitalwirkung"
+        "kapitalwirkung",
+        "kapitalakkumulation",
+        "thomas-piketty"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2916,8 +2918,8 @@
       "label": "Blindleistung",
       "slug": "blindleistung",
       "url": "/begriffe/blindleistung/",
-      "hoverDefinition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen — häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
-      "shortDefinition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen — häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
+      "hoverDefinition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen - häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
+      "shortDefinition": "Blindleistung ist Aufwand, der ein System belastet, ohne ausreichende positive Zustandsveränderung zu erzeugen - häufig, weil falsche Preise, Regeln oder Anreize Reparaturaufwand verursachen.",
       "category": "Leistung, Bürokratie & Systemsteuerung",
       "synonyms": [
         "Blindleistung",
@@ -14998,7 +15000,9 @@
         "mehrwert",
         "kapitalismus",
         "trickle-down-oekonomie",
-        "eigentumsrechte"
+        "eigentumsrechte",
+        "kapitalakkumulation",
+        "thomas-piketty"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15046,6 +15050,38 @@
         "kapital",
         "kapitalwirkung",
         "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "kapitalakkumulation": {
+      "label": "Kapitalakkumulation",
+      "slug": "kapitalakkumulation",
+      "url": "/begriffe/kapitalakkumulation/",
+      "shortDefinition": "Kapitalakkumulation beschreibt die langfristige Anhäufung und Konzentration von Kapital, Vermögen oder Eigentumsrechten und damit die Frage, welche Macht-, Teilhabe- und Wirkungsfolgen daraus entstehen.",
+      "category": "Kapital, Markt und Eigentum",
+      "synonyms": [
+        "Kapitalakkumulation",
+        "Kapitalanhäufung",
+        "Vermögensakkumulation",
+        "Kapitalansammlung",
+        "Kapitalanhaeufung",
+        "Vermoegensakkumulation"
+      ],
+      "relatedTerms": [
+        "akkumulation",
+        "kapital",
+        "kapitalwirkung",
+        "thomas-piketty",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "eigentum-verpflichtet",
+        "eigentumsverantwortung",
+        "rendite",
+        "externalisierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15221,7 +15257,9 @@
         "produktscorecard",
         "responsible-marketing",
         "wirkungspunkte",
-        "wirkungsbonus"
+        "wirkungsbonus",
+        "kapitalakkumulation",
+        "thomas-piketty"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28848,8 +28886,8 @@
       "label": "SDGs und Verschwörungsnarrative",
       "slug": "sdgs-und-verschwoerungsnarrative",
       "url": "/begriffe/sdgs-und-verschwoerungsnarrative/",
-      "hoverDefinition": "SDGs und Verschwörungsnarrative beschreibt, wie globale Zielrahmen wie die Agenda 2030 in Erzählungen über geheime Herrschaft, Enteignung oder Kontrolle umgedeutet werden können — und wie die WÖk legitime Kritik von Desinformation unterscheidet.",
-      "shortDefinition": "SDGs und Verschwörungsnarrative beschreibt, wie globale Zielrahmen wie die Agenda 2030 in Erzählungen über geheime Herrschaft, Enteignung oder Kontrolle umgedeutet werden können — und wie die WÖk legitime Kritik von Desinformation unterscheidet.",
+      "hoverDefinition": "SDGs und Verschwörungsnarrative beschreibt, wie globale Zielrahmen wie die Agenda 2030 in Erzählungen über geheime Herrschaft, Enteignung oder Kontrolle umgedeutet werden können - und wie die WÖk legitime Kritik von Desinformation unterscheidet.",
+      "shortDefinition": "SDGs und Verschwörungsnarrative beschreibt, wie globale Zielrahmen wie die Agenda 2030 in Erzählungen über geheime Herrschaft, Enteignung oder Kontrolle umgedeutet werden können - und wie die WÖk legitime Kritik von Desinformation unterscheidet.",
       "category": "SDGs, Demokratie & Desinformation",
       "synonyms": [
         "SDGs und Verschwörungsnarrative",
@@ -32143,6 +32181,34 @@
         "policy-netzwerk",
         "atlas-network",
         "stiftung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "thomas-piketty": {
+      "label": "Thomas Piketty",
+      "slug": "thomas-piketty",
+      "url": "/begriffe/thomas-piketty/",
+      "shortDefinition": "Thomas Piketty beschreibt die langfristige Dynamik von Kapitalakkumulation, Vermögenskonzentration und wachsender Ungleichheit in modernen Volkswirtschaften.",
+      "category": "Vordenker:innen und Bezugslinien",
+      "synonyms": [
+        "Thomas Piketty",
+        "Piketty"
+      ],
+      "relatedTerms": [
+        "kapital",
+        "kapitalwirkung",
+        "ungleichheit",
+        "kapitalverantwortung",
+        "eigentum-verpflichtet",
+        "eigentumsverantwortung",
+        "wirkungsrueckkopplung",
+        "kapitalakkumulation",
+        "akkumulation",
+        "positive-netto-wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

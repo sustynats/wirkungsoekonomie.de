@@ -229,7 +229,7 @@ def clean_text(value: str) -> str:
 
 def sanitize_markdown(text: str) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
-    text = text.replace("–", "-").replace("—", "-")
+    text = text.replace("–", "-").replace("-", "-")
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
     lines = text.split("\n")
     out: list[str] = []
@@ -544,7 +544,7 @@ def write_minimal_docx(path: Path, text: str) -> None:
 def pdf_safe(text: str) -> str:
     repl = {
         "–": "-",
-        "—": "-",
+        "-": "-",
         "„": '"',
         "“": '"',
         "”": '"',

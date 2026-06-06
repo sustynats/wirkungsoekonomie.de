@@ -7,7 +7,7 @@ Status: `published`
 ## 1. Welche Inhalte wurden erhalten?
 
 - Die bestehende Leitseite blieb am Originalpfad erhalten.
-- Audio-Datei `assets/audio/wirkung-politischer-sprache.wav` und Audioplayer blieben erhalten.
+- Audio-Datei `assets/audio/wirkung-politischer-sprache.mp3` und Audioplayer blieben erhalten.
 - Das vorhandene Transkript blieb erhalten.
 - Die interaktive Pilotanalyse blieb erhalten.
 - Alle zehn bestehenden Beispielanalysen blieben erhalten:

@@ -211,12 +211,12 @@ Status: erhalten und eingebunden; Transkripte teilweise offen.
 
 Gefundene Audios:
 
-- `assets/audio/die-woek-akademie.wav`
-- `assets/audio/was-die-wirkungsoekonomie-unterscheidet.wav`
-- `assets/audio/wirkungsoekonomie-kurz-erklaert.wav`
-- `assets/audio/von-daten-zum-steuersatz.wav`
-- `assets/audio/grundidee-wirkungsoekonomie.wav`
-- `assets/audio/wirkung-politischer-sprache.wav`
+- `assets/audio/die-woek-akademie.mp3`
+- `assets/audio/was-die-wirkungsoekonomie-unterscheidet.mp3`
+- `assets/audio/wirkungsoekonomie-kurz-erklaert.mp3`
+- `assets/audio/von-daten-zum-steuersatz.mp3`
+- `assets/audio/grundidee-wirkungsoekonomie.mp3`
+- `assets/audio/wirkung-politischer-sprache.mp3`
 
 Bewertung:
 

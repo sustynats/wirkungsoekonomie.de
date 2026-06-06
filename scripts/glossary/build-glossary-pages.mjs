@@ -96,7 +96,7 @@ function normalizedLabel(value) {
     .toLowerCase()
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[–—-]/g, "-")
+    .replace(/[\u2013\u2014-]/g, "-")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -220,10 +220,9 @@ function loadLegacyDetailTerms() {
         longDefinition: summary,
         category: "Glossar-Bestand",
         type: "Bestand",
-        status: "erhaltene Detailseite",
         version: "Bestand",
-        sourceDocument: "Bestehende Glossar-Detailseite",
-        sourceSection: "/begriffe/",
+        sourceDocument: "",
+        sourceSection: "",
         glossaryOrderKey: label,
         relatedTerms: [],
         _legacyDetailOnly: true,
@@ -503,17 +502,38 @@ function termLink(slug) {
   return `<a class="term-chip" href="../../begriffe/${esc(term.slug)}/">${esc(term.canonicalLabel)}</a>`;
 }
 
-function listItems(values, fallback = "Keine Einträge") {
-  if (!Array.isArray(values) || values.length === 0) return `<p>${esc(fallback)}</p>`;
-  return `<ul class="clean-list">${values.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>`;
+function hasRealText(value) {
+  const text = String(value || "").trim();
+  return Boolean(text) && !/^(keine?|keine einträge|none|null|undefined|defined|n\/a|tbd|todo|kommt noch|in vorbereitung|zu pruefen|zu prüfen)$/i.test(text);
+}
+
+function containsForbiddenPublicText(value) {
+  return /\b(published|publikationsstatus|review-status|review_status|redaktionell zu prüfen|redaktionell zu pruefen|glossar-pack|professionalisiert|deep_glossary_entry|aktualisiert durch:\s*codex|updated_by:\s*codex|no-delete|no_delete|source-hash|import-version|interne arbeitsgrundlage|interne quelle|quality_level|status im pack|pack:\s*\d+)/i.test(String(value || ""));
+}
+
+function publicText(value) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .replace(/\s*\((?:interne|externe)\s+Quelle\)\s*/gi, "")
+    .trim();
+}
+
+function listItems(values) {
+  if (!Array.isArray(values) || values.length === 0) return "";
+  const realValues = values
+    .map(publicText)
+    .filter((value) => hasRealText(value) && !containsForbiddenPublicText(value))
+    .filter((value) => !(/_/.test(value) && /^[a-z0-9_]+$/i.test(value)));
+  if (!realValues.length) return "";
+  return `<ul class="clean-list">${realValues.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>`;
 }
 
 function paragraphs(value) {
   return String(value || "")
     .split(/\n{2,}/)
     .map((part) => part.trim())
-    .filter(Boolean)
-    .map((part) => `<p>${esc(part)}</p>`)
+    .filter((part) => hasRealText(part) && !containsForbiddenPublicText(part))
+    .map((part) => `<p>${esc(publicText(part))}</p>`)
     .join("");
 }
 
@@ -547,7 +567,9 @@ function dimensionTokens(value) {
 function filterValues(field) {
   const values = new Set();
   for (const term of indexedTerms) {
-    for (const value of asList(term[field])) values.add(value);
+    for (const value of asList(term[field]).map(publicText)) {
+      if (hasRealText(value) && !containsForbiddenPublicText(value)) values.add(value);
+    }
   }
   return Array.from(values).sort(new Intl.Collator("de", { sensitivity: "base" }).compare);
 }
@@ -592,8 +614,43 @@ function termBadges(term) {
     term.type || term.begriffstyp || term.conceptStatus || term.concept_status || term.category,
     ...asList(term.theme || term.themes).slice(0, 2),
     ...asList(term.dimensions).slice(0, 1),
-  ]).slice(0, 5);
-  return `<div class="term-card-tags">${badges.map((badge) => `<span>${esc(badge)}</span>`).join("")}</div>`;
+  ])
+    .map(publicText)
+    .filter((badge) => hasRealText(badge) && !containsForbiddenPublicText(badge))
+    .slice(0, 5);
+  return badges.length ? `<div class="term-card-tags">${badges.map((badge) => `<span>${esc(badge)}</span>`).join("")}</div>` : "";
+}
+
+function publicTermType(term) {
+  const raw = term.type || term.begriffstyp || term.category || "";
+  const text = publicText(raw);
+  if (!hasRealText(text)) return "Glossarbegriff";
+  if (containsForbiddenPublicText(text) || /^(published|draft|review|professionalisiert|redaktionell)/i.test(text)) return "Glossarbegriff";
+  return text;
+}
+
+function optionalTermSection({ eyebrow, title, html }) {
+  const visible = textFromHtml(html);
+  if (!hasRealText(visible) || containsForbiddenPublicText(visible)) return "";
+  return `<section class="term-section-card">
+            ${eyebrow ? `<p class="section-eyebrow">${esc(eyebrow)}</p>` : ""}
+            <h2>${esc(title)}</h2>
+            ${html}
+          </section>`;
+}
+
+function relatedTermsChips(term) {
+  const chips = (term.relatedTerms || []).map(termLink).filter(Boolean).join("");
+  if (!chips) return "";
+  return `<section class="term-link-section" aria-labelledby="related-terms-title">
+          <div>
+            <p class="section-eyebrow">Verknüpfungen</p>
+            <h2 id="related-terms-title">Verwandte Begriffe</h2>
+          </div>
+          <div class="term-chip-row">
+            ${chips}
+          </div>
+        </section>`;
 }
 
 function parseSource(value) {
@@ -618,10 +675,20 @@ function sourceList(term) {
   const rows = [
     ...((term.sourceLinks || term.source_links || []).map(parseSource)),
     ...((term.officialSources || []).map(parseSource)),
-  ].filter((item, index, all) => item.label && all.findIndex((candidate) => `${candidate.label}|${candidate.url}` === `${item.label}|${item.url}`) === index);
-  if (!rows.length) return `<p>Keine externe Quelle hinterlegt.</p>`;
+  ].map((item) => ({
+    ...item,
+    label: publicText(item.label),
+    type: publicText(item.type),
+  })).filter((item, index, all) => {
+    if (!hasRealText(item.label)) return false;
+    if (containsForbiddenPublicText(item.label) || containsForbiddenPublicText(item.type)) return false;
+    if (!item.url && !/ISBN|Verlag|Buch|Kapitel/i.test(item.type || item.label)) return false;
+    if (/\.(md|docx?|rtf|txt)(\?|#|$)/i.test(item.url || item.label)) return false;
+    return all.findIndex((candidate) => `${candidate.label}|${candidate.url}` === `${item.label}|${item.url}`) === index;
+  });
+  if (!rows.length) return "";
   return `<ul class="clean-list">${rows.slice(0, 8).map((item) => {
-    const label = item.type ? `${item.label} (${item.type})` : item.label;
+    const label = item.type && !containsForbiddenPublicText(item.type) ? `${item.label} (${item.type})` : item.label;
     return item.url ? `<li><a class="text-link" href="${esc(item.url)}">${esc(label)}</a></li>` : `<li>${esc(label)}</li>`;
   }).join("")}</ul>`;
 }
@@ -656,8 +723,8 @@ const centralTermDetails = new Map([
   ["wirkungspfad", ["Er macht Annahmen nachvollziehbar: Was löst was unter welchen Bedingungen aus?", "Ein Wirkungspfad ist noch kein Kausalnachweis und kein endgültiges Urteil.", "Eine Produktinformation kann Aufmerksamkeit erzeugen, Kaufentscheidungen verändern und Lieferkettenanreize verschieben.", ["Pfad heißt nicht Beweis.", "Datenqualität und Unsicherheit gehören dazu."], [["WÖk-Scanner", "../../anwendungen/scanner.html"], ["Scorecards", "../../werkzeuge/scorecards/"]], [["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
 ]);
 
-function linkedChips(items, fallback = "Keine Einträge") {
-  if (!Array.isArray(items) || items.length === 0) return `<p>${esc(fallback)}</p>`;
+function linkedChips(items) {
+  if (!Array.isArray(items) || items.length === 0) return "";
   return `<div class="term-chip-row">${items.map(([label, href]) => `<a class="term-chip" href="${esc(href)}">${esc(label)}</a>`).join("")}</div>`;
 }
 
@@ -738,15 +805,15 @@ function resolveContentReference(input, options = {}) {
     const canonicalTarget = normalizeReferenceUrl(href);
     const mappedEntry = contentByUrl.get(canonicalTarget) || contentByUrl.get(canonicalTarget.split("#")[0]);
     if (mappedEntry) return resolveContentReference(canonicalTarget, { ...options, fallbackTitle: title });
-    return {
-      url: canonicalTarget || href,
-      canonicalUrl: canonicalTarget || href,
-      title: cleanReferenceTitle(title),
-      description: options.description || "Redaktionelle Glossarquelle oder interne Arbeitsgrundlage dieses Begriffs.",
-      contentTypeLabel: options.contentTypeLabel || "Quelle",
-      scopeLabel: options.scopeLabel || "",
-      extentLabel: options.extentLabel || "",
-      relevanceReason: options.relevanceReason || "",
+      return {
+        url: canonicalTarget || href,
+        canonicalUrl: canonicalTarget || href,
+        title: cleanReferenceTitle(title),
+        description: options.description || "Öffentliche Vertiefung zu diesem Begriff.",
+        contentTypeLabel: options.contentTypeLabel || "Quelle",
+        scopeLabel: options.scopeLabel || "",
+        extentLabel: options.extentLabel || "",
+        relevanceReason: options.relevanceReason || "",
       isFallback: true,
     };
   }
@@ -756,7 +823,7 @@ function resolveContentReference(input, options = {}) {
         url: "",
         canonicalUrl: rawText,
         title: cleanReferenceTitle(options.fallbackTitle || rawText),
-        description: options.description || "Redaktionelle Glossarquelle oder interne Arbeitsgrundlage dieses Begriffs.",
+        description: options.description || "Bibliografische oder redaktionelle Quelle ohne öffentlichen Deeplink.",
         contentTypeLabel: options.contentTypeLabel || "Quelle",
         scopeLabel: options.scopeLabel || "",
         extentLabel: options.extentLabel || "",
@@ -767,7 +834,7 @@ function resolveContentReference(input, options = {}) {
     const fallbackTitle = options.fallbackTitle || humanizeSlug(rawText);
     warnContentReference("unresolved-reference", rawText, fallbackTitle ? "Fallback-Karte aus Eingabe erzeugt" : "Kein Titel gefunden");
     if (!fallbackTitle) return null;
-    const description = "Interner Inhaltsverweis ohne gepflegte Metadaten. Bitte Titel, Art und Kurzbeschreibung im Content-Register ergänzen.";
+    const description = "Öffentlicher Inhaltsverweis ohne Kurzbeschreibung.";
     return {
       url: canonicalUrl || rawText,
       canonicalUrl: canonicalUrl || rawText,
@@ -793,7 +860,7 @@ function resolveContentReference(input, options = {}) {
     url: options.href ? relativeFromGlossary(normalizeReferenceUrl(options.href)) : relativeFromGlossary(url || rawText),
     canonicalUrl: url || canonicalUrl || rawText,
     title,
-    description: description || "Kurzbeschreibung fehlt noch im Content-Register.",
+    description: description || "Öffentliche Vertiefung zu diesem Begriff.",
     contentTypeLabel,
     scopeLabel,
     extentLabel,
@@ -813,6 +880,9 @@ function resolveContentReference(input, options = {}) {
 
 function contentReferenceCard(reference, options = {}) {
   if (!reference) return "";
+  if (containsForbiddenPublicText(reference.title) || containsForbiddenPublicText(reference.description)) return "";
+  const publicTitle = publicText(reference.title).replace(/\s*\|\s*In Vorbereitung\s*$/i, "").trim();
+  if (!hasRealText(publicTitle) || containsForbiddenPublicText(publicTitle)) return "";
   const meta = unique([
     reference.contentTypeLabel,
     reference.scopeLabel,
@@ -821,15 +891,36 @@ function contentReferenceCard(reference, options = {}) {
   ]).join(" · ");
   const badge = options.badge ? `<span class="content-reference-card__badge">${esc(options.badge)}</span>` : "";
   const titleHtml = reference.url
-    ? `<a class="content-reference-card__title" href="${esc(reference.url)}">${esc(reference.title)}</a>`
-    : `<span class="content-reference-card__title">${esc(reference.title)}</span>`;
+    ? `<a class="content-reference-card__title" href="${esc(reference.url)}">${esc(publicTitle)}</a>`
+    : `<span class="content-reference-card__title">${esc(publicTitle)}</span>`;
   return `<article class="content-reference-card">
               ${badge}
               <h4 class="content-reference-card__heading">${titleHtml}</h4>
               ${meta ? `<div class="content-reference-card__meta">${esc(meta)}</div>` : ""}
-              <p class="content-reference-card__description">${esc(reference.description)}</p>
-              ${reference.relevanceReason ? `<p class="content-reference-card__reason">${esc(reference.relevanceReason)}</p>` : ""}
+              <p class="content-reference-card__description">${esc(publicText(reference.description))}</p>
+              ${reference.relevanceReason ? `<p class="content-reference-card__reason">${esc(publicReferenceReason(reference.relevanceReason))}</p>` : ""}
             </article>`;
+}
+
+function publicReferenceReason(value) {
+  const raw = String(value || "").trim();
+  const normalized = raw.replace(/^Bezug:\s*/i, "").trim().toLowerCase();
+  const map = new Map([
+    ["defined", "Definiert oder präzisiert den Begriff."],
+    ["strong", "Direkte Vertiefung zum Begriff."],
+    ["used", "Zeigt die systematische Verwendung des Begriffs."],
+    ["context", "Liefert Kontext für die Einordnung."],
+    ["compare", "Hilft bei Abgrenzung oder Vergleich."],
+    ["source", "Quellenbasis für die öffentliche Begriffserklärung."],
+    ["primary", "Primärquelle für Definition, Rechtsgrundlage oder Daten."],
+    ["external_fact", "Faktenquelle für die öffentliche Einordnung."],
+    ["internal_reference", "Öffentliche WÖk-Referenz zu diesem Begriff."],
+  ]);
+  if (map.has(normalized)) return map.get(normalized);
+  return raw
+    .replace(/^Bezug:\s*/i, "Öffentlicher Bezug: ")
+    .replace(/\bredaktionelle Grundlage dieses Glossarbegriffs\b/gi, "öffentliche Einordnung dieses Begriffs")
+    .replace(/\binterne Arbeitsgrundlage\b/gi, "öffentliche Vertiefung");
 }
 
 function contentReferenceGroup(title, references, options = {}) {
@@ -969,12 +1060,11 @@ function chapterReferencesForTerm(term) {
 
 function chapterBlock(term) {
   const references = chapterReferencesForTerm(term);
+  if (!references.length) return "";
   return `<section class="term-summary-card" aria-labelledby="chapters-title">
           <p class="section-eyebrow">Online-Buch</p>
           <h2 id="chapters-title">Relevante Kapitel im Online-Buch</h2>
-          ${references.length
-            ? `<div class="related-document-list content-reference-list">${references.map((reference) => contentReferenceCard(reference, { badge: "Kapitel" })).join("")}</div>`
-            : `<p>Für diesen Begriff ist noch kein konkretes Kapitel zugeordnet.</p>`}
+          <div class="related-document-list content-reference-list">${references.map((reference) => contentReferenceCard(reference, { badge: "Kapitel" })).join("")}</div>
           <div class="term-chip-row chapter-navigator-link">
             <a class="term-chip" href="../../referenz/">Alle Kapitel im Kapitel-Navigator öffnen</a>
           </div>
@@ -982,12 +1072,14 @@ function chapterBlock(term) {
 }
 
 function sourceReferenceBlock(term) {
-  const source = term.sourceDocument || term.source_document || "";
-  const sourceSection = term.sourceSection || term.source_section || "";
+  const source = publicText(term.sourceDocument || term.source_document || "");
+  const sourceSection = publicText(term.sourceSection || term.source_section || "");
+  if (containsForbiddenPublicText(source) || containsForbiddenPublicText(sourceSection)) return "";
+  if (!source || /\.(md|docx?|rtf|txt)(\?|#|$)/i.test(source)) return "";
   const reference = resolveContentReference(source, {
     scopeLabel: sourceSection,
-    allowTextFallback: true,
-    relevanceReason: "Bezug: Primärquelle oder redaktionelle Grundlage dieses Glossarbegriffs.",
+    allowTextFallback: false,
+    relevanceReason: "source",
   });
   if (!reference) return "";
   return `<div class="source-reference-block">
@@ -1021,14 +1113,21 @@ function relatedContentBlock(term) {
 function deepGlossarySectionsBlock(term) {
   const sections = asList(term.deepGlossarySections);
   if (!sections.length) return "";
-  const packLabel = term.glossaryPack || term.glossary_pack || "Glossar";
+  const publicSections = sections
+    .map((section) => ({
+      title: section.title || "Vertiefung",
+      body: section.body || "",
+      items: asList(section.items).filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)),
+    }))
+    .filter((section) => !containsForbiddenPublicText(section.title) && (paragraphs(section.body) || section.items.length));
+  if (!publicSections.length) return "";
   return `
         <section class="term-summary-card" aria-labelledby="deep-glossary-${esc(term.slug)}">
-          <p class="section-eyebrow">Glossar-Pack ${esc(packLabel)}</p>
+          <p class="section-eyebrow">Vertiefung</p>
           <h2 id="deep-glossary-${esc(term.slug)}">Vertiefte Begriffsstruktur</h2>
           <div class="term-section-grid">
-            ${sections.map((section) => `<section class="term-section-card">
-              <h3>${esc(section.title || "Abschnitt")}</h3>
+            ${publicSections.map((section) => `<section class="term-section-card">
+              <h3>${esc(section.title)}</h3>
               ${paragraphs(section.body)}
               ${listItems(section.items || [])}
             </section>`).join("")}
@@ -1041,6 +1140,12 @@ function learningBlock(term) {
   const detail = centralTermDetails.get(term.slug);
   if (!detail) return "";
   const [why, notMeaning, example, misconceptions, tools, fields] = detail;
+  const toolChips = linkedChips(tools);
+  const fieldChips = linkedChips(fields);
+  const followUpCards = [
+    toolChips ? `<section class="term-section-card"><h3>Passende Tools</h3>${toolChips}</section>` : "",
+    fieldChips ? `<section class="term-section-card"><h3>Passende Wirkungsfelder</h3>${fieldChips}</section>` : "",
+  ].filter(Boolean).join("");
   return `<section class="term-summary-card" aria-labelledby="learning-${esc(term.slug)}">
           <h2 id="learning-${esc(term.slug)}">Lernpfad zu ${esc(term.canonicalLabel)}</h2>
           <div class="term-section-grid">
@@ -1049,10 +1154,7 @@ function learningBlock(term) {
             <section class="term-section-card"><p class="section-eyebrow">Beispiel</p><h3>So wird es konkret</h3><p>${esc(example)}</p></section>
             <section class="term-section-card"><p class="section-eyebrow">Missverständnisse</p><h3>Worauf achten?</h3>${listItems(misconceptions)}</section>
           </div>
-          <div class="term-section-grid">
-            <section class="term-section-card"><h3>Passende Tools</h3>${linkedChips(tools)}</section>
-            <section class="term-section-card"><h3>Passende Wirkungsfelder</h3>${linkedChips(fields)}</section>
-          </div>
+          ${followUpCards ? `<div class="term-section-grid">${followUpCards}</div>` : ""}
         </section>`;
 }
 
@@ -1099,14 +1201,16 @@ function termLead(term) {
   if (term.termId === "mensch-planet-demokratie") {
     return "Mensch, Planet und Demokratie sind die verständliche Zusammenfassung der SDGs, der Agenda 2030 und der SDG+-Erweiterung der Wirkungsökonomie. Der Dreiklang übersetzt den fachlichen Referenzrahmen in eine Sprache, die öffentlich anschlussfähig ist.";
   }
-  return term.shortDefinition;
+  const candidates = [term.shortDefinition, term.short_definition, term.hoverDefinition, term.definition, term.longDefinition];
+  return publicText(candidates.find((value) => hasRealText(value) && !containsForbiddenPublicText(value)) || `${term.canonicalLabel} ist ein Begriff der Wirkungsökonomie.`);
 }
 
 function termSummary(term) {
   if (term.termId === "mensch-planet-demokratie") {
     return "Mensch, Planet und Demokratie sind die drei Oberbegriffe, unter denen die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ zusammenfasst. Fachlich bleibt der Referenzrahmen SDGs, Agenda 2030 und SDG+. Kommunikativ wird daraus: Wirkung für Mensch, Planet und Demokratie.";
   }
-  return term.hoverDefinition;
+  const candidates = [term.hoverDefinition, term.shortDefinition, term.short_definition, term.definition, term.longDefinition];
+  return publicText(candidates.find((value) => hasRealText(value) && !containsForbiddenPublicText(value)) || termLead(term));
 }
 
 function termDefinitionHtml(term) {
@@ -1114,7 +1218,7 @@ function termDefinitionHtml(term) {
     return `<p>Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
             <p>Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele. Sie sind die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt.</p>`;
   }
-  return `<p>${esc(term.longDefinition)}</p>`;
+  return paragraphs(term.longDefinition || term.long_definition || term.definition || term.shortDefinition);
 }
 
 function termWhyHtml(term) {
@@ -1122,20 +1226,20 @@ function termWhyHtml(term) {
     return `<p>Die SDGs und die Agenda 2030 sind fachlich zentral, aber in der Bevölkerung wenig bekannt. Für öffentliche Kommunikation braucht die Wirkungsökonomie deshalb eine einfache, klare und wiedererkennbare Sprache. Mensch, Planet und Demokratie macht sichtbar, worum es geht: nicht um abstrakte Zielnummern, sondern um Lebensqualität, ökologische Stabilität und demokratische Handlungsfähigkeit.</p>
             <p>Der Dreiklang ersetzt die SDGs nicht. Er übersetzt sie.</p>`;
   }
-  return `<p>${esc(term.preferredUsage || term.usageNote || "Der Begriff hilft, Wirkung, Bewertung und Rückkopplung präzise zu unterscheiden.")}</p>`;
+  return paragraphs(term.woekRelation || term.woek_einordnung || term.preferredUsage || term.usageNote);
 }
 
 function termUsageHtml(term) {
   if (term.termId === "mensch-planet-demokratie") {
     return `<p>Mensch, Planet und Demokratie nicht als Zusatz-Ziel neben den SDGs verwenden. Der Dreiklang ist die öffentliche Übersetzung des fachlichen Referenzrahmens und bleibt an Wirkung, Wirkungsbewertung und positive Netto-Wirkung gebunden.</p>`;
   }
-  return `<p>${esc(term.usageNote)}</p>`;
+  return paragraphs(term.usageNote || term.preferredUsage);
 }
 
 function mythBlock(term) {
-  const mythos = term.mythos || "";
-  const klaerung = term.woekKlaerung || term.woek_klaerung || "";
-  const blind = term.blindSpot || term.blind_spot || "";
+  const mythos = !containsForbiddenPublicText(term.mythos) ? publicText(term.mythos) : "";
+  const klaerung = !containsForbiddenPublicText(term.woekKlaerung || term.woek_klaerung) ? publicText(term.woekKlaerung || term.woek_klaerung) : "";
+  const blind = !containsForbiddenPublicText(term.blindSpot || term.blind_spot) ? publicText(term.blindSpot || term.blind_spot) : "";
   if (!mythos && !klaerung && !blind) return "";
   return `<section class="term-summary-card term-myth-card" aria-labelledby="term-myth-title">
           <p class="section-eyebrow">Mythos und Klärung</p>
@@ -1215,7 +1319,7 @@ const indexBody = `      <section class="hero compact-hero">
         <details class="glossary-advanced-filters">
           <summary>Erweiterte Fachfilter anzeigen</summary>
           <div class="glossary-filter-grid advanced">
-            ${filterButtons("type", "Alle Begriffstypen", filterValues("type").concat(filterValues("begriffstyp"), filterValues("conceptStatus")).filter(Boolean).filter((value, index, all) => all.indexOf(value) === index))}
+          ${filterButtons("type", "Alle Begriffstypen", filterValues("type").concat(filterValues("begriffstyp"), filterValues("conceptStatus")).filter((value) => hasRealText(value) && !containsForbiddenPublicText(value)).filter((value, index, all) => all.indexOf(value) === index))}
             ${filterButtons("theme", "Alle Themenwelten", filterValues("theme"))}
             ${filterButtons("dimension", "WÖk-Dimension", filterValues("dimensions"))}
             ${filterButtons("wirklogik", "Wirklogik", filterValues("wirklogik"))}
@@ -1239,9 +1343,13 @@ const indexBody = `      <section class="hero compact-hero">
           const filterData = termFilterData(term);
           return `<article class="info-card glossary-result-card" data-glossary-card data-category="${esc(term.category || "")}" data-type="${esc(filterData.type)}" data-theme="${dataAttrList(filterData.theme)}" data-dimension="${dataAttrList(filterData.dimension)}" data-wirklogik="${dataAttrList(filterData.wirklogik)}" data-field="${dataAttrList(filterData.field)}" data-source="${dataAttrList(filterData.source)}" data-search="${esc([term.canonicalLabel, term.shortDefinition, term.hoverDefinition, term.longDefinition, term.woekRelation, ...(term.synonyms || [])].join(" ").toLowerCase())}">
           <h3><a href="${esc(term.slug)}/">${esc(term.canonicalLabel)}</a></h3>
-          <p>${esc(term.shortDefinition)}</p>
+          <p>${esc(termLead(term))}</p>
           ${termBadges(term)}
-          <p class="meta-line">${esc(term.category || "Begriff")} · ${esc(term.type || term.begriffstyp || term.status)} · Version ${esc(term.version)}</p>
+          <p class="meta-line">${[
+            containsForbiddenPublicText(term.category) ? "Begriff" : publicText(term.category || "Begriff"),
+            publicTermType(term),
+            term.version && !containsForbiddenPublicText(term.version) ? `Version ${publicText(term.version)}` : "",
+          ].filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)).map(esc).join(" · ")}</p>
         </article>`;
         }).join("")}</div>
       </section>`;
@@ -1266,6 +1374,19 @@ const indexBody = `      <section class="hero compact-hero">
             .replace(/ü/g, "ue")
             .replace(/[^a-z0-9]+/g, "-")
             .replace(/^-+|-+$/g, "");
+          const normalizeSearch = (value) => String(value || "")
+            .trim()
+            .toLocaleLowerCase("de")
+            .replace(/ß/g, "ss")
+            .replace(/ä/g, "ae")
+            .replace(/ö/g, "oe")
+            .replace(/ü/g, "ue")
+            .replace(/[^a-z0-9]+/g, " ")
+            .replace(/\\s+/g, " ")
+            .trim();
+          cards.forEach((card) => {
+            card.dataset.normalizedSearch = normalizeSearch(card.dataset.search || card.textContent || "");
+          });
           Object.keys(state).forEach((key) => {
             if (key === "q") state.q = params.get("q") || "";
             else split(params.get(key)).forEach((value) => state[key].add(normalize(value)));
@@ -1287,11 +1408,12 @@ const indexBody = `      <section class="hero compact-hero">
             window.history.replaceState(null, "", url);
           }
           function apply() {
-            const q = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : state.q;
+            const rawQ = search instanceof HTMLInputElement ? search.value.trim() : state.q;
+            const q = normalizeSearch(rawQ);
             state.q = q;
             let visible = 0;
             cards.forEach((card) => {
-              const textMatch = !q || (card.dataset.search || card.textContent || "").toLowerCase().includes(q);
+              const textMatch = !q || (card.dataset.normalizedSearch || "").includes(q);
               const show = textMatch && hasAll(card, "type") && hasAll(card, "theme") && hasAll(card, "dimension") && hasAll(card, "wirklogik") && hasAll(card, "field") && hasAll(card, "source");
               card.hidden = !show;
               if (show) visible += 1;
@@ -1336,7 +1458,11 @@ const indexBody = `      <section class="hero compact-hero">
             if (search instanceof HTMLInputElement) search.value = "";
             apply();
           });
-          search?.addEventListener("input", apply);
+          let searchTimer = 0;
+          search?.addEventListener("input", () => {
+            window.clearTimeout(searchTimer);
+            searchTimer = window.setTimeout(apply, 80);
+          });
           apply();
         })();
       </script>`;
@@ -1483,7 +1609,7 @@ function sexarbeitDetailBody(term) {
             <h2 id="related-terms-title">Verwandte Begriffe</h2>
           </div>
           <div class="term-chip-row">
-            ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
+            ${(term.relatedTerms || []).map(termLink).filter(Boolean).join("")}
           </div>
         </section>${relatedContentBlock(term)}
         <section class="meta-box">
@@ -1523,6 +1649,28 @@ function writeGlossaryTermAlias(aliasSlug, aliasLabel, targetSlug, targetLabel, 
   const dir = path.join(outDir, aliasSlug);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), glossaryTermAliasPage(aliasLabel, targetSlug, targetLabel, note));
+}
+
+function writeGlossaryArchivePage(aliasSlug, aliasLabel) {
+  const dir = path.join(outDir, aliasSlug);
+  fs.mkdirSync(dir, { recursive: true });
+  const body = `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(aliasLabel)}</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">Archivierter Glossarverweis</p>
+          <h1>${esc(aliasLabel)}</h1>
+          <p class="lead">Diese ältere Begriffseite wurde bereinigt. Der aktuelle Einstieg liegt im Glossar-Hub.</p>
+          <div class="term-action-row">
+            <a class="btn btn-primary" href="../">Alle Begriffe öffnen</a>
+            <a class="btn btn-secondary" href="../../suche.html?q=${encodeURIComponent(aliasLabel)}">Website durchsuchen</a>
+          </div>
+        </header>
+      </article>`;
+  const html = pageShell(aliasLabel, body, "../../", {
+    metaTitle: `${aliasLabel} - archivierter Glossarverweis`,
+    metaDescription: "Archivierter Glossarverweis ohne alte Platzhalter- oder interne Redaktionsdaten.",
+  }).replace("</head>", '  <meta name="robots" content="noindex, follow">\n  </head>');
+  fs.writeFileSync(path.join(dir, "index.html"), html);
 }
 
 function sozialeInfrastrukturDetailBody(term) {
@@ -1647,7 +1795,7 @@ function sozialeInfrastrukturDetailBody(term) {
             <h2 id="related-terms-title">Verwandte Begriffe</h2>
           </div>
           <div class="term-chip-row">
-            ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
+            ${(term.relatedTerms || []).map(termLink).join("")}
           </div>
         </section>${relatedContentBlock(term)}
         <section class="meta-box">
@@ -1659,79 +1807,140 @@ function sozialeInfrastrukturDetailBody(term) {
       </article>`;
 }
 
-for (const term of data.terms) {
+function staatDetailBody(term) {
+  const stateSources = [
+    {
+      title: "Staat als Wirkungsarchitektur und Resilienzstaat",
+      url: "../../wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/",
+      type: "WÖk-Vertiefung",
+      proves: "Zeigt, wie der Staat als öffentliche Rückkopplungsarchitektur verstanden werden kann.",
+    },
+    {
+      title: "Staat, Recht & Demokratie",
+      url: "../../wirkungsfelder/staat-recht-demokratie/",
+      type: "Wirkungsfeld",
+      proves: "Ordnet Staat, Recht, Demokratie, Wirkungsrat und Wirkungssteuerung im WÖk-System ein.",
+    },
+    {
+      title: "Grundgesetz für die Bundesrepublik Deutschland",
+      url: "https://www.gesetze-im-internet.de/gg/",
+      type: "Primärquelle",
+      proves: "Rechtsgrundlage für Demokratie, Rechtsstaat, Grundrechte, Gesetzgebung und staatliche Ordnung in Deutschland.",
+    },
+    {
+      title: "Bundeszentrale für politische Bildung: Politisches System",
+      url: "https://www.bpb.de/themen/politisches-system/",
+      type: "Externe Einordnung",
+      proves: "Allgemeinverständliche staatskundliche Einordnung politischer Institutionen, Verfahren und Demokratie.",
+    },
+  ];
+  return `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / Staat</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">Anschlussbegriff</p>
+          <h1>Staat</h1>
+          <p class="lead">Der Staat ist die dauerhafte politische und rechtliche Ordnung eines Landes. Er umfasst Staatsgebiet, Staatsvolk, Staatsgewalt, Verfassung, Gesetze, Institutionen, Gerichte, Verwaltung und Behörden. Die Regierung kann wechseln; der Staat bleibt bestehen.</p>
+          <div class="term-meta-row" aria-label="Begriffsinformation"><span>Anschlussbegriff</span>${term.version ? `<span>Stand / Version ${esc(term.version)}</span>` : ""}</div>
+          <div class="term-action-row">${detailLinks(term)}</div>
+        </header>
+        <section class="term-summary-card" aria-labelledby="staat-summary-title">
+          <h2 id="staat-summary-title">Auf einen Blick</h2>
+          <ul class="clean-list">
+            <li>Der Staat ist nicht identisch mit der aktuellen Regierung.</li>
+            <li>Er umfasst Recht, Institutionen, Verwaltung, Gerichte, Haushalt, Infrastruktur und demokratische Verfahren.</li>
+            <li>Wirkungsökonomisch ist er eine mögliche Rückkopplungsarchitektur: Er kann Wirkungen sichtbar, prüfbar, korrigierbar und demokratisch verantwortbar machen.</li>
+          </ul>
+        </section>
+        <div class="term-section-grid">
+          <section class="term-section-card">
+            <p class="section-eyebrow">Definition</p>
+            <h2>Was bedeutet der Begriff?</h2>
+            <p>Der Staat ist die rechtlich-politische Ordnung, die ein Gemeinwesen dauerhaft trägt. Dazu gehören Gebiet, Bürger:innen, Verfassung, Gesetze, Verwaltung, Gerichte, öffentliche Haushalte und die gebundene Ausübung staatlicher Gewalt.</p>
+          </section>
+          <section class="term-section-card">
+            <p class="section-eyebrow">Wirkungsökonomie</p>
+            <h2>Warum ist das wichtig?</h2>
+            <p>Die Wirkungsökonomie unterscheidet zwischen Regierung, Verwaltung und Staat, weil Wirkung nicht nur durch einzelne politische Entscheidungen entsteht. Ein Staat wirkt auch über Recht, Haushalt, Infrastruktur, Verwaltung, Gerichte, öffentliche Daten, Bildung, Sicherheit und Vertrauen.</p>
+            <p>Deshalb wird der Staat in der WÖk nicht als Machtapparat verstanden, sondern als mögliche Rückkopplungsarchitektur: Er schafft die Regeln, durch die Wirkungen sichtbar, überprüfbar, korrigierbar und demokratisch verantwortbar werden.</p>
+          </section>
+          <section class="term-section-card">
+            <p class="section-eyebrow">Verwendung</p>
+            <h2>So wird der Begriff genutzt</h2>
+            <p>Wenn die WÖk vom Staat spricht, meint sie nicht nur die aktuelle Regierung. Gemeint ist die dauerhafte Ordnung, in der Gesetze entstehen, Verwaltung handelt, Gerichte kontrollieren, öffentliche Mittel verteilt werden und Bürger:innen Rechte haben.</p>
+            <p>Das ist wichtig, weil wirkungsorientierte Politik nicht allein von Regierungsabsichten abhängt, sondern von tragfähigen Institutionen, Verfahren und Rückkopplungen.</p>
+          </section>
+        </div>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Abgrenzung</p>
+          <h2>Nicht verwechseln mit</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Regierung</h3><p>Die Regierung führt die aktuelle politische Exekutive. Sie kann wechseln. Der Staat umfasst mehr als die Regierung.</p></section>
+            <section class="term-section-card"><h3>Verwaltung</h3><p>Verwaltung setzt Regeln und Programme um. Sie ist Teil des Staates, aber nicht der Staat als Ganzes.</p></section>
+            <section class="term-section-card"><h3>Gesellschaft</h3><p>Gesellschaft umfasst Bürger:innen, Organisationen, Unternehmen, Medien, Kultur und soziale Räume. Sie ist nicht mit dem Staat identisch.</p></section>
+            <section class="term-section-card"><h3>Nation</h3><p>Nation bezeichnet Zugehörigkeit, Geschichte, Identität oder Selbstverständnis. Der Staat ist die rechtlich-politische Ordnung.</p></section>
+            <section class="term-section-card"><h3>Staatsgewalt</h3><p>Staatsgewalt ist eine Funktion des Staates. Sie muss an Recht, Grundrechte und Gewaltenteilung gebunden sein.</p></section>
+          </div>
+        </section>
+        ${relatedTermsChips(term)}${relatedContentBlock(term)}
+        <section class="meta-box">
+          <h2>Quellen und Vertiefungen</h2>
+          <div class="related-document-list content-reference-list">
+            ${stateSources.map((source) => `<article class="content-reference-card">
+              <span class="content-reference-card__badge">Quelle</span>
+              <h4 class="content-reference-card__heading"><a class="content-reference-card__title" href="${esc(source.url)}">${esc(source.title)}</a></h4>
+              <div class="content-reference-card__meta">${esc(source.type)}</div>
+              <p class="content-reference-card__description"><strong>Belegt hier:</strong> ${esc(source.proves)}</p>
+            </article>`).join("")}
+          </div>
+        </section>
+      </article>`;
+}
+
+for (const term of indexedTerms) {
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
   const metaItems = [
-    `Version ${esc(term.version)}`,
-    term.conceptStatus || term.concept_status,
-    term.publicationStatus || term.publication_status,
-  ].filter(Boolean).map((item) => `<span>${esc(item)}</span>`).join("");
-  const statusParagraph = term.conceptStatus || term.concept_status || term.publicationStatus || term.publication_status
-    ? `          <p>Begriffstatus: ${esc(term.conceptStatus || term.concept_status || "nicht klassifiziert")} · Publikationsstatus: ${esc(term.publicationStatus || term.publication_status || "published")}</p>
-`
-    : "";
+    publicTermType(term),
+    term.version && !containsForbiddenPublicText(term.version) ? `Stand / Version ${publicText(term.version)}` : "",
+  ].filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)).map((item) => `<span>${esc(item)}</span>`).join("");
+  const sectionCards = [
+    optionalTermSection({ eyebrow: "Definition", title: "Was bedeutet der Begriff?", html: termDefinitionHtml(term) }),
+    optionalTermSection({ eyebrow: "Wirkungsökonomie", title: "Warum ist das wichtig?", html: termWhyHtml(term) }),
+    optionalTermSection({ eyebrow: "Verwendung", title: "So wird der Begriff genutzt", html: termUsageHtml(term) }),
+    optionalTermSection({ eyebrow: "Abgrenzung", title: "Nicht verwechseln mit", html: listItems(term.doNotConfuseWith) }),
+  ].filter(Boolean).join("");
+  const sourceHtml = [sourceReferenceBlock(term), sourceList(term)].filter(Boolean).join("");
   const body = term.slug === "sexarbeit"
     ? sexarbeitDetailBody(term)
     : term.slug === "soziale-infrastruktur"
     ? sozialeInfrastrukturDetailBody(term)
+    : term.slug === "staat"
+    ? staatDetailBody(term)
     : `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
         <header class="term-detail-hero">
-          <p class="hero-kicker">${esc(term.category || "Begriff")}</p>
+          <p class="hero-kicker">${esc(publicTermType(term))}</p>
           <h1>${esc(term.canonicalLabel)}</h1>
           <p class="lead">${esc(termLead(term))}</p>
-          <div class="term-meta-row" aria-label="Begriffsinformation">
-            ${metaItems}
-          </div>
+          ${metaItems ? `<div class="term-meta-row" aria-label="Begriffsinformation">${metaItems}</div>` : ""}
           <div class="term-action-row">${detailLinks(term)}</div>
         </header>
         <section class="term-summary-card" aria-labelledby="term-summary-title">
           <h2 id="term-summary-title">Auf einen Blick</h2>
           <p>${esc(termSummary(term))}</p>
         </section>
-        <div class="term-section-grid">
-          <section class="term-section-card">
-            <p class="section-eyebrow">Definition</p>
-            <h2>Was bedeutet der Begriff?</h2>
-            ${termDefinitionHtml(term)}
-          </section>
-          <section class="term-section-card">
-            <p class="section-eyebrow">Wirkungsökonomie</p>
-            <h2>Warum ist das wichtig?</h2>
-            ${termWhyHtml(term)}
-          </section>
-          <section class="term-section-card">
-            <p class="section-eyebrow">Verwendung</p>
-            <h2>So wird der Begriff genutzt</h2>
-            ${termUsageHtml(term)}
-          </section>
-          <section class="term-section-card">
-            <p class="section-eyebrow">Abgrenzung</p>
-            <h2>Nicht verwechseln mit</h2>
-            ${listItems(term.doNotConfuseWith)}
-          </section>
-        </div>
+        ${sectionCards ? `<div class="term-section-grid">${sectionCards}</div>` : ""}
 ${termExtraBlock(term)}
 ${mythBlock(term)}
 ${learningBlock(term)}
 ${deepGlossarySectionsBlock(term)}
-        <section class="term-link-section" aria-labelledby="related-terms-title">
-          <div>
-            <p class="section-eyebrow">Verknüpfungen</p>
-            <h2 id="related-terms-title">Verwandte Begriffe</h2>
-          </div>
-          <div class="term-chip-row">
-            ${(term.relatedTerms || []).length ? term.relatedTerms.map(termLink).join("") : "<span class=\"term-chip muted\">Keine Einträge</span>"}
-          </div>
-        </section>${relatedContentBlock(term)}
+${relatedTermsChips(term)}${relatedContentBlock(term)}
 ${chapterBlock(term)}
-        <section class="meta-box">
+        ${sourceHtml ? `<section class="meta-box">
           <h2>Version und Quellen</h2>
-          <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
-${statusParagraph}          ${sourceReferenceBlock(term)}
-          ${sourceList(term)}
-        </section>
+          <p>Kategorie: ${esc(containsForbiddenPublicText(term.category) ? "Begriff" : publicText(term.category || "Begriff"))}${term.version && !containsForbiddenPublicText(term.version) ? ` · Version: ${esc(publicText(term.version))}` : ""}</p>
+          ${sourceHtml}
+        </section>` : ""}
       </article>`;
   const pageOptions = term.termId === "mensch-planet-demokratie"
     ? {
@@ -1757,6 +1966,48 @@ if (data.terms.some((term) => term.slug === "soziale-infrastruktur")) {
   writeGlossaryTermAlias("zivilgesellschaftliche-infrastruktur", "Zivilgesellschaftliche Infrastruktur", "soziale-infrastruktur", "Soziale Infrastruktur", sozialeInfrastrukturAliasNote);
 }
 
+function writeStaleGlossaryRedirects() {
+  const generatedSlugs = new Set(indexedTerms.map((term) => term.slug));
+  const sourceByLabel = new Map();
+  for (const term of data.terms) {
+    const labels = [
+      term.canonicalLabel,
+      term.label,
+      ...(term.aliases || []),
+      ...(term.synonyms || []),
+    ];
+    for (const label of labels) {
+      const key = normalizedHubConcept(label);
+      if (key && !sourceByLabel.has(key)) sourceByLabel.set(key, term);
+    }
+  }
+  for (const entry of fs.readdirSync(outDir, { withFileTypes: true })) {
+    if (!entry.isDirectory() || generatedSlugs.has(entry.name)) continue;
+    const indexFile = path.join(outDir, entry.name, "index.html");
+    if (!fs.existsSync(indexFile)) continue;
+    const html = fs.readFileSync(indexFile, "utf8");
+    const label = firstMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i)
+      || firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i).replace(/\s*[|-]\s*Glossar.*$/i, "")
+      || humanizeSlug(entry.name);
+    const cleanLabel = cleanReferenceTitle(label)
+      .replace(/\s*\((Kurzverweis|Leseschlüssel|Leseschluessel|Bestand|Alias)\)\s*$/i, "")
+      .trim();
+    const labelKey = normalizedHubConcept(cleanLabel);
+    const slugWithoutSuffix = entry.name.replace(/-\d+$/, "");
+    const target = sourceByLabel.get(labelKey)
+      || data.terms.find((term) => term.slug === slugWithoutSuffix)
+      || null;
+    if (!target || target.slug === entry.name) {
+      writeGlossaryArchivePage(entry.name, cleanLabel || entry.name);
+      continue;
+    }
+    const note = `Diese ältere Begriffseite wurde kanonisiert und verweist auf <a href="../${esc(target.slug)}/">${esc(target.canonicalLabel || target.label)}</a>.`;
+    writeGlossaryTermAlias(entry.name, cleanLabel || entry.name, target.slug, target.canonicalLabel || target.label, note);
+  }
+}
+
+writeStaleGlossaryRedirects();
+
 const reportLines = [
   "# Content-Reference-Report",
   "",
@@ -1781,4 +2032,4 @@ if (contentReferenceWarnings.length) {
   console.warn(`[content-reference] WARN ${contentReferenceWarnings.length} Hinweise, siehe reports/content-reference-report.md`);
 }
 console.log(`[content-reference] OK ${contentReferenceRecords.length} references resolved`);
-console.log(`Wrote glossary index with ${indexedTerms.length} entries, regenerated ${data.terms.length} source-backed term pages and preserved ${legacyDetailTerms.length} legacy detail pages.`);
+console.log(`Wrote glossary index with ${indexedTerms.length} entries, regenerated ${data.terms.length} source-backed term pages and normalized ${legacyDetailTerms.length} legacy detail pages.`);

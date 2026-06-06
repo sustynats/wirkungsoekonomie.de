@@ -1,29 +1,113 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-05T20:47:49.787Z
-Resolved references: 6619
-Warnings: 844
+Erzeugt: 2026-06-06T01:04:30.131Z
+Resolved references: 6630
+Warnings: 2810
 
 ## Warnungen
 
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] manifest-der-wirkungsoekonomie - Titel aus Slug erzeugt
 - [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] CSRD und Prüfungsstandards - Titel aus Slug erzeugt
+- [unresolved-reference] CSRD und Prüfungsstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkung-wirkungspotenzial-wirkungsrisiko - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
@@ -33,6 +117,8 @@ Warnings: 844
 - [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
@@ -44,8 +130,50 @@ Warnings: 844
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
@@ -55,6 +183,14 @@ Warnings: 844
 - [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
@@ -64,6 +200,8 @@ Warnings: 844
 - [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
 - [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
 - [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
@@ -73,20 +211,46 @@ Warnings: 844
 - [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
 - [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Maßstabskrise - Titel aus Slug erzeugt
@@ -101,23 +265,143 @@ Warnings: 844
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Arbeitspapier Wirkungseinkommensteuer - Titel aus Slug erzeugt
 - [unresolved-reference] Arbeitspapier Wirkungseinkommensteuer - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] EU-Kommission Clean Industrial Deal - Titel aus Slug erzeugt
+- [unresolved-reference] EU-Kommission Clean Industrial Deal - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
 - [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Wirkungsradar Sprachmuster und Emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] Wirkungsradar Sprachmuster und Emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
@@ -125,387 +409,103 @@ Warnings: 844
 - [unresolved-reference] folgencheck-statt-faktencheck-democracy-intelligence - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] CSRD und ESRS - Titel aus Slug erzeugt
+- [unresolved-reference] CSRD und ESRS - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
 - [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
 - [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] fuehrender-begriffsleitfaden - Titel aus Slug erzeugt
-- [unresolved-reference] fuehrender-begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] working-paper-wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] folgencheck-statt-faktencheck-democracy-intelligence - Titel aus Slug erzeugt
-- [unresolved-reference] folgencheck-statt-faktencheck-democracy-intelligence - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] fuehrender-begriffsleitfaden - Titel aus Slug erzeugt
-- [unresolved-reference] fuehrender-begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] working-paper-wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
-- [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] fuehrender-begriffsleitfaden - Titel aus Slug erzeugt
-- [unresolved-reference] fuehrender-begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] working-paper-wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wirkungsfonds-gesundheit-pflege - Titel aus Slug erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wirkungsfonds-gesundheit-pflege - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] referenz-kapitel-068-gesundheit - Titel aus Slug erzeugt
-- [unresolved-reference] referenz-kapitel-068-gesundheit - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] referenz-kapitel-069-pflege - Titel aus Slug erzeugt
-- [unresolved-reference] referenz-kapitel-069-pflege - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] gesundheit-pflege-und-soziales - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] manifest-der-wirkungsoekonomie - Titel aus Slug erzeugt
-- [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wirkungsraeume-gestalten-hosting-v1-0 - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsraeume-gestalten-hosting-v1-0 - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] fuehrender-begriffsleitfaden - Titel aus Slug erzeugt
-- [unresolved-reference] fuehrender-begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] working-paper-wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] working-paper-wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] nachhaltigkeit-systemarchitektur - Titel aus Slug erzeugt
-- [unresolved-reference] nachhaltigkeit-systemarchitektur - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Maßstabskrise - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Maßstabskrise - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Leistung neu definieren - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Leistung neu definieren - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Arbeitspapier Wirkungseinkommensteuer - Titel aus Slug erzeugt
-- [unresolved-reference] Arbeitspapier Wirkungseinkommensteuer - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] manifest-der-wirkungsoekonomie - Titel aus Slug erzeugt
-- [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkungshaushalt und öffentliche Mittel - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkung als Rechtsprinzip - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkungsrat - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkungsrat - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Verwaltung, Rechtsschutz und Körperschaftslogik - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] one-health-score - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] klima-energie-ressourcen - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] referenz-kapitel-068-gesundheit - Titel aus Slug erzeugt
-- [unresolved-reference] referenz-kapitel-068-gesundheit - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] referenz-kapitel-069-pflege - Titel aus Slug erzeugt
-- [unresolved-reference] referenz-kapitel-069-pflege - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wirkungsraeume-gestalten-hosting-v1-0 - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsraeume-gestalten-hosting-v1-0 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] beispiel-apfel-wirkungssteuer - Titel aus Slug erzeugt
-- [unresolved-reference] beispiel-apfel-wirkungssteuer - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
-- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [unresolved-reference] [empty] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] wirkungsradar-co2-preis-oder-fossile-systemkosten - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-co2-preis-oder-fossile-systemkosten - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Maßstabskrise - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Maßstabskrise - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Leistung neu definieren - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Leistung neu definieren - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 
 ## Aufgelöste Verweise
 
@@ -544,7 +544,7 @@ Warnings: 844
 - /verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#dossier-abschlussnutzen -> Dossier SDGs und Agenda 2030 als globaler Referenzrahmen (Whitepaper, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/geschichte/#book-anchors -> Die Geschichte der SDGs (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/#book-anchors -> SDG-/SDG+-Referenzrahmen (Website, Beschreibung: ja)
-- /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Methodenlandkarte (Methode, Beschreibung: ja)
+- /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 (Methode, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#akteursgruppen -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/#akteursgruppen -> SDG+ als Erweiterung der Wirkungsökonomie (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/#book-anchors -> SDG-/SDG+-Referenzrahmen: Anker im Online-Buch (Detailkonzept, Beschreibung: ja)
@@ -565,9 +565,9 @@ Warnings: 844
 - /referenz/kapitel-001-meine-reise-zur-wirkung/#woek-main-2026-k001-s001 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#woek-main-2026-k108-s001 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /bibliothek/folgencheck-wirkungspolitische-sprache/ -> Folgencheck statt Faktencheck | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#woek-main-2026-k083-s001 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/ -> Detailkonzept: Algorithmische Fairness und digitale Rechte (Website, Beschreibung: ja)
@@ -611,6 +611,7 @@ Warnings: 844
 - /blog/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.html -> Warum wir glauben, Nachhaltigkeit sei teuer (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-024-der-mensch-im-system/#woek-main-2026-k024-s001 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/ -> Detailkonzept: Multipolare Ordnung und kulturelle Anschlussfähigkeit (Website, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
@@ -620,7 +621,6 @@ Warnings: 844
 - /wirkungsfelder/rente-soziale-sicherung/politische-umsetzung/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-072-kultur-und-teilhabe/#woek-main-2026-k072-s001 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -692,11 +692,11 @@ Warnings: 844
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Öffentlicher Wirkungsraum: Debatten verstehen, Aufmerksamkeit gewichten, Resilienz stärken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-062-parteien-und-programme/#woek-main-2026-k062-s001 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
 - /blog/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.html -> Demokratie schützen, Menschen zurückgewinnen: Der lange Weg aus der Radikalisierung (Journalartikel, Beschreibung: ja)
-- /blog/schadenoekonomie.html -> Schadenökonomie – Wie Aufhetzung und Spaltung profitabel werden (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
@@ -748,6 +748,7 @@ Warnings: 844
 - /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58: Wirkungsrente (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#woek-main-2026-k008-s001 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
@@ -759,7 +760,6 @@ Warnings: 844
 - /referenz/kapitel-001-meine-reise-zur-wirkung/#woek-main-2026-k001-s001 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#woek-main-2026-k108-s001 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-019-nichttriviale-systeme/#woek-main-2026-k019-s001 -> Kapitel 19: Nichttriviale Systeme (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#book-anchors -> SDG 16 Frieden, Gerechtigkeit und starke Institutionen (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#akteursgruppen -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
 - /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -829,7 +829,7 @@ Warnings: 844
 - /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html -> Politische Anschlussfähigkeit: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
 - /wirkungsfelder/arbeit-einkommen/dossiers/ -> Einzeldossiers | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
 - /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html -> Wirkungsfonds und Automatisierungsdividende: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
-- /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Methodenlandkarte (Methode, Beschreibung: ja)
+- /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 (Methode, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#woek-main-2026-k032-s001 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
@@ -859,8 +859,8 @@ Warnings: 844
 - /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#woek-main-2026-k008-s001 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#woek-main-2026-k006-s001 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.html -> Die unterschätzte Macht der Tonalität in der Kommunikation (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.html -> Die unterschätzte Macht der Tonalität in der Kommunikation (Journalartikel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/#woek-main-2026-k035-s001 -> Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1217,8 +1217,8 @@ Warnings: 844
 - /portale/sicherheit-resilienz/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#woek-main-2026-k023-s001 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/dossier/ -> Gesamtdossier Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Öffentlicher Wirkungsraum: Debatten verstehen, Aufmerksamkeit gewichten, Resilienz stärken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/ -> Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
-- /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
 - /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#woek-main-2026-k096-s001 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#woek-main-2026-k023-s001 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1231,6 +1231,7 @@ Warnings: 844
 - /blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html -> Wirkungspotenzial: Warum Fakten allein nicht wirken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-079-diskurskultur/#woek-main-2026-k079-s001 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Öffentlicher Wirkungsraum: Debatten verstehen, Aufmerksamkeit gewichten, Resilienz stärken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html -> Soziale Resilienz gegen Verhetzung – Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#woek-main-2026-k023-s001 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1238,7 +1239,6 @@ Warnings: 844
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/konzept/ -> Konzeptpapier Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
-- /wirkungsfelder/medien-oeffentlichkeit/dossier/ -> Gesamtdossier Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#woek-main-2026-k023-s001 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1281,8 +1281,8 @@ Warnings: 844
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit – Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit – Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)

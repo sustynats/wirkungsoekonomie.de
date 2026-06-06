@@ -1,8 +1,8 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-05T20:47:48.830Z
-- Content pages scanned: 1009
-- Glossary terms indexed: 1339
+- Generated: 2026-06-06T01:04:29.016Z
+- Content pages scanned: 1010
+- Glossary terms indexed: 1341
 - Warnings: 566
 
 ## Stichproben
@@ -11,7 +11,7 @@
 
 - 597 · defined · Warum der Rückhalt für Klimaschutz sinkt - und was das über unsere Demokratie verrät · /blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html · manual override +500, related proximity 1, 4 occurrences, blog +25
 - 171 · strong · Wirkungsräume gestalten · /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ · related proximity 6, 2 occurrences, field +35
-- 166 · strong · Methoden & Werkzeuge der Wirkungsökonomie | Methodenlandkarte · /werkzeuge/ · related proximity 3, 2 occurrences, method +60
+- 166 · strong · Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 · /werkzeuge/ · related proximity 3, 2 occurrences, method +60
 
 ### Wirkung (wirkung)
 
