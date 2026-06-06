@@ -337,7 +337,7 @@ function injectContextualQuestions() {
   section.innerHTML = `
     <div class="section-header">
       <p class="hero-kicker">Passende Fragen</p>
-      <h2 id="contextual-related-questions-title">Kontext einordnen</h2>
+      <h2 id="contextual-related-questions-title">Passende Fragen zum Begriff</h2>
     </div>
     <div class="related-question-grid">
       ${questions
@@ -4336,6 +4336,9 @@ const WirkungsraumLayer = (() => {
   function actionTarget() {
     const actions = document.querySelector(".hero-actions");
     if (actions) return { container: actions, panelAfter: actions };
+
+    const termActions = document.querySelector(".glossary-detail .term-detail-hero .term-action-row");
+    if (termActions) return { container: termActions, panelAfter: termActions };
 
     let row = document.querySelector("[data-wirkungsraum-actions-row]");
     if (row) return { container: row, panelAfter: row };
