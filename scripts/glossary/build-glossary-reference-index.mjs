@@ -30,6 +30,10 @@ const contentRoots = [
   "index.html",
 ];
 
+const excludedReferenceRoutes = new Set([
+  "/bibliothek/wirkungsradar-dossiers/",
+]);
+
 const contentTypeWeights = {
   "book-chapter": 80,
   book: 70,
@@ -232,6 +236,7 @@ function loadPages() {
     const html = fs.readFileSync(file, "utf8");
     if (/<meta\s+name=["']robots["']\s+content=["'][^"']*(?:noindex|nofollow)/i.test(html)) continue;
     const route = routeFor(file);
+    if (excludedReferenceRoutes.has(route)) continue;
     if (route.startsWith("/begriffe/") || route.startsWith("/reports/")) continue;
     const title = firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i).replace(/\s*[|-]\s*Wirkungsökonomie\s*$/i, "")
       || firstMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i)
