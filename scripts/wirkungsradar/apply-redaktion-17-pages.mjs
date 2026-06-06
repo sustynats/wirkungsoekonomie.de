@@ -4,7 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const DATA_FILE = path.join(ROOT, "data/wirkungsradar/redaktionelle-ueberarbeitung-17.json");
 const PUBLIC_BASE = "https://wirkungsoekonomie.de";
-const CSS_VERSION = "20260605-redaktion-17";
+const CSS_VERSION = "20260606-nav-cache-fix";
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -291,7 +291,12 @@ function updateHead(html, page) {
   next = replaceOrInsert(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(title)}</title>`, next);
   next = replaceOrInsert(/<meta name="description" content="[^"]*">/i, `<meta name="description" content="${escapeHtml(description)}">`, next);
   next = replaceOrInsert(/<link rel="canonical" href="[^"]*">/i, `<link rel="canonical" href="${escapeHtml(canonical)}">`, next);
-  next = next.replace(/assets\/css\/style\.css\?v=[^"]+/g, `assets/css/style.css?v=20260606-nav-cache-fix"wirkungsradar/live", page.canonicalSlug, "index.html");
+  next = next.replace(/assets\/css\/style\.css\?v=[^"]+/g, `assets/css/style.css?v=${CSS_VERSION}`);
+  return next;
+}
+
+function applyPage(page, stand) {
+  const target = path.join(ROOT, "wirkungsradar/live", page.canonicalSlug, "index.html");
   if (!fs.existsSync(target)) {
     throw new Error(`Zielseite fehlt: ${path.relative(ROOT, target)}`);
   }

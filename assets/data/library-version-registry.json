@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T01:04:49.480Z",
+  "generatedAt": "2026-06-06T07:11:53.894Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,10 +204,10 @@
     }
   ],
   "counts": {
-    "total": 1479,
+    "total": 1480,
     "byStatus": {
       "führend": 5,
-      "aktuell": 944,
+      "aktuell": 945,
       "Arbeitsfassung": 274,
       "ältere Fassung": 256
     },
@@ -215,7 +215,7 @@
       "Grundlagenwerk": 63,
       "Glossar": 41,
       "Methodik": 110,
-      "Arbeitspapier": 1194,
+      "Arbeitspapier": 1195,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -224,10 +224,10 @@
     },
     "bySource": {
       "leading-reference": 7,
-      "download-or-document": 713,
+      "download-or-document": 714,
       "online-version": 759
     },
-    "downloadFiles": 713,
+    "downloadFiles": 714,
     "onlineVersions": 759
   },
   "documents": [
@@ -22439,6 +22439,30 @@
       "urls": {
         "primary": "dokumente/woek-g1-1-die-massstabskrise.pptx",
         "sourcePath": "dokumente/woek-g1-1-die-massstabskrise.pptx"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-go2-produktionsreihenfolge-woek-go2-produktionsreihenfolge",
+      "title": "WÖk go2 produktionsreihenfolge detailkonzepte",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Produkte, Konsum & Beschaffung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "XLSX"
+      ],
+      "urls": {
+        "primary": "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
+        "sourcePath": "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx"
       },
       "source": "download-or-document",
       "isLeadingReference": false

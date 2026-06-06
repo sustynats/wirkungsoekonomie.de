@@ -4,7 +4,8 @@ import path from "node:path";
 const ROOT = process.cwd();
 const RADAR_ROOT = path.join(ROOT, "wirkungsradar");
 const SITE_URL = "https://wirkungsoekonomie.de";
-const VERSION = "20260605-debate-compass-tool-order";
+const VERSION = "20260606-nav-cache-fix";
+const MAIN_JS_VERSION = "20260606-main-cache-fix";
 
 function esc(value) {
   return String(value ?? "")
@@ -580,7 +581,8 @@ function normalizeGeneralRadarPage(file) {
   let html = fs.readFileSync(file, "utf8");
   const before = html;
   html = cleanPublicTitles(html)
-    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=20260606-nav-cache-fix"</main>")) {
+    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=${VERSION}`);
+  if (shouldHaveCommunity(file, html) && !/data-community-submission-block/.test(html) && html.includes("</main>")) {
     html = html.replace("</main>", `${communityBlock(file)}\n</main>`);
   }
   if (html !== before) fs.writeFileSync(file, html);
@@ -655,7 +657,8 @@ function processPage(file) {
     : '<main id="inhalt" class="debate-compass-template" data-pagefind-body>';
   const after = `${parts.before}${normalizedMainOpen}\n${rendered}\n${remaining ? `\n<!-- Nicht zugeordnete Restinhalte nach Template-Vereinheitlichung ausgeblendet, um Doppelungen zu vermeiden. -->\n` : ""}</main>${parts.after.replace(/^<\/main>/, "")}`;
   const finalHtml = cleanPublicTitles(after)
-    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=20260606-nav-cache-fix"' <)]+/g, "assets/js/main.js?v=20260606-main-cache-fix")
+    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=${VERSION}`)
+    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, `assets/js/main.js?v=${MAIN_JS_VERSION}`)
     .replace(/Debatten-Kompass: So reagierst du/g, "So antwortest du")
     .replace(/Psychologischer Wirkungscheck/g, "Warum zieht dieses Narrativ?")
     .replace(/Wirkungsradar Dossier/g, "Debattenkarte");
