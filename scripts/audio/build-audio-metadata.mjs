@@ -8,6 +8,15 @@ const explanationsPath = path.join(root, "assets", "data", "audio-explanations.j
 const metadataPath = path.join(root, "assets", "data", "audio-metadata.json");
 const audioIndexPath = path.join(root, "audio", "index.html");
 
+function readPreviousMetadata() {
+  if (!fs.existsSync(metadataPath)) return {};
+  try {
+    return JSON.parse(fs.readFileSync(metadataPath, "utf8")).items || {};
+  } catch (error) {
+    return {};
+  }
+}
+
 function walk(dir) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -31,7 +40,8 @@ function slugTitle(slug) {
     .replace(/\b\w/g, (match) => match.toUpperCase());
 }
 
-function durationSeconds(file) {
+function durationSeconds(file, previousMetadata) {
+  const pub = publicPath(file);
   const result = spawnSync("ffprobe", [
     "-v",
     "error",
@@ -41,13 +51,19 @@ function durationSeconds(file) {
     "default=noprint_wrappers=1:nokey=1",
     file,
   ], { encoding: "utf8" });
-  if (result.status !== 0) {
-    throw new Error(`ffprobe failed for ${file}: ${result.stderr || result.stdout}`);
+  if (result.status === 0) {
+    return Math.max(0, Math.round(Number(result.stdout.trim())));
   }
-  return Math.max(0, Math.round(Number(result.stdout.trim())));
+  const previous = previousMetadata[pub]?.duration_seconds;
+  if (Number.isFinite(previous)) {
+    return previous;
+  }
+  console.warn(`audio metadata: keine Laufzeit fuer ${pub}; ffprobe nicht verfuegbar und kein gespeicherter Wert vorhanden.`);
+  return null;
 }
 
 function durationLabel(seconds) {
+  if (!Number.isFinite(seconds)) return "wird vom Player geladen";
   const minutes = Math.floor(seconds / 60);
   const rest = String(seconds % 60).padStart(2, "0");
   return `${minutes}:${rest}`;
@@ -84,9 +100,10 @@ function updateAudioIndex(metadata) {
 
 const files = walk(audioRoot).sort();
 const metadata = {};
+const previousMetadata = readPreviousMetadata();
 
 for (const file of files) {
-  const seconds = durationSeconds(file);
+  const seconds = durationSeconds(file, previousMetadata);
   const pub = publicPath(file);
   const slug = path.basename(file, ".mp3");
   metadata[pub] = {
