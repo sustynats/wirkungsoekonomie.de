@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
 const artifactDir = path.join(root, "_site");
@@ -172,14 +173,11 @@ function copyReferencedPublicFiles() {
 
 function normalizePublicArtifactLinksAndText() {
   const textExtensions = new Set([
-    ".css",
     ".csv",
     ".html",
     ".htm",
-    ".js",
     ".json",
     ".md",
-    ".svg",
     ".txt",
     ".xml",
   ]);
@@ -239,6 +237,22 @@ function normalizePublicArtifactLinksAndText() {
   if (changed) console.log(`Normalized public artifact links/text in ${changed} files.`);
 }
 
+function validatePublicScripts() {
+  const failures = [];
+  for (const file of walkFiles(artifactDir)) {
+    if (path.extname(file).toLowerCase() !== ".js") continue;
+    const check = spawnSync(process.execPath, ["--check", file], { encoding: "utf8" });
+    if (check.status !== 0) {
+      failures.push(`${toPosixRelative(file)}\n${check.stderr || check.stdout}`.trim());
+    }
+  }
+
+  if (failures.length) {
+    throw new Error(`Public JavaScript syntax check failed:\n\n${failures.join("\n\n")}`);
+  }
+  console.log("Public JavaScript syntax check passed.");
+}
+
 function prunePublicArtifact() {
   const references = collectArtifactReferences();
   let pruned = 0;
@@ -284,6 +298,7 @@ for (const entry of fs.readdirSync(root, { withFileTypes: true }).sort((a, b) =>
 normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
 prunePublicArtifact();
+validatePublicScripts();
 
 const mb = collectSize(artifactDir) / 1024 / 1024;
 console.log(`Built _site with ${copied} top-level entries (${mb.toFixed(1)} MB).`);
