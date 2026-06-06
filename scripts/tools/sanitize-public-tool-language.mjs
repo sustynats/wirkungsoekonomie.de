@@ -107,6 +107,8 @@ function ctaLabelForHref(href) {
   if (/\/wirkungsfelder\//i.test(value)) return "Wirkungsfeld ansehen";
   if (/\/werkzeuge\//i.test(value)) return "Methodik lesen";
   if (/\/erleben\/|\/anwendungen\/scanner\.html|scanner\.html/i.test(value)) return "Tool testen";
+  if (/\/?wirkungsradar\/?($|#|\?)/i.test(value)) return "Wirkungsradar öffnen";
+  if (/(^|\/)kompass\.html($|#|\?)/i.test(value)) return "WÖk-Kompass öffnen";
   if (/\/akademie/i.test(value)) return "Lernpfad ansehen";
   if (/\/verstehen\/|\/modell\.html|\/referenz\//i.test(value)) return "Vertiefung lesen";
   if (/\/werkstatt\/|\/fachbibliothek\/|\/downloads/i.test(value)) return "Arbeitsmaterial ansehen";
