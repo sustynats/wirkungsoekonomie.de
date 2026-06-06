@@ -570,7 +570,7 @@ function renderPage(doc, body, toc) {
     <meta property="og:url" content="https://wirkungsoekonomie.de/wirkungsfelder/wirtschaft-unternehmen/${doc.slug}/">
     <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260605-debate-tool-order">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header">
@@ -696,7 +696,7 @@ function renderPage(doc, body, toc) {
         </nav>
       </div>
     </footer>
-    <script src="/assets/js/main.js?v=20260605-debate-tool-order" defer></script>
+    <script src="/assets/js/main.js?v=20260606-main-cache-fix" defer></script>
   </body>
 </html>`;
 }

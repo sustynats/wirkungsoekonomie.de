@@ -124,7 +124,7 @@ function redirectPage({ title, canonical, destination, base = "../../" }) {
   <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="${esc(canonical)}">
   <meta http-equiv="refresh" content="0; url=${esc(destination)}">
-  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-resonanzkompass">
+  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
 </head>
 <body>
   <main class="section"><article class="card"><p class="card-kicker">Weiterleitung</p><h1>${esc(title)}</h1><p>Diese Seite ist kanonisch unter <a class="text-link" href="${esc(destination)}">${esc(destination)}</a> erreichbar.</p></article></main>
@@ -141,13 +141,13 @@ function shell({ title, description, canonical, base = "../../", main }) {
   <title>${esc(title)} | Wirkungsökonomie</title>
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${esc(canonical)}">
-  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-resonanzkompass">
+  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
 </head>
 <body>
   <header class="site-header" data-search-exclude><a class="brand" href="${base}index.html">WIRKUNGSÖKONOMIE</a><button class="menu-toggle" type="button" aria-label="Menü öffnen">☰</button></header>
   <main>${main}</main>
   <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Öffentlicher Wirkungsraum</p><h2>Debatten beantworten. Aufmerksamkeit gewichten.</h2><p>Debatten-Kompass, Resonanz-Kompass, Agenda-Radar und Ursachen-Navigator bleiben quellengebunden, korrigierbar und öffentlich nachvollziehbar.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
-  <script src="${base}assets/js/main.js?v=20260605-resonanzkompass"></script>
+  <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
 </body>
 </html>`;
 }

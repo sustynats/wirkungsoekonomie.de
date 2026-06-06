@@ -1233,7 +1233,7 @@ function initGlobalWirkungsradarBridge() {
       ],
     },
     {
-      test: () => /\/(verstehen|wirkungsoekonomie|modell|ordnung|kompass|begriffe|glossar)/.test(normalizedPath),
+      test: () => /\/(verstehen|wirkungsoekonomie|modell|ordnung|kompass)/.test(normalizedPath),
       kicker: "Vom Begriff zur Debatte",
       title: "Wie diese Logik in öffentlichen Debatten wirkt.",
       text:

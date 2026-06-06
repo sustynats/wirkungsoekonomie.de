@@ -238,7 +238,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=${sharedAssetVersion}"></script>
+  return `<script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 
@@ -255,7 +255,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${sharedAssetVersion}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}

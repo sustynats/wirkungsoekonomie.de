@@ -1031,7 +1031,7 @@ function shell({ title, description, canonical, base, main, searchType = "Debatt
     <meta name="search_type" content="${esc(searchType)}">
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -1051,7 +1051,7 @@ function shell({ title, description, canonical, base, main, searchType = "Debatt
         <a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a>
       </div>
     </footer>
-    <script src="${base}assets/js/main.js?v=${CSS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>`;
 }
@@ -1068,7 +1068,7 @@ function redirectShell({ title, description, canonical, target, base }) {
     <link rel="canonical" href="${esc(canonical)}">
     <meta http-equiv="refresh" content="0; url=${esc(target)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <main class="section" data-search-exclude>

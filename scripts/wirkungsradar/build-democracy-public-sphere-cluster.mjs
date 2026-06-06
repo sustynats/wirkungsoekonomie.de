@@ -526,7 +526,7 @@ function pageShell({ title, description, canonical, base, main, searchType = "De
     <meta name="search_type" content="${escapeHtml(searchType)}">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260605-debate-tool-order)}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -563,7 +563,7 @@ ${main}
         <a class="btn btn-primary" href="${base}kompass.html">WÖk-Kompass öffnen</a>
       </div>
     </footer>
-    <script src="${base}assets/js/main.js?v=20260605-debate-tool-order"></script>
+    <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>
 `;

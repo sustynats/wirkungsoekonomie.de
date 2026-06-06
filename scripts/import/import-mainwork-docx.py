@@ -190,7 +190,7 @@ def render_page(docx_path: Path) -> dict[str, object]:
     <meta name="search_description" content="Volltext des Grundlagenwerks der Wirkungsökonomie mit stabilen Abschnitts- und Absatz-IDs.">
     <meta name="search_section" content="Hauptwerk">
     <meta name="search_type" content="Hauptwerk">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260605-wirkungsraum-stage11">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header">
