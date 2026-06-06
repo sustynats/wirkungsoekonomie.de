@@ -18205,6 +18205,83 @@ a.principle-card:hover,
   margin-inline: auto;
 }
 
+/* Global menu guardrail: the public site uses the hamburger as the stable
+   navigation entry. Keep it visible on every viewport and open the menu only
+   as an explicit panel, even when older desktop navigation rules exist above. */
+body .site-header .nav-toggle {
+  position: relative;
+  inset: auto;
+  z-index: 3200;
+  display: inline-flex !important;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-left: auto;
+  opacity: 1;
+  visibility: visible;
+  background: var(--white);
+  border: 1.5px solid rgba(11, 16, 32, 0.82);
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(11, 16, 32, 0.14);
+}
+
+body .site-header .nav-toggle-icon {
+  display: block;
+  color: var(--navy);
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+body .site-header .site-nav {
+  position: fixed;
+  top: 4.8rem;
+  right: var(--space-gutter);
+  left: auto;
+  z-index: 3100;
+  display: none !important;
+  width: min(25rem, calc(100vw - (2 * var(--space-gutter))));
+  grid-template-columns: 1fr;
+  align-content: start;
+  align-items: stretch;
+  justify-content: stretch;
+  max-height: min(72vh, 38rem);
+  overflow: auto;
+  padding: 0.9rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+body .site-header .site-nav.open {
+  display: grid !important;
+}
+
+body .site-header .site-nav a,
+body .site-header .site-nav .nav-more summary {
+  display: block;
+  min-height: 2.75rem;
+  padding: 0.75rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.94rem;
+  line-height: 1.15;
+}
+
+body .site-header .site-nav a::after {
+  content: none;
+}
+
+@media (max-width: 720px) {
+  body .site-header .site-nav {
+    right: var(--space-gutter);
+    left: var(--space-gutter);
+    width: auto;
+  }
+}
+
 .prose p,
 .readable-prose p,
 .article-body p,
