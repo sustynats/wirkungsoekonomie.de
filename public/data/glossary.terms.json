@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T18:02:02.534Z",
+  "generatedAt": "2026-06-06T20:54:35.821Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -413,7 +413,8 @@
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
         "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
         "Nikolai Kondratieff: The Long Waves in Economic Life",
-        "EconStor|https://www.econstor.eu/"
+        "Allianz: The sixth Kondratieff wave|https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/migration/media/press/document/other/kondratieff.pdf",
+        "Kondratieff.net: The Sixth Kondratieff|https://www.kondratieff.net/the-sixth-kondratieff"
       ],
       "sourceLinks": [
         {
@@ -436,8 +437,14 @@
         },
         {
           "source_type": "secondary",
-          "title": "EconStor",
-          "url": "https://www.econstor.eu/",
+          "title": "Allianz: The sixth Kondratieff wave",
+          "url": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/migration/media/press/document/other/kondratieff.pdf",
+          "status": "linked"
+        },
+        {
+          "source_type": "secondary",
+          "title": "Kondratieff.net: The Sixth Kondratieff",
+          "url": "https://www.kondratieff.net/the-sixth-kondratieff",
           "status": "linked"
         }
       ],
@@ -462,8 +469,14 @@
         },
         {
           "source_type": "secondary",
-          "title": "EconStor",
-          "url": "https://www.econstor.eu/",
+          "title": "Allianz: The sixth Kondratieff wave",
+          "url": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/migration/media/press/document/other/kondratieff.pdf",
+          "status": "linked"
+        },
+        {
+          "source_type": "secondary",
+          "title": "Kondratieff.net: The Sixth Kondratieff",
+          "url": "https://www.kondratieff.net/the-sixth-kondratieff",
           "status": "linked"
         }
       ],
@@ -122047,6 +122060,53 @@
       "priority": 437
     },
     {
+      "id": "herkunftsframe",
+      "termId": "herkunftsframe",
+      "label": "Herkunftsframe",
+      "canonicalLabel": "Herkunftsframe",
+      "slug": "herkunftsframe",
+      "aliases": [
+        "Herkunftsframe",
+        "Herkunftsrahmung",
+        "Herkunftsdiagnose"
+      ],
+      "synonyms": [
+        "Herkunftsframe",
+        "Herkunftsrahmung",
+        "Herkunftsdiagnose"
+      ],
+      "shortDefinition": "Ein Herkunftsframe erklärt ein Problem primär über Herkunft, Migration, Religion oder Gruppenzugehörigkeit statt über konkrete Handlungen, Ursachen und Strukturen.",
+      "definition": "Der Herkunftsframe verschiebt eine Debatte von überprüfbaren Handlungen und Wirkpfaden auf kollektive Zuschreibungen.",
+      "longDefinition": "Ein Herkunftsframe entsteht, wenn aus einzelnen Erfahrungen, Einstellungen oder Straftaten eine pauschale Gruppendiagnose wird. Er kann reale Probleme benennen, macht aber die Ursache unscharf und erzeugt oft Sündenbocklogik.",
+      "woekRelation": "Wirkungsökonomisch ist der Herkunftsframe riskant, weil er Handlung, Ursache und Schutzmaßnahme verwechselt. Gute Analyse fragt: Wer tut was, wodurch wird es wahrscheinlicher, wer ist betroffen und welcher Hebel senkt das Risiko?",
+      "usageNote": "Der Begriff hilft, berechtigte Kritik von pauschalisierender Schuldzuweisung zu trennen.",
+      "statusNote": "Frame-Begriff im Debatten-Kompass.",
+      "category": "Debattenbegriff",
+      "sourceSection": "Öffentlicher Wirkungsraum · Frameanalyse",
+      "relatedTerms": [
+        "frame",
+        "framing",
+        "sündenbock",
+        "minderheitenschutz",
+        "queerfeindlichkeit"
+      ],
+      "pageUrl": "/begriffe/herkunftsframe/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "updatedAt": "2026-06-06",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "Herkunftsframe",
+      "priority": 438,
+      "officialSources": [],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "debattenbegriff"
+      ]
+    },
+    {
       "id": "herkunftsnachweis",
       "termId": "herkunftsnachweis",
       "label": "Herkunftsnachweis",
@@ -122325,7 +122385,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Herkunftsnachweis",
       "dataStandardsGroup": "",
-      "priority": 438
+      "priority": 439
     },
     {
       "id": "herkunftsnachweis-hkn",
@@ -122954,7 +123014,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Herstellen",
       "dataStandardsGroup": "",
-      "priority": 441
+      "priority": 442
     },
     {
       "id": "hfcs-hydrofluorocarbons",
@@ -123672,7 +123732,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Hochspannung",
       "dataStandardsGroup": "",
-      "priority": 445
+      "priority": 446
     },
     {
       "id": "hoechstspannung",
@@ -124040,7 +124100,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Höchstspannung",
       "dataStandardsGroup": "",
-      "priority": 446
+      "priority": 447
     },
     {
       "id": "hochwasserrisiko",
@@ -124578,7 +124638,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Homo oeconomicus",
       "dataStandardsGroup": "",
-      "priority": 448
+      "priority": 449
     },
     {
       "id": "host-wirkungsscore",
@@ -125162,7 +125222,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Host-Wirkung",
-      "priority": 449,
+      "priority": 450,
       "deprecatedUsage": []
     },
     {
@@ -125667,7 +125727,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "HPC-Charger",
       "dataStandardsGroup": "",
-      "priority": 452
+      "priority": 453
     },
     {
       "id": "human-rights-due-diligence",
@@ -126100,7 +126160,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 455
+      "priority": 456
     },
     {
       "id": "humusaufbau",
@@ -126727,7 +126787,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Hybridregime",
       "dataStandardsGroup": "",
-      "priority": 458
+      "priority": 459
     },
     {
       "id": "hydrologischer-kreislauf",
@@ -127234,7 +127294,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Hydrometallurgie",
       "dataStandardsGroup": "",
-      "priority": 460
+      "priority": 461
     },
     {
       "id": "identitaetsschutz",
@@ -128090,7 +128150,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Illiberale Demokratie",
       "dataStandardsGroup": "",
-      "priority": 463
+      "priority": 464
     },
     {
       "id": "ilo",
@@ -128487,7 +128547,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 466
+      "priority": 467
     },
     {
       "id": "impact-fit",
@@ -128664,7 +128724,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 467
+      "priority": 468
     },
     {
       "id": "impact-materiality",
@@ -128729,7 +128789,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Impact Materiality",
-      "priority": 468,
+      "priority": 469,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -129037,7 +129097,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 469
+      "priority": 470
     },
     {
       "id": "impact-controlling",
@@ -129118,7 +129178,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Impact-Controlling",
-      "priority": 470,
+      "priority": 471,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -129196,7 +129256,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Impact-Management",
-      "priority": 471,
+      "priority": 472,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -129275,7 +129335,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Impact-Marketing",
-      "priority": 472,
+      "priority": 473,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -130246,7 +130306,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Industrielle Dekonstruktion",
       "dataStandardsGroup": "",
-      "priority": 476
+      "priority": 477
     },
     {
       "id": "inertia",
@@ -130527,7 +130587,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Inertia / Trägheit",
       "dataStandardsGroup": "",
-      "priority": 477
+      "priority": 478
     },
     {
       "id": "informationsasymmetrie",
@@ -130965,7 +131025,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Informationsasymmetrie",
       "dataStandardsGroup": "",
-      "priority": 478
+      "priority": 479
     },
     {
       "id": "informationsintegritaet",
@@ -131325,7 +131385,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Informationsintegrität",
       "dataStandardsGroup": "",
-      "priority": 479
+      "priority": 480
     },
     {
       "id": "informationsueberlastung",
@@ -131563,7 +131623,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Informationsüberlastung",
       "dataStandardsGroup": "",
-      "priority": 480
+      "priority": 481
     },
     {
       "id": "innere-loops",
@@ -131812,7 +131872,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Innere Loops",
       "dataStandardsGroup": "",
-      "priority": 481
+      "priority": 482
     },
     {
       "id": "innovation",
@@ -131991,7 +132051,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 482
+      "priority": 483
     },
     {
       "id": "innovativer-unternehmer",
@@ -132158,7 +132218,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 483
+      "priority": 484
     },
     {
       "id": "insetting",
@@ -132735,7 +132795,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Institutioneller Rassismus",
       "dataStandardsGroup": "",
-      "priority": 486
+      "priority": 487
     },
     {
       "id": "institutionendelegitimierung",
@@ -133326,7 +133386,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Institutionendelegitimierung",
       "dataStandardsGroup": "",
-      "priority": 487
+      "priority": 488
     },
     {
       "id": "institutionenkritik",
@@ -133919,7 +133979,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Institutionenkritik",
       "dataStandardsGroup": "",
-      "priority": 488
+      "priority": 489
     },
     {
       "id": "interdependenz",
@@ -134430,7 +134490,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Interessenkonflikt",
       "dataStandardsGroup": "",
-      "priority": 490
+      "priority": 491
     },
     {
       "id": "interessenvertretung",
@@ -134804,7 +134864,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Interessenvertretung",
       "dataStandardsGroup": "",
-      "priority": 491
+      "priority": 492
     },
     {
       "id": "internationale-krisenvorsorge",
@@ -135588,7 +135648,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 492
+      "priority": 493
     },
     {
       "id": "intersektionalitaet",
@@ -136339,7 +136399,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Intertemporale Freiheit",
       "dataStandardsGroup": "",
-      "priority": 494
+      "priority": 495
     },
     {
       "id": "investitionsschuld",
@@ -136390,7 +136450,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 495,
+      "priority": 496,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -137075,7 +137135,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 501
+      "priority": 502
     },
     {
       "id": "jochen-roepke",
@@ -137244,7 +137304,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 502
+      "priority": 503
     },
     {
       "id": "john-maynard-keynes",
@@ -137435,7 +137495,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 503
+      "priority": 504
     },
     {
       "id": "joseph-schumpeter",
@@ -137608,7 +137668,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 504
+      "priority": 505
     },
     {
       "id": "just-transition-mechanism",
@@ -137993,7 +138053,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kannibalisierungseffekt",
       "dataStandardsGroup": "",
-      "priority": 506
+      "priority": 507
     },
     {
       "id": "kapazitaetsmarkt",
@@ -138280,7 +138340,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kapazitätsmarkt",
       "dataStandardsGroup": "",
-      "priority": 507
+      "priority": 508
     },
     {
       "id": "kapazitaetsreserve",
@@ -138563,7 +138623,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kapazitätsreserve",
       "dataStandardsGroup": "",
-      "priority": 508
+      "priority": 509
     },
     {
       "id": "kapital",
@@ -138796,7 +138856,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 509
+      "priority": 510
     },
     {
       "id": "kapital-als-machtverhaeltnis",
@@ -138999,7 +139059,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 510
+      "priority": 511
     },
     {
       "id": "kapital-als-werkzeug",
@@ -139192,7 +139252,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 511
+      "priority": 512
     },
     {
       "id": "kapitalakkumulation",
@@ -139484,7 +139544,7 @@
       "blindSpot": "Wenn Kapitalflüsse nur nach Rendite, Risiko und Liquidität betrachtet werden, bleibt ihre Wirkung auf Mensch, Planet und Demokratie unsichtbar.",
       "blind_spot": "Wenn Kapitalflüsse nur nach Rendite, Risiko und Liquidität betrachtet werden, bleibt ihre Wirkung auf Mensch, Planet und Demokratie unsichtbar.",
       "dataStandardsGroup": "",
-      "priority": 513
+      "priority": 514
     },
     {
       "id": "kapitalismus",
@@ -139758,7 +139818,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kapitalismus",
       "dataStandardsGroup": "",
-      "priority": 514
+      "priority": 515
     },
     {
       "id": "kapitalrendite",
@@ -139959,7 +140019,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 515
+      "priority": 516
     },
     {
       "id": "kapitalwirkung",
@@ -140782,7 +140842,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 516
+      "priority": 517
     },
     {
       "id": "karl-marx",
@@ -140983,7 +141043,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 517
+      "priority": 518
     },
     {
       "id": "karl-polanyi",
@@ -141174,7 +141234,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 518
+      "priority": 519
     },
     {
       "id": "kaskadennutzung",
@@ -141415,7 +141475,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kaskadennutzung",
       "dataStandardsGroup": "",
-      "priority": 519
+      "priority": 520
     },
     {
       "id": "kernenergie",
@@ -141698,7 +141758,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kernenergie",
       "dataStandardsGroup": "",
-      "priority": 520
+      "priority": 521
     },
     {
       "id": "kernkraft-neubau",
@@ -141745,7 +141805,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 521,
+      "priority": 522,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -141824,7 +141884,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Key Impact Indicator / KII",
-      "priority": 522,
+      "priority": 523,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -142391,7 +142451,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 524
+      "priority": 525
     },
     {
       "id": "kii",
@@ -143171,7 +143231,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "KII",
-      "priority": 525,
+      "priority": 526,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -143834,7 +143894,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Klassischer Liberalismus",
       "dataStandardsGroup": "",
-      "priority": 528
+      "priority": 529
     },
     {
       "id": "kleptokratie",
@@ -144202,7 +144262,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kleptokratie",
       "dataStandardsGroup": "",
-      "priority": 529
+      "priority": 530
     },
     {
       "id": "klimaanpassung",
@@ -144428,7 +144488,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 530
+      "priority": 531
     },
     {
       "id": "klimafolgeschaeden",
@@ -144662,7 +144722,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 531
+      "priority": 532
     },
     {
       "id": "klimagerechtigkeit",
@@ -145085,7 +145145,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 534
+      "priority": 535
     },
     {
       "id": "klimaschutz",
@@ -145311,7 +145371,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 535
+      "priority": 536
     },
     {
       "id": "klimawandel",
@@ -145584,7 +145644,7 @@
         "WÖk-eigener Begriff"
       ],
       "dataStandardsGroup": "",
-      "priority": 536
+      "priority": 537
     },
     {
       "id": "knappheit",
@@ -146010,7 +146070,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Knappheit",
       "dataStandardsGroup": "",
-      "priority": 537
+      "priority": 538
     },
     {
       "id": "kognitive-belastung",
@@ -146250,7 +146310,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kognitive Belastung",
       "dataStandardsGroup": "",
-      "priority": 538
+      "priority": 539
     },
     {
       "id": "kognitive-dissonanz",
@@ -146817,7 +146877,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kohlekraftwerk",
       "dataStandardsGroup": "",
-      "priority": 541
+      "priority": 542
     },
     {
       "id": "kommunale-energie",
@@ -147102,7 +147162,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kommunale Energie",
       "dataStandardsGroup": "",
-      "priority": 542
+      "priority": 543
     },
     {
       "id": "kommunikative_souveraenitaet",
@@ -147138,7 +147198,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kommunikative Souveränität",
-      "priority": 543,
+      "priority": 544,
       "relatedTerms": [],
       "officialSources": [],
       "relatedDocuments": [],
@@ -147409,7 +147469,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kommunismus",
       "dataStandardsGroup": "",
-      "priority": 544
+      "priority": 545
     },
     {
       "id": "kommunistischer-staat",
@@ -147782,7 +147842,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kommunistischer Staat",
       "dataStandardsGroup": "",
-      "priority": 545
+      "priority": 546
     },
     {
       "id": "komplexitaetsmanagement",
@@ -147951,7 +148011,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 546
+      "priority": 547
     },
     {
       "id": "komponentenrueckgewinnung",
@@ -148190,7 +148250,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Komponentenrückgewinnung",
       "dataStandardsGroup": "",
-      "priority": 547
+      "priority": 548
     },
     {
       "id": "kompostierung",
@@ -148431,7 +148491,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kompostierung",
       "dataStandardsGroup": "",
-      "priority": 548
+      "priority": 549
     },
     {
       "id": "kondratieff-zyklus",
@@ -148602,7 +148662,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 549
+      "priority": 550
     },
     {
       "id": "konservativ",
@@ -148980,7 +149040,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Konservativ",
       "dataStandardsGroup": "",
-      "priority": 550
+      "priority": 551
     },
     {
       "id": "konservative-annahme",
@@ -149630,7 +149690,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Konsumentensouveränität",
       "dataStandardsGroup": "",
-      "priority": 553
+      "priority": 554
     },
     {
       "id": "konzessionsabgabe",
@@ -149907,7 +149967,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Konzessionsabgabe",
       "dataStandardsGroup": "",
-      "priority": 554
+      "priority": 555
     },
     {
       "id": "kooperationslogik",
@@ -150272,7 +150332,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kooperationslogik",
       "dataStandardsGroup": "",
-      "priority": 555
+      "priority": 556
     },
     {
       "id": "koerperliche-selbstbestimmung",
@@ -150637,7 +150697,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Körperliche Selbstbestimmung",
       "dataStandardsGroup": "",
-      "priority": 556
+      "priority": 557
     },
     {
       "id": "kosten-des-nicht-handelns",
@@ -151022,7 +151082,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kraft-Wärme-Kopplung",
       "dataStandardsGroup": "",
-      "priority": 558
+      "priority": 559
     },
     {
       "id": "krankheitssystem",
@@ -151163,7 +151223,7 @@
       "deprecatedUsage": [],
       "internalNotes": "Additiv angelegt für Wirkungsfeld Gesundheit; nicht als medizinische Beratung verwenden.",
       "dataStandardsGroup": "",
-      "priority": 559
+      "priority": 560
     },
     {
       "id": "kreative-rekonstruktion",
@@ -151332,7 +151392,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 560
+      "priority": 561
     },
     {
       "id": "kreislaufblindheit",
@@ -151573,7 +151633,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kreislaufblindheit",
       "dataStandardsGroup": "",
-      "priority": 561
+      "priority": 562
     },
     {
       "id": "kreislauffaehigkeit",
@@ -151814,7 +151874,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kreislauffähigkeit",
       "dataStandardsGroup": "",
-      "priority": 562
+      "priority": 563
     },
     {
       "id": "kreislaufgrad",
@@ -152053,7 +152113,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kreislaufgrad",
       "dataStandardsGroup": "",
-      "priority": 563
+      "priority": 564
     },
     {
       "id": "kreislaufwirkung",
@@ -152302,7 +152362,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kreislaufwirkung",
       "dataStandardsGroup": "",
-      "priority": 564
+      "priority": 565
     },
     {
       "id": "kreislaufwirtschaft",
@@ -152571,7 +152631,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kreislaufwirtschaft",
       "dataStandardsGroup": "",
-      "priority": 565
+      "priority": 566
     },
     {
       "id": "kritische-energieinfrastruktur",
@@ -152854,7 +152914,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kritische Energieinfrastruktur",
       "dataStandardsGroup": "",
-      "priority": 566
+      "priority": 567
     },
     {
       "id": "kritische-rohstoffe",
@@ -153228,7 +153288,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kritische Rohstoffe",
       "dataStandardsGroup": "",
-      "priority": 567
+      "priority": 568
     },
     {
       "id": "kultur-als-resonanzsystem",
@@ -153697,7 +153757,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kultur als Resonanzsystem",
-      "priority": 568,
+      "priority": 569,
       "deprecatedUsage": []
     },
     {
@@ -154183,7 +154243,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 569
+      "priority": 570
     },
     {
       "id": "kundenanlage",
@@ -154549,7 +154609,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kundenanlage",
       "dataStandardsGroup": "",
-      "priority": 570
+      "priority": 571
     },
     {
       "id": "kundennutzen",
@@ -154724,7 +154784,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 571
+      "priority": 572
     },
     {
       "id": "kuenstliche-intelligenz",
@@ -154851,7 +154911,7 @@
       ],
       "deprecatedUsage": [],
       "dataStandardsGroup": "",
-      "priority": 572
+      "priority": 573
     },
     {
       "id": "kurzzeitspeicher",
@@ -155130,7 +155190,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Kurzzeitspeicher",
       "dataStandardsGroup": "",
-      "priority": 573
+      "priority": 574
     },
     {
       "id": "kybernetik",
@@ -155315,7 +155375,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 574
+      "priority": 575
     },
     {
       "id": "kybernetik-zweiter-ordnung",
@@ -155496,7 +155556,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 575
+      "priority": 576
     },
     {
       "id": "ladeeinrichtung",
@@ -155864,7 +155924,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladeeinrichtung",
       "dataStandardsGroup": "",
-      "priority": 576
+      "priority": 577
     },
     {
       "id": "ladehub",
@@ -156232,7 +156292,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladehub",
       "dataStandardsGroup": "",
-      "priority": 577
+      "priority": 578
     },
     {
       "id": "ladeinfrastruktur",
@@ -156610,7 +156670,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladeinfrastruktur",
       "dataStandardsGroup": "",
-      "priority": 578
+      "priority": 579
     },
     {
       "id": "ladeleistung",
@@ -156982,7 +157042,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladeleistung",
       "dataStandardsGroup": "",
-      "priority": 579
+      "priority": 580
     },
     {
       "id": "ladepark",
@@ -157358,7 +157418,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladepark",
       "dataStandardsGroup": "",
-      "priority": 580
+      "priority": 581
     },
     {
       "id": "ladepark-mittelspannungsanschluss",
@@ -157730,7 +157790,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladepark-Mittelspannungsanschluss",
       "dataStandardsGroup": "",
-      "priority": 581
+      "priority": 582
     },
     {
       "id": "ladepunkt",
@@ -158098,7 +158158,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladepunkt",
       "dataStandardsGroup": "",
-      "priority": 582
+      "priority": 583
     },
     {
       "id": "ladepunktbetreiber",
@@ -158476,7 +158536,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladepunktbetreiber / CPO",
       "dataStandardsGroup": "",
-      "priority": 583
+      "priority": 584
     },
     {
       "id": "ladesaeule",
@@ -158842,7 +158902,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ladesäule",
       "dataStandardsGroup": "",
-      "priority": 584
+      "priority": 585
     },
     {
       "id": "laffer-kurve",
@@ -159268,7 +159328,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Laffer-Kurve",
       "dataStandardsGroup": "",
-      "priority": 585
+      "priority": 586
     },
     {
       "id": "langzeitspeicher",
@@ -159551,7 +159611,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Langzeitspeicher",
       "dataStandardsGroup": "",
-      "priority": 586
+      "priority": 587
     },
     {
       "id": "lastgang",
@@ -159836,7 +159896,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Lastgang",
       "dataStandardsGroup": "",
-      "priority": 587
+      "priority": 588
     },
     {
       "id": "lastmanagement",
@@ -160119,7 +160179,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Lastmanagement",
       "dataStandardsGroup": "",
-      "priority": 588
+      "priority": 589
     },
     {
       "id": "lca",
@@ -160424,7 +160484,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 590
+      "priority": 591
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -160628,7 +160688,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 592,
+      "priority": 593,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -160873,7 +160933,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 593
+      "priority": 594
     },
     {
       "id": "lebenszyklusinventar",
@@ -161093,7 +161153,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 594
+      "priority": 595
     },
     {
       "id": "lebenszykluswirkungsabschaetzung",
@@ -161313,7 +161373,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 595
+      "priority": 596
     },
     {
       "id": "legalitaet",
@@ -161667,7 +161727,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Legalität",
       "dataStandardsGroup": "",
-      "priority": 596
+      "priority": 597
     },
     {
       "id": "legislative-footprint",
@@ -162039,7 +162099,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Legislative Footprint",
       "dataStandardsGroup": "",
-      "priority": 597
+      "priority": 598
     },
     {
       "id": "legitimer-lobbyismus",
@@ -162411,7 +162471,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Legitimer Lobbyismus",
       "dataStandardsGroup": "",
-      "priority": 598
+      "priority": 599
     },
     {
       "id": "legitimitaet",
@@ -162767,7 +162827,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Legitimität",
       "dataStandardsGroup": "",
-      "priority": 599
+      "priority": 600
     },
     {
       "id": "leistungsdichte",
@@ -163135,7 +163195,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Leistungsdichte",
       "dataStandardsGroup": "",
-      "priority": 600
+      "priority": 601
     },
     {
       "id": "leistungsfaktor",
@@ -163501,7 +163561,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Leistungsfaktor",
       "dataStandardsGroup": "",
-      "priority": 601
+      "priority": 602
     },
     {
       "id": "leistungspreis",
@@ -163869,7 +163929,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Leistungspreis",
       "dataStandardsGroup": "",
-      "priority": 602
+      "priority": 603
     },
     {
       "id": "lernebenen",
@@ -164036,7 +164096,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 603
+      "priority": 604
     },
     {
       "id": "lernender-unternehmer",
@@ -164207,7 +164267,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 604
+      "priority": 605
     },
     {
       "id": "lfp-batterie",
@@ -164577,7 +164637,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "LFP-Batterie",
       "dataStandardsGroup": "",
-      "priority": 605
+      "priority": 606
     },
     {
       "id": "liability-risk",
@@ -165042,7 +165102,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Liberale Demokratie",
       "dataStandardsGroup": "",
-      "priority": 607
+      "priority": 608
     },
     {
       "id": "liberalismus",
@@ -165488,7 +165548,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Liberalismus",
       "dataStandardsGroup": "",
-      "priority": 608
+      "priority": 609
     },
     {
       "id": "libertarismus",
@@ -165928,7 +165988,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Libertarismus",
       "dataStandardsGroup": "",
-      "priority": 609
+      "priority": 610
     },
     {
       "id": "lieferantenbewertung",
@@ -166453,7 +166513,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Lieferantenbewertung",
-      "priority": 610,
+      "priority": 611,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -166619,7 +166679,7 @@
       "metaTitle": "Lieferkettenbelasteter Kredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in Vorleistungen oder Lieferketten entsteht. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 611
+      "priority": 612
     },
     {
       "id": "lieferkettendaten",
@@ -167262,7 +167322,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Lieferkettenwirkung",
-      "priority": 613,
+      "priority": 614,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -167614,7 +167674,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Lineare Wirtschaft",
       "dataStandardsGroup": "",
-      "priority": 615
+      "priority": 616
     },
     {
       "id": "linker-faschismus",
@@ -168001,7 +168061,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Linker Faschismus",
       "dataStandardsGroup": "",
-      "priority": 616
+      "priority": 617
     },
     {
       "id": "links-politisch",
@@ -168377,7 +168437,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Links",
       "dataStandardsGroup": "",
-      "priority": 617
+      "priority": 618
     },
     {
       "id": "linksextremismus",
@@ -168749,7 +168809,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Linksextremismus",
       "dataStandardsGroup": "",
-      "priority": 618
+      "priority": 619
     },
     {
       "id": "lithium-ionen-batterie",
@@ -169127,7 +169187,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Lithium-Ionen-Batterie",
       "dataStandardsGroup": "",
-      "priority": 619
+      "priority": 620
     },
     {
       "id": "lithium-titanat-batterie",
@@ -169495,7 +169555,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Lithium-Titanat-Batterie / LTO",
       "dataStandardsGroup": "",
-      "priority": 620
+      "priority": 621
     },
     {
       "id": "lksg",
@@ -169996,7 +170056,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Lobbyismus",
       "dataStandardsGroup": "",
-      "priority": 622
+      "priority": 623
     },
     {
       "id": "lobbyregister",
@@ -170370,7 +170430,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Lobbyregister",
       "dataStandardsGroup": "",
-      "priority": 623
+      "priority": 624
     },
     {
       "id": "lock-in-pfadabhaengigkeit",
@@ -170560,7 +170620,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "category": "Grundbegriff",
-      "priority": 625,
+      "priority": 626,
       "officialSources": [],
       "categories": [
         "grundbegriff"
@@ -170748,7 +170808,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 626
+      "priority": 627
     },
     {
       "id": "macht-und-gewalt",
@@ -171119,7 +171179,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Macht und Gewalt",
       "dataStandardsGroup": "",
-      "priority": 627
+      "priority": 628
     },
     {
       "id": "machtbegrenzung",
@@ -171475,7 +171535,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Machtbegrenzung",
       "dataStandardsGroup": "",
-      "priority": 628
+      "priority": 629
     },
     {
       "id": "machtdezentralisierung",
@@ -171840,7 +171900,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Machtdezentralisierung",
       "dataStandardsGroup": "",
-      "priority": 629
+      "priority": 630
     },
     {
       "id": "machtkonzentration",
@@ -172122,7 +172182,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Machtkonzentration",
       "dataStandardsGroup": "",
-      "priority": 630
+      "priority": 631
     },
     {
       "id": "maja-goepel",
@@ -172317,7 +172377,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 631
+      "priority": 632
     },
     {
       "id": "majoritarismus",
@@ -172673,7 +172733,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Majoritarismus",
       "dataStandardsGroup": "",
-      "priority": 632
+      "priority": 633
     },
     {
       "id": "management",
@@ -172842,7 +172902,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 633
+      "priority": 634
     },
     {
       "id": "marktgleichgewicht",
@@ -173272,7 +173332,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Marktgleichgewicht",
       "dataStandardsGroup": "",
-      "priority": 634
+      "priority": 635
     },
     {
       "id": "marktmacht",
@@ -173714,7 +173774,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Marktmacht",
       "dataStandardsGroup": "",
-      "priority": 635
+      "priority": 636
     },
     {
       "id": "marktpraemie",
@@ -173995,7 +174055,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Marktprämie",
       "dataStandardsGroup": "",
-      "priority": 636
+      "priority": 637
     },
     {
       "id": "marktversagen",
@@ -174427,7 +174487,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Marktversagen",
       "dataStandardsGroup": "",
-      "priority": 637
+      "priority": 638
     },
     {
       "id": "marktwert",
@@ -174626,7 +174686,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 638
+      "priority": 639
     },
     {
       "id": "marktwirtschaft",
@@ -174904,7 +174964,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Marktwirtschaft",
       "dataStandardsGroup": "",
-      "priority": 639
+      "priority": 640
     },
     {
       "id": "martha-nussbaum",
@@ -175093,7 +175153,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 640
+      "priority": 641
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -175570,7 +175630,7 @@
       ],
       "deprecatedUsage": [],
       "dataStandardsGroup": "",
-      "priority": 643
+      "priority": 644
     },
     {
       "id": "material-footprint",
@@ -175932,7 +175992,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Materialgesundheit",
       "dataStandardsGroup": "",
-      "priority": 645
+      "priority": 646
     },
     {
       "id": "materialpass",
@@ -176181,7 +176241,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Materialpass",
       "dataStandardsGroup": "",
-      "priority": 646
+      "priority": 647
     },
     {
       "id": "medienfreiheit",
@@ -176535,7 +176595,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Medienfreiheit",
       "dataStandardsGroup": "",
-      "priority": 647
+      "priority": 648
     },
     {
       "id": "mediengleichschaltung",
@@ -176907,7 +176967,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mediengleichschaltung",
       "dataStandardsGroup": "",
-      "priority": 648
+      "priority": 649
     },
     {
       "id": "medienqualitaet",
@@ -177285,7 +177345,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Medienqualität",
       "dataStandardsGroup": "",
-      "priority": 649
+      "priority": 650
     },
     {
       "id": "megawatt-charging-system",
@@ -177655,7 +177715,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Megawatt Charging System / MCS",
       "dataStandardsGroup": "",
-      "priority": 650
+      "priority": 651
     },
     {
       "id": "mehrheitsprinzip",
@@ -178011,7 +178071,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mehrheitsprinzip",
       "dataStandardsGroup": "",
-      "priority": 651
+      "priority": 652
     },
     {
       "id": "mehrwert",
@@ -178206,7 +178266,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 652
+      "priority": 653
     },
     {
       "id": "meinungsfreiheit",
@@ -178576,7 +178636,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Meinungsfreiheit",
       "dataStandardsGroup": "",
-      "priority": 653
+      "priority": 654
     },
     {
       "id": "mensch-planet-demokratie",
@@ -179087,7 +179147,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Menschenwürde",
       "dataStandardsGroup": "",
-      "priority": 655
+      "priority": 656
     },
     {
       "id": "mental-load",
@@ -179450,7 +179510,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mental Load",
       "dataStandardsGroup": "",
-      "priority": 656
+      "priority": 657
     },
     {
       "id": "mentales-modell",
@@ -179684,7 +179744,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mentales Modell",
       "dataStandardsGroup": "",
-      "priority": 657
+      "priority": 658
     },
     {
       "id": "merit-order",
@@ -179965,7 +180025,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Merit Order",
       "dataStandardsGroup": "",
-      "priority": 658
+      "priority": 659
     },
     {
       "id": "messgrenzen-und-unsicherheit",
@@ -180584,7 +180644,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 659,
+      "priority": 660,
       "deprecatedUsage": []
     },
     {
@@ -180866,7 +180926,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Messstellenbetrieb",
       "dataStandardsGroup": "",
-      "priority": 660
+      "priority": 661
     },
     {
       "id": "messwandler",
@@ -181232,7 +181292,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Messwandler",
       "dataStandardsGroup": "",
-      "priority": 661
+      "priority": 662
     },
     {
       "id": "messwandlerschrank",
@@ -181598,7 +181658,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Messwandlerschrank",
       "dataStandardsGroup": "",
-      "priority": 662
+      "priority": 663
     },
     {
       "id": "meta-kognitive-intervention",
@@ -181919,7 +181979,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 664
+      "priority": 665
     },
     {
       "id": "mieterstrom",
@@ -182204,7 +182264,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mieterstrom",
       "dataStandardsGroup": "",
-      "priority": 665
+      "priority": 666
     },
     {
       "id": "militaerdiktatur",
@@ -182572,7 +182632,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Militärdiktatur",
       "dataStandardsGroup": "",
-      "priority": 666
+      "priority": 667
     },
     {
       "id": "minarchismus",
@@ -183000,7 +183060,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Minarchismus",
       "dataStandardsGroup": "",
-      "priority": 667
+      "priority": 668
     },
     {
       "id": "minderheitenschutz",
@@ -183366,7 +183426,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Minderheitenschutz",
       "dataStandardsGroup": "",
-      "priority": 668
+      "priority": 669
     },
     {
       "id": "mindestschutz-minimum-safeguards",
@@ -183752,7 +183812,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Minutenreserve",
       "dataStandardsGroup": "",
-      "priority": 670
+      "priority": 671
     },
     {
       "id": "mitte",
@@ -184126,7 +184186,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mitte",
       "dataStandardsGroup": "",
-      "priority": 671
+      "priority": 672
     },
     {
       "id": "mittelspannung",
@@ -184512,7 +184572,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mittelspannung",
       "dataStandardsGroup": "",
-      "priority": 672
+      "priority": 673
     },
     {
       "id": "mittelspannungsschaltanlage",
@@ -184878,7 +184938,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Mittelspannungsschaltanlage",
       "dataStandardsGroup": "",
-      "priority": 673
+      "priority": 674
     },
     {
       "id": "mobilitaetsarmut",
@@ -185408,7 +185468,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Modellannahme",
       "dataStandardsGroup": "",
-      "priority": 675
+      "priority": 676
     },
     {
       "id": "modellblindheit",
@@ -185836,7 +185896,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Modellblindheit",
       "dataStandardsGroup": "",
-      "priority": 676
+      "priority": 677
     },
     {
       "id": "moderation-und-community-dynamik",
@@ -186305,7 +186365,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Moderation und Community-Dynamik",
-      "priority": 677,
+      "priority": 678,
       "deprecatedUsage": []
     },
     {
@@ -186547,7 +186607,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Modularität",
       "dataStandardsGroup": "",
-      "priority": 678
+      "priority": 679
     },
     {
       "id": "momentanreserve",
@@ -186826,7 +186886,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Momentanreserve",
       "dataStandardsGroup": "",
-      "priority": 679
+      "priority": 680
     },
     {
       "id": "monetarismus",
@@ -187248,7 +187308,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Monetarismus",
       "dataStandardsGroup": "",
-      "priority": 680
+      "priority": 681
     },
     {
       "id": "monopol",
@@ -187674,7 +187734,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Monopol",
       "dataStandardsGroup": "",
-      "priority": 681
+      "priority": 682
     },
     {
       "id": "moral-hazard",
@@ -188100,7 +188160,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Moral Hazard",
       "dataStandardsGroup": "",
-      "priority": 682
+      "priority": 683
     },
     {
       "id": "moral-licensing",
@@ -188737,7 +188797,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Muslimfeindlichkeit",
       "dataStandardsGroup": "",
-      "priority": 685
+      "priority": 686
     },
     {
       "id": "nace",
@@ -188924,7 +188984,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "category": "Grundbegriff",
-      "priority": 687,
+      "priority": 688,
       "officialSources": [],
       "categories": [
         "grundbegriff"
@@ -189582,7 +189642,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Nachtwächterstaat",
       "dataStandardsGroup": "",
-      "priority": 690
+      "priority": 691
     },
     {
       "id": "narrativ",
@@ -190090,7 +190150,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Natalität",
       "dataStandardsGroup": "",
-      "priority": 692
+      "priority": 693
     },
     {
       "id": "natrium-ionen-batterie",
@@ -190456,7 +190516,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Natrium-Ionen-Batterie",
       "dataStandardsGroup": "",
-      "priority": 693
+      "priority": 694
     },
     {
       "id": "naturbasierte-loesungen",
@@ -191191,7 +191251,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Natürliches Monopol",
       "dataStandardsGroup": "",
-      "priority": 697
+      "priority": 698
     },
     {
       "id": "nca-batterie",
@@ -191559,7 +191619,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "NCA-Batterie",
       "dataStandardsGroup": "",
-      "priority": 698
+      "priority": 699
     },
     {
       "id": "negative-externalitaet",
@@ -191985,7 +192045,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Negative Externalität",
       "dataStandardsGroup": "",
-      "priority": 699
+      "priority": 700
     },
     {
       "id": "negative-freiheit",
@@ -192415,7 +192475,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Negative Freiheit",
       "dataStandardsGroup": "",
-      "priority": 700
+      "priority": 701
     },
     {
       "id": "negative-wirkung",
@@ -192747,7 +192807,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Negativitätsbias",
       "dataStandardsGroup": "",
-      "priority": 702
+      "priority": 703
     },
     {
       "id": "neoklassik",
@@ -193191,7 +193251,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Neoklassik",
       "dataStandardsGroup": "",
-      "priority": 703
+      "priority": 704
     },
     {
       "id": "neoliberalismus",
@@ -193752,7 +193812,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Neoliberalismus",
       "dataStandardsGroup": "",
-      "priority": 704
+      "priority": 705
     },
     {
       "id": "net-zero",
@@ -195050,7 +195110,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzanschluss",
       "dataStandardsGroup": "",
-      "priority": 707
+      "priority": 708
     },
     {
       "id": "netzanschlussbegehren",
@@ -195416,7 +195476,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzanschlussbegehren",
       "dataStandardsGroup": "",
-      "priority": 708
+      "priority": 709
     },
     {
       "id": "netzanschlussleistung",
@@ -195790,7 +195850,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzanschlussleistung",
       "dataStandardsGroup": "",
-      "priority": 709
+      "priority": 710
     },
     {
       "id": "netzanschlusspunkt",
@@ -196160,7 +196220,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzanschlusspunkt",
       "dataStandardsGroup": "",
-      "priority": 710
+      "priority": 711
     },
     {
       "id": "netzausbau",
@@ -196445,7 +196505,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzausbau",
       "dataStandardsGroup": "",
-      "priority": 711
+      "priority": 712
     },
     {
       "id": "netzdienlichkeit",
@@ -196730,7 +196790,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzdienlichkeit",
       "dataStandardsGroup": "",
-      "priority": 712
+      "priority": 713
     },
     {
       "id": "netzebene",
@@ -197015,7 +197075,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzebene",
       "dataStandardsGroup": "",
-      "priority": 713
+      "priority": 714
     },
     {
       "id": "netzengpass",
@@ -197298,7 +197358,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzengpass",
       "dataStandardsGroup": "",
-      "priority": 714
+      "priority": 715
     },
     {
       "id": "netzentgelt",
@@ -197585,7 +197645,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzentgelt",
       "dataStandardsGroup": "",
-      "priority": 715
+      "priority": 716
     },
     {
       "id": "netzentgeltsystematik",
@@ -197866,7 +197926,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzentgeltsystematik",
       "dataStandardsGroup": "",
-      "priority": 716
+      "priority": 717
     },
     {
       "id": "netzreserve",
@@ -198147,7 +198207,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzreserve",
       "dataStandardsGroup": "",
-      "priority": 717
+      "priority": 718
     },
     {
       "id": "netzspeicher",
@@ -198515,7 +198575,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzspeicher",
       "dataStandardsGroup": "",
-      "priority": 718
+      "priority": 719
     },
     {
       "id": "netzverlust",
@@ -198794,7 +198854,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzverlust",
       "dataStandardsGroup": "",
-      "priority": 719
+      "priority": 720
     },
     {
       "id": "netzvertraeglichkeitspruefung",
@@ -199162,7 +199222,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzverträglichkeitsprüfung",
       "dataStandardsGroup": "",
-      "priority": 720
+      "priority": 721
     },
     {
       "id": "netzwerkeffekt",
@@ -199588,7 +199648,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Netzwerkeffekt",
       "dataStandardsGroup": "",
-      "priority": 721
+      "priority": 722
     },
     {
       "id": "neue-ordnung-des-wohlstands",
@@ -200314,7 +200374,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 722,
+      "priority": 723,
       "deprecatedUsage": []
     },
     {
@@ -200549,7 +200609,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Neuigkeitsbias",
       "dataStandardsGroup": "",
-      "priority": 723
+      "priority": 724
     },
     {
       "id": "neuroplastizitaet",
@@ -200781,7 +200841,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Neuroplastizität",
       "dataStandardsGroup": "",
-      "priority": 724
+      "priority": 725
     },
     {
       "id": "neuropsychologische-wirkmechanismen",
@@ -201019,7 +201079,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Neuropsychologische Wirkmechanismen",
       "dataStandardsGroup": "",
-      "priority": 725
+      "priority": 726
     },
     {
       "id": "neutrale-wirkung",
@@ -201617,7 +201677,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "NGO",
       "dataStandardsGroup": "",
-      "priority": 728
+      "priority": 729
     },
     {
       "id": "ngo-capture",
@@ -201989,7 +202049,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "NGO-Capture",
       "dataStandardsGroup": "",
-      "priority": 729
+      "priority": 730
     },
     {
       "id": "ngo-wirkungspruefung",
@@ -202359,7 +202419,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "NGO-Wirkungsprüfung",
       "dataStandardsGroup": "",
-      "priority": 730
+      "priority": 731
     },
     {
       "id": "nicht-dualitaet",
@@ -202501,7 +202561,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 731
+      "priority": 732
     },
     {
       "id": "nichtkompensationsprinzip",
@@ -202811,7 +202871,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 733
+      "priority": 734
     },
     {
       "id": "nichttriviales-system",
@@ -203320,7 +203380,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Niederspannung",
       "dataStandardsGroup": "",
-      "priority": 735
+      "priority": 736
     },
     {
       "id": "niederspannungshauptverteilung",
@@ -203688,7 +203748,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Niederspannungshauptverteilung / NSHV",
       "dataStandardsGroup": "",
-      "priority": 736
+      "priority": 737
     },
     {
       "id": "niklas-luhmann",
@@ -203896,7 +203956,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 737
+      "priority": 738
     },
     {
       "id": "nikolai-kondratieff",
@@ -204067,7 +204127,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 738
+      "priority": 739
     },
     {
       "id": "nmc-batterie",
@@ -204435,7 +204495,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "NMC-Batterie",
       "dataStandardsGroup": "",
-      "priority": 739
+      "priority": 740
     },
     {
       "id": "non-aggression-principle",
@@ -204865,7 +204925,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Non-Aggression Principle",
       "dataStandardsGroup": "",
-      "priority": 740
+      "priority": 741
     },
     {
       "id": "normalisierung",
@@ -205370,7 +205430,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Normalladen",
       "dataStandardsGroup": "",
-      "priority": 742
+      "priority": 743
     },
     {
       "id": "normativer-wert",
@@ -205567,7 +205627,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 743
+      "priority": 744
     },
     {
       "id": "normatives-management",
@@ -205734,7 +205794,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 744
+      "priority": 745
     },
     {
       "id": "zero-waste",
@@ -205975,7 +206035,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Null-Abfall / Zero Waste",
       "dataStandardsGroup": "",
-      "priority": 745
+      "priority": 746
     },
     {
       "id": "nutzenergie",
@@ -206256,7 +206316,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Nutzenergie",
       "dataStandardsGroup": "",
-      "priority": 746
+      "priority": 747
     },
     {
       "id": "nutzenmaximierung",
@@ -206686,7 +206746,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Nutzenmaximierung",
       "dataStandardsGroup": "",
-      "priority": 747
+      "priority": 748
     },
     {
       "id": "nutzungsdauerverlaengerung",
@@ -206931,7 +206991,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Nutzungsdauerverlängerung",
       "dataStandardsGroup": "",
-      "priority": 748
+      "priority": 749
     },
     {
       "id": "oberschwingungen",
@@ -207295,7 +207355,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Oberschwingungen",
       "dataStandardsGroup": "",
-      "priority": 750
+      "priority": 751
     },
     {
       "id": "ocpp",
@@ -207663,7 +207723,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "OCPP",
       "dataStandardsGroup": "",
-      "priority": 751
+      "priority": 752
     },
     {
       "id": "oecd-leitsaetze",
@@ -208842,7 +208902,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Öffentliche Güter",
       "dataStandardsGroup": "",
-      "priority": 755
+      "priority": 756
     },
     {
       "id": "oeffentliche-statistik",
@@ -209383,7 +209443,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 756
+      "priority": 757
     },
     {
       "id": "oeffentlicher-raum-arendt",
@@ -209760,7 +209820,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Öffentlicher Raum / Erscheinungsraum",
       "dataStandardsGroup": "",
-      "priority": 757
+      "priority": 758
     },
     {
       "id": "oeffentlichkeit",
@@ -210124,7 +210184,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Öffentlichkeit",
       "dataStandardsGroup": "",
-      "priority": 758
+      "priority": 759
     },
     {
       "id": "oeffentlichkeit-als-wirkungsraum",
@@ -210568,7 +210628,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Öffentlichkeit als Wirkungsraum",
-      "priority": 759,
+      "priority": 760,
       "deprecatedUsage": []
     },
     {
@@ -210965,7 +211025,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Offshore-Netzumlage",
       "dataStandardsGroup": "",
-      "priority": 761
+      "priority": 762
     },
     {
       "id": "offshore-windenergie",
@@ -211244,7 +211304,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Offshore-Windenergie",
       "dataStandardsGroup": "",
-      "priority": 762
+      "priority": 763
     },
     {
       "id": "oekofeminismus",
@@ -211607,7 +211667,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ökofeminismus",
       "dataStandardsGroup": "",
-      "priority": 763
+      "priority": 764
     },
     {
       "id": "oekosystemleistungen",
@@ -212085,7 +212145,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Oligarchie",
       "dataStandardsGroup": "",
-      "priority": 765
+      "priority": 766
     },
     {
       "id": "oligopol",
@@ -212509,7 +212569,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Oligopol",
       "dataStandardsGroup": "",
-      "priority": 766
+      "priority": 767
     },
     {
       "id": "oelkraftwerk",
@@ -212786,7 +212846,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ölkraftwerk",
       "dataStandardsGroup": "",
-      "priority": 767
+      "priority": 768
     },
     {
       "id": "on-board-charger",
@@ -213152,7 +213212,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "On-Board-Charger",
       "dataStandardsGroup": "",
-      "priority": 768
+      "priority": 769
     },
     {
       "id": "one-health",
@@ -213560,7 +213620,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Onshore-Windenergie",
       "dataStandardsGroup": "",
-      "priority": 770
+      "priority": 771
     },
     {
       "id": "open-science",
@@ -214102,7 +214162,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 771
+      "priority": 772
     },
     {
       "id": "operatives-management",
@@ -214271,7 +214331,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 772
+      "priority": 773
     },
     {
       "id": "opferumkehr",
@@ -214337,7 +214397,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Opferumkehr",
-      "priority": 773,
+      "priority": 774,
       "officialSources": [],
       "doNotConfuseWith": []
     },
@@ -214765,7 +214825,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Opportunitätskosten",
       "dataStandardsGroup": "",
-      "priority": 774
+      "priority": 775
     },
     {
       "id": "opposition",
@@ -215121,7 +215181,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Opposition",
       "dataStandardsGroup": "",
-      "priority": 775
+      "priority": 776
     },
     {
       "id": "oppositionsunterdrueckung",
@@ -215493,7 +215553,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Oppositionsunterdrückung",
       "dataStandardsGroup": "",
-      "priority": 776
+      "priority": 777
     },
     {
       "id": "ordoliberalismus",
@@ -216042,7 +216102,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ordoliberalismus",
       "dataStandardsGroup": "",
-      "priority": 777
+      "priority": 778
     },
     {
       "id": "organisation-environmental-footprint",
@@ -216262,7 +216322,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 778
+      "priority": 779
     },
     {
       "id": "orientierung",
@@ -216833,7 +216893,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Österreichische Schule",
       "dataStandardsGroup": "",
-      "priority": 780
+      "priority": 781
     },
     {
       "id": "pai",
@@ -217371,7 +217431,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pareto-Effizienz",
       "dataStandardsGroup": "",
-      "priority": 782
+      "priority": 783
     },
     {
       "id": "parlament",
@@ -217760,7 +217820,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Parlament",
       "dataStandardsGroup": "",
-      "priority": 783
+      "priority": 784
     },
     {
       "id": "parlamentarische-demokratie",
@@ -218114,7 +218174,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Parlamentarische Demokratie",
       "dataStandardsGroup": "",
-      "priority": 784
+      "priority": 785
     },
     {
       "id": "parteistaat",
@@ -218488,7 +218548,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Parteistaat",
       "dataStandardsGroup": "",
-      "priority": 785
+      "priority": 786
     },
     {
       "id": "partizipation",
@@ -218846,7 +218906,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Partizipation",
       "dataStandardsGroup": "",
-      "priority": 786
+      "priority": 787
     },
     {
       "id": "partizipative-demokratie",
@@ -219200,7 +219260,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Partizipative Demokratie",
       "dataStandardsGroup": "",
-      "priority": 787
+      "priority": 788
     },
     {
       "id": "patriarchale-dividende",
@@ -219561,7 +219621,54 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Patriarchale Dividende",
       "dataStandardsGroup": "",
-      "priority": 788
+      "priority": 789
+    },
+    {
+      "id": "patriarchale-milieus",
+      "termId": "patriarchale-milieus",
+      "label": "patriarchale Milieus",
+      "canonicalLabel": "patriarchale Milieus",
+      "slug": "patriarchale-milieus",
+      "aliases": [
+        "patriarchale Milieus",
+        "patriarchale Strukturen",
+        "patriarchale Normen"
+      ],
+      "synonyms": [
+        "patriarchale Milieus",
+        "patriarchale Strukturen",
+        "patriarchale Normen"
+      ],
+      "shortDefinition": "Patriarchale Milieus sind soziale Umfelder, in denen männliche Dominanz, Kontrolle über Geschlechterrollen und Abwertung von Abweichung normalisiert werden.",
+      "definition": "Patriarchale Milieus können in unterschiedlichen Kulturen, Religionen, Klassen und politischen Gruppen vorkommen. Sie sind kein Herkunftsmerkmal, sondern ein Macht- und Rollenarrangement.",
+      "longDefinition": "Patriarchale Milieus beschreiben soziale Räume, in denen Geschlechterhierarchien, Kontrolle über Sexualität, Dominanzbilder und Abwertung queerer oder weiblicher Selbstbestimmung stabilisiert werden. Wirkungsökonomisch ist relevant, wie solche Milieus Sicherheit, Teilhabe, Bildung, Arbeit und demokratische Gleichheit beeinflussen.",
+      "woekRelation": "Die Wirkungsökonomie fragt, welche Bildungs-, Schutz- und Teilhabestrukturen patriarchale Wirkpfade unterbrechen, ohne Gruppen pauschal zu markieren.",
+      "usageNote": "Der Begriff beschreibt Strukturen und Normen, nicht Herkunft oder Religion als solche.",
+      "statusNote": "Sozialer Ursachenbegriff.",
+      "category": "Gesellschaftsbegriff",
+      "sourceSection": "Öffentlicher Wirkungsraum · Ursachenprüfung",
+      "relatedTerms": [
+        "patriarchat",
+        "gleichberechtigung",
+        "queerfeindlichkeit",
+        "minderheitenschutz",
+        "schutzarchitektur"
+      ],
+      "pageUrl": "/begriffe/patriarchale-milieus/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "updatedAt": "2026-06-06",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "patriarchale Milieus",
+      "priority": 790,
+      "officialSources": [],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "gesellschaftsbegriff"
+      ]
     },
     {
       "id": "patriarchat",
@@ -219968,7 +220075,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Patriarchat",
       "dataStandardsGroup": "",
-      "priority": 789
+      "priority": 791
     },
     {
       "id": "paul-watzlawick",
@@ -220150,7 +220257,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 790
+      "priority": 792
     },
     {
       "id": "pcf-product-carbon-footprint",
@@ -220633,7 +220740,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Perowskit-Solarzelle",
       "dataStandardsGroup": "",
-      "priority": 794
+      "priority": 796
     },
     {
       "id": "persona",
@@ -220798,7 +220905,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 795
+      "priority": 797
     },
     {
       "id": "personalisierte-macht",
@@ -221168,7 +221275,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Personalisierte Macht",
       "dataStandardsGroup": "",
-      "priority": 796
+      "priority": 798
     },
     {
       "id": "peter-drucker",
@@ -221352,7 +221459,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 797
+      "priority": 799
     },
     {
       "id": "pfadabhaengigkeit",
@@ -221632,7 +221739,7 @@
       "deprecatedUsage": [],
       "internalNotes": "Additiv angelegt für Wirkungsfeld Gesundheit; nicht als medizinische Beratung verwenden.",
       "dataStandardsGroup": "",
-      "priority": 799
+      "priority": 801
     },
     {
       "id": "photoelektrischer-effekt",
@@ -221794,7 +221901,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Photoelektrischer Effekt",
       "dataStandardsGroup": "",
-      "priority": 800
+      "priority": 802
     },
     {
       "id": "photovoltaik",
@@ -222076,7 +222183,7 @@
       "glossaryOrderKey": "Photovoltaik",
       "autoLinkAliases": [],
       "dataStandardsGroup": "",
-      "priority": 801
+      "priority": 803
     },
     {
       "id": "physical-climate-risk",
@@ -222554,7 +222661,7 @@
         "woek-id-register"
       ],
       "dataStandardsGroup": "",
-      "priority": 803
+      "priority": 805
     },
     {
       "id": "pilotprojekte",
@@ -223342,7 +223449,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 804
+      "priority": 806
     },
     {
       "id": "planetare-grenzen",
@@ -223810,7 +223917,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Planwirtschaft",
       "dataStandardsGroup": "",
-      "priority": 807
+      "priority": 809
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -224138,7 +224245,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Plattformkapitalismus",
       "dataStandardsGroup": "",
-      "priority": 809
+      "priority": 811
     },
     {
       "id": "plattformlogik-und-algorithmen",
@@ -224584,7 +224691,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Plattformlogik und Algorithmen",
-      "priority": 810,
+      "priority": 812,
       "deprecatedUsage": []
     },
     {
@@ -224953,7 +225060,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Plug & Charge",
       "dataStandardsGroup": "",
-      "priority": 811
+      "priority": 813
     },
     {
       "id": "pluralismus",
@@ -225313,7 +225420,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pluralismus",
       "dataStandardsGroup": "",
-      "priority": 812
+      "priority": 814
     },
     {
       "id": "pluralismusfeindlichkeit",
@@ -225904,7 +226011,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pluralismusfeindlichkeit",
       "dataStandardsGroup": "",
-      "priority": 813
+      "priority": 815
     },
     {
       "id": "pluralitaet",
@@ -226279,7 +226386,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pluralität",
       "dataStandardsGroup": "",
-      "priority": 814
+      "priority": 816
     },
     {
       "id": "plutokratie",
@@ -226647,7 +226754,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Plutokratie",
       "dataStandardsGroup": "",
-      "priority": 815
+      "priority": 817
     },
     {
       "id": "polarisierung",
@@ -226713,7 +226820,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Polarisierung",
-      "priority": 816,
+      "priority": 818,
       "officialSources": [],
       "doNotConfuseWith": []
     },
@@ -227089,7 +227196,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Policy Entrepreneurship",
       "dataStandardsGroup": "",
-      "priority": 817
+      "priority": 819
     },
     {
       "id": "policy-laundering",
@@ -227467,7 +227574,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Policy-Laundering",
       "dataStandardsGroup": "",
-      "priority": 818
+      "priority": 820
     },
     {
       "id": "policy-netzwerk",
@@ -227849,7 +227956,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Policy-Netzwerk",
       "dataStandardsGroup": "",
-      "priority": 819
+      "priority": 821
     },
     {
       "id": "politische-bildung",
@@ -228201,7 +228308,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Politische Bildung",
       "dataStandardsGroup": "",
-      "priority": 820
+      "priority": 822
     },
     {
       "id": "politische-uebergangspfade",
@@ -228982,7 +229089,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 821
+      "priority": 823
     },
     {
       "id": "politischer-liberalismus",
@@ -229412,7 +229519,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Politischer Liberalismus",
       "dataStandardsGroup": "",
-      "priority": 822
+      "priority": 824
     },
     {
       "id": "politischer-vorraum",
@@ -229776,7 +229883,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Politischer Vorraum",
       "dataStandardsGroup": "",
-      "priority": 823
+      "priority": 825
     },
     {
       "id": "politisches-system",
@@ -230149,7 +230256,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Politisches System",
       "dataStandardsGroup": "",
-      "priority": 824
+      "priority": 826
     },
     {
       "id": "populismus",
@@ -230523,7 +230630,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Populismus",
       "dataStandardsGroup": "",
-      "priority": 825
+      "priority": 827
     },
     {
       "id": "portfolio-wirkung",
@@ -231285,7 +231392,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Portfolio-Wirkung",
-      "priority": 826,
+      "priority": 828,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -231713,7 +231820,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Positive Externalität",
       "dataStandardsGroup": "",
-      "priority": 827
+      "priority": 829
     },
     {
       "id": "positive-freiheit",
@@ -232143,7 +232250,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Positive Freiheit",
       "dataStandardsGroup": "",
-      "priority": 828
+      "priority": 830
     },
     {
       "id": "positive-netto-wirkung",
@@ -233001,7 +233108,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Power Purchase Agreement / PPA",
       "dataStandardsGroup": "",
-      "priority": 831
+      "priority": 833
     },
     {
       "id": "spannungsqualitaet",
@@ -233371,7 +233478,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Power Quality / Spannungsqualität",
       "dataStandardsGroup": "",
-      "priority": 832
+      "priority": 834
     },
     {
       "id": "power-to-x",
@@ -233652,7 +233759,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Power-to-X",
       "dataStandardsGroup": "",
-      "priority": 833
+      "priority": 835
     },
     {
       "id": "praediktive-verarbeitung",
@@ -233892,7 +233999,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Prädiktive Verarbeitung",
       "dataStandardsGroup": "",
-      "priority": 834
+      "priority": 836
     },
     {
       "id": "praeferenzen",
@@ -234320,7 +234427,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Präferenzen",
       "dataStandardsGroup": "",
-      "priority": 835
+      "priority": 837
     },
     {
       "id": "praevention",
@@ -234596,7 +234703,7 @@
       "deprecatedUsage": [],
       "internalNotes": "Additiv angelegt für Wirkungsfeld Gesundheit; nicht als medizinische Beratung verwenden.",
       "dataStandardsGroup": "",
-      "priority": 837
+      "priority": 839
     },
     {
       "id": "pressefreiheit",
@@ -234948,7 +235055,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pressefreiheit",
       "dataStandardsGroup": "",
-      "priority": 838
+      "priority": 840
     },
     {
       "id": "primaerenergie",
@@ -235229,7 +235336,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Primärenergie",
       "dataStandardsGroup": "",
-      "priority": 839
+      "priority": 841
     },
     {
       "id": "primaerregelung",
@@ -235506,7 +235613,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Primärregelung",
       "dataStandardsGroup": "",
-      "priority": 840
+      "priority": 842
     },
     {
       "id": "priming",
@@ -236052,7 +236159,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Principal-Agent-Problem",
       "dataStandardsGroup": "",
-      "priority": 842
+      "priority": 844
     },
     {
       "id": "privatisierung",
@@ -236480,7 +236587,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Privatisierung",
       "dataStandardsGroup": "",
-      "priority": 843
+      "priority": 845
     },
     {
       "id": "privatwirtschaftliche-planwirtschaft",
@@ -236746,7 +236853,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Privatwirtschaftliche Planwirtschaft",
       "dataStandardsGroup": "",
-      "priority": 844
+      "priority": 846
     },
     {
       "id": "product-carbon-footprint",
@@ -236988,7 +237095,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 845
+      "priority": 847
     },
     {
       "id": "product-environmental-footprint",
@@ -237210,7 +237317,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 846
+      "priority": 848
     },
     {
       "id": "product-as-a-service",
@@ -237449,7 +237556,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Product-as-a-Service",
       "dataStandardsGroup": "",
-      "priority": 847
+      "priority": 849
     },
     {
       "id": "product-market-fit",
@@ -237614,7 +237721,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 848
+      "priority": 850
     },
     {
       "id": "produktdaten",
@@ -239397,7 +239504,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Progressiv",
       "dataStandardsGroup": "",
-      "priority": 854
+      "priority": 856
     },
     {
       "id": "project-2025",
@@ -239771,7 +239878,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Project 2025",
       "dataStandardsGroup": "",
-      "priority": 855
+      "priority": 857
     },
     {
       "id": "propaganda",
@@ -240145,7 +240252,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Propaganda",
       "dataStandardsGroup": "",
-      "priority": 856
+      "priority": 858
     },
     {
       "id": "prosumer",
@@ -240436,7 +240543,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Prosumer",
       "dataStandardsGroup": "",
-      "priority": 857
+      "priority": 859
     },
     {
       "id": "prozessdenken",
@@ -240584,7 +240691,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 858
+      "priority": 860
     },
     {
       "id": "psychologischer_wirkungscheck",
@@ -240620,7 +240727,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Psychologischer Wirkungscheck",
-      "priority": 859,
+      "priority": 861,
       "relatedTerms": [],
       "officialSources": [],
       "relatedDocuments": [],
@@ -240661,7 +240768,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Psychologisches Stöckchen",
-      "priority": 860,
+      "priority": 862,
       "relatedTerms": [],
       "officialSources": [],
       "relatedDocuments": [],
@@ -241038,7 +241145,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Public Affairs",
       "dataStandardsGroup": "",
-      "priority": 861
+      "priority": 863
     },
     {
       "id": "pufferspeicher-ladepark",
@@ -241406,7 +241513,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pufferspeicher im Ladepark",
       "dataStandardsGroup": "",
-      "priority": 862
+      "priority": 864
     },
     {
       "id": "pumpspeicher",
@@ -241685,7 +241792,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pumpspeicher",
       "dataStandardsGroup": "",
-      "priority": 863
+      "priority": 865
     },
     {
       "id": "purpose-washing",
@@ -242245,7 +242352,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Purpose-Washing",
-      "priority": 864,
+      "priority": 866,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -242613,7 +242720,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Pyrometallurgie",
       "dataStandardsGroup": "",
-      "priority": 865
+      "priority": 867
     },
     {
       "id": "qualitaetssicherung",
@@ -243091,7 +243198,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "QUANGO",
       "dataStandardsGroup": "",
-      "priority": 867
+      "priority": 869
     },
     {
       "id": "quantenbatterie",
@@ -243255,7 +243362,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quantenbatterie",
       "dataStandardsGroup": "",
-      "priority": 868
+      "priority": 870
     },
     {
       "id": "quantenmaterialien",
@@ -243419,7 +243526,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quantenmaterialien",
       "dataStandardsGroup": "",
-      "priority": 869
+      "priority": 871
     },
     {
       "id": "quantenphysik",
@@ -243589,7 +243696,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quantenphysik",
       "dataStandardsGroup": "",
-      "priority": 870
+      "priority": 872
     },
     {
       "id": "quantenpunkt",
@@ -243753,7 +243860,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quantenpunkt",
       "dataStandardsGroup": "",
-      "priority": 871
+      "priority": 873
     },
     {
       "id": "quantensimulation",
@@ -243915,7 +244022,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quantensimulation",
       "dataStandardsGroup": "",
-      "priority": 872
+      "priority": 874
     },
     {
       "id": "quantensolarzelle",
@@ -244087,7 +244194,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quantensolarzelle",
       "dataStandardsGroup": "",
-      "priority": 873
+      "priority": 875
     },
     {
       "id": "quantentechnologie",
@@ -244249,7 +244356,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quantentechnologie",
       "dataStandardsGroup": "",
-      "priority": 874
+      "priority": 876
     },
     {
       "id": "quartiersenergie",
@@ -244532,7 +244639,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Quartiersenergie",
       "dataStandardsGroup": "",
-      "priority": 875
+      "priority": 877
     },
     {
       "id": "quartierswirkung",
@@ -244631,6 +244738,110 @@
       "relatedDocuments": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
+    },
+    {
+      "id": "queere-migrantinnen",
+      "termId": "queere-migrantinnen",
+      "label": "queere Migrant:innen",
+      "canonicalLabel": "queere Migrant:innen",
+      "slug": "queere-migrantinnen",
+      "aliases": [
+        "queere Migrant:innen",
+        "queere Migrantinnen",
+        "queere Migranten",
+        "queere Geflüchtete"
+      ],
+      "synonyms": [
+        "queere Migrant:innen",
+        "queere Migrantinnen",
+        "queere Migranten",
+        "queere Geflüchtete"
+      ],
+      "shortDefinition": "Queere Migrant:innen sind Menschen mit Migrations- oder Fluchterfahrung, die zugleich aufgrund sexueller Orientierung oder geschlechtlicher Identität besondere Schutz- und Teilhaberisiken erleben können.",
+      "definition": "Der Begriff macht sichtbar, dass Migration und Queerness nicht Gegensätze sind. Wer Migration pauschal gegen queere Rechte stellt, blendet queere Menschen mit Migrationsgeschichte aus.",
+      "longDefinition": "Queere Migrant:innen können mehrfachen Risiken ausgesetzt sein: Rassismus, Queerfeindlichkeit, unsicherer Aufenthaltsstatus, familiärer Druck, fehlende Beratungsangebote oder Gewalt. Wirkungsökonomisch müssen Schutzarchitekturen diese Überschneidungen mitdenken.",
+      "woekRelation": "Die Wirkungsökonomie nutzt den Begriff, um Minderheitenschutz nicht gegeneinander auszuspielen. Eine gute Schutzarchitektur schützt queere Menschen unabhängig von Herkunft und berücksichtigt zugleich spezifische Lagen queerer Migrant:innen.",
+      "usageNote": "Wichtig in Debatten, in denen queere Rechte gegen Migration instrumentalisiert werden.",
+      "statusNote": "Intersektionaler Schutzbegriff.",
+      "category": "Demokratiebegriff",
+      "sourceSection": "Öffentlicher Wirkungsraum · Minderheitenschutz",
+      "relatedTerms": [
+        "intersektionalitaet",
+        "minderheitenschutz",
+        "queerfeindlichkeit",
+        "herkunftsframe",
+        "schutzarchitektur"
+      ],
+      "pageUrl": "/begriffe/queere-migrantinnen/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "updatedAt": "2026-06-06",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "queere Migrant:innen",
+      "priority": 879,
+      "officialSources": [],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "demokratiebegriff"
+      ]
+    },
+    {
+      "id": "queerfeindlichkeit",
+      "termId": "queerfeindlichkeit",
+      "label": "Queerfeindlichkeit",
+      "canonicalLabel": "Queerfeindlichkeit",
+      "slug": "queerfeindlichkeit",
+      "aliases": [
+        "Queerfeindlichkeit",
+        "LGBTQ+-Feindlichkeit",
+        "LSBTIQ-Feindlichkeit",
+        "Homophobie",
+        "Transfeindlichkeit"
+      ],
+      "synonyms": [
+        "Queerfeindlichkeit",
+        "LGBTQ+-Feindlichkeit",
+        "LSBTIQ-Feindlichkeit",
+        "Homophobie",
+        "Transfeindlichkeit"
+      ],
+      "shortDefinition": "Queerfeindlichkeit bezeichnet Abwertung, Ausgrenzung, Bedrohung oder Gewalt gegen Menschen aufgrund sexueller Orientierung, geschlechtlicher Identität oder queerer Sichtbarkeit.",
+      "definition": "Queerfeindlichkeit ist kein Herkunftsmerkmal, sondern ein Wirkungsrisiko in unterschiedlichen Milieus: rechtsextrem, religiös-fundamentalistisch, patriarchal, nationalistisch, digital radikalisiert oder alltagskulturell normalisiert.",
+      "longDefinition": "Queerfeindlichkeit bezeichnet Einstellungen, Sprache, Handlungen, Strukturen und Gewalt, die queere Menschen abwerten, bedrohen oder aus öffentlicher Teilhabe verdrängen. Wirkungsökonomisch ist entscheidend, welche Schutzarchitektur konkrete Risiken senkt, statt Minderheiten gegeneinander auszuspielen.",
+      "woekRelation": "In der Wirkungsökonomie ist Queerfeindlichkeit ein Risiko für Mensch und Demokratie: Sie senkt Freiheit, Sicherheit, Teilhabe und Korrekturfähigkeit. Sie muss konkret adressiert werden, ohne Herkunft, Religion oder Gruppe pauschal zur Ursache zu erklären.",
+      "usageNote": "Der Begriff wird genutzt, wenn eine Aussage oder Handlung Rechte, Sicherheit oder Sichtbarkeit queerer Menschen angreift. Er ersetzt keine genaue Täter-, Milieu- oder Ursachenanalyse.",
+      "statusNote": "Schutzbegriff im öffentlichen Wirkungsraum.",
+      "category": "Demokratiebegriff",
+      "sourceSection": "Öffentlicher Wirkungsraum · Minderheitenschutz",
+      "relatedTerms": [
+        "minderheitenschutz",
+        "menschenwuerde",
+        "demokratie",
+        "diskurskultur",
+        "schutzarchitektur",
+        "herkunftsframe",
+        "queere-migrantinnen"
+      ],
+      "officialSources": [
+        "Deutscher Bundestag: Politisch motivierte Kriminalität gegen sexuelle Orientierung|https://www.bundestag.de/presse/hib/kurzmeldungen-1126314"
+      ],
+      "pageUrl": "/begriffe/queerfeindlichkeit/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "updatedAt": "2026-06-06",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "Queerfeindlichkeit",
+      "priority": 880,
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "demokratiebegriff"
+      ]
     },
     {
       "id": "quellenklarheit",
@@ -245098,7 +245309,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Radikal",
       "dataStandardsGroup": "",
-      "priority": 878
+      "priority": 882
     },
     {
       "id": "rassismus",
@@ -245490,7 +245701,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rassismus",
       "dataStandardsGroup": "",
-      "priority": 879
+      "priority": 883
     },
     {
       "id": "rationalitaet",
@@ -245916,7 +246127,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rationalität",
       "dataStandardsGroup": "",
-      "priority": 880
+      "priority": 884
     },
     {
       "id": "raubtierkapitalismus",
@@ -246178,7 +246389,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Raubtierkapitalismus",
       "dataStandardsGroup": "",
-      "priority": 881
+      "priority": 885
     },
     {
       "id": "reaktanz",
@@ -246685,7 +246896,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reaktionär",
       "dataStandardsGroup": "",
-      "priority": 883
+      "priority": 887
     },
     {
       "id": "reale-freiheit",
@@ -247121,7 +247332,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reale Freiheit",
       "dataStandardsGroup": "",
-      "priority": 884
+      "priority": 888
     },
     {
       "id": "reasonable-assurance",
@@ -247712,7 +247923,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rechenschaft",
       "dataStandardsGroup": "",
-      "priority": 887
+      "priority": 891
     },
     {
       "id": "recht-auf-reparatur",
@@ -247955,7 +248166,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Recht auf Reparatur",
       "dataStandardsGroup": "",
-      "priority": 888
+      "priority": 892
     },
     {
       "id": "rechte-kuenftiger-generationen",
@@ -248431,7 +248642,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rechts",
       "dataStandardsGroup": "",
-      "priority": 890
+      "priority": 894
     },
     {
       "id": "rechtsextremismus",
@@ -248805,7 +249016,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rechtsextremismus",
       "dataStandardsGroup": "",
-      "priority": 891
+      "priority": 895
     },
     {
       "id": "rechtsprechung-als-korrekturinstanz",
@@ -249351,7 +249562,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 892
+      "priority": 896
     },
     {
       "id": "rechtsschutz",
@@ -249950,7 +250161,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rechtsschutz",
       "dataStandardsGroup": "",
-      "priority": 893
+      "priority": 897
     },
     {
       "id": "rechtsstaatlichkeit",
@@ -250330,7 +250541,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rechtsstaatlichkeit",
       "dataStandardsGroup": "",
-      "priority": 894
+      "priority": 898
     },
     {
       "id": "rechtsstaatsabbau",
@@ -250704,7 +250915,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rechtsstaatsabbau",
       "dataStandardsGroup": "",
-      "priority": 895
+      "priority": 899
     },
     {
       "id": "rechtsstaatsprinzip",
@@ -251082,7 +251293,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rechtsstaatsprinzip",
       "dataStandardsGroup": "",
-      "priority": 896
+      "priority": 900
     },
     {
       "id": "recycling",
@@ -251335,7 +251546,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Recycling",
       "dataStandardsGroup": "",
-      "priority": 897
+      "priority": 901
     },
     {
       "id": "recyclingeffizienz",
@@ -251703,7 +251914,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Recyclingeffizienz",
       "dataStandardsGroup": "",
-      "priority": 898
+      "priority": 902
     },
     {
       "id": "recyclingquote",
@@ -252243,7 +252454,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Redispatch",
       "dataStandardsGroup": "",
-      "priority": 900
+      "priority": 904
     },
     {
       "id": "redispatch-2-0",
@@ -252524,7 +252735,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Redispatch 2.0",
       "dataStandardsGroup": "",
-      "priority": 901
+      "priority": 905
     },
     {
       "id": "redox-flow-batterie",
@@ -252890,7 +253101,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Redox-Flow-Batterie",
       "dataStandardsGroup": "",
-      "priority": 902
+      "priority": 906
     },
     {
       "id": "reform",
@@ -253260,7 +253471,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reform",
       "dataStandardsGroup": "",
-      "priority": 903
+      "priority": 907
     },
     {
       "id": "reframing",
@@ -253654,7 +253865,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Refurbishment / Aufarbeitung",
       "dataStandardsGroup": "",
-      "priority": 905
+      "priority": 909
     },
     {
       "id": "regelenergie",
@@ -253943,7 +254154,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regelenergie",
       "dataStandardsGroup": "",
-      "priority": 906
+      "priority": 910
     },
     {
       "id": "regelenergiemarkt",
@@ -254224,7 +254435,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regelenergiemarkt",
       "dataStandardsGroup": "",
-      "priority": 907
+      "priority": 911
     },
     {
       "id": "regeneration",
@@ -254659,7 +254870,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regenerative Landwirtschaft",
       "dataStandardsGroup": "",
-      "priority": 910
+      "priority": 914
     },
     {
       "id": "regierung",
@@ -255046,7 +255257,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regierung",
       "dataStandardsGroup": "",
-      "priority": 911
+      "priority": 915
     },
     {
       "id": "regierungsform",
@@ -255419,7 +255630,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regierungsform",
       "dataStandardsGroup": "",
-      "priority": 912
+      "priority": 916
     },
     {
       "id": "regierungskritik",
@@ -256014,7 +256225,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regierungskritik",
       "dataStandardsGroup": "",
-      "priority": 913
+      "priority": 917
     },
     {
       "id": "regime",
@@ -256391,7 +256602,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regime",
       "dataStandardsGroup": "",
-      "priority": 914
+      "priority": 918
     },
     {
       "id": "regulatory-capture",
@@ -256837,7 +257048,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regulatory Capture",
       "dataStandardsGroup": "",
-      "priority": 915
+      "priority": 919
     },
     {
       "id": "regulierungsversagen",
@@ -257265,7 +257476,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Regulierungsversagen",
       "dataStandardsGroup": "",
-      "priority": 916
+      "priority": 920
     },
     {
       "id": "rekombination",
@@ -257440,7 +257651,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 917
+      "priority": 921
     },
     {
       "id": "rekursion",
@@ -257621,7 +257832,54 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 918
+      "priority": 922
+    },
+    {
+      "id": "religioeser-fundamentalismus",
+      "termId": "religioeser-fundamentalismus",
+      "label": "religiöser Fundamentalismus",
+      "canonicalLabel": "religiöser Fundamentalismus",
+      "slug": "religioeser-fundamentalismus",
+      "aliases": [
+        "religiöser Fundamentalismus",
+        "religioeser Fundamentalismus",
+        "religiös-fundamentalistische Milieus"
+      ],
+      "synonyms": [
+        "religiöser Fundamentalismus",
+        "religioeser Fundamentalismus",
+        "religiös-fundamentalistische Milieus"
+      ],
+      "shortDefinition": "Religiöser Fundamentalismus bezeichnet Deutungen, die religiöse Wahrheit absolut setzen und pluralistische Rechte, Gleichberechtigung oder demokratische Korrektur abwerten.",
+      "definition": "Religiöser Fundamentalismus kann in unterschiedlichen Religionen auftreten. Entscheidend ist nicht Religion an sich, sondern eine absolutistische Deutung, die Grundrechte anderer einschränkt.",
+      "longDefinition": "Religiöser Fundamentalismus entsteht, wenn religiöse Normen als unverhandelbarer politischer Ordnungsanspruch verstanden werden und pluralistische Rechte, Minderheitenschutz oder Gleichberechtigung delegitimiert werden. Wirkungsökonomisch zählt, welche konkreten Handlungen, Netzwerke und Deutungen Freiheit und Sicherheit anderer gefährden.",
+      "woekRelation": "Die Wirkungsökonomie trennt Religion, Gläubige und fundamentalistische Wirkungspfade. Schutz entsteht nicht durch Pauschalisierung, sondern durch klare Grundrechtsgrenzen, Bildung, Prävention und Rechtsdurchsetzung.",
+      "usageNote": "Nicht als Pauschalurteil über Religion oder Herkunft verwenden.",
+      "statusNote": "Risiko- und Framebegriff.",
+      "category": "Demokratiebegriff",
+      "sourceSection": "Öffentlicher Wirkungsraum · Ursachenprüfung",
+      "relatedTerms": [
+        "pluralismus",
+        "minderheitenschutz",
+        "menschenwuerde",
+        "schutzarchitektur",
+        "queerfeindlichkeit"
+      ],
+      "pageUrl": "/begriffe/religioeser-fundamentalismus/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "updatedAt": "2026-06-06",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "religiöser Fundamentalismus",
+      "priority": 923,
+      "officialSources": [],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "demokratiebegriff"
+      ]
     },
     {
       "id": "remanufacturing",
@@ -257870,7 +258128,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Remanufacturing / Wiederaufbereitung",
       "dataStandardsGroup": "",
-      "priority": 919
+      "priority": 924
     },
     {
       "id": "renaturierung",
@@ -258406,7 +258664,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rent Seeking",
       "dataStandardsGroup": "",
-      "priority": 921
+      "priority": 926
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -258812,7 +259070,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reparatur",
       "dataStandardsGroup": "",
-      "priority": 923
+      "priority": 928
     },
     {
       "id": "reparierbarkeit",
@@ -259059,7 +259317,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reparierbarkeit",
       "dataStandardsGroup": "",
-      "priority": 924
+      "priority": 929
     },
     {
       "id": "reparierbarkeit-recht-auf-reparatur",
@@ -259543,7 +259801,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Repowering",
       "dataStandardsGroup": "",
-      "priority": 926
+      "priority": 931
     },
     {
       "id": "repraesentation",
@@ -259897,7 +260155,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Repräsentation",
       "dataStandardsGroup": "",
-      "priority": 927
+      "priority": 932
     },
     {
       "id": "repraesentationsanspruch",
@@ -260267,7 +260525,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Repräsentationsanspruch",
       "dataStandardsGroup": "",
-      "priority": 928
+      "priority": 933
     },
     {
       "id": "repraesentative-demokratie",
@@ -260621,7 +260879,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Repräsentative Demokratie",
       "dataStandardsGroup": "",
-      "priority": 929
+      "priority": 934
     },
     {
       "id": "reproduktive-arbeit",
@@ -261006,7 +261264,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reproduktive Arbeit",
       "dataStandardsGroup": "",
-      "priority": 930
+      "priority": 935
     },
     {
       "id": "reproduktive-gerechtigkeit",
@@ -261367,7 +261625,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reproduktive Gerechtigkeit",
       "dataStandardsGroup": "",
-      "priority": 931
+      "priority": 936
     },
     {
       "id": "reproduktive-rechte",
@@ -261728,7 +261986,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reproduktive Rechte",
       "dataStandardsGroup": "",
-      "priority": 932
+      "priority": 937
     },
     {
       "id": "reservekraftwerk",
@@ -262013,7 +262271,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reservekraftwerk",
       "dataStandardsGroup": "",
-      "priority": 933
+      "priority": 938
     },
     {
       "id": "residual-emissions",
@@ -262401,7 +262659,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Residuallast",
       "dataStandardsGroup": "",
-      "priority": 935
+      "priority": 940
     },
     {
       "id": "resilienz",
@@ -262703,7 +262961,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 937
+      "priority": 942
     },
     {
       "id": "resonanzarchitektur",
@@ -264226,7 +264484,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Responsivität",
       "dataStandardsGroup": "",
-      "priority": 942
+      "priority": 947
     },
     {
       "id": "ressourcenallokation",
@@ -264650,7 +264908,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Ressourcenallokation",
       "dataStandardsGroup": "",
-      "priority": 943
+      "priority": 948
     },
     {
       "status": "anschlussbegriff",
@@ -264727,7 +264985,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "category": "Grundbegriff",
-      "priority": 944,
+      "priority": 949,
       "officialSources": [],
       "categories": [
         "grundbegriff"
@@ -264972,7 +265230,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Reverse Logistics",
       "dataStandardsGroup": "",
-      "priority": 945
+      "priority": 950
     },
     {
       "id": "reverse-merit-order",
@@ -266038,7 +266296,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rezyklatquote Batterie",
       "dataStandardsGroup": "",
-      "priority": 948
+      "priority": 953
     },
     {
       "id": "rlm-messung",
@@ -266410,7 +266668,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "RLM-Messung",
       "dataStandardsGroup": "",
-      "priority": 949
+      "priority": 954
     },
     {
       "id": "roaming-ladeinfrastruktur",
@@ -266778,7 +267036,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Roaming Ladeinfrastruktur",
       "dataStandardsGroup": "",
-      "priority": 950
+      "priority": 955
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -267247,7 +267505,7 @@
       ],
       "deprecatedUsage": [],
       "dataStandardsGroup": "",
-      "priority": 953
+      "priority": 958
     },
     {
       "id": "rohstoffkritikalitaet",
@@ -267733,7 +267991,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rotorblatt-Recycling",
       "dataStandardsGroup": "",
-      "priority": 955
+      "priority": 960
     },
     {
       "id": "routineunternehmer",
@@ -267900,7 +268158,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 956
+      "priority": 961
     },
     {
       "id": "rueckbau-windenergieanlagen",
@@ -268268,7 +268526,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rückbau von Windenergieanlagen",
       "dataStandardsGroup": "",
-      "priority": 957
+      "priority": 962
     },
     {
       "id": "rueckbaustandard",
@@ -268634,7 +268892,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rückbaustandard",
       "dataStandardsGroup": "",
-      "priority": 958
+      "priority": 963
     },
     {
       "id": "rueckbauverpflichtung",
@@ -269000,7 +269258,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rückbauverpflichtung",
       "dataStandardsGroup": "",
-      "priority": 959
+      "priority": 964
     },
     {
       "id": "rueckkopplung",
@@ -269410,7 +269668,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rücknahmefähigkeit",
       "dataStandardsGroup": "",
-      "priority": 962
+      "priority": 967
     },
     {
       "id": "ruecknahmesystem",
@@ -269653,7 +269911,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Rücknahmesystem",
       "dataStandardsGroup": "",
-      "priority": 963
+      "priority": 968
     },
     {
       "id": "rueckverstromung",
@@ -269884,7 +270142,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 961
+      "priority": 966
     },
     {
       "id": "salienz",
@@ -270636,7 +270894,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Scheindemokratie",
       "dataStandardsGroup": "",
-      "priority": 968
+      "priority": 973
     },
     {
       "id": "scheinentlastung",
@@ -270918,7 +271176,7 @@
       "metaTitle": "Scheinkapital | Glossar der Wirkungsökonomie",
       "metaDescription": "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 970
+      "priority": 975
     },
     {
       "id": "scheinleistung",
@@ -271616,7 +271874,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 972
+      "priority": 977
     },
     {
       "id": "schnellladen",
@@ -271982,7 +272240,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Schnellladen",
       "dataStandardsGroup": "",
-      "priority": 973
+      "priority": 978
     },
     {
       "id": "schoepferische-zerstoerung",
@@ -272149,7 +272407,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 974
+      "priority": 979
     },
     {
       "id": "schuldenbremse",
@@ -272575,7 +272833,54 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Schuldenbremse",
       "dataStandardsGroup": "",
-      "priority": 975
+      "priority": 980
+    },
+    {
+      "id": "schutzarchitektur",
+      "termId": "schutzarchitektur",
+      "label": "Schutzarchitektur",
+      "canonicalLabel": "Schutzarchitektur",
+      "slug": "schutzarchitektur",
+      "aliases": [
+        "Schutzarchitektur",
+        "demokratische Schutzarchitektur",
+        "Schutzinfrastruktur"
+      ],
+      "synonyms": [
+        "Schutzarchitektur",
+        "demokratische Schutzarchitektur",
+        "Schutzinfrastruktur"
+      ],
+      "shortDefinition": "Schutzarchitektur bezeichnet das Zusammenspiel aus Rechten, Institutionen, Prävention, Bildung, Polizei, Beratung, Daten und Verfahren, das Menschen wirksam schützt.",
+      "definition": "Eine Schutzarchitektur ist mehr als ein einzelnes Verbot. Sie verbindet Grundrechte, Antidiskriminierung, Prävention, Durchsetzung, Beratung, Datenqualität und demokratische Verfahren.",
+      "longDefinition": "Schutzarchitektur beschreibt die institutionelle und gesellschaftliche Infrastruktur, durch die Risiken für Mensch, Planet oder Demokratie verringert werden. Dazu gehören klare Rechte, zugängliche Verfahren, wirksame Sanktionen, Prävention, Bildung, Schutzräume, Monitoring und Korrektur.",
+      "woekRelation": "In der Wirkungsökonomie ist Schutzarchitektur ein Hebel für positive Netto-Wirkung: Sie übersetzt abstrakte Rechte in tatsächliche Sicherheit, Teilhabe und Handlungsfähigkeit.",
+      "usageNote": "Der Begriff wird genutzt, wenn nicht nur Empörung, sondern ein wirksamer Schutzpfad sichtbar werden soll.",
+      "statusNote": "Architekturbegriff.",
+      "category": "Architekturbegriff",
+      "sourceSection": "Öffentlicher Wirkungsraum · Demokratie und Schutz",
+      "relatedTerms": [
+        "minderheitenschutz",
+        "grundrechte",
+        "rechtsstaatlichkeit",
+        "demokratische-resilienz",
+        "wirkungspfad"
+      ],
+      "pageUrl": "/begriffe/schutzarchitektur/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "updatedAt": "2026-06-06",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "Schutzarchitektur",
+      "priority": 981,
+      "officialSources": [],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "architekturbegriff"
+      ]
     },
     {
       "id": "schutzpflicht",
@@ -272947,7 +273252,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Schutzpflicht",
       "dataStandardsGroup": "",
-      "priority": 976
+      "priority": 982
     },
     {
       "id": "schutztechnik",
@@ -273313,7 +273618,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Schutztechnik",
       "dataStandardsGroup": "",
-      "priority": 977
+      "priority": 983
     },
     {
       "id": "schwarzstartfaehigkeit",
@@ -273592,7 +273897,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Schwarzstartfähigkeit",
       "dataStandardsGroup": "",
-      "priority": 978
+      "priority": 984
     },
     {
       "id": "schwellenwert",
@@ -273772,7 +274077,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 979
+      "priority": 985
     },
     {
       "id": "scope-1",
@@ -274224,7 +274529,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 981
+      "priority": 987
     },
     {
       "id": "scope-2",
@@ -274908,7 +275213,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 984
+      "priority": 990
     },
     {
       "id": "scorecard",
@@ -276597,7 +276902,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 990,
+      "priority": 996,
       "deprecatedUsage": []
     },
     {
@@ -276978,7 +277283,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Second-Life-Batterie",
       "dataStandardsGroup": "",
-      "priority": 991
+      "priority": 997
     },
     {
       "id": "sektorkopplung",
@@ -277263,7 +277568,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sektorkopplung",
       "dataStandardsGroup": "",
-      "priority": 992
+      "priority": 998
     },
     {
       "id": "sekundaerregelung",
@@ -277540,7 +277845,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sekundärregelung",
       "dataStandardsGroup": "",
-      "priority": 993
+      "priority": 999
     },
     {
       "id": "sekundaerrohstoff",
@@ -277779,7 +278084,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sekundärrohstoff",
       "dataStandardsGroup": "",
-      "priority": 994
+      "priority": 1000
     },
     {
       "id": "selbstorganisation",
@@ -278107,7 +278412,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 996
+      "priority": 1002
     },
     {
       "id": "selbstverantwortung",
@@ -278533,7 +278838,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Selbstverantwortung",
       "dataStandardsGroup": "",
-      "priority": 997
+      "priority": 1003
     },
     {
       "id": "selbstwirksamkeit",
@@ -279027,7 +279332,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Selektive Evidenz",
       "dataStandardsGroup": "",
-      "priority": 999
+      "priority": 1005
     },
     {
       "id": "self-ownership",
@@ -279455,7 +279760,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Self-Ownership",
       "dataStandardsGroup": "",
-      "priority": 1000
+      "priority": 1006
     },
     {
       "id": "sensemaking",
@@ -279811,7 +280116,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sensibilisierung",
       "dataStandardsGroup": "",
-      "priority": 1002
+      "priority": 1008
     },
     {
       "id": "service-ngo",
@@ -280181,7 +280486,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Service-NGO",
       "dataStandardsGroup": "",
-      "priority": 1003
+      "priority": 1009
     },
     {
       "status": "active",
@@ -280359,7 +280664,7 @@
       "metaDescription": "Sexarbeit als sensibler Glossarbegriff der Wirkungsökonomie: soziale Infrastruktur, Nähe, Intimität, Selbstbestimmung, Schutz vor Ausbeutung, Gesundheit, Rechtsschutz und realitätsnahe Regulierung ohne Personenbewertung.",
       "internalNotes": "Auto-linking absichtlich deaktiviert. DOCX Sexarbeit als soziale Infrastruktur ist review_required und wird nicht als roher öffentlicher Download veröffentlicht. Nicht mit Menschenhandel, Zwangsprostitution, sexueller Ausbeutung oder sexualisierter Gewalt synonymisieren.",
       "termType": "sensibler gesellschaftlicher Anschlussbegriff",
-      "priority": 1004,
+      "priority": 1010,
       "tags": [
         "soziale Infrastruktur",
         "soziale Versorgungsstruktur",
@@ -280620,7 +280925,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1006
+      "priority": 1012
     },
     {
       "id": "skandinavisches-modell",
@@ -280888,7 +281193,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Skandinavisches Modell / Nordic Model",
       "dataStandardsGroup": "",
-      "priority": 1007
+      "priority": 1013
     },
     {
       "id": "small-modular-reactor",
@@ -280934,7 +281239,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1008,
+      "priority": 1014,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -281309,7 +281614,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Smart Charging",
       "dataStandardsGroup": "",
-      "priority": 1009
+      "priority": 1015
     },
     {
       "id": "smart-grid",
@@ -281592,7 +281897,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Smart Grid",
       "dataStandardsGroup": "",
-      "priority": 1010
+      "priority": 1016
     },
     {
       "id": "smart-meter",
@@ -281875,7 +282180,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Smart Meter",
       "dataStandardsGroup": "",
-      "priority": 1011
+      "priority": 1017
     },
     {
       "id": "smart-meter-gateway",
@@ -282156,7 +282461,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Smart Meter Gateway",
       "dataStandardsGroup": "",
-      "priority": 1012
+      "priority": 1018
     },
     {
       "id": "social-credit",
@@ -282701,7 +283006,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Solarthermie",
       "dataStandardsGroup": "",
-      "priority": 1015
+      "priority": 1021
     },
     {
       "id": "sorgearbeit",
@@ -283108,7 +283413,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sorgearbeit",
       "dataStandardsGroup": "",
-      "priority": 1016
+      "priority": 1022
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -283883,7 +284188,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Soziale Marktwirtschaft",
       "dataStandardsGroup": "",
-      "priority": 1020
+      "priority": 1026
     },
     {
       "id": "soziale-reproduktion",
@@ -284254,7 +284559,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Soziale Reproduktion",
       "dataStandardsGroup": "",
-      "priority": 1021
+      "priority": 1027
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -284796,7 +285101,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sozialisation",
       "dataStandardsGroup": "",
-      "priority": 1023
+      "priority": 1029
     },
     {
       "id": "sozialisierung-vergesellschaftung",
@@ -285174,7 +285479,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sozialisierung / Vergesellschaftung",
       "dataStandardsGroup": "",
-      "priority": 1024
+      "priority": 1030
     },
     {
       "id": "sozialismus",
@@ -285438,7 +285743,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sozialismus",
       "dataStandardsGroup": "",
-      "priority": 1025
+      "priority": 1031
     },
     {
       "id": "sozialliberalismus",
@@ -285866,7 +286171,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sozialliberalismus",
       "dataStandardsGroup": "",
-      "priority": 1026
+      "priority": 1032
     },
     {
       "id": "sozialstaatsprinzip",
@@ -286238,7 +286543,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sozialstaatsprinzip",
       "dataStandardsGroup": "",
-      "priority": 1027
+      "priority": 1033
     },
     {
       "id": "spannungshaltung",
@@ -286515,7 +286820,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Spannungshaltung",
       "dataStandardsGroup": "",
-      "priority": 1028
+      "priority": 1034
     },
     {
       "id": "speicher-energie",
@@ -286814,7 +287119,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Speicher",
       "dataStandardsGroup": "",
-      "priority": 1029
+      "priority": 1035
     },
     {
       "id": "spekulationslogik",
@@ -287200,7 +287505,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Spitzenlast",
       "dataStandardsGroup": "",
-      "priority": 1031
+      "priority": 1037
     },
     {
       "id": "sprachlicher-trigger",
@@ -287270,7 +287575,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Sprachlicher Trigger",
-      "priority": 1032,
+      "priority": 1038,
       "officialSources": [],
       "doNotConfuseWith": []
     },
@@ -287454,7 +287759,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1033
+      "priority": 1039
     },
     {
       "id": "st-galler-management-modell",
@@ -287623,7 +287928,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1034
+      "priority": 1040
     },
     {
       "id": "staat",
@@ -288014,7 +288319,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staat",
       "dataStandardsGroup": "",
-      "priority": 1035
+      "priority": 1041
     },
     {
       "id": "staat-2035",
@@ -288684,7 +288989,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1036,
+      "priority": 1042,
       "deprecatedUsage": []
     },
     {
@@ -289280,7 +289585,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatsdelegitimierung",
       "dataStandardsGroup": "",
-      "priority": 1037
+      "priority": 1043
     },
     {
       "id": "staatsform",
@@ -289653,7 +289958,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatsform",
       "dataStandardsGroup": "",
-      "priority": 1038
+      "priority": 1044
     },
     {
       "id": "staatsgebiet",
@@ -290026,7 +290331,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatsgebiet",
       "dataStandardsGroup": "",
-      "priority": 1039
+      "priority": 1045
     },
     {
       "id": "staatsgewalt",
@@ -290405,7 +290710,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatsgewalt",
       "dataStandardsGroup": "",
-      "priority": 1040
+      "priority": 1046
     },
     {
       "id": "staatskapitalismus",
@@ -290663,7 +290968,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatskapitalismus",
       "dataStandardsGroup": "",
-      "priority": 1041
+      "priority": 1047
     },
     {
       "id": "staatspropaganda",
@@ -291033,7 +291338,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatspropaganda",
       "dataStandardsGroup": "",
-      "priority": 1042
+      "priority": 1048
     },
     {
       "id": "staatssozialismus",
@@ -291301,7 +291606,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatssozialismus",
       "dataStandardsGroup": "",
-      "priority": 1043
+      "priority": 1049
     },
     {
       "id": "staatsversagen",
@@ -291729,7 +292034,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatsversagen",
       "dataStandardsGroup": "",
-      "priority": 1044
+      "priority": 1050
     },
     {
       "id": "staatsvolk",
@@ -292102,7 +292407,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Staatsvolk",
       "dataStandardsGroup": "",
-      "priority": 1045
+      "priority": 1051
     },
     {
       "id": "stadtwerke",
@@ -292385,7 +292690,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stadtwerke",
       "dataStandardsGroup": "",
-      "priority": 1046
+      "priority": 1052
     },
     {
       "id": "stafford-beer",
@@ -292595,7 +292900,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1047
+      "priority": 1053
     },
     {
       "id": "stakeholder-kapitalismus",
@@ -292853,7 +293158,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stakeholder-Kapitalismus",
       "dataStandardsGroup": "",
-      "priority": 1048
+      "priority": 1054
     },
     {
       "id": "standardlastprofil",
@@ -293221,7 +293526,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Standardlastprofil / SLP",
       "dataStandardsGroup": "",
-      "priority": 1049
+      "priority": 1055
     },
     {
       "id": "state-capture",
@@ -293597,7 +293902,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "State Capture",
       "dataStandardsGroup": "",
-      "priority": 1050
+      "priority": 1056
     },
     {
       "id": "state-of-charge",
@@ -293967,7 +294272,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "State of Charge / SOC",
       "dataStandardsGroup": "",
-      "priority": 1051
+      "priority": 1057
     },
     {
       "id": "state-of-health",
@@ -294343,7 +294648,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "State of Health / SOH",
       "dataStandardsGroup": "",
-      "priority": 1052
+      "priority": 1058
     },
     {
       "id": "stationaerer-batteriespeicher",
@@ -294721,7 +295026,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stationärer Batteriespeicher",
       "dataStandardsGroup": "",
-      "priority": 1053
+      "priority": 1059
     },
     {
       "id": "status-quo-bias",
@@ -295271,7 +295576,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Steuerkritik",
       "dataStandardsGroup": "",
-      "priority": 1055
+      "priority": 1061
     },
     {
       "id": "steuerungsdaten",
@@ -295750,7 +296055,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stiftung",
       "dataStandardsGroup": "",
-      "priority": 1057
+      "priority": 1063
     },
     {
       "id": "stranded-assets",
@@ -296038,7 +296343,7 @@
       "metaTitle": "Strandinggefährdeter Kredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheit oder Geschäftsgrundlage durch Wirkungs-, Regulierungs-, Markt- oder Versicherungsrisiken gefährdet werden kann. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1059
+      "priority": 1065
     },
     {
       "id": "strategische-reserve",
@@ -296319,7 +296624,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Strategische Reserve",
       "dataStandardsGroup": "",
-      "priority": 1060
+      "priority": 1066
     },
     {
       "id": "strategisches-management",
@@ -296486,7 +296791,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1061
+      "priority": 1067
     },
     {
       "id": "streitfaehigkeit",
@@ -296840,7 +297145,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Streitfähigkeit",
       "dataStandardsGroup": "",
-      "priority": 1062
+      "priority": 1068
     },
     {
       "id": "stressreaktion",
@@ -297074,7 +297379,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stressreaktion",
       "dataStandardsGroup": "",
-      "priority": 1063
+      "priority": 1069
     },
     {
       "id": "stromgestehungskosten",
@@ -297361,7 +297666,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stromgestehungskosten",
       "dataStandardsGroup": "",
-      "priority": 1064
+      "priority": 1070
     },
     {
       "id": "strommarkt",
@@ -297652,7 +297957,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Strommarkt",
       "dataStandardsGroup": "",
-      "priority": 1065
+      "priority": 1071
     },
     {
       "id": "strommarktdesign",
@@ -297937,7 +298242,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Strommarktdesign",
       "dataStandardsGroup": "",
-      "priority": 1066
+      "priority": 1072
     },
     {
       "id": "strommix",
@@ -298322,7 +298627,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stromnetz",
       "dataStandardsGroup": "",
-      "priority": 1068
+      "priority": 1074
     },
     {
       "id": "stromnev",
@@ -298603,7 +298908,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "StromNEV",
       "dataStandardsGroup": "",
-      "priority": 1069
+      "priority": 1075
     },
     {
       "id": "strompreisbestandteile",
@@ -298888,7 +299193,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Strompreisbestandteile",
       "dataStandardsGroup": "",
-      "priority": 1070
+      "priority": 1076
     },
     {
       "id": "stromsteuer",
@@ -299165,7 +299470,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stromsteuer",
       "dataStandardsGroup": "",
-      "priority": 1071
+      "priority": 1077
     },
     {
       "id": "strukturdeterminiertheit",
@@ -299358,7 +299663,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1072
+      "priority": 1078
     },
     {
       "id": "strukturelle-kopplung",
@@ -299859,7 +300164,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Struktureller Rassismus",
       "dataStandardsGroup": "",
-      "priority": 1074
+      "priority": 1080
     },
     {
       "id": "strukturelles-driften",
@@ -300375,7 +300680,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Studienfinanzierung",
       "dataStandardsGroup": "",
-      "priority": 1076
+      "priority": 1082
     },
     {
       "id": "suffizienz",
@@ -301070,7 +301375,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Sündenbockmechanismus",
       "dataStandardsGroup": "",
-      "priority": 1078
+      "priority": 1084
     },
     {
       "id": "superkondensator",
@@ -301436,7 +301741,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Superkondensator",
       "dataStandardsGroup": "",
-      "priority": 1079
+      "priority": 1085
     },
     {
       "id": "supply-chain-resilienz",
@@ -301961,7 +302266,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Supply-Chain-Resilienz",
-      "priority": 1080,
+      "priority": 1086,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -302395,7 +302700,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Supply-side Economics",
       "dataStandardsGroup": "",
-      "priority": 1081
+      "priority": 1087
     },
     {
       "id": "supraleitung",
@@ -302557,7 +302862,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Supraleitung",
       "dataStandardsGroup": "",
-      "priority": 1082
+      "priority": 1088
     },
     {
       "id": "sustainable-finance",
@@ -302997,7 +303302,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Systemdienstleistungen",
       "dataStandardsGroup": "",
-      "priority": 1084
+      "priority": 1090
     },
     {
       "id": "systemgrenze",
@@ -303195,7 +303500,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1085
+      "priority": 1091
     },
     {
       "id": "systemische-kohaerenz",
@@ -303544,7 +303849,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1087
+      "priority": 1093
     },
     {
       "id": "systemkosten",
@@ -303837,7 +304142,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Systemkosten",
       "dataStandardsGroup": "",
-      "priority": 1088
+      "priority": 1094
     },
     {
       "id": "systemorientiertes-management",
@@ -304004,7 +304309,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1089
+      "priority": 1095
     },
     {
       "id": "systemverzerrender-lobbyismus",
@@ -304378,7 +304683,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Systemverzerrender Lobbyismus",
       "dataStandardsGroup": "",
-      "priority": 1090
+      "priority": 1096
     },
     {
       "id": "t-sroi",
@@ -304868,7 +305173,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "TAB Mittelspannung",
       "dataStandardsGroup": "",
-      "priority": 1092
+      "priority": 1098
     },
     {
       "id": "tandem-solarzelle",
@@ -305030,7 +305335,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Tandem-Solarzelle",
       "dataStandardsGroup": "",
-      "priority": 1093
+      "priority": 1099
     },
     {
       "id": "tank-to-wheel",
@@ -305250,7 +305555,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1094
+      "priority": 1100
     },
     {
       "id": "tar-mittelspannung",
@@ -305620,7 +305925,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "TAR Mittelspannung / VDE-AR-N 4110",
       "dataStandardsGroup": "",
-      "priority": 1095
+      "priority": 1101
     },
     {
       "id": "tauschwert",
@@ -305815,7 +306120,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1096
+      "priority": 1102
     },
     {
       "id": "taxonomy-kpis",
@@ -306701,7 +307006,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Technische Anschlussregel / TAR",
       "dataStandardsGroup": "",
-      "priority": 1102
+      "priority": 1108
     },
     {
       "id": "technische-bewertungskriterien",
@@ -307059,7 +307364,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Technischer Kreislauf",
       "dataStandardsGroup": "",
-      "priority": 1104
+      "priority": 1110
     },
     {
       "id": "technischer-naehrstoff",
@@ -307300,7 +307605,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Technischer Nährstoff",
       "dataStandardsGroup": "",
-      "priority": 1105
+      "priority": 1111
     },
     {
       "id": "technokratie-ueberwachung-social-credit",
@@ -307860,7 +308165,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1106,
+      "priority": 1112,
       "deprecatedUsage": []
     },
     {
@@ -308106,7 +308411,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Teilen / Sharing",
       "dataStandardsGroup": "",
-      "priority": 1107
+      "priority": 1113
     },
     {
       "id": "theokratie",
@@ -308474,7 +308779,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Theokratie",
       "dataStandardsGroup": "",
-      "priority": 1108
+      "priority": 1114
     },
     {
       "id": "thermal-runaway",
@@ -308844,7 +309149,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thermal Runaway",
       "dataStandardsGroup": "",
-      "priority": 1109
+      "priority": 1115
     },
     {
       "id": "thermisches-kraftwerk",
@@ -309129,7 +309434,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thermisches Kraftwerk",
       "dataStandardsGroup": "",
-      "priority": 1110
+      "priority": 1116
     },
     {
       "id": "thg-emissions-scopes",
@@ -309347,7 +309652,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1111
+      "priority": 1117
     },
     {
       "id": "thinktank",
@@ -309745,7 +310050,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thinktank",
       "dataStandardsGroup": "",
-      "priority": 1112
+      "priority": 1118
     },
     {
       "id": "thinktank-netzwerk",
@@ -310119,7 +310424,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thinktank-Netzwerk",
       "dataStandardsGroup": "",
-      "priority": 1113
+      "priority": 1119
     },
     {
       "id": "thomas-piketty",
@@ -310964,7 +311269,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Totalitarismus",
       "dataStandardsGroup": "",
-      "priority": 1116
+      "priority": 1122
     },
     {
       "id": "totalitarismus-arendt",
@@ -311337,7 +311642,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Totalitarismus nach Arendt",
       "dataStandardsGroup": "",
-      "priority": 1117
+      "priority": 1123
     },
     {
       "id": "trafostation",
@@ -311713,7 +312018,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Trafostation",
       "dataStandardsGroup": "",
-      "priority": 1118
+      "priority": 1124
     },
     {
       "id": "transaktionskosten",
@@ -312137,7 +312442,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transaktionskosten",
       "dataStandardsGroup": "",
-      "priority": 1119
+      "priority": 1125
     },
     {
       "source": "Automatisierungs-/Einkommenscluster Nachtrag 2026-06-01",
@@ -312884,7 +313189,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Transformationspfad",
-      "priority": 1121,
+      "priority": 1127,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -313061,7 +313366,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1122
+      "priority": 1128
     },
     {
       "id": "transformationswirkung",
@@ -313846,7 +314151,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transformator / Trafo",
       "dataStandardsGroup": "",
-      "priority": 1124
+      "priority": 1130
     },
     {
       "id": "transition-finance",
@@ -314235,7 +314540,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1128,
+      "priority": 1134,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -314604,7 +314909,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transparenz",
       "dataStandardsGroup": "",
-      "priority": 1129
+      "priority": 1135
     },
     {
       "id": "transparenzregister-lobbyismus",
@@ -314984,7 +315289,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transparenzregister",
       "dataStandardsGroup": "",
-      "priority": 1130
+      "priority": 1136
     },
     {
       "id": "treibhausgasemissionen",
@@ -315224,7 +315529,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1131
+      "priority": 1137
     },
     {
       "id": "trickle-down-oekonomie",
@@ -315469,7 +315774,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Trickle-down-Ökonomie",
       "dataStandardsGroup": "",
-      "priority": 1132
+      "priority": 1138
     },
     {
       "id": "trittbrettfahrerproblem",
@@ -315895,7 +316200,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Trittbrettfahrerproblem",
       "dataStandardsGroup": "",
-      "priority": 1133
+      "priority": 1139
     },
     {
       "id": "triviale-maschine",
@@ -316078,7 +316383,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1134
+      "priority": 1140
     },
     {
       "id": "typ-2-stecker",
@@ -316446,7 +316751,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Typ-2-Stecker",
       "dataStandardsGroup": "",
-      "priority": 1135
+      "priority": 1141
     },
     {
       "id": "uebergabestation",
@@ -316814,7 +317119,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Übergabestation",
       "dataStandardsGroup": "",
-      "priority": 1136
+      "priority": 1142
     },
     {
       "id": "uebergangstaetigkeit",
@@ -317194,7 +317499,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Übertragungsnetz",
       "dataStandardsGroup": "",
-      "priority": 1138
+      "priority": 1144
     },
     {
       "id": "ueberwachungskapitalismus",
@@ -317350,7 +317655,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Überwachungskapitalismus",
       "dataStandardsGroup": "",
-      "priority": 1139
+      "priority": 1145
     },
     {
       "id": "umsetzungspfad",
@@ -318120,7 +318425,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1140
+      "priority": 1146
     },
     {
       "id": "umspannstation",
@@ -318488,7 +318793,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Umspannstation",
       "dataStandardsGroup": "",
-      "priority": 1141
+      "priority": 1147
     },
     {
       "id": "umspannwerk",
@@ -318856,7 +319161,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Umspannwerk",
       "dataStandardsGroup": "",
-      "priority": 1142
+      "priority": 1148
     },
     {
       "id": "umwandlungskette",
@@ -319524,7 +319829,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Unbezahlte Arbeit",
       "dataStandardsGroup": "",
-      "priority": 1146
+      "priority": 1152
     },
     {
       "id": "unsichtbare-arbeit",
@@ -319887,7 +320192,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Unsichtbare Arbeit",
       "dataStandardsGroup": "",
-      "priority": 1147
+      "priority": 1153
     },
     {
       "id": "unsichtbare-rechnung",
@@ -320011,7 +320316,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1148
+      "priority": 1154
     },
     {
       "id": "unterlassungsschuld",
@@ -320063,7 +320368,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1149,
+      "priority": 1155,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -320731,7 +321036,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1150,
+      "priority": 1156,
       "deprecatedUsage": []
     },
     {
@@ -321496,7 +321801,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Unternehmen als Wirkungssystem",
-      "priority": 1151,
+      "priority": 1157,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -321665,7 +321970,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1152
+      "priority": 1158
     },
     {
       "id": "unternehmerisches-lernen",
@@ -321834,7 +322139,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1153
+      "priority": 1159
     },
     {
       "id": "upcycling",
@@ -322073,7 +322378,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Upcycling",
       "dataStandardsGroup": "",
-      "priority": 1154
+      "priority": 1160
     },
     {
       "id": "urban-mining",
@@ -322314,7 +322619,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Urban Mining",
       "dataStandardsGroup": "",
-      "priority": 1155
+      "priority": 1161
     },
     {
       "id": "urban-mining-batterien",
@@ -322680,7 +322985,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Urban Mining Batterien",
       "dataStandardsGroup": "",
-      "priority": 1156
+      "priority": 1162
     },
     {
       "id": "urteilskraft",
@@ -323051,7 +323356,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Urteilskraft",
       "dataStandardsGroup": "",
-      "priority": 1157
+      "priority": 1163
     },
     {
       "id": "value-proposition",
@@ -323224,7 +323529,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1158
+      "priority": 1164
     },
     {
       "id": "value-proposition-canvas",
@@ -323389,7 +323694,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1159
+      "priority": 1165
     },
     {
       "id": "varietaet",
@@ -323572,7 +323877,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1160
+      "priority": 1166
     },
     {
       "id": "vehicle-to-grid",
@@ -323855,7 +324160,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vehicle-to-Grid",
       "dataStandardsGroup": "",
-      "priority": 1161
+      "priority": 1167
     },
     {
       "id": "vehicle-to-home",
@@ -324223,7 +324528,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vehicle-to-Home",
       "dataStandardsGroup": "",
-      "priority": 1162
+      "priority": 1168
     },
     {
       "id": "vehicle-to-load",
@@ -324589,7 +324894,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vehicle-to-Load",
       "dataStandardsGroup": "",
-      "priority": 1163
+      "priority": 1169
     },
     {
       "id": "verantwortungsverkuerzung",
@@ -324921,7 +325226,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verbrauchsgüter",
       "dataStandardsGroup": "",
-      "priority": 1165
+      "priority": 1171
     },
     {
       "id": "verfassung",
@@ -325298,7 +325603,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassung",
       "dataStandardsGroup": "",
-      "priority": 1166
+      "priority": 1172
     },
     {
       "id": "verfassungsgerichtsbarkeit",
@@ -325652,7 +325957,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassungsgerichtsbarkeit",
       "dataStandardsGroup": "",
-      "priority": 1167
+      "priority": 1173
     },
     {
       "id": "verfassungsmaessige-wirkungsarchitektur",
@@ -326026,7 +326331,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassungsmäßige Wirkungsarchitektur",
       "dataStandardsGroup": "",
-      "priority": 1168
+      "priority": 1174
     },
     {
       "id": "verfassungsorgan",
@@ -326399,7 +326704,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassungsorgan",
       "dataStandardsGroup": "",
-      "priority": 1169
+      "priority": 1175
     },
     {
       "id": "verfuegbarkeitsheuristik",
@@ -326904,7 +327209,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verhältnismäßigkeit",
       "dataStandardsGroup": "",
-      "priority": 1171
+      "priority": 1177
     },
     {
       "id": "verhaeltnismaessigkeit-nach-wirkung",
@@ -327450,7 +327755,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1172
+      "priority": 1178
     },
     {
       "id": "verlustaversion",
@@ -327781,7 +328086,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1174
+      "priority": 1180
     },
     {
       "id": "vermeidene-schaeden-folgekosten",
@@ -328660,7 +328965,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Versicherbarkeit",
-      "priority": 1176,
+      "priority": 1182,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -329280,7 +329585,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1177,
+      "priority": 1183,
       "deprecatedUsage": []
     },
     {
@@ -329572,7 +329877,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Versorgungssicherheit",
       "dataStandardsGroup": "",
-      "priority": 1178
+      "priority": 1184
     },
     {
       "id": "verstaerkungslernen",
@@ -329806,7 +330111,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verstärkungslernen",
       "dataStandardsGroup": "",
-      "priority": 1179
+      "priority": 1185
     },
     {
       "id": "verteilnetz",
@@ -330089,7 +330394,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verteilnetz",
       "dataStandardsGroup": "",
-      "priority": 1180
+      "priority": 1186
     },
     {
       "id": "vertragsfreiheit",
@@ -330517,7 +330822,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vertragsfreiheit",
       "dataStandardsGroup": "",
-      "priority": 1181
+      "priority": 1187
     },
     {
       "id": "vertrauen",
@@ -331104,7 +331409,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vertrautheitseffekt",
       "dataStandardsGroup": "",
-      "priority": 1184
+      "priority": 1190
     },
     {
       "id": "verwaltung",
@@ -331481,7 +331786,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verwaltung",
       "dataStandardsGroup": "",
-      "priority": 1185
+      "priority": 1191
     },
     {
       "id": "viabilitaet",
@@ -331664,7 +331969,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1186
+      "priority": 1192
     },
     {
       "id": "viable-system-model",
@@ -331847,7 +332152,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1187
+      "priority": 1193
     },
     {
       "id": "vita-activa",
@@ -332220,7 +332525,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vita activa",
       "dataStandardsGroup": "",
-      "priority": 1188
+      "priority": 1194
     },
     {
       "id": "volkssouveraenitaet",
@@ -332576,7 +332881,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Volkssouveränität",
       "dataStandardsGroup": "",
-      "priority": 1189
+      "priority": 1195
     },
     {
       "id": "vollstaendige-information",
@@ -333006,7 +333311,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vollständige Information",
       "dataStandardsGroup": "",
-      "priority": 1190
+      "priority": 1196
     },
     {
       "id": "vsme",
@@ -333336,7 +333641,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1192
+      "priority": 1198
     },
     {
       "id": "wahlintegritaet",
@@ -333694,7 +333999,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wahlintegrität",
       "dataStandardsGroup": "",
-      "priority": 1193
+      "priority": 1199
     },
     {
       "id": "wahlmanipulation",
@@ -334064,7 +334369,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wahlmanipulation",
       "dataStandardsGroup": "",
-      "priority": 1194
+      "priority": 1200
     },
     {
       "id": "wahrhaftigkeit",
@@ -334244,7 +334549,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1195
+      "priority": 1201
     },
     {
       "id": "wahrheit",
@@ -334432,7 +334737,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1196
+      "priority": 1202
     },
     {
       "id": "wahrheitsillusionseffekt",
@@ -334668,7 +334973,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wahrheitsillusionseffekt",
       "dataStandardsGroup": "",
-      "priority": 1197
+      "priority": 1203
     },
     {
       "id": "wahrnehmung",
@@ -334906,7 +335211,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wahrnehmung",
       "dataStandardsGroup": "",
-      "priority": 1198
+      "priority": 1204
     },
     {
       "id": "wallbox",
@@ -335274,7 +335579,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wallbox",
       "dataStandardsGroup": "",
-      "priority": 1199
+      "priority": 1205
     },
     {
       "id": "wandlermessung",
@@ -335646,7 +335951,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wandlermessung",
       "dataStandardsGroup": "",
-      "priority": 1200
+      "priority": 1206
     },
     {
       "id": "warenfetisch",
@@ -335841,7 +336146,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1201
+      "priority": 1207
     },
     {
       "id": "waermepumpe",
@@ -336126,7 +336431,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wärmepumpe",
       "dataStandardsGroup": "",
-      "priority": 1202
+      "priority": 1208
     },
     {
       "id": "waermespeicher",
@@ -336411,7 +336716,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wärmespeicher",
       "dataStandardsGroup": "",
-      "priority": 1203
+      "priority": 1209
     },
     {
       "id": "warmmietenneutralitaet",
@@ -336767,7 +337072,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wartung / Maintenance",
       "dataStandardsGroup": "",
-      "priority": 1205
+      "priority": 1211
     },
     {
       "id": "wasserkraft",
@@ -337047,7 +337352,7 @@
       "glossaryOrderKey": "Wasserkraft",
       "autoLinkAliases": [],
       "dataStandardsGroup": "",
-      "priority": 1206
+      "priority": 1212
     },
     {
       "id": "wasserstoff",
@@ -337331,7 +337636,7 @@
       "glossaryOrderKey": "Wasserstoff",
       "autoLinkAliases": [],
       "dataStandardsGroup": "",
-      "priority": 1207
+      "priority": 1213
     },
     {
       "id": "wasserstoffspeicher",
@@ -337610,7 +337915,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wasserstoffspeicher",
       "dataStandardsGroup": "",
-      "priority": 1208
+      "priority": 1214
     },
     {
       "id": "wasserstress",
@@ -338104,7 +338409,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Watchdog-Organisation",
       "dataStandardsGroup": "",
-      "priority": 1210
+      "priority": 1216
     },
     {
       "id": "wehrhafte-demokratie",
@@ -338458,7 +338763,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wehrhafte Demokratie",
       "dataStandardsGroup": "",
-      "priority": 1211
+      "priority": 1217
     },
     {
       "id": "weiterverteilung",
@@ -338697,7 +339002,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Weiterverteilung / Redistribute",
       "dataStandardsGroup": "",
-      "priority": 1212
+      "priority": 1218
     },
     {
       "id": "well-to-tank",
@@ -338917,7 +339222,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1213
+      "priority": 1219
     },
     {
       "id": "well-to-wheel",
@@ -339137,7 +339442,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1214
+      "priority": 1220
     },
     {
       "id": "weltlosigkeit",
@@ -339510,7 +339815,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Weltlosigkeit",
       "dataStandardsGroup": "",
-      "priority": 1215
+      "priority": 1221
     },
     {
       "id": "wert",
@@ -339713,7 +340018,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1216
+      "priority": 1222
     },
     {
       "id": "werte",
@@ -339908,7 +340213,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1217
+      "priority": 1223
     },
     {
       "id": "wertebruecke",
@@ -339944,7 +340249,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wertebrücke",
-      "priority": 1218,
+      "priority": 1224,
       "relatedTerms": [],
       "officialSources": [],
       "relatedDocuments": [],
@@ -340144,7 +340449,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1219
+      "priority": 1225
     },
     {
       "id": "werterhalt",
@@ -340395,7 +340700,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Werterhalt",
       "dataStandardsGroup": "",
-      "priority": 1220
+      "priority": 1226
     },
     {
       "id": "wertewandel",
@@ -340590,7 +340895,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1221
+      "priority": 1227
     },
     {
       "id": "wertschoepfung",
@@ -340785,7 +341090,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1222
+      "priority": 1228
     },
     {
       "id": "wesentlicher-beitrag",
@@ -341546,7 +341851,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1225,
+      "priority": 1231,
       "deprecatedUsage": []
     },
     {
@@ -341930,7 +342235,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wiedergeburtsnarrativ",
       "dataStandardsGroup": "",
-      "priority": 1226
+      "priority": 1232
     },
     {
       "id": "wiederverwendung",
@@ -342175,7 +342480,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wiederverwendung",
       "dataStandardsGroup": "",
-      "priority": 1227
+      "priority": 1233
     },
     {
       "id": "windenergie",
@@ -342457,7 +342762,7 @@
       "glossaryOrderKey": "Windenergie",
       "autoLinkAliases": [],
       "dataStandardsGroup": "",
-      "priority": 1228
+      "priority": 1234
     },
     {
       "id": "windenergieanlage-lebenszyklus",
@@ -342823,7 +343128,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Windenergieanlage Lebenszyklus",
       "dataStandardsGroup": "",
-      "priority": 1229
+      "priority": 1235
     },
     {
       "id": "windrad-recycling",
@@ -343193,7 +343498,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Windrad-Recycling",
       "dataStandardsGroup": "",
-      "priority": 1230
+      "priority": 1236
     },
     {
       "id": "wirkleistung",
@@ -344137,7 +344442,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wirklichkeitsbindung",
       "dataStandardsGroup": "",
-      "priority": 1232
+      "priority": 1238
     },
     {
       "id": "wirklichkeitskonstruktion",
@@ -344387,6 +344692,54 @@
       "dataStandardsGroup": ""
     },
     {
+      "id": "wirkpfad",
+      "termId": "wirkpfad",
+      "label": "Wirkpfad",
+      "canonicalLabel": "Wirkpfad",
+      "slug": "wirkpfad",
+      "aliases": [
+        "Wirkpfad",
+        "Wirkungspfad",
+        "Wirkmechanismus-Pfad"
+      ],
+      "synonyms": [
+        "Wirkpfad",
+        "Wirkungspfad",
+        "Wirkmechanismus-Pfad"
+      ],
+      "shortDefinition": "Ein Wirkpfad beschreibt die nachvollziehbare Kette vom Auslöser über Wirkungspotenzial und Wirkmechanismus bis zur tatsächlichen Wirkung und Bewertung.",
+      "definition": "Der Wirkpfad zeigt, wie aus einer Aussage, Entscheidung, Regel oder Handlung reale Zustandsveränderungen entstehen können.",
+      "longDefinition": "Ein Wirkpfad macht sichtbar, wie ein Auslöser Wirkungspotenzial erzeugt, über Resonanzräume und Wirkmechanismen verstärkt oder abgeschwächt wird und schließlich Wirkungen erster, zweiter und dritter Ordnung erzeugt. Er verhindert, dass Debatten bei Schlagworten stehen bleiben.",
+      "woekRelation": "Der Wirkpfad ist ein Kerninstrument der Wirkungsökonomie. Er verbindet Fakten, Deutung, Entscheidung, Verhalten, Nebenfolgen und Wirkungsbewertung zu einer prüfbaren Kette.",
+      "usageNote": "Im Debatten-Kompass zeigt der Wirkpfad, welche Entscheidung wahrscheinlicher wird, wenn Menschen einer Aussage folgen.",
+      "statusNote": "Methodenbegriff.",
+      "category": "Methodenbegriff",
+      "sourceSection": "Führender Begriffsleitfaden · Wirkungsradar-Methode",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkung",
+        "wirkungsbewertung",
+        "folgencheck",
+        "resonanzraum"
+      ],
+      "pageUrl": "/begriffe/wirkpfad/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "updatedAt": "2026-06-06",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "Wirkpfad",
+      "priority": 1241,
+      "officialSources": [],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "methodenbegriff"
+      ]
+    },
+    {
       "id": "wirksames-management",
       "termId": "wirksames-management",
       "label": "Wirksames Management",
@@ -344553,7 +344906,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1235
+      "priority": 1242
     },
     {
       "id": "wirksamkeit",
@@ -344722,7 +345075,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1236
+      "priority": 1243
     },
     {
       "id": "wirkstoff",
@@ -346998,7 +347351,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1241
+      "priority": 1248
     },
     {
       "id": "wirkungsanalyse-von-sprache",
@@ -347066,7 +347419,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsanalyse von Sprache",
-      "priority": 1242,
+      "priority": 1249,
       "officialSources": [],
       "doNotConfuseWith": []
     },
@@ -348819,7 +349172,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1246
+      "priority": 1253
     },
     {
       "version": "1.0",
@@ -348968,7 +349321,7 @@
       "metaTitle": "Wirkungsbedingte Stranded Assets | Glossar der Wirkungsökonomie",
       "metaDescription": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1247
+      "priority": 1254
     },
     {
       "version": "1.0",
@@ -349128,7 +349481,7 @@
       "metaTitle": "Wirkungsbelasteter Kredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung oder relevantes Wirkungsrisiko enthält. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1248
+      "priority": 1255
     },
     {
       "id": "wirkungsbewertung",
@@ -352067,7 +352420,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungscontrolling",
-      "priority": 1254,
+      "priority": 1261,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -352775,7 +353128,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1257
+      "priority": 1264
     },
     {
       "id": "wirkungseinkommen",
@@ -353944,7 +354297,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1261
+      "priority": 1268
     },
     {
       "id": "wirkungsfonds",
@@ -355173,7 +355526,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wirkungsfreiheit",
       "dataStandardsGroup": "",
-      "priority": 1263
+      "priority": 1270
     },
     {
       "id": "wirkungsgovernance",
@@ -355664,7 +356017,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1264
+      "priority": 1271
     },
     {
       "id": "wirkungsgrad",
@@ -355848,7 +356201,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1265
+      "priority": 1272
     },
     {
       "id": "wirkungsgrenze",
@@ -358446,7 +358799,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1270
+      "priority": 1277
     },
     {
       "id": "wirkungsintegration",
@@ -358730,7 +359083,7 @@
       "blindSpot": "Kapital kann als Wirkungskapital bezeichnet werden, ohne dass seine tatsächliche positive Netto-Wirkung geprüft wird.",
       "blind_spot": "Kapital kann als Wirkungskapital bezeichnet werden, ohne dass seine tatsächliche positive Netto-Wirkung geprüft wird.",
       "dataStandardsGroup": "",
-      "priority": 1272
+      "priority": 1279
     },
     {
       "id": "wirkungskommunikation",
@@ -359290,7 +359643,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungskommunikation",
-      "priority": 1273,
+      "priority": 1280,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -360269,7 +360622,7 @@
       "metaTitle": "Wirkungskonversionskredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein Wirkungskonversionskredit finanziert den Umbau belasteter Geschäftsmodelle, Lieferketten oder Vermögenswerte in resilientere und wirkungsärmere oder positive Wirkungspfade. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1275
+      "priority": 1282
     },
     {
       "version": "1.0",
@@ -360426,7 +360779,7 @@
       "metaTitle": "Wirkungskredit / W-Kredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein Wirkungskredit ist ein Kredit, dessen Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1276
+      "priority": 1283
     },
     {
       "id": "wirkungslenkung",
@@ -361670,7 +362023,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1279
+      "priority": 1286
     },
     {
       "id": "wirkungsorientierte-forschung-und-innovation",
@@ -362205,7 +362558,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1280
+      "priority": 1287
     },
     {
       "id": "wirkungsorientierte-unternehmensfuehrung",
@@ -362970,7 +363323,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsorientierte Unternehmensführung",
-      "priority": 1281,
+      "priority": 1288,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -366392,7 +366745,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1292
+      "priority": 1299
     },
     {
       "id": "wirkungsregister",
@@ -367607,7 +367960,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsrendite",
-      "priority": 1294,
+      "priority": 1301,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -369839,7 +370192,7 @@
       "metaTitle": "Wirkungsrisikoposition | Glossar der Wirkungsökonomie",
       "metaDescription": "Eine Wirkungsrisikoposition beschreibt eine Portfolio-, Kredit-, Versicherungs- oder Kapitalposition, die negativen Wirkungen oder Wirkungsrisiken ausgesetzt ist. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1298
+      "priority": 1305
     },
     {
       "id": "wirkungsrueckkopplung",
@@ -370914,7 +371267,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1301,
+      "priority": 1308,
       "deprecatedUsage": []
     },
     {
@@ -372891,7 +373244,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1307
+      "priority": 1314
     },
     {
       "id": "wirkungsvermietung",
@@ -373639,7 +373992,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1310
+      "priority": 1317
     },
     {
       "id": "wirkungswertschoepfung",
@@ -373834,7 +374187,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1311
+      "priority": 1318
     },
     {
       "id": "wirkungszurechnung",
@@ -373927,7 +374280,7 @@
       "updatedAt": "2026-06-01",
       "statusNote": "",
       "dataStandardsGroup": "",
-      "priority": 1312,
+      "priority": 1319,
       "officialSources": [],
       "categories": [
         "grundbegriff"
@@ -374367,7 +374720,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wirtschaftsliberalismus",
       "dataStandardsGroup": "",
-      "priority": 1313
+      "priority": 1320
     },
     {
       "id": "wissenschaft-als-wirkungsinfrastruktur",
@@ -374895,7 +375248,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1314
+      "priority": 1321
     },
     {
       "id": "wissenschaftliche-politikberatung",
@@ -375437,7 +375790,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1315
+      "priority": 1322
     },
     {
       "id": "wissensrat",
@@ -375973,7 +376326,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1316
+      "priority": 1323
     },
     {
       "id": "wix-vi",
@@ -376511,7 +376864,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wohlfahrtsökonomie",
       "dataStandardsGroup": "",
-      "priority": 1318
+      "priority": 1325
     },
     {
       "id": "wohlfahrtsstaat",
@@ -376775,7 +377128,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wohlfahrtsstaat",
       "dataStandardsGroup": "",
-      "priority": 1319
+      "priority": 1326
     },
     {
       "id": "wohnwirkung",
@@ -377598,7 +377951,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1323
+      "priority": 1330
     },
     {
       "id": "wustg",
@@ -378184,7 +378537,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Xenophobie",
       "dataStandardsGroup": "",
-      "priority": 1326
+      "priority": 1333
     },
     {
       "id": "youth-jugendbeteiligung",
@@ -378748,7 +379101,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zementverwertung Rotorblätter",
       "dataStandardsGroup": "",
-      "priority": 1329
+      "priority": 1336
     },
     {
       "id": "zentralverwaltungswirtschaft",
@@ -379008,7 +379361,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zentralverwaltungswirtschaft",
       "dataStandardsGroup": "",
-      "priority": 1330
+      "priority": 1337
     },
     {
       "id": "zielkonflikt",
@@ -379762,7 +380115,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1332,
+      "priority": 1339,
       "deprecatedUsage": []
     },
     {
@@ -380002,7 +380355,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zirkuläres Geschäftsmodell",
       "dataStandardsGroup": "",
-      "priority": 1333
+      "priority": 1340
     },
     {
       "id": "zirkularitaet",
@@ -380709,7 +381062,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zivilgesellschaft",
       "dataStandardsGroup": "",
-      "priority": 1335
+      "priority": 1342
     },
     {
       "id": "zivilgesellschaftsrepression",
@@ -381079,7 +381432,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zivilgesellschaftsrepression",
       "dataStandardsGroup": "",
-      "priority": 1336
+      "priority": 1343
     },
     {
       "id": "zugangsgerechtigkeit",
@@ -381496,7 +381849,7 @@
       "updatedAt": "2026-06-01",
       "statusNote": "",
       "dataStandardsGroup": "",
-      "priority": 1340,
+      "priority": 1347,
       "officialSources": [],
       "categories": [
         "schutzbegriff"
@@ -381870,7 +382223,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zyklenfestigkeit",
       "dataStandardsGroup": "",
-      "priority": 1341
+      "priority": 1348
     }
   ]
 }

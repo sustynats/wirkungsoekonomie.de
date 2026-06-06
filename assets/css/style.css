@@ -3582,11 +3582,14 @@ textarea {
 .journal-home {
   display: grid;
   gap: 1rem;
+  width: 100%;
 }
 
 .journal-home-grid {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 3vw, 1.4rem);
+  align-items: start;
 }
 
 .journal-side-list,
@@ -4136,6 +4139,41 @@ textarea {
   flex-direction: column;
   gap: 0.9rem;
   padding: clamp(1.25rem, 3vw, 1.8rem);
+}
+
+.journal-feature-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.46fr) minmax(0, 0.54fr);
+  gap: clamp(1.1rem, 3vw, 1.8rem);
+  align-items: start;
+}
+
+.journal-feature-card > :not(.blog-image) {
+  margin-inline: 0;
+}
+
+.journal-feature-card .blog-image {
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 16, 32, 0.1);
+  border-radius: 8px;
+}
+
+.journal-feature-card .blog-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.journal-feature-card .blog-badge-row,
+.journal-feature-card .card-kicker,
+.journal-feature-card .card-title,
+.journal-feature-card .card-text,
+.journal-feature-card .text-link {
+  grid-column: 2;
 }
 
 .editorial-feature-card .text-link {
@@ -18713,5 +18751,79 @@ main:has(.debate-claim-section) .sr-only {
   .topic-subnav.radar-sprint-nav a,
   .debate-toc-card .dossier-tab-nav a {
     white-space: normal;
+  }
+}
+
+@media (max-width: 58rem) {
+  .journal-feature-card {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-feature-card .blog-badge-row,
+  .journal-feature-card .card-kicker,
+  .journal-feature-card .card-title,
+  .journal-feature-card .card-text,
+  .journal-feature-card .text-link {
+    grid-column: 1;
+  }
+}
+
+/* Journal home must stay readable even after generated index rebuilds. */
+.journal-home[data-journal-home] {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+}
+
+.journal-home[data-journal-home] .journal-home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+.journal-home[data-journal-home] .journal-feature-card {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(1.1rem, 3vw, 2rem);
+}
+
+.journal-home[data-journal-home] .journal-feature-card .blog-image {
+  grid-column: 1;
+  width: 100%;
+}
+
+.journal-home[data-journal-home] .journal-feature-copy {
+  grid-column: 2;
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 0.85rem;
+}
+
+.journal-home[data-journal-home] .journal-feature-copy > * {
+  margin: 0;
+  grid-column: auto;
+}
+
+.journal-home[data-journal-home] .journal-side-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+.journal-home[data-journal-home] .journal-side-list .journal-archive-card {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 760px) {
+  .journal-home[data-journal-home] .journal-feature-card,
+  .journal-home[data-journal-home] .journal-side-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .journal-home[data-journal-home] .journal-feature-card .blog-image,
+  .journal-home[data-journal-home] .journal-feature-copy {
+    grid-column: 1;
   }
 }

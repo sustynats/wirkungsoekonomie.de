@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-06T18:03:36.573Z
+- Generated: 2026-06-06T20:55:58.389Z
 - Content pages scanned: 1009
-- Glossary terms indexed: 1341
-- Warnings: 566
+- Glossary terms indexed: 1348
+- Warnings: 569
 
 ## Stichproben
 
@@ -238,6 +238,7 @@
 - term has no content references: habitatverlust
 - term has no content references: heimspeicher
 - term has no content references: heritage-foundation
+- term has no content references: herkunftsframe
 - term has no content references: herkunftstransparenz
 - term has no content references: hfcs-hydrofluorocarbons
 - term has no content references: hochspannung
@@ -358,5 +359,4 @@
 - term has no content references: netzanschlusspunkt
 - term has no content references: netzdienlichkeit
 - term has no content references: netzebene
-- term has no content references: netzengpass
-- ... 266 weitere Warnungen
+- ... 269 weitere Warnungen

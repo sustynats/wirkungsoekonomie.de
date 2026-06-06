@@ -111,12 +111,15 @@
     target.innerHTML = `
       <div class="journal-home-grid">
         ${renderArticleCard(latest, { featured: true })}
-        <div class="journal-side-list">
+        <div class="journal-side-list" aria-label="Weitere aktuelle Journalartikel">
           ${secondary.map((post) => renderArticleCard(post)).join("")}
+          <article class="journal-card journal-archive-card">
+            <p class="card-kicker">Archiv</p>
+            <h3 class="card-title">Alle Journalartikel durchsuchen.</h3>
+            <p class="card-text">Suche, Filter und Schlagworte führen gezielt durch das vollständige Archiv.</p>
+            <a class="text-link" href="#beitraege">Zum Archiv</a>
+          </article>
         </div>
-      </div>
-      <div class="hero-actions journal-actions">
-        <a class="btn btn-secondary" href="/blog.html">Alle Einordnungen ansehen</a>
       </div>
     `;
   }
@@ -207,12 +210,27 @@
       .slice(0, 3)
       .map((tag) => `<span>${escapeHtml(tag)}</span>`)
       .join("");
-    const cardClass = featured ? "journal-card journal-feature-card" : "journal-card";
     const titleLevel = featured ? "h3" : "h3";
     const image = normalizeImagePath(post.image);
 
+    if (featured) {
+      return `
+        <article class="blog-card editorial-feature-card journal-feature-card" data-origin="redaktion" data-category="${escapeHtml(post.category || "journal")}">
+          ${image ? `<div class="blog-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt || post.title)}" decoding="async" loading="eager"></div>` : ""}
+          <div class="journal-feature-copy">
+            <div class="blog-badge-row"><span class="blog-origin-badge">${escapeHtml(post.type || "Journalartikel")}</span><span class="blog-origin-badge">${escapeHtml(post.category || "Journal")}</span></div>
+            <p class="card-kicker">${escapeHtml(post.category || "Journal")} · <time datetime="${escapeHtml(post.date)}">${formatDate(post.date)}</time>${post.readingTime ? ` · ${escapeHtml(post.readingTime)}` : ""}</p>
+            <${titleLevel} class="card-title">${escapeHtml(post.title)}</${titleLevel}>
+            <p class="card-text">${escapeHtml(post.excerpt)}</p>
+            ${tagChips ? `<div class="journal-chip-list" aria-label="Themen">${tagChips}</div>` : ""}
+            <a class="text-link" href="${escapeHtml(post.url)}">Aktuellen Beitrag lesen</a>
+          </div>
+        </article>
+      `;
+    }
+
     return `
-      <article class="${cardClass}">
+      <article class="journal-card">
         ${image ? `<div class="blog-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt || post.title)}" decoding="async" loading="lazy"></div>` : ""}
         <p class="journal-meta">
           <span>${escapeHtml(post.category)}</span>
@@ -224,7 +242,7 @@
         <${titleLevel} class="card-title">${escapeHtml(post.title)}</${titleLevel}>
         <p class="card-text">${escapeHtml(post.excerpt)}</p>
         ${tagChips ? `<div class="journal-chip-list" aria-label="Themen">${tagChips}</div>` : ""}
-        <a class="text-link" href="${escapeHtml(post.url)}">${featured ? "Artikel lesen" : "Lesen"}</a>
+        <a class="text-link" href="${escapeHtml(post.url)}">Beitrag lesen</a>
       </article>
     `;
   }

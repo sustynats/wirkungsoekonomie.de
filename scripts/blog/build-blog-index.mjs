@@ -34,6 +34,11 @@ function firstMatch(html, patterns) {
   return "";
 }
 
+function mainHtml(html) {
+  const match = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i);
+  return match?.[1] || html;
+}
+
 function allMatches(html, pattern) {
   return Array.from(html.matchAll(pattern), (match) => decodeHtml(match[1].trim())).filter(Boolean);
 }
@@ -46,6 +51,14 @@ function decodeHtml(value) {
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&nbsp;/g, " ");
+}
+
+function escapeHtml(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
 }
 
 function stripTags(value) {
@@ -104,17 +117,21 @@ function entryFromHtml(file, existing) {
     heroKicker.split("·")[0]?.trim() ||
     "Journal";
   const tags = previous.tags?.length ? previous.tags : allMatches(html, /<meta\s+property=["']article:tag["']\s+content=["']([^"']+)["']/gi);
-  const image =
-    previous.image ||
-    normalizeAssetUrl(
-      firstMatch(html, [
-        /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i,
-        /<img[^>]+src=["']([^"']+)["'][^>]*>/i
-      ])
-    );
-  const imageAlt =
-    previous.imageAlt ||
-    firstMatch(html, [/<img[^>]+alt=["']([^"']+)["'][^>]*>/i]);
+  const imageFromHtml = normalizeAssetUrl(
+    firstMatch(html, [
+      /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i,
+      /<img[^>]+src=["']([^"']+)["'][^>]*>/i
+    ])
+  );
+  const image = imageFromHtml || previous.image || "";
+  const imageAltFromHtml =
+    firstMatch(html, [
+      /<meta\s+property=["']og:image:alt["']\s+content=["']([^"']+)["']/i,
+      /<meta\s+name=["']twitter:image:alt["']\s+content=["']([^"']+)["']/i
+    ]) ||
+    firstMatch(mainHtml(html), [/<img[^>]+alt=["']([^"']+)["'][^>]*>/i]);
+  const previousAlt = previous.imageAlt === "Wirkungsökonomie Logo" ? "" : previous.imageAlt;
+  const imageAlt = imageAltFromHtml || previousAlt || title;
 
   return {
     title,
@@ -144,4 +161,72 @@ const entries = walk(blogDir)
 
 fs.mkdirSync(path.dirname(indexPath), { recursive: true });
 fs.writeFileSync(indexPath, `${JSON.stringify(entries, null, 2)}\n`);
+
+function siteRelative(url = "") {
+  return String(url || "#").replace(/^\//, "");
+}
+
+function formatDateLabel(date = "") {
+  const match = String(date).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return date;
+  const [, year, month, day] = match;
+  return `${day}.${month}.${year}`;
+}
+
+function renderImage(entry, eager = false) {
+  if (!entry.image) return "";
+  return `<div class="blog-image"><img src="${escapeHtml(siteRelative(entry.image))}" alt="${escapeHtml(entry.imageAlt || entry.title)}" decoding="async" loading="${eager ? "eager" : "lazy"}"></div>`;
+}
+
+function renderBadges(entry) {
+  const badges = [entry.type || "Journal", entry.category || ""].filter(Boolean).slice(0, 2);
+  return `<div class="blog-badge-row">${badges.map((badge) => `<span class="blog-origin-badge">${escapeHtml(badge)}</span>`).join("")}</div>`;
+}
+
+function renderFeature(entry) {
+  return `<article class="blog-card editorial-feature-card journal-feature-card" data-origin="redaktion" data-category="${escapeHtml(entry.category || "journal")}">
+              ${renderImage(entry, true)}
+              <div class="journal-feature-copy">
+                ${renderBadges(entry)}
+                <p class="card-kicker">${escapeHtml(entry.category || "Journal")} · ${escapeHtml(formatDateLabel(entry.date))}${entry.readingTime ? ` · ${escapeHtml(entry.readingTime)}` : ""}</p>
+                <h3 class="card-title">${escapeHtml(entry.title)}</h3>
+                ${entry.excerpt ? `<p class="card-text">${escapeHtml(entry.excerpt)}</p>` : ""}
+                <a class="text-link" href="${escapeHtml(siteRelative(entry.url))}">Aktuellen Beitrag lesen</a>
+              </div>
+            </article>`;
+}
+
+function renderSideEntry(entry) {
+  return `<article class="journal-card">
+              <p class="card-kicker">${escapeHtml(entry.category || "Journal")} · ${escapeHtml(formatDateLabel(entry.date))}</p>
+              <h3 class="card-title">${escapeHtml(entry.title)}</h3>
+              ${entry.excerpt ? `<p class="card-text">${escapeHtml(entry.excerpt).slice(0, 180)}</p>` : ""}
+              <a class="text-link" href="${escapeHtml(siteRelative(entry.url))}">Beitrag lesen</a>
+            </article>`;
+}
+
+function updateJournalHome(entries) {
+  const blogHtmlPath = path.join(root, "blog.html");
+  if (!fs.existsSync(blogHtmlPath) || !entries.length) return;
+  const current = fs.readFileSync(blogHtmlPath, "utf8");
+  const [featured, ...rest] = entries;
+  const replacement = `<div class="journal-home" data-journal-home>
+            <div class="journal-home-grid">
+              ${renderFeature(featured)}
+              <div class="journal-side-list" aria-label="Weitere aktuelle Journalartikel">
+                ${rest.slice(0, 2).map(renderSideEntry).join("\n                ")}
+                <article class="journal-card journal-archive-card">
+                  <p class="card-kicker">Archiv</p>
+                  <h3 class="card-title">Alle Journalartikel durchsuchen.</h3>
+                  <p class="card-text">Suche, Filter und Schlagworte führen gezielt durch das vollständige Archiv.</p>
+                  <a class="text-link" href="#beitraege">Zum Archiv</a>
+                </article>
+              </div>
+            </div>
+          </div>`;
+  const next = current.replace(/<div class="journal-home" data-journal-home[\s\S]*?<\/div>\s*<\/section>/, `${replacement}\n        </div>\n      </section>`);
+  if (next !== current) fs.writeFileSync(blogHtmlPath, next, "utf8");
+}
+
+updateJournalHome(entries);
 console.log(`Wrote ${entries.length} current blog entries to assets/data/blog-index.json.`);

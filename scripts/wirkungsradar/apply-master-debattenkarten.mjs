@@ -1001,16 +1001,16 @@ function applyEditorialOverlays(card) {
 }
 
 function readMasterData() {
+  if (fs.existsSync(MASTER_JSON)) {
+    return JSON.parse(fs.readFileSync(MASTER_JSON, "utf8"));
+  }
   if (fs.existsSync(MASTER_DOCX)) {
     const parsed = parseCardsFromText(extractDocxText(MASTER_DOCX));
     fs.mkdirSync(path.dirname(MASTER_JSON), { recursive: true });
     fs.writeFileSync(MASTER_JSON, `${JSON.stringify(parsed, null, 2)}\n`);
     return parsed;
   }
-  if (!fs.existsSync(MASTER_JSON)) {
-    throw new Error(`Keine Masterquelle gefunden: ${MASTER_DOCX} oder ${MASTER_JSON}`);
-  }
-  return JSON.parse(fs.readFileSync(MASTER_JSON, "utf8"));
+  throw new Error(`Keine Masterquelle gefunden: ${MASTER_JSON} oder ${MASTER_DOCX}`);
 }
 
 function write(file, html) {
@@ -1087,13 +1087,11 @@ function redirectShell({ title, description, canonical, target, base }) {
 
 function radarNav(base = "") {
   const links = [
-    ["Antwort finden", `${base}wirkungsradar/`],
-    ["Antwortkarten", `${base}wirkungsradar/live/`],
+    ["Debatten-Kompass", `${base}wirkungsradar/`],
     ["Debattenkarten", `${base}wirkungsradar/debattenkarten/`],
-    ["Narrative", `${base}wirkungsradar/narrative/`],
     ["Antwort-Playbooks", `${base}wirkungsradar/antwort-playbooks/`],
+    ["Wirkungsradar-Methode", `${base}wirkungsradar/methode/`],
     ["Narrativ einreichen", ACADEMY_NARRATIVE_URL],
-    ["Methode", `${base}wirkungsradar/methode/`],
   ];
   return `<nav class="topic-subnav radar-sprint-nav" aria-label="Debatten-Kompass Navigation" data-search-exclude>${links.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav>`;
 }

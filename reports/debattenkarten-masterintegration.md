@@ -4,9 +4,9 @@ Stand: 2026-06-05
 
 ## Ergebnis
 
-- Karten im Textmaster: 88
+- Karten im Textmaster: 89
 - Bestehende Live-Routen überschrieben/aktualisiert: 88
-- Neue Live-Routen angelegt: 0
+- Neue Live-Routen angelegt: 1
 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
 ## Cluster
@@ -20,6 +20,7 @@ Stand: 2026-06-05
 - Kultur, Familie & Geschlecht: 4
 - Landwirtschaft & Ernährung: 3
 - Migration: 9
+- Migration / Integration / Minderheitenschutz: 1
 - Mobilität: 9
 - Staat, Geld & Verantwortung: 8
 - verschenktes Geld oder verkürzte Empörung? — Staat, Geld & Verantwortung: 1
@@ -27,7 +28,7 @@ Stand: 2026-06-05
 
 ## Neue Routen
 
-- Keine
+- /wirkungsradar/live/migration-und-queerfeindlichkeit/ - Migration macht Deutschland homophober?
 
 ## Hinweise
 
