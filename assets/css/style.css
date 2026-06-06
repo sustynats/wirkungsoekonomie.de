@@ -2453,7 +2453,8 @@ body.nav-is-open {
   border-left: 4px solid var(--green);
 }
 
-.audio-explanation-meta {
+.audio-explanation-meta,
+.audio-player-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem 0.75rem;
@@ -2461,6 +2462,12 @@ body.nav-is-open {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.audio-player-actions {
+  margin: 0.55rem 0 0;
+  font-size: 0.94rem;
+  font-weight: 800;
 }
 
 .audio-explanation-transcript {

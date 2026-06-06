@@ -7167,6 +7167,10 @@ const AudioExplanationLayer = (() => {
       .join("");
   }
 
+  function durationLabel(item) {
+    return item.duration_label || item.duration_estimate || "wird vom Player geladen";
+  }
+
   function createBlock(item) {
     const section = document.createElement("section");
     section.className = "audio-explanation-block";
@@ -7182,9 +7186,9 @@ const AudioExplanationLayer = (() => {
         </audio>
         <p class="audio-explanation-meta">
           <span>Sprecherin: ${escapeHtml(item.speaker_name || "Natalie Weber")}</span>
-          <span>Dauer: ${escapeHtml(item.duration_estimate || "ca. 60 bis 90 Sekunden")}</span>
-          <span>Stand: ${escapeHtml(item.version_date || "2026-06-04")}</span>
+          <span>Dauer: ${escapeHtml(durationLabel(item))}</span>
         </p>
+        <p class="audio-player-actions"><a class="text-link" href="${escapeHtml(item.audio_file)}" download>MP3 herunterladen</a></p>
         <details class="audio-transcript audio-explanation-transcript">
           <summary>Transkript anzeigen</summary>
           ${transcriptHtml(item.transcript)}
@@ -7214,6 +7218,74 @@ const AudioExplanationLayer = (() => {
   return { init };
 })();
 
+const AudioPlayerMetadataLayer = (() => {
+  const dataUrl = "/assets/data/audio-metadata.json";
+  let metadata = null;
+
+  function sourcePath(audio) {
+    const source = audio.querySelector("source")?.getAttribute("src") || audio.getAttribute("src") || "";
+    if (!source) return "";
+    try {
+      return new URL(source, window.location.href).pathname;
+    } catch (error) {
+      return source;
+    }
+  }
+
+  function hasNearbyMetadata(audio) {
+    const parent = audio.parentElement;
+    if (!parent) return false;
+    return Boolean(parent.querySelector(".audio-player-meta, .audio-explanation-meta"));
+  }
+
+  function relativeHref(audio) {
+    const source = audio.querySelector("source")?.getAttribute("src") || audio.getAttribute("src") || sourcePath(audio);
+    return source || sourcePath(audio);
+  }
+
+  function enhance(audio) {
+    if (!audio || audio.dataset.audioMetaEnhanced === "true" || !metadata) return;
+    const path = sourcePath(audio);
+    const item = metadata.items?.[path];
+    if (!item) return;
+    audio.dataset.audioMetaEnhanced = "true";
+    const parent = audio.parentElement;
+    const needsMeta = !hasNearbyMetadata(audio);
+    const needsActions = parent && !parent.querySelector(".audio-player-actions");
+    if (needsMeta || needsActions) {
+      const meta = needsMeta
+        ? `<p class="audio-player-meta"><span>Sprecherin: ${escapeHtml(item.speaker_name || "Natalie Weber")}</span><span>Dauer: ${escapeHtml(item.duration_label || "wird vom Player geladen")}</span></p>`
+        : "";
+      const actions = needsActions
+        ? `<p class="audio-player-actions"><a class="text-link" href="${escapeHtml(relativeHref(audio))}" download>MP3 herunterladen</a></p>`
+        : "";
+      audio.insertAdjacentHTML(
+        "afterend",
+        `${meta}${actions}`,
+      );
+    }
+  }
+
+  function enhanceAll() {
+    document.querySelectorAll("audio").forEach(enhance);
+  }
+
+  async function init() {
+    try {
+      const response = await fetch(dataUrl, { cache: "no-cache" });
+      if (!response.ok) return;
+      metadata = await response.json();
+      enhanceAll();
+      const observer = new MutationObserver(enhanceAll);
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    } catch (error) {
+      // Audio metadata is progressive enhancement; native audio controls remain available.
+    }
+  }
+
+  return { init };
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   ToolExplanationLayer.init();
   ToolSpecialBoxLayer.init();
@@ -7224,5 +7296,6 @@ document.addEventListener("DOMContentLoaded", () => {
   MethodToolFilterLayer.init();
   CopyAnswerLayer.init();
   AudioExplanationLayer.init();
+  AudioPlayerMetadataLayer.init();
   WirkungsraumLayer.init();
 });
