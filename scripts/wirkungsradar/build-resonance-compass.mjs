@@ -5,6 +5,8 @@ const ROOT = process.cwd();
 const SITE_URL = "https://wirkungsoekonomie.de";
 const DATA_STAND = "2026-06-05";
 const cards = JSON.parse(fs.readFileSync(path.join(ROOT, "data/wirkungsradar/resonance-cards.json"), "utf8"));
+const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
+const footerTemplate = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
 
 function cleanText(value = "") {
   return String(value)
@@ -108,6 +110,33 @@ function esc(value = "") {
     .replaceAll('"', "&quot;");
 }
 
+function navHref(item, base) {
+  const href = item.href || "#";
+  if (/^(https?:|mailto:|#)/.test(href)) return href;
+  return `${base}${href}`.replace(/\/{2,}/g, "/");
+}
+
+function navLink(item, base) {
+  const match = (item.match || []).join(" ");
+  return `<a href="${navHref(item, base)}" data-nav-match="${esc(match)}">${esc(item.label)}</a>`;
+}
+
+function footerGroup(group, base) {
+  return `<div class="footer-nav-group">
+      <h3>${esc(group.title)}</h3>
+      <div class="footer-nav-links">
+        ${(group.items || []).map((item) => navLink(item, base)).join("\n        ")}
+      </div>
+    </div>`;
+}
+
+function renderFooter(base) {
+  return footerTemplate
+    .replaceAll("{{BASE}}", base)
+    .replace("{{FOOTER_NAV}}", (navigation.footerGroups || []).map((group) => footerGroup(group, base)).join("\n    "))
+    .replace("{{FOOTER_LEGAL_NAV}}", (navigation.footerLegal || []).map((item) => navLink(item, base)).join("\n"));
+}
+
 function write(relative, html) {
   const file = path.join(ROOT, relative);
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -150,7 +179,7 @@ function shell({ title, description, canonical, base = "../../", main }) {
     <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
   </header>
   <main>${main}</main>
-  <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Öffentlicher Wirkungsraum</p><h2>Debatten beantworten. Aufmerksamkeit gewichten.</h2><p>Debatten-Kompass, Resonanz-Kompass, Agenda-Radar und Ursachen-Navigator bleiben quellengebunden, korrigierbar und öffentlich nachvollziehbar.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
+  ${renderFooter(base)}
   <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
 </body>
 </html>`;
