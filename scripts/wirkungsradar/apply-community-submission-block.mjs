@@ -218,7 +218,8 @@ function normalizeHtml(file) {
   const compassHref = relDir(file, path.join(ROOT, "wirkungsradar"));
 
   html = html
-    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, `assets/css/style.css?v=20260606-nav-cache-fix"' <)]+/g, `assets/js/main.js?v=20260606-main-cache-fix"Debatten-Kompass, Fakten, Folgen, Frames, Psychologie, bessere Antworten, Narrativ einreichen")
+    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, "assets/css/style.css?v=20260606-nav-cache-fix")
+    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, "assets/js/main.js?v=20260606-main-cache-fix")
     .replace(/Mythen &amp; Narrative/g, "Narrative")
     .replace(/Mythen & Narrative/g, "Narrative")
     .replace(/Mythos melden/g, "Narrativ einreichen")
