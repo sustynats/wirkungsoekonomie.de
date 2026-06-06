@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-06T20:55:58.389Z
+- Generated: 2026-06-06T21:59:26.384Z
 - Content pages scanned: 1009
-- Glossary terms indexed: 1348
-- Warnings: 569
+- Glossary terms indexed: 1371
+- Warnings: 571
 
 ## Stichproben
 
@@ -136,7 +136,6 @@
 - term has no content references: cooling-off-regel
 - term has no content references: corporate-capture
 - term has no content references: cso
-- term has no content references: dao
 - term has no content references: dark-money
 - term has no content references: dc-laden
 - term has no content references: debiasing
@@ -338,6 +337,7 @@
 - term has no content references: mittelspannungsschaltanlage
 - term has no content references: mobilitaetsarmut
 - term has no content references: modellblindheit
+- term has no content references: moderner-patriotismus
 - term has no content references: momentanreserve
 - term has no content references: monetarismus
 - term has no content references: moral-hazard
@@ -359,4 +359,4 @@
 - term has no content references: netzanschlusspunkt
 - term has no content references: netzdienlichkeit
 - term has no content references: netzebene
-- ... 269 weitere Warnungen
+- ... 271 weitere Warnungen
