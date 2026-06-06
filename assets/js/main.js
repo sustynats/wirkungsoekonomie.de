@@ -1248,12 +1248,12 @@ function initGlobalWirkungsradarBridge() {
   const configs = [
     {
       test: () => path === "/" || /\/index\.html$/.test(path),
-      kicker: "Wirkungsradar",
+      kicker: "Öffentlicher Wirkungsraum",
       title: "Öffentliche Aussagen im Folgencheck",
       text:
-        "Nicht jede Debatte scheitert an fehlenden Fakten. Viele scheitern an Narrativen, Frames, psychologischen Triggern und falschen Schlussfolgerungen. Der Wirkungsradar zeigt, was stimmt, was fehlt, welches Narrativ wirkt und welche Antwort Mensch, Planet und Demokratie stärkt.",
+        "Nicht jede Debatte scheitert an fehlenden Fakten. Viele scheitern an Narrativen, Frames, psychologischen Triggern und falschen Schlussfolgerungen. Der Debatten-Kompass zeigt, was stimmt, was fehlt, welches Narrativ wirkt und welche Antwort Mensch, Planet und Demokratie stärkt.",
       ctas: [
-        ["Wirkungsradar öffnen", "wirkungsradar/"],
+        ["Öffentlichen Wirkungsraum öffnen", "oeffentlicher-wirkungsraum/"],
         ["Live-Antworten ansehen", "wirkungsradar/live/"],
         ["Narrative verstehen", "wirkungsradar/narrative/"],
       ],
@@ -1268,8 +1268,8 @@ function initGlobalWirkungsradarBridge() {
       kicker: "Vom Begriff zur Debatte",
       title: "Wie diese Logik in öffentlichen Debatten wirkt.",
       text:
-        "Die Wirkungsökonomie erklärt, wie Wirkung entsteht und bewertet wird. Der Wirkungsradar zeigt diese Logik praktisch: bei Mythen, Narrativen, Stöckchen, Desinformation und falschen Schlussfolgerungen.",
-      ctas: [["Zum Wirkungsradar", "wirkungsradar/"], ["Methode ansehen", "wirkungsradar/methode/"]],
+        "Die Wirkungsökonomie erklärt, wie Wirkung entsteht und bewertet wird. Der Debatten-Kompass zeigt diese Logik praktisch: bei Mythen, Narrativen, Stöckchen, Desinformation und falschen Schlussfolgerungen.",
+      ctas: [["Zum Debatten-Kompass", "wirkungsradar/"], ["Methode ansehen", "wirkungsradar/methode/"]],
       cards: [
         ["Wirkungspfad anwenden", "Vom Satz zum möglichen gesellschaftlichen Wirkungspfad.", "wirkungsradar/methode/"],
         ["Narrative erkennen", "Ohnmacht, Verzögerung, Opferumkehr und Feindbilder einordnen.", "wirkungsradar/narrative/"],
@@ -1281,7 +1281,7 @@ function initGlobalWirkungsradarBridge() {
       kicker: "Typische Narrative in diesem Wirkungsfeld",
       title: "Sachfragen und Debattenframes gemeinsam prüfen.",
       text:
-        "In Wirkungsfeldern entstehen nicht nur Sachfragen, sondern wiederkehrende Narrative. Der Wirkungsradar prüft, welche Aussagen Fakten verkürzen, welche psychologischen Hebel sie nutzen und welche Wirkung sie auf Mensch, Planet und Demokratie haben.",
+        "In Wirkungsfeldern entstehen nicht nur Sachfragen, sondern wiederkehrende Narrative. Der Debatten-Kompass prüft, welche Aussagen Fakten verkürzen, welche psychologischen Hebel sie nutzen und welche Wirkung sie auf Mensch, Planet und Demokratie haben.",
       ctas: [["Alle Narrative ansehen", "wirkungsradar/narrative/"], ["Themencluster öffnen", "wirkungsradar/themen/"]],
       cards: [
         ["Klima & Energie", "2-Prozent-Argument, Windräder, CO₂-Preis und Transformationsframes.", "wirkungsradar/themen/klima-energie/"],
@@ -1292,10 +1292,10 @@ function initGlobalWirkungsradarBridge() {
     {
       test: () => /\/(werkzeuge|tools|methodik|scanner)/.test(normalizedPath),
       kicker: "Methoden & Werkzeuge",
-      title: "Der Wirkungsradar ist Wirkungslogik für öffentliche Kommunikation.",
+      title: "Der Debatten-Kompass ist Wirkungslogik für öffentliche Kommunikation.",
       text:
-        "Als Werkzeug verbindet der Wirkungsradar Faktenlage, Narrativanalyse, psychologischen Wirkungscheck, Wirkungspfad, Folgenanalyse und wirkungsökonomische Antwort.",
-      ctas: [["Wirkungsradar öffnen", "wirkungsradar/"], ["Live-Antworten öffnen", "wirkungsradar/live/"]],
+        "Als Werkzeug verbindet der Debatten-Kompass Faktenlage, Narrativanalyse, psychologischen Wirkungscheck, Wirkungspfad, Folgenanalyse und wirkungsökonomische Antwort.",
+      ctas: [["Debatten-Kompass öffnen", "wirkungsradar/"], ["Live-Antworten öffnen", "wirkungsradar/live/"]],
       cards: [
         ["Folgencheck", "Nicht nur prüfen, ob etwas stimmt, sondern was daraus folgt.", "wirkungsradar/methode/"],
         ["SDG+ in Debatten", "Mensch, Planet und Demokratie als Maßstab für öffentliche Aussagen.", "wirkungsradar/themen/"],
@@ -1305,7 +1305,7 @@ function initGlobalWirkungsradarBridge() {
     {
       test: () => /\/erleben\//.test(normalizedPath),
       kicker: "Interaktive Anwendung",
-      title: "Wirkungsradar-Demo ausprobieren.",
+      title: "Debatten-Kompass-Demo ausprobieren.",
       text:
         "Gib eine Aussage ein und übe, wahren Kern, Denkfehler, Narrativ, psychologische Trigger, Wirkungspfad und bessere Antwort zu trennen. Die Demo ersetzt keine redaktionelle Prüfung.",
       ctas: [["Demo öffnen", "erleben/wirkungsradar-demo/"], ["Methode verstehen", "wirkungsradar/methode/"]],
@@ -1317,11 +1317,11 @@ function initGlobalWirkungsradarBridge() {
     },
     {
       test: () => /\/akademie/.test(normalizedPath),
-      kicker: "Wirkungsradar lernen",
+      kicker: "Debatten-Kompass lernen",
       title: "Fakten prüfen, Narrative erkennen, souverän antworten.",
       text:
         "Der Lernpfad verbindet Faktencheck, Folgencheck, Narrativanalyse, psychologische Trigger, Stöckchen-Erkennung und Live-Antworten für Bürger:innen, Hosts, Creator:innen, Journalismus und politische Bildung.",
-      ctas: [["Lernpfad öffnen", "akademie/wirkungsradar/"], ["Dossier öffnen", "wirkungsradar/detail/"]],
+      ctas: [["Lernpfad öffnen", "akademie/wirkungsradar/"], ["Debattenkarten öffnen", "wirkungsradar/live/"]],
       cards: [
         ["Faktencheck vs. Folgencheck", "Wahrheit und Wirkung gemeinsam lesen.", "akademie/wirkungsradar/"],
         ["Narrative und Frames", "Wiederkehrende Muster öffentlicher Aussagen erkennen.", "wirkungsradar/narrative/"],
@@ -1330,11 +1330,11 @@ function initGlobalWirkungsradarBridge() {
     },
     {
       test: () => /\/(fuer|mitmachen)/.test(normalizedPath),
-      kicker: "Wirkungsradar für Zielgruppen",
+      kicker: "Debatten-Kompass für Zielgruppen",
       title: "Mythen, Narrative und Stöckchen ruhig einordnen.",
       text:
-        "Der Wirkungsradar hilft Bürger:innen, Politik, Unternehmen, Kommunen, Medien, Bildung und Hosts, öffentliche Aussagen faktenbasiert und lösungsorientiert zu beantworten.",
-      ctas: [["Wirkungsradar öffnen", "wirkungsradar/"], ["Live-Antworten nutzen", "wirkungsradar/live/"]],
+        "Der Debatten-Kompass hilft Bürger:innen, Politik, Unternehmen, Kommunen, Medien, Bildung und Hosts, öffentliche Aussagen faktenbasiert und lösungsorientiert zu beantworten.",
+      ctas: [["Debatten-Kompass öffnen", "wirkungsradar/"], ["Live-Antworten nutzen", "wirkungsradar/live/"]],
       cards: [
         ["Für Bürger:innen", "Mythen erkennen und ruhig reagieren.", "wirkungsradar/live/"],
         ["Für Journalismus", "Frames, Trigger und Quellenlage sichtbar machen.", "wirkungsradar/methode/"],
@@ -1343,11 +1343,11 @@ function initGlobalWirkungsradarBridge() {
     },
     {
       test: () => /\/(blog|journal|w-est-g-journal)/.test(normalizedPath),
-      kicker: "Im Wirkungsradar vertiefen",
+      kicker: "Im Debatten-Kompass vertiefen",
       title: "Schnelle Antwort und vertiefende Wirkungsanalyse.",
       text:
-        "Der Wirkungsradar ergänzt Journal-Beiträge um Faktenlage, Narrativanalyse, psychologischen Wirkungscheck, Wirkungspfad und Live-Antworten.",
-      ctas: [["Wirkungsradar öffnen", "wirkungsradar/"], ["Narrative verstehen", "wirkungsradar/narrative/"]],
+        "Der Debatten-Kompass ergänzt Journal-Beiträge um Faktenlage, Narrativanalyse, psychologischen Wirkungscheck, Wirkungspfad und Live-Antworten.",
+      ctas: [["Debatten-Kompass öffnen", "wirkungsradar/"], ["Narrative verstehen", "wirkungsradar/narrative/"]],
       cards: [
         ["Sprache & Narrative", "Warum Fakten allein oft nicht wirken.", "wirkungsradar/narrative/"],
         ["Social Credit?", "Ein typisches Missverständnis im Folgencheck.", "wirkungsradar/live/wirkungsoekonomie-social-credit/"],

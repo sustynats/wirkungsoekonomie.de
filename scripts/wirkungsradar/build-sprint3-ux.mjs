@@ -169,7 +169,7 @@ function card(dossier, { base = "live/", compact = false } = {}) {
     ...(synonymMap[dossier.slug] || []),
   ].join(" ");
   return `<article class="card radar-sprint-card" data-radar-card data-topic="${attr(topicFor(dossier))}" data-status="checked_v2_positive_examples" data-source="${attr(sourceStatus(dossier))}" data-search="${attr(search)}">
-    <div class="radar-card-badges"><span>${esc(topicFor(dossier))}</span><span>${esc(narrativeFor(dossier))}</span><span>geprüft v2</span><span>redaktionell geprüft: ausstehend</span></div>
+    <div class="radar-card-badges"><span>${esc(topicFor(dossier))}</span><span>${esc(narrativeFor(dossier))}</span><span>Website 2.0</span><span>mit Quellenstand</span></div>
     <h3 class="card-title">${esc(dossier.title)}</h3>
     <p class="radar-card-judgement">${esc(dossier.cockpit.shortJudgement)}</p>
     <p class="card-text"><strong>Sag das jetzt:</strong> ${esc(dossier.cockpit.sayThisNow)}</p>
@@ -222,7 +222,7 @@ function homePage() {
     </section>
     ${searchPanel({ placeholder: "E-Autos sind schlimmer, Deutschland nur 2 %, Migration kostet nur..." })}
     ${radarNav("./")}
-    <section class="section" id="schnell-antworten"><div><div class="section-header"><p class="hero-kicker">Schnell antworten</p><h2>Geprüfte Debattenkarten.</h2><p>Kompakt für Kommentare, Livestreams, Panels, Unterricht und Redaktion. Keine Abstracts, keine Textwand.</p></div><div class="card-grid three">${cards.map((dossier) => card(dossier, { base: "live/", compact: true })).join("")}</div></div></section>
+    <section class="section" id="schnell-antworten"><div><div class="section-header"><p class="hero-kicker">Schnell antworten</p><h2>Debattenkarten mit Quellenstand.</h2><p>Kompakt für Kommentare, Livestreams, Panels, Unterricht und Redaktion. Keine Abstracts, keine Textwand.</p></div><div class="card-grid three">${cards.map((dossier) => card(dossier, { base: "live/", compact: true })).join("")}</div></div></section>
     <section class="section section-soft" id="mythen-narrative"><div><div class="section-header"><p class="hero-kicker">Mythen & Narrative verstehen</p><h2>Warum mehr als Faktencheck?</h2><p>Ein Faktencheck fragt, ob eine Aussage stimmt. Der Debatten-Kompass fragt zusätzlich, was die Aussage bewirkt: welche Gefühle sie aktiviert, was sie ausblendet, welche Folgen sie hat und welche Lösung den Zustand verbessert.</p></div><div class="card-grid six">${["Fakt", "Frame", "Psychologie", "Folgen", "Systemwirkung", "Lösung"].map((title) => `<article class="card"><p class="card-kicker">${esc(title)}</p><p class="card-text">${esc(methodLine(title))}</p></article>`).join("")}</div><p><a class="btn btn-primary" href="methode/">Wirkungsradar-Methode verstehen</a></p></div></section>
   `;
   return shell({ title: "Debatten-Kompass - Mythen erkennen, Fakten klären, besser antworten", description: "Schnelle Antwort, Faktenlage, Folgencheck, Frame-Shift und Quellen zu öffentlichen Aussagen, Mythen und Narrativen.", canonical: "https://wirkungsoekonomie.de/wirkungsradar/", base: "../", main, extraHead });

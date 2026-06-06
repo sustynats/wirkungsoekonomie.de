@@ -1,19 +1,19 @@
 {
   "version": "20260606-nav-cache-fix",
-  "generatedAt": "2026-06-06T09:14:38.008Z",
+  "generatedAt": "2026-06-06T11:58:00.672Z",
   "rule": "Eine Aussage = eine kanonische Seite. Debattenseiten folgen dem DebateCompassPageTemplate.",
   "counts": {
     "totalRadarPages": 583,
-    "debatePages": 90,
+    "debatePages": 85,
     "A": 0,
     "B": 0,
-    "C": 90,
+    "C": 85,
     "D": 0,
-    "canonicalNarratives": 91,
-    "duplicates": 352,
-    "merged": 110,
-    "synonyms": 36,
-    "redirects": 110
+    "canonicalNarratives": 86,
+    "duplicates": 392,
+    "merged": 115,
+    "synonyms": 46,
+    "redirects": 115
   },
   "normalizedGeneralPages": 41,
   "inventory": [
@@ -63,7 +63,7 @@
       "slug": "altparteien",
       "tags": [],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/altparteien/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/detail/altparteiendiktatur/",
@@ -71,7 +71,7 @@
       "slug": "altparteiendiktatur",
       "tags": [],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/altparteiendiktatur/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/detail/angst-vor-afd-wahlsieg/",
@@ -199,7 +199,7 @@
       "slug": "die-boesen-reichen",
       "tags": [],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/die-boesen-reichen/"
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
     {
       "url": "/wirkungsradar/detail/die-da-oben/",
@@ -495,7 +495,7 @@
       "slug": "leistungstraeger-werden-ausgepresst",
       "tags": [],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
     {
       "url": "/wirkungsradar/detail/mainstreammedien-luegen-alle/",
@@ -647,7 +647,7 @@
       "slug": "remigration",
       "tags": [],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/remigration/"
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
     },
     {
       "url": "/wirkungsradar/detail/remigration-remigrationslotsen/",
@@ -1235,19 +1235,19 @@
     },
     {
       "url": "/wirkungsradar/live/altparteien/",
-      "title": "Altparteien?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "altparteien",
       "tags": [],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/altparteien/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/live/altparteiendiktatur/",
-      "title": "Diktatur der Altparteien?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "altparteiendiktatur",
       "tags": [],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/altparteiendiktatur/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/live/angst-vor-afd-wahlsieg/",
@@ -1386,11 +1386,11 @@
     },
     {
       "url": "/wirkungsradar/live/die-boesen-reichen/",
-      "title": "Sind die Reichen schuld?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "die-boesen-reichen",
       "tags": [],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/die-boesen-reichen/"
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
     {
       "url": "/wirkungsradar/live/die-da-oben/",
@@ -1692,11 +1692,11 @@
     },
     {
       "url": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
-      "title": "Werden Leistungsträger ausgepresst?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "leistungstraeger-werden-ausgepresst",
       "tags": [],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
     {
       "url": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
@@ -1844,11 +1844,11 @@
     },
     {
       "url": "/wirkungsradar/live/remigration/",
-      "title": "Remigration / Remigrationslotsen?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "remigration",
       "tags": [],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/remigration/"
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
     },
     {
       "url": "/wirkungsradar/live/remigration-remigrationslotsen/",
@@ -4745,48 +4745,6 @@
       "quality": "C"
     },
     {
-      "url": "/wirkungsradar/live/altparteien/",
-      "title": "Altparteien?",
-      "slug": "altparteien",
-      "tags": [],
-      "canonicalTarget": "/wirkungsradar/live/altparteien/",
-      "template": "DebateCompassPageTemplate",
-      "duplicatesRemoved": true,
-      "folgencheck": true,
-      "wirkpfad": true,
-      "answerBlock": true,
-      "facts": true,
-      "sources": false,
-      "anchors": false,
-      "community": true,
-      "hasExternalSources": true,
-      "hasFallbackSources": false,
-      "hasMpd": true,
-      "hasThreeOrders": true,
-      "quality": "C"
-    },
-    {
-      "url": "/wirkungsradar/live/altparteiendiktatur/",
-      "title": "Diktatur der Altparteien?",
-      "slug": "altparteiendiktatur",
-      "tags": [],
-      "canonicalTarget": "/wirkungsradar/live/altparteiendiktatur/",
-      "template": "DebateCompassPageTemplate",
-      "duplicatesRemoved": true,
-      "folgencheck": true,
-      "wirkpfad": true,
-      "answerBlock": true,
-      "facts": true,
-      "sources": false,
-      "anchors": false,
-      "community": true,
-      "hasExternalSources": true,
-      "hasFallbackSources": false,
-      "hasMpd": true,
-      "hasThreeOrders": true,
-      "quality": "C"
-    },
-    {
       "url": "/wirkungsradar/live/angst-vor-afd-wahlsieg/",
       "title": "Angst vor AfD-Wahlsieg?",
       "slug": "angst-vor-afd-wahlsieg",
@@ -5101,27 +5059,6 @@
       "slug": "die-bauern-werden-geopfert",
       "tags": [],
       "canonicalTarget": "/wirkungsradar/live/die-bauern-werden-geopfert/",
-      "template": "DebateCompassPageTemplate",
-      "duplicatesRemoved": true,
-      "folgencheck": true,
-      "wirkpfad": true,
-      "answerBlock": true,
-      "facts": true,
-      "sources": false,
-      "anchors": false,
-      "community": true,
-      "hasExternalSources": true,
-      "hasFallbackSources": false,
-      "hasMpd": true,
-      "hasThreeOrders": true,
-      "quality": "C"
-    },
-    {
-      "url": "/wirkungsradar/live/die-boesen-reichen/",
-      "title": "Sind die Reichen schuld?",
-      "slug": "die-boesen-reichen",
-      "tags": [],
-      "canonicalTarget": "/wirkungsradar/live/die-boesen-reichen/",
       "template": "DebateCompassPageTemplate",
       "duplicatesRemoved": true,
       "folgencheck": true,
@@ -5820,27 +5757,6 @@
       "quality": "C"
     },
     {
-      "url": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
-      "title": "Werden Leistungsträger ausgepresst?",
-      "slug": "leistungstraeger-werden-ausgepresst",
-      "tags": [],
-      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
-      "template": "DebateCompassPageTemplate",
-      "duplicatesRemoved": true,
-      "folgencheck": true,
-      "wirkpfad": true,
-      "answerBlock": true,
-      "facts": true,
-      "sources": false,
-      "anchors": false,
-      "community": true,
-      "hasExternalSources": true,
-      "hasFallbackSources": false,
-      "hasMpd": true,
-      "hasThreeOrders": true,
-      "quality": "C"
-    },
-    {
       "url": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
       "title": "Mainstreammedien lügen alle?",
       "slug": "mainstreammedien-luegen-alle",
@@ -6140,27 +6056,6 @@
       "slug": "radwege-in-peru",
       "tags": [],
       "canonicalTarget": "/wirkungsradar/live/radwege-in-peru/",
-      "template": "DebateCompassPageTemplate",
-      "duplicatesRemoved": true,
-      "folgencheck": true,
-      "wirkpfad": true,
-      "answerBlock": true,
-      "facts": true,
-      "sources": false,
-      "anchors": false,
-      "community": true,
-      "hasExternalSources": true,
-      "hasFallbackSources": false,
-      "hasMpd": true,
-      "hasThreeOrders": true,
-      "quality": "C"
-    },
-    {
-      "url": "/wirkungsradar/live/remigration/",
-      "title": "Remigration / Remigrationslotsen?",
-      "slug": "remigration",
-      "tags": [],
-      "canonicalTarget": "/wirkungsradar/live/remigration/",
       "template": "DebateCompassPageTemplate",
       "duplicatesRemoved": true,
       "folgencheck": true,
@@ -6665,24 +6560,6 @@
       "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
     },
     {
-      "url": "/wirkungsradar/live/altparteien/",
-      "quality": "C",
-      "missingSources": false,
-      "missingOrders": false,
-      "missingMPD": false,
-      "missingCriticalQuestions": false,
-      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
-    },
-    {
-      "url": "/wirkungsradar/live/altparteiendiktatur/",
-      "quality": "C",
-      "missingSources": false,
-      "missingOrders": false,
-      "missingMPD": false,
-      "missingCriticalQuestions": false,
-      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
-    },
-    {
       "url": "/wirkungsradar/live/angst-vor-afd-wahlsieg/",
       "quality": "C",
       "missingSources": false,
@@ -6810,15 +6687,6 @@
     },
     {
       "url": "/wirkungsradar/live/die-bauern-werden-geopfert/",
-      "quality": "C",
-      "missingSources": false,
-      "missingOrders": false,
-      "missingMPD": false,
-      "missingCriticalQuestions": false,
-      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
-    },
-    {
-      "url": "/wirkungsradar/live/die-boesen-reichen/",
       "quality": "C",
       "missingSources": false,
       "missingOrders": false,
@@ -7115,15 +6983,6 @@
       "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
     },
     {
-      "url": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
-      "quality": "C",
-      "missingSources": false,
-      "missingOrders": false,
-      "missingMPD": false,
-      "missingCriticalQuestions": false,
-      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
-    },
-    {
       "url": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
       "quality": "C",
       "missingSources": false,
@@ -7251,15 +7110,6 @@
     },
     {
       "url": "/wirkungsradar/live/radwege-in-peru/",
-      "quality": "C",
-      "missingSources": false,
-      "missingOrders": false,
-      "missingMPD": false,
-      "missingCriticalQuestions": false,
-      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
-    },
-    {
-      "url": "/wirkungsradar/live/remigration/",
       "quality": "C",
       "missingSources": false,
       "missingOrders": false,

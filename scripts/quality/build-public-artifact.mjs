@@ -171,11 +171,36 @@ function copyReferencedPublicFiles() {
   if (copied) console.log(`Copied ${copied} referenced public support files.`);
 }
 
+function sanitizePublicDataString(value) {
+  return String(value || "")
+    .replace(/https?:\/\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
+    .replace(/\/(?:assets|downloads|docs|content|public)\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
+    .replace(/\b[\wÄÖÜäöüß.+() -]+\.(?:md|docx?|rtf)\b/giu, "")
+    .replace(/\b(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|partially-delta-reviewed)\b/gi, "")
+    .replace(/technischer Volltextimport|Abschnitts- und Absatz-IDs sind vorbereitet/gi, "")
+    .replace(/Originaldatei\s*:/gi, "Ausgangsdokument:")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+function sanitizePublicJsonValue(value) {
+  if (typeof value === "string") return sanitizePublicDataString(value);
+  if (Array.isArray(value)) return value.map(sanitizePublicJsonValue);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, sanitizePublicJsonValue(item)]),
+    );
+  }
+  return value;
+}
+
 function normalizePublicArtifactLinksAndText() {
   const textExtensions = new Set([
     ".csv",
     ".html",
     ".htm",
+    ".js",
+    ".json",
     ".md",
     ".txt",
     ".xml",
@@ -183,7 +208,8 @@ function normalizePublicArtifactLinksAndText() {
   let changed = 0;
 
   for (const file of walkFiles(artifactDir)) {
-    if (!textExtensions.has(path.extname(file).toLowerCase())) continue;
+    const ext = path.extname(file).toLowerCase();
+    if (!textExtensions.has(ext)) continue;
     let content = fs.readFileSync(file, "utf8");
     const before = content;
     const relative = toPosixRelative(file);
@@ -199,6 +225,33 @@ function normalizePublicArtifactLinksAndText() {
         "docs/go2-produktionsreihenfolge/source/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
         "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
       );
+
+    if (ext === ".json") {
+      try {
+        content = `${JSON.stringify(sanitizePublicJsonValue(JSON.parse(content)), null, 2)}\n`;
+      } catch {
+        content = sanitizePublicDataString(content);
+      }
+      if (content !== before) {
+        fs.writeFileSync(file, content, "utf8");
+        changed += 1;
+      }
+      continue;
+    }
+
+    if (ext === ".js") {
+      content = content
+        .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?:[^"']*)?)\1/gi, (match, quote, value) => {
+          if (!/(?:^|\/|\\)(?:assets|downloads|docs|public|content|src|rang\d+|woek_|WOeK_|WÖk_|README|[0-9]{2}_)/.test(value)) return match;
+          return `${quote}${quote}`;
+        })
+        .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2/gi, "$1: \"\"");
+      if (content !== before) {
+        fs.writeFileSync(file, content, "utf8");
+        changed += 1;
+      }
+      continue;
+    }
 
     content = content
       .replace(/<section class="meta-box">\s*<h2>Metadaten<\/h2>[\s\S]*?<\/section>/gi, "")
@@ -216,8 +269,14 @@ function normalizePublicArtifactLinksAndText() {
         return `${quote}${quote}`;
       })
       .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2/gi, "$1: \"\"")
-      .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?:[^"]*)?"/gi, '"$1": ""')
-      .replace(/[\p{L}\p{N}_ .+()/-]+\.(?:md|docx?|rtf)/giu, "Arbeitsdatei entfernt");
+      .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?:[^"]*)?"/gi, '"$1": ""');
+
+    if (ext !== ".js") {
+      content = content.replace(/(?:^|[\s"'>(])[\p{L}\p{N}_ .+()/-]+\.(?:md|docx?|rtf)/giu, (match) => {
+        const prefix = /^[\s"'>(]/u.test(match) ? match[0] : "";
+        return `${prefix}Arbeitsdatei entfernt`;
+      });
+    }
 
     if (/^portale\/migration-vielfalt\/[^/]+\/index\.html$/.test(relative)) {
       content = content.replaceAll(

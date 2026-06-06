@@ -1,28 +1,26 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-06T09:14:38.008Z
+Stand: 2026-06-06T11:58:00.672Z
 
 | Kennzahl | Wert |
 |---|---:|
 | Wirkungsradar-Seiten gesamt | 583 |
-| Debattenseiten vereinheitlicht | 90 |
+| Debattenseiten vereinheitlicht | 85 |
 | Qualitätsstufe A | 0 |
 | Qualitätsstufe B | 0 |
-| Qualitätsstufe C | 90 |
+| Qualitätsstufe C | 85 |
 | Qualitätsstufe D | 0 |
-| Kanonische Narrative | 91 |
-| Dubletten / Kandidaten | 352 |
-| Zusammengeführt | 110 |
-| Synonyme | 36 |
-| Redirects | 110 |
+| Kanonische Narrative | 86 |
+| Dubletten / Kandidaten | 392 |
+| Zusammengeführt | 115 |
+| Synonyme | 46 |
+| Redirects | 115 |
 
 ## Seitenprüfung
 
 | URL | Qualität | Folgencheck | Wirkpfad | Antwort | Faktenlage | Quellen | Community |
 |---|---|---|---|---|---|---|---|
 | /wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/ | C | ja | ja | ja | ja | nein | ja |
-| /wirkungsradar/live/altparteien/ | C | ja | ja | ja | ja | nein | ja |
-| /wirkungsradar/live/altparteiendiktatur/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/angst-vor-afd-wahlsieg/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/auslaender-pluendern-sozialstaat/ | C | ja | ja | ja | ja | nein | ja |
@@ -38,7 +36,6 @@ Stand: 2026-06-06T09:14:38.008Z
 | /wirkungsradar/live/deutschland-nur-zwei-prozent/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/deutschland-schafft-sich-ab/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/die-bauern-werden-geopfert/ | C | ja | ja | ja | ja | nein | ja |
-| /wirkungsradar/live/die-boesen-reichen/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/die-da-oben/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/die-wissenschaft-ist-gekauft/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/diktatur-der-altparteien/ | C | ja | ja | ja | ja | nein | ja |
@@ -71,7 +68,6 @@ Stand: 2026-06-06T09:14:38.008Z
 | /wirkungsradar/live/kultur-gender-luxusprojekte/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/laden-dauert-viel-zu-lange/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/leistungstraeger-ausgepresst/ | C | ja | ja | ja | ja | nein | ja |
-| /wirkungsradar/live/leistungstraeger-werden-ausgepresst/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/mainstreammedien-luegen-alle/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/man-wird-doch-wohl-fragen-duerfen/ | C | ja | ja | ja | ja | nein | ja |
@@ -87,7 +83,6 @@ Stand: 2026-06-06T09:14:38.008Z
 | /wirkungsradar/live/praevention-ist-zu-teuer/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/queere-sichtbarkeit-bedroht-kinder/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/radwege-in-peru/ | C | ja | ja | ja | ja | nein | ja |
-| /wirkungsradar/live/remigration/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/remigration-remigrationslotsen/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/rente-unbezahlbar/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/resilienz-ist-autarkie/ | C | ja | ja | ja | ja | nein | ja |

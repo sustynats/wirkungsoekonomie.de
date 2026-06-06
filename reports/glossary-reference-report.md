@@ -1,7 +1,7 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-06T09:13:25.369Z
-- Content pages scanned: 1010
+- Generated: 2026-06-06T11:56:48.060Z
+- Content pages scanned: 1009
 - Glossary terms indexed: 1341
 - Warnings: 566
 

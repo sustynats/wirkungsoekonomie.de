@@ -1,14 +1,14 @@
 {
   "version": "20260604-radar-canonical-p0",
-  "generatedAt": "2026-06-06T09:14:37.685Z",
+  "generatedAt": "2026-06-06T11:58:00.353Z",
   "counts": {
     "radarPages": 583,
     "claimPages": 202,
-    "canonicalNarratives": 91,
-    "duplicates": 352,
-    "merged": 110,
-    "synonyms": 36,
-    "redirects": 110
+    "canonicalNarratives": 86,
+    "duplicates": 392,
+    "merged": 115,
+    "synonyms": 46,
+    "redirects": 115
   },
   "inventory": [
     {
@@ -46,8 +46,8 @@
         "Direkt zur passenden Antwort",
         "Migration",
         "Sündenbock-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Klima",
         "Ohnmachts-Frame",
         "Energie",
@@ -105,9 +105,13 @@
         "Quelle, Zeitraum, Zahlenbasis, Gegenposition und Bilanzgrenze.",
         "Quellen belegen einzelne Prüfpunkte; sie ersetzen nicht die Wirkungsabwägung."
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Altparteien",
+        "Altparteiendiktatur",
+        "Diktatur der Altparteien"
+      ],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/altparteien/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/detail/altparteiendiktatur/",
@@ -125,9 +129,13 @@
         "Quelle, Zeitraum, Zahlenbasis, Gegenposition und Bilanzgrenze.",
         "Quellen belegen einzelne Prüfpunkte; sie ersetzen nicht die Wirkungsabwägung."
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Altparteien",
+        "Altparteiendiktatur",
+        "Diktatur der Altparteien"
+      ],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/altparteiendiktatur/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/detail/angst-vor-afd-wahlsieg/",
@@ -255,7 +263,7 @@
     },
     {
       "url": "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
-      "title": "Bürokratieabbau statt Wirkung?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "buerokratieabbau-statt-wirkung",
       "tags": [],
       "synonyms": [],
@@ -392,7 +400,7 @@
     },
     {
       "url": "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
-      "title": "Deutschland schafft sich ab?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "deutschland-schafft-sich-ab",
       "tags": [],
       "synonyms": [],
@@ -430,9 +438,13 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Die bösen Reichen",
+        "Reiche sind schuld",
+        "Vermögende als Schuldige"
+      ],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/die-boesen-reichen/"
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
     {
       "url": "/wirkungsradar/detail/die-da-oben/",
@@ -478,10 +490,14 @@
     },
     {
       "url": "/wirkungsradar/detail/diktatur-der-altparteien/",
-      "title": "Diktatur der Altparteien?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "diktatur-der-altparteien",
       "tags": [],
-      "synonyms": [],
+      "synonyms": [
+        "Altparteien",
+        "Altparteiendiktatur",
+        "Diktatur der Altparteien"
+      ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
@@ -1083,7 +1099,7 @@
     },
     {
       "url": "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
-      "title": "Klimaschutz ist zu teuer?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "klimaschutz-ist-zu-teuer",
       "tags": [],
       "synonyms": [],
@@ -1152,10 +1168,13 @@
     },
     {
       "url": "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
-      "title": "Werden Leistungsträger ausgepresst?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "leistungstraeger-ausgepresst",
       "tags": [],
-      "synonyms": [],
+      "synonyms": [
+        "Leistungsträger werden ausgepresst",
+        "Leistungsträger ausgepresst"
+      ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
@@ -1169,9 +1188,12 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Leistungsträger werden ausgepresst",
+        "Leistungsträger ausgepresst"
+      ],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
     {
       "url": "/wirkungsradar/detail/mainstreammedien-luegen-alle/",
@@ -1574,16 +1596,22 @@
         "Quelle, Zeitraum, Zahlenbasis, Gegenposition und Bilanzgrenze.",
         "Quellen belegen einzelne Prüfpunkte; sie ersetzen nicht die Wirkungsabwägung."
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Remigration",
+        "Remigrationslotsen"
+      ],
       "category": "detail",
-      "canonicalTarget": "/wirkungsradar/live/remigration/"
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
     },
     {
       "url": "/wirkungsradar/detail/remigration-remigrationslotsen/",
-      "title": "Remigration / Remigrationslotsen?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "remigration-remigrationslotsen",
       "tags": [],
-      "synonyms": [],
+      "synonyms": [
+        "Remigration",
+        "Remigrationslotsen"
+      ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
     },
@@ -1690,16 +1718,20 @@
     },
     {
       "url": "/wirkungsradar/detail/sind-die-reichen-schuld/",
-      "title": "Sind die Reichen schuld?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "sind-die-reichen-schuld",
       "tags": [],
-      "synonyms": [],
+      "synonyms": [
+        "Die bösen Reichen",
+        "Reiche sind schuld",
+        "Vermögende als Schuldige"
+      ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
     {
       "url": "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
-      "title": "Solarstrom ist unzuverlässig?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "solarstrom-ist-unzuverlaessig",
       "tags": [],
       "synonyms": [],
@@ -1774,7 +1806,7 @@
     },
     {
       "url": "/wirkungsradar/detail/tempolimit-bringt-nichts/",
-      "title": "Tempolimit bringt nichts?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "tempolimit-bringt-nichts",
       "tags": [],
       "synonyms": [],
@@ -1803,7 +1835,7 @@
     },
     {
       "url": "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/",
-      "title": "Verbrennerverbot nimmt Freiheit?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "verbrennerverbot-nimmt-freiheit",
       "tags": [],
       "synonyms": [],
@@ -1858,7 +1890,7 @@
     },
     {
       "url": "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/",
-      "title": "Wärmepumpe ist unbezahlbar?",
+      "title": "Diese Aussage wurde zusammengeführt",
       "slug": "waermepumpe-ist-unbezahlbar",
       "tags": [],
       "synonyms": [],
@@ -2478,8 +2510,8 @@
         "Welche Aussage willst du beantworten?",
         "Migration",
         "Sündenbock-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Klima",
         "Ohnmachts-Frame",
         "Energie",
@@ -2538,9 +2570,13 @@
         "Freund-Feind-Logik",
         "pauschale Schuldzuweisung"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Altparteien",
+        "Altparteiendiktatur",
+        "Diktatur der Altparteien"
+      ],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/altparteien/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/live/altparteiendiktatur/",
@@ -2560,9 +2596,13 @@
         "Ausnahmezustandsframe",
         "Herrschaftsframe"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Altparteien",
+        "Altparteiendiktatur",
+        "Diktatur der Altparteien"
+      ],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/altparteiendiktatur/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "url": "/wirkungsradar/live/angst-vor-afd-wahlsieg/",
@@ -2873,9 +2913,13 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Die bösen Reichen",
+        "Reiche sind schuld",
+        "Vermögende als Schuldige"
+      ],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/die-boesen-reichen/"
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
     {
       "url": "/wirkungsradar/live/die-da-oben/",
@@ -2928,7 +2972,11 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Altparteien",
+        "Altparteiendiktatur",
+        "Diktatur der Altparteien"
+      ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
@@ -3267,8 +3315,8 @@
         "Direkt zur passenden Antwort",
         "Migration",
         "Sündenbock-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Klima",
         "Ohnmachts-Frame",
         "Energie",
@@ -3599,7 +3647,10 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Leistungsträger werden ausgepresst",
+        "Leistungsträger ausgepresst"
+      ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
@@ -3617,9 +3668,12 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Leistungsträger werden ausgepresst",
+        "Leistungsträger ausgepresst"
+      ],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
     },
     {
       "url": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
@@ -4008,9 +4062,12 @@
         "Ausschlussnormalisierung",
         "Verwaltungsästhetik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Remigration",
+        "Remigrationslotsen"
+      ],
       "category": "live",
-      "canonicalTarget": "/wirkungsradar/live/remigration/"
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
     },
     {
       "url": "/wirkungsradar/live/remigration-remigrationslotsen/",
@@ -4028,7 +4085,10 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Remigration",
+        "Remigrationslotsen"
+      ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
     },
@@ -4153,7 +4213,11 @@
         "Warum zieht dieses Narrativ?",
         "Ergänzende Mechanik"
       ],
-      "synonyms": [],
+      "synonyms": [
+        "Die bösen Reichen",
+        "Reiche sind schuld",
+        "Vermögende als Schuldige"
+      ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
@@ -4785,8 +4849,8 @@
         "Entlastung",
         "Migration",
         "Sündenbock-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Sozialstaat"
       ],
       "synonyms": [],
@@ -5013,8 +5077,8 @@
         "Verantwortungsdiffusion",
         "Klima",
         "Ohnmachts-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Staat & Schulden"
       ],
       "synonyms": [],
@@ -5031,8 +5095,8 @@
         "Wut",
         "Klima",
         "Spezialfall-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Ausland & Sicherheit",
         "Geld-weg-Frame"
       ],
@@ -5050,8 +5114,8 @@
         "Diktaturframe",
         "Klima",
         "Spezialfall-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend"
+        "Website 2.0",
+        "mit Quellenstand"
       ],
       "synonyms": [],
       "category": "narrative",
@@ -5318,8 +5382,8 @@
         "Scheinbeweis",
         "Energie",
         "Spezialfall-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Aufschub-Frame"
       ],
       "synonyms": [],
@@ -5525,8 +5589,8 @@
         "Aufschub",
         "Energie",
         "Aufschub-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend"
+        "Website 2.0",
+        "mit Quellenstand"
       ],
       "synonyms": [],
       "category": "narrative",
@@ -5542,8 +5606,8 @@
         "Verlustaversion",
         "Energie",
         "Aufschub-Frame",
-        "geprüft v2",
-        "redaktionell geprüft: ausstehend",
+        "Website 2.0",
+        "mit Quellenstand",
         "Klima",
         "Spezialfall-Frame"
       ],
@@ -8277,17 +8341,16 @@
         "/wirkungsradar/detail/altparteien/",
         "/wirkungsradar/live/altparteien/"
       ],
-      "canonicalTarget": "/wirkungsradar/live/altparteien/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "type": "exakte Dublette",
       "urls": [
         "/wirkungsradar/detail/altparteiendiktatur/",
-        "/wirkungsradar/detail/diktatur-der-altparteien/",
         "/wirkungsradar/live/altparteiendiktatur/",
         "/wirkungsradar/live/diktatur-der-altparteien/"
       ],
-      "canonicalTarget": "/wirkungsradar/live/altparteiendiktatur/"
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
     },
     {
       "type": "exakte Dublette",
@@ -8346,7 +8409,17 @@
       "type": "exakte Dublette",
       "urls": [
         "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
-        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/"
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
+        "/wirkungsradar/detail/remigration-remigrationslotsen/",
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/",
+        "/wirkungsradar/detail/sind-die-reichen-schuld/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/",
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
       ],
       "canonicalTarget": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/"
     },
@@ -8393,14 +8466,6 @@
     {
       "type": "exakte Dublette",
       "urls": [
-        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
-        "/wirkungsradar/live/deutschland-schafft-sich-ab/"
-      ],
-      "canonicalTarget": "/wirkungsradar/live/deutschland-schafft-sich-ab/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
         "/wirkungsradar/detail/die-bauern-werden-geopfert/",
         "/wirkungsradar/live/die-bauern-werden-geopfert/"
       ],
@@ -8410,11 +8475,10 @@
       "type": "exakte Dublette",
       "urls": [
         "/wirkungsradar/detail/die-boesen-reichen/",
-        "/wirkungsradar/detail/sind-die-reichen-schuld/",
         "/wirkungsradar/live/die-boesen-reichen/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
       ],
-      "canonicalTarget": "/wirkungsradar/live/die-boesen-reichen/"
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
     {
       "type": "exakte Dublette",
@@ -8634,14 +8698,6 @@
     {
       "type": "exakte Dublette",
       "urls": [
-        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
-        "/wirkungsradar/live/klimaschutz-ist-zu-teuer/"
-      ],
-      "canonicalTarget": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
         "/wirkungsradar/detail/kriminalitaet-und-migration/",
         "/wirkungsradar/live/kriminalitaet-und-migration/"
       ],
@@ -8666,7 +8722,6 @@
     {
       "type": "exakte Dublette",
       "urls": [
-        "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
         "/wirkungsradar/detail/leistungstraeger-werden-ausgepresst/",
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
@@ -8824,11 +8879,10 @@
       "type": "exakte Dublette",
       "urls": [
         "/wirkungsradar/detail/remigration/",
-        "/wirkungsradar/detail/remigration-remigrationslotsen/",
         "/wirkungsradar/live/remigration/",
         "/wirkungsradar/live/remigration-remigrationslotsen/"
       ],
-      "canonicalTarget": "/wirkungsradar/live/remigration/"
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
     },
     {
       "type": "exakte Dublette",
@@ -8866,14 +8920,6 @@
     {
       "type": "exakte Dublette",
       "urls": [
-        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
-        "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
-      ],
-      "canonicalTarget": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
         "/wirkungsradar/detail/sozialschmarotzer-frame/",
         "/wirkungsradar/live/sozialschmarotzer-frame/"
       ],
@@ -8898,14 +8944,6 @@
     {
       "type": "exakte Dublette",
       "urls": [
-        "/wirkungsradar/detail/tempolimit-bringt-nichts/",
-        "/wirkungsradar/live/tempolimit-bringt-nichts/"
-      ],
-      "canonicalTarget": "/wirkungsradar/live/tempolimit-bringt-nichts/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
         "/wirkungsradar/detail/ukraine-unterstuetzung-steuergeld/",
         "/wirkungsradar/embed/card/ukraine-unterstuetzung-steuergeld/",
         "/wirkungsradar/embed/host/ukraine-unterstuetzung-steuergeld/",
@@ -8917,28 +8955,12 @@
     {
       "type": "exakte Dublette",
       "urls": [
-        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/",
-        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
-      ],
-      "canonicalTarget": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
         "/wirkungsradar/detail/verfassungsschutz-oder-regierungsschutz/",
         "/wirkungsradar/detail/verfassungsschutz-regierungsschutz/",
         "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
         "/wirkungsradar/live/verfassungsschutz-regierungsschutz/"
       ],
       "canonicalTarget": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
-        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/",
-        "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
-      ],
-      "canonicalTarget": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
     },
     {
       "type": "exakte Dublette",
@@ -9503,6 +9525,16 @@
     },
     {
       "type": "Synonym-Dublette",
+      "from": "/wirkungsradar/live/altparteien/",
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
+    },
+    {
+      "type": "Synonym-Dublette",
+      "from": "/wirkungsradar/live/altparteiendiktatur/",
+      "canonicalTarget": "/wirkungsradar/live/diktatur-der-altparteien/"
+    },
+    {
+      "type": "Synonym-Dublette",
       "from": "/wirkungsradar/live/sdgs-weltregierung/",
       "canonicalTarget": "/wirkungsradar/live/sdgs-sind-weltregierung/"
     },
@@ -9528,6 +9560,21 @@
     },
     {
       "type": "Synonym-Dublette",
+      "from": "/wirkungsradar/live/die-boesen-reichen/",
+      "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
+    },
+    {
+      "type": "Synonym-Dublette",
+      "from": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
+      "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
+    },
+    {
+      "type": "Synonym-Dublette",
+      "from": "/wirkungsradar/live/remigration/",
+      "canonicalTarget": "/wirkungsradar/live/remigration-remigrationslotsen/"
+    },
+    {
+      "type": "Synonym-Dublette",
       "from": "/wirkungsradar/live/sozialtourismus-frame/",
       "canonicalTarget": "/wirkungsradar/live/migration-kostet-nur/"
     },
@@ -9547,39 +9594,135 @@
       "canonicalTarget": "/wirkungsradar/live/kernenergie-wieder-in-deutschland/"
     },
     {
-      "type": "Struktur-Dublette",
-      "score": 0.802,
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
       "urls": [
-        "/wirkungsradar/detail/altparteien/",
-        "/wirkungsradar/detail/altparteiendiktatur/"
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/"
       ],
       "titles": [
-        "Altparteien?",
-        "Diktatur der Altparteien?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
       "type": "wahrscheinliche Dublette",
       "score": 1,
       "urls": [
-        "/wirkungsradar/detail/altparteiendiktatur/",
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/detail/diktatur-der-altparteien/"
       ],
       "titles": [
-        "Diktatur der Altparteien?",
-        "Diktatur der Altparteien?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
       "type": "wahrscheinliche Dublette",
       "score": 1,
       "urls": [
-        "/wirkungsradar/detail/altparteiendiktatur/",
-        "/wirkungsradar/live/diktatur-der-altparteien/"
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/"
       ],
       "titles": [
-        "Diktatur der Altparteien?",
-        "Diktatur der Altparteien?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/remigration-remigrationslotsen/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -9838,24 +9981,120 @@
       "type": "wahrscheinliche Dublette",
       "score": 1,
       "urls": [
-        "/wirkungsradar/detail/die-boesen-reichen/",
-        "/wirkungsradar/detail/sind-die-reichen-schuld/"
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/diktatur-der-altparteien/"
       ],
       "titles": [
-        "Sind die Reichen schuld?",
-        "Sind die Reichen schuld?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
       "type": "wahrscheinliche Dublette",
       "score": 1,
       "urls": [
-        "/wirkungsradar/detail/die-boesen-reichen/",
-        "/wirkungsradar/live/sind-die-reichen-schuld/"
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/"
       ],
       "titles": [
-        "Sind die Reichen schuld?",
-        "Sind die Reichen schuld?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/remigration-remigrationslotsen/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -9919,27 +10158,15 @@
       ]
     },
     {
-      "type": "Struktur-Dublette",
-      "score": 0.809,
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
       "urls": [
         "/wirkungsradar/detail/diktatur-der-altparteien/",
         "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/"
       ],
       "titles": [
-        "Diktatur der Altparteien?",
-        "Klimaschutz ist zu teuer?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.811,
-      "urls": [
-        "/wirkungsradar/detail/diktatur-der-altparteien/",
-        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
-      ],
-      "titles": [
-        "Diktatur der Altparteien?",
-        "Verbrennerverbot nimmt Freiheit?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -9947,11 +10174,95 @@
       "score": 1,
       "urls": [
         "/wirkungsradar/detail/diktatur-der-altparteien/",
-        "/wirkungsradar/live/altparteiendiktatur/"
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/"
       ],
       "titles": [
-        "Diktatur der Altparteien?",
-        "Diktatur der Altparteien?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/remigration-remigrationslotsen/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/diktatur-der-altparteien/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -10039,27 +10350,99 @@
       ]
     },
     {
-      "type": "Struktur-Dublette",
-      "score": 0.802,
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+        "/wirkungsradar/detail/remigration-remigrationslotsen/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+        "/wirkungsradar/detail/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
       "urls": [
         "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
         "/wirkungsradar/detail/tempolimit-bringt-nichts/"
       ],
       "titles": [
-        "Klimaschutz ist zu teuer?",
-        "Tempolimit bringt nichts?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
-      "type": "Struktur-Dublette",
-      "score": 0.804,
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
       "urls": [
         "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
         "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
       ],
       "titles": [
-        "Klimaschutz ist zu teuer?",
-        "Verbrennerverbot nimmt Freiheit?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -10067,23 +10450,71 @@
       "score": 1,
       "urls": [
         "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
-        "/wirkungsradar/detail/leistungstraeger-werden-ausgepresst/"
+        "/wirkungsradar/detail/remigration-remigrationslotsen/"
       ],
       "titles": [
-        "Werden Leistungsträger ausgepresst?",
-        "Werden Leistungsträger ausgepresst?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
-      "type": "Struktur-Dublette",
-      "score": 0.808,
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
+        "/wirkungsradar/detail/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
       "urls": [
         "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
         "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
       ],
       "titles": [
-        "Werden Leistungsträger ausgepresst?",
-        "Verbrennerverbot nimmt Freiheit?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -10091,23 +10522,11 @@
       "score": 1,
       "urls": [
         "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
-        "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
       ],
       "titles": [
-        "Werden Leistungsträger ausgepresst?",
-        "Werden Leistungsträger ausgepresst?"
-      ]
-    },
-    {
-      "type": "wahrscheinliche Dublette",
-      "score": 1,
-      "urls": [
-        "/wirkungsradar/detail/leistungstraeger-werden-ausgepresst/",
-        "/wirkungsradar/live/leistungstraeger-ausgepresst/"
-      ],
-      "titles": [
-        "Werden Leistungsträger ausgepresst?",
-        "Werden Leistungsträger ausgepresst?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -10138,24 +10557,12 @@
       "type": "wahrscheinliche Dublette",
       "score": 1,
       "urls": [
-        "/wirkungsradar/detail/remigration/",
-        "/wirkungsradar/detail/remigration-remigrationslotsen/"
+        "/wirkungsradar/detail/remigration-remigrationslotsen/",
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/"
       ],
       "titles": [
-        "Remigration / Remigrationslotsen?",
-        "Remigration / Remigrationslotsen?"
-      ]
-    },
-    {
-      "type": "wahrscheinliche Dublette",
-      "score": 1,
-      "urls": [
-        "/wirkungsradar/detail/remigration/",
-        "/wirkungsradar/live/remigration-remigrationslotsen/"
-      ],
-      "titles": [
-        "Remigration / Remigrationslotsen?",
-        "Remigration / Remigrationslotsen?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -10163,23 +10570,119 @@
       "score": 1,
       "urls": [
         "/wirkungsradar/detail/remigration-remigrationslotsen/",
-        "/wirkungsradar/live/remigration/"
+        "/wirkungsradar/detail/sind-die-reichen-schuld/"
       ],
       "titles": [
-        "Remigration / Remigrationslotsen?",
-        "Remigration / Remigrationslotsen?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
-      "type": "Struktur-Dublette",
-      "score": 0.803,
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
       "urls": [
-        "/wirkungsradar/detail/sind-die-reichen-schuld/",
+        "/wirkungsradar/detail/remigration-remigrationslotsen/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/remigration-remigrationslotsen/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/remigration-remigrationslotsen/",
         "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
       ],
       "titles": [
-        "Sind die Reichen schuld?",
-        "Verbrennerverbot nimmt Freiheit?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/remigration-remigrationslotsen/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/",
+        "/wirkungsradar/detail/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/",
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/",
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sdgs-sind-weltregierung/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -10187,47 +10690,119 @@
       "score": 1,
       "urls": [
         "/wirkungsradar/detail/sind-die-reichen-schuld/",
-        "/wirkungsradar/live/die-boesen-reichen/"
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/"
       ],
       "titles": [
-        "Sind die Reichen schuld?",
-        "Sind die Reichen schuld?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
-      "type": "Struktur-Dublette",
-      "score": 0.804,
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sind-die-reichen-schuld/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sind-die-reichen-schuld/",
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/sind-die-reichen-schuld/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
       "urls": [
         "/wirkungsradar/detail/tempolimit-bringt-nichts/",
         "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/"
       ],
       "titles": [
-        "Tempolimit bringt nichts?",
-        "Verbrennerverbot nimmt Freiheit?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.809,
-      "urls": [
-        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/",
-        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
-      ],
-      "titles": [
-        "Verbrennerverbot nimmt Freiheit?",
-        "Wärmepumpe ist unbezahlbar?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
       "type": "wahrscheinliche Dublette",
       "score": 1,
       "urls": [
-        "/wirkungsradar/live/altparteiendiktatur/",
-        "/wirkungsradar/live/diktatur-der-altparteien/"
+        "/wirkungsradar/detail/tempolimit-bringt-nichts/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
       ],
       "titles": [
-        "Diktatur der Altparteien?",
-        "Diktatur der Altparteien?"
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
+      ]
+    },
+    {
+      "type": "wahrscheinliche Dublette",
+      "score": 1,
+      "urls": [
+        "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/",
+        "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/"
+      ],
+      "titles": [
+        "Diese Aussage wurde zusammengeführt",
+        "Diese Aussage wurde zusammengeführt"
       ]
     },
     {
@@ -10375,18 +10950,6 @@
       ]
     },
     {
-      "type": "wahrscheinliche Dublette",
-      "score": 1,
-      "urls": [
-        "/wirkungsradar/live/die-boesen-reichen/",
-        "/wirkungsradar/live/sind-die-reichen-schuld/"
-      ],
-      "titles": [
-        "Sind die Reichen schuld?",
-        "Sind die Reichen schuld?"
-      ]
-    },
-    {
       "type": "Struktur-Dublette",
       "score": 0.809,
       "urls": [
@@ -10483,18 +11046,6 @@
       ]
     },
     {
-      "type": "wahrscheinliche Dublette",
-      "score": 1,
-      "urls": [
-        "/wirkungsradar/live/leistungstraeger-ausgepresst/",
-        "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
-      ],
-      "titles": [
-        "Werden Leistungsträger ausgepresst?",
-        "Werden Leistungsträger ausgepresst?"
-      ]
-    },
-    {
       "type": "Struktur-Dublette",
       "score": 0.801,
       "urls": [
@@ -10540,18 +11091,6 @@
       "titles": [
         "Öffentlicher Rundfunk oder Staatsfunk?",
         "Verfassungsschutz oder Regierungsschutz?"
-      ]
-    },
-    {
-      "type": "wahrscheinliche Dublette",
-      "score": 1,
-      "urls": [
-        "/wirkungsradar/live/remigration/",
-        "/wirkungsradar/live/remigration-remigrationslotsen/"
-      ],
-      "titles": [
-        "Remigration / Remigrationslotsen?",
-        "Remigration / Remigrationslotsen?"
       ]
     },
     {
@@ -10635,12 +11174,12 @@
     },
     {
       "from": "/wirkungsradar/detail/altparteien/",
-      "to": "/wirkungsradar/live/altparteien/",
+      "to": "/wirkungsradar/live/diktatur-der-altparteien/",
       "title": "Altparteien?"
     },
     {
       "from": "/wirkungsradar/detail/altparteiendiktatur/",
-      "to": "/wirkungsradar/live/altparteiendiktatur/",
+      "to": "/wirkungsradar/live/diktatur-der-altparteien/",
       "title": "Diktatur der Altparteien?"
     },
     {
@@ -10676,7 +11215,7 @@
     {
       "from": "/wirkungsradar/detail/buerokratieabbau-statt-wirkung/",
       "to": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
-      "title": "Bürokratieabbau statt Wirkung?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/co2-ist-nur-ein-spurengas/",
@@ -10711,7 +11250,7 @@
     {
       "from": "/wirkungsradar/detail/deutschland-schafft-sich-ab/",
       "to": "/wirkungsradar/live/deutschland-schafft-sich-ab/",
-      "title": "Deutschland schafft sich ab?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/die-bauern-werden-geopfert/",
@@ -10720,7 +11259,7 @@
     },
     {
       "from": "/wirkungsradar/detail/die-boesen-reichen/",
-      "to": "/wirkungsradar/live/die-boesen-reichen/",
+      "to": "/wirkungsradar/live/sind-die-reichen-schuld/",
       "title": "Sind die Reichen schuld?"
     },
     {
@@ -10736,7 +11275,7 @@
     {
       "from": "/wirkungsradar/detail/diktatur-der-altparteien/",
       "to": "/wirkungsradar/live/diktatur-der-altparteien/",
-      "title": "Diktatur der Altparteien?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/e-autos-schlimmer-als-verbrenner/",
@@ -10876,7 +11415,7 @@
     {
       "from": "/wirkungsradar/detail/klimaschutz-ist-zu-teuer/",
       "to": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
-      "title": "Klimaschutz ist zu teuer?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/kriminalitaet-und-migration/",
@@ -10896,11 +11435,11 @@
     {
       "from": "/wirkungsradar/detail/leistungstraeger-ausgepresst/",
       "to": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
-      "title": "Werden Leistungsträger ausgepresst?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/leistungstraeger-werden-ausgepresst/",
-      "to": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
+      "to": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
       "title": "Werden Leistungsträger ausgepresst?"
     },
     {
@@ -10995,13 +11534,13 @@
     },
     {
       "from": "/wirkungsradar/detail/remigration/",
-      "to": "/wirkungsradar/live/remigration/",
+      "to": "/wirkungsradar/live/remigration-remigrationslotsen/",
       "title": "Remigration / Remigrationslotsen?"
     },
     {
       "from": "/wirkungsradar/detail/remigration-remigrationslotsen/",
       "to": "/wirkungsradar/live/remigration-remigrationslotsen/",
-      "title": "Remigration / Remigrationslotsen?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/rente-unbezahlbar/",
@@ -11031,12 +11570,12 @@
     {
       "from": "/wirkungsradar/detail/sind-die-reichen-schuld/",
       "to": "/wirkungsradar/live/sind-die-reichen-schuld/",
-      "title": "Sind die Reichen schuld?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
       "to": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
-      "title": "Solarstrom ist unzuverlässig?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/sozialschmarotzer-frame/",
@@ -11056,7 +11595,7 @@
     {
       "from": "/wirkungsradar/detail/tempolimit-bringt-nichts/",
       "to": "/wirkungsradar/live/tempolimit-bringt-nichts/",
-      "title": "Tempolimit bringt nichts?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/ukraine-unterstuetzung-steuergeld/",
@@ -11066,7 +11605,7 @@
     {
       "from": "/wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/",
       "to": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/",
-      "title": "Verbrennerverbot nimmt Freiheit?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/verfassungsschutz-oder-regierungsschutz/",
@@ -11081,7 +11620,7 @@
     {
       "from": "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/",
       "to": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
-      "title": "Wärmepumpe ist unbezahlbar?"
+      "title": "Diese Aussage wurde zusammengeführt"
     },
     {
       "from": "/wirkungsradar/detail/waffenlieferungen-verlaengern-den-krieg/",
@@ -11129,6 +11668,21 @@
       "title": "Wohnungsnot wegen Migration?"
     },
     {
+      "from": "/wirkungsradar/live/altparteien/",
+      "to": "/wirkungsradar/live/diktatur-der-altparteien/",
+      "title": "Altparteien?"
+    },
+    {
+      "from": "/wirkungsradar/live/altparteiendiktatur/",
+      "to": "/wirkungsradar/live/diktatur-der-altparteien/",
+      "title": "Diktatur der Altparteien?"
+    },
+    {
+      "from": "/wirkungsradar/live/die-boesen-reichen/",
+      "to": "/wirkungsradar/live/sind-die-reichen-schuld/",
+      "title": "Sind die Reichen schuld?"
+    },
+    {
       "from": "/wirkungsradar/live/fuenfzehn-minuten-stadt-klimakaefig/",
       "to": "/wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/",
       "title": "15-Minuten-Stadt oder Klimakäfig?"
@@ -11144,6 +11698,11 @@
       "title": "„Kernenergie wäre die einfache Lösung“"
     },
     {
+      "from": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
+      "to": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
+      "title": "Werden Leistungsträger ausgepresst?"
+    },
+    {
       "from": "/wirkungsradar/live/masseneinwanderung/",
       "to": "/wirkungsradar/live/migration-kostet-nur/",
       "title": "Illegale / kulturfremde / inländerfeindliche Massenmigration?"
@@ -11157,6 +11716,11 @@
       "from": "/wirkungsradar/live/oerr-oder-staatsfunk/",
       "to": "/wirkungsradar/live/oeffentlicher-rundfunk-staatsfunk/",
       "title": "ÖRR oder Staatsfunk?"
+    },
+    {
+      "from": "/wirkungsradar/live/remigration/",
+      "to": "/wirkungsradar/live/remigration-remigrationslotsen/",
+      "title": "Remigration / Remigrationslotsen?"
     },
     {
       "from": "/wirkungsradar/live/sdgs-weltregierung/",

@@ -1,0 +1,44 @@
+{
+  "date": "2026-06-06",
+  "sources": [
+    "Wirkungsoekonomie_Offene_Punkteliste_Nachtrag_Content_Links.docx",
+    "Wirkungsoekonomie_Offene_Punkteliste_Finalisierung_Website_2_0.docx"
+  ],
+  "canonicalization": {
+    "radar_pages": 583,
+    "claim_pages": 202,
+    "canonical_narratives": 86,
+    "duplicates": 392,
+    "merged": 115,
+    "synonyms": 46,
+    "redirects": 115,
+    "live_index_pages": 101,
+    "live_redirect_pages": 10,
+    "live_non_redirect_pages": 91,
+    "live_non_redirect_duplicate_title_groups": 0
+  },
+  "gates": [
+    { "command": "npm run build", "status": "passed" },
+    { "command": "npm run build:artifact", "status": "passed", "artifact_size_mb": 658.4, "non_public_artifacts_removed": 669 },
+    { "command": "npm run check:public-hardening", "status": "passed" },
+    { "command": "npm run check:wirkungsradar-v2", "status": "passed", "checked_debate_pages": 202 },
+    { "command": "node scripts/quality/check-glossary-public-hardening.mjs", "status": "passed", "checked_glossary_detail_pages": 1728 },
+    { "command": "npm run check:search", "status": "passed", "entries": 7476 },
+    { "command": "npm run check:search-contamination", "status": "passed" },
+    { "command": "npm run check:assets", "status": "passed" },
+    { "command": "npm run check:size", "status": "passed", "artifact_size_mb": 658.4 },
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm run check:links", "status": "passed" },
+    { "command": "npm run check:public-language", "status": "passed", "visible_findings": 0 },
+    { "command": "npm run check:wirkungsradar-sources", "status": "passed", "sources": 22, "packs": 13 },
+    { "command": "npm run check:wirkungsradar-links", "status": "passed", "dossiers": 13 }
+  ],
+  "implemented": [
+    "public artifact hardening for HTML, JSON and JavaScript",
+    "canonical alias consolidation for Altparteien, Altparteiendiktatur, Die boesen Reichen, Leistungstraeger werden ausgepresst and Remigration",
+    "consistent public status wording on the Wirkungsradar landing page",
+    "public wording correction toward Oeffentlicher Wirkungsraum and Debatten-Kompass",
+    "removal of visible P0/Masterquelle/status residue in checked debate pages"
+  ],
+  "boundary": "Technical P0 gates and generators are green. Full manual expert editorial review of every canonical debate page is not claimed by this report."
+}
