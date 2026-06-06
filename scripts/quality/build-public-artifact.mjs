@@ -176,7 +176,6 @@ function normalizePublicArtifactLinksAndText() {
     ".csv",
     ".html",
     ".htm",
-    ".json",
     ".md",
     ".txt",
     ".xml",
@@ -190,7 +189,6 @@ function normalizePublicArtifactLinksAndText() {
     const relative = toPosixRelative(file);
 
     content = content
-      .replaceAll(" - ", "-")
       .replace(/([?&])utm_source=chatgpt\.com(?:&amp;|&)?/gi, (match, separator) => {
         if (match.endsWith("&amp;") || match.endsWith("&")) return separator;
         return "";
@@ -253,6 +251,23 @@ function validatePublicScripts() {
   console.log("Public JavaScript syntax check passed.");
 }
 
+function validatePublicJson() {
+  const failures = [];
+  for (const file of walkFiles(artifactDir)) {
+    if (path.extname(file).toLowerCase() !== ".json") continue;
+    try {
+      JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch (error) {
+      failures.push(`${toPosixRelative(file)}: ${error.message}`);
+    }
+  }
+
+  if (failures.length) {
+    throw new Error(`Public JSON validation failed:\n\n${failures.join("\n")}`);
+  }
+  console.log("Public JSON validation passed.");
+}
+
 function prunePublicArtifact() {
   const references = collectArtifactReferences();
   let pruned = 0;
@@ -299,6 +314,7 @@ normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
 prunePublicArtifact();
 validatePublicScripts();
+validatePublicJson();
 
 const mb = collectSize(artifactDir) / 1024 / 1024;
 console.log(`Built _site with ${copied} top-level entries (${mb.toFixed(1)} MB).`);

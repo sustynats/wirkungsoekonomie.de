@@ -1,6 +1,6 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-06T08:14:23.158Z
+Stand: 2026-06-06T09:14:38.008Z
 
 | Kennzahl | Wert |
 |---|---:|

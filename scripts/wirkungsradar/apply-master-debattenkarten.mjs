@@ -1102,6 +1102,9 @@ function renderToc() {
   const links = [
     ["#behauptung", "Behauptung"],
     ["#sofortantwort", "Sofortantwort"],
+    ["#10-sekunden", "10 Sekunden"],
+    ["#30-sekunden", "30 Sekunden"],
+    ["#2-minuten", "2 Minuten"],
     ["#folgencheck", "Folgencheck"],
     ["#wirkpfad", "Wirkpfad"],
     ["#kritische-fragen", "Kritische Fragen"],
@@ -1113,13 +1116,20 @@ function renderToc() {
   return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Seitenbereiche">${links.map(([href, label]) => `<a href="${href}">${label}</a>`).join("")}</nav></article></div></section>`;
 }
 
+function answerId(label) {
+  if (label === "10 Sekunden") return "10-sekunden";
+  if (label === "30 Sekunden") return "30-sekunden";
+  if (label === "2 Minuten") return "2-minuten";
+  return "";
+}
+
 function answerAccordion(card) {
   const rows = [
     ["10 Sekunden", "Pointierte Antwort", card.answers.seconds10],
     ["30 Sekunden", "Faktenkern und Framekorrektur", card.answers.seconds30],
     ["2 Minuten", "Systemische Antwort", card.answers.seconds120],
   ];
-  return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="sofortantwort" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktion</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist. Die Sekunden sind Kommunikationsstufen, keine Stoppuhr.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${rows.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""}><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary>${paragraphize(text)}<button class="copy-chip" type="button" data-copy-text='${attr(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+  return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="sofortantwort" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktion</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist. Die Sekunden sind Kommunikationsstufen, keine Stoppuhr.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${rows.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""} id="${answerId(label)}"><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary>${paragraphize(text)}<button class="copy-chip" type="button" data-copy-text='${attr(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
 }
 
 function rescueFactsAndSources(card) {
