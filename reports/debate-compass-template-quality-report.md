@@ -1,6 +1,6 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-06T11:58:00.672Z
+Stand: 2026-06-06T13:00:07.609Z
 
 | Kennzahl | Wert |
 |---|---:|
@@ -11,7 +11,7 @@ Stand: 2026-06-06T11:58:00.672Z
 | Qualitätsstufe C | 85 |
 | Qualitätsstufe D | 0 |
 | Kanonische Narrative | 86 |
-| Dubletten / Kandidaten | 392 |
+| Dubletten / Kandidaten | 340 |
 | Zusammengeführt | 115 |
 | Synonyme | 46 |
 | Redirects | 115 |

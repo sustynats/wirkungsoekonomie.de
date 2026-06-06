@@ -1,13 +1,13 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-06T11:58:00.353Z
+Stand: 2026-06-06T13:00:07.282Z
 
 | Kennzahl | Wert |
 |---|---:|
 | Radar-Seiten | 583 |
 | Claim-Seiten | 202 |
 | Kanonische Narrative | 86 |
-| Dubletten / Kandidaten | 392 |
+| Dubletten / Kandidaten | 340 |
 | Zusammengeführt | 115 |
 | Synonyme | 46 |
 | Redirects | 115 |
@@ -25,19 +25,19 @@ Stand: 2026-06-06T11:58:00.353Z
 | /wirkungsradar/detail/batterien-sind-nicht-recyclebar/ | /wirkungsradar/live/batterien-sind-nicht-recyclebar/ | „Batterien sind nicht recyclebar“ |
 | /wirkungsradar/detail/bio-kann-die-welt-nicht-ernaehren/ | /wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/ | Bio kann die Welt nicht ernähren? |
 | /wirkungsradar/detail/buergergeld-macht-faul/ | /wirkungsradar/live/buergergeld-macht-faul/ | Bürgergeld macht faul? |
-| /wirkungsradar/detail/buerokratieabbau-statt-wirkung/ | /wirkungsradar/live/buerokratieabbau-statt-wirkung/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/buerokratieabbau-statt-wirkung/ | /wirkungsradar/live/buerokratieabbau-statt-wirkung/ | Bürokratieabbau statt Wirkung? |
 | /wirkungsradar/detail/co2-ist-nur-ein-spurengas/ | /wirkungsradar/live/co2-ist-nur-ein-spurengas/ | CO₂ ist nur ein Spurengas |
 | /wirkungsradar/detail/co2-preis-oder-fossile-systemkosten/ | /wirkungsradar/live/co2-preis-oder-fossile-systemkosten/ | CO₂-Preis oder fossile Systemkosten? Warum wir so oder so zahlen |
 | /wirkungsradar/detail/das-ist-alles-gesteuert/ | /wirkungsradar/live/das-ist-alles-gesteuert/ | Das ist alles gesteuert |
 | /wirkungsradar/detail/das-ist-zensur/ | /wirkungsradar/live/das-ist-zensur/ | Das ist Zensur |
 | /wirkungsradar/detail/datenschutz-verhindert-innovation/ | /wirkungsradar/live/datenschutz-verhindert-innovation/ | Datenschutz verhindert Innovation? |
 | /wirkungsradar/detail/deutschland-nur-zwei-prozent/ | /wirkungsradar/live/deutschland-nur-zwei-prozent/ | „Deutschland ist nur für 2 % verantwortlich“ |
-| /wirkungsradar/detail/deutschland-schafft-sich-ab/ | /wirkungsradar/live/deutschland-schafft-sich-ab/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/deutschland-schafft-sich-ab/ | /wirkungsradar/live/deutschland-schafft-sich-ab/ | Deutschland schafft sich ab? |
 | /wirkungsradar/detail/die-bauern-werden-geopfert/ | /wirkungsradar/live/die-bauern-werden-geopfert/ | Die Bauern werden geopfert? |
 | /wirkungsradar/detail/die-boesen-reichen/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Sind die Reichen schuld? |
 | /wirkungsradar/detail/die-da-oben/ | /wirkungsradar/live/die-da-oben/ | Die da oben |
 | /wirkungsradar/detail/die-wissenschaft-ist-gekauft/ | /wirkungsradar/live/die-wissenschaft-ist-gekauft/ | „Die Wissenschaft ist gekauft“ |
-| /wirkungsradar/detail/diktatur-der-altparteien/ | /wirkungsradar/live/diktatur-der-altparteien/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/diktatur-der-altparteien/ | /wirkungsradar/live/diktatur-der-altparteien/ | Diktatur der Altparteien? |
 | /wirkungsradar/detail/e-autos-schlimmer-als-verbrenner/ | /wirkungsradar/live/e-autos-schlimmer-als-verbrenner/ | „E-Autos sind schlimmer als Verbrenner“ |
 | /wirkungsradar/detail/e-fuels-retten-den-verbrenner/ | /wirkungsradar/live/e-fuels-retten-den-verbrenner/ | E-Fuels retten den Verbrenner? |
 | /wirkungsradar/detail/e-lkw-funktionieren-nicht/ | /wirkungsradar/live/e-lkw-funktionieren-nicht/ | E-Lkw funktionieren nicht? |
@@ -65,11 +65,11 @@ Stand: 2026-06-06T11:58:00.353Z
 | /wirkungsradar/detail/klimafinanzierung-wir-zahlen-fuer-andere/ | /wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/ | Klimafinanzierung: Zahlen wir für andere? |
 | /wirkungsradar/detail/klimaschutz-deindustrialisiert-deutschland/ | /wirkungsradar/live/klimaschutz-deindustrialisiert-deutschland/ | Klimaschutz deindustrialisiert Deutschland? |
 | /wirkungsradar/detail/klimaschutz-ist-oekodiktatur/ | /wirkungsradar/live/klimaschutz-ist-oekodiktatur/ | Klimaschutz ist Ökodiktatur |
-| /wirkungsradar/detail/klimaschutz-ist-zu-teuer/ | /wirkungsradar/live/klimaschutz-ist-zu-teuer/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/klimaschutz-ist-zu-teuer/ | /wirkungsradar/live/klimaschutz-ist-zu-teuer/ | Klimaschutz ist zu teuer? |
 | /wirkungsradar/detail/kriminalitaet-und-migration/ | /wirkungsradar/live/kriminalitaet-und-migration/ | Kriminalität und Migration? |
 | /wirkungsradar/detail/kultur-gender-luxusprojekte/ | /wirkungsradar/live/kultur-gender-luxusprojekte/ | Geld für Kultur und Gender statt echte Probleme? |
 | /wirkungsradar/detail/laden-dauert-viel-zu-lange/ | /wirkungsradar/live/laden-dauert-viel-zu-lange/ | Laden dauert viel zu lange? |
-| /wirkungsradar/detail/leistungstraeger-ausgepresst/ | /wirkungsradar/live/leistungstraeger-ausgepresst/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/leistungstraeger-ausgepresst/ | /wirkungsradar/live/leistungstraeger-ausgepresst/ | Werden Leistungsträger ausgepresst? |
 | /wirkungsradar/detail/leistungstraeger-werden-ausgepresst/ | /wirkungsradar/live/leistungstraeger-ausgepresst/ | Werden Leistungsträger ausgepresst? |
 | /wirkungsradar/detail/mainstreammedien-luegen-alle/ | /wirkungsradar/live/mainstreammedien-luegen-alle/ | „Mainstreammedien lügen alle“ |
 | /wirkungsradar/detail/man-darf-ja-nichts-mehr-sagen/ | /wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/ | „Man darf ja nichts mehr sagen“ |
@@ -90,23 +90,23 @@ Stand: 2026-06-06T11:58:00.353Z
 | /wirkungsradar/detail/queere-sichtbarkeit-bedroht-kinder/ | /wirkungsradar/live/queere-sichtbarkeit-bedroht-kinder/ | Queere Sichtbarkeit bedroht Kinder? |
 | /wirkungsradar/detail/radwege-in-peru/ | /wirkungsradar/live/radwege-in-peru/ | Radwege in Peru - verschenktes Geld oder verkürzte Empörung? |
 | /wirkungsradar/detail/remigration/ | /wirkungsradar/live/remigration-remigrationslotsen/ | Remigration / Remigrationslotsen? |
-| /wirkungsradar/detail/remigration-remigrationslotsen/ | /wirkungsradar/live/remigration-remigrationslotsen/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/remigration-remigrationslotsen/ | /wirkungsradar/live/remigration-remigrationslotsen/ | Remigration / Remigrationslotsen? |
 | /wirkungsradar/detail/rente-unbezahlbar/ | /wirkungsradar/live/rente-unbezahlbar/ | Rente ist unbezahlbar? |
 | /wirkungsradar/detail/resilienz-ist-autarkie/ | /wirkungsradar/live/resilienz-ist-autarkie/ | Resilienz ist Autarkie? |
 | /wirkungsradar/detail/schulden-machen-oder-sparen/ | /wirkungsradar/live/schulden-machen-oder-sparen/ | Schulden machen oder sparen? |
 | /wirkungsradar/detail/sdgs-sind-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | Diese Aussage wurde zusammengeführt |
 | /wirkungsradar/detail/sdgs-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | „SDGs / Agenda 2030 sind Weltregierung“ |
-| /wirkungsradar/detail/sind-die-reichen-schuld/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Diese Aussage wurde zusammengeführt |
-| /wirkungsradar/detail/solarstrom-ist-unzuverlaessig/ | /wirkungsradar/live/solarstrom-ist-unzuverlaessig/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/sind-die-reichen-schuld/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Sind die Reichen schuld? |
+| /wirkungsradar/detail/solarstrom-ist-unzuverlaessig/ | /wirkungsradar/live/solarstrom-ist-unzuverlaessig/ | Solarstrom ist unzuverlässig? |
 | /wirkungsradar/detail/sozialschmarotzer-frame/ | /wirkungsradar/live/sozialschmarotzer-frame/ | Sozialschmarotzer? |
 | /wirkungsradar/detail/sozialtourismus-frame/ | /wirkungsradar/live/migration-kostet-nur/ | Sozialtourismus? |
 | /wirkungsradar/detail/steuerverschwendung-buerokratie/ | /wirkungsradar/live/steuerverschwendung-buerokratie/ | Der Staat verschwendet unser Geld? |
-| /wirkungsradar/detail/tempolimit-bringt-nichts/ | /wirkungsradar/live/tempolimit-bringt-nichts/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/tempolimit-bringt-nichts/ | /wirkungsradar/live/tempolimit-bringt-nichts/ | Tempolimit bringt nichts? |
 | /wirkungsradar/detail/ukraine-unterstuetzung-steuergeld/ | /wirkungsradar/live/ukraine-unterstuetzung-steuergeld/ | Unser Steuergeld geht in die Ukraine? |
-| /wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/ | /wirkungsradar/live/verbrennerverbot-nimmt-freiheit/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/verbrennerverbot-nimmt-freiheit/ | /wirkungsradar/live/verbrennerverbot-nimmt-freiheit/ | Verbrennerverbot nimmt Freiheit? |
 | /wirkungsradar/detail/verfassungsschutz-oder-regierungsschutz/ | /wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/ | Verfassungsschutz oder Regierungsschutz? |
 | /wirkungsradar/detail/verfassungsschutz-regierungsschutz/ | /wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/ | Verfassungsschutz oder Regierungsschutz? |
-| /wirkungsradar/detail/waermepumpe-ist-unbezahlbar/ | /wirkungsradar/live/waermepumpe-ist-unbezahlbar/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/waermepumpe-ist-unbezahlbar/ | /wirkungsradar/live/waermepumpe-ist-unbezahlbar/ | Wärmepumpe ist unbezahlbar? |
 | /wirkungsradar/detail/waffenlieferungen-verlaengern-den-krieg/ | /wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/ | Waffenlieferungen verlängern den Krieg? |
 | /wirkungsradar/detail/wasserstoff-fuer-alles/ | /wirkungsradar/live/wasserstoff-fuer-alles/ | Wasserstoff für alles? |
 | /wirkungsradar/detail/windraeder-voegel-wald-beton-rueckbau/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | Windräder zerstören Natur? |

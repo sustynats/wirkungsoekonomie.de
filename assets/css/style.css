@@ -13376,6 +13376,11 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   margin-top: clamp(1.4rem, 3vw, 2rem);
 }
 
+.related-questions-block > div {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
 .reference-work > .related-questions-block,
 .workpaper-reader > .related-questions-block {
   grid-column: 1 / -1;
@@ -17932,7 +17937,7 @@ a.principle-card:hover,
 
 .community-submission-block {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 1fr;
   gap: clamp(1rem, 3vw, 1.8rem);
   align-items: start;
   border-left: 5px solid rgba(47, 125, 92, 0.72);
@@ -17954,7 +17959,7 @@ a.principle-card:hover,
 
 .community-submission-copy h2 {
   margin: 0;
-  max-width: 18ch;
+  max-width: min(100%, 34ch);
 }
 
 .community-submission-copy p {

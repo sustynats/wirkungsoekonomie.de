@@ -61,6 +61,12 @@ const categoryOrder = [
   "Praxisbegriff",
 ];
 
+const genericUsageNotes = new Set([
+  "wirkung, wirkungspotenzial, wirkungsrisiko, wirkmechanismus und eingetretene wirkung sauber unterscheiden.",
+  "wirkung, wirkungspotenzial, wirkungsrisiko, wirkmechanismus, wirkstoff, resonanzraum, wirkpfad und folgewirkung sauber unterscheiden.",
+  "zwischen wirkung, wirkungspotenzial, wirkungsrisiko, wirkmechanismus, resonanzraum und wirkpfad unterscheiden.",
+]);
+
 function esc(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -89,6 +95,18 @@ function decodeHtmlEntities(value) {
 
 function textFromHtml(value) {
   return decodeHtmlEntities(String(value || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+}
+
+function normalizedPublicText(value) {
+  return publicText(value)
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function isGenericUsageNote(value) {
+  const normalized = normalizedPublicText(value);
+  return !normalized || genericUsageNotes.has(normalized);
 }
 
 function normalizedLabel(value) {
@@ -1226,14 +1244,25 @@ function termWhyHtml(term) {
     return `<p>Die SDGs und die Agenda 2030 sind fachlich zentral, aber in der Bevölkerung wenig bekannt. Für öffentliche Kommunikation braucht die Wirkungsökonomie deshalb eine einfache, klare und wiedererkennbare Sprache. Mensch, Planet und Demokratie macht sichtbar, worum es geht: nicht um abstrakte Zielnummern, sondern um Lebensqualität, ökologische Stabilität und demokratische Handlungsfähigkeit.</p>
             <p>Der Dreiklang ersetzt die SDGs nicht. Er übersetzt sie.</p>`;
   }
-  return paragraphs(term.woekRelation || term.woek_einordnung || term.preferredUsage || term.usageNote);
+  const usage = !isGenericUsageNote(term.usageNote) ? term.usageNote : "";
+  return paragraphs(term.woekRelation || term.woek_einordnung || term.preferredUsage || usage);
 }
 
 function termUsageHtml(term) {
   if (term.termId === "mensch-planet-demokratie") {
     return `<p>Mensch, Planet und Demokratie nicht als Zusatz-Ziel neben den SDGs verwenden. Der Dreiklang ist die öffentliche Übersetzung des fachlichen Referenzrahmens und bleibt an Wirkung, Wirkungsbewertung und positive Netto-Wirkung gebunden.</p>`;
   }
-  return paragraphs(term.usageNote || term.preferredUsage);
+  const usage = !isGenericUsageNote(term.usageNote) ? term.usageNote : "";
+  const explicitUsage = usage || term.preferredUsage;
+  if (hasRealText(explicitUsage) && !containsForbiddenPublicText(explicitUsage)) {
+    return paragraphs(explicitUsage);
+  }
+  const label = publicText(term.canonicalLabel || term.label || term.termId);
+  const type = publicText(publicTermType(term));
+  const category = publicText(term.category || "Begriff");
+  const summary = termSummary(term);
+  return `<p>Der Begriff „${esc(label)}“ wird in der Wirkungsökonomie genutzt, um die dahinterliegende Frage wirkungsbezogen einzuordnen: ${esc(summary)}</p>
+          <p>Als ${esc(type)} aus dem Bereich ${esc(category)} hilft er, nicht beim Schlagwort stehen zu bleiben, sondern Zustände, Wirkpfade, Bilanzgrenzen und Rückkopplungen genauer zu prüfen.</p>`;
 }
 
 function mythBlock(term) {
