@@ -346,7 +346,7 @@ def render_library(imports: list[dict]) -> str:
             }
         )
     card_html = "\n".join(
-        f"""<article class="info-card">
+        f"""<article class="info-card" data-online-document-card data-search="{escape(' '.join([card['title'], card['type'], card['status'], card['description']]).lower())}">
           <p class="meta-line">{escape(card["type"])} · {escape(card["status"])}</p>
           <h3><a href="{escape(card["slug"])}">{escape(card["title"])}</a></h3>
           <p>{escape(card["description"])}</p>
@@ -387,9 +387,35 @@ def render_library(imports: list[dict]) -> str:
         <h1>Dokumente der Wirkungsökonomie Online</h1>
         <p class="hero-subtitle">Hauptwerk, Arbeitspapiere, Leitlinien, Beispiele, Manifeste und Archivdokumente als Webfassung mit Originaldatei.</p>
       </section>
-      <section class="card-grid">
+      <section class="card document-library-controls" data-search-exclude>
+        <label class="document-search-field" for="online-document-search">Online-Dokumente durchsuchen
+          <input id="online-document-search" type="search" data-online-document-search placeholder="Titel, Dokumentart oder Status suchen">
+        </label>
+        <p class="document-filter-status" data-online-document-status aria-live="polite"></p>
+      </section>
+      <section class="card-grid" data-online-document-list>
         {card_html}
       </section>
+      <script data-search-exclude>
+      (() => {{
+        const input = document.querySelector("[data-online-document-search]");
+        const status = document.querySelector("[data-online-document-status]");
+        const cards = Array.from(document.querySelectorAll("[data-online-document-card]"));
+        const apply = () => {{
+          const query = (input?.value || "").trim().toLowerCase();
+          let visibleCount = 0;
+          cards.forEach((card) => {{
+            const haystack = `${{card.dataset.search || ""}} ${{card.textContent || ""}}`.toLowerCase();
+            const visible = !query || haystack.includes(query);
+            card.hidden = !visible;
+            if (visible) visibleCount += 1;
+          }});
+          if (status) status.textContent = `${{visibleCount}} Dokumente gefunden.`;
+        }};
+        input?.addEventListener("input", apply);
+        apply();
+      }})();
+      </script>
     </main>
   </body>
 </html>

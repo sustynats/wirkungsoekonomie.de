@@ -1561,6 +1561,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
       </section>
       <section class="section document-library-controls" data-search-exclude>
         <div class="document-filter-grid">
+          <label class="document-search-field">Suche<input type="search" data-document-search placeholder="Titel, Abstract, Thema oder Zielgruppe"></label>
           <label>Dokumentart<select data-document-filter="type"><option value="">Alle</option>${options(publicDocs.map((doc) => doc.documentType))}</select></label>
           <label>Status<select data-document-filter="status"><option value="">Alle</option>${options(publicDocs.map((doc) => doc.status))}</select></label>
           <label>Zielgruppe<select data-document-filter="audience"><option value="">Alle</option>${options(publicDocs.flatMap((doc) => doc.audience))}</select></label>
@@ -1570,6 +1571,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
           <label>Wirkungsfeld<select data-document-filter="field"><option value="">Alle</option>${options(allFields)}</select></label>
           <label>Sortierung<select data-document-sort><option value="editorial">Redaktionelle Reihenfolge</option><option value="date">Datum</option><option value="pages">Umfang</option><option value="level">Niveau</option></select></label>
         </div>
+        <p class="document-filter-status" data-document-filter-status aria-live="polite"></p>
       </section>
       <section class="section section-muted">
         <div class="section-header">
@@ -1598,6 +1600,8 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
   const cards = Array.from(document.querySelectorAll("[data-document-card]"));
   const filters = Array.from(document.querySelectorAll("[data-document-filter]"));
   const sort = document.querySelector("[data-document-sort]");
+  const search = document.querySelector("[data-document-search]");
+  const status = document.querySelector("[data-document-filter-status]");
   const matches = (card, key, value) => {
     if (!value) return true;
     if (key === "type") return card.dataset.type === value;
@@ -1611,8 +1615,22 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
   };
   const apply = () => {
     const active = Object.fromEntries(filters.map((input) => [input.dataset.documentFilter, input.value]));
+    const query = (search?.value || "").trim().toLowerCase();
+    let visibleCount = 0;
     cards.forEach((card) => {
-      card.hidden = !Object.entries(active).every(([key, value]) => matches(card, key, value));
+      const filterMatch = Object.entries(active).every(([key, value]) => matches(card, key, value));
+      const searchMatch = !query || [
+        card.textContent,
+        card.dataset.type,
+        card.dataset.status,
+        card.dataset.level,
+        card.dataset.audience,
+        card.dataset.topics,
+        card.dataset.methods,
+        card.dataset.fields,
+      ].join(" ").toLowerCase().includes(query);
+      card.hidden = !(filterMatch && searchMatch);
+      if (!card.hidden) visibleCount += 1;
     });
     const sorter = sort?.value || "editorial";
     document.querySelectorAll(".document-card-grid").forEach((grid) => {
@@ -1624,8 +1642,10 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
         return Number(a.dataset.order || 999) - Number(b.dataset.order || 999);
       }).forEach((card) => grid.appendChild(card));
     });
+    if (status) status.textContent = visibleCount + " Dokumente gefunden.";
   };
   filters.forEach((input) => input.addEventListener("change", apply));
+  search?.addEventListener("input", apply);
   sort?.addEventListener("change", apply);
   apply();
 })();

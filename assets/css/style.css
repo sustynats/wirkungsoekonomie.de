@@ -13870,6 +13870,10 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   gap: 1rem;
 }
 
+.document-search-field {
+  grid-column: 1 / -1;
+}
+
 .document-filter-grid label {
   display: grid;
   gap: 0.35rem;
@@ -13877,7 +13881,9 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   color: var(--text-strong, #211f1a);
 }
 
-.document-filter-grid select {
+.document-filter-grid select,
+.document-filter-grid input,
+.document-search-field input {
   width: 100%;
   min-height: 2.55rem;
   border: 1px solid var(--border-color, #d8d2c6);

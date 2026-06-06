@@ -44,6 +44,7 @@
       </section>
       <section class="section document-library-controls" data-search-exclude>
         <div class="document-filter-grid">
+          <label class="document-search-field">Suche<input type="search" data-document-search placeholder="Titel, Abstract, Thema oder Zielgruppe"></label>
           <label>Dokumentart<select data-document-filter="type"><option value="">Alle</option><option value="buch">buch</option><option value="gesetzesentwurf">gesetzesentwurf</option><option value="grundlagenpapier">grundlagenpapier</option><option value="konzept">konzept</option><option value="kurzfassung">kurzfassung</option><option value="leitbild">leitbild</option><option value="manifest">manifest</option><option value="paper">paper</option><option value="standardwerk">standardwerk</option><option value="technische-leitlinie">technische-leitlinie</option><option value="whitepaper">whitepaper</option><option value="working-paper">working-paper</option></select></label>
           <label>Status<select data-document-filter="status"><option value="">Alle</option><option value="aktuell">aktuell</option><option value="arbeitsfassung">arbeitsfassung</option><option value="diskussionsfassung">diskussionsfassung</option><option value="fachoeffentlich">fachöffentlich</option><option value="führend">führend</option></select></label>
           <label>Zielgruppe<select data-document-filter="audience"><option value="">Alle</option><option value="Beratungsunternehmen">Beratungsunternehmen</option><option value="Beschaffung">Beschaffung</option><option value="Bildung">Bildung</option><option value="Bürger:innen">Bürger:innen</option><option value="Controlling">Controlling</option><option value="Daten">Daten</option><option value="Einkauf">Einkauf</option><option value="Einsteiger:innen">Einsteiger:innen</option><option value="Fachöffentlichkeit">Fachöffentlichkeit</option><option value="Handel">Handel</option><option value="Handwerk">Handwerk</option><option value="Impact Controlling">Impact Controlling</option><option value="Industrie">Industrie</option><option value="Journalismus">Journalismus</option><option value="Jurist:innen">Jurist:innen</option><option value="Kleine Betriebe">Kleine Betriebe</option><option value="Lieferketten">Lieferketten</option><option value="Marketing">Marketing</option><option value="Methodik">Methodik</option><option value="Mitgestalter:innen">Mitgestalter:innen</option><option value="Mittelstand">Mittelstand</option><option value="Nachhaltigkeit">Nachhaltigkeit</option><option value="Pilotierung">Pilotierung</option><option value="Politik">Politik</option><option value="Unternehmen">Unternehmen</option><option value="Verwaltung">Verwaltung</option><option value="Wissenschaft">Wissenschaft</option></select></label>
@@ -53,6 +54,7 @@
           <label>Wirkungsfeld<select data-document-filter="field"><option value="">Alle</option><option value="Alltag &amp; Grundbedürfnisse">Alltag &amp; Grundbedürfnisse</option><option value="Daten &amp; Infrastruktur">Daten &amp; Infrastruktur</option><option value="Demokratie">Demokratie</option><option value="Mensch">Mensch</option><option value="Öffentlichkeit &amp; Wissen">Öffentlichkeit &amp; Wissen</option><option value="Planet">Planet</option><option value="Planet &amp; Resilienz">Planet &amp; Resilienz</option><option value="Produkte &amp; Konsum">Produkte &amp; Konsum</option><option value="Staat &amp; Demokratie">Staat &amp; Demokratie</option><option value="Wirtschaft &amp; Kapital">Wirtschaft &amp; Kapital</option></select></label>
           <label>Sortierung<select data-document-sort><option value="editorial">Redaktionelle Reihenfolge</option><option value="date">Datum</option><option value="pages">Umfang</option><option value="level">Niveau</option></select></label>
         </div>
+        <p class="document-filter-status" data-document-filter-status aria-live="polite"></p>
       </section>
       <section class="section section-muted">
         <div class="section-header">
@@ -265,6 +267,8 @@
   const cards = Array.from(document.querySelectorAll("[data-document-card]"));
   const filters = Array.from(document.querySelectorAll("[data-document-filter]"));
   const sort = document.querySelector("[data-document-sort]");
+  const search = document.querySelector("[data-document-search]");
+  const status = document.querySelector("[data-document-filter-status]");
   const matches = (card, key, value) => {
     if (!value) return true;
     if (key === "type") return card.dataset.type === value;
@@ -278,8 +282,22 @@
   };
   const apply = () => {
     const active = Object.fromEntries(filters.map((input) => [input.dataset.documentFilter, input.value]));
+    const query = (search?.value || "").trim().toLowerCase();
+    let visibleCount = 0;
     cards.forEach((card) => {
-      card.hidden = !Object.entries(active).every(([key, value]) => matches(card, key, value));
+      const filterMatch = Object.entries(active).every(([key, value]) => matches(card, key, value));
+      const searchMatch = !query || [
+        card.textContent,
+        card.dataset.type,
+        card.dataset.status,
+        card.dataset.level,
+        card.dataset.audience,
+        card.dataset.topics,
+        card.dataset.methods,
+        card.dataset.fields,
+      ].join(" ").toLowerCase().includes(query);
+      card.hidden = !(filterMatch && searchMatch);
+      if (!card.hidden) visibleCount += 1;
     });
     const sorter = sort?.value || "editorial";
     document.querySelectorAll(".document-card-grid").forEach((grid) => {
@@ -291,8 +309,10 @@
         return Number(a.dataset.order || 999) - Number(b.dataset.order || 999);
       }).forEach((card) => grid.appendChild(card));
     });
+    if (status) status.textContent = visibleCount + " Dokumente gefunden.";
   };
   filters.forEach((input) => input.addEventListener("change", apply));
+  search?.addEventListener("input", apply);
   sort?.addEventListener("change", apply);
   apply();
 })();

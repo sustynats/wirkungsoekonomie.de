@@ -749,6 +749,37 @@ document.addEventListener("journal:rendered", () => {
   applyBlogFilter();
 });
 
+function initOnlineDocumentSearch() {
+  const input = document.querySelector("[data-online-document-search]");
+  const status = document.querySelector("[data-online-document-status]");
+  const list = document.querySelector("[data-online-document-list]");
+  if (!input || !list) {
+    return;
+  }
+
+  const cards = Array.from(list.querySelectorAll(".info-card, .document-card, article"));
+  const apply = () => {
+    const query = input.value.trim().toLowerCase();
+    let visibleCount = 0;
+    cards.forEach((card) => {
+      const haystack = `${card.getAttribute("data-search") || ""} ${card.textContent || ""}`.toLowerCase();
+      const visible = !query || haystack.includes(query);
+      card.hidden = !visible;
+      if (visible) {
+        visibleCount += 1;
+      }
+    });
+    if (status) {
+      status.textContent = `${visibleCount} Dokumente gefunden.`;
+    }
+  };
+
+  input.addEventListener("input", apply);
+  apply();
+}
+
+initOnlineDocumentSearch();
+
 const downloadCards = Array.from(document.querySelectorAll("[data-download-card]"));
 const downloadFilterButtons = Array.from(document.querySelectorAll("[data-download-filter]"));
 const downloadSearchInput = document.querySelector("[data-download-search]");
@@ -1295,19 +1326,6 @@ function initGlobalWirkungsradarBridge() {
         ["Faktencheck vs. Folgencheck", "Wahrheit und Wirkung gemeinsam lesen.", "akademie/wirkungsradar/"],
         ["Narrative und Frames", "Wiederkehrende Muster öffentlicher Aussagen erkennen.", "wirkungsradar/narrative/"],
         ["Live-Antworten", "Ruhig antworten, ohne ins Stöckchen zu springen.", "wirkungsradar/live/"],
-      ],
-    },
-    {
-      test: () => /\/(bibliothek|downloads|dokumente|referenz|werkstatt|fachbibliothek|buch)/.test(normalizedPath),
-      kicker: "Wirkungsradar-Dossiers",
-      title: "Dossiers zu Mythen, Narrativen und öffentlichen Aussagen.",
-      text:
-        "Die Bibliothek bündelt Wirkungsradar-Dossiers mit Faktenlage, psychologischem Wirkungscheck, Wirkungspfad, Folgenanalyse, Quellenstand und wirkungsökonomischer Antwort.",
-      ctas: [["Dossier-Index öffnen", "bibliothek/wirkungsradar-dossiers/"], ["Detailanalysen ansehen", "wirkungsradar/detail/"]],
-      cards: [
-        ["Sprache als Wirkstoff", "Wie öffentliche Sprache Resonanzräume öffnet.", "wirkungsradar/narrative/sprachmuster-und-emotionalisierung/"],
-        ["CO₂-Systemkosten", "Vom Preisframe zur Folgekostenanalyse.", "wirkungsradar/detail/co2-preis-oder-fossile-systemkosten/"],
-        ["Demokratie & Öffentlichkeit", "Medien, Wissenschaft, Meinungsfreiheit und Vertrauen.", "wirkungsradar/themen/demokratie-oeffentlichkeit/"],
       ],
     },
     {
