@@ -2027,6 +2027,47 @@ body.nav-is-open {
   text-underline-offset: 0.18em;
 }
 
+.radar-subnav,
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.radar-subnav {
+  width: min(calc(100% - (2 * var(--space-gutter))), var(--container));
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.radar-subnav .pill-link,
+.pill-row .pill-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--green);
+  font-weight: 800;
+  line-height: 1.15;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.radar-subnav .pill-link:hover,
+.radar-subnav .pill-link:focus-visible,
+.pill-row .pill-link:hover,
+.pill-row .pill-link:focus-visible {
+  border-color: var(--green);
+  background: var(--mint);
+  color: var(--green-dark);
+}
+
 .topic-subnav {
   display: flex;
   flex-wrap: wrap;
