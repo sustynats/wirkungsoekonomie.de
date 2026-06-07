@@ -11,7 +11,7 @@ const MASTER_DOCX =
   process.env.WOEK_DEBATTENKARTEN_MASTER_DOCX ||
   (fs.existsSync(MASTER_DOCX_V2) ? MASTER_DOCX_V2 : MASTER_DOCX_LEGACY);
 const PUBLIC_BASE = "https://wirkungsoekonomie.de";
-const DATA_STAND = "2026-06-05";
+const DATA_STAND = "2026-06-07";
 const CSS_VERSION = "20260605-master-debattenkarten";
 const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
 
@@ -1271,7 +1271,7 @@ function renderReport(cards, routeStateBeforeWrite) {
     acc[card.category] = (acc[card.category] || 0) + 1;
     return acc;
   }, {})).sort((a, b) => a[0].localeCompare(b[0], "de"));
-  return `# Debattenkarten Website 2.0 Integration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Karten im Textmaster: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen angelegt: ${newCards.length}\n- Interne Quelle: \`${path.basename(MASTER_DOCX)}\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ - ${card.title}`).join("\n") || "- Keine"}\n\n## Hinweise\n\n- Öffentliche Seiten zeigen keine internen Arbeitslabels.\n- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.\n- Bestehende Routen bleiben erhalten und werden in den 2.0-Contract überführt.\n`;
+  return `# Debattenkarten-Integration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Karten im Textmaster: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen angelegt: ${newCards.length}\n- Interne Quelle: \`${path.basename(MASTER_DOCX)}\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ - ${card.title}`).join("\n") || "- Keine"}\n\n## Hinweise\n\n- Öffentliche Seiten zeigen keine internen Arbeitslabels.\n- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.\n- Bestehende Routen bleiben erhalten und werden in den aktuellen Debatten-Kompass-Aufbau überführt.\n`;
 }
 
 function isTracked(filePath) {
