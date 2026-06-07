@@ -795,7 +795,7 @@ function parseCardsFromTextV2(rawText) {
       redirectTarget,
       cluster: match.cluster,
       category: clusterLabels[match.cluster] || match.cluster,
-      editorialStatus: "Website 2.0",
+      editorialStatus: "redaktionell geprüft",
       shortJudgement: subtitle,
       claim: {
         statement: valueBetween(claim, "Behauptung:", ["Implizite Botschaft:"]),
@@ -1045,7 +1045,7 @@ function shell({ title, description, canonical, base, main, searchType = "Debatt
         <div>
           <p class="hero-kicker">Debatten-Kompass</p>
           <h2>Werkzeug statt Kartenfriedhof.</h2>
-          <p>Diese Debattenkarte folgt dem Website-2.0-Contract: Behauptung verstehen, Sofortantwort finden, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p>
+          <p>Diese Debattenkarte folgt dem redaktionellen Debatten-Kompass-Aufbau: Behauptung verstehen, Sofortantwort finden, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p>
           <p><a class="text-link" href="${base}wirkungsradar/methode/">Methode</a> · <a class="text-link" href="${base}wirkungsradar/debattenkarten/">Alle Debattenkarten</a> · <a class="text-link" href="${base}mitmachen.html">Kontakt und Mitmachen</a></p>
         </div>
         <a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a>
@@ -1162,7 +1162,7 @@ function renderCardPageV2(card, mode = "live") {
         <p class="hero-kicker">Debattenkarte · ${esc(card.category)}</p>
         <h1 class="hero-title">${esc(card.title)}</h1>
         <p class="hero-subtitle">${esc(card.shortJudgement)}</p>
-        <p class="radar-status-line"><span>Website 2.0</span><span>Datenstand: ${DATA_STAND}</span></p>
+        <p class="radar-status-line"><span>Datenstand: ${DATA_STAND}</span></p>
         ${guardLine}
       </div>
     </section>
@@ -1253,10 +1253,10 @@ function renderIndex(cards, mode = "live") {
   const base = mode === "live" ? "../../" : "../../";
   const clusters = [...new Set(cards.map((card) => card.category))].sort((a, b) => a.localeCompare(b, "de"));
   const cardHtml = cards.map((card) => `<article class="card radar-sprint-card" data-radar-card data-topic="${attr(card.category)}" data-search="${attr([card.title, card.shortJudgement, card.trueCore, card.falseJump, card.betterQuestion, card.systemLever, card.category].join(" "))}"><div class="radar-card-badges"><span>${esc(card.category)}</span><span>${esc(card.editorialStatus)}</span></div><h3 class="card-title">${esc(card.title)}</h3><p class="radar-card-judgement">${esc(card.shortJudgement)}</p><p class="card-text"><strong>10 Sekunden:</strong> ${esc(card.answers.seconds10)}</p><div class="radar-card-actions"><a class="btn btn-primary" href="${mode === "live" ? "" : "../live/"}${card.slug}/">Antwort öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(card.answers.seconds10)}'>Kurzantwort kopieren</button></div></article>`).join("");
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a></nav><p class="hero-kicker">Debatten-Kompass</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten im Website-2.0-Format: Behauptung verstehen, Sofortantwort finden, Folgencheck und Wirkpfad vertiefen.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Behauptung verstehen. Antwort finden.</h2><p>Jede Karte folgt derselben Reihenfolge: Behauptung, Sofortantwort, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p></div><div class="card-grid three" data-live-grid>${cardHtml}</div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a></nav><p class="hero-kicker">Debatten-Kompass</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten: Behauptung verstehen, Sofortantwort finden, Folgencheck und Wirkpfad vertiefen.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Behauptung verstehen. Antwort finden.</h2><p>Jede Karte folgt derselben Reihenfolge: Behauptung, Sofortantwort, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p></div><div class="card-grid three" data-live-grid>${cardHtml}</div></div></section>`;
   return shell({
     title: "Debattenkarten",
-    description: `${cards.length} Debattenkarten im Website-2.0-Format.`,
+    description: `${cards.length} Debattenkarten: Behauptung verstehen, Sofortantwort finden, Folgencheck und Wirkpfad vertiefen.`,
     canonical: `${PUBLIC_BASE}/wirkungsradar/${mode}/`,
     base,
     main,
@@ -1301,8 +1301,8 @@ function normalizeLegacyPublicLabels() {
       .replace(/Wirkungsradar-Live/g, "Debatten-Kompass")
       .replace(/Live-Karten/g, "Antwortkarten")
       .replace(/v3 Antwortformat/g, "Antwortformat")
-      .replace(/aus Masterquelle integriert(?: · P0 gerettet)?/g, "Website 2.0")
-      .replace(/redaktionelle Ergänzung aus Masterquelle/g, "Website 2.0")
+      .replace(/aus Masterquelle integriert(?: · P0 gerettet)?/g, "redaktionell geprüft")
+      .replace(/redaktionelle Ergänzung aus Masterquelle/g, "redaktionell geprüft")
       .replace(/Masterquelle: [^<]+/g, `Datenstand: ${DATA_STAND}`)
       .replace(/Gute Rückfrage/g, "Kritische Frage")
       .replace(/Gute Rueckfrage/g, "Kritische Frage");

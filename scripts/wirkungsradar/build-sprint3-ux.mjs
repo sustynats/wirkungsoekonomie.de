@@ -169,7 +169,7 @@ function card(dossier, { base = "live/", compact = false } = {}) {
     ...(synonymMap[dossier.slug] || []),
   ].join(" ");
   return `<article class="card radar-sprint-card" data-radar-card data-topic="${attr(topicFor(dossier))}" data-status="checked_v2_positive_examples" data-source="${attr(sourceStatus(dossier))}" data-search="${attr(search)}">
-    <div class="radar-card-badges"><span>${esc(topicFor(dossier))}</span><span>${esc(narrativeFor(dossier))}</span><span>Website 2.0</span><span>mit Quellenstand</span></div>
+    <div class="radar-card-badges"><span>${esc(topicFor(dossier))}</span><span>${esc(narrativeFor(dossier))}</span><span>mit Quellenstand</span></div>
     <h3 class="card-title">${esc(dossier.title)}</h3>
     <p class="radar-card-judgement">${esc(dossier.cockpit.shortJudgement)}</p>
     <p class="card-text"><strong>Sag das jetzt:</strong> ${esc(dossier.cockpit.sayThisNow)}</p>
