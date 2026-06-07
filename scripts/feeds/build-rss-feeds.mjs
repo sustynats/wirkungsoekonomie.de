@@ -13,6 +13,7 @@ const feedSpecs = [
     description: "Neue und aktualisierte Inhalte zum öffentlichen Wirkungsraum: Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator und Resilienz-Prinzipien.",
     patterns: [
       "oeffentlicher-wirkungsraum/index.html",
+      "oeffentlicher-wirkungsraum/*/index.html",
       "wirkungsradar/index.html",
       "wirkungsradar/live/index.html",
       "wirkungsradar/live/*/index.html",

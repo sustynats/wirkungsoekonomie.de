@@ -4064,12 +4064,12 @@ const WoekUserSpace = (() => {
 
 const WirkungsraumLayer = (() => {
   const relevantPathPattern =
-    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|oeffentlicher-wirkungsraum|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
   const progressScopePattern =
-    /\/(referenz|buch|dokumente|downloads|bibliothek|akademie|portale)\b|\/(buch|akademie|downloads)\.html$/;
+    /\/(referenz|buch|dokumente|downloads|bibliothek|akademie|portale|oeffentlicher-wirkungsraum)\b|\/(buch|akademie|downloads)\.html$/;
   const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
   const noteScopePattern =
-    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|oeffentlicher-wirkungsraum|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
 
   function canonicalPath() {
     return window.location.pathname.replace(/\/index\.html$/, "/");
@@ -4085,6 +4085,7 @@ const WirkungsraumLayer = (() => {
     if (path.includes("/wirkungsradar/")) return "Debatte";
     if (path.includes("/begriffe/") || path.includes("/glossar")) return "Begriff";
     if (path.includes("/referenz/") || path.includes("/buch")) return "Kapitel";
+    if (path.includes("/oeffentlicher-wirkungsraum/")) return "Dossier";
     if (path.includes("/dossiers/") || path.includes("/portale/")) return "Dossier";
     if (path.includes("/bibliothek/") || path.includes("/downloads") || path.includes("/dokumente") || path.includes("/werkstatt/") || path.includes("/wissen/")) return "Dokument";
     if (path.includes("/werkzeuge/") || path.includes("/tools/")) return "Werkzeug";
@@ -4186,7 +4187,7 @@ const WirkungsraumLayer = (() => {
     row.dataset.wirkungsraumActionsRow = "true";
 
     const heroCopy = document.querySelector(
-      ".hero-copy, .radar-hero-copy, .term-hero__copy, .document-detail-hero, .portal-hero__copy, .section-header"
+      ".hero-copy, .radar-hero-copy, .radar-page-hero > div, .term-hero__copy, .document-detail-hero, .portal-hero__copy, .hero-content, .section-header"
     );
     if (heroCopy) {
       heroCopy.append(row);

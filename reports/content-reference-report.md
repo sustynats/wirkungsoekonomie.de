@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-07T10:52:30.184Z
-Resolved references: 6943
-Warnings: 2772
+Erzeugt: 2026-06-07T11:31:38.492Z
+Resolved references: 6948
+Warnings: 2762
 
 ## Warnungen
 
@@ -423,8 +423,6 @@ Warnings: 2772
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] /blog/kognitive-dissonanz-als-wirkungsbremse/ - Titel aus Slug erzeugt
-- [unresolved-reference] /blog/kognitive-dissonanz-als-wirkungsbremse/ - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
@@ -497,6 +495,8 @@ Warnings: 2772
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -1420,6 +1420,7 @@ Warnings: 2772
 - /blog/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.html -> Wenn Kommunikation Realität formt – Wirkung als neue demokratische Leitkategorie (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> Wirkung statt Weltbild – eine wirkungsökonomische Analyse des AfD-Regierungsprogramms (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html -> Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik (Journalartikel, Beschreibung: ja)
+- /blog/kognitive-dissonanz-als-wirkungsbremse/ -> Warum Fakten nicht reichen: Kognitive Dissonanz als Wirkungsbremse (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -1508,4 +1509,3 @@ Warnings: 2772
 - /referenz/kapitel-049-ehrliche-preise/#woek-main-2026-k049-s001 -> Kapitel 49: Ehrliche Preise (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-048-produkte-als-wirkungstraeger/#woek-main-2026-k048-s001 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)

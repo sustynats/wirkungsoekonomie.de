@@ -5,8 +5,8 @@ Stand: 2026-06-07
 ## Ergebnis
 
 - Karten im Textmaster: 124
-- Bestehende Live-Routen überschrieben/aktualisiert: 123
-- Neue Live-Routen angelegt: 1
+- Bestehende Live-Routen überschrieben/aktualisiert: 124
+- Neue Live-Routen angelegt: 0
 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
 ## Cluster
@@ -30,7 +30,7 @@ Stand: 2026-06-07
 
 ## Neue Routen
 
-- /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ - Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren
+- Keine
 
 ## Hinweise
 
