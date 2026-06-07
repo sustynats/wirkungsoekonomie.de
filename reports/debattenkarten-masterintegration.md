@@ -4,8 +4,8 @@ Stand: 2026-06-07
 
 ## Ergebnis
 
-- Karten im Textmaster: 122
-- Bestehende Live-Routen überschrieben/aktualisiert: 121
+- Karten im Textmaster: 123
+- Bestehende Live-Routen überschrieben/aktualisiert: 122
 - Neue Live-Routen angelegt: 1
 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
@@ -13,7 +13,7 @@ Stand: 2026-06-07
 
 - Arbeit & Sozialstaat: 8
 - Ausland & Sicherheit: 6
-- Demokratie & Öffentlichkeit: 20
+- Demokratie & Öffentlichkeit: 21
 - Digitalisierung & KI: 8
 - Gesundheit & Pflege: 7
 - Klima & Energie: 22
@@ -30,7 +30,7 @@ Stand: 2026-06-07
 
 ## Neue Routen
 
-- /wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/ - Corona-Verschwörung? War die Pandemie geplant?
+- /wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/ - Die AfD ist für den kleinen Mann da?
 
 ## Hinweise
 

@@ -82,6 +82,7 @@
     "report:wirkungsradar": "npm run audit:wirkungsradar-v2 && npm run check:wirkungsradar-links && npm run check:wirkungsradar-sources && npm run check:glossary",
     "qa:normalize": "node scripts/quality/apply-publication-qa-normalization.mjs",
     "build:wirkungsradar-open": "node scripts/wirkungsradar/build-open-radar-packages.mjs",
+    "debate:import-card": "node scripts/wirkungsradar/import-single-debattenkarte.mjs && node scripts/wirkungsradar/apply-master-debattenkarten.mjs",
     "build:audio-metadata": "node scripts/audio/build-audio-metadata.mjs",
     "build:feeds": "node scripts/feeds/build-rss-feeds.mjs"
   }
