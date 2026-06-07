@@ -1,20 +1,20 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-07T09:58:14.964Z
+Stand: 2026-06-07T10:53:45.346Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Wirkungsradar-Seiten gesamt | 653 |
-| Debattenseiten vereinheitlicht | 120 |
+| Wirkungsradar-Seiten gesamt | 655 |
+| Debattenseiten vereinheitlicht | 121 |
 | Qualitätsstufe A | 0 |
 | Qualitätsstufe B | 0 |
-| Qualitätsstufe C | 120 |
+| Qualitätsstufe C | 121 |
 | Qualitätsstufe D | 0 |
-| Kanonische Narrative | 121 |
-| Dubletten / Kandidaten | 407 |
-| Zusammengeführt | 150 |
+| Kanonische Narrative | 122 |
+| Dubletten / Kandidaten | 409 |
+| Zusammengeführt | 151 |
 | Synonyme | 46 |
-| Redirects | 150 |
+| Redirects | 151 |
 
 ## Seitenprüfung
 
@@ -134,6 +134,7 @@ Stand: 2026-06-07T09:58:14.964Z
 | /wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wasserstoff-fuer-alles/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | C | ja | ja | ja | ja | nein | ja |
+| /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wirkungsoekonomie-planwirtschaft/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wirkungsoekonomie-social-credit/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wirkungsteuer-macht-alles-teurer/ | C | ja | ja | ja | ja | nein | ja |

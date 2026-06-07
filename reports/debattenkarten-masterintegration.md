@@ -4,16 +4,16 @@ Stand: 2026-06-07
 
 ## Ergebnis
 
-- Karten im Textmaster: 123
+- Karten im Textmaster: 124
 - Bestehende Live-Routen überschrieben/aktualisiert: 123
-- Neue Live-Routen angelegt: 0
+- Neue Live-Routen angelegt: 1
 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
 ## Cluster
 
 - Arbeit & Sozialstaat: 8
 - Ausland & Sicherheit: 6
-- Demokratie & Öffentlichkeit: 21
+- Demokratie & Öffentlichkeit: 22
 - Digitalisierung & KI: 8
 - Gesundheit & Pflege: 7
 - Klima & Energie: 22
@@ -30,7 +30,7 @@ Stand: 2026-06-07
 
 ## Neue Routen
 
-- Keine
+- /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ - Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren
 
 ## Hinweise
 

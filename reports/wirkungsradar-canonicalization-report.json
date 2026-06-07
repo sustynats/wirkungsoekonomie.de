@@ -1,14 +1,14 @@
 {
   "version": "20260604-radar-canonical-p0",
-  "generatedAt": "2026-06-07T09:58:14.585Z",
+  "generatedAt": "2026-06-07T10:53:44.959Z",
   "counts": {
-    "radarPages": 653,
-    "claimPages": 272,
-    "canonicalNarratives": 121,
-    "duplicates": 407,
-    "merged": 150,
+    "radarPages": 655,
+    "claimPages": 274,
+    "canonicalNarratives": 122,
+    "duplicates": 409,
+    "merged": 151,
     "synonyms": 46,
-    "redirects": 150
+    "redirects": 151
   },
   "inventory": [
     {
@@ -2298,6 +2298,15 @@
       ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/"
+    },
+    {
+      "url": "/wirkungsradar/detail/wirkungsabwehr-dissonanzrationalisierung/",
+      "title": "Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren",
+      "slug": "wirkungsabwehr-dissonanzrationalisierung",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/"
     },
     {
       "url": "/wirkungsradar/detail/wirkungsoekonomie-planwirtschaft/",
@@ -5402,6 +5411,23 @@
       ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/"
+    },
+    {
+      "url": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/",
+      "title": "Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren",
+      "slug": "wirkungsabwehr-dissonanzrationalisierung",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/"
     },
     {
       "url": "/wirkungsradar/live/wirkungsoekonomie-planwirtschaft/",
@@ -10206,6 +10232,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/wirkungsabwehr-dissonanzrationalisierung/",
+        "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/wirkungsoekonomie-planwirtschaft/",
         "/wirkungsradar/live/wirkungsoekonomie-planwirtschaft/"
       ],
@@ -12309,6 +12343,11 @@
       "from": "/wirkungsradar/detail/windraeder-zerstoeren-natur/",
       "to": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/",
       "title": "Windräder zerstören Natur"
+    },
+    {
+      "from": "/wirkungsradar/detail/wirkungsabwehr-dissonanzrationalisierung/",
+      "to": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/",
+      "title": "Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren"
     },
     {
       "from": "/wirkungsradar/detail/wirkungsoekonomie-planwirtschaft/",

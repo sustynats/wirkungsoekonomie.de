@@ -1,19 +1,19 @@
 {
   "version": "20260606-nav-cache-fix",
-  "generatedAt": "2026-06-07T09:58:14.964Z",
+  "generatedAt": "2026-06-07T10:53:45.346Z",
   "rule": "Eine Aussage = eine kanonische Seite. Debattenseiten folgen dem DebateCompassPageTemplate.",
   "counts": {
-    "totalRadarPages": 653,
-    "debatePages": 120,
+    "totalRadarPages": 655,
+    "debatePages": 121,
     "A": 0,
     "B": 0,
-    "C": 120,
+    "C": 121,
     "D": 0,
-    "canonicalNarratives": 121,
-    "duplicates": 407,
-    "merged": 150,
+    "canonicalNarratives": 122,
+    "duplicates": 409,
+    "merged": 151,
     "synonyms": 46,
-    "redirects": 150
+    "redirects": 151
   },
   "normalizedGeneralPages": 41,
   "inventory": [
@@ -1088,6 +1088,14 @@
       "tags": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/"
+    },
+    {
+      "url": "/wirkungsradar/detail/wirkungsabwehr-dissonanzrationalisierung/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "wirkungsabwehr-dissonanzrationalisierung",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/"
     },
     {
       "url": "/wirkungsradar/detail/wirkungsoekonomie-planwirtschaft/",
@@ -2584,6 +2592,14 @@
       "tags": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/"
+    },
+    {
+      "url": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/",
+      "title": "Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren",
+      "slug": "wirkungsabwehr-dissonanzrationalisierung",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/"
     },
     {
       "url": "/wirkungsradar/live/wirkungsoekonomie-planwirtschaft/",
@@ -7718,6 +7734,27 @@
       "quality": "C"
     },
     {
+      "url": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/",
+      "title": "Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren",
+      "slug": "wirkungsabwehr-dissonanzrationalisierung",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": false,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": false,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "C"
+    },
+    {
       "url": "/wirkungsradar/live/wirkungsoekonomie-planwirtschaft/",
       "title": "Wirkungsökonomie ist Planwirtschaft?",
       "slug": "wirkungsoekonomie-planwirtschaft",
@@ -8864,6 +8901,15 @@
     },
     {
       "url": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/",
+      "quality": "C",
+      "missingSources": false,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
+    },
+    {
+      "url": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/",
       "quality": "C",
       "missingSources": false,
       "missingOrders": false,

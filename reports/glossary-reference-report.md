@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-07T09:56:59.953Z
-- Content pages scanned: 1009
-- Glossary terms indexed: 1407
-- Warnings: 588
+- Generated: 2026-06-07T10:52:29.092Z
+- Content pages scanned: 1010
+- Glossary terms indexed: 1409
+- Warnings: 587
 
 ## Stichproben
 
@@ -348,7 +348,6 @@
 - term has no content references: momentanreserve
 - term has no content references: monetarismus
 - term has no content references: moral-hazard
-- term has no content references: moral-licensing
 - term has no content references: muslimfeindlichkeit
 - term has no content references: nachtwaechterstaat
 - term has no content references: natalitaet
@@ -359,4 +358,5 @@
 - term has no content references: nca-batterie
 - term has no content references: negative-externalitaet
 - term has no content references: negative-freiheit
-- ... 288 weitere Warnungen
+- term has no content references: negativitaetsbias
+- ... 287 weitere Warnungen

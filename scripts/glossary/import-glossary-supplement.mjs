@@ -387,9 +387,17 @@ registry.sourceNote = unique([
 registry.terms = terms;
 writeJson(REGISTRY_FILE, registry);
 
+function reportSlugForImport(filePath) {
+  return path.basename(filePath, path.extname(filePath))
+    .toLocaleLowerCase("de")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "glossar-import";
+}
+
 fs.mkdirSync(path.join(ROOT, "reports"), { recursive: true });
-const reportPath = path.join(ROOT, "reports/glossary-import-recht-wirtschaft-innovation-klima.md");
-fs.writeFileSync(reportPath, `# Glossar-Import Recht, Wirtschaft, Innovation, Klima
+const reportTitle = importData.sourceDocument || path.basename(IMPORT_FILE);
+const reportPath = path.join(ROOT, "reports", `glossary-import-${reportSlugForImport(IMPORT_FILE)}.md`);
+fs.writeFileSync(reportPath, `# Glossar-Import ${reportTitle}
 
 Stand: ${DATA_STAND}
 

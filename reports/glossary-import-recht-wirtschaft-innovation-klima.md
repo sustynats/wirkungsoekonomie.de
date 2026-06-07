@@ -1,4 +1,4 @@
-# Glossar-Import Recht, Wirtschaft, Innovation, Klima
+# Glossar-Import CodeX_WOeK_Glossar_Erweiterung_Recht_Wirtschaft_Innovation_Klima.docx
 
 Stand: 2026-06-07
 

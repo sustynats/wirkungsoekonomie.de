@@ -1,16 +1,16 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-07T09:58:14.585Z
+Stand: 2026-06-07T10:53:44.959Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Radar-Seiten | 653 |
-| Claim-Seiten | 272 |
-| Kanonische Narrative | 121 |
-| Dubletten / Kandidaten | 407 |
-| Zusammengeführt | 150 |
+| Radar-Seiten | 655 |
+| Claim-Seiten | 274 |
+| Kanonische Narrative | 122 |
+| Dubletten / Kandidaten | 409 |
+| Zusammengeführt | 151 |
 | Synonyme | 46 |
-| Redirects | 150 |
+| Redirects | 151 |
 
 ## Zusammenführungen
 
@@ -145,6 +145,7 @@ Stand: 2026-06-07T09:58:14.585Z
 | /wirkungsradar/detail/wasserstoff-fuer-alles/ | /wirkungsradar/live/wasserstoff-fuer-alles/ | Wasserstoff für alles? |
 | /wirkungsradar/detail/windraeder-voegel-wald-beton-rueckbau/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | Windräder zerstören Natur? |
 | /wirkungsradar/detail/windraeder-zerstoeren-natur/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | Windräder zerstören Natur |
+| /wirkungsradar/detail/wirkungsabwehr-dissonanzrationalisierung/ | /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ | Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren |
 | /wirkungsradar/detail/wirkungsoekonomie-planwirtschaft/ | /wirkungsradar/live/wirkungsoekonomie-planwirtschaft/ | „Wirkungsökonomie ist Planwirtschaft“ |
 | /wirkungsradar/detail/wirkungsoekonomie-social-credit/ | /wirkungsradar/live/wirkungsoekonomie-social-credit/ | „Wirkungsökonomie ist Social Credit“ |
 | /wirkungsradar/detail/wirkungsteuer-macht-alles-teurer/ | /wirkungsradar/live/wirkungsteuer-macht-alles-teurer/ | Wirkungsteuer macht alles teurer? |
