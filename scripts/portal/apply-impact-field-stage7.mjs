@@ -268,8 +268,8 @@ function overviewMain(fromFile) {
           </div>
           <aside class="card">
             <p class="card-kicker">Orientierung</p>
-            <h2 class="card-title">Kein Wirkungsfeld wurde entfernt.</h2>
-            <p class="card-text">Alle bisherigen Wirkungsfeldseiten bleiben erreichbar. Die Cluster sind eine Navigationshilfe, keine fachliche Abwertung oder neue Zuständigkeit.</p>
+            <h2 class="card-title">Suchräume statt Ressorts.</h2>
+            <p class="card-text">Die Wirkungsfelder helfen, eine Frage schneller einzuordnen: Betrifft sie Alltag, Planet, Wirtschaft, Staat, Öffentlichkeit, Wissen oder Kapital?</p>
           </aside>
         </div>
       </section>

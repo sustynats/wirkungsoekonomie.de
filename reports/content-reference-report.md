@@ -1,7 +1,7 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-07T22:14:34.259Z
-Resolved references: 7130
+Erzeugt: 2026-06-07T23:36:26.421Z
+Resolved references: 7136
 Warnings: 2718
 
 ## Warnungen
@@ -1444,6 +1444,7 @@ Warnings: 2718
 - /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> Wirkung statt Weltbild – eine wirkungsökonomische Analyse des AfD-Regierungsprogramms (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html -> Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik (Journalartikel, Beschreibung: ja)
 - /blog/kognitive-dissonanz-als-wirkungsbremse/ -> Warum Fakten nicht reichen: Kognitive Dissonanz als Wirkungsbremse (Journalartikel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -1508,4 +1509,3 @@ Warnings: 2718
 - /werkzeuge/automatisierungsdividenden-rechner/ -> Automatisierungsdividenden-Rechner (Methode, Beschreibung: ja)
 - /werkzeuge/esg-zu-woek-mapping/ -> ESG-zu-WÖk-Mapping (Methode, Beschreibung: ja)
 - /werkzeuge/kapitalwirkungscheck/ -> Kapitalwirkungscheck (Methode, Beschreibung: ja)
-- /werkzeuge/portfolio-wirkungsrating/ -> Portfolio-Wirkungsrating (Methode, Beschreibung: ja)

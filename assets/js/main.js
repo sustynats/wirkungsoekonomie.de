@@ -105,7 +105,7 @@ if (navToggle && siteNav) {
   });
 }
 
-if (siteNav && !document.querySelector(".site-search-shortcut") && !Array.from(siteNav.querySelectorAll("a")).some((link) => /suche\.html/.test(link.getAttribute("href") || ""))) {
+if (siteNav && !document.querySelector(".site-search-shortcut") && !Array.from(document.querySelectorAll(".site-header a")).some((link) => /suche\.html/.test(link.getAttribute("href") || ""))) {
   const searchLink = document.createElement("a");
   searchLink.href = relativeSiteUrl("suche.html");
   searchLink.className = "site-search-shortcut";
@@ -119,7 +119,7 @@ if (siteNav && !document.querySelector(".site-search-shortcut") && !Array.from(s
   siteNav.after(searchLink);
 }
 
-document.querySelectorAll(".site-nav a").forEach((link) => {
+document.querySelectorAll(".site-nav a, .site-utility-nav a, .site-nav-utility a").forEach((link) => {
   if (!(link instanceof HTMLAnchorElement)) {
     return;
   }

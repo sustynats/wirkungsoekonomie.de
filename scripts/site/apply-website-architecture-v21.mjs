@@ -380,11 +380,7 @@ function updateNavigation() {
   const next = {
     ...current,
     header,
-    more: [
-      ...utilities,
-      { label: "Updates", href: "updates/", match: ["updates/"] },
-      { label: "Referenz", href: "referenz/", match: ["referenz/"] },
-    ],
+    more: utilities,
     footerGroups,
   };
 
@@ -418,13 +414,6 @@ function renderWirkungsfelderPage() {
         </div>
         ${contextSearch(base, "z. B. Pflege, T-Shirt, Miete, Kapital, Medien, Klima", "wirkungsfelder")}
         ${cardGrid(base, cards)}
-      </section>
-      <section class="section">
-        <div class="card">
-          <p class="card-kicker">Schutzlinie</p>
-          <h2 class="card-title">Kein Wirkungsfeld wurde entfernt.</h2>
-          <p class="card-text">Alle bisherigen Unterseiten bleiben erreichbar. Diese Übersicht korrigiert nur die Orientierung: Wirkungsfelder sind die Suchräume der gesamten Wirkungsökonomie, nicht bloß eine Sammlung einzelner Themen.</p>
-        </div>
       </section>
 `,
   });

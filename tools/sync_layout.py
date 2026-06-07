@@ -14,6 +14,7 @@ NAVIGATION = json.loads((SITE_ROOT / "assets/data/navigation.json").read_text(en
 HEADER_TEMPLATE = (SITE_ROOT / "templates/header.html").read_text(encoding="utf-8")
 FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-8")
 SYNC_EXCLUDED_DIRS = {".git", ".codex-backup", "node_modules", ".next", ".vercel", "__pycache__"}
+HEADER_UTILITY_LABELS = {"Suche", "WÖk-KI", "Mein Wirkungsraum"}
 
 
 HEADER_RE = re.compile(r"\s*<header class=\"site-header\"[^>]*>.*?</header>", re.S)
@@ -80,6 +81,26 @@ def header_nav(base: str) -> str:
     return "\n".join(header_item(item, base) for item in NAVIGATION["header"])
 
 
+def header_utility_items() -> list[dict[str, object]]:
+    return [item for item in NAVIGATION.get("more", []) if str(item.get("label")) in HEADER_UTILITY_LABELS]
+
+
+def header_utility_link(item: dict[str, object], base: str) -> str:
+    label = escape(str(item["label"]))
+    href = escape(f"{base}{item['href']}", quote=True)
+    match = escape(nav_match(item), quote=True)
+    slug = escape(nav_slug(str(item["label"])), quote=True)
+    primary = ' data-utility-primary="true"' if label == "Mein Wirkungsraum" else ""
+    return (
+        f'<a class="site-utility-link site-utility-link--{slug}" href="{href}" '
+        f'data-nav-match="{match}" data-utility-label="{label}"{primary}>{label}</a>'
+    )
+
+
+def header_utility_nav(base: str) -> str:
+    return "\n".join(header_utility_link(item, base) for item in header_utility_items())
+
+
 def footer_group(group: dict[str, object], base: str) -> str:
     title = escape(str(group["title"]))
     links = "\n".join(f"      {line}" for line in nav_links(group["items"], base).splitlines())
@@ -101,6 +122,7 @@ def render(template: str, base: str) -> str:
     rendered = (
         template.replace("{{BASE}}", base)
         .replace("{{HEADER_NAV}}", header_nav(base))
+        .replace("{{HEADER_UTILITY_NAV}}", header_utility_nav(base))
         .replace("{{FOOTER_NAV}}", footer_nav(base))
         .replace("{{FOOTER_LEGAL_NAV}}", nav_links(NAVIGATION["footerLegal"], base))
     )
