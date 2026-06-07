@@ -1104,6 +1104,8 @@ function renderToc() {
     ["#30-sekunden", "30 Sekunden"],
     ["#2-minuten", "2 Minuten"],
     ["#folgencheck", "Folgencheck"],
+    ["#wellenprofil", "Fünf Wellen"],
+    ["#tiefe", "Tiefe"],
     ["#wirkpfad", "Wirkpfad"],
     ["#kritische-fragen", "Kritische Fragen"],
     ["#faktenlage", "Faktenlage"],
@@ -1128,6 +1130,82 @@ function answerAccordion(card) {
     ["2 Minuten", "Systemische Antwort", card.answers.seconds120],
   ];
   return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="sofortantwort" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktion</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist. Die Sekunden sind Kommunikationsstufen, keine Stoppuhr.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${rows.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""} id="${answerId(label)}"><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary>${paragraphize(text)}<button class="copy-chip" type="button" data-copy-text='${attr(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+}
+
+function cardTextForMigration(card) {
+  return cleanText([
+    card.title,
+    card.category,
+    card.hook,
+    card.shortJudgement,
+    card.trueCore,
+    card.falseJump,
+    card.betterQuestion,
+    card.systemLever,
+    card.claim?.statement,
+    card.claim?.implicitMessage,
+    card.claim?.whyImportant,
+    card.consequences?.resonanceRoom,
+    card.consequences?.order1,
+    card.consequences?.order2,
+    card.consequences?.order3,
+    card.whyItWorks,
+  ].filter(Boolean).join(" "));
+}
+
+function inferWaveDepth(card) {
+  const text = cardTextForMigration(card).toLowerCase();
+  const emotions = [];
+  if (/angst|bedroh|unsicher|kriminal|kontrollverlust|sorge|ueberforderung|überforderung/.test(text)) emotions.push("Angst und Überforderung");
+  if (/wut|empoer|empör|abzock|betrug|verrat|ungerecht/.test(text)) emotions.push("Empörung und Kränkung");
+  if (/freiheit|verbot|kontrolle|zensur/.test(text)) emotions.push("Autonomie- und Kontrollgefühl");
+  if (/zugehoer|zugehör|identitaet|identität|wir gegen|die da oben/.test(text)) emotions.push("Zugehörigkeit und Identität");
+  const depth = [];
+  if (/wohn|miete|kommun|verwaltung|infrastruktur/.test(text)) depth.push("Infrastruktur und lokale Umsetzung");
+  if (/preis|kosten|schulden|steuer|kapital|rendite/.test(text)) depth.push("Anreize, Preise und Finanzierung");
+  if (/plattform|medien|algorithm|reichweite|aufmerksamkeit/.test(text)) depth.push("Plattform- und Aufmerksamkeitslogik");
+  if (/vertrauen|institution|demokratie|staat|recht/.test(text)) depth.push("Institutionelles Vertrauen und demokratische Korrekturfähigkeit");
+  if (/klima|energie|fossil|co₂|co2|planet|natur/.test(text)) depth.push("Fossile Pfade, Planet und langfristige Folgekosten");
+  if (/migration|arbeit|pflege|bildung|sozial/.test(text)) depth.push("Teilhabe, Arbeit, Bildung und soziale Infrastruktur");
+  const attentionWeight = /viral|domin|laut|aufmerksamkeit|mainstream|medien|comment|kommentar|talkshow/.test(text) ? "hoch" : "mittel";
+  return {
+    attention: `Die Aussage bündelt Aufmerksamkeit, weil sie einen komplexen Sachverhalt in eine sofort erkennbare Zuspitzung übersetzt. Aufmerksamkeitsgewicht: ${attentionWeight}.`,
+    emotion: emotions.length ? emotions.join(", ") : "Unsicherheit, Vereinfachung und der Wunsch nach Orientierung.",
+    interpretation: card.claim?.implicitMessage || card.falseJump || card.hook || "Die Deutung verkürzt den Wirkungsraum und legt eine schnelle Schlussfolgerung nahe.",
+    resonance: card.consequences?.resonanceRoom || card.whyItWorks || "Resonanz entsteht dort, wo reale Erfahrungen, Wiederholung und ein einfacher Problemrahmen zusammenkommen.",
+    shift: card.consequences?.order2 || card.consequences?.order3 || "Wenn der Frame dominiert, werden bestimmte politische Antworten plausibler und andere Wirkungsfragen leiser.",
+    depth: {
+      causes: depth.length ? depth : ["Ungelöste Systemfragen, unklare Zuständigkeiten und fehlende Rückkopplung"],
+      question: card.betterQuestion || card.effectPath?.betterSystemQuestion || card.systemLever || "Welche Systemfrage liegt unter der sichtbaren Aussage?",
+    },
+  };
+}
+
+function waveDepthBlock(card) {
+  const profile = inferWaveDepth(card);
+  const waves = [
+    ["Aufmerksamkeit", "Was wird sichtbar?", profile.attention],
+    ["Emotion", "Was wird gefühlt?", profile.emotion],
+    ["Deutung", "Was bedeutet es?", profile.interpretation],
+    ["Resonanz", "Wer greift es auf?", profile.resonance],
+    ["Verschiebung", "Was verändert sich?", profile.shift],
+  ];
+  return `<section class="section section-soft" id="wellenprofil" data-wave-depth-block><div><div class="section-header"><p class="hero-kicker">Fünf Wellen öffentlicher Wirkung</p><h2>Wie der Satz im öffentlichen Raum arbeiten kann.</h2><p>Das Wellenprofil ist eine strukturierende Einordnung. Es ersetzt keine Quellenprüfung und unterstellt keine Absicht.</p></div><div class="card-grid two">${waves.map(([kicker, title, text]) => `<article class="card"><p class="card-kicker">${esc(kicker)}</p><h3>${esc(title)}</h3>${paragraphize(text)}</article>`).join("")}</div></div></section>
+    <section class="section" id="tiefe" data-depth-structure-block><div><div class="section-header"><p class="hero-kicker">Tiefe</p><h2>Warum konnte diese Aussage anschlussfähig werden?</h2><p>Die Tiefe fragt nach Erfahrungen, Anreizen, Infrastruktur, Plattformlogik und Systemhebeln unter der sichtbaren Debatte.</p></div><article class="card"><p><strong>Unterliegende Struktur:</strong> ${esc(profile.depth.causes.join(", "))}</p><p><strong>Bessere Systemfrage:</strong> ${esc(profile.depth.question)}</p></article></div></section>`;
+}
+
+function primaryWave(card) {
+  const text = cardTextForMigration(card).toLowerCase();
+  if (/medien|plattform|algorithm|viral|reichweite|aufmerksamkeit|agenda/.test(text)) return "Aufmerksamkeit";
+  if (/angst|wut|empoer|empör|kränkung|kraenkung|kontrollverlust|bedroh/.test(text)) return "Emotion";
+  if (/frame|narrativ|deutung|botschaft|bedeutet|schlussfolgerung/.test(text)) return "Deutung";
+  if (/resonanz|milieu|gruppe|zugehoer|zugehör|identitaet|identität|wiederholung/.test(text)) return "Resonanz";
+  return "Verschiebung";
+}
+
+function depthLabel(card) {
+  const profile = inferWaveDepth(card);
+  return profile.depth.causes[0] || "Systemfrage";
 }
 
 function rescueFactsAndSources(card) {
@@ -1194,6 +1272,7 @@ function renderCardPageV2(card, mode = "live") {
         <article class="card"><p class="card-kicker">Wirkungsökonomische Korrektur</p>${paragraphize(card.consequences.correction)}</article>
       </div>
     </section>
+    ${waveDepthBlock(card)}
     <section class="section" id="wirkpfad"><span id="loesungspfad" class="sr-only">Lösungspfad</span><span id="host-antworten" class="sr-only">Antwortblock</span><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>Wie aus dem Satz Wirkung entstehen kann.</h2></div><article class="card"><ol class="content-list">${pathSteps}</ol></article></div></section>
     <section class="section section-soft" id="kritische-fragen"><div><div class="section-header"><p class="hero-kicker">Kritische Fragen</p><h2>Was berechtigt gefragt werden darf.</h2></div><article class="card"><ul class="content-list">${questions}</ul></article></div></section>
     ${rescueFactsAndSources(card)}
@@ -1234,6 +1313,7 @@ function renderCardPage(card, mode = "live") {
     <section class="section" id="faktenkern"><div><div class="section-header"><p class="hero-kicker">Faktenkern</p><h2>Was stimmt, was fehlt?</h2></div><div class="card-grid two"><article class="card"><p class="card-kicker">Wahrer Kern</p>${paragraphize(card.trueCore)}</article><article class="card"><p class="card-kicker">Falscher Sprung</p>${paragraphize(card.falseJump)}</article></div></div></section>
     <section class="section section-soft" id="frameanalyse"><div><div class="section-header"><p class="hero-kicker">Frameanalyse</p><h2>Welche Geschichte wird erzählt?</h2></div><article class="card">${paragraphize(card.hook)}<p><strong>Systemischer Hebel:</strong> ${esc(card.systemLever)}</p></article></div></section>
     <section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was dieses Narrativ bewirken kann.</h2><p>Wirkungspotenzial wird nicht automatisch als eingetretene Wirkung gelesen. Entscheidend ist der konkrete Wirkpfad.</p></div><div class="card-grid three v3-consequence-orders"><article class="card v3-order-card"><p class="v2-badge">Wirkung 1. Ordnung</p><h3>Wahrnehmung</h3>${paragraphize(card.effectPath.order1)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.falseJump)}</p><p><strong>Wirkungspfad:</strong> Aufmerksamkeit verschiebt sich vom vollständigen Wirkungsraum auf den verkürzten Frame.</p><p><strong>Begründung:</strong> Diese Wirkung ist aus dem Mastertext abgeleitet, nicht aus einer generischen Karte.</p></article><article class="card v3-order-card"><p class="v2-badge">Wirkung 2. Ordnung</p><h3>Entscheidung</h3>${paragraphize(card.effectPath.order2)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.hook)}</p><p><strong>Wirkungspfad:</strong> Der Frame macht bestimmte politische Antworten plausibler und andere unsichtbarer.</p><p><strong>Begründung:</strong> Der zweite Schritt beschreibt Anschlussentscheidungen und Nebenwirkungen.</p></article><article class="card v3-order-card"><p class="v2-badge">Wirkung 3. Ordnung</p><h3>Systempfad</h3>${paragraphize(card.effectPath.order3)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> Wiederholung stabilisiert die verkürzte Deutung.</p><p><strong>Wirkungspfad:</strong> Öffentlicher Diskurs, Investitionen, Regeln und Vertrauen folgen dem falschen Problemzuschnitt.</p><p><strong>Begründung:</strong> Der Langfristpfad zeigt, was passiert, wenn der Frame Lernfähigkeit ersetzt.</p></article></div></div></section>
+    ${waveDepthBlock(card)}
     <section class="section" id="wirkpfad"><span id="loesungspfad" class="sr-only">Lösungspfad</span><span id="host-antworten" class="sr-only">Antwortblock</span><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>Mensch, Planet und Demokratie.</h2></div><article class="card">${paragraphize(card.effectPath.mpd)}<p><strong>Wirkungsökonomische Einordnung:</strong> Die Karte prüft, ob die Aussage Wahrnehmung, Entscheidung und Rückkopplung so verändert, dass positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher oder unwahrscheinlicher wird.</p></article></div></section>
     <section class="section section-soft" id="kritische-fragen"><span id="einwaende" class="sr-only">Einwände</span><div><div class="section-header"><p class="hero-kicker">Einwände und Antwortlinien</p><h2>Was berechtigt kritisch gefragt werden darf.</h2></div><div class="card-grid two">${card.objections.length ? card.objections.map((item) => `<article class="card"><p class="card-kicker">Einwand</p><h3>${esc(item.objection)}</h3>${paragraphize(item.answer)}</article>`).join("") : `<article class="card"><p>Konkrete Einwände werden redaktionell weiter ergänzt. Die bessere Prüfspur steht im Faktenkern, Wirkpfad und in den Prüfhinweisen.</p></article>`}</div></div></section>
     <section class="section" id="loesung"><div><div class="section-header"><p class="hero-kicker">Besserer Frame</p><h2>Was macht den Zustand besser?</h2></div><article class="card"><p><strong>Bessere Frage:</strong> ${esc(card.betterQuestion)}</p><p><strong>Systemischer Hebel:</strong> ${esc(card.systemLever)}</p>${card.moderation["Konkreten Hebel anbieten"] ? `<p><strong>Konkreter Hebel:</strong> ${esc(card.moderation["Konkreten Hebel anbieten"])}</p>` : ""}${card.moderation["Zum Schluss nicht demütigen. Eine gute Antwort lässt dem Gegenüber eine Brücke zurück in eine sachliche Position."] ? "" : "<p>Zum Schluss nicht demütigen. Eine gute Antwort lässt dem Gegenüber eine Brücke zurück in eine sachliche Position.</p>"}</article></div></section>
@@ -1252,8 +1332,13 @@ function renderCardPage(card, mode = "live") {
 function renderIndex(cards, mode = "live") {
   const base = mode === "live" ? "../../" : "../../";
   const clusters = [...new Set(cards.map((card) => card.category))].sort((a, b) => a.localeCompare(b, "de"));
-  const cardHtml = cards.map((card) => `<article class="card radar-sprint-card" data-radar-card data-topic="${attr(card.category)}" data-search="${attr([card.title, card.shortJudgement, card.trueCore, card.falseJump, card.betterQuestion, card.systemLever, card.category].join(" "))}"><div class="radar-card-badges"><span>${esc(card.category)}</span><span>${esc(card.editorialStatus)}</span></div><h3 class="card-title">${esc(card.title)}</h3><p class="radar-card-judgement">${esc(card.shortJudgement)}</p><p class="card-text"><strong>10 Sekunden:</strong> ${esc(card.answers.seconds10)}</p><div class="radar-card-actions"><a class="btn btn-primary" href="${mode === "live" ? "" : "../live/"}${card.slug}/">Antwort öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(card.answers.seconds10)}'>Kurzantwort kopieren</button></div></article>`).join("");
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a></nav><p class="hero-kicker">Debatten-Kompass</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten: Behauptung verstehen, Sofortantwort finden, Folgencheck und Wirkpfad vertiefen.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Behauptung verstehen. Antwort finden.</h2><p>Jede Karte folgt derselben Reihenfolge: Behauptung, Sofortantwort, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p></div><div class="card-grid three" data-live-grid>${cardHtml}</div></div></section>`;
+  const cardHtml = cards.map((card) => {
+    const wave = primaryWave(card);
+    const depth = depthLabel(card);
+    return `<article class="card radar-sprint-card" data-radar-card data-topic="${attr([card.category, wave, depth].join(" "))}" data-search="${attr([card.title, card.shortJudgement, card.trueCore, card.falseJump, card.betterQuestion, card.systemLever, card.category, wave, depth].join(" "))}"><div class="radar-card-badges"><span>${esc(card.category)}</span><span>${esc(wave)}</span><span>${esc(card.editorialStatus)}</span></div><h3 class="card-title">${esc(card.title)}</h3><p class="radar-card-judgement">${esc(card.shortJudgement)}</p><p class="card-text"><strong>10 Sekunden:</strong> ${esc(card.answers.seconds10)}</p><p class="card-text"><strong>Tiefe:</strong> ${esc(depth)}</p><div class="radar-card-actions"><a class="btn btn-primary" href="${mode === "live" ? "" : "../live/"}${card.slug}/">Antwort öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(card.answers.seconds10)}'>Kurzantwort kopieren</button></div></article>`;
+  }).join("");
+  const waveFilters = ["Aufmerksamkeit", "Emotion", "Deutung", "Resonanz", "Verschiebung"];
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a></nav><p class="hero-kicker">Debatten-Kompass</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten: Behauptung verstehen, Sofortantwort finden, Folgencheck, Wellenprofil, Tiefe und Wirkpfad vertiefen.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themen- und Wellenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}${waveFilters.map((wave) => `<button type="button" data-live-filter="${attr(wave)}">${esc(wave)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Behauptung verstehen. Antwort finden.</h2><p>Jede Karte folgt derselben Reihenfolge: Behauptung, Sofortantwort, Folgencheck, Wellenprofil, Tiefe, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p></div><div class="card-grid three" data-live-grid>${cardHtml}</div></div></section>`;
   return shell({
     title: "Debattenkarten",
     description: `${cards.length} Debattenkarten: Behauptung verstehen, Sofortantwort finden, Folgencheck und Wirkpfad vertiefen.`,

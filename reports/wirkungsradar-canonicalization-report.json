@@ -1,11 +1,11 @@
 {
   "version": "20260604-radar-canonical-p0",
-  "generatedAt": "2026-06-07T11:33:04.866Z",
+  "generatedAt": "2026-06-07T14:58:18.796Z",
   "counts": {
     "radarPages": 655,
     "claimPages": 274,
     "canonicalNarratives": 122,
-    "duplicates": 408,
+    "duplicates": 412,
     "merged": 151,
     "synonyms": 46,
     "redirects": 151
@@ -13,7 +13,7 @@
   "inventory": [
     {
       "url": "/wirkungsradar/agenda-radar/",
-      "title": "Radar-Modul: Agenda-Gewichtung",
+      "title": "Welche wichtigen Wirkungsfragen bekommen zu wenig Raum?",
       "slug": "agenda-radar",
       "tags": [],
       "synonyms": [],
@@ -7000,7 +7000,7 @@
     },
     {
       "url": "/wirkungsradar/resilienz-prinzipien/",
-      "title": "Radar-Modul: Resilienzfrage",
+      "title": "Wie Öffentlichkeit widerstandsfähiger gegen Empörung, Ablenkung und Manipulation wird.",
       "slug": "resilienz-prinzipien",
       "tags": [],
       "synonyms": [],
@@ -7279,7 +7279,7 @@
     },
     {
       "url": "/wirkungsradar/resonanz-kompass/",
-      "title": "Radar-Modul: Resonanzprofil",
+      "title": "Welche Themen bekommen Aufmerksamkeit - und passt das zu ihrer wirklichen Bedeutung?",
       "slug": "resonanz-kompass",
       "tags": [],
       "synonyms": [],
@@ -9030,7 +9030,7 @@
     },
     {
       "url": "/wirkungsradar/ursachen-navigator/",
-      "title": "Radar-Modul: Ursachenprüfung",
+      "title": "Vom Aufreger zur Ursache.",
       "slug": "ursachen-navigator",
       "tags": [],
       "synonyms": [],
@@ -10409,6 +10409,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/resonanz/",
+        "/wirkungsradar/resonanz-kompass/"
+      ],
+      "canonicalTarget": "/wirkungsradar/resonanz/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/resonanz/ki-arbeit-und-sinn/",
         "/wirkungsradar/resonanz-kompass/ki-arbeit-und-sinn/"
       ],
@@ -10629,6 +10637,14 @@
         "/wirkungsradar/ursachen-navigator/gesundheit-als-reparatursystem/"
       ],
       "canonicalTarget": "/wirkungsradar/ursachen/gesundheit-als-reparatursystem/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/ursachen/",
+        "/wirkungsradar/ursachen-navigator/"
+      ],
+      "canonicalTarget": "/wirkungsradar/ursachen/"
     },
     {
       "type": "exakte Dublette",
@@ -11351,7 +11367,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.81,
+      "score": 0.817,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/deutschland-schafft-sich-ab/"
@@ -11363,7 +11379,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.832,
+      "score": 0.838,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/diktatur-der-altparteien/"
@@ -11387,7 +11403,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.817,
+      "score": 0.827,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
@@ -11399,7 +11415,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.817,
+      "score": 0.821,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -11411,7 +11427,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.82,
+      "score": 0.823,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -11419,84 +11435,84 @@
       "titles": [
         "Bürokratieabbau statt Wirkung?",
         "Tempolimit bringt nichts?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.817,
+      "urls": [
+        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Bürokratieabbau statt Wirkung?",
+        "Verbrennerverbot nimmt Freiheit?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.828,
+      "urls": [
+        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/live/diktatur-der-altparteien/"
+      ],
+      "titles": [
+        "Deutschland schafft sich ab?",
+        "Diktatur der Altparteien?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.817,
+      "urls": [
+        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/live/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Deutschland schafft sich ab?",
+        "Sind die Reichen schuld?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.811,
+      "urls": [
+        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Deutschland schafft sich ab?",
+        "Solarstrom ist unzuverlässig?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.819,
+      "urls": [
+        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/live/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Deutschland schafft sich ab?",
+        "Tempolimit bringt nichts?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.819,
+      "urls": [
+        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Deutschland schafft sich ab?",
+        "Verbrennerverbot nimmt Freiheit?"
       ]
     },
     {
       "type": "Struktur-Dublette",
       "score": 0.813,
       "urls": [
-        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
-        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
-      ],
-      "titles": [
-        "Bürokratieabbau statt Wirkung?",
-        "Verbrennerverbot nimmt Freiheit?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.822,
-      "urls": [
-        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
-        "/wirkungsradar/live/diktatur-der-altparteien/"
-      ],
-      "titles": [
-        "Deutschland schafft sich ab?",
-        "Diktatur der Altparteien?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.807,
-      "urls": [
-        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
-        "/wirkungsradar/live/sind-die-reichen-schuld/"
-      ],
-      "titles": [
-        "Deutschland schafft sich ab?",
-        "Sind die Reichen schuld?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.807,
-      "urls": [
-        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
-        "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
-      ],
-      "titles": [
-        "Deutschland schafft sich ab?",
-        "Solarstrom ist unzuverlässig?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.81,
-      "urls": [
-        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
-        "/wirkungsradar/live/tempolimit-bringt-nichts/"
-      ],
-      "titles": [
-        "Deutschland schafft sich ab?",
-        "Tempolimit bringt nichts?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.815,
-      "urls": [
-        "/wirkungsradar/live/deutschland-schafft-sich-ab/",
-        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
-      ],
-      "titles": [
-        "Deutschland schafft sich ab?",
-        "Verbrennerverbot nimmt Freiheit?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.806,
-      "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/leistungstraeger-ausgepresst/"
       ],
@@ -11507,7 +11523,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.829,
+      "score": 0.832,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
@@ -11519,7 +11535,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.829,
+      "score": 0.827,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -11531,7 +11547,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.838,
+      "score": 0.847,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -11543,7 +11559,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.818,
+      "score": 0.822,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11579,7 +11595,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.823,
+      "score": 0.83,
       "urls": [
         "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
         "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
@@ -11594,11 +11610,35 @@
       "score": 0.801,
       "urls": [
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
+        "/wirkungsradar/live/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Werden Leistungsträger ausgepresst?",
+        "Sind die Reichen schuld?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.804,
+      "urls": [
+        "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
       ],
       "titles": [
         "Werden Leistungsträger ausgepresst?",
         "Tempolimit bringt nichts?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.803,
+      "urls": [
+        "/wirkungsradar/live/leistungstraeger-ausgepresst/",
+        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Werden Leistungsträger ausgepresst?",
+        "Verbrennerverbot nimmt Freiheit?"
       ]
     },
     {
@@ -11639,7 +11679,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.804,
+      "score": 0.811,
       "urls": [
         "/wirkungsradar/live/sind-die-reichen-schuld/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11651,7 +11691,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.823,
+      "score": 0.824,
       "urls": [
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -11663,7 +11703,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.81,
+      "score": 0.811,
       "urls": [
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11675,7 +11715,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.825,
+      "score": 0.832,
       "urls": [
         "/wirkungsradar/live/tempolimit-bringt-nichts/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"

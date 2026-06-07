@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T11:32:02.219Z",
+  "generatedAt": "2026-06-07T14:57:21.513Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,18 +204,18 @@
     }
   ],
   "counts": {
-    "total": 1480,
+    "total": 1481,
     "byStatus": {
       "führend": 5,
       "aktuell": 945,
-      "Arbeitsfassung": 274,
+      "Arbeitsfassung": 275,
       "ältere Fassung": 256
     },
     "byType": {
       "Grundlagenwerk": 63,
       "Glossar": 41,
       "Methodik": 110,
-      "Arbeitspapier": 1195,
+      "Arbeitspapier": 1196,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -224,10 +224,10 @@
     },
     "bySource": {
       "leading-reference": 7,
-      "download-or-document": 714,
+      "download-or-document": 715,
       "online-version": 759
     },
-    "downloadFiles": 714,
+    "downloadFiles": 715,
     "onlineVersions": 759
   },
   "documents": [
@@ -29469,6 +29469,28 @@
       "urls": {
         "primary": "assets/downloads/woek_standard_politische_anschlussfaehigkeit_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_standard_politische_anschlussfaehigkeit_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-dossier-oeffentlicher-wirkungsraum-wellen-tiefe-v0-1-",
+      "title": "WÖk dossier oeffentlicher wirkungsraum wellen tiefe",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1.pdf",
+        "sourcePath": "assets/downloads/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
