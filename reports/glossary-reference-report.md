@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-07T14:57:01.304Z
-- Content pages scanned: 1010
-- Glossary terms indexed: 1409
-- Warnings: 587
+- Generated: 2026-06-07T18:42:41.722Z
+- Content pages scanned: 1011
+- Glossary terms indexed: 1466
+- Warnings: 621
 
 ## Stichproben
 
@@ -12,6 +12,7 @@
 - 597 · defined · Warum der Rückhalt für Klimaschutz sinkt - und was das über unsere Demokratie verrät · /blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html · manual override +500, related proximity 1, 4 occurrences, blog +25
 - 171 · strong · Wirkungsräume gestalten · /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ · related proximity 6, 2 occurrences, field +35
 - 166 · strong · Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 · /werkzeuge/ · related proximity 3, 2 occurrences, method +60
+- 153 · strong · Nicht der Stein verändert die Welt. Sondern die Wellen. - Journal der Wirkungsökonomie · /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html · related proximity 5, 1 occurrence, blog +25
 
 ### Wirkung (wirkung)
 
@@ -75,8 +76,14 @@
 - term has no content references: anpassungskapazitaet
 - term has no content references: anschlusskosten
 - term has no content references: anschlussleistung
+- term has no content references: anti-slapp-richtlinie
 - term has no content references: antiziganismus
 - term has no content references: arbeitspreis
+- term has no content references: art-2-euv-werte-der-europaeischen-union
+- term has no content references: art-3-euv-nachhaltige-entwicklung-europas
+- term has no content references: art-11-aeuv-umweltintegrationsprinzip
+- term has no content references: art-37-eu-grundrechtecharta-umweltschutz
+- term has no content references: art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip
 - term has no content references: astroturfing
 - term has no content references: atlas-network
 - term has no content references: aeussere-loops
@@ -121,6 +128,7 @@
 - term has no content references: carbon-budget
 - term has no content references: carbon-credits
 - term has no content references: carbonfaserverstaerkter-kunststoff
+- term has no content references: cbam-co2-grenzausgleichssystem
 - term has no content references: ccs-ladestecker
 - term has no content references: chademo
 - term has no content references: chicago-school
@@ -135,11 +143,13 @@
 - term has no content references: contracts-for-difference
 - term has no content references: cooling-off-regel
 - term has no content references: corporate-capture
+- term has no content references: csddd-corporate-sustainability-due-diligence-directive
 - term has no content references: cso
 - term has no content references: dark-money
 - term has no content references: dc-laden
 - term has no content references: debiasing
 - term has no content references: degradation-batterie
+- term has no content references: dekohaerenz
 - term has no content references: demand-response
 - term has no content references: demokratiefeindlichkeit
 - term has no content references: demokratieskepsis
@@ -156,6 +166,7 @@
 - term has no content references: dissonanzreduktion
 - term has no content references: donor-dependency
 - term has no content references: drehtuer-effekt
+- term has no content references: dsa-digital-services-act
 - term has no content references: dunkelflaute
 - term has no content references: dynamischer-stromtarif
 - term has no content references: dynamisches-lastmanagement
@@ -167,6 +178,7 @@
 - term has no content references: einspeiseverguetung
 - term has no content references: elektorale-autokratie
 - term has no content references: elektromobilitaetsdienstleister
+- term has no content references: emergenz-des-klassischen
 - term has no content references: endlager
 - term has no content references: energiedichte
 - term has no content references: energieflussstrom
@@ -181,6 +193,8 @@
 - term has no content references: esef
 - term has no content references: esrs-themenstandards
 - term has no content references: eu-climate-law
+- term has no content references: eu-nachhaltigkeitsverfassungsrahmen
+- term has no content references: europaeisches-klimagesetz
 - term has no content references: evolutionstheorie
 - term has no content references: evolutorischer-unternehmer
 - term has no content references: expertinnenlobbyismus
@@ -267,6 +281,7 @@
 - term has no content references: intertemporale-freiheit
 - term has no content references: investitionsschuld
 - term has no content references: jobs-to-be-done
+- term has no content references: john-dewey
 - term has no content references: kannibalisierungseffekt
 - term has no content references: kapazitaetsmarkt
 - term has no content references: kapazitaetsreserve
@@ -334,6 +349,7 @@
 - term has no content references: mehrheitsprinzip
 - term has no content references: mental-load
 - term has no content references: mentales-modell
+- term has no content references: messung-in-der-quantenmechanik
 - term has no content references: messwandler
 - term has no content references: messwandlerschrank
 - term has no content references: metakommunikation
@@ -344,19 +360,4 @@
 - term has no content references: mittelspannungsschaltanlage
 - term has no content references: mobilitaetsarmut
 - term has no content references: modellblindheit
-- term has no content references: moderner-patriotismus
-- term has no content references: momentanreserve
-- term has no content references: monetarismus
-- term has no content references: moral-hazard
-- term has no content references: muslimfeindlichkeit
-- term has no content references: nachtwaechterstaat
-- term has no content references: natalitaet
-- term has no content references: natrium-ionen-batterie
-- term has no content references: nature-positive
-- term has no content references: nature-related-risks
-- term has no content references: natuerliches-monopol
-- term has no content references: nca-batterie
-- term has no content references: negative-externalitaet
-- term has no content references: negative-freiheit
-- term has no content references: negativitaetsbias
-- ... 287 weitere Warnungen
+- ... 321 weitere Warnungen

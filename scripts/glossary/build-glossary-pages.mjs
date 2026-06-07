@@ -2103,6 +2103,11 @@ if (data.terms.some((term) => term.slug === "soziale-infrastruktur")) {
   writeGlossaryTermAlias("zivilgesellschaftliche-infrastruktur", "Zivilgesellschaftliche Infrastruktur", "soziale-infrastruktur", "Soziale Infrastruktur", sozialeInfrastrukturAliasNote);
 }
 
+if (data.terms.some((term) => term.slug === "sechster-kondratieff")) {
+  const kondratieffAliasNote = `Dieser ältere oder alternative Begriff verweist auf die kanonische Glossar-Detailseite <a href="../sechster-kondratieff/">6. Kondratieff</a>. Die Weiterleitung ist ein Alias für die sechste lange Transformationswelle.`;
+  writeGlossaryTermAlias("6-kondratieff", "6. Kondratieff", "sechster-kondratieff", "6. Kondratieff", kondratieffAliasNote);
+}
+
 function writeStaleGlossaryRedirects() {
   const generatedSlugs = new Set(indexedTerms.map((term) => term.slug));
   const sourceByLabel = new Map();

@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-07T14:57:02.419Z
-Resolved references: 6948
-Warnings: 2762
+Erzeugt: 2026-06-07T18:42:42.929Z
+Resolved references: 7128
+Warnings: 2718
 
 ## Warnungen
 
@@ -46,8 +46,6 @@ Warnings: 2762
 - [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -215,8 +213,6 @@ Warnings: 2762
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
@@ -354,8 +350,6 @@ Warnings: 2762
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Wirkungsradar Sprachmuster und Emotionalisierung - Titel aus Slug erzeugt
 - [unresolved-reference] Wirkungsradar Sprachmuster und Emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
@@ -425,16 +419,8 @@ Warnings: 2762
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] CSRD und ESRS - Titel aus Slug erzeugt
-- [unresolved-reference] CSRD und ESRS - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -481,8 +467,6 @@ Warnings: 2762
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -495,6 +479,22 @@ Warnings: 2762
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -548,6 +548,7 @@ Warnings: 2762
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#akteursgruppen -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/#akteursgruppen -> SDG+ als Erweiterung der Wirkungsökonomie (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/#book-anchors -> SDG-/SDG+-Referenzrahmen: Anker im Online-Buch (Detailkonzept, Beschreibung: ja)
+- /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-079-diskurskultur/#woek-main-2026-k079-s001 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
@@ -556,6 +557,16 @@ Warnings: 2762
 - /blog/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.html -> Wenn Empörung zum Verstärker wird und wie politische Narrative wirken (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-079-diskurskultur/#woek-main-2026-k079-s001 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-062-parteien-und-programme/#woek-main-2026-k062-s001 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#woek-main-2026-k091-s001 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/dossier/ -> Gesamtdossier Wissenschaft, Innovation & Digitalisierung (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s001 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/dossiers/ -> Einzeldossiers Wissenschaft, Innovation & Digitalisierung (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/detailkonzepte/ -> Detailkonzepte Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/digitale-teilhabe-kompetenz-bildung/ -> Digitale Teilhabe, Kompetenz und Bildung | Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#woek-main-2026-k091-s001 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#woek-main-2026-k082-s001 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-027-planet-koexistenz-statt-extraktion/#woek-main-2026-k027-s001 -> Kapitel 27: Planet: Koexistenz statt Extraktion (Online-Buch-Kapitel, Beschreibung: ja)
@@ -680,6 +691,17 @@ Warnings: 2762
 - /referenz/kapitel-036-wirkung-als-rechtsprinzip/#woek-main-2026-k036-s001 -> Kapitel 36: Wirkung als Rechtsprinzip (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#woek-main-2026-k089-s001 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#woek-main-2026-k037-s001 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-036-wirkung-als-rechtsprinzip/#woek-main-2026-k036-s001 -> Kapitel 36: Wirkung als Rechtsprinzip (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#woek-main-2026-k037-s001 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#woek-main-2026-k089-s001 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html -> Wirkungsökonomie: Wir messen Wirkung längst. Warum steuern wir noch nicht danach? (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-036-wirkung-als-rechtsprinzip/#woek-main-2026-k036-s001 -> Kapitel 36: Wirkung als Rechtsprinzip (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#woek-main-2026-k037-s001 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#woek-main-2026-k089-s001 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/datenqualitaet-assurance/ -> Datenqualität & Assurance (Methode, Beschreibung: ja)
 - /werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/ -> Detailkonzept Datenqualität und Assurance (Methode, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/ -> Einzeldossier Datenqualität und Assurance (Whitepaper, Beschreibung: ja)
@@ -695,6 +717,7 @@ Warnings: 2762
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-062-parteien-und-programme/#woek-main-2026-k062-s001 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /erleben/ -> Erleben | Demos der Wirkungsökonomie (Website, Beschreibung: ja)
 - /dokumente/nats-woek-allgemein/#political-implementation -> NATS WÖk allgemein – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -704,11 +727,11 @@ Warnings: 2762
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-062-parteien-und-programme/#woek-main-2026-k062-s001 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
 - /blog/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.html -> Demokratie schützen, Menschen zurückgewinnen: Der lange Weg aus der Radikalisierung (Journalartikel, Beschreibung: ja)
-- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Der Stein und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1486,26 +1509,3 @@ Warnings: 2762
 - /werkzeuge/esg-zu-woek-mapping/ -> ESG-zu-WÖk-Mapping (Methode, Beschreibung: ja)
 - /werkzeuge/kapitalwirkungscheck/ -> Kapitalwirkungscheck (Methode, Beschreibung: ja)
 - /werkzeuge/portfolio-wirkungsrating/ -> Portfolio-Wirkungsrating (Methode, Beschreibung: ja)
-- /werkzeuge/versicherbarkeits-resilienzcheck/ -> Versicherbarkeits-/Resilienzcheck (Methode, Beschreibung: ja)
-- /referenz/kapitel-028-demokratie-als-wirkungsraum/#woek-main-2026-k028-s001 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.html -> Technologieoffenheit – Freiheit oder Fossilfalle? (Journalartikel, Beschreibung: ja)
-- /referenz/kapitel-049-ehrliche-preise/#woek-main-2026-k049-s001 -> Kapitel 49: Ehrliche Preise (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/teil-08-produkte-maerkte-und-preise/ -> Produkte, Märkte und Preise (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/ -> Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel/ -> Kapitel 1 bis 108 (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-048-produkte-als-wirkungstraeger/#woek-main-2026-k048-s001 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)
-- /wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/ -> Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
-- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-049-ehrliche-preise/#woek-main-2026-k049-s001 -> Kapitel 49: Ehrliche Preise (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-048-produkte-als-wirkungstraeger/#woek-main-2026-k048-s001 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T14:55:33.640Z",
+  "generatedAt": "2026-06-07T18:41:12.946Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -358,6 +358,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "ai-act": {
+      "label": "AI Act",
+      "slug": "ai-act",
+      "url": "/begriffe/ai-act/",
+      "hoverDefinition": "Der AI Act ist der EU-Rechtsrahmen für künstliche Intelligenz. Er folgt einem risikobasierten Ansatz und zielt auf vertrauenswürdige, menschenzentrierte KI sowie Schutz von Gesundheit, Sicherheit, Grundrechten, Demokratie, Rechtsstaat und Umwelt.",
+      "shortDefinition": "Der AI Act ist der EU-Rechtsrahmen für künstliche Intelligenz. Er folgt einem risikobasierten Ansatz und zielt auf vertrauenswürdige, menschenzentrierte KI sowie Schutz von Gesundheit, Sicherheit, Grundrechten, Demokratie, Rechtsstaat und Umwelt.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "AI Act"
+      ],
+      "relatedTerms": [
+        "ki-governance",
+        "algorithmische-fairness",
+        "datenqualitaet",
+        "wirkungsdatenraeume",
+        "resonanzraum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "akkumulation": {
       "label": "Akkumulation",
       "slug": "akkumulation",
@@ -668,20 +691,26 @@
       "relatedObjections": []
     },
     "amartya-sen": {
-      "label": "Amartya Sen",
+      "label": "Amartya Sen / Martha Nussbaum – Fähigkeitenansatz",
       "slug": "amartya-sen",
       "url": "/begriffe/amartya-sen/",
-      "hoverDefinition": "Amartya Sen ist relevant, weil Wohlstand nicht nur Einkommen, sondern reale Freiheit und Befähigung ist.",
-      "shortDefinition": "Amartya Sen ist relevant, weil Wohlstand nicht nur Einkommen, sondern reale Freiheit und Befähigung ist.",
-      "category": "Vordenker:innen und Bezugslinien",
+      "hoverDefinition": "Der Fähigkeitenansatz fragt danach, welche realen Möglichkeiten Menschen haben, ein gutes, würdiges und selbstbestimmtes Leben zu führen.",
+      "shortDefinition": "Der Fähigkeitenansatz fragt danach, welche realen Möglichkeiten Menschen haben, ein gutes, würdiges und selbstbestimmtes Leben zu führen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
-        "Amartya Sen"
+        "Amartya Sen / Martha Nussbaum – Fähigkeitenansatz",
+        "Amartya Sen",
+        "Martha Nussbaum – Fähigkeitenansatz"
       ],
       "relatedTerms": [
         "wirkungseinkommen",
         "reale-freiheit",
         "positive-freiheit",
-        "wohlfahrtsoekonomie"
+        "wohlfahrtsoekonomie",
+        "teilhabe",
+        "teilgabe",
+        "neue-ordnung-des-wohlstands",
+        "sdgs"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -874,13 +903,37 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "anti-slapp-richtlinie": {
+      "label": "Anti-SLAPP-Richtlinie",
+      "slug": "anti-slapp-richtlinie",
+      "url": "/begriffe/anti-slapp-richtlinie/",
+      "hoverDefinition": "Die Anti-SLAPP-Richtlinie schützt Personen, die sich öffentlich beteiligen, vor offensichtlich unbegründeten oder missbräuchlichen Gerichtsverfahren mit grenzüberschreitendem Bezug.",
+      "shortDefinition": "Die Anti-SLAPP-Richtlinie schützt Personen, die sich öffentlich beteiligen, vor offensichtlich unbegründeten oder missbräuchlichen Gerichtsverfahren mit grenzüberschreitendem Bezug.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Anti-SLAPP-Richtlinie"
+      ],
+      "relatedTerms": [
+        "oeffentlichkeit",
+        "medienfreiheit",
+        "zivilgesellschaft",
+        "wirkungsrat",
+        "demokratie",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "antidiskriminierung": {
       "label": "Antidiskriminierung",
       "slug": "antidiskriminierung",
       "url": "/begriffe/antidiskriminierung/",
       "hoverDefinition": "Antidiskriminierung bezeichnet Regeln, Institutionen, Praktiken und Kulturen, die Benachteiligung verhindern, gleiche Teilhabe ermöglichen und Schutz vor Herabwürdigung, Ausschluss und Gewalt sichern.",
       "shortDefinition": "Antidiskriminierung bezeichnet Regeln, Institutionen, Praktiken und Kulturen, die Benachteiligung verhindern, gleiche Teilhabe ermöglichen und Schutz vor Herabwürdigung, Ausschluss und Gewalt sichern.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Antidiskriminierung"
       ],
@@ -904,7 +957,7 @@
       "url": "/begriffe/antisemitismus/",
       "hoverDefinition": "Antisemitismus bezeichnet judenfeindliche Wahrnehmungen, Stereotype, Feindbilder, Verschwörungserzählungen oder Handlungen, die sich gegen Jüdinnen und Juden, jüdische Einrichtungen oder als jüdisch markierte Symbole richten. Er kann religiös, rassistisch, politisch, verschwörungsideologisch oder israelbezogen auftreten.",
       "shortDefinition": "Antisemitismus bezeichnet judenfeindliche Wahrnehmungen, Stereotype, Feindbilder, Verschwörungserzählungen oder Handlungen, die sich gegen Jüdinnen und Juden, jüdische Einrichtungen oder als jüdisch markierte Symbole richten. Er kann religiös, rassistisch, politisch, verschwörungsideologisch oder israelbezogen auftreten.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Antisemitismus"
       ],
@@ -1101,6 +1154,76 @@
       ],
       "relatedObjections": []
     },
+    "art-2-euv-werte-der-europaeischen-union": {
+      "label": "Art. 2 EUV – Werte der Europäischen Union",
+      "slug": "art-2-euv-werte-der-europaeischen-union",
+      "url": "/begriffe/art-2-euv-werte-der-europaeischen-union/",
+      "hoverDefinition": "Art. 2 EUV benennt die Werte der Union: Menschenwürde, Freiheit, Demokratie, Gleichheit, Rechtsstaatlichkeit und Menschenrechte sowie Pluralismus, Nichtdiskriminierung, Toleranz, Gerechtigkeit, Solidarität und Gleichheit.",
+      "shortDefinition": "Art. 2 EUV benennt die Werte der Union: Menschenwürde, Freiheit, Demokratie, Gleichheit, Rechtsstaatlichkeit und Menschenrechte sowie Pluralismus, Nichtdiskriminierung, Toleranz, Gerechtigkeit, Solidarität und Gleichheit.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Art. 2 EUV – Werte der Europäischen Union"
+      ],
+      "relatedTerms": [
+        "sdg-plus",
+        "demokratie",
+        "rechtsstaatlichkeit",
+        "diskursraum",
+        "medienqualitaet",
+        "wirkungswahrheit",
+        "verfassungspatriotismus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "art-3-euv-nachhaltige-entwicklung-europas": {
+      "label": "Art. 3 EUV – nachhaltige Entwicklung Europas",
+      "slug": "art-3-euv-nachhaltige-entwicklung-europas",
+      "url": "/begriffe/art-3-euv-nachhaltige-entwicklung-europas/",
+      "hoverDefinition": "Art. 3 EUV verbindet Binnenmarkt, nachhaltige Entwicklung, soziale Marktwirtschaft, sozialen Fortschritt, hohen Umweltschutz, wissenschaftlich-technischen Fortschritt, Gleichstellung und Solidarität zwischen Generationen.",
+      "shortDefinition": "Art. 3 EUV verbindet Binnenmarkt, nachhaltige Entwicklung, soziale Marktwirtschaft, sozialen Fortschritt, hohen Umweltschutz, wissenschaftlich-technischen Fortschritt, Gleichstellung und Solidarität zwischen Generationen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Art. 3 EUV – nachhaltige Entwicklung Europas"
+      ],
+      "relatedTerms": [
+        "nachhaltigkeit",
+        "soziale-marktwirtschaft",
+        "generationengerechtigkeit",
+        "innovation",
+        "sdgs",
+        "europa-als-wirkungsraum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "art-11-aeuv-umweltintegrationsprinzip": {
+      "label": "Art. 11 AEUV – Umweltintegrationsprinzip",
+      "slug": "art-11-aeuv-umweltintegrationsprinzip",
+      "url": "/begriffe/art-11-aeuv-umweltintegrationsprinzip/",
+      "hoverDefinition": "Art. 11 AEUV verlangt, dass Umweltschutzanforderungen in die Festlegung und Durchführung der Unionspolitiken und -maßnahmen einbezogen werden, insbesondere zur Förderung nachhaltiger Entwicklung.",
+      "shortDefinition": "Art. 11 AEUV verlangt, dass Umweltschutzanforderungen in die Festlegung und Durchführung der Unionspolitiken und -maßnahmen einbezogen werden, insbesondere zur Förderung nachhaltiger Entwicklung.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Art. 11 AEUV – Umweltintegrationsprinzip"
+      ],
+      "relatedTerms": [
+        "wirkungsarchitektur",
+        "wirkungspruefung",
+        "wirkungshaushalt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "art-20a-gg": {
       "label": "Art. 20a GG",
       "slug": "art-20a-gg",
@@ -1118,6 +1241,80 @@
         "planetare-grenzen",
         "klimaschutz",
         "schutzpflicht"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "art-37-eu-grundrechtecharta-umweltschutz": {
+      "label": "Art. 37 EU-Grundrechtecharta – Umweltschutz",
+      "slug": "art-37-eu-grundrechtecharta-umweltschutz",
+      "url": "/begriffe/art-37-eu-grundrechtecharta-umweltschutz/",
+      "hoverDefinition": "Art. 37 der EU-Grundrechtecharta verlangt ein hohes Umweltschutzniveau und die Verbesserung der Umweltqualität in den Politiken der Union nach dem Grundsatz nachhaltiger Entwicklung.",
+      "shortDefinition": "Art. 37 der EU-Grundrechtecharta verlangt ein hohes Umweltschutzniveau und die Verbesserung der Umweltqualität in den Politiken der Union nach dem Grundsatz nachhaltiger Entwicklung.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Art. 37 EU-Grundrechtecharta – Umweltschutz"
+      ],
+      "relatedTerms": [
+        "fuenftes-p-planet",
+        "eu-nachhaltigkeitsverfassungsrahmen",
+        "artikel-20a-grundgesetz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip": {
+      "label": "Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip",
+      "slug": "art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip",
+      "url": "/begriffe/art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip/",
+      "hoverDefinition": "Art. 191 AEUV beschreibt die Ziele und Grundsätze der EU-Umweltpolitik: Erhalt und Verbesserung der Umweltqualität, Schutz der Gesundheit, rationelle Ressourcennutzung, Bekämpfung des Klimawandels sowie Vorsorge-, Präventions-, Ursprungs- und Verursacherprinzip.",
+      "shortDefinition": "Art. 191 AEUV beschreibt die Ziele und Grundsätze der EU-Umweltpolitik: Erhalt und Verbesserung der Umweltqualität, Schutz der Gesundheit, rationelle Ressourcennutzung, Bekämpfung des Klimawandels sowie Vorsorge-, Präventions-, Ursprungs- und Verursacherprinzip.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip"
+      ],
+      "relatedTerms": [
+        "vorsorgeprinzip",
+        "praevention",
+        "wirkungsgrenze",
+        "negative-wirkung",
+        "wirkungssteuer"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "artikel-20a-grundgesetz": {
+      "label": "Artikel 20a Grundgesetz / Art. 20a GG",
+      "slug": "artikel-20a-grundgesetz",
+      "url": "/begriffe/artikel-20a-grundgesetz/",
+      "hoverDefinition": "Artikel 20a des Grundgesetzes verpflichtet den Staat, die natürlichen Lebensgrundlagen und die Tiere auch in Verantwortung für künftige Generationen zu schützen - im Rahmen der verfassungsmäßigen Ordnung.",
+      "shortDefinition": "Artikel 20a des Grundgesetzes verpflichtet den Staat, die natürlichen Lebensgrundlagen und die Tiere auch in Verantwortung für künftige Generationen zu schützen - im Rahmen der verfassungsmäßigen Ordnung.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Artikel 20a Grundgesetz / Art. 20a GG",
+        "Artikel 20a Grundgesetz",
+        "Art. 20a GG"
+      ],
+      "relatedTerms": [
+        "wirkung-als-rechtsprinzip",
+        "wirkungsstaat",
+        "wirkungsfolgenabschaetzung",
+        "wirkungsgrenze",
+        "generationengerechtigkeit",
+        "intertemporale-freiheitssicherung",
+        "sdgs",
+        "sdg-plus",
+        "wirkungsrat",
+        "wirkungssteuer"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2125,6 +2322,7 @@
       "label": "Befähigung / Capabilities",
       "slug": "befaehigung-capabilities",
       "url": "/begriffe/befaehigung-capabilities/",
+      "hoverDefinition": "Befähigung fragt, welche realen Möglichkeiten Menschen haben, ein würdiges und selbstbestimmtes Leben zu führen.",
       "shortDefinition": "Befähigung fragt, welche realen Möglichkeiten Menschen haben, ein würdiges und selbstbestimmtes Leben zu führen.",
       "category": "Anschlussbegriff",
       "synonyms": [
@@ -2391,9 +2589,9 @@
       "label": "Beobachterabhängigkeit",
       "slug": "beobachterabhaengigkeit",
       "url": "/begriffe/beobachterabhaengigkeit/",
-      "hoverDefinition": "Beobachterabhängigkeit beschreibt, dass Beobachtungen durch Perspektive, Auswahl, Sprache, Kriterien und Deutungsrahmen geprägt sind.",
-      "shortDefinition": "Beobachterabhängigkeit macht sichtbar, dass jede Wirkungsanalyse Perspektive, Auswahl und Bewertungsrahmen besitzt.",
-      "category": "Systemtheorie, Kybernetik und Konstruktivismus",
+      "hoverDefinition": "Beobachterabhängigkeit bedeutet, dass Beobachtungen von Unterscheidungen, Sprache, Datenquellen, Interessen, Messinstrumenten und Kontexten geprägt sind.",
+      "shortDefinition": "Beobachterabhängigkeit bedeutet, dass Beobachtungen von Unterscheidungen, Sprache, Datenquellen, Interessen, Messinstrumenten und Kontexten geprägt sind.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Beobachterabhängigkeit"
       ],
@@ -3239,7 +3437,7 @@
       "url": "/begriffe/business-ecosystem/",
       "hoverDefinition": "Ein Business Ecosystem ist ein Netzwerk aus Unternehmen, Kund:innen, Lieferanten, Plattformen, Kapitalgebern, Regulierung, Infrastruktur und Komplementärangeboten, das gemeinsam Wertschöpfung ermöglicht.",
       "shortDefinition": "Ein Business Ecosystem ist ein Netzwerk aus Unternehmen, Kund:innen, Lieferanten, Plattformen, Kapitalgebern, Regulierung, Infrastruktur und Komplementärangeboten, das gemeinsam Wertschöpfung ermöglicht.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Business Ecosystem"
       ],
@@ -3470,6 +3668,25 @@
         "gender-budgeting",
         "service-ngo",
         "arbeiten-arendt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "cbam-co2-grenzausgleichssystem": {
+      "label": "CBAM – CO2-Grenzausgleichssystem",
+      "slug": "cbam-co2-grenzausgleichssystem",
+      "url": "/begriffe/cbam-co2-grenzausgleichssystem/",
+      "hoverDefinition": "CBAM ist der EU-Mechanismus für einen CO2-Grenzausgleich auf bestimmte importierte Waren, um Carbon Leakage zu vermeiden und Dekarbonisierung auch außerhalb der EU anzureizen.",
+      "shortDefinition": "CBAM ist der EU-Mechanismus für einen CO2-Grenzausgleich auf bestimmte importierte Waren, um Carbon Leakage zu vermeiden und Dekarbonisierung auch außerhalb der EU anzureizen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "CBAM – CO2-Grenzausgleichssystem"
+      ],
+      "relatedTerms": [
+        "lieferkettenwirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -4260,6 +4477,27 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "csddd-corporate-sustainability-due-diligence-directive": {
+      "label": "CSDDD – Corporate Sustainability Due Diligence Directive",
+      "slug": "csddd-corporate-sustainability-due-diligence-directive",
+      "url": "/begriffe/csddd-corporate-sustainability-due-diligence-directive/",
+      "hoverDefinition": "Die CSDDD verpflichtet große Unternehmen, tatsächliche und potenzielle negative Menschenrechts- und Umweltwirkungen in eigenen Tätigkeiten, Tochterunternehmen und Geschäftspartnerketten zu adressieren.",
+      "shortDefinition": "Die CSDDD verpflichtet große Unternehmen, tatsächliche und potenzielle negative Menschenrechts- und Umweltwirkungen in eigenen Tätigkeiten, Tochterunternehmen und Geschäftspartnerketten zu adressieren.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "CSDDD – Corporate Sustainability Due Diligence Directive"
+      ],
+      "relatedTerms": [
+        "lieferkettenwirkung",
+        "negative-wirkung",
+        "human-rights-due-diligence"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "cso": {
       "label": "CSO",
       "slug": "cso",
@@ -4286,9 +4524,9 @@
       "label": "CSRD",
       "slug": "csrd",
       "url": "/begriffe/csrd/",
-      "hoverDefinition": "CSRD schafft Berichtsdaten; in der WÖk werden daraus erst durch Rückkopplung Steuerungsdaten.",
-      "shortDefinition": "CSRD ist die europäische Richtlinie zur Nachhaltigkeitsberichterstattung von Unternehmen.",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Die Corporate Sustainability Reporting Directive erweitert die Nachhaltigkeitsberichterstattung von Unternehmen und verknüpft Berichterstattung mit europäischen Anforderungen an Nachhaltigkeitsinformationen.",
+      "shortDefinition": "Die Corporate Sustainability Reporting Directive erweitert die Nachhaltigkeitsberichterstattung von Unternehmen und verknüpft Berichterstattung mit europäischen Anforderungen an Nachhaltigkeitsinformationen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "CSRD",
         "Corporate Sustainability Reporting Directive",
@@ -4316,7 +4554,10 @@
         "social-taxonomy",
         "sustainable-finance",
         "vsme",
-        "thg-emissions-scopes"
+        "thg-emissions-scopes",
+        "wirkungsdaten",
+        "woek-id",
+        "datenqualitaet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -4403,19 +4644,25 @@
       "label": "Daoismus",
       "slug": "daoismus",
       "url": "/begriffe/daoismus/",
-      "shortDefinition": "Daoismus ist für die WÖk als Gegenbild zur Kontrollillusion anschlussfähig: gute Steuerung arbeitet mit Systembedingungen.",
-      "category": "Philosophische Bezugslinie",
+      "hoverDefinition": "Daoismus bezeichnet eine chinesische Denk- und Lebenslehre, die Prozesshaftigkeit, Nicht-Erzwingen, Eingebundensein und Handeln im Einklang mit dem Dao betont.",
+      "shortDefinition": "Daoismus bezeichnet eine chinesische Denk- und Lebenslehre, die Prozesshaftigkeit, Nicht-Erzwingen, Eingebundensein und Handeln im Einklang mit dem Dao betont.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Daoismus",
         "Taoismus",
-        "daoistische Bezugslinie"
+        "daoistische Bezugslinie",
+        "Daoismus / Laotse",
+        "Laotse"
       ],
       "relatedTerms": [
         "wu-wei",
         "dao",
         "nichttriviales-system",
         "selbstorganisation",
-        "rueckkopplung"
+        "rueckkopplung",
+        "nichttriviale-systeme",
+        "wirkungslenkung",
+        "zen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -4454,7 +4701,7 @@
       "url": "/begriffe/daseinsvorsorge/",
       "hoverDefinition": "Daseinsvorsorge bezeichnet die öffentliche Sicherung grundlegender Lebensfunktionen: Wohnen, Wasser, Energie, Mobilität, Gesundheit, Pflege, Bildung, Sicherheit, digitale Infrastruktur und kulturelle Teilhabe.",
       "shortDefinition": "Daseinsvorsorge bezeichnet die öffentliche Sicherung grundlegender Lebensfunktionen: Wohnen, Wasser, Energie, Mobilität, Gesundheit, Pflege, Bildung, Sicherheit, digitale Infrastruktur und kulturelle Teilhabe.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Daseinsvorsorge",
         "öffentliche Daseinsvorsorge",
@@ -4766,6 +5013,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "dekohaerenz": {
+      "label": "Dekohärenz",
+      "slug": "dekohaerenz",
+      "url": "/begriffe/dekohaerenz/",
+      "hoverDefinition": "Dekohärenz beschreibt, wie durch Wechselwirkung eines Quantensystems mit seiner Umgebung Interferenzphänomene unterdrückt werden und klassisch erscheinende Zustände stabiler werden.",
+      "shortDefinition": "Dekohärenz beschreibt, wie durch Wechselwirkung eines Quantensystems mit seiner Umgebung Interferenzphänomene unterdrückt werden und klassisch erscheinende Zustände stabiler werden.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Dekohärenz"
+      ],
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungsnetz",
+        "nichttriviale-systeme",
+        "messproblem",
+        "rueckkopplung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "deliberation": {
       "label": "Deliberation",
       "slug": "deliberation",
@@ -4793,9 +5063,9 @@
       "label": "Deliberative Demokratie",
       "slug": "deliberative-demokratie",
       "url": "/begriffe/deliberative-demokratie/",
-      "hoverDefinition": "Deliberative Demokratie betont öffentliche Beratung, Argumente und gemeinsame Urteilsbildung.",
-      "shortDefinition": "Deliberative Demokratie betont öffentliche Beratung, Begründung und Korrekturfähigkeit als Bedingungen demokratischer Legitimität.",
-      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "hoverDefinition": "Deliberation meint demokratische Willensbildung durch Begründung, Kritik, Zuhören, Streit und öffentliche Prüfbarkeit.",
+      "shortDefinition": "Deliberation meint demokratische Willensbildung durch Begründung, Kritik, Zuhören, Streit und öffentliche Prüfbarkeit.",
+      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
       "synonyms": [
         "Deliberative Demokratie"
       ],
@@ -5148,7 +5418,7 @@
       "url": "/begriffe/demokratische-resilienz-gegen-extremismus/",
       "hoverDefinition": "Demokratische Resilienz gegen Extremismus bezeichnet die Fähigkeit einer Gesellschaft, autoritäre, menschenfeindliche, verschwörungsideologische und gewaltfördernde Dynamiken früh zu erkennen, zu begrenzen und lernfähig zu bearbeiten.",
       "shortDefinition": "Demokratische Resilienz gegen Extremismus bezeichnet die Fähigkeit einer Gesellschaft, autoritäre, menschenfeindliche, verschwörungsideologische und gewaltfördernde Dynamiken früh zu erkennen, zu begrenzen und lernfähig zu bearbeiten.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Demokratische Resilienz gegen Extremismus"
       ],
@@ -5333,7 +5603,7 @@
       "url": "/begriffe/design-thinking/",
       "hoverDefinition": "Design Thinking ist ein iterativer, nutzerzentrierter Innovationsansatz, der Probleme durch Empathie, Definition, Ideenentwicklung, Prototyping und Testen bearbeitet.",
       "shortDefinition": "Design Thinking ist ein iterativer, nutzerzentrierter Innovationsansatz, der Probleme durch Empathie, Definition, Ideenentwicklung, Prototyping und Testen bearbeitet.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Design Thinking"
       ],
@@ -5604,13 +5874,14 @@
       "relatedObjections": []
     },
     "digitaler-produktpass": {
-      "label": "Digitaler Produktpass",
+      "label": "Digitaler Produktpass / DPP",
       "slug": "digitaler-produktpass",
       "url": "/begriffe/digitaler-produktpass/",
-      "hoverDefinition": "Der Digitale Produktpass macht Produktdaten über Herkunft, Materialien, Nutzung, Reparatur, Rücknahme und Wirkung maschinenlesbar verfügbar.",
-      "shortDefinition": "Der Digitale Produktpass ist ein strukturierter Datenträger, der zentrale Informationen zu Herkunft, Materialien, Herstellung, Nutzung, Reparatur, Rücknahme und Wirkung eines Produkts maschinenlesbar verfügbar macht.",
-      "category": "Daten, Standards & Produktwirkung",
+      "hoverDefinition": "Der Digitale Produktpass ist ein Dateninstrument, das produktbezogene Informationen über Nachhaltigkeit, Material, Reparierbarkeit, Kreislauffähigkeit und weitere Anforderungen digital zugänglich machen soll.",
+      "shortDefinition": "Der Digitale Produktpass ist ein Dateninstrument, das produktbezogene Informationen über Nachhaltigkeit, Material, Reparierbarkeit, Kreislauffähigkeit und weitere Anforderungen digital zugänglich machen soll.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
+        "Digitaler Produktpass / DPP",
         "Digitaler Produktpass",
         "DPP",
         "Digital Product Passport",
@@ -6032,8 +6303,9 @@
       "label": "Diskursraum",
       "slug": "diskursraum",
       "url": "/begriffe/diskursraum/",
-      "shortDefinition": "Ein Diskursraum ist ein sozialer und medialer Raum, in dem Sprache Wirkungspotenziale und Anschlussfähigkeit erzeugt.",
-      "category": "Präzisierungsbegriff",
+      "hoverDefinition": "Diskursräume sind Räume, in denen Themen, Begriffe, Argumente, Frames, Konflikte und Deutungen zirkulieren.",
+      "shortDefinition": "Diskursräume sind Räume, in denen Themen, Begriffe, Argumente, Frames, Konflikte und Deutungen zirkulieren.",
+      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
       "synonyms": [
         "Diskursraum",
         "öffentlicher Diskursraum",
@@ -6044,7 +6316,8 @@
         "resonanzraum",
         "wirkpfad",
         "wirkungspotenzial",
-        "deliberative-demokratie"
+        "deliberative-demokratie",
+        "wirkungspfad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6107,14 +6380,15 @@
       ],
       "relatedObjections": []
     },
-    "dnsh": {
-      "label": "DNSH / Do No Significant Harm",
-      "slug": "dnsh",
-      "url": "/begriffe/dnsh/",
-      "hoverDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
-      "shortDefinition": "DNSH bedeutet, dass eine Tätigkeit keinem der weiteren Taxonomie-Umweltziele erheblich schaden darf.",
-      "category": "Datenbegriff",
+    "dnsh-do-no-significant-harm": {
+      "label": "DNSH – Do No Significant Harm",
+      "slug": "dnsh-do-no-significant-harm",
+      "url": "/begriffe/dnsh-do-no-significant-harm/",
+      "hoverDefinition": "DNSH bedeutet, dass eine Aktivität nicht zu einer erheblichen Beeinträchtigung anderer Umweltziele führen darf, auch wenn sie zu einem Ziel positiv beiträgt.",
+      "shortDefinition": "DNSH bedeutet, dass eine Aktivität nicht zu einer erheblichen Beeinträchtigung anderer Umweltziele führen darf, auch wenn sie zu einem Ziel positiv beiträgt.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
+        "DNSH – Do No Significant Harm",
         "DNSH / Do No Significant Harm",
         "DNSH",
         "Do No Significant Harm",
@@ -6124,9 +6398,11 @@
         "erheblicher Schaden"
       ],
       "relatedTerms": [
-        "eu-taxonomie",
-        "nichtkompensationsprinzip",
         "reverse-merit-order",
+        "wirkungsgrenze",
+        "eu-taxonomie",
+        "netto-wirkung",
+        "nichtkompensationsprinzip",
         "technische-bewertungskriterien",
         "taxonomiekonformitaet",
         "wesentlicher-beitrag"
@@ -6212,9 +6488,9 @@
       "label": "Doppelte Wesentlichkeit",
       "slug": "doppelte-wesentlichkeit",
       "url": "/begriffe/doppelte-wesentlichkeit/",
-      "hoverDefinition": "Doppelte Wesentlichkeit verbindet Inside-Out-Wirkung und Outside-In-Finanzrelevanz.",
-      "shortDefinition": "Doppelte Wesentlichkeit bedeutet, dass ein Unternehmen Nachhaltigkeit aus zwei Richtungen bewertet: Welche Wirkung hat das Unternehmen auf Menschen, Umwelt und Gesellschaft - und wie wirken ökologische, soziale, politische oder wirtschaftliche Entwicklungen auf das Unternehmen zurück?",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Doppelte Wesentlichkeit verbindet zwei Perspektiven: Auswirkungen des Unternehmens auf Menschen und Umwelt sowie finanzielle Auswirkungen von Nachhaltigkeitsthemen auf das Unternehmen.",
+      "shortDefinition": "Doppelte Wesentlichkeit verbindet zwei Perspektiven: Auswirkungen des Unternehmens auf Menschen und Umwelt sowie finanzielle Auswirkungen von Nachhaltigkeitsthemen auf das Unternehmen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Doppelte Wesentlichkeit",
         "Double Materiality",
@@ -6244,7 +6520,9 @@
         "reverse-merit-order",
         "wirkungsdaten",
         "positive-netto-wirkung",
-        "impact-strategie"
+        "impact-strategie",
+        "wirkungskapital",
+        "versicherbarkeit"
       ],
       "relatedMethods": [
         {
@@ -6304,6 +6582,30 @@
         "cooling-off-regel",
         "interessenkonflikt",
         "regulatory-capture"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "dsa-digital-services-act": {
+      "label": "DSA – Digital Services Act",
+      "slug": "dsa-digital-services-act",
+      "url": "/begriffe/dsa-digital-services-act/",
+      "hoverDefinition": "Der Digital Services Act regelt digitale Vermittlungsdienste und Plattformen. Er enthält besondere Pflichten für sehr große Online-Plattformen und Suchmaschinen, insbesondere zum Umgang mit systemischen Risiken.",
+      "shortDefinition": "Der Digital Services Act regelt digitale Vermittlungsdienste und Plattformen. Er enthält besondere Pflichten für sehr große Online-Plattformen und Suchmaschinen, insbesondere zum Umgang mit systemischen Risiken.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "DSA – Digital Services Act"
+      ],
+      "relatedTerms": [
+        "oeffentlichkeit",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "sdg-plus",
+        "medienqualitaet",
+        "diskursraum"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6402,9 +6704,9 @@
       "label": "Effektivität",
       "slug": "effektivitaet",
       "url": "/begriffe/effektivitaet/",
-      "hoverDefinition": "Effektivität bedeutet, die richtigen Dinge zu tun.",
-      "shortDefinition": "Effektivität fragt, ob die richtige Zustandsveränderung erreicht wird.",
-      "category": "Management, Wirksamkeit und Organisation",
+      "hoverDefinition": "Effektivität bezeichnet das Maß, in dem ein Ziel tatsächlich erreicht wird. In der WÖk genügt aber nicht irgendein Ziel; entscheidend ist, ob die angestrebte Veränderung im Referenzrahmen Mensch, Planet und Demokratie sinnvoll ist.",
+      "shortDefinition": "Effektivität bezeichnet das Maß, in dem ein Ziel tatsächlich erreicht wird. In der WÖk genügt aber nicht irgendein Ziel; entscheidend ist, ob die angestrebte Veränderung im Referenzrahmen Mensch, Planet und Demokratie sinnvoll ist.",
+      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
       "synonyms": [
         "Effektivität"
       ],
@@ -6451,9 +6753,9 @@
       "label": "Effizienz",
       "slug": "effizienz",
       "url": "/begriffe/effizienz/",
-      "hoverDefinition": "Effizienz beschreibt das Verhältnis von eingesetzten Mitteln zu erreichtem Ergebnis.",
-      "shortDefinition": "Effizienz beschreibt das Verhältnis von Ergebnis zu Ressourceneinsatz, sagt aber noch nichts über die Richtung der Wirkung.",
-      "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
+      "hoverDefinition": "Effizienz bedeutet, mit weniger Input gleichen oder größeren Output zu erzeugen. Sie ist wichtig, aber ohne Wirkungsbewertung blind.",
+      "shortDefinition": "Effizienz bedeutet, mit weniger Input gleichen oder größeren Output zu erzeugen. Sie ist wichtig, aber ohne Wirkungsbewertung blind.",
+      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
       "synonyms": [
         "Effizienz"
       ],
@@ -6471,7 +6773,9 @@
         "pareto-effizienz",
         "wirkungseffizienz",
         "wirksamkeit",
-        "kreislaufwirtschaft"
+        "kreislaufwirtschaft",
+        "wirkleistung",
+        "blindleistung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6646,7 +6950,7 @@
       "url": "/begriffe/eigentum-mit-wirkungspflicht/",
       "hoverDefinition": "Eigentum mit Wirkungspflicht bedeutet, dass Eigentum Rechte gewährt, aber Wirkungen nicht an Eigentumsgrenzen enden. Wer Vermögenswerte, Boden, Daten, Plattformen, Infrastruktur oder Kapital kontrolliert, formt Wirkungsräume.",
       "shortDefinition": "Eigentum mit Wirkungspflicht bedeutet, dass Eigentum Rechte gewährt, aber Wirkungen nicht an Eigentumsgrenzen enden. Wer Vermögenswerte, Boden, Daten, Plattformen, Infrastruktur oder Kapital kontrolliert, formt Wirkungsräume.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Eigentum mit Wirkungspflicht"
       ],
@@ -6891,19 +7195,25 @@
       "relatedObjections": []
     },
     "elinor-ostrom": {
-      "label": "Elinor Ostrom",
+      "label": "Elinor Ostrom / Commons",
       "slug": "elinor-ostrom",
       "url": "/begriffe/elinor-ostrom/",
-      "hoverDefinition": "Elinor Ostrom ist relevant für dezentrale, regelbasierte Selbstorganisation von Gemeingütern.",
-      "shortDefinition": "Elinor Ostrom ist relevant für dezentrale, regelbasierte Selbstorganisation von Gemeingütern.",
-      "category": "Vordenker:innen und Bezugslinien",
+      "hoverDefinition": "Ostrom zeigte, dass gemeinschaftlich genutzte Ressourcen unter geeigneten Regeln, Vertrauen, Monitoring und lokaler Anpassung erfolgreich selbst verwaltet werden können.",
+      "shortDefinition": "Ostrom zeigte, dass gemeinschaftlich genutzte Ressourcen unter geeigneten Regeln, Vertrauen, Monitoring und lokaler Anpassung erfolgreich selbst verwaltet werden können.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
-        "Elinor Ostrom"
+        "Elinor Ostrom / Commons",
+        "Elinor Ostrom",
+        "Commons"
       ],
       "relatedTerms": [
         "selbstorganisation",
         "vertrauen",
-        "commons"
+        "commons",
+        "elinor-ostrom",
+        "wirkungsrat",
+        "wirkungsgovernance",
+        "teilgabe"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6934,6 +7244,29 @@
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "relatedObjections": []
+    },
+    "emergenz-des-klassischen": {
+      "label": "Emergenz des Klassischen",
+      "slug": "emergenz-des-klassischen",
+      "url": "/begriffe/emergenz-des-klassischen/",
+      "hoverDefinition": "Emergenz des Klassischen bezeichnet die Frage, wie aus quantenmechanischen Beschreibungen die stabil erscheinende klassische Alltagswelt hervorgeht.",
+      "shortDefinition": "Emergenz des Klassischen bezeichnet die Frage, wie aus quantenmechanischen Beschreibungen die stabil erscheinende klassische Alltagswelt hervorgeht.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Emergenz des Klassischen"
+      ],
+      "relatedTerms": [
+        "emergenz",
+        "oeffentlichkeit",
+        "vertrauen",
+        "resonanzraum",
+        "nichttriviale-systeme"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "emissionsfaktor": {
@@ -7610,6 +7943,7 @@
       "label": "Engpasslogik",
       "slug": "engpasslogik",
       "url": "/begriffe/engpasslogik/",
+      "hoverDefinition": "Engpasslogik fragt, welche knappe Bedingung den nächsten wirksamen Schritt begrenzt.",
       "shortDefinition": "Engpasslogik fragt, welche knappe Bedingung den nächsten wirksamen Schritt begrenzt.",
       "category": "Präzisierungsbegriff",
       "synonyms": [
@@ -7886,7 +8220,7 @@
       "url": "/begriffe/erinnerungskultur/",
       "hoverDefinition": "Erinnerungskultur umfasst gesellschaftliche Praktiken, Institutionen und Räume, in denen historische Verantwortung, Gewaltgeschichte, Ausgrenzung, Demokratiegründung und Widerstand sichtbar gehalten werden.",
       "shortDefinition": "Erinnerungskultur umfasst gesellschaftliche Praktiken, Institutionen und Räume, in denen historische Verantwortung, Gewaltgeschichte, Ausgrenzung, Demokratiegründung und Widerstand sichtbar gehalten werden.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Erinnerungskultur",
         "demokratische Erinnerungskultur",
@@ -8330,9 +8664,9 @@
       "label": "ESRS",
       "slug": "esrs",
       "url": "/begriffe/esrs/",
-      "hoverDefinition": "ESRS strukturieren Berichtsdaten, die in der WÖk zu Wirkungs- und Steuerungsdaten weiterentwickelt werden können.",
-      "shortDefinition": "ESRS sind europäische Standards für Nachhaltigkeitsberichterstattung.",
-      "category": "Datenbegriff",
+      "hoverDefinition": "Die European Sustainability Reporting Standards konkretisieren, welche Nachhaltigkeitsinformationen Unternehmen unter der CSRD offenlegen sollen.",
+      "shortDefinition": "Die European Sustainability Reporting Standards konkretisieren, welche Nachhaltigkeitsinformationen Unternehmen unter der CSRD offenlegen sollen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "ESRS",
         "European Sustainability Reporting Standards",
@@ -8354,7 +8688,9 @@
         "nfrd",
         "social-taxonomy",
         "sustainable-finance",
-        "vsme"
+        "vsme",
+        "woek-id",
+        "wirkungsaudit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8455,13 +8791,35 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "eu-nachhaltigkeitsverfassungsrahmen": {
+      "label": "EU-Nachhaltigkeitsverfassungsrahmen",
+      "slug": "eu-nachhaltigkeitsverfassungsrahmen",
+      "url": "/begriffe/eu-nachhaltigkeitsverfassungsrahmen/",
+      "hoverDefinition": "Sammelbegriff für die primärrechtlichen EU-Grundlagen, die nachhaltige Entwicklung, Umweltintegration, Demokratie, Rechtsstaatlichkeit und Grundrechte als europäische Ordnungsprinzipien verankern.",
+      "shortDefinition": "Sammelbegriff für die primärrechtlichen EU-Grundlagen, die nachhaltige Entwicklung, Umweltintegration, Demokratie, Rechtsstaatlichkeit und Grundrechte als europäische Ordnungsprinzipien verankern.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "EU-Nachhaltigkeitsverfassungsrahmen"
+      ],
+      "relatedTerms": [
+        "artikel-20a-grundgesetz",
+        "sdg-plus",
+        "wirkungsstaat",
+        "wirkungsrecht"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "eu-taxonomie": {
       "label": "EU-Taxonomie",
       "slug": "eu-taxonomie",
       "url": "/begriffe/eu-taxonomie/",
-      "hoverDefinition": "Die EU-Taxonomie ist ein Umwelt-Klassifikationsrahmen; sie ersetzt weder Social Taxonomy noch vollständige WÖk-Netto-Wirkungsbewertung.",
-      "shortDefinition": "Die EU-Taxonomie klassifiziert wirtschaftliche Tätigkeiten nach definierten Nachhaltigkeitskriterien.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Die EU-Taxonomie ist ein Klassifikationssystem für ökologisch nachhaltige Wirtschaftstätigkeiten. Eine Aktivität gilt als nachhaltig, wenn sie wesentlich zu einem Umweltziel beiträgt, kein Umweltziel erheblich beeinträchtigt, Mindestschutz einhält und technische Bewertungskriterien erfüllt.",
+      "shortDefinition": "Die EU-Taxonomie ist ein Klassifikationssystem für ökologisch nachhaltige Wirtschaftstätigkeiten. Eine Aktivität gilt als nachhaltig, wenn sie wesentlich zu einem Umweltziel beiträgt, kein Umweltziel erheblich beeinträchtigt, Mindestschutz einhält und technische Bewertungskriterien erfüllt.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "EU-Taxonomie",
         "EU Taxonomy",
@@ -8489,7 +8847,10 @@
         "european-green-deal",
         "sfdr",
         "taxonomy-navigator",
-        "wesentlicher-beitrag"
+        "wesentlicher-beitrag",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "wirkungskapital"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8600,6 +8961,29 @@
       ],
       "relatedObjections": []
     },
+    "europaeisches-klimagesetz": {
+      "label": "Europäisches Klimagesetz",
+      "slug": "europaeisches-klimagesetz",
+      "url": "/begriffe/europaeisches-klimagesetz/",
+      "hoverDefinition": "Das Europäische Klimagesetz ist der EU-Rechtsrahmen für Klimaneutralität. Es verankert Klimaneutralität bis 2050, das 2030-Ziel von mindestens 55 Prozent Netto-Emissionsminderung gegenüber 1990 und seit der Änderung 2026 ein bindendes 2040-Ziel von 90 Prozent Netto-Minderung.",
+      "shortDefinition": "Das Europäische Klimagesetz ist der EU-Rechtsrahmen für Klimaneutralität. Es verankert Klimaneutralität bis 2050, das 2030-Ziel von mindestens 55 Prozent Netto-Emissionsminderung gegenüber 1990 und seit der Änderung 2026 ein bindendes 2040-Ziel von 90 Prozent Netto-Minderung.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Europäisches Klimagesetz"
+      ],
+      "relatedTerms": [
+        "klimaschutz",
+        "artikel-20a-grundgesetz",
+        "eu-taxonomie",
+        "cbam",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "european-green-deal": {
       "label": "European Green Deal / Europäischer Green Deal",
       "slug": "european-green-deal",
@@ -8625,6 +9009,29 @@
         "esrs",
         "cbam",
         "green-deal-industrial-plan"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "european-media-freedom-act": {
+      "label": "European Media Freedom Act",
+      "slug": "european-media-freedom-act",
+      "url": "/begriffe/european-media-freedom-act/",
+      "hoverDefinition": "Der European Media Freedom Act schafft einen gemeinsamen Rahmen für Mediendienste im Binnenmarkt und schützt Medienpluralität, redaktionelle Unabhängigkeit und Transparenz.",
+      "shortDefinition": "Der European Media Freedom Act schafft einen gemeinsamen Rahmen für Mediendienste im Binnenmarkt und schützt Medienpluralität, redaktionelle Unabhängigkeit und Transparenz.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "European Media Freedom Act"
+      ],
+      "relatedTerms": [
+        "medienqualitaet",
+        "oeffentlichkeit",
+        "diskursraum",
+        "desinformation",
+        "sdg-plus"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8699,7 +9106,7 @@
       "url": "/begriffe/evolutionstheorie/",
       "hoverDefinition": "Evolutionstheorie in der Wirtschaft beschreibt Entwicklung als Prozess von Variation, Selektion, Anpassung, Lernen, Pfadabhängigkeit und Veränderung von Routinen. Schumpeter und Röpke sind wichtige Bezugslinien.",
       "shortDefinition": "Evolutionstheorie in der Wirtschaft beschreibt Entwicklung als Prozess von Variation, Selektion, Anpassung, Lernen, Pfadabhängigkeit und Veränderung von Routinen. Schumpeter und Röpke sind wichtige Bezugslinien.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Evolutionstheorie / evolutorische Ökonomik",
         "Evolutionstheorie",
@@ -8904,7 +9311,7 @@
       "url": "/begriffe/externalitaeten/",
       "hoverDefinition": "Externalitäten sind Wirkungen wirtschaftlichen Handelns, die nicht im Preis oder in der privaten Kostenrechnung enthalten sind. Dazu gehören Klima-, Gesundheits-, Biodiversitäts-, Sozial- und Demokratieschäden ebenso wie positive öffentliche Wirkungen.",
       "shortDefinition": "Externalitäten sind Wirkungen wirtschaftlichen Handelns, die nicht im Preis oder in der privaten Kostenrechnung enthalten sind. Dazu gehören Klima-, Gesundheits-, Biodiversitäts-, Sozial- und Demokratieschäden ebenso wie positive öffentliche Wirkungen.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Externalitäten / externe Kosten",
         "Externalitäten",
@@ -10077,7 +10484,7 @@
       "url": "/begriffe/frankfurter-schule/",
       "hoverDefinition": "Die Frankfurter Schule steht für kritische Gesellschaftstheorie, Kritik instrumenteller Vernunft, Herrschaftsanalyse, Kulturindustrie, Ideologiekritik und die Frage, wie Freiheit unter modernen Macht- und Medienbedingungen beschädigt wird.",
       "shortDefinition": "Die Frankfurter Schule steht für kritische Gesellschaftstheorie, Kritik instrumenteller Vernunft, Herrschaftsanalyse, Kulturindustrie, Ideologiekritik und die Frage, wie Freiheit unter modernen Macht- und Medienbedingungen beschädigt wird.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Frankfurter Schule"
       ],
@@ -10121,9 +10528,9 @@
       "label": "Fredmund Malik",
       "slug": "fredmund-malik",
       "url": "/begriffe/fredmund-malik/",
-      "hoverDefinition": "Fredmund Malik ist relevant für Management in komplexen Systemen und wirksame Führung.",
-      "shortDefinition": "Fredmund Malik ist relevant für Management in komplexen Systemen und wirksame Führung.",
-      "category": "Vordenker:innen und Bezugslinien",
+      "hoverDefinition": "Malik steht für Management in komplexen Systemen, klare Aufgaben, Feedback, Kommunikation und lebensfähige Organisationen.",
+      "shortDefinition": "Malik steht für Management in komplexen Systemen, klare Aufgaben, Feedback, Kommunikation und lebensfähige Organisationen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Fredmund Malik"
       ],
@@ -10131,7 +10538,9 @@
         "wirksames-management",
         "komplexitaetsmanagement",
         "selbstorganisation",
-        "wirksamkeit"
+        "wirksamkeit",
+        "wirkungsorientierte-unternehmensfuehrung",
+        "lernende-organisation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -10233,7 +10642,7 @@
       "url": "/begriffe/fremdenfeindlichkeit/",
       "hoverDefinition": "Fremdenfeindlichkeit bezeichnet ablehnende, ausgrenzende oder feindselige Haltungen gegenüber Personen oder Gruppen, die als „fremd“ markiert werden. Diese Fremdheit ist keine objektive Eigenschaft, sondern eine soziale Zuschreibung.",
       "shortDefinition": "Fremdenfeindlichkeit bezeichnet ablehnende, ausgrenzende oder feindselige Haltungen gegenüber Personen oder Gruppen, die als „fremd“ markiert werden. Diese Fremdheit ist keine objektive Eigenschaft, sondern eine soziale Zuschreibung.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Fremdenfeindlichkeit / Xenophobie",
         "Fremdenfeindlichkeit",
@@ -10642,7 +11051,7 @@
       "url": "/begriffe/gemeinwohl/",
       "hoverDefinition": "Gemeinwohl bezeichnet die Bedingungen, unter denen Menschen würdig, frei, sicher und teilhabefähig leben können, ohne Lebensgrundlagen oder Demokratie zu zerstören.",
       "shortDefinition": "Gemeinwohl bezeichnet die Bedingungen, unter denen Menschen würdig, frei, sicher und teilhabefähig leben können, ohne Lebensgrundlagen oder Demokratie zu zerstören.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Gemeinwohl",
         "Gemeinwohlorientierung"
@@ -12651,7 +13060,7 @@
       "url": "/begriffe/gruppenbezogene-menschenfeindlichkeit/",
       "hoverDefinition": "Gruppenbezogene Menschenfeindlichkeit beschreibt abwertende Einstellungen, Praktiken oder Strukturen gegenüber Menschen, weil sie einer Gruppe zugerechnet werden. Dazu gehören unter anderem Rassismus, Antisemitismus, Sexismus, Queerfeindlichkeit, Ableismus, Klassismus und antimuslimischer Rassismus.",
       "shortDefinition": "Gruppenbezogene Menschenfeindlichkeit beschreibt abwertende Einstellungen, Praktiken oder Strukturen gegenüber Menschen, weil sie einer Gruppe zugerechnet werden. Dazu gehören unter anderem Rassismus, Antisemitismus, Sexismus, Queerfeindlichkeit, Ableismus, Klassismus und antimuslimischer Rassismus.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Gruppenbezogene Menschenfeindlichkeit"
       ],
@@ -12875,7 +13284,7 @@
       "url": "/begriffe/handlungsfenster/",
       "hoverDefinition": "Ein Handlungsfenster ist der Zeitraum, in dem wirksame, verhältnismäßige und kostengünstige Optionen noch verfügbar sind. Es kann sich durch Kipppunkte, Lock-ins, Kostenanstieg, Vertrauensverlust oder Infrastrukturträgheit schließen.",
       "shortDefinition": "Ein Handlungsfenster ist der Zeitraum, in dem wirksame, verhältnismäßige und kostengünstige Optionen noch verfügbar sind. Es kann sich durch Kipppunkte, Lock-ins, Kostenanstieg, Vertrauensverlust oder Infrastrukturträgheit schließen.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Handlungsfenster"
       ],
@@ -12899,7 +13308,7 @@
       "url": "/begriffe/handlungsmoeglichkeiten/",
       "hoverDefinition": "Handlungsmöglichkeiten sind die real verfügbaren Optionen, mit denen Akteure auf einen Zustand, ein Risiko oder eine Krise reagieren können. Sie hängen von Zeit, Ressourcen, Wissen, Infrastruktur, Vertrauen, Recht, Kapital und sozialer Akzeptanz ab.",
       "shortDefinition": "Handlungsmöglichkeiten sind die real verfügbaren Optionen, mit denen Akteure auf einen Zustand, ein Risiko oder eine Krise reagieren können. Sie hängen von Zeit, Ressourcen, Wissen, Infrastruktur, Vertrauen, Recht, Kapital und sozialer Akzeptanz ab.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Handlungsmöglichkeiten"
       ],
@@ -12971,14 +13380,16 @@
       "relatedObjections": []
     },
     "hannah-arendt": {
-      "label": "Hannah Arendt",
+      "label": "Hannah Arendt / Öffentlichkeit und Handeln",
       "slug": "hannah-arendt",
       "url": "/begriffe/hannah-arendt/",
-      "hoverDefinition": "Hannah Arendt ist für die Wirkungsökonomie relevant, weil sie Politik als öffentlichen Raum des Handelns, Sprechens, Urteilens und gemeinsamen Beginnens versteht.",
-      "shortDefinition": "Hannah Arendt ist für die Wirkungsökonomie relevant, weil sie Politik als öffentlichen Raum des Handelns, Sprechens, Urteilens und gemeinsamen Beginnens versteht.",
-      "category": "Hannah Arendt und politische Wirkungsbegriffe",
+      "hoverDefinition": "Arendt versteht Politik als Raum des Handelns, Sprechens und Erscheinens in Pluralität.",
+      "shortDefinition": "Arendt versteht Politik als Raum des Handelns, Sprechens und Erscheinens in Pluralität.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
-        "Hannah Arendt"
+        "Hannah Arendt / Öffentlichkeit und Handeln",
+        "Hannah Arendt",
+        "Öffentlichkeit und Handeln"
       ],
       "relatedTerms": [
         "wirkungsraum",
@@ -12991,7 +13402,36 @@
         "banalitaet-des-boesen",
         "totalitarismus-arendt",
         "oeffentlichkeit",
-        "demokratie"
+        "demokratie",
+        "diskursraum",
+        "medienqualitaet",
+        "teilgabe"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "hans-jonas": {
+      "label": "Hans Jonas / Prinzip Verantwortung",
+      "slug": "hans-jonas",
+      "url": "/begriffe/hans-jonas/",
+      "hoverDefinition": "Das Prinzip Verantwortung bezeichnet die ethische Pflicht, Handlungen auch an ihren langfristigen Folgen für künftige Generationen, Natur und Lebensbedingungen zu messen.",
+      "shortDefinition": "Das Prinzip Verantwortung bezeichnet die ethische Pflicht, Handlungen auch an ihren langfristigen Folgen für künftige Generationen, Natur und Lebensbedingungen zu messen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Hans Jonas / Prinzip Verantwortung",
+        "Hans Jonas",
+        "Prinzip Verantwortung"
+      ],
+      "relatedTerms": [
+        "generationengerechtigkeit",
+        "artikel-20a-grundgesetz",
+        "europaeisches-klimagesetz",
+        "vorsorgeprinzip",
+        "zeitwirkung",
+        "wirkungsgrenze"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -13003,16 +13443,19 @@
       "label": "Hans Ulrich",
       "slug": "hans-ulrich",
       "url": "/begriffe/hans-ulrich/",
-      "hoverDefinition": "Hans Ulrich ist relevant für Unternehmen als offene, produktive soziale Systeme.",
-      "shortDefinition": "Hans Ulrich ist relevant für Unternehmen als offene, produktive soziale Systeme.",
-      "category": "Vordenker:innen und Bezugslinien",
+      "hoverDefinition": "Ulrich und die St. Galler Schule helfen, Unternehmen als offene, soziale, produktive Systeme zu lesen.",
+      "shortDefinition": "Ulrich und die St. Galler Schule helfen, Unternehmen als offene, soziale, produktive Systeme zu lesen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Hans Ulrich"
       ],
       "relatedTerms": [
         "systemorientiertes-management",
         "st-galler-management-modell",
-        "management"
+        "management",
+        "st-galler-managementmodell",
+        "unternehmen-als-wirkungssystem",
+        "wirkungsraum"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -13243,6 +13686,7 @@
       "label": "Heimat",
       "slug": "heimat",
       "url": "/begriffe/heimat/",
+      "hoverDefinition": "Heimat beschreibt in der WÖk einen Resonanzraum von Zugehörigkeit, Verantwortung und Verlässlichkeit - nicht Besitz oder Ausschluss.",
       "shortDefinition": "Heimat beschreibt in der WÖk einen Resonanzraum von Zugehörigkeit, Verantwortung und Verlässlichkeit - nicht Besitz oder Ausschluss.",
       "category": "Resonanz- und Zugehörigkeitsbegriff",
       "synonyms": [
@@ -13336,6 +13780,7 @@
       "label": "Herkunftsframe",
       "slug": "herkunftsframe",
       "url": "/begriffe/herkunftsframe/",
+      "hoverDefinition": "Ein Herkunftsframe erklärt ein Problem primär über Herkunft, Migration, Religion oder Gruppenzugehörigkeit statt über konkrete Handlungen, Ursachen und Strukturen.",
       "shortDefinition": "Ein Herkunftsframe erklärt ein Problem primär über Herkunft, Migration, Religion oder Gruppenzugehörigkeit statt über konkrete Handlungen, Ursachen und Strukturen.",
       "category": "Debattenbegriff",
       "synonyms": [
@@ -14718,9 +15163,9 @@
       "label": "Innovation",
       "slug": "innovation",
       "url": "/begriffe/innovation/",
-      "hoverDefinition": "Innovation ist die erfolgreiche Durchsetzung einer neuen Problemlösung in einem sozialen, wirtschaftlichen oder technischen System.",
-      "shortDefinition": "Innovation ist in der WÖk nicht bloße Neuheit, sondern neue Problemlösungsfähigkeit mit positiver Netto-Wirkung.",
-      "category": "Innovation, Evolution und Unternehmertum",
+      "hoverDefinition": "Im Schumpeter-Sinn entsteht Innovation durch neue Kombinationen von Produktionsfaktoren, Technologien, Organisationen, Märkten oder Ressourcenpfaden.",
+      "shortDefinition": "Im Schumpeter-Sinn entsteht Innovation durch neue Kombinationen von Produktionsfaktoren, Technologien, Organisationen, Märkten oder Ressourcenpfaden.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Innovation"
       ],
@@ -14890,7 +15335,7 @@
       "url": "/begriffe/institutionenoekonomik/",
       "hoverDefinition": "Institutionenökonomik fragt, wie formelle und informelle Regeln, Eigentumsrechte, Transaktionskosten, Vertrauen, Verträge und Organisationen wirtschaftliches Verhalten prägen.",
       "shortDefinition": "Institutionenökonomik fragt, wie formelle und informelle Regeln, Eigentumsrechte, Transaktionskosten, Vertrauen, Verträge und Organisationen wirtschaftliches Verhalten prägen.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Institutionenökonomik"
       ],
@@ -14909,13 +15354,14 @@
       "relatedObjections": []
     },
     "interdependenz": {
-      "label": "Interdependenz",
+      "label": "Interdependenz / wechselseitige Abhängigkeit",
       "slug": "interdependenz",
       "url": "/begriffe/interdependenz/",
-      "hoverDefinition": "Wechselseitige Abhängigkeit von Zuständen, Akteuren, Wirkungsfeldern oder Systemen.",
-      "shortDefinition": "Interdependenz beschreibt, dass Zustände, Akteure und Systeme sich gegenseitig beeinflussen.",
-      "category": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Interdependenz bedeutet, dass Elemente eines Systems sich gegenseitig beeinflussen und nicht isoliert verstanden werden können.",
+      "shortDefinition": "Interdependenz bedeutet, dass Elemente eines Systems sich gegenseitig beeinflussen und nicht isoliert verstanden werden können.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
+        "Interdependenz / wechselseitige Abhängigkeit",
         "Interdependenz",
         "wechselseitige Abhängigkeit"
       ],
@@ -14933,7 +15379,10 @@
         "mensch-planet-demokratie",
         "nichtlinearitaet",
         "rueckkopplung",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "wirkungsraum",
+        "nichtkompensationsprinzip",
+        "systemtheorie"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15132,6 +15581,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "intertemporale-freiheitssicherung": {
+      "label": "Intertemporale Freiheitssicherung",
+      "slug": "intertemporale-freiheitssicherung",
+      "url": "/begriffe/intertemporale-freiheitssicherung/",
+      "hoverDefinition": "Intertemporale Freiheitssicherung beschreibt den Gedanken, dass heutige Politik künftige Freiheit nicht dadurch entwerten darf, dass sie notwendige Lasten, Risiken oder Einschränkungen einseitig in die Zukunft verschiebt.",
+      "shortDefinition": "Intertemporale Freiheitssicherung beschreibt den Gedanken, dass heutige Politik künftige Freiheit nicht dadurch entwerten darf, dass sie notwendige Lasten, Risiken oder Einschränkungen einseitig in die Zukunft verschiebt.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Intertemporale Freiheitssicherung"
+      ],
+      "relatedTerms": [
+        "artikel-20a-grundgesetz",
+        "zeitwirkung",
+        "generationengerechtigkeit",
+        "wirkungsrisiko",
+        "wirkungsresilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "investitionsschuld": {
       "label": "Investitionsschuld",
       "slug": "investitionsschuld",
@@ -15302,9 +15774,9 @@
       "label": "Jochen Röpke",
       "slug": "jochen-roepke",
       "url": "/begriffe/jochen-roepke/",
-      "hoverDefinition": "Jochen Röpke ist relevant, weil Transformation unternehmerisches Lernen und Selbstveränderung verlangt.",
-      "shortDefinition": "Jochen Röpke ist relevant, weil Transformation unternehmerisches Lernen und Selbstveränderung verlangt.",
-      "category": "Vordenker:innen und Bezugslinien",
+      "hoverDefinition": "Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
+      "shortDefinition": "Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Jochen Röpke"
       ],
@@ -15312,7 +15784,32 @@
         "lernender-unternehmer",
         "unternehmerisches-lernen",
         "evolutorischer-unternehmer",
-        "lernebenen"
+        "lernebenen",
+        "innovation",
+        "wirkungsinnovation",
+        "lernende-organisation"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "john-dewey": {
+      "label": "John Dewey / Pragmatismus",
+      "slug": "john-dewey",
+      "url": "/begriffe/john-dewey/",
+      "hoverDefinition": "Pragmatismus versteht Wahrheit, Lernen und Demokratie stark über Folgen, Erfahrung, Experiment und Korrektur.",
+      "shortDefinition": "Pragmatismus versteht Wahrheit, Lernen und Demokratie stark über Folgen, Erfahrung, Experiment und Korrektur.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "John Dewey / Pragmatismus",
+        "John Dewey",
+        "Pragmatismus"
+      ],
+      "relatedTerms": [
+        "wirkungsrat",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -15546,6 +16043,7 @@
       "label": "Kapitalakkumulation",
       "slug": "kapitalakkumulation",
       "url": "/begriffe/kapitalakkumulation/",
+      "hoverDefinition": "Kapitalakkumulation beschreibt die langfristige Anhäufung und Konzentration von Kapital, Vermögen oder Eigentumsrechten und damit die Frage, welche Macht-, Teilhabe- und Wirkungsfolgen daraus entstehen.",
       "shortDefinition": "Kapitalakkumulation beschreibt die langfristige Anhäufung und Konzentration von Kapital, Vermögen oder Eigentumsrechten und damit die Frage, welche Macht-, Teilhabe- und Wirkungsfolgen daraus entstehen.",
       "category": "Kapital, Markt und Eigentum",
       "synonyms": [
@@ -15900,7 +16398,7 @@
       "url": "/begriffe/keynesianismus/",
       "hoverDefinition": "Keynesianismus betont die Rolle staatlicher Nachfrage-, Investitions- und Stabilisierungspolitik, besonders in Krisen. Märkte gelten nicht automatisch als stabil oder vollbeschäftigend.",
       "shortDefinition": "Keynesianismus betont die Rolle staatlicher Nachfrage-, Investitions- und Stabilisierungspolitik, besonders in Krisen. Märkte gelten nicht automatisch als stabil oder vollbeschäftigend.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Keynesianismus"
       ],
@@ -16165,7 +16663,7 @@
       "url": "/begriffe/kipppunkte/",
       "hoverDefinition": "Ökologische Kipppunkte sind Schwellen in Klima- oder Ökosystemen, bei deren Überschreiten selbstverstärkende Prozesse eintreten können, die das System in einen neuen Zustand bringen.",
       "shortDefinition": "Ökologische Kipppunkte sind Schwellen in Klima- oder Ökosystemen, bei deren Überschreiten selbstverstärkende Prozesse eintreten können, die das System in einen neuen Zustand bringen.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Kipppunkte (ökologische)",
         "ökologische Kipppunkte",
@@ -16252,13 +16750,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "klimabeschluss-des-bundesverfassungsgerichts": {
+      "label": "Klimabeschluss des Bundesverfassungsgerichts",
+      "slug": "klimabeschluss-des-bundesverfassungsgerichts",
+      "url": "/begriffe/klimabeschluss-des-bundesverfassungsgerichts/",
+      "hoverDefinition": "Der Klimabeschluss des Bundesverfassungsgerichts vom 24. März 2021 ist ein wichtiger verfassungsrechtlicher Bezugspunkt für Klimaschutz, Art. 20a GG, Grundrechte und die Verteilung von Freiheitslasten über die Zeit.",
+      "shortDefinition": "Der Klimabeschluss des Bundesverfassungsgerichts vom 24. März 2021 ist ein wichtiger verfassungsrechtlicher Bezugspunkt für Klimaschutz, Art. 20a GG, Grundrechte und die Verteilung von Freiheitslasten über die Zeit.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Klimabeschluss des Bundesverfassungsgerichts"
+      ],
+      "relatedTerms": [
+        "artikel-20a-grundgesetz",
+        "intertemporale-freiheitssicherung",
+        "wirkungsfolgenabschaetzung",
+        "wirkungsstaat",
+        "wirkungsrat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "klimafolgeschaeden": {
       "label": "Klimafolgeschäden",
       "slug": "klimafolgeschaeden",
       "url": "/begriffe/klimafolgeschaeden/",
       "hoverDefinition": "Klimafolgeschäden sind Schäden, Kosten und Verluste, die durch Klimawandel entstehen: Hitzetote, Ernteausfälle, Flutschäden, Waldschäden, Gesundheitskosten, Infrastrukturschäden, Versicherungsrisiken, Produktivitätsverluste und soziale Destabilisierung.",
       "shortDefinition": "Klimafolgeschäden sind Schäden, Kosten und Verluste, die durch Klimawandel entstehen: Hitzetote, Ernteausfälle, Flutschäden, Waldschäden, Gesundheitskosten, Infrastrukturschäden, Versicherungsrisiken, Produktivitätsverluste und soziale Destabilisierung.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Klimafolgeschäden",
         "Klimafolgeschäden / Loss and Damage",
@@ -16340,7 +16861,7 @@
       "url": "/begriffe/klimarisiko/",
       "hoverDefinition": "Klimarisiko bezeichnet physische, transitionale, soziale, finanzielle und politische Risiken, die aus Klimawandel oder Klimaschutz entstehen. Dazu gehören Extremwetter, Wasserstress, Lieferkettenstörungen, Regulierung, Stranded Assets und Versicherbarkeit.",
       "shortDefinition": "Klimarisiko bezeichnet physische, transitionale, soziale, finanzielle und politische Risiken, die aus Klimawandel oder Klimaschutz entstehen. Dazu gehören Extremwetter, Wasserstress, Lieferkettenstörungen, Regulierung, Stranded Assets und Versicherbarkeit.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Klimarisiko"
       ],
@@ -16568,6 +17089,7 @@
       "label": "Kommunikation und Wirklichkeitskonstruktion",
       "slug": "kommunikation-wirklichkeitskonstruktion",
       "url": "/begriffe/kommunikation-wirklichkeitskonstruktion/",
+      "hoverDefinition": "Kommunikation formt in der WÖk Resonanzräume, Wirklichkeitserwartungen und Wirkungspotenziale.",
       "shortDefinition": "Kommunikation formt in der WÖk Resonanzräume, Wirklichkeitserwartungen und Wirkungspotenziale.",
       "category": "Anschlussbegriff",
       "synonyms": [
@@ -16581,7 +17103,8 @@
         "wirkpfad",
         "wirkungspotenzial",
         "oeffentlichkeit",
-        "diskurskultur"
+        "diskurskultur",
+        "wirkungspfad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -16645,6 +17168,28 @@
         "kommunismus",
         "staatssozialismus",
         "einparteienstaat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "komplementaritaet": {
+      "label": "Komplementarität",
+      "slug": "komplementaritaet",
+      "url": "/begriffe/komplementaritaet/",
+      "hoverDefinition": "Komplementarität beschreibt, dass bestimmte Eigenschaften eines Quantensystems nicht gleichzeitig in derselben klassischen Weise vollständig bestimmbar oder darstellbar sind.",
+      "shortDefinition": "Komplementarität beschreibt, dass bestimmte Eigenschaften eines Quantensystems nicht gleichzeitig in derselben klassischen Weise vollständig bestimmbar oder darstellbar sind.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Komplementarität"
+      ],
+      "relatedTerms": [
+        "zielkonflikt",
+        "netto-wirkung",
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -16814,8 +17359,9 @@
       "label": "Konstruktivismus",
       "slug": "konstruktivismus",
       "url": "/begriffe/konstruktivismus/",
-      "shortDefinition": "Konstruktivismus erklärt, warum Wirkungsmessung Perspektiven, Datenquellen und Systemgrenzen offenlegen muss.",
-      "category": "Anschlussbegriff",
+      "hoverDefinition": "Konstruktivismus bezeichnet erkenntnistheoretische Ansätze, nach denen Wirklichkeit nicht einfach objektiv abgebildet, sondern durch Beobachtung, Sprache, Erfahrung, Unterscheidungen und soziale Kontexte mitkonstruiert wird.",
+      "shortDefinition": "Konstruktivismus bezeichnet erkenntnistheoretische Ansätze, nach denen Wirklichkeit nicht einfach objektiv abgebildet, sondern durch Beobachtung, Sprache, Erfahrung, Unterscheidungen und soziale Kontexte mitkonstruiert wird.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Konstruktivismus",
         "konstruktivistische Perspektive",
@@ -16827,7 +17373,8 @@
         "beobachterabhaengigkeit",
         "nichttriviales-system",
         "wirkungsrat",
-        "datenqualitaet"
+        "datenqualitaet",
+        "nichttriviale-systeme"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -17091,7 +17638,7 @@
       "url": "/begriffe/kreislaufinnovation/",
       "hoverDefinition": "Kreislaufinnovation bezeichnet neue Lösungen, die Materialien, Produkte, Bauteile, Energieflüsse, Daten oder Geschäftsmodelle so gestalten, dass Abfall, Primärrohstoffverbrauch und Verlustleistung sinken.",
       "shortDefinition": "Kreislaufinnovation bezeichnet neue Lösungen, die Materialien, Produkte, Bauteile, Energieflüsse, Daten oder Geschäftsmodelle so gestalten, dass Abfall, Primärrohstoffverbrauch und Verlustleistung sinken.",
-      "category": "Innovation, Evolution und Unternehmertum",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Kreislaufinnovation"
       ],
@@ -17138,9 +17685,9 @@
       "label": "Kreislaufwirtschaft",
       "slug": "kreislaufwirtschaft",
       "url": "/begriffe/kreislaufwirtschaft/",
-      "hoverDefinition": "Kreislaufwirtschaft hält Produkte, Materialien und Ressourcen möglichst lange im Nutzungskreislauf, vermeidet Abfall und regeneriert natürliche Systeme.",
-      "shortDefinition": "Kreislaufwirtschaft hält Materialien, Produkte und Wertschöpfung länger im System und kann Wachstum innerhalb planetarer Grenzen ermöglichen.",
-      "category": "Kreislaufwirtschaft, Circular Design und Materialkreisläufe",
+      "hoverDefinition": "Kreislaufwirtschaft umfasst Design gegen Abfall, Reparierbarkeit, Wiederverwendung, Rücknahme, Recycling, Remanufacturing und längere Nutzungsdauer.",
+      "shortDefinition": "Kreislaufwirtschaft umfasst Design gegen Abfall, Reparierbarkeit, Wiederverwendung, Rücknahme, Recycling, Remanufacturing und längere Nutzungsdauer.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Kreislaufwirtschaft"
       ],
@@ -17494,9 +18041,9 @@
       "label": "Kybernetik",
       "slug": "kybernetik",
       "url": "/begriffe/kybernetik/",
-      "hoverDefinition": "Kybernetik ist die Wissenschaft von Steuerung, Regelung, Kommunikation und Rückkopplung in Systemen.",
-      "shortDefinition": "Kybernetik beschreibt Steuerung, Regelung und Rückkopplung in komplexen Systemen.",
-      "category": "Systemtheorie, Kybernetik und Konstruktivismus",
+      "hoverDefinition": "Kybernetik untersucht, wie Systeme Informationen aufnehmen, verarbeiten, zurückmelden und ihr Verhalten dadurch stabilisieren oder verändern.",
+      "shortDefinition": "Kybernetik untersucht, wie Systeme Informationen aufnehmen, verarbeiten, zurückmelden und ihr Verhalten dadurch stabilisieren oder verändern.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Kybernetik"
       ],
@@ -17508,7 +18055,8 @@
         "triviale-maschine",
         "varietaet",
         "nichttriviales-system",
-        "viable-system-model"
+        "viable-system-model",
+        "nichttriviale-systeme"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -17780,6 +18328,28 @@
         "wasserstoffspeicher",
         "speicher-energie",
         "pumpspeicher"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "laozi": {
+      "label": "Laozi / Laotse",
+      "slug": "laozi",
+      "url": "/begriffe/laozi/",
+      "hoverDefinition": "Laozi gilt traditionell als zentrale Figur des Daoismus. Für die WÖk ist nicht die historische Person entscheidend, sondern die Anschlussfähigkeit des Prozessdenkens.",
+      "shortDefinition": "Laozi gilt traditionell als zentrale Figur des Daoismus. Für die WÖk ist nicht die historische Person entscheidend, sondern die Anschlussfähigkeit des Prozessdenkens.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Laozi / Laotse",
+        "Laozi",
+        "Laotse"
+      ],
+      "relatedTerms": [
+        "daoismus",
+        "wu-wei"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -18204,6 +18774,7 @@
       "label": "Lernende Organisation",
       "slug": "lernende-organisation",
       "url": "/begriffe/lernende-organisation/",
+      "hoverDefinition": "Eine lernende Organisation erkennt Abweichungen, Risiken und Wirkungen früh genug, um ihr Handeln zu korrigieren.",
       "shortDefinition": "Eine lernende Organisation erkennt Abweichungen, Risiken und Wirkungen früh genug, um ihr Handeln zu korrigieren.",
       "category": "Anschlussbegriff",
       "synonyms": [
@@ -18325,7 +18896,7 @@
       "url": "/begriffe/liberalismus/",
       "hoverDefinition": "Liberalismus stellt Freiheit, individuelle Rechte, Rechtsstaatlichkeit, Machtbegrenzung, Eigentum, Meinungsfreiheit und persönliche Selbstbestimmung ins Zentrum. Er hat unterschiedliche wirtschaftliche, politische und soziale Varianten.",
       "shortDefinition": "Liberalismus stellt Freiheit, individuelle Rechte, Rechtsstaatlichkeit, Machtbegrenzung, Eigentum, Meinungsfreiheit und persönliche Selbstbestimmung ins Zentrum. Er hat unterschiedliche wirtschaftliche, politische und soziale Varianten.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Liberalismus"
       ],
@@ -18925,7 +19496,7 @@
       "url": "/begriffe/ludwig-erhard/",
       "hoverDefinition": "Ludwig Erhard steht politisch für die Durchsetzung und Popularisierung der Sozialen Marktwirtschaft in der Bundesrepublik. Sein Leitbild verband Marktwirtschaft, Wettbewerb, Wohlstand und sozialen Ausgleich.",
       "shortDefinition": "Ludwig Erhard steht politisch für die Durchsetzung und Popularisierung der Sozialen Marktwirtschaft in der Bundesrepublik. Sein Leitbild verband Marktwirtschaft, Wettbewerb, Wohlstand und sozialen Ausgleich.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Ludwig Erhard"
       ],
@@ -19209,7 +19780,7 @@
       "url": "/begriffe/marktversagen/",
       "hoverDefinition": "Marktversagen liegt vor, wenn Märkte keine effizienten oder gesellschaftlich tragfähigen Ergebnisse erzeugen, etwa durch externe Kosten, Informationsasymmetrien, Marktmacht, öffentliche Güter oder Koordinationsprobleme.",
       "shortDefinition": "Marktversagen liegt vor, wenn Märkte keine effizienten oder gesellschaftlich tragfähigen Ergebnisse erzeugen, etwa durch externe Kosten, Informationsasymmetrien, Marktmacht, öffentliche Güter oder Koordinationsprobleme.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Marktversagen"
       ],
@@ -19804,6 +20375,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "messbarkeit-ohne-reduktionismus": {
+      "label": "Messbarkeit ohne Reduktionismus",
+      "slug": "messbarkeit-ohne-reduktionismus",
+      "url": "/begriffe/messbarkeit-ohne-reduktionismus/",
+      "hoverDefinition": "Messbarkeit ohne Reduktionismus bedeutet, dass Wirkungen so präzise wie möglich gemessen werden, ohne komplexe Wirklichkeit auf einzelne Kennzahlen zu verkürzen.",
+      "shortDefinition": "Messbarkeit ohne Reduktionismus bedeutet, dass Wirkungen so präzise wie möglich gemessen werden, ohne komplexe Wirklichkeit auf einzelne Kennzahlen zu verkürzen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Messbarkeit ohne Reduktionismus"
+      ],
+      "relatedTerms": [
+        "wirkungsbewertung",
+        "datenqualitaet",
+        "wirkungsrat",
+        "modellgrenze",
+        "buergerbeteiligung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "messgrenzen-und-unsicherheit": {
       "label": "Messgrenzen und Unsicherheit",
       "slug": "messgrenzen-und-unsicherheit",
@@ -19869,6 +20463,28 @@
       ],
       "relatedObjections": []
     },
+    "messproblem": {
+      "label": "Messproblem",
+      "slug": "messproblem",
+      "url": "/begriffe/messproblem/",
+      "hoverDefinition": "Das Messproblem bezeichnet die Frage, wie in der Quantenmechanik aus einer mathematischen Beschreibung möglicher Messergebnisse ein bestimmtes beobachtbares Ergebnis wird.",
+      "shortDefinition": "Das Messproblem bezeichnet die Frage, wie in der Quantenmechanik aus einer mathematischen Beschreibung möglicher Messergebnisse ein bestimmtes beobachtbares Ergebnis wird.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Messproblem"
+      ],
+      "relatedTerms": [
+        "wirkungsbewertung",
+        "wirkungswahrheit",
+        "modellgrenze",
+        "wirkungsrat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "messstellenbetrieb": {
       "label": "Messstellenbetrieb",
       "slug": "messstellenbetrieb",
@@ -19883,6 +20499,28 @@
         "smart-meter",
         "dynamischer-stromtarif",
         "smart-meter-gateway"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "messung-in-der-quantenmechanik": {
+      "label": "Messung in der Quantenmechanik",
+      "slug": "messung-in-der-quantenmechanik",
+      "url": "/begriffe/messung-in-der-quantenmechanik/",
+      "hoverDefinition": "Messung bezeichnet in der Quantenmechanik den Vorgang, durch den aus einem quantenmechanisch beschriebenen Zustand ein beobachtbares Messergebnis hervorgeht.",
+      "shortDefinition": "Messung bezeichnet in der Quantenmechanik den Vorgang, durch den aus einem quantenmechanisch beschriebenen Zustand ein beobachtbares Messergebnis hervorgeht.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Messung in der Quantenmechanik"
+      ],
+      "relatedTerms": [
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "datenqualitaet",
+        "beobachterabhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -20264,6 +20902,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "modellgrenze": {
+      "label": "Modellgrenze / Interpretationsgrenze",
+      "slug": "modellgrenze",
+      "url": "/begriffe/modellgrenze/",
+      "hoverDefinition": "Modellgrenze bezeichnet den Bereich, in dem ein Modell zuverlässig arbeitet, unsicher wird oder nicht mehr aussagefähig ist. Interpretationsgrenze bezeichnet die Grenze zwischen Daten, Modell und Deutung.",
+      "shortDefinition": "Modellgrenze bezeichnet den Bereich, in dem ein Modell zuverlässig arbeitet, unsicher wird oder nicht mehr aussagefähig ist. Interpretationsgrenze bezeichnet die Grenze zwischen Daten, Modell und Deutung.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Modellgrenze / Interpretationsgrenze",
+        "Modellgrenze",
+        "Interpretationsgrenze"
+      ],
+      "relatedTerms": [
+        "datenqualitaet",
+        "wirkungswahrheit",
+        "wirkungsrat",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "moderation-und-community-dynamik": {
       "label": "Moderation und Community-Dynamik",
       "slug": "moderation-und-community-dynamik",
@@ -20369,12 +21031,15 @@
       "label": "Moderner Patriotismus",
       "slug": "moderner-patriotismus",
       "url": "/begriffe/moderner-patriotismus/",
-      "shortDefinition": "Moderner Patriotismus bedeutet Verantwortung für den gemeinsamen demokratischen Wirkungsraum - nicht ethnische Abgrenzung oder nationaler Stolz.",
-      "category": "Demokratiebegriff",
+      "hoverDefinition": "Moderner Patriotismus ist eine offene, demokratische Form von Zugehörigkeit: Menschen bekennen sich zu Verfassung, Rechtsstaat, Freiheit, Solidarität, öffentlicher Verantwortung und der gemeinsamen Aufgabe, die Lebensbedingungen des Gemeinwesens zu schützen.",
+      "shortDefinition": "Moderner Patriotismus ist eine offene, demokratische Form von Zugehörigkeit: Menschen bekennen sich zu Verfassung, Rechtsstaat, Freiheit, Solidarität, öffentlicher Verantwortung und der gemeinsamen Aufgabe, die Lebensbedingungen des Gemeinwesens zu schützen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Moderner Patriotismus",
         "demokratischer Patriotismus",
-        "gesellschaftlicher Patriotismus"
+        "gesellschaftlicher Patriotismus",
+        "Moderner Patriotismus / Verfassungspatriotismus",
+        "Verfassungspatriotismus"
       ],
       "relatedTerms": [
         "verfassungspatriotismus",
@@ -20383,7 +21048,12 @@
         "heimat",
         "gemeinwohl",
         "diskursraum",
-        "resilienz"
+        "resilienz",
+        "artikel-20a-grundgesetz",
+        "oeffentlichkeit",
+        "teilgabe",
+        "resonanzraum",
+        "europa-als-wirkungsraum"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -20758,8 +21428,9 @@
       "label": "Nationalismus",
       "slug": "nationalismus",
       "url": "/begriffe/nationalismus/",
-      "shortDefinition": "Nationalismus ist aus WÖk-Sicht ein Wirkungsrisiko, wenn Zugehörigkeit durch Abwertung anderer erzeugt wird.",
-      "category": "Abgrenzungsbegriff",
+      "hoverDefinition": "Nationalismus überhöht die eigene Nation und grenzt andere Gruppen, Staaten oder Menschen ab. Er kann demokratische, soziale und internationale Kooperationsräume beschädigen.",
+      "shortDefinition": "Nationalismus überhöht die eigene Nation und grenzt andere Gruppen, Staaten oder Menschen ab. Er kann demokratische, soziale und internationale Kooperationsräume beschädigen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Nationalismus",
         "nationalistische Identität",
@@ -21045,7 +21716,7 @@
       "url": "/begriffe/neoliberalismus/",
       "hoverDefinition": "Neoliberalismus wird unterschiedlich verwendet. Im heutigen politischen Sprachgebrauch bezeichnet er meist eine Ordnung, die Markt, Wettbewerb, Privatisierung, Deregulierung und Kapitalrendite stark priorisiert.",
       "shortDefinition": "Neoliberalismus wird unterschiedlich verwendet. Im heutigen politischen Sprachgebrauch bezeichnet er meist eine Ordnung, die Markt, Wettbewerb, Privatisierung, Deregulierung und Kapitalrendite stark priorisiert.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Neoliberalismus"
       ],
@@ -21676,8 +22347,9 @@
       "label": "Neukombination",
       "slug": "neukombination",
       "url": "/begriffe/neukombination/",
-      "shortDefinition": "Neukombination beschreibt Innovation als neue Verbindung vorhandener Ressourcen, Fähigkeiten, Technologien und Organisationsformen.",
-      "category": "Anschlussbegriff",
+      "hoverDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Kombinationen bestehender Produktionsfaktoren und Wissensbestände.",
+      "shortDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Kombinationen bestehender Produktionsfaktoren und Wissensbestände.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Neukombination",
         "neue Kombination",
@@ -21917,6 +22589,7 @@
       "label": "Nichtlinearität",
       "slug": "nichtlinearitaet",
       "url": "/begriffe/nichtlinearitaet/",
+      "hoverDefinition": "Nichtlinearität erklärt, warum gleiche Eingriffe unterschiedliche oder sprunghafte Wirkungen erzeugen können.",
       "shortDefinition": "Nichtlinearität erklärt, warum gleiche Eingriffe unterschiedliche oder sprunghafte Wirkungen erzeugen können.",
       "category": "Präzisierungsbegriff",
       "synonyms": [
@@ -21930,6 +22603,31 @@
         "interdependenz",
         "pfadabhaengigkeit",
         "systemhebel"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nichtlokalitaet": {
+      "label": "Nichtlokalität / Nichtseparabilität",
+      "slug": "nichtlokalitaet",
+      "url": "/begriffe/nichtlokalitaet/",
+      "hoverDefinition": "Nichtlokalität und Nichtseparabilität bezeichnen in der Quantenphysik Eigenschaften verschränkter Systeme, deren Korrelationen sich nicht vollständig durch klassische lokale Einzelzustände erklären lassen.",
+      "shortDefinition": "Nichtlokalität und Nichtseparabilität bezeichnen in der Quantenphysik Eigenschaften verschränkter Systeme, deren Korrelationen sich nicht vollständig durch klassische lokale Einzelzustände erklären lassen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Nichtlokalität / Nichtseparabilität",
+        "Nichtlokalität",
+        "Nichtseparabilität"
+      ],
+      "relatedTerms": [
+        "interdependenz",
+        "wirkungsraum",
+        "lieferkettenwirkung",
+        "klimafolgeschaeden",
+        "generationengerechtigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -21954,6 +22652,29 @@
         "rueckkopplung",
         "heinz-von-foerster",
         "planwirtschaft"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nichttriviale-systeme": {
+      "label": "Nichttriviale Systeme",
+      "slug": "nichttriviale-systeme",
+      "url": "/begriffe/nichttriviale-systeme/",
+      "hoverDefinition": "Nichttriviale Systeme liefern bei gleichem Input nicht zwangsläufig denselben Output. Ihr Verhalten hängt von Struktur, Geschichte, Erwartungen, Rückkopplungen und Lernprozessen ab.",
+      "shortDefinition": "Nichttriviale Systeme liefern bei gleichem Input nicht zwangsläufig denselben Output. Ihr Verhalten hängt von Struktur, Geschichte, Erwartungen, Rückkopplungen und Lernprozessen ab.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Nichttriviale Systeme"
+      ],
+      "relatedTerms": [
+        "kybernetik",
+        "rueckkopplung",
+        "wirkungsarchitektur",
+        "systemhebel",
+        "beobachterabhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22112,7 +22833,7 @@
       "url": "/begriffe/no-regret-massnahme/",
       "hoverDefinition": "No-regret-Maßnahmen sind Schritte, die auch dann Nutzen erzeugen, wenn zukünftige Entwicklungen unsicher sind. Beispiele sind Energieeffizienz, Hitzeschutz, Wasserrückhalt, Bildungsqualität, Gesundheitsprävention und Cyberbasisschutz.",
       "shortDefinition": "No-regret-Maßnahmen sind Schritte, die auch dann Nutzen erzeugen, wenn zukünftige Entwicklungen unsicher sind. Beispiele sind Energieeffizienz, Hitzeschutz, Wasserrückhalt, Bildungsqualität, Gesundheitsprävention und Cyberbasisschutz.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "No-regret-Maßnahme",
         "No regret Maßnahme",
@@ -22629,6 +23350,7 @@
       "label": "Öffentliche Wahrheit",
       "slug": "oeffentliche-wahrheit",
       "url": "/begriffe/oeffentliche-wahrheit/",
+      "hoverDefinition": "Öffentliche Wahrheit bezeichnet die gemeinsame Infrastruktur, in der Fakten, Quellen und Korrektur demokratisch prüfbar bleiben.",
       "shortDefinition": "Öffentliche Wahrheit bezeichnet die gemeinsame Infrastruktur, in der Fakten, Quellen und Korrektur demokratisch prüfbar bleiben.",
       "category": "Demokratiebegriff",
       "synonyms": [
@@ -22677,9 +23399,9 @@
       "label": "Öffentlichkeit",
       "slug": "oeffentlichkeit",
       "url": "/begriffe/oeffentlichkeit/",
-      "hoverDefinition": "Öffentlichkeit ist der Raum, in dem gesellschaftliche Fragen sichtbar, diskutierbar und kritisierbar werden.",
-      "shortDefinition": "Öffentlichkeit ist in der WÖk ein Wirkungsraum, in dem Wahrheit, Vertrauen, Konflikt und demokratische Orientierung entstehen.",
-      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "hoverDefinition": "Öffentlichkeit ist der gesellschaftliche Raum, in dem Informationen, Deutungen, Kritik, Konflikte und gemeinsame Wirklichkeitsbezüge entstehen.",
+      "shortDefinition": "Öffentlichkeit ist der gesellschaftliche Raum, in dem Informationen, Deutungen, Kritik, Konflikte und gemeinsame Wirklichkeitsbezüge entstehen.",
+      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
       "synonyms": [
         "Öffentlichkeit"
       ],
@@ -22899,7 +23621,7 @@
       "url": "/begriffe/oekosoziale-marktwirtschaft/",
       "hoverDefinition": "Ökosoziale Marktwirtschaft erweitert marktwirtschaftlichen Wettbewerb und sozialen Ausgleich um ökologische Verantwortung, Umweltkosten und langfristige Nachhaltigkeit.",
       "shortDefinition": "Ökosoziale Marktwirtschaft erweitert marktwirtschaftlichen Wettbewerb und sozialen Ausgleich um ökologische Verantwortung, Umweltkosten und langfristige Nachhaltigkeit.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Ökosoziale Marktwirtschaft"
       ],
@@ -22923,7 +23645,7 @@
       "url": "/begriffe/oekosystem/",
       "hoverDefinition": "Ökosystem bezeichnet erstens biologische Lebensgemeinschaften in Wechselwirkung mit ihrer Umwelt. In der Wirtschafts- und Innovationssprache bezeichnet es zweitens Netzwerke von Akteuren, Ressourcen, Plattformen, Regeln und Beziehungen.",
       "shortDefinition": "Ökosystem bezeichnet erstens biologische Lebensgemeinschaften in Wechselwirkung mit ihrer Umwelt. In der Wirtschafts- und Innovationssprache bezeichnet es zweitens Netzwerke von Akteuren, Ressourcen, Plattformen, Regeln und Beziehungen.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Ökosystem"
       ],
@@ -23315,7 +24037,7 @@
       "url": "/begriffe/ordoliberalismus/",
       "hoverDefinition": "Ordoliberalismus betont, dass Märkte eine rechtliche, institutionelle und politische Ordnung brauchen. Wettbewerb, Privateigentum und Vertragsfreiheit sind nicht naturwüchsig, sondern müssen gegen Machtkonzentration und Verzerrung geschützt werden.",
       "shortDefinition": "Ordoliberalismus betont, dass Märkte eine rechtliche, institutionelle und politische Ordnung brauchen. Wettbewerb, Privateigentum und Vertragsfreiheit sind nicht naturwüchsig, sondern müssen gegen Machtkonzentration und Verzerrung geschützt werden.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Ordoliberalismus"
       ],
@@ -23327,7 +24049,8 @@
         "wirkungsrecht",
         "rechtsstaatlichkeit",
         "ordoliberalismus",
-        "wettbewerb-als-suchverfahren"
+        "wettbewerb-als-suchverfahren",
+        "wirkungsstaat"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23396,7 +24119,7 @@
       "url": "/begriffe/oesterreichische-schule/",
       "hoverDefinition": "Die Österreichische Schule betont subjektive Wertschätzung, Unternehmertum, Marktprozesse, dezentrales Wissen, Wettbewerb als Entdeckungsverfahren und Skepsis gegenüber zentraler Planung.",
       "shortDefinition": "Die Österreichische Schule betont subjektive Wertschätzung, Unternehmertum, Marktprozesse, dezentrales Wissen, Wettbewerb als Entdeckungsverfahren und Skepsis gegenüber zentraler Planung.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Österreichische Schule",
         "Austrian School"
@@ -23607,6 +24330,7 @@
       "label": "patriarchale Milieus",
       "slug": "patriarchale-milieus",
       "url": "/begriffe/patriarchale-milieus/",
+      "hoverDefinition": "Patriarchale Milieus sind soziale Umfelder, in denen männliche Dominanz, Kontrolle über Geschlechterrollen und Abwertung von Abweichung normalisiert werden.",
       "shortDefinition": "Patriarchale Milieus sind soziale Umfelder, in denen männliche Dominanz, Kontrolle über Geschlechterrollen und Abwertung von Abweichung normalisiert werden.",
       "category": "Gesellschaftsbegriff",
       "synonyms": [
@@ -23829,9 +24553,9 @@
       "label": "Peter Drucker",
       "slug": "peter-drucker",
       "url": "/begriffe/peter-drucker/",
-      "hoverDefinition": "Peter Drucker ist relevant, weil Gewinn für ihn nicht der eigentliche Zweck, sondern ein Test wirtschaftlicher Tragfähigkeit ist.",
-      "shortDefinition": "Peter Drucker ist relevant, weil Gewinn für ihn nicht der eigentliche Zweck, sondern ein Test wirtschaftlicher Tragfähigkeit ist.",
-      "category": "Vordenker:innen und Bezugslinien",
+      "hoverDefinition": "Drucker steht für Management als Aufgabe, Wirksamkeit, Kundennutzen und die Unterscheidung zwischen Effektivität und Effizienz.",
+      "shortDefinition": "Drucker steht für Management als Aufgabe, Wirksamkeit, Kundennutzen und die Unterscheidung zwischen Effektivität und Effizienz.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Peter Drucker"
       ],
@@ -23840,7 +24564,8 @@
         "effizienz",
         "kundennutzen",
         "gewinn-als-test",
-        "management"
+        "management",
+        "unternehmen-als-wirkungssystem"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23854,7 +24579,7 @@
       "url": "/begriffe/pfadabhaengigkeit/",
       "hoverDefinition": "Pfadabhängigkeit bedeutet, dass frühere Entscheidungen spätere Möglichkeiten prägen und begrenzen. Lock-in liegt vor, wenn Infrastrukturen, Verträge, Kompetenzen, Gewohnheiten oder Kapital einen Wechsel erschweren.",
       "shortDefinition": "Pfadabhängigkeit bedeutet, dass frühere Entscheidungen spätere Möglichkeiten prägen und begrenzen. Lock-in liegt vor, wenn Infrastrukturen, Verträge, Kompetenzen, Gewohnheiten oder Kapital einen Wechsel erschweren.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Pfadabhängigkeit / Lock-in",
         "Pfadabhängigkeit",
@@ -25241,7 +25966,7 @@
       "url": "/begriffe/praeventionsdividende/",
       "hoverDefinition": "Präventionsdividende bezeichnet den gesellschaftlichen Nutzen, der entsteht, wenn Schäden gar nicht erst eintreten: vermiedene Krankheiten, Katastrophen, Schulabbrüche, Pflegebrüche, Cyberangriffe, Desinformation oder Klimaschäden.",
       "shortDefinition": "Präventionsdividende bezeichnet den gesellschaftlichen Nutzen, der entsteht, wenn Schäden gar nicht erst eintreten: vermiedene Krankheiten, Katastrophen, Schulabbrüche, Pflegebrüche, Cyberangriffe, Desinformation oder Klimaschäden.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Präventionsdividende / vermiedene Schäden",
         "Präventionsdividende",
@@ -25552,7 +26277,7 @@
       "url": "/begriffe/produkt-markt-wirkungs-fit/",
       "hoverDefinition": "Produkt-Markt-Wirkungs-Fit bezeichnet den Zustand, in dem ein Angebot nicht nur Kundennachfrage trifft, sondern zugleich eine positive Netto-Wirkung im relevanten Wirkungsraum erzeugt.",
       "shortDefinition": "Produkt-Markt-Wirkungs-Fit bezeichnet den Zustand, in dem ein Angebot nicht nur Kundennachfrage trifft, sondern zugleich eine positive Netto-Wirkung im relevanten Wirkungsraum erzeugt.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Produkt-Markt-Wirkungs-Fit"
       ],
@@ -25983,6 +26708,7 @@
       "label": "Psychologische Sicherheit",
       "slug": "psychologische-sicherheit",
       "url": "/begriffe/psychologische-sicherheit/",
+      "hoverDefinition": "Psychologische Sicherheit ermöglicht, Risiken, Fehler und schlechte Nachrichten auszusprechen, bevor sie Wirkungsschäden vergrößern.",
       "shortDefinition": "Psychologische Sicherheit ermöglicht, Risiken, Fehler und schlechte Nachrichten auszusprechen, bevor sie Wirkungsschäden vergrößern.",
       "category": "Präzisierungsbegriff",
       "synonyms": [
@@ -26276,6 +27002,71 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "quantencomputer": {
+      "label": "Quantencomputer",
+      "slug": "quantencomputer",
+      "url": "/begriffe/quantencomputer/",
+      "hoverDefinition": "Quantencomputer sind Rechner, die quantenmechanische Eigenschaften wie Superposition und Verschränkung nutzen, um bestimmte Problemklassen anders zu bearbeiten als klassische Computer.",
+      "shortDefinition": "Quantencomputer sind Rechner, die quantenmechanische Eigenschaften wie Superposition und Verschränkung nutzen, um bestimmte Problemklassen anders zu bearbeiten als klassische Computer.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Quantencomputer"
+      ],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "cyberresilienz",
+        "wirkungsdatenraeume"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "quantenfeldtheorie": {
+      "label": "Quantenfeldtheorie",
+      "slug": "quantenfeldtheorie",
+      "url": "/begriffe/quantenfeldtheorie/",
+      "hoverDefinition": "Quantenfeldtheorie ist ein theoretischer Rahmen, der Quantenmechanik, Felder und spezielle Relativität verbindet und in der modernen Teilchenphysik zentral ist.",
+      "shortDefinition": "Quantenfeldtheorie ist ein theoretischer Rahmen, der Quantenmechanik, Felder und spezielle Relativität verbindet und in der modernen Teilchenphysik zentral ist.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Quantenfeldtheorie"
+      ],
+      "relatedTerms": [
+        "wirkungsraum",
+        "interdependenz",
+        "wechselwirkung",
+        "wirkungsnetz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "quanteninformation": {
+      "label": "Quanteninformation",
+      "slug": "quanteninformation",
+      "url": "/begriffe/quanteninformation/",
+      "hoverDefinition": "Quanteninformation beschäftigt sich mit der Verarbeitung, Übertragung und Speicherung von Information unter Nutzung quantenmechanischer Eigenschaften wie Superposition und Verschränkung.",
+      "shortDefinition": "Quanteninformation beschäftigt sich mit der Verarbeitung, Übertragung und Speicherung von Information unter Nutzung quantenmechanischer Eigenschaften wie Superposition und Verschränkung.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Quanteninformation"
+      ],
+      "relatedTerms": [
+        "innovation",
+        "cyberresilienz",
+        "wirkungsrisiko",
+        "ki-governance"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "quantenmaterialien": {
       "label": "Quantenmaterialien",
       "slug": "quantenmaterialien",
@@ -26297,13 +27088,82 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "quantenmechanik": {
+      "label": "Quantenmechanik",
+      "slug": "quantenmechanik",
+      "url": "/begriffe/quantenmechanik/",
+      "hoverDefinition": "Quantenmechanik ist die mathematische Theorie, mit der physikalische Zustände, Messungen und Wahrscheinlichkeiten auf der Ebene sehr kleiner Systeme beschrieben werden.",
+      "shortDefinition": "Quantenmechanik ist die mathematische Theorie, mit der physikalische Zustände, Messungen und Wahrscheinlichkeiten auf der Ebene sehr kleiner Systeme beschrieben werden.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Quantenmechanik"
+      ],
+      "relatedTerms": [
+        "unschaerferelation",
+        "wahrscheinlichkeit",
+        "beobachterabhaengigkeit",
+        "wirkungsbewertung",
+        "datenqualitaet",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "quantenmetapher": {
+      "label": "Quantenmetapher",
+      "slug": "quantenmetapher",
+      "url": "/begriffe/quantenmetapher/",
+      "hoverDefinition": "Eine Quantenmetapher nutzt Begriffe aus der Quantenphysik bildhaft, ohne eine physikalische Gleichsetzung zu behaupten.",
+      "shortDefinition": "Eine Quantenmetapher nutzt Begriffe aus der Quantenphysik bildhaft, ohne eine physikalische Gleichsetzung zu behaupten.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Quantenmetapher"
+      ],
+      "relatedTerms": [
+        "framing-sprache-tonalitaet",
+        "quantenmystik",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "quantenmystik": {
+      "label": "Quantenmystik / Quantenmissbrauch",
+      "slug": "quantenmystik",
+      "url": "/begriffe/quantenmystik/",
+      "hoverDefinition": "Quantenmystik bezeichnet die unsachliche Verwendung quantenphysikalischer Begriffe zur scheinwissenschaftlichen Begründung spiritueller, politischer, therapeutischer oder gesellschaftlicher Behauptungen.",
+      "shortDefinition": "Quantenmystik bezeichnet die unsachliche Verwendung quantenphysikalischer Begriffe zur scheinwissenschaftlichen Begründung spiritueller, politischer, therapeutischer oder gesellschaftlicher Behauptungen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Quantenmystik / Quantenmissbrauch",
+        "Quantenmystik",
+        "Quantenmissbrauch"
+      ],
+      "relatedTerms": [
+        "wirkungswahrheit",
+        "wirkungsbewertung",
+        "konstruktivismus",
+        "beobachterabhaengigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "quantenphysik": {
       "label": "Quantenphysik",
       "slug": "quantenphysik",
       "url": "/begriffe/quantenphysik/",
-      "hoverDefinition": "Quantenphysik beschreibt Gesetzmäßigkeiten von Materie, Energie und Strahlung auf atomarer und subatomarer Ebene.",
-      "shortDefinition": "Quantenphysik beschreibt Gesetzmäßigkeiten von Materie, Energie und Strahlung auf atomarer und subatomarer Ebene.",
-      "category": "Quantenphysik, Quantenmaterialien und Zukunftstechnologien",
+      "hoverDefinition": "Quantenphysik bezeichnet den Teil der Physik, der das Verhalten von Materie, Energie, Licht und Information auf atomaren und subatomaren Skalen beschreibt.",
+      "shortDefinition": "Quantenphysik bezeichnet den Teil der Physik, der das Verhalten von Materie, Energie, Licht und Information auf atomaren und subatomaren Skalen beschreibt.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Quantenphysik"
       ],
@@ -26313,7 +27173,15 @@
         "photovoltaik",
         "quantensolarzelle",
         "quantenbatterie",
-        "quantentechnologie"
+        "quantentechnologie",
+        "wirkung",
+        "wirkungspotenzial",
+        "beobachterabhaengigkeit",
+        "messbarkeit-ohne-reduktionismus",
+        "wirkungswahrheit",
+        "nichttriviale-systeme",
+        "systemtheorie",
+        "wissenschaft-als-wirkungsinfrastruktur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -26407,6 +27275,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "quantisierung": {
+      "label": "Quantisierung / Quantum",
+      "slug": "quantisierung",
+      "url": "/begriffe/quantisierung/",
+      "hoverDefinition": "Quantisierung bedeutet, dass bestimmte physikalische Größen nicht beliebig kontinuierlich, sondern in diskreten Einheiten oder Zuständen auftreten können.",
+      "shortDefinition": "Quantisierung bedeutet, dass bestimmte physikalische Größen nicht beliebig kontinuierlich, sondern in diskreten Einheiten oder Zuständen auftreten können.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Quantisierung / Quantum",
+        "Quantisierung",
+        "Quantum"
+      ],
+      "relatedTerms": [
+        "woek-id",
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungssteuer"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "quartiersenergie": {
       "label": "Quartiersenergie",
       "slug": "quartiersenergie",
@@ -26453,10 +27345,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "qubit": {
+      "label": "Qubit",
+      "slug": "qubit",
+      "url": "/begriffe/qubit/",
+      "hoverDefinition": "Ein Qubit ist die grundlegende Informationseinheit eines Quantencomputers. Anders als ein klassisches Bit kann es in quantenmechanischen Zuständen beschrieben werden, die Superposition und Verschränkung ermöglichen.",
+      "shortDefinition": "Ein Qubit ist die grundlegende Informationseinheit eines Quantencomputers. Anders als ein klassisches Bit kann es in quantenmechanischen Zuständen beschrieben werden, die Superposition und Verschränkung ermöglichen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Qubit"
+      ],
+      "relatedTerms": [
+        "quantencomputer",
+        "quanteninformation",
+        "digitalisierung",
+        "cyberresilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "queere-migrantinnen": {
       "label": "queere Migrant:innen",
       "slug": "queere-migrantinnen",
       "url": "/begriffe/queere-migrantinnen/",
+      "hoverDefinition": "Queere Migrant:innen sind Menschen mit Migrations- oder Fluchterfahrung, die zugleich aufgrund sexueller Orientierung oder geschlechtlicher Identität besondere Schutz- und Teilhaberisiken erleben können.",
       "shortDefinition": "Queere Migrant:innen sind Menschen mit Migrations- oder Fluchterfahrung, die zugleich aufgrund sexueller Orientierung oder geschlechtlicher Identität besondere Schutz- und Teilhaberisiken erleben können.",
       "category": "Demokratiebegriff",
       "synonyms": [
@@ -26482,6 +27397,7 @@
       "label": "Queerfeindlichkeit",
       "slug": "queerfeindlichkeit",
       "url": "/begriffe/queerfeindlichkeit/",
+      "hoverDefinition": "Queerfeindlichkeit bezeichnet Abwertung, Ausgrenzung, Bedrohung oder Gewalt gegen Menschen aufgrund sexueller Orientierung, geschlechtlicher Identität oder queerer Sichtbarkeit.",
       "shortDefinition": "Queerfeindlichkeit bezeichnet Abwertung, Ausgrenzung, Bedrohung oder Gewalt gegen Menschen aufgrund sexueller Orientierung, geschlechtlicher Identität oder queerer Sichtbarkeit.",
       "category": "Demokratiebegriff",
       "synonyms": [
@@ -26556,7 +27472,7 @@
       "url": "/begriffe/rassismus/",
       "hoverDefinition": "Rassismus konstruiert Menschengruppen als vermeintlich natürliche, ethnische, kulturelle oder körperliche Einheiten und ordnet ihnen pauschale Eigenschaften, Wertigkeiten oder Gefährlichkeit zu. Er erzeugt Hierarchien, Ausschluss und ungleiche Teilhabe.",
       "shortDefinition": "Rassismus konstruiert Menschengruppen als vermeintlich natürliche, ethnische, kulturelle oder körperliche Einheiten und ordnet ihnen pauschale Eigenschaften, Wertigkeiten oder Gefährlichkeit zu. Er erzeugt Hierarchien, Ausschluss und ungleiche Teilhabe.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Rassismus"
       ],
@@ -26854,7 +27770,7 @@
       "url": "/begriffe/rechtsextremismus/",
       "hoverDefinition": "Rechtsextremismus bezeichnet Ideologien, Bewegungen und Praktiken, die die Gleichwertigkeit aller Menschen, die freiheitlich-demokratische Grundordnung und die plurale Gesellschaft ablehnen oder aushöhlen. Typisch sind völkische, nationalistische, rassistische, antisemitische, autoritäre und demokratiefeindliche Muster.",
       "shortDefinition": "Rechtsextremismus bezeichnet Ideologien, Bewegungen und Praktiken, die die Gleichwertigkeit aller Menschen, die freiheitlich-demokratische Grundordnung und die plurale Gesellschaft ablehnen oder aushöhlen. Typisch sind völkische, nationalistische, rassistische, antisemitische, autoritäre und demokratiefeindliche Muster.",
-      "category": "Demokratie, Recht und gesellschaftliche Resilienz",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Rechtsextremismus"
       ],
@@ -26992,6 +27908,30 @@
         "demokratische-wirkungsarchitektur",
         "demokratische-rueckkopplung",
         "demokratische-korrekturfaehigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "rechtsschutz-gegen-wirkungsentscheidungen": {
+      "label": "Rechtsschutz gegen Wirkungsentscheidungen",
+      "slug": "rechtsschutz-gegen-wirkungsentscheidungen",
+      "url": "/begriffe/rechtsschutz-gegen-wirkungsentscheidungen/",
+      "hoverDefinition": "Rechtsschutz gegen Wirkungsentscheidungen bedeutet, dass Betroffene Entscheidungen über Wirkungswerte, Scorecards, Steuerklassen, Registereinträge oder Förderausschlüsse überprüfen lassen können.",
+      "shortDefinition": "Rechtsschutz gegen Wirkungsentscheidungen bedeutet, dass Betroffene Entscheidungen über Wirkungswerte, Scorecards, Steuerklassen, Registereinträge oder Förderausschlüsse überprüfen lassen können.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Rechtsschutz gegen Wirkungsentscheidungen"
+      ],
+      "relatedTerms": [
+        "wirkungsrat",
+        "datenqualitaet",
+        "wirkungswahrheit",
+        "wirkungsarchitektur",
+        "rechtsstaatlichkeit",
+        "sdg-plus"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -27418,8 +28358,9 @@
       "label": "Regeneratives Wachstum",
       "slug": "regeneratives-wachstum",
       "url": "/begriffe/regeneratives-wachstum/",
-      "shortDefinition": "Regeneratives Wachstum beschreibt Entwicklung, die Lebensgrundlagen, soziale Systeme und demokratische Stabilität erneuert statt verbraucht.",
-      "category": "WÖk-Präzisierungsbegriff",
+      "hoverDefinition": "Regeneratives Wachstum unterscheidet sich von Mengenwachstum: Es entsteht durch bessere Wirkung, Lernfähigkeit, Kreisläufe, Reparaturfähigkeit, Gesundheit, Vertrauen und ökologische Regeneration.",
+      "shortDefinition": "Regeneratives Wachstum unterscheidet sich von Mengenwachstum: Es entsteht durch bessere Wirkung, Lernfähigkeit, Kreisläufe, Reparaturfähigkeit, Gesundheit, Vertrauen und ökologische Regeneration.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Regeneratives Wachstum",
         "regenerativer Wohlstand",
@@ -27429,7 +28370,9 @@
         "innovation",
         "neukombination",
         "kreislaufwirtschaft",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "regeneratives-wachstum",
+        "planetare-grenzen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -27637,6 +28580,7 @@
       "label": "religiöser Fundamentalismus",
       "slug": "religioeser-fundamentalismus",
       "url": "/begriffe/religioeser-fundamentalismus/",
+      "hoverDefinition": "Religiöser Fundamentalismus bezeichnet Deutungen, die religiöse Wahrheit absolut setzen und pluralistische Rechte, Gleichberechtigung oder demokratische Korrektur abwerten.",
       "shortDefinition": "Religiöser Fundamentalismus bezeichnet Deutungen, die religiöse Wahrheit absolut setzen und pluralistische Rechte, Gleichberechtigung oder demokratische Korrektur abwerten.",
       "category": "Demokratiebegriff",
       "synonyms": [
@@ -28918,9 +29862,9 @@
       "label": "Rückkopplung",
       "slug": "rueckkopplung",
       "url": "/begriffe/rueckkopplung/",
-      "hoverDefinition": "Wenn Folgen eines Prozesses wieder auf Ursachen, Bedingungen oder künftige Entscheidungen zurückwirken.",
-      "shortDefinition": "Rückkopplung sorgt dafür, dass Folgen einer Handlung in künftige Entscheidungen zurückwirken.",
-      "category": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Rückkopplung liegt vor, wenn Ergebnisse, Schäden, Nebenwirkungen oder Verbesserungen wieder auf das System zurückwirken und spätere Entscheidungen verändern.",
+      "shortDefinition": "Rückkopplung liegt vor, wenn Ergebnisse, Schäden, Nebenwirkungen oder Verbesserungen wieder auf das System zurückwirken und spätere Entscheidungen verändern.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Rückkopplung",
         "Feedback"
@@ -29356,7 +30300,7 @@
       "url": "/begriffe/schoepferische-rekonstruktion/",
       "hoverDefinition": "Schöpferische Rekonstruktion ist die WÖk-Schärfung von Schumpeters schöpferischer Zerstörung. Sie meint die bewusste Umgestaltung vorhandener Strukturen, Materialien, Infrastrukturen und Kompetenzen in zukunftsfähige Wirkungsformen.",
       "shortDefinition": "Schöpferische Rekonstruktion ist die WÖk-Schärfung von Schumpeters schöpferischer Zerstörung. Sie meint die bewusste Umgestaltung vorhandener Strukturen, Materialien, Infrastrukturen und Kompetenzen in zukunftsfähige Wirkungsformen.",
-      "category": "Innovation, Evolution und Unternehmertum",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Schöpferische Rekonstruktion"
       ],
@@ -29416,13 +30360,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "schumpeter-joseph-a": {
+      "label": "Schumpeter, Joseph A.",
+      "slug": "schumpeter-joseph-a",
+      "url": "/begriffe/schumpeter-joseph-a/",
+      "hoverDefinition": "Schumpeter beschreibt wirtschaftliche Entwicklung als Prozess neuer Kombinationen und die Unternehmerfunktion als Innovationsfunktion.",
+      "shortDefinition": "Schumpeter beschreibt wirtschaftliche Entwicklung als Prozess neuer Kombinationen und die Unternehmerfunktion als Innovationsfunktion.",
+      "category": "Innovation, Evolution und Unternehmertum",
+      "synonyms": [
+        "Schumpeter, Joseph A."
+      ],
+      "relatedTerms": [
+        "innovation",
+        "neukombination",
+        "wirkungsinnovation",
+        "kreislaufwirtschaft",
+        "regeneratives-wachstum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "schumpetersche-innovation": {
       "label": "Schumpetersche Innovation / Neue Kombination",
       "slug": "schumpetersche-innovation",
       "url": "/begriffe/schumpetersche-innovation/",
       "hoverDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
       "shortDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
-      "category": "Innovation, Evolution und Unternehmertum",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Schumpetersche Innovation / Neue Kombination",
         "Schumpetersche Innovation",
@@ -29442,10 +30409,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "schutz-natuerlicher-lebensgrundlagen": {
+      "label": "Schutz natürlicher Lebensgrundlagen",
+      "slug": "schutz-natuerlicher-lebensgrundlagen",
+      "url": "/begriffe/schutz-natuerlicher-lebensgrundlagen/",
+      "hoverDefinition": "Der Schutz natürlicher Lebensgrundlagen umfasst Klima, Wasser, Boden, Luft, Biodiversität, Ökosysteme, Ressourcen und die Bedingungen, die menschliches, tierisches und ökologisches Leben tragen.",
+      "shortDefinition": "Der Schutz natürlicher Lebensgrundlagen umfasst Klima, Wasser, Boden, Luft, Biodiversität, Ökosysteme, Ressourcen und die Bedingungen, die menschliches, tierisches und ökologisches Leben tragen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Schutz natürlicher Lebensgrundlagen"
+      ],
+      "relatedTerms": [
+        "artikel-20a-grundgesetz",
+        "reverse-merit-order",
+        "wirkungssteuer",
+        "woek-id"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "schutzarchitektur": {
       "label": "Schutzarchitektur",
       "slug": "schutzarchitektur",
       "url": "/begriffe/schutzarchitektur/",
+      "hoverDefinition": "Schutzarchitektur bezeichnet das Zusammenspiel aus Rechten, Institutionen, Prävention, Bildung, Polizei, Beratung, Daten und Verfahren, das Menschen wirksam schützt.",
       "shortDefinition": "Schutzarchitektur bezeichnet das Zusammenspiel aus Rechten, Institutionen, Prävention, Bildung, Polizei, Beratung, Daten und Verfahren, das Menschen wirksam schützt.",
       "category": "Architekturbegriff",
       "synonyms": [
@@ -30411,13 +31401,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "shaolin": {
+      "label": "Shaolin",
+      "slug": "shaolin",
+      "url": "/begriffe/shaolin/",
+      "hoverDefinition": "Shaolin bezeichnet historisch eine chinesische buddhistische Kloster- und Kampfkunsttradition, die häufig mit Chan/Zen, Disziplin, Körperpraxis und Übung verbunden wird.",
+      "shortDefinition": "Shaolin bezeichnet historisch eine chinesische buddhistische Kloster- und Kampfkunsttradition, die häufig mit Chan/Zen, Disziplin, Körperpraxis und Übung verbunden wird.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Shaolin"
+      ],
+      "relatedTerms": [
+        "zen",
+        "wirkungskompetenz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "shareholder-value": {
       "label": "Shareholder Value",
       "slug": "shareholder-value",
       "url": "/begriffe/shareholder-value/",
       "hoverDefinition": "Shareholder Value bezeichnet die Ausrichtung eines Unternehmens auf Wertsteigerung für Eigentümer:innen oder Aktionär:innen, meist gemessen über Gewinne, Kurswert, Dividenden und Kapitalrendite.",
       "shortDefinition": "Shareholder Value bezeichnet die Ausrichtung eines Unternehmens auf Wertsteigerung für Eigentümer:innen oder Aktionär:innen, meist gemessen über Gewinne, Kurswert, Dividenden und Kapitalrendite.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Shareholder Value"
       ],
@@ -30692,7 +31702,7 @@
       "url": "/begriffe/solidaritaet/",
       "hoverDefinition": "Solidarität bezeichnet die Bereitschaft und institutionelle Fähigkeit, Risiken, Lasten, Chancen und Schutz nicht ausschließlich individuell zu behandeln, sondern gemeinschaftlich zu tragen.",
       "shortDefinition": "Solidarität bezeichnet die Bereitschaft und institutionelle Fähigkeit, Risiken, Lasten, Chancen und Schutz nicht ausschließlich individuell zu behandeln, sondern gemeinschaftlich zu tragen.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Solidarität"
       ],
@@ -30894,7 +31904,7 @@
       "url": "/begriffe/soziale-marktwirtschaft/",
       "hoverDefinition": "Die Soziale Marktwirtschaft verbindet marktwirtschaftlichen Wettbewerb mit sozialem Ausgleich, Rechtsordnung, Sozialstaat und politischer Stabilität. Sie war ein historischer Fortschritt gegenüber reiner Markt- oder Planlogik.",
       "shortDefinition": "Die Soziale Marktwirtschaft verbindet marktwirtschaftlichen Wettbewerb mit sozialem Ausgleich, Rechtsordnung, Sozialstaat und politischer Stabilität. Sie war ein historischer Fortschritt gegenüber reiner Markt- oder Planlogik.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Soziale Marktwirtschaft"
       ],
@@ -31066,7 +32076,7 @@
       "url": "/begriffe/sozialliberalismus/",
       "hoverDefinition": "Sozialliberalismus verbindet individuelle Freiheit mit sozialer Absicherung, Chancengerechtigkeit, Bürgerrechten, Bildung, Rechtsstaatlichkeit und gesellschaftlicher Teilhabe.",
       "shortDefinition": "Sozialliberalismus verbindet individuelle Freiheit mit sozialer Absicherung, Chancengerechtigkeit, Bürgerrechten, Bildung, Rechtsstaatlichkeit und gesellschaftlicher Teilhabe.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Sozialliberalismus"
       ],
@@ -31284,7 +32294,7 @@
       "url": "/begriffe/st-galler-managementlehre/",
       "hoverDefinition": "Die St. Galler Managementlehre betrachtet Unternehmen als komplexe, offene, soziale und kommunikative Systeme. Management wird nicht auf Planung und Kontrolle reduziert, sondern als Gestaltung von Wertschöpfung, Kommunikation, Kultur, Strategie und Verantwortung verstanden.",
       "shortDefinition": "Die St. Galler Managementlehre betrachtet Unternehmen als komplexe, offene, soziale und kommunikative Systeme. Management wird nicht auf Planung und Kontrolle reduziert, sondern als Gestaltung von Wertschöpfung, Kommunikation, Kultur, Strategie und Verantwortung verstanden.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "St. Galler Managementlehre / St. Galler Management-Modell",
         "St. Galler Managementlehre",
@@ -31298,6 +32308,30 @@
         "stafford-beer",
         "wirkungscontrolling",
         "lernende-organisation",
+        "unternehmen-als-wirkungssystem"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "st-galler-managementmodell": {
+      "label": "St. Galler Managementmodell",
+      "slug": "st-galler-managementmodell",
+      "url": "/begriffe/st-galler-managementmodell/",
+      "hoverDefinition": "Die St. Galler Tradition beschreibt Unternehmen nicht nur als Produktionsapparate, sondern als komplexe soziale Systeme in Austausch mit Märkten, Gesellschaft, Technik, Natur und Institutionen.",
+      "shortDefinition": "Die St. Galler Tradition beschreibt Unternehmen nicht nur als Produktionsapparate, sondern als komplexe soziale Systeme in Austausch mit Märkten, Gesellschaft, Technik, Natur und Institutionen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "St. Galler Managementmodell",
+        "St. Galler Management-Modell",
+        "St. Gallen Management-Modell",
+        "SGMM"
+      ],
+      "relatedTerms": [
+        "hans-ulrich",
+        "fredmund-malik",
         "unternehmen-als-wirkungssystem"
       ],
       "relatedMethods": [],
@@ -31597,6 +32631,27 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "staatsziel-umweltschutz": {
+      "label": "Staatsziel Umweltschutz",
+      "slug": "staatsziel-umweltschutz",
+      "url": "/begriffe/staatsziel-umweltschutz/",
+      "hoverDefinition": "Staatsziel Umweltschutz bezeichnet die verfassungsrechtliche Verpflichtung des Staates, Umwelt, natürliche Lebensgrundlagen und Tiere zu schützen.",
+      "shortDefinition": "Staatsziel Umweltschutz bezeichnet die verfassungsrechtliche Verpflichtung des Staates, Umwelt, natürliche Lebensgrundlagen und Tiere zu schützen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Staatsziel Umweltschutz"
+      ],
+      "relatedTerms": [
+        "wirkungsrat",
+        "wirkungsfolgenabschaetzung",
+        "wirkungsstaat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "stadtwerke": {
       "label": "Stadtwerke",
       "slug": "stadtwerke",
@@ -31623,9 +32678,9 @@
       "label": "Stafford Beer",
       "slug": "stafford-beer",
       "url": "/begriffe/stafford-beer/",
-      "hoverDefinition": "Stafford Beer ist relevant für Organisationen als lebensfähige, rekursive Systeme.",
-      "shortDefinition": "Stafford Beer ist relevant für Organisationen als lebensfähige, rekursive Systeme.",
-      "category": "Vordenker:innen und Bezugslinien",
+      "hoverDefinition": "Beer entwickelte mit dem Viable System Model eine kybernetische Organisationssicht auf Lebensfähigkeit, Rekursion und Selbstbeobachtung.",
+      "shortDefinition": "Beer entwickelte mit dem Viable System Model eine kybernetische Organisationssicht auf Lebensfähigkeit, Rekursion und Selbstbeobachtung.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Stafford Beer"
       ],
@@ -31634,7 +32689,9 @@
         "viabilitaet",
         "varietaet",
         "rekursion",
-        "wirkungsarchitektur"
+        "wirkungsarchitektur",
+        "kybernetik",
+        "wirkungscontrolling"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -31648,7 +32705,7 @@
       "url": "/begriffe/stakeholder-ansatz/",
       "hoverDefinition": "Der Stakeholder-Ansatz erweitert Unternehmensverantwortung über Eigentümerinteressen hinaus auf Beschäftigte, Kund:innen, Lieferanten, Gemeinden, Umwelt, Staat und andere Betroffene.",
       "shortDefinition": "Der Stakeholder-Ansatz erweitert Unternehmensverantwortung über Eigentümerinteressen hinaus auf Beschäftigte, Kund:innen, Lieferanten, Gemeinden, Umwelt, Staat und andere Betroffene.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Stakeholder-Ansatz"
       ],
@@ -31701,6 +32758,27 @@
       "relatedTerms": [
         "rlm-messung",
         "lastgang"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "standardmodell-der-teilchenphysik": {
+      "label": "Standardmodell der Teilchenphysik",
+      "slug": "standardmodell-der-teilchenphysik",
+      "url": "/begriffe/standardmodell-der-teilchenphysik/",
+      "hoverDefinition": "Das Standardmodell beschreibt elementare Teilchen und drei fundamentale Wechselwirkungen der Teilchenphysik in einem gut geprüften theoretischen Rahmen; Gravitation ist darin nicht vollständig integriert.",
+      "shortDefinition": "Das Standardmodell beschreibt elementare Teilchen und drei fundamentale Wechselwirkungen der Teilchenphysik in einem gut geprüften theoretischen Rahmen; Gravitation ist darin nicht vollständig integriert.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Standardmodell der Teilchenphysik"
+      ],
+      "relatedTerms": [
+        "modellgrenze",
+        "wirkungsdaten",
+        "wirkungsrat"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32374,7 +33452,7 @@
       "url": "/begriffe/subsidiaritaet/",
       "hoverDefinition": "Subsidiarität bedeutet, dass Aufgaben möglichst nah an den betroffenen Menschen und Wirkungsräumen gelöst werden sollen, solange die niedrigere Ebene dazu fähig ist.",
       "shortDefinition": "Subsidiarität bedeutet, dass Aufgaben möglichst nah an den betroffenen Menschen und Wirkungsräumen gelöst werden sollen, solange die niedrigere Ebene dazu fähig ist.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Subsidiarität"
       ],
@@ -32459,6 +33537,28 @@
       "relatedTerms": [
         "leistungsdichte",
         "speicher-energie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "superposition": {
+      "label": "Superposition",
+      "slug": "superposition",
+      "url": "/begriffe/superposition/",
+      "hoverDefinition": "Superposition bezeichnet in der Quantenmechanik einen Zustand, in dem ein System nicht durch genau einen klassischen Zustand beschrieben wird, sondern durch eine Überlagerung möglicher Zustände.",
+      "shortDefinition": "Superposition bezeichnet in der Quantenmechanik einen Zustand, in dem ein System nicht durch genau einen klassischen Zustand beschrieben wird, sondern durch eine Überlagerung möglicher Zustände.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Superposition"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsrisiko",
+        "handlungsmoeglichkeiten"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32693,6 +33793,7 @@
       "label": "Systemhebel",
       "slug": "systemhebel",
       "url": "/begriffe/systemhebel/",
+      "hoverDefinition": "Systemhebel sind Eingriffspunkte, an denen kleine Änderungen große Systemwirkungen auslösen können.",
       "shortDefinition": "Systemhebel sind Eingriffspunkte, an denen kleine Änderungen große Systemwirkungen auslösen können.",
       "category": "Präzisierungsbegriff",
       "synonyms": [
@@ -32823,7 +33924,7 @@
       "url": "/begriffe/systemtheorie/",
       "hoverDefinition": "Systemtheorie betrachtet Wirklichkeit nicht als Summe isolierter Teile, sondern als Gefüge von Relationen, Rückkopplungen, Grenzen, Umwelten, Rollen, Kommunikationen und Selbstorganisation.",
       "shortDefinition": "Systemtheorie betrachtet Wirklichkeit nicht als Summe isolierter Teile, sondern als Gefüge von Relationen, Rückkopplungen, Grenzen, Umwelten, Rollen, Kommunikationen und Selbstorganisation.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Systemtheorie"
       ],
@@ -32833,7 +33934,9 @@
         "systemischer-wert",
         "normativer-wert",
         "wirkungsraum",
-        "wirkungsarchitektur"
+        "wirkungsarchitektur",
+        "nichttriviale-systeme",
+        "rueckkopplung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -33302,6 +34405,7 @@
       "label": "Teilgabe",
       "slug": "teilgabe",
       "url": "/begriffe/teilgabe/",
+      "hoverDefinition": "Teilgabe beschreibt die Möglichkeit, nicht nur teilzunehmen, sondern eigene Fähigkeiten wirksam einzubringen.",
       "shortDefinition": "Teilgabe beschreibt die Möglichkeit, nicht nur teilzunehmen, sondern eigene Fähigkeiten wirksam einzubringen.",
       "category": "Mensch- und Demokratiebegriff",
       "synonyms": [
@@ -33326,6 +34430,7 @@
       "label": "Teilhabe",
       "slug": "teilhabe",
       "url": "/begriffe/teilhabe/",
+      "hoverDefinition": "Teilhabe beschreibt den tatsächlichen Zugang zu sozialen, wirtschaftlichen, kulturellen und politischen Möglichkeiten.",
       "shortDefinition": "Teilhabe beschreibt den tatsächlichen Zugang zu sozialen, wirtschaftlichen, kulturellen und politischen Möglichkeiten.",
       "category": "Mensch- und Demokratiebegriff",
       "synonyms": [
@@ -33504,6 +34609,7 @@
       "label": "Thomas Piketty",
       "slug": "thomas-piketty",
       "url": "/begriffe/thomas-piketty/",
+      "hoverDefinition": "Thomas Piketty beschreibt die langfristige Dynamik von Kapitalakkumulation, Vermögenskonzentration und wachsender Ungleichheit in modernen Volkswirtschaften.",
       "shortDefinition": "Thomas Piketty beschreibt die langfristige Dynamik von Kapitalakkumulation, Vermögenskonzentration und wachsender Ungleichheit in modernen Volkswirtschaften.",
       "category": "Vordenker:innen und Bezugslinien",
       "synonyms": [
@@ -33532,7 +34638,7 @@
       "url": "/begriffe/tipping-point/",
       "hoverDefinition": "Ein Tipping Point ist ein Schwellenpunkt, ab dem eine Entwicklung nicht mehr linear weiterläuft, sondern sich durch Rückkopplungen beschleunigt, stabilisiert oder qualitativ verändert.",
       "shortDefinition": "Ein Tipping Point ist ein Schwellenpunkt, ab dem eine Entwicklung nicht mehr linear weiterläuft, sondern sich durch Rückkopplungen beschleunigt, stabilisiert oder qualitativ verändert.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Tipping Point"
       ],
@@ -33542,7 +34648,8 @@
         "nichtlinearitaet",
         "transformationswirkung",
         "wirkungspotenzial",
-        "pfadabhaengigkeit"
+        "pfadabhaengigkeit",
+        "rueckkopplung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -34549,6 +35656,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "unschaerferelation": {
+      "label": "Unschärferelation",
+      "slug": "unschaerferelation",
+      "url": "/begriffe/unschaerferelation/",
+      "hoverDefinition": "Die Unschärferelation bezeichnet in der Quantenmechanik eine fundamentale Begrenzung, bestimmte Messgrößen zugleich beliebig genau zu bestimmen.",
+      "shortDefinition": "Die Unschärferelation bezeichnet in der Quantenmechanik eine fundamentale Begrenzung, bestimmte Messgrößen zugleich beliebig genau zu bestimmen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Unschärferelation"
+      ],
+      "relatedTerms": [
+        "datenqualitaet",
+        "modellgrenze",
+        "wirkungswahrheit",
+        "wirkungsrat",
+        "wirkungspruefung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "unsichtbare-arbeit": {
       "label": "Unsichtbare Arbeit",
       "slug": "unsichtbare-arbeit",
@@ -34806,7 +35936,7 @@
       "url": "/begriffe/unternehmerische-kompetenz/",
       "hoverDefinition": "Unternehmerische Kompetenz bezeichnet die Fähigkeit, Möglichkeiten zu erkennen, Ressourcen zu kombinieren, Risiken zu tragen, Organisation zu bauen, Entscheidungen zu treffen und aus Rückkopplung zu lernen.",
       "shortDefinition": "Unternehmerische Kompetenz bezeichnet die Fähigkeit, Möglichkeiten zu erkennen, Ressourcen zu kombinieren, Risiken zu tragen, Organisation zu bauen, Entscheidungen zu treffen und aus Rückkopplung zu lernen.",
-      "category": "Innovation, Evolution und Unternehmertum",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Unternehmerische Kompetenz"
       ],
@@ -34850,6 +35980,7 @@
       "label": "Unternehmertypen nach Jochen Röpke",
       "slug": "unternehmertypen-jochen-roepke",
       "url": "/begriffe/unternehmertypen-jochen-roepke/",
+      "hoverDefinition": "Die Unternehmertypen nach Röpke helfen, Unternehmertum als Lern-, Innovations- und Transformationsfähigkeit zu verstehen.",
       "shortDefinition": "Die Unternehmertypen nach Röpke helfen, Unternehmertum als Lern-, Innovations- und Transformationsfähigkeit zu verstehen.",
       "category": "Anschlussbegriff",
       "synonyms": [
@@ -34863,7 +35994,8 @@
         "lernende-organisation",
         "wirkungsinnovation",
         "transformationspfad",
-        "jochen-roepke"
+        "jochen-roepke",
+        "geschaeftsmodellpruefung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35093,6 +36225,31 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "verantwortung-fuer-kommende-generationen": {
+      "label": "Verantwortung für kommende Generationen",
+      "slug": "verantwortung-fuer-kommende-generationen",
+      "url": "/begriffe/verantwortung-fuer-kommende-generationen/",
+      "hoverDefinition": "Verantwortung für kommende Generationen bedeutet, heutige Entscheidungen so zu treffen, dass sie die Freiheits-, Lebens- und Entwicklungschancen zukünftiger Menschen nicht unverhältnismäßig verengen.",
+      "shortDefinition": "Verantwortung für kommende Generationen bedeutet, heutige Entscheidungen so zu treffen, dass sie die Freiheits-, Lebens- und Entwicklungschancen zukünftiger Menschen nicht unverhältnismäßig verengen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Verantwortung für kommende Generationen"
+      ],
+      "relatedTerms": [
+        "artikel-20a-grundgesetz",
+        "intertemporale-freiheitssicherung",
+        "zeitwirkung",
+        "wirkungsrisiko",
+        "praevention",
+        "resilienz",
+        "wirkungsstaat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "verantwortungsverkuerzung": {
       "label": "Verantwortungsverkürzung",
       "slug": "verantwortungsverkuerzung",
@@ -35239,8 +36396,9 @@
       "label": "Verfassungspatriotismus",
       "slug": "verfassungspatriotismus",
       "url": "/begriffe/verfassungspatriotismus/",
-      "shortDefinition": "Verfassungspatriotismus bindet Zugehörigkeit an demokratische Prinzipien, Grundrechte und Rechtsstaatlichkeit.",
-      "category": "Anschlussbegriff",
+      "hoverDefinition": "Verfassungspatriotismus beschreibt eine Form politischer Identifikation, die sich nicht auf Abstammung oder Ethnie stützt, sondern auf Verfassung, Rechte, demokratische Verfahren und gemeinsame Institutionen.",
+      "shortDefinition": "Verfassungspatriotismus beschreibt eine Form politischer Identifikation, die sich nicht auf Abstammung oder Ethnie stützt, sondern auf Verfassung, Rechte, demokratische Verfahren und gemeinsame Institutionen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Verfassungspatriotismus",
         "Verfassungspatriotismus nach Sternberger",
@@ -35301,6 +36459,29 @@
         "wirkungssteuer",
         "rechtsschutz",
         "verfassungsmaessige-wirkungsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "verhaeltnismaessigkeit-in-der-wirkungsoekonomie": {
+      "label": "Verhältnismäßigkeit in der Wirkungsökonomie",
+      "slug": "verhaeltnismaessigkeit-in-der-wirkungsoekonomie",
+      "url": "/begriffe/verhaeltnismaessigkeit-in-der-wirkungsoekonomie/",
+      "hoverDefinition": "Verhältnismäßigkeit ist der rechtsstaatliche Maßstab, der sicherstellt, dass Wirkungslenkung geeignet, erforderlich und angemessen bleibt.",
+      "shortDefinition": "Verhältnismäßigkeit ist der rechtsstaatliche Maßstab, der sicherstellt, dass Wirkungslenkung geeignet, erforderlich und angemessen bleibt.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Verhältnismäßigkeit in der Wirkungsökonomie"
+      ],
+      "relatedTerms": [
+        "wirkungsrat",
+        "artikel-20a-grundgesetz",
+        "grundrechte",
+        "wirkungsstaat",
+        "datenqualitaet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35477,6 +36658,29 @@
         "t-sroi",
         "wirkungshaushalt",
         "health-impact-assessment"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "verschraenkung": {
+      "label": "Verschränkung",
+      "slug": "verschraenkung",
+      "url": "/begriffe/verschraenkung/",
+      "hoverDefinition": "Verschränkung bezeichnet in der Quantenphysik eine Korrelation zwischen Quantensystemen, bei der der gemeinsame Zustand nicht vollständig aus den Einzelzuständen beschrieben werden kann.",
+      "shortDefinition": "Verschränkung bezeichnet in der Quantenphysik eine Korrelation zwischen Quantensystemen, bei der der gemeinsame Zustand nicht vollständig aus den Einzelzuständen beschrieben werden kann.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Verschränkung"
+      ],
+      "relatedTerms": [
+        "interdependenz",
+        "wirkungsnetz",
+        "systemtheorie",
+        "lieferkettenwirkung",
+        "rueckkopplung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35896,9 +37100,9 @@
       "label": "Viable System Model",
       "slug": "viable-system-model",
       "url": "/begriffe/viable-system-model/",
-      "hoverDefinition": "Das Viable System Model beschreibt Organisationen als rekursive, lebensfähige Systeme mit operativen, koordinierenden, steuernden, strategischen und normativen Funktionen.",
-      "shortDefinition": "Das Viable System Model beschreibt, wie Organisationen durch Rekursion, Koordination und Umweltbeobachtung lebensfähig bleiben.",
-      "category": "Systemtheorie, Kybernetik und Konstruktivismus",
+      "hoverDefinition": "Das VSM von Stafford Beer ist ein kybernetisches Organisationsmodell, das operative Einheiten, Koordination, Steuerung, Umweltbeobachtung und Grundsatzorientierung miteinander verbindet.",
+      "shortDefinition": "Das VSM von Stafford Beer ist ein kybernetisches Organisationsmodell, das operative Einheiten, Koordination, Steuerung, Umweltbeobachtung und Grundsatzorientierung miteinander verbindet.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Viable System Model"
       ],
@@ -35992,7 +37196,7 @@
       "url": "/begriffe/vorsorgeprinzip/",
       "hoverDefinition": "Das Vorsorgeprinzip besagt, dass bei plausiblen schweren oder irreversiblen Schäden nicht gewartet werden darf, bis vollständige Sicherheit vorliegt. Unsicherheit rechtfertigt Schutzmaßnahmen, wenn die potenziellen Schäden hoch sind.",
       "shortDefinition": "Das Vorsorgeprinzip besagt, dass bei plausiblen schweren oder irreversiblen Schäden nicht gewartet werden darf, bis vollständige Sicherheit vorliegt. Unsicherheit rechtfertigt Schutzmaßnahmen, wenn die potenziellen Schäden hoch sind.",
-      "category": "Transformation, Innovation und Klimarisiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Vorsorgeprinzip"
       ],
@@ -36002,7 +37206,8 @@
         "handlungsfenster",
         "wirkungsrisiko",
         "resilienz",
-        "art-20a-gg"
+        "art-20a-gg",
+        "artikel-20a-grundgesetz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -36193,6 +37398,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "wahrscheinlichkeit": {
+      "label": "Wahrscheinlichkeit / probabilistische Beschreibung",
+      "slug": "wahrscheinlichkeit",
+      "url": "/begriffe/wahrscheinlichkeit/",
+      "hoverDefinition": "Eine probabilistische Beschreibung arbeitet mit Wahrscheinlichkeiten statt mit sicheren Einzelvorhersagen.",
+      "shortDefinition": "Eine probabilistische Beschreibung arbeitet mit Wahrscheinlichkeiten statt mit sicheren Einzelvorhersagen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Wahrscheinlichkeit / probabilistische Beschreibung",
+        "Wahrscheinlichkeit",
+        "probabilistische Beschreibung"
+      ],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "praevention",
+        "wirkungsresilienz",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wallbox": {
       "label": "Wallbox",
       "slug": "wallbox",
@@ -36220,7 +37449,7 @@
       "url": "/begriffe/walter-eucken/",
       "hoverDefinition": "Walter Eucken war ein zentraler Vertreter der Freiburger Schule und des Ordoliberalismus. Er fragte nach einer Ordnung, in der Wettbewerb, Freiheit, Rechtsstaatlichkeit und Begrenzung wirtschaftlicher Macht gesichert werden.",
       "shortDefinition": "Walter Eucken war ein zentraler Vertreter der Freiburger Schule und des Ordoliberalismus. Er fragte nach einer Ordnung, in der Wettbewerb, Freiheit, Rechtsstaatlichkeit und Begrenzung wirtschaftlicher Macht gesichert werden.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Walter Eucken"
       ],
@@ -36229,7 +37458,8 @@
         "soziale-marktwirtschaft",
         "wirkungsrecht",
         "wirkungsrueckkopplung",
-        "wettbewerb-als-suchverfahren"
+        "wettbewerb-als-suchverfahren",
+        "wirkungsstaat"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -36494,6 +37724,51 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "watzlawick-paul": {
+      "label": "Watzlawick, Paul",
+      "slug": "watzlawick-paul",
+      "url": "/begriffe/watzlawick-paul/",
+      "hoverDefinition": "Watzlawick steht für die Einsicht, dass Kommunikation nicht nur Inhalte überträgt, sondern Beziehungen, Deutungen und Wirklichkeitsannahmen mitformt.",
+      "shortDefinition": "Watzlawick steht für die Einsicht, dass Kommunikation nicht nur Inhalte überträgt, sondern Beziehungen, Deutungen und Wirklichkeitsannahmen mitformt.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Watzlawick, Paul"
+      ],
+      "relatedTerms": [
+        "konstruktivismus",
+        "resonanzraum",
+        "diskursraum",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wechselwirkung": {
+      "label": "Wechselwirkung",
+      "slug": "wechselwirkung",
+      "url": "/begriffe/wechselwirkung/",
+      "hoverDefinition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.",
+      "shortDefinition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Wechselwirkung"
+      ],
+      "relatedTerms": [
+        "rueckkopplung",
+        "wirkungsnetz",
+        "interdependenz",
+        "systemtheorie",
+        "wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wehrhafte-demokratie": {
       "label": "Wehrhafte Demokratie",
       "slug": "wehrhafte-demokratie",
@@ -36572,6 +37847,28 @@
         "well-to-tank",
         "tank-to-wheel",
         "product-carbon-footprint"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "welle-teilchen-dualismus": {
+      "label": "Welle-Teilchen-Dualismus",
+      "slug": "welle-teilchen-dualismus",
+      "url": "/begriffe/welle-teilchen-dualismus/",
+      "hoverDefinition": "Welle-Teilchen-Dualismus beschreibt, dass Quantenobjekte je nach Experiment Eigenschaften zeigen können, die klassisch als Wellen- oder Teilcheneigenschaften beschrieben werden.",
+      "shortDefinition": "Welle-Teilchen-Dualismus beschreibt, dass Quantenobjekte je nach Experiment Eigenschaften zeigen können, die klassisch als Wellen- oder Teilcheneigenschaften beschrieben werden.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Welle-Teilchen-Dualismus"
+      ],
+      "relatedTerms": [
+        "beobachterabhaengigkeit",
+        "wirkungsraum",
+        "systemgrenze",
+        "messbarkeit-ohne-reduktionismus"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -36786,7 +38083,7 @@
       "url": "/begriffe/wettbewerb-als-suchverfahren/",
       "hoverDefinition": "Wettbewerb als Suchverfahren beschreibt Märkte als dezentrale Entdeckungsprozesse: Akteure testen Lösungen, Informationen werden sichtbar, bessere Angebote können sich durchsetzen.",
       "shortDefinition": "Wettbewerb als Suchverfahren beschreibt Märkte als dezentrale Entdeckungsprozesse: Akteure testen Lösungen, Informationen werden sichtbar, bessere Angebote können sich durchsetzen.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Wettbewerb als Suchverfahren"
       ],
@@ -37151,6 +38448,7 @@
       "label": "Wirkpfad",
       "slug": "wirkpfad",
       "url": "/begriffe/wirkpfad/",
+      "hoverDefinition": "Ein Wirkpfad beschreibt die nachvollziehbare Kette vom Auslöser über Wirkungspotenzial und Wirkmechanismus bis zur tatsächlichen Wirkung und Bewertung.",
       "shortDefinition": "Ein Wirkpfad beschreibt die nachvollziehbare Kette vom Auslöser über Wirkungspotenzial und Wirkmechanismus bis zur tatsächlichen Wirkung und Bewertung.",
       "category": "Methodenbegriff",
       "synonyms": [
@@ -37199,9 +38497,9 @@
       "label": "Wirksamkeit",
       "slug": "wirksamkeit",
       "url": "/begriffe/wirksamkeit/",
-      "hoverDefinition": "Wirksamkeit beschreibt die Fähigkeit, eine beabsichtigte Wirkung tatsächlich hervorzubringen.",
-      "shortDefinition": "Wirksamkeit verbindet Zielerreichung, Wirkung und praktische Steuerungsfähigkeit.",
-      "category": "Management, Wirksamkeit und Organisation",
+      "hoverDefinition": "Wirksamkeit beschreibt, ob eine Maßnahme, Organisation oder Entscheidung tatsächlich die beabsichtigte relevante Wirkung entfaltet.",
+      "shortDefinition": "Wirksamkeit beschreibt, ob eine Maßnahme, Organisation oder Entscheidung tatsächlich die beabsichtigte relevante Wirkung entfaltet.",
+      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
       "synonyms": [
         "Wirksamkeit"
       ],
@@ -37212,7 +38510,8 @@
         "wirksames-management",
         "fredmund-malik",
         "wirkungscontrolling",
-        "kii"
+        "kii",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -37328,6 +38627,29 @@
         "[object Object]",
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
+      "relatedObjections": []
+    },
+    "wirkung-als-rechtsprinzip": {
+      "label": "Wirkung als Rechtsprinzip",
+      "slug": "wirkung-als-rechtsprinzip",
+      "url": "/begriffe/wirkung-als-rechtsprinzip/",
+      "hoverDefinition": "Wirkung als Rechtsprinzip bedeutet, dass Recht nicht nur formale Vorgaben setzt, sondern auch die realen Folgen von Gesetzen, Verwaltung, Rechtsprechung, Steuern und staatlichem Unterlassen berücksichtigen muss.",
+      "shortDefinition": "Wirkung als Rechtsprinzip bedeutet, dass Recht nicht nur formale Vorgaben setzt, sondern auch die realen Folgen von Gesetzen, Verwaltung, Rechtsprechung, Steuern und staatlichem Unterlassen berücksichtigen muss.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Wirkung als Rechtsprinzip"
+      ],
+      "relatedTerms": [
+        "artikel-20a-grundgesetz",
+        "wirkungsstaat",
+        "wirkungsfolgenabschaetzung",
+        "wirkungsrat",
+        "wirkungsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "wirkung-im-preisschild": {
@@ -38665,8 +39987,9 @@
       "label": "Wirkungseffizienz",
       "slug": "wirkungseffizienz",
       "url": "/begriffe/wirkungseffizienz/",
-      "shortDefinition": "Wirkungseffizienz beschreibt positive Netto-Wirkung pro eingesetzter Ressource - unter Beachtung von Wirkungsgrenzen.",
-      "category": "WÖk-Präzisierungsbegriff",
+      "hoverDefinition": "Wirkungseffizienz verbindet Effizienz mit Wirkungsbewertung: Nicht der Output pro Input zählt allein, sondern die positive Netto-Wirkung im Verhältnis zu Ressourcen, Zeit, Kapital, Energie oder Aufmerksamkeit.",
+      "shortDefinition": "Wirkungseffizienz verbindet Effizienz mit Wirkungsbewertung: Nicht der Output pro Input zählt allein, sondern die positive Netto-Wirkung im Verhältnis zu Ressourcen, Zeit, Kapital, Energie oder Aufmerksamkeit.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Wirkungseffizienz",
         "Impact-Effizienz",
@@ -38856,6 +40179,32 @@
         "werte",
         "normativer-wert",
         "wertekonflikt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wirkungsfolgenabschaetzung": {
+      "label": "Wirkungsfolgenabschätzung",
+      "slug": "wirkungsfolgenabschaetzung",
+      "url": "/begriffe/wirkungsfolgenabschaetzung/",
+      "hoverDefinition": "Wirkungsfolgenabschätzung bezeichnet die systematische Prüfung der voraussichtlichen positiven, negativen, direkten, indirekten und langfristigen Wirkungen einer Maßnahme.",
+      "shortDefinition": "Wirkungsfolgenabschätzung bezeichnet die systematische Prüfung der voraussichtlichen positiven, negativen, direkten, indirekten und langfristigen Wirkungen einer Maßnahme.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Wirkungsfolgenabschätzung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "artikel-20a-grundgesetz",
+        "wirkungsstaat",
+        "wirkungshaushalt",
+        "wirkungsrat",
+        "datenqualitaet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -39449,9 +40798,9 @@
       "label": "Wirkungsinnovation",
       "slug": "wirkungsinnovation",
       "url": "/begriffe/wirkungsinnovation/",
-      "hoverDefinition": "Wirkungsinnovation ist eine neue Kombination von Wissen, Technologie, Praxis, Organisation oder Infrastruktur, die positive Netto-Wirkung oder Transformationswirkung für Mensch, Planet und Demokratie erzeugt.",
-      "shortDefinition": "Wirkungsinnovation ist Innovation, die positive Netto-Wirkung erhöht oder Transformationspfade verändert.",
-      "category": "Innovation, Transformation & Wirkungsökonomie",
+      "hoverDefinition": "Wirkungsinnovation verbindet neue Problemlösungsfähigkeit mit messbarer Verbesserung von Zuständen für Mensch, Planet und Demokratie.",
+      "shortDefinition": "Wirkungsinnovation verbindet neue Problemlösungsfähigkeit mit messbarer Verbesserung von Zuständen für Mensch, Planet und Demokratie.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Wirkungsinnovation",
         "Innovation nach Wirkung",
@@ -40373,7 +41722,7 @@
       "url": "/begriffe/wirkungspionier/",
       "hoverDefinition": "Ein Wirkungspionier ist ein Akteur, der neue Lösungen nicht primär nach Profit, Reichweite oder Status entwickelt, sondern nach positiver Netto-Wirkung für Mensch, Planet und Demokratie.",
       "shortDefinition": "Ein Wirkungspionier ist ein Akteur, der neue Lösungen nicht primär nach Profit, Reichweite oder Status entwickelt, sondern nach positiver Netto-Wirkung für Mensch, Planet und Demokratie.",
-      "category": "Innovation, Evolution und Unternehmertum",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Wirkungspionier"
       ],
@@ -41573,6 +42922,30 @@
       ],
       "relatedObjections": []
     },
+    "wirkungsstaat": {
+      "label": "Wirkungsstaat",
+      "slug": "wirkungsstaat",
+      "url": "/begriffe/wirkungsstaat/",
+      "hoverDefinition": "Der Wirkungsstaat ist ein Staat, der nicht nur Geld, Zuständigkeiten und Verfahren verwaltet, sondern reale Folgen seines Handelns und Unterlassens beobachtet, bewertet und in Entscheidungen zurückführt.",
+      "shortDefinition": "Der Wirkungsstaat ist ein Staat, der nicht nur Geld, Zuständigkeiten und Verfahren verwaltet, sondern reale Folgen seines Handelns und Unterlassens beobachtet, bewertet und in Entscheidungen zurückführt.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Wirkungsstaat"
+      ],
+      "relatedTerms": [
+        "wirkung-als-rechtsprinzip",
+        "artikel-20a-grundgesetz",
+        "wirkungsrat",
+        "wirkungshaushalt",
+        "wirkungsfolgenabschaetzung",
+        "wirkungsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wirkungssteuer": {
       "label": "Wirkungssteuer",
       "slug": "wirkungssteuer",
@@ -42490,7 +43863,7 @@
       "url": "/begriffe/wohlfahrtsoekonomik/",
       "hoverDefinition": "Wohlfahrtsökonomik untersucht, wie Ressourcenverteilung, externe Effekte, Marktversagen und politische Eingriffe gesellschaftliche Wohlfahrt beeinflussen.",
       "shortDefinition": "Wohlfahrtsökonomik untersucht, wie Ressourcenverteilung, externe Effekte, Marktversagen und politische Eingriffe gesellschaftliche Wohlfahrt beeinflussen.",
-      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Wohlfahrtsökonomik"
       ],
@@ -42678,13 +44051,14 @@
       "relatedObjections": []
     },
     "wu-wei": {
-      "label": "Wu Wei / Nicht-Erzwingen",
+      "label": "Wu Wei",
       "slug": "wu-wei",
       "url": "/begriffe/wu-wei/",
-      "hoverDefinition": "Wu Wei bezeichnet ein Handeln ohne gewaltsames Erzwingen: Mitgehen mit Systemlogiken statt Kontrolle gegen sie.",
-      "shortDefinition": "Wu Wei steht für wirksames Handeln ohne erzwungene Kontrollillusion.",
-      "category": "Daoismus, Prozessdenken und Nicht-Erzwingen",
+      "hoverDefinition": "Wu Wei wird häufig als Nicht-Erzwingen oder Handeln im Einklang mit der Situation verstanden. Es meint nicht Nichtstun, sondern eine Form von Handeln, das die Eigenlogik von Prozessen achtet.",
+      "shortDefinition": "Wu Wei wird häufig als Nicht-Erzwingen oder Handeln im Einklang mit der Situation verstanden. Es meint nicht Nichtstun, sondern eine Form von Handeln, das die Eigenlogik von Prozessen achtet.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
+        "Wu Wei",
         "Wu Wei / Nicht-Erzwingen",
         "Nicht-Erzwingen"
       ],
@@ -42696,7 +44070,30 @@
         "alan-watts-daoismus",
         "daoismus",
         "wirkungslenkung",
-        "nichttriviales-system"
+        "nichttriviales-system",
+        "nichttriviale-systeme"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wu-wei-wirksames-nicht-erzwingen": {
+      "label": "Wu wei – wirksames Nicht-Erzwingen",
+      "slug": "wu-wei-wirksames-nicht-erzwingen",
+      "url": "/begriffe/wu-wei-wirksames-nicht-erzwingen/",
+      "hoverDefinition": "Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.",
+      "shortDefinition": "Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Wu wei – wirksames Nicht-Erzwingen"
+      ],
+      "relatedTerms": [
+        "daoismus",
+        "laozi",
+        "wirkungslenkung",
+        "selbstorganisation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42838,6 +44235,32 @@
       "relatedTerms": [
         "rotorblatt-recycling",
         "recycling"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "zen": {
+      "label": "Zen / Achtsamkeit",
+      "slug": "zen",
+      "url": "/begriffe/zen/",
+      "hoverDefinition": "Zen ist eine buddhistische Praxis- und Denktradition, die unmittelbare Erfahrung, Aufmerksamkeit, Übung, Nicht-Anhaftung und Gegenwärtigkeit betont. Achtsamkeit bezeichnet wache, nicht-automatische Aufmerksamkeit für das eigene Handeln und seine Folgen.",
+      "shortDefinition": "Zen ist eine buddhistische Praxis- und Denktradition, die unmittelbare Erfahrung, Aufmerksamkeit, Übung, Nicht-Anhaftung und Gegenwärtigkeit betont. Achtsamkeit bezeichnet wache, nicht-automatische Aufmerksamkeit für das eigene Handeln und seine Folgen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Zen / Achtsamkeit",
+        "Zen",
+        "Achtsamkeit"
+      ],
+      "relatedTerms": [
+        "zen",
+        "wirkungskompetenz",
+        "selbstwirksamkeit",
+        "resonanz",
+        "daoismus",
+        "interdependenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -43082,8 +44505,9 @@
       "label": "Zugehörigkeit",
       "slug": "zugehoerigkeit",
       "url": "/begriffe/zugehoerigkeit/",
-      "shortDefinition": "Zugehörigkeit beschreibt die soziale Erfahrung, Teil eines gemeinsamen Wirkungsraums zu sein.",
-      "category": "Präzisierungsbegriff",
+      "hoverDefinition": "Zugehörigkeit bedeutet, dass Menschen sich sicher, anerkannt, beteiligt und verantwortlich eingebunden fühlen.",
+      "shortDefinition": "Zugehörigkeit bedeutet, dass Menschen sich sicher, anerkannt, beteiligt und verantwortlich eingebunden fühlen.",
+      "category": "Glossar-Erweiterung",
       "synonyms": [
         "Zugehörigkeit",
         "soziale Zugehörigkeit",
@@ -43095,7 +44519,8 @@
         "demokratie",
         "resonanzraum",
         "teilgabe",
-        "teilhabe"
+        "teilhabe",
+        "integration-als-infrastruktur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
