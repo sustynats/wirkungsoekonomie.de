@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-06T21:59:26.384Z
+- Generated: 2026-06-07T09:56:59.953Z
 - Content pages scanned: 1009
-- Glossary terms indexed: 1371
-- Warnings: 571
+- Glossary terms indexed: 1407
+- Warnings: 588
 
 ## Stichproben
 
@@ -77,7 +77,6 @@
 - term has no content references: anschlussleistung
 - term has no content references: antiziganismus
 - term has no content references: arbeitspreis
-- term has no content references: arbitrageur
 - term has no content references: astroturfing
 - term has no content references: atlas-network
 - term has no content references: aeussere-loops
@@ -115,6 +114,7 @@
 - term has no content references: blei-saeure-batterie
 - term has no content references: brennstoffkette
 - term has no content references: buergerinitiative
+- term has no content references: business-ecosystem
 - term has no content references: business-model-canvas
 - term has no content references: c-rate
 - term has no content references: capture-price
@@ -143,6 +143,7 @@
 - term has no content references: demand-response
 - term has no content references: demokratiefeindlichkeit
 - term has no content references: demokratieskepsis
+- term has no content references: demokratische-resilienz-gegen-extremismus
 - term has no content references: demokratischer-sozialismus
 - term has no content references: demokratisches-mandat
 - term has no content references: depotladen
@@ -180,6 +181,7 @@
 - term has no content references: esef
 - term has no content references: esrs-themenstandards
 - term has no content references: eu-climate-law
+- term has no content references: evolutionstheorie
 - term has no content references: evolutorischer-unternehmer
 - term has no content references: expertinnenlobbyismus
 - term has no content references: extraktiver-kapitalismus
@@ -200,6 +202,8 @@
 - term has no content references: flexibilitaetsmarkt
 - term has no content references: fossiles-kraftwerk
 - term has no content references: framekontrolle
+- term has no content references: frankfurter-schule
+- term has no content references: fremdenfeindlichkeit
 - term has no content references: frequenzhaltung
 - term has no content references: friedlicher-machtwechsel
 - term has no content references: fuehrerkult
@@ -235,6 +239,7 @@
 - term has no content references: gruenstrom
 - term has no content references: habitatfragmentierung
 - term has no content references: habitatverlust
+- term has no content references: handlungsfenster
 - term has no content references: heimspeicher
 - term has no content references: heritage-foundation
 - term has no content references: herkunftsframe
@@ -258,6 +263,7 @@
 - term has no content references: institutioneller-rassismus
 - term has no content references: institutionendelegitimierung
 - term has no content references: institutionenkritik
+- term has no content references: institutionenoekonomik
 - term has no content references: intertemporale-freiheit
 - term has no content references: investitionsschuld
 - term has no content references: jobs-to-be-done
@@ -267,6 +273,7 @@
 - term has no content references: kaskadennutzung
 - term has no content references: kernenergie
 - term has no content references: kernkraft-neubau
+- term has no content references: keynesianismus
 - term has no content references: klassischer-liberalismus
 - term has no content references: kleptokratie
 - term has no content references: kognitive-belastung
@@ -352,11 +359,4 @@
 - term has no content references: nca-batterie
 - term has no content references: negative-externalitaet
 - term has no content references: negative-freiheit
-- term has no content references: negativitaetsbias
-- term has no content references: net-zero
-- term has no content references: netzanschlussbegehren
-- term has no content references: netzanschlussleistung
-- term has no content references: netzanschlusspunkt
-- term has no content references: netzdienlichkeit
-- term has no content references: netzebene
-- ... 271 weitere Warnungen
+- ... 288 weitere Warnungen

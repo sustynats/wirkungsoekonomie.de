@@ -1,19 +1,19 @@
 {
   "version": "20260604-radar-canonical-p0",
-  "generatedAt": "2026-06-06T19:59:42.147Z",
+  "generatedAt": "2026-06-07T09:58:14.585Z",
   "counts": {
-    "radarPages": 583,
-    "claimPages": 202,
-    "canonicalNarratives": 86,
-    "duplicates": 340,
-    "merged": 115,
+    "radarPages": 653,
+    "claimPages": 272,
+    "canonicalNarratives": 121,
+    "duplicates": 407,
+    "merged": 150,
     "synonyms": 46,
-    "redirects": 115
+    "redirects": 150
   },
   "inventory": [
     {
       "url": "/wirkungsradar/agenda-radar/",
-      "title": "Welche wichtigen Wirkungsfragen bekommen zu wenig Raum?",
+      "title": "Radar-Modul: Agenda-Gewichtung",
       "slug": "agenda-radar",
       "tags": [],
       "synonyms": [],
@@ -46,7 +46,6 @@
         "Direkt zur passenden Antwort",
         "Migration",
         "Sündenbock-Frame",
-        "Website 2.0",
         "mit Quellenstand",
         "Klima",
         "Ohnmachts-Frame",
@@ -54,7 +53,8 @@
         "Spezialfall-Frame",
         "Aufschub-Frame",
         "Staat & Schulden",
-        "Sozialstaat"
+        "Sozialstaat",
+        "Mobilität"
       ],
       "synonyms": [],
       "category": "debattenkarten",
@@ -88,6 +88,33 @@
       ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/"
+    },
+    {
+      "url": "/wirkungsradar/detail/afd-kleiner-mann-wohlstandsgrundlagen/",
+      "title": "Die AfD ist für den kleinen Mann da?",
+      "slug": "afd-kleiner-mann-wohlstandsgrundlagen",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/"
+    },
+    {
+      "url": "/wirkungsradar/detail/aktienrente-loest-die-rente/",
+      "title": "Aktienrente löst die Rente?",
+      "slug": "aktienrente-loest-die-rente",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/aktienrente-loest-die-rente/"
+    },
+    {
+      "url": "/wirkungsradar/detail/algorithmen-sind-neutral/",
+      "title": "Algorithmen sind neutral?",
+      "slug": "algorithmen-sind-neutral",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/algorithmen-sind-neutral/"
     },
     {
       "url": "/wirkungsradar/detail/altparteien/",
@@ -156,6 +183,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/angst-vor-afd-wahlsieg/"
+    },
+    {
+      "url": "/wirkungsradar/detail/antisemitismus-ist-importiert/",
+      "title": "Antisemitismus ist importiert?",
+      "slug": "antisemitismus-ist-importiert",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/antisemitismus-ist-importiert/"
     },
     {
       "url": "/wirkungsradar/detail/arbeit-lohnt-sich-nicht-mehr/",
@@ -242,6 +278,15 @@
       "canonicalTarget": "/wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/"
     },
     {
+      "url": "/wirkungsradar/detail/biodiversitaet-ist-luxusproblem/",
+      "title": "Biodiversität ist Luxusproblem?",
+      "slug": "biodiversitaet-ist-luxusproblem",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/biodiversitaet-ist-luxusproblem/"
+    },
+    {
       "url": "/wirkungsradar/detail/buergergeld-macht-faul/",
       "title": "Bürgergeld macht faul?",
       "slug": "buergergeld-macht-faul",
@@ -269,6 +314,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/"
+    },
+    {
+      "url": "/wirkungsradar/detail/cancel-culture-zerstoert-debatte/",
+      "title": "Cancel Culture zerstört Debatte?",
+      "slug": "cancel-culture-zerstoert-debatte",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/cancel-culture-zerstoert-debatte/"
     },
     {
       "url": "/wirkungsradar/detail/co2-ist-nur-ein-spurengas/",
@@ -311,6 +365,24 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/"
+    },
+    {
+      "url": "/wirkungsradar/detail/corona-verschwoerung-war-die-pandemie-geplant/",
+      "title": "Corona-Verschwörung? War die Pandemie geplant?",
+      "slug": "corona-verschwoerung-war-die-pandemie-geplant",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/"
+    },
+    {
+      "url": "/wirkungsradar/detail/cyberangriffe-sind-it-problem/",
+      "title": "Cyberangriffe sind IT-Problem?",
+      "slug": "cyberangriffe-sind-it-problem",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/cyberangriffe-sind-it-problem/"
     },
     {
       "url": "/wirkungsradar/detail/das-ist-alles-gesteuert/",
@@ -375,6 +447,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/datenschutz-verhindert-innovation/"
+    },
+    {
+      "url": "/wirkungsradar/detail/deepfakes-sind-nur-spass/",
+      "title": "Deepfakes sind nur Spaß?",
+      "slug": "deepfakes-sind-nur-spass",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/deepfakes-sind-nur-spass/"
     },
     {
       "url": "/wirkungsradar/detail/deutschland-nur-zwei-prozent/",
@@ -779,6 +860,15 @@
       "canonicalTarget": "/wirkungsradar/live/fusion-loest-das-energieproblem/"
     },
     {
+      "url": "/wirkungsradar/detail/gaza-zeigt-westliche-doppelmoral/",
+      "title": "Gaza zeigt westliche Doppelmoral?",
+      "slug": "gaza-zeigt-westliche-doppelmoral",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/"
+    },
+    {
       "url": "/wirkungsradar/detail/gender-ideologie/",
       "title": "Gender-Ideologie?",
       "slug": "gender-ideologie",
@@ -827,6 +917,15 @@
       "canonicalTarget": "/wirkungsradar/live/gender-ideologie/"
     },
     {
+      "url": "/wirkungsradar/detail/heimat-gehoert-den-einheimischen/",
+      "title": "Heimat gehört den Einheimischen?",
+      "slug": "heimat-gehoert-den-einheimischen",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/heimat-gehoert-den-einheimischen/"
+    },
+    {
       "url": "/wirkungsradar/detail/heizgesetz-heizhammer-narrativ/",
       "title": "Heizgesetz oder Heizhammer?",
       "slug": "heizgesetz-heizhammer-narrativ",
@@ -840,6 +939,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/heizgesetz-heizhammer-narrativ/"
+    },
+    {
+      "url": "/wirkungsradar/detail/impfen-ist-nur-persoenliche-entscheidung/",
+      "title": "Impfen ist nur persönliche Entscheidung?",
+      "slug": "impfen-ist-nur-persoenliche-entscheidung",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/"
     },
     {
       "url": "/wirkungsradar/detail/",
@@ -882,6 +990,33 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/integration-ist-gescheitert/"
+    },
+    {
+      "url": "/wirkungsradar/detail/islamismus-wird-verharmlost/",
+      "title": "Islamismus wird verharmlost?",
+      "slug": "islamismus-wird-verharmlost",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/islamismus-wird-verharmlost/"
+    },
+    {
+      "url": "/wirkungsradar/detail/israelkritik-wird-verboten/",
+      "title": "Israelkritik wird verboten?",
+      "slug": "israelkritik-wird-verboten",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/israelkritik-wird-verboten/"
+    },
+    {
+      "url": "/wirkungsradar/detail/junge-wollen-nicht-mehr-arbeiten/",
+      "title": "Junge wollen nicht mehr arbeiten?",
+      "slug": "junge-wollen-nicht-mehr-arbeiten",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/"
     },
     {
       "url": "/wirkungsradar/detail/kehrtwende-180-grad/",
@@ -996,6 +1131,24 @@
       "canonicalTarget": "/wirkungsradar/live/ki-nimmt-uns-alle-jobs/"
     },
     {
+      "url": "/wirkungsradar/detail/ki-regulierung-bremst-europa/",
+      "title": "KI-Regulierung bremst Europa?",
+      "slug": "ki-regulierung-bremst-europa",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/ki-regulierung-bremst-europa/"
+    },
+    {
+      "url": "/wirkungsradar/detail/kinder-kriegen-ist-klimasuende/",
+      "title": "Kinder kriegen ist Klimasünde?",
+      "slug": "kinder-kriegen-ist-klimasuende",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/kinder-kriegen-ist-klimasuende/"
+    },
+    {
       "url": "/wirkungsradar/detail/klima-hat-sich-schon-immer-veraendert/",
       "title": "Klima hat sich schon immer verändert",
       "slug": "klima-hat-sich-schon-immer-veraendert",
@@ -1054,6 +1207,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/"
+    },
+    {
+      "url": "/wirkungsradar/detail/klimaflucht-ist-panikmache/",
+      "title": "Klimaflucht ist Panikmache?",
+      "slug": "klimaflucht-ist-panikmache",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/klimaflucht-ist-panikmache/"
     },
     {
       "url": "/wirkungsradar/detail/klimaschutz-deindustrialisiert-deutschland/",
@@ -1194,6 +1356,42 @@
       ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
+    },
+    {
+      "url": "/wirkungsradar/detail/linksextremismus-ist-unterschaetzt/",
+      "title": "Linksextremismus ist unterschätzt?",
+      "slug": "linksextremismus-ist-unterschaetzt",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/linksextremismus-ist-unterschaetzt/"
+    },
+    {
+      "url": "/wirkungsradar/detail/lobbyismus-ist-immer-korruption/",
+      "title": "Lobbyismus ist immer Korruption?",
+      "slug": "lobbyismus-ist-immer-korruption",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/lobbyismus-ist-immer-korruption/"
+    },
+    {
+      "url": "/wirkungsradar/detail/long-covid-me-cfs-ist-einbildung/",
+      "title": "Long Covid / ME-CFS ist Einbildung?",
+      "slug": "long-covid-me-cfs-ist-einbildung",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/long-covid-me-cfs-ist-einbildung/"
+    },
+    {
+      "url": "/wirkungsradar/detail/maenner-werden-benachteiligt/",
+      "title": "Männer werden benachteiligt?",
+      "slug": "maenner-werden-benachteiligt",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/maenner-werden-benachteiligt/"
     },
     {
       "url": "/wirkungsradar/detail/mainstreammedien-luegen-alle/",
@@ -1358,6 +1556,15 @@
       "canonicalTarget": "/wirkungsradar/live/migration-kostet-nur/"
     },
     {
+      "url": "/wirkungsradar/detail/migration-und-queerfeindlichkeit/",
+      "title": "Migration macht Deutschland homophober?",
+      "slug": "migration-und-queerfeindlichkeit",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/migration-und-queerfeindlichkeit/"
+    },
+    {
       "url": "/wirkungsradar/detail/nato-hat-russland-provoziert/",
       "title": "NATO hat Russland provoziert?",
       "slug": "nato-hat-russland-provoziert",
@@ -1488,6 +1695,24 @@
       "canonicalTarget": "/wirkungsradar/live/parkplaetze-sind-freiheit/"
     },
     {
+      "url": "/wirkungsradar/detail/patriotismus-ist-rechts/",
+      "title": "Patriotismus ist rechts?",
+      "slug": "patriotismus-ist-rechts",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/patriotismus-ist-rechts/"
+    },
+    {
+      "url": "/wirkungsradar/detail/pflege-durch-roboter-ist-unmenschlich/",
+      "title": "Pflege durch Roboter ist unmenschlich?",
+      "slug": "pflege-durch-roboter-ist-unmenschlich",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/"
+    },
+    {
       "url": "/wirkungsradar/detail/pflege-ist-unbezahlbar/",
       "title": "Pflege ist unbezahlbar?",
       "slug": "pflege-ist-unbezahlbar",
@@ -1579,6 +1804,33 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/radwege-in-peru/"
+    },
+    {
+      "url": "/wirkungsradar/detail/rechtsextremismus-ist-nur-protest/",
+      "title": "Rechtsextremismus ist nur Protest?",
+      "slug": "rechtsextremismus-ist-nur-protest",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/rechtsextremismus-ist-nur-protest/"
+    },
+    {
+      "url": "/wirkungsradar/detail/reiche-wandern-aus-wenn-man-sie-belastet/",
+      "title": "Reiche wandern aus, wenn man sie belastet?",
+      "slug": "reiche-wandern-aus-wenn-man-sie-belastet",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/"
+    },
+    {
+      "url": "/wirkungsradar/detail/religion-gehoert-ins-private/",
+      "title": "Religion gehört ins Private?",
+      "slug": "religion-gehoert-ins-private",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/religion-gehoert-ins-private/"
     },
     {
       "url": "/wirkungsradar/detail/remigration/",
@@ -1678,6 +1930,15 @@
       "canonicalTarget": "/wirkungsradar/live/schulden-machen-oder-sparen/"
     },
     {
+      "url": "/wirkungsradar/detail/schuldenbremse-schuetzt-die-jugend/",
+      "title": "Schuldenbremse schützt die Jugend?",
+      "slug": "schuldenbremse-schuetzt-die-jugend",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/"
+    },
+    {
       "url": "/wirkungsradar/detail/sdgs-sind-weltregierung/",
       "title": "Diese Aussage wurde zusammengeführt",
       "slug": "sdgs-sind-weltregierung",
@@ -1728,6 +1989,15 @@
       ],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
+    },
+    {
+      "url": "/wirkungsradar/detail/social-media-ist-freie-oeffentlichkeit/",
+      "title": "Social Media ist freie Öffentlichkeit?",
+      "slug": "social-media-ist-freie-oeffentlichkeit",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/"
     },
     {
       "url": "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
@@ -1785,6 +2055,15 @@
       "canonicalTarget": "/wirkungsradar/live/migration-kostet-nur/"
     },
     {
+      "url": "/wirkungsradar/detail/standort-deutschland-ist-tot/",
+      "title": "Standort Deutschland ist tot?",
+      "slug": "standort-deutschland-ist-tot",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/standort-deutschland-ist-tot/"
+    },
+    {
       "url": "/wirkungsradar/detail/steuerverschwendung-buerokratie/",
       "title": "Der Staat verschwendet unser Geld?",
       "slug": "steuerverschwendung-buerokratie",
@@ -1812,6 +2091,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/tempolimit-bringt-nichts/"
+    },
+    {
+      "url": "/wirkungsradar/detail/tradition-wird-abgeschafft/",
+      "title": "Tradition wird abgeschafft?",
+      "slug": "tradition-wird-abgeschafft",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/tradition-wird-abgeschafft/"
     },
     {
       "url": "/wirkungsradar/detail/ukraine-unterstuetzung-steuergeld/",
@@ -1889,6 +2177,15 @@
       "canonicalTarget": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/"
     },
     {
+      "url": "/wirkungsradar/detail/vier-tage-woche-ist-wohlstandsverwahrlosung/",
+      "title": "Vier-Tage-Woche ist Wohlstandsverwahrlosung?",
+      "slug": "vier-tage-woche-ist-wohlstandsverwahrlosung",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/"
+    },
+    {
       "url": "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/",
       "title": "Wärmepumpe ist unbezahlbar?",
       "slug": "waermepumpe-ist-unbezahlbar",
@@ -1916,6 +2213,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/"
+    },
+    {
+      "url": "/wirkungsradar/detail/wasser-ist-in-deutschland-kein-problem/",
+      "title": "Wasser ist in Deutschland kein Problem?",
+      "slug": "wasser-ist-in-deutschland-kein-problem",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/"
     },
     {
       "url": "/wirkungsradar/detail/wasserstoff-fuer-alles/",
@@ -2096,6 +2402,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/wohnungsnot-wegen-migration/"
+    },
+    {
+      "url": "/wirkungsradar/detail/wokeness-spaltet-die-gesellschaft/",
+      "title": "Wokeness spaltet die Gesellschaft?",
+      "slug": "wokeness-spaltet-die-gesellschaft",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
     },
     {
       "url": "/wirkungsradar/embed/card/arbeit-lohnt-sich-nicht-mehr/",
@@ -2553,6 +2868,59 @@
       "canonicalTarget": "/wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/"
     },
     {
+      "url": "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/",
+      "title": "Die AfD ist für den kleinen Mann da?",
+      "slug": "afd-kleiner-mann-wohlstandsgrundlagen",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/"
+    },
+    {
+      "url": "/wirkungsradar/live/aktienrente-loest-die-rente/",
+      "title": "Aktienrente löst die Rente?",
+      "slug": "aktienrente-loest-die-rente",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "Menschen sind keine Kostenstelle.",
+        "Geprüft wird der Frame, nicht Personen.",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/aktienrente-loest-die-rente/"
+    },
+    {
+      "url": "/wirkungsradar/live/algorithmen-sind-neutral/",
+      "title": "Algorithmen sind neutral?",
+      "slug": "algorithmen-sind-neutral",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/algorithmen-sind-neutral/"
+    },
+    {
       "url": "/wirkungsradar/live/altparteien/",
       "title": "Altparteien?",
       "slug": "altparteien",
@@ -2625,6 +2993,23 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/angst-vor-afd-wahlsieg/"
+    },
+    {
+      "url": "/wirkungsradar/live/antisemitismus-ist-importiert/",
+      "title": "Antisemitismus ist importiert?",
+      "slug": "antisemitismus-ist-importiert",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/antisemitismus-ist-importiert/"
     },
     {
       "url": "/wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/",
@@ -2704,6 +3089,23 @@
       "canonicalTarget": "/wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/"
     },
     {
+      "url": "/wirkungsradar/live/biodiversitaet-ist-luxusproblem/",
+      "title": "Biodiversität ist Luxusproblem?",
+      "slug": "biodiversitaet-ist-luxusproblem",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/biodiversitaet-ist-luxusproblem/"
+    },
+    {
       "url": "/wirkungsradar/live/buergergeld-macht-faul/",
       "title": "Bürgergeld macht faul?",
       "slug": "buergergeld-macht-faul",
@@ -2727,9 +3129,8 @@
       "title": "Bürokratieabbau statt Wirkung?",
       "slug": "buerokratieabbau-statt-wirkung",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -2739,6 +3140,23 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/"
+    },
+    {
+      "url": "/wirkungsradar/live/cancel-culture-zerstoert-debatte/",
+      "title": "Cancel Culture zerstört Debatte?",
+      "slug": "cancel-culture-zerstoert-debatte",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/cancel-culture-zerstoert-debatte/"
     },
     {
       "url": "/wirkungsradar/live/co2-ist-nur-ein-spurengas/",
@@ -2779,6 +3197,40 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/"
+    },
+    {
+      "url": "/wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/",
+      "title": "Corona-Verschwörung? War die Pandemie geplant?",
+      "slug": "corona-verschwoerung-war-die-pandemie-geplant",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/"
+    },
+    {
+      "url": "/wirkungsradar/live/cyberangriffe-sind-it-problem/",
+      "title": "Cyberangriffe sind IT-Problem?",
+      "slug": "cyberangriffe-sind-it-problem",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/cyberangriffe-sind-it-problem/"
     },
     {
       "url": "/wirkungsradar/live/das-ist-alles-gesteuert/",
@@ -2841,6 +3293,23 @@
       "canonicalTarget": "/wirkungsradar/live/datenschutz-verhindert-innovation/"
     },
     {
+      "url": "/wirkungsradar/live/deepfakes-sind-nur-spass/",
+      "title": "Deepfakes sind nur Spaß?",
+      "slug": "deepfakes-sind-nur-spass",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/deepfakes-sind-nur-spass/"
+    },
+    {
       "url": "/wirkungsradar/live/deutschland-nur-zwei-prozent/",
       "title": "Deutschland nur 2 %?",
       "slug": "deutschland-nur-zwei-prozent",
@@ -2866,9 +3335,8 @@
       "title": "Deutschland schafft sich ab?",
       "slug": "deutschland-schafft-sich-ab",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -2963,9 +3431,8 @@
       "title": "Diktatur der Altparteien?",
       "slug": "diktatur-der-altparteien",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -3240,6 +3707,23 @@
       "canonicalTarget": "/wirkungsradar/live/fusion-loest-das-energieproblem/"
     },
     {
+      "url": "/wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/",
+      "title": "Gaza zeigt westliche Doppelmoral?",
+      "slug": "gaza-zeigt-westliche-doppelmoral",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/"
+    },
+    {
       "url": "/wirkungsradar/live/gender-ideologie/",
       "title": "Gender-Ideologie?",
       "slug": "gender-ideologie",
@@ -3289,6 +3773,23 @@
       "canonicalTarget": "/wirkungsradar/live/gender-ideologie/"
     },
     {
+      "url": "/wirkungsradar/live/heimat-gehoert-den-einheimischen/",
+      "title": "Heimat gehört den Einheimischen?",
+      "slug": "heimat-gehoert-den-einheimischen",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/heimat-gehoert-den-einheimischen/"
+    },
+    {
       "url": "/wirkungsradar/live/heizgesetz-heizhammer-narrativ/",
       "title": "Heizgesetz oder Heizhammer?",
       "slug": "heizgesetz-heizhammer-narrativ",
@@ -3308,6 +3809,23 @@
       "canonicalTarget": "/wirkungsradar/live/heizgesetz-heizhammer-narrativ/"
     },
     {
+      "url": "/wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/",
+      "title": "Impfen ist nur persönliche Entscheidung?",
+      "slug": "impfen-ist-nur-persoenliche-entscheidung",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/"
+    },
+    {
       "url": "/wirkungsradar/live/",
       "title": "Welche Aussage willst du beantworten?",
       "slug": "live",
@@ -3315,7 +3833,6 @@
         "Direkt zur passenden Antwort",
         "Migration",
         "Sündenbock-Frame",
-        "Website 2.0",
         "mit Quellenstand",
         "Klima",
         "Ohnmachts-Frame",
@@ -3323,7 +3840,8 @@
         "Spezialfall-Frame",
         "Aufschub-Frame",
         "Staat & Schulden",
-        "Sozialstaat"
+        "Sozialstaat",
+        "Mobilität"
       ],
       "synonyms": [],
       "category": "live",
@@ -3347,6 +3865,59 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/integration-ist-gescheitert/"
+    },
+    {
+      "url": "/wirkungsradar/live/islamismus-wird-verharmlost/",
+      "title": "Islamismus wird verharmlost?",
+      "slug": "islamismus-wird-verharmlost",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/islamismus-wird-verharmlost/"
+    },
+    {
+      "url": "/wirkungsradar/live/israelkritik-wird-verboten/",
+      "title": "Israelkritik wird verboten?",
+      "slug": "israelkritik-wird-verboten",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/israelkritik-wird-verboten/"
+    },
+    {
+      "url": "/wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/",
+      "title": "Junge wollen nicht mehr arbeiten?",
+      "slug": "junge-wollen-nicht-mehr-arbeiten",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "Menschen sind keine Kostenstelle.",
+        "Geprüft wird der Frame, nicht Personen.",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/"
     },
     {
       "url": "/wirkungsradar/live/kehrtwende-180-grad/",
@@ -3457,6 +4028,40 @@
       "canonicalTarget": "/wirkungsradar/live/ki-nimmt-uns-alle-jobs/"
     },
     {
+      "url": "/wirkungsradar/live/ki-regulierung-bremst-europa/",
+      "title": "KI-Regulierung bremst Europa?",
+      "slug": "ki-regulierung-bremst-europa",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/ki-regulierung-bremst-europa/"
+    },
+    {
+      "url": "/wirkungsradar/live/kinder-kriegen-ist-klimasuende/",
+      "title": "Kinder kriegen ist Klimasünde?",
+      "slug": "kinder-kriegen-ist-klimasuende",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/kinder-kriegen-ist-klimasuende/"
+    },
+    {
       "url": "/wirkungsradar/live/klima-hat-sich-schon-immer-veraendert/",
       "title": "Klima hat sich schon immer verändert?",
       "slug": "klima-hat-sich-schon-immer-veraendert",
@@ -3517,6 +4122,23 @@
       "canonicalTarget": "/wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/"
     },
     {
+      "url": "/wirkungsradar/live/klimaflucht-ist-panikmache/",
+      "title": "Klimaflucht ist Panikmache?",
+      "slug": "klimaflucht-ist-panikmache",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/klimaflucht-ist-panikmache/"
+    },
+    {
       "url": "/wirkungsradar/live/klimaschutz-deindustrialisiert-deutschland/",
       "title": "Klimaschutz deindustrialisiert Deutschland?",
       "slug": "klimaschutz-deindustrialisiert-deutschland",
@@ -3561,9 +4183,8 @@
       "title": "Klimaschutz ist zu teuer?",
       "slug": "klimaschutz-ist-zu-teuer",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -3636,11 +4257,10 @@
       "title": "Werden Leistungsträger ausgepresst?",
       "slug": "leistungstraeger-ausgepresst",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
+        "Datenstand: 2026-06-07",
         "Menschen sind keine Kostenstelle.",
         "Geprüft wird der Frame, nicht Personen.",
-        "2026-06-05",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -3674,6 +4294,74 @@
       ],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
+    },
+    {
+      "url": "/wirkungsradar/live/linksextremismus-ist-unterschaetzt/",
+      "title": "Linksextremismus ist unterschätzt?",
+      "slug": "linksextremismus-ist-unterschaetzt",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/linksextremismus-ist-unterschaetzt/"
+    },
+    {
+      "url": "/wirkungsradar/live/lobbyismus-ist-immer-korruption/",
+      "title": "Lobbyismus ist immer Korruption?",
+      "slug": "lobbyismus-ist-immer-korruption",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/lobbyismus-ist-immer-korruption/"
+    },
+    {
+      "url": "/wirkungsradar/live/long-covid-me-cfs-ist-einbildung/",
+      "title": "Long Covid / ME-CFS ist Einbildung?",
+      "slug": "long-covid-me-cfs-ist-einbildung",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/long-covid-me-cfs-ist-einbildung/"
+    },
+    {
+      "url": "/wirkungsradar/live/maenner-werden-benachteiligt/",
+      "title": "Männer werden benachteiligt?",
+      "slug": "maenner-werden-benachteiligt",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/maenner-werden-benachteiligt/"
     },
     {
       "url": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
@@ -3829,6 +4517,25 @@
       "canonicalTarget": "/wirkungsradar/live/migration-kostet-nur/"
     },
     {
+      "url": "/wirkungsradar/live/migration-und-queerfeindlichkeit/",
+      "title": "Migration macht Deutschland homophober?",
+      "slug": "migration-und-queerfeindlichkeit",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "Menschen sind keine Kostenstelle.",
+        "Geprüft wird der Frame, nicht Personen.",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/migration-und-queerfeindlichkeit/"
+    },
+    {
       "url": "/wirkungsradar/live/nato-hat-russland-provoziert/",
       "title": "NATO hat Russland provoziert?",
       "slug": "nato-hat-russland-provoziert",
@@ -3953,6 +4660,40 @@
       "canonicalTarget": "/wirkungsradar/live/parkplaetze-sind-freiheit/"
     },
     {
+      "url": "/wirkungsradar/live/patriotismus-ist-rechts/",
+      "title": "Patriotismus ist rechts?",
+      "slug": "patriotismus-ist-rechts",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/patriotismus-ist-rechts/"
+    },
+    {
+      "url": "/wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/",
+      "title": "Pflege durch Roboter ist unmenschlich?",
+      "slug": "pflege-durch-roboter-ist-unmenschlich",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/"
+    },
+    {
       "url": "/wirkungsradar/live/pflege-ist-unbezahlbar/",
       "title": "Pflege ist unbezahlbar?",
       "slug": "pflege-ist-unbezahlbar",
@@ -4045,6 +4786,57 @@
       "canonicalTarget": "/wirkungsradar/live/radwege-in-peru/"
     },
     {
+      "url": "/wirkungsradar/live/rechtsextremismus-ist-nur-protest/",
+      "title": "Rechtsextremismus ist nur Protest?",
+      "slug": "rechtsextremismus-ist-nur-protest",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/rechtsextremismus-ist-nur-protest/"
+    },
+    {
+      "url": "/wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/",
+      "title": "Reiche wandern aus, wenn man sie belastet?",
+      "slug": "reiche-wandern-aus-wenn-man-sie-belastet",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/"
+    },
+    {
+      "url": "/wirkungsradar/live/religion-gehoert-ins-private/",
+      "title": "Religion gehört ins Private?",
+      "slug": "religion-gehoert-ins-private",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/religion-gehoert-ins-private/"
+    },
+    {
       "url": "/wirkungsradar/live/remigration/",
       "title": "Remigration / Remigrationslotsen?",
       "slug": "remigration",
@@ -4074,11 +4866,10 @@
       "title": "Remigration / Remigrationslotsen?",
       "slug": "remigration-remigrationslotsen",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
+        "Datenstand: 2026-06-07",
         "Menschen sind keine Kostenstelle.",
         "Geprüft wird der Frame, nicht Personen.",
-        "2026-06-05",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -4152,6 +4943,23 @@
       "canonicalTarget": "/wirkungsradar/live/schulden-machen-oder-sparen/"
     },
     {
+      "url": "/wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/",
+      "title": "Schuldenbremse schützt die Jugend?",
+      "slug": "schuldenbremse-schuetzt-die-jugend",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/"
+    },
+    {
       "url": "/wirkungsradar/live/sdgs-sind-weltregierung/",
       "title": "SDGs / Agenda 2030 sind Weltregierung?",
       "slug": "sdgs-sind-weltregierung",
@@ -4204,9 +5012,8 @@
       "title": "Sind die Reichen schuld?",
       "slug": "sind-die-reichen-schuld",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -4222,13 +5029,29 @@
       "canonicalTarget": "/wirkungsradar/live/sind-die-reichen-schuld/"
     },
     {
+      "url": "/wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/",
+      "title": "Social Media ist freie Öffentlichkeit?",
+      "slug": "social-media-ist-freie-oeffentlichkeit",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/"
+    },
+    {
       "url": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
       "title": "Solarstrom ist unzuverlässig?",
       "slug": "solarstrom-ist-unzuverlaessig",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -4284,6 +5107,23 @@
       "canonicalTarget": "/wirkungsradar/live/migration-kostet-nur/"
     },
     {
+      "url": "/wirkungsradar/live/standort-deutschland-ist-tot/",
+      "title": "Standort Deutschland ist tot?",
+      "slug": "standort-deutschland-ist-tot",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/standort-deutschland-ist-tot/"
+    },
+    {
       "url": "/wirkungsradar/live/steuerverschwendung-buerokratie/",
       "title": "Der Staat verschwendet unser Geld?",
       "slug": "steuerverschwendung-buerokratie",
@@ -4307,9 +5147,8 @@
       "title": "Tempolimit bringt nichts?",
       "slug": "tempolimit-bringt-nichts",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -4319,6 +5158,23 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/tempolimit-bringt-nichts/"
+    },
+    {
+      "url": "/wirkungsradar/live/tradition-wird-abgeschafft/",
+      "title": "Tradition wird abgeschafft?",
+      "slug": "tradition-wird-abgeschafft",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/tradition-wird-abgeschafft/"
     },
     {
       "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
@@ -4346,9 +5202,8 @@
       "title": "Verbrennerverbot nimmt Freiheit?",
       "slug": "verbrennerverbot-nimmt-freiheit",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -4404,13 +5259,31 @@
       "canonicalTarget": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/"
     },
     {
+      "url": "/wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/",
+      "title": "Vier-Tage-Woche ist Wohlstandsverwahrlosung?",
+      "slug": "vier-tage-woche-ist-wohlstandsverwahrlosung",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "Menschen sind keine Kostenstelle.",
+        "Geprüft wird der Frame, nicht Personen.",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/"
+    },
+    {
       "url": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
       "title": "Wärmepumpe ist unbezahlbar?",
       "slug": "waermepumpe-ist-unbezahlbar",
       "tags": [
-        "Website 2.0",
-        "Datenstand: 2026-06-05",
-        "2026-06-05",
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
         "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
         "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
         "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
@@ -4439,6 +5312,23 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/"
+    },
+    {
+      "url": "/wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/",
+      "title": "Wasser ist in Deutschland kein Problem?",
+      "slug": "wasser-ist-in-deutschland-kein-problem",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/"
     },
     {
       "url": "/wirkungsradar/live/wasserstoff-fuer-alles/",
@@ -4606,6 +5496,23 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/wohnungsnot-wegen-migration/"
+    },
+    {
+      "url": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/",
+      "title": "Wokeness spaltet die Gesellschaft?",
+      "slug": "wokeness-spaltet-die-gesellschaft",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
     },
     {
       "url": "/wirkungsradar/methode/",
@@ -4849,7 +5756,6 @@
         "Entlastung",
         "Migration",
         "Sündenbock-Frame",
-        "Website 2.0",
         "mit Quellenstand",
         "Sozialstaat"
       ],
@@ -5077,7 +5983,6 @@
         "Verantwortungsdiffusion",
         "Klima",
         "Ohnmachts-Frame",
-        "Website 2.0",
         "mit Quellenstand",
         "Staat & Schulden"
       ],
@@ -5095,7 +6000,6 @@
         "Wut",
         "Klima",
         "Spezialfall-Frame",
-        "Website 2.0",
         "mit Quellenstand",
         "Ausland & Sicherheit",
         "Geld-weg-Frame"
@@ -5114,7 +6018,6 @@
         "Diktaturframe",
         "Klima",
         "Spezialfall-Frame",
-        "Website 2.0",
         "mit Quellenstand"
       ],
       "synonyms": [],
@@ -5382,7 +6285,6 @@
         "Scheinbeweis",
         "Energie",
         "Spezialfall-Frame",
-        "Website 2.0",
         "mit Quellenstand",
         "Aufschub-Frame"
       ],
@@ -5589,7 +6491,6 @@
         "Aufschub",
         "Energie",
         "Aufschub-Frame",
-        "Website 2.0",
         "mit Quellenstand"
       ],
       "synonyms": [],
@@ -5606,7 +6507,6 @@
         "Verlustaversion",
         "Energie",
         "Aufschub-Frame",
-        "Website 2.0",
         "mit Quellenstand",
         "Klima",
         "Spezialfall-Frame"
@@ -6074,7 +6974,7 @@
     },
     {
       "url": "/wirkungsradar/resilienz-prinzipien/",
-      "title": "Wie Öffentlichkeit widerstandsfähiger gegen Empörung, Ablenkung und Manipulation wird.",
+      "title": "Radar-Modul: Resilienzfrage",
       "slug": "resilienz-prinzipien",
       "tags": [],
       "synonyms": [],
@@ -6353,7 +7253,7 @@
     },
     {
       "url": "/wirkungsradar/resonanz-kompass/",
-      "title": "Welche Themen bekommen Aufmerksamkeit - und passt das zu ihrer wirklichen Bedeutung?",
+      "title": "Radar-Modul: Resonanzprofil",
       "slug": "resonanz-kompass",
       "tags": [],
       "synonyms": [],
@@ -8104,7 +9004,7 @@
     },
     {
       "url": "/wirkungsradar/ursachen-navigator/",
-      "title": "Vom Aufreger zur Ursache.",
+      "title": "Radar-Modul: Ursachenprüfung",
       "slug": "ursachen-navigator",
       "tags": [],
       "synonyms": [],
@@ -8338,6 +9238,30 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/afd-kleiner-mann-wohlstandsgrundlagen/",
+        "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/aktienrente-loest-die-rente/",
+        "/wirkungsradar/live/aktienrente-loest-die-rente/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/aktienrente-loest-die-rente/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/algorithmen-sind-neutral/",
+        "/wirkungsradar/live/algorithmen-sind-neutral/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/algorithmen-sind-neutral/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/altparteien/",
         "/wirkungsradar/live/altparteien/"
       ],
@@ -8360,6 +9284,14 @@
         "/wirkungsradar/live/angst-vor-afd-wahlsieg/"
       ],
       "canonicalTarget": "/wirkungsradar/live/angst-vor-afd-wahlsieg/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/antisemitismus-ist-importiert/",
+        "/wirkungsradar/live/antisemitismus-ist-importiert/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/antisemitismus-ist-importiert/"
     },
     {
       "type": "exakte Dublette",
@@ -8401,6 +9333,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/biodiversitaet-ist-luxusproblem/",
+        "/wirkungsradar/live/biodiversitaet-ist-luxusproblem/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/biodiversitaet-ist-luxusproblem/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/buergergeld-macht-faul/",
         "/wirkungsradar/live/buergergeld-macht-faul/"
       ],
@@ -8417,6 +9357,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/cancel-culture-zerstoert-debatte/",
+        "/wirkungsradar/live/cancel-culture-zerstoert-debatte/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/cancel-culture-zerstoert-debatte/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/co2-ist-nur-ein-spurengas/",
         "/wirkungsradar/live/co2-ist-nur-ein-spurengas/"
       ],
@@ -8429,6 +9377,22 @@
         "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/"
       ],
       "canonicalTarget": "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/corona-verschwoerung-war-die-pandemie-geplant/",
+        "/wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/cyberangriffe-sind-it-problem/",
+        "/wirkungsradar/live/cyberangriffe-sind-it-problem/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/cyberangriffe-sind-it-problem/"
     },
     {
       "type": "exakte Dublette",
@@ -8453,6 +9417,14 @@
         "/wirkungsradar/live/datenschutz-verhindert-innovation/"
       ],
       "canonicalTarget": "/wirkungsradar/live/datenschutz-verhindert-innovation/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/deepfakes-sind-nur-spass/",
+        "/wirkungsradar/live/deepfakes-sind-nur-spass/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/deepfakes-sind-nur-spass/"
     },
     {
       "type": "exakte Dublette",
@@ -8593,6 +9565,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/gaza-zeigt-westliche-doppelmoral/",
+        "/wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/gender-ideologie/",
         "/wirkungsradar/live/gender-ideologie/"
       ],
@@ -8609,6 +9589,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/heimat-gehoert-den-einheimischen/",
+        "/wirkungsradar/live/heimat-gehoert-den-einheimischen/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/heimat-gehoert-den-einheimischen/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/heizgesetz-heizhammer-narrativ/",
         "/wirkungsradar/live/heizgesetz-heizhammer-narrativ/"
       ],
@@ -8617,10 +9605,42 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/impfen-ist-nur-persoenliche-entscheidung/",
+        "/wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/integration-ist-gescheitert/",
         "/wirkungsradar/live/integration-ist-gescheitert/"
       ],
       "canonicalTarget": "/wirkungsradar/live/integration-ist-gescheitert/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/islamismus-wird-verharmlost/",
+        "/wirkungsradar/live/islamismus-wird-verharmlost/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/islamismus-wird-verharmlost/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/israelkritik-wird-verboten/",
+        "/wirkungsradar/live/israelkritik-wird-verboten/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/israelkritik-wird-verboten/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/junge-wollen-nicht-mehr-arbeiten/",
+        "/wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/"
     },
     {
       "type": "exakte Dublette",
@@ -8658,6 +9678,22 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/ki-regulierung-bremst-europa/",
+        "/wirkungsradar/live/ki-regulierung-bremst-europa/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/ki-regulierung-bremst-europa/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/kinder-kriegen-ist-klimasuende/",
+        "/wirkungsradar/live/kinder-kriegen-ist-klimasuende/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/kinder-kriegen-ist-klimasuende/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/klima-hat-sich-schon-immer-veraendert/",
         "/wirkungsradar/live/klima-hat-sich-schon-immer-veraendert/"
       ],
@@ -8678,6 +9714,14 @@
         "/wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/"
       ],
       "canonicalTarget": "/wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/klimaflucht-ist-panikmache/",
+        "/wirkungsradar/live/klimaflucht-ist-panikmache/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/klimaflucht-ist-panikmache/"
     },
     {
       "type": "exakte Dublette",
@@ -8736,6 +9780,38 @@
         "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/"
       ],
       "canonicalTarget": "/wirkungsradar/live/leistungstraeger-ausgepresst/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/linksextremismus-ist-unterschaetzt/",
+        "/wirkungsradar/live/linksextremismus-ist-unterschaetzt/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/linksextremismus-ist-unterschaetzt/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/lobbyismus-ist-immer-korruption/",
+        "/wirkungsradar/live/lobbyismus-ist-immer-korruption/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/lobbyismus-ist-immer-korruption/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/long-covid-me-cfs-ist-einbildung/",
+        "/wirkungsradar/live/long-covid-me-cfs-ist-einbildung/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/long-covid-me-cfs-ist-einbildung/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/maenner-werden-benachteiligt/",
+        "/wirkungsradar/live/maenner-werden-benachteiligt/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/maenner-werden-benachteiligt/"
     },
     {
       "type": "exakte Dublette",
@@ -8799,6 +9875,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/migration-und-queerfeindlichkeit/",
+        "/wirkungsradar/live/migration-und-queerfeindlichkeit/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/migration-und-queerfeindlichkeit/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/nato-hat-russland-provoziert/",
         "/wirkungsradar/live/nato-hat-russland-provoziert/"
       ],
@@ -8847,6 +9931,22 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/patriotismus-ist-rechts/",
+        "/wirkungsradar/live/patriotismus-ist-rechts/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/patriotismus-ist-rechts/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/pflege-durch-roboter-ist-unmenschlich/",
+        "/wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/pflege-ist-unbezahlbar/",
         "/wirkungsradar/live/pflege-ist-unbezahlbar/"
       ],
@@ -8887,6 +9987,30 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/rechtsextremismus-ist-nur-protest/",
+        "/wirkungsradar/live/rechtsextremismus-ist-nur-protest/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/rechtsextremismus-ist-nur-protest/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/reiche-wandern-aus-wenn-man-sie-belastet/",
+        "/wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/religion-gehoert-ins-private/",
+        "/wirkungsradar/live/religion-gehoert-ins-private/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/religion-gehoert-ins-private/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/remigration/",
         "/wirkungsradar/detail/remigration-remigrationslotsen/",
         "/wirkungsradar/live/remigration/",
@@ -8921,11 +10045,27 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/schuldenbremse-schuetzt-die-jugend/",
+        "/wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/sdgs-weltregierung/",
         "/wirkungsradar/live/sdgs-sind-weltregierung/",
         "/wirkungsradar/live/sdgs-weltregierung/"
       ],
       "canonicalTarget": "/wirkungsradar/live/sdgs-sind-weltregierung/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/social-media-ist-freie-oeffentlichkeit/",
+        "/wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/"
     },
     {
       "type": "exakte Dublette",
@@ -8954,6 +10094,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/standort-deutschland-ist-tot/",
+        "/wirkungsradar/live/standort-deutschland-ist-tot/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/standort-deutschland-ist-tot/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/steuerverschwendung-buerokratie/",
         "/wirkungsradar/live/steuerverschwendung-buerokratie/"
       ],
@@ -8966,6 +10114,14 @@
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
       ],
       "canonicalTarget": "/wirkungsradar/live/tempolimit-bringt-nichts/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/tradition-wird-abgeschafft/",
+        "/wirkungsradar/live/tradition-wird-abgeschafft/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/tradition-wird-abgeschafft/"
     },
     {
       "type": "exakte Dublette",
@@ -8999,6 +10155,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/vier-tage-woche-ist-wohlstandsverwahrlosung/",
+        "/wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/",
         "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
       ],
@@ -9011,6 +10175,14 @@
         "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/"
       ],
       "canonicalTarget": "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/wasser-ist-in-deutschland-kein-problem/",
+        "/wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/"
     },
     {
       "type": "exakte Dublette",
@@ -9070,6 +10242,14 @@
         "/wirkungsradar/live/wohnungsnot-wegen-migration/"
       ],
       "canonicalTarget": "/wirkungsradar/live/wohnungsnot-wegen-migration/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
+        "/wirkungsradar/detail/wokeness-spaltet-die-gesellschaft/",
+        "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
     },
     {
       "type": "exakte Dublette",
@@ -9191,14 +10371,6 @@
         "/wirkungsradar/resonanz-kompass/gender-sprache-kulturkampf/"
       ],
       "canonicalTarget": "/wirkungsradar/resonanz/gender-sprache-kulturkampf/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
-        "/wirkungsradar/resonanz/",
-        "/wirkungsradar/resonanz-kompass/"
-      ],
-      "canonicalTarget": "/wirkungsradar/resonanz/"
     },
     {
       "type": "exakte Dublette",
@@ -9423,14 +10595,6 @@
         "/wirkungsradar/ursachen-navigator/gesundheit-als-reparatursystem/"
       ],
       "canonicalTarget": "/wirkungsradar/ursachen/gesundheit-als-reparatursystem/"
-    },
-    {
-      "type": "exakte Dublette",
-      "urls": [
-        "/wirkungsradar/ursachen/",
-        "/wirkungsradar/ursachen-navigator/"
-      ],
-      "canonicalTarget": "/wirkungsradar/ursachen/"
     },
     {
       "type": "exakte Dublette",
@@ -10153,7 +11317,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.816,
+      "score": 0.811,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/deutschland-schafft-sich-ab/"
@@ -10165,7 +11329,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.826,
+      "score": 0.832,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/diktatur-der-altparteien/"
@@ -10173,6 +11337,54 @@
       "titles": [
         "Bürokratieabbau statt Wirkung?",
         "Diktatur der Altparteien?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.807,
+      "urls": [
+        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/live/leistungstraeger-ausgepresst/"
+      ],
+      "titles": [
+        "Bürokratieabbau statt Wirkung?",
+        "Werden Leistungsträger ausgepresst?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.818,
+      "urls": [
+        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/live/sind-die-reichen-schuld/"
+      ],
+      "titles": [
+        "Bürokratieabbau statt Wirkung?",
+        "Sind die Reichen schuld?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.818,
+      "urls": [
+        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
+      ],
+      "titles": [
+        "Bürokratieabbau statt Wirkung?",
+        "Solarstrom ist unzuverlässig?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.821,
+      "urls": [
+        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+        "/wirkungsradar/live/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Bürokratieabbau statt Wirkung?",
+        "Tempolimit bringt nichts?"
       ]
     },
     {
@@ -10180,54 +11392,6 @@
       "score": 0.813,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
-        "/wirkungsradar/live/leistungstraeger-ausgepresst/"
-      ],
-      "titles": [
-        "Bürokratieabbau statt Wirkung?",
-        "Werden Leistungsträger ausgepresst?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.814,
-      "urls": [
-        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
-        "/wirkungsradar/live/sind-die-reichen-schuld/"
-      ],
-      "titles": [
-        "Bürokratieabbau statt Wirkung?",
-        "Sind die Reichen schuld?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.809,
-      "urls": [
-        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
-        "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
-      ],
-      "titles": [
-        "Bürokratieabbau statt Wirkung?",
-        "Solarstrom ist unzuverlässig?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.814,
-      "urls": [
-        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
-        "/wirkungsradar/live/tempolimit-bringt-nichts/"
-      ],
-      "titles": [
-        "Bürokratieabbau statt Wirkung?",
-        "Tempolimit bringt nichts?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.81,
-      "urls": [
-        "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
       ],
       "titles": [
@@ -10237,7 +11401,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.828,
+      "score": 0.822,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/diktatur-der-altparteien/"
@@ -10249,7 +11413,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.816,
+      "score": 0.808,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
@@ -10261,7 +11425,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.811,
+      "score": 0.808,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -10273,7 +11437,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.816,
+      "score": 0.811,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -10285,7 +11449,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.812,
+      "score": 0.815,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -10297,7 +11461,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.812,
+      "score": 0.807,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/leistungstraeger-ausgepresst/"
@@ -10309,7 +11473,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.832,
+      "score": 0.829,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
@@ -10321,7 +11485,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.832,
+      "score": 0.829,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -10333,7 +11497,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.844,
+      "score": 0.838,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -10345,7 +11509,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.815,
+      "score": 0.819,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -10381,7 +11545,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.826,
+      "score": 0.823,
       "urls": [
         "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
         "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
@@ -10396,18 +11560,6 @@
       "score": 0.801,
       "urls": [
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
-        "/wirkungsradar/live/sind-die-reichen-schuld/"
-      ],
-      "titles": [
-        "Werden Leistungsträger ausgepresst?",
-        "Sind die Reichen schuld?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.807,
-      "urls": [
-        "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
       ],
       "titles": [
@@ -10417,7 +11569,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.803,
+      "score": 0.8,
       "urls": [
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -10441,7 +11593,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.821,
+      "score": 0.815,
       "urls": [
         "/wirkungsradar/live/sind-die-reichen-schuld/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -10453,37 +11605,13 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.832,
+      "score": 0.83,
       "urls": [
         "/wirkungsradar/live/sind-die-reichen-schuld/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
       ],
       "titles": [
         "Sind die Reichen schuld?",
-        "Tempolimit bringt nichts?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.804,
-      "urls": [
-        "/wirkungsradar/live/sind-die-reichen-schuld/",
-        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
-      ],
-      "titles": [
-        "Sind die Reichen schuld?",
-        "Verbrennerverbot nimmt Freiheit?"
-      ]
-    },
-    {
-      "type": "Struktur-Dublette",
-      "score": 0.827,
-      "urls": [
-        "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
-        "/wirkungsradar/live/tempolimit-bringt-nichts/"
-      ],
-      "titles": [
-        "Solarstrom ist unzuverlässig?",
         "Tempolimit bringt nichts?"
       ]
     },
@@ -10491,6 +11619,30 @@
       "type": "Struktur-Dublette",
       "score": 0.805,
       "urls": [
+        "/wirkungsradar/live/sind-die-reichen-schuld/",
+        "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
+      ],
+      "titles": [
+        "Sind die Reichen schuld?",
+        "Verbrennerverbot nimmt Freiheit?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.824,
+      "urls": [
+        "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
+        "/wirkungsradar/live/tempolimit-bringt-nichts/"
+      ],
+      "titles": [
+        "Solarstrom ist unzuverlässig?",
+        "Tempolimit bringt nichts?"
+      ]
+    },
+    {
+      "type": "Struktur-Dublette",
+      "score": 0.811,
+      "urls": [
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
       ],
@@ -10501,7 +11653,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.822,
+      "score": 0.826,
       "urls": [
         "/wirkungsradar/live/tempolimit-bringt-nichts/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -10519,6 +11671,21 @@
       "title": "15-Minuten-Stadt oder Klimakäfig?"
     },
     {
+      "from": "/wirkungsradar/detail/afd-kleiner-mann-wohlstandsgrundlagen/",
+      "to": "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/",
+      "title": "Die AfD ist für den kleinen Mann da?"
+    },
+    {
+      "from": "/wirkungsradar/detail/aktienrente-loest-die-rente/",
+      "to": "/wirkungsradar/live/aktienrente-loest-die-rente/",
+      "title": "Aktienrente löst die Rente?"
+    },
+    {
+      "from": "/wirkungsradar/detail/algorithmen-sind-neutral/",
+      "to": "/wirkungsradar/live/algorithmen-sind-neutral/",
+      "title": "Algorithmen sind neutral?"
+    },
+    {
       "from": "/wirkungsradar/detail/altparteien/",
       "to": "/wirkungsradar/live/diktatur-der-altparteien/",
       "title": "Altparteien?"
@@ -10532,6 +11699,11 @@
       "from": "/wirkungsradar/detail/angst-vor-afd-wahlsieg/",
       "to": "/wirkungsradar/live/angst-vor-afd-wahlsieg/",
       "title": "Angst vor AfD-Wahlsieg?"
+    },
+    {
+      "from": "/wirkungsradar/detail/antisemitismus-ist-importiert/",
+      "to": "/wirkungsradar/live/antisemitismus-ist-importiert/",
+      "title": "Antisemitismus ist importiert?"
     },
     {
       "from": "/wirkungsradar/detail/arbeit-lohnt-sich-nicht-mehr/",
@@ -10554,6 +11726,11 @@
       "title": "Bio kann die Welt nicht ernähren?"
     },
     {
+      "from": "/wirkungsradar/detail/biodiversitaet-ist-luxusproblem/",
+      "to": "/wirkungsradar/live/biodiversitaet-ist-luxusproblem/",
+      "title": "Biodiversität ist Luxusproblem?"
+    },
+    {
       "from": "/wirkungsradar/detail/buergergeld-macht-faul/",
       "to": "/wirkungsradar/live/buergergeld-macht-faul/",
       "title": "Bürgergeld macht faul?"
@@ -10564,6 +11741,11 @@
       "title": "Bürokratieabbau statt Wirkung?"
     },
     {
+      "from": "/wirkungsradar/detail/cancel-culture-zerstoert-debatte/",
+      "to": "/wirkungsradar/live/cancel-culture-zerstoert-debatte/",
+      "title": "Cancel Culture zerstört Debatte?"
+    },
+    {
       "from": "/wirkungsradar/detail/co2-ist-nur-ein-spurengas/",
       "to": "/wirkungsradar/live/co2-ist-nur-ein-spurengas/",
       "title": "CO₂ ist nur ein Spurengas"
@@ -10572,6 +11754,16 @@
       "from": "/wirkungsradar/detail/co2-preis-oder-fossile-systemkosten/",
       "to": "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/",
       "title": "CO₂-Preis oder fossile Systemkosten? Warum wir so oder so zahlen"
+    },
+    {
+      "from": "/wirkungsradar/detail/corona-verschwoerung-war-die-pandemie-geplant/",
+      "to": "/wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/",
+      "title": "Corona-Verschwörung? War die Pandemie geplant?"
+    },
+    {
+      "from": "/wirkungsradar/detail/cyberangriffe-sind-it-problem/",
+      "to": "/wirkungsradar/live/cyberangriffe-sind-it-problem/",
+      "title": "Cyberangriffe sind IT-Problem?"
     },
     {
       "from": "/wirkungsradar/detail/das-ist-alles-gesteuert/",
@@ -10587,6 +11779,11 @@
       "from": "/wirkungsradar/detail/datenschutz-verhindert-innovation/",
       "to": "/wirkungsradar/live/datenschutz-verhindert-innovation/",
       "title": "Datenschutz verhindert Innovation?"
+    },
+    {
+      "from": "/wirkungsradar/detail/deepfakes-sind-nur-spass/",
+      "to": "/wirkungsradar/live/deepfakes-sind-nur-spass/",
+      "title": "Deepfakes sind nur Spaß?"
     },
     {
       "from": "/wirkungsradar/detail/deutschland-nur-zwei-prozent/",
@@ -10689,6 +11886,11 @@
       "title": "Fusion löst das Energieproblem?"
     },
     {
+      "from": "/wirkungsradar/detail/gaza-zeigt-westliche-doppelmoral/",
+      "to": "/wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/",
+      "title": "Gaza zeigt westliche Doppelmoral?"
+    },
+    {
       "from": "/wirkungsradar/detail/gender-ideologie/",
       "to": "/wirkungsradar/live/gender-ideologie/",
       "title": "Gender-Ideologie?"
@@ -10699,14 +11901,39 @@
       "title": "Genderismus / Regenbogenkult / politische Indoktrination?"
     },
     {
+      "from": "/wirkungsradar/detail/heimat-gehoert-den-einheimischen/",
+      "to": "/wirkungsradar/live/heimat-gehoert-den-einheimischen/",
+      "title": "Heimat gehört den Einheimischen?"
+    },
+    {
       "from": "/wirkungsradar/detail/heizgesetz-heizhammer-narrativ/",
       "to": "/wirkungsradar/live/heizgesetz-heizhammer-narrativ/",
       "title": "Heizgesetz oder Heizhammer?"
     },
     {
+      "from": "/wirkungsradar/detail/impfen-ist-nur-persoenliche-entscheidung/",
+      "to": "/wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/",
+      "title": "Impfen ist nur persönliche Entscheidung?"
+    },
+    {
       "from": "/wirkungsradar/detail/integration-ist-gescheitert/",
       "to": "/wirkungsradar/live/integration-ist-gescheitert/",
       "title": "Integration ist gescheitert?"
+    },
+    {
+      "from": "/wirkungsradar/detail/islamismus-wird-verharmlost/",
+      "to": "/wirkungsradar/live/islamismus-wird-verharmlost/",
+      "title": "Islamismus wird verharmlost?"
+    },
+    {
+      "from": "/wirkungsradar/detail/israelkritik-wird-verboten/",
+      "to": "/wirkungsradar/live/israelkritik-wird-verboten/",
+      "title": "Israelkritik wird verboten?"
+    },
+    {
+      "from": "/wirkungsradar/detail/junge-wollen-nicht-mehr-arbeiten/",
+      "to": "/wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/",
+      "title": "Junge wollen nicht mehr arbeiten?"
     },
     {
       "from": "/wirkungsradar/detail/kehrtwende-180-grad/",
@@ -10734,6 +11961,16 @@
       "title": "KI nimmt uns alle Jobs?"
     },
     {
+      "from": "/wirkungsradar/detail/ki-regulierung-bremst-europa/",
+      "to": "/wirkungsradar/live/ki-regulierung-bremst-europa/",
+      "title": "KI-Regulierung bremst Europa?"
+    },
+    {
+      "from": "/wirkungsradar/detail/kinder-kriegen-ist-klimasuende/",
+      "to": "/wirkungsradar/live/kinder-kriegen-ist-klimasuende/",
+      "title": "Kinder kriegen ist Klimasünde?"
+    },
+    {
       "from": "/wirkungsradar/detail/klima-hat-sich-schon-immer-veraendert/",
       "to": "/wirkungsradar/live/klima-hat-sich-schon-immer-veraendert/",
       "title": "Klima hat sich schon immer verändert"
@@ -10747,6 +11984,11 @@
       "from": "/wirkungsradar/detail/klimafinanzierung-wir-zahlen-fuer-andere/",
       "to": "/wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/",
       "title": "Klimafinanzierung: Zahlen wir für andere?"
+    },
+    {
+      "from": "/wirkungsradar/detail/klimaflucht-ist-panikmache/",
+      "to": "/wirkungsradar/live/klimaflucht-ist-panikmache/",
+      "title": "Klimaflucht ist Panikmache?"
     },
     {
       "from": "/wirkungsradar/detail/klimaschutz-deindustrialisiert-deutschland/",
@@ -10789,6 +12031,26 @@
       "title": "Werden Leistungsträger ausgepresst?"
     },
     {
+      "from": "/wirkungsradar/detail/linksextremismus-ist-unterschaetzt/",
+      "to": "/wirkungsradar/live/linksextremismus-ist-unterschaetzt/",
+      "title": "Linksextremismus ist unterschätzt?"
+    },
+    {
+      "from": "/wirkungsradar/detail/lobbyismus-ist-immer-korruption/",
+      "to": "/wirkungsradar/live/lobbyismus-ist-immer-korruption/",
+      "title": "Lobbyismus ist immer Korruption?"
+    },
+    {
+      "from": "/wirkungsradar/detail/long-covid-me-cfs-ist-einbildung/",
+      "to": "/wirkungsradar/live/long-covid-me-cfs-ist-einbildung/",
+      "title": "Long Covid / ME-CFS ist Einbildung?"
+    },
+    {
+      "from": "/wirkungsradar/detail/maenner-werden-benachteiligt/",
+      "to": "/wirkungsradar/live/maenner-werden-benachteiligt/",
+      "title": "Männer werden benachteiligt?"
+    },
+    {
       "from": "/wirkungsradar/detail/mainstreammedien-luegen-alle/",
       "to": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
       "title": "„Mainstreammedien lügen alle“"
@@ -10824,6 +12086,11 @@
       "title": "Migration kostet nur?"
     },
     {
+      "from": "/wirkungsradar/detail/migration-und-queerfeindlichkeit/",
+      "to": "/wirkungsradar/live/migration-und-queerfeindlichkeit/",
+      "title": "Migration macht Deutschland homophober?"
+    },
+    {
       "from": "/wirkungsradar/detail/nato-hat-russland-provoziert/",
       "to": "/wirkungsradar/live/nato-hat-russland-provoziert/",
       "title": "NATO hat Russland provoziert?"
@@ -10854,6 +12121,16 @@
       "title": "Parkplätze sind Freiheit?"
     },
     {
+      "from": "/wirkungsradar/detail/patriotismus-ist-rechts/",
+      "to": "/wirkungsradar/live/patriotismus-ist-rechts/",
+      "title": "Patriotismus ist rechts?"
+    },
+    {
+      "from": "/wirkungsradar/detail/pflege-durch-roboter-ist-unmenschlich/",
+      "to": "/wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/",
+      "title": "Pflege durch Roboter ist unmenschlich?"
+    },
+    {
       "from": "/wirkungsradar/detail/pflege-ist-unbezahlbar/",
       "to": "/wirkungsradar/live/pflege-ist-unbezahlbar/",
       "title": "Pflege ist unbezahlbar?"
@@ -10877,6 +12154,21 @@
       "from": "/wirkungsradar/detail/radwege-in-peru/",
       "to": "/wirkungsradar/live/radwege-in-peru/",
       "title": "Radwege in Peru - verschenktes Geld oder verkürzte Empörung?"
+    },
+    {
+      "from": "/wirkungsradar/detail/rechtsextremismus-ist-nur-protest/",
+      "to": "/wirkungsradar/live/rechtsextremismus-ist-nur-protest/",
+      "title": "Rechtsextremismus ist nur Protest?"
+    },
+    {
+      "from": "/wirkungsradar/detail/reiche-wandern-aus-wenn-man-sie-belastet/",
+      "to": "/wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/",
+      "title": "Reiche wandern aus, wenn man sie belastet?"
+    },
+    {
+      "from": "/wirkungsradar/detail/religion-gehoert-ins-private/",
+      "to": "/wirkungsradar/live/religion-gehoert-ins-private/",
+      "title": "Religion gehört ins Private?"
     },
     {
       "from": "/wirkungsradar/detail/remigration/",
@@ -10904,6 +12196,11 @@
       "title": "Schulden machen oder sparen?"
     },
     {
+      "from": "/wirkungsradar/detail/schuldenbremse-schuetzt-die-jugend/",
+      "to": "/wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/",
+      "title": "Schuldenbremse schützt die Jugend?"
+    },
+    {
       "from": "/wirkungsradar/detail/sdgs-sind-weltregierung/",
       "to": "/wirkungsradar/live/sdgs-sind-weltregierung/",
       "title": "Diese Aussage wurde zusammengeführt"
@@ -10917,6 +12214,11 @@
       "from": "/wirkungsradar/detail/sind-die-reichen-schuld/",
       "to": "/wirkungsradar/live/sind-die-reichen-schuld/",
       "title": "Sind die Reichen schuld?"
+    },
+    {
+      "from": "/wirkungsradar/detail/social-media-ist-freie-oeffentlichkeit/",
+      "to": "/wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/",
+      "title": "Social Media ist freie Öffentlichkeit?"
     },
     {
       "from": "/wirkungsradar/detail/solarstrom-ist-unzuverlaessig/",
@@ -10934,6 +12236,11 @@
       "title": "Sozialtourismus?"
     },
     {
+      "from": "/wirkungsradar/detail/standort-deutschland-ist-tot/",
+      "to": "/wirkungsradar/live/standort-deutschland-ist-tot/",
+      "title": "Standort Deutschland ist tot?"
+    },
+    {
       "from": "/wirkungsradar/detail/steuerverschwendung-buerokratie/",
       "to": "/wirkungsradar/live/steuerverschwendung-buerokratie/",
       "title": "Der Staat verschwendet unser Geld?"
@@ -10942,6 +12249,11 @@
       "from": "/wirkungsradar/detail/tempolimit-bringt-nichts/",
       "to": "/wirkungsradar/live/tempolimit-bringt-nichts/",
       "title": "Tempolimit bringt nichts?"
+    },
+    {
+      "from": "/wirkungsradar/detail/tradition-wird-abgeschafft/",
+      "to": "/wirkungsradar/live/tradition-wird-abgeschafft/",
+      "title": "Tradition wird abgeschafft?"
     },
     {
       "from": "/wirkungsradar/detail/ukraine-unterstuetzung-steuergeld/",
@@ -10964,6 +12276,11 @@
       "title": "Verfassungsschutz oder Regierungsschutz?"
     },
     {
+      "from": "/wirkungsradar/detail/vier-tage-woche-ist-wohlstandsverwahrlosung/",
+      "to": "/wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/",
+      "title": "Vier-Tage-Woche ist Wohlstandsverwahrlosung?"
+    },
+    {
       "from": "/wirkungsradar/detail/waermepumpe-ist-unbezahlbar/",
       "to": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
       "title": "Wärmepumpe ist unbezahlbar?"
@@ -10972,6 +12289,11 @@
       "from": "/wirkungsradar/detail/waffenlieferungen-verlaengern-den-krieg/",
       "to": "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/",
       "title": "Waffenlieferungen verlängern den Krieg?"
+    },
+    {
+      "from": "/wirkungsradar/detail/wasser-ist-in-deutschland-kein-problem/",
+      "to": "/wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/",
+      "title": "Wasser ist in Deutschland kein Problem?"
     },
     {
       "from": "/wirkungsradar/detail/wasserstoff-fuer-alles/",
@@ -11012,6 +12334,11 @@
       "from": "/wirkungsradar/detail/wohnungsnot-wegen-migration/",
       "to": "/wirkungsradar/live/wohnungsnot-wegen-migration/",
       "title": "Wohnungsnot wegen Migration?"
+    },
+    {
+      "from": "/wirkungsradar/detail/wokeness-spaltet-die-gesellschaft/",
+      "to": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/",
+      "title": "Wokeness spaltet die Gesellschaft?"
     },
     {
       "from": "/wirkungsradar/live/altparteien/",

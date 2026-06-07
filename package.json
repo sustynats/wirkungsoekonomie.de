@@ -55,6 +55,7 @@
     "check:live-reference-changelog": "node scripts/review/check-live-reference-changelog.mjs",
     "glossary:extract": "node scripts/glossary/extract-glossary.mjs",
     "glossary:build": "node scripts/glossary/build-glossary-registry.mjs && node scripts/glossary/build-term-links.mjs && node scripts/glossary/build-glossary-candidates.mjs && node scripts/glossary/build-glossary-reference-index.mjs && node scripts/glossary/build-glossary-pages.mjs",
+    "glossary:import-supplement": "node scripts/glossary/import-glossary-supplement.mjs && npm run glossary:build",
     "glossary:check-alpha": "node scripts/glossary/check-glossary-alphabetical.mjs",
     "glossary:candidates": "node scripts/glossary/build-glossary-candidates.mjs",
     "glossary:links": "node scripts/glossary/build-term-links.mjs",

@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-06T21:59:27.479Z
-Resolved references: 6816
-Warnings: 2810
+Erzeugt: 2026-06-07T09:57:00.999Z
+Resolved references: 6944
+Warnings: 2762
 
 ## Warnungen
 
@@ -60,10 +60,6 @@ Warnings: 2810
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -281,10 +277,6 @@ Warnings: 2810
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -368,8 +360,6 @@ Warnings: 2810
 - [unresolved-reference] Wirkungsradar Sprachmuster und Emotionalisierung - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
 - [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -506,6 +496,16 @@ Warnings: 2810
 - [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 
 ## Aufgelöste Verweise
 
@@ -621,6 +621,14 @@ Warnings: 2810
 - /wirkungsfelder/rente-soziale-sicherung/politische-umsetzung/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#woek-main-2026-k094-s001 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/migration-vielfalt/zugehoerigkeit-und-teilgabe/ -> Zugehörigkeit und Teilgabe (Website, Beschreibung: ja)
+- /portale/migration-vielfalt/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /portale/migration-vielfalt/migration-als-wirkungsfeld/ -> Migration als Wirkungsfeld (field, Beschreibung: ja)
+- /portale/migration-vielfalt/arbeitsmarkt-fachkraefte-demografie/ -> Arbeitsmarkt, Fachkräfte und Demografie (Website, Beschreibung: ja)
+- /portale/migration-vielfalt/bildung-sprache-wirkungskompetenz/ -> Bildung, Sprache und Wirkungskompetenz (Website, Beschreibung: ja)
+- /portale/migration-vielfalt/diskurs-medien-polarisierung/ -> Diskurs, Medien und Polarisierung (Website, Beschreibung: ja)
+- /portale/migration-vielfalt/gesundheit-trauma-stabilitaet/ -> Gesundheit, Trauma und Stabilität (Website, Beschreibung: ja)
 - /referenz/kapitel-072-kultur-und-teilhabe/#woek-main-2026-k072-s001 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -637,6 +645,10 @@ Warnings: 2810
 - /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/finanzsystem-kapital/esg-ratings-boersen-impact-exchange/ -> ESG-Ratings, Börsen und Impact Exchange | Finanzsystem & Kapital (Wirkungsfeld, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/finanzsystem-kapital/ -> Finanzsystem & Kapital (Wirkungsfeld, Beschreibung: ja)
+- /werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#buch -> Arbeitsbibliothek Finanzsystem & Kapital (Website, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /referenz/kapitel-081-wirkungsdatenraeume/#woek-main-2026-k081-s001 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
@@ -692,11 +704,11 @@ Warnings: 2810
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Öffentlicher Wirkungsraum: Debatten verstehen, Aufmerksamkeit gewichten, Resilienz stärken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-062-parteien-und-programme/#woek-main-2026-k062-s001 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
 - /blog/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.html -> Demokratie schützen, Menschen zurückgewinnen: Der lange Weg aus der Radikalisierung (Journalartikel, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Der Stein und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1122,10 +1134,10 @@ Warnings: 2810
 - /referenz/kapitel-069-pflege/#woek-main-2026-k069-s001 -> Kapitel 69: Pflege (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html -> Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist (Journalartikel, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/dossiers/wohnen-als-wirkungsraum/ -> Einzeldossier Wohnen als Wirkungsraum (Whitepaper, Beschreibung: ja)
-- /werkzeuge/digital-souveraenitaetscheck/ -> Digital-Souveränitätscheck (Methode, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/detailkonzepte/wohnen-als-wirkungsraum/ -> Detailkonzept Wohnen als Wirkungsraum (Wirkungsfeld, Beschreibung: ja)
-- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/wohnen-stadt/dossiers/gesundes-barrierefreies-resilientes-wohnen/ -> Einzeldossier Gesundes, barrierefreies und resilientes Wohnen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wohnen-stadt/detailkonzepte/gesundes-barrierefreies-resilientes-wohnen/ -> Detailkonzept Gesundes, barrierefreies und resilientes Wohnen (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wohnen-stadt/detailkonzepte/ -> Detailkonzepte Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
 - /referenz/kapitel-069-pflege/#woek-main-2026-k069-s001 -> Kapitel 69: Pflege (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/ -> Detailkonzept: Globale Resilienz und Frühwarnkooperation (Website, Beschreibung: ja)
 - /referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/#woek-main-2026-k095-s001 -> Kapitel 95: Globale Resilienz, Sicherheit und Kooperation (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1249,7 +1261,7 @@ Warnings: 2810
 - /blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html -> Wirkungspotenzial: Warum Fakten allein nicht wirken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-079-diskurskultur/#woek-main-2026-k079-s001 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Öffentlicher Wirkungsraum: Debatten verstehen, Aufmerksamkeit gewichten, Resilienz stärken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Der Stein und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html -> Soziale Resilienz gegen Verhetzung – Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#woek-main-2026-k023-s001 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1265,12 +1277,11 @@ Warnings: 2810
 - /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#woek-main-2026-k089-s001 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-098-pilotprojekte/#woek-main-2026-k098-s001 -> Kapitel 98: Pilotprojekte (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Der Stein und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
-- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-028-demokratie-als-wirkungsraum/#woek-main-2026-k028-s001 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#woek-main-2026-k089-s001 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-098-pilotprojekte/#woek-main-2026-k098-s001 -> Kapitel 98: Pilotprojekte (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-076-framing-sprache-und-tonalitaet/#woek-main-2026-k076-s001 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1498,14 +1509,3 @@ Warnings: 2810
 - /referenz/kapitel-053-markttransformation/#woek-main-2026-k053-s001 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-048-produkte-als-wirkungstraeger/#woek-main-2026-k048-s001 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/#woek-main-2026-k105-s001 -> Kapitel 105: Freiheit, Markt und der Vorwurf der Planwirtschaft (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-060-verteilung-eigentum-und-wohlstand/#woek-main-2026-k060-s001 -> Kapitel 60: Verteilung, Eigentum und Wohlstand (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/nats-woek-allgemein/#political-implementation -> NATS WÖk allgemein – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
-- /referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/#woek-main-2026-k105-s001 -> Kapitel 105: Freiheit, Markt und der Vorwurf der Planwirtschaft (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-060-verteilung-eigentum-und-wohlstand/#woek-main-2026-k060-s001 -> Kapitel 60: Verteilung, Eigentum und Wohlstand (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/#woek-main-2026-k105-s001 -> Kapitel 105: Freiheit, Markt und der Vorwurf der Planwirtschaft (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-049-ehrliche-preise/#woek-main-2026-k049-s001 -> Kapitel 49: Ehrliche Preise (Online-Buch-Kapitel, Beschreibung: ja)
