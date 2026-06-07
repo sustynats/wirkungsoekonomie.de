@@ -1183,7 +1183,10 @@ function initWirkungsradarLiveFilter() {
       card.hidden = !show;
       if (show) visible += 1;
     });
-    if (count) count.textContent = `${visible} Karten gefunden`;
+    if (count) {
+      const label = count.dataset.liveCountLabel || "Karten";
+      count.textContent = `${visible} ${label} gefunden`;
+    }
     noResults.hidden = visible !== 0;
   };
 
