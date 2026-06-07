@@ -83,6 +83,7 @@ function updateAudioIndex(metadata) {
   );
 
   html = html.replace(/(\s*)<p class="audio-player-meta">[\s\S]*?<\/p>\s*<p class="audio-player-actions">[\s\S]*?<\/p>/g, "");
+  html = html.replace(/(\s*)<p class="audio-player-actions">[\s\S]*?<\/p>/g, "");
 
   html = html.replace(/(<audio[\s\S]*?<\/audio>)/g, (match) => {
     const source = match.match(/<source\s+src="([^"]+)"/i)?.[1];
@@ -91,8 +92,7 @@ function updateAudioIndex(metadata) {
     const item = metadata[resolved];
     if (!item) return match;
     return `${match}
-              <p class="audio-player-meta"><span>Sprecherin: ${item.speaker_name}</span><span>Dauer: ${item.duration_label}</span></p>
-              <p class="audio-player-actions"><a class="text-link" href="${source}" download>MP3 herunterladen</a></p>`;
+              <p class="audio-player-meta"><span>Sprecherin: ${item.speaker_name}</span><span>Dauer: ${item.duration_label}</span></p>`;
   });
 
   fs.writeFileSync(audioIndexPath, html);

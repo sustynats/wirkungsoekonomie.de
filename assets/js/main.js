@@ -7026,7 +7026,6 @@ const AudioExplanationLayer = (() => {
           <span>Sprecherin: ${escapeHtml(item.speaker_name || "Natalie Weber")}</span>
           <span>Dauer: ${escapeHtml(durationLabel(item))}</span>
         </p>
-        <p class="audio-player-actions"><a class="text-link" href="${escapeHtml(item.audio_file)}" download>MP3 herunterladen</a></p>
         <details class="audio-transcript audio-explanation-transcript">
           <summary>Transkript anzeigen</summary>
           ${transcriptHtml(item.transcript)}
@@ -7089,17 +7088,13 @@ const AudioPlayerMetadataLayer = (() => {
     audio.dataset.audioMetaEnhanced = "true";
     const parent = audio.parentElement;
     const needsMeta = !hasNearbyMetadata(audio);
-    const needsActions = parent && !parent.querySelector(".audio-player-actions");
-    if (needsMeta || needsActions) {
+    if (needsMeta) {
       const meta = needsMeta
         ? `<p class="audio-player-meta"><span>Sprecherin: ${escapeHtml(item.speaker_name || "Natalie Weber")}</span><span>Dauer: ${escapeHtml(item.duration_label || "wird vom Player geladen")}</span></p>`
         : "";
-      const actions = needsActions
-        ? `<p class="audio-player-actions"><a class="text-link" href="${escapeHtml(relativeHref(audio))}" download>MP3 herunterladen</a></p>`
-        : "";
       audio.insertAdjacentHTML(
         "afterend",
-        `${meta}${actions}`,
+        `${meta}`,
       );
     }
   }
