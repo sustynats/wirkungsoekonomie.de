@@ -1,13 +1,13 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-07T14:58:18.796Z
+Stand: 2026-06-07T20:15:15.990Z
 
 | Kennzahl | Wert |
 |---|---:|
 | Radar-Seiten | 655 |
 | Claim-Seiten | 274 |
 | Kanonische Narrative | 122 |
-| Dubletten / Kandidaten | 412 |
+| Dubletten / Kandidaten | 408 |
 | Zusammengeführt | 151 |
 | Synonyme | 46 |
 | Redirects | 151 |

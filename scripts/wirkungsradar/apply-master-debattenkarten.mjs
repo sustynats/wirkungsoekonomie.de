@@ -1098,8 +1098,11 @@ function radarNav(base = "") {
 
 function renderToc() {
   const links = [
-    ["#behauptung", "Behauptung"],
-    ["#sofortantwort", "Sofortantwort"],
+    ["#richtige-reaktion", "Richtige Reaktion"],
+    ["#sprechssatz", "Sprechsatz"],
+    ["#framewechsel", "Framewechsel"],
+    ["#behauptung", "Einordnung des Frames"],
+    ["#sofortantwort", "10 / 30 / 2 Minuten"],
     ["#10-sekunden", "10 Sekunden"],
     ["#30-sekunden", "30 Sekunden"],
     ["#2-minuten", "2 Minuten"],
@@ -1130,6 +1133,196 @@ function answerAccordion(card) {
     ["2 Minuten", "Systemische Antwort", card.answers.seconds120],
   ];
   return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="sofortantwort" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktion</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist. Die Sekunden sind Kommunikationsstufen, keine Stoppuhr.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${rows.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""} id="${answerId(label)}"><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary>${paragraphize(text)}<button class="copy-chip" type="button" data-copy-text='${attr(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
+}
+
+const reactionOverrides = {
+  "migration-kostet-nur": {
+    frameLabel: "Kostenstellen-Frame",
+    principle: "Nicht Menschen gegen Haushalt rechnen. Auf Integrationsqualität und Zeitpfad verschieben.",
+    doNotDo: [
+      "Nicht in eine reine Euro-Debatte einsteigen.",
+      "Nicht Menschen als Kostenstelle wiederholen.",
+      "Nicht so tun, als seien Anfangskosten die Lebensbilanz.",
+    ],
+    frameShift: {
+      from: "Menschen als dauerhafte Kostenstelle",
+      to: "Integrationsarchitektur als Weg zu Sprache, Arbeit, Beiträgen, Versorgung und Teilhabe",
+    },
+    instantLine:
+      "Menschen sind keine Kostenstelle. Ankommen braucht am Anfang Organisation; entscheidend ist, ob daraus schnell Sprache, Arbeit, Beiträge und Teilhabe werden.",
+    bridgeQuestion:
+      "Welche Integrationsbedingungen machen aus Anfangsaufwand gesellschaftliche Wirkleistung?",
+    copyShort:
+      "Menschen sind keine Kostenstelle. Die bessere Frage ist: Welche Integrationsbedingungen machen aus Anfangsaufwand Sprache, Arbeit, Beiträge und Teilhabe?",
+    copyMedium:
+      "Ankommen braucht am Anfang Geld, Personal und Organisation. Der Denkfehler ist, daraus ein dauerhaftes Urteil über Menschen zu machen. Entscheidend ist die Integrationsarchitektur: Sprache, Abschlüsse, Arbeit, Wohnen, Kita, Schule und faire Verfahren.",
+  },
+  "deutschland-nur-zwei-prozent": {
+    frameLabel: "Prozent-Ablenkung",
+    principle: "Nicht bei der Prozentzahl stehenbleiben. Auf Hebelwirkung, Standards und Folgekosten verschieben.",
+    doNotDo: [
+      "Nicht die Prozentzahl als Hauptdebatte akzeptieren.",
+      "Nicht Verantwortung mit Alleinwirkung verwechseln.",
+      "Nicht direkte Emissionen isoliert betrachten.",
+    ],
+    frameShift: {
+      from: "Deutschland als zu klein, um zu wirken",
+      to: "Industrieland mit Hebeln über Technologie, Standards, EU, Lieferketten und vermiedene Folgekosten",
+    },
+    instantLine:
+      "Die Prozentzahl erklärt nicht die Wirkung. Entscheidend ist, welche Hebel ein Industrieland über Technologie, Standards, Märkte und Europa auslöst.",
+    bridgeQuestion:
+      "Welche Hebel hat ein Industrieland, obwohl sein direkter Anteil begrenzt ist?",
+    copyShort:
+      "Die Prozentzahl ist nicht die Wirkungsrechnung. Relevant sind Hebel: Technologie, Standards, EU-Regeln, Lieferketten und vermiedene Folgekosten.",
+    copyMedium:
+      "Der direkte Anteil ist begrenzt, aber daraus folgt nicht Wirkungslosigkeit. Industrieländer wirken über Technologie, Nachfrage, Standards, Infrastruktur, EU-Regeln und Investitionspfade. Die bessere Frage lautet: Welche Hebel senken reale Folgekosten und verschieben Märkte?",
+  },
+  "windraeder-voegel-wald-beton-rueckbau": {
+    frameLabel: "Naturtausch-Frame",
+    principle: "Nicht Naturschutz gegen Energiewende ausspielen. Auf naturverträgliche Planung und fossile Dauerfolgen verschieben.",
+    doNotDo: [
+      "Nicht Eingriffe kleinreden.",
+      "Nicht fossile Schäden unsichtbar lassen.",
+      "Nicht so argumentieren, als sei Nichtbauen automatisch Naturschutz.",
+    ],
+    frameShift: {
+      from: "Erneuerbare als Naturzerstörung",
+      to: "Vergleich realer Alternativen: naturverträglicher Ausbau versus fossile Dauerfolgen",
+    },
+    instantLine:
+      "Windkraft braucht gute Planung und Artenschutz. Aber Nichtbauen ist nicht automatisch Naturschutz, wenn fossile Schäden weiterlaufen.",
+    bridgeQuestion:
+      "Wie bauen wir erneuerbare Infrastruktur naturverträglich, statt fossile Schäden zu normalisieren?",
+    copyShort:
+      "Ja, Windkraft braucht Artenschutz und gute Planung. Der Frame kippt aber, wenn fossile Dauerfolgen unsichtbar bleiben. Entscheidend ist naturverträglicher Ausbau.",
+    copyMedium:
+      "Der Eingriff in Landschaft und Ökosysteme ist real und muss geplant werden. Der Denkfehler ist, daraus zu machen, Nichtbauen sei automatisch Naturschutz. Wirklich sauber ist der Vergleich realer Alternativen: naturverträglicher Ausbau versus fossile Dauerfolgen.",
+  },
+};
+
+function firstSentence(value) {
+  const text = cleanText(value).replace(/^„|“$/g, "");
+  const match = text.match(/^(.+?[.!?])(\s|$)/);
+  return cleanText(match ? match[1] : text);
+}
+
+function limitChars(value, max = 280) {
+  const text = cleanText(value);
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  return `${cut.slice(0, Math.max(0, cut.lastIndexOf(" ")))}…`;
+}
+
+function abstractFrame(value, fallback) {
+  const text = cleanText(value || fallback);
+  if (!text) return "verkürzter Problemrahmen";
+  return text
+    .replace(/^Die Aussage\s+/i, "")
+    .replace(/^Der Frame\s+/i, "")
+    .replace(/^Die Karte soll deshalb\s+/i, "")
+    .replace(/^Die Aussage wird auf den vollständigen Wirkpfad zurückgeführt:\s*/i, "")
+    .replace(/\.$/, "")
+    .slice(0, 140);
+}
+
+function questionOnly(value, fallback) {
+  const text = cleanText(value || fallback)
+    .replace(/\s*Die Karte soll deshalb[\s\S]*$/i, "")
+    .replace(/\s*Die Aussage wird auf den vollständigen Wirkpfad zurückgeführt:\s*/i, " ");
+  const match = text.match(/([^.!?]*\?)/);
+  return cleanText(match ? match[1] : text || fallback);
+}
+
+function betterToFrame(card, bridgeQuestion) {
+  const raw = cleanText(card.systemLever || card.consequences?.correction || "");
+  if (!raw || /vollständigen Wirkpfad|Die Karte soll deshalb/i.test(raw)) {
+    return bridgeQuestion;
+  }
+  return abstractFrame(raw, bridgeQuestion);
+}
+
+function inferFrameLabel(card) {
+  const text = cardTextForMigration(card).toLowerCase();
+  if (/kosten|geld|steuer|haushalt|schulden|preis/.test(text)) return "Kosten-Frame";
+  if (/prozent|anteil|zu klein|wirkungslos/.test(text)) return "Ablenkungs-Frame";
+  if (/natur|wald|vogel|landschaft|artenschutz/.test(text)) return "Naturtausch-Frame";
+  if (/freiheit|verbot|kontrolle|zensur/.test(text)) return "Freiheitsverlust-Frame";
+  if (/faul|missbrauch|schmarotz|tourismus|eingezahlt/.test(text)) return "Missbrauchs-Generalverdacht";
+  if (/technik|fusion|wasserstoff|e-fuel|aufschub/.test(text)) return "Aufschub-Frame";
+  if (/medien|wissenschaft|gekauft|lügen|luegen/.test(text)) return "Vertrauensbruch-Frame";
+  if (/identität|identitaet|tradition|gender|familie|kultur/.test(text)) return "Identitäts-Frame";
+  return "Verkürzungs-Frame";
+}
+
+function defaultDoNotDo(card) {
+  const listItems = [
+    "Nicht die Zuspitzung als Hauptdebatte übernehmen.",
+    "Nicht mit moralischer Empörung beginnen.",
+    "Nicht so antworten, als müsse nur ein einzelner Satz widerlegt werden.",
+  ];
+  if (/kosten|geld|steuer|haushalt|schulden|preis/i.test(cardTextForMigration(card))) {
+    listItems[1] = "Nicht in eine reine Kostenliste einsteigen.";
+  }
+  return listItems;
+}
+
+function normalizeReaction(card) {
+  if (reactionOverrides[card.slug]) {
+    card.reaction = { ...reactionOverrides[card.slug], reviewNeeded: false };
+    return card.reaction;
+  }
+  const existing = card.reaction?.reviewNeeded ? {} : (card.reaction || {});
+  const bridgeQuestion = questionOnly(existing.bridgeQuestion || card.betterQuestion || card.claim?.whyImportant, "Welche Wirkung entsteht - und welche bessere Frage öffnet den vollständigen Wirkungsraum?");
+  const from = cleanText(existing.frameShift?.from || abstractFrame(card.claim?.implicitMessage || card.falseJump || card.hook, "verkürzter Wirkungsrahmen"));
+  const to = cleanText(existing.frameShift?.to || betterToFrame(card, bridgeQuestion));
+  let instantLine = cleanText(existing.instantLine || card.answers?.seconds10 || card.shortJudgement || bridgeQuestion);
+  const statement = cleanText(card.claim?.statement || card.title).replace(/[„“"]/g, "");
+  if (statement && instantLine.toLowerCase().startsWith(statement.toLowerCase().slice(0, 24))) {
+    instantLine = `Der Satz ist zu eng. Entscheidend ist nicht die Zuspitzung, sondern die Wirkungsfrage: ${bridgeQuestion}`;
+  }
+  if (/^Der wahre Kern\b/i.test(instantLine)) {
+    instantLine = instantLine.replace(/^Der wahre Kern\b[^:]*:\s*/i, "Der prüfbare Punkt ist eng begrenzt: ");
+    instantLine = instantLine.replace(/^Der wahre Kern\b[^.]*\.\s*/i, "Der prüfbare Punkt ist eng begrenzt. ");
+  }
+  instantLine = limitChars(instantLine, 240);
+  const principle = cleanText(existing.principle || `Nicht im alten Frame bleiben. Auf die Wirkungsfrage verschieben: ${bridgeQuestion}`);
+  const copyShort = limitChars(existing.copyShort || `${instantLine} ${bridgeQuestion}`, 280);
+  const mediumBase = cleanText(existing.copyMedium || card.answers?.seconds30 || `${instantLine} ${card.consequences?.correction || card.systemLever || ""}`);
+  const reaction = {
+    frameLabel: cleanText(existing.frameLabel || inferFrameLabel(card)),
+    principle,
+    doNotDo: existing.doNotDo?.length ? existing.doNotDo : defaultDoNotDo(card),
+    frameShift: { from, to },
+    instantLine,
+    bridgeQuestion,
+    copyShort,
+    copyMedium: mediumBase,
+    reviewNeeded: !existing.frameLabel || !existing.principle || !existing.frameShift || !existing.instantLine || !existing.copyShort || !existing.copyMedium,
+  };
+  card.reaction = reaction;
+  return reaction;
+}
+
+function topReactionPanel(card) {
+  const reaction = normalizeReaction(card);
+  const avoid = reaction.doNotDo?.length
+    ? `<details class="source-panel"><summary>Was ich vermeiden sollte</summary>${list(reaction.doNotDo)}</details>`
+    : "";
+  return `<section class="section section-soft debate-top-reaction" id="richtige-reaktion" data-top-reaction-panel>
+      <div>
+        <article class="card">
+          <p class="card-kicker">${esc(reaction.frameLabel)} · Richtige Reaktion</p>
+          <h2>${esc(reaction.principle)}</h2>
+          <p id="framewechsel"><strong>Framewechsel:</strong> Nicht: ${esc(reaction.frameShift.from)} → Sondern: ${esc(reaction.frameShift.to)}</p>
+          <div class="card-grid two">
+            <article class="card"><p class="card-kicker" id="sprechssatz">Sprechsatz</p><p>${esc(reaction.instantLine)}</p><button class="copy-chip" type="button" data-copy-text='${attr(reaction.copyShort)}'>Sofortantwort kopieren</button></article>
+            <article class="card"><p class="card-kicker">Bessere Frage</p><p>${esc(reaction.bridgeQuestion)}</p><button class="copy-chip" type="button" data-copy-text='${attr(reaction.copyMedium)}'>30-Sekunden-Antwort kopieren</button></article>
+          </div>
+          ${avoid}
+        </article>
+      </div>
+    </section>`;
 }
 
 function cardTextForMigration(card) {
@@ -1236,7 +1429,7 @@ function renderCardPageV2(card, mode = "live") {
   const main = `
     <section class="hero radar-page-hero theme-hero">
       <div class="radar-hero-copy">
-        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a> / ${esc(card.category)}</nav>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/debattenkarten/">Debattenkarten</a> / ${esc(card.category)}</nav>
         <p class="hero-kicker">Debattenkarte · ${esc(card.category)}</p>
         <h1 class="hero-title">${esc(card.title)}</h1>
         <p class="hero-subtitle">${esc(card.shortJudgement)}</p>
@@ -1244,6 +1437,7 @@ function renderCardPageV2(card, mode = "live") {
         ${guardLine}
       </div>
     </section>
+    ${topReactionPanel(card)}
     ${radarNav(base)}
     ${renderToc()}
     <span id="host-cockpit" class="sr-only">Debattenhilfe</span>
@@ -1251,8 +1445,8 @@ function renderCardPageV2(card, mode = "live") {
       <div>
         <article class="v2-cockpit-shell">
           <div class="v2-cockpit-head">
-            <p class="hero-kicker">Was wird behauptet?</p>
-            <h2>${esc(card.title)}</h2>
+            <p class="hero-kicker">Einordnung des Frames</p>
+            <h2>Was wird behauptet?</h2>
           </div>
           <article class="card"><p class="card-kicker">Behauptung</p>${paragraphize(card.claim.statement)}</article>
           <article class="card"><p class="card-kicker">Implizite Botschaft</p>${paragraphize(card.claim.implicitMessage)}</article>
@@ -1297,17 +1491,18 @@ function renderCardPage(card, mode = "live") {
   const main = `
     <section class="hero radar-page-hero theme-hero">
       <div class="radar-hero-copy">
-        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a> / ${esc(card.category)}</nav>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/debattenkarten/">Debattenkarten</a> / ${esc(card.category)}</nav>
         <p class="hero-kicker">Debattenkarte · ${esc(card.category)}</p>
         <h1 class="hero-title">${esc(card.title)}</h1>
         <p class="hero-subtitle">${esc(card.shortJudgement)}</p>
         <p class="radar-status-line"><span>${esc(card.editorialStatus)}</span><span>Datenstand: ${DATA_STAND}</span></p>
       </div>
     </section>
+    ${topReactionPanel(card)}
     ${radarNav(base)}
     ${renderToc()}
     <span id="host-cockpit" class="sr-only">Debattenhilfe</span>
-    <section class="section debate-claim-section" id="behauptung"><div><article class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Was wird behauptet?</p><h2>${esc(card.title)}</h2><p class="v2-claim-line">${esc(card.hook)}</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Kurzurteil</p><h3>${esc(card.shortJudgement)}</h3></article><article class="card"><p class="card-kicker">Bessere Frage</p><h3>${esc(card.betterQuestion)}</h3></article></div></article></div></section>
+    <section class="section debate-claim-section" id="behauptung"><div><article class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Einordnung des Frames</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">${esc(card.hook)}</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Kurzurteil</p><h3>${esc(card.shortJudgement)}</h3></article><article class="card"><p class="card-kicker">Bessere Frage</p><h3>${esc(card.betterQuestion)}</h3></article></div></article></div></section>
     <span id="relevanz" class="sr-only">Warum relevant?</span>
     ${answerAccordion(card)}
     <section class="section" id="faktenkern"><div><div class="section-header"><p class="hero-kicker">Faktenkern</p><h2>Was stimmt, was fehlt?</h2></div><div class="card-grid two"><article class="card"><p class="card-kicker">Wahrer Kern</p>${paragraphize(card.trueCore)}</article><article class="card"><p class="card-kicker">Falscher Sprung</p>${paragraphize(card.falseJump)}</article></div></div></section>
@@ -1333,12 +1528,13 @@ function renderIndex(cards, mode = "live") {
   const base = mode === "live" ? "../../" : "../../";
   const clusters = [...new Set(cards.map((card) => card.category))].sort((a, b) => a.localeCompare(b, "de"));
   const cardHtml = cards.map((card) => {
+    const reaction = normalizeReaction(card);
     const wave = primaryWave(card);
     const depth = depthLabel(card);
-    return `<article class="card radar-sprint-card" data-radar-card data-topic="${attr([card.category, wave, depth].join(" "))}" data-search="${attr([card.title, card.shortJudgement, card.trueCore, card.falseJump, card.betterQuestion, card.systemLever, card.category, wave, depth].join(" "))}"><div class="radar-card-badges"><span>${esc(card.category)}</span><span>${esc(wave)}</span><span>${esc(card.editorialStatus)}</span></div><h3 class="card-title">${esc(card.title)}</h3><p class="radar-card-judgement">${esc(card.shortJudgement)}</p><p class="card-text"><strong>10 Sekunden:</strong> ${esc(card.answers.seconds10)}</p><p class="card-text"><strong>Tiefe:</strong> ${esc(depth)}</p><div class="radar-card-actions"><a class="btn btn-primary" href="${mode === "live" ? "" : "../live/"}${card.slug}/">Antwort öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(card.answers.seconds10)}'>Kurzantwort kopieren</button></div></article>`;
+    return `<article class="card radar-sprint-card" data-radar-card data-topic="${attr([card.category, wave, depth, reaction.frameLabel].join(" "))}" data-search="${attr([card.title, reaction.frameLabel, reaction.instantLine, reaction.bridgeQuestion, reaction.frameShift.from, reaction.frameShift.to, card.shortJudgement, card.trueCore, card.falseJump, card.betterQuestion, card.systemLever, card.category, wave, depth].join(" "))}"><div class="radar-card-badges"><span>${esc(card.category)}</span><span>${esc(wave)}</span><span>${esc(card.editorialStatus)}</span></div><h3 class="card-title">${esc(card.title)}</h3><p class="card-text"><strong>Richtige Reaktion:</strong> ${esc(reaction.instantLine)}</p><p class="card-text"><strong>Framewechsel:</strong> Nicht: ${esc(reaction.frameShift.from)} → Sondern: ${esc(reaction.frameShift.to)}</p><p class="card-text"><strong>Bessere Frage:</strong> ${esc(reaction.bridgeQuestion)}</p><div class="radar-card-actions"><a class="btn btn-primary" href="${mode === "live" ? "" : "../live/"}${card.slug}/">Reaktion öffnen</a><button class="copy-chip" type="button" data-copy-text='${attr(reaction.copyShort)}'>Kurzantwort kopieren</button></div></article>`;
   }).join("");
   const waveFilters = ["Aufmerksamkeit", "Emotion", "Deutung", "Resonanz", "Verschiebung"];
-  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a></nav><p class="hero-kicker">Debatten-Kompass</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten: Behauptung verstehen, Sofortantwort finden, Folgencheck, Wellenprofil, Tiefe und Wirkpfad vertiefen.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themen- und Wellenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}${waveFilters.map((wave) => `<button type="button" data-live-filter="${attr(wave)}">${esc(wave)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Behauptung verstehen. Antwort finden.</h2><p>Jede Karte folgt derselben Reihenfolge: Behauptung, Sofortantwort, Folgencheck, Wellenprofil, Tiefe, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p></div><div class="card-grid three" data-live-grid>${cardHtml}</div></div></section>`;
+  const main = `<section class="hero radar-page-hero radar-sprint-hero"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a> / <a href="${base}wirkungsradar/">Debatten-Kompass</a></nav><p class="hero-kicker">Debattenkarten</p><h1 class="hero-title">Welche Aussage willst du beantworten?</h1><p class="hero-subtitle">${cards.length} Debattenkarten: zuerst richtige Reaktion, dann Frame-Einordnung, Folgencheck, Wellenprofil, Tiefe und Quellen.</p></div></section>${radarNav(base)}<section class="section radar-live-controls radar-answer-first" data-radar-live-filter><div><label class="radar-search-field"><span>Direkt zur passenden Antwort</span><input type="search" placeholder="z. B. Migration kostet nur, Gender-Ideologie, CO₂ ist nur ein Spurengas..." data-live-query autofocus></label><div class="filter-chip-row" aria-label="Themen- und Wellenfilter"><button type="button" data-live-filter="all" aria-pressed="true">Alle Themen</button>${clusters.map((cluster) => `<button type="button" data-live-filter="${attr(cluster)}">${esc(cluster)}</button>`).join("")}${waveFilters.map((wave) => `<button type="button" data-live-filter="${attr(wave)}">${esc(wave)}</button>`).join("")}</div><p class="radar-search-status" data-live-count>${cards.length} Karten gefunden</p></div></section><section class="section" id="debattenkarten"><div><div class="section-header"><p class="hero-kicker">Antworten</p><h2>Erst reagieren. Dann verstehen.</h2><p>Jede Karte beginnt mit Framewechsel, Sprechsatz und besserer Frage. Die Originalbehauptung bleibt dokumentiert, steht aber nicht als erster Handlungsanker im Vordergrund.</p></div><div class="card-grid two" data-live-grid>${cardHtml}</div></div></section>`;
   return shell({
     title: "Debattenkarten",
     description: `${cards.length} Debattenkarten: Behauptung verstehen, Sofortantwort finden, Folgencheck und Wirkpfad vertiefen.`,
@@ -1356,7 +1552,29 @@ function renderReport(cards, routeStateBeforeWrite) {
     acc[card.category] = (acc[card.category] || 0) + 1;
     return acc;
   }, {})).sort((a, b) => a[0].localeCompare(b[0], "de"));
-  return `# Debattenkarten-Integration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Karten im Textmaster: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen angelegt: ${newCards.length}\n- Interne Quelle: \`${path.basename(MASTER_DOCX)}\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ - ${card.title}`).join("\n") || "- Keine"}\n\n## Hinweise\n\n- Öffentliche Seiten zeigen keine internen Arbeitslabels.\n- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.\n- Bestehende Routen bleiben erhalten und werden in den aktuellen Debatten-Kompass-Aufbau überführt.\n`;
+  const reviewNeeded = cards.filter((card) => normalizeReaction(card).reviewNeeded);
+  return `# Debattenkarten-Integration\n\nStand: ${DATA_STAND}\n\n## Ergebnis\n\n- Karten im Textmaster: ${cards.length}\n- Bestehende Live-Routen überschrieben/aktualisiert: ${existingLive.length}\n- Neue Live-Routen angelegt: ${newCards.length}\n- Reaction-Felder sichtbar gerendert: ${cards.length}\n- Reaction-Felder redaktionell automatisch abgeleitet / reviewNeeded: ${reviewNeeded.length}\n- Interne Quelle: \`${path.basename(MASTER_DOCX)}\`\n\n## Cluster\n\n${byCluster.map(([cluster, count]) => `- ${cluster}: ${count}`).join("\n")}\n\n## Neue Routen\n\n${newCards.map((card) => `- /wirkungsradar/live/${card.slug}/ - ${card.title}`).join("\n") || "- Keine"}\n\n## ReviewNeeded\n\n${reviewNeeded.map((card) => `- /wirkungsradar/live/${card.slug}/ - ${card.title}`).join("\n") || "- Keine"}\n\n## Hinweise\n\n- Öffentliche Seiten zeigen keine internen Arbeitslabels.\n- Quellen werden mit Belegfunktion dargestellt, nicht als bloße Linkliste.\n- Bestehende Routen bleiben erhalten und werden in den aktuellen Debatten-Kompass-Aufbau überführt.\n- Die primäre Kommunikationslogik lautet jetzt: richtig reagieren, Frame verschieben, dann analysieren.\n`;
+}
+
+function renderReactionMigrationReport(cards) {
+  const rows = cards.map((card) => {
+    const reaction = normalizeReaction(card);
+    return {
+      slug: card.slug,
+      title: card.title,
+      frameLabel: reaction.frameLabel,
+      principle: reaction.principle,
+      instantLine: reaction.instantLine,
+      bridgeQuestion: reaction.bridgeQuestion,
+      reviewNeeded: Boolean(reaction.reviewNeeded),
+    };
+  });
+  return {
+    stand: DATA_STAND,
+    total: rows.length,
+    reviewNeeded: rows.filter((row) => row.reviewNeeded).length,
+    rows,
+  };
 }
 
 function isTracked(filePath) {
@@ -1403,6 +1621,9 @@ const master = readMasterData();
 if (!Array.isArray(master.cards) || master.cards.length < 80) {
   throw new Error(`Masterquelle unvollständig: ${master.cards?.length ?? 0} Karten gefunden.`);
 }
+for (const card of master.cards) normalizeReaction(card);
+fs.mkdirSync(path.dirname(MASTER_JSON), { recursive: true });
+fs.writeFileSync(MASTER_JSON, `${JSON.stringify(master, null, 2)}\n`);
 
 const routeStateBeforeWrite = new Map(master.cards.map((card) => [
   card.slug,
@@ -1437,6 +1658,7 @@ const canonicalCards = master.cards.filter((card) => !card.redirectTarget);
 write("wirkungsradar/live/index.html", renderIndex(canonicalCards, "live"));
 write("wirkungsradar/debattenkarten/index.html", renderIndex(canonicalCards, "debattenkarten"));
 write("reports/debattenkarten-masterintegration.md", renderReport(canonicalCards, routeStateBeforeWrite));
+write("reports/debattenkarten-reaction-migration.json", JSON.stringify(renderReactionMigrationReport(canonicalCards), null, 2));
 
 const normalizedLegacyFiles = normalizeLegacyPublicLabels();
 
