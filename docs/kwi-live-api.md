@@ -4,7 +4,7 @@ Stand: 2026-06-09
 
 ## Ziel
 
-Die KWI-Demo soll jede im SDG-Portal verfügbare Kommune annehmen können. Die öffentliche Seite bleibt statisch-first, aber unbekannte Eingaben werden im Zielbetrieb serverseitig aufgelöst.
+Die KWI-Demo soll jede im SDG-Bereich verfügbare Kommune annehmen können. Die öffentliche Seite bleibt statisch-first. In der aktuellen GitHub-Pages-Beta sind nur vorbereitete Snapshots aktiv; unbekannte Eingaben werden erst nach Anbindung eines Backend- oder Serverless-Endpunkts serverseitig aufgelöst.
 
 ## Datenfluss
 

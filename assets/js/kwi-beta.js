@@ -190,6 +190,10 @@
     return ` Vorbereitete Snapshots: ${items.map((item) => item.name).join(", ")}.`;
   }
 
+  function liveUnavailableMessage(name) {
+    return `Für "${name}" gibt es in dieser öffentlichen Beta noch keinen vorbereiteten Snapshot. Die Live-Erzeugung für weitere Kommunen ist technisch vorbereitet, aber auf der statischen GitHub-Pages-Seite noch nicht aktiv. Dafür braucht es als nächsten Schritt einen Backend- oder Serverless-Endpunkt, der SDG-Bereich-Daten abruft, einen Snapshot erzeugt und zwischenspeichert.${availableSnapshotsText()}`;
+  }
+
   function clearRenderedResult() {
     state.snapshot = null;
     result.innerHTML = "";
@@ -488,6 +492,13 @@
       await selectMunicipality(state.manifest.municipalities[0]);
       return;
     }
+    if (!liveApi) {
+      clearRenderedResult();
+      hideProgress();
+      setBusy(false);
+      setStatus(liveUnavailableMessage(normalized), true);
+      return;
+    }
     clearRenderedResult();
     setBusy(true);
     showProgress(
@@ -508,9 +519,9 @@
       renderDimensionControls(snapshot);
       renderSummary(snapshot);
       renderTable(snapshot);
-      setStatus(`${snapshot.summary.indicatorCount} SDG-Indikatoren live aus dem SDG-Portal geladen. Snapshot wird im Zielbetrieb serverseitig gecacht.`);
+      setStatus(`${snapshot.summary.indicatorCount} SDG-Indikatoren live aus dem SDG-Portal geladen. Snapshot wird serverseitig gecacht.`);
     } catch (error) {
-      setStatus(`Für "${normalized}" gibt es in dieser lokalen Beta noch keinen vorbereiteten Snapshot. Im Zielbetrieb erzeugt die API daraus automatisch einen SDG-Portal-Snapshot; lokal kann er mit tools/kwi_collect.py erzeugt werden.${availableSnapshotsText()}`, true);
+      setStatus(liveUnavailableMessage(normalized), true);
     } finally {
       hideProgress();
       setBusy(false);
