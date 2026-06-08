@@ -1,21 +1,21 @@
 # Debattenkarten-Integration
 
-Stand: 2026-06-07
+Stand: 2026-06-08
 
 ## Ergebnis
 
-- Karten im Textmaster: 125
+- Karten im Textmaster: 126
 - Bestehende Live-Routen überschrieben/aktualisiert: 125
-- Neue Live-Routen angelegt: 0
-- Reaction-Felder sichtbar gerendert: 125
-- Reaction-Felder redaktionell automatisch abgeleitet / reviewNeeded: 121
+- Neue Live-Routen angelegt: 1
+- Reaction-Felder sichtbar gerendert: 126
+- Reaction-Felder redaktionell automatisch abgeleitet / reviewNeeded: 122
 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
 ## Cluster
 
 - Arbeit & Sozialstaat: 8
 - Ausland & Sicherheit: 6
-- Demokratie & Öffentlichkeit: 23
+- Demokratie & Öffentlichkeit: 24
 - Digitalisierung & KI: 8
 - Gesundheit & Pflege: 7
 - Klima & Energie: 22
@@ -32,7 +32,7 @@ Stand: 2026-06-07
 
 ## Neue Routen
 
-- Keine
+- /wirkungsradar/live/westdeutsche-keine-deutschen/ - Sind Westdeutsche keine Deutschen?
 
 ## ReviewNeeded
 
@@ -157,6 +157,7 @@ Stand: 2026-06-07
 - /wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/ - Corona-Verschwörung? War die Pandemie geplant?
 - /wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/ - Die AfD ist für den kleinen Mann da?
 - /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ - Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren
+- /wirkungsradar/live/westdeutsche-keine-deutschen/ - Sind Westdeutsche keine Deutschen?
 
 ## Hinweise
 

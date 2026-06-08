@@ -715,6 +715,391 @@ const steuerungDetails = {
   },
 };
 
+Object.assign(steuerungDetails, {
+  ueberblick: {
+    ...steuerungDetails.ueberblick,
+    plain:
+      "Stell dir ein Armaturenbrett vor. Ein normales Armaturenbrett zeigt Geschwindigkeit, Tank und Temperatur. Die Wirkungssteuerung fragt zusätzlich: Was passiert mit Menschen, Natur, Infrastruktur und Vertrauen, wenn wir so weiterfahren? Der Überblick sortiert diese Anzeigen, damit aus Wissen auch bessere Entscheidungen werden.",
+    case: {
+      title: "Aus einem Bericht wird erst Wirkung, wenn er Entscheidungen verändert.",
+      text:
+        "Ein Unternehmen kann Nachhaltigkeitsdaten sammeln, eine Kommune kann Zielwerte veröffentlichen, ein Ministerium kann Förderprogramme evaluieren. Solange daraus keine veränderte Beschaffung, kein anderer Haushalt, kein besserer Preis und keine überprüfbare Verantwortung folgt, bleibt Wirkung dekorativ. Wirkungssteuerung beginnt dort, wo Daten zurück in Regeln, Preise und Prioritäten gehen.",
+    },
+    questions: [
+      "Welche Entscheidung soll durch die Wirkungsinformation besser werden?",
+      "Welche Wirkung wird nur berichtet und welche wirklich zurückgekoppelt?",
+      "Welche Schutzlinie verhindert Personenbewertung, Scheingenauigkeit oder politische Willkür?",
+      "Wer kann die Daten, Annahmen und Gewichtungen prüfen oder widersprechen?",
+    ],
+    mpd: {
+      Mensch: "Lebensqualität, Gesundheit, Bildung, Teilhabe und Arbeit werden als reale Zustände betrachtet, nicht nur als Kennzahlen.",
+      Planet: "Klima, Wasser, Biodiversität, Ressourcen und Reparaturfähigkeit werden Teil der Entscheidungslogik.",
+      Demokratie: "Wirkung braucht Transparenz, Zuständigkeit, Rechtsweg und öffentliche Kritikfähigkeit.",
+    },
+    sources: [
+      ["Begriff: Wirkung", "begriffe/wirkung/", "Grundunterscheidung von Absicht, Output und Zustandsveränderung"],
+      ["Positive Netto-Wirkung", "begriffe/positive-netto-wirkung/", "Maßstab für bessere Wirkung über Zielkonflikte hinweg"],
+      ["Scorecards", "wirkungssteuerung/scorecards/", "praktische Übersetzung in prüfbare Kriterien"],
+      ["Bibliothek", "bibliothek/", "vertiefende Dokumente und Veröffentlichungen"],
+    ],
+  },
+  produktpreise: {
+    ...steuerungDetails.produktpreise,
+    what:
+      "Produktpreise fragt, was ein Preis zeigen müsste, wenn Schäden, Nutzen, Lieferketten, Nutzung und Entsorgung nicht ausgeblendet werden. Ein Preis bleibt ein Marktzeichen, aber er soll weniger blind sein.",
+    why:
+      "Ein Produkt kann an der Kasse günstig wirken und trotzdem teuer sein: durch schlechte Haltbarkeit, Schadstoffe, Reparaturunfähigkeit, Entsorgung, Gesundheitsfolgen oder Rohstoffrisiken. Dann zahlt jemand anderes später einen Teil der Rechnung.",
+    plain:
+      "Ein billiger Wasserkocher kostet vielleicht 12 Euro. Wenn er nach zwei Jahren kaputt ist und nicht repariert werden kann, war er im Alltag nicht unbedingt billig. Ein haltbarer Wasserkocher für 35 Euro kann über die Nutzungszeit günstiger und wirksamer sein. Produktpreise sollen solche verdeckten Rechnungen nicht perfekt, aber besser sichtbar machen.",
+    case: {
+      title: "Der Kassenpreis ist nur der Anfang der Rechnung.",
+      text:
+        "Bei Lebensmitteln, Kleidung, Elektronik oder Baustoffen entstehen Wirkungen vor dem Kauf, während der Nutzung und nach der Entsorgung. Produktpreise werden professionell, wenn sie diese Stationen nicht behaupten, sondern über Daten, Produktpass, Scorecard und Schutzlinien nachvollziehbar machen.",
+    },
+    questions: [
+      "Welche Folgekosten liegen außerhalb des heutigen Preises?",
+      "Wie lange hält das Produkt und kann es repariert oder wiederverwendet werden?",
+      "Welche Daten stammen aus Lieferkette, Nutzung und Entsorgung?",
+      "Wird der Preis sozial abgefedert, damit bessere Wirkung nicht nur Luxus wird?",
+    ],
+    mpd: {
+      Mensch: "Leistbarkeit, Gesundheit, Arbeitsbedingungen und Alltagstauglichkeit gehören in die Preisfrage.",
+      Planet: "Rohstoffe, Energie, Emissionen, Reparatur und Abfall werden entlang des Lebenswegs betrachtet.",
+      Demokratie: "Preissignale müssen begründet, prüfbar und politisch kontrollierbar bleiben.",
+    },
+    sources: [
+      ["Scorecards", "wirkungssteuerung/scorecards/", "Kriterien und Datenqualität für Produktbewertungen"],
+      ["Digitaler Produktpass", "wirkungssteuerung/digitaler-produktpass/", "Produktdaten entlang des Lebenswegs"],
+      ["Produkte & Konsum", "wirkungsfelder/produkte-konsum/", "Wirkungsfeld für Produkt- und Konsumentscheidungen"],
+      ["Apfelbeispiel", "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/", "alltagsnahes Beispiel für Produktwirkung"],
+    ],
+  },
+  wustg: {
+    ...steuerungDetails.wustg,
+    plain:
+      "Heute kann dieselbe Umsatzsteuer auf Produkte liegen, die sehr unterschiedliche Folgekosten verursachen. Das WUStG fragt: Was wäre, wenn die Steuer nicht nur den Verkaufsvorgang sieht, sondern auch die belegte Produktwirkung? Nicht als Automat, sondern als demokratisch geregeltes Pilotmodell.",
+    case: {
+      title: "Gleicher Steuersatz kann ungleiche Wirklichkeit verstecken.",
+      text:
+        "Ein reparierbares, langlebiges Produkt und ein schnell kaputtes Wegwerfprodukt können steuerlich gleich behandelt werden. Das WUStG prüft, ob Wirkungsklassen, Datenqualität und Schutzlinien eine bessere Differenzierung erlauben, ohne Menschen zu bewerten oder heimliche Straflogik einzuführen.",
+    },
+    questions: [
+      "Welche Produktgruppen eignen sich überhaupt für eine Pilotierung?",
+      "Welche Datenqualität ist nötig, bevor ein Steuersignal verändert wird?",
+      "Wie werden soziale Härten und Übergangsfristen geregelt?",
+      "Wer kontrolliert Wirkungsklassen, Rechtsweg und demokratische Zuständigkeit?",
+    ],
+    mpd: {
+      Mensch: "Alltagsprodukte müssen bezahlbar bleiben; Wirkungssignale dürfen soziale Belastung nicht verschärfen.",
+      Planet: "Ressourcen, Reparaturfähigkeit, Emissionen und Entsorgung werden steuerlich sichtbar.",
+      Demokratie: "Das WUStG braucht Gesetzesform, Transparenz, Rechtsweg und parlamentarische Kontrolle.",
+    },
+    sources: [
+      ["Technische Leitlinien WUStG", "bibliothek/technische-leitlinien-wustg/", "Leitlinien für Daten, Wirkungsklassen und Schutzregeln"],
+      ["WÖk-Leitlinien WUStG", "werkstatt/leitlinien/wustg/", "Werkstattfassung der rechtlichen und methodischen Logik"],
+      ["Referenzkapitel WUStG", "referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/", "Grundlagenkapitel zur Produktwirkungssteuer"],
+      ["Produktpreise", "wirkungssteuerung/produktpreise/", "Preissignal und ausgelagerte Folgekosten"],
+    ],
+  },
+  wstg: {
+    ...steuerungDetails.wstg,
+    plain:
+      "Ein Steuergesetz ist wie eine Spielregel für das gemeinsame Wirtschaften. Das WStG fragt nicht: Wer ist gut oder schlecht? Es fragt: Welche Regeln sorgen dafür, dass schädliche Wirkung nicht billiger bleibt als bessere Wirkung?",
+    case: {
+      title: "Wirkung braucht eine Regel, bevor sie steuern darf.",
+      text:
+        "Wenn Wirkung in Steuern einfließt, darf sie nicht aus Bauchgefühl, Marketing oder politischer Stimmung entstehen. Das WStG ist deshalb vor allem ein Schutzrahmen: Zuständigkeit, Datenqualität, Rechtsweg, Pilotierung, Widerspruch und demokratische Kontrolle müssen vor jeder Lenkung stehen.",
+    },
+    questions: [
+      "Welche Wirkung darf überhaupt steuerlich relevant werden?",
+      "Welche Institution prüft Daten und Methode, ohne Politik zu ersetzen?",
+      "Wie wird verhindert, dass aus Wirkungssteuerung Personenbewertung wird?",
+      "Welche Teile sind Gesetz, welche Verordnung, welche Pilotierung und welche Forschung?",
+    ],
+    mpd: {
+      Mensch: "Steuerung darf nicht Menschen sortieren, sondern Wirkungen von Produkten, Regeln und Organisationen prüfen.",
+      Planet: "Umweltfolgen werden rechtlich anschlussfähig, ohne fachliche Unsicherheit zu verschweigen.",
+      Demokratie: "Das Gesetz muss Macht begrenzen: Öffentlichkeit, Parlament, Gerichte und Widerspruch bleiben zentral.",
+    },
+    sources: [
+      ["WStG Oktober 2025", "bibliothek/wstg-oktober-2025/", "Gesetzesentwurf und Schutzlinien"],
+      ["Wirkungsrat", "wirkungssteuerung/wirkungsrat/", "Prüfinstanz für Datenqualität und Zielkonflikte"],
+      ["Wirkungshaushalt", "wirkungssteuerung/wirkungshaushalt/", "öffentliche Mittel und demokratische Priorisierung"],
+      ["Staat, Recht & Demokratie", "wirkungsfelder/staat-recht-demokratie/", "politische und rechtliche Anschlussfähigkeit"],
+    ],
+  },
+  westg: {
+    ...steuerungDetails.westg,
+    plain:
+      "Viele Menschen leisten etwas, das nicht sauber auf dem Lohnzettel steht: Pflege in der Familie, Nachbarschaftshilfe, Bildungsarbeit, Prävention, Integration oder das Stabilisieren eines Quartiers. Das WEStG fragt, wie solche Beiträge sichtbar werden können, ohne daraus eine moralische Punktetabelle zu machen.",
+    case: {
+      title: "Nicht jede gesellschaftliche Leistung erscheint als Erwerbseinkommen.",
+      text:
+        "Wenn Pflege, Sorgearbeit oder Prävention nicht bezahlt oder nur schlecht bezahlt werden, sieht das heutige System oft weniger Leistung, als tatsächlich entsteht. Das WEStG denkt Einkommen, Automatisierungsgewinne und gesellschaftliche Stabilisierung zusammen, bleibt aber ein Prüfmodell mit hohen Schutzanforderungen.",
+    },
+    questions: [
+      "Welche Beiträge sind messbar genug und welche dürfen nicht bürokratisiert werden?",
+      "Wie wird verhindert, dass Care-Arbeit romantisiert statt fair abgesichert wird?",
+      "Welche Finanzierung trägt das Modell und welche Zielkonflikte entstehen?",
+      "Wie bleiben Würde, Freiwilligkeit, Datenschutz und Rechtsanspruch geschützt?",
+    ],
+    mpd: {
+      Mensch: "Sorgearbeit, Prävention, Bildung und Integration werden als Lebensgrundlagen sichtbar.",
+      Planet: "Indirekt relevant, wenn nachhaltige Tätigkeiten, Reparatur, lokale Kreisläufe und Vorsorge gestärkt werden.",
+      Demokratie: "Anerkennung gesellschaftlicher Beiträge darf nicht zu Überwachung, Zwang oder Klientelpolitik werden.",
+    },
+    sources: [
+      ["Wirkungseinkommensteuergesetz WEStG", "bibliothek/wirkungseinkommensteuergesetz-westg/", "Dossier und Gesetzeslogik"],
+      ["Wirkungseinkommen", "wirkungssteuerung/wirkungseinkommen/", "konzeptionelle Grundlage"],
+      ["Arbeit & Einkommen", "wirkungsfelder/arbeit-einkommen/", "Wirkungsfeld für Arbeit, Care und Automatisierung"],
+      ["Referenzkapitel Wirkungseinkommen", "referenz/kapitel-057-wirkungseinkommen/", "Grundlagen der Einkommenslogik"],
+    ],
+  },
+  wirkungseinkommen: {
+    ...steuerungDetails.wirkungseinkommen,
+    plain:
+      "Wenn jemand ein krankes Elternteil pflegt, Jugendliche begleitet oder ein Quartier stabil hält, entsteht Wirkung. Oft erscheint sie aber nicht als normales Einkommen. Wirkungseinkommen fragt: Wie kann eine Gesellschaft solche Beiträge anerkennen, ohne Menschen in gute und schlechte Bürger:innen einzuteilen?",
+    case: {
+      title: "Wirkungseinkommen ist kein Applaus, sondern eine Finanzierungsfrage.",
+      text:
+        "Anerkennung reicht nicht, wenn Menschen durch Care, Prävention oder Gemeinwesenarbeit Zeit, Einkommen und Sicherheit verlieren. Wirkungseinkommen prüft, welche Beiträge gesellschaftlich nötig sind, wie sie finanziert werden könnten und welche Schutzlinien gegen Missbrauch nötig sind.",
+    },
+    questions: [
+      "Welche Tätigkeiten stabilisieren nachweislich Lebensbedingungen?",
+      "Wo endet Anerkennung und wo beginnt problematische Bewertung von Menschen?",
+      "Wie wird Finanzierung dauerhaft, fair und unbürokratisch organisiert?",
+      "Welche Rolle spielen Automatisierungsgewinne, Steuern und öffentliche Haushalte?",
+    ],
+    mpd: {
+      Mensch: "Care, Bildung, Gesundheit, Integration und lokale Stabilisierung werden nicht als unsichtbare Privatleistung behandelt.",
+      Planet: "Wirkungseinkommen kann Tätigkeiten stärken, die Reparatur, Vorsorge, lokale Resilienz und Ressourcenbewusstsein fördern.",
+      Demokratie: "Die Debatte wird gerechter, wenn systemrelevante Arbeit nicht nur nach Marktpreis sichtbar wird.",
+    },
+    sources: [
+      ["Für wen: Wirkungseinkommen", "fuer/wirkungseinkommen.html", "zielgruppennaher Einstieg"],
+      ["Referenzkapitel Wirkungseinkommen", "referenz/kapitel-057-wirkungseinkommen/", "Begriffs- und Systemgrundlage"],
+      ["Wirkungseinkommen-Dossier", "bibliothek/wirkungseinkommensteuergesetz-westg/", "Anschluss an Gesetzesmodell und Finanzierung"],
+      ["Arbeit & Einkommen", "wirkungsfelder/arbeit-einkommen/", "Wirkungsfeld für Arbeit und Automatisierung"],
+    ],
+  },
+  wirkungsrente: {
+    ...steuerungDetails.wirkungsrente,
+    plain:
+      "Viele Rentenbiografien erzählen nur, wie viel Erwerbslohn eingezahlt wurde. Sie erzählen weniger darüber, wer Kinder erzogen, Angehörige gepflegt, Vereine getragen, Nachbarschaften stabilisiert oder Prävention geleistet hat. Die Wirkungsrente fragt, wie solche Lebensleistung fairer sichtbar werden kann.",
+    case: {
+      title: "Lebensleistung passt nicht immer in Beitragsjahre.",
+      text:
+        "Eine Person kann jahrzehntelang arbeiten und zusätzlich pflegen. Eine andere kann wegen Sorgearbeit weniger Erwerbsjahre sammeln, aber viel gesellschaftliche Stabilität erzeugen. Die Wirkungsrente prüft, wie Rentenlogik ergänzt werden könnte, ohne Ansprüche willkürlich zu verteilen.",
+    },
+    questions: [
+      "Welche Beiträge lassen sich rechtssicher und fair anerkennen?",
+      "Wie wird verhindert, dass unbezahlte Arbeit weiter selbstverständlich ausgelagert wird?",
+      "Welche Finanzierung ist tragfähig und generationengerecht?",
+      "Wie bleiben bestehende Rentenansprüche, Rechtsweg und Gleichbehandlung geschützt?",
+    ],
+    mpd: {
+      Mensch: "Sorgearbeit, Lebensleistung und Altersabsicherung werden zusammen betrachtet.",
+      Planet: "Indirekt relevant, wenn Prävention, lokale Resilienz und Reparaturarbeit gesellschaftlich aufgewertet werden.",
+      Demokratie: "Die Anerkennung von Lebensleistung muss transparent, rechtsstaatlich und nicht klientelistisch sein.",
+    },
+    sources: [
+      ["Referenzkapitel Wirkungsrente", "referenz/kapitel-058-wirkungsrente/", "Grundlagen und Abgrenzung"],
+      ["Finanzsystem & Kapital", "wirkungsfelder/finanzsystem-kapital/", "Kapitalteilhabe und Alterssicherung"],
+      ["Wirkungseinkommen", "wirkungssteuerung/wirkungseinkommen/", "verwandte Einkommenslogik"],
+      ["Für Bürger:innen", "fuer/buergerinnen.html", "alltagsnaher Zugang"],
+    ],
+  },
+  "woek-ids": {
+    ...steuerungDetails["woek-ids"],
+    plain:
+      "Eine Bibliothek braucht Signaturen, sonst findet niemand etwas wieder. WÖk-IDs sind solche Signaturen für Wirkungsbegriffe, Indikatoren, Dokumente und Bausteine. Sie sagen nicht, ob etwas gut ist. Sie sorgen dafür, dass klar bleibt, worüber gesprochen wird.",
+    case: {
+      title: "Ohne stabile IDs entstehen Dubletten, Missverständnisse und Scheinvergleiche.",
+      text:
+        "Wenn ein Bericht von Wirkung spricht, ein Tool von Impact, ein Glossar von Netto-Wirkung und eine Scorecard von Wirkungsklasse, muss erkennbar bleiben, ob dasselbe gemeint ist. WÖk-IDs schaffen Verknüpfung, damit Daten, Quellen und Begriffe nicht auseinanderlaufen.",
+    },
+    questions: [
+      "Welche Begriffe, Dokumente oder Indikatoren brauchen eine stabile ID?",
+      "Wie werden Änderungen versioniert, ohne alte Quellen zu brechen?",
+      "Wie wird verhindert, dass IDs wie Bewertungen oder Ranglisten wirken?",
+      "Welche Verbindung besteht zu Glossar, Bibliothek, Scorecards und Produktdaten?",
+    ],
+    mpd: {
+      Mensch: "Menschen werden nicht identifiziert oder bewertet; identifiziert werden Begriffe, Dokumente, Wirkpfade und Datenobjekte.",
+      Planet: "Umwelt- und Produktdaten werden zuverlässiger verknüpfbar.",
+      Demokratie: "Transparenz steigt, weil Quellen, Begriffe und Versionen prüfbar bleiben.",
+    },
+    sources: [
+      ["WÖk-ID Register", "woek-id-register/", "öffentliche Registerstruktur"],
+      ["Arbeitsbibliothek WÖk-IDs", "werkstatt/arbeitsbibliothek/instrumente/woek-ids/", "Instrumenten- und Architekturkontext"],
+      ["Begriff: WÖk-ID", "begriffe/woek-id/", "Definition und Abgrenzung"],
+      ["Scorecards", "wirkungssteuerung/scorecards/", "praktische Nutzung in Bewertungslogik"],
+    ],
+  },
+  "csrd-esrs-gri": {
+    ...steuerungDetails["csrd-esrs-gri"],
+    plain:
+      "Reporting ist wie ein Kassenbon der Wirkung: Es zeigt, was berichtet wurde. Aber ein Kassenbon kocht kein Essen und repariert kein Produkt. CSRD, ESRS und GRI sind wichtig, wenn ihre Daten später Entscheidungen verändern: Einkauf, Finanzierung, Produktentwicklung, Risiko und Strategie.",
+    case: {
+      title: "Berichtspflicht ist noch keine Wirkungssteuerung.",
+      text:
+        "Ein Unternehmen kann formal sauber berichten und trotzdem kaum etwas an Produkten, Lieferketten oder Investitionen ändern. Wirkungsökonomie liest CSRD, ESRS und GRI als Anschlussstelle: Welche Daten werden entscheidungsfähig, welche bleiben Berichtsroutine?",
+    },
+    questions: [
+      "Welche berichteten Daten verändern tatsächlich Investitionen, Produkte oder Beschaffung?",
+      "Welche Wesentlichkeit wird gesetzt und welche Wirkung bleibt außerhalb der Berichtspflicht?",
+      "Wie gut sind Datenqualität, Vergleichbarkeit und Prüfspur?",
+      "Wo ersetzt Reporting echte Steuerung nur scheinbar?",
+    ],
+    mpd: {
+      Mensch: "Arbeitsbedingungen, Gesundheit, Teilhabe und Lieferkettenrisiken müssen aus Berichten in Entscheidungen kommen.",
+      Planet: "Klima-, Ressourcen- und Biodiversitätsdaten werden nur relevant, wenn sie Investitionen und Geschäftsmodelle verändern.",
+      Demokratie: "Berichtspflichten schaffen Transparenz, brauchen aber verständliche, prüfbare und nicht nur formale Offenlegung.",
+    },
+    sources: [
+      ["Impact Controlling", "werkzeuge/impact-controlling/", "Übergang von Reporting zu Steuerung"],
+      ["Datenqualität", "begriffe/datenqualitaet/", "Prüflogik für belastbare Wirkungsdaten"],
+      ["Konzernbeispiel CSRD Produktscorecard", "assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_0.pdf", "Beispiel für Anschluss an Produkt- und Scorecardlogik"],
+      ["Kapital, Banken und ESG", "wirkungssteuerung/kapital-banken-esg/", "Finanz- und ESG-Kontext"],
+    ],
+  },
+  "digitaler-produktpass": {
+    ...steuerungDetails["digitaler-produktpass"],
+    plain:
+      "Ein Produktpass ist wie ein besseres Etikett, das nicht beim Werbespruch endet. Er kann zeigen, woraus ein Produkt besteht, woher Materialien kommen, wie es repariert wird, welche Teile austauschbar sind und was am Ende mit ihm passiert.",
+    case: {
+      title: "Ohne Produktdaten bleibt Reparatur oft Glückssache.",
+      text:
+        "Wer ein Gerät reparieren, ein Bauteil wiederverwenden oder ein Material recyceln will, braucht Informationen. Der digitale Produktpass kann diese Informationen zugänglich machen. Wirkungsökonomisch zählt aber, ob daraus tatsächlich bessere Reparatur, Kreisläufe und Kaufentscheidungen entstehen.",
+    },
+    questions: [
+      "Welche Produktdaten sind für Nutzung, Reparatur und Recycling wirklich nötig?",
+      "Wie werden Geschäftsgeheimnisse und öffentliches Interesse austariert?",
+      "Wie wird Datenqualität geprüft und aktualisiert?",
+      "Wer profitiert: Verbraucher:innen, Reparaturbetriebe, Recycling, Behörden oder nur Plattformen?",
+    ],
+    mpd: {
+      Mensch: "Verbraucher:innen, Reparaturbetriebe und Beschäftigte bekommen bessere Information und weniger Abhängigkeit.",
+      Planet: "Materialien, Reparatur, Wiederverwendung und Recycling werden über den Lebensweg sichtbar.",
+      Demokratie: "Datenzugang und Standards müssen fair geregelt sein, damit Produktwissen nicht nur bei Herstellern bleibt.",
+    },
+    sources: [
+      ["Lieferketten", "wirkungssteuerung/lieferketten/", "Lebensweg und Materiallogik"],
+      ["Scorecards", "wirkungssteuerung/scorecards/", "Bewertung mit Produktdaten"],
+      ["Produktpreise", "wirkungssteuerung/produktpreise/", "Rückkopplung in Preissignale"],
+      ["Produkte & Konsum", "wirkungsfelder/produkte-konsum/", "Wirkungsfeld für Produkte und Nutzung"],
+    ],
+  },
+  "kapital-banken-esg": {
+    ...steuerungDetails["kapital-banken-esg"],
+    plain:
+      "Kapital ist wie Wasser in einem Bewässerungssystem. Es lässt wachsen, was Zugang bekommt. Wenn Geld nur dorthin fließt, wo kurzfristig Rendite winkt, können Schäden mitwachsen. Wenn Kapital Wirkung mitprüft, kann es Infrastruktur, Innovation und Resilienz stärken.",
+    case: {
+      title: "ESG ist ein Etikett. Wirkung ist die Rückfrage.",
+      text:
+        "Ein Fonds kann ESG-Kriterien erfüllen und trotzdem unklar lassen, welche reale Zustandsveränderung entsteht. Die Wirkungsökonomie fragt: Welche Investition senkt Risiken, stärkt Versorgung, vermeidet Schäden oder baut Zukunftsfähigkeit auf?",
+    },
+    questions: [
+      "Welche Wirkung entsteht durch das Kapital, nicht nur durch das Reporting?",
+      "Welche Risiken werden ausgelagert: Klima, Lieferkette, Demokratie, Gesundheit oder soziale Stabilität?",
+      "Wie wird Greenwashing, Impact Washing oder reine Etikettierung vermieden?",
+      "Welche Daten sind für Banken, Versicherungen, Investor:innen und Öffentlichkeit prüfbar?",
+    ],
+    mpd: {
+      Mensch: "Kapitalentscheidungen wirken auf Arbeit, Wohnen, Gesundheit, Preise und Teilhabe.",
+      Planet: "Investitionen können Transformation ermöglichen oder fossile und ressourcenintensive Pfade verlängern.",
+      Demokratie: "Finanzmacht braucht Transparenz, Regeln und Verantwortung, damit Kapital Werkzeug bleibt und nicht Kompass wird.",
+    },
+    sources: [
+      ["Finanzsystem & Kapital", "wirkungsfelder/finanzsystem-kapital/", "Wirkungsfeld für Kapitalflüsse"],
+      ["T-SROI", "werkzeuge/t-sroi/", "Transformationsrendite als Bewertungslogik"],
+      ["Risikomanagement", "wirkungssteuerung/risikomanagement/", "Risiko- und Resilienzbezug"],
+      ["Risikomanagement Detailkonzept", "assets/downloads/08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.pdf", "Vertiefung zu Finanz- und Risikologik"],
+    ],
+  },
+  risikomanagement: {
+    ...steuerungDetails.risikomanagement,
+    plain:
+      "Risiko ist nicht nur die Frage, ob ein Projekt teurer wird. Risiko ist auch: Wer wird krank? Welche Lieferkette bricht? Welche Region verliert Wasser? Welche Regel ändert sich? Welches Vertrauen geht verloren? Wirkungsrisiken sind oft die Kosten, die erst später auf der Rechnung stehen.",
+    case: {
+      title: "Ausgelagerte Schäden kommen als Risiko zurück.",
+      text:
+        "Ein Unternehmen kann heute Kosten sparen, wenn es Lieferketten, Energie, Wasser oder Arbeitsbedingungen eng kalkuliert. Später kann daraus ein Lieferstopp, ein Reputationsschaden, ein Versicherungsproblem oder ein Rechtsrisiko werden. Risikomanagement macht diese Rückkopplung früher sichtbar.",
+    },
+    questions: [
+      "Welche Schäden werden heute nicht bilanziert, können aber später zurückkehren?",
+      "Welche Annahmen gelten nur bei stabilem Klima, stabilen Lieferketten oder stabilem Vertrauen?",
+      "Welche Risiken sind versicherbar, welche nicht?",
+      "Wie werden Menschenrechte, Umwelt, Lieferketten und Demokratie als echte Risikofelder behandelt?",
+    ],
+    mpd: {
+      Mensch: "Arbeits-, Gesundheits- und Versorgungsschäden werden als reale Risiken gelesen.",
+      Planet: "Klima, Wasser, Biodiversität und Ressourcen sind keine externen Randbedingungen, sondern Risikotreiber.",
+      Demokratie: "Vertrauen, Rechtsstaatlichkeit und soziale Stabilität werden als Standort- und Systemrisiken sichtbar.",
+    },
+    sources: [
+      ["Risikomanagement Detailkonzept", "assets/downloads/08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0.pdf", "Vertiefung zu Wirkungsrisiko und Resilienz"],
+      ["Kapital, Banken und ESG", "wirkungssteuerung/kapital-banken-esg/", "Finanz- und ESG-Anschluss"],
+      ["Lieferketten", "wirkungssteuerung/lieferketten/", "Risiken entlang von Rohstoffen, Arbeit und Transport"],
+      ["Datenqualität", "begriffe/datenqualitaet/", "Datenbasis für Risikobewertung"],
+    ],
+  },
+  lieferketten: {
+    ...steuerungDetails.lieferketten,
+    plain:
+      "Ein Produkt steht im Regal, aber seine Wirkung beginnt viel früher: Rohstoff, Arbeit, Energie, Transport, Verpackung, Nutzung und Entsorgung. Lieferketten sind die unsichtbaren Wege, auf denen diese Wirkung entsteht.",
+    case: {
+      title: "Der Ladenpreis endet nicht an der Ladentür.",
+      text:
+        "Ein günstiges Produkt kann auf billiger Energie, schlechten Arbeitsbedingungen, unsicheren Rohstoffen oder langer Transportabhängigkeit beruhen. Lieferkettensteuerung fragt nicht nur, wo etwas herkommt, sondern welche Zustände auf dem Weg erzeugt oder stabilisiert werden.",
+    },
+    questions: [
+      "Welche Stufen der Lieferkette sind bekannt und welche bleiben blind?",
+      "Wo entstehen Arbeits-, Umwelt-, Rohstoff- oder Abhängigkeitsrisiken?",
+      "Welche Daten werden geprüft und welche nur von Lieferanten übernommen?",
+      "Welche Alternative wäre resilienter, reparierbarer oder fairer?",
+    ],
+    mpd: {
+      Mensch: "Arbeitsbedingungen, Gesundheit, Löhne und Sicherheit entlang der Kette werden sichtbar.",
+      Planet: "Rohstoffe, Energie, Wasser, Emissionen, Transport und Entsorgung gehören zur Bilanz.",
+      Demokratie: "Lieferketten berühren Macht, Transparenz, Rechte, Abhängigkeiten und öffentliche Beschaffung.",
+    },
+    sources: [
+      ["Lieferketten Detailkonzept", "assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_0.pdf", "Vertiefung zu Importlogik und Wirkungsvorsteuer"],
+      ["Digitaler Produktpass", "wirkungssteuerung/digitaler-produktpass/", "Daten entlang des Produktlebenswegs"],
+      ["Beschaffung & Förderung", "wirkungssteuerung/beschaffung-foerderung/", "Hebel öffentlicher Nachfrage"],
+      ["Wirtschaft & Unternehmen", "wirkungsfelder/wirtschaft-unternehmen/", "unternehmerische Verantwortung und Steuerung"],
+    ],
+  },
+  "beschaffung-foerderung": {
+    ...steuerungDetails["beschaffung-foerderung"],
+    plain:
+      "Wenn eine Stadt Busse kauft, Schulen saniert oder Essen für Kantinen ausschreibt, prägt sie Märkte. Beschaffung ist deshalb nicht nur Einkauf. Sie entscheidet, welche Produkte, Anbieter und Wirkungen eine Chance bekommen.",
+    case: {
+      title: "Öffentliches Geld ist ein Marktsignal.",
+      text:
+        "Wenn der billigste Anbieter immer gewinnt, werden Haltbarkeit, Reparatur, Arbeitsbedingungen, Klima, regionale Resilienz und Folgekosten oft zu spät gesehen. Gute Beschaffung macht Wirkung vorher prüfbar und setzt klare, rechtssichere Kriterien.",
+    },
+    questions: [
+      "Welche Wirkung soll mit der Beschaffung oder Förderung erreicht werden?",
+      "Welche Kriterien sind rechtssicher, überprüfbar und nicht nur Wunschliste?",
+      "Wie werden kleine Anbieter, Kommunen und Verwaltungskapazitäten berücksichtigt?",
+      "Wie wird verhindert, dass Wirkungskriterien zu Bürokratie ohne Wirkung werden?",
+    ],
+    mpd: {
+      Mensch: "Öffentliche Nachfrage kann bessere Arbeit, Gesundheit, Bildung, Teilhabe und Versorgung stärken.",
+      Planet: "Beschaffung beeinflusst Energie, Bau, Mobilität, Materialien, Kreisläufe und Klimaresilienz.",
+      Demokratie: "Vergabe und Förderung brauchen Transparenz, Wettbewerb, Rechtsweg und nachvollziehbare Kriterien.",
+    },
+    sources: [
+      ["Wirkungshaushalt", "wirkungssteuerung/wirkungshaushalt/", "öffentliche Mittel und Unterlassungskosten"],
+      ["Scorecards", "wirkungssteuerung/scorecards/", "Kriterien und Prüflogik"],
+      ["Öffentliche Beschaffung", "begriffe/oeffentliche-beschaffung/", "Begriffs- und Rechtskontext"],
+      ["Produkt- und Beschaffungspiloten", "portale/transformation-uebergaenge-implementierung/produkt-und-beschaffungspiloten/", "Pilot- und Umsetzungskontext"],
+    ],
+  },
+});
+
 const steuerungSubjects = {
   ueberblick: { subject: "Der Überblick", plural: false },
   wirkungssteuer: { subject: "Die Wirkungssteuer", plural: false },
