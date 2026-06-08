@@ -13,7 +13,8 @@ Diese Liste sammelt Restpunkte, die nicht in der P0-Stabilisierung verschwinden 
    - Die 19 Bausteinseiten sind nicht mehr identische Platzhalter, brauchen aber deutlich mehr redaktionelle Tiefe.
    - Priorität: Wirkungshaushalt, Wirkungssteuer, Scorecards, Wirkungsrat, Reverse Merit Order.
    - Erledigt im P1-Start: Hub in 6 Cluster gruppiert: Preise & Steuern, Einkommen & Rente, Staat & Governance, Kapital & Märkte, Produkte & Lieferketten, Architektur & Prinzipien.
-   - Offen: die fünf priorisierten Bausteinseiten fachlich vertiefen und mit Bibliothek, Wirkungsfeldern und Beispielen stärker verknüpfen.
+   - Erledigt im P1-Schritt: die fünf priorisierten Bausteinseiten enthalten konkrete Prüfpunkte, berechtigte Kritikfragen, Mensch-Planet-Demokratie-Bilanzgrenzen und Quellen-/Anschlusslinks.
+   - Offen: die restlichen 14 Bausteinseiten nach demselben Muster redaktionell vertiefen.
 
 2. Werkzeuge und Tools schärfen
    - Tool-Finder mit Nutzerfragen weiter nach oben.

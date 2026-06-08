@@ -273,9 +273,11 @@ const steuerungDetails = {
     type: "Konzept / Kernbaustein",
     cluster: "Preise & Steuern",
     what:
-      "Die Wirkungssteuer beschreibt die Idee, steuerliche Belastung nicht nur an Geldflüssen, sondern an bewerteter Wirkung auszurichten. Schädliche Wirkung darf nicht dauerhaft billiger sein als bessere Alternativen.",
+      "Die Wirkungssteuer beschreibt eine einfache Grundidee: Wenn eine Entscheidung Schäden verursacht, sollen diese Schäden nicht unsichtbar bleiben. Gute Wirkung soll sich eher lohnen, schlechte Wirkung soll nicht dauerhaft einen Preisvorteil haben.",
     why:
-      "Viele Märkte belohnen niedrige Preise, auch wenn Kosten auf Gesundheit, Klima, Infrastruktur oder Demokratie verschoben werden. Eine Wirkungssteuer macht diese ausgelagerten Folgen entscheidungsrelevant.",
+      "Viele Preise wirken niedrig, weil ein Teil der Rechnung woanders bezahlt wird: durch Krankheit, Klimaschäden, kaputte Infrastruktur, schlechte Arbeitsbedingungen oder spätere Sanierungskosten. Eine Wirkungssteuer macht diese verschobene Rechnung sichtbar.",
+    plain:
+      "Stell dir zwei Produkte vor. Beide kosten an der Kasse gleich viel. Das eine hält lange, lässt sich reparieren und wurde sauber hergestellt. Das andere ist billig, geht schnell kaputt und hinterlässt Entsorgungskosten. Heute behandelt der Preis beide oft fast gleich. Die Wirkungssteuer fragt: Warum soll das schlechtere Produkt dauerhaft den besseren Start haben?",
     how: [
       "Produkte, Leistungen oder Tätigkeiten werden über Wirkungsklassen eingeordnet.",
       "Schutzlinien verhindern Personenbewertung und automatische Sanktionen.",
@@ -285,6 +287,28 @@ const steuerungDetails = {
       ["Produktpreise", "wirkungssteuerung/produktpreise/"],
       ["Wirkungsumsatzsteuergesetz", "wirkungssteuerung/wustg/"],
       ["Reverse Merit Order", "wirkungssteuerung/reverse-merit-order/"],
+    ],
+    case: {
+      title: "Ein niedriger Preis ist noch kein guter Preis.",
+      text:
+        "Wenn ein Produkt billig wirkt, weil Klima-, Gesundheits-, Entsorgungs- oder Infrastrukturkosten ausgelagert werden, ist der Preis unvollständig. Die Wirkungssteuer fragt nicht, ob ein Produkt moralisch gut oder schlecht ist. Sie fragt, ob das Preissignal die reale Netto-Wirkung besser abbildet.",
+    },
+    questions: [
+      "Welche Wirkung wird konkret belegt und welche nur behauptet?",
+      "Welche Alternativen sind verfügbar, bezahlbar und wirksam?",
+      "Wer legt die Wirkungsklassen demokratisch fest und wie kann die Einordnung angefochten werden?",
+      "Wie werden soziale Härten, Übergangsfristen und Datengrenzen berücksichtigt?",
+    ],
+    mpd: {
+      Mensch: "Gesundheit, Arbeitsbedingungen, Leistbarkeit und Verteilung dürfen nicht als Nebensache im Preis verschwinden.",
+      Planet: "Emissionen, Ressourcenverbrauch, Reparierbarkeit und Entsorgung werden als reale Folgewirkung betrachtet.",
+      Demokratie: "Steuerliche Lenkung braucht Rechtsweg, Transparenz, parlamentarische Zuständigkeit und Schutz vor Personenbewertung.",
+    },
+    sources: [
+      ["Technische Leitlinien WUStG", "bibliothek/technische-leitlinien-wustg/", "Anschluss an Wirkungsklassen, Schutzlinien und Pilotlogik"],
+      ["WStG Oktober 2025", "bibliothek/wstg-oktober-2025/", "rechtlicher Rahmen und demokratische Zuständigkeit"],
+      ["Produktpreise", "wirkungssteuerung/produktpreise/", "Preislogik und ausgelagerte Folgekosten"],
+      ["Begriff: Wirkungssteuer", "begriffe/wirkungssteuer/", "Definition und Begriffsabgrenzung"],
     ],
   },
   produktpreise: {
@@ -399,9 +423,11 @@ const steuerungDetails = {
     type: "Konzept / Kernbaustein",
     cluster: "Staat & Governance",
     what:
-      "Der Wirkungshaushalt ordnet öffentliche Mittel danach, welche Zustandsveränderungen sie ermöglichen, verhindern oder verschieben. Er ergänzt Haushaltslogik um Wirkungslogik.",
+      "Der Wirkungshaushalt fragt bei öffentlichen Ausgaben nicht nur: Was kostet das? Sondern auch: Was verändert diese Ausgabe wirklich, und was kostet es, wenn wir sie nicht machen?",
     why:
-      "Haushalte zeigen Ausgabenstellen, aber oft nicht, welche Unterlassungskosten, Präventionsgewinne oder Folgeschäden entstehen. Dadurch wirken kurzfristig billige Entscheidungen langfristig teuer.",
+      "Ein normaler Haushalt zeigt, wo Geld ausgegeben wird. Er zeigt aber oft nicht, welche Schäden entstehen, wenn notwendige Investitionen verschoben werden. Dadurch kann Sparen im Plan gut aussehen und im Leben teuer werden.",
+    plain:
+      "Eine Kommune kann sagen: Für Hitzeschutz an Schulen ist gerade kein Geld da. Im Haushalt ist das eine gesparte Ausgabe. In der Wirklichkeit können später Unterrichtsausfälle, Gesundheitsprobleme, Umbauten und Notmaßnahmen entstehen. Der Wirkungshaushalt legt diese zweite Rechnung neben die erste.",
     how: [
       "Mittel werden mit Wirkungszielen, Zielgruppen, Zeitpfad und Nebenfolgen verknüpft.",
       "Unterlassungskosten werden sichtbar: Was kostet es, nicht zu handeln?",
@@ -412,14 +438,38 @@ const steuerungDetails = {
       ["Wirkungsrat", "wirkungssteuerung/wirkungsrat/"],
       ["Wirkungssteuer", "wirkungssteuerung/wirkungssteuer/"],
     ],
+    case: {
+      title: "Eine gesparte Ausgabe kann eine teure Unterlassung sein.",
+      text:
+        "Wenn eine Kommune bei Schulsozialarbeit, Hitzeschutz, Pflegeinfrastruktur oder Wohnprävention spart, sinkt kurzfristig der Haushaltsposten. Später können höhere Gesundheits-, Reparatur-, Sicherheits- oder Integrationskosten entstehen. Der Wirkungshaushalt macht diesen Zeitpfad sichtbar, bevor aus Sparsamkeit Blindheit wird.",
+    },
+    questions: [
+      "Welche Kosten entstehen, wenn nicht gehandelt wird?",
+      "Welche Wirkung tritt kurzfristig ein und welche erst nach Jahren?",
+      "Wer profitiert, wer trägt die Last und wer wird im Haushalt unsichtbar?",
+      "Ist die Maßnahme Zuschuss, Kredit, Investition, Vorsorge oder laufender Aufwand?",
+    ],
+    mpd: {
+      Mensch: "Öffentliche Mittel werden daran gemessen, ob Lebensbedingungen, Versorgung, Bildung, Sicherheit oder Teilhabe real verbessert werden.",
+      Planet: "Prävention bei Hitze, Wasser, Fläche, Energie und Infrastruktur wird als Haushaltswirkung sichtbar.",
+      Demokratie: "Haushaltsdebatten werden nachvollziehbarer, weil Unterlassungskosten und Zielkonflikte offen gelegt werden.",
+    },
+    sources: [
+      ["Werkzeug: Wirkungshaushalt", "werkzeuge/wirkungshaushalt/", "Anwendung und Rechenlogik für öffentliche Mittel"],
+      ["Staat, Recht & Demokratie: Wirkungshaushalt", "wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/", "politische und administrative Einordnung"],
+      ["Wirkungsrat-Konzept", "bibliothek/wirkungsrat-konzept/", "Governance, Prüfung und Schutzlinien"],
+      ["Begriff: Wirkungshaushalt", "begriffe/wirkungshaushalt/", "Definition und Abgrenzung"],
+    ],
   },
   wirkungsrat: {
     type: "Governance-Struktur",
     cluster: "Staat & Governance",
     what:
-      "Der Wirkungsrat ist eine mögliche Prüf- und Schutzarchitektur für Wirkungspolitik. Er soll Qualität, Transparenz, Datenbasis, Schutzlinien und demokratische Anschlussfähigkeit stärken.",
+      "Der Wirkungsrat ist als Prüfinstanz gedacht. Er soll nicht entscheiden, was politisch richtig ist. Er soll prüfen, ob Wirkungsdaten, Methoden, Schutzlinien und Zielkonflikte sauber offengelegt sind.",
     why:
-      "Wenn Wirkung in Preise, Förderung, Haushalte oder Regulierung einfließt, braucht es Kontrolle. Sonst entstehen Scheingenauigkeit, Lobbyverzerrung oder technokratische Übergriffigkeit.",
+      "Sobald Wirkung in Steuern, Förderung, Beschaffung oder Haushalte einfließt, werden Zahlen mächtig. Dann reicht es nicht, eine schöne Kennzahl zu haben. Es muss prüfbar sein, wie sie entstanden ist und wer widersprechen kann.",
+    plain:
+      "Man kann sich den Wirkungsrat wie eine unabhängige Qualitätskontrolle vorstellen. Nicht wie ein Wahrheitsministerium, sondern wie eine Stelle, die fragt: Sind die Daten offen? Ist die Methode nachvollziehbar? Gibt es Interessenkonflikte? Wurden Betroffene gehört? Am Ende entscheidet weiter die demokratische Institution.",
     how: [
       "Er prüft Methoden, Datenqualität und Zielkonflikte.",
       "Er ersetzt keine Parlamente und keine Gerichte.",
@@ -430,14 +480,38 @@ const steuerungDetails = {
       ["Scorecards", "wirkungssteuerung/scorecards/"],
       ["Demokratie", "begriffe/demokratie/"],
     ],
+    case: {
+      title: "Wirkungsdaten brauchen Widerspruch, nicht Autoritätsglanz.",
+      text:
+        "Sobald Wirkungsklassen in Förderung, Steuern, Beschaffung oder Haushalte einfließen, entscheidet die Methode mit. Der Wirkungsrat soll deshalb nicht politisch entscheiden, sondern Qualität, Datenbasis, Zielkonflikte und Schutzlinien prüfbar machen.",
+    },
+    questions: [
+      "Welches Mandat hat der Wirkungsrat und wo endet es?",
+      "Wie werden Interessenkonflikte, Lobbydruck und Methodenstreit sichtbar gemacht?",
+      "Welche Daten, Modelle und Gewichtungen werden veröffentlicht?",
+      "Wie bleiben Parlament, Verwaltung, Gerichte und Öffentlichkeit zuständig?",
+    ],
+    mpd: {
+      Mensch: "Betroffene Gruppen müssen sichtbar sein, ohne zu Bewertungsobjekten eines Scores zu werden.",
+      Planet: "Langfristige und irreversible Schäden brauchen fachliche Prüfung, nicht nur kurzfristige Mehrheitslogik.",
+      Demokratie: "Der Wirkungsrat stärkt demokratische Entscheidung nur, wenn er Transparenz, Anfechtbarkeit und Rechtsweg verbessert.",
+    },
+    sources: [
+      ["Wirkungsrat-Konzept", "bibliothek/wirkungsrat-konzept/", "Grundmodell, Mandat und Schutzarchitektur"],
+      ["Werkzeug: Wirkungsrat", "werkzeuge/wirkungsrat/", "operative Einordnung und Anwendungslogik"],
+      ["Wirkungsrat Governance", "wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/", "politische Anschlussfähigkeit"],
+      ["Begriff: Wirkungsrat", "begriffe/wirkungsrat/", "Definition und Abgrenzung"],
+    ],
   },
   scorecards: {
     type: "Methode",
     cluster: "Produkte & Lieferketten",
     what:
-      "Scorecards übersetzen komplexe Wirkung in prüfbare Kriterien, Klassen und Hinweise. Sie machen sichtbar, was sonst in Berichten, Einzelfakten oder Bauchgefühl verschwindet.",
+      "Scorecards machen Wirkung vergleichbarer, ohne sie auf eine einzige Scheingenauigkeit zu reduzieren. Sie zeigen Kriterien, Datenqualität, rote Linien und offenen Prüfbedarf.",
     why:
-      "Ohne strukturierte Bewertung werden Produkte, Organisationen oder Maßnahmen oft nur nach Preis, Output, Image oder Reichweite verglichen. Wirkung bleibt dann behauptet, aber nicht vergleichbar.",
+      "Ohne Scorecard gewinnt oft das, was am billigsten, lautesten oder am besten vermarktet ist. Ob es langfristig bessere oder schlechtere Wirkung erzeugt, bleibt dann eine Behauptung.",
+    plain:
+      "Nimm ein T-Shirt. Ein Preis sagt dir nicht, wie lange es hält, wie es produziert wurde, ob Chemikalien eingesetzt wurden, ob Reparatur möglich ist oder ob Menschen fair bezahlt wurden. Eine Scorecard legt diese Prüfpunkte nebeneinander. Sie sagt nicht: Dieses Produkt ist perfekt. Sie sagt: Hier sieht man genauer hin.",
     how: [
       "Kriterien werden nach Wirkpfad, Datenqualität und Zielkonflikten geordnet.",
       "Scorecards zeigen Richtung und Prüfbedarf, nicht absolute Wahrheit.",
@@ -447,6 +521,28 @@ const steuerungDetails = {
       ["WÖk-IDs", "wirkungssteuerung/woek-ids/"],
       ["Digitaler Produktpass", "wirkungssteuerung/digitaler-produktpass/"],
       ["Impact Controlling", "werkzeuge/impact-controlling/"],
+    ],
+    case: {
+      title: "Eine Scorecard ist eine Prüflandkarte, kein Endurteil.",
+      text:
+        "Ein T-Shirt, ein Lebensmittel, ein Mobilitätsprodukt oder ein kommunales Projekt kann nicht seriös über einen Einzelwert verstanden werden. Scorecards ordnen Kriterien, Datenqualität, Zielkonflikte und Schutzlinien. Sie zeigen, wo eine Entscheidung besser begründet ist und wo noch Unsicherheit bleibt.",
+    },
+    questions: [
+      "Welche Indikatoren werden genutzt und warum fehlen andere?",
+      "Welche Gewichtung ist fachlich, politisch oder normativ gesetzt?",
+      "Welche roten Linien dürfen nicht durch Pluspunkte kompensiert werden?",
+      "Wie oft werden Daten, Quellen und Bewertung aktualisiert?",
+    ],
+    mpd: {
+      Mensch: "Arbeitsbedingungen, Gesundheit, Leistbarkeit, Teilhabe und Nutzung werden nicht hinter Preis oder Image versteckt.",
+      Planet: "Rohstoffe, Emissionen, Reparatur, Nutzung und Entsorgung werden entlang des Lebenswegs geprüft.",
+      Demokratie: "Scorecards müssen nachvollziehbar und kritisierbar bleiben, sonst werden sie zu scheinobjektiven Blackboxes.",
+    },
+    sources: [
+      ["Werkzeug: Scorecards", "werkzeuge/scorecards/", "Anwendung und Bewertungslogik"],
+      ["Dossier: Scorecards", "werkzeuge/impact-controlling/dossiers/scorecards/", "Vertiefung im Impact Controlling"],
+      ["Produktscorecards", "wirkungsfelder/produkte-konsum/detailkonzepte/produktscorecards/", "Produkt- und Konsumkontext"],
+      ["Begriff: Scorecards", "begriffe/scorecards/", "Definition und Abgrenzung"],
     ],
   },
   "woek-ids": {
@@ -471,9 +567,11 @@ const steuerungDetails = {
     type: "Prinzip",
     cluster: "Architektur & Prinzipien",
     what:
-      "Die Reverse Merit Order beschreibt eine Schutzlogik: Schwere Schäden dürfen nicht durch kleine Vorteile schön gerechnet werden. Erst werden rote Linien geprüft, dann Nutzen bewertet.",
+      "Die Reverse Merit Order ist eine Schutzlogik. Sie sagt: Bevor man Vorteile zusammenrechnet, muss zuerst geprüft werden, ob schwere Schäden oder rote Linien berührt sind.",
     why:
-      "Viele Bewertungen aggregieren positive und negative Effekte zu einem Gesamtwert. Dadurch können irreversible Schäden, Grundrechtsprobleme oder hohe Demokratierisiken verdeckt werden.",
+      "Viele Bewertungen machen aus Plus und Minus am Ende eine Zahl. Das kann gefährlich sein, wenn ein kleiner Nutzen einen schweren Schaden scheinbar ausgleicht. Manche Schäden dürfen nicht einfach verrechnet werden.",
+    plain:
+      "Ein Projekt kann Arbeitsplätze schaffen und trotzdem ein Grundwassergebiet dauerhaft schädigen. Dann reicht es nicht zu sagen: Die Pluspunkte überwiegen. Die Reverse Merit Order fragt zuerst: Gibt es eine rote Linie? Erst wenn diese Frage sauber beantwortet ist, wird Nutzen abgewogen.",
     how: [
       "Zuerst werden Ausschluss- und Schutzkriterien geprüft.",
       "Danach werden Nutzen, Alternativen und Zielkonflikte bewertet.",
@@ -483,6 +581,28 @@ const steuerungDetails = {
       ["Wirkungsbewertung", "begriffe/wirkungsbewertung/"],
       ["Planetare Grenzen", "begriffe/planetare-grenzen/"],
       ["Risikomanagement", "wirkungssteuerung/risikomanagement/"],
+    ],
+    case: {
+      title: "Schwere Schäden dürfen nicht billig verrechnet werden.",
+      text:
+        "Ein Projekt kann Beschäftigung, Wachstum oder Bequemlichkeit erzeugen und trotzdem rote Linien überschreiten: irreversible Ökosystemschäden, Grundrechtsrisiken, demokratische Abhängigkeiten oder nicht rückholbare Belastungen. Die Reverse Merit Order prüft solche Grenzen zuerst, bevor Nutzen saldiert wird.",
+    },
+    questions: [
+      "Welche Schäden sind reversibel und welche nicht?",
+      "Welche Schutzgrenze wird berührt: Gesundheit, Grundrechte, Klima, Biodiversität oder Demokratie?",
+      "Gibt es eine Alternative mit ähnlichem Nutzen und geringerem Risiko?",
+      "Wer trägt das Risiko, wer profitiert und wer kann widersprechen?",
+    ],
+    mpd: {
+      Mensch: "Grundrechte, Gesundheit, Sicherheit und Teilhabe werden nicht gegen kleine Effizienzgewinne verrechnet.",
+      Planet: "Irreversible Schäden an Klima, Biodiversität, Wasser oder Ressourcen werden vor Nutzenoptimierung geprüft.",
+      Demokratie: "Machtkonzentration, Abhängigkeit, Intransparenz und fehlender Rechtsweg gelten als eigene Risikoklasse.",
+    },
+    sources: [
+      ["Werkzeug: Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Prinzip und Anwendung"],
+      ["Dossier: Reverse Merit Order", "werkzeuge/impact-controlling/dossiers/reverse-merit-order/", "Vertiefung im Impact Controlling"],
+      ["Reverse Merit Order im Produktkontext", "wirkungsfelder/produkte-konsum/detailkonzepte/reverse-merit-order/", "Anwendung auf Produkte und Lieferketten"],
+      ["Begriff: Reverse Merit Order", "begriffe/reverse-merit-order/", "Definition und Abgrenzung"],
     ],
   },
   "csrd-esrs-gri": {
@@ -1030,6 +1150,62 @@ function renderSteuerungDetail(slug, title, text) {
   const logicText =
     detail.logic ||
     `${subject} ${be} nur dann wirkungsökonomisch sinnvoll, wenn eine reale Zustandsveränderung sichtbar wird: Was löst eine Entscheidung aus, welche Wirkung kann entstehen, wie wird sie für Mensch, Planet und Demokratie bewertet und welche Rückkopplung folgt daraus?`;
+  const plainBlock = detail.plain
+    ? `<div class="card">
+            <p class="card-kicker">Einfach erklärt</p>
+            <h3 class="card-title">Woran man den Baustein im Alltag erkennt.</h3>
+            <p class="card-text">${esc(detail.plain)}</p>
+          </div>`
+    : "";
+  const caseSection = detail.case
+    ? `<section class="section">
+        <div class="card">
+          <p class="card-kicker">Konkreter Prüfpunkt</p>
+          <h2 class="card-title">${esc(detail.case.title)}</h2>
+          <p class="card-text">${esc(detail.case.text)}</p>
+        </div>
+      </section>`
+    : "";
+  const questionsSection = detail.questions?.length
+    ? `<section class="section">
+        <div class="card">
+          <p class="card-kicker">Berechtigte Kritik</p>
+          <h2 class="card-title">Was kritisch gefragt werden darf.</h2>
+          <ul class="check-list">
+            ${detail.questions.map((item) => `<li>${esc(item)}</li>`).join("\n            ")}
+          </ul>
+        </div>
+      </section>`
+    : "";
+  const mpdSection = detail.mpd
+    ? `<section class="section">
+        <div class="card">
+          <p class="card-kicker">Mensch, Planet, Demokratie</p>
+          <h2 class="card-title">Welche Bilanzgrenze geöffnet wird.</h2>
+          <ul class="check-list">
+            ${Object.entries(detail.mpd)
+              .map(([label, value]) => `<li><strong>${esc(label)}:</strong> ${esc(value)}</li>`)
+              .join("\n            ")}
+          </ul>
+        </div>
+      </section>`
+    : "";
+  const sourcesSection = detail.sources?.length
+    ? `<section class="section">
+        <div class="card">
+          <p class="card-kicker">Quellen & Anschluss</p>
+          <h2 class="card-title">${esc(subject)} mit bestehenden Inhalten verbinden.</h2>
+          <ul class="check-list">
+            ${detail.sources
+              .map(
+                ([label, href, note]) =>
+                  `<li><a class="text-link" href="${esc(relative(base, href))}">${esc(label)}</a> - ${esc(note)}</li>`
+              )
+              .join("\n            ")}
+          </ul>
+        </div>
+      </section>`
+    : "";
   return shell({
     base,
     route: `wirkungssteuerung/${slug}/`,
@@ -1050,6 +1226,7 @@ function renderSteuerungDetail(slug, title, text) {
           <h2>Was ist das?</h2>
           <p>${esc(detail.what)}</p>
         </div>
+        ${plainBlock}
         <div class="card-grid two">
           <article class="card">
             <p class="card-kicker">Ausgangspunkt</p>
@@ -1076,6 +1253,9 @@ function renderSteuerungDetail(slug, title, text) {
           </article>
         </div>
       </section>
+      ${caseSection}
+      ${questionsSection}
+      ${mpdSection}
       <section class="section">
         <div class="card">
           <p class="card-kicker">Wirkungsökonomische Logik</p>
@@ -1095,6 +1275,7 @@ function renderSteuerungDetail(slug, title, text) {
           ])}</div>
         </div>
       </section>
+      ${sourcesSection}
 `,
   });
 }
