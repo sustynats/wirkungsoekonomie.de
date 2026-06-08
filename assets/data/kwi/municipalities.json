@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "kwi-beta-manifest-0.1",
+  "generatedAt": "2026-06-08T21:37:16.520553+00:00",
+  "sources": [
+    {
+      "name": "SDG-Portal",
+      "url": "https://sdg-portal.de/de/",
+      "coverage": "Landkreise sowie Städte und Gemeinden ab 5.000 Einwohner:innen, soweit Daten vorliegen."
+    }
+  ],
+  "municipalities": [
+    {
+      "name": "Gütersloh, Stadt",
+      "slug": "gütersloh-stadt",
+      "sdgPortalId": 239252,
+      "kwiScore": 46.9,
+      "indicatorCount": 56,
+      "file": "gütersloh-stadt.json"
+    },
+    {
+      "name": "Mannheim, Universitätsstadt",
+      "slug": "mannheim-universitätsstadt",
+      "sdgPortalId": 246268,
+      "kwiScore": 43.9,
+      "indicatorCount": 56,
+      "file": "mannheim-universitätsstadt.json"
+    }
+  ]
+}

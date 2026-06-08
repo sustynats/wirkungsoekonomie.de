@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-08T22:31:01.925Z
-- Content pages scanned: 1013
-- Glossary terms indexed: 1466
-- Warnings: 619
+- Generated: 2026-06-08T23:26:59.319Z
+- Content pages scanned: 1016
+- Glossary terms indexed: 1467
+- Warnings: 618
 
 ## Stichproben
 
@@ -360,4 +360,4 @@
 - term has no content references: mobilitaetsarmut
 - term has no content references: modellblindheit
 - term has no content references: moderner-patriotismus
-- ... 319 weitere Warnungen
+- ... 318 weitere Warnungen

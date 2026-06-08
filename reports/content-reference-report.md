@@ -1,7 +1,7 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-08T22:31:03.277Z
-Resolved references: 7139
+Erzeugt: 2026-06-08T23:27:00.503Z
+Resolved references: 7144
 Warnings: 2718
 
 ## Warnungen
@@ -537,6 +537,7 @@ Warnings: 2718
 - /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#chapter-glossary-4 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/der-versoehner-und-die-wellen/ -> Der Versöhner und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/ -> Kommunaler Wirkungsindex (KWI) | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html -> Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert – sondern an seiner Logik (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html -> Wirkung schlägt Wahrheit: Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
@@ -1159,9 +1160,9 @@ Warnings: 2718
 - /blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html -> Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist (Journalartikel, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/dossiers/wohnen-als-wirkungsraum/ -> Einzeldossier Wohnen als Wirkungsraum (Whitepaper, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/detailkonzepte/wohnen-als-wirkungsraum/ -> Detailkonzept Wohnen als Wirkungsraum (Wirkungsfeld, Beschreibung: ja)
+- /bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/ -> Kommunaler Wirkungsindex (KWI) | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/dossiers/gesundes-barrierefreies-resilientes-wohnen/ -> Einzeldossier Gesundes, barrierefreies und resilientes Wohnen (Whitepaper, Beschreibung: ja)
 - /wirkungsfelder/wohnen-stadt/detailkonzepte/gesundes-barrierefreies-resilientes-wohnen/ -> Detailkonzept Gesundes, barrierefreies und resilientes Wohnen (Wirkungsfeld, Beschreibung: ja)
-- /wirkungsfelder/wohnen-stadt/detailkonzepte/ -> Detailkonzepte Wohnen & Stadt (Wirkungsfeld, Beschreibung: ja)
 - /referenz/kapitel-069-pflege/#chapter-glossary-69 -> Kapitel 69: Pflege (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/ -> Detailkonzept: Globale Resilienz und Frühwarnkooperation (Website, Beschreibung: ja)
 - /referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/#chapter-glossary-95 -> Kapitel 95: Globale Resilienz, Sicherheit und Kooperation (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1508,4 +1509,3 @@ Warnings: 2718
 - /referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/#chapter-glossary-55 -> Kapitel 55: Wachstum, Innovation und Transformation innerhalb planetarer Grenzen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-028-demokratie-als-wirkungsraum/#chapter-glossary-28 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)

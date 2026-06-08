@@ -4,10 +4,10 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 
 ## Ergebnis
 
-- HTML-Dateien geprüft: 8785
-- HTML-Dateien geändert: 366
-- blockierte Rohformat-Links gefunden: 1396
-- auf vorhandene PDF-Fassung umgelegt: 1396
+- HTML-Dateien geprüft: 4406
+- HTML-Dateien geändert: 367
+- blockierte Rohformat-Links gefunden: 1397
+- auf vorhandene PDF-Fassung umgelegt: 1397
 - ohne PDF-Fassung als "PDF-Fassung in Produktion" markiert: 0
 
 ## Regel
@@ -22,6 +22,7 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 - `erleben/automatisierungs-wirkungseinkommensrechner/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/fach-zukunft-generator/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
+- `erleben/kommunaler-wirkungsindex/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/medienwirkungscheck/index.html`: 2 Rohformat-Link(s), 2 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/wirkungsfoerderungs-check/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/wirkungsportfolio-generator/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
