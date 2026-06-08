@@ -1,20 +1,20 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-07T23:37:49.756Z
+Stand: 2026-06-08T06:07:41.789Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Wirkungsradar-Seiten gesamt | 655 |
-| Debattenseiten vereinheitlicht | 121 |
+| Wirkungsradar-Seiten gesamt | 657 |
+| Debattenseiten vereinheitlicht | 122 |
 | Qualitätsstufe A | 0 |
 | Qualitätsstufe B | 0 |
-| Qualitätsstufe C | 121 |
+| Qualitätsstufe C | 122 |
 | Qualitätsstufe D | 0 |
-| Kanonische Narrative | 122 |
+| Kanonische Narrative | 123 |
 | Dubletten / Kandidaten | 403 |
-| Zusammengeführt | 151 |
+| Zusammengeführt | 152 |
 | Synonyme | 46 |
-| Redirects | 151 |
+| Redirects | 152 |
 
 ## Seitenprüfung
 
@@ -42,6 +42,7 @@ Stand: 2026-06-07T23:37:49.756Z
 | /wirkungsradar/live/das-ist-zensur/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/datenschutz-verhindert-innovation/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/deepfakes-sind-nur-spass/ | C | ja | ja | ja | ja | nein | ja |
+| /wirkungsradar/live/deutschland-hat-keine-verfassung/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/deutschland-nur-zwei-prozent/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/deutschland-schafft-sich-ab/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/die-bauern-werden-geopfert/ | C | ja | ja | ja | ja | nein | ja |

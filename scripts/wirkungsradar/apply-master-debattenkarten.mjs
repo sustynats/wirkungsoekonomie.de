@@ -133,6 +133,16 @@ const clusterLabels = {
 
 const redirectAliasBySlug = new Map([
   ["windraeder-zerstoeren-natur", "windraeder-voegel-wald-beton-rueckbau"],
+  ["klimadiktatur", "klimaschutz-ist-oekodiktatur"],
+  ["oeffentlicher-rundfunk-staatsfunk", "oerr-oder-staatsfunk"],
+  ["sdgs-sind-weltregierung", "sdgs-weltregierung"],
+]);
+
+const redirectAliasTitleBySlug = new Map([
+  ["windraeder-zerstoeren-natur", "Windräder zerstören die Natur?"],
+  ["klimadiktatur", "Klimadiktatur / Klimaextremismus / Klimapropaganda?"],
+  ["oeffentlicher-rundfunk-staatsfunk", "Öffentlicher Rundfunk oder Staatsfunk?"],
+  ["sdgs-sind-weltregierung", "SDGs sind Weltregierung?"],
 ]);
 
 const p0RescueOverlays = {
@@ -383,6 +393,18 @@ function cleanText(value) {
     .replace(/\u2028/g, "\n")
     .replace(/[ \t]+/g, " ")
     .replace(/\bCO2\b/g, "CO₂")
+    .replace(/\bAntwort- und Lösungspfad:\s*/gi, "Lösungspfad: ")
+    .replace(/CodeX soll daraus einen Antwortblock bauen, der konkrete Schutz-, Steuerungs- und Lernarchitektur beschreibt\./gi, "Die Antwort beschreibt konkrete Schutz-, Steuerungs- und Lernarchitektur.")
+    .replace(/CodeX soll Technik nicht romantisieren\./gi, "Technik wird nicht romantisiert.")
+    .replace(/CodeX soll keine simple Pro-Schulden-Karte schreiben\./gi, "Die Einordnung ist keine pauschale Pro-Schulden-Position.")
+    .replace(/CodeX soll keine EU-Verteidigungsschrift machen\./gi, "Die Einordnung verteidigt Regulierung nicht pauschal.")
+    .replace(/CodeX soll diese Karte nicht technisch eng schreiben\./gi, "Die Karte bleibt nicht technisch eng.")
+    .replace(/CodeX soll die Karte als ([^.]+) formulieren\./gi, "Die Karte formuliert eine $1.")
+    .replace(/CodeX soll die Karte ([^.]+) schreiben\./gi, "Die Karte wird $1 formuliert.")
+    .replace(/CodeX soll ([^.]+?) erklären\./gi, "Die Karte erklärt $1.")
+    .replace(/CodeX soll ([^.]+?) schreiben\./gi, "Die Karte wird $1 formuliert.")
+    .replace(/CodeX soll differenzieren:/gi, "Die Einordnung differenziert:")
+    .replace(/CodeX soll ([^.]+)\./gi, "Die Karte setzt um: $1.")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 }
@@ -707,7 +729,7 @@ function normalizeDebateSource(source) {
   const title = directory.title || cleanPublicSourceTitle(source.title || source.id);
   const url = source.url || directory.url || "/wirkungsradar/quellen/";
   const type = directory.type || source.type || (source.id?.startsWith("I-") ? "Interne WÖk-Quelle" : "Externe Quelle");
-  const limitation = directory.limitation || "Belegt den genannten Prüfpunkt, ersetzt aber keine vollständige Wirkungsabwägung.";
+  const limitation = directory.limitation || source.limitation || "Belegt den genannten Prüfpunkt, ersetzt aber keine vollständige Wirkungsabwägung.";
   return {
     ...source,
     title,
@@ -1098,20 +1120,21 @@ function radarNav(base = "") {
 
 function renderToc() {
   const links = [
-    ["#richtige-reaktion", "Richtige Reaktion"],
-    ["#sprechssatz", "Sprechsatz"],
-    ["#framewechsel", "Framewechsel"],
-    ["#behauptung", "Einordnung des Frames"],
-    ["#sofortantwort", "10 / 30 / 2 Minuten"],
+    ["#behauptung", "Behauptung"],
+    ["#frame-erkennen", "Frame erkennen"],
+    ["#framewechsel", "Frame wechseln"],
+    ["#sofortantwort", "Sofortantwort"],
     ["#10-sekunden", "10 Sekunden"],
     ["#30-sekunden", "30 Sekunden"],
     ["#2-minuten", "2 Minuten"],
     ["#folgencheck", "Folgencheck"],
+    ["#fakten-systemgrenzencheck", "Fakten & Systemgrenzen"],
+    ["#was-wird-nicht-gesagt", "Was fehlt?"],
+    ["#bilanzgrenze", "Bilanzgrenze"],
     ["#wellenprofil", "Fünf Wellen"],
     ["#tiefe", "Tiefe"],
     ["#wirkpfad", "Wirkpfad"],
     ["#kritische-fragen", "Kritische Fragen"],
-    ["#faktenlage", "Faktenlage"],
     ["#quellen", "Quellen"],
     ["#warum-zieht-das", "Warum zieht das?"],
     ["#methodik", "Methodik"],
@@ -1131,11 +1154,33 @@ function answerAccordion(card) {
     ["10 Sekunden", "Pointierte Antwort", card.answers.seconds10],
     ["30 Sekunden", "Faktenkern und Framekorrektur", card.answers.seconds30],
     ["2 Minuten", "Systemische Antwort", card.answers.seconds120],
-  ];
+  ].map(([label, purpose, text]) => [label, purpose, cleanText(text)]);
   return `<section class="section section-soft v3-layer v3-layer-answer debate-immediate-answer" id="sofortantwort" data-debate-immediate-answer><span id="reaktion" class="sr-only">Reaktion</span><div><div class="section-header"><p class="hero-kicker">Sofortantwort</p><h2>Was antworte ich?</h2><p>Wenn du gerade in der Debatte bist. Die Sekunden sind Kommunikationsstufen, keine Stoppuhr.</p><p><a class="btn btn-secondary" href="#folgencheck">Mehr verstehen</a></p></div><div class="radar-answer-accordion host-answer-tabs">${rows.map(([label, purpose, text], index) => `<details class="radar-answer-item"${index === 0 ? " open" : ""} id="${answerId(label)}"><summary><span class="radar-answer-time">${esc(label)}</span><span class="radar-answer-label">${esc(purpose)}</span></summary>${paragraphize(text)}<button class="copy-chip" type="button" data-copy-text='${attr(text)}'>Antwort kopieren</button></details>`).join("")}</div></div></section>`;
 }
 
 const reactionOverrides = {
+  "deutschland-hat-keine-verfassung": {
+    frameLabel: "Legitimitätszweifel-Frame",
+    principle: "Nicht im Namensspiel hängen bleiben. Auf Funktion, Geltung, Grundrechte, Art. 20 und Art. 146 GG verschieben.",
+    doNotDo: [
+      "Nicht nur sagen: „Doch, haben wir.“ Das bleibt im Namensstreit hängen.",
+      "Nicht den historischen Provisoriumscharakter leugnen.",
+      "Nicht mit Spott reagieren; das stabilisiert oft Misstrauen.",
+      "Nicht in eine Paragraphenschlacht geraten, bevor der Frame verschoben ist.",
+    ],
+    frameShift: {
+      from: "Der Name „Grundgesetz“ soll fehlende Verfassungswirkung beweisen",
+      to: "Verfassung an ihrer Funktion prüfen: Grundrechte, Staatsorganisation, Bindung und Durchsetzung",
+    },
+    instantLine:
+      "Deutschland hat eine Verfassung: Sie heißt Grundgesetz. Der Name ist historisch, die Wirkung ist verfassungsrechtlich.",
+    bridgeQuestion:
+      "Welche Ordnung schützt in Deutschland Menschenwürde, Grundrechte, Demokratie, Rechtsstaat und Gewaltenteilung - und wie wird sie durchgesetzt?",
+    copyShort:
+      "Deutschland hat eine Verfassung: Sie heißt Grundgesetz. Entscheidend ist nicht der Titel, sondern die Wirkung: Grundrechte, Rechtsstaat, Demokratie und Bindung aller Staatsgewalt.",
+    copyMedium:
+      "Der wahre Kern ist historisch: 1949 sollte das Grundgesetz keine endgültige Verfassung nur für Westdeutschland sein. Heute gilt es gesamtdeutsch als Verfassungsordnung. Art. 146 macht es nicht ungültig, sondern beschreibt eine mögliche Ablösung durch eine frei beschlossene neue Verfassung.",
+  },
   "migration-kostet-nur": {
     frameLabel: "Kostenstellen-Frame",
     principle: "Nicht Menschen gegen Haushalt rechnen. Auf Integrationsqualität und Zeitpfad verschieben.",
@@ -1309,12 +1354,13 @@ function topReactionPanel(card) {
   const avoid = reaction.doNotDo?.length
     ? `<details class="source-panel"><summary>Was ich vermeiden sollte</summary>${list(reaction.doNotDo)}</details>`
     : "";
-  return `<section class="section section-soft debate-top-reaction" id="richtige-reaktion" data-top-reaction-panel>
+  return `<section class="section section-soft debate-top-reaction" id="framewechsel" data-top-reaction-panel>
       <div>
         <article class="card">
-          <p class="card-kicker">${esc(reaction.frameLabel)} · Richtige Reaktion</p>
+          <p class="card-kicker">${esc(reaction.frameLabel)} · Frame wechseln</p>
           <h2>${esc(reaction.principle)}</h2>
-          <p id="framewechsel"><strong>Framewechsel:</strong> Nicht: ${esc(reaction.frameShift.from)} → Sondern: ${esc(reaction.frameShift.to)}</p>
+          <p><strong>Nicht übernehmen:</strong> ${esc(reaction.frameShift.from)}</p>
+          <p><strong>Stattdessen öffnen:</strong> ${esc(reaction.frameShift.to)}</p>
           <div class="card-grid two">
             <article class="card"><p class="card-kicker" id="sprechssatz">Sprechsatz</p><p>${esc(reaction.instantLine)}</p><button class="copy-chip" type="button" data-copy-text='${attr(reaction.copyShort)}'>Sofortantwort kopieren</button></article>
             <article class="card"><p class="card-kicker">Bessere Frage</p><p>${esc(reaction.bridgeQuestion)}</p><button class="copy-chip" type="button" data-copy-text='${attr(reaction.copyMedium)}'>30-Sekunden-Antwort kopieren</button></article>
@@ -1323,6 +1369,23 @@ function topReactionPanel(card) {
         </article>
       </div>
     </section>`;
+}
+
+function frameRecognitionBlock(card) {
+  const reaction = normalizeReaction(card);
+  const frame = card.claim?.implicitMessage || card.falseJump || card.hook || "Die Aussage legt eine schnelle Deutung nahe.";
+  const conclusion = card.claim?.whyImportant || card.betterQuestion || "Die Debatte wird dadurch auf eine enge Schlussfolgerung geschoben.";
+  const mechanism = card.whyItWorks || card.consequences?.resonanceRoom || "Der Satz wird anschlussfähig, weil er einen wahren Kern mit einer verkürzten Gesamtdeutung verbindet.";
+  return `<section class="section debate-frame-recognition" id="frame-erkennen" data-frame-recognition-block>
+    <div>
+      <div class="section-header"><p class="hero-kicker">Frame erkennen</p><h2>Welche Schlussfolgerung soll ich übernehmen?</h2><p>Viele Debattenkarten beginnen nicht bei „wahr oder falsch“, sondern bei der Frage, welcher Deutungsrahmen gesetzt wird.</p></div>
+      <div class="card-grid three">
+        <article class="card"><p class="card-kicker">Frame</p><h3>${esc(reaction.frameLabel)}</h3>${paragraphize(frame)}</article>
+        <article class="card"><p class="card-kicker">Gewünschte Schlussfolgerung</p>${paragraphize(conclusion)}</article>
+        <article class="card"><p class="card-kicker">Warum anschlussfähig?</p>${paragraphize(mechanism)}</article>
+      </div>
+    </div>
+  </section>`;
 }
 
 function cardTextForMigration(card) {
@@ -1354,6 +1417,7 @@ function inferWaveDepth(card) {
   if (/freiheit|verbot|kontrolle|zensur/.test(text)) emotions.push("Autonomie- und Kontrollgefühl");
   if (/zugehoer|zugehör|identitaet|identität|wir gegen|die da oben/.test(text)) emotions.push("Zugehörigkeit und Identität");
   const depth = [];
+  if (/grundgesetz|verfassung|art\. 20|art\. 146|rechtsstaat/.test(text)) depth.push("Verfassungsbildung und institutionelles Vertrauen");
   if (/wohn|miete|kommun|verwaltung|infrastruktur/.test(text)) depth.push("Infrastruktur und lokale Umsetzung");
   if (/preis|kosten|schulden|steuer|kapital|rendite/.test(text)) depth.push("Anreize, Preise und Finanzierung");
   if (/plattform|medien|algorithm|reichweite|aufmerksamkeit/.test(text)) depth.push("Plattform- und Aufmerksamkeitslogik");
@@ -1385,6 +1449,138 @@ function waveDepthBlock(card) {
   ];
   return `<section class="section section-soft" id="wellenprofil" data-wave-depth-block><div><div class="section-header"><p class="hero-kicker">Fünf Wellen öffentlicher Wirkung</p><h2>Wie der Satz im öffentlichen Raum arbeiten kann.</h2><p>Das Wellenprofil ist eine strukturierende Einordnung. Es ersetzt keine Quellenprüfung und unterstellt keine Absicht.</p></div><div class="card-grid two">${waves.map(([kicker, title, text]) => `<article class="card"><p class="card-kicker">${esc(kicker)}</p><h3>${esc(title)}</h3>${paragraphize(text)}</article>`).join("")}</div></div></section>
     <section class="section" id="tiefe" data-depth-structure-block><div><div class="section-header"><p class="hero-kicker">Tiefe</p><h2>Warum konnte diese Aussage anschlussfähig werden?</h2><p>Die Tiefe fragt nach Erfahrungen, Anreizen, Infrastruktur, Plattformlogik und Systemhebeln unter der sichtbaren Debatte.</p></div><article class="card"><p><strong>Unterliegende Struktur:</strong> ${esc(profile.depth.causes.join(", "))}</p><p><strong>Bessere Systemfrage:</strong> ${esc(profile.depth.question)}</p></article></div></section>`;
+}
+
+function inferBoundaryProfile(card) {
+  const text = cardTextForMigration(card).toLowerCase();
+  const category = cleanText(`${card.category || ""} ${card.cluster || ""}`).toLowerCase();
+  const title = cleanText(`${card.title || ""} ${card.slug || ""}`).toLowerCase();
+  const isTech = /digitalisierung|ki|künstliche intelligenz|kuenstliche intelligenz|ai act|cyber|algorithm|daten|plattform|roboter|automatisierung/.test(`${category} ${title}`);
+  const isMigrationSocial = /migration|arbeit|sozialstaat|gesundheit|pflege|rente|wohnen|familie|bildung/.test(category) && !isTech;
+  const isNature = /landwirtschaft|ernährung|ernaehrung|biodivers|natur|wald|vogel|arten|ökosystem|oekosystem|boden|wasser|artenschutz/.test(`${category} ${title}`);
+  const isClimate = /klima|energie|mobilität|mobilitaet|co₂|co2|emission|fossil|strom|wärme|waerme|batterie|wind|wasserstoff|e-fuel|verkehr|auto|energiewende|energiepreis/.test(`${category} ${title}`);
+  const isLegalConstitution = /grundgesetz|verfassung|art\\. 20|art\\. 146|rechtsstaat/.test(`${category} ${title} ${text}`);
+  const isDemocracy = /demokratie|öffentlichkeit|oeffentlichkeit|rechtsstaat|recht|zensur|medien|wissenschaft|partei|sdg|weltregierung|social credit|kontrolle|verfassung|grundgesetz/.test(`${category} ${title} ${text}`);
+  const categoryIsFinance = /staat, geld|finanz|kapital|steuer/.test(category);
+  const isFinance = categoryIsFinance || (!isMigrationSocial && !isDemocracy && /finanz|geld|kosten|steuer|schulden|preis|haushalt|kredit|zuschuss|bürgschaft|buergschaft|förder|foerder|kapital|rendite|steuergeld|auslandsprojekt|peru|entwicklungshilfe|entwicklungszusammenarbeit/.test(`${category} ${title} ${text}`));
+  if (isFinance) {
+    return {
+      current: "Häufig wird Zahlung mit Wirkung verwechselt oder Kredit, Zuschuss, Bürgschaft, Investition und laufende Ausgabe vermischt.",
+      better: "Sauber ist die Finanzierungsgrenze: Wer zahlt, wer erhält, ob Rückzahlung erfolgt, welche Gegenleistung entsteht, welche Risiken abgesichert werden und welche Wirkung ohne die Ausgabe verloren ginge.",
+      check: "Bei Finanzierungsbehauptungen immer trennen: Zuschuss ist nicht Kredit, Kredit ist nicht Geschenk, Bürgschaft ist nicht Zahlung, Investition ist nicht Konsum.",
+    };
+  }
+  if (isMigrationSocial) {
+    return {
+      current: "Häufig wird nur der Anfangsaufwand, ein einzelner Haushaltsblock oder ein sichtbarer Konflikt gesehen.",
+      better: "Sauber ist die Lebenslauf- und Teilhabebilanz: Sprache, Bildung, Arbeit, Pflege, Steuern, Sozialbeiträge, Wohnen, lokale Infrastruktur, Familienleben und demokratische Zugehörigkeit.",
+      check: "Bei Zahlen immer prüfen: Zeitraum, Altersstruktur, Arbeitsmarktzugang, Verfahrensdauer, kommunale Ausstattung, Gegenfinanzierung und Kosten des Nicht-Handelns.",
+    };
+  }
+  if (isNature) {
+    return {
+      current: "Häufig wird Natur als Einzelkonflikt betrachtet: Fläche, Tierart, Projekt oder Schutzauflage.",
+      better: "Sauber ist die ökologische Wirkungsgrenze: Ökosystemleistungen, Böden, Wasser, Artenvielfalt, Klimaresilienz, Landwirtschaft, Gesundheit, regionale Wirtschaft und Wiederherstellbarkeit gemeinsam prüfen.",
+      check: "Bei Natur- und Biodiversitätsbehauptungen immer prüfen: lokale Eingriffe, langfristige Systemwirkung, Ersatzmaßnahmen, Alternativen, kumulative Schäden und die Kosten des Nicht-Schützens.",
+    };
+  }
+  if (isTech) {
+    return {
+      current: "Häufig wird Technik als einzelnes Gerät, Tool oder Innovationsversprechen behandelt.",
+      better: "Sauber ist die Technikfolgen-Grenze: Zweck, Daten, Macht, Haftung, Sicherheit, Würde, Arbeit, Abhängigkeit, Energiebedarf, Governance und Rückkopplung auf Entscheidungen.",
+      check: "Bei Technikbehauptungen immer prüfen: Wer entscheidet, wer profitiert, wer trägt Risiken, welche Daten fließen, welche Alternativen bestehen und wie Fehler korrigiert werden.",
+    };
+  }
+  if (isClimate) {
+    return {
+      current: "Häufig wird nur ein sichtbarer Ausschnitt betrachtet: direkte Emissionen, einzelne Anlagen, ein einzelnes Produkt oder ein enger Strommix-Vergleich.",
+      better: "Sauber ist die Lebenszyklus- und Systemgrenze: Herstellung, Betrieb, Strommix, Förderbedingungen, Lieferkette, Scope 1/2/3, Importanteile, Ersatz fossiler Pfade und Unterlassungskosten.",
+      check: "Bei Studien immer prüfen: Welche Annahmen gelten für Strommix, Nutzungsdauer, Produktionsenergie, Recycling, Import, technische Lernkurven und reale Alternative?",
+    };
+  }
+  if (isLegalConstitution) {
+    return {
+      current: "Häufig wird eine Namens- und Ursprungsperspektive gesetzt: Titel, Entstehung 1949 und fehlende Volksabstimmung werden betrachtet, nicht die heutige Geltung.",
+      better: "Sauber ist die Verfassungsfunktions-Grenze: Grundrechte, Staatsorganisation, Demokratieprinzip, Rechtsstaat, Vorrang vor einfachem Recht, Änderungsregeln, Bundesverfassungsgericht und gesamtdeutsche Geltung seit 1990.",
+      check: "Bei Rechtsbehauptungen prüfen: aktueller Wortlaut, heutige Geltung, Rang, Bindungswirkung, institutionelle Durchsetzung, historische Entstehung und demokratische Ablösungsmöglichkeit.",
+    };
+  }
+  if (isDemocracy) {
+    return {
+      current: "Häufig wird ein Einzelfall als Beleg für totale Steuerung, Zensur oder Systemversagen gesetzt.",
+      better: "Sauber ist die demokratische Wirkungsgrenze: Recht, Zuständigkeit, Kontrolle, Beschwerdeweg, Transparenz, Machtkonzentration, Medienlogik und Korrekturfähigkeit getrennt prüfen.",
+      check: "Bei Demokratiebehauptungen immer prüfen: Wer entscheidet tatsächlich, auf welcher Rechtsgrundlage, mit welcher Kontrolle und welcher Möglichkeit zum Widerspruch?",
+    };
+  }
+  return {
+    current: "Häufig wird ein sichtbarer Ausschnitt als ganze Wirklichkeit behandelt.",
+    better: "Sauber ist die vollständige Wirkungsgrenze: Betroffene, Zeitpfad, Alternativen, Nebenwirkungen, Rückkopplungen, Zuständigkeiten und Unterlassungskosten.",
+    check: "Bei jeder Studie und Zahl prüfen: Was wird gemessen, was nicht, welcher Zeitraum gilt und welche Alternative als Vergleich dient?",
+  };
+}
+
+function notSaidItems(card) {
+  const items = [
+    card.falseJump && `Nicht gesagt wird: ${card.falseJump}`,
+    card.systemLever && `Nicht ausreichend sichtbar ist der Systemhebel: ${card.systemLever}`,
+    card.consequences?.correction && `Nicht mitgerechnet wird die Korrekturfrage: ${card.consequences.correction}`,
+    card.betterQuestion && `Nicht gestellt wird die bessere Frage: ${card.betterQuestion}`,
+  ].filter(Boolean);
+  const profile = inferBoundaryProfile(card);
+  items.push(`Nicht geprüft ist oft die volle Bilanzgrenze: ${profile.better}`);
+  return [...new Set(items.map((item) => cleanText(item)).filter(Boolean))].slice(0, 5);
+}
+
+function factsSystemBlock(card) {
+  const profile = inferBoundaryProfile(card);
+  const isV2 = card.templateVersion === "2.0";
+  const rescue = card.p0Rescue;
+  const factCards = isV2
+    ? [
+        ["Prüfbarer Kern", card.facts || card.trueCore || "Der prüfbare Kern muss vom Frame getrennt werden.", "Der Punkt gehört in die Debatte.", "Er beweist nicht die verkürzte Gesamtdeutung."],
+        ["Falscher Sprung", card.falseJump || card.claim?.implicitMessage || "Die Schlussfolgerung ist enger als die Wirklichkeit.", "Die Grenze der Aussage.", "Er ersetzt keinen Folgencheck."],
+        ["Systemgrenzencheck", profile.check, "Welche Annahmen die Aussage tragen.", "Dass eine einzelne Zahl allein ausreicht."],
+      ]
+    : rescue?.facts?.length
+      ? rescue.facts.slice(0, 6).map((fact) => [fact.title, fact.text, fact.proves, fact.notProves])
+      : [
+          ["Prüfbarer Kern", card.trueCore || "Ein wahrer Punkt kann vorhanden sein.", "Der Punkt gehört in die Rechnung.", "Er beweist nicht die verkürzte Gesamtdeutung."],
+          ["Falscher Sprung", card.falseJump || "Die Schlussfolgerung ist zu eng.", "Die Grenze des Frames.", "Er ersetzt keine vollständige Wirkungsprüfung."],
+          ["Systemgrenzencheck", profile.check, "Welche Annahmen und Grenzen zu prüfen sind.", "Dass der sichtbare Ausschnitt die ganze Wirklichkeit ist."],
+        ];
+  const glossary = isV2 && (card.glossary || []).length ? `<p class="card-text"><strong>Verknüpfte Begriffe:</strong> ${esc(card.glossary.join(", "))}</p>` : "";
+  return `<section class="section section-soft v3-layer v3-layer-facts" id="fakten-systemgrenzencheck" data-v3-facts-layer>
+    <span id="faktenlage" class="sr-only">Faktenlage</span>
+    <div>
+      <div class="section-header"><p class="hero-kicker">Faktenlage und Systemgrenzencheck</p><h2>Was ist prüfbar - und welche Grenze hat die Aussage?</h2><p>Die Karte trennt Fakten, Annahmen, Studiengrenzen und Wirkung. Eine richtige Einzelbeobachtung ist noch keine vollständige Wirkungsrechnung.</p></div>
+      <div class="card-grid three">${factCards.map(([title, text, proves, notProves]) => `<article class="card v3-fact-card"><p class="v2-badge">Prüfpunkt</p><h3 class="card-title">${esc(title)}</h3>${paragraphize(text)}<p class="card-text"><strong>Belegt hier:</strong> ${esc(proves || "Dieser Punkt gehört in die Wirkungsrechnung.")}</p><p class="card-text"><strong>Belegt nicht:</strong> ${esc(notProves || "Er ersetzt keine vollständige Folgen- und Bilanzgrenzenprüfung.")}</p></article>`).join("")}</div>
+      <article class="card"><p class="card-kicker">Mensch, Planet, Demokratie</p><p><strong>Mensch:</strong> Wer ist konkret betroffen, geschützt oder belastet?</p><p><strong>Planet:</strong> Welche Ressourcen-, Klima- oder Naturfolgen werden einbezogen oder ausgeblendet?</p><p><strong>Demokratie:</strong> Werden Zuständigkeit, Quellen, Korrekturwege und faire Abwägung gestärkt?</p>${glossary}</article>
+    </div>
+  </section>`;
+}
+
+function notSaidBlock(card) {
+  const items = notSaidItems(card);
+  return `<section class="section" id="was-wird-nicht-gesagt" data-not-said-block><div><div class="section-header"><p class="hero-kicker">Was wird nicht gesagt?</p><h2>Welche Lücke macht den Frame stark?</h2><p>Der entscheidende Punkt liegt oft nicht in dem, was gesagt wird, sondern in dem, was als selbstverständlich weggelassen wird.</p></div><article class="card"><ul class="content-list">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></article></div></section>`;
+}
+
+function boundaryBlock(card) {
+  const profile = inferBoundaryProfile(card);
+  return `<section class="section section-soft" id="bilanzgrenze" data-boundary-block><div><div class="section-header"><p class="hero-kicker">Welche Bilanzgrenze wird gesetzt?</p><h2>Welche Rechnung wird geöffnet - und welche geschlossen?</h2></div><div class="card-grid three"><article class="card"><p class="card-kicker">Enge Grenze</p>${paragraphize(profile.current)}</article><article class="card"><p class="card-kicker">Bessere Grenze</p>${paragraphize(profile.better)}</article><article class="card"><p class="card-kicker">Studien- und Annahmencheck</p>${paragraphize(profile.check)}</article></div></div></section>`;
+}
+
+function sourcesOnlyBlock(card) {
+  if (card.templateVersion === "2.0") {
+    const sources = (card.sourceCards || []).map(normalizeDebateSource).map((source) => `<article class="card source-proof-card"><p class="card-kicker">${esc(source.type)} · ${esc(source.id)}</p><h3 class="card-title"><a class="text-link" href="${esc(source.url)}">${esc(source.title)}</a></h3><p class="card-text"><strong>Belegt hier:</strong> ${esc(source.description)}</p><p class="card-text"><strong>Grenze:</strong> ${esc(source.limitation)}</p><p class="card-text"><strong>Datenstand / Prüfung:</strong> ${esc(source.dataStatus || DATA_STAND)} · geprüft ${esc(source.lastChecked || DATA_STAND)}</p><p><a class="text-link" href="${esc(source.url)}">Quelle öffnen</a></p></article>`).join("");
+    return `<section class="section section-soft" id="quellen"><div><div class="section-header"><p class="hero-kicker">Quellen &amp; Vertiefung</p><h2>Welche Quelle belegt welchen Fakt?</h2><p>Quellen stehen am Ende. Sie belegen einzelne Fakten, nicht automatisch die gesamte Schlussfolgerung.</p></div><div class="debate-source-stack">${sources || `<article class="card"><p>Diese Karte wird redaktionell mit weiteren Primärquellen verdichtet. Der Quellenblock ersetzt keine Faktenlage.</p></article>`}</div></div></section>`;
+  }
+  const rescue = card.p0Rescue;
+  if (rescue?.sources?.length) {
+    const sources = rescue.sources.map(([title, url, proof, type]) => `<a class="card text-link-card" href="${esc(url)}"><p class="card-kicker">${esc(type || "Quelle")}</p><h3 class="card-title">${esc(title)}</h3><p class="card-text"><strong>Was belegt sie?</strong> ${esc(proof)}</p><p class="text-link">Quelle öffnen</p></a>`).join("");
+    return `<section class="section section-soft" id="quellen"><div><div class="section-header"><p class="hero-kicker">Quellen &amp; Vertiefung</p><h2>Welche Quelle belegt welchen Fakt?</h2><p>Quellen dienen der Nachvollziehbarkeit und werden nicht vor die Wirkungsprüfung gezogen.</p></div><div class="card-grid two">${sources}</div></div></section>`;
+  }
+  const hints = card.sourceHints ? list(card.sourceHints.split(/,\s*/)) : "";
+  return `<section class="section section-soft" id="quellen"><div><div class="section-header"><p class="hero-kicker">Quellen &amp; Vertiefung</p><h2>Welche Quelle belegt welchen Fakt?</h2></div><article class="card"><p>Die verfügbare Quellenbasis wird hier als Prüfspur dokumentiert. Jede externe Tatsachenbehauptung braucht eine konkrete Belegfunktion.</p>${hints}</article></div></section>`;
 }
 
 function primaryWave(card) {
@@ -1421,7 +1617,7 @@ function rescueFactsAndSources(card) {
 function renderCardPageV2(card, mode = "live") {
   const base = mode === "live" ? "../../../" : "../../../";
   const canonicalPath = `/wirkungsradar/${mode}/${card.slug}/`;
-  const pathSteps = (card.impactPathSteps || []).map((step) => `<li>${esc(step)}</li>`).join("");
+  const pathSteps = (card.impactPathSteps || []).map((step) => `<li>${esc(cleanText(step))}</li>`).join("");
   const questions = (card.criticalQuestions || []).map((question) => `<li>${esc(question)}</li>`).join("");
   const guardLine = /migration|sozial|arbeit/i.test(`${card.category} ${card.title}`)
     ? `<p class="radar-status-line"><span>Menschen sind keine Kostenstelle.</span><span>Geprüft wird der Frame, nicht Personen.</span></p>`
@@ -1437,7 +1633,6 @@ function renderCardPageV2(card, mode = "live") {
         ${guardLine}
       </div>
     </section>
-    ${topReactionPanel(card)}
     ${radarNav(base)}
     ${renderToc()}
     <span id="host-cockpit" class="sr-only">Debattenhilfe</span>
@@ -1454,6 +1649,8 @@ function renderCardPageV2(card, mode = "live") {
         </article>
       </div>
     </section>
+    ${frameRecognitionBlock(card)}
+    ${topReactionPanel(card)}
     ${answerAccordion(card)}
     <span id="relevanz" class="sr-only">Warum relevant?</span>
     <section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check>
@@ -1466,10 +1663,13 @@ function renderCardPageV2(card, mode = "live") {
         <article class="card"><p class="card-kicker">Wirkungsökonomische Korrektur</p>${paragraphize(card.consequences.correction)}</article>
       </div>
     </section>
+    ${factsSystemBlock(card)}
+    ${notSaidBlock(card)}
+    ${boundaryBlock(card)}
     ${waveDepthBlock(card)}
     <section class="section" id="wirkpfad"><span id="loesungspfad" class="sr-only">Lösungspfad</span><span id="host-antworten" class="sr-only">Antwortblock</span><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>Wie aus dem Satz Wirkung entstehen kann.</h2></div><article class="card"><ol class="content-list">${pathSteps}</ol></article></div></section>
     <section class="section section-soft" id="kritische-fragen"><div><div class="section-header"><p class="hero-kicker">Kritische Fragen</p><h2>Was berechtigt gefragt werden darf.</h2></div><article class="card"><ul class="content-list">${questions}</ul></article></div></section>
-    ${rescueFactsAndSources(card)}
+    ${sourcesOnlyBlock(card)}
     <section class="section" id="warum-zieht-das"><div><details class="source-panel"><summary>Warum zieht dieses Narrativ?</summary>${paragraphize(card.whyItWorks)}</details></div></section>
     <section class="section" id="methodik"><div><details class="source-panel"><summary>Methodik</summary>${paragraphize(card.methodology)}</details></div></section>
     <section class="section section-soft" id="verwandte-inhalte"><div><article class="card"><p class="card-kicker">Verwandte Inhalte</p>${paragraphize(card.relatedContent)}</article></div></section>
@@ -1498,21 +1698,24 @@ function renderCardPage(card, mode = "live") {
         <p class="radar-status-line"><span>${esc(card.editorialStatus)}</span><span>Datenstand: ${DATA_STAND}</span></p>
       </div>
     </section>
-    ${topReactionPanel(card)}
     ${radarNav(base)}
     ${renderToc()}
     <span id="host-cockpit" class="sr-only">Debattenhilfe</span>
     <section class="section debate-claim-section" id="behauptung"><div><article class="v2-cockpit-shell"><div class="v2-cockpit-head"><p class="hero-kicker">Einordnung des Frames</p><h2>Was wird behauptet?</h2><p class="v2-claim-line">${esc(card.hook)}</p></div><div class="card-grid two"><article class="card"><p class="card-kicker">Kurzurteil</p><h3>${esc(card.shortJudgement)}</h3></article><article class="card"><p class="card-kicker">Bessere Frage</p><h3>${esc(card.betterQuestion)}</h3></article></div></article></div></section>
+    ${frameRecognitionBlock(card)}
+    ${topReactionPanel(card)}
     <span id="relevanz" class="sr-only">Warum relevant?</span>
     ${answerAccordion(card)}
-    <section class="section" id="faktenkern"><div><div class="section-header"><p class="hero-kicker">Faktenkern</p><h2>Was stimmt, was fehlt?</h2></div><div class="card-grid two"><article class="card"><p class="card-kicker">Wahrer Kern</p>${paragraphize(card.trueCore)}</article><article class="card"><p class="card-kicker">Falscher Sprung</p>${paragraphize(card.falseJump)}</article></div></div></section>
     <section class="section section-soft" id="frameanalyse"><div><div class="section-header"><p class="hero-kicker">Frameanalyse</p><h2>Welche Geschichte wird erzählt?</h2></div><article class="card">${paragraphize(card.hook)}<p><strong>Systemischer Hebel:</strong> ${esc(card.systemLever)}</p></article></div></section>
     <section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was dieses Narrativ bewirken kann.</h2><p>Wirkungspotenzial wird nicht automatisch als eingetretene Wirkung gelesen. Entscheidend ist der konkrete Wirkpfad.</p></div><div class="card-grid three v3-consequence-orders"><article class="card v3-order-card"><p class="v2-badge">Wirkung 1. Ordnung</p><h3>Wahrnehmung</h3>${paragraphize(card.effectPath.order1)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.falseJump)}</p><p><strong>Wirkungspfad:</strong> Aufmerksamkeit verschiebt sich vom vollständigen Wirkungsraum auf den verkürzten Frame.</p><p><strong>Begründung:</strong> Diese Wirkung ist aus dem Mastertext abgeleitet, nicht aus einer generischen Karte.</p></article><article class="card v3-order-card"><p class="v2-badge">Wirkung 2. Ordnung</p><h3>Entscheidung</h3>${paragraphize(card.effectPath.order2)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.hook)}</p><p><strong>Wirkungspfad:</strong> Der Frame macht bestimmte politische Antworten plausibler und andere unsichtbarer.</p><p><strong>Begründung:</strong> Der zweite Schritt beschreibt Anschlussentscheidungen und Nebenwirkungen.</p></article><article class="card v3-order-card"><p class="v2-badge">Wirkung 3. Ordnung</p><h3>Systempfad</h3>${paragraphize(card.effectPath.order3)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> Wiederholung stabilisiert die verkürzte Deutung.</p><p><strong>Wirkungspfad:</strong> Öffentlicher Diskurs, Investitionen, Regeln und Vertrauen folgen dem falschen Problemzuschnitt.</p><p><strong>Begründung:</strong> Der Langfristpfad zeigt, was passiert, wenn der Frame Lernfähigkeit ersetzt.</p></article></div></div></section>
+    ${factsSystemBlock(card)}
+    ${notSaidBlock(card)}
+    ${boundaryBlock(card)}
     ${waveDepthBlock(card)}
     <section class="section" id="wirkpfad"><span id="loesungspfad" class="sr-only">Lösungspfad</span><span id="host-antworten" class="sr-only">Antwortblock</span><div><div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2>Mensch, Planet und Demokratie.</h2></div><article class="card">${paragraphize(card.effectPath.mpd)}<p><strong>Wirkungsökonomische Einordnung:</strong> Die Karte prüft, ob die Aussage Wahrnehmung, Entscheidung und Rückkopplung so verändert, dass positive Netto-Wirkung für Mensch, Planet und Demokratie wahrscheinlicher oder unwahrscheinlicher wird.</p></article></div></section>
     <section class="section section-soft" id="kritische-fragen"><span id="einwaende" class="sr-only">Einwände</span><div><div class="section-header"><p class="hero-kicker">Einwände und Antwortlinien</p><h2>Was berechtigt kritisch gefragt werden darf.</h2></div><div class="card-grid two">${card.objections.length ? card.objections.map((item) => `<article class="card"><p class="card-kicker">Einwand</p><h3>${esc(item.objection)}</h3>${paragraphize(item.answer)}</article>`).join("") : `<article class="card"><p>Konkrete Einwände werden redaktionell weiter ergänzt. Die bessere Prüfspur steht im Faktenkern, Wirkpfad und in den Prüfhinweisen.</p></article>`}</div></div></section>
     <section class="section" id="loesung"><div><div class="section-header"><p class="hero-kicker">Besserer Frame</p><h2>Was macht den Zustand besser?</h2></div><article class="card"><p><strong>Bessere Frage:</strong> ${esc(card.betterQuestion)}</p><p><strong>Systemischer Hebel:</strong> ${esc(card.systemLever)}</p>${card.moderation["Konkreten Hebel anbieten"] ? `<p><strong>Konkreter Hebel:</strong> ${esc(card.moderation["Konkreten Hebel anbieten"])}</p>` : ""}${card.moderation["Zum Schluss nicht demütigen. Eine gute Antwort lässt dem Gegenüber eine Brücke zurück in eine sachliche Position."] ? "" : "<p>Zum Schluss nicht demütigen. Eine gute Antwort lässt dem Gegenüber eine Brücke zurück in eine sachliche Position.</p>"}</article></div></section>
-    ${rescueFactsAndSources(card)}
+    ${sourcesOnlyBlock(card)}
     <section class="section" id="narrativ-einreichen" data-community-submission-block><div><article class="card"><p class="card-kicker">Fehlt ein Narrativ?</p><h2>Hast du eine Aussage gesehen, die geprüft werden sollte?</h2><p>Reiche sie über die Akademie-App ein. Dort kann die Redaktion die Aussage prüfen, clustern und in den Debatten-Kompass übernehmen.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></article></div></section>
   `;
   return shell({
@@ -1620,6 +1823,25 @@ function normalizeLegacyPublicLabels() {
 const master = readMasterData();
 if (!Array.isArray(master.cards) || master.cards.length < 80) {
   throw new Error(`Masterquelle unvollständig: ${master.cards?.length ?? 0} Karten gefunden.`);
+}
+for (const card of master.cards) {
+  const target = redirectAliasBySlug.get(card.slug);
+  if (target && target !== card.slug) card.redirectTarget = target;
+}
+for (const [slug, target] of redirectAliasBySlug.entries()) {
+  if (master.cards.some((card) => card.slug === slug)) continue;
+  master.cards.push({
+    number: 0,
+    title: redirectAliasTitleBySlug.get(slug) || slug,
+    originalTitle: redirectAliasTitleBySlug.get(slug) || slug,
+    slug,
+    redirectTarget: target,
+    cluster: "Alias",
+    category: "Alias",
+    editorialStatus: "Alias-Weiterleitung",
+    shortJudgement: `Weiterleitung zur kanonischen Debattenkarte ${target}.`,
+    answers: { seconds10: "", seconds30: "", seconds120: "" },
+  });
 }
 for (const card of master.cards) normalizeReaction(card);
 fs.mkdirSync(path.dirname(MASTER_JSON), { recursive: true });

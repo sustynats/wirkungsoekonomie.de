@@ -1,16 +1,16 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-07T23:37:49.288Z
+Stand: 2026-06-08T06:07:41.328Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Radar-Seiten | 655 |
-| Claim-Seiten | 274 |
-| Kanonische Narrative | 122 |
+| Radar-Seiten | 657 |
+| Claim-Seiten | 276 |
+| Kanonische Narrative | 123 |
 | Dubletten / Kandidaten | 403 |
-| Zusammengeführt | 151 |
+| Zusammengeführt | 152 |
 | Synonyme | 46 |
-| Redirects | 151 |
+| Redirects | 152 |
 
 ## Zusammenführungen
 
@@ -40,6 +40,7 @@ Stand: 2026-06-07T23:37:49.288Z
 | /wirkungsradar/detail/das-ist-zensur/ | /wirkungsradar/live/das-ist-zensur/ | Das ist Zensur |
 | /wirkungsradar/detail/datenschutz-verhindert-innovation/ | /wirkungsradar/live/datenschutz-verhindert-innovation/ | Datenschutz verhindert Innovation? |
 | /wirkungsradar/detail/deepfakes-sind-nur-spass/ | /wirkungsradar/live/deepfakes-sind-nur-spass/ | Deepfakes sind nur Spaß? |
+| /wirkungsradar/detail/deutschland-hat-keine-verfassung/ | /wirkungsradar/live/deutschland-hat-keine-verfassung/ | Deutschland hat keine Verfassung? |
 | /wirkungsradar/detail/deutschland-nur-zwei-prozent/ | /wirkungsradar/live/deutschland-nur-zwei-prozent/ | „Deutschland ist nur für 2 % verantwortlich“ |
 | /wirkungsradar/detail/deutschland-schafft-sich-ab/ | /wirkungsradar/live/deutschland-schafft-sich-ab/ | Deutschland schafft sich ab? |
 | /wirkungsradar/detail/die-bauern-werden-geopfert/ | /wirkungsradar/live/die-bauern-werden-geopfert/ | Die Bauern werden geopfert? |
@@ -123,7 +124,7 @@ Stand: 2026-06-07T23:37:49.288Z
 | /wirkungsradar/detail/resilienz-ist-autarkie/ | /wirkungsradar/live/resilienz-ist-autarkie/ | Resilienz ist Autarkie? |
 | /wirkungsradar/detail/schulden-machen-oder-sparen/ | /wirkungsradar/live/schulden-machen-oder-sparen/ | Schulden machen oder sparen? |
 | /wirkungsradar/detail/schuldenbremse-schuetzt-die-jugend/ | /wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/ | Schuldenbremse schützt die Jugend? |
-| /wirkungsradar/detail/sdgs-sind-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | Diese Aussage wurde zusammengeführt |
+| /wirkungsradar/detail/sdgs-sind-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | SDGs sind Weltregierung? |
 | /wirkungsradar/detail/sdgs-weltregierung/ | /wirkungsradar/live/sdgs-sind-weltregierung/ | „SDGs / Agenda 2030 sind Weltregierung“ |
 | /wirkungsradar/detail/sind-die-reichen-schuld/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Sind die Reichen schuld? |
 | /wirkungsradar/detail/social-media-ist-freie-oeffentlichkeit/ | /wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/ | Social Media ist freie Öffentlichkeit? |

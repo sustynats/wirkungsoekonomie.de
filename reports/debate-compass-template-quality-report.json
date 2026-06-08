@@ -1,19 +1,19 @@
 {
   "version": "20260606-nav-cache-fix",
-  "generatedAt": "2026-06-07T23:37:49.756Z",
+  "generatedAt": "2026-06-08T06:07:41.789Z",
   "rule": "Eine Aussage = eine kanonische Seite. Debattenseiten folgen dem DebateCompassPageTemplate.",
   "counts": {
-    "totalRadarPages": 655,
-    "debatePages": 121,
+    "totalRadarPages": 657,
+    "debatePages": 122,
     "A": 0,
     "B": 0,
-    "C": 121,
+    "C": 122,
     "D": 0,
-    "canonicalNarratives": 122,
+    "canonicalNarratives": 123,
     "duplicates": 403,
-    "merged": 151,
+    "merged": 152,
     "synonyms": 46,
-    "redirects": 151
+    "redirects": 152
   },
   "normalizedGeneralPages": 41,
   "inventory": [
@@ -240,6 +240,14 @@
       "tags": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/deepfakes-sind-nur-spass/"
+    },
+    {
+      "url": "/wirkungsradar/detail/deutschland-hat-keine-verfassung/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "deutschland-hat-keine-verfassung",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/deutschland-hat-keine-verfassung/"
     },
     {
       "url": "/wirkungsradar/detail/deutschland-nur-zwei-prozent/",
@@ -1714,6 +1722,14 @@
       "tags": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/deepfakes-sind-nur-spass/"
+    },
+    {
+      "url": "/wirkungsradar/live/deutschland-hat-keine-verfassung/",
+      "title": "Deutschland hat keine Verfassung?",
+      "slug": "deutschland-hat-keine-verfassung",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/deutschland-hat-keine-verfassung/"
     },
     {
       "url": "/wirkungsradar/live/deutschland-nur-zwei-prozent/",
@@ -5772,6 +5788,27 @@
       "quality": "C"
     },
     {
+      "url": "/wirkungsradar/live/deutschland-hat-keine-verfassung/",
+      "title": "Deutschland hat keine Verfassung?",
+      "slug": "deutschland-hat-keine-verfassung",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/deutschland-hat-keine-verfassung/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": false,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": false,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "C"
+    },
+    {
       "url": "/wirkungsradar/live/deutschland-nur-zwei-prozent/",
       "title": "Deutschland nur 2 %?",
       "slug": "deutschland-nur-zwei-prozent",
@@ -8073,6 +8110,15 @@
     },
     {
       "url": "/wirkungsradar/live/deepfakes-sind-nur-spass/",
+      "quality": "C",
+      "missingSources": false,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
+    },
+    {
+      "url": "/wirkungsradar/live/deutschland-hat-keine-verfassung/",
       "quality": "C",
       "missingSources": false,
       "missingOrders": false,
