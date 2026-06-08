@@ -5,8 +5,8 @@ Stand: 2026-06-07
 ## Ergebnis
 
 - Karten im Textmaster: 126
-- Bestehende Live-Routen überschrieben/aktualisiert: 125
-- Neue Live-Routen angelegt: 1
+- Bestehende Live-Routen überschrieben/aktualisiert: 126
+- Neue Live-Routen angelegt: 0
 - Reaction-Felder sichtbar gerendert: 126
 - Reaction-Felder redaktionell automatisch abgeleitet / reviewNeeded: 122
 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
@@ -32,7 +32,7 @@ Stand: 2026-06-07
 
 ## Neue Routen
 
-- /wirkungsradar/live/westdeutsche-keine-deutschen/ - Sind Westdeutsche keine Deutschen?
+- Keine
 
 ## ReviewNeeded
 

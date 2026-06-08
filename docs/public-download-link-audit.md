@@ -4,7 +4,7 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 
 ## Ergebnis
 
-- HTML-Dateien geprüft: 4402
+- HTML-Dateien geprüft: 8785
 - HTML-Dateien geändert: 366
 - blockierte Rohformat-Links gefunden: 1396
 - auf vorhandene PDF-Fassung umgelegt: 1396

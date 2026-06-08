@@ -1279,7 +1279,7 @@ function updateNavigation() {
     {
       title: "Praxis & Tools",
       items: [
-        { label: "Methodenlandkarte", href: "werkzeuge/", match: ["werkzeuge/"] },
+        { label: "Methoden & Werkzeuge", href: "werkzeuge/", match: ["werkzeuge/"] },
         { label: "Öffentlicher Wirkungsraum", href: "oeffentlicher-wirkungsraum/", match: ["oeffentlicher-wirkungsraum/"] },
         { label: "Debattenkarten", href: "wirkungsradar/debattenkarten/", match: ["wirkungsradar/debattenkarten/"] },
         { label: "Tool-Demos", href: "erleben/", match: ["erleben/"] },
@@ -1302,7 +1302,7 @@ function updateNavigation() {
         { label: "Online-Buch", href: "referenz/", match: ["referenz/"] },
         { label: "Dokumentenbibliothek", href: "bibliothek/", match: ["bibliothek/", "downloads.html", "downloads/"] },
         { label: "Quellen", href: "quellen/", match: ["quellen/"] },
-        { label: "Updates & RSS", href: "updates/", match: ["updates/"] },
+        { label: "Neu auf der Website", href: "updates/", match: ["updates/"] },
       ],
     },
   ];

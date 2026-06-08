@@ -80,6 +80,11 @@
     automatisierung: ["/erleben/automatisierungs-wirkungseinkommensrechner/", "/wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/", "/begriffe/maschinenwertschoepfungsbeitrag/"],
     bildung: ["/wirkungsfelder/bildung/", "/begriffe/wirkungskompetenz/"],
     gesundheit: ["/wirkungsfelder/gesundheit-pflege/", "/wirkungsfelder/"],
+    westdeutsche: ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
+    ostdeutschland: ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
+    "ostdeutschland deutsche": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
+    "deutsche wohnen": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
+    "nur in ostdeutschland": ["/wirkungsradar/live/westdeutsche-keine-deutschen/", "/blog/der-versoehner-und-die-wellen/index.html"],
   };
   const RECOMMENDED_QUERY_ENTRYPOINTS = {
     wirkung: {
@@ -383,6 +388,10 @@
     return String(url || "").replace(/#.*$/, "").replace(/\/index\.html$/, "/");
   }
 
+  function canonicalResultRoute(url) {
+    return normalizeRoute(url).replace(/^\/wirkungsradar\/detail\//, "/wirkungsradar/live/");
+  }
+
   function isLowValueSearchEntry(entry) {
     const route = normalizeRoute(entry.url);
     const title = normalize(entry.title);
@@ -395,7 +404,7 @@
 
   function curatedRouteBoost(entry, rawQuery) {
     const query = normalize(rawQuery);
-    const route = normalizeRoute(entry.url);
+    const route = canonicalResultRoute(entry.url);
     const routes = CURATED_QUERY_ROUTES[query] || [];
     const index = routes.indexOf(route);
     return index >= 0 ? 2000 - index * 120 : 0;
@@ -564,7 +573,9 @@
         const selected = control.value;
         const section = normalize(entry.section);
         const type = normalize(entry.type || entry.format);
+        const format = normalize(entry.format);
         const tags = normalize(asArray(entry.tags).join(" "));
+        const url = normalize(entry.url);
         if (selected === "Seiten") return type.includes("seite");
         if (selected === "Begriff") return classifyEntry(entry) === "begriffe";
         if (selected === "Werkzeug") return classifyEntry(entry) === "werkzeuge" || url.startsWith("/werkzeuge/");
@@ -652,7 +663,7 @@
   function dedupeResults(results) {
     const seen = new Set();
     return results.filter(({ entry }) => {
-      const key = normalize(entry.url || entry.title);
+      const key = canonicalResultRoute(entry.url) || normalize(entry.title);
       if (!key || seen.has(key)) return false;
       seen.add(key);
       return true;
@@ -738,9 +749,9 @@
   }
 
   function getDefaultResults() {
-    const byUrl = new Map(state.index.map((entry) => [String(entry.url || ""), entry]));
+    const byUrl = new Map(state.index.map((entry) => [canonicalResultRoute(entry.url), entry]));
     return DEFAULT_SEARCH_ENTRYPOINTS.map((item, index) => {
-      const route = normalizeRoute(item.url);
+      const route = canonicalResultRoute(item.url);
       const existing = byUrl.get(route) || byUrl.get(item.url);
       const entry = {
         ...(existing || {}),
@@ -759,6 +770,14 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  function renderTagList(tags) {
+    const list = unique(asArray(tags).map((tag) => String(tag || "").trim()).filter(Boolean)).slice(0, 6);
+    if (!list.length) return "";
+    return `<ul class="search-tag-list">${list
+      .map((tag) => `<li><a href="suche.html?q=${encodeURIComponent(tag)}" aria-label="Nach ${escapeHtml(tag)} suchen">${escapeHtml(tag)}</a></li>`)
+      .join("")}</ul>`;
   }
 
   function highlight(text, rawQuery, tokens) {
@@ -786,7 +805,7 @@
       <p class="hero-kicker">Empfohlener Einstieg</p>
       <h2>${escapeHtml(entrypoint.title)}</h2>
       <p>${escapeHtml(entrypoint.description)}</p>
-      <ul class="search-tag-list">${asArray(entrypoint.tags).map((tag) => `<li><span>${escapeHtml(tag)}</span></li>`).join("")}</ul>
+      ${renderTagList(entrypoint.tags)}
       <p><a href="${escapeHtml(entrypoint.url)}">Einstieg öffnen</a></p>
     `;
   }
@@ -876,7 +895,7 @@
           </div>
           <h3><a href="${escapeHtml(entry.url)}">${highlight(entry.title, rawQuery, tokens)}</a></h3>
           <p>${highlight(snippet, rawQuery, tokens)}</p>
-          <ul class="search-tag-list">${tags.map((tag) => `<li><span>${escapeHtml(tag)}</span></li>`).join("")}</ul>
+          ${renderTagList(tags)}
         </article>
       </li>
     `;
@@ -913,7 +932,7 @@
               </div>
               <h2><a href="${escapeHtml(entry.url)}">${highlight(entry.title, rawQuery, tokens)}</a></h2>
               <p>${highlight(snippet, rawQuery, tokens)}</p>
-              <ul class="search-tag-list">${tags.map((tag) => `<li><span>${escapeHtml(tag)}</span></li>`).join("")}</ul>
+              ${renderTagList(tags)}
             </article>
           </li>
         `;

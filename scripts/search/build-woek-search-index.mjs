@@ -72,6 +72,8 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Prototypen/g, "Demos"],
   [/Prototyp/g, "Modellhafte Demo"],
   [/KPI-Rechner/g, "Wirkungsindikatoren-Demo"],
+  [/Methodenlandkarte/g, "Methoden & Werkzeuge"],
+  [/RSS & Updates|Updates & RSS/g, "Neu auf der Website"],
 ];
 
 function clean(text) {
@@ -110,6 +112,28 @@ function normalizeSearchRoute(url) {
   return String(url || "").replace(/#.*$/, "").replace(/\/index\.html$/, "/");
 }
 
+function canonicalSearchRoute(url) {
+  return normalizeSearchRoute(url).replace(/^\/wirkungsradar\/detail\//, "/wirkungsradar/live/");
+}
+
+function canonicalizeEntry(entry) {
+  const route = canonicalSearchRoute(entry.url);
+  const originalRoute = normalizeSearchRoute(entry.url);
+  if (!route || route === originalRoute) return entry;
+  return {
+    ...entry,
+    url: route,
+    canonicalUrl: route,
+    aliases: unique([...(Array.isArray(entry.aliases) ? entry.aliases : []), originalRoute]),
+  };
+}
+
+function canonicalEntryKey(entry) {
+  const route = canonicalSearchRoute(entry.url);
+  if (route) return route;
+  return normalizeSemantic(`${entry.title || ""} ${entry.section || ""}`);
+}
+
 function isInternalPublicRoute(url) {
   const route = normalizeSearchRoute(url);
   return INTERNAL_PUBLIC_ROUTE_PATTERNS.some((pattern) => pattern.test(route));
@@ -138,6 +162,7 @@ function isSearchNoiseEntry(entry) {
     "interaktive demos",
     "arbeitsbibliothek",
     "dokumentenregistry",
+    "dokumentenbibliothek",
   ];
   if (footerCluster.filter((item) => body.includes(item)).length >= 3) return true;
   if (body.includes("kontakt:") && body.includes("© 2026 natalie weber")) return true;
@@ -363,8 +388,15 @@ for (const file of contentFiles) {
   }
 }
 
-const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsWith("woek-")).map((entry) => [entry.url, entry]));
-for (const entry of generated) byUrl.set(entry.url, entry);
+const byUrl = new Map();
+for (const rawEntry of existing.filter((entry) => !String(entry.id || "").startsWith("woek-"))) {
+  const entry = canonicalizeEntry(rawEntry);
+  byUrl.set(canonicalEntryKey(entry), entry);
+}
+for (const rawEntry of generated) {
+  const entry = canonicalizeEntry(rawEntry);
+  byUrl.set(canonicalEntryKey(entry), entry);
+}
 const merged = Array.from(byUrl.values())
   .filter((entry) => !isInternalPublicRoute(entry.url))
   .filter((entry) => !isSearchNoiseEntry(entry))

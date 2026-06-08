@@ -422,7 +422,7 @@
     <div class="footer-nav-group">
       <h3>Praxis &amp; Tools</h3>
       <div class="footer-nav-links">
-          <a href="../werkzeuge/" data-nav-match="werkzeuge/">Methodenlandkarte</a>
+          <a href="../werkzeuge/" data-nav-match="werkzeuge/">Methoden &amp; Werkzeuge</a>
           <a href="../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a>
           <a href="../wirkungsradar/debattenkarten/" data-nav-match="wirkungsradar/debattenkarten/">Debattenkarten</a>
           <a href="../erleben/" data-nav-match="erleben/">Tool-Demos</a>
@@ -445,7 +445,7 @@
           <a href="../referenz/" data-nav-match="referenz/">Online-Buch</a>
           <a href="../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/">Dokumentenbibliothek</a>
           <a href="../quellen/" data-nav-match="quellen/">Quellen</a>
-          <a href="../updates/" data-nav-match="updates/">Updates &amp; RSS</a>
+          <a href="../updates/" data-nav-match="updates/">Neu auf der Website</a>
       </div>
     </div>
         </nav>
@@ -474,6 +474,8 @@
       const sourceCount = document.querySelector("#woek-ai-source-count");
       const sources = document.querySelector("#woek-ai-sources");
       const apiUrl = "https://akademie.wirkungsoekonomie.de/api/ki-beta";
+      const localSearchIndexUrl = new URL("../assets/search/search-index.json", window.location.href).href;
+      let localSearchIndexPromise = null;
 
       function setLoading(isLoading) {
         submit.disabled = isLoading || question.value.trim().length < 4;
@@ -506,6 +508,101 @@
           .replaceAll(">", "&gt;")
           .replaceAll('"', "&quot;")
           .replaceAll("'", "&#039;");
+      }
+
+      function normalize(value) {
+        return String(value || "")
+          .toLowerCase()
+          .replace(/ä/g, "ae")
+          .replace(/ö/g, "oe")
+          .replace(/ü/g, "ue")
+          .replace(/ß/g, "ss")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^a-z0-9+#\s/-]/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
+      function asArray(value) {
+        return Array.isArray(value) ? value : value ? [value] : [];
+      }
+
+      function unique(values) {
+        return Array.from(new Set(values.filter(Boolean)));
+      }
+
+      function localRoute(url) {
+        return String(url || "").replace(/^https?:\/\/wirkungsoekonomie\.de/i, "").replace(/\/index\.html$/, "/");
+      }
+
+      function entryText(entry) {
+        return [
+          entry.title,
+          entry.description,
+          entry.section,
+          entry.type,
+          ...asArray(entry.tags),
+          ...asArray(entry.aliases),
+          entry.body,
+        ].join(" ");
+      }
+
+      function loadLocalSearchIndex() {
+        if (!localSearchIndexPromise) {
+          localSearchIndexPromise = fetch(localSearchIndexUrl)
+            .then((response) => (response.ok ? response.json() : []))
+            .catch(() => []);
+        }
+        return localSearchIndexPromise;
+      }
+
+      function sourceCandidateScore(entry, rawQuestion) {
+        const query = normalize(rawQuestion);
+        const tokens = unique(query.split(" ").filter((token) => token.length > 2));
+        const title = normalize(entry.title);
+        const text = normalize(entryText(entry)).slice(0, 2600);
+        const route = localRoute(entry.url);
+        let score = 0;
+        if (query && text.includes(query)) score += 220;
+        tokens.forEach((token) => {
+          if (title.includes(token)) score += 34;
+          if (text.includes(token)) score += 7;
+        });
+        if (/\/wirkungsradar\/live\//.test(route)) score += 90;
+        if (/\/blog\//.test(route)) score += 42;
+        if (/\/begriffe\//.test(route)) score += 28;
+        if (/westdeutsche-keine-deutschen/.test(route)) score += 180;
+        if (/der-versoehner-und-die-wellen/.test(route)) score += 130;
+        if (/ostdeutschland|westdeutsch|deutsche wohnen|nur in ost/i.test(rawQuestion)) {
+          if (/westdeutsche|ost-west|ostdeutsch|deutschsein/i.test(entryText(entry))) score += 240;
+        }
+        return score;
+      }
+
+      async function getLocalSourceCandidates(rawQuestion) {
+        const index = await loadLocalSearchIndex();
+        return index
+          .map((entry) => ({ entry, score: sourceCandidateScore(entry, rawQuestion) }))
+          .filter((item) => item.score > 35 && item.entry?.url)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 6)
+          .map(({ entry }, index) => ({
+            rank: index + 1,
+            title: entry.title || "WÖk-Quelle",
+            url: localRoute(entry.url),
+            section: entry.section || "Wirkungsökonomie",
+            type: entry.type || entry.format || "Quelle",
+            excerpt: String(entry.description || entry.body || "").slice(0, 280),
+          }));
+      }
+
+      function buildContextualQuestion(rawQuestion, localSources) {
+        if (!localSources.length) return rawQuestion;
+        const sourceText = localSources
+          .map((item) => `[${item.rank}] ${item.title}\nURL: ${item.url}\nBereich: ${item.section} · ${item.type}\nAuszug: ${item.excerpt}`)
+          .join("\n\n");
+        return `Du bist die WÖk-KI der Wirkungsökonomie. Nutze zuerst die folgenden WÖk-Quellen, wenn sie zur Frage passen. Antworte nicht nur statistisch, sondern im Stil des Debatten-Kompasses: Was wird behauptet? Welcher Frame steckt dahinter? Was kann ich in 10 Sekunden, 30 Sekunden und 2 Minuten antworten? Nenne anschließend passende Quellen.\n\nWÖk-Quellen:\n${sourceText}\n\nFrage:\n${rawQuestion}`;
       }
 
       function renderSources(items) {
@@ -552,10 +649,20 @@
         mode.textContent = "Wird erstellt";
 
         try {
+          const localSources = await getLocalSourceCandidates(value);
+          if (localSources.length) {
+            sourceCount.textContent = String(localSources.length);
+            renderSources(localSources);
+          }
+          const contextualQuestion = buildContextualQuestion(value, localSources);
           const response = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ question: value }),
+            body: JSON.stringify({
+              question: contextualQuestion,
+              originalQuestion: value,
+              contextSources: localSources,
+            }),
           });
           const contentType = response.headers.get("content-type") || "";
           const data = contentType.includes("application/json")
@@ -573,10 +680,14 @@
           mode.textContent = modeLabel(data.mode);
           provider.textContent = data.provider || "Hosted API";
           model.textContent = data.model || "OpenAI-kompatibel";
-          sourceCount.textContent = String(data.sources?.length || 0);
+          const combinedSources = unique([
+            ...(data.sources || []).map((item) => JSON.stringify(item)),
+            ...localSources.map((item) => JSON.stringify(item)),
+          ]).map((item) => JSON.parse(item));
+          sourceCount.textContent = String(combinedSources.length);
           warning.hidden = true;
           warning.textContent = "";
-          renderSources(data.sources || []);
+          renderSources(combinedSources);
         } catch (error) {
           placeholder.hidden = false;
           placeholder.textContent = error instanceof Error ? error.message : "Die WÖk-KI konnte diese Frage nicht bearbeiten.";

@@ -1,6 +1,6 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-08T17:23:23.646Z
+- Generated: 2026-06-08T22:31:01.925Z
 - Content pages scanned: 1013
 - Glossary terms indexed: 1466
 - Warnings: 619
@@ -55,7 +55,7 @@
 - 654 · defined · Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie · /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ · title match, h1 match, h3 match, lead match, definition pattern, related proximity 6, 48 occurrences, page +20
 - 619 · defined · Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule · /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 6, 54 occurrences, field +35
 - 619 · defined · Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht - Journal der Wirkungsökonomie · /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 26 occurrences, blog +25
-- 619 · defined · Staat, Recht & Demokratie · /wirkungsfelder/staat-recht-demokratie/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 8, 36 occurrences, field +35
+- 619 · defined · Staat, Recht & Demokratie · /wirkungsfelder/staat-recht-demokratie/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 8, 40 occurrences, field +35
 - 589 · defined · Gesamtdossier Staat, Recht & Demokratie · /werkstatt/dossiers/staat-recht-demokratie/ · title match, h1 match, h2 match, lead match, related proximity 8, 30 occurrences, whitepaper +55
 
 ## Warnungen

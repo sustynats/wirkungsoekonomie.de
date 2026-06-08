@@ -147,22 +147,16 @@ function blockFor(file) {
       <section class="section tool-template-2-0" id="tool-orientierung" aria-labelledby="tool-orientierung-title">
         <div class="section-header">
           <p class="hero-kicker">Tool-Orientierung · ${esc(kind)} · ${esc(status)}</p>
-          <h2 id="tool-orientierung-title">Was dieses Werkzeug leistet.</h2>
+          <h2 id="tool-orientierung-title">Wofür dieses Werkzeug da ist.</h2>
           <p>${esc(description)}</p>
         </div>
-        <div class="card-grid three tool-template-grid">
+        <div class="card-grid two tool-template-grid">
           <article class="card"><p class="card-kicker">Nutzerfrage</p><h3 class="card-title">Womit komme ich hierher?</h3><p class="card-text">${esc(userQuestion(kind, title))}</p></article>
-          <article class="card"><p class="card-kicker">Was ist das?</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(kindWithArticle(kind))} der Wirkungsökonomie: modellhaft, erklärend und als Orientierung gedacht - nicht als amtliche Bewertung.</p></article>
-          <article class="card"><p class="card-kicker">Heutige Blindstelle</p><h3 class="card-title">Was bleibt sonst unsichtbar?</h3><p class="card-text">Oft werden Kosten, Output, Reichweite oder Einzelwerte betrachtet. Wirkpfad, Nebenfolgen, Datenqualität und demokratische Rückkopplung bleiben dann zu schwach sichtbar.</p></article>
-          <article class="card"><p class="card-kicker">Was gibst du ein?</p><h3 class="card-title">Input</h3><p class="card-text">${esc(inputs(kind))}</p></article>
-          <article class="card"><p class="card-kicker">Was bekommst du heraus?</p><h3 class="card-title">Output</h3><p class="card-text">${esc(outputs(kind))}</p></article>
-          <article class="card"><p class="card-kicker">Was verändert sich dadurch?</p><h3 class="card-title">Entscheidungslogik</h3><p class="card-text">${esc(change(kind))}</p></article>
-          <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">Auslöser → Wirkungspotenzial → Bewertung</h3><p class="card-text">Die Seite soll sichtbar machen, wie aus einem Auslöser eine Zustandsveränderung, eine Bewertung und eine mögliche Wirkungslenkung entsteht.</p></article>
-          <article class="card"><p class="card-kicker">Folgencheck</p><h3 class="card-title">Direkt, danach, systemisch</h3><p class="card-text">Geprüft wird, welche direkten Folgen, Anschlussfolgen und systemischen Folgen für Mensch, Planet und Demokratie relevant werden.</p></article>
-          <article class="card"><p class="card-kicker">Datenqualität &amp; Status</p><h3 class="card-title">Modellgrenze offenlegen</h3><p class="card-text">Demo-Werte, Annahmen, Quellenstand und Unsicherheiten müssen sichtbar bleiben. Niedrige Datenqualität erzeugt Prüfbedarf, keine Scheinsicherheit.</p></article>
-          <article class="card"><p class="card-kicker">Schutzlinien</p><h3 class="card-title">Nicht amtlich. Keine Personenbewertung.</h3><p class="card-text">Keine Rechts-, Steuer-, Finanz-, Förder-, Versicherungs-, Medizin- oder Sozialberatung. Keine automatische Entscheidung und kein Social-Credit-Mechanismus.</p></article>
-          <article class="card"><p class="card-kicker">Quellen &amp; Glossar</p><h3 class="card-title">Begriffe nachschlagen</h3><p class="card-text">Zentrale Begriffe und Quellen sind als Vertiefung zu lesen. Quellen belegen Fakten; Glossar erklärt die verwendete Wirkungslogik.</p></article>
-          <article class="card"><p class="card-kicker">Nächster Schritt</p><h3 class="card-title">Vertiefen oder ausprobieren</h3><p class="card-text">Nutze das Ergebnis als Orientierung, öffne passende Methoden, Quellen oder Demos und prüfe vor realen Entscheidungen die Datenbasis.</p></article>
+          <article class="card"><p class="card-kicker">Werkzeuglogik</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(kindWithArticle(kind))} macht eine Wirkungsfrage prüfbarer. Es ersetzt keine amtliche Bewertung, sondern zeigt Annahmen, Grenzen und nächste Prüfschritte.</p></article>
+          <article class="card"><p class="card-kicker">Eingabe</p><h3 class="card-title">Was wird gebraucht?</h3><p class="card-text">${esc(inputs(kind))}</p></article>
+          <article class="card"><p class="card-kicker">Ergebnis</p><h3 class="card-title">Was kommt heraus?</h3><p class="card-text">${esc(outputs(kind))}</p></article>
+          <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">Was verändert sich dadurch?</h3><p class="card-text">${esc(change(kind))}</p></article>
+          <article class="card"><p class="card-kicker">Grenzen</p><h3 class="card-title">Modell bleibt Modell.</h3><p class="card-text">Demo-Werte, Annahmen, Quellenstand und Unsicherheiten müssen sichtbar bleiben. Niedrige Datenqualität erzeugt Prüfbedarf, keine Scheinsicherheit.</p></article>
         </div>
       </section>
 ${markerEnd}`;

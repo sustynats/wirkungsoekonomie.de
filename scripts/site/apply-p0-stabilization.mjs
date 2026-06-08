@@ -65,9 +65,10 @@ function normalizeAudio(html) {
 
 function normalizePublicLabels(html) {
   let next = html;
+  next = replaceCounted(next, /Methodenlandkarte/g, "Methoden & Werkzeuge", "footer_methodenlandkarte_label");
   next = replaceCounted(next, /Dokumentenregistry/g, "Dokumentenbibliothek", "footer_documentenregistry_label");
-  next = replaceCounted(next, /RSS &amp; Updates/g, "Updates &amp; RSS", "footer_rss_updates_label");
-  next = replaceCounted(next, /RSS & Updates/g, "Updates & RSS", "footer_rss_updates_label_raw");
+  next = replaceCounted(next, /RSS &amp; Updates|Updates &amp; RSS/g, "Neu auf der Website", "footer_updates_label");
+  next = replaceCounted(next, /RSS & Updates|Updates & RSS/g, "Neu auf der Website", "footer_updates_label_raw");
   next = replaceCounted(next, /Website 2\.0\s*·\s*/g, "", "removed_website_20_prefix");
   next = replaceCounted(next, /\s*·\s*Website 2\.0/g, "", "removed_website_20_suffix");
   next = replaceCounted(next, /Website 2\.0/g, "", "removed_website_20");
