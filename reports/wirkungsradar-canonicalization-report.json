@@ -1,14 +1,14 @@
 {
   "version": "20260604-radar-canonical-p0",
-  "generatedAt": "2026-06-08T09:17:29.237Z",
+  "generatedAt": "2026-06-08T17:24:31.664Z",
   "counts": {
-    "radarPages": 657,
-    "claimPages": 276,
-    "canonicalNarratives": 123,
-    "duplicates": 403,
-    "merged": 152,
+    "radarPages": 659,
+    "claimPages": 278,
+    "canonicalNarratives": 124,
+    "duplicates": 405,
+    "merged": 153,
     "synonyms": 46,
-    "redirects": 152
+    "redirects": 153
   },
   "inventory": [
     {
@@ -2253,6 +2253,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/wasserstoff-fuer-alles/"
+    },
+    {
+      "url": "/wirkungsradar/detail/westdeutsche-keine-deutschen/",
+      "title": "Sind Westdeutsche keine Deutschen?",
+      "slug": "westdeutsche-keine-deutschen",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/westdeutsche-keine-deutschen/"
     },
     {
       "url": "/wirkungsradar/detail/windraeder-voegel-wald-beton-rueckbau/",
@@ -5385,6 +5394,23 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/wasserstoff-fuer-alles/"
+    },
+    {
+      "url": "/wirkungsradar/live/westdeutsche-keine-deutschen/",
+      "title": "Sind Westdeutsche keine Deutschen?",
+      "slug": "westdeutsche-keine-deutschen",
+      "tags": [
+        "Datenstand: 2026-06-07",
+        "2026-06-07",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/westdeutsche-keine-deutschen/"
     },
     {
       "url": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/",
@@ -10255,6 +10281,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/westdeutsche-keine-deutschen/",
+        "/wirkungsradar/live/westdeutsche-keine-deutschen/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/westdeutsche-keine-deutschen/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/detail/windraeder-voegel-wald-beton-rueckbau/",
         "/wirkungsradar/detail/windraeder-zerstoeren-natur/",
         "/wirkungsradar/embed/card/windraeder-voegel-wald-beton-rueckbau/",
@@ -11253,7 +11287,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.82,
+      "score": 0.812,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/deutschland-schafft-sich-ab/"
@@ -11265,7 +11299,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.824,
+      "score": 0.831,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/diktatur-der-altparteien/"
@@ -11277,7 +11311,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.835,
+      "score": 0.824,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/leistungstraeger-ausgepresst/"
@@ -11289,7 +11323,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.81,
+      "score": 0.814,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
@@ -11301,7 +11335,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.815,
+      "score": 0.816,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -11313,7 +11347,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.815,
+      "score": 0.816,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -11325,7 +11359,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.823,
+      "score": 0.821,
       "urls": [
         "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11337,7 +11371,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.823,
+      "score": 0.826,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/diktatur-der-altparteien/"
@@ -11349,7 +11383,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.816,
+      "score": 0.813,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/leistungstraeger-ausgepresst/"
@@ -11373,7 +11407,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.815,
+      "score": 0.812,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -11385,7 +11419,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.815,
+      "score": 0.812,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -11397,7 +11431,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.822,
+      "score": 0.823,
       "urls": [
         "/wirkungsradar/live/deutschland-schafft-sich-ab/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11421,7 +11455,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.825,
+      "score": 0.828,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
@@ -11433,7 +11467,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.831,
+      "score": 0.837,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -11457,7 +11491,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.826,
+      "score": 0.829,
       "urls": [
         "/wirkungsradar/live/diktatur-der-altparteien/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11493,7 +11527,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.836,
+      "score": 0.833,
       "urls": [
         "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
         "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/"
@@ -11505,7 +11539,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.812,
+      "score": 0.809,
       "urls": [
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/sind-die-reichen-schuld/"
@@ -11517,7 +11551,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.817,
+      "score": 0.812,
       "urls": [
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -11529,7 +11563,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.823,
+      "score": 0.818,
       "urls": [
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -11541,7 +11575,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.825,
+      "score": 0.817,
       "urls": [
         "/wirkungsradar/live/leistungstraeger-ausgepresst/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11565,7 +11599,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.816,
+      "score": 0.82,
       "urls": [
         "/wirkungsradar/live/sind-die-reichen-schuld/",
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/"
@@ -11577,7 +11611,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.834,
+      "score": 0.832,
       "urls": [
         "/wirkungsradar/live/sind-die-reichen-schuld/",
         "/wirkungsradar/live/tempolimit-bringt-nichts/"
@@ -11589,7 +11623,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.812,
+      "score": 0.813,
       "urls": [
         "/wirkungsradar/live/sind-die-reichen-schuld/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11613,7 +11647,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.817,
+      "score": 0.815,
       "urls": [
         "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -11625,7 +11659,7 @@
     },
     {
       "type": "Struktur-Dublette",
-      "score": 0.829,
+      "score": 0.827,
       "urls": [
         "/wirkungsradar/live/tempolimit-bringt-nichts/",
         "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/"
@@ -12276,6 +12310,11 @@
       "from": "/wirkungsradar/detail/wasserstoff-fuer-alles/",
       "to": "/wirkungsradar/live/wasserstoff-fuer-alles/",
       "title": "Wasserstoff für alles?"
+    },
+    {
+      "from": "/wirkungsradar/detail/westdeutsche-keine-deutschen/",
+      "to": "/wirkungsradar/live/westdeutsche-keine-deutschen/",
+      "title": "Sind Westdeutsche keine Deutschen?"
     },
     {
       "from": "/wirkungsradar/detail/windraeder-voegel-wald-beton-rueckbau/",

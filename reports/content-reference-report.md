@@ -1,7 +1,7 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-08T09:16:05.831Z
-Resolved references: 7136
+Erzeugt: 2026-06-08T17:23:24.852Z
+Resolved references: 7142
 Warnings: 2718
 
 ## Warnungen
@@ -536,6 +536,7 @@ Warnings: 2718
 - /blog/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.html -> Produktbesteuerung durch Wirkung – Wenn Preise beginnen, die Wahrheit zu sagen (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#woek-main-2026-k004-s001 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#woek-main-2026-k017-s001 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/der-versoehner-und-die-wellen/ -> Der Versöhner und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html -> Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert – sondern an seiner Logik (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html -> Wirkung schlägt Wahrheit: Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
@@ -727,11 +728,11 @@ Warnings: 2718
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/der-versoehner-und-die-wellen/ -> Der Versöhner und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-062-parteien-und-programme/#woek-main-2026-k062-s001 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
-- /blog/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.html -> Demokratie schützen, Menschen zurückgewinnen: Der lange Weg aus der Radikalisierung (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-002-die-massstabskrise/#woek-main-2026-k002-s001 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#woek-main-2026-k074-s001 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1508,4 +1509,3 @@ Warnings: 2718
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/automatisierungsdividenden-rechner/ -> Automatisierungsdividenden-Rechner (Methode, Beschreibung: ja)
 - /werkzeuge/esg-zu-woek-mapping/ -> ESG-zu-WÖk-Mapping (Methode, Beschreibung: ja)
-- /werkzeuge/kapitalwirkungscheck/ -> Kapitalwirkungscheck (Methode, Beschreibung: ja)

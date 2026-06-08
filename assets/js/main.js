@@ -4067,12 +4067,12 @@ const WoekUserSpace = (() => {
 
 const WirkungsraumLayer = (() => {
   const relevantPathPattern =
-    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|oeffentlicher-wirkungsraum|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|evidenz|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|oeffentlicher-wirkungsraum|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|wirkungssteuerung|blog|journal|portale|werkstatt|wissen|evidenz|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
   const progressScopePattern =
     /\/(referenz|buch|dokumente|downloads|bibliothek|akademie|portale|oeffentlicher-wirkungsraum)\b|\/(buch|akademie|downloads)\.html$/;
   const excludedPathPattern = /\/(datenschutz|impressum|mein-wirkungsraum|admin|api|_internal|_debug)\b|\/(datenschutz|impressum)\.html$/;
   const noteScopePattern =
-    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|oeffentlicher-wirkungsraum|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|blog|journal|portale|werkstatt|wissen|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
+    /\/(begriffe|glossar|referenz|buch|bibliothek|wirkungsradar|oeffentlicher-wirkungsraum|downloads|dokumente|werkzeuge|tools|akademie|wirkungsfelder|wirkungssteuerung|blog|journal|portale|werkstatt|wissen|fuer|erleben|so-wirkt-wirkungsoekonomie|ordnung|verstehen|sdg-plus|vergleichen|modell)\b|\/(akademie|buch|downloads|glossar|kompass|verstehen|modell|wirkungsoekonomie|anwendungen|erleben|blog|mehr|ueber|natalie-weber)\.html$/;
 
   function canonicalPath() {
     return window.location.pathname.replace(/\/index\.html$/, "/");
@@ -4094,6 +4094,7 @@ const WirkungsraumLayer = (() => {
     if (path.includes("/werkzeuge/") || path.includes("/tools/")) return "Werkzeug";
     if (path.includes("/akademie")) return "Akademie";
     if (path.includes("/wirkungsfelder/")) return "Wirkungsfeld";
+    if (path.includes("/wirkungssteuerung/")) return "Wirkungssteuerung";
     if (path.includes("/blog") || path.includes("/journal")) return "Journal";
     return "Inhalt";
   }

@@ -1,20 +1,20 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-08T09:17:29.766Z
+Stand: 2026-06-08T17:24:32.169Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Wirkungsradar-Seiten gesamt | 657 |
-| Debattenseiten vereinheitlicht | 122 |
+| Wirkungsradar-Seiten gesamt | 659 |
+| Debattenseiten vereinheitlicht | 123 |
 | Qualitätsstufe A | 0 |
 | Qualitätsstufe B | 0 |
-| Qualitätsstufe C | 122 |
+| Qualitätsstufe C | 123 |
 | Qualitätsstufe D | 0 |
-| Kanonische Narrative | 123 |
-| Dubletten / Kandidaten | 403 |
-| Zusammengeführt | 152 |
+| Kanonische Narrative | 124 |
+| Dubletten / Kandidaten | 405 |
+| Zusammengeführt | 153 |
 | Synonyme | 46 |
-| Redirects | 152 |
+| Redirects | 153 |
 
 ## Seitenprüfung
 
@@ -134,6 +134,7 @@ Stand: 2026-06-08T09:17:29.766Z
 | /wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wasserstoff-fuer-alles/ | C | ja | ja | ja | ja | nein | ja |
+| /wirkungsradar/live/westdeutsche-keine-deutschen/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wirkungsoekonomie-planwirtschaft/ | C | ja | ja | ja | ja | nein | ja |

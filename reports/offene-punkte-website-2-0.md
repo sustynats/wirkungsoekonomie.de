@@ -1,78 +1,41 @@
-# Offene Punkte Website 2.0 nach P0
+# Offene Punkte Website 2.0
 
 Stand: 2026-06-08
 
-P0-Live-Basis: `0130768df5` plus P1-Start Wirkungssteuerung-Hub
-Backup-Tag: `backup/p0-before-stabilisierung-20260608-101832`
+Diese Liste ist die Arbeitskontrolle nach dem P0-Block. Ein Punkt gilt erst als erledigt, wenn er gebaut, committed, auf `main` gepusht und auf `wirkungsoekonomie.de` live geprüft wurde.
 
-Diese Liste sammelt Restpunkte, die nicht in der P0-Stabilisierung verschwinden dürfen. Sie ist bewusst redaktionell und technisch getrennt, damit wir am Ende eine saubere Abnahme machen können.
+## P0 - abgeschlossen / im Deployment
 
-## P1 - Als Nächstes
+- Wirkungssteuerung: Die 19 Bausteinseiten wurden aus der redaktionellen Neufassung befüllt und ersetzen die identischen Template-Seiten. Der Build bewahrt diese redaktionellen Seiten, statt sie durch das ältere Fallback-Template zu überschreiben.
+- Wirkungssteuerung: Die Hub-Seite ist redaktionell gefüllt, enthält sechs Steuerungsräume und verlinkt auf die Bausteine.
+- Mein Wirkungsraum: Wirkungssteuerungsseiten erhalten Merken, Sammlung, Lernliste und Notizen.
+- Debattenkarte: `Sind Westdeutsche keine Deutschen?` ist als kanonische Debattenkarte gerendert, in Index, Suche und Detailroute eingebunden.
+- Journal: `Der Versöhner und die Wellen` ist als Journalartikel angelegt und mit Debattenkarte sowie Öffentlichem Wirkungsraum verknüpft.
+- Journal: Beim Artikel `Kognitive Dissonanz als Wirkungsbremse` wurde das nachgereichte Titelbild eingebunden.
+- RSS/Suche: Blog-Index, RSS-Feeds und Suchindex wurden nachgezogen.
 
-1. Wirkungssteuerung fachlich vertiefen
-   - Die 19 Bausteinseiten sind nicht mehr identische Platzhalter, brauchen aber deutlich mehr redaktionelle Tiefe.
-   - Priorität: Wirkungshaushalt, Wirkungssteuer, Scorecards, Wirkungsrat, Reverse Merit Order.
-   - Erledigt im P1-Start: Hub in 6 Cluster gruppiert: Preise & Steuern, Einkommen & Rente, Staat & Governance, Kapital & Märkte, Produkte & Lieferketten, Architektur & Prinzipien.
-   - Erledigt im P1-Schritt: die fünf priorisierten Bausteinseiten enthalten konkrete Prüfpunkte, berechtigte Kritikfragen, Mensch-Planet-Demokratie-Bilanzgrenzen und Quellen-/Anschlusslinks.
-   - Offen: die restlichen 14 Bausteinseiten nach demselben Muster redaktionell vertiefen.
+## P1 - als Nächstes
 
-2. Werkzeuge und Tools schärfen
-   - Tool-Finder mit Nutzerfragen weiter nach oben.
-   - Dashboard auf sichtbaren statischen Inhalt, Canonical und direkte Nutzbarkeit prüfen.
-   - Generische Aussagen wie "Rechner" entfernen, wo es um Methoden, Kennzahlen oder Frameworks geht.
+- Zielgruppenseiten `/fuer/`: identischen Template-Block entfernen, zielgruppenspezifische Einstiege ergänzen, Disclaimer ans Ende, Journalismus direkt mit Debattenkarten verbinden.
+- Wirkungsfelder: Navigator-Meta-Kommentar entfernen, Tippfehler `ergänzende ergänzende` bereinigen, doppelte Einleitungen entfernen, Inhaltsverzeichnis-Standard ausrollen, spezifische CTAs und passende Debattenkarten-Links ergänzen.
+- Werkzeuge: Tool-Finder nach oben, generische Erklärblöcke reduzieren, falsches `Rechner`-Wording pro Werkzeug korrigieren, Dashboard-Canonical und JS-rendered Hauptinhalt prüfen.
+- Startseite: klaren primären CTA setzen, `5-Minuten`-Block auf echte Einstiegsschritte kürzen, politische Sprachwirkung in den Öffentlichen Wirkungsraum verschieben, Selbstzitat-Blockquotes normalisieren.
+- Navigation und Footer: Öffentlichen Wirkungsraum und Debattenkarten sichtbar führen, Footer-Symbole und Hervorhebungen bereinigen, `Dokumentenregistry` durch nutzbares Wording ersetzen, Wissenschaft ergänzen, `RSS & Updates` nutzerfreundlich benennen.
+- Bibliothek und Journal: Journal als Bibliotheksbereich sauber einbinden, eigene Bibliotheks-/Journal-Suche und Filter prüfen, neueste Artikel und RSS-Verhalten erneut kontrollieren.
+- Suche: Debattenkarten-Dubletten aus `detail/` und `live/` kanonisieren, damit eine Aussage nur einmal erscheint. Schlagwort-Chips in Suchtreffern entweder als echte Filterlinks aktivieren oder optisch eindeutig als Metadaten kennzeichnen.
+- Audio: einen einheitlichen Player ohne MP3-Download ausrollen und exakte Dauer anzeigen.
+- Register: WÖk-ID-Register, Wirkungsregister und verknüpfte Tabellen von Hub-, Werkzeug- und Wirkungssteuerungsseiten sichtbar erreichbar machen.
 
-3. Wirkungsfelder nachziehen
-   - Inhaltsverzeichnis-Standard von Gesundheit & Pflege auf lange Felder übertragen.
-   - Thematisch passende Debattenkarten verlinken, besonders Klima, Wirtschaft, Medien und Staat.
-   - Hub-Karten mit einem klaren Hauptlink und kleineren Nebenlinks strukturieren.
+## P2
 
-4. Zielgruppenseiten `/fuer/` bereinigen
-   - Wiederholte generische Einstiegsblöcke durch rollenspezifische Einstiege ersetzen.
-   - Disclaimer an das Seitenende verschieben.
-   - Journalismus direkt mit Debattenkarten und Öffentlichem Wirkungsraum verknüpfen.
-   - "Wohnen/Mieter" als Rolle vs. Thema klären.
+- Lernen: entweder zu einer echten Lernseite ausbauen oder in `Wissen/Bibliothek` bzw. Akademie logisch einsortieren.
+- Ursachen-Navigator: alle Unterseiten vollständig auditieren und mit Debattenkarten verknüpfen.
+- Mobile Navigation: Hauptnavigation vereinfachen und mobile Auffindbarkeit von Öffentlichem Wirkungsraum, WÖk-KI und Mein Wirkungsraum prüfen.
+- Social Proof: Pilotpartner, Zitate oder Fallbeispiele ergänzen, sobald belastbare Belege vorliegen.
+- Visualisierungen: dort ergänzen oder ersetzen, wo sie das Verständnis tatsächlich verbessern.
 
-5. Öffentlicher Wirkungsraum verständlicher führen
-   - Begriffe glätten: Öffentlicher Wirkungsraum, Debattenkarten, Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator, Resilienz-Prinzipien.
-   - Unterschied Debatten-Kompass vs. Debattenkarten direkt erklären.
-   - Zählungen konsistent halten und Suche/Zugang zu allen Karten sichtbar machen.
+## P3
 
-## P2 - Endabnahme
-
-1. Startseite professionell verdichten
-   - Ein primärer CTA.
-   - "In 5 Minuten verstehen" wirklich auf 5 Schritte begrenzen.
-   - Blockquotes nur als echte Zitate verwenden.
-
-2. Footer konsistent machen
-   - Unerklärte Kreise entfernen.
-   - "Dokumentenregistry" dauerhaft durch "Dokumentenbibliothek" ersetzen.
-   - Wissenschaft unter "Für wen?" ergänzen.
-   - "RSS & Updates" nutzerfreundlich als "Neu auf der Website" oder "Updates & RSS" führen.
-
-3. Glossar-Qualität angleichen
-   - Qualitätsmaßstab von "5. P = Planet" auf schwache Glossarseiten übertragen.
-   - Merken/Sammlung/Lernliste oben platzieren, nicht an Frageboxen hängen.
-   - Neue Begriffe immer in Content, Suchindex und Querverweise einbinden.
-
-4. Audio standardisieren
-   - Einheitlicher Player ohne MP3-Downloadlink.
-   - Exakte Dauer und Sprecherin anzeigen.
-   - Audio nur dort platzieren, wo es fachlich hilft.
-
-5. Bibliothek und Journal
-   - Journal als eigener Block in der Bibliothek mit den letzten zwei Artikeln.
-   - RSS-Feeds für Journal, Bibliothek und Öffentlichen Wirkungsraum in Updates sichtbar anbieten.
-   - Bibliothekssuche und Journalfilter direkt im jeweiligen Bereich nutzbar machen.
-
-## P3 - Später / optional
-
-1. Analytics vertiefen
-   - Geräteklassen, grobe Region und Merken-Nutzung je Element prüfen.
-   - Datenschutzlogik dokumentieren.
-
-2. Social Proof und Pilotbeispiele
-   - Vertrauensbildende Beispiele ergänzen, ohne Marketing-Ton.
-
-3. Redaktionsprozess standardisieren
-   - Debattenkarten, Glossar, Dossiers und Audios mit klarer Build- und Abnahmelogik dokumentieren.
+- WÖk-KI: Nach Abschluss der Inhaltsarbeiten die Wissensdatenbasis mit allen neuen Seiten, Debattenkarten, Journalartikeln, Dossiers, Veröffentlichungen und Quellen aktualisieren.
+- Website-2.0-Abschlussaudit: Live-Crawl gegen diese Liste und die Usability-Audits durchführen.
+- Repo-Hygiene: nach finalem Live-Stand nicht verknüpfte Altstände archivieren, ohne öffentliche Inhalte, PDFs, verlinkte Tabellen oder Quellen zu verlieren.

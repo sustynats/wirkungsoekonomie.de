@@ -33,6 +33,23 @@ function writeFile(relativePath, content) {
   console.log(`written ${relPath(filePath)}`);
 }
 
+function writeFilePreservingEditorialPage(relativePath, content) {
+  const filePath = path.join(ROOT, relativePath);
+  if (fs.existsSync(filePath)) {
+    const existing = fs.readFileSync(filePath, "utf8");
+    const isWirkungssteuerungEditorial =
+      existing.includes('meta name="search_section" content="Wirkungssteuerung"') &&
+      existing.includes('class="article-body"');
+
+    if (isWirkungssteuerungEditorial) {
+      console.log(`preserved ${relPath(filePath)}`);
+      return;
+    }
+  }
+
+  writeFile(relativePath, content);
+}
+
 function readFile(relativePath) {
   return fs.readFileSync(path.join(ROOT, relativePath), "utf8");
 }
@@ -1762,9 +1779,9 @@ function buildPages() {
   writeFile("fuer-wen/index.html", renderFuerWenAlias());
   writeFile("lernen/index.html", renderLearningPortal());
   writeFile("wirkungsfelder/index.html", renderWirkungsfelderPage());
-  writeFile("wirkungssteuerung/index.html", renderWirkungssteuerungPortal());
+  writeFilePreservingEditorialPage("wirkungssteuerung/index.html", renderWirkungssteuerungPortal());
   for (const [slug, title, text] of steuerungPages) {
-    writeFile(`wirkungssteuerung/${slug}/index.html`, renderSteuerungDetail(slug, title, text));
+    writeFilePreservingEditorialPage(`wirkungssteuerung/${slug}/index.html`, renderSteuerungDetail(slug, title, text));
   }
 }
 

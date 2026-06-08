@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-08T09:16:04.580Z
-- Content pages scanned: 1012
+- Generated: 2026-06-08T17:23:23.646Z
+- Content pages scanned: 1013
 - Glossary terms indexed: 1466
-- Warnings: 621
+- Warnings: 619
 
 ## Stichproben
 
@@ -276,7 +276,6 @@
 - term has no content references: insetting
 - term has no content references: institutioneller-rassismus
 - term has no content references: institutionendelegitimierung
-- term has no content references: institutionenkritik
 - term has no content references: institutionenoekonomik
 - term has no content references: intertemporale-freiheit
 - term has no content references: investitionsschuld
@@ -360,4 +359,5 @@
 - term has no content references: mittelspannungsschaltanlage
 - term has no content references: mobilitaetsarmut
 - term has no content references: modellblindheit
-- ... 321 weitere Warnungen
+- term has no content references: moderner-patriotismus
+- ... 319 weitere Warnungen

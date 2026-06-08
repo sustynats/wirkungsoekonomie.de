@@ -1,16 +1,16 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-08T09:17:29.237Z
+Stand: 2026-06-08T17:24:31.664Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Radar-Seiten | 657 |
-| Claim-Seiten | 276 |
-| Kanonische Narrative | 123 |
-| Dubletten / Kandidaten | 403 |
-| Zusammengeführt | 152 |
+| Radar-Seiten | 659 |
+| Claim-Seiten | 278 |
+| Kanonische Narrative | 124 |
+| Dubletten / Kandidaten | 405 |
+| Zusammengeführt | 153 |
 | Synonyme | 46 |
-| Redirects | 152 |
+| Redirects | 153 |
 
 ## Zusammenführungen
 
@@ -144,6 +144,7 @@ Stand: 2026-06-08T09:17:29.237Z
 | /wirkungsradar/detail/waffenlieferungen-verlaengern-den-krieg/ | /wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/ | Waffenlieferungen verlängern den Krieg? |
 | /wirkungsradar/detail/wasser-ist-in-deutschland-kein-problem/ | /wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/ | Wasser ist in Deutschland kein Problem? |
 | /wirkungsradar/detail/wasserstoff-fuer-alles/ | /wirkungsradar/live/wasserstoff-fuer-alles/ | Wasserstoff für alles? |
+| /wirkungsradar/detail/westdeutsche-keine-deutschen/ | /wirkungsradar/live/westdeutsche-keine-deutschen/ | Sind Westdeutsche keine Deutschen? |
 | /wirkungsradar/detail/windraeder-voegel-wald-beton-rueckbau/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | Windräder zerstören Natur? |
 | /wirkungsradar/detail/windraeder-zerstoeren-natur/ | /wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/ | Windräder zerstören Natur |
 | /wirkungsradar/detail/wirkungsabwehr-dissonanzrationalisierung/ | /wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/ | Wirkungsabwehr: Warum Menschen Wirkung wegrationalisieren |
