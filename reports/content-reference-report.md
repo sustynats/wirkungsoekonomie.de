@@ -1,6 +1,6 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-08T06:06:22.369Z
+Erzeugt: 2026-06-08T09:16:05.831Z
 Resolved references: 7136
 Warnings: 2718
 
@@ -1422,9 +1422,9 @@ Warnings: 2718
 - /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-067-bildung/#woek-main-2026-k067-s001 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/kultur-identitaet-resonanz/ -> Kultur, Identität & Resonanz | Wirkungsfeld der Wirkungsökonomie (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/ -> Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ -> Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule (Wirkungsfeld, Beschreibung: ja)
-- /wirkungsfelder/bildung/detailkonzepte/ -> Detailkonzepte Bildung & Wirkungsschule (Wirkungsfeld, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#woek-main-2026-k077-s001 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-067-bildung/#woek-main-2026-k067-s001 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-079-diskurskultur/#woek-main-2026-k079-s001 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)

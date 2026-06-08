@@ -4,10 +4,10 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 
 ## Ergebnis
 
-- HTML-Dateien geprüft: 8777
-- HTML-Dateien geändert: 367
-- blockierte Rohformat-Links gefunden: 1397
-- auf vorhandene PDF-Fassung umgelegt: 1397
+- HTML-Dateien geprüft: 8779
+- HTML-Dateien geändert: 366
+- blockierte Rohformat-Links gefunden: 1396
+- auf vorhandene PDF-Fassung umgelegt: 1396
 - ohne PDF-Fassung als "PDF-Fassung in Produktion" markiert: 0
 
 ## Regel
@@ -28,7 +28,6 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 - `erleben/wirkungsradar-demo/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/wirkungsrenten-rechner/index.html`: 3 Rohformat-Link(s), 3 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/wirkungsschule-check/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
-- `erleben/wirkungssteuer-beispiele/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `referenz/quellen/index.html`: 0 Rohformat-Link(s), 0 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `scanner.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)

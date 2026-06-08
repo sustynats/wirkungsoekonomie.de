@@ -64,6 +64,11 @@ const header = [
     match: ["wirkungssteuerung/", "fuer/wirkungssteuer.html", "werkstatt/gesetze/wirkungssteuergesetz/", "werkzeuge/scorecards/", "werkzeuge/t-sroi/"],
   },
   {
+    label: "Öffentlicher Wirkungsraum",
+    href: "oeffentlicher-wirkungsraum/",
+    match: ["oeffentlicher-wirkungsraum/", "wirkungsradar/", "woek-ki/"],
+  },
+  {
     label: "Praxis & Tools",
     href: "werkzeuge/",
     match: [
@@ -77,8 +82,6 @@ const header = [
       "erleben/",
       "erleben.html",
       "ausprobieren/",
-      "oeffentlicher-wirkungsraum/",
-      "wirkungsradar/",
     ],
   },
   {
@@ -210,6 +213,351 @@ const steuerungPages = [
   ["beschaffung-foerderung", "Beschaffung & Förderung", "Wie öffentliche Nachfrage und Förderung positive Netto-Wirkung wahrscheinlicher machen."],
 ];
 
+const steuerungDetails = {
+  ueberblick: {
+    type: "Konzept",
+    cluster: "Architektur & Prinzipien",
+    what:
+      "Der Überblick ordnet die Bausteine der Wirkungssteuerung. Er zeigt, wie Wirkung aus der Beobachtung heraus in Entscheidungen zurückgeführt wird: in Preise, Steuern, Haushalte, Kapital, Beschaffung, Produkte, Einkommen und Regeln.",
+    why:
+      "Ohne diese Rückkopplung bleibt Wirkung ein Berichtsthema. Organisationen können dann weiter nach Kosten, Output oder Rendite handeln, obwohl Schäden, Risiken oder positive Netto-Wirkung längst sichtbar sind.",
+    how: [
+      "Wirkung wird als Zustandsveränderung beschrieben, nicht als Absicht.",
+      "Bewertung erfolgt für Mensch, Planet und Demokratie.",
+      "Die Rückkopplung entscheidet, ob sich bessere Wirkung auch praktisch lohnt.",
+    ],
+    more: [
+      ["Wirkung", "begriffe/wirkung/"],
+      ["Positive Netto-Wirkung", "begriffe/positive-netto-wirkung/"],
+      ["Scorecards", "wirkungssteuerung/scorecards/"],
+    ],
+  },
+  wirkungssteuer: {
+    type: "Konzept / Kernbaustein",
+    cluster: "Preise & Steuern",
+    what:
+      "Die Wirkungssteuer beschreibt die Idee, steuerliche Belastung nicht nur an Geldflüssen, sondern an bewerteter Wirkung auszurichten. Schädliche Wirkung darf nicht dauerhaft billiger sein als bessere Alternativen.",
+    why:
+      "Viele Märkte belohnen niedrige Preise, auch wenn Kosten auf Gesundheit, Klima, Infrastruktur oder Demokratie verschoben werden. Eine Wirkungssteuer macht diese ausgelagerten Folgen entscheidungsrelevant.",
+    how: [
+      "Produkte, Leistungen oder Tätigkeiten werden über Wirkungsklassen eingeordnet.",
+      "Schutzlinien verhindern Personenbewertung und automatische Sanktionen.",
+      "Steuersignale werden als politische, prüfbare Lenkung verstanden, nicht als moralisches Urteil.",
+    ],
+    more: [
+      ["Produktpreise", "wirkungssteuerung/produktpreise/"],
+      ["Wirkungsumsatzsteuergesetz", "wirkungssteuerung/wustg/"],
+      ["Reverse Merit Order", "wirkungssteuerung/reverse-merit-order/"],
+    ],
+  },
+  produktpreise: {
+    type: "Konzept",
+    cluster: "Preise & Steuern",
+    what:
+      "Produktpreise fragt, was ein Preis zeigen müsste, wenn Schäden, Nutzen, Lieferketten, Nutzung und Entsorgung nicht ausgeblendet werden. Es geht nicht um perfekte Wahrheit, sondern um bessere Signale.",
+    why:
+      "Billige Produkte können teuer sein, wenn Folgekosten bei Umwelt, Gesundheit, Beschäftigten, Kommunen oder künftigen Generationen landen. Dann lügt der Preis nicht absichtlich, aber er bleibt unvollständig.",
+    how: [
+      "Die Bilanzgrenze wird erweitert: Rohstoffe, Produktion, Nutzung, Reparatur und Entsorgung.",
+      "Wirkung wird in Klassen oder Scorecards übersetzt.",
+      "Preis-, Steuer- und Beschaffungslogik können auf diese Bewertung reagieren.",
+    ],
+    more: [
+      ["Scorecards", "wirkungssteuerung/scorecards/"],
+      ["Digitaler Produktpass", "wirkungssteuerung/digitaler-produktpass/"],
+      ["Produkte & Konsum", "wirkungsfelder/produkte-konsum/"],
+    ],
+  },
+  wustg: {
+    type: "Gesetzesentwurf",
+    cluster: "Preise & Steuern",
+    what:
+      "Das Wirkungsumsatzsteuergesetz ist ein Modell für eine Umsatzsteuerlogik, die Produktwirkung stärker berücksichtigt. Es fragt, wie positive Netto-Wirkung steuerlich entlastet und schwere Schäden belastet werden könnten.",
+    why:
+      "Die heutige Umsatzsteuer behandelt sehr unterschiedliche Wirkungen oft gleich. Dadurch bleiben gesundheitliche, ökologische und demokratische Folgekosten außerhalb des Preissignals.",
+    how: [
+      "Produktgruppen werden nicht moralisch, sondern anhand prüfbarer Wirkungskriterien betrachtet.",
+      "Wirkungsklassen verändern die steuerliche Behandlung innerhalb politisch gesetzter Schutzgrenzen.",
+      "Pilotierung, Datenqualität und demokratische Kontrolle sind Voraussetzung.",
+    ],
+    more: [
+      ["Wirkungssteuer", "wirkungssteuerung/wirkungssteuer/"],
+      ["Produktpreise", "wirkungssteuerung/produktpreise/"],
+      ["Staat, Recht & Demokratie", "wirkungsfelder/staat-recht-demokratie/"],
+    ],
+  },
+  wstg: {
+    type: "Gesetzesentwurf",
+    cluster: "Preise & Steuern",
+    what:
+      "Das Wirkungssteuergesetz ist ein Rahmenentwurf für die Frage, wie Wirkung als öffentliche Steuerungsgröße rechtlich anschlussfähig werden kann.",
+    why:
+      "Wenn Wirkung politisch gewollt ist, braucht sie Regeln: Zuständigkeit, Datenqualität, Rechtsweg, Schutzlinien, Transparenz und demokratische Kontrolle.",
+    how: [
+      "Der Entwurf trennt Bewertungslogik, Datenbasis und politische Entscheidung.",
+      "Er legt Schutzlinien gegen Social-Credit-Logik und Personenbewertung fest.",
+      "Er macht Wirkung lenkbar, ohne Parlamente, Gerichte oder Verwaltung zu ersetzen.",
+    ],
+    more: [
+      ["Wirkungsrat", "wirkungssteuerung/wirkungsrat/"],
+      ["Wirkungshaushalt", "wirkungssteuerung/wirkungshaushalt/"],
+      ["Politische Anschlussfähigkeit", "begriffe/politische-anschlussfaehigkeit/"],
+    ],
+  },
+  westg: {
+    type: "Gesetzesentwurf",
+    cluster: "Einkommen & Rente",
+    what:
+      "Das Wirkungseinkommensteuergesetz ist ein Modell dafür, Einkommen, Erwerbsarbeit, Care, Automatisierung und gesellschaftliche Wirkung neu zusammenzudenken.",
+    why:
+      "Viele Beiträge stabilisieren Gesellschaft, erscheinen aber im heutigen Einkommen- und Steuersystem nur schwach: Pflege, Bildung, Sorgearbeit, Prävention, Integration oder lokale Infrastruktur.",
+    how: [
+      "Einkommen wird nicht nur als Lohn aus Erwerbsarbeit betrachtet.",
+      "Wirkungsbeiträge und Schutzlinien werden politisch definierbar gemacht.",
+      "Automatisierungsgewinne und gesellschaftliche Stabilisierung können gemeinsam bewertet werden.",
+    ],
+    more: [
+      ["Wirkungseinkommen", "wirkungssteuerung/wirkungseinkommen/"],
+      ["Wirkungsrente", "wirkungssteuerung/wirkungsrente/"],
+      ["Arbeit & Einkommen", "wirkungsfelder/arbeit-einkommen/"],
+    ],
+  },
+  wirkungseinkommen: {
+    type: "Konzept",
+    cluster: "Einkommen & Rente",
+    what:
+      "Wirkungseinkommen fragt, wie gesellschaftlich notwendige Wirkung anerkannt werden kann, auch wenn sie nicht vollständig über klassische Erwerbsarbeit, Marktpreise oder Rendite sichtbar wird.",
+    why:
+      "Wenn nur bezahlt wird, was sich unmittelbar rechnet, bleiben Pflege, Prävention, Bildung, Integration, Gemeinwesenarbeit und Stabilisierung systematisch unterbewertet.",
+    how: [
+      "Wirkungsbeiträge werden über nachvollziehbare Kriterien beschrieben.",
+      "Es geht um politische Rückkopplung, nicht um moralische Belohnungslisten.",
+      "Pilotierung muss Zielkonflikte, Finanzierung und Missbrauchsschutz offenlegen.",
+    ],
+    more: [
+      ["Arbeit & Einkommen", "wirkungsfelder/arbeit-einkommen/"],
+      ["Wirkungseinkommen-Rechner", "werkzeuge/wirkungseinkommen/"],
+      ["Positive Netto-Wirkung", "begriffe/positive-netto-wirkung/"],
+    ],
+  },
+  wirkungsrente: {
+    type: "Konzept",
+    cluster: "Einkommen & Rente",
+    what:
+      "Die Wirkungsrente fragt, wie Lebensleistung, Sorgearbeit, Pflege, Bildung, Ehrenamt, Prävention und gesellschaftliche Stabilisierung im Alter sichtbarer werden können.",
+    why:
+      "Rentenlogiken hängen stark an Erwerbsbiografien. Wer Wirkung erzeugt, die nicht als Lohn erscheint, kann trotz hoher gesellschaftlicher Bedeutung schlechter abgesichert sein.",
+    how: [
+      "Erwerbsarbeit bleibt wichtig, wird aber um gesellschaftliche Wirkungsbeiträge ergänzt.",
+      "Bewertung braucht transparente Kriterien und demokratische Kontrolle.",
+      "Die Wirkungsrente ist ein Prüfmodell, kein fertiger Leistungsbescheid.",
+    ],
+    more: [
+      ["Wirkungseinkommen", "wirkungssteuerung/wirkungseinkommen/"],
+      ["Arbeit & Einkommen", "wirkungsfelder/arbeit-einkommen/"],
+      ["Für Bürger:innen", "fuer/buergerinnen.html"],
+    ],
+  },
+  wirkungshaushalt: {
+    type: "Konzept / Kernbaustein",
+    cluster: "Staat & Governance",
+    what:
+      "Der Wirkungshaushalt ordnet öffentliche Mittel danach, welche Zustandsveränderungen sie ermöglichen, verhindern oder verschieben. Er ergänzt Haushaltslogik um Wirkungslogik.",
+    why:
+      "Haushalte zeigen Ausgabenstellen, aber oft nicht, welche Unterlassungskosten, Präventionsgewinne oder Folgeschäden entstehen. Dadurch wirken kurzfristig billige Entscheidungen langfristig teuer.",
+    how: [
+      "Mittel werden mit Wirkungszielen, Zielgruppen, Zeitpfad und Nebenfolgen verknüpft.",
+      "Unterlassungskosten werden sichtbar: Was kostet es, nicht zu handeln?",
+      "Demokratische Entscheidung bleibt zentral; Wirkung verbessert die Entscheidungsgrundlage.",
+    ],
+    more: [
+      ["Staat, Recht & Demokratie", "wirkungsfelder/staat-recht-demokratie/"],
+      ["Wirkungsrat", "wirkungssteuerung/wirkungsrat/"],
+      ["Wirkungssteuer", "wirkungssteuerung/wirkungssteuer/"],
+    ],
+  },
+  wirkungsrat: {
+    type: "Governance-Struktur",
+    cluster: "Staat & Governance",
+    what:
+      "Der Wirkungsrat ist eine mögliche Prüf- und Schutzarchitektur für Wirkungspolitik. Er soll Qualität, Transparenz, Datenbasis, Schutzlinien und demokratische Anschlussfähigkeit stärken.",
+    why:
+      "Wenn Wirkung in Preise, Förderung, Haushalte oder Regulierung einfließt, braucht es Kontrolle. Sonst entstehen Scheingenauigkeit, Lobbyverzerrung oder technokratische Übergriffigkeit.",
+    how: [
+      "Er prüft Methoden, Datenqualität und Zielkonflikte.",
+      "Er ersetzt keine Parlamente und keine Gerichte.",
+      "Er macht Streitpunkte sichtbar, bevor sie als objektive Zahl missverstanden werden.",
+    ],
+    more: [
+      ["Wirkungshaushalt", "wirkungssteuerung/wirkungshaushalt/"],
+      ["Scorecards", "wirkungssteuerung/scorecards/"],
+      ["Demokratie", "begriffe/demokratie/"],
+    ],
+  },
+  scorecards: {
+    type: "Methode",
+    cluster: "Produkte & Lieferketten",
+    what:
+      "Scorecards übersetzen komplexe Wirkung in prüfbare Kriterien, Klassen und Hinweise. Sie machen sichtbar, was sonst in Berichten, Einzelfakten oder Bauchgefühl verschwindet.",
+    why:
+      "Ohne strukturierte Bewertung werden Produkte, Organisationen oder Maßnahmen oft nur nach Preis, Output, Image oder Reichweite verglichen. Wirkung bleibt dann behauptet, aber nicht vergleichbar.",
+    how: [
+      "Kriterien werden nach Wirkpfad, Datenqualität und Zielkonflikten geordnet.",
+      "Scorecards zeigen Richtung und Prüfbedarf, nicht absolute Wahrheit.",
+      "Sie müssen transparent, anfechtbar und aktualisierbar bleiben.",
+    ],
+    more: [
+      ["WÖk-IDs", "wirkungssteuerung/woek-ids/"],
+      ["Digitaler Produktpass", "wirkungssteuerung/digitaler-produktpass/"],
+      ["Impact Controlling", "werkzeuge/impact-controlling/"],
+    ],
+  },
+  "woek-ids": {
+    type: "Technische Infrastruktur",
+    cluster: "Architektur & Prinzipien",
+    what:
+      "WÖk-IDs sind eine Identifikationslogik für Begriffe, Produkte, Wirkpfade, Indikatoren oder Dokumente. Sie helfen, Wirkung nachvollziehbar zu verknüpfen.",
+    why:
+      "Ohne saubere Identifikation entstehen Dubletten, unklare Quellen, wechselnde Begriffe und schwer prüfbare Aussagen. Das schwächt Vertrauen und Vergleichbarkeit.",
+    how: [
+      "Begriffe, Dokumente und Wirkungsobjekte bekommen stabile Referenzen.",
+      "Verknüpfungen zwischen Glossar, Bibliothek, Scorecards und Werkzeugen werden sichtbar.",
+      "IDs dienen der Nachvollziehbarkeit, nicht der Bewertung von Personen.",
+    ],
+    more: [
+      ["Scorecards", "wirkungssteuerung/scorecards/"],
+      ["Glossar", "begriffe/"],
+      ["Bibliothek", "bibliothek/"],
+    ],
+  },
+  "reverse-merit-order": {
+    type: "Prinzip",
+    cluster: "Architektur & Prinzipien",
+    what:
+      "Die Reverse Merit Order beschreibt eine Schutzlogik: Schwere Schäden dürfen nicht durch kleine Vorteile schön gerechnet werden. Erst werden rote Linien geprüft, dann Nutzen bewertet.",
+    why:
+      "Viele Bewertungen aggregieren positive und negative Effekte zu einem Gesamtwert. Dadurch können irreversible Schäden, Grundrechtsprobleme oder hohe Demokratierisiken verdeckt werden.",
+    how: [
+      "Zuerst werden Ausschluss- und Schutzkriterien geprüft.",
+      "Danach werden Nutzen, Alternativen und Zielkonflikte bewertet.",
+      "Das Prinzip schützt vor Kompensation schwerer Schäden durch bequeme Pluspunkte.",
+    ],
+    more: [
+      ["Wirkungsbewertung", "begriffe/wirkungsbewertung/"],
+      ["Planetare Grenzen", "begriffe/planetare-grenzen/"],
+      ["Risikomanagement", "wirkungssteuerung/risikomanagement/"],
+    ],
+  },
+  "csrd-esrs-gri": {
+    type: "Standards-Anschluss",
+    cluster: "Kapital & Märkte",
+    what:
+      "CSRD, ESRS und GRI sind Berichts- und Nachhaltigkeitsstandards. In der Wirkungsökonomie werden sie als Anschlussstellen gelesen, nicht als vollständige Wirkungssteuerung.",
+    why:
+      "Reporting kann Transparenz schaffen, aber noch keine bessere Wirkung erzeugen. Entscheidend ist, ob Daten in Entscheidungen, Kapitalflüsse, Produkte und Regeln zurückwirken.",
+    how: [
+      "Berichtsdaten werden mit Wirkpfaden und Netto-Wirkung verknüpft.",
+      "Datenqualität und Wesentlichkeit werden kritisch geprüft.",
+      "Reporting wird vom Nachweis zur Rückkopplungsinfrastruktur weitergedacht.",
+    ],
+    more: [
+      ["Kapital, Banken und ESG", "wirkungssteuerung/kapital-banken-esg/"],
+      ["Impact Controlling", "werkzeuge/impact-controlling/"],
+      ["Datenqualität", "begriffe/datenqualitaet/"],
+    ],
+  },
+  "digitaler-produktpass": {
+    type: "Instrument",
+    cluster: "Produkte & Lieferketten",
+    what:
+      "Der digitale Produktpass kann Produktinformationen zu Materialien, Herkunft, Reparatur, Nutzung, Entsorgung und Wirkung besser verfügbar machen.",
+    why:
+      "Ohne Produktdaten bleiben Lieferketten, Reparierbarkeit, Recyclingfähigkeit und Folgekosten schwer sichtbar. Wirkung kann dann weder verglichen noch gesteuert werden.",
+    how: [
+      "Produktdaten werden entlang des Lebenswegs gesammelt.",
+      "Scorecards und Wirkungsbewertung können auf belastbarere Informationen zugreifen.",
+      "Datenschutz, Geschäftsgeheimnisse und Datenqualität müssen sauber geregelt sein.",
+    ],
+    more: [
+      ["Produktpreise", "wirkungssteuerung/produktpreise/"],
+      ["Scorecards", "wirkungssteuerung/scorecards/"],
+      ["Lieferketten", "wirkungssteuerung/lieferketten/"],
+    ],
+  },
+  "kapital-banken-esg": {
+    type: "Konzept",
+    cluster: "Kapital & Märkte",
+    what:
+      "Kapital, Banken und ESG fragt, wie Finanzströme Wirkung und Risiko berücksichtigen können, ohne Kapital zu verteufeln oder ESG als Etikett ausreichen zu lassen.",
+    why:
+      "Kapital kann Innovation, Infrastruktur und Resilienz ermöglichen. Es kann aber auch Schäden verstärken, Risiken auslagern oder Macht konzentrieren. Entscheidend ist die Rückkopplung an Wirkung.",
+    how: [
+      "Investitionen werden mit Wirkungspfaden, Transitionsrisiken und Schutzlinien verbunden.",
+      "ESG-Daten werden auf reale Netto-Wirkung geprüft.",
+      "Kapital bleibt Werkzeug; Wirkung wird Kompass.",
+    ],
+    more: [
+      ["Finanzsystem & Kapital", "wirkungsfelder/finanzsystem-kapital/"],
+      ["Risikomanagement", "wirkungssteuerung/risikomanagement/"],
+      ["T-SROI", "werkzeuge/t-sroi/"],
+    ],
+  },
+  risikomanagement: {
+    type: "Konzept",
+    cluster: "Kapital & Märkte",
+    what:
+      "Risikomanagement liest Wirkung nicht als weiches Zusatzthema, sondern als reales Risiko: regulatorisch, finanziell, reputativ, sozial, ökologisch und demokratisch.",
+    why:
+      "Ausgelagerte Schäden kehren zurück: als Kosten, Konflikte, Lieferkettenabbrüche, Rechtsrisiken, Vertrauensverlust oder politische Instabilität.",
+    how: [
+      "Wirkungsrisiken werden entlang von Lieferketten, Produkten, Kapital und Institutionen geprüft.",
+      "Kurzfristige Ersparnisse werden gegen langfristige Folgekosten gestellt.",
+      "Risikomanagement verbindet Daten, Szenarien, Schutzlinien und Verantwortung.",
+    ],
+    more: [
+      ["Kapital, Banken und ESG", "wirkungssteuerung/kapital-banken-esg/"],
+      ["Lieferketten", "wirkungssteuerung/lieferketten/"],
+      ["Datenqualität", "begriffe/datenqualitaet/"],
+    ],
+  },
+  lieferketten: {
+    type: "Konzept",
+    cluster: "Produkte & Lieferketten",
+    what:
+      "Lieferketten werden in der Wirkungsökonomie als Wirkpfade gelesen: Rohstoffe, Arbeit, Transport, Produktion, Nutzung, Entsorgung und regionale Folgen hängen zusammen.",
+    why:
+      "Wenn nur der Endpreis zählt, verschwinden Arbeitsbedingungen, Rohstoffrisiken, Emissionen, Abhängigkeiten und Reparierbarkeit aus der Entscheidung.",
+    how: [
+      "Die Bilanzgrenze wird vom Produkt zum Lebensweg erweitert.",
+      "Wirkungsdaten werden mit Beschaffung, Produktpass und Scorecards verknüpft.",
+      "Zielkonflikte zwischen Preis, Versorgung, Resilienz und Schutzstandards werden sichtbar.",
+    ],
+    more: [
+      ["Digitaler Produktpass", "wirkungssteuerung/digitaler-produktpass/"],
+      ["Beschaffung & Förderung", "wirkungssteuerung/beschaffung-foerderung/"],
+      ["Wirtschaft & Unternehmen", "wirkungsfelder/wirtschaft-unternehmen/"],
+    ],
+  },
+  "beschaffung-foerderung": {
+    type: "Konzept",
+    cluster: "Staat & Governance",
+    what:
+      "Beschaffung und Förderung sind starke Hebel, weil öffentliche Mittel und öffentliche Nachfrage Märkte prägen. Sie können Wirkung belohnen oder alte Schäden stabilisieren.",
+    why:
+      "Wenn Zuschläge nur nach niedrigstem Preis oder formaler Erfüllung vergeben werden, bleiben Lebenszykluskosten, soziale Wirkung, Klima, Resilienz und Innovation zu schwach berücksichtigt.",
+    how: [
+      "Vergabe- und Förderkriterien werden mit Wirkungszielen verbunden.",
+      "Transparente Kriterien schützen vor Willkür und Scheingenauigkeit.",
+      "Wirkung wird in Pilotprojekten, Beschaffung und Förderung praktisch rückgekoppelt.",
+    ],
+    more: [
+      ["Wirkungshaushalt", "wirkungssteuerung/wirkungshaushalt/"],
+      ["Scorecards", "wirkungssteuerung/scorecards/"],
+      ["Staat, Recht & Demokratie", "wirkungsfelder/staat-recht-demokratie/"],
+    ],
+  },
+};
+
 const anschlussraeume = [
   "Wissenschaft",
   "Politik",
@@ -322,6 +670,7 @@ function updateNavigation() {
         { label: "Kommunen", href: "fuer/kommunen.html", match: ["fuer/kommunen.html"] },
         { label: "Investor:innen", href: "fuer/investoren.html", match: ["fuer/investoren.html"] },
         { label: "Journalismus", href: "fuer/journalismus.html", match: ["fuer/journalismus.html"] },
+        { label: "Wissenschaft", href: "fuer/wissenschaft-forschung.html", match: ["fuer/wissenschaft-forschung.html"] },
       ],
     },
     {
@@ -370,9 +719,9 @@ function updateNavigation() {
         { label: "Bibliothek", href: "bibliothek/", match: ["bibliothek/"] },
         { label: "Journal", href: "blog.html", match: ["blog.html", "blog/"] },
         { label: "Online-Buch", href: "referenz/", match: ["referenz/"] },
-        { label: "Dokumentenregistry", href: "downloads.html", match: ["downloads.html", "downloads/"] },
+        { label: "Dokumentenbibliothek", href: "bibliothek/", match: ["bibliothek/", "downloads.html", "downloads/"] },
         { label: "Quellen", href: "quellen/", match: ["quellen/"] },
-        { label: "RSS & Updates", href: "updates/", match: ["updates/"] },
+        { label: "Updates & RSS", href: "updates/", match: ["updates/"] },
       ],
     },
   ];
@@ -530,7 +879,7 @@ function renderLearningPortal() {
 function renderWirkungssteuerungPortal() {
   const base = "../";
   const cards = steuerungPages.map(([slug, title, text]) => ({
-    kicker: "Baustein",
+    kicker: `${steuerungDetails[slug]?.type || "Baustein"} · ${steuerungDetails[slug]?.cluster || "Wirkungssteuerung"}`,
     title,
     text,
     links: [[`${title} öffnen`, `wirkungssteuerung/${slug}/`]],
@@ -545,11 +894,18 @@ function renderWirkungssteuerungPortal() {
     subtitle:
       "Die zentrale Frage lautet nicht nur, ob Wirkung sichtbar wird. Die zentrale Frage lautet, ob sie Preise, Steuern, Kapital, Einkommen, Beschaffung, Produkte, Unternehmen und Staat verändert.",
     actions: [
-      ["Überblick lesen", "wirkungssteuerung/ueberblick/", "primary"],
-      ["Scorecards verstehen", "wirkungssteuerung/scorecards/", "secondary"],
-      ["Wirkungsfelder öffnen", "wirkungsfelder/", "secondary"],
+      ["Wirkungshaushalt verstehen", "wirkungssteuerung/wirkungshaushalt/", "primary"],
+      ["Scorecards öffnen", "wirkungssteuerung/scorecards/", "secondary"],
+      ["Apfelbeispiel öffnen", "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/", "secondary"],
     ],
     content: `
+      <section class="section">
+        <div class="card">
+          <p class="card-kicker">Alltag vor Bausteinliste</p>
+          <h2 class="card-title">Wirkungssteuerung klingt abstrakt. Fünf Beispiele zeigen, was gemeint ist.</h2>
+          <p class="card-text">Ein Stadtbaum kann Hitze, Gesundheit und Aufenthaltsqualität verändern. Ein T-Shirt trägt Wasser, Arbeit, Transport und Entsorgung mit. Eine Kita-Ausgabe kann spätere Bildungs-, Arbeitsmarkt- und Gesundheitskosten senken. Ein Produktpreis kann Schäden ausblenden. Eine Beschaffung kann bessere Lösungen überhaupt erst marktfähig machen.</p>
+        </div>
+      </section>
       <section class="section section-soft">
         <div class="section-header">
           <p class="hero-kicker">Kernlogik</p>
@@ -577,6 +933,8 @@ function renderWirkungssteuerungPortal() {
 
 function renderSteuerungDetail(slug, title, text) {
   const base = "../../";
+  const detail = steuerungDetails[slug] || steuerungDetails.ueberblick;
+  const moreLinks = detail.more?.length ? detail.more : [["Wirkungssteuerung", "wirkungssteuerung/"], ["Bibliothek", "bibliothek/"]];
   return shell({
     base,
     route: `wirkungssteuerung/${slug}/`,
@@ -593,32 +951,42 @@ function renderSteuerungDetail(slug, title, text) {
     content: `
       <section class="section section-soft">
         <div class="section-header">
-          <p class="hero-kicker">Einordnung</p>
-          <h2>Was wird hier rückgekoppelt?</h2>
-          <p>Dieser Baustein gehört zur Wirkungssteuerung. Er verbindet Wirkungspotenzial, Wirkmechanismus, Wirkungsbewertung und mögliche Wirkungslenkung mit realen Entscheidungsräumen.</p>
+          <p class="hero-kicker">${esc(detail.type)} · ${esc(detail.cluster)}</p>
+          <h2>Was ist das?</h2>
+          <p>${esc(detail.what)}</p>
         </div>
-        ${cardGrid(base, [
-          {
-            kicker: "Ausgangspunkt",
-            title: "Der alte Maßstab bleibt zu eng.",
-            text: "Geld, Output, Rendite oder Rechtskonformität zeigen nicht automatisch, ob Mensch, Planet und Demokratie gestärkt oder geschädigt werden.",
-          },
-          {
-            kicker: "WÖk-Verschiebung",
-            title: "Wirkung wird entscheidungsrelevant.",
-            text: "Bewertete Wirkung muss in Preise, Steuern, Kapitalzugang, Beschaffung, Produktgestaltung, Einkommen oder öffentliche Haushalte zurückfließen.",
-          },
-          {
-            kicker: "Schutzlinie",
-            title: "Keine automatische Personenbewertung.",
-            text: "Bewertet werden Wirkungen von Produkten, Regeln, Organisationen, Investitionen und Systemen - nicht Menschen als moralische Rangliste.",
-          },
-          {
-            kicker: "Anschluss",
-            title: "Pilotierbar, prüfbar, kritisierbar.",
-            text: "Der Baustein bleibt anschlussfähig für Wissenschaft, Politik, Verwaltung, Unternehmen, Finanzsystem, Bildung und öffentliche Kritik.",
-          },
-        ])}
+        <div class="card-grid two">
+          <article class="card">
+            <p class="card-kicker">Warum jetzt?</p>
+            <h3 class="card-title">Wirkung muss entscheidungsrelevant werden.</h3>
+            <p class="card-text">${esc(detail.why)}</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Wie funktioniert es?</p>
+            <h3 class="card-title">Vom Auslöser zur Rückkopplung.</h3>
+            <ul class="check-list">
+              ${detail.how.map((item) => `<li>${esc(item)}</li>`).join("\n              ")}
+            </ul>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Schutzlinie</p>
+            <h3 class="card-title">Keine automatische Personenbewertung.</h3>
+            <p class="card-text">Wirkungssteuerung bewertet Wirkungen von Produkten, Regeln, Organisationen, Investitionen und Systemen. Sie ersetzt keine demokratische Entscheidung und keine Rechtsprüfung.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Wo geht es weiter?</p>
+            <h3 class="card-title">Vertiefung und Anschluss.</h3>
+            <p class="card-text">Diese Seite ist der fachliche Einstieg. Die Vertiefung liegt in verwandten Bausteinen, Wirkungsfeldern, Glossar und Bibliothek.</p>
+            <div class="portal-card-actions">${linkList(base, moreLinks)}</div>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="card">
+          <p class="card-kicker">Wirkungsökonomische Logik</p>
+          <h2 class="card-title">Auslöser → Wirkungspotenzial → Bewertung → Lenkung.</h2>
+          <p class="card-text">Der Baustein ist nur dann sinnvoll, wenn er eine reale Zustandsveränderung sichtbar macht: Was löst eine Entscheidung aus, welche Wirkung kann entstehen, wie wird sie für Mensch, Planet und Demokratie bewertet und welche Rückkopplung folgt daraus?</p>
+        </div>
       </section>
       <section class="section">
         <div class="card">
@@ -675,7 +1043,7 @@ function updateStartPage() {
   const block = `
 <section class="section section-soft" id="wirkungslogik-2-1" aria-labelledby="wirkungslogik-2-1-title">
   <div class="section-header">
-    <p class="hero-kicker">Orientierung 2.1</p>
+    <p class="hero-kicker">Grundlogik</p>
     <h2 id="wirkungslogik-2-1-title">Die Website folgt einer klaren Bewegungslogik.</h2>
     <p>Die Wirkungsökonomie ist nicht zuerst ein Debattentool. Sie ist ein Ordnungsmodell: Wirkung sichtbar machen, bewerten und in Preise, Steuern, Einkommen, Kapital, Produkte, Unternehmen, Staat und Alltag zurückführen.</p>
   </div>

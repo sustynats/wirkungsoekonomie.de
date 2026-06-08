@@ -80,6 +80,20 @@ function pageKind(rel, html) {
   return "Methode";
 }
 
+function kindWithArticle(kind) {
+  const labels = {
+    Rechner: "Ein Rechner",
+    Scanner: "Ein Scanner",
+    Dashboard: "Ein Dashboard",
+    Register: "Ein Register",
+    Check: "Ein Check",
+    Demo: "Eine Demo",
+    Rechtsmodell: "Ein Rechtsmodell",
+    Methode: "Eine Methode",
+  };
+  return labels[kind] || `Ein ${kind}`;
+}
+
 function statusFor(kind, rel, html) {
   const text = `${rel} ${html}`.toLowerCase();
   if (text.includes("in vorbereitung")) return "in Vorbereitung";
@@ -138,7 +152,7 @@ function blockFor(file) {
         </div>
         <div class="card-grid three tool-template-grid">
           <article class="card"><p class="card-kicker">Nutzerfrage</p><h3 class="card-title">Womit komme ich hierher?</h3><p class="card-text">${esc(userQuestion(kind, title))}</p></article>
-          <article class="card"><p class="card-kicker">Was ist das?</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">Ein ${esc(kind.toLowerCase())} der Wirkungsökonomie: modellhaft, erklärend und als Orientierung gedacht - nicht als amtliche Bewertung.</p></article>
+          <article class="card"><p class="card-kicker">Was ist das?</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(kindWithArticle(kind))} der Wirkungsökonomie: modellhaft, erklärend und als Orientierung gedacht - nicht als amtliche Bewertung.</p></article>
           <article class="card"><p class="card-kicker">Heutige Blindstelle</p><h3 class="card-title">Was bleibt sonst unsichtbar?</h3><p class="card-text">Oft werden Kosten, Output, Reichweite oder Einzelwerte betrachtet. Wirkpfad, Nebenfolgen, Datenqualität und demokratische Rückkopplung bleiben dann zu schwach sichtbar.</p></article>
           <article class="card"><p class="card-kicker">Was gibst du ein?</p><h3 class="card-title">Input</h3><p class="card-text">${esc(inputs(kind))}</p></article>
           <article class="card"><p class="card-kicker">Was bekommst du heraus?</p><h3 class="card-title">Output</h3><p class="card-text">${esc(outputs(kind))}</p></article>

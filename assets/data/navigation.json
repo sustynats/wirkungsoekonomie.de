@@ -52,6 +52,15 @@
       ]
     },
     {
+      "label": "Öffentlicher Wirkungsraum",
+      "href": "oeffentlicher-wirkungsraum/",
+      "match": [
+        "oeffentlicher-wirkungsraum/",
+        "wirkungsradar/",
+        "woek-ki/"
+      ]
+    },
+    {
       "label": "Praxis & Tools",
       "href": "werkzeuge/",
       "match": [
@@ -64,9 +73,7 @@
         "scorecard-dashboard.html",
         "erleben/",
         "erleben.html",
-        "ausprobieren/",
-        "oeffentlicher-wirkungsraum/",
-        "wirkungsradar/"
+        "ausprobieren/"
       ]
     },
     {
@@ -312,6 +319,13 @@
           "match": [
             "fuer/journalismus.html"
           ]
+        },
+        {
+          "label": "Wissenschaft",
+          "href": "fuer/wissenschaft-forschung.html",
+          "match": [
+            "fuer/wissenschaft-forschung.html"
+          ]
         }
       ]
     },
@@ -503,9 +517,10 @@
           ]
         },
         {
-          "label": "Dokumentenregistry",
-          "href": "downloads.html",
+          "label": "Dokumentenbibliothek",
+          "href": "bibliothek/",
           "match": [
+            "bibliothek/",
             "downloads.html",
             "downloads/"
           ]
@@ -518,7 +533,7 @@
           ]
         },
         {
-          "label": "RSS & Updates",
+          "label": "Updates & RSS",
           "href": "updates/",
           "match": [
             "updates/"
