@@ -558,6 +558,28 @@ const steuerungDetails = {
   },
 };
 
+const steuerungSubjects = {
+  ueberblick: { subject: "Der Überblick", plural: false },
+  wirkungssteuer: { subject: "Die Wirkungssteuer", plural: false },
+  produktpreise: { subject: "Produktpreise", plural: true },
+  wustg: { subject: "Das Wirkungsumsatzsteuergesetz", plural: false },
+  wstg: { subject: "Das Wirkungssteuergesetz", plural: false },
+  westg: { subject: "Das Wirkungseinkommensteuergesetz", plural: false },
+  wirkungseinkommen: { subject: "Das Wirkungseinkommen", plural: false },
+  wirkungsrente: { subject: "Die Wirkungsrente", plural: false },
+  wirkungshaushalt: { subject: "Der Wirkungshaushalt", plural: false },
+  wirkungsrat: { subject: "Der Wirkungsrat", plural: false },
+  scorecards: { subject: "Scorecards", plural: true },
+  "woek-ids": { subject: "WÖk-IDs", plural: true },
+  "reverse-merit-order": { subject: "Die Reverse Merit Order", plural: false },
+  "csrd-esrs-gri": { subject: "CSRD, ESRS und GRI", plural: true },
+  "digitaler-produktpass": { subject: "Der digitale Produktpass", plural: false },
+  "kapital-banken-esg": { subject: "Kapital, Banken und ESG", plural: true },
+  risikomanagement: { subject: "Risikomanagement", plural: false },
+  lieferketten: { subject: "Lieferketten", plural: true },
+  "beschaffung-foerderung": { subject: "Beschaffung und Förderung", plural: true },
+};
+
 const anschlussraeume = [
   "Wissenschaft",
   "Politik",
@@ -935,6 +957,26 @@ function renderSteuerungDetail(slug, title, text) {
   const base = "../../";
   const detail = steuerungDetails[slug] || steuerungDetails.ueberblick;
   const moreLinks = detail.more?.length ? detail.more : [["Wirkungssteuerung", "wirkungssteuerung/"], ["Bibliothek", "bibliothek/"]];
+  const subjectMeta = steuerungSubjects[slug] || { subject: title, plural: false };
+  const subject = subjectMeta.subject;
+  const subjectInSentence = subject.replace(/^Der /, "der ").replace(/^Die /, "die ").replace(/^Das /, "das ");
+  const be = subjectMeta.plural ? "sind" : "ist";
+  const rateVerb = subjectMeta.plural ? "bewerten" : "bewertet";
+  const reachVerb = subjectMeta.plural ? "greifen" : "greift";
+  const whyTitle = detail.whyTitle || `${subject}: warum dieser Baustein jetzt zählt.`;
+  const howTitle = detail.howTitle || `So ${reachVerb} ${subjectInSentence} in Entscheidungen ein.`;
+  const guardTitle = detail.guardTitle || `${subject} ${be} keine Personenbewertung.`;
+  const guardText =
+    detail.guard ||
+    `${subject} ${rateVerb} nicht Menschen, sondern Wirkungen von Regeln, Produkten, Investitionen, Organisationen oder öffentlichen Entscheidungen. Schutzlinien, Rechtsweg und demokratische Zuständigkeit bleiben Voraussetzung.`;
+  const nextTitle = detail.nextTitle || `${subject} weiter einordnen.`;
+  const nextText =
+    detail.next ||
+    `Der nächste sinnvolle Schritt ist, ${subjectInSentence} mit verwandten Bausteinen, passenden Wirkungsfeldern und belastbaren Quellen zu verbinden. So bleibt der Baustein kein Schlagwort, sondern wird prüfbare Wirkungslogik.`;
+  const logicTitle = detail.logicTitle || `${subject}: Auslöser → Wirkungspotenzial → Bewertung → Lenkung.`;
+  const logicText =
+    detail.logic ||
+    `${subject} ${be} nur dann wirkungsökonomisch sinnvoll, wenn eine reale Zustandsveränderung sichtbar wird: Was löst eine Entscheidung aus, welche Wirkung kann entstehen, wie wird sie für Mensch, Planet und Demokratie bewertet und welche Rückkopplung folgt daraus?`;
   return shell({
     base,
     route: `wirkungssteuerung/${slug}/`,
@@ -957,26 +999,26 @@ function renderSteuerungDetail(slug, title, text) {
         </div>
         <div class="card-grid two">
           <article class="card">
-            <p class="card-kicker">Warum jetzt?</p>
-            <h3 class="card-title">Wirkung muss entscheidungsrelevant werden.</h3>
+            <p class="card-kicker">Ausgangspunkt</p>
+            <h3 class="card-title">${esc(whyTitle)}</h3>
             <p class="card-text">${esc(detail.why)}</p>
           </article>
           <article class="card">
             <p class="card-kicker">Wie funktioniert es?</p>
-            <h3 class="card-title">Vom Auslöser zur Rückkopplung.</h3>
+            <h3 class="card-title">${esc(howTitle)}</h3>
             <ul class="check-list">
               ${detail.how.map((item) => `<li>${esc(item)}</li>`).join("\n              ")}
             </ul>
           </article>
           <article class="card">
             <p class="card-kicker">Schutzlinie</p>
-            <h3 class="card-title">Keine automatische Personenbewertung.</h3>
-            <p class="card-text">Wirkungssteuerung bewertet Wirkungen von Produkten, Regeln, Organisationen, Investitionen und Systemen. Sie ersetzt keine demokratische Entscheidung und keine Rechtsprüfung.</p>
+            <h3 class="card-title">${esc(guardTitle)}</h3>
+            <p class="card-text">${esc(guardText)}</p>
           </article>
           <article class="card">
             <p class="card-kicker">Wo geht es weiter?</p>
-            <h3 class="card-title">Vertiefung und Anschluss.</h3>
-            <p class="card-text">Diese Seite ist der fachliche Einstieg. Die Vertiefung liegt in verwandten Bausteinen, Wirkungsfeldern, Glossar und Bibliothek.</p>
+            <h3 class="card-title">${esc(nextTitle)}</h3>
+            <p class="card-text">${esc(nextText)}</p>
             <div class="portal-card-actions">${linkList(base, moreLinks)}</div>
           </article>
         </div>
@@ -984,15 +1026,15 @@ function renderSteuerungDetail(slug, title, text) {
       <section class="section">
         <div class="card">
           <p class="card-kicker">Wirkungsökonomische Logik</p>
-          <h2 class="card-title">Auslöser → Wirkungspotenzial → Bewertung → Lenkung.</h2>
-          <p class="card-text">Der Baustein ist nur dann sinnvoll, wenn er eine reale Zustandsveränderung sichtbar macht: Was löst eine Entscheidung aus, welche Wirkung kann entstehen, wie wird sie für Mensch, Planet und Demokratie bewertet und welche Rückkopplung folgt daraus?</p>
+          <h2 class="card-title">${esc(logicTitle)}</h2>
+          <p class="card-text">${esc(logicText)}</p>
         </div>
       </section>
       <section class="section">
         <div class="card">
-          <p class="card-kicker">Nächster Schritt</p>
-          <h2 class="card-title">Vom Begriff zur Anwendung.</h2>
-          <p class="card-text">Nutze diesen Baustein als Einstieg. Vertiefung liegt in Glossar, Bibliothek, Wirkungsfeldern, Werkzeugen und passenden Dossiers.</p>
+          <p class="card-kicker">Anwendung</p>
+          <h2 class="card-title">Von ${esc(title)} zur konkreten Entscheidung.</h2>
+          <p class="card-text">Prüfe den Baustein an einem realen Fall: Welche Daten fehlen, welche Wirkung wird verschoben, wer entscheidet demokratisch und welche Schutzlinie verhindert Scheingenauigkeit?</p>
           <div class="portal-card-actions">${linkList(base, [
             ["Glossar", "begriffe/"],
             ["Werkzeuge", "werkzeuge/"],
