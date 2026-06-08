@@ -213,6 +213,43 @@ const steuerungPages = [
   ["beschaffung-foerderung", "Beschaffung & Förderung", "Wie öffentliche Nachfrage und Förderung positive Netto-Wirkung wahrscheinlicher machen."],
 ];
 
+const steuerungPageMap = Object.fromEntries(
+  steuerungPages.map(([slug, title, text]) => [slug, { title, text }])
+);
+
+const steuerungClusters = [
+  {
+    title: "Preise & Steuern",
+    text: "Wie Preise und Steuerlogiken externe Schäden, positive Netto-Wirkung und politische Schutzlinien sichtbar machen.",
+    slugs: ["wirkungssteuer", "produktpreise", "wustg", "wstg"],
+  },
+  {
+    title: "Einkommen & Rente",
+    text: "Wie Arbeit, Care, Prävention, Automatisierung und gesellschaftliche Stabilisierung in Einkommens- und Rentenlogiken zurückwirken.",
+    slugs: ["wirkungseinkommen", "wirkungsrente", "westg"],
+  },
+  {
+    title: "Staat & Governance",
+    text: "Wie öffentliche Mittel, demokratische Kontrolle, Beschaffung und Förderung nach Wirkung statt nur nach Ausgabenstellen gesteuert werden.",
+    slugs: ["wirkungshaushalt", "wirkungsrat", "beschaffung-foerderung"],
+  },
+  {
+    title: "Kapital & Märkte",
+    text: "Wie Kapital, Banken, ESG, Risiken und Berichtssysteme an reale Wirkungen statt nur an Kennzahlen und Etiketten rückgekoppelt werden.",
+    slugs: ["kapital-banken-esg", "risikomanagement", "csrd-esrs-gri"],
+  },
+  {
+    title: "Produkte & Lieferketten",
+    text: "Wie Produktdaten, Lieferketten, Scorecards und digitale Produktpässe den Lebensweg von Produkten prüfbar machen.",
+    slugs: ["scorecards", "digitaler-produktpass", "lieferketten"],
+  },
+  {
+    title: "Architektur & Prinzipien",
+    text: "Welche Grundlogik die Bausteine zusammenhält: Überblick, Schutz vor Schönrechnung und stabile Verknüpfungen.",
+    slugs: ["ueberblick", "reverse-merit-order", "woek-ids"],
+  },
+];
+
 const steuerungDetails = {
   ueberblick: {
     type: "Konzept",
@@ -900,12 +937,28 @@ function renderLearningPortal() {
 
 function renderWirkungssteuerungPortal() {
   const base = "../";
-  const cards = steuerungPages.map(([slug, title, text]) => ({
-    kicker: `${steuerungDetails[slug]?.type || "Baustein"} · ${steuerungDetails[slug]?.cluster || "Wirkungssteuerung"}`,
-    title,
-    text,
-    links: [[`${title} öffnen`, `wirkungssteuerung/${slug}/`]],
-  }));
+  const clusterSections = steuerungClusters
+    .map((cluster, index) => {
+      const cards = cluster.slugs.map((slug) => {
+        const page = steuerungPageMap[slug];
+        const detail = steuerungDetails[slug];
+        return {
+          kicker: `${detail?.type || "Baustein"} · ${cluster.title}`,
+          title: page.title,
+          text: page.text,
+          links: [[`${page.title} öffnen`, `wirkungssteuerung/${slug}/`]],
+        };
+      });
+      return `<section class="section ${index % 2 === 0 ? "section-soft" : ""}">
+        <div class="section-header">
+          <p class="hero-kicker">Cluster ${index + 1}</p>
+          <h2>${esc(cluster.title)}</h2>
+          <p>${esc(cluster.text)}</p>
+        </div>
+        ${cardGrid(base, cards)}
+      </section>`;
+    })
+    .join("\n");
   return shell({
     base,
     route: "wirkungssteuerung/",
@@ -931,12 +984,12 @@ function renderWirkungssteuerungPortal() {
       <section class="section section-soft">
         <div class="section-header">
           <p class="hero-kicker">Kernlogik</p>
-          <h2>Wirkung statt Kapital als blinder Maßstab.</h2>
-          <p>Kapital bleibt Werkzeug. Markt bleibt. Aber die entscheidende Frage wird erweitert: Welche Wirkung erzeugt Kapital - für Mensch, Planet und Demokratie - und wie wird diese Wirkung rückgekoppelt?</p>
+          <h2>19 Bausteine, sechs Steuerungsräume.</h2>
+          <p>Wirkungssteuerung ist kein einzelnes Instrument. Sie verbindet Preise, Steuern, Einkommen, Haushalte, Kapital, Produkte, Beschaffung und Schutzprinzipien. Die sechs Cluster zeigen, wo eine Entscheidung ansetzt.</p>
         </div>
         ${contextSearch(base, "z. B. Wirkungssteuer, Produktpreis, Rente, Kapital, Beschaffung", "wirkungssteuerung")}
-        ${cardGrid(base, cards)}
       </section>
+      ${clusterSections}
       <section class="section">
         <div class="card">
           <p class="card-kicker">Beispiele</p>

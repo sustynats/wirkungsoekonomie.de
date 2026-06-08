@@ -1,7 +1,8 @@
 # Offene Punkte Website 2.0 nach P0
 
-Stand: 2026-06-08  
-P0-Live-Basis: `d80f0f1458` plus P0-Nacharbeit Wirkungssteuerung  
+Stand: 2026-06-08
+
+P0-Live-Basis: `0130768df5` plus P1-Start Wirkungssteuerung-Hub
 Backup-Tag: `backup/p0-before-stabilisierung-20260608-101832`
 
 Diese Liste sammelt Restpunkte, die nicht in der P0-Stabilisierung verschwinden dürfen. Sie ist bewusst redaktionell und technisch getrennt, damit wir am Ende eine saubere Abnahme machen können.
@@ -11,7 +12,8 @@ Diese Liste sammelt Restpunkte, die nicht in der P0-Stabilisierung verschwinden 
 1. Wirkungssteuerung fachlich vertiefen
    - Die 19 Bausteinseiten sind nicht mehr identische Platzhalter, brauchen aber deutlich mehr redaktionelle Tiefe.
    - Priorität: Wirkungshaushalt, Wirkungssteuer, Scorecards, Wirkungsrat, Reverse Merit Order.
-   - Hub in 6 Cluster gruppieren: Preise & Steuern, Einkommen & Rente, Staat & Governance, Kapital & Märkte, Produkte & Lieferketten, Architektur & Prinzipien.
+   - Erledigt im P1-Start: Hub in 6 Cluster gruppiert: Preise & Steuern, Einkommen & Rente, Staat & Governance, Kapital & Märkte, Produkte & Lieferketten, Architektur & Prinzipien.
+   - Offen: die fünf priorisierten Bausteinseiten fachlich vertiefen und mit Bibliothek, Wirkungsfeldern und Beispielen stärker verknüpfen.
 
 2. Werkzeuge und Tools schärfen
    - Tool-Finder mit Nutzerfragen weiter nach oben.
