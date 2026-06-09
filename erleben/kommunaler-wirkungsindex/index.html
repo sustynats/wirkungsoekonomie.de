@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kommunaler Wirkungsindex Beta: Gesundheitscheck für Kommunen | Wirkungsökonomie erleben</title>
-    <meta name="description" content="Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden: Er zeigt Wirkung auf Menschen, Umwelt und Demokratie statt nur einzelne Statistikwerte.">
+    <meta name="description" content="Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden: Er zeigt Wirkung auf Mensch, Planet und Demokratie statt nur einzelne Statistikwerte.">
     <meta name="search_title" content="KWI Beta: Gesundheitscheck für Kommunen">
     <meta name="search_description" content="Kommunale SDG-Daten als verständliches Wirkungsprofil für Mensch, Planet und Demokratie.">
     <meta name="search_section" content="Erleben">
@@ -166,6 +166,122 @@
         gap: .35rem;
         margin: .5rem 0 0;
         padding-left: 1.15rem;
+      }
+
+      .kwi-feedback-section {
+        display: grid;
+        gap: 1.1rem;
+      }
+
+      .kwi-feedback-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: .85rem;
+      }
+
+      .kwi-feedback-card,
+      .kwi-process-chain,
+      .kwi-stage-box,
+      .kwi-plain-box,
+      .kwi-guardrail-box {
+        border: 1px solid rgba(21, 37, 49, .14);
+        border-radius: 8px;
+        padding: 1rem;
+        background: #fff;
+      }
+
+      .kwi-feedback-card {
+        display: grid;
+        gap: .45rem;
+        align-content: start;
+      }
+
+      .kwi-feedback-card h3,
+      .kwi-process-chain h3,
+      .kwi-stage-box h3,
+      .kwi-plain-box h3,
+      .kwi-guardrail-box h3 {
+        margin-bottom: .25rem;
+      }
+
+      .kwi-decision-sentence {
+        border-left: 4px solid #152531;
+        padding: .25rem 0 .25rem .85rem;
+        font-weight: 800;
+        font-size: 1.15rem;
+      }
+
+      .kwi-process-list {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: .65rem;
+        margin: .75rem 0 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: kwi-process;
+      }
+
+      .kwi-process-list li {
+        counter-increment: kwi-process;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: .55rem;
+        align-items: start;
+        border: 1px solid rgba(21, 37, 49, .12);
+        border-radius: 8px;
+        padding: .75rem;
+        background: #f8faf8;
+        min-height: 100%;
+      }
+
+      .kwi-process-list li::before {
+        content: counter(kwi-process);
+        display: inline-grid;
+        place-items: center;
+        width: 1.65rem;
+        height: 1.65rem;
+        border-radius: 999px;
+        background: #152531;
+        color: #fff;
+        font-weight: 800;
+        font-size: .88rem;
+      }
+
+      .kwi-stage-box {
+        background: #f6f5f0;
+      }
+
+      .kwi-stage-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: .8rem;
+        margin-top: .85rem;
+      }
+
+      .kwi-stage-item {
+        border-radius: 8px;
+        padding: .85rem;
+        background: #fff;
+        border: 1px solid rgba(21, 37, 49, .12);
+      }
+
+      .kwi-stage-item strong {
+        display: block;
+        margin-bottom: .35rem;
+      }
+
+      .kwi-future-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .45rem .9rem;
+        margin: .75rem 0 0;
+        padding-left: 1.15rem;
+      }
+
+      .kwi-feedback-cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .65rem;
       }
 
       .kwi-result {
@@ -585,7 +701,11 @@
         .kwi-interpretation,
         .kwi-democracy-concept,
         .kwi-simple-explainer,
-        .kwi-do-dont-grid {
+        .kwi-do-dont-grid,
+        .kwi-feedback-grid,
+        .kwi-process-list,
+        .kwi-stage-grid,
+        .kwi-future-list {
           grid-template-columns: 1fr;
         }
       }
@@ -638,7 +758,7 @@
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Erleben</a></nav>
           <p class="hero-kicker">Beta-Tool · KWI 1.0</p>
           <h1>Wie gesund ist Ihre Kommune?</h1>
-          <p>Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Umwelt und Demokratie vor Ort tatsächlich geht.</p>
+          <p>Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Planet und Demokratie vor Ort tatsächlich geht. Planet meint dabei Klima, Umwelt, Ressourcen und natürliche Lebensgrundlagen.</p>
         </div>
 
         <div class="kwi-simple-explainer" aria-label="Einfache Erklärung des KWI">
@@ -703,12 +823,119 @@
 
         <div class="kwi-result" data-kwi-result aria-live="polite"></div>
       </section>
+      <section class="section kwi-feedback-section" aria-labelledby="kwi-feedback-title">
+        <div class="section-header">
+          <p class="hero-kicker">Kommunale Wirkungsrückkopplung</p>
+          <h2 id="kwi-feedback-title">Wofür wird der KWI gebraucht?</h2>
+          <p>Der KWI ist in der Wirkungsökonomie nicht nur ein Bericht. Er ist eine Rückkopplungsschicht: Er macht sichtbar, wo kommunales Handeln auf Mensch, Planet und Demokratie wirkt - und wo Rat, Verwaltung und Öffentlichkeit genauer hinschauen sollten.</p>
+        </div>
+
+        <p class="kwi-decision-sentence">Der KWI entscheidet nicht. Er macht entscheidbar.</p>
+
+        <div class="kwi-feedback-grid">
+          <article class="kwi-feedback-card">
+            <h3>1. Frühwarnsystem</h3>
+            <p>Der KWI zeigt auffällige Entwicklungen früh: zum Beispiel steigende soziale Belastung, ökologische Risiken, sinkende Handlungsfähigkeit oder Lücken in Beteiligung und Transparenz. Er sagt nicht: Diese Kommune ist gut oder schlecht. Er sagt: Hier lohnt sich eine genauere Prüfung.</p>
+          </article>
+          <article class="kwi-feedback-card">
+            <h3>2. Gemeinsame Sprache</h3>
+            <p>Kommunale Daten liegen oft getrennt vor: Haushalt, Klima, Soziales, Sicherheit, Beteiligung, Infrastruktur. Der KWI bringt sie in eine gemeinsame Frage: Welche Wirkung entsteht für Mensch, Planet und Demokratie?</p>
+          </article>
+          <article class="kwi-feedback-card">
+            <h3>3. Brücke zum Wirkungshaushalt</h3>
+            <p>In KWI 2.0 könnten die Ergebnisse mit Haushaltsprodukten, Investitionen und Maßnahmen verbunden werden. Dann wird sichtbar, welche Ausgaben auf welche Wirkung einzahlen - und wo Geld vor allem Symptome repariert, statt Ursachen zu verändern.</p>
+          </article>
+          <article class="kwi-feedback-card">
+            <h3>4. Priorisierung bei knappen Mitteln</h3>
+            <p>Kommunen müssen ständig entscheiden, obwohl Geld, Personal und Zeit knapp sind. Der KWI kann helfen, Maßnahmen zu vergleichen: Welche Maßnahme verbessert mehrere Wirkungsfelder zugleich? Wo entstehen Zielkonflikte? Wo lohnt Prävention mehr als spätere Reparatur?</p>
+          </article>
+          <article class="kwi-feedback-card">
+            <h3>5. Bessere Beteiligung</h3>
+            <p>Der KWI macht Debatten konkreter. Bürger:innen, Rat und Verwaltung diskutieren nicht nur über Einzelprojekte, sondern über Wirkungen: Wer profitiert? Wer ist betroffen? Welche Nebenwirkungen entstehen? Welche Daten fehlen noch?</p>
+          </article>
+          <article class="kwi-feedback-card">
+            <h3>6. Lernen und Nachsteuern</h3>
+            <p>Nach einer Entscheidung kann später erneut gemessen werden. Hat sich der Zustand verbessert? Haben Maßnahmen die erwartete Wirkung erzeugt? Muss nachgesteuert werden? So wird der KWI Teil eines lernenden kommunalen Systems.</p>
+          </article>
+        </div>
+
+        <div class="kwi-process-chain">
+          <h3>So würde der KWI steuern - ohne automatisch zu entscheiden</h3>
+          <p>Der KWI steuert nicht wie ein Algorithmus, der Entscheidungen trifft. Er steuert über Rückkopplung: Daten werden sichtbar, Zielkonflikte werden benannt, Entscheidungen werden nachvollziehbarer und ihre Folgen können später überprüft werden.</p>
+          <ol class="kwi-process-list">
+            <li>Daten sammeln</li>
+            <li>Wirkungsprofil erstellen</li>
+            <li>Auffälligkeiten und Datenlücken zeigen</li>
+            <li>Maßnahmen und Haushaltspositionen zuordnen</li>
+            <li>Zielkonflikte demokratisch diskutieren</li>
+            <li>Entscheidung treffen</li>
+            <li>Wirkung später erneut messen</li>
+            <li>Lernen und nachsteuern</li>
+          </ol>
+        </div>
+
+        <div class="kwi-stage-box">
+          <p class="card-kicker">Entwicklungspfad</p>
+          <h3>Drei Ausbaustufen</h3>
+          <p>Der KWI ist nicht der Endpunkt. Er ist der Einstieg in kommunale Wirkungsrückkopplung. Ein Bericht zeigt, was ist. Rückkopplung fragt, was daraus folgt.</p>
+          <div class="kwi-stage-grid">
+            <div class="kwi-stage-item">
+              <strong>KWI 1.0 - Status und Transparenz</strong>
+              <p>Aktueller Beta-/Statusansatz: Vorhandene öffentliche Daten werden zu einem Wirkungsprofil gebündelt. Sichtbar werden Status, Trend, Zielabstand, Datenqualität und Lücken.</p>
+            </div>
+            <div class="kwi-stage-item">
+              <strong>KWI 2.0 - Haushalt und Maßnahmen</strong>
+              <p>Künftige Ausbaustufe / Pilotlogik: Das Wirkungsprofil wird mit kommunalen Haushalten, Produkten, Investitionen, Beschaffung und Maßnahmen verbunden. Die Leitfrage lautet: Welche Ausgabe zahlt auf welche Wirkung ein?</p>
+            </div>
+            <div class="kwi-stage-item">
+              <strong>KWI 3.0 - Wirkung pro Euro und Szenarien</strong>
+              <p>Spätere Ausbaustufe: Künftig könnten Szenarien, Folgekosten, Prävention und Wirkung pro Euro ergänzt werden. Das Ergebnis wäre keine automatische Entscheidung, sondern eine bessere Grundlage für demokratische Priorisierung.</p>
+            </div>
+          </div>
+          <p><strong>Kurzform:</strong> KWI 1.0 zeigt den Status. KWI 2.0 verbindet ihn mit Haushalt und Maßnahmen. KWI 3.0 fragt nach Wirkung pro Euro.</p>
+        </div>
+
+        <div class="kwi-plain-box">
+          <h3>Einfach gesagt</h3>
+          <p>Stell dir vor, eine Stadt hat viele Messwerte: Schulabbruch, Grünflächen, Straftaten, Wahlbeteiligung, Finanzen, Energie, Armut, Mobilität. Jeder Wert allein erzählt nur ein Stück. Der KWI legt die Stücke nebeneinander und fragt: Wird das Leben vor Ort stabiler? Werden die natürlichen Lebensgrundlagen geschützt? Bleibt Demokratie handlungsfähig? Aus dieser Diagnose entsteht noch keine Entscheidung - aber eine bessere Frage an Politik und Verwaltung.</p>
+        </div>
+
+        <div class="kwi-plain-box">
+          <h3>Was könnte der KWI künftig konkret rückkoppeln?</h3>
+          <p>Perspektivisch, in Pilotkommunen oder in späteren Ausbaustufen könnte der KWI Rückkopplung vorbereiten für:</p>
+          <ul class="kwi-future-list">
+            <li>kommunale Haushaltsplanung</li>
+            <li>Investitionsprioritäten</li>
+            <li>Förderprogramme und Wirkungsfonds</li>
+            <li>Beschaffung und Vergabe</li>
+            <li>Stadtplanung und Quartiersentwicklung</li>
+            <li>Klimaanpassung und Resilienz</li>
+            <li>Sozial-, Bildungs- und Gesundheitsprävention</li>
+            <li>Beteiligungsprozesse</li>
+            <li>Open-Data- und Transparenzstrategie</li>
+            <li>Evaluation beschlossener Maßnahmen</li>
+          </ul>
+        </div>
+
+        <aside class="kwi-guardrail-box" role="note" aria-label="Schutzlinien für kommunale Rückkopplung">
+          <p class="card-kicker">Schutzlinien</p>
+          <h3>Rückkopplung ist keine automatische Steuerung.</h3>
+          <p>Diese Rückkopplung ist keine automatische Steuerung. Der KWI legt keine Politik fest, verteilt kein Geld automatisch und bewertet keine Bürger:innen. Er macht sichtbar, welche Wirkungsfragen vor einer Entscheidung gestellt werden sollten.</p>
+          <p>Der KWI ersetzt keine Politik. Er verbessert die Rückkopplung zwischen Daten, Haushalt, Maßnahmen und demokratischer Entscheidung.</p>
+        </aside>
+
+        <div class="kwi-feedback-cta" aria-label="Nächste Schritte zum KWI">
+          <a class="btn btn-primary" href="../../fuer/kommunen/kommunaler-wirkungsindex.html">Methodik und Datenkonzept lesen</a>
+          <a class="btn btn-secondary" href="../../fuer/kommunen.html">Kommunen-Seite öffnen</a>
+          <a class="btn btn-secondary" href="../../mitmachen.html">Pilotkommune werden</a>
+        </div>
+      </section>
 <!-- stage8-demo-governance:start -->
       <section class="section demo-governance" aria-labelledby="stage8-demo-erleben-kommunaler-wirkungsindex-index-html-title">
         <div class="section-header">
           <p class="hero-kicker">Demo-Methodik</p>
           <h2 id="stage8-demo-erleben-kommunaler-wirkungsindex-index-html-title">Was diese Demo zeigt und was nicht</h2>
-          <p>Dieser Standardblock gilt für Demos, Rechner, Scanner und interaktive Tools. Er trennt modellhafte Darstellung von amtlicher Bewertung, Beratung oder automatisierter Entscheidung.</p>
+          <p>Diese Demo trennt modellhafte Darstellung von amtlicher Bewertung, Beratung und automatischer Entscheidung.</p>
         </div>
         <aside class="protection-notice" role="note" aria-label="Schutzlinien dieser Demo">
           <p class="card-kicker">Schutzlinien</p>
@@ -771,7 +998,7 @@
         <div class="section-header">
           <p class="hero-kicker">Tool-Orientierung · Rechner · Demo / Modell</p>
           <h2 id="tool-orientierung-title">Wofür dieses Werkzeug da ist.</h2>
-          <p>Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden: Er zeigt Wirkung auf Menschen, Umwelt und Demokratie statt nur einzelne Statistikwerte.</p>
+          <p>Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden: Er zeigt Wirkung auf Mensch, Planet und Demokratie statt nur einzelne Statistikwerte.</p>
         </div>
         <div class="card-grid two tool-template-grid">
           <article class="card"><p class="card-kicker">Nutzerfrage</p><h3 class="card-title">Womit komme ich hierher?</h3><p class="card-text">Welche Wirkungslogik macht der Wie gesund ist Ihre Kommune? als Modellrechnung sichtbar?</p></article>
