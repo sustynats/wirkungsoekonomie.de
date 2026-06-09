@@ -11,7 +11,7 @@ const MASTER_DOCX =
   process.env.WOEK_DEBATTENKARTEN_MASTER_DOCX ||
   (fs.existsSync(MASTER_DOCX_V2) ? MASTER_DOCX_V2 : MASTER_DOCX_LEGACY);
 const PUBLIC_BASE = "https://wirkungsoekonomie.de";
-const DATA_STAND = "2026-06-07";
+const DATA_STAND = "2026-06-09";
 const CSS_VERSION = "20260605-master-debattenkarten";
 const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
 
