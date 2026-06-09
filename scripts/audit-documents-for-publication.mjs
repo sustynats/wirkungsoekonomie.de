@@ -1045,6 +1045,72 @@ const DOCUMENTS = [
     previewAllowed: true,
     section: "Essays & Debatte",
     order: 805
+  },
+  {
+    id: "fuenf-wellen-oeffentlicher-wirkung",
+    slug: "fuenf-wellen-oeffentlicher-wirkung",
+    title: "Die fünf Wellen öffentlicher Wirkung",
+    subtitle: "Das wirkungsökonomische Modell öffentlicher Kommunikation und Debattenführung",
+    fileName: "woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+    filePath: "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+    contentHtmlPath: "content/documents/online/fuenf-wellen-oeffentlicher-wirkung.inc",
+    documentType: "dossier",
+    status: "arbeitsfassung",
+    visibility: "public",
+    audience: ["Journalismus", "Politik", "Bildung", "Fachöffentlichkeit"],
+    level: "fortgeschritten",
+    summaryShort: "Dossier zum Wellen-Tiefen-Modell öffentlicher Wirkung: Es erklärt, wie Aufmerksamkeit, Emotion, Deutung, Resonanz und Verschiebung öffentliche Debatten prägen.",
+    whatToExpect: "Eine ausführliche Online- und PDF-Fassung mit Modelllogik, Debattenkarten, Resonanz-Kompass, Schutzlinien und redaktioneller Website-Architektur für den öffentlichen Wirkungsraum.",
+    keyQuestions: [
+      "Warum greifen Faktenchecks oft zu spät, wenn Debatten bereits Wirkung entfaltet haben?",
+      "Wie entstehen aus Aufmerksamkeit, Emotion und Deutung gesellschaftliche Resonanzräume?",
+      "Wie kann demokratische Kommunikation Wirkung prüfen, ohne Menschen zu bewerten oder Frames unkritisch zu spiegeln?"
+    ],
+    topics: ["Öffentlicher Wirkungsraum", "Wellen-Tiefen-Modell", "Debattenkarten", "Resonanz", "Frames", "Narrative", "Folgencheck", "Medien & Demokratie", "SDG+"],
+    methods: ["Wellen-Tiefen-Modell", "Wirkungsanalyse", "Resonanzraumanalyse", "Wirkungspfad-Analyse"],
+    impactFields: ["Demokratie", "Öffentlichkeit & Wissen", "Mensch"],
+    relatedDocuments: ["folgencheck-wirkungspolitische-sprache", "grundlagenpapier-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "systemmodell-wirkungsoekonomie"],
+    version: "v0.1",
+    date: "2026-06-08",
+    legalNotice: "Keine Wahlempfehlung, kein Rechtsgutachten, keine psychologische Diagnose und keine Bewertung einzelner Personen, Wähler:innen oder Gruppen.",
+    editorialNote: "Arbeitsfassung; Wirkungspotenziale öffentlicher Kommunikation werden modellhaft und vorsorgend geprüft.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Essays & Debatte",
+    order: 806
+  },
+  {
+    id: "fuenf-wellen-wirkungsentfaltung",
+    slug: "fuenf-wellen-wirkungsentfaltung",
+    title: "Die fünf Wellen der Wirkungsentfaltung",
+    subtitle: "Das Wellen-Tiefen-Modell als allgemeines wirkungsökonomisches Grundmuster",
+    fileName: "woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
+    filePath: "assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
+    contentHtmlPath: "content/documents/online/fuenf-wellen-wirkungsentfaltung.inc",
+    documentType: "dossier",
+    status: "arbeitsfassung",
+    visibility: "public",
+    audience: ["Fachöffentlichkeit", "Wissenschaft", "Strategie", "Methodik"],
+    level: "expert",
+    summaryShort: "Dossier zur allgemeinen Wirkungsentfaltung: Es überträgt die Wellen-Tiefen-Logik von öffentlicher Kommunikation auf Produkte, Märkte, Kapital, Politik und Institutionen.",
+    whatToExpect: "Eine ausführliche Online- und PDF-Fassung mit allgemeiner Modellarchitektur, Abgrenzung zum Wirkungsrad, Übertragungen auf Wirkungsräume und methodischen Schutzlinien.",
+    keyQuestions: [
+      "Warum lässt sich die Wellen-Tiefen-Logik über öffentliche Kommunikation hinaus verallgemeinern?",
+      "Wie unterscheiden sich Sichtbarkeit, Betroffenheit, Bewertung, Resonanz und Struktur von klassischen Output-Logiken?",
+      "Wie hilft das Modell, Wirkungsräume zu lesen, bevor sie vollständig messbar sind?"
+    ],
+    topics: ["Wirkungsentfaltung", "Wellen-Tiefen-Modell", "Wirkungsräume", "Wirkungsrad", "Rückkopplung", "Systemwirkung", "Resilienz", "Methodik"],
+    methods: ["Wellen-Tiefen-Modell", "Wirkungsraumanalyse", "Wirkungspfad-Analyse", "Systemanalyse"],
+    impactFields: ["Mensch", "Planet", "Demokratie", "Wirtschaft & Unternehmen"],
+    relatedDocuments: ["fuenf-wellen-oeffentlicher-wirkung", "grundlagenpapier-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "systemmodell-wirkungsoekonomie"],
+    version: "v0.1",
+    date: "2026-06-08",
+    legalNotice: "Keine amtliche Bewertungsmethode, keine automatische Entscheidung, keine Personenbewertung und keine Rechts-, Steuer-, Förder- oder Anlageberatung.",
+    editorialNote: "Arbeitsfassung; allgemeines Grundmuster der Wirkungsökonomie zur fachlichen Weiterentwicklung.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Methoden & Werkzeuge",
+    order: 407
   }
 ];
 
@@ -1364,7 +1430,7 @@ function auditDocuments(curatedDocs) {
   for (const doc of curatedDocs) {
     if (!PUBLIC_VISIBILITIES.has(doc.visibility) && !ARCHIVE_VISIBILITIES.has(doc.visibility)) continue;
     const text = extractText(doc.filePath);
-    const haystack = `${doc.title}\n${doc.subtitle}\n${doc.summaryShort}\n${doc.whatToExpect}\n${doc.legalNotice}\n${text}`;
+    const haystack = `${doc.title}\n${doc.subtitle}\n${doc.summaryShort}\n${doc.whatToExpect}\n${doc.status}\n${doc.version}\n${doc.date}\n${doc.editorialNote}\n${doc.legalNotice}\n${text}`;
     for (const rule of AUDIT_PATTERNS) {
       const match = haystack.match(rule.pattern);
       if (match) {
@@ -1845,7 +1911,7 @@ function writeModel(gatedDocs) {
   write(DOC_MODEL, `${JSON.stringify({
     schemaVersion: "2026-05-document-library-redesign",
     allowedValues: {
-      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "buch", "whitepaper", "working-paper", "paper", "konzept", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
+      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "buch", "whitepaper", "working-paper", "paper", "konzept", "dossier", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
       status: ["fuehrend", "aktuell", "fachoeffentlich", "diskussionsfassung", "arbeitsfassung", "in-pruefung", "archiv", "ersetzt", "intern", "review-erforderlich"],
       visibility: ["public", "expert_public", "archive", "review_required", "internal", "hidden"]
     },

@@ -4,8 +4,8 @@ Automatischer Produktionsschritt für öffentliche Downloadfassungen.
 
 ## Ergebnis
 
-- DOC/DOCX/ODT-Quellen geprüft: 610
-- PDF-Fassungen bereits vorhanden: 610
+- DOC/DOCX/ODT-Quellen geprüft: 612
+- PDF-Fassungen bereits vorhanden: 612
 - PDF-Fassungen neu erzeugt: 0
 - fehlgeschlagene PDF-Erzeugungen: 0
 - öffentlich verlinkte Markdown-Quellen geprüft: 13

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T23:27:15.129Z",
+  "generatedAt": "2026-06-09T00:12:27.786Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,10 +204,10 @@
     }
   ],
   "counts": {
-    "total": 1481,
+    "total": 1482,
     "byStatus": {
       "führend": 5,
-      "aktuell": 945,
+      "aktuell": 946,
       "Arbeitsfassung": 275,
       "ältere Fassung": 256
     },
@@ -215,7 +215,7 @@
       "Grundlagenwerk": 63,
       "Glossar": 41,
       "Methodik": 110,
-      "Arbeitspapier": 1196,
+      "Arbeitspapier": 1197,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -224,10 +224,10 @@
     },
     "bySource": {
       "leading-reference": 7,
-      "download-or-document": 715,
+      "download-or-document": 716,
       "online-version": 759
     },
-    "downloadFiles": 715,
+    "downloadFiles": 716,
     "onlineVersions": 759
   },
   "documents": [
@@ -20127,6 +20127,28 @@
         "sourcePath": "wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-kommunaler-wirkungsindex-kwi-diskussionspapier-1-0-pdf",
+      "title": "Wirkung statt Kapital. Für Mensch, Planet und Demokratie.: Diskussionspapier",
+      "shortDescription": "Von kommunaler Nachhaltigkeitsberichterstattung zur wirkungsorientierten Haushalts- und.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/kommunaler_wirkungsindex_kwi_diskussionspapier_1_0.pdf",
+        "sourcePath": "assets/downloads/kommunaler_wirkungsindex_kwi_diskussionspapier_1_0.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
