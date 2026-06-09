@@ -21,11 +21,13 @@
   const state = {
     manifest: null,
     snapshot: null,
+    cachedSnapshots: {},
     dimension: "Alle",
     progressTimers: [],
     requestId: 0,
   };
 
+  const CACHE_KEY = "woek-kwi-beta-live-snapshots-v1";
   const nf = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 2 });
   const percentFormat = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 0, style: "percent" });
   const DIMENSIONS = ["Mensch", "Planet", "Demokratie"];
@@ -281,10 +283,127 @@
     return `${scored} von ${total} Indikatoren (${percentFormat.format(scored / total)})`;
   }
 
+  function cacheSlug(value) {
+    return normalizeLookup(value).replace(/\s+/g, "-");
+  }
+
+  function loadCachedSnapshots() {
+    try {
+      const payload = JSON.parse(window.localStorage.getItem(CACHE_KEY) || "{}");
+      state.cachedSnapshots = payload && typeof payload.snapshots === "object" && payload.snapshots
+        ? payload.snapshots
+        : {};
+    } catch (error) {
+      state.cachedSnapshots = {};
+    }
+  }
+
+  function writeCachedSnapshots() {
+    try {
+      window.localStorage.setItem(CACHE_KEY, JSON.stringify({
+        schemaVersion: 1,
+        updatedAt: new Date().toISOString(),
+        snapshots: state.cachedSnapshots,
+      }));
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function snapshotCacheKey(snapshot) {
+    const municipality = snapshot?.municipality || {};
+    const sdgPortalId = municipality.sdgPortalId || municipality.sdgPortalID || municipality.id;
+    if (sdgPortalId) return `sdg:${sdgPortalId}`;
+    const slug = municipality.slug || cacheSlug(municipality.name);
+    return slug ? `name:${slug}` : "";
+  }
+
+  function sameMunicipalitySnapshot(firstSnapshot, secondSnapshot) {
+    const first = firstSnapshot?.municipality || {};
+    const second = secondSnapshot?.municipality || {};
+    const firstId = first.sdgPortalId || first.sdgPortalID || first.id;
+    const secondId = second.sdgPortalId || second.sdgPortalID || second.id;
+    if (firstId && secondId && String(firstId) === String(secondId)) return true;
+    return Boolean(first.name && second.name && cacheSlug(first.name) === cacheSlug(second.name));
+  }
+
+  function cacheLiveSnapshot(snapshot) {
+    const cacheKey = snapshotCacheKey(snapshot);
+    if (!cacheKey) return null;
+    Object.entries(state.cachedSnapshots).forEach(([existingKey, existingSnapshot]) => {
+      if (existingKey !== cacheKey && sameMunicipalitySnapshot(existingSnapshot, snapshot)) {
+        delete state.cachedSnapshots[existingKey];
+      }
+    });
+    state.cachedSnapshots[cacheKey] = {
+      ...snapshot,
+      clientCachedAt: new Date().toISOString(),
+    };
+    writeCachedSnapshots();
+    renderMunicipalityControls();
+    return cacheKey;
+  }
+
+  function manifestEntries() {
+    return (state.manifest?.municipalities || [])
+      .map((municipality) => ({
+        type: "manifest",
+        value: `manifest:${municipality.slug}`,
+        municipality,
+        name: municipality.name,
+        generatedAt: null,
+        kwiScore: municipality.kwiScore,
+        indicatorCount: municipality.indicatorCount,
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name, "de"));
+  }
+
+  function cachedEntries() {
+    return Object.entries(state.cachedSnapshots)
+      .map(([cacheKey, snapshot]) => {
+        const municipality = snapshot?.municipality || {};
+        const summary = snapshot?.summary || {};
+        if (!municipality.name) return null;
+        return {
+          type: "cache",
+          value: `cache:${cacheKey}`,
+          cacheKey,
+          name: municipality.name,
+          generatedAt: snapshot.generatedAt,
+          kwiScore: summary.kwiScore,
+          indicatorCount: summary.indicatorCount,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.name.localeCompare(b.name, "de"));
+  }
+
+  function knownMunicipalityNames() {
+    const seen = new Set();
+    return cachedEntries().concat(manifestEntries())
+      .map((entry) => entry.name)
+      .filter((name) => {
+        const key = cacheSlug(name);
+        if (!key || seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
+      .sort((a, b) => a.localeCompare(b, "de"));
+  }
+
+  function optionLabel(entry) {
+    const parts = [];
+    if (entry.kwiScore !== null && entry.kwiScore !== undefined) parts.push(`KWI ${scoreText(entry.kwiScore)}`);
+    if (entry.indicatorCount) parts.push(`${entry.indicatorCount} Werte`);
+    if (entry.generatedAt) parts.push(`Stand ${new Date(entry.generatedAt).toLocaleDateString("de-DE")}`);
+    return `${entry.name}${parts.length ? ` · ${parts.join(" · ")}` : ""}`;
+  }
+
   function availableSnapshotsText() {
-    const items = state.manifest?.municipalities || [];
+    const items = knownMunicipalityNames();
     if (!items.length) return "";
-    return ` Im Dropdown verfügbar: ${items.map((item) => item.name).join(", ")}.`;
+    return ` Im Dropdown verfügbar: ${items.join(", ")}.`;
   }
 
   function liveUnavailableMessage(name, reason) {
@@ -313,27 +432,42 @@
     }) || null;
   }
 
+  function findCachedSnapshot(query) {
+    const normalized = normalizeLookup(query);
+    if (!normalized) return null;
+    const entries = Object.entries(state.cachedSnapshots);
+    const exact = entries.find(([, snapshot]) => normalizeLookup(snapshot?.municipality?.name) === normalized);
+    if (exact) return { cacheKey: exact[0], snapshot: exact[1] };
+    const partial = entries.find(([, snapshot]) => normalizeLookup(snapshot?.municipality?.name).includes(normalized));
+    return partial ? { cacheKey: partial[0], snapshot: partial[1] } : null;
+  }
+
   function renderMunicipalityControls() {
-    const items = state.manifest?.municipalities || [];
     if (datalist) {
-      datalist.innerHTML = items.map((item) => `<option value="${escapeHtml(item.name)}"></option>`).join("");
+      datalist.innerHTML = knownMunicipalityNames().map((name) => `<option value="${escapeHtml(name)}"></option>`).join("");
     }
     if (!snapshotSelect) return;
-    if (!items.length) {
+    const cached = cachedEntries();
+    const prepared = manifestEntries();
+    if (!cached.length && !prepared.length) {
       snapshotSelect.innerHTML = '<option value="">Keine Snapshots verfügbar</option>';
       return;
     }
+    const cachedOptions = cached.length
+      ? `<optgroup label="Gespeichert im Browser">${cached.map((entry) => `<option value="${escapeHtml(entry.value)}">${escapeHtml(optionLabel(entry))}</option>`).join("")}</optgroup>`
+      : "";
+    const preparedOptions = prepared.length
+      ? `<optgroup label="Vorbereitete Snapshots">${prepared.map((entry) => `<option value="${escapeHtml(entry.value)}">${escapeHtml(optionLabel(entry))}</option>`).join("")}</optgroup>`
+      : "";
     snapshotSelect.innerHTML = [
       '<option value="">Snapshot auswählen ...</option>',
-      items.map((item) => {
-        const label = `${item.name} · KWI ${scoreText(item.kwiScore)} · ${item.indicatorCount} Werte`;
-        return `<option value="${escapeHtml(item.slug)}">${escapeHtml(label)}</option>`;
-      }).join(""),
+      cachedOptions,
+      preparedOptions,
     ].join("");
   }
 
-  function setSelectedSnapshot(municipality) {
-    if (snapshotSelect) snapshotSelect.value = municipality?.slug || "";
+  function setSelectedSnapshot(value) {
+    if (snapshotSelect) snapshotSelect.value = value || "";
   }
 
   async function loadJson(url) {
@@ -592,6 +726,17 @@
     `).join("");
   }
 
+  function renderSnapshot(snapshot, statusMessage, selectValue) {
+    state.snapshot = snapshot;
+    state.dimension = "Alle";
+    input.value = snapshot.municipality.name;
+    setSelectedSnapshot(selectValue || "");
+    renderDimensionControls(snapshot);
+    renderSummary(snapshot);
+    renderTable(snapshot);
+    setStatus(statusMessage);
+  }
+
   async function selectMunicipality(municipality) {
     if (!municipality) {
       setStatus("Für diese Eingabe liegt noch kein lokaler KWI-Snapshot vor.", true);
@@ -599,7 +744,7 @@
     }
     const requestId = ++state.requestId;
     clearRenderedResult();
-    setSelectedSnapshot(municipality);
+    setSelectedSnapshot(`manifest:${municipality.slug}`);
     setBusy(true);
     showProgress(
       "Snapshot wird geladen ...",
@@ -612,13 +757,34 @@
     try {
       const snapshot = await loadJson(`${dataBase}${municipality.file}`);
       if (requestId !== state.requestId) return;
-      state.snapshot = snapshot;
-      state.dimension = "Alle";
-      input.value = municipality.name;
-      renderDimensionControls(snapshot);
-      renderSummary(snapshot);
-      renderTable(snapshot);
-      setStatus(`${snapshot.summary.indicatorCount} SDG-Indikatoren für ${snapshot.municipality.name} geladen.`);
+      renderSnapshot(snapshot, `${snapshot.summary.indicatorCount} SDG-Indikatoren für ${snapshot.municipality.name} aus vorbereitetem Snapshot geladen.`, `manifest:${municipality.slug}`);
+    } finally {
+      if (requestId === state.requestId) {
+        hideProgress();
+        setBusy(false);
+      }
+    }
+  }
+
+  async function selectCachedSnapshot(cacheKey, message) {
+    const snapshot = state.cachedSnapshots[cacheKey];
+    if (!snapshot) {
+      setStatus("Dieser gespeicherte Snapshot ist nicht mehr verfügbar.", true);
+      renderMunicipalityControls();
+      return;
+    }
+    const requestId = ++state.requestId;
+    clearRenderedResult();
+    setSelectedSnapshot(`cache:${cacheKey}`);
+    hideProgress();
+    setBusy(true);
+    try {
+      if (requestId !== state.requestId) return;
+      renderSnapshot(
+        snapshot,
+        message || `${snapshot.summary.indicatorCount} SDG-Indikatoren aus dem gespeicherten Snapshot geladen. Suche dieselbe Kommune erneut, um den Stand live zu aktualisieren.`,
+        `cache:${cacheKey}`
+      );
     } finally {
       if (requestId === state.requestId) {
         hideProgress();
@@ -659,16 +825,24 @@
     try {
       const snapshot = await loadLiveSnapshot(normalized);
       if (requestId !== state.requestId) return;
-      state.snapshot = snapshot;
-      state.dimension = "Alle";
-      input.value = snapshot.municipality.name;
-      renderDimensionControls(snapshot);
-      renderSummary(snapshot);
-      renderTable(snapshot);
-      setStatus(`${snapshot.summary.indicatorCount} SDG-Indikatoren live aus dem SDG-Portal geladen. Snapshot wird serverseitig gecacht.`);
+      const cacheKey = cacheLiveSnapshot(snapshot);
+      renderSnapshot(
+        snapshot,
+        `${snapshot.summary.indicatorCount} SDG-Indikatoren live aus dem SDG-Portal geladen und im Dropdown gespeichert. Eine erneute Suche aktualisiert und überschreibt diesen Stand.`,
+        cacheKey ? `cache:${cacheKey}` : ""
+      );
     } catch (error) {
       if (requestId === state.requestId) {
-        setStatus(liveUnavailableMessage(normalized, error.message), true);
+        const cached = findCachedSnapshot(normalized);
+        const prepared = findMunicipality(normalized);
+        if (cached) {
+          await selectCachedSnapshot(cached.cacheKey, `Live-Abruf nicht möglich; der gespeicherte Snapshot für ${cached.snapshot.municipality.name} wurde geöffnet. Für aktuelle Daten bitte später erneut suchen.`);
+        } else if (prepared) {
+          await selectMunicipality(prepared);
+          setStatus(`Live-Abruf nicht möglich; der vorbereitete Snapshot für ${prepared.name} wurde geöffnet. Für aktuelle Daten bitte später erneut suchen.`, true);
+        } else {
+          setStatus(liveUnavailableMessage(normalized, error.message), true);
+        }
       }
     } finally {
       if (requestId === state.requestId) {
@@ -681,6 +855,7 @@
   async function init() {
     try {
       state.manifest = await loadJson(manifestUrl);
+      loadCachedSnapshots();
       renderMunicipalityControls();
       await selectMunicipality(state.manifest.municipalities[0]);
     } catch (error) {
@@ -692,8 +867,7 @@
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const municipality = findMunicipality(input.value);
-    const selection = municipality ? selectMunicipality(municipality) : selectLiveMunicipality(input.value);
+    const selection = selectLiveMunicipality(input.value);
     selection.catch(() => {
       hideProgress();
       setBusy(false);
@@ -703,10 +877,12 @@
 
   if (snapshotSelect) {
     snapshotSelect.addEventListener("change", () => {
-      const slug = snapshotSelect.value;
-      const municipality = (state.manifest?.municipalities || []).find((item) => item.slug === slug);
-      if (!municipality) return;
-      selectMunicipality(municipality).catch(() => {
+      const value = snapshotSelect.value;
+      if (!value) return;
+      const selection = value.startsWith("cache:")
+        ? selectCachedSnapshot(value.slice("cache:".length))
+        : selectMunicipality((state.manifest?.municipalities || []).find((item) => `manifest:${item.slug}` === value));
+      selection.catch(() => {
         hideProgress();
         setBusy(false);
         setStatus("Der KWI-Snapshot konnte nicht geladen werden.", true);
