@@ -67,6 +67,14 @@ DIMENSION_BY_SDG = {
 DIMENSION_WEIGHTS = {"Mensch": 0.4, "Planet": 0.3, "Demokratie": 0.3}
 
 
+class MunicipalityNotFoundError(RuntimeError):
+    """Raised when neither the SDG search API nor the direct page route resolves."""
+
+
+class SnapshotExtractionError(RuntimeError):
+    """Raised when a municipality page exists but no indicator data can be read."""
+
+
 def fetch_text(url: str) -> str:
     req = urllib.request.Request(
         url,
@@ -93,6 +101,36 @@ def slugify_name(name: str) -> str:
     slug = slug.replace("–", "-").replace("—", "-")
     slug = re.sub(r"[^0-9a-zäöüß]+", "-", slug)
     return slug.strip("-")
+
+
+def portal_slug_candidates(name: str) -> list[str]:
+    base = slugify_name(name)
+    variants = [
+        base,
+        base.replace("ä", "a").replace("ö", "o").replace("ü", "u").replace("ß", "ss"),
+        base.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss"),
+    ]
+    seen: set[str] = set()
+    candidates = []
+    for item in variants:
+        if item and item not in seen:
+            seen.add(item)
+            candidates.append(item)
+    return candidates
+
+
+def extract_municipality_name(page_html: str, fallback: str) -> str:
+    headline = re.search(r'<h1[^>]*class="[^"]*headline[^"]*"[^>]*>(.*?)</h1>', page_html, re.S)
+    if headline:
+        name = strip_tags(headline.group(1)).removeprefix("Kommune").strip()
+        if name:
+            return name
+    title = re.search(r"<title>(.*?)</title>", page_html, re.S | re.I)
+    if title:
+        name = strip_tags(title.group(1)).replace("- SDG-Portal", "").strip()
+        if name:
+            return name
+    return fallback.strip()
 
 
 def stable_id(title: str) -> str:
@@ -285,15 +323,31 @@ def parse_indicators(page_html: str, municipality_name: str) -> list[dict]:
 def resolve_municipality(query: str) -> dict:
     data = json.loads(fetch_text(SEARCH_URL.format(query=urllib.parse.quote(query))))
     results = data.get("data", [])
-    if not results:
-        raise RuntimeError(f"Keine Kommune im SDG-Portal gefunden: {query}")
-    exact = [item for item in results if item["name"].lower() == query.lower()]
-    selected = exact[0] if exact else results[0]
-    return selected
+    if results:
+        exact = [item for item in results if item["name"].lower() == query.lower()]
+        selected = exact[0] if exact else results[0]
+        return selected
+
+    for slug in portal_slug_candidates(query):
+        try:
+            page = fetch_municipality_page(slug=slug)
+        except Exception:
+            continue
+        if '<article class="indicator-card">' not in page:
+            continue
+        return {
+            "id": f"slug:{slug}",
+            "name": extract_municipality_name(page, query),
+            "slug": slug,
+            "resolvedBy": "direct-page",
+        }
+
+    raise MunicipalityNotFoundError(f"Keine Kommune im SDG-Portal gefunden: {query}")
 
 
-def fetch_municipality_page(name: str) -> str:
-    slug = slugify_name(name)
+def fetch_municipality_page(name: str | None = None, slug: str | None = None) -> str:
+    if not slug:
+        slug = slugify_name(name or "")
     query = urllib.parse.urlencode(
         [("goals[]", str(goal)) for goal in range(1, 18)]
         + [("showAverage", "1"), ("longTermComparison", "1")]
@@ -332,10 +386,19 @@ def aggregate(indicators: list[dict]) -> dict:
 
 def collect(query: str) -> dict:
     municipality = resolve_municipality(query)
-    page = fetch_municipality_page(municipality["name"])
+    page = (
+        fetch_municipality_page(slug=municipality.get("slug"))
+        if municipality.get("resolvedBy") == "direct-page"
+        else fetch_municipality_page(municipality["name"])
+    )
     indicators = parse_indicators(page, municipality["name"])
     if not indicators:
-        raise RuntimeError(f"Keine Indikatoren aus der SDG-Portal-Seite extrahiert: {municipality['name']}")
+        raise SnapshotExtractionError(f"Keine Indikatoren aus der SDG-Portal-Seite extrahiert: {municipality['name']}")
+    if not any(item.get("value") is not None for item in indicators):
+        raise SnapshotExtractionError(
+            "Die Kommune existiert im SDG-Portal, die Seite enthält aber aktuell keine "
+            f"auswertbaren Indikatorwerte für den KWI: {municipality['name']}"
+        )
     return {
         "schemaVersion": "kwi-beta-0.1",
         "generatedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -352,7 +415,7 @@ def collect(query: str) -> dict:
         "municipality": {
             "sdgPortalId": municipality["id"],
             "name": municipality["name"],
-            "slug": slugify_name(municipality["name"]),
+            "slug": municipality.get("slug") or slugify_name(municipality["name"]),
         },
         "summary": aggregate(indicators),
         "indicators": indicators,

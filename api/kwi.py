@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from tools.kwi_collect import collect  # noqa: E402
+from tools.kwi_collect import MunicipalityNotFoundError, SnapshotExtractionError, collect  # noqa: E402
 
 
 def json_bytes(payload: dict, status: int = 200) -> tuple[int, bytes]:
@@ -62,11 +62,33 @@ class handler(BaseHTTPRequestHandler):
 
         try:
             snapshot = collect(query)
-        except Exception as exc:  # pragma: no cover - serverless boundary
+        except MunicipalityNotFoundError as exc:  # pragma: no cover - serverless boundary
+            status, body = json_bytes(
+                {
+                    "error": "municipality_not_found",
+                    "message": f"Im SDG-Portal wurde keine Kommune zu dieser Eingabe gefunden: {query}",
+                    "detail": str(exc),
+                },
+                404,
+            )
+            self._send_json(status, body)
+            return
+        except SnapshotExtractionError as exc:  # pragma: no cover - serverless boundary
             status, body = json_bytes(
                 {
                     "error": "snapshot_failed",
-                    "message": f"Für diese Eingabe konnte kein KWI-Snapshot erzeugt werden: {query}",
+                    "message": f"Die Kommune wurde gefunden, aber aus der SDG-Portal-Seite konnte noch kein KWI-Snapshot erzeugt werden: {query}",
+                    "detail": str(exc),
+                },
+                502,
+            )
+            self._send_json(status, body)
+            return
+        except Exception as exc:  # pragma: no cover - serverless boundary
+            status, body = json_bytes(
+                {
+                    "error": "live_endpoint_failed",
+                    "message": f"Der Live-Abruf ist aktuell nicht erreichbar: {query}",
                     "detail": str(exc),
                 },
                 502,

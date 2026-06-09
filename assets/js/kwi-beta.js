@@ -441,6 +441,21 @@
     return `Für "${name}" konnte noch kein Live-Snapshot geladen werden. Der freie Abruf ist vorbereitet, braucht im öffentlichen Betrieb aber einen erreichbaren Serverless- oder Backend-Endpunkt unter ${endpoint}.${reasonText}${availableSnapshotsText()}`;
   }
 
+  function liveErrorMessage(name, error) {
+    const endpoint = liveApi || "/api/kwi";
+    const reasonText = error?.message ? ` Technischer Hinweis: ${error.message}.` : "";
+    if (error?.code === "municipality_not_found") {
+      return `Für "${name}" wurde im SDG-Portal keine passende Kommune gefunden. Bitte Schreibweise prüfen oder den amtlichen Gemeindenamen verwenden.${availableSnapshotsText()}`;
+    }
+    if (error?.code === "snapshot_failed") {
+      return `Für "${name}" wurde eine SDG-Portal-Seite gefunden, aber daraus konnte noch kein KWI-Snapshot berechnet werden. Das kann passieren, wenn Indikatorwerte fehlen oder das Portal die Daten anders ausliefert.${reasonText}${availableSnapshotsText()}`;
+    }
+    if (error?.code === "no-live-api") {
+      return liveUnavailableMessage(name, error.message);
+    }
+    return `Der Live-Abruf für "${name}" ist gerade nicht möglich. Bitte später erneut versuchen oder einen vorhandenen Snapshot aus dem Dropdown wählen. Endpunkt: ${endpoint}.${reasonText}${availableSnapshotsText()}`;
+  }
+
   function clearRenderedResult() {
     state.snapshot = null;
     result.innerHTML = "";
@@ -506,18 +521,26 @@
   }
 
   async function loadLiveSnapshot(query) {
-    if (!liveApi) throw new Error("no-live-api");
+    if (!liveApi) {
+      const error = new Error("no-live-api");
+      error.code = "no-live-api";
+      throw error;
+    }
     const separator = liveApi.includes("?") ? "&" : "?";
     const response = await fetch(`${liveApi}${separator}q=${encodeURIComponent(query)}`, { cache: "no-store" });
     if (!response.ok) {
       let detail = `HTTP ${response.status}`;
+      let code = "live_endpoint_failed";
       try {
         const payload = await response.json();
+        code = payload.error || code;
         detail = payload.message || payload.detail || detail;
       } catch (error) {
         // Keep the HTTP status as fallback when the endpoint is not active yet.
       }
-      throw new Error(detail);
+      const error = new Error(detail);
+      error.code = code;
+      throw error;
     }
     return response.json();
   }
@@ -895,7 +918,7 @@
           await selectMunicipality(prepared);
           setStatus(`Live-Abruf nicht möglich; der vorbereitete Snapshot für ${prepared.name} wurde geöffnet. Für aktuelle Daten bitte später erneut suchen.`, true);
         } else {
-          setStatus(liveUnavailableMessage(normalized, error.message), true);
+          setStatus(liveErrorMessage(normalized, error), true);
         }
       }
     } finally {
