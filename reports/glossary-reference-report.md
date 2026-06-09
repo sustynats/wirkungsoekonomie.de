@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-09T19:53:48.364Z
-- Content pages scanned: 1016
-- Glossary terms indexed: 1477
-- Warnings: 615
+- Generated: 2026-06-09T20:26:48.083Z
+- Content pages scanned: 1017
+- Glossary terms indexed: 1481
+- Warnings: 614
 
 ## Stichproben
 
@@ -360,4 +360,4 @@
 - term has no content references: momentanreserve
 - term has no content references: monetarismus
 - term has no content references: moral-hazard
-- ... 315 weitere Warnungen
+- ... 314 weitere Warnungen

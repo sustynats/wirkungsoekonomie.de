@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T19:52:11.703Z",
+  "generatedAt": "2026-06-09T20:25:13.718Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -194244,6 +194244,77 @@
       "blind_spot": ""
     },
     {
+      "id": "nachhaltigkeitsmanagement",
+      "termId": "nachhaltigkeitsmanagement",
+      "canonicalLabel": "Nachhaltigkeitsmanagement",
+      "label": "Nachhaltigkeitsmanagement",
+      "slug": "nachhaltigkeitsmanagement",
+      "status": "kontextbegriff",
+      "type": "Kontextbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: Von Nachhaltigkeit zu Systemresilienz",
+      "sourceDocument": "blog/systemresilienz-statt-nachhaltigkeit/",
+      "sourceSection": "SDG+ & Systemresilienz",
+      "shortDefinition": "Nachhaltigkeitsmanagement organisiert Ziele, Daten, Programme und Berichte zu ökologischen, sozialen und Governance-Themen.",
+      "hoverDefinition": "Nachhaltigkeitsmanagement organisiert Ziele, Daten, Programme und Berichte zu ökologischen, sozialen und Governance-Themen.",
+      "definition": "Nachhaltigkeitsmanagement organisiert Ziele, Daten, Programme und Berichte zu ökologischen, sozialen und Governance-Themen.",
+      "longDefinition": "Nachhaltigkeitsmanagement bleibt wichtig, reicht aber wirkungsökonomisch nur dann aus, wenn es in Strategie, Risikomanagement, Controlling, Beschaffung, Produktentwicklung, Kapitalplanung und Governance zurückwirkt. Sonst entsteht Berichtswesen neben den eigentlichen Entscheidungen.",
+      "woekRelation": "Der Begriff präzisiert, wie Nachhaltigkeit, SDGs, SDG+ und Risikosteuerung in der Wirkungsökonomie als rückgekoppelte Systemfrage gelesen werden.",
+      "usageNote": "Im Kontext von SDG+, Resilienz, Governance und Wirkungssteuerung verwenden; nicht als bloßes Schlagwort ohne Daten- und Entscheidungsbezug.",
+      "doNotConfuseWith": [
+        "reiner Nachhaltigkeitskommunikation",
+        "isoliertem Berichtswesen",
+        "unverbundener Projektlogik"
+      ],
+      "synonyms": [
+        "Nachhaltigkeitsmanagement",
+        "Sustainability Management",
+        "ESG-Management"
+      ],
+      "aliases": [
+        "Nachhaltigkeitsmanagement",
+        "Sustainability Management",
+        "ESG-Management"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "wirkungsarchitektur",
+        "wirkungsdaten",
+        "risikomanagement",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "examples": [
+        "Eine Nachhaltigkeitsabteilung wird zur Resilienz- und Wirkungsarchitektur-Einheit, wenn ihre Daten Einkaufs-, Investitions- und Produktentscheidungen verändern."
+      ],
+      "preferredUsage": "Nachhaltigkeitsmanagement als steuerungsrelevanten Begriff mit Bezug zu Risiko, Rückkopplung und Wirkung erklären.",
+      "deprecatedUsage": [
+        "Nachhaltigkeitsmanagement als reines Kommunikationslabel ohne operative Steuerungsfunktion verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "nachhaltigkeitsmanagement",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "categories": [
+        "resilienz",
+        "sdg-plus",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/nachhaltigkeitsmanagement/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1482,
+      "officialSources": []
+    },
+    {
       "id": "nachtwaechterstaat",
       "termId": "nachtwaechterstaat",
       "label": "Nachtwächterstaat",
@@ -269740,6 +269811,77 @@
       "dataStandardsGroup": ""
     },
     {
+      "id": "resilienzarchitektur",
+      "termId": "resilienzarchitektur",
+      "canonicalLabel": "Resilienzarchitektur",
+      "label": "Resilienzarchitektur",
+      "slug": "resilienzarchitektur",
+      "status": "woek-praezisierungsbegriff",
+      "type": "WÖk-Präzisierungsbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: Von Nachhaltigkeit zu Systemresilienz",
+      "sourceDocument": "blog/systemresilienz-statt-nachhaltigkeit/",
+      "sourceSection": "SDG+ & Systemresilienz",
+      "shortDefinition": "Resilienzarchitektur beschreibt die organisatorischen, datenbezogenen und institutionellen Strukturen, mit denen ein System Risiken erkennt, Rückkopplung organisiert und zentrale Funktionen schützt.",
+      "hoverDefinition": "Resilienzarchitektur beschreibt die organisatorischen, datenbezogenen und institutionellen Strukturen, mit denen ein System Risiken erkennt, Rückkopplung organisiert und zentrale Funktionen schützt.",
+      "definition": "Resilienzarchitektur beschreibt die organisatorischen, datenbezogenen und institutionellen Strukturen, mit denen ein System Risiken erkennt, Rückkopplung organisiert und zentrale Funktionen schützt.",
+      "longDefinition": "Resilienzarchitektur verbindet Risikoerkennung, Datenqualität, Frühwarnsignale, Governance, Verantwortlichkeiten, Redundanzen, Lernschleifen und Entscheidungsprozesse. Sie macht Systemresilienz operativ: Nicht nur Berichte werden erstellt, sondern Entscheidungen werden verändert.",
+      "woekRelation": "Der Begriff präzisiert, wie Nachhaltigkeit, SDGs, SDG+ und Risikosteuerung in der Wirkungsökonomie als rückgekoppelte Systemfrage gelesen werden.",
+      "usageNote": "Im Kontext von SDG+, Resilienz, Governance und Wirkungssteuerung verwenden; nicht als bloßes Schlagwort ohne Daten- und Entscheidungsbezug.",
+      "doNotConfuseWith": [
+        "reiner Nachhaltigkeitskommunikation",
+        "isoliertem Berichtswesen",
+        "unverbundener Projektlogik"
+      ],
+      "synonyms": [
+        "Resilienzarchitektur",
+        "Resilience Architecture",
+        "Resilienz-Architektur"
+      ],
+      "aliases": [
+        "Resilienzarchitektur",
+        "Resilience Architecture",
+        "Resilienz-Architektur"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "wirkungsarchitektur",
+        "systemische-risikointelligenz",
+        "risiko-und-resilienzregister",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "examples": [
+        "Eine Stadt verbindet Hitzedaten, Gesundheitsdaten, Stadtgrün, Pflegekapazitäten und Haushaltsentscheidungen zu einer Resilienzarchitektur."
+      ],
+      "preferredUsage": "Resilienzarchitektur als steuerungsrelevanten Begriff mit Bezug zu Risiko, Rückkopplung und Wirkung erklären.",
+      "deprecatedUsage": [
+        "Resilienzarchitektur als reines Kommunikationslabel ohne operative Steuerungsfunktion verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "resilienzarchitektur",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "categories": [
+        "resilienz",
+        "sdg-plus",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/resilienzarchitektur/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1483,
+      "officialSources": []
+    },
+    {
       "id": "resonanz",
       "termId": "resonanz",
       "label": "Resonanz",
@@ -273295,6 +273437,7 @@
         "wirkungspfad"
       ],
       "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/",
         "portale/sicherheit-resilienz/"
@@ -273319,6 +273462,76 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "priority": 1024,
+      "officialSources": []
+    },
+    {
+      "id": "risikomanagement",
+      "termId": "risikomanagement",
+      "canonicalLabel": "Risikomanagement",
+      "label": "Risikomanagement",
+      "slug": "risikomanagement",
+      "status": "kontextbegriff",
+      "type": "Kontextbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: Von Nachhaltigkeit zu Systemresilienz",
+      "sourceDocument": "blog/systemresilienz-statt-nachhaltigkeit/",
+      "sourceSection": "SDG+ & Systemresilienz",
+      "shortDefinition": "Risikomanagement bezeichnet die systematische Identifikation, Bewertung, Behandlung, Überwachung und Kommunikation von Risiken in Strategie, Governance und Entscheidung.",
+      "hoverDefinition": "Risikomanagement bezeichnet die systematische Identifikation, Bewertung, Behandlung, Überwachung und Kommunikation von Risiken in Strategie, Governance und Entscheidung.",
+      "definition": "Risikomanagement bezeichnet die systematische Identifikation, Bewertung, Behandlung, Überwachung und Kommunikation von Risiken in Strategie, Governance und Entscheidung.",
+      "longDefinition": "Risikomanagement macht Risiken entscheidungsfähig. In der Wirkungsökonomie wird es erweitert: Neben Risiken, die einen Akteur treffen, müssen auch Risiken betrachtet werden, die ein Akteur für Mensch, Planet, Demokratie, Lieferketten, Ökosysteme oder künftige Generationen erzeugt.",
+      "woekRelation": "Der Begriff präzisiert, wie Nachhaltigkeit, SDGs, SDG+ und Risikosteuerung in der Wirkungsökonomie als rückgekoppelte Systemfrage gelesen werden.",
+      "usageNote": "Im Kontext von SDG+, Resilienz, Governance und Wirkungssteuerung verwenden; nicht als bloßes Schlagwort ohne Daten- und Entscheidungsbezug.",
+      "doNotConfuseWith": [
+        "reiner Nachhaltigkeitskommunikation",
+        "isoliertem Berichtswesen",
+        "unverbundener Projektlogik"
+      ],
+      "synonyms": [
+        "Risikomanagement",
+        "Risk Management",
+        "Risiko-Management"
+      ],
+      "aliases": [
+        "Risikomanagement",
+        "Risk Management",
+        "Risiko-Management"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "systemische-risikointelligenz",
+        "risiko-und-resilienzregister",
+        "wirkungsrisikomanagement"
+      ],
+      "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "examples": [
+        "Ein Unternehmen bewertet nicht nur Lieferausfälle, sondern auch Wasserstress, Arbeitsbedingungen und demokratische Resonanzschäden als Risikoinformationen."
+      ],
+      "preferredUsage": "Risikomanagement als steuerungsrelevanten Begriff mit Bezug zu Risiko, Rückkopplung und Wirkung erklären.",
+      "deprecatedUsage": [
+        "Risikomanagement als reines Kommunikationslabel ohne operative Steuerungsfunktion verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "risikomanagement",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "categories": [
+        "resilienz",
+        "sdg-plus",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/risikomanagement/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1481,
       "officialSources": []
     },
     {
@@ -282788,6 +283001,7 @@
         "Agenda 2030"
       ],
       "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
         "sdg-sdgplus-referenzrahmen"
       ],
       "examples": [],
@@ -282796,7 +283010,7 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "sdg plus",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-09",
       "related_terms": [
         "sdgs",
         "agenda-2030",
@@ -283628,6 +283842,7 @@
         "ESG"
       ],
       "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
         "sdg-sdgplus-referenzrahmen"
       ],
       "examples": [],
@@ -283636,7 +283851,7 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "sdgs",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-06-09",
       "related_terms": [
         "agenda-2030",
         "sdg-plus",
@@ -311894,6 +312109,7 @@
         "rueckkopplung"
       ],
       "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/",
         "portale/sicherheit-resilienz/"
@@ -312711,6 +312927,7 @@
         "demokratische-resilienz"
       ],
       "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/",
         "portale/sicherheit-resilienz/"
@@ -357508,6 +357725,7 @@
         "Website-Architektur"
       ],
       "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
         "Führender Begriffsleitfaden der Wirkungsökonomie",
         "Die neue Ordnung des Wohlstands",
         "Technische Leitlinien WUStG",
@@ -357528,7 +357746,7 @@
       "reviewStatus": "redaktionell zu prüfen",
       "glossaryOrderKey": "wirkungsarchitektur",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-06-01",
+      "lastUpdated": "2026-06-09",
       "tags": [],
       "updatedAt": "2026-06-01",
       "conceptStatus": "professionalisiert",
@@ -379861,6 +380079,77 @@
         }
       ],
       "dataStandardsGroup": ""
+    },
+    {
+      "id": "wirkungsrisikomanagement",
+      "termId": "wirkungsrisikomanagement",
+      "canonicalLabel": "Wirkungsrisikomanagement",
+      "label": "Wirkungsrisikomanagement",
+      "slug": "wirkungsrisikomanagement",
+      "status": "woek-praegungsbegriff",
+      "type": "WÖk-Prägungsbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: Von Nachhaltigkeit zu Systemresilienz",
+      "sourceDocument": "blog/systemresilienz-statt-nachhaltigkeit/",
+      "sourceSection": "SDG+ & Systemresilienz",
+      "shortDefinition": "Wirkungsrisikomanagement erweitert klassisches Risikomanagement um die Frage, welche Risiken ein Akteur durch seine Wirkungen selbst erzeugt.",
+      "hoverDefinition": "Wirkungsrisikomanagement erweitert klassisches Risikomanagement um die Frage, welche Risiken ein Akteur durch seine Wirkungen selbst erzeugt.",
+      "definition": "Wirkungsrisikomanagement erweitert klassisches Risikomanagement um die Frage, welche Risiken ein Akteur durch seine Wirkungen selbst erzeugt.",
+      "longDefinition": "Wirkungsrisikomanagement fragt doppelt: Welche Risiken treffen uns, und welche Risiken erzeugen wir für andere Systeme? Dadurch werden externalisierte Schäden, Rückkopplungen, Haftung, Vertrauensverlust, Versicherbarkeit, Lieferkettenbrüche und demokratische Resonanzschäden steuerbar.",
+      "woekRelation": "Der Begriff präzisiert, wie Nachhaltigkeit, SDGs, SDG+ und Risikosteuerung in der Wirkungsökonomie als rückgekoppelte Systemfrage gelesen werden.",
+      "usageNote": "Im Kontext von SDG+, Resilienz, Governance und Wirkungssteuerung verwenden; nicht als bloßes Schlagwort ohne Daten- und Entscheidungsbezug.",
+      "doNotConfuseWith": [
+        "reiner Nachhaltigkeitskommunikation",
+        "isoliertem Berichtswesen",
+        "unverbundener Projektlogik"
+      ],
+      "synonyms": [
+        "Wirkungsrisikomanagement",
+        "wirkungsorientiertes Risikomanagement",
+        "Impact Risk Management"
+      ],
+      "aliases": [
+        "Wirkungsrisikomanagement",
+        "wirkungsorientiertes Risikomanagement",
+        "Impact Risk Management"
+      ],
+      "relatedTerms": [
+        "systemische-risikointelligenz",
+        "systemresilienz",
+        "risikomanagement",
+        "positive-netto-wirkung",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "examples": [
+        "Ein Produkt wird nicht nur auf Markt- und Haftungsrisiken geprüft, sondern auch auf Wasserstress, Emissionen, Arbeitsbedingungen und demokratische Folgewirkungen."
+      ],
+      "preferredUsage": "Wirkungsrisikomanagement als steuerungsrelevanten Begriff mit Bezug zu Risiko, Rückkopplung und Wirkung erklären.",
+      "deprecatedUsage": [
+        "Wirkungsrisikomanagement als reines Kommunikationslabel ohne operative Steuerungsfunktion verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wirkungsrisikomanagement",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "categories": [
+        "resilienz",
+        "sdg-plus",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/wirkungsrisikomanagement/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1484,
+      "officialSources": []
     },
     {
       "version": "1.0",
