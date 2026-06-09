@@ -34875,7 +34875,8 @@
       "steuerungsdaten",
       "wirkungsdaten",
       "wirkungsrisiko",
-      "impact-strategie"
+      "impact-strategie",
+      "wirkungsmanagement"
     ],
     "tags": [
       "published",
@@ -34883,21 +34884,18 @@
       "reviewed",
       "Impact-Management",
       "Impact Management",
-      "Wirkungsmanagement",
       "Wirkungsmanagement im Unternehmen"
     ],
     "aliases": [
       "Impact-Management",
       "Impact Management",
-      "Wirkungsmanagement",
       "Wirkungsmanagement im Unternehmen",
       "Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen."
     ],
-    "body": "Impact-Management Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen. Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen. Impact-Management beginnt dort, wo Erkenntnisse aus Wesentlichkeitsanalyse, Stakeholderdialog und Wirkungsdaten nicht nur berichtet, sondern in Ziele, Maßnahmen, Budgets, Rollen, Governance und Lernschleifen übersetzt werden. Impact-Management Impact Management Wirkungsmanagement Wirkungsmanagement im Unternehmen doppelte-wesentlichkeit iro impact-controlling wirkungsrueckkopplung steuerungsdaten wirkungsdaten wirkungsrisiko impact-strategie",
+    "body": "Impact-Management Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen. Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen. Impact-Management beginnt dort, wo Erkenntnisse aus Wesentlichkeitsanalyse, Stakeholderdialog und Wirkungsdaten nicht nur berichtet, sondern in Ziele, Maßnahmen, Budgets, Rollen, Governance und Lernschleifen übersetzt werden. Impact-Management Impact Management Wirkungsmanagement im Unternehmen doppelte-wesentlichkeit iro impact-controlling wirkungsrueckkopplung steuerungsdaten wirkungsdaten wirkungsrisiko impact-strategie wirkungsmanagement",
     "semanticTerms": [
       "Impact-Management",
       "Impact Management",
-      "Wirkungsmanagement",
       "Wirkungsmanagement im Unternehmen",
       "doppelte-wesentlichkeit",
       "iro",
@@ -34906,9 +34904,10 @@
       "steuerungsdaten",
       "wirkungsdaten",
       "wirkungsrisiko",
-      "impact-strategie"
+      "impact-strategie",
+      "wirkungsmanagement"
     ],
-    "semanticText": "Impact-Management Impact Management Wirkungsmanagement Wirkungsmanagement im Unternehmen doppelte-wesentlichkeit iro impact-controlling wirkungsrueckkopplung steuerungsdaten wirkungsdaten wirkungsrisiko impact-strategie",
+    "semanticText": "Impact-Management Impact Management Wirkungsmanagement im Unternehmen doppelte-wesentlichkeit iro impact-controlling wirkungsrueckkopplung steuerungsdaten wirkungsdaten wirkungsrisiko impact-strategie wirkungsmanagement",
     "priority": 110
   },
   {
@@ -60363,6 +60362,57 @@
     "priority": 110
   },
   {
+    "id": "woek-term-resilienzmanagement",
+    "title": "Resilienzmanagement",
+    "description": "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress.",
+    "url": "/begriffe/resilienzmanagement/",
+    "section": "Begriffe",
+    "type": "Begriff",
+    "format": "Glossarbegriff",
+    "impactSpaces": [
+      "Mensch",
+      "Planet",
+      "Demokratie"
+    ],
+    "standards": [
+      "sdg-plus"
+    ],
+    "instruments": [
+      "systemresilienz",
+      "risikomanagement",
+      "resilienzarchitektur",
+      "risiko-und-resilienzregister",
+      "sdg-plus"
+    ],
+    "tags": [
+      "kontextbegriff",
+      "1.0",
+      "approved",
+      "Resilienzmanagement",
+      "Resilience Management",
+      "Resilienz-Management"
+    ],
+    "aliases": [
+      "Resilienzmanagement",
+      "Resilience Management",
+      "Resilienz-Management",
+      "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress."
+    ],
+    "body": "Resilienzmanagement Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress. Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress. Resilienzmanagement macht Risiken und Verwundbarkeiten so bearbeitbar, dass Systeme zentrale Funktionen auch bei Schocks, Krisen, Fehlanreizen und Rückkopplungen erhalten. In der Wirkungsökonomie verbindet es Daten, Frühwarnsignale, Governance, Lernschleifen und Schutzlinien. Verwenden, wenn Nachhaltigkeit, SDGs, SDG+, Risiko, Resilienz und Rückkopplung als operative Steuerungslogik erklärt werden. Resilienzmanagement Resilience Management Resilienz-Management systemresilienz risikomanagement resilienzarchitektur risiko-und-resilienzregister sdg-plus",
+    "semanticTerms": [
+      "Resilienzmanagement",
+      "Resilience Management",
+      "Resilienz-Management",
+      "systemresilienz",
+      "risikomanagement",
+      "resilienzarchitektur",
+      "risiko-und-resilienzregister",
+      "sdg-plus"
+    ],
+    "semanticText": "Resilienzmanagement Resilience Management Resilienz-Management systemresilienz risikomanagement resilienzarchitektur risiko-und-resilienzregister sdg-plus",
+    "priority": 110
+  },
+  {
     "id": "woek-term-resonanz",
     "title": "Resonanz",
     "description": "Resonanz beschreibt die Verstärkung eines Impulses, wenn er auf ein aufnahmefähiges System trifft.",
@@ -60971,6 +61021,58 @@
       "wirkungsrisikomanagement"
     ],
     "semanticText": "Risikomanagement Risk Management Risiko-Management systemresilienz systemische-risikointelligenz risiko-und-resilienzregister wirkungsrisikomanagement",
+    "priority": 110
+  },
+  {
+    "id": "woek-term-risikoregister",
+    "title": "Risikoregister",
+    "description": "Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden.",
+    "url": "/begriffe/risikoregister/",
+    "section": "Begriffe",
+    "type": "Begriff",
+    "format": "Glossarbegriff",
+    "impactSpaces": [
+      "Mensch",
+      "Planet",
+      "Demokratie"
+    ],
+    "standards": [
+      "sdgs",
+      "sdg-plus"
+    ],
+    "instruments": [
+      "risiko-und-resilienzregister",
+      "systemresilienz",
+      "risikomanagement",
+      "sdgs",
+      "sdg-plus"
+    ],
+    "tags": [
+      "kontextbegriff",
+      "1.0",
+      "approved",
+      "Risikoregister",
+      "Risk Register",
+      "Risiko-Register"
+    ],
+    "aliases": [
+      "Risikoregister",
+      "Risk Register",
+      "Risiko-Register",
+      "Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden."
+    ],
+    "body": "Risikoregister Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden. Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden. Ein Risikoregister macht Risiken systematisch vergleichbar und bearbeitbar. Die Wirkungsökonomie liest die SDGs als globales Risiko- und Resilienzregister: Sie zeigen, welche Lebens- und Funktionsbedingungen stabil bleiben müssen, damit Gesellschaften, Märkte, Lieferketten, Ökosysteme und Demokratien nicht verwundbar werden. Verwenden, wenn Nachhaltigkeit, SDGs, SDG+, Risiko, Resilienz und Rückkopplung als operative Steuerungslogik erklärt werden. Risikoregister Risk Register Risiko-Register risiko-und-resilienzregister systemresilienz risikomanagement sdgs sdg-plus",
+    "semanticTerms": [
+      "Risikoregister",
+      "Risk Register",
+      "Risiko-Register",
+      "risiko-und-resilienzregister",
+      "systemresilienz",
+      "risikomanagement",
+      "sdgs",
+      "sdg-plus"
+    ],
+    "semanticText": "Risikoregister Risk Register Risiko-Register risiko-und-resilienzregister systemresilienz risikomanagement sdgs sdg-plus",
     "priority": 110
   },
   {
@@ -80157,6 +80259,52 @@
     "priority": 110
   },
   {
+    "id": "woek-term-wirkungsmanagement",
+    "title": "Wirkungsmanagement",
+    "description": "Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen.",
+    "url": "/begriffe/wirkungsmanagement/",
+    "section": "Begriffe",
+    "type": "Begriff",
+    "format": "Glossarbegriff",
+    "impactSpaces": [
+      "Mensch",
+      "Planet",
+      "Demokratie"
+    ],
+    "standards": [],
+    "instruments": [
+      "wirkungsdaten",
+      "wirkungsrueckkopplung",
+      "positive-netto-wirkung",
+      "impact-controlling",
+      "systemresilienz"
+    ],
+    "tags": [
+      "kontextbegriff",
+      "1.0",
+      "approved",
+      "Wirkungsmanagement",
+      "wirkungsorientiertes Management"
+    ],
+    "aliases": [
+      "Wirkungsmanagement",
+      "wirkungsorientiertes Management",
+      "Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen."
+    ],
+    "body": "Wirkungsmanagement Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen. Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen. Wirkungsmanagement betrachtet nicht nur erbrachte Leistungen oder Programme, sondern Wirkungen, Nebenwirkungen, Datenqualität, Betroffene, Zeitraum, Risiken und Rückkopplung. Es verbindet strategische Ziele mit prüfbaren Wirkpfaden und Entscheidungsänderungen. Verwenden, wenn Nachhaltigkeit, SDGs, SDG+, Risiko, Resilienz und Rückkopplung als operative Steuerungslogik erklärt werden. Wirkungsmanagement wirkungsorientiertes Management wirkungsdaten wirkungsrueckkopplung positive-netto-wirkung impact-controlling systemresilienz",
+    "semanticTerms": [
+      "Wirkungsmanagement",
+      "wirkungsorientiertes Management",
+      "wirkungsdaten",
+      "wirkungsrueckkopplung",
+      "positive-netto-wirkung",
+      "impact-controlling",
+      "systemresilienz"
+    ],
+    "semanticText": "Wirkungsmanagement wirkungsorientiertes Management wirkungsdaten wirkungsrueckkopplung positive-netto-wirkung impact-controlling systemresilienz",
+    "priority": 110
+  },
+  {
     "id": "woek-term-wirkungsoekonomie-im-alltag",
     "title": "Wirkungsökonomie im Alltag",
     "description": "Wirkungsökonomie im Alltag beschreibt, wie Wirkung in Konsum, Arbeit, Wohnen, Mobilität, Ernährung, Finanzen und demokratischer Teilgabe sichtbar und handhabbar wird, ohne Menschen moralisch zu überfordern oder zu überwachen.",
@@ -89487,7 +89635,7 @@
       "Wirkungsoekonomie",
       "neue Ordnung des Wohlstands"
     ],
-    "body": "WAS PREISE BISLANG NICHT ZEIGEN Gewinn und Wachstum reichen als Maßstab nicht. Und zentrale Kontrolle ist keine Lösung. Die Wirkungsökonomie ist kein neues Lager und kein zentraler Plan. Sie gibt Märkten, Politik und Kapital einen besseren Kompass. Sie fragt nicht nur, ob etwas profitabel ist. Sie fragt, welche Folgen wirklich entstehen: für Menschen, Ökosysteme, Institutionen und Demokratie. Schädliche Wirkung darf sich nicht länger rechnen. Positive Netto-Wirkung muss sich lohnen. Wirkung statt Kapital. Anhören: Die Grundidee der Wirkungsökonomie Transkript anzeigen Die Wirkungsökonomie fragt nicht nur: Wie viel Gewinn entsteht? Sondern: Welche Wirkung hat das auf unsere Zukunft? Positive Netto-Wirkung soll entscheidungsrelevant werden. Schädliche Wirkung soll sichtbar und rückgekoppelt werden. Kapital bleibt Werkzeug. Markt bleibt. Aber die entscheidende Frage lautet: Welche Wirkung entsteht wirklich? In 5 Minuten verstehen Nächsten Schritt wählen Kurzmodell verstehen Grundlagenwerk lesen Grundlogik Die Website folgt einer klaren Bewegungslogik. Die Wirkungsökonomie ist nicht zuerst ein Debattentool. Sie ist ein Ordnungsmodell: Wirkung sichtbar machen, bewerten und in Preise, Steuern, Einkommen, Kapital, Produkte, Unternehmen, Staat und Alltag zurückführen. 1 · Verstehen Was verändert sich wirklich? Alltag zuerst: Apfel, T-Shirt, Pflege, Wohnen, Medien, Kapital oder Haushalt. Dann erst Begriffe und Methode. Mehr erfahren 2 · Wirkungsfelder Wo wirkt es? Neun Suchräume ordnen Mensch, Planet, Wirtschaft, Arbeit, Wohnen, Staat, Öffentlichkeit, Wissen und Kapital. Mehr erfahren 3 · Wirkungssteuerung Wie wird Wirkung zurückgekoppelt? Wirkungssteuer, Produktpreise, Scorecards, WÖk-IDs, Haushalt, Rente, Einkommen, Kapital und Beschaffung. Mehr erfahren 4 · Anschluss finden Wer kann daran weiterarbeiten? Wissenschaft, Politik, Verwaltung, Unternehmen, Kapital, Bildung, Medien, Zivilgesellschaft, Standards, Daten und Kritik. Anschlussräume ansehen Warum Wirkungsökonomie? Warum wir einen neuen Kompass brauchen Die Wirkungsökonomie beginnt nicht mit einem Diagramm. Sie beginnt mit einem einfachen Problem: Viele Entscheidungen wirken erfolgreich, obwohl sie Zukunft zerstören. Anhören: Wie ich zur Wirkungsökonomie gekommen bin Einordnung anzeigen Persönlicher Einstieg zur Entstehung der Wirkungsökonomie: vom Zweifel an heutigen Erfolgsmaßstäben zur Frage nach realer Wirkung auf Mensch, Planet und Demokratie. 01 Gewinn zeigt nicht, was Zukunft zerstört Viele Entscheidungen rechnen sich, obwohl sie Klima, Gesundheit, Vertrauen oder Zusammenhalt schwächen. 02 Kontrolle ersetzt keine Wirkung Zentrale Planung kann Märkte ersticken, Bürokratie vergrößern und Lernen verhindern. 03 Wirkung macht sichtbar, was zählt Die WÖk fragt, welche Zustände sich wirklich verändern - und koppelt diese Bewertung in Preise, Steuern, Kapital und Entscheidungen zurück. Gewinn ist nicht das Problem. Das Problem ist, dass sich schädliche Wirkung noch rechnet - und positive Netto-Wirkung oft nicht. Was der Preis meist zeigt Kosten Marge Steuer Was häufig fehlt Klima Wasser Gesundheit Arbeitsrechte Vertrauen Demokratie Der falsche Preis ist nicht zu niedrig, weil Geld fehlt. Er ist blind, wenn zentrale Wirkungen nicht entscheidungsrelevant werden. In 5 Minuten verstehen Der schnellste Einstieg in die Wirkungsökonomie. Fünf Schritte reichen für die Grundidee: Was sehen wir heute nicht, was bedeutet Wirkung, wie wird sie bewertet, wie wird sie zurückgekoppelt und wo kannst du w",
+    "body": "WAS PREISE, BERICHTE UND GEWINNE BISLANG NICHT ZEIGEN Gewinn und Wachstum reichen als Maßstab nicht. Und zentrale Kontrolle ist keine Lösung. Die Wirkungsökonomie gibt Märkten, Politik, Kapital und öffentlichen Entscheidungen einen besseren Kompass: Wirkung statt Kapital, Systemresilienz statt Blindflug. Die Wirkungsökonomie ist kein neues Lager und kein zentraler Plan. Sie gibt Märkten, Politik und Kapital einen besseren Kompass. Sie fragt nicht nur, ob etwas profitabel ist. Sie fragt, welche Folgen wirklich entstehen: für Menschen, Ökosysteme, Institutionen und Demokratie. Schädliche Wirkung darf sich nicht länger rechnen. Positive Netto-Wirkung muss sich lohnen. Wirkung statt Kapital. Anhören: Die Grundidee der Wirkungsökonomie Transkript anzeigen Die Wirkungsökonomie fragt nicht nur: Wie viel Gewinn entsteht? Sondern: Welche Wirkung hat das auf unsere Zukunft? Positive Netto-Wirkung soll entscheidungsrelevant werden. Schädliche Wirkung soll sichtbar und rückgekoppelt werden. Kapital bleibt Werkzeug. Markt bleibt. Aber die entscheidende Frage lautet: Welche Wirkung entsteht wirklich? In 5 Minuten verstehen Nächsten Schritt wählen Kurzmodell verstehen Grundlagenwerk lesen SDGs · SDG+ · Systemresilienz Die neue Risiko- und Resilienzlesart Die SDGs sind nicht nur Nachhaltigkeitsziele. Wirkungsökonomisch gelesen beschreiben sie Mindestbedingungen stabiler Gesellschaften, Märkte, Lieferketten, Ökosysteme und Institutionen. SDG+ ergänzt die demokratische, mediale, rechtliche, digitale und gesellschaftliche Korrekturfähigkeit. Dossier SDGs als Risiko- und Resilienzregister Das Dossier erklärt die neue Lesart ausführlich und macht die Verbindung zu Systemresilienz, Risikointelligenz und Rückkopplung sichtbar. Dossier lesen Journal Von Nachhaltigkeit zu Systemresilienz Der Journalbeitrag fasst die strategische Verschiebung zusammen: Nachhaltigkeit bleibt anschlussfähig, Systemresilienz wird operativ. Mehr erfahren Glossar Begriffe nachschlagen Systemresilienz, Risikoregister, Resilienzmanagement und Wirkungsrückkopplung sind im Glossar verlinkt und zitierfähig. Mehr erfahren Grundlogik Die Website folgt einer klaren Bewegungslogik. Die Wirkungsökonomie ist nicht zuerst ein Debattentool. Sie ist ein Ordnungsmodell: Wirkung sichtbar machen, bewerten und in Preise, Steuern, Einkommen, Kapital, Produkte, Unternehmen, Staat und Alltag zurückführen. 1 · Verstehen Was verändert sich wirklich? Alltag zuerst: Apfel, T-Shirt, Pflege, Wohnen, Medien, Kapital oder Haushalt. Dann erst Begriffe und Methode. Mehr erfahren 2 · Wirkungsfelder Wo wirkt es? Neun Suchräume ordnen Mensch, Planet, Wirtschaft, Arbeit, Wohnen, Staat, Öffentlichkeit, Wissen und Kapital. Mehr erfahren 3 · Wirkungssteuerung Wie wird Wirkung zurückgekoppelt? Wirkungssteuer, Produktpreise, Scorecards, WÖk-IDs, Haushalt, Rente, Einkommen, Kapital und Beschaffung. Mehr erfahren 4 · Anschluss finden Wer kann daran weiterarbeiten? Wissenschaft, Politik, Verwaltung, Unternehmen, Kapital, Bildung, Medien, Zivilgesellschaft, Standards, Daten und Kritik. Anschlussräume ansehen Warum Wirkungsökonomie? Warum wir einen neuen Kompass brauchen Die Wirkungsökonomie beginnt nicht mit einem Diagramm. Sie beginnt mit einem einfachen Problem: Viele Entscheidungen wirken erfolgreich, obwohl sie Zukunft zerstören. Anhören: Wie ich zur Wirkungsökonomie gekommen bin Einordnung anzeigen Persönlicher Einstieg zur Entstehung der Wirkungsökonomie: vom Zweifel an heutigen Erfolgsmaßstäben zur Frage nach realer Wir",
     "priority": 100
   },
   {
@@ -89902,55 +90050,6 @@
     ],
     "body": "Interaktive Wirkungsökonomie Die Wirkungsökonomie erleben Was wirkt hier wirklich? Die Wirkungsökonomie bewertet Erfolg danach, ob etwas Mensch, Planet und Demokratie stärkt oder schädigt. Wähle ein Beispiel und sieh, wie diese Wirkung sichtbar wird. Nachhaltigkeitsmanagement ist hier kein Berichtsthema am Rand, sondern Risikomanagement: Geopolitik, Energie, Ressourcen, Klima, Lieferketten und Öffentlichkeit entscheiden längst über Kosten, Kapitalzugang und Überlebensfähigkeit. Mehr erfahren Medienwirkung testen Resilienz als Wirkung Nachhaltigkeit ist ein Ergebnis resilienter, wirkungsorientierter Unternehmensführung. Eine stabile Wertschöpfungskette braucht Daten, Szenarien, klare Bewertungen und frühe Entscheidungen. Der Bericht ist nicht das Ziel, sondern ein Nebenprodukt von Risikotransparenz. Demo-Methodik Was diese Demo zeigt und was nicht Dieser Standardblock gilt für Demos, Rechner, Scanner und interaktive Tools. Er trennt modellhafte Darstellung von amtlicher Bewertung, Beratung oder automatisierter Entscheidung. Was diese Demo zeigt Erleben-Hub alte URL Die alte Erleben-URL bleibt als Einstieg erhalten und verweist weiterhin auf die interaktive Erlebniswelt. Modellannahmen Vereinfachtes Arbeitsmodell Die Demo nutzt vereinfachte Wirkungspfade, Schwellen, Gewichtungen und Beispielwerte. Sie zeigt Struktur und Logik, nicht den finalen Prüfstandard. Datenqualität / Demo-Werte Beispielwerte statt Prüfstatus Demo-Werte sind modellhaft. Reale Anwendungen brauchen Quellen, Versionen, Datenqualitätsstufen, Unsicherheitsmarkierung und prüfbare Nachweise. Was diese Demo nicht leistet Keine endgültige Einstufung Die Demo ersetzt keine amtliche Bewertung, keine Beratung, keine Auditierung, keine Zertifizierung und keine fachliche Einzelfallprüfung. Schutzlinien Rote Linien bleiben sichtbar Keine Personenbewertung, keine automatische Entscheidung, keine Kompensation roter Linien und keine verdeckte Beratung. Datenqualität und Unsicherheit bleiben sichtbar. Verwandte Methoden Methodisch vertiefen Methoden & Werkzeuge Datenqualität & Assurance Reverse Merit Order Verwandte Dokumente Bibliothek und Kontext Arbeitsbibliothek Sprachregelwerk Einwände & Schutzgrenzen Nächster Schritt Vom Ausprobieren zur Anwendung Nutze das Ergebnis als Lern- und Diskussionsanstoß und prüfe danach Methodik, Datenlage und passende Wirkungsfelder. öffentliche Erleben-Seite Methoden & Werkzeuge Erlebniswelt Von der einfachen Frage zur Wirkungsbewertung. Der Ablauf ist immer gleich: Beispiel wählen, Bewertung lesen, Logik verstehen und übertragen, was sich ändern würde, wenn Preise, Steuern, Reichweite oder Kapital nach Wirkung entschieden würden. Tool Produktwirkung verstehen Nutzerfrage Warum ist ein billiges Produkt oft nicht wirklich billig? Heutige Blindstelle Der Preis zeigt meist nicht, ob Klima, Wasser, Gesundheit oder Arbeitsrechte geschädigt wurden. Was das Tool zeigt Du siehst, wie Produktdaten, Lieferkette, schwächstes Wirkungsfeld und Steuerlogik zusammenwirken. Ergebnis bedeutet Der Score zeigt nicht \"gut\" oder \"böse\", sondern welche Wirkung im Modell die Steuerklasse begrenzen würde. Produktwirkung testen Tool Medienwirkung verstehen Nutzerfrage Warum kann derselbe Inhalt demokratisch stabilisieren oder polarisieren? Heutige Blindstelle Reichweite wird oft belohnt, auch wenn sie Vertrauen, Faktenklarheit oder Diskursqualität schwächt. Was das Tool zeigt Du prüfst Quellenklarheit, Framing, Emotionalisierung und Resonanzrisiko. Ergebnis bedeutet Der Sco",
     "priority": 90
-  },
-  {
-    "id": "woek-section-anschluss-finden-title",
-    "title": "Alle Dokumente bleiben sichtbar: Die Bibliothek ist nicht Ablage, sondern Anschlussarchitektur.",
-    "description": "Die Bibliothek ist nicht Ablage, sondern Anschlussarchitektur. Jeder Inhalt soll künftig nach Thema, Zielgruppe, Dokumenttyp und Anschlussraum auffindbar sein. Der erste Schritt ist diese Orientierung über die wichtigsten Anschlussräume. Wi",
-    "url": "/bibliothek/#anschluss-finden-title",
-    "section": "Referenz",
-    "type": "Referenz",
-    "format": "Referenz",
-    "impactSpaces": [],
-    "standards": [],
-    "instruments": [],
-    "tags": [
-      "online-reviewed",
-      "2026.1",
-      "WÖk-Referenz"
-    ],
-    "aliases": [],
-    "body": "Die Bibliothek ist nicht Ablage, sondern Anschlussarchitektur. Jeder Inhalt soll künftig nach Thema, Zielgruppe, Dokumenttyp und Anschlussraum auffindbar sein. Der erste Schritt ist diese Orientierung über die wichtigsten Anschlussräume. Wissenschaft Politik Verwaltung &amp; Recht Praxis &amp; Pilotierung Wirtschaft &amp; Unternehmen Finanzsystem, Banken &amp; Versicherungen Zivilgesellschaft &amp; Bürger:innen Bildung &amp; Akademie Medien &amp; Öffentlichkeit Internationale Standards Technologie, Daten &amp; Infrastruktur Kritik, Legitimation &amp; Schutzlinien Lesepfade",
-    "semanticTerms": [
-      "Zivilgesellschaft",
-      "ngo",
-      "cso",
-      "buergerinitiative",
-      "grassroots-bewegung",
-      "repraesentationsanspruch",
-      "Öffentlichkeit",
-      "demokratische-oeffentlichkeit",
-      "medienqualitaet",
-      "transparenz",
-      "hannah-arendt",
-      "zivilgesellschaft",
-      "Gesellschaft",
-      "staat",
-      "resonanzraum",
-      "Orientierung",
-      "kohaerenz",
-      "systemische-kohaerenz",
-      "vertrauen",
-      "reframing",
-      "zukunftsbild",
-      "Verwaltung",
-      "behoerde",
-      "banalitaet-des-boesen",
-      "wirkungsarchitektur",
-      "gedankenlosigkeit"
-    ],
-    "semanticText": "Zivilgesellschaft ngo cso buergerinitiative grassroots-bewegung repraesentationsanspruch Öffentlichkeit demokratische-oeffentlichkeit medienqualitaet transparenz hannah-arendt zivilgesellschaft Gesellschaft staat resonanzraum Orientierung kohaerenz systemische-kohaerenz vertrauen reframing zukunftsbild Verwaltung behoerde banalitaet-des-boesen wirkungsarchitektur gedankenlosigkeit",
-    "priority": 85
   },
   {
     "id": "woek-section-downloads",
@@ -91385,19 +91484,19 @@
       "wirkungspfad",
       "folgewirkung",
       "positive-netto-wirkung",
-      "Impact-Management",
-      "doppelte-wesentlichkeit",
-      "iro",
-      "impact-controlling",
+      "Wirkungsmanagement",
+      "wirkungsdaten",
       "wirkungsrueckkopplung",
-      "steuerungsdaten",
+      "impact-controlling",
+      "systemresilienz",
       "Rückkopplung",
       "hebelpunkt",
       "donella-meadows",
       "Management",
-      "wirksames-management"
+      "wirksames-management",
+      "systemorientiertes-management"
     ],
-    "semanticText": "Wirkungspotenzial wirkung wirkungsrisiko wirkstoff resonanzraum anschlussfaehigkeit Wirkungsrückkopplung rueckkopplung kybernetik wirkungsarchitektur wirkungslenkung fuenftes-p-planet Wirkung wirkungspotenzial wirkungspfad folgewirkung positive-netto-wirkung Impact-Management doppelte-wesentlichkeit iro impact-controlling wirkungsrueckkopplung steuerungsdaten Rückkopplung hebelpunkt donella-meadows Management wirksames-management",
+    "semanticText": "Wirkungspotenzial wirkung wirkungsrisiko wirkstoff resonanzraum anschlussfaehigkeit Wirkungsrückkopplung rueckkopplung kybernetik wirkungsarchitektur wirkungslenkung fuenftes-p-planet Wirkung wirkungspotenzial wirkungspfad folgewirkung positive-netto-wirkung Wirkungsmanagement wirkungsdaten wirkungsrueckkopplung impact-controlling systemresilienz Rückkopplung hebelpunkt donella-meadows Management wirksames-management systemorientiertes-management",
     "priority": 85
   },
   {
@@ -93899,46 +93998,6 @@
     "priority": 85
   },
   {
-    "id": "woek-section-export-title",
-    "title": "SDG-/SDG+-Referenzrahmen: Seite sichern oder weitergeben",
-    "description": "Seite sichern oder weitergeben Diese Referenzseite kann über den Browserdruck als PDF gespeichert werden. Vertiefungskonzept und SDG+-Arbeitspapier bleiben ergänzende Downloadfassungen. Wirkungsökonomie",
-    "url": "/verstehen/sdgs-sdgplus/#export-title",
-    "section": "Referenz",
-    "type": "Referenz",
-    "format": "Referenz",
-    "impactSpaces": [],
-    "standards": [],
-    "instruments": [],
-    "tags": [
-      "online-reviewed",
-      "2026.1",
-      "WÖk-Referenz"
-    ],
-    "aliases": [],
-    "body": "Seite sichern oder weitergeben Diese Referenzseite kann über den Browserdruck als PDF gespeichert werden. Vertiefungskonzept und SDG+-Arbeitspapier bleiben ergänzende Downloadfassungen. Wirkungsökonomie",
-    "semanticTerms": [
-      "Wirkung",
-      "wirkungspotenzial",
-      "wirkungsrisiko",
-      "wirkungspfad",
-      "folgewirkung",
-      "positive-netto-wirkung",
-      "SDG+",
-      "sdgs",
-      "agenda-2030",
-      "mensch-planet-demokratie",
-      "wirkungsbewertung",
-      "Speicher",
-      "batteriespeicher",
-      "pumpspeicher",
-      "langzeitspeicher",
-      "quantenbatterie",
-      "systemkosten"
-    ],
-    "semanticText": "Wirkung wirkungspotenzial wirkungsrisiko wirkungspfad folgewirkung positive-netto-wirkung SDG+ sdgs agenda-2030 mensch-planet-demokratie wirkungsbewertung Speicher batteriespeicher pumpspeicher langzeitspeicher quantenbatterie systemkosten",
-    "priority": 85
-  },
-  {
     "id": "woek-section-downloads",
     "title": "SDG-Unterziele global, Europa und Deutschland: Materialien und Downloads",
     "description": "Materialien und Downloads Die Seite ist online lesbar. Die PDF-Fassung ist ergänzende Downloadfassung. Wirkungsökonomie",
@@ -94239,6 +94298,46 @@
       "positive-netto-wirkung"
     ],
     "semanticText": "Wirkung wirkungspotenzial wirkungsrisiko wirkungspfad folgewirkung positive-netto-wirkung",
+    "priority": 85
+  },
+  {
+    "id": "woek-section-export-title",
+    "title": "SDGs und SDG+ als Risiko- und Resilienzregister.: Seite sichern oder weitergeben",
+    "description": "Seite sichern oder weitergeben Diese Referenzseite kann über den Browserdruck als PDF gespeichert werden. Vertiefungskonzept und SDG+-Arbeitspapier bleiben ergänzende Downloadfassungen. Wirkungsökonomie",
+    "url": "/verstehen/sdgs-sdgplus/#export-title",
+    "section": "Referenz",
+    "type": "Referenz",
+    "format": "Referenz",
+    "impactSpaces": [],
+    "standards": [],
+    "instruments": [],
+    "tags": [
+      "online-reviewed",
+      "2026.1",
+      "WÖk-Referenz"
+    ],
+    "aliases": [],
+    "body": "Seite sichern oder weitergeben Diese Referenzseite kann über den Browserdruck als PDF gespeichert werden. Vertiefungskonzept und SDG+-Arbeitspapier bleiben ergänzende Downloadfassungen. Wirkungsökonomie",
+    "semanticTerms": [
+      "Wirkung",
+      "wirkungspotenzial",
+      "wirkungsrisiko",
+      "wirkungspfad",
+      "folgewirkung",
+      "positive-netto-wirkung",
+      "SDG+",
+      "sdgs",
+      "agenda-2030",
+      "mensch-planet-demokratie",
+      "wirkungsbewertung",
+      "Speicher",
+      "batteriespeicher",
+      "pumpspeicher",
+      "langzeitspeicher",
+      "quantenbatterie",
+      "systemkosten"
+    ],
+    "semanticText": "Wirkung wirkungspotenzial wirkungsrisiko wirkungspfad folgewirkung positive-netto-wirkung SDG+ sdgs agenda-2030 mensch-planet-demokratie wirkungsbewertung Speicher batteriespeicher pumpspeicher langzeitspeicher quantenbatterie systemkosten",
     "priority": 85
   },
   {
@@ -95642,6 +95741,55 @@
       "positive-netto-wirkung"
     ],
     "semanticText": "Wirkung wirkungspotenzial wirkungsrisiko wirkungspfad folgewirkung positive-netto-wirkung",
+    "priority": 85
+  },
+  {
+    "id": "woek-section-anschluss-finden-title",
+    "title": "Wissensbibliothek der Wirkungsökonomie.: Die Bibliothek ist nicht Ablage, sondern Anschlussarchitektur.",
+    "description": "Die Bibliothek ist nicht Ablage, sondern Anschlussarchitektur. Jeder Inhalt soll künftig nach Thema, Zielgruppe, Dokumenttyp und Anschlussraum auffindbar sein. Der erste Schritt ist diese Orientierung über die wichtigsten Anschlussräume. Wi",
+    "url": "/bibliothek/#anschluss-finden-title",
+    "section": "Referenz",
+    "type": "Referenz",
+    "format": "Referenz",
+    "impactSpaces": [],
+    "standards": [],
+    "instruments": [],
+    "tags": [
+      "online-reviewed",
+      "2026.1",
+      "WÖk-Referenz"
+    ],
+    "aliases": [],
+    "body": "Die Bibliothek ist nicht Ablage, sondern Anschlussarchitektur. Jeder Inhalt soll künftig nach Thema, Zielgruppe, Dokumenttyp und Anschlussraum auffindbar sein. Der erste Schritt ist diese Orientierung über die wichtigsten Anschlussräume. Wissenschaft Politik Verwaltung &amp; Recht Praxis &amp; Pilotierung Wirtschaft &amp; Unternehmen Finanzsystem, Banken &amp; Versicherungen Zivilgesellschaft &amp; Bürger:innen Bildung &amp; Akademie Medien &amp; Öffentlichkeit Internationale Standards Technologie, Daten &amp; Infrastruktur Kritik, Legitimation &amp; Schutzlinien Lesepfade",
+    "semanticTerms": [
+      "Zivilgesellschaft",
+      "ngo",
+      "cso",
+      "buergerinitiative",
+      "grassroots-bewegung",
+      "repraesentationsanspruch",
+      "Öffentlichkeit",
+      "demokratische-oeffentlichkeit",
+      "medienqualitaet",
+      "transparenz",
+      "hannah-arendt",
+      "zivilgesellschaft",
+      "Gesellschaft",
+      "staat",
+      "resonanzraum",
+      "Orientierung",
+      "kohaerenz",
+      "systemische-kohaerenz",
+      "vertrauen",
+      "reframing",
+      "zukunftsbild",
+      "Verwaltung",
+      "behoerde",
+      "banalitaet-des-boesen",
+      "wirkungsarchitektur",
+      "gedankenlosigkeit"
+    ],
+    "semanticText": "Zivilgesellschaft ngo cso buergerinitiative grassroots-bewegung repraesentationsanspruch Öffentlichkeit demokratische-oeffentlichkeit medienqualitaet transparenz hannah-arendt zivilgesellschaft Gesellschaft staat resonanzraum Orientierung kohaerenz systemische-kohaerenz vertrauen reframing zukunftsbild Verwaltung behoerde banalitaet-des-boesen wirkungsarchitektur gedankenlosigkeit",
     "priority": 85
   },
   {
@@ -97763,6 +97911,57 @@
     "priority": 70
   },
   {
+    "id": "woek-page-2eaab1ed28743a78",
+    "title": "Die SDGs als globales Risiko- und Resilienzregister.",
+    "description": "Die SDGs als globales Risiko- und Resilienzregister | Wirkungsökonomie Dossier Die SDGs als globales Risiko- und Resilienzregister. Warum Nachhaltigkeit nicht der operative Kern ist - und warum die Wirkungsökonomie mit SDG+ die fehlende Kor",
+    "url": "/verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+    "section": "Referenz",
+    "type": "Referenz",
+    "format": "Referenz",
+    "impactSpaces": [],
+    "standards": [],
+    "instruments": [],
+    "tags": [
+      "online-reviewed",
+      "2026.1",
+      "WÖk-Referenz"
+    ],
+    "aliases": [],
+    "body": "Die SDGs als globales Risiko- und Resilienzregister | Wirkungsökonomie Dossier Die SDGs als globales Risiko- und Resilienzregister. Warum Nachhaltigkeit nicht der operative Kern ist - und warum die Wirkungsökonomie mit SDG+ die fehlende Korrekturfähigkeit ergänzt. Vollständiges Dossier lesen Journalbeitrag lesen Kurzformel: Die SDGs sind das Risikoregister der Welt. SDG+ ist das Betriebssystem ihrer Korrekturfähigkeit. Die Wirkungsökonomie ist die Architektur, die beides messbar, nicht kompensierbar und entscheidungswirksam macht. Wir sprechen seit Jahren über Nachhaltigkeit. Der Begriff ist wichtig, weil er anschlussfähig ist. Aber wenn man die SDGs unternehmerisch, physikalisch und systemisch liest, geht es um etwas Härteres: um Risikomanagement . Und wenn man SDG+ hinzunimmt, wird klar: Es geht um Systemresilienz . Die 17 SDGs beschreiben keine moralische Wunschliste. Sie beschreiben Risikofelder, deren Nichtbearbeitung Gesellschaften, Märkte, Lieferketten, Kapitalmärkte, Versicherbarkeit, Gesundheit, Ernährung, Demokratie und ökologische Lebensgrundlagen destabilisiert. Armut ist dann kein bloßes Sozialthema, sondern ein Nachfrage-, Gesundheits-, Sicherheits- und Demokratierisiko. Hunger ist kein Entwicklungshilfethema, sondern ein Ernährungs-, Preis-, Agrar-, Konflikt- und Lieferkettenrisiko. Wasser ist kein Umweltlabel, sondern Standort-, Produktions-, Gesundheits- und Konfliktrisiko. Bildung ist kein weiches Gesellschaftsziel, sondern Fachkräfte-, Innovations-, Anpassungs- und Demokratierisiko. Klima ist nicht Meinung, sondern Physik mit Zeitverzug. Biodiversität ist",
+    "semanticTerms": [
+      "Risiko- und Resilienzregister",
+      "systemresilienz",
+      "sdgs",
+      "sdg-plus",
+      "wirkungsresilienz",
+      "risikomanagement",
+      "Gesundheit",
+      "gesundheitswirkung",
+      "gesundheitssystem",
+      "praevention",
+      "pflege-als-wirkleistung",
+      "one-health",
+      "Wirkung",
+      "wirkungspotenzial",
+      "wirkungsrisiko",
+      "wirkungspfad",
+      "folgewirkung",
+      "positive-netto-wirkung",
+      "Risikomanagement",
+      "systemische-risikointelligenz",
+      "risiko-und-resilienzregister",
+      "wirkungsrisikomanagement",
+      "SDG+",
+      "agenda-2030",
+      "mensch-planet-demokratie",
+      "wirkungsbewertung",
+      "Versicherbarkeit",
+      "kapitalwirkung"
+    ],
+    "semanticText": "Risiko- und Resilienzregister systemresilienz sdgs sdg-plus wirkungsresilienz risikomanagement Gesundheit gesundheitswirkung gesundheitssystem praevention pflege-als-wirkleistung one-health Wirkung wirkungspotenzial wirkungsrisiko wirkungspfad folgewirkung positive-netto-wirkung Risikomanagement systemische-risikointelligenz risiko-und-resilienzregister wirkungsrisikomanagement SDG+ agenda-2030 mensch-planet-demokratie wirkungsbewertung Versicherbarkeit kapitalwirkung",
+    "priority": 70
+  },
+  {
     "id": "woek-page-a3c701f1c43352f7",
     "title": "Die Sprache der Wirkungsökonomie",
     "description": "Die Sprache der Wirkungsökonomie - Wirkungsökonomie Teil II Die Sprache der Wirkungsökonomie 9 Kapitel im Grundlagenwerk. Als Teilübersicht mit zentralen Begriffen, Kontext und Exportpfad gestaltet. Originalfassung 2026.0 Import-Version 202",
@@ -98377,7 +98576,7 @@
   {
     "id": "woek-page-3513b68e976194bb",
     "title": "Erst Alltag, dann Fachbegriff.",
-    "description": "Wirkungsökonomie verstehen | Wirkungsökonomie Verstehen Erst Alltag, dann Fachbegriff. Die Wirkungsökonomie beginnt mit einer einfachen Frage: Was verändert sich wirklich - und für wen? Danach kommen Begriffe, Daten, Bewertung und Rückkoppl",
+    "description": "Verstehen | Wirkungsökonomie Verstehen Erst Alltag, dann Fachbegriff. Die Wirkungsökonomie beginnt mit einer einfachen Frage: Was verändert sich wirklich - und für wen? Danach kommen Begriffe, Daten, Bewertung, Risiko, Resilienz und Rückkop",
     "url": "/verstehen/",
     "section": "Referenz",
     "type": "Referenz",
@@ -98391,7 +98590,7 @@
       "WÖk-Referenz"
     ],
     "aliases": [],
-    "body": "Wirkungsökonomie verstehen | Wirkungsökonomie Verstehen Erst Alltag, dann Fachbegriff. Die Wirkungsökonomie beginnt mit einer einfachen Frage: Was verändert sich wirklich - und für wen? Danach kommen Begriffe, Daten, Bewertung und Rückkopplung. WÖk auf einer Seite So wirkt WÖk Glossar öffnen Mini-Beispiel Der Apfel ist nicht nur ein Apfel. Ein Preis zeigt, was du bezahlst. Eine Wirkungsfrage zeigt, was mitbezahlt wird: Wasser, Boden, Transport, Arbeit, Gesundheit, regionale Versorgung und Vertrauen. Alte Lesart Was kostet das? Der Markt sieht vor allem Preis, Menge und Nachfrage. Folgen für Mensch, Planet und Demokratie bleiben oft außerhalb der Entscheidung. Wirkungslesart Was bewirkt das? Die Wirkungsökonomie prüft den Wirkpfad: Welche Zustände verändern sich, welche Schäden entstehen, welche positive Netto-Wirkung wird möglich? Grundbewegung Vom Preis zur Wirkung. Ein Preis zeigt, was bezahlt wird. Er zeigt nicht automatisch, welche Folgen bei Arbeit, Gesundheit, Klima, Vertrauen oder Demokratie entstehen. Genau diese Blindstelle schließt die Wirkungsökonomie. Alltag Ein Apfel ist nicht nur ein Apfelpreis. Er enthält Wirkungen auf Boden, Wasser, Arbeit, Transport, Gesundheit, Handel und regionale Versorgung. Apfelbeispiel öffnen System Wirkung ist eine Zustandsveränderung. Eine Absicht, Reichweite oder ein Output ist noch keine Wirkung. Wirkung entsteht, wenn sich reale Zustände verändern. Begriff Wirkung Zielgröße Positive Netto-Wirkung. Entscheidend ist, ob Mensch, Planet und Demokratie insgesamt gestärkt werden, ohne schwere Schäden zu verdecken. Positive Netto-Wirkun",
+    "body": "Verstehen | Wirkungsökonomie Verstehen Erst Alltag, dann Fachbegriff. Die Wirkungsökonomie beginnt mit einer einfachen Frage: Was verändert sich wirklich - und für wen? Danach kommen Begriffe, Daten, Bewertung, Risiko, Resilienz und Rückkopplung. WÖk auf einer Seite So wirkt WÖk Glossar öffnen Vom Preis zur Wirkung Der Apfel ist nicht nur ein Apfel. Ein Preis zeigt, was du bezahlst. Eine Wirkungsfrage zeigt, was mitbezahlt wird: Wasser, Boden, Transport, Arbeit, Gesundheit, regionale Versorgung, Lieferkettenrisiko und Vertrauen. Alte Lesart Was kostet das? Der Markt sieht vor allem Preis, Menge und Nachfrage. Folgen für Mensch, Planet und Demokratie bleiben oft außerhalb der Entscheidung. Wirkungslesart Was bewirkt das? Die Wirkungsökonomie prüft den Wirkpfad: Welche Zustände verändern sich? Welche Risiken werden erzeugt? Welche Schäden entstehen? Welche positive Netto-Wirkung wird möglich? SDGs als Risikoregister Warum die SDGs härter sind als ein Nachhaltigkeitsetikett Armut ist nicht nur ein Sozialthema, sondern ein Nachfrage-, Gesundheits-, Sicherheits- und Demokratierisiko. Wasser ist nicht nur ein Umweltziel, sondern Standort-, Produktions-, Gesundheits- und Konfliktrisiko. Bildung ist nicht nur ein weiches Gesellschaftsziel, sondern Fachkräfte-, Innovations-, Anpassungs- und Demokratierisiko. SDG+ ergänzt diese Logik um die Korrekturfähigkeit moderner Gesellschaften: Wahrheit, Recht, Vertrauen, Diskurs, Medienqualität, digitale Integrität, kulturelle Teilhabe und öffentliche Rechenschaft. Risiko- und Resilienzregister verstehen Systemresilienz im Glossar Mini-Beispie",
     "semanticTerms": [
       "Mensch, Planet und Demokratie",
       "sdgs",
@@ -98403,6 +98602,10 @@
       "netto-wirkung",
       "mensch-planet-demokratie",
       "zukunftsfaehigkeit",
+      "Risiko- und Resilienzregister",
+      "systemresilienz",
+      "wirkungsresilienz",
+      "risikomanagement",
       "Netto-Wirkung",
       "reverse-merit-order",
       "nichtkompensationsprinzip",
@@ -98416,13 +98619,9 @@
       "fuenftes-p-planet",
       "Gesundheit",
       "gesundheitswirkung",
-      "gesundheitssystem",
-      "praevention",
-      "pflege-als-wirkleistung",
-      "one-health",
-      "Wirkungspfad"
+      "gesundheitssystem"
     ],
-    "semanticText": "Mensch, Planet und Demokratie sdgs agenda-2030 sdg-plus wirkung positive-netto-wirkung positive Netto-Wirkung netto-wirkung mensch-planet-demokratie zukunftsfaehigkeit Netto-Wirkung reverse-merit-order nichtkompensationsprinzip wirkungsgrenze finalscore Wirkungsrückkopplung rueckkopplung kybernetik wirkungsarchitektur wirkungslenkung fuenftes-p-planet Gesundheit gesundheitswirkung gesundheitssystem praevention pflege-als-wirkleistung one-health Wirkungspfad",
+    "semanticText": "Mensch, Planet und Demokratie sdgs agenda-2030 sdg-plus wirkung positive-netto-wirkung positive Netto-Wirkung netto-wirkung mensch-planet-demokratie zukunftsfaehigkeit Risiko- und Resilienzregister systemresilienz wirkungsresilienz risikomanagement Netto-Wirkung reverse-merit-order nichtkompensationsprinzip wirkungsgrenze finalscore Wirkungsrückkopplung rueckkopplung kybernetik wirkungsarchitektur wirkungslenkung fuenftes-p-planet Gesundheit gesundheitswirkung gesundheitssystem",
     "priority": 70
   },
   {
@@ -104648,14 +104847,14 @@
       "wirkungspfad",
       "folgewirkung",
       "positive-netto-wirkung",
-      "Impact-Management",
-      "doppelte-wesentlichkeit",
-      "iro",
+      "Wirkungsmanagement",
+      "wirkungsdaten",
       "impact-controlling",
-      "steuerungsdaten",
-      "Rückkopplung"
+      "systemresilienz",
+      "Rückkopplung",
+      "hebelpunkt"
     ],
-    "semanticText": "Wirkungsarchitektur wirkungsbewertung wirkungslenkung wirkungsrueckkopplung woek-id produktscorecard Wirkungspotenzial wirkung wirkungsrisiko wirkstoff resonanzraum anschlussfaehigkeit Wirkungsrückkopplung rueckkopplung kybernetik wirkungsarchitektur fuenftes-p-planet Wirkung wirkungspotenzial wirkungspfad folgewirkung positive-netto-wirkung Impact-Management doppelte-wesentlichkeit iro impact-controlling steuerungsdaten Rückkopplung",
+    "semanticText": "Wirkungsarchitektur wirkungsbewertung wirkungslenkung wirkungsrueckkopplung woek-id produktscorecard Wirkungspotenzial wirkung wirkungsrisiko wirkstoff resonanzraum anschlussfaehigkeit Wirkungsrückkopplung rueckkopplung kybernetik wirkungsarchitektur fuenftes-p-planet Wirkung wirkungspotenzial wirkungspfad folgewirkung positive-netto-wirkung Wirkungsmanagement wirkungsdaten impact-controlling systemresilienz Rückkopplung hebelpunkt",
     "priority": 70
   },
   {
@@ -106980,7 +107179,7 @@
       "Über mich"
     ],
     "aliases": [],
-    "body": "Anhören statt lesen Audio-Einführungen Zentrale Einstiege in die Wirkungsökonomie als Audio. Neue MP3-Erklärungen, ältere Audio-Einstiege und Transkripte sind hier zentral auffindbar. Die neuen Audio-Erklärungen sind auf den jeweiligen Kernseiten eingebunden; die Transkripte stehen dort einklappbar unter dem Player. Übersicht Alle vorhandenen Audios Persönlicher Einstieg Wie ich zur Wirkungsökonomie gekommen bin Natalie Weber erzählt, aus welcher Erfahrung die Frage nach Wirkung als neuem Maßstab entstanden ist. Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Über Natalie Weber öffnen · Buch-Einstieg öffnen Grundidee Die Grundidee der Wirkungsökonomie Einstieg in Wirkung, positive Netto-Wirkung und Mensch, Planet und Demokratie als Bewertungsräume. Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Auf der Startseite öffnen Verstehen Wirkungsökonomie kurz erklärt Kurzer Zugang zum Modell und zur Frage, warum Wirkung nicht Output ist. Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Verstehen-Seite öffnen · Audio verfügbar. Steuerlogik Von Daten zum Steuersatz Audio zur Übersetzung von Daten in Indikatoren, Scorecards, Wirkungsklassen und Rückkopplung. Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Workflow öffnen · Audio verfügbar. Vergleich Was die Wirkungsökonomie unterscheidet Abgrenzung zu ESG, Donut, Gemeinwohlökonomie, Wellbeing Economy und klassischen Marktmodellen. Sprecherin: Natalie",
+    "body": "Anhören statt lesen Audio-Einführungen Zentrale Einstiege in die Wirkungsökonomie als Audio. Neue MP3-Erklärungen, ältere Audio-Einstiege und Transkripte sind hier zentral auffindbar. Die neuen Audio-Erklärungen sind auf den jeweiligen Kernseiten eingebunden; die Transkripte stehen dort einklappbar unter dem Player. Übersicht Alle vorhandenen Audios Persönlicher Einstieg Wie ich zur Wirkungsökonomie gekommen bin Natalie Weber erzählt, aus welcher Erfahrung die Frage nach Wirkung als neuem Maßstab entstanden ist. Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Sprecherin: Natalie Weber Dauer: 6:23 Über Natalie Weber öffnen · Buch-Einstieg öffnen Grundidee Die Grundidee der Wirkungsökonomie Einstieg in Wirkung, positive Netto-Wirkung und Mensch, Planet und Demokratie als Bewertungsräume. Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Sprecherin: Natalie Weber Dauer: 0:48 Auf der Startseite öffnen Verstehen Wirkungsökonomie kurz erklärt Kurzer Zugang zum Modell und zur Frage, warum Wirkung nicht Output ist. Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Sprecherin: Natalie Weber Dauer: 1:03 Verstehen-Seite öffnen · Audio verfügbar. Steuerlogik Von Daten zum Steuersatz Audio zur Übersetzung von Daten in Indikatoren, Scorecards, Wirkungsklassen und Rückkopplung. Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecherin: Natalie Weber Dauer: 1:19 Sprecher",
     "priority": 35
   },
   {
@@ -133848,7 +134047,7 @@
   {
     "id": "page-fuer-index",
     "title": "Was bedeutet Wirkungsökonomie aus deiner Perspektive?",
-    "description": "Der Zielgruppenbereich übersetzt die Wirkungsökonomie systemisch: Problem, Fehlsteuerung, WÖk-Verschiebung und konkreter Nutzen.",
+    "description": "Zielgruppeneinstiege der Wirkungsökonomie: Bürger:innen, Unternehmen, Politik, Kommunen, Medien, Wissenschaft, Kapital, Wohnen, Gesundheit, Landwirtschaft, Rente und Bildung.",
     "url": "/fuer/",
     "section": "Für wen",
     "type": "Zielgruppenseite",
@@ -133874,7 +134073,7 @@
       "Zielgruppen"
     ],
     "aliases": [],
-    "body": "Für wen · Zielgruppen Was bedeutet Wirkungsökonomie aus deiner Perspektive? Die Wirkungsökonomie ist kein abstraktes Modell. Sie verändert, wie Unternehmen führen, wie Politik steuert, wie Bürger:innen Preise verstehen, wie Kommunen planen, wie Journalismus Wirkung analysiert und wie Kapital Risiken bewertet. Was läuft heute falsch? Und wie verändert Wirkung die Logik? Warum diese Perspektiven wichtig sind Nicht Zielgruppen-Marketing, sondern systemische Übersetzung. Jede Perspektive beginnt mit derselben Frage: Was misst das alte System falsch, welche Schäden entstehen daraus, warum reicht Reparatur nicht und welche Steuerungslogik verändert die WÖk? Einstiege Problem → WÖk-Verschiebung → Nutzen Journalismus Problem heute Aufmerksamkeit und Faktencheck reichen nicht, wenn Frames Resonanzräume erzeugen. WÖk-Verschiebung Faktencheck wird um Wirkungsanalyse ergänzt. Konkreter Nutzen Mehr Quellenklarheit, demokratische Verantwortung und Wirkungskompetenz. Unternehmen Problem heute KPI- und Kapitalsteuerung zeigen Bewegung, aber nicht Richtung. WÖk-Verschiebung Unternehmen werden als Wirkungssysteme geführt. Konkreter Nutzen Resiliente Wertschöpfung, bessere Führung, Wirkung als Managementlogik. Politik Problem heute Beschlüsse und Haushalte zeigen Aktivität, aber nicht automatisch Wirkung. WÖk-Verschiebung Politik wird zur Rückkopplungsarchitektur. Konkreter Nutzen Mehr Prävention, weniger Reparaturbürokratie, transparentere Wirkung. Bürger:innen Problem heute Menschen sollen moralisch kompensieren, was das System falsch signalisiert. WÖk-Verschiebung Wirkung wird in Preisen, Produkten, Medien und Politik sichtbarer. Konkreter Nutzen Orientierung statt Schuldgefühl. Wohnen, Mieten und Eigentum Problem heute Wohnraum wird als Anlageklasse, Mietobjekt oder Quadratmeterwert gelesen, obwohl er Lebensgrundlage, Gesundheitsraum, Energieraum, Quartiersfaktor und Vermögenswert zugleich ist. WÖk-Verschiebung Wohnen wird als Wirkungsraum bewertet: Bezahlbarkeit, Energie, Gesundheit, Quartier, Eigentum, Versicherbarkeit, Finanzierung und langfristige Resilienz werden zusammen sichtbar. Konkreter Nutzen Mieter:innen, Eigentümer:innen, Kommunen und Kapitalgeber erkennen, welche Wohnmodelle Zukunft sichern und welche Risiken, Folgekosten oder Wertverluste erzeugen. Investor:innen Problem heute Rendite zeigt nicht, welche Richtung Kapital verstärkt. WÖk-Verschiebung Kapital wird als Wirkungskraft und Risikowahrheit gelesen. Konkreter Nutzen Resilientere Portfolios und bessere Transformationsprüfung. Kommunen Problem heute Projekt- und Ressortlogik verdecken lokale Mehrfachwirkung. WÖk-Verschiebung Kommunen werden als reale Wirkungsräume gesteuert. Konkreter Nutzen Bessere Priorisierung knapper Mittel und sichtbare Prävention. Akademie Problem heute Wissen allein erzeugt noch keine Wirkungskompetenz. WÖk-Verschiebung Lernen folgt Wirkungspfaden, Quellen, Daten und Rückkopplung. Konkreter Nutzen Urteilskraft für komplexe Gesellschaften. Wissenschaft & Forschung Problem heute Publikationen und Drittmittel zeigen nicht automatisch gesellschaftliche Wirkung. WÖk-Verschiebung Wissenschaft wird als Wirkungsinfrastruktur gelesen. Konkreter Nutzen Bessere Korrekturfähigkeit, Unsicherheitssprache und Datenqualität. Gesundheit Problem heute Krankheit wird besser bezahlt als verhinderte Krankheit. WÖk-Verschiebung Gesundheit wird als Systemwirkung gesteuert. Konkreter Nutzen Prävention, Pflege, Arbeit, Wohnen und Kommunen werden verbunden. Landwirtschaft & Ernährung",
+    "body": "Für wen · Zielgruppen Was bedeutet die Wirkungsökonomie für mich? Die Wirkungsökonomie ist kein abstraktes Modell. Sie verändert, wie Unternehmen Risiken steuern, wie Politik Wirkung rückkoppelt, wie Bürger:innen Preise lesen, wie Kommunen Resilienz planen, wie Journalismus öffentliche Wirkung analysiert und wie Kapital Zukunftsrisiken bewertet. Was läuft heute falsch? Und wie verändert Wirkung die Logik? Gemeinsame Frage Was misst das alte System falsch? Jede Zielgruppe sieht zuerst andere Zwänge: Budget, Markt, Haushalt, Redaktion, Forschung, Pflege, Rendite oder Alltag. Die Wirkungsökonomie ergänzt überall dieselbe Prüfung: Welche Wirkung, welche Risiken und welche Resilienz entstehen dadurch? SDG-/SDG+-Risikorahmen öffnen Wirkungsmanagement Warum diese Perspektiven wichtig sind Nicht Zielgruppen-Marketing, sondern systemische Übersetzung. Jede Perspektive beginnt mit derselben Frage: Was misst das alte System falsch, welche Schäden entstehen daraus, warum reicht Reparatur nicht und welche Steuerungslogik verändert die WÖk? Einstiege Problem → WÖk-Verschiebung → Nutzen Journalismus Problem heute Aufmerksamkeit und Faktencheck reichen nicht, wenn Frames Resonanzräume erzeugen. WÖk-Verschiebung Faktencheck wird um Wirkungsanalyse ergänzt. Konkreter Nutzen Mehr Quellenklarheit, demokratische Verantwortung und Wirkungskompetenz. Unternehmen Problem heute KPI- und Kapitalsteuerung zeigen Bewegung, aber nicht Richtung. WÖk-Verschiebung Unternehmen werden als Wirkungssysteme geführt. Konkreter Nutzen Resiliente Wertschöpfung, bessere Führung, Wirkung als Managementlogik. Politik Problem heute Beschlüsse und Haushalte zeigen Aktivität, aber nicht automatisch Wirkung. WÖk-Verschiebung Politik wird zur Rückkopplungsarchitektur. Konkreter Nutzen Mehr Prävention, weniger Reparaturbürokratie, transparentere Wirkung. Bürger:innen Problem heute Menschen sollen moralisch kompensieren, was das System falsch signalisiert. WÖk-Verschiebung Wirkung wird in Preisen, Produkten, Medien und Politik sichtbarer. Konkreter Nutzen Orientierung statt Schuldgefühl. Wohnen, Mieten und Eigentum Problem heute Wohnraum wird als Anlageklasse, Mietobjekt oder Quadratmeterwert gelesen, obwohl er Lebensgrundlage, Gesundheitsraum, Energieraum, Quartiersfaktor und Vermögenswert zugleich ist. WÖk-Verschiebung Wohnen wird als Wirkungsraum bewertet: Bezahlbarkeit, Energie, Gesundheit, Quartier, Eigentum, Versicherbarkeit, Finanzierung und langfristige Resilienz werden zusammen sichtbar. Konkreter Nutzen Mieter:innen, Eigentümer:innen, Kommunen und Kapitalgeber erkennen, welche Wohnmodelle Zukunft sichern und welche Risiken, Folgekosten oder Wertverluste erzeugen. Investor:innen Problem heute Rendite zeigt nicht, welche Richtung Kapital verstärkt. WÖk-Verschiebung Kapital wird als Wirkungskraft und Risikowahrheit gelesen. Konkreter Nutzen Resilientere Portfolios und bessere Transformationsprüfung. Kommunen Problem heute Projekt- und Ressortlogik verdecken lokale Mehrfachwirkung. WÖk-Verschiebung Kommunen werden als reale Wirkungsräume gesteuert. Konkreter Nutzen Bessere Priorisierung knapper Mittel und sichtbare Prävention. Akademie Problem heute Wissen allein erzeugt noch keine Wirkungskompetenz. WÖk-Verschiebung Lernen folgt Wirkungspfaden, Quellen, Daten und Rückkopplung. Konkreter Nutzen Urteilskraft für komplexe Gesellschaften. Wissenschaft & Forschung Problem heute Publikationen und Drittmittel zeigen nicht automatisch gesellschaftliche Wirkung. WÖk-Verschiebung Wissensc",
     "priority": 35
   },
   {
@@ -136340,7 +136539,7 @@
   {
     "id": "page-wirkungssteuerung-index",
     "title": "Wirkungssteuerung",
-    "description": "Wirkungssteuerung verbindet Daten, Bewertung und Rückkopplung: Wirkung wird nicht nur berichtet, sondern verändert Preise, Steuern, Kapital, Einkommen, Beschaffung, Produkte, Unternehmen und Staat.",
+    "description": "Wirkungssteuerung verbindet Daten, Bewertung und Rückkopplung: Wirkung wird in Preise, Steuern, Kapital, Beschaffung, Haushalte, Management und Entscheidungen zurückgeführt.",
     "url": "/wirkungssteuerung/",
     "section": "Wirkungssteuerung",
     "type": "Wirkungssteuerung",
@@ -136352,7 +136551,7 @@
       "wirkungssteuerung"
     ],
     "aliases": [],
-    "body": "Wirkungssteuerung Wirkungssteuerung Wirkung darf nicht am Ende eines Berichts stehen. Sie muss zurück in die Entscheidungen, die morgen neue Wirkung erzeugen. Wirkungssteuerung öffnen WÖk-ID Register Bibliothek Warum diese Seite wichtig ist Wirkungssteuerung ist der praktische Kern der Wirkungsökonomie. Hier entscheidet sich, ob Wirkung nur beschrieben wird - oder ob sie Entscheidungen verändert. Ein Nachhaltigkeitsbericht kann noch so umfangreich sein: Solange seine Daten nicht in Preise, Steuern, Kapitalzugang, Beschaffung, Einkommen, Haushalte oder Produktentscheidungen zurückwirken, bleibt Wirkung im Schaufenster. Sie ist sichtbar, aber nicht steuernd. Man kann sich das vorstellen wie bei einem Thermometer. Es zeigt an, dass ein Raum zu kalt ist. Aber wenn die Heizung nicht darauf reagiert, bleibt die Information folgenlos. Genau das passiert in vielen heutigen Nachhaltigkeitssystemen. Daten werden erhoben, geprüft, präsentiert und in Berichten abgelegt. Doch die ökonomischen Signale bleiben oft dieselben: Schädliches erscheint billig, Zukunftsfähiges wirkt teuer, Reparatur wird finanziert, Prävention bleibt unterbewertet. Wirkungssteuerung schließt diese Lücke: Sie führt bewertete Wirkung in die Strukturen zurück, in denen Entscheidungen entstehen. Was Wirkungssteuerung bedeutet Wirkungssteuerung bedeutet nicht, dass ein Zentrum alles plant. Sie bedeutet auch nicht, dass Menschen nach ihrem privaten Lebensstil bewertet werden. Sie ordnet die Informations- und Anreizstruktur, in der dezentrale Entscheidungen getroffen werden. Märkte bleiben Suchräume. Unternehmen bleiben innovativ. Kapital bleibt Werkzeug. Der Staat bleibt rechtsstaatlich gebunden. Aber alle arbeiten mit besseren Signalen. Heute sagt ein Preis meistens nur: Das kostet es. In der Wirkungsökonomie muss er zusätzlich zeigen können: Das bewirkt es. Ein Produkt ist nicht nur eine Ware, sondern verdichtete Lieferkette: Rohstoffe, Energie, Wasser, Arbeit, Transport, Nutzung, Reparierbarkeit, Entsorgung, Daten, Gesundheit und soziale Wirkung . Ein Einkommen ist nicht nur Geldfluss, sondern Ausdruck einer Tätigkeit in einem Wirkungsraum. Ein öffentlicher Haushalt ist nicht nur Ausgabenplan, sondern ein Versprechen, Zustände zu verbessern. Kapital ist nicht nur Rendite, sondern ein Verstärker künftiger Möglichkeiten. Die sechs Steuerungsräume Die 19 Bausteine dieser Seite sind in sechs Steuerungsräume gegliedert. Sie zeigen, wo Wirkung in Entscheidungen zurückkehren kann. 1. Preise und Steuern Preise und Steuern sind die sichtbarsten Rückkopplungen. Wenn ein regional produzierter Apfel mit guter Wasser-, Klima- und Arbeitswirkung steuerlich genauso behandelt wird wie ein Produkt mit langen Transportwegen, hohem Wasserstress oder schlechten Arbeitsbedingungen, bleibt der Markt wirkungsblind. Wirkungssteuerung korrigiert nicht die Freiheit des Einkaufs, sondern die Wahrheit des Preissignals. 2. Einkommen und Rente Arbeit ist mehr als Erwerbseinkommen. Pflege, Bildung, Prävention, Integration, demokratische Arbeit, Reparatur und ökologische Regeneration erzeugen reale Systemleistung. Das alte System bewertet vor allem, wie viel Einkommen entsteht. Die Wirkungsökonomie fragt zusätzlich, welche Zustände diese Tätigkeit verändert - und wie gesellschaftliche Leistung jenseits bloßer Marktvergütung sichtbar wird. 3. Staat und Governance Der Staat lenkt immer: durch Haushalte, Recht, Förderung, Beschaffung, Infrastruktur und öffentliche Kommunikation. Wirkungssteuerung fragt, ob diese",
+    "body": "Wirkungssteuerung Wirkungssteuerung Wirkungssteuerung ist die Rückkopplungsarchitektur der Wirkungsökonomie: Wirkung wird nicht nur berichtet, sondern verändert Preise, Steuern, Kapital, Einkommen, Beschaffung, Produkte, Unternehmen, Staat und demokratische Entscheidungen. Wirkungssteuerung öffnen WÖk-ID Register Bibliothek Grundprinzip Ohne Rückkopplung bleibt Wirkung Information. Eine Handlung oder ein Unterlassen erzeugt Wirkungspotenzial oder Wirkungsrisiko. Daraus können Zustandsveränderungen entstehen. Diese werden gemessen, eingeordnet und an Mensch, Planet und Demokratie bewertet. Danach müssen sie zurück in Entscheidungen: in Preise, Steuern, Kapital, Beschaffung, Haushalte, Management, Förderung oder Recht. Mit Rückkopplung wird Wirkung Richtung. Wirkungsrückkopplung Risikoregister Warum diese Seite wichtig ist Wirkungssteuerung ist der praktische Kern der Wirkungsökonomie. Hier entscheidet sich, ob Wirkung nur beschrieben wird - oder ob sie Entscheidungen verändert. Ein Nachhaltigkeitsbericht kann noch so umfangreich sein: Solange seine Daten nicht in Preise, Steuern, Kapitalzugang, Beschaffung, Einkommen, Haushalte oder Produktentscheidungen zurückwirken, bleibt Wirkung im Schaufenster. Sie ist sichtbar, aber nicht steuernd. Man kann sich das vorstellen wie bei einem Thermometer. Es zeigt an, dass ein Raum zu kalt ist. Aber wenn die Heizung nicht darauf reagiert, bleibt die Information folgenlos. Genau das passiert in vielen heutigen Nachhaltigkeitssystemen. Daten werden erhoben, geprüft, präsentiert und in Berichten abgelegt. Doch die ökonomischen Signale bleiben oft dieselben: Schädliches erscheint billig, Zukunftsfähiges wirkt teuer, Reparatur wird finanziert, Prävention bleibt unterbewertet. Wirkungssteuerung schließt diese Lücke: Sie führt bewertete Wirkung in die Strukturen zurück, in denen Entscheidungen entstehen. Was Wirkungssteuerung bedeutet Wirkungssteuerung bedeutet nicht, dass ein Zentrum alles plant. Sie bedeutet auch nicht, dass Menschen nach ihrem privaten Lebensstil bewertet werden. Sie ordnet die Informations- und Anreizstruktur, in der dezentrale Entscheidungen getroffen werden. Märkte bleiben Suchräume. Unternehmen bleiben innovativ. Kapital bleibt Werkzeug. Der Staat bleibt rechtsstaatlich gebunden. Aber alle arbeiten mit besseren Signalen. Heute sagt ein Preis meistens nur: Das kostet es. In der Wirkungsökonomie muss er zusätzlich zeigen können: Das bewirkt es. Ein Produkt ist nicht nur eine Ware, sondern verdichtete Lieferkette: Rohstoffe, Energie, Wasser, Arbeit, Transport, Nutzung, Reparierbarkeit, Entsorgung, Daten, Gesundheit und soziale Wirkung . Ein Einkommen ist nicht nur Geldfluss, sondern Ausdruck einer Tätigkeit in einem Wirkungsraum. Ein öffentlicher Haushalt ist nicht nur Ausgabenplan, sondern ein Versprechen, Zustände zu verbessern. Kapital ist nicht nur Rendite, sondern ein Verstärker künftiger Möglichkeiten. Die sechs Steuerungsräume Die 19 Bausteine dieser Seite sind in sechs Steuerungsräume gegliedert. Sie zeigen, wo Wirkung in Entscheidungen zurückkehren kann. 1. Preise und Steuern Preise und Steuern sind die sichtbarsten Rückkopplungen. Wenn ein regional produzierter Apfel mit guter Wasser-, Klima- und Arbeitswirkung steuerlich genauso behandelt wird wie ein Produkt mit langen Transportwegen, hohem Wasserstress oder schlechten Arbeitsbedingungen, bleibt der Markt wirkungsblind. Wirkungssteuerung korrigiert nicht die Freiheit des Einkaufs, sondern die Wahrheit des Preissignals. 2. Ei",
     "priority": 35
   },
   {
@@ -151649,6 +151848,15 @@
       "Suchindex nachrangig",
       "Suchindex nachrangig",
       "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
+      "Suchindex nachrangig",
       "Suchindex nachrangig"
     ],
     "aliases": [
@@ -151656,13 +151864,13 @@
       "mitarbeiten",
       "Discord"
     ],
-    "body": "Mitmachen Wirkungsökonomie weiterdenken. Die Wirkungsökonomie ist ein offenes Modell. Sie soll gelesen, geprüft, diskutiert, kritisiert und praktisch erprobt werden. Akademie öffnen Pilotpfade ansehen Kontakt aufnehmen Einstiege Wie du konkret einsteigen kannst Mitmachen heißt hier nicht Zustimmung. Mitmachen heißt: Fragen stellen, Annahmen prüfen, Quellen verbessern, Werkzeuge testen und Pilotierungen vorbereiten. Lernen Akademie starten Erschließe die Wirkungsökonomie Schritt für Schritt: Problem, Maßstab, Daten, Bewertung, Rückkopplung und Anwendung. Zur Akademie Prüfen Quellen und Begriffe verbessern Hinweise auf fehlende Quellen, unklare Begriffe, Datenlücken oder missverständliche Formulierungen helfen, das Modell belastbarer zu machen. Bibliothek öffnen Anwenden Ein Wirkungsbeispiel entwickeln Übertrage die Wirkungslogik auf ein Produkt, eine Organisation, ein politisches Feld, ein Medium oder eine konkrete Entscheidung. Werkzeuge ansehen Pilotieren Pilotpfad vorbereiten Wähle einen konkreten Anwendungsraum und prüfe modellhaft, welche Daten, Methoden und Schutzlinien nötig sind. Pilotpfade ansehen Austausch Diskussion, Kritik und Kooperation sind Teil des Modells. Die Wirkungsökonomie soll nicht als fertige Behauptung im Raum stehen. Sie braucht Gegenfragen, Anwendungserfahrungen, methodische Kritik und Partner:innen, die Wirkung praktisch prüfen wollen. Discord öffnen E-Mail schreiben Kontakt Kontakt Für Rückfragen, Hinweise, Kooperationen oder Vortragsanfragen kann die Kontaktadresse genutzt werden. impact@wirkungsoekonomie.org E-Mail schreiben",
+    "body": "Mitmachen Wirkungsökonomie weiterdenken. Die Wirkungsökonomie ist ein offenes Modell. Sie soll gelesen, geprüft, diskutiert, kritisiert und praktisch erprobt werden. Mitmachen heißt hier nicht Zustimmung, sondern gemeinsames Prüfen und Anwenden. Akademie öffnen Pilotpfade ansehen Kontakt aufnehmen Einladung Eine neue Ordnung entsteht nicht allein. Wirkung wird gesellschaftlich wirksam, wenn Menschen sie verstehen, anwenden, prüfen und weitertragen: Fragen stellen, Annahmen prüfen, Quellen verbessern, Werkzeuge testen, Risiken benennen und Pilotierungen vorbereiten. Einstiege Wie du konkret einsteigen kannst Mitmachen heißt hier nicht Zustimmung. Mitmachen heißt: Fragen stellen, Annahmen prüfen, Quellen verbessern, Werkzeuge testen und Pilotierungen vorbereiten. Lernen Akademie starten Erschließe die Wirkungsökonomie Schritt für Schritt: Problem, Maßstab, Daten, Bewertung, Rückkopplung und Anwendung. Zur Akademie Prüfen Quellen und Begriffe verbessern Hinweise auf fehlende Quellen, unklare Begriffe, Datenlücken oder missverständliche Formulierungen helfen, das Modell belastbarer zu machen. Bibliothek öffnen Anwenden Ein Wirkungsbeispiel entwickeln Übertrage die Wirkungslogik auf ein Produkt, eine Organisation, ein politisches Feld, ein Medium oder eine konkrete Entscheidung. Werkzeuge ansehen Pilotieren Pilotpfad vorbereiten Wähle einen konkreten Anwendungsraum und prüfe modellhaft, welche Daten, Methoden und Schutzlinien nötig sind. Pilotpfade ansehen Austausch Diskussion, Kritik und Kooperation sind Teil des Modells. Die Wirkungsökonomie soll nicht als fertige Behauptung im Raum stehen. Sie braucht Gegenfragen, Anwendungserfahrungen, methodische Kritik und Partner:innen, die Wirkung praktisch prüfen wollen. Discord öffnen E-Mail schreiben Kontakt Kontakt Für Rückfragen, Hinweise, Kooperationen oder Vortragsanfragen kann die Kontaktadresse genutzt werden. impact@wirkungsoekonomie.org E-Mail schreiben",
     "priority": 8
   },
   {
     "id": "page-ueber",
     "title": "Über die Wirkungsökonomie - Ursprung, Idee und Autorinnenschaft",
-    "description": "Warum die Wirkungsökonomie entstanden ist, welche Frage sie beantwortet und warum Natalie Weber als Begründerin Wirkung statt Kapital zum neuen Maßstab macht.",
+    "description": "Warum die Wirkungsökonomie entstanden ist: Wirkung, Risiko, Systemresilienz und positive Netto-Wirkung als neuer Maßstab für Mensch, Planet und Demokratie.",
     "url": "/ueber.html",
     "section": "Seite",
     "type": "Seite",
@@ -151676,7 +151884,7 @@
       "Suchindex nachrangig"
     ],
     "aliases": [],
-    "body": "Über die Wirkungsökonomie Warum dieses Modell entstanden ist Die Wirkungsökonomie entstand aus einer einfachen Frage: Warum haben wir so viele Daten - und steuern trotzdem weiter nach dem falschen Maßstab? Natalie Weber ist Begründerin der Wirkungsökonomie. Die Wirkungsökonomie fragt, ob wirtschaftliche, politische und gesellschaftliche Entscheidungen Mensch, Planet und Demokratie stärken oder schädigen. Wirkungsökonomie verstehen Modell ansehen Leitidee Kapital bleibt Werkzeug. Wirkung wird Kompass. Wohlstand wird daran gemessen, ob Handlungen Mensch, Planet und Demokratie stärken. Ursprung Die Ausgangsfrage In Wirtschaft, Politik und Nachhaltigkeitsmanagement werden heute unzählige Daten erhoben. Emissionen, Wasserverbrauch, Arbeitsbedingungen, Lieferketten, Risiken, Ratings und Kennzahlen sind sichtbar wie nie. Doch viele dieser Informationen verändern Preise, Steuern, Kapitalflüsse und politische Entscheidungen kaum. Genau aus dieser Lücke entstand die Wirkungsökonomie. Rolle der Website Offener Wissens-, Lern- und Anwendungsraum Die Website bündelt Theorie, Begriffe, Wirkungsfelder, Demos, Akademie und Materialien zur Wirkungsökonomie. Sie ist Wissensplattform, Lernraum, Standardentwicklung und Anwendungsraum zugleich. Was ist schon Modell? Die Wirkungsökonomie ist ein ausgearbeitetes Gesellschafts- und Wirtschaftsmodell mit Begriffssystem, Wirkungsfeldern, Referenzrahmen und methodischen Bausteinen. Was ist Demo? Scanner, Rechner und Checks sind modellhafte Ersteinschätzungen. Sie machen Logiken nachvollziehbar, sind aber keine amtlichen Bewertungen. Was ist keine amtliche Bewertung? Die Website ersetzt keine Behörde, keine Rechtsberatung, keine Steuerberatung, kein Rating und keine demokratische Entscheidung. Für wen? Politik, Verwaltung, Wirtschaft, Wissenschaft, Medien, Bildung und Bürger:innen finden unterschiedliche Einstiege in dieselbe Wirkungslogik. Mitwirken Hinweise, Kritik, Pilotideen, wissenschaftliche Rückfragen und institutionelle Kooperationen können über die Kontaktadresse eingebracht werden. Kontakt Für Politik, Wirtschaft, Wissenschaft und Medien: impact@wirkungsoekonomie.org Lesen Grundidee, Modell, Fragen und Wirkungsfelder verstehen. Erleben Demos als modellhafte Ersteinschätzungen nutzen. Vertiefen Akademie, Begriffe, Bibliothek und Onlinefassungen öffnen. Mitmachen Feedback, Pilotierung, Kooperation oder Diskussion anstoßen. Kooperation / Pilotierung anfragen Frage einreichen Akademie ansehen Bibliothek nutzen Was ist die Wirkungsökonomie? Ein Gesellschaftsmodell und ein Paradigmenwechsel. Die Wirkungsökonomie ist mehr als ein neues Wirtschaftsmodell. Sie verschiebt den Maßstab: Nicht mehr Kapital, Macht oder kurzfristiger Profit entscheiden, sondern die positive Netto-Wirkung für Mensch, Planet und Demokratie - bewertet am Referenzrahmen von SDGs, Agenda 2030 und SDG+. Unser jetziges System misst an vielen Stellen am Falschen. Wohnungen werden zum Spekulationsobjekt, Fleisch aus Massentierhaltung wird steuerlich begünstigt, Strom aus Kohle wird gleich behandelt wie Strom aus 100 Prozent Erneuerbaren, und destruktive Geschäftsmodelle werden häufig nicht nach ihren Folgekosten bewertet. Das Ergebnis: Zerstörung kann sich lohnen, während Nachhaltigkeit teurer bleibt. Die Wirkungsökonomie dreht den Kompass: Wirkung statt Kapital. Messbarkeit Bewertungen machen Wirkung sichtbar. Sie verbinden vorhandene Daten mit Kernfeldern wie Klima, Ressourcen und Kreislauf, Arbeit und Fairness sowie Gesundheit und Sicherheit",
+    "body": "Über die Wirkungsökonomie Warum dieses Modell entstanden ist Die Wirkungsökonomie entstand aus einer einfachen Frage: Warum haben wir so viele Daten - und steuern trotzdem weiter nach dem falschen Maßstab? Natalie Weber ist Begründerin der Wirkungsökonomie. Die Wirkungsökonomie fragt, ob wirtschaftliche, politische und gesellschaftliche Entscheidungen Mensch, Planet und Demokratie stärken oder schädigen. Wirkungsökonomie verstehen Modell ansehen Leitidee Kapital bleibt Werkzeug. Wirkung wird Kompass. Wohlstand wird daran gemessen, ob Handlungen Mensch, Planet und Demokratie stärken. Paradigmenwechsel Ein Gesellschaftsmodell und ein neuer Maßstab. Die Wirkungsökonomie ist mehr als ein neues Wirtschaftsmodell. Sie verschiebt den Maßstab: Nicht mehr Kapital, Macht oder kurzfristiger Profit entscheiden, sondern positive Netto-Wirkung für Mensch, Planet und Demokratie - bewertet am Referenzrahmen von SDGs, Agenda 2030 und SDG+. Die neue Risiko-/Resilienzlesart schärft diesen Maßstab: Die SDGs beschreiben Stabilitätsbedingungen. SDG+ beschreibt Korrekturfähigkeiten. Die Wirkungsökonomie beschreibt die Architektur, durch die beides in Preise, Steuern, Kapital, Beschaffung, Governance und Entscheidungen zurückgeführt wird. Ursprung Die Ausgangsfrage In Wirtschaft, Politik und Nachhaltigkeitsmanagement werden heute unzählige Daten erhoben. Emissionen, Wasserverbrauch, Arbeitsbedingungen, Lieferketten, Risiken, Ratings und Kennzahlen sind sichtbar wie nie. Doch viele dieser Informationen verändern Preise, Steuern, Kapitalflüsse und politische Entscheidungen kaum. Genau aus dieser Lücke entstand die Wirkungsökonomie. Rolle der Website Offener Wissens-, Lern- und Anwendungsraum Die Website bündelt Theorie, Begriffe, Wirkungsfelder, Demos, Akademie und Materialien zur Wirkungsökonomie. Sie ist Wissensplattform, Lernraum, Standardentwicklung und Anwendungsraum zugleich. Was ist schon Modell? Die Wirkungsökonomie ist ein ausgearbeitetes Gesellschafts- und Wirtschaftsmodell mit Begriffssystem, Wirkungsfeldern, Referenzrahmen und methodischen Bausteinen. Was ist Demo? Scanner, Rechner und Checks sind modellhafte Ersteinschätzungen. Sie machen Logiken nachvollziehbar, sind aber keine amtlichen Bewertungen. Was ist keine amtliche Bewertung? Die Website ersetzt keine Behörde, keine Rechtsberatung, keine Steuerberatung, kein Rating und keine demokratische Entscheidung. Für wen? Politik, Verwaltung, Wirtschaft, Wissenschaft, Medien, Bildung und Bürger:innen finden unterschiedliche Einstiege in dieselbe Wirkungslogik. Mitwirken Hinweise, Kritik, Pilotideen, wissenschaftliche Rückfragen und institutionelle Kooperationen können über die Kontaktadresse eingebracht werden. Kontakt Für Politik, Wirtschaft, Wissenschaft und Medien: impact@wirkungsoekonomie.org Lesen Grundidee, Modell, Fragen und Wirkungsfelder verstehen. Erleben Demos als modellhafte Ersteinschätzungen nutzen. Vertiefen Akademie, Begriffe, Bibliothek und Onlinefassungen öffnen. Mitmachen Feedback, Pilotierung, Kooperation oder Diskussion anstoßen. Kooperation / Pilotierung anfragen Frage einreichen Akademie ansehen Bibliothek nutzen Was ist die Wirkungsökonomie? Ein Gesellschaftsmodell und ein Paradigmenwechsel. Die Wirkungsökonomie ist mehr als ein neues Wirtschaftsmodell. Sie verschiebt den Maßstab: Nicht mehr Kapital, Macht oder kurzfristiger Profit entscheiden, sondern die positive Netto-Wirkung für Mensch, Planet und Demokratie - bewertet am Referenzrahmen von SDGs, Agenda 2030 und SDG+. Unser",
     "priority": 8
   }
 ]

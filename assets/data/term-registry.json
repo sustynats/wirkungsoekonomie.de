@@ -130811,7 +130811,6 @@
       "slug": "impact-management",
       "aliases": [
         "Impact Management",
-        "Wirkungsmanagement",
         "Wirkungsmanagement im Unternehmen"
       ],
       "shortDefinition": "Impact-Management übersetzt wesentliche Wirkungen, Risiken und Chancen in Ziele, Maßnahmen, Verantwortung, Ressourcen und Lernen.",
@@ -130833,7 +130832,8 @@
         "steuerungsdaten",
         "wirkungsdaten",
         "wirkungsrisiko",
-        "impact-strategie"
+        "impact-strategie",
+        "wirkungsmanagement"
       ],
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
@@ -130864,7 +130864,8 @@
         "impact-strategie"
       ],
       "doNotConfuseWith": [],
-      "officialSources": []
+      "officialSources": [],
+      "lastUpdated": "2026-06-09"
     },
     {
       "id": "impact-marketing",
@@ -232143,6 +232144,7 @@
         "Kompensation"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "sdg-sdgplus-referenzrahmen",
         {
           "label": "Die neue Ordnung des Wohlstands",
@@ -232169,7 +232171,7 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "positive netto wirkung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-06-01",
+      "lastUpdated": "2026-06-09",
       "updatedAt": "2026-05-27",
       "related_terms": [
         "wirkung",
@@ -266603,6 +266605,7 @@
         "wirkungspfad"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/",
@@ -275970,6 +275973,7 @@
         "Agenda 2030"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "sdg-sdgplus-referenzrahmen"
       ],
@@ -276809,6 +276813,7 @@
         "ESG"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "sdg-sdgplus-referenzrahmen"
       ],
@@ -304978,6 +304983,7 @@
         "demokratische-resilienz"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/",
@@ -370098,6 +370104,7 @@
         "Wirkungsrückkopplung ist der konkrete Rückfluss von Wirkung in Steuerungsgrößen."
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         {
           "label": "Wirkungsökonomie Glossar",
           "href": "../../glossar.html"
@@ -370117,7 +370124,7 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "wirkungsrückkopplung",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-06-01",
+      "lastUpdated": "2026-06-09",
       "tags": [],
       "updatedAt": "2026-05-29",
       "conceptStatus": "WÖk-Kernbegriff",
@@ -388481,6 +388488,7 @@
         "wirkungsrisikomanagement"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/"
@@ -388545,6 +388553,7 @@
         "sdg-plus"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/"
@@ -388609,6 +388618,7 @@
         "sdg-plus"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/"
@@ -388673,6 +388683,7 @@
         "wirkungsdaten"
       ],
       "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
         "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
         "verstehen/sdgs-sdgplus/"
@@ -388695,6 +388706,199 @@
         "wirkungslogik"
       ],
       "pageUrl": "/begriffe/wirkungsrisikomanagement/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "resilienzmanagement",
+      "termId": "resilienzmanagement",
+      "canonicalLabel": "Resilienzmanagement",
+      "label": "Resilienzmanagement",
+      "slug": "resilienzmanagement",
+      "status": "kontextbegriff",
+      "type": "Kontextbegriff",
+      "version": "1.0",
+      "source": "Website-Textanpassungen 2.1: SDGs und SDG+ als Risiko- und Resilienzregister",
+      "sourceDocument": "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+      "sourceSection": "SDGs, SDG+ und Systemresilienz",
+      "shortDefinition": "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress.",
+      "hoverDefinition": "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress.",
+      "definition": "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress.",
+      "longDefinition": "Resilienzmanagement macht Risiken und Verwundbarkeiten so bearbeitbar, dass Systeme zentrale Funktionen auch bei Schocks, Krisen, Fehlanreizen und Rückkopplungen erhalten. In der Wirkungsökonomie verbindet es Daten, Frühwarnsignale, Governance, Lernschleifen und Schutzlinien.",
+      "woekRelation": "Der Begriff ordnet die neue Website-Rahmung ein: SDGs als Risiko- und Resilienzregister, SDG+ als Korrekturfähigkeit und Wirkungsökonomie als Rückkopplungsarchitektur.",
+      "usageNote": "Verwenden, wenn Nachhaltigkeit, SDGs, SDG+, Risiko, Resilienz und Rückkopplung als operative Steuerungslogik erklärt werden.",
+      "doNotConfuseWith": [
+        "Nachhaltigkeit als reines Kommunikationslabel",
+        "isoliertes ESG-Reporting",
+        "Personenbewertung"
+      ],
+      "synonyms": [
+        "Resilience Management",
+        "Resilienz-Management"
+      ],
+      "aliases": [
+        "Resilience Management",
+        "Resilienz-Management"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "risikomanagement",
+        "resilienzarchitektur",
+        "risiko-und-resilienzregister",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "examples": [
+        "Eine Kommune verbindet Hitze, Gesundheit, Pflege, Stadtgrün, Infrastruktur und Haushalt zu einer resilienteren Steuerung."
+      ],
+      "preferredUsage": "Resilienzmanagement als prüfbaren Begriff für Risiko, Resilienz und Wirkungsrückkopplung verwenden.",
+      "deprecatedUsage": [
+        "Resilienzmanagement als bloßes Modewort ohne Daten-, Entscheidungs- und Schutzlinienbezug verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "resilienzmanagement",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "categories": [
+        "resilienz",
+        "sdg-plus",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/resilienzmanagement/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "wirkungsmanagement",
+      "termId": "wirkungsmanagement",
+      "canonicalLabel": "Wirkungsmanagement",
+      "label": "Wirkungsmanagement",
+      "slug": "wirkungsmanagement",
+      "status": "kontextbegriff",
+      "type": "Kontextbegriff",
+      "version": "1.0",
+      "source": "Website-Textanpassungen 2.1: SDGs und SDG+ als Risiko- und Resilienzregister",
+      "sourceDocument": "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+      "sourceSection": "SDGs, SDG+ und Systemresilienz",
+      "shortDefinition": "Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen.",
+      "hoverDefinition": "Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen.",
+      "definition": "Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen.",
+      "longDefinition": "Wirkungsmanagement betrachtet nicht nur erbrachte Leistungen oder Programme, sondern Wirkungen, Nebenwirkungen, Datenqualität, Betroffene, Zeitraum, Risiken und Rückkopplung. Es verbindet strategische Ziele mit prüfbaren Wirkpfaden und Entscheidungsänderungen.",
+      "woekRelation": "Der Begriff ordnet die neue Website-Rahmung ein: SDGs als Risiko- und Resilienzregister, SDG+ als Korrekturfähigkeit und Wirkungsökonomie als Rückkopplungsarchitektur.",
+      "usageNote": "Verwenden, wenn Nachhaltigkeit, SDGs, SDG+, Risiko, Resilienz und Rückkopplung als operative Steuerungslogik erklärt werden.",
+      "doNotConfuseWith": [
+        "Nachhaltigkeit als reines Kommunikationslabel",
+        "isoliertes ESG-Reporting",
+        "Personenbewertung"
+      ],
+      "synonyms": [
+        "wirkungsorientiertes Management"
+      ],
+      "aliases": [
+        "wirkungsorientiertes Management"
+      ],
+      "relatedTerms": [
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "impact-controlling",
+        "systemresilienz"
+      ],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "examples": [
+        "Eine Organisation nutzt Wirkungsdaten nicht nur im Bericht, sondern verändert Beschaffung, Finanzierung, Produktdesign und Governance."
+      ],
+      "preferredUsage": "Wirkungsmanagement als prüfbaren Begriff für Risiko, Resilienz und Wirkungsrückkopplung verwenden.",
+      "deprecatedUsage": [
+        "Wirkungsmanagement als bloßes Modewort ohne Daten-, Entscheidungs- und Schutzlinienbezug verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "wirkungsmanagement",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "categories": [
+        "resilienz",
+        "sdg-plus",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/wirkungsmanagement/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "risikoregister",
+      "termId": "risikoregister",
+      "canonicalLabel": "Risikoregister",
+      "label": "Risikoregister",
+      "slug": "risikoregister",
+      "status": "kontextbegriff",
+      "type": "Kontextbegriff",
+      "version": "1.0",
+      "source": "Website-Textanpassungen 2.1: SDGs und SDG+ als Risiko- und Resilienzregister",
+      "sourceDocument": "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+      "sourceSection": "SDGs, SDG+ und Systemresilienz",
+      "shortDefinition": "Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden.",
+      "hoverDefinition": "Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden.",
+      "definition": "Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden.",
+      "longDefinition": "Ein Risikoregister macht Risiken systematisch vergleichbar und bearbeitbar. Die Wirkungsökonomie liest die SDGs als globales Risiko- und Resilienzregister: Sie zeigen, welche Lebens- und Funktionsbedingungen stabil bleiben müssen, damit Gesellschaften, Märkte, Lieferketten, Ökosysteme und Demokratien nicht verwundbar werden.",
+      "woekRelation": "Der Begriff ordnet die neue Website-Rahmung ein: SDGs als Risiko- und Resilienzregister, SDG+ als Korrekturfähigkeit und Wirkungsökonomie als Rückkopplungsarchitektur.",
+      "usageNote": "Verwenden, wenn Nachhaltigkeit, SDGs, SDG+, Risiko, Resilienz und Rückkopplung als operative Steuerungslogik erklärt werden.",
+      "doNotConfuseWith": [
+        "Nachhaltigkeit als reines Kommunikationslabel",
+        "isoliertes ESG-Reporting",
+        "Personenbewertung"
+      ],
+      "synonyms": [
+        "Risk Register",
+        "Risiko-Register"
+      ],
+      "aliases": [
+        "Risk Register",
+        "Risiko-Register"
+      ],
+      "relatedTerms": [
+        "risiko-und-resilienzregister",
+        "systemresilienz",
+        "risikomanagement",
+        "sdgs",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "examples": [
+        "SDG 6 Wasser wird als Standort-, Produktions-, Gesundheits-, Agrar- und Konfliktrisiko sichtbar."
+      ],
+      "preferredUsage": "Risikoregister als prüfbaren Begriff für Risiko, Resilienz und Wirkungsrückkopplung verwenden.",
+      "deprecatedUsage": [
+        "Risikoregister als bloßes Modewort ohne Daten-, Entscheidungs- und Schutzlinienbezug verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "risikoregister",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "categories": [
+        "resilienz",
+        "sdg-plus",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/risikoregister/",
       "classicGlossary": true,
       "autoLinkAllowed": true
     }

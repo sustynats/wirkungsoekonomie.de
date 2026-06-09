@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-09T20:26:49.089Z
-Resolved references: 7267
-Warnings: 2756
+Erzeugt: 2026-06-09T21:07:21.117Z
+Resolved references: 7331
+Warnings: 2710
 
 ## Warnungen
 
@@ -549,11 +549,11 @@ Warnings: 2756
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#downloads -> SDGs und Agenda 2030 als globaler Referenzrahmen (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#downloads -> Dossier SDGs und Agenda 2030 als globaler Referenzrahmen (Whitepaper, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/geschichte/#history-export -> Die Geschichte der SDGs (Website, Beschreibung: ja)
-- /verstehen/sdgs-sdgplus/#export-title -> SDG-/SDG+-Referenzrahmen (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
 - /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 (Methode, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#downloads -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/#downloads -> SDG+ als Erweiterung der Wirkungsökonomie (Website, Beschreibung: ja)
-- /verstehen/sdgs-sdgplus/#export-title -> SDG-/SDG+-Referenzrahmen: Seite sichern oder weitergeben (Detailkonzept, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister.: Seite sichern oder weitergeben (Detailkonzept, Beschreibung: ja)
 - /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1228,7 +1228,7 @@ Warnings: 2756
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
-- /verstehen/sdgs-sdgplus/#export-title -> SDG-/SDG+-Referenzrahmen (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
 - /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1260,11 +1260,11 @@ Warnings: 2756
 - /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/#13-quellen-und-bezugsdokumente-2 -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
 - /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
-- /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html -> Vom Nachhaltigkeitsbewusstsein zur Wirkungsökonomie (Journalartikel, Beschreibung: ja)
@@ -1367,7 +1367,7 @@ Warnings: 2756
 - /referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/#chapter-glossary-16 -> Kapitel 16: Das Begriffssystem der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-011-wirkungspotenzial/#chapter-glossary-11 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/digitale-selbstbestimmung-datenschutz-jugendschutz/ -> Digitale Selbstbestimmung, Datenschutz und Jugendschutz | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
-- /verstehen/sdgs-sdgplus/#export-title -> SDG-/SDG+-Referenzrahmen (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
 - /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/datenraum-reifegradcheck/ -> Datenraum-Reifegradcheck (Methode, Beschreibung: ja)
@@ -1434,8 +1434,8 @@ Warnings: 2756
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
 - /blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html -> Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst – Eine wirkungsökonomische Einordnung (Journalartikel, Beschreibung: ja)
 - /dokumente/woek-partei/#political-implementation -> WÖK-Partei – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
 - /sdg-plus/medien-demokratie.html -> SDG+ Medien und Demokratie (Website, Beschreibung: ja)
-- /verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/ -> SDG+ Diskursfähigkeit (Website, Beschreibung: ja)
 - /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-067-bildung/#chapter-glossary-67 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)

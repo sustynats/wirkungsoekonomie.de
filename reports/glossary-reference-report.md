@@ -1,8 +1,8 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-09T20:26:48.083Z
-- Content pages scanned: 1017
-- Glossary terms indexed: 1481
+- Generated: 2026-06-09T21:07:20.069Z
+- Content pages scanned: 1018
+- Glossary terms indexed: 1484
 - Warnings: 614
 
 ## Stichproben
