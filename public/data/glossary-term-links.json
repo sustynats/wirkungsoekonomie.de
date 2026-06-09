@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T16:53:27.815Z",
+  "generatedAt": "2026-06-09T19:52:11.896Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -29762,6 +29762,39 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "risiko-und-resilienzregister": {
+      "label": "Risiko- und Resilienzregister",
+      "slug": "risiko-und-resilienzregister",
+      "url": "/begriffe/risiko-und-resilienzregister/",
+      "hoverDefinition": "Ein Risiko- und Resilienzregister ordnet zentrale Gefährdungsfelder und Schutzfähigkeiten eines Systems so, dass Wirkung, Frühwarnsignale und Rückkopplungen sichtbar werden.",
+      "shortDefinition": "Ein Risiko- und Resilienzregister ordnet zentrale Gefährdungsfelder und Schutzfähigkeiten eines Systems so, dass Wirkung, Frühwarnsignale und Rückkopplungen sichtbar werden.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Risiko- und Resilienzregister",
+        "Resilienzregister",
+        "Risikoregister",
+        "globales Risiko- und Resilienzregister",
+        "SDG-Risikoregister"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "sdgs",
+        "sdg-plus",
+        "wirkungsresilienz",
+        "risikomanagement",
+        "wirkungsdaten",
+        "wirkungspfad"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/",
+        "portale/sicherheit-resilienz/"
+      ],
+      "relatedObjections": []
+    },
     "rlm-messung": {
       "label": "RLM-Messung",
       "slug": "rlm-messung",
@@ -34064,6 +34097,37 @@
       ],
       "relatedObjections": []
     },
+    "systemische-risikointelligenz": {
+      "label": "Systemische Risikointelligenz",
+      "slug": "systemische-risikointelligenz",
+      "url": "/begriffe/systemische-risikointelligenz/",
+      "hoverDefinition": "Systemische Risikointelligenz verbindet Outside-in-Risiken mit Inside-out-Wirkungen und fragt, welche selbst erzeugten Risiken als Kosten, Instabilität oder Vertrauensverlust zurückkehren.",
+      "shortDefinition": "Systemische Risikointelligenz verbindet Outside-in-Risiken mit Inside-out-Wirkungen und fragt, welche selbst erzeugten Risiken als Kosten, Instabilität oder Vertrauensverlust zurückkehren.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Systemische Risikointelligenz",
+        "vollständige Risikointelligenz",
+        "systemisches Risikomanagement",
+        "wirkungsökonomische Risikointelligenz"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "outside-in",
+        "inside-out",
+        "rueckkopplung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/",
+        "portale/sicherheit-resilienz/"
+      ],
+      "relatedObjections": []
+    },
     "systemischer-wert": {
       "label": "Systemischer Wert",
       "slug": "systemischer-wert",
@@ -34164,6 +34228,38 @@
         "blog/nicht-billiger-werden-besser-werden/",
         "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/",
         "wirkungsfelder/arbeit-einkommen/"
+      ],
+      "relatedObjections": []
+    },
+    "systemresilienz": {
+      "label": "Systemresilienz",
+      "slug": "systemresilienz",
+      "url": "/begriffe/systemresilienz/",
+      "hoverDefinition": "Systemresilienz beschreibt die Fähigkeit eines sozialen, ökologischen, wirtschaftlichen oder demokratischen Systems, zentrale Funktionen auch unter Schocks, Fehlanreizen und Krisen zu erhalten.",
+      "shortDefinition": "Systemresilienz beschreibt die Fähigkeit eines sozialen, ökologischen, wirtschaftlichen oder demokratischen Systems, zentrale Funktionen auch unter Schocks, Fehlanreizen und Krisen zu erhalten.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Systemresilienz",
+        "systemische Resilienz",
+        "Systemstabilisierung",
+        "Systemschockfestigkeit"
+      ],
+      "relatedTerms": [
+        "resilienz",
+        "wirkungsresilienz",
+        "sdgs",
+        "sdg-plus",
+        "rueckkopplung",
+        "positive-netto-wirkung",
+        "demokratische-resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/",
+        "portale/sicherheit-resilienz/"
       ],
       "relatedObjections": []
     },
@@ -42841,7 +42937,10 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "systemresilienz",
+        "risiko-und-resilienzregister",
+        "systemische-risikointelligenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42850,7 +42949,8 @@
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "whitepaper-t-sroi",
-        "wirkungsrat-konzept"
+        "wirkungsrat-konzept",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/"
       ],
       "relatedObjections": []
     },

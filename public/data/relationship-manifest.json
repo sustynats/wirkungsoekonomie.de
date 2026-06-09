@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T16:55:45.930Z",
+  "generatedAt": "2026-06-09T19:54:20.563Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -21291,6 +21291,28 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "risiko-und-resilienzregister": {
+      "terms": [
+        "systemresilienz",
+        "sdgs",
+        "sdg-plus",
+        "wirkungsresilienz",
+        "risikomanagement",
+        "wirkungsdaten",
+        "wirkungspfad"
+      ],
+      "documents": [
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/",
+        "portale/sicherheit-resilienz/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "rlm-messung": {
       "terms": [
         "lastgang",
@@ -24305,6 +24327,27 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "systemische-risikointelligenz": {
+      "terms": [
+        "systemresilienz",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "outside-in",
+        "inside-out",
+        "rueckkopplung"
+      ],
+      "documents": [
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/",
+        "portale/sicherheit-resilienz/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "systemischer-wert": {
       "terms": [
         "normativer-wert",
@@ -24368,6 +24411,28 @@
         "blog/nicht-billiger-werden-besser-werden/",
         "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/",
         "wirkungsfelder/arbeit-einkommen/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "systemresilienz": {
+      "terms": [
+        "resilienz",
+        "wirkungsresilienz",
+        "sdgs",
+        "sdg-plus",
+        "rueckkopplung",
+        "positive-netto-wirkung",
+        "demokratische-resilienz"
+      ],
+      "documents": [
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/",
+        "portale/sicherheit-resilienz/"
       ],
       "methods": [],
       "tools": [],
@@ -30998,13 +31063,17 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "systemresilienz",
+        "risiko-und-resilienzregister",
+        "systemische-risikointelligenz"
       ],
       "documents": [
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "whitepaper-t-sroi",
-        "wirkungsrat-konzept"
+        "wirkungsrat-konzept",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/"
       ],
       "methods": [],
       "tools": [],

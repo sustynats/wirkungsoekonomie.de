@@ -4,10 +4,10 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 
 ## Ergebnis
 
-- HTML-Dateien geprüft: 8808
-- HTML-Dateien geändert: 367
-- blockierte Rohformat-Links gefunden: 1397
-- auf vorhandene PDF-Fassung umgelegt: 1397
+- HTML-Dateien geprüft: 4423
+- HTML-Dateien geändert: 368
+- blockierte Rohformat-Links gefunden: 1398
+- auf vorhandene PDF-Fassung umgelegt: 1398
 - ohne PDF-Fassung als "PDF-Fassung in Produktion" markiert: 0
 
 ## Regel
@@ -19,6 +19,7 @@ Automatischer Build-Nachlauf für öffentliche Besucherlinks.
 
 ## Geänderte Dateien
 
+- `bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/automatisierungs-wirkungseinkommensrechner/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/fach-zukunft-generator/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)
 - `erleben/index.html`: 1 Rohformat-Link(s), 1 PDF-Umlage(n), 0 Produktion-Hinweis(e)

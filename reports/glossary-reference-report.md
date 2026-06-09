@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-09T16:55:02.575Z
-- Content pages scanned: 1015
-- Glossary terms indexed: 1474
-- Warnings: 616
+- Generated: 2026-06-09T19:53:48.364Z
+- Content pages scanned: 1016
+- Glossary terms indexed: 1477
+- Warnings: 615
 
 ## Stichproben
 
@@ -217,7 +217,6 @@
 - term has no content references: frankfurter-schule
 - term has no content references: fremdenfeindlichkeit
 - term has no content references: frequenzhaltung
-- term has no content references: friedlicher-machtwechsel
 - term has no content references: fuehrerkult
 - term has no content references: fuehrerprinzip
 - term has no content references: gaskraftwerk
@@ -360,4 +359,5 @@
 - term has no content references: moderner-patriotismus
 - term has no content references: momentanreserve
 - term has no content references: monetarismus
-- ... 316 weitere Warnungen
+- term has no content references: moral-hazard
+- ... 315 weitere Warnungen

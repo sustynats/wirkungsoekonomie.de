@@ -22406,6 +22406,30 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ]
   },
   {
+    "key": "risiko-und-resilienzregister",
+    "label": "Risiko- und Resilienzregister",
+    "aliases": [
+      "Risiko- und Resilienzregister",
+      "Resilienzregister",
+      "Risikoregister",
+      "globales Risiko- und Resilienzregister",
+      "SDG-Risikoregister"
+    ],
+    "definition": "Ein Risiko- und Resilienzregister ordnet zentrale Gefährdungsfelder und Schutzfähigkeiten eines Systems so, dass Wirkung, Frühwarnsignale und Rückkopplungen sichtbar werden.",
+    "url": "/begriffe/risiko-und-resilienzregister/",
+    "priority": 1036,
+    "autoLinkAllowed": true,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
     "key": "rlm-messung",
     "label": "RLM-Messung",
     "aliases": [
@@ -22414,7 +22438,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "RLM-Messung erfasst Lastgänge und Leistungswerte größerer Verbraucher oder Erzeuger zeitaufgelöst.",
     "url": "/begriffe/rlm-messung/",
-    "priority": 1036,
+    "priority": 1037,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22434,7 +22458,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Roaming ermöglicht Nutzer:innen, Ladepunkte verschiedener Betreiber über gemeinsame Zugangs- und Abrechnungssysteme zu nutzen.",
     "url": "/begriffe/roaming-ladeinfrastruktur/",
-    "priority": 1037,
+    "priority": 1038,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22458,7 +22482,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Roboterökonomie führt in der WÖk zum präziseren Cluster Maschinenleistung, Automatisierungsdividende und Wirkungseinkommen.",
     "url": "/begriffe/roboteroekonomie/",
-    "priority": 1038,
+    "priority": 1039,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22484,7 +22508,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Robotersteuer ist in der WÖk ein Kritikbegriff: präziser ist Maschinenleistungsrückkopplung statt Maschinenstrafe.",
     "url": "/begriffe/robotersteuer/",
-    "priority": 1039,
+    "priority": 1040,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22508,7 +22532,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Robotik bringt Automatisierung in physische Prozesse, Arbeit, Pflege, Produktion oder Infrastruktur.",
     "url": "/begriffe/robotik/",
-    "priority": 1040,
+    "priority": 1041,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22536,7 +22560,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Rohstoffkritikalität beschreibt Risiken bei Verfügbarkeit, Konzentration, Umweltwirkung, Menschenrechten oder strategischer Abhängigkeit von Rohstoffen.",
     "url": "/begriffe/rohstoffkritikalitaet/",
-    "priority": 1041,
+    "priority": 1042,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22556,7 +22580,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Rotorblatt-Recycling beschreibt Verfahren zur Verwertung oder Rückgewinnung von Materialien aus Windturbinenblättern.",
     "url": "/begriffe/rotorblatt-recycling/",
-    "priority": 1042,
+    "priority": 1043,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22578,7 +22602,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Routineunternehmer stabilisiert und reproduziert bestehende Abläufe, Geschäftsmodelle und Kompetenzen. Er arbeitet im Rahmen bekannter Märkte, bekannter Regeln und erprobter Entscheidungslogiken.",
     "url": "/begriffe/routineunternehmer/",
-    "priority": 1043,
+    "priority": 1044,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22599,7 +22623,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Rückbau von Windenergieanlagen beschreibt Demontage, Entsorgung, Wiederverwendung oder Recycling von Anlagenbestandteilen nach Nutzungsende.",
     "url": "/begriffe/rueckbau-windenergieanlagen/",
-    "priority": 1044,
+    "priority": 1045,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22619,7 +22643,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Rückbaustandard beschreibt Anforderungen an Demontage, Sortierung, Dokumentation, Wiederverwendung und Verwertung von Anlagen.",
     "url": "/begriffe/rueckbaustandard/",
-    "priority": 1045,
+    "priority": 1046,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22639,7 +22663,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Rückbauverpflichtung verpflichtet Betreiber, Anlagen nach Nutzungsende zurückzubauen.",
     "url": "/begriffe/rueckbauverpflichtung/",
-    "priority": 1046,
+    "priority": 1047,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22660,7 +22684,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Rückkopplung liegt vor, wenn Ergebnisse, Schäden, Nebenwirkungen oder Verbesserungen wieder auf das System zurückwirken und spätere Entscheidungen verändern.",
     "url": "/begriffe/rueckkopplung/",
-    "priority": 1047,
+    "priority": 1048,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22681,7 +22705,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Rücknahmefähigkeit beschreibt, ob Produkte nach Nutzung zurückgenommen und in Kreisläufe überführt werden können.",
     "url": "/begriffe/ruecknahmefaehigkeit/",
-    "priority": 1048,
+    "priority": 1049,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22701,7 +22725,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Rücknahmesystem organisiert die Rückführung von Produkten, Verpackungen oder Materialien nach Nutzung.",
     "url": "/begriffe/ruecknahmesystem/",
-    "priority": 1049,
+    "priority": 1050,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22726,7 +22750,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Erst Strom in einen Energieträger umwandeln, später daraus wieder Strom erzeugen.",
     "url": "/begriffe/rueckverstromung/",
-    "priority": 1050,
+    "priority": 1051,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22749,7 +22773,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Rückkopplungspreis macht Wirkung entscheidungsrelevant, statt sie als externen Schaden auszulagern.",
     "url": "/begriffe/rueckkopplungspreis/",
-    "priority": 1051,
+    "priority": 1052,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22769,7 +22793,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Auffälligkeit eines Reizes oder Themas, die Wahrnehmung und Bewertung prägt.",
     "url": "/begriffe/salienz/",
-    "priority": 1052,
+    "priority": 1053,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22789,7 +22813,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Bewusste oder unbeabsichtigte Hervorhebung bestimmter Informationen, Risiken oder Merkmale.",
     "url": "/begriffe/salienzsteuerung/",
-    "priority": 1053,
+    "priority": 1054,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22809,7 +22833,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Science Based Targets initiative unterstützt Unternehmen bei wissenschaftsbasierten Emissionsreduktionszielen.",
     "url": "/begriffe/sbti/",
-    "priority": 1054,
+    "priority": 1055,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22829,7 +22853,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scheindemokratie beschreibt eine Ordnung, die demokratische Formen zeigt, aber reale demokratische Kontrolle stark einschränkt.",
     "url": "/begriffe/scheindemokratie/",
-    "priority": 1055,
+    "priority": 1056,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22849,7 +22873,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Kurzfristige Beruhigung durch einfache Erklärungen, ohne die zugrunde liegende Komplexität zu integrieren.",
     "url": "/begriffe/scheinentlastung/",
-    "priority": 1056,
+    "priority": 1057,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22874,7 +22898,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scheinkapital wirkt stabil, solange Schäden ausgelagert bleiben; kehrt Wirkung in Preise, Steuern, Kapitalzugang oder Versicherbarkeit zurück, kann der Wert kippen.",
     "url": "/begriffe/scheinkapital/",
-    "priority": 1057,
+    "priority": 1058,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22902,7 +22926,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scheinleistung ist Aktivität, die nach Leistung aussieht, aber keine belastbare positive Zustandsveränderung nachweist.",
     "url": "/begriffe/scheinleistung/",
-    "priority": 1058,
+    "priority": 1059,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22922,7 +22946,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scheinwahrheit entsteht, wenn eine Aussage formal korrekt oder plausibel wirkt, aber wesentliche Wirkungszusammenhänge ausblendet.",
     "url": "/begriffe/scheinwahrheit/",
-    "priority": 1059,
+    "priority": 1060,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22942,7 +22966,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schnellladen beschreibt Ladevorgänge mit hoher Ladeleistung und kürzeren Ladezeiten.",
     "url": "/begriffe/schnellladen/",
-    "priority": 1060,
+    "priority": 1061,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22962,7 +22986,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schöpferische Rekonstruktion ist die WÖk-Schärfung von Schumpeters schöpferischer Zerstörung. Sie meint die bewusste Umgestaltung vorhandener Strukturen, Materialien, Infrastrukturen und Kompetenzen in zukunftsfähige Wirkungsformen.",
     "url": "/begriffe/schoepferische-rekonstruktion/",
-    "priority": 1061,
+    "priority": 1062,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22983,7 +23007,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen verdrängt und neue hervorbringt.",
     "url": "/begriffe/schoepferische-zerstoerung/",
-    "priority": 1062,
+    "priority": 1063,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23003,7 +23027,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Schuldenbremse begrenzt staatliche Neuverschuldung nach fiskalischen Regeln.",
     "url": "/begriffe/schuldenbremse/",
-    "priority": 1063,
+    "priority": 1064,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23023,7 +23047,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schumpeter beschreibt wirtschaftliche Entwicklung als Prozess neuer Kombinationen und die Unternehmerfunktion als Innovationsfunktion.",
     "url": "/begriffe/schumpeter-joseph-a/",
-    "priority": 1064,
+    "priority": 1065,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -23047,7 +23071,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
     "url": "/begriffe/schumpetersche-innovation/",
-    "priority": 1065,
+    "priority": 1066,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -23068,7 +23092,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Schutz natürlicher Lebensgrundlagen umfasst Klima, Wasser, Boden, Luft, Biodiversität, Ökosysteme, Ressourcen und die Bedingungen, die menschliches, tierisches und ökologisches Leben tragen.",
     "url": "/begriffe/schutz-natuerlicher-lebensgrundlagen/",
-    "priority": 1066,
+    "priority": 1067,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -23091,7 +23115,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schutzarchitektur bezeichnet das Zusammenspiel aus Rechten, Institutionen, Prävention, Bildung, Polizei, Beratung, Daten und Verfahren, das Menschen wirksam schützt.",
     "url": "/begriffe/schutzarchitektur/",
-    "priority": 1067,
+    "priority": 1068,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23111,7 +23135,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schutzpflicht beschreibt staatliche Pflichten, Grundrechte und zentrale Rechtsgüter aktiv zu schützen.",
     "url": "/begriffe/schutzpflicht/",
-    "priority": 1068,
+    "priority": 1069,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23131,7 +23155,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schutztechnik erkennt Fehlerzustände und trennt elektrische Anlagen sicher vom Netz.",
     "url": "/begriffe/schutztechnik/",
-    "priority": 1069,
+    "priority": 1070,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23151,7 +23175,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Schwarzstartfähigkeit beschreibt die Fähigkeit, Stromerzeugung ohne externes Netz wieder anzufahren.",
     "url": "/begriffe/schwarzstartfaehigkeit/",
-    "priority": 1070,
+    "priority": 1071,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23171,7 +23195,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Schwellenwert ist eine Grenze, ab der ein Zustand, Risiko oder Bewertungsfeld anders eingeordnet wird.",
     "url": "/begriffe/schwellenwert/",
-    "priority": 1071,
+    "priority": 1072,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23194,7 +23218,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope 1 umfasst direkte Treibhausgasemissionen aus Quellen, die ein Unternehmen besitzt oder kontrolliert.",
     "url": "/begriffe/scope-1/",
-    "priority": 1072,
+    "priority": 1073,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23214,7 +23238,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope 1, 2 und 3 unterscheiden direkte Emissionen, energiebezogene indirekte Emissionen und weitere indirekte Emissionen entlang der Wertschöpfungskette.",
     "url": "/begriffe/scope-1-2-3/",
-    "priority": 1073,
+    "priority": 1074,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23237,7 +23261,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope 2 umfasst indirekte Treibhausgasemissionen aus eingekaufter Energie, insbesondere Strom, Dampf, Wärme oder Kühlung.",
     "url": "/begriffe/scope-2/",
-    "priority": 1074,
+    "priority": 1075,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23261,7 +23285,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope 3 umfasst weitere indirekte Treibhausgasemissionen entlang der vor- und nachgelagerten Wertschöpfungskette eines Unternehmens.",
     "url": "/begriffe/scope-3/",
-    "priority": 1075,
+    "priority": 1076,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23285,7 +23309,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Scope-3-Datenqualität beschreibt, wie vollständig, belastbar, überprüfbar und differenziert indirekte Emissionsdaten entlang der Wertschöpfungskette sind.",
     "url": "/begriffe/scope-3-datenqualitaet/",
-    "priority": 1076,
+    "priority": 1077,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23305,7 +23329,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar.",
     "url": "/begriffe/scorecard/",
-    "priority": 1077,
+    "priority": 1078,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23327,7 +23351,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SDG+ ist die transparente WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskurs und digitale Selbstbestimmung. SDG+ ist keine offizielle UN-Kategorie.",
     "url": "/begriffe/sdg-plus/",
-    "priority": 1078,
+    "priority": 1079,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23352,7 +23376,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der SDG-/SDG+-Referenzrahmen ordnet positive, negative und neutrale Wirkung öffentlich nachvollziehbar ein.",
     "url": "/begriffe/sdg-sdgplus-referenzrahmen/",
-    "priority": 1079,
+    "priority": 1080,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23380,7 +23404,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden.",
     "url": "/begriffe/sdg-washing/",
-    "priority": 1080,
+    "priority": 1081,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23406,7 +23430,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die SDGs bilden den offiziellen globalen Zielrahmen für nachhaltige Entwicklung.",
     "url": "/begriffe/sdgs/",
-    "priority": 1081,
+    "priority": 1082,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23434,7 +23458,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SDGs und Verschwörungsnarrative beschreibt, wie globale Zielrahmen wie die Agenda 2030 in Erzählungen über geheime Herrschaft, Enteignung oder Kontrolle umgedeutet werden können - und wie die WÖk legitime Kritik von Desinformation unterscheidet.",
     "url": "/begriffe/sdgs-und-verschwoerungsnarrative/",
-    "priority": 1082,
+    "priority": 1083,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -23457,7 +23481,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Second-Life-Batterie wird nach ihrer ersten Nutzung, etwa im Fahrzeug, in einer zweiten Anwendung weiterverwendet.",
     "url": "/begriffe/second-life-batterie/",
-    "priority": 1083,
+    "priority": 1084,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23477,7 +23501,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sektorkopplung verbindet Strom, Wärme, Verkehr, Industrie und Gebäude, um erneuerbare Energie systemisch zu nutzen.",
     "url": "/begriffe/sektorkopplung/",
-    "priority": 1084,
+    "priority": 1085,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23497,7 +23521,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sekundärregelung stellt nach kurzfristigen Abweichungen die Bilanz eines Regelgebiets wieder her.",
     "url": "/begriffe/sekundaerregelung/",
-    "priority": 1085,
+    "priority": 1086,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23517,7 +23541,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sekundärrohstoffe werden durch Wiederverwendung, Aufbereitung oder Recycling aus bereits genutzten Materialien gewonnen.",
     "url": "/begriffe/sekundaerrohstoff/",
-    "priority": 1086,
+    "priority": 1087,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23537,7 +23561,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Fähigkeit eines Systems, Muster, Regeln oder Strukturen ohne zentrale Steuerung hervorzubringen.",
     "url": "/begriffe/selbstorganisation/",
-    "priority": 1087,
+    "priority": 1088,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23557,7 +23581,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Selbstreferenz beschreibt, dass ein System sich in seinen Operationen auf sich selbst bezieht.",
     "url": "/begriffe/selbstreferenz/",
-    "priority": 1088,
+    "priority": 1089,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23577,7 +23601,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Selbstverantwortung beschreibt die Verantwortung des Individuums für eigene Entscheidungen und deren Folgen.",
     "url": "/begriffe/selbstverantwortung/",
-    "priority": 1089,
+    "priority": 1090,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23598,7 +23622,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Erleben, durch eigenes Handeln etwas bewirken zu können.",
     "url": "/begriffe/selbstwirksamkeit/",
-    "priority": 1090,
+    "priority": 1091,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23618,7 +23642,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Selektive Evidenz beschreibt die Nutzung einzelner Daten oder Studien, während widersprechende Evidenz ausgeblendet wird.",
     "url": "/begriffe/selektive-evidenz/",
-    "priority": 1091,
+    "priority": 1092,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23639,7 +23663,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Self-Ownership beschreibt die Vorstellung, dass Menschen Eigentümer:innen ihrer selbst sind.",
     "url": "/begriffe/self-ownership/",
-    "priority": 1092,
+    "priority": 1093,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23661,7 +23685,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Prozess, durch den Menschen oder Organisationen unklare Ereignisse in Sinnzusammenhänge bringen.",
     "url": "/begriffe/sensemaking/",
-    "priority": 1093,
+    "priority": 1094,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23681,7 +23705,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sensibilisierung beschreibt, dass wiederholte oder starke Reize die Reaktionsbereitschaft erhöhen.",
     "url": "/begriffe/sensibilisierung/",
-    "priority": 1094,
+    "priority": 1095,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23701,7 +23725,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Service-NGO erbringt konkrete Leistungen, etwa humanitäre Hilfe, Bildung, Gesundheit, Beratung oder Versorgung.",
     "url": "/begriffe/service-ngo/",
-    "priority": 1095,
+    "priority": 1096,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23735,7 +23759,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sexarbeit bezeichnet einvernehmliche sexuelle Dienstleistungen gegen Entgelt. In der WÖk geht es nicht um Personenbewertung, sondern um Selbstbestimmung, Schutz, Gesundheit, Rechte, Ausbeutungsrisiken und soziale Infrastruktur.",
     "url": "/begriffe/sexarbeit/",
-    "priority": 1096,
+    "priority": 1097,
     "autoLinkAllowed": false,
     "maxAutoLinksPerPage": 0,
     "allowedContexts": [
@@ -23759,7 +23783,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SFDR strukturiert Nachhaltigkeitsinformationen im Finanzmarkt; WÖk übersetzt solche Berichtsdaten erst in Kapitalwirkung und Rückkopplung.",
     "url": "/begriffe/sfdr/",
-    "priority": 1097,
+    "priority": 1098,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23779,7 +23803,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Shaolin bezeichnet historisch eine chinesische buddhistische Kloster- und Kampfkunsttradition, die häufig mit Chan/Zen, Disziplin, Körperpraxis und Übung verbunden wird.",
     "url": "/begriffe/shaolin/",
-    "priority": 1098,
+    "priority": 1099,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -23800,7 +23824,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Shareholder Value bezeichnet die Ausrichtung eines Unternehmens auf Wertsteigerung für Eigentümer:innen oder Aktionär:innen, meist gemessen über Gewinne, Kurswert, Dividenden und Kapitalrendite.",
     "url": "/begriffe/shareholder-value/",
-    "priority": 1099,
+    "priority": 1100,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -23823,7 +23847,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der CO2-Preis ist sichtbar. Fossile Folgekosten sind oft unsichtbar, aber real.",
     "url": "/begriffe/sichtbare-rechnung/",
-    "priority": 1100,
+    "priority": 1101,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23846,7 +23870,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das skandinavische Modell verbindet marktwirtschaftliche Elemente mit starkem Wohlfahrtsstaat, öffentlicher Daseinsvorsorge, Arbeitsmarktpartnerschaft und hohem Vertrauen.",
     "url": "/begriffe/skandinavisches-modell/",
-    "priority": 1101,
+    "priority": 1102,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23866,7 +23890,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "SMR sind eine mögliche Zukunftstechnologie, aber keine heute verfügbare Massenlösung für Deutschlands 2030-Ziele.",
     "url": "/begriffe/small-modular-reactor/",
-    "priority": 1102,
+    "priority": 1103,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23886,7 +23910,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Smart Charging steuert Ladevorgänge zeitlich oder leistungsmäßig, um Kosten, Netzbelastung oder Emissionen zu reduzieren.",
     "url": "/begriffe/smart-charging/",
-    "priority": 1103,
+    "priority": 1104,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23906,7 +23930,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Smart Grid bezeichnet ein digital gesteuertes Stromnetz.",
     "url": "/begriffe/smart-grid/",
-    "priority": 1104,
+    "priority": 1105,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23926,7 +23950,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Smart Meter sind digitale Messsysteme für Energieverbrauch und Einspeisung.",
     "url": "/begriffe/smart-meter/",
-    "priority": 1105,
+    "priority": 1106,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23946,7 +23970,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Smart Meter Gateway ist die sichere Kommunikationseinheit eines intelligenten Messsystems.",
     "url": "/begriffe/smart-meter-gateway/",
-    "priority": 1106,
+    "priority": 1107,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23968,7 +23992,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Social Credit ist die umfassende Bewertung von Menschen nach Verhalten oder Konformität. Die Wirkungsökonomie zieht hier eine rote Linie.",
     "url": "/begriffe/social-credit/",
-    "priority": 1107,
+    "priority": 1108,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -23995,7 +24019,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Social Taxonomy ordnet, ob wirtschaftliche Aktivitäten menschenwürdige Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und demokratische Stabilität stärken oder schwächen.",
     "url": "/begriffe/social-taxonomy/",
-    "priority": 1108,
+    "priority": 1109,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24015,7 +24039,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Solarthermie nutzt Sonnenenergie zur Wärmeerzeugung.",
     "url": "/begriffe/solarthermie/",
-    "priority": 1109,
+    "priority": 1110,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24035,7 +24059,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Solidarität bezeichnet die Bereitschaft und institutionelle Fähigkeit, Risiken, Lasten, Chancen und Schutz nicht ausschließlich individuell zu behandeln, sondern gemeinschaftlich zu tragen.",
     "url": "/begriffe/solidaritaet/",
-    "priority": 1110,
+    "priority": 1111,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24059,7 +24083,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sorgearbeit umfasst Tätigkeiten, die Menschen versorgen, pflegen, begleiten, erziehen, stabilisieren oder schützen.",
     "url": "/begriffe/sorgearbeit/",
-    "priority": 1111,
+    "priority": 1112,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24083,7 +24107,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sozialabgaben hängen stark an Erwerbsarbeit; Automatisierung kann diese Beitragsbasis schwächen.",
     "url": "/begriffe/sozialabgaben/",
-    "priority": 1112,
+    "priority": 1113,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24106,7 +24130,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Orientierung am Verhalten anderer, besonders in unsicheren Situationen.",
     "url": "/begriffe/soziale-bewaehrtheit/",
-    "priority": 1113,
+    "priority": 1114,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24129,7 +24153,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Soziale Infrastruktur umfasst Räume, Beziehungen, Dienste, Rechte und Institutionen, die Sicherheit, Teilhabe, Gesundheit, Zugehörigkeit und demokratische Handlungsfähigkeit ermöglichen.",
     "url": "/begriffe/soziale-infrastruktur/",
-    "priority": 1114,
+    "priority": 1115,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24150,7 +24174,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Soziale Marktwirtschaft verbindet marktwirtschaftlichen Wettbewerb mit sozialem Ausgleich, Rechtsordnung, Sozialstaat und politischer Stabilität. Sie war ein historischer Fortschritt gegenüber reiner Markt- oder Planlogik.",
     "url": "/begriffe/soziale-marktwirtschaft/",
-    "priority": 1115,
+    "priority": 1116,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24171,7 +24195,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Soziale Reproduktion beschreibt die gesellschaftlichen Prozesse, durch die Menschen, Beziehungen, Fähigkeiten, Versorgung und soziale Ordnung fortlaufend erhalten werden.",
     "url": "/begriffe/soziale-reproduktion/",
-    "priority": 1116,
+    "priority": 1117,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24197,7 +24221,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sozialfinanzierung wird in der WÖk breiter gedacht: nicht nur Lohnbeiträge, sondern Rückkopplung von Wertschöpfung und Wirkung.",
     "url": "/begriffe/sozialfinanzierung/",
-    "priority": 1117,
+    "priority": 1118,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24217,7 +24241,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sozialisation beschreibt den Prozess, durch den Menschen Normen, Werte, Rollen, Sprache und Verhaltensmuster einer Gesellschaft erlernen.",
     "url": "/begriffe/sozialisation/",
-    "priority": 1118,
+    "priority": 1119,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24239,7 +24263,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sozialisierung oder Vergesellschaftung bezeichnet verfassungsrechtlich die Überführung bestimmter Güter, Ressourcen oder Produktionsmittel in Gemeineigentum oder Gemeinwirtschaft.",
     "url": "/begriffe/sozialisierung-vergesellschaftung/",
-    "priority": 1119,
+    "priority": 1120,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24259,7 +24283,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sozialismus bezeichnet Modelle, die Privateigentum an Produktionsmitteln begrenzen oder überwinden und gesellschaftliche Gleichheit stärker betonen.",
     "url": "/begriffe/sozialismus/",
-    "priority": 1120,
+    "priority": 1121,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24279,7 +24303,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sozialliberalismus verbindet individuelle Freiheit mit sozialer Absicherung, Chancengerechtigkeit, Bürgerrechten, Bildung, Rechtsstaatlichkeit und gesellschaftlicher Teilhabe.",
     "url": "/begriffe/sozialliberalismus/",
-    "priority": 1121,
+    "priority": 1122,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24300,7 +24324,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Sozialstaatsprinzip verpflichtet den Staat, soziale Sicherheit, Teilhabe und Ausgleich als Staatsziel zu berücksichtigen.",
     "url": "/begriffe/sozialstaatsprinzip/",
-    "priority": 1122,
+    "priority": 1123,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24320,7 +24344,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Spannungshaltung sichert zulässige Spannungsniveaus im Netz.",
     "url": "/begriffe/spannungshaltung/",
-    "priority": 1123,
+    "priority": 1124,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24341,7 +24365,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Speicher nehmen Energie auf und geben sie später wieder ab.",
     "url": "/begriffe/speicher-energie/",
-    "priority": 1124,
+    "priority": 1125,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24362,7 +24386,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Spekulationslogik ist nicht jede Rendite, sondern Rendite aus Verdrängung, Leerstand, Bodenhortung oder entkoppelter Knappheitsausnutzung.",
     "url": "/begriffe/spekulationslogik/",
-    "priority": 1125,
+    "priority": 1126,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24382,7 +24406,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Spitzenlast beschreibt besonders hohe Stromnachfrage in bestimmten Zeiten.",
     "url": "/begriffe/spitzenlast/",
-    "priority": 1126,
+    "priority": 1127,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24404,7 +24428,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wort oder Ausdruck, der nicht nur Information transportiert, sondern gezielt Gefühle wie Angst, Wut, Kränkung oder Zugehörigkeit aktiviert.",
     "url": "/begriffe/sprachlicher-trigger/",
-    "priority": 1127,
+    "priority": 1128,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24424,7 +24448,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Sprachspiel ist ein sozialer Gebrauchszusammenhang, in dem Wörter Bedeutung erhalten.",
     "url": "/begriffe/sprachspiel/",
-    "priority": 1128,
+    "priority": 1129,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24445,7 +24469,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das St. Galler Management-Modell ist ein systemtheoretisch geprägter Bezugsrahmen für Organisationen, Umfeld und Managementdimensionen.",
     "url": "/begriffe/st-galler-management-modell/",
-    "priority": 1129,
+    "priority": 1130,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24469,7 +24493,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die St. Galler Managementlehre betrachtet Unternehmen als komplexe, offene, soziale und kommunikative Systeme. Management wird nicht auf Planung und Kontrolle reduziert, sondern als Gestaltung von Wertschöpfung, Kommunikation, Kultur, Strategie und Verantwortung verstanden.",
     "url": "/begriffe/st-galler-managementlehre/",
-    "priority": 1130,
+    "priority": 1131,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24493,7 +24517,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die St. Galler Tradition beschreibt Unternehmen nicht nur als Produktionsapparate, sondern als komplexe soziale Systeme in Austausch mit Märkten, Gesellschaft, Technik, Natur und Institutionen.",
     "url": "/begriffe/st-galler-managementmodell/",
-    "priority": 1131,
+    "priority": 1132,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24514,7 +24538,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Staat ist die dauerhafte politische und rechtliche Ordnung eines Landes. Er umfasst Staatsgebiet, Staatsvolk, Staatsgewalt, Verfassung, Gesetze, Institutionen, Gerichte, Verwaltung und Behörden.",
     "url": "/begriffe/staat/",
-    "priority": 1132,
+    "priority": 1133,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24542,7 +24566,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staat 2035 beschreibt ein Zukunftsbild, in dem der Staat nicht zentral plant, sondern Wirkung rechtsstaatlich, transparent und demokratisch rückkoppelt: in Haushalten, Steuern, Beschaffung, Daten, Rechtsschutz und öffentlicher Infrastruktur.",
     "url": "/begriffe/staat-2035/",
-    "priority": 1133,
+    "priority": 1134,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24563,7 +24587,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatsdelegitimierung beschreibt die pauschale Abwertung oder Feindmarkierung des Staates als demokratische und rechtsstaatliche Ordnung.",
     "url": "/begriffe/staatsdelegitimierung/",
-    "priority": 1134,
+    "priority": 1135,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24583,7 +24607,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatsform beschreibt die grundlegende rechtlich-politische Ordnung eines Staates, etwa Republik oder Monarchie.",
     "url": "/begriffe/staatsform/",
-    "priority": 1135,
+    "priority": 1136,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24603,7 +24627,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatsgebiet bezeichnet den räumlichen Bereich, in dem ein Staat Hoheitsgewalt ausübt.",
     "url": "/begriffe/staatsgebiet/",
-    "priority": 1136,
+    "priority": 1137,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24623,7 +24647,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatsgewalt bezeichnet die hoheitliche Macht des Staates, Recht zu setzen, durchzusetzen und Rechtsschutz zu gewährleisten.",
     "url": "/begriffe/staatsgewalt/",
-    "priority": 1137,
+    "priority": 1138,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24643,7 +24667,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatskapitalismus beschreibt Systeme, in denen der Staat erhebliche Kontrolle über Kapital, Unternehmen oder strategische Märkte ausübt, ohne Kapital- und Machtlogik aufzuheben.",
     "url": "/begriffe/staatskapitalismus/",
-    "priority": 1138,
+    "priority": 1139,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24663,7 +24687,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatspropaganda ist vom Staat gesteuerte oder dominierte Propaganda.",
     "url": "/begriffe/staatspropaganda/",
-    "priority": 1139,
+    "priority": 1140,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24683,7 +24707,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatssozialismus beschreibt Systeme, in denen der Staat zentrale Kontrolle über Produktion, Eigentum und Verteilung übernimmt.",
     "url": "/begriffe/staatssozialismus/",
-    "priority": 1140,
+    "priority": 1141,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24703,7 +24727,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatsversagen liegt vor, wenn staatliches Handeln durch Informationsmangel, Fehlanreize, Bürokratie, Machtinteressen oder schlechte Umsetzung negative Ergebnisse erzeugt.",
     "url": "/begriffe/staatsversagen/",
-    "priority": 1141,
+    "priority": 1142,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24723,7 +24747,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatsvolk bezeichnet die Menschen, die rechtlich einem Staat angehören.",
     "url": "/begriffe/staatsvolk/",
-    "priority": 1142,
+    "priority": 1143,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24743,7 +24767,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Staatsziel Umweltschutz bezeichnet die verfassungsrechtliche Verpflichtung des Staates, Umwelt, natürliche Lebensgrundlagen und Tiere zu schützen.",
     "url": "/begriffe/staatsziel-umweltschutz/",
-    "priority": 1143,
+    "priority": 1144,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24764,7 +24788,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Stadtwerke sind kommunal geprägte Versorgungsunternehmen, die häufig Strom, Wärme, Wasser, Verkehr oder digitale Infrastruktur betreiben.",
     "url": "/begriffe/stadtwerke/",
-    "priority": 1144,
+    "priority": 1145,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24784,7 +24808,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Beer entwickelte mit dem Viable System Model eine kybernetische Organisationssicht auf Lebensfähigkeit, Rekursion und Selbstbeobachtung.",
     "url": "/begriffe/stafford-beer/",
-    "priority": 1145,
+    "priority": 1146,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24805,7 +24829,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Stakeholder-Ansatz erweitert Unternehmensverantwortung über Eigentümerinteressen hinaus auf Beschäftigte, Kund:innen, Lieferanten, Gemeinden, Umwelt, Staat und andere Betroffene.",
     "url": "/begriffe/stakeholder-ansatz/",
-    "priority": 1146,
+    "priority": 1147,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24826,7 +24850,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Stakeholder-Kapitalismus erweitert Unternehmensverantwortung von Shareholdern auf weitere Anspruchsgruppen.",
     "url": "/begriffe/stakeholder-kapitalismus/",
-    "priority": 1147,
+    "priority": 1148,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24847,7 +24871,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Standardlastprofil ist ein typisierter Verbrauchsverlauf für kleinere Verbraucher ohne registrierende Leistungsmessung.",
     "url": "/begriffe/standardlastprofil/",
-    "priority": 1148,
+    "priority": 1149,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24867,7 +24891,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Standardmodell beschreibt elementare Teilchen und drei fundamentale Wechselwirkungen der Teilchenphysik in einem gut geprüften theoretischen Rahmen; Gravitation ist darin nicht vollständig integriert.",
     "url": "/begriffe/standardmodell-der-teilchenphysik/",
-    "priority": 1149,
+    "priority": 1150,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -24888,7 +24912,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "State Capture beschreibt die systematische Vereinnahmung staatlicher Institutionen durch private, politische oder kriminelle Interessen.",
     "url": "/begriffe/state-capture/",
-    "priority": 1150,
+    "priority": 1151,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24910,7 +24934,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "State of Charge beschreibt den aktuellen Ladezustand einer Batterie.",
     "url": "/begriffe/state-of-charge/",
-    "priority": 1151,
+    "priority": 1152,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24932,7 +24956,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "State of Health beschreibt den Gesundheitszustand und die verbleibende Leistungsfähigkeit einer Batterie.",
     "url": "/begriffe/state-of-health/",
-    "priority": 1152,
+    "priority": 1153,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24952,7 +24976,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein stationärer Batteriespeicher speichert Strom an einem festen Standort, etwa in Haushalten, Ladeparks, Industrie, Quartieren oder Netzsystemen.",
     "url": "/begriffe/stationaerer-batteriespeicher/",
-    "priority": 1153,
+    "priority": 1154,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24974,7 +24998,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Neigung, bestehende Zustände zu bevorzugen, selbst wenn bessere Alternativen verfügbar sind.",
     "url": "/begriffe/status-quo-bias/",
-    "priority": 1154,
+    "priority": 1155,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -24994,7 +25018,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Steuerkritik beschreibt Einwände gegen staatliche Abgaben, insbesondere wegen Freiheits-, Eigentums- oder Effizienzargumenten.",
     "url": "/begriffe/steuerkritik/",
-    "priority": 1155,
+    "priority": 1156,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25014,7 +25038,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.",
     "url": "/begriffe/steuerungsdaten/",
-    "priority": 1156,
+    "priority": 1157,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25034,7 +25058,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Stiftung ist eine Organisation, die Vermögen dauerhaft einem bestimmten Zweck widmet.",
     "url": "/begriffe/stiftung/",
-    "priority": 1157,
+    "priority": 1158,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25057,7 +25081,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Stranded Assets zeigen, wie verdrängte Wirkung als finanzielles Risiko in Wert, Finanzierung oder Nutzbarkeit zurückkehrt.",
     "url": "/begriffe/stranded-assets/",
-    "priority": 1158,
+    "priority": 1159,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25082,7 +25106,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Strandinggefährdet heißt: noch kein Ausfall, aber Wirkung, Regulierung, Markt, Versicherung oder Reputation können den Kredit finanziell unter Druck setzen.",
     "url": "/begriffe/strandinggefaehrdeter-kredit/",
-    "priority": 1159,
+    "priority": 1160,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -25103,7 +25127,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine strategische Reserve hält Kraftwerks- oder Speicherleistung für außergewöhnliche Versorgungssituationen vor.",
     "url": "/begriffe/strategische-reserve/",
-    "priority": 1160,
+    "priority": 1161,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25123,7 +25147,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Strategisches Management legt fest, wie eine Organisation ihre langfristigen Ziele unter Unsicherheit erreicht.",
     "url": "/begriffe/strategisches-management/",
-    "priority": 1161,
+    "priority": 1162,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25143,7 +25167,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Streitfähigkeit bedeutet, Konflikte auszutragen, ohne Gegner:innen zu Feinden zu machen.",
     "url": "/begriffe/streitfaehigkeit/",
-    "priority": 1162,
+    "priority": 1163,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25163,7 +25187,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Stressreaktion beschreibt körperliche und psychische Aktivierung bei wahrgenommener Belastung, Bedrohung oder Kontrollverlust.",
     "url": "/begriffe/stressreaktion/",
-    "priority": 1163,
+    "priority": 1164,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25186,7 +25210,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Stromgestehungskosten beschreiben durchschnittliche Erzeugungskosten über die Lebensdauer einer Anlage pro Kilowattstunde.",
     "url": "/begriffe/stromgestehungskosten/",
-    "priority": 1164,
+    "priority": 1165,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25206,7 +25230,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Strommarkt organisiert Erzeugung, Handel, Transport, Verteilung und Verbrauch von Strom.",
     "url": "/begriffe/strommarkt/",
-    "priority": 1165,
+    "priority": 1166,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25226,7 +25250,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Strommarktdesign beschreibt Regeln für Erzeugung, Handel, Vergütung, Transport und Absicherung von Strom.",
     "url": "/begriffe/strommarktdesign/",
-    "priority": 1166,
+    "priority": 1167,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25249,7 +25273,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Welche Quellen und Energieträger stecken im erzeugten oder genutzten Strom?",
     "url": "/begriffe/strommix/",
-    "priority": 1167,
+    "priority": 1168,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -25270,7 +25294,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Stromnetz verbindet Erzeugung, Speicher und Verbrauch elektrischer Energie.",
     "url": "/begriffe/stromnetz/",
-    "priority": 1168,
+    "priority": 1169,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25291,7 +25315,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Stromnetzentgeltverordnung regelt Grundsätze zur Ermittlung von Netzentgelten im Strombereich.",
     "url": "/begriffe/stromnev/",
-    "priority": 1169,
+    "priority": 1170,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25311,7 +25335,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Strompreisbestandteile umfassen Beschaffung, Vertrieb, Netzentgelte, Steuern, Abgaben und Umlagen.",
     "url": "/begriffe/strompreisbestandteile/",
-    "priority": 1170,
+    "priority": 1171,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25331,7 +25355,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Stromsteuer ist eine Verbrauchsteuer auf Strom.",
     "url": "/begriffe/stromsteuer/",
-    "priority": 1171,
+    "priority": 1172,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25351,7 +25375,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Strukturdeterminiertheit beschreibt, dass ein System auf Impulse gemäß seiner eigenen Struktur, Geschichte und inneren Organisation reagiert.",
     "url": "/begriffe/strukturdeterminiertheit/",
-    "priority": 1172,
+    "priority": 1173,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25371,7 +25395,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Strukturelle Kopplung beschreibt die wiederholte wechselseitige Beeinflussung zweier Systeme, ohne dass eines das andere vollständig steuert.",
     "url": "/begriffe/strukturelle-kopplung/",
-    "priority": 1173,
+    "priority": 1174,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25391,7 +25415,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Struktureller Rassismus beschreibt rassistische Wirkungsmuster, die durch Regeln, Routinen, Daten, Institutionen, Märkte oder Sprache entstehen können.",
     "url": "/begriffe/struktureller-rassismus/",
-    "priority": 1174,
+    "priority": 1175,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25411,7 +25435,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Allmähliche Veränderung eines Systems durch wiederholte Wechselwirkungen und Rückkopplungen.",
     "url": "/begriffe/strukturelles-driften/",
-    "priority": 1175,
+    "priority": 1176,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25431,7 +25455,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Studienfinanzierung beschreibt, wer Forschung, Gutachten oder Policy-Papiere bezahlt.",
     "url": "/begriffe/studienfinanzierung/",
-    "priority": 1176,
+    "priority": 1177,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25451,7 +25475,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Subsidiarität bedeutet, dass Aufgaben möglichst nah an den betroffenen Menschen und Wirkungsräumen gelöst werden sollen, solange die niedrigere Ebene dazu fähig ist.",
     "url": "/begriffe/subsidiaritaet/",
-    "priority": 1177,
+    "priority": 1178,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -25485,7 +25509,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Suffizienz fragt, welches Maß an Nutzung, Konsum oder Produktion genug ist.",
     "url": "/begriffe/suffizienz/",
-    "priority": 1178,
+    "priority": 1179,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25505,7 +25529,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Sündenbockmechanismus verschiebt komplexe Probleme auf eine Gruppe, Person oder Minderheit, die als Ursache markiert wird.",
     "url": "/begriffe/suendenbockmechanismus/",
-    "priority": 1179,
+    "priority": 1180,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25525,7 +25549,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Superkondensator speichert Energie elektrostatisch und kann sehr schnell laden und entladen.",
     "url": "/begriffe/superkondensator/",
-    "priority": 1180,
+    "priority": 1181,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25545,7 +25569,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Superposition bezeichnet in der Quantenmechanik einen Zustand, in dem ein System nicht durch genau einen klassischen Zustand beschrieben wird, sondern durch eine Überlagerung möglicher Zustände.",
     "url": "/begriffe/superposition/",
-    "priority": 1181,
+    "priority": 1182,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -25574,7 +25598,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Supply-Chain-Resilienz beschreibt die Fähigkeit einer Lieferkette, unter Störungen funktionsfähig zu bleiben, ohne Wirkungsschäden zu externalisieren oder rote Linien zu verletzen.",
     "url": "/begriffe/supply-chain-resilienz/",
-    "priority": 1182,
+    "priority": 1183,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25595,7 +25619,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Supply-side Economics betont Wachstum durch bessere Angebotsbedingungen, niedrigere Steuern, Deregulierung und Investitionsanreize.",
     "url": "/begriffe/supply-side-economics/",
-    "priority": 1183,
+    "priority": 1184,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25615,7 +25639,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Supraleitung beschreibt einen Zustand ohne elektrischen Widerstand und mit besonderen magnetischen Effekten.",
     "url": "/begriffe/supraleitung/",
-    "priority": 1184,
+    "priority": 1185,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25642,7 +25666,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sustainable Finance verbindet Kapitalmärkte mit EU-Taxonomie, SFDR, CSRD/ESRS, Risikodaten und Transformationsfinanzierung.",
     "url": "/begriffe/sustainable-finance/",
-    "priority": 1185,
+    "priority": 1186,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25662,7 +25686,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemdienstleistungen stabilisieren das Stromsystem, etwa Frequenzhaltung, Spannungshaltung, Schwarzstartfähigkeit oder Reserve.",
     "url": "/begriffe/systemdienstleistungen/",
-    "priority": 1186,
+    "priority": 1187,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25682,7 +25706,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Systemgrenze legt fest, was in einer Analyse berücksichtigt wird und was außerhalb bleibt.",
     "url": "/begriffe/systemgrenze/",
-    "priority": 1187,
+    "priority": 1188,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25705,7 +25729,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemhebel sind Eingriffspunkte, an denen kleine Änderungen große Systemwirkungen auslösen können.",
     "url": "/begriffe/systemhebel/",
-    "priority": 1188,
+    "priority": 1189,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25725,7 +25749,30 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zustand, in dem Regeln, Erfahrungen, Informationen, Institutionen und Handlungsoptionen Orientierung und Vertrauen ermöglichen.",
     "url": "/begriffe/systemische-kohaerenz/",
-    "priority": 1189,
+    "priority": 1190,
+    "autoLinkAllowed": true,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "systemische-risikointelligenz",
+    "label": "Systemische Risikointelligenz",
+    "aliases": [
+      "Systemische Risikointelligenz",
+      "vollständige Risikointelligenz",
+      "systemisches Risikomanagement",
+      "wirkungsökonomische Risikointelligenz"
+    ],
+    "definition": "Systemische Risikointelligenz verbindet Outside-in-Risiken mit Inside-out-Wirkungen und fragt, welche selbst erzeugten Risiken als Kosten, Instabilität oder Vertrauensverlust zurückkehren.",
+    "url": "/begriffe/systemische-risikointelligenz/",
+    "priority": 1191,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25745,7 +25792,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemischer Wert fragt, ob eine Wirkung die Funktionsfähigkeit, Stabilität oder Entwicklungsfähigkeit eines Systems stärkt.",
     "url": "/begriffe/systemischer-wert/",
-    "priority": 1190,
+    "priority": 1192,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25765,7 +25812,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemkosten umfassen Kosten für Integration, Netze, Speicher, Flexibilität, Reserve, Redispatch und Versorgungssicherheit.",
     "url": "/begriffe/systemkosten/",
-    "priority": 1191,
+    "priority": 1193,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25785,7 +25832,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemorientiertes Management betrachtet Organisationen als offene, vernetzte Systeme in Wechselwirkung mit Umwelt, Anspruchsgruppen und Prozessen.",
     "url": "/begriffe/systemorientiertes-management/",
-    "priority": 1192,
+    "priority": 1194,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25809,7 +25856,30 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemqualität ist die Qualität von Werkzeugen, Infrastruktur, Regeln, Daten, Energie, Vertrauen und Organisation, die Leistung möglich macht.",
     "url": "/begriffe/systemqualitaet/",
-    "priority": 1193,
+    "priority": 1195,
+    "autoLinkAllowed": true,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
+    "key": "systemresilienz",
+    "label": "Systemresilienz",
+    "aliases": [
+      "Systemresilienz",
+      "systemische Resilienz",
+      "Systemstabilisierung",
+      "Systemschockfestigkeit"
+    ],
+    "definition": "Systemresilienz beschreibt die Fähigkeit eines sozialen, ökologischen, wirtschaftlichen oder demokratischen Systems, zentrale Funktionen auch unter Schocks, Fehlanreizen und Krisen zu erhalten.",
+    "url": "/begriffe/systemresilienz/",
+    "priority": 1196,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25829,7 +25899,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemtheorie betrachtet Wirklichkeit nicht als Summe isolierter Teile, sondern als Gefüge von Relationen, Rückkopplungen, Grenzen, Umwelten, Rollen, Kommunikationen und Selbstorganisation.",
     "url": "/begriffe/systemtheorie/",
-    "priority": 1194,
+    "priority": 1197,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -25850,7 +25920,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Systemverzerrender Lobbyismus beeinflusst politische Entscheidungen durch Intransparenz, Machtasymmetrie, selektive Daten, verdeckte Finanzierung oder ungleiche Zugänge.",
     "url": "/begriffe/systemverzerrender-lobbyismus/",
-    "priority": 1195,
+    "priority": 1198,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25872,7 +25942,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der T-SROI bewertet Transformationswirkung: ob geprüfte Wirkung Standards, Märkte, Pfade, Resilienz oder Anreize systemisch verändert.",
     "url": "/begriffe/t-sroi/",
-    "priority": 1196,
+    "priority": 1199,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25892,7 +25962,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Technische Anschlussbedingungen Mittelspannung konkretisieren Anforderungen des Netzbetreibers für den Anschluss an das Mittelspannungsnetz.",
     "url": "/begriffe/tab-mittelspannung/",
-    "priority": 1197,
+    "priority": 1200,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25912,7 +25982,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Tandem-Solarzellen kombinieren mehrere Solarzellenschichten, um verschiedene Lichtbereiche effizienter zu nutzen.",
     "url": "/begriffe/tandem-solarzelle/",
-    "priority": 1198,
+    "priority": 1201,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25933,7 +26003,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Tank-to-Wheel betrachtet Energie- und Emissionswirkungen während der Nutzung im Fahrzeug.",
     "url": "/begriffe/tank-to-wheel/",
-    "priority": 1199,
+    "priority": 1202,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25954,7 +26024,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die TAR Mittelspannung beschreibt technische Anforderungen für Anschluss und Betrieb von Kundenanlagen am Mittelspannungsnetz.",
     "url": "/begriffe/tar-mittelspannung/",
-    "priority": 1200,
+    "priority": 1203,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25974,7 +26044,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Tauschwert beschreibt den Wert eines Gutes im Austauschverhältnis zu anderen Gütern oder Geld.",
     "url": "/begriffe/tauschwert/",
-    "priority": 1201,
+    "priority": 1204,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -25994,7 +26064,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Taxonomie-KPIs zeigen, welcher Anteil von Umsatz, CapEx oder OpEx taxonomiefähig oder taxonomiekonform ist.",
     "url": "/begriffe/taxonomy-kpis/",
-    "priority": 1202,
+    "priority": 1205,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26014,7 +26084,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Taxonomiefähigkeit bedeutet, dass eine Wirtschaftstätigkeit grundsätzlich von der EU-Taxonomie erfasst wird.",
     "url": "/begriffe/taxonomiefaehigkeit/",
-    "priority": 1203,
+    "priority": 1206,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26034,7 +26104,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Taxonomiekonformität bedeutet, dass eine taxonomiefähige Tätigkeit die einschlägigen Taxonomie-Anforderungen erfüllt.",
     "url": "/begriffe/taxonomiekonformitaet/",
-    "priority": 1204,
+    "priority": 1207,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26059,7 +26129,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Taxonomy Navigator hilft, EU-Taxonomie-Tätigkeiten, Umweltziele und technische Bewertungskriterien zu finden.",
     "url": "/begriffe/taxonomy-navigator/",
-    "priority": 1205,
+    "priority": 1208,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26079,7 +26149,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "TCFD bezeichnet Empfehlungen zur Offenlegung klimabezogener Finanzrisiken.",
     "url": "/begriffe/tcfd/",
-    "priority": 1206,
+    "priority": 1209,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26100,7 +26170,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Technische Anschlussregeln beschreiben technische Anforderungen für Anschluss und Betrieb von Anlagen am Stromnetz.",
     "url": "/begriffe/technische-anschlussregel/",
-    "priority": 1207,
+    "priority": 1210,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26120,7 +26190,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.",
     "url": "/begriffe/technische-bewertungskriterien/",
-    "priority": 1208,
+    "priority": 1211,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26140,7 +26210,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der technische Kreislauf beschreibt die lange Nutzung und Rückführung technischer Produkte, Komponenten und Materialien.",
     "url": "/begriffe/technischer-kreislauf/",
-    "priority": 1209,
+    "priority": 1212,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26160,7 +26230,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein technischer Nährstoff ist ein Material oder eine Komponente, die im technischen Kreislauf erhalten, wiederverwendet oder aufbereitet werden kann.",
     "url": "/begriffe/technischer-naehrstoff/",
-    "priority": 1210,
+    "priority": 1213,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26188,7 +26258,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Technokratie / Überwachung / Social Credit bezeichnet die zentrale Schutzlinie der WÖk: Wirkungsmessung darf nicht zur Personenbewertung, Verhaltensüberwachung, Expert:innenherrschaft oder algorithmischen Kontrollordnung werden.",
     "url": "/begriffe/technokratie-ueberwachung-social-credit/",
-    "priority": 1211,
+    "priority": 1214,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -26211,7 +26281,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Sharing beschreibt die gemeinsame Nutzung eines Produkts durch mehrere Nutzer:innen.",
     "url": "/begriffe/sharing/",
-    "priority": 1212,
+    "priority": 1215,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26233,7 +26303,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Teilgabe beschreibt die Möglichkeit, nicht nur teilzunehmen, sondern eigene Fähigkeiten wirksam einzubringen.",
     "url": "/begriffe/teilgabe/",
-    "priority": 1213,
+    "priority": 1216,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26254,7 +26324,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Teilhabe beschreibt den tatsächlichen Zugang zu sozialen, wirtschaftlichen, kulturellen und politischen Möglichkeiten.",
     "url": "/begriffe/teilhabe/",
-    "priority": 1214,
+    "priority": 1217,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26274,7 +26344,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und staatliche Macht eng verbunden oder religiös legitimiert sind.",
     "url": "/begriffe/theokratie/",
-    "priority": 1215,
+    "priority": 1218,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26294,7 +26364,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Thermal Runaway beschreibt eine sich selbst verstärkende Überhitzung einer Batterie, die zu Brand oder Explosion führen kann.",
     "url": "/begriffe/thermal-runaway/",
-    "priority": 1216,
+    "priority": 1219,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26315,7 +26385,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein thermisches Kraftwerk erzeugt elektrische Energie über Wärme, die meist eine Turbine oder Wärmekraftmaschine antreibt.",
     "url": "/begriffe/thermisches-kraftwerk/",
-    "priority": 1217,
+    "priority": 1220,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26339,7 +26409,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "THG-Emissions-Scopes unterscheiden Emissionen danach, ob sie direkt entstehen, aus eingekaufter Energie stammen oder entlang der Wertschöpfungskette auftreten.",
     "url": "/begriffe/thg-emissions-scopes/",
-    "priority": 1218,
+    "priority": 1221,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26362,7 +26432,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Thinktank ist eine Organisation, die politische, gesellschaftliche, wirtschaftliche oder strategische Fragen analysiert und Vorschläge für öffentliche Debatten, Gesetzgebung oder politische Entscheidungen entwickelt.",
     "url": "/begriffe/thinktank/",
-    "priority": 1219,
+    "priority": 1222,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26382,7 +26452,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Thinktank-Netzwerk verbindet mehrere Thinktanks, Stiftungen, Forschungseinrichtungen, politische Akteure oder Geldgeber.",
     "url": "/begriffe/thinktank-netzwerk/",
-    "priority": 1220,
+    "priority": 1223,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26403,7 +26473,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Thomas Piketty beschreibt die langfristige Dynamik von Kapitalakkumulation, Vermögenskonzentration und wachsender Ungleichheit in modernen Volkswirtschaften.",
     "url": "/begriffe/thomas-piketty/",
-    "priority": 1221,
+    "priority": 1224,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26423,7 +26493,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Tipping Point ist ein Schwellenpunkt, ab dem eine Entwicklung nicht mehr linear weiterläuft, sondern sich durch Rückkopplungen beschleunigt, stabilisiert oder qualitativ verändert.",
     "url": "/begriffe/tipping-point/",
-    "priority": 1222,
+    "priority": 1225,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -26444,7 +26514,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.",
     "url": "/begriffe/tnfd/",
-    "priority": 1223,
+    "priority": 1226,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26464,7 +26534,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Totalitarismus beschreibt Herrschaftsformen, die alle Lebensbereiche kontrollieren wollen und keine freie politische Opposition zulassen.",
     "url": "/begriffe/totalitarismus/",
-    "priority": 1224,
+    "priority": 1227,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26484,7 +26554,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Totalitarismus nach Arendt beschreibt Herrschaftsformen, die Menschen isolieren, Wahrheit zerstören, Terror und Ideologie verbinden und politische Pluralität abschaffen.",
     "url": "/begriffe/totalitarismus-arendt/",
-    "priority": 1225,
+    "priority": 1228,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26506,7 +26576,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Trafostation enthält einen Transformator und weitere Betriebsmittel zur Umwandlung von Spannung, häufig von Mittelspannung auf Niederspannung.",
     "url": "/begriffe/trafostation/",
-    "priority": 1226,
+    "priority": 1229,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26526,7 +26596,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transaktionskosten sind Kosten der Anbahnung, Durchführung, Kontrolle und Durchsetzung von Austauschbeziehungen.",
     "url": "/begriffe/transaktionskosten/",
-    "priority": 1227,
+    "priority": 1230,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26550,7 +26620,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transformationsbonus macht Übergänge möglich: Qualifizierung, Schutz und neue Wirkleistung statt Absturz durch Strukturwandel.",
     "url": "/begriffe/transformationsbonus/",
-    "priority": 1228,
+    "priority": 1231,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26578,7 +26648,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Transformationspfad ist ein lernender, überprüfbarer Weg, mit dem ein Unternehmen sein Geschäftsmodell, seine Produkte, Lieferketten und Entscheidungen in Richtung positiver Netto-Wirkung verändert.",
     "url": "/begriffe/transformationspfad/",
-    "priority": 1229,
+    "priority": 1232,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26598,7 +26668,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Transformationswelle ist eine längerfristige Veränderungsbewegung, in der Innovationen, Infrastrukturen, Institutionen und Verhaltensmuster zusammenwirken.",
     "url": "/begriffe/transformationswelle/",
-    "priority": 1230,
+    "priority": 1233,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26624,7 +26694,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transformationswirkung verändert nicht nur einzelne Zustände, sondern die Bedingungen künftiger Entscheidungen: Regeln, Standards, Anreize, Märkte oder Pfade.",
     "url": "/begriffe/transformationswirkung/",
-    "priority": 1231,
+    "priority": 1234,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26645,7 +26715,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Transformator wandelt elektrische Spannung zwischen unterschiedlichen Spannungsebenen um.",
     "url": "/begriffe/transformator/",
-    "priority": 1232,
+    "priority": 1235,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26666,7 +26736,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transition Finance finanziert den Übergang, wenn Ziele, Pfade, Daten, Zeitplan und Governance nachvollziehbar sind.",
     "url": "/begriffe/transition-finance/",
-    "priority": 1233,
+    "priority": 1236,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26686,7 +26756,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Transition Plan beschreibt, wie ein Unternehmen oder System konkrete Transformationsziele erreichen will.",
     "url": "/begriffe/transition-plan/",
-    "priority": 1234,
+    "priority": 1237,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26708,7 +26778,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.",
     "url": "/begriffe/transition-risk/",
-    "priority": 1235,
+    "priority": 1238,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26728,7 +26798,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transmutation ersetzt nach heutigem Stand kein Endlager.",
     "url": "/begriffe/transmutation/",
-    "priority": 1236,
+    "priority": 1239,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26748,7 +26818,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Transparenz bedeutet, dass relevante Informationen, Interessen, Daten, Entscheidungen und Verantwortlichkeiten sichtbar und überprüfbar sind.",
     "url": "/begriffe/transparenz/",
-    "priority": 1237,
+    "priority": 1240,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26769,7 +26839,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Transparenzregister macht sichtbar, welche Organisationen politische Entscheidungen beeinflussen wollen, welche Interessen sie vertreten und welche Mittel sie einsetzen.",
     "url": "/begriffe/transparenzregister-lobbyismus/",
-    "priority": 1238,
+    "priority": 1241,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26789,7 +26859,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Treibhausgasemissionen sind Freisetzungen klimawirksamer Gase wie CO2, Methan oder Lachgas.",
     "url": "/begriffe/treibhausgasemissionen/",
-    "priority": 1239,
+    "priority": 1242,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26814,7 +26884,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Trickle-down-Ökonomie bezeichnet die Annahme, dass Entlastungen für Vermögende, Unternehmen oder Kapital langfristig allen zugutekommen sollen.",
     "url": "/begriffe/trickle-down-oekonomie/",
-    "priority": 1240,
+    "priority": 1243,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26834,7 +26904,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Trittbrettfahrerproblem entsteht, wenn Akteure von einem Gut profitieren, ohne zu dessen Bereitstellung beizutragen.",
     "url": "/begriffe/trittbrettfahrerproblem/",
-    "priority": 1241,
+    "priority": 1244,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26854,7 +26924,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine triviale Maschine reagiert auf denselben Input immer mit demselben Output.",
     "url": "/begriffe/triviale-maschine/",
-    "priority": 1242,
+    "priority": 1245,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26874,7 +26944,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Typ-2-Stecker ist ein in Europa verbreiteter Standard für AC-Laden.",
     "url": "/begriffe/typ-2-stecker/",
-    "priority": 1243,
+    "priority": 1246,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26894,7 +26964,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Übergabestation ist der technische Übergabepunkt zwischen Netzbetreiber und Kundenanlage, häufig im Mittelspannungsanschluss.",
     "url": "/begriffe/uebergabestation/",
-    "priority": 1244,
+    "priority": 1247,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26914,7 +26984,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
     "url": "/begriffe/uebergangstaetigkeit/",
-    "priority": 1245,
+    "priority": 1248,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26934,7 +27004,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Übertragungsnetz transportiert Strom über große Entfernungen auf hoher Spannung.",
     "url": "/begriffe/uebertragungsnetz/",
-    "priority": 1246,
+    "priority": 1249,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26955,7 +27025,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Überwachungskapitalismus beschreibt Geschäftsmodelle, die Verhaltensdaten extrahieren, analysieren und zur Vorhersage oder Beeinflussung von Verhalten monetarisieren.",
     "url": "/begriffe/ueberwachungskapitalismus/",
-    "priority": 1247,
+    "priority": 1250,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -26983,7 +27053,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Umsetzungspfad beschreibt die schrittweise, lernfähige und demokratisch kontrollierte Einführung der Wirkungsökonomie von Pilotierung über Dateninfrastruktur, Recht, Steuern, Beschaffung, Kapital und Alltag bis zur Skalierung.",
     "url": "/begriffe/umsetzungspfad/",
-    "priority": 1248,
+    "priority": 1251,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 2,
     "allowedContexts": [
@@ -27004,7 +27074,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Umspannstation transformiert Strom zwischen Spannungsebenen, häufig zwischen Mittelspannung und Niederspannung.",
     "url": "/begriffe/umspannstation/",
-    "priority": 1249,
+    "priority": 1252,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27024,7 +27094,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Umspannwerk verbindet verschiedene Spannungsebenen und transformiert elektrische Energie zwischen ihnen.",
     "url": "/begriffe/umspannwerk/",
-    "priority": 1250,
+    "priority": 1253,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27047,7 +27117,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Jede Stufe zwischen Quelle und Nutzung: erzeugen, umwandeln, speichern, transportieren, nutzen.",
     "url": "/begriffe/umwandlungskette/",
-    "priority": 1251,
+    "priority": 1254,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27071,7 +27141,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Umweltgerechtigkeit fragt, wer Umweltbelastungen trägt und wer Zugang zu gesunder Umwelt hat.",
     "url": "/begriffe/umweltgerechtigkeit/",
-    "priority": 1252,
+    "priority": 1255,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27091,7 +27161,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die UN-Leitprinzipien für Wirtschaft und Menschenrechte beschreiben staatliche Schutzpflicht, Unternehmensverantwortung und Zugang zu Abhilfe.",
     "url": "/begriffe/un-guiding-principles/",
-    "priority": 1253,
+    "priority": 1256,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27111,7 +27181,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Unbezahlte Arbeit sind Tätigkeiten, die gesellschaftlich notwendig sind, aber nicht oder nicht direkt monetär entlohnt werden.",
     "url": "/begriffe/unbezahlte-arbeit/",
-    "priority": 1254,
+    "priority": 1257,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27131,7 +27201,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Unschärferelation bezeichnet in der Quantenmechanik eine fundamentale Begrenzung, bestimmte Messgrößen zugleich beliebig genau zu bestimmen.",
     "url": "/begriffe/unschaerferelation/",
-    "priority": 1255,
+    "priority": 1258,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27152,7 +27222,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Unsichtbare Arbeit beschreibt Tätigkeiten, die notwendig sind, aber sozial, ökonomisch oder statistisch kaum sichtbar werden.",
     "url": "/begriffe/unsichtbare-arbeit/",
-    "priority": 1256,
+    "priority": 1259,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27174,7 +27244,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Unsichtbare Kosten verschwinden nicht. Sie tauchen nur später, indirekter und oft ungerechter auf.",
     "url": "/begriffe/unsichtbare-rechnung/",
-    "priority": 1257,
+    "priority": 1260,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27197,7 +27267,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Kaputte Brücken, Klimaschäden, Bildungsdefizite oder digitale Rückstände sind Formen von Unterlassungsschuld.",
     "url": "/begriffe/unterlassungsschuld/",
-    "priority": 1258,
+    "priority": 1261,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27225,7 +27295,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Unternehmen 2035 beschreibt ein Zukunftsbild, in dem Unternehmen Gewinn weiterhin erzielen, aber als Ergebnis positiver Netto-Wirkung, nicht als obersten Zweck.",
     "url": "/begriffe/unternehmen-2035/",
-    "priority": 1259,
+    "priority": 1262,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27254,7 +27324,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Unternehmen als Wirkungssystem ist eine Organisation, deren Zweck, Produkte, Lieferketten, Kapital, Kultur und Entscheidungen nach ihrer Wirkung auf Mensch, Planet und Demokratie verstanden und gesteuert werden.",
     "url": "/begriffe/unternehmen-als-wirkungssystem/",
-    "priority": 1260,
+    "priority": 1263,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27274,7 +27344,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Unternehmerfunktion besteht darin, neue Kombinationen zu erkennen, durchzusetzen und neue Entwicklungspfade zu eröffnen.",
     "url": "/begriffe/unternehmerfunktion/",
-    "priority": 1261,
+    "priority": 1264,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27294,7 +27364,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Unternehmerische Kompetenz bezeichnet die Fähigkeit, Möglichkeiten zu erkennen, Ressourcen zu kombinieren, Risiken zu tragen, Organisation zu bauen, Entscheidungen zu treffen und aus Rückkopplung zu lernen.",
     "url": "/begriffe/unternehmerische-kompetenz/",
-    "priority": 1262,
+    "priority": 1265,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27315,7 +27385,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit.",
     "url": "/begriffe/unternehmerisches-lernen/",
-    "priority": 1263,
+    "priority": 1266,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27337,7 +27407,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Unternehmertypen nach Röpke helfen, Unternehmertum als Lern-, Innovations- und Transformationsfähigkeit zu verstehen.",
     "url": "/begriffe/unternehmertypen-jochen-roepke/",
-    "priority": 1264,
+    "priority": 1267,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27358,7 +27428,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Upcycling wertet Materialien oder Produkte durch neue Nutzung mit höherem Wert oder höherer Funktion auf.",
     "url": "/begriffe/upcycling/",
-    "priority": 1265,
+    "priority": 1268,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27378,7 +27448,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Urban Mining gewinnt Rohstoffe aus Gebäuden, Infrastrukturen, Produkten oder Abfallbeständen zurück.",
     "url": "/begriffe/urban-mining/",
-    "priority": 1266,
+    "priority": 1269,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27398,7 +27468,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Urban Mining bei Batterien beschreibt die Rückgewinnung wertvoller Materialien aus gebrauchten Batterien und Produktionsabfällen.",
     "url": "/begriffe/urban-mining-batterien/",
-    "priority": 1267,
+    "priority": 1270,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27418,7 +27488,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Urteilskraft beschreibt die Fähigkeit, Situationen zu beurteilen, Perspektiven mitzudenken und verantwortlich zu entscheiden.",
     "url": "/begriffe/urteilskraft/",
-    "priority": 1268,
+    "priority": 1271,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27439,7 +27509,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Value Proposition beschreibt das Nutzenversprechen eines Produkts, einer Dienstleistung oder Organisation gegenüber einer Zielgruppe: welches Problem gelöst, welcher Nutzen geschaffen und welche Belastung reduziert wird.",
     "url": "/begriffe/value-proposition/",
-    "priority": 1269,
+    "priority": 1272,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27460,7 +27530,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Value Proposition Canvas ist ein strategisches Werkzeug, das Kundensegmente mit Nutzenversprechen verbindet. Es unterscheidet typischerweise Jobs, Pains und Gains auf Kundenseite sowie Produkte, Pain Relievers und Gain Creators auf Angebotsseite.",
     "url": "/begriffe/value-proposition-canvas/",
-    "priority": 1270,
+    "priority": 1273,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27481,7 +27551,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Varietät beschreibt die Vielfalt möglicher Zustände, Störungen oder Handlungsoptionen eines Systems.",
     "url": "/begriffe/varietaet/",
-    "priority": 1271,
+    "priority": 1274,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27501,7 +27571,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vehicle-to-Grid nutzt Batterien von Elektrofahrzeugen zur Rückspeisung oder Netzstützung.",
     "url": "/begriffe/vehicle-to-grid/",
-    "priority": 1272,
+    "priority": 1275,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27522,7 +27592,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vehicle-to-Home nutzt die Fahrzeugbatterie zur Versorgung eines Gebäudes.",
     "url": "/begriffe/vehicle-to-home/",
-    "priority": 1273,
+    "priority": 1276,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27543,7 +27613,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vehicle-to-Load stellt Strom aus der Fahrzeugbatterie direkt für Geräte oder mobile Anwendungen bereit.",
     "url": "/begriffe/vehicle-to-load/",
-    "priority": 1274,
+    "priority": 1277,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27563,7 +27633,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verantwortung für kommende Generationen bedeutet, heutige Entscheidungen so zu treffen, dass sie die Freiheits-, Lebens- und Entwicklungschancen zukünftiger Menschen nicht unverhältnismäßig verengen.",
     "url": "/begriffe/verantwortung-fuer-kommende-generationen/",
-    "priority": 1275,
+    "priority": 1278,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27587,7 +27657,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verantwortungsverkürzung: Eine Aussage reduziert Verantwortung auf einen engen Ausschnitt, zum Beispiel territoriale Emissionen, und blendet Konsum, Lieferketten, Scope 3, historische Wirkung oder Systemhebel aus.",
     "url": "/begriffe/verantwortungsverkuerzung/",
-    "priority": 1276,
+    "priority": 1279,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27609,7 +27679,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verbrauchsgüter werden während der Nutzung verbraucht oder verändert.",
     "url": "/begriffe/verbrauchsgueter/",
-    "priority": 1277,
+    "priority": 1280,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27629,7 +27699,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Verfassung legt die grundlegende Ordnung eines Staates, Grundrechte, Institutionen und Machtbegrenzungen fest.",
     "url": "/begriffe/verfassung/",
-    "priority": 1278,
+    "priority": 1281,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27649,7 +27719,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verfassungsgerichtsbarkeit prüft, ob staatliches Handeln mit der Verfassung vereinbar ist.",
     "url": "/begriffe/verfassungsgerichtsbarkeit/",
-    "priority": 1279,
+    "priority": 1282,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27669,7 +27739,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine verfassungsmäßige Wirkungsarchitektur ordnet Wirkungsmessung, Wirkungsprüfung und Wirkungssteuerung innerhalb von Grundrechten, Demokratie, Rechtsstaatlichkeit, Verhältnismäßigkeit und Rechtsschutz.",
     "url": "/begriffe/verfassungsmaessige-wirkungsarchitektur/",
-    "priority": 1280,
+    "priority": 1283,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27689,7 +27759,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Verfassungsorgan ist eine durch die Verfassung vorgesehene zentrale Institution des Staates.",
     "url": "/begriffe/verfassungsorgan/",
-    "priority": 1281,
+    "priority": 1284,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27711,7 +27781,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verfassungspatriotismus beschreibt eine Form politischer Identifikation, die sich nicht auf Abstammung oder Ethnie stützt, sondern auf Verfassung, Rechte, demokratische Verfahren und gemeinsame Institutionen.",
     "url": "/begriffe/verfassungspatriotismus/",
-    "priority": 1282,
+    "priority": 1285,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27732,7 +27802,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Verfügbarkeitsheuristik beschreibt die Tendenz, leicht erinnerbare oder emotional auffällige Beispiele für häufiger oder wichtiger zu halten, als sie statistisch sind.",
     "url": "/begriffe/verfuegbarkeitsheuristik/",
-    "priority": 1283,
+    "priority": 1286,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27752,7 +27822,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verhältnismäßigkeit verlangt, dass staatliche Maßnahmen geeignet, erforderlich und angemessen sind.",
     "url": "/begriffe/verhaeltnismaessigkeit/",
-    "priority": 1284,
+    "priority": 1287,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27772,7 +27842,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verhältnismäßigkeit ist der rechtsstaatliche Maßstab, der sicherstellt, dass Wirkungslenkung geeignet, erforderlich und angemessen bleibt.",
     "url": "/begriffe/verhaeltnismaessigkeit-in-der-wirkungsoekonomie/",
-    "priority": 1285,
+    "priority": 1288,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27801,7 +27871,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verhältnismäßigkeit nach Wirkung prüft, ob eine wirkungsorientierte Maßnahme geeignet, erforderlich und angemessen ist, um legitime Ziele für Mensch, Planet und Demokratie zu erreichen, ohne Grundrechte übermäßig zu belasten.",
     "url": "/begriffe/verhaeltnismaessigkeit-nach-wirkung/",
-    "priority": 1286,
+    "priority": 1289,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27822,7 +27892,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verlustaversion beschreibt die Tendenz, mögliche Verluste stärker zu gewichten als gleich große Gewinne.",
     "url": "/begriffe/verlustaversion/",
-    "priority": 1287,
+    "priority": 1290,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27842,7 +27912,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verlustleistung beschreibt Leistung, die als Reibung, Wärme, Schaden oder unnötiger Aufwand verloren geht.",
     "url": "/begriffe/verlustleistung/",
-    "priority": 1288,
+    "priority": 1291,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27868,7 +27938,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vermeidene Schäden sind negative Wirkungen, die durch Vorsorge, Prävention oder gute Gestaltung gar nicht erst entstehen.",
     "url": "/begriffe/vermeidene-schaeden-folgekosten/",
-    "priority": 1289,
+    "priority": 1292,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27888,7 +27958,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verschränkung bezeichnet in der Quantenphysik eine Korrelation zwischen Quantensystemen, bei der der gemeinsame Zustand nicht vollständig aus den Einzelzuständen beschrieben werden kann.",
     "url": "/begriffe/verschraenkung/",
-    "priority": 1290,
+    "priority": 1293,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27917,7 +27987,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Versicherbarkeit beschreibt in der WÖk, ob ein Risiko unter Berücksichtigung von Wirkung, Prävention, Resilienz, Datenqualität und Systemfolgen verantwortbar versichert werden kann.",
     "url": "/begriffe/versicherbarkeit/",
-    "priority": 1291,
+    "priority": 1294,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27945,7 +28015,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Versionierung statt Dogma bedeutet, dass WÖk-IDs, Indikatoren, Benchmarks, Scorecards, Datenmodelle und Leitlinien nachvollziehbar fortgeschrieben werden, statt als endgültige Wahrheit behandelt zu werden.",
     "url": "/begriffe/versionierung-statt-dogma/",
-    "priority": 1292,
+    "priority": 1295,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -27966,7 +28036,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Versorgungssicherheit beschreibt die verlässliche Verfügbarkeit von Energie in ausreichender Menge, Qualität und Zeit.",
     "url": "/begriffe/versorgungssicherheit/",
-    "priority": 1293,
+    "priority": 1296,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -27986,7 +28056,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Verstärkungslernen beschreibt Verhaltensänderung durch wiederholte Rückmeldungen, Belohnungen oder Sanktionen.",
     "url": "/begriffe/verstaerkungslernen/",
-    "priority": 1294,
+    "priority": 1297,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28006,7 +28076,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Verteilnetz bringt Strom regional zu Haushalten, Betrieben und dezentralen Anlagen.",
     "url": "/begriffe/verteilnetz/",
-    "priority": 1295,
+    "priority": 1298,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28026,7 +28096,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vertragsfreiheit beschreibt die Freiheit, Verträge freiwillig zu schließen oder nicht zu schließen.",
     "url": "/begriffe/vertragsfreiheit/",
-    "priority": 1296,
+    "priority": 1299,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28049,7 +28119,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vertrauen ist ein demokratischer Wirkungszustand: eine verlässliche, überprüfbare und korrigierbare Systembedingung für gesellschaftliche Rückkopplung.",
     "url": "/begriffe/vertrauen/",
-    "priority": 1297,
+    "priority": 1300,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28069,7 +28139,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Umlenkung von Vertrauen von einer Bezugsquelle auf eine andere, etwa von Institutionen zu Personen.",
     "url": "/begriffe/vertrauensverschiebung/",
-    "priority": 1298,
+    "priority": 1301,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28090,7 +28160,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Vertrautheitseffekt beschreibt, dass wiederholter Kontakt mit einem Reiz dessen positive Bewertung erhöhen kann.",
     "url": "/begriffe/vertrautheitseffekt/",
-    "priority": 1299,
+    "priority": 1302,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28110,7 +28180,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Verwaltung setzt Gesetze, Programme und politische Entscheidungen praktisch um.",
     "url": "/begriffe/verwaltung/",
-    "priority": 1300,
+    "priority": 1303,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28130,7 +28200,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Viabilität beschreibt die Überlebens- und Anpassungsfähigkeit eines Systems in einer veränderlichen Umwelt.",
     "url": "/begriffe/viabilitaet/",
-    "priority": 1301,
+    "priority": 1304,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28150,7 +28220,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das VSM von Stafford Beer ist ein kybernetisches Organisationsmodell, das operative Einheiten, Koordination, Steuerung, Umweltbeobachtung und Grundsatzorientierung miteinander verbindet.",
     "url": "/begriffe/viable-system-model/",
-    "priority": 1302,
+    "priority": 1305,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -28171,7 +28241,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vita activa bezeichnet bei Hannah Arendt die Tätigkeitsformen Arbeiten, Herstellen und Handeln.",
     "url": "/begriffe/vita-activa/",
-    "priority": 1303,
+    "priority": 1306,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28191,7 +28261,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Volkssouveränität bedeutet, dass alle Staatsgewalt vom Volk ausgeht.",
     "url": "/begriffe/volkssouveraenitaet/",
-    "priority": 1304,
+    "priority": 1307,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28211,7 +28281,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vollständige Information beschreibt die Annahme, dass alle relevanten Informationen für Entscheidungen verfügbar sind.",
     "url": "/begriffe/vollstaendige-information/",
-    "priority": 1305,
+    "priority": 1308,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28231,7 +28301,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Vorsorgeprinzip besagt, dass bei plausiblen schweren oder irreversiblen Schäden nicht gewartet werden darf, bis vollständige Sicherheit vorliegt. Unsicherheit rechtfertigt Schutzmaßnahmen, wenn die potenziellen Schäden hoch sind.",
     "url": "/begriffe/vorsorgeprinzip/",
-    "priority": 1306,
+    "priority": 1309,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -28254,7 +28324,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "VSME unterstützt KMU bei einfachen, freiwilligen Nachhaltigkeitsinformationen für Banken, Lieferketten und Geschäftspartner.",
     "url": "/begriffe/vsme/",
-    "priority": 1307,
+    "priority": 1310,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28274,7 +28344,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Vulnerabilität beschreibt die Verwundbarkeit von Menschen, Ökosystemen, Infrastrukturen oder Institutionen gegenüber Risiken und Schäden.",
     "url": "/begriffe/vulnerabilitaet/",
-    "priority": 1308,
+    "priority": 1311,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28294,7 +28364,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wahlintegrität beschreibt die Glaubwürdigkeit, Fairness, Transparenz und rechtliche Ordnung von Wahlen.",
     "url": "/begriffe/wahlintegritaet/",
-    "priority": 1309,
+    "priority": 1312,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28314,7 +28384,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wahlmanipulation beschreibt Eingriffe, die freie, faire oder gleiche Wahlen verzerren.",
     "url": "/begriffe/wahlmanipulation/",
-    "priority": 1310,
+    "priority": 1313,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28334,7 +28404,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wahrhaftigkeit beschreibt die kommunikative Haltung, Informationen nicht absichtlich zu verzerren, zu verschleiern oder manipulierend zu verwenden.",
     "url": "/begriffe/wahrhaftigkeit/",
-    "priority": 1311,
+    "priority": 1314,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28354,7 +28424,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wahrheit bezeichnet die Übereinstimmung oder belastbare Nähe von Aussage und Wirklichkeit.",
     "url": "/begriffe/wahrheit/",
-    "priority": 1312,
+    "priority": 1315,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28375,7 +28445,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wahrheitsillusionseffekt beschreibt, dass wiederholte Aussagen vertrauter und dadurch glaubwürdiger wirken können, selbst wenn sie falsch sind.",
     "url": "/begriffe/wahrheitsillusionseffekt/",
-    "priority": 1313,
+    "priority": 1316,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28395,7 +28465,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wahrnehmung beschreibt die Aufnahme und Verarbeitung von Reizen, Informationen und Situationen.",
     "url": "/begriffe/wahrnehmung/",
-    "priority": 1314,
+    "priority": 1317,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28417,7 +28487,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine probabilistische Beschreibung arbeitet mit Wahrscheinlichkeiten statt mit sicheren Einzelvorhersagen.",
     "url": "/begriffe/wahrscheinlichkeit/",
-    "priority": 1315,
+    "priority": 1318,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -28438,7 +28508,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wallbox ist eine Ladeeinrichtung für Elektrofahrzeuge, meist an Wohngebäuden oder Betrieben.",
     "url": "/begriffe/wallbox/",
-    "priority": 1316,
+    "priority": 1319,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28458,7 +28528,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Walter Eucken war ein zentraler Vertreter der Freiburger Schule und des Ordoliberalismus. Er fragte nach einer Ordnung, in der Wettbewerb, Freiheit, Rechtsstaatlichkeit und Begrenzung wirtschaftlicher Macht gesichert werden.",
     "url": "/begriffe/walter-eucken/",
-    "priority": 1317,
+    "priority": 1320,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -28479,7 +28549,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wandlermessung ist eine Messung über Strom- oder Spannungswandler, typischerweise bei höheren Leistungen.",
     "url": "/begriffe/wandlermessung/",
-    "priority": 1318,
+    "priority": 1321,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28499,7 +28569,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Warenfetisch beschreibt, dass soziale und ökologische Herstellungsbedingungen hinter der scheinbar neutralen Ware verschwinden.",
     "url": "/begriffe/warenfetisch/",
-    "priority": 1319,
+    "priority": 1322,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28519,7 +28589,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wärmepumpe nutzt Umweltwärme und Strom, um Gebäude oder Prozesse zu heizen.",
     "url": "/begriffe/waermepumpe/",
-    "priority": 1320,
+    "priority": 1323,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28539,7 +28609,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wärmespeicher nimmt Wärme auf und stellt sie zeitversetzt wieder bereit.",
     "url": "/begriffe/waermespeicher/",
-    "priority": 1321,
+    "priority": 1324,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28564,7 +28634,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Warmmietenneutralität prüft, ob Energieeinsparung, Förderung und Miete zusammen die Haushalte nicht überlasten.",
     "url": "/begriffe/warmmietenneutralitaet/",
-    "priority": 1322,
+    "priority": 1325,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28584,7 +28654,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wartung erhält die Funktionsfähigkeit eines Produkts und verlängert seine Nutzungsdauer.",
     "url": "/begriffe/wartung/",
-    "priority": 1323,
+    "priority": 1326,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28602,7 +28672,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Wasserkraft nutzt Bewegungs- oder Lageenergie von Wasser zur Stromerzeugung.",
     "url": "/begriffe/wasserkraft/",
-    "priority": 1324,
+    "priority": 1327,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28620,7 +28690,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Wasserstoff ist ein Energieträger für Speicherung, Transport, Industrie, Verkehr oder Stromsysteme.",
     "url": "/begriffe/wasserstoff/",
-    "priority": 1325,
+    "priority": 1328,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28640,7 +28710,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wasserstoffspeicher speichern Energie chemisch in Form von Wasserstoff.",
     "url": "/begriffe/wasserstoffspeicher/",
-    "priority": 1326,
+    "priority": 1329,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28665,7 +28735,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.",
     "url": "/begriffe/wasserstress/",
-    "priority": 1327,
+    "priority": 1330,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28685,7 +28755,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Watchdog-Organisation beobachtet Macht, Institutionen, Unternehmen oder Politik und macht Missstände öffentlich.",
     "url": "/begriffe/watchdog-organisation/",
-    "priority": 1328,
+    "priority": 1331,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28705,7 +28775,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Watzlawick steht für die Einsicht, dass Kommunikation nicht nur Inhalte überträgt, sondern Beziehungen, Deutungen und Wirklichkeitsannahmen mitformt.",
     "url": "/begriffe/watzlawick-paul/",
-    "priority": 1329,
+    "priority": 1332,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -28726,7 +28796,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.",
     "url": "/begriffe/wechselwirkung/",
-    "priority": 1330,
+    "priority": 1333,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -28747,7 +28817,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wehrhafte Demokratie bezeichnet Mechanismen, mit denen eine Demokratie sich gegen Kräfte schützt, die ihre freiheitliche Ordnung abschaffen wollen.",
     "url": "/begriffe/wehrhafte-demokratie/",
-    "priority": 1331,
+    "priority": 1334,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28767,7 +28837,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Weiterverteilung gibt funktionsfähige Produkte an neue Nutzer:innen weiter.",
     "url": "/begriffe/weiterverteilung/",
-    "priority": 1332,
+    "priority": 1335,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28788,7 +28858,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Well-to-Tank betrachtet Energie- und Emissionswirkungen von der Gewinnung oder Erzeugung eines Energieträgers bis zur Bereitstellung am Fahrzeug.",
     "url": "/begriffe/well-to-tank/",
-    "priority": 1333,
+    "priority": 1336,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28809,7 +28879,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Well-to-Wheel verbindet Well-to-Tank und Tank-to-Wheel und betrachtet den Pfad von Energiebereitstellung bis Nutzung.",
     "url": "/begriffe/well-to-wheel/",
-    "priority": 1334,
+    "priority": 1337,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28829,7 +28899,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Welle-Teilchen-Dualismus beschreibt, dass Quantenobjekte je nach Experiment Eigenschaften zeigen können, die klassisch als Wellen- oder Teilcheneigenschaften beschrieben werden.",
     "url": "/begriffe/welle-teilchen-dualismus/",
-    "priority": 1335,
+    "priority": 1338,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -28850,7 +28920,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Weltlosigkeit beschreibt den Verlust eines gemeinsamen öffentlichen Bezugsraums, in dem Menschen Wirklichkeit teilen und beurteilen können.",
     "url": "/begriffe/weltlosigkeit/",
-    "priority": 1336,
+    "priority": 1339,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28870,7 +28940,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wert bezeichnet in der Wirkungsökonomie nicht nur Preis, Nutzen oder subjektive Bedeutung, sondern muss nach systemischem und normativem Bezug unterschieden werden.",
     "url": "/begriffe/wert/",
-    "priority": 1337,
+    "priority": 1340,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28890,7 +28960,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Werte sind normative Orientierungen, die anzeigen, was als wünschenswert, schützenswert oder handlungsleitend gilt.",
     "url": "/begriffe/werte/",
-    "priority": 1338,
+    "priority": 1341,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28910,7 +28980,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Beispiel: Freiheit anerkennen, dann zeigen, wie faire Regeln Freiheit schützen.",
     "url": "/begriffe/wertebruecke/",
-    "priority": 1339,
+    "priority": 1342,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28930,7 +29000,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wertekonflikt entsteht, wenn unterschiedliche normative Ziele oder Schutzgüter miteinander in Spannung geraten.",
     "url": "/begriffe/wertekonflikt/",
-    "priority": 1340,
+    "priority": 1343,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28950,7 +29020,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Werterhalt bewahrt eingebettete Materialien, Energie, Arbeit, Daten, Funktionen und Nutzungsfähigkeit eines Produkts.",
     "url": "/begriffe/werterhalt/",
-    "priority": 1341,
+    "priority": 1344,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28970,7 +29040,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wertewandel beschreibt die Veränderung gesellschaftlicher Leitwerte über Zeit.",
     "url": "/begriffe/wertewandel/",
-    "priority": 1342,
+    "priority": 1345,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -28990,7 +29060,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wertschöpfung beschreibt die Erzeugung von wirtschaftlichem Wert durch Arbeit, Kapital, Wissen, Organisation oder Ressourcen.",
     "url": "/begriffe/wertschoepfung/",
-    "priority": 1343,
+    "priority": 1346,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29011,7 +29081,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umweltziel substanziell beiträgt.",
     "url": "/begriffe/wesentlicher-beitrag/",
-    "priority": 1344,
+    "priority": 1347,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29031,7 +29101,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wettbewerb als Suchverfahren beschreibt Märkte als dezentrale Entdeckungsprozesse: Akteure testen Lösungen, Informationen werden sichtbar, bessere Angebote können sich durchsetzen.",
     "url": "/begriffe/wettbewerb-als-suchverfahren/",
-    "priority": 1345,
+    "priority": 1348,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29052,7 +29122,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die WHO ist die Weltgesundheitsorganisation der Vereinten Nationen.",
     "url": "/begriffe/who/",
-    "priority": 1346,
+    "priority": 1349,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29080,7 +29150,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Widerstand gegen neue Maßstäbe beschreibt die individuelle, institutionelle, politische oder wirtschaftliche Abwehr, die entsteht, wenn Wirkung statt Kapital, Wachstum, Status oder Gewohnheit zum Bewertungsmaßstab wird.",
     "url": "/begriffe/widerstand-gegen-neue-massstaebe/",
-    "priority": 1347,
+    "priority": 1350,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29101,7 +29171,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wiedergeburtsnarrativ erzählt, dass eine Nation, ein Volk oder eine Gemeinschaft angeblich aus Verfall, Demütigung oder Verrat wieder auferstehen müsse.",
     "url": "/begriffe/wiedergeburtsnarrativ/",
-    "priority": 1348,
+    "priority": 1351,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29121,7 +29191,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wiederverwendung bedeutet, ein Produkt oder eine Komponente erneut für denselben Zweck zu nutzen.",
     "url": "/begriffe/wiederverwendung/",
-    "priority": 1349,
+    "priority": 1352,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29139,7 +29209,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [],
     "definition": "Windenergie wandelt Bewegungsenergie des Windes in Strom um.",
     "url": "/begriffe/windenergie/",
-    "priority": 1350,
+    "priority": 1353,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29159,7 +29229,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Lebenszyklus einer Windenergieanlage umfasst Rohstoffe, Herstellung, Transport, Bau, Betrieb, Wartung, Repowering, Rückbau und Recycling.",
     "url": "/begriffe/windenergieanlage-lebenszyklus/",
-    "priority": 1351,
+    "priority": 1354,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29179,7 +29249,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Windrad-Recycling beschreibt die Rückgewinnung oder Verwertung von Materialien aus Windenergieanlagen nach Rückbau oder Repowering.",
     "url": "/begriffe/windrad-recycling/",
-    "priority": 1352,
+    "priority": 1355,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29207,7 +29277,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkleistung ist echte Leistung im Sinne der Wirkungsökonomie: Aktivität, die positive Zustandsveränderung erzeugt oder negative Zustandsveränderung verhindert.",
     "url": "/begriffe/wirkleistung/",
-    "priority": 1353,
+    "priority": 1356,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29227,7 +29297,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirklichkeitsbindung beschreibt die Rückbindung von Entscheidungen an überprüfbare Zustände, Folgen und Daten.",
     "url": "/begriffe/wirklichkeitsbindung/",
-    "priority": 1354,
+    "priority": 1357,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29247,7 +29317,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirklichkeitskonstruktion beschreibt, dass Menschen und soziale Systeme Realität nicht ungefiltert aufnehmen, sondern über Deutungsrahmen, Sprache, Erfahrung, Kultur und Erwartungen verarbeiten.",
     "url": "/begriffe/wirklichkeitskonstruktion/",
-    "priority": 1355,
+    "priority": 1358,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29268,7 +29338,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkmechanismus beschreibt, wie aus einem Auslöser Wirkung entstehen kann.",
     "url": "/begriffe/wirkmechanismus/",
-    "priority": 1356,
+    "priority": 1359,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29290,7 +29360,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkpfad beschreibt die nachvollziehbare Kette vom Auslöser über Wirkungspotenzial und Wirkmechanismus bis zur tatsächlichen Wirkung und Bewertung.",
     "url": "/begriffe/wirkpfad/",
-    "priority": 1357,
+    "priority": 1360,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29310,7 +29380,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirksames Management richtet Organisationen auf tatsächliche Problemlösung und Zustandsverbesserung aus.",
     "url": "/begriffe/wirksames-management/",
-    "priority": 1358,
+    "priority": 1361,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29330,7 +29400,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirksamkeit beschreibt, ob eine Maßnahme, Organisation oder Entscheidung tatsächlich die beabsichtigte relevante Wirkung entfaltet.",
     "url": "/begriffe/wirksamkeit/",
-    "priority": 1359,
+    "priority": 1362,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29352,7 +29422,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
     "url": "/begriffe/wirkstoff/",
-    "priority": 1360,
+    "priority": 1363,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29378,7 +29448,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational: Sie wirkt auf jemanden oder etwas und ist nicht automatisch positiv.",
     "url": "/begriffe/wirkung/",
-    "priority": 1361,
+    "priority": 1364,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29398,7 +29468,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkung als Rechtsprinzip bedeutet, dass Recht nicht nur formale Vorgaben setzt, sondern auch die realen Folgen von Gesetzen, Verwaltung, Rechtsprechung, Steuern und staatlichem Unterlassen berücksichtigen muss.",
     "url": "/begriffe/wirkung-als-rechtsprinzip/",
-    "priority": 1362,
+    "priority": 1365,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29427,7 +29497,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkung im Preisschild bedeutet, dass Preis, Steuerklasse und zentrale Wirkungsinformation eines Produkts für Verbraucher:innen direkt sichtbar werden.",
     "url": "/begriffe/wirkung-im-preisschild/",
-    "priority": 1363,
+    "priority": 1366,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29455,7 +29525,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Wirkungs-BIP ergänzt das klassische BIP um die Frage, ob wirtschaftliche Aktivität echte Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt.",
     "url": "/begriffe/wirkungs-bip/",
-    "priority": 1364,
+    "priority": 1367,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29483,7 +29553,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungs-Konversion von Altkapital bezeichnet die geordnete Umlenkung bestehender Kapitalbestände aus wirkungsschädlichen oder überholten Geschäftsmodellen in positive Netto-Wirkung, ohne pauschale Enteignung, Schocklogik oder soziale Verwerfungen.",
     "url": "/begriffe/wirkungs-konversion-von-altkapital/",
-    "priority": 1365,
+    "priority": 1368,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 2,
     "allowedContexts": [
@@ -29504,7 +29574,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsabwehr beschreibt die psychologische, kommunikative oder institutionelle Abwehr gegen Informationen, Daten oder Erfahrungen, die negative Wirkung sichtbar machen.",
     "url": "/begriffe/wirkungsabwehr/",
-    "priority": 1366,
+    "priority": 1369,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29526,7 +29596,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsanalyse von Sprache prüft Frames, Trigger, Resonanzräume und Handlungsimpulse politischer Sprache.",
     "url": "/begriffe/wirkungsanalyse-von-sprache/",
-    "priority": 1367,
+    "priority": 1370,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29553,7 +29623,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Governance, Kontrolle und Lernen, das Wirkung sichtbar, bewertbar und rückkopplungsfähig macht.",
     "url": "/begriffe/wirkungsarchitektur/",
-    "priority": 1368,
+    "priority": 1371,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29580,7 +29650,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.",
     "url": "/begriffe/wirkungsassurance/",
-    "priority": 1369,
+    "priority": 1372,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29607,7 +29677,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.",
     "url": "/begriffe/wirkungsaudit/",
-    "priority": 1370,
+    "priority": 1373,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29635,7 +29705,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbasierter Handel ist Handel, der Preise, Marktzugang, Beschaffung, Grenzausgleich und Partnerschaften an der tatsächlichen Wirkung von Waren, Dienstleistungen und Lieferketten auf Mensch, Planet und Demokratie ausrichtet.",
     "url": "/begriffe/wirkungsbasierter-handel/",
-    "priority": 1371,
+    "priority": 1374,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29661,7 +29731,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nicht nur fossile Anlagen können stranden; auch soziale, digitale, demokratische, gesundheitliche oder lieferkettenbezogene Wirkung kann Kapitalwerte kippen lassen.",
     "url": "/begriffe/wirkungsbedingte-stranded-assets/",
-    "priority": 1372,
+    "priority": 1375,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29690,7 +29760,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbelastete Kredite sind nicht automatisch notleidend; sie enthalten negative Wirkung oder Wirkungsrisiken, die später finanziell relevant werden können.",
     "url": "/begriffe/wirkungsbelasteter-kredit/",
-    "priority": 1373,
+    "priority": 1376,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29717,7 +29787,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
     "url": "/begriffe/wirkungsbewertung/",
-    "priority": 1374,
+    "priority": 1377,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29741,7 +29811,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsbiografie erweitert Erwerbsbiografie um Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
     "url": "/begriffe/wirkungsbiografie/",
-    "priority": 1375,
+    "priority": 1378,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29769,7 +29839,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.",
     "url": "/begriffe/wirkungsblindheit/",
-    "priority": 1376,
+    "priority": 1379,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29799,7 +29869,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsbonus ist eine zusätzliche Entlastung, Gutschrift oder Anerkennung für geprüfte positive Netto-Wirkung oder besondere Wirkleistung.",
     "url": "/begriffe/wirkungsbonus/",
-    "priority": 1377,
+    "priority": 1380,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29827,7 +29897,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsbudget ist ein Teilbudget, das nicht nur einem Ressort oder Ausgabentitel zugeordnet ist, sondern einem definierten Wirkungsziel mit Indikatoren, Prüfpfad und Rückkopplung.",
     "url": "/begriffe/wirkungsbudget/",
-    "priority": 1378,
+    "priority": 1381,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29855,7 +29925,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungscontrolling ist das Controlling-System, das Wirkung über KII, Scorecards, NWI, T-SROI, Datenqualität und Rückkopplung in Unternehmensentscheidungen übersetzt.",
     "url": "/begriffe/wirkungscontrolling/",
-    "priority": 1379,
+    "priority": 1382,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29885,7 +29955,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsdaten sind Daten, die Zustandsveränderungen, Risiken, Potenziale oder Bewertungsgrundlagen sichtbar machen.",
     "url": "/begriffe/wirkungsdaten/",
-    "priority": 1380,
+    "priority": 1383,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29906,7 +29976,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsdatenraum verbindet Datenquellen so, dass Wirkung bewertet und zurückgekoppelt werden kann.",
     "url": "/begriffe/wirkungsdatenraum/",
-    "priority": 1381,
+    "priority": 1384,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -29931,7 +30001,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsdatenräume verbinden Wirkungsdaten prüfbar, zweckgebunden und rechtebasiert.",
     "url": "/begriffe/wirkungsdatenraeume/",
-    "priority": 1382,
+    "priority": 1385,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29954,7 +30024,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungseffizienz verbindet Effizienz mit Wirkungsbewertung: Nicht der Output pro Input zählt allein, sondern die positive Netto-Wirkung im Verhältnis zu Ressourcen, Zeit, Kapital, Energie oder Aufmerksamkeit.",
     "url": "/begriffe/wirkungseffizienz/",
-    "priority": 1383,
+    "priority": 1386,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -29988,7 +30058,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungseinkommen bezeichnet eine Einkommensarchitektur, in der Grundsicherheit, Markteinkommen und Wirkungsbonus so verbunden werden, dass reale positive Wirkung materiell anerkannt wird.",
     "url": "/begriffe/wirkungseinkommen/",
-    "priority": 1384,
+    "priority": 1387,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30012,7 +30082,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungseinkommensteuer ist ein Modellbegriff: Einkommen einordnen, nicht Menschen bewerten.",
     "url": "/begriffe/wirkungseinkommensteuer/",
-    "priority": 1385,
+    "priority": 1388,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30033,7 +30103,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsempfänger sind diejenigen, bei denen eine Zustandsveränderung ankommt.",
     "url": "/begriffe/wirkungsempfaenger/",
-    "priority": 1386,
+    "priority": 1389,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30053,7 +30123,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsethik bewertet Handlungen nach ihren tatsächlichen Folgen für Mensch, Planet und Demokratie, unter Beachtung nicht kompensierbarer Grenzen.",
     "url": "/begriffe/wirkungsethik/",
-    "priority": 1387,
+    "priority": 1390,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30073,7 +30143,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsfolgenabschätzung bezeichnet die systematische Prüfung der voraussichtlichen positiven, negativen, direkten, indirekten und langfristigen Wirkungen einer Maßnahme.",
     "url": "/begriffe/wirkungsfolgenabschaetzung/",
-    "priority": 1388,
+    "priority": 1391,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30105,7 +30175,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsfonds bündelt Kapital und investiert es nach geprüfter positiver Netto-Wirkung, Transformationswirkung, Datenqualität und Nichtkompensation.",
     "url": "/begriffe/wirkungsfonds/",
-    "priority": 1389,
+    "priority": 1392,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30125,7 +30195,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsfreiheit beschreibt Freiheit, die ihre eigenen Folgen mitdenkt und nicht auf Kosten unsichtbarer Schäden anderer beruht.",
     "url": "/begriffe/wirkungsfreiheit/",
-    "priority": 1390,
+    "priority": 1393,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30153,7 +30223,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsgovernance bezeichnet Regeln, Institutionen, Daten, Partnerschaften und Kontrollmechanismen, mit denen Wirkung über Grenzen hinweg sichtbar, verhandelbar, prüfbar und rückgekoppelt wird, ohne eine Weltregierung zu errichten.",
     "url": "/begriffe/wirkungsgovernance/",
-    "priority": 1391,
+    "priority": 1394,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30174,7 +30244,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wirkungsgrad beschreibt das Verhältnis von nutzbarer Leistung oder Wirkung zum eingesetzten Aufwand.",
     "url": "/begriffe/wirkungsgrad/",
-    "priority": 1392,
+    "priority": 1395,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30202,7 +30272,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.",
     "url": "/begriffe/wirkungsgrenze/",
-    "priority": 1393,
+    "priority": 1396,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30230,7 +30300,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine Wirkungsgutschrift ist eine steuerliche oder wirtschaftliche Gutschrift für geprüfte positive Wirkung, ohne schwere negative Wirkungen zu kompensieren.",
     "url": "/begriffe/wirkungsgutschrift/",
-    "priority": 1394,
+    "priority": 1397,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30266,7 +30336,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungshaushalt ist ein öffentlicher Haushalt, der Mittel nicht nur nach Ressorts und Titeln ordnet, sondern nach ihrer Wirkung auf Mensch, Planet und Demokratie prüft, priorisiert und rückkoppelt.",
     "url": "/begriffe/wirkungshaushalt/",
-    "priority": 1395,
+    "priority": 1398,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30293,7 +30363,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.",
     "url": "/begriffe/wirkungsindikator/",
-    "priority": 1396,
+    "priority": 1399,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30321,7 +30391,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsinnovation verbindet neue Problemlösungsfähigkeit mit messbarer Verbesserung von Zuständen für Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungsinnovation/",
-    "priority": 1397,
+    "priority": 1400,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30342,7 +30412,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Aufnahme neuer Informationen oder Veränderungen, sodass Orientierung und Handlungsfähigkeit entstehen.",
     "url": "/begriffe/wirkungsintegration/",
-    "priority": 1398,
+    "priority": 1401,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30364,7 +30434,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskapital ist Kapital, das gezielt positive Netto-Wirkung finanziert.",
     "url": "/begriffe/wirkungskapital/",
-    "priority": 1399,
+    "priority": 1402,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30392,7 +30462,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskommunikation ist die transparente, belegbare und verständliche Kommunikation über positive, negative, neutrale oder unklare Wirkungen eines Produkts, Unternehmens, Projekts oder Programms.",
     "url": "/begriffe/wirkungskommunikation/",
-    "priority": 1400,
+    "priority": 1403,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30427,7 +30497,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskompetenz ist die Fähigkeit, Wirkungen zu verstehen, zu bewerten, zu kommunizieren und Entscheidungen so zu gestalten, dass positive Netto-Wirkung wahrscheinlicher wird.",
     "url": "/begriffe/wirkungskompetenz/",
-    "priority": 1401,
+    "priority": 1404,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30451,7 +30521,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskonversionskredite schreiben negative Wirkung nicht fort, sondern finanzieren den Übergang zu faireren, resilienteren und positiveren Lieferketten oder Geschäftsmodellen.",
     "url": "/begriffe/wirkungskonversionskredit/",
-    "priority": 1402,
+    "priority": 1405,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30480,7 +30550,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungskredite verknüpfen Finanzierung mit Wirkung: positive Netto-Wirkung kann Kapitalzugang verbessern, negative Wirkung kann Finanzierung verteuern oder Umbau verlangen.",
     "url": "/begriffe/wirkungskredit/",
-    "priority": 1403,
+    "priority": 1406,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30507,7 +30577,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungslenkung bedeutet, Wirkungsbewertung in Anreize, Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückzukoppeln.",
     "url": "/begriffe/wirkungslenkung/",
-    "priority": 1404,
+    "priority": 1407,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30533,7 +30603,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsnetz zeigt, wie Wirkpfade und Rückkopplungen zusammenhängen.",
     "url": "/begriffe/wirkungsnetz/",
-    "priority": 1405,
+    "priority": 1408,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30561,7 +30631,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsökonomie im Alltag beschreibt, wie Wirkung in Konsum, Arbeit, Wohnen, Mobilität, Ernährung, Finanzen und demokratischer Teilgabe sichtbar und handhabbar wird, ohne Menschen moralisch zu überfordern oder zu überwachen.",
     "url": "/begriffe/wirkungsoekonomie-im-alltag/",
-    "priority": 1406,
+    "priority": 1409,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 2,
     "allowedContexts": [
@@ -30590,7 +30660,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsorientierte Forschung und Innovation richtet Forschung, Förderung, Transfer und Innovation auf positive Netto-Wirkung, Transformationswirkung, Integrität, Verantwortung und langfristige Zukunftsfähigkeit aus.",
     "url": "/begriffe/wirkungsorientierte-forschung-und-innovation/",
-    "priority": 1407,
+    "priority": 1410,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30619,7 +30689,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsorientierte Unternehmensführung richtet Strategie, Governance, Entscheidungen, Ressourcen und Kultur eines Unternehmens auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.",
     "url": "/begriffe/wirkungsorientierte-unternehmensfuehrung/",
-    "priority": 1408,
+    "priority": 1411,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30642,7 +30712,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsorientiertes Hosting fragt nicht nur nach Reichweite, sondern nach dem Wirkungsraum, den ein Format öffnet.",
     "url": "/begriffe/wirkungsorientiertes-hosting/",
-    "priority": 1409,
+    "priority": 1412,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30663,7 +30733,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspädagogik fragt, welche Wirkung Unterricht, Beziehung, Raum, Feedback und Aufgaben auf Lernen, Selbstwirksamkeit und Verantwortung haben.",
     "url": "/begriffe/wirkungspaedagogik/",
-    "priority": 1410,
+    "priority": 1413,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30684,7 +30754,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungspfad beschreibt, wie aus einem Auslöser über Mechanismen, Daten und Rückkopplung tatsächliche Wirkung entstehen kann.",
     "url": "/begriffe/wirkungspfad/",
-    "priority": 1411,
+    "priority": 1414,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30705,7 +30775,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspflicht des Eigentums heißt nicht Renditeverbot, sondern Rückbindung von Wohnraumverwertung an Wohnwirkung und Schutzgrenzen.",
     "url": "/begriffe/wirkungspflicht-des-eigentums/",
-    "priority": 1412,
+    "priority": 1415,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30725,7 +30795,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungspionier ist ein Akteur, der neue Lösungen nicht primär nach Profit, Reichweite oder Status entwickelt, sondern nach positiver Netto-Wirkung für Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungspionier/",
-    "priority": 1413,
+    "priority": 1416,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30753,7 +30823,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspotenzial beschreibt mögliche künftige Zustandsveränderung. Es ist noch keine eingetretene Wirkung und muss mit Unsicherheit, Kontext und Wirkmechanismus beschrieben werden.",
     "url": "/begriffe/wirkungspotenzial/",
-    "priority": 1414,
+    "priority": 1417,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30782,7 +30852,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsprüfung ist die systematische Prüfung, welche positiven, negativen, neutralen oder unklaren Wirkungen eine Maßnahme, ein Gesetz, ein Budget oder ein Programm auf Mensch, Planet und Demokratie hat.",
     "url": "/begriffe/wirkungspruefung/",
-    "priority": 1415,
+    "priority": 1418,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30812,7 +30882,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungspunkte sind freiwillige, datensparsame Orientierungs- oder Entlastungsinstrumente, die die Wirkung von Produkten oder Transaktionen sichtbar machen, ohne Menschen als Personen zu bewerten.",
     "url": "/begriffe/wirkungspunkte/",
-    "priority": 1416,
+    "priority": 1419,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30832,7 +30902,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
     "url": "/begriffe/wirkungsradar/",
-    "priority": 1417,
+    "priority": 1420,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30868,7 +30938,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wirkungsrat ist eine unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik der Wirkungsökonomie.",
     "url": "/begriffe/wirkungsrat/",
-    "priority": 1418,
+    "priority": 1421,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30888,7 +30958,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsraum ist der Bereich, in dem eine Handlung, ein Produkt, eine Entscheidung oder Kommunikation Folgen entfaltet.",
     "url": "/begriffe/wirkungsraum/",
-    "priority": 1419,
+    "priority": 1422,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30916,7 +30986,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrecht bezeichnet eine Rechtslogik, die Gesetze, Verwaltung, Steuern, Haushalte und gerichtliche Kontrolle an ihrer Wirkung auf Mensch, Planet und Demokratie prüft, ohne Grundrechte und Rechtsstaatlichkeit zu ersetzen.",
     "url": "/begriffe/wirkungsrecht/",
-    "priority": 1420,
+    "priority": 1423,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -30945,7 +31015,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
     "url": "/begriffe/wirkungsregister/",
-    "priority": 1421,
+    "priority": 1424,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -30973,7 +31043,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrendite beschreibt den Ertrag eines Kapitaleinsatzes in Form geprüfter positiver Netto-Wirkung oder Transformationswirkung, getrennt von, aber verbunden mit finanzieller Rendite.",
     "url": "/begriffe/wirkungsrendite/",
-    "priority": 1422,
+    "priority": 1425,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31004,7 +31074,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungsrente erweitert die Rentenlogik von Erwerbsbiografie und Beitragsjahren auf Lebenswirkung, Care, Pflege, Bildung, Gemeinwesen, Prävention und demokratisches Engagement.",
     "url": "/begriffe/wirkungsrente/",
-    "priority": 1423,
+    "priority": 1426,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31032,7 +31102,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsresilienz ist die Fähigkeit eines Systems, Störungen aufzunehmen, Grundfunktionen zu erhalten, negative Wirkungen zu begrenzen, zu lernen und bessere Wirkungspfade aufzubauen.",
     "url": "/begriffe/wirkungsresilienz/",
-    "priority": 1424,
+    "priority": 1427,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31060,7 +31130,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrisiko ist die Möglichkeit, dass eine Handlung, ein Produkt, ein Geschäftsmodell, ein Kapitalfluss oder eine Entscheidung negative Zustandsveränderungen für Mensch, Planet oder Demokratie erzeugt.",
     "url": "/begriffe/wirkungsrisiko/",
-    "priority": 1425,
+    "priority": 1428,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31085,7 +31155,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrisikoposition ist die Finanzsicht auf negative Wirkungsexposure: Risiken können über Regulierung, Märkte, Versicherbarkeit oder Reputation zurückkehren.",
     "url": "/begriffe/wirkungsrisikoposition/",
-    "priority": 1426,
+    "priority": 1429,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31112,7 +31182,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsrückkopplung bedeutet: erkannte Wirkung bleibt nicht Bericht, sondern verändert Steuerung - etwa Preise, Fonds, Regeln, Investitionen, Sortimente oder Einkommenslogiken.",
     "url": "/begriffe/wirkungsrueckkopplung/",
-    "priority": 1427,
+    "priority": 1430,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31134,7 +31204,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsschule heißt: Schule wird als Wirkungsraum gestaltet, der Wissen, Beziehung, Förderung, Demokratiepraxis, Gesundheit und digitale Mündigkeit verbindet.",
     "url": "/begriffe/wirkungsschule/",
-    "priority": 1428,
+    "priority": 1431,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31162,7 +31232,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungssimulation bezeichnet die Darstellung, Optimierung oder Vermarktung angeblicher Wirkung, ohne dass eine belastbare positive Zustandsveränderung nachweisbar ist.",
     "url": "/begriffe/wirkungssimulation/",
-    "priority": 1429,
+    "priority": 1432,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31183,7 +31253,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wirkungsstaat ist ein Staat, der nicht nur Geld, Zuständigkeiten und Verfahren verwaltet, sondern reale Folgen seines Handelns und Unterlassens beobachtet, bewertet und in Entscheidungen zurückführt.",
     "url": "/begriffe/wirkungsstaat/",
-    "priority": 1430,
+    "priority": 1433,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31219,7 +31289,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungssteuer/",
-    "priority": 1431,
+    "priority": 1434,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31247,7 +31317,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
     "url": "/begriffe/wirkungssteuergesetz/",
-    "priority": 1432,
+    "priority": 1435,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31267,7 +31337,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungsträger ist das, worüber Wirkung entstehen oder weitergegeben werden kann.",
     "url": "/begriffe/wirkungstraeger/",
-    "priority": 1433,
+    "priority": 1436,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31295,7 +31365,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben.",
     "url": "/begriffe/wirkungstransparenzbericht/",
-    "priority": 1434,
+    "priority": 1437,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31317,7 +31387,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die Wirkungsumsatzsteuer koppelt Produktwirkung in umsatzsteuerliche Anreize zurück.",
     "url": "/begriffe/wirkungsumsatzsteuer/",
-    "priority": 1435,
+    "priority": 1438,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31337,7 +31407,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsverantwortung bezeichnet die Verantwortung für direkte, indirekte, zeitversetzte und systemische Folgen des eigenen Handelns oder Unterlassens.",
     "url": "/begriffe/wirkungsverantwortung/",
-    "priority": 1436,
+    "priority": 1439,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31358,7 +31428,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungsvermietung bewertet Vermietungsentscheidungen nach realer Wohnwirkung, nicht nach der Person der Vermieter:innen.",
     "url": "/begriffe/wirkungsvermietung/",
-    "priority": 1437,
+    "priority": 1440,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31386,7 +31456,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.",
     "url": "/begriffe/wirkungswahrheit/",
-    "priority": 1438,
+    "priority": 1441,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31407,7 +31477,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswert beschreibt den Wert einer Handlung, eines Produkts, einer Organisation oder Entscheidung gemessen an ihrer tatsächlichen Wirkung auf Mensch, Planet und Demokratie.",
     "url": "/begriffe/wirkungswert/",
-    "priority": 1439,
+    "priority": 1442,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31427,7 +31497,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungswertschöpfung entsteht, wenn wirtschaftliche Aktivität reale positive Zustandsveränderungen für Mensch, Planet und Demokratie erzeugt.",
     "url": "/begriffe/wirkungswertschoepfung/",
-    "priority": 1440,
+    "priority": 1443,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31449,7 +31519,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungszurechnung fragt, wer oder was zu einer Zustandsveränderung beigetragen hat; Wirkungsbewertung fragt, wie diese Veränderung einzuordnen ist.",
     "url": "/begriffe/wirkungszurechnung/",
-    "priority": 1441,
+    "priority": 1444,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31469,7 +31539,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirtschaftsliberalismus betont wirtschaftliche Freiheit, Privateigentum, Vertragsfreiheit, Wettbewerb und begrenzte staatliche Eingriffe.",
     "url": "/begriffe/wirtschaftsliberalismus/",
-    "priority": 1442,
+    "priority": 1445,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31497,7 +31567,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wissenschaft als Wirkungsinfrastruktur bedeutet, dass Wissenschaft geprüfte Wirklichkeit, Korrektur, Datenqualität, Unsicherheitsklärung und Orientierung für Entscheidungen bereitstellt.",
     "url": "/begriffe/wissenschaft-als-wirkungsinfrastruktur/",
-    "priority": 1443,
+    "priority": 1446,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31526,7 +31596,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wissenschaftliche Politikberatung übersetzt wissenschaftliche Erkenntnisse, Unsicherheiten und Wirkungsfolgen in politische Entscheidungsgrundlagen, ohne demokratische Verantwortung durch Expert:innenherrschaft zu ersetzen.",
     "url": "/begriffe/wissenschaftliche-politikberatung/",
-    "priority": 1444,
+    "priority": 1447,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31555,7 +31625,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wissensrat ist ein unabhängiges, plural besetztes Gremium zur Sicherung wissenschaftlicher Integrität, Datenqualität, Forschungsbewertung und öffentlicher Wissensgrundlagen in der Wirkungsökonomie.",
     "url": "/begriffe/wissensrat/",
-    "priority": 1445,
+    "priority": 1448,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31578,7 +31648,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WIX-VI ordnet Gebäude-, Portfolio- und Bewirtschaftungsentscheidungen nach Klima, Bezahlbarkeit, Gesundheit, Quartier, Governance und Spekulationsrisiko ein.",
     "url": "/begriffe/wix-vi/",
-    "priority": 1446,
+    "priority": 1449,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31598,7 +31668,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohlfahrtsökonomie untersucht, wie wirtschaftliche Zustände und Allokationen gesellschaftliche Wohlfahrt beeinflussen.",
     "url": "/begriffe/wohlfahrtsoekonomie/",
-    "priority": 1447,
+    "priority": 1450,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31618,7 +31688,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohlfahrtsökonomik untersucht, wie Ressourcenverteilung, externe Effekte, Marktversagen und politische Eingriffe gesellschaftliche Wohlfahrt beeinflussen.",
     "url": "/begriffe/wohlfahrtsoekonomik/",
-    "priority": 1448,
+    "priority": 1451,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31639,7 +31709,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der Wohlfahrtsstaat sichert soziale Risiken durch öffentliche Leistungen, Transfers und Infrastruktur ab.",
     "url": "/begriffe/wohlfahrtsstaat/",
-    "priority": 1449,
+    "priority": 1452,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31672,7 +31742,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wohnwirkung zeigt, wie Wohnbedingungen auf Bezahlbarkeit, Gesundheit, Sicherheit, Energie, Teilhabe und Quartier wirken.",
     "url": "/begriffe/wohnwirkung/",
-    "priority": 1450,
+    "priority": 1453,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31700,7 +31770,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖk-ID identifiziert einen Wirkungsindikator eindeutig. Sie ist kein Score, sondern der Code für das, was gemessen und bewertet wird.",
     "url": "/begriffe/woek-id/",
-    "priority": 1451,
+    "priority": 1454,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31721,7 +31791,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule.",
     "url": "/begriffe/wstg/",
-    "priority": 1452,
+    "priority": 1455,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31743,7 +31813,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wu Wei wird häufig als Nicht-Erzwingen oder Handeln im Einklang mit der Situation verstanden. Es meint nicht Nichtstun, sondern eine Form von Handeln, das die Eigenlogik von Prozessen achtet.",
     "url": "/begriffe/wu-wei/",
-    "priority": 1453,
+    "priority": 1456,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31764,7 +31834,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.",
     "url": "/begriffe/wu-wei-wirksames-nicht-erzwingen/",
-    "priority": 1454,
+    "priority": 1457,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31786,7 +31856,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
     "url": "/begriffe/wustg/",
-    "priority": 1455,
+    "priority": 1458,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31807,7 +31877,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
     "url": "/begriffe/xbrl/",
-    "priority": 1456,
+    "priority": 1459,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31827,7 +31897,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Xenophobie bezeichnet Fremdenfeindlichkeit oder Abwertung von Menschen, die als fremd markiert werden.",
     "url": "/begriffe/xenophobie/",
-    "priority": 1457,
+    "priority": 1460,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31852,7 +31922,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.",
     "url": "/begriffe/youth-jugendbeteiligung/",
-    "priority": 1458,
+    "priority": 1461,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31877,7 +31947,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zeitwirkung beschreibt, wann Wirkung entsteht, wie lange sie anhält und wen sie später trifft.",
     "url": "/begriffe/zeitwirkung/",
-    "priority": 1459,
+    "priority": 1462,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31897,7 +31967,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zementverwertung nutzt zerkleinerte Rotorblattmaterialien als Ersatzbrennstoff oder Rohstoffersatz in der Zementindustrie.",
     "url": "/begriffe/zementverwertung-rotorblaetter/",
-    "priority": 1460,
+    "priority": 1463,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31919,7 +31989,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zen ist eine buddhistische Praxis- und Denktradition, die unmittelbare Erfahrung, Aufmerksamkeit, Übung, Nicht-Anhaftung und Gegenwärtigkeit betont. Achtsamkeit bezeichnet wache, nicht-automatische Aufmerksamkeit für das eigene Handeln und seine Folgen.",
     "url": "/begriffe/zen/",
-    "priority": 1461,
+    "priority": 1464,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -31940,7 +32010,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zentralverwaltungswirtschaft ist eine Form der Planwirtschaft, in der zentrale Behörden wirtschaftliche Entscheidungen administrativ vorgeben.",
     "url": "/begriffe/zentralverwaltungswirtschaft/",
-    "priority": 1462,
+    "priority": 1465,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31965,7 +32035,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zielkonflikt entsteht, wenn mehrere legitime Ziele nicht gleichzeitig vollständig erreicht werden können.",
     "url": "/begriffe/zielkonflikt/",
-    "priority": 1463,
+    "priority": 1466,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -31993,7 +32063,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zielkonflikte sind Spannungen zwischen legitimen Wirkungszielen, etwa wenn Klima, soziale Gerechtigkeit, Gesundheit, Freiheit, Wirtschaft, Datenschutz oder Demokratie nicht gleichzeitig ohne Nebenwirkungen verbessert werden können.",
     "url": "/begriffe/zielkonflikte/",
-    "priority": 1464,
+    "priority": 1467,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -32014,7 +32084,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein zirkuläres Geschäftsmodell schafft Wert, indem Produkte, Materialien oder Funktionen möglichst lange im Kreislauf bleiben.",
     "url": "/begriffe/zirkulaeres-geschaeftsmodell/",
-    "priority": 1465,
+    "priority": 1468,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32044,7 +32114,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.",
     "url": "/begriffe/zirkularitaet/",
-    "priority": 1466,
+    "priority": 1469,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32064,7 +32134,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zivilgesellschaft umfasst freiwillige, nichtstaatliche Formen gesellschaftlicher Organisation und Beteiligung, etwa Vereine, Initiativen, NGOs, Bewegungen, Stiftungen und Bürgergruppen.",
     "url": "/begriffe/zivilgesellschaft/",
-    "priority": 1467,
+    "priority": 1470,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32084,7 +32154,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zivilgesellschaftsrepression beschreibt Druck, Verbote oder Einschüchterung gegenüber NGOs, Initiativen, Medien oder Bewegungen.",
     "url": "/begriffe/zivilgesellschaftsrepression/",
-    "priority": 1468,
+    "priority": 1471,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32108,7 +32178,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zugangsgerechtigkeit fragt, ob Menschen Leistungen, Räume, Informationen und Chancen tatsächlich erreichen können.",
     "url": "/begriffe/zugangsgerechtigkeit/",
-    "priority": 1469,
+    "priority": 1472,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32130,7 +32200,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zugehörigkeit bedeutet, dass Menschen sich sicher, anerkannt, beteiligt und verantwortlich eingebunden fühlen.",
     "url": "/begriffe/zugehoerigkeit/",
-    "priority": 1470,
+    "priority": 1473,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -32151,7 +32221,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zukunftsbild ist eine orientierende Vorstellung davon, wohin sich ein System, eine Gesellschaft oder ein Handlungsfeld entwickeln kann.",
     "url": "/begriffe/zukunftsbild/",
-    "priority": 1471,
+    "priority": 1474,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32175,7 +32245,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zukunftsfähigkeit beschreibt, ob ein System unter künftigen Bedingungen tragfähig, lernfähig und gerecht bleiben kann.",
     "url": "/begriffe/zukunftsfaehigkeit/",
-    "priority": 1472,
+    "priority": 1475,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32197,7 +32267,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zurechnung ohne Scheingenauigkeit macht Unsicherheit sichtbar und unterscheidet direkte Zurechnung, plausible Mitwirkung, systemische Mitverantwortung und unklare Datenlage.",
     "url": "/begriffe/zurechnung-ohne-scheingenauigkeit/",
-    "priority": 1473,
+    "priority": 1476,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -32217,7 +32287,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zyklenfestigkeit beschreibt, wie viele Lade- und Entladezyklen eine Batterie übersteht, bevor ihre Leistungsfähigkeit deutlich sinkt.",
     "url": "/begriffe/zyklenfestigkeit/",
-    "priority": 1474,
+    "priority": 1477,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",

@@ -1,7 +1,7 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-09T16:55:03.554Z
-Resolved references: 7203
+Erzeugt: 2026-06-09T19:53:49.406Z
+Resolved references: 7233
 Warnings: 2710
 
 ## Warnungen
@@ -645,8 +645,8 @@ Warnings: 2710
 - /portale/migration-vielfalt/migration-als-wirkungsfeld/ -> Migration als Wirkungsfeld (field, Beschreibung: ja)
 - /portale/migration-vielfalt/arbeitsmarkt-fachkraefte-demografie/ -> Arbeitsmarkt, Fachkräfte und Demografie (Website, Beschreibung: ja)
 - /portale/migration-vielfalt/bildung-sprache-wirkungskompetenz/ -> Bildung, Sprache und Wirkungskompetenz (Website, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/ -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /portale/migration-vielfalt/diskurs-medien-polarisierung/ -> Diskurs, Medien und Polarisierung (Website, Beschreibung: ja)
-- /portale/migration-vielfalt/gesundheit-trauma-stabilitaet/ -> Gesundheit, Trauma und Stabilität (Website, Beschreibung: ja)
 - /referenz/kapitel-072-kultur-und-teilhabe/#chapter-glossary-72 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -808,6 +808,7 @@ Warnings: 2710
 - /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-019-nichttriviale-systeme/#chapter-glossary-19 -> Kapitel 19: Nichttriviale Systeme (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/ -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#export-title -> SDG 16 Frieden, Gerechtigkeit und starke Institutionen (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#downloads -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
 - /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
@@ -1256,6 +1257,7 @@ Warnings: 2710
 - /referenz/kapitel-071-kindheit-familie-und-fruehes-leben/#chapter-glossary-71 -> Kapitel 71: Kindheit, Familie und frühes Leben (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /werkstatt/gesetze/wirkungssteuergesetz/#downloads -> Wirkungssteuergesetz WStG | Online-Gesetzestext mit Kommentaren (Website, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/ -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1263,7 +1265,6 @@ Warnings: 2710
 - /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
 - /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
-- /portale/migration-vielfalt/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html -> Vom Nachhaltigkeitsbewusstsein zur Wirkungsökonomie (Journalartikel, Beschreibung: ja)
@@ -1450,12 +1451,11 @@ Warnings: 2710
 - /wirkungsfelder/medien-oeffentlichkeit/dossiers/ -> Einzeldossiers Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/ -> Detailkonzepte Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
-- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/ -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.html -> Wenn Kommunikation Realität formt – Wirkung als neue demokratische Leitkategorie (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> Wirkung statt Weltbild – eine wirkungsökonomische Analyse des AfD-Regierungsprogramms (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html -> Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik (Journalartikel, Beschreibung: ja)

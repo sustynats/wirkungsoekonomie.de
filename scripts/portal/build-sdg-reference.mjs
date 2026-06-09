@@ -583,6 +583,22 @@ function go3PublicationBlock(base) {
     </section>`;
 }
 
+function resilienceDossierBlock(base) {
+  return `<section class="section" aria-labelledby="sdg-resilience-dossier">
+      <div class="download-card">
+        <div>
+          <p class="card-kicker">Neues Dossier · Juni 2026</p>
+          ${sectionTitle("sdg-resilience-dossier", "SDGs als Risiko- und Resilienzregister")}
+          <p class="card-text">Das Dossier liest die SDGs nicht als weiche Nachhaltigkeitswunschliste, sondern als globales Risiko- und Resilienzregister. SDG+ ergänzt die demokratischen, medialen, rechtlichen, kulturellen und digitalen Systemfähigkeiten, ohne die positive Netto-Wirkung für Mensch, Planet und Demokratie nicht stabil erreichbar ist.</p>
+        </div>
+        <div class="portal-card-actions no-print">
+          <a class="btn btn-primary" href="${href(base, "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/")}">Dossier online lesen</a>
+          <a class="btn btn-secondary" href="${href(base, "assets/downloads/woek_dossier_sdgs_sdgplus_risiko_resilienzregister_systemresilienz_v0_1.pdf")}">PDF öffnen</a>
+        </div>
+      </div>
+    </section>`;
+}
+
 function exportBlock() {
   const available = sdgDepthDownloads.filter((download) => fs.existsSync(path.join(ROOT, download.file)));
   return `<section class="section" aria-labelledby="export-title">
@@ -653,6 +669,7 @@ function overviewPage() {
       </div>
     </section>
     ${go3PublicationBlock(base)}
+    ${resilienceDossierBlock(base)}
     <section class="section" aria-labelledby="idg-wirkungskompetenz">
       <div class="download-card">
         <div>
