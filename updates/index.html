@@ -76,6 +76,22 @@
           </aside>
         </div>
       </section>
+      <section class="section section-compact" id="updates-suche" aria-labelledby="updates-suche-title">
+        <div class="search-panel">
+          <p class="hero-kicker">Updates suchen</p>
+          <h2 id="updates-suche-title">Neue Inhalte filtern.</h2>
+          <label class="document-search-field" for="updates-search-input">Suche
+            <input id="updates-search-input" type="search" data-updates-search placeholder="Titel, Bereich oder Thema">
+          </label>
+          <div class="filter-row" data-updates-filter aria-label="Update-Filter">
+            <button class="filter-chip is-active" type="button" data-updates-type="all">Alle</button>
+            <button class="filter-chip" type="button" data-updates-type="journal">Journal</button>
+            <button class="filter-chip" type="button" data-updates-type="wirkungsraum">Öffentlicher Wirkungsraum</button>
+            <button class="filter-chip" type="button" data-updates-type="bibliothek">Bibliothek</button>
+            <button class="filter-chip" type="button" data-updates-type="changelog">Changelog</button>
+          </div>
+        </div>
+      </section>
 
       <section class="section" id="journal" aria-labelledby="journal-title">
         <div class="section-header">
@@ -310,5 +326,39 @@
       </div>
     </footer>
     <script src="../assets/js/main.js?v=20260606-main-cache-fix"></script>
+      <script data-updates-controller>
+      (() => {
+        const input = document.querySelector("[data-updates-search]");
+        if (!input) return;
+        const buttons = Array.from(document.querySelectorAll("[data-updates-type]"));
+        const cards = Array.from(document.querySelectorAll("main article.card"));
+        let activeType = "all";
+        const typeFor = (card) => {
+          const id = card.closest("section")?.id || "";
+          if (id.includes("journal")) return "journal";
+          if (id.includes("bereiche")) return "wirkungsraum";
+          if (id.includes("kanal")) return "bibliothek";
+          if (id.includes("changelog")) return "changelog";
+          return "all";
+        };
+        const apply = () => {
+          const query = input.value.trim().toLocaleLowerCase("de");
+          cards.forEach((card) => {
+            const text = card.textContent.toLocaleLowerCase("de");
+            const matchesQuery = !query || text.includes(query);
+            const matchesType = activeType === "all" || typeFor(card) === activeType;
+            card.hidden = !(matchesQuery && matchesType);
+          });
+        };
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            activeType = button.dataset.updatesType || "all";
+            buttons.forEach((item) => item.classList.toggle("is-active", item === button));
+            apply();
+          });
+        });
+        input.addEventListener("input", apply);
+      })();
+    </script>
   </body>
 </html>
