@@ -1,6 +1,6 @@
 {
   "schemaVersion": "kwi-beta-manifest-0.1",
-  "generatedAt": "2026-06-08T21:37:16.520553+00:00",
+  "generatedAt": "2026-06-09T09:04:14.839896+00:00",
   "sources": [
     {
       "name": "SDG-Portal",
@@ -10,6 +10,134 @@
   ],
   "municipalities": [
     {
+      "name": "Augsburg",
+      "slug": "augsburg",
+      "sdgPortalId": 252276,
+      "kwiScore": 55.7,
+      "indicatorCount": 56,
+      "file": "augsburg.json"
+    },
+    {
+      "name": "Berlin, Stadt",
+      "slug": "berlin-stadt",
+      "sdgPortalId": 253202,
+      "kwiScore": 52.3,
+      "indicatorCount": 56,
+      "file": "berlin-stadt.json"
+    },
+    {
+      "name": "Brandenburg an der Havel, Stadt",
+      "slug": "brandenburg-an-der-havel-stadt",
+      "sdgPortalId": 253204,
+      "kwiScore": 52.5,
+      "indicatorCount": 56,
+      "file": "brandenburg-an-der-havel-stadt.json"
+    },
+    {
+      "name": "Braunschweig, Stadt",
+      "slug": "braunschweig-stadt",
+      "sdgPortalId": 236566,
+      "kwiScore": 56.8,
+      "indicatorCount": 56,
+      "file": "braunschweig-stadt.json"
+    },
+    {
+      "name": "Bremen, Stadt",
+      "slug": "bremen-stadt",
+      "sdgPortalId": 238758,
+      "kwiScore": 52.7,
+      "indicatorCount": 56,
+      "file": "bremen-stadt.json"
+    },
+    {
+      "name": "Bremerhaven, Stadt",
+      "slug": "bremerhaven-stadt",
+      "sdgPortalId": 238760,
+      "kwiScore": 50.2,
+      "indicatorCount": 56,
+      "file": "bremerhaven-stadt.json"
+    },
+    {
+      "name": "Chemnitz, Stadt",
+      "slug": "chemnitz-stadt",
+      "sdgPortalId": 255754,
+      "kwiScore": 52.5,
+      "indicatorCount": 56,
+      "file": "chemnitz-stadt.json"
+    },
+    {
+      "name": "Dessau-Roßlau, Stadt",
+      "slug": "dessau-roßlau-stadt",
+      "sdgPortalId": 256732,
+      "kwiScore": 49.6,
+      "indicatorCount": 56,
+      "file": "dessau-roßlau-stadt.json"
+    },
+    {
+      "name": "Dresden, Stadt",
+      "slug": "dresden-stadt",
+      "sdgPortalId": 256180,
+      "kwiScore": 47.1,
+      "indicatorCount": 56,
+      "file": "dresden-stadt.json"
+    },
+    {
+      "name": "Düsseldorf, Stadt",
+      "slug": "düsseldorf-stadt",
+      "sdgPortalId": 238762,
+      "kwiScore": 59.3,
+      "indicatorCount": 56,
+      "file": "düsseldorf-stadt.json"
+    },
+    {
+      "name": "Eberswalde, Stadt",
+      "slug": "eberswalde-stadt",
+      "sdgPortalId": 253226,
+      "kwiScore": 43.2,
+      "indicatorCount": 56,
+      "file": "eberswalde-stadt.json"
+    },
+    {
+      "name": "Erfurt, Stadt",
+      "slug": "erfurt-stadt",
+      "sdgPortalId": 257226,
+      "kwiScore": 55.1,
+      "indicatorCount": 56,
+      "file": "erfurt-stadt.json"
+    },
+    {
+      "name": "Flensburg, Stadt",
+      "slug": "flensburg-stadt",
+      "sdgPortalId": 234180,
+      "kwiScore": 52.9,
+      "indicatorCount": 56,
+      "file": "flensburg-stadt.json"
+    },
+    {
+      "name": "Frankfurt am Main, Stadt",
+      "slug": "frankfurt-am-main-stadt",
+      "sdgPortalId": 239556,
+      "kwiScore": 46.7,
+      "indicatorCount": 56,
+      "file": "frankfurt-am-main-stadt.json"
+    },
+    {
+      "name": "Freiburg im Breisgau, Stadt",
+      "slug": "freiburg-im-breisgau-stadt",
+      "sdgPortalId": 246648,
+      "kwiScore": 48.9,
+      "indicatorCount": 56,
+      "file": "freiburg-im-breisgau-stadt.json"
+    },
+    {
+      "name": "Gera, Stadt",
+      "slug": "gera-stadt",
+      "sdgPortalId": 257228,
+      "kwiScore": 51.6,
+      "indicatorCount": 56,
+      "file": "gera-stadt.json"
+    },
+    {
       "name": "Gütersloh, Stadt",
       "slug": "gütersloh-stadt",
       "sdgPortalId": 239252,
@@ -18,12 +146,228 @@
       "file": "gütersloh-stadt.json"
     },
     {
+      "name": "Halle (Saale), Stadt",
+      "slug": "halle-saale-stadt",
+      "sdgPortalId": 256734,
+      "kwiScore": 39.1,
+      "indicatorCount": 56,
+      "file": "halle-saale-stadt.json"
+    },
+    {
+      "name": "Hamburg, Freie und Hansestadt",
+      "slug": "hamburg-freie-und-hansestadt",
+      "sdgPortalId": 236564,
+      "kwiScore": 52.3,
+      "indicatorCount": 56,
+      "file": "hamburg-freie-und-hansestadt.json"
+    },
+    {
+      "name": "Hannover, Landeshauptstadt",
+      "slug": "hannover-landeshauptstadt",
+      "sdgPortalId": 236962,
+      "kwiScore": 50.5,
+      "indicatorCount": 56,
+      "file": "hannover-landeshauptstadt.json"
+    },
+    {
+      "name": "Heidelberg, Stadt",
+      "slug": "heidelberg-stadt",
+      "sdgPortalId": 246266,
+      "kwiScore": 48.5,
+      "indicatorCount": 56,
+      "file": "heidelberg-stadt.json"
+    },
+    {
+      "name": "Homburg, Kreisstadt",
+      "slug": "homburg-kreisstadt",
+      "sdgPortalId": 253178,
+      "kwiScore": 48,
+      "indicatorCount": 56,
+      "file": "homburg-kreisstadt.json"
+    },
+    {
+      "name": "Jena, Stadt",
+      "slug": "jena-stadt",
+      "sdgPortalId": 257230,
+      "kwiScore": 54.9,
+      "indicatorCount": 56,
+      "file": "jena-stadt.json"
+    },
+    {
+      "name": "Kassel, documenta-Stadt",
+      "slug": "kassel-documenta-stadt",
+      "sdgPortalId": 240128,
+      "kwiScore": 51.5,
+      "indicatorCount": 56,
+      "file": "kassel-documenta-stadt.json"
+    },
+    {
+      "name": "Kiel, Landeshauptstadt",
+      "slug": "kiel-landeshauptstadt",
+      "sdgPortalId": 234182,
+      "kwiScore": 45.9,
+      "indicatorCount": 56,
+      "file": "kiel-landeshauptstadt.json"
+    },
+    {
+      "name": "Koblenz, Stadt",
+      "slug": "koblenz-stadt",
+      "sdgPortalId": 240408,
+      "kwiScore": 44.3,
+      "indicatorCount": 56,
+      "file": "koblenz-stadt.json"
+    },
+    {
+      "name": "Köln, Stadt",
+      "slug": "köln-stadt",
+      "sdgPortalId": 238896,
+      "kwiScore": 45,
+      "indicatorCount": 56,
+      "file": "köln-stadt.json"
+    },
+    {
+      "name": "Leipzig, Stadt",
+      "slug": "leipzig-stadt",
+      "sdgPortalId": 256594,
+      "kwiScore": 41.9,
+      "indicatorCount": 56,
+      "file": "leipzig-stadt.json"
+    },
+    {
+      "name": "Lübeck, Hansestadt",
+      "slug": "lübeck-hansestadt",
+      "sdgPortalId": 234184,
+      "kwiScore": 40.4,
+      "indicatorCount": 56,
+      "file": "lübeck-hansestadt.json"
+    },
+    {
+      "name": "Magdeburg, Landeshauptstadt",
+      "slug": "magdeburg-landeshauptstadt",
+      "sdgPortalId": 256736,
+      "kwiScore": 44.4,
+      "indicatorCount": 56,
+      "file": "magdeburg-landeshauptstadt.json"
+    },
+    {
+      "name": "Mainz, Stadt",
+      "slug": "mainz-stadt",
+      "sdgPortalId": 243896,
+      "kwiScore": 52.3,
+      "indicatorCount": 56,
+      "file": "mainz-stadt.json"
+    },
+    {
       "name": "Mannheim, Universitätsstadt",
       "slug": "mannheim-universitätsstadt",
       "sdgPortalId": 246268,
       "kwiScore": 43.9,
       "indicatorCount": 56,
       "file": "mannheim-universitätsstadt.json"
+    },
+    {
+      "name": "München, Landeshauptstadt",
+      "slug": "münchen-landeshauptstadt",
+      "sdgPortalId": 248018,
+      "kwiScore": 47.2,
+      "indicatorCount": 56,
+      "file": "münchen-landeshauptstadt.json"
+    },
+    {
+      "name": "Münster, Stadt",
+      "slug": "münster-stadt",
+      "sdgPortalId": 239096,
+      "kwiScore": 49.1,
+      "indicatorCount": 56,
+      "file": "münster-stadt.json"
+    },
+    {
+      "name": "Neubrandenburg, Stadt",
+      "slug": "neubrandenburg-stadt",
+      "sdgPortalId": 254330,
+      "kwiScore": 57.7,
+      "indicatorCount": 56,
+      "file": "neubrandenburg-stadt.json"
+    },
+    {
+      "name": "Neunkirchen, Kreisstadt",
+      "slug": "neunkirchen-kreisstadt",
+      "sdgPortalId": 253138,
+      "kwiScore": 45.3,
+      "indicatorCount": 56,
+      "file": "neunkirchen-kreisstadt.json"
+    },
+    {
+      "name": "Nürnberg",
+      "slug": "nürnberg",
+      "sdgPortalId": 250926,
+      "kwiScore": 53.3,
+      "indicatorCount": 56,
+      "file": "nürnberg.json"
+    },
+    {
+      "name": "Oldenburg (Oldenburg), Stadt",
+      "slug": "oldenburg-oldenburg-stadt",
+      "sdgPortalId": 238204,
+      "kwiScore": 56.9,
+      "indicatorCount": 56,
+      "file": "oldenburg-oldenburg-stadt.json"
+    },
+    {
+      "name": "Potsdam, Stadt",
+      "slug": "potsdam-stadt",
+      "sdgPortalId": 253210,
+      "kwiScore": 46.9,
+      "indicatorCount": 56,
+      "file": "potsdam-stadt.json"
+    },
+    {
+      "name": "Rostock, Hansestadt",
+      "slug": "rostock-hansestadt",
+      "sdgPortalId": 254150,
+      "kwiScore": 45.8,
+      "indicatorCount": 56,
+      "file": "rostock-hansestadt.json"
+    },
+    {
+      "name": "Saarbrücken, Landeshauptstadt",
+      "slug": "saarbrücken-landeshauptstadt",
+      "sdgPortalId": 253096,
+      "kwiScore": 49.2,
+      "indicatorCount": 56,
+      "file": "saarbrücken-landeshauptstadt.json"
+    },
+    {
+      "name": "Schwerin, Landeshauptstadt",
+      "slug": "schwerin-landeshauptstadt",
+      "sdgPortalId": 254152,
+      "kwiScore": 42.2,
+      "indicatorCount": 56,
+      "file": "schwerin-landeshauptstadt.json"
+    },
+    {
+      "name": "Stuttgart, Landeshauptstadt",
+      "slug": "stuttgart-landeshauptstadt",
+      "sdgPortalId": 245270,
+      "kwiScore": 56.7,
+      "indicatorCount": 56,
+      "file": "stuttgart-landeshauptstadt.json"
+    },
+    {
+      "name": "Trier, Stadt",
+      "slug": "trier-stadt",
+      "sdgPortalId": 242742,
+      "kwiScore": 43.7,
+      "indicatorCount": 56,
+      "file": "trier-stadt.json"
+    },
+    {
+      "name": "Wiesbaden, Landeshauptstadt",
+      "slug": "wiesbaden-landeshauptstadt",
+      "sdgPortalId": 239560,
+      "kwiScore": 51.2,
+      "indicatorCount": 56,
+      "file": "wiesbaden-landeshauptstadt.json"
     }
   ]
 }

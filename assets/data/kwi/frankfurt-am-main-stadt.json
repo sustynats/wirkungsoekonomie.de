@@ -1,0 +1,2960 @@
+{
+  "schemaVersion": "kwi-beta-0.1",
+  "generatedAt": "2026-06-09T09:03:04.352155+00:00",
+  "source": {
+    "name": "SDG-Portal",
+    "url": "https://sdg-portal.de/de/",
+    "note": "HTML-Snapshot der oeffentlichen Kommune-Seite; Werte bleiben mit Quelle, Jahr und Richtung nachvollziehbar."
+  },
+  "method": {
+    "name": "Kommunaler Wirkungsindex Beta",
+    "weights": {
+      "Mensch": 0.4,
+      "Planet": 0.3,
+      "Demokratie": 0.3
+    },
+    "scoreNote": "Beta-Score: Vergleich zum Landesdurchschnitt plus Trendkorrektur, skaliert auf 0-100. Keine amtliche Statistik."
+  },
+  "municipality": {
+    "sdgPortalId": 239556,
+    "name": "Frankfurt am Main, Stadt",
+    "slug": "frankfurt-am-main-stadt"
+  },
+  "summary": {
+    "kwiScore": 46.7,
+    "dimensions": {
+      "Mensch": {
+        "score": 48.0,
+        "indicatorCount": 38,
+        "availableCount": 38
+      },
+      "Planet": {
+        "score": 40.3,
+        "indicatorCount": 12,
+        "availableCount": 12
+      },
+      "Demokratie": {
+        "score": 51.4,
+        "indicatorCount": 4,
+        "availableCount": 4
+      }
+    },
+    "qualityCounts": {
+      "hoch": 37,
+      "mittel": 10,
+      "niedrig": 9
+    },
+    "indicatorCount": 56,
+    "scoredIndicatorCount": 54
+  },
+  "indicators": [
+    {
+      "id": "sdg1-sgb-ii-sgb-xii-quote",
+      "title": "SGB II-/ SGB XII-Quote (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 10.38,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 8.99,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 48.8,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Leistungsberechtigten nach SGB II) + (Anzahl der Leistungsberechtigten nach SGB XII)) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist nach dem SGB II und dem SGB XII leistungsberechtigt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 13.19
+        },
+        {
+          "year": 2015,
+          "value": 13.19
+        },
+        {
+          "year": 2016,
+          "value": 12.99
+        },
+        {
+          "year": 2017,
+          "value": 12.7
+        },
+        {
+          "year": 2018,
+          "value": 11.9
+        },
+        {
+          "year": 2019,
+          "value": 10.9
+        },
+        {
+          "year": 2020,
+          "value": 11.82
+        },
+        {
+          "year": 2021,
+          "value": 11.27
+        },
+        {
+          "year": 2022,
+          "value": 10.89
+        },
+        {
+          "year": 2023,
+          "value": 10.38
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg1-armut-kinderarmut",
+      "title": "Armut - Kinderarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 16.7,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 13.93,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 47.8,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der nicht-erwerbsfähigen Leistungsbezieher:innen unter 15 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften unter 15 Jahren)) / (Anzahl der Einwohner:innen im Alter von unter 15 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung unter 15 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Sozialgeld nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 21.86
+        },
+        {
+          "year": 2015,
+          "value": 21.9
+        },
+        {
+          "year": 2016,
+          "value": 20.56
+        },
+        {
+          "year": 2017,
+          "value": 20.002
+        },
+        {
+          "year": 2018,
+          "value": 19.23
+        },
+        {
+          "year": 2019,
+          "value": 17.71
+        },
+        {
+          "year": 2020,
+          "value": 18.57
+        },
+        {
+          "year": 2021,
+          "value": 17.78
+        },
+        {
+          "year": 2022,
+          "value": 17.65
+        },
+        {
+          "year": 2023,
+          "value": 16.7
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg1-armut-jugendarmut",
+      "title": "Armut - Jugendarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 15.92,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 12.53,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 44.3,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der Leistungsberechtigten im Alter von 15 bis 17 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften im Alter von 15 bis 17 Jahren)) / (Anzahl der Einwohner:innen im Alter von 15 bis 17 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Jugendlichen von 15 bis 17 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Leistungen nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 19.59
+        },
+        {
+          "year": 2015,
+          "value": 18.88
+        },
+        {
+          "year": 2016,
+          "value": 17.81
+        },
+        {
+          "year": 2017,
+          "value": 17.8
+        },
+        {
+          "year": 2018,
+          "value": 17.59
+        },
+        {
+          "year": 2019,
+          "value": 16.35
+        },
+        {
+          "year": 2020,
+          "value": 17.19
+        },
+        {
+          "year": 2021,
+          "value": 16.47
+        },
+        {
+          "year": 2022,
+          "value": 16.57
+        },
+        {
+          "year": 2023,
+          "value": 15.92
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg1-armut-altersarmut",
+      "title": "Armut - Altersarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 9.99,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 4.59,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 4.6,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Bezieher:innen von Grundsicherung im Alter ab 65 Jahren) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung erhält ab 65 Jahren Leistungen zur Grundsicherung im Alter nach SGB XII.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 8.26
+        },
+        {
+          "year": 2015,
+          "value": 8.55
+        },
+        {
+          "year": 2016,
+          "value": 8.63
+        },
+        {
+          "year": 2017,
+          "value": 8.81
+        },
+        {
+          "year": 2018,
+          "value": 8.99
+        },
+        {
+          "year": 2019,
+          "value": 9.1
+        },
+        {
+          "year": 2020,
+          "value": 9.32
+        },
+        {
+          "year": 2021,
+          "value": 9.4
+        },
+        {
+          "year": 2022,
+          "value": 9.86
+        },
+        {
+          "year": 2023,
+          "value": 9.99
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg1-wohnungslosigkeit",
+      "title": "Wohnungslosigkeit (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 1.12,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 0.35,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der untergebrachten wohnungslosen Einwohner:innen) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist wohnungslos.",
+      "timeseries": [
+        {
+          "year": 2022,
+          "value": 0.75
+        },
+        {
+          "year": 2023,
+          "value": 1.12
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg2-stickstoffueberschuss-der-landwirtschaft-kg-ha-landwirtschaftlich-genutzte-flaec",
+      "title": "Stickstoffüberschuss der Landwirtschaft (kg / ha landwirtschaftlich genutzte Fläche)",
+      "dimension": "Mensch",
+      "sdg": 2,
+      "sdgTitle": "Kein Hunger",
+      "value": 115.59,
+      "year": 2021,
+      "unit": "kg / ha landwirtschaftlich genutzte Fläche",
+      "stateAverage": 36.89,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "mittel",
+      "source": "Universität Gießen, Umweltbundesamt",
+      "calculation": "(Stickstoffüberschuss im gleitenden Drei-Jahres-Mittel) / (Landwirtschaftlich genutzte Fläche) * 1.000",
+      "statement": "Der Stickstoffüberschuss liegt bei x kg pro Hektar landwirtschaftlich genutzter Fläche.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 103.22
+        },
+        {
+          "year": 2014,
+          "value": 109.47
+        },
+        {
+          "year": 2015,
+          "value": 119.18
+        },
+        {
+          "year": 2016,
+          "value": 126.6
+        },
+        {
+          "year": 2017,
+          "value": 124.77
+        },
+        {
+          "year": 2018,
+          "value": 139.86
+        },
+        {
+          "year": 2019,
+          "value": 106.71
+        },
+        {
+          "year": 2020,
+          "value": 136.72
+        },
+        {
+          "year": 2021,
+          "value": 115.59
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-hausarzt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Hausarzt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 301.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-krankenhaus-minuten",
+      "title": "Wohnungsnahe Grundversorgung - Krankenhaus (Minuten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 4.37,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2020",
+      "calculation": "Einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung",
+      "statement": "Die einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung beträgt x Minuten.",
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-apotheke-meter",
+      "title": "Wohnungsnahe Grundversorgung - Apotheke (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 377.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zur nächsten Apotheke",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Apotheke beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg3-personal-in-pflegediensten-personalschluessel-in-vollzeitaequivalenten",
+      "title": "Personal in Pflegediensten (Personalschlüssel in Vollzeitäquivalenten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 0.2,
+      "year": 2022,
+      "unit": "Personalschlüssel in Vollzeitäquivalenten",
+      "stateAverage": 0.12,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 73.3,
+      "quality": "mittel",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Personal in ambulanten Pflegediensten) / ((Anzahl der ambulant Pflegebedürftigen) + (Anzahl der Pflegegeldempfänger:innen))",
+      "statement": "In ambulanten Pflegediensten sind x Beschäftigte (Vollzeitstellen) je pflegebedürftiger Person beschäftigt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.2
+        },
+        {
+          "year": 2014,
+          "value": 0.2
+        },
+        {
+          "year": 2015,
+          "value": 0.22
+        },
+        {
+          "year": 2016,
+          "value": 0.22
+        },
+        {
+          "year": 2017,
+          "value": 0.23
+        },
+        {
+          "year": 2018,
+          "value": 0.23
+        },
+        {
+          "year": 2019,
+          "value": 0.22
+        },
+        {
+          "year": 2020,
+          "value": 0.22
+        },
+        {
+          "year": 2021,
+          "value": 0.2
+        },
+        {
+          "year": 2022,
+          "value": 0.2
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg3-pflegeheimplaetze-verfuegbare-stationaere-plaetze-in-pflegeheimen-je-1-000-einwo",
+      "title": "Pflegeheimplätze (Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 42.16,
+      "year": 2023,
+      "unit": "Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre",
+      "stateAverage": 50.66,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 43.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der verfügbaren voll- und teilstationären Plätze in Pflegeheimen) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 1.000",
+      "statement": "In Pflegeheimen sind x stationäre Plätze je 1.000 Einwohner:innen ab 65 Jahren vorhanden.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 44.58
+        },
+        {
+          "year": 2015,
+          "value": 45.32
+        },
+        {
+          "year": 2016,
+          "value": 45.32
+        },
+        {
+          "year": 2017,
+          "value": 45.55
+        },
+        {
+          "year": 2018,
+          "value": 45.55
+        },
+        {
+          "year": 2019,
+          "value": 42.9
+        },
+        {
+          "year": 2020,
+          "value": 42.9
+        },
+        {
+          "year": 2021,
+          "value": 44.21
+        },
+        {
+          "year": 2022,
+          "value": 44.21
+        },
+        {
+          "year": 2023,
+          "value": 42.16
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg3-luftschadstoffbelastung-g-m",
+      "title": "Luftschadstoffbelastung (µg / m³)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 7.8,
+      "year": 2023,
+      "unit": "µg / m³",
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "niedriger_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Umweltbundesamt, Bundesamt für Kartographie und Geodäsie Hinweis: Änderung der Definition und rückwirkende Anpassung der Daten: Die Feinstaubbelastung wird ab sofort mit dem maximalen Durchmesser von 2,5 μm (statt wie vormals mit 10 μm) angegeben.",
+      "calculation": "Jahresmittelwert Feinstaub (PM2,5) je Gebietseinheit",
+      "statement": "Die Konzentration von Feinstaub (PM2,5) in der Luft beträgt x µg / m³.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 14.44
+        },
+        {
+          "year": 2015,
+          "value": 13.8
+        },
+        {
+          "year": 2016,
+          "value": 13.19
+        },
+        {
+          "year": 2017,
+          "value": 12.93
+        },
+        {
+          "year": 2018,
+          "value": 12.37
+        },
+        {
+          "year": 2019,
+          "value": 11.32
+        },
+        {
+          "year": 2020,
+          "value": 9.75
+        },
+        {
+          "year": 2021,
+          "value": 9.82
+        },
+        {
+          "year": 2022,
+          "value": 9.25
+        },
+        {
+          "year": 2023,
+          "value": 7.8
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg3-vorzeitige-sterblichkeit-todesfaelle-je-1-000-einwohner-innen",
+      "title": "Vorzeitige Sterblichkeit (Todesfälle je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 1.97,
+      "year": 2023,
+      "unit": "Todesfälle je 1.000 Einwohner:innen",
+      "stateAverage": 2.29,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 55.6,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder Hinweis: Neuer Indikator - Vorzeitige Sterblichkeit wird ab sofort als gesamt für beide Geschlechter ausgewiesen. Zeitreihe rückwirkend berechnet.",
+      "calculation": "(Anzahl der Todesfälle bei Einwohner:innen im Alter von unter 70 Jahren) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Von 1.000 Personen unter 70 Jahren sind x vorzeitig verstorben.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 2.043
+        },
+        {
+          "year": 2014,
+          "value": 1.92
+        },
+        {
+          "year": 2015,
+          "value": 1.94
+        },
+        {
+          "year": 2016,
+          "value": 1.87
+        },
+        {
+          "year": 2017,
+          "value": 1.97
+        },
+        {
+          "year": 2019,
+          "value": 1.9
+        },
+        {
+          "year": 2020,
+          "value": 1.86
+        },
+        {
+          "year": 2021,
+          "value": 2.035
+        },
+        {
+          "year": 2022,
+          "value": 2.0
+        },
+        {
+          "year": 2023,
+          "value": 1.97
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg4-wohnungsnahe-grundversorgung-grundschule-meter",
+      "title": "Wohnungsnahe Grundversorgung - Grundschule (Meter)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 453.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz in m zur nächsten Grundschule",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Grundschule beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg4-schulabbrecherquote",
+      "title": "Schulabbrecherquote (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 2.33,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 2.19,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 47.8,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Schulabgänger:innen allgemeinbildender Schulen ohne Hauptschulabschluss) / (Anzahl der Schulabgänger:innen allgemeinbildender Schulen insgesamt) * 100",
+      "statement": "Ein Anteil von x % der Schulabgänger:innen allgemeinbildender Schulen erreicht keinen Hauptschulabschluss.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 2.34
+        },
+        {
+          "year": 2015,
+          "value": 2.38
+        },
+        {
+          "year": 2016,
+          "value": 3.29
+        },
+        {
+          "year": 2017,
+          "value": 2.85
+        },
+        {
+          "year": 2018,
+          "value": 2.8
+        },
+        {
+          "year": 2019,
+          "value": 2.79
+        },
+        {
+          "year": 2020,
+          "value": 1.65
+        },
+        {
+          "year": 2021,
+          "value": 2.028
+        },
+        {
+          "year": 2022,
+          "value": 2.24
+        },
+        {
+          "year": 2023,
+          "value": 2.33
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg4-betreuung-von-kindern-unter-3-jaehrige",
+      "title": "Betreuung von Kindern - unter 3-jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 38.31,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 27.85,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 68.3,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Kinder im Alter von unter 3 Jahren in Tageseinrichtungen) / (Anzahl der Kinder im Alter von unter 3 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Kinder im Alter unter 3 Jahren wird in Tageseinrichtungen betreut.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 30.4
+        },
+        {
+          "year": 2015,
+          "value": 33.56
+        },
+        {
+          "year": 2016,
+          "value": 34.92
+        },
+        {
+          "year": 2017,
+          "value": 35.87
+        },
+        {
+          "year": 2018,
+          "value": 35.94
+        },
+        {
+          "year": 2019,
+          "value": 35.74
+        },
+        {
+          "year": 2020,
+          "value": 36.7
+        },
+        {
+          "year": 2021,
+          "value": 37.056
+        },
+        {
+          "year": 2022,
+          "value": 38.34
+        },
+        {
+          "year": 2023,
+          "value": 38.31
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg4-integrative-kindertageseinrichtungen",
+      "title": "Integrative Kindertageseinrichtungen (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 40.02,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 51.28,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 43.8,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der integrativen Kindertageseinrichtungen) / (Anzahl der Kindertageseinrichtungen) * 100",
+      "statement": "Ein Anteil von x % der Kindertageseinrichtungen ist integrativ.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 37.28
+        },
+        {
+          "year": 2014,
+          "value": 35.81
+        },
+        {
+          "year": 2015,
+          "value": 36.3
+        },
+        {
+          "year": 2016,
+          "value": 34.91
+        },
+        {
+          "year": 2017,
+          "value": 36.46
+        },
+        {
+          "year": 2018,
+          "value": 38.51
+        },
+        {
+          "year": 2019,
+          "value": 36.64
+        },
+        {
+          "year": 2020,
+          "value": 38.64
+        },
+        {
+          "year": 2021,
+          "value": 38.94
+        },
+        {
+          "year": 2022,
+          "value": 40.02
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg5-verhaeltnis-der-beschaeftigungsquoten-von-frauen-und-maennern",
+      "title": "Verhältnis der Beschäftigungsquoten von Frauen und Männern (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": 88.86,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 87.85,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 49.6,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherpflichtig beschäftigten Frauen am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Frauen im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten Männer am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Männer im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Frauenbeschäftigungsquote zur Männerbeschäftigungsquote beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 92.5
+        },
+        {
+          "year": 2015,
+          "value": 92.54
+        },
+        {
+          "year": 2016,
+          "value": 91.3
+        },
+        {
+          "year": 2017,
+          "value": 90.45
+        },
+        {
+          "year": 2018,
+          "value": 89.54
+        },
+        {
+          "year": 2019,
+          "value": 89.34
+        },
+        {
+          "year": 2020,
+          "value": 89.65
+        },
+        {
+          "year": 2021,
+          "value": 89.35
+        },
+        {
+          "year": 2022,
+          "value": 88.75
+        },
+        {
+          "year": 2023,
+          "value": 88.86
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg5-frauenanteil-im-stadtrat-gemeinderat-bzw-kreistag",
+      "title": "Frauenanteil im Stadtrat, Gemeinderat bzw. Kreistag (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": 40.86,
+      "year": 2019,
+      "unit": "%",
+      "stateAverage": 32.17,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 58.5,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der Frauen mit Mandaten im Stadtrat, Gemeinderat bzw. Kreistag) / (Anzahl der Mandate im Stadtrat, Gemeinderat bzw. Kreistag) * 100",
+      "statement": "Ein Anteil von x % der Mandate im Stadtrat, Gemeinderat bzw. Kreistag ist mit Frauen besetzt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 43.011
+        },
+        {
+          "year": 2015,
+          "value": 42.17
+        },
+        {
+          "year": 2017,
+          "value": 38.71
+        },
+        {
+          "year": 2019,
+          "value": 40.86
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg6-abwasserbehandlung",
+      "title": "Abwasserbehandlung (%)",
+      "dimension": "Planet",
+      "sdg": 6,
+      "sdgTitle": "Sauberes Wasser und Sanitärversorgung",
+      "value": 100.0,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 93.41,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 52.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Abwassermenge, die durch Denitrifikation und Phosphorelimination behandelt wird) / (Abwassermenge) * 100",
+      "statement": "Ein Anteil von x % des Abwassers wird mit Denitrifikation und Phosphorelimination behandelt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 100.0
+        },
+        {
+          "year": 2015,
+          "value": 100.0
+        },
+        {
+          "year": 2016,
+          "value": 100.0
+        },
+        {
+          "year": 2017,
+          "value": 100.0
+        },
+        {
+          "year": 2018,
+          "value": 100.0
+        },
+        {
+          "year": 2019,
+          "value": 100.0
+        },
+        {
+          "year": 2020,
+          "value": 100.0
+        },
+        {
+          "year": 2021,
+          "value": 100.0
+        },
+        {
+          "year": 2022,
+          "value": 100.0
+        },
+        {
+          "year": 2023,
+          "value": 100.0
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg7-strom-aus-erneuerbaren-quellen-kw-je-einwohner-in",
+      "title": "Strom aus erneuerbaren Quellen (kW je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 0.11,
+      "year": 2023,
+      "unit": "kW je Einwohner:in",
+      "stateAverage": 0.97,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 27.0,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Installierte Nettonennleistung erneuerbaren Stroms aus Biomasse, solarer Strahlungsenergie, Wasser und Wind) / (Anzahl der Einwohner:innen)",
+      "statement": "Es sind erneuerbare Energieträger mit einer Nettonennleistung von insgesamt x Kilowattstunden installiert worden.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 0.019
+        },
+        {
+          "year": 2019,
+          "value": 0.08
+        },
+        {
+          "year": 2020,
+          "value": 0.088
+        },
+        {
+          "year": 2021,
+          "value": 0.096
+        },
+        {
+          "year": 2023,
+          "value": 0.11
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg7-ladesaeuleninfrastruktur-ladepunkte-je-1-000-einwohner-innen",
+      "title": "Ladesäuleninfrastruktur (Ladepunkte je 1.000 Einwohner:innen)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 1.42,
+      "year": 2023,
+      "unit": "Ladepunkte je 1.000 Einwohner:innen",
+      "stateAverage": 1.45,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 57.3,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der öffentlich zugänglichen Normal- und Schnellladepunkte ab 3,7 kW) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es gibt x öffentliche Normal- und Schnellladepunkte ab 3,7 kW je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.025
+        },
+        {
+          "year": 2015,
+          "value": 0.03
+        },
+        {
+          "year": 2016,
+          "value": 0.043
+        },
+        {
+          "year": 2017,
+          "value": 0.072
+        },
+        {
+          "year": 2018,
+          "value": 0.12
+        },
+        {
+          "year": 2019,
+          "value": 0.16
+        },
+        {
+          "year": 2020,
+          "value": 0.32
+        },
+        {
+          "year": 2021,
+          "value": 0.36
+        },
+        {
+          "year": 2022,
+          "value": 0.62
+        },
+        {
+          "year": 2023,
+          "value": 1.42
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg8-bruttoinlandsprodukt-je-einwohner-in",
+      "title": "Bruttoinlandsprodukt (€ je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 103784.13,
+      "year": 2022,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 50980.77,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 89.5,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Bruttoinlandsprodukt) / (Anzahl der Einwohner:innen)",
+      "statement": "Das Bruttoinlandprodukt je Einwohner:in beträgt x Euro.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 89385.73
+        },
+        {
+          "year": 2014,
+          "value": 90897.89
+        },
+        {
+          "year": 2015,
+          "value": 91280.68
+        },
+        {
+          "year": 2016,
+          "value": 90868.57
+        },
+        {
+          "year": 2017,
+          "value": 92412.57
+        },
+        {
+          "year": 2018,
+          "value": 93803.54
+        },
+        {
+          "year": 2019,
+          "value": 86470.28
+        },
+        {
+          "year": 2020,
+          "value": 91705.73
+        },
+        {
+          "year": 2021,
+          "value": 97582.49
+        },
+        {
+          "year": 2022,
+          "value": 103784.13
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg8-langzeitarbeitslosenquote",
+      "title": "Langzeitarbeitslosenquote (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 2.25,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 2.27,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 56.7,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Arbeitslosen mit Dauer der Arbeitslosigkeit > 1 Jahr) / ((Anzahl der Arbeitslosen) + (Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort)) * 100",
+      "statement": "Ein Anteil von x % der Erwerbspersonen ist länger als 1 Jahr arbeitslos.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 3.3
+        },
+        {
+          "year": 2015,
+          "value": 3.13
+        },
+        {
+          "year": 2016,
+          "value": 2.79
+        },
+        {
+          "year": 2017,
+          "value": 2.42
+        },
+        {
+          "year": 2018,
+          "value": 2.062
+        },
+        {
+          "year": 2019,
+          "value": 1.69
+        },
+        {
+          "year": 2020,
+          "value": 2.039
+        },
+        {
+          "year": 2021,
+          "value": 2.92
+        },
+        {
+          "year": 2022,
+          "value": 2.51
+        },
+        {
+          "year": 2023,
+          "value": 2.25
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-15-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 15- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 60.58,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 61.91,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 52.4,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 15 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 52.26
+        },
+        {
+          "year": 2015,
+          "value": 53.15
+        },
+        {
+          "year": 2016,
+          "value": 55.29
+        },
+        {
+          "year": 2017,
+          "value": 56.38
+        },
+        {
+          "year": 2018,
+          "value": 57.66
+        },
+        {
+          "year": 2019,
+          "value": 58.51
+        },
+        {
+          "year": 2020,
+          "value": 58.57
+        },
+        {
+          "year": 2021,
+          "value": 59.81
+        },
+        {
+          "year": 2022,
+          "value": 60.19
+        },
+        {
+          "year": 2023,
+          "value": 60.58
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-55-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 55- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 54.33,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 57.23,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 54.1,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 55 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 55 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 55 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 42.045
+        },
+        {
+          "year": 2015,
+          "value": 43.59
+        },
+        {
+          "year": 2016,
+          "value": 45.24
+        },
+        {
+          "year": 2017,
+          "value": 46.99
+        },
+        {
+          "year": 2018,
+          "value": 48.42
+        },
+        {
+          "year": 2019,
+          "value": 50.032
+        },
+        {
+          "year": 2020,
+          "value": 50.67
+        },
+        {
+          "year": 2021,
+          "value": 51.85
+        },
+        {
+          "year": 2022,
+          "value": 53.049
+        },
+        {
+          "year": 2023,
+          "value": 54.33
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg8-erwerbstaetige-aufstocker-innen",
+      "title": "Erwerbstätige Aufstocker:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 22.45,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 21.42,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 52.3,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Aktualisierung auf Bürgergeldbezieher:innen",
+      "calculation": "(Anzahl der erwerbstätigen Bürgergeld-Bezieher:innen) / (Anzahl der erwerbsfähigen Bürgergeld-Bezieher:innen) * 100",
+      "statement": "Ein Anteil von x % der erwerbsfähigen Leistungsbezieher:innen ist zusätzlich zum Bürgergeld-Bezug erwerbstätig.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 27.96
+        },
+        {
+          "year": 2015,
+          "value": 28.4
+        },
+        {
+          "year": 2016,
+          "value": 28.2
+        },
+        {
+          "year": 2017,
+          "value": 27.71
+        },
+        {
+          "year": 2018,
+          "value": 27.75
+        },
+        {
+          "year": 2019,
+          "value": 27.32
+        },
+        {
+          "year": 2020,
+          "value": 23.28
+        },
+        {
+          "year": 2021,
+          "value": 24.81
+        },
+        {
+          "year": 2022,
+          "value": 22.24
+        },
+        {
+          "year": 2023,
+          "value": 22.45
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg9-existenzgruendungen-neuerrichtungen-je-1-000-einwohner-innen",
+      "title": "Existenzgründungen (Neuerrichtungen je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 8.85,
+      "year": 2023,
+      "unit": "Neuerrichtungen je 1.000 Einwohner:innen",
+      "stateAverage": 7.92,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 51.3,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Neuerrichtungen von Gewerbebetrieben) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Gewerbebetriebe neu errichtet.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 10.27
+        },
+        {
+          "year": 2015,
+          "value": 10.17
+        },
+        {
+          "year": 2016,
+          "value": 9.86
+        },
+        {
+          "year": 2017,
+          "value": 9.59
+        },
+        {
+          "year": 2018,
+          "value": 9.37
+        },
+        {
+          "year": 2019,
+          "value": 11.027
+        },
+        {
+          "year": 2020,
+          "value": 8.87
+        },
+        {
+          "year": 2021,
+          "value": 9.45
+        },
+        {
+          "year": 2022,
+          "value": 8.52
+        },
+        {
+          "year": 2023,
+          "value": 8.85
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg9-breitbandversorgung-private-haushalte",
+      "title": "Breitbandversorgung - Private Haushalte (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 99.94,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 89.98,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 56.0,
+      "quality": "mittel",
+      "source": "Bundesministeriums für Verkehr und digitale Infrastruktur, Statistische Ämter der Länder Hinweis: Erhöhung der Bitrate - auch rückwirkend - von 50 Mbit/s auf 100 Mbit/s.",
+      "calculation": "(Anzahl der Haushalte mit Breitbandversorgung (≥ 100 Mbit/s)) / (Anzahl der Haushalte) * 100",
+      "statement": "Der Anteil der Haushalte, die eine Bandbreite von mindestens 100 Mbit/s nutzen können, beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2017,
+          "value": 90.52
+        },
+        {
+          "year": 2020,
+          "value": 98.57
+        },
+        {
+          "year": 2021,
+          "value": 98.82
+        },
+        {
+          "year": 2022,
+          "value": 99.94
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg9-hochqualifizierte-am-arbeitsort",
+      "title": "Hochqualifizierte am Arbeitsort (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 34.89,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 22.82,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 76.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten mit akademischen Berufsabschluss am Arbeitsort) / (Anzahl der sozialversicherungspflichtig Beschäftigten am Arbeitsort) * 100",
+      "statement": "Einen akademischen Berufsabschluss haben x % der sozialversicherungspflichtig Beschäftigten (SvB).",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 24.0
+        },
+        {
+          "year": 2015,
+          "value": 25.092
+        },
+        {
+          "year": 2016,
+          "value": 26.19
+        },
+        {
+          "year": 2017,
+          "value": 27.22
+        },
+        {
+          "year": 2018,
+          "value": 28.29
+        },
+        {
+          "year": 2019,
+          "value": 29.52
+        },
+        {
+          "year": 2020,
+          "value": 30.8
+        },
+        {
+          "year": 2021,
+          "value": 32.3
+        },
+        {
+          "year": 2022,
+          "value": 33.73
+        },
+        {
+          "year": 2023,
+          "value": 34.89
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg10-beschaeftigungsquote-auslaender-innen",
+      "title": "Beschäftigungsquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 93.26,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 84.25,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 56.9,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherungspflichtig Beschäftigten ohne deutsche Staatsbürgerschaft am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Beschäftigungsquote von Ausländer:innen zur Beschäftigungsquote in der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 80.39
+        },
+        {
+          "year": 2015,
+          "value": 81.66
+        },
+        {
+          "year": 2016,
+          "value": 84.056
+        },
+        {
+          "year": 2017,
+          "value": 85.093
+        },
+        {
+          "year": 2018,
+          "value": 87.89
+        },
+        {
+          "year": 2019,
+          "value": 89.81
+        },
+        {
+          "year": 2020,
+          "value": 90.41
+        },
+        {
+          "year": 2021,
+          "value": 91.73
+        },
+        {
+          "year": 2022,
+          "value": 91.31
+        },
+        {
+          "year": 2023,
+          "value": 93.26
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg10-schulabbrecherquote-auslaender-innen",
+      "title": "Schulabbrecherquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 187.32,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 273.3,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 59.8,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Schulabgänger:innen ohne deutsche Staatsbürgerschaft und ohne Hauptschulabschluss) / (Anzahl Schulabgänger:innen ohne deutsche Staatsbürgerschaft insgesamt)) / ((Anzahl Schulabgänger:innen ohne Hauptschulabschluss insgesamt) / (Anzahl Schulabgänger:innen insgesamt)) * 100",
+      "statement": "Das Verhältnis der Schulabbrecher:innenquote von Ausländer:innen zur Schulabbrecher:innenquote innerhalb der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 176.67
+        },
+        {
+          "year": 2015,
+          "value": 171.97
+        },
+        {
+          "year": 2016,
+          "value": 175.41
+        },
+        {
+          "year": 2017,
+          "value": 190.91
+        },
+        {
+          "year": 2018,
+          "value": 193.59
+        },
+        {
+          "year": 2019,
+          "value": 150.37
+        },
+        {
+          "year": 2020,
+          "value": 257.65
+        },
+        {
+          "year": 2021,
+          "value": 229.25
+        },
+        {
+          "year": 2022,
+          "value": 160.004
+        },
+        {
+          "year": 2023,
+          "value": 187.32
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg10-einbuergerungen",
+      "title": "Einbürgerungen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 1.067,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 1.26,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 37.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Einbürgerungen im jeweiligen Jahr) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft des Vorjahres) * 100",
+      "statement": "Ein Anteil von x Prozent der ausländischen Bevölkerung hat die deutsche Staatsbürgerschaft erhalten.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 1.66
+        },
+        {
+          "year": 2014,
+          "value": 1.49
+        },
+        {
+          "year": 2015,
+          "value": 1.31
+        },
+        {
+          "year": 2016,
+          "value": 1.19
+        },
+        {
+          "year": 2017,
+          "value": 1.069
+        },
+        {
+          "year": 2019,
+          "value": 1.32
+        },
+        {
+          "year": 2020,
+          "value": 1.21
+        },
+        {
+          "year": 2021,
+          "value": 0.96
+        },
+        {
+          "year": 2022,
+          "value": 1.3
+        },
+        {
+          "year": 2023,
+          "value": 1.067
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-mietpreise-m",
+      "title": "Mietpreise (€ / m²)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 14.15,
+      "year": 2022,
+      "unit": "€ / m²",
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "niedriger_ist_besser",
+      "score": 42.4,
+      "quality": "mittel",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung Hinweis: Rückwirkende Anpassung der Zeitreihe auf Durchschnittswerte ohne Klassifizierung.",
+      "calculation": "Durchschnittliche nettokalte Angebotsmiete je m²",
+      "statement": "Die durchschnittliche Nettokaltmiete beträgt x Euro je Quadratmeter",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 10.26
+        },
+        {
+          "year": 2014,
+          "value": 10.7
+        },
+        {
+          "year": 2015,
+          "value": 11.25
+        },
+        {
+          "year": 2016,
+          "value": 11.81
+        },
+        {
+          "year": 2017,
+          "value": 12.32
+        },
+        {
+          "year": 2018,
+          "value": 12.99
+        },
+        {
+          "year": 2019,
+          "value": 13.58
+        },
+        {
+          "year": 2020,
+          "value": 14.44
+        },
+        {
+          "year": 2021,
+          "value": 14.01
+        },
+        {
+          "year": 2022,
+          "value": 14.15
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-wohnflaeche-m-je-einwohner-in",
+      "title": "Wohnfläche (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 36.76,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 45.37,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 56.7,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Wohnfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Je Person stehen im Durchschnitt x Quadratmeter Wohnfläche zur Verfügung.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 36.94
+        },
+        {
+          "year": 2015,
+          "value": 36.61
+        },
+        {
+          "year": 2016,
+          "value": 36.88
+        },
+        {
+          "year": 2017,
+          "value": 36.88
+        },
+        {
+          "year": 2018,
+          "value": 37.012
+        },
+        {
+          "year": 2019,
+          "value": 36.12
+        },
+        {
+          "year": 2020,
+          "value": 36.49
+        },
+        {
+          "year": 2021,
+          "value": 37.95
+        },
+        {
+          "year": 2022,
+          "value": 37.48
+        },
+        {
+          "year": 2023,
+          "value": 36.76
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-wohnungsnahe-grundversorgung-supermarkt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Supermarkt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 339.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-pkw-dichte-pkw-je-1-000-einwohner-innen",
+      "title": "PKW-Dichte (PKW je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 448.11,
+      "year": 2023,
+      "unit": "PKW je 1.000 Einwohner:innen",
+      "stateAverage": 600.2,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 58.4,
+      "quality": "hoch",
+      "source": "Kraftfahrtbundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Personenkraftwagen) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Die PKW-Dichte liegt bei x PKW je 1.000 Einwohner:innen.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 438.84
+        },
+        {
+          "year": 2015,
+          "value": 435.55
+        },
+        {
+          "year": 2016,
+          "value": 439.31
+        },
+        {
+          "year": 2017,
+          "value": 441.033
+        },
+        {
+          "year": 2018,
+          "value": 443.22
+        },
+        {
+          "year": 2019,
+          "value": 440.69
+        },
+        {
+          "year": 2020,
+          "value": 445.35
+        },
+        {
+          "year": 2021,
+          "value": 451.028
+        },
+        {
+          "year": 2022,
+          "value": 444.46
+        },
+        {
+          "year": 2023,
+          "value": 448.11
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-pkw-mit-elektroantrieb",
+      "title": "PKW mit Elektroantrieb (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 3.82,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 2.49,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 76.7,
+      "quality": "hoch",
+      "source": "Kraftfahrtbundesamt Hinweis: Rückwirkende Neuberechnung der Zeitreihe: Der Indikator umfasst keine Plug-In-Hybride mehr.",
+      "calculation": "(Anzahl der zugelassenen Personenkraftwagen mit Elektroantrieb) / (Anzahl der zugelassenen Personenkraftwagen) * 100",
+      "statement": "Der Anteil zugelassener Personenkraftwagen mit Elektroantrieb an allen zugelassenen Personenkraftwagen liegt bei x %.",
+      "timeseries": [
+        {
+          "year": 2020,
+          "value": 0.38
+        },
+        {
+          "year": 2021,
+          "value": 0.67
+        },
+        {
+          "year": 2022,
+          "value": 1.93
+        },
+        {
+          "year": 2023,
+          "value": 3.82
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-verunglueckte-im-verkehr-verunglueckte-je-1-000-einwohner-innen",
+      "title": "Verunglückte im Verkehr (Verunglückte je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 4.5,
+      "year": 2023,
+      "unit": "Verunglückte je 1.000 Einwohner:innen",
+      "stateAverage": 3.96,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 48.2,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der verletzten oder getöteten Personen bei Verkehrsunfällen) / (Anzahl Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Personen in Verkehrsunfällen verletzt oder getötet.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 5.3
+        },
+        {
+          "year": 2015,
+          "value": 5.091
+        },
+        {
+          "year": 2016,
+          "value": 5.005
+        },
+        {
+          "year": 2017,
+          "value": 4.65
+        },
+        {
+          "year": 2018,
+          "value": 4.76
+        },
+        {
+          "year": 2019,
+          "value": 4.7
+        },
+        {
+          "year": 2020,
+          "value": 3.92
+        },
+        {
+          "year": 2021,
+          "value": 3.86
+        },
+        {
+          "year": 2022,
+          "value": 4.41
+        },
+        {
+          "year": 2023,
+          "value": 4.5
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-flaecheninanspruchnahme",
+      "title": "Flächeninanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 58.76,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 15.98,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Gesamtfläche) * 100",
+      "statement": "Der Anteil der Siedlungs- und Verkehrsfläche an der Gesamtfläche beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 58.25
+        },
+        {
+          "year": 2015,
+          "value": 58.28
+        },
+        {
+          "year": 2016,
+          "value": 58.4
+        },
+        {
+          "year": 2017,
+          "value": 58.46
+        },
+        {
+          "year": 2018,
+          "value": 58.51
+        },
+        {
+          "year": 2019,
+          "value": 58.54
+        },
+        {
+          "year": 2020,
+          "value": 58.5
+        },
+        {
+          "year": 2021,
+          "value": 58.6
+        },
+        {
+          "year": 2022,
+          "value": 58.74
+        },
+        {
+          "year": 2023,
+          "value": 58.76
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-flaechenneuinanspruchnahme",
+      "title": "Flächenneuinanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 0.02,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": -0.21,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 19.7,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Änderung der Siedlungs- und Verkehrsfläche im Vergleich zum Vorjahr) / (Gesamtfläche) * 100",
+      "statement": "Die prozentuale Änderungsrate von Siedlungs- und Verkehrsflächen beträgt im Vergleich zum Vorjahr x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.23
+        },
+        {
+          "year": 2015,
+          "value": 0.032
+        },
+        {
+          "year": 2016,
+          "value": 0.12
+        },
+        {
+          "year": 2017,
+          "value": 0.06
+        },
+        {
+          "year": 2018,
+          "value": 0.048
+        },
+        {
+          "year": 2019,
+          "value": 0.036
+        },
+        {
+          "year": 2020,
+          "value": -0.044
+        },
+        {
+          "year": 2021,
+          "value": 0.097
+        },
+        {
+          "year": 2022,
+          "value": 0.14
+        },
+        {
+          "year": 2023,
+          "value": 0.02
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-flaechennutzungsintensitaet-m-je-einwohner-in",
+      "title": "Flächennutzungsintensität (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 188.066,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 525.47,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 26.2,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "In der Kommune werden x Quadratmeter Siedlungs- und Verkehrsfläche pro Einwohner:in genutzt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 201.54
+        },
+        {
+          "year": 2015,
+          "value": 197.51
+        },
+        {
+          "year": 2016,
+          "value": 196.91
+        },
+        {
+          "year": 2017,
+          "value": 194.36
+        },
+        {
+          "year": 2018,
+          "value": 192.92
+        },
+        {
+          "year": 2019,
+          "value": 190.43
+        },
+        {
+          "year": 2020,
+          "value": 190.11
+        },
+        {
+          "year": 2021,
+          "value": 191.64
+        },
+        {
+          "year": 2022,
+          "value": 188.66
+        },
+        {
+          "year": 2023,
+          "value": 188.066
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-naherholungsflaechen-m-je-einwohner-in",
+      "title": "Naherholungsflächen (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 24.45,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 41.57,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 36.3,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Erholungsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Auf eine/n Einwohner:in kommen x m² Erholungsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 23.56
+        },
+        {
+          "year": 2015,
+          "value": 23.28
+        },
+        {
+          "year": 2016,
+          "value": 25.43
+        },
+        {
+          "year": 2017,
+          "value": 25.16
+        },
+        {
+          "year": 2018,
+          "value": 24.99
+        },
+        {
+          "year": 2019,
+          "value": 24.65
+        },
+        {
+          "year": 2020,
+          "value": 24.54
+        },
+        {
+          "year": 2021,
+          "value": 24.62
+        },
+        {
+          "year": 2022,
+          "value": 24.46
+        },
+        {
+          "year": 2023,
+          "value": 24.45
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg11-fertiggestellte-wohngebaeude-mit-erneuerbarer-heizenergie",
+      "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie (%)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 21.21,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 70.44,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 20.9,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der neu errichteten Wohngebäude mit erneuerbarer Heizenergie) / (Anzahl der neu errichteten Wohngebäude) * 100",
+      "statement": "Der Anteil fertiggestellter Wohngebäude mit erneuerbarer Heizenergie an neu errichteten Wohngebäuden beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 27.61
+        },
+        {
+          "year": 2015,
+          "value": 18.52
+        },
+        {
+          "year": 2016,
+          "value": 21.69
+        },
+        {
+          "year": 2017,
+          "value": 14.9
+        },
+        {
+          "year": 2018,
+          "value": 26.69
+        },
+        {
+          "year": 2019,
+          "value": 20.73
+        },
+        {
+          "year": 2020,
+          "value": 15.89
+        },
+        {
+          "year": 2021,
+          "value": 16.2
+        },
+        {
+          "year": 2022,
+          "value": 38.7
+        },
+        {
+          "year": 2023,
+          "value": 21.21
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg12-trinkwasserverbrauch-private-haushalte-liter-je-einwohner-in-und-tag",
+      "title": "Trinkwasserverbrauch - Private Haushalte (Liter je Einwohner:in und Tag)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": 152.72,
+      "year": 2023,
+      "unit": "Liter je Einwohner:in und Tag",
+      "stateAverage": 124.13,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 44.2,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Jährlicher Trinkwasserverbrauch (Haushalte und Kleingewerbe)) / ((Anzahl der Einwohner:innen) * (Anzahl der Tage pro Jahr))",
+      "statement": "Je Einwohner:in und Tag wurden durchschnittlich x Liter Wasser verbraucht.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 172.3
+        },
+        {
+          "year": 2015,
+          "value": 168.75
+        },
+        {
+          "year": 2016,
+          "value": 172.95
+        },
+        {
+          "year": 2017,
+          "value": 171.0
+        },
+        {
+          "year": 2018,
+          "value": 169.6
+        },
+        {
+          "year": 2019,
+          "value": 157.72
+        },
+        {
+          "year": 2020,
+          "value": 157.14
+        },
+        {
+          "year": 2021,
+          "value": 158.58
+        },
+        {
+          "year": 2022,
+          "value": 153.26
+        },
+        {
+          "year": 2023,
+          "value": 152.72
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg12-abfallmenge-t-je-einwohner-in",
+      "title": "Abfallmenge (t je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": 0.34,
+      "year": 2022,
+      "unit": "t je Einwohner:in",
+      "stateAverage": 0.41,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 59.0,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Aufkommen an Haushaltsabfällen (ohne Elektroaltgeräte)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die entsorgte Menge an Haushaltsabfällen beträgt x Tonnen je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.4
+        },
+        {
+          "year": 2014,
+          "value": 0.4
+        },
+        {
+          "year": 2015,
+          "value": 0.38
+        },
+        {
+          "year": 2016,
+          "value": 0.39
+        },
+        {
+          "year": 2017,
+          "value": 0.38
+        },
+        {
+          "year": 2018,
+          "value": 0.37
+        },
+        {
+          "year": 2019,
+          "value": 0.37
+        },
+        {
+          "year": 2020,
+          "value": 0.38
+        },
+        {
+          "year": 2021,
+          "value": 0.37
+        },
+        {
+          "year": 2022,
+          "value": 0.34
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg13-siedlungslast-im-ueberschwemmungsgebiet",
+      "title": "Siedlungslast im Überschwemmungsgebiet (%)",
+      "dimension": "Planet",
+      "sdg": 13,
+      "sdgTitle": "Maßnahmen zum Klimaschutz",
+      "value": 14.7,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 7.0,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 11.5,
+      "quality": "hoch",
+      "source": "Leibniz-Institut für Ökologische Raumentwicklung, jeweils zuständige Landesbehörden",
+      "calculation": "(Baulich geprägte Siedlungs- und Verkehrsfläche im amtlich festgesetzten Überschwemmungsgebiet) / (Fläche des festgesetzten Überschwemmungsgebietes in der Gebietseinheit) * 100",
+      "statement": "Ein Anteil von x % der Fläche des festgesetzten Überschwemmungsgebietes in der Kommune ist baulich geprägte Siedlungs- und Verkehrsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 14.7
+        },
+        {
+          "year": 2015,
+          "value": 15.0
+        },
+        {
+          "year": 2016,
+          "value": 14.7
+        },
+        {
+          "year": 2017,
+          "value": 14.6
+        },
+        {
+          "year": 2018,
+          "value": 14.6
+        },
+        {
+          "year": 2019,
+          "value": 14.4
+        },
+        {
+          "year": 2020,
+          "value": 14.8
+        },
+        {
+          "year": 2021,
+          "value": 14.9
+        },
+        {
+          "year": 2022,
+          "value": 14.7
+        },
+        {
+          "year": 2023,
+          "value": 14.7
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg14-fliessgewaesserqualitaet",
+      "title": "Fließgewässerqualität (%)",
+      "dimension": "Planet",
+      "sdg": 14,
+      "sdgTitle": "Leben unter Wasser",
+      "value": 2.85,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesanstalt für Gewässerkunde (BfG), Bundesamt für Kartographie und Geodäsie",
+      "calculation": "(Länge der Fließgewässer mit einer ökologischen Zustandsbewertung „sehr gut“ oder „gut“) / (Länge der Fließgewässer in der Gebietseinheit) * 100",
+      "statement": "Der Zustand von x % der Länge von Fließgewässern an der Gesamtfließgewässerlänge ist mit mindestens „gut“ bewertet.",
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg15-naturschutzflaechen",
+      "title": "Naturschutzflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 5.5,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 21.3,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 24.4,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "(Fläche Natura 2000-Gebiete, Naturschutzgebiete und Nationalparke) / (Gesamtfläche) * 100",
+      "statement": "Natura 2000-Gebiete, Naturschutzgebiete oder Nationalparks sind auf x % der Gesamtfläche der Kommune ausgewiesen.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 5.4
+        },
+        {
+          "year": 2014,
+          "value": 5.4
+        },
+        {
+          "year": 2015,
+          "value": 5.5
+        },
+        {
+          "year": 2016,
+          "value": 5.5
+        },
+        {
+          "year": 2017,
+          "value": 5.5
+        },
+        {
+          "year": 2018,
+          "value": 5.5
+        },
+        {
+          "year": 2019,
+          "value": 5.5
+        },
+        {
+          "year": 2022,
+          "value": 5.5
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg15-landschaftsqualitaet-hemerobiewert",
+      "title": "Landschaftsqualität (Hemerobiewert)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 5.16,
+      "year": 2021,
+      "unit": "Hemerobiewert",
+      "stateAverage": 3.89,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 61.8,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "Flächengewichteter Mittelwert der Hemerobiestufen 1 \"ahemerob\" (nicht kulturbeeinflusst) bis 7 \"metahemerob\" (übermäßig stark kulturbeeinflusst / Biozönose zerstört) je Gebietseinheit",
+      "statement": "Das Maß des menschlichen Eingriffes auf den Naturhaushalt der Kommune wird mit Stufe x des Hemerobieindex bewertet.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 5.07
+        },
+        {
+          "year": 2018,
+          "value": 5.15
+        },
+        {
+          "year": 2021,
+          "value": 5.16
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg15-unzerschnittene-freiraumflaechen",
+      "title": "Unzerschnittene Freiraumflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundesamt für Kartographie und Geodäsie, Leibniz-Institut für ökologische Raumentwicklung",
+      "calculation": "(Freiraumflächen (außerhalb Ortslagen) > 50 km², die nicht durch Trassen des überörtlichen Verkehrsnetzes zerschnitten sind) / (Gesamtfläche) * 100",
+      "statement": "Ein Anteil von x % der Freiraumflächen sind unzerschnitten durch Trassen des überörtlichen Verkehrsnetzes.",
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg16-straftaten-straftaten-je-1-000-einwohner-innen",
+      "title": "Straftaten (Straftaten je 1.000 Einwohner:innen)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 141.057,
+      "year": 2022,
+      "unit": "Straftaten je 1.000 Einwohner:innen",
+      "stateAverage": 61.91,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 7.9,
+      "quality": "mittel",
+      "source": "Bundeskriminalamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der polizeilich bekanntgewordenen Straftaten) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es sind x Straftaten je 1.000 Einwohner:innen polizeilich bekannt.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 162.096
+        },
+        {
+          "year": 2016,
+          "value": 155.92
+        },
+        {
+          "year": 2017,
+          "value": 146.55
+        },
+        {
+          "year": 2018,
+          "value": 156.32
+        },
+        {
+          "year": 2020,
+          "value": 134.66
+        },
+        {
+          "year": 2022,
+          "value": 141.057
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg16-finanzmittelsaldo-je-einwohner-in",
+      "title": "Finanzmittelsaldo (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 238.0,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": -130.0,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 100.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Primärsaldo) + (Finanzsaldo) + (Investitionssaldo)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune konnte ihre gesamten Aufgaben mit einem Überschuss / Defizit in Höhe von x Euro je Einwohner:in abschließen.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 292.0
+        },
+        {
+          "year": 2015,
+          "value": 93.0
+        },
+        {
+          "year": 2016,
+          "value": -60.0
+        },
+        {
+          "year": 2017,
+          "value": -276.0
+        },
+        {
+          "year": 2018,
+          "value": 4.0
+        },
+        {
+          "year": 2019,
+          "value": -224.0
+        },
+        {
+          "year": 2020,
+          "value": -263.0
+        },
+        {
+          "year": 2021,
+          "value": -12.0
+        },
+        {
+          "year": 2022,
+          "value": 235.0
+        },
+        {
+          "year": 2023,
+          "value": 238.0
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg16-steuereinnahmen-je-einwohner-in",
+      "title": "Steuereinnahmen (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 4113.48,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 1910.93,
+      "stateAverageLabel": "Hessen",
+      "direction": "hoeher_ist_besser",
+      "score": 97.7,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Steuereinnahmen (= Grundsteuer A + Grundsteuer B + Gewerbesteuer + Gemeindeanteil an Einkommensteuer + Gemeindeanteil an Umsatzsteuer) gemittelt über die letzten 4 Jahre) / (Anzahl der Einwohner:innen gemittelt über die letzten 4 Jahre)",
+      "statement": "Die über die letzten 4 Jahre gemittelten Steuereinnahmen einer Kommune betragen im Durchschnitt x Euro je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 3006.3
+        },
+        {
+          "year": 2015,
+          "value": 3199.084
+        },
+        {
+          "year": 2016,
+          "value": 3311.64
+        },
+        {
+          "year": 2017,
+          "value": 3435.85
+        },
+        {
+          "year": 2018,
+          "value": 3518.28
+        },
+        {
+          "year": 2019,
+          "value": 3620.87
+        },
+        {
+          "year": 2020,
+          "value": 3534.22
+        },
+        {
+          "year": 2021,
+          "value": 3682.13
+        },
+        {
+          "year": 2022,
+          "value": 3894.16
+        },
+        {
+          "year": 2023,
+          "value": 4113.48
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg16-liquiditaetskredite-je-einwohner-in",
+      "title": "Liquiditätskredite (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 52.0,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 13.0,
+      "stateAverageLabel": "Hessen",
+      "direction": "niedriger_ist_besser",
+      "score": 0.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Liquiditäts-/Kassenkredite im Kernhaushalt) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune hat im Kernhaushalt Liquiditätskredite in Höhe von x Euro je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 81.0
+        },
+        {
+          "year": 2015,
+          "value": 114.0
+        },
+        {
+          "year": 2016,
+          "value": 44.0
+        },
+        {
+          "year": 2017,
+          "value": 53.0
+        },
+        {
+          "year": 2018,
+          "value": 191.0
+        },
+        {
+          "year": 2019,
+          "value": 127.0
+        },
+        {
+          "year": 2020,
+          "value": 389.0
+        },
+        {
+          "year": 2021,
+          "value": 197.0
+        },
+        {
+          "year": 2022,
+          "value": 119.0
+        },
+        {
+          "year": 2023,
+          "value": 52.0
+        }
+      ],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    },
+    {
+      "id": "sdg17-fuer-dieses-ziel-liegen-derzeit-keine-indikatorendaten-vor",
+      "title": "Für dieses Ziel liegen derzeit keine Indikatorendaten vor.",
+      "dimension": "Demokratie",
+      "sdg": 17,
+      "sdgTitle": "Partnerschaften zur Erreichung der Ziele",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": null,
+      "calculation": null,
+      "statement": null,
+      "timeseries": [],
+      "portalTitle": "Frankfurt am Main, Stadt"
+    }
+  ]
+}
