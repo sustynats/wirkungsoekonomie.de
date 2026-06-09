@@ -609,7 +609,7 @@
     </header>
 
     <main data-pagefind-body>
-      <section class="section kwi-beta-shell" data-kwi-beta data-generic-tool-explanation-ready="true" data-manifest="../../assets/data/kwi/municipalities.json" data-base="../../assets/data/kwi/" data-live-api="/api/kwi">
+      <section class="section kwi-beta-shell" data-kwi-beta data-generic-tool-explanation-ready="true" data-manifest="../../assets/data/kwi/municipalities.json" data-base="../../assets/data/kwi/" data-live-api="https://akademie.wirkungsoekonomie.de/api/kwi">
         <div class="section-header">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Erleben</a></nav>
           <p class="hero-kicker">Beta-Tool · KWI 1.0</p>
@@ -670,7 +670,7 @@
           </div>
           <div class="kwi-progress-track" aria-hidden="true"><span class="kwi-progress-bar"></span></div>
         </div>
-        <p class="kwi-live-note"><strong>Beta-Hinweis:</strong> Die Eingabe sucht zuerst in vorhandenen Snapshots und versucht danach den Live-Endpunkt <code>/api/kwi</code>. Auf GitHub Pages braucht dieser Live-Endpunkt einen zusätzlichen Serverless-Host; bis zur Aktivierung funktionieren die Kommunen im Dropdown sofort.</p>
+        <p class="kwi-live-note"><strong>Beta-Hinweis:</strong> Die Eingabe sucht zuerst in vorhandenen Snapshots und ruft danach den Live-Endpunkt der Akademie-App auf. Während der Berechnung zeigt die Seite eine Statusmeldung; vorhandene Kommunen im Dropdown laden sofort.</p>
         <div class="button-row">
           <a class="btn btn-secondary" href="../../fuer/kommunen/kommunaler-wirkungsindex.html">Methodik und Datenkonzept</a>
           <a class="btn btn-secondary" href="../../bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/">Dossier lesen</a>
@@ -793,7 +793,7 @@
           <article class="card">
             <p class="card-kicker">Datenbasis</p>
             <h2 class="card-title" id="kwi-method-title">Öffentliche Beta mit Live-Pfad</h2>
-            <p>Die öffentliche Beta lädt vorhandene JSON-Snapshots direkt und ruft für freie Eingaben den vorbereiteten Live-Endpunkt auf. Damit beliebige Kommunen öffentlich funktionieren, muss <code>/api/kwi</code> auf einem Serverless- oder Backend-Host ausgeführt werden.</p>
+            <p>Die öffentliche Beta lädt vorhandene JSON-Snapshots direkt und ruft für freie Eingaben den Live-Endpunkt <code>https://akademie.wirkungsoekonomie.de/api/kwi</code> auf. Der Endpunkt sucht die Kommune im SDG-Portal, erzeugt serverseitig einen Snapshot und gibt ihn gecacht an die Seite zurück.</p>
           </article>
           <article class="card">
             <p class="card-kicker">Scorelogik</p>

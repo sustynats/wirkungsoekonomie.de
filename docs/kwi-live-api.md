@@ -4,14 +4,14 @@ Stand: 2026-06-09
 
 ## Ziel
 
-Die KWI-Demo soll jede im SDG-Bereich verfügbare Kommune annehmen können. Die öffentliche Seite bleibt statisch-first. Das Frontend akzeptiert freie Eingaben, lädt vorhandene Snapshots sofort und versucht für unbekannte Kommunen den Live-Endpunkt `/api/kwi`. In der aktuellen GitHub-Pages-Beta sind nur vorbereitete Snapshots aktiv, solange `/api/kwi` nicht auf einem separaten Backend- oder Serverless-Host ausgeführt und auf die öffentliche Domain geroutet wird.
+Die KWI-Demo soll jede im SDG-Bereich verfügbare Kommune annehmen können. Die öffentliche Seite bleibt statisch-first. Das Frontend akzeptiert freie Eingaben, lädt vorhandene Snapshots sofort und ruft für unbekannte Kommunen den Live-Endpunkt `https://akademie.wirkungsoekonomie.de/api/kwi` auf.
 
 ## Datenfluss
 
 1. Nutzer:in gibt eine Kommune ein.
 2. Frontend sucht zuerst im lokalen Manifest `assets/data/kwi/municipalities.json`.
-3. Wenn kein Snapshot vorhanden ist, zeigt das Frontend einen Ladezustand und ruft `/api/kwi?q=<kommune>` auf.
-4. Die API nutzt `tools/kwi_collect.py`, sucht die Kommune im SDG-Portal, zieht die öffentliche Indikatorseite und berechnet einen KWI-Snapshot.
+3. Wenn kein Snapshot vorhanden ist, zeigt das Frontend einen Ladezustand und ruft `https://akademie.wirkungsoekonomie.de/api/kwi?q=<kommune>` auf.
+4. Die API läuft in der Akademie-App, sucht die Kommune im SDG-Portal, zieht die öffentliche Indikatorseite und berechnet einen KWI-Snapshot.
 5. Die API liefert denselben JSON-Aufbau wie die lokalen Snapshot-Dateien.
 6. Der Snapshot sollte im Deploy oder am Edge gecacht werden.
 
@@ -20,7 +20,7 @@ Die KWI-Demo soll jede im SDG-Bereich verfügbare Kommune annehmen können. Die 
 - Freie Eingabe: Nutzer:innen können jede Kommune eingeben.
 - Snapshot-Dropdown: Kommunen aus `municipalities.json` werden als Sofortauswahl angeboten.
 - Ladezustand: Während Snapshot- oder Live-Abruf läuft, zeigt die Seite eine Statusmeldung und einen Fortschrittsindikator.
-- Fallback: Wenn `/api/kwi` nicht erreichbar ist, bleibt die Seite bedienbar und verweist auf die vorhandenen Snapshots im Dropdown.
+- Fallback: Wenn der Live-Endpunkt nicht erreichbar ist, bleibt die Seite bedienbar und verweist auf die vorhandenen Snapshots im Dropdown.
 
 ## Lokaler Snapshot
 
@@ -43,7 +43,7 @@ Ohne `--append` wird das Manifest aus den angegebenen Kommunen neu aufgebaut. Mi
 Pfad:
 
 ```text
-GET /api/kwi?q=Bielefeld
+GET https://akademie.wirkungsoekonomie.de/api/kwi?q=Bielefeld
 ```
 
 Antwort:
