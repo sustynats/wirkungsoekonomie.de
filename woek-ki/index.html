@@ -654,12 +654,11 @@
             sourceCount.textContent = String(localSources.length);
             renderSources(localSources);
           }
-          const contextualQuestion = buildContextualQuestion(value, localSources);
           const response = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              question: contextualQuestion,
+              question: value,
               originalQuestion: value,
               contextSources: localSources,
             }),
