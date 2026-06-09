@@ -131,6 +131,24 @@
     return name === "Demokratie" ? "Demokratie (SDG+ Proxy)" : name;
   }
 
+  function democracyIndicators(snapshot) {
+    return (snapshot.indicators || []).filter((item) => item.dimension === "Demokratie");
+  }
+
+  function democracyIndicatorCount(snapshot) {
+    const summaryCount = snapshot.summary?.dimensions?.Demokratie?.indicatorCount;
+    return Number.isFinite(Number(summaryCount)) ? Number(summaryCount) : democracyIndicators(snapshot).length;
+  }
+
+  function democracyDataIncomplete(snapshot) {
+    return democracyIndicatorCount(snapshot) < 8;
+  }
+
+  function democracyIncompleteNotice(snapshot) {
+    if (!democracyDataIncomplete(snapshot)) return "";
+    return "Demokratie-Datenlage unvollständig: Für eine belastbarere Einordnung fehlen u. a. Wahlbeteiligung, Beteiligungswirksamkeit, Transparenz, Rechtszugang, Medienvielfalt, Zivilgesellschaft und Vertrauensdaten.";
+  }
+
   function clip(value, min, max) {
     return Math.max(min, Math.min(max, value));
   }
@@ -259,20 +277,31 @@
     return delta < 0 ? "Rückgang" : "Anstieg";
   }
 
-  function renderOutlierSentences(outliers) {
+  function outlierDimensionLabel(outlier) {
+    if (outlier.dimension !== "Demokratie") return `in <strong>${dimensionName(outlier.dimension)}</strong>`;
+    return `im aktuellen <strong>SDG+ Demokratie-Proxy</strong>`;
+  }
+
+  function renderOutlierSentences(outliers, snapshot) {
     if (!outliers.length) return "";
     const sentences = outliers.slice(0, 2).map((outlier) => {
       const contributorText = outlier.contributors.length
-        ? ` Im Modell wird dieser Ausschlag vor allem durch ${outlier.contributors.map((item) => `${item.title} (${item.change > 0 ? "+" : ""}${scoreText(item.change)} Punkte)`).join(", ")} getragen.`
+        ? ` Rechnerisch wird dieser Ausschlag vor allem durch ${outlier.contributors.map((item) => `${item.title} (${item.change > 0 ? "+" : ""}${scoreText(item.change)} Punkte)`).join(", ")} getragen.`
         : " Aus dem Snapshot lässt sich noch kein einzelner rechnerischer Treiber sauber isolieren; hier braucht es kommunale Ereignis-, Beteiligungs- oder Kontextdaten.";
       const coverageTextPart = outlier.countChange
         ? ` Die Datenabdeckung hat sich dabei um ${outlier.countChange > 0 ? "+" : ""}${outlier.countChange} Werte verändert.`
         : "";
-      return `Auffällig ist ein ${outlierDirection(outlier.delta)} in <strong>${dimensionName(outlier.dimension)}</strong> ${outlier.year} gegenüber ${outlier.previousYear} um ${scoreText(Math.abs(outlier.delta))} Punkte, von ${scoreText(outlier.previousValue)} auf ${scoreText(outlier.currentValue)}.${contributorText}${coverageTextPart}`;
+      const democracyCaution = outlier.dimension === "Demokratie"
+        ? " Dieser Ausschlag bedeutet nicht, dass die demokratische Qualität der Kommune kausal in gleicher Höhe verändert wurde."
+        : "";
+      return `Auffällig ist ein ${outlierDirection(outlier.delta)} ${outlierDimensionLabel(outlier)} ${outlier.year} gegenüber ${outlier.previousYear} um ${scoreText(Math.abs(outlier.delta))} Punkte, von ${scoreText(outlier.previousValue)} auf ${scoreText(outlier.currentValue)}.${democracyCaution}${contributorText}${coverageTextPart}`;
     }).join(" ");
+    const democracyOutlier = outliers.some((outlier) => outlier.dimension === "Demokratie");
+    const incompleteNotice = democracyOutlier ? democracyIncompleteNotice(snapshot) : "";
     return `
       <p>${sentences}</p>
       <p>Diese Einordnung ist keine kausale Erklärung. Sie benennt rechnerische Treiber im vorhandenen Datenstand und markiert, wo Verwaltung, Rat und Öffentlichkeit genauer nachfragen sollten.</p>
+      ${incompleteNotice ? `<p>${incompleteNotice}</p>` : ""}
     `;
   }
 
@@ -509,7 +538,7 @@
       const score = item.score ?? 0;
       const proxyBadge = name === "Demokratie" ? '<span class="kwi-proxy-badge">SDG+ Proxy</span>' : "";
       const dimensionNote = name === "Demokratie"
-        ? '<p class="kwi-dimension-note">Noch keine vollständige SDG+-Demokratiewertung. Aktuell nur verfügbare Proxy-Indikatoren.</p>'
+        ? `<p class="kwi-dimension-note"><strong>Hinweis zur Demokratie-Dimension:</strong> Dieser Wert ist derzeit ein Proxy. Starke Ausschläge können durch wenige verfügbare Finanz- oder Sicherheitsindikatoren entstehen. Er ist keine vollständige Demokratiebewertung.</p>${democracyDataIncomplete(snapshot) ? `<p class="kwi-dimension-note">${democracyIncompleteNotice(snapshot)}</p>` : ""}`
         : "";
       return `
         <article class="kwi-dimension">
@@ -552,6 +581,7 @@
       ${renderDemocracyConcept()}
       ${renderInterpretation(snapshot, history, gaps, strengths)}
       <section class="kwi-signal-grid">
+        ${renderSignalContext(snapshot, history)}
         <div>
           <h3>Größte Wirkungslücken</h3>
           ${renderSignalList(gaps)}
@@ -645,7 +675,12 @@
         <div>
           <p class="card-kicker">SDG+ Demokratie</p>
           <h3 id="kwi-democracy-concept-title">Demokratie braucht eine eigene Datenlogik.</h3>
-          <p>Das SDG-Portal liefert für Demokratie bereits einzelne SDG-16-Signale, etwa Straftaten und kommunale Finanzindikatoren. Im Beta-Profil werden diese Werte als Proxy gelesen. Für eine belastbare SDG+-Dimension braucht der KWI zusätzlich Wahl-, Rechtsstaats-, Transparenz-, Medien-, Zivilgesellschafts- und Vertrauensdaten.</p>
+          <p>Die Demokratie-Dimension ist in dieser Beta noch kein vollständiger SDG+-Index. Sie nutzt derzeit verfügbare Proxy-Indikatoren. Starke Ausschläge können durch wenige Finanz- oder Sicherheitswerte entstehen und sind keine vollständige Demokratiebewertung.</p>
+          <article class="kwi-explain-box">
+            <p class="card-kicker">Erklärbox</p>
+            <h4>Warum Finanzdaten im Demokratie-Proxy auftauchen</h4>
+            <p>Kommunale Demokratie braucht Handlungsspielraum. Wenn Liquiditätskredite steigen oder der Finanzmittelsaldo stark sinkt, kann das die institutionelle Handlungsfähigkeit einer Kommune einschränken. Diese Werte messen keine Demokratie im engen Sinn, sondern finanzielle Voraussetzungen demokratischer Gestaltung.</p>
+          </article>
         </div>
         <ul class="kwi-concept-list">
           ${DEMOCRACY_DATA_CONCEPT.slice(0, 4).map((item) => `<li>${item}</li>`).join("")}
@@ -678,20 +713,39 @@
           <p class="card-kicker">Auswertung</p>
           <h3 id="kwi-interpretation-title">Interpretation für ${snapshot.municipality.name}</h3>
           <p>${strongest && weakest ? `Das Profil zeigt die stärkste Ausgangslage derzeit in <strong>${dimensionName(strongest[0])}</strong> (${scoreText(strongest[1].score)}) und den größten Zielabstand in <strong>${dimensionName(weakest[0])}</strong> (${scoreText(weakest[1].score)}).` : "Für diese Kommune liegen noch nicht genug Dimensionswerte für eine belastbare Kurzinterpretation vor."} ${weakest ? `Der Verlauf der schwächsten Dimension ist ${trendLabel(weakDelta)}.` : ""}</p>
-          ${renderOutlierSentences(outliers)}
+          ${renderOutlierSentences(outliers, snapshot)}
           <p>Die politische Frage ist deshalb nicht, ob eine Kommune gut oder schlecht ist. Entscheidend ist, welche Maßnahmen mehrere Wirkungsräume gleichzeitig stärken: soziale Stabilität, ökologische Tragfähigkeit und demokratische Handlungsfähigkeit.</p>
-          <p>Die Dimension Demokratie ist in diesem Stand noch kein vollständiger SDG+-Index. Sie zeigt nur erste Proxy-Signale; Wahl-, Beteiligungs-, Transparenz-, Vertrauens- und Zivilgesellschaftsdaten müssen konzeptionell ergänzt werden.</p>
+          <p>Die Dimension Demokratie ist in diesem Stand noch kein vollständiger SDG+-Index. Sie zeigt nur erste Proxy-Signale; Wahl-, Beteiligungs-, Transparenz-, Rechtszugangs-, Medienvielfalts-, Vertrauens- und Zivilgesellschaftsdaten müssen konzeptionell ergänzt werden.</p>
+          ${democracyDataIncomplete(snapshot) ? `<p>${democracyIncompleteNotice(snapshot)}</p>` : ""}
           <p>${gapNames ? `Auffällige Prüfstellen sind im aktuellen Snapshot vor allem: ${gapNames}.` : "Der Snapshot zeigt keine klar priorisierbaren Prüfpunkte."} ${strengthNames ? `Stärkere Ausgangslagen zeigen sich unter anderem bei: ${strengthNames}.` : ""}</p>
         </div>
         <aside class="kwi-interpretation-meta" aria-label="Einordnung und Grenzen">
           <span><strong>Methodik</strong>${snapshot.method.name}</span>
           <span><strong>Datenabdeckung</strong>${coverage}</span>
           <span><strong>Niedrige Datenqualität</strong>${lowQuality} Indikatoren</span>
-          <span><strong>Demokratie</strong>SDG+-Konzeptbereich, aktuell nur Proxywerte.</span>
+          <span><strong>Demokratie</strong>SDG+-Konzeptbereich, aktuell nur Proxywerte; keine vollständige Demokratiebewertung.</span>
           <span><strong>Schutzlinie</strong>Kein Ranking, keine amtliche Bewertung, keine automatische Entscheidung.</span>
           <p>${totalScoreSentence}</p>
         </aside>
       </section>
+    `;
+  }
+
+  function renderSignalContext(snapshot, history) {
+    const democracyOutliers = detectDimensionOutliers(snapshot, history).filter((item) => item.dimension === "Demokratie");
+    if (!democracyOutliers.length) return "";
+    const outlier = democracyOutliers[0];
+    const contributors = outlier.contributors.length
+      ? outlier.contributors.map((item) => `${item.title} (${item.change > 0 ? "+" : ""}${scoreText(item.change)} Punkte)`).join(", ")
+      : "keine einzelnen Indikatoren eindeutig isolierbar";
+    return `
+      <article class="kwi-signal-context">
+        <p class="card-kicker">Status, Trend, Treiber</p>
+        <h3>Auffälliger Knick im Demokratie-Proxy</h3>
+        <p><strong>Aktueller Status:</strong> Die Listen unten zeigen den aktuellen Snapshot und keine abschließende Bewertung der Kommune.</p>
+        <p><strong>Auffällige Veränderung:</strong> Im Jahr ${outlier.year} zeigt der aktuelle SDG+ Demokratie-Proxy gegenüber ${outlier.previousYear} einen rechnerischen ${outlierDirection(outlier.delta).toLowerCase()} um ${scoreText(Math.abs(outlier.delta))} Punkte.</p>
+        <p><strong>Rechnerischer Treiber:</strong> ${contributors}. Das ist eine Modellspur für die Prüfung, keine Aussage über eine gesellschaftliche Ursache.</p>
+      </article>
     `;
   }
 
