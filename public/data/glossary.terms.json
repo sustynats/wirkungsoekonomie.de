@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T09:54:42.957Z",
+  "generatedAt": "2026-06-09T10:47:21.775Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -14247,6 +14247,83 @@
       "glossaryOrderKey": "Aufmerksamkeitsökonomie",
       "dataStandardsGroup": "",
       "priority": 45
+    },
+    {
+      "id": "aufwaertswettbewerb",
+      "termId": "aufwaertswettbewerb",
+      "canonicalLabel": "Aufwärtswettbewerb",
+      "label": "Aufwärtswettbewerb",
+      "slug": "aufwaertswettbewerb",
+      "status": "woek-praegungsbegriff",
+      "type": "WÖk-Prägungsbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: Nicht billiger werden. Besser werden.",
+      "sourceDocument": "blog/nicht-billiger-werden-besser-werden/",
+      "sourceSection": "Arbeit & Einkommen",
+      "shortDefinition": "Aufwärtswettbewerb bezeichnet eine Wettbewerbsstrategie, die nicht über niedrigere Löhne und Standards gewinnt, sondern über höhere Produktivität, bessere Systeme, Innovation, Infrastruktur und positive Netto-Wirkung.",
+      "hoverDefinition": "Aufwärtswettbewerb heißt: nicht billiger werden, sondern Arbeitsstunden, Systeme und Wertschöpfung wirksamer machen.",
+      "definition": "Aufwärtswettbewerb bezeichnet eine Wettbewerbsstrategie, die nicht über niedrigere Löhne und Standards gewinnt, sondern über höhere Produktivität, bessere Systeme, Innovation, Infrastruktur und positive Netto-Wirkung.",
+      "longDefinition": "In der Wirkungsökonomie ist Aufwärtswettbewerb die Alternative zum Wettlauf nach unten. Eine Volkswirtschaft verteidigt Wohlstand nicht durch Lohnsenkung, Standardabbau oder Risikoauslagerung, sondern durch Qualifikation, Kapitalstock, Digitalisierung, Infrastruktur, Energie- und Ressourceneffizienz, Forschung, gute Verwaltung und tragfähige soziale Sicherung.",
+      "woekRelation": "Der Begriff verbindet Wettbewerbsfähigkeit mit Wirkungslogik: Entscheidend ist nicht nur, was Arbeit kostet, sondern was sie im Zusammenspiel mit Systembedingungen für Mensch, Planet und Demokratie bewirkt.",
+      "usageNote": "Nicht als Schönfärbung hoher Kosten verwenden. Der Begriff verlangt reale Produktivität, tragfähige Wertschöpfung und reduzierte Reibungsverluste.",
+      "doNotConfuseWith": [
+        "Niedriglohnstrategie",
+        "Standortmarketing",
+        "bloße Produktivitätserzählung"
+      ],
+      "synonyms": [
+        "Aufwärtswettbewerb",
+        "Wettbewerb nach oben",
+        "Aufwaertswettbewerb",
+        "High-road strategy",
+        "wertschöpfungsorientierter Wettbewerb"
+      ],
+      "aliases": [
+        "Aufwärtswettbewerb",
+        "Wettbewerb nach oben",
+        "Aufwaertswettbewerb",
+        "High-road strategy",
+        "wertschöpfungsorientierter Wettbewerb"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsdaten",
+        "wirksame-arbeit",
+        "automatisierung",
+        "maschinenleistung",
+        "wirkungseinkommen"
+      ],
+      "relatedDocuments": [
+        "blog/nicht-billiger-werden-besser-werden/",
+        "wirkungsfelder/arbeit-einkommen/",
+        "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/"
+      ],
+      "examples": [
+        "Investitionen in Weiterbildung und Automatisierung erhöhen Wertschöpfung pro Stunde statt Löhne zu drücken.",
+        "Schnellere Genehmigungen, bessere Netze und gute Energieversorgung senken Reibung, ohne Einkommen zu senken."
+      ],
+      "preferredUsage": "Aufwärtswettbewerb als strategische Alternative zur Niedriglohnlogik beschreiben.",
+      "deprecatedUsage": [
+        "Aufwärtswettbewerb als bloßen Appell ohne Produktivitäts- und Investitionsbasis verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "aufwärtswettbewerb",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "Arbeit, Einkommen und Wertschöpfung",
+      "categories": [
+        "arbeit-einkommen",
+        "wirtschaft",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/aufwaertswettbewerb/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1475,
+      "officialSources": []
     },
     {
       "id": "aeussere-loops",
@@ -174997,6 +175074,80 @@
       "deprecatedUsage": []
     },
     {
+      "id": "lohnstueckkosten",
+      "termId": "lohnstueckkosten",
+      "canonicalLabel": "Lohnstückkosten",
+      "label": "Lohnstückkosten",
+      "slug": "lohnstueckkosten",
+      "status": "kontextbegriff",
+      "type": "Kontextbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: Nicht billiger werden. Besser werden.",
+      "sourceDocument": "blog/nicht-billiger-werden-besser-werden/",
+      "sourceSection": "Arbeit & Einkommen",
+      "shortDefinition": "Lohnstückkosten messen Arbeitskosten im Verhältnis zur erzeugten Leistung und zeigen damit, ob hohe Löhne durch Produktivität und Wertschöpfung getragen werden.",
+      "hoverDefinition": "Lohnstückkosten verbinden Arbeitskosten mit Output: Nicht der Lohn allein zählt, sondern Kosten je erzeugter Leistung.",
+      "definition": "Lohnstückkosten messen Arbeitskosten im Verhältnis zur erzeugten Leistung und zeigen damit, ob hohe Löhne durch Produktivität und Wertschöpfung getragen werden.",
+      "longDefinition": "Lohnstückkosten sind eine ökonomische Kennzahl für die durchschnittlichen Arbeitskosten je Einheit Output. Wirkungsökonomisch helfen sie, die Debatte von der reinen Kostenfrage zu lösen: Eine Arbeitsstunde kann teuer sein und trotzdem wettbewerbsfähig, wenn sie durch gute Systeme, Qualifikation, Kapitalstock, Infrastruktur und Innovation hohe Wertschöpfung erzeugt.",
+      "woekRelation": "Der Begriff macht sichtbar, dass Lohnkosten nur eine Eingangszahl sind. Wettbewerbsfähigkeit entscheidet sich auch an der erzeugten Wirkung und Wertschöpfung je Stunde.",
+      "usageNote": "Nicht mit Stundenlöhnen oder Arbeitskosten je Stunde verwechseln. Lohnstückkosten setzen Kosten ins Verhältnis zur Produktivität.",
+      "doNotConfuseWith": [
+        "Arbeitskosten je Stunde",
+        "Bruttolohn",
+        "Lohnnebenkosten"
+      ],
+      "synonyms": [
+        "Lohnstückkosten",
+        "Unit labour costs",
+        "Lohnstueckkosten",
+        "Arbeitskosten je Outputeinheit",
+        "unit labour costs"
+      ],
+      "aliases": [
+        "Lohnstückkosten",
+        "Unit labour costs",
+        "Lohnstueckkosten",
+        "Arbeitskosten je Outputeinheit",
+        "unit labour costs"
+      ],
+      "relatedTerms": [
+        "aufwaertswettbewerb",
+        "systemqualitaet",
+        "positive-netto-wirkung",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [
+        "blog/nicht-billiger-werden-besser-werden/",
+        "wirkungsfelder/arbeit-einkommen/"
+      ],
+      "examples": [
+        "Steigen Löhne schneller als Produktivität und Wertschöpfung, können Lohnstückkosten steigen.",
+        "Hohe Arbeitskosten je Stunde sind tragfähiger, wenn Infrastruktur und Innovation die Leistung pro Stunde erhöhen."
+      ],
+      "preferredUsage": "Lohnstückkosten als Verhältnisgröße von Arbeitskosten und Output erklären.",
+      "deprecatedUsage": [
+        "Lohnstückkosten als pauschales Argument für Lohnsenkung verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "lohnstückkosten",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "Arbeit, Einkommen und Wertschöpfung",
+      "categories": [
+        "arbeit-einkommen",
+        "wirtschaft",
+        "indikatoren"
+      ],
+      "pageUrl": "/begriffe/lohnstueckkosten/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1476,
+      "officialSources": []
+    },
+    {
       "status": "führender-begriff",
       "version": "1.1",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.1_Energy_Sharing.md",
@@ -312295,6 +312446,82 @@
       "blind_spot": "",
       "dataStandardsGroup": "",
       "priority": 1095
+    },
+    {
+      "id": "systemqualitaet",
+      "termId": "systemqualitaet",
+      "canonicalLabel": "Systemqualität",
+      "label": "Systemqualität",
+      "slug": "systemqualitaet",
+      "status": "woek-praezisierungsbegriff",
+      "type": "WÖk-Präzisierungsbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: Nicht billiger werden. Besser werden.",
+      "sourceDocument": "blog/nicht-billiger-werden-besser-werden/",
+      "sourceSection": "Arbeit & Einkommen",
+      "shortDefinition": "Systemqualität beschreibt die Qualität der Bedingungen, die Menschen, Organisationen und Regionen produktiv, innovativ, resilient und wirkungsfähig machen.",
+      "hoverDefinition": "Systemqualität ist die Qualität von Werkzeugen, Infrastruktur, Regeln, Daten, Energie, Vertrauen und Organisation, die Leistung möglich macht.",
+      "definition": "Systemqualität beschreibt die Qualität der Bedingungen, die Menschen, Organisationen und Regionen produktiv, innovativ, resilient und wirkungsfähig machen.",
+      "longDefinition": "Systemqualität umfasst die materiellen, institutionellen und kulturellen Voraussetzungen von Leistung: Bildung, Maschinen, Software, Daten, Energie, Infrastruktur, Verwaltung, Finanzierung, Führung, Forschung, Kooperation und Vertrauen. Sie verhindert, dass Produktivität fälschlich nur als Charakterzug einzelner Beschäftigter gelesen wird.",
+      "woekRelation": "Der Begriff übersetzt Produktivität in Wirkungsbedingungen. Menschen leisten mehr, wenn Systeme Können, Zeit und Verantwortung nicht durch Reibung, schlechte Infrastruktur oder falsche Anreize entwerten.",
+      "usageNote": "Systemqualität ersetzt keine Effizienzprüfung, erweitert sie aber um die Frage, welche Bedingungen Leistung und Wirkung ermöglichen oder blockieren.",
+      "doNotConfuseWith": [
+        "individuelle Leistungsbereitschaft",
+        "Standortimage",
+        "bloße Prozessoptimierung"
+      ],
+      "synonyms": [
+        "Systemqualität",
+        "Systemqualitaet",
+        "Qualität der Systembedingungen",
+        "Produktivitätsumfeld",
+        "institutionelle Leistungsfähigkeit"
+      ],
+      "aliases": [
+        "Systemqualität",
+        "Systemqualitaet",
+        "Qualität der Systembedingungen",
+        "Produktivitätsumfeld",
+        "institutionelle Leistungsfähigkeit"
+      ],
+      "relatedTerms": [
+        "aufwaertswettbewerb",
+        "lohnstueckkosten",
+        "wirkungsdaten",
+        "automatisierung",
+        "maschinenleistung"
+      ],
+      "relatedDocuments": [
+        "blog/nicht-billiger-werden-besser-werden/",
+        "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/",
+        "wirkungsfelder/arbeit-einkommen/"
+      ],
+      "examples": [
+        "Eine Fachkraft mit schlechten digitalen Werkzeugen ist nicht das Produktivitätsproblem; das System bremst sie.",
+        "Marode Netze, langsame Genehmigungen und Energieunsicherheit senken Systemqualität."
+      ],
+      "preferredUsage": "Systemqualität nutzen, wenn Produktivität von Infrastruktur, Organisation und Institutionen abhängt.",
+      "deprecatedUsage": [
+        "Systemqualität als Ausrede gegen individuelle Verantwortung verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "systemqualität",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "Systeme, Steuerung und Resilienz",
+      "categories": [
+        "wirkungslogik",
+        "arbeit-einkommen",
+        "wirtschaft"
+      ],
+      "pageUrl": "/begriffe/systemqualitaet/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1477,
+      "officialSources": []
     },
     {
       "id": "systemtheorie",

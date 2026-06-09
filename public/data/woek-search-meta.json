@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T10:00:02.673Z",
+  "generatedAt": "2026-06-09T10:59:54.026Z",
   "entries": {
     "/begriffe/fuenftes-p-planet/": {
       "documentType": "begriff",
@@ -1088,6 +1088,28 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/aufwaertswettbewerb/": {
+      "documentType": "begriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-aufwaertswettbewerb",
+      "documentId": "aufwaertswettbewerb",
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "wirkungsdaten",
+        "wirksame-arbeit",
+        "automatisierung",
+        "maschinenleistung",
+        "wirkungseinkommen"
+      ],
+      "relatedDocuments": [
+        "blog/nicht-billiger-werden-besser-werden/",
+        "wirkungsfelder/arbeit-einkommen/",
+        "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/"
+      ],
+      "sourceFile": "blog/nicht-billiger-werden-besser-werden/",
       "searchBoost": 110
     },
     "/begriffe/aeussere-loops/": {
@@ -14085,6 +14107,25 @@
       "relatedDocuments": [],
       "searchBoost": 110
     },
+    "/begriffe/lohnstueckkosten/": {
+      "documentType": "begriff",
+      "status": "kontextbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-lohnstueckkosten",
+      "documentId": "lohnstueckkosten",
+      "relatedTerms": [
+        "aufwaertswettbewerb",
+        "systemqualitaet",
+        "positive-netto-wirkung",
+        "wirkungsdaten"
+      ],
+      "relatedDocuments": [
+        "blog/nicht-billiger-werden-besser-werden/",
+        "wirkungsfelder/arbeit-einkommen/"
+      ],
+      "sourceFile": "blog/nicht-billiger-werden-besser-werden/",
+      "searchBoost": 110
+    },
     "/begriffe/lokale-energie-als-wirkungsinfrastruktur/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -24459,6 +24500,27 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/systemqualitaet/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-systemqualitaet",
+      "documentId": "systemqualitaet",
+      "relatedTerms": [
+        "aufwaertswettbewerb",
+        "lohnstueckkosten",
+        "wirkungsdaten",
+        "automatisierung",
+        "maschinenleistung"
+      ],
+      "relatedDocuments": [
+        "blog/nicht-billiger-werden-besser-werden/",
+        "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/",
+        "wirkungsfelder/arbeit-einkommen/"
+      ],
+      "sourceFile": "blog/nicht-billiger-werden-besser-werden/",
+      "searchBoost": 110
+    },
     "/begriffe/systemtheorie/": {
       "documentType": "begriff",
       "status": "approved",
@@ -33509,6 +33571,14 @@
       "contentHash": "9a2467350766865e",
       "sectionId": "linkedin-beitraege-title"
     },
+    "/blog/nicht-billiger-werden-besser-werden/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "blog/nicht-billiger-werden-besser-werden/index.html",
+      "contentHash": "09191aa761367abd",
+      "sectionId": "woek-page-da295987d296ba69"
+    },
     "/blog/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.html": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -33706,7 +33776,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "journal/index.html",
-      "contentHash": "decfa4ed380770a2",
+      "contentHash": "16e29b03fe4cdc68",
       "sectionId": "woek-page-f35cc6431ffe4483"
     },
     "/journal/#journal-health": {
@@ -33714,7 +33784,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "journal/index.html",
-      "contentHash": "decfa4ed380770a2",
+      "contentHash": "16e29b03fe4cdc68",
       "sectionId": "journal-health"
     },
     "/referenz/glossar/": {
@@ -44794,7 +44864,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/index.html",
-      "contentHash": "a9797c0181570a79",
+      "contentHash": "5b289e043b03be94",
       "sectionId": "woek-page-e6bdb60cf0627b03"
     },
     "/bibliothek/#anschluss-finden-title": {
@@ -44802,7 +44872,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/index.html",
-      "contentHash": "a9797c0181570a79",
+      "contentHash": "5b289e043b03be94",
       "sectionId": "anschluss-finden-title"
     },
     "/bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/": {
