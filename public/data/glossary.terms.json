@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T00:40:06.490Z",
+  "generatedAt": "2026-06-09T09:54:42.957Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -2815,6 +2815,83 @@
       "glossaryOrderKey": "Advocacy-Organisation",
       "dataStandardsGroup": "",
       "priority": 9
+    },
+    {
+      "id": "afd-ideologie",
+      "termId": "afd-ideologie",
+      "canonicalLabel": "AfD-Ideologie",
+      "label": "AfD-Ideologie",
+      "slug": "afd-ideologie",
+      "status": "kontextbegriff",
+      "type": "Kontextbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: AfD-Ideologie kann deinen Job kosten",
+      "sourceDocument": "blog/afd-ideologie-kann-deinen-job-kosten/",
+      "sourceSection": "Öffentlicher Wirkungsraum",
+      "shortDefinition": "AfD-Ideologie bezeichnet im WÖk-Kontext keinen juristischen Tatbestand, sondern sichtbare Aussagen und Muster, die an rechtsextreme, demokratiefeindliche oder menschenabwertende Wirkung anschließen können.",
+      "hoverDefinition": "AfD-Ideologie ist hier ein vorsichtiger Kontextbegriff für sichtbare Wirkungsmuster, keine pauschale Personenbewertung.",
+      "definition": "AfD-Ideologie bezeichnet im WÖk-Kontext keinen juristischen Tatbestand, sondern sichtbare Aussagen und Muster, die an rechtsextreme, demokratiefeindliche oder menschenabwertende Wirkung anschließen können.",
+      "longDefinition": "Der Begriff darf nicht als pauschales Etikett für Wähler:innen oder Mitglieder verwendet werden. Gemeint sind öffentliches Verhalten, Sprache, Symbole, Codes oder Narrative, die Menschenwürde, Gleichbehandlung, Vertrauen, Betriebsklima, Verfassungstreue oder demokratische Korrekturfähigkeit berühren. Ob daraus arbeits-, dienst- oder reputationsrechtliche Folgen entstehen, verlangt immer Einzelfallprüfung, Kontext, Rolle, Schwere, Wiederholung, betriebliche Nähe und Verhältnismäßigkeit.",
+      "woekRelation": "Der Begriff macht sichtbar, dass politische Kommunikation nicht nur Meinung bleibt, sondern öffentliche Wirkung im Betrieb, in Institutionen und in Regionen entfalten kann.",
+      "usageNote": "Nur mit Schutzlinie verwenden: keine Gesinnungsprüfung, keine Wahlkontrolle, keine Pauschalbewertung; relevant ist sichtbares Verhalten und konkrete Wirkung.",
+      "doNotConfuseWith": [
+        "AfD-Wahlentscheidung",
+        "Parteimitgliedschaft",
+        "konservative Meinung",
+        "rechtliche Parteiverbotsentscheidung"
+      ],
+      "synonyms": [
+        "AfD-Ideologie",
+        "AfD Ideologie",
+        "AfD-nahe Wirkung",
+        "rechtsextreme Wirkungsmuster",
+        "AfD-nahe Wirkungsmuster",
+        "demokratiegefährdende Wirkungsmuster"
+      ],
+      "aliases": [
+        "AfD-Ideologie",
+        "AfD Ideologie",
+        "AfD-nahe Wirkung",
+        "rechtsextreme Wirkungsmuster",
+        "AfD-nahe Wirkungsmuster",
+        "demokratiegefährdende Wirkungsmuster"
+      ],
+      "relatedTerms": [
+        "oeffentliche-wirkung",
+        "folgenfreiheit",
+        "meinungsfreiheit",
+        "wirkungsverantwortung",
+        "rechtsstaatlichkeit",
+        "verhaeltnismaessigkeit"
+      ],
+      "relatedDocuments": [
+        "blog/afd-ideologie-kann-deinen-job-kosten/"
+      ],
+      "examples": [
+        "Ein öffentlicher Post mit Arbeitgeberbezug kann aus privater Meinung eine reputationsrelevante Wirkung machen."
+      ],
+      "preferredUsage": "AfD-Ideologie als kontextgebundenen Wirkungsbegriff mit klarer Schutzlinie nutzen.",
+      "deprecatedUsage": [
+        "AfD-Ideologie als pauschale Bewertung einzelner Wähler:innen verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "afd ideologie",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "Demokratie, Rechtsstaat und öffentlicher Wirkungsraum",
+      "categories": [
+        "demokratie",
+        "medien-oeffentlichkeit",
+        "recht"
+      ],
+      "pageUrl": "/begriffe/afd-ideologie/",
+      "classicGlossary": true,
+      "autoLinkAllowed": false,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1473,
+      "officialSources": []
     },
     {
       "id": "affekt",
@@ -92610,6 +92687,81 @@
       "dataStandardsGroup": ""
     },
     {
+      "id": "folgenfreiheit",
+      "termId": "folgenfreiheit",
+      "canonicalLabel": "Folgenfreiheit",
+      "label": "Folgenfreiheit",
+      "slug": "folgenfreiheit",
+      "status": "woek-praezisierungsbegriff",
+      "type": "WÖk-Präzisierungsbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: AfD-Ideologie kann deinen Job kosten",
+      "sourceDocument": "blog/afd-ideologie-kann-deinen-job-kosten/",
+      "sourceSection": "Öffentlicher Wirkungsraum",
+      "shortDefinition": "Folgenfreiheit ist die falsche Vorstellung, eine erlaubte oder geschützte Handlung müsse grundsätzlich ohne soziale, berufliche oder institutionelle Konsequenzen bleiben.",
+      "hoverDefinition": "Folgenfreiheit verwechselt Freiheit mit Anspruch auf Folgenlosigkeit.",
+      "definition": "Folgenfreiheit ist die falsche Vorstellung, eine erlaubte oder geschützte Handlung müsse grundsätzlich ohne soziale, berufliche oder institutionelle Konsequenzen bleiben.",
+      "longDefinition": "Die Wirkungsökonomie trennt Freiheit und Folgenfreiheit: Grundrechte schützen vor unzulässiger staatlicher Unterdrückung, schaffen aber keinen Anspruch darauf, dass öffentliche Wirkung von anderen nicht bewertet, beantwortet oder verhältnismäßig sanktioniert wird. Entscheidend bleiben Rolle, Kontext, Schutzpflichten, Schaden, Verhältnismäßigkeit und rechtsstaatliche Verfahren.",
+      "woekRelation": "Der Begriff ist ein Schutz gegen zwei Verkürzungen: gegen pauschale Sanktionierung unliebsamer Meinung und gegen die Behauptung, öffentliche demokratiegefährdende Wirkung müsse folgenlos bleiben.",
+      "usageNote": "Immer als Abgrenzungsbegriff verwenden: Wahlgeheimnis und Meinungsfreiheit schützen Freiheit, aber nicht jede öffentliche Wirkung vor jeder Folge.",
+      "doNotConfuseWith": [
+        "Meinungsfreiheit",
+        "Rechtsfreiheit",
+        "Straffreiheit",
+        "Wirkungsfreiheit"
+      ],
+      "synonyms": [
+        "Folgenfreiheit",
+        "Folgenlosigkeit",
+        "Konsequenzfreiheit",
+        "Anspruch auf Folgenlosigkeit"
+      ],
+      "aliases": [
+        "Folgenfreiheit",
+        "Folgenlosigkeit",
+        "Konsequenzfreiheit",
+        "Anspruch auf Folgenlosigkeit"
+      ],
+      "relatedTerms": [
+        "meinungsfreiheit",
+        "oeffentliche-wirkung",
+        "wirkungsfreiheit",
+        "wirkungsverantwortung",
+        "verhaeltnismaessigkeit",
+        "rechtsstaatlichkeit",
+        "grundrechte"
+      ],
+      "relatedDocuments": [
+        "blog/afd-ideologie-kann-deinen-job-kosten/"
+      ],
+      "examples": [
+        "Eine Meinung darf geäußert werden; dennoch kann ihr öffentlich widersprochen werden.",
+        "Eine berufliche Vertrauensrolle kann strengere Pflichten erzeugen als ein privates Gespräch."
+      ],
+      "preferredUsage": "Folgenfreiheit als Missverständnis von Freiheit präzisieren.",
+      "deprecatedUsage": [
+        "Folgenfreiheit als Begründung für pauschale Sanktionen verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "folgenfreiheit",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "Ethik, Würde und Verantwortung",
+      "categories": [
+        "demokratie",
+        "recht",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/folgenfreiheit/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1472,
+      "officialSources": []
+    },
+    {
       "id": "folgewirkung",
       "termId": "folgewirkung",
       "label": "Folgewirkung",
@@ -152412,6 +152564,77 @@
       "blind_spot": "",
       "dataStandardsGroup": "",
       "priority": 550
+    },
+    {
+      "id": "konsequenzfaehigkeit",
+      "termId": "konsequenzfaehigkeit",
+      "canonicalLabel": "Konsequenzfähigkeit",
+      "label": "Konsequenzfähigkeit",
+      "slug": "konsequenzfaehigkeit",
+      "status": "woek-praezisierungsbegriff",
+      "type": "WÖk-Präzisierungsbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: AfD-Ideologie kann deinen Job kosten",
+      "sourceDocument": "blog/afd-ideologie-kann-deinen-job-kosten/",
+      "sourceSection": "Öffentlicher Wirkungsraum",
+      "shortDefinition": "Konsequenzfähigkeit beschreibt die demokratische Fähigkeit, auf schädliche öffentliche Wirkung rechtsstaatlich, verhältnismäßig und klar zu reagieren.",
+      "hoverDefinition": "Konsequenzfähigkeit heißt: Wirkung ernst nehmen, ohne in Gesinnungsprüfung oder Pauschalurteile zu kippen.",
+      "definition": "Konsequenzfähigkeit beschreibt die demokratische Fähigkeit, auf schädliche öffentliche Wirkung rechtsstaatlich, verhältnismäßig und klar zu reagieren.",
+      "longDefinition": "Konsequenzfähigkeit verbindet Meinungsfreiheit, Schutzpflichten und Wirkungsverantwortung. Sie meint nicht Härte um der Härte willen, sondern die Fähigkeit von Organisationen, Institutionen und Öffentlichkeit, sichtbare Wirkungen zu prüfen, Betroffene zu schützen, Rollen und Kontext zu beachten und angemessene Rückkopplungen auszulösen.",
+      "woekRelation": "Der Begriff ergänzt demokratische Rückkopplung: Eine freiheitliche Ordnung bleibt lern- und schutzfähig, wenn sie Wirkung sieht und angemessen beantwortet.",
+      "usageNote": "Nur mit Verhältnismäßigkeit, Einzelfallprüfung und Rechtsstaatlichkeit verwenden.",
+      "doNotConfuseWith": [
+        "Sanktionslust",
+        "Cancel Culture",
+        "Gesinnungsprüfung"
+      ],
+      "synonyms": [
+        "Konsequenzfähigkeit",
+        "Konsequenzfaehigkeit",
+        "demokratische Konsequenzfähigkeit",
+        "rechtsstaatliche Rückkopplungsfähigkeit"
+      ],
+      "aliases": [
+        "Konsequenzfähigkeit",
+        "Konsequenzfaehigkeit",
+        "demokratische Konsequenzfähigkeit",
+        "rechtsstaatliche Rückkopplungsfähigkeit"
+      ],
+      "relatedTerms": [
+        "demokratische-rueckkopplung",
+        "oeffentliche-wirkung",
+        "folgenfreiheit",
+        "wirkungsverantwortung",
+        "verhaeltnismaessigkeit"
+      ],
+      "relatedDocuments": [
+        "blog/afd-ideologie-kann-deinen-job-kosten/"
+      ],
+      "examples": [
+        "Ein Arbeitgeber reagiert auf diskriminierendes Verhalten zunächst mit Aufklärung, Schutzmaßnahmen oder Abmahnung und prüft Eskalation nur verhältnismäßig."
+      ],
+      "preferredUsage": "Konsequenzfähigkeit als rechtsstaatliche Antwortfähigkeit auf Wirkung beschreiben.",
+      "deprecatedUsage": [
+        "Konsequenzfähigkeit als pauschale Forderung nach Sanktionen verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "konsequenzfähigkeit",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "Demokratie, Rechtsstaat und öffentlicher Wirkungsraum",
+      "categories": [
+        "demokratie",
+        "recht",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/konsequenzfaehigkeit/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1474,
+      "officialSources": []
     },
     {
       "id": "konservativ",
@@ -214761,6 +214984,85 @@
       "priority": 1367,
       "relatedDocuments": [],
       "deprecatedUsage": []
+    },
+    {
+      "id": "oeffentliche-wirkung",
+      "termId": "oeffentliche-wirkung",
+      "canonicalLabel": "Öffentliche Wirkung",
+      "label": "Öffentliche Wirkung",
+      "slug": "oeffentliche-wirkung",
+      "status": "woek-praegungsbegriff",
+      "type": "WÖk-Prägungsbegriff",
+      "version": "1.0",
+      "source": "Journalbeitrag: AfD-Ideologie kann deinen Job kosten",
+      "sourceDocument": "blog/afd-ideologie-kann-deinen-job-kosten/",
+      "sourceSection": "Öffentlicher Wirkungsraum",
+      "shortDefinition": "Öffentliche Wirkung beschreibt Folgen, die öffentliche Aussagen, Symbole, Kampagnen oder Rollen für Vertrauen, Sicherheit, Zugehörigkeit, Institutionen und Demokratie entfalten.",
+      "hoverDefinition": "Öffentliche Wirkung beschreibt, was öffentliche Kommunikation in Vertrauen, Sicherheit, Zugehörigkeit und demokratischer Stabilität verändert.",
+      "definition": "Öffentliche Wirkung beschreibt Folgen, die öffentliche Aussagen, Symbole, Kampagnen oder Rollen für Vertrauen, Sicherheit, Zugehörigkeit, Institutionen und Demokratie entfalten.",
+      "longDefinition": "In der Wirkungsökonomie ist öffentliche Wirkung keine bloße Reichweite und keine Gesinnungsbewertung. Gemeint ist die prüfbare Frage, wie eine öffentlich sichtbare Handlung oder Aussage Zustände im öffentlichen Wirkungsraum verändert: Vertrauen, Diskursfähigkeit, Gleichbehandlung, Betriebsklima, Reputation, Rechtsstaatlichkeit, Zugehörigkeit oder demokratische Korrekturfähigkeit.",
+      "woekRelation": "Der Begriff verbindet Meinungsfreiheit mit Wirkungsverantwortung. Eine Äußerung kann grundrechtlich geschützt sein und trotzdem soziale, berufliche, institutionelle oder ökonomische Folgen erzeugen.",
+      "usageNote": "Nicht als Zensurformel verwenden. Immer zwischen Meinung, Rolle, Kontext, Reichweite, nachweisbarem Schaden, Wirkungsrisiko und Verhältnismäßigkeit unterscheiden.",
+      "doNotConfuseWith": [
+        "Reichweite",
+        "Gesinnungsprüfung",
+        "Personenbewertung",
+        "Zensur"
+      ],
+      "synonyms": [
+        "Öffentliche Wirkung",
+        "öffentliche Folgen",
+        "öffentliche Kommunikationswirkung",
+        "public impact",
+        "öffentliche Wirksamkeit"
+      ],
+      "aliases": [
+        "Öffentliche Wirkung",
+        "öffentliche Folgen",
+        "öffentliche Kommunikationswirkung",
+        "public impact",
+        "öffentliche Wirksamkeit"
+      ],
+      "relatedTerms": [
+        "meinungsfreiheit",
+        "wirkungsverantwortung",
+        "oeffentlichkeit-als-wirkungsraum",
+        "folgenfreiheit",
+        "wirkungsfreiheit",
+        "demokratische-rueckkopplung",
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "framing-sprache-tonalitaet"
+      ],
+      "relatedDocuments": [
+        "blog/afd-ideologie-kann-deinen-job-kosten/"
+      ],
+      "examples": [
+        "Ein öffentlicher Post kann Vertrauen in eine Institution stärken oder schwächen.",
+        "Politische Werbung kann Menschen mobilisieren, aber auch Feindbilder normalisieren."
+      ],
+      "preferredUsage": "Öffentliche Wirkung als prüfbare Folge öffentlicher Kommunikation beschreiben.",
+      "deprecatedUsage": [
+        "Öffentliche Wirkung als moralische Personenbewertung verwenden."
+      ],
+      "reviewStatus": "approved",
+      "glossaryOrderKey": "öffentliche wirkung",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-09",
+      "category": "Sprache, Wirklichkeit und Kommunikation",
+      "categories": [
+        "medien-oeffentlichkeit",
+        "demokratie",
+        "wirkungslogik"
+      ],
+      "pageUrl": "/begriffe/oeffentliche-wirkung/",
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "priority": 1471,
+      "officialSources": []
     },
     {
       "id": "oeffentlicher-raum-arendt",
