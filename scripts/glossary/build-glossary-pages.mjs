@@ -535,13 +535,17 @@ function hasRealText(value) {
 }
 
 function containsForbiddenPublicText(value) {
-  return /\b(published|publikationsstatus|review-status|review_status|redaktionell zu prüfen|redaktionell zu pruefen|glossar-pack|professionalisiert|deep_glossary_entry|aktualisiert durch:\s*codex|updated_by:\s*codex|no-delete|no_delete|source-hash|import-version|interne arbeitsgrundlage|interne quelle|quality_level|status im pack|pack:\s*\d+)/i.test(String(value || ""));
+  return /\b(published|publikationsstatus|review-status|review_status|redaktionell zu prüfen|redaktionell zu pruefen|glossar-pack|professionalisiert|deep_glossary_entry|aktualisiert durch:\s*codex|updated_by:\s*codex|codex\s+anlage|no-delete|no_delete|source-hash|import-version|interne arbeitsgrundlage|interne quelle|quality_level|status im pack|pack:\s*\d+)/i.test(String(value || ""));
 }
 
 function publicText(value) {
   return String(value || "")
     .replace(/\s+/g, " ")
     .replace(/\s*\((?:interne|externe)\s+Quelle\)\s*/gi, "")
+    .replace(/\bCodeX soll\b/g, "Die öffentliche Einordnung sollte")
+    .replace(/\bCodex soll\b/g, "Die öffentliche Einordnung sollte")
+    .replace(/\bCodeX\b/g, "die Redaktion")
+    .replace(/\bCodex\b/g, "die Redaktion")
     .trim();
 }
 

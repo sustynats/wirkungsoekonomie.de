@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T21:07:36.048Z",
+  "generatedAt": "2026-06-09T21:50:46.686Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,10 +204,10 @@
     }
   ],
   "counts": {
-    "total": 1485,
+    "total": 1486,
     "byStatus": {
       "führend": 5,
-      "aktuell": 946,
+      "aktuell": 947,
       "Arbeitsfassung": 278,
       "ältere Fassung": 256
     },
@@ -215,7 +215,7 @@
       "Grundlagenwerk": 63,
       "Glossar": 41,
       "Methodik": 110,
-      "Arbeitspapier": 1200,
+      "Arbeitspapier": 1201,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -225,10 +225,10 @@
     "bySource": {
       "leading-reference": 7,
       "download-or-document": 719,
-      "online-version": 759
+      "online-version": 760
     },
     "downloadFiles": 719,
-    "onlineVersions": 759
+    "onlineVersions": 760
   },
   "documents": [
     {
@@ -15650,6 +15650,34 @@
       "urls": {
         "primary": "wirkungsfelder/produkte-konsum/dossiers/reverse-merit-order/",
         "sourcePath": "wirkungsfelder/produkte-konsum/dossiers/reverse-merit-order/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-verstehen-sdgs-sdgplus-risiko-resilienzregister-index-html",
+      "title": "Risiko resilienzregister",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: SDGs, Agenda 2030 & SDG+, Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+",
+        "Daten & Infrastruktur",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "sourcePath": "verstehen/sdgs-sdgplus/risiko-resilienzregister/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false

@@ -36,7 +36,7 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Website-Integration/g, "Einordnung auf der Website"],
   [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
   [/Demo in Vorbereitung/g, "Methodenseite"],
-  [/Portal der Wirkungsökonomie/g, "Website der Wirkungsökonomie"],
+  [/Portal der Wirkungsökonomie/g, "Wirkungsökonomie"],
   [/Produktportal/g, "Produktbereich"],
   [/Erklärung vorhanden/g, "Methodik"],
   [/Download wird ergänzt/g, "Arbeitsmaterial"],

@@ -1722,18 +1722,18 @@ function updateStartPage() {
 <section class="section section-soft" id="wirkungslogik-2-1" aria-labelledby="wirkungslogik-2-1-title">
   <div class="section-header">
     <p class="hero-kicker">Grundlogik</p>
-    <h2 id="wirkungslogik-2-1-title">Die Website folgt einer klaren Bewegungslogik.</h2>
-    <p>Die Wirkungsökonomie ist nicht zuerst ein Debattentool. Sie ist ein Ordnungsmodell: Wirkung sichtbar machen, bewerten und in Preise, Steuern, Einkommen, Kapital, Produkte, Unternehmen, Staat und Alltag zurückführen.</p>
+    <h2 id="wirkungslogik-2-1-title">Die Wirkungsökonomie folgt einer klaren Rückkopplungslogik.</h2>
+    <p>Sie beginnt bei realen Folgen: Was verändert eine Handlung, ein Produkt, ein Gesetz, ein Kapitalfluss oder eine öffentliche Aussage für Mensch, Planet und Demokratie? Diese Wirkung wird sichtbar gemacht, am Referenzrahmen der SDGs und SDG+ bewertet und in Entscheidungen zurückgeführt - in Preise, Steuern, Kapitalzugang, Beschaffung, Haushalt, Einkommen, Unternehmen und Alltag. So wird aus Nachhaltigkeit nicht nur Bericht, sondern Rückkopplung.</p>
   </div>
   <div class="card-grid two">
-    <article class="card"><p class="card-kicker">1 · Verstehen</p><h3 class="card-title">Was verändert sich wirklich?</h3><p class="card-text">Alltag zuerst: Apfel, T-Shirt, Pflege, Wohnen, Medien, Kapital oder Haushalt. Dann erst Begriffe und Methode.</p><div class="portal-card-actions"><a class="text-link" href="verstehen/">Verstehen öffnen</a></div></article>
-    <article class="card"><p class="card-kicker">2 · Wirkungsfelder</p><h3 class="card-title">Wo wirkt es?</h3><p class="card-text">Neun Suchräume ordnen Mensch, Planet, Wirtschaft, Arbeit, Wohnen, Staat, Öffentlichkeit, Wissen und Kapital.</p><div class="portal-card-actions"><a class="text-link" href="wirkungsfelder/">Wirkungsfelder öffnen</a></div></article>
-    <article class="card"><p class="card-kicker">3 · Wirkungssteuerung</p><h3 class="card-title">Wie wird Wirkung zurückgekoppelt?</h3><p class="card-text">Wirkungssteuer, Produktpreise, Scorecards, WÖk-IDs, Haushalt, Rente, Einkommen, Kapital und Beschaffung.</p><div class="portal-card-actions"><a class="text-link" href="wirkungssteuerung/">Wirkungssteuerung öffnen</a></div></article>
-    <article class="card"><p class="card-kicker">4 · Anschluss finden</p><h3 class="card-title">Wer kann daran weiterarbeiten?</h3><p class="card-text">Wissenschaft, Politik, Verwaltung, Unternehmen, Kapital, Bildung, Medien, Zivilgesellschaft, Standards, Daten und Kritik.</p><div class="portal-card-actions"><a class="text-link" href="bibliothek/#anschluss-finden">Anschlussräume ansehen</a></div></article>
+    <article class="card"><p class="card-kicker">1 · Verstehen</p><h3 class="card-title">Was verändert sich wirklich?</h3><p class="card-text">Vom Alltag aus denken: Apfel, T-Shirt, Pflege, Wohnen, Medien, Kapital oder öffentlicher Haushalt zeigen, wo Wirkung heute unsichtbar bleibt - und warum Kapital als alleiniger Kompass nicht genügt.</p><div class="portal-card-actions"><a class="text-link" href="verstehen/">Grundidee verstehen</a></div></article>
+    <article class="card"><p class="card-kicker">2 · Wirkungsfelder</p><h3 class="card-title">Wo entsteht Wirkung?</h3><p class="card-text">Neun Wirkungsräume ordnen Mensch, Planet, Wirtschaft, Arbeit, Wohnen, Staat, Öffentlichkeit, Wissen und Kapital. Sie zeigen, dass Wirkung nie isoliert entsteht, sondern in vernetzten Systemen.</p><div class="portal-card-actions"><a class="text-link" href="wirkungsfelder/">Wirkungsfelder ansehen</a></div></article>
+    <article class="card"><p class="card-kicker">3 · Wirkungssteuerung</p><h3 class="card-title">Wie wird Wirkung rückgekoppelt?</h3><p class="card-text">Wirkungssteuer, Scorecards, WÖk-IDs, Wirkungshaushalt, Einkommen, Rente, Kapital und Beschaffung übersetzen Bewertung in Anreize. Positive Netto-Wirkung bleibt nicht nur sichtbar, sondern wird entscheidungsrelevant.</p><div class="portal-card-actions"><a class="text-link" href="wirkungssteuerung/">Steuerungslogik öffnen</a></div></article>
+    <article class="card"><p class="card-kicker">4 · Anschluss finden</p><h3 class="card-title">Wer arbeitet daran weiter?</h3><p class="card-text">Wissenschaft, Politik, Verwaltung, Unternehmen, Kapitalmarkt, Bildung, Medien, Zivilgesellschaft und Bürger:innen können das Modell prüfen, anwenden, kritisieren und weiterentwickeln.</p><div class="portal-card-actions"><a class="text-link" href="bibliothek/#anschluss-finden">Anschlussräume ansehen</a></div></article>
   </div>
 </section>
 `;
-  replaceMarkedBlock("index.html", "architecture-v21-home", block, '<section class="section section-soft maiwald-explainer" data-maiwald-explainer>');
+  replaceMarkedBlock("index.html", "architecture-v21-home", block, '<section class="section" id="neuer-kompass"');
 }
 
 function updateBibliothek() {

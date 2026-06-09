@@ -38,7 +38,7 @@ const replacements = [
   [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
   [/Demo in Vorbereitung/g, "Methodenseite"],
   [/Methodenseite vorhanden/g, "Methode"],
-  [/Portal der Wirkungsökonomie/g, "Website der Wirkungsökonomie"],
+  [/Portal der Wirkungsökonomie/g, "Wirkungsökonomie"],
   [/Produktportal/g, "Produktbereich"],
   [/Erklärung vorhanden/g, "Methodik"],
   [/Download wird ergänzt/g, "Arbeitsmaterial"],

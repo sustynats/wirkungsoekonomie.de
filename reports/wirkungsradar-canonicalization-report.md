@@ -1,6 +1,6 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-09T21:08:24.403Z
+Stand: 2026-06-09T21:51:39.329Z
 
 | Kennzahl | Wert |
 |---|---:|
