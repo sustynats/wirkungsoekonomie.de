@@ -201,6 +201,79 @@
     return `weitgehend stabil (${delta > 0 ? "+" : ""}${nf.format(delta)} Punkte)`;
   }
 
+  function indicatorScoreAtYear(indicator, year) {
+    const point = (indicator.timeseries || []).find((item) => item.year === year);
+    return point ? scoreIndicatorValue(point.value, indicator) : null;
+  }
+
+  function indicatorChangesForOutlier(snapshot, dimension, previousYear, year, delta) {
+    const direction = delta < 0 ? -1 : 1;
+    return snapshot.indicators
+      .filter((indicator) => indicator.dimension === dimension)
+      .map((indicator) => {
+        const previousScore = indicatorScoreAtYear(indicator, previousYear);
+        const currentScore = indicatorScoreAtYear(indicator, year);
+        if (previousScore === null || currentScore === null) return null;
+        const change = Math.round((currentScore - previousScore) * 10) / 10;
+        if (Math.sign(change) !== direction || Math.abs(change) < 2) return null;
+        return {
+          title: indicator.title,
+          change,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => Math.abs(b.change) - Math.abs(a.change))
+      .slice(0, 3);
+  }
+
+  function detectDimensionOutliers(snapshot, history) {
+    const threshold = 8;
+    return DIMENSIONS.flatMap((dimension) => {
+      const points = (history.series[dimension] || []).filter((point) => point.value !== null);
+      const findings = [];
+      for (let index = 1; index < points.length; index += 1) {
+        const previous = points[index - 1];
+        const current = points[index];
+        const delta = Math.round((current.value - previous.value) * 10) / 10;
+        if (Math.abs(delta) < threshold) continue;
+        findings.push({
+          dimension,
+          year: current.year,
+          previousYear: previous.year,
+          delta,
+          currentValue: current.value,
+          previousValue: previous.value,
+          countChange: current.count - previous.count,
+          contributors: indicatorChangesForOutlier(snapshot, dimension, previous.year, current.year, delta),
+        });
+      }
+      return findings;
+    })
+      .sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))
+      .slice(0, 4);
+  }
+
+  function outlierDirection(delta) {
+    return delta < 0 ? "Rückgang" : "Anstieg";
+  }
+
+  function renderOutlierSentences(outliers) {
+    if (!outliers.length) return "";
+    const sentences = outliers.slice(0, 2).map((outlier) => {
+      const contributorText = outlier.contributors.length
+        ? ` Im Modell wird dieser Ausschlag vor allem durch ${outlier.contributors.map((item) => `${item.title} (${item.change > 0 ? "+" : ""}${scoreText(item.change)} Punkte)`).join(", ")} getragen.`
+        : " Aus dem Snapshot lässt sich noch kein einzelner rechnerischer Treiber sauber isolieren; hier braucht es kommunale Ereignis-, Beteiligungs- oder Kontextdaten.";
+      const coverageTextPart = outlier.countChange
+        ? ` Die Datenabdeckung hat sich dabei um ${outlier.countChange > 0 ? "+" : ""}${outlier.countChange} Werte verändert.`
+        : "";
+      return `Auffällig ist ein ${outlierDirection(outlier.delta)} in <strong>${dimensionName(outlier.dimension)}</strong> ${outlier.year} gegenüber ${outlier.previousYear} um ${scoreText(Math.abs(outlier.delta))} Punkte, von ${scoreText(outlier.previousValue)} auf ${scoreText(outlier.currentValue)}.${contributorText}${coverageTextPart}`;
+    }).join(" ");
+    return `
+      <p>${sentences}</p>
+      <p>Diese Einordnung ist keine kausale Erklärung. Sie benennt rechnerische Treiber im vorhandenen Datenstand und markiert, wo Verwaltung, Rat und Öffentlichkeit genauer nachfragen sollten.</p>
+    `;
+  }
+
   function coverageText(snapshot) {
     const total = snapshot.summary.indicatorCount || 0;
     const scored = snapshot.summary.scoredIndicatorCount || 0;
@@ -458,6 +531,7 @@
     const gapNames = gaps.slice(0, 3).map((item) => item.title).join(", ");
     const strengthNames = strengths.slice(0, 2).map((item) => item.title).join(", ");
     const weakDelta = weakest ? seriesDelta(history, weakest[0]) : null;
+    const outliers = detectDimensionOutliers(snapshot, history);
     const coverage = coverageText(snapshot);
     const minimumCoverageMet = (snapshot.summary.scoredIndicatorCount || 0) / Math.max(1, snapshot.summary.indicatorCount || 1) >= 0.5;
     const totalScoreSentence = minimumCoverageMet
@@ -470,6 +544,7 @@
           <p class="card-kicker">Auswertung</p>
           <h3 id="kwi-interpretation-title">Interpretation für ${snapshot.municipality.name}</h3>
           <p>${strongest && weakest ? `Das Profil zeigt die stärkste Ausgangslage derzeit in <strong>${dimensionName(strongest[0])}</strong> (${scoreText(strongest[1].score)}) und den größten Zielabstand in <strong>${dimensionName(weakest[0])}</strong> (${scoreText(weakest[1].score)}).` : "Für diese Kommune liegen noch nicht genug Dimensionswerte für eine belastbare Kurzinterpretation vor."} ${weakest ? `Der Verlauf der schwächsten Dimension ist ${trendLabel(weakDelta)}.` : ""}</p>
+          ${renderOutlierSentences(outliers)}
           <p>Die politische Frage ist deshalb nicht, ob eine Kommune gut oder schlecht ist. Entscheidend ist, welche Maßnahmen mehrere Wirkungsräume gleichzeitig stärken: soziale Stabilität, ökologische Tragfähigkeit und demokratische Handlungsfähigkeit.</p>
           <p>Die Dimension Demokratie ist in diesem Stand noch kein vollständiger SDG+-Index. Sie zeigt nur erste Proxy-Signale; Wahl-, Beteiligungs-, Transparenz-, Vertrauens- und Zivilgesellschaftsdaten müssen konzeptionell ergänzt werden.</p>
           <p>${gapNames ? `Auffällige Prüfstellen sind im aktuellen Snapshot vor allem: ${gapNames}.` : "Der Snapshot zeigt keine klar priorisierbaren Prüfpunkte."} ${strengthNames ? `Stärkere Ausgangslagen zeigen sich unter anderem bei: ${strengthNames}.` : ""}</p>
