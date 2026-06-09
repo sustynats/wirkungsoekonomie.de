@@ -1,19 +1,19 @@
 {
   "version": "20260606-nav-cache-fix",
-  "generatedAt": "2026-06-09T00:43:02.110Z",
+  "generatedAt": "2026-06-09T16:03:24.660Z",
   "rule": "Eine Aussage = eine kanonische Seite. Debattenseiten folgen dem DebateCompassPageTemplate.",
   "counts": {
-    "totalRadarPages": 659,
-    "debatePages": 123,
+    "totalRadarPages": 661,
+    "debatePages": 124,
     "A": 0,
     "B": 0,
-    "C": 123,
+    "C": 124,
     "D": 0,
-    "canonicalNarratives": 124,
-    "duplicates": 405,
-    "merged": 153,
+    "canonicalNarratives": 125,
+    "duplicates": 407,
+    "merged": 154,
     "synonyms": 46,
-    "redirects": 153
+    "redirects": 154
   },
   "normalizedGeneralPages": 41,
   "inventory": [
@@ -1160,6 +1160,14 @@
       "tags": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
+    },
+    {
+      "url": "/wirkungsradar/detail/zu-hohe-lohnkosten-deutschland/",
+      "title": "Diese Aussage wurde zusammengeführt",
+      "slug": "zu-hohe-lohnkosten-deutschland",
+      "tags": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/"
     },
     {
       "url": "/wirkungsradar/embed/card/arbeit-lohnt-sich-nicht-mehr/",
@@ -2680,6 +2688,14 @@
       "tags": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
+    },
+    {
+      "url": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/",
+      "title": "Sind die Lohnkosten in Deutschland zu hoch?",
+      "slug": "zu-hohe-lohnkosten-deutschland",
+      "tags": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/"
     },
     {
       "url": "/wirkungsradar/methode/",
@@ -7953,6 +7969,27 @@
       "hasMpd": true,
       "hasThreeOrders": true,
       "quality": "C"
+    },
+    {
+      "url": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/",
+      "title": "Sind die Lohnkosten in Deutschland zu hoch?",
+      "slug": "zu-hohe-lohnkosten-deutschland",
+      "tags": [],
+      "canonicalTarget": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/",
+      "template": "DebateCompassPageTemplate",
+      "duplicatesRemoved": true,
+      "folgencheck": true,
+      "wirkpfad": true,
+      "answerBlock": true,
+      "facts": true,
+      "sources": false,
+      "anchors": false,
+      "community": true,
+      "hasExternalSources": true,
+      "hasFallbackSources": false,
+      "hasMpd": true,
+      "hasThreeOrders": true,
+      "quality": "C"
     }
   ],
   "missing": [
@@ -9056,6 +9093,15 @@
     },
     {
       "url": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/",
+      "quality": "C",
+      "missingSources": false,
+      "missingOrders": false,
+      "missingMPD": false,
+      "missingCriticalQuestions": false,
+      "recommendedAction": "Fachliche Einzelprüfung bei nächster redaktioneller Runde."
+    },
+    {
+      "url": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/",
       "quality": "C",
       "missingSources": false,
       "missingOrders": false,

@@ -1,16 +1,16 @@
 # Debatten-Kompass Kanonisierung
 
-Stand: 2026-06-09T00:43:01.597Z
+Stand: 2026-06-09T16:03:23.611Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Radar-Seiten | 659 |
-| Claim-Seiten | 278 |
-| Kanonische Narrative | 124 |
-| Dubletten / Kandidaten | 405 |
-| Zusammengeführt | 153 |
+| Radar-Seiten | 661 |
+| Claim-Seiten | 280 |
+| Kanonische Narrative | 125 |
+| Dubletten / Kandidaten | 407 |
+| Zusammengeführt | 154 |
 | Synonyme | 46 |
-| Redirects | 153 |
+| Redirects | 154 |
 
 ## Zusammenführungen
 
@@ -154,6 +154,7 @@ Stand: 2026-06-09T00:43:01.597Z
 | /wirkungsradar/detail/woek-bewertet-menschen/ | /wirkungsradar/live/woek-bewertet-menschen/ | Wirkungsökonomie bewertet Menschen? |
 | /wirkungsradar/detail/wohnungsnot-wegen-migration/ | /wirkungsradar/live/wohnungsnot-wegen-migration/ | Wohnungsnot wegen Migration? |
 | /wirkungsradar/detail/wokeness-spaltet-die-gesellschaft/ | /wirkungsradar/live/wokeness-spaltet-die-gesellschaft/ | Wokeness spaltet die Gesellschaft? |
+| /wirkungsradar/detail/zu-hohe-lohnkosten-deutschland/ | /wirkungsradar/live/zu-hohe-lohnkosten-deutschland/ | Sind die Lohnkosten in Deutschland zu hoch? |
 | /wirkungsradar/live/altparteien/ | /wirkungsradar/live/diktatur-der-altparteien/ | Altparteien? |
 | /wirkungsradar/live/altparteiendiktatur/ | /wirkungsradar/live/diktatur-der-altparteien/ | Diktatur der Altparteien? |
 | /wirkungsradar/live/die-boesen-reichen/ | /wirkungsradar/live/sind-die-reichen-schuld/ | Sind die Reichen schuld? |

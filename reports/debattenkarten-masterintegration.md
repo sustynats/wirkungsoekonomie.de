@@ -1,19 +1,19 @@
 # Debattenkarten-Integration
 
-Stand: 2026-06-07
+Stand: 2026-06-09
 
 ## Ergebnis
 
-- Karten im Textmaster: 126
-- Bestehende Live-Routen überschrieben/aktualisiert: 126
+- Karten im Textmaster: 127
+- Bestehende Live-Routen überschrieben/aktualisiert: 127
 - Neue Live-Routen angelegt: 0
-- Reaction-Felder sichtbar gerendert: 126
+- Reaction-Felder sichtbar gerendert: 127
 - Reaction-Felder redaktionell automatisch abgeleitet / reviewNeeded: 122
 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
 ## Cluster
 
-- Arbeit & Sozialstaat: 8
+- Arbeit & Sozialstaat: 9
 - Ausland & Sicherheit: 6
 - Demokratie & Öffentlichkeit: 24
 - Digitalisierung & KI: 8

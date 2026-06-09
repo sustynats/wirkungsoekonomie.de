@@ -20,6 +20,20 @@ const footerCluster = [
   "dokumentenregistry",
 ];
 
+const blockedPublicFragments = [
+  "druckdatum:",
+  "welche wirkungslogik macht",
+  "pdf-fassung in produktion",
+  "pdf wird ergänzt",
+  "auszug aus der umfangreichen korrekturfassung",
+  "umfang der quellfassung: rund 0 wörter",
+  "ergänzende ergänzende",
+  "kernformel.",
+  "protectionnotice",
+  "[button:",
+  "codex-anweisung",
+];
+
 const failures = [];
 
 for (const entry of entries) {
@@ -42,6 +56,12 @@ for (const entry of entries) {
 
   if (body.includes("kontakt:") && body.includes("© 2026 natalie weber")) {
     failures.push(`${url} contains footer contact/copyright text`);
+  }
+
+  for (const fragment of blockedPublicFragments) {
+    if (body.includes(fragment)) {
+      failures.push(`${url} contains public-language fragment "${fragment}"`);
+    }
   }
 }
 

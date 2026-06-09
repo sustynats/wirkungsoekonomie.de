@@ -103,7 +103,7 @@ function statusFor(kind, rel, html) {
 }
 
 function userQuestion(kind, title) {
-  if (kind === "Rechner") return `Welche Wirkungslogik macht der ${title} als Modellrechnung sichtbar?`;
+  if (kind === "Rechner") return "Welche Berechnung oder Modellannahme soll hier nachvollziehbar geprüft werden?";
   if (kind === "Scanner") return `Welche Hinweise, Datenlücken und Wirkungspotenziale werden sichtbar?`;
   if (kind === "Check") return `Welche Frage sollte vor einer Entscheidung geprüft werden?`;
   if (kind === "Dashboard") return `Welche Werkzeuge passen zu meiner Wirkungsfrage?`;
@@ -152,7 +152,7 @@ function blockFor(file) {
         </div>
         <div class="card-grid two tool-template-grid">
           <article class="card"><p class="card-kicker">Nutzerfrage</p><h3 class="card-title">Womit komme ich hierher?</h3><p class="card-text">${esc(userQuestion(kind, title))}</p></article>
-          <article class="card"><p class="card-kicker">Werkzeuglogik</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(kindWithArticle(kind))} macht eine Wirkungsfrage prüfbarer. Es ersetzt keine amtliche Bewertung, sondern zeigt Annahmen, Grenzen und nächste Prüfschritte.</p></article>
+          <article class="card"><p class="card-kicker">Werkzeuglogik</p><h3 class="card-title">${esc(title)}</h3><p class="card-text">${esc(kindWithArticle(kind))} macht eine Wirkungsfrage nachvollziehbarer. Die Seite zeigt Annahmen, Datenlage, Grenzen und mögliche nächste Prüfschritte; sie ist keine amtliche Bewertung.</p></article>
           <article class="card"><p class="card-kicker">Eingabe</p><h3 class="card-title">Was wird gebraucht?</h3><p class="card-text">${esc(inputs(kind))}</p></article>
           <article class="card"><p class="card-kicker">Ergebnis</p><h3 class="card-title">Was kommt heraus?</h3><p class="card-text">${esc(outputs(kind))}</p></article>
           <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">Was verändert sich dadurch?</h3><p class="card-text">${esc(change(kind))}</p></article>

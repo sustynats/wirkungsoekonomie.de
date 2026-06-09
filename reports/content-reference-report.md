@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-09T00:41:38.847Z
-Resolved references: 7155
-Warnings: 2718
+Erzeugt: 2026-06-09T16:01:33.942Z
+Resolved references: 7202
+Warnings: 2710
 
 ## Warnungen
 
@@ -389,8 +389,6 @@ Warnings: 2718
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] folgencheck-statt-faktencheck-democracy-intelligence - Titel aus Slug erzeugt
-- [unresolved-reference] folgencheck-statt-faktencheck-democracy-intelligence - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -506,6 +504,8 @@ Warnings: 2718
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 
 ## Aufgelöste Verweise
 
@@ -536,11 +536,14 @@ Warnings: 2718
 - /blog/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.html -> Produktbesteuerung durch Wirkung – Wenn Preise beginnen, die Wahrheit zu sagen (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#chapter-glossary-4 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/der-versoehner-und-die-wellen/ -> Der Versöhner und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/#schlussbemerkung -> Kommunaler Wirkungsindex (KWI) | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html -> Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert – sondern an seiner Logik (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html -> Wirkung schlägt Wahrheit: Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/agenda-2030/#downloads -> SDGs und Agenda 2030 als globaler Referenzrahmen (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#downloads -> SDGs und Agenda 2030 als globaler Referenzrahmen (Website, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#downloads -> Dossier SDGs und Agenda 2030 als globaler Referenzrahmen (Whitepaper, Beschreibung: ja)
@@ -578,7 +581,7 @@ Warnings: 2718
 - /referenz/kapitel-027-planet-koexistenz-statt-extraktion/#chapter-glossary-27 -> Kapitel 27: Planet: Koexistenz statt Extraktion (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
 - /bibliothek/folgencheck-wirkungspolitische-sprache/ -> Folgencheck statt Faktencheck | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
@@ -624,8 +627,8 @@ Warnings: 2718
 - /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.html -> Warum wir glauben, Nachhaltigkeit sei teuer (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/ -> Detailkonzept: Multipolare Ordnung und kulturelle Anschlussfähigkeit (Website, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
@@ -749,6 +752,11 @@ Warnings: 2718
 - /blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html -> SDG+ – Warum Nachhaltigkeit ohne Wirkungsdemokratie scheitert (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-101-warum-neue-massstaebe-widerstand-erzeugen/#chapter-glossary-101 -> Kapitel 101: Warum neue Maßstäbe Widerstand erzeugen (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/ -> Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: Zentrale Begriffe dieses Kapitels (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -786,7 +794,7 @@ Warnings: 2718
 - /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-057-wirkungseinkommen/#chapter-glossary-57 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-058-wirkungsrente/#chapter-glossary-58 -> Kapitel 58: Wirkungsrente (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
@@ -803,7 +811,7 @@ Warnings: 2718
 - /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#downloads -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
 - /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /wirkungsfelder/staat-recht-demokratie/demokratie-rechtsstaat-sdgplus-wirkungsraum/ -> Demokratie, Rechtsstaat und SDG+ als Wirkungsraum | Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#chapter-glossary-92 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/ -> Resiliente Wertschöpfungsketten und Einkauf nach Wirkung (Wirkungsfeld, Beschreibung: ja)
@@ -911,7 +919,7 @@ Warnings: 2718
 - /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#chapter-glossary-6 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#chapter-glossary-6 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.html -> Die unterschätzte Macht der Tonalität in der Kommunikation (Journalartikel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
 - /referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/#chapter-glossary-35 -> Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
@@ -953,7 +961,7 @@ Warnings: 2718
 - /referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#chapter-glossary-84 -> Kapitel 84: Cyberresilienz und operative Stabilität (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsradar/studio/embed/kernenergie-wieder-in-deutschland/ -> Embed-Widget – Kernenergie wieder in Deutschland? (Distribution, Beschreibung: ja)
 - /dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#political-implementation -> Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie (Working Paper, Beschreibung: ja)
 - /wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/ -> Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
@@ -1135,7 +1143,7 @@ Warnings: 2718
 - /blog/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.html -> CSRD: Warum eine Berichtspflicht zum strategischen Wendepunkt werden kann (Journalartikel, Beschreibung: ja)
 - /wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/ -> Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
 - /wirkungsfelder/produkte-konsum/basf-polyamid/ -> Von der CSRD zur Produktscorecard | BASF Polyamid (Wirkungsfeld, Beschreibung: ja)
-- /blog/dossiers/unternehmen-resilienz.html -> Unternehmen, CSRD und Resilienz – Dossier der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/dossiers/unternehmen-resilienz.html#lesepfad-title -> Unternehmen, CSRD und Resilienz – Dossier der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/esg-zu-woek-mapping/ -> ESG-zu-WÖk-Mapping (Methode, Beschreibung: ja)
 - /wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/ -> Unternehmen als Wirkungssysteme (Wirkungsfeld, Beschreibung: ja)
@@ -1339,9 +1347,10 @@ Warnings: 2718
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
-- /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit – Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/folgencheck-statt-faktencheck-democracy-intelligence.html -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1451,7 +1460,7 @@ Warnings: 2718
 - /blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html -> Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik (Journalartikel, Beschreibung: ja)
 - /blog/kognitive-dissonanz-als-wirkungsbremse/ -> Warum Fakten nicht reichen: Kognitive Dissonanz als Wirkungsbremse (Journalartikel, Beschreibung: ja)
 - /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
 - /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#chapter-glossary-3 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1461,13 +1470,13 @@ Warnings: 2718
 - /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#chapter-glossary-3 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/#chapter-glossary-73 -> Kapitel 73: Migration und gesellschaftliche Zugehörigkeit (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/downloads/ -> Downloads (Website, Beschreibung: ja)
 - /portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/ -> Gesamtdossier Zukunftsbilder Wirkungswohlstand (Whitepaper, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ -> Detailkonzept: CBAM, Grenzausgleich und externe Kosten (Website, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/entwicklungspartnerschaften-wirkungsfonds/ -> Detailkonzept: Entwicklungspartnerschaften und Wirkungsfonds (Website, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/europa-als-wirkungsraum/ -> Detailkonzept: Europa als Wirkungsraum (Website, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ -> Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie (Website, Beschreibung: ja)
 - /portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/ -> Detailkonzept: Globale Resilienz und Frühwarnkooperation (Website, Beschreibung: ja)
-- /portale/internationale-ordnung-globalisierung-geopolitik/globale-wirkungsgovernance/ -> Detailkonzept: Globale Wirkungsgovernance ohne Weltregierung (Website, Beschreibung: ja)
 - /referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/#chapter-glossary-20 -> Kapitel 20: Systemhebel, Engpässe und Interdependenzen (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1500,12 +1509,3 @@ Warnings: 2718
 - /blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html -> AI First ist eine Sackgasse – nicht, weil KI schlecht ist, sondern weil wir sie falsch denken. (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.html -> Neues Grundsicherungs-Kapitel – nur ein Namenswechsel? Eine WÖk-Analyse zum CDU/SPD-Plan zur Abschaffung des Bürgergelds (Journalartikel, Beschreibung: ja)
 - /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/#chapter-glossary-55 -> Kapitel 55: Wachstum, Innovation und Transformation innerhalb planetarer Grenzen (Online-Buch-Kapitel, Beschreibung: ja)
-- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
-- /dokumente/wp-wohnungsmarkt/#political-implementation -> WP Wohnungsmarkt – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
-- /blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html -> Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert – sondern an seiner Logik (Journalartikel, Beschreibung: ja)
-- /blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html -> AI First ist eine Sackgasse – nicht, weil KI schlecht ist, sondern weil wir sie falsch denken. (Journalartikel, Beschreibung: ja)
-- /referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/#chapter-glossary-55 -> Kapitel 55: Wachstum, Innovation und Transformation innerhalb planetarer Grenzen (Online-Buch-Kapitel, Beschreibung: ja)

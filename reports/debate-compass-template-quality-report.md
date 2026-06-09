@@ -1,20 +1,20 @@
 # Debatten-Kompass Template- und Qualitätsreport
 
-Stand: 2026-06-09T00:43:02.110Z
+Stand: 2026-06-09T16:03:24.660Z
 
 | Kennzahl | Wert |
 |---|---:|
-| Wirkungsradar-Seiten gesamt | 659 |
-| Debattenseiten vereinheitlicht | 123 |
+| Wirkungsradar-Seiten gesamt | 661 |
+| Debattenseiten vereinheitlicht | 124 |
 | Qualitätsstufe A | 0 |
 | Qualitätsstufe B | 0 |
-| Qualitätsstufe C | 123 |
+| Qualitätsstufe C | 124 |
 | Qualitätsstufe D | 0 |
-| Kanonische Narrative | 124 |
-| Dubletten / Kandidaten | 405 |
-| Zusammengeführt | 153 |
+| Kanonische Narrative | 125 |
+| Dubletten / Kandidaten | 407 |
+| Zusammengeführt | 154 |
 | Synonyme | 46 |
-| Redirects | 153 |
+| Redirects | 154 |
 
 ## Seitenprüfung
 
@@ -143,3 +143,4 @@ Stand: 2026-06-09T00:43:02.110Z
 | /wirkungsradar/live/woek-bewertet-menschen/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wohnungsnot-wegen-migration/ | C | ja | ja | ja | ja | nein | ja |
 | /wirkungsradar/live/wokeness-spaltet-die-gesellschaft/ | C | ja | ja | ja | ja | nein | ja |
+| /wirkungsradar/live/zu-hohe-lohnkosten-deutschland/ | C | ja | ja | ja | ja | nein | ja |

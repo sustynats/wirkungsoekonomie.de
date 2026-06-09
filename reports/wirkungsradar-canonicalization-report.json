@@ -1,14 +1,14 @@
 {
   "version": "20260604-radar-canonical-p0",
-  "generatedAt": "2026-06-09T00:43:01.597Z",
+  "generatedAt": "2026-06-09T16:03:23.611Z",
   "counts": {
-    "radarPages": 659,
-    "claimPages": 278,
-    "canonicalNarratives": 124,
-    "duplicates": 405,
-    "merged": 153,
+    "radarPages": 661,
+    "claimPages": 280,
+    "canonicalNarratives": 125,
+    "duplicates": 407,
+    "merged": 154,
     "synonyms": 46,
-    "redirects": 153
+    "redirects": 154
   },
   "inventory": [
     {
@@ -2438,6 +2438,15 @@
       "synonyms": [],
       "category": "detail",
       "canonicalTarget": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
+    },
+    {
+      "url": "/wirkungsradar/detail/zu-hohe-lohnkosten-deutschland/",
+      "title": "Sind die Lohnkosten in Deutschland zu hoch?",
+      "slug": "zu-hohe-lohnkosten-deutschland",
+      "tags": [],
+      "synonyms": [],
+      "category": "detail",
+      "canonicalTarget": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/"
     },
     {
       "url": "/wirkungsradar/embed/card/arbeit-lohnt-sich-nicht-mehr/",
@@ -5591,6 +5600,25 @@
       "synonyms": [],
       "category": "live",
       "canonicalTarget": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/"
+    },
+    {
+      "url": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/",
+      "title": "Sind die Lohnkosten in Deutschland zu hoch?",
+      "slug": "zu-hohe-lohnkosten-deutschland",
+      "tags": [
+        "Datenstand: 2026-06-09",
+        "Menschen sind keine Kostenstelle.",
+        "Geprüft wird der Frame, nicht Personen.",
+        "2026-06-09",
+        "Der Satz hat einen prüfbaren Kern, aber die Schlussfolgerung ist verkürzt.",
+        "Fakten, Folgekosten, Vertrauen, Alltag, Infrastruktur und Demokratie.",
+        "Belegt einen Teil der Einordnung. Grenze: Datenstand und Bilanzgrenze prüfen.",
+        "Warum zieht dieses Narrativ?",
+        "Ergänzende Mechanik"
+      ],
+      "synonyms": [],
+      "category": "live",
+      "canonicalTarget": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/"
     },
     {
       "url": "/wirkungsradar/methode/",
@@ -10356,6 +10384,14 @@
     {
       "type": "exakte Dublette",
       "urls": [
+        "/wirkungsradar/detail/zu-hohe-lohnkosten-deutschland/",
+        "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/"
+      ],
+      "canonicalTarget": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/"
+    },
+    {
+      "type": "exakte Dublette",
+      "urls": [
         "/wirkungsradar/embed/card/co2-preis-oder-fossile-systemkosten/",
         "/wirkungsradar/embed/host/co2-preis-oder-fossile-systemkosten/",
         "/wirkungsradar/embed/trust/co2-preis-oder-fossile-systemkosten/"
@@ -12360,6 +12396,11 @@
       "from": "/wirkungsradar/detail/wokeness-spaltet-die-gesellschaft/",
       "to": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/",
       "title": "Wokeness spaltet die Gesellschaft?"
+    },
+    {
+      "from": "/wirkungsradar/detail/zu-hohe-lohnkosten-deutschland/",
+      "to": "/wirkungsradar/live/zu-hohe-lohnkosten-deutschland/",
+      "title": "Sind die Lohnkosten in Deutschland zu hoch?"
     },
     {
       "from": "/wirkungsradar/live/altparteien/",
