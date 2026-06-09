@@ -32,7 +32,7 @@
 
       .kwi-control-band {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-columns: minmax(220px, 1fr) minmax(220px, .8fr) auto;
         gap: .75rem;
         align-items: end;
         border: 1px solid rgba(21, 37, 49, .14);
@@ -47,13 +47,19 @@
         font-weight: 700;
       }
 
-      .kwi-control-band input {
+      .kwi-control-band input,
+      .kwi-control-band select {
+        width: 100%;
         min-height: 44px;
         border: 1px solid rgba(21, 37, 49, .22);
         border-radius: 6px;
         padding: .65rem .75rem;
         font: inherit;
         background: #fff;
+      }
+
+      .kwi-control-band select {
+        cursor: pointer;
       }
 
       .kwi-status {
@@ -603,7 +609,7 @@
     </header>
 
     <main data-pagefind-body>
-      <section class="section kwi-beta-shell" data-kwi-beta data-generic-tool-explanation-ready="true" data-manifest="../../assets/data/kwi/municipalities.json" data-base="../../assets/data/kwi/">
+      <section class="section kwi-beta-shell" data-kwi-beta data-generic-tool-explanation-ready="true" data-manifest="../../assets/data/kwi/municipalities.json" data-base="../../assets/data/kwi/" data-live-api="/api/kwi">
         <div class="section-header">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Erleben</a></nav>
           <p class="hero-kicker">Beta-Tool · KWI 1.0</p>
@@ -645,10 +651,15 @@
         </div>
 
         <form class="kwi-control-band" data-kwi-form>
-          <label for="kwi-municipality">Kommune
-            <input id="kwi-municipality" data-kwi-input list="kwi-municipalities" name="municipality" autocomplete="off">
+          <label for="kwi-municipality">Kommune eingeben
+            <input id="kwi-municipality" data-kwi-input list="kwi-municipalities" name="municipality" autocomplete="off" placeholder="z. B. Bielefeld, Leipzig, Mannheim">
           </label>
           <datalist id="kwi-municipalities" data-kwi-options></datalist>
+          <label for="kwi-snapshot-select">Vorliegende Daten
+            <select id="kwi-snapshot-select" data-kwi-select name="snapshot">
+              <option value="">Snapshots werden geladen ...</option>
+            </select>
+          </label>
           <button class="btn btn-primary" type="submit">Wirkungsprofil öffnen</button>
         </form>
         <p class="kwi-status" data-kwi-status aria-live="polite"></p>
@@ -659,7 +670,7 @@
           </div>
           <div class="kwi-progress-track" aria-hidden="true"><span class="kwi-progress-bar"></span></div>
         </div>
-        <p class="kwi-live-note"><strong>Beta-Hinweis:</strong> Diese öffentliche Beta nutzt derzeit vorbereitete Snapshots für Gütersloh und Mannheim. Die Live-Erzeugung für weitere Kommunen ist technisch vorbereitet, braucht aber noch eine serverseitige API-Schicht außerhalb von GitHub Pages.</p>
+        <p class="kwi-live-note"><strong>Beta-Hinweis:</strong> Die Eingabe sucht zuerst in vorhandenen Snapshots und versucht danach den Live-Endpunkt <code>/api/kwi</code>. Auf GitHub Pages braucht dieser Live-Endpunkt einen zusätzlichen Serverless-Host; bis zur Aktivierung funktionieren die Kommunen im Dropdown sofort.</p>
         <div class="button-row">
           <a class="btn btn-secondary" href="../../fuer/kommunen/kommunaler-wirkungsindex.html">Methodik und Datenkonzept</a>
           <a class="btn btn-secondary" href="../../bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/">Dossier lesen</a>
@@ -781,8 +792,8 @@
         <div class="card-grid three">
           <article class="card">
             <p class="card-kicker">Datenbasis</p>
-            <h2 class="card-title" id="kwi-method-title">Öffentliche Beta mit Snapshots</h2>
-            <p>Die öffentliche Beta lädt gespeicherte JSON-Snapshots. Für beliebige Kommunen ist ein serverseitiger Abruf vorbereitet, aber noch nicht aktiv: Erst mit einem Backend- oder Serverless-Endpunkt kann die Seite SDG-Bereich-Daten suchen, Snapshots erzeugen und cachen.</p>
+            <h2 class="card-title" id="kwi-method-title">Öffentliche Beta mit Live-Pfad</h2>
+            <p>Die öffentliche Beta lädt vorhandene JSON-Snapshots direkt und ruft für freie Eingaben den vorbereiteten Live-Endpunkt auf. Damit beliebige Kommunen öffentlich funktionieren, muss <code>/api/kwi</code> auf einem Serverless- oder Backend-Host ausgeführt werden.</p>
           </article>
           <article class="card">
             <p class="card-kicker">Scorelogik</p>

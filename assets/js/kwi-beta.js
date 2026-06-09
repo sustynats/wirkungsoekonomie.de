@@ -7,6 +7,7 @@
   const liveApi = root.getAttribute("data-live-api") || "";
   const form = root.querySelector("[data-kwi-form]");
   const input = root.querySelector("[data-kwi-input]");
+  const snapshotSelect = root.querySelector("[data-kwi-select]");
   const datalist = root.querySelector("[data-kwi-options]");
   const status = root.querySelector("[data-kwi-status]");
   const result = root.querySelector("[data-kwi-result]");
@@ -22,6 +23,7 @@
     snapshot: null,
     dimension: "Alle",
     progressTimers: [],
+    requestId: 0,
   };
 
   const nf = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 2 });
@@ -51,6 +53,7 @@
   function setBusy(isBusy) {
     if (submitButton) submitButton.disabled = Boolean(isBusy);
     if (input) input.setAttribute("aria-busy", isBusy ? "true" : "false");
+    if (snapshotSelect) snapshotSelect.disabled = Boolean(isBusy);
   }
 
   function updateProgress(title, message) {
@@ -99,6 +102,27 @@
 
   function scoreText(score) {
     return score === null || score === undefined ? "-" : nf.format(score);
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      "\"": "&quot;",
+      "'": "&#39;",
+    })[char]);
+  }
+
+  function normalizeLookup(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ß/g, "ss")
+      .toLowerCase()
+      .replace(/[,/_-]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
   }
 
   function dimensionName(name) {
@@ -187,11 +211,13 @@
   function availableSnapshotsText() {
     const items = state.manifest?.municipalities || [];
     if (!items.length) return "";
-    return ` Vorbereitete Snapshots: ${items.map((item) => item.name).join(", ")}.`;
+    return ` Im Dropdown verfügbar: ${items.map((item) => item.name).join(", ")}.`;
   }
 
-  function liveUnavailableMessage(name) {
-    return `Für "${name}" gibt es in dieser öffentlichen Beta noch keinen vorbereiteten Snapshot. Die Live-Erzeugung für weitere Kommunen ist technisch vorbereitet, aber auf der statischen GitHub-Pages-Seite noch nicht aktiv. Dafür braucht es als nächsten Schritt einen Backend- oder Serverless-Endpunkt, der SDG-Bereich-Daten abruft, einen Snapshot erzeugt und zwischenspeichert.${availableSnapshotsText()}`;
+  function liveUnavailableMessage(name, reason) {
+    const endpoint = liveApi || "/api/kwi";
+    const reasonText = reason ? ` Technischer Hinweis: ${reason}.` : "";
+    return `Für "${name}" konnte noch kein Live-Snapshot geladen werden. Der freie Abruf ist vorbereitet, braucht im öffentlichen Betrieb aber einen erreichbaren Serverless- oder Backend-Endpunkt unter ${endpoint}.${reasonText}${availableSnapshotsText()}`;
   }
 
   function clearRenderedResult() {
@@ -202,15 +228,39 @@
   }
 
   function findMunicipality(query) {
-    const normalized = query.trim().toLowerCase();
-    if (!normalized) return state.manifest.municipalities[0];
+    if (!state.manifest?.municipalities?.length) return null;
+    const normalized = normalizeLookup(query);
+    if (!normalized) return state.manifest?.municipalities?.[0] || null;
     const exact = state.manifest.municipalities.find((item) => {
-      return item.name.toLowerCase() === normalized || item.slug.toLowerCase() === normalized;
+      return normalizeLookup(item.name) === normalized || normalizeLookup(item.slug) === normalized;
     });
     if (exact) return exact;
     return state.manifest.municipalities.find((item) => {
-      return item.name.toLowerCase().includes(normalized) || item.slug.toLowerCase().includes(normalized);
+      return normalizeLookup(item.name).includes(normalized) || normalizeLookup(item.slug).includes(normalized);
     }) || null;
+  }
+
+  function renderMunicipalityControls() {
+    const items = state.manifest?.municipalities || [];
+    if (datalist) {
+      datalist.innerHTML = items.map((item) => `<option value="${escapeHtml(item.name)}"></option>`).join("");
+    }
+    if (!snapshotSelect) return;
+    if (!items.length) {
+      snapshotSelect.innerHTML = '<option value="">Keine Snapshots verfügbar</option>';
+      return;
+    }
+    snapshotSelect.innerHTML = [
+      '<option value="">Snapshot auswählen ...</option>',
+      items.map((item) => {
+        const label = `${item.name} · KWI ${scoreText(item.kwiScore)} · ${item.indicatorCount} Werte`;
+        return `<option value="${escapeHtml(item.slug)}">${escapeHtml(label)}</option>`;
+      }).join(""),
+    ].join("");
+  }
+
+  function setSelectedSnapshot(municipality) {
+    if (snapshotSelect) snapshotSelect.value = municipality?.slug || "";
   }
 
   async function loadJson(url) {
@@ -472,18 +522,34 @@
       setStatus("Für diese Eingabe liegt noch kein lokaler KWI-Snapshot vor.", true);
       return;
     }
-    hideProgress();
-    setStatus("Daten werden geladen ...");
+    const requestId = ++state.requestId;
+    clearRenderedResult();
+    setSelectedSnapshot(municipality);
     setBusy(true);
-    const snapshot = await loadJson(`${dataBase}${municipality.file}`);
-    state.snapshot = snapshot;
-    state.dimension = "Alle";
-    input.value = municipality.name;
-    renderDimensionControls(snapshot);
-    renderSummary(snapshot);
-    renderTable(snapshot);
-    setStatus(`${snapshot.summary.indicatorCount} SDG-Indikatoren geladen.`);
-    setBusy(false);
+    showProgress(
+      "Snapshot wird geladen ...",
+      `Vorliegende Daten für ${municipality.name} werden aus dem KWI-Manifest geholt.`,
+      [
+        { after: 900, title: "Wirkungsprofil wird aufgebaut ...", message: "Dimensionen, MPD-Linie und Kurzinterpretation werden zusammengesetzt." },
+      ]
+    );
+    setStatus(`Daten für ${municipality.name} werden geholt ...`);
+    try {
+      const snapshot = await loadJson(`${dataBase}${municipality.file}`);
+      if (requestId !== state.requestId) return;
+      state.snapshot = snapshot;
+      state.dimension = "Alle";
+      input.value = municipality.name;
+      renderDimensionControls(snapshot);
+      renderSummary(snapshot);
+      renderTable(snapshot);
+      setStatus(`${snapshot.summary.indicatorCount} SDG-Indikatoren für ${snapshot.municipality.name} geladen.`);
+    } finally {
+      if (requestId === state.requestId) {
+        hideProgress();
+        setBusy(false);
+      }
+    }
   }
 
   async function selectLiveMunicipality(query) {
@@ -493,13 +559,17 @@
       return;
     }
     if (!liveApi) {
+      ++state.requestId;
       clearRenderedResult();
+      setSelectedSnapshot(null);
       hideProgress();
       setBusy(false);
       setStatus(liveUnavailableMessage(normalized), true);
       return;
     }
+    const requestId = ++state.requestId;
     clearRenderedResult();
+    setSelectedSnapshot(null);
     setBusy(true);
     showProgress(
       "Kommune wird gesucht ...",
@@ -513,6 +583,7 @@
     setStatus(`Für "${normalized}" liegt noch kein vorbereiteter Snapshot vor. Live-Daten werden angefragt ...`);
     try {
       const snapshot = await loadLiveSnapshot(normalized);
+      if (requestId !== state.requestId) return;
       state.snapshot = snapshot;
       state.dimension = "Alle";
       input.value = snapshot.municipality.name;
@@ -521,17 +592,21 @@
       renderTable(snapshot);
       setStatus(`${snapshot.summary.indicatorCount} SDG-Indikatoren live aus dem SDG-Portal geladen. Snapshot wird serverseitig gecacht.`);
     } catch (error) {
-      setStatus(liveUnavailableMessage(normalized), true);
+      if (requestId === state.requestId) {
+        setStatus(liveUnavailableMessage(normalized, error.message), true);
+      }
     } finally {
-      hideProgress();
-      setBusy(false);
+      if (requestId === state.requestId) {
+        hideProgress();
+        setBusy(false);
+      }
     }
   }
 
   async function init() {
     try {
       state.manifest = await loadJson(manifestUrl);
-      datalist.innerHTML = state.manifest.municipalities.map((item) => `<option value="${item.name}"></option>`).join("");
+      renderMunicipalityControls();
       await selectMunicipality(state.manifest.municipalities[0]);
     } catch (error) {
       hideProgress();
@@ -550,6 +625,25 @@
       setStatus("Der KWI-Snapshot konnte nicht geladen werden.", true);
     });
   });
+
+  if (snapshotSelect) {
+    snapshotSelect.addEventListener("change", () => {
+      const slug = snapshotSelect.value;
+      const municipality = (state.manifest?.municipalities || []).find((item) => item.slug === slug);
+      if (!municipality) return;
+      selectMunicipality(municipality).catch(() => {
+        hideProgress();
+        setBusy(false);
+        setStatus("Der KWI-Snapshot konnte nicht geladen werden.", true);
+      });
+    });
+  }
+
+  if (input) {
+    input.addEventListener("input", () => {
+      setSelectedSnapshot(null);
+    });
+  }
 
   if (dimensionFilter) {
     dimensionFilter.addEventListener("click", (event) => {
