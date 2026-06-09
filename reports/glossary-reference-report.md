@@ -1,9 +1,9 @@
 # Glossar-Referenzindex Report
 
-- Generated: 2026-06-08T23:51:23.264Z
-- Content pages scanned: 1008
-- Glossary terms indexed: 1466
-- Warnings: 619
+- Generated: 2026-06-09T00:41:37.755Z
+- Content pages scanned: 1013
+- Glossary terms indexed: 1467
+- Warnings: 616
 
 ## Stichproben
 
@@ -21,9 +21,9 @@
 - 754 · defined · Kapitel 1 - Meine Reise zur Wirkung - Wirkungsökonomie Online · /referenz/kapitel-001-meine-reise-zur-wirkung/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 138 occurrences, book-chapter +80
 - 709 · defined · Wirkung statt Weltbild - eine wirkungsökonomische Analyse des AfD-Regierungsprogramms · /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 95 occurrences, blog +25
 - 679 · defined · Journalismus: Wirkung statt Klicks | Medien & Öffentlichkeit · /wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 2, 32 occurrences, field +35
+- 674 · defined · Die fünf Wellen öffentlicher Wirkung | Bibliothek der Wirkungsökonomie · /bibliothek/fuenf-wellen-oeffentlicher-wirkung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 4, 275 occurrences, page +20
 - 674 · defined · Kapitel 30 - Von Wirkung zu Messung - Wirkungsökonomie Online · /referenz/kapitel-030-von-wirkung-zu-messung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 93 occurrences, book-chapter +80
 - 674 · defined · Kapitel 92 - Handel, Lieferketten und globale Wirkung - Wirkungsökonomie Online · /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 106 occurrences, book-chapter +80
-- 659 · defined · Resiliente Wertschöpfungsketten und Einkauf nach Wirkung · /wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 3, 69 occurrences, field +35
 
 ### Wirkungspotenzial (wirkungspotenzial)
 
@@ -120,7 +120,6 @@
 - term has no content references: blauer-wasserstoff
 - term has no content references: blei-saeure-batterie
 - term has no content references: brennstoffkette
-- term has no content references: buergerinitiative
 - term has no content references: business-ecosystem
 - term has no content references: business-model-canvas
 - term has no content references: c-rate
@@ -203,7 +202,6 @@
 - term has no content references: faschismus
 - term has no content references: faschistoid
 - term has no content references: faserverbundwerkstoff
-- term has no content references: feindbildlogik
 - term has no content references: feminisierung-von-armut
 - term has no content references: feministische-oekonomie
 - term has no content references: feministische-transformation
@@ -360,4 +358,6 @@
 - term has no content references: mobilitaetsarmut
 - term has no content references: modellblindheit
 - term has no content references: moderner-patriotismus
-- ... 319 weitere Warnungen
+- term has no content references: momentanreserve
+- term has no content references: monetarismus
+- ... 316 weitere Warnungen

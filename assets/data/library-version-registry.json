@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T23:51:43.978Z",
+  "generatedAt": "2026-06-09T00:41:58.432Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -204,18 +204,18 @@
     }
   ],
   "counts": {
-    "total": 1481,
+    "total": 1484,
     "byStatus": {
       "führend": 5,
-      "aktuell": 945,
-      "Arbeitsfassung": 275,
+      "aktuell": 946,
+      "Arbeitsfassung": 277,
       "ältere Fassung": 256
     },
     "byType": {
       "Grundlagenwerk": 63,
       "Glossar": 41,
       "Methodik": 110,
-      "Arbeitspapier": 1196,
+      "Arbeitspapier": 1199,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -224,10 +224,10 @@
     },
     "bySource": {
       "leading-reference": 7,
-      "download-or-document": 715,
+      "download-or-document": 718,
       "online-version": 759
     },
-    "downloadFiles": 715,
+    "downloadFiles": 718,
     "onlineVersions": 759
   },
   "documents": [
@@ -20130,6 +20130,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-kommunaler-wirkungsindex-kwi-diskussionspapier-1-0-pdf",
+      "title": "Wirkung statt Kapital. Für Mensch, Planet und Demokratie.: Diskussionspapier",
+      "shortDescription": "Von kommunaler Nachhaltigkeitsberichterstattung zur wirkungsorientierten Haushalts- und.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/kommunaler_wirkungsindex_kwi_diskussionspapier_1_0.pdf",
+        "sourcePath": "assets/downloads/kommunaler_wirkungsindex_kwi_diskussionspapier_1_0.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-zukunftsbilder-wirkungswohlstand-wirkungs-bip-verlustleistung-index-html",
       "title": "Wirkungs bip verlustleistung",
       "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -29425,6 +29447,50 @@
       "urls": {
         "primary": "assets/downloads/woek_sdgs-sdgplus_detailkonzept_sdgs-und-agenda-2030-als-globaler-referenzrahmen_v0_4.pdf",
         "sourcePath": "assets/downloads/woek_sdgs-sdgplus_detailkonzept_sdgs-und-agenda-2030-als-globaler-referenzrahmen_v0_4.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-dossier-fuenf-wellen-wirkungsentfaltung-v0-1-pdf",
+      "title": "Wirkung statt Kapital. Für Mensch, Planet und Demokratie.: Die fünf Wellen der Wirkungsentfaltung",
+      "shortDescription": "Hinweis: Dieses Papier ist kein amtlicher Index und keine validierte Statistik. Es ist ein Konzeptvorschlag, der bestehende Datenquellen, SDG-Indikatoren und wirkungsökonomische Logik zu einem prüfbaren Modell.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
+        "sourcePath": "assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-dossier-fuenf-wellen-oeffentlicher-wirkung-v0-1-pdf",
+      "title": "Wirkung statt Kapital. Für Mensch, Planet und Demokratie.: Die fünf Wellen öffentlicher Wirkung",
+      "shortDescription": "Hinweis: Dieses Papier ist kein amtlicher Index und keine validierte Statistik. Es ist ein Konzeptvorschlag, der bestehende Datenquellen, SDG-Indikatoren und wirkungsökonomische Logik zu einem prüfbaren Modell.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+        "sourcePath": "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
