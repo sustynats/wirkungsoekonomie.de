@@ -14,6 +14,10 @@ const PUBLIC_BASE = "https://wirkungsoekonomie.de";
 const DATA_STAND = "2026-06-09";
 const CSS_VERSION = "20260605-master-debattenkarten";
 const ACADEMY_NARRATIVE_URL = "https://akademie.wirkungsoekonomie.de/narrativ-einreichen/";
+const NAVIGATION = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
+const HEADER_TEMPLATE = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8");
+const FOOTER_TEMPLATE = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
+const HEADER_UTILITY_LABELS = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 const knownSlugByTitle = new Map(Object.entries({
   "Migration kostet nur?": "migration-kostet-nur",
@@ -1041,6 +1045,97 @@ function write(file, html) {
   fs.writeFileSync(full, `${html.trim()}\n`);
 }
 
+function navMatch(item) {
+  return (item.match || []).join("|");
+}
+
+function navSlug(label) {
+  return label
+    .toLowerCase()
+    .replaceAll("ö", "oe")
+    .replaceAll("ä", "ae")
+    .replaceAll("ü", "ue")
+    .replaceAll("ß", "ss")
+    .replaceAll("&", "und")
+    .replaceAll("/", "-")
+    .replaceAll("?", "")
+    .replaceAll(" ", "-");
+}
+
+function navLink(item, base) {
+  return `<a href="${esc(`${base}${item.href}`)}" data-nav-match="${esc(navMatch(item))}">${esc(item.label)}</a>`;
+}
+
+function navLinks(items, base) {
+  return items.map((item) => navLink(item, base)).join("\n");
+}
+
+function headerItem(item, base) {
+  if (!item.childrenRef) return navLink(item, base);
+
+  const children = NAVIGATION[item.childrenRef] || [];
+  const slug = navSlug(item.label);
+  const panel = navLinks(children, base)
+    .split("\n")
+    .map((line) => `        ${line}`)
+    .join("\n");
+  return `<details class="nav-more nav-${esc(slug)}" data-nav-match="${esc(navMatch(item))}">
+  <summary>${esc(item.label)}</summary>
+  <div class="nav-more-panel">
+${panel}
+  </div>
+</details>`;
+}
+
+function headerNav(base) {
+  return NAVIGATION.header.map((item) => headerItem(item, base)).join("\n");
+}
+
+function headerUtilityNav(base) {
+  return (NAVIGATION.more || [])
+    .filter((item) => HEADER_UTILITY_LABELS.has(item.label))
+    .map((item) => {
+      const label = esc(item.label);
+      const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
+      return `<a class="site-utility-link site-utility-link--${esc(navSlug(item.label))}" href="${esc(`${base}${item.href}`)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${label}</a>`;
+    })
+    .join("\n");
+}
+
+function footerNav(base) {
+  return NAVIGATION.footerGroups
+    .map((group) => `<div class="footer-nav-group">
+  <h3>${esc(group.title)}</h3>
+  <div class="footer-nav-links">
+${navLinks(group.items, base)
+  .split("\n")
+  .map((line) => `      ${line}`)
+  .join("\n")}
+  </div>
+</div>`)
+    .join("\n");
+}
+
+function renderLayoutTemplate(template, base) {
+  return template
+    .replaceAll("{{BASE}}", base)
+    .replaceAll("{{HEADER_NAV}}", headerNav(base))
+    .replaceAll("{{HEADER_UTILITY_NAV}}", headerUtilityNav(base))
+    .replaceAll("{{FOOTER_NAV}}", footerNav(base))
+    .replaceAll("{{FOOTER_LEGAL_NAV}}", navLinks(NAVIGATION.footerLegal, base))
+    .split("\n")
+    .map((line) => (line ? `    ${line}` : line))
+    .join("\n");
+}
+
+function siteHeader(base) {
+  return renderLayoutTemplate(HEADER_TEMPLATE, base);
+}
+
+function siteFooter(base) {
+  return renderLayoutTemplate(FOOTER_TEMPLATE, base);
+}
+
 function shell({ title, description, canonical, base, main, searchType = "Debattenkarte" }) {
   return `<!doctype html>
 <html lang="de">
@@ -1056,23 +1151,9 @@ function shell({ title, description, canonical, base, main, searchType = "Debatt
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
-    </header>
+${siteHeader(base)}
     <main id="inhalt" data-pagefind-body>${main}</main>
-    <footer class="footer" data-search-exclude>
-      <div class="footer-grid">
-        <div>
-          <p class="hero-kicker">Debatten-Kompass</p>
-          <h2>Werkzeug statt Kartenfriedhof.</h2>
-          <p>Diese Debattenkarte folgt dem redaktionellen Debatten-Kompass-Aufbau: Behauptung verstehen, Sofortantwort finden, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Quellen.</p>
-          <p><a class="text-link" href="${base}wirkungsradar/methode/">Methode</a> · <a class="text-link" href="${base}wirkungsradar/debattenkarten/">Alle Debattenkarten</a> · <a class="text-link" href="${base}mitmachen.html">Kontakt und Mitmachen</a></p>
-        </div>
-        <a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a>
-      </div>
-    </footer>
+${siteFooter(base)}
     <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>`;
