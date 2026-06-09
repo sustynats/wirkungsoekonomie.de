@@ -101,7 +101,24 @@ function articleParagraphs() {
   const start = paras.indexOf("Nicht billiger werden. Besser werden.");
   const end = paras.indexOf("LINKEDIN-FASSUNG");
   if (start < 0 || end < 0) throw new Error("Langfassung im DOCX nicht gefunden.");
-  return paras.slice(start + 1, end);
+  return paras
+    .slice(start + 1, end)
+    .map(cleanEditorialLanguage)
+    .filter(Boolean);
+}
+
+function cleanEditorialLanguage(paragraph) {
+  if (
+    /LinkdIn|LinkedIn[- ]?Fassung|LinkedIn[- ]?Artikel|Fassung\s+f(?:ü|ue)r\s+LinkedIn|Fassung\s+f(?:ü|ue)r\s+das\s+Journal|Journal[- ]?Fassung|Journalfassung|Artikelpaket|Redaktionsanweisung/i.test(paragraph)
+  ) {
+    return "";
+  }
+  if (paragraph.startsWith("Armin-Maiwald-Erklärung:")) {
+    return paragraph.replace(/^Armin-Maiwald-Erklärung:\s*/, "Anschaulich gesagt: ");
+  }
+  return paragraph
+    .replaceAll("Armin-Maiwaldisiert", "anschaulich erklärt")
+    .replaceAll("armin-maiwaldisiert", "anschaulich erklärt");
 }
 
 function inline(value) {

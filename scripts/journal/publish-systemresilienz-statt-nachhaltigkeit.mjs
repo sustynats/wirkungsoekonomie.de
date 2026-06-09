@@ -117,12 +117,18 @@ function articleParts() {
 }
 
 function cleanEditorialLanguage(paragraph) {
-  if (/LinkedIn|Redaktions|Artikelpaket|Arbeitsstand|Entwurf/i.test(paragraph)) return "";
+  if (
+    /LinkdIn|LinkedIn|Redaktions|Artikelpaket|Arbeitsstand|Entwurf|Fassung\s+f(?:ü|ue)r\s+LinkedIn|Fassung\s+f(?:ü|ue)r\s+das\s+Journal|Journal[- ]?Fassung|Journalfassung/i.test(paragraph)
+  ) {
+    return "";
+  }
   if (paragraph === "7. Beispiele: Armin-Maiwaldisiert") return "7. Beispiele: Wie Systemresilienz praktisch sichtbar wird";
   if (paragraph.startsWith("Armin-Maiwald-Erklärung:")) {
     return paragraph.replace(/^Armin-Maiwald-Erklärung:\s*/, "Anschaulich gesagt: ");
   }
-  return paragraph.replaceAll("Armin-Maiwaldisiert", "anschaulich erklärt");
+  return paragraph
+    .replaceAll("Armin-Maiwaldisiert", "anschaulich erklärt")
+    .replaceAll("armin-maiwaldisiert", "anschaulich erklärt");
 }
 
 function linkTerms(html) {
