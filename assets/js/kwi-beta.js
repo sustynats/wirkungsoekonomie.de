@@ -40,7 +40,7 @@
   };
   const DEMOCRACY_DATA_CONCEPT = [
     "SDG 16: Straftaten, kommunale Finanzlage und institutionelle Handlungsfähigkeit als erste harte Proxywerte",
-    "Wahlstatistik: Wahlbeteiligung, ungültige Stimmen und Beteiligungstrends aus Bundes-, Landes- und Kommunalwahldaten",
+    "Wahlstatistik: Wahlbeteiligung, ungültige Stimmen und Beteiligungstrends müssen aus Bundes-, Landes- oder Kommunalwahldaten ergänzt werden; sie liegen nicht im aktuellen SDG-Portal-Typ-I-Snapshot.",
     "Transparenz: Ratsinformationen, OParl, offene Haushaltsdaten, Open-Data-Reife, Vergaben und Beschwerdewege",
     "Rechtsstaatlicher Zugang: Nähe zu Amtsgericht, Verfahrensdauer im Gerichtsbezirk, Beratungshilfe und Verwaltungsfairness",
     "SDG+ Zusatzmodule: lokale Medienvielfalt, Zivilgesellschaft, Beteiligungswirksamkeit, Vertrauen und digitale Selbstbestimmung",
@@ -146,7 +146,7 @@
 
   function democracyIncompleteNotice(snapshot) {
     if (!democracyDataIncomplete(snapshot)) return "";
-    return "Demokratie-Datenlage unvollständig: Für eine belastbarere Einordnung fehlen u. a. Wahlbeteiligung, Beteiligungswirksamkeit, Transparenz, Rechtszugang, Medienvielfalt, Zivilgesellschaft und Vertrauensdaten.";
+    return "Demokratie-Datenlage unvollständig: Im aktuellen SDG-Portal-Snapshot fehlen u. a. Wahlbeteiligung, Beteiligungswirksamkeit, Transparenz, Rechtszugang, Medienvielfalt, Zivilgesellschaft und Vertrauensdaten. Wahlbeteiligung ist grundsätzlich über amtliche Wahlstatistik ergänzbar, wird hier aber noch nicht live mitgeladen.";
   }
 
   function clip(value, min, max) {
@@ -698,7 +698,8 @@
         <div>
           <p class="card-kicker">SDG+ Demokratie</p>
           <h3 id="kwi-democracy-concept-title">Demokratie braucht eine eigene Datenlogik.</h3>
-          <p>Die Demokratie-Dimension ist in dieser Beta noch kein vollständiger SDG+-Index. Sie nutzt derzeit verfügbare Proxy-Indikatoren. Starke Ausschläge können durch wenige Finanz- oder Sicherheitswerte entstehen und sind keine vollständige Demokratiebewertung.</p>
+          <p>Die Demokratie-Dimension ist in dieser Beta noch kein vollständiger SDG+-Index. Sie nutzt derzeit vor allem die im SDG-Portal verfügbaren Typ-I-Proxy-Indikatoren. Starke Ausschläge können durch wenige Finanz- oder Sicherheitswerte entstehen und sind keine vollständige Demokratiebewertung.</p>
+          <p>Wahlbeteiligung ist fachlich ein Kernindikator, wird aber nicht aus dem aktuellen SDG-Portal-Snapshot geliefert. Für die nächste Datenstufe braucht der KWI deshalb einen ergänzenden Wahlstatistik-Adapter aus Bundes-, Landes- oder kommunalen Wahldaten.</p>
           <article class="kwi-explain-box">
             <p class="card-kicker">Erklärbox</p>
             <h4>Warum Finanzdaten im Demokratie-Proxy auftauchen</h4>
