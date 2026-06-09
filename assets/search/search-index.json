@@ -2,7 +2,7 @@
   {
     "id": "page-erleben-kommunaler-wirkungsindex-rueckkopplung",
     "title": "Kommunaler Wirkungsindex: Vom Wirkungsprofil zur besseren Entscheidung",
-    "description": "Der KWI macht kommunale Wirkungsrückkopplung sichtbar: Daten, Haushalt, Maßnahmen und demokratische Entscheidungen werden besser verbunden.",
+    "description": "Der KWI macht kommunale Wirkungsrückkopplung sichtbar: Daten, Haushalt, Maßnahmen und demokratische Entscheidungen werden besser verbunden, ohne Ranking oder automatische Entscheidung.",
     "url": "/erleben/kommunaler-wirkungsindex/#kwi-feedback-title",
     "section": "Erleben",
     "type": "Beta-Tool",
@@ -28,7 +28,10 @@
       "Wirkungshaushalt",
       "KWI 1.0",
       "KWI 2.0",
-      "KWI 3.0"
+      "KWI 3.0",
+      "kein Ranking",
+      "Schutzlinien",
+      "demokratische Entscheidung"
     ],
     "aliases": [
       "Wofür wird der KWI gebraucht?",
@@ -37,9 +40,12 @@
       "Der KWI ersetzt keine Politik",
       "KWI Rückkopplung",
       "Wozu braucht man den Kommunalen Wirkungsindex?",
-      "kommunale Steuerung mit KWI"
+      "kommunale Steuerung mit KWI",
+      "KWI ist kein Ranking",
+      "KWI kein Städtewettbewerb",
+      "KWI keine automatische Entscheidung"
     ],
-    "body": "Beta-Tool · KWI 1.0 Wie gesund ist Ihre Kommune? Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Planet und Demokratie vor Ort tatsächlich geht. Planet meint Klima, Umwelt, Ressourcen und natürliche Lebensgrundlagen. Ort eingeben, Wirkungsprofil ansehen, gemeinsam besser entscheiden. Die öffentliche Beta ruft für freie Eingaben den Live-Endpunkt der Akademie-App ab und lädt vorhandene Snapshots sofort aus dem Dropdown. Wofür wird der KWI gebraucht? Der KWI ist in der Wirkungsökonomie nicht nur ein Bericht. Er ist eine Rückkopplungsschicht: Er macht sichtbar, wo kommunales Handeln auf Mensch, Planet und Demokratie wirkt und wo Rat, Verwaltung und Öffentlichkeit genauer hinschauen sollten. Der KWI entscheidet nicht. Er macht entscheidbar. Der KWI ist nicht der Endpunkt. Er ist der Einstieg in kommunale Wirkungsrückkopplung. Ein Bericht zeigt, was ist. Rückkopplung fragt, was daraus folgt. KWI 1.0 zeigt Status und Transparenz. KWI 2.0 verbindet den Status perspektivisch mit Haushalt und Maßnahmen. KWI 3.0 fragt in einer späteren Ausbaustufe nach Wirkung pro Euro, Szenarien, Folgekosten und Prävention. Der KWI ersetzt keine Politik. Er verbessert die Rückkopplung zwischen Daten, Haushalt, Maßnahmen und demokratischer Entscheidung.",
+    "body": "Beta-Tool · KWI 1.0 Wie gesund ist Ihre Kommune? Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Planet und Demokratie vor Ort tatsächlich geht. Planet meint Klima, Umwelt, Ressourcen und natürliche Lebensgrundlagen. Ort eingeben, Wirkungsprofil ansehen, gemeinsam besser entscheiden. Die öffentliche Beta ruft für freie Eingaben den Live-Endpunkt der Akademie-App ab und lädt vorhandene Snapshots sofort aus dem Dropdown. Wofür wird der KWI gebraucht? Der KWI ist in der Wirkungsökonomie nicht nur ein Bericht. Er ist eine Rückkopplungsschicht: Er macht sichtbar, wo kommunales Handeln auf Mensch, Planet und Demokratie wirkt und wo Rat, Verwaltung und Öffentlichkeit genauer hinschauen sollten. Der KWI entscheidet nicht. Er macht entscheidbar. Der KWI ist nicht der Endpunkt. Er ist der Einstieg in kommunale Wirkungsrückkopplung. Ein Bericht zeigt, was ist. Rückkopplung fragt, was daraus folgt. KWI 1.0 zeigt Status und Transparenz. KWI 2.0 verbindet den Status perspektivisch mit Haushalt und Maßnahmen. KWI 3.0 fragt in einer späteren Ausbaustufe nach Wirkung pro Euro, Szenarien, Folgekosten und Prävention. Der KWI ersetzt keine Politik. Er verbessert die Rückkopplung zwischen Daten, Haushalt, Maßnahmen und demokratischer Entscheidung. Schutzlinie: Der KWI ist kein Ranking, kein Städtewettbewerb und keine automatische Bewertung. Er vergleicht Kommunen nicht als gut oder schlecht, sondern markiert Status, Trends, Prüffragen, Datenlücken und mögliche Rückkopplungen für demokratische Entscheidungen.",
     "semanticTerms": [
       "Kommunaler Wirkungsindex",
       "Mensch, Planet und Demokratie",
@@ -8584,7 +8590,7 @@
   {
     "id": "page-erleben-kommunaler-wirkungsindex-index",
     "title": "KWI Beta: Gesundheitscheck für Kommunen",
-    "description": "KWI-Beta als Gesundheitscheck und Rückkopplungsschicht für kommunale Entscheidungen entlang Mensch, Planet und Demokratie.",
+    "description": "KWI-Beta als Gesundheitscheck und Rückkopplungsschicht für kommunale Entscheidungen entlang Mensch, Planet und Demokratie, nicht als Ranking.",
     "url": "/erleben/kommunaler-wirkungsindex/",
     "section": "Erleben",
     "type": "Beta-Tool",
@@ -8595,16 +8601,22 @@
     "tags": [
       "erleben",
       "kommunaler",
-      "wirkungsindex"
+      "wirkungsindex",
+      "kein Ranking",
+      "Schutzlinien",
+      "demokratische Entscheidung"
     ],
     "aliases": [
       "Wofür wird der KWI gebraucht?",
       "Der KWI entscheidet nicht. Er macht entscheidbar.",
       "KWI Rückkopplung",
       "kommunale Wirkungsrückkopplung",
-      "Wirkungsprofil zur besseren Entscheidung"
+      "Wirkungsprofil zur besseren Entscheidung",
+      "KWI ist kein Ranking",
+      "KWI kein Städtewettbewerb",
+      "KWI keine automatische Entscheidung"
     ],
-    "body": "Beta-Tool · KWI 1.0 Wie gesund ist Ihre Kommune? Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Planet und Demokratie vor Ort tatsächlich geht. Planet meint Klima, Umwelt, Ressourcen und natürliche Lebensgrundlagen. Ort eingeben, Wirkungsprofil ansehen, gemeinsam besser entscheiden. Die öffentliche Beta ruft für freie Eingaben den Live-Endpunkt der Akademie-App ab und lädt vorhandene Snapshots sofort aus dem Dropdown. Wofür wird der KWI gebraucht? Der KWI ist in der Wirkungsökonomie nicht nur ein Bericht. Er ist eine Rückkopplungsschicht: Er macht sichtbar, wo kommunales Handeln auf Mensch, Planet und Demokratie wirkt und wo Rat, Verwaltung und Öffentlichkeit genauer hinschauen sollten. Der KWI entscheidet nicht. Er macht entscheidbar. Der KWI ist nicht der Endpunkt. Er ist der Einstieg in kommunale Wirkungsrückkopplung. Ein Bericht zeigt, was ist. Rückkopplung fragt, was daraus folgt. KWI 1.0 zeigt Status und Transparenz. KWI 2.0 verbindet den Status perspektivisch mit Haushalt und Maßnahmen. KWI 3.0 fragt in einer späteren Ausbaustufe nach Wirkung pro Euro, Szenarien, Folgekosten und Prävention. Der KWI ersetzt keine Politik. Er verbessert die Rückkopplung zwischen Daten, Haushalt, Maßnahmen und demokratischer Entscheidung.",
+    "body": "Beta-Tool · KWI 1.0 Wie gesund ist Ihre Kommune? Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Planet und Demokratie vor Ort tatsächlich geht. Planet meint Klima, Umwelt, Ressourcen und natürliche Lebensgrundlagen. Ort eingeben, Wirkungsprofil ansehen, gemeinsam besser entscheiden. Die öffentliche Beta ruft für freie Eingaben den Live-Endpunkt der Akademie-App ab und lädt vorhandene Snapshots sofort aus dem Dropdown. Wofür wird der KWI gebraucht? Der KWI ist in der Wirkungsökonomie nicht nur ein Bericht. Er ist eine Rückkopplungsschicht: Er macht sichtbar, wo kommunales Handeln auf Mensch, Planet und Demokratie wirkt und wo Rat, Verwaltung und Öffentlichkeit genauer hinschauen sollten. Der KWI entscheidet nicht. Er macht entscheidbar. Der KWI ist nicht der Endpunkt. Er ist der Einstieg in kommunale Wirkungsrückkopplung. Ein Bericht zeigt, was ist. Rückkopplung fragt, was daraus folgt. KWI 1.0 zeigt Status und Transparenz. KWI 2.0 verbindet den Status perspektivisch mit Haushalt und Maßnahmen. KWI 3.0 fragt in einer späteren Ausbaustufe nach Wirkung pro Euro, Szenarien, Folgekosten und Prävention. Der KWI ersetzt keine Politik. Er verbessert die Rückkopplung zwischen Daten, Haushalt, Maßnahmen und demokratischer Entscheidung. Schutzlinie: Der KWI ist kein Ranking, kein Städtewettbewerb und keine automatische Bewertung. Er vergleicht Kommunen nicht als gut oder schlecht, sondern markiert Status, Trends, Prüffragen, Datenlücken und mögliche Rückkopplungen für demokratische Entscheidungen.",
     "priority": 130,
     "semanticTerms": [
       "Kommunaler Wirkungsindex",
