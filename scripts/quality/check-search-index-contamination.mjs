@@ -32,6 +32,7 @@ const blockedPublicFragments = [
   "protectionnotice",
   "[button:",
   "codex-anweisung",
+  "dein browser kann diese audiodatei nicht direkt abspielen",
 ];
 
 const failures = [];

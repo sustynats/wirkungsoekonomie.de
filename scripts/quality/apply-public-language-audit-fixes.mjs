@@ -51,6 +51,14 @@ function walk(entry, files = []) {
 function cleanPublicLanguage(html) {
   return html
     .replace(/Aktuelle Einordnungen werden geladen\./g, "Aktuelle Einordnungen findest du im Journal.")
+    .replace(/Dein Browser kann diese Audiodatei nicht direkt abspielen\./g, "")
+    .replace(
+      /Jedes Portal erhält: Portalübersicht, Konzeptpapier, Gesamtdossier, Detailkonzepte zu allen Unterbereichen, Einzeldossiers zu allen Unterbereichen, Online-HTML\/Volltext, Download\/Export, Tool-Spezifikation, Codex-Anweisung und politische\./g,
+      "Jedes Portal bündelt Übersicht, Konzeptpapier, Dossier, Detailtexte, Onlinefassung, Downloads, methodische Einordnung und politische Anschlussfragen.",
+    )
+    .replace(/Tool-Spezifikation/g, "Methodenbeschreibung")
+    .replace(/Codex-Anweisung/g, "redaktionelle Arbeitsnotiz")
+    .replace(/CodeX-Anweisung/g, "redaktionelle Arbeitsnotiz")
     .replace(/PDF-Fassung in Produktion/g, "Vertiefungsmaterial wird ergänzt, sobald eine geprüfte Fassung vorliegt")
     .replace(/PDF wird ergänzt/g, "Vertiefungsmaterial wird ergänzt, sobald eine geprüfte Fassung vorliegt")
     .replace(/ergänzende ergänzende/g, "ergänzende")
@@ -73,7 +81,8 @@ function cleanPublicLanguage(html) {
     .replace(/\s+·\s+Druckdatum:\s*\d{1,2}\.\d{1,2}\.\d{4}/g, "")
     .replace(/\s+·\s+Druckdatum:\s*\d{4}-\d{2}-\d{2}/g, "")
     .replace(/Druckdatum:\s*\d{1,2}\.\d{1,2}\.\d{4}/g, "")
-    .replace(/Druckdatum:\s*\d{4}-\d{2}-\d{2}/g, "");
+    .replace(/Druckdatum:\s*\d{4}-\d{2}-\d{2}/g, "")
+    .replace(/[ \t]+\n/g, "\n");
 }
 
 const files = [...new Set(HTML_TARGETS.flatMap((target) => walk(target)))];

@@ -1,7 +1,7 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-09T16:01:33.942Z
-Resolved references: 7202
+Erzeugt: 2026-06-09T16:55:03.554Z
+Resolved references: 7203
 Warnings: 2710
 
 ## Warnungen
@@ -538,6 +538,7 @@ Warnings: 2710
 - /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/der-versoehner-und-die-wellen/ -> Der Versöhner und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
 - /bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/#schlussbemerkung -> Kommunaler Wirkungsindex (KWI) | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
@@ -1508,4 +1509,3 @@ Warnings: 2710
 - /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html -> AI First ist eine Sackgasse – nicht, weil KI schlecht ist, sondern weil wir sie falsch denken. (Journalartikel, Beschreibung: ja)
 - /blog/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.html -> Neues Grundsicherungs-Kapitel – nur ein Namenswechsel? Eine WÖk-Analyse zum CDU/SPD-Plan zur Abschaffung des Bürgergelds (Journalartikel, Beschreibung: ja)
-- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
