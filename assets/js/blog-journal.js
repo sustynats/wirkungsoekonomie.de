@@ -298,7 +298,11 @@
 
   function normalizeImagePath(value) {
     if (!value) return "";
-    return String(value).replace(/^https?:\/\/wirkungsoekonomie\.de\//, "/").replace(/^\//, "");
+    const path = String(value).replace(/^https?:\/\/wirkungsoekonomie\.de\//, "/");
+    if (/^https?:\/\//.test(path) || path.startsWith("/")) {
+      return path;
+    }
+    return `/${path.replace(/^\/+/, "")}`;
   }
 
   function slugify(value) {
