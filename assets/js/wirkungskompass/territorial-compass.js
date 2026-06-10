@@ -65,6 +65,16 @@ function formatNumber(value, suffix = "") {
   return `${new Intl.NumberFormat("de-DE").format(value)}${suffix}`;
 }
 
+function formatScore(value) {
+  if (typeof value !== "number" || Number.isNaN(value)) return "offen";
+  return new Intl.NumberFormat("de-DE", { maximumFractionDigits: 1 }).format(value);
+}
+
+function numericValue(value) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
 function snapshotsForUniverse(state, universe) {
   const snapshots = state.snapshotManifest?.snapshots || [];
   return snapshots.filter((snapshot) => snapshot.shortname === universe.shortname || snapshot.universe_id === universe.universe_id);
@@ -127,6 +137,103 @@ function latestObservations(observations) {
     if (dimensionCompare !== 0) return dimensionCompare;
     return text(a.indicator.name).localeCompare(text(b.indicator.name));
   });
+}
+
+function buildScoringModel(state) {
+  if (state.scoringModel) return state.scoringModel;
+  const latestByEntityIndicator = new Map();
+  (state.snapshotData || []).forEach((snapshot) => {
+    const indicators = new Map((snapshot.data?.indicators || []).map((indicator) => [indicator.indicator_id, indicator]));
+    (snapshot.data?.observations || []).forEach((observation) => {
+      const value = numericValue(observation.raw_value);
+      if (value === null) return;
+      const indicator = indicators.get(observation.indicator_id) || {};
+      const key = `${observation.entity_id}::${observation.indicator_id}`;
+      const current = latestByEntityIndicator.get(key);
+      if (!current || Number(observation.year) > Number(current.year)) {
+        latestByEntityIndicator.set(key, {
+          ...observation,
+          raw_value: value,
+          provider_id: snapshot.provider_id || snapshot.data?.provider_id,
+          provider_title: snapshot.provider_title || snapshot.data?.provider_title,
+          indicator
+        });
+      }
+    });
+  });
+
+  const valuesByIndicator = new Map();
+  latestByEntityIndicator.forEach((observation) => {
+    if (!valuesByIndicator.has(observation.indicator_id)) valuesByIndicator.set(observation.indicator_id, []);
+    valuesByIndicator.get(observation.indicator_id).push(Number(observation.raw_value));
+  });
+
+  const baselines = new Map();
+  valuesByIndicator.forEach((values, indicatorId) => {
+    const sorted = values.filter(Number.isFinite).sort((a, b) => a - b);
+    if (!sorted.length) return;
+    const min = sorted[0];
+    const max = sorted[sorted.length - 1];
+    baselines.set(indicatorId, { min, max, count: sorted.length });
+  });
+
+  state.scoringModel = { latestByEntityIndicator, baselines };
+  return state.scoringModel;
+}
+
+function normalizedIndicatorScore(observation, baseline) {
+  const value = numericValue(observation.raw_value);
+  if (value === null || !baseline || baseline.count < 2) return null;
+  const polarity = observation.indicator?.polarity || "higher_is_better";
+  if (baseline.max === baseline.min) return 50;
+  const position = ((value - baseline.min) / (baseline.max - baseline.min)) * 100;
+  if (polarity === "lower_is_better" || polarity === "near_zero_better") return Math.max(0, Math.min(100, 100 - position));
+  if (polarity === "higher_is_better") return Math.max(0, Math.min(100, position));
+  return null;
+}
+
+function scoreProfileForEntity(entity, state) {
+  const model = buildScoringModel(state);
+  const latest = [...model.latestByEntityIndicator.values()]
+    .filter((observation) => observation.entity_id === entity.entity_id)
+    .map((observation) => {
+      const score = normalizedIndicatorScore(observation, model.baselines.get(observation.indicator_id));
+      return { ...observation, beta_score: score };
+    });
+  const scored = latest.filter((observation) => typeof observation.beta_score === "number");
+  const dimensions = {};
+  scored.forEach((observation) => {
+    const dimension = observation.indicator.dimension || "datenqualitaet";
+    if (!dimensions[dimension]) dimensions[dimension] = { items: [], score: null };
+    dimensions[dimension].items.push(observation);
+  });
+  Object.values(dimensions).forEach((dimension) => {
+    dimension.score = dimension.items.reduce((sum, item) => sum + item.beta_score, 0) / dimension.items.length;
+  });
+  const mpdDimensions = ["mensch", "planet", "demokratie"].filter((dimension) => dimensions[dimension]?.items?.length);
+  const overall = mpdDimensions.length
+    ? mpdDimensions.reduce((sum, dimension) => sum + dimensions[dimension].score, 0) / mpdDimensions.length
+    : null;
+  const providerCount = new Set(latest.map((observation) => observation.provider_title || observation.provider_id || observation.source_id)).size;
+  const dataQualityScore = latest.length
+    ? Math.min(100, Math.round((mpdDimensions.length / 3) * 45 + Math.min(1, scored.length / 18) * 40 + Math.min(1, providerCount / 3) * 15))
+    : null;
+  const years = [...new Set(latest.map((observation) => Number(observation.year)).filter(Boolean))].sort((a, b) => a - b);
+  return {
+    latest,
+    scored,
+    dimensions,
+    overall,
+    dataQualityScore,
+    dimensionCount: mpdDimensions.length,
+    indicatorCount: scored.length,
+    providerCount,
+    years
+  };
+}
+
+function scoredItemsForDimension(scoreProfile, dimension) {
+  return [...(scoreProfile.dimensions[dimension]?.items || [])].sort((a, b) => b.beta_score - a.beta_score);
 }
 
 function dataProfileForEntity(entity, state) {
@@ -205,14 +312,16 @@ function scoreCard(label, note) {
   return `
     <article class="card wk-score-card wk-score-card-empty">
       <p class="card-kicker">${escapeHtml(label)}</p>
-      <h3 class="card-title">Nicht berechnet</h3>
+      <h3 class="card-title">Keine Rohdaten im Snapshot</h3>
       <p class="card-text">${escapeHtml(note)}</p>
+      <p class="card-text">Für diese Dimension wird kein Wert unterstellt. Die Lücke bleibt sichtbar.</p>
     </article>
   `;
 }
 
-function rawDimensionCard(label, dimension, note, profile) {
+function rawDimensionCard(label, dimension, note, profile, scoreProfile) {
   const dimensionProfile = profile.dimensions[dimension];
+  const scoreDimension = scoreProfile.dimensions[dimension];
   if (!dimensionProfile) return scoreCard(label, note);
   const indicatorCount = dimensionProfile.indicatorIds.size;
   const providerCount = dimensionProfile.providers.size;
@@ -220,26 +329,30 @@ function rawDimensionCard(label, dimension, note, profile) {
   const latestValue = example
     ? `${formatNumber(Number(example.raw_value))} ${text(example.unit, "")}`.trim()
     : "Werte vorhanden";
+  const strongest = scoredItemsForDimension(scoreProfile, dimension)[0];
   return `
     <article class="card wk-score-card">
       <p class="card-kicker">${escapeHtml(label)}</p>
-      <h3 class="card-title">Rohdaten vorhanden</h3>
+      <h3 class="card-title">${scoreDimension ? `${formatScore(scoreDimension.score)}` : "Rohdaten vorhanden"}</h3>
+      <p class="card-text">${scoreDimension ? "Vorläufiger Beta-Arbeitswert 0-100, relativ zum geladenen Snapshot-Universum." : "Noch nicht normalisierbar."}</p>
       <p class="card-text">${indicatorCount} Indikator${indicatorCount === 1 ? "" : "en"} · ${dimensionProfile.observations} Beobachtung${dimensionProfile.observations === 1 ? "" : "en"} · jüngstes Jahr ${escapeHtml(dimensionProfile.latestYear || "offen")}</p>
       <p class="card-text"><strong>Beispiel:</strong> ${escapeHtml(example?.indicator?.name || note)}${example ? ` (${escapeHtml(latestValue)})` : ""}</p>
-      <p class="card-text">${providerCount} Snapshot-Provider · noch nicht fachlich normalisiert.</p>
+      ${strongest ? `<p class="card-text"><strong>Stärkster Arbeitswert:</strong> ${escapeHtml(strongest.indicator.name || strongest.indicator_id)} (${formatScore(strongest.beta_score)}).</p>` : ""}
+      <p class="card-text">${providerCount} Snapshot-Provider · Arbeitswert, kein finaler Zielpfadscore.</p>
     </article>
   `;
 }
 
-function dataQualityCard(profile, summary) {
+function dataQualityCard(profile, summary, scoreProfile) {
   const providerCount = new Set(profile.observations.map((observation) => observation.provider_title || observation.provider_id || observation.source_id)).size;
   const latestYears = profile.latest.map((observation) => Number(observation.year)).filter(Boolean);
   const latestYear = latestYears.length ? Math.max(...latestYears) : null;
-  const status = summary.observationCount > 0 ? "Snapshot geladen" : "Nicht berechnet";
+  const status = typeof scoreProfile.dataQualityScore === "number" ? formatScore(scoreProfile.dataQualityScore) : (summary.observationCount > 0 ? "Snapshot geladen" : "Keine Rohdaten");
   return `
     <article class="card wk-score-card">
       <p class="card-kicker">${escapeHtml(dimensionLabels.datenqualitaet)}</p>
       <h3 class="card-title">${escapeHtml(status)}</h3>
+      <p class="card-text">${typeof scoreProfile.dataQualityScore === "number" ? "Vorläufiger Datenqualitäts-Arbeitswert aus Abdeckung, Providerzahl und verwertbaren Indikatoren." : "Noch kein Datenqualitätswert."}</p>
       <p class="card-text">${profile.latest.length} Indikator${profile.latest.length === 1 ? "" : "en"} · ${summary.observationCount} Rohbeobachtung${summary.observationCount === 1 ? "" : "en"} · ${providerCount} Provider.</p>
       <p class="card-text">Jüngstes Datenjahr: ${escapeHtml(latestYear || "offen")}. Lizenz, Abrufdatum und Quellenanker sind im Snapshot sichtbar.</p>
     </article>
@@ -280,9 +393,91 @@ function renderRawObservationRows(profile) {
   `;
 }
 
+function timelineScoresForEntity(entity, state) {
+  const observations = observationsForEntity(entity, state)
+    .map((observation) => ({ ...observation, raw_value: numericValue(observation.raw_value) }))
+    .filter((observation) => observation.raw_value !== null);
+  const model = buildScoringModel(state);
+  const byYear = new Map();
+  observations.forEach((observation) => {
+    const baseline = model.baselines.get(observation.indicator_id);
+    const betaScore = normalizedIndicatorScore(observation, baseline);
+    if (typeof betaScore !== "number") return;
+    const year = Number(observation.year);
+    if (!year) return;
+    if (!byYear.has(year)) byYear.set(year, {});
+    const bucket = byYear.get(year);
+    const dimension = observation.indicator.dimension || "datenqualitaet";
+    if (!bucket[dimension]) bucket[dimension] = [];
+    bucket[dimension].push(betaScore);
+  });
+  return [...byYear.entries()].map(([year, bucket]) => {
+    const entry = { year };
+    ["mensch", "planet", "demokratie"].forEach((dimension) => {
+      if (bucket[dimension]?.length) {
+        entry[dimension] = bucket[dimension].reduce((sum, value) => sum + value, 0) / bucket[dimension].length;
+      }
+    });
+    const dimensions = ["mensch", "planet", "demokratie"].filter((dimension) => typeof entry[dimension] === "number");
+    if (dimensions.length) entry.status = dimensions.reduce((sum, dimension) => sum + entry[dimension], 0) / dimensions.length;
+    return entry;
+  }).filter((entry) => typeof entry.status === "number").sort((a, b) => a.year - b.year);
+}
+
+function chartPath(points, years, key) {
+  const valid = points.filter((point) => typeof point[key] === "number");
+  if (valid.length < 2) return "";
+  const minYear = years[0];
+  const maxYear = years[years.length - 1];
+  return valid.map((point, index) => {
+    const x = minYear === maxYear ? 360 : 70 + ((point.year - minYear) / (maxYear - minYear)) * 590;
+    const y = 245 - (Math.max(0, Math.min(100, point[key])) / 100) * 195;
+    return `${index === 0 ? "M" : "L"} ${x.toFixed(1)} ${y.toFixed(1)}`;
+  }).join(" ");
+}
+
+function renderBetaChart(target, entity, state, toolName, summary) {
+  const points = timelineScoresForEntity(entity, state);
+  if (points.length < 2) {
+    renderEmptyChart(target, toolName, summary);
+    return;
+  }
+  const years = points.map((point) => point.year);
+  const series = [
+    ["status", "MPD-Status", "#0b1324"],
+    ["mensch", "Mensch", "#1f7a7a"],
+    ["planet", "Planet", "#7a9442"],
+    ["demokratie", "Demokratie", "#9a6d91"]
+  ];
+  target.innerHTML = `
+    <svg class="wk-chart" viewBox="0 0 720 305" role="img" aria-labelledby="wk-chart-title wk-chart-desc">
+      <title id="wk-chart-title">Vorläufiger Beta-Zeitverlauf</title>
+      <desc id="wk-chart-desc">Relativer Arbeitswert aus vorhandenen Snapshot-Rohdaten. Kein amtlicher Score.</desc>
+      <rect x="1" y="1" width="718" height="303" rx="8" fill="#fbfaf7" stroke="#d9d0c2"></rect>
+      <line x1="70" y1="245" x2="660" y2="245" stroke="#d9d0c2"></line>
+      <line x1="70" y1="50" x2="70" y2="245" stroke="#d9d0c2"></line>
+      <line x1="70" y1="147" x2="660" y2="147" stroke="#e5ddd2"></line>
+      <line x1="70" y1="92" x2="660" y2="64" stroke="#5c6975" stroke-dasharray="7 7"></line>
+      <text x="70" y="35" class="wk-chart-label">Beta-Arbeitswert 0-100</text>
+      <text x="548" y="88" class="wk-chart-label">Orientierungspfad</text>
+      ${series.map(([key, label, color]) => {
+        const path = chartPath(points, years, key);
+        return path ? `<path d="${path}" fill="none" stroke="${color}" stroke-width="${key === "status" ? 4 : 2.5}"></path>` : "";
+      }).join("")}
+      ${years.map((year) => {
+        const x = years[0] === years[years.length - 1] ? 360 : 70 + ((year - years[0]) / (years[years.length - 1] - years[0])) * 590;
+        return `<text x="${x.toFixed(1)}" y="268" class="wk-chart-label">${year}</text>`;
+      }).join("")}
+      <g class="wk-chart-legend">
+        ${series.map(([, label, color], index) => `<circle cx="${80 + index * 118}" cy="288" r="4" fill="${color}"></circle><text x="${92 + index * 118}" y="292">${label}</text>`).join("")}
+      </g>
+    </svg>
+  `;
+}
+
 function renderEmptyChart(target, toolName, summary) {
   const chartText = summary.observationCount > 0
-    ? `${toolName} hat bereits ${summary.observationCount} Rohbeobachtungen im Snapshot. Der Score-Zeitverlauf wird erst gezeichnet, wenn Normalisierung, Zielpfad und Mindestdatenabdeckung validiert sind.`
+    ? `${toolName} hat bereits ${summary.observationCount} Rohbeobachtungen im Snapshot. Ein Zeitverlauf erscheint, sobald fuer mindestens zwei Jahre normalisierbare Beta-Arbeitswerte vorliegen.`
     : `${toolName} zeigt hier künftig Status, Mensch, Planet, Demokratie und Datenqualität über die Zeit. Im Beta-Snapshot liegen noch keine validierten Beobachtungen vor.`;
   target.innerHTML = `
     <svg class="wk-chart" viewBox="0 0 720 305" role="img" aria-labelledby="wk-chart-title wk-chart-desc">
@@ -306,7 +501,16 @@ function renderEmptyChart(target, toolName, summary) {
   `;
 }
 
-function interpretation(entity, universe, summary) {
+function interpretation(entity, universe, summary, scoreProfile = null) {
+  if (scoreProfile?.indicatorCount) {
+    return [
+      `Im vorhandenen Datenstand kann für ${entity.name} ein vorläufiger Beta-Arbeitswert aus ${scoreProfile.indicatorCount} normalisierbaren Indikatoren berechnet werden. Der MPD-Arbeitswert liegt bei ${formatScore(scoreProfile.overall)} von 100, sofern mindestens eine Dimension Daten enthält.`,
+      "Dieser Wert ist relativ zum geladenen Snapshot-Universum min-max-normalisiert. Er ist kein amtlicher Score, kein Ranking, kein finaler Zielpfadwert und keine politische Bewertung.",
+      `Abgedeckt sind aktuell ${scoreProfile.dimensionCount} von 3 MPD-Dimensionen. Die Datenqualität wird als Arbeitswert mit ${formatScore(scoreProfile.dataQualityScore)} von 100 ausgewiesen.`,
+      "Prüffrage: Welche zusätzlichen Indikatoren, Zielpfade und Datenqualitätsregeln müssen ergänzt werden, damit aus dem Arbeitswert ein belastbares Wirkungsprofil wird?",
+      "Diese Einordnung ist kein Ranking, kein amtliches Rating, keine politische Gesinnungsbewertung und keine automatische Entscheidung."
+    ];
+  }
   const dataLine = summary.observationCount > 0
     ? `Im vorhandenen Datenstand liegen für ${entity.name} bereits ${summary.observationCount} Rohbeobachtungen aus versionierten Snapshot-Importen im ${universe.shortname}-Universum vor. Ein Wirkungsprofil wird noch nicht berechnet, weil Normalisierung, Zielpfad, Datenqualität und Mindestabdeckung fachlich validiert werden müssen.`
     : `Im vorhandenen Datenstand liegt für ${entity.name} ein Metadatenprofil im ${universe.shortname}-Universum vor. Ein Wirkungsprofil wird noch nicht berechnet, weil keine versionierten Beobachtungen, Quellenanker und Datenqualitätsprüfungen hinterlegt sind.`;
@@ -318,8 +522,8 @@ function interpretation(entity, universe, summary) {
   ];
 }
 
-function interpretationWithProfile(entity, universe, summary, profile) {
-  const lines = interpretation(entity, universe, summary);
+function interpretationWithProfile(entity, universe, summary, profile, scoreProfile) {
+  const lines = interpretation(entity, universe, summary, scoreProfile);
   if (!profile.latest.length) return lines;
   const availableDimensions = ["mensch", "planet", "demokratie"]
     .filter((dimension) => profile.dimensions[dimension])
@@ -328,13 +532,27 @@ function interpretationWithProfile(entity, universe, summary, profile) {
     .filter((dimension) => !profile.dimensions[dimension])
     .map((dimension) => dimensionLabels[dimension]);
   return [
-    `Für ${entity.name} sind aktuell Rohdaten in ${availableDimensions.join(", ") || "keiner MPD-Dimension"} sichtbar. Das ist ein Datenprofil, noch kein Wirkungsurteil.`,
+    `Für ${entity.name} sind aktuell Rohdaten in ${availableDimensions.join(", ") || "keiner MPD-Dimension"} sichtbar. Das ist ein vorläufiges Beta-Datenprofil, noch kein abschließendes Wirkungsurteil.`,
     missingDimensions.length
       ? `Noch unvollständig ist die Datenlage in: ${missingDimensions.join(", ")}. Dort wird kein Wert angezeigt und keine Wirkung unterstellt.`
       : "Für alle drei MPD-Dimensionen liegen erste Rohdaten vor; die fachliche Normalisierung ist weiterhin offen.",
-    "Die Karten zeigen deshalb Indikatoren, Beobachtungen, jüngstes Datenjahr und Quellenstatus. Ein Gesamtwert folgt erst, wenn Zielpfade, Mindestabdeckung und Datenqualität validiert sind.",
-    ...lines.slice(1)
+    "Die Karten zeigen deshalb vorläufige Arbeitswerte, Indikatoren, Beobachtungen, jüngstes Datenjahr und Quellenstatus. Ein finaler Gesamtwert folgt erst, wenn Zielpfade, Mindestabdeckung und Datenqualität validiert sind.",
+    ...lines
   ];
+}
+
+function renderIndicatorList(items, emptyText) {
+  if (!items.length) return `<p class="card-text">${escapeHtml(emptyText)}</p>`;
+  return `
+    <ol class="wk-mini-list">
+      ${items.slice(0, 5).map((item) => `
+        <li>
+          <span>${escapeHtml(item.indicator.name || item.indicator_id)} <small>${escapeHtml(dimensionLabels[item.indicator.dimension] || item.indicator.dimension || "Daten")} · ${escapeHtml(item.year)}</small></span>
+          <strong>${formatScore(item.beta_score)}</strong>
+        </li>
+      `).join("")}
+    </ol>
+  `;
 }
 
 function renderSourceRows(universe, state) {
@@ -360,12 +578,13 @@ function renderSourceRows(universe, state) {
 
 function compareCard(entity, state, universe) {
   const summary = snapshotSummaryForEntity(entity, state, universe);
+  const scoreProfile = scoreProfileForEntity(entity, state);
   return `
     <article class="wk-compare-item">
       <p class="card-kicker">${escapeHtml(entity.entity_type)}</p>
       <h4>${escapeHtml(entity.name)}</h4>
       <p class="card-text">${escapeHtml(summary.status)}</p>
-      <p class="card-text">Kein Score: Datenabdeckung noch nicht ausreichend.</p>
+      <p class="card-text">${typeof scoreProfile.overall === "number" ? `Beta-Arbeitswert: ${formatScore(scoreProfile.overall)} / 100 · kein Ranking.` : "Noch kein normalisierbarer Arbeitswert."}</p>
     </article>
   `;
 }
@@ -388,6 +607,9 @@ function renderProfile(entity, universe, state) {
   const copy = toolCopy[state.tool] || toolCopy["lwk-de"];
   const summary = snapshotSummaryForEntity(entity, state, universe);
   const dataProfile = dataProfileForEntity(entity, state);
+  const scoreProfile = scoreProfileForEntity(entity, state);
+  const weakestItems = [...scoreProfile.scored].sort((a, b) => a.beta_score - b.beta_score);
+  const strongestItems = [...scoreProfile.scored].sort((a, b) => b.beta_score - a.beta_score);
   profile.hidden = false;
   profile.innerHTML = `
     <section class="section wk-profile-shell" aria-labelledby="wk-profile-title">
@@ -413,25 +635,25 @@ function renderProfile(entity, universe, state) {
       </div>
 
       <aside class="protection-notice" role="note">
-        <p class="card-kicker">Gesamtwert</p>
-        <h3>${summary.observationCount > 0 ? "Noch kein Gesamtwert" : "Kein Gesamtwert"}</h3>
-        <p>${summary.observationCount > 0 ? `Rohdaten sind vorhanden: ${summary.observationCount} Beobachtungen aus ${summary.snapshotCount} Snapshot(s). Sie werden unten als Beta-Rohdatenprofil angezeigt. Kein Gesamtwert: Datenabdeckung, Zielpfade und Datenqualität reichen für eine belastbare Gesamtaussage noch nicht aus.` : "Kein Gesamtwert: Datenabdeckung reicht für eine belastbare Gesamtaussage nicht aus."}</p>
+        <p class="card-kicker">${typeof scoreProfile.overall === "number" ? "Vorläufiger Beta-Arbeitswert" : "Gesamtwert"}</p>
+        <h3>${typeof scoreProfile.overall === "number" ? `${formatScore(scoreProfile.overall)} / 100` : "Kein Gesamtwert"}</h3>
+        <p>${typeof scoreProfile.overall === "number" ? `Berechnet aus ${scoreProfile.indicatorCount} normalisierbaren Indikatoren im geladenen Snapshot. Dieser Arbeitswert ist relativ, vorläufig und kein amtliches Rating, kein Ranking, keine politische Bewertung und kein finaler Zielpfadscore.` : (summary.observationCount > 0 ? `Rohdaten sind vorhanden: ${summary.observationCount} Beobachtungen aus ${summary.snapshotCount} Snapshot(s). Sie werden unten als Beta-Rohdatenprofil angezeigt. Ein Arbeitswert ist erst möglich, wenn mindestens zwei vergleichbare Rohwerte pro Indikator vorliegen.` : "Kein Gesamtwert: Für diese Einheit liegen noch keine nutzbaren Rohbeobachtungen im Snapshot vor.")}</p>
       </aside>
 
       <div class="card-grid four wk-score-grid">
-        ${rawDimensionCard(dimensionLabels.mensch, "mensch", "Armut, Gesundheit, Bildung, Arbeit, Wohnen, Teilhabe und soziale Sicherheit.", dataProfile)}
-        ${rawDimensionCard(dimensionLabels.planet, "planet", "Klima, Energie, Fläche, Luft, Wasser, Biodiversität, Ressourcen und Klimarisiken.", dataProfile)}
-        ${rawDimensionCard(dimensionLabels.demokratie, "demokratie", "Wahlbeteiligung, Rechtsstaatlichkeit, Transparenz, Medienvielfalt, Vertrauen und Zivilgesellschaft als SDG+-Prüffeld.", dataProfile)}
-        ${dataQualityCard(dataProfile, summary)}
+        ${rawDimensionCard(dimensionLabels.mensch, "mensch", "Armut, Gesundheit, Bildung, Arbeit, Wohnen, Teilhabe und soziale Sicherheit.", dataProfile, scoreProfile)}
+        ${rawDimensionCard(dimensionLabels.planet, "planet", "Klima, Energie, Fläche, Luft, Wasser, Biodiversität, Ressourcen und Klimarisiken.", dataProfile, scoreProfile)}
+        ${rawDimensionCard(dimensionLabels.demokratie, "demokratie", "Wahlbeteiligung, Rechtsstaatlichkeit, Transparenz, Medienvielfalt, Vertrauen und Zivilgesellschaft als SDG+-Prüffeld.", dataProfile, scoreProfile)}
+        ${dataQualityCard(dataProfile, summary, scoreProfile)}
       </div>
 
       <section class="card" aria-labelledby="wk-rawdata-title">
         <div class="inline-heading">
           <div>
-            <p class="hero-kicker">Beta-Rohdatenprofil</p>
-            <h3 id="wk-rawdata-title">Geladene Snapshot-Werte</h3>
-          </div>
-          <p class="card-text">Diese Werte sind öffentliche Rohdaten aus versionierten Importen. Sie sind noch nicht zu Scorewerten normalisiert.</p>
+          <p class="hero-kicker">Beta-Rohdatenprofil</p>
+          <h3 id="wk-rawdata-title">Geladene Snapshot-Werte</h3>
+        </div>
+          <p class="card-text">Diese Werte sind öffentliche Rohdaten aus versionierten Importen. Die Arbeitswerte werden defensiv relativ normalisiert und bleiben als Beta gekennzeichnet.</p>
         </div>
         ${renderRawObservationRows(dataProfile)}
       </section>
@@ -439,10 +661,10 @@ function renderProfile(entity, universe, state) {
       <section class="card" aria-labelledby="wk-timeline-title">
         <div class="inline-heading">
           <div>
-            <p class="hero-kicker">Zeitverlauf</p>
-            <h3 id="wk-timeline-title">Wirkungsprofil im Verlauf</h3>
-          </div>
-          <p class="card-text">Status, Trend, Zielabstand und Datenqualität werden erst gezeichnet, wenn mehrere belegte Jahre vorhanden sind.</p>
+          <p class="hero-kicker">Zeitverlauf</p>
+          <h3 id="wk-timeline-title">Wirkungsprofil im Verlauf</h3>
+        </div>
+          <p class="card-text">Der Verlauf zeigt vorläufige relative Arbeitswerte aus vorhandenen Beobachtungsjahren. Zielpfade und finale Datenqualität bleiben gesondert zu validieren.</p>
         </div>
         <div data-wk-chart></div>
       </section>
@@ -450,21 +672,28 @@ function renderProfile(entity, universe, state) {
       <section class="card" aria-labelledby="wk-interpretation-title">
         <p class="hero-kicker">Regelbasierte Interpretation</p>
         <h3 id="wk-interpretation-title">Einordnung für ${escapeHtml(entity.name)}</h3>
-        ${interpretationWithProfile(entity, universe, summary, dataProfile).map((line) => `<p>${escapeHtml(line)}</p>`).join("")}
+        ${interpretationWithProfile(entity, universe, summary, dataProfile, scoreProfile).map((line) => `<p>${escapeHtml(line)}</p>`).join("")}
       </section>
 
       <div class="card-grid two">
         <article class="card">
-          <p class="card-kicker">Auffälligkeiten</p>
-          <h3 class="card-title">Noch nicht berechnet</h3>
-          <p class="card-text">Auffällige Verbesserungen oder Verschlechterungen werden erst ausgewiesen, wenn Beobachtungen über mehrere Jahre validiert sind.</p>
+          <p class="card-kicker">Größte Wirkungslücken</p>
+          <h3 class="card-title">Niedrige Beta-Arbeitswerte</h3>
+          ${renderIndicatorList(weakestItems, "Noch keine normalisierbaren Indikatoren vorhanden.")}
         </article>
         <article class="card">
-          <p class="card-kicker">Datenlücken</p>
-          <h3 class="card-title">Datenprofil ohne Score</h3>
-          <p class="card-text">Fehlende Daten bedeuten keine schlechte Wirkung. Sie markieren, wo Provider, Lizenz, Gebietsstand oder Vergleichbarkeit geprüft werden müssen.</p>
+          <p class="card-kicker">Stärkere Ausgangslagen</p>
+          <h3 class="card-title">Hohe Beta-Arbeitswerte</h3>
+          ${renderIndicatorList(strongestItems, "Noch keine normalisierbaren Indikatoren vorhanden.")}
         </article>
       </div>
+
+      <section class="card" aria-labelledby="wk-beta-disclaimer-title">
+        <p class="hero-kicker">Wichtiger Beta-Hinweis</p>
+        <h3 id="wk-beta-disclaimer-title">Arbeitswert statt fertiger Index</h3>
+        <p>Die hier gezeigten Werte nutzen nur vorhandene öffentliche Snapshot-Daten. Sie werden relativ innerhalb des geladenen Universums normalisiert. Sie ersetzen keine fachlich finalisierte Methodik, keine Zielpfade, keine Kontextprüfung und keine demokratische Bewertung.</p>
+        <p>Fehlende Daten bedeuten keine schlechte Wirkung. Niedrige oder hohe Arbeitswerte markieren Prüffragen im vorhandenen Datenstand.</p>
+      </section>
 
       <section class="card" aria-labelledby="wk-sources-title">
         <p class="hero-kicker">Quellen und Methodik</p>
@@ -492,7 +721,7 @@ function renderProfile(entity, universe, state) {
       <section class="card" data-wk-comparison></section>
     </section>
   `;
-  renderEmptyChart(profile.querySelector("[data-wk-chart]"), universe.title, summary);
+  renderBetaChart(profile.querySelector("[data-wk-chart]"), entity, state, universe.title, summary);
   renderComparison(profile.querySelector("[data-wk-comparison]"), state.comparison, copy, state, universe);
   profile.scrollIntoView({ behavior: "smooth", block: "start" });
 }
