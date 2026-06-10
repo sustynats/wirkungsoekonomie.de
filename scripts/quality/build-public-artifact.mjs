@@ -308,7 +308,6 @@ function normalizePublicArtifactLinksAndText() {
         .replace(/<section class="callout live-reference-notice">[\s\S]*?<\/section>/gi, "")
         .replace(/<section class="callout">\s*<h2>Importstatus<\/h2>[\s\S]*?<\/section>/gi, "")
         .replace(/<dt>(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|Web-Version|Reviewstatus|Originaldatei|Absätze\/Textblöcke)<\/dt><dd>[\s\S]*?<\/dd>/gi, "")
-        .replace(/\s*(?:Originalfassung\s+2026\.0|Import-Version\s+2026\.1-import|Online-Referenz\s+2026\.2-live-reference|2026\.2-l)[^<]*/gi, "")
         .replace(/Webfassung und Originaldatei:/gi, "Öffentliche Webfassung:")
         .replace(/Webfassung eines Arbeitspapiers der Wirkungsökonomie mit Originaldatei\./gi, "Öffentliche Webfassung eines Arbeitspapiers der Wirkungsökonomie.")
         .replace(/Webfassung aus der gelieferten Originaldatei\.[^<]*/gi, "Öffentliche Webfassung.")
@@ -343,6 +342,31 @@ function normalizePublicArtifactLinksAndText() {
   }
 
   if (changed) console.log(`Normalized public artifact links/text in ${changed} files.`);
+}
+
+function validateNoCorruptedHtmlAttributes() {
+  const corruptAttributePatterns = [
+    /data-version="<[^"]*/g,
+    /data-content-hash="<[^"]*/g,
+    /data-section-id="<[^"]*/g,
+    /data-document-id="<[^"]*/g,
+    /data-paragraph-id="<[^"]*/g,
+  ];
+  const failures = [];
+
+  for (const file of walkFiles(artifactDir)) {
+    if (path.extname(file).toLowerCase() !== ".html") continue;
+    const content = fs.readFileSync(file, "utf8");
+    const relative = toPosixRelative(file);
+    const matches = corruptAttributePatterns.flatMap((pattern) => [...content.matchAll(pattern)]);
+    if (matches.length) failures.push(`${relative}: ${matches.length} corrupted data attribute(s)`);
+  }
+
+  if (failures.length) {
+    throw new Error(`Public HTML artifact validation failed:\n\n${failures.join("\n")}`);
+  }
+
+  console.log("Public HTML data-attribute validation passed.");
 }
 
 function validateMainworkFulltextArtifact() {
@@ -488,6 +512,7 @@ normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
 copySnapshotManifestFiles();
 prunePublicArtifact();
+validateNoCorruptedHtmlAttributes();
 validateMainworkFulltextArtifact();
 validatePublicScripts();
 validatePublicJson();
