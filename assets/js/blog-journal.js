@@ -160,7 +160,7 @@
           <p>Diese Beiträge vertiefen die Frage aus aktueller Perspektive.</p>
         </div>
         <div class="journal-related-grid">
-          ${related.map((post) => renderArticleCard(post)).join("")}
+          ${related.map((post) => renderArticleCard(post, { showImage: false })).join("")}
         </div>
       </div>
     `;
@@ -205,13 +205,13 @@
     }, 0);
   }
 
-  function renderArticleCard(post, { featured = false } = {}) {
+  function renderArticleCard(post, { featured = false, showImage = true } = {}) {
     const tagChips = (post.tags || [])
       .slice(0, 3)
       .map((tag) => `<span>${escapeHtml(tag)}</span>`)
       .join("");
     const titleLevel = featured ? "h3" : "h3";
-    const image = normalizeImagePath(post.image);
+    const image = showImage ? normalizeImagePath(post.image) : "";
 
     if (featured) {
       return `
