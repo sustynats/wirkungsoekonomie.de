@@ -171,6 +171,33 @@ function copyReferencedPublicFiles() {
   if (copied) console.log(`Copied ${copied} referenced public support files.`);
 }
 
+function copySnapshotManifestFiles() {
+  const manifestPath = path.join(artifactDir, "data/wirkungskompass/snapshot-manifest.json");
+  if (!fs.existsSync(manifestPath)) return;
+
+  let manifest;
+  try {
+    manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  } catch {
+    return;
+  }
+
+  let copied = 0;
+  for (const snapshot of manifest.snapshots || []) {
+    if (!snapshot.path || typeof snapshot.path !== "string") continue;
+    const normalized = snapshot.path.replace(/^\/+/, "");
+    if (!normalized.startsWith("data/wirkungskompass/snapshots/")) continue;
+    const source = path.join(root, normalized);
+    const destination = path.join(artifactDir, normalized);
+    if (!fs.existsSync(source) || fs.existsSync(destination)) continue;
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.copyFileSync(source, destination);
+    copied += 1;
+  }
+
+  if (copied) console.log(`Copied ${copied} Wirkungskompass snapshot files from manifest.`);
+}
+
 function sanitizePublicDataString(value) {
   return String(value || "")
     .replace(/https?:\/\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
@@ -371,6 +398,7 @@ for (const entry of fs.readdirSync(root, { withFileTypes: true }).sort((a, b) =>
 
 normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
+copySnapshotManifestFiles();
 prunePublicArtifact();
 validatePublicScripts();
 validatePublicJson();
