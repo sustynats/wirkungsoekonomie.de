@@ -369,6 +369,24 @@ function validateNoCorruptedHtmlAttributes() {
   console.log("Public HTML data-attribute validation passed.");
 }
 
+function validateNoTemplatePlaceholders() {
+  const failures = [];
+
+  for (const file of walkFiles(artifactDir)) {
+    const ext = path.extname(file).toLowerCase();
+    if (![".html", ".js", ".json", ".xml", ".txt"].includes(ext)) continue;
+    const content = fs.readFileSync(file, "utf8");
+    const matches = [...content.matchAll(/\{\{[A-Z][A-Z0-9_]*\}\}/g)];
+    if (matches.length) failures.push(`${toPosixRelative(file)}: ${matches.length} unresolved template placeholder(s)`);
+  }
+
+  if (failures.length) {
+    throw new Error(`Public artifact contains unresolved template placeholders:\n\n${failures.join("\n")}`);
+  }
+
+  console.log("Public template placeholder validation passed.");
+}
+
 function validateMainworkFulltextArtifact() {
   const file = path.join(artifactDir, "referenz/volltext/index.html");
   if (!fs.existsSync(file)) {
@@ -513,6 +531,7 @@ copyReferencedPublicFiles();
 copySnapshotManifestFiles();
 prunePublicArtifact();
 validateNoCorruptedHtmlAttributes();
+validateNoTemplatePlaceholders();
 validateMainworkFulltextArtifact();
 validatePublicScripts();
 validatePublicJson();

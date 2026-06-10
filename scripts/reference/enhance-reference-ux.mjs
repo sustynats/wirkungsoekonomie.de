@@ -9,6 +9,7 @@ const TERM_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
 const TERM_BASE_DATE = "2026-05-21";
 const referenceReaderAssetVersion = "20260605-referenz-merkliste-ux";
 const sharedAssetVersion = "20260605-referenz-merkliste-ux";
+const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
@@ -212,6 +213,17 @@ function navLink(item, base) {
   return `<a href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}">${esc(item.label)}</a>`;
 }
 
+function headerUtilityNav(base) {
+  return (navigation.more || [])
+    .filter((item) => headerUtilityLabels.has(item.label))
+    .map((item) => {
+      const label = esc(item.label);
+      const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
+      return `<a class="site-utility-link site-utility-link--${esc(slugify(item.label))}" href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${label}</a>`;
+    })
+    .join("\n    ");
+}
+
 function footerGroup(group, base) {
   return `<div class="footer-nav-group">
       <h3>${esc(group.title)}</h3>
@@ -225,7 +237,8 @@ function renderHeader(base) {
   const headerNav = navigation.header.map((item) => navLink(item, base)).join("\n    ");
   return headerTemplate
     .replaceAll("{{BASE}}", base)
-    .replace("{{HEADER_NAV}}", headerNav);
+    .replace("{{HEADER_NAV}}", headerNav)
+    .replaceAll("{{HEADER_UTILITY_NAV}}", headerUtilityNav(base));
 }
 
 function renderFooter(base) {

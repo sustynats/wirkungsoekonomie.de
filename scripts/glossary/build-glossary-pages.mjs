@@ -60,6 +60,7 @@ const categoryOrder = [
   "Glossar-Publizierungsprozess",
   "Praxisbegriff",
 ];
+const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 const genericUsageNotes = new Set([
   "wirkung, wirkungspotenzial, wirkungsrisiko, wirkmechanismus und eingetretene wirkung sauber unterscheiden.",
@@ -267,6 +268,30 @@ function navLink(item, base) {
   return `<a href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}">${esc(item.label)}</a>`;
 }
 
+function navSlug(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ö/g, "oe")
+    .replace(/ä/g, "ae")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function headerUtilityNav(base) {
+  return (navigation.more || [])
+    .filter((item) => headerUtilityLabels.has(item.label))
+    .map((item) => {
+      const label = esc(item.label);
+      const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
+      return `<a class="site-utility-link site-utility-link--${esc(navSlug(item.label))}" href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${label}</a>`;
+    })
+    .join("\n    ");
+}
+
 function footerGroup(group, base) {
   return `<div class="footer-nav-group">
       <h3>${esc(group.title)}</h3>
@@ -279,7 +304,8 @@ ${group.items.map((item) => `          ${navLink(item, base)}`).join("\n")}
 function renderHeader(base) {
   return headerTemplate
     .replaceAll("{{BASE}}", base)
-    .replace("{{HEADER_NAV}}", navigation.header.map((item) => navLink(item, base)).join("\n    "));
+    .replace("{{HEADER_NAV}}", navigation.header.map((item) => navLink(item, base)).join("\n    "))
+    .replaceAll("{{HEADER_UTILITY_NAV}}", headerUtilityNav(base));
 }
 
 function renderFooter(base) {
