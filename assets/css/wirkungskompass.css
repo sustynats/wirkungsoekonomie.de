@@ -1,0 +1,198 @@
+.wk-hero-note,
+.wk-method-note,
+.wk-status-note {
+  border: 1px solid rgba(6, 56, 45, 0.18);
+  background: #f6fbf7;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.wk-search-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: 1rem;
+  align-items: end;
+}
+
+.wk-field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.wk-field input,
+.wk-field select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #d9d0c2;
+  border-radius: 6px;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+  background: #fff;
+}
+
+.wk-filter-row,
+.wk-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.wk-filter-button {
+  border: 1px solid #d9d0c2;
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  cursor: pointer;
+}
+
+.wk-filter-button[aria-pressed="true"],
+.wk-filter-button:hover,
+.wk-filter-button:focus {
+  border-color: #06382d;
+  background: #eef6f2;
+  outline: 2px solid rgba(6, 56, 45, 0.12);
+}
+
+.wk-results {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.wk-result-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #d9d0c2;
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.wk-result-button:hover,
+.wk-result-button:focus {
+  border-color: #06382d;
+  outline: 2px solid rgba(6, 56, 45, 0.12);
+}
+
+.wk-result-button small,
+.wk-meta-grid span {
+  display: block;
+  color: #5d646b;
+}
+
+.wk-profile-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+  gap: 1rem;
+  align-items: start;
+}
+
+.wk-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.wk-meta-grid span {
+  border: 1px solid #e2dbd0;
+  border-radius: 6px;
+  padding: 0.65rem;
+  background: #fbfaf7;
+}
+
+.wk-meta-grid strong {
+  display: block;
+  color: #111827;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.wk-score-grid.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.wk-score-card-empty .card-title {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.wk-chart {
+  width: 100%;
+  min-height: 270px;
+}
+
+.wk-chart-label,
+.wk-chart-legend text {
+  font-size: 12px;
+  fill: #27323a;
+}
+
+.wk-chart-empty {
+  max-width: 500px;
+  font-size: 15px;
+  fill: #27323a;
+}
+
+.wk-source-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px;
+}
+
+.wk-source-table th,
+.wk-source-table td {
+  border-bottom: 1px solid #e2dbd0;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.wk-table-wrap {
+  overflow-x: auto;
+}
+
+.wk-compare-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.wk-compare-item {
+  border: 1px solid #e2dbd0;
+  border-radius: 8px;
+  padding: 0.8rem;
+  background: #fbfaf7;
+}
+
+.wk-compass-family-grid .card-title {
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+}
+
+@media (max-width: 980px) {
+  .wk-search-shell,
+  .wk-profile-header {
+    grid-template-columns: 1fr;
+  }
+
+  .wk-score-grid.four,
+  .wk-compare-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .wk-score-grid.four,
+  .wk-compare-list,
+  .wk-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}

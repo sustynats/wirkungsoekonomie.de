@@ -7,6 +7,13 @@ import {
 } from "../lib/demo-layout-components.mjs";
 
 const root = process.cwd();
+const skipDemoGovernance = new Set([
+  "erleben/unternehmens-wirkungsprofil/index.html",
+  "erleben/wirkungskompass/index.html",
+  "erleben/laender-wirkungskompass/index.html",
+  "erleben/europa-wirkungskompass/index.html",
+  "erleben/welt-wirkungskompass/index.html",
+]);
 
 const defaults = {
   assumptions: "Die Demo nutzt vereinfachte Wirkungspfade, Schwellen, Gewichtungen und Beispielwerte. Sie zeigt Struktur und Logik, nicht den finalen Prüfstandard.",
@@ -253,6 +260,11 @@ function run() {
     const demo = demoForFile(rel);
     const html = fs.readFileSync(file, "utf8");
     const cleaned = replaceExistingBlock(html);
+    if (skipDemoGovernance.has(rel)) {
+      writeIfChanged(file, cleaned);
+      updated += 1;
+      continue;
+    }
     const block = renderDemoGovernanceBlock(root, file, demo);
     const next = injectAfterFirstMainSection(cleaned, block);
     writeIfChanged(file, next);
