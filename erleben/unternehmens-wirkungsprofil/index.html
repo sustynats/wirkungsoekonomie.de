@@ -102,6 +102,7 @@
           </div>
         </div>
         <div class="wk-filter-row" id="uwp-filters" aria-label="Datenstatus"></div>
+        <div id="uwp-summary" class="wk-results"></div>
         <div class="wk-results" id="uwp-results"></div>
         <div id="uwp-profile" hidden></div>
       </section>
@@ -248,108 +249,7 @@
       </div>
     </footer>
 
-    <script>
-      const companies = [
-        "Adidas","Airbus","Allianz","BASF","Bayer","Beiersdorf","BMW","Brenntag","Commerzbank","Continental",
-        "Covestro","Daimler Truck","Deutsche Bank","Deutsche Börse","DHL Group","Deutsche Telekom","E.ON","Fresenius","Hannover Rück","Heidelberg Materials",
-        "Henkel","Hochtief","Infineon","Mercedes-Benz Group","Merck KGaA","MTU Aero Engines","Munich Re","Porsche AG","Porsche Automobil Holding","Qiagen",
-        "Rheinmetall","RWE","SAP","Sartorius","Siemens","Siemens Energy","Siemens Healthineers","Symrise","Volkswagen","Vonovia",
-        "Zalando","1&1","AIXTRON","Aroundtown","Aurubis","Bechtle","Bilfinger","Carl Zeiss Meditec","CTS Eventim","Delivery Hero",
-        "Dermapharm","Dürr","Elmos Semiconductor","Evotec","Fielmann","Fraport","Freenet","Fuchs","GEA","Gerresheimer",
-        "HelloFresh","Hensoldt","Hugo Boss","Jungheinrich","K+S","KION","Knorr-Bremse","Krones","Lanxess","LEG Immobilien",
-        "Lufthansa","Nemetschek","Nordex","PUMA","Rational","Redcare Pharmacy","RTL Group","Scout24","Siltronic","Ströer",
-        "SÜSS MicroTec","Talanx","TeamViewer","Thyssenkrupp","Traton","United Internet","Wacker Chemie","Wacker Neuson","Amadeus Fire","ATOSS Software",
-        "Basler","BayWa","Befesa","Borussia Dortmund","Cancom","Ceconomy","Deutsche EuroShop","Deutsche Pfandbriefbank","Drägerwerk","Eckert & Ziegler"
-      ].map((name, index) => ({
-        id: `uwp-${String(index + 1).padStart(3, "0")}`,
-        name,
-        country: "Deutschland",
-        sector: index < 40 ? "Large Cap / DAX-Umfeld" : index < 80 ? "Mid Cap / MDAX-TecDAX-Umfeld" : "Small Cap / SDAX-Umfeld",
-        universe: "UWP-100 Beta",
-        status: "Metadaten verfügbar, Wirkungsdaten fehlen"
-      }));
-
-      const search = document.getElementById("uwp-search");
-      const select = document.getElementById("uwp-select");
-      const results = document.getElementById("uwp-results");
-      const profile = document.getElementById("uwp-profile");
-      const filters = document.getElementById("uwp-filters");
-      let activeSector = "Alle";
-
-      const sectors = ["Alle", "Large Cap / DAX-Umfeld", "Mid Cap / MDAX-TecDAX-Umfeld", "Small Cap / SDAX-Umfeld"];
-      filters.innerHTML = sectors.map((sector) => `<button class="wk-filter-button" type="button" data-sector="${sector}" aria-pressed="${sector === activeSector}">${sector}</button>`).join("");
-      filters.addEventListener("click", (event) => {
-        const button = event.target.closest("button[data-sector]");
-        if (!button) return;
-        activeSector = button.dataset.sector;
-        filters.querySelectorAll("button").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
-        render();
-      });
-
-      select.innerHTML = `<option value="">Unternehmen auswählen ...</option>` + companies.map((company) => `<option value="${company.id}">${company.name}</option>`).join("");
-      select.addEventListener("change", () => {
-        const company = companies.find((item) => item.id === select.value);
-        if (company) showProfile(company);
-      });
-      search.addEventListener("input", render);
-
-      function filteredCompanies() {
-        const query = search.value.trim().toLowerCase();
-        return companies
-          .filter((company) => activeSector === "Alle" || company.sector === activeSector)
-          .filter((company) => !query || company.name.toLowerCase().includes(query))
-          .slice(0, 24);
-      }
-
-      function render() {
-        const list = filteredCompanies();
-        results.innerHTML = list.map((company) => `
-          <button class="wk-result-button" type="button" data-id="${company.id}">
-            <span><strong>${company.name}</strong><small>${company.sector} · ${company.country} · ${company.universe}</small></span>
-            <span>${company.status}</span>
-          </button>
-        `).join("") || `<p>Kein Unternehmen im UWP-100-Universum gefunden.</p>`;
-      }
-
-      results.addEventListener("click", (event) => {
-        const button = event.target.closest("button[data-id]");
-        if (!button) return;
-        const company = companies.find((item) => item.id === button.dataset.id);
-        if (company) {
-          select.value = company.id;
-          showProfile(company);
-        }
-      });
-
-      function showProfile(company) {
-        profile.hidden = false;
-        profile.innerHTML = `
-          <section class="card" style="margin-top:1rem">
-            <div class="wk-profile-header">
-              <div>
-                <p class="hero-kicker">Beispielprofil / Metadaten</p>
-                <h2>${company.name}</h2>
-                <p>${company.sector} · ${company.country} · ${company.universe}</p>
-              </div>
-              <div class="wk-meta-grid">
-                <span><strong>Datenstatus</strong>${company.status}</span>
-                <span><strong>Methodikversion</strong>UWP-100 Beta 0.1</span>
-                <span><strong>Datenabdeckung</strong>Noch nicht ausreichend für Score</span>
-                <span><strong>Hinweis</strong>Kein Finanzrating</span>
-              </div>
-            </div>
-          </section>
-          <div class="card-grid four wk-score-grid" style="margin-top:1rem">
-            ${["Mensch","Planet","Demokratie","Transformation"].map((title) => `<article class="card wk-score-card-empty"><p class="card-kicker">${title}</p><h3 class="card-title">Nicht berechnet</h3><p class="card-text">Öffentliche, versionierte Wirkungsdaten müssen erst importiert, normalisiert und quellenbasiert geprüft werden.</p></article>`).join("")}
-          </div>
-          <aside class="wk-status-note" role="note" style="margin-top:1rem">
-            <p class="card-text"><strong>Kein Gesamtwert:</strong> Für ${company.name} liegen im aktuellen öffentlichen Beta-Stand Metadaten vor, aber keine belastbar importierten Wirkungsdaten. Datenabdeckung, rote Linien und Quellenqualität reichen daher noch nicht für eine Bewertung aus.</p>
-          </aside>
-        `;
-      }
-
-      render();
-    </script>
+    <script src="../../assets/js/uwp-company-profile.js?v=20260610-uwp-sbti"></script>
     <script src="../../assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>

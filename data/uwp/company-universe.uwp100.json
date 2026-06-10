@@ -1,0 +1,811 @@
+{
+  "universe_id": "uwp-100-beta",
+  "title": "UWP-100 Beta",
+  "description": "100 vorselektierte Unternehmen aus dem deutschen Börsenumfeld.",
+  "method": "Kuratiertes Beta-Universum aus DAX-/MDAX-/TecDAX-/SDAX- bzw. HDAX-Umfeld; kein offizieller Index.",
+  "created_at": "2026-06-09",
+  "updated_at": "2026-06-10T12:39:05+00:00",
+  "source_note": "Beta-Auswahlliste der Wirkungsökonomie. Unternehmenskennzahlen werden nur aus öffentlichen, versionierten Snapshots ergänzt.",
+  "companies": [
+    {
+      "company_id": "uwp-001",
+      "name": "Adidas",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-002",
+      "name": "Airbus",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-003",
+      "name": "Allianz",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-004",
+      "name": "BASF",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-005",
+      "name": "Bayer",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-006",
+      "name": "Beiersdorf",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-007",
+      "name": "BMW",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-008",
+      "name": "Brenntag",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-009",
+      "name": "Commerzbank",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-010",
+      "name": "Continental",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-011",
+      "name": "Covestro",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-012",
+      "name": "Daimler Truck",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-013",
+      "name": "Deutsche Bank",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-014",
+      "name": "Deutsche Börse",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-015",
+      "name": "DHL Group",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-016",
+      "name": "Deutsche Telekom",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-017",
+      "name": "E.ON",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-018",
+      "name": "Fresenius",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-019",
+      "name": "Hannover Rück",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-020",
+      "name": "Heidelberg Materials",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-021",
+      "name": "Henkel",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-022",
+      "name": "Hochtief",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-023",
+      "name": "Infineon",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-024",
+      "name": "Mercedes-Benz Group",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-025",
+      "name": "Merck KGaA",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-026",
+      "name": "MTU Aero Engines",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-027",
+      "name": "Munich Re",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-028",
+      "name": "Porsche AG",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-029",
+      "name": "Porsche Automobil Holding",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-030",
+      "name": "Qiagen",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-031",
+      "name": "Rheinmetall",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-032",
+      "name": "RWE",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-033",
+      "name": "SAP",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-034",
+      "name": "Sartorius",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-035",
+      "name": "Siemens",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-036",
+      "name": "Siemens Energy",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-037",
+      "name": "Siemens Healthineers",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-038",
+      "name": "Symrise",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-039",
+      "name": "Volkswagen",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-040",
+      "name": "Vonovia",
+      "country": "Deutschland",
+      "sector": "Large Cap / DAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-041",
+      "name": "Zalando",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-042",
+      "name": "1&1",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-043",
+      "name": "AIXTRON",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-044",
+      "name": "Aroundtown",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-045",
+      "name": "Aurubis",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-046",
+      "name": "Bechtle",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-047",
+      "name": "Bilfinger",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-048",
+      "name": "Carl Zeiss Meditec",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-049",
+      "name": "CTS Eventim",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-050",
+      "name": "Delivery Hero",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-051",
+      "name": "Dermapharm",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-052",
+      "name": "Dürr",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-053",
+      "name": "Elmos Semiconductor",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-054",
+      "name": "Evotec",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-055",
+      "name": "Fielmann",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-056",
+      "name": "Fraport",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-057",
+      "name": "Freenet",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-058",
+      "name": "Fuchs",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-059",
+      "name": "GEA",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-060",
+      "name": "Gerresheimer",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-061",
+      "name": "HelloFresh",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-062",
+      "name": "Hensoldt",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-063",
+      "name": "Hugo Boss",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-064",
+      "name": "Jungheinrich",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-065",
+      "name": "K+S",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-066",
+      "name": "KION",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-067",
+      "name": "Knorr-Bremse",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-068",
+      "name": "Krones",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-069",
+      "name": "Lanxess",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-070",
+      "name": "LEG Immobilien",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-071",
+      "name": "Lufthansa",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-072",
+      "name": "Nemetschek",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-073",
+      "name": "Nordex",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-074",
+      "name": "PUMA",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-075",
+      "name": "Rational",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-076",
+      "name": "Redcare Pharmacy",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-077",
+      "name": "RTL Group",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-078",
+      "name": "Scout24",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-079",
+      "name": "Siltronic",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-080",
+      "name": "Ströer",
+      "country": "Deutschland",
+      "sector": "Mid Cap / MDAX-TecDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-081",
+      "name": "SÜSS MicroTec",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-082",
+      "name": "Talanx",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-083",
+      "name": "TeamViewer",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-084",
+      "name": "Thyssenkrupp",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-085",
+      "name": "Traton",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-086",
+      "name": "United Internet",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-087",
+      "name": "Wacker Chemie",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-088",
+      "name": "Wacker Neuson",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-089",
+      "name": "Amadeus Fire",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-090",
+      "name": "ATOSS Software",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-091",
+      "name": "Basler",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-092",
+      "name": "BayWa",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-093",
+      "name": "Befesa",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-094",
+      "name": "Borussia Dortmund",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-095",
+      "name": "Cancom",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-096",
+      "name": "Ceconomy",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-097",
+      "name": "Deutsche EuroShop",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-098",
+      "name": "Deutsche Pfandbriefbank",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-099",
+      "name": "Drägerwerk",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    },
+    {
+      "company_id": "uwp-100",
+      "name": "Eckert & Ziegler",
+      "country": "Deutschland",
+      "sector": "Small Cap / SDAX-Umfeld",
+      "universe": "UWP-100 Beta",
+      "status": "kuratiertes Beta-Universum, nicht offizieller Index"
+    }
+  ]
+}

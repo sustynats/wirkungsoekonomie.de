@@ -89,6 +89,7 @@
     "wirkungskompass:import:ewk": "python3 scripts/wirkungskompass/import-territorial-snapshots.py ewk-eurostat",
     "wirkungskompass:import:wwk": "python3 scripts/wirkungskompass/import-territorial-snapshots.py wwk-worldbank",
     "wirkungskompass:import:unsdg": "python3 scripts/wirkungskompass/import-territorial-snapshots.py wwk-unsdg",
-    "wirkungskompass:import:validate": "python3 scripts/wirkungskompass/import-territorial-snapshots.py validate"
+    "wirkungskompass:import:validate": "python3 scripts/wirkungskompass/import-territorial-snapshots.py validate",
+    "uwp:import:sbti": "python3 scripts/uwp/import-company-snapshots.py sbti && python3 scripts/uwp/import-company-snapshots.py validate"
   }
 }
