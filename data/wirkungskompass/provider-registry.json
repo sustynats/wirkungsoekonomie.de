@@ -1,12 +1,12 @@
 {
-  "method_version": "territorial-compass-beta-0.1",
-  "created_at": "2026-06-10T00:00:00+02:00",
+  "method_version": "territorial-compass-beta-0.2",
+  "created_at": "2026-06-10T09:00:00+02:00",
   "providers": [
     {
       "provider_id": "destatis_regionaldatenbank",
       "scope": "LWK-DE",
       "title": "Destatis / Regionaldatenbank",
-      "status": "prepared_not_scraped",
+      "status": "csv_snapshot_importer_prepared",
       "possible_indicators": [
         "Armutsgefährdung",
         "Arbeitslosigkeit",
@@ -14,13 +14,13 @@
         "Bevölkerung",
         "Fläche"
       ],
-      "license_note": "Vor Import Lizenz und Nutzungsbedingungen prüfen."
+      "license_note": "Vor Import Lizenz und Nutzungsbedingungen prüfen. Import erfolgt ueber versionierte CSV-Snapshots, nicht ueber den Seitenaufruf."
     },
     {
       "provider_id": "uba",
       "scope": "LWK-DE",
       "title": "Umweltbundesamt",
-      "status": "prepared_not_scraped",
+      "status": "snapshot_importer_available",
       "possible_indicators": [
         "CO2-Emissionen",
         "Luftqualität",
@@ -54,13 +54,13 @@
         "Emissionen",
         "Energie"
       ],
-      "license_note": "Eurostat-Daten mit Tabellen-ID, Zeitstand und Abrufdatum versionieren."
+      "license_note": "Eurostat-Daten werden per Snapshot-Importer mit Tabellen-ID, Zeitstand und Abrufdatum versioniert."
     },
     {
       "provider_id": "eea",
       "scope": "EWK",
       "title": "European Environment Agency",
-      "status": "prepared_not_scraped",
+      "status": "snapshot_importer_available",
       "possible_indicators": [
         "Klima",
         "Biodiversität",
@@ -79,13 +79,13 @@
         "SDG-Trend",
         "Zielabstand"
       ],
-      "license_note": "Indikator-ID, Land, Jahr, Lizenz und Abrufdatum speichern."
+      "license_note": "UN-SDG-Daten werden per Snapshot-Importer mit Serien-ID, GeoArea-Code, Jahr und Abrufdatum versioniert."
     },
     {
       "provider_id": "world_bank_wdi",
       "scope": "WWK",
       "title": "World Bank World Development Indicators",
-      "status": "prepared_not_scraped",
+      "status": "snapshot_importer_available",
       "possible_indicators": [
         "Armut",
         "Gesundheit",
@@ -94,7 +94,7 @@
         "Wasser",
         "Energie"
       ],
-      "license_note": "Keine Live-Abfrage im Seitenaufruf; Snapshots versionieren."
+      "license_note": "Keine Live-Abfrage im Seitenaufruf; World-Bank-WDI-Daten werden als statische Snapshots versioniert."
     },
     {
       "provider_id": "sdgplus_democracy_sources",

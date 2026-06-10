@@ -1,5 +1,5 @@
 {
-  "method_version": "territorial-compass-beta-0.1",
+  "method_version": "territorial-compass-beta-0.2",
   "entities": [
     "entity_id",
     "entity_type",
@@ -80,6 +80,31 @@
     "retrieved_at",
     "update_frequency",
     "notes"
+  ],
+  "snapshots": [
+    "snapshot_id",
+    "universe_id",
+    "shortname",
+    "provider_id",
+    "provider_title",
+    "imported_at",
+    "source_url",
+    "license",
+    "score_ready",
+    "indicator_count",
+    "observation_count",
+    "entity_count",
+    "entity_observation_counts",
+    "years",
+    "indicators",
+    "observations",
+    "import_report"
+  ],
+  "snapshot_manifest": [
+    "method_version",
+    "generated_at",
+    "note",
+    "snapshots"
   ],
   "comparison_groups": [
     "group_id",
