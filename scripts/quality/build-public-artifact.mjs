@@ -146,7 +146,7 @@ function collectArtifactReferences() {
       continue;
     }
     const content = fs.readFileSync(file, "utf8");
-    for (const match of content.matchAll(/(?:href|src|contentUrl|url)=(?:"|')([^"']+)(?:"|')|https?:\/\/wirkungsoekonomie\.de\/([^"'\s<>]+)|(?:\.\.\/|\.\/)?(?:assets|downloads|dokumente|public)\/[^\s"'<>),]+/g)) {
+    for (const match of content.matchAll(/(?:href|src|contentUrl|url)=(?:"|')([^"']+)(?:"|')|https?:\/\/wirkungsoekonomie\.de\/([^"'\s<>]+)|(?:\.\.\/|\.\/)?(?:assets|data|downloads|dokumente|public)\/[^\s"'<>),]+/g)) {
       const raw = match[1] || match[2] || match[0];
       const withoutOrigin = raw.replace(/^https?:\/\/wirkungsoekonomie\.de\//, "");
       const withoutQuery = withoutOrigin.split("#")[0].split("?")[0];
