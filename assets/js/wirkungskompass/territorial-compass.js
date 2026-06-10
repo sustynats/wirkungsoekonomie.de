@@ -70,11 +70,90 @@ function snapshotsForUniverse(state, universe) {
   return snapshots.filter((snapshot) => snapshot.shortname === universe.shortname || snapshot.universe_id === universe.universe_id);
 }
 
+function snapshotPath(snapshot) {
+  if (!snapshot?.path) return "";
+  return snapshot.path.startsWith("/") ? snapshot.path : `/${snapshot.path}`;
+}
+
+async function loadSnapshotData(state, universe) {
+  const snapshots = snapshotsForUniverse(state, universe);
+  const loaded = await Promise.all(snapshots.map(async (snapshot) => {
+    const path = snapshotPath(snapshot);
+    if (!path) return null;
+    try {
+      const response = await fetch(path);
+      if (!response.ok) return null;
+      const data = await response.json();
+      return { ...snapshot, data };
+    } catch (error) {
+      console.warn("Wirkungskompass-Snapshot konnte nicht geladen werden", path, error);
+      return null;
+    }
+  }));
+  state.snapshotData = loaded.filter(Boolean);
+}
+
 function observationCountForEntity(entity, state, universe) {
   return snapshotsForUniverse(state, universe).reduce((sum, snapshot) => {
     const counts = snapshot.entity_observation_counts || {};
     return sum + (Number(counts[entity.entity_id]) || 0);
   }, 0);
+}
+
+function observationsForEntity(entity, state) {
+  return (state.snapshotData || []).flatMap((snapshot) => {
+    const indicators = new Map((snapshot.data?.indicators || []).map((indicator) => [indicator.indicator_id, indicator]));
+    return (snapshot.data?.observations || [])
+      .filter((observation) => observation.entity_id === entity.entity_id)
+      .map((observation) => ({
+        ...observation,
+        provider_id: snapshot.provider_id || snapshot.data?.provider_id,
+        provider_title: snapshot.provider_title || snapshot.data?.provider_title,
+        indicator: indicators.get(observation.indicator_id) || {}
+      }));
+  });
+}
+
+function latestObservations(observations) {
+  const byIndicator = new Map();
+  observations.forEach((observation) => {
+    const current = byIndicator.get(observation.indicator_id);
+    if (!current || Number(observation.year) > Number(current.year)) {
+      byIndicator.set(observation.indicator_id, observation);
+    }
+  });
+  return [...byIndicator.values()].sort((a, b) => {
+    const dimensionCompare = text(a.indicator.dimension).localeCompare(text(b.indicator.dimension));
+    if (dimensionCompare !== 0) return dimensionCompare;
+    return text(a.indicator.name).localeCompare(text(b.indicator.name));
+  });
+}
+
+function dataProfileForEntity(entity, state) {
+  const observations = observationsForEntity(entity, state);
+  const latest = latestObservations(observations);
+  const dimensions = {};
+  latest.forEach((observation) => {
+    const dimension = observation.indicator.dimension || "datenqualitaet";
+    if (!dimensions[dimension]) {
+      dimensions[dimension] = {
+        indicatorIds: new Set(),
+        observations: 0,
+        latestYear: null,
+        providers: new Set(),
+        examples: []
+      };
+    }
+    dimensions[dimension].indicatorIds.add(observation.indicator_id);
+    dimensions[dimension].providers.add(observation.provider_title || observation.provider_id || observation.source_id);
+    dimensions[dimension].latestYear = Math.max(Number(dimensions[dimension].latestYear) || 0, Number(observation.year) || 0);
+    dimensions[dimension].examples.push(observation);
+  });
+  observations.forEach((observation) => {
+    const dimension = observation.indicator.dimension || "datenqualitaet";
+    if (dimensions[dimension]) dimensions[dimension].observations += 1;
+  });
+  return { observations, latest, dimensions };
 }
 
 function snapshotSummaryForEntity(entity, state, universe) {
@@ -132,6 +211,75 @@ function scoreCard(label, note) {
   `;
 }
 
+function rawDimensionCard(label, dimension, note, profile) {
+  const dimensionProfile = profile.dimensions[dimension];
+  if (!dimensionProfile) return scoreCard(label, note);
+  const indicatorCount = dimensionProfile.indicatorIds.size;
+  const providerCount = dimensionProfile.providers.size;
+  const example = dimensionProfile.examples[0];
+  const latestValue = example
+    ? `${formatNumber(Number(example.raw_value))} ${text(example.unit, "")}`.trim()
+    : "Werte vorhanden";
+  return `
+    <article class="card wk-score-card">
+      <p class="card-kicker">${escapeHtml(label)}</p>
+      <h3 class="card-title">Rohdaten vorhanden</h3>
+      <p class="card-text">${indicatorCount} Indikator${indicatorCount === 1 ? "" : "en"} · ${dimensionProfile.observations} Beobachtung${dimensionProfile.observations === 1 ? "" : "en"} · jüngstes Jahr ${escapeHtml(dimensionProfile.latestYear || "offen")}</p>
+      <p class="card-text"><strong>Beispiel:</strong> ${escapeHtml(example?.indicator?.name || note)}${example ? ` (${escapeHtml(latestValue)})` : ""}</p>
+      <p class="card-text">${providerCount} Snapshot-Provider · noch nicht fachlich normalisiert.</p>
+    </article>
+  `;
+}
+
+function dataQualityCard(profile, summary) {
+  const providerCount = new Set(profile.observations.map((observation) => observation.provider_title || observation.provider_id || observation.source_id)).size;
+  const latestYears = profile.latest.map((observation) => Number(observation.year)).filter(Boolean);
+  const latestYear = latestYears.length ? Math.max(...latestYears) : null;
+  const status = summary.observationCount > 0 ? "Snapshot geladen" : "Nicht berechnet";
+  return `
+    <article class="card wk-score-card">
+      <p class="card-kicker">${escapeHtml(dimensionLabels.datenqualitaet)}</p>
+      <h3 class="card-title">${escapeHtml(status)}</h3>
+      <p class="card-text">${profile.latest.length} Indikator${profile.latest.length === 1 ? "" : "en"} · ${summary.observationCount} Rohbeobachtung${summary.observationCount === 1 ? "" : "en"} · ${providerCount} Provider.</p>
+      <p class="card-text">Jüngstes Datenjahr: ${escapeHtml(latestYear || "offen")}. Lizenz, Abrufdatum und Quellenanker sind im Snapshot sichtbar.</p>
+    </article>
+  `;
+}
+
+function renderRawObservationRows(profile) {
+  if (!profile.latest.length) {
+    return `<p class="card-text">Für diese Einheit sind in den geladenen Snapshots noch keine Beobachtungen vorhanden.</p>`;
+  }
+  return `
+    <div class="wk-table-wrap">
+      <table class="wk-source-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>Indikator</th>
+            <th>Jahr</th>
+            <th>Wert</th>
+            <th>Quelle</th>
+            <th>Datenqualität</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${profile.latest.map((observation) => `
+            <tr>
+              <td>${escapeHtml(dimensionLabels[observation.indicator.dimension] || observation.indicator.dimension || "Daten")}</td>
+              <td>${escapeHtml(observation.indicator.name || observation.indicator_id)}</td>
+              <td>${escapeHtml(observation.year)}</td>
+              <td>${escapeHtml(`${formatNumber(Number(observation.raw_value))} ${text(observation.unit, "")}`.trim())}</td>
+              <td>${escapeHtml(observation.provider_title || observation.provider_id || observation.source_id)}</td>
+              <td>${escapeHtml(observation.data_quality || observation.confidence || "Rohdaten")}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
 function renderEmptyChart(target, toolName, summary) {
   const chartText = summary.observationCount > 0
     ? `${toolName} hat bereits ${summary.observationCount} Rohbeobachtungen im Snapshot. Der Score-Zeitverlauf wird erst gezeichnet, wenn Normalisierung, Zielpfad und Mindestdatenabdeckung validiert sind.`
@@ -167,6 +315,25 @@ function interpretation(entity, universe, summary) {
     "Der Wirkungskompass zeigt deshalb Datenstatus, Vergleichsebene, Snapshot-Provider und offene Datenlücken statt scheingenauer Gesamtwerte.",
     "Prüffrage: Welche Indikatoren liegen für Mensch, Planet und Demokratie über mehrere Jahre, mit Lizenz, Abrufdatum, Methodikversion und Datenqualität vor?",
     "Diese Einordnung ist kein Ranking, kein amtliches Rating, keine politische Gesinnungsbewertung und keine automatische Entscheidung."
+  ];
+}
+
+function interpretationWithProfile(entity, universe, summary, profile) {
+  const lines = interpretation(entity, universe, summary);
+  if (!profile.latest.length) return lines;
+  const availableDimensions = ["mensch", "planet", "demokratie"]
+    .filter((dimension) => profile.dimensions[dimension])
+    .map((dimension) => dimensionLabels[dimension]);
+  const missingDimensions = ["mensch", "planet", "demokratie"]
+    .filter((dimension) => !profile.dimensions[dimension])
+    .map((dimension) => dimensionLabels[dimension]);
+  return [
+    `Für ${entity.name} sind aktuell Rohdaten in ${availableDimensions.join(", ") || "keiner MPD-Dimension"} sichtbar. Das ist ein Datenprofil, noch kein Wirkungsurteil.`,
+    missingDimensions.length
+      ? `Noch unvollständig ist die Datenlage in: ${missingDimensions.join(", ")}. Dort wird kein Wert angezeigt und keine Wirkung unterstellt.`
+      : "Für alle drei MPD-Dimensionen liegen erste Rohdaten vor; die fachliche Normalisierung ist weiterhin offen.",
+    "Die Karten zeigen deshalb Indikatoren, Beobachtungen, jüngstes Datenjahr und Quellenstatus. Ein Gesamtwert folgt erst, wenn Zielpfade, Mindestabdeckung und Datenqualität validiert sind.",
+    ...lines.slice(1)
   ];
 }
 
@@ -220,6 +387,7 @@ function renderProfile(entity, universe, state) {
   const profile = document.querySelector("[data-wk-profile]");
   const copy = toolCopy[state.tool] || toolCopy["lwk-de"];
   const summary = snapshotSummaryForEntity(entity, state, universe);
+  const dataProfile = dataProfileForEntity(entity, state);
   profile.hidden = false;
   profile.innerHTML = `
     <section class="section wk-profile-shell" aria-labelledby="wk-profile-title">
@@ -246,16 +414,27 @@ function renderProfile(entity, universe, state) {
 
       <aside class="protection-notice" role="note">
         <p class="card-kicker">Gesamtwert</p>
-        <h3>Kein Gesamtwert</h3>
-        <p>${summary.observationCount > 0 ? "Rohdaten sind vorhanden, aber noch nicht fachlich normalisiert. Kein Gesamtwert: Datenabdeckung, Zielpfade und Datenqualitaet reichen fuer eine belastbare Gesamtaussage noch nicht aus." : "Kein Gesamtwert: Datenabdeckung reicht für eine belastbare Gesamtaussage nicht aus."}</p>
+        <h3>${summary.observationCount > 0 ? "Noch kein Gesamtwert" : "Kein Gesamtwert"}</h3>
+        <p>${summary.observationCount > 0 ? `Rohdaten sind vorhanden: ${summary.observationCount} Beobachtungen aus ${summary.snapshotCount} Snapshot(s). Sie werden unten als Beta-Rohdatenprofil angezeigt. Kein Gesamtwert: Datenabdeckung, Zielpfade und Datenqualität reichen für eine belastbare Gesamtaussage noch nicht aus.` : "Kein Gesamtwert: Datenabdeckung reicht für eine belastbare Gesamtaussage nicht aus."}</p>
       </aside>
 
       <div class="card-grid four wk-score-grid">
-        ${scoreCard(dimensionLabels.mensch, "Armut, Gesundheit, Bildung, Arbeit, Wohnen, Teilhabe und soziale Sicherheit.")}
-        ${scoreCard(dimensionLabels.planet, "Klima, Energie, Fläche, Luft, Wasser, Biodiversität, Ressourcen und Klimarisiken.")}
-        ${scoreCard(dimensionLabels.demokratie, "Wahlbeteiligung, Rechtsstaatlichkeit, Transparenz, Medienvielfalt, Vertrauen und Zivilgesellschaft als SDG+-Prüffeld.")}
-        ${scoreCard(dimensionLabels.datenqualitaet, "Vollständigkeit, Lizenz, Aktualität, Vergleichbarkeit, Quellenanker und Methodikversion.")}
+        ${rawDimensionCard(dimensionLabels.mensch, "mensch", "Armut, Gesundheit, Bildung, Arbeit, Wohnen, Teilhabe und soziale Sicherheit.", dataProfile)}
+        ${rawDimensionCard(dimensionLabels.planet, "planet", "Klima, Energie, Fläche, Luft, Wasser, Biodiversität, Ressourcen und Klimarisiken.", dataProfile)}
+        ${rawDimensionCard(dimensionLabels.demokratie, "demokratie", "Wahlbeteiligung, Rechtsstaatlichkeit, Transparenz, Medienvielfalt, Vertrauen und Zivilgesellschaft als SDG+-Prüffeld.", dataProfile)}
+        ${dataQualityCard(dataProfile, summary)}
       </div>
+
+      <section class="card" aria-labelledby="wk-rawdata-title">
+        <div class="inline-heading">
+          <div>
+            <p class="hero-kicker">Beta-Rohdatenprofil</p>
+            <h3 id="wk-rawdata-title">Geladene Snapshot-Werte</h3>
+          </div>
+          <p class="card-text">Diese Werte sind öffentliche Rohdaten aus versionierten Importen. Sie sind noch nicht zu Scorewerten normalisiert.</p>
+        </div>
+        ${renderRawObservationRows(dataProfile)}
+      </section>
 
       <section class="card" aria-labelledby="wk-timeline-title">
         <div class="inline-heading">
@@ -271,7 +450,7 @@ function renderProfile(entity, universe, state) {
       <section class="card" aria-labelledby="wk-interpretation-title">
         <p class="hero-kicker">Regelbasierte Interpretation</p>
         <h3 id="wk-interpretation-title">Einordnung für ${escapeHtml(entity.name)}</h3>
-        ${interpretation(entity, universe, summary).map((line) => `<p>${escapeHtml(line)}</p>`).join("")}
+        ${interpretationWithProfile(entity, universe, summary, dataProfile).map((line) => `<p>${escapeHtml(line)}</p>`).join("")}
       </section>
 
       <div class="card-grid two">
@@ -342,6 +521,7 @@ async function initTerritorialCompass() {
   if (snapshotResponse?.ok) {
     state.snapshotManifest = await snapshotResponse.json();
   }
+  await loadSnapshotData(state, universe);
   const entities = Array.isArray(universe.entities) ? universe.entities : [];
   const input = document.querySelector("[data-wk-search]");
   const select = document.querySelector("[data-wk-select]");
