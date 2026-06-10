@@ -23,6 +23,10 @@ Klar, ruhig, konkret, professionell.
 - benennen, nicht ausmalen
 - zeigen, was ausgelöst werden soll
 - Frame-Shift anbieten
+- Frame, Framing und Reframing sauber trennen: Frame = Deutungsrahmen, Framing = Setzen oder Verstärken, Reframing = bewusste Verschiebung des Deutungs- und Bewertungsrahmens
+- bei Sprache, Medien und Narrativen vorsichtig von Wirkungspotenzial, Resonanzraum, Wirkungspfad oder Wirkungsrisiko sprechen, solange keine Wirkung nachgewiesen ist
+- wirkungsorientiertes Reframing verschiebt den Maßstab von Kapital, Kosten, Output, Reichweite oder Wachstum hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung für Mensch, Planet und Demokratie
+- Reframing darf keine Zielkonflikte verdecken, keine Feindbilder erzeugen und keine unbelegten Absichten unterstellen
 
 ## Psychologie
 - alltagssprachlich

@@ -7684,7 +7684,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Deutungsrahmen",
       "Framing"
     ],
-    "definition": "Ein Frame sortiert Wirklichkeit und legt nahe, was als Problem, Ursache, Opfer oder Lösung erscheint.",
+    "definition": "Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird.",
     "url": "/begriffe/frame/",
     "priority": 357,
     "autoLinkAllowed": true,
@@ -7704,9 +7704,11 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "Frame / Framing",
       "Frame",
-      "Framing"
+      "Framing",
+      "Deutungsrahmen",
+      "Framinganalyse"
     ],
-    "definition": "Deutungsrahmen, in dem Informationen Bedeutung erhalten.",
+    "definition": "Setzen oder Verstärken eines Deutungsrahmens durch Sprache, Bilder, Zahlen, Tonalität oder Wiederholung.",
     "url": "/begriffe/framing/",
     "priority": 358,
     "autoLinkAllowed": true,
@@ -21401,9 +21403,12 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "key": "reframing",
     "label": "Reframing",
     "aliases": [
-      "Reframing"
+      "Reframing",
+      "wirkungsorientiertes Reframing",
+      "Bewertungsmaßstab verschieben",
+      "Bewertungsmassstab verschieben"
     ],
-    "definition": "Wechsel des Deutungsrahmens, um neue Orientierung und Anschlussfähigkeit zu erzeugen.",
+    "definition": "Bewusste Verschiebung des Deutungs- und Bewertungsrahmens; in der WÖk besonders vom Kapital-, Kosten- oder Outputmaßstab zur Wirkungslogik.",
     "url": "/begriffe/reframing/",
     "priority": 991,
     "autoLinkAllowed": true,
@@ -29579,7 +29584,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "reale Folge",
       "Systemfolge"
     ],
-    "definition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational: Sie wirkt auf jemanden oder etwas und ist nicht automatisch positiv.",
+    "definition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
     "url": "/begriffe/wirkung/",
     "priority": 1370,
     "autoLinkAllowed": true,

@@ -92414,28 +92414,39 @@
         "Deutungsrahmen",
         "Framing"
       ],
-      "shortDefinition": "Ein Frame ist ein Deutungsrahmen, der bestimmt, wie ein Thema wahrgenommen und bewertet wird.",
+      "shortDefinition": "Ein Frame ist ein Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird.",
       "short_definition": "Ein Frame ist ein Deutungsrahmen, der bestimmt, wie ein Thema wahrgenommen und bewertet wird.",
-      "definition": "Ein Frame ist ein Deutungsrahmen, der bestimmt, wie ein Thema wahrgenommen und bewertet wird.",
-      "longDefinition": "Ein Frame sortiert Wirklichkeit: Er legt nahe, was als Problem gilt, wer verantwortlich erscheint und welche Lösung plausibel wirkt.",
+      "definition": "Ein Frame ist ein Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird.",
+      "longDefinition": "Ein Frame bestimmt mit, was als Problem erscheint, welche Ursachen sichtbar werden, wem Verantwortung zugeschrieben wird, welche Emotionen aktiviert werden und welche Lösungen plausibel wirken.",
       "long_definition": "Ein Frame sortiert Wirklichkeit: Er legt nahe, was als Problem gilt, wer verantwortlich erscheint und welche Lösung plausibel wirkt.",
-      "hoverDefinition": "Ein Frame sortiert Wirklichkeit und legt nahe, was als Problem, Ursache, Opfer oder Lösung erscheint.",
-      "woekRelation": "Frames sind in der WÖk sprachliche Wirkstoffe, weil sie Resonanzräume, Vertrauen und Handlungsfähigkeit beeinflussen.",
+      "hoverDefinition": "Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird.",
+      "woekRelation": "In der Wirkungsökonomie sind Frames keine bloßen Sprachformen, sondern Wirkungspotenziale. Sie können Resonanzräume öffnen, Wirkpfade verschieben, Verantwortung sichtbar machen oder verdecken und dadurch Entscheidungen, Aufmerksamkeit und Handlungsmöglichkeiten beeinflussen.",
       "woek_einordnung": "Frames sind in der WÖk sprachliche Wirkstoffe, weil sie Resonanzräume, Vertrauen und Handlungsfähigkeit beeinflussen.",
       "relatedTerms": [
         "narrativ",
         "sprachlicher-trigger",
         "gegenframe",
-        "resonanzraum"
+        "resonanzraum",
+        "framing",
+        "reframing",
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsrisiko"
       ],
       "related_terms": [
         "narrativ",
         "sprachlicher-trigger",
         "gegenframe",
-        "resonanzraum"
+        "resonanzraum",
+        "framing",
+        "reframing",
+        "wirkungspotenzial",
+        "wirkungspfad",
+        "wirkungsrisiko"
       ],
       "categories": [
-        "sprache-wirklichkeit-und-kommunikation"
+        "sprache-wirklichkeit-und-kommunikation",
+        "psychologische-systemische-wirkmechanismen"
       ],
       "tags": [
         "Sprache",
@@ -92443,24 +92454,39 @@
         "Demokratie"
       ],
       "status": "anschlussbegriff",
-      "type": "Anschlussbegriff",
-      "begriffstyp": "Anschlussbegriff",
+      "type": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
       "category": "Sprache, Wirklichkeit und Kommunikation",
-      "source": "Wirkungsradar Sprachmuster und Emotionalisierung",
-      "sourceDocument": "Wirkungsradar Sprachmuster und Emotionalisierung",
-      "sourceSection": "Sprache als politischer Wirkstoff",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceSection": "Sprache, Medien, Resonanzräume und wirkungsorientiertes Reframing",
       "relatedDocuments": [
         "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
       ],
-      "preferredUsage": "Als Analysebegriff für Deutungsrahmen politischer Sprache verwenden.",
+      "preferredUsage": "Als Analysebegriff für Deutungs- und Bewertungsrahmen verwenden; keine Absichten unterstellen und nicht vorschnell Wirkung behaupten.",
       "deprecatedUsage": [
         "Frame als bloßes Schlagwort ohne Wirkungsanalyse"
       ],
       "reviewStatus": "approved",
-      "lastUpdated": "2026-06-03",
-      "version": "1.0",
-      "doNotConfuseWith": [],
-      "officialSources": []
+      "lastUpdated": "2026-06-10",
+      "version": "1.1",
+      "doNotConfuseWith": [
+        "Meinung: Meinung ist Bewertung; ein Frame ist der Deutungsrahmen, in dem Bewertung plausibel wird.",
+        "Wirkung: Ein Frame erzeugt Wirkungspotenzial, aber ist noch keine eingetretene Wirkung.",
+        "Manipulation: Ein Frame kann aufklärend, beschreibend, strategisch oder manipulativ sein; die Einordnung braucht Kontext und Quellen."
+      ],
+      "officialSources": [],
+      "pageUrl": "/begriffe/frame/",
+      "usageNote": "Ein Frame ist noch keine Wirkung. Bei Sprache, Medien und Narrativen ist meist präzise von Wirkungspotenzial, Resonanzraum, Wirkungspfad oder Wirkungsrisiko zu sprechen.",
+      "examples": [
+        "„Klimaschutz als Kostenproblem“ öffnet einen anderen Deutungsrahmen als „Klimaschutz als Schutz vor Folgekosten“. Der erste Frame richtet den Blick auf kurzfristige Ausgaben. Der zweite macht vermiedene Schäden, Resilienz und Zukunftssicherung sichtbar."
+      ],
+      "updatedAt": "2026-06-10",
+      "lastReviewed": "2026-06-10",
+      "last_reviewed": "2026-06-10",
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ]
     },
     {
       "id": "framing",
@@ -92471,19 +92497,22 @@
       "aliases": [
         "Frame / Framing",
         "Frame",
-        "Framing"
+        "Framing",
+        "Deutungsrahmen",
+        "Framinganalyse"
       ],
       "synonyms": [
-        "Frame / Framing",
         "Frame",
-        "Framing"
+        "Framing",
+        "Deutungsrahmen",
+        "Framinganalyse"
       ],
-      "shortDefinition": "Framing bezeichnet die Einbettung von Informationen in einen Deutungsrahmen, der bestimmt, wie sie verstanden, bewertet und emotional verarbeitet werden.",
-      "definition": "Framing entscheidet nicht nur, was gesagt wird, sondern in welchem Bedeutungsraum es erscheint. Derselbe Fakt kann unterschiedlich wirken, je nachdem ob er als Verlust, Schutz, Kosten, Freiheit, Kontrolle, Bedrohung, Verantwortung oder Zukunftschance gerahmt wird.",
-      "longDefinition": "Framing entscheidet nicht nur, was gesagt wird, sondern in welchem Bedeutungsraum es erscheint. Derselbe Fakt kann unterschiedlich wirken, je nachdem ob er als Verlust, Schutz, Kosten, Freiheit, Kontrolle, Bedrohung, Verantwortung oder Zukunftschance gerahmt wird.",
-      "woekRelation": "Frames sind Wirkstoffe in Resonanzräumen. Sie erzeugen Wirkungspotenzial, aber noch keine Wirkung im engeren Sinn. Wirkung entsteht erst, wenn der Frame Wahrnehmung, Vertrauen, Entscheidungen, Verhalten oder Institutionen verändert.",
+      "shortDefinition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens.",
+      "definition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es geschieht durch Begriffe, Metaphern, Bilder, Zahlen, Tonalität, Wiederholung, Auswahl von Fakten, Reihenfolge der Darstellung und die Frage, welche Perspektive als selbstverständlich erscheint.",
+      "longDefinition": "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es strukturiert, was sichtbar wird, was nebensächlich wirkt, wem Verantwortung zugeschrieben wird und welche Lösung als plausibel erscheint.",
+      "woekRelation": "Framing ist wirkungsrelevant, weil es nicht nur beschreibt, sondern Wahrnehmung, Resonanz, Verantwortungszuschreibung und Handlungsmöglichkeiten strukturiert. Es erzeugt häufig Wirkungspotenzial, nicht automatisch nachgewiesene Wirkung.",
       "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
-      "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
+      "usageNote": "Framing ist nicht automatisch Manipulation. Aufklärendes Framing macht Zusammenhänge, blinde Flecken und Wirkpfade sichtbarer. Manipulatives Framing verengt Wirklichkeit, verdeckt Verantwortung, erzeugt Feindbilder oder verschiebt Aufmerksamkeit von relevanten Wirkungen weg.",
       "categories": [
         "psychologische-systemische-wirkmechanismen"
       ],
@@ -92526,7 +92555,11 @@
         "praediktive-verarbeitung",
         "agenda-setting",
         "populismus",
-        "paltering"
+        "paltering",
+        "frame",
+        "tonalitaet",
+        "wirkungspfad",
+        "wirkungsrisiko"
       ],
       "officialSources": [
         "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
@@ -92534,22 +92567,24 @@
       "pageUrl": "/begriffe/framing/",
       "priority": 400,
       "status": "woek-anschlussbegriff",
-      "version": "1.0",
+      "version": "1.1",
       "category": "Psychologische und systemische Wirkmechanismen",
-      "source": "Journalartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
-      "sourceDocument": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
-      "sourceSection": "Psychologische und systemische Wirkmechanismen",
-      "hoverDefinition": "Deutungsrahmen, in dem Informationen Bedeutung erhalten.",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceSection": "Sprache, Medien, Resonanzräume und wirkungsorientiertes Reframing",
+      "hoverDefinition": "Setzen oder Verstärken eines Deutungsrahmens durch Sprache, Bilder, Zahlen, Tonalität oder Wiederholung.",
       "doNotConfuseWith": [
-        "Wirkung",
-        "Wirkungspotenzial",
-        "Wirkungsnachweis"
+        "Frame: der Deutungsrahmen; Framing: das Setzen oder Verstärken dieses Rahmens.",
+        "Wirkungsnachweis: Framing kann Wirkungspotenzial erzeugen, beweist aber noch keine eingetretene Wirkung.",
+        "Manipulation: Framing kann aufklärend oder manipulativ sein; entscheidend sind Wahrheitsnähe, Kontext, Würde und Transparenz."
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
-      "examples": [],
-      "preferredUsage": "Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.",
+      "examples": [
+        "Ein Bericht kann dieselbe Zahl als Kosten, Schutz, Risiko, Investition oder Folgekostenvermeidung rahmen. Die Fakten ändern sich nicht; der Bewertungsmaßstab und die Resonanzräume verändern sich."
+      ],
+      "preferredUsage": "Framing als Prozess der Rahmung beschreiben und zwischen Deutungsrahmen, Wirkungspotenzial, Wirkpfad und Wirkungsnachweis unterscheiden.",
       "deprecatedUsage": [
         "als moralisches Etikett für Personen verwenden",
         "mit eingetretener Wirkung gleichsetzen"
@@ -92559,8 +92594,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "Frame / Framing",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-06-10",
+      "updatedAt": "2026-06-10",
       "related_terms": [
         "reframing",
         "alarm-frame",
@@ -92582,16 +92617,20 @@
         "praediktive-verarbeitung",
         "agenda-setting",
         "populismus",
-        "paltering"
+        "paltering",
+        "frame",
+        "tonalitaet",
+        "wirkungspfad",
+        "wirkungsrisiko"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
       "concept_status": "",
       "source_links": [],
       "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "last_reviewed": "2026-06-10",
+      "type": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
       "theme": [
         "Psychologische und systemische Wirkmechanismen"
       ],
@@ -92622,7 +92661,8 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "lastReviewed": "2026-06-10"
     },
     {
       "id": "framekontrolle",
@@ -253729,17 +253769,23 @@
       "canonicalLabel": "Reframing",
       "slug": "reframing",
       "aliases": [
-        "Reframing"
+        "Reframing",
+        "wirkungsorientiertes Reframing",
+        "Bewertungsmaßstab verschieben",
+        "Bewertungsmassstab verschieben"
       ],
       "synonyms": [
-        "Reframing"
+        "Reframing",
+        "wirkungsorientiertes Reframing",
+        "Bewertungsmaßstab verschieben",
+        "Bewertungsmassstab verschieben"
       ],
-      "shortDefinition": "Reframing ist der Wechsel eines Deutungsrahmens, der ein Thema aus einem anderen Sinn-, Ziel- oder Wirkungszusammenhang verständlich macht.",
-      "definition": "Reframing bekämpft nicht primär den Inhalt, sondern verändert den Bedeutungsraum. Es ersetzt zum Beispiel einen Verlust-Frame durch einen Schutz-Frame, einen Ohnmachts-Frame durch einen Selbstwirksamkeits-Frame oder einen Bedrohungs-Frame durch einen Orientierungs-Frame.",
-      "longDefinition": "Reframing bekämpft nicht primär den Inhalt, sondern verändert den Bedeutungsraum. Es ersetzt zum Beispiel einen Verlust-Frame durch einen Schutz-Frame, einen Ohnmachts-Frame durch einen Selbstwirksamkeits-Frame oder einen Bedrohungs-Frame durch einen Orientierungs-Frame.",
-      "woekRelation": "Reframing ist ein Wirkmechanismus zur Reduktion destruktiver Dissonanz und zur Erhöhung von Anschlussfähigkeit. Es kann Wirkungspotenziale in konstruktive Richtung verschieben.",
+      "shortDefinition": "Reframing ist die bewusste Veränderung des Deutungs- und Bewertungsrahmens.",
+      "definition": "Reframing ist die bewusste Veränderung des Deutungs- und Bewertungsrahmens.",
+      "longDefinition": "In der Wirkungsökonomie bedeutet Reframing vor allem, den Bewertungsmaßstab zu verschieben: weg von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "woekRelation": "Reframing macht sichtbar, dass viele Debatten nicht nur an falschen Lösungen scheitern, sondern bereits am falschen Rahmen. Es fragt: Was macht der alte Frame sichtbar? Was verdeckt er? Welche Verantwortung schreibt er zu? Welche Emotion aktiviert er? Welche Lösung erscheint dadurch plausibel?",
       "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
-      "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
+      "usageNote": "Reframing ist nicht Schönfärberei, Propaganda oder Manipulation. Wirkungsorientiertes Reframing soll Wirklichkeit klären, blinde Flecken sichtbar machen, Wirkungspfade benennen und demokratische Handlungsfähigkeit erhöhen.",
       "categories": [
         "psychologische-systemische-wirkmechanismen"
       ],
@@ -253776,7 +253822,16 @@
         "faktenreaktanz",
         "paul-watzlawick",
         "metakommunikation",
-        "mentales-modell"
+        "mentales-modell",
+        "frame",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "wirkungspfad",
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko"
       ],
       "officialSources": [
         "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
@@ -253784,26 +253839,25 @@
       "pageUrl": "/begriffe/reframing/",
       "priority": 400,
       "status": "woek-anschlussbegriff",
-      "version": "1.0",
+      "version": "1.1",
       "category": "Psychologische und systemische Wirkmechanismen",
-      "source": "Journalartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
-      "sourceDocument": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
-      "sourceSection": "Psychologische und systemische Wirkmechanismen",
-      "hoverDefinition": "Wechsel des Deutungsrahmens, um neue Orientierung und Anschlussfähigkeit zu erzeugen.",
+      "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10",
+      "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceSection": "Sprache, Medien, Resonanzräume und wirkungsorientiertes Reframing",
+      "hoverDefinition": "Bewusste Verschiebung des Deutungs- und Bewertungsrahmens; in der WÖk besonders vom Kapital-, Kosten- oder Outputmaßstab zur Wirkungslogik.",
       "doNotConfuseWith": [
-        "Wirkung",
-        "Wirkungspotenzial",
-        "Wirkungsnachweis"
+        "Beschönigung: Reframing darf Schäden, Zielkonflikte oder Verteilungsfragen nicht verdecken.",
+        "Manipulation: Reframing darf nicht selektiv nur passende Aspekte hervorheben.",
+        "Wirkungsnachweis: Ein neuer Frame kann Wirkungspotenzial öffnen, beweist aber noch keine eingetretene Wirkung.",
+        "PR-Wording: Es geht nicht um schönere Worte, sondern um einen wahrheitsnäheren Bewertungsmaßstab."
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "examples": [
-        "Klimaschutz ist Verzicht wird zu Klimaschutz ist Schutz vor den teuersten Krisen.",
-        "Migration überfordert uns wird zu Eine alternde Gesellschaft braucht Menschen, die mit anpacken.",
-        "Windräder zerstören Heimat wird zu Regionale Energie hält Wertschöpfung vor Ort."
+        "Aus „Sozialausgaben“ wird nicht einfach ein schöneres Wort, sondern ein anderer Bewertungsrahmen: „Stabilitätsinvestitionen“ macht sichtbar, dass soziale Sicherung Folgekosten verhindert, Teilhabe ermöglicht und gesellschaftliche Resilienz stärkt."
       ],
-      "preferredUsage": "Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.",
+      "preferredUsage": "Reframing als Maßstabsverschiebung nutzen: von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung.",
       "deprecatedUsage": [
         "als moralisches Etikett für Personen verwenden",
         "mit eingetretener Wirkung gleichsetzen"
@@ -253813,8 +253867,8 @@
       "reviewStatus": "approved",
       "glossaryOrderKey": "Reframing",
       "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-06-10",
+      "updatedAt": "2026-06-10",
       "related_terms": [
         "framing",
         "alarm-frame",
@@ -253830,16 +253884,25 @@
         "faktenreaktanz",
         "paul-watzlawick",
         "metakommunikation",
-        "mentales-modell"
+        "mentales-modell",
+        "frame",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "wirkungspfad",
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
       "concept_status": "",
       "source_links": [],
       "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "last_reviewed": "2026-06-10",
+      "type": "WÖk-Präzisierungsbegriff / methodischer WÖk-Begriff",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / methodischer WÖk-Begriff",
       "theme": [
         "Psychologische und systemische Wirkmechanismen"
       ],
@@ -253870,7 +253933,78 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "deepGlossarySections": [
+        {
+          "title": "WÖk-Definition",
+          "body": "In der Wirkungsökonomie bedeutet Reframing vor allem, den Bewertungsmaßstab offenzulegen und zu verschieben: weg von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung für Mensch, Planet und Demokratie."
+        },
+        {
+          "title": "Reframing anwenden: 7 Schritte",
+          "items": [
+            "1. Den alten Frame erkennen: Wie wird das Thema bisher gerahmt, welcher Maßstab dominiert, welche Lösung wirkt plausibel?",
+            "2. Die Wirkungsblindheit benennen: Welche Wirkungen, Folgekosten, Wirkungsempfänger oder Systemfolgen bleiben unsichtbar?",
+            "3. Den neuen Bewertungsmaßstab setzen: Was verändert sich für Mensch, Planet und Demokratie, kurz- und langfristig?",
+            "4. Den Wirkungspfad formulieren: Wie verändert der neue Frame Wahrnehmung, Verantwortung, Emotion und Handlungsmöglichkeiten? Ist das ein Wirkungsnachweis oder ein plausibler Wirkpfad?",
+            "5. Einen präzisen Gegenframe entwickeln: wahrheitsnäher, wirkungsbezogen, würdig, handlungsfähig und offen für Zielkonflikte.",
+            "6. Den Frame auf Risiken prüfen: Verdeckt er Nebenwirkungen, erzeugt er Feindbilder, unterstellt er Absichten oder klingt er technokratisch?",
+            "7. Den Frame testen und lernfähig halten: Resonanz, Verständlichkeit, Missverständnisse und Wirkungsrisiken prüfen."
+          ]
+        },
+        {
+          "title": "Formeln für die Praxis",
+          "items": [
+            "Der bisherige Frame stellt X in den Vordergrund und lässt Y unsichtbar werden.",
+            "Der bisherige Rahmen sieht X, aber nicht Y.",
+            "Wirkungsorientiert gefragt lautet die Frage nicht mehr X, sondern Y.",
+            "Dieser Frame macht A sichtbar, lässt B zurücktreten, ordnet Verantwortung bei C ein und macht Lösung D plausibler.",
+            "Dieser Frame ist ein Vorschlag zur Wirklichkeitsklärung. Er muss an Resonanz, Verständlichkeit, Nebenwirkungen und demokratischer Anschlussfähigkeit geprüft werden."
+          ]
+        },
+        {
+          "title": "Was man vermeiden sollte",
+          "items": [
+            "Beschönigung: aus realen Problemen nicht einfach Chancen machen, wenn Schäden, Zielkonflikte oder Verteilungsfragen bestehen.",
+            "Manipulation: nicht selektiv nur die Aspekte hervorheben, die zur eigenen Botschaft passen.",
+            "Moralische Überhöhung: Kritik nicht als Rückständigkeit abwerten, sondern als mögliches Wirkungsrisiko prüfen.",
+            "Feindbilder: keine Gruppen als Ursache komplexer Systemprobleme markieren.",
+            "Wirkung mit Absicht verwechseln: bei Sprache und Narrativen von Wirkungspotenzial, Resonanzraum oder Wirkpfad sprechen, solange Wirkung nicht nachgewiesen ist.",
+            "Wirkung mit Output verwechseln: Menge der Aktivität nicht als Wirkung ausgeben.",
+            "Technokratisches Framing: Wirkungsdaten als Entscheidungshilfe erklären, nicht als Kontrollsystem.",
+            "Falsche Sicherheit: bei komplexen Zusammenhängen keine absolute Kausalität behaupten."
+          ]
+        },
+        {
+          "title": "Arbeitsvorlage: Reframing prüfen",
+          "items": [
+            "Ausgangsframe: Wie wird das Thema bisher gerahmt?",
+            "Alter Maßstab: Woran wird Erfolg oder Problem bisher gemessen?",
+            "Blinder Fleck: Welche Wirkungen, Folgekosten oder Wirkungsempfänger bleiben unsichtbar?",
+            "Neuer Wirkungsmaßstab: Was verändert sich für Mensch, Planet und Demokratie?",
+            "Wirkungspfad: Wie kann der neue Frame Wahrnehmung, Verantwortung, Emotion und Handlungsmöglichkeiten verschieben?",
+            "Neuer Frame: Welche Formulierung macht die Wirkung klarer, ohne zu manipulieren?",
+            "Risiko-Check: Was könnte der neue Frame verdecken, übertreiben oder unbeabsichtigt verstärken?",
+            "Bessere Formulierung: Welche Sprache ist wahrheitsnäher, würdiger und handlungsfähiger?"
+          ]
+        },
+        {
+          "title": "Beispiel Klimaschutz",
+          "body": "Alter Frame: Klimaschutz ist teuer. Alter Maßstab: kurzfristige Kosten. Blinder Fleck: Klimaschäden, Gesundheitskosten, Versicherungsrisiken, Infrastrukturverluste und Generationenlasten. Neuer Maßstab: vermiedene Folgekosten, Resilienz, Lebensgrundlagen und Versorgungssicherheit. Neuer Frame: Klimaschutz ist Schutz vor Folgekosten und eine Stabilitätsinvestition. Risiko: soziale Belastungen dürfen nicht verdeckt werden."
+        },
+        {
+          "title": "Beispiel Pflege",
+          "body": "Alter Frame: Pflege ist ein Kostenblock. Alter Maßstab: Haushaltsausgaben und Personalkosten. Blinder Fleck: Stabilisierung von Familien, Würde, Gesundheit, Erwerbsfähigkeit Angehöriger und gesellschaftliches Vertrauen. Neuer Maßstab: gesellschaftliche Wirkleistung. Neuer Frame: Pflege ist soziale Infrastruktur."
+        },
+        {
+          "title": "Beispiel nachhaltige Produkte",
+          "body": "Alter Frame: Nachhaltige Produkte sind teurer. Alter Maßstab: Ladenpreis. Blinder Fleck: externalisierte Kosten wie CO2, Wasserstress, Ausbeutung, Gesundheit und Abfall. Neuer Maßstab: ehrlicher Preis nach Wirkung. Neuer Frame: Nicht nachhaltige Produkte sind oft nur scheinbar billig."
+        },
+        {
+          "title": "Beispiel Bürokratie",
+          "body": "Alter Frame: Wirkungsmessung ist neue Bürokratie. Alter Maßstab: Anzahl von Nachweisen, Formularen oder Prüfprozessen. Blinder Fleck: Bürokratie entsteht oft, weil Folgekosten und Wirkungen im Grundsystem nicht sichtbar sind. Neuer Maßstab: Wirkungsrückkopplung, Systemklarheit und weniger Reparaturregulierung. Neuer Frame: Gute Wirkungsdaten können Bürokratie abbauen, wenn sie falsche Anreize direkt korrigieren."
+        }
+      ],
+      "lastReviewed": "2026-06-10"
     },
     {
       "id": "refurbishment",
@@ -263504,7 +263638,9 @@
         "wirkungsnetz",
         "wirkungsorientiertes-hosting",
         "wirkungspotenzial",
-        "diskursfaehigkeit"
+        "diskursfaehigkeit",
+        "frame",
+        "reframing"
       ],
       "officialSources": [
         "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
@@ -263589,7 +263725,9 @@
         "wirkungsnetz",
         "wirkungsorientiertes-hosting",
         "wirkungspotenzial",
-        "diskursfaehigkeit"
+        "diskursfaehigkeit",
+        "frame",
+        "reframing"
       ],
       "source_links": [],
       "internal_links": [],
@@ -346101,7 +346239,7 @@
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "Glossar-Pack 003: Wirkungssprache & Kernlogik",
       "sourceSection": "Professionalisiertes Glossar-Pack 003",
-      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational: Sie wirkt auf jemanden oder etwas und ist nicht automatisch positiv.",
+      "hoverDefinition": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt.",
       "doNotConfuseWith": [
         "Wirkungspotenzial",
         "Absicht",
@@ -346345,7 +346483,7 @@
       "deepGlossarySections": [
         {
           "title": "Kurzdefinition / Hover",
-          "body": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational: Sie wirkt auf jemanden oder etwas und ist nicht automatisch positiv."
+          "body": "Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht einen Bezugspunkt."
         },
         {
           "title": "Auf einen Blick",
@@ -350957,7 +351095,8 @@
         "entfremdung",
         "unsichtbare-arbeit",
         "modellblindheit",
-        "gedankenlosigkeit"
+        "gedankenlosigkeit",
+        "reframing"
       ],
       "officialSources": [
         "UN Sustainable Development Goals / Agenda 2030",
@@ -351066,7 +351205,8 @@
         "entfremdung",
         "unsichtbare-arbeit",
         "modellblindheit",
-        "gedankenlosigkeit"
+        "gedankenlosigkeit",
+        "reframing"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -363474,7 +363614,10 @@
         "wirkungsraum",
         "wirkungstraeger",
         "wirkungsverantwortung",
-        "zeitwirkung"
+        "zeitwirkung",
+        "frame",
+        "framing",
+        "reframing"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungspfad/",
@@ -363535,7 +363678,10 @@
         "wirkungsraum",
         "wirkungstraeger",
         "wirkungsverantwortung",
-        "zeitwirkung"
+        "zeitwirkung",
+        "frame",
+        "framing",
+        "reframing"
       ],
       "source_links": [],
       "internal_links": [],

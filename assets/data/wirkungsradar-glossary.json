@@ -92,13 +92,15 @@
   {
     "slug": "frame",
     "label": "Frame",
-    "shortDefinition": "Ein Frame ist ein Deutungsrahmen, der auswählt, was wichtig wirkt und was ausgeblendet wird.",
-    "hoverDefinition": "Das Bild im Kopf, in dem ein Satz verstanden wird.",
-    "fullDefinition": "Frames lenken Aufmerksamkeit, Gefühle und Schlussfolgerungen. Sie können helfen oder verzerren.",
-    "plainLanguageExample": "Aus Planung wird Zwang; aus Integration wird Last.",
+    "shortDefinition": "Ein Frame ist ein Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird.",
+    "hoverDefinition": "Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird.",
+    "fullDefinition": "Ein Frame bestimmt mit, was als Problem erscheint, welche Ursachen sichtbar werden, wem Verantwortung zugeschrieben wird und welche Lösungen plausibel wirken. In der WÖk ist ein Frame Wirkungspotenzial, noch kein Wirkungsnachweis.",
+    "plainLanguageExample": "„Klimaschutz als Kostenproblem“ richtet den Blick anders aus als „Klimaschutz als Schutz vor Folgekosten“.",
     "relatedTerms": [
-      "narrativ",
-      "reaktanz"
+      "framing",
+      "reframing",
+      "resonanzraum",
+      "wirkungspotenzial"
     ],
     "usedInDossiers": [
       "migration-kostet-nur",
@@ -117,7 +119,7 @@
     ],
     "sourceReferences": [],
     "status": "approved",
-    "lastReviewed": "2026-06-04"
+    "lastReviewed": "2026-06-10"
   },
   {
     "slug": "narrativ",
@@ -699,5 +701,100 @@
     "sourceReferences": [],
     "status": "approved",
     "lastReviewed": "2026-06-04"
+  },
+  {
+    "slug": "framing",
+    "label": "Framing",
+    "shortDefinition": "Setzen oder Verstärken eines Deutungsrahmens durch Sprache, Bilder, Zahlen, Tonalität oder Wiederholung.",
+    "hoverDefinition": "Framing setzt oder verstärkt den Rahmen, in dem ein Thema verstanden wird.",
+    "fullDefinition": "Framing strukturiert Wahrnehmung, Resonanz, Verantwortungszuschreibung und Handlungsmöglichkeiten. Es ist nicht automatisch Manipulation und erzeugt häufig Wirkungspotenzial, nicht automatisch nachgewiesene Wirkung.",
+    "plainLanguageExample": "Dieselbe Zahl kann als Kosten, Schutz, Risiko, Investition oder Folgekostenvermeidung gerahmt werden.",
+    "relatedTerms": [
+      "frame",
+      "reframing",
+      "narrativ",
+      "resonanzraum"
+    ],
+    "usedInDossiers": [
+      "migration-kostet-nur",
+      "deutschland-nur-zwei-prozent",
+      "windraeder-voegel-wald-beton-rueckbau",
+      "fusion-loest-das-energieproblem",
+      "schulden-machen-oder-sparen",
+      "e-autos-schlimmer-als-verbrenner",
+      "e-fuels-retten-den-verbrenner",
+      "wasserstoff-fuer-alles",
+      "arbeit-lohnt-sich-nicht-mehr",
+      "co2-preis-oder-fossile-systemkosten",
+      "kernenergie-wieder-in-deutschland",
+      "radwege-in-peru",
+      "ukraine-unterstuetzung-steuergeld"
+    ],
+    "sourceReferences": [],
+    "status": "approved",
+    "lastReviewed": "2026-06-10"
+  },
+  {
+    "slug": "reframing",
+    "label": "Reframing",
+    "shortDefinition": "Bewusste Verschiebung des Deutungs- und Bewertungsrahmens; in der WÖk besonders vom Kapital-, Kosten- oder Outputmaßstab zur Wirkungslogik.",
+    "hoverDefinition": "Reframing verschiebt den Bewertungsmaßstab: von Kosten, Kapital oder Output hin zu Wirkung und Folgekosten.",
+    "fullDefinition": "Reframing ist nicht Schönfärberei. Wirkungsorientiertes Reframing macht blinde Flecken, Folgekosten, Wirkungspfade und positive Netto-Wirkung für Mensch, Planet und Demokratie sichtbar.",
+    "plainLanguageExample": "Aus „Pflege ist ein Kostenblock“ wird „Pflege ist soziale Infrastruktur“ - aber nur, wenn Kosten, Risiken und Zielkonflikte offen bleiben.",
+    "relatedTerms": [
+      "frame",
+      "framing",
+      "wirkungsblindheit",
+      "positive-netto-wirkung"
+    ],
+    "usedInDossiers": [
+      "migration-kostet-nur",
+      "deutschland-nur-zwei-prozent",
+      "windraeder-voegel-wald-beton-rueckbau",
+      "fusion-loest-das-energieproblem",
+      "schulden-machen-oder-sparen",
+      "e-autos-schlimmer-als-verbrenner",
+      "e-fuels-retten-den-verbrenner",
+      "wasserstoff-fuer-alles",
+      "arbeit-lohnt-sich-nicht-mehr",
+      "co2-preis-oder-fossile-systemkosten",
+      "kernenergie-wieder-in-deutschland",
+      "radwege-in-peru",
+      "ukraine-unterstuetzung-steuergeld"
+    ],
+    "sourceReferences": [],
+    "status": "approved",
+    "lastReviewed": "2026-06-10"
+  },
+  {
+    "slug": "wirkungsorientiertes-reframing",
+    "label": "Wirkungsorientiertes Reframing",
+    "shortDefinition": "Reframing, das blinde Flecken, Folgekosten, Wirkungspfade und positive Netto-Wirkung für Mensch, Planet und Demokratie sichtbar macht.",
+    "hoverDefinition": "Wirkungsorientiertes Reframing verschiebt die Frage vom alten Maßstab zur Wirkung.",
+    "fullDefinition": "Wirkungsorientiertes Reframing klärt, welcher Bewertungsmaßstab wirkt, welche Wirkungen verdeckt bleiben und welche Sprache wahrheitsnäher, würdiger und handlungsfähiger ist.",
+    "plainLanguageExample": "Nicht: „Wie teuer ist Prävention?“ Sondern: „Welche Schäden, Kosten und Instabilitäten verhindert Prävention?“",
+    "relatedTerms": [
+      "reframing",
+      "wirkungspfad",
+      "wirkungsblindheit"
+    ],
+    "usedInDossiers": [
+      "migration-kostet-nur",
+      "deutschland-nur-zwei-prozent",
+      "windraeder-voegel-wald-beton-rueckbau",
+      "fusion-loest-das-energieproblem",
+      "schulden-machen-oder-sparen",
+      "e-autos-schlimmer-als-verbrenner",
+      "e-fuels-retten-den-verbrenner",
+      "wasserstoff-fuer-alles",
+      "arbeit-lohnt-sich-nicht-mehr",
+      "co2-preis-oder-fossile-systemkosten",
+      "kernenergie-wieder-in-deutschland",
+      "radwege-in-peru",
+      "ukraine-unterstuetzung-steuergeld"
+    ],
+    "sourceReferences": [],
+    "status": "approved",
+    "lastReviewed": "2026-06-10"
   }
 ]

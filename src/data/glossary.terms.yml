@@ -542,7 +542,7 @@ terms:
     usageNote: "Nicht mit nachgewiesener Wirkung gleichsetzen."
     doNotConfuseWith: ["Wirkung", "Wirkungspotenzial"]
     synonyms: []
-    relatedTerms: ["wirkungspotenzial", "wirkungspfad", "wirkungsnetz"]
+    relatedTerms: ["wirkungspotenzial", "wirkungspfad", "wirkungsnetz", "frame", "framing", "reframing"]
     relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
     examples: []
     preferredUsage: "Bei Medien, Sprache, Kultur und Öffentlichkeit nutzen."
@@ -550,7 +550,76 @@ terms:
     reviewStatus: "approved"
     glossaryOrderKey: "resonanzraum"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-06-10"
+  - termId: frame
+    canonicalLabel: "Frame"
+    slug: "frame"
+    status: "anschlussbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussbegriffe; Präzisierungsbegriffe; Sprache und Medien"
+    shortDefinition: "Ein Frame ist ein Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird."
+    hoverDefinition: "Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird."
+    longDefinition: "Ein Frame bestimmt mit, was als Problem erscheint, welche Ursachen sichtbar werden, wem Verantwortung zugeschrieben wird, welche Emotionen aktiviert werden und welche Lösungen plausibel wirken."
+    usageNote: "Ein Frame ist noch keine Wirkung. Bei Sprache, Medien und Narrativen ist meist präzise von Wirkungspotenzial, Resonanzraum, Wirkungspfad oder Wirkungsrisiko zu sprechen."
+    doNotConfuseWith: ["Meinung", "Wirkung", "Wirkungsnachweis", "Manipulation"]
+    synonyms: ["Deutungsrahmen"]
+    relatedTerms: ["framing", "reframing", "resonanzraum", "wirkungspotenzial", "wirkungspfad", "wirkungsrisiko"]
+    relatedDocuments: ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"]
+    examples: ["Klimaschutz als Kostenproblem öffnet einen anderen Deutungsrahmen als Klimaschutz als Schutz vor Folgekosten."]
+    preferredUsage: "Als Analysebegriff für Deutungs- und Bewertungsrahmen verwenden; keine Absichten unterstellen und nicht vorschnell Wirkung behaupten."
+    deprecatedUsage: ["Frame als bloßes Schlagwort ohne Wirkungsanalyse", "Frame mit Wirkung verwechseln"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "frame"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-06-10"
+  - termId: framing
+    canonicalLabel: "Framing"
+    slug: "framing"
+    status: "anschlussbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussbegriffe; Präzisierungsbegriffe; Sprache und Medien"
+    shortDefinition: "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens."
+    hoverDefinition: "Setzen oder Verstärken eines Deutungsrahmens durch Sprache, Bilder, Zahlen, Tonalität oder Wiederholung."
+    longDefinition: "Framing geschieht durch Begriffe, Metaphern, Bilder, Zahlen, Tonalität, Wiederholung, Auswahl von Fakten, Reihenfolge der Darstellung und die Frage, welche Perspektive als selbstverständlich erscheint."
+    usageNote: "Framing ist nicht automatisch Manipulation. Aufklärendes Framing macht Zusammenhänge, blinde Flecken und Wirkpfade sichtbarer. Manipulatives Framing verengt Wirklichkeit, verdeckt Verantwortung, erzeugt Feindbilder oder verschiebt Aufmerksamkeit von relevanten Wirkungen weg."
+    doNotConfuseWith: ["Frame", "Wirkungsnachweis", "Manipulation", "bloßes Wording"]
+    synonyms: ["Rahmung", "Deutungsrahmung", "Framinganalyse"]
+    relatedTerms: ["frame", "reframing", "tonalitaet", "narrativ", "resonanzraum", "wirkungspotenzial", "wirkungspfad", "wirkungsrisiko"]
+    relatedDocuments: ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"]
+    examples: ["Dieselbe Zahl kann als Kosten, Schutz, Risiko, Investition oder Folgekostenvermeidung gerahmt werden."]
+    preferredUsage: "Framing als Prozess der Rahmung beschreiben und zwischen Deutungsrahmen, Wirkungspotenzial, Wirkpfad und Wirkungsnachweis unterscheiden."
+    deprecatedUsage: ["Framing als pauschalen Manipulationsvorwurf verwenden", "Framing beweist Wirkung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "framing"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-06-10"
+  - termId: reframing
+    canonicalLabel: "Reframing"
+    slug: "reframing"
+    status: "präzisierungsbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Präzisierungsbegriffe; methodische WÖk-Begriffe"
+    shortDefinition: "Reframing ist die bewusste Veränderung des Deutungs- und Bewertungsrahmens."
+    hoverDefinition: "Bewusste Verschiebung des Deutungs- und Bewertungsrahmens; in der WÖk besonders vom Kapital-, Kosten- oder Outputmaßstab zur Wirkungslogik."
+    longDefinition: "In der Wirkungsökonomie bedeutet Reframing vor allem, den Bewertungsmaßstab zu verschieben: weg von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung für Mensch, Planet und Demokratie."
+    usageNote: "Reframing ist nicht Schönfärberei, Propaganda oder Manipulation. Wirkungsorientiertes Reframing soll Wirklichkeit klären, blinde Flecken sichtbar machen, Wirkungspfade benennen und demokratische Handlungsfähigkeit erhöhen."
+    doNotConfuseWith: ["Beschönigung", "Manipulation", "PR-Wording", "Wirkungsnachweis"]
+    synonyms: ["wirkungsorientiertes Reframing", "Bewertungsmaßstab verschieben", "Bewertungsmassstab verschieben"]
+    relatedTerms: ["frame", "framing", "wirkungsblindheit", "wirkungswahrheit", "wirkungsrueckkopplung", "positive-netto-wirkung", "wirkungspfad", "resonanzraum", "wirkungspotenzial", "wirkungsrisiko"]
+    relatedDocuments: ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"]
+    examples: ["Aus Sozialausgaben wird nicht einfach ein schöneres Wort, sondern ein anderer Bewertungsrahmen: Stabilitätsinvestitionen macht sichtbar, dass soziale Sicherung Folgekosten verhindert, Teilhabe ermöglicht und gesellschaftliche Resilienz stärkt."]
+    preferredUsage: "Reframing als Maßstabsverschiebung nutzen: von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung."
+    deprecatedUsage: ["Reframing als Schönfärberei verwenden", "Zielkonflikte wegformulieren", "Gegner durch Reframing entwürdigen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "reframing"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-06-10"
   - termId: reverse-merit-order
     canonicalLabel: "Reverse Merit Order"
     slug: "reverse-merit-order"
@@ -1234,7 +1303,7 @@ terms:
     usageNote: "Nicht als moralischen Vorwurf, sondern als Systembefund nutzen."
     doNotConfuseWith: ["Unwissen", "Absicht"]
     synonyms: ["wirkungsblind"]
-    relatedTerms: ["wirkungswahrheit", "wirkungsdatenraum", "wirkungsrückkopplung"]
+    relatedTerms: ["wirkungswahrheit", "wirkungsdatenraum", "wirkungsrückkopplung", "reframing"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Als strukturelles Wahrnehmungsproblem beschreiben."
@@ -1635,7 +1704,7 @@ terms:
     usageNote: "Bei Medien und Sprache oft Wirkungspotenzial, nicht Wirkung."
     doNotConfuseWith: ["Wirkung", "Kausalnachweis"]
     synonyms: ["Wirkpfad"]
-    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungsnetz"]
+    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungsnetz", "framing", "reframing"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Wirkungspfad als analytische Pfadbeschreibung verwenden."
