@@ -21,6 +21,7 @@ const excludedTopLevelDirs = new Set([
   "manifest",
   "node_modules",
   "outputs",
+  "public",
   "reports",
   "scripts",
   "source-assets",
@@ -137,6 +138,13 @@ function collectArtifactReferences() {
   const references = new Set();
   for (const file of walkFiles(artifactDir)) {
     if (!searchableExtensions.has(path.extname(file).toLowerCase())) continue;
+    const relative = toPosixRelative(file);
+    if (
+      relative.startsWith("assets/search/") ||
+      relative === "assets/data/term-registry.json"
+    ) {
+      continue;
+    }
     const content = fs.readFileSync(file, "utf8");
     for (const match of content.matchAll(/(?:href|src|contentUrl|url)=(?:"|')([^"']+)(?:"|')|https?:\/\/wirkungsoekonomie\.de\/([^"'\s<>]+)|(?:\.\.\/|\.\/)?(?:assets|downloads|dokumente|public)\/[^\s"'<>),]+/g)) {
       const raw = match[1] || match[2] || match[0];
@@ -152,7 +160,20 @@ function collectArtifactReferences() {
 
 function copyReferencedPublicFiles() {
   const references = collectArtifactReferences();
-  const copyableExtensions = new Set([".pdf", ".csv", ".json", ".xlsx"]);
+  const copyableExtensions = new Set([
+    ".avif",
+    ".csv",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".json",
+    ".mp3",
+    ".pdf",
+    ".png",
+    ".svg",
+    ".webp",
+    ".xlsx",
+  ]);
   let copied = 0;
 
   for (const relative of references) {
@@ -356,6 +377,29 @@ function validatePublicJson() {
 
 function prunePublicArtifact() {
   const references = collectArtifactReferences();
+  const prunableAssetPrefixes = [
+    "assets/audio/",
+    "assets/downloads/",
+    "assets/img/",
+    "assets/pdf/",
+    "public/assets/",
+    "public/downloads/",
+  ];
+  const prunableAssetExtensions = new Set([
+    ".avif",
+    ".csv",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".json",
+    ".mp3",
+    ".pdf",
+    ".png",
+    ".svg",
+    ".webp",
+    ".xlsx",
+    ".zip",
+  ]);
   let pruned = 0;
 
   for (const file of walkFiles(artifactDir)) {
@@ -368,8 +412,24 @@ function prunePublicArtifact() {
       continue;
     }
 
+    if (
+      prunableAssetExtensions.has(ext) &&
+      prunableAssetPrefixes.some((prefix) => relative.startsWith(prefix)) &&
+      !references.has(relative)
+    ) {
+      removeFile(file, "unreferenced public asset");
+      pruned += 1;
+      continue;
+    }
+
     if (relative.startsWith("public/data/") && relative !== "public/data/relationship-manifest.json") {
       removeFile(file, "internal data export is not public");
+      pruned += 1;
+      continue;
+    }
+
+    if (relative === "assets/data/term-registry.json") {
+      removeFile(file, "internal term registry is not loaded by public pages");
       pruned += 1;
       continue;
     }
