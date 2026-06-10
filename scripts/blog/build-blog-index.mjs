@@ -166,6 +166,12 @@ function siteRelative(url = "") {
   return String(url || "#").replace(/^\//, "");
 }
 
+function pageRelative(url = "", prefix = "") {
+  const clean = siteRelative(url);
+  if (!prefix || clean === "#") return clean;
+  return `${prefix}${clean}`;
+}
+
 function formatDateLabel(date = "") {
   const match = String(date).match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (!match) return date;
@@ -176,6 +182,13 @@ function formatDateLabel(date = "") {
 function renderImage(entry, eager = false) {
   if (!entry.image) return "";
   return `<div class="blog-image"><img src="${escapeHtml(siteRelative(entry.image))}" alt="${escapeHtml(entry.imageAlt || entry.title)}" decoding="async" loading="${eager ? "eager" : "lazy"}"></div>`;
+}
+
+function renderLibraryImage(entry) {
+  if (!entry.image) return "";
+  const href = pageRelative(entry.url, "../");
+  const image = pageRelative(entry.image, "../");
+  return `<a class="journal-library-image" href="${escapeHtml(href)}"><img src="${escapeHtml(image)}" alt="${escapeHtml(entry.imageAlt || entry.title)}" loading="lazy"></a>`;
 }
 
 function renderBadges(entry) {
@@ -205,12 +218,29 @@ function renderSideEntry(entry) {
             </article>`;
 }
 
-function updateJournalHome(entries) {
-  const blogHtmlPath = path.join(root, "blog.html");
-  if (!fs.existsSync(blogHtmlPath) || !entries.length) return;
-  const current = fs.readFileSync(blogHtmlPath, "utf8");
+function renderHomeJournal(entries) {
   const [featured, ...rest] = entries;
-  const replacement = `<div class="journal-home" data-journal-home>
+  if (!featured) return "";
+  return `<div class="journal-home" data-journal-home aria-live="polite">
+            <div class="journal-home-grid">
+              ${renderFeature(featured)}
+              <div class="journal-side-list" aria-label="Weitere aktuelle Journalartikel">
+                ${rest.slice(0, 2).map(renderSideEntry).join("\n                ")}
+                <article class="journal-card journal-archive-card">
+                  <p class="card-kicker">Archiv</p>
+                  <h3 class="card-title">Alle Journalartikel durchsuchen.</h3>
+                  <p class="card-text">Suche, Filter und Schlagworte führen gezielt durch das vollständige Archiv.</p>
+                  <a class="text-link" href="blog.html#beitraege">Zum Archiv</a>
+                </article>
+              </div>
+            </div>
+          </div>`;
+}
+
+function renderBlogJournal(entries) {
+  const [featured, ...rest] = entries;
+  if (!featured) return "";
+  return `<div class="journal-home" data-journal-home>
             <div class="journal-home-grid">
               ${renderFeature(featured)}
               <div class="journal-side-list" aria-label="Weitere aktuelle Journalartikel">
@@ -224,9 +254,72 @@ function updateJournalHome(entries) {
               </div>
             </div>
           </div>`;
-  const next = current.replace(/<div class="journal-home" data-journal-home[\s\S]*?<\/div>\s*<\/section>/, `${replacement}\n        </div>\n      </section>`);
+}
+
+function renderBlogLatestSection(entries) {
+  return `      <section class="section" aria-labelledby="leitartikel-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Aktuell</p>
+            <h2 id="leitartikel-title">Aktuell im Journal</h2>
+            <p>Der neueste veröffentlichte Journalartikel steht automatisch vorn. Darunter folgen weitere aktuelle Einordnungen und das vollständige Archiv.</p>
+          </div>
+          ${renderBlogJournal(entries)}
+        </div>
+      </section>`;
+}
+
+function renderLibraryCard(entry) {
+  return `<article class="journal-library-card">
+      ${renderLibraryImage(entry)}
+      <div class="journal-library-card-body">
+        <p class="card-kicker">${escapeHtml(entry.category || "Journal")} · ${escapeHtml(formatDateLabel(entry.date))}${entry.readingTime ? ` · ${escapeHtml(entry.readingTime)}` : ""}</p>
+        <h3>${escapeHtml(entry.title)}</h3>
+        ${entry.excerpt ? `<p>${escapeHtml(entry.excerpt)}</p>` : ""}
+        <a class="text-link" href="${escapeHtml(pageRelative(entry.url, "../"))}">Artikel lesen</a>
+      </div>
+    </article>`;
+}
+
+function replaceLatestJournalBlock(html, replacement) {
+  return html.replace(
+    /<div class="journal-home" data-journal-home(?:\s+aria-live="polite")?>[\s\S]*?<\/div>\s*(?=<noscript>|<\/section>)/,
+    replacement
+  );
+}
+
+function updateBlogJournal(entries) {
+  const blogHtmlPath = path.join(root, "blog.html");
+  if (!fs.existsSync(blogHtmlPath) || !entries.length) return;
+  const current = fs.readFileSync(blogHtmlPath, "utf8");
+  const next = current.replace(
+    /      <section class="section" aria-labelledby="leitartikel-title">[\s\S]*?(?=\n      <section class="section section-muted" id="dossiers")/,
+    renderBlogLatestSection(entries)
+  );
   if (next !== current) fs.writeFileSync(blogHtmlPath, next, "utf8");
 }
 
-updateJournalHome(entries);
+function updateHomepageJournal(entries) {
+  const homePath = path.join(root, "index.html");
+  if (!fs.existsSync(homePath) || !entries.length) return;
+  const current = fs.readFileSync(homePath, "utf8");
+  const next = replaceLatestJournalBlock(current, renderHomeJournal(entries));
+  if (next !== current) fs.writeFileSync(homePath, next, "utf8");
+}
+
+function updateLibraryJournal(entries) {
+  const libraryPath = path.join(root, "bibliothek", "index.html");
+  if (!fs.existsSync(libraryPath) || !entries.length) return;
+  const current = fs.readFileSync(libraryPath, "utf8");
+  const cards = entries.slice(0, 2).map(renderLibraryCard).join("\n");
+  const next = current.replace(
+    /<div class="journal-library-grid">[\s\S]*?<\/div>\s*(?=<div class="section-actions">)/,
+    `<div class="journal-library-grid">${cards}</div>\n        `
+  );
+  if (next !== current) fs.writeFileSync(libraryPath, next, "utf8");
+}
+
+updateBlogJournal(entries);
+updateHomepageJournal(entries);
+updateLibraryJournal(entries);
 console.log(`Wrote ${entries.length} current blog entries to assets/data/blog-index.json.`);
