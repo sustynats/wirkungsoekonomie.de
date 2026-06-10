@@ -358,6 +358,25 @@ for (const items of groups.values()) {
 const nav = Array.from(groups.keys()).sort(collator.compare);
 const categories = categoryOrder.filter((category) => indexedTerms.some((term) => term.category === category));
 const termsBySlug = new Map(indexedTerms.map((term) => [term.slug, term]));
+const termsByLookup = new Map();
+for (const term of indexedTerms) {
+  const labels = unique([
+    term.slug,
+    term.termId,
+    term.canonicalLabel,
+    term.label,
+  ]);
+  for (const label of labels) {
+    const key = normalizedLabel(label);
+    if (key && !termsByLookup.has(key)) termsByLookup.set(key, term);
+  }
+}
+for (const term of indexedTerms) {
+  for (const alias of Array.isArray(term.aliases) ? term.aliases : []) {
+    const key = normalizedLabel(alias);
+    if (key && !termsByLookup.has(key)) termsByLookup.set(key, term);
+  }
+}
 const contentByUrl = new Map();
 const contentBySlug = new Map();
 const contentByTitle = new Map();
@@ -557,6 +576,20 @@ function listItems(values) {
     .filter((value) => !(/_/.test(value) && /^[a-z0-9_]+$/i.test(value)));
   if (!realValues.length) return "";
   return `<ul class="clean-list">${realValues.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>`;
+}
+
+function glossaryLinkedListItems(values) {
+  if (!Array.isArray(values) || values.length === 0) return "";
+  const realValues = values
+    .map(publicText)
+    .filter((value) => hasRealText(value) && !containsForbiddenPublicText(value))
+    .filter((value) => !(/_/.test(value) && /^[a-z0-9_]+$/i.test(value)));
+  if (!realValues.length) return "";
+  return `<ul class="clean-list">${realValues.map((value) => {
+    const term = termsByLookup.get(normalizedLabel(value));
+    if (!term) return `<li>${esc(value)}</li>`;
+    return `<li><a class="text-link" href="../../begriffe/${esc(term.slug)}/">${esc(value)}</a></li>`;
+  }).join("")}</ul>`;
 }
 
 function paragraphs(value) {
@@ -1160,7 +1193,7 @@ function deepGlossarySectionsBlock(term) {
             ${publicSections.map((section) => `<section class="term-section-card">
               <h3>${esc(section.title)}</h3>
               ${paragraphs(section.body)}
-              ${listItems(section.items || [])}
+              ${glossaryLinkedListItems(section.items || [])}
             </section>`).join("")}
           </div>
         </section>
