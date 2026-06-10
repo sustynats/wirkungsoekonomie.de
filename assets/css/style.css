@@ -11179,6 +11179,55 @@ textarea {
   color: var(--green-dark);
 }
 
+.reference-chapter-map {
+  width: min(100%, 1120px);
+  margin: clamp(1rem, 3vw, 2rem) auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid rgba(47, 125, 92, 0.2);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.reference-chapter-map h2 {
+  margin-bottom: 1rem;
+}
+
+.reference-chapter-map__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.55rem;
+}
+
+.reference-chapter-map__grid a {
+  display: flex;
+  min-height: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.72rem 0.82rem;
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  border-radius: calc(var(--radius) * 0.8);
+  background: rgba(246, 241, 232, 0.62);
+  color: var(--navy);
+  font-weight: 800;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.reference-chapter-map__grid a:hover {
+  border-color: rgba(47, 125, 92, 0.42);
+  color: var(--green-dark);
+}
+
+.reference-chapter-map__grid span {
+  margin-bottom: 0.24rem;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .fulltext-reader {
   width: min(100%, 1120px);
   max-width: none;

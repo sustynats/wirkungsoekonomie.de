@@ -1099,6 +1099,22 @@ function enhanceFullText() {
   const file = "referenz/volltext/index.html";
   if (!fs.existsSync(file)) return;
   let html = stripUxMarkers(read(file));
+  const chapterAnchors = [...html.matchAll(/<h[23]\b[^>]*\bid="(woek-main-2026-k(\d{3}))"[^>]*>([\s\S]*?)<\/h[23]>/g)]
+    .map((match) => ({
+      id: match[1],
+      number: Number(match[2]),
+      title: cleanChapterTitle(Number(match[2]), match[3]),
+    }))
+    .filter((item, index, items) => item.number > 0 && items.findIndex((candidate) => candidate.id === item.id) === index);
+  const chapterMap = chapterAnchors.length
+    ? `<section class="reference-chapter-map" id="fulltext-chapter-map" aria-labelledby="fulltext-chapter-map-title">
+        <p class="section-eyebrow">Kapitelanker</p>
+        <h2 id="fulltext-chapter-map-title">Kapitelweise direkt springen</h2>
+        <div class="reference-chapter-map__grid">
+          ${chapterAnchors.map((chapter) => `<a href="#${chapter.id}"><span>Kapitel ${String(chapter.number).padStart(3, "0")}</span>${esc(chapter.title)}</a>`).join("\n          ")}
+        </div>
+      </section>`
+    : "";
   html = html.replace(/style\.css\?v=[^"']+/g, `style.css?v=${referenceReaderAssetVersion}`);
   html = html.replace(/reference-reader\.js\?v=[^"']+/g, `reference-reader.js?v=${referenceReaderAssetVersion}`);
   html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
@@ -1118,17 +1134,29 @@ function enhanceFullText() {
         <span>Volltext</span>
         <a href="../">Referenzportal</a>
         <a href="../kapitel/">Kapitelübersicht</a>
+        <a href="#fulltext-chapter-map">Kapitelanker</a>
         <a href="#woek-main-fulltext">Zum Text</a>
         <a href="../../assets/pdf/die-neue-ordnung-des-wohlstands.pdf">Original-PDF</a>
         <button type="button" data-print-page>Drucken</button>
       </nav><!-- reference-ux:end -->
       $2`);
   }
+  if (!html.includes('href="#fulltext-chapter-map"')) {
+    html = html.replace(
+      /(<a href="\.\.\/kapitel\/">Kapitelübersicht<\/a>)/,
+      `$1
+        <a href="#fulltext-chapter-map">Kapitelanker</a>`
+    );
+  }
   html = html.replace(/<article class="([^"]*article-shell[^"]*)" id="woek-main-fulltext">/, (match, classes) => {
     const merged = [classes, "fulltext-reader"].join(" ").replace(/\s+/g, " ").trim();
     const clean = [...new Set(merged.split(" "))].join(" ");
     return `<article class="${clean}" id="woek-main-fulltext">`;
   });
+  if (chapterMap && !html.includes('id="fulltext-chapter-map"')) {
+    html = html.replace(/(<article class="[^"]*fulltext-reader[^"]*" id="woek-main-fulltext">)/, `<!-- reference-ux:start -->${chapterMap}<!-- reference-ux:end -->
+      $1`);
+  }
   html = html.replace(/<details class="technical-meta">[\s\S]*?<\/details>/g, "");
   html = html.replace(
     /<div class="version-summary-note"><p>Absätze: ([^<]+)<\/p><\/div>/,

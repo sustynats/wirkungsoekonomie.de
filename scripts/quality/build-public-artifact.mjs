@@ -261,6 +261,7 @@ function normalizePublicArtifactLinksAndText() {
     let content = fs.readFileSync(file, "utf8");
     const before = content;
     const relative = toPosixRelative(file);
+    const preserveMainworkFulltext = relative === "referenz/volltext/index.html";
 
     content = content
       .replace(/([?&])utm_source=chatgpt\.com(?:&amp;|&)?/gi, (match, separator) => {
@@ -301,25 +302,27 @@ function normalizePublicArtifactLinksAndText() {
       continue;
     }
 
-    content = content
-      .replace(/<section class="meta-box">\s*<h2>Metadaten<\/h2>[\s\S]*?<\/section>/gi, "")
-      .replace(/<section class="callout live-reference-notice">[\s\S]*?<\/section>/gi, "")
-      .replace(/<section class="callout">\s*<h2>Importstatus<\/h2>[\s\S]*?<\/section>/gi, "")
-      .replace(/<dt>(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|Web-Version|Reviewstatus|Originaldatei|Absätze\/Textblöcke)<\/dt><dd>[\s\S]*?<\/dd>/gi, "")
-      .replace(/\s*(?:Originalfassung\s+2026\.0|Import-Version\s+2026\.1-import|Online-Referenz\s+2026\.2-live-reference|2026\.2-l)[^<]*/gi, "")
-      .replace(/Webfassung und Originaldatei:/gi, "Öffentliche Webfassung:")
-      .replace(/Webfassung eines Arbeitspapiers der Wirkungsökonomie mit Originaldatei\./gi, "Öffentliche Webfassung eines Arbeitspapiers der Wirkungsökonomie.")
-      .replace(/Webfassung aus der gelieferten Originaldatei\.[^<]*/gi, "Öffentliche Webfassung.")
-      .replace(/Originaldatei/gi, "Ausgangsdokument")
-      .replace(/href=(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)\1/gi, 'href="#" data-public-link-removed="true"')
-      .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?:[^"']*)?)\1/gi, (match, quote, value) => {
-        if (!/(?:^|\/|\\)(?:assets|downloads|docs|public|content|src|rang\d+|woek_|WOeK_|WÖk_|README|[0-9]{2}_)/.test(value)) return match;
-        return `${quote}${quote}`;
-      })
-      .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2/gi, "$1: \"\"")
-      .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?:[^"]*)?"/gi, '"$1": ""');
+    if (!preserveMainworkFulltext) {
+      content = content
+        .replace(/<section class="meta-box">\s*<h2>Metadaten<\/h2>[\s\S]*?<\/section>/gi, "")
+        .replace(/<section class="callout live-reference-notice">[\s\S]*?<\/section>/gi, "")
+        .replace(/<section class="callout">\s*<h2>Importstatus<\/h2>[\s\S]*?<\/section>/gi, "")
+        .replace(/<dt>(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|Web-Version|Reviewstatus|Originaldatei|Absätze\/Textblöcke)<\/dt><dd>[\s\S]*?<\/dd>/gi, "")
+        .replace(/\s*(?:Originalfassung\s+2026\.0|Import-Version\s+2026\.1-import|Online-Referenz\s+2026\.2-live-reference|2026\.2-l)[^<]*/gi, "")
+        .replace(/Webfassung und Originaldatei:/gi, "Öffentliche Webfassung:")
+        .replace(/Webfassung eines Arbeitspapiers der Wirkungsökonomie mit Originaldatei\./gi, "Öffentliche Webfassung eines Arbeitspapiers der Wirkungsökonomie.")
+        .replace(/Webfassung aus der gelieferten Originaldatei\.[^<]*/gi, "Öffentliche Webfassung.")
+        .replace(/Originaldatei/gi, "Ausgangsdokument")
+        .replace(/href=(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)\1/gi, 'href="#" data-public-link-removed="true"')
+        .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?:[^"']*)?)\1/gi, (match, quote, value) => {
+          if (!/(?:^|\/|\\)(?:assets|downloads|docs|public|content|src|rang\d+|woek_|WOeK_|WÖk_|README|[0-9]{2}_)/.test(value)) return match;
+          return `${quote}${quote}`;
+        })
+        .replace(/\b([\w-]*(?:Download|Url|File|Document|Target|path|file_name)\w*)\s*:\s*(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2/gi, "$1: \"\"")
+        .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?:[^"]*)?"/gi, '"$1": ""');
+    }
 
-    if (ext !== ".js") {
+    if (ext !== ".js" && !preserveMainworkFulltext) {
       content = content.replace(/(?:^|[\s"'>(])[\p{L}\p{N}_ .+()/-]+\.(?:md|docx?|rtf)/giu, (match) => {
         const prefix = /^[\s"'>(]/u.test(match) ? match[0] : "";
         return `${prefix}Arbeitsdatei entfernt`;
@@ -340,6 +343,31 @@ function normalizePublicArtifactLinksAndText() {
   }
 
   if (changed) console.log(`Normalized public artifact links/text in ${changed} files.`);
+}
+
+function validateMainworkFulltextArtifact() {
+  const file = path.join(artifactDir, "referenz/volltext/index.html");
+  if (!fs.existsSync(file)) {
+    throw new Error("Reference fulltext artifact is missing: referenz/volltext/index.html");
+  }
+
+  const content = fs.readFileSync(file, "utf8");
+  const chapterLinks = [...content.matchAll(/href="#woek-main-2026-k\d{3}"/g)].length;
+  const chapterAnchors = [...content.matchAll(/id="woek-main-2026-k\d{3}"/g)].length;
+  const failures = [];
+
+  if (content.includes('data-version="<')) failures.push('corrupted data-version attributes');
+  if (!content.includes("Abstract / Meta-These")) failures.push("missing opening fulltext content");
+  if (!content.includes("Die neue Ordnung des Wohlstands beginnt dort")) failures.push("missing readable paragraph text");
+  if (!content.includes('id="fulltext-chapter-map"')) failures.push("missing chapter anchor map");
+  if (chapterAnchors < 100) failures.push(`too few chapter anchors (${chapterAnchors})`);
+  if (chapterLinks < 100) failures.push(`too few chapter jump links (${chapterLinks})`);
+
+  if (failures.length) {
+    throw new Error(`Reference fulltext artifact validation failed: ${failures.join(", ")}`);
+  }
+
+  console.log(`Reference fulltext artifact passed (${chapterAnchors} chapter anchors, ${chapterLinks} jump links).`);
 }
 
 function validatePublicScripts() {
@@ -460,6 +488,7 @@ normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
 copySnapshotManifestFiles();
 prunePublicArtifact();
+validateMainworkFulltextArtifact();
 validatePublicScripts();
 validatePublicJson();
 
