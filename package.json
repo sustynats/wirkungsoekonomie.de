@@ -68,7 +68,6 @@
     "check:phase1": "node scripts/quality/check-phase1.mjs",
     "qa:normalize": "node scripts/quality/apply-publication-qa-normalization.mjs",
     "check:public-language": "node scripts/check-public-language.js",
-    "check:styleguide-p0": "node scripts/quality/check-online-styleguide-p0.mjs",
     "check:akademie": "node scripts/quality/check-akademie-page.mjs",
     "check:tool-examples": "node scripts/quality/check-tool-examples.mjs",
     "produce:public-pdfs": "node scripts/quality/produce-public-pdf-downloads.mjs",

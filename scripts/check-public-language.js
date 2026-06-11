@@ -68,9 +68,6 @@ const BLOCKED_TERMS = [
   "Spezifikation online",
   "Grundstruktur vorhanden",
   "Working Paper vorhanden",
-  "100er-Liste",
-  "Top-100-Liste",
-  "Alle UN-Mitglieder statt Top 100",
   "v0.1",
   "Arbeitsfassung im Hauptbereich",
   "Detailkonzept + Dossier",
@@ -82,13 +79,9 @@ const BLOCKED_TERMS = [
   "wirkungsoekonomisch",
   "Wirkungsoekonomisch",
   "Oeffentlichkeit",
-  "oeffentlich",
-  "Oeffentlich",
-  "Pruef",
-  "pruef",
   "E`ekt",
   "scha`",
-];
+].filter(Boolean);
 
 const BLOCKED_PATTERNS = [
   {
@@ -139,6 +132,8 @@ function visibleText(html) {
     body
       .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
       .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+      .replace(/<pre\b[\s\S]*?<\/pre>/gi, " ")
+      .replace(/<code\b[\s\S]*?<\/code>/gi, " ")
       .replace(/<!--[\s\S]*?-->/g, " ")
       .replace(/<[^>]+>/g, " ")
       .replace(/\b[\w.-]*(?:oeffentlich|pruef|geschaeft)[\w./-]*\.(?:pdf|docx|html)\b/gi, " ")

@@ -698,8 +698,6 @@ function overviewPage() {
       ...impactDownloads,
       { label: doubleMaterialityWorkpaper.title, href: doubleMaterialityWorkpaper.pdf },
       ...go10MethodPapers.flatMap(methodPaperDownloadItems),
-      { label: doubleMaterialityWorkpaper.title, href: doubleMaterialityWorkpaper.pdf },
-      { label: procurementPracticePaper.title, href: procurementPracticePaper.pdf },
     ])}`,
   });
 }
