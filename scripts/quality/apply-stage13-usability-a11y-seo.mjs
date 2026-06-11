@@ -30,7 +30,7 @@ const redirectLabels = new Map([
   ["fa-qs-und-links/index.html", "Weiterleitung zum Glossar"],
   ["datenschutz/index.html", "Weiterleitung zum Datenschutz"],
   ["ueber-die-w-oek/index.html", "Weiterleitung zu Über"],
-  ["afd-programm/index.html", "Weiterleitung zum Blogartikel"],
+  ["afd-programm/index.html", "Weiterleitung zum Journalartikel"],
   ["manifest/index.html", "Weiterleitung zur Bibliothek"],
   ["inhalt-und-strategie/index.html", "Weiterleitung zu Wirkungsökonomie"],
   ["anwendungen/index.html", "Weiterleitung zu Wirkungsfeldern"],

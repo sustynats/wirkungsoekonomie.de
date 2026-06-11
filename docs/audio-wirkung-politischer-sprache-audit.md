@@ -3,9 +3,9 @@
 ## Eingebundene Audiodatei
 
 - Quelle: `/Users/hagen/Downloads/sprache-esv2-81p-bg-10p-music-10p.wav`
-- Zielpfad: `/assets/audio/wirkung-politischer-sprache.wav`
+- Zielpfad: `/assets/audio/wirkung-politischer-sprache.mp3`
 - Format: WAV
-- MIME-Type im Player: `audio/wav`
+- MIME-Type im Player: `audio/mpeg`
 
 ## Seite und Position
 
@@ -44,8 +44,8 @@
 
 - Die Seite enthält ein `AudioObject` im JSON-LD:
   - `name`: `Warum politische Sprache Wirkung erzeugt`
-  - `contentUrl`: `https://wirkungsoekonomie.de/assets/audio/wirkung-politischer-sprache.wav`
-  - `encodingFormat`: `audio/wav`
+  - `contentUrl`: `https://wirkungsoekonomie.de/assets/audio/wirkung-politischer-sprache.mp3`
+  - `encodingFormat`: `audio/mpeg`
   - `inLanguage`: `de`
 
 ## Offene Punkte

@@ -338,7 +338,7 @@ def render_article(article: SourceArticle) -> str:
         <a href="../../buch.html">Das Buch</a>
         <a href="../../modell.html">Modell</a>
         <a href="../../anwendungen.html">Anwendungen</a>
-        <a class="active" href="../../blog.html">Blog</a>
+        <a class="active" href="../../blog.html">Journal</a>
         <a href="../../akademie.html">Akademie</a>
         <a href="../../mitmachen.html">Mitmachen</a>
       </nav>
@@ -446,7 +446,7 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
         <a href="../buch.html">Das Buch</a>
         <a href="../modell.html">Modell</a>
         <a href="../anwendungen.html">Anwendungen</a>
-        <a class="active" href="../blog.html">Blog</a>
+        <a class="active" href="../blog.html">Journal</a>
         <a href="../akademie.html">Akademie</a>
         <a href="../mitmachen.html">Mitmachen</a>
       </nav>
@@ -483,7 +483,7 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
           <h2>Die neue Ordnung des Wohlstands</h2>
           <p>Ein neues Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht und in Entscheidungen zurückführt.</p>
         </div>
-        <a class="btn btn-primary" href="../blog.html">Zum Blog</a>
+        <a class="btn btn-primary" href="../blog.html">Zum Journal</a>
         <nav class="footer-nav" aria-label="Footer Navigation">
           <a href="../wirkungsoekonomie.html">Wirkungsökonomie</a>
           <a href="../buch.html">Das Buch</a>

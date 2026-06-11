@@ -1,5 +1,6 @@
 (function () {
-  const cards = Array.from(document.querySelectorAll("[data-library-card]"));
+  const results = document.querySelector("[data-library-results]");
+  const cards = Array.from((results || document).querySelectorAll("[data-library-card]"));
   const search = document.querySelector("[data-library-search]");
   const filters = Array.from(document.querySelectorAll("[data-library-filter]"));
   const count = document.querySelector("[data-library-count]");

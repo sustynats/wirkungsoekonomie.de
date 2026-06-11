@@ -10,10 +10,54 @@ SEARCH_INDEX = ROOT / "assets/search/search-index.json"
 KNOWLEDGE_CARDS = ROOT / "content/wissen/wissenskarten.json"
 BODY_LIMIT = 3500
 
+TAG_STOPWORDS = {
+    "aber",
+    "alle",
+    "alles",
+    "als",
+    "auch",
+    "auf",
+    "aus",
+    "bei",
+    "das",
+    "da",
+    "der",
+    "die",
+    "ein",
+    "eine",
+    "einer",
+    "eines",
+    "einem",
+    "fuer",
+    "für",
+    "hat",
+    "immer",
+    "index",
+    "ist",
+    "live",
+    "mit",
+    "nicht",
+    "nur",
+    "oder",
+    "oben",
+    "schon",
+    "sich",
+    "sind",
+    "themen",
+    "und",
+    "von",
+    "was",
+    "werden",
+    "wird",
+    "wirkungsradar",
+}
+
 EXCLUDED_DIRS = {
     ".git",
     ".codex-backup",
+    "_debug",
     "_internal",
+    "_site",
     "assets",
     "node_modules",
     "outputs",
@@ -79,6 +123,27 @@ def clean_text(value):
     return value.strip()
 
 
+def normalize_public_labels(value):
+    value = clean_text(value)
+    replacements = {
+        "Wirkungsradar Narrative": "Mythen & Narrative",
+        "Wirkungsradar-Narrative": "Mythen & Narrative",
+        "Wirkungsradar-Themencluster": "Themencluster",
+        "Wirkungsradar Themencluster": "Themencluster",
+        "Wirkungsradar-Themenseite": "Themenseite",
+        "Wirkungsradar Detailanalysen": "Debatten-Kompass Detailanalysen",
+        "Wirkungsradar Detail": "Debattenkarte Detail",
+        "Wirkungsradar Live": "Debattenkarte",
+        "Wirkungsradar-Live": "Debattenkarte",
+        "Psychologie im Wirkungsradar": "Psychologie im Debatten-Kompass",
+        "Was der Wirkungsradar nicht ist": "Was der Debatten-Kompass nicht ist",
+        "Was der Wirkungsradar sichtbar macht": "Was der Debatten-Kompass sichtbar macht",
+    }
+    for before, after in replacements.items():
+        value = value.replace(before, after)
+    return value
+
+
 def strip_html(value):
     value = remove_search_noise_markup(value)
     value = re.sub(r"(?is)<(script|style|svg|noscript)\b.*?</\1>", " ", value)
@@ -132,7 +197,34 @@ def title_from_source(source, fallback):
     if not match:
         return fallback
     title = clean_text(strip_html(match.group(1)))
-    return re.sub(r"\s+[-|]\s+Wirkungsökonomie.*$", "", title).strip() or fallback
+    return clean_search_title(title) or fallback
+
+
+def clean_search_title(title):
+    title = normalize_public_labels(title)
+    exact_titles = {
+        "Wirkungsradar": "Folgencheck für öffentliche Aussagen",
+    }
+    if title in exact_titles:
+        return exact_titles[title]
+    replacements = [
+        r"\s+\|\s+Debatten-Kompass\s+Detail\s*$",
+        r"\s+\|\s+Debatten-Kompass\s*$",
+        r"\s+\|\s+Debattenkarte\s+Detail\s*$",
+        r"\s+\|\s+Mythen\s+&\s+Narrative\s*$",
+        r"\s+\|\s+Themencluster\s*$",
+        r"\s+[-–]\s+Debatten-Kompass\s+Detail\s*$",
+        r"\s+[-–]\s+Debatten-Kompass\s*$",
+        r"\s+[-–]\s+Debattenkarte\s+Detail\s*$",
+        r"\s+[-–]\s+Wirkungsradar\s+Live\s*$",
+        r"\s+[-–]\s+Wirkungsradar\s*$",
+        r"\s+\|\s+Psychologie\s+im\s+Wirkungsradar\s*$",
+        r"^Psychologie\s+im\s+Wirkungsradar\s+[-–]\s+",
+        r"\s+[-|]\s+Wirkungsökonomie.*$",
+    ]
+    for pattern in replacements:
+        title = re.sub(pattern, "", title, flags=re.IGNORECASE).strip()
+    return title
 
 
 def main_text(source):
@@ -153,7 +245,7 @@ def infer_section(rel):
 def infer_format(rel, section):
     rel_posix = rel.as_posix()
     if rel_posix.startswith("blog/") and rel.name != "index.html":
-        return "Blogartikel"
+        return "Journalartikel"
     if section == "Glossar":
         return "Glossarbegriff" if "#" in rel_posix else "Seite"
     if section == "Downloads":
@@ -173,7 +265,24 @@ def tags_from_path(rel, source):
     search_tags = meta_content(source, "search_tags")
     if search_tags:
         tags.update(clean_text(item) for item in search_tags.split(","))
-    return sorted(tag for tag in tags if tag)
+    return sorted(clean_tag(tag) for tag in tags if clean_tag(tag))
+
+
+def clean_tag(tag):
+    tag = clean_text(tag)
+    if not tag:
+        return ""
+    normalized = (
+        tag.lower()
+        .replace("ö", "oe")
+        .replace("ä", "ae")
+        .replace("ü", "ue")
+        .replace("ß", "ss")
+    )
+    normalized = re.sub(r"[^a-z0-9+]+", " ", normalized).strip()
+    if normalized in TAG_STOPWORDS or len(normalized) < 3:
+        return ""
+    return tag
 
 
 def generated_entry(path):
@@ -186,8 +295,8 @@ def generated_entry(path):
     if len(text) < 80:
         return None
 
-    title = meta_content(source, "search_title") or title_from_source(source, rel.stem.replace("-", " ").title())
-    description = meta_content(source, "search_description") or meta_content(source, "description") or text[:240]
+    title = clean_search_title(meta_content(source, "search_title") or title_from_source(source, rel.stem.replace("-", " ").title()))
+    description = normalize_public_labels(meta_content(source, "search_description") or meta_content(source, "description") or text[:240])
     section = meta_content(source, "search_section") or infer_section(rel)
     format_name = meta_content(source, "search_type") or infer_format(rel, section)
     url = canonical_url(path)
@@ -205,7 +314,7 @@ def generated_entry(path):
         "instruments": [],
         "tags": tags_from_path(rel, source),
         "aliases": [],
-        "body": text[:BODY_LIMIT],
+        "body": normalize_public_labels(text[:BODY_LIMIT]),
         "priority": 20 if section == "Blog" else 35,
     }
 
@@ -253,6 +362,10 @@ def merge_entries(curated, generated):
             by_url[entry["url"]] = merged
         else:
             by_url[entry["url"]] = entry
+    for entry in by_url.values():
+        entry["title"] = clean_search_title(entry.get("title", ""))
+        entry["description"] = normalize_public_labels(entry.get("description", ""))
+        entry["body"] = normalize_public_labels(entry.get("body", ""))
     return sorted(
         (entry for entry in by_url.values() if not is_search_noise_entry(entry)),
         key=lambda item: (-int(item.get("priority", 0)), item.get("title", "")),

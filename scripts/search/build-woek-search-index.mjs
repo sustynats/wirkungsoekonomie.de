@@ -36,7 +36,7 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Website-Integration/g, "Einordnung auf der Website"],
   [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
   [/Demo in Vorbereitung/g, "Methodenseite"],
-  [/Portal der Wirkungsökonomie/g, "Website der Wirkungsökonomie"],
+  [/Portal der Wirkungsökonomie/g, "Wirkungsökonomie"],
   [/Produktportal/g, "Produktbereich"],
   [/Erklärung vorhanden/g, "Methodik"],
   [/Download wird ergänzt/g, "Arbeitsmaterial"],
@@ -72,6 +72,8 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Prototypen/g, "Demos"],
   [/Prototyp/g, "Modellhafte Demo"],
   [/KPI-Rechner/g, "Wirkungsindikatoren-Demo"],
+  [/Methodenlandkarte/g, "Methoden & Werkzeuge"],
+  [/RSS & Updates|Updates & RSS/g, "Neu auf der Website"],
 ];
 
 function clean(text) {
@@ -102,8 +104,34 @@ function publicSearchValue(value) {
   return value;
 }
 
+function unique(values) {
+  return Array.from(new Set((values || []).filter(Boolean)));
+}
+
 function normalizeSearchRoute(url) {
   return String(url || "").replace(/#.*$/, "").replace(/\/index\.html$/, "/");
+}
+
+function canonicalSearchRoute(url) {
+  return normalizeSearchRoute(url).replace(/^\/wirkungsradar\/detail\//, "/wirkungsradar/live/");
+}
+
+function canonicalizeEntry(entry) {
+  const route = canonicalSearchRoute(entry.url);
+  const originalRoute = normalizeSearchRoute(entry.url);
+  if (!route || route === originalRoute) return entry;
+  return {
+    ...entry,
+    url: route,
+    canonicalUrl: route,
+    aliases: unique([...(Array.isArray(entry.aliases) ? entry.aliases : []), originalRoute]),
+  };
+}
+
+function canonicalEntryKey(entry) {
+  const route = canonicalSearchRoute(entry.url);
+  if (route) return route;
+  return normalizeSemantic(`${entry.title || ""} ${entry.section || ""}`);
 }
 
 function isInternalPublicRoute(url) {
@@ -134,6 +162,7 @@ function isSearchNoiseEntry(entry) {
     "interaktive demos",
     "arbeitsbibliothek",
     "dokumentenregistry",
+    "dokumentenbibliothek",
   ];
   if (footerCluster.filter((item) => body.includes(item)).length >= 3) return true;
   if (body.includes("kontakt:") && body.includes("© 2026 natalie weber")) return true;
@@ -154,6 +183,13 @@ function hash(value) {
 }
 
 function entryFromTerm(term) {
+  const semanticTerms = unique([
+    term.canonicalLabel,
+    term.label,
+    ...(term.aliases || []),
+    ...(term.synonyms || []),
+    ...(term.relatedTerms || []),
+  ]).slice(0, 48);
   const body = [
     term.canonicalLabel,
     term.shortDefinition,
@@ -177,8 +213,53 @@ function entryFromTerm(term) {
     tags: [term.status, term.version, term.reviewStatus, ...(term.synonyms || [])].filter(Boolean),
     aliases: [...(term.synonyms || []), term.hoverDefinition],
     body,
+    semanticTerms,
+    semanticText: semanticTerms.join(" "),
     priority: term.status === "führender-begriff" ? 140 : 110,
   };
+}
+
+function normalizeSemantic(value) {
+  return String(value || "")
+    .toLocaleLowerCase("de")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9+#\s/-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function semanticAliases(term) {
+  return unique([
+    term.canonicalLabel,
+    term.label,
+    ...(term.aliases || []),
+    ...(term.synonyms || []),
+  ])
+    .map((value) => normalizeSemantic(value))
+    .filter((value) => value.length >= 4 && !/^(und|oder|der|die|das|ein|eine|mit|von|fuer|als|ist)$/.test(value))
+    .slice(0, 10);
+}
+
+function semanticTermsForText(text, limit = 28) {
+  const normalized = normalizeSemantic(text).slice(0, 12000);
+  const matches = [];
+  for (const term of glossary) {
+    const aliases = semanticAliases(term);
+    const matchedAlias = aliases.find((alias) => normalized.includes(alias));
+    if (!matchedAlias) continue;
+    matches.push({
+      label: term.canonicalLabel || term.label || term.slug,
+      score: matchedAlias.length + (term.status === "führender-begriff" ? 12 : 0),
+      related: (term.relatedTerms || []).slice(0, 5),
+    });
+  }
+  matches.sort((a, b) => b.score - a.score || String(a.label).localeCompare(String(b.label), "de"));
+  return unique(matches.flatMap((match) => [match.label, ...match.related])).slice(0, limit);
 }
 
 function walk(dir, files = []) {
@@ -220,6 +301,7 @@ function entriesFromContent(file) {
   const bodyLimit = isFulltext ? FULLTEXT_BODY_LIMIT : PAGE_BODY_LIMIT;
   const body = clean(text).slice(0, bodyLimit);
   if (body.length < 80) return [];
+  const pageSemanticTerms = semanticTermsForText(`${title} ${body}`);
   const sectionMatches = Array.from(text.matchAll(/<h([2-3])[^>]*id=["']([^"']+)["'][^>]*>(.*?)<\/h\1>/gi));
   const base = {
     documentType,
@@ -242,6 +324,8 @@ function entriesFromContent(file) {
     tags: [status, version, "WÖk-Referenz"],
     aliases: [],
     body,
+    semanticTerms: pageSemanticTerms,
+    semanticText: pageSemanticTerms.join(" "),
     priority: 70 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
   };
   const entries = [pageEntry];
@@ -258,6 +342,7 @@ function entriesFromContent(file) {
         ? text.slice(matchStart, matchStart + match[0].length + nextHeading)
         : text.slice(matchStart, matchStart + 9000);
     const sectionBody = clean(sectionHtml).slice(0, SECTION_BODY_LIMIT);
+    const sectionSemanticTerms = semanticTermsForText(`${sectionTitle} ${sectionBody}`);
     entries.push({
       ...pageEntry,
       id: `woek-section-${sectionId}`,
@@ -265,6 +350,8 @@ function entriesFromContent(file) {
       description: sectionBody.slice(0, 240) || pageEntry.description,
       url: `${route}#${sectionId}`,
       body: sectionBody || pageEntry.body,
+      semanticTerms: sectionSemanticTerms.length ? sectionSemanticTerms : pageSemanticTerms,
+      semanticText: (sectionSemanticTerms.length ? sectionSemanticTerms : pageSemanticTerms).join(" "),
       priority: 85 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
     });
   }
@@ -293,7 +380,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["src/content/docs", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "anwendungen", "verstehen"]
+const contentFiles = ["src/content/docs", "blog", "journal", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "anwendungen", "verstehen"]
   .flatMap((dir) => walk(dir));
 for (const file of contentFiles) {
   for (const { entry, meta: itemMeta } of entriesFromContent(file)) {

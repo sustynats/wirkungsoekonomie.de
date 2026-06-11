@@ -36,7 +36,7 @@ Die Bibliothek wird als kuratiertes Quellen- und Versionssystem vorbereitet. Dok
 | Beispiel | 11 |
 | Methodik | 80 |
 | Leitbild | 7 |
-| Glossar | 30 |
+| Glossar | 41 |
 | Präsentation | 0 |
 
 ## Maßgebliche Sprachreferenz

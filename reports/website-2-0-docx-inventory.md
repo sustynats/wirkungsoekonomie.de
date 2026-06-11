@@ -1,0 +1,930 @@
+# Website 2.0 Dokumenten-Inventar
+
+## Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx
+
+Pfad: `/Users/hagen/Downloads/Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx`
+
+- Journal-Beitrag | Wirkungsökonomie | Entwurf zur Veröffentlichung Nicht jedem Stöckchen hinterher Warum Transformation einen öffentlichen Wirkungsraum braucht - und wie Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator und Resilienz-Prinzipien zusammenwirken Vorschlag Autorinnenzeile: Natalie Weber | Wirkungsökonomie Kurzfassung für die Journal-Übersicht Viele Debatten scheitern nicht erst an falschen Fakten.
+- Der Debatten-Kompass hilft, wenn ein Narrativ bereits im Raum steht.
+- Der neue Resonanz-Kompass setzt davor an: Er fragt, warum genau dieses Thema so viel Raum bekommt, was dadurch verdrängt wird und welche Systemfrage eigentlich gestellt werden müsste.
+- Zusammen entsteht der Öffentliche Wirkungsraum der Wirkungsökonomie: Debatten verstehen, Aufmerksamkeit gewichten und demokratische Resilienz stärken.
+- Sie prüfen, ob etwas stimmt.
+- Sie wirken, weil sie eine Deutung anbieten, bevor die Prüfung beginnt.
+- Und was müssten wir eigentlich fragen, damit die Debatte wieder auf Wirkung zielt?
+- Das Stöckchen und der Wald In vielen Debatten liegt ein Stöckchen auf dem Boden.
+- In Wahrheit ist es ein Resonanzangebot.
+- Aber sie braucht auch die Fähigkeit zu prüfen, ob ein Thema die Aufmerksamkeit bekommt, die seinem tatsächlichen Wirkungsgewicht entspricht.
+- Vom Debatten-Kompass zum Öffentlichen Wirkungsraum Der Debatten-Kompass war der erste Schritt.
+- Damit geht der Debatten-Kompass deutlich über einen Faktencheck hinaus.
+- Er prüft nicht nur Fakten, sondern auch Frame, Wirkpfad, Folgen und Antwortqualität.
+- Genau dafür braucht es eine vorgelagerte Ebene: den Öffentlichen Wirkungsraum.
+- Die Dachlogik Der Öffentliche Wirkungsraum ist die neue Dacharchitektur der Wirkungsökonomie für Debatten, Medien, Öffentlichkeit und demokratische Resilienz.
+- Seine Leitformel lautet: Öffentlicher Wirkungsraum Debatten verstehen.
+- Debatten-Kompass: Richtig antworten, wenn ein Narrativ schon wirkt.
+- Resonanz-Kompass: Erkennen, wann Aufmerksamkeit selbst zum Problem wird.
+- Die fünf Bausteine 4.1 Debatten-Kompass: Antwortqualität Der Debatten-Kompass ist das Werkzeug für die konkrete Aussage.
+- Die Stärke des Debatten-Kompasses liegt darin, den wahren Kern einer Aussage nicht zu leugnen, aber die verkürzte Schlussfolgerung sichtbar zu machen.
+- 4.2 Resonanz-Kompass: Aufmerksamkeitsqualität Der Resonanz-Kompass setzt eine Ebene früher an.
+- Der Resonanz-Kompass prüft deshalb das Verhältnis von Aufmerksamkeitsgewicht und Wirkungsgewicht.
+- Während Debatten oft durch Reiz, Konflikt und Sichtbarkeit sortiert werden, fragt der Agenda-Radar: Welche Themen haben hohes Wirkungsgewicht, bleiben aber leise?
+- 4.5 Resilienz-Prinzipien: Korrekturfähigkeit Die Resilienz-Prinzipien beschreiben das gemeinsame Ziel: eine Öffentlichkeit, die unter Druck nicht zerfällt.
+- Sie bedeutet, trotz Konflikten prüffähig, lernfähig und korrigierbar zu bleiben.
+- Die einfache Merkhilfe Baustein Leitfrage Qualität, die gestärkt wird Debatten-Kompass Worauf antworte ich eigentlich?
+- Antwortqualität Resonanz-Kompass Warum bekommt dieses Thema so viel Raum?
+- Ursachentiefe Resilienz-Prinzipien Wie bleibt Öffentlichkeit prüf- und lernfähig?
+- Die neue Kernprüfung: Aufmerksamkeit gegen Wirkung Der Resonanz-Kompass arbeitet mit einer einfachen, aber weitreichenden Unterscheidung: Aufmerksamkeitsgewicht ist nicht dasselbe wie Wirkungsgewicht.
+- Typ Aufmerksamkeit Wirkungsgewicht Aufgabe des Öffentlichen Wirkungsraums Zentrale Debatte hoch hoch Einordnen, vertiefen, auf Systemhebel führen.
+- Der Debatten-Kompass würde helfen, diesen Satz fair zu beantworten: Ja, Transformation kann kurzfristig Kosten erzeugen.
+- Der Resonanz-Kompass fragt vorher: Warum dominiert die Kostendebatte?
+- Der Debatten-Kompass würde zeigen: Die direkte Tonne ist nur eine Ebene.
+- Der Resonanz-Kompass fragt: Warum wird gerade der nationale Anteil so stark betont?
+- Der Debatten-Kompass würde antworten: Die Frage ist nicht, ob Ankommen Kosten erzeugt.
+- Der Resonanz-Kompass fragt: Warum bekommt die Kosten-Erzählung so viel Aufmerksamkeit?
+- Der Resonanz-Kompass sagt nicht: Darüber darf man nicht reden.
+- Sie ist ein demokratischer Wirkungsraum.
+- Wahrheit ist dort nicht einfach eine private Meinung, sondern eine Infrastrukturfrage: Ist Information auffindbar, prüfbar, verständlich, korrigierbar und öffentlich anschlussfähig?
+- Die klassischen SDGs bilden viele ökologische und soziale Ziele ab.
+- Keine Wahrheitsbehörde, keine Meinungskontrolle Der Öffentliche Wirkungsraum darf nicht missverstanden werden.
+- Er prüft die Wirkung öffentlicher Kommunikation: Welche Aussage setzt welchen Frame?
+- Sie braucht Quellenklarheit, Transparenz, faire Sichtbarkeit, Schutz vor Manipulation und die Fähigkeit, Reizthemen nicht automatisch mit Relevanz zu verwechseln.
+- Der Öffentliche Wirkungsraum stärkt diese Fähigkeit.
+- Demokratische Resilienz: die Zielwirkung Resilienz ist hier nicht nur Widerstandskraft.
+- Demokratische Resilienz bedeutet: Eine Öffentlichkeit bleibt auch unter Druck prüffähig, lernfähig und handlungsfähig.
+- Zehn Resilienz-Prinzipien für öffentliche Debatten 1.
+- Quellen sichtbar machen.
+- Der praktische Nutzen Der Öffentliche Wirkungsraum ist kein theoretischer Zusatz zur Wirkungsökonomie.
+- Für Journalist:innen hilft er, zwischen berechtigter Relevanz und künstlicher Überhitzung zu unterscheiden.
+- Damit wird aus einem reaktiven Debattenwerkzeug eine Architektur öffentlicher Orientierung.
+- Was sich dadurch verändert Wenn der Öffentliche Wirkungsraum funktioniert, verändert sich nicht nur die Qualität einzelner Antworten.
+- Eine Aussage wird nicht mehr nur geprüft, sondern in ihrem Wirkpfad gelesen.
+- Schluss: Wirkung statt Reflex Der Debatten-Kompass hilft, wenn ein Narrativ schon im Raum steht.
+- Der Resonanz-Kompass hilft, bevor ein Narrativ den Raum übernimmt.
+- Zusammen bilden sie den Öffentlichen Wirkungsraum.
+- Das Ziel ist nicht, Streit zu beenden.
+- Das Ziel ist, Streit wieder wirksam zu machen.
+- Sie lebt davon, dass Gesellschaften Wirklichkeit prüfen, Folgen verstehen, Ursachen erkennen und ihre Entscheidungen korrigieren können.
+- Redaktionelle Veröffentlichungshilfen Vorschlag für SEO-Titel und Meta-Description SEO-Titel: Öffentlicher Wirkungsraum: Debatten verstehen, Aufmerksamkeit gewichten, Resilienz stärken Meta-Description: Der Debatten-Kompass hilft, wenn Narrative schon wirken.
+- Der Resonanz-Kompass setzt früher an: Er prüft Aufmerksamkeit, verdrängte Ursachen und demokratische Resilienz im öffentlichen Wirkungsraum der Wirkungsökonomie.
+- Slug-Vorschlag: /journal/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz/ Vorschlag für Teaser / Anreißer Nicht jedes laute Thema ist wichtig.
+- Der Öffentliche Wirkungsraum der Wirkungsökonomie verbindet Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator und Resilienz-Prinzipien.
+- Er zeigt, wie öffentliche Debatten nicht nur faktenrichtiger, sondern wirkungsorientierter werden können.
+- Empfohlene interne Verlinkungen für die Online-Version Begriffe: Wirkung, Wirkungspotenzial, Wirkpfad, Resonanzraum, Resonanzrisiko, Wirkungsblindheit, Wirkungswahrheit, Wirkungsrückkopplung, positive Netto-Wirkung, SDG+, demokratische Resilienz.
+- Seiten / Module: Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator, Resilienz-Prinzipien, WÖk-Kompass, Systemmodell Mensch-Planet-Demokratie, SDGs / SDG+.
+- Wichtig: Keine Links auf .md-, Word-, RTF-, TXT- oder interne Rohdateien.
+- Interne Quellen nur als öffentliche Online-Kapitel oder geprüfte PDFs mit Mehrwert verlinken.
+- Quellen und Vertiefung Interne WÖk-Grundlagen, auf denen der Beitrag begrifflich und systemisch aufbaut: - Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21.
+- Mai 2026: Definition von Wirkung, Wirkungspotenzial, Resonanzraum, Wirkpfad, positiver Netto-Wirkung, SDG+ und Wirkungsrückkopplung.
+- - Systemmodell der Wirkungsökonomie: Systemische Ordnungskarte Mensch-Planet-Demokratie, insbesondere Modul „Medien & Öffentlichkeit“ mit Öffentlichkeit als systemischem Wirkungsraum und Wahrheit als Infrastrukturproblem.
+- - Natalie Weber: Die neue Ordnung des Wohlstands, Arbeitsfassung 2026, insbesondere Kapitel zu Maßstabskrise, Reichweite, Wirkung, Wirkungspotenzial, Frames, Öffentlichkeit als Wirkungsraum und Aufmerksamkeit als Steuerungsgröße.
+- Externe Anschlussquellen für eine spätere Online-Fassung mit Deeplinks: UN Sustainable Development Goals / Agenda 2030; Forschung zu Framing, öffentlicher Aufmerksamkeit, Plattformlogik, Desinformation, Medienvertrauen und demokratischer Resilienz.
+- Für die Veröffentlichung sollten externe Quellen nicht pauschal genannt, sondern mit konkreten Deeplinks auf die jeweils belegte Aussage verlinkt werden.
+
+## Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx
+
+Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx`
+
+- CODEX-BRIEFING · WIRKUNGSÖKONOMIE · ÖFFENTLICHER WIRKUNGSRAUM Resonanz-Kompass und Debatten-Kompass 2.0 Vollständige Architektur, Inhalte, UX-Reihenfolge, Denkfehlerbibliothek, Quellenlogik und CodeX-Anweisung Kernentscheidung Die Meta-Ebene heißt öffentlich: „Öffentlicher Wirkungsraum“.
+- Das neue Key-Feature heißt: „Resonanz-Kompass“.
+- Der Debatten-Kompass bleibt das Antwortwerkzeug für konkrete Aussagen.
+- Der Resonanz-Kompass wird das vorgelagerte Orientierungswerkzeug für Aufmerksamkeit, Gewichtung, verdrängte Ursachen und bessere Systemfragen.
+- Nicht verhandelbar für CodeX Kein neues Layout bauen.
+- Juni 2026 · Erstellt als umsetzbares Word-Briefing für CodeX Inhaltsverzeichnis 1.
+- CodeX-Auftrag in Kurzform 2.
+- Warum der Resonanz-Kompass nötig ist 4.
+- Gesamtarchitektur mit Debatten-Kompass 5.
+- Vollständige Seiten- und Copy-Vorlagen 9.
+- Themencluster und Resonanzkarten 13.
+- Quellen-, Link- und Glossarlogik 14.
+- QA, Tests, Deployment und Abnahme 1.
+- CodeX-Auftrag in Kurzform Bitte den bestehenden Debatten-Kompass nicht ersetzen, sondern um eine vorgelagerte Meta-Ebene erweitern.
+- Umsetzungsziel Aus dem bisherigen reaktiven Antwortsystem entsteht eine vollständige Architektur für öffentliche Orientierung: Debatten-Kompass = konkrete Aussage beantworten.
+- Resonanz-Kompass = Aufmerksamkeit und Gewichtung prüfen.
+- Kein Inhalt darf verloren gehen: bestehende Debattenkarten, Narrative, Playbooks, Quellen, Glossar-Hover und internen Verlinkungen bleiben erhalten und werden nur erweitert.
+- Keine neue Layoutwelt: bestehende Hero-, Karten-, Pill-, Quellen-, Status- und Detailseiten-Komponenten nutzen.
+- Quellenpflicht: Jede Karte bekommt deeplinkfähige interne Online-Kapitel oder PDFs und externe Primär-/Fachquellen.
+- Keine .md- oder Word-Links öffentlich.
+- Anti-KI-Pflicht: keine Standardformulierungen, keine generischen Absätze, keine falsche Ausgewogenheit, keine mechanisch wiederholten Textmuster.
+- Die Meta-Ebene soll öffentlich „Öffentlicher Wirkungsraum“ heißen.
+- Begriff Rolle Öffentliche Erklärung Öffentlicher Wirkungsraum Dach / Meta-Ebene Hier werden Debatten nicht nur beantwortet, sondern als Wirkungsraum gelesen.
+- Debatten-Kompass Reaktives Antwortwerkzeug Was antworte ich auf eine konkrete Aussage, ohne in den falschen Frame zu fallen?
+- Resonanz-Kompass Proaktives Meta-Werkzeug Warum bekommt dieses Thema Aufmerksamkeit, was verdrängt es, und passt die Aufmerksamkeit zum Wirkungsgewicht?
+- Aufmerksamkeitsfallen Musterbibliothek Welche Denkfehler und Stöckchen-Mechaniken ziehen öffentliche Debatten aus der Wirkungsebene?
+- „Resonanz-Kompass“ ist präziser, weil es nicht nur um Themenliste, sondern um Wirkung im öffentlichen Raum geht: Welche Aussage findet Anschluss?
+- Die öffentliche Dachlogik lautet deshalb: Öffentlicher Wirkungsraum.
+- Das Tool heißt: Resonanz-Kompass.
+- 2.3 Öffentliche Kurzdefinitionen Begriff Definition Öffentlicher Wirkungsraum Der Raum, in dem Gesellschaft klärt, was wahr, wichtig, dringlich und lösbar erscheint.
+- Debatten-Kompass Hilft, konkrete Aussagen zu verstehen, ihren Frame offenzulegen und besser zu antworten.
+- Resonanz-Kompass Prüft, ob die Aufmerksamkeit einer Debatte zu ihrer tatsächlichen Wirkung passt.
+- Agenda-Radar Zeigt, welche Debatten überhitzt sind, welche wichtigen Themen unterbelichtet bleiben und welche Systemfragen fehlen.
+- Warum der Resonanz-Kompass nötig ist Der Debatten-Kompass ist stark, sobald eine Aussage im Raum steht.
+- Viele öffentliche Debatten sind nicht deshalb problematisch, weil das Thema völlig unwichtig wäre.
+- Leitsatz für die neue Ebene Der Debatten-Kompass zeigt, was ein Satz macht.
+- Der Resonanz-Kompass zeigt, was seine Aufmerksamkeit verdrängt.
+- Bei öffentlicher Kommunikation muss zunächst häufig von Wirkungspotenzial gesprochen werden: Sprache, Bilder, Frames und Wiederholung verändern Resonanzräume, Erwartungen und Handlungsschwellen, bevor tatsächliche Zustandsveränderungen messbar werden.
+- Der Resonanz-Kompass setzt genau in diesem Zwischenraum an: Er bewertet nicht Menschen und behauptet nicht automatisch eingetretene Wirkung.
+- Er prüft Resonanzrisiken, Wirkpfade, Aufmerksamkeitsverzerrungen und die Wahrscheinlichkeit, dass bestimmte Systemfragen unsichtbar werden.
+- 3.3 Was der Resonanz-Kompass nicht ist Er ist kein Wahrheitsministerium.
+- Er ersetzt keinen Faktencheck und keine journalistische Recherche.
+- Er prüft die öffentliche Wirkung von Aufmerksamkeit, Rahmung, Wiederholung und Verdrängung.
+- Gesamtarchitektur mit Debatten-Kompass Die bestehende Struktur bleibt erhalten.
+- Der Debatten-Kompass bleibt das Key-Feature für konkrete Aussagen.
+- Neu hinzu kommt die vorgelagerte Resonanz-Ebene.
+- Beide Ebenen müssen sich gegenseitig verlinken.
+- Ausgangspunkt Werkzeug Antwortet auf Nutzer:in hört eine Aussage Debatten-Kompass Was wird behauptet?
+- Nutzer:in sieht eine Empörungswelle Resonanz-Kompass Warum bekommt das so viel Aufmerksamkeit?
+- 4.1 Systemgrafik für CodeX Die grafische Darstellung soll als vorhandene Karten-/Flow-Komponente umgesetzt werden.
+- Der Debatten-Kompass hilft, den Satz zu beantworten.
+- Der Resonanz-Kompass prüft, warum das Thema Raum bekommt.
+- Verwandte Debattenkarten, Quellen und WÖk-Kapitel schließen den Kreis.
+- 4.2 Crosslink-Regel Jede Debattenkarte bekommt einen Abschnitt „Meta-Ebene: Warum dieses Narrativ Raum bekommt“.
+- Jede Resonanzkarte bekommt einen Abschnitt „Konkrete Debattenkarten dazu“.
+- Jede Ursachenseite bekommt einen Abschnitt „Typische Stöckchen, die von dieser Ursache ablenken“.
+- Verbindung Technische Umsetzung Debattenkarte → Resonanzkarte Tag-Relation: narrativePattern, resonanceTopic, causeSlug Resonanzkarte → Debattenkarte relatedDebateSlugs, topExamples, answerPlaybook Resonanzkarte → Ursache causeSlug, systemCause, missingSystemQuestion Ursache → Glossar hoverTerms: Wirkung, Wirkungspotenzial, Resonanzraum, Wirkpfad, Wirkungsrisiko Alle → Quellen interne Online-Kapitel oder PDFs, externe Primärquellen mit Deeplink 5.
+- Routen, Navigation und Einbindung Die neue Architektur wird in die bestehende Wirkungsradar-/Debatten-Kompass-Struktur integriert.
+- Stattdessen bekommt die bestehende Debatten-Kompass-Seite einen klaren Bereich „Öffentlicher Wirkungsraum“.
+- Route Funktion /wirkungsradar/ Dachseite „Öffentlicher Wirkungsraum“ mit Debatten-Kompass, Resonanz-Kompass, Agenda-Radar und Ursachen-Navigator.
+- Wenn die bestehende Seite Debatten-Kompass bleiben soll: neuen Intro-Block einbauen, aber keine alte Funktion verlieren.
+- /wirkungsradar/debattenkarten/ Bestehende Debattenkarten.
+- Reihenfolge bleibt: Hero, Was wird behauptet?, Sofortantwort, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage, Quellen, Warum zieht das Narrativ?, Methodik.
+- /wirkungsradar/resonanz/ Neue Übersichtsseite für den Resonanz-Kompass.
+- /wirkungsradar/resonanz/[slug]/ Detailseiten für Resonanzkarten.
+- /wirkungsradar/ursachen/[slug]/ Ursachenseiten.
+- /wirkungsradar/resonanz/methode/ Methodik der Resonanzanalyse.
+- /wirkungsradar/einreichen/ Einreichung von Aussagen, Debattenmustern oder unterbelichteten Wirkungsfragen.
+- Der Einstieg bleibt über Methoden & Werkzeuge / Debatten-Kompass möglich.
+- Unterhalb des Debatten-Kompass-Heros eine Pill-Navigation nutzen: Antworten finden, Debattenkarten, Resonanz-Kompass, Agenda-Radar, Ursachen, Muster, Methode, Quellen, Einreichen.
+- Cards, Statusbadges und Quellenboxen aus dem bestehenden Online-Styleguide wiederverwenden.
+- UX-Reihenfolgen aus Nutzerperspektive 6.1 Debattenkarte: bestehende Reihenfolge bleibt verbindlich Hero Was wird behauptet?
+- Sofortantwort mit 10 Sekunden, 30 Sekunden, 2 Minuten Folgencheck Wirkpfad Kritische Fragen Faktenlage Quellen Warum zieht das Narrativ?
+- Methodik Verwandte Inhalte Narrativ einreichen Debatten-Contract Der Block „Was wird behauptet?“ bleibt vor der Sofortantwort.
+- Diese Reihenfolge darf durch die Resonanz-Erweiterung nicht verändert werden.
+- 6.2 Resonanzkarte: praktische Orientierung zuerst Hero: Thema und Kernfrage Schnellorientierung: springen, umlenken oder vertiefen?
+- Vom Stöckchen zur Ursache Bessere Systemfrage Folgencheck Wirkpfad: erste, zweite, dritte Ordnung Denkfehler und Aufmerksamkeitsfallen Berechtigte Fragen Faktenlage und Datenstand Quellen Warum zieht diese Debatte?
+- Methodik Verwandte Debattenkarten, Ursachen, Glossar, Einreichen 6.3 Agenda-Radar: Überblick zuerst Hero: „Laut ist nicht automatisch wichtig.“ Vier Felder: Zentrale Debatte, Blinder Fleck, Aufmerksamkeitsfalle, Hintergrundrauschen Filter: Mensch, Planet, Demokratie, Thema, Status, Datenstand Top 5 überhitzte Debatten Top 5 unterbelichtete Wirkungsfragen Aktuelle Verschiebungen Methodik und Quellen 7.
+- Muster Formulierung Nicht so „Die diskursive Aufmerksamkeitsallokation weist eine asymmetrische Verzerrung im Resonanzraum auf.“ Besser „Manchmal reden alle über ein lautes Thema.
+- Der Resonanz-Kompass zeigt genau diese Verschiebung.“ Nicht so „Narrative müssen als systemische Wirkungsträger analysiert werden.“ Besser „Ein Satz ist nicht nur ein Satz.
+
+## Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx
+
+Pfad: `/Users/hagen/Downloads/Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx`
+
+- Wirkungsradar / Debatten-Kompass Redaktionelle Komplettüberarbeitung von 17 Live-Seiten Codex-Dokument zur professionellen Neufassung, Quellenlogik und Seitenstruktur Stand: 04.06.2026 Zweck dieses Dokuments Dieses Dokument enthält redaktionelle Ersatzfassungen für 17 qualitativ schwache Wirkungsradar-Live-Seiten.
+- Ziel ist nicht nur sprachliche Glättung, sondern ein systematischer Umbau: weg von generischen Generator-Blöcken und pseudoquellenhaften Angaben, hin zu narrativspezifischen Folgenchecks, klaren Wirkpfaden, handhabbaren Antwortbausteinen und sauberer Quellenlogik am Ende jeder Seite.
+- Verbindliche Seitenlogik für alle hier überarbeiteten Seiten Hero mit präzisem Titel, Untertitel und Nutzenversprechen.
+- Faktenlage & Quellen am Ende: Jede Quelle muss sagen, welchen Fakt sie belegt.
+- Keine Linklisten ohne Funktion.
+- Globale Codex-Regeln Alle Karten „Klima / Energie / Gesundheit / Abhängigkeit / Vertrauen / Demokratie / Geld“ entfernen, wenn sie nicht explizit aus dem jeweiligen Narrativ abgeleitet werden.
+- impact@wirkungsoekonomie.org darf nie als Quelle erscheinen.
+- Quellen bleiben am Ende.
+- Jede Seite muss mit dem Begriffssystem der WÖk arbeiten: Wirkung ist tatsächliche Zustandsveränderung; Wirkungspotenzial ist der Möglichkeitsraum vor eingetretener Wirkung; Wirkungsrisiko ist ein plausibler Pfad zu möglichem Schaden.
+- Keine Seite soll länger werden, nur weil ein Template es erlaubt.
+- - Kreislauffrage statt Rohstoffangst URL: https://wirkungsoekonomie.de/wirkungsradar/live/batterien-sind-nicht-recyclebar/ Warum Recycling, Batteriechemie, Rücknahme, Second Life und Design getrennt betrachtet werden müssen.
+- Codex-Auftrag für diese URL Bestehende Seite inhaltlich durch die folgende Struktur ersetzen.
+- Alle generischen Folgenkarten, Pseudoquellen, Platzhalter, mehrfachen Antwortformate und nicht narrativspezifischen Psychologieblöcke entfernen.
+- Entscheidend sind Batteriechemie, Sammelquote, Demontage, Verfahren, Energiequelle, Rückgewinnungsquote, Second-Life-Nutzung und Regulierung.
+- Die EU-Batterieverordnung setzt Pflichten zu CO2-Fußabdruck, Sorgfaltspflichten, Sammlung, Recyclingeffizienz, Materialrückgewinnung, Rezyklatanteilen und Batteriepass.
+- Demokratie: Technikdebatten kippen in Pauschalverdacht statt in überprüfbare Industrie-, Design- und Lieferkettenpolitik.
+- Wie werden Lieferketten, Arbeitsschutz und Umweltfolgen geprüft?
+- Wirkungsökonomische Einordnung Die Seite soll nicht nur Fakten korrigieren, sondern zeigen, welche Zustandsveränderung durch das Narrativ wahrscheinlicher wird.
+- Faktenlage & Quellen am Ende Quellen nicht vor den Folgencheck ziehen.
+- Jede Quelle muss mit einem klaren Belegzweck erscheinen: Quelle -> welchen Fakt belegt sie?
+- - Konzentration ist nicht Wirkung URL: https://wirkungsoekonomie.de/wirkungsradar/live/co2-ist-nur-ein-spurengas/ Warum ein kleiner Anteil in der Atmosphäre trotzdem große Strahlungswirkung haben kann.
+- Codex-Auftrag für diese URL Bestehende Seite inhaltlich durch die folgende Struktur ersetzen.
+- Alle generischen Folgenkarten, Pseudoquellen, Platzhalter, mehrfachen Antwortformate und nicht narrativspezifischen Psychologieblöcke entfernen.
+- Ordnung: Klimaschutzmaßnahmen wirken übertrieben, obwohl sie auf Energiebilanz, Emissionen und Risikoreduktion zielen.
+- Demokratie: Wissenschaftliche Grundbegriffe werden als Täuschung gerahmt; Quellenvertrauen sinkt.
+- Wirkungsökonomische Einordnung Die Seite soll nicht nur Fakten korrigieren, sondern zeigen, welche Zustandsveränderung durch das Narrativ wahrscheinlicher wird.
+- Faktenlage & Quellen am Ende Quellen nicht vor den Folgencheck ziehen.
+- Jede Quelle muss mit einem klaren Belegzweck erscheinen: Quelle -> welchen Fakt belegt sie?
+- - Machtanalyse statt Totalverdacht URL: https://wirkungsoekonomie.de/wirkungsradar/live/das-ist-alles-gesteuert/ Warum echte Einflussstrukturen geprüft werden müssen, ohne alles zu einer geheimen Gesamtsteuerung zu erklären.
+- Codex-Auftrag für diese URL Bestehende Seite inhaltlich durch die folgende Struktur ersetzen.
+- Alle generischen Folgenkarten, Pseudoquellen, Platzhalter, mehrfachen Antwortformate und nicht narrativspezifischen Psychologieblöcke entfernen.
+- Dann ersetzt Verdacht die überprüfbare Analyse.
+- Verschwörungslogiken machen Kritik scheinbar radikal, aber praktisch unprüfbar: Jede Gegeninformation wird als Teil der Steuerung gedeutet.
+- Demokratische Machtanalyse braucht Akteure, Dokumente, Zuständigkeiten, Geldflüsse, Entscheidungswege und überprüfbare Belege.
+- Ordnung: Demokratische Korrektur wird geschwächt, weil überprüfbare Kritik durch Totalverdacht ersetzt wird.
+- Demokratie: Rechenschaftspflicht wird paradoxerweise schwächer, weil konkrete Verantwortliche im Totalverdacht verschwinden.
+- Zustandsveränderung: Prüfung wird durch Misstrauen ersetzt.
+- Dann wird nichts mehr prüfbar.
+- Wirkungsökonomisch ist die bessere Methode: Akteure benennen, Geldflüsse prüfen, Entscheidungswege offenlegen, Datenqualität bewerten und Wirkung sichtbar machen.
+- Wirkungsökonomische Einordnung Die Seite soll nicht nur Fakten korrigieren, sondern zeigen, welche Zustandsveränderung durch das Narrativ wahrscheinlicher wird.
+- Faktenlage & Quellen am Ende Quellen nicht vor den Folgencheck ziehen.
+- Jede Quelle muss mit einem klaren Belegzweck erscheinen: Quelle -> welchen Fakt belegt sie?
+- bpb Desinformation: Belegt Bedeutung von Desinformation und Medienkompetenz für demokratische Debatten.
+- https://www.bpb.de/themen/medien-journalismus/desinformation/ bpb Verschwörungstheorien / Medienmisstrauen: Belegt Zusammenhang von Misstrauen, Verschwörungserzählungen und Desinformation.
+- - Meinungsfreiheit, Rechtsgrenzen und Plattformregeln sauber trennen URL: https://wirkungsoekonomie.de/wirkungsradar/live/das-ist-zensur/ Warum nicht jede Moderation, Kritik oder Rechtsdurchsetzung Zensur ist.
+- Codex-Auftrag für diese URL Bestehende Seite inhaltlich durch die folgende Struktur ersetzen.
+- Alle generischen Folgenkarten, Pseudoquellen, Platzhalter, mehrfachen Antwortformate und nicht narrativspezifischen Psychologieblöcke entfernen.
+- Plattformmoderation, Gegendarstellung, journalistische Einordnung, Strafverfolgung oder Hausrecht sind nicht automatisch staatliche Vorzensur.
+- Diese müssen konkret geprüft werden.
+- Längere Antwort: Zensur ist ein schwerer Vorwurf und muss präzise bleiben.
+- Trotzdem müssen Verfahren transparent, überprüfbar und verhältnismäßig sein.
+- Wirkungsökonomische Einordnung Die Seite soll nicht nur Fakten korrigieren, sondern zeigen, welche Zustandsveränderung durch das Narrativ wahrscheinlicher wird.
+- Faktenlage & Quellen am Ende Quellen nicht vor den Folgencheck ziehen.
+- Jede Quelle muss mit einem klaren Belegzweck erscheinen: Quelle -> welchen Fakt belegt sie?
+- - Ohnmacht ernst nehmen, Kontrolle konkret machen URL: https://wirkungsoekonomie.de/wirkungsradar/live/die-da-oben/ Warum pauschale Elitenkritik echte Rechenschaft eher schwächt als stärkt.
+- Codex-Auftrag für diese URL Bestehende Seite inhaltlich durch die folgende Struktur ersetzen.
+- Alle generischen Folgenkarten, Pseudoquellen, Platzhalter, mehrfachen Antwortformate und nicht narrativspezifischen Psychologieblöcke entfernen.
+- Ordnung: Menschen ziehen sich zurück oder reagieren nur noch mit Wut statt mit überprüfbarer Kritik.
+- So antwortest du Nicht so: Nicht belehrend sagen: „Du musst nur wählen gehen.“ Bessere Frage: Welche Entscheidung meinst du konkret - und wer hatte dort welche Zuständigkeit?
+- Welcher Kontrollmechanismus muss verbessert werden?
+- Wirkungsökonomische Einordnung Die Seite soll nicht nur Fakten korrigieren, sondern zeigen, welche Zustandsveränderung durch das Narrativ wahrscheinlicher wird.
+- Faktenlage & Quellen am Ende Quellen nicht vor den Folgencheck ziehen.
+- Jede Quelle muss mit einem klaren Belegzweck erscheinen: Quelle -> welchen Fakt belegt sie?
+- https://www.bpb.de/themen/medien-journalismus/desinformation/ bpb Medienmisstrauen / Fake News: Belegt Zusammenhang von Misstrauen und Verschwörungserzählungen.
+- - Interessenkonflikte prüfen statt Wissenschaft pauschal delegitimieren URL: https://wirkungsoekonomie.de/wirkungsradar/live/die-wissenschaft-ist-gekauft/ Warum Transparenz über Finanzierung nötig ist, aber nicht jede Forschung käuflich ist.
+- Codex-Auftrag für diese URL Bestehende Seite inhaltlich durch die folgende Struktur ersetzen.
+- Alle generischen Folgenkarten, Pseudoquellen, Platzhalter, mehrfachen Antwortformate und nicht narrativspezifischen Psychologieblöcke entfernen.
+- Falsch wird die Aussage, wenn aus prüfbaren Risiken eine pauschale Delegitimierung von Wissenschaft wird.
+- Gegensteuerung: Finanzierung, Methode, Replikation und Gesamtstand getrennt prüfen.
+- Kurzantwort: Interessenkonflikte prüfen: ja.
+- Längere Antwort: Es ist richtig, Finanzierung und Interessenkonflikte kritisch zu prüfen.
+- Wissenschaftliche Qualität entsteht durch Methode, Offenlegung, Peer Review, Replikation, Datenprüfung, Kritik und Korrektur.
+- Welche Institutionen prüfen Qualität und Integrität?
+- Wirkungsökonomische Einordnung Die Seite soll nicht nur Fakten korrigieren, sondern zeigen, welche Zustandsveränderung durch das Narrativ wahrscheinlicher wird.
+- Faktenlage & Quellen am Ende Quellen nicht vor den Folgencheck ziehen.
+- Jede Quelle muss mit einem klaren Belegzweck erscheinen: Quelle -> welchen Fakt belegt sie?
+- - Engpassanalyse statt Abbruchframe URL: https://wirkungsoekonomie.de/wirkungsradar/live/energiewende-gescheitert/ Warum reale Probleme nicht automatisch Systemversagen bedeuten.
+- Codex-Auftrag für diese URL Bestehende Seite inhaltlich durch die folgende Struktur ersetzen.
+- Alle generischen Folgenkarten, Pseudoquellen, Platzhalter, mehrfachen Antwortformate und nicht narrativspezifischen Psychologieblöcke entfernen.
+- Die IEA beschreibt Deutschlands Zielpfade als ambitioniert und verweist auf die Bedeutung von Erneuerbaren, Netzen und Versorgungssicherheit.
+
+## Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx
+
+Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
+
+- Wirkungsökonomie Debatten-Kompass 2.0 Finaler Textmaster, Quellen- und Codex-Briefing für die Professionalisierung aller Debatten-Seiten Stand: 05.06.2026 · Umfang: 89 Debattenkarten · Zielversion Website 2.0 Nicht verhandelbarer Seiten-Contract für jede Debattenkarte: Hero → Was wird behauptet?
+- → Sofortantwort → Folgencheck → Wirkpfad → Kritische Fragen → Faktenlage → Quellen → Warum zieht das Narrativ?
+- Auftrag an Codex Ziel: Alle bestehenden Debattenseiten werden inhaltlich professionalisiert, nicht reduziert.
+- Bestehende Inhalte, Quellen, URLs, Glossarbegriffe und Verlinkungen bleiben erhalten, sofern sie nicht nachweislich falsch oder doppelt sind.
+- Prüfpflicht: Alle tagesaktuellen Zahlen werden vor Live-Deployment gegen die Quellenbibliothek revalidiert.
+- Politische und juristische Bewertungen dürfen nur mit Primärquelle erscheinen.
+- Stilziel: Professionell, informell verständlich, systemisch, wirkungsökonomisch.
+- Verbotene alte Muster Nicht mehr verwenden: „Der Satz ist als Debatteneinstieg stark, aber als Diagnose zu grob.“ Nicht mehr verwenden: „Entscheidend ist nicht die Empörung über den Einzelframe …“ Nicht jede Karte mit „Ja, der Punkt hat einen wahren Kern …“ beginnen.
+- Keine juristischen oder parteipolitischen Etiketten ohne direkte Quelle.
+- Keine Quellenblöcke mit „noch prüfen“ live zeigen.
+- Wenn Quellen fehlen, ist der Status der Karte Entwurf, nicht geprüft.
+- Globale Begriffs- und Hoverlink-Map Hover-Begriff Kurztext für Tooltip/Glossar Wirkung Tatsächliche Veränderung von Zuständen; neutral, relational, nicht automatisch positiv.
+- Folgencheck Prüft, welche direkten, indirekten und systemischen Folgen ein Narrativ oder eine Maßnahme auslösen kann.
+- Positive Netto-Wirkung Zielgröße der WÖk: positive Wirkung unter Berücksichtigung negativer, indirekter und nicht-kompensierbarer Wirkungen für Mensch, Planet und Demokratie.
+- Quellenbibliothek Verwendung: Die Karten nennen Quellen-IDs.
+- Codex soll diese IDs in echte Quellenmodule, Fußnoten, Hover-Quellen oder Quellenkarten übersetzen.
+- Externe Quellen sind vor Deployment auf Aktualität zu prüfen.
+- I-RAT - Wirkungsrat_Konzept.pdf: Wirkungsrat, unabhängige Prüfung, Evaluation, Missbrauchsschutz, Transparenz.
+- E-UNESCO - UNESCO Journalism, Disinformation, AI & Education resources: Medienkompetenz, Desinformation, KI in Bildung, Pressefreiheit.
+- Finale Textbausteine für alle Debattenkarten Codex-Umsetzung: Die folgenden Blöcke sind als Copydeck zu behandeln.
+- Die Website darf Zusatzdaten, Grafiken und längere Quelleninformationen ergänzen, aber nicht wieder in die alte Reihenfolge zurückfallen.
+- Genau dort setzt der Debatten-Kompass an.
+- Er prüft nicht nur, ob ein Satz faktisch irgendeinen Anker hat, sondern welche Sicht auf die Welt er erzeugt.
+- Aus Wirkungsperspektive ist entscheidend, ob die Aussage Zustände für Mensch, Planet und Demokratie verständlicher macht oder ob sie Resonanzräume öffnet, die Misstrauen, Ohnmacht, Verzögerung oder Gruppenabwertung verstärken.
+- Folgencheck Ausgelöster Resonanzraum: Das Narrativ soll Knappheitsangst aktivieren: ‚Für die bleibt Geld, für uns nicht.‘ Dadurch rutschen Verfahren, Arbeitsmarktzugang und kommunale Ausstattung aus dem Blick.
+- Faktenlage Faktenkern / Prüfhinweis: IAB-Daten zeigen, dass Beschäftigungsquoten von Geflüchteten mit Aufenthaltsdauer deutlich steigen; entscheidend sind Sprache, Qualifikation, Verfahren und Arbeitsmarktzugang.
+- Quellen Interne Quellen: I-BEG, I-WOHL, I-SYS Externe Quellen: E-IAB, E-DEST, E-BA Glossar-Hover: Wirkungspotenzial, Wirkpfad, Wirkungsrisiko, positive Netto-Wirkung 9.
+- Resonanzprofil: Es reduziert Komplexität, benennt scheinbar klare Verantwortliche und bietet eine einfache Handlungsrichtung.
+- Genau deshalb muss die Karte den wahren Kern anerkennen, den Frame sichtbar machen und die bessere Systemfrage öffnen: Welche Integrationsbedingungen machen aus Anfangsaufwand gesellschaftliche Wirkleistung?
+- Der Faktencheck prüft Zahlen, Begriffe und Belege.
+- Die Wirkungsanalyse beschreibt Wirkungspotenziale, Resonanzräume und plausible Wirkpfade der Aussage.
+- Verwandte Inhalte Verknüpfen mit Themenfeld „Migration“, Glossar „Wirkungspotenzial“, „Wirkpfad“, „positive Netto-Wirkung“ sowie mindestens zwei Karten mit ähnlichem Frame oder Gegenframe.
+- Wir prüfen Faktenkern, Frame, Folgencheck, Wirkpfad und Quellenstatus.“ - Ende der Karte - 02.
+- Genau dort setzt der Debatten-Kompass an.
+- Er prüft nicht nur, ob ein Satz faktisch irgendeinen Anker hat, sondern welche Sicht auf die Welt er erzeugt.
+- Aus Wirkungsperspektive ist entscheidend, ob die Aussage Zustände für Mensch, Planet und Demokratie verständlicher macht oder ob sie Resonanzräume öffnet, die Misstrauen, Ohnmacht, Verzögerung oder Gruppenabwertung verstärken.
+- Folgencheck Ausgelöster Resonanzraum: Die Aussage senkt Handlungsbereitschaft: Wenn nichts zählt, muss niemand umbauen.
+- Faktenlage Faktenkern / Prüfhinweis: Aktuelle Länderanteile sind über EDGAR/GCP zu prüfen; Klimawirkung braucht neben aktuellen Emissionen auch historische Pfade, Pro-Kopf-Werte, Technologie- und Standardwirkung.
+- Quellen Interne Quellen: I-BEG, I-WOHL, I-NACH Externe Quellen: E-IPCC, E-GCP, E-EDGAR, E-UBA Glossar-Hover: Wirkungspotenzial, Wirkpfad, Wirkungsrisiko, positive Netto-Wirkung 9.
+- Resonanzprofil: Es reduziert Komplexität, benennt scheinbar klare Verantwortliche und bietet eine einfache Handlungsrichtung.
+- Genau deshalb muss die Karte den wahren Kern anerkennen, den Frame sichtbar machen und die bessere Systemfrage öffnen: Welche Hebel hat ein Industrieland, obwohl sein direkter Anteil begrenzt ist?
+- Der Faktencheck prüft Zahlen, Begriffe und Belege.
+- Die Wirkungsanalyse beschreibt Wirkungspotenziale, Resonanzräume und plausible Wirkpfade der Aussage.
+- Verwandte Inhalte Verknüpfen mit Themenfeld „Klima & Energie“, Glossar „Wirkungspotenzial“, „Wirkpfad“, „positive Netto-Wirkung“ sowie mindestens zwei Karten mit ähnlichem Frame oder Gegenframe.
+- Wir prüfen Faktenkern, Frame, Folgencheck, Wirkpfad und Quellenstatus.“ - Ende der Karte - 03.
+- Genau dort setzt der Debatten-Kompass an.
+- Er prüft nicht nur, ob ein Satz faktisch irgendeinen Anker hat, sondern welche Sicht auf die Welt er erzeugt.
+- Aus Wirkungsperspektive ist entscheidend, ob die Aussage Zustände für Mensch, Planet und Demokratie verständlicher macht oder ob sie Resonanzräume öffnet, die Misstrauen, Ohnmacht, Verzögerung oder Gruppenabwertung verstärken.
+- Folgencheck Ausgelöster Resonanzraum: Das Narrativ verschiebt Aufmerksamkeit vom Systemschaden der Fossilen auf sichtbare lokale Eingriffe.
+- Faktenlage Faktenkern / Prüfhinweis: Zu prüfen sind Artenschutz, Flächenbedarf, Repowering, Netzintegration und fossile Vergleichswirkungen wie Tagebau, Luftschadstoffe, Wasser- und Klimaschäden.
+- Quellen Interne Quellen: I-BEG, I-NACH Externe Quellen: E-IPCC, E-UBA, E-IEA, E-FRAUNHOFER Glossar-Hover: Wirkungspotenzial, Wirkpfad, Wirkungsrisiko, positive Netto-Wirkung 9.
+- Resonanzprofil: Es reduziert Komplexität, benennt scheinbar klare Verantwortliche und bietet eine einfache Handlungsrichtung.
+- Genau deshalb muss die Karte den wahren Kern anerkennen, den Frame sichtbar machen und die bessere Systemfrage öffnen: Wie bauen wir erneuerbare Infrastruktur naturverträglich, statt fossile Schäden zu normalisieren?
+- Der Faktencheck prüft Zahlen, Begriffe und Belege.
+- Die Wirkungsanalyse beschreibt Wirkungspotenziale, Resonanzräume und plausible Wirkpfade der Aussage.
+- Verwandte Inhalte Verknüpfen mit Themenfeld „Klima & Energie“, Glossar „Wirkungspotenzial“, „Wirkpfad“, „positive Netto-Wirkung“ sowie mindestens zwei Karten mit ähnlichem Frame oder Gegenframe.
+- Wir prüfen Faktenkern, Frame, Folgencheck, Wirkpfad und Quellenstatus.“ - Ende der Karte - 04.
+- Genau dort setzt der Debatten-Kompass an.
+- Er prüft nicht nur, ob ein Satz faktisch irgendeinen Anker hat, sondern welche Sicht auf die Welt er erzeugt.
+- Aus Wirkungsperspektive ist entscheidend, ob die Aussage Zustände für Mensch, Planet und Demokratie verständlicher macht oder ob sie Resonanzräume öffnet, die Misstrauen, Ohnmacht, Verzögerung oder Gruppenabwertung verstärken.
+- Folgencheck Ausgelöster Resonanzraum: Das Narrativ erzeugt Aufschubkomfort: Man muss nichts umbauen, weil irgendwann eine perfekte Lösung kommt.
+- Faktenlage Faktenkern / Prüfhinweis: Für die Karte sind IEA/IPCC-Pfade sowie aktuelle Einschätzungen zu Technologie-Reifegraden zu verwenden; Forschung ja, Systemausrede nein.
+- Quellen Interne Quellen: I-BEG, I-WOHL, I-NACH Externe Quellen: E-IPCC, E-IEA Glossar-Hover: Wirkungspotenzial, Wirkpfad, Wirkungsrisiko, positive Netto-Wirkung 9.
+- Resonanzprofil: Es reduziert Komplexität, benennt scheinbar klare Verantwortliche und bietet eine einfache Handlungsrichtung.
+- Genau deshalb muss die Karte den wahren Kern anerkennen, den Frame sichtbar machen und die bessere Systemfrage öffnen: Welche Energieentscheidungen wirken in den nächsten zehn bis zwanzig Jahren wirklich?
+- Der Faktencheck prüft Zahlen, Begriffe und Belege.
+- Die Wirkungsanalyse beschreibt Wirkungspotenziale, Resonanzräume und plausible Wirkpfade der Aussage.
+- Verwandte Inhalte Verknüpfen mit Themenfeld „Klima & Energie“, Glossar „Wirkungspotenzial“, „Wirkpfad“, „positive Netto-Wirkung“ sowie mindestens zwei Karten mit ähnlichem Frame oder Gegenframe.
+- Wir prüfen Faktenkern, Frame, Folgencheck, Wirkpfad und Quellenstatus.“ - Ende der Karte - 05.
+- Behauptung: „Schulden sind schlecht; der Staat muss sparen wie ein Haushalt.“ Implizite Botschaft: Staatliche Ausgaben sollen unabhängig von ihrer Wirkung als Belastung künftiger Generationen erscheinen.
+- Genau dort setzt der Debatten-Kompass an.
+- Er prüft nicht nur, ob ein Satz faktisch irgendeinen Anker hat, sondern welche Sicht auf die Welt er erzeugt.
+- Aus Wirkungsperspektive ist entscheidend, ob die Aussage Zustände für Mensch, Planet und Demokratie verständlicher macht oder ob sie Resonanzräume öffnet, die Misstrauen, Ohnmacht, Verzögerung oder Gruppenabwertung verstärken.
+- Folgencheck Ausgelöster Resonanzraum: Das Narrativ erzeugt Haushaltsmoral statt Wirkungsprüfung.
+- Auslöser: Die Behauptung wird als scheinbar einfache Diagnose formuliert: „Schulden sind schlecht; der Staat muss sparen wie ein Haushalt.“.
+- Faktenlage Faktenkern / Prüfhinweis: Faktenlage über öffentliche Finanzen, Investitionslücken und Folgekosten mit Bundeshaushalt, OECD, Rechnungshof und Fachinstituten prüfen.
+- Quellen Interne Quellen: I-BEG, I-TSROI, I-WSTG Externe Quellen: E-OECD, E-DEST Glossar-Hover: Wirkungspotenzial, Wirkpfad, Wirkungsrisiko, positive Netto-Wirkung 9.
+- Resonanzprofil: Es reduziert Komplexität, benennt scheinbar klare Verantwortliche und bietet eine einfache Handlungsrichtung.
+- Genau deshalb muss die Karte den wahren Kern anerkennen, den Frame sichtbar machen und die bessere Systemfrage öffnen: Welche Ausgaben verhindern künftige Kosten und erhöhen Handlungsfähigkeit?
+- Der Faktencheck prüft Zahlen, Begriffe und Belege.
+
+## Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx
+
+Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx`
+
+- Wirkungsökonomie Website 2.0 Überarbeitungs- und Perfektionierungsanweisung für die Tool-Landschaft Optik · Funktion · Inhalt · Verständlichkeit · Qualitätssicherung CodeX-Briefing / Version 2.0 Kernauftrag Die bestehende Tool-Landschaft der Website wird nicht reduziert, sondern verständlicher, schöner, eindeutiger, nutzbarer und vertrauenswürdiger gemacht.
+- Stand: 05.06.2026 · Für Umsetzung durch CodeX Inhalt 1.
+- Vorschalt-Anweisung an CodeX 2.
+- Zielbild: Was die Tool-Landschaft 2.0 leisten muss 3.
+- Diagnose der aktuellen Tool-Landschaft 6.
+- Öffentlichkeitslogik: Welche Tools nach vorne gehören 8.
+- Tool-Gruppen, Zusammenführungen und Umbenennungen 9.
+- Fehlende Tools und neue UX-Bausteine 10.
+- Einheitliches Tool-Seitentemplate 11.
+- Quellen-, Status-, Glossar- und Hoverlogik 15.
+- Konkrete Umsetzungsanweisungen je Tool-Familie 17.
+- Deployment und Abschlussbericht Anhänge: Migration, Microcopy, DoD, Code-Komponenten 1.
+- Vorschalt-Anweisung an CodeX Diese Anweisung zuerst lesen Dieses Dokument ist als verbindliches Umsetzungsbriefing für die Perfektionierung aller Tool-, Methoden-, Rechner-, Demo-, Register- und Governance-Seiten der Website wirkungsoekonomie.de zu verwenden.
+- Es ergänzt das Website-2.0-Relaunch-Briefing und den Debatten-Kompass-Textmaster.
+- 1.1 Copy-Paste-Auftrag für CodeX AUFTRAG AN CODEX: TOOL-LANDSCHAFT DER WIRKUNGSÖKONOMIE AUF VERSION 2.0 BRINGEN Bitte setze dieses Word-Dokument als verbindliche Überarbeitungs- und Perfektionierungsanweisung für alle Tool-, Methoden-, Rechner-, Demo-, Register-, Kompass-, Wirkungsradar-, Scanner- und Governance-Seiten der Website www.wirkungsoekonomie.de um.
+- Ziel ist NICHT die Reduktion von Inhalten.
+- Ziel ist bessere Verständlichkeit, klare UX, einheitliches Design, korrekte Wirkungslogik, nachvollziehbare Quellen, klare Statuskennzeichnung und bessere Antwortqualität.
+- Wenn etwas redundant, unfertig, zu abstrakt oder falsch einsortiert ist, dann: inventarisieren, verschieben, zusammenführen, als Labor/Werkstatt markieren, intern verlinken oder archivieren - aber nicht löschen.
+- Alle Erklärungen für nichtwissenschaftliche Zielgruppen folgen dem Armin-Maiwald-Prinzip: erst Alltag, dann Problem, dann Beobachtung, dann Begriff, dann Methode, dann Wirkungspfad, dann Grenzen.
+- Die Tool-Landschaft muss künftig unterscheiden zwischen: 1.
+- Governance, Datenqualität und Prüfung, 5.
+- Jede Tool-Seite erhält ein einheitliches Template: Hero, Nutzerfrage, Was ist das?, Was ist die heutige Blindstelle?, Was gibst du ein?, Was bekommst du heraus?, Was verändert sich dadurch?, Wirkpfad, Folgencheck, Datenqualität/Status, Grenzen/Schutzlinien, Quellen, Glossar, verwandte Inhalte und nächster Schritt.
+- Vor Live-Deployment sind Content-Inventar, Migrationsmatrix, Linkcheck, Snapshot-Tests, Statusprüfung, Glossarprüfung, Barrierefreiheitscheck und Smoke-Test durchzuführen.
+- Zielbild: Was die Tool-Landschaft 2.0 leisten muss Zielbild Die Tool-Landschaft soll nicht mehr wie eine Liste sehr unterschiedlicher Dinge wirken, sondern wie ein nutzerzentriertes Wirkungssystem: Ich habe eine Frage.
+- Ich verstehe, was das Tool tut.
+- Ich erkenne Grenzen, Quellen und Status.
+- Fachnutzer:innen finden Scorecards, NWI, T-SROI, WÖk-IDs, Register, Governance und Quellen sauber geordnet.
+- CodeX/Entwicklung erhält ein einheitliches Komponentenmodell, wiederverwendbare Layouts und Tests gegen Strukturdrift.
+- Redaktion bekommt ein Seitentemplate und Sprachregeln, damit keine KI-Standardtexte oder Begriffslawinen entstehen.
+- 2.2 Die neue Grundfrage jeder Tool-Seite Was hilft mir dieses Werkzeug zu verstehen oder besser zu entscheiden - und welche reale Veränderung würde daraus folgen?
+- 2.3 Wirkungsökonomischer Anspruch Jedes Tool muss Wirkung nicht nur als Ergebniswert zeigen, sondern als Pfad: Auslöser -> Wirkungspotenzial -> Zustandsveränderung -> Bewertung -> Rückkopplung -> neue Entscheidung.
+- Jedes Tool muss Nebenwirkungen, Zielkonflikte, Datenqualität und Schutzlinien sichtbar machen.
+- Jedes Tool muss erklären, was sich in Preisen, Kapital, Beschaffung, Management, Öffentlichkeit, Haushalt, Förderung oder Verhalten verändern würde.
+- Jedes Tool muss klären, ob es eine Demo, Methode, Kennzahl, Registerlogik, Governance-Instanz, Kompass oder Forschungsmodell ist.
+- Nicht verhandelbare Grundsätze 3.1 Kein Content-Verlust Harter Contract Keine Glossar-Begriffe, Veröffentlichungen, Journal-Beiträge, Bibliothekseinträge, Debattenkarten, Demos, PDFs, Methodenseiten, Registereinträge oder alten relevanten URLs dürfen ersatzlos gelöscht werden.
+- Bei Dopplung wird eine kanonische Seite bestimmt und die andere Seite weitergeleitet oder als vertiefender Kontext verlinkt.
+- Bei veralteten Aussagen wird ein Status ergänzt: Altstand, Arbeitsfassung, ersetzt durch, in Prüfung, Archiv.
+- Bei fehlenden Quellen wird nicht gelöscht, sondern der Status transparent gemacht: Quellenprüfung offen.
+- Kein Tool darf einzelne Bürger:innen, Kinder, Lehrkräfte, Migrant:innen, Medienakteur:innen oder politische Personen bewerten oder ranken.
+- Tools dürfen Entscheidungen vorbereiten, aber nicht ersetzen.
+- Wo individuelle Daten genutzt würden, muss die Seite klar sagen: In der Demo keine personenbezogene Auswertung.
+- 3.3 Verständlichkeit ohne Verflachung Öffentliche Seiten: Armin-Maiwald-Prinzip, kurze Einstiege, Beispiele, Alltagssprache, klare Bilder.
+- Fachseiten: Tiefe erhalten, aber mit Einstiegskasten, Glossar-Hovern, Wirkpfad und Zusammenfassung ergänzen.
+- Begrifflicher und methodischer Contract der WÖk Führender Begriffsrahmen Für alle Tool-Seiten gilt der führende Begriffsleitfaden der Wirkungsökonomie.
+- Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.
+- Das Narrativ öffnet Resonanzräume, die Vertrauen, Diskursfähigkeit und demokratische Stabilität schwächen können.
+- Das Tool entscheidet.
+- Das Tool bereitet Entscheidungen vor und macht Wirkpfade, Datenqualität und Grenzen sichtbar.
+- 4.2 Pflichtbegriffe mit Hover-Glossar Wirkung Wirkungspotenzial Wirkungsrisiko Wirkpfad / Wirkungspfad Wirkungsbewertung Netto-Wirkung Positive Netto-Wirkung Wirkungsraum Wirkungsgrenze Reverse Merit Order / Nichtkompensationsprinzip WÖk-ID Scorecard FinalScore NWI T-SROI Datenqualität & Assurance Wirkungsrückkopplung SDG+ 4.3 Methodische Trennung NWI / T-SROI Nicht vermischen NWI ist die operative Netto-Wirkungskennzahl.
+- Ein Tool darf diese Unterscheidung nicht verwischen.
+- Diagnose der aktuellen Tool-Landschaft 5.1 Kernproblem Die aktuelle Website ist fachlich reich, aber für viele Nutzer:innen noch uneindeutig.
+- 5.2 Was dadurch unklar wird Ist das ein Tool zum Anklicken oder ein Methodikbegriff?
+- Ist das Ergebnis eine Demo, eine Kennzahl, ein Modell oder eine geprüfte Bewertung?
+- Was muss ich eingeben?
+- Welche Veränderung würde das Tool in der Realität bewirken?
+- Welche Daten sind echt, modellhaft, geschätzt oder noch nicht geprüft?
+- Welche Tools gehören zusammen und welche sind nur interne Bausteine?
+- 5.3 Was schon gut ist und behalten werden muss Clusterlogik: Die aktuelle Seite trennt bereits acht Cluster.
+- Diese Linie muss visuell stärker und einheitlicher werden.
+- Das ist der richtige Erklärstandard und muss auf alle Tools übertragen werden.
+- Erleben-Hub: Nutzerfrage, heutige Blindstelle, was das Tool zeigt und was das Ergebnis bedeutet: Diese Struktur ist sehr gut und muss standardisiert werden.
+- Sie soll fragen: Was willst du verstehen, prüfen oder entscheiden?
+- 6.1 Öffentliche Haupteinstiege Einstieg Nutzerfrage Zielseiten / Tools Wirkung verstehen Was bedeutet Wirkung überhaupt?
+- WÖk-Kompass, Wissenskarten, Glossar, So wirkt WÖk Narrativ prüfen Worauf antworte ich eigentlich?
+- Debatten-Kompass, Medienwirkungscheck, Sprach-/Framing-Analyse Produkt prüfen Warum ist billig oft nicht wirklich billig?
+- Produktwirkungsrechner, Produktscorecards, Apfelbeispiel, Lieferkette Organisation prüfen Wie wirkt ein Unternehmen, Projekt oder Programm?
+- Unternehmens-Wirkungscheck, Impact-Controlling-Rechner, NWI, T-SROI Wohnen / Kommune prüfen Was macht Wohnen bezahlbar, gesund und klimafähig?
+- Wohnwirkungscheck, Resilienz-Radar Kommune, Sozialraumprofil Kapital prüfen Skaliert Kapital Wirkung oder Risiko?
+- Kapitalwirkungscheck, Portfolio-Wirkungsrating, Wirkungskredit, Wirkungsfonds Tiefe Methodik Wie wird gemessen, geprüft, versioniert?
+- Orientierung WÖk-Kompass, Debatten-Kompass, WÖk-Scanner/Tool-Finder, Einstiegskarten Maximal einfache Sprache, direkte Fragen, schnelle Antwort.
+- Governance & Vertrauen Wirkungsrat, Register, Audit, Datenqualität, Review, Missbrauchsschutz Transparenz, Prüfstatus, Korrekturwege, keine Expertokratie.
+- Öffentlichkeitslogik: Welche Tools nach vorne gehören 7.1 Key Features für öffentliche Kommunikation Debatten-Kompass: Key-Feature für Narrative, Mythen, Frames, Transformation, Rechtsruck und demokratische Resilienz.
+- Er ist kein klassischer Faktencheck, sondern ein Wirkungscheck für öffentliche Debatten.
+- WÖk-Scanner / Tool-Finder: Soll die Brücke von Nutzerfrage zu passendem Werkzeug sein.
+- Medienwirkungscheck: Brücke zwischen SDG+, öffentlicher Resonanz, Medienqualität und Debatten-Kompass.
+- 7.2 Nicht prominent als fertige Tools kommunizieren Wirkungsrente, Wirkungseinkommen, WEstG, Automatisierungsdividende, Maschinenwertschöpfungsbeitrag, Wirkungsfonds-Simulator, Kapital-/Vermögens-/Erbschaftschecks: sichtbar behalten, aber als Labor/Werkstatt/Forschungsmodell markieren.
+- Hybrid-Risk-Radar, KI-Wirkungsrisiko, Desinformations-Risikocheck, Plattform-Wirkungscheck: keine Zensur- oder Kontrollästhetik; immer als Risiko-/Resonanzanalyse ohne Personenbewertung erklären.
+- Tool-Gruppen, Zusammenführungen und Umbenennungen 8.1 Zusammenführen ohne Löschen Regel Wenn mehrere Tools dasselbe Problem aus verschiedenen Blickwinkeln bearbeiten, bleiben alle Inhalte erhalten, aber die öffentliche Navigation zeigt eine Suite mit Modi.
+- Einzelmodule bleiben über Deep Links und Methodik erreichbar.
+- Bisherige Einzeltools Neue öffentliche Bündelung Umsetzungsanweisung Wohnwirkungsrechner, Stranded-Asset-Check Wohnen, Vermieter-Check Wohnwirkungscheck Eine Seite mit Modi: Mieter:in, Vermieter:in, Kommune/Bestand.
+
+## Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx
+
+Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx`
+
+- WIRKUNGSOEKONOMIE.DE Website-Relaunch Wirkungsoekonomie.de Designsystem, Inhaltsueberarbeitung und Codex-Umsetzungsauftrag Version 1.0 - Umsetzungsbriefing fuer einen koordinierten Relaunch 5.
+- Juni 2026 Leitentscheidung Dieses Dokument ist als umsetzbares Gesamtbriefing fuer Codex gedacht.
+- Ziel ist ein zusammenhaengender Relaunch mit einheitlichem Designsystem, klarer Informationsarchitektur, konsistenter Sprache und einer fest verdrahteten Reihenfolge fuer Debatten-Seiten.
+- Keine weiteren vielen kleinen Deployments ohne Gesamt-Review.
+- Nicht verhandelbar Bei den Debatten-Seiten gilt die hier festgelegte Reihenfolge.
+- Zielbild und Arbeitsmodus 2.
+- Seiten-Templates und inhaltliche Ueberarbeitung 6.
+- Debatten-Kompass: neue verbindliche Seitenlogik 7.
+- Codex-Umsetzungsauftrag: Architektur, Datenmodell, Tests 9.
+- Deployment- und QA-Plan fuer einen koordinierten Relaunch 10.
+- Abnahmechecklisten Anhang A-C: Beispiele, CSS-Tokens, Quellenbasis 1.
+- Zielbild und Arbeitsmodus Die Website soll nicht nur schoener werden.
+- Sie soll als oeffentliche Wirkungsarchitektur funktionieren: schnell verstaendlich fuer Erstbesucher:innen, belastbar fuer Fachleute, sauber getrennt zwischen oeffentlicher Darstellung und Werkstatt, und technisch so stabil, dass Codex nicht in kleinteiligen, widerspruechlichen Deployments arbeitet.
+- Bereich Vorgabe / Entscheidung Primäres Ziel Ein zusammenhaengender Relaunch, der Design, Layout, Navigation, Textlogik, Debatten-Kompass, Statuslogik, Quellenlogik und QA gleichzeitig ordnet.
+- Arbeitsmodus Eine Feature-Branch / ein Preview-Raum / ein Review-Paket / ein Produktions-Deployment.
+- Debatten-Kompass Nicht nur Faktencheck, sondern Orientierung: Was wird behauptet?
+- 1.1 Relaunch-Prinzip: ein Paket statt Deployment-Chaos Content-Freeze: Alle oeffentlich sichtbaren Texte und Statuswerte werden vor Umsetzung in einem Datenstand gesammelt.
+- Design-Freeze: Tokens, Komponenten und Layoutregeln werden zuerst gebaut, dann Seiten migriert.
+- Debatten-Freeze: Alle Debattenkarten werden in das neue Schema ueberfuehrt, aber nur quellengepruefte Karten werden prominent oeffentlich gefuehrt.
+- Preview-Review: Vollstaendige Vorschau mit Linkcheck, visueller Pruefung, Accessibility, mobilen Breakpoints und redaktioneller Stichprobe.
+- 1.2 Ergebnis, das Codex liefern soll Einheitliches Designsystem: globale CSS-Variablen, Typografie, Abstaende, Farben, Karten, Statuschips, Callouts, Buttons, Tabellen, Quellenmodule.
+- Einheitliche Layouts: wiederverwendbare Templates fuer Startseite, Verstehen-Seiten, Wirkungsfelder, Werkzeuge/Labor, Bibliothek, Journal und Debattenkarten.
+- Ein konsistentes Inhaltsmodell: Datenstruktur fuer Debattenkarten, Quellen, Review-Status, Versionsstand und verwandte Inhalte.
+- Ein redaktionelles System: Schreibregeln, No-Go-Formulierungen, Quellenanforderungen und Review-Prozess.
+- Ein QA-System: automatisierte Tests fuer Reihenfolge, Statuslogik, externe Links, Barrierefreiheit, Meta-Daten, Canonicals und Legacy-Weiterleitungen.
+- Zielgroesse ist positive Netto-Wirkung fuer Mensch, Planet und Demokratie.
+- Wenige praezise Begriffe konsequent nutzen: Wirkungsblindheit, Wirkungswahrheit, Wirkungsrueckkopplung, Wirkungspfad, Wirkungsraum, positive Netto-Wirkung, Reverse Merit Order, Wirkungsarchitektur.
+- 2.1 Begriffliche Muss-Regeln Regel Umsetzung auf der Website Codex-Pruefung Wirkung neutral verwenden Nicht schreiben: 'Wirkung' meint automatisch gut.
+- Glossar-Scan und Textsuche nach unklaren Pauschalverwendungen.
+- Positive Netto-Wirkung als Zielgroesse Wenn Ziel, Kompass oder Erfolg gemeint ist, 'positive Netto-Wirkung fuer Mensch, Planet und Demokratie' verwenden.
+- Redaktioneller Lint: 'Wirkung' in Zielsaetzen markieren.
+- Wirkungspotenzial bei Sprache/Narrativen Bei Debatten, Medien, Frames und Sprache nicht so tun, als sei jede Wirkung nachgewiesen.
+- Erst Wirkungspotenzial, Resonanzraum, Wirkpfad, Risiko.
+- Debattenkarten muessen Feld 'wirkungspfad' und optional 'resonanzrisiko' haben.
+- SDG+ transparent SDG+ immer als Erweiterung der Wirkungsökonomie bezeichnen, nicht als offizielle UN-Kategorie.
+- Glossar und SDG+-Seite pruefen.
+- Produkt-, Steuer- und Lieferkettenseiten muessen RMO-Hinweis haben.
+- Jede Laborseite braucht sichtbares Statusmodul oberhalb des Fold oder unmittelbar nach Hero.
+- Maximal 3 Haupt-CTAs pro Seite, klare Kartencluster, kurze Inhaltswege.
+- Status sichtbar Vertrauen entsteht durch Pruefstatus, Quellenstand und Modellgrenzen.
+- Statuschips, Review-Banner, Quellenkarten, Version/Datum.
+- Fachtext / Essays Optional Source Serif 4, Charter oder Georgia fuer laengere Referenztexte; aber nicht auf Debattenkarten, dort klare Sans-Serif.
+- Keine gemischten Fonts je Seite.
+- 3.3 Farb- und Token-System Token Hex Einsatz --c-bg #F7F4EC Seitenhintergrund, warme Grundflaeche --c-surface #FFFFFF Karten, Panels, Modale --c-ink #17211D Primaerer Text --c-muted #637267 Subline, Meta, Hilfetexte --c-line #D9D2C4 Rahmen, Trenner --c-teal #0D6B5F Primaeraktion, Links, Hero-Akzent --c-teal-dark #064E46 Hover, Header, starke Flaechen --c-gold #B98528 Wirkungs-Kompass, Warnung, Hervorhebung --c-blue #274C77 Methodik, Wissen, Daten --c-green #2F7D4E geprueft, positiv, Erfolg --c-red #B4453D kritisch, nicht geprueft, rote Linie --c-lab #7B5AA6 Labor/Werkstatt-Kennzeichnung 3.4 Spacing, Grid und Layout Bereich Desktop Tablet Mobil Max-Width 1180-1220px Gesamtbreite; 760px Textbr
+- Gruppierung: Verstehen, Debatten, Werkzeuge/Labor, Bibliothek, Mitmachen.
+- Statuschip draft / in Pruefung / redaktionell geprueft / quellengeprueft / aktualisiert / archiviert.
+- Quellenkarte Quelle, Herausgeber, Datum, letzter Check, was belegt sie, was belegt sie nicht.
+- Glossar-Hover Maximal 160 Zeichen; Klick fuehrt zu Glossar; kein Glossar-Popup fuer jeden zweiten Begriff.
+- Debatten-Antwortbox Tabs/Blöcke: 10 Sekunden, 30 Sekunden, 2 Minuten; Copy-to-Clipboard je Antwort.
+- 3.6 Visuelle Statuslogik Status Label Farbe Oeffentliche Regel draft Entwurf Rot/neutral Nicht prominent auf oeffentlichen Uebersichtsseiten; nur Werkstatt.
+- editorial_reviewed Redaktionell geprueft Blau Argumentationslogik geprueft, Quellen koennen noch unvollstaendig sein.
+- source_verified Quellengeprueft Gruen Darf in 'Gepruefte Karten' erscheinen.
+- archived Archiviert Grau Historische Karte; nicht fuer aktuelle Debatten bewerben.
+- Fachleute und Codex brauchen eine saubere Trennung zwischen oeffentlicher Hauptseite, Labor und Referenz.
+- 4.1 Neue Hauptnavigation Navigationspunkt Zweck Unterseiten Start Schneller Einstieg und zentrale Positionierung Problem, Idee, Mechanismus, Zielgruppen, Debatten-Teaser, Mitmachen Verstehen Grundlogik der Wirkungsökonomie Was ist WÖk, So wirkt WÖk, Begriffe, SDG/SDG+, Wirkungsarchitektur, Einwaende Debatten-Kompass Oeffentliche Antwortfaehigkeit Gepruefte Karten, In Pruefung, Methode, Pruefprozess, Narrativ einreichen Wirkungsfelder Anwendungsraeume Produkte, Kapital, Wohnen, Rente, Einkommen, Lieferketten, Medien, Demokratie Werkzeuge / Labor Demos, Rechner, Prototypen Wirkungsscanner, Steuer-Demos, Produkt-Simulator, Medienwirkung, T-SROI Akademie Lernen und Qualifizierung Lernpfade, Modu
+- UI-Kennzeichnung Oeffentlich / kuratiert Startseite, Verstehen, wenige gepruefte Debattenkarten, Hauptargumente, Mitmachen Keine Werkstattlabels.
+- Quellen- und Statuslogik sichtbar.
+- Labor / Werkstatt Demos, Rechner, Arbeitsfassungen, unvollstaendige Debattenkarten, Experimente Lila Laborchip, Modellhinweis, keine amtliche Bewertung, keine Beratung, kein Indexing fuer heikle Entwuerfe.
+- Referenz / Archiv Volltexte, alte Journalbeitraege, Working Papers, Methodendokumente Archiv-Layout, Datum, Version, Geltung, ggf.
+- 4.3 Legacy-Bereinigung Alle alten Journal- und Blog-Templates auf ein neues Journal-Template migrieren oder per 301 auf passende neue URLs weiterleiten.
+- Impressum und Datenschutz gestalterisch nicht als altes Template stehen lassen.
+- Jede Seite braucht genau einen Canonical-Link und einheitliche Footer-Navigation.
+- Keine internen Labels wie 'Masterquelle', 'P0 gerettet', 'aus Masterquelle integriert' oder technische Rettungsnotizen im Frontend.
+- Seiten mit Arbeitsfassung muessen `noindex` erhalten, wenn sie nicht oeffentlich kuratiert sind.
+- Seiten-Templates und inhaltliche Ueberarbeitung Jede Seite folgt einer wiedererkennbaren Dramaturgie.
+- 5.1 Startseite Abschnitt Ziel Text-/Layoutvorgabe Hero Ein Satz, der haengen bleibt H1: 'Wohlstand braucht einen besseren Kompass.' Subline: 'Die Wirkungsökonomie fragt nicht nur, was sich lohnt.
+- Debatten-Kompass Teaser Oeffentliche Relevanz 'Behauptung hoeren.
+- 5.2 Verstehen-Seiten Template Reihenfolge Besonderheit Was ist Wirkungsökonomie?
+- Begriffe Suche -> Kernbegriffe -> Begriffspaare -> Mini-Definitionen -> volle Definitionen Führender Begriffsleitfaden als Quelle; Hover-Definitionen exakt aus Kurzdefinitionen.
+- SDGs / SDG+ Hero -> SDGs als Referenzrahmen -> SDG+ als WÖk-Erweiterung -> Warum Demokratie/Medien/Rechtsstaat -> Missverständnisse Transparenz: SDG+ ist keine offizielle UN-Kategorie.
+- Jede Detailseite braucht dieselbe innere Logik: Hero: Welche Fehlsteuerung wird sichtbar?
+- Wirkungswahrheit: Welche Wirkung muss sichtbar werden?
+- Beispiel / Mini-Fallstudie Risiken und Schutzmechanismen Weiterlesen / Dokumente / Labor-Demo 5.4 Werkzeuge / Labor Laborpflicht Jede Demo-Seite muss sichtbar sagen: vereinfachtes Modell, keine amtliche Bewertung, keine Rechts-, Steuer-, Anlage- oder Produktberatung, keine Personenbewertung, Annahmen und Datenstand offen, Version sichtbar.
+- Toolseite Status Pflichtmodule Produkt-/Wirkungssteuer-Simulator Labor Modellhinweis, Annahmen, Datenstand, RMO-Erklaerung, Quellen, Reset-Button Wirkungsscanner Labor Keine amtliche Bewertung, keine automatisierte Entscheidung, Unsicherheiten sichtbar Medien-/Debattenwirkung Labor Wirkungspotenzial statt Wirkungsnachweis, keine Meinungsbewertung, Resonanzrisiken T-SROI-Demo Labor / Methode NWI als Pruefbasis, T-SROI nicht fuer negative Netto-Wirkung, klare Modellgrenzen 5.5 Bibliothek und Journal Bibliothek ist Referenz, nicht Erstkontakt.
+- Filter nach Typ: Grundlagen, Whitepaper, Working Paper, Gesetzesentwurf, Demo, Journal, Archiv.
+- Journal-Beitraege brauchen ein einheitliches Kartenlayout: Titel, These, Datum, Lesedauer, Thema, Status, Verweis auf relevante Grundlagen.
+- Debatten-Kompass: neue verbindliche Seitenlogik Der Debatten-Kompass ist der oeffentlich wichtigste Teil der Website.
+- Er muss schnell antwortfaehig machen, aber nicht in Lagerreflexe verfallen.
+- -> Sofortantwort -> Folgencheck -> Wirkpfad -> Kritische Fragen -> Faktenlage -> Quellen -> Warum zieht das Narrativ?
+- -> Methodik -> Verwandte Inhalte -> Narrativ einreichen 6.1 Seitenreihenfolge als Codex-Contract Nr.
+
+## Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx
+
+Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx`
+
+- Öffentlicher Wirkungsraum Finales Codex-Briefing für Agenda-Radar, Ursachen-Navigator, Resilienz-Prinzipien und Gesamtintegration Debatten verstehen.
+- Version: 1.0 - Arbeitsbriefing für finale Umsetzung der Website 2.0 Ziel: Alles, was nach Debatten-Kompass und Resonanz-Kompass noch fehlt, so bündeln, dass Codex die finale öffentliche Architektur umsetzen kann.
+- Wichtig: Dieses Dokument baut auf den bereits erstellten Briefings zu Debatten-Kompass, Resonanz-Kompass, Quellen-/Linkkorrektur, Website-Härtung und Glossar-Korrektur auf.
+- Zielbild: Öffentlicher Wirkungsraum 3.
+- Verbindliche Codex-Leitentscheidung 4.
+- Dachseite: finale öffentliche Texte 6.
+- Resilienz-Prinzipien: vollständige Seite und Inhalte 9.
+- Gesamtverknüpfung mit Debatten- und Resonanz-Kompass 10.
+- Quellen-, Glossar- und Linklogik 12.
+- QA, Tests, Deployment und Abschlussbericht 14.
+- Direkt kopierbare Codex-Anweisung Anhang A: Startbestand Agenda-Radar Anhang B: Startbestand Ursachen-Navigator Anhang C: Resilienz-Prinzipien im Detail 1.
+- Kurzurteil Debatten-Kompass und Resonanz-Kompass sind konzipiert.
+- Für die finale Umsetzung des Öffentlichen Wirkungsraums fehlen jetzt vor allem drei Dinge: der Agenda-Radar als Gewichtungs- und Überblicksebene, der Ursachen-Navigator als Systemebene unter den Stöckchen und die Resilienz-Prinzipien als normativer und praktischer Schutzrahmen.
+- Zusätzlich fehlt die saubere Gesamtintegration: Routen, Crosslinks, Filter, Quellenlogik, Glossar-Hover, QA und eine klare öffentliche Dachseite.
+- Baustein Status Was existiert / was fehlt Codex-Aufgabe Debatten-Kompass Vorhanden Textmaster für konkrete Narrative ist erstellt.
+- Reihenfolge bleibt verbindlich: Hero, Was wird behauptet?, Sofortantwort, Folgencheck, Wirkpfad, Kritische Fragen, Faktenlage, Quellen, Warum zieht das Narrativ?, Methodik, Verwandte Inhalte, Narrativ einreichen.
+- Nur verlinken, Quellen korrigieren und in die Dacharchitektur einhängen.
+- Resonanz-Kompass Vorhanden / zu implementieren Meta-Prüfung von Aufmerksamkeit, Überhitzung, Verdrängung, Ursache und besserer Systemfrage ist konzipiert.
+- Initiale Resonanzkarten liegen als Konzept vor.
+- Dieses Dokument liefert finale Struktur, Texte, Startbestand und Crosslinks.
+- Resilienz-Prinzipien Fehlt als finaler Baustein Diese Seite erklärt, wie Öffentlichkeit widerstandsfähiger gegen Empörung, Ablenkung, Manipulation und falsche Frames wird.
+- Dachseite Öffentlicher Wirkungsraum Muss final zusammenführen Die Nutzer:innen brauchen einen sofort verständlichen Einstieg: konkrete Aussage, überhitztes Thema, blinder Fleck, Ursache, Resilienz.
+- Zielbild: Öffentlicher Wirkungsraum Der Öffentliche Wirkungsraum ist die Dacharchitektur für alles, was öffentliche Debatten, Narrative, Aufmerksamkeit, Ursachen und demokratische Resilienz betrifft.
+- Er ist keine zusätzliche Kampagnenseite, sondern eine neue Ordnungsebene innerhalb der bestehenden Website.
+- Leitsatz Der Debatten-Kompass hilft, wenn ein Narrativ schon im Raum steht.
+- Der Resonanz-Kompass hilft, bevor ein Narrativ den Raum übernimmt.
+- Die Resilienz-Prinzipien erklären, wie Öffentlichkeit prüffähig, lernfähig und handlungsfähig bleibt.
+- Baustein Funktion Öffentlicher Kurztext Konkreter Nutzen Öffentlicher Wirkungsraum Dach / Meta-Ebene Debatten verstehen.
+- Debatten-Kompass Antwortqualität Richtig antworten, wenn ein Narrativ schon wirkt.
+- Resonanz-Kompass Aufmerksamkeitsqualität Erkennen, wann Aufmerksamkeit selbst zum Problem wird.
+- Überhitzung, Verdrängung, Resonanzrisiko, bessere Systemfrage.
+- Überhitzte Debatten, blinde Flecken, Systemhebel, Warnsignale.
+- Prinzipien, Alltagsbeispiele, Anwendung, Quellen, Glossar.
+- Verbindliche Codex-Leitentscheidung Keine bestehenden Debatten-Kompass- oder Resonanz-Kompass-Inhalte löschen.
+- Bestehende Website-Komponenten verwenden: Hero, Kartenraster, Badges, Chips, Accordions, Quellenbox, Glossar-Hover, Related-Content-Karten.
+- Keine .md-, Word-, TXT-, RTF- oder Rohdateien öffentlich verlinken.
+- Interne Quellen werden über Online-Kapitel oder geprüfte PDFs mit Mehrwert verlinkt.
+- Der Öffentliche Wirkungsraum ist kein Wahrheitsministerium und keine Meinungskontrolle.
+- Er prüft Wirkpfade, Aufmerksamkeit, Verdrängung, Quellen und Systemfragen.
+- Begriffe wie Wirkungspotenzial, Resonanzraum, Wirkpfad und Wirkungsrisiko präzise nutzen.
+- Informationsarchitektur, Routen und Navigation Die finale Umsetzung soll die bestehende Wirkungsradar-/Debatten-Kompass-Logik nicht zerstören, sondern unter der neuen Dachlogik „Öffentlicher Wirkungsraum“ zusammenführen.
+- Bestehende Links müssen weiter funktionieren.
+- Route Seite Anweisung /wirkungsradar/ oder /oeffentlicher-wirkungsraum/ Dachseite Öffentlicher Wirkungsraum Falls /wirkungsradar/ bereits Traffic hat, dort Dachseite erweitern und /oeffentlicher-wirkungsraum/ als sprechende Route mit Canonical/Redirect lösen.
+- Keine alten Links brechen.
+- /wirkungsradar/live/ Debatten-Kompass / Debattenkarten Bestehende 89 Karten behalten.
+- Quellenlinks und Crosslinks ergänzen.
+- /wirkungsradar/resonanz-kompass/ Resonanz-Kompass Übersicht der Resonanzkarten und Methode zur Aufmerksamkeitsprüfung.
+- /wirkungsradar/agenda-radar/ Agenda-Radar Neue Übersichtsseite für überhitzte Debatten, blinde Flecken, Systemhebel und Warnsignale.
+- /wirkungsradar/ursachen-navigator/ Ursachen-Navigator Neue Übersicht der Ursachen-Seiten.
+- /wirkungsradar/ursachen-navigator/<slug>/ Ursachen-Seite Einzelne Ursache mit Alltagseinstieg, Symptom, Ursache, Wirkpfad, falschen Abkürzungen, Systemhebeln, Crosslinks.
+- /wirkungsradar/methode/ Methode Bestehende Methode erweitern: Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator, Resilienz-Prinzipien sauber unterscheiden.
+- Navigation aus Nutzerperspektive Die Dachseite muss zuerst fragen: Was brauchst du gerade?
+- Dachseite: finale öffentliche Texte 5.1 Hero Titel: Öffentlicher Wirkungsraum Untertitel: Debatten verstehen.
+- Hero-Text: Viele Debatten scheitern nicht erst an falschen Fakten.
+- Der Öffentliche Wirkungsraum zeigt, was ein Narrativ behauptet, warum es Aufmerksamkeit bekommt, welche Ursachen es verdeckt und wie demokratische Öffentlichkeit widerstandsfähiger wird.
+- Nutzerfrage Zielmodul Kacheltext Ich habe eine konkrete Aussage gehört.
+- Debatten-Kompass Wenn ein Satz schon im Raum steht: Was wird behauptet?
+- Resonanz-Kompass Wenn alle über dasselbe reden: Ist das Thema wirklich so wichtig - oder bindet es Aufmerksamkeit, die woanders fehlt?
+- Ich will Debatten widerstandsfähiger machen.
+- Resilienz-Prinzipien Wie bleibt Öffentlichkeit prüffähig, lernfähig und handlungsfähig, auch wenn Empörung, Angst und Manipulation zunehmen?
+- 5.3 Kurzer Erklärblock Der Debatten-Kompass hilft, wenn ein Narrativ schon wirkt.
+- Der Resonanz-Kompass setzt früher an: Er fragt, warum genau dieses Thema so viel Raum bekommt, was es verdrängt und ob die Aufmerksamkeit zu seiner tatsächlichen Wirkung passt.
+- Kurzform: Debatten-Kompass = Antwortqualität.
+- Resonanz-Kompass = Aufmerksamkeitsqualität.
+- Bessere Systemfrage Wie schaffen wir Transformation so, dass Menschen nicht nur Pflichten spüren, sondern Orientierung, Fairness und Handlungsfähigkeit gewinnen?
+- 6.1 Öffentliche Seiten-Copy Titel: Agenda-Radar Untertitel: Welche wichtigen Wirkungsfragen bekommen zu wenig Raum?
+- Kurzer Nutzenblock: Der Agenda-Radar hilft dir, öffentliche Debatten nicht nur nach Lautstärke zu lesen, sondern nach Wirkung.
+- Er zeigt überhitzte Debatten, unterbelichtete Wirkungsfragen, echte Systemhebel und wiederkehrende Ablenkungsmuster.
+- Abschnitt „Überhitzte Debatten“: Themen mit hoher Aufmerksamkeit und verzerrter Wirkungsebene.
+- Quellen, Datenstand, redaktioneller Prüfstatus.
+- Verwandte Inhalte Links zu Debattenkarten, Resonanzkarten, Ursachen-Seiten, Glossar, internen Online-Kapiteln/PDFs.
+- Status sichtbar machen: „redaktionell gewichtet“, „quellengeprüft“, „datenbasiert beobachtet“, „in Aktualisierung“.
+- Medienqualität und algorithmische Erregung unterbelichtet sehr hoch Öffentlichkeit wird anfällig, wenn Sichtbarkeit durch Empörung belohnt wird und Qualität, Quellenklarheit und Korrektur weniger Reichweite bekommen.
+- Wie muss digitale Öffentlichkeit gebaut sein, damit Wahrheit nicht gegen Erregung verliert?
+- Bildung und Zukunftskompetenz unterbelichtet sehr hoch Transformation braucht Menschen, die Systeme verstehen, Quellen prüfen, Wirkung einschätzen und mit Unsicherheit umgehen können.
+- Wie sichern wir Einkommen, Würde und Sozialstaat, wenn Arbeit nicht mehr die Hauptquelle der Wertschöpfung ist?
+- Globale Gerechtigkeit und Systemfolgen unterbelichtet hoch Viele Debatten tun so, als ende Wirkung an der Grenze.
+- Aber wenn Symboldebatten alles überdecken, verdrängen sie Bildung, Medienqualität, Teilhabe und reale Diskriminierungsfragen.
+- Ohne Quellenklarheit werden Bewertungen angreifbar.
+- 7.1 Öffentliche Seiten-Copy Titel: Ursachen-Navigator Untertitel: Vom Stöckchen zur Systemfrage.
+
+## Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx
+
+Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx`
+
+- Wirkungsökonomie.de Debatten-Kompass 2.0 Allumfassende Korrektur der Quellen-, Deeplink- und Verlinkungslogik für bestehende Debatten-Seiten Verbindlicher Auftrag an CodeX Alle bestehenden Debatten-Kompass-Seiten müssen quellenfähig, linkfähig und öffentlich professionell werden.
+- Quellen dürfen nicht nur textuell genannt werden.
+- Jede interne und externe Quelle braucht einen klickbaren, passenden, aktuellen Deeplink.
+- .md-Dateien dürfen grundsätzlich nicht öffentlich verlinkt werden.
+- Interne Quellen werden als Online-Kapitel oder als PDF verlinkt.
+- Platzhalter, interne Arbeitslabels und unprofessionelle Build-Reste dürfen nicht live sichtbar bleiben.
+- Version: CodeX-Umsetzungsbriefing | Status: verbindlich für Debatten-Kompass und Wirkungsradar Inhaltsübersicht 1.
+- Zielbild und Definition of Done 2.
+- Verbindliche Link-Regeln 4.
+- Quellenkomponente und Datenmodell 5.
+- Interne Quellen: Online-Kapitel und PDF-Routing 6.
+- Externe Quellen: Master-Registry und Deeplink-Regeln 7.
+- Kartenmatrix für alle 89 Debattenkarten 8.
+- Glossar- und Hover-Linking 9.
+- QA, Tests und Deployment 10.
+- CodeX-Ausführungsanweisung 1.
+- Zielbild und Definition of Done Kurzformel Der Debatten-Kompass darf nicht wie eine Textsammlung mit Quellenliste wirken.
+- Er muss wie ein sauber redaktionell gepflegtes, quellengebundenes Analysewerkzeug wirken: jede Aussage nachvollziehbar, jede Quelle klickbar, jede Grenze der Quelle sichtbar, jede interne WÖk-Begrifflichkeit als Online-Kapitel oder PDF erreichbar.
+- 1.1 Ziel Alle 89 bestehenden Debattenkarten werden auf Quellen- und Linkqualität geprüft und korrigiert.
+- Jede Quelle im Abschnitt „Quellen“ wird klickbar.
+- Textuelle Nennung ohne Link ist nicht zulässig.
+- Interne Quellen verweisen auf Online-Kapitel der Website oder auf PDF-Downloads.
+- .md-Dateien werden nie öffentlich verlinkt.
+- Externe Quellen verweisen auf exakt relevante Primär-, Behörden-, Forschungs- oder Fachseiten.
+- Homepage-Links sind nur erlaubt, wenn die Quelle selbst eine Index-/Datendrehscheibe ist und der konkrete Datenstand zusätzlich angegeben wird.
+- Jede Quelle erhält eine knappe Aussage: Was belegt diese Quelle?
+- Alle alten internen Arbeitsreste wie „Masterquelle“, „P0 gerettet“, „aus Masterquelle integriert“ oder „### keine“ werden entfernt.
+- 1.2 Definition of Done 0 öffentliche Links mit Endung .md, .docx oder .xlsx.
+- 0 Quellenkarten ohne href, außer bewusst gekennzeichnete interne Hinweise ohne Quellenfunktion; diese dürfen aber nicht im Quellenblock als Quelle erscheinen.
+- 0 sichtbare Platzhalter wie „keine“, „noch prüfen“, „Masterquelle“, „P0 gerettet“, „ausstehend“ auf öffentlichen Live-Karten.
+- 100 % der Debattenkarten haben einen Quellenblock mit verlinkten internen und externen Quellen, sofern externe Faktenquellen verwendet werden.
+- Jede externe Zahl oder Tatsachenbehauptung hat mindestens einen externen Deeplink auf die konkrete Quelle.
+- Jede WÖk-interne Methodikbehauptung hat einen internen Link auf Online-Kapitel oder PDF.
+- Alle Links werden im Staging und nach Deployment automatisch geprüft: 200/3xx erlaubt; 404/500/Timeout sind Release-Blocker.
+- Die Quellenlogik unterstützt Datenstand und letzte Prüfung je Quelle.
+- Befund auf der bestehenden Website Audit-Ergebnis Die Debatten-Seiten sind inhaltlich weitgehend angelegt, aber die Quellenlogik ist nicht live-reif.
+- Es gibt textuelle Quellenlisten ohne klickbare Links, .md-Dateinamen als öffentliche Quellenlabels, teils funktionierende P0-Quellen neben unverbundenen Standardquellen und einzelne Platzhalter wie „keine“.
+- Befund Korrekturauftrag Debattenkarten-Bestand /wirkungsradar/live/ zeigt 89 Debattenkarten aus der redaktionellen Masterquelle.
+- Übersichtsstatus Die Übersicht spricht von geprüften Debattenkarten, während Kartenlabels teilweise „redaktionell geprüft: ausstehend“ zeigen.
+- Statuslogik und Quellenstatus müssen zusammengeführt werden.
+- Interne Arbeitsreste In der Kartenliste erscheinen Formulierungen wie „Migration aus Masterquelle integriert · P0 gerettet“.
+- Unverlinkte Quellen Auf Detailseiten wie „Deutschland nur 2 Prozent?“ werden interne Dateien und externe Quellen textuell aufgelistet, aber nicht als Links geführt.
+- Gemischter Zustand Auf „Migration kostet nur?“ existieren P0-Quellen mit „Quelle öffnen“, aber die allgemeinen internen und externen Quellen davor sind weiterhin nicht verlinkt.
+- Ungültige Platzhalter Auf WÖk-Erklärkarten erscheinen externe Quellen wie „keine“ oder „### keine“.
+- Das ist kein professioneller Quellenblock.
+- Methodenanspruch Die Methodenseite verlangt Quellen, Unsicherheiten und Grenzen der Aussagen.
+- Die technische Umsetzung muss diesen Anspruch auf jeder Karte erfüllen.
+- Verbindliche Link-Regeln 3.1 Harte Verbote Keine öffentlichen hrefs auf Dateien mit Endung .md, .docx, .xlsx, .csv oder lokale Build-Pfade.
+- Keine sichtbaren Dateinamen als Quellenlabel, wenn sie wie interne Arbeitsdateien wirken.
+- Keine Quellenkarte mit „keine“, „### keine“, „noch prüfen“, „redaktionell zu prüfen“, „Masterquelle“ oder ähnlichen Platzhaltern.
+- Keine Links auf allgemeine Homepages, wenn es eine konkrete Studie, Datenseite oder Presseinformation gibt.
+- Keine juristische, medizinische, statistische oder tagesaktuelle Aussage ohne externe Quelle, sofern sie nicht ausschließlich eine WÖk-Modellabgrenzung ist.
+- 3.2 Zulässige interne Linkziele Online-Kapitel: /referenz/...
+- Glossar-/Hover-Ziele: /verstehen/glossar/<begriff>/ oder ein zentrales Glossar mit Anchors.
+- PDF-Downloads: ausschließlich stabil veröffentlichte PDF-Dateien unter /downloads/ oder /bibliothek/ mit sauberem Titel und Metadaten.
+- Bibliothekseinträge: Eine Publikationsseite mit Abstract, Status, Stand, Download-PDF und Zitierhinweis ist besser als ein direkter PDF-Link.
+- 3.3 Zulässige externe Linkziele Offizielle Institutionen: UN, IPCC, EU, UBA, Destatis, BA, IAB, OECD, IEA, WHO, FAO, Bundesverfassungsgericht, Bundesbank, BMZ, BFV.
+- Forschungseinrichtungen und Fachquellen: Fraunhofer, ICCT, Global Carbon Project, JRC/EDGAR.
+- Direkte Studie, Bericht, Datensatz, Presseinformation oder offizielles Thema.
+- Externe Links müssen die relevante Aussage tatsächlich tragen.
+- Quellenkomponente und Datenmodell Komponenten-Contract CodeX soll eine einheitliche DebattenSourceCard-Komponente bauen und alle bisherigen Quellenlisten ersetzen.
+- Die Komponente muss maschinenprüfbar sein und darf keine freien Text-Platzhalter akzeptieren.
+- 4.1 Public UI der Quellenkarte Titel der Quelle als klickbarer Link.
+- Badge: Interne WÖk-Quelle, Online-Kapitel, PDF, externe Primärquelle, externe Fachquelle, Datensatz.
+- Kurzsatz „Belegt hier:“ - was diese Quelle für diese Karte konkret trägt.
+- Kurzsatz „Grenze:“ - was aus dieser Quelle nicht folgt.
+- Datenstand / Veröffentlichungsstand / letzte Prüfung.
+- Optional: „In dieser Karte genutzt für:“ Faktenlage, Wirkpfad, Folgencheck, Methodik, Glossar.
+- 4.2 Datenmodell type DebattenSource = { id: string; label: string; sourceType: 'internal_html' | 'internal_pdf' | 'external_html' | 'external_pdf' | 'dataset'; href: string; proofStatement: string; limitation: string; dataStatus?: string; lastChecked: string; usedFor: Array<'faktenlage' | 'wirkpfad' | 'folgencheck' | 'methodik' | 'glossar'>; canonical?: boolean; }; 4.3 Validierungsregeln href ist Pflicht.
+- proofStatement und limitation sind Pflichtfelder und dürfen nicht aus generischen Floskeln bestehen.
+- sourceType internal_pdf muss mit .pdf enden.
+- sourceType internal_html muss mit / beginnen und darf keine Dateiendung tragen.
+- Interne Quellen: Online-Kapitel und PDF-Routing Wichtig Die interne Quelle darf nicht wie ein Dateisystem wirken.
+- .md-Dateien sind Arbeitsformat, keine öffentliche Quelle.
+- ID Öffentliches Label Primäres Online-Ziel PDF-Ziel Hinweis I-BEG Führender Begriffsleitfaden der Wirkungsökonomie HTML muss angelegt werden: /verstehen/begriffsleitfaden/ oder /referenz/begriffsleitfaden/ /downloads/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf Nie .md verlinken.
+- I-WOHL Die neue Ordnung des Wohlstands - Online-Referenz /referenz/ oder /referenz/neue-ordnung-des-wohlstands/ mit Kapitel-Ankern /downloads/Natalie-Weber_Die-neue-Ordnung-des-Wohlstands_2026.pdf Für Debatten zu Wirkung, Wirkungspotenzial, Öffentlichkeit, Demokratie und Systempfaden exakt auf Kapitel/Anker verlinken.
+- I-SYS Systemmodell der Wirkungsökonomie /referenz/systemmodell-der-wirkungsoekonomie/ /downloads/Systemmodell-der-Wirkungsoekonomie.pdf Interne Systemarchitektur; nicht als lose PDF ohne Kontext führen.
+- Sie ist eine Systemarchitektur /referenz/nachhaltigkeit-als-systemarchitektur/ /downloads/Nachhaltigkeit-Systemarchitektur.pdf Für Nachhaltigkeit, ESG, Komplexität, Wirkungsarchitektur.
+- I-WSTG Working-Paper Wirkungssteuergesetz (WStG) /referenz/wirkungssteuergesetz-wstg/ /downloads/WStG_Oktober2025.pdf Als Modell/Working Paper kennzeichnen, nicht als geltendes Recht.
+- I-WUSTG Technische Leitlinien zum Wirkungssteuergesetz (WUStG) /referenz/technische-leitlinien-wustg/ /downloads/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf Methodik, Scorecards, Daten, Prüfstandards.
+
+## Wirkungsoekonomie_Glossar_Korrektur_Codex.docx
+
+Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonomie_Glossar_Korrektur_Codex.docx`
+
+- WIRKUNGSÖKONOMIE Glossar 2.0: öffentliche Härtung, Quellenlogik und Template-Korrektur Umfassende Korrektur- und Umsetzungsanweisung für CodeX Stand: 5.
+- Juni 2026 · Ziel: professionelle öffentliche Glossarseiten ohne interne Artefakte Nicht verhandelbares Ziel Alle Glossarbegriffe bleiben erhalten.
+- Korrigiert werden Template, Metadaten, Quellenbezug, Linklogik, leere Blöcke, Tonalität und redaktionelle Qualität.
+- Dieses Dokument ist eine interne CodeX-Anweisung und darf nicht öffentlich auf der Website verlinkt werden.
+- Auftrag und Zielbild 2.
+- Live-Befund: Fehlerklassen auf Glossar-Seiten 3.
+- Harte öffentliche Regeln für alle Glossar-Einträge 4.
+- Neuer Template-Contract für Glossar-Seiten 5.
+- Quellen- und Link-Hygiene 8.
+- Batch-Umsetzung für alle Glossarbegriffe 11.
+- Abschlussbericht und Deployment-Regel 1.
+- Auftrag und Zielbild CodeX soll alle öffentlichen Glossar-Einträge unter /begriffe/ prüfen, korrigieren und in ein professionelles, einheitliches, redaktionell tragfähiges Glossar-Template überführen.
+- Der aktuelle Fehler ist nicht der Inhalt der Begriffe an sich, sondern die Vermischung aus öffentlichem Glossar, interner Content-Architektur, unfertigen Datenfeldern, Roh-Metadaten und teilweise generischen Textbausteinen.
+- Das Glossar soll künftig wie ein sauber redigiertes öffentliches Wissenssystem wirken: klar, lesbar, fachlich belastbar, quellenfähig, nutzerfreundlich und ohne sichtbare interne Arbeitslogik.
+- Leitprinzip Nicht weniger Inhalt, sondern bessere öffentliche Form: Begriffe bleiben erhalten; falsche Template-Blöcke, leere Felder, interne Status, Rohdatenlabels, ungeprüfte Quellen und generische Wiederholungstexte verschwinden aus der öffentlichen Ausgabe.
+- 1.1 Was nach der Korrektur verstanden werden muss Was bedeutet der Begriff in einfacher, präziser Sprache?
+- Wie wird der Begriff in WÖk-Texten, Debatten, Methoden, Werkzeugen oder Online-Kapiteln verwendet?
+- Welche Quellen definieren, vertiefen, kontextualisieren oder nur erwähnen den Begriff?
+- Welche Links führen auf öffentliche Online-Kapitel oder geprüfte PDF-Dokumente mit Mehrwert?
+- 1.2 Verbindlicher Begriffsrahmen Alle WÖk-Kernbegriffe müssen auf den führenden Begriffsleitfaden ausgerichtet werden: Wirkung ist neutral und relational; Wirkung beschreibt tatsächliche Zustandsveränderung; positive oder negative Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.
+- Wichtig: Diese begriffliche Präzision gilt für öffentliche Glossarseiten.
+- Ältere interne Dateien können frühere, ungenauere Begriffsverwendungen enthalten und dürfen nicht ungeprüft als öffentliche Glossarlogik durchgereicht werden.
+- Live-Befund: Fehlerklassen auf Glossar-Seiten Das Beispiel https://wirkungsoekonomie.de/begriffe/staat/ zeigt mehrere grundsätzliche Template- und Datenfehler, die vermutlich nicht nur diesen Begriff betreffen.
+- CodeX muss deshalb nicht nur die Seite „Staat“, sondern alle Glossar-Detailseiten und die Glossar-Indexlogik prüfen.
+- Unpassender Debattenblock Der oberste Block „Vom Begriff zur Debatte – Wie diese Logik in öffentlichen Debatten wirkt“ hat auf normalen Glossarbegriffen nichts verloren.
+- Er gehört nicht in das Standard-Glossar-Template.
+- Das erklärt nicht den Begriff Staat und wirkt wie ein falscher Template-Fill.
+- Verwendung muss konkret erklären, wie genau dieser Begriff auf der Website genutzt wird.
+- Öffentlich muss ein verständlicher Bezug erscheinen, z.
+- Unpassende Quellen Beim Begriff „Staat“ erscheinen Quellen zu Faschismus / faschistoid / Autokratie.
+- Diese können bei „Faschismus“, „Autoritarismus“ oder „Staatsdelegitimierung“ sinnvoll sein, aber nicht als Quellenbasis für „Staat“.
+- Interne Arbeitsquellen sichtbar Bezeichnungen wie „Glossar-Architektur Wirkmechanismen“, „redaktionelle Glossarquelle“, „interne Arbeitsgrundlage“ gehören nicht in öffentliche Quellenkarten.
+- Grundsatz Keine Glossarseite darf roh aus der Datenbank wirken.
+- Das öffentliche Glossar ist redaktionelle Oberfläche, nicht Daten-Dump.
+- Harte öffentliche Regeln für alle Glossar-Einträge 1.
+- „published“, „draft“, „professionalisiert“, „redaktionell zu prüfen“, „No-Delete“, „Aktualisiert durch: codex“, „Glossar-Pack“, „Source-Hash“, „Import-Version“, „Reviewstatus“ und ähnliche interne Felder dürfen öffentlich nicht sichtbar sein.
+- „Keine Einträge“, „keine“, „null“, „undefined“, „defined“, „n/a“, „TBD“, „kommt noch“, „in Vorbereitung“, „zu prüfen“ oder Platzhaltertexte dürfen nie als sichtbarer Seiteninhalt gerendert werden.
+- Empty states sind im Admin erlaubt, nicht auf öffentlichen Seiten.
+- Kein .md-Link, kein Word-Link, kein RTF-, TXT-, CSV- oder Rohdatenlink auf öffentlichen Glossarseiten.
+- Öffentliche Verlinkung erfolgt auf Online-Kapitel, öffentliche Website-Seiten oder geprüfte PDFs mit Mehrwert.
+- Interne Quellen dürfen nicht als „interne Quelle“ sichtbar werden.
+- Wenn der Inhalt öffentlich ist, Link auf Online-Kapitel oder PDF; wenn nicht öffentlich, nicht verlinken und nicht nennen.
+- Quellenkarten müssen immer einen klickbaren Link haben, wenn sie öffentlich angezeigt werden.
+- Reine Textquellen ohne Link sind nur bei klassischen Buchquellen erlaubt und dann sauber bibliografisch zu formulieren.
+- Jeder Begriff muss erklären, was genau gemeint ist und was nicht gemeint ist.
+- Der Debattenbezug ist optional und kein Standardblock.
+- Er erscheint nur, wenn der Begriff tatsächlich ein Debattenbegriff, Narrativbegriff, Framingbegriff oder politisch missbrauchbarer Anschlussbegriff ist.
+- ist besondere Quellen- und Tonalitätsprüfung zu geben.
+- Neuer Template-Contract für Glossar-Seiten CodeX muss das Glossar-Template so umbauen, dass öffentliche Seiten nicht länger Datenbankfelder abbilden, sondern eine fachlich redigierte Begriffserklärung ausgeben.
+- Auf einen Blick Maximal drei bis fünf bullets oder ein kurzer Absatz: Was muss man sofort verstehen?
+- So wird der Begriff genutzt Konkrete Verwendung im WÖk-System: in welchem Kontext, mit welcher Abgrenzung, in welchen Seiten/Tools/Kapiteln.
+- Jeder Eintrag verlinkt auf eine öffentliche Begriffseite, sofern vorhanden.
+- Nicht jeder Begriff braucht Mythos/Debattenlogik.
+- Quellen und Vertiefungen Öffentliche Online-Kapitel, Wirkungsfeldseiten, Journalartikel, PDFs und externe Fachquellen mit konkretem Bezug.
+- Keine internen Quellenlabels, keine Datenbank-Rohwerte.
+- Rendering-Regel Ein Block ist kein Pflichtblock.
+- Pflicht ist die redaktionelle Qualität.
+- Die öffentliche Ausgabe muss aber eine klare Whitelist nutzen.
+- review_status Nein Nicht öffentlich im Glossar.
+- Wenn Qualität unklar ist, Seite nicht als endgültig bewerben.
+- updated_by / codex Nein Nie öffentlich.
+- related_terms Ja Aber kuratiert und verlinkt.
+- sources Ja, bereinigt Nur öffentliche Quellen mit korrektem Bezug und Linklogik.
+- Korrekte Bezug-Logik statt raw enums wie defined „Bezug“ muss öffentlich verständlich sein.
+- CodeX muss eine zentrale Mapping-Funktion verwenden und zugleich die inhaltliche Passung prüfen.
+- Interner Wert Öffentlicher Text Bedingung defined Definiert den Begriff Nur wenn die Quelle den Begriff tatsächlich definiert oder begrifflich maßgeblich ist.
+- strong Direkte Vertiefung Quelle erklärt den Begriff oder seine Anwendung ausführlich, definiert ihn aber nicht zwingend.
+- used Systematisch verwendet Der Begriff wird dort relevant genutzt, ohne dass die Quelle die Hauptdefinition liefert.
+- context Kontext Quelle liefert Hintergrund, aber keinen Definitionsstatus.
+- compare Abgrenzung / Vergleich Quelle hilft, den Begriff von ähnlichen Begriffen zu trennen.
+- source Quellenbasis Nur für echte Primär-, Norm- oder Fachquellen, nicht für interne Rohnotizen.
+- primary Primärquelle Bei Gesetzen, offiziellen Institutionen, Normen, Originalwerken oder offiziellen Datenquellen.
+- external_fact Faktenquelle Für externe Zahlen, Berichte, empirische Grundlagen oder offizielle Daten.
+- internal_reference WÖk-Referenz Nur wenn die Quelle öffentlich als Online-Kapitel oder PDF verfügbar ist; nicht als „interne Quelle“ anzeigen.
+- Wichtig Bei jedem Quellenlink muss CodeX nicht nur den raw-Bezug übersetzen, sondern prüfen, ob der Bezug inhaltlich stimmt.
+- Ein Staat-Artikel ist keine Quelle für Faschismus, und eine Faschismus-Quelle ist keine Quelle für den Grundbegriff Staat.
+- Quellen- und Link-Hygiene Die Quellenblöcke sind derzeit an mehreren Stellen textuell vorhanden, aber nicht sauber genug als öffentliche Quellenarchitektur.
+- Für Glossarseiten gelten dieselben Linkregeln wie für Debatten-Kompass-Seiten: genau, klickbar, öffentlich, sinnvoll und ohne Rohdateien.
+- Interne WÖk-Quellen verlinken auf das jeweilige öffentliche Online-Kapitel, die öffentliche Wirkungsfeldseite, die öffentliche Bibliotheksseite oder ein geprüftes öffentliches PDF.
+- Nie auf .md-Dateien verlinken.
+
+## Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx
+
+Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx`
+
+- CodeX-Briefing Wirkungsoekonomie.de Professionalitäts-, Link- und Download-Härtung der gesamten Website Interne Artefakte entfernen · KI-Anstrich beseitigen · öffentliche Redaktion stärken · PDFs und Quellen sauber führen Nicht verhandelbarer Auftrag Alle öffentlich erreichbaren Seiten, Komponenten, Downloads, PDFs, Suchindizes, Sitemaps, Feed-Ausgaben und Metadaten werden so bereinigt, dass sie wie eine professionelle redaktionelle Website wirken.
+- Es darf öffentlich nichts erscheinen, was nach interner Arbeitsnotiz, Importpipeline, CodeX-/KI-Anweisung, Promptrest, provisorischem Deployment, technischer Quelle, unfertiger Platzhalterseite oder unredigiertem Rohimport aussieht.
+- Juni 2026 · Ziel: Website 2.0 öffentlich belastbar machen Inhaltsübersicht 1.
+- Executive Summary für CodeX 2.
+- Link- und Download-Härtung 8.
+- Wirkungsökonomischer Mindeststandard je Seite 12.
+- Template-Korrekturen nach Seitentyp 13.
+- Debatten-Kompass: Quellen, Ton und Wirkungslogik 14.
+- Konkrete Korrekturbeispiele aus der Live-Struktur 15.
+- Abnahmebericht und Deployment-Gate 1.
+- Executive Summary für CodeX Zielbild Die Website soll nach guter redaktioneller Arbeit aussehen: ruhig, präzise, menschlich, quellenklar, nachvollziehbar, ohne technische Nähte und ohne generische KI-Anmutung.
+- Jede Seite muss eine echte Funktion erfüllen: Orientierung, Erklärung, Referenz, Debatte, Demo, Download oder Mitmachpfad.
+- Importstatus, Source-Hashes, Dateinamen, technische Versionen, Absatzzählungen und Pipeline-Hinweise gehören nicht auf öffentliche Leseseiten.
+- Seiten, Karten oder Komponenten mit „kommt noch“, „in Vorbereitung“, „Phase 2“, „ausstehend“ ohne Mehrwert oder ähnlichen Signalen werden nicht öffentlich angezeigt.
+- Keine öffentlichen .md- oder Word-Links.
+- Öffentliche Links führen auf Online-Kapitel oder PDFs mit Mehrwert.
+- Für alle nicht-wissenschaftlichen Seiten gilt: erst Alltag, dann Begriff; erst Beispiel, dann Systemlogik; erst Nutzerfrage, dann Methode.
+- Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie; positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet.
+- Dieser Rahmen ist auf allen Seiten, in Hover-Definitionen und Quellenboxen konsistent umzusetzen.
+- CodeX muss die gesamte Website automatisch und manuell gegen diese Klassen prüfen.
+- Risikoklasse Live-Indiz / Beispiel Warum kritisch Zielzustand Interne Quellen-/Dateinamen sichtbar Begriffsseiten zeigen Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0 und redaktionelle Arbeitsgrundlage.
+- Für externe Leser:innen wirkt das wie ein Blick in die Werkstatt und nicht wie eine kuratierte Quelle.
+- Außerdem dürfen .md-Dateien grundsätzlich nicht öffentlich verlinkt werden.
+- Technische Importmetadaten öffentlich Dokumentseiten zeigen Source-Version, Import-Version, Live-Reference-Version, Reviewstatus, Terminologiebasis, Source-Hash, Absätze/Textblöcke.
+- Öffentlich nur: Titel, Kurzbeschreibung, Autorin, Stand, Status, zitierfähige PDF-Fassung, Onlinefassung, Quellen.
+- Das ist interne Produktionssprache und schwächt Vertrauen in die Seite.
+- Word-Downloads öffentlich Einzelne Detailkonzepte verweisen auf PDF und DOCX.
+- Das ist ein harter Vertrauensbruch: Es zeigt KI-/Arbeitsprozess statt Autorinnenschaft und redaktioneller Prüfung.
+- PDFs neu generieren, Text extrahieren, Prompt-/Chatreste entfernen, Metadaten säubern, neu verlinken.
+- Ein Tool oder Inhalt soll erst sichtbar sein, wenn er eine klare Funktion hat.
+- okay, als öffentliche Seite nicht.
+- Konkrete Beobachtung, Beispiel, Wirkpfad, Folgencheck, Schutzgrenze, Quellen.
+- Jede öffentliche Seite beantwortet klar: Für wen ist diese Seite?
+- Keine sichtbaren Links auf .md, .doc, .docx, .rtf, .txt, interne Repositories, lokale Pfade, Upload-IDs, Hashes, Word-Exports oder Arbeitsdateien.
+- Nur PDFs mit eigenem Mehrwert werden öffentlich verlinkt: sauber gesetzt, aktuell eingeordnet, ohne Kommentare, ohne Änderungsverfolgung, ohne KI-/Promptreste, ohne interne Arbeitsnotizen.
+- Keine Seite darf wie ein KI-Output aussehen.
+- Wiederholte Textmuster, generische Floskeln, austauschbare Einleitungen und mechanische Abschnittslogik werden gezielt umgeschrieben.
+- Bei öffentlichen Erklärseiten gilt das Armin-Maiwald-Prinzip: ein nachvollziehbares Bild aus dem Alltag führt zur Systemlogik.
+- Fachseiten dürfen präzise und lang sein, müssen aber einen verständlichen Einstieg, Status, Quellen und Grenzen enthalten.
+- Debatten-, Medien- und Narrativseiten unterscheiden zwischen Faktencheck, Frameanalyse, Wirkpfad, Wirkungspotenzial, Wirkungsrisiko und Wirkungsnachweis.
+- Vor Deployment muss der Crawl null Treffer für harte öffentliche Verbotsmuster liefern.
+- Vollständiger Audit-Scope Crawl-Pflicht CodeX darf nicht nur die Hauptnavigation prüfen.
+- Geprüft werden müssen alle öffentlich erreichbaren URLs, alle statisch generierten Seiten, alle dynamischen Routen, die Sitemap, die Suche, PDF-Downloads, RSS/JSON-Feeds, Metadaten, OpenGraph-Texte und alle Links in Karten, Footer, Quellenboxen und Downloadbereichen.
+- Bereich Zu prüfen HTML-Seiten Alle Routen aus Sitemap, interner Navigation, Suchindex, Linkgraph, statischen Exporten und alten Redirects.
+- Komponenten Header, Footer, Karten, Statusbadges, Quellenboxen, Downloadleisten, Glossar-Hover, Suchergebnisse, Audio-Transkripte, Tool-Module.
+- Debatten-Kompass Alle Debattenkarten, Themencluster, Playbooks, Narrativbibliothek, Methode, Quellenblöcke, verwandte Inhalte, Einreichungsseite.
+- Referenz / Online-Buch Alle Kapitel, Kapitel-Navigator, Quellen, Glossarbezüge, Zitierfunktion, Druckansicht, technische Versionsdaten.
+- Dokumentenregistry Alle Dokumentseiten, Webfassungen, PDF-Links, Status, Volltextimporte, Archivseiten, Download-Buttons.
+- Glossar / Begriffe Alle Begriffsseiten, Quellenblöcke, Verwandte-Begriffe-Links, Online-Kapitel-Links, Hover-Texte, Suchseiten.
+- Werkzeuge / Demos Alle Tools, Rechner, Demos, Modellseiten, Statushinweise, Disclaimer, Labor-/Werkstattkennzeichnungen.
+- Bibliothek / Journal Artikel, alte Blog-/Journalpfade, ältere Templates, Archivseiten, Weiterleitungen, Social-Meta.
+- Downloads PDFs, Bilder, Audio, Transkripte, alte Word-/Markdown-/Text-Downloads, Upload-Pfade, Downloadnamen, Dateimetadaten.
+- Er erhält eine passende Rolle: überarbeitete öffentliche Seite, Referenzseite, PDF-Archiv, Werkstatt/Labor oder interne Redaktionsquelle.
+- Beschreibung Pflichtformat Public Explainer Ja Einstiegs- und Erklärseite für Bürger:innen, Medien, Politik, Unternehmen oder Erstbesucher:innen.
+- Alltagseinstieg, kurze Sätze, Beispiel, Wirkpfad, Folgencheck, Quellen.
+- Kapitelanker, Quellen, Glossarlinks, PDF nur ergänzend, technische Details minimiert.
+- Public Document Ja Kuratiertes Dokument mit Kurzfassung und PDF-Download.
+- Kurze Archiv-Einordnung, PDF, keine prominent gerankte Rohtextseite.
+- Internal Editorial Source Nein Markdown, Word, Rohdaten, CodeX-Anweisungen, Importlogs, Source-Hashes, Promptnotizen.
+- Hidden / Deprecated Nein oder Redirect Nicht mehr gültige Pfade, alte Templates, Testseiten.
+- Harte Entfernen-/Ersetzen-Regeln Öffentlich verboten Beispiele / Muster Korrektur Interne Import- und Buildsprache Source-Version, Import-Version, Live-Reference-Version, Web-Version, Source-Hash, Absätze/Textblöcke, partially-delta-reviewed, technische Versionsdaten anzeigen Nur intern speichern.
+- Platzhalter kommt noch, in Vorbereitung, wird geladen, folgt, Phase 2, redaktionell ausstehend, Quellen werden geprüft Komponente ausblenden oder vollständige, redaktionelle Statusbox mit Mehrwert.
+- KI-/Chat-/Promptreste Möchtest du, dass ich..., Ich kann jetzt..., Prompt, ChatGPT, OpenAI, CodeX, KI-Anweisung, System Prompt, User Prompt Text/Datei neu redigieren und Quelle/Autorinnenschaft sauber darstellen.
+- Projektmanagementreste TODO, TBD, FIXME, P0, P1, gerettet, Masterquelle, Rettung, temporary, draft copy, final_final, test, dummy Nicht öffentlich.
+- Öffentliche Arbeitsdatei-Links .md, .doc, .docx, .rtf, .txt, .xlsx, interne repo paths, lokale Pfade, go-x/u ohne sprechenden Download Nur Online-Kapitel oder bereinigte PDFs mit sprechendem Dateinamen.
+- Unprofessionelle UI-Reste [Button:], „Drucken“ als Textrest, doppelte Navigationsblöcke, sichtbare Pfade, kaputte Umlaute, Markdown-Fragmente Template korrigieren, UI-Text sauber rendern, Navigation prüfen.
+- Unredigierte Quell-URLs im Fließtext lange rohe URLs mitten im Satz oder Folienimport Quellenbox mit Titel, Herausgeber, Jahr/Stand, Deeplink, Belegt hier, Grenze.
+- Seiten über KI, Digitalisierung oder KI-Wirkungsrisiken dürfen den Begriff verwenden.
+- Ebenso ist „Entwurf“ im Labor-/Werkstattstatus erlaubt, aber nicht als unkommentierter Baustellenhinweis auf Hauptseiten.
+- Link- und Download-Härtung Interne Quellen: Wenn auf WÖk-Begriffe, Kapitel oder Grundlagen verwiesen wird, führt der Link auf ein Online-Kapitel, eine Begriffseite oder eine bereinigte PDF-Fassung.
+- Externe Quellen: Fakten, Daten und Zahlen erhalten Deeplinks auf die konkrete Primärquelle oder belastbare Fachquelle.
+- Nicht nur Institutionen nennen, sondern die konkrete Seite, Studie, Tabelle oder Datenbank.
+- PDF-Downloads: Nur PDFs mit Mehrwert öffentlich.
+- PDF-Linktext muss sprechend sein: „PDF: Leitbild für Mensch, Planet und Demokratie (Stand Oktober 2025)“ statt „Herunterladen“ allein.
+- Word-Dateien: Keine öffentlichen DOC/DOCX-Links.
+- Bestehende Word-Downloads werden in PDFs umgewandelt und die Word-Dateien aus Sitemap, HTML und Suchindex entfernt.
+- Markdown-Dateien: Keine öffentlichen .md-Links und keine sichtbaren .md-Dateinamen in Quellenboxen, Glossar oder Metadaten.
+- Linktext: Kein „hier“, „mehr“, „Download“ ohne Kontext.
+- Linktexte müssen für Screenreader und Suchmaschinen aussagekräftig sein.
+- Deep-Link-Pflicht: Quellen auf Kapitel, Abschnitt, Tabelle oder Datenpunkt verlinken, soweit verfügbar.
+
+## Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx
+
+Pfad: `/Users/hagen/Desktop/WÖk-Konzepte etc/Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx`
+
+- Webseitenanalyse wirkungsoekonomie.de Styleguide-, Struktur-, Inhalts- und Dokumentenprüfung Codex-taugliches Korrekturreporting Stand der Prüfung: 04.06.2026 Prüfobjekt: https://wirkungsoekonomie.de/ und verlinkte Seitentypen Kurzfazit: Die neue Website hat einen deutlich tragfähigeren Kern als die alten Seiten.
+- Die Grundlogik „Wirkung statt Kapital“, „Mensch, Planet und Demokratie“ und die begriffliche Präzisierung sind auf den Hauptseiten erkennbar.
+- Vor einer final stabilen Veröffentlichung müssen jedoch mehrere P0-Themen korrigiert werden: einheitliche Navigation/Site-Shell, Altseiten, Online-Dokument-Inhaltsverzeichnisse, Kapitelanker, Encoding/Umlaute, Generierungsartefakte und Dubletten.
+- Prüfrahmen und Bewertungsmaßstab Ziel der Analyse.
+- Die Website wurde als publizistisches, fachliches und methodisches Eingangstor der Wirkungsökonomie geprüft.
+- Der Bericht ist so formuliert, dass Codex daraus direkte Korrekturaufträge, Akzeptanztests und Prioritäten ableiten kann.
+- Prüfgrundlage.
+- Geprüft wurde gegen den sichtbaren Online-Standard der neuen Seite, gegen allgemeine Web- und Content-Qualitätskriterien sowie gegen die führende WÖk-Begriffslogik: Wirkung ist neutral und relational; positive Wirkung ist am Rahmen SDGs/Agenda 2030/SDG+ zu bewerten; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie; Wirkungspotenzial darf nicht als eingetretene Wirkung formuliert werden; Rückkopplung muss von Reporting getrennt bleiben.
+- Die Analyse erfolgte über Live-Webseitenaufrufe und auslesbaren gerenderten Text/Struktur.
+- Sie ersetzt keine pixelgenaue Browser-/Breakpoint-Prüfung mit Playwright, Lighthouse oder Percy.
+- Genau diese technische CSS-QA ist deshalb als Codex-Abnahmeschritt enthalten.
+- Executive Summary Die Hauptseiten Start, Verstehen und So wirkt WÖk transportieren die Grundphilosophie überzeugend: Kapital bleibt Werkzeug, Wirkung wird Steuerungsmaßstab, positive Netto-Wirkung ist Zielgröße.
+- Die Seitenstruktur ist grundsätzlich sinnvoll: Start → Verstehen → Funktionsweise → Wirkungsfelder → Werkzeuge → Erleben → Akademie → Bibliothek → Mitmachen.
+- Die größten Risiken liegen nicht im Grundnarrativ, sondern in Generierungs- und Migrationsproblemen: alte Seiten sind weiter erreichbar, einzelne Seitentypen verwenden andere Navigation, Dokumente haben page-only oder fehlerhafte Inhaltsverzeichnisse, sichtbare Labels enthalten ASCII-Umlaute, und einige Textblöcke/Listen wirken zusammengezogen.
+- Für die Bibliothek und Onlinefassungen muss ein harter Standard gelten: jedes relevante Dokument braucht eine eindeutige Detailseite, eine Onlinefassung oder klaren Status „Onlinefassung in Vorbereitung“, eine semantische Inhaltsstruktur, Kapitel-/Abschnittsanker und konsistente Metadaten.
+- Kritisch sind vor allem Seiten, auf denen umfangreiche generierte Detailkonzepte oder Dossiers mit wiederholten Mustern erscheinen.
+- P0-Blocker vor finaler Freigabe P0-01 · P0 · Einheitliche Site-Shell und Navigation fehlen Befund / Beleg: Die neue Hauptnavigation ist auf der Startseite vollständig.
+- Die Bibliothek und Referenz-/Kapitel-Seiten verwenden abweichende Menüs; die alte WÖK-Journal-Seite ist mit alter Navigation, altem Cookie-/Trackingtext und alter Struktur noch erreichbar.
+- Codex-Auftrag: Eine einzige Header-/Footer-Komponente für alle Routen einsetzen.
+- Alle statischen HTML-Seiten, Referenzseiten, Dokumentdetailseiten, Blog/Journalseiten und Redirect-Stubs müssen dieselbe Navigation verwenden.
+- Alte Seiten 301-redirecten oder noindex setzen.
+- Abnahmekriterien: Snapshot-Test: Header-Linkliste ist auf allen geprüften Routengruppen identisch bis auf aktiven Zustand.
+- Keine Seite zeigt altes Menü, alte IONOS-/Cookie-Texte oder alte „Startseite/Funktionsweise/Über die WÖk“-Navigation.
+- P0-02 · P0 · Online-Dokumente haben page-only oder fehlerhafte Inhaltsverzeichnisse Befund / Beleg: Mehrere Onlinefassungen zeigen nur „Seite 1, Seite 2 …“ statt semantischer Kapitel/Abschnitte.
+- Beim WStG ist dies besonders kritisch: Die Bibliothek nennt 146 Seiten, die Onlinefassung zeigt oben nur Seite 1–12.
+- Codex-Auftrag: Dokumentenrenderer umbauen: Überschriften, §§, Kapitel, Unterkapitel und Tabellen semantisch erkennen und eigene Anker erzeugen.
+- PDF-Seitenanker dürfen nur sekundär als „PDF-Seitenmapping“ erscheinen.
+- TOC enthält semantische Überschriften, nicht nur Seiten.
+- Alle H2/H3/§ besitzen stabile IDs und sind per Link erreichbar.
+- Das ist besonders problematisch, weil die Website begriffliche Präzision und sprachliche Sorgfalt ausstrahlen muss.
+- Codex-Auftrag: Display-Label-Layer strikt von Slugs/Dateinamen trennen.
+- Abnahmekriterien: Automatischer Texttest läuft über alle Seiten: keine sichtbaren „fachoeffentlich“, „wirkungsoekonomisch“, „Pruef“, „scha`“, „E`ekt“, „Oeffentlichkeit“ außerhalb von URLs/Dateinamen/Quellpfaden.
+- P0-04 · P0 · Zusammengezogene Filter, Tags, Links und Markup-Reste Befund / Beleg: In der Bibliothek sind Filter/Chips und Kategorien in der Textstruktur zusammengezogen.
+- Auf der Werkzeugseite erscheint ein gerenderter HTML-/Markup-Rest mit `">`.
+- Mehrfach fehlen Abstände zwischen Linktext und nachfolgendem Text oder Zitier-/Linkelementen.
+- Codex-Auftrag: Alle Chip-/Tag-/Filter-Komponenten müssen durch Layout-Komponenten mit gap/wrap gerendert werden; keine String-Konkatenation.
+- HTML/Markdown-Sanitizer für Kartentexte und Linklisten.
+- Abnahmekriterien: Automatisierter DOM-Test: kein sichtbarer Text enthält `">`, `</`, zusammengezogene Linktexte ohne Trennzeichen oder Chip-Ketten ohne Leerzeichen.
+- P0-05 · P0 · Aktive Altseiten und Dubletten gefährden Vertrauen und SEO Befund / Beleg: Alte WÖK-Journal-Seite und Redirect-Stubs sind auffindbar.
+- Suchergebnisse zeigen außerdem Detailseiten mit offenbar wiederholten Templateblöcken, z.
+- Gesundheits-/Pflege-Detailkonzepte, Finanzsystem-Dossiers und Robotik-/Mitbestimmungsseiten.
+- Codex-Auftrag: Legacy-Inventar erzeugen, kanonische Zielseiten definieren, 301/noindex setzen und alle alten Navigations-/Cookie-/Theme-Artefakte entfernen.
+- Dedupe-Prüfung für Textblöcke auf Seitentypen mit generierten Konzepten ausführen.
+- Abnahmekriterien: Sitemap enthält nur kanonische Seiten.
+- Dedupe-Test markiert keine Seite mit wiederholten Abschnittsblöcken über definierter Ähnlichkeitsschwelle.
+- Kritisch sind dichte Filterleisten, lange Inline-Listen und Seitentypen mit vielen Karten.
+- Abstände und Lesefluss: Hauptseiten sind gut lesbar, aber Bibliothek, Akademie, Werkzeuge und Referenznavigation wirken an mehreren Stellen zu verdichtet.
+- Vorgabe: klare Section-Spacings, keine doppelten Überschriften direkt hintereinander, Linklisten mit Zeilenumbruch oder Semikolon/Divider.
+- Vorgabe: gruppierte Footer-Navigation mit konsistenten Spalten und genügend Abstand; keine Linkketten ohne Trennung.
+- Seitenanalyse nach Seitentyp 5.1 Startseite / Kurzurteil: Stark und grundsätzlich launchfähig, mit kleinen UX- und CTA-Korrekturen.
+- Footer und Kartenbereiche sind umfangreich; bei kleinen Breakpoints sollte geprüft werden, ob zu viele Karten oder Footerlinks zu dicht stehen.
+- Glossar-Hover/Tooltip nur mit den führenden Kurzdefinitionen verwenden.
+- Seite als Referenz für alle anderen Begriffserklärungen nutzen.
+- 5.3 So wirkt WÖk Kurzurteil: Starker methodischer Kern; als Funktionsseite tragfähig.
+- Der Begriff „Wirkstoff“ wird didaktisch eingesetzt; dabei muss der Analogiehinweis überall erhalten bleiben.
+- Korrektur / Umsetzung: Alle Mini-Glossar-Begriffe mit stabilen Ankern versehen.
+- Interne Links zu Werkzeuge, Glossar, Folgencheck und Referenzkapiteln ergänzen.
+- Prüfen, dass kein Satz Wirkung deterministisch behauptet, wo nur Wirkungspotenzial gemeint ist.
+- 5.4 Wirkungsfelder Kurzurteil: Gute Systemlandkarte, aber Druck-/Metadaten und Kartenfülle prüfen.
+- Das ist in Ordnung, muss aber visuell als Roadmap statt als halbfertiger Inhalt erscheinen.
+- Es gibt sichtbare Markup-/Konkatenationsfehler und zu dichte Karten-/Linkbereiche.
+- Markup-Sanitizer und Linkseparatoren fixen.
+- Für jedes Werkzeug eine Mini-Struktur erzwingen: Zweck, Eingaben, Ergebnis, Schutzlinie, Datenqualität, Link.
+- Interner Labeltext „ProtectionNotice“ erscheint sichtbar und muss entfernt werden.
+- Befunde: Die Klarstellung „kein offizieller akademischer Grad“ ist wichtig und vorhanden.
+- Modullisten einklappbar machen; jedes Modul mit Dauer, Lernziel, Status und nächstem Schritt.
+- PDF-Fassung in Produktion sichtbar lassen, aber nicht wie ein fertiger Download behandeln.
+- Bibliothekskarten mit einheitlicher Reihenfolge: Typ · Status · Niveau · Titel · Kurztext · Umfang · Zielgruppen · Tags · Buttons.
+- Mitwirkungswege als Rollenmatrix darstellen: Bürger:in, Fachperson, Organisation, Technik/Codex, Wissenschaft, Kommune.
+- Kontaktbutton als echtes mailto oder Formularziel mit Datenschutz-/Zweckhinweis prüfen.
+- 5.10 Dokumentdetailseiten Kurzurteil: Gutes Kartenformat, aber Metadaten/Online-Status müssen maschinenlogisch konsistent werden.
+- Befunde: Detailseiten haben sinnvolle Felder: Kurz gesagt, Fragen, Zielgruppe, Nicht-ist-Hinweis, Verwandte Inhalte, Metadaten.
+- Korrektur / Umsetzung: Ein zentrales Document-Schema einführen und alle Detailseiten daraus rendern.
+- 5.11 Onlinefassungen von Dokumenten Kurzurteil: Der größte strukturelle Dokumentationsfehler: Onlinefassungen sind oft nur PDF-Seitenimport statt navigierbare Webversion.
+- Befunde: Minifest, Leitbild, WStG und weitere Onlinefassungen zeigen Inhaltsverzeichnisse nach Seiten statt nach Kapiteln/Überschriften.
+- Teil XV und Teil XVII zeigen auf Teilseiten „0 Kapitel“, obwohl Kapitel 91–96 und 101–106 im Kapitelnavigator vorhanden sind.
+- Referenzkapitelseiten verwenden eine andere Hauptnavigation als die Startseite.
+- Korrektur / Umsetzung: Part-/Chapter-Mapping aus einer einzigen Quelle generieren; keine getrennte Zählungslogik.
+- Referenzportal in dieselbe Site-Shell überführen wie Hauptseiten.
+- 5.13 Legacy-Seiten / alte Journalstruktur Kurzurteil: Nicht final releasefähig, solange alte Seiten erreichbar sind.

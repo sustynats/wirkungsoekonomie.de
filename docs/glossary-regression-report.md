@@ -1,11 +1,11 @@
 # Glossary Regression Report
 
-Stand: 2026-05-31T13:53:56.078Z
+Stand: 2026-06-01T09:12:17.568Z
 
 - Baseline-Begriffe: 1145
-- Aktuelle Begriffe: 1145
-- Aktuelle Detailseiten: 1447
-- Aktuelle Hover-Einträge: 1145
+- Aktuelle Begriffe: 1165
+- Aktuelle Detailseiten: 1482
+- Aktuelle Hover-Einträge: 1174
 - Ergebnis: OK
 
 ## Fehler

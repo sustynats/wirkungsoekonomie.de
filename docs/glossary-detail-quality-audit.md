@@ -1,8 +1,8 @@
 # Glossar-Detailseiten: Qualitätsaudit
 
-Stand: 2026-05-31
+Stand: 2026-06-07
 
-Dieses Audit prüft die 1446 vorhandenen Begriffsdetailseiten nicht auf Schönheit, sondern auf Wissens- und Quellenabdeckung. Es löscht nichts und ersetzt keine Detailseiten durch Hub-Einträge.
+Dieses Audit prüft die 1852 vorhandenen Begriffsdetailseiten nicht auf Schönheit, sondern auf Wissens- und Quellenabdeckung. Es löscht nichts und ersetzt keine Detailseiten durch Hub-Einträge.
 
 ## Pflichtbausteine pro Begriff
 
@@ -25,36 +25,36 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 
 | Kriterium | Seiten |
 | --- | ---: |
-| Detailseiten gesamt | 1446 |
-| Source-backed im Glossar-Register | 1145 |
-| Erhaltene Bestandsseiten außerhalb Register | 301 |
-| Definition-Abschnitt vorhanden | 1446 |
-| Definition mit Text vorhanden | 1444 |
-| WÖk-Bedeutung/Relevanz-Abschnitt vorhanden | 1446 |
-| WÖk-Bedeutung nicht nur generischer Standardsatz | 1146 |
-| Explizite wirkungsökonomische Einordnung/Auslegung | 1145 |
-| Verwendungs-/Nutzungsabschnitt vorhanden | 1446 |
-| Abgrenzung vorhanden | 1446 |
-| Beispiel/Lernblock vorhanden | 354 |
-| Verwandte Begriffe nicht leer | 1291 |
-| Zusätzlicher Block Verwandte Inhalte | 84 |
-| Version-/Quellenblock vorhanden | 1306 |
-| Mindestens ein externer Link | 971 |
-| Mindestens ein Buchkapitel-Link | 80 |
-| Mindestens ein Dokument-/Bibliothekslink | 37 |
-| Mindestens ein Methoden-/Werkzeuglink | 30 |
-| Mindestens ein Demo-/Anwendungslink | 26 |
+| Detailseiten gesamt | 1852 |
+| Source-backed im Glossar-Register | 1466 |
+| Erhaltene Bestandsseiten außerhalb Register | 386 |
+| Definition-Abschnitt vorhanden | 1699 |
+| Definition mit Text vorhanden | 1699 |
+| WÖk-Bedeutung/Relevanz-Abschnitt vorhanden | 1 |
+| WÖk-Bedeutung nicht nur generischer Standardsatz | 1 |
+| Explizite wirkungsökonomische Einordnung/Auslegung | 1466 |
+| Verwendungs-/Nutzungsabschnitt vorhanden | 1 |
+| Abgrenzung vorhanden | 125 |
+| Beispiel/Lernblock vorhanden | 1656 |
+| Verwandte Begriffe nicht leer | 1459 |
+| Zusätzlicher Block Verwandte Inhalte | 0 |
+| Version-/Quellenblock vorhanden | 527 |
+| Mindestens ein externer Link | 28 |
+| Mindestens ein Buchkapitel-Link | 181 |
+| Mindestens ein Dokument-/Bibliothekslink | 102 |
+| Mindestens ein Methoden-/Werkzeuglink | 47 |
+| Mindestens ein Demo-/Anwendungslink | 22 |
 
 ## Wichtigste Lücken
 
-- 300 Seiten enthalten noch den generischen Satz „Der Eintrag dient als begriffliche Einordnung innerhalb der Wirkungsökonomie.“ Diese Seiten brauchen eine echte wirkungsökonomische Relevanzbeschreibung.
-- 301 Seiten haben noch keine explizite wirkungsökonomische Auslegung oder Einordnung.
-- 1362 Seiten zeigen noch keinen strukturierten Block „Verwandte Inhalte“ mit Methoden, Demos, Dokumenten, Wirkungsfeldern, Akademie oder Datenregistern.
-- 475 Seiten haben noch keinen externen Quellenlink.
-- 1366 Seiten haben noch keinen direkten Link in ein konkretes Buchkapitel.
-- 1409 Seiten haben noch keinen Dokument- oder Bibliothekslink.
-- 608 source-backed Registerbegriffe haben noch kurze Definition = Langdefinition und brauchen fachliche Vertiefung.
-- 301 Bestandsseiten sind erhalten und im Hub sichtbar, liegen aber noch nicht vollständig im strukturierten Glossar-Register.
+- 0 Seiten enthalten noch den generischen Satz „Der Eintrag dient als begriffliche Einordnung innerhalb der Wirkungsökonomie.“ Diese Seiten brauchen eine echte wirkungsökonomische Relevanzbeschreibung.
+- 386 Seiten haben noch keine explizite wirkungsökonomische Auslegung oder Einordnung.
+- 1852 Seiten zeigen noch keinen strukturierten Block „Verwandte Inhalte“ mit Methoden, Demos, Dokumenten, Wirkungsfeldern, Akademie oder Datenregistern.
+- 1824 Seiten haben noch keinen externen Quellenlink.
+- 1671 Seiten haben noch keinen direkten Link in ein konkretes Buchkapitel.
+- 1750 Seiten haben noch keinen Dokument- oder Bibliothekslink.
+- 764 source-backed Registerbegriffe haben noch kurze Definition = Langdefinition und brauchen fachliche Vertiefung.
+- 386 Bestandsseiten sind erhalten und im Hub sichtbar, liegen aber noch nicht vollständig im strukturierten Glossar-Register.
 
 ## Beispiele für Nachholbedarf
 
@@ -62,261 +62,7 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 
 | Slug | Begriff | Quelle |
 | --- | --- | --- |
-| adoe | ADÖ | Bestand |
-| ai-act | AI Act / KI-VO | Bestand |
-| anwendungskontext | Anwendungskontext | Bestand |
-| anwendungskontext-2 | Anwendungskontext (Kurzverweis) | Bestand |
-| archetypen | Archetypen | Bestand |
-| audit | Audit | Bestand |
-| benchmarks | Benchmarks | Bestand |
-| bestandsimmobilie | Bestandsimmobilie | Bestand |
-| biodiversitaet | Biodiversität | Bestand |
-| biodiversitaet-2 | Biodiversität (Kurzverweis) | Bestand |
-| bip | BIP | Bestand |
-| blindleistung-2 | Blindleistung (Kurzverweis) | Bestand |
-| bne | BNE | Bestand |
-| c2c | C2C | Bestand |
-| capex-plan | CapEx-Plan | Bestand |
-| care-als-wirkleistung | Care als Wirkleistung | Bestand |
-| care-feministische-oekonomie | Care Economy / Feministische Ökonomie | Bestand |
-| circular-regenerative-economy | Circular Economy / Regenerative Economy | Bestand |
-| crrem | CRREM / Carbon Risk Real Estate Monitor | Bestand |
-| csddd-2 | CSDDD | Bestand |
-| csrd-2 | CSRD | Bestand |
-| d-und-o | D&O | Bestand |
-| datenqualitaetsklasse | Datenqualitätsklasse | Bestand |
-| datenstandard | Datenstandard / Standardisierung von Risikomanagement | Bestand |
-| deal | DEAL | Bestand |
-| degrowth-postwachstum | Degrowth / Postwachstum | Bestand |
-| demokratie-2 | Demokratie (Kurzverweis) | Bestand |
-| desinformation | Desinformation | Bestand |
-| digital-ki-plattform-standards | Digital-, KI- und Plattformstandards | Bestand |
-| diskursfaehigkeit-2 | Diskursfähigkeit (Kurzverweis) | Bestand |
-| diskurskultur | Diskurskultur | Bestand |
-| dnsh-2 | DNSH / Do No Significant Harm | Bestand |
-| donut-oekonomie | Donut-Ökonomie / Doughnut Economics Action Lab | Bestand |
-| dora | DORA | Bestand |
-| dosis | Dosis | Bestand |
-| dosis-2 | Dosis (Kurzverweis) | Bestand |
-| dosis-wirkungs-beziehung | Dosis-Wirkungs-Beziehung | Bestand |
-| dosis-wirkungs-beziehung-2 | Dosis-Wirkungs-Beziehung (Kurzverweis) | Bestand |
-| dpp | DPP | Bestand |
-| dpp-2 | Digitaler Produktpass / DPP | Bestand |
-| dsa | DSA | Bestand |
-| dsgvo | DSGVO | Bestand |
-| eba | EBA | Bestand |
-| eba-esg-risikomanagement | EBA-Leitlinien zu ESG-Risiken / ESG-Risikomanagement | Bestand |
-| ecg | ECG / GWÖ | Bestand |
-| efrag-2 | EFRAG | Bestand |
-| ehrliche-preise | Ehrliche Preise | Bestand |
-| eiopa | EIOPA | Bestand |
-| energetische-sanierung | Energetische Sanierung | Bestand |
-| engpasslogik | Engpasslogik | Bestand |
-| epbd | EPBD / Energy Performance of Buildings Directive | Bestand |
-| epd-2 | EPD / Environmental Product Declaration | Bestand |
-| erm | ERM | Bestand |
-| erwuenschte-wirkung | Erwünschte Wirkung | Bestand |
-| erwuenschte-wirkung-2 | Erwünschte Wirkung (Kurzverweis) | Bestand |
-| esg-2 | ESG | Bestand |
-| esg-beratung | ESG-Beratung / Nachhaltigkeitsberatung | Bestand |
-| esg-rating | ESG-Rating | Bestand |
-| esma | ESMA | Bestand |
-| espr-2 | ESPR / Ecodesign for Sustainable Products Regulation | Bestand |
-| esrs-2 | ESRS | Bestand |
-| ets | ETS | Bestand |
-| eu | EU | Bestand |
-| eu-taxonomie-2 | EU-Taxonomie | Bestand |
-| eu-taxonomie-immobilien | EU-Taxonomie bei Immobilien | Bestand |
-| fach-zukunft | Fach Zukunft | Bestand |
-| foerdercontrolling | Fördercontrolling | Bestand |
-| foerdercontrolling-2 | Fördercontrolling (Kurzverweis) | Bestand |
-| foerderlogik | Förderlogik | Bestand |
-| foerderlogik-2 | Förderlogik (Kurzverweis) | Bestand |
-| frame | Frame | Bestand |
-| frame-2 | Frame (Kurzverweis) | Bestand |
-| gebaeudeenergieperformance | Gebäudeenergieperformance | Bestand |
-| gebaeudestandards | Gebäude- und Immobilienstandards | Bestand |
-| gemeinwohloekonomie | Gemeinwohlökonomie / Gemeinwohl-Bilanz | Bestand |
-| ghg-protocol-2 | GHG Protocol | Bestand |
-| globale-wirkungsordnung | Globale Wirkungsordnung | Bestand |
-| gri-2 | GRI | Bestand |
-| gsbp | GSBP | Bestand |
-| handlung-2 | Handlung (Kurzverweis) | Bestand |
-
-### Keine explizite WÖk-Auslegung
-
-| Slug | Begriff | Quelle |
-| --- | --- | --- |
-| adoe | ADÖ | Bestand |
-| ai-act | AI Act / KI-VO | Bestand |
-| anwendungskontext | Anwendungskontext | Bestand |
-| anwendungskontext-2 | Anwendungskontext (Kurzverweis) | Bestand |
-| archetypen | Archetypen | Bestand |
-| audit | Audit | Bestand |
-| benchmarks | Benchmarks | Bestand |
-| bestandsimmobilie | Bestandsimmobilie | Bestand |
-| biodiversitaet | Biodiversität | Bestand |
-| biodiversitaet-2 | Biodiversität (Kurzverweis) | Bestand |
-| bip | BIP | Bestand |
-| blindleistung-2 | Blindleistung (Kurzverweis) | Bestand |
-| bne | BNE | Bestand |
-| c2c | C2C | Bestand |
-| capex-plan | CapEx-Plan | Bestand |
-| care-als-wirkleistung | Care als Wirkleistung | Bestand |
-| care-feministische-oekonomie | Care Economy / Feministische Ökonomie | Bestand |
-| circular-regenerative-economy | Circular Economy / Regenerative Economy | Bestand |
-| crrem | CRREM / Carbon Risk Real Estate Monitor | Bestand |
-| csddd-2 | CSDDD | Bestand |
-| csrd-2 | CSRD | Bestand |
-| d-und-o | D&O | Bestand |
-| datenqualitaetsklasse | Datenqualitätsklasse | Bestand |
-| datenstandard | Datenstandard / Standardisierung von Risikomanagement | Bestand |
-| deal | DEAL | Bestand |
-| degrowth-postwachstum | Degrowth / Postwachstum | Bestand |
-| demokratie-2 | Demokratie (Kurzverweis) | Bestand |
-| desinformation | Desinformation | Bestand |
-| digital-ki-plattform-standards | Digital-, KI- und Plattformstandards | Bestand |
-| diskursfaehigkeit-2 | Diskursfähigkeit (Kurzverweis) | Bestand |
-| diskurskultur | Diskurskultur | Bestand |
-| dnsh-2 | DNSH / Do No Significant Harm | Bestand |
-| donut-oekonomie | Donut-Ökonomie / Doughnut Economics Action Lab | Bestand |
-| dora | DORA | Bestand |
-| dosis | Dosis | Bestand |
-| dosis-2 | Dosis (Kurzverweis) | Bestand |
-| dosis-wirkungs-beziehung | Dosis-Wirkungs-Beziehung | Bestand |
-| dosis-wirkungs-beziehung-2 | Dosis-Wirkungs-Beziehung (Kurzverweis) | Bestand |
-| dpp | DPP | Bestand |
-| dpp-2 | Digitaler Produktpass / DPP | Bestand |
-| dsa | DSA | Bestand |
-| dsgvo | DSGVO | Bestand |
-| eba | EBA | Bestand |
-| eba-esg-risikomanagement | EBA-Leitlinien zu ESG-Risiken / ESG-Risikomanagement | Bestand |
-| ecg | ECG / GWÖ | Bestand |
-| efrag-2 | EFRAG | Bestand |
-| ehrliche-preise | Ehrliche Preise | Bestand |
-| eiopa | EIOPA | Bestand |
-| energetische-sanierung | Energetische Sanierung | Bestand |
-| engpasslogik | Engpasslogik | Bestand |
-| epbd | EPBD / Energy Performance of Buildings Directive | Bestand |
-| epd-2 | EPD / Environmental Product Declaration | Bestand |
-| erm | ERM | Bestand |
-| erwuenschte-wirkung | Erwünschte Wirkung | Bestand |
-| erwuenschte-wirkung-2 | Erwünschte Wirkung (Kurzverweis) | Bestand |
-| esg-2 | ESG | Bestand |
-| esg-beratung | ESG-Beratung / Nachhaltigkeitsberatung | Bestand |
-| esg-rating | ESG-Rating | Bestand |
-| esma | ESMA | Bestand |
-| espr-2 | ESPR / Ecodesign for Sustainable Products Regulation | Bestand |
-| esrs-2 | ESRS | Bestand |
-| ets | ETS | Bestand |
-| eu | EU | Bestand |
-| eu-taxonomie-2 | EU-Taxonomie | Bestand |
-| eu-taxonomie-immobilien | EU-Taxonomie bei Immobilien | Bestand |
-| fach-zukunft | Fach Zukunft | Bestand |
-| foerdercontrolling | Fördercontrolling | Bestand |
-| foerdercontrolling-2 | Fördercontrolling (Kurzverweis) | Bestand |
-| foerderlogik | Förderlogik | Bestand |
-| foerderlogik-2 | Förderlogik (Kurzverweis) | Bestand |
-| frame | Frame | Bestand |
-| frame-2 | Frame (Kurzverweis) | Bestand |
-| gebaeudeenergieperformance | Gebäudeenergieperformance | Bestand |
-| gebaeudestandards | Gebäude- und Immobilienstandards | Bestand |
-| gemeinwohloekonomie | Gemeinwohlökonomie / Gemeinwohl-Bilanz | Bestand |
-| ghg-protocol-2 | GHG Protocol | Bestand |
-| globale-wirkungsordnung | Globale Wirkungsordnung | Bestand |
-| gri-2 | GRI | Bestand |
-| gsbp | GSBP | Bestand |
-| handlung-2 | Handlung (Kurzverweis) | Bestand |
-
-### Keine externen Quellenlinks
-
-| Slug | Begriff | Quelle |
-| --- | --- | --- |
-| adam-smith | Adam Smith | Register |
-| adoe | ADÖ | Bestand |
-| adverse-selection | Adverse Selection | Register |
-| affekt | Affekt | Register |
-| ai-act | AI Act / KI-VO | Bestand |
-| akkumulation | Akkumulation | Register |
-| alan-watts-daoismus | Alan Watts / Daoismus | Register |
-| allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
-| allmendeproblem | Allmendeproblem | Register |
-| allokation | Allokation | Register |
-| anarchokapitalismus | Anarchokapitalismus | Register |
-| anwendungskontext | Anwendungskontext | Bestand |
-| anwendungskontext-2 | Anwendungskontext (Kurzverweis) | Bestand |
-| archetypen | Archetypen | Bestand |
-| audit | Audit | Bestand |
-| aufmerksamkeit | Aufmerksamkeit | Register |
-| aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
-| austeritaet | Austerität | Register |
-| bedeutung-als-gebrauch | Bedeutung als Gebrauch | Register |
-| bedrohungsverarbeitung | Bedrohungsverarbeitung | Register |
-| begrenzte-rationalitaet | Begrenzte Rationalität | Register |
-| belohnungslernen | Belohnungslernen | Register |
-| benchmarks | Benchmarks | Bestand |
-| bestandsimmobilie | Bestandsimmobilie | Bestand |
-| biodiversitaet | Biodiversität | Bestand |
-| biodiversitaet-2 | Biodiversität (Kurzverweis) | Bestand |
-| bip | BIP | Bestand |
-| blindleistung-2 | Blindleistung (Kurzverweis) | Bestand |
-| bne | BNE | Bestand |
-| c2c | C2C | Bestand |
-| capex-plan | CapEx-Plan | Bestand |
-| care-als-wirkleistung | Care als Wirkleistung | Bestand |
-| care-feministische-oekonomie | Care Economy / Feministische Ökonomie | Bestand |
-| care-oekonomie | Care-Ökonomie | Register |
-| chicago-school | Chicago School | Register |
-| circular-regenerative-economy | Circular Economy / Regenerative Economy | Bestand |
-| coase-theorem | Coase-Theorem | Register |
-| commons | Commons | Register |
-| crrem | CRREM / Carbon Risk Real Estate Monitor | Bestand |
-| d-und-o | D&O | Bestand |
-| dao | Dao / Tao | Register |
-| datenqualitaetsklasse | Datenqualitätsklasse | Bestand |
-| datenstandard | Datenstandard / Standardisierung von Risikomanagement | Bestand |
-| deal | DEAL | Bestand |
-| degrowth-postwachstum | Degrowth / Postwachstum | Bestand |
-| demokratie-2 | Demokratie (Kurzverweis) | Bestand |
-| deregulierung | Deregulierung | Register |
-| desinformation | Desinformation | Bestand |
-| digital-ki-plattform-standards | Digital-, KI- und Plattformstandards | Bestand |
-| diskursfaehigkeit-2 | Diskursfähigkeit (Kurzverweis) | Bestand |
-| diskurskultur | Diskurskultur | Bestand |
-| donut-oekonomie | Donut-Ökonomie / Doughnut Economics Action Lab | Bestand |
-| dora | DORA | Bestand |
-| dosis | Dosis | Bestand |
-| dosis-2 | Dosis (Kurzverweis) | Bestand |
-| dosis-wirkungs-beziehung | Dosis-Wirkungs-Beziehung | Bestand |
-| dosis-wirkungs-beziehung-2 | Dosis-Wirkungs-Beziehung (Kurzverweis) | Bestand |
-| dpp | DPP | Bestand |
-| dsa | DSA | Bestand |
-| dsgvo | DSGVO | Bestand |
-| eba | EBA | Bestand |
-| eba-esg-risikomanagement | EBA-Leitlinien zu ESG-Risiken / ESG-Risikomanagement | Bestand |
-| ecg | ECG / GWÖ | Bestand |
-| ehrliche-preise | Ehrliche Preise | Bestand |
-| eigentumsrechte | Eigentumsrechte | Register |
-| eigentumsverantwortung | Eigentumsverantwortung | Register |
-| eiopa | EIOPA | Bestand |
-| energetische-sanierung | Energetische Sanierung | Bestand |
-| engpasslogik | Engpasslogik | Bestand |
-| entfremdung | Entfremdung | Register |
-| epbd | EPBD / Energy Performance of Buildings Directive | Bestand |
-| erm | ERM | Bestand |
-| ernst-von-glasersfeld | Ernst von Glasersfeld | Register |
-| erwuenschte-wirkung | Erwünschte Wirkung | Bestand |
-| erwuenschte-wirkung-2 | Erwünschte Wirkung (Kurzverweis) | Bestand |
-| esg-2 | ESG | Bestand |
-| esg-beratung | ESG-Beratung / Nachhaltigkeitsberatung | Bestand |
-| esg-rating | ESG-Rating | Bestand |
-| esma | ESMA | Bestand |
-| ets | ETS | Bestand |
-
-### Keine Buchkapitel-Links
-
-| Slug | Begriff | Quelle |
-| --- | --- | --- |
+| 6-kondratieff | 6. Kondratieff | Bestand |
 | abfallhierarchie | Abfallhierarchie | Register |
 | abregelung | Abregelung | Register |
 | ac-laden | AC-Laden | Register |
@@ -330,15 +76,19 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | affektheuristik | Affektheuristik | Register |
 | agenda-2030 | Agenda 2030 | Register |
 | agenda-setting | Agenda-Setting | Register |
+| ai-act | AI Act | Register |
 | akkumulation | Akkumulation | Register |
 | akkumulator | Akkumulator / Akku | Register |
 | alan-watts-daoismus | Alan Watts / Daoismus | Register |
 | alarm-frame | Alarm-Frame | Register |
+| algorithmische-fairness | Algorithmische Fairness und digitale Rechte | Register |
 | allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
 | allmendeproblem | Allmendeproblem | Register |
 | allokation | Allokation | Register |
+| alltag-2035 | Alltag 2035 | Register |
+| alltagsladen | Alltagsladen | Bestand |
 | alltagsrassismus | Alltagsrassismus | Register |
-| amartya-sen | Amartya Sen | Register |
+| amartya-sen | Amartya Sen / Martha Nussbaum – Fähigkeitenansatz | Register |
 | anaerobe-vergaerung | Anaerobe Vergärung | Register |
 | anarchokapitalismus | Anarchokapitalismus | Register |
 | ankereffekt | Ankereffekt | Register |
@@ -347,23 +97,43 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | anschlussfaehigkeit | Anschlussfähigkeit | Register |
 | anschlusskosten | Anschlusskosten | Register |
 | anschlussleistung | Anschlussleistung | Register |
+| anti-slapp-richtlinie | Anti-SLAPP-Richtlinie | Register |
+| antidiskriminierung | Antidiskriminierung | Register |
+| antikollisionssystem | Antikollisionssystem | Bestand |
 | antisemitismus | Antisemitismus | Register |
 | antiziganismus | Antiziganismus | Register |
 | anwendungskontext | Anwendungskontext | Bestand |
-| anwendungskontext-2 | Anwendungskontext (Kurzverweis) | Bestand |
+| anwendungskontext-2 | Anwendungskontext | Bestand |
 | arbeiten-arendt | Arbeiten | Register |
+| arbeitsanreiz | Arbeitsanreiz | Bestand |
 | arbeitspreis | Arbeitspreis | Register |
-| arbitrageur | Arbitrageur | Register |
+| arbitrageur | Arbitrageur / Arbitrageunternehmer | Register |
 | archetyp | Archetyp | Register |
+| archetypen | Archetypen | Bestand |
+| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV – Umweltintegrationsprinzip | Register |
+| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip | Register |
+| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV – Werte der Europäischen Union | Register |
 | art-20a-gg | Art. 20a GG | Register |
+| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV – nachhaltige Entwicklung Europas | Register |
+| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta – Umweltschutz | Register |
+| artikel-20a-grundgesetz | Artikel 20a Grundgesetz / Art. 20a GG | Register |
 | assurance | Assurance | Register |
 | astroturfing | Astroturfing | Register |
 | atlas-network | Atlas Network | Register |
+| attributionsforschung | Attributionsforschung | Register |
+| audit | Audit | Bestand |
 | aufmerksamkeit | Aufmerksamkeit | Register |
 | aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
+| aufschubnarrativ | Aufschubnarrativ | Bestand |
+| aufstocker | Aufstocker | Bestand |
+| ausland-statt-inland-narrativ | Ausland-statt-Inland-Narrativ | Bestand |
 | austeritaet | Austerität | Register |
 | autokratie | Autokratie | Register |
 | autokratisierung | Autokratisierung | Register |
+| automatisierung | Automatisierung | Register |
+| automatisierungsdividende | Automatisierungsdividende | Register |
+| automatisierungsrendite | Automatisierungsrendite | Register |
+| autonome-systeme | Autonome Systeme | Register |
 | autopoiesis | Autopoiesis | Register |
 | autoritaeres-wirkungspotenzial | Autoritäres Wirkungspotenzial | Register |
 | autoritarismus | Autoritarismus | Register |
@@ -372,36 +142,97 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | banalitaet-des-boesen | Banalität des Bösen | Register |
 | bandluecke | Bandlücke | Register |
 | baseline-verschiebung | Baseline-Verschiebung | Register |
-| basisinnovation | Basisinnovation | Register |
-| batterie | Batterie | Register |
-| batteriealterung | Batteriealterung | Register |
-| batterielebenszyklus | Batterielebenszyklus | Register |
-| batteriemanagementsystem | Batteriemanagementsystem / BMS | Register |
-| batteriemodul | Batteriemodul | Register |
-| batteriepack | Batteriepack | Register |
-| batteriepass | Batteriepass | Register |
-| batterierecycling | Batterierecycling | Register |
-| batterierohstoffe | Batterierohstoffe | Register |
-| batteriespeicher | Batteriespeicher | Register |
-| batteriezelle | Batteriezelle | Register |
-| baukostenzuschuss | Baukostenzuschuss | Register |
-| bedeutung-als-gebrauch | Bedeutung als Gebrauch | Register |
-| bedrohungsverarbeitung | Bedrohungsverarbeitung | Register |
-| begrenzte-rationalitaet | Begrenzte Rationalität | Register |
-| behoerde | Behörde | Register |
-| belohnungslernen | Belohnungslernen | Register |
-| benchmark | Benchmark | Register |
-| beobachterabhaengigkeit | Beobachterabhängigkeit | Register |
-| beobachtung-zweiter-ordnung | Beobachtung zweiter Ordnung | Register |
-| berichtsdaten | Berichtsdaten | Register |
-| beschwerdemechanismus-access-to-remedy | Beschwerdemechanismus / Access to Remedy | Register |
-| bestaetigungsfehler | Bestätigungsfehler | Register |
-| bestandsimmobilie | Bestandsimmobilie | Bestand |
 
-### Keine Dokument-/Bibliothekslinks
+### Keine explizite WÖk-Auslegung
 
 | Slug | Begriff | Quelle |
 | --- | --- | --- |
+| 6-kondratieff | 6. Kondratieff | Bestand |
+| adoe | ADÖ | Bestand |
+| alltagsladen | Alltagsladen | Bestand |
+| antikollisionssystem | Antikollisionssystem | Bestand |
+| anwendungskontext | Anwendungskontext | Bestand |
+| anwendungskontext-2 | Anwendungskontext | Bestand |
+| arbeitsanreiz | Arbeitsanreiz | Bestand |
+| archetypen | Archetypen | Bestand |
+| audit | Audit | Bestand |
+| aufschubnarrativ | Aufschubnarrativ | Bestand |
+| aufstocker | Aufstocker | Bestand |
+| ausland-statt-inland-narrativ | Ausland-statt-Inland-Narrativ | Bestand |
+| benchmarks | Benchmarks | Bestand |
+| bestandsimmobilie | Bestandsimmobilie | Bestand |
+| bilanzgrenze | Bilanzgrenze | Bestand |
+| biodiversitaet | Biodiversität | Bestand |
+| biodiversitaet-2 | Biodiversität | Bestand |
+| bip | BIP | Bestand |
+| blindleistung-2 | Blindleistung | Bestand |
+| bne | BNE | Bestand |
+| brutblanket | Brutblanket | Bestand |
+| bruttokreditaufnahme | Bruttokreditaufnahme | Bestand |
+| c2c | C2C | Bestand |
+| capex | CAPEX | Bestand |
+| capex-plan | CapEx-Plan | Bestand |
+| care-als-wirkleistung | Care als Wirkleistung | Bestand |
+| care-feministische-oekonomie | Care Economy / Feministische Ökonomie | Bestand |
+| circular-regenerative-economy | Circular Economy / Regenerative Economy | Bestand |
+| crrem | CRREM / Carbon Risk Real Estate Monitor | Bestand |
+| csddd-2 | CSDDD | Bestand |
+| csrd-2 | CSRD | Bestand |
+| d-und-o | D&O | Bestand |
+| datenqualitaetsklasse | Datenqualitätsklasse | Bestand |
+| datenstandard | Datenstandard / Standardisierung von Risikomanagement | Bestand |
+| deal | DEAL | Bestand |
+| degrowth-postwachstum | Degrowth / Postwachstum | Bestand |
+| deindustrialisierungsnarrativ | Deindustrialisierungsnarrativ | Bestand |
+| demokratie-2 | Demokratie | Bestand |
+| digital-ki-plattform-standards | Digital-, KI- und Plattformstandards | Bestand |
+| diskursfaehigkeit-2 | Diskursfähigkeit | Bestand |
+| dnsh | DNSH / Do No Significant Harm | Bestand |
+| dnsh-2 | DNSH / Do No Significant Harm | Bestand |
+| donut-oekonomie | Donut-Ökonomie / Doughnut Economics Action Lab | Bestand |
+| dora | DORA | Bestand |
+| dosis | Dosis | Bestand |
+| dosis-2 | Dosis | Bestand |
+| dosis-wirkungs-beziehung | Dosis-Wirkungs-Beziehung | Bestand |
+| dosis-wirkungs-beziehung-2 | Dosis-Wirkungs-Beziehung | Bestand |
+| dpp | DPP | Bestand |
+| dpp-2 | Digitaler Produktpass / DPP | Bestand |
+| dsa | DSA | Bestand |
+| dsgvo | DSGVO | Bestand |
+| e-fuel | E-Fuel | Bestand |
+| eba | EBA | Bestand |
+| eba-esg-risikomanagement | EBA-Leitlinien zu ESG-Risiken / ESG-Risikomanagement | Bestand |
+| ecg | ECG / GWÖ | Bestand |
+| efrag-2 | EFRAG | Bestand |
+| eigentumsangst | Eigentumsangst | Bestand |
+| eiopa | EIOPA | Bestand |
+| elektrolyse | Elektrolyse | Bestand |
+| energetische-sanierung | Energetische Sanierung | Bestand |
+| entmenschlichender-kampfbegriff | Entmenschlichender Kampfbegriff | Bestand |
+| entwicklungskredit | Entwicklungskredit | Bestand |
+| epbd | EPBD / Energy Performance of Buildings Directive | Bestand |
+| epd-2 | EPD / Environmental Product Declaration | Bestand |
+| erm | ERM | Bestand |
+| erwuenschte-wirkung | Erwünschte Wirkung | Bestand |
+| erwuenschte-wirkung-2 | Erwünschte Wirkung | Bestand |
+| esg-2 | ESG | Bestand |
+| esg-beratung | ESG-Beratung / Nachhaltigkeitsberatung | Bestand |
+| esg-rating | ESG-Rating | Bestand |
+| esma | ESMA | Bestand |
+| espr-2 | ESPR / Ecodesign for Sustainable Products Regulation | Bestand |
+| esrs-2 | ESRS | Bestand |
+| ets | ETS | Bestand |
+| eu | EU | Bestand |
+| eu-taxonomie-2 | EU-Taxonomie | Bestand |
+| eu-taxonomie-immobilien | EU-Taxonomie bei Immobilien | Bestand |
+| fach-zukunft | Fach Zukunft | Bestand |
+| fledermausabschaltung | Fledermausabschaltung | Bestand |
+
+### Keine externen Quellenlinks
+
+| Slug | Begriff | Quelle |
+| --- | --- | --- |
+| 6-kondratieff | 6. Kondratieff | Bestand |
 | abfallhierarchie | Abfallhierarchie | Register |
 | abregelung | Abregelung | Register |
 | ac-laden | AC-Laden | Register |
@@ -415,7 +246,92 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | affektheuristik | Affektheuristik | Register |
 | agenda-2030 | Agenda 2030 | Register |
 | agenda-setting | Agenda-Setting | Register |
-| ai-act | AI Act / KI-VO | Bestand |
+| ai-act | AI Act | Register |
+| akkumulation | Akkumulation | Register |
+| akkumulator | Akkumulator / Akku | Register |
+| alan-watts-daoismus | Alan Watts / Daoismus | Register |
+| alarm-frame | Alarm-Frame | Register |
+| algorithmische-fairness | Algorithmische Fairness und digitale Rechte | Register |
+| allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
+| allmendeproblem | Allmendeproblem | Register |
+| allokation | Allokation | Register |
+| alltag-2035 | Alltag 2035 | Register |
+| alltagsladen | Alltagsladen | Bestand |
+| alltagsrassismus | Alltagsrassismus | Register |
+| amartya-sen | Amartya Sen / Martha Nussbaum – Fähigkeitenansatz | Register |
+| anaerobe-vergaerung | Anaerobe Vergärung | Register |
+| anarchokapitalismus | Anarchokapitalismus | Register |
+| ankereffekt | Ankereffekt | Register |
+| anlagenpass | Anlagenpass | Register |
+| anpassungskapazitaet | Anpassungskapazität | Register |
+| anschlussfaehigkeit | Anschlussfähigkeit | Register |
+| anschlusskosten | Anschlusskosten | Register |
+| anschlussleistung | Anschlussleistung | Register |
+| anti-slapp-richtlinie | Anti-SLAPP-Richtlinie | Register |
+| antidiskriminierung | Antidiskriminierung | Register |
+| antikollisionssystem | Antikollisionssystem | Bestand |
+| antisemitismus | Antisemitismus | Register |
+| antiziganismus | Antiziganismus | Register |
+| anwendungskontext | Anwendungskontext | Bestand |
+| anwendungskontext-2 | Anwendungskontext | Bestand |
+| arbeiten-arendt | Arbeiten | Register |
+| arbeitsanreiz | Arbeitsanreiz | Bestand |
+| arbeitspreis | Arbeitspreis | Register |
+| arbitrageur | Arbitrageur / Arbitrageunternehmer | Register |
+| archetyp | Archetyp | Register |
+| archetypen | Archetypen | Bestand |
+| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV – Umweltintegrationsprinzip | Register |
+| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip | Register |
+| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV – Werte der Europäischen Union | Register |
+| art-20a-gg | Art. 20a GG | Register |
+| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV – nachhaltige Entwicklung Europas | Register |
+| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta – Umweltschutz | Register |
+| artikel-20a-grundgesetz | Artikel 20a Grundgesetz / Art. 20a GG | Register |
+| assurance | Assurance | Register |
+| astroturfing | Astroturfing | Register |
+| atlas-network | Atlas Network | Register |
+| attributionsforschung | Attributionsforschung | Register |
+| audit | Audit | Bestand |
+| aufmerksamkeit | Aufmerksamkeit | Register |
+| aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
+| aufschubnarrativ | Aufschubnarrativ | Bestand |
+| aufstocker | Aufstocker | Bestand |
+| ausland-statt-inland-narrativ | Ausland-statt-Inland-Narrativ | Bestand |
+| austeritaet | Austerität | Register |
+| autokratie | Autokratie | Register |
+| autokratisierung | Autokratisierung | Register |
+| automatisierung | Automatisierung | Register |
+| automatisierungsdividende | Automatisierungsdividende | Register |
+| automatisierungsrendite | Automatisierungsrendite | Register |
+| autonome-systeme | Autonome Systeme | Register |
+| autopoiesis | Autopoiesis | Register |
+| autoritaeres-wirkungspotenzial | Autoritäres Wirkungspotenzial | Register |
+| autoritarismus | Autoritarismus | Register |
+| backend-ladeinfrastruktur | Backend Ladeinfrastruktur | Register |
+| backup-kapazitaet | Backup-Kapazität | Register |
+| banalitaet-des-boesen | Banalität des Bösen | Register |
+| bandluecke | Bandlücke | Register |
+| baseline-verschiebung | Baseline-Verschiebung | Register |
+
+### Keine Buchkapitel-Links
+
+| Slug | Begriff | Quelle |
+| --- | --- | --- |
+| 6-kondratieff | 6. Kondratieff | Bestand |
+| abfallhierarchie | Abfallhierarchie | Register |
+| abregelung | Abregelung | Register |
+| ac-laden | AC-Laden | Register |
+| ad-hoc-laden | Ad-hoc-Laden | Register |
+| adam-smith | Adam Smith | Register |
+| adoe | ADÖ | Bestand |
+| adverse-selection | Adverse Selection | Register |
+| advocacy-organisation | Advocacy-Organisation | Register |
+| aeussere-loops | Äußere Loops | Register |
+| affekt | Affekt | Register |
+| affektheuristik | Affektheuristik | Register |
+| agenda-2030 | Agenda 2030 | Register |
+| agenda-setting | Agenda-Setting | Register |
+| ai-act | AI Act | Register |
 | akkumulation | Akkumulation | Register |
 | akkumulator | Akkumulator / Akku | Register |
 | alan-watts-daoismus | Alan Watts / Daoismus | Register |
@@ -423,34 +339,52 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
 | allmendeproblem | Allmendeproblem | Register |
 | allokation | Allokation | Register |
+| alltag-2035 | Alltag 2035 | Register |
+| alltagsladen | Alltagsladen | Bestand |
 | alltagsrassismus | Alltagsrassismus | Register |
-| amartya-sen | Amartya Sen | Register |
+| amartya-sen | Amartya Sen / Martha Nussbaum – Fähigkeitenansatz | Register |
 | anaerobe-vergaerung | Anaerobe Vergärung | Register |
 | anarchokapitalismus | Anarchokapitalismus | Register |
 | ankereffekt | Ankereffekt | Register |
 | anlagenpass | Anlagenpass | Register |
+| anpassungskapazitaet | Anpassungskapazität | Register |
 | anschlussfaehigkeit | Anschlussfähigkeit | Register |
 | anschlusskosten | Anschlusskosten | Register |
 | anschlussleistung | Anschlussleistung | Register |
-| antisemitismus | Antisemitismus | Register |
+| anti-slapp-richtlinie | Anti-SLAPP-Richtlinie | Register |
+| antidiskriminierung | Antidiskriminierung | Register |
+| antikollisionssystem | Antikollisionssystem | Bestand |
 | antiziganismus | Antiziganismus | Register |
 | anwendungskontext | Anwendungskontext | Bestand |
-| anwendungskontext-2 | Anwendungskontext (Kurzverweis) | Bestand |
+| anwendungskontext-2 | Anwendungskontext | Bestand |
 | arbeiten-arendt | Arbeiten | Register |
+| arbeitsanreiz | Arbeitsanreiz | Bestand |
 | arbeitspreis | Arbeitspreis | Register |
-| arbitrageur | Arbitrageur | Register |
+| arbitrageur | Arbitrageur / Arbitrageunternehmer | Register |
 | archetyp | Archetyp | Register |
 | archetypen | Archetypen | Bestand |
+| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV – Umweltintegrationsprinzip | Register |
+| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip | Register |
+| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV – Werte der Europäischen Union | Register |
 | art-20a-gg | Art. 20a GG | Register |
+| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV – nachhaltige Entwicklung Europas | Register |
+| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta – Umweltschutz | Register |
+| artikel-20a-grundgesetz | Artikel 20a Grundgesetz / Art. 20a GG | Register |
 | assurance | Assurance | Register |
 | astroturfing | Astroturfing | Register |
 | atlas-network | Atlas Network | Register |
 | audit | Audit | Bestand |
 | aufmerksamkeit | Aufmerksamkeit | Register |
 | aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
+| aufschubnarrativ | Aufschubnarrativ | Bestand |
+| aufstocker | Aufstocker | Bestand |
+| ausland-statt-inland-narrativ | Ausland-statt-Inland-Narrativ | Bestand |
 | austeritaet | Austerität | Register |
 | autokratie | Autokratie | Register |
 | autokratisierung | Autokratisierung | Register |
+| automatisierungsdividende | Automatisierungsdividende | Register |
+| automatisierungsrendite | Automatisierungsrendite | Register |
+| autonome-systeme | Autonome Systeme | Register |
 | autopoiesis | Autopoiesis | Register |
 | autoritaeres-wirkungspotenzial | Autoritäres Wirkungspotenzial | Register |
 | autoritarismus | Autoritarismus | Register |
@@ -463,25 +397,91 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | batterie | Batterie | Register |
 | batteriealterung | Batteriealterung | Register |
 | batterielebenszyklus | Batterielebenszyklus | Register |
-| batteriemanagementsystem | Batteriemanagementsystem / BMS | Register |
-| batteriemodul | Batteriemodul | Register |
-| batteriepack | Batteriepack | Register |
-| batteriepass | Batteriepass | Register |
-| batterierecycling | Batterierecycling | Register |
-| batterierohstoffe | Batterierohstoffe | Register |
-| batteriespeicher | Batteriespeicher | Register |
-| batteriezelle | Batteriezelle | Register |
-| baukostenzuschuss | Baukostenzuschuss | Register |
-| bedeutung-als-gebrauch | Bedeutung als Gebrauch | Register |
-| bedrohungsverarbeitung | Bedrohungsverarbeitung | Register |
-| begrenzte-rationalitaet | Begrenzte Rationalität | Register |
-| behoerde | Behörde | Register |
-| belohnungslernen | Belohnungslernen | Register |
-| benchmark | Benchmark | Register |
-| benchmarks | Benchmarks | Bestand |
-| beobachterabhaengigkeit | Beobachterabhängigkeit | Register |
-| beobachtung-zweiter-ordnung | Beobachtung zweiter Ordnung | Register |
-| berichtsdaten | Berichtsdaten | Register |
+
+### Keine Dokument-/Bibliothekslinks
+
+| Slug | Begriff | Quelle |
+| --- | --- | --- |
+| 6-kondratieff | 6. Kondratieff | Bestand |
+| abfallhierarchie | Abfallhierarchie | Register |
+| abregelung | Abregelung | Register |
+| ac-laden | AC-Laden | Register |
+| ad-hoc-laden | Ad-hoc-Laden | Register |
+| adam-smith | Adam Smith | Register |
+| adoe | ADÖ | Bestand |
+| adverse-selection | Adverse Selection | Register |
+| advocacy-organisation | Advocacy-Organisation | Register |
+| aeussere-loops | Äußere Loops | Register |
+| affekt | Affekt | Register |
+| affektheuristik | Affektheuristik | Register |
+| agenda-2030 | Agenda 2030 | Register |
+| agenda-setting | Agenda-Setting | Register |
+| ai-act | AI Act | Register |
+| akkumulator | Akkumulator / Akku | Register |
+| alan-watts-daoismus | Alan Watts / Daoismus | Register |
+| alarm-frame | Alarm-Frame | Register |
+| algorithmische-fairness | Algorithmische Fairness und digitale Rechte | Register |
+| allgemeines-gleichgewicht | Allgemeines Gleichgewicht | Register |
+| allmendeproblem | Allmendeproblem | Register |
+| allokation | Allokation | Register |
+| alltag-2035 | Alltag 2035 | Register |
+| alltagsladen | Alltagsladen | Bestand |
+| alltagsrassismus | Alltagsrassismus | Register |
+| amartya-sen | Amartya Sen / Martha Nussbaum – Fähigkeitenansatz | Register |
+| anaerobe-vergaerung | Anaerobe Vergärung | Register |
+| anarchokapitalismus | Anarchokapitalismus | Register |
+| ankereffekt | Ankereffekt | Register |
+| anlagenpass | Anlagenpass | Register |
+| anpassungskapazitaet | Anpassungskapazität | Register |
+| anschlussfaehigkeit | Anschlussfähigkeit | Register |
+| anschlusskosten | Anschlusskosten | Register |
+| anschlussleistung | Anschlussleistung | Register |
+| anti-slapp-richtlinie | Anti-SLAPP-Richtlinie | Register |
+| antidiskriminierung | Antidiskriminierung | Register |
+| antikollisionssystem | Antikollisionssystem | Bestand |
+| antisemitismus | Antisemitismus | Register |
+| antiziganismus | Antiziganismus | Register |
+| anwendungskontext | Anwendungskontext | Bestand |
+| anwendungskontext-2 | Anwendungskontext | Bestand |
+| arbeitsanreiz | Arbeitsanreiz | Bestand |
+| arbeitspreis | Arbeitspreis | Register |
+| arbitrageur | Arbitrageur / Arbitrageunternehmer | Register |
+| archetypen | Archetypen | Bestand |
+| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV – Umweltintegrationsprinzip | Register |
+| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip | Register |
+| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV – Werte der Europäischen Union | Register |
+| art-20a-gg | Art. 20a GG | Register |
+| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV – nachhaltige Entwicklung Europas | Register |
+| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta – Umweltschutz | Register |
+| artikel-20a-grundgesetz | Artikel 20a Grundgesetz / Art. 20a GG | Register |
+| assurance | Assurance | Register |
+| astroturfing | Astroturfing | Register |
+| atlas-network | Atlas Network | Register |
+| attributionsforschung | Attributionsforschung | Register |
+| audit | Audit | Bestand |
+| aufmerksamkeit | Aufmerksamkeit | Register |
+| aufmerksamkeitsoekonomie | Aufmerksamkeitsökonomie | Register |
+| aufschubnarrativ | Aufschubnarrativ | Bestand |
+| aufstocker | Aufstocker | Bestand |
+| ausland-statt-inland-narrativ | Ausland-statt-Inland-Narrativ | Bestand |
+| austeritaet | Austerität | Register |
+| autokratie | Autokratie | Register |
+| autokratisierung | Autokratisierung | Register |
+| automatisierung | Automatisierung | Register |
+| automatisierungsdividende | Automatisierungsdividende | Register |
+| autonome-systeme | Autonome Systeme | Register |
+| autopoiesis | Autopoiesis | Register |
+| autoritaeres-wirkungspotenzial | Autoritäres Wirkungspotenzial | Register |
+| autoritarismus | Autoritarismus | Register |
+| backend-ladeinfrastruktur | Backend Ladeinfrastruktur | Register |
+| backup-kapazitaet | Backup-Kapazität | Register |
+| banalitaet-des-boesen | Banalität des Bösen | Register |
+| bandluecke | Bandlücke | Register |
+| baseline-verschiebung | Baseline-Verschiebung | Register |
+| basisinnovation | Basisinnovation | Register |
+| batterie | Batterie | Register |
+| batteriealterung | Batteriealterung | Register |
+| batterielebenszyklus | Batterielebenszyklus | Register |
 
 ## Nicht automatisch ergänzen
 

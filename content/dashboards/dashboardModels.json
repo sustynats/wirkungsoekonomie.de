@@ -1,0 +1,220 @@
+{
+  "version": "2026-05-31-stage-1",
+  "status": "public-working-model",
+  "protectionRules": [
+    "Dashboard-Modelle sind methodische Nutzerfuehrung, keine amtliche Bewertung.",
+    "Keine Personenbewertung.",
+    "Keine automatische Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs- oder Foerderentscheidung.",
+    "Datenqualitaet, Annahmen, Grenzen und Unsicherheit muessen sichtbar bleiben.",
+    "Rote Linien und Nichtkompensationsregeln duerfen nicht durch gute Teilwerte ueberdeckt werden."
+  ],
+  "standardSections": [
+    "Fragestellung",
+    "Eingaben und Datenqualitaet",
+    "Methodenpfad",
+    "Zwischenergebnisse",
+    "Schutzlinien",
+    "Ergebnis erklaeren",
+    "Naechster Schritt",
+    "Verwandte Begriffe, Methoden und Dokumente"
+  ],
+  "dashboardFamilies": [
+    {
+      "id": "produktwirkung-scorecard",
+      "title": "Produktwirkung und Scorecard",
+      "primaryRoute": "/erleben/produktwirkungsrechner/",
+      "relatedRoutes": [
+        "/werkzeuge/produktscorecards/",
+        "/werkzeuge/scorecards/",
+        "/werkzeuge/reverse-merit-order/",
+        "/werkzeuge/digitale-produktpaesse/",
+        "/scorecard-dashboard/"
+      ],
+      "dashboardGoal": "Produktwirkung nachvollziehbar von Messwerten ueber Scorecards bis zu Nichtkompensationsregeln fuehren.",
+      "inputGroups": [
+        "Produkt- oder Leistungsdaten",
+        "Wirkungsdimension Mensch, Planet, Demokratie",
+        "WÖk-ID oder Indikatorfamilie",
+        "Datenqualitaet",
+        "Schwellen, Benchmarks und rote Linien"
+      ],
+      "outputGroups": [
+        "indikative Scorecard",
+        "Datenqualitaetsampel",
+        "Nichtkompensationshinweise",
+        "naechste Pruefschritte"
+      ],
+      "methods": [
+        "WÖk-ID",
+        "Scorecards",
+        "Reverse Merit Order",
+        "Digitale Produktpaesse",
+        "NWI"
+      ],
+      "redLines": [
+        "keine amtliche Produktklassifizierung",
+        "keine Personenbewertung",
+        "keine automatische Steuerentscheidung"
+      ],
+      "implementationStatus": "foundation-ready"
+    },
+    {
+      "id": "scorecard-dashboard-produktpass",
+      "title": "Scorecard-Dashboard und Produktpass",
+      "primaryRoute": "/scorecard-dashboard/",
+      "relatedRoutes": [
+        "/scorecard-dashboard.html",
+        "/werkzeuge/scorecards/",
+        "/werkzeuge/woek-ids/",
+        "/werkzeuge/datenqualitaet-assurance/",
+        "/woek-id-register/"
+      ],
+      "dashboardGoal": "Scorecard, WÖk-ID, Datenqualitaet und Produktpass-Logik in einem pruefbaren Bedienpfad zusammenfuehren.",
+      "inputGroups": [
+        "Indikatorauswahl",
+        "Messwert",
+        "Einheit",
+        "Quelle",
+        "Assurance-Level",
+        "Publikationsreife"
+      ],
+      "outputGroups": [
+        "AutoScore",
+        "BenchmarkScore",
+        "FinalScore",
+        "Datenqualitaet",
+        "Review- und Assurance-Bedarf"
+      ],
+      "methods": [
+        "WÖk-ID",
+        "Scorecards",
+        "DPP",
+        "Wirkungsdatenraeume",
+        "Datenqualitaet"
+      ],
+      "redLines": [
+        "keine finale Normbehauptung",
+        "benchmarkpflichtige Werte als solche kennzeichnen",
+        "rote Linien sichtbar halten"
+      ],
+      "implementationStatus": "foundation-ready"
+    },
+    {
+      "id": "impact-controlling",
+      "title": "Impact Controlling",
+      "primaryRoute": "/erleben/impact-controlling-rechner/",
+      "relatedRoutes": [
+        "/werkzeuge/impact-controlling/",
+        "/werkzeuge/netto-wirkungs-index/",
+        "/werkzeuge/t-sroi/",
+        "/werkzeuge/wirkungsaudit/",
+        "/werkzeuge/wirkungsrisiko-matrix/"
+      ],
+      "dashboardGoal": "Wirkungsdaten in operative Steuerung, NWI, T-SROI, Risiko und Lernschleifen uebersetzen.",
+      "inputGroups": [
+        "Wirkungsziel",
+        "Indikatorenset",
+        "Ist-Wert und Zielwert",
+        "Datenqualitaet",
+        "Zeitraum",
+        "Stakeholder- und Systembezug"
+      ],
+      "outputGroups": [
+        "NWI-Einordnung",
+        "T-SROI-Transformationshinweis",
+        "Risiko- und Lueckenprofil",
+        "Lern- und Auditbedarf"
+      ],
+      "methods": [
+        "NWI",
+        "T-SROI",
+        "Wirkungsaudit",
+        "Wirkungsrat",
+        "Evaluation"
+      ],
+      "redLines": [
+        "keine Scheingenauigkeit",
+        "keine Kompensation roter Linien",
+        "menschliche und institutionelle Verantwortung bleibt bestehen"
+      ],
+      "implementationStatus": "foundation-ready"
+    },
+    {
+      "id": "wohnwirkung",
+      "title": "Wohnwirkung",
+      "primaryRoute": "/erleben/wohnwirkungsrechner/",
+      "relatedRoutes": [
+        "/erleben/wohnwirkungsrechner/vermieter-check/",
+        "/erleben/wohnwirkungsrechner/stranded-asset-check/",
+        "/werkzeuge/resilienz-radar-kommune/",
+        "/wirkungsfelder/wohnen-stadt/"
+      ],
+      "dashboardGoal": "Wohnungs-, Miet-, Stadt- und Resilienzfragen als Wirkungspfad fuer Mensch, Planet und Demokratie strukturieren.",
+      "inputGroups": [
+        "Wohnkosten",
+        "Energie- und Sanierungsdaten",
+        "soziale Zugaenglichkeit",
+        "Standort- und Infrastrukturmerkmale",
+        "Datenqualitaet"
+      ],
+      "outputGroups": [
+        "Wohnwirkungsprofil",
+        "Risiko- und Resilienzhinweise",
+        "Pilot- und Verbesserungsoptionen",
+        "Datenluecken"
+      ],
+      "methods": [
+        "Scorecards",
+        "NWI",
+        "Resilienzprofil",
+        "Datenqualitaet",
+        "Wirkungsfelder"
+      ],
+      "redLines": [
+        "keine Miet-, Rechts- oder Foerderberatung",
+        "keine Personenbewertung",
+        "soziale Haerten gesondert sichtbar machen"
+      ],
+      "implementationStatus": "foundation-ready"
+    },
+    {
+      "id": "medienwirkungscheck",
+      "title": "Medienwirkungscheck",
+      "primaryRoute": "/erleben/medienwirkungscheck/",
+      "relatedRoutes": [
+        "/werkzeuge/medienwirkungscheck/",
+        "/werkzeuge/sprach-und-framing-analyse/",
+        "/werkzeuge/desinformations-risikocheck/",
+        "/werkzeuge/plattform-wirkungscheck/",
+        "/wirkungsfelder/oeffentlichkeit-wissen/"
+      ],
+      "dashboardGoal": "Sprache, Framing, Salienz, Dissonanz und demokratische Wirkung vorsichtig, transparent und nicht-personalisierend pruefen.",
+      "inputGroups": [
+        "Text oder Narrativ",
+        "Kontext",
+        "Zielgruppe ohne Personenprofiling",
+        "Wirkungsannahmen",
+        "Daten- und Quellenlage"
+      ],
+      "outputGroups": [
+        "Framing- und Salienzhinweise",
+        "Demokratie- und Diskursrisiken",
+        "Unsicherheiten",
+        "Reviewbedarf"
+      ],
+      "methods": [
+        "Sprach- und Framing-Analyse",
+        "Desinformations-Risikocheck",
+        "Wirkungsrisiko",
+        "SDG+ Demokratie",
+        "qualitative Review"
+      ],
+      "redLines": [
+        "keine Personenbewertung",
+        "keine automatische Wahrheitseinstufung",
+        "keine amtliche Medienbewertung"
+      ],
+      "implementationStatus": "foundation-ready"
+    }
+  ]
+}

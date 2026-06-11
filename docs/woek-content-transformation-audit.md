@@ -72,6 +72,13 @@ Jeder abgeleitete Inhalt wird gegen folgende Fragen geprüft:
 8. Wird SDG+ korrekt als WÖk-Erweiterung und nicht als UN-Kategorie beschrieben?
 9. Enthält der Text juristische, steuerliche oder politische Aussagen, die gesondert geprüft werden müssen?
 10. Gibt es Widersprüche zum aktuellen Glossar?
+11. Wird bei Frame, Framing und Reframing klar zwischen Deutungsrahmen, Prozess und bewusster Verschiebung unterschieden?
+12. Wird bei Sprache, Medien und Narrativen zwischen Wirkungspotenzial, Wirkpfad und Wirkungsnachweis unterschieden?
+13. Wird Reframing nicht als Manipulation, Schönfärberei oder PR verwendet?
+14. Macht der neue Frame mehr Wirklichkeit sichtbar als der alte?
+15. Werden Zielkonflikte, Nebenwirkungen und Risiken offengelegt?
+16. Vermeidet der Frame Feindbilder, Entwürdigung und unbelegte Absichtszuschreibungen?
+17. Verschiebt der Frame den Bewertungsmaßstab nachvollziehbar in Richtung positive Netto-Wirkung für Mensch, Planet und Demokratie?
 
 ## Verbindliche Begriffslogik
 
@@ -99,6 +106,37 @@ Präzisierungen:
 - Positive Netto-Wirkung ist die Zielgröße der WÖk.
 - Wirkungslenkung koppelt Bewertung in Entscheidungen zurück.
 - Wirkungsarchitektur ist das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen und Lernen.
+
+## Sprachregeln für Frame, Framing und Reframing
+
+### Verwenden
+
+- Ein Frame ist ein Deutungsrahmen.
+- Framing setzt oder verstärkt einen Deutungsrahmen.
+- Reframing verschiebt den Deutungs- und Bewertungsrahmen.
+- Wirkungsorientiertes Reframing macht blinde Flecken, Folgekosten, Wirkungsempfänger, Wirkungspfade und Systemfolgen sichtbar.
+- Bei Sprache, Medien und Narrativen meist von Wirkungspotenzial, Resonanzraum, Wirkungspfad oder Wirkungsrisiko sprechen.
+
+### Vermeiden
+
+- Reframing = Manipulation.
+- Frame = Meinung.
+- Framing beweist Wirkung.
+- Dieses Frame hat diese Wirkung, wenn nur ein Wirkpfad gemeint ist.
+- Gegner durch Reframing entwürdigen.
+- Reframing als Schönfärberei verwenden.
+- Negative Wirkungen durch gute Begriffe verdecken.
+- Zielkonflikte wegformulieren.
+
+### Bessere Formulierungen
+
+| Ungenau | Präziser |
+|---|---|
+| Das ist nur Framing. | Das ist ein Deutungsrahmen, der bestimmte Aspekte sichtbar macht und andere verdeckt. |
+| Wir brauchen ein positiveres Wording. | Wir müssen prüfen, welcher Bewertungsmaßstab sichtbar wird und welche Wirkungen verdeckt bleiben. |
+| Dieses Narrativ wirkt demokratiefeindlich. | Dieses Narrativ öffnet Resonanzräume, die Vertrauen, Diskursfähigkeit und demokratische Stabilität schwächen können. |
+| Reframing macht das Problem attraktiver. | Reframing verschiebt den Bewertungsmaßstab und macht Folgekosten, Verantwortung oder Wirkungspfade sichtbar. |
+| Pflege ist teuer. | Pflege ist eine gesellschaftliche Wirkleistung, die Gesundheit, Würde, Familien und Teilhabe stabilisiert. |
 
 ## Empfohlene Website-Struktur
 

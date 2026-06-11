@@ -126,7 +126,7 @@
         card.hidden = !show;
         if (show) visible += 1;
       });
-      if (status) status.textContent = `${visible} Kapitel sichtbar`;
+      if (status) status.textContent = `${visible} Kapitel im aktuellen Kapitel-Filter`;
     }
 
     buttons.forEach((button) => {

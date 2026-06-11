@@ -737,7 +737,7 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <meta name="twitter:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header">
@@ -757,7 +757,7 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>
 `;
@@ -773,12 +773,23 @@ function printActions(extra = "") {
 }
 
 function tocBlock(base, toc, label = "Inhaltsverzeichnis") {
-  const filtered = toc.filter((item) => item.level <= 3);
+  const filtered = toc.filter((item) => item.level <= 3 && !isImportedTocHeading(item.text));
   if (!filtered.length) return "";
-  return `<nav class="toc-card" aria-label="${label}">
-      <h2>${label}</h2>
+  return `<nav class="toc-card no-print reader-toc-card" aria-label="${label}">
+      <h2 class="card-title">${label}</h2>
       <ol>${filtered.map((item) => `<li class="toc-level-${item.level}"><a href="#${item.id}">${escapeHtml(item.text)}</a></li>`).join("")}</ol>
     </nav>`;
+}
+
+function isImportedTocHeading(text = "") {
+  return /^(Inhaltsübersicht|Inhaltsverzeichnis)$/i.test(String(text).trim());
+}
+
+function removeImportedToc(html) {
+  return html.replace(
+    /<h2 id="inhalts(?:u|ü)bersicht">[\s\S]*?<\/h2>\s*<ul>[\s\S]*?<\/ul>/i,
+    "",
+  );
 }
 
 function cardGrid(base, items, cols = "three") {
@@ -966,6 +977,8 @@ function sourceNotice(label) {
 function fulltextPage(config) {
   const md = read(config.source).replace(/^# .+\n+/, "");
   const rendered = mdToHtml(md, { citeAnchors: true, paragraphAnchors: true });
+  const cleanHtml = removeImportedToc(rendered.html);
+  const cleanToc = rendered.toc.filter((item) => !isImportedTocHeading(item.text));
   page({
     rel: config.rel,
     title: config.title,
@@ -982,12 +995,12 @@ function fulltextPage(config) {
     })}
     <section class="section narrow">${citationNotice(`${SITE}${routeFor(config.rel)}`)}</section>
     <section class="section narrow">${productStatus(config.status || "Lesefassung")}</section>
-    <section class="section narrow">${sourceNotice(config.source)}${tocBlock(base, rendered.toc)}</section>
+    <section class="section no-print detail-concept-toc-section">${sourceNotice(config.source)}${tocBlock(base, cleanToc)}</section>
     <section class="section article-section" aria-labelledby="online-volltext">
-      <article class="article-body fulltext-reader">
+      <article class="article-body fulltext-reader detail-concept-reader">
         ${sectionTitle("online-volltext", "Konzept lesen")}
         ${config.contextIntro ? `<p>${config.contextIntro(base)}</p>` : ""}
-        ${rendered.html}
+        ${cleanHtml}
       </article>
     </section>
     ${toolCards(base, config.tools || contextualTools)}
@@ -1923,7 +1936,11 @@ function build() {
     hero: "Das Apfelbeispiel zeigt didaktisch, dass regional, bio oder importiert nicht automatisch positiv oder negativ ist. Kontext, Datenqualität und rote Linien entscheiden.",
     contextIntro: (base) => `Das Beispiel nutzt NACE 01.24, WÖk-IDs, Scorecard, FinalScore, ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste Wirkungsfeld entscheidet.")} und modellhafte Wirkungsumsatzsteuer. Es ist keine amtliche Einstufung.`,
     sdgText: "Das Apfelbeispiel berührt Ernährung, Wasser, Biodiversität, Arbeit, Gesundheit, Transport, Verpackung und Konsumtransparenz.",
-    downloads: [{ label: "Alte Webfassung öffnen", href: "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/" }, { label: "Scorecard-Demo öffnen", href: "scorecard-dashboard.html" }],
+    downloads: [
+      { label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossiers/apfelbeispiel/" },
+      { label: "Konzept-Onlinefassung öffnen", href: "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/" },
+      { label: "Scorecard-Demo öffnen", href: "scorecard-dashboard.html" },
+    ],
   });
   fulltextPage({
     rel: "wirkungsfelder/produkte-konsum/lieferketten/index.html",

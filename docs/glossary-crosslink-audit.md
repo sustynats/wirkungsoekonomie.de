@@ -1,15 +1,13 @@
 # Glossary Crosslink Audit
 
-Stand: 2026-05-31T13:51:57.161Z
+Stand: 2026-06-01T09:12:16.809Z
 
-- relatedTerms: 6421
-- relatedDocuments: 95
-- relatedMethods/Tools: 0
-- relatedDemos: 0
-- relatedImpactFields: 0
-- Related-Terms ohne Zielbegriff: 3
+- relatedTerms: 6584
+- relatedDocuments: 118
+- relatedMethods/Tools: 73
+- relatedDemos: 2
+- relatedImpactFields: 78
+- Related-Terms ohne Zielbegriff: 0
 
 ## Fehlende relatedTerms-Ziele
-- spekulationslogik -> wirkungspflicht-eigentum
-- wirkungsvermietung -> wirkungspflicht-eigentum
-- wohnwirkung -> wirkungspflicht-eigentum
+Keine.

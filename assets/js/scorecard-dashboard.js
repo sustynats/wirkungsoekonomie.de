@@ -92,7 +92,7 @@ function renderList() {
   list.innerHTML = items.map((item) => `
     <button class="scorecard-list-item ${item.id === selectedScorecardId ? "active" : ""}" type="button" data-scorecard-id="${item.id}">
       <img src="${item.image}" alt="" loading="lazy" decoding="async">
-      <span>
+      <span class="scorecard-list-copy">
         <b>${item.name}</b>
         <small>${item.type} · ${item.sector}</small>
       </span>
@@ -468,6 +468,19 @@ function renderDetail() {
 
 async function initScorecardDashboard() {
   if (!dashboardRoot) return;
+  const navLinks = Array.from(dashboardRoot.querySelectorAll("[data-dashboard-nav]"));
+  const syncActiveNav = (hash = window.location.hash || "#dashboard") => {
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === hash);
+    });
+  };
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => syncActiveNav(link.getAttribute("href")));
+  });
+  window.addEventListener("hashchange", () => syncActiveNav());
+  syncActiveNav();
+
   const response = await fetch("assets/data/scorecard-examples.json");
   scorecardItems = await response.json();
   selectedScorecardId = scorecardItems[0].id;

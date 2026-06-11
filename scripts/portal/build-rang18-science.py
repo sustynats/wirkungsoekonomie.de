@@ -208,6 +208,9 @@ def href(prefix: str, rel: str) -> str:
 def clean_text(value: str) -> str:
     value = value.replace("\ufeff", "")
     value = re.sub(r"\s+", " ", value).strip()
+    value = re.sub(r"\s*[–-]\s*Rang\s+\d+\b", "", value, flags=re.I)
+    value = re.sub(r"\s+Rang\s+\d+\b", "", value, flags=re.I)
+    value = re.sub(r"^Rang\s+\d+\s*[–:-]\s*", "", value, flags=re.I)
     replacements = {
         "CodeX": "redaktionelle",
         "Repository": "Projekt",
@@ -219,7 +222,7 @@ def clean_text(value: str) -> str:
 
 def sanitize_markdown(text: str) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
-    text = text.replace("–", "-").replace("—", "-")
+    text = text.replace("–", "-").replace("-", "-")
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
     lines = text.split("\n")
     out: list[str] = []
@@ -247,7 +250,49 @@ def sanitize_markdown(text: str) -> str:
         out.append(stripped)
     result = "\n".join(out)
     result = re.sub(r"\n{3,}", "\n\n", result)
-    return result.strip()
+    return strip_import_scaffold(result)
+
+
+def strip_import_scaffold(text: str) -> str:
+    """Remove document-cover scaffolding that is already rendered by the page template."""
+    lines = text.split("\n")
+    toc_index = None
+    for index, line in enumerate(lines):
+        stripped = line.strip().strip("# ").strip()
+        if stripped.lower() == "inhaltsverzeichnis":
+            toc_index = index
+            break
+    if toc_index is not None:
+        for index in range(toc_index + 1, len(lines)):
+            stripped = lines[index].strip()
+            if re.match(r"^#{1,4}\s+\d+[\.)]?\s+\S", stripped):
+                return "\n".join(lines[index:]).strip()
+    # Fallback for imports without numbered sections: remove cover/scaffold headings
+    # and their short explanatory blocks before rendering the public page body.
+    scaffold = re.compile(
+        r"^#{1,4}\s+(?:Wirkungsökonomie|WOeK\b.*|Inhaltsverzeichnis|Dokumentlogik|Kurzfassung|Detailkonzept\b.*|Konzeptpapier\b.*)\s*$",
+        re.I,
+    )
+    cleaned: list[str] = []
+    skip_until_heading = False
+    for line in lines:
+        stripped = line.strip()
+        if scaffold.match(stripped):
+            skip_until_heading = bool(re.search(r"Inhaltsverzeichnis|Dokumentlogik|Kurzfassung", stripped, re.I))
+            continue
+        if skip_until_heading:
+            if not stripped:
+                continue
+            if stripped.startswith("#"):
+                skip_until_heading = False
+            else:
+                continue
+        cleaned.append(line)
+    cleaned_lines = "\n".join(cleaned).split("\n")
+    for index, line in enumerate(cleaned_lines):
+        if re.match(r"^#{1,4}\s+\d+[\.)]?\s+\S", line.strip()):
+            return "\n".join(cleaned_lines[index:]).strip()
+    return "\n".join(cleaned_lines).strip()
 
 
 def slugify(value: str) -> str:
@@ -470,7 +515,7 @@ def write_minimal_docx(path: Path, text: str) -> None:
 def pdf_safe(text: str) -> str:
     repl = {
         "–": "-",
-        "—": "-",
+        "-": "-",
         "„": '"',
         "“": '"',
         "”": '"',
@@ -582,12 +627,12 @@ def download_rows(entries: list[Entry], prefix: str, current_page: bool = False)
     rows = []
     zip_href = href(prefix, ASSET_REL + "/WOeK_Rang18_Wissen-Wissenschaft-Forschung-Wirkungsinnovation_Gesamtpaket_v1.0.zip")
     rows.append(
-        f"""<tr><th scope="row">Rang-18-Gesamtpaket</th><td>ZIP</td><td>Bereinigtes öffentliches Gesamtpaket ohne interne Website-Anweisungen.</td><td>1.0</td><td>Mai 2026</td><td>ZIP</td><td><a href="{zip_href}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/')}">online lesen</a></td></tr>"""
+        f"""<tr><th scope="row">Gesamtpaket</th><td>ZIP</td><td>Bereinigtes öffentliches Gesamtpaket ohne interne Website-Anweisungen.</td><td>1.0</td><td>Mai 2026</td><td>ZIP</td><td><a href="{zip_href}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/')}">online lesen</a></td></tr>"""
     )
     for fmt in ("pdf", "docx"):
         combined = href(prefix, ASSET_REL + f"/WOeK_Rang18_Gesamtpaket_Alle_Inhalte_v1.0.{fmt}")
         rows.append(
-            f"""<tr><th scope="row">Gesamtpaket Rang 18</th><td>{fmt.upper()}</td><td>Gebündelte öffentliche Lesefassung der Rang-18-Inhalte.</td><td>1.0</td><td>Mai 2026</td><td>{fmt.upper()}</td><td><a href="{combined}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/downloads/')}">online lesen</a></td></tr>"""
+            f"""<tr><th scope="row">Gesamtpaket</th><td>{fmt.upper()}</td><td>Gebündelte öffentliche Lesefassung der Inhalte.</td><td>1.0</td><td>Mai 2026</td><td>{fmt.upper()}</td><td><a href="{combined}" target="_blank" rel="noopener noreferrer">herunterladen</a></td><td><a href="{href(prefix, PORTAL_REL + '/downloads/')}">online lesen</a></td></tr>"""
         )
     for entry in entries:
         if entry.page_slug == "":
@@ -599,7 +644,7 @@ def download_rows(entries: list[Entry], prefix: str, current_page: bool = False)
             asset = href(prefix, ASSET_REL + f"/{entry.download_base}.{fmt}")
             links.append(f'<a href="{asset}" target="_blank" rel="noopener noreferrer">{fmt.upper()}</a>')
         rows.append(
-            f"""<tr><th scope="row">{html.escape(entry.title)}</th><td>{html.escape(entry.doc_type)}</td><td>Online lesbare öffentliche Fassung für Rang 18.</td><td>{html.escape(entry.version)}</td><td>{html.escape(entry.stand)}</td><td>PDF/DOCX</td><td>{' · '.join(links)}</td><td><a href="{href(prefix, online_rel)}">online lesen</a></td></tr>"""
+            f"""<tr><th scope="row">{html.escape(entry.title)}</th><td>{html.escape(entry.doc_type)}</td><td>Online lesbare öffentliche Fassung.</td><td>{html.escape(entry.version)}</td><td>{html.escape(entry.stand)}</td><td>PDF/DOCX</td><td>{' · '.join(links)}</td><td><a href="{href(prefix, online_rel)}">online lesen</a></td></tr>"""
         )
     return "".join(rows)
 
@@ -665,7 +710,7 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
     <meta property="og:image" content="{SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="{href(prefix, 'assets/img/brand/favicon.svg')}" type="image/svg+xml">
-    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260525-rang18')}">
+    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260606-nav-cache-fix')}">
     {extra_head}
   </head>
   <body>
@@ -677,20 +722,20 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
     </header>
     <main data-pagefind-body>
       <p class="print-meta">Wirkungsökonomie · Rang 18 Wissen, Wissenschaft, Forschung und Wirkungsinnovation · {canonical} · Druckdatum: 2026-05-25</p>
-      <section class="hero"><div class="hero-grid"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="{href(prefix, 'index.html')}">Start</a> / <a href="{href(prefix, PORTAL_REL + '/')}">Wissen, Wissenschaft, Forschung und Wirkungsinnovation</a></nav><p class="hero-kicker">Rang 18 · Wirkungsökonomie</p><h1>{html.escape(title)}</h1><p class="hero-subtitle">{html.escape(subtitle)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button><a class="btn btn-primary" href="#onlinefassung">Online lesen</a>{pdf_button}{docx_button}</div></div><aside class="card"><p class="card-kicker">Dokument</p><dl class="portal-meta-grid compact"><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div>{meta_bits}</dl><p class="card-text">Öffentliche Lesefassung. Downloads ergänzen den Onlinezugang.</p></aside></div></section>
+      <section class="hero"><div class="hero-grid"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="{href(prefix, 'index.html')}">Start</a> / <a href="{href(prefix, PORTAL_REL + '/')}">Wissen, Wissenschaft, Forschung und Wirkungsinnovation</a></nav><p class="hero-kicker">Wirkungsökonomie</p><h1>{html.escape(title)}</h1><p class="hero-subtitle">{html.escape(subtitle)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button><a class="btn btn-primary" href="#onlinefassung">Online lesen</a>{pdf_button}{docx_button}</div></div><aside class="card"><p class="card-kicker">Dokument</p><dl class="portal-meta-grid compact"><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div>{meta_bits}</dl><p class="card-text">Öffentliche Lesefassung. Downloads ergänzen den Onlinezugang.</p></aside></div></section>
       <section class="section"><div class="card"><p class="hero-kicker">Wirkungslogik</p><h2>Wissenschaft als Korrektursystem</h2><p>Wirkung ist neutral und relational: Sie beschreibt tatsächliche Zustandsveränderungen. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Ziel ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p>Wissenschaft wird hier nicht als Wahrheitsmonopol verstanden, sondern als Korrektursystem für überprüfbares, reproduzierbares, offenes und demokratisch anschlussfähiges Wirkungswissen.</p><p><strong>Schutzlinie:</strong> Keine Wahrheitsbehörde, keine technokratische Expertokratie und keine Abwertung demokratischer Entscheidung.</p></div></section>
-      <section class="section no-print"><div class="reading-layout"><aside class="card side-nav"><p class="card-kicker">Seitennavigation</p><details class="toc-card" open><summary>Inhaltsverzeichnis</summary>{toc_html(toc)}</details>{side_nav(entries, prefix)}</aside><div class="card"><p class="hero-kicker">Download</p><h2>Online lesen und exportieren</h2><p>Der vollständige Text steht auf dieser Seite. PDF und DOCX öffnen in einem neuen Tab.</p>{pdf_button}{docx_button}</div></div></section>
+      <section class="section no-print"><div class="article-reader-stack"><details class="card toc-card reader-toc-card" open><summary>Inhaltsverzeichnis</summary>{toc_html(toc)}<div class="portal-side-links">{side_nav(entries, prefix)}</div></details><div class="reader-download-inline"><p><strong>Downloads:</strong> Downloads öffnen in einem neuen Tab.</p><div class="hero-actions">{pdf_button}{docx_button}</div></div></div></section>
       {portal_sections}
-      <section class="section" id="onlinefassung"><article class="prose-card">{body}</article></section>
+      <section class="section" id="onlinefassung"><article class="article-body prose-card portal-longform">{body}</article></section>
       {sdg_block(prefix)}
       {policy_block()}
       <section class="section" id="toolkarten-kontext"><div class="section-header"><p class="hero-kicker">Werkzeuge</p><h2>Kontextbezogene Toolkarten</h2></div>{tool_cards(prefix)}</section>
       <section class="section" id="buchanker"><div class="section-header"><p class="hero-kicker">Online-Buch</p><h2>Buchanker</h2></div>{links_strip(prefix, BOOK)}</section>
       <section class="section" id="querverweise"><div class="section-header"><p class="hero-kicker">Vernetzung</p><h2>Querverlinkungen</h2></div>{links_strip(prefix, RELATED)}</section>
-      <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Downloadbereich Rang 18</h2></div>{download_table(entries, prefix)}</section>
+      <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Downloadbereich</h2></div>{download_table(entries, prefix)}</section>
     </main>
-    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Rang 18</h2><div><a href="{href(prefix, PORTAL_REL + '/')}">Wissenschaft & Forschung</a><a href="{href(prefix, PORTAL_REL + '/downloads/')}">Downloads</a><a href="{href(prefix, PORTAL_REL + '/toolkarten/')}">Toolkarten</a></div></div><div class="footer-nav-group"><h2>Referenz</h2><div><a href="{href(prefix, 'verstehen/sdgs-sdgplus/')}">SDG-/SDG+-Referenzrahmen</a><a href="{href(prefix, 'glossar.html')}">Glossar</a><a href="{href(prefix, 'referenz/')}">Online-Buch</a></div></div></div></footer>
-    <script src="{href(prefix, 'assets/js/main.js?v=20260525-ux-finish')}"></script>
+    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Portal</h2><div><a href="{href(prefix, PORTAL_REL + '/')}">Wissenschaft & Forschung</a><a href="{href(prefix, PORTAL_REL + '/downloads/')}">Downloads</a><a href="{href(prefix, PORTAL_REL + '/toolkarten/')}">Toolkarten</a></div></div><div class="footer-nav-group"><h2>Referenz</h2><div><a href="{href(prefix, 'verstehen/sdgs-sdgplus/')}">SDG-/SDG+-Referenzrahmen</a><a href="{href(prefix, 'glossar.html')}">Glossar</a><a href="{href(prefix, 'referenz/')}">Online-Buch</a></div></div></div></footer>
+    <script src="{href(prefix, 'assets/js/main.js?v=20260606-main-cache-fix')}"></script>
   </body>
 </html>"""
     (path / "index.html").write_text(html_doc, encoding="utf-8")
@@ -698,8 +743,8 @@ def write_page(path: Path, title: str, subtitle: str, body: str, toc: list[tuple
 
 def build_download_page(entries: list[Entry], path: Path, title: str) -> None:
     prefix = rel_prefix(path)
-    body = f"""<h2 id="downloadbereich">Downloadbereich</h2><p>Dieser Bereich bündelt die öffentlichen Onlinefassungen, PDF- und DOCX-Downloads sowie das bereinigte ZIP-Gesamtpaket für Rang 18.</p>{download_table(entries, prefix)}"""
-    write_page(path, title, "Downloadstruktur für Rang 18 mit ZIP, PDF, DOCX und Onlinefassungen.", body, [(2, "Downloadbereich", "downloadbereich")], entries)
+    body = f"""<h2 id="downloadbereich">Downloadbereich</h2><p>Dieser Bereich bündelt die öffentlichen Onlinefassungen, PDF- und DOCX-Downloads sowie das bereinigte ZIP-Gesamtpaket.</p>{download_table(entries, prefix)}"""
+    write_page(path, title, "Downloadstruktur mit ZIP, PDF, DOCX und Onlinefassungen.", body, [(2, "Downloadbereich", "downloadbereich")], entries)
 
 
 def update_sitemap(entries: list[Entry]) -> None:
@@ -734,8 +779,8 @@ def main() -> None:
         if entry.page_slug == "":
             subtitle = "Wissenschaft ist in der Wirkungsökonomie kein Wahrheitsmonopol. Wissenschaft ist ein Korrektursystem für freies, überprüfbares, reproduzierbares, offenes und demokratisch anschlussfähiges Wirkungswissen."
         write_page(page_dir, entry.title, subtitle, body, toc, entries, entry)
-    build_download_page(entries, PORTAL_DIR / "downloads", "Downloads Rang 18")
-    build_download_page(entries, DOWNLOAD_DIR, "Rang 18 Downloads: Wissen, Wissenschaft, Forschung und Wirkungsinnovation")
+    build_download_page(entries, PORTAL_DIR / "downloads", "Downloads")
+    build_download_page(entries, DOWNLOAD_DIR, "Downloads: Wissen, Wissenschaft, Forschung und Wirkungsinnovation")
     update_sitemap(entries)
     print(f"Built {len(entries)} public Rang 18 entries")
 

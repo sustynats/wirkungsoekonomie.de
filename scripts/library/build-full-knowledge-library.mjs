@@ -4,6 +4,7 @@ import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
 const REGISTRY_PATH = path.join(ROOT, "assets/data/library-version-registry.json");
+const BLOG_INDEX_PATH = path.join(ROOT, "assets/data/blog-index.json");
 const OUT = path.join(ROOT, "bibliothek/index.html");
 const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
 
@@ -148,6 +149,7 @@ function displayType(doc) {
 
 function typeIntro(type) {
   const map = {
+    Journalartikel: "Aktuelle Einordnungen, Kommentare und Leitartikel aus dem Journal.",
     Buch: "Vollständige Bücher, Handbücher und online lesbare Gesamtfassungen.",
     Grundlagenwerk: "Tragende Referenzen, Bücher und Systemdarstellungen.",
     Whitepaper: "Fachliche Einordnung mit Argumentations- und Methodenfokus.",
@@ -160,6 +162,61 @@ function typeIntro(type) {
     Präsentation: "Folien und Lern-/Vortragsmaterial."
   };
   return map[type] || "Dokumente und Onlinefassungen der Wirkungsökonomie.";
+}
+
+function formatDate(value = "") {
+  if (!value) return "";
+  const [year, month, day] = String(value).split("-");
+  if (!year || !month || !day) return value;
+  return `${day}.${month}.${year}`;
+}
+
+function normalizeSitePath(value = "") {
+  return String(value).replace(/^\/+/, "");
+}
+
+function loadJournalArticles() {
+  if (!fs.existsSync(BLOG_INDEX_PATH)) return [];
+  const articles = JSON.parse(fs.readFileSync(BLOG_INDEX_PATH, "utf8"));
+  return articles
+    .filter((item) => item.status !== "draft" && item.url)
+    .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
+}
+
+function journalToLibraryDoc(article) {
+  const tags = article.tags || [];
+  return {
+    id: `journal-${slug(article.url || article.title)}`,
+    title: article.title,
+    shortDescription: article.excerpt || "Journalartikel der Wirkungsökonomie.",
+    type: "Journalartikel",
+    status: "aktuell",
+    source: "Journal",
+    formats: ["Online"],
+    urls: {
+      primary: normalizeSitePath(article.url),
+    },
+    topics: [...new Set([article.category, ...tags].filter(Boolean))],
+    relatedMethods: tags.filter((tag) => /wirk|debatte|resonanz|agenda|frame|folge/i.test(tag)).slice(0, 4),
+    relatedImpactFields: [article.category].filter(Boolean),
+    isLeadingReference: false,
+    journalDate: article.date || "",
+    readingTime: article.readingTime || "",
+  };
+}
+
+function journalCard(article) {
+  const image = article.image ? `<a class="journal-library-image" href="${esc(siteHref(normalizeSitePath(article.url)))}"><img src="${esc(siteHref(normalizeSitePath(article.image)))}" alt="${esc(article.imageAlt || article.title)}" loading="lazy"></a>` : "";
+  const meta = [article.category, formatDate(article.date), article.readingTime].filter(Boolean).join(" · ");
+  return `<article class="journal-library-card">
+      ${image}
+      <div class="journal-library-card-body">
+        <p class="card-kicker">${esc(meta || "Journal")}</p>
+        <h3>${esc(article.title)}</h3>
+        <p>${esc(article.excerpt || "")}</p>
+        <a class="text-link" href="${esc(siteHref(normalizeSitePath(article.url)))}">Artikel lesen</a>
+      </div>
+    </article>`;
 }
 
 function card(doc, index, onlineByKey) {
@@ -241,8 +298,9 @@ function mergeDocumentVariants(rawDocuments) {
 }
 
 const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
+const journalArticles = loadJournalArticles();
 const rawDocuments = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
-const documents = mergeDocumentVariants(rawDocuments);
+const documents = mergeDocumentVariants([...rawDocuments, ...journalArticles.map(journalToLibraryDoc)]);
 const typeValues = new Set(documents.map((doc) => displayType(doc)).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));
@@ -256,6 +314,7 @@ for (const doc of documents) {
 }
 
 const leadingCards = documents.filter((doc) => doc.isLeadingReference).slice(0, 12).map((doc, index) => card(doc, index, onlineByKey)).join("\n");
+const latestJournalCards = journalArticles.slice(0, 2).map(journalCard).join("\n");
 const pathCards = registry.readingPaths.map((item) => `
   <article class="document-reading-path">
     <h3>${esc(item.title)}</h3>
@@ -279,7 +338,7 @@ const html = `<!DOCTYPE html>
     <meta name="search_description" content="Vollständige geführte Wissensbibliothek der Wirkungsökonomie mit Dokumentart, Status, Kurzbeschreibung, Umfang, Lesepfaden und Vollregister.">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260531-full-knowledge-library">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -303,6 +362,18 @@ const html = `<!DOCTYPE html>
           <span><strong>${registry.counts.downloadFiles}</strong> Dateien</span>
           <span><strong>${registry.counts.onlineVersions}</strong> Onlinefassungen</span>
           <span><strong>${registry.counts.byStatus["führend"] || 0}</strong> führende Referenzen</span>
+        </div>
+      </section>
+      <section class="section section-muted" id="journal">
+        <div class="section-header">
+          <p class="hero-kicker">Journal</p>
+          <h2>Aktuelle Einordnungen aus dem Journal</h2>
+          <p>Das Journal gehört zur Bibliothek: Es ordnet neue Texte, Debatten und Veröffentlichungen ein und macht sichtbar, was zuletzt hinzugekommen ist.</p>
+        </div>
+        <div class="journal-library-grid">${latestJournalCards}</div>
+        <div class="section-actions">
+          <a class="btn btn-primary" href="../blog.html">Alle Journalartikel öffnen</a>
+          <a class="btn btn-secondary" href="../updates/">RSS &amp; Updates</a>
         </div>
       </section>
       <section class="section section-muted">
@@ -341,7 +412,7 @@ const html = `<!DOCTYPE html>
         <div class="knowledge-library-grid" data-library-results>${allCards}</div>
       </section>
     </main>
-    <script src="../assets/js/main.js?v=20260531-full-knowledge-library"></script>
+    <script src="../assets/js/main.js?v=20260606-main-cache-fix"></script>
     <script src="../assets/js/full-library.js?v=20260531-full-knowledge-library"></script>
   </body>
 </html>`;

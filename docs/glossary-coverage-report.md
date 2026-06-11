@@ -1,17 +1,18 @@
 # Glossary Coverage Report
 
-Stand: 2026-05-31T13:51:57.927Z
+Stand: 2026-06-01T09:12:17.463Z
 
-- HTML-Seiten gescannt: 3263
-- Seiten mit /begriffe/-Links: 2467
-- Seiten mit Glossar-/Term-Markup: 1568
+- HTML-Seiten gescannt: 3275
+- Seiten mit /begriffe/-Links: 2507
+- Seiten mit Glossar-/Term-Markup: 1599
 - Tote Glossarlinks: 0
 
 ## Seiten mit den meisten Glossarlinks
-- referenz/index.html: 291
-- referenz/kapitel/index.html: 288
-- begriffe/positive-netto-wirkung/index.html: 49
+- referenz/index.html: 297
+- referenz/kapitel/index.html: 294
+- begriffe/positive-netto-wirkung/index.html: 50
 - begriffe/wirkungsrisiko/index.html: 42
+- werkzeuge/index.html: 41
 - begriffe/demokratie/index.html: 40
 - begriffe/vertrauen/index.html: 39
 - begriffe/resonanzraum/index.html: 38
@@ -23,6 +24,8 @@ Stand: 2026-05-31T13:51:57.927Z
 - begriffe/wirkungsarchitektur/index.html: 29
 - referenz/teil-11-gesellschaftliche-grundsysteme/index.html: 29
 - begriffe/demokratische-erosion/index.html: 28
+- begriffe/sechster-kondratieff/index.html: 28
+- begriffe/soziale-infrastruktur/index.html: 28
 - begriffe/wirkungsresilienz/index.html: 28
 - begriffe/kapitalwirkung/index.html: 27
 - begriffe/rueckkopplung/index.html: 27
@@ -50,6 +53,8 @@ Stand: 2026-05-31T13:51:57.927Z
 - begriffe/wirkungsblindheit/index.html: 22
 - begriffe/wirkungsrat/index.html: 22
 - begriffe/greenwashing/index.html: 21
+- begriffe/pigou-steuer/index.html: 21
+- begriffe/sexarbeit/index.html: 21
 - begriffe/datenqualitaet/index.html: 20
 - begriffe/kognitive-dissonanz/index.html: 20
 - begriffe/wirkungsbewertung/index.html: 20
@@ -101,13 +106,8 @@ Stand: 2026-05-31T13:51:57.927Z
 - begriffe/nichtkompensationsprinzip/index.html: 15
 - begriffe/orientierung/index.html: 15
 - begriffe/rassismus/index.html: 15
-- begriffe/sechster-kondratieff/index.html: 15
 - begriffe/systemgrenze/index.html: 15
 - begriffe/thinktank/index.html: 15
-- begriffe/wirkstoff/index.html: 15
-- begriffe/wirkungsinnovation/index.html: 15
-- begriffe/wirkungsraum/index.html: 15
-- referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/index.html: 15
 
 ## Tote Glossarlinks
 Keine.

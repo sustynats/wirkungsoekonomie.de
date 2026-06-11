@@ -9,7 +9,7 @@ const clusters = [
   {
     title: "Alltag & Grundbedürfnisse",
     text: "Lebensbereiche, in denen Wirkung unmittelbar in Alltag, Teilhabe, Sicherheit, Gesundheit, Wohnen, Bildung, Arbeit und sozialer Stabilität spürbar wird.",
-    fields: ["bildung", "gesundheit-pflege", "wohnen-stadt", "arbeit-einkommen", "rente-soziale-sicherung"],
+    fields: ["bildung", "gesundheit", "wohnen-stadt", "arbeit-einkommen", "rente-soziale-sicherung"],
   },
   {
     title: "Wirtschaft & Kapital",
@@ -48,14 +48,14 @@ const fields = [
     pilot: "Wirkungsschulen, kommunale Bildungsnetzwerke, Wirkungsportfolios und präventive Förderlogiken.",
   },
   {
-    slug: "gesundheit-pflege",
-    title: "Gesundheit & Pflege",
-    short: "Vom System, das Krankheit finanziert, zu einem System, das Gesundheit, Prävention, Pflege, Resilienz und Teilhabe erzeugt.",
+    slug: "gesundheit",
+    title: "Gesundheit",
+    short: "Vom System, das Krankheit finanziert, zu einem System, das Gesundheit, Prävention, Pflege, One Health, Resilienz und Teilhabe erzeugt.",
     dimensions: ["Mensch", "Planet", "Demokratie"],
     status: "Live",
     tools: [["Gesundheitswirkungscheck", "wirkungsfelder/gesundheit-pflege/tools/gesundheitswirkungscheck/"], ["Pflegewirkungscheck", "wirkungsfelder/gesundheit-pflege/tools/pflegewirkungscheck/"], ["Wirkungshaushalt", "werkzeuge/wirkungshaushalt/"]],
     demos: [["Erleben", "erleben/"], ["Wirkungsscanner", "anwendungen/scanner.html"]],
-    docs: [["Konzept Gesundheit & Pflege", "wirkungsfelder/gesundheit-pflege/konzept/"], ["Dossier Gesundheit & Pflege", "wirkungsfelder/gesundheit-pflege/dossier/"]],
+    docs: [["Gesundheit & Pflege Portal", "wirkungsfelder/gesundheit-pflege/"], ["Konzept Gesundheit & Pflege", "wirkungsfelder/gesundheit-pflege/konzept/"], ["Dossier Gesundheit & Pflege", "wirkungsfelder/gesundheit-pflege/dossier/"]],
     problem: "Gesundheit und Pflege werden häufig erst im Reparaturmodus finanziert; Prävention, Würde, psychische Stabilität und Quartierswirkung bleiben unterbelichtet.",
     visible: "Sichtbar werden Präventionsnutzen, Pflegequalität, Zugang, Würde, Teilhabe, One-Health-Bezüge und vermeidbare Folgekosten.",
     pilot: "Kommunale Gesundheitsräume, Präventionsbudgets, Pflegewirkungschecks und Gesundheitsdatenräume mit Privacy-by-Design.",
@@ -268,8 +268,8 @@ function overviewMain(fromFile) {
           </div>
           <aside class="card">
             <p class="card-kicker">Orientierung</p>
-            <h2 class="card-title">Kein Wirkungsfeld wurde entfernt.</h2>
-            <p class="card-text">Alle bisherigen Wirkungsfeldseiten bleiben erreichbar. Die Cluster sind eine Navigationshilfe, keine fachliche Abwertung oder neue Zuständigkeit.</p>
+            <h2 class="card-title">Suchräume statt Ressorts.</h2>
+            <p class="card-text">Die Wirkungsfelder helfen, eine Frage schneller einzuordnen: Betrifft sie Alltag, Planet, Wirtschaft, Staat, Öffentlichkeit, Wissen oder Kapital?</p>
           </aside>
         </div>
       </section>

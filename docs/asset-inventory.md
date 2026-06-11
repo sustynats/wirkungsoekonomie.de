@@ -28,12 +28,12 @@ Stand: 2026-05-22. Dieses Inventar ist die Bestandsschutz-Grundlage fuer Sprint 
 | BRAND-GUIDE.md | BRAND-GUIDE.md | markdown | nicht direkt referenziert | - | needs_review | Nicht ungeprueft entfernen; Verwendung und fachliche Relevanz im naechsten Review klaeren. |
 | README.md | README.md | markdown | nicht direkt referenziert | - | needs_review | Nicht ungeprueft entfernen; Verwendung und fachliche Relevanz im naechsten Review klaeren. |
 | SITE-INVENTORY.md | SITE-INVENTORY.md | markdown | nicht direkt referenziert | - | needs_review | Nicht ungeprueft entfernen; Verwendung und fachliche Relevanz im naechsten Review klaeren. |
-| die-woek-akademie.wav | assets/audio/die-woek-akademie.wav | audio | eingebunden | akademie.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
-| grundidee-wirkungsoekonomie.wav | assets/audio/grundidee-wirkungsoekonomie.wav | audio | eingebunden | index.html | improve | Audio erhalten; Transkript vorhanden, Vollstaendigkeit pruefen. |
-| von-daten-zum-steuersatz.wav | assets/audio/von-daten-zum-steuersatz.wav | audio | eingebunden | workflow.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
-| was-die-wirkungsoekonomie-unterscheidet.wav | assets/audio/was-die-wirkungsoekonomie-unterscheidet.wav | audio | eingebunden | vergleich.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
-| wirkung-politischer-sprache.wav | assets/audio/wirkung-politischer-sprache.wav | audio | eingebunden | sdg-plus/medien-demokratie/wirkung-politischer-sprache.html | improve | Audio erhalten; Transkript vorhanden, Vollstaendigkeit pruefen. |
-| wirkungsoekonomie-kurz-erklaert.wav | assets/audio/wirkungsoekonomie-kurz-erklaert.wav | audio | eingebunden | wirkungsoekonomie.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
+| die-woek-akademie.wav | assets/audio/die-woek-akademie.mp3 | audio | eingebunden | akademie.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
+| grundidee-wirkungsoekonomie.wav | assets/audio/grundidee-wirkungsoekonomie.mp3 | audio | eingebunden | index.html | improve | Audio erhalten; Transkript vorhanden, Vollstaendigkeit pruefen. |
+| von-daten-zum-steuersatz.wav | assets/audio/von-daten-zum-steuersatz.mp3 | audio | eingebunden | workflow.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
+| was-die-wirkungsoekonomie-unterscheidet.wav | assets/audio/was-die-wirkungsoekonomie-unterscheidet.mp3 | audio | eingebunden | vergleich.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
+| wirkung-politischer-sprache.wav | assets/audio/wirkung-politischer-sprache.mp3 | audio | eingebunden | sdg-plus/medien-demokratie/wirkung-politischer-sprache.html | improve | Audio erhalten; Transkript vorhanden, Vollstaendigkeit pruefen. |
+| wirkungsoekonomie-kurz-erklaert.wav | assets/audio/wirkungsoekonomie-kurz-erklaert.mp3 | audio | eingebunden | wirkungsoekonomie.html | improve | Audio erhalten; Transkript fehlt oder ist nur Platzhalter. |
 | narrative-cases.json | assets/data/narrative-cases.json | json | nicht direkt referenziert | - | keep | Struktur- oder Datenbestand; nicht loeschen, Abhaengigkeiten vor Aenderungen pruefen. |
 | navigation.json | assets/data/navigation.json | json | nicht direkt referenziert | - | keep | Struktur- oder Datenbestand; nicht loeschen, Abhaengigkeiten vor Aenderungen pruefen. |
 | scorecard-examples.json | assets/data/scorecard-examples.json | json | eingebunden | assets/js/scorecard-dashboard.js | keep | Eingebunden; erhalten und bei Bedarf fachlich/visuell verbessern. |

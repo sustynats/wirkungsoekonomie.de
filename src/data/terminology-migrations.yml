@@ -21,6 +21,21 @@ wirkungspotenzial:
     - "Wird Potenzial mit eingetretener Wirkung verwechselt?"
     - "Ist bei Sprache, Medien und Narrativen nur ein Wirkpfad gemeint?"
   mode: "suggest-only"
+frame-framing-reframing:
+  check:
+    - "Wird bei Frame, Framing und Reframing klar zwischen Deutungsrahmen, Prozess und bewusster Verschiebung unterschieden?"
+    - "Wird bei Sprache, Medien und Narrativen zwischen Wirkungspotenzial, Wirkpfad und Wirkungsnachweis unterschieden?"
+    - "Wird Reframing nicht als Manipulation, Schönfärberei oder PR verwendet?"
+    - "Macht der neue Frame mehr Wirklichkeit sichtbar als der alte?"
+    - "Werden Zielkonflikte, Nebenwirkungen und Risiken offengelegt?"
+    - "Vermeidet der Frame Feindbilder, Entwürdigung und unbelegte Absichtszuschreibungen?"
+    - "Verschiebt der Frame den Bewertungsmaßstab nachvollziehbar in Richtung positive Netto-Wirkung für Mensch, Planet und Demokratie?"
+  preferred:
+    - "Frame als Deutungsrahmen"
+    - "Framing als Setzen oder Verstärken eines Deutungsrahmens"
+    - "Reframing als Verschiebung des Deutungs- und Bewertungsrahmens"
+    - "wirkungsorientiertes Reframing als Sichtbarmachen von blinden Flecken, Folgekosten, Wirkungspfaden und positiver Netto-Wirkung"
+  mode: "suggest-only"
 netto-wirkung:
   check:
     - "Wird Netto-Wirkung als Addition positiver und negativer Werte dargestellt?"
@@ -39,4 +54,3 @@ sdg-plus:
   check:
     - "Wird SDG+ als WÖk-Erweiterung und nicht als UN-Kategorie dargestellt?"
   mode: "suggest-or-add-context-box"
-

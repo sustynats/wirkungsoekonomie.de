@@ -1,0 +1,413 @@
+effects:
+  - id: "kognitive-dissonanz"
+    title: "Kognitive Dissonanz"
+    shortDefinition: "Spannungszustand, wenn neue Informationen den eigenen Überzeugungen, der Identität oder dem bisherigen Verhalten widersprechen."
+    whyItWorks: "Menschen wollen innere Konsistenz. Wenn Fakten eine bisherige Haltung infrage stellen, entsteht psychischer Druck. Dieser Druck wird oft durch Abwertung der Quelle, Ausweichen oder Umdeutung reduziert."
+    typicalNarratives:
+      - "Man darf ja nichts mehr sagen"
+      - "Die Wissenschaft ist gekauft"
+      - "Mainstreammedien lügen alle"
+      - "E-Autos sind schlimmer als Verbrenner"
+    emotionalHooks:
+      - "Kränkung"
+      - "Selbstschutz"
+      - "Gesichtsverlust vermeiden"
+    risk: "Fakten werden nicht geprüft, sondern abgewehrt, weil sie als Angriff auf die eigene Person oder Gruppe erlebt werden."
+    responsePrinciple: "Gesichtswahrend korrigieren: Person respektieren, Aussage prüfen."
+    manipulationPatterns:
+      - "Opferinszenierung"
+      - "Quellenzerstörung"
+      - "Frame-Übernahme"
+    hostSentences:
+      - "Ich greife nicht dich an, sondern ich prüfe die Aussage."
+      - "Es ist völlig okay, seine Einschätzung zu ändern, wenn neue Informationen dazukommen."
+      - "Lass uns Gefühl, Fakt und Schlussfolgerung trennen."
+    relatedNarratives:
+      - "Opferumkehr"
+      - "Wissenschaftsdelegitimierung"
+      - "Medienfeindbild"
+    relatedLiveCards:
+      - "man-darf-ja-nichts-mehr-sagen"
+      - "die-wissenschaft-ist-gekauft"
+      - "mainstreammedien-luegen-alle"
+    mpd:
+      mensch: "Gesichtsverlust und Abwehr können Lernen blockieren."
+      planet: "Klimawirkung wird abgewehrt, wenn sie bisherige Entscheidungen infrage stellt."
+      demokratie: "Korrekturen werden als Angriff statt als Lernprozess erlebt."
+  - id: "bestaetigungsfehler"
+    title: "Bestätigungsfehler"
+    shortDefinition: "Tendenz, Informationen stärker zu beachten, die zur eigenen Überzeugung passen, und widersprechende Informationen abzuwerten."
+    whyItWorks: "Menschen suchen nicht nur Wahrheit, sondern auch Orientierung und Stabilität. Informationen, die zum bisherigen Weltbild passen, fühlen sich schneller plausibel an."
+    typicalNarratives:
+      - "Die da oben machen sowieso, was sie wollen"
+      - "SDGs sind Weltregierung"
+      - "Die Wissenschaft ist gekauft"
+      - "Klimawandel gab es schon immer"
+    emotionalHooks:
+      - "Vertrautheit"
+      - "Gruppengefühl"
+      - "Misstrauen gegen Gegenseite"
+    risk: "Die Debatte wird immun gegen Korrektur, weil nur noch passende Belege akzeptiert werden."
+    responsePrinciple: "Gemeinsamen Ausgangspunkt suchen und dann die Bilanzgrenze öffnen."
+    manipulationPatterns:
+      - "Quellenzerstörung"
+      - "Beweislastumkehr"
+      - "Teilfakt als Totalurteil"
+    hostSentences:
+      - "Welche Information würde deine Einschätzung verändern?"
+      - "Lass uns beide Quellen nebeneinanderlegen."
+      - "Was müsste stimmen, damit diese Schlussfolgerung trägt?"
+    relatedNarratives:
+      - "Elitenverschwörung"
+      - "Kontrollverlust"
+      - "Wissenschaftsdelegitimierung"
+    relatedLiveCards:
+      - "sdgs-weltregierung"
+      - "die-da-oben"
+      - "die-wissenschaft-ist-gekauft"
+    mpd:
+      mensch: "Orientierung wird enger, Korrektur wird schwerer."
+      planet: "Unpassende Klima- und Energiedaten werden leichter ausgeblendet."
+      demokratie: "Gemeinsame Belegkriterien zerfallen."
+  - id: "motiviertes-denken"
+    title: "Motiviertes Denken"
+    shortDefinition: "Informationsverarbeitung, bei der gewünschte Schlussfolgerungen, Identität oder Gruppenzugehörigkeit geschützt werden."
+    whyItWorks: "Menschen verarbeiten Informationen nicht neutral, wenn viel soziale Identität daran hängt."
+    typicalNarratives:
+      - "Klimaschutz ist Ökodiktatur"
+      - "Wirkungsökonomie ist Planwirtschaft"
+      - "Wirkungsökonomie ist Social Credit"
+      - "Gender-Ideologie"
+    emotionalHooks:
+      - "Identitätsschutz"
+      - "Freiheitsangst"
+      - "Statusschutz"
+    risk: "Fakten werden als Lagerangriff erlebt."
+    responsePrinciple: "Wertebrücke bauen: Freiheit, Würde und Kontrolle anerkennen, dann die Wirkungsfrage stellen."
+    manipulationPatterns:
+      - "Frame-Übernahme"
+      - "falsches Dilemma"
+      - "Emotion vor Klärung"
+    hostSentences:
+      - "Die Sorge vor Kontrolle ist wichtig. Genau deshalb müssen wir sauber unterscheiden."
+      - "Hier geht es nicht um Personenbewertung, sondern um Produkt- und Systemwirkung."
+      - "Welche Freiheit wollen wir schützen - und welche Schäden verhindern?"
+    relatedNarratives:
+      - "Verbotsnarrativ"
+      - "Normalisierung"
+      - "Zersetzung"
+    relatedLiveCards:
+      - "klimaschutz-ist-oekodiktatur"
+      - "wirkungsoekonomie-social-credit"
+      - "wirkungsoekonomie-planwirtschaft"
+    mpd:
+      mensch: "Fakten können als Identitätsangriff erlebt werden."
+      planet: "Wirksame Maßnahmen werden abgewehrt, wenn sie Lageridentität berühren."
+      demokratie: "Debatten kippen von Sachprüfung in Lagerkampf."
+  - id: "reaktanz"
+    title: "Reaktanz"
+    shortDefinition: "Abwehrreaktion, wenn Menschen ihre Freiheit, Kontrolle oder Selbstbestimmung bedroht sehen."
+    whyItWorks: "Wenn etwas als Verbot oder Bevormundung gerahmt wird, entsteht Trotz - selbst dann, wenn die Maßnahme Schutz oder Fairness bezweckt."
+    typicalNarratives:
+      - "Die wollen uns alles verbieten"
+      - "Klimaschutz ist Ökodiktatur"
+      - "Das ist Zensur"
+      - "Wirkungsökonomie ist Social Credit"
+    emotionalHooks:
+      - "Freiheitsverlust"
+      - "Kontrollverlust"
+      - "Trotz"
+    risk: "Sachfragen werden zu Identitäts- und Freiheitskämpfen."
+    responsePrinciple: "Regel, Preis, Schutz, Verbot und Wahlmöglichkeiten unterscheiden."
+    manipulationPatterns:
+      - "Falsche Voraussetzung"
+      - "Opferinszenierung"
+      - "Falsches Dilemma"
+    hostSentences:
+      - "Nicht jede Regel ist ein Verbot."
+      - "Welche Freiheit wird hier wirklich eingeschränkt - und welche Freiheit wird geschützt?"
+      - "Lass uns Verhältnismäßigkeit prüfen."
+    relatedNarratives:
+      - "Verbotsnarrativ"
+      - "Opferumkehr"
+      - "Kontrollverlust"
+    relatedLiveCards:
+      - "das-ist-zensur"
+      - "klimaschutz-ist-oekodiktatur"
+      - "man-darf-ja-nichts-mehr-sagen"
+    mpd:
+      mensch: "Schutzmaßnahmen können als Angriff erlebt werden."
+      planet: "Klimaschutz wird in Kulturkampf übersetzt."
+      demokratie: "Moderation und Regeln werden als Unterdrückung gerahmt."
+  - id: "verlustaversion"
+    title: "Verlustaversion"
+    shortDefinition: "Tendenz, Verluste stärker zu gewichten als gleich große Gewinne."
+    whyItWorks: "Menschen reagieren stärker auf das Gefühl, dass ihnen etwas genommen wird, als auf abstrakte Zukunftsgewinne."
+    typicalNarratives:
+      - "CO₂-Preis ist Abzocke"
+      - "Klimaschutz macht alles unbezahlbar"
+      - "Die verbieten uns das Auto"
+      - "Wohlstand geht verloren"
+    emotionalHooks:
+      - "Kostenangst"
+      - "Statusverlust"
+      - "Besitzschutz"
+    risk: "Kurzfristig sichtbare Kosten verdrängen langfristig größere Systemkosten."
+    responsePrinciple: "Sichtbare Rechnung und unsichtbare Rechnung nebeneinanderlegen."
+    manipulationPatterns:
+      - "Sichtbare Rechnung gegen unsichtbare Kosten"
+      - "Falsches Dilemma"
+      - "Frame-Übernahme"
+    hostSentences:
+      - "Vergleichen wir den sichtbaren Preis mit null Kosten - oder mit den realen Folgekosten?"
+      - "Was kostet Nicht-Handeln?"
+      - "Welche Entlastung und welche Alternative gibt es konkret?"
+    relatedNarratives:
+      - "Verbotsnarrativ"
+      - "Verzögerung"
+      - "Scheiternsframe"
+    relatedLiveCards:
+      - "co2-preis-oder-fossile-systemkosten"
+      - "klimaschutz-deindustrialisiert-deutschland"
+    mpd:
+      mensch: "Belastung wird real, aber unvollständig wahrgenommen."
+      planet: "Unsichtbare ökologische Folgekosten bleiben draußen."
+      demokratie: "Kostenangst wird politisch leicht instrumentalisierbar."
+  - id: "verfuegbarkeitsheuristik"
+    title: "Verfügbarkeitsheuristik"
+    shortDefinition: "Tendenz, leicht erinnerbare oder emotional starke Beispiele für häufiger oder typischer zu halten."
+    whyItWorks: "Ein emotionaler Einzelfall bleibt stärker hängen als eine nüchterne Grundgesamtheit."
+    typicalNarratives:
+      - "Windräder töten Vögel"
+      - "Kriminalität ist vor allem Migration"
+      - "Einzelfall als Systembeweis"
+      - "Batterien brennen ständig"
+    emotionalHooks:
+      - "Schock"
+      - "Angst"
+      - "Empörung"
+    risk: "Einzelfälle ersetzen Verhältnis, Häufigkeit und Kontext."
+    responsePrinciple: "Einzelfall anerkennen, dann Grundgesamtheit und Alternativenvergleich zeigen."
+    manipulationPatterns:
+      - "Teilfakt als Totalurteil"
+      - "Emotion vor Klärung"
+      - "Komplexitätsbruch"
+    hostSentences:
+      - "Der Fall ist ernst. Aber ist er typisch?"
+      - "Welche Grundgesamtheit betrachten wir?"
+      - "Wie sieht der Vergleich mit den Alternativen aus?"
+    relatedNarratives:
+      - "Scheiternsframe"
+      - "Sündenbock"
+      - "Medienfeindbild"
+    relatedLiveCards:
+      - "windraeder-zerstoeren-natur"
+      - "batterien-sind-nicht-recyclebar"
+    mpd:
+      mensch: "Angst wird durch auffällige Einzelfälle verstärkt."
+      planet: "Alternativenvergleich verschwindet."
+      demokratie: "Einzelfalllogik kann harte Scheinlösungen plausibel machen."
+  - id: "wahrheitsillusion"
+    title: "Wahrheitsillusion"
+    shortDefinition: "Wiederholte Aussagen fühlen sich vertrauter und dadurch wahrer an, auch wenn sie nicht besser belegt sind."
+    whyItWorks: "Vertrautheit wird mit Plausibilität verwechselt."
+    typicalNarratives:
+      - "Deutschland rettet das Klima nicht allein"
+      - "Mainstreammedien lügen"
+      - "CO₂ ist nur ein Spurengas"
+      - "Energiewende gescheitert"
+    emotionalHooks:
+      - "Vertrautheit"
+      - "Wiederholung"
+      - "Gruppenbestätigung"
+    risk: "Slogans werden zu gefühlten Wahrheiten."
+    responsePrinciple: "Nicht endlos den Mythos wiederholen; Fakten-Sandwich nutzen."
+    manipulationPatterns:
+      - "Frame-Übernahme"
+      - "Quellenzerstörung"
+      - "Normalisierung"
+    hostSentences:
+      - "Der Satz klingt bekannt, aber Bekanntheit ist kein Beleg."
+      - "Kurz der Mythos - dann der Denkfehler - dann zurück zum Fakt."
+    relatedNarratives:
+      - "Normalisierung"
+      - "Medienfeindbild"
+      - "Ohnmacht"
+    relatedLiveCards:
+      - "deutschland-nur-zwei-prozent"
+      - "mainstreammedien-luegen-alle"
+      - "co2-ist-nur-ein-spurengas"
+    mpd:
+      mensch: "Vertrautheit kann Orientierung ersetzen."
+      planet: "Wiederholte Klimamythen senken Handlungsdruck."
+      demokratie: "Slogans verdrängen Belegprüfung."
+  - id: "ingroup-outgroup"
+    title: "Ingroup/Outgroup-Effekt"
+    shortDefinition: "Tendenz, die eigene Gruppe positiver und andere Gruppen homogener, fremder oder bedrohlicher wahrzunehmen."
+    whyItWorks: "Zugehörigkeit gibt Sicherheit. In Krisen werden Grenzen zwischen Wir und Die emotional stärker."
+    typicalNarratives:
+      - "Wir gegen die"
+      - "Altparteien gegen Volk"
+      - "Deutsche gegen Migranten"
+      - "Patrioten gegen Ideologen"
+    emotionalHooks:
+      - "Zugehörigkeit"
+      - "Statusschutz"
+      - "Gruppenloyalität"
+    risk: "Pluralismus wird zu Lagerkampf, Kompromiss zu Verrat."
+    responsePrinciple: "Gruppenpauschalisierung auflösen und gemeinsame Wirkungsinteressen sichtbar machen."
+    manipulationPatterns:
+      - "Sündenbocklogik"
+      - "Falsches Dilemma"
+      - "Opferinszenierung"
+    hostSentences:
+      - "Nicht alle Menschen einer Gruppe verursachen dieses Problem."
+      - "Welche konkrete Struktur erzeugt den Schaden?"
+      - "Welche Lösung verbessert die Lage, ohne Gruppen gegeneinanderzustellen?"
+    relatedNarratives:
+      - "Sündenbock"
+      - "Zersetzung"
+      - "Elitenverschwörung"
+    relatedLiveCards:
+      - "die-da-oben"
+      - "man-wird-doch-wohl-fragen-duerfen"
+    mpd:
+      mensch: "Gruppenabwertung beschädigt Zugehörigkeit und Sicherheit."
+      planet: "Gemeinsame ökologische Aufgaben werden zu Lagerfragen."
+      demokratie: "Pluralismus wird als Verrat gelesen."
+  - id: "nullsummendenken"
+    title: "Nullsummendenken"
+    shortDefinition: "Fehleinschätzung, dass der Gewinn einer Gruppe automatisch der Verlust einer anderen Gruppe sein müsse."
+    whyItWorks: "In Unsicherheit wirken Ressourcen knapp. Dann wird Teilhabe anderer schnell als Bedrohung erlebt."
+    typicalNarratives:
+      - "Migration nimmt uns alles weg"
+      - "Klimaschutz gegen Wohlstand"
+      - "Frauenförderung benachteiligt Männer"
+      - "Stadt gegen Land"
+    emotionalHooks:
+      - "Knappheit"
+      - "Neid"
+      - "Verteilungskonflikt"
+    risk: "Gemeinsame Lösungen verschwinden hinter Gruppenkonkurrenz."
+    responsePrinciple: "Wirkungsbilanz statt Gruppenkampf."
+    manipulationPatterns:
+      - "Falsches Dilemma"
+      - "Sündenbocklogik"
+      - "Komplexitätsbruch"
+    hostSentences:
+      - "Ist das wirklich ein Nullsummenspiel?"
+      - "Welche Maßnahme verbessert die Lage für mehrere Gruppen?"
+      - "Wo liegt der echte Engpass?"
+    relatedNarratives:
+      - "Sündenbock"
+      - "Verbotsnarrativ"
+      - "Zersetzung"
+    relatedLiveCards:
+      - "klimaschutz-deindustrialisiert-deutschland"
+    mpd:
+      mensch: "Knappheitsstress verschärft Gruppenkonflikte."
+      planet: "Transformation wird als Wegnahme statt als Schutzbilanz gelesen."
+      demokratie: "Gemeinsame Lösungen verlieren Plausibilität."
+  - id: "statusbedrohung"
+    title: "Statusbedrohung"
+    shortDefinition: "Gefühl, dass eigene Anerkennung, Lebensweise oder soziale Position abgewertet oder verdrängt wird."
+    whyItWorks: "Status ist ein soziales Sicherheitssignal. Wenn er bedroht wirkt, steigt Abwehr gegen Veränderung."
+    typicalNarratives:
+      - "Woke gegen normale Bürger"
+      - "Gender-Ideologie"
+      - "Tradition wird zerstört"
+      - "Die eigene Kultur verschwindet"
+    emotionalHooks:
+      - "Kränkung"
+      - "Identitätsverlust"
+      - "Anerkennungsangst"
+    risk: "Kulturelle Konflikte verdrängen Sachfragen."
+    responsePrinciple: "Würde sichern, ohne Abwertung anderer Gruppen zu übernehmen."
+    manipulationPatterns:
+      - "Emotion vor Klärung"
+      - "Opferinszenierung"
+      - "Falsches Dilemma"
+    hostSentences:
+      - "Niemand muss seine Würde verlieren, damit andere gleiche Rechte haben."
+      - "Lass uns Tradition und Gleichwertigkeit nicht gegeneinanderstellen."
+      - "Welche konkrete Regel ist problematisch?"
+    relatedNarratives:
+      - "Opferumkehr"
+      - "Normalisierung"
+      - "Zersetzung"
+    relatedLiveCards:
+      - "man-darf-ja-nichts-mehr-sagen"
+      - "das-ist-zensur"
+    mpd:
+      mensch: "Kränkung und Statusangst erhöhen Abwehr."
+      planet: "Sachfragen können in Kulturkampf verschwinden."
+      demokratie: "Gleichwertigkeit wird als Statusverlust gerahmt."
+  - id: "kontrollbeduerfnis"
+    title: "Kontrollbedürfnis"
+    shortDefinition: "Menschliches Bedürfnis nach Ordnung, Vorhersagbarkeit und Handlungsfähigkeit."
+    whyItWorks: "Komplexe Krisen erzeugen Kontrollverlust. Einfache Schuldige und harte Maßnahmen fühlen sich dann entlastend an."
+    typicalNarratives:
+      - "Die da oben kontrollieren uns"
+      - "Grenzen dicht"
+      - "Task Force Abschiebungen"
+      - "Alles gesteuert"
+    emotionalHooks:
+      - "Sicherheitswunsch"
+      - "Misstrauen"
+      - "Kontrollverlust"
+    risk: "Autoritäre Scheinlösungen wirken attraktiver."
+    responsePrinciple: "Echte Kontrolle durch Transparenz, Verfahren, Rechtsstaat und messbare Wirkung zeigen."
+    manipulationPatterns:
+      - "Falsche Voraussetzung"
+      - "Beweislastumkehr"
+      - "Heilsversprechen"
+    hostSentences:
+      - "Kontrolle entsteht nicht durch Härte allein, sondern durch wirksame Verfahren."
+      - "Welche konkrete Maßnahme wirkt - und ist rechtsstaatlich?"
+      - "Was ist nachprüfbar?"
+    relatedNarratives:
+      - "Kontrollverlust"
+      - "Elitenverschwörung"
+      - "Zersetzung"
+    relatedLiveCards:
+      - "das-ist-alles-gesteuert"
+      - "sdgs-weltregierung"
+      - "wirkungsoekonomie-social-credit"
+    mpd:
+      mensch: "Unsicherheit kann Härtewünsche verstärken."
+      planet: "Komplexe Systemlösungen wirken unkontrollierbar."
+      demokratie: "Autoritäre Vereinfachungen gewinnen Anschluss."
+  - id: "ohnmacht"
+    title: "Gelernte Ohnmacht"
+    shortDefinition: "Zustand, in dem Menschen Handeln für sinnlos halten, weil sie Veränderung nicht mehr als wirksam erleben."
+    whyItWorks: "Wenn Probleme sehr groß wirken, entlastet der Gedanke: Es bringt sowieso nichts."
+    typicalNarratives:
+      - "Deutschland ist nur 2 %"
+      - "Meine Stimme zählt nicht"
+      - "Die da oben machen sowieso, was sie wollen"
+      - "Es ist alles zu spät"
+    emotionalHooks:
+      - "Resignation"
+      - "Entlastung"
+      - "Zynismus"
+    risk: "Nicht-Handeln wird plausibel."
+    responsePrinciple: "Hebel sichtbar machen und kleine Wirkung nicht mit Wirkungslosigkeit verwechseln."
+    manipulationPatterns:
+      - "Ohnmachtsanker"
+      - "Whataboutism"
+      - "Moving Goalposts"
+    hostSentences:
+      - "Niemand löst alles allein. Aber daraus folgt nicht Wirkungslosigkeit."
+      - "Welche Hebel haben wir trotzdem?"
+      - "Was wäre die Wirkung von Unterlassen?"
+    relatedNarratives:
+      - "Ohnmacht"
+      - "Whataboutism"
+      - "Verzögerung"
+    relatedLiveCards:
+      - "deutschland-nur-zwei-prozent"
+      - "die-da-oben"
+    mpd:
+      mensch: "Selbstwirksamkeit sinkt."
+      planet: "Unterlassen wird wahrscheinlicher."
+      demokratie: "Beteiligung und Korrekturfähigkeit nehmen ab."

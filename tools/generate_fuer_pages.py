@@ -1133,7 +1133,7 @@ def shell(slug: str, title: str, description: str, tags: str, body: str, noindex
 {body}
     </main>
 {sync_layout.render(sync_layout.FOOTER_TEMPLATE, "../")}
-    <script src="../assets/js/main.js?v={VERSION}"></script>
+    <script src="../assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>"""
 

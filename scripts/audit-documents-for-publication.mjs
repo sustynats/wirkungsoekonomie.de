@@ -26,6 +26,20 @@ const SKIP_PARTS = [
   "outputs/"
 ];
 
+const EXISTING_DOCUMENT_META = (() => {
+  if (!fs.existsSync(DOC_MODEL)) return new Map();
+  try {
+    const current = JSON.parse(fs.readFileSync(DOC_MODEL, "utf8"));
+    return new Map((current.documents || []).map((doc) => [doc.id, {
+      fileSize: doc.fileSize,
+      pageCount: doc.pageCount,
+      estimatedReadingTime: doc.estimatedReadingTime,
+    }]));
+  } catch {
+    return new Map();
+  }
+})();
+
 const AUDIT_PATTERNS = [
   { id: "soll-ich", label: "Arbeitsprozess-Satz: Soll ich", pattern: /Soll ich/i },
   { id: "moechtest-du", label: "Arbeitsprozess-Satz: Möchtest du", pattern: /Möchtest du|Moechtest du/i },
@@ -76,6 +90,13 @@ const REQUIRED_FIELDS = [
   "downloadAllowed",
   "previewAllowed"
 ];
+
+const RESTORED_PUBLIC_BOOK_IDS = new Set([
+  "nachhaltiges-marketing-mix",
+  "nachhaltiger-einzelhandel",
+  "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+  "nachhaltigkeitstransformation-im-handwerk"
+]);
 
 const DOCUMENTS = [
   {
@@ -213,6 +234,122 @@ const DOCUMENTS = [
     order: 5
   },
   {
+    id: "nachhaltiges-marketing-mix",
+    slug: "nachhaltiges-marketing-mix",
+    title: "Nachhaltiges Marketing-Mix",
+    subtitle: "Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel",
+    fileName: "nachhaltiges-marketing-mix.pdf",
+    filePath: "assets/pdf/imported/nachhaltiges-marketing-mix.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltiges-marketing-mix.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Unternehmen", "Marketing", "Handel", "Industrie"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+    whatToExpect: "Online lesbarer Praxisleitfaden zu Produktentwicklung, Preisgestaltung, Platzierung, Promotion und dem fünften P Planet.",
+    keyQuestions: ["Wie erweitert Planet den klassischen Marketing-Mix?", "Wie werden SDGs in Produkt-, Preis-, Vertriebs- und Kommunikationsentscheidungen übersetzt?"],
+    topics: ["Marketing", "Nachhaltigkeit", "SDGs & SDG+", "5. P Planet", "Kreislaufwirtschaft"],
+    methods: ["Scorecards", "Wirkungsrückkopplung", "SDGs & SDG+"],
+    impactFields: ["Wirtschaft & Kapital", "Planet & Resilienz", "Öffentlichkeit & Wissen"],
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026", "grundlagenpapier-wirkungsoekonomie", "wirkungsoekonomie-lieferkette"],
+    version: "frühe Buchfassung",
+    date: "2024",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 55
+  },
+  {
+    id: "nachhaltiger-einzelhandel",
+    slug: "nachhaltiger-einzelhandel",
+    title: "Nachhaltiger Einzelhandel",
+    subtitle: "Nachhaltigkeit, Verantwortung und Kreislaufwirtschaft im Handel",
+    fileName: "nachhaltiger-einzelhandel.pdf",
+    filePath: "assets/pdf/imported/nachhaltiger-einzelhandel.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltiger-einzelhandel.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Handel", "Unternehmen", "Mittelstand"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Ausarbeitung dazu, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+    whatToExpect: "Online lesbarer Praxisleitfaden mit Schwerpunkt Handel, Kund:innenbeziehung, Kreislaufwirtschaft und Umsetzung.",
+    keyQuestions: ["Wie kann Einzelhandel Nachhaltigkeit praktisch verankern?", "Welche Rolle spielen Sortiment, Lieferketten, Rücknahme und Kommunikation?"],
+    topics: ["Einzelhandel", "Nachhaltigkeit", "Kreislaufwirtschaft", "Produkte & Konsum"],
+    methods: ["Scorecards", "Wirkungsrückkopplung", "Produktwirkung"],
+    impactFields: ["Wirtschaft & Kapital", "Produkte & Konsum", "Planet & Resilienz"],
+    relatedDocuments: ["nachhaltiges-marketing-mix", "wirkungsoekonomie-lieferkette", "standardwerk-neue-ordnung-wohlstands-2026"],
+    version: "frühe Buchfassung",
+    date: "2023",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 56
+  },
+  {
+    id: "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+    slug: "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen",
+    title: "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+    subtitle: "Agenda 2030, SDGs und ESG-Anforderungen in Beratungsunternehmen",
+    fileName: "nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+    filePath: "assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Beratungsunternehmen", "Mittelstand", "Unternehmen"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+    whatToExpect: "Online lesbarer Praxisleitfaden zu Strategie, Organisation, Kund:innenanforderungen, Lieferanten, Berichtswesen und Umsetzung.",
+    keyQuestions: ["Wie wird Nachhaltigkeit in Beratungsunternehmen organisatorisch verankert?", "Wie lassen sich SDGs und ESG-Anforderungen praktisch strukturieren?"],
+    topics: ["Beratungsunternehmen", "Mittelstand", "SDGs & SDG+", "ESG", "Unternehmensstrategie"],
+    methods: ["SDGs & SDG+", "Wirkungscontrolling", "Wirkungsrückkopplung"],
+    impactFields: ["Wirtschaft & Kapital", "Öffentlichkeit & Wissen", "Planet & Resilienz"],
+    relatedDocuments: ["nachhaltiges-marketing-mix", "grundlagenpapier-wirkungsoekonomie", "systemmodell-wirkungsoekonomie"],
+    version: "frühe Buchfassung",
+    date: "2023",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 57
+  },
+  {
+    id: "nachhaltigkeitstransformation-im-handwerk",
+    slug: "nachhaltigkeitstransformation-im-handwerk",
+    title: "Nachhaltigkeitstransformation im Handwerk",
+    subtitle: "Ein Leitfaden für kleine Betriebe",
+    fileName: "nachhaltigkeitstransformation-im-handwerk.pdf",
+    filePath: "assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf",
+    contentHtmlPath: "assets/data/document-online/nachhaltigkeitstransformation-im-handwerk.html",
+    documentType: "buch",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Handwerk", "Mittelstand", "Kleine Betriebe"],
+    level: "fortgeschritten",
+    summaryShort: "Frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+    whatToExpect: "Online lesbarer Praxisleitfaden für Holz-, Elektro-, Bau- und Sanitärhandwerk mit Umsetzungs- und Checklistenlogik.",
+    keyQuestions: ["Welche Nachhaltigkeitsanforderungen betreffen kleine Handwerksbetriebe?", "Wie können Betrieb, Kund:innenbeziehung und Lieferanten praktisch umgestellt werden?"],
+    topics: ["Handwerk", "Mittelstand", "SDGs & SDG+", "Nachhaltigkeit", "Kleine Betriebe"],
+    methods: ["SDGs & SDG+", "Wirkungsrückkopplung", "Datenqualität & Assurance"],
+    impactFields: ["Wirtschaft & Kapital", "Alltag & Grundbedürfnisse", "Planet & Resilienz"],
+    relatedDocuments: ["nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen", "nachhaltiges-marketing-mix", "leitbild-mensch-planet-demokratie"],
+    version: "frühe Buchfassung",
+    date: "2023",
+    legalNotice: "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
+    editorialNote: "Wiederhergestellte öffentliche Online- und PDF-Fassung aus dem Bibliotheksbestand.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Bücher & Praxisleitfäden",
+    order: 58
+  },
+  {
     id: "whitepaper-t-sroi",
     slug: "whitepaper-t-sroi",
     title: "Whitepaper T-SROI",
@@ -237,6 +374,71 @@ const DOCUMENTS = [
     previewAllowed: true,
     section: "Methoden & Werkzeuge",
     order: 110
+  },
+  {
+    id: "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+    slug: "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+    title: "Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie",
+    subtitle: "Arbeitspapier zur Verbindung von CSRD/ESRS, IRO-Logik, Wirkungsdaten und Steuerung",
+    fileName: "Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+    filePath: "public/downloads/originals/Arbeitspapier_Doppelte_Wesentlichkeit_Impact_Controlling_Wirkungsoekonomie.pdf",
+    documentType: "working-paper",
+    status: "arbeitsfassung",
+    visibility: "expert_public",
+    audience: ["Fachöffentlichkeit", "Unternehmen", "Nachhaltigkeit", "Controlling", "Marketing"],
+    level: "expert",
+    summaryShort: "Arbeitspapier zur doppelten Wesentlichkeit als Brücke von Berichtspflichten zu Impact-Controlling, Wirkungsdaten und wirkungsorientierter Steuerung.",
+    whatToExpect: "Eine fachliche Einordnung, wie CSRD/ESRS, IROs, Impact Materiality, Financial Materiality, Key Impact Indicators und Impact-Marketing in eine steuerbare Wirkungsarchitektur übersetzt werden.",
+    keyQuestions: [
+      "Wie wird doppelte Wesentlichkeit von einer Berichtspflicht zu einer Steuerungslogik?",
+      "Welche Rolle spielen Impact-Controlling, Impact-Management und Key Impact Indicators?",
+      "Wie schützt Wirkungsökonomie vor Impact-Washing und bloßer Wirkungssimulation?"
+    ],
+    topics: ["Doppelte Wesentlichkeit", "Impact-Controlling", "Impact-Management", "Impact-Marketing", "CSRD", "ESRS", "IRO", "Wirkungsdaten"],
+    methods: ["Wesentlichkeitsanalyse", "Impact-Controlling", "Key Impact Indicators", "Wirkungsdatenraum"],
+    impactFields: ["Mensch", "Planet", "Demokratie"],
+    relatedDocuments: ["whitepaper-t-sroi", "grundlagenpapier-wirkungsoekonomie", "woek-begriffsleitfaden-fuehrend"],
+    version: "Arbeitsfassung 2026-06",
+    date: "2026-06",
+    legalNotice: "Keine Rechts-, Steuer-, Prüfungs-, Nachhaltigkeits-, Anlage- oder Unternehmensberatung.",
+    editorialNote: "Als Arbeitspapier für PDF-Download, Website-Verankerung und Glossar-Erweiterung bereitgestellt.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Methoden & Werkzeuge",
+    order: 112
+  },
+  {
+    id: "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+    slug: "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+    title: "Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf",
+    subtitle: "Ein anonymisiertes Praxispaper aus der Chemieindustrie",
+    fileName: "woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+    filePath: "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+    contentHtmlPath: "content/documents/online/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.inc",
+    documentType: "paper",
+    status: "aktuell",
+    visibility: "expert_public",
+    audience: ["Fachöffentlichkeit", "Unternehmen", "Einkauf", "Controlling", "Marketing"],
+    level: "expert",
+    summaryShort: "Anonymisiertes Praxispaper zur operativen Verankerung von Impact-Strategie, Impact-Management, Impact-Controlling und Impact-Marketing im Unternehmenseinkauf.",
+    whatToExpect: "Ein praxisnaher Weg von doppelter Wesentlichkeit über Key Impact Indicators, Scorecards, Lieferantensteuerung, Warengruppenlogik und Claim-Freigaben bis zur Roadmap.",
+    keyQuestions: [
+      "Wie wird doppelte Wesentlichkeit im strategischen Einkauf operationalisiert?",
+      "Welche KIIs und Scorecards machen Lieferanten, Warengruppen und Transformationsmaßnahmen steuerbar?",
+      "Wie wird Impact-Marketing als belegbare Wirkungskommunikation statt Green Marketing verankert?"
+    ],
+    topics: ["Wirkungsökonomie", "Impact-Strategie", "Impact-Management", "Impact-Controlling", "Impact-Marketing", "Key Impact Indicators", "Doppelte Wesentlichkeit", "Einkauf", "Lieferkette", "Chemieindustrie", "Unternehmenssteuerung", "T-SROI", "Wirkungsdaten", "WÖk-IDs", "Scorecard"],
+    methods: ["Impact-Controlling", "Key Impact Indicators", "Scorecards", "T-SROI", "Reverse Merit Order", "Wesentlichkeitsanalyse"],
+    impactFields: ["Wirtschaft & Kapital", "Produkte & Konsum", "Daten & Infrastruktur", "Planet & Resilienz"],
+    relatedDocuments: ["arbeitspapier-doppelte-wesentlichkeit-impact-controlling", "whitepaper-t-sroi", "wirkungsoekonomie-lieferkette", "technische-leitlinien-wustg"],
+    version: "Anonymisierte Publikationsfassung 2026-06",
+    date: "2026-06-04",
+    legalNotice: "Anonymisiertes Praxispaper. Keine Rechts-, Steuer-, Prüfungs-, Nachhaltigkeits-, Anlage- oder Unternehmensberatung; keine offizielle Position eines Unternehmens.",
+    editorialNote: "Das Word-Ausgangsdokument wurde anonymisiert übernommen; Produktgruppen- und Zielpfadbeispiele wurden in der Publikationsfassung zusätzlich neutralisiert.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Methoden & Werkzeuge",
+    order: 113
   },
   {
     id: "technische-leitlinien-wustg",
@@ -646,6 +848,35 @@ const DOCUMENTS = [
     order: 430
   },
   {
+    id: "sexarbeit-als-soziale-infrastruktur",
+    slug: "sexarbeit-als-soziale-infrastruktur",
+    title: "Sexarbeit als soziale Infrastruktur",
+    subtitle: "Grundlagen für eine funktionale und realitätsnahe Regulierung",
+    fileName: "Sexarbeit als soziale Infrastruktur.docx",
+    filePath: "/Users/hagen/Desktop/Nats/Sexarbeit als soziale Infrastruktur.docx",
+    documentType: "konzept",
+    status: "review-erforderlich",
+    visibility: "review_required",
+    audience: ["Politik", "Verwaltung", "Wissenschaft", "Sozialpolitik", "Gesundheit", "Recht", "Zivilgesellschaft"],
+    level: "fortgeschritten / sensibel",
+    summaryShort: "Reviewpflichtige interne Konzeptquelle zur funktionalen Perspektive auf Sexarbeit als ambivalente soziale Infrastruktur beziehungsweise soziale Versorgungsstruktur.",
+    whatToExpect: "Executive Summary, Ausgangslage, Analyse, zentrale These, politische Konsequenzen und Fazit zur realitätsnahen Regulierung von Sexarbeit.",
+    keyQuestions: ["Welche soziale Funktion kann Sexarbeit unter bestimmten Bedingungen erfüllen?", "Wie lassen sich Schutz vor Ausbeutung und Selbstbestimmung zugleich denken?", "Welche gesellschaftlichen Ursachen wie Einsamkeit, Isolation und ökonomische Ungleichheit müssen mitbetrachtet werden?"],
+    topics: ["Sexarbeit", "soziale Infrastruktur", "soziale Versorgungsstruktur", "Nähe", "Intimität", "Einsamkeit", "Selbstbestimmung", "Schutz", "Regulierung"],
+    methods: ["funktionale Wirkungsanalyse", "Schutzlinien", "Nichtkompensation"],
+    impactFields: ["Mensch", "Demokratie", "Soziale Infrastruktur", "Arbeit, Körper & Selbstbestimmung"],
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026", "systemmodell-wirkungsoekonomie"],
+    version: "Reviewfassung",
+    date: "2026-06-01",
+    legalNotice: "Keine Rechts-, Sozial- oder Gesundheitsberatung.",
+    editorialNote: "Nicht als roher DOCX-Download veröffentlichen. Vor öffentlicher Sichtbarkeit Metadaten, Status, Autorin, Stand, redaktionelle Freigabe und PDF/HTML-Fassung prüfen.",
+    internalNote: "Primäre interne Konzeptquelle für die Erweiterung des Glossarbegriffs Sexarbeit.",
+    downloadAllowed: false,
+    previewAllowed: false,
+    section: "Reviewpflichtige Konzepte",
+    order: 431
+  },
+  {
     id: "illusionmaschine-buerokratieabbau",
     slug: "illusionmaschine-buerokratieabbau",
     title: "IllusionMaschine Bürokratieabbau",
@@ -780,6 +1011,106 @@ const DOCUMENTS = [
     previewAllowed: false,
     section: "Archiv",
     order: 907
+  },
+  {
+    id: "folgencheck-wirkungspolitische-sprache",
+    slug: "folgencheck-wirkungspolitische-sprache",
+    title: "Folgencheck statt Faktencheck",
+    subtitle: "Wirkungsökonomische Analyse politischer Sprache am Beispiel des AfD-Regierungsprogramms Sachsen-Anhalt",
+    fileName: "arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf",
+    filePath: "assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf",
+    contentHtmlPath: "content/documents/online/folgencheck-wirkungspolitische-sprache.inc",
+    documentType: "working-paper",
+    status: "arbeitsfassung",
+    visibility: "public",
+    audience: ["Journalismus", "Politik", "Bildung", "Fachöffentlichkeit"],
+    level: "fortgeschritten",
+    summaryShort: "Arbeitspapier zum Folgencheck politischer Sprache: Es zeigt, warum Faktenprüfung durch eine vorsorgende Wirkungsprüfung von Frames, Narrativen und Resonanzräumen ergänzt werden muss.",
+    whatToExpect: "Eine ausführliche Online- und PDF-Fassung mit Methode, Pilotkorpus, Frame-Analyse, Wirkungskarte, Gegenstrategien, Forschungsprogramm und Schutzlinien.",
+    keyQuestions: [
+      "Warum reicht ein Faktencheck bei politischer Sprache nicht aus?",
+      "Welche Wirkungspotenziale öffnen Frames, Narrative und Feindbildkommunikation?",
+      "Wie kann demokratische Sprache wirken, ohne problematische Frames zu spiegeln?"
+    ],
+    topics: ["Folgencheck", "Faktencheck", "Politische Sprache", "Frames", "Narrative", "AfD-Regierungsprogramm Sachsen-Anhalt", "Medien & Demokratie", "SDG+"],
+    methods: ["Folgencheck", "Wirkungsanalyse", "Resonanzraumanalyse", "Wirkungspfad-Analyse"],
+    impactFields: ["Demokratie", "Öffentlichkeit & Wissen", "Mensch"],
+    relatedDocuments: ["faktencheck-folgencheck-v1-1", "grundlagenpapier-wirkungsoekonomie", "leitbild-mensch-planet-demokratie"],
+    version: "v0.1",
+    date: "2026-06-01",
+    isLeadingReference: true,
+    legalNotice: "Keine Wahlempfehlung, kein Rechtsgutachten, keine psychologische Diagnose und keine Bewertung einzelner Wähler:innen, Parteimitglieder oder Personen.",
+    editorialNote: "Arbeitsfassung; Wirkungspotenziale politischer Sprache werden modellhaft und vorsorgend geprüft.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Essays & Debatte",
+    order: 805
+  },
+  {
+    id: "fuenf-wellen-oeffentlicher-wirkung",
+    slug: "fuenf-wellen-oeffentlicher-wirkung",
+    title: "Die fünf Wellen öffentlicher Wirkung",
+    subtitle: "Das wirkungsökonomische Modell öffentlicher Kommunikation und Debattenführung",
+    fileName: "woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+    filePath: "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
+    contentHtmlPath: "content/documents/online/fuenf-wellen-oeffentlicher-wirkung.inc",
+    documentType: "dossier",
+    status: "arbeitsfassung",
+    visibility: "public",
+    audience: ["Journalismus", "Politik", "Bildung", "Fachöffentlichkeit"],
+    level: "fortgeschritten",
+    summaryShort: "Dossier zum Wellen-Tiefen-Modell öffentlicher Wirkung: Es erklärt, wie Aufmerksamkeit, Emotion, Deutung, Resonanz und Verschiebung öffentliche Debatten prägen.",
+    whatToExpect: "Eine ausführliche Online- und PDF-Fassung mit Modelllogik, Debattenkarten, Resonanz-Kompass, Schutzlinien und redaktioneller Website-Architektur für den öffentlichen Wirkungsraum.",
+    keyQuestions: [
+      "Warum greifen Faktenchecks oft zu spät, wenn Debatten bereits Wirkung entfaltet haben?",
+      "Wie entstehen aus Aufmerksamkeit, Emotion und Deutung gesellschaftliche Resonanzräume?",
+      "Wie kann demokratische Kommunikation Wirkung prüfen, ohne Menschen zu bewerten oder Frames unkritisch zu spiegeln?"
+    ],
+    topics: ["Öffentlicher Wirkungsraum", "Wellen-Tiefen-Modell", "Debattenkarten", "Resonanz", "Frames", "Narrative", "Folgencheck", "Medien & Demokratie", "SDG+"],
+    methods: ["Wellen-Tiefen-Modell", "Wirkungsanalyse", "Resonanzraumanalyse", "Wirkungspfad-Analyse"],
+    impactFields: ["Demokratie", "Öffentlichkeit & Wissen", "Mensch"],
+    relatedDocuments: ["folgencheck-wirkungspolitische-sprache", "grundlagenpapier-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "systemmodell-wirkungsoekonomie"],
+    version: "v0.1",
+    date: "2026-06-08",
+    legalNotice: "Keine Wahlempfehlung, kein Rechtsgutachten, keine psychologische Diagnose und keine Bewertung einzelner Personen, Wähler:innen oder Gruppen.",
+    editorialNote: "Arbeitsfassung; Wirkungspotenziale öffentlicher Kommunikation werden modellhaft und vorsorgend geprüft.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Essays & Debatte",
+    order: 806
+  },
+  {
+    id: "fuenf-wellen-wirkungsentfaltung",
+    slug: "fuenf-wellen-wirkungsentfaltung",
+    title: "Die fünf Wellen der Wirkungsentfaltung",
+    subtitle: "Das Wellen-Tiefen-Modell als allgemeines wirkungsökonomisches Grundmuster",
+    fileName: "woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
+    filePath: "assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
+    contentHtmlPath: "content/documents/online/fuenf-wellen-wirkungsentfaltung.inc",
+    documentType: "dossier",
+    status: "arbeitsfassung",
+    visibility: "public",
+    audience: ["Fachöffentlichkeit", "Wissenschaft", "Strategie", "Methodik"],
+    level: "expert",
+    summaryShort: "Dossier zur allgemeinen Wirkungsentfaltung: Es überträgt die Wellen-Tiefen-Logik von öffentlicher Kommunikation auf Produkte, Märkte, Kapital, Politik und Institutionen.",
+    whatToExpect: "Eine ausführliche Online- und PDF-Fassung mit allgemeiner Modellarchitektur, Abgrenzung zum Wirkungsrad, Übertragungen auf Wirkungsräume und methodischen Schutzlinien.",
+    keyQuestions: [
+      "Warum lässt sich die Wellen-Tiefen-Logik über öffentliche Kommunikation hinaus verallgemeinern?",
+      "Wie unterscheiden sich Sichtbarkeit, Betroffenheit, Bewertung, Resonanz und Struktur von klassischen Output-Logiken?",
+      "Wie hilft das Modell, Wirkungsräume zu lesen, bevor sie vollständig messbar sind?"
+    ],
+    topics: ["Wirkungsentfaltung", "Wellen-Tiefen-Modell", "Wirkungsräume", "Wirkungsrad", "Rückkopplung", "Systemwirkung", "Resilienz", "Methodik"],
+    methods: ["Wellen-Tiefen-Modell", "Wirkungsraumanalyse", "Wirkungspfad-Analyse", "Systemanalyse"],
+    impactFields: ["Mensch", "Planet", "Demokratie", "Wirtschaft & Unternehmen"],
+    relatedDocuments: ["fuenf-wellen-oeffentlicher-wirkung", "grundlagenpapier-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "systemmodell-wirkungsoekonomie"],
+    version: "v0.1",
+    date: "2026-06-08",
+    legalNotice: "Keine amtliche Bewertungsmethode, keine automatische Entscheidung, keine Personenbewertung und keine Rechts-, Steuer-, Förder- oder Anlageberatung.",
+    editorialNote: "Arbeitsfassung; allgemeines Grundmuster der Wirkungsökonomie zur fachlichen Weiterentwicklung.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    section: "Methoden & Werkzeuge",
+    order: 407
   }
 ];
 
@@ -881,7 +1212,7 @@ function mkdir(fileOrDir) {
 
 function write(file, content) {
   mkdir(path.dirname(file));
-  fs.writeFileSync(file, content);
+  fs.writeFileSync(file, content.replace(/[ \t]+$/gm, ""));
 }
 
 function read(file) {
@@ -1099,7 +1430,7 @@ function auditDocuments(curatedDocs) {
   for (const doc of curatedDocs) {
     if (!PUBLIC_VISIBILITIES.has(doc.visibility) && !ARCHIVE_VISIBILITIES.has(doc.visibility)) continue;
     const text = extractText(doc.filePath);
-    const haystack = `${doc.title}\n${doc.subtitle}\n${doc.summaryShort}\n${doc.whatToExpect}\n${doc.legalNotice}\n${text}`;
+    const haystack = `${doc.title}\n${doc.subtitle}\n${doc.summaryShort}\n${doc.whatToExpect}\n${doc.status}\n${doc.version}\n${doc.date}\n${doc.editorialNote}\n${doc.legalNotice}\n${text}`;
     for (const rule of AUDIT_PATTERNS) {
       const match = haystack.match(rule.pattern);
       if (match) {
@@ -1156,6 +1487,13 @@ function applyAuditGate(curatedDocs, findings) {
       next.onlinePath = next.onlinePath || "referenz/";
       return next;
     }
+    if (RESTORED_PUBLIC_BOOK_IDS.has(next.id)) {
+      next.status = next.status || "aktuell";
+      next.visibility = "public";
+      next.downloadAllowed = true;
+      next.previewAllowed = true;
+      return next;
+    }
     if (affected.has(next.id) && next.visibility !== "archive") {
       next.status = "review-erforderlich";
       next.visibility = "review_required";
@@ -1187,6 +1525,7 @@ function downloadHref(doc, prefix = "") {
 }
 
 function onlineHref(doc, prefix = "") {
+  if (doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))) return "#onlinefassung";
   if (doc.onlinePath) return `${prefix}${doc.onlinePath}`;
   const candidate = path.join(ROOT, "dokumente", doc.slug || "", "index.html");
   if (fs.existsSync(candidate)) return `${prefix}dokumente/${doc.slug}/`;
@@ -1217,7 +1556,7 @@ function layout({ title, description, body, prefix = "" }) {
     <meta name="search_description" content="${escapeHtml(description)}">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
-    <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260525-tool-explainer-final2">
+    <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -1288,6 +1627,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
       </section>
       <section class="section document-library-controls" data-search-exclude>
         <div class="document-filter-grid">
+          <label class="document-search-field">Suche<input type="search" data-document-search placeholder="Titel, Abstract, Thema oder Zielgruppe"></label>
           <label>Dokumentart<select data-document-filter="type"><option value="">Alle</option>${options(publicDocs.map((doc) => doc.documentType))}</select></label>
           <label>Status<select data-document-filter="status"><option value="">Alle</option>${options(publicDocs.map((doc) => doc.status))}</select></label>
           <label>Zielgruppe<select data-document-filter="audience"><option value="">Alle</option>${options(publicDocs.flatMap((doc) => doc.audience))}</select></label>
@@ -1297,6 +1637,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
           <label>Wirkungsfeld<select data-document-filter="field"><option value="">Alle</option>${options(allFields)}</select></label>
           <label>Sortierung<select data-document-sort><option value="editorial">Redaktionelle Reihenfolge</option><option value="date">Datum</option><option value="pages">Umfang</option><option value="level">Niveau</option></select></label>
         </div>
+        <p class="document-filter-status" data-document-filter-status aria-live="polite"></p>
       </section>
       <section class="section section-muted">
         <div class="section-header">
@@ -1305,7 +1646,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
         </div>
         <div class="document-reading-path-grid">
           ${path("Einstieg in 30 Minuten", "Vom schnellen Einstieg zum Leitbild und Grundmodell.", ["minifest-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "grundlagenpapier-wirkungsoekonomie"])}
-          ${path("Für Unternehmen", "Von Grundlagen über T-SROI und Lieferketten zu technischer Methodik.", ["grundlagenpapier-wirkungsoekonomie", "whitepaper-t-sroi", "wirkungsoekonomie-lieferkette", "technische-leitlinien-wustg"])}
+          ${path("Für Unternehmen", "Von Grundlagen über T-SROI und Lieferketten zu konkreter Einkaufssteuerung.", ["grundlagenpapier-wirkungsoekonomie", "whitepaper-t-sroi", "wirkungsoekonomie-lieferkette", "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie", "technische-leitlinien-wustg"])}
           ${path("Für Politik und Verwaltung", "Recht, Wirkungshaushalt, Wirkungsrat und Schutzlinien.", ["grundlagenpapier-wirkungsoekonomie", "wstg-oktober-2025", "wirkungsrat-konzept"])}
           ${path("Für Wissenschaft und Methodik", "Systemarchitektur, T-SROI und technische Leitlinien.", ["systemmodell-wirkungsoekonomie", "whitepaper-t-sroi", "technische-leitlinien-wustg"])}
           ${path("Für Bürger:innen", "Kurz und verständlich starten.", ["minifest-wirkungsoekonomie", "leitbild-mensch-planet-demokratie", "woek-manifest"])}
@@ -1325,6 +1666,8 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
   const cards = Array.from(document.querySelectorAll("[data-document-card]"));
   const filters = Array.from(document.querySelectorAll("[data-document-filter]"));
   const sort = document.querySelector("[data-document-sort]");
+  const search = document.querySelector("[data-document-search]");
+  const status = document.querySelector("[data-document-filter-status]");
   const matches = (card, key, value) => {
     if (!value) return true;
     if (key === "type") return card.dataset.type === value;
@@ -1338,8 +1681,22 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
   };
   const apply = () => {
     const active = Object.fromEntries(filters.map((input) => [input.dataset.documentFilter, input.value]));
+    const query = (search?.value || "").trim().toLowerCase();
+    let visibleCount = 0;
     cards.forEach((card) => {
-      card.hidden = !Object.entries(active).every(([key, value]) => matches(card, key, value));
+      const filterMatch = Object.entries(active).every(([key, value]) => matches(card, key, value));
+      const searchMatch = !query || [
+        card.textContent,
+        card.dataset.type,
+        card.dataset.status,
+        card.dataset.level,
+        card.dataset.audience,
+        card.dataset.topics,
+        card.dataset.methods,
+        card.dataset.fields,
+      ].join(" ").toLowerCase().includes(query);
+      card.hidden = !(filterMatch && searchMatch);
+      if (!card.hidden) visibleCount += 1;
     });
     const sorter = sort?.value || "editorial";
     document.querySelectorAll(".document-card-grid").forEach((grid) => {
@@ -1351,8 +1708,10 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
         return Number(a.dataset.order || 999) - Number(b.dataset.order || 999);
       }).forEach((card) => grid.appendChild(card));
     });
+    if (status) status.textContent = visibleCount + " Dokumente gefunden.";
   };
   filters.forEach((input) => input.addEventListener("change", apply));
+  search?.addEventListener("input", apply);
   sort?.addEventListener("change", apply);
   apply();
 })();
@@ -1369,6 +1728,9 @@ function detailPage(doc, prefix = "../../") {
   const href = downloadHref(doc, prefix);
   const online = onlineHref(doc, prefix);
   const related = (doc.relatedDocuments || []).map((id) => model.find((item) => item.id === id)).filter(Boolean);
+  const onlineContent = doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))
+    ? read(path.join(ROOT, doc.contentHtmlPath))
+    : "";
   const statusNotice = ["diskussionsfassung", "arbeitsfassung"].includes(doc.status)
     ? `<div class="callout"><strong>Statushinweis:</strong> Dieses Dokument ist eine Arbeits- bzw. Diskussionsfassung und kann sich ändern.</div>`
     : "";
@@ -1377,6 +1739,9 @@ function detailPage(doc, prefix = "../../") {
     : "";
   const legalNotice = doc.legalNotice
     ? `<div class="callout warning"><strong>Schutzlinie:</strong> ${escapeHtml(doc.legalNotice)}</div>`
+    : "";
+  const leadingNotice = doc.id === "folgencheck-wirkungspolitische-sprache"
+    ? `<div class="callout"><strong>Führende Dokumentseite:</strong> Diese Bibliotheksseite ist die vollständige Arbeitsfassung zum Folgencheck politischer Sprache. Die ältere Seite <a class="text-link" href="../../werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/">Faktencheck und Folgencheck - Methodenseite</a> dient als methodischer Kurzüberblick und verweist hierher.</div>`
     : "";
   const actionLinks = [
     online ? `<a class="btn btn-secondary" href="${online}">Onlinefassung lesen</a>` : "",
@@ -1387,7 +1752,7 @@ function detailPage(doc, prefix = "../../") {
     : `<p class="document-restricted">Kein öffentlicher Download: Dieses Dokument ist ${escapeHtml(doc.status)} und wird nicht direkt verlinkt.</p>`;
   const body = `
       <section class="hero compact-hero document-detail-hero">
-        <p class="hero-kicker">${escapeHtml(doc.documentType)} · ${escapeHtml(doc.status)}</p>
+        <p class="hero-kicker">${doc.isLeadingReference ? "führende dokumentseite · " : ""}${escapeHtml(doc.documentType)} · ${escapeHtml(doc.status)}</p>
         <h1>${escapeHtml(doc.title)}</h1>
         <p class="hero-subtitle">${escapeHtml(doc.subtitle)}</p>
         <div class="document-card-badges">${badge(doc.documentType)}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
@@ -1396,6 +1761,7 @@ function detailPage(doc, prefix = "../../") {
         <article class="document-detail-main">
           ${statusNotice}
           ${expertNotice}
+          ${leadingNotice}
           ${legalNotice}
           <h2>Kurz gesagt</h2>
           <p>${escapeHtml(doc.summaryShort)}</p>
@@ -1409,6 +1775,7 @@ function detailPage(doc, prefix = "../../") {
           <p>Dieses Dokument ist keine Personenbewertung, keine automatische Entscheidung und keine Rechts-, Steuer-, Kredit-, Förder-, Versicherungs- oder Anlageberatung. Modellhafte Aussagen sind nicht amtlich.</p>
           <h2>Inhaltsüberblick</h2>
           <p>${escapeHtml((doc.topics || []).join(", ") || "Inhaltsüberblick in Vorbereitung.")}</p>
+          ${onlineContent ? `<section id="onlinefassung" class="document-online-section"><h2>Onlinefassung</h2><div class="readable-prose document-online-text">${onlineContent}</div></section>` : ""}
           <h2>Verwandte Inhalte</h2>
           <ul>${related.map((item) => `<li><a href="../${item.slug}/">${escapeHtml(item.title)}</a></li>`).join("") || "<li>Keine verwandten Dokumente hinterlegt.</li>"}</ul>
         </article>
@@ -1544,7 +1911,7 @@ function writeModel(gatedDocs) {
   write(DOC_MODEL, `${JSON.stringify({
     schemaVersion: "2026-05-document-library-redesign",
     allowedValues: {
-      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "whitepaper", "working-paper", "konzept", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
+      documentType: ["kurzfassung", "manifest", "leitbild", "grundlagenpapier", "standardwerk", "buch", "whitepaper", "working-paper", "paper", "konzept", "dossier", "fallbeispiel", "technische-leitlinie", "gesetzesentwurf", "datenregister", "essay", "vortrag", "redaktionsgrundlage", "intern"],
       status: ["fuehrend", "aktuell", "fachoeffentlich", "diskussionsfassung", "arbeitsfassung", "in-pruefung", "archiv", "ersetzt", "intern", "review-erforderlich"],
       visibility: ["public", "expert_public", "archive", "review_required", "internal", "hidden"]
     },
@@ -1609,9 +1976,10 @@ function moveNonPublicOriginals(gatedDocs) {
 
 const initialModel = [...DOCUMENTS, ...EXTRA_ARCHIVE].map(ensureFields);
 for (const doc of initialModel) {
-  doc.fileSize = fileSize(doc.filePath);
-  doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath);
-  doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType);
+  const existing = EXISTING_DOCUMENT_META.get(doc.id) || {};
+  doc.fileSize = fileSize(doc.filePath) || doc.fileSize || existing.fileSize || "";
+  doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath) || existing.pageCount || null;
+  doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType) || existing.estimatedReadingTime || "";
 }
 
 const preliminaryFindings = auditDocuments(initialModel);
@@ -1619,9 +1987,10 @@ const model = applyAuditGate(initialModel, preliminaryFindings);
 const moved = moveNonPublicOriginals(model);
 for (const doc of model) {
   if (doc.filePath.startsWith("content/internal-documents/")) {
-    doc.fileSize = fileSize(doc.filePath);
-    doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath);
-    doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType);
+    const existing = EXISTING_DOCUMENT_META.get(doc.id) || {};
+    doc.fileSize = fileSize(doc.filePath) || doc.fileSize || existing.fileSize || "";
+    doc.pageCount = doc.pageCount || pdfPageCount(doc.filePath) || existing.pageCount || null;
+    doc.estimatedReadingTime = doc.estimatedReadingTime || readingTime(doc.pageCount, doc.fileType) || existing.estimatedReadingTime || "";
   }
 }
 const finalFindings = auditDocuments(model);

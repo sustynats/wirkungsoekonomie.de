@@ -3,6 +3,7 @@
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
+      "Buch",
       "Grundlagenwerk",
       "Whitepaper",
       "Arbeitspapier",
@@ -5397,9 +5398,9 @@
     },
     {
       "id": "online-version-werkstatt-arbeitsbibliothek-whitepaper-faktencheck-folgencheck-index-html",
-      "title": "Faktencheck folgencheck",
-      "shortDescription": "Whitepaper im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
-      "type": "Whitepaper",
+      "title": "Faktencheck und Folgencheck - Methodenseite",
+      "shortDescription": "Methodischer Kurzüberblick. Die führende vollständige Arbeitsfassung steht unter Folgencheck statt Faktencheck in der Bibliothek.",
+      "type": "Methodik",
       "status": "aktuell",
       "dateOrStand": "",
       "topics": [
@@ -6223,6 +6224,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "online-version-wirkungsfelder-gesundheit-index-html",
+      "title": "Gesundheit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "wirkungsfelder/gesundheit/",
+        "sourcePath": "wirkungsfelder/gesundheit/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-arbeitsbibliothek-wirkungsfelder-gesundheit-pflege-index-html",
       "title": "Gesundheit pflege",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
@@ -6416,6 +6441,30 @@
         "sourcePath": "portale/internationale-ordnung-globalisierung-geopolitik/globale-wirkungsgovernance/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-exports-glossar-pdf",
+      "title": "Glossar",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/exports/glossar.pdf",
+        "sourcePath": "public/downloads/exports/glossar.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -6696,6 +6745,28 @@
       "urls": {
         "primary": "wirkungsfelder/wirtschaft-unternehmen/dossiers/impact_controlling_im_unternehmen/",
         "sourcePath": "wirkungsfelder/wirtschaft-unternehmen/dossiers/impact_controlling_im_unternehmen/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-dokumente-impact-strategie-controlling-marketing-management-einkauf-chemieindustr",
+      "title": "Impact strategie controlling marketing management einkauf chemieindustrie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/",
+        "sourcePath": "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false
@@ -11232,6 +11303,190 @@
         "sourcePath": "portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltiger-einzelhandel-index-html",
+      "title": "Nachhaltiger Einzelhandel",
+      "shortDescription": "Online lesbare Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltiger-einzelhandel/",
+        "sourcePath": "bibliothek/nachhaltiger-einzelhandel/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltiger-einzelhandel-pdf",
+      "title": "Nachhaltiger Einzelhandel",
+      "shortDescription": "Frühe Ausarbeitung zur Frage, wie Einzelhandel Nachhaltigkeit, Verantwortung, Kreislaufwirtschaft und konkrete Best Practices in Geschäftsmodelle übersetzen kann.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltiger-einzelhandel.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltiger-einzelhandel.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltiges-marketing-mix-index-html",
+      "title": "Nachhaltiges Marketing-Mix",
+      "shortDescription": "Online lesbare Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltiges-marketing-mix/",
+        "sourcePath": "bibliothek/nachhaltiges-marketing-mix/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltiges-marketing-mix-pdf",
+      "title": "Nachhaltiges Marketing-Mix",
+      "shortDescription": "Frühe Buchfassung zur Frage, wie Agenda 2030 und SDGs im Marketing-Mix von Industrie und Handel praktisch verankert werden können.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltiges-marketing-mix.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltiges-marketing-mix.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen-ind",
+      "title": "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+      "shortDescription": "Online lesbare Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/",
+        "sourcePath": "bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltigkeitsstrategie-mittelstaendische-beratungsunt",
+      "title": "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
+      "shortDescription": "Frühe Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "leading-reference-bibliothek-nachhaltigkeitstransformation-im-handwerk-index-html",
+      "title": "Nachhaltigkeitstransformation im Handwerk",
+      "shortDescription": "Online lesbare Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltigkeitstransformation-im-handwerk/",
+        "sourcePath": "bibliothek/nachhaltigkeitstransformation-im-handwerk/index.html"
+      },
+      "source": "leading-reference",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-imported-nachhaltigkeitstransformation-im-handwerk-pdf",
+      "title": "Nachhaltigkeitstransformation im Handwerk",
+      "shortDescription": "Frühe Ausarbeitung zur Nachhaltigkeitstransformation kleiner Handwerksbetriebe mit Blick auf gesetzliche Vorgaben, Kundenanforderungen, Lieferanten und betriebliche Umsetzung.",
+      "type": "Buch",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf",
+        "sourcePath": "assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -17210,6 +17465,203 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-finanzsystem-kapital-tool-suite-pdf",
+      "title": "Tool spezifikation finanzsystem kapital tool suite",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_finanzsystem_kapital_tool_suite.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_finanzsystem_kapital_tool_suite.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-kapitalwirkungs-und-wirkungsfonds-tool-",
+      "title": "Tool spezifikation kapitalwirkungs und wirkungsfonds tool suite",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_kapitalwirkungs_und_wirkungsfonds_tool_suite.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_kapitalwirkungs_und_wirkungsfonds_tool_suite.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-medienwirkungs-tool-suite-pdf",
+      "title": "Tool spezifikation medienwirkungs tool suite",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [
+        "NWI",
+        "Faktencheck & Folgencheck"
+      ],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_medienwirkungs_tool_suite.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_medienwirkungs_tool_suite.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-medienwirkungscheck-pdf",
+      "title": "Tool spezifikation medienwirkungscheck",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [
+        "NWI",
+        "Faktencheck & Folgencheck"
+      ],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_medienwirkungscheck.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_medienwirkungscheck.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-wirkungsrenten-rechner-pdf",
+      "title": "Tool spezifikation wirkungsrenten rechner",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_wirkungsrenten_rechner.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_wirkungsrenten_rechner.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-wirkungsrentenrechner-pdf",
+      "title": "Tool spezifikation wirkungsrentenrechner",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_wirkungsrentenrechner.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_wirkungsrentenrechner.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-wirkungsschule-tool-suite-pdf",
+      "title": "Tool spezifikation wirkungsschule tool suite",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wissenschaft, Bildung & Lernen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_wirkungsschule_tool_suite.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_wirkungsschule_tool_suite.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-tool-spezifikation-wissenschaft-innovation-digitalisierung",
+      "title": "Tool spezifikation wissenschaft innovation digitalisierung tool suite",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wissenschaft, Bildung & Lernen, Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen",
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/tool_spezifikation_wissenschaft_innovation_digitalisierung_tool_suite.pdf",
+        "sourcePath": "assets/downloads/tool_spezifikation_wissenschaft_innovation_digitalisierung_tool_suite.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-rang-16-sicherheit-resilienz-18-toolkarten-pdf",
       "title": "Toolkarten",
       "shortDescription": "Methodik im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
@@ -18669,6 +19121,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-kommunaler-wirkungsindex-kwi-diskussionspapier-1-0-pdf",
+      "title": "Wirkung statt Kapital. Für Mensch, Planet und Demokratie.: Diskussionspapier",
+      "shortDescription": "Von kommunaler Nachhaltigkeitsberichterstattung zur wirkungsorientierten Haushalts- und.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/kommunaler_wirkungsindex_kwi_diskussionspapier_1_0.pdf",
+        "sourcePath": "assets/downloads/kommunaler_wirkungsindex_kwi_diskussionspapier_1_0.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-zukunftsbilder-wirkungswohlstand-wirkungs-bip-verlustleistung-index-html",
       "title": "Wirkungs bip verlustleistung",
       "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -18806,6 +19280,28 @@
         "sourcePath": "wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf",
+      "title": "Wirkungscontrolling detailkonzept dossier",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf",
+        "sourcePath": "assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -21158,6 +21654,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-go2-produktionsreihenfolge-woek-go2-produktionsreihenfolge",
+      "title": "WÖk go2 produktionsreihenfolge detailkonzepte",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Produkte, Konsum & Beschaffung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "XLSX"
+      ],
+      "urls": {
+        "primary": "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
+        "sourcePath": "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-docs-go2-produktionsreihenfolge-source-woek-go2-produktionsreihenfolge-deta",
       "title": "WÖk go2 produktionsreihenfolge detailkonzepte",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung.",
@@ -21434,6 +21954,28 @@
       "urls": {
         "primary": "assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx",
         "sourcePath": "assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-paper-impact-strategie-controlling-marketin",
+      "title": "WÖk paper impact strategie controlling marketing management einkauf chemieindustrie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf",
+        "sourcePath": "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -22834,6 +23376,28 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_automatisierung-maschinenleistung_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_automatisierung-maschinenleistung_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-automatisierung-maschinenleistung-v0-1-",
+      "title": "Detailkonzept: Automatisierung, KI und Maschinenleistung: Rang 6 Arbeit & Einkommen / Automatisierung – Unterbereich Automatisierung, KI und Maschinenleistung",
+      "shortDescription": "Dieses Dokument ist eine öffentliche Arbeits- und Diskussionsfassung. Es enthält keine internen CodeX- oder Repository-Anweisungen. Technische Umsetzungshinweise werden separat.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_detailkonzept_automatisierung-maschinenleistung_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_detailkonzept_automatisierung-maschinenleistung_v0_1.pdf"
       },
@@ -22903,6 +23467,31 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_care-bildung-ehrenamt-wirkleistung_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_care-bildung-ehrenamt-wirkleistung_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-care-bildung-ehrenamt-wirkleistung-v0-1",
+      "title": "Detailkonzept: Care, Bildung, Ehrenamt und Gemeinwesen als Wirkleistung: Rang 6 Arbeit & Einkommen / Automatisierung – Unterbereich Care, Bildung, Ehrenamt und Gemeinwesen als Wirkleistung",
+      "shortDescription": "Dieses Dokument ist eine öffentliche Arbeits- und Diskussionsfassung. Es enthält keine internen CodeX- oder Repository-Anweisungen. Technische Umsetzungshinweise werden separat.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse",
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_detailkonzept_care-bildung-ehrenamt-wirkleistung_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_detailkonzept_care-bildung-ehrenamt-wirkleistung_v0_1.pdf"
       },
@@ -22913,6 +23502,28 @@
       "id": "download-or-document-assets-downloads-woek-detailkonzept-eigentum-vermietung-wirkungspflicht-v0-",
       "title": "WÖk detailkonzept eigentum vermietung wirkungspflicht",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_eigentum_vermietung_wirkungspflicht_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_eigentum_vermietung_wirkungspflicht_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-eigentum-vermietung-wirkungspflicht-v0-",
+      "title": "DETAILKONZEPT: Eigentum, Vermietung und Wirkungspflicht",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
       "type": "Arbeitspapier",
       "status": "Arbeitsfassung",
       "dateOrStand": "v0.1",
@@ -23100,6 +23711,32 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-kommunale-wohnwirkungspolitik-v0-1-2-pd",
+      "title": "DETAILKONZEPT: Kommunale Wohnwirkungspolitik",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "NWI"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_kommunale_wohnwirkungspolitik_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_kommunale_wohnwirkungspolitik_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-woek-detailkonzept-kommunale-wohnwirkungspolitik-v0-1-pdf",
       "title": "WÖk detailkonzept kommunale wohnwirkungspolitik",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Staat & Demokratie.",
@@ -23192,8 +23829,55 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_mieterstrom_energie_gemeinschaften_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_mieterstrom_energie_gemeinschaften_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-mieterstrom-energie-gemeinschaften-v0-1",
+      "title": "DETAILKONZEPT: Mieterstrom und Energie-Gemeinschaften",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_detailkonzept_mieterstrom_energie_gemeinschaften_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_detailkonzept_mieterstrom_energie_gemeinschaften_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-mietwirkung-bezahlbarkeit-v0-1-2-pdf",
+      "title": "DETAILKONZEPT: Mietwirkung und Bezahlbarkeit",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_mietwirkung_bezahlbarkeit_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_mietwirkung_bezahlbarkeit_v0_1 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -23475,8 +24159,55 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_sanierung_energie_warmmietenneutralitaet_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_sanierung_energie_warmmietenneutralitaet_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-sanierung-energie-warmmietenneutralitae",
+      "title": "DETAILKONZEPT: Sanierung, Energie und Warmmietenneutralität",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_detailkonzept_sanierung_energie_warmmietenneutralitaet_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_detailkonzept_sanierung_energie_warmmietenneutralitaet_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-2-pdf",
+      "title": "Detailkonzept: Sozialabgaben von menschlicher Arbeit entkoppeln: Rang 6 Arbeit & Einkommen / Automatisierung – Unterbereich Sozialabgaben von menschlicher Arbeit entkoppeln",
+      "shortDescription": "Dieses Dokument ist eine öffentliche Arbeits- und Diskussionsfassung. Es enthält keine internen CodeX- oder Repository-Anweisungen. Technische Umsetzungshinweise werden separat.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_sozialabgaben-entkopplung_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_sozialabgaben-entkopplung_v0_1 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -23639,8 +24370,54 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_verdraengung_gentrifizierung_teilhabe_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_verdraengung_gentrifizierung_teilhabe_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-verdraengung-gentrifizierung-teilhabe-v",
+      "title": "DETAILKONZEPT: Verdrängung, Gentrifizierung und Teilhabe",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_detailkonzept_verdraengung_gentrifizierung_teilhabe_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_detailkonzept_verdraengung_gentrifizierung_teilhabe_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-2-pdf",
+      "title": "Detailkonzept: Wirkungseinkommen: Rang 6 Arbeit & Einkommen / Automatisierung – Unterbereich Wirkungseinkommen",
+      "shortDescription": "Dieses Dokument ist eine öffentliche Arbeits- und Diskussionsfassung. Es enthält keine internen CodeX- oder Repository-Anweisungen. Technische Umsetzungshinweise werden separat.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_wirkungseinkommen_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_wirkungseinkommen_v0_1 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -23665,6 +24442,33 @@
       "urls": {
         "primary": "assets/downloads/woek_detailkonzept_wirkungseinkommen_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_detailkonzept_wirkungseinkommen_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-2-pd",
+      "title": "Detailkonzept: Wirkungseinkommensteuer WEstG: Rang 6 Arbeit & Einkommen / Automatisierung – Unterbereich Wirkungseinkommensteuer WEstG",
+      "shortDescription": "Dieses Dokument ist eine öffentliche Arbeits- und Diskussionsfassung. Es enthält keine internen CodeX- oder Repository-Anweisungen. Technische Umsetzungshinweise werden separat.",
+      "type": "Gesetzesentwurf",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_wirkungseinkommensteuer-westg_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_wirkungseinkommensteuer-westg_v0_1 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -23793,6 +24597,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-woek-detailkonzept-wohnwirkungsindex-wix-v0-1-2-pdf",
+      "title": "DETAILKONZEPT: Wohnwirkungsindex WIX-Wohn",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "NWI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_detailkonzept_wohnwirkungsindex_wix_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_detailkonzept_wohnwirkungsindex_wix_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-woek-detailkonzept-wohnwirkungsindex-wix-v0-1-pdf",
       "title": "WÖk detailkonzept wohnwirkungsindex wix",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Grundlagen & Orientierung.",
@@ -23856,8 +24684,52 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_automatisierung-maschinenleistung_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_automatisierung-maschinenleistung_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-automatisierung-maschinenleistung-v0-1-",
+      "title": "Einzeldossier: Automatisierung, KI und Maschinenleistung: Beispiele, Datenquellen und Umsetzungslogik – Automatisierung, KI und Maschinenleistung",
+      "shortDescription": "Dieses Dokument ist eine öffentliche Arbeits- und Diskussionsfassung. Es enthält keine internen CodeX- oder Repository-Anweisungen. Technische Umsetzungshinweise werden separat.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_einzeldossier_automatisierung-maschinenleistung_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_einzeldossier_automatisierung-maschinenleistung_v0_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-boden-leerstand-spekulation-v0-1-2-pdf",
+      "title": "EINZELDOSSIER: Boden, Leerstand und Spekulation",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_boden_leerstand_spekulation_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_boden_leerstand_spekulation_v0_1 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -23974,6 +24846,28 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_eigentum_vermietung_wirkungspflicht_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_eigentum_vermietung_wirkungspflicht_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-eigentum-vermietung-wirkungspflicht-v0-",
+      "title": "EINZELDOSSIER: Eigentum, Vermietung und Wirkungspflicht",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_einzeldossier_eigentum_vermietung_wirkungspflicht_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_einzeldossier_eigentum_vermietung_wirkungspflicht_v0_1.pdf"
       },
@@ -24000,6 +24894,32 @@
         "PDF"
       ],
       "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_finanzierung_foerderlogik_wirkungsfonds_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_finanzierung_foerderlogik_wirkungsfonds_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-finanzierung-foerderlogik-wirkungsfonds",
+      "title": "EINZELDOSSIER: Finanzierung, Förderlogik und Wirkungsfonds",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [
+        "Wirkungshaushalt & Beschaffung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
         "primary": "assets/downloads/woek_einzeldossier_finanzierung_foerderlogik_wirkungsfonds_v0_1.pdf",
         "sourcePath": "assets/downloads/woek_einzeldossier_finanzierung_foerderlogik_wirkungsfonds_v0_1.pdf"
       },
@@ -24010,6 +24930,30 @@
       "id": "download-or-document-assets-downloads-woek-einzeldossier-gesundes-barrierefreies-resilientes-woh",
       "title": "WÖk einzeldossier gesundes barrierefreies resilientes wohnen",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Alltag & Grundbedürfnisse.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_gesundes_barrierefreies_resilientes_wohnen_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_gesundes_barrierefreies_resilientes_wohnen_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-gesundes-barrierefreies-resilientes-woh",
+      "title": "EINZELDOSSIER: Gesundes, barrierefreies und resilientes Wohnen",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
       "type": "Arbeitspapier",
       "status": "Arbeitsfassung",
       "dateOrStand": "v0.1",
@@ -24363,6 +25307,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-politische-wirkungspruefung-v0-1-2-pdf",
+      "title": "Einzeldossier: Natalie Weber",
+      "shortDescription": "Politische Wirkungsprüfung bewertet nicht Parteien als Menschen oder Lager, sondern Programme, Sprache, Maßnahmen, Haushalte und Umsetzungspfade nach ihrer Wirkung auf Mensch, Planet und.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_politische_wirkungspruefung_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_politische_wirkungspruefung_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-woek-einzeldossier-politische-wirkungspruefung-v0-1-pdf",
       "title": "WÖk einzeldossier politische wirkungspruefung",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Grundlagen & Orientierung.",
@@ -24689,6 +25655,30 @@
       "id": "download-or-document-assets-downloads-woek-einzeldossier-verwaltung-rechtsschutz-korrektur-v0-1-",
       "title": "WÖk einzeldossier verwaltung rechtsschutz korrektur",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_verwaltung_rechtsschutz_korrektur_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_verwaltung_rechtsschutz_korrektur_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-verwaltung-rechtsschutz-korrektur-v0-1-",
+      "title": "Einzeldossier: Natalie Weber",
+      "shortDescription": "Eine Wirkungsarchitektur braucht Verwaltung, die ermöglicht statt blockiert. Sie braucht klare Verfahren, Datenzugang, Begründungen, Einspruch und gerichtliche.",
       "type": "Arbeitspapier",
       "status": "Arbeitsfassung",
       "dateOrStand": "v0.1",
@@ -25059,6 +26049,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-woek-einzeldossier-wohnwirkungsindex-wix-v0-1-2-pdf",
+      "title": "EINZELDOSSIER: Wohnwirkungsindex WIX-Wohn",
+      "shortDescription": "Arbeitsfassung für Konzept-, Website- und Dossierarchitektur; keine Rechts-, Steuer- oder.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "NWI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_einzeldossier_wohnwirkungsindex_wix_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_einzeldossier_wohnwirkungsindex_wix_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-woek-einzeldossier-wohnwirkungsindex-wix-v0-1-pdf",
       "title": "WÖk einzeldossier wohnwirkungsindex wix",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Grundlagen & Orientierung.",
@@ -25174,6 +26188,30 @@
       "urls": {
         "primary": "assets/downloads/woek_finanzsystem_kapital_gesamtdossier_v0_1 2.pdf",
         "sourcePath": "assets/downloads/woek_finanzsystem_kapital_gesamtdossier_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-finanzsystem-kapital-konzeptpapier-v0-1-2-pdf",
+      "title": "Konzeptpapier · Diskussionsfassung: Mai 2026",
+      "shortDescription": "Dieses Konzeptpapier beschreibt das Finanzsystem der Wirkungsökonomie als jene Infrastruktur, die Kapital von einem Zielmaß in ein Werkzeug positiver Netto-Wirkung verwandelt. Kapital wird nicht abgeschafft und nicht moralisch verurteilt. Es wird präziser.",
+      "type": "Arbeitspapier",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_finanzsystem_kapital_konzeptpapier_v0_1 2.pdf",
+        "sourcePath": "assets/downloads/woek_finanzsystem_kapital_konzeptpapier_v0_1 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -26782,6 +27820,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-19-internationale-ordnung-18-buchanker-querverlinkung",
+      "title": "Buchanker und Querverlinkungen Rang 19: Buchanker und Querverlinkungen Rang 19",
+      "shortDescription": "Rang 19 wird im Buch \"Die neue Ordnung des Wohlstands\" durch Teil XV getragen. Die Kapitel 91 bis 96 bilden den Buchanker: Europa als Wirkungsraum, Handel und Lieferketten, globale Institutionen, kulturelle Anschlussfähigkeit, globale Resilienz und.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-19-internationale-ordnung/18_buchanker_querverlinkungen 2.pdf",
+        "sourcePath": "assets/downloads/rang-19-internationale-ordnung/18_buchanker_querverlinkungen 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-wirkungsfelder-finanzsystem-kapital-buergerinnenfonds-wirkungsrente-kapitalteilha",
       "title": "Buergerinnenfonds wirkungsrente kapitalteilhabe",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Kapital & Finanzierung.",
@@ -26881,6 +27941,50 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-11-detail-communit",
+      "title": "Detailkonzept Community, Beteiligung und Kritikwerkstatt: Lernende Rückkopplung mit Nutzer:innen, Fachleuten und Öffentlichkeit",
+      "shortDescription": "Eine Wirkungsökonomie darf nicht monologisch werden. Sie braucht Beteiligung, Widerspruch, Fehlerhinweise, Praxisfeedback und öffentliche.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/11_detail_community_kritikwerkstatt 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/11_detail_community_kritikwerkstatt 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-08-detail-lernpfad",
+      "title": "Detailkonzept Didaktik, Lernpfade und Zertifikate: Vom Lesen zum Anwenden",
+      "shortDescription": "Wirkungskompetenz entsteht nicht durch lineares Lesen allein. Lernpfade müssen erklären, üben, anwenden, reflektieren und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/08_detail_lernpfade_zertifikate 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/08_detail_lernpfade_zertifikate 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-rang-15-migration-vielfalt-12-detailkonzept-diskurs-medien",
       "title": "Detailkonzept Diskurs Medien Polarisierung",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Öffentlichkeit & Wissen.",
@@ -26931,6 +28035,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-07-detail-glossar-",
+      "title": "Detailkonzept Glossar, Begriffe und Versionierung: Verbindliche Sprache als Voraussetzung für Wirkung",
+      "shortDescription": "Eine Wirkungsökonomie ohne präzise Begriffe verliert Anschlussfähigkeit. Das Glossar verhindert, dass Wirkung, Wirkungspotenzial, Wirkungsrisiko, Netto-Wirkung und Transformationswirkung.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/07_detail_glossar_versionierung 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/07_detail_glossar_versionierung 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-rang-15-migration-vielfalt-05-detailkonzept-integration-al",
       "title": "Detailkonzept Integration als Infrastruktur",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -26975,6 +28103,32 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-11-deta",
+      "title": "Detailkonzept Kommunikation, Change und Partizipation: Akzeptanz, Kritik und demokratische Beteiligung als Bestandteil des Umsetzungspfads",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/11_detail_kommunikation_change_partizipation 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/11_detail_kommunikation_change_partizipation 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-rang-15-migration-vielfalt-04-detailkonzept-migration-als-",
       "title": "Detailkonzept Migration als Wirkungsfeld",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -26992,6 +28146,390 @@
       "urls": {
         "primary": "assets/downloads/rang-15-migration-vielfalt/04_Detailkonzept_Migration-als-Wirkungsfeld.pdf",
         "sourcePath": "assets/downloads/rang-15-migration-vielfalt/04_Detailkonzept_Migration-als-Wirkungsfeld.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-07-detail-mission-or",
+      "title": "Detailkonzept Mission-oriented Research und Wirkungsinnovation",
+      "shortDescription": "Missionen als Richtung, nicht als Mikromanagement: Forschung, Technologie, Regulierung und Praxis auf messbare gesellschaftliche Zustandsveränderungen.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/07_detail_mission_oriented_research_wirkungsinnovation 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/07_detail_mission_oriented_research_wirkungsinnovation 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-06-detail-online-v",
+      "title": "Detailkonzept Online-Volltexte und Download-Governance: Warum jeder Download eine vollständige Onlinefassung braucht",
+      "shortDescription": "Downloads allein erzeugen keine gute Website. Jeder zentrale Inhalt braucht eine vollständige Onlinefassung, damit er lesbar, zitierbar, barriereärmer, suchbar und mobil nutzbar.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/06_detail_online_volltexte_downloads 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/06_detail_online_volltexte_downloads 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-05-detail-open-scien",
+      "title": "Detailkonzept Open Science und öffentliche Wissensinfrastruktur: Open Access, Open Data, Citizen Science und faire Wissenszugänge als öffentliche Infrastruktur der .",
+      "shortDescription": "Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Bewertet wird sie am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. Ziel der Wirkungsökonomie ist positive.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/05_detail_open_science_wissensinfrastruktur 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/05_detail_open_science_wissensinfrastruktur 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-04-deta",
+      "title": "Detailkonzept Pilotkommunen und kommunale Wirkungshaushalte: Kommunen als erste reale Wirkungsräume für Haushalt, Beschaffung, Sozialraum und Beteiligung",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/04_detail_pilotkommunen 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/04_detail_pilotkommunen 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-05-deta",
+      "title": "Detailkonzept Produkt- und Beschaffungspiloten: Öffentliche Nachfrage als früher Hebel für Wirkungspreise, DPP und faire Lieferketten",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Produkte, Konsum & Beschaffung"
+      ],
+      "relatedMethods": [
+        "T-SROI",
+        "Wirkungshaushalt & Beschaffung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/05_detail_produkt_beschaffungspiloten 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/05_detail_produkt_beschaffungspiloten 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-12-detail-publikat",
+      "title": "Detailkonzept Publikationsworkflow, Redaktion und Website-Betrieb: Von der Datei zur verlässlichen öffentlichen Fachseite",
+      "shortDescription": "Der Publikationsworkflow entscheidet darüber, ob die Website professionell wirkt. Jede Datei braucht eine klare Strecke von Entwurf über Review, Freigabe, Veröffentlichung, Linkcheck, Archivierung und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/12_detail_publikationsworkflow 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/12_detail_publikationsworkflow 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-10-detail-quellen-",
+      "title": "Detailkonzept Quellen, Evidenz und Qualitätsprüfung: Quellenklarheit statt Autoritätsbehauptung",
+      "shortDescription": "Die Wirkungsökonomie braucht Quellen, aber keine Scheinautorität. Quellen müssen nachvollziehbar, aktuell, relevant und fachlich passend sein. Unsicherheit muss sichtbar.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/10_detail_quellen_evidenz 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/10_detail_quellen_evidenz 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-09-deta",
+      "title": "Detailkonzept Reallabore und regulatorische Sandboxes: Geschützte Experimentierräume für Regeln, Daten, Wirkung und Rechtsschutz",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/09_detail_reallabore_regulatory_sandboxes 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/09_detail_reallabore_regulatory_sandboxes 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-11-detail-rechtsprec",
+      "title": "Detailkonzept Rechtsprechung, Sachverständige und Wirkungsrecht: Justiz als Freiheitsgarantie, Korrekturinstanz und Schutz vor technokratischer Wirkungssteuerung.",
+      "shortDescription": "Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Bewertet wird sie am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. Ziel der Wirkungsökonomie ist positive.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie",
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/11_detail_rechtsprechung_sachverstaendige_wirkungsrecht 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/11_detail_rechtsprechung_sachverstaendige_wirkungsrecht 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-13-deta",
+      "title": "Detailkonzept Roadmap 2030 und 2050: Frühe Hebel, mittlere Skalierung und langfristige Wirkungsarchitektur",
+      "shortDescription": "Detailkonzept Roadmap 2030 und 2050 vertieft einen zentralen Umsetzungsbaustein von Rang 20 und ist als Langfassungsentwurf für Website, Download und politische Anschlussfähigkeit.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2030-20",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/13_detail_roadmap_2030_2050 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/13_detail_roadmap_2030_2050 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-09-detail-science-fo",
+      "title": "Detailkonzept Science for Policy und öffentliche Statistik: Wie Parlamente, Verwaltung und Öffentlichkeit Evidenz nutzen können, ohne Wissenschaft zur Politikverkündung zu machen.",
+      "shortDescription": "Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Bewertet wird sie am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. Ziel der Wirkungsökonomie ist positive.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/09_detail_science_for_policy_statistik 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/09_detail_science_for_policy_statistik 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-10-deta",
+      "title": "Detailkonzept Soziale Abfederung und Kaufkraftschutz: Wie Wirkungspreise gerecht eingeführt werden, ohne Grundbedarfe zu verteuern",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/10_detail_soziale_abfederung_kaufkraftschutz 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/10_detail_soziale_abfederung_kaufkraftschutz 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-09-detail-toolkart",
+      "title": "Detailkonzept Toolkarten und Demo-Governance: Werkzeuge mit Status, Nutzen und Schutzgrenzen",
+      "shortDescription": "Toolkarten dürfen nicht nur Namen enthalten. Sie brauchen Beschreibung, Nutzen, Zielgruppe, Status, Datenbedarf, Schutzgrenzen, Demo-Link und.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/09_detail_toolkarten_governance 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/09_detail_toolkarten_governance 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-08-detail-transdiszi",
+      "title": "Detailkonzept Transdisziplinarität und Citizen Science: Gesellschaftliche Akteure als Co-Forschende, ohne methodische Standards zu verwässern.",
+      "shortDescription": "Wirkung ist neutral und relational. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Bewertet wird sie am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. Ziel der Wirkungsökonomie ist positive.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/08_detail_transdisziplinaritaet_citizen_science 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/08_detail_transdisziplinaritaet_citizen_science 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-03-deta",
+      "title": "Detailkonzept Umsetzungspfad und Transformationsdramaturgie: Wie die schrittweise, lernfähig und demokratisch kontrolliert eingeführt wird",
+      "shortDescription": "Wie die Wirkungsökonomie schrittweise, lernfähig und demokratisch kontrolliert eingeführt.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/03_detail_umsetzungspfad 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/03_detail_umsetzungspfad 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-06-deta",
+      "title": "Detailkonzept Unternehmens-Transformationspfade: Vom Bericht zur Steuerung in Beschaffung, Portfolio, Risiko, Controlling und Führung",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/06_detail_unternehmens_transformationspfade 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/06_detail_unternehmens_transformationspfade 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -27016,6 +28554,173 @@
       "urls": {
         "primary": "assets/downloads/rang-15-migration-vielfalt/06_Detailkonzept_Vielfalt-als-Resilienzfaktor.pdf",
         "sourcePath": "assets/downloads/rang-15-migration-vielfalt/06_Detailkonzept_Vielfalt-als-Resilienzfaktor.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-04-detail-wirkungs",
+      "title": "Detailkonzept Wirkungsakademie und Curricula: Lernpfade, Module und Zertifikate für Wirkungskompetenz",
+      "shortDescription": "Die Wirkungsakademie macht aus Theorie Handlungskompetenz. Sie übersetzt die Portale in Lernpfade, Übungen, Fallstudien, Reflexionen und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/04_detail_wirkungsakademie_curricula 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/04_detail_wirkungsakademie_curricula 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-08-deta",
+      "title": "Detailkonzept Wirkungsdaten, Versionierung und Register: Datenqualität, WÖk-IDs, Prüfstatus und Korrektur als Basis der Implementierung",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "T-SROI",
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/08_detail_wirkungsdaten_versionierung_register 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/08_detail_wirkungsdaten_versionierung_register 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-07-deta",
+      "title": "Detailkonzept Wirkungsfonds und Brückenfinanzierung: Transformationskapital für Prävention, Konversion, Resilienz und soziale Abfederung",
+      "shortDescription": "Für jedes Umsetzungsinstrument müssen Datenquellen vor Beginn geklärt werden. Dazu gehören vorhandene Verwaltungsdaten, öffentliche Statistik, Unternehmensdaten, CSRD- und ESRS-Daten, Produktpässe, Beschaffungsdaten, Haushaltsdaten, Sozialraumdaten,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/07_detail_wirkungsfonds_brueckenfinanzierung 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/07_detail_wirkungsfonds_brueckenfinanzierung 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-05-detail-wirkungs",
+      "title": "Detailkonzept Wirkungskompetenz als Querschnittskompetenz: Die Fähigkeit, Wirkung zu erkennen, zu bewerten und verantwortungsvoll zu gestalten",
+      "shortDescription": "Wirkungskompetenz ist eine Querschnittskompetenz für das 21. Jahrhundert. Sie verbindet Systemdenken, Datenverständnis, demokratische Reflexion und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/05_detail_wirkungskompetenz 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/05_detail_wirkungskompetenz 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-12-detail-wirkungsko",
+      "title": "Detailkonzept Wirkungskompetenz-Akademie und Wissensbildung",
+      "shortDescription": "Wirkungskompetenz als Querschnittskompetenz für Wissenschaft, Verwaltung, Unternehmen, Medien, Schulen und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/12_detail_wirkungskompetenz_akademie 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/12_detail_wirkungskompetenz_akademie 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-03-detail-wissenscha",
+      "title": "Detailkonzept Wissenschaft als Wirklichkeitsprüfung",
+      "shortDescription": "Warum Wissenschaft in der Wirkungsökonomie keine Autoritätsherrschaft ist, sondern ein Korrektursystem für Wirklichkeit, Unsicherheit und demokratische.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/03_detail_wissenschaft_als_wirklichkeitspruefung 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/03_detail_wissenschaft_als_wirklichkeitspruefung 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-04-detail-wissensrat",
+      "title": "Detailkonzept Wissensrat und wissenschaftliche Integrität",
+      "shortDescription": "Institutionelle Sicherung gegen Manipulation, Lobbyeinfluss, politisierte Forschung, methodische Schwäche und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/04_detail_wissensrat_integritaet 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/04_detail_wissensrat_integritaet 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -27139,6 +28844,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-19-faq",
+      "title": "FAQ Rang 21 - Missverständnisse und Gegenframes: Dokumenttyp: FAQ",
+      "shortDescription": "Nein. Sie darf keine Menschen als Personen bewerten. Sie bewertet Wirkung von Produkten, Organisationen, Strukturen, Kapitalfluessen, Regeln und oeffentlichen.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/19_faq_missverstaendnisse 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/19_faq_missverstaendnisse 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-migration-vielfalt-gesamtdossier-index-html",
       "title": "Gesamtdossier",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -27178,6 +28905,142 @@
       "urls": {
         "primary": "assets/downloads/rang-15-migration-vielfalt/03_Gesamtdossier_Migration-und-Vielfalt.pdf",
         "sourcePath": "assets/downloads/rang-15-migration-vielfalt/03_Gesamtdossier_Migration-und-Vielfalt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-02-gesamtdossier-2-pdf",
+      "title": "Gesamtdossier Rang 17: Digitalisierung, KI und Wirkungsdatenräume",
+      "shortDescription": "Wirkung wird in diesem Portal neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Bewertet wird am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. Ziel der Wirkungsökonomie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-17-digitalisierung-ki/02_gesamtdossier 2.pdf",
+        "sourcePath": "assets/downloads/rang-17-digitalisierung-ki/02_gesamtdossier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-02-gesamtdossier-2-p",
+      "title": "Gesamtdossier Rang 18 - Wissen, Wissenschaft, Forschung und Wirkungsinnovation: Die Wissensordnung der",
+      "shortDescription": "Gesamtdossier Wissen, Wissenschaft, Forschung und Wirkungsinnovation gehört zu Rang 18 der Wirkungsökonomie. Der Bereich verbindet Wissenschaft, Forschung, öffentliche Wahrheit, Innovationspolitik, Datenqualität und Rechtsschutz. Er schließt an Rang 17 an:.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/02_gesamtdossier 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/02_gesamtdossier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-02-gesa",
+      "title": "Gesamtdossier Rang 20: Transformation, Übergänge und Implementierung der",
+      "shortDescription": "Das Gesamtdossier bündelt die Umsetzungsarchitektur für Rang 20: vom ersten Pilot über demokratische Kontrolle bis zur Skalierung in Recht, Haushalt, Beschaffung, Kapital, Unternehmen und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/02_gesamtdossier 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/02_gesamtdossier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-02-ges",
+      "title": "Gesamtdossier Rang 21 - Kritik, Missverständnisse und Schutzarchitektur: Umfassendes Fach- und Portalgesamtdossier.",
+      "shortDescription": "Rang 21 bildet die Kritik-, Missverstaendnis- und Schutzarchitektur der Wirkungsökonomie. Der Bereich behandelt nicht die naechste Anwendung, sondern die Bedingungen, unter denen die gesamte WÖk glaubwuerdig, demokratisch, rechtssicher und lernfaehig.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/02_gesamtdossier 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/02_gesamtdossier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-02-gesamtdossier-2",
+      "title": "Gesamtdossier Rang 23 - Wirkungsakademie, Fachbibliothek und Wirkungskompetenz: Die Wissensarchitektur der als lernendes System",
+      "shortDescription": "Das Gesamtdossier Rang 23 beschreibt die Wissensarchitektur der Wirkungsökonomie. Es verbindet Fachbibliothek, Akademie, Glossar, Quellen, Downloads, Toolkarten, Lernpfade, Zertifikate und redaktionelle Governance zu einem gemeinsamen.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/02_gesamtdossier 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/02_gesamtdossier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta",
+      "title": "Geschichte der SDGs, Vorläufer und Verhandlungsprozess: Vom Umwelt- und Entwicklungsdiskurs zur Agenda 2030 als globalem Referenzrahmen",
+      "shortDescription": "„Wer verstehen will, warum die SDGs kein beliebiger Zielkatalog sind, muss ihre Entstehung als globale Verständigung über Systemrisiken.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/04_woek_sdg_geschichte_vorlaeufer_verhandlungsprozess_detailkonzept_v1_0 2.pdf",
+        "sourcePath": "assets/downloads/04_woek_sdg_geschichte_vorlaeufer_verhandlungsprozess_detailkonzept_v1_0 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -27228,6 +29091,28 @@
         "sourcePath": "werkstatt/arbeitsbibliothek/historische-dokumente/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-docs-grundlagen-historische-dokumente-hinweis-v1-1-pdf",
+      "title": "Historische Dokumente Hinweis",
+      "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.pdf",
+        "sourcePath": "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -27730,6 +29615,741 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-01-konzeptpapier-2-pdf",
+      "title": "Konzeptpapier Rang 17: Digitalisierung, KI und Wirkungsdatenräume",
+      "shortDescription": "Wirkung wird in diesem Portal neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Bewertet wird am Referenzrahmen der SDGs, der Agenda 2030 und SDG+. Ziel der Wirkungsökonomie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-17-digitalisierung-ki/01_konzeptpapier 2.pdf",
+        "sourcePath": "assets/downloads/rang-17-digitalisierung-ki/01_konzeptpapier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-01-konzeptpapier-2-p",
+      "title": "Konzeptpapier Rang 18 - Wissen, Wissenschaft, Forschung und Wirkungsinnovation: Wissenschaft als Korrektursystem der",
+      "shortDescription": "Konzeptpapier Wissen, Wissenschaft, Forschung und Wirkungsinnovation gehört zu Rang 18 der Wirkungsökonomie. Der Bereich verbindet Wissenschaft, Forschung, öffentliche Wahrheit, Innovationspolitik, Datenqualität und Rechtsschutz. Er schließt an Rang 17 an:.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/01_konzeptpapier 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/01_konzeptpapier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-01-konz",
+      "title": "Konzeptpapier Rang 20: Transformation, Übergänge und Implementierung der",
+      "shortDescription": "Das Konzeptpapier erklärt Rang 20 als praktische Umsetzungslogik der Wirkungsökonomie. Es verbindet Pilotierung, Reallabore, öffentliche Beschaffung, Wirkungshaushalte, Unternehmenspfade, Wirkungsfonds, Datenräume, soziale Übergänge und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/01_konzeptpapier 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/01_konzeptpapier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-01-kon",
+      "title": "Konzeptpapier Rang 21 - Kritik, Missverständnisse und Schutzarchitektur: Langfassung zur Begruendung von Rang 21.",
+      "shortDescription": "Rang 21 bildet die Kritik-, Missverstaendnis- und Schutzarchitektur der Wirkungsökonomie. Der Bereich behandelt nicht die naechste Anwendung, sondern die Bedingungen, unter denen die gesamte WÖk glaubwuerdig, demokratisch, rechtssicher und lernfaehig.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/01_konzeptpapier 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/01_konzeptpapier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-01-konzeptpapier-2",
+      "title": "Konzeptpapier Rang 23 - Wirkungsakademie, Fachbibliothek und Wirkungskompetenz: Wie die lernbar, auffindbar, zitierbar und handlungsfähig wird",
+      "shortDescription": "Dieses Konzeptpapier beschreibt Rang 23 als Lern- und Wissensinfrastruktur der Wirkungsökonomie. Es verbindet Akademie, Fachbibliothek, Glossar, Quellenlogik, Downloads, Toolkarten, Lernpfade und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/01_konzeptpapier 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/01_konzeptpapier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-14-wirk",
+      "title": "Kurzfassung",
+      "shortDescription": "Dieses Dokument definiert die Indikatorlogik für Rang 20. Bewertet werden nicht Menschen, sondern Implementierungsstrukturen, Datenqualität, Pilotfähigkeit, Übergangsschutz und.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI",
+        "Wirkungsindikatoren"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/14_wirkungsindikatoren 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/14_wirkungsindikatoren 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-15-tool",
+      "title": "Kurzfassung",
+      "shortDescription": "Die Toolkarten machen Rang 20 praktisch nutzbar. Sie enthalten Beschreibung, Nutzen, Zielgruppe, Status und Linklogik für die.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/15_toolkarten 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/15_toolkarten 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-01-konzeptpapier-",
+      "title": "Kurzfassung",
+      "shortDescription": "Wirkung wird in diesem Paket neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer Bezugspunkt, Zeitraum, Systemebene und Referenzrahmen. Bewertet wird am.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/01_konzeptpapier 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/01_konzeptpapier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-02-gesamtdossier-",
+      "title": "Kurzfassung",
+      "shortDescription": "Wirkung wird in diesem Paket neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer Bezugspunkt, Zeitraum, Systemebene und Referenzrahmen. Bewertet wird am.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/02_gesamtdossier 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/02_gesamtdossier 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-03-detail-alltag-",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie Preise, Produkte, Wohnen, Mobilität, Energie, Ernährung, Bildung, Pflege und digitale Öffentlichkeit im Alltag anders wirken.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "2035",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/03_detail_alltag_2035 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/03_detail_alltag_2035 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-04-detail-unterne",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie Unternehmen nicht nur nach KPI, sondern nach Wirkung, Risiko, Kapitalzugang, Lieferketten, Produktportfolios und Managementrückkopplung.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "2035",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/04_detail_unternehmen_2035 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/04_detail_unternehmen_2035 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-05-detail-staat-2",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie der Staat vom Programmverwalter zur Rückkopplungsarchitektur wird, ohne demokratische Kontrolle zu.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "2035",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/05_detail_staat_2035 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/05_detail_staat_2035 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-06-detail-globale",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie globale Kooperation, Ressourcenfairness, Resilienz, Lieferketten und Wirkungspartnerschaften ohne Weltregierung gedacht.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "2050",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/06_detail_globale_ordnung_2050 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/06_detail_globale_ordnung_2050 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-07-detail-wirkung",
+      "title": "Kurzfassung",
+      "shortDescription": "Warum Wohlstand als Systemzustand gelesen wird und weniger Verlustleistung mehr Wohlstand bedeuten.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/07_detail_wirkungswohlstand 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/07_detail_wirkungswohlstand 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-08-detail-buerger",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie Bürger:innen nicht als Datenobjekte, sondern als Mitgestalter:innen von Alltag, Kommune, Demokratie und Wirkungspraxis verstanden.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/08_detail_buergerinnen_co_autorinnen 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/08_detail_buergerinnen_co_autorinnen 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-09-detail-wirkung",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie konkrete Lebensbereiche in eine positive Netto-Wirkung übersetzt werden, ohne moralische Überforderung zu.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/09_detail_wirkungspraxis 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/09_detail_wirkungspraxis 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-10-detail-zukunft",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie Zukunftsbilder kommuniziert werden müssen, damit sie Orientierung schaffen statt Abwehr, Angst oder.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/10_detail_zukunftskommunikation 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/10_detail_zukunftskommunikation 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-11-detail-wirkung",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie klassische Aktivitätsmessung durch Wirkungsgrade, Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung ergänzt.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/11_detail_wirkungs_bip_verlustleistung 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/11_detail_wirkungs_bip_verlustleistung 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-12-detail-schluss",
+      "title": "Kurzfassung",
+      "shortDescription": "Wie die neue Ordnung des Wohlstands als Entscheidung über den Maßstab zusammengeführt wird: nicht Kapital, sondern.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/12_detail_schlussbild 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/12_detail_schlussbild 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-14-wirkungsindika",
+      "title": "Kurzfassung",
+      "shortDescription": "Wirkung wird in diesem Paket neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer Bezugspunkt, Zeitraum, Systemebene und Referenzrahmen. Bewertet wird am.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Wirkungsindikatoren"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/14_wirkungsindikatoren 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/14_wirkungsindikatoren 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-15-toolkarten-2-p",
+      "title": "Kurzfassung",
+      "shortDescription": "Wirkung wird in diesem Paket neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer Bezugspunkt, Zeitraum, Systemebene und Referenzrahmen. Bewertet wird am.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/15_toolkarten 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/15_toolkarten 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-16-sdg-sdgplus-bl",
+      "title": "Kurzfassung",
+      "shortDescription": "Wirkung wird in diesem Paket neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer Bezugspunkt, Zeitraum, Systemebene und Referenzrahmen. Bewertet wird am.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/16_sdg_sdgplus_block 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/16_sdg_sdgplus_block 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-17-politische-ans",
+      "title": "Kurzfassung",
+      "shortDescription": "Wirkung wird in diesem Paket neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer Bezugspunkt, Zeitraum, Systemebene und Referenzrahmen. Bewertet wird am.",
+      "type": "Grundlagenwerk",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/17_politische_anschlussfaehigkeit 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/17_politische_anschlussfaehigkeit 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-18-quellen-glossa",
+      "title": "Kurzfassung",
+      "shortDescription": "Wirkung wird in diesem Paket neutral und relational verwendet. Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und braucht immer Bezugspunkt, Zeitraum, Systemebene und Referenzrahmen. Bewertet wird am.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/18_quellen_glossarlinks 2.pdf",
+        "sourcePath": "assets/downloads/rang-22-zukunftsbilder-wirkungswohlstand/18_quellen_glossarlinks 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-16-sdg-",
+      "title": "Kurzfassung: Der SDG-/SDG+-Block ordnet Rang 20 in den Referenzrahmen der ein.",
+      "shortDescription": "SDG 4 - Hochwertige Bildung: Umsetzung braucht Wirkungskompetenz, Verwaltungslernen, Datenkompetenz und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/16_sdg_sdgplus_block 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/16_sdg_sdgplus_block 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-18-quel",
+      "title": "Kurzfassung: Dieses Dokument bündelt interne und externe Quellen sowie zentrale Glossarbegriffe für Rang 20.",
+      "shortDescription": "Weber, Natalie: Die neue Ordnung des Wohlstands. Arbeitsfassung 2026. Teil XVI - Transformation, Übergänge und Implementierung, Kapitel 97 bis.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI",
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/18_quellen_glossarlinks 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/18_quellen_glossarlinks 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-17-poli",
+      "title": "Kurzfassung: Dieses Dokument enthält den Pflichtblock für alle Rang-20-Wirkungsfeldseiten.",
+      "shortDescription": "Aufgabe der Politik: Politik muss nicht jede Einzelentscheidung vorgeben. Sie muss Schutzgüter definieren, Datenqualität sichern, Piloträume ermöglichen, soziale Übergänge abfedern, Rechtsschutz garantieren und die Rückkopplung der Wirkung in Haushalte,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/17_politische_anschlussfaehigkeit 2.pdf",
+        "sourcePath": "assets/downloads/rang-20-transformation-uebergaenge-implementierung/17_politische_anschlussfaehigkeit 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-13-wirkungsindikatoren-2-pdf",
+      "title": "Kurzfassung: Indikatorenübersicht",
+      "shortDescription": "Die Wirkungsindikatoren für Rang 17 bewerten Datenarchitekturen, Produktpässe, KI-Systeme, Plattformlogiken, Cyberresilienz, Register, Schnittstellen und Governance-Prozesse. Sie dienen nicht der.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "Wirkungsindikatoren"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-17-digitalisierung-ki/13_wirkungsindikatoren 2.pdf",
+        "sourcePath": "assets/downloads/rang-17-digitalisierung-ki/13_wirkungsindikatoren 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-16-politische-anschlussfaehigke",
+      "title": "Kurzfassung: Politische Anschlussfähigkeit",
+      "shortDescription": "Politik muss digitale Infrastrukturen so rahmen, dass sie Rückkopplung ermöglichen, Rechte schützen und Machtkonzentration begrenzen. Sie darf Digitalisierung nicht nur als Standortpolitik verstehen, sondern als Wirkungsarchitektur für Demokratie, Wirtschaft,.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-17-digitalisierung-ki/16_politische_anschlussfaehigkeit 2.pdf",
+        "sourcePath": "assets/downloads/rang-17-digitalisierung-ki/16_politische_anschlussfaehigkeit 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-17-quellen-glossarlinks-2-pdf",
+      "title": "Kurzfassung: Quellen und Glossar",
+      "shortDescription": "Natalie Weber: Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-17-digitalisierung-ki/17_quellen_glossarlinks 2.pdf",
+        "sourcePath": "assets/downloads/rang-17-digitalisierung-ki/17_quellen_glossarlinks 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-15-sdg-sdgplus-block-2-pdf",
+      "title": "Kurzfassung: SDG- und SDG+-Bezug",
+      "shortDescription": "Rang 17 verbindet besonders SDG 4, SDG 8, SDG 9, SDG 10, SDG 12, SDG 13, SDG 16 und SDG 17. Digitalisierung kann Bildung, Arbeit, Infrastruktur, nachhaltige Produktion, Klimatransparenz, starke Institutionen und Partnerschaften unterstützen. Dieselben Systeme.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+",
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-17-digitalisierung-ki/15_sdg_sdgplus_block 2.pdf",
+        "sourcePath": "assets/downloads/rang-17-digitalisierung-ki/15_sdg_sdgplus_block 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-14-toolkarten-2-pdf",
+      "title": "Kurzfassung: Toolkarten",
+      "shortDescription": "Die Toolkarten beschreiben erste Anwendungen. Sie sind als Demo in Vorbereitung zu kennzeichnen, solange keine produktive Implementierung.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-17-digitalisierung-ki/14_toolkarten 2.pdf",
+        "sourcePath": "assets/downloads/rang-17-digitalisierung-ki/14_toolkarten 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-wirkungsfelder-gesundheit-pflege-tools-mental-health-reflexionstool-index-html",
       "title": "Mental health reflexionstool",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Planet & Resilienz.",
@@ -27866,6 +30486,96 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-16-politische-anschl",
+      "title": "Politische Anschlussfähigkeit Rang 18: Umsetzungsoptionen für Wissenschaft, Forschung und Wirkungsinnovation",
+      "shortDescription": "Politische Anschlussfähigkeit Rang 18 gehört zu Rang 18 der Wirkungsökonomie. Der Bereich verbindet Wissenschaft, Forschung, öffentliche Wahrheit, Innovationspolitik, Datenqualität und Rechtsschutz. Er schließt an Rang 17 an: Digitale Infrastrukturen machen.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/16_politische_anschlussfaehigkeit 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/16_politische_anschlussfaehigkeit 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-19-internationale-ordnung-16-politische-anschlussfaeh",
+      "title": "Politische Anschlussfähigkeit Rang 19: Politische Anschlussfähigkeit Rang 19",
+      "shortDescription": "Die Wirkungsökonomie liefert keinen fertigen außenpolitischen Parteiprogrammtext. Sie liefert einen Bewertungs- und Steuerungsrahmen, der sichtbar macht, welche internationale Ordnung positive Netto-Wirkung für Mensch, Planet und Demokratie erzeugt und wo.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-19-internationale-ordnung/16_politische_anschlussfaehigkeit 2.pdf",
+        "sourcePath": "assets/downloads/rang-19-internationale-ordnung/16_politische_anschlussfaehigkeit 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-17-pol",
+      "title": "Politische Anschlussfähigkeit Rang 21: Dokumenttyp: Politische Anschlussfaehigkeit",
+      "shortDescription": "Aufgabe der Politik: Politik muss Kritik als Rueckkopplung organisieren. Sie schafft Regeln, die Wirkungsbewertung transparent, anfechtbar, lernfaehig und demokratisch begrenzt.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/17_politische_anschlussfaehigkeit 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/17_politische_anschlussfaehigkeit 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-17-politische-ansc",
+      "title": "Politische Anschlussfähigkeit Rang 23: Umsetzungsoptionen für Akademie, Fachbibliothek und Wirkungskompetenz",
+      "shortDescription": "Die Wirkungsökonomie liefert keinen fertigen Parteiprogrammtext, sondern einen Bewertungs- und Steuerungsrahmen. Parteien, Verwaltungen, Bildungsinstitutionen und zivilgesellschaftliche Akteure behalten.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/17_politische_anschlussfaehigkeit 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/17_politische_anschlussfaehigkeit 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-rang-15-migration-vielfalt-01-portalstartseite-migration-u",
       "title": "Portalstartseite Migration und Vielfalt",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -27883,6 +30593,50 @@
       "urls": {
         "primary": "assets/downloads/rang-15-migration-vielfalt/01_Portalstartseite_Migration-und-Vielfalt.pdf",
         "sourcePath": "assets/downloads/rang-15-migration-vielfalt/01_Portalstartseite_Migration-und-Vielfalt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-00-por",
+      "title": "Portalstartseite Rang 21 - Kritik, Missverständnisse und Schutzarchitektur",
+      "shortDescription": "Rang 21 bildet die Kritik-, Missverstaendnis- und Schutzarchitektur der Wirkungsökonomie. Der Bereich behandelt nicht die naechste Anwendung, sondern die Bedingungen, unter denen die gesamte WÖk glaubwuerdig, demokratisch, rechtssicher und lernfaehig.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/00_portalstartseite 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/00_portalstartseite 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-00-portalstartseit",
+      "title": "Portalstartseite Rang 23 - Wirkungsakademie, Fachbibliothek und Wirkungskompetenz",
+      "shortDescription": "Rang 23 bündelt die Wissens-, Lern- und Bibliotheksarchitektur der Wirkungsökonomie. Er stellt sicher, dass die Inhalte der Portale nicht nur produziert, sondern dauerhaft nutzbar, lernbar, zitierbar, prüfbar und aktualisierbar.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/00_portalstartseite 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/00_portalstartseite 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -27936,6 +30690,104 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-17-quellen-glossarli",
+      "title": "Quellen und Glossarlinks Rang 18: Interne und externe Anschlussstellen",
+      "shortDescription": "Quellen und Glossarlinks Rang 18 gehört zu Rang 18 der Wirkungsökonomie. Der Bereich verbindet Wissenschaft, Forschung, öffentliche Wahrheit, Innovationspolitik, Datenqualität und Rechtsschutz. Er schließt an Rang 17 an: Digitale Infrastrukturen machen.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/17_quellen_glossarlinks 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/17_quellen_glossarlinks 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-19-internationale-ordnung-17-quellen-glossarlinks-2-p",
+      "title": "Quellen und Glossarlinks Rang 19: Quellen und Glossarlinks Rang 19",
+      "shortDescription": "Weber, Natalie: Die neue Ordnung des Wohlstands, Arbeitsfassung 2026, Teil XV: Internationale Ordnung, Globalisierung und Geopolitik, Kapitel 91 bis.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-19-internationale-ordnung/17_quellen_glossarlinks 2.pdf",
+        "sourcePath": "assets/downloads/rang-19-internationale-ordnung/17_quellen_glossarlinks 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-18-que",
+      "title": "Quellen und Glossarlinks Rang 21: Dokumenttyp: Quellen und Glossar",
+      "shortDescription": "Quellenrahmen: Natalie Weber: Die neue Ordnung des Wohlstands, Arbeitsfassung 2026, Teil XVII, Kapitel 101 bis 106.; Natalie Weber: Grundlagenpapier Wirkungsökonomie WÖk, 2025, Abschnitte Umsetzung, Transformation, Narrative, Change-Management und Akzeptanz.;.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/18_quellen_glossarlinks 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/18_quellen_glossarlinks 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-18-quellen-glossar",
+      "title": "Quellen und Glossarlinks Rang 23: Anschlussrahmen, Begriffe und Zitierlogik",
+      "shortDescription": "Natalie Weber: Die neue Ordnung des Wohlstands, Arbeitsfassung 2026. Bezug: Wirkungskompetenz, Fach Zukunft, Wirkungswohlstand und lernende.",
+      "type": "Glossar",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/18_quellen_glossarlinks 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/18_quellen_glossarlinks 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-downloads-rang-15-migration-vielfalt-index-html",
       "title": "Rang 15 migration vielfalt",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -27975,6 +30827,28 @@
       "urls": {
         "primary": "assets/downloads/rang-15-migration-vielfalt/README_Rang15_Migration-und-Vielfalt.pdf",
         "sourcePath": "assets/downloads/rang-15-migration-vielfalt/README_Rang15_Migration-und-Vielfalt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-20-ris",
+      "title": "Risiko- und Schutzmatrix Rang 21: Dokumenttyp: Schutzmatrix",
+      "shortDescription": "Gegenmassnahmen: demokratische Entscheidung, oeffentliche Methoden, Betroffenenbeteiligung, Rechtsschutz, unabhaengige Pruefung und.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/20_risiko_schutzmatrix 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/20_risiko_schutzmatrix 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -28071,6 +30945,97 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-15-sdg-sdgplus-block",
+      "title": "SDG- und SDG+-Bezug Rang 18: Wissen, Wissenschaft und Forschung im Referenzrahmen der",
+      "shortDescription": "SDG-/SDG+-Block Rang 18 gehört zu Rang 18 der Wirkungsökonomie. Der Bereich verbindet Wissenschaft, Forschung, öffentliche Wahrheit, Innovationspolitik, Datenqualität und Rechtsschutz. Er schließt an Rang 17 an: Digitale Infrastrukturen machen Wirkung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+",
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/15_sdg_sdgplus_block 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/15_sdg_sdgplus_block 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-19-internationale-ordnung-15-sdg-sdgplus-block-2-pdf",
+      "title": "SDG- und SDG+-Block Rang 19: SDG- und SDG+-Block Rang 19",
+      "shortDescription": "Rang 19 ist besonders stark mit SDG 16 und SDG 17 verbunden, weil Frieden, Rechtsstaatlichkeit, starke Institutionen und Partnerschaften zentrale Bedingungen einer weltfähigen Wirkungsordnung sind. Zugleich berührt internationale Ordnung nahezu alle SDGs:.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-19-internationale-ordnung/15_sdg_sdgplus_block 2.pdf",
+        "sourcePath": "assets/downloads/rang-19-internationale-ordnung/15_sdg_sdgplus_block 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-16-sdg",
+      "title": "SDG-/SDG+-Block Rang 21: Dokumenttyp: SDG-/SDG+-Block",
+      "shortDescription": "Relevante SDGs: SDG 4 Bildung, SDG 8 Arbeit, SDG 9 Infrastruktur, SDG 10 Ungleichheiten, SDG 12 Konsum und Produktion, SDG 16 Frieden, Gerechtigkeit und starke Institutionen, SDG 17.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/16_sdg_sdgplus_block 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/16_sdg_sdgplus_block 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-16-sdg-sdgplus-blo",
+      "title": "SDG-/SDG+-Block Rang 23: Bildung, Wissen, Demokratie und öffentliche Orientierung als Wirkungsfelder",
+      "shortDescription": "Rang 23 zahlt besonders auf SDG 4 Bildung, SDG 9 Innovation und Infrastruktur, SDG 10 weniger Ungleichheiten, SDG 16 starke Institutionen und SDG 17 Partnerschaften.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/16_sdg_sdgplus_block 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/16_sdg_sdgplus_block 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-verstehen-sdgs-sdgplus-sdgplus-gesellschaftlicher-zusammenhalt-index-html",
       "title": "SDG+ gesellschaftlicher zusammenhalt",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: SDGs, Agenda 2030 & SDG+.",
@@ -28090,6 +31055,31 @@
         "sourcePath": "verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-05-woek-sdgs-risikomanagement-finanzmarktanschluss-detailk",
+      "title": "SDGs als Risikomanagement und Finanzmarkt-Anschluss: Warum SDGs für Banken, Versicherungen, Börse, Kapitalzugang und relevant sind",
+      "shortDescription": "„Die SDGs sind nicht nur Ziele. Sie sind eine Karte der Risiken, die Märkte und Gesellschaften stabil oder instabil.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+",
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/05_woek_sdgs_risikomanagement_finanzmarktanschluss_detailkonzept_v1_0 2.pdf",
+        "sourcePath": "assets/downloads/05_woek_sdgs_risikomanagement_finanzmarktanschluss_detailkonzept_v1_0 2.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -28132,6 +31122,96 @@
       "urls": {
         "primary": "assets/downloads/rang-15-migration-vielfalt/15_Toolkarten_Migration-und-Vielfalt.pdf",
         "sourcePath": "assets/downloads/rang-15-migration-vielfalt/15_Toolkarten_Migration-und-Vielfalt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-14-toolkarten-2-pdf",
+      "title": "Toolkarten Rang 18: Werkzeuge für Wissensintegrität, Forschungswirkung und Wirkungsinnovation",
+      "shortDescription": "Toolkarten Rang 18 gehört zu Rang 18 der Wirkungsökonomie. Der Bereich verbindet Wissenschaft, Forschung, öffentliche Wahrheit, Innovationspolitik, Datenqualität und Rechtsschutz. Er schließt an Rang 17 an: Digitale Infrastrukturen machen Wirkung sichtbar,.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-18-wissen-wissenschaft-forschung/14_toolkarten 2.pdf",
+        "sourcePath": "assets/downloads/rang-18-wissen-wissenschaft-forschung/14_toolkarten 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-19-internationale-ordnung-14-toolkarten-2-pdf",
+      "title": "Toolkarten Rang 19: Toolkarten Rang 19",
+      "shortDescription": "Die Toolkarten übersetzen Rang 19 in praktische Anwendungen. Keine Toolkarte bewertet Personen. Bewertet werden Strukturen, Programme, Lieferketten, Datenräume und institutionelle.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-19-internationale-ordnung/14_toolkarten 2.pdf",
+        "sourcePath": "assets/downloads/rang-19-internationale-ordnung/14_toolkarten 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-15-too",
+      "title": "Toolkarten Rang 21: Dokumenttyp: Toolkarten",
+      "shortDescription": "Rang 21 stellt Toolkarten bereit, die Kritik, Schutz, Missbrauchsrisiken und demokratische Begrenzung operationalisieren. Alle Tools sind im Status Demo in.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/15_toolkarten 2.pdf",
+        "sourcePath": "assets/downloads/rang-21-kritik-missverstaendnisse-schutzarchitektur/15_toolkarten 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-15-toolkarten-2-pd",
+      "title": "Toolkarten Rang 23: Werkzeuge für Fachbibliothek, Akademie und Website-Qualitätssicherung",
+      "shortDescription": "Rang 23 enthält Tools für die Pflege der Fachbibliothek, Akademie und Website: Bibliotheks-Navigator, Glossar-Mapper, Lernpfad-Builder, Download-Checker, Quellen-Check, Toolkarten-Reifegrad-Check, Versionierungs-Dashboard und.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/15_toolkarten 2.pdf",
+        "sourcePath": "assets/downloads/rang-23-wirkungsakademie-fachbibliothek/15_toolkarten 2.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -28230,6 +31310,79 @@
         "sourcePath": "portale/migration-vielfalt/vielfalt-als-resilienzfaktor/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-21-woek-impact-controlling-woek-ids-indikatorenarchitektur",
+      "title": "Whitepaper T-SROI: Grundlage für Transformational Social Return on Investment und Impact Controlling. Whitepaper-T-SROI.pdf",
+      "shortDescription": "„Ohne eindeutige Wirkungsindikatoren bleibt Wirkung Erzählung. Mit WÖk-IDs wird sie prüfbare.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Wirkungsindikatoren"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0 2.pdf",
+        "sourcePath": "assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-22-woek-impact-controlling-scorecards-benchmarks-nwi-metho",
+      "title": "Whitepaper T-SROI: Grundlage für Transformational Social Return on Investment und Impact Controlling. Whitepaper-T-SROI.pdf",
+      "shortDescription": "Wie Wirkungsdaten zu prüfbaren Entscheidungen werden - ohne Kompensation, Scheingenauigkeit oder.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "NWI",
+        "Wirkungsindikatoren"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0 2.pdf",
+        "sourcePath": "assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m",
+      "title": "Whitepaper T-SROI: Grundlage für Transformational Social Return on Investment und Impact Controlling. Whitepaper-T-SROI.pdf",
+      "shortDescription": "„T-SROI fragt nicht nur, ob sich etwas lohnt, sondern ob es ein System in Richtung Zukunftsfähigkeit.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0 2.pdf",
+        "sourcePath": "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0 2.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {

@@ -181,7 +181,7 @@ function page({ rel, title, description, searchSection = "Wirkungsfelder", searc
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header">
@@ -193,7 +193,7 @@ function page({ rel, title, description, searchSection = "Wirkungsfelder", searc
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>
 `);
@@ -250,7 +250,7 @@ function mdToHtml(markdown) {
 }
 
 function tocBlock(toc) {
-  return `<nav class="toc-card" aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2><ol>${toc.slice(0, 22).map((x) => `<li class="toc-level-${x.level}"><a href="#${x.id}">${escapeHtml(x.text)}</a></li>`).join("")}</ol></nav>`;
+  return `<nav class="toc-card no-print reader-toc-card" aria-label="Inhaltsverzeichnis"><h2 class="card-title">Inhaltsverzeichnis</h2><ol>${toc.slice(0, 22).map((x) => `<li class="toc-level-${x.level}"><a href="#${x.id}">${escapeHtml(x.text)}</a></li>`).join("")}</ol></nav>`;
 }
 function citationNotice(route) {
   return `<aside class="citation-note" role="note"><p class="card-kicker">Onlinefassung</p><h2>Du liest die Onlinefassung.</h2><p>Abschnittsanker können direkt zitiert werden. Ergänzende Downloadfassungen stehen am Ende der Seite.</p></aside>`;
@@ -308,8 +308,8 @@ function fulltextPage({ rel, title, subtitle, mdRel, status, downloads = [], car
     body: (base, route) => `${hero(base, { kicker: status.replace(/\/\s*Online-Volltext/g, ""), title, subtitle, text: subtitle, action: `<a class="btn btn-primary" href="${href(base, backHref)}">Zur Übersicht</a>` })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta(status)}</section>
-    <section class="section narrow">${tocBlock(rendered.toc)}</section>
-    <section class="section article-section"><article class="article-body fulltext-reader">${sectionTitle("online-volltext", "Onlinefassung")}${rendered.html}</article></section>
+    <section class="section no-print detail-concept-toc-section">${tocBlock(rendered.toc)}</section>
+    <section class="section article-section"><article class="article-body fulltext-reader detail-concept-reader">${sectionTitle("online-volltext", "Onlinefassung")}${rendered.html}</article></section>
     ${cards.length ? `<section class="section" aria-labelledby="related">${sectionTitle("related", "Verwandte Online-Bereiche")}${cardGrid(base, cards)}</section>` : ""}
     ${toolGrid(base)}
     ${politicalBlock()}
@@ -344,10 +344,12 @@ function portalPage() {
     ${sdgBlock()}
     ${bookBlock(base)}
     <section class="section" id="material" aria-labelledby="material-title"><div class="section-header"><p class="hero-kicker">Vertiefung und Arbeitsmaterial</p>${sectionTitle("material-title", "Onlinefassungen, Dossiers und Downloads")}<p>Hier findest du die fachlichen Langfassungen und Downloadmaterialien.</p></div>${cardGrid(base, [
+      { title: "Praxispaper Impact-Strategie im Unternehmenseinkauf", text: "Anonymisiertes Paper zur Verankerung von Impact-Management, Impact-Controlling, KII, Scorecards und Impact-Marketing im Einkauf eines Industrieunternehmens.", href: "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/", label: "Online lesen" },
       { title: "Gesamtdossier Wirtschaft & Unternehmen", text: "Praxisfragen, Bewertungslogik und politische Anschlussfähigkeit.", href: "werkstatt/dossiers/wirtschaft-unternehmen/", label: "Dossier lesen" },
       { title: "Arbeitsbibliothek", text: "Übersicht der Materialien zu diesem Wirkungsfeld.", href: "werkstatt/arbeitsbibliothek/wirkungsfelder/wirtschaft-unternehmen/", label: "Arbeitsmaterial ansehen" },
     ])}</section>
     ${downloadBlock(base, [
+      { label: "Praxispaper Impact-Strategie im Unternehmenseinkauf", href: "public/downloads/originals/woek-paper-impact-strategie-controlling-marketing-management-einkauf-chemieindustrie.pdf" },
       { label: "Konzeptpapier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_konzeptpapier_v0_1.docx" },
       { label: "Gesamtdossier Word", href: "assets/downloads/woek_wirtschaft_unternehmen_gesamtdossier_v0_1.docx" },
       { label: "Standard Detailkonzepte Word", href: "assets/downloads/woek_standard_detailkonzepte_einzeldossiers_v0_2.docx" },

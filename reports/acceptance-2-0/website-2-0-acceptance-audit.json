@@ -1,0 +1,416 @@
+{
+  "commit": "64a00755e96cce98d0321e267c0c48da4eefb289",
+  "summary": {
+    "offen": 5,
+    "erfüllt": 44,
+    "teilweise": 9
+  },
+  "checks": [
+    {
+      "area": "Deployment",
+      "requirement": "Lokaler Stand entspricht origin/main",
+      "status": "offen",
+      "evidence": "HEAD=64a00755e, origin/main=64a00755e, status=?? reports/acceptance-2-0/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Startseite erreichbar: /",
+      "status": "erfüllt",
+      "evidence": "/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Verstehen erreichbar: /verstehen.html",
+      "status": "offen",
+      "evidence": "/verstehen.html",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "So wirkt WÖk erreichbar: /so-wirkt-wirkungsoekonomie/",
+      "status": "erfüllt",
+      "evidence": "/so-wirkt-wirkungsoekonomie/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Wirkungsfelder erreichbar: /wirkungsfelder/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsfelder/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Werkzeuge erreichbar: /werkzeuge/",
+      "status": "erfüllt",
+      "evidence": "/werkzeuge/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Erleben erreichbar: /erleben/",
+      "status": "erfüllt",
+      "evidence": "/erleben/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Akademie erreichbar: /akademie.html",
+      "status": "offen",
+      "evidence": "/akademie.html",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Bibliothek erreichbar: /bibliothek/",
+      "status": "erfüllt",
+      "evidence": "/bibliothek/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Mitmachen erreichbar: /mitmachen.html",
+      "status": "offen",
+      "evidence": "/mitmachen.html",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Updates erreichbar: /updates/",
+      "status": "erfüllt",
+      "evidence": "/updates/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Mein Wirkungsraum erreichbar: /mein-wirkungsraum/",
+      "status": "erfüllt",
+      "evidence": "/mein-wirkungsraum/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Öffentlicher Wirkungsraum erreichbar: /oeffentlicher-wirkungsraum/",
+      "status": "erfüllt",
+      "evidence": "/oeffentlicher-wirkungsraum/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Debatten-Kompass erreichbar: /wirkungsradar/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsradar/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Live-Karten erreichbar: /wirkungsradar/live/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsradar/live/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Resonanz-Kompass erreichbar: /wirkungsradar/resonanz-kompass/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsradar/resonanz-kompass/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Agenda-Radar erreichbar: /wirkungsradar/agenda-radar/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsradar/agenda-radar/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Ursachen-Navigator erreichbar: /wirkungsradar/ursachen-navigator/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsradar/ursachen-navigator/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Resilienz-Prinzipien erreichbar: /wirkungsradar/resilienz-prinzipien/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsradar/resilienz-prinzipien/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Narrativ einreichen erreichbar: /wirkungsradar/narrativ-einreichen/",
+      "status": "erfüllt",
+      "evidence": "/wirkungsradar/narrativ-einreichen/",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Glossar erreichbar: /begriffe/",
+      "status": "erfüllt",
+      "evidence": "/begriffe/",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/oeffentlicher-wirkungsraum/ enthält Kernbegriffe",
+      "status": "erfüllt",
+      "evidence": "alle Kernbegriffe gefunden",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/resonanz-kompass/ enthält Kernbegriffe",
+      "status": "erfüllt",
+      "evidence": "alle Kernbegriffe gefunden",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/agenda-radar/ enthält Kernbegriffe",
+      "status": "erfüllt",
+      "evidence": "alle Kernbegriffe gefunden",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/ursachen-navigator/ enthält Kernbegriffe",
+      "status": "erfüllt",
+      "evidence": "alle Kernbegriffe gefunden",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/resilienz-prinzipien/ enthält Kernbegriffe",
+      "status": "erfüllt",
+      "evidence": "alle Kernbegriffe gefunden",
+      "action": ""
+    },
+    {
+      "area": "Navigation",
+      "requirement": "Breadcrumb öffentlicher Wirkungsraum zeigt nicht auf Debattenraum",
+      "status": "erfüllt",
+      "evidence": "0 fehlerhafte Dateien",
+      "action": ""
+    },
+    {
+      "area": "Navigation",
+      "requirement": "Hamburger/main.js in zentralen Seitentypen eingebunden",
+      "status": "erfüllt",
+      "evidence": "fehlend/auffällig: []",
+      "action": ""
+    },
+    {
+      "area": "Debatten-Kompass",
+      "requirement": "Live-/Detailseiten in größerem Umfang vorhanden",
+      "status": "erfüllt",
+      "evidence": "live=100, detail=100",
+      "action": ""
+    },
+    {
+      "area": "Debatten-Kompass",
+      "requirement": "Standardmodule auf Live-Debattenseiten vorhanden",
+      "status": "teilweise",
+      "evidence": "6 von 100 Seiten mit fehlenden Markern; Beispiele: [('wirkungsradar/live/fuenfzehn-minuten-stadt-klimakaefig/index.html', ['Was wird behauptet?', 'Sofortantwort', 'Folgencheck', 'Wirkpfad', 'Kritische Fragen', 'Faktenlage', 'Quellen']), ('wirkungsradar/live/genderismus/index.html', ['Was wird behauptet?', 'Sofortantwort', 'Folgencheck', 'Wirkpfad', 'Kritische Fragen', 'Faktenlage', 'Quellen']), ('wirkungsradar/live/masseneinwanderung/index.html', ['Was wird behauptet?', 'Sofortantwort', 'Folgencheck', 'Wirkpfad', 'Kritische Fragen', 'Faktenlage', 'Quellen']), ('wirkungsradar/live/medien-zensur/index.html', ['Was wird behauptet?', 'Sofortantwort', 'Folgencheck', 'Wirkpfad', 'Kritische Fragen', 'Faktenlage', 'Quellen']), ('wirkungsradar/live/windraeder-zerstoeren-natur/index.html', ['Was wird behauptet?', 'Sofortantwort', 'Folgencheck', 'Wirkpfad', 'Kritische Fragen', 'Faktenlage', 'Quellen'])]",
+      "action": ""
+    },
+    {
+      "area": "Debatten-Kompass",
+      "requirement": "Report vorhanden: reports/debattenkarten-masterintegration.md",
+      "status": "erfüllt",
+      "evidence": "# Debattenkarten Website 2.0 Integration  Stand: 2026-06-05  ## Ergebnis  - Karten im Textmaster: 88 - Bestehende Live-Routen überschrieben/aktualisiert: 88 - Neue Live-Routen angelegt: 0 - Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaste",
+      "action": ""
+    },
+    {
+      "area": "Debatten-Kompass",
+      "requirement": "Report vorhanden: reports/debate-compass-template-quality-report.md",
+      "status": "erfüllt",
+      "evidence": "# Debatten-Kompass Template- und Qualitätsreport  Stand: 2026-06-06T08:14:23.158Z  | Kennzahl | Wert | |---|---:| | Wirkungsradar-Seiten gesamt | 583 | | Debattenseiten vereinheitlicht | 90 | | Qualitätsstufe A | 0 | | Qualitätsstufe B | 0 | | Qualit",
+      "action": ""
+    },
+    {
+      "area": "Debatten-Kompass",
+      "requirement": "Report vorhanden: reports/wirkungsradar-canonicalization-report.md",
+      "status": "erfüllt",
+      "evidence": "# Debatten-Kompass Kanonisierung  Stand: 2026-06-06T08:14:22.834Z  | Kennzahl | Wert | |---|---:| | Radar-Seiten | 583 | | Claim-Seiten | 202 | | Kanonische Narrative | 91 | | Dubletten / Kandidaten | 352 | | Zusammengeführt | 110 | | Synonyme | 36 |",
+      "action": ""
+    },
+    {
+      "area": "Glossar",
+      "requirement": "Glossarbegriff thomas-piketty vorhanden",
+      "status": "erfüllt",
+      "evidence": "Route /begriffe/thomas-piketty/, Länge 18446",
+      "action": ""
+    },
+    {
+      "area": "Glossar",
+      "requirement": "Glossarbegriff kapitalakkumulation vorhanden",
+      "status": "erfüllt",
+      "evidence": "Route /begriffe/kapitalakkumulation/, Länge 20125",
+      "action": ""
+    },
+    {
+      "area": "Glossar",
+      "requirement": "Glossarbegriff staat vorhanden",
+      "status": "erfüllt",
+      "evidence": "Route /begriffe/staat/, Länge 24588",
+      "action": ""
+    },
+    {
+      "area": "Glossar",
+      "requirement": "Entfernter Debatten-Bridge-Block bleibt aus Glossar-Samples draußen",
+      "status": "erfüllt",
+      "evidence": "begriffe/gesetz/index.html: ascii-visible-suspect, begriffe/staat/index.html: ascii-visible-suspect, begriffe/thomas-piketty/index.html: ascii-visible-suspect",
+      "action": ""
+    },
+    {
+      "area": "Suche",
+      "requirement": "Suchindex enthält Glossarbegriffe und neue Begriffe",
+      "status": "teilweise",
+      "evidence": "Thomas/Piketty und Kapitalakkumulation im Suchindex geprüft",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Öffentliches Artefakt nutzt MP3 statt WAV",
+      "status": "erfüllt",
+      "evidence": "mp3=46, wav=0",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Audio/Audio-Hub Signal auf /audio/",
+      "status": "erfüllt",
+      "evidence": "Länge 43742",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Audio/Audio-Hub Signal auf /so-wirkt-wirkungsoekonomie/",
+      "status": "teilweise",
+      "evidence": "Länge 25049",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Audio/Audio-Hub Signal auf /akademie.html",
+      "status": "teilweise",
+      "evidence": "Länge 0",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Audio/Audio-Hub Signal auf /wirkungsfelder/",
+      "status": "teilweise",
+      "evidence": "Länge 36799",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Audio/Audio-Hub Signal auf /werkzeuge/",
+      "status": "teilweise",
+      "evidence": "Länge 219434",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Audio/Audio-Hub Signal auf /erleben/",
+      "status": "teilweise",
+      "evidence": "Länge 79343",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "Dashboard-Bereiche vorhanden",
+      "status": "erfüllt",
+      "evidence": "alle Marker gefunden",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "User-Space JavaScript vorhanden",
+      "status": "offen",
+      "evidence": "fehlt",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "Merken/Sammlung/Lernliste auf Seitentyp-Samples",
+      "status": "teilweise",
+      "evidence": "fehlend/auffällig: ['/bibliothek/minifest-wirkungsoekonomie/', '/begriffe/gesetz/', '/wirkungsradar/live/migration-kostet-nur/', '/referenz/kapitel-010-wirkung/']",
+      "action": ""
+    },
+    {
+      "area": "Updates/Journal",
+      "requirement": "Updates-Seite vorhanden und Blog kann auf Updates verweisen",
+      "status": "teilweise",
+      "evidence": "/updates/ exists=True",
+      "action": ""
+    },
+    {
+      "area": "Journal",
+      "requirement": "Journalbeitrag Öffentlicher Wirkungsraum auffindbar",
+      "status": "erfüllt",
+      "evidence": "journal/index.html, journal/gesundheit-erzeugen-statt-krankheit-verwalten/index.html, blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/index.html",
+      "action": ""
+    },
+    {
+      "area": "Downloads",
+      "requirement": "Keine DOCX/ZIP/WAV im öffentlichen Artefakt",
+      "status": "erfüllt",
+      "evidence": "bad=[], excel=['assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx', 'assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx']",
+      "action": ""
+    },
+    {
+      "area": "Werkzeuge 2.0",
+      "requirement": "Werkzeuge-Hub erreichbar und Tool-Landschaft-Daten erzeugt",
+      "status": "erfüllt",
+      "evidence": "/werkzeuge exists=True, data=True",
+      "action": ""
+    },
+    {
+      "area": "Quellen",
+      "requirement": "Quellenblöcke erklären Belegfunktion, keine impact-Mail als Quelle",
+      "status": "erfüllt",
+      "evidence": "Belegmarker=424, Seiten mit impact-Mail=0",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/website-2.0-content-inventory.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Website 2.0 Content Inventory  Stand: 2026-06-05T21:00:25.181Z  ## Zählung  - HTML-Seiten: 8109 - Debatten-Live-Seiten: 101 - Debatten-Detailseiten: 101 - Audio-Dateien in assets/: 46 - Anschlussfähigkeitsseiten: 6  ## Routenchecks  - wirkungsradar/live/index.html: OK - ordnung/anschlussfaehigkeit",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/wirkungsradar-v2-audit.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Wirkungsradar v2 Audit  | Seite | alter Status | neuer Status | Hauptproblem | nächster Fix | |---|---:|---:|---|---| | 1. migration-kostet-nur | checked_v2_positive_examples | checked_v2_positive_examples | ok | P0-v2-Struktur halten und Quellen fachlich weiter pflegen. | | 2. deutschland-nur-zwe",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/glossary-final-executive-summary.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Executive Summary Glossar-Pack 027  - Timestamp: 2026-06-02T06:50:09.381Z - Charakter: Abschluss-, Audit- und Sicherungspack fuer Glossar-Packs 001-026 - Glossarbegriffe vorher: 1277 - Glossarbegriffe nachher: 1277 - Gelöschte Begriffe: 0 - Erwartete Pack-Begriffe: 130 - Gefundene Pack-Begriffe: 1",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "docs/audio-explanations-integration-audit.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Audio-Erklärungen Integration Audit  Integriert: 36 MP3-Dateien.  ## Fehlende Audiodateien  - Erleben / Demos (https://wirkungsoekonomie.de/erleben/): keine passende WAV-Datei im Anhang gefunden - Wirkungsrat (https://wirkungsoekonomie.de/werkzeuge/wirkungsrat/): keine passende WAV-Datei im Anhang",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/cta-intent-audit.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# CTA-Intent-Audit  Stand: 2026-06-05  Ziel: Button-Text und Zielseite müssen dieselbe Nutzerabsicht bedienen. Dieser Audit fokussiert auf sichtbare Haupt-CTAs und den konkret gemeldeten Bruch auf der Blog-Seite.  | Text | Fundstelle | Zielseite vorher | Erwartete Nutzerabsicht | Tatsächliche Zielab",
+      "action": ""
+    }
+  ]
+}

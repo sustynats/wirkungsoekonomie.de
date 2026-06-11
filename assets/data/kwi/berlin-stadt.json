@@ -1,0 +1,2871 @@
+{
+  "schemaVersion": "kwi-beta-0.1",
+  "generatedAt": "2026-06-09T09:02:59.693235+00:00",
+  "source": {
+    "name": "SDG-Portal",
+    "url": "https://sdg-portal.de/de/",
+    "note": "HTML-Snapshot der oeffentlichen Kommune-Seite; Werte bleiben mit Quelle, Jahr und Richtung nachvollziehbar."
+  },
+  "method": {
+    "name": "Kommunaler Wirkungsindex Beta",
+    "weights": {
+      "Mensch": 0.4,
+      "Planet": 0.3,
+      "Demokratie": 0.3
+    },
+    "scoreNote": "Beta-Score: Vergleich zum Landesdurchschnitt plus Trendkorrektur, skaliert auf 0-100. Keine amtliche Statistik."
+  },
+  "municipality": {
+    "sdgPortalId": 253202,
+    "name": "Berlin, Stadt",
+    "slug": "berlin-stadt"
+  },
+  "summary": {
+    "kwiScore": 52.3,
+    "dimensions": {
+      "Mensch": {
+        "score": 51.4,
+        "indicatorCount": 38,
+        "availableCount": 38
+      },
+      "Planet": {
+        "score": 51.4,
+        "indicatorCount": 12,
+        "availableCount": 12
+      },
+      "Demokratie": {
+        "score": 54.4,
+        "indicatorCount": 2,
+        "availableCount": 2
+      }
+    },
+    "qualityCounts": {
+      "hoch": 36,
+      "mittel": 10,
+      "niedrig": 10
+    },
+    "indicatorCount": 56,
+    "scoredIndicatorCount": 52
+  },
+  "indicators": [
+    {
+      "id": "sdg1-sgb-ii-sgb-xii-quote",
+      "title": "SGB II-/ SGB XII-Quote (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 15.88,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 15.88,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 55.0,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Leistungsberechtigten nach SGB II) + (Anzahl der Leistungsberechtigten nach SGB XII)) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist nach dem SGB II und dem SGB XII leistungsberechtigt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 21.15
+        },
+        {
+          "year": 2015,
+          "value": 20.71
+        },
+        {
+          "year": 2016,
+          "value": 20.078
+        },
+        {
+          "year": 2017,
+          "value": 19.3
+        },
+        {
+          "year": 2018,
+          "value": 18.22
+        },
+        {
+          "year": 2019,
+          "value": 17.22
+        },
+        {
+          "year": 2020,
+          "value": 17.74
+        },
+        {
+          "year": 2021,
+          "value": 16.75
+        },
+        {
+          "year": 2022,
+          "value": 16.022
+        },
+        {
+          "year": 2023,
+          "value": 15.88
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg1-armut-kinderarmut",
+      "title": "Armut - Kinderarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 23.94,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 23.94,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 55.1,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der nicht-erwerbsfähigen Leistungsbezieher:innen unter 15 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften unter 15 Jahren)) / (Anzahl der Einwohner:innen im Alter von unter 15 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung unter 15 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Sozialgeld nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 32.16
+        },
+        {
+          "year": 2015,
+          "value": 31.43
+        },
+        {
+          "year": 2016,
+          "value": 29.69
+        },
+        {
+          "year": 2017,
+          "value": 28.86
+        },
+        {
+          "year": 2018,
+          "value": 28.27
+        },
+        {
+          "year": 2019,
+          "value": 26.8
+        },
+        {
+          "year": 2020,
+          "value": 26.69
+        },
+        {
+          "year": 2021,
+          "value": 25.25
+        },
+        {
+          "year": 2022,
+          "value": 24.41
+        },
+        {
+          "year": 2023,
+          "value": 23.94
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg1-armut-jugendarmut",
+      "title": "Armut - Jugendarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 23.96,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 23.96,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 54.2,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Rückwirkende Korrektur der Daten ab Jahrgang 2019.",
+      "calculation": "((Anzahl der Leistungsberechtigten im Alter von 15 bis 17 Jahren) + (Anzahl der Nicht-Leistungsberechtigten in Bedarfsgemeinschaften im Alter von 15 bis 17 Jahren)) / (Anzahl der Einwohner:innen im Alter von 15 bis 17 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Jugendlichen von 15 bis 17 Jahren erhält – selbst oder indirekt durch die Bedarfsgemeinschaft – Leistungen nach SGB II.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 30.26
+        },
+        {
+          "year": 2015,
+          "value": 30.18
+        },
+        {
+          "year": 2016,
+          "value": 28.21
+        },
+        {
+          "year": 2017,
+          "value": 27.6
+        },
+        {
+          "year": 2018,
+          "value": 27.34
+        },
+        {
+          "year": 2019,
+          "value": 26.12
+        },
+        {
+          "year": 2020,
+          "value": 26.62
+        },
+        {
+          "year": 2021,
+          "value": 25.48
+        },
+        {
+          "year": 2022,
+          "value": 24.94
+        },
+        {
+          "year": 2023,
+          "value": 23.96
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg1-armut-altersarmut",
+      "title": "Armut - Altersarmut (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 6.79,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 6.79,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 46.9,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Bezieher:innen von Grundsicherung im Alter ab 65 Jahren) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung erhält ab 65 Jahren Leistungen zur Grundsicherung im Alter nach SGB XII.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 5.88
+        },
+        {
+          "year": 2015,
+          "value": 6.021
+        },
+        {
+          "year": 2016,
+          "value": 5.93
+        },
+        {
+          "year": 2017,
+          "value": 6.085
+        },
+        {
+          "year": 2018,
+          "value": 6.22
+        },
+        {
+          "year": 2019,
+          "value": 6.33
+        },
+        {
+          "year": 2020,
+          "value": 6.32
+        },
+        {
+          "year": 2021,
+          "value": 6.32
+        },
+        {
+          "year": 2022,
+          "value": 6.56
+        },
+        {
+          "year": 2023,
+          "value": 6.79
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg1-wohnungslosigkeit",
+      "title": "Wohnungslosigkeit (%)",
+      "dimension": "Mensch",
+      "sdg": 1,
+      "sdgTitle": "Keine Armut",
+      "value": 1.041,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 1.041,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 42.0,
+      "quality": "hoch",
+      "source": "Statistisches Bundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der untergebrachten wohnungslosen Einwohner:innen) / (Anzahl der Einwohner:innen) * 100",
+      "statement": "Ein Anteil von x % der Bevölkerung ist wohnungslos.",
+      "timeseries": [
+        {
+          "year": 2022,
+          "value": 0.71
+        },
+        {
+          "year": 2023,
+          "value": 1.041
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg2-stickstoffueberschuss-der-landwirtschaft-kg-ha-landwirtschaftlich-genutzte-flaec",
+      "title": "Stickstoffüberschuss der Landwirtschaft (kg / ha landwirtschaftlich genutzte Fläche)",
+      "dimension": "Mensch",
+      "sdg": 2,
+      "sdgTitle": "Kein Hunger",
+      "value": 64.9,
+      "year": 2021,
+      "unit": "kg / ha landwirtschaftlich genutzte Fläche",
+      "stateAverage": 64.9,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 57.6,
+      "quality": "mittel",
+      "source": "Universität Gießen, Umweltbundesamt",
+      "calculation": "(Stickstoffüberschuss im gleitenden Drei-Jahres-Mittel) / (Landwirtschaftlich genutzte Fläche) * 1.000",
+      "statement": "Der Stickstoffüberschuss liegt bei x kg pro Hektar landwirtschaftlich genutzter Fläche.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 104.76
+        },
+        {
+          "year": 2014,
+          "value": 102.47
+        },
+        {
+          "year": 2015,
+          "value": 114.4
+        },
+        {
+          "year": 2016,
+          "value": 110.32
+        },
+        {
+          "year": 2017,
+          "value": 91.84
+        },
+        {
+          "year": 2018,
+          "value": 107.92
+        },
+        {
+          "year": 2019,
+          "value": 82.33
+        },
+        {
+          "year": 2020,
+          "value": 90.81
+        },
+        {
+          "year": 2021,
+          "value": 64.9
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-hausarzt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Hausarzt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 332.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Hausarzt beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-krankenhaus-minuten",
+      "title": "Wohnungsnahe Grundversorgung - Krankenhaus (Minuten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 4.85,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2020",
+      "calculation": "Einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung",
+      "statement": "Die einwohnergewichtete PKW-Fahrzeit zum nächsten Krankenhaus der Grundversorgung beträgt x Minuten.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg3-wohnungsnahe-grundversorgung-apotheke-meter",
+      "title": "Wohnungsnahe Grundversorgung - Apotheke (Meter)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 419.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zur nächsten Apotheke",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Apotheke beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg3-personal-in-pflegediensten-personalschluessel-in-vollzeitaequivalenten",
+      "title": "Personal in Pflegediensten (Personalschlüssel in Vollzeitäquivalenten)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 0.18,
+      "year": 2022,
+      "unit": "Personalschlüssel in Vollzeitäquivalenten",
+      "stateAverage": 0.18,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 44.4,
+      "quality": "mittel",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Personal in ambulanten Pflegediensten) / ((Anzahl der ambulant Pflegebedürftigen) + (Anzahl der Pflegegeldempfänger:innen))",
+      "statement": "In ambulanten Pflegediensten sind x Beschäftigte (Vollzeitstellen) je pflegebedürftiger Person beschäftigt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.25
+        },
+        {
+          "year": 2014,
+          "value": 0.25
+        },
+        {
+          "year": 2015,
+          "value": 0.25
+        },
+        {
+          "year": 2016,
+          "value": 0.25
+        },
+        {
+          "year": 2017,
+          "value": 0.21
+        },
+        {
+          "year": 2018,
+          "value": 0.21
+        },
+        {
+          "year": 2019,
+          "value": 0.19
+        },
+        {
+          "year": 2020,
+          "value": 0.19
+        },
+        {
+          "year": 2021,
+          "value": 0.18
+        },
+        {
+          "year": 2022,
+          "value": 0.18
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg3-pflegeheimplaetze-verfuegbare-stationaere-plaetze-in-pflegeheimen-je-1-000-einwo",
+      "title": "Pflegeheimplätze (Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 46.39,
+      "year": 2023,
+      "unit": "Verfügbare stationäre Plätze in Pflegeheimen je 1.000 Einwohner:innen ab 65 Jahre",
+      "stateAverage": 46.39,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 48.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der verfügbaren voll- und teilstationären Plätze in Pflegeheimen) / (Anzahl der Einwohner:innen im Alter ab 65 Jahren) * 1.000",
+      "statement": "In Pflegeheimen sind x stationäre Plätze je 1.000 Einwohner:innen ab 65 Jahren vorhanden.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 51.64
+        },
+        {
+          "year": 2015,
+          "value": 51.34
+        },
+        {
+          "year": 2016,
+          "value": 51.34
+        },
+        {
+          "year": 2017,
+          "value": 50.56
+        },
+        {
+          "year": 2018,
+          "value": 50.56
+        },
+        {
+          "year": 2019,
+          "value": 48.62
+        },
+        {
+          "year": 2020,
+          "value": 48.62
+        },
+        {
+          "year": 2021,
+          "value": 47.89
+        },
+        {
+          "year": 2022,
+          "value": 47.89
+        },
+        {
+          "year": 2023,
+          "value": 46.39
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg3-luftschadstoffbelastung-g-m",
+      "title": "Luftschadstoffbelastung (µg / m³)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 8.8,
+      "year": 2023,
+      "unit": "µg / m³",
+      "stateAverage": 8.8,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Umweltbundesamt, Bundesamt für Kartographie und Geodäsie Hinweis: Änderung der Definition und rückwirkende Anpassung der Daten: Die Feinstaubbelastung wird ab sofort mit dem maximalen Durchmesser von 2,5 μm (statt wie vormals mit 10 μm) angegeben.",
+      "calculation": "Jahresmittelwert Feinstaub (PM2,5) je Gebietseinheit",
+      "statement": "Die Konzentration von Feinstaub (PM2,5) in der Luft beträgt x µg / m³.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 18.59
+        },
+        {
+          "year": 2015,
+          "value": 14.63
+        },
+        {
+          "year": 2016,
+          "value": 15.26
+        },
+        {
+          "year": 2017,
+          "value": 15.71
+        },
+        {
+          "year": 2018,
+          "value": 14.68
+        },
+        {
+          "year": 2019,
+          "value": 12.69
+        },
+        {
+          "year": 2020,
+          "value": 10.65
+        },
+        {
+          "year": 2021,
+          "value": 11.84
+        },
+        {
+          "year": 2022,
+          "value": 10.93
+        },
+        {
+          "year": 2023,
+          "value": 8.8
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg3-vorzeitige-sterblichkeit-todesfaelle-je-1-000-einwohner-innen",
+      "title": "Vorzeitige Sterblichkeit (Todesfälle je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 3,
+      "sdgTitle": "Gesundheit und Wohlergehen",
+      "value": 2.23,
+      "year": 2023,
+      "unit": "Todesfälle je 1.000 Einwohner:innen",
+      "stateAverage": 2.23,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 51.6,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder Hinweis: Neuer Indikator - Vorzeitige Sterblichkeit wird ab sofort als gesamt für beide Geschlechter ausgewiesen. Zeitreihe rückwirkend berechnet.",
+      "calculation": "(Anzahl der Todesfälle bei Einwohner:innen im Alter von unter 70 Jahren) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Von 1.000 Personen unter 70 Jahren sind x vorzeitig verstorben.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 2.43
+        },
+        {
+          "year": 2015,
+          "value": 2.45
+        },
+        {
+          "year": 2016,
+          "value": 2.39
+        },
+        {
+          "year": 2017,
+          "value": 2.33
+        },
+        {
+          "year": 2018,
+          "value": 2.4
+        },
+        {
+          "year": 2019,
+          "value": 2.26
+        },
+        {
+          "year": 2020,
+          "value": 2.4
+        },
+        {
+          "year": 2021,
+          "value": 2.39
+        },
+        {
+          "year": 2022,
+          "value": 2.33
+        },
+        {
+          "year": 2023,
+          "value": 2.23
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg4-wohnungsnahe-grundversorgung-grundschule-meter",
+      "title": "Wohnungsnahe Grundversorgung - Grundschule (Meter)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 477.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz in m zur nächsten Grundschule",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zur nächsten Grundschule beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg4-schulabbrecherquote",
+      "title": "Schulabbrecherquote (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 8.22,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 8.22,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 48.2,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Schulabgänger:innen allgemeinbildender Schulen ohne Hauptschulabschluss) / (Anzahl der Schulabgänger:innen allgemeinbildender Schulen insgesamt) * 100",
+      "statement": "Ein Anteil von x % der Schulabgänger:innen allgemeinbildender Schulen erreicht keinen Hauptschulabschluss.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 7.55
+        },
+        {
+          "year": 2014,
+          "value": 8.75
+        },
+        {
+          "year": 2016,
+          "value": 8.66
+        },
+        {
+          "year": 2017,
+          "value": 9.82
+        },
+        {
+          "year": 2020,
+          "value": 3.97
+        },
+        {
+          "year": 2021,
+          "value": 6.63
+        },
+        {
+          "year": 2022,
+          "value": 6.75
+        },
+        {
+          "year": 2023,
+          "value": 8.22
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg4-betreuung-von-kindern-unter-3-jaehrige",
+      "title": "Betreuung von Kindern - unter 3-jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 44.56,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 44.56,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 52.3,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Kinder im Alter von unter 3 Jahren in Tageseinrichtungen) / (Anzahl der Kinder im Alter von unter 3 Jahren) * 100",
+      "statement": "Ein Anteil von x % der Kinder im Alter unter 3 Jahren wird in Tageseinrichtungen betreut.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 40.028
+        },
+        {
+          "year": 2015,
+          "value": 41.85
+        },
+        {
+          "year": 2016,
+          "value": 42.0
+        },
+        {
+          "year": 2017,
+          "value": 40.81
+        },
+        {
+          "year": 2018,
+          "value": 40.31
+        },
+        {
+          "year": 2019,
+          "value": 40.21
+        },
+        {
+          "year": 2020,
+          "value": 41.37
+        },
+        {
+          "year": 2021,
+          "value": 42.024
+        },
+        {
+          "year": 2022,
+          "value": 43.48
+        },
+        {
+          "year": 2023,
+          "value": 44.56
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg4-integrative-kindertageseinrichtungen",
+      "title": "Integrative Kindertageseinrichtungen (%)",
+      "dimension": "Mensch",
+      "sdg": 4,
+      "sdgTitle": "Hochwertige Bildung",
+      "value": 59.71,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 59.71,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 49.6,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der integrativen Kindertageseinrichtungen) / (Anzahl der Kindertageseinrichtungen) * 100",
+      "statement": "Ein Anteil von x % der Kindertageseinrichtungen ist integrativ.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 60.86
+        },
+        {
+          "year": 2014,
+          "value": 59.26
+        },
+        {
+          "year": 2015,
+          "value": 60.23
+        },
+        {
+          "year": 2016,
+          "value": 61.01
+        },
+        {
+          "year": 2017,
+          "value": 61.082
+        },
+        {
+          "year": 2018,
+          "value": 61.21
+        },
+        {
+          "year": 2019,
+          "value": 62.35
+        },
+        {
+          "year": 2020,
+          "value": 62.79
+        },
+        {
+          "year": 2021,
+          "value": 59.71
+        },
+        {
+          "year": 2022,
+          "value": 59.71
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg5-verhaeltnis-der-beschaeftigungsquoten-von-frauen-und-maennern",
+      "title": "Verhältnis der Beschäftigungsquoten von Frauen und Männern (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": 95.43,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 95.43,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 48.8,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherpflichtig beschäftigten Frauen am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Frauen im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten Männer am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Männer im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Frauenbeschäftigungsquote zur Männerbeschäftigungsquote beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 101.28
+        },
+        {
+          "year": 2015,
+          "value": 101.3
+        },
+        {
+          "year": 2016,
+          "value": 100.38
+        },
+        {
+          "year": 2017,
+          "value": 99.34
+        },
+        {
+          "year": 2018,
+          "value": 98.42
+        },
+        {
+          "year": 2019,
+          "value": 97.33
+        },
+        {
+          "year": 2020,
+          "value": 97.61
+        },
+        {
+          "year": 2021,
+          "value": 97.11
+        },
+        {
+          "year": 2022,
+          "value": 95.82
+        },
+        {
+          "year": 2023,
+          "value": 95.43
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg5-frauenanteil-im-stadtrat-gemeinderat-bzw-kreistag",
+      "title": "Frauenanteil im Stadtrat, Gemeinderat bzw. Kreistag (%)",
+      "dimension": "Mensch",
+      "sdg": 5,
+      "sdgTitle": "Geschlechtergleichstellung",
+      "value": 30.87,
+      "year": 2019,
+      "unit": "%",
+      "stateAverage": 30.87,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 49.0,
+      "quality": "niedrig",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Anzahl der Frauen mit Mandaten im Stadtrat, Gemeinderat bzw. Kreistag) / (Anzahl der Mandate im Stadtrat, Gemeinderat bzw. Kreistag) * 100",
+      "statement": "Ein Anteil von x % der Mandate im Stadtrat, Gemeinderat bzw. Kreistag ist mit Frauen besetzt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 32.48
+        },
+        {
+          "year": 2015,
+          "value": 30.87
+        },
+        {
+          "year": 2017,
+          "value": 30.87
+        },
+        {
+          "year": 2019,
+          "value": 30.87
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg6-abwasserbehandlung",
+      "title": "Abwasserbehandlung (%)",
+      "dimension": "Planet",
+      "sdg": 6,
+      "sdgTitle": "Sauberes Wasser und Sanitärversorgung",
+      "value": 100.0,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 100.0,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Abwassermenge, die durch Denitrifikation und Phosphorelimination behandelt wird) / (Abwassermenge) * 100",
+      "statement": "Ein Anteil von x % des Abwassers wird mit Denitrifikation und Phosphorelimination behandelt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 100.0
+        },
+        {
+          "year": 2015,
+          "value": 100.0
+        },
+        {
+          "year": 2016,
+          "value": 100.0
+        },
+        {
+          "year": 2017,
+          "value": 100.0
+        },
+        {
+          "year": 2018,
+          "value": 100.0
+        },
+        {
+          "year": 2019,
+          "value": 100.0
+        },
+        {
+          "year": 2020,
+          "value": 100.0
+        },
+        {
+          "year": 2021,
+          "value": 100.0
+        },
+        {
+          "year": 2022,
+          "value": 100.0
+        },
+        {
+          "year": 2023,
+          "value": 100.0
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg7-strom-aus-erneuerbaren-quellen-kw-je-einwohner-in",
+      "title": "Strom aus erneuerbaren Quellen (kW je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 0.083,
+      "year": 2023,
+      "unit": "kW je Einwohner:in",
+      "stateAverage": 0.083,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Installierte Nettonennleistung erneuerbaren Stroms aus Biomasse, solarer Strahlungsenergie, Wasser und Wind) / (Anzahl der Einwohner:innen)",
+      "statement": "Es sind erneuerbare Energieträger mit einer Nettonennleistung von insgesamt x Kilowattstunden installiert worden.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 0.009
+        },
+        {
+          "year": 2019,
+          "value": 0.045
+        },
+        {
+          "year": 2020,
+          "value": 0.049
+        },
+        {
+          "year": 2021,
+          "value": 0.057
+        },
+        {
+          "year": 2023,
+          "value": 0.083
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg7-ladesaeuleninfrastruktur-ladepunkte-je-1-000-einwohner-innen",
+      "title": "Ladesäuleninfrastruktur (Ladepunkte je 1.000 Einwohner:innen)",
+      "dimension": "Planet",
+      "sdg": 7,
+      "sdgTitle": "Bezahlbare und saubere Energie",
+      "value": 1.096,
+      "year": 2023,
+      "unit": "Ladepunkte je 1.000 Einwohner:innen",
+      "stateAverage": 1.096,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Bundesnetzagentur, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der öffentlich zugänglichen Normal- und Schnellladepunkte ab 3,7 kW) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es gibt x öffentliche Normal- und Schnellladepunkte ab 3,7 kW je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 0.053
+        },
+        {
+          "year": 2015,
+          "value": 0.089
+        },
+        {
+          "year": 2016,
+          "value": 0.15
+        },
+        {
+          "year": 2017,
+          "value": 0.19
+        },
+        {
+          "year": 2018,
+          "value": 0.22
+        },
+        {
+          "year": 2019,
+          "value": 0.29
+        },
+        {
+          "year": 2020,
+          "value": 0.37
+        },
+        {
+          "year": 2021,
+          "value": 0.4
+        },
+        {
+          "year": 2022,
+          "value": 0.63
+        },
+        {
+          "year": 2023,
+          "value": 1.096
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg8-bruttoinlandsprodukt-je-einwohner-in",
+      "title": "Bruttoinlandsprodukt (€ je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 47645.99,
+      "year": 2022,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 47645.99,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 58.0,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Bruttoinlandsprodukt) / (Anzahl der Einwohner:innen)",
+      "statement": "Das Bruttoinlandprodukt je Einwohner:in beträgt x Euro.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 32984.0
+        },
+        {
+          "year": 2014,
+          "value": 33838.54
+        },
+        {
+          "year": 2015,
+          "value": 35175.52
+        },
+        {
+          "year": 2016,
+          "value": 36515.56
+        },
+        {
+          "year": 2017,
+          "value": 38656.0
+        },
+        {
+          "year": 2018,
+          "value": 39932.53
+        },
+        {
+          "year": 2019,
+          "value": 38492.18
+        },
+        {
+          "year": 2020,
+          "value": 42176.17
+        },
+        {
+          "year": 2021,
+          "value": 44992.15
+        },
+        {
+          "year": 2022,
+          "value": 47645.99
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg8-langzeitarbeitslosenquote",
+      "title": "Langzeitarbeitslosenquote (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 3.47,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 3.47,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 56.0,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Arbeitslosen mit Dauer der Arbeitslosigkeit > 1 Jahr) / ((Anzahl der Arbeitslosen) + (Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort)) * 100",
+      "statement": "Ein Anteil von x % der Erwerbspersonen ist länger als 1 Jahr arbeitslos.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 4.95
+        },
+        {
+          "year": 2015,
+          "value": 4.5
+        },
+        {
+          "year": 2016,
+          "value": 4.082
+        },
+        {
+          "year": 2017,
+          "value": 3.36
+        },
+        {
+          "year": 2018,
+          "value": 2.89
+        },
+        {
+          "year": 2019,
+          "value": 2.52
+        },
+        {
+          "year": 2020,
+          "value": 3.043
+        },
+        {
+          "year": 2021,
+          "value": 4.66
+        },
+        {
+          "year": 2022,
+          "value": 4.021
+        },
+        {
+          "year": 2023,
+          "value": 3.47
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-15-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 15- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 58.18,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 58.18,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 54.0,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 15 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 48.44
+        },
+        {
+          "year": 2015,
+          "value": 50.26
+        },
+        {
+          "year": 2016,
+          "value": 51.52
+        },
+        {
+          "year": 2017,
+          "value": 53.12
+        },
+        {
+          "year": 2018,
+          "value": 54.46
+        },
+        {
+          "year": 2019,
+          "value": 55.77
+        },
+        {
+          "year": 2020,
+          "value": 56.027
+        },
+        {
+          "year": 2021,
+          "value": 57.049
+        },
+        {
+          "year": 2022,
+          "value": 57.9
+        },
+        {
+          "year": 2023,
+          "value": 58.18
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg8-beschaeftigungsquote-55-bis-64-jaehrige",
+      "title": "Beschäftigungsquote - 55- bis 64-Jährige (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 54.39,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 54.39,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 55.8,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 55 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 55 bis 64 Jahren) * 100",
+      "statement": "Der Anteil der sozialversicherungspflichtig Beschäftigten im Alter von 55 bis 64 Jahren an der Gesamtbevölkerung im gleichen Alter beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 42.12
+        },
+        {
+          "year": 2015,
+          "value": 43.32
+        },
+        {
+          "year": 2016,
+          "value": 45.19
+        },
+        {
+          "year": 2017,
+          "value": 46.93
+        },
+        {
+          "year": 2018,
+          "value": 48.51
+        },
+        {
+          "year": 2019,
+          "value": 50.15
+        },
+        {
+          "year": 2020,
+          "value": 51.31
+        },
+        {
+          "year": 2021,
+          "value": 52.35
+        },
+        {
+          "year": 2022,
+          "value": 53.56
+        },
+        {
+          "year": 2023,
+          "value": 54.39
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg8-erwerbstaetige-aufstocker-innen",
+      "title": "Erwerbstätige Aufstocker:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 8,
+      "sdgTitle": "Menschenwürdige Arbeit und Wirtschaftswachstum",
+      "value": 21.8,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 21.8,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 55.8,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder Hinweis: Aktualisierung auf Bürgergeldbezieher:innen",
+      "calculation": "(Anzahl der erwerbstätigen Bürgergeld-Bezieher:innen) / (Anzahl der erwerbsfähigen Bürgergeld-Bezieher:innen) * 100",
+      "statement": "Ein Anteil von x % der erwerbsfähigen Leistungsbezieher:innen ist zusätzlich zum Bürgergeld-Bezug erwerbstätig.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 30.78
+        },
+        {
+          "year": 2015,
+          "value": 29.63
+        },
+        {
+          "year": 2016,
+          "value": 29.022
+        },
+        {
+          "year": 2017,
+          "value": 28.37
+        },
+        {
+          "year": 2018,
+          "value": 27.95
+        },
+        {
+          "year": 2019,
+          "value": 27.25
+        },
+        {
+          "year": 2020,
+          "value": 22.68
+        },
+        {
+          "year": 2021,
+          "value": 23.64
+        },
+        {
+          "year": 2022,
+          "value": 21.71
+        },
+        {
+          "year": 2023,
+          "value": 21.8
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg9-existenzgruendungen-neuerrichtungen-je-1-000-einwohner-innen",
+      "title": "Existenzgründungen (Neuerrichtungen je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 10.037,
+      "year": 2023,
+      "unit": "Neuerrichtungen je 1.000 Einwohner:innen",
+      "stateAverage": 10.037,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 46.8,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Neuerrichtungen von Gewerbebetrieben) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Gewerbebetriebe neu errichtet.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 11.94
+        },
+        {
+          "year": 2015,
+          "value": 11.05
+        },
+        {
+          "year": 2016,
+          "value": 10.92
+        },
+        {
+          "year": 2017,
+          "value": 11.36
+        },
+        {
+          "year": 2018,
+          "value": 11.11
+        },
+        {
+          "year": 2019,
+          "value": 10.47
+        },
+        {
+          "year": 2020,
+          "value": 10.33
+        },
+        {
+          "year": 2021,
+          "value": 10.73
+        },
+        {
+          "year": 2022,
+          "value": 9.93
+        },
+        {
+          "year": 2023,
+          "value": 10.037
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg9-breitbandversorgung-private-haushalte",
+      "title": "Breitbandversorgung - Private Haushalte (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 98.49,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 98.49,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 52.1,
+      "quality": "mittel",
+      "source": "Bundesministeriums für Verkehr und digitale Infrastruktur, Statistische Ämter der Länder Hinweis: Erhöhung der Bitrate - auch rückwirkend - von 50 Mbit/s auf 100 Mbit/s.",
+      "calculation": "(Anzahl der Haushalte mit Breitbandversorgung (≥ 100 Mbit/s)) / (Anzahl der Haushalte) * 100",
+      "statement": "Der Anteil der Haushalte, die eine Bandbreite von mindestens 100 Mbit/s nutzen können, beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2017,
+          "value": 89.33
+        },
+        {
+          "year": 2020,
+          "value": 97.27
+        },
+        {
+          "year": 2021,
+          "value": 97.64
+        },
+        {
+          "year": 2022,
+          "value": 98.49
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg9-hochqualifizierte-am-arbeitsort",
+      "title": "Hochqualifizierte am Arbeitsort (%)",
+      "dimension": "Mensch",
+      "sdg": 9,
+      "sdgTitle": "Industrie, Innovation und Infrastruktur",
+      "value": 32.48,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 32.48,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der sozialversicherungspflichtig Beschäftigten mit akademischen Berufsabschluss am Arbeitsort) / (Anzahl der sozialversicherungspflichtig Beschäftigten am Arbeitsort) * 100",
+      "statement": "Einen akademischen Berufsabschluss haben x % der sozialversicherungspflichtig Beschäftigten (SvB).",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 21.17
+        },
+        {
+          "year": 2015,
+          "value": 22.57
+        },
+        {
+          "year": 2016,
+          "value": 23.89
+        },
+        {
+          "year": 2017,
+          "value": 25.15
+        },
+        {
+          "year": 2018,
+          "value": 26.44
+        },
+        {
+          "year": 2019,
+          "value": 27.68
+        },
+        {
+          "year": 2020,
+          "value": 28.91
+        },
+        {
+          "year": 2021,
+          "value": 30.53
+        },
+        {
+          "year": 2022,
+          "value": 31.69
+        },
+        {
+          "year": 2023,
+          "value": 32.48
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg10-beschaeftigungsquote-auslaender-innen",
+      "title": "Beschäftigungsquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 81.85,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 81.85,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 57.9,
+      "quality": "hoch",
+      "source": "Bundesagentur für Arbeit, Statistische Ämter der Länder",
+      "calculation": "((Anzahl der sozialversicherungspflichtig Beschäftigten ohne deutsche Staatsbürgerschaft am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft im Alter von 15 bis 64 Jahren)) / ((Anzahl der sozialversicherungspflichtig Beschäftigten am Wohnort im Alter von 15 bis 64 Jahren) / (Anzahl der Einwohner:innen im Alter von 15 bis 64 Jahren)) * 100",
+      "statement": "Das Verhältnis der Beschäftigungsquote von Ausländer:innen zur Beschäftigungsquote in der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 58.63
+        },
+        {
+          "year": 2014,
+          "value": 60.24
+        },
+        {
+          "year": 2015,
+          "value": 62.99
+        },
+        {
+          "year": 2016,
+          "value": 65.49
+        },
+        {
+          "year": 2018,
+          "value": 71.43
+        },
+        {
+          "year": 2019,
+          "value": 73.18
+        },
+        {
+          "year": 2020,
+          "value": 73.39
+        },
+        {
+          "year": 2021,
+          "value": 77.23
+        },
+        {
+          "year": 2022,
+          "value": 79.34
+        },
+        {
+          "year": 2023,
+          "value": 81.85
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg10-schulabbrecherquote-auslaender-innen",
+      "title": "Schulabbrecherquote - Ausländer:innen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 157.86,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 157.86,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 52.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Anzahl der Schulabgänger:innen ohne deutsche Staatsbürgerschaft und ohne Hauptschulabschluss) / (Anzahl Schulabgänger:innen ohne deutsche Staatsbürgerschaft insgesamt)) / ((Anzahl Schulabgänger:innen ohne Hauptschulabschluss insgesamt) / (Anzahl Schulabgänger:innen insgesamt)) * 100",
+      "statement": "Das Verhältnis der Schulabbrecher:innenquote von Ausländer:innen zur Schulabbrecher:innenquote innerhalb der Gesamtbevölkerung beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 175.083
+        },
+        {
+          "year": 2014,
+          "value": 199.83
+        },
+        {
+          "year": 2016,
+          "value": 230.77
+        },
+        {
+          "year": 2017,
+          "value": 222.45
+        },
+        {
+          "year": 2020,
+          "value": 128.073
+        },
+        {
+          "year": 2021,
+          "value": 108.98
+        },
+        {
+          "year": 2023,
+          "value": 157.86
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg10-einbuergerungen",
+      "title": "Einbürgerungen (%)",
+      "dimension": "Mensch",
+      "sdg": 10,
+      "sdgTitle": "Weniger Ungleichheiten",
+      "value": 1.084,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 1.084,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 45.3,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Einbürgerungen im jeweiligen Jahr) / (Anzahl der Einwohner:innen ohne deutsche Staatsbürgerschaft des Vorjahres) * 100",
+      "statement": "Ein Anteil von x Prozent der ausländischen Bevölkerung hat die deutsche Staatsbürgerschaft erhalten.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 1.42
+        },
+        {
+          "year": 2015,
+          "value": 1.27
+        },
+        {
+          "year": 2016,
+          "value": 1.12
+        },
+        {
+          "year": 2017,
+          "value": 1.083
+        },
+        {
+          "year": 2018,
+          "value": 1.019
+        },
+        {
+          "year": 2019,
+          "value": 1.012
+        },
+        {
+          "year": 2020,
+          "value": 0.91
+        },
+        {
+          "year": 2021,
+          "value": 1.09
+        },
+        {
+          "year": 2022,
+          "value": 1.2
+        },
+        {
+          "year": 2023,
+          "value": 1.084
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-mietpreise-m",
+      "title": "Mietpreise (€ / m²)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 12.16,
+      "year": 2022,
+      "unit": "€ / m²",
+      "stateAverage": 12.16,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 42.0,
+      "quality": "mittel",
+      "source": "Bundesinstitut für Bau-, Stadt- und Raumforschung Hinweis: Rückwirkende Anpassung der Zeitreihe auf Durchschnittswerte ohne Klassifizierung.",
+      "calculation": "Durchschnittliche nettokalte Angebotsmiete je m²",
+      "statement": "Die durchschnittliche Nettokaltmiete beträgt x Euro je Quadratmeter",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 7.47
+        },
+        {
+          "year": 2014,
+          "value": 8.07
+        },
+        {
+          "year": 2015,
+          "value": 8.45
+        },
+        {
+          "year": 2016,
+          "value": 8.89
+        },
+        {
+          "year": 2017,
+          "value": 9.86
+        },
+        {
+          "year": 2018,
+          "value": 10.85
+        },
+        {
+          "year": 2019,
+          "value": 11.23
+        },
+        {
+          "year": 2020,
+          "value": 10.93
+        },
+        {
+          "year": 2021,
+          "value": 11.67
+        },
+        {
+          "year": 2022,
+          "value": 12.16
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-wohnflaeche-m-je-einwohner-in",
+      "title": "Wohnfläche (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 38.24,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 38.24,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 50.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Wohnfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Je Person stehen im Durchschnitt x Quadratmeter Wohnfläche zur Verfügung.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 39.14
+        },
+        {
+          "year": 2014,
+          "value": 38.85
+        },
+        {
+          "year": 2016,
+          "value": 38.3
+        },
+        {
+          "year": 2017,
+          "value": 38.19
+        },
+        {
+          "year": 2018,
+          "value": 38.19
+        },
+        {
+          "year": 2019,
+          "value": 38.3
+        },
+        {
+          "year": 2020,
+          "value": 38.63
+        },
+        {
+          "year": 2021,
+          "value": 38.78
+        },
+        {
+          "year": 2022,
+          "value": 38.26
+        },
+        {
+          "year": 2023,
+          "value": 38.24
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-wohnungsnahe-grundversorgung-supermarkt-meter",
+      "title": "Wohnungsnahe Grundversorgung - Supermarkt (Meter)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 339.0,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": 50.0,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder Hinweis: Datenstand 2021",
+      "calculation": "Einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter",
+      "statement": "Die einwohnergewichtete Luftliniendistanz zum nächsten Supermarkt oder Discounter beträgt x Meter.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-pkw-dichte-pkw-je-1-000-einwohner-innen",
+      "title": "PKW-Dichte (PKW je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 328.51,
+      "year": 2023,
+      "unit": "PKW je 1.000 Einwohner:innen",
+      "stateAverage": 328.51,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 50.2,
+      "quality": "hoch",
+      "source": "Kraftfahrtbundesamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der Personenkraftwagen) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Die PKW-Dichte liegt bei x PKW je 1.000 Einwohner:innen.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 332.61
+        },
+        {
+          "year": 2015,
+          "value": 331.024
+        },
+        {
+          "year": 2016,
+          "value": 329.64
+        },
+        {
+          "year": 2017,
+          "value": 330.75
+        },
+        {
+          "year": 2018,
+          "value": 330.01
+        },
+        {
+          "year": 2019,
+          "value": 329.96
+        },
+        {
+          "year": 2020,
+          "value": 333.35
+        },
+        {
+          "year": 2021,
+          "value": 335.73
+        },
+        {
+          "year": 2022,
+          "value": 330.68
+        },
+        {
+          "year": 2023,
+          "value": 328.51
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-pkw-mit-elektroantrieb",
+      "title": "PKW mit Elektroantrieb (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 2.007,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 2.007,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Kraftfahrtbundesamt Hinweis: Rückwirkende Neuberechnung der Zeitreihe: Der Indikator umfasst keine Plug-In-Hybride mehr.",
+      "calculation": "(Anzahl der zugelassenen Personenkraftwagen mit Elektroantrieb) / (Anzahl der zugelassenen Personenkraftwagen) * 100",
+      "statement": "Der Anteil zugelassener Personenkraftwagen mit Elektroantrieb an allen zugelassenen Personenkraftwagen liegt bei x %.",
+      "timeseries": [
+        {
+          "year": 2020,
+          "value": 0.4
+        },
+        {
+          "year": 2021,
+          "value": 0.74
+        },
+        {
+          "year": 2022,
+          "value": 1.34
+        },
+        {
+          "year": 2023,
+          "value": 2.007
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-verunglueckte-im-verkehr-verunglueckte-je-1-000-einwohner-innen",
+      "title": "Verunglückte im Verkehr (Verunglückte je 1.000 Einwohner:innen)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 4.3,
+      "year": 2023,
+      "unit": "Verunglückte je 1.000 Einwohner:innen",
+      "stateAverage": 4.3,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 52.9,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der verletzten oder getöteten Personen bei Verkehrsunfällen) / (Anzahl Einwohner:innen) * 1.000",
+      "statement": "Je 1.000 Einwohner:innen werden x Personen in Verkehrsunfällen verletzt oder getötet.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 5.041
+        },
+        {
+          "year": 2015,
+          "value": 5.068
+        },
+        {
+          "year": 2016,
+          "value": 4.87
+        },
+        {
+          "year": 2017,
+          "value": 4.82
+        },
+        {
+          "year": 2018,
+          "value": 5.0
+        },
+        {
+          "year": 2019,
+          "value": 4.85
+        },
+        {
+          "year": 2020,
+          "value": 4.2
+        },
+        {
+          "year": 2021,
+          "value": 4.02
+        },
+        {
+          "year": 2022,
+          "value": 4.34
+        },
+        {
+          "year": 2023,
+          "value": 4.3
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-flaecheninanspruchnahme",
+      "title": "Flächeninanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 70.61,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 70.61,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 49.9,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Gesamtfläche) * 100",
+      "statement": "Der Anteil der Siedlungs- und Verkehrsfläche an der Gesamtfläche beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 70.23
+        },
+        {
+          "year": 2015,
+          "value": 70.24
+        },
+        {
+          "year": 2016,
+          "value": 70.39
+        },
+        {
+          "year": 2017,
+          "value": 70.5
+        },
+        {
+          "year": 2018,
+          "value": 70.55
+        },
+        {
+          "year": 2019,
+          "value": 70.57
+        },
+        {
+          "year": 2020,
+          "value": 70.58
+        },
+        {
+          "year": 2021,
+          "value": 70.59
+        },
+        {
+          "year": 2022,
+          "value": 70.6
+        },
+        {
+          "year": 2023,
+          "value": 70.61
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-flaechenneuinanspruchnahme",
+      "title": "Flächenneuinanspruchnahme (%)",
+      "dimension": "Planet",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 0.006,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 0.006,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 42.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Änderung der Siedlungs- und Verkehrsfläche im Vergleich zum Vorjahr) / (Gesamtfläche) * 100",
+      "statement": "Die prozentuale Änderungsrate von Siedlungs- und Verkehrsflächen beträgt im Vergleich zum Vorjahr x %.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": -0.004
+        },
+        {
+          "year": 2015,
+          "value": 0.012
+        },
+        {
+          "year": 2016,
+          "value": 0.11
+        },
+        {
+          "year": 2017,
+          "value": 0.11
+        },
+        {
+          "year": 2018,
+          "value": 0.046
+        },
+        {
+          "year": 2019,
+          "value": 0.021
+        },
+        {
+          "year": 2020,
+          "value": 0.017
+        },
+        {
+          "year": 2021,
+          "value": 0.008
+        },
+        {
+          "year": 2022,
+          "value": 0.012
+        },
+        {
+          "year": 2023,
+          "value": 0.006
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-flaechennutzungsintensitaet-m-je-einwohner-in",
+      "title": "Flächennutzungsintensität (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 166.36,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 166.36,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 48.4,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Siedlungs- und Verkehrsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "In der Kommune werden x Quadratmeter Siedlungs- und Verkehrsfläche pro Einwohner:in genutzt.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 180.47
+        },
+        {
+          "year": 2015,
+          "value": 177.93
+        },
+        {
+          "year": 2016,
+          "value": 175.47
+        },
+        {
+          "year": 2017,
+          "value": 173.86
+        },
+        {
+          "year": 2018,
+          "value": 172.48
+        },
+        {
+          "year": 2019,
+          "value": 171.37
+        },
+        {
+          "year": 2020,
+          "value": 171.66
+        },
+        {
+          "year": 2021,
+          "value": 171.058
+        },
+        {
+          "year": 2022,
+          "value": 167.54
+        },
+        {
+          "year": 2023,
+          "value": 166.36
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-naherholungsflaechen-m-je-einwohner-in",
+      "title": "Naherholungsflächen (m² je Einwohner:in)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 31.52,
+      "year": 2023,
+      "unit": "m² je Einwohner:in",
+      "stateAverage": 31.52,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 50.5,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Erholungsfläche) / (Anzahl der Einwohner:innen)",
+      "statement": "Auf eine/n Einwohner:in kommen x m² Erholungsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 30.76
+        },
+        {
+          "year": 2015,
+          "value": 30.31
+        },
+        {
+          "year": 2016,
+          "value": 33.24
+        },
+        {
+          "year": 2017,
+          "value": 33.16
+        },
+        {
+          "year": 2018,
+          "value": 32.97
+        },
+        {
+          "year": 2019,
+          "value": 32.75
+        },
+        {
+          "year": 2020,
+          "value": 32.81
+        },
+        {
+          "year": 2021,
+          "value": 32.63
+        },
+        {
+          "year": 2022,
+          "value": 31.76
+        },
+        {
+          "year": 2023,
+          "value": 31.52
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg11-fertiggestellte-wohngebaeude-mit-erneuerbarer-heizenergie",
+      "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie (%)",
+      "dimension": "Mensch",
+      "sdg": 11,
+      "sdgTitle": "Nachhaltige Städte und Gemeinden",
+      "value": 41.57,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 41.57,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Anzahl der neu errichteten Wohngebäude mit erneuerbarer Heizenergie) / (Anzahl der neu errichteten Wohngebäude) * 100",
+      "statement": "Der Anteil fertiggestellter Wohngebäude mit erneuerbarer Heizenergie an neu errichteten Wohngebäuden beträgt x %.",
+      "timeseries": [
+        {
+          "year": 2016,
+          "value": 19.92
+        },
+        {
+          "year": 2017,
+          "value": 21.77
+        },
+        {
+          "year": 2018,
+          "value": 23.47
+        },
+        {
+          "year": 2019,
+          "value": 21.27
+        },
+        {
+          "year": 2020,
+          "value": 32.72
+        },
+        {
+          "year": 2021,
+          "value": 28.051
+        },
+        {
+          "year": 2022,
+          "value": 35.61
+        },
+        {
+          "year": 2023,
+          "value": 41.57
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg12-trinkwasserverbrauch-private-haushalte-liter-je-einwohner-in-und-tag",
+      "title": "Trinkwasserverbrauch - Private Haushalte (Liter je Einwohner:in und Tag)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": 110.83,
+      "year": 2023,
+      "unit": "Liter je Einwohner:in und Tag",
+      "stateAverage": 110.83,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 50.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter des Bundes und der Länder",
+      "calculation": "(Jährlicher Trinkwasserverbrauch (Haushalte und Kleingewerbe)) / ((Anzahl der Einwohner:innen) * (Anzahl der Tage pro Jahr))",
+      "statement": "Je Einwohner:in und Tag wurden durchschnittlich x Liter Wasser verbraucht.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 111.094
+        },
+        {
+          "year": 2015,
+          "value": 109.51
+        },
+        {
+          "year": 2016,
+          "value": 116.17
+        },
+        {
+          "year": 2017,
+          "value": 115.25
+        },
+        {
+          "year": 2018,
+          "value": 114.25
+        },
+        {
+          "year": 2019,
+          "value": 118.71
+        },
+        {
+          "year": 2020,
+          "value": 118.56
+        },
+        {
+          "year": 2021,
+          "value": 118.46
+        },
+        {
+          "year": 2022,
+          "value": 111.62
+        },
+        {
+          "year": 2023,
+          "value": 110.83
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg12-abfallmenge-t-je-einwohner-in",
+      "title": "Abfallmenge (t je Einwohner:in)",
+      "dimension": "Planet",
+      "sdg": 12,
+      "sdgTitle": "Verantwortungsvolle Konsum- und Produktionsmuster",
+      "value": 0.36,
+      "year": 2022,
+      "unit": "t je Einwohner:in",
+      "stateAverage": 0.36,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 52.4,
+      "quality": "mittel",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Aufkommen an Haushaltsabfällen (ohne Elektroaltgeräte)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die entsorgte Menge an Haushaltsabfällen beträgt x Tonnen je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 0.41
+        },
+        {
+          "year": 2014,
+          "value": 0.38
+        },
+        {
+          "year": 2015,
+          "value": 0.38
+        },
+        {
+          "year": 2016,
+          "value": 0.38
+        },
+        {
+          "year": 2017,
+          "value": 0.38
+        },
+        {
+          "year": 2018,
+          "value": 0.37
+        },
+        {
+          "year": 2019,
+          "value": 0.38
+        },
+        {
+          "year": 2020,
+          "value": 0.38
+        },
+        {
+          "year": 2021,
+          "value": 0.38
+        },
+        {
+          "year": 2022,
+          "value": 0.36
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg13-siedlungslast-im-ueberschwemmungsgebiet",
+      "title": "Siedlungslast im Überschwemmungsgebiet (%)",
+      "dimension": "Planet",
+      "sdg": 13,
+      "sdgTitle": "Maßnahmen zum Klimaschutz",
+      "value": 9.0,
+      "year": 2023,
+      "unit": "%",
+      "stateAverage": 9.0,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 48.8,
+      "quality": "hoch",
+      "source": "Leibniz-Institut für Ökologische Raumentwicklung, jeweils zuständige Landesbehörden",
+      "calculation": "(Baulich geprägte Siedlungs- und Verkehrsfläche im amtlich festgesetzten Überschwemmungsgebiet) / (Fläche des festgesetzten Überschwemmungsgebietes in der Gebietseinheit) * 100",
+      "statement": "Ein Anteil von x % der Fläche des festgesetzten Überschwemmungsgebietes in der Kommune ist baulich geprägte Siedlungs- und Verkehrsfläche.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 8.5
+        },
+        {
+          "year": 2015,
+          "value": 8.8
+        },
+        {
+          "year": 2016,
+          "value": 9.1
+        },
+        {
+          "year": 2017,
+          "value": 9.1
+        },
+        {
+          "year": 2018,
+          "value": 7.3
+        },
+        {
+          "year": 2019,
+          "value": 7.0
+        },
+        {
+          "year": 2020,
+          "value": 6.8
+        },
+        {
+          "year": 2021,
+          "value": 6.8
+        },
+        {
+          "year": 2022,
+          "value": 6.4
+        },
+        {
+          "year": 2023,
+          "value": 9.0
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg14-fliessgewaesserqualitaet",
+      "title": "Fließgewässerqualität (%)",
+      "dimension": "Planet",
+      "sdg": 14,
+      "sdgTitle": "Leben unter Wasser",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Bundesanstalt für Gewässerkunde (BfG), Bundesamt für Kartographie und Geodäsie",
+      "calculation": "(Länge der Fließgewässer mit einer ökologischen Zustandsbewertung „sehr gut“ oder „gut“) / (Länge der Fließgewässer in der Gebietseinheit) * 100",
+      "statement": "Der Zustand von x % der Länge von Fließgewässern an der Gesamtfließgewässerlänge ist mit mindestens „gut“ bewertet.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg15-naturschutzflaechen",
+      "title": "Naturschutzflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 8.0,
+      "year": 2022,
+      "unit": "%",
+      "stateAverage": 8.0,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 50.5,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "(Fläche Natura 2000-Gebiete, Naturschutzgebiete und Nationalparke) / (Gesamtfläche) * 100",
+      "statement": "Natura 2000-Gebiete, Naturschutzgebiete oder Nationalparks sind auf x % der Gesamtfläche der Kommune ausgewiesen.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 7.8
+        },
+        {
+          "year": 2014,
+          "value": 7.8
+        },
+        {
+          "year": 2015,
+          "value": 7.6
+        },
+        {
+          "year": 2016,
+          "value": 7.6
+        },
+        {
+          "year": 2017,
+          "value": 7.8
+        },
+        {
+          "year": 2018,
+          "value": 8.0
+        },
+        {
+          "year": 2019,
+          "value": 8.0
+        },
+        {
+          "year": 2022,
+          "value": 8.0
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg15-landschaftsqualitaet-hemerobiewert",
+      "title": "Landschaftsqualität (Hemerobiewert)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 5.24,
+      "year": 2021,
+      "unit": "Hemerobiewert",
+      "stateAverage": 5.24,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 50.1,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Bundesamt für Naturschutz, Leibniz-Institut für Ökologische Raumentwicklung",
+      "calculation": "Flächengewichteter Mittelwert der Hemerobiestufen 1 \"ahemerob\" (nicht kulturbeeinflusst) bis 7 \"metahemerob\" (übermäßig stark kulturbeeinflusst / Biozönose zerstört) je Gebietseinheit",
+      "statement": "Das Maß des menschlichen Eingriffes auf den Naturhaushalt der Kommune wird mit Stufe x des Hemerobieindex bewertet.",
+      "timeseries": [
+        {
+          "year": 2015,
+          "value": 5.22
+        },
+        {
+          "year": 2018,
+          "value": 5.23
+        },
+        {
+          "year": 2021,
+          "value": 5.24
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg15-unzerschnittene-freiraumflaechen",
+      "title": "Unzerschnittene Freiraumflächen (%)",
+      "dimension": "Planet",
+      "sdg": 15,
+      "sdgTitle": "Leben an Land",
+      "value": 11.0,
+      "year": 2020,
+      "unit": "%",
+      "stateAverage": 11.0,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 48.5,
+      "quality": "mittel",
+      "source": "Bundesamt für Kartographie und Geodäsie, Leibniz-Institut für ökologische Raumentwicklung",
+      "calculation": "(Freiraumflächen (außerhalb Ortslagen) > 50 km², die nicht durch Trassen des überörtlichen Verkehrsnetzes zerschnitten sind) / (Gesamtfläche) * 100",
+      "statement": "Ein Anteil von x % der Freiraumflächen sind unzerschnitten durch Trassen des überörtlichen Verkehrsnetzes.",
+      "timeseries": [
+        {
+          "year": 2016,
+          "value": 11.9
+        },
+        {
+          "year": 2020,
+          "value": 11.0
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg16-straftaten-straftaten-je-1-000-einwohner-innen",
+      "title": "Straftaten (Straftaten je 1.000 Einwohner:innen)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 141.9,
+      "year": 2023,
+      "unit": "Straftaten je 1.000 Einwohner:innen",
+      "stateAverage": 141.9,
+      "stateAverageLabel": "Berlin",
+      "direction": "niedriger_ist_besser",
+      "score": 50.7,
+      "quality": "hoch",
+      "source": "Bundeskriminalamt, Statistische Ämter der Länder",
+      "calculation": "(Anzahl der polizeilich bekanntgewordenen Straftaten) / (Anzahl der Einwohner:innen) * 1.000",
+      "statement": "Es sind x Straftaten je 1.000 Einwohner:innen polizeilich bekannt.",
+      "timeseries": [
+        {
+          "year": 2013,
+          "value": 147.045
+        },
+        {
+          "year": 2015,
+          "value": 161.8
+        },
+        {
+          "year": 2016,
+          "value": 159.13
+        },
+        {
+          "year": 2017,
+          "value": 144.026
+        },
+        {
+          "year": 2018,
+          "value": 140.38
+        },
+        {
+          "year": 2019,
+          "value": 139.92
+        },
+        {
+          "year": 2020,
+          "value": 137.59
+        },
+        {
+          "year": 2022,
+          "value": 138.43
+        },
+        {
+          "year": 2023,
+          "value": 141.9
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg16-finanzmittelsaldo-je-einwohner-in",
+      "title": "Finanzmittelsaldo (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "((Primärsaldo) + (Finanzsaldo) + (Investitionssaldo)) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune konnte ihre gesamten Aufgaben mit einem Überschuss / Defizit in Höhe von x Euro je Einwohner:in abschließen.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg16-steuereinnahmen-je-einwohner-in",
+      "title": "Steuereinnahmen (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": 1580.85,
+      "year": 2023,
+      "unit": "€ je Einwohner:in",
+      "stateAverage": 1580.85,
+      "stateAverageLabel": "Berlin",
+      "direction": "hoeher_ist_besser",
+      "score": 58.0,
+      "quality": "hoch",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Steuereinnahmen (= Grundsteuer A + Grundsteuer B + Gewerbesteuer + Gemeindeanteil an Einkommensteuer + Gemeindeanteil an Umsatzsteuer) gemittelt über die letzten 4 Jahre) / (Anzahl der Einwohner:innen gemittelt über die letzten 4 Jahre)",
+      "statement": "Die über die letzten 4 Jahre gemittelten Steuereinnahmen einer Kommune betragen im Durchschnitt x Euro je Einwohner:in.",
+      "timeseries": [
+        {
+          "year": 2014,
+          "value": 1003.041
+        },
+        {
+          "year": 2015,
+          "value": 1040.74
+        },
+        {
+          "year": 2016,
+          "value": 1088.6
+        },
+        {
+          "year": 2017,
+          "value": 1140.74
+        },
+        {
+          "year": 2018,
+          "value": 1200.99
+        },
+        {
+          "year": 2019,
+          "value": 1264.57
+        },
+        {
+          "year": 2020,
+          "value": 1300.094
+        },
+        {
+          "year": 2021,
+          "value": 1388.25
+        },
+        {
+          "year": 2022,
+          "value": 1482.52
+        },
+        {
+          "year": 2023,
+          "value": 1580.85
+        }
+      ],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg16-liquiditaetskredite-je-einwohner-in",
+      "title": "Liquiditätskredite (€ je Einwohner:in)",
+      "dimension": "Demokratie",
+      "sdg": 16,
+      "sdgTitle": "Frieden, Gerechtigkeit und starke Institutionen",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": "Statistische Ämter der Länder",
+      "calculation": "(Liquiditäts-/Kassenkredite im Kernhaushalt) / (Anzahl der Einwohner:innen)",
+      "statement": "Die Kommune hat im Kernhaushalt Liquiditätskredite in Höhe von x Euro je Einwohner:in.",
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    },
+    {
+      "id": "sdg17-fuer-dieses-ziel-liegen-derzeit-keine-indikatorendaten-vor",
+      "title": "Für dieses Ziel liegen derzeit keine Indikatorendaten vor.",
+      "dimension": "Demokratie",
+      "sdg": 17,
+      "sdgTitle": "Partnerschaften zur Erreichung der Ziele",
+      "value": null,
+      "year": null,
+      "unit": null,
+      "stateAverage": null,
+      "stateAverageLabel": null,
+      "direction": "hoeher_ist_besser",
+      "score": null,
+      "quality": "niedrig",
+      "source": null,
+      "calculation": null,
+      "statement": null,
+      "timeseries": [],
+      "portalTitle": "Berlin, Stadt"
+    }
+  ]
+}

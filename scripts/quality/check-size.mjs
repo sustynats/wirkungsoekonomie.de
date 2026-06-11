@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const target = fs.existsSync("dist") ? "dist" : ".";
+const target = fs.existsSync("_site") ? "_site" : fs.existsSync("dist") ? "dist" : ".";
 let total = 0;
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {

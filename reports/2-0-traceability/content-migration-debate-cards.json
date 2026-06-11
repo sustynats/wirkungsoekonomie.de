@@ -1,0 +1,1124 @@
+{
+  "generated_at": "2026-06-07T14:54:43.823Z",
+  "scope": "Debattenkarten, Narrative, Antwort-Playbooks",
+  "canonical_cards": 136,
+  "schema_policy": "additiv, abwärtskompatibel, keine Neuschreibung vorhandener Antwort- oder Quelleninhalte",
+  "public_rendering": {
+    "answer_block_above_model": true,
+    "wave_depth_block_after_consequence_check": true,
+    "public_missing_fields_hidden": true,
+    "no_person_rating": true,
+    "no_intent_assumption": true
+  },
+  "fields_added_or_derived": [
+    "primaryWave aus vorhandenen Kartenfeldern",
+    "depthLabel aus vorhandenen Kartenfeldern",
+    "Wellenprofil: Aufmerksamkeit, Emotion, Deutung, Resonanz, Verschiebung",
+    "Tiefe: unterliegende Struktur und bessere Systemfrage",
+    "Index-Suche über Thema, Hauptwelle und Tiefenstruktur"
+  ],
+  "sample_urls": [
+    "/wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/",
+    "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/",
+    "/wirkungsradar/live/aktienrente-loest-die-rente/",
+    "/wirkungsradar/live/algorithmen-sind-neutral/",
+    "/wirkungsradar/live/altparteien/",
+    "/wirkungsradar/live/altparteiendiktatur/",
+    "/wirkungsradar/live/angst-vor-afd-wahlsieg/",
+    "/wirkungsradar/live/antisemitismus-ist-importiert/",
+    "/wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/",
+    "/wirkungsradar/live/auslaender-pluendern-sozialstaat/",
+    "/wirkungsradar/live/batterien-sind-nicht-recyclebar/",
+    "/wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/"
+  ],
+  "review_status": [
+    {
+      "url": "/wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/aktienrente-loest-die-rente/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/algorithmen-sind-neutral/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/altparteien/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/altparteiendiktatur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/angst-vor-afd-wahlsieg/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/antisemitismus-ist-importiert/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/auslaender-pluendern-sozialstaat/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/batterien-sind-nicht-recyclebar/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/biodiversitaet-ist-luxusproblem/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/buergergeld-macht-faul/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/buerokratieabbau-statt-wirkung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/cancel-culture-zerstoert-debatte/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/co2-ist-nur-ein-spurengas/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/co2-preis-oder-fossile-systemkosten/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/cyberangriffe-sind-it-problem/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/das-ist-alles-gesteuert/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/das-ist-zensur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/datenschutz-verhindert-innovation/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/deepfakes-sind-nur-spass/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/deutschland-nur-zwei-prozent/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/deutschland-schafft-sich-ab/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/die-bauern-werden-geopfert/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/die-boesen-reichen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/die-da-oben/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/die-wissenschaft-ist-gekauft/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/diktatur-der-altparteien/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/e-autos-schlimmer-als-verbrenner/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/e-fuels-retten-den-verbrenner/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/e-lkw-funktionieren-nicht/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/energiewende-gescheitert/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/entwicklungshilfe-china-indien/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/entwicklungshilfe-warum-nicht-zuerst-deutschland/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/eu-undemokratisch-deutschland-zahlt-alles/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/fachkraeftemangel-ohne-zuwanderung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/faktenchecker-sind-zensur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/feminismus-zerstoert-familie/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/fleischverzicht-ist-ideologie/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/fuenfzehn-minuten-stadt-klimakaefig/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/fusion-loest-das-energieproblem/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/gaza-zeigt-westliche-doppelmoral/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/gender-ideologie/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/genderismus/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/heimat-gehoert-den-einheimischen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/heizgesetz-heizhammer-narrativ/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/impfen-ist-nur-persoenliche-entscheidung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/integration-ist-gescheitert/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/islamismus-wird-verharmlost/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/israelkritik-wird-verboten/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/junge-wollen-nicht-mehr-arbeiten/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/kehrtwende-180-grad/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/kernenergie-einfache-loesung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/kernenergie-wieder-in-deutschland/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/ki-macht-kinder-dumm/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/ki-nimmt-uns-alle-jobs/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/ki-regulierung-bremst-europa/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/kinder-kriegen-ist-klimasuende/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/klima-hat-sich-schon-immer-veraendert/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/klimadiktatur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/klimafinanzierung-wir-zahlen-fuer-andere/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/klimaflucht-ist-panikmache/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/klimaschutz-deindustrialisiert-deutschland/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/klimaschutz-ist-oekodiktatur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/klimaschutz-ist-zu-teuer/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/kriminalitaet-und-migration/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/kultur-gender-luxusprojekte/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/laden-dauert-viel-zu-lange/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/leistungstraeger-ausgepresst/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/leistungstraeger-werden-ausgepresst/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/linksextremismus-ist-unterschaetzt/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/lobbyismus-ist-immer-korruption/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/long-covid-me-cfs-ist-einbildung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/maenner-werden-benachteiligt/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/mainstreammedien-luegen-alle/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/man-darf-ja-nichts-mehr-sagen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/man-wird-doch-wohl-fragen-duerfen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/masseneinwanderung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/medien-zensur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/mehr-krankenhaeuser-bessere-versorgung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/migration-kostet-nur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/migration-und-queerfeindlichkeit/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/nato-hat-russland-provoziert/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/ngos-kassieren-steuergeld/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/nie-eingezahlt/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/oeffentlicher-rundfunk-staatsfunk/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/oerr-oder-staatsfunk/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/parkplaetze-sind-freiheit/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/patriotismus-ist-rechts/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/pflege-durch-roboter-ist-unmenschlich/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/pflege-ist-unbezahlbar/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/planwirtschaftliche-energiewende/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/praevention-ist-zu-teuer/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/queere-sichtbarkeit-bedroht-kinder/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/radwege-in-peru/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/rechtsextremismus-ist-nur-protest/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/reiche-wandern-aus-wenn-man-sie-belastet/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/religion-gehoert-ins-private/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/remigration/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/remigration-remigrationslotsen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/rente-unbezahlbar/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/resilienz-ist-autarkie/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/schulden-machen-oder-sparen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/schuldenbremse-schuetzt-die-jugend/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/sdgs-sind-weltregierung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/sdgs-weltregierung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/sind-die-reichen-schuld/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/social-media-ist-freie-oeffentlichkeit/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/solarstrom-ist-unzuverlaessig/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/sozialschmarotzer-frame/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/sozialtourismus-frame/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/standort-deutschland-ist-tot/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/steuerverschwendung-buerokratie/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/tempolimit-bringt-nichts/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/tradition-wird-abgeschafft/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/ukraine-unterstuetzung-steuergeld/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/verbrennerverbot-nimmt-freiheit/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/verfassungsschutz-oder-regierungsschutz/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/verfassungsschutz-regierungsschutz/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/vier-tage-woche-ist-wohlstandsverwahrlosung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/waermepumpe-ist-unbezahlbar/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/waffenlieferungen-verlaengern-den-krieg/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wasser-ist-in-deutschland-kein-problem/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wasserstoff-fuer-alles/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/windraeder-voegel-wald-beton-rueckbau/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/windraeder-zerstoeren-natur/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wirkungsabwehr-dissonanzrationalisierung/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wirkungsoekonomie-planwirtschaft/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wirkungsoekonomie-social-credit/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wirkungsteuer-macht-alles-teurer/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/woek-bewertet-menschen/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wohnungsnot-wegen-migration/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    },
+    {
+      "url": "/wirkungsradar/live/wokeness-spaltet-die-gesellschaft/",
+      "status": "migriert",
+      "previous_content_preserved": true,
+      "wave_depth_added": true,
+      "public_placeholders": false,
+      "editorial_review_note": "Wellen/Tiefe wurden aus vorhandenen Feldern abgeleitet; bei redaktioneller Feinarbeit kann die Tiefe pro Karte weiter geschärft werden."
+    }
+  ]
+}

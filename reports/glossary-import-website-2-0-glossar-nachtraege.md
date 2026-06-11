@@ -1,0 +1,268 @@
+# Glossar-Import Website 2.0 Glossar-Nachträge aus Word-Aufträgen
+
+Stand: 2026-06-07
+
+- Importquelle: `content/glossary/imports/website-2-0-glossar-nachtraege.json`
+- Redaktionsquelle: Website 2.0 Glossar-Nachträge aus Word-Aufträgen
+- Neue Begriffe: 60
+- Aktualisierte Begriffe: 104
+- Offene Querverweise ohne Glossarziel: 78
+
+## Neu angelegt
+
+- /begriffe/artikel-20a-grundgesetz/
+- /begriffe/staatsziel-umweltschutz/
+- /begriffe/schutz-natuerlicher-lebensgrundlagen/
+- /begriffe/verantwortung-fuer-kommende-generationen/
+- /begriffe/intertemporale-freiheitssicherung/
+- /begriffe/klimabeschluss-des-bundesverfassungsgerichts/
+- /begriffe/wirkung-als-rechtsprinzip/
+- /begriffe/wirkungsstaat/
+- /begriffe/wirkungsfolgenabschaetzung/
+- /begriffe/verhaeltnismaessigkeit-in-der-wirkungsoekonomie/
+- /begriffe/rechtsschutz-gegen-wirkungsentscheidungen/
+- /begriffe/eu-nachhaltigkeitsverfassungsrahmen/
+- /begriffe/art-2-euv-werte-der-europaeischen-union/
+- /begriffe/art-3-euv-nachhaltige-entwicklung-europas/
+- /begriffe/art-11-aeuv-umweltintegrationsprinzip/
+- /begriffe/art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip/
+- /begriffe/art-37-eu-grundrechtecharta-umweltschutz/
+- /begriffe/europaeisches-klimagesetz/
+- /begriffe/dnsh-do-no-significant-harm/
+- /begriffe/csddd-corporate-sustainability-due-diligence-directive/
+- /begriffe/cbam-co2-grenzausgleichssystem/
+- /begriffe/dsa-digital-services-act/
+- /begriffe/ai-act/
+- /begriffe/european-media-freedom-act/
+- /begriffe/anti-slapp-richtlinie/
+- /begriffe/hans-jonas/
+- /begriffe/john-dewey/
+- /begriffe/wu-wei-wirksames-nicht-erzwingen/
+- /begriffe/zen/
+- /begriffe/shaolin/
+- /begriffe/quantenmechanik/
+- /begriffe/quantisierung/
+- /begriffe/welle-teilchen-dualismus/
+- /begriffe/superposition/
+- /begriffe/verschraenkung/
+- /begriffe/komplementaritaet/
+- /begriffe/unschaerferelation/
+- /begriffe/messung-in-der-quantenmechanik/
+- /begriffe/messproblem/
+- /begriffe/dekohaerenz/
+- /begriffe/wahrscheinlichkeit/
+- /begriffe/nichtlokalitaet/
+- /begriffe/quantenfeldtheorie/
+- /begriffe/standardmodell-der-teilchenphysik/
+- /begriffe/quanteninformation/
+- /begriffe/qubit/
+- /begriffe/quantencomputer/
+- /begriffe/emergenz-des-klassischen/
+- /begriffe/modellgrenze/
+- /begriffe/quantenmetapher/
+- /begriffe/quantenmystik/
+- /begriffe/wechselwirkung/
+- /begriffe/messbarkeit-ohne-reduktionismus/
+- /begriffe/nichttriviale-systeme/
+- /begriffe/kommunikation-und-wirklichkeitskonstruktion/
+- /begriffe/watzlawick-paul/
+- /begriffe/st-galler-managementmodell/
+- /begriffe/unternehmertypen-nach-jochen-roepke/
+- /begriffe/schumpeter-joseph-a/
+- /begriffe/laozi/
+
+## Aktualisiert
+
+- /begriffe/eu-taxonomie/
+- /begriffe/csrd/
+- /begriffe/esrs/
+- /begriffe/doppelte-wesentlichkeit/
+- /begriffe/digitaler-produktpass/
+- /begriffe/hannah-arendt/
+- /begriffe/daoismus/
+- /begriffe/interdependenz/
+- /begriffe/moderner-patriotismus/
+- /begriffe/amartya-sen/
+- /begriffe/elinor-ostrom/
+- /begriffe/rechtsextremismus/
+- /begriffe/rassismus/
+- /begriffe/antisemitismus/
+- /begriffe/fremdenfeindlichkeit/
+- /begriffe/gruppenbezogene-menschenfeindlichkeit/
+- /begriffe/antidiskriminierung/
+- /begriffe/erinnerungskultur/
+- /begriffe/demokratische-resilienz-gegen-extremismus/
+- /begriffe/homo-oeconomicus/
+- /begriffe/routineunternehmer/
+- /begriffe/arbitrageur/
+- /begriffe/innovativer-unternehmer/
+- /begriffe/evolutorischer-unternehmer/
+- /begriffe/unternehmerische-kompetenz/
+- /begriffe/schumpetersche-innovation/
+- /begriffe/schoepferische-rekonstruktion/
+- /begriffe/kreislaufinnovation/
+- /begriffe/wirkungspionier/
+- /begriffe/neoklassik/
+- /begriffe/systemtheorie/
+- /begriffe/evolutionstheorie/
+- /begriffe/walter-eucken/
+- /begriffe/ludwig-erhard/
+- /begriffe/soziale-marktwirtschaft/
+- /begriffe/oesterreichische-schule/
+- /begriffe/frankfurter-schule/
+- /begriffe/st-galler-managementlehre/
+- /begriffe/ordoliberalismus/
+- /begriffe/liberalismus/
+- /begriffe/sozialliberalismus/
+- /begriffe/keynesianismus/
+- /begriffe/neoliberalismus/
+- /begriffe/oekosoziale-marktwirtschaft/
+- /begriffe/wohlfahrtsoekonomik/
+- /begriffe/institutionenoekonomik/
+- /begriffe/marktversagen/
+- /begriffe/externalitaeten/
+- /begriffe/wettbewerb-als-suchverfahren/
+- /begriffe/daseinsvorsorge/
+- /begriffe/subsidiaritaet/
+- /begriffe/solidaritaet/
+- /begriffe/gemeinwohl/
+- /begriffe/stakeholder-ansatz/
+- /begriffe/shareholder-value/
+- /begriffe/eigentum-mit-wirkungspflicht/
+- /begriffe/value-proposition/
+- /begriffe/value-proposition-canvas/
+- /begriffe/business-value/
+- /begriffe/business-model-canvas/
+- /begriffe/persona/
+- /begriffe/design-thinking/
+- /begriffe/oekosystem/
+- /begriffe/business-ecosystem/
+- /begriffe/tipping-point/
+- /begriffe/kipppunkte/
+- /begriffe/pfadabhaengigkeit/
+- /begriffe/handlungsmoeglichkeiten/
+- /begriffe/handlungsfenster/
+- /begriffe/klimafolgeschaeden/
+- /begriffe/klimarisiko/
+- /begriffe/vorsorgeprinzip/
+- /begriffe/praeventionsdividende/
+- /begriffe/no-regret-massnahme/
+- /begriffe/produkt-markt-wirkungs-fit/
+- /begriffe/quantenphysik/
+- /begriffe/konstruktivismus/
+- /begriffe/kybernetik/
+- /begriffe/beobachterabhaengigkeit/
+- /begriffe/rueckkopplung/
+- /begriffe/effektivitaet/
+- /begriffe/effizienz/
+- /begriffe/wirksamkeit/
+- /begriffe/wirkungseffizienz/
+- /begriffe/viable-system-model/
+- /begriffe/peter-drucker/
+- /begriffe/hans-ulrich/
+- /begriffe/fredmund-malik/
+- /begriffe/stafford-beer/
+- /begriffe/innovation/
+- /begriffe/neukombination/
+- /begriffe/wirkungsinnovation/
+- /begriffe/kreislaufwirtschaft/
+- /begriffe/regeneratives-wachstum/
+- /begriffe/jochen-roepke/
+- /begriffe/daoismus/
+- /begriffe/wu-wei/
+- /begriffe/oeffentlichkeit/
+- /begriffe/diskursraum/
+- /begriffe/deliberative-demokratie/
+- /begriffe/moderner-patriotismus/
+- /begriffe/verfassungspatriotismus/
+- /begriffe/zugehoerigkeit/
+- /begriffe/nationalismus/
+
+## Offene Querverweise
+
+- 12
+- 13
+- 14
+- 15
+- Algorithmus
+- Art. 11 AEUV
+- Art. 191 AEUV
+- Art. 2 EUV
+- Art. 3 EUV
+- Art. 37 EU-Grundrechtecharta
+- Artikel 20a GG
+- Bürokratieabbau
+- Datenpunkt
+- Dezentralität
+- Disziplin
+- DPP-Infrastruktur
+- EU-ETS
+- EUSt/Wirkungssteuer
+- Evaluation
+- Evidenz
+- Fehlbarkeit
+- Fehlerkultur
+- gesellschaftliche Resilienz
+- Gewinn als Feedback
+- Grenzausgleich
+- Habermas
+- Innovationswirkung
+- internationale Anschlussfähigkeit
+- Klimabeschluss
+- Klimawirkung
+- Koexistenz
+- Koexistenz statt Extraktion
+- Kommunikation
+- Kontext
+- Lernende Demokratie
+- lokale Wirkung
+- Mensch
+- Menschenrechte
+- Messung
+- Missbrauchsschutz
+- Nachhaltigkeit als Systemarchitektur
+- Nebenwirkung
+- Nichttrivialität
+- ökologische Wirkungsgrenze
+- Perspektive
+- Pilotierung
+- Planet
+- Rebound
+- Ressourcen
+- Ressourceneffizienz
+- Risiko
+- SDGs 6
+- Social-Credit-Abgrenzung
+- soziale Wirkung
+- Sprache
+- St. Gallen
+- Stakeholder
+- Systemische Kooperation
+- Systemzustand
+- Szenario
+- Technologiefolgenabschätzung
+- Technologieverantwortung
+- Übung
+- Umweltwirkung
+- Unsicherheit
+- Unternehmertum
+- Unternehmertypen
+- Verkörperung
+- Versionierung
+- Verursacherprinzip
+- Wirkungshaftung
+- Wirkungsklasse
+- Wirkungsmessung
+- Wirkungsscanner
+- Wirkungsscore
+- Wirkungstransparenz
+- Wissenschaft
+- Wissenschaftlichkeit
+
+## Standardprozess
+
+1. Redaktionsquelle in eine strukturierte Importdatei unter `content/glossary/imports/` überführen.
+2. `GLOSSARY_IMPORT_FILE=... node scripts/glossary/import-glossary-supplement.mjs` ausführen.
+3. `npm run glossary:build` ausführen.
+4. `npm run check:glossary && npm run check:glossary-alpha && npm run check:hover-definitions && npm run check:search` ausführen.
+5. Commit, Push auf `main`, GitHub Pages Deploy abwarten, Live-URLs prüfen.

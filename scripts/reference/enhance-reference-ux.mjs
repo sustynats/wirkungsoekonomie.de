@@ -7,7 +7,9 @@ const IMPORT_VERSION = "2026.1-import";
 const SOURCE_VERSION = "2026.0";
 const TERM_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
 const TERM_BASE_DATE = "2026-05-21";
-const referenceReaderAssetVersion = "20260531-mobile-reference-reader";
+const referenceReaderAssetVersion = "20260605-referenz-merkliste-ux";
+const sharedAssetVersion = "20260605-referenz-merkliste-ux";
+const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
@@ -211,6 +213,17 @@ function navLink(item, base) {
   return `<a href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}">${esc(item.label)}</a>`;
 }
 
+function headerUtilityNav(base) {
+  return (navigation.more || [])
+    .filter((item) => headerUtilityLabels.has(item.label))
+    .map((item) => {
+      const label = esc(item.label);
+      const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
+      return `<a class="site-utility-link site-utility-link--${esc(slugify(item.label))}" href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${label}</a>`;
+    })
+    .join("\n    ");
+}
+
 function footerGroup(group, base) {
   return `<div class="footer-nav-group">
       <h3>${esc(group.title)}</h3>
@@ -224,7 +237,8 @@ function renderHeader(base) {
   const headerNav = navigation.header.map((item) => navLink(item, base)).join("\n    ");
   return headerTemplate
     .replaceAll("{{BASE}}", base)
-    .replace("{{HEADER_NAV}}", headerNav);
+    .replace("{{HEADER_NAV}}", headerNav)
+    .replaceAll("{{HEADER_UTILITY_NAV}}", headerUtilityNav(base));
 }
 
 function renderFooter(base) {
@@ -237,7 +251,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=20260523-reference-ux"></script>
+  return `<script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 
@@ -254,7 +268,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${referenceReaderAssetVersion}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}
@@ -960,10 +974,15 @@ function modeBar(chapter) {
         <button type="button" data-reader-mode="print">Druck</button>
       </div>
       <nav class="chapter-mini-map" aria-label="Abschnitte in Kapitel ${chapter.number}">
-        <h2>Kapitel ${chapter.number}</h2>
-        <a href="../">Referenzportal</a>
-        <a href="../kapitel/">Alle Kapitel</a>
-        ${chapter.sections.map((section) => `<a href="#${esc(section.id)}">${esc(section.title)}</a>`).join("")}
+        <p class="chapter-mini-map-kicker">Kapitel ${chapter.number}</p>
+        <h2>Inhaltsverzeichnis</h2>
+        <div class="chapter-mini-map-actions">
+          <a href="../">Referenzportal</a>
+          <a href="../kapitel/">Alle Kapitel</a>
+        </div>
+        <div class="chapter-mini-map-list">
+          ${chapter.sections.map((section) => `<a href="#${esc(section.id)}">${esc(section.title)}</a>`).join("")}
+        </div>
       </nav><!-- reference-ux:end -->`;
 }
 
@@ -1093,6 +1112,22 @@ function enhanceFullText() {
   const file = "referenz/volltext/index.html";
   if (!fs.existsSync(file)) return;
   let html = stripUxMarkers(read(file));
+  const chapterAnchors = [...html.matchAll(/<h[23]\b[^>]*\bid="(woek-main-2026-k(\d{3}))"[^>]*>([\s\S]*?)<\/h[23]>/g)]
+    .map((match) => ({
+      id: match[1],
+      number: Number(match[2]),
+      title: cleanChapterTitle(Number(match[2]), match[3]),
+    }))
+    .filter((item, index, items) => item.number > 0 && items.findIndex((candidate) => candidate.id === item.id) === index);
+  const chapterMap = chapterAnchors.length
+    ? `<section class="reference-chapter-map" id="fulltext-chapter-map" aria-labelledby="fulltext-chapter-map-title">
+        <p class="section-eyebrow">Kapitelanker</p>
+        <h2 id="fulltext-chapter-map-title">Kapitelweise direkt springen</h2>
+        <div class="reference-chapter-map__grid">
+          ${chapterAnchors.map((chapter) => `<a href="#${chapter.id}"><span>Kapitel ${String(chapter.number).padStart(3, "0")}</span>${esc(chapter.title)}</a>`).join("\n          ")}
+        </div>
+      </section>`
+    : "";
   html = html.replace(/style\.css\?v=[^"']+/g, `style.css?v=${referenceReaderAssetVersion}`);
   html = html.replace(/reference-reader\.js\?v=[^"']+/g, `reference-reader.js?v=${referenceReaderAssetVersion}`);
   html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
@@ -1112,17 +1147,29 @@ function enhanceFullText() {
         <span>Volltext</span>
         <a href="../">Referenzportal</a>
         <a href="../kapitel/">Kapitelübersicht</a>
+        <a href="#fulltext-chapter-map">Kapitelanker</a>
         <a href="#woek-main-fulltext">Zum Text</a>
         <a href="../../assets/pdf/die-neue-ordnung-des-wohlstands.pdf">Original-PDF</a>
         <button type="button" data-print-page>Drucken</button>
       </nav><!-- reference-ux:end -->
       $2`);
   }
+  if (!html.includes('href="#fulltext-chapter-map"')) {
+    html = html.replace(
+      /(<a href="\.\.\/kapitel\/">Kapitelübersicht<\/a>)/,
+      `$1
+        <a href="#fulltext-chapter-map">Kapitelanker</a>`
+    );
+  }
   html = html.replace(/<article class="([^"]*article-shell[^"]*)" id="woek-main-fulltext">/, (match, classes) => {
     const merged = [classes, "fulltext-reader"].join(" ").replace(/\s+/g, " ").trim();
     const clean = [...new Set(merged.split(" "))].join(" ");
     return `<article class="${clean}" id="woek-main-fulltext">`;
   });
+  if (chapterMap && !html.includes('id="fulltext-chapter-map"')) {
+    html = html.replace(/(<article class="[^"]*fulltext-reader[^"]*" id="woek-main-fulltext">)/, `<!-- reference-ux:start -->${chapterMap}<!-- reference-ux:end -->
+      $1`);
+  }
   html = html.replace(/<details class="technical-meta">[\s\S]*?<\/details>/g, "");
   html = html.replace(
     /<div class="version-summary-note"><p>Absätze: ([^<]+)<\/p><\/div>/,

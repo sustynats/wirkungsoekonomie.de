@@ -36,7 +36,7 @@ terms:
     usageNote: "Benchmarks sind Hilfsmittel, keine automatische Zielerreichung."
     doNotConfuseWith: ["Scorecard", "FinalScore"]
     synonyms: ["Vergleichswert", "Schwellenwert"]
-    relatedTerms: ["scorecard", "finalscore", "woek-id"]
+    relatedTerms: ["scorecard", "finalscore", "woek-id", "wirkungscontrolling"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Benchmark als prüfbaren Vergleichspunkt verwenden."
@@ -197,7 +197,7 @@ terms:
     usageNote: "Nicht als beliebigen Durchschnitt darstellen."
     doNotConfuseWith: ["Netto-Wirkung", "Scorecard"]
     synonyms: []
-    relatedTerms: ["scorecard", "reverse-merit-order", "netto-wirkung"]
+    relatedTerms: ["scorecard", "reverse-merit-order", "netto-wirkung", "wirkungscontrolling"]
     relatedDocuments: []
     examples: []
     preferredUsage: "FinalScore als Ergebnis mit Schutzlogik verwenden."
@@ -542,7 +542,7 @@ terms:
     usageNote: "Nicht mit nachgewiesener Wirkung gleichsetzen."
     doNotConfuseWith: ["Wirkung", "Wirkungspotenzial"]
     synonyms: []
-    relatedTerms: ["wirkungspotenzial", "wirkungspfad", "wirkungsnetz"]
+    relatedTerms: ["wirkungspotenzial", "wirkungspfad", "wirkungsnetz", "frame", "framing", "reframing"]
     relatedDocuments: ["wirkungsraeume-gestalten-hosting-v1-0"]
     examples: []
     preferredUsage: "Bei Medien, Sprache, Kultur und Öffentlichkeit nutzen."
@@ -550,7 +550,76 @@ terms:
     reviewStatus: "approved"
     glossaryOrderKey: "resonanzraum"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-06-10"
+  - termId: frame
+    canonicalLabel: "Frame"
+    slug: "frame"
+    status: "anschlussbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussbegriffe; Präzisierungsbegriffe; Sprache und Medien"
+    shortDefinition: "Ein Frame ist ein Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird."
+    hoverDefinition: "Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird."
+    longDefinition: "Ein Frame bestimmt mit, was als Problem erscheint, welche Ursachen sichtbar werden, wem Verantwortung zugeschrieben wird, welche Emotionen aktiviert werden und welche Lösungen plausibel wirken."
+    usageNote: "Ein Frame ist noch keine Wirkung. Bei Sprache, Medien und Narrativen ist meist präzise von Wirkungspotenzial, Resonanzraum, Wirkungspfad oder Wirkungsrisiko zu sprechen."
+    doNotConfuseWith: ["Meinung", "Wirkung", "Wirkungsnachweis", "Manipulation"]
+    synonyms: ["Deutungsrahmen"]
+    relatedTerms: ["framing", "reframing", "resonanzraum", "wirkungspotenzial", "wirkungspfad", "wirkungsrisiko"]
+    relatedDocuments: ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"]
+    examples: ["Klimaschutz als Kostenproblem öffnet einen anderen Deutungsrahmen als Klimaschutz als Schutz vor Folgekosten."]
+    preferredUsage: "Als Analysebegriff für Deutungs- und Bewertungsrahmen verwenden; keine Absichten unterstellen und nicht vorschnell Wirkung behaupten."
+    deprecatedUsage: ["Frame als bloßes Schlagwort ohne Wirkungsanalyse", "Frame mit Wirkung verwechseln"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "frame"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-06-10"
+  - termId: framing
+    canonicalLabel: "Framing"
+    slug: "framing"
+    status: "anschlussbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Anschlussbegriffe; Präzisierungsbegriffe; Sprache und Medien"
+    shortDefinition: "Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens."
+    hoverDefinition: "Setzen oder Verstärken eines Deutungsrahmens durch Sprache, Bilder, Zahlen, Tonalität oder Wiederholung."
+    longDefinition: "Framing geschieht durch Begriffe, Metaphern, Bilder, Zahlen, Tonalität, Wiederholung, Auswahl von Fakten, Reihenfolge der Darstellung und die Frage, welche Perspektive als selbstverständlich erscheint."
+    usageNote: "Framing ist nicht automatisch Manipulation. Aufklärendes Framing macht Zusammenhänge, blinde Flecken und Wirkpfade sichtbarer. Manipulatives Framing verengt Wirklichkeit, verdeckt Verantwortung, erzeugt Feindbilder oder verschiebt Aufmerksamkeit von relevanten Wirkungen weg."
+    doNotConfuseWith: ["Frame", "Wirkungsnachweis", "Manipulation", "bloßes Wording"]
+    synonyms: ["Rahmung", "Deutungsrahmung", "Framinganalyse"]
+    relatedTerms: ["frame", "reframing", "tonalitaet", "narrativ", "resonanzraum", "wirkungspotenzial", "wirkungspfad", "wirkungsrisiko"]
+    relatedDocuments: ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"]
+    examples: ["Dieselbe Zahl kann als Kosten, Schutz, Risiko, Investition oder Folgekostenvermeidung gerahmt werden."]
+    preferredUsage: "Framing als Prozess der Rahmung beschreiben und zwischen Deutungsrahmen, Wirkungspotenzial, Wirkpfad und Wirkungsnachweis unterscheiden."
+    deprecatedUsage: ["Framing als pauschalen Manipulationsvorwurf verwenden", "Framing beweist Wirkung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "framing"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-06-10"
+  - termId: reframing
+    canonicalLabel: "Reframing"
+    slug: "reframing"
+    status: "präzisierungsbegriff"
+    version: "1.1"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md; Nachtrag Frame, Framing, Reframing 2026-06-10"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+    sourceSection: "Präzisierungsbegriffe; methodische WÖk-Begriffe"
+    shortDefinition: "Reframing ist die bewusste Veränderung des Deutungs- und Bewertungsrahmens."
+    hoverDefinition: "Bewusste Verschiebung des Deutungs- und Bewertungsrahmens; in der WÖk besonders vom Kapital-, Kosten- oder Outputmaßstab zur Wirkungslogik."
+    longDefinition: "In der Wirkungsökonomie bedeutet Reframing vor allem, den Bewertungsmaßstab zu verschieben: weg von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung für Mensch, Planet und Demokratie."
+    usageNote: "Reframing ist nicht Schönfärberei, Propaganda oder Manipulation. Wirkungsorientiertes Reframing soll Wirklichkeit klären, blinde Flecken sichtbar machen, Wirkungspfade benennen und demokratische Handlungsfähigkeit erhöhen."
+    doNotConfuseWith: ["Beschönigung", "Manipulation", "PR-Wording", "Wirkungsnachweis"]
+    synonyms: ["wirkungsorientiertes Reframing", "Bewertungsmaßstab verschieben", "Bewertungsmassstab verschieben"]
+    relatedTerms: ["frame", "framing", "wirkungsblindheit", "wirkungswahrheit", "wirkungsrueckkopplung", "positive-netto-wirkung", "wirkungspfad", "resonanzraum", "wirkungspotenzial", "wirkungsrisiko"]
+    relatedDocuments: ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung"]
+    examples: ["Aus Sozialausgaben wird nicht einfach ein schöneres Wort, sondern ein anderer Bewertungsrahmen: Stabilitätsinvestitionen macht sichtbar, dass soziale Sicherung Folgekosten verhindert, Teilhabe ermöglicht und gesellschaftliche Resilienz stärkt."]
+    preferredUsage: "Reframing als Maßstabsverschiebung nutzen: von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung."
+    deprecatedUsage: ["Reframing als Schönfärberei verwenden", "Zielkonflikte wegformulieren", "Gegner durch Reframing entwürdigen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "reframing"
+    firstApprovedIn: "2026.2"
+    lastUpdated: "2026-06-10"
   - termId: reverse-merit-order
     canonicalLabel: "Reverse Merit Order"
     slug: "reverse-merit-order"
@@ -588,7 +657,7 @@ terms:
     usageNote: "Nicht als bloße Checkliste ohne Bewertungslogik verwenden."
     doNotConfuseWith: ["Dashboard", "Reporting"]
     synonyms: []
-    relatedTerms: ["woek-id", "benchmark", "finalscore"]
+    relatedTerms: ["woek-id", "benchmark", "finalscore", "wirkungscontrolling"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Scorecard als methodisches Bewertungsinstrument."
@@ -611,7 +680,7 @@ terms:
     usageNote: "Nicht als automatischer Wertverlust ab einem Stichtag darstellen."
     doNotConfuseWith: ["Wertkorrektur", "Abschreibung", "gesetzlicher Stichtag"]
     synonyms: ["Stranded Asset", "gestrandete Vermögenswerte"]
-    relatedTerms: ["wirkungsrisiko", "nachhaltigkeit", "transitionsrisiko", "versicherbarkeit", "kapitalzugang"]
+    relatedTerms: ["wirkungsrisiko", "nachhaltigkeit", "transitionsrisiko", "versicherbarkeit", "kapitalzugang", "wirkungsbedingte-stranded-assets", "strandinggefaehrdeter-kredit", "scheinkapital", "wirkungsresilienz", "wirkungsrueckkopplung"]
     relatedDocuments: ["wp-wohnungsmarkt", "stranded-assets-gebaeudebestand"]
     examples: ["fossile Infrastruktur", "unsanierte Gebäude", "nicht versicherbare Standorte"]
     preferredUsage: "Als finanzielle Rückkehr verdrängter Wirkung verwenden."
@@ -620,6 +689,213 @@ terms:
     glossaryOrderKey: "stranded assets"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
+  - termId: wirkungsbelasteter-kredit
+    canonicalLabel: "Wirkungsbelasteter Kredit"
+    slug: "wirkungsbelasteter-kredit"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung oder relevantes Wirkungsrisiko enthält."
+    hoverDefinition: "Wirkungsbelastete Kredite sind nicht automatisch notleidend; sie enthalten negative Wirkung oder Wirkungsrisiken, die später finanziell relevant werden können."
+    longDefinition: "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung auf Mensch, Planet oder Demokratie erzeugt oder relevante Wirkungsrisiken enthält. Dazu zählen etwa Kredite an Unternehmen mit ausbeuterischen Lieferketten, hoher CO₂-Abhängigkeit, Wasserstress, Gesundheitsrisiken, Datenintransparenz oder demokratiegefährdenden Geschäftsmodellen. Der Kredit kann heute vollständig bedient werden und dennoch ein hohes Zukunftsrisiko enthalten."
+    usageNote: "Als Oberbegriff für wirkungsbezogene Kreditrisiken verwenden; nicht automatisch als Ausfall, Zahlungsschwierigkeit oder moralische Schuldformel darstellen."
+    doNotConfuseWith: ["Notleidender Kredit", "schlechtes ESG-Rating", "Stranded Asset"]
+    synonyms: ["wirkungsbelastete Finanzierung", "impact-burdened loan", "brown loan", "brauner Kredit"]
+    relatedTerms: ["lieferkettenbelasteter-kredit", "wirkungsrisiko", "wirkungsrisikoposition", "strandinggefaehrdeter-kredit", "wirkungskredit", "scorecard", "woek-id"]
+    relatedDocuments: ["wirkungsoekonomie-lieferkette", "standardwerk-neue-ordnung-wohlstands-2026"]
+    examples: ["Kredit an ein Unternehmen mit ausbeuterischer Lieferkette", "Finanzierung eines Geschäftsmodells mit hoher CO₂-Abhängigkeit", "Kredit mit Sicherheiten, deren Nutzbarkeit durch Wirkungsrisiken sinkt"]
+    preferredUsage: "Wirkungsbelasteter Kredit als breiten WÖk-Oberbegriff nutzen."
+    deprecatedUsage: ["brauner Kredit als WÖk-Hauptbegriff", "Kredit automatisch notleidend nennen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsbelasteter kredit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: lieferkettenbelasteter-kredit
+    canonicalLabel: "Lieferkettenbelasteter Kredit"
+    slug: "lieferkettenbelasteter-kredit"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in Vorleistungen oder Lieferketten entsteht."
+    hoverDefinition: "Lieferkettenbelastete Kredite finanzieren Geschäftsmodelle, deren Risiken aus Kinderarbeit, Wasserstress, Chemikalien, Entwaldung, CO₂-Intensität oder fehlender Datenqualität entstehen können."
+    longDefinition: "Ein lieferkettenbelasteter Kredit ist ein wirkungsbelasteter Kredit, bei dem die negative Wirkung vor allem in der Lieferkette entsteht. Beispiele sind Kredite an Unternehmen, deren Produkte auf Kinderarbeit, Niedriglöhnen, gefährlichen Chemikalien, Entwaldung, Wasserstress, hoher CO₂-Intensität oder fehlender Datenqualität beruhen. In der WÖk werden solche Risiken über Scorecards, WÖk-IDs, Produktpässe, Vorsteuerlogik und Kapitalbewertung sichtbar."
+    usageNote: "Als spezifische Unterform des wirkungsbelasteten Kredits verwenden, wenn die Belastung aus Vorleistungen, Lieferketten oder importierten Wirkungen stammt."
+    doNotConfuseWith: ["Wirkungsbelasteter Kredit", "Lieferkettenbericht", "notleidender Kredit"]
+    synonyms: ["lieferkettenbelastete Finanzierung", "supply-chain-burdened loan", "Kredit mit schlechter Lieferkette"]
+    relatedTerms: ["wirkungsbelasteter-kredit", "digitaler-produktpass", "scorecard", "woek-id", "wirkungstraeger", "wirkungsdaten", "wirkungsrisiko"]
+    relatedDocuments: ["wirkungsoekonomie-lieferkette", "standardwerk-neue-ordnung-wohlstands-2026"]
+    examples: ["Kredit an ein Unternehmen mit entwaldungsnahen Vorprodukten", "Finanzierung einer Lieferkette mit Wasserstress und Niedriglöhnen"]
+    preferredUsage: "Für Kreditrisiken verwenden, deren negative Wirkung konkret aus Lieferketten stammt."
+    deprecatedUsage: ["jede Lieferkette pauschal als negativ behandeln"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "lieferkettenbelasteter kredit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: wirkungsrisikoposition
+    canonicalLabel: "Wirkungsrisikoposition"
+    slug: "wirkungsrisikoposition"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Eine Wirkungsrisikoposition beschreibt eine Portfolio-, Kredit-, Versicherungs- oder Kapitalposition, die negativen Wirkungen oder Wirkungsrisiken ausgesetzt ist."
+    hoverDefinition: "Wirkungsrisikoposition ist die Finanzsicht auf negative Wirkungsexposure: Risiken können über Regulierung, Märkte, Versicherbarkeit oder Reputation zurückkehren."
+    longDefinition: "Eine Wirkungsrisikoposition ist eine Risikoposition in Kreditbüchern, Portfolios, Fonds oder Versicherungsbeständen, die negativen Wirkungen oder relevanten Wirkungsrisiken ausgesetzt ist. Sie beschreibt nicht die moralische Qualität einer Person, sondern die Risikolage einer finanzierten Tätigkeit, eines Geschäftsmodells, einer Sicherheit oder Lieferkette."
+    usageNote: "Für Banken, Fonds und Versicherungen verwenden; Exposure, Risiko und eingetretenen Schaden getrennt halten."
+    doNotConfuseWith: ["Wirkung", "notleidender Kredit", "Personenbewertung"]
+    synonyms: ["negative Wirkungsexposure", "Wirkungsexposure", "impact exposure", "Wirkungsrisiko-Position"]
+    relatedTerms: ["wirkungsrisiko", "wirkungsbelasteter-kredit", "strandinggefaehrdeter-kredit", "stranded-assets", "wirkungsdaten", "wirkungsrueckkopplung"]
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026", "wirkungsoekonomie-lieferkette"]
+    examples: ["Portfolioanteil mit hoher Lieferkettenbelastung", "Versicherungsbestand mit steigenden Klimarisiken", "Kreditbuch mit nicht geprüfter Datenqualität"]
+    preferredUsage: "Als Portfolio- und Risikobegriff verwenden."
+    deprecatedUsage: ["Menschen nach Wirkungsexposure bewerten"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsrisikoposition"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: strandinggefaehrdeter-kredit
+    canonicalLabel: "Strandinggefährdeter Kredit"
+    slug: "strandinggefaehrdeter-kredit"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheit oder Geschäftsgrundlage durch Wirkungs-, Regulierungs-, Markt- oder Versicherungsrisiken gefährdet werden kann."
+    hoverDefinition: "Strandinggefährdet heißt: noch kein Ausfall, aber Wirkung, Regulierung, Markt, Versicherung oder Reputation können den Kredit finanziell unter Druck setzen."
+    longDefinition: "Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückzahlung, Sicherheiten oder wirtschaftliche Grundlage gefährdet sind, weil der zugrunde liegende Vermögenswert oder das Geschäftsmodell unter einer wirkungsorientierten Ordnung an Tragfähigkeit verliert. Das kann durch Klima-, Sozial-, Lieferketten-, Digital-, Demokratie-, Versicherungs- oder Reputationsrisiken entstehen."
+    usageNote: "Nur verwenden, wenn aus Wirkungsrisiken ein plausibles Finanzrisiko für Rückzahlung, Sicherheiten, Kapitalzugang oder Geschäftsmodell entstehen kann."
+    doNotConfuseWith: ["Wirkungsbelasteter Kredit", "notleidender Kredit", "gestrandeter Kredit"]
+    synonyms: ["strandinggefährdete Finanzierung", "strandinggefährdetes Kreditengagement", "at-risk impact loan"]
+    relatedTerms: ["wirkungsbelasteter-kredit", "gestrandeter-kredit", "wirkungsbedingte-stranded-assets", "stranded-assets", "wirkungsrisikoposition"]
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026", "wirkungsoekonomie-lieferkette"]
+    examples: ["Kredit an ein Geschäftsmodell mit künftig nicht versicherbarer Lieferkette", "Immobilienkredit mit stark sinkender Nutzbarkeit durch Wirkungsrisiken"]
+    preferredUsage: "Zwischen wirkungsbelastet und tatsächlich gestrandet sauber unterscheiden."
+    deprecatedUsage: ["jeden negativen Kredit sofort gestrandet nennen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "strandinggefährdeter kredit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: gestrandeter-kredit
+    canonicalLabel: "Gestrandeter Kredit / Stranded Loan"
+    slug: "gestrandeter-kredit"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Ein gestrandeter Kredit ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich kippt, weil das finanzierte Geschäftsmodell oder der Vermögenswert an Tragfähigkeit verliert."
+    hoverDefinition: "Stranded Loan beschreibt den eingetretenen Fall: Der Kredit wird selbst zum problematischen Finanzwert, weil Cashflows, Sicherheiten oder Geschäftsmodell wegbrechen."
+    longDefinition: "Ein gestrandeter Kredit oder Stranded Loan ist ein Kredit, dessen Wert, Rückzahlung oder Sicherheit tatsächlich beeinträchtigt wird, weil der zugrunde liegende Vermögenswert, die Lieferkette oder das Geschäftsmodell unter Wirkungs-, Regulierungs-, Versicherungs-, Reputations- oder Marktdruck an Tragfähigkeit verliert."
+    usageNote: "Als eingetretenen oder konkret absehbaren Finanzwertverlust verwenden; nicht für jedes Wirkungsrisiko nutzen."
+    doNotConfuseWith: ["strandinggefährdeter Kredit", "wirkungsbelasteter Kredit", "schlechtes ESG-Rating"]
+    synonyms: ["Stranded Loan", "gestrandete Finanzierung", "stranded credit"]
+    relatedTerms: ["strandinggefaehrdeter-kredit", "wirkungsbedingte-stranded-assets", "stranded-assets", "scheinkapital", "wirkungsrisiko"]
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026"]
+    examples: ["Kredit, dessen Sicherheiten durch nicht mehr tragfähige Nutzung massiv entwertet werden"]
+    preferredUsage: "Als präzisen Anschlussbegriff erklären, wenn ein Kredit tatsächlich zum problematischen Finanzwert geworden ist."
+    deprecatedUsage: ["als Synonym für alle schlechten Kredite"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "gestrandeter kredit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: wirkungsbedingte-stranded-assets
+    canonicalLabel: "Wirkungsbedingte Stranded Assets"
+    slug: "wirkungsbedingte-stranded-assets"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht."
+    hoverDefinition: "Nicht nur fossile Anlagen können stranden; auch soziale, digitale, demokratische, gesundheitliche oder lieferkettenbezogene Wirkung kann Kapitalwerte kippen lassen."
+    longDefinition: "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Die WÖk erweitert damit den klassischen Stranded-Asset-Begriff: Nicht nur fossile Anlagen können stranden, sondern auch Geschäftsmodelle mit Ausbeutung, Datenintransparenz, Vertrauenszerstörung, Gesundheitsbelastung, Wasserstress oder demokratischer Destabilisierung."
+    usageNote: "Als WÖk-Erweiterung des klassischen Stranded-Asset-Begriffs verwenden; Wirkungskategorie und Entwertungsmechanismus sichtbar machen."
+    doNotConfuseWith: ["Stranded Assets", "schlechtes ESG-Rating", "allgemeine Wertschwankung"]
+    synonyms: ["wirkungsbedingtes Stranded Asset", "impact-driven stranded asset", "wirkungsbedingte Vermögensentwertung"]
+    relatedTerms: ["stranded-assets", "scheinkapital", "strandinggefaehrdeter-kredit", "gestrandeter-kredit", "wirkungsrisiko"]
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026", "wirkungsoekonomie-lieferkette"]
+    examples: ["Wertverlust durch nicht akzeptierte Lieferkettenwirkung", "Entwertung durch nicht mehr versicherbare Standorte", "Geschäftsmodell mit demokratischer Destabilisierung als Kapitalrisiko"]
+    preferredUsage: "Als Wirkungsökonomie-spezifische Präzisierung von Stranded Assets verwenden."
+    deprecatedUsage: ["Stranded Asset nur fossil verstehen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsbedingte stranded assets"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: scheinkapital
+    canonicalLabel: "Scheinkapital"
+    slug: "scheinkapital"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht."
+    hoverDefinition: "Scheinkapital wirkt stabil, solange Schäden ausgelagert bleiben; kehrt Wirkung in Preise, Steuern, Kapitalzugang oder Versicherbarkeit zurück, kann der Wert kippen."
+    longDefinition: "Scheinkapital bezeichnet Vermögenswerte, deren heutiger Wert auf unbepreisten Schäden, fossilen Pfaden, Ausbeutung, Verknappung, Datenmacht oder künftigen Risiken beruht. Sobald Wirkung in Preise, Steuern, Kapitalzugang und Versicherbarkeit zurückkehrt, können solche Werte zu Stranded Assets, Kreditausfällen oder Versicherungsrisiken werden."
+    usageNote: "Als kritischen Kapitalbegriff verwenden; nicht mit legalem Eigenkapital, Bilanzkapital oder Scheingewinn gleichsetzen."
+    doNotConfuseWith: ["Eigenkapital", "Finanzkapital", "Stranded Assets"]
+    synonyms: ["scheinbar stabiles Kapital", "wirkungsloses Scheinkapital", "unbepreistes Risikokapital"]
+    relatedTerms: ["wirkungsbedingte-stranded-assets", "stranded-assets", "wirkungsrisiko", "wirkungsfonds", "wirkungsrueckkopplung"]
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026"]
+    examples: ["Vermögenswert, dessen Wert auf ausgelagerten Schäden beruht", "Portfolio, das künftige Versicherungs- oder Regulierungsrisiken nicht einpreist"]
+    preferredUsage: "Scheinkapital für scheinbar stabile Werte mit verdrängten Wirkungsrisiken verwenden."
+    deprecatedUsage: ["als Bilanz- oder Rechtsbegriff verwenden"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "scheinkapital"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: wirkungskonversionskredit
+    canonicalLabel: "Wirkungskonversionskredit"
+    slug: "wirkungskonversionskredit"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Ein Wirkungskonversionskredit finanziert den Umbau belasteter Geschäftsmodelle, Lieferketten oder Vermögenswerte in resilientere und wirkungsärmere oder positive Wirkungspfade."
+    hoverDefinition: "Wirkungskonversionskredite schreiben negative Wirkung nicht fort, sondern finanzieren den Übergang zu faireren, resilienteren und positiveren Lieferketten oder Geschäftsmodellen."
+    longDefinition: "Ein Wirkungskonversionskredit ist ein Kredit, der nicht negative Wirkung fortschreibt, sondern den Umbau zu fairen, resilienten, datenfähigen und positiven Lieferketten, Produkten, Standorten oder Geschäftsmodellen finanziert. Er kann Teil einer Transformationsfinanzierung sein und braucht klare Wirkungspfade, Datenqualität, Schutzlinien und Korrekturmechanismen."
+    usageNote: "Nur verwenden, wenn der Kredit an überprüfbare Transformations- und Wirkungsziele gekoppelt ist; nicht als Marketingetikett für normale Refinanzierung nutzen."
+    doNotConfuseWith: ["Wirkungskredit", "Green Loan", "Umschuldung ohne Wirkungsumbau"]
+    synonyms: ["Transformationskredit nach Wirkung", "Wirkungsumbaukredit", "impact conversion loan"]
+    relatedTerms: ["wirkungskredit", "wirkungsbelasteter-kredit", "lieferkettenbelasteter-kredit", "transformationswirkung", "scorecard", "wirkungsdaten"]
+    relatedDocuments: ["wirkungsoekonomie-lieferkette", "standardwerk-neue-ordnung-wohlstands-2026"]
+    examples: ["Kredit zur Umstellung auf faire Lieferketten", "Finanzierung zur Reduktion wasser- und chemikalienbelasteter Vorprodukte"]
+    preferredUsage: "Für Kredite verwenden, die belastete Wirkungspfade tatsächlich umbauen."
+    deprecatedUsage: ["Konversion ohne messbaren Wirkungspfad behaupten"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungskonversionskredit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: wirkungskredit
+    canonicalLabel: "Wirkungskredit / W-Kredit"
+    slug: "wirkungskredit"
+    status: "arbeitsbegriff"
+    version: "1.0"
+    source: "Glossar-Ergänzung Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceDocument: "Anlage Finanzsystem, Kapital & Lieferkettenrisiken"
+    sourceSection: "Finanzsystem, Kapital & Lieferkettenrisiken"
+    shortDefinition: "Ein Wirkungskredit ist ein Kredit, dessen Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden."
+    hoverDefinition: "Wirkungskredite verknüpfen Finanzierung mit Wirkung: positive Netto-Wirkung kann Kapitalzugang verbessern, negative Wirkung kann Finanzierung verteuern oder Umbau verlangen."
+    longDefinition: "Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Im WÖk-Systemmodell können Wirkungskredite niedrigere Finanzierungskosten für positive Wirkung, höhere Risikokosten für negative Wirkung oder gezielte Konversionspfade für belastete Geschäftsmodelle abbilden. Sie ersetzen keine Kreditprüfung, sondern erweitern sie um Wirkungsdaten und Rückkopplungslogik."
+    usageNote: "Als modellhaften Oberbegriff verwenden; keine Rechts-, Förder- oder Kreditberatung daraus ableiten."
+    doNotConfuseWith: ["Wirkungskonversionskredit", "Subvention", "ESG-Kredit"]
+    synonyms: ["W-Kredit", "Wirkungsfinanzierung", "impact-linked loan", "wirkungsgestützter Kredit"]
+    relatedTerms: ["wirkungskonversionskredit", "wirkungsbelasteter-kredit", "wirkungsrisiko", "positive-netto-wirkung", "wirkungsrueckkopplung", "scorecard"]
+    relatedDocuments: ["standardwerk-neue-ordnung-wohlstands-2026", "wirkungsoekonomie-lieferkette"]
+    examples: ["Kredit mit wirkungsdifferenzierten Konditionen", "Finanzierung mit Scorecard- und Datenqualitätsprüfung"]
+    preferredUsage: "Als Oberbegriff für wirkungsdifferenzierte Kreditlogik verwenden."
+    deprecatedUsage: ["als Förderzusage darstellen", "als amtliche Kreditkategorie darstellen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungskredit"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
   - termId: wirkungsvermietung
     canonicalLabel: "Wirkungsvermietung"
     slug: "wirkungsvermietung"
@@ -1027,7 +1303,7 @@ terms:
     usageNote: "Nicht als moralischen Vorwurf, sondern als Systembefund nutzen."
     doNotConfuseWith: ["Unwissen", "Absicht"]
     synonyms: ["wirkungsblind"]
-    relatedTerms: ["wirkungswahrheit", "wirkungsdatenraum", "wirkungsrückkopplung"]
+    relatedTerms: ["wirkungswahrheit", "wirkungsdatenraum", "wirkungsrückkopplung", "reframing"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Als strukturelles Wahrnehmungsproblem beschreiben."
@@ -1428,7 +1704,7 @@ terms:
     usageNote: "Bei Medien und Sprache oft Wirkungspotenzial, nicht Wirkung."
     doNotConfuseWith: ["Wirkung", "Kausalnachweis"]
     synonyms: ["Wirkpfad"]
-    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungsnetz"]
+    relatedTerms: ["wirkungspotenzial", "wirkmechanismus", "wirkungsnetz", "framing", "reframing"]
     relatedDocuments: []
     examples: []
     preferredUsage: "Wirkungspfad als analytische Pfadbeschreibung verwenden."
@@ -1796,8 +2072,8 @@ terms:
     usageNote: "Schreibweise WÖk-ID verwenden, sofern Kontext eindeutig."
     doNotConfuseWith: ["NACE", "Produkt-ID"]
     synonyms: ["WOK-ID", "Wok ID", "WÖK ID"]
-    relatedTerms: ["scorecard", "benchmark", "wirkungsdatenraum"]
-    relatedDocuments: ["woek-master-items"]
+    relatedTerms: ["scorecard", "benchmark", "wirkungsdatenraum", "wirkungscontrolling"]
+    relatedDocuments: ["woek-master-items-register"]
     examples: []
     preferredUsage: "WÖk-ID als Registerkennung verwenden."
     deprecatedUsage: ["WOK-ID"]
@@ -2012,3 +2288,164 @@ terms:
     glossaryOrderKey: "lokale energie als wirkungsinfrastruktur"
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-06-01"
+  - termId: sozialstaats-suendenbock
+    canonicalLabel: "Sozialstaats-Sündenbock"
+    slug: "sozialstaats-suendenbock"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Narrativ, das reale Sozialausgaben oder Missbrauchsfälle nutzt, um eine ganze Gruppe als Belastung oder Gefahr für den Sozialstaat darzustellen."
+    hoverDefinition: "Der wahre Kern sind reale Kosten. Der Denkfehler ist Gruppenschuld."
+    longDefinition: "Sozialstaats-Sündenbock beschreibt ein Narrativ, das reale Sozialausgaben, kommunale Belastungen oder Missbrauchsfälle nutzt, um eine ganze Gruppe als Belastung oder Gefahr für den Sozialstaat darzustellen."
+    usageNote: "Nur als analysierten Frame verwenden, nicht als Pauschalbezeichnung für Menschen."
+    doNotConfuseWith: ["Sozialstaatsanalyse", "Sozialleistungsmissbrauch", "kommunale Integrationskapazität"]
+    synonyms: ["Sozialstaats-Suendenbock", "Sündenbocklogik Sozialstaat"]
+    relatedTerms: ["sündenbocknarrativ", "integration-als-infrastruktur", "entmenschlichender-kampfbegriff"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Reale Kosten anerkennen und Gruppenschuld trennen."
+    deprecatedUsage: ["Menschen als Kostenstelle framen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "sozialstaats suendenbock"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: nie-eingezahlt-narrativ
+    canonicalLabel: "Nie-eingezahlt-Narrativ"
+    slug: "nie-eingezahlt-narrativ"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Frame, der Sozialleistungen nur an vorherige individuelle Einzahlung bindet und den Sozialstaat als gemeinsame Risikoinfrastruktur verkürzt."
+    hoverDefinition: "Einzahlung ist wichtig. Aber der Sozialstaat ist mehr als ein Sparkonto."
+    longDefinition: "Das Nie-eingezahlt-Narrativ verkürzt Sozialstaat auf eine individuelle Sparkonto-Logik und blendet aus, dass Sozialstaat auch Schutz-, Integrations-, Familien-, Gesundheits- und Stabilitätsinfrastruktur ist."
+    usageNote: "Beitragslogik fair anerkennen, aber Menschen nicht auf bisherige Einzahlung reduzieren."
+    doNotConfuseWith: ["Beitragsfinanzierung", "Versicherungsprinzip", "Steuerfinanzierung"]
+    synonyms: ["Nie eingezahlt", "Sozialstaat als Sparkonto"]
+    relatedTerms: ["sozialstaats-suendenbock", "integration-als-infrastruktur"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Als verkürzten Sozialstaatsframe analysieren."
+    deprecatedUsage: ["Einzahlung als Menschenwert behandeln"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "nie eingezahlt narrativ"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: integration-als-infrastruktur
+    canonicalLabel: "Integration als Infrastruktur"
+    slug: "integration-als-infrastruktur"
+    status: "führender-begriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Wirkungsökonomische Sicht auf Integration als Zusammenspiel von Sprache, Bildung, Arbeit, Wohnen, Gesundheit, Rechten, Schutz, Anerkennung und Zugehörigkeit."
+    hoverDefinition: "Integration gelingt nicht durch Appelle, sondern durch funktionierende Wirkungsräume."
+    longDefinition: "Integration als Infrastruktur beschreibt Integration als System aus Sprache, Bildung, Arbeit, Wohnen, Gesundheit, Rechten, Schutz, Anerkennung, Kinderbetreuung, Verwaltung und Zugehörigkeit."
+    usageNote: "Bei Migration nicht nur individuelle Anpassung, sondern Infrastruktur, Rechte und Wirkungsräume betrachten."
+    doNotConfuseWith: ["Assimilation", "Einzelmotivation", "Integrationsappell"]
+    synonyms: ["Integrationsinfrastruktur", "Integration als Wirkungsarchitektur"]
+    relatedTerms: ["kommunale-integrationskapazitaet", "qualifikationsverlust", "sozialstaats-suendenbock"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: ["Sprache plus Arbeit", "Anerkennung plus Brückenqualifikation", "Wohnen plus Schule plus Verwaltung"]
+    preferredUsage: "Integration als planbare Wirkungsarchitektur beschreiben."
+    deprecatedUsage: ["Integration nur als individuelles Verhalten darstellen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "integration als infrastruktur"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: sozialtourismus-frame
+    canonicalLabel: "Sozialtourismus-Frame"
+    slug: "sozialtourismus-frame"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Politischer Kampfbegriff, der Migration pauschal als Einwanderung in Sozialleistungen deutet."
+    hoverDefinition: "Nur als analysierter Frame verwenden, nicht als neutrale Beschreibung."
+    longDefinition: "Der Sozialtourismus-Frame deutet Mobilität oder Migration pauschal als Missbrauch von Sozialleistungen und vermischt dabei häufig Rechtsstatus, Freizügigkeit, Arbeitsmarkt, Familienlage und Einzelfälle."
+    usageNote: "Kampfbegriff markieren und dann Rechtsstatus, Daten und Ursachen trennen."
+    doNotConfuseWith: ["EU-Freizügigkeit", "Sozialleistungsmissbrauch", "Arbeitsmigration"]
+    synonyms: ["Sozialtourismus", "Einwanderung in Sozialsysteme"]
+    relatedTerms: ["sozialstaats-suendenbock", "nie-eingezahlt-narrativ", "entmenschlichender-kampfbegriff"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Als Frame analysieren, nicht als neutrale Kategorie."
+    deprecatedUsage: ["Sozialtourismus als sachliche Gruppenbeschreibung"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "sozialtourismus frame"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: entmenschlichender-kampfbegriff
+    canonicalLabel: "Entmenschlichender Kampfbegriff"
+    slug: "entmenschlichender-kampfbegriff"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Begriff, der Menschen nicht als Personen mit Rechten und Würde beschreibt, sondern als Schädlinge, Masse, Last oder Bedrohung."
+    hoverDefinition: "Solche Begriffe ersetzen Analyse durch Abwertung."
+    longDefinition: "Entmenschlichende Kampfbegriffe ersetzen Analyse durch Abwertung. Sie reduzieren Menschen auf Last, Masse, Gefahr oder Schädlichkeit und senken dadurch die Bereitschaft zu rechtsstaatlicher, menschenwürdiger Problemlösung."
+    usageNote: "Nicht amplifizieren; nur markieren, einordnen und zum Lösungspfad zurückführen."
+    doNotConfuseWith: ["harte Kritik", "konkrete Missbrauchsanalyse", "Rechtsdurchsetzung"]
+    synonyms: ["Abwertungsbegriff", "dehumanisierender Frame"]
+    relatedTerms: ["sozialstaats-suendenbock", "sprachlicher-trigger", "feindbild"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: []
+    preferredUsage: "Begriff als Mechanismus benennen und nicht als Kategorie übernehmen."
+    deprecatedUsage: ["Kampfbegriff als Überschrift verwenden"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "entmenschlichender kampfbegriff"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: kommunale-integrationskapazitaet
+    canonicalLabel: "Kommunale Integrationskapazität"
+    slug: "kommunale-integrationskapazitaet"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Fähigkeit einer Kommune, Unterbringung, Sprache, Bildung, Gesundheit, Wohnen, Arbeit, Verwaltung und Begegnung wirksam zu organisieren."
+    hoverDefinition: "Kommunale Überlastung ist ein Infrastrukturproblem, kein Beweis für Gruppenschuld."
+    longDefinition: "Kommunale Integrationskapazität beschreibt die Fähigkeit einer Kommune, Aufnahme, Unterbringung, Sprache, Bildung, Gesundheit, Wohnen, Arbeit, Verwaltung und Begegnung so zu organisieren, dass Teilhabe und Zusammenhalt entstehen."
+    usageNote: "Kommunale Belastungen als Wirkungsraum analysieren, nicht ethnisieren."
+    doNotConfuseWith: ["kommunale Überforderung", "Migrationsquote", "Sozialkosten"]
+    synonyms: ["Integrationskapazität Kommune", "kommunale Aufnahmekapazität"]
+    relatedTerms: ["integration-als-infrastruktur", "wirkungshaushalt", "soziale-infrastruktur"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: ["Kitas, Schulen, Wohnraum, Verwaltung, Sprachkurse, Gesundheitsversorgung"]
+    preferredUsage: "Als Infrastruktur- und Finanzierungsfrage kommunaler Wirkung verwenden."
+    deprecatedUsage: ["Kommunale Belastung als Gruppenschuld darstellen"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "kommunale integrationskapazitaet"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"
+  - termId: qualifikationsverlust
+    canonicalLabel: "Qualifikationsverlust"
+    slug: "qualifikationsverlust"
+    status: "anschlussbegriff"
+    version: "1.0"
+    source: "Wirkungsradar Migration Sozialstaat v1"
+    sourceDocument: "migration-social-state-v1"
+    sourceSection: "Wirkungsradar"
+    shortDefinition: "Wirkungsverlust, wenn Menschen unterhalb ihrer Fähigkeiten arbeiten, weil Abschlüsse nicht anerkannt, Sprache nicht gefördert oder Verfahren blockiert sind."
+    hoverDefinition: "Ein Ingenieur als Hilfskraft ist keine erfolgreiche Integration, sondern ungenutzte Wirkleistung."
+    longDefinition: "Qualifikationsverlust entsteht, wenn vorhandene Bildung, Berufserfahrung oder Fähigkeiten nicht genutzt werden, weil Anerkennung, Sprache, Verfahren, Kinderbetreuung, Gesundheit oder Diskriminierung den Zugang zu passender Arbeit verhindern."
+    usageNote: "Bei Arbeitsmarktintegration immer prüfen, ob Qualifikation genutzt oder entwertet wird."
+    doNotConfuseWith: ["Arbeitslosigkeit", "Unterbeschäftigung", "fehlende Qualifikation"]
+    synonyms: ["Dequalifizierung", "Skill Loss", "ungenutzte Qualifikation"]
+    relatedTerms: ["integration-als-infrastruktur", "wirkungsverlust", "fachkraeftemangel"]
+    relatedDocuments: ["migration-kostet-nur"]
+    examples: ["Ärztin ohne Anerkennung", "Ingenieur in Hilfsarbeit", "Pflegeerfahrung ohne Brückenqualifikation"]
+    preferredUsage: "Als Wirkungsverlust durch blockierte Anerkennung und Teilhabe verwenden."
+    deprecatedUsage: ["Qualifikation ignorieren, wenn sie nicht formal anerkannt ist"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "qualifikationsverlust"
+    firstApprovedIn: "2026.1"
+    lastUpdated: "2026-06-03"

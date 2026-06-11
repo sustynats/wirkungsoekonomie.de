@@ -24,4 +24,23 @@ rules:
     term: SDG+
     check: "SDG+ darf nicht als offizielle UN-Kategorie dargestellt werden."
     preferred: "SDG+ ist eine WÖk-Erweiterung für demokratische, mediale und institutionelle Wirkungsfelder."
-
+  - id: frame-framing-reframing-trennen
+    severity: medium
+    term: Frame / Framing / Reframing
+    check: "Bei Frame, Framing und Reframing muss klar zwischen Deutungsrahmen, Prozess und bewusster Verschiebung unterschieden werden."
+    preferred: "Frame = Deutungsrahmen; Framing = Setzen oder Verstärken eines Deutungsrahmens; Reframing = bewusste Verschiebung des Deutungs- und Bewertungsrahmens."
+  - id: reframing-wirkungsmassstab
+    severity: high
+    term: Reframing
+    check: "Reframing darf nicht als bloß positiveres Wording, Manipulation oder Schönfärberei verwendet werden."
+    preferred: "Wirkungsorientiertes Reframing verschiebt den Bewertungsmaßstab von Kapital, Kosten, Gewinn, Wachstum, Output oder Reichweite hin zu Wirkung, Folgekosten, Systemfolgen und positiver Netto-Wirkung für Mensch, Planet und Demokratie."
+  - id: framing-wirkungspotenzial
+    severity: high
+    term: Framing
+    check: "Bei Sprache, Medien und Narrativen nicht vorschnell eingetretene Wirkung behaupten."
+    preferred: "Von Wirkungspotenzial, Resonanzraum, Wirkungspfad oder Wirkungsrisiko sprechen, solange kein Wirkungsnachweis vorliegt."
+  - id: reframing-schutzlinien
+    severity: high
+    term: Reframing
+    check: "Reframing darf keine Zielkonflikte verdecken, keine Feindbilder erzeugen und keine unbelegten Absichten unterstellen."
+    preferred: "Der neue Frame soll mehr Wirklichkeit sichtbar machen, Würde schützen, Zielkonflikte offenhalten und demokratische Handlungsfähigkeit erhöhen."

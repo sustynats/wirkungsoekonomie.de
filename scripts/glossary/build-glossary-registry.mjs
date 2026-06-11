@@ -26,6 +26,18 @@ function stripTags(value) {
     .trim();
 }
 
+function normalizeKey(value) {
+  return stripTags(value)
+    .toLocaleLowerCase("de")
+    .replace(/ß/g, "ss")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function slugify(value) {
   return stripTags(value)
     .replace(/\([^)]*\)/g, "")
@@ -93,6 +105,17 @@ function normalizeTerm(rawTerm, index) {
   const dataStandardsGroup = normalizeGroup(rawTerm.dataStandardsGroup);
   const aliases = unique([label, ...(rawTerm.aliases || []), ...(rawTerm.synonyms || [])]);
   const categories = unique(rawTerm.categories || []);
+  const shortDefinition = rawTerm.shortDefinition || rawTerm.hoverDefinition || rawTerm.definition || rawTerm.longDefinition || rawTerm.woekRelation || "";
+  const longDefinition = rawTerm.longDefinition || rawTerm.definition || rawTerm.woekRelation || rawTerm.shortDefinition || rawTerm.hoverDefinition || "";
+  const sourceFallback = rawTerm.source
+    || rawTerm.sourceSection
+    || rawTerm.sourceDocument
+    || rawTerm.importSource
+    || rawTerm.sourceNote
+    || rawTerm.sourceNotes
+    || (rawTerm.officialSources || [])[0]
+    || rawTerm.category
+    || "WÖk-Begriffsleitfaden";
   const normalized = {
     ...rawTerm,
     id,
@@ -102,10 +125,15 @@ function normalizeTerm(rawTerm, index) {
     slug,
     aliases,
     synonyms: aliases,
-    shortDefinition: rawTerm.shortDefinition || rawTerm.hoverDefinition || rawTerm.definition || rawTerm.longDefinition || "",
-    definition: rawTerm.definition || rawTerm.longDefinition || rawTerm.shortDefinition || "",
-    longDefinition: rawTerm.longDefinition || rawTerm.definition || rawTerm.woekRelation || rawTerm.shortDefinition || "",
-    woekRelation: rawTerm.woekRelation || rawTerm.longDefinition || rawTerm.definition || "",
+    status: rawTerm.status || "approved",
+    version: rawTerm.version || "1.0",
+    source: sourceFallback,
+    shortDefinition,
+    hoverDefinition: rawTerm.hoverDefinition || shortDefinition,
+    definition: rawTerm.definition || longDefinition || shortDefinition,
+    longDefinition,
+    woekRelation: rawTerm.woekRelation || longDefinition || rawTerm.definition || shortDefinition,
+    reviewStatus: rawTerm.reviewStatus || "redaktionell synchronisiert",
     statusNote: rawTerm.statusNote || "",
     usageNote: rawTerm.usageNote || rawTerm.statusNote || "",
     pageUrl: rawTerm.pageUrl || `/begriffe/${slug}/`,
@@ -134,10 +162,64 @@ function normalizeTerm(rawTerm, index) {
   return normalized;
 }
 
+function termCompletenessScore(term) {
+  return [
+    term.status,
+    term.version,
+    term.source,
+    term.hoverDefinition,
+    term.reviewStatus,
+    term.longDefinition,
+    term.woekRelation,
+  ].filter(Boolean).length
+    + (term.version === "2.0" ? 5 : 0)
+    + (term.status === "approved" ? 3 : 0)
+    + (Array.isArray(term.deepGlossarySections) ? Math.min(term.deepGlossarySections.length, 6) : 0)
+    + (Array.isArray(term.officialSources) ? Math.min(term.officialSources.length, 6) : 0)
+    + (Array.isArray(term.relatedTerms) ? Math.min(term.relatedTerms.length, 6) : 0);
+}
+
+function mergeTermData(primary, secondary) {
+  const merged = {
+    ...secondary,
+    ...primary,
+    aliases: unique([...(primary.aliases || []), ...(secondary.aliases || [])]),
+    synonyms: unique([...(primary.synonyms || []), ...(secondary.synonyms || [])]),
+    categories: unique([...(primary.categories || []), ...(secondary.categories || [])]),
+    relatedTerms: unique([...(primary.relatedTerms || []), ...(secondary.relatedTerms || [])]),
+    officialSources: unique([...(primary.officialSources || []), ...(secondary.officialSources || [])]),
+    relatedDocuments: unique([...(primary.relatedDocuments || []), ...(secondary.relatedDocuments || [])]),
+    doNotConfuseWith: unique([...(primary.doNotConfuseWith || []), ...(secondary.doNotConfuseWith || [])]),
+    deprecatedUsage: unique([...(primary.deprecatedUsage || []), ...(secondary.deprecatedUsage || [])]),
+  };
+  if (!merged.deepGlossarySections?.length && secondary.deepGlossarySections?.length) {
+    merged.deepGlossarySections = secondary.deepGlossarySections;
+  }
+  if (!merged.examples?.length && secondary.examples?.length) {
+    merged.examples = secondary.examples;
+  }
+  return merged;
+}
+
+function dedupeCanonicalLabels(terms) {
+  const byLabel = new Map();
+  for (const term of terms) {
+    const key = normalizeKey(term.canonicalLabel);
+    if (!key || !byLabel.has(key)) {
+      byLabel.set(key, term);
+      continue;
+    }
+    const existing = byLabel.get(key);
+    const primary = termCompletenessScore(term) >= termCompletenessScore(existing) ? term : existing;
+    const secondary = primary === term ? existing : term;
+    byLabel.set(key, mergeTermData(primary, secondary));
+  }
+  return Array.from(byLabel.values());
+}
+
 const raw = JSON.parse(fs.readFileSync(source, "utf8"));
 const rawTerms = Array.isArray(raw) ? raw : raw.terms || [];
-const terms = rawTerms
-  .map(normalizeTerm)
+const terms = dedupeCanonicalLabels(rawTerms.map(normalizeTerm))
   .sort((a, b) => collator.compare(a.glossaryOrderKey || a.canonicalLabel, b.glossaryOrderKey || b.canonicalLabel));
 
 fs.mkdirSync(path.dirname(out), { recursive: true });
@@ -148,10 +230,12 @@ const hoverTerms = terms
   .map((term, index) => ({
     key: term.termId,
     label: term.canonicalLabel,
-    aliases: term.synonyms || [],
+    aliases: term.autoLinkAliases || term.synonyms || [],
     definition: term.hoverDefinition || term.shortDefinition,
     url: term.pageUrl || `/begriffe/${term.slug}/`,
     priority: index + 1,
+    autoLinkAllowed: term.autoLinkAllowed !== false,
+    maxAutoLinksPerPage: Number.isFinite(term.maxAutoLinksPerPage) ? term.maxAutoLinksPerPage : undefined,
     allowedContexts,
   }));
 

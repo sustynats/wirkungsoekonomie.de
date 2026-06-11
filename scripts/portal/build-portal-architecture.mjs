@@ -99,7 +99,7 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
     <meta name="twitter:description" content="${description}">
     <meta name="twitter:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     ${placeholderHeader(base)}
@@ -107,7 +107,7 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
       <p class="print-meta">Wirkungsökonomie · ${title.replace(/\s+\|.*$/, "")} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>
 `;
@@ -383,7 +383,7 @@ const fields = [
     sdgs: ["SDG 1 Keine Armut", "SDG 3 Gesundheit", "SDG 5 Geschlechtergleichstellung", "SDG 10 Weniger Ungleichheiten"],
     concepts: ["Wirkungsrente", "Generationenvertrag", "Care-Biografien", "Soziale Resilienz"],
     actors: ["Versicherte", "Rentner:innen", "Care-Arbeitende", "Sozialpolitik", "Kommunen"],
-    docs: [{ label: "Wirkungsrente Arbeitspapier", href: "docs/soziales/Wirkungsrente_v1.1_Generationenvertrag.md" }, { label: "Kapitel Wirkungsrente", href: "referenz/kapitel-058-wirkungsrente/" }],
+    docs: [{ label: "Wirkungsrente", href: "referenz/kapitel-058-wirkungsrente/" }, { label: "Kapitel Wirkungsrente", href: "referenz/kapitel-058-wirkungsrente/" }],
     anchors: [{ label: "Wirkungsrente", href: "referenz/kapitel-058-wirkungsrente/" }, { label: "Zeit, Endlichkeit und Generationenverantwortung", href: "referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/" }, bookMain],
   },
   {
@@ -924,6 +924,8 @@ const legacyMethodMapTools = [
   ["Wirkungssteuergesetz WStG", "Wirkung als steuerliche Bemessungs- und Steuerungslogik rahmen.", "D", "Methodik", "werkzeuge/wirkungssteuergesetz/", ["Wirkungsumsatzsteuer", "Wirkungseinkommensteuer", "Wirkungshaushalt"], "Keine Rechts- oder Steuerberatung."],
   ["Wirkungseinkommensteuer", "Einkommen nach Höhe, Entstehungskontext und Wirkung bewerten.", "D", "Methodik", "werkzeuge/wirkungseinkommensteuer/", ["Maschinenwertschöpfungsbeitrag", "Automatisierungsdividende", "Wirkungsfonds"], "Keine Steuerberatung."],
   ["Wirkungshaushalt", "Öffentliche Mittel nach Prävention, Resilienz, Zielgruppenwirkung und positiver Netto-Wirkung betrachten.", "D", "Methodik", "werkzeuge/wirkungshaushalt/", ["Öffentliche Beschaffung", "Wirkungsregister", "Wirkungsrat"], "Keine Förderentscheidung."],
+  ["Gesundheitswirkungscheck", "Programme, Räume oder Maßnahmen nach Gesundheitsgewinn, Prävention, Teilhabe, Resilienz, Datenqualität und Nebenwirkungen prüfen.", "D", "Methodik", "wirkungsfelder/gesundheit-pflege/tools/gesundheitswirkungscheck/", ["Präventionswirkungslogik", "Pflegewirkungscheck", "T-SROI"], "Keine medizinische Beratung und keine Personenbewertung."],
+  ["Präventionswirkungslogik", "Vermiedene Schäden, Lebensqualitätsnutzen, Resilienzbeitrag, Umsetzungskosten und Unsicherheit modellhaft sichtbar machen.", "D", "Methodik", "wirkungsfelder/gesundheit-pflege/tools/praeventionswirkungsrechner/", ["Gesundheitswirkungscheck", "Wirkungshaushalt", "T-SROI"], "Modellhaft, keine Diagnose und keine Beratung."],
   ["Öffentliche Beschaffung", "Beschaffung nach Wirkung, Datenqualität, Rechtsschutz und demokratischer Kontrolle vorbereiten.", "D", "In Vorbereitung", "werkzeuge/oeffentliche-beschaffung/", ["Wirkungshaushalt", "Wirkungsregister", "Datenqualität & Assurance"], "Vorbereitet, keine Vergabe- oder Förderentscheidung."],
   ["Wirkungsaudit", "Prüfpfade, Datenqualität, rote Linien, Korrekturwege und Assurance als Auditlogik vorbereiten.", "D", "In Vorbereitung", "werkzeuge/wirkungsaudit/", ["Datenqualität & Assurance", "Wirkungsregister", "Wirkungsrat"], "Vorbereitet, keine Zertifizierung."],
   ["Maschinenwertschöpfungsbeitrag", "Automatisierte Wertschöpfung in soziale Sicherung und Wirkungsfonds rückkoppeln.", "D", "Methodik", "werkzeuge/maschinenwertschoepfungsbeitrag/", ["Automatisierungsdividende", "Wirkungseinkommensteuer", "Wirkungsfonds"]],
@@ -1517,29 +1519,217 @@ function methodClusterSection(base, cluster) {
   </section>`;
 }
 
+const dashboardPilots = [
+  {
+    title: "Produktwirkung",
+    text: "Von Produktdaten über Scorecards, WÖk-ID, Datenqualität und Reverse Merit Order zur nachvollziehbaren Wirkungsorientierung.",
+    href: "erleben/produktwirkungsrechner/",
+    methods: ["Scorecards", "WÖk-ID", "Reverse Merit Order"],
+  },
+  {
+    title: "Scorecard & Produktpass",
+    text: "Messwert, Quelle, Benchmark, Datenqualität und Publikationsreife in einer prüfbaren Scorecard-Logik zusammenführen.",
+    href: "scorecard-dashboard/",
+    methods: ["DPP", "Datenqualität", "FinalScore"],
+  },
+  {
+    title: "Impact Controlling",
+    text: "Operative Netto-Wirkung, Transformationswirkung, Risiko, Audit und Lernschleife getrennt, aber zusammenhängend betrachten.",
+    href: "erleben/impact-controlling-rechner/",
+    methods: ["NWI", "T-SROI", "Wirkungsaudit"],
+  },
+  {
+    title: "Wohnwirkung",
+    text: "Wohnkosten, Energie, Resilienz, soziale Zugänglichkeit und kommunale Pilotoptionen als Wirkungsprofil strukturieren.",
+    href: "erleben/wohnwirkungsrechner/",
+    methods: ["NWI", "Resilienz", "Sozialraum"],
+  },
+  {
+    title: "Medienwirkung",
+    text: "Sprache, Framing, Salienz, Unsicherheit und demokratische Schutzlinien nicht-personalisierend sichtbar machen.",
+    href: "erleben/medienwirkungscheck/",
+    methods: ["Framing", "SDG+ Demokratie", "Review"],
+  },
+];
+
+const publicToolEntrypoints = [
+  {
+    title: "Debatten-Kompass",
+    question: "Was antworte ich, wenn ein Narrativ im Raum steht?",
+    text: "Prüft nicht nur wahr oder falsch, sondern Behauptung, Frame, Folgencheck, Wirkpfad und konkrete Reaktion.",
+    href: "wirkungsradar/",
+    status: "Live",
+    type: "Wirkungswerkzeug",
+  },
+  {
+    title: "WÖk-Kompass",
+    question: "Wie verstehe ich Wirkung in wenigen Minuten?",
+    text: "Erklärt Wirkung, Wirkungspotenzial, positive Netto-Wirkung, Rückkopplung und Schutzregeln alltagsnah.",
+    href: "kompass.html",
+    status: "Live",
+    type: "Orientierung",
+  },
+  {
+    title: "WÖk-Scanner",
+    question: "Welches Werkzeug passt zu meiner Frage?",
+    text: "Führt von Nutzerfrage und Zielgruppe zu passender Methode, Demo, Rechner oder Vertiefung.",
+    href: "anwendungen/scanner.html",
+    status: "Arbeitsfassung",
+    type: "Tool-Finder",
+  },
+  {
+    title: "Produktwirkung verstehen",
+    question: "Warum ist ein billiges Produkt manchmal teuer für andere?",
+    text: "Zeigt Scorecard, WÖk-ID, Datenqualität, Reverse Merit Order und Preisrückkopplung an einem Produktbeispiel.",
+    href: "erleben/produktwirkungsrechner/",
+    status: "Demo",
+    type: "Rechner",
+  },
+  {
+    title: "Medienwirkung verstehen",
+    question: "Welche Wirkung hat Sprache auf Öffentlichkeit und Demokratie?",
+    text: "Analysiert Quellenklarheit, Frame, Tonalität, Emotionalisierung und Resonanzrisiko ohne Wahrheitsrichter-Inszenierung.",
+    href: "erleben/medienwirkungscheck/",
+    status: "Demo",
+    type: "Check",
+  },
+  {
+    title: "Impact Controlling",
+    question: "Wie wird aus Daten eine bessere Entscheidung?",
+    text: "Trennt operative Netto-Wirkung, NWI, T-SROI, Datenqualität, Audit und Lernschleife.",
+    href: "erleben/impact-controlling-rechner/",
+    status: "Demo",
+    type: "Controlling",
+  },
+  {
+    title: "Wohnwirkung verstehen",
+    question: "Was macht Wohnen für Mensch, Planet und Demokratie wirksam?",
+    text: "Bündelt Bezahlbarkeit, Gesundheit, Energie, Fläche, Teilhabe, Vertrauen und kommunale Handlungsfähigkeit.",
+    href: "erleben/wohnwirkungsrechner/",
+    status: "Demo",
+    type: "Rechner",
+  },
+];
+
+function publicToolEntrypointsSection(base) {
+  return `<section class="section section-soft" aria-labelledby="tool-2-entrypoints-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Öffentliche Tool-Landschaft 2.0</p>
+            <h2 id="tool-2-entrypoints-title">Erst die Nutzerfrage, dann die Methode.</h2>
+            <p>Diese Einstiege sind für die öffentliche Nutzung nach vorn gezogen. Labor-, Rechts- und Forschungsmodelle bleiben sichtbar, werden aber nicht als fertige Alltagstools verkauft.</p>
+          </div>
+          <div class="card-grid three">
+            ${publicToolEntrypoints.map((tool) => `<article class="card method-tool-card">
+              <div class="method-tool-card-head">
+                <p class="card-kicker">${escapeHtml(tool.type)}</p>
+                ${StatusBadge(tool.status)}
+              </div>
+              <h3 class="card-title">${escapeHtml(tool.title)}</h3>
+              <p class="card-text"><strong>${escapeHtml(tool.question)}</strong></p>
+              <p class="card-text">${escapeHtml(tool.text)}</p>
+              <p class="method-tool-notice">Modellhafte Orientierung, keine Personenbewertung und keine automatische Entscheidung.</p>
+              <div class="portal-card-actions"><a class="text-link" href="${href(base, tool.href)}">Öffnen</a></div>
+            </article>`).join("")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function toolFinderSection(base) {
+  const routes = [
+    ["Ich will eine Aussage beantworten", "Debatten-Kompass öffnen", "wirkungsradar/"],
+    ["Ich will ein Produkt einordnen", "Produktwirkung testen", "erleben/produktwirkungsrechner/"],
+    ["Ich will Medien- oder Sprachwirkung prüfen", "Medienwirkungscheck öffnen", "erleben/medienwirkungscheck/"],
+    ["Ich will Projekt- oder Unternehmenswirkung steuern", "Impact Controlling ansehen", "erleben/impact-controlling-rechner/"],
+    ["Ich will Wohnen, Kommune oder Resilienz verstehen", "Wohnwirkung öffnen", "erleben/wohnwirkungsrechner/"],
+    ["Ich suche die Methode hinter einem Begriff", "Methodenlandkarte filtern", "#method-map-title"],
+  ];
+  return `<section class="section" aria-labelledby="tool-finder-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Tool-Finder</p>
+            <h2 id="tool-finder-title">Welche Frage bringst du mit?</h2>
+            <p>Nicht alles hier ist ein Rechner. Einige Seiten erklären Begriffe, andere zeigen Demos, wieder andere sind Methodik, Registerlogik, Governance oder Labor.</p>
+          </div>
+          <div class="card-grid three">
+            ${routes.map(([question, label, target]) => `<article class="card">
+              <p class="card-kicker">Nutzerfrage</p>
+              <h3 class="card-title">${escapeHtml(question)}</h3>
+              <div class="portal-card-actions"><a class="text-link" href="${href(base, target)}">${escapeHtml(label)}</a></div>
+            </article>`).join("")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function toolContractSection(base) {
+  return `<section class="section" aria-labelledby="tool-contract-title">
+        <div class="card method-orientation-card">
+          <p class="hero-kicker">WÖk-Contract</p>
+          <h2 id="tool-contract-title">Jedes Werkzeug muss Wirkung als Pfad erklären.</h2>
+          <p class="card-text">Auslöser → Wirkungspotenzial → Zustandsveränderung → Wirkungsbewertung → Netto-Wirkung → Rückkopplung → neue Entscheidung. Ein Score allein reicht nicht. Jede Toolseite muss außerdem Datenqualität, Grenzen, Nebenwirkungen und Schutzlinien sichtbar machen.</p>
+          <div class="method-related method-related-large" aria-label="Pflichtbegriffe">
+            ${["Wirkung", "Wirkungspotenzial", "Wirkpfad", "Netto-Wirkung", "NWI", "T-SROI", "Reverse Merit Order", "WÖk-ID", "Datenqualität & Assurance"].map((term) => `<span>${escapeHtml(term)}</span>`).join("")}
+          </div>
+        </div>
+      </section>`;
+}
+
+function dashboardPilotSection(base) {
+  return `<section class="section" aria-labelledby="dashboard-cockpit-title">
+    <div>
+      <div class="section-header">
+        <p class="hero-kicker">Dashboard-Cockpit</p>
+        <h2 id="dashboard-cockpit-title">Fünf Pilotpfade für geführte Werkzeugnutzung</h2>
+        <p>Dashboards sollen nicht nur Ergebnisse ausgeben, sondern Fragestellung, Datenqualität, Methode, Schutzlinien und nächsten Schritt sichtbar machen. Die bestehenden Routen bleiben erhalten.</p>
+      </div>
+      <div class="method-map-grid">
+        ${dashboardPilots.map((pilot) => `<article class="card method-tool-card">
+          <div class="method-tool-card-head">
+            <p class="card-kicker">Pilot-Dashboard</p>
+            ${StatusBadge("Arbeitsfassung")}
+          </div>
+          <h3 class="card-title">${escapeHtml(pilot.title)}</h3>
+          <p class="card-text">${escapeHtml(pilot.text)}</p>
+          <div class="method-related" aria-label="Methodenlogik">${pilot.methods.map((method) => `<span>${escapeHtml(method)}</span>`).join("")}</div>
+          <p class="method-tool-notice">Modellhafte Orientierung, nicht amtlich und keine automatische Entscheidung.</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, pilot.href)}">Pilotpfad öffnen</a></div>
+        </article>`).join("")}
+      </div>
+    </div>
+  </section>`;
+}
+
 function toolOverview() {
   return page({
     rel: "werkzeuge/index.html",
-    title: "Methoden & Werkzeuge der Wirkungsökonomie | Methodenlandkarte",
+    title: "Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0",
     description:
-      "Methodenlandkarte der Wirkungsökonomie: Begriffe, Daten, Bewertung, Kennzahlen, Controlling, Rückkopplung, Kapital, Governance und Demos.",
+      "Tool-Landschaft 2.0 der Wirkungsökonomie: Nutzerfragen, Demos, Methoden, Scorecards, NWI, T-SROI, Datenqualität, Governance und Schutzlinien.",
     searchSection: "Werkzeuge",
     body: (base) => `<section class="hero method-map-hero">
         <div class="hero-grid">
           <div>
-            <p class="hero-kicker">Methodenlandkarte</p>
+            <p class="hero-kicker">Tool-Landschaft 2.0</p>
             <h1 class="hero-title">Methoden &amp; Werkzeuge der Wirkungsökonomie</h1>
-            <p class="hero-subtitle">Eine Landkarte der Begriffe, Dateninstrumente, Bewertungslogiken, Kennzahlen, Managementinstrumente, Governance-Bausteine und Demos, mit denen Wirkung sichtbar, prüfbar und rückgekoppelt wird.</p>
-            <p class="hero-text">Die Karten zeigen keine amtliche Bewertung. Sie trennen bewusst Zielrahmen, operative Kennzahlen, Transformationsmessung, Nichtkompensationsregeln, Governance und modellhafte Anwendungen.</p>
+            <p class="hero-subtitle">Erst Alltag, dann Begriff: Finde das passende Werkzeug für deine Frage und sieh erst danach die Methode dahinter.</p>
+            <p class="hero-text">Die Tool-Landschaft trennt Orientierung, Demo, Methode, Kennzahl, Registerlogik, Governance, Labor und Referenz. Keine Karte ist eine amtliche Bewertung, keine Demo trifft automatische Entscheidungen und kein Werkzeug bewertet Personen.</p>
             ${printActions(base)}
           </div>
-          <aside class="card">
-            <p class="card-kicker">Abgrenzung</p>
-            <h2 class="card-title">NWI und T-SROI sind bewusst getrennt.</h2>
-            <p class="card-text"><strong>Netto-Wirkung</strong> ist Bewertungslogik und Zielbrücke. <strong>NWI</strong> ist die operative Kennzahl. <strong>T-SROI</strong> bewertet Transformationswirkung und Systemhebel. <strong>Reverse Merit Order</strong> schützt vor Kompensation roter Linien.</p>
+          <aside class="protection-notice" role="note" aria-label="Schutzlinien der Tool-Landschaft">
+            <p class="card-kicker">Schutzlinien</p>
+            <h2 class="card-title">Modellhaft. Nicht amtlich. Keine Personenbewertung.</h2>
+            <ul class="protection-notice-list">
+              <li>Demos zeigen Wirkungslogik, keine Zertifizierung.</li>
+              <li>Rechts-, Steuer-, Finanz- und Sozialmodelle sind Arbeitsfassungen, keine Beratung.</li>
+              <li>Scores ersetzen keine Prüfung, demokratische Entscheidung oder menschliche Verantwortung.</li>
+            </ul>
           </aside>
         </div>
       </section>
+      ${toolFinderSection(base)}
+      ${publicToolEntrypointsSection(base)}
       <section class="section method-orientation-section" aria-labelledby="method-orientation-title">
         <div class="card method-orientation-card">
           <p class="hero-kicker">Orientierung</p>
@@ -1547,6 +1737,8 @@ function toolOverview() {
           <p class="card-text">Nicht jede Karte hat dieselbe Funktion: Begriffe erklären den Zielrahmen, WÖk-IDs adressieren Daten, Scorecards bewerten, der NWI verdichtet operativ, T-SROI beschreibt Transformationshebel, Reverse Merit Order setzt Nichtkompensationsgrenzen, der Wirkungsrat sichert Governance und Demos zeigen modellhafte Anwendungen.</p>
         </div>
       </section>
+      ${toolContractSection(base)}
+      ${dashboardPilotSection(base)}
       <section class="section" aria-labelledby="method-pipeline-title">
         <div>
           <div class="section-header">
@@ -1617,26 +1809,77 @@ function toolPage(tool) {
         <div class="hero-grid">
           <div>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "werkzeuge/")}">Werkzeuge</a><span aria-hidden="true">/</span><span>${tool.title}</span></nav>
-            <p class="hero-kicker">Werkzeug</p>
+            <p class="hero-kicker">Werkzeug · Methodik</p>
             <h1 class="hero-title">${tool.title}</h1>
             <p class="hero-subtitle">${tool.text}</p>
+            <p class="hero-text">Dieses Werkzeug bereitet Entscheidungen vor, ersetzt sie aber nicht. Es zeigt einen Wirkpfad und macht Datenqualität, Grenzen und Zielkonflikte sichtbar.</p>
             ${printActions(base)}
           </div>
-          <aside class="card">
-            <p class="card-kicker">Methodenlogik</p>
-            <h2 class="card-title">Dieses Werkzeug ist kein Wirkungsfeld.</h2>
-            <p class="card-text">Es wird in mehreren Wirkungsfeldern eingesetzt und muss negative, positive und neutrale Wirkung getrennt sichtbar halten.</p>
+          <aside class="protection-notice" role="note">
+            <p class="card-kicker">Status &amp; Schutzlinie</p>
+            <h2 class="card-title">Modellhaft, nicht amtlich.</h2>
+            <ul class="protection-notice-list">
+              <li>Keine Rechts-, Steuer-, Finanz- oder Förderberatung.</li>
+              <li>Keine Personenbewertung und keine automatische Entscheidung.</li>
+              <li>Datenqualität, Unsicherheit und rote Linien bleiben sichtbar.</li>
+            </ul>
           </aside>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="nutzerfrage">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Nutzerfrage</p><h2 id="nutzerfrage">Was hilft mir dieses Werkzeug zu verstehen?</h2></div>
+          ${cardGrid(base, [
+            { title: "Was ist das?", text: `${tool.title} ist ein Methodenbaustein, der Wirkung nicht als bloßen Ergebniswert, sondern als prüfbaren Zusammenhang zwischen Daten, Bewertung und Entscheidung sichtbar macht.` },
+            { title: "Heutige Blindstelle", text: "Viele Systeme messen Aktivität, Kosten, Output oder Berichtspflichten. Sie sehen aber nicht zuverlässig, ob sich Zustände für Mensch, Planet und Demokratie verbessern oder verschlechtern." },
+            { title: "Was verändert sich dadurch?", text: "Die Entscheidung wird nicht nur nach Preis, Reichweite, Rendite oder Zuständigkeit getroffen, sondern nach Wirkungspfad, Datenqualität, Nebenwirkung und Rückkopplung." },
+          ])}
         </div>
       </section>
       <section class="section" aria-labelledby="leistung">
         <div>
-          <div class="section-header"><p class="hero-kicker">Funktion</p><h2 id="leistung">Was dieses Werkzeug leistet</h2></div>
+          <div class="section-header"><p class="hero-kicker">Eingabe und Ergebnis</p><h2 id="leistung">Was gibst du ein, was bekommst du heraus?</h2></div>
           ${cardGrid(base, [
-            { title: "Einsatz", text: "Das Werkzeug ordnet Daten, Bewertungsfragen und Entscheidungen so, dass Wirkung nicht nur berichtet, sondern rückgekoppelt werden kann." },
-            { title: "Grenzen", text: "Es ersetzt keine politische Abwägung und keine demokratische Kontrolle. Datenqualität, Unsicherheit und Zielkonflikte bleiben sichtbar." },
-            { title: "Missbrauchsschutz", text: "Reverse Merit Order, Quellenprüfung, Einspruchslogik und transparente Gewichtung schützen vor Schönrechnung und Impact Washing." },
+            { title: "Eingaben", text: "Daten, Quellen, Annahmen, Systemgrenzen, Wirkungsfeld, Zeitbezug und Prüfstatus. Demo-Werte müssen von realen Nachweisen getrennt bleiben." },
+            { title: "Ergebnisse", text: "Ein Wirkungsprofil, Score, Pfad, Risikomatrix oder Prüfhinweis. Das Ergebnis ist eine Entscheidungshilfe, keine automatische Entscheidung." },
+            { title: "Datenqualität", text: "Messwert, Schätzung, Modellwert, Quelle, Aktualität und Reviewstatus müssen unterscheidbar sein. Fehlende Daten sind ein Ergebnis, kein Schönheitsfehler." },
           ])}
+        </div>
+      </section>
+      <section class="section" aria-labelledby="wirkpfad">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Wirkpfad</p><h2 id="wirkpfad">Von Auslöser zu Rückkopplung</h2></div>
+          <div class="model-strip" aria-label="Wirkpfad">
+            <span>Auslöser</span>
+            <span>Wirkungspotenzial</span>
+            <span>Zustandsveränderung</span>
+            <span>Wirkungsbewertung</span>
+            <span>Netto-Wirkung</span>
+            <span>Rückkopplung</span>
+            <span>neue Entscheidung</span>
+          </div>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="folgencheck">
+        <div>
+          <div class="section-header"><p class="hero-kicker">Folgencheck</p><h2 id="folgencheck">Welche Folgen müssen sichtbar werden?</h2></div>
+          ${cardGrid(base, [
+            { title: "1. Ordnung", text: "Direkte Zustandsveränderung: Was verändert sich unmittelbar durch die Entscheidung, das Produkt, die Regel oder die Maßnahme?" },
+            { title: "2. Ordnung", text: "Anschlussfolge: Welche Kosten, Risiken, Abhängigkeiten, Entlastungen oder Verdrängungen entstehen danach?" },
+            { title: "3. Ordnung", text: "Systemwirkung: Welche Anreize, Routinen, Marktpreise, Kapitalflüsse, öffentliche Debatten oder institutionellen Entscheidungen verändern sich?" },
+          ])}
+        </div>
+      </section>
+      <section class="section" aria-labelledby="kritische-fragen">
+        <div class="card">
+          <p class="hero-kicker">Zielkonflikte</p>
+          <h2 id="kritische-fragen">Was berechtigt kritisch gefragt werden darf</h2>
+          <ul class="check-list">
+            <li>Sind Daten, Quellen und Systemgrenzen belastbar genug?</li>
+            <li>Welche negative Wirkung darf nicht durch positive Einzelwerte kompensiert werden?</li>
+            <li>Wer entscheidet über Gewichtung, Schwellen, Schutzlinien und Einspruch?</li>
+            <li>Welche Alternative hätte höhere positive Netto-Wirkung?</li>
+          </ul>
         </div>
       </section>
       <section class="section" aria-labelledby="einsatzfelder">
@@ -1653,7 +1896,7 @@ function toolPage(tool) {
       </section>
       <section class="section" aria-labelledby="werkstatt-docs">
         <div>
-          <div class="section-header"><p class="hero-kicker">Werkstatt</p><h2 id="werkstatt-docs">Dokumente und Arbeitsmaterialien</h2></div>
+          <div class="section-header"><p class="hero-kicker">Methodik und Quellen</p><h2 id="werkstatt-docs">Dokumente und Arbeitsmaterialien</h2></div>
           ${linkList(base, [
             { label: "Arbeitsbibliothek Instrumente", href: "werkstatt/arbeitsbibliothek/instrumente/" },
             { label: "Referenzanker", href: tool.anchor },
@@ -1732,7 +1975,7 @@ function workshopPages() {
     ["Methodik", "Datenbasis, Standards, Regularien, WÖk-IDs, Scorecards und Evidenzlogik.", "werkstatt/arbeitsbibliothek/methodik/"],
     ["Praxisbeispiele", "Apfelbeispiel, Lieferketten, Konzernbeispiel und kommunale Use Cases.", "werkstatt/arbeitsbibliothek/praxis/"],
     ["Architektur", "Systemmodell und Nachhaltigkeit als Systemarchitektur.", "werkstatt/arbeitsbibliothek/architektur/"],
-    ["Dossiers", "Öffentliche Dossiers aus Journal und Werkstatt.", "blog/dossiers/grundlagen.html"],
+    ["Dossiers", "Öffentliche Dossiers aus Journal und Werkstatt.", "werkstatt/arbeitsbibliothek/konzepte-dossiers/"],
     ["Historische Dokumente", "Ältere Materialien bleiben auffindbar und werden historisch eingeordnet.", "werkstatt/arbeitsbibliothek/historische-dokumente/"],
     ["Downloads", "Bestehende Download-Seite mit PDFs und Originaldateien.", "downloads.html"],
   ].map(([title, text, href]) => ({ title, text, href, linkLabel: "Öffnen" }));
@@ -1794,11 +2037,11 @@ function workshopPages() {
   const simplePages = [
     ["gesetze", "Gesetze und Rechtsentwürfe", [["Wirkungssteuergesetz WStG", "Rahmenentwurf zur Wirkungssteuerlogik.", "dokumente/wstg-oktober-2025/"], ["Technische Leitlinien WUStG", "Leitlinien zur Produktwirkungssteuer.", "dokumente/technische-leitlinien-wustg-v2/"], ["Wirkungsrat", "Governance und institutionelle Sicherung.", "dokumente/wirkungsrat-konzept/"]]],
     ["methodik", "Methodik", [["WÖk Master Items", "Indikatorenarchitektur und Master Items.", "dokumente/woek-master-items-final-v1-2/"], ["Datenbasis", "Methodik, Standards und Regularien.", "methodik/datenbasis.html"], ["Scorecard-Demo", "Operative Bewertung sichtbar machen.", "scorecard-dashboard.html"]]],
-    ["whitepaper", "Whitepaper", [["T-SROI", "Transformationswirkung und Impact Controlling.", "dokumente/whitepaper-t-sroi/"], ["Produktbesteuerung durch Wirkung", "Kanonische Online-Fassung des Produktpapiers.", "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"], ["Wirkung statt Kapital", "Grundlagen und Paradigmenwechsel.", "assets/pdf/whitepaper-wirkung-statt-kapital.pdf"], ["Wirkungseinkommen", "Einkommen und Wirkung.", "assets/pdf/whitepaper-wirkungseinkommen.pdf"]]],
-    ["konzepte-dossiers", "Konzepte & Dossiers", [["Produktbesteuerung durch Wirkung", "Online lesbares Konzeptpapier im Portal Produkte & Konsum.", "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/"], ["Dossier Produkte & Konsum", "Rechenmodell, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.", "wirkungsfelder/produkte-konsum/dossier/"], ["Die Wirkungsschule", "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", "wirkungsfelder/bildung/wirkungsschule/"], ["Dossier Wohnen", "Öffentliches Dossier zum Wirkungsfeld Wohnen.", "blog/dossiers/wohnen.html"], ["Dossier Medien & Demokratie", "Öffentliches Dossier zu Medien, Demokratie und Wirkung.", "blog/dossiers/medien-demokratie.html"], ["Grundlagen-Dossier", "Projekt- und Grundlagenmaterialien.", "blog/dossiers/grundlagen.html"]]],
+    ["whitepaper", "Whitepaper", [["T-SROI", "Transformationswirkung und Impact Controlling.", "dokumente/whitepaper-t-sroi/"], ["Folgencheck statt Faktencheck", "Arbeitspapier zur Wirkung politischer Sprache, Frames, Narrativen und demokratischen Resonanzrisiken.", "bibliothek/folgencheck-wirkungspolitische-sprache/"], ["Produktbesteuerung durch Wirkung", "Kanonische Online-Fassung des Produktpapiers.", "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"], ["Wirkung statt Kapital", "Grundlagen und Paradigmenwechsel.", "assets/pdf/whitepaper-wirkung-statt-kapital.pdf"], ["Wirkungseinkommen", "Einkommen und Wirkung.", "assets/pdf/whitepaper-wirkungseinkommen.pdf"]]],
+    ["konzepte-dossiers", "Konzepte & Dossiers", [["Produktbesteuerung durch Wirkung", "Online lesbares Konzeptpapier im Portal Produkte & Konsum.", "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/"], ["Dossier Produkte & Konsum", "Rechenmodell, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.", "wirkungsfelder/produkte-konsum/dossier/"], ["Apfelbeispiel-Dossier", "Einzeldossier mit Bewertungsweg, Annahmen, Datenquellen und Grenzen.", "wirkungsfelder/produkte-konsum/dossiers/apfelbeispiel/"], ["Die Wirkungsschule", "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", "wirkungsfelder/bildung/wirkungsschule/"], ["Dossier Wohnen", "Öffentliches Dossier zum Wirkungsfeld Wohnen.", "blog/dossiers/wohnen.html"], ["Dossier Medien & Demokratie", "Öffentliches Dossier zu Medien, Demokratie und Wirkung.", "blog/dossiers/medien-demokratie.html"], ["Grundlagen-Dossier", "Projekt- und Grundlagenmaterialien.", "blog/dossiers/grundlagen.html"]]],
     ["praxis", "Praxisbeispiele", [["Apfelbeispiel", "Produktscorecard und Bonusregel.", "wirkungsfelder/produkte-konsum/apfelbeispiel/"], ["Lieferkette", "Wirkungsökonomie in der Lieferkette.", "wirkungsfelder/produkte-konsum/lieferketten/"], ["Beispiel Konzern", "Konzern- und Produktscorecard.", "wirkungsfelder/produkte-konsum/basf-polyamid/"], ["T-Shirt / Textilbeispiel", "Modellseite für Textilien als Wirkungsträger.", "wirkungsfelder/produkte-konsum/t-shirt/"]]],
-    ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "docs/soziales/Wirkungsrente_v1.1_Generationenvertrag.md"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "docs/soziales/Wirkungseinkommen_Grunddividende_v1.1_Zielmodell.md"]]],
-    ["recht", "Recht", [["Juristische Risikolandkarte", "Rechtsprüfung und Risiken.", "docs/recht/WOeK_Juristische_Risikolandkarte_v1.1.md"], ["WStG Prüfnotiz", "Juristische Prüfung des WStG.", "docs/recht/WStG_2.0_Juristische_Pruefnotiz.md"], ["Wirkungsrat Prüfnotiz", "Governance und Rechtsrahmen.", "docs/recht/Wirkungsrat_Juristische_Pruefnotiz_Governance.md"]]],
+    ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "referenz/kapitel-058-wirkungsrente/"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "referenz/kapitel-057-wirkungseinkommen/"]]],
+    ["recht", "Recht", [["Wirkungssteuergesetz WStG", "Rahmenentwurf zur Wirkungssteuerlogik.", "werkstatt/gesetze/wirkungssteuergesetz/"], ["WStG und Produktwirkungssteuer", "Rechts- und Steuerlogik im Grundlagenwerk.", "referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/"], ["Wirkungsrat", "Governance und institutionelle Sicherung.", "dokumente/wirkungsrat-konzept/"]]],
     ["architektur", "Architektur", [["Systemmodell", "Systemmodell der Wirkungsökonomie.", "dokumente/systemmodell-der-wirkungsoekonomie/"], ["Klima, Energie und Ressourcen", "Wirkungsfeld für ökologische Systemarchitektur.", "wirkungsfelder/klima-energie-ressourcen/"], ["Prozessarchitektur", "Von Daten zu Steuerlogik.", "workflow.html"]]],
     ["historische-dokumente", "Historische Dokumente", [["Manifest", "Historischer und normativer Ausgangspunkt.", "dokumente/woek-manifest/"], ["Minifest", "Kurzfassung und Orientierung.", "dokumente/minifest-wirkungsoekonomie/"], ["Archivhinweis", "Historische Dokumente einordnen.", "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.md"]]],
   ];
@@ -1953,6 +2196,62 @@ function schoolWorkpaperPage() {
   });
 }
 
+function writeToolLandscapeMetadata() {
+  const out = path.join(ROOT, "public/data/tool-landscape-2-0.json");
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  const canonicalTools = methodMapTools.map((tool) => {
+    const clusterInfo = methodClusters.find((item) => item.key === tool.cluster);
+    const status = tool.status || "Methodik";
+    const target = tool.target ? routeFor(tool.target.replace(/^\/+/, "").replace(/\/?$/, "/index.html")) : null;
+    const isLabor =
+      /rente|einkommen|estg|wstg|wustg|steuer|fonds|kapital|automatisierung|maschinen|risk|risiko/i.test(tool.title) &&
+      !/Debatten|Kompass/i.test(tool.title);
+    return {
+      title: tool.title,
+      canonical_url: target ? `${SITE}${target}` : null,
+      cluster: tool.cluster,
+      cluster_title: clusterInfo?.title || null,
+      type: tool.types || [],
+      status,
+      public_position:
+        publicToolEntrypoints.some((entry) => entry.title === tool.title)
+          ? "key_feature"
+          : tool.isDemo
+            ? "demo"
+            : tool.isPrepared
+              ? "prepared"
+              : isLabor
+                ? "labor_or_model"
+                : "method_or_reference",
+      method_bucket: tool.method || null,
+      demo: Boolean(tool.isDemo),
+      prepared: Boolean(tool.isPrepared),
+      protection_line:
+        "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      related: tool.related || [],
+    };
+  });
+  const payload = {
+    version: "2.0",
+    generated_at: new Date().toISOString(),
+    principle: "Erst Alltag, dann Begriff. Erst Nutzerfrage, dann Methode. Erst verstehen, dann ausprobieren.",
+    public_entrypoints: publicToolEntrypoints.map((entry) => ({
+      ...entry,
+      canonical_url: `${SITE}${routeFor(entry.href.endsWith("/") ? `${entry.href}index.html` : entry.href)}`,
+    })),
+    counts: {
+      tools: canonicalTools.length,
+      key_features: canonicalTools.filter((tool) => tool.public_position === "key_feature").length,
+      demos: canonicalTools.filter((tool) => tool.public_position === "demo").length,
+      prepared: canonicalTools.filter((tool) => tool.public_position === "prepared").length,
+      labor_or_model: canonicalTools.filter((tool) => tool.public_position === "labor_or_model").length,
+    },
+    tools: canonicalTools,
+  };
+  fs.writeFileSync(out, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  return path.relative(ROOT, out);
+}
+
 function run() {
   const written = [];
   written.push(fieldOverview());
@@ -1962,7 +2261,9 @@ function run() {
   for (const tool of tools) written.push(toolPage(tool));
   for (const tool of preparedToolPages) written.push(preparedToolPage(tool));
   workshopPages();
+  const metadata = writeToolLandscapeMetadata();
   console.log("Portal architecture pages generated.");
+  console.log(`Tool landscape metadata generated: ${metadata}`);
 }
 
 run();

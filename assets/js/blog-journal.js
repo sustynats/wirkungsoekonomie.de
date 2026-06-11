@@ -1,9 +1,7 @@
 (function () {
   const scriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="blog-journal.js"]')?.src || "";
-  const dataUrl = scriptUrl
-    ? new URL("../data/blog-index.json", scriptUrl).href
-    : "/assets/data/blog-index.json";
+  const dataUrl = getVersionedDataUrl(scriptUrl);
 
   const relatedPaths = new Set([
     "/verstehen.html",
@@ -31,10 +29,11 @@
   ]);
 
   const homeTarget = document.querySelector("[data-journal-home]");
+  const archiveTarget = document.querySelector("[data-journal-list]");
   const currentPath = normalizePath(window.location.pathname);
   const shouldRenderRelated = relatedPaths.has(currentPath);
 
-  if (!homeTarget && !shouldRenderRelated) {
+  if (!homeTarget && !archiveTarget && !shouldRenderRelated) {
     return;
   }
 
@@ -54,6 +53,10 @@
         renderHomeJournal(homeTarget, publishedPosts);
       }
 
+      if (archiveTarget) {
+        renderJournalArchive(archiveTarget, publishedPosts);
+      }
+
       if (shouldRenderRelated) {
         renderRelatedPosts(publishedPosts);
       }
@@ -62,6 +65,12 @@
       if (homeTarget) {
         homeTarget.innerHTML =
           '<p class="card-text">Aktuelle Einordnungen findest du im <a class="text-link" href="/blog.html">Journal</a>.</p>';
+      }
+      if (archiveTarget) {
+        archiveTarget.insertAdjacentHTML(
+          "afterbegin",
+          '<p class="card-text">Die indexbasierte Journalübersicht konnte gerade nicht geladen werden. Die statische Fassung bleibt darunter sichtbar.</p>'
+        );
       }
     });
 
@@ -77,6 +86,20 @@
     return pathname;
   }
 
+  function getVersionedDataUrl(url) {
+    if (!url) {
+      return "/assets/data/blog-index.json";
+    }
+
+    const sourceUrl = new URL(url);
+    const data = new URL("../data/blog-index.json", sourceUrl);
+    const version = sourceUrl.searchParams.get("v");
+    if (version) {
+      data.searchParams.set("v", version);
+    }
+    return data.href;
+  }
+
   function renderHomeJournal(target, posts) {
     const latest = posts[0];
     if (!latest) {
@@ -88,14 +111,33 @@
     target.innerHTML = `
       <div class="journal-home-grid">
         ${renderArticleCard(latest, { featured: true })}
-        <div class="journal-side-list">
+        <div class="journal-side-list" aria-label="Weitere aktuelle Journalartikel">
           ${secondary.map((post) => renderArticleCard(post)).join("")}
+          <article class="journal-card journal-archive-card">
+            <p class="card-kicker">Archiv</p>
+            <h3 class="card-title">Alle Journalartikel durchsuchen.</h3>
+            <p class="card-text">Suche, Filter und Schlagworte führen gezielt durch das vollständige Archiv.</p>
+            <a class="text-link" href="#beitraege">Zum Archiv</a>
+          </article>
         </div>
       </div>
-      <div class="hero-actions journal-actions">
-        <a class="btn btn-secondary" href="/blog.html">Alle Einordnungen ansehen</a>
-      </div>
     `;
+  }
+
+  function renderJournalArchive(target, posts) {
+    if (!posts.length) {
+      return;
+    }
+
+    target.innerHTML = posts.map((post) => renderJournalArchiveCard(post)).join("");
+    document.dispatchEvent(
+      new CustomEvent("journal:rendered", {
+        detail: {
+          target,
+          count: posts.length
+        }
+      })
+    );
   }
 
   function renderRelatedPosts(posts) {
@@ -118,7 +160,7 @@
           <p>Diese Beiträge vertiefen die Frage aus aktueller Perspektive.</p>
         </div>
         <div class="journal-related-grid">
-          ${related.map((post) => renderArticleCard(post)).join("")}
+          ${related.map((post) => renderArticleCard(post, { showImage: false })).join("")}
         </div>
       </div>
     `;
@@ -163,16 +205,33 @@
     }, 0);
   }
 
-  function renderArticleCard(post, { featured = false } = {}) {
+  function renderArticleCard(post, { featured = false, showImage = true } = {}) {
     const tagChips = (post.tags || [])
       .slice(0, 3)
       .map((tag) => `<span>${escapeHtml(tag)}</span>`)
       .join("");
-    const cardClass = featured ? "journal-card journal-feature-card" : "journal-card";
     const titleLevel = featured ? "h3" : "h3";
+    const image = showImage ? normalizeImagePath(post.image) : "";
+
+    if (featured) {
+      return `
+        <article class="blog-card editorial-feature-card journal-feature-card" data-origin="redaktion" data-category="${escapeHtml(post.category || "journal")}">
+          ${image ? `<div class="blog-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt || post.title)}" decoding="async" loading="eager"></div>` : ""}
+          <div class="journal-feature-copy">
+            <div class="blog-badge-row"><span class="blog-origin-badge">${escapeHtml(post.type || "Journalartikel")}</span><span class="blog-origin-badge">${escapeHtml(post.category || "Journal")}</span></div>
+            <p class="card-kicker">${escapeHtml(post.category || "Journal")} · <time datetime="${escapeHtml(post.date)}">${formatDate(post.date)}</time>${post.readingTime ? ` · ${escapeHtml(post.readingTime)}` : ""}</p>
+            <${titleLevel} class="card-title">${escapeHtml(post.title)}</${titleLevel}>
+            <p class="card-text">${escapeHtml(post.excerpt)}</p>
+            ${tagChips ? `<div class="journal-chip-list" aria-label="Themen">${tagChips}</div>` : ""}
+            <a class="text-link" href="${escapeHtml(post.url)}">Aktuellen Beitrag lesen</a>
+          </div>
+        </article>
+      `;
+    }
 
     return `
-      <article class="${cardClass}">
+      <article class="journal-card">
+        ${image ? `<div class="blog-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt || post.title)}" decoding="async" loading="lazy"></div>` : ""}
         <p class="journal-meta">
           <span>${escapeHtml(post.category)}</span>
           <span aria-hidden="true">·</span>
@@ -183,9 +242,80 @@
         <${titleLevel} class="card-title">${escapeHtml(post.title)}</${titleLevel}>
         <p class="card-text">${escapeHtml(post.excerpt)}</p>
         ${tagChips ? `<div class="journal-chip-list" aria-label="Themen">${tagChips}</div>` : ""}
-        <a class="text-link" href="${escapeHtml(post.url)}">${featured ? "Artikel lesen" : "Lesen"}</a>
+        <a class="text-link" href="${escapeHtml(post.url)}">Beitrag lesen</a>
       </article>
     `;
+  }
+
+  function renderJournalArchiveCard(post) {
+    const tags = (post.tags || []).slice(0, 6);
+    const tagSlugs = tags.map(slugify).filter(Boolean);
+    const categorySlug = canonicalCategorySlug(post, tagSlugs);
+    const dataTags = Array.from(
+      new Set([categorySlug, slugify(post.category), ...tagSlugs, ...(post.relatedTerms || []).map(slugify)])
+    )
+      .filter(Boolean)
+      .join(" ");
+    const badges = normalizeBadges(post);
+    const origin = post.url?.includes("/linkedin/") ? "linkedin" : "redaktion";
+    const cardClass = origin === "linkedin" ? "blog-card linkedin-archive-card" : "blog-card";
+    const image = normalizeImagePath(post.image);
+
+    return `
+      <article class="${cardClass}" data-origin="${escapeHtml(origin)}" data-category="${escapeHtml(categorySlug)}" data-tags="${escapeHtml(dataTags)}">
+        ${image ? `<div class="blog-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(post.imageAlt || post.title)}" decoding="async" loading="lazy"></div>` : ""}
+        <div class="blog-badge-row">${badges.map((badge) => `<span class="blog-origin-badge">${escapeHtml(badge)}</span>`).join("")}</div>
+        <p class="card-kicker"><a class="category-link" href="#thema-${escapeHtml(categorySlug)}" data-blog-filter="${escapeHtml(categorySlug)}">${escapeHtml(post.category || "Journal")}</a> · <time datetime="${escapeHtml(post.date)}">${formatDate(post.date)}</time>${post.readingTime ? ` · ${escapeHtml(post.readingTime)}` : ""}</p>
+        <h3 class="card-title">${escapeHtml(post.title)}</h3>
+        <p class="card-text">${escapeHtml(post.excerpt || "")}</p>
+        <a class="text-link" href="${escapeHtml(post.url)}">Beitrag lesen</a>
+        ${tags.length ? `<div class="tag-list" aria-label="Schlagworte">${tags.map((tag) => `<a href="#tag-${escapeHtml(slugify(tag))}" data-blog-tag="${escapeHtml(slugify(tag))}">${escapeHtml(tag)}</a>`).join("")}</div>` : ""}
+      </article>
+    `;
+  }
+
+  function normalizeBadges(post) {
+    const type = post.type === "Journalartikel" ? "Journalartikel" : post.type || "Journalartikel";
+    return Array.from(new Set([type, post.featured ? "Leitartikel" : "", post.category].filter(Boolean)));
+  }
+
+  function canonicalCategorySlug(post, tagSlugs) {
+    const raw = slugify(post.category);
+    const terms = new Set([raw, ...tagSlugs]);
+    if (terms.has("bildung") || raw.includes("bildung")) return "bildung";
+    if (terms.has("politik") || raw.includes("politik")) return "politik";
+    if (terms.has("wirtschaft") || terms.has("unternehmen") || raw.includes("wirtschaft")) return "wirtschaft";
+    if (terms.has("demokratie") || raw.includes("demokratie")) return "demokratie";
+    if (terms.has("medien") || raw.includes("medien")) return "medien";
+    if (terms.has("ki") || terms.has("digitalisierung") || raw.includes("ki") || raw.includes("digitalisierung")) return "ki-und-digitalisierung";
+    if (terms.has("preise") || terms.has("steuern") || raw.includes("preise")) return "produkte-und-preise";
+    if (terms.has("wohnen") || raw.includes("wohnen")) return "wohnen";
+    if (terms.has("arbeit") || raw.includes("arbeit")) return "arbeit-und-soziales";
+    if (terms.has("energie") || terms.has("klima") || raw.includes("energie") || raw.includes("klima")) return "energie-und-klima";
+    if (terms.has("europa") || terms.has("geopolitik") || raw.includes("europa")) return "europa-und-welt";
+    return raw || "grundsatz";
+  }
+
+  function normalizeImagePath(value) {
+    if (!value) return "";
+    const path = String(value).replace(/^https?:\/\/wirkungsoekonomie\.de\//, "/");
+    if (/^https?:\/\//.test(path) || path.startsWith("/")) {
+      return path;
+    }
+    return `/${path.replace(/^\/+/, "")}`;
+  }
+
+  function slugify(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ä/g, "ae")
+      .replace(/ö/g, "oe")
+      .replace(/ü/g, "ue")
+      .replace(/ß/g, "ss")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
   }
 
   function formatDate(dateString) {

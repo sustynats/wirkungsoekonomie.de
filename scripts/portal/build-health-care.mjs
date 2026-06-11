@@ -259,7 +259,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
     <meta property="og:url" content="${canonical}">
     <meta property="og:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=${CSS_VERSION}">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
   </head>
   <body>
     <header class="site-header">
@@ -271,7 +271,7 @@ function page({ rel, title, description, section = "Wirkungsfelder", type = "Por
       <p class="print-meta">Wirkungsökonomie · ${esc(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: ${DATE}</p>
 ${body(base)}
     </main>
-    <script src="${base}assets/js/main.js?v=${JS_VERSION}"></script>
+    <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
   </body>
 </html>`);
 }
@@ -517,6 +517,69 @@ function crossLinks(base) {
   return `<section class="section" aria-labelledby="vernetzung"><div class="section-header"><p class="hero-kicker">Vernetzung</p>${h2("vernetzung", "Verwandte Wirkungsfelder und Werkzeuge")}</div>${cards(base, items)}</section>`;
 }
 
+function healthCentralPage() {
+  const t = [
+    { level: 2, text: "Gesundheit als zentrales Wirkungsfeld", id: "gesundheit-wirkungsfeld-title" },
+    { level: 2, text: "Vom Krankheitssystem zum Gesundheitssystem", id: "krankheit-gesundheit-title" },
+    { level: 2, text: "Prävention als Wirkleistung", id: "praevention-title" },
+    { level: 2, text: "One Health", id: "one-health-title" },
+    { level: 2, text: "Pflege und Care", id: "pflege-care-title" },
+    { level: 2, text: "Psychische Gesundheit", id: "psychische-gesundheit-title" },
+    { level: 2, text: "Produkte, Gebäude und Städte", id: "produkte-gebaeude-staedte-title" },
+    { level: 2, text: "Umwelt und Gesundheitsrisiken", id: "umwelt-risiken-title" },
+    { level: 2, text: "Daten, Datenschutz und Messbarkeit", id: "daten-messbarkeit-title" },
+    { level: 2, text: "SDG 3 und SDG+", id: "sdg3-sdgplus-title" },
+    { level: 2, text: "Weiterlesen", id: "weiterlesen-title" },
+  ];
+  const methodLinks = [
+    ["Wirkung", "begriffe/wirkung/"],
+    ["positive Netto-Wirkung", "begriffe/positive-netto-wirkung/"],
+    ["SDGs & SDG+", "verstehen/sdgs-sdgplus/"],
+    ["T-SROI", "werkzeuge/impact-controlling/t-sroi/"],
+    ["Wirkungssteuer", "werkzeuge/wirkungssteuergesetz/"],
+    ["WÖk-ID", "werkzeuge/woek-ids/"],
+    ["Reverse Merit Order", "werkzeuge/reverse-merit-order/"],
+    ["Prävention", "begriffe/praevention/"],
+    ["One Health", "begriffe/one-health/"],
+    ["Gesundheitssystem", "begriffe/gesundheitssystem/"],
+    ["Gesundheitswirkung", "begriffe/gesundheitswirkung/"],
+  ];
+  const topicCards = [
+    ["Gesundheit als Wirkungsfeld", "Gesundheit ist kein medizinisches Einzelereignis. Sie entsteht durch Wohnen, Arbeit, Ernährung, Bildung, Umwelt, Pflege, Versorgung, Kultur, Vertrauen und digitale Räume."],
+    ["Krankheitssystem zu Gesundheitssystem", "Die Wirkungsökonomie macht sichtbar, wo Strukturen Krankheit verwalten, statt Gesundheit, Autonomie, Resilienz und Teilhabe zu erzeugen."],
+    ["Prävention", "Vermiedene Krankheit, vermiedener Pflegebedarf, psychische Stabilisierung und geringere Krisenlast sind Wirkleistungen, auch wenn der Schaden gerade nicht eintritt."],
+    ["One Health", "Menschliche Gesundheit hängt mit Tieren, Pflanzen, Ökosystemen, Klima, Wasser, Boden, Biodiversität und Ernährung zusammen."],
+    ["Pflege und Care", "Pflege ist Wirkleistung für Würde, Beziehung, Autonomie, Angehörigenentlastung und gesellschaftliche Stabilität."],
+    ["Psychische Gesundheit", "Einsamkeit, Stress, Wohnunsicherheit, digitale Gewalt, Arbeitsdruck und Diskursvergiftung sind Wirkfaktoren, nicht nur private Belastungen."],
+  ];
+  const environmentCards = [
+    ["Gesunde Produkte", "Produkte wirken über Inhaltsstoffe, Materialgesundheit, Lieferketten, Nutzung, Entsorgung und Information auf Mensch, Planet und Demokratie."],
+    ["Gesunde Gebäude", "Gebäude wirken über Luft, Licht, Lärm, Hitze, Barrierefreiheit, Schimmel, Energie, Sicherheit und soziale Einbettung."],
+    ["Gesunde Städte", "Quartiere wirken über Grün, Schatten, Mobilität, Begegnung, Versorgung, Wasser, Lärm, Hitze und demokratische Teilhabe."],
+    ["NOx, Feinstaub und Luftqualität", "Luftschadstoffe sind Gesundheitswirkung, Umweltwirkung und Gerechtigkeitsfrage zugleich."],
+    ["Chemikaliensicherheit", "Chemikalien, Materialdaten und rote Linien dürfen nicht durch gute Werte an anderer Stelle kompensiert werden."],
+    ["Lärm und Hitze", "Lärm, Hitzeinseln und Klimarisiken werden als gesundheitliche, soziale und infrastrukturelle Wirkungen sichtbar."],
+  ];
+
+  page({
+    rel: "wirkungsfelder/gesundheit/index.html",
+    title: "Gesundheit in der Wirkungsökonomie - Prävention statt Krankheitsverwaltung",
+    description: "Gesundheit als zentrales Wirkungsfeld der Wirkungsökonomie: Prävention, Pflege, One Health, psychische Gesundheit, Umwelt, Daten und positive Netto-Wirkung.",
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Gesundheit in der Wirkungsökonomie</h1><p class="hero-subtitle">Prävention statt Krankheitsverwaltung.</p><p class="hero-text"><strong>Das heutige System finanziert Krankheit. Die Wirkungsökonomie finanziert Gesundheit.</strong></p><p>Gemeint ist keine medizinische Beratung und kein Personen-Scoring. Die Seite ordnet Strukturen, Räume, Produkte, Daten, Pflege, Prävention und politische Rückkopplung als Gesundheitswirkung ein.</p><div class="hero-actions no-print"><a class="btn btn-primary" href="#gesundheit-wirkungsfeld-title">Gesamtlogik lesen</a><a class="btn btn-secondary" href="${href(base, "wirkungsfelder/gesundheit-pflege/")}">Gesundheit &amp; Pflege vertiefen</a><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button></div></div><aside class="card"><p class="card-kicker">Schutzlinie</p><h2 class="card-title">Strukturen bewerten, nicht Menschen.</h2><p class="card-text">Keine Diagnostik, keine medizinische Beratung, keine automatische Entscheidung, keine Personenbewertung. Datenqualität, Datenschutz, Rechtsschutz und demokratische Verantwortung bleiben rote Linien.</p></aside></div></section>${toc(t)}
+      <section class="section" id="gesundheit-wirkungsfeld" aria-labelledby="gesundheit-wirkungsfeld-title"><div class="section-header"><p class="hero-kicker">Zentraler Wirkungsraum</p>${h2("gesundheit-wirkungsfeld-title", "Gesundheit als zentrales Wirkungsfeld")}<p>Gesundheit ist in der Wirkungsökonomie ein Querschnittsfeld. Sie verbindet körperliche und psychische Gesundheit, Pflege, Prävention, Versorgung, Umwelt, Wohnen, Arbeit, Bildung, Ernährung, Daten und Vertrauen. Positive Netto-Wirkung entsteht, wenn Lebensbedingungen Gesundheit wahrscheinlicher machen und negative Gesundheitswirkungen nicht verdeckt werden.</p></div>${cards(base, topicCards.map(([title, text]) => [title, "Baustein", text, "", ""]))}</section>
+      <section class="section" id="krankheit-gesundheit" aria-labelledby="krankheit-gesundheit-title"><div class="section-header"><p class="hero-kicker">Systemwechsel</p>${h2("krankheit-gesundheit-title", "Vom Krankheitssystem zum Gesundheitssystem")}<p>Das Krankheitssystem reagiert, wenn Schäden eingetreten sind. Ein Gesundheitssystem macht Schutz, Prävention, Pflege, gute Lebensbedingungen und resiliente Versorgung entscheidungsrelevant. Behandlung bleibt unverzichtbar, aber sie ist nicht der einzige Maßstab.</p></div>${comparisonBox()}</section>
+      <section class="section" id="praevention" aria-labelledby="praevention-title"><div class="section-header"><p class="hero-kicker">Wirkleistung</p>${h2("praevention-title", "Prävention als Wirkleistung")}<p>Prävention erzeugt Wirkung, obwohl der vermiedene Schaden nicht sichtbar eintritt. Wirkungsökonomisch relevant sind vermiedene Erkrankungen, vermiedener Pflegebedarf, längere Autonomie, geringere Krisenlast, bessere Lebensqualität und weniger Folgekosten.</p></div>${cards(base, [["Präventionsökonomie", "Glossar", "Warum vermiedene Schäden und Schutzfaktoren haushalts- und steuerungsfähig werden müssen.", "begriffe/praeventionsoekonomie/"], ["Wirkungshaushalt Gesundheit", "Werkzeug", "Prävention, Pflegeentlastung und Gesundheitsresilienz haushaltsfähig machen.", "wirkungsfelder/gesundheit-pflege/tools/wirkungshaushalt-gesundheit/"], ["T-SROI Prävention", "Methode", "Transformationsnutzen über vermiedene Schäden, Resilienz, Teilhabe und Folgekosten bewerten.", "wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/"]])}</section>
+      <section class="section" id="one-health" aria-labelledby="one-health-title"><div class="section-header"><p class="hero-kicker">One Health</p>${h2("one-health-title", "Mensch, Tiere, Ökosysteme und Ernährung zusammen denken")}<p>One Health verbindet Gesundheit mit Klima, Wasser, Boden, Biodiversität, Tieren, Pflanzen, Ernährungssystemen und Chemikaliensicherheit. Diese Perspektive verhindert, dass Gesundheitswirkung künstlich von Umweltwirkung getrennt wird.</p></div>${cards(base, [["One Health", "Glossar", "Gesundheit von Menschen, Tieren und Ökosystemen als verbundene Wirkungslogik.", "begriffe/one-health/"], ["One-Health-Logik", "Werkzeug", "Klima, Umwelt, Ernährung, Wasser, Biodiversität und Gesundheit gemeinsam betrachten.", "wirkungsfelder/gesundheit-pflege/tools/one-health-score/"], ["Planetary Health", "Glossar", "Gesundheit innerhalb planetarer Grenzen und ökologischer Belastbarkeit.", "begriffe/planetary-health/"]])}</section>
+      <section class="section" id="pflege-care" aria-labelledby="pflege-care-title"><div class="section-header"><p class="hero-kicker">Pflege &amp; Care</p>${h2("pflege-care-title", "Pflege und Care als Wirkleistung")}<p>Pflege und Care sind keine privaten Restgrößen. Sie stabilisieren Würde, Autonomie, Beziehungen, Angehörige, Erwerbsfähigkeit, Nachbarschaften und demokratische Teilhabe. Die Wirkungsökonomie macht diese Leistungen sichtbar, ohne Menschen nach Krankheit, Alter oder Unterstützungsbedarf zu bewerten.</p></div>${cards(base, [["Pflege als Wirkleistung", "Glossar", "Pflege als Würde-, Autonomie-, Beziehungs- und Stabilitätsleistung.", "begriffe/pflege-als-wirkleistung/"], ["Pflegewirkungscheck", "Werkzeug", "Pflege als Infrastruktur prüfen, ohne Menschen zu bewerten.", "wirkungsfelder/gesundheit-pflege/tools/pflegewirkungscheck/"], ["Kapitel Pflege", "Online-Buch", "Buchanker zur Pflege in der Wirkungsökonomie.", "referenz/kapitel-069-pflege/"]])}</section>
+      <section class="section" id="psychische-gesundheit" aria-labelledby="psychische-gesundheit-title"><div class="section-header"><p class="hero-kicker">Mental Health</p>${h2("psychische-gesundheit-title", "Psychische Gesundheit und soziale Stabilität")}<p>Psychische Gesundheit ist kein Randthema. Erschöpfung, Einsamkeit, Angst, digitale Gewalt, Arbeitsstress, Armut, Wohnstress und Vertrauensverlust wirken auf Bildung, Arbeit, Familie, Pflege, Öffentlichkeit und Demokratie.</p></div>${cards(base, [["Mental-Health-Reflexionstool", "Reflexion", "Nicht-diagnostische Orientierung zu Belastungsräumen, Schutzfaktoren und Unterstützungswegen.", "wirkungsfelder/gesundheit-pflege/tools/mental-health-reflexionstool/"], ["Medien & Öffentlichkeit", "Wirkungsfeld", "Informationsräume, Desinformation und Diskursqualität wirken auf psychische Stabilität und Vertrauen.", "wirkungsfelder/medien-oeffentlichkeit/"], ["Arbeit & Einkommen", "Wirkungsfeld", "Arbeitsbedingungen, Sinn, Sicherheit und Übergänge sind Gesundheitsräume.", "wirkungsfelder/arbeit-einkommen/"]])}</section>
+      <section class="section" id="produkte-gebaeude-staedte" aria-labelledby="produkte-gebaeude-staedte-title"><div class="section-header"><p class="hero-kicker">Alltagsräume</p>${h2("produkte-gebaeude-staedte-title", "Gesunde Produkte, Gebäude und Städte")}<p>Gesundheit entsteht auch in Produktdesign, Gebäuden, Quartieren, Mobilität, öffentlichem Raum und Beschaffung. Diese Wirkungen müssen mit Scorecards, WÖk-IDs, Datenqualität und roten Linien prüfbar werden.</p></div>${cards(base, environmentCards.slice(0, 3).map(([title, text]) => [title, "Gesundheitswirkung", text, "", ""]))}</section>
+      <section class="section" id="umwelt-risiken" aria-labelledby="umwelt-risiken-title"><div class="section-header"><p class="hero-kicker">Umweltwirkung</p>${h2("umwelt-risiken-title", "NOx, Feinstaub, Chemikalien, Lärm und Hitze")}<p>Umweltbelastungen sind keine abstrakten Nebenfolgen. Sie wirken auf Atemwege, Herz-Kreislauf-System, Pflegebedarf, psychische Belastung, Arbeitsfähigkeit, Lernfähigkeit, soziale Ungleichheit und institutionelles Vertrauen.</p></div>${cards(base, environmentCards.slice(3).map(([title, text]) => [title, "Gesundheitsrisiko", text, "", ""]))}</section>
+      <section class="section" id="daten-messbarkeit" aria-labelledby="daten-messbarkeit-title"><div class="section-header"><p class="hero-kicker">Messbarkeit</p>${h2("daten-messbarkeit-title", "Gesundheitsdaten, Datenschutz und Prüfpfade")}<p>Gesundheitswirkung wird über Indikatoren, Quellen, Einheiten, Datenqualität, Unsicherheit, Schwellen, Reviewstatus und Prüfpfade nachvollziehbar. Gesundheitsdaten dürfen aber nicht zu Überwachung, Diskriminierung oder automatischen Entscheidungen führen.</p></div>${cards(base, [["WÖk-ID Register", "Register", "Indikatoren, Quellen, Berechnungslogik und Datenqualität versionierbar prüfen.", "woek-id-register/"], ["Gesundheitsdatenraum", "Werkzeug", "Zweckbindung, Datensparsamkeit, Pseudonymisierung, Einwilligung, Governance und Korrekturwege prüfen.", "wirkungsfelder/gesundheit-pflege/tools/gesundheitsdatenraum-privacy-by-design/"], ["Gesundheitswirkungscheck", "Werkzeug", "Programme, Räume oder Maßnahmen nach Gesundheitsgewinn, Prävention, Teilhabe und Nebenwirkungen prüfen.", "wirkungsfelder/gesundheit-pflege/tools/gesundheitswirkungscheck/"]])}</section>
+      <section class="section" id="sdg3-sdgplus" aria-labelledby="sdg3-sdgplus-title"><div class="portal-reference-block"><p class="hero-kicker">Referenzrahmen</p>${h2("sdg3-sdgplus-title", "SDG 3, Agenda 2030 und SDG+")}<p>SDG 3 ist der direkte Referenzrahmen für Gesundheit und Wohlergehen. SDG+ ergänzt transparent WÖk-Dimensionen wie Demokratiequalität, institutionelles Vertrauen, Rechtsstaatlichkeit, Medienqualität, digitale Selbstbestimmung und gesellschaftlichen Zusammenhalt. SDG+ ist keine offizielle UN-Kategorie.</p><div class="model-strip">${methodLinks.map(([label, url]) => `<a href="${href(base, url)}">${esc(label)}</a>`).join("")}</div></div></section>
+      <section class="section" id="weiterlesen" aria-labelledby="weiterlesen-title"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${h2("weiterlesen-title", "Weiterlesen und anwenden")}<p>Die Gesundheitsseite ist der Einstieg. Die bestehende Detailstruktur bleibt erhalten und wird von hier aus zugänglich.</p></div>${cards(base, [["Gesundheit & Pflege", "Portal", "Vollständiges Portal mit Dossiers, Detailkonzepten, Tools und Quellen.", "wirkungsfelder/gesundheit-pflege/"], ["Journal: Gesundheit erzeugen", "Journal", "Vorbereiteter Artikel zur Verschiebung von Krankheitsverwaltung zu Gesundheitswirkung.", "journal/gesundheit-erzeugen-statt-krankheit-verwalten/"], ["Arbeitsbibliothek Gesundheit & Pflege", "Bibliothek", "Konzeptpapier, Gesamtdossier, Detailkonzepte, Einzeldossiers und Methodiken.", "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/"]])}</section>${protectionBlock()}${sourcesBlock()}`,
+  });
+}
+
 function portalPage() {
   const t = [
     { level: 2, text: "Leitsatz", id: "leitsatz" },
@@ -578,6 +641,7 @@ function updateSitemap() {
   const sitemap = path.join(ROOT, "sitemap.xml");
   if (!fs.existsSync(sitemap)) return;
   const rels = [
+    "wirkungsfelder/gesundheit/",
     "wirkungsfelder/gesundheit-pflege/",
     "wirkungsfelder/gesundheit-pflege/konzept/",
     "wirkungsfelder/gesundheit-pflege/dossier/",
@@ -594,6 +658,7 @@ function updateSitemap() {
   fs.writeFileSync(sitemap, xml.replace("</urlset>", `${entries}\n</urlset>`), "utf8");
 }
 
+healthCentralPage();
 portalPage();
 for (const doc of documents) documentPage(doc);
 for (const tool of tools) toolPage(tool);
