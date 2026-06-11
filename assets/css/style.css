@@ -2396,88 +2396,6 @@ body.nav-is-open {
   margin-top: 0.35rem;
 }
 
-.hero-audio {
-  width: min(100%, 620px);
-  margin-top: 1.6rem;
-  padding: 1rem;
-  border: 1px solid rgba(47, 125, 92, 0.18);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.56);
-}
-
-.audio-label {
-  display: block;
-  margin-bottom: 0.65rem;
-  color: var(--navy);
-  font-weight: 800;
-}
-
-.hero-audio audio {
-  display: block;
-  width: 100%;
-  min-height: 42px;
-}
-
-.audio-transcript {
-  margin-top: 0.85rem;
-  color: var(--muted);
-  font-size: 0.96rem;
-}
-
-.audio-transcript summary {
-  cursor: pointer;
-  color: var(--green);
-  font-weight: 800;
-}
-
-.audio-transcript p {
-  margin: 0.75rem 0 0;
-}
-
-.audio-transcript-note {
-  margin: 0.5rem 0 0;
-  color: var(--muted);
-  font-size: 0.85rem;
-  line-height: 1.4;
-}
-
-.audio-explanation-block {
-  width: min(980px, calc(100% - (2 * var(--space-gutter))));
-  margin: 0 auto var(--space-5);
-  padding: 0 var(--space-1);
-}
-
-.audio-explanation-card {
-  width: 100%;
-  margin: 0;
-  border-left: 4px solid var(--green);
-}
-
-.audio-explanation-meta,
-.audio-player-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.75rem;
-  margin: 0.75rem 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.audio-player-actions {
-  margin: 0.55rem 0 0;
-  font-size: 0.94rem;
-  font-weight: 800;
-}
-
-.audio-explanation-transcript {
-  margin-top: 1rem;
-}
-
-.audio-explanation-transcript p {
-  max-width: 72ch;
-}
-
 .hero-system-visual {
   width: min(100%, var(--container-wide));
   margin: clamp(2.5rem, 6vw, 5rem) auto 0;
@@ -10472,19 +10390,12 @@ textarea {
   }
 
   .kompass-hero p,
-  .kompass-notice,
-  .hero-audio,
-  .hero-audio .audio-label,
-  .hero-audio p {
+  .kompass-notice {
     width: min(100%, 21rem) !important;
     max-width: 21rem !important;
     max-inline-size: 21rem !important;
     overflow-wrap: anywhere;
     word-break: break-word;
-  }
-
-  .hero-audio {
-    overflow: hidden;
   }
 
   .hero-kicker,
