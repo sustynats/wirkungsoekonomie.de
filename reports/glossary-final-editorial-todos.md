@@ -1,0 +1,79 @@
+# Redaktionelle TODOs Final
+
+- Timestamp: 2026-06-02T06:50:09.381Z
+- P0: 0
+- P1: 71
+- P2: 0
+- P3: 0
+
+- P1 required_sections: algorithmische-fairness: examples
+- P1 required_sections: beschaffung-als-wirkungshebel: measurement
+- P1 required_sections: ehrliche-preise: measurement
+- P1 required_sections: enterprise-risk-management-nach-wirkung: measurement
+- P1 required_sections: fuenftes-p-planet: examples
+- P1 required_sections: geschaeftsmodellpruefung: measurement
+- P1 required_sections: greenwashing: examples
+- P1 required_sections: ki-governance: examples
+- P1 required_sections: kii: measurement
+- P1 required_sections: lieferantenbewertung: measurement
+- P1 required_sections: lieferkettenwirkung: measurement
+- P1 required_sections: oeffentliche-beschaffung: measurement
+- P1 required_sections: portfolio-wirkung: measurement
+- P1 required_sections: produktdaten: examples
+- P1 required_sections: produktscorecard: measurement, metadata
+- P1 required_sections: produktwirkung: measurement, metadata
+- P1 required_sections: purpose-washing: measurement
+- P1 required_sections: supply-chain-resilienz: measurement
+- P1 required_sections: transformationspfad: measurement
+- P1 required_sections: unternehmen-als-wirkungssystem: measurement
+- P1 required_sections: versicherbarkeit: measurement
+- P1 required_sections: wirkung-im-preisschild: measurement
+- P1 required_sections: wirkungs-bip: measurement
+- P1 required_sections: wirkungsassurance: measurement
+- P1 required_sections: wirkungsaudit: measurement
+- P1 required_sections: wirkungsbudget: measurement
+- P1 required_sections: wirkungscontrolling: measurement
+- P1 required_sections: wirkungsdatenraeume: examples
+- P1 required_sections: wirkungsgutschrift: measurement
+- P1 required_sections: wirkungsinnovation: examples
+- P1 required_sections: wirkungskommunikation: measurement
+- P1 required_sections: wirkungsorientierte-unternehmensfuehrung: measurement
+- P1 required_sections: wirkungsrendite: measurement
+- P1 required_sections: wirkungsrueckkopplung: examples
+- P1 required_sections: wirkungstransparenzbericht: measurement
+- P1 required_sections: oeffentlichkeit-als-wirkungsraum: measurement
+- P1 required_sections: plattformlogik-und-algorithmen: measurement
+- P1 required_sections: framing-sprache-tonalitaet: measurement
+- P1 required_sections: desinformation: measurement
+- P1 required_sections: diskurskultur: measurement
+- P1 required_sections: creator-als-oeffentliche-akteure: measurement
+- P1 required_sections: host-wirkung: measurement
+- P1 required_sections: moderation-und-community-dynamik: measurement
+- P1 required_sections: kultur-als-resonanzsystem: measurement
+- P1 required_sections: erinnerungskultur: measurement
+- P1 required_sections: digitalisierung-als-infrastruktur-der-wirkungsoekonomie: examples
+- P1 required_sections: cyberresilienz: examples
+- P1 required_sections: wissenschaft-als-wirkungsinfrastruktur: examples
+- P1 required_sections: wirkungsorientierte-forschung-und-innovation: examples
+- P1 required_sections: open-science: examples
+- P1 required_sections: wissensrat: examples
+- P1 required_sections: wirkungsrecht: examples
+- P1 required_sections: rechtsprechung-als-korrekturinstanz: examples
+- P1 required_sections: wissenschaftliche-politikberatung: examples
+- P1 required_sections: oeffentliche-statistik: examples
+- P1 required_sections: verhaeltnismaessigkeit-nach-wirkung: examples
+- P1 required_sections: europa-als-wirkungsraum: examples
+- P1 required_sections: wirkungsbasierter-handel: examples
+- P1 required_sections: cbam-und-grenzausgleich: examples
+- P1 required_sections: wirkungsgovernance: examples
+- P1 required_sections: kulturelle-anschlussfaehigkeit: examples
+- P1 required_sections: globale-resilienz: examples
+- P1 required_sections: internationale-krisenvorsorge: examples
+- P1 required_sections: daten-und-fruehwarnkooperation: examples
+- P1 required_sections: gemeinsame-zukunftssicherung: examples
+- P1 required_sections: globale-makro-wirkungsrisiken: examples
+- P1 required_sections: umsetzungspfad: examples
+- P1 required_sections: pilotprojekte: examples
+- P1 required_sections: wirkungsoekonomie-im-alltag: examples
+- P1 required_sections: politische-uebergangspfade: examples
+- P1 required_sections: wirkungs-konversion-von-altkapital: examples

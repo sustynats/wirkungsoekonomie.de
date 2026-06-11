@@ -1,0 +1,1511 @@
+# Content-Reference-Report
+
+Erzeugt: 2026-06-11T10:07:09.550Z
+Resolved references: 7337
+Warnings: 2708
+
+## Warnungen
+
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] manifest-der-wirkungsoekonomie - Titel aus Slug erzeugt
+- [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
+- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
+- [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
+- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] CSRD und Prüfungsstandards - Titel aus Slug erzeugt
+- [unresolved-reference] CSRD und Prüfungsstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wirkung-wirkungspotenzial-wirkungsrisiko - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
+- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
+- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
+- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
+- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] rente-soziale-sicherung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] wp-rente - Titel aus Slug erzeugt
+- [unresolved-reference] wp-rente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
+- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
+- [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
+- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Maßstabskrise - Titel aus Slug erzeugt
+- [unresolved-reference] Die neue Ordnung des Wohlstands: Maßstabskrise - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Leistung neu definieren - Titel aus Slug erzeugt
+- [unresolved-reference] Die neue Ordnung des Wohlstands: Leistung neu definieren - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Titel aus Slug erzeugt
+- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Titel aus Slug erzeugt
+- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
+- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Arbeitspapier Wirkungseinkommensteuer - Titel aus Slug erzeugt
+- [unresolved-reference] Arbeitspapier Wirkungseinkommensteuer - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] EU-Kommission Clean Industrial Deal - Titel aus Slug erzeugt
+- [unresolved-reference] EU-Kommission Clean Industrial Deal - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
+- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
+- [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
+- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Wirkungsradar Sprachmuster und Emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] Wirkungsradar Sprachmuster und Emotionalisierung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
+- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
+- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
+- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+
+## Aufgelöste Verweise
+
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/dossiers/marketing_fuenftes_p_planet/ -> Einzeldossier Marketing und das fünfte P: Planet (Whitepaper, Beschreibung: ja)
+- /bibliothek/nachhaltiges-marketing-mix/ -> Nachhaltiges Marketing-Mix | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/marketing_fuenftes_p_planet/ -> Detailkonzept Marketing und das fünfte P: Planet (Wirkungsfeld, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/marketing-vertrieb-fuenftes-p-planet/ -> Marketing, Vertrieb und das fünfte P: Planet (Wirkungsfeld, Beschreibung: ja)
+- /bibliothek/nachhaltiges-marketing-mix/ -> Nachhaltiges Marketing-Mix (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/nachhaltiger-einzelhandel/ -> Nachhaltiger Einzelhandel (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/ -> Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/nachhaltigkeitstransformation-im-handwerk/ -> Nachhaltigkeitstransformation im Handwerk (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.html -> Multipolare Systemdynamik 2025 – Sicherheit, Transformation und die stille Destabilisierung Europas (Journalartikel, Beschreibung: ja)
+- /dokumente/nats-woek-allgemein/#political-implementation -> NATS WÖk allgemein – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html -> Die Architektur der europäischen Nachhaltigkeitsregulierung (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html -> Wenn Politik Unternehmen nach Argumenten fragt – und was das über unser System sagt (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#chapter-glossary-4 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.html -> Warum die freie Marktwirtschaft sich selbst zerstört – und wie sie zu retten ist (Journalartikel, Beschreibung: ja)
+- /dokumente/wp-produkte/#political-implementation -> WP Produkte – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/nats-woek-allgemein/#political-implementation -> NATS WÖk allgemein – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.html -> Produktbesteuerung durch Wirkung – Wenn Preise beginnen, die Wahrheit zu sagen (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#chapter-glossary-4 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- / -> Gewinn und Wachstum reichen als Maßstab nicht (Website, Beschreibung: ja)
+- /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/der-versoehner-und-die-wellen/ -> Der Versöhner und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/#schlussbemerkung -> Kommunaler Wirkungsindex (KWI) | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html -> Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert – sondern an seiner Logik (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.html -> Wirkung schlägt Wahrheit: Wie öffentliche Kommunikation Demokratie formt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/agenda-2030/#downloads -> SDGs und Agenda 2030 als globaler Referenzrahmen (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#downloads -> SDGs und Agenda 2030 als globaler Referenzrahmen (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#downloads -> Dossier SDGs und Agenda 2030 als globaler Referenzrahmen (Whitepaper, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/geschichte/#history-export -> Die Geschichte der SDGs (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
+- /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 (Methode, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#downloads -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/#downloads -> SDG+ als Erweiterung der Wirkungsökonomie (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister.: Seite sichern oder weitergeben (Detailkonzept, Beschreibung: ja)
+- /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/fuenf-wellen-wirkungsentfaltung/ -> Die fünf Wellen der Wirkungsentfaltung | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-062-parteien-und-programme/#chapter-glossary-62 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/fuenf-wellen-oeffentlicher-wirkung/ -> Die fünf Wellen öffentlicher Wirkung | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html -> SDG+ – Warum Nachhaltigkeit ohne Wirkungsdemokratie scheitert (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-062-parteien-und-programme/#chapter-glossary-62 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/dossier/ -> Gesamtdossier Wissenschaft, Innovation & Digitalisierung (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#chapter-glossary-82 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/dossiers/ -> Einzeldossiers Wissenschaft, Innovation & Digitalisierung (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/detailkonzepte/ -> Detailkonzepte Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/digitale-teilhabe-kompetenz-bildung/ -> Digitale Teilhabe, Kompetenz und Bildung | Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#chapter-glossary-82 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-027-planet-koexistenz-statt-extraktion/#chapter-glossary-27 -> Kapitel 27: Planet: Koexistenz statt Extraktion (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-027-planet-koexistenz-statt-extraktion/#chapter-glossary-27 -> Kapitel 27: Planet: Koexistenz statt Extraktion (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Journalartikel, Beschreibung: ja)
+- /bibliothek/folgencheck-wirkungspolitische-sprache/ -> Folgencheck statt Faktencheck | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/ -> Detailkonzept: Algorithmische Fairness und digitale Rechte (Website, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/konzeptpapier/ -> Konzeptpapier (Website, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /referenz/ -> Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel/ -> Kapitel 1 bis 108 (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#chapter-glossary-82 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#chapter-glossary-82 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/ -> Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-030-von-wirkung-zu-messung/#chapter-glossary-30 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-050-produktscorecards/#chapter-glossary-50 -> Kapitel 50: Produktscorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /fuer/investoren.html -> Kapitalwirkung statt blinde Rendite (Website, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-030-von-wirkung-zu-messung/#chapter-glossary-30 -> Kapitel 30: Von Wirkung zu Messung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-050-produktscorecards/#chapter-glossary-50 -> Kapitel 50: Produktscorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/alltag-2035/ -> Detailkonzept 1: Alltag 2035 und wirkungsfähiger Alltag (Website, Beschreibung: ja)
+- /referenz/kapitel-107-zukunftsbilder/#chapter-glossary-107 -> Kapitel 107: Zukunftsbilder (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/ -> Portalstartseite Zukunftsbilder Wirkungswohlstand (Website, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/ -> Gesamtdossier Zukunftsbilder Wirkungswohlstand (Whitepaper, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/downloads/ -> Downloads (Website, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/konzeptpapier/ -> Konzeptpapier Zukunftsbilder Wirkungswohlstand (Website, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-107-zukunftsbilder/#chapter-glossary-107 -> Kapitel 107: Zukunftsbilder (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.html -> Warum wir glauben, Nachhaltigkeit sei teuer (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/multipolare-ordnung-kulturelle-anschlussfaehigkeit/ -> Detailkonzept: Multipolare Ordnung und kulturelle Anschlussfähigkeit (Website, Beschreibung: ja)
+- /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
+- /portale/migration-vielfalt/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
+- /portale/wirkungsakademie-fachbibliothek/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
+- /wirkungsfelder/rente-soziale-sicherung/politische-umsetzung/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit (Website, Beschreibung: ja)
+- /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/migration-vielfalt/zugehoerigkeit-und-teilgabe/ -> Zugehörigkeit und Teilgabe (Website, Beschreibung: ja)
+- /portale/migration-vielfalt/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /portale/migration-vielfalt/migration-als-wirkungsfeld/ -> Migration als Wirkungsfeld (field, Beschreibung: ja)
+- /portale/migration-vielfalt/arbeitsmarkt-fachkraefte-demografie/ -> Arbeitsmarkt, Fachkräfte und Demografie (Website, Beschreibung: ja)
+- /portale/migration-vielfalt/bildung-sprache-wirkungskompetenz/ -> Bildung, Sprache und Wirkungskompetenz (Website, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/#13-quellen-und-bezugsdokumente-2 -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /portale/migration-vielfalt/diskurs-medien-polarisierung/ -> Diskurs, Medien und Polarisierung (Website, Beschreibung: ja)
+- /referenz/kapitel-072-kultur-und-teilhabe/#chapter-glossary-72 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html -> Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-072-kultur-und-teilhabe/#chapter-glossary-72 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.html -> Wenn Maschinen arbeiten – warum die Wirkungsökonomie keine Angst vor KI hat (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.html -> Wenn Maschinen arbeiten: Warum wir das System neu denken müssen (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/arbeitsbibliothek/soziales/#export-title -> Soziales | Werkstatt der Wirkungsökonomie (Website, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#chapter-glossary-57 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#chapter-glossary-57 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/finanzsystem-kapital/esg-ratings-boersen-impact-exchange/ -> ESG-Ratings, Börsen und Impact Exchange | Finanzsystem & Kapital (Wirkungsfeld, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/finanzsystem-kapital/ -> Finanzsystem & Kapital (Wirkungsfeld, Beschreibung: ja)
+- /werkstatt/arbeitsbibliothek/wirkungsfelder/finanzsystem-kapital/#downloads -> Arbeitsbibliothek Finanzsystem & Kapital (Website, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-081-wirkungsdatenraeume/#chapter-glossary-81 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-050-produktscorecards/#chapter-glossary-50 -> Kapitel 50: Produktscorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#chapter-glossary-31 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/technische-leitlinien-wustg-v2/#political-implementation -> Technische Leitlinien WUStG Vollversion Extended v2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-081-wirkungsdatenraeume/#chapter-glossary-81 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-050-produktscorecards/#chapter-glossary-50 -> Kapitel 50: Produktscorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#chapter-glossary-31 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-036-wirkung-als-rechtsprinzip/#chapter-glossary-36 -> Kapitel 36: Wirkung als Rechtsprinzip (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#chapter-glossary-37 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-036-wirkung-als-rechtsprinzip/#chapter-glossary-36 -> Kapitel 36: Wirkung als Rechtsprinzip (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#chapter-glossary-37 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-036-wirkung-als-rechtsprinzip/#chapter-glossary-36 -> Kapitel 36: Wirkung als Rechtsprinzip (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#chapter-glossary-37 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html -> Wirkungsökonomie: Wir messen Wirkung längst. Warum steuern wir noch nicht danach? (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-036-wirkung-als-rechtsprinzip/#chapter-glossary-36 -> Kapitel 36: Wirkung als Rechtsprinzip (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/#chapter-glossary-37 -> Kapitel 37: Das Wirkungssteuergesetz WStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/datenqualitaet-assurance/ -> Datenqualität & Assurance (Methode, Beschreibung: ja)
+- /werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/ -> Detailkonzept Datenqualität und Assurance (Methode, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/ -> Einzeldossier Datenqualität und Assurance (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/ -> Wirkungscontrolling im Unternehmen (Wirkungsfeld, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ -> Detailkonzept: Audit, Assurance und Datenqualität (Website, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#chapter-glossary-82 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
+- /referenz/kapitel-082-ki-governance/#chapter-glossary-82 -> Kapitel 82: KI-Governance (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/#chapter-glossary-13 -> Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-062-parteien-und-programme/#chapter-glossary-62 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /erleben/ -> Erleben | Demos der Wirkungsökonomie (Website, Beschreibung: ja)
+- /dokumente/nats-woek-allgemein/#political-implementation -> NATS WÖk allgemein – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/#chapter-glossary-13 -> Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-062-parteien-und-programme/#chapter-glossary-62 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-002-die-massstabskrise/#chapter-glossary-2 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/der-versoehner-und-die-wellen/ -> Der Versöhner und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /bibliothek/fuenf-wellen-oeffentlicher-wirkung/ -> Die fünf Wellen öffentlicher Wirkung | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html -> Nicht der Stein verändert die Welt. Sondern die Wellen. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#chapter-glossary-74 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-062-parteien-und-programme/#chapter-glossary-62 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-002-die-massstabskrise/#chapter-glossary-2 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#chapter-glossary-74 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-062-parteien-und-programme/#chapter-glossary-62 -> Kapitel 62: Parteien und Programme (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2025-12-15-medien-plattformen-und-wirkung.html -> Medien, Plattformen und Wirkung (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-101-warum-neue-massstaebe-widerstand-erzeugen/#chapter-glossary-101 -> Kapitel 101: Warum neue Maßstäbe Widerstand erzeugen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/konzept/ -> Konzeptpapier Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.html -> Macht ohne Mehrheit: Die AfD-Strategie wirkungsökonomisch erklärt (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html -> SDG+ – Warum Nachhaltigkeit ohne Wirkungsdemokratie scheitert (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-101-warum-neue-massstaebe-widerstand-erzeugen/#chapter-glossary-101 -> Kapitel 101: Warum neue Maßstäbe Widerstand erzeugen (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/ -> Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: Zentrale Begriffe dieses Kapitels (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/index 2.html -> Automatisierung und Maschinenleistung: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/ -> Automatisierung und Maschinenleistung | Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/ -> Automatisierung, Sozialabgaben-Entkopplung und Wirkungsdividende | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/konzeptpapier/ -> Konzeptpapier | Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit | Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /erleben/automatisierungs-wirkungseinkommensrechner/ -> Automatisierungs- und Wirkungseinkommensrechner (Website, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/ -> Arbeit & Einkommen | Automatisierung und Wirkungseinkommen (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/automatisierungsdividende/ -> Automatisierungsdividende (Methode, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html -> Wirkungsfonds und Automatisierungsdividende: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/ -> Automatisierung, Sozialabgaben-Entkopplung und Wirkungsdividende | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/ -> Wirkungsfonds und Automatisierungsdividende | Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/finanzsystem-kapital/automatisierungsdividende/ -> Automatisierungsdividende und Maschinenwertschöpfung | Finanzsystem & Kapital (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/dossiers/ -> Einzeldossiers | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/finanzsystem-kapital/dossiers/ -> Einzeldossiers Finanzsystem & Kapital (Whitepaper, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/gesamtdossier/ -> Gesamtdossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#chapter-glossary-57 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#chapter-glossary-58 -> Kapitel 58: Wirkungsrente (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html -> Politische Anschlussfähigkeit: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#chapter-glossary-57 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#chapter-glossary-58 -> Kapitel 58: Wirkungsrente (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html -> Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik (Journalartikel, Beschreibung: ja)
+- /bibliothek/fuenf-wellen-wirkungsentfaltung/ -> Die fünf Wellen der Wirkungsentfaltung | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-019-nichttriviale-systeme/#chapter-glossary-19 -> Kapitel 19: Nichttriviale Systeme (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-019-nichttriviale-systeme/#chapter-glossary-19 -> Kapitel 19: Nichttriviale Systeme (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/#13-quellen-und-bezugsdokumente-2 -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/#export-title -> SDG 16 Frieden, Gerechtigkeit und starke Institutionen (Website, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/#downloads -> SDG-Unterziele global, Europa und Deutschland (Website, Beschreibung: ja)
+- /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/staat-recht-demokratie/demokratie-rechtsstaat-sdgplus-wirkungsraum/ -> Demokratie, Rechtsstaat und SDG+ als Wirkungsraum | Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#chapter-glossary-92 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/ -> Resiliente Wertschöpfungsketten und Einkauf nach Wirkung (Wirkungsfeld, Beschreibung: ja)
+- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#chapter-glossary-85 -> Kapitel 85: DPP-Infrastruktur und technische Umsetzung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/#chapter-glossary-93 -> Kapitel 93: Globale Institutionen und Wirkungsgovernance (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/ -> Produktentwicklung, Produktscorecards und digitale Produktpässe (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#chapter-glossary-92 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#chapter-glossary-85 -> Kapitel 85: DPP-Infrastruktur und technische Umsetzung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/#chapter-glossary-93 -> Kapitel 93: Globale Institutionen und Wirkungsgovernance (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#political-implementation -> Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#quellen-und-arbeitsgrundlagen -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /blog/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.html -> Wenn Politik Unternehmen nach Argumenten fragt – und was das über unser System sagt (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#chapter-glossary-57 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/ -> Wirkungseinkommen | Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/dossiers/ -> Einzeldossiers | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html -> Wirkungsfonds und Automatisierungsdividende: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#chapter-glossary-57 -> Kapitel 57: Wirkungseinkommen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#chapter-glossary-56 -> Kapitel 56: Arbeit, Automatisierung und Maschinenleistung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-075-plattformlogik-und-algorithmen/#chapter-glossary-75 -> Kapitel 75: Plattformlogik und Algorithmen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-014-systemischer-wert-und-normativer-wert/#chapter-glossary-14 -> Kapitel 14: Systemischer Wert und normativer Wert (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-075-plattformlogik-und-algorithmen/#chapter-glossary-75 -> Kapitel 75: Plattformlogik und Algorithmen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-014-systemischer-wert-und-normativer-wert/#chapter-glossary-14 -> Kapitel 14: Systemischer Wert und normativer Wert (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/#chapter-glossary-26 -> Kapitel 26: Sinn, Selbstwirksamkeit und Beziehung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/#chapter-glossary-52 -> Kapitel 52: Konsumwirkung und Verbraucherinformation (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-088-disziplinen-im-wirkungswechsel/#chapter-glossary-88 -> Kapitel 88: Disziplinen im Wirkungswechsel (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-024-der-mensch-im-system/#chapter-glossary-24 -> Kapitel 24: Der Mensch im System (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/#chapter-glossary-26 -> Kapitel 26: Sinn, Selbstwirksamkeit und Beziehung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/#chapter-glossary-52 -> Kapitel 52: Konsumwirkung und Verbraucherinformation (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-088-disziplinen-im-wirkungswechsel/#chapter-glossary-88 -> Kapitel 88: Disziplinen im Wirkungswechsel (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-007-buerokratie-als-reparaturmaschine/#chapter-glossary-7 -> Kapitel 7: Bürokratie als Reparaturmaschine (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-097-der-umsetzungspfad/#chapter-glossary-97 -> Kapitel 97: Der Umsetzungspfad (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/#chapter-glossary-105 -> Kapitel 105: Freiheit, Markt und der Vorwurf der Planwirtschaft (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/#chapter-glossary-13 -> Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-002-die-massstabskrise/#chapter-glossary-2 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-007-buerokratie-als-reparaturmaschine/#chapter-glossary-7 -> Kapitel 7: Bürokratie als Reparaturmaschine (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-097-der-umsetzungspfad/#chapter-glossary-97 -> Kapitel 97: Der Umsetzungspfad (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/#chapter-glossary-105 -> Kapitel 105: Freiheit, Markt und der Vorwurf der Planwirtschaft (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/#chapter-glossary-13 -> Kapitel 13: Wirkungsträger, Wirkungsempfänger, Wirkungsräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/ -> Sozialabgaben entkoppeln | Arbeit & Einkommen (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/rente-soziale-sicherung/automatisierung-sozialabgaben/ -> Automatisierung, Sozialabgaben-Entkopplung und Wirkungsdividende | Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/gesamtdossier/ -> Gesamtdossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html -> Politische Anschlussfähigkeit: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/rente-soziale-sicherung/ -> Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/dossiers/ -> Einzeldossiers | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/rente-soziale-sicherung/dossier/ -> Gesamtdossier Rente & soziale Sicherung (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html -> Wirkungsfonds und Automatisierungsdividende: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /erleben/automatisierungs-wirkungseinkommensrechner/ -> Automatisierungs- und Wirkungseinkommensrechner (Website, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/gesamtdossier/ -> Gesamtdossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html -> Politische Anschlussfähigkeit: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/dossiers/ -> Einzeldossiers | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html -> Wirkungsfonds und Automatisierungsdividende: Dossier | Arbeit & Einkommen (Whitepaper, Beschreibung: ja)
+- /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 (Methode, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-040-der-wirkungsrat/#chapter-glossary-40 -> Kapitel 40: Der Wirkungsrat (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI – Wirkungsökonomie Online (Whitepaper, Beschreibung: ja)
+- /dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#political-implementation -> Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-081-wirkungsdatenraeume/#chapter-glossary-81 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#quellen-und-arbeitsgrundlagen -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#chapter-glossary-31 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-040-der-wirkungsrat/#chapter-glossary-40 -> Kapitel 40: Der Wirkungsrat (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-081-wirkungsdatenraeume/#chapter-glossary-81 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#chapter-glossary-31 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#chapter-glossary-6 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/#chapter-glossary-6 -> Kapitel 6: Nachhaltigkeit ist keine Strategie (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.html -> Die unterschätzte Macht der Tonalität in der Kommunikation (Journalartikel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/#chapter-glossary-35 -> Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/ -> Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/ -> Lieferketten, Importlogik und Wirkungsvorsteuer | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/datenraeume-interoperabilitaet-wirkungsdaten/ -> Datenräume, Interoperabilität und Wirkungsdaten | Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/#chapter-glossary-35 -> Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/transformation-uebergaenge-implementierung/unternehmens-transformationspfade/ -> Detailkonzept Unternehmens-Transformationspfade (Website, Beschreibung: ja)
+- /referenz/kapitel-097-der-umsetzungspfad/#chapter-glossary-97 -> Kapitel 97: Der Umsetzungspfad (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-098-pilotprojekte/#chapter-glossary-98 -> Kapitel 98: Pilotprojekte (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#political-implementation -> Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /werkzeuge/ -> Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 (Methode, Beschreibung: ja)
+- /werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/#downloads -> Detailkonzept Wirkungsumsatzsteuer im Rechtsrahmen (Whitepaper, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#quellen-und-arbeitsgrundlagen -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 14.2 Quellen und Arbeitsgrundlagen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-097-der-umsetzungspfad/#chapter-glossary-97 -> Kapitel 97: Der Umsetzungspfad (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-098-pilotprojekte/#chapter-glossary-98 -> Kapitel 98: Pilotprojekte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-040-der-wirkungsrat/#chapter-glossary-40 -> Kapitel 40: Der Wirkungsrat (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-063-lobbyismus-und-machtkonzentration/#chapter-glossary-63 -> Kapitel 63: Lobbyismus und Machtkonzentration (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/dossiers/wirtschaft-unternehmen/#downloads -> Gesamtdossier Wirtschaft & Unternehmen (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#chapter-glossary-84 -> Kapitel 84: Cyberresilienz und operative Stabilität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-040-der-wirkungsrat/#chapter-glossary-40 -> Kapitel 40: Der Wirkungsrat (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-063-lobbyismus-und-machtkonzentration/#chapter-glossary-63 -> Kapitel 63: Lobbyismus und Machtkonzentration (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#chapter-glossary-84 -> Kapitel 84: Cyberresilienz und operative Stabilität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/studio/embed/kernenergie-wieder-in-deutschland/ -> Embed-Widget – Kernenergie wieder in Deutschland? (Distribution, Beschreibung: ja)
+- /dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#political-implementation -> Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/ -> Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/woek-partei/#political-implementation -> WÖK-Partei – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
+- /bibliothek/nachhaltiger-einzelhandel/ -> Nachhaltiger Einzelhandel | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html -> Von der Wertschöpfungskette zum Wirkungskreislauf (Journalartikel, Beschreibung: ja)
+- /blog/was-ist-nachhaltigkeit-wirklich.html -> Was ist Nachhaltigkeit wirklich? – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-053-markttransformation/#chapter-glossary-53 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-053-markttransformation/#chapter-glossary-53 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-015-leistung-neu-definieren/#chapter-glossary-15 -> Kapitel 15: Leistung neu definieren (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/#chapter-glossary-39 -> Kapitel 39: Wirkungshaushalt und öffentliche Mittel (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-002-die-massstabskrise/#chapter-glossary-2 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-054-wirkungs-bip-und-neue-wohlstandsmessung/#chapter-glossary-54 -> Kapitel 54: Wirkungs-BIP und neue Wohlstandsmessung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/#chapter-glossary-16 -> Kapitel 16: Das Begriffssystem der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-086-wissenschaft-als-wirkungsinfrastruktur/#chapter-glossary-86 -> Kapitel 86: Wissenschaft als Wirkungsinfrastruktur (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-015-leistung-neu-definieren/#chapter-glossary-15 -> Kapitel 15: Leistung neu definieren (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/#chapter-glossary-39 -> Kapitel 39: Wirkungshaushalt und öffentliche Mittel (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-002-die-massstabskrise/#chapter-glossary-2 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-054-wirkungs-bip-und-neue-wohlstandsmessung/#chapter-glossary-54 -> Kapitel 54: Wirkungs-BIP und neue Wohlstandsmessung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/wirkungsoekonomie-kein-parteiprogramm.html -> Die Wirkungsökonomie ist kein Parteiprogramm | Überparteilicher Wirkungsrahmen für Demokratie (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/staat-recht-demokratie/grundrechte-verhaeltnismaessigkeit-technokratieschutz/ -> Grundrechte, Verhältnismäßigkeit und Schutz vor Technokratie | Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
+- /blog/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.html -> Warum das neue Gebäudeenergiegesetz teuer werden kann – und warum das nichts mit Ideologie zu tun hat (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-064-verwaltung-und-buergerbeteiligung/#chapter-glossary-64 -> Kapitel 64: Verwaltung und Bürgerbeteiligung (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/#downloads -> Detailkonzept Bürgerbeteiligung und Wirkungsdemokratie (Whitepaper, Beschreibung: ja)
+- /werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/#downloads -> Einzeldossier Bürgerbeteiligung und Wirkungsdemokratie (Whitepaper, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /dokumente/woek-partei/#political-implementation -> WÖK-Partei – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-064-verwaltung-und-buergerbeteiligung/#chapter-glossary-64 -> Kapitel 64: Verwaltung und Bürgerbeteiligung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.html -> Energie in Bürgerhand – Wie Energy Sharing neue Energiegemeinschaften möglich macht (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-100-transformationspfade/#chapter-glossary-100 -> Kapitel 100: Transformationspfade (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-065-resilienzstaat/#chapter-glossary-65 -> Kapitel 65: Resilienzstaat (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-099-wirkungsoekonomie-im-alltag/#chapter-glossary-99 -> Kapitel 99 – Wirkungsökonomie im Alltag (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-100-transformationspfade/#chapter-glossary-100 -> Kapitel 100: Transformationspfade (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-065-resilienzstaat/#chapter-glossary-65 -> Kapitel 65: Resilienzstaat (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-099-wirkungsoekonomie-im-alltag/#chapter-glossary-99 -> Kapitel 99 – Wirkungsökonomie im Alltag (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.html -> Energie in Bürgerhand – Wie Energy Sharing neue Energiegemeinschaften möglich macht (Journalartikel, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/fuenf-wellen-wirkungsentfaltung/ -> Die fünf Wellen der Wirkungsentfaltung | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/startups-deeptech-wirkungsinnovation/ -> Start-ups, Deep Tech und Wirkungsinnovation | Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html -> Wirkungsorientierte Unternehmensführung (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/#chapter-glossary-105 -> Kapitel 105: Freiheit, Markt und der Vorwurf der Planwirtschaft (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/detailkonzepte/ -> Detailkonzepte Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/ -> Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/#chapter-glossary-105 -> Kapitel 105: Freiheit, Markt und der Vorwurf der Planwirtschaft (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html -> AI First ist eine Sackgasse – nicht, weil KI schlecht ist, sondern weil wir sie falsch denken. (Journalartikel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ -> Detailkonzept: CBAM, Grenzausgleich und externe Kosten (Website, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#chapter-glossary-92 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/lieferketten/ -> Wirkungsökonomie in der Lieferkette | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#chapter-glossary-92 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#chapter-glossary-92 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/ -> Portalstartseite Internationale Ordnung, Globalisierung und Geopolitik (Website, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/toolkarten/ -> Toolkarten (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/buchanker-querverlinkungen/ -> Buchanker und Querverlinkungen (Website, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/#chapter-glossary-92 -> Kapitel 92: Handel, Lieferketten und globale Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html -> Die AfD im Wirkungscheck: Warum dieses Programm nicht nur an seinen Versprechen scheitert – sondern an seiner Logik (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /portale/migration-vielfalt/bildung-sprache-wirkungskompetenz/ -> Bildung, Sprache und Wirkungskompetenz (Website, Beschreibung: ja)
+- /referenz/kapitel-028-demokratie-als-wirkungsraum/#chapter-glossary-28 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/#chapter-glossary-29 -> Kapitel 29: Zeit, Endlichkeit und Generationenverantwortung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-060-verteilung-eigentum-und-wohlstand/#chapter-glossary-60 -> Kapitel 60: Verteilung, Eigentum und Wohlstand (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-028-demokratie-als-wirkungsraum/#chapter-glossary-28 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/#chapter-glossary-29 -> Kapitel 29: Zeit, Endlichkeit und Generationenverantwortung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-060-verteilung-eigentum-und-wohlstand/#chapter-glossary-60 -> Kapitel 60: Verteilung, Eigentum und Wohlstand (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-partei/#political-implementation -> WÖK-Partei – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-060-verteilung-eigentum-und-wohlstand/#chapter-glossary-60 -> Kapitel 60: Verteilung, Eigentum und Wohlstand (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-060-verteilung-eigentum-und-wohlstand/#chapter-glossary-60 -> Kapitel 60: Verteilung, Eigentum und Wohlstand (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/#chapter-glossary-93 -> Kapitel 93: Globale Institutionen und Wirkungsgovernance (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-093-globale-institutionen-und-wirkungsgovernance/#chapter-glossary-93 -> Kapitel 93: Globale Institutionen und Wirkungsgovernance (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/ -> Produktentwicklung, Produktscorecards und digitale Produktpässe (Wirkungsfeld, Beschreibung: ja)
+- /blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html -> Von der Wertschöpfungskette zum Wirkungskreislauf (Journalartikel, Beschreibung: ja)
+- /bibliothek/nachhaltigkeitstransformation-im-handwerk/ -> Nachhaltigkeitstransformation im Handwerk | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#political-implementation -> Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#quellen-und-arbeitsgrundlagen -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-078-creator-hosts-und-digitale-verantwortung/#chapter-glossary-78 -> Kapitel 78: Creator, Hosts und digitale Verantwortung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#chapter-glossary-74 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/ -> Detailkonzepte Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-078-creator-hosts-und-digitale-verantwortung/#chapter-glossary-78 -> Kapitel 78: Creator, Hosts und digitale Verantwortung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/#chapter-glossary-74 -> Kapitel 74: Öffentlichkeit als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.html -> Die Architektur der europäischen Nachhaltigkeitsregulierung (Journalartikel, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/wertschoepfungsketten-einkauf/ -> Resiliente Wertschöpfungsketten und Einkauf nach Wirkung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/ -> Wirkungsorientiertes Risikomanagement, Resilienz und Finanzmarktanforderungen (Wirkungsfeld, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/ -> Lieferketten, Importlogik und Wirkungsvorsteuer | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /werkstatt/dossiers/wirtschaft-unternehmen/#downloads -> Gesamtdossier Wirtschaft & Unternehmen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/ -> Produkte als Wirkungsträger | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /blog/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.html -> CSRD: Warum eine Berichtspflicht zum strategischen Wendepunkt werden kann (Journalartikel, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/ -> Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/basf-polyamid/ -> Von der CSRD zur Produktscorecard | BASF Polyamid (Wirkungsfeld, Beschreibung: ja)
+- /blog/dossiers/unternehmen-resilienz.html#lesepfad-title -> Unternehmen, CSRD und Resilienz – Dossier der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/esg-zu-woek-mapping/ -> ESG-zu-WÖk-Mapping (Methode, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/ -> Unternehmen als Wirkungssysteme (Wirkungsfeld, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#chapter-glossary-84 -> Kapitel 84: Cyberresilienz und operative Stabilität (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/cyberresilienz-kritische-wissensinfrastruktur/ -> Cyberresilienz und kritische Wissensinfrastruktur | Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /werkzeuge/cyberresilienz-check/ -> Cyberresilienz-Check (Methode, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/cyberresilienz/ -> Detailkonzept: Cyberresilienz der Wirkungsarchitektur (Website, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/sicherheit-resilienz/cyberresilienz/ -> Cyberresilienz und digitale Verwundbarkeit (Website, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/detailkonzepte/ -> Detailkonzepte Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/ -> Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/#chapter-glossary-84 -> Kapitel 84: Cyberresilienz und operative Stabilität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-069-pflege/#chapter-glossary-69 -> Kapitel 69: Pflege (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.html -> Energie ist Infrastruktur: Warum erneuerbare Energie staatliche Verantwortung ist (Journalartikel, Beschreibung: ja)
+- /wirkungsfelder/wohnen-stadt/dossiers/wohnen-als-wirkungsraum/ -> Einzeldossier Wohnen als Wirkungsraum (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wohnen-stadt/detailkonzepte/wohnen-als-wirkungsraum/ -> Detailkonzept Wohnen als Wirkungsraum (Wirkungsfeld, Beschreibung: ja)
+- /bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/#schlussbemerkung -> Kommunaler Wirkungsindex (KWI) | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /wirkungsfelder/wohnen-stadt/dossiers/gesundes-barrierefreies-resilientes-wohnen/ -> Einzeldossier Gesundes, barrierefreies und resilientes Wohnen (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wohnen-stadt/detailkonzepte/gesundes-barrierefreies-resilientes-wohnen/ -> Detailkonzept Gesundes, barrierefreies und resilientes Wohnen (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-069-pflege/#chapter-glossary-69 -> Kapitel 69: Pflege (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/ -> Detailkonzept: Globale Resilienz und Frühwarnkooperation (Website, Beschreibung: ja)
+- /referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/#chapter-glossary-95 -> Kapitel 95: Globale Resilienz, Sicherheit und Kooperation (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/ -> Portalstartseite Internationale Ordnung, Globalisierung und Geopolitik (Website, Beschreibung: ja)
+- /portale/sicherheit-resilienz/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ -> Detailkonzept: CBAM, Grenzausgleich und externe Kosten (Website, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/#chapter-glossary-95 -> Kapitel 95: Globale Resilienz, Sicherheit und Kooperation (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-002-die-massstabskrise/#chapter-glossary-2 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/#downloads -> Dossier SDGs und Agenda 2030 als globaler Referenzrahmen (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#chapter-glossary-31 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-033-reverse-merit-order/#chapter-glossary-33 -> Kapitel 33: Reverse Merit Order (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-041-verwaltung-rechtsschutz-und-koerperschaftslogik/#chapter-glossary-41 -> Kapitel 41: Verwaltung, Rechtsschutz und Körperschaftslogik (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
+- /referenz/kapitel-002-die-massstabskrise/#chapter-glossary-2 -> Kapitel 2: Die Maßstabskrise (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/#chapter-glossary-31 -> Kapitel 31: WÖk-IDs und Indikatorenarchitektur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-032-benchmarks-skalen-und-scorecards/#chapter-glossary-32 -> Kapitel 32: Benchmarks, Skalen und Scorecards (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-033-reverse-merit-order/#chapter-glossary-33 -> Kapitel 33: Reverse Merit Order (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-041-verwaltung-rechtsschutz-und-koerperschaftslogik/#chapter-glossary-41 -> Kapitel 41: Verwaltung, Rechtsschutz und Körperschaftslogik (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/datenqualitaet-assurance/ -> Datenqualität & Assurance (Methode, Beschreibung: ja)
+- /werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/ -> Detailkonzept Datenqualität und Assurance (Methode, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/ -> Einzeldossier Datenqualität und Assurance (Whitepaper, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/ -> Detailkonzept: Audit, Assurance und Datenqualität (Website, Beschreibung: ja)
+- /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#chapter-glossary-23 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#chapter-glossary-23 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
+- /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-028-demokratie-als-wirkungsraum/#chapter-glossary-28 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/staat-recht-demokratie/demokratie-rechtsstaat-sdgplus-wirkungsraum/ -> Demokratie, Rechtsstaat und SDG+ als Wirkungsraum | Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
+- /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html -> Soziale Resilienz gegen Verhetzung – Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit (Journalartikel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ -> Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie (Website, Beschreibung: ja)
+- /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ -> Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule (Wirkungsfeld, Beschreibung: ja)
+- /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html -> Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /wirkungsfelder/staat-recht-demokratie/ -> Staat, Recht & Demokratie (Wirkungsfeld, Beschreibung: ja)
+- /werkstatt/dossiers/staat-recht-demokratie/#downloads -> Gesamtdossier Staat, Recht & Demokratie (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-028-demokratie-als-wirkungsraum/#chapter-glossary-28 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/sprache-als-politischer-wirkstoff-wie-rechte-narrative-emotionalisieren/ -> Sprache als politischer Wirkstoff – Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-067-bildung/#chapter-glossary-67 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/#chapter-glossary-73 -> Kapitel 73: Migration und gesellschaftliche Zugehörigkeit (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/bildung/dossier/ -> Gesamtdossier Bildung & Wirkungsschule (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/bildung/detailkonzepte/ -> Detailkonzepte Bildung & Wirkungsschule (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-071-kindheit-familie-und-fruehes-leben/#chapter-glossary-71 -> Kapitel 71: Kindheit, Familie und frühes Leben (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-067-bildung/#chapter-glossary-67 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/#chapter-glossary-73 -> Kapitel 73: Migration und gesellschaftliche Zugehörigkeit (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-071-kindheit-familie-und-fruehes-leben/#chapter-glossary-71 -> Kapitel 71: Kindheit, Familie und frühes Leben (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /werkstatt/gesetze/wirkungssteuergesetz/#downloads -> Wirkungssteuergesetz WStG | Online-Gesetzestext mit Kommentaren (Website, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/#13-quellen-und-bezugsdokumente-2 -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/transformation-uebergaenge-implementierung/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /dokumente/woek-manifest/#political-implementation -> WÖk-Manifest – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-094-kulturelle-anschlussfaehigkeit-und-multipolare-ordnung/#chapter-glossary-94 -> Kapitel 94: Kulturelle Anschlussfähigkeit und multipolare Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html -> Vom Nachhaltigkeitsbewusstsein zur Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-011-wirkungspotenzial/#chapter-glossary-11 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-015-leistung-neu-definieren/#chapter-glossary-15 -> Kapitel 15: Leistung neu definieren (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/#chapter-glossary-29 -> Kapitel 29: Zeit, Endlichkeit und Generationenverantwortung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-011-wirkungspotenzial/#chapter-glossary-11 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-015-leistung-neu-definieren/#chapter-glossary-15 -> Kapitel 15: Leistung neu definieren (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/sicherheit-resilienz/gesamtdossier/ -> Gesamtdossier (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#chapter-glossary-23 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/dossier/ -> Gesamtdossier Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/ -> Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/#chapter-glossary-16 -> Kapitel 16: Das Begriffssystem der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/#chapter-glossary-96 -> Kapitel 96 – Wirkungsökonomie als weltfähige Ordnung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#chapter-glossary-23 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/#chapter-glossary-16 -> Kapitel 16: Das Begriffssystem der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/dossier/ -> Gesamtdossier Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/konzept/ -> Konzeptpapier Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/dossiers/ -> Einzeldossiers Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
+- /blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html -> Wirkungspotenzial: Warum Fakten allein nicht wirken – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Der Stein und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html -> Soziale Resilienz gegen Verhetzung – Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#chapter-glossary-23 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/konzept/ -> Konzeptpapier Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/dossier/ -> Gesamtdossier Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
+- /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/#chapter-glossary-23 -> Kapitel 23: Wirkungsrisiko und Wirkungsresilienz (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-028-demokratie-als-wirkungsraum/#chapter-glossary-28 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-098-pilotprojekte/#chapter-glossary-98 -> Kapitel 98: Pilotprojekte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html -> Der Stein und die Wellen – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ -> Wirkungsräume gestalten (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-028-demokratie-als-wirkungsraum/#chapter-glossary-28 -> Kapitel 28: Demokratie als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-089-justiz-rechtsprechung-und-wirkungsrecht/#chapter-glossary-89 -> Kapitel 89: Justiz, Rechtsprechung und Wirkungsrecht (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-098-pilotprojekte/#chapter-glossary-98 -> Kapitel 98: Pilotprojekte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-076-framing-sprache-und-tonalitaet/#chapter-glossary-76 -> Kapitel 76: Framing, Sprache und Tonalität (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-007-buerokratie-als-reparaturmaschine/#chapter-glossary-7 -> Kapitel 7: Bürokratie als Reparaturmaschine (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/schoepferisch-zerstoert-konservative-politik-systemresilienz/ -> Schöpferisch zerstört: Warum konservative Politik keine resiliente Wirtschaft mehr schafft – Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.html -> Wenn Politik scheitert, übernimmt der Finanzmarkt – und das ist unsere Chance (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-007-buerokratie-als-reparaturmaschine/#chapter-glossary-7 -> Kapitel 7: Bürokratie als Reparaturmaschine (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-048-produkte-als-wirkungstraeger/#chapter-glossary-48 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/#chapter-glossary-46 -> Kapitel 46: Interne Wertschöpfung und Lieferkettensteuerung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-048-produkte-als-wirkungstraeger/#chapter-glossary-48 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/desinformation-deepfakes/ -> Desinformation, Fake News, Deepfakes und hybride Einflussnahme | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ -> Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie (Website, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/ -> Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /werkstatt/dossiers/medien-oeffentlichkeit/#downloads -> Dossiers Medien & Öffentlichkeit (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/dossiers/ -> Einzeldossiers Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/desinformation-deepfakes-hybride-einflussnahme/ -> Desinformation, Deepfakes und hybride Einflussnahme | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/folgencheck-statt-faktencheck-democracy-intelligence.html -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/#chapter-glossary-34 -> Kapitel 34: T-SROI und systemische Transformationsmessung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/fuenf-wellen-wirkungsentfaltung/ -> Die fünf Wellen der Wirkungsentfaltung | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/#chapter-glossary-16 -> Kapitel 16: Das Begriffssystem der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/ -> T-SROI und Impact Controlling | Methodenpapier Impact Controlling (Methode, Beschreibung: ja)
+- /werkzeuge/impact-controlling/detailkonzepte/t-sroi/ -> Detailkonzept T-SROI (Methode, Beschreibung: ja)
+- /referenz/kapitel-011-wirkungspotenzial/#chapter-glossary-11 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/#chapter-glossary-34 -> Kapitel 34: T-SROI und systemische Transformationsmessung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/#chapter-glossary-16 -> Kapitel 16: Das Begriffssystem der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-011-wirkungspotenzial/#chapter-glossary-11 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/digitale-selbstbestimmung-datenschutz-jugendschutz/ -> Digitale Selbstbestimmung, Datenschutz und Jugendschutz | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkzeuge/datenraum-reifegradcheck/ -> Datenraum-Reifegradcheck (Methode, Beschreibung: ja)
+- /werkzeuge/digital-souveraenitaetscheck/ -> Digital-Souveränitätscheck (Methode, Beschreibung: ja)
+- /werkzeuge/forschungs-wirkungscheck/ -> Forschungs-Wirkungscheck (Methode, Beschreibung: ja)
+- /werkzeuge/innovations-wirkungsportfolio/ -> Innovations-Wirkungsportfolio (Methode, Beschreibung: ja)
+- /referenz/kapitel-083-algorithmische-fairness-und-digitale-rechte/#chapter-glossary-83 -> Kapitel 83: Algorithmische Fairness und digitale Rechte (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/#chapter-glossary-35 -> Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#chapter-glossary-85 -> Kapitel 85: DPP-Infrastruktur und technische Umsetzung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wirtschaft-unternehmen/produktentwicklung-produktscorecards-produktpaesse/ -> Produktentwicklung, Produktscorecards und digitale Produktpässe (Wirkungsfeld, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-048-produkte-als-wirkungstraeger/#chapter-glossary-48 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/ -> Produktscorecards, Reverse Merit Order und digitale Produktpässe | Produkte & Konsum (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/#chapter-glossary-35 -> Kapitel 35: Digitale Produktpässe und Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/#chapter-glossary-85 -> Kapitel 85: DPP-Infrastruktur und technische Umsetzung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-048-produkte-als-wirkungstraeger/#chapter-glossary-48 -> Kapitel 48: Produkte als Wirkungsträger (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-091-europa-als-wirkungsraum/#chapter-glossary-91 -> Kapitel 91: Europa als Wirkungsraum (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/ -> Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/dossiers/ -> Einzeldossiers Wissenschaft, Innovation & Digitalisierung (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/dossier/ -> Gesamtdossier Wissenschaft, Innovation & Digitalisierung (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/detailkonzepte/ -> Detailkonzepte Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/konzept/ -> Konzeptpapier Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /werkstatt/arbeitsbibliothek/wirkungsfelder/wissenschaft-innovation-digitalisierung/#downloads -> Arbeitsbibliothek Wissenschaft, Innovation & Digitalisierung (Website, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/ -> Digitalisierung, KI und Wirkungsdatenräume (Website, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/teil-13-digitalisierung-ki-und-wirkungsdatenraeume/ -> Digitalisierung, KI und Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/ -> Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel/ -> Kapitel 1 bis 108 (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/wissenschaft-innovation-digitalisierung/ -> Wissenschaft, Innovation & Digitalisierung (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-081-wirkungsdatenraeume/#chapter-glossary-81 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/digitalisierung-ki-wirkungsdatenraeume/ -> Digitalisierung, KI und Wirkungsdatenräume (Website, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/#chapter-glossary-80 -> Kapitel 80: Digitalisierung als Infrastruktur der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-081-wirkungsdatenraeume/#chapter-glossary-81 -> Kapitel 81: Wirkungsdatenräume (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/folgencheck-wirkungspolitische-sprache/ -> Folgencheck statt Faktencheck | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
+- /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#chapter-glossary-4 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-072-kultur-und-teilhabe/#chapter-glossary-72 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/sprache-als-politischer-wirkstoff-rechte-narrative.html -> Sprache als politischer Wirkstoff | Journal der Wirkungsökonomie (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-004-die-entstehung-des-falschen-kompasses/#chapter-glossary-4 -> Kapitel 4: Die Entstehung des falschen Kompasses (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-072-kultur-und-teilhabe/#chapter-glossary-72 -> Kapitel 72: Kultur und Teilhabe (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/#chapter-glossary-8 -> Kapitel 8: Warum klassische Ökonomie komplexe Systeme falsch behandelt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-064-verwaltung-und-buergerbeteiligung/#chapter-glossary-64 -> Kapitel 64: Verwaltung und Bürgerbeteiligung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> Wirkung statt Weltbild – eine wirkungsökonomische Analyse des AfD-Regierungsprogramms (Journalartikel, Beschreibung: ja)
+- /dokumente/woek-partei/#political-implementation -> WÖK-Partei – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /blog/wirkung-statt-weltbild-afd-regierungsprogramm.html -> Wirkung statt Weltbild – Analyse eines AfD-Regierungsprogramms (Journalartikel, Beschreibung: ja)
+- /referenz/kapitel-064-verwaltung-und-buergerbeteiligung/#chapter-glossary-64 -> Kapitel 64: Verwaltung und Bürgerbeteiligung (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.html -> Der CO₂-Rucksack sagt systemisch nichts – Warum wir Elektroauto und Verbrenner falsch vergleichen. (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.html -> Die Grüngasstrategie im Wärmemarkt: Eine Systemanalyse jenseits der CO₂-Bilanz (Journalartikel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Whitepaper, Beschreibung: ja)
+- /blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html -> Warum die „Vollbremsung“ von Wind und Solar kein Energieproblem löst – Eine wirkungsökonomische Einordnung (Journalartikel, Beschreibung: ja)
+- /dokumente/woek-partei/#political-implementation -> WÖK-Partei – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/#export-title -> SDGs und SDG+ als Risiko- und Resilienzregister (Website, Beschreibung: ja)
+- /sdg-plus/medien-demokratie.html -> SDG+ Medien und Demokratie (Website, Beschreibung: ja)
+- /sdg-plus/medien-demokratie/wirkung-politischer-sprache.html -> Wirkung politischer Sprache – Frames, Narrative und Demokratie (Website, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-067-bildung/#chapter-glossary-67 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/kultur-identitaet-resonanz/ -> Kultur, Identität & Resonanz | Wirkungsfeld der Wirkungsökonomie (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/ -> Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ -> Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule (Wirkungsfeld, Beschreibung: ja)
+- /referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/#chapter-glossary-77 -> Kapitel 77: Desinformation und hybride Kriegsführung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-067-bildung/#chapter-glossary-67 -> Kapitel 67: Bildung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/ -> Sprache, Framing und Diskurskultur | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/sprache-framing-diskurskultur/ -> Sprache, Framing und Diskurskultur | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/dossiers/ -> Einzeldossiers Medien, Social Media & Journalismus (Whitepaper, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/detailkonzepte/ -> Detailkonzepte Medien, Social Media & Journalismus (Wirkungsfeld, Beschreibung: ja)
+- /wirkungsfelder/medien-oeffentlichkeit/politische-anschlussfaehigkeit/ -> Politische Anschlussfähigkeit und Umsetzungsoptionen | Medien & Öffentlichkeit (Wirkungsfeld, Beschreibung: ja)
+- /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/#13-quellen-und-bezugsdokumente-2 -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-079-diskurskultur/#chapter-glossary-79 -> Kapitel 79: Diskurskultur (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.html -> Wenn Kommunikation Realität formt – Wirkung als neue demokratische Leitkategorie (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html -> Wirkung statt Weltbild – eine wirkungsökonomische Analyse des AfD-Regierungsprogramms (Journalartikel, Beschreibung: ja)
+- /blog/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.html -> Thermodynamik des Diskurses: Informationsentropie, Exergie, Wissensrekombination und Bozo-Dynamik (Journalartikel, Beschreibung: ja)
+- /blog/kognitive-dissonanz-als-wirkungsbremse/ -> Warum Fakten nicht reichen: Kognitive Dissonanz als Wirkungsbremse (Journalartikel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2 – Wirkungsökonomie Online (Working Paper, Beschreibung: ja)
+- /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#chapter-glossary-3 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/#chapter-glossary-73 -> Kapitel 73: Migration und gesellschaftliche Zugehörigkeit (Online-Buch-Kapitel, Beschreibung: ja)
+- /verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/#official-sources -> SDGs als Risikomanagement und Finanzmarkt-Anschluss (Website, Beschreibung: ja)
+- /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#chapter-glossary-3 -> Kapitel 3: Kapital als Werkzeug und falscher Kompass (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-073-migration-und-gesellschaftliche-zugehoerigkeit/#chapter-glossary-73 -> Kapitel 73: Migration und gesellschaftliche Zugehörigkeit (Online-Buch-Kapitel, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/gesamtdossier/ -> Gesamtdossier Internationale Ordnung, Globalisierung und Geopolitik (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/downloads/ -> Downloads (Website, Beschreibung: ja)
+- /portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/ -> Gesamtdossier Zukunftsbilder Wirkungswohlstand (Whitepaper, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/cbam-grenzausgleich-externe-kosten/ -> Detailkonzept: CBAM, Grenzausgleich und externe Kosten (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/entwicklungspartnerschaften-wirkungsfonds/ -> Detailkonzept: Entwicklungspartnerschaften und Wirkungsfonds (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/europa-als-wirkungsraum/ -> Detailkonzept: Europa als Wirkungsraum (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ -> Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie (Website, Beschreibung: ja)
+- /portale/internationale-ordnung-globalisierung-geopolitik/globale-resilienz-fruehwarnkooperation/ -> Detailkonzept: Globale Resilienz und Frühwarnkooperation (Website, Beschreibung: ja)
+- /referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/#chapter-glossary-20 -> Kapitel 20: Systemhebel, Engpässe und Interdependenzen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-011-wirkungspotenzial/#chapter-glossary-11 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/#chapter-glossary-12 -> Kapitel 12: Handlung, Unterlassen und Rückkopplung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/#chapter-glossary-20 -> Kapitel 20: Systemhebel, Engpässe und Interdependenzen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/#chapter-glossary-108 -> Kapitel 108: Schlussbild: Die neue Ordnung des Wohlstands (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-001-meine-reise-zur-wirkung/#chapter-glossary-1 -> Kapitel 1: Meine Reise zur Wirkung (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/#chapter-glossary-17 -> Kapitel 17 – Wirkungsökonomie im Vergleich (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-011-wirkungspotenzial/#chapter-glossary-11 -> Kapitel 11: Wirkungspotenzial (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#political-implementation -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /bibliothek/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/ -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#political-implementation -> Impact-Controlling im Einkauf | Praxispaper der Wirkungsökonomie (Working Paper, Beschreibung: ja)
+- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#quellen-und-arbeitsgrundlagen -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /werkzeuge/impact-controlling/ -> Impact Controlling (Methode, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/#anschluss-finden-title -> Bibliothek | Vollständige Wissensbibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
+- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier (Methode, Beschreibung: ja)
+- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#quellen-und-arbeitsgrundlagen -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 14.2 Quellen und Arbeitsgrundlagen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-053-markttransformation/#chapter-glossary-53 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-053-markttransformation/#chapter-glossary-53 -> Kapitel 53: Markttransformation (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/volltext/ -> Die neue Ordnung des Wohlstands – Volltext – Wirkungsökonomie Online (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/quellen/ -> Quellenregister (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-090-wissenschaftliche-politikberatung-statistik-und-oeffentliche-wahrheit/#chapter-glossary-90 -> Kapitel 90: Wissenschaftliche Politikberatung, Statistik und öffentliche Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)

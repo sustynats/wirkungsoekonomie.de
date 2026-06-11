@@ -1,0 +1,176 @@
+# Glossary Manual Review
+
+Stand: 2026-05-31T12:53:56.138Z
+
+## Zweck
+
+Diese Liste markiert Begriffe, die nach der technischen Notfall-Wiederherstellung redaktionell geprüft werden sollten. Die Seiten bleiben erhalten; Review bedeutet keine Löschung.
+
+## Sensible und mehrdeutige Begriffe
+
+- Anarchokapitalismus (`anarchokapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Autoritäres Wirkungspotenzial (`autoritaeres-wirkungspotenzial`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Berichtsdaten (`berichtsdaten`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Capture Price / Marktwert von Strom (`capture-price`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Datenlücke (`datenluecke`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Datenqualität (`datenqualitaet`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Deliberative Demokratie (`deliberative-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Demokratie (`demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Demokratiefeindlichkeit (`demokratiefeindlichkeit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Demokratiekompetenz (`demokratiekompetenz`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Demokratieprinzip (`demokratieprinzip`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Demokratiequalität (`demokratiequalitaet`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Demokratieskepsis (`demokratieskepsis`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Demokratische Wirkungsarchitektur (`demokratische-wirkungsarchitektur`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Design Thinking (`design-thinking`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Dezentralisierung von Macht (`dezentralisierung-von-macht`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Direkte Demokratie (`direkte-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Einparteienstaat (`einparteienstaat`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Energy-only-Markt (`energy-only-markt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Extraktiver Kapitalismus (`extraktiver-kapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Finanzmarktkapitalismus (`finanzmarktkapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Flexibilitätsmarkt (`flexibilitaetsmarkt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Folgewirkung (`folgewirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Friedlicher Machtwechsel (`friedlicher-machtwechsel`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Grüner Kapitalismus (`gruener-kapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Hebelwirkung (`hebelwirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Host-Wirkungsscore (`host-wirkungsscore`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Illiberale Demokratie (`illiberale-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Impact Value / Wirkungswert (`impact-value`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Intertemporale Freiheit (`intertemporale-freiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapazitätsmarkt (`kapazitaetsmarkt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapital (`kapital`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapitalfluss (`kapitalfluss`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapital als Machtverhältnis (`kapital-als-machtverhaeltnis`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapital als Werkzeug (`kapital-als-werkzeug`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapitalismus (`kapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapitalrendite (`kapitalrendite`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kapitalwirkung (`kapitalwirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungskapital (`wirkungskapital`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kipppunkt / Schwellenwert (`kipppunkt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kipppunkt / Systemschwelle (`kipppunkt-systemschwelle`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kommunistischer Staat (`kommunistischer-staat`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Kreislaufwirkung (`kreislaufwirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Lebenszykluswirkungsabschätzung / LCIA (`lebenszykluswirkungsabschaetzung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Liberale Demokratie (`liberale-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Lieferkettendaten (`lieferkettendaten`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Macht und Gewalt (`macht-und-gewalt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Machtbegrenzung (`machtbegrenzung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Machtdezentralisierung (`machtdezentralisierung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Machtkonzentration (`machtkonzentration`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Marktgleichgewicht (`marktgleichgewicht`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Marktmacht (`marktmacht`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Marktprämie (`marktpraemie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Marktversagen (`marktversagen`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Marktwert (`marktwert`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Marktwirtschaft (`marktwirtschaft`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Medienfreiheit (`medienfreiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Meinungsfreiheit (`meinungsfreiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Mensch, Planet und Demokratie (`mensch-planet-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Nachtwächterstaat (`nachtwaechterstaat`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Negative Freiheit (`negative-freiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- negative Wirkung (`negative-wirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Netto-Wirkung (`netto-wirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- neutrale Wirkung (`neutrale-wirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- NGO-Wirkungsprüfung (`ngo-wirkungspruefung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Parlamentarische Demokratie (`parlamentarische-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Parteistaat (`parteistaat`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Partizipative Demokratie (`partizipative-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Perowskit-Solarzelle (`perowskit-solarzelle`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Personalisierte Macht (`personalisierte-macht`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Pigou-Steuer (`pigou-steuer`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Planwirtschaft (`planwirtschaft`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Plattformkapitalismus (`plattformkapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Positive Freiheit (`positive-freiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- positive Netto-Wirkung (`positive-netto-wirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- positive Wirkung (`positive-wirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Pressefreiheit (`pressefreiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Privatwirtschaftliche Planwirtschaft (`privatwirtschaftliche-planwirtschaft`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Produktdaten (`produktdaten`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Quartierswirkung (`quartierswirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Raubtierkapitalismus (`raubtierkapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Reale Freiheit (`reale-freiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Rechtsstaatlichkeit (`rechtsstaatlichkeit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Rechtsstaatsabbau (`rechtsstaatsabbau`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Rechtsstaatsprinzip (`rechtsstaatsprinzip`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Regelenergiemarkt (`regelenergiemarkt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Regeneration / regenerative Wirkung (`regeneration`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Rent Seeking (`rent-seeking`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Repräsentative Demokratie (`repraesentative-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Salienzsteuerung (`salienzsteuerung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Scheindemokratie (`scheindemokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Scheinwahrheit (`scheinwahrheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Scope-3-Datenqualität (`scope-3-datenqualitaet`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Sensemaking (`sensemaking`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Social Credit (`social-credit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Soziale Marktwirtschaft (`soziale-marktwirtschaft`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Sozialstaatsprinzip (`sozialstaatsprinzip`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staat (`staat`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatsdelegitimierung (`staatsdelegitimierung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatsform (`staatsform`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatsgebiet (`staatsgebiet`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatsgewalt (`staatsgewalt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatskapitalismus (`staatskapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatspropaganda (`staatspropaganda`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatssozialismus (`staatssozialismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatsversagen (`staatsversagen`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Staatsvolk (`staatsvolk`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Stakeholder-Kapitalismus (`stakeholder-kapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Steuerkritik (`steuerkritik`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Steuerungsdaten (`steuerungsdaten`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Strommarkt (`strommarkt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Strommarktdesign (`strommarktdesign`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Stromsteuer (`stromsteuer`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Technische Bewertungskriterien (`technische-bewertungskriterien`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Transformationswirkung (`transformationswirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Überwachungskapitalismus (`ueberwachungskapitalismus`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Verfassungsmäßige Wirkungsarchitektur (`verfassungsmaessige-wirkungsarchitektur`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Vertragsfreiheit (`vertragsfreiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wahrheit (`wahrheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wahrheitsillusionseffekt (`wahrheitsillusionseffekt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wehrhafte Demokratie (`wehrhafte-demokratie`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkung (`wirkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsarchitektur (`wirkungsarchitektur`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsbewertung (`wirkungsbewertung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsblindheit (`wirkungsblindheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsdaten (`wirkungsdaten`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsdatenraum (`wirkungsdatenraum`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungseinkommen (`wirkungseinkommen`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsempfänger (`wirkungsempfaenger`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsethik (`wirkungsethik`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsfonds (`wirkungsfonds`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsfreiheit (`wirkungsfreiheit`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsgrad (`wirkungsgrad`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsgrenze (`wirkungsgrenze`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungshaushalt (`wirkungshaushalt`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsindikator (`wirkungsindikator`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsinnovation (`wirkungsinnovation`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsintegration (`wirkungsintegration`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungskompetenz (`wirkungskompetenz`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungslenkung (`wirkungslenkung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsnetz (`wirkungsnetz`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsorientiertes Hosting (`wirkungsorientiertes-hosting`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungspädagogik (`wirkungspaedagogik`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungspfad (`wirkungspfad`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungspflicht des Eigentums (`wirkungspflicht-des-eigentums`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungspotenzial (`wirkungspotenzial`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungspunkte (`wirkungspunkte`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsradar (`wirkungsradar`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsrat (`wirkungsrat`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsraum (`wirkungsraum`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsregister (`wirkungsregister`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsrente (`wirkungsrente`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsresilienz (`wirkungsresilienz`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsrisiko (`wirkungsrisiko`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsrückkopplung (`wirkungsrueckkopplung`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsschule (`wirkungsschule`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungssteuer (`wirkungssteuer`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungssteuergesetz (`wirkungssteuergesetz`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsträger (`wirkungstraeger`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+- Wirkungsumsatzsteuer (`wirkungsumsatzsteuer`): sensibel/mehrdeutig, Auto-Linking und Begriffsabgrenzung prüfen.
+
+## Generelle Review-Regeln
+
+- Sehr allgemeine Begriffe wie Wirkung, Kapital, Daten, Staat, Markt und Demokratie nicht inflationär automatisch verlinken.
+- Schutzbegriffe wie Personenbewertung, Social Credit, Planwirtschaft und Kontrolle immer mit Kontext und Schutzlinie führen.
+- Duplicate-/Alias-Slugs mit `-2` als alte Route erhalten und später einzeln prüfen.

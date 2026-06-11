@@ -102,6 +102,12 @@ const files = walk(audioRoot).sort();
 const metadata = {};
 const previousMetadata = readPreviousMetadata();
 
+if (files.length === 0) {
+  fs.rmSync(metadataPath, { force: true });
+  console.log("audio metadata: keine MP3-Dateien gefunden; keine Metadaten geschrieben");
+  process.exit(0);
+}
+
 for (const file of files) {
   const seconds = durationSeconds(file, previousMetadata);
   const pub = publicPath(file);

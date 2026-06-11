@@ -1,0 +1,30 @@
+{
+  "zentraler_wirkungsfonds": {
+    "einzahlungen": [
+      "WUStG",
+      "WEstG",
+      "Automatisierungsdividende",
+      "Kapitalwirkungsaufschläge",
+      "wirkungsgebundene Kapitalsteuern",
+      "Sanktionen",
+      "EU-Fonds",
+      "globale Klimafonds",
+      "Bürger:innenfondsanteile"
+    ],
+    "auszahlungen": [
+      "Wirkungsdividende",
+      "Wirkungseinkommen",
+      "kommunale Wirkungsbudgets",
+      "Transformationsfonds",
+      "Bildungsfonds",
+      "Gesundheits- und Pflegefonds",
+      "Rentenfonds",
+      "Resilienzfonds",
+      "Medien- und Demokratiefonds"
+    ]
+  },
+  "tool_formeln": {
+    "kapitalwirkungsindex": "KWI = 0.45*NWI + 0.25*T-SROI-Skala + 0.15*Resilienz + 0.10*Datenqualität - 0.25*Rote-Linien-Malus",
+    "wirkungskredit": "Zins = Basiszins + Finanzrisikoaufschlag - Wirkungsbonus + Negativwirkungsaufschlag"
+  }
+}
