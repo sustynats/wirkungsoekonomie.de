@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const ignoreDirs = new Set([".git", "node_modules", ".codex-backup"]);
+const ignoreDirs = new Set([".git", "node_modules", ".codex-backup", "outputs"]);
 const htmlFiles = [];
 const allowedSpreadsheetPattern = /assets\/downloads\/woek-register\/WOeK_Master_Items_Public_Research_Register_v2\.1\.(xlsx|xls)(?:[#?][^"']*)?$/i;
 const publicDownloadDirPattern = /^(assets\/downloads|downloads|public\/downloads)\//i;
