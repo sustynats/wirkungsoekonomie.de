@@ -1880,40 +1880,6 @@ h4 {
   text-overflow: ellipsis;
 }
 
-.site-utility-nav {
-  display: none;
-}
-
-.site-utility-link,
-.site-nav-utility a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.45rem;
-  padding: 0.5rem 0.8rem;
-  border-radius: 6px;
-  color: var(--navy);
-  font-size: 0.92rem;
-  font-weight: 750;
-  line-height: 1.1;
-  text-decoration: none;
-}
-
-.site-utility-link:hover,
-.site-utility-link:focus-visible,
-.site-nav-utility a:hover,
-.site-nav-utility a:focus-visible {
-  background: rgba(47, 125, 92, 0.08);
-  color: var(--green);
-}
-
-.site-nav-utility {
-  display: grid;
-  gap: 0.15rem;
-  margin-top: 0.5rem;
-  padding-top: 0.55rem;
-  border-top: 1px solid rgba(11, 16, 32, 0.08);
-}
-
 .site-nav,
 .mobile-nav {
   position: absolute;
@@ -2183,54 +2149,6 @@ body.nav-is-open {
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 2rem;
-}
-
-.hero-audio {
-  display: grid;
-  gap: 0.75rem;
-  max-width: 46rem;
-  margin-top: 1.5rem;
-  padding: 1rem 1.05rem;
-  border: 1px solid rgba(47, 125, 92, 0.16);
-  border-radius: 8px;
-  background: rgba(255, 250, 241, 0.92);
-  box-shadow: 0 14px 32px rgba(11, 16, 32, 0.06);
-}
-
-.audio-label {
-  display: block;
-  color: var(--navy);
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 800;
-  line-height: 1.35;
-}
-
-.hero-audio audio {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-.audio-transcript,
-.audio-transcript-note {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.audio-transcript {
-  margin: 0;
-}
-
-.audio-transcript summary {
-  cursor: pointer;
-  color: var(--navy);
-  font-weight: 700;
-}
-
-.audio-transcript p,
-.audio-transcript-note {
-  margin: 0.6rem 0 0;
 }
 
 .hero-secondary-link {
@@ -10015,24 +9933,6 @@ textarea {
 }
 
 @media (min-width: 1480px) {
-  .site-utility-nav {
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
-    margin-left: auto;
-  }
-
-  .site-utility-link--suche,
-  .site-nav-utility {
-    display: none;
-  }
-
-  .site-utility-link {
-    min-height: 2rem;
-    padding: 0.25rem 0.55rem;
-    font-size: clamp(0.78rem, 0.72vw, 0.88rem);
-  }
-
   .site-nav {
     position: static;
     display: flex;
@@ -15846,11 +15746,10 @@ a.principle-card:hover,
 }
 
 .radar-hero-visual img {
-  display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1659 / 948;
-  object-fit: contain;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 
 .radar-page-hero .hero-grid {
@@ -16331,10 +16230,6 @@ a.principle-card:hover,
 }
 
 @media (max-width: 1479px) {
-  .site-utility-nav {
-    display: none !important;
-  }
-
   body .site-header .nav-toggle {
     position: relative;
     inset: auto;
@@ -16374,138 +16269,6 @@ a.principle-card:hover,
 .document-content {
   max-width: var(--content-readable);
   margin-inline: auto;
-}
-
-/* Restore the established header behavior: quick links stay visible on the
-   right, and the main navigation opens from the hamburger instead of switching
-   to a horizontal desktop nav. */
-body .site-header .site-utility-nav {
-  display: flex !important;
-  align-items: center;
-  gap: 0.45rem;
-  margin-left: auto;
-  justify-self: end;
-}
-
-body .site-header .site-utility-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.45rem;
-  padding: 0.58rem 0.78rem;
-  border: 1px solid rgba(12, 18, 34, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.78);
-  color: var(--navy);
-  font-size: 0.88rem;
-  font-weight: 850;
-  line-height: 1;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-body .site-header .site-utility-link:hover,
-body .site-header .site-utility-link:focus-visible,
-body .site-header .site-utility-link.active,
-body .site-header .site-utility-link[aria-current="page"] {
-  border-color: rgba(47, 125, 92, 0.45);
-  color: var(--green);
-  outline: none;
-}
-
-body .site-header .site-nav-utility {
-  display: grid;
-  gap: 0.15rem;
-  margin-top: 0.6rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid var(--line);
-}
-
-body .site-header .site-nav-utility::before {
-  content: "Schnellzugriffe";
-  padding: 0.25rem 0.8rem 0.4rem;
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-body .site-header .nav-toggle {
-  position: relative;
-  inset: auto;
-  z-index: 1400;
-  display: inline-flex !important;
-  margin-left: 0;
-  opacity: 1;
-  visibility: visible;
-}
-
-body .site-header .site-nav {
-  position: fixed;
-  top: 4.8rem;
-  left: var(--space-gutter);
-  right: var(--space-gutter);
-  z-index: 1300;
-  display: none;
-  max-height: min(70vh, 36rem);
-  overflow: auto;
-}
-
-body .site-header .site-nav.open {
-  display: grid;
-}
-
-@media (max-width: 720px) {
-  body .site-header {
-    gap: 0.55rem;
-  }
-
-  body .site-header .brand {
-    max-width: calc(100vw - 10rem);
-  }
-
-  body .site-header .site-utility-nav {
-    gap: 0.35rem;
-    margin-left: auto;
-  }
-
-  body .site-header .site-utility-nav .site-utility-link {
-    width: 2.45rem;
-    min-width: 2.45rem;
-    padding: 0;
-    font-size: 0;
-  }
-
-  body .site-header .site-utility-nav .site-utility-link--suche::before {
-    content: "⌕";
-    font-size: 1.05rem;
-  }
-
-  body .site-header .site-utility-nav .site-utility-link--woek-ki {
-    display: none;
-  }
-
-  body .site-header .site-utility-nav .site-utility-link--mein-wirkungsraum {
-    width: auto;
-    min-width: 3.1rem;
-    padding: 0 0.6rem;
-  }
-
-  body .site-header .site-utility-nav .site-utility-link--mein-wirkungsraum::before {
-    content: "Raum";
-    font-size: 0.82rem;
-  }
-
-  body .site-header .site-nav-utility .site-utility-link {
-    justify-content: flex-start;
-    width: 100%;
-    padding: 0.75rem 0.8rem;
-    font-size: 0.94rem;
-    border: 0;
-    border-radius: 6px;
-    background: transparent;
-  }
 }
 
 .prose p,

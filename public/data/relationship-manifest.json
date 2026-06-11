@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T21:44:24.710Z",
+  "generatedAt": "2026-06-11T21:29:05.329Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -13,9 +13,23 @@
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -1144,11 +1158,7 @@
         "sozialfinanzierung",
         "ki-und-arbeit",
         "robotik",
-        "autonome-systeme",
-        "kuenstliche-intelligenz",
-        "maschinenwertschoepfungsbeitrag",
-        "plattformarbeit",
-        "erwerbsarbeitslogik"
+        "autonome-systeme"
       ],
       "documents": [
         "wenn-maschinen-arbeiten",
@@ -1184,9 +1194,7 @@
         "grunddividende",
         "wirkungsbonus",
         "wirkungsrente",
-        "sozialfinanzierung",
-        "automatisierung",
-        "robotik"
+        "sozialfinanzierung"
       ],
       "documents": [
         "wenn-maschinen-arbeiten",
@@ -3301,6 +3309,48 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "cyberresilienz": {
+      "terms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "algorithmische-fairness",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "datenqualitaet",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie",
+        "supply-chain-resilienz"
+      ],
+      "documents": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "methods": [
+        "datenqualitaet-assurance"
+      ],
+      "tools": [
+        "wirkungsdatenraeume",
+        "woek-id-register"
+      ],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": [
+        "woek-id-register"
+      ]
+    },
     "dao": {
       "terms": [
         "wu-wei",
@@ -4124,8 +4174,7 @@
         "wirkungscontrolling",
         "kii",
         "lieferkettenwirkung",
-        "cradle-to-cradle",
-        "paltering"
+        "cradle-to-cradle"
       ],
       "documents": [
         "[object Object]",
@@ -4731,6 +4780,7 @@
         "esrs",
         "esg",
         "iro",
+        "wirkungsbewertung",
         "inside-out-outside-in",
         "impact-materiality",
         "financial-materiality",
@@ -7217,6 +7267,26 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "financial-materiality": {
+      "terms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "csrd",
+        "esrs"
+      ],
+      "documents": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "finanzmarktkapitalismus": {
       "terms": [
         "kapitalismus",
@@ -7426,12 +7496,7 @@
         "narrativ",
         "sprachlicher-trigger",
         "gegenframe",
-        "resonanzraum",
-        "framing",
-        "reframing",
-        "wirkungspotenzial",
-        "wirkungspfad",
-        "wirkungsrisiko"
+        "resonanzraum"
       ],
       "documents": [
         "wirkungsradar-narrative-sprachmuster-und-emotionalisierung"
@@ -7464,12 +7529,7 @@
         "wahrnehmung",
         "praediktive-verarbeitung",
         "agenda-setting",
-        "populismus",
-        "paltering",
-        "frame",
-        "tonalitaet",
-        "wirkungspfad",
-        "wirkungsrisiko"
+        "populismus"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -9313,49 +9373,6 @@
       "terms": [
         "wirkungseinkommen",
         "wirkungsbonus",
-        "wirkungsrente",
-        "wirkungspunkte",
-        "automatisierung",
-        "maschinenleistung",
-        "teilhabe",
-        "teilgabe",
-        "selbstwirksamkeit",
-        "wirkungssteuer",
-        "wirkungshaushalt",
-        "wirkungseinkommensteuer",
-        "wirkungsbiografie",
-        "lebenswirkung",
-        "praevention",
-        "wirkleistung",
-        "scheinleistung",
-        "blindleistung",
-        "verlustleistung",
-        "nwi",
-        "wirkungs-bip",
-        "wirkungsgutschrift",
-        "wirkungssteuergesetz",
-        "wirkungsrueckkopplung",
-        "wirkungslenkung",
-        "wirkungsarchitektur",
-        "positive-netto-wirkung",
-        "netto-wirkung",
-        "transformationswirkung",
-        "woek-id",
-        "wirkungsindikator",
-        "scorecard",
-        "finalscore",
-        "datenqualitaet",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "reverse-merit-order",
-        "wirkungsgrenze",
-        "nichtkompensationsprinzip",
-        "wirkungsbudget",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
         "automatisierungsdividende",
         "wirkungsfonds",
         "bedingungsloses-grundeinkommen"
@@ -9363,9 +9380,7 @@
       "documents": [
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
-        "wp-rente",
-        "die-neue-ordnung-des-wohlstands",
-        "wirkungssteuergesetz"
+        "wp-rente"
       ],
       "methods": [
         "scorecard",
@@ -10540,28 +10555,6 @@
       "academyModules": [],
       "dataRegisters": []
     },
-    "impact-strategie": {
-      "terms": [
-        "doppelte-wesentlichkeit",
-        "impact-management",
-        "impact-controlling",
-        "impact-marketing",
-        "key-impact-indicator",
-        "wirkungsdaten",
-        "wirkungsarchitektur",
-        "transformationswirkung"
-      ],
-      "documents": [
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
-      ],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
     "impact-value": {
       "terms": [
         "business-value",
@@ -10590,12 +10583,10 @@
         "datenqualitaet",
         "steuerungsdaten",
         "wirkungsdatenraum",
-        "wirkungsrueckkopplung",
-        "impact-strategie"
+        "wirkungsrueckkopplung"
       ],
       "documents": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [
         "Impact Controlling",
@@ -10621,13 +10612,10 @@
         "wirkungsrueckkopplung",
         "steuerungsdaten",
         "wirkungsdaten",
-        "wirkungsrisiko",
-        "impact-strategie",
-        "wirkungsmanagement"
+        "wirkungsrisiko"
       ],
       "documents": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [
         "Impact Controlling",
@@ -10649,12 +10637,10 @@
         "greenwashing",
         "wirkungswahrheit",
         "impact-management",
-        "impact-controlling",
-        "impact-strategie"
+        "impact-controlling"
       ],
       "documents": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [
         "Folgencheck",
@@ -10760,8 +10746,7 @@
         "vertrauen",
         "wahlintegritaet",
         "demokratische-oeffentlichkeit",
-        "demokratische-resilienz",
-        "paltering"
+        "demokratische-resilienz"
       ],
       "documents": [],
       "methods": [],
@@ -11655,23 +11640,6 @@
       "academyModules": [],
       "dataRegisters": []
     },
-    "kernkraft-neubau": {
-      "terms": [
-        "betriebsemissionen",
-        "lebenszyklus-emissionen",
-        "opportunitaetskosten",
-        "endlager"
-      ],
-      "documents": [
-        "kernenergie-wieder-in-deutschland"
-      ],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
     "key-impact-indicator": {
       "terms": [
         "impact-controlling",
@@ -11681,33 +11649,15 @@
         "wirkungsdaten",
         "scorecard",
         "nwi",
-        "datenqualitaet",
-        "impact-strategie"
+        "datenqualitaet"
       ],
       "documents": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [
         "Impact Controlling",
         "Scorecards"
       ],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
-    "keynesianismus": {
-      "terms": [
-        "wirkungshaushalt",
-        "praeventionsdividende",
-        "klimafolgeschaeden",
-        "staat",
-        "soziale-marktwirtschaft"
-      ],
-      "documents": [],
-      "methods": [],
       "tools": [],
       "demos": [],
       "impactFields": [],
@@ -11745,128 +11695,6 @@
         "rente-soziale-sicherung",
         "finanzsystem-kapital"
       ],
-      "academyModules": [],
-      "dataRegisters": []
-    },
-    "ki-governance": {
-      "terms": [
-        "kuenstliche-intelligenz",
-        "algorithmische-fairness",
-        "datenqualitaet",
-        "digitale-selbstbestimmung",
-        "wirkungsrisiko",
-        "wirkungsdatenraeume",
-        "cyberresilienz",
-        "digitalisierung",
-        "woek-id",
-        "wirkungsindikator",
-        "digitaler-produktpass",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsresilienz",
-        "enterprise-risk-management-nach-wirkung",
-        "plattformlogik-und-algorithmen",
-        "desinformation",
-        "oeffentlichkeit-als-wirkungsraum",
-        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
-      ],
-      "documents": [
-        "technische-leitlinien-wustg",
-        "wirkungsrat-konzept",
-        "whitepaper-t-sroi"
-      ],
-      "methods": [
-        "datenqualitaet-assurance"
-      ],
-      "tools": [
-        "wirkungsdatenraeume",
-        "woek-id-register"
-      ],
-      "demos": [],
-      "impactFields": [
-        "wissenschaft-innovation-digitalisierung",
-        "staat-recht-demokratie"
-      ],
-      "academyModules": [],
-      "dataRegisters": [
-        "woek-id-register"
-      ]
-    },
-    "kii": {
-      "terms": [
-        "wirkungscontrolling",
-        "unternehmen-als-wirkungssystem",
-        "wirkungskompetenz",
-        "wirkungsindikator",
-        "scorecard",
-        "produktscorecard",
-        "benchmark",
-        "archetyp",
-        "finalscore",
-        "nwi",
-        "t-sroi",
-        "wirkungsbewertung",
-        "greenwashing",
-        "impact-washing",
-        "positive-netto-wirkung",
-        "wirkungsorientierte-unternehmensfuehrung",
-        "purpose-washing",
-        "wirkungslenkung",
-        "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "netto-wirkung",
-        "transformationswirkung",
-        "wirkleistung",
-        "scheinleistung",
-        "blindleistung",
-        "produktwirkung",
-        "woek-id",
-        "datenqualitaet",
-        "reverse-merit-order",
-        "wirkungsgrenze",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsrat",
-        "produktdaten",
-        "digitaler-produktpass",
-        "lieferkettenwirkung",
-        "beschaffung-als-wirkungshebel",
-        "lieferantenbewertung",
-        "responsible-marketing",
-        "sdg-washing",
-        "esg",
-        "csrd",
-        "esrs",
-        "gri",
-        "eu-taxonomie",
-        "kapitalwirkung",
-        "wirkungsfonds",
-        "portfolio-wirkung",
-        "wirkungsrendite",
-        "versicherbarkeit",
-        "lernende-organisation",
-        "wirkungskommunikation",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "key-impact-indicator",
-        "wirkungshaushalt"
-      ],
-      "documents": [
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsoekonomie-in-der-lieferkette"
-      ],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -13241,21 +13069,6 @@
       "academyModules": [],
       "dataRegisters": []
     },
-    "lebenszyklus-emissionen": {
-      "terms": [
-        "betriebsemissionen",
-        "systemgrenze"
-      ],
-      "documents": [
-        "kernenergie-wieder-in-deutschland"
-      ],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
     "lebenszyklusanalyse": {
       "terms": [
         "lebenszyklusinventar",
@@ -13947,16 +13760,6 @@
       "academyModules": [],
       "dataRegisters": []
     },
-    "oeffentlichkeit-als-wirkungsraum": {
-      "terms": [],
-      "documents": [],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
     "ludwig-erhard": {
       "terms": [
         "soziale-marktwirtschaft",
@@ -14312,9 +14115,7 @@
         "beitragsbasis",
         "wirkungsfonds",
         "wirkungseinkommen",
-        "wirkungsrente",
-        "automatisierung",
-        "robotik"
+        "wirkungsrente"
       ],
       "documents": [
         "wenn-maschinen-arbeiten",
@@ -15277,6 +15078,27 @@
         "green-claims-directive"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "nachhaltigkeitsmanagement": {
+      "terms": [
+        "systemresilienz",
+        "wirkungsarchitektur",
+        "wirkungsdaten",
+        "risikomanagement",
+        "sdg-plus"
+      ],
+      "documents": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -16746,6 +16568,88 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "oeffentlichkeit-als-wirkungsraum": {
+      "terms": [
+        "plattformlogik-und-algorithmen",
+        "framing-sprache-tonalitaet",
+        "desinformation",
+        "diskurskultur",
+        "demokratische-oeffentlichkeit",
+        "informationsintegritaet",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "sdg-plus",
+        "quellenklarheit",
+        "vertrauen",
+        "aufmerksamkeit",
+        "aufmerksamkeitsoekonomie",
+        "polarisierung",
+        "resonanzraum",
+        "demokratiekompetenz",
+        "digitale-selbstbestimmung",
+        "algorithmische-fairness",
+        "ki-governance",
+        "cyberresilienz",
+        "wirkung",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungssimulation",
+        "scheinleistung",
+        "blindleistung",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "benchmark",
+        "woek-id",
+        "wirkungspruefung",
+        "wirkungshaushalt",
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "sdg-washing",
+        "greenwashing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "enterprise-risk-management-nach-wirkung",
+        "fuenftes-p-planet",
+        "produktdaten",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "reverse-merit-order",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungscontrolling",
+        "kii",
+        "lieferkettenwirkung",
+        "cradle-to-cradle"
+      ],
+      "documents": [
+        "[object Object]",
+        "die-neue-ordnung-des-wohlstands",
+        "systemmodell-der-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "offsetting-kompensation": {
       "terms": [
         "carbon-credits",
@@ -16791,6 +16695,67 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "oekofeminismus": {
+      "terms": [
+        "feminismus",
+        "dominanzlogik",
+        "externalisierung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "oekosoziale-marktwirtschaft": {
+      "terms": [
+        "soziale-marktwirtschaft",
+        "wirkungsrueckkopplung",
+        "wstg",
+        "sdg-plus",
+        "planetare-grenzen",
+        "klimafolgeschaeden"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "oekosystem": {
+      "terms": [
+        "kipppunkte",
+        "business-ecosystem",
+        "wirkungsarchitektur",
+        "systemtheorie",
+        "biodiversitaet",
+        "lieferkettenwirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "oekosystemleistungen": {
+      "terms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "oligarchie": {
       "terms": [
         "plutokratie",
@@ -16810,6 +16775,18 @@
       "terms": [
         "monopol",
         "marktmacht"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "oelkraftwerk": {
+      "terms": [
+        "fossiles-kraftwerk"
       ],
       "documents": [],
       "methods": [],
@@ -17083,6 +17060,25 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "oesterreichische-schule": {
+      "terms": [
+        "dezentralisierung",
+        "marktwirtschaft",
+        "wirkungsdaten",
+        "friedrich-hayek",
+        "wettbewerb-als-suchverfahren",
+        "liberalismus",
+        "wirkungsrueckkopplung",
+        "marktversagen"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18970,6 +18966,72 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "produktivitaetsgewinne": {
+      "terms": [
+        "automatisierung",
+        "automatisierungsdividende",
+        "maschinenleistungsrueckkopplung",
+        "produktivitaetssteuer",
+        "transformationsbonus"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "produktivitaetssteuer": {
+      "terms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistungsrueckkopplung",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "progressiv": {
       "terms": [
         "konservativ",
@@ -19542,8 +19604,7 @@
       "terms": [
         "faktencheck",
         "folgencheck",
-        "datenqualitaet",
-        "paltering"
+        "datenqualitaet"
       ],
       "documents": [],
       "methods": [],
@@ -20100,16 +20161,7 @@
         "faktenreaktanz",
         "paul-watzlawick",
         "metakommunikation",
-        "mentales-modell",
-        "frame",
-        "wirkungsblindheit",
-        "wirkungswahrheit",
-        "wirkungsrueckkopplung",
-        "positive-netto-wirkung",
-        "wirkungspfad",
-        "resonanzraum",
-        "wirkungspotenzial",
-        "wirkungsrisiko"
+        "mentales-modell"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -20670,6 +20722,48 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "resilienzarchitektur": {
+      "terms": [
+        "systemresilienz",
+        "wirkungsarchitektur",
+        "systemische-risikointelligenz",
+        "risiko-und-resilienzregister",
+        "sdg-plus"
+      ],
+      "documents": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "resilienzmanagement": {
+      "terms": [
+        "systemresilienz",
+        "risikomanagement",
+        "resilienzarchitektur",
+        "risiko-und-resilienzregister",
+        "sdg-plus"
+      ],
+      "documents": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "resonanz": {
       "terms": [
         "resonanzraum",
@@ -20740,9 +20834,7 @@
         "wirkungsnetz",
         "wirkungsorientiertes-hosting",
         "wirkungspotenzial",
-        "diskursfaehigkeit",
-        "frame",
-        "reframing"
+        "diskursfaehigkeit"
       ],
       "documents": [],
       "methods": [],
@@ -20783,9 +20875,23 @@
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "methods": [],
-      "tools": [],
+      "tools": [
+        {
+          "label": "Scorecards",
+          "href": "../../werkzeuge/scorecards/"
+        },
+        {
+          "label": "Reverse Merit Order",
+          "href": "../../werkzeuge/reverse-merit-order/"
+        }
+      ],
       "demos": [],
-      "impactFields": [],
+      "impactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -20992,6 +21098,47 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "risikomanagement": {
+      "terms": [
+        "systemresilienz",
+        "systemische-risikointelligenz",
+        "risiko-und-resilienzregister",
+        "wirkungsrisikomanagement"
+      ],
+      "documents": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "risikoregister": {
+      "terms": [
+        "risiko-und-resilienzregister",
+        "systemresilienz",
+        "risikomanagement",
+        "sdgs",
+        "sdg-plus"
+      ],
+      "documents": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "rlm-messung": {
       "terms": [
         "lastgang",
@@ -21095,9 +21242,6 @@
     "robotik": {
       "terms": [
         "automatisierung",
-        "kuenstliche-intelligenz",
-        "automatisierungsdividende",
-        "wirkungseinkommen",
         "maschinenleistung",
         "autonome-systeme",
         "robotersteuer",
@@ -21108,12 +21252,22 @@
         "wp-einkommen",
         "wp-rente"
       ],
-      "methods": [],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
       "tools": [],
-      "demos": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
       "impactFields": [
         "arbeit-einkommen",
-        "wissenschaft-innovation-digitalisierung"
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
       ],
       "academyModules": [],
       "dataRegisters": []
@@ -22182,8 +22336,7 @@
         "folgencheck",
         "false-balance",
         "policy-laundering",
-        "expertinnenlobbyismus",
-        "paltering"
+        "expertinnenlobbyismus"
       ],
       "documents": [],
       "methods": [],
@@ -24790,87 +24943,6 @@
       "academyModules": [],
       "dataRegisters": []
     },
-    "transformationspfad": {
-      "terms": [
-        "wirkungsrisiko",
-        "wirkungsresilienz",
-        "geschaeftsmodellpruefung",
-        "enterprise-risk-management-nach-wirkung",
-        "wirkungspotenzial",
-        "wirkungsbewertung",
-        "wirkungslenkung",
-        "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "positive-netto-wirkung",
-        "netto-wirkung",
-        "transformationswirkung",
-        "t-sroi",
-        "nwi",
-        "wirkleistung",
-        "scheinleistung",
-        "blindleistung",
-        "verlustleistung",
-        "unternehmen-als-wirkungssystem",
-        "wirkungsorientierte-unternehmensfuehrung",
-        "wirkungscontrolling",
-        "kii",
-        "wirkungskompetenz",
-        "lieferkettenwirkung",
-        "beschaffung-als-wirkungshebel",
-        "lieferantenbewertung",
-        "supply-chain-resilienz",
-        "produktwirkung",
-        "produktscorecard",
-        "digitaler-produktpass",
-        "woek-id",
-        "wirkungsindikator",
-        "scorecard",
-        "finalscore",
-        "datenqualitaet",
-        "benchmark",
-        "archetyp",
-        "reverse-merit-order",
-        "wirkungsgrenze",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsrat",
-        "kapitalwirkung",
-        "wirkungsfonds",
-        "portfolio-wirkung",
-        "wirkungsrendite",
-        "versicherbarkeit",
-        "wirkungssteuer",
-        "ehrliche-preise",
-        "wirkung-im-preisschild",
-        "greenwashing",
-        "impact-washing",
-        "sdg-washing",
-        "esg",
-        "csrd",
-        "esrs",
-        "gri",
-        "eu-taxonomie",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus"
-      ],
-      "documents": [
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsrat-konzept"
-      ],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
     "transformationswelle": {
       "terms": [
         "transformationswirkung",
@@ -25178,6 +25250,63 @@
         "ac-laden",
         "wallbox",
         "ccs-ladestecker"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "uebergabestation": {
+      "terms": [
+        "kundenanlage",
+        "mittelspannung",
+        "wandlermessung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "uebergangstaetigkeit": {
+      "terms": [
+        "eu-taxonomie",
+        "transition-finance",
+        "transition-plan",
+        "stranded-assets"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "uebertragungsnetz": {
+      "terms": [
+        "stromnetz",
+        "netzausbau",
+        "hoechstspannung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "ueberwachungskapitalismus": {
+      "terms": [
+        "plattformkapitalismus",
+        "vertrauen",
+        "demokratie"
       ],
       "documents": [],
       "methods": [],
@@ -28256,8 +28385,7 @@
         "entfremdung",
         "unsichtbare-arbeit",
         "modellblindheit",
-        "gedankenlosigkeit",
-        "reframing"
+        "gedankenlosigkeit"
       ],
       "documents": [
         "Führender Begriffsleitfaden der Wirkungsökonomie",
@@ -28316,9 +28444,7 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus",
-        "care-arbeit",
-        "ehrenamt"
+        "sdg-plus"
       ],
       "documents": [
         "wenn-maschinen-arbeiten",
@@ -28486,6 +28612,41 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungsbonus": {
+      "terms": [
+        "wirkleistung",
+        "wirkungsbiografie",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsrente",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungsdaten": {
       "terms": [
         "wirkungsdatenraum",
@@ -28562,68 +28723,6 @@
       "academyModules": [],
       "dataRegisters": []
     },
-    "wirkungsdatenraeume": {
-      "terms": [
-        "wirkungsdatenraum",
-        "woek-id",
-        "datenqualitaet",
-        "digitalisierung",
-        "digitale-selbstbestimmung",
-        "ki-governance",
-        "algorithmische-fairness",
-        "cyberresilienz",
-        "wirkungsindikator",
-        "digitaler-produktpass",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsrisiko",
-        "wirkungsresilienz",
-        "enterprise-risk-management-nach-wirkung",
-        "plattformlogik-und-algorithmen",
-        "desinformation",
-        "oeffentlichkeit-als-wirkungsraum",
-        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
-      ],
-      "documents": [
-        "technische-leitlinien-wustg",
-        "wirkungsrat-konzept",
-        "whitepaper-t-sroi"
-      ],
-      "methods": [
-        "datenqualitaet-assurance"
-      ],
-      "tools": [
-        "wirkungsdatenraeume",
-        "woek-id-register"
-      ],
-      "demos": [],
-      "impactFields": [
-        "wissenschaft-innovation-digitalisierung",
-        "produkte-konsum"
-      ],
-      "academyModules": [],
-      "dataRegisters": [
-        "woek-id-register"
-      ]
-    },
-    "wirkungseffizienz": {
-      "terms": [
-        "effizienz",
-        "positive-netto-wirkung",
-        "wirkungshaushalt",
-        "t-sroi",
-        "kii",
-        "wirkungsbewertung"
-      ],
-      "documents": [],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
     "wirkungseinkommen": {
       "terms": [
         "grunddividende",
@@ -28634,6 +28733,8 @@
         "feministische-oekonomie",
         "unbezahlte-arbeit",
         "feminisierung-von-armut",
+        "grunddividende",
+        "wirkungsbonus",
         "automatisierungsdividende",
         "wirkungseinkommensteuer",
         "maschinenwertschoepfungsbeitrag",
@@ -28643,6 +28744,40 @@
       "documents": [
         "wp-einkommen",
         "wenn-maschinen-arbeiten",
+        "wp-rente"
+      ],
+      "methods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "tools": [],
+      "demos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "impactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungseinkommensteuer": {
+      "terms": [
+        "wirkungseinkommen",
+        "maschinenwertschoepfungsbeitrag",
+        "automatisierungsdividende",
+        "wirkungsfonds",
+        "wirkungssteuer",
+        "wstg"
+      ],
+      "documents": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
         "wp-rente"
       ],
       "methods": [
@@ -28745,33 +28880,12 @@
         "artikel-20a-grundgesetz",
         "wirkungsstaat",
         "wirkungshaushalt",
-        "wirkungsrat",
-        "datenqualitaet"
-      ],
-      "documents": [],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
-    "wirkungsfonds": {
-      "terms": [
-        "kapitalwirkung",
-        "portfolio-wirkung",
-        "wirkungsrendite",
-        "versicherbarkeit",
-        "nwi",
-        "t-sroi",
-        "wirkungsrente",
-        "wirkungsbudget",
-        "wirkungshaushalt",
         "just-transition-mechanism",
         "maschinenleistungsrueckkopplung",
         "maschinenwertschoepfungsbeitrag",
         "automatisierungsdividende",
-        "transformationsbonus"
+        "transformationsbonus",
+        "wirkungsrente"
       ],
       "documents": [
         "wenn-maschinen-arbeiten",
@@ -28795,6 +28909,83 @@
         "rente-soziale-sicherung",
         "finanzsystem-kapital"
       ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsfonds": {
+      "terms": [
+        "kapitalwirkung",
+        "portfolio-wirkung",
+        "wirkungsrendite",
+        "versicherbarkeit",
+        "nwi",
+        "t-sroi",
+        "wirkungsrente",
+        "wirkungsbudget",
+        "wirkungshaushalt",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "impact-washing",
+        "greenwashing",
+        "sfdr",
+        "eu-taxonomie",
+        "wirkungskapital",
+        "kapitalrendite",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "transformationswirkung",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "wirkungs-bip",
+        "wirkungssteuer",
+        "wirkungsgutschrift",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsrat",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "benchmark",
+        "datenqualitaet",
+        "nichtkompensationsprinzip",
+        "esg",
+        "csrd",
+        "esrs",
+        "gri",
+        "nace",
+        "digitaler-produktpass",
+        "grunddividende",
+        "oeffentliche-beschaffung",
+        "resilienz",
+        "praevention",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "produktwirkung",
+        "produktscorecard",
+        "responsible-marketing",
+        "wirkungspunkte",
+        "wirkungsbonus"
+      ],
+      "documents": [
+        "die-neue-ordnung-des-wohlstands",
+        "whitepaper-t-sroi",
+        "systemmodell-der-wirkungsoekonomie",
+        "wp-rente",
+        "wirkungssteuergesetz"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -29579,6 +29770,27 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "wirkungsmanagement": {
+      "terms": [
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "impact-controlling",
+        "systemresilienz"
+      ],
+      "documents": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wirkungsnetz": {
       "terms": [
         "wirkungspfad",
@@ -29916,10 +30128,7 @@
         "wirkungsraum",
         "wirkungstraeger",
         "wirkungsverantwortung",
-        "zeitwirkung",
-        "frame",
-        "framing",
-        "reframing"
+        "zeitwirkung"
       ],
       "documents": [],
       "methods": [],
@@ -30553,11 +30762,14 @@
         "gender-pay-gap",
         "gender-pension-gap",
         "feminisierung-von-armut",
+        "wirkungsbiografie",
         "erwerbsbiografie",
+        "lebenswirkung",
         "wirkungsdividende",
         "buergerinnenfonds",
         "transformationsrente",
-        "automatisierungsdividende"
+        "automatisierungsdividende",
+        "wirkungsbonus"
       ],
       "documents": [
         "wp-rente",
@@ -30674,27 +30886,6 @@
       ],
       "documents": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
-      ],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
-    "wirkungsrisikoposition": {
-      "terms": [
-        "wirkungsrisiko",
-        "wirkungsbelasteter-kredit",
-        "strandinggefaehrdeter-kredit",
-        "stranded-assets",
-        "wirkungsdaten",
-        "wirkungsrueckkopplung",
-        "kapitalwirkung"
-      ],
-      "documents": [
-        "standardwerk-neue-ordnung-wohlstands-2026",
-        "wirkungsoekonomie-lieferkette"
       ],
       "methods": [],
       "tools": [],

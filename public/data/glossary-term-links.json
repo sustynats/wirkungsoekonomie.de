@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-11T21:43:16.427Z",
+  "generatedAt": "2026-06-11T21:28:47.134Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
       "slug": "fuenftes-p-planet",
       "url": "/begriffe/fuenftes-p-planet/",
-      "hoverDefinition": "5. P = Planet ergänzt den Marketing-Mix um die Frage nach realer Produkt- und Kommunikationswirkung.",
+      "hoverDefinition": "Planet als fünftes P bedeutet: Marketing wird nicht nur über Produkt, Preis, Platzierung und Promotion gesteuert, sondern über tatsächliche ökologische und gesellschaftliche Wirkung.",
       "shortDefinition": "Das fünfte P erweitert Produkt, Preis, Platzierung und Promotion um die reale Planet- und Produktwirkung von Angeboten.",
       "category": "WÖk-Begriff",
       "synonyms": [
@@ -28,7 +28,12 @@
         "impact-marketing"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "relatedDemos": [],
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
@@ -1630,8 +1635,7 @@
         "Automation",
         "Automatisierung von Arbeit",
         "digitale Automatisierung",
-        "KI-Automatisierung",
-        "Maschinenleistung"
+        "KI-Automatisierung"
       ],
       "relatedTerms": [
         "maschinenleistung",
@@ -1641,11 +1645,7 @@
         "sozialfinanzierung",
         "ki-und-arbeit",
         "robotik",
-        "autonome-systeme",
-        "kuenstliche-intelligenz",
-        "maschinenwertschoepfungsbeitrag",
-        "plattformarbeit",
-        "erwerbsarbeitslogik"
+        "autonome-systeme"
       ],
       "relatedMethods": [
         "scorecard",
@@ -1701,9 +1701,7 @@
         "grunddividende",
         "wirkungsbonus",
         "wirkungsrente",
-        "sozialfinanzierung",
-        "automatisierung",
-        "robotik"
+        "sozialfinanzierung"
       ],
       "relatedMethods": [
         "scorecard",
@@ -4660,6 +4658,55 @@
       ],
       "relatedObjections": []
     },
+    "cyberresilienz": {
+      "label": "Cyberresilienz",
+      "slug": "cyberresilienz",
+      "url": "/begriffe/cyberresilienz/",
+      "hoverDefinition": "Cyberresilienz sichert digitale Systeme gegen Störung, Manipulation und Vertrauensverlust.",
+      "shortDefinition": "Cyberresilienz beschreibt die Fähigkeit digitaler Systeme, Angriffe, Störungen und Datenmanipulation zu verhindern, zu überstehen, zu begrenzen und daraus zu lernen.",
+      "category": "Daten, Digitalisierung und KI",
+      "synonyms": [
+        "Cyberresilienz",
+        "Cyber Resilience",
+        "operative digitale Resilienz",
+        "Wirkungs-Sicherheit",
+        "Daten-Sabotage-Schutz",
+        "digitale Wiederherstellbarkeit"
+      ],
+      "relatedTerms": [
+        "wirkungsdatenraeume",
+        "ki-governance",
+        "algorithmische-fairness",
+        "digitalisierung",
+        "digitale-selbstbestimmung",
+        "datenqualitaet",
+        "woek-id",
+        "wirkungsindikator",
+        "digitaler-produktpass",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "enterprise-risk-management-nach-wirkung",
+        "plattformlogik-und-algorithmen",
+        "desinformation",
+        "oeffentlichkeit-als-wirkungsraum",
+        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie",
+        "supply-chain-resilienz"
+      ],
+      "relatedMethods": [
+        "datenqualitaet-assurance"
+      ],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "wirkungsrat-konzept",
+        "whitepaper-t-sroi"
+      ],
+      "relatedObjections": []
+    },
     "dao": {
       "label": "Dao / Tao",
       "slug": "dao",
@@ -6563,6 +6610,7 @@
         "esrs",
         "esg",
         "iro",
+        "wirkungsbewertung",
         "inside-out-outside-in",
         "impact-materiality",
         "financial-materiality",
@@ -6570,7 +6618,6 @@
         "impact-controlling",
         "key-impact-indicator"
       ],
-      "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
@@ -10063,6 +10110,35 @@
       ],
       "relatedObjections": []
     },
+    "financial-materiality": {
+      "label": "Financial Materiality",
+      "slug": "financial-materiality",
+      "url": "/begriffe/financial-materiality/",
+      "hoverDefinition": "Financial Materiality bezeichnet Nachhaltigkeitsthemen, die für Kosten, Chancen, Risiken, Finanzierung, Resilienz oder Geschäftsmodell eines Unternehmens wesentlich werden.",
+      "shortDefinition": "Financial Materiality bezeichnet Nachhaltigkeitsthemen, die für Kosten, Chancen, Risiken, Finanzierung, Resilienz oder Geschäftsmodell eines Unternehmens wesentlich werden.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Financial Materiality",
+        "Finanzielle Wesentlichkeit",
+        "Outside-In-Wesentlichkeit"
+      ],
+      "relatedTerms": [
+        "doppelte-wesentlichkeit",
+        "inside-out-outside-in",
+        "iro",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "csrd",
+        "esrs"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": []
+    },
     "finanzmarktkapitalismus": {
       "label": "Finanzmarktkapitalismus",
       "slug": "finanzmarktkapitalismus",
@@ -12896,9 +12972,9 @@
       "label": "Grunddividende",
       "slug": "grunddividende",
       "url": "/begriffe/grunddividende/",
-      "hoverDefinition": "Die Grunddividende ist die Basiskomponente des Wirkungseinkommens: eine verlässliche Grundsicherheit als Anteil an der gemeinsamen Systemwirkung einer Gesellschaft.",
-      "shortDefinition": "Die Grunddividende ist die Basiskomponente des Wirkungseinkommens: eine verlässliche Grundsicherheit als Anteil an der gemeinsamen Systemwirkung einer Gesellschaft.",
-      "category": "Einkommen, Grundsicherheit & Teilhabe",
+      "hoverDefinition": "Grunddividende ist der universelle Sockel im Wirkungseinkommen: Sicherheit und Teilhabe ohne Personenbewertung.",
+      "shortDefinition": "Die Grunddividende ist der universelle Sockel des Wirkungseinkommens. Sie steht jedem Menschen als Anteil an gemeinsamer gesellschaftlicher Produktivität zu und schützt Würde, Sicherheit und Zugehörigkeit.",
+      "category": "Praxisbegriff",
       "synonyms": [
         "Grunddividende",
         "Basisdividende",
@@ -12907,61 +12983,11 @@
         "universeller Sockel",
         "BGE",
         "Grundeinkommen",
-        "bedingungsloses Grundeinkommen",
-        "Wirkungsgrunddividende",
-        "gesellschaftliche Grunddividende",
-        "Systemdividende",
-        "Grundsicherung nach Wirkung",
-        "Universal Impact Dividend",
-        "Dividende aus gemeinsamer Wirkung",
-        "Basis des Wirkungseinkommens"
+        "bedingungsloses Grundeinkommen"
       ],
       "relatedTerms": [
         "wirkungseinkommen",
         "wirkungsbonus",
-        "wirkungsrente",
-        "wirkungspunkte",
-        "automatisierung",
-        "maschinenleistung",
-        "teilhabe",
-        "teilgabe",
-        "selbstwirksamkeit",
-        "wirkungssteuer",
-        "wirkungshaushalt",
-        "wirkungseinkommensteuer",
-        "wirkungsbiografie",
-        "lebenswirkung",
-        "praevention",
-        "wirkleistung",
-        "scheinleistung",
-        "blindleistung",
-        "verlustleistung",
-        "nwi",
-        "wirkungs-bip",
-        "wirkungsgutschrift",
-        "wirkungssteuergesetz",
-        "wirkungsrueckkopplung",
-        "wirkungslenkung",
-        "wirkungsarchitektur",
-        "positive-netto-wirkung",
-        "netto-wirkung",
-        "transformationswirkung",
-        "woek-id",
-        "wirkungsindikator",
-        "scorecard",
-        "finalscore",
-        "datenqualitaet",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "reverse-merit-order",
-        "wirkungsgrenze",
-        "nichtkompensationsprinzip",
-        "wirkungsbudget",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
         "automatisierungsdividende",
         "wirkungsfonds",
         "bedingungsloses-grundeinkommen"
@@ -12985,9 +13011,7 @@
       "relatedDocuments": [
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
-        "wp-rente",
-        "die-neue-ordnung-des-wohlstands",
-        "wirkungssteuergesetz"
+        "wp-rente"
       ],
       "relatedObjections": []
     },
@@ -14808,38 +14832,6 @@
       ],
       "relatedObjections": []
     },
-    "impact-strategie": {
-      "label": "Impact-Strategie",
-      "slug": "impact-strategie",
-      "url": "/begriffe/impact-strategie/",
-      "hoverDefinition": "Impact-Strategie macht doppelte Wesentlichkeit, Risiken, Chancen und Transformationsziele zu Prioritäten, Roadmaps und steuerbaren Key Impact Indicators.",
-      "shortDefinition": "Impact-Strategie übersetzt doppelte Wesentlichkeit, Unternehmenszweck, Risiken, Chancen und Transformationsziele in Prioritäten, Roadmaps und Steuerungsgrößen.",
-      "category": "WÖk-Begriff",
-      "synonyms": [
-        "Impact-Strategie",
-        "Impact Strategie",
-        "Wirkungsstrategie",
-        "wirkungsorientierte Unternehmensstrategie"
-      ],
-      "relatedTerms": [
-        "doppelte-wesentlichkeit",
-        "impact-management",
-        "impact-controlling",
-        "impact-marketing",
-        "key-impact-indicator",
-        "wirkungsdaten",
-        "wirkungsarchitektur",
-        "transformationswirkung"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
-      ],
-      "relatedObjections": []
-    },
     "impact-value": {
       "label": "Impact Value / Wirkungswert",
       "slug": "impact-value",
@@ -14889,8 +14881,7 @@
         "datenqualitaet",
         "steuerungsdaten",
         "wirkungsdatenraum",
-        "wirkungsrueckkopplung",
-        "impact-strategie"
+        "wirkungsrueckkopplung"
       ],
       "relatedMethods": [
         "Impact Controlling",
@@ -14903,8 +14894,7 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "relatedObjections": []
     },
@@ -14928,9 +14918,7 @@
         "wirkungsrueckkopplung",
         "steuerungsdaten",
         "wirkungsdaten",
-        "wirkungsrisiko",
-        "impact-strategie",
-        "wirkungsmanagement"
+        "wirkungsrisiko"
       ],
       "relatedMethods": [
         "Impact Controlling",
@@ -14941,8 +14929,7 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "relatedObjections": []
     },
@@ -14966,8 +14953,7 @@
         "greenwashing",
         "wirkungswahrheit",
         "impact-management",
-        "impact-controlling",
-        "impact-strategie"
+        "impact-controlling"
       ],
       "relatedMethods": [
         "Folgencheck",
@@ -14979,8 +14965,7 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "relatedObjections": []
     },
@@ -14988,9 +14973,9 @@
       "label": "Impact-Washing",
       "slug": "impact-washing",
       "url": "/begriffe/impact-washing/",
-      "hoverDefinition": "Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.",
+      "hoverDefinition": "Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist.",
       "shortDefinition": "Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist.",
-      "category": "Datenbegriff",
+      "category": "Wirkung, Kommunikation & Missbrauchsschutz",
       "synonyms": [
         "Impact-Washing",
         "Impact Washing",
@@ -16372,30 +16357,6 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
-    "kernkraft-neubau": {
-      "label": "Kernkraft-Neubau",
-      "slug": "kernkraft-neubau",
-      "url": "/begriffe/kernkraft-neubau/",
-      "hoverDefinition": "Für Klimaschutz zählt nicht nur, ob eine Anlage CO₂-arm wäre, sondern wann sie real Strom liefert.",
-      "shortDefinition": "Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.",
-      "category": "Wirkungsradar-Begriff",
-      "synonyms": [
-        "Kernkraft-Neubau"
-      ],
-      "relatedTerms": [
-        "betriebsemissionen",
-        "lebenszyklus-emissionen",
-        "opportunitaetskosten",
-        "endlager"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "kernenergie-wieder-in-deutschland"
-      ],
-      "relatedObjections": []
-    },
     "key-impact-indicator": {
       "label": "Key Impact Indicator / KII",
       "slug": "key-impact-indicator",
@@ -16418,8 +16379,7 @@
         "wirkungsdaten",
         "scorecard",
         "nwi",
-        "datenqualitaet",
-        "impact-strategie"
+        "datenqualitaet"
       ],
       "relatedMethods": [
         "Impact Controlling",
@@ -16428,32 +16388,8 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
-      "relatedObjections": []
-    },
-    "keynesianismus": {
-      "label": "Keynesianismus",
-      "slug": "keynesianismus",
-      "url": "/begriffe/keynesianismus/",
-      "hoverDefinition": "Keynesianismus betont die Rolle staatlicher Nachfrage-, Investitions- und Stabilisierungspolitik, besonders in Krisen. Märkte gelten nicht automatisch als stabil oder vollbeschäftigend.",
-      "shortDefinition": "Keynesianismus betont die Rolle staatlicher Nachfrage-, Investitions- und Stabilisierungspolitik, besonders in Krisen. Märkte gelten nicht automatisch als stabil oder vollbeschäftigend.",
-      "category": "Glossar-Erweiterung",
-      "synonyms": [
-        "Keynesianismus"
-      ],
-      "relatedTerms": [
-        "wirkungshaushalt",
-        "praeventionsdividende",
-        "klimafolgeschaeden",
-        "staat",
-        "soziale-marktwirtschaft"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
       "relatedObjections": []
     },
     "ki-und-arbeit": {
@@ -16498,151 +16434,6 @@
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
         "wp-rente"
-      ],
-      "relatedObjections": []
-    },
-    "ki-governance": {
-      "label": "KI-Governance",
-      "slug": "ki-governance",
-      "url": "/begriffe/ki-governance/",
-      "hoverDefinition": "KI-Governance regelt Verantwortung, Prüfung, Aufsicht und Korrektur beim Einsatz von KI.",
-      "shortDefinition": "KI-Governance beschreibt Regeln, Rollen, Prüfpfade und Verantwortung, damit KI-Systeme Wirkung nicht unsichtbar, diskriminierend oder unkontrolliert verstärken.",
-      "category": "Daten, Digitalisierung und KI",
-      "synonyms": [
-        "KI-Governance",
-        "AI Governance",
-        "KI-Risikomanagement",
-        "KI-Audit",
-        "KI-Assurance",
-        "Human Oversight",
-        "KI-Verantwortung"
-      ],
-      "relatedTerms": [
-        "kuenstliche-intelligenz",
-        "algorithmische-fairness",
-        "datenqualitaet",
-        "digitale-selbstbestimmung",
-        "wirkungsrisiko",
-        "wirkungsdatenraeume",
-        "cyberresilienz",
-        "digitalisierung",
-        "woek-id",
-        "wirkungsindikator",
-        "digitaler-produktpass",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsresilienz",
-        "enterprise-risk-management-nach-wirkung",
-        "plattformlogik-und-algorithmen",
-        "desinformation",
-        "oeffentlichkeit-als-wirkungsraum",
-        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
-      ],
-      "relatedMethods": [
-        "datenqualitaet-assurance"
-      ],
-      "relatedImpactFields": [
-        "wissenschaft-innovation-digitalisierung",
-        "staat-recht-demokratie"
-      ],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "technische-leitlinien-wustg",
-        "wirkungsrat-konzept",
-        "whitepaper-t-sroi"
-      ],
-      "relatedObjections": []
-    },
-    "kii": {
-      "label": "KII",
-      "slug": "kii",
-      "url": "/begriffe/kii/",
-      "hoverDefinition": "Ein KII ist ein Key Impact Indicator: eine zentrale Wirkungskennzahl, die zeigt, welche Zustandsveränderung eine Strategie, Tätigkeit, Entscheidung oder Organisation erzeugt.",
-      "shortDefinition": "KII steht für Key Impact Indicator: eine zentrale Wirkungskennzahl, die Zustandsveränderung statt bloßen Output sichtbar macht.",
-      "category": "Kennzahlen, Controlling & Unternehmenssteuerung",
-      "synonyms": [
-        "KII",
-        "Key Impact Indicator",
-        "Key-Impact-Indicator",
-        "Schlüsselwirkungsindikator",
-        "Wirkungskennzahl",
-        "Impact Indicator im Management",
-        "strategischer Wirkungsindikator",
-        "zentrale Wirkungskennzahl",
-        "KII-System"
-      ],
-      "relatedTerms": [
-        "wirkungscontrolling",
-        "unternehmen-als-wirkungssystem",
-        "wirkungskompetenz",
-        "wirkungsindikator",
-        "scorecard",
-        "produktscorecard",
-        "benchmark",
-        "archetyp",
-        "finalscore",
-        "nwi",
-        "t-sroi",
-        "wirkungsbewertung",
-        "greenwashing",
-        "impact-washing",
-        "positive-netto-wirkung",
-        "wirkungsorientierte-unternehmensfuehrung",
-        "purpose-washing",
-        "wirkungslenkung",
-        "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "netto-wirkung",
-        "transformationswirkung",
-        "wirkleistung",
-        "scheinleistung",
-        "blindleistung",
-        "produktwirkung",
-        "woek-id",
-        "datenqualitaet",
-        "reverse-merit-order",
-        "wirkungsgrenze",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsrat",
-        "produktdaten",
-        "digitaler-produktpass",
-        "lieferkettenwirkung",
-        "beschaffung-als-wirkungshebel",
-        "lieferantenbewertung",
-        "responsible-marketing",
-        "sdg-washing",
-        "esg",
-        "csrd",
-        "esrs",
-        "gri",
-        "eu-taxonomie",
-        "kapitalwirkung",
-        "wirkungsfonds",
-        "portfolio-wirkung",
-        "wirkungsrendite",
-        "versicherbarkeit",
-        "lernende-organisation",
-        "wirkungskommunikation",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "key-impact-indicator",
-        "wirkungshaushalt"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsoekonomie-in-der-lieferkette"
       ],
       "relatedObjections": []
     },
@@ -18606,28 +18397,6 @@
       ],
       "relatedObjections": []
     },
-    "lebenszyklus-emissionen": {
-      "label": "Lebenszyklus-Emissionen",
-      "slug": "lebenszyklus-emissionen",
-      "url": "/begriffe/lebenszyklus-emissionen/",
-      "hoverDefinition": "Ein fairer Vergleich braucht den Lebenszyklus, nicht nur den Betrieb.",
-      "shortDefinition": "Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgung.",
-      "category": "Wirkungsradar-Begriff",
-      "synonyms": [
-        "Lebenszyklus-Emissionen"
-      ],
-      "relatedTerms": [
-        "betriebsemissionen",
-        "systemgrenze"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "kernenergie-wieder-in-deutschland"
-      ],
-      "relatedObjections": []
-    },
     "lebenszyklusanalyse": {
       "label": "Lebenszyklusanalyse / LCA",
       "slug": "lebenszyklusanalyse",
@@ -19623,31 +19392,6 @@
       ],
       "relatedObjections": []
     },
-    "oeffentlichkeit-als-wirkungsraum": {
-      "label": "Öffentlichkeit als Wirkungsraum",
-      "slug": "oeffentlichkeit-als-wirkungsraum",
-      "url": "/begriffe/oeffentlichkeit-als-wirkungsraum/",
-      "hoverDefinition": "Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung. Energie wird nicht nur als Ware betrachtet, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, digitale Infrastruktur, Klimaschutz und demokratische Resilienz.",
-      "shortDefinition": "Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung. Energie wird nicht nur als Ware betrachtet, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, digitale Infrastruktur, Klimaschutz und demokratische Resilienz.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Öffentlichkeit als Wirkungsraum",
-        "öffentliche Wirkung",
-        "öffentliche Resonanzräume",
-        "Öffentlichkeit als Resonanzraum",
-        "demokratische Öffentlichkeit",
-        "Medienöffentlichkeit als Wirkungsraum",
-        "digitale Öffentlichkeit",
-        "public sphere as impact space",
-        "öffentlicher Wirkungsraum"
-      ],
-      "relatedTerms": [],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
-      "relatedObjections": []
-    },
     "ludwig-erhard": {
       "label": "Ludwig Erhard",
       "slug": "ludwig-erhard",
@@ -20165,9 +19909,7 @@
         "beitragsbasis",
         "wirkungsfonds",
         "wirkungseinkommen",
-        "wirkungsrente",
-        "automatisierung",
-        "robotik"
+        "wirkungsrente"
       ],
       "relatedMethods": [
         "scorecard",
@@ -21533,6 +21275,36 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nachhaltigkeitsmanagement": {
+      "label": "Nachhaltigkeitsmanagement",
+      "slug": "nachhaltigkeitsmanagement",
+      "url": "/begriffe/nachhaltigkeitsmanagement/",
+      "hoverDefinition": "Nachhaltigkeitsmanagement organisiert Ziele, Daten, Programme und Berichte zu ökologischen, sozialen und Governance-Themen.",
+      "shortDefinition": "Nachhaltigkeitsmanagement organisiert Ziele, Daten, Programme und Berichte zu ökologischen, sozialen und Governance-Themen.",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "synonyms": [
+        "Nachhaltigkeitsmanagement",
+        "Sustainability Management",
+        "ESG-Management"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "wirkungsarchitektur",
+        "wirkungsdaten",
+        "risikomanagement",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
       "relatedObjections": []
     },
     "nachtwaechterstaat": {
@@ -23593,6 +23365,103 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "oeffentlichkeit-als-wirkungsraum": {
+      "label": "Öffentlichkeit als Wirkungsraum",
+      "slug": "oeffentlichkeit-als-wirkungsraum",
+      "url": "/begriffe/oeffentlichkeit-als-wirkungsraum/",
+      "hoverDefinition": "Öffentlichkeit als Wirkungsraum bedeutet, dass öffentliche Kommunikation Zustände verändert: Vertrauen, Wahrheit, Zugehörigkeit, Polarisierung, Aufmerksamkeit und demokratische Handlungsfähigkeit.",
+      "shortDefinition": "Öffentlichkeit als Wirkungsraum bedeutet, dass öffentliche Kommunikation Zustände verändert: Vertrauen, Wahrheit, Zugehörigkeit, Polarisierung, Aufmerksamkeit und demokratische Handlungsfähigkeit.",
+      "category": "Medien, Demokratie & Wirkungsräume",
+      "synonyms": [
+        "Öffentlichkeit als Wirkungsraum",
+        "öffentliche Wirkung",
+        "öffentliche Resonanzräume",
+        "Öffentlichkeit als Resonanzraum",
+        "demokratische Öffentlichkeit",
+        "Medienöffentlichkeit als Wirkungsraum",
+        "digitale Öffentlichkeit",
+        "public sphere as impact space",
+        "öffentlicher Wirkungsraum"
+      ],
+      "relatedTerms": [
+        "plattformlogik-und-algorithmen",
+        "framing-sprache-tonalitaet",
+        "desinformation",
+        "diskurskultur",
+        "demokratische-oeffentlichkeit",
+        "informationsintegritaet",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "sdg-plus",
+        "quellenklarheit",
+        "vertrauen",
+        "aufmerksamkeit",
+        "aufmerksamkeitsoekonomie",
+        "polarisierung",
+        "resonanzraum",
+        "demokratiekompetenz",
+        "digitale-selbstbestimmung",
+        "algorithmische-fairness",
+        "ki-governance",
+        "cyberresilienz",
+        "wirkung",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wirkungssimulation",
+        "scheinleistung",
+        "blindleistung",
+        "wirkungsrat",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsindikator",
+        "datenqualitaet",
+        "benchmark",
+        "woek-id",
+        "wirkungspruefung",
+        "wirkungshaushalt",
+        "responsible-marketing",
+        "wirkungskommunikation",
+        "purpose-washing",
+        "impact-washing",
+        "sdg-washing",
+        "greenwashing",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "enterprise-risk-management-nach-wirkung",
+        "fuenftes-p-planet",
+        "produktdaten",
+        "produktscorecard",
+        "digitaler-produktpass",
+        "reverse-merit-order",
+        "ehrliche-preise",
+        "wirkung-im-preisschild",
+        "wirkungscontrolling",
+        "kii",
+        "lieferkettenwirkung",
+        "cradle-to-cradle"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "[object Object]",
+        "die-neue-ordnung-des-wohlstands",
+        "systemmodell-der-wirkungsoekonomie",
+        "leitbild-mensch-planet-demokratie"
+      ],
+      "relatedObjections": []
+    },
     "offsetting-kompensation": {
       "label": "Offsetting / Kompensation",
       "slug": "offsetting-kompensation",
@@ -23664,6 +23533,104 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "oekofeminismus": {
+      "label": "Ökofeminismus",
+      "slug": "oekofeminismus",
+      "url": "/begriffe/oekofeminismus/",
+      "hoverDefinition": "Ökofeminismus verbindet feministische Machtkritik mit ökologischer Kritik an Ausbeutung, Dominanz und Externalisierung.",
+      "shortDefinition": "Ökofeminismus verbindet feministische Machtkritik mit ökologischer Kritik an Ausbeutung, Dominanz und Externalisierung.",
+      "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
+      "synonyms": [
+        "Ökofeminismus",
+        "Ecofeminism"
+      ],
+      "relatedTerms": [
+        "feminismus",
+        "dominanzlogik",
+        "externalisierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "oekosoziale-marktwirtschaft": {
+      "label": "Ökosoziale Marktwirtschaft",
+      "slug": "oekosoziale-marktwirtschaft",
+      "url": "/begriffe/oekosoziale-marktwirtschaft/",
+      "hoverDefinition": "Ökosoziale Marktwirtschaft erweitert marktwirtschaftlichen Wettbewerb und sozialen Ausgleich um ökologische Verantwortung, Umweltkosten und langfristige Nachhaltigkeit.",
+      "shortDefinition": "Ökosoziale Marktwirtschaft erweitert marktwirtschaftlichen Wettbewerb und sozialen Ausgleich um ökologische Verantwortung, Umweltkosten und langfristige Nachhaltigkeit.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Ökosoziale Marktwirtschaft"
+      ],
+      "relatedTerms": [
+        "soziale-marktwirtschaft",
+        "wirkungsrueckkopplung",
+        "wstg",
+        "sdg-plus",
+        "planetare-grenzen",
+        "klimafolgeschaeden"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "oekosystem": {
+      "label": "Ökosystem",
+      "slug": "oekosystem",
+      "url": "/begriffe/oekosystem/",
+      "hoverDefinition": "Ökosystem bezeichnet erstens biologische Lebensgemeinschaften in Wechselwirkung mit ihrer Umwelt. In der Wirtschafts- und Innovationssprache bezeichnet es zweitens Netzwerke von Akteuren, Ressourcen, Plattformen, Regeln und Beziehungen.",
+      "shortDefinition": "Ökosystem bezeichnet erstens biologische Lebensgemeinschaften in Wechselwirkung mit ihrer Umwelt. In der Wirtschafts- und Innovationssprache bezeichnet es zweitens Netzwerke von Akteuren, Ressourcen, Plattformen, Regeln und Beziehungen.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Ökosystem"
+      ],
+      "relatedTerms": [
+        "kipppunkte",
+        "business-ecosystem",
+        "wirkungsarchitektur",
+        "systemtheorie",
+        "biodiversitaet",
+        "lieferkettenwirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "oekosystemleistungen": {
+      "label": "Ökosystemleistungen / Ökosystemfunktionen",
+      "slug": "oekosystemleistungen",
+      "url": "/begriffe/oekosystemleistungen/",
+      "hoverDefinition": "Ökosystemleistungen beschreiben Beiträge der Natur zu Wasser, Ernährung, Klima, Gesundheit, Schutz und Lebensqualität.",
+      "shortDefinition": "Ökosystemleistungen beschreiben Beiträge der Natur zu Wasser, Ernährung, Klima, Gesundheit, Schutz und Lebensqualität.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Ökosystemleistungen / Ökosystemfunktionen",
+        "Oekosystemleistungen",
+        "Ecosystem Services",
+        "Ökosystemfunktionen",
+        "Oekosystemfunktionen",
+        "Bestäubungsleistung",
+        "Bestaeubungsleistung",
+        "Biodiversitäts-Fußabdruck",
+        "Biodiversitaets-Fussabdruck"
+      ],
+      "relatedTerms": [
+        "biodiversitaetsrisiko",
+        "nature-related-risks"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "oligarchie": {
       "label": "Oligarchie",
       "slug": "oligarchie",
@@ -23699,6 +23666,25 @@
       "relatedTerms": [
         "monopol",
         "marktmacht"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "oelkraftwerk": {
+      "label": "Ölkraftwerk",
+      "slug": "oelkraftwerk",
+      "url": "/begriffe/oelkraftwerk/",
+      "hoverDefinition": "Ein Ölkraftwerk erzeugt Strom aus Erdölprodukten.",
+      "shortDefinition": "Ein Ölkraftwerk erzeugt Strom aus Erdölprodukten.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Ölkraftwerk"
+      ],
+      "relatedTerms": [
+        "fossiles-kraftwerk"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -24067,6 +24053,33 @@
       ],
       "relatedObjections": []
     },
+    "oesterreichische-schule": {
+      "label": "Österreichische Schule",
+      "slug": "oesterreichische-schule",
+      "url": "/begriffe/oesterreichische-schule/",
+      "hoverDefinition": "Die Österreichische Schule betont subjektive Wertschätzung, Unternehmertum, Marktprozesse, dezentrales Wissen, Wettbewerb als Entdeckungsverfahren und Skepsis gegenüber zentraler Planung.",
+      "shortDefinition": "Die Österreichische Schule betont subjektive Wertschätzung, Unternehmertum, Marktprozesse, dezentrales Wissen, Wettbewerb als Entdeckungsverfahren und Skepsis gegenüber zentraler Planung.",
+      "category": "Glossar-Erweiterung",
+      "synonyms": [
+        "Österreichische Schule",
+        "Austrian School"
+      ],
+      "relatedTerms": [
+        "dezentralisierung",
+        "marktwirtschaft",
+        "wirkungsdaten",
+        "friedrich-hayek",
+        "wettbewerb-als-suchverfahren",
+        "liberalismus",
+        "wirkungsrueckkopplung",
+        "marktversagen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "pai": {
       "label": "PAI / Principal Adverse Impacts",
       "slug": "pai",
@@ -24086,6 +24099,42 @@
         "sustainable-finance",
         "wirkungsrisiko",
         "wirkungsdaten"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "paltering": {
+      "label": "Paltering",
+      "slug": "paltering",
+      "url": "/begriffe/paltering/",
+      "hoverDefinition": "Täuschung durch wahre Aussagen, die einen falschen oder verzerrten Eindruck erzeugen.",
+      "shortDefinition": "Paltering bezeichnet eine Form der Täuschung, bei der wahre Aussagen aktiv so eingesetzt werden, dass ein irreführender Eindruck entsteht.",
+      "category": "Medien, Demokratie & Wirkungsrisiko",
+      "synonyms": [
+        "Paltering",
+        "Wahrheitstäuschung",
+        "Täuschung durch wahre Aussagen",
+        "irreführende Wahrheit",
+        "truthful statements to mislead"
+      ],
+      "relatedTerms": [
+        "desinformation",
+        "selektive-evidenz",
+        "framing",
+        "quellenklarheit",
+        "informationsintegritaet",
+        "faktencheck",
+        "folgencheck",
+        "wirkungsradar",
+        "wirkungswahrheit",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "diskurskultur",
+        "oeffentlichkeit-als-wirkungsraum",
+        "vertrauen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -26509,6 +26558,95 @@
       "relatedDemos": [],
       "relatedDocuments": [
         "[object Object]"
+      ],
+      "relatedObjections": []
+    },
+    "produktivitaetsgewinne": {
+      "label": "Produktivitätsgewinne",
+      "slug": "produktivitaetsgewinne",
+      "url": "/begriffe/produktivitaetsgewinne/",
+      "hoverDefinition": "Produktivitätsgewinne sind in der WÖk erwünscht, brauchen aber faire und wirkungsorientierte Rückkopplung.",
+      "shortDefinition": "Produktivitätsgewinne sind Mehrerträge oder Effizienzgewinne durch bessere Technik, Organisation, Wissen oder Automatisierung.",
+      "category": "Anschlussbegriff",
+      "synonyms": [
+        "Produktivitätsgewinne",
+        "Produktivitätsgewinn",
+        "Produktivitätszuwachs",
+        "Produktivitätssteigerung",
+        "Produktivitätsfortschritt"
+      ],
+      "relatedTerms": [
+        "automatisierung",
+        "automatisierungsdividende",
+        "maschinenleistungsrueckkopplung",
+        "produktivitaetssteuer",
+        "transformationsbonus"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "produktivitaetssteuer": {
+      "label": "Produktivitätssteuer",
+      "slug": "produktivitaetssteuer",
+      "url": "/begriffe/produktivitaetssteuer/",
+      "hoverDefinition": "Produktivitätssteuer ist ein Suchbegriff; WÖk-präziser ist die wirkungsorientierte Rückkopplung automatisierter Wertschöpfung.",
+      "shortDefinition": "Produktivitätssteuer bezeichnet allgemein die Idee, Produktivitätsgewinne steuerlich abzuschöpfen. In der WÖk ist der Begriff unscharf; präziser sind Automatisierungsdividende, Maschinenwertschöpfungsbeitrag und Maschinenleistungsrückkopplung.",
+      "category": "Abgrenzungsbegriff",
+      "synonyms": [
+        "Produktivitätssteuer",
+        "Produktivitätsabgabe",
+        "Produktivitätsbeitrag",
+        "Produktivitätsdividende",
+        "Produktivitätsrückführung",
+        "Automatisierungsabgabe"
+      ],
+      "relatedTerms": [
+        "automatisierungsdividende",
+        "maschinenwertschoepfungsbeitrag",
+        "maschinenleistungsrueckkopplung",
+        "sozialfinanzierung",
+        "beitragsluecke"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
       ],
       "relatedObjections": []
     },
@@ -28984,6 +29122,66 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "resilienzarchitektur": {
+      "label": "Resilienzarchitektur",
+      "slug": "resilienzarchitektur",
+      "url": "/begriffe/resilienzarchitektur/",
+      "hoverDefinition": "Resilienzarchitektur beschreibt die organisatorischen, datenbezogenen und institutionellen Strukturen, mit denen ein System Risiken erkennt, Rückkopplung organisiert und zentrale Funktionen schützt.",
+      "shortDefinition": "Resilienzarchitektur beschreibt die organisatorischen, datenbezogenen und institutionellen Strukturen, mit denen ein System Risiken erkennt, Rückkopplung organisiert und zentrale Funktionen schützt.",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "synonyms": [
+        "Resilienzarchitektur",
+        "Resilience Architecture",
+        "Resilienz-Architektur"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "wirkungsarchitektur",
+        "systemische-risikointelligenz",
+        "risiko-und-resilienzregister",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "relatedObjections": []
+    },
+    "resilienzmanagement": {
+      "label": "Resilienzmanagement",
+      "slug": "resilienzmanagement",
+      "url": "/begriffe/resilienzmanagement/",
+      "hoverDefinition": "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress.",
+      "shortDefinition": "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress.",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "synonyms": [
+        "Resilienzmanagement",
+        "Resilience Management",
+        "Resilienz-Management"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "risikomanagement",
+        "resilienzarchitektur",
+        "risiko-und-resilienzregister",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "relatedObjections": []
+    },
     "resonanz": {
       "label": "Resonanz",
       "slug": "resonanz",
@@ -29168,9 +29366,9 @@
       "label": "Responsible Marketing",
       "slug": "responsible-marketing",
       "url": "/begriffe/responsible-marketing/",
-      "hoverDefinition": "Responsible Marketing verbindet belegbare Claims, Transparenz und Verantwortung für Kommunikationswirkung.",
+      "hoverDefinition": "Responsible Marketing ist Marketing, das Produkte, Marken und Wirkungsclaims wahrheitsfähig, prüfbar und verantwortungsvoll kommuniziert und Nachfrage in Richtung positiver Netto-Wirkung unterstützt.",
       "shortDefinition": "Responsible Marketing ist Marketing, das Produkte, Marken und Wirkungsclaims wahrheitsfähig, prüfbar und verantwortungsvoll kommuniziert und Nachfrage in Richtung positiver Netto-Wirkung unterstützt.",
-      "category": "Datenbegriff",
+      "category": "Marketing, Kommunikation & Verbraucherinformation",
       "synonyms": [
         "Responsible Marketing",
         "verantwortliches Marketing",
@@ -29190,7 +29388,12 @@
         "impact-marketing"
       ],
       "relatedMethods": [],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        {
+          "label": "Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
+      ],
       "relatedDemos": [],
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
@@ -29456,6 +29659,65 @@
       ],
       "relatedObjections": []
     },
+    "risikomanagement": {
+      "label": "Risikomanagement",
+      "slug": "risikomanagement",
+      "url": "/begriffe/risikomanagement/",
+      "hoverDefinition": "Risikomanagement bezeichnet die systematische Identifikation, Bewertung, Behandlung, Überwachung und Kommunikation von Risiken in Strategie, Governance und Entscheidung.",
+      "shortDefinition": "Risikomanagement bezeichnet die systematische Identifikation, Bewertung, Behandlung, Überwachung und Kommunikation von Risiken in Strategie, Governance und Entscheidung.",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "synonyms": [
+        "Risikomanagement",
+        "Risk Management",
+        "Risiko-Management"
+      ],
+      "relatedTerms": [
+        "systemresilienz",
+        "systemische-risikointelligenz",
+        "risiko-und-resilienzregister",
+        "wirkungsrisikomanagement"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "relatedObjections": []
+    },
+    "risikoregister": {
+      "label": "Risikoregister",
+      "slug": "risikoregister",
+      "url": "/begriffe/risikoregister/",
+      "hoverDefinition": "Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden.",
+      "shortDefinition": "Ein Risikoregister sammelt und ordnet Risiken so, dass Zuständigkeiten, Daten, Eintrittspfade, Wirkungen und Bearbeitung sichtbar werden.",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "synonyms": [
+        "Risikoregister",
+        "Risk Register",
+        "Risiko-Register"
+      ],
+      "relatedTerms": [
+        "risiko-und-resilienzregister",
+        "systemresilienz",
+        "risikomanagement",
+        "sdgs",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
+      ],
+      "relatedObjections": []
+    },
     "rlm-messung": {
       "label": "RLM-Messung",
       "slug": "rlm-messung",
@@ -29599,9 +29861,9 @@
       "label": "Robotik",
       "slug": "robotik",
       "url": "/begriffe/robotik/",
-      "hoverDefinition": "Robotik bringt Automatisierung in physische Prozesse, Arbeit, Pflege, Produktion oder Infrastruktur.",
-      "shortDefinition": "Robotik verbindet mechanische Systeme, Sensorik, Steuerung und Automatisierung zu physisch wirksamen technischen Systemen.",
-      "category": "Daten, Digitalisierung und KI",
+      "hoverDefinition": "Robotik ist eine Technologiequelle für Maschinenleistung; bewertet werden ihre tatsächlichen Wirkungen.",
+      "shortDefinition": "Robotik umfasst Entwicklung und Einsatz von Robotern. In der WÖk ist sie eine mögliche Quelle von Maschinenleistung und Entlastung.",
+      "category": "Anschlussbegriff",
       "synonyms": [
         "Robotik",
         "Robotics",
@@ -29611,20 +29873,27 @@
       ],
       "relatedTerms": [
         "automatisierung",
-        "kuenstliche-intelligenz",
-        "automatisierungsdividende",
-        "wirkungseinkommen",
         "maschinenleistung",
         "autonome-systeme",
         "robotersteuer",
         "maschinenleistungsrueckkopplung"
       ],
-      "relatedMethods": [],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
       "relatedImpactFields": [
         "arbeit-einkommen",
-        "wissenschaft-innovation-digitalisierung"
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
       ],
-      "relatedDemos": [],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
       "relatedDocuments": [
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
@@ -34887,102 +35156,6 @@
       ],
       "relatedObjections": []
     },
-    "transformationspfad": {
-      "label": "Transformationspfad",
-      "slug": "transformationspfad",
-      "url": "/begriffe/transformationspfad/",
-      "hoverDefinition": "Ein Transformationspfad ist ein lernender, überprüfbarer Weg, mit dem ein Unternehmen sein Geschäftsmodell, seine Produkte, Lieferketten und Entscheidungen in Richtung positiver Netto-Wirkung verändert.",
-      "shortDefinition": "Ein Transformationspfad ist ein lernender, überprüfbarer Weg, mit dem ein Unternehmen sein Geschäftsmodell, seine Produkte, Lieferketten und Entscheidungen in Richtung positiver Netto-Wirkung verändert.",
-      "category": "Transformation, Strategie & Unternehmensentwicklung",
-      "synonyms": [
-        "Transformationspfad",
-        "Transformationsweg",
-        "Wirkungstransformationspfad",
-        "Pfad zur positiven Netto-Wirkung",
-        "Transformation Pathway",
-        "Unternehmens-Transformationspfad",
-        "Wirkungsfahrplan",
-        "Pfad der Geschäftsmodelltransformation",
-        "lernender Transformationspfad"
-      ],
-      "relatedTerms": [
-        "wirkungsrisiko",
-        "wirkungsresilienz",
-        "geschaeftsmodellpruefung",
-        "enterprise-risk-management-nach-wirkung",
-        "wirkungspotenzial",
-        "wirkungsbewertung",
-        "wirkungslenkung",
-        "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "positive-netto-wirkung",
-        "netto-wirkung",
-        "transformationswirkung",
-        "t-sroi",
-        "nwi",
-        "wirkleistung",
-        "scheinleistung",
-        "blindleistung",
-        "verlustleistung",
-        "unternehmen-als-wirkungssystem",
-        "wirkungsorientierte-unternehmensfuehrung",
-        "wirkungscontrolling",
-        "kii",
-        "wirkungskompetenz",
-        "lieferkettenwirkung",
-        "beschaffung-als-wirkungshebel",
-        "lieferantenbewertung",
-        "supply-chain-resilienz",
-        "produktwirkung",
-        "produktscorecard",
-        "digitaler-produktpass",
-        "woek-id",
-        "wirkungsindikator",
-        "scorecard",
-        "finalscore",
-        "datenqualitaet",
-        "benchmark",
-        "archetyp",
-        "reverse-merit-order",
-        "wirkungsgrenze",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsrat",
-        "kapitalwirkung",
-        "wirkungsfonds",
-        "portfolio-wirkung",
-        "wirkungsrendite",
-        "versicherbarkeit",
-        "wirkungssteuer",
-        "ehrliche-preise",
-        "wirkung-im-preisschild",
-        "greenwashing",
-        "impact-washing",
-        "sdg-washing",
-        "esg",
-        "csrd",
-        "esrs",
-        "gri",
-        "eu-taxonomie",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsrat-konzept"
-      ],
-      "relatedObjections": []
-    },
     "transformationswelle": {
       "label": "Transformationswelle",
       "slug": "transformationswelle",
@@ -35389,6 +35562,92 @@
         "ac-laden",
         "wallbox",
         "ccs-ladestecker"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "uebergabestation": {
+      "label": "Übergabestation",
+      "slug": "uebergabestation",
+      "url": "/begriffe/uebergabestation/",
+      "hoverDefinition": "Eine Übergabestation ist der technische Übergabepunkt zwischen Netzbetreiber und Kundenanlage, häufig im Mittelspannungsanschluss.",
+      "shortDefinition": "Eine Übergabestation ist der technische Übergabepunkt zwischen Netzbetreiber und Kundenanlage, häufig im Mittelspannungsanschluss.",
+      "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
+      "synonyms": [
+        "Übergabestation"
+      ],
+      "relatedTerms": [
+        "kundenanlage",
+        "mittelspannung",
+        "wandlermessung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "uebergangstaetigkeit": {
+      "label": "Übergangstätigkeit",
+      "slug": "uebergangstaetigkeit",
+      "url": "/begriffe/uebergangstaetigkeit/",
+      "hoverDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
+      "shortDefinition": "Übergangstätigkeiten sind Taxonomie-Tätigkeiten, die derzeit noch nicht emissionsfrei sind, aber den Übergang unterstützen können.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Übergangstätigkeit"
+      ],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "transition-finance",
+        "transition-plan",
+        "stranded-assets"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "uebertragungsnetz": {
+      "label": "Übertragungsnetz",
+      "slug": "uebertragungsnetz",
+      "url": "/begriffe/uebertragungsnetz/",
+      "hoverDefinition": "Das Übertragungsnetz transportiert Strom über große Entfernungen auf hoher Spannung.",
+      "shortDefinition": "Das Übertragungsnetz transportiert Strom über große Entfernungen auf hoher Spannung.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Übertragungsnetz"
+      ],
+      "relatedTerms": [
+        "stromnetz",
+        "netzausbau",
+        "hoechstspannung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "ueberwachungskapitalismus": {
+      "label": "Überwachungskapitalismus",
+      "slug": "ueberwachungskapitalismus",
+      "url": "/begriffe/ueberwachungskapitalismus/",
+      "hoverDefinition": "Überwachungskapitalismus beschreibt Geschäftsmodelle, die Verhaltensdaten extrahieren, analysieren und zur Vorhersage oder Beeinflussung von Verhalten monetarisieren.",
+      "shortDefinition": "Überwachungskapitalismus beschreibt Geschäftsmodelle, die Verhaltensdaten extrahieren, analysieren und zur Vorhersage oder Beeinflussung von Verhalten monetarisieren.",
+      "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
+      "synonyms": [
+        "Überwachungskapitalismus",
+        "Surveillance Capitalism"
+      ],
+      "relatedTerms": [
+        "plattformkapitalismus",
+        "vertrauen",
+        "demokratie"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -39425,6 +39684,50 @@
         "erwerbsbiografie",
         "lebenswirkung",
         "wirkungsbonus",
+        "wirkleistung"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsbiografie": {
+      "label": "Wirkungsbiografie",
+      "slug": "wirkungsbiografie",
+      "url": "/begriffe/wirkungsbiografie/",
+      "hoverDefinition": "Wirkungsbiografie erweitert Erwerbsbiografie um Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "shortDefinition": "Die Wirkungsbiografie beschreibt den Lebensverlauf nicht nur als Erwerbsbiografie, sondern als Summe gesellschaftlicher Wirkleistungen: Arbeit, Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Wirkungsbiografie",
+        "Wirkungsbiographie",
+        "Lebenswirkung",
+        "Wirkungslebenslauf",
+        "Lebensleistungsbiografie"
+      ],
+      "relatedTerms": [
+        "wirkungsrente",
+        "erwerbsbiografie",
+        "lebenswirkung",
+        "wirkungsbonus",
         "wirkleistung",
         "care-arbeit",
         "ehrenamt"
@@ -39600,9 +39903,7 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus",
-        "care-arbeit",
-        "ehrenamt"
+        "sdg-plus"
       ],
       "relatedMethods": [
         "scorecard",
@@ -39798,6 +40099,51 @@
       ],
       "relatedObjections": []
     },
+    "wirkungsbonus": {
+      "label": "Wirkungsbonus",
+      "slug": "wirkungsbonus",
+      "url": "/begriffe/wirkungsbonus/",
+      "hoverDefinition": "Wirkungsbonus erkennt gesellschaftliche Wirkleistung an, ohne den Wert einer Person zu bewerten.",
+      "shortDefinition": "Der Wirkungsbonus ist der variable Teil des Wirkungseinkommens, der reale gesellschaftliche Wirkleistung sichtbar und materiell anerkennbar macht.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Wirkungsbonus",
+        "Wirkbonus",
+        "Bonus für Wirkleistung",
+        "Wirkleistungsbonus"
+      ],
+      "relatedTerms": [
+        "wirkleistung",
+        "wirkungsbiografie",
+        "wirkungseinkommen",
+        "grunddividende",
+        "wirkungsrente",
+        "care-arbeit",
+        "ehrenamt"
+      ],
+      "relatedMethods": [
+        "scorecard",
+        "reverse-merit-order",
+        "nwi",
+        "t-sroi",
+        "wirkungsdatenraeume"
+      ],
+      "relatedImpactFields": [
+        "arbeit-einkommen",
+        "rente-soziale-sicherung",
+        "finanzsystem-kapital"
+      ],
+      "relatedDemos": [
+        "automatisierungs-wirkungseinkommensrechner",
+        "wirkungsrenten-rechner"
+      ],
+      "relatedDocuments": [
+        "wenn-maschinen-arbeiten",
+        "wp-einkommen",
+        "wp-rente"
+      ],
+      "relatedObjections": []
+    },
     "wirkungsdaten": {
       "label": "Wirkungsdaten",
       "slug": "wirkungsdaten",
@@ -39899,84 +40245,6 @@
       ],
       "relatedObjections": []
     },
-    "wirkungsdatenraeume": {
-      "label": "Wirkungsdatenräume",
-      "slug": "wirkungsdatenraeume",
-      "url": "/begriffe/wirkungsdatenraeume/",
-      "hoverDefinition": "Wirkungsdatenräume verbinden Wirkungsdaten prüfbar, zweckgebunden und rechtebasiert.",
-      "shortDefinition": "Wirkungsdatenräume sind geschützte, zweckgebundene Datenräume, in denen Wirkungsdaten interoperabel, prüfbar und mit klaren Rollenrechten genutzt werden.",
-      "category": "Daten, Digitalisierung und KI",
-      "synonyms": [
-        "Wirkungsdatenräume",
-        "Wirkungsdatenraum",
-        "Impact Data Spaces",
-        "WÖk-Datenräume",
-        "Wirkungsdateninfrastruktur",
-        "europäische Wirkungsdatenräume"
-      ],
-      "relatedTerms": [
-        "wirkungsdatenraum",
-        "woek-id",
-        "datenqualitaet",
-        "digitalisierung",
-        "digitale-selbstbestimmung",
-        "ki-governance",
-        "algorithmische-fairness",
-        "cyberresilienz",
-        "wirkungsindikator",
-        "digitaler-produktpass",
-        "wirkungsregister",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "wirkungsrisiko",
-        "wirkungsresilienz",
-        "enterprise-risk-management-nach-wirkung",
-        "plattformlogik-und-algorithmen",
-        "desinformation",
-        "oeffentlichkeit-als-wirkungsraum",
-        "digitalisierung-als-infrastruktur-der-wirkungsoekonomie"
-      ],
-      "relatedMethods": [
-        "datenqualitaet-assurance"
-      ],
-      "relatedImpactFields": [
-        "wissenschaft-innovation-digitalisierung",
-        "produkte-konsum"
-      ],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "technische-leitlinien-wustg",
-        "wirkungsrat-konzept",
-        "whitepaper-t-sroi"
-      ],
-      "relatedObjections": []
-    },
-    "wirkungseffizienz": {
-      "label": "Wirkungseffizienz",
-      "slug": "wirkungseffizienz",
-      "url": "/begriffe/wirkungseffizienz/",
-      "hoverDefinition": "Wirkungseffizienz verbindet Effizienz mit Wirkungsbewertung: Nicht der Output pro Input zählt allein, sondern die positive Netto-Wirkung im Verhältnis zu Ressourcen, Zeit, Kapital, Energie oder Aufmerksamkeit.",
-      "shortDefinition": "Wirkungseffizienz verbindet Effizienz mit Wirkungsbewertung: Nicht der Output pro Input zählt allein, sondern die positive Netto-Wirkung im Verhältnis zu Ressourcen, Zeit, Kapital, Energie oder Aufmerksamkeit.",
-      "category": "Glossar-Erweiterung",
-      "synonyms": [
-        "Wirkungseffizienz",
-        "Impact-Effizienz",
-        "Wirkung pro Ressource"
-      ],
-      "relatedTerms": [
-        "effizienz",
-        "positive-netto-wirkung",
-        "wirkungshaushalt",
-        "t-sroi",
-        "kii",
-        "wirkungsbewertung"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
-      "relatedObjections": []
-    },
     "wirkungseinkommen": {
       "label": "Wirkungseinkommen",
       "slug": "wirkungseinkommen",
@@ -40007,6 +40275,8 @@
         "feministische-oekonomie",
         "unbezahlte-arbeit",
         "feminisierung-von-armut",
+        "grunddividende",
+        "wirkungsbonus",
         "automatisierungsdividende",
         "wirkungseinkommensteuer",
         "maschinenwertschoepfungsbeitrag",
@@ -40142,7 +40412,11 @@
       "shortDefinition": "Wirkungsfolgenabschätzung bezeichnet die systematische Prüfung der voraussichtlichen positiven, negativen, direkten, indirekten und langfristigen Wirkungen einer Maßnahme.",
       "category": "Glossar-Erweiterung",
       "synonyms": [
-        "Wirkungsfolgenabschätzung"
+        "Wirkungsfonds",
+        "Transformationsfonds",
+        "Rückkopplungsfonds",
+        "Bürger:innenfonds",
+        "Buergerinnenfonds"
       ],
       "relatedTerms": [
         "wirkung",
@@ -40151,44 +40425,12 @@
         "artikel-20a-grundgesetz",
         "wirkungsstaat",
         "wirkungshaushalt",
-        "wirkungsrat",
-        "datenqualitaet"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
-      "relatedObjections": []
-    },
-    "wirkungsfonds": {
-      "label": "Wirkungsfonds",
-      "slug": "wirkungsfonds",
-      "url": "/begriffe/wirkungsfonds/",
-      "hoverDefinition": "Ein Wirkungsfonds ist ein transparenter Fondsmechanismus für Rückflüsse aus Wertschöpfung, Beiträgen oder Wirkungssteuerlogik.",
-      "shortDefinition": "Ein Wirkungsfonds bündelt Rückflüsse, um Prävention, Bildung, Transformation oder soziale Sicherung wirkungsorientiert zu finanzieren.",
-      "category": "Messbegriff",
-      "synonyms": [
-        "Wirkungsfonds",
-        "Transformationsfonds",
-        "Rückkopplungsfonds",
-        "Bürger:innenfonds",
-        "Buergerinnenfonds"
-      ],
-      "relatedTerms": [
-        "kapitalwirkung",
-        "portfolio-wirkung",
-        "wirkungsrendite",
-        "versicherbarkeit",
-        "nwi",
-        "t-sroi",
-        "wirkungsrente",
-        "wirkungsbudget",
-        "wirkungshaushalt",
         "just-transition-mechanism",
         "maschinenleistungsrueckkopplung",
         "maschinenwertschoepfungsbeitrag",
         "automatisierungsdividende",
-        "transformationsbonus"
+        "transformationsbonus",
+        "wirkungsrente"
       ],
       "relatedMethods": [
         "scorecard",
@@ -40210,6 +40452,101 @@
         "wenn-maschinen-arbeiten",
         "wp-einkommen",
         "wp-rente"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsfonds": {
+      "label": "Wirkungsfonds",
+      "slug": "wirkungsfonds",
+      "url": "/begriffe/wirkungsfonds/",
+      "hoverDefinition": "Ein Wirkungsfonds bündelt Kapital und investiert es nach geprüfter positiver Netto-Wirkung, Transformationswirkung, Datenqualität und Nichtkompensation.",
+      "shortDefinition": "Ein Wirkungsfonds bündelt Kapital und investiert es nach geprüfter positiver Netto-Wirkung, Transformationswirkung, Datenqualität und Nichtkompensation.",
+      "category": "Kapital, Fonds & Transformationsfinanzierung",
+      "synonyms": [
+        "Wirkungsfonds",
+        "Transformationsfonds",
+        "Rückkopplungsfonds",
+        "Bürger:innenfonds",
+        "Buergerinnenfonds",
+        "Fonds nach Wirkung",
+        "Impact Fund nach WÖk",
+        "Wirkungskapitalfonds",
+        "WÖk-Fonds",
+        "Fonds für positive Netto-Wirkung",
+        "Fonds für Transformationswirkung",
+        "wirkungsorientierter Fonds"
+      ],
+      "relatedTerms": [
+        "kapitalwirkung",
+        "portfolio-wirkung",
+        "wirkungsrendite",
+        "versicherbarkeit",
+        "nwi",
+        "t-sroi",
+        "wirkungsrente",
+        "wirkungsbudget",
+        "wirkungshaushalt",
+        "wirkungsregister",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "impact-washing",
+        "greenwashing",
+        "sfdr",
+        "eu-taxonomie",
+        "wirkungskapital",
+        "kapitalrendite",
+        "wirkungsrisiko",
+        "wirkungsresilienz",
+        "transformationswirkung",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "wirkungs-bip",
+        "wirkungssteuer",
+        "wirkungsgutschrift",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungswahrheit",
+        "wirkungsblindheit",
+        "wirkungsrat",
+        "woek-id",
+        "wirkungsindikator",
+        "scorecard",
+        "finalscore",
+        "benchmark",
+        "datenqualitaet",
+        "nichtkompensationsprinzip",
+        "esg",
+        "csrd",
+        "esrs",
+        "gri",
+        "nace",
+        "digitaler-produktpass",
+        "grunddividende",
+        "oeffentliche-beschaffung",
+        "resilienz",
+        "praevention",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "produktwirkung",
+        "produktscorecard",
+        "responsible-marketing",
+        "wirkungspunkte",
+        "wirkungsbonus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "die-neue-ordnung-des-wohlstands",
+        "whitepaper-t-sroi",
+        "systemmodell-der-wirkungsoekonomie",
+        "wp-rente",
+        "wirkungssteuergesetz"
       ],
       "relatedObjections": []
     },
@@ -41186,6 +41523,35 @@
         "Wirkungsrat-Konzept",
         "Produktbesteuerung durch Wirkung",
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+      ],
+      "relatedObjections": []
+    },
+    "wirkungsmanagement": {
+      "label": "Wirkungsmanagement",
+      "slug": "wirkungsmanagement",
+      "url": "/begriffe/wirkungsmanagement/",
+      "hoverDefinition": "Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen.",
+      "shortDefinition": "Wirkungsmanagement organisiert Ziele, Daten, Wirkpfade, Bewertung und Rückkopplung so, dass Entscheidungen reale Zustandsveränderungen berücksichtigen.",
+      "category": "SDG+, Risiko und Systemresilienz",
+      "synonyms": [
+        "Wirkungsmanagement",
+        "wirkungsorientiertes Management"
+      ],
+      "relatedTerms": [
+        "wirkungsdaten",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "impact-controlling",
+        "systemresilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
+        "bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/",
+        "blog/systemresilienz-statt-nachhaltigkeit/",
+        "verstehen/sdgs-sdgplus/"
       ],
       "relatedObjections": []
     },
@@ -42359,11 +42725,14 @@
         "gender-pay-gap",
         "gender-pension-gap",
         "feminisierung-von-armut",
+        "wirkungsbiografie",
         "erwerbsbiografie",
+        "lebenswirkung",
         "wirkungsdividende",
         "buergerinnenfonds",
         "transformationsrente",
-        "automatisierungsdividende"
+        "automatisierungsdividende",
+        "wirkungsbonus"
       ],
       "relatedMethods": [
         "scorecard",
@@ -42513,39 +42882,6 @@
       "relatedDemos": [],
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
-      ],
-      "relatedObjections": []
-    },
-    "wirkungsrisikoposition": {
-      "label": "Wirkungsrisikoposition",
-      "slug": "wirkungsrisikoposition",
-      "url": "/begriffe/wirkungsrisikoposition/",
-      "hoverDefinition": "Wirkungsrisikoposition ist die Finanzsicht auf negative Wirkungsexposure: Risiken können über Regulierung, Märkte, Versicherbarkeit oder Reputation zurückkehren.",
-      "shortDefinition": "Eine Wirkungsrisikoposition beschreibt eine Portfolio-, Kredit-, Versicherungs- oder Kapitalposition, die negativen Wirkungen oder Wirkungsrisiken ausgesetzt ist.",
-      "category": "Finanzsystem, Kapital & Lieferkettenrisiken",
-      "synonyms": [
-        "Wirkungsrisikoposition",
-        "negative Wirkungsexposure",
-        "Wirkungsexposure",
-        "Impact Exposure",
-        "Wirkungsrisiko-Position",
-        "Risikoposition Wirkung"
-      ],
-      "relatedTerms": [
-        "wirkungsrisiko",
-        "wirkungsbelasteter-kredit",
-        "strandinggefaehrdeter-kredit",
-        "stranded-assets",
-        "wirkungsdaten",
-        "wirkungsrueckkopplung",
-        "kapitalwirkung"
-      ],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [
-        "standardwerk-neue-ordnung-wohlstands-2026",
-        "wirkungsoekonomie-lieferkette"
       ],
       "relatedObjections": []
     },
