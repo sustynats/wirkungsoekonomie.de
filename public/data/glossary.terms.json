@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T14:56:04.391Z",
+  "generatedAt": "2026-06-11T21:28:46.964Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -119499,7 +119499,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Key Impact Indicator / KII",
-      "priority": 1184,
+      "priority": 1185,
       "officialSources": [],
       "doNotConfuseWith": [],
       "deprecatedUsage": []
@@ -261637,6 +261637,154 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": ""
+    },
+    {
+      "id": "sustainable-value",
+      "termId": "sustainable-value",
+      "label": "Sustainable Value",
+      "canonicalLabel": "Sustainable Value",
+      "slug": "sustainable-value",
+      "aliases": [
+        "Sustainable Value",
+        "nachhaltiger Wert",
+        "nachhaltige Wertschöpfung",
+        "Sustainable Value Creation"
+      ],
+      "synonyms": [
+        "Sustainable Value",
+        "nachhaltiger Wert",
+        "nachhaltige Wertschöpfung",
+        "Sustainable Value Creation"
+      ],
+      "shortDefinition": "Sustainable Value beschreibt Wert, der wirtschaftliche Tragfähigkeit mit positiven oder zumindest verantwortbaren Wirkungen auf Mensch, Planet und Demokratie verbindet.",
+      "definition": "Sustainable Value entsteht, wenn wirtschaftlicher Wert nicht durch verschobene Schäden, externalisierte Kosten oder geschwächte Zukunftsfähigkeit erkauft wird, sondern mit ökologischer Tragfähigkeit, sozialer Fairness, guter Governance und systemischer Resilienz vereinbar ist.",
+      "longDefinition": "Sustainable Value entsteht, wenn wirtschaftlicher Wert nicht durch verschobene Schäden, externalisierte Kosten oder geschwächte Zukunftsfähigkeit erkauft wird, sondern mit ökologischer Tragfähigkeit, sozialer Fairness, guter Governance und systemischer Resilienz vereinbar ist. In der Wirkungsökonomie ist Sustainable Value ein Anschlussbegriff zwischen Business Value, Impact Value, Sustainable Finance und Wirkungswert: Er fragt nicht nur, ob ein Angebot rentabel oder berichtsfähig ist, sondern ob der erzeugte Wert langfristig tragfähig, rückgekoppelt und als positive Netto-Wirkung begründbar ist.",
+      "woekRelation": "Sustainable Value verbindet Business Value und Impact Value. Die WÖk präzisiert den Begriff durch Wirkungswert, positive Netto-Wirkung, Nichtkompensation, Datenqualität und Rückkopplung in Preise, Kapitalzugang, Beschaffung oder Steuerung.",
+      "statusNote": "Sustainable Value ist kein automatischer Nachhaltigkeitsnachweis. Ohne Daten, Systemgrenze, Zielkonflikte und Prüfung kann der Begriff zu Impact- oder Greenwashing werden.",
+      "usageNote": "Als Brückenbegriff verwenden: Sustainable Value beschreibt tragfähige Wertschöpfung; die Wirkungsökonomie fragt zusätzlich nach realer Netto-Wirkung, Schutzgrenzen und Rückkopplung.",
+      "categories": [
+        "management-wirksamkeit-und-organisation",
+        "sustainable-finance",
+        "wirkungsoekonomie",
+        "daten-standards-regularien"
+      ],
+      "category": "Management, Wirksamkeit und Organisation",
+      "theme": [
+        "Management",
+        "Sustainable Finance",
+        "Wirtschaft & Unternehmen",
+        "Impact Controlling"
+      ],
+      "tags": [
+        "Management",
+        "Wertschöpfung",
+        "Sustainable Finance",
+        "Impact Value",
+        "Wirkungswert"
+      ],
+      "conceptStatus": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-06-11",
+      "lastUpdated": "2026-06-11",
+      "updatedAt": "2026-06-11",
+      "firstApprovedIn": "2026-06-11",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "dataStandardsGroup": "Sustainable Finance",
+      "relatedTerms": [
+        "business-value",
+        "impact-value",
+        "wirkungswert",
+        "wirkungswertschoepfung",
+        "systemischer-wert",
+        "positive-netto-wirkung",
+        "sustainable-finance",
+        "esg",
+        "csrd",
+        "esrs",
+        "eu-taxonomie",
+        "impact-controlling",
+        "t-sroi",
+        "nwi"
+      ],
+      "relatedDocuments": [
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedMethods": [
+        "Impact Controlling",
+        "T-SROI",
+        "Scorecards"
+      ],
+      "relatedTools": [],
+      "relatedImpactFields": [
+        "wirtschaft-unternehmen",
+        "finanzsystem-kapital",
+        "produkte-konsum"
+      ],
+      "officialSources": [
+        "EU-Kommission: Sustainable Finance|https://finance.ec.europa.eu/sustainable-finance/overview-sustainable-finance_en",
+        "Value Balancing Alliance|https://www.value-balancing.com/",
+        "IFRS Foundation: Integrated Reporting Framework|https://www.ifrs.org/issued-standards/ir-framework/",
+        "Global Reporting Initiative|https://www.globalreporting.org/",
+        "United Nations: Sustainable Development Goals|https://sdgs.un.org/goals"
+      ],
+      "sourceLinks": [
+        {
+          "source_type": "institutional",
+          "title": "EU-Kommission: Sustainable Finance",
+          "url": "https://finance.ec.europa.eu/sustainable-finance/overview-sustainable-finance_en",
+          "status": "linked"
+        },
+        {
+          "source_type": "institutional",
+          "title": "Value Balancing Alliance",
+          "url": "https://www.value-balancing.com/",
+          "status": "linked"
+        },
+        {
+          "source_type": "standard",
+          "title": "IFRS Foundation: Integrated Reporting Framework",
+          "url": "https://www.ifrs.org/issued-standards/ir-framework/",
+          "status": "linked"
+        },
+        {
+          "source_type": "standard",
+          "title": "Global Reporting Initiative",
+          "url": "https://www.globalreporting.org/",
+          "status": "linked"
+        },
+        {
+          "source_type": "reference",
+          "title": "United Nations: Sustainable Development Goals",
+          "url": "https://sdgs.un.org/goals",
+          "status": "linked"
+        }
+      ],
+      "doNotConfuseWith": [
+        "Business Value",
+        "Impact Value",
+        "Sustainable Finance",
+        "ESG",
+        "Wirkungswert"
+      ],
+      "deprecatedUsage": [
+        "Sustainable Value als bloßes Label für profitables Wachstum verwenden.",
+        "Sustainable Value ohne Systemgrenzen, Folgekosten und Zielkonflikte behaupten."
+      ],
+      "examples": [
+        "Ein Produkt erzeugt Sustainable Value, wenn es wirtschaftlich tragfähig ist und zugleich nachweislich Ressourcenverbrauch, Folgekosten oder soziale Risiken senkt.",
+        "Eine Investition erzeugt keinen Sustainable Value, wenn Rendite nur durch ausgelagerte Umwelt- oder Sozialkosten entsteht."
+      ],
+      "source": "Sustainable Finance und Wirkungsökonomie",
+      "sourceDocument": "Glossar Wirkungsökonomie",
+      "sourceSection": "Management, Sustainable Finance und Wirkungswert",
+      "hoverDefinition": "Sustainable Value verbindet wirtschaftlichen Wert mit tragfähiger Wirkung auf Mensch, Planet und Demokratie.",
+      "glossaryOrderKey": "sustainable value",
+      "pageUrl": "/begriffe/sustainable-value/",
+      "priority": 1184
     },
     {
       "id": "systemdienstleistungen",

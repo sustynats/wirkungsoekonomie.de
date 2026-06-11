@@ -11495,6 +11495,24 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   max-width: 920px;
 }
 
+.home-video-section {
+  padding-top: clamp(2.5rem, 6vw, 5rem);
+}
+
+.home-video-section .section-header {
+  max-width: 840px;
+}
+
+.home-explainer-video {
+  width: min(100%, 1120px);
+  aspect-ratio: 16 / 9;
+  margin: clamp(1.2rem, 3vw, 2rem) auto 0;
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 24px 70px rgba(11, 16, 32, 0.1);
+}
+
 .home-journey-grid .decision-card {
   min-height: 15rem;
 }

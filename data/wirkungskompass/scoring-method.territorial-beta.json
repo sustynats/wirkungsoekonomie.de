@@ -1,0 +1,27 @@
+{
+  "method_version": "territorial-compass-beta-0.1",
+  "score_types": [
+    "Status-Score",
+    "Trend-Score",
+    "Zielabstand",
+    "Datenqualität",
+    "Transformationspfad"
+  ],
+  "normalization": [
+    "higher_is_better",
+    "lower_is_better",
+    "target_corridor",
+    "near_zero_better",
+    "binary_compliance",
+    "red_line_event",
+    "disclosure_quality"
+  ],
+  "overall_score_rules": [
+    "ausreichende Datenabdeckung in allen drei Dimensionen",
+    "Mindestanzahl von Indikatoren pro Dimension",
+    "Datenqualität ausreichend",
+    "rote Linien sichtbar und nicht durch Durchschnittswerte verdeckt"
+  ],
+  "no_score_text": "Kein Gesamtwert: Datenabdeckung reicht für eine belastbare Gesamtaussage nicht aus.",
+  "non_compensation": "Kritische Schäden bleiben sichtbar und können Gesamtwerte begrenzen."
+}

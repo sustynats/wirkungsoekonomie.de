@@ -411,6 +411,22 @@ function publicationAccess(base) {
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Publikationszugang</p>${h2("publikationszugang-title", "Online lesen und herunterladen")}<p>Alle zentralen Dokumente sind online lesbar und über Abschnittsanker zitierfähig. Downloads sind Export und Archiv, nicht der Hauptzugang.</p></div>${cards(base, items)}<div class="table-wrap no-print" role="region" aria-label="Publikationszugang: Online lesen und herunterladen" tabindex="0"><table class="data-table"><thead><tr><th>Dokument</th><th>Online lesen</th><th>Download</th></tr></thead><tbody>${tableRows}</tbody></table></div></section>`;
 }
 
+function explainerVideo(base) {
+  return `<section class="section home-video-section" id="bereichsvideo" aria-labelledby="bereichsvideo-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Kurz erklärt</p>
+            <h2 id="bereichsvideo-title">Wissenschaft als Wirkungsinfrastruktur</h2>
+            <p>Das Video zeigt, warum Wissen, Forschung, Datenqualität und Innovation in der Wirkungsökonomie nicht nur gesammelt, sondern rückgekoppelt werden. So wird sichtbar, welche Erkenntnisse bessere Entscheidungen, Korrektur und gesellschaftliche Lernfähigkeit ermöglichen.</p>
+          </div>
+          <video class="home-explainer-video" controls controlsList="nodownload" preload="metadata" playsinline poster="${href(base, "assets/video/wirkungsfeld-wissenschaft-innovation-digitalisierung-poster.png?v=20260611")}" aria-label="Erklärvideo zu Wissenschaft, Innovation und Digitalisierung in der Wirkungsökonomie">
+            <source src="${href(base, "assets/video/wirkungsfeld-wissenschaft-innovation-digitalisierung.mp4?v=20260611")}" type="video/mp4">
+            Dein Browser kann dieses Video nicht direkt abspielen.
+          </video>
+        </div>
+      </section>`;
+}
+
 function sdgBadge(base, [id, label, text, url], index) {
   const popover = `sdg-popover-${id}-wissenschaft-${index}`;
   return `<span class="sdg-ref" data-sdg-id="${esc(id)}"><a class="sdg-ref-link" href="${href(base, url)}" aria-label="${esc(label)}: ${esc(text)}" aria-describedby="${esc(popover)}">${esc(label)}</a><button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu ${esc(label)}: ${esc(text)}" aria-describedby="${esc(popover)}">i</button><span class="sdg-ref-popover" id="${esc(popover)}" role="tooltip">${esc(text)} <span class="sdg-ref-more">Details öffnen</span></span></span>`;
@@ -469,7 +485,7 @@ function portalPage() {
     rel: "wirkungsfelder/wissenschaft-innovation-digitalisierung/index.html",
     title: "Wissenschaft, Innovation & Digitalisierung | Wirkungsökonomie",
     description: "Wissenschaft, Innovation, Datenräume, KI und Digitalisierung als Infrastruktur gesellschaftlicher Lernfähigkeit in der Wirkungsökonomie.",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Wissenschaft, Innovation & Digitalisierung</h1><p class="hero-subtitle">Wissen, Innovation, Datenräume, KI und Digitalisierung als Infrastruktur gesellschaftlicher Lernfähigkeit.</p><p>Digitalisierung ist kein Selbstzweck. Sie ist in der Wirkungsökonomie die Infrastruktur, durch die Systeme wahrnehmen, lernen und demokratisch kontrollierbar bleiben.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#publikationszugang">Online lesen</a><a class="btn btn-secondary" href="#tools">Tools öffnen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Wissen wird zur Rückkopplungsinfrastruktur.</h2><p class="card-text">Wissenschaft hält Wirklichkeit prüfbar. Innovation übersetzt Erkenntnis in bessere Zustände. Digitalisierung macht Wirkung sichtbar, anschlussfähig und korrigierbar.</p></aside></div></section>${publicationAccess(base)}${toc(t)}<section class="section" aria-labelledby="portaltext"><div class="prose">${h2("portaltext", "Portaltext online lesen")}${html}</div></section>${moduleGrid(base)}${toolGrid(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Wissenschaft, Innovation & Digitalisierung</h1><p class="hero-subtitle">Wissen, Innovation, Datenräume, KI und Digitalisierung als Infrastruktur gesellschaftlicher Lernfähigkeit.</p><p>Digitalisierung ist kein Selbstzweck. Sie ist in der Wirkungsökonomie die Infrastruktur, durch die Systeme wahrnehmen, lernen und demokratisch kontrollierbar bleiben.</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#publikationszugang">Online lesen</a><a class="btn btn-secondary" href="#tools">Tools öffnen</a></div></div><aside class="card"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Wissen wird zur Rückkopplungsinfrastruktur.</h2><p class="card-text">Wissenschaft hält Wirklichkeit prüfbar. Innovation übersetzt Erkenntnis in bessere Zustände. Digitalisierung macht Wirkung sichtbar, anschlussfähig und korrigierbar.</p></aside></div></section>${explainerVideo(base)}${publicationAccess(base)}${toc(t)}<section class="section" aria-labelledby="portaltext"><div class="prose">${h2("portaltext", "Portaltext online lesen")}${html}</div></section>${moduleGrid(base)}${toolGrid(base)}${politicalBlock()}${referenceBlock(base)}${bookBlock(base)}${relatedBlock(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
   });
 }
 

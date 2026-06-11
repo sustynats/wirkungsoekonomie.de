@@ -35,18 +35,18 @@
         <nav class="breadcrumb"><a href="../../register/">Register</a> / <a href="../">WÖk-ID Register</a> / WOK-SYS-137</nav>
         <p class="hero-kicker">WÖk-ID · v2.1</p>
         <h1>WOK-SYS-137 · Klimapartnerschaften – Index</h1>
-        <p class="hero-subtitle">umsatzgewichteter Index (z. B. Demokratie/Rule of Law)</p>
+        <p class="hero-subtitle">umsatzgewichteter Index (z. B. Demokratie/Rule of Law)</p>
         <div class="document-card-badges"><span class="status-badge status-badge--public-research">public research</span><span class="status-badge status-badge--not-official">not official</span><span class="status-badge status-badge--formula-ready">formula-ready</span><span class="status-badge status-badge--benchmark-calibration-required">benchmark calibration required</span><span class="status-badge status-badge--source-mapped">source mapped</span><span class="status-badge status-badge--exact-disclosure-missing">exact disclosure missing</span></div>
         <p class="callout warning">Public Research Draft. Nicht amtlich, keine automatische Steuerentscheidung und keine Rechts-, Steuer-, Anlage-, Kredit-, Förder- oder Versicherungsberatung.</p>
       </section>
       <section class="section document-detail-grid">
         <article class="document-detail-main">
-          <h2>Kurzbeschreibung</h2><p>umsatzgewichteter Index (z. B. Demokratie/Rule of Law)</p>
+          <h2>Kurzbeschreibung</h2><p>umsatzgewichteter Index (z. B. Demokratie/Rule of Law)</p>
           <h2>Zielbezug und Dimension</h2><p>SDG 13 – Klima · 13.3 · Planet</p>
           <h2>Messgröße und Einheit</h2><p>index_0_1 · 0–1</p>
           <h2>Zähler/Nenner-Logik</h2><p>Wert = gewichteter Kriterienindex von 0 bis 1; Kriterien, Gewichtung und Nachweis je WÖk-ID offenlegen.</p>
-          <h2>Berechnungslogik</h2><p>AutoScore = ScoreByThreshold(Messwert, Schwellen=&#x27;≥0,8:+3; 0,7–0,79:+2; 0,6–0,69:0; 0,5–0,59:‐2; &lt;0,5:‐3&#x27;, Polarity=&#x27;higher_is_better&#x27;, Archetype=&#x27;higher_is_better_abs&#x27;). BenchmarkScore = ScoreByBenchmark(Messwert, BM, BM_150pct, BM_250pct). FinalScore = MIN(AutoScore, BenchmarkScore, RedLineScore). Tax_Rate = WUStG-Mapping(FinalScore).</p>
-          <h2>Schwellen / Benchmark</h2><p>≥0,8:+3; 0,7–0,79:+2; 0,6–0,69:0; 0,5–0,59:‐2; &lt;0,5:‐3<br>BM: 0.645 · BM_150pct: 0.9675 · BM_250pct: 1.0 · synthetisch aus WUStG-Schwellen abgeleitet; für Forschung/Pilot nutzbar, vor amtlicher Nutzung empirisch kalibrieren</p>
+          <h2>Berechnungslogik</h2><p>AutoScore = ScoreByThreshold(Messwert, Schwellen=&#x27;≥0,8:+3; 0,7–0,79:+2; 0,6–0,69:0; 0,5–0,59:‑2; &lt;0,5:‑3&#x27;, Polarity=&#x27;higher_is_better&#x27;, Archetype=&#x27;higher_is_better_abs&#x27;). BenchmarkScore = ScoreByBenchmark(Messwert, BM, BM_150pct, BM_250pct). FinalScore = MIN(AutoScore, BenchmarkScore, RedLineScore). Tax_Rate = WUStG-Mapping(FinalScore).</p>
+          <h2>Schwellen / Benchmark</h2><p>≥0,8:+3; 0,7–0,79:+2; 0,6–0,69:0; 0,5–0,59:‑2; &lt;0,5:‑3<br>BM: 0.645 · BM_150pct: 0.9675 · BM_250pct: 1.0 · synthetisch aus WUStG-Schwellen abgeleitet; für Forschung/Pilot nutzbar, vor amtlicher Nutzung empirisch kalibrieren</p>
           <h2>Quellen</h2><ul><li><strong>UN_SDG_GOALS</strong> · UN Sustainable Development Goals · https://sdgs.un.org/goals</li><li><strong>UN_SDG_INDICATORS</strong> · UN SDG Global Indicator Framework · https://unstats.un.org/sdgs/indicators/indicators-list/</li><li><strong>UN_SDG_METADATA</strong> · UN SDG Metadata Repository · https://unstats.un.org/sdgs/metadata/</li><li><strong>EUROSTAT_NACE</strong> · Eurostat NACE overview · https://ec.europa.eu/eurostat/web/nace</li><li><strong>WJP_RULE_OF_LAW</strong> · World Justice Project Rule of Law Index · https://worldjusticeproject.org/rule-of-law-index/</li><li><strong>VDEM</strong> · V-Dem Democracy Indices · https://www.v-dem.net/data/</li><li><strong>SOCIAL_VALUE_SROI</strong> · Social Value International / SROI · https://www.socialvalueint.org/</li></ul>
           <h2>Red-Line-/Nichtkompensationshinweis</h2><p>Nein</p>
           <h2>Verwandte Methoden</h2><p><a href="../../werkzeuge/scorecards/">Scorecards</a> · <a href="../../werkzeuge/reverse-merit-order/">Reverse Merit Order</a> · <a href="../../werkzeuge/netto-wirkungs-index/">NWI</a> · <a href="../../werkzeuge/t-sroi/">T-SROI</a> · <a href="../../werkzeuge/digitale-produktpaesse/">DPP</a> · <a href="../../werkzeuge/wirkungsdatenraeume/">Wirkungsdatenräume</a></p>

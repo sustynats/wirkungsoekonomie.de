@@ -272,6 +272,7 @@ function entriesFromContent(file) {
 }
 
 const existing = fs.existsSync(indexPath) ? JSON.parse(fs.readFileSync(indexPath, "utf8")) : [];
+const existingMeta = fs.existsSync(metaPath) ? JSON.parse(fs.readFileSync(metaPath, "utf8")).entries || {} : {};
 const glossary = fs.existsSync(glossaryPath) ? JSON.parse(fs.readFileSync(glossaryPath, "utf8")).terms : [];
 const generated = [];
 const meta = {};
@@ -303,6 +304,9 @@ for (const file of contentFiles) {
 
 const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsWith("woek-")).map((entry) => [entry.url, entry]));
 for (const entry of generated) byUrl.set(entry.url, entry);
+for (const entry of existing.filter((item) => !String(item.id || "").startsWith("woek-"))) {
+  if (entry.url && existingMeta[entry.url]) meta[entry.url] = existingMeta[entry.url];
+}
 const merged = Array.from(byUrl.values())
   .filter((entry) => !isInternalPublicRoute(entry.url))
   .filter((entry) => !isSearchNoiseEntry(entry))

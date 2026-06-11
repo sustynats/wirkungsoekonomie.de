@@ -13,7 +13,13 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "internal_terms",
-      "terms": ["Wirkung", "Wirkungspotenzial", "positive Netto-Wirkung", "Wirkungsrückkopplung", "SDG+"],
+      "terms": [
+        "Wirkung",
+        "Wirkungspotenzial",
+        "positive Netto-Wirkung",
+        "Wirkungsrückkopplung",
+        "SDG+"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Wissenskarten sind MVP-Zusammenfassungen; tiefere Buch- und Leitfadenstellen müssen später granular verlinkt werden."
     },
@@ -24,7 +30,11 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "compass_questions",
-      "terms": ["Kompass", "Startfragen", "Wirkungsnavigator"],
+      "terms": [
+        "Kompass",
+        "Startfragen",
+        "Wirkungsnavigator"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Fragen sind kuratiert; keine freie Chatbot-Logik."
     },
@@ -35,7 +45,12 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "compass_answers",
-      "terms": ["Antwortkarte", "Wirkungspfad", "Quellenpanel", "Tiefenebenen"],
+      "terms": [
+        "Antwortkarte",
+        "Wirkungspfad",
+        "Quellenpanel",
+        "Tiefenebenen"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Statische Antwortkarten; keine individuellen Beratungsantworten."
     },
@@ -46,7 +61,11 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "impact_paths",
-      "terms": ["Wirkungspfad", "Rückkopplung", "Wirkungslenkung"],
+      "terms": [
+        "Wirkungspfad",
+        "Rückkopplung",
+        "Wirkungslenkung"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Pfade sind Modelle und ersetzen keine empirische Einzelfallprüfung."
     },
@@ -57,9 +76,45 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "website_pages",
-      "terms": ["Unternehmen", "Politik", "Bürger:innen", "Wohnen", "Investoren", "Kommunen", "Akademie", "Journalismus", "Gesundheit", "Wissenschaft", "Rente", "Wirkungseinkommen"],
+      "terms": [
+        "Unternehmen",
+        "Politik",
+        "Bürger:innen",
+        "Wohnen",
+        "Investoren",
+        "Kommunen",
+        "Akademie",
+        "Journalismus",
+        "Gesundheit",
+        "Wissenschaft",
+        "Rente",
+        "Wirkungseinkommen"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Seiten erklären WÖk-Logik; sensible Modellzahlen sind keine Leistungszusage."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-arbeitspapier-2026-06-11",
+      "title": "Von der Schuldenfrage zur Wirkungsfinanzpolitik",
+      "path": "dokumente/wirkungsfinanzpolitik/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "working_paper",
+      "terms": [
+        "Wirkungsfinanzpolitik",
+        "Staatsschulden",
+        "Wirkungshaushalt",
+        "Schuldenbremse",
+        "Wirkschulden",
+        "Blindschulden",
+        "positive Netto-Wirkung",
+        "MMT",
+        "Public Purpose",
+        "Public Purpose Finance",
+        "Functional Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Arbeitsfassung v2; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, Public Purpose als prüfbaren Wirkungsanspruch erläutern und Webfassung/PDF als zitierfähige Fassung nennen."
     },
     {
       "source_id": "woek-scanner-modes",
@@ -68,7 +123,13 @@
       "status": "draft",
       "allowed_for_assistant": false,
       "source_type": "scanner_architecture",
-      "terms": ["Scanner", "URL-Analyse", "Produktscanner", "Unternehmensscanner", "Wahlprogramm-Scanner"],
+      "terms": [
+        "Scanner",
+        "URL-Analyse",
+        "Produktscanner",
+        "Unternehmensscanner",
+        "Wahlprogramm-Scanner"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Architekturdatei im Draft-Status; als technische Grundlage, nicht als freigegebene Theoriequelle nutzen."
     },
@@ -79,7 +140,12 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "data_governance",
-      "terms": ["Datenqualität", "Quellenstatus", "Datenlücke", "Unsicherheit"],
+      "terms": [
+        "Datenqualität",
+        "Quellenstatus",
+        "Datenlücke",
+        "Unsicherheit"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Qualitätsstufen bewerten Datenlage, nicht Wirkung selbst."
     },
@@ -90,7 +156,15 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "data_source_registry",
-      "terms": ["Open Food Facts", "EPREL", "ESRS", "GRI", "Eurostat", "SDG Data", "Unternehmensdaten"],
+      "terms": [
+        "Open Food Facts",
+        "EPREL",
+        "ESRS",
+        "GRI",
+        "Eurostat",
+        "SDG Data",
+        "Unternehmensdaten"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Registry zeigt Anschlussfähigkeit; jede konkrete API-/Datenverwendung braucht Lizenz- und Aktualitätsprüfung."
     },
@@ -101,9 +175,77 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "evidence_pages",
-      "terms": ["Evidenz", "Quellen", "Standards", "Studien"],
+      "terms": [
+        "Evidenz",
+        "Quellen",
+        "Standards",
+        "Studien"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Quellenkarten brauchen später granularere Zitier- und Versionierungslogik."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-journal-2026-06-11",
+      "title": "Nicht Schulden belasten die Zukunft - sondern Schulden ohne Wirkung",
+      "path": "blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "journal_article",
+      "terms": [
+        "Wirkungsfinanzpolitik",
+        "Staatsschulden",
+        "Wirkungshaushalt",
+        "Wirkschulden",
+        "Blindschulden",
+        "positive Netto-Wirkung",
+        "MMT",
+        "Public Purpose",
+        "Functional Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Journalistische Langform; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, nicht als Gegner. Bei Antworten Schutzlinie und Arbeitspapier als Vertiefung nennen."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-wirkungsfeld-2026-06-11",
+      "title": "Wirkungsfinanzpolitik",
+      "path": "wirkungsfelder/wirkungsfinanzpolitik/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "website_page",
+      "terms": [
+        "Wirkungsfinanzpolitik",
+        "öffentliche Finanzen",
+        "Wirkungshaushalt",
+        "Schuldenbremse",
+        "MMT",
+        "Public Purpose",
+        "Public Purpose Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Konzeptionelle Bereichsseite; ersetzt keine demokratische, haushaltsrechtliche oder finanzielle Einzelfallprüfung."
+    },
+    {
+      "source_id": "woek-wirkungsfinanzpolitik-glossarcluster-2026-06-11",
+      "title": "Öffentliche Finanzen, Schulden und Wirkung",
+      "path": "begriffe/oeffentliche-finanzen-schulden-wirkung/",
+      "status": "published",
+      "allowed_for_assistant": true,
+      "source_type": "glossary_cluster",
+      "terms": [
+        "Wirkschulden",
+        "Blindschulden",
+        "Verlustschulden",
+        "Reparaturschulden",
+        "Präventionsschulden",
+        "Transformationsschulden",
+        "Zukunftsschulden",
+        "MMT",
+        "Public Purpose",
+        "Public Purpose Finance",
+        "Functional Finance"
+      ],
+      "last_checked": "2026-06-11",
+      "limitations": "Begriffliche Arbeitsfassung; Begriffe müssen in konkreten Haushalts- oder Politikfällen mit Daten, Rechtsrahmen und demokratischer Entscheidung abgeglichen werden."
     },
     {
       "source_id": "woek-glossar",
@@ -112,7 +254,11 @@
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "glossary",
-      "terms": ["Glossar", "Begriffe", "Definition"],
+      "terms": [
+        "Glossar",
+        "Begriffe",
+        "Definition"
+      ],
       "last_checked": "2026-05-22",
       "limitations": "Glossar ist Website-Fassung; führender Begriffsleitfaden bleibt Primärlogik."
     }

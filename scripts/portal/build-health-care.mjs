@@ -408,6 +408,22 @@ function publicationAccess(base) {
   return `<section class="section" id="publikationszugang" aria-labelledby="publikationszugang-title"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${h2("publikationszugang-title", "Vertiefung und Arbeitsmaterial")}<p>Hier liegen die ausführlichen Online-Fassungen, Dossiers, Methodik und ergänzende Downloads. Sie vertiefen die Landingpage, ohne den Einstieg zu überladen.</p></div>${cards(base, items)}<div class="download-card compact no-print"><div><p class="card-kicker">Downloads</p><h3 class="card-title">Word-Fassungen</h3><p class="card-text">Konzeptpapier, Gesamtdossier, Detailkonzepte und Einzeldossiers bleiben als Dateien verfügbar.</p></div><div class="portal-card-actions">${documents.map((doc) => exists(`assets/downloads/${doc.download}`) ? `<a class="btn btn-secondary" href="${href(base, `assets/downloads/${doc.download}`)}">${esc(doc.shortTitle)} herunterladen</a>` : "").join("")}</div></div></section>`;
 }
 
+function explainerVideo(base) {
+  return `<section class="section home-video-section" id="bereichsvideo" aria-labelledby="bereichsvideo-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Kurz erklärt</p>
+            <h2 id="bereichsvideo-title">Gesundheit als Wirkungsfeld</h2>
+            <p>Das Video zeigt, warum die Wirkungsökonomie Gesundheit früher denkt: nicht erst bei Krankheit, Behandlung und Notfall, sondern bei Lebensbedingungen, Prävention, Pflege, psychischer Stabilität, Quartieren und gerechtem Zugang.</p>
+          </div>
+          <video class="home-explainer-video" controls controlsList="nodownload" preload="metadata" playsinline poster="${href(base, "assets/video/wirkungsfeld-gesundheit-pflege-poster.png?v=20260611")}" aria-label="Erklärvideo zu Gesundheit und Pflege in der Wirkungsökonomie">
+            <source src="${href(base, "assets/video/wirkungsfeld-gesundheit-pflege.mp4?v=20260611")}" type="video/mp4">
+            Dein Browser kann dieses Video nicht direkt abspielen.
+          </video>
+        </div>
+      </section>`;
+}
+
 function sdgBadge(base, [id, label, text, url], index) {
   const popover = `sdg-popover-${id}-gesundheit-${index}`;
   return `<span class="sdg-ref" data-sdg-id="${esc(id)}"><a class="sdg-ref-link" href="${href(base, url)}" aria-label="${esc(label)}: ${esc(text)}" aria-describedby="${esc(popover)}">${esc(label)}</a><button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu ${esc(label)}: ${esc(text)}" aria-describedby="${esc(popover)}">i</button><span class="sdg-ref-popover" id="${esc(popover)}" role="tooltip">${esc(text)} <span class="sdg-ref-more">Details öffnen</span></span></span>`;
@@ -517,7 +533,7 @@ function portalPage() {
     rel: "wirkungsfelder/gesundheit-pflege/index.html",
     title: "Gesundheit & Pflege | Wirkungsökonomie",
     description: "Gesundheit & Pflege als Wirkungsfeld: Prävention, Pflege, Lebensqualität, Gesundheitsräume, One Health, Datenschutz und Wirkungshaushalt.",
-    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Gesundheit & Pflege</h1><p class="hero-subtitle">Vom System, das Krankheit finanziert, zu einem System, das Gesundheit, Prävention, Pflege, Resilienz und Teilhabe erzeugt.</p><p>Gesundheit ist kein medizinisches Einzelereignis, sondern ein gesellschaftlicher Zustand. Pflege ist keine Kostenstelle, sondern Beziehungs-, Würde- und Stabilitätsinfrastruktur.</p></div><aside class="card" id="leitsatz"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Gesundheit wird erzeugt, geschützt und gerecht zugänglich gemacht.</h2><p class="card-text">Behandlung bleibt notwendig. Aber Prävention, Pflege, psychische Stabilität, kommunale Gesundheitsräume und One Health müssen entscheidungsrelevant werden.</p></aside></div></section>${toc(t)}${comparisonBox()}${conceptGrid(base)}${policyActionBox()}${moduleGrid(base)}${toolGrid(base)}${publicationAccess(base)}${referenceBlock(base)}${bookBlock(base)}${crossLinks(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
+    body: (base) => `<section class="hero portal-hero"><div class="hero-grid"><div><nav class="breadcrumb"><a href="${href(base, "index.html")}">Start</a> / <a href="${href(base, "wirkungsfelder/")}">Wirkungsfelder</a></nav><p class="hero-kicker">Wirkungsfeld</p><h1>Gesundheit & Pflege</h1><p class="hero-subtitle">Vom System, das Krankheit finanziert, zu einem System, das Gesundheit, Prävention, Pflege, Resilienz und Teilhabe erzeugt.</p><p>Gesundheit ist kein medizinisches Einzelereignis, sondern ein gesellschaftlicher Zustand. Pflege ist keine Kostenstelle, sondern Beziehungs-, Würde- und Stabilitätsinfrastruktur.</p></div><aside class="card" id="leitsatz"><p class="card-kicker">Leitsatz</p><h2 class="card-title">Gesundheit wird erzeugt, geschützt und gerecht zugänglich gemacht.</h2><p class="card-text">Behandlung bleibt notwendig. Aber Prävention, Pflege, psychische Stabilität, kommunale Gesundheitsräume und One Health müssen entscheidungsrelevant werden.</p></aside></div></section>${explainerVideo(base)}${toc(t)}${comparisonBox()}${conceptGrid(base)}${policyActionBox()}${moduleGrid(base)}${toolGrid(base)}${publicationAccess(base)}${referenceBlock(base)}${bookBlock(base)}${crossLinks(base)}${protectionBlock()}${sourcesBlock()}${downloads(base)}`,
   });
 }
 

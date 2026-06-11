@@ -23,6 +23,20 @@ OVERVIEW_DIR = ROOT / "register"
 REGISTER_DIR = ROOT / "woek-id-register"
 LEGACY_TOOL_DIR = ROOT / "werkzeuge" / "woek-id-register"
 OLD_PUBLIC_XLSX = DOWNLOAD_DIR / "WOeK_Master_Items_Public_Research_Register_v2.0.xlsx"
+OLD_DUPLICATE_PUBLIC_XLSX = DOWNLOAD_DIR / "WOeK_Master_Items_Public_Research_Register_v2.1 2.xlsx"
+NON_PUBLIC_EXPORTS = [
+    DOWNLOAD_DIR / "items-v2.1.json",
+    DOWNLOAD_DIR / "sources-v2.1.json",
+    DOWNLOAD_DIR / "methods-v2.1.json",
+    DOWNLOAD_DIR / "changelog-v2.1.json",
+    DOWNLOAD_DIR / "items-v2.1.csv",
+    DOWNLOAD_DIR / "items.json",
+    DOWNLOAD_DIR / "sources.json",
+    DOWNLOAD_DIR / "methods.json",
+    DOWNLOAD_DIR / "data-quality.json",
+    DOWNLOAD_DIR / "changelog.json",
+    DOWNLOAD_DIR / "items.csv",
+]
 
 
 def source_xlsx() -> Path:
@@ -342,11 +356,10 @@ def register_page(items, sources, methods, data_quality, changelog, source_hash)
           <div id="demoResult" class="woek-demo-result" aria-live="polite">Noch keine Berechnung.</div>
         </div>
       </section>
-      <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Öffentliche Registerversion {VERSION}</h2></div><div class="card-grid four">
+      <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Öffentliche Registerversion {VERSION}</h2></div><div class="card-grid three">
         <article class="card"><h3 class="card-title">XLSX</h3><a class="text-link" href="../assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx">XLSX herunterladen</a></article>
-        <article class="card"><h3 class="card-title">CSV</h3><a class="text-link" href="../assets/downloads/woek-register/items-v2.1.csv">CSV herunterladen</a></article>
-        <article class="card"><h3 class="card-title">JSON</h3><a class="text-link" href="../assets/downloads/woek-register/items-v2.1.json">JSON herunterladen</a></article>
-        <article class="card"><h3 class="card-title">Changelog</h3><a class="text-link" href="../assets/downloads/woek-register/changelog-v2.1.json">Changelog ansehen</a></article>
+        <article class="card"><h3 class="card-title">Methodik</h3><a class="text-link" href="../woek-id-register/methodik/">Methodik online lesen</a></article>
+        <article class="card"><h3 class="card-title">Quellen</h3><a class="text-link" href="../woek-id-register/quellen/">Quellen online lesen</a></article>
       </div></section>
       <section class="section"><div class="card"><p class="hero-kicker">Feedback</p><h2>Review beitragen</h2><p>Quelle ergänzen, Benchmark vorschlagen, Fehler melden oder Fachreview beitragen. Bitte keine personenbezogenen Daten senden.</p><a class="btn btn-secondary" href="mailto:kontakt@wirkungsoekonomie.de?subject=Feedback%20zum%20WOEK-ID-Register%20v2.1&body=Bitte%20W%C3%96k-ID%2C%20Quelle%2C%20Benchmark%20oder%20Fehlerhinweis%20eintragen.%20Bitte%20keine%20personenbezogenen%20Daten%20senden.">Fehler / Ergänzung melden</a></div></section>
       <script id="woekRegisterData" type="application/json">{embedded}</script>
@@ -491,6 +504,11 @@ def archive_old_public_download():
     # must not be moved into a public-looking in-repo archive.
     if OLD_PUBLIC_XLSX.exists():
         OLD_PUBLIC_XLSX.unlink()
+    if OLD_DUPLICATE_PUBLIC_XLSX.exists():
+        OLD_DUPLICATE_PUBLIC_XLSX.unlink()
+    for path in NON_PUBLIC_EXPORTS:
+        if path.exists():
+            path.unlink()
 
 
 def main():
@@ -530,17 +548,6 @@ def main():
     write_json(CONTENT_DIR / "changelog.json", changelog)
     write_json(DATA_PATH, {"version": VERSION, "source_hash_sha256": source_hash, "items": items, "sources": sources, "methods": methods, "data_quality": data_quality, "audit": audit, "changelog": changelog})
 
-    write_json(DOWNLOAD_DIR / "items-v2.1.json", items)
-    write_json(DOWNLOAD_DIR / "sources-v2.1.json", sources)
-    write_json(DOWNLOAD_DIR / "methods-v2.1.json", methods)
-    write_json(DOWNLOAD_DIR / "changelog-v2.1.json", changelog)
-    write_csv(DOWNLOAD_DIR / "items-v2.1.csv", items)
-    write_json(DOWNLOAD_DIR / "items.json", items)
-    write_json(DOWNLOAD_DIR / "sources.json", sources)
-    write_json(DOWNLOAD_DIR / "methods.json", methods)
-    write_json(DOWNLOAD_DIR / "data-quality.json", data_quality)
-    write_json(DOWNLOAD_DIR / "changelog.json", changelog)
-    write_csv(DOWNLOAD_DIR / "items.csv", items)
     public_workbook = DOWNLOAD_DIR / SOURCE_XLSX_PUBLIC.name
     if workbook_path.resolve() != public_workbook.resolve():
         shutil.copy2(workbook_path, public_workbook)

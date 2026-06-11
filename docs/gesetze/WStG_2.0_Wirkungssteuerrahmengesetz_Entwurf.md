@@ -32,7 +32,7 @@ Das WStG 2.0 versteht sich als lernende Ordnung. Es setzt nicht auf eine soforti
 ### § 1 Zweck des Gesetzes
 
 **Gesetzestext:**
-Zweck dieses Gesetzes ist die Schaffung eines Rahmens fuer steuerliche Rueckkopplung nach gepruefter Wirkung. Zielgroesse ist positive Netto-Wirkung fuer Mensch, Planet und Demokratie.
+Zweck dieses Gesetzes ist die Schaffung eines Rahmens fuer steuerliche Rueckkopplung nach geprüfter Wirkung. Zielgroesse ist positive Netto-Wirkung fuer Mensch, Planet und Demokratie.
 
 Das Gesetz bestimmt Oberbegriffe, Grundprinzipien, Bewertungsrahmen, Datenarchitektur, Governance, Rechtsschutz und Pilotierungsregeln fuer spaetere Einzelgesetze und Module. Es bewirkt keine sofortige Totalumstellung des Steuersystems.
 
@@ -130,7 +130,7 @@ Steuerliche Rueckkopplung braucht nachvollziehbare Kriterien, nicht blosse Meinu
 **Gesetzestext:**
 Netto-Wirkung ist die zusammengefuehrte Bewertung positiver und negativer Wirkungen unter Beachtung von Mindestbedingungen, roten Linien, Datenqualitaet und Nichtkompensation.
 
-Der Netto-Wirkungs-Index, kurz NWI, ist die operative Kennzahl fuer gepruefte Netto-Wirkung.
+Der Netto-Wirkungs-Index, kurz NWI, ist die operative Kennzahl fuer geprüfte Netto-Wirkung.
 
 **Kommentar:**
 Der NWI ist die operative Verdichtung, nicht die Behauptung einer mathematisch vollstaendigen Gesamtwahrheit.
@@ -143,7 +143,7 @@ Eine steuerliche Rueckkopplung braucht eine arbeitsfaehige Kennzahl, muss aber U
 **Gesetzestext:**
 Transformationswirkung bezeichnet die Veraenderung von Standards, Maerkten, Anreizen, Infrastrukturen, Pfaden, Resilienz oder zukuenftigen Entscheidungen.
 
-Der Transformational Social Return on Investment, kurz T-SROI, ist eine Kennzahl oder ein Analyseinstrument fuer Transformationswirkung auf Grundlage gepruefter Netto-Wirkung.
+Der Transformational Social Return on Investment, kurz T-SROI, ist eine Kennzahl oder ein Analyseinstrument fuer Transformationswirkung auf Grundlage geprüfter Netto-Wirkung.
 
 **Kommentar:**
 T-SROI misst nicht noch einmal operative Netto-Wirkung. Diese Rolle liegt beim NWI.
@@ -300,8 +300,8 @@ Nur ein transparentes Register verhindert willkuerliche Indikatorwahl und nachtr
 **Gesetzestext:**
 Daten werden nach Qualitaetsstufen geordnet:
 
-1. gepruefte Primaerdaten,
-2. gepruefte Sekundaerdaten,
+1. geprüfte Primaerdaten,
+2. geprüfte Sekundaerdaten,
 3. anerkannte Branchenwerte,
 4. konservative Ersatzwerte bei Datenluecken,
 5. unsichere Daten mit Abschlag oder Unsicherheitskennzeichnung.
@@ -337,7 +337,7 @@ Wirkungsdaten muessen entlang von Produkten und Wertschöpfungsketten nachvollzi
 ### § 26 Unsicherheit und Fehlbarkeit
 
 **Gesetzestext:**
-Unsicherheit ist zu markieren. Schaetzungen muessen erkennbar sein. Methoden, Datenquellen und Bewertungsregeln muessen ueberpruefbar, korrigierbar und versionierbar sein.
+Unsicherheit ist zu markieren. Schaetzungen muessen erkennbar sein. Methoden, Datenquellen und Bewertungsregeln muessen überprüfbar, korrigierbar und versionierbar sein.
 
 **Kommentar:**
 Das System ist lernend, nicht unfehlbar.
@@ -372,10 +372,10 @@ Strenge in der Wirkung darf nicht zu pauschaler persoenlicher Schuldzuweisung we
 ### § 29 Schutz vor Greenwashing und Wirkungssimulation
 
 **Gesetzestext:**
-Wirkungssimulation, SDG-Washing, Impact-Washing, KPI-Gaming und manipulative Datenwahl sind durch Pruefpflichten, nachvollziehbare Methoden, offene Bewertungslogik, Auditierung und Sanktionen zu begrenzen.
+Wirkungssimulation, SDG-Washing, Impact-Washing, KPI-Gaming und manipulative Datenwahl sind durch Prüfpflichten, nachvollziehbare Methoden, offene Bewertungslogik, Auditierung und Sanktionen zu begrenzen.
 
 **Kommentar:**
-Ein gutes Narrativ ersetzt keine gepruefte Wirkung.
+Ein gutes Narrativ ersetzt keine geprüfte Wirkung.
 
 **Begruendung:**
 Wirkungsbasierte Rueckkopplung ist nur glaubwuerdig, wenn sie Manipulation erkennt und korrigiert.
@@ -404,7 +404,7 @@ Die steuerliche Rueckkopplung kann insbesondere durch folgende Module umgesetzt 
 4. WGewStG - Wirkungsgewerbesteuer oder kommunale Wirkungslogik,
 5. Wirkungskapitalmodul fuer Kapitalertraege, Fonds und Portfolio-Wirkung,
 6. Wirkungshaushaltsmodul fuer oeffentliche Mittel, Foerderungen und Beschaffung,
-7. technische Leitlinien fuer WÖk-IDs, Scorecards, Benchmarks, Datenqualitaet und Pruefverfahren.
+7. technische Leitlinien fuer WÖk-IDs, Scorecards, Benchmarks, Datenqualitaet und Prüfverfahren.
 
 **Kommentar:**
 Die Module koennen unterschiedliche Datenlagen, Rechtsgrundlagen und Einfuehrungspfade haben.
@@ -501,7 +501,7 @@ Eine lebende Ordnung braucht Aenderbarkeit ohne Willkuer.
 Alle Anwendungen dieses Gesetzes haben Verhaeltnismaessigkeit, Freiheit, Eigentum, Berufsfreiheit, Gleichbehandlung, Datenschutz, Demokratieprinzip und Rechtsstaatlichkeit zu beachten.
 
 **Kommentar:**
-Wirkungslenkung ist nur legitim, wenn sie grundrechtlich begrenzt und ueberpruefbar bleibt.
+Wirkungslenkung ist nur legitim, wenn sie grundrechtlich begrenzt und überprüfbar bleibt.
 
 **Begruendung:**
 Eine Wirkungsteuer darf nicht selbst negative Wirkung auf Freiheit und Demokratie erzeugen.
@@ -512,7 +512,7 @@ Eine Wirkungsteuer darf nicht selbst negative Wirkung auf Freiheit und Demokrati
 Dieses Gesetz bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Dienstleistungen, Organisationen, Taetigkeiten, Kapitalfluesse, oeffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhaenge.
 
 **Kommentar:**
-Personenbezogene Daten duerfen nur begrenzt, verhaeltnismaessig, ueberpruefbar, anfechtbar und grundrechtlich geschuetzt verwendet werden.
+Personenbezogene Daten duerfen nur begrenzt, verhaeltnismaessig, überprüfbar, anfechtbar und grundrechtlich geschuetzt verwendet werden.
 
 **Begruendung:**
 Die Wirkungsoekonomie ist kein Social-Credit-System.
@@ -520,7 +520,7 @@ Die Wirkungsoekonomie ist kein Social-Credit-System.
 ### § 41 Datenschutz und Datenminimierung
 
 **Gesetzestext:**
-Personenbezogene Daten duerfen nur verarbeitet werden, soweit dies zwingend erforderlich, zweckgebunden, transparent, verhaeltnismaessig und rechtlich ueberpruefbar ist. Zugriffsbeschraenkungen, Loeschfristen und Datenschutz-Folgenabschaetzungen sind vorzusehen.
+Personenbezogene Daten duerfen nur verarbeitet werden, soweit dies zwingend erforderlich, zweckgebunden, transparent, verhaeltnismaessig und rechtlich überprüfbar ist. Zugriffsbeschraenkungen, Loeschfristen und Datenschutz-Folgenabschaetzungen sind vorzusehen.
 
 **Kommentar:**
 Datenarmut kann in sensiblen Bereichen ein Schutzprinzip sein.
@@ -542,7 +542,7 @@ Fehler in Wirkungsdaten koennen erhebliche wirtschaftliche Folgen haben.
 ### § 43 Algorithmische Systeme
 
 **Gesetzestext:**
-Algorithmische Systeme duerfen keine unerklaerbaren Blackbox-Entscheidungen ueber wesentliche Rechtsfolgen treffen. Erklaerbarkeit, Auditierbarkeit, Bias-Pruefung, menschliche Ueberpruefung und klare Verantwortlichkeit sind vorzusehen.
+Algorithmische Systeme duerfen keine unerklaerbaren Blackbox-Entscheidungen ueber wesentliche Rechtsfolgen treffen. Erklaerbarkeit, Auditierbarkeit, Bias-Prüfung, menschliche Überprüfung und klare Verantwortlichkeit sind vorzusehen.
 
 **Kommentar:**
 Automatisierung kann Verfahren stuetzen, darf Verantwortung aber nicht aufloesen.
@@ -561,7 +561,7 @@ Die Einfuehrung erfolgt stufenweise ueber Pilotsektoren, freiwillige Testphasen,
 Pilotierung ist Bestandteil des Gesetzes, nicht bloss ein politischer Vorlauf.
 
 **Begruendung:**
-Komplexe Wirkungsrueckkopplung muss unter realen Bedingungen lernend geprueft werden.
+Komplexe Wirkungsrueckkopplung muss unter realen Bedingungen lernend geprüft werden.
 
 ### § 45 Pilotsektoren
 
@@ -657,7 +657,7 @@ Die historische PDF-Fassung bleibt unveraendert zitierfaehig. Dieser Entwurf ist
 | Messwert | Rohdatenebene | Primaerdaten / Sekundaerdaten / Ersatzwerte |
 | Einzelscore | operative Einzelbewertung | -3 bis +3 |
 | FinalScore | steuerungsrelevante Verdichtung | Reverse Merit Order |
-| NWI | operative Netto-Wirkung | gepruefte Netto-Wirkung |
+| NWI | operative Netto-Wirkung | geprüfte Netto-Wirkung |
 | T-SROI | Transformationswirkung | systemische Hebelwirkung |
 | WIF | steuerlicher Anpassungsfaktor | nur in bestimmten Steuerarten |
 | -100/+100 | optionale Verwaltungsskala | keine Primaerlogik |
@@ -671,6 +671,6 @@ Die Primaerbewertung erfolgt ueber WÖk-IDs, Einzelscores, FinalScore und NWI. E
 3. Keine positive Einzelwirkung darf schwere negative Wirkung verdecken.
 4. Die Reverse Merit Order ist streng in der Wirkung, aber proportional in der Verantwortung.
 5. Das WStG bewertet keine Personen, keine Gesinnungen und keine Lebensstile.
-6. Wirkungsdaten muessen ueberpruefbar, korrigierbar und anfechtbar sein.
+6. Wirkungsdaten muessen überprüfbar, korrigierbar und anfechtbar sein.
 7. Die Wirkungsoekonomie ist eine lernende Ordnung, kein unfehlbares System.
 8. Pilotierung, Evaluation und Reversibilitaet sind Bestandteile des Gesetzes.

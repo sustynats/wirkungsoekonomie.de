@@ -342,7 +342,7 @@ function topicPage(item) {
     rel: `wirkungsfelder/arbeit-einkommen/${slugName}/index.html`,
     title: `${title} | Arbeit & Einkommen`,
     description: summary,
-    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Detailkonzept</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#detailkonzept">Konzept lesen</a><a class="btn btn-secondary" href="#materialien">Materialien</a></div></div></section>${toc(detail.toc)}${detailReadingIntro(b, slugName, title, summary, detailDoc, dossierDoc)}<section class="section" aria-labelledby="detailkonzept"><div class="prose"><p class="hero-kicker">Detailkonzept</p>${h2("detailkonzept", title)} ${articleFromFirstHeading(detail.html, "detail-leitfrage")}</div></section>${toolRefs(b)}${crossLinks(b)}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${detailReadingOutro(b, slugName, detailDoc, dossierDoc)}`,
+    body: (b) => `<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="${b}index.html">Start</a> / <a href="${b}wirkungsfelder/arbeit-einkommen/">Arbeit & Einkommen</a></nav><p class="hero-kicker">Detailkonzept</p><h1>${esc(title)}</h1><p class="hero-subtitle">${esc(summary)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button><a class="btn btn-primary" href="#detailkonzept">Konzept lesen</a><a class="btn btn-secondary" href="#materialien">Materialien</a></div></div></section>${topicExplainerVideo(b, slugName)}${toc(detail.toc)}${detailReadingIntro(b, slugName, title, summary, detailDoc, dossierDoc)}<section class="section" aria-labelledby="detailkonzept"><div class="prose"><p class="hero-kicker">Detailkonzept</p>${h2("detailkonzept", title)} ${articleFromFirstHeading(detail.html, "detail-leitfrage")}</div></section>${toolRefs(b)}${crossLinks(b)}${referenceBlock(b)}${bookBlock(b)}${sourceBlock()}${detailReadingOutro(b, slugName, detailDoc, dossierDoc)}`,
   });
   page({
     rel: `wirkungsfelder/arbeit-einkommen/${slugName}/dossier/index.html`,
@@ -383,6 +383,21 @@ function documentPage([slugName, title, mdFile, docFile, summary]) {
 function toolDemo(b, slugName) {
   if (slugName !== "automatisierungs-wirkungseinkommensrechner") return `<section class="section"><div class="card"><p class="hero-kicker">Methodik</p><h2>Erklärseite</h2><p>Diese Seite ordnet die Methode ein und verweist auf nutzbare Demos, sobald eine Bedienoberfläche vorhanden ist.</p></div></section>`;
   return `<section class="section" aria-labelledby="rechner"><div class="section-header"><p class="hero-kicker">Modellhafte Demo</p>${h2("rechner", "Automatisierungs- und Wirkungseinkommensrechner")}</div><div class="table-wrap"><table class="data-table"><tbody><tr><th>Beitragslückenrechner</th><td>Beschäftigte, umgerechnet auf Vollzeitstellen, Bruttolohn, Sozialbeiträge und Automatisierungsquote zeigen modellhaft die wegfallende Lohnsumme.</td></tr><tr><th>Maschinenwertschöpfungsbeitrag</th><td>Automatisierte Wertschöpfung × Rückkopplungsquote × Wirkungsfaktor-Anpassung.</td></tr><tr><th>Transformationsbonus</th><td>Weiterbildung, interne Versetzung, Arbeitszeitmodelle und regionale Stabilisierung können entlastend wirken.</td></tr><tr><th>Wirkungseinkommensmodell</th><td>Grunddividende, Markteinkommen, Wirkungsbonus und Fondsanteil werden als Einkommensarchitektur sichtbar.</td></tr></tbody></table></div></section>`;
+}
+
+function topicExplainerVideo(b, slugName) {
+  if (slugName !== "wirkungseinkommen") return "";
+  return `<section class="section home-video-section" id="bereichsvideo" aria-labelledby="bereichsvideo-title">
+        <div class="section-header">
+          <p class="hero-kicker">Bereichsvideo</p>
+          <h2 id="bereichsvideo-title">Wirkungseinkommen als neue Einkommensarchitektur</h2>
+          <p>Das Video zeigt, warum Einkommen in einer automatisierten Wirtschaft nicht nur an Erwerbsarbeit hängen kann. Wirkungseinkommen verbindet Grunddividende, Markteinkommen, Wirkungsbonus und Transformationsschutz, ohne Menschen als Personen zu bewerten.</p>
+        </div>
+        <video class="home-explainer-video" controls controlsList="nodownload" preload="metadata" playsinline poster="${href(b, "assets/video/wirkungsfeld-arbeit-einkommen-wirkungseinkommen-poster.png?v=20260611")}" aria-label="Erklärvideo zum Wirkungseinkommen in der Wirkungsökonomie">
+          <source src="${href(b, "assets/video/wirkungsfeld-arbeit-einkommen-wirkungseinkommen.mp4?v=20260611")}" type="video/mp4">
+          Dein Browser kann dieses Video nicht direkt abspielen.
+        </video>
+      </section>`;
 }
 
 function methodToolPage(title, summary) {

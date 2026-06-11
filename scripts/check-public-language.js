@@ -138,6 +138,8 @@ function visibleText(html) {
       .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
       .replace(/<!--[\s\S]*?-->/g, " ")
       .replace(/<[^>]+>/g, " ")
+      .replace(/\b[\w.-]*(?:oeffentlich|pruef|geschaeft)[\w./-]*\.(?:pdf|docx|html)\b/gi, " ")
+      .replace(/(?:^|\s)\/?[a-z0-9._/-]*(?:oeffentlich|pruef|geschaeft)[a-z0-9._/-]*(?=\s|$)/gi, " ")
       .replace(/\s+/g, " ")
       .trim(),
   );

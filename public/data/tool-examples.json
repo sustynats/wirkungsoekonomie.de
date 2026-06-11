@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-04T14:56:28.115Z",
-  "count": 110,
+  "generatedAt": "2026-06-11T21:29:04.357Z",
+  "count": 111,
   "tools": [
     {
       "title": "Wirkung",
@@ -1100,6 +1100,16 @@
       "status": "Demo",
       "type": "Demo Check",
       "method": "Demo",
+      "demo": true
+    },
+    {
+      "title": "Unternehmens-Wirkungsprofil Beta",
+      "text": "UWP-100 Beta bereitet Wirkungsprofile für Unternehmen vor, ohne echte Scores ohne belegte Daten zu erfinden.",
+      "href": "../erleben/unternehmens-wirkungsprofil/",
+      "cluster": "H",
+      "status": "Beta",
+      "type": "Beta-Tool",
+      "method": "Wirkungsprofil",
       "demo": true
     }
   ]
