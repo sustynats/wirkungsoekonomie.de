@@ -2151,6 +2151,54 @@ body.nav-is-open {
   margin-top: 2rem;
 }
 
+.hero-audio {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 46rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(47, 125, 92, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.92);
+  box-shadow: 0 14px 32px rgba(11, 16, 32, 0.06);
+}
+
+.audio-label {
+  display: block;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.hero-audio audio {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.audio-transcript,
+.audio-transcript-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.audio-transcript {
+  margin: 0;
+}
+
+.audio-transcript summary {
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.audio-transcript p,
+.audio-transcript-note {
+  margin: 0.6rem 0 0;
+}
+
 .hero-secondary-link {
   display: inline-flex;
   align-items: center;
