@@ -8,6 +8,7 @@ const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navig
 const headerTemplate = fs.readFileSync(path.join(ROOT, "templates/header.html"), "utf8");
 const footerTemplate = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
 const BASE = "../";
+const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 function esc(value) {
   return String(value ?? "")
@@ -21,8 +22,30 @@ function navMatch(item) {
   return (item.match || []).join("|");
 }
 
+function slugify(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replaceAll("ä", "ae")
+    .replaceAll("ö", "oe")
+    .replaceAll("ü", "ue")
+    .replaceAll("ß", "ss")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function navLink(item, base) {
   return `<a href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}">${esc(item.label)}</a>`;
+}
+
+function headerUtilityNav(base) {
+  return (navigation.more || [])
+    .filter((item) => headerUtilityLabels.has(item.label))
+    .map((item) => {
+      const label = esc(item.label);
+      const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
+      return `<a class="site-utility-link site-utility-link--${esc(slugify(item.label))}" href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${label}</a>`;
+    })
+    .join("\n    ");
 }
 
 function footerGroup(group, base) {
@@ -38,6 +61,7 @@ ${links}
 function renderHeader(base) {
   return headerTemplate
     .replaceAll("{{BASE}}", base)
+    .replaceAll("{{HEADER_UTILITY_NAV}}", headerUtilityNav(base))
     .replace("{{HEADER_NAV}}", navigation.header.map((item) => navLink(item, base)).join("\n    "));
 }
 
