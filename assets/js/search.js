@@ -14,7 +14,7 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
-  const searchDataVersion = "20260602-semantic-ranking";
+  const searchDataVersion = "20260612-wirkungsfinanzpolitik-fast-entry";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
@@ -947,6 +947,32 @@
       .join("");
   }
 
+  function renderImmediateEntrypoint(rawQuery, tokens) {
+    const entrypoint = findRecommended(rawQuery);
+    renderRecommended(entrypoint);
+    renderRelated([]);
+    renderSuggestions(rawQuery, tokens);
+    if (!entrypoint) {
+      resultsList.innerHTML = "";
+      return false;
+    }
+    emptyState.hidden = true;
+    resultsList.innerHTML = `
+      <li class="search-result-card">
+        <article>
+          <div class="search-result-meta">
+            <span class="search-result-badge">Direkteinstieg</span>
+            <span class="search-result-path">Begriff &amp; Anschlussseiten</span>
+          </div>
+          <h2><a href="${escapeHtml(entrypoint.url)}">${highlight(entrypoint.title, rawQuery, tokens)}</a></h2>
+          <p>${highlight(entrypoint.description, rawQuery, tokens)}</p>
+          ${renderTagList(entrypoint.tags)}
+        </article>
+      </li>
+    `;
+    return true;
+  }
+
   function getFiltersFromControls() {
     return Object.fromEntries(
       filterControls
@@ -981,7 +1007,10 @@
     const filtersActive = filterControls.some((control) => control instanceof HTMLSelectElement && control.value);
 
     if (!state.ready) {
-      status.textContent = "Suche wird geladen.";
+      const hasImmediateEntrypoint = queryLength >= 2 ? renderImmediateEntrypoint(rawQuery, tokens) : false;
+      status.textContent = hasImmediateEntrypoint
+        ? `Direkteinstieg für „${rawQuery}“ wird angezeigt. Der Suchindex lädt noch.`
+        : "Suche wird geladen.";
       return;
     }
 
@@ -997,12 +1026,15 @@
     }
 
     emptyState.hidden = true;
+    const hasImmediateEntrypoint = queryLength >= 2 ? renderImmediateEntrypoint(rawQuery, tokens) : false;
     const runId = ++state.searchRun;
     const filtered = state.index.filter(passesFilters);
     const scored = [];
     let cursor = 0;
 
-    status.textContent = "Suche läuft ...";
+    status.textContent = hasImmediateEntrypoint
+      ? `Direkteinstieg für „${rawQuery}“ wird angezeigt. Der Suchindex lädt noch.`
+      : "Suche läuft ...";
 
     const finishSearch = () => {
       if (runId !== state.searchRun) return;
