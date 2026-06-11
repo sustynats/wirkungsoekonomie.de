@@ -25,6 +25,35 @@ function navLink(item, base) {
   return `<a href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}">${esc(item.label)}</a>`;
 }
 
+function navSlug(label) {
+  return String(label)
+    .toLowerCase()
+    .replaceAll("ö", "oe")
+    .replaceAll("ä", "ae")
+    .replaceAll("ü", "ue")
+    .replaceAll("ß", "ss")
+    .replaceAll("&", "und")
+    .replaceAll("/", "-")
+    .replaceAll("?", "")
+    .replaceAll(" ", "-");
+}
+
+function headerUtilityItems() {
+  const labels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
+  return (navigation.more || []).filter((item) => labels.has(String(item.label)));
+}
+
+function headerUtilityLink(item, base) {
+  const label = esc(item.label);
+  const slug = esc(navSlug(item.label));
+  const primary = label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
+  return `<a class="site-utility-link site-utility-link--${slug}" href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${label}</a>`;
+}
+
+function headerUtilityNav(base) {
+  return headerUtilityItems().map((item) => headerUtilityLink(item, base)).join("\n    ");
+}
+
 function footerGroup(group, base) {
   const links = group.items.map((item) => `          ${navLink(item, base)}`).join("\n");
   return `<div class="footer-nav-group">
@@ -38,6 +67,7 @@ ${links}
 function renderHeader(base) {
   return headerTemplate
     .replaceAll("{{BASE}}", base)
+    .replaceAll("{{HEADER_UTILITY_NAV}}", headerUtilityNav(base))
     .replace("{{HEADER_NAV}}", navigation.header.map((item) => navLink(item, base)).join("\n    "));
 }
 
