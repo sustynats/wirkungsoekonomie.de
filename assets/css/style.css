@@ -15846,10 +15846,11 @@ a.principle-card:hover,
 }
 
 .radar-hero-visual img {
+  display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  aspect-ratio: 1659 / 948;
+  object-fit: contain;
 }
 
 .radar-page-hero .hero-grid {
@@ -16379,10 +16380,11 @@ a.principle-card:hover,
    right, and the main navigation opens from the hamburger instead of switching
    to a horizontal desktop nav. */
 body .site-header .site-utility-nav {
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 0.45rem;
   margin-left: auto;
+  justify-self: end;
 }
 
 body .site-header .site-utility-link {
