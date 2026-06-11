@@ -16,7 +16,7 @@
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
   const searchDataVersion = "20260602-semantic-ranking";
   const MAX_HAYSTACK_CHARS = 1800;
-  const MAX_SEARCH_SCAN = 700;
+  const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
   const SEARCH_GROUPS = [
     { id: "fragen", label: "Fragen & Einwände", max: 4 },
@@ -59,6 +59,7 @@
     idgs: ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
     "inner development goals": ["/begriffe/idgs/", "/begriffe/wirkungskompetenz/", "/verstehen/sdgs-sdgplus/"],
     wirkungseinkommen: ["/begriffe/wirkungseinkommen/", "/erleben/automatisierungs-wirkungseinkommensrechner/", "/wirkungsfelder/arbeit-einkommen/"],
+    wirkungsfinanzpolitik: ["/begriffe/wirkungsfinanzpolitik/", "/wirkungsfelder/wirkungsfinanzpolitik/", "/dokumente/wirkungsfinanzpolitik/"],
     planwirtschaft: ["/fragen/", "/portale/kritik-missverstaendnisse-schutzarchitektur/faq-missverstaendnisse/", "/modell.html"],
     "social credit": ["/fragen/", "/begriffe/social-credit/", "/portale/kritik-missverstaendnisse-schutzarchitektur/faq-missverstaendnisse/"],
     "social-credit": ["/fragen/", "/begriffe/social-credit/", "/portale/kritik-missverstaendnisse-schutzarchitektur/faq-missverstaendnisse/"],
@@ -116,6 +117,12 @@
       description: "Der Begriff erklärt den Vorschlag und führt zum Automatisierungs- und Wirkungseinkommensrechner.",
       url: "/begriffe/wirkungseinkommen/",
       tags: ["Begriff", "Automatisierung", "Soziale Sicherung"],
+    },
+    wirkungsfinanzpolitik: {
+      title: "Begriff: Wirkungsfinanzpolitik",
+      description: "Der Begriff führt direkt zur Bereichsseite, zum Arbeitspapier und zu den Anschlussbegriffen rund um MMT, Public Purpose und Wirkungshaushalt.",
+      url: "/begriffe/wirkungsfinanzpolitik/",
+      tags: ["Begriff", "Staat", "Öffentliche Finanzen"],
     },
     folgencheck: {
       title: "Begriff: Folgencheck",
