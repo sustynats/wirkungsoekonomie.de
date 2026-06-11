@@ -1880,6 +1880,40 @@ h4 {
   text-overflow: ellipsis;
 }
 
+.site-utility-nav {
+  display: none;
+}
+
+.site-utility-link,
+.site-nav-utility a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.45rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  color: var(--navy);
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.site-utility-link:hover,
+.site-utility-link:focus-visible,
+.site-nav-utility a:hover,
+.site-nav-utility a:focus-visible {
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green);
+}
+
+.site-nav-utility {
+  display: grid;
+  gap: 0.15rem;
+  margin-top: 0.5rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(11, 16, 32, 0.08);
+}
+
 .site-nav,
 .mobile-nav {
   position: absolute;
@@ -9981,6 +10015,24 @@ textarea {
 }
 
 @media (min-width: 1480px) {
+  .site-utility-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin-left: auto;
+  }
+
+  .site-utility-link--suche,
+  .site-nav-utility {
+    display: none;
+  }
+
+  .site-utility-link {
+    min-height: 2rem;
+    padding: 0.25rem 0.55rem;
+    font-size: clamp(0.78rem, 0.72vw, 0.88rem);
+  }
+
   .site-nav {
     position: static;
     display: flex;
@@ -16278,6 +16330,10 @@ a.principle-card:hover,
 }
 
 @media (max-width: 1479px) {
+  .site-utility-nav {
+    display: none !important;
+  }
+
   body .site-header .nav-toggle {
     position: relative;
     inset: auto;

@@ -1087,23 +1087,29 @@ function enhanceDocument(file) {
     .map((match) => ({ id: match[1].match(/\sid=["']([^"']+)["']/i)?.[1] || "", title: cleanTitle(match[2]) }))
     .filter((item) => item.id && item.title)
     .slice(0, 12);
+  const hasDocumentToolbar = /class="[^"]*\bdocument-reader-tools\b[^"]*"/i.test(html);
+  const hasDocumentMiniMap = /class="[^"]*\bdocument-mini-map\b[^"]*"/i.test(html);
   html = sourceChips(html);
   html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
     if (classes.includes("workpaper-reader")) return match;
     return `<main class="${uniqueClasses(classes, "workpaper-reader reference-reader")}" data-reference-reader${cleanMainRest(rest, "data-reference-reader")}>`;
   });
-  html = html.replace(/(<h1\b[\s\S]*?<\/h1>)/, `$1
+  if (!hasDocumentToolbar) {
+    html = html.replace(/(<h1\b[\s\S]*?<\/h1>)/, `$1
         <!-- reference-ux:start --><div class="document-reader-tools">
           <a class="btn btn-secondary" href="../">Dokumentenbibliothek</a>
           <a class="btn btn-secondary" href="../../referenz/">Referenzportal</a>
           <a class="btn btn-secondary" href="../../begriffe/">Glossar</a>
           <button class="btn btn-secondary" type="button" data-print-page>Drucken</button>
         </div><!-- reference-ux:end -->`);
-  const toc = headings.length
+  }
+  const toc = !hasDocumentMiniMap && headings.length
     ? `<aside class="document-mini-map"><h2>Inhalt</h2>${headings.map((heading) => `<a href="#${heading.id}">${esc(heading.title)}</a>`).join("")}</aside>`
     : "";
-  html = html.replace(/(<article class="article-shell">)/, `$1
+  if (toc) {
+    html = html.replace(/(<article class="article-shell">)/, `$1
         <!-- reference-ux:start -->${toc}<!-- reference-ux:end -->`);
+  }
   html = ensureScripts(html, file);
   write(file, html);
 }
