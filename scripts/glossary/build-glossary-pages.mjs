@@ -325,7 +325,7 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(metaTitle)}</title>
     <meta name="description" content="${esc(metaDescription)}">
-    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260612-shell-audio-fix">
+    <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260612-nav-restore">
   </head>
   <body>
 ${renderHeader(depth)}
@@ -333,7 +333,7 @@ ${renderHeader(depth)}
 ${body}
     </main>
 ${renderFooter(depth)}
-    <script src="${depth}assets/js/main.js?v=20260612-shell-audio-fix"></script>
+    <script src="${depth}assets/js/main.js?v=20260612-nav-restore"></script>
   </body>
 </html>
 `.replace(/[ \t]+$/gm, "");

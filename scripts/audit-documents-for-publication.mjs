@@ -1556,7 +1556,7 @@ function layout({ title, description, body, prefix = "" }) {
     <meta name="search_description" content="${escapeHtml(description)}">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
-    <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260612-shell-audio-fix">
+    <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260612-nav-restore">
   </head>
   <body>
     <header class="site-header" data-search-exclude>

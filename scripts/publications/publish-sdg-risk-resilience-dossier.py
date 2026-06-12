@@ -196,7 +196,7 @@ def render_page(online_text: str) -> str:
     <meta name="search_description" content="{html.escape(SHORT_DESCRIPTION)}">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-shell-audio-fix">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-nav-restore">
   </head>
   <body>
     {header}

@@ -1,15 +1,15 @@
 {
   "header": [
     { "label": "Start", "href": "index.html", "match": ["index.html"] },
-    { "label": "Verstehen", "href": "verstehen.html", "match": ["verstehen.html", "wirkungsoekonomie.html", "wirkungsoekonomie/", "verstehen/"] },
-    { "label": "So wirkt WÖk", "href": "so-wirkt-wirkungsoekonomie/", "match": ["so-wirkt-wirkungsoekonomie/", "so-wirkt-wirkungsoekonomie.html"] },
+    { "label": "Verstehen", "href": "verstehen/", "match": ["verstehen/", "verstehen.html", "wirkungsoekonomie.html", "wirkungsoekonomie/", "modell.html", "ordnung/", "so-wirkt-wirkungsoekonomie/"] },
+    { "label": "Für wen?", "href": "fuer/", "match": ["fuer/", "fuer-wen/", "fuer/unternehmen.html", "fuer/buergerinnen.html", "fuer/investoren.html", "fuer/kommunen.html"] },
     { "label": "Wirkungsfelder", "href": "wirkungsfelder/", "match": ["wirkungsfelder/", "anwendungen.html"] },
-    { "label": "Methoden & Werkzeuge", "href": "werkzeuge/", "match": ["werkzeuge/", "tools/", "methodik/", "workflow.html", "scanner.html", "anwendungen/scanner.html", "scorecard-dashboard.html", "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"] },
-    { "label": "Erleben", "href": "erleben/", "match": ["erleben.html", "erleben/", "ausprobieren/"] },
-    { "label": "Akademie", "href": "akademie.html", "match": ["akademie.html", "akademie/"] },
-    { "label": "Bibliothek", "href": "downloads.html", "match": ["werkstatt/", "downloads.html", "downloads/", "dokumente/", "referenz/", "buch.html", "buch/", "evidenz/", "quellen/", "fachbibliothek/"] },
-    { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/", "fuer/"] },
-    { "label": "Suche", "href": "suche.html", "match": ["suche.html"] }
+    { "label": "Wirkungssteuerung", "href": "wirkungssteuerung/", "match": ["wirkungssteuerung/", "fuer/wirkungssteuer.html", "werkstatt/gesetze/wirkungssteuergesetz/", "werkzeuge/scorecards/", "werkzeuge/t-sroi/"] },
+    { "label": "Öffentlicher Wirkungsraum", "href": "oeffentlicher-wirkungsraum/", "match": ["oeffentlicher-wirkungsraum/", "wirkungsradar/", "woek-ki/"] },
+    { "label": "Praxis & Tools", "href": "werkzeuge/", "match": ["werkzeuge/", "tools/", "methodik/", "workflow.html", "scanner.html", "anwendungen/scanner.html", "scorecard-dashboard.html", "erleben/", "erleben.html", "ausprobieren/"] },
+    { "label": "Lernen", "href": "lernen/", "match": ["lernen/", "akademie.html", "akademie/"] },
+    { "label": "Bibliothek", "href": "bibliothek/", "match": ["bibliothek/", "downloads.html", "downloads/", "dokumente/", "referenz/", "buch.html", "buch/", "evidenz/", "quellen/", "fachbibliothek/", "blog.html", "blog/", "begriffe/", "glossar.html"] },
+    { "label": "Mitmachen", "href": "mitmachen.html", "match": ["mitmachen.html", "mitmachen/"] }
   ],
   "applications": [
     {

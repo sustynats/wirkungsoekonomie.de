@@ -57,7 +57,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
     ${extraHead}
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-shell-audio-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-nav-restore">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -67,7 +67,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Weitergeben ohne Frame-Verstärkung.</h2><p>Studio, Antwort-Playbooks, Quellen und Meldeworkflow helfen, Aussagen sicher in Kommentar, Unterricht, Workshop und Redaktion zu nutzen.</p><p><a class="text-link" href="${base}wirkungsradar/studio/">Studio</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260612-shell-audio-fix"></script>
+    <script src="${base}assets/js/main.js?v=20260612-nav-restore"></script>
   </body>
 </html>`;
 }

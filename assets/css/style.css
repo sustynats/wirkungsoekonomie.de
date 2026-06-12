@@ -16564,8 +16564,9 @@ body .audio-transcript-note {
     font-size: 1.05rem;
   }
 
-  body .site-header .site-utility-nav .site-utility-link--woek-ki {
-    display: none;
+  body .site-header .site-utility-nav .site-utility-link--woek-ki::before {
+    content: "KI";
+    font-size: 0.82rem;
   }
 
   body .site-header .site-utility-nav .site-utility-link--mein-wirkungsraum {
