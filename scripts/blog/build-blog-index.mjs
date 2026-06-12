@@ -137,6 +137,7 @@ function entryFromHtml(file, existing) {
     title,
     url,
     date: toDateOnly(published),
+    publishedAt: published,
     category,
     readingTime,
     excerpt,
@@ -157,7 +158,7 @@ const entries = walk(blogDir)
   .map((file) => entryFromHtml(file, existing))
   .filter(Boolean)
   .filter((entry) => entry.status === "published" && entry.date)
-  .sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title, "de"));
+  .sort((a, b) => (b.publishedAt || b.date).localeCompare(a.publishedAt || a.date) || a.title.localeCompare(b.title, "de"));
 
 fs.mkdirSync(path.dirname(indexPath), { recursive: true });
 fs.writeFileSync(indexPath, `${JSON.stringify(entries, null, 2)}\n`);

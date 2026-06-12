@@ -178,7 +178,7 @@ function itemsFromBlogIndex() {
   return posts
     .filter((post) => post.status === "published")
     .map((post) => {
-      const date = new Date(`${post.date || ""}T00:00:00`);
+      const date = new Date(post.publishedAt || `${post.date || ""}T00:00:00`);
       return {
         title: stripTags(post.title || "Journalbeitrag"),
         description: stripTags(post.excerpt || post.description || "").slice(0, 320),
