@@ -2178,6 +2178,80 @@ const financeRelatedTerms = [
   ["functional-finance", "Functional Finance"]
 ];
 
+function impactOfInvestmentDetailBody(term) {
+  return `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / Impact-of-Investment / IOI</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">Messbegriff · Wirkungsfinanzpolitik</p>
+          <h1>Impact-of-Investment / IOI</h1>
+          <p class="lead">Impact-of-Investment misst, wie viel positive Netto-Wirkung durch einen eingesetzten Euro entsteht. IOI ergänzt ROI, SROI und T-SROI, ersetzt aber keine demokratische Abwägung.</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../begriffe/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a><a class="btn btn-secondary" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier</a><a class="btn btn-secondary" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a></div>
+        </header>
+        ${financeCard("Auf einen Blick", "Was IOI zeigt", listItems([
+          "IOI steht für Impact-of-Investment.",
+          "IOI fragt, welche positive Netto-Wirkung pro investiertem Euro entsteht.",
+          "Formelhaft: IOI = positive Netto-Wirkung / Investitionssumme.",
+          "IOI kann für öffentliche Ausgaben, Förderprogramme, Portfolios, Projekte und Investitionen genutzt werden.",
+          "IOI ist kein Autopilot: Nichtkompensation, Grundrechte, Realressourcen, Datenqualität und demokratische Rückkopplung bleiben nötig."
+        ]))}
+        ${financeCard("Definition", "Wirkung je investiertem Euro", `<p><strong>Impact-of-Investment (IOI) ist eine Kennzahl der Wirkungsökonomie, die die positive Netto-Wirkung einer Ausgabe, Investition oder Finanzierung ins Verhältnis zur eingesetzten Investitionssumme setzt.</strong></p><p>IOI macht sichtbar, wo ein Euro besonders viel reale Zustandsverbesserung erzeugt und wo Geld zwar fließt, aber kaum Wirkung, Haushaltsblindleistung oder sogar negative Netto-Wirkung entsteht.</p><p><strong>Nicht nur: Was kostet es? Sondern: Welche positive Netto-Wirkung entsteht pro Euro?</strong></p>`)}
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Rechnung</p>
+          <h2>Grundformel</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Vereinfachte Formel</h3><p><strong>IOI = positive Netto-Wirkung / Investitionssumme</strong></p><p>Die positive Netto-Wirkung kann monetarisiert, als Punktwert, Index oder qualitative Wirkungsbilanz dargestellt werden.</p></section>
+            <section class="term-section-card"><h3>Wichtige Grenzen</h3><p>Die Formel ist nur sinnvoll, wenn Bilanzgrenzen, Zeithorizont, Zielgruppen, Nebenwirkungen, Wirkungsrisiken, Datenqualität und Nichtkompensation transparent sind.</p></section>
+            <section class="term-section-card"><h3>Öffentliche Finanzen</h3><p>In der Wirkungsfinanzpolitik hilft IOI, Ausgaben, Subventionen, Investitionen und Schulden nach ihrer Wirkungseffizienz zu vergleichen.</p></section>
+          </div>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Abgrenzung</p>
+          <h2>Nicht verwechseln mit</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>ROI</h3><p>ROI misst finanzielle Rendite. IOI misst positive Netto-Wirkung pro Euro. Ein Projekt kann hohen ROI und niedrigen IOI haben - oder umgekehrt.</p></section>
+            <section class="term-section-card"><h3>SROI</h3><p>SROI monetarisiert soziale und ökologische Nutzen. IOI ist breiter als Kennzahl der Wirkungseffizienz und kann auch mit nicht-monetären Wirkungswerten arbeiten.</p></section>
+            <section class="term-section-card"><h3>T-SROI</h3><p>T-SROI fragt zusätzlich nach Transformationswirkung: Verändert die Investition Standards, Märkte, Infrastrukturen, Anreize oder Pfade?</p></section>
+            <section class="term-section-card"><h3>NWI</h3><p>Der Netto-Wirkungs-Index bündelt positive und negative Wirkungen. IOI setzt diese Wirkung ins Verhältnis zum eingesetzten Kapital.</p></section>
+            <section class="term-section-card"><h3>Impact Investing</h3><p>Impact Investing ist eine Markt- und Investitionspraxis. IOI ist eine Bewertungsfrage: Welche reale Wirkung entsteht durch den Kapitaleinsatz?</p></section>
+            <section class="term-section-card"><h3>ESG</h3><p>ESG beschreibt Umwelt-, Sozial- und Governance-Faktoren. IOI fragt konkreter nach tatsächlicher Zustandsveränderung.</p></section>
+          </div>
+        </section>
+        ${financeCard("Einsatz", "Wo IOI hilft", listItems([
+          "Bei öffentlichen Haushalten, um Wirkungsqualität verschiedener Ausgaben sichtbar zu machen.",
+          "Bei Förderprogrammen, um Mitteleinsatz, Zielgruppe, Wirkungspfad und Rückkopplung zu prüfen.",
+          "Bei Investitionen, um Kapitalwirkung statt nur Kapitalrendite zu betrachten.",
+          "Bei Subventionen, um Haushaltsblindleistung und Pfadabhängigkeiten sichtbar zu machen.",
+          "Bei Portfolios, um Wirkung, Risiko, Nebenwirkungen und Transformationsbeitrag gemeinsam zu lesen."
+        ]))}
+        ${financeCard("Schutzlinie", "IOI darf nicht technokratisch werden", `<p>IOI ist eine Entscheidungshilfe, kein Ersatz für demokratische Verantwortung. Eine hohe Kennzahl darf schwere negative Wirkungen nicht automatisch kompensieren. Grundrechte, Daseinsvorsorge, Verteilung, Datenschutz, Realressourcen, institutionelle Verantwortung und öffentliche Kontrolle bleiben entscheidend.</p><p><strong>IOI zeigt Wirkungseffizienz. Er entscheidet nicht allein, was gesellschaftlich richtig ist.</strong></p>`)}
+        <section class="term-link-section" aria-labelledby="ioi-related">
+          <div><p class="section-eyebrow">Verknüpfungen</p><h2 id="ioi-related">Verwandte Begriffe und Inhalte</h2></div>
+          ${financeChipRow([
+            ["wirkungsfinanzpolitik", "Wirkungsfinanzpolitik"],
+            ["wirkungshaushalt", "Wirkungshaushalt"],
+            ["wirkungspruefung-oeffentlicher-mittel", "Wirkungsprüfung öffentlicher Mittel"],
+            ["positive-netto-wirkung", "positive Netto-Wirkung"],
+            ["nwi", "NWI"],
+            ["t-sroi", "T-SROI"],
+            ["wirkschulden", "Wirkschulden"],
+            ["blindschulden", "Blindschulden"],
+            ["verlustschulden", "Verlustschulden"],
+            ["public-purpose", "Public Purpose"]
+          ])}
+          <div class="term-chip-row">
+            <a class="term-chip" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>
+            <a class="term-chip" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a>
+            <a class="term-chip" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>
+          </div>
+        </section>
+        <section class="meta-box">
+          <h2>Version und Quellen</h2>
+          <p>Kategorie: Messbegriff · Version: ${esc(term.version || "2026-06-12")} · Stand: 12. Juni 2026</p>
+          <p>Vertiefung: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../begriffe/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster öffentliche Finanzen, Schulden und Wirkung</a>.</p>
+        </section>
+      </article>`;
+}
+
 const debtClassContent = {
   wirkschulden: {
     glance: [
@@ -2524,6 +2598,8 @@ for (const term of indexedTerms) {
     ? staatDetailBody(term)
     : term.slug === "wirkungsfinanzpolitik"
     ? wirkungsfinanzpolitikDetailBody(term)
+    : term.slug === "impact-of-investment"
+    ? impactOfInvestmentDetailBody(term)
     : financeDebtSlugs.has(term.slug)
     ? debtClassDetailBody(term)
     : term.slug === "oeffentliche-finanzen-schulden-wirkung"
@@ -2564,6 +2640,11 @@ ${chapterBlock(term)}
     ? {
         metaTitle: "Öffentliche Finanzen, Schulden und Wirkung - Glossar der Wirkungsökonomie",
         metaDescription: "Glossar-Cluster der Wirkungsfinanzpolitik: IOI, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, MMT, Public Purpose und Functional Finance.",
+      }
+    : term.slug === "impact-of-investment"
+    ? {
+        metaTitle: "Impact-of-Investment / IOI - Glossar der Wirkungsökonomie",
+        metaDescription: "Impact-of-Investment (IOI) misst positive Netto-Wirkung je investiertem Euro und ergänzt ROI, SROI, T-SROI und Wirkungsfinanzpolitik.",
       }
     : {};
   if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;

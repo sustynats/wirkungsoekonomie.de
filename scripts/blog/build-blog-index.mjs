@@ -269,6 +269,27 @@ function renderBlogLatestSection(entries) {
       </section>`;
 }
 
+function renderStructuredBlogItems(entries) {
+  return entries.slice(0, 18).map((entry, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: `https://wirkungsoekonomie.de/${siteRelative(entry.url)}`,
+    name: entry.title,
+  }));
+}
+
+function updateBlogStructuredData(html, entries) {
+  if (!entries.length) return html;
+  const items = JSON.stringify(renderStructuredBlogItems(entries), null, 40)
+    .split("\n")
+    .map((line, index) => index === 0 ? line : `                                        ${line}`)
+    .join("\n");
+  return html.replace(
+    /("@id": "https:\/\/wirkungsoekonomie\.de\/blog\.html#leitartikel"[\s\S]*?"numberOfItems": )\d+([\s\S]*?"itemListElement": )\[[\s\S]*?\](\s*\n\s*})/,
+    `$1${Math.min(entries.length, 18)}$2${items}$3`
+  );
+}
+
 function renderLibraryCard(entry) {
   return `<article class="journal-library-card">
       ${renderLibraryImage(entry)}
@@ -292,10 +313,11 @@ function updateBlogJournal(entries) {
   const blogHtmlPath = path.join(root, "blog.html");
   if (!fs.existsSync(blogHtmlPath) || !entries.length) return;
   const current = fs.readFileSync(blogHtmlPath, "utf8");
-  const next = current.replace(
+  const withLatest = current.replace(
     /      <section class="section" aria-labelledby="leitartikel-title">[\s\S]*?(?=\n      <section class="section section-muted" id="dossiers")/,
     renderBlogLatestSection(entries)
   );
+  const next = updateBlogStructuredData(withLatest, entries);
   if (next !== current) fs.writeFileSync(blogHtmlPath, next, "utf8");
 }
 
