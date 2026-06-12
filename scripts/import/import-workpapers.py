@@ -270,7 +270,7 @@ def render_page(item: dict, paragraphs: list[str], issues: list[str], original_h
     <meta name="search_description" content="Webfassung eines Arbeitspapiers der Wirkungsökonomie mit Originaldatei.">
     <meta name="search_section" content="Dokumente">
     <meta name="search_type" content="{escape(item["documentType"])}">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-headline-fix">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
     <header class="site-header">
@@ -365,7 +365,7 @@ def render_library(imports: list[dict]) -> str:
     <meta name="search_description" content="Dokumentenbibliothek mit Hauptwerk, Arbeitspapieren und Originaldateien der Wirkungsökonomie.">
     <meta name="search_section" content="Dokumente">
     <meta name="search_type" content="Dokumentenbibliothek">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-headline-fix">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
     <header class="site-header">

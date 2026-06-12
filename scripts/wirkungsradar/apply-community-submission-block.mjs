@@ -58,7 +58,7 @@ function shell({ file, title, description, canonical, main }) {
     <meta name="search_type" content="Redaktion">
     <link rel="canonical" href="${escapeHtml(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-headline-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -68,7 +68,7 @@ function shell({ file, title, description, canonical, main }) {
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Aufklärung ohne Frame-Verstärkung.</h2><p>Der Debatten-Kompass prüft Aussagen, Narrative und Frames nach Faktenkern, Wirkpfad und demokratischem Aufklärungsnutzen.</p><p><a class="text-link" href="${base}wirkungsradar/">Debatten-Kompass</a> · <a class="text-link" href="${base}wirkungsradar/pruefprozess/">Prüfprozess</a> · <a class="text-link" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260612-mobile-headline-fix"></script>
+    <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
   </body>
 </html>`;
 }
@@ -174,11 +174,11 @@ function aliasPage(file) {
     <meta name="robots" content="noindex">
     <meta http-equiv="refresh" content="0; url=${ACADEMY_NARRATIVE_URL}">
     <link rel="canonical" href="${ACADEMY_NARRATIVE_URL}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-headline-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
     <main class="section"><div><article class="card"><p class="card-kicker">Weiterleitung</p><h1>Narrativ einreichen</h1><p>Der Meldeworkflow liegt in der Akademie-App.</p><p><a class="btn btn-primary" href="${ACADEMY_NARRATIVE_URL}">Narrativ einreichen</a></p></article></div></main>
-    <script src="${base}assets/js/main.js?v=20260612-mobile-headline-fix"></script>
+    <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
   </body>
 </html>`;
 }
@@ -218,8 +218,8 @@ function normalizeHtml(file) {
   const compassHref = relDir(file, path.join(ROOT, "wirkungsradar"));
 
   html = html
-    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, "assets/css/style.css?v=20260612-mobile-headline-fix")
-    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, "assets/js/main.js?v=20260612-mobile-headline-fix")
+    .replace(/assets\/css\/style\.css\?v=[^"' <)]+/g, "assets/css/style.css?v=20260612-mobile-table-fix")
+    .replace(/assets\/js\/main\.js\?v=[^"' <)]+/g, "assets/js/main.js?v=20260612-mobile-table-fix")
     .replace(/Mythen &amp; Narrative/g, "Narrative")
     .replace(/Mythen & Narrative/g, "Narrative")
     .replace(/Mythos melden/g, "Narrativ einreichen")

@@ -3,7 +3,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
-const CSS_VERSION = "20260612-mobile-headline-fix";
+const CSS_VERSION = "20260612-mobile-table-fix";
 const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
 
 function escapeHtml(value) {
@@ -96,7 +96,8 @@ for (const filePath of headerFiles()) {
   const after = afterHeader
     .replaceAll("20260612-shell-audio-fix", CSS_VERSION)
     .replaceAll("20260612-nav-restore", CSS_VERSION)
-    .replaceAll("20260612-journal-mobile-fix", CSS_VERSION);
+    .replaceAll("20260612-journal-mobile-fix", CSS_VERSION)
+    .replaceAll("20260612-mobile-headline-fix", CSS_VERSION);
   if (after !== before) {
     fs.writeFileSync(filePath, after);
     changed += 1;

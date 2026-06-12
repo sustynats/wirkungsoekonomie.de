@@ -4,8 +4,8 @@ import path from "node:path";
 const ROOT = process.cwd();
 const RADAR_ROOT = path.join(ROOT, "wirkungsradar");
 const SITE_URL = "https://wirkungsoekonomie.de";
-const VERSION = "20260612-mobile-headline-fix";
-const MAIN_JS_VERSION = "20260612-mobile-headline-fix";
+const VERSION = "20260612-mobile-table-fix";
+const MAIN_JS_VERSION = "20260612-mobile-table-fix";
 
 function esc(value) {
   return String(value ?? "")

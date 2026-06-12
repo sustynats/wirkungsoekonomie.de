@@ -16570,6 +16570,58 @@ body .audio-transcript-note {
   margin: 0.6rem 0 0;
 }
 
+@media (max-width: 760px) {
+  body .hero-title {
+    max-width: 100%;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  body .table-wrap,
+  body .table-scroll,
+  body .compare-table-wrap,
+  body .scorecard-table-wrap {
+    width: 100%;
+    max-width: calc(100vw - (2 * var(--space-gutter)));
+    margin-inline: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body .table-wrap table,
+  body .table-wrap .data-table,
+  body .table-scroll table,
+  body .data-table {
+    width: 100%;
+    min-width: 0 !important;
+    max-width: 100%;
+    table-layout: fixed;
+  }
+
+  body .table-wrap th,
+  body .table-wrap td,
+  body .table-scroll th,
+  body .table-scroll td,
+  body .data-table th,
+  body .data-table td {
+    min-width: 0;
+    padding: 0.72rem 0.78rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  body .political-implementation-table th:first-child,
+  body .political-implementation-table td:first-child,
+  body .data-table th:first-child,
+  body .data-table td:first-child {
+    width: 34%;
+  }
+}
+
 @media (max-width: 720px) {
   body .site-header {
     gap: 0.55rem;

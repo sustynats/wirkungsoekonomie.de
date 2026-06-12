@@ -79,7 +79,7 @@ const html = `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>So wirkt die Wirkungsökonomie</title>
     <meta name="description" content="Die Wirkungsökonomie erklärt, wie Entscheidungen, Preise, Regeln, Kapital und Sprache auf Mensch, Planet und Demokratie wirken.">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-headline-fix">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
 ${renderHeader(BASE)}
@@ -175,7 +175,7 @@ ${renderHeader(BASE)}
       </section>
     </main>
 ${renderFooter(BASE)}
-    <script src="../assets/js/main.js?v=20260612-mobile-headline-fix"></script>
+    <script src="../assets/js/main.js?v=20260612-mobile-table-fix"></script>
   </body>
 </html>
 `;

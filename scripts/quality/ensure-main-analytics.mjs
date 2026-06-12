@@ -56,7 +56,7 @@ for (const file of walk(ROOT)) {
     continue;
   }
   const base = relativeAssetBase(file);
-  const script = `    <script src="${base}assets/js/main.js?v=20260612-mobile-headline-fix" defer></script>\n`;
+  const script = `    <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix" defer></script>\n`;
   const next = html.replace(/<\/body>/i, `${script}</body>`);
   fs.writeFileSync(file, next);
   updated += 1;

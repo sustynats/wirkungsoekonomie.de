@@ -273,7 +273,7 @@ def render_online_page(source: Path, target: Path):
   <meta name="search_type" content="Dossier">
   <meta name="search_tags" content="Öffentlicher Wirkungsraum, Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator, Resilienz">
   <link rel="canonical" href="{CANONICAL}">
-  <link rel="stylesheet" href="{BASE}assets/css/style.css?v=20260612-mobile-headline-fix">
+  <link rel="stylesheet" href="{BASE}assets/css/style.css?v=20260612-mobile-table-fix">
   <style>
     .dossier-layout {{ max-width: 1080px; margin: 0 auto; }}
     .dossier-prose {{ max-width: 920px; margin: 0 auto; }}
@@ -324,7 +324,7 @@ def render_online_page(source: Path, target: Path):
       </div>
     </section>
   </main>
-  <script src="{BASE}assets/js/main.js?v=20260612-mobile-headline-fix"></script>
+  <script src="{BASE}assets/js/main.js?v=20260612-mobile-table-fix"></script>
 </body>
 </html>
 """

@@ -299,7 +299,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <meta name="twitter:image" content="${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-headline-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
     <header class="site-header">
@@ -317,7 +317,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
-    <script src="${base}assets/js/main.js?v=20260612-mobile-headline-fix"></script>
+    <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
     ${extraScript ? `<script src="${base}${extraScript}"></script>` : ""}
   </body>
 </html>

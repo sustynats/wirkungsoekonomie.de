@@ -4,8 +4,8 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const STYLE_VERSION = "20260612-mobile-headline-fix";
-const SCRIPT_VERSION = "20260612-mobile-headline-fix";
+const STYLE_VERSION = "20260612-mobile-table-fix";
+const SCRIPT_VERSION = "20260612-mobile-table-fix";
 
 const navigationPath = path.join(ROOT, "assets/data/navigation.json");
 const architecturePath = path.join(ROOT, "assets/data/website-architecture-v21.json");
@@ -1208,7 +1208,7 @@ function shell({ base, route, title, description, kicker, h1, subtitle, actions,
     <meta name="search_type" content="Portal">
     <link rel="canonical" href="${SITE}/${route}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-headline-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude><a class="brand" href="${base}index.html">Wirkungsökonomie</a><nav class="site-nav" id="site-nav"></nav></header>
@@ -1223,7 +1223,7 @@ function shell({ base, route, title, description, kicker, h1, subtitle, actions,
       </section>
 ${content}
     </main>
-    <script src="${base}assets/js/main.js?v=20260612-mobile-headline-fix" defer></script>
+    <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix" defer></script>
   </body>
 </html>
 `;
