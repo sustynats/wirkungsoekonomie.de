@@ -101,7 +101,7 @@ const demos = [
     file: "erleben/impact-controlling-rechner/index.html",
     title: "Impact-Controlling-Rechner",
     shows: "Wie Wirkung in Steuerung, Controlling, Risiko, Reporting und Entscheidungsvorbereitung modellhaft eingeordnet wird.",
-    methods: [{ label: "Impact Controlling", href: "werkzeuge/impact-controlling/" }, { label: "NWI", href: "werkzeuge/netto-wirkungs-index/" }, { label: "T-SROI", href: "werkzeuge/t-sroi/" }],
+    methods: [{ label: "Impact Controlling", href: "werkzeuge/impact-controlling/" }, { label: "NWI", href: "werkzeuge/netto-wirkungs-index/" }, { label: "IOI", href: "begriffe/impact-of-investment/" }, { label: "T-SROI", href: "werkzeuge/t-sroi/" }],
     docs: [{ label: "Impact-Controlling-Dossier", href: "werkzeuge/impact-controlling/dossier/" }, { label: "Methodenpapiere", href: "werkzeuge/impact-controlling/methodenpapiere/" }],
     next: [{ label: "Methoden & Werkzeuge", href: "werkzeuge/" }, { label: "Wirtschaft & Unternehmen", href: "wirkungsfelder/wirtschaft-unternehmen/" }],
   },

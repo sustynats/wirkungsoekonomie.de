@@ -9881,6 +9881,7 @@ textarea {
 .calculator-result {
   display: grid;
   gap: 1rem;
+  min-width: 0;
 }
 
 .calculator-form label {
@@ -9945,6 +9946,52 @@ textarea {
   font-weight: 950;
 }
 
+.calculator-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.calculator-metric {
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(11, 16, 48, 0.14);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 0.55rem 1.4rem rgba(11, 16, 48, 0.06);
+}
+
+.calculator-metric--wide {
+  grid-column: 1 / -1;
+}
+
+.calculator-metric span,
+.calculator-metric small {
+  display: block;
+}
+
+.calculator-metric span {
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.calculator-metric strong {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--navy);
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  font-weight: 950;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.calculator-metric small {
+  margin-top: 0.4rem;
+  color: var(--text-muted, #475569);
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 @media (max-width: 780px) {
   .calculator-grid {
     grid-template-columns: 1fr;
@@ -9952,6 +9999,10 @@ textarea {
 
   .score-inputs {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .calculator-metrics {
+    grid-template-columns: 1fr;
   }
 }
 

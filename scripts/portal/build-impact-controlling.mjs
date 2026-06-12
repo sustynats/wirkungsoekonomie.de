@@ -1025,17 +1025,19 @@ function toolExplanationPages() {
 }
 
 function calculatorPage() {
+  const description = "Einfache Demo für Scorecard, Netto-Wirkungs-Index, IOI und T-SROI. Modellhaft, keine Prüfung und keine Beratung.";
+
   page({
     rel: "erleben/impact-controlling-rechner/index.html",
     title: "Impact-Controlling-Rechner | Wirkungsökonomie erleben",
-    description: "Einfache Demo für Scorecard, Netto-Wirkungs-Index und T-SROI. Modellhaft, keine Prüfung und keine Beratung.",
+    description,
     searchSection: "Erleben",
     searchType: "Demo",
-    extraScript: "assets/js/impact-controlling-rechner.js?v=20260524-impact",
+    extraScript: "assets/js/impact-controlling-rechner.js?v=20260612-ioi-result-fix",
     body: (base, route) => `${hero(base, {
       kicker: "Demo",
       title: "Impact-Controlling-Rechner",
-      subtitle: "Scorecard, NWI und T-SROI modellhaft ausprobieren.",
+      subtitle: "Scorecard, NWI, IOI und T-SROI modellhaft ausprobieren.",
       text: "Die Demo zeigt die Grundlogik der Methoden. Sie ist keine Prüfung, keine Beratung und keine amtliche Einstufung.",
       action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/")}">Methodik öffnen</a>`,
     })}
@@ -1046,7 +1048,7 @@ function calculatorPage() {
         <div class="section-header">
           <p class="hero-kicker">Rechner</p>
           ${sectionTitle("impact-calculator-title", "Impact Controlling simulieren")}
-          <p>Scores sind von -3 bis +3 modelliert. Der FinalScore folgt der schwächsten Kernwirkung; der NWI zeigt eine einfache Netto-Differenz; T-SROI ist eine Demonstrationsquote.</p>
+          <p>Scores sind von -3 bis +3 modelliert. Der FinalScore folgt der schwächsten Kernwirkung; der NWI zeigt eine einfache Netto-Differenz. IOI zeigt die positive Netto-Wirkung je investiertem Euro; T-SROI bleibt eine Demonstrationsquote.</p>
         </div>
         <div class="calculator-grid">
           <form class="card calculator-form">
@@ -1074,14 +1076,35 @@ function calculatorPage() {
           </form>
           <aside class="card calculator-result" aria-live="polite">
             <p class="card-kicker">Ergebnis</p>
-            <h2 data-result="presetName">Präventionsprojekt</h2>
-            <dl>
-              <div><dt>FinalScore</dt><dd data-result="finalScore">0</dd></div>
-              <div><dt>NWI Demo</dt><dd data-result="nwi">0,00</dd></div>
-              <div><dt>T-SROI Demo</dt><dd data-result="tsroi">0,00 : 1</dd></div>
-              <div><dt>Wirkungswert gesamt</dt><dd data-result="totalValue">0 EUR</dd></div>
-            </dl>
-            <p data-result="explanation">Modellhafte Demonstration.</p>
+            <h2 data-impact-result="presetName">Präventionsprojekt</h2>
+            <div class="calculator-metrics" role="list">
+              <article class="calculator-metric" role="listitem">
+                <span>FinalScore</span>
+                <strong data-impact-result="finalScore">0</strong>
+                <small>schwächste Kernwirkung</small>
+              </article>
+              <article class="calculator-metric" role="listitem">
+                <span>NWI Demo</span>
+                <strong data-impact-result="nwi">0,00</strong>
+                <small>Netto-Differenz der Scores</small>
+              </article>
+              <article class="calculator-metric" role="listitem">
+                <span>IOI Demo</span>
+                <strong data-impact-result="ioi">0,00</strong>
+                <small>positive Netto-Wirkung je Euro</small>
+              </article>
+              <article class="calculator-metric" role="listitem">
+                <span>T-SROI Demo</span>
+                <strong data-impact-result="tsroi">0,00 : 1</strong>
+                <small>Wirkungswert zu Investition</small>
+              </article>
+              <article class="calculator-metric calculator-metric--wide" role="listitem">
+                <span>Wirkungswert gesamt</span>
+                <strong data-impact-result="totalValue">0 EUR</strong>
+                <small data-impact-result="positiveNetValue">positive Netto-Wirkung: 0 EUR</small>
+              </article>
+            </div>
+            <p data-impact-result="explanation">Modellhafte Demonstration.</p>
             <p class="scanner-notice"><strong>Hinweis:</strong> Modellhafte Demonstration. Keine Prüfung, keine Investitionsberatung, keine amtliche Einstufung.</p>
           </aside>
         </div>

@@ -30,7 +30,7 @@
   };
 
   const form = root.querySelector(".calculator-form");
-  const result = (key) => root.querySelector(`[data-result="${key}"]`);
+  const result = (key) => root.querySelector(`[data-impact-result="${key}"]`);
   const fields = ["mensch", "planet", "demokratie", "daten"];
   const money = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
 
@@ -59,13 +59,18 @@
     const negative = Math.abs(scores.filter((score) => score < 0).reduce((sum, score) => sum + score, 0));
     const nwi = (positive - negative) / fields.length;
     const totalValue = annualValue * years;
+    const positiveNetFactor = Math.max(0, nwi) / 3;
+    const positiveNetValue = totalValue * positiveNetFactor;
+    const ioi = positiveNetValue / investment;
     const tsroi = totalValue / investment;
 
     result("presetName").textContent = selected.name;
     result("finalScore").textContent = formatScore(finalScore);
     result("nwi").textContent = nwi.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    result("ioi").textContent = ioi.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     result("tsroi").textContent = `${tsroi.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} : 1`;
     result("totalValue").textContent = money.format(totalValue);
+    result("positiveNetValue").textContent = `positive Netto-Wirkung: ${money.format(positiveNetValue)}`;
     result("explanation").textContent = selected.explanation;
   }
 
