@@ -35,11 +35,14 @@ from docx.shared import Pt, RGBColor
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = Path("/Users/hagen/Downloads/Wirkungsfinanzpolitik_Aufsatz_WOeK_v2_MMT_PublicPurpose.docx")
+SOURCE = Path("/Users/hagen/Downloads/Wirkungsfinanzpolitik_Aufsatz_WOeK_v3_MMT_PublicPurpose_IOI.docx")
 TEMPLATE = ROOT / "assets" / "downloads" / "woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx"
+LEGACY_TEMPLATE_COMMIT = "2c7192fdbad878e720e541093dfaa59d80fe5336"
+LEGACY_TEMPLATE_PATH = "assets/downloads/woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx"
 PUBLIC_PDF_NAME = "wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public-purpose.pdf"
 PUBLIC_PDF_TARGET = ROOT / "public" / "downloads" / "originals" / PUBLIC_PDF_NAME
-INTERNAL_DOCX_TARGET = ROOT / "content" / "internal-documents" / "wirkungsfinanzpolitik" / "wirkungsfinanzpolitik-aufsatz-woek-ci.docx"
+INTERNAL_OUTPUT_ROOT = Path(os.environ.get("WOEK_INTERNAL_DOCUMENT_DIR", ROOT.parent / f"{ROOT.name} ausgelagert" / "internal-documents"))
+INTERNAL_DOCX_TARGET = INTERNAL_OUTPUT_ROOT / "wirkungsfinanzpolitik" / "wirkungsfinanzpolitik-aufsatz-woek-ci.docx"
 DOCUMENT_DIR = ROOT / "dokumente" / "wirkungsfinanzpolitik"
 LIBRARY_DIR = ROOT / "bibliothek" / "wirkungsfinanzpolitik"
 SHELL_PAGE = ROOT / "bibliothek" / "arbeitspapier-doppelte-wesentlichkeit-impact-controlling" / "index.html"
@@ -52,13 +55,13 @@ SUBTITLE = "Öffentliche Finanzen, Staatsschulden und positive Netto-Wirkung aus
 DESCRIPTION = (
     "Arbeitsfassung zur Wirkungsfinanzpolitik: öffentliche Einnahmen, Ausgaben, Kredite, "
     "Zinsen, Steuern und Investitionen werden nach ihrer Netto-Wirkung auf Mensch, Planet "
-    "und Demokratie bewertet. Die v2-Fassung ordnet MMT, Functional Finance und Public "
-    "Purpose als Anschlussstellen ein."
+    "und Demokratie bewertet. Die v3-Fassung ordnet MMT, Functional Finance, Public "
+    "Purpose und IOI als Anschlussstellen ein."
 )
 STATUS = "Arbeitsfassung / Entwurf"
 STAND = "11. Juni 2026"
-SOURCE_VERSION = "2026.0-v2-mmt-public-purpose"
-WEB_VERSION = "2026.2-webimport"
+SOURCE_VERSION = "2026.0-v3-mmt-public-purpose-ioi"
+WEB_VERSION = "2026.3-webimport"
 
 
 def digest(path: Path) -> str:
@@ -306,14 +309,32 @@ def add_page_break(doc: Document) -> None:
     p.add_run().add_break(WD_BREAK.PAGE)
 
 
+def resolve_template_path(temp_root: Path) -> Path:
+    if TEMPLATE.exists():
+        return TEMPLATE
+    restored = temp_root / "woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx"
+    result = subprocess.run(
+        ["git", "show", f"{LEGACY_TEMPLATE_COMMIT}:{LEGACY_TEMPLATE_PATH}"],
+        cwd=str(ROOT),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+    if result.returncode != 0 or not result.stdout:
+        raise FileNotFoundError(f"{TEMPLATE}\n{result.stderr.decode('utf-8', errors='replace')}")
+    restored.write_bytes(result.stdout)
+    return restored
+
+
 def build_ci_docx(intro: list[dict], body: list[dict], target: Path) -> None:
-    doc = Document(str(TEMPLATE))
+    with tempfile.TemporaryDirectory(prefix="woek-template-") as tmp:
+        doc = Document(str(resolve_template_path(Path(tmp))))
     clear_docx_body(doc)
     props = doc.core_properties
     props.title = TITLE
     props.subject = SUBTITLE
     props.author = "Natalie Weber"
-    props.keywords = "Wirkungsökonomie; Wirkungsfinanzpolitik; Staatsschulden; Wirkungshaushalt; Positive Netto-Wirkung; MMT; Public Purpose"
+    props.keywords = "Wirkungsökonomie; Wirkungsfinanzpolitik; Staatsschulden; Wirkungshaushalt; Positive Netto-Wirkung; IOI; T-SROI; MMT; Public Purpose"
     props.comments = "CI-DOCX aus WÖk-Template; öffentliche Fassung ist ausschließlich die PDF."
 
     ensure_paragraph_style(doc, "WOEK Eyebrow", size=10, color="3F6F2A", bold=True, before=0, after=6, line_spacing=1.0)
@@ -427,15 +448,11 @@ def render_document_page(intro: list[dict], body_html: str, toc: list[tuple[str,
     <meta name="search_description" content="{esc(DESCRIPTION)}">
     <meta name="search_section" content="Dokumente">
     <meta name="search_type" content="Arbeitspapier">
-    <meta name="search_tags" content="Wirkungsfinanzpolitik, Staatsschulden, Wirkungshaushalt, Schuldenbremse, MMT, Functional Finance, Public Purpose, öffentliche Finanzen">
+    <meta name="search_tags" content="Wirkungsfinanzpolitik, Staatsschulden, Wirkungshaushalt, Schuldenbremse, IOI, Impact of Investment, T-SROI, NWI, Haushaltsblindleistung, MMT, Functional Finance, Public Purpose, öffentliche Finanzen">
     <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body class="reference-ux-page">
 {header}    <main class="reference-work reference-reader workpaper-reader" data-pagefind-body>
-      <aside class="document-mini-map" data-search-exclude>
-        <h2>Inhalt</h2>
-        {toc_html(toc)}
-      </aside>
       <article class="article-shell">
         <nav class="breadcrumb"><a href="../">Dokumente</a> / Arbeitspapier</nav>
         <p class="hero-kicker">Arbeitspapier · {esc(STATUS)} · Stand {esc(STAND)}</p>
@@ -480,6 +497,9 @@ def render_document_page(intro: list[dict], body_html: str, toc: list[tuple[str,
             <a href="../../begriffe/public-purpose/">Public Purpose</a>
             <a href="../../begriffe/functional-finance/">Functional Finance</a>
             <a href="../../begriffe/positive-netto-wirkung/">Positive Netto-Wirkung</a>
+            <a href="../../begriffe/impact-of-investment/">IOI</a>
+            <a href="../../begriffe/nwi/">NWI</a>
+            <a href="../../begriffe/haushaltsblindleistung/">Haushaltsblindleistung</a>
             <a href="../../begriffe/wirkungsoekonomie/">Wirkungsökonomie</a>
             <a href="../../begriffe/sustainable-value/">Sustainable Value</a>
           </div>
@@ -524,7 +544,7 @@ def render_library_page(pdf_hash: str) -> str:
           <h2>Kurz gesagt</h2>
           <p>Das Arbeitspapier entwickelt Wirkungsfinanzpolitik als Blick auf öffentliche Finanzen: Nicht die bloße Schuldenhöhe entscheidet, sondern die Netto-Wirkung von Einnahmen, Ausgaben, Krediten, Zinsen, Steuern und Investitionen auf Mensch, Planet und Demokratie.</p>
           <h2>Was dich erwartet</h2>
-          <p>Eine Brücke zwischen Staatsschuldendebatte, MMT, Functional Finance, Public Purpose, Schuldenbremse, Wirkungshaushalt, planetaren Grenzen und demokratischer Steuerung.</p>
+          <p>Eine Brücke zwischen Staatsschuldendebatte, MMT, Functional Finance, Public Purpose, IOI, T-SROI, Schuldenbremse, Wirkungshaushalt, planetaren Grenzen und demokratischer Steuerung.</p>
           <h2>Welche Fragen beantwortet das Dokument?</h2>
           <ul><li>Wann sind öffentliche Schulden aus WÖk-Sicht legitim?</li><li>Wie unterscheidet man Wirkschulden, Blindschulden, Verlustschulden und Reparaturschulden?</li><li>Wie sähe ein Wirkungshaushalt als Ergänzung zur Schuldenbremse aus?</li></ul>
           <h2>Für wen geeignet?</h2>
@@ -542,7 +562,7 @@ def render_library_page(pdf_hash: str) -> str:
             <dt>Niveau</dt><dd>fortgeschritten</dd>
             <dt>PDF-SHA-256</dt><dd><code>{esc(pdf_hash[:16])}...</code></dd>
           </dl>
-          <div class="document-chip-row"><span>Wirkungsfinanzpolitik</span><span>Staatsschulden</span><span>Wirkungshaushalt</span><span>Schuldenbremse</span><span>MMT</span><span>Functional Finance</span><span>Public Purpose</span></div>
+          <div class="document-chip-row"><span>Wirkungsfinanzpolitik</span><span>Staatsschulden</span><span>Wirkungshaushalt</span><span>IOI</span><span>T-SROI</span><span>Schuldenbremse</span><span>MMT</span><span>Functional Finance</span><span>Public Purpose</span></div>
           <div class="document-action-row"><a class="btn btn-secondary" href="../../dokumente/wirkungsfinanzpolitik/">Online lesen</a><a class="btn btn-primary" href="../../public/downloads/originals/{esc(PUBLIC_PDF_NAME)}">PDF öffnen</a></div>
           <a class="text-link" href="../">Zur Bibliothek</a>
         </aside>
@@ -554,8 +574,6 @@ def render_library_page(pdf_hash: str) -> str:
 def main() -> None:
     if not SOURCE.exists():
         raise FileNotFoundError(SOURCE)
-    if not TEMPLATE.exists():
-        raise FileNotFoundError(TEMPLATE)
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
     LIBRARY_DIR.mkdir(parents=True, exist_ok=True)
     source_hash = digest(SOURCE)

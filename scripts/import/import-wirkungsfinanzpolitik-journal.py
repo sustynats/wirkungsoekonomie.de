@@ -11,7 +11,7 @@ from xml.etree import ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE_DOCX = Path("/Users/hagen/Downloads/Wirkungsfinanzpolitik_Journalbeitrag_WOeK_v2_MMT_PublicPurpose.docx")
+SOURCE_DOCX = Path("/Users/hagen/Downloads/Wirkungsfinanzpolitik_Journalbeitrag_WOeK_v3_MMT_PublicPurpose_IOI.docx")
 SOURCE_IMAGE = Path("/Users/hagen/Downloads/ChatGPT Image 11. Juni 2026, 20_59_00.png")
 IMAGE_TARGET = ROOT / "assets" / "img" / "blog" / "2026-06-11-wirkungsfinanzpolitik-schulden-ohne-wirkung.png"
 ARTICLE_SLUG = "nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung"
@@ -34,8 +34,8 @@ AUTHOR = "Natalie Weber"
 DESCRIPTION = (
     "Journal-Beitrag zur Wirkungsfinanzpolitik: Nicht die bloße Staatsverschuldung entscheidet "
     "über Zukunftslasten, sondern ob öffentliche Finanzierung positive Netto-Wirkung für Mensch, "
-    "Planet und Demokratie erzeugt. Die v2-Fassung ordnet MMT, Public Purpose und Functional "
-    "Finance als Anschlussstellen ein."
+    "Planet und Demokratie erzeugt. Die v3-Fassung ordnet MMT, Public Purpose, Functional "
+    "Finance und IOI als Anschlussstellen ein."
 )
 ARTICLE_URL = f"https://wirkungsoekonomie.de/blog/{ARTICLE_SLUG}.html"
 IMAGE_URL = "https://wirkungsoekonomie.de/assets/img/blog/2026-06-11-wirkungsfinanzpolitik-schulden-ohne-wirkung.png"
@@ -64,6 +64,7 @@ TERM_DEFINITIONS = [
     ("Zukunftskosten", "zukunftskosten", "Zukunftskosten sind Lasten, die durch heutige Entscheidungen oder Unterlassungen in spätere Haushalte, Lebenslagen und Ökosysteme verschoben werden."),
     ("Folgekostenvermeidung", "folgekostenvermeidung", "Folgekostenvermeidung bewertet, welche späteren Schäden, Reparaturen oder Risiken durch rechtzeitige öffentliche Finanzierung vermieden werden."),
     ("Wirkungsrendite öffentlicher Ausgaben", "wirkungsrendite-oeffentlicher-ausgaben", "Wirkungsrendite öffentlicher Ausgaben beschreibt das Verhältnis zwischen Ressourceneinsatz und erreichter positiver Netto-Wirkung."),
+    ("Impact-of-Investment (IOI)", "impact-of-investment", "Impact-of-Investment (IOI) misst, wie viel positive Netto-Wirkung pro investiertem Euro entsteht. IOI ergänzt ROI und T-SROI, ersetzt aber keine demokratische Abwägung."),
     ("Öffentlicher T-SROI", "oeffentlicher-t-sroi", "Öffentlicher T-SROI überträgt transformatorische Wirkungsmessung auf öffentliche Investitionen und macht vermiedene Folgekosten, Resilienz und Teilhabe sichtbar."),
     ("Fiskalischer Wirkungsgrad", "fiskalischer-wirkungsgrad", "Fiskalischer Wirkungsgrad beschreibt, wie viel tatsächliche positive Wirkung pro eingesetztem öffentlichen Euro entsteht."),
     ("Haushaltsblindleistung", "haushaltsblindleistung", "Haushaltsblindleistung bezeichnet Ausgaben, Programme oder Kredite, die Mittel bewegen, aber keine ausreichend belegbare positive Zustandsveränderung erzeugen."),
@@ -302,7 +303,7 @@ def render_article(body_html: str, toc: list[tuple[str, str]]) -> str:
     <meta name="search_description" content="{esc(DESCRIPTION)}">
     <meta name="search_section" content="Journal">
     <meta name="search_type" content="Journal-Beitrag">
-    <meta name="search_tags" content="Wirkungsfinanzpolitik, Staatsschulden, Wirkungshaushalt, Schuldenbremse, MMT, Public Purpose, Public Purpose Finance, Functional Finance, positive Netto-Wirkung, Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, Zukunftsschulden">
+    <meta name="search_tags" content="Wirkungsfinanzpolitik, Staatsschulden, Wirkungshaushalt, Schuldenbremse, IOI, Impact of Investment, T-SROI, NWI, Haushaltsblindleistung, MMT, Public Purpose, Public Purpose Finance, Functional Finance, positive Netto-Wirkung, Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, Zukunftsschulden">
     <link rel="canonical" href="{ARTICLE_URL}">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="de_DE">
@@ -350,7 +351,7 @@ def render_article(body_html: str, toc: list[tuple[str, str]]) -> str:
         <div class="article-body">
           <div class="status-note"><strong>Einordnung:</strong> Dieser Beitrag ist eine konzeptionelle Journal-Langform der Wirkungsökonomie. Er ersetzt keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung.</div>
           <div class="callout">
-            <p><strong>Vertiefung:</strong> Zur zitierfähigen v2-Arbeitsfassung geht es im <a class="text-link" href="../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>. Der Bereich <a class="text-link" href="../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a> ordnet MMT, <a class="text-link" href="../begriffe/public-purpose/">Public Purpose</a> und <a class="text-link" href="../begriffe/functional-finance/">Functional Finance</a> als Anschlussstellen ein; die Begriffe stehen im <a class="text-link" href="../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster öffentliche Finanzen, Schulden und Wirkung</a>.</p>
+            <p><strong>Vertiefung:</strong> Zur zitierfähigen v3-Arbeitsfassung geht es im <a class="text-link" href="../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>. Der Bereich <a class="text-link" href="../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a> ordnet <a class="text-link" href="../begriffe/impact-of-investment/">IOI</a>, MMT, <a class="text-link" href="../begriffe/public-purpose/">Public Purpose</a> und <a class="text-link" href="../begriffe/functional-finance/">Functional Finance</a> als Anschlussstellen ein; die Begriffe stehen im <a class="text-link" href="../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster öffentliche Finanzen, Schulden und Wirkung</a>.</p>
           </div>
           <details class="toc-card no-print" aria-label="Inhaltsverzeichnis">
             <summary class="card-title">Inhaltsverzeichnis anzeigen</summary>
@@ -440,6 +441,7 @@ def render_area() -> str:
     core_terms = [
         ("Wirkungsfinanzpolitik", "wirkungsfinanzpolitik", "Wirkungsfinanzpolitik ist die wirkungsökonomische Steuerung öffentlicher Einnahmen, Ausgaben, Schulden, Investitionen und Steuern nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie."),
         ("Wirkungshaushalt", "wirkungshaushalt", "Ein Wirkungshaushalt ist ein öffentlicher Haushalt, der Einnahmen, Ausgaben, Kredite, Investitionen und Förderungen nach Wirkung strukturiert, bewertet und priorisiert."),
+        ("IOI", "impact-of-investment", "IOI misst, wie viel positive Netto-Wirkung pro investiertem Euro entsteht. Er zeigt Wirkungseffizienz und ergänzt den T-SROI, der Transformationswirkung bewertet."),
         ("Wirkschulden", "wirkschulden", "Wirkschulden sind öffentliche Schulden, die positive Netto-Wirkung erzeugen, künftige Risiken senken, Resilienz erhöhen oder spätere Folgekosten vermeiden."),
         ("Blindschulden", "blindschulden", "Blindschulden sind öffentliche Schulden, die finanzielle Bewegung erzeugen, aber keine ausreichend nachweisbare positive Zustandsveränderung bewirken."),
         ("Verlustschulden", "verlustschulden", "Verlustschulden sind öffentliche Schulden, die negative Netto-Wirkung erzeugen, künftige Schäden erhöhen oder destruktive Strukturen stabilisieren."),
@@ -462,6 +464,8 @@ def render_area() -> str:
         ("Wer entscheidet, was Wirkung ist?", "Nicht eine einzelne Person und nicht eine Regierung allein. Die WÖk braucht transparente Indikatoren, öffentliche Daten, wissenschaftliche Standards, demokratische Kontrolle und unabhängige Evaluation. Dafür ist der Wirkungsrat als Wächterinstitution vorgesehen."),
         ("Ist das technokratisch?", "Nur dann, wenn Messung Demokratie ersetzt. In der Wirkungsökonomie ersetzt Messung keine demokratische Entscheidung. Sie verbessert die Rückkopplung. Politik entscheidet weiterhin, aber sie muss sichtbarer machen, welche Wirkung ihre Entscheidungen erzeugen."),
         ("Was ist die wichtigste Aussage?", "Nicht Schulden belasten die Zukunft, sondern Schulden ohne Wirkung. Die größte Staatsschuld steht nicht immer im Haushalt. Sie kann in maroden Brücken, schlechter Bildung, Pflegekrisen, Klimaschäden, Sicherheitslücken oder demokratischem Vertrauensverlust liegen."),
+        ("Was ist der Unterschied zwischen IOI und T-SROI?", "Der IOI misst, wie viel positive Netto-Wirkung pro investiertem Euro entsteht. Er ist eine Kennzahl für Wirkungseffizienz. Der T-SROI misst, ob eine Investition darüber hinaus transformative Systemwirkung erzeugt, also Standards, Märkte, Infrastrukturen, Anreize oder Handlungspfade verändert. Kurz: IOI fragt, wie wirksam der Euro ist. T-SROI fragt, ob dieser Euro das System verändert."),
+        ("Entscheidet dann nur noch der höchste IOI?", "Nein. Der IOI ist wichtig, aber er darf nicht allein entscheiden. Öffentliche Finanzen müssen auch Grundrechte, Daseinsvorsorge, Wirkungsgrenzen, Nichtkompensation, langfristige Transformation, Datenqualität und demokratische Legitimation berücksichtigen. Ein hoher IOI darf schwere negative Wirkungen nicht überdecken."),
     ]
     faq_cards = "\n".join(
         f'          <article class="card"><h3 class="card-title">{esc(question)}</h3><p class="card-text">{esc(answer)}</p></article>'
@@ -478,7 +482,7 @@ def render_area() -> str:
     <meta name="search_description" content="Öffentliche Finanzen, Schulden und Staatshaushalt nach Wirkung: MMT als Anschluss, Public Purpose als Anspruch und positive Netto-Wirkung als Maßstab.">
     <meta name="search_section" content="Wirkungsfelder">
     <meta name="search_type" content="Bereich">
-    <meta name="search_tags" content="Wirkungsfinanzpolitik, Staat, Demokratie, Wirkungshaushalt, Staatsschulden, Schuldenbremse, Wirkschulden, Blindschulden, Verlustschulden, Zukunftsschulden, MMT, Public Purpose, Functional Finance, T-SROI, Wirkungsrat">
+    <meta name="search_tags" content="Wirkungsfinanzpolitik, Staat, Demokratie, Wirkungshaushalt, IOI, Impact of Investment, NWI, Haushaltsblindleistung, Staatsschulden, Schuldenbremse, Wirkschulden, Blindschulden, Verlustschulden, Zukunftsschulden, MMT, Public Purpose, Functional Finance, T-SROI, Wirkungsrat">
     <link rel="canonical" href="https://wirkungsoekonomie.de/wirkungsfelder/wirkungsfinanzpolitik/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
@@ -561,6 +565,25 @@ def render_area() -> str:
         </div>
       </section>
 
+      <section class="section" aria-labelledby="ioi">
+        <div class="section-header">
+          <p class="hero-kicker">Wirkung je Euro</p>
+          <h2 id="ioi">IOI: Wie viel Wirkung erzeugt ein öffentlicher Euro?</h2>
+          <p><a class="text-link" href="../../begriffe/impact-of-investment/">Impact-of-Investment (IOI)</a> ist die Wirkungseffizienz-Kennzahl der Wirkungsfinanzpolitik. Sie fragt nicht, wie viel finanzieller Gewinn entsteht, sondern wie viel <a class="text-link" href="../../begriffe/positive-netto-wirkung/">positive Netto-Wirkung</a> ein öffentlicher Euro erzeugt.</p>
+        </div>
+        <div class="callout">
+          <p class="hero-kicker">Arbeitsformel</p>
+          <h3>IOI = positive Netto-Wirkung / Investitionssumme</h3>
+          <p>Ein hoher IOI zeigt, dass öffentliche Mittel viel belegbare Wirkung auslösen. Ein niedriger oder negativer IOI macht sichtbar, wo Programme, Subventionen oder Kredite zur <a class="text-link" href="../../begriffe/haushaltsblindleistung/">Haushaltsblindleistung</a> werden können.</p>
+          <p>Der IOI ist dabei kein Autopilot. Er muss mit Wirkungsgrenzen, <a class="text-link" href="../../begriffe/nichtkompensation/">Nichtkompensation</a>, Realressourcen, Datenqualität, Daseinsvorsorge und demokratischer Legitimation zusammen gelesen werden.</p>
+        </div>
+        <div class="card-grid three">
+          <article class="card"><p class="card-kicker">IOI</p><h3 class="card-title">Wirkungseffizienz</h3><p class="card-text">Wie viel positive Netto-Wirkung entsteht pro investiertem Euro?</p></article>
+          <article class="card"><p class="card-kicker">T-SROI</p><h3 class="card-title">Transformationswirkung</h3><p class="card-text">Verändert die Investition Standards, Infrastrukturen, Märkte, Anreize oder Handlungspfade?</p><div class="portal-card-actions"><a class="text-link" href="../../werkzeuge/t-sroi/">T-SROI öffnen</a></div></article>
+          <article class="card"><p class="card-kicker">Schutzlinie</p><h3 class="card-title">Nicht allein entscheiden</h3><p class="card-text">Ein hoher IOI darf schwere negative Wirkungen, Grundrechtsrisiken oder rote Linien nicht überdecken.</p></article>
+        </div>
+      </section>
+
       <section class="section" aria-labelledby="kernbegriffe">
         <div class="section-header">
           <p class="hero-kicker">Kernbegriffe</p>
@@ -581,6 +604,7 @@ def render_area() -> str:
           <article class="card"><p class="card-kicker">Journal</p><h3 class="card-title">{esc(TITLE)}</h3><p class="card-text">Die Langform erklärt die Grundthese und ordnet MMT, Public Purpose, Functional Finance, Wirkungshaushalt und Schuldenbremse ein.</p><div class="portal-card-actions"><a class="text-link" href="../../blog/{ARTICLE_SLUG}.html">Artikel lesen</a></div></article>
           <article class="card"><p class="card-kicker">Arbeitspapier</p><h3 class="card-title">Von der Schuldenfrage zur Wirkungsfinanzpolitik</h3><p class="card-text">Zitierfähige Webfassung mit PDF aus dem WÖk-Publikationsstandard.</p><div class="portal-card-actions"><a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier öffnen</a></div></article>
           <article class="card"><p class="card-kicker">Glossar</p><h3 class="card-title">Öffentliche Finanzen, Schulden und Wirkung</h3><p class="card-text">Begriffsklärung für Wirkschulden, Blindschulden, Reparaturschulden, Wirkungsdefizit und Wirkungsdisziplin.</p><div class="portal-card-actions"><a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Begriffe öffnen</a></div></article>
+          <article class="card"><p class="card-kicker">Kennzahl</p><h3 class="card-title">IOI</h3><p class="card-text">Impact-of-Investment zeigt, wie viel positive Netto-Wirkung pro investiertem Euro entsteht.</p><div class="portal-card-actions"><a class="text-link" href="../../begriffe/impact-of-investment/">IOI öffnen</a></div></article>
           <article class="card"><p class="card-kicker">Werkzeug</p><h3 class="card-title">Wirkungshaushalt</h3><p class="card-text">Methode, um öffentliche Mittel nach Zustandsveränderung, Prävention und Resilienz zu steuern.</p><div class="portal-card-actions"><a class="text-link" href="../../werkzeuge/wirkungshaushalt/">Werkzeug ansehen</a></div></article>
           <article class="card"><p class="card-kicker">Anschlussbegriff</p><h3 class="card-title">MMT</h3><p class="card-text">MMT entkräftet den Privathaushaltsmythos. Wirkungsfinanzpolitik ergänzt die Frage nach positiver Netto-Wirkung.</p><div class="portal-card-actions"><a class="text-link" href="../../begriffe/mmt/">MMT öffnen</a></div></article>
           <article class="card"><p class="card-kicker">Anschlussbegriff</p><h3 class="card-title">Public Purpose</h3><p class="card-text">Public Purpose benennt den öffentlichen Zweck. Wirkungsfinanzpolitik macht ihn prüfbar.</p><div class="portal-card-actions"><a class="text-link" href="../../begriffe/public-purpose/">Public Purpose öffnen</a></div></article>
@@ -625,12 +649,12 @@ def render_glossary_cluster() -> str:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Öffentliche Finanzen, Schulden und Wirkung - Glossar der Wirkungsökonomie</title>
-    <meta name="description" content="Glossar-Cluster der Wirkungsfinanzpolitik: MMT, Public Purpose, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Präventionsschulden, Transformationsschulden und Zukunftsschulden.">
+    <meta name="description" content="Glossar-Cluster der Wirkungsfinanzpolitik: IOI, MMT, Public Purpose, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Präventionsschulden, Transformationsschulden und Zukunftsschulden.">
     <meta name="search_title" content="Öffentliche Finanzen, Schulden und Wirkung">
-    <meta name="search_description" content="Begriffe der Wirkungsfinanzpolitik: MMT, Public Purpose, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Präventionsschulden, Transformationsschulden und Zukunftsschulden.">
+    <meta name="search_description" content="Begriffe der Wirkungsfinanzpolitik: IOI, Impact of Investment, MMT, Public Purpose, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Präventionsschulden, Transformationsschulden und Zukunftsschulden.">
     <meta name="search_section" content="Glossar">
     <meta name="search_type" content="Glossar-Cluster">
-    <meta name="search_tags" content="Wirkungsfinanzpolitik, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, Präventionsschulden, Transformationsschulden, Zukunftsschulden, MMT, Public Purpose, Public Purpose Finance, Functional Finance, Realressourcengrenze, Inflationsgrenze">
+    <meta name="search_tags" content="Wirkungsfinanzpolitik, Wirkungshaushalt, IOI, Impact of Investment, positive Netto-Wirkung, T-SROI, Haushaltsblindleistung, Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, Präventionsschulden, Transformationsschulden, Zukunftsschulden, MMT, Public Purpose, Public Purpose Finance, Functional Finance, Realressourcengrenze, Inflationsgrenze">
     <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/oeffentliche-finanzen-schulden-wirkung/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
@@ -656,6 +680,7 @@ def render_glossary_cluster() -> str:
           <div><p class="section-eyebrow">Verknüpfungen</p><h2 id="related-terms-title">Verwandte Inhalte</h2></div>
           <div class="term-chip-row">
             <a class="term-chip" href="../../begriffe/wirkungshaushalt/">Wirkungshaushalt</a>
+            <a class="term-chip" href="../../begriffe/impact-of-investment/">Impact-of-Investment (IOI)</a>
             <a class="term-chip" href="../../begriffe/mmt/">MMT</a>
             <a class="term-chip" href="../../begriffe/public-purpose/">Public Purpose</a>
             <a class="term-chip" href="../../begriffe/public-purpose-finance/">Public Purpose Finance</a>
@@ -676,7 +701,7 @@ def render_glossary_cluster() -> str:
         </section>
         <section class="meta-box">
           <h2>Version und Schutzlinie</h2>
-          <p>Kategorie: Öffentliche Finanzen, Staat und Demokratie · Version: 2.0 MMT/Public-Purpose-Erweiterung · Stand: {esc(DATE_LABEL)}</p>
+          <p>Kategorie: Öffentliche Finanzen, Staat und Demokratie · Version: 3.0 IOI-Erweiterung · Stand: {esc(DATE_LABEL)}</p>
           <p>Die Begriffe sind konzeptionelle Arbeitsbegriffe der Wirkungsökonomie. Sie ersetzen keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung.</p>
         </section>
       </article>
@@ -731,7 +756,7 @@ def render_term_page(label: str, slug: str, definition: str) -> str:
     <meta name="search_description" content="{esc(definition)}">
     <meta name="search_section" content="Glossar">
     <meta name="search_type" content="Glossar-Begriff">
-    <meta name="search_tags" content="Wirkungsfinanzpolitik, öffentliche Finanzen, Staatsschulden, Wirkungshaushalt, MMT, Public Purpose, positive Netto-Wirkung">
+    <meta name="search_tags" content="Wirkungsfinanzpolitik, öffentliche Finanzen, Staatsschulden, Wirkungshaushalt, IOI, Impact of Investment, T-SROI, Haushaltsblindleistung, MMT, Public Purpose, positive Netto-Wirkung">
     <meta name="generator" content="import-wirkungsfinanzpolitik-journal">
     <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/{esc(slug)}/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
@@ -760,6 +785,7 @@ def render_term_page(label: str, slug: str, definition: str) -> str:
             <a class="term-chip" href="../../blog/{ARTICLE_SLUG}.html">Journal-Beitrag</a>
             <a class="term-chip" href="../oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>
             <a class="term-chip" href="../positive-netto-wirkung/">positive Netto-Wirkung</a>
+            <a class="term-chip" href="../impact-of-investment/">Impact-of-Investment (IOI)</a>
             <a class="term-chip" href="../wirkungshaushalt/">Wirkungshaushalt</a>
             <a class="term-chip" href="../../werkzeuge/t-sroi/">T-SROI</a>
             <a class="term-chip" href="../wirkungsrat/">Wirkungsrat</a>
@@ -767,7 +793,7 @@ def render_term_page(label: str, slug: str, definition: str) -> str:
         </section>
         <section class="meta-box">
           <h2>Version und Schutzlinie</h2>
-          <p>Kategorie: {esc(category)} · Version: 2.0 · Stand: {esc(DATE_LABEL)}</p>
+          <p>Kategorie: {esc(category)} · Version: 3.0 IOI-Erweiterung · Stand: {esc(DATE_LABEL)}</p>
           <p>Konzeptioneller Glossarbegriff der Wirkungsökonomie; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung.</p>
         </section>
       </article>
@@ -997,9 +1023,9 @@ def update_approved_corpus() -> None:
             "status": "published",
             "allowed_for_assistant": True,
             "source_type": "working_paper",
-            "terms": ["Wirkungsfinanzpolitik", "Staatsschulden", "Wirkungshaushalt", "Schuldenbremse", "Wirkschulden", "Blindschulden", "positive Netto-Wirkung", "MMT", "Public Purpose", "Public Purpose Finance", "Functional Finance"],
+            "terms": ["Wirkungsfinanzpolitik", "Staatsschulden", "Wirkungshaushalt", "Schuldenbremse", "Wirkschulden", "Blindschulden", "positive Netto-Wirkung", "IOI", "Impact of Investment", "T-SROI", "MMT", "Public Purpose", "Public Purpose Finance", "Functional Finance"],
             "last_checked": "2026-06-11",
-            "limitations": "Arbeitsfassung v2; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, Public Purpose als prüfbaren Wirkungsanspruch erläutern und Webfassung/PDF als zitierfähige Fassung nennen.",
+            "limitations": "Arbeitsfassung v3 mit IOI-Erweiterung; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, Public Purpose als prüfbaren Wirkungsanspruch erläutern, IOI nicht als alleinige Entscheidungskennzahl verwenden und Webfassung/PDF als zitierfähige Fassung nennen.",
         },
         {
             "source_id": "woek-wirkungsfinanzpolitik-journal-2026-06-11",
@@ -1008,9 +1034,9 @@ def update_approved_corpus() -> None:
             "status": "published",
             "allowed_for_assistant": True,
             "source_type": "journal_article",
-            "terms": ["Wirkungsfinanzpolitik", "Staatsschulden", "Wirkungshaushalt", "Wirkschulden", "Blindschulden", "positive Netto-Wirkung", "MMT", "Public Purpose", "Functional Finance"],
+            "terms": ["Wirkungsfinanzpolitik", "Staatsschulden", "Wirkungshaushalt", "Wirkschulden", "Blindschulden", "positive Netto-Wirkung", "IOI", "Impact of Investment", "T-SROI", "MMT", "Public Purpose", "Functional Finance"],
             "last_checked": "2026-06-11",
-            "limitations": "Journalistische Langform; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, nicht als Gegner. Bei Antworten Schutzlinie und Arbeitspapier als Vertiefung nennen.",
+            "limitations": "Journalistische Langform v3 mit IOI-Erweiterung; keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. MMT als Anschlussbegriff einordnen, nicht als Gegner. IOI als Wirkungseffizienz und T-SROI als Transformationswirkung erklären. Bei Antworten Schutzlinie und Arbeitspapier als Vertiefung nennen.",
         },
         {
             "source_id": "woek-wirkungsfinanzpolitik-wirkungsfeld-2026-06-11",
@@ -1019,7 +1045,7 @@ def update_approved_corpus() -> None:
             "status": "published",
             "allowed_for_assistant": True,
             "source_type": "website_page",
-            "terms": ["Wirkungsfinanzpolitik", "öffentliche Finanzen", "Wirkungshaushalt", "Schuldenbremse", "MMT", "Public Purpose", "Public Purpose Finance"],
+            "terms": ["Wirkungsfinanzpolitik", "öffentliche Finanzen", "Wirkungshaushalt", "IOI", "Impact of Investment", "T-SROI", "Schuldenbremse", "MMT", "Public Purpose", "Public Purpose Finance"],
             "last_checked": "2026-06-11",
             "limitations": "Konzeptionelle Bereichsseite; ersetzt keine demokratische, haushaltsrechtliche oder finanzielle Einzelfallprüfung.",
         },
@@ -1030,7 +1056,7 @@ def update_approved_corpus() -> None:
             "status": "published",
             "allowed_for_assistant": True,
             "source_type": "glossary_cluster",
-            "terms": ["Wirkschulden", "Blindschulden", "Verlustschulden", "Reparaturschulden", "Präventionsschulden", "Transformationsschulden", "Zukunftsschulden", "MMT", "Public Purpose", "Public Purpose Finance", "Functional Finance"],
+            "terms": ["Wirkschulden", "Blindschulden", "Verlustschulden", "Reparaturschulden", "Präventionsschulden", "Transformationsschulden", "Zukunftsschulden", "IOI", "Impact of Investment", "MMT", "Public Purpose", "Public Purpose Finance", "Functional Finance"],
             "last_checked": "2026-06-11",
             "limitations": "Begriffliche Arbeitsfassung; Begriffe müssen in konkreten Haushalts- oder Politikfällen mit Daten, Rechtsrahmen und demokratischer Entscheidung abgeglichen werden.",
         },
@@ -1049,7 +1075,8 @@ def update_llms() -> None:
     path = ROOT / "llms.txt"
     text = path.read_text(encoding="utf-8")
     old_line = "- Wirkungsfinanzpolitik: https://wirkungsoekonomie.de/dokumente/wirkungsfinanzpolitik/ und PDF https://wirkungsoekonomie.de/public/downloads/originals/wirkungsfinanzpolitik-aufsatz-woek.pdf"
-    new_line = "- Wirkungsfinanzpolitik: https://wirkungsoekonomie.de/dokumente/wirkungsfinanzpolitik/ und PDF https://wirkungsoekonomie.de/public/downloads/originals/wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public-purpose.pdf"
+    new_line = "- Wirkungsfinanzpolitik v3 mit IOI: https://wirkungsoekonomie.de/dokumente/wirkungsfinanzpolitik/ und PDF https://wirkungsoekonomie.de/public/downloads/originals/wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public-purpose.pdf"
+    text = re.sub(r"^- Wirkungsfinanzpolitik(?: v3 mit IOI)?: https://wirkungsoekonomie\.de/dokumente/wirkungsfinanzpolitik/.*\n?", "", text, flags=re.M)
     if old_line in text:
         text = text.replace(old_line, new_line)
     elif new_line not in text:
@@ -1061,6 +1088,7 @@ def update_llms() -> None:
         "- MMT als Anschlussbegriff der Wirkungsfinanzpolitik: https://wirkungsoekonomie.de/begriffe/mmt/",
         "- Public Purpose in der Wirkungsfinanzpolitik: https://wirkungsoekonomie.de/begriffe/public-purpose/",
         "- Public Purpose Finance: https://wirkungsoekonomie.de/begriffe/public-purpose-finance/",
+        "- IOI / Impact of Investment: https://wirkungsoekonomie.de/begriffe/impact-of-investment/",
     ]
     for line in additions:
         if line not in text:
@@ -1091,7 +1119,7 @@ def update_search_assets() -> None:
             "section": "Journal",
             "type": "Journal-Beitrag",
             "format": "Webartikel",
-            "tags": ["Wirkungsfinanzpolitik", "Staatsschulden", "Wirkungshaushalt", "Schuldenbremse", "Wirkschulden", "positive Netto-Wirkung", "MMT", "Public Purpose", "Functional Finance"],
+            "tags": ["Wirkungsfinanzpolitik", "Staatsschulden", "Wirkungshaushalt", "Schuldenbremse", "Wirkschulden", "positive Netto-Wirkung", "IOI", "Impact of Investment", "T-SROI", "Haushaltsblindleistung", "MMT", "Public Purpose", "Functional Finance"],
             "priority": 160,
             "file": ARTICLE_PATH,
         },
@@ -1103,31 +1131,31 @@ def update_search_assets() -> None:
             "section": "Journal",
             "type": "Dossier",
             "format": "Lesepfad",
-            "tags": ["Wirkungsfinanzpolitik", "Dossier", "Wirkungshaushalt"],
+            "tags": ["Wirkungsfinanzpolitik", "Dossier", "Wirkungshaushalt", "IOI", "Impact of Investment"],
             "priority": 140,
             "file": DOSSIER_PATH,
         },
         {
             "id": "wirkungsfeld-wirkungsfinanzpolitik-2026-06-11",
             "title": "Wirkungsfinanzpolitik",
-            "description": "Wirkungsfeld für öffentliche Finanzen nach Wirkung: MMT als Anschluss, Public Purpose als Anspruch und positive Netto-Wirkung als Maßstab.",
+            "description": "Wirkungsfeld für öffentliche Finanzen nach Wirkung: IOI als Wirkung je Euro, MMT als Anschluss, Public Purpose als Anspruch und positive Netto-Wirkung als Maßstab.",
             "url": "/wirkungsfelder/wirkungsfinanzpolitik/",
             "section": "Wirkungsfelder",
             "type": "Bereich",
             "format": "Website",
-            "tags": ["Wirkungsfinanzpolitik", "öffentliche Finanzen", "Staat", "Demokratie", "Wirkungshaushalt", "MMT", "Public Purpose", "Public Purpose Finance"],
+            "tags": ["Wirkungsfinanzpolitik", "öffentliche Finanzen", "Staat", "Demokratie", "Wirkungshaushalt", "IOI", "Impact of Investment", "T-SROI", "Haushaltsblindleistung", "MMT", "Public Purpose", "Public Purpose Finance"],
             "priority": 155,
             "file": AREA_PATH,
         },
         {
             "id": "glossarcluster-oeffentliche-finanzen-schulden-wirkung-2026-06-11",
             "title": "Öffentliche Finanzen, Schulden und Wirkung",
-            "description": "Glossar-Cluster der Wirkungsfinanzpolitik: MMT, Public Purpose, Wirkschulden, Blindschulden, Verlustschulden, Präventionsschulden, Transformationsschulden und Zukunftsschulden.",
+            "description": "Glossar-Cluster der Wirkungsfinanzpolitik: IOI, MMT, Public Purpose, Wirkschulden, Blindschulden, Verlustschulden, Präventionsschulden, Transformationsschulden und Zukunftsschulden.",
             "url": "/begriffe/oeffentliche-finanzen-schulden-wirkung/",
             "section": "Glossar",
             "type": "Glossar-Cluster",
             "format": "Begriffe",
-            "tags": ["Wirkschulden", "Blindschulden", "Reparaturschulden", "Zukunftsschulden", "MMT", "Public Purpose", "Public Purpose Finance", "Functional Finance"],
+            "tags": ["IOI", "Impact of Investment", "Wirkschulden", "Blindschulden", "Reparaturschulden", "Zukunftsschulden", "MMT", "Public Purpose", "Public Purpose Finance", "Functional Finance"],
             "priority": 135,
             "file": GLOSSARY_CLUSTER_PATH,
         },
@@ -1206,6 +1234,7 @@ def update_search_assets() -> None:
         "public-purpose",
         "public-purpose-finance",
         "functional-finance",
+        "impact-of-investment",
     }
     for label, slug, definition in TERM_DEFINITIONS:
         url = f"/begriffe/{slug}/"
