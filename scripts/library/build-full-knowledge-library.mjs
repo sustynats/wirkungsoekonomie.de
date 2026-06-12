@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 const ROOT = process.cwd();
 const REGISTRY_PATH = path.join(ROOT, "assets/data/library-version-registry.json");
 const BLOG_INDEX_PATH = path.join(ROOT, "assets/data/blog-index.json");
+const GLOSSARY_INDEX_PATH = path.join(ROOT, "begriffe/index.html");
 const OUT = path.join(ROOT, "bibliothek/index.html");
 const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
 
@@ -162,6 +163,19 @@ function typeIntro(type) {
     Präsentation: "Folien und Lern-/Vortragsmaterial."
   };
   return map[type] || "Dokumente und Onlinefassungen der Wirkungsökonomie.";
+}
+
+function formatCount(value) {
+  return new Intl.NumberFormat("de-DE").format(value);
+}
+
+function glossaryTermCount() {
+  if (fs.existsSync(GLOSSARY_INDEX_PATH)) {
+    const glossaryHtml = fs.readFileSync(GLOSSARY_INDEX_PATH, "utf8");
+    const renderedCards = (glossaryHtml.match(/data-glossary-card/g) || []).length;
+    if (renderedCards > 0) return renderedCards;
+  }
+  return 0;
 }
 
 function formatDate(value = "") {
@@ -322,8 +336,13 @@ const pathCards = registry.readingPaths.map((item) => `
     <ol>${item.links.map(([label, href]) => `<li><a href="${esc(siteHref(href))}">${esc(label)}</a></li>`).join("")}</ol>
   </article>`).join("\n");
 const typeCards = [...typeValues].sort((a, b) => a.localeCompare(b, "de")).map((type) => {
+  if (type === "Glossar") {
+    const count = glossaryTermCount();
+    const countLabel = count ? `${formatCount(count)} Begriffe` : "Glossar öffnen";
+    return `<a class="library-type-card library-type-card--link" href="../begriffe/" aria-label="Glossar mit ${esc(countLabel)} öffnen"><strong>${esc(type)}</strong><span>${esc(countLabel)}</span><p>${esc(typeIntro(type))}</p></a>`;
+  }
   const count = documents.filter((doc) => displayType(doc) === type).length;
-  return `<article class="library-type-card"><strong>${esc(type)}</strong><span>${count} Einträge</span><p>${esc(typeIntro(type))}</p></article>`;
+  return `<article class="library-type-card"><strong>${esc(type)}</strong><span>${formatCount(count)} Einträge</span><p>${esc(typeIntro(type))}</p></article>`;
 }).join("\n");
 const allCards = documents.map((doc, index) => card(doc, index, onlineByKey)).join("\n");
 

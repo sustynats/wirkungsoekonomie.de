@@ -174,7 +174,7 @@ function normalizePriority(entry) {
   return {
     ...entry,
     priority: Math.min(Number(entry.priority || 0), 8),
-    tags: [...(Array.isArray(entry.tags) ? entry.tags : []), "Suchindex nachrangig"],
+    tags: unique([...(Array.isArray(entry.tags) ? entry.tags : []), "Suchindex nachrangig"]),
   };
 }
 

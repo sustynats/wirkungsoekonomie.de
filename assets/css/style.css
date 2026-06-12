@@ -14169,6 +14169,18 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   margin-bottom: 0.35rem;
 }
 
+.library-type-card--link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.library-type-card--link:hover strong,
+.library-type-card--link:focus-visible strong {
+  color: var(--accent-color, #0f6b4f);
+  text-decoration: underline;
+}
+
 .library-type-card span,
 .library-result-count {
   color: var(--muted-color, #6b6458);
