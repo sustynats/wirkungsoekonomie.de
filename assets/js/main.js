@@ -2795,7 +2795,7 @@ const ToolSpecialBoxLayer = (() => {
     {
       pagePath: "/erleben/impact-controlling-rechner/",
       target: ".product-calculator-section",
-      text: "Heute wird Wirkung oft nachträglich berichtet. Das Tool zeigt, wie Scorecard, Netto-Wirkungs-Index und T-SROI Entscheidungen früher strukturieren können: vor Budget, Investition oder Korrektur."
+      text: "Heute wird Wirkung oft nachträglich berichtet. Das Tool zeigt, wie Scorecard, Netto-Wirkungs-Index, IOI und T-SROI Entscheidungen früher strukturieren können: vor Budget, Investition oder Korrektur."
     },
     {
       pagePath: "/erleben/medienwirkungscheck/",

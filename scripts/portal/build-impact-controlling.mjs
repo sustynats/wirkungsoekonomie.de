@@ -751,7 +751,7 @@ function dossierOverview() {
           </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/`, label: "Einzeldossier lesen" }))).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
         </div>
         ${sectionTitle("methodik-demo", "Methodik und Demo-Grenzen")}
-        <p>Der Impact-Controlling-Rechner startet als einfache Demo mit Scorecard-, NWI- und T-SROI-Modul. Er ist keine Prüfung, keine Beratung und keine amtliche Einstufung.</p>
+        <p>Der Impact-Controlling-Rechner startet als einfache Demo mit Scorecard-, NWI-, IOI- und T-SROI-Modul. Er ist keine Prüfung, keine Beratung und keine amtliche Einstufung.</p>
       </article>
     </section>
     <section class="section" aria-labelledby="methodenpapiere">
@@ -1143,7 +1143,7 @@ function workshopPages() {
         { title: "Impact Controlling", text: "Methodenbereich und Einstieg.", href: "werkzeuge/impact-controlling/" },
         { title: "Gesamtdossier Impact Controlling", text: "Methodenarchitektur, Rechenlogik, Einzeldossiers und Demo-Grenzen.", href: "werkzeuge/impact-controlling/dossier/" },
         { title: "Methodenpapiere Go 10", text: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI und T-SROI.", href: "werkzeuge/impact-controlling/methodenpapiere/" },
-        { title: "Impact-Controlling-Rechner", text: "Scorecard-, NWI- und T-SROI-Demo.", href: "erleben/impact-controlling-rechner/" },
+        { title: "Impact-Controlling-Rechner", text: "Scorecard-, NWI-, IOI- und T-SROI-Demo.", href: "erleben/impact-controlling-rechner/" },
         ...go10MethodPapers.map((paper) => ({ title: paper.title, text: paper.subtitle, href: `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/` })),
         ...dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/` })),
       ])}
