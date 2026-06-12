@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T08:27:57.271Z",
+  "generatedAt": "2026-06-12T10:14:12.025Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -98452,6 +98452,87 @@
       "glossaryOrderKey": "Gaskraftwerk",
       "dataStandardsGroup": "",
       "priority": 391
+    },
+    {
+      "id": "gebaeudeenergiegesetz",
+      "termId": "gebaeudeenergiegesetz",
+      "label": "Gebäudeenergiegesetz (GEG)",
+      "canonicalLabel": "Gebäudeenergiegesetz (GEG)",
+      "slug": "gebaeudeenergiegesetz",
+      "aliases": [
+        "Gebäudeenergiegesetz (GEG)",
+        "Gebäudeenergiegesetz",
+        "GEG",
+        "Heizungsgesetz",
+        "Gebäudemodernisierungsgesetz"
+      ],
+      "synonyms": [
+        "Gebäudeenergiegesetz (GEG)",
+        "Gebäudeenergiegesetz",
+        "GEG",
+        "Heizungsgesetz",
+        "Gebäudemodernisierungsgesetz"
+      ],
+      "shortDefinition": "Das Gebäudeenergiegesetz regelt energetische Anforderungen an Gebäude und Heizungen; wirkungsökonomisch wird es als Ordnungsrahmen für Wärme, Investitionen und Pfadentscheidungen geprüft.",
+      "hoverDefinition": "Das Gebäudeenergiegesetz regelt energetische Anforderungen an Gebäude und Heizungen; wirkungsökonomisch wird es als Ordnungsrahmen für Wärme, Investitionen und Pfadentscheidungen geprüft.",
+      "definition": "Das Gebäudeenergiegesetz (GEG) ist kein Förderprogramm, wirkt aber finanz- und investitionspolitisch, weil es Erwartungen, Investitionen, Heiztechnologien, Infrastrukturpfade und künftige Kosten beeinflusst.",
+      "longDefinition": "In der Wirkungsökonomie wird das GEG nicht nur als Rechtsnorm betrachtet, sondern als Wirkungsarchitektur: Es verändert Investitionsentscheidungen, CO2-Pfade, soziale Belastungen, Handwerkskapazitäten, Energieinfrastrukturen und Akzeptanz. Entscheidend ist nicht das Label einer Heizung, sondern die positive Netto-Wirkung im konkreten Gebäude- und Kommunalkontext.",
+      "woekRelation": "GEG-Debatten sollten nicht auf Wärmepumpe gegen Gas verkürzt werden. Zu prüfen sind Lebenszyklus, Versorgungssicherheit, soziale Wirkung, fossile Lock-ins, Förder-IOI und T-SROI.",
+      "usageNote": "GEG-Debatten sollten nicht auf Wärmepumpe gegen Gas verkürzt werden. Zu prüfen sind Lebenszyklus, Versorgungssicherheit, soziale Wirkung, fossile Lock-ins, Förder-IOI und T-SROI.",
+      "category": "Praxisbegriff",
+      "categories": [
+        "klima-energie",
+        "wirkungssteuerung",
+        "daten-standards-regularien"
+      ],
+      "theme": [
+        "Klima & Energie",
+        "Wirkungssteuerung",
+        "Öffentliche Debatte"
+      ],
+      "source": "Journal Technologieoffenheit oder Wirkungsoffenheit, 2026-06-12",
+      "sourceDocument": "Journal_Technologieoffenheit_Wirkungsoffenheit_GEG_Verbrenner_WOeK.docx",
+      "sourceSection": "Klima, Energie und öffentliche Wirkung",
+      "version": "2026-06-12",
+      "status": "published",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "relatedTerms": [
+        "waermewende",
+        "waermepumpe",
+        "technologieoffenheit",
+        "wirkungsoffenheit",
+        "positive-netto-wirkung",
+        "impact-of-investment",
+        "t-sroi",
+        "lock-in-effekt"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "doNotConfuseWith": [
+        "Förderprogramm",
+        "Wärmepumpe",
+        "Technologieoffenheit"
+      ],
+      "deprecatedUsage": [],
+      "examples": [
+        "Eine freie Heizungswahl ist wirkungsökonomisch nur dann überzeugend, wenn sie keine fossilen Lock-ins erzeugt und im Kontext bessere Netto-Wirkung belegt."
+      ],
+      "lastReviewed": "2026-06-12",
+      "lastUpdated": "2026-06-12",
+      "metaTitle": "Gebäudeenergiegesetz (GEG) | Glossar der Wirkungsökonomie",
+      "metaDescription": "Das Gebäudeenergiegesetz regelt energetische Anforderungen an Gebäude und Heizungen; wirkungsökonomisch wird es als Ordnungsrahmen für Wärme, Investitionen und Pfadentscheidungen geprüft.",
+      "glossaryOrderKey": "Gebäudeenergiegesetz (GEG)",
+      "statusNote": "",
+      "pageUrl": "/begriffe/gebaeudeenergiegesetz/",
+      "dataStandardsGroup": "",
+      "priority": 1568,
+      "relatedDocuments": []
     },
     {
       "id": "gebrauchsgueter",
@@ -315855,6 +315936,83 @@
       "deprecatedUsage": []
     },
     {
+      "id": "technologieoffenheit",
+      "termId": "technologieoffenheit",
+      "label": "Technologieoffenheit",
+      "canonicalLabel": "Technologieoffenheit",
+      "slug": "technologieoffenheit",
+      "aliases": [
+        "Technologieoffenheit",
+        "technologieoffen"
+      ],
+      "synonyms": [
+        "Technologieoffenheit",
+        "technologieoffen"
+      ],
+      "shortDefinition": "Technologieoffenheit bedeutet, unterschiedliche technische Wege zuzulassen, solange sie denselben Wirkungsmaßstab erfüllen.",
+      "hoverDefinition": "Technologieoffenheit bedeutet, unterschiedliche technische Wege zuzulassen, solange sie denselben Wirkungsmaßstab erfüllen.",
+      "definition": "Technologieoffenheit ist in der Wirkungsökonomie kein Freibrief für beliebige Pfade. Sie ist sinnvoll, wenn Technologien nach gleicher Zielgröße, Lebenszyklus, Verfügbarkeit, Nebenwirkungen und Rückkopplung geprüft werden.",
+      "longDefinition": "Technologieoffenheit lässt den Lösungsweg offen, bindet ihn aber an nachweisbare Wirkung. Ohne Wirkungsprüfung kann der Begriff zur rhetorischen Verzögerung werden: Er klingt frei, schützt aber bestehende Pfade, Lobbyinteressen oder hypothetische Zukunftstechnologien vor einer realen Vergleichsrechnung.",
+      "woekRelation": "In der WÖk ist Technologieoffenheit nur dann tragfähig, wenn sie mit Wirkungsprüfung, Nichtkompensation, Datenqualität und demokratischer Rückkopplung verbunden ist.",
+      "usageNote": "In der WÖk ist Technologieoffenheit nur dann tragfähig, wenn sie mit Wirkungsprüfung, Nichtkompensation, Datenqualität und demokratischer Rückkopplung verbunden ist.",
+      "category": "Steuerungsbegriff",
+      "categories": [
+        "klima-energie",
+        "wirkungssteuerung",
+        "daten-standards-regularien"
+      ],
+      "theme": [
+        "Klima & Energie",
+        "Wirkungssteuerung",
+        "Öffentliche Debatte"
+      ],
+      "source": "Journal Technologieoffenheit oder Wirkungsoffenheit, 2026-06-12",
+      "sourceDocument": "Journal_Technologieoffenheit_Wirkungsoffenheit_GEG_Verbrenner_WOeK.docx",
+      "sourceSection": "Klima, Energie und öffentliche Wirkung",
+      "version": "2026-06-12",
+      "status": "published",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "relatedTerms": [
+        "wirkungsoffenheit",
+        "wirkungspruefung",
+        "positive-netto-wirkung",
+        "lock-in-effekt",
+        "verbrenner-lock-in",
+        "waermewende",
+        "gebaeudeenergiegesetz",
+        "impact-of-investment",
+        "t-sroi"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "doNotConfuseWith": [
+        "Wirkungsoffenheit",
+        "Technikneutralität",
+        "Regelverwässerung",
+        "Lobbyformel"
+      ],
+      "deprecatedUsage": [],
+      "examples": [
+        "Technologieoffenheit kann Wärmepumpe, Fernwärme oder erneuerbare Gase zulassen, solange jede Option ihre Wirkung im konkreten Kontext belegt."
+      ],
+      "lastReviewed": "2026-06-12",
+      "lastUpdated": "2026-06-12",
+      "metaTitle": "Technologieoffenheit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Technologieoffenheit bedeutet, unterschiedliche technische Wege zuzulassen, solange sie denselben Wirkungsmaßstab erfüllen.",
+      "glossaryOrderKey": "Technologieoffenheit",
+      "statusNote": "",
+      "pageUrl": "/begriffe/technologieoffenheit/",
+      "dataStandardsGroup": "",
+      "priority": 1566,
+      "relatedDocuments": []
+    },
+    {
       "id": "sharing",
       "termId": "sharing",
       "label": "Teilen / Sharing",
@@ -333425,6 +333583,162 @@
       "glossaryOrderKey": "Verbrauchsgüter",
       "dataStandardsGroup": "",
       "priority": 1324
+    },
+    {
+      "id": "verbrenner-lock-in",
+      "termId": "verbrenner-lock-in",
+      "label": "Verbrenner-Lock-in",
+      "canonicalLabel": "Verbrenner-Lock-in",
+      "slug": "verbrenner-lock-in",
+      "aliases": [
+        "Verbrenner-Lock-in",
+        "Verbrennerlock-in",
+        "Verbrenner Lock-in",
+        "fossiler Fahrzeug-Lock-in"
+      ],
+      "synonyms": [
+        "Verbrenner-Lock-in",
+        "Verbrennerlock-in",
+        "Verbrenner Lock-in",
+        "fossiler Fahrzeug-Lock-in"
+      ],
+      "shortDefinition": "Verbrenner-Lock-in beschreibt die Festlegung auf Fahrzeuge, Infrastruktur oder Erwartungen, die den Umstieg auf wirksamere Mobilitätslösungen verzögert oder verteuert.",
+      "hoverDefinition": "Verbrenner-Lock-in beschreibt die Festlegung auf Fahrzeuge, Infrastruktur oder Erwartungen, die den Umstieg auf wirksamere Mobilitätslösungen verzögert oder verteuert.",
+      "definition": "Ein Verbrenner-Lock-in entsteht, wenn neue Fahrzeuge, Tankinfrastruktur, Kraftstoffversprechen, Geschäftsmodelle oder politische Erwartungen alte fossile Pfade stabilisieren, obwohl wirksamere Alternativen verfügbar werden.",
+      "longDefinition": "In der Wirkungsökonomie ist Verbrenner-Lock-in ein Wirkungsrisiko: Kurzfristige Flexibilität kann langfristig Emissionen, Kosten, Rohstoff- und Importabhängigkeiten, Infrastrukturfehlinvestitionen und spätere Reparaturkosten erhöhen.",
+      "woekRelation": "Der Begriff hilft, Technologieoffenheit von einer Verzögerungsstrategie zu unterscheiden. Er bewertet keine Menschen und keine Technik moralisch, sondern prüft Pfadabhängigkeiten und Folgekosten.",
+      "usageNote": "Der Begriff hilft, Technologieoffenheit von einer Verzögerungsstrategie zu unterscheiden. Er bewertet keine Menschen und keine Technik moralisch, sondern prüft Pfadabhängigkeiten und Folgekosten.",
+      "category": "Risikobegriff",
+      "categories": [
+        "klima-energie",
+        "wirkungssteuerung",
+        "daten-standards-regularien"
+      ],
+      "theme": [
+        "Klima & Energie",
+        "Wirkungssteuerung",
+        "Öffentliche Debatte"
+      ],
+      "source": "Journal Technologieoffenheit oder Wirkungsoffenheit, 2026-06-12",
+      "sourceDocument": "Journal_Technologieoffenheit_Wirkungsoffenheit_GEG_Verbrenner_WOeK.docx",
+      "sourceSection": "Klima, Energie und öffentliche Wirkung",
+      "version": "2026-06-12",
+      "status": "published",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "relatedTerms": [
+        "lock-in-effekt",
+        "pfadabhaengigkeit",
+        "technologieoffenheit",
+        "wirkungsoffenheit",
+        "verbrenneraus",
+        "e-fuel",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "doNotConfuseWith": [
+        "Technologieoffenheit",
+        "Bestandsflotte",
+        "E-Fuels"
+      ],
+      "deprecatedUsage": [],
+      "examples": [
+        "Wenn E-Fuels als allgemeines Rettungsversprechen für neue Pkw genutzt werden, kann daraus ein Verbrenner-Lock-in entstehen."
+      ],
+      "lastReviewed": "2026-06-12",
+      "lastUpdated": "2026-06-12",
+      "metaTitle": "Verbrenner-Lock-in | Glossar der Wirkungsökonomie",
+      "metaDescription": "Verbrenner-Lock-in beschreibt die Festlegung auf Fahrzeuge, Infrastruktur oder Erwartungen, die den Umstieg auf wirksamere Mobilitätslösungen verzögert oder verteuert.",
+      "glossaryOrderKey": "Verbrenner-Lock-in",
+      "statusNote": "",
+      "pageUrl": "/begriffe/verbrenner-lock-in/",
+      "dataStandardsGroup": "",
+      "priority": 1570,
+      "relatedDocuments": []
+    },
+    {
+      "id": "verbrenneraus",
+      "termId": "verbrenneraus",
+      "label": "Verbrenneraus",
+      "canonicalLabel": "Verbrenneraus",
+      "slug": "verbrenneraus",
+      "aliases": [
+        "Verbrenneraus",
+        "Verbrenner-Aus",
+        "Verbrennerverbot",
+        "CO2-Flottenstandard 2035"
+      ],
+      "synonyms": [
+        "Verbrenneraus",
+        "Verbrenner-Aus",
+        "Verbrennerverbot",
+        "CO2-Flottenstandard 2035"
+      ],
+      "shortDefinition": "Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.",
+      "hoverDefinition": "Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.",
+      "definition": "Das sogenannte Verbrenneraus ist in der WÖk keine moralische Bewertung eines Motors, sondern eine Wirkungsfrage: Welche Antriebstechnologie erzeugt unter realen Bedingungen die bessere Netto-Wirkung?",
+      "longDefinition": "Die Debatte um das Verbrenneraus wird oft als Freiheit gegen Verbot erzählt. Wirkungsökonomisch geht es um Emissionen, Energieeffizienz, Rohstoffe, Infrastruktur, Industriepfade, Nutzerkosten, Importabhängigkeiten und Transformationsrisiken über den Lebenszyklus.",
+      "woekRelation": "Verbrenneraus-Debatten sollten zwischen Bestand, Spezialanwendungen, E-Fuels, Neuzulassungen und Massenmarkt unterscheiden. Entscheidend ist Wirkung statt Symbol.",
+      "usageNote": "Verbrenneraus-Debatten sollten zwischen Bestand, Spezialanwendungen, E-Fuels, Neuzulassungen und Massenmarkt unterscheiden. Entscheidend ist Wirkung statt Symbol.",
+      "category": "Debattenbegriff",
+      "categories": [
+        "klima-energie",
+        "wirkungssteuerung",
+        "daten-standards-regularien"
+      ],
+      "theme": [
+        "Klima & Energie",
+        "Wirkungssteuerung",
+        "Öffentliche Debatte"
+      ],
+      "source": "Journal Technologieoffenheit oder Wirkungsoffenheit, 2026-06-12",
+      "sourceDocument": "Journal_Technologieoffenheit_Wirkungsoffenheit_GEG_Verbrenner_WOeK.docx",
+      "sourceSection": "Klima, Energie und öffentliche Wirkung",
+      "version": "2026-06-12",
+      "status": "published",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "relatedTerms": [
+        "technologieoffenheit",
+        "wirkungsoffenheit",
+        "verbrenner-lock-in",
+        "e-fuel",
+        "well-to-wheel",
+        "lebenszyklus-emissionen",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "doNotConfuseWith": [
+        "Elektroauto",
+        "E-Fuel",
+        "Mobilitätswende"
+      ],
+      "deprecatedUsage": [],
+      "examples": [
+        "E-Fuels können für Spezialfälle sinnvoll sein; daraus folgt nicht automatisch ein wirksamer Massenpfad für neue Pkw-Verbrenner."
+      ],
+      "lastReviewed": "2026-06-12",
+      "lastUpdated": "2026-06-12",
+      "metaTitle": "Verbrenneraus | Glossar der Wirkungsökonomie",
+      "metaDescription": "Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.",
+      "glossaryOrderKey": "Verbrenneraus",
+      "statusNote": "",
+      "pageUrl": "/begriffe/verbrenneraus/",
+      "dataStandardsGroup": "",
+      "priority": 1569,
+      "relatedDocuments": []
     },
     {
       "id": "verfassung",
@@ -369776,6 +370090,81 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": ""
+    },
+    {
+      "id": "wirkungsoffenheit",
+      "termId": "wirkungsoffenheit",
+      "label": "Wirkungsoffenheit",
+      "canonicalLabel": "Wirkungsoffenheit",
+      "slug": "wirkungsoffenheit",
+      "aliases": [
+        "Wirkungsoffenheit",
+        "wirkungsoffen"
+      ],
+      "synonyms": [
+        "Wirkungsoffenheit",
+        "wirkungsoffen"
+      ],
+      "shortDefinition": "Wirkungsoffenheit bedeutet: Der Weg bleibt offen, aber die positive Netto-Wirkung wird verbindlich geprüft.",
+      "hoverDefinition": "Wirkungsoffenheit bedeutet: Der Weg bleibt offen, aber die positive Netto-Wirkung wird verbindlich geprüft.",
+      "definition": "Wirkungsoffenheit verschiebt die Frage von „Welche Technologie ist erlaubt?“ zu „Welche Lösung erzeugt welche reale Wirkung?“. Sie ist technologieoffen im Weg, aber verbindlich im Wirkungsmaßstab.",
+      "longDefinition": "Wirkungsoffenheit verlangt gleiche Maßstäbe für unterschiedliche Lösungen: Lebenszyklus, Emissionen, Kosten, soziale Wirkung, Infrastruktur, Realverfügbarkeit, Pfadabhängigkeiten, Nebenwirkungen und Rückkopplung. Dadurch wird Offenheit nicht zur Unentschiedenheit, sondern zu einer besseren Prüfung von Alternativen.",
+      "woekRelation": "Der Begriff hilft, Technologieoffenheit von Wirkungsblindheit zu unterscheiden. Er passt besonders zu Wärme, Mobilität, Industriepolitik, Förderung und Regulierung.",
+      "usageNote": "Der Begriff hilft, Technologieoffenheit von Wirkungsblindheit zu unterscheiden. Er passt besonders zu Wärme, Mobilität, Industriepolitik, Förderung und Regulierung.",
+      "category": "Bewertungsbegriff",
+      "categories": [
+        "klima-energie",
+        "wirkungssteuerung",
+        "daten-standards-regularien"
+      ],
+      "theme": [
+        "Klima & Energie",
+        "Wirkungssteuerung",
+        "Öffentliche Debatte"
+      ],
+      "source": "Journal Technologieoffenheit oder Wirkungsoffenheit, 2026-06-12",
+      "sourceDocument": "Journal_Technologieoffenheit_Wirkungsoffenheit_GEG_Verbrenner_WOeK.docx",
+      "sourceSection": "Klima, Energie und öffentliche Wirkung",
+      "version": "2026-06-12",
+      "status": "published",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "conceptStatus": "WÖk-Arbeitsbegriff",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "relatedTerms": [
+        "technologieoffenheit",
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungspruefung",
+        "nichtkompensationsprinzip",
+        "impact-of-investment",
+        "t-sroi",
+        "reverse-merit-order"
+      ],
+      "officialSources": [],
+      "sourceLinks": [],
+      "doNotConfuseWith": [
+        "Technologieoffenheit",
+        "Beliebigkeit",
+        "reine Technikneutralität"
+      ],
+      "deprecatedUsage": [],
+      "examples": [
+        "In der Mobilitätswende kann Wirkungsoffenheit bedeuten: Batterie, E-Fuels oder Wasserstoff dürfen antreten, aber nur nach gleicher Lebenszyklus- und Infrastrukturprüfung."
+      ],
+      "lastReviewed": "2026-06-12",
+      "lastUpdated": "2026-06-12",
+      "metaTitle": "Wirkungsoffenheit | Glossar der Wirkungsökonomie",
+      "metaDescription": "Wirkungsoffenheit bedeutet: Der Weg bleibt offen, aber die positive Netto-Wirkung wird verbindlich geprüft.",
+      "glossaryOrderKey": "Wirkungsoffenheit",
+      "statusNote": "",
+      "pageUrl": "/begriffe/wirkungsoffenheit/",
+      "dataStandardsGroup": "",
+      "priority": 1567,
+      "relatedDocuments": []
     },
     {
       "id": "wirkungsoekonomie",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T08:27:57.455Z",
+  "generatedAt": "2026-06-12T10:14:12.207Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -11384,6 +11384,36 @@
       "relatedTerms": [
         "fossiles-kraftwerk",
         "flexibilitaet-energiesystem"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gebaeudeenergiegesetz": {
+      "label": "Gebäudeenergiegesetz (GEG)",
+      "slug": "gebaeudeenergiegesetz",
+      "url": "/begriffe/gebaeudeenergiegesetz/",
+      "hoverDefinition": "Das Gebäudeenergiegesetz regelt energetische Anforderungen an Gebäude und Heizungen; wirkungsökonomisch wird es als Ordnungsrahmen für Wärme, Investitionen und Pfadentscheidungen geprüft.",
+      "shortDefinition": "Das Gebäudeenergiegesetz regelt energetische Anforderungen an Gebäude und Heizungen; wirkungsökonomisch wird es als Ordnungsrahmen für Wärme, Investitionen und Pfadentscheidungen geprüft.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Gebäudeenergiegesetz (GEG)",
+        "Gebäudeenergiegesetz",
+        "GEG",
+        "Heizungsgesetz",
+        "Gebäudemodernisierungsgesetz"
+      ],
+      "relatedTerms": [
+        "waermewende",
+        "waermepumpe",
+        "technologieoffenheit",
+        "wirkungsoffenheit",
+        "positive-netto-wirkung",
+        "impact-of-investment",
+        "t-sroi",
+        "lock-in-effekt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35464,6 +35494,34 @@
       ],
       "relatedObjections": []
     },
+    "technologieoffenheit": {
+      "label": "Technologieoffenheit",
+      "slug": "technologieoffenheit",
+      "url": "/begriffe/technologieoffenheit/",
+      "hoverDefinition": "Technologieoffenheit bedeutet, unterschiedliche technische Wege zuzulassen, solange sie denselben Wirkungsmaßstab erfüllen.",
+      "shortDefinition": "Technologieoffenheit bedeutet, unterschiedliche technische Wege zuzulassen, solange sie denselben Wirkungsmaßstab erfüllen.",
+      "category": "Steuerungsbegriff",
+      "synonyms": [
+        "Technologieoffenheit",
+        "technologieoffen"
+      ],
+      "relatedTerms": [
+        "wirkungsoffenheit",
+        "wirkungspruefung",
+        "positive-netto-wirkung",
+        "lock-in-effekt",
+        "verbrenner-lock-in",
+        "waermewende",
+        "gebaeudeenergiegesetz",
+        "impact-of-investment",
+        "t-sroi"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "sharing": {
       "label": "Teilen / Sharing",
       "slug": "sharing",
@@ -37663,6 +37721,62 @@
         "biologischer-kreislauf",
         "biologischer-naehrstoff",
         "materialgesundheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "verbrenner-lock-in": {
+      "label": "Verbrenner-Lock-in",
+      "slug": "verbrenner-lock-in",
+      "url": "/begriffe/verbrenner-lock-in/",
+      "hoverDefinition": "Verbrenner-Lock-in beschreibt die Festlegung auf Fahrzeuge, Infrastruktur oder Erwartungen, die den Umstieg auf wirksamere Mobilitätslösungen verzögert oder verteuert.",
+      "shortDefinition": "Verbrenner-Lock-in beschreibt die Festlegung auf Fahrzeuge, Infrastruktur oder Erwartungen, die den Umstieg auf wirksamere Mobilitätslösungen verzögert oder verteuert.",
+      "category": "Risikobegriff",
+      "synonyms": [
+        "Verbrenner-Lock-in",
+        "Verbrennerlock-in",
+        "Verbrenner Lock-in",
+        "fossiler Fahrzeug-Lock-in"
+      ],
+      "relatedTerms": [
+        "lock-in-effekt",
+        "pfadabhaengigkeit",
+        "technologieoffenheit",
+        "wirkungsoffenheit",
+        "verbrenneraus",
+        "e-fuel",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "verbrenneraus": {
+      "label": "Verbrenneraus",
+      "slug": "verbrenneraus",
+      "url": "/begriffe/verbrenneraus/",
+      "hoverDefinition": "Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.",
+      "shortDefinition": "Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.",
+      "category": "Debattenbegriff",
+      "synonyms": [
+        "Verbrenneraus",
+        "Verbrenner-Aus",
+        "Verbrennerverbot",
+        "CO2-Flottenstandard 2035"
+      ],
+      "relatedTerms": [
+        "technologieoffenheit",
+        "wirkungsoffenheit",
+        "verbrenner-lock-in",
+        "e-fuel",
+        "well-to-wheel",
+        "lebenszyklus-emissionen",
+        "positive-netto-wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -43100,6 +43214,33 @@
         "interdependenz",
         "emergenz",
         "gregory-bateson"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wirkungsoffenheit": {
+      "label": "Wirkungsoffenheit",
+      "slug": "wirkungsoffenheit",
+      "url": "/begriffe/wirkungsoffenheit/",
+      "hoverDefinition": "Wirkungsoffenheit bedeutet: Der Weg bleibt offen, aber die positive Netto-Wirkung wird verbindlich geprüft.",
+      "shortDefinition": "Wirkungsoffenheit bedeutet: Der Weg bleibt offen, aber die positive Netto-Wirkung wird verbindlich geprüft.",
+      "category": "Bewertungsbegriff",
+      "synonyms": [
+        "Wirkungsoffenheit",
+        "wirkungsoffen"
+      ],
+      "relatedTerms": [
+        "technologieoffenheit",
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungspruefung",
+        "nichtkompensationsprinzip",
+        "impact-of-investment",
+        "t-sroi",
+        "reverse-merit-order"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-12T08:27:57.635Z",
-  "count": 1562,
+  "generatedAt": "2026-06-12T10:14:12.392Z",
+  "count": 1567,
   "letters": [
     "#",
     "A",
@@ -440,6 +440,7 @@
     ],
     "G": [
       "gaskraftwerk",
+      "gebaeudeenergiegesetz",
       "gebrauchsgueter",
       "gebrauchswert",
       "gedaechtniskonsolidierung",
@@ -1324,6 +1325,7 @@
       "technischer-kreislauf",
       "technischer-naehrstoff",
       "technokratie-ueberwachung-social-credit",
+      "technologieoffenheit",
       "sharing",
       "teilgabe",
       "teilhabe",
@@ -1403,6 +1405,8 @@
       "verantwortung-fuer-kommende-generationen",
       "verantwortungsverkuerzung",
       "verbrauchsgueter",
+      "verbrenner-lock-in",
+      "verbrenneraus",
       "verfassung",
       "verfassungsgerichtsbarkeit",
       "verfassungsmaessige-wirkungsarchitektur",
@@ -1552,6 +1556,7 @@
       "wirkungsmonitoring",
       "wirkungsnachweis",
       "wirkungsnetz",
+      "wirkungsoffenheit",
       "wirkungsoekonomie",
       "wirkungsoekonomie-im-alltag",
       "wirkungsoekonomische-kaufkraftlogik",
@@ -6474,6 +6479,21 @@
       "shortDefinition": "Ein Gaskraftwerk erzeugt Strom durch Verbrennung von Erdgas.",
       "aliases": [
         "Gaskraftwerk"
+      ]
+    },
+    {
+      "id": "gebaeudeenergiegesetz",
+      "label": "Gebäudeenergiegesetz (GEG)",
+      "slug": "gebaeudeenergiegesetz",
+      "url": "/begriffe/gebaeudeenergiegesetz/",
+      "category": "Praxisbegriff",
+      "shortDefinition": "Das Gebäudeenergiegesetz regelt energetische Anforderungen an Gebäude und Heizungen; wirkungsökonomisch wird es als Ordnungsrahmen für Wärme, Investitionen und Pfadentscheidungen geprüft.",
+      "aliases": [
+        "Gebäudeenergiegesetz (GEG)",
+        "Gebäudeenergiegesetz",
+        "GEG",
+        "Heizungsgesetz",
+        "Gebäudemodernisierungsgesetz"
       ]
     },
     {
@@ -17191,6 +17211,18 @@
       ]
     },
     {
+      "id": "technologieoffenheit",
+      "label": "Technologieoffenheit",
+      "slug": "technologieoffenheit",
+      "url": "/begriffe/technologieoffenheit/",
+      "category": "Steuerungsbegriff",
+      "shortDefinition": "Technologieoffenheit bedeutet, unterschiedliche technische Wege zuzulassen, solange sie denselben Wirkungsmaßstab erfüllen.",
+      "aliases": [
+        "Technologieoffenheit",
+        "technologieoffen"
+      ]
+    },
+    {
       "id": "sharing",
       "label": "Teilen / Sharing",
       "slug": "sharing",
@@ -18102,6 +18134,34 @@
         "Verbrauchsgüter",
         "Consumables",
         "Verbrauchsprodukte"
+      ]
+    },
+    {
+      "id": "verbrenner-lock-in",
+      "label": "Verbrenner-Lock-in",
+      "slug": "verbrenner-lock-in",
+      "url": "/begriffe/verbrenner-lock-in/",
+      "category": "Risikobegriff",
+      "shortDefinition": "Verbrenner-Lock-in beschreibt die Festlegung auf Fahrzeuge, Infrastruktur oder Erwartungen, die den Umstieg auf wirksamere Mobilitätslösungen verzögert oder verteuert.",
+      "aliases": [
+        "Verbrenner-Lock-in",
+        "Verbrennerlock-in",
+        "Verbrenner Lock-in",
+        "fossiler Fahrzeug-Lock-in"
+      ]
+    },
+    {
+      "id": "verbrenneraus",
+      "label": "Verbrenneraus",
+      "slug": "verbrenneraus",
+      "url": "/begriffe/verbrenneraus/",
+      "category": "Debattenbegriff",
+      "shortDefinition": "Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.",
+      "aliases": [
+        "Verbrenneraus",
+        "Verbrenner-Aus",
+        "Verbrennerverbot",
+        "CO2-Flottenstandard 2035"
       ]
     },
     {
@@ -20053,6 +20113,18 @@
         "Hierarchie",
         "Hierarchiekritik",
         "horizontale Kooperation"
+      ]
+    },
+    {
+      "id": "wirkungsoffenheit",
+      "label": "Wirkungsoffenheit",
+      "slug": "wirkungsoffenheit",
+      "url": "/begriffe/wirkungsoffenheit/",
+      "category": "Bewertungsbegriff",
+      "shortDefinition": "Wirkungsoffenheit bedeutet: Der Weg bleibt offen, aber die positive Netto-Wirkung wird verbindlich geprüft.",
+      "aliases": [
+        "Wirkungsoffenheit",
+        "wirkungsoffen"
       ]
     },
     {
