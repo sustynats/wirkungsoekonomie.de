@@ -4,7 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const DATA_FILE = path.join(ROOT, "data/wirkungsradar/redaktionelle-ueberarbeitung-17.json");
 const PUBLIC_BASE = "https://wirkungsoekonomie.de";
-const CSS_VERSION = "20260612-nav-restore";
+const CSS_VERSION = "20260612-journal-mobile-fix";
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));

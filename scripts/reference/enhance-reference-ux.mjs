@@ -251,7 +251,7 @@ function renderFooter(base) {
 }
 
 function scriptsFor(base) {
-  return `<script src="${base}assets/js/main.js?v=20260612-nav-restore"></script>
+  return `<script src="${base}assets/js/main.js?v=20260612-journal-mobile-fix"></script>
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 
@@ -268,7 +268,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-nav-restore">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-journal-mobile-fix">
   </head>
   <body class="${bodyClass}">
 ${renderHeader(base)}
@@ -931,7 +931,7 @@ function scriptTagForPage(file) {
 
 function ensureScripts(html, file) {
   let next = html
-    .replace(/style\.css\?v=[^"']+/g, "style.css?v=20260612-nav-restore")
+    .replace(/style\.css\?v=[^"']+/g, "style.css?v=20260612-journal-mobile-fix")
     .replace(/reference-reader\.js\?v=[^"']+/g, `reference-reader.js?v=${referenceReaderAssetVersion}`);
   if (next.includes("reference-reader.js")) return next;
   return next.replace("</body>", `    ${scriptTagForPage(file)}\n  </body>`);
@@ -1129,7 +1129,7 @@ function enhanceFullText() {
       </section>`
     : "";
   html = html
-    .replace(/style\.css\?v=[^"']+/g, "style.css?v=20260612-nav-restore")
+    .replace(/style\.css\?v=[^"']+/g, "style.css?v=20260612-journal-mobile-fix")
     .replace(/reference-reader\.js\?v=[^"']+/g, `reference-reader.js?v=${referenceReaderAssetVersion}`);
   html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
     const merged = [classes, "reference-fulltext"].join(" ").replace(/\s+/g, " ").trim();

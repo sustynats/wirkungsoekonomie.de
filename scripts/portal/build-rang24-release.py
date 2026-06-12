@@ -351,7 +351,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
     <meta property="og:description" content="{html.escape(subtitle[:190])}">
     <meta property="og:url" content="{canonical}">
     <link rel="icon" href="{href(prefix, 'assets/img/brand/favicon.svg')}" type="image/svg+xml">
-    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260612-nav-restore')}">
+    <link rel="stylesheet" href="{href(prefix, 'assets/css/style.css?v=20260612-journal-mobile-fix')}">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -366,7 +366,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
       {body}
     </main>
     <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Website 1.0</h2><div><a href="{href(prefix, 'fachbibliothek/')}">Fachbibliothek</a><a href="{href(prefix, 'downloads/')}">Downloads</a><a href="{href(prefix, 'tools/')}">Tools</a><a href="{href(prefix, 'website-1-0-release/')}">Releasebericht</a></div></div></div></footer>
-    <script src="{href(prefix, 'assets/js/main.js?v=20260612-nav-restore')}"></script>
+    <script src="{href(prefix, 'assets/js/main.js?v=20260612-journal-mobile-fix')}"></script>
     {extra_script}
   </body>
 </html>"""

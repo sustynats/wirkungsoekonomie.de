@@ -582,7 +582,7 @@ function buildRiskRegisterPage() {
     <meta name="twitter:title" content="Die SDGs als globales Risiko- und Resilienzregister">
     <meta name="twitter:description" content="Warum Nachhaltigkeit nicht der operative Kern ist und warum die Wirkungsökonomie mit SDG+ die fehlende Korrekturfähigkeit ergänzt.">
     <link rel="icon" href="../../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../../assets/css/style.css?v=20260612-nav-restore">
+    <link rel="stylesheet" href="../../../assets/css/style.css?v=20260612-journal-mobile-fix">
   </head>
   <body>
 ${header}
@@ -642,7 +642,7 @@ ${header}
       </section>
     </main>
 ${footer}
-    <script src="../../../assets/js/main.js?v=20260612-nav-restore"></script>
+    <script src="../../../assets/js/main.js?v=20260612-journal-mobile-fix"></script>
   </body>
 </html>
 `;

@@ -4136,6 +4136,38 @@ textarea {
   grid-column: 2;
 }
 
+@media (max-width: 720px) {
+  .journal-feature-card {
+    grid-template-columns: 1fr;
+    gap: 0.95rem;
+    padding: clamp(1.15rem, 5vw, 1.45rem);
+  }
+
+  .journal-feature-card .blog-image,
+  .journal-feature-card .blog-badge-row,
+  .journal-feature-card .card-kicker,
+  .journal-feature-card .card-title,
+  .journal-feature-card .card-text,
+  .journal-feature-card .journal-meta,
+  .journal-feature-card .journal-chip-list,
+  .journal-feature-card .text-link {
+    grid-column: 1;
+  }
+
+  .journal-feature-card .blog-image {
+    width: 100%;
+  }
+
+  .journal-feature-card .blog-image img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .journal-feature-card .card-title {
+    font-size: clamp(1.55rem, 8vw, 2.1rem);
+    line-height: 1.05;
+  }
+}
+
 .editorial-feature-card .text-link {
   margin-top: auto;
 }

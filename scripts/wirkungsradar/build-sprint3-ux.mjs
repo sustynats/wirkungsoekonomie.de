@@ -101,7 +101,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
     ${extraHead}
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-nav-restore">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-journal-mobile-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -111,7 +111,7 @@ function shell({ title, description, canonical, base = "../", main, extraHead = 
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Werkzeug statt Textarchiv.</h2><p>Quellen, Glossar, Status und Feedback machen die Einordnung nachvollziehbar. Die Wirkungsradar-Methode liefert den Prüfprozess im Hintergrund.</p><p><a class="text-link" href="${base}wirkungsradar/methode/">Wirkungsradar-Methode</a> · <a class="text-link" href="${base}wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a> · <a class="text-link" href="${base}wirkungsradar/narrativ-einreichen/">Narrativ einreichen</a></p></div><a class="btn btn-primary" href="${base}wirkungsradar/">Debatten-Kompass öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260612-nav-restore"></script>
+    <script src="${base}assets/js/main.js?v=20260612-journal-mobile-fix"></script>
   </body>
 </html>`;
 }

@@ -360,7 +360,7 @@ ${sourceItems}
     ${["AfD-Ideologie", "Meinungsfreiheit", "Folgenfreiheit", "Öffentliche Wirkung", "Konsequenzfähigkeit", "Wirkungsverantwortung", "Demokratie", "Arbeitsrecht", "Öffentlicher Wirkungsraum", "Wirkungsökonomie"].map((tag) => `<meta property="article:tag" content="${esc(tag)}">`).join("\n    ")}
     <link rel="alternate" type="application/rss+xml" title="Journal der Wirkungsökonomie" href="https://wirkungsoekonomie.de/feeds/journal.xml">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-nav-restore">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-journal-mobile-fix">
     <script type="application/ld+json">${JSON.stringify({
       "@context": "https://schema.org",
       "@type": "BlogPosting",
@@ -381,7 +381,7 @@ ${sourceItems}
 ${header}
 ${body}
 ${footer}
-    <script src="../../assets/js/main.js?v=20260612-nav-restore"></script>
+    <script src="../../assets/js/main.js?v=20260612-journal-mobile-fix"></script>
   </body>
 </html>
 `.replace(/[ \t]+$/gm, "");
