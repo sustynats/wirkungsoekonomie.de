@@ -1701,7 +1701,7 @@ function renderCardPageV2(card, mode = "live") {
   const pathSteps = (card.impactPathSteps || []).map((step) => `<li>${esc(cleanText(step))}</li>`).join("");
   const questions = (card.criticalQuestions || []).map((question) => `<li>${esc(question)}</li>`).join("");
   const guardLine = /migration|sozial|arbeit/i.test(`${card.category} ${card.title}`)
-    ? `<p class="radar-status-line"><span>Menschen sind keine Kostenstelle.</span><span>Geprüft wird der Frame, nicht Personen.</span></p>`
+    ? `        <p class="radar-status-line"><span>Menschen sind keine Kostenstelle.</span><span>Geprüft wird der Frame, nicht Personen.</span></p>`
     : "";
   const main = `
     <section class="hero radar-page-hero theme-hero">
@@ -1711,7 +1711,7 @@ function renderCardPageV2(card, mode = "live") {
         <h1 class="hero-title">${esc(card.title)}</h1>
         <p class="hero-subtitle">${esc(card.shortJudgement)}</p>
         <p class="radar-status-line"><span>Datenstand: ${DATA_STAND}</span></p>
-        ${guardLine}
+${guardLine}
       </div>
     </section>
     ${radarNav(base)}

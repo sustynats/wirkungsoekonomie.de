@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-12T05:52:03.254Z
-Resolved references: 826
-Warnings: 2626
+Erzeugt: 2026-06-12T06:30:17.644Z
+Resolved references: 827
+Warnings: 2628
 
 ## Warnungen
 
@@ -738,6 +738,7 @@ Warnings: 2626
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/#book-anchors -> SDG-/SDG+-Referenzrahmen: Anker im Online-Buch (Detailkonzept, Beschreibung: ja)
+- /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
