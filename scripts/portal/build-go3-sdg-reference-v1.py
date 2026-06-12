@@ -376,7 +376,7 @@ def page_template(doc: dict, body: str) -> str:
     <meta property="og:url" content="{canonical}">
     <meta property="og:image" content="{SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="{base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="{base}assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="{base}assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
     <header class="site-header">
@@ -400,7 +400,7 @@ def page_template(doc: dict, body: str) -> str:
     <footer class="site-footer">
       <p>© Wirkungsökonomie · Online-Volltext ist Hauptzugang, Downloads sind Export und Archiv.</p>
     </footer>
-    <script src="{base}assets/js/main.js?v=20260612-journal-mobile-fix" defer></script>
+    <script src="{base}assets/js/main.js?v=20260612-mobile-headline-fix" defer></script>
   </body>
 </html>
 """

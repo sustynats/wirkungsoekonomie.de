@@ -327,7 +327,7 @@ def render_article(body_html: str, toc: list[tuple[str, str]]) -> str:
     <meta property="article:tag" content="Functional Finance">
     <meta property="article:tag" content="Positive Netto-Wirkung">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-headline-fix">
     <script type="application/ld+json">
 {json.dumps(json_ld, ensure_ascii=False, indent=2)}
     </script>
@@ -394,7 +394,7 @@ def render_dossier() -> str:
     <meta property="og:url" content="https://wirkungsoekonomie.de/blog/dossiers/wirkungsfinanzpolitik.html">
     <meta property="og:image" content="{IMAGE_URL}">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
 {header}    <main data-pagefind-body>
@@ -488,7 +488,7 @@ def render_area() -> str:
     <meta property="og:url" content="https://wirkungsoekonomie.de/wirkungsfelder/wirkungsfinanzpolitik/">
     <meta property="og:image" content="{IMAGE_URL}">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
 {header}    <main data-pagefind-body>
@@ -633,7 +633,7 @@ def render_glossary_cluster() -> str:
     <meta name="search_tags" content="Wirkungsfinanzpolitik, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, Präventionsschulden, Transformationsschulden, Zukunftsschulden, MMT, Public Purpose, Public Purpose Finance, Functional Finance, Realressourcengrenze, Inflationsgrenze">
     <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/oeffentliche-finanzen-schulden-wirkung/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
 {header}    <main class="section" data-pagefind-body>
@@ -735,7 +735,7 @@ def render_term_page(label: str, slug: str, definition: str) -> str:
     <meta name="generator" content="import-wirkungsfinanzpolitik-journal">
     <link rel="canonical" href="https://wirkungsoekonomie.de/begriffe/{esc(slug)}/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
 {header}    <main class="section" data-pagefind-body>
@@ -807,7 +807,7 @@ def render_akademie() -> str:
     <meta name="search_type" content="Lernmodul">
     <link rel="canonical" href="https://wirkungsoekonomie.de/akademie/wirkungsfinanzpolitik/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
 {header}    <main data-pagefind-body>

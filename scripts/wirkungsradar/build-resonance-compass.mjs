@@ -159,7 +159,7 @@ function redirectPage({ title, canonical, destination, base = "../../" }) {
   <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="${esc(canonical)}">
   <meta http-equiv="refresh" content="0; url=${esc(destination)}">
-  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-journal-mobile-fix">
+  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-headline-fix">
 </head>
 <body>
   <main class="section"><article class="card"><p class="card-kicker">Weiterleitung</p><h1>${esc(title)}</h1><p>Diese Seite ist kanonisch unter <a class="text-link" href="${esc(destination)}">${esc(destination)}</a> erreichbar.</p></article></main>
@@ -177,7 +177,7 @@ function shell({ title, description, canonical, base = "../../", main, extraHead
   <title>${esc(title)} | Wirkungsökonomie</title>
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${esc(canonical)}">
-${optionalHead}  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-journal-mobile-fix">
+${optionalHead}  <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-headline-fix">
 </head>
 <body>
   <header class="site-header" data-search-exclude>
@@ -187,7 +187,7 @@ ${optionalHead}  <link rel="stylesheet" href="${base}assets/css/style.css?v=2026
   </header>
   <main>${main}</main>
   ${renderFooter(base)}
-  <script src="${base}assets/js/main.js?v=20260612-journal-mobile-fix"></script>
+  <script src="${base}assets/js/main.js?v=20260612-mobile-headline-fix"></script>
 </body>
 </html>`;
 }

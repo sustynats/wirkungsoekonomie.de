@@ -401,7 +401,7 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
     <meta name="search_description" content="{escape(description)}">
     <meta name="search_section" content="Hauptwerk">
     <meta name="search_type" content="{escape(search_type)}">
-    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
     <header class="site-header">
@@ -418,7 +418,7 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
       </nav>
     </header>
     {body}
-    <script src="{prefix}assets/js/main.js?v=20260612-journal-mobile-fix"></script>
+    <script src="{prefix}assets/js/main.js?v=20260612-mobile-headline-fix"></script>
     <script src="{prefix}assets/js/reference-reader.js?v=20260523-fulltext-reader"></script>
   </body>
 </html>

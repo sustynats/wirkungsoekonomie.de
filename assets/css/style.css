@@ -15495,10 +15495,10 @@ a.principle-card:hover,
   .workpaper-reader .article-shell h1 {
     max-width: 100%;
     font-size: var(--type-hero);
-    hyphens: manual;
+    hyphens: auto;
     line-height: 1.06;
-    overflow-wrap: normal;
-    word-break: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .hero-actions .btn,

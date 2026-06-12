@@ -562,7 +562,7 @@ function shell({ title, description, canonical, base, main }) {
     <meta name="wirkungsradar_data_stand" content="${DATA_STAND}">
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-journal-mobile-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-headline-fix">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -572,7 +572,7 @@ function shell({ title, description, canonical, base, main }) {
     </header>
     <main id="inhalt" data-pagefind-body>${main}</main>
     <footer class="footer" data-search-exclude><div class="footer-grid"><div><p class="hero-kicker">Debatten-Kompass</p><h2>Debattenkarten-Inventar gepflegt.</h2><p>Dieses Paket ist als Debattenkarte und Detailseite veröffentlicht. Quellen und Fachstand werden im Inventar nachgeführt.</p></div><a class="btn btn-primary" href="${base}wirkungsradar/status/">Status öffnen</a></div></footer>
-    <script src="${base}assets/js/main.js?v=20260612-journal-mobile-fix"></script>
+    <script src="${base}assets/js/main.js?v=20260612-mobile-headline-fix"></script>
   </body>
 </html>`;
 }
