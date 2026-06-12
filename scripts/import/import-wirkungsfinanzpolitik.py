@@ -428,7 +428,7 @@ def render_document_page(intro: list[dict], body_html: str, toc: list[tuple[str,
     <meta name="search_section" content="Dokumente">
     <meta name="search_type" content="Arbeitspapier">
     <meta name="search_tags" content="Wirkungsfinanzpolitik, Staatsschulden, Wirkungshaushalt, Schuldenbremse, MMT, Functional Finance, Public Purpose, öffentliche Finanzen">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260531-mobile-reference-reader">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-shell-audio-fix">
   </head>
   <body class="reference-ux-page">
 {header}    <main class="reference-work reference-reader workpaper-reader" data-pagefind-body>
@@ -507,7 +507,7 @@ def render_library_page(pdf_hash: str) -> str:
     <meta name="search_description" content="{esc(DESCRIPTION)}">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260525-tool-explainer-final2">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-shell-audio-fix">
   </head>
   <body>
 {header}    <main data-pagefind-body>

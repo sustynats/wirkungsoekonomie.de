@@ -1880,6 +1880,40 @@ h4 {
   text-overflow: ellipsis;
 }
 
+.site-utility-nav {
+  display: none;
+}
+
+.site-utility-link,
+.site-nav-utility a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.45rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  color: var(--navy);
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.site-utility-link:hover,
+.site-utility-link:focus-visible,
+.site-nav-utility a:hover,
+.site-nav-utility a:focus-visible {
+  background: rgba(47, 125, 92, 0.08);
+  color: var(--green);
+}
+
+.site-nav-utility {
+  display: grid;
+  gap: 0.15rem;
+  margin-top: 0.5rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(11, 16, 32, 0.08);
+}
+
 .site-nav,
 .mobile-nav {
   position: absolute;
@@ -16333,5 +16367,231 @@ body[data-reader-mode] .workpaper-reader.reference-reader {
   .portal-document-layout {
     grid-template-columns: minmax(0, var(--content-readable));
     justify-content: center;
+  }
+}
+
+/* Restored public shell guardrail: keep the established quick links visible and
+   keep the hamburger menu as an explicit overlay panel on every viewport. */
+body .site-header {
+  max-width: 100%;
+  overflow: visible;
+}
+
+body .site-header .site-utility-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+}
+
+body .site-header .site-utility-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.45rem;
+  padding: 0.58rem 0.78rem;
+  border: 1px solid rgba(12, 18, 34, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--navy);
+  font-size: 0.88rem;
+  font-weight: 850;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+body .site-header .site-utility-link:hover,
+body .site-header .site-utility-link:focus-visible,
+body .site-header .site-utility-link.active,
+body .site-header .site-utility-link[aria-current="page"] {
+  border-color: rgba(47, 125, 92, 0.45);
+  color: var(--green);
+  outline: none;
+}
+
+body .site-header .site-nav-utility {
+  display: grid;
+  gap: 0.15rem;
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
+}
+
+body .site-header .site-nav-utility::before {
+  content: "Schnellzugriffe";
+  padding: 0.25rem 0.8rem 0.4rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+body .site-header .nav-toggle {
+  position: relative;
+  inset: auto;
+  z-index: 3200;
+  display: inline-flex !important;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+  border: 1.5px solid rgba(11, 16, 32, 0.82);
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(11, 16, 32, 0.14);
+}
+
+body .site-header .nav-toggle-icon {
+  display: block;
+  color: var(--navy);
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+body .site-header .site-nav {
+  position: fixed;
+  top: 4.8rem;
+  right: var(--space-gutter);
+  left: auto;
+  z-index: 3100;
+  display: none !important;
+  grid-template-columns: 1fr;
+  width: min(22rem, calc(100vw - (2 * var(--space-gutter))));
+  max-height: min(70vh, 36rem);
+  overflow: auto;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+body .site-header .site-nav.open {
+  display: grid !important;
+}
+
+body .site-header .site-nav a,
+body .site-header .site-nav .nav-more summary {
+  display: block;
+  min-height: 2.75rem;
+  padding: 0.75rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.94rem;
+  line-height: 1.15;
+}
+
+body .site-header .site-nav a::after {
+  content: none;
+}
+
+body .hero-audio {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 46rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(47, 125, 92, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.92);
+  box-shadow: 0 14px 32px rgba(11, 16, 32, 0.06);
+}
+
+body .audio-label {
+  display: block;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+body .hero-audio audio {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+body .audio-transcript,
+body .audio-transcript-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+body .audio-transcript {
+  margin: 0;
+}
+
+body .audio-transcript summary {
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+body .audio-transcript p,
+body .audio-transcript-note {
+  margin: 0.6rem 0 0;
+}
+
+@media (max-width: 720px) {
+  body .site-header {
+    gap: 0.55rem;
+  }
+
+  body .site-header .brand {
+    max-width: calc(100vw - 10rem);
+  }
+
+  body .site-header .site-utility-nav {
+    gap: 0.35rem;
+    margin-left: auto;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link {
+    width: 2.45rem;
+    min-width: 2.45rem;
+    padding: 0;
+    font-size: 0;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link--suche::before {
+    content: "⌕";
+    font-size: 1.05rem;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link--woek-ki {
+    display: none;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link--mein-wirkungsraum {
+    width: auto;
+    min-width: 3.1rem;
+    padding: 0 0.6rem;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link--mein-wirkungsraum::before {
+    content: "Raum";
+    font-size: 0.82rem;
+  }
+
+  body .site-header .site-nav {
+    right: var(--space-gutter);
+    left: var(--space-gutter);
+    width: auto;
+  }
+
+  body .site-header .site-nav-utility .site-utility-link {
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.75rem 0.8rem;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    font-size: 0.94rem;
   }
 }

@@ -1148,13 +1148,13 @@ function shell({ title, description, canonical, base, main, searchType = "Debatt
     <meta name="search_type" content="${esc(searchType)}">
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-shell-audio-fix">
   </head>
   <body>
 ${siteHeader(base)}
     <main id="inhalt" data-pagefind-body>${main}</main>
 ${siteFooter(base)}
-    <script src="${base}assets/js/main.js?v=20260606-main-cache-fix"></script>
+    <script src="${base}assets/js/main.js?v=20260612-shell-audio-fix"></script>
   </body>
 </html>`;
 }
@@ -1171,7 +1171,7 @@ function redirectShell({ title, description, canonical, target, base }) {
     <link rel="canonical" href="${esc(canonical)}">
     <meta http-equiv="refresh" content="0; url=${esc(target)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260606-nav-cache-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-shell-audio-fix">
   </head>
   <body>
     <main class="section" data-search-exclude>

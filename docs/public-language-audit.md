@@ -1,6 +1,6 @@
 # Public Language Audit
 
-Stand: 2026-06-11T23:37:04.017Z
+Stand: 2026-06-12T00:17:01.147Z
 
 ## Zusammenfassung
 
