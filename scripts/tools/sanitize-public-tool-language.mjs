@@ -110,6 +110,8 @@ function ctaLabelForHref(href) {
   if (/\/?wirkungsradar\/?($|#|\?)/i.test(value)) return "Debatten-Kompass öffnen";
   if (/(^|\/)kompass\.html($|#|\?)/i.test(value)) return "WÖk-Kompass öffnen";
   if (/\/akademie/i.test(value)) return "Lernpfad ansehen";
+  if (/\/dokumente\/wirkungsfinanzpolitik\/?($|#|\?)/i.test(value)) return "Arbeitspapier öffnen";
+  if (/\/dokumente\//i.test(value)) return "Dokument öffnen";
   if (/\/verstehen\/|\/modell\.html|\/referenz\//i.test(value)) return "Vertiefung lesen";
   if (/\/werkstatt\/|\/fachbibliothek\/|\/downloads/i.test(value)) return "Arbeitsmaterial ansehen";
   return "Mehr erfahren";

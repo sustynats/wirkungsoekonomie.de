@@ -1083,6 +1083,8 @@ function enhanceChapter(chapter, chapters) {
 function enhanceDocument(file) {
   let html = stripUxMarkers(read(file));
   const title = cleanTitle(html.match(/<h1[^>]*>(.*?)<\/h1>/is)?.[1] || path.basename(path.dirname(file)));
+  const hasReaderTools = /class="[^"]*\bdocument-reader-tools\b[^"]*"/.test(html);
+  const hasContextRail = /class="[^"]*\breference-context-rail\b[^"]*"/.test(html);
   const headings = [...html.matchAll(/<h2\b([^>]*)>(.*?)<\/h2>/gis)]
     .map((match) => ({ id: match[1].match(/\sid=["']([^"']+)["']/i)?.[1] || "", title: cleanTitle(match[2]) }))
     .filter((item) => item.id && item.title)
@@ -1092,18 +1094,22 @@ function enhanceDocument(file) {
     if (classes.includes("workpaper-reader")) return match;
     return `<main class="${uniqueClasses(classes, "workpaper-reader reference-reader")}" data-reference-reader${cleanMainRest(rest, "data-reference-reader")}>`;
   });
-  html = html.replace(/(<h1\b[\s\S]*?<\/h1>)/, `$1
+  if (!hasReaderTools) {
+    html = html.replace(/(<h1\b[\s\S]*?<\/h1>)/, `$1
         <!-- reference-ux:start --><div class="document-reader-tools">
           <a class="btn btn-secondary" href="../">Dokumentenbibliothek</a>
           <a class="btn btn-secondary" href="../../referenz/">Referenzportal</a>
           <a class="btn btn-secondary" href="../../begriffe/">Glossar</a>
           <button class="btn btn-secondary" type="button" data-print-page>Drucken</button>
         </div><!-- reference-ux:end -->`);
+  }
   const toc = headings.length
     ? `<aside class="document-mini-map"><h2>Inhalt</h2>${headings.map((heading) => `<a href="#${heading.id}">${esc(heading.title)}</a>`).join("")}</aside>`
     : "";
-  html = html.replace(/(<article class="article-shell">)/, `$1
+  if (!hasContextRail && toc) {
+    html = html.replace(/(<article class="article-shell">)/, `$1
         <!-- reference-ux:start -->${toc}<!-- reference-ux:end -->`);
+  }
   html = ensureScripts(html, file);
   write(file, html);
 }

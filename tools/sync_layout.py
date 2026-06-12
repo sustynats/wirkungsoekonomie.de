@@ -13,7 +13,7 @@ SITE_ROOT = Path(__file__).resolve().parents[1]
 NAVIGATION = json.loads((SITE_ROOT / "assets/data/navigation.json").read_text(encoding="utf-8"))
 HEADER_TEMPLATE = (SITE_ROOT / "templates/header.html").read_text(encoding="utf-8")
 FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-8")
-SYNC_EXCLUDED_DIRS = {".git", ".codex-backup", "node_modules", ".next", ".vercel", "__pycache__"}
+SYNC_EXCLUDED_DIRS = {".git", ".codex-backup", "_site", "node_modules", ".next", ".vercel", "__pycache__"}
 HEADER_UTILITY_LABELS = {"Suche", "WÖk-KI", "Mein Wirkungsraum"}
 
 
