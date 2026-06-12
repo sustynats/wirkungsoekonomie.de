@@ -637,12 +637,62 @@ def render_area() -> str:
 """
 
 
+def ordered_cluster_terms() -> list[tuple[str, str, str]]:
+    preferred = [
+        "wirkungsfinanzpolitik",
+        "wirkungshaushalt",
+        "wirkungspruefung-oeffentlicher-mittel",
+        "impact-of-investment",
+        "oeffentlicher-t-sroi",
+        "wirkschulden",
+        "praeventionsschulden",
+        "transformationsschulden",
+        "blindschulden",
+        "verlustschulden",
+        "reparaturschulden",
+        "zukunftsschulden",
+        "nicht-finanzielle-staatsschulden",
+        "unterlassungskosten",
+        "wirkungsdisziplin",
+        "public-purpose",
+        "mmt",
+        "functional-finance",
+        "realressourcengrenze",
+        "inflationsgrenze",
+    ]
+    by_slug = {slug: (label, slug, definition) for label, slug, definition in TERM_DEFINITIONS}
+    ordered = [by_slug[slug] for slug in preferred if slug in by_slug]
+    seen = {slug for _, slug, _ in ordered}
+    ordered.extend(item for item in TERM_DEFINITIONS if item[1] not in seen)
+    return ordered
+
+
 def render_glossary_cluster() -> str:
     header, footer = extract_shell(2)
     term_cards = "\n".join(
         f'          <section class="term-section-card"><p class="section-eyebrow">Begriff</p><h2><a class="text-link" href="../../begriffe/{esc(slug)}/">{esc(term)}</a></h2><p>{esc(definition)}</p></section>'
-        for term, slug, definition in TERM_DEFINITIONS
+        for term, slug, definition in ordered_cluster_terms()
     )
+    debt_table = """
+        <section class="term-summary-card" aria-labelledby="debt-classes">
+          <p class="section-eyebrow">Schuldenklassen</p>
+          <h2 id="debt-classes">Schuldenklassen im Vergleich</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Schuldenklasse</th><th>Kernfrage</th><th>Wirkung</th></tr></thead>
+              <tbody>
+                <tr><td><a class="text-link" href="../../begriffe/wirkschulden/">Wirkschulden</a></td><td>Verbessert die Finanzierung reale Zustände?</td><td>positive Netto-Wirkung, Resilienz, vermiedene Folgekosten</td></tr>
+                <tr><td><a class="text-link" href="../../begriffe/praeventionsschulden/">Präventionsschulden</a></td><td>Verhindert sie absehbare Schäden?</td><td>Risikosenkung vor Eintritt des Schadens</td></tr>
+                <tr><td><a class="text-link" href="../../begriffe/transformationsschulden/">Transformationsschulden</a></td><td>Verändert sie Pfade, Standards oder Infrastrukturen?</td><td>strukturelle Zukunftsfähigkeit</td></tr>
+                <tr><td><a class="text-link" href="../../begriffe/blindschulden/">Blindschulden</a></td><td>Bleibt die Wirkung unklar?</td><td>Mittelabfluss ohne belegbare Zustandsveränderung</td></tr>
+                <tr><td><a class="text-link" href="../../begriffe/verlustschulden/">Verlustschulden</a></td><td>Erzeugt sie negative Netto-Wirkung?</td><td>Schäden, Pfadabhängigkeiten, künftige Lasten</td></tr>
+                <tr><td><a class="text-link" href="../../begriffe/reparaturschulden/">Reparaturschulden</a></td><td>Muss Vergangenes repariert werden?</td><td>späte Schadensbehebung statt früher Prävention</td></tr>
+                <tr><td><a class="text-link" href="../../begriffe/zukunftsschulden/">Zukunftsschulden</a></td><td>Welche Lasten verschieben wir?</td><td>finanzielle und nicht-finanzielle Zukunftslasten</td></tr>
+                <tr><td><a class="text-link" href="../../begriffe/nicht-finanzielle-staatsschulden/">Nicht-finanzielle Staatsschulden</a></td><td>Welche Last steht nicht im Haushalt?</td><td>ökologische, soziale, infrastrukturelle und demokratische Schäden</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>"""
     return f"""<!doctype html>
 <html lang="de">
   <head>
@@ -673,6 +723,7 @@ def render_glossary_cluster() -> str:
           <h2 id="cluster-summary">Auf einen Blick</h2>
           <p>Nicht jede öffentliche Schuld ist gleich. Entscheidend ist, ob Finanzierung Zukunft entlastet, Schäden vermeidet, Resilienz stärkt und demokratisch korrigierbar bleibt. MMT ist dabei ein wichtiger Anschluss gegen Schuldenmythen; Public Purpose benennt den Anspruch, den die Wirkungsökonomie als positive Netto-Wirkung prüfbar macht.</p>
         </section>
+{debt_table}
         <div class="term-section-grid">
 {term_cards}
         </div>

@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-12T06:30:17.644Z
+Erzeugt: 2026-06-12T07:48:02.087Z
 Resolved references: 827
-Warnings: 2628
+Warnings: 2638
 
 ## Warnungen
 
@@ -254,6 +254,8 @@ Warnings: 2628
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Arbeitspapier Wirkungseinkommensteuer - Titel aus Slug erzeugt
 - [unresolved-reference] Arbeitspapier Wirkungseinkommensteuer - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Wirkungsfinanzpolitik v3 MMT Public Purpose IOI - Titel aus Slug erzeugt
+- [unresolved-reference] Wirkungsfinanzpolitik v3 MMT Public Purpose IOI - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -474,8 +476,6 @@ Warnings: 2628
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt

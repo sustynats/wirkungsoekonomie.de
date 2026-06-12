@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-12T07:20:52.526Z",
-  "count": 1468,
+  "generatedAt": "2026-06-12T07:48:01.234Z",
+  "count": 1473,
   "letters": [
     "#",
     "A",
@@ -157,6 +157,7 @@
       "blauer-wasserstoff",
       "blei-saeure-batterie",
       "blindleistung",
+      "blindschulden",
       "brennstoffkette",
       "bundesregierung",
       "buergerbeteiligung",
@@ -1078,6 +1079,7 @@
       "rent-seeking",
       "rentenfinanzierung",
       "reparatur",
+      "reparaturschulden",
       "reparierbarkeit",
       "reparierbarkeit-recht-auf-reparatur",
       "repowering",
@@ -1364,6 +1366,7 @@
       "verhaeltnismaessigkeit-nach-wirkung",
       "verlustaversion",
       "verlustleistung",
+      "verlustschulden",
       "vermeidene-schaeden-folgekosten",
       "verschraenkung",
       "versicherbarkeit",
@@ -1437,6 +1440,7 @@
       "wirkpfad",
       "wirksames-management",
       "wirksamkeit",
+      "wirkschulden",
       "wirkstoff",
       "wirkung",
       "wirkung-als-rechtsprinzip",
@@ -1465,6 +1469,7 @@
       "wirkungseinkommensteuer",
       "wirkungsempfaenger",
       "wirkungsethik",
+      "wirkungsfinanzpolitik",
       "wirkungsfolgenabschaetzung",
       "wirkungsfonds",
       "wirkungsfreiheit",
@@ -3009,6 +3014,19 @@
         "blinder Aufwand",
         "Compliance ohne Rückkopplung",
         "Blind Performance"
+      ]
+    },
+    {
+      "id": "blindschulden",
+      "label": "Blindschulden",
+      "slug": "blindschulden",
+      "url": "/begriffe/blindschulden/",
+      "category": "Wirkungsfinanzpolitik",
+      "shortDefinition": "Blindschulden bewegen öffentliches Geld, erzeugen aber keine ausreichend nachweisbare positive Zustandsveränderung.",
+      "aliases": [
+        "Blindschulden",
+        "blinde Schulden",
+        "Schulden ohne nachweisbare Wirkung"
       ]
     },
     {
@@ -14092,6 +14110,19 @@
       ]
     },
     {
+      "id": "reparaturschulden",
+      "label": "Reparaturschulden",
+      "slug": "reparaturschulden",
+      "url": "/begriffe/reparaturschulden/",
+      "category": "Wirkungsfinanzpolitik",
+      "shortDefinition": "Reparaturschulden werden nötig, um Schäden zu beheben, die durch frühere Unterlassung, Fehlsteuerung oder negative Wirkung entstanden sind.",
+      "aliases": [
+        "Reparaturschulden",
+        "reparierende Schulden",
+        "Schulden für Schadensbehebung"
+      ]
+    },
+    {
       "id": "reparierbarkeit",
       "label": "Reparierbarkeit",
       "slug": "reparierbarkeit",
@@ -17593,6 +17624,19 @@
       ]
     },
     {
+      "id": "verlustschulden",
+      "label": "Verlustschulden",
+      "slug": "verlustschulden",
+      "url": "/begriffe/verlustschulden/",
+      "category": "Wirkungsfinanzpolitik",
+      "shortDefinition": "Verlustschulden sind öffentliche Schulden, die negative Netto-Wirkung erzeugen, Schäden erhöhen oder destruktive Strukturen stabilisieren.",
+      "aliases": [
+        "Verlustschulden",
+        "Schulden mit negativer Netto-Wirkung",
+        "wirkungsverlustige Schulden"
+      ]
+    },
+    {
       "id": "vermeidene-schaeden-folgekosten",
       "label": "Vermeidene Schäden / vermiedene Folgekosten",
       "slug": "vermeidene-schaeden-folgekosten",
@@ -18437,6 +18481,19 @@
       ]
     },
     {
+      "id": "wirkschulden",
+      "label": "Wirkschulden",
+      "slug": "wirkschulden",
+      "url": "/begriffe/wirkschulden/",
+      "category": "Wirkungsfinanzpolitik",
+      "shortDefinition": "Wirkschulden sind öffentliche Schulden, die positive Netto-Wirkung erzeugen, Risiken senken, Resilienz erhöhen oder spätere Folgekosten vermeiden.",
+      "aliases": [
+        "Wirkschulden",
+        "wirkende Schulden",
+        "wirkungsstarke Staatsschulden"
+      ]
+    },
+    {
       "id": "wirkstoff",
       "label": "Wirkstoff",
       "slug": "wirkstoff",
@@ -18894,6 +18951,20 @@
       "shortDefinition": "Wirkungsethik bewertet Handlungen nach ihren tatsächlichen Folgen für Mensch, Planet und Demokratie, unter Beachtung nicht kompensierbarer Grenzen.",
       "aliases": [
         "Wirkungsethik"
+      ]
+    },
+    {
+      "id": "wirkungsfinanzpolitik",
+      "label": "Wirkungsfinanzpolitik",
+      "slug": "wirkungsfinanzpolitik",
+      "url": "/begriffe/wirkungsfinanzpolitik/",
+      "category": "Wirkungsfinanzpolitik",
+      "shortDefinition": "Wirkungsfinanzpolitik steuert öffentliche Einnahmen, Ausgaben, Schulden, Steuern, Subventionen und Investitionen nach positiver Netto-Wirkung.",
+      "aliases": [
+        "Wirkungsfinanzpolitik",
+        "wirkungsorientierte Finanzpolitik",
+        "öffentliche Finanzen nach Wirkung",
+        "WÖk-Finanzpolitik"
       ]
     },
     {

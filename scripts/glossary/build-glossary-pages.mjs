@@ -2108,6 +2108,400 @@ function staatDetailBody(term) {
       </article>`;
 }
 
+const financeDebtSlugs = new Set(["wirkschulden", "blindschulden", "verlustschulden", "reparaturschulden"]);
+
+function financeTermLink(slug, label = "") {
+  const term = termsBySlug.get(slug);
+  const publicLabel = label || term?.canonicalLabel || slug;
+  const target = term?.slug || slug;
+  return `<a class="term-chip" href="../../begriffe/${esc(target)}/">${esc(publicLabel)}</a>`;
+}
+
+function financeChipRow(items) {
+  return `<div class="term-chip-row">${items.map(([slug, label]) => financeTermLink(slug, label)).join("")}</div>`;
+}
+
+function financeCard(eyebrow, title, html) {
+  return `<section class="term-summary-card">
+          <p class="section-eyebrow">${esc(eyebrow)}</p>
+          <h2>${esc(title)}</h2>
+          ${html}
+        </section>`;
+}
+
+function financeQuestionList() {
+  return listItems([
+    "Welcher Zustand soll verbessert werden?",
+    "Welche positive Netto-Wirkung wird erwartet?",
+    "Welche Daten, Indikatoren oder Wirkpfade stützen diese Erwartung?",
+    "Welche Nebenwirkungen oder Rebound-Effekte sind möglich?",
+    "Welche realen Ressourcen werden benötigt?",
+    "Welche Folgekosten werden vermieden oder erzeugt?",
+    "Wie wird die Wirkung später überprüft und rückgekoppelt?",
+    "Was passiert, wenn die erwartete Wirkung nicht eintritt?"
+  ]);
+}
+
+function financeComparisonTable() {
+  return `<div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Schuldenklasse</th><th>Kernfrage</th><th>Wirkung</th></tr></thead>
+            <tbody>
+              <tr><td><a class="text-link" href="../../begriffe/wirkschulden/">Wirkschulden</a></td><td>Verbessert die Finanzierung reale Zustände?</td><td>positive Netto-Wirkung, Resilienz, vermiedene Folgekosten</td></tr>
+              <tr><td><a class="text-link" href="../../begriffe/praeventionsschulden/">Präventionsschulden</a></td><td>Verhindert sie absehbare Schäden?</td><td>Risikosenkung vor Eintritt des Schadens</td></tr>
+              <tr><td><a class="text-link" href="../../begriffe/transformationsschulden/">Transformationsschulden</a></td><td>Verändert sie Pfade, Standards oder Infrastrukturen?</td><td>strukturelle Zukunftsfähigkeit</td></tr>
+              <tr><td><a class="text-link" href="../../begriffe/blindschulden/">Blindschulden</a></td><td>Bleibt die Wirkung unklar?</td><td>Mittelabfluss ohne belegbare Zustandsveränderung</td></tr>
+              <tr><td><a class="text-link" href="../../begriffe/verlustschulden/">Verlustschulden</a></td><td>Erzeugt sie negative Netto-Wirkung?</td><td>Schäden, Pfadabhängigkeiten, künftige Lasten</td></tr>
+              <tr><td><a class="text-link" href="../../begriffe/reparaturschulden/">Reparaturschulden</a></td><td>Muss Vergangenes repariert werden?</td><td>späte Schadensbehebung statt früher Prävention</td></tr>
+              <tr><td><a class="text-link" href="../../begriffe/zukunftsschulden/">Zukunftsschulden</a></td><td>Welche Lasten verschieben wir?</td><td>finanzielle und nicht-finanzielle Zukunftslasten</td></tr>
+              <tr><td><a class="text-link" href="../../begriffe/nicht-finanzielle-staatsschulden/">Nicht-finanzielle Staatsschulden</a></td><td>Welche Last steht nicht im Haushalt?</td><td>ökologische, soziale, infrastrukturelle und demokratische Schäden</td></tr>
+            </tbody>
+          </table>
+        </div>`;
+}
+
+const financeRelatedTerms = [
+  ["wirkungsfinanzpolitik", "Wirkungsfinanzpolitik"],
+  ["wirkungshaushalt", "Wirkungshaushalt"],
+  ["wirkungspruefung-oeffentlicher-mittel", "Wirkungsprüfung öffentlicher Mittel"],
+  ["positive-netto-wirkung", "positive Netto-Wirkung"],
+  ["nwi", "Netto-Wirkungs-Index / NWI"],
+  ["impact-of-investment", "IOI / Impact of Investment"],
+  ["t-sroi", "T-SROI"],
+  ["zukunftsschulden", "Zukunftsschulden"],
+  ["nicht-finanzielle-staatsschulden", "Nicht-finanzielle Staatsschulden"],
+  ["praeventionsschulden", "Präventionsschulden"],
+  ["transformationsschulden", "Transformationsschulden"],
+  ["wirkungsdisziplin", "Wirkungsdisziplin"],
+  ["public-purpose", "Public Purpose"],
+  ["mmt", "MMT"],
+  ["functional-finance", "Functional Finance"]
+];
+
+const debtClassContent = {
+  wirkschulden: {
+    glance: [
+      "Wirkschulden sind öffentliche Schulden mit positiver Wirkungsqualität.",
+      "Sie können Zukunft entlasten, wenn sie Risiken senken, Resilienz erhöhen oder spätere Folgekosten vermeiden.",
+      "Sie sind nicht automatisch jede Investitionsausgabe.",
+      "Entscheidend ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "Wirkschulden brauchen Wirkungsprüfung, Datenqualität, Zeithorizont und Rückkopplung."
+    ],
+    definition: `<p><strong>Wirkschulden sind öffentliche Schulden, die nachweislich oder plausibel positive Netto-Wirkung erzeugen, künftige Risiken senken, Resilienz erhöhen oder spätere Folgekosten vermeiden.</strong></p><p>Sie entstehen, wenn der Staat Kredite aufnimmt, um reale Zustandsverbesserungen zu ermöglichen: bessere Bildung, stabilere Infrastruktur, geringere Klimarisiken, stärkere öffentliche Gesundheit, höhere Sicherheit oder demokratische Resilienz.</p><p><strong>Wirkschulden finanzieren nicht bloß Ausgaben. Sie finanzieren Zukunftsfähigkeit.</strong></p>`,
+    einordnung: `<p>In der Wirkungsökonomie werden Staatsschulden nicht pauschal bewertet. Entscheidend ist nicht allein, ob der Staat Schulden macht, sondern was diese Schulden bewirken.</p><p>Wirkschulden unterscheiden sich von Blindschulden, Verlustschulden und Reparaturschulden dadurch, dass sie nicht nur Geld bewegen, sondern Zustände verbessern. Sie können generationengerecht sein, wenn sie künftige Schäden vermeiden oder Handlungsspielräume erweitern.</p>`,
+    verwendung: ["Welcher Zustand verbessert wird.", "Welche positive Netto-Wirkung entsteht.", "Welche Risiken gesenkt werden.", "Welche Folgekosten vermieden werden.", "Welche Wirkung für Mensch, Planet und Demokratie entsteht.", "Welche Daten, Indikatoren oder Wirkpfade die Bewertung stützen."],
+    beispiele: ["Sanierung gefährdeter Brücken.", "Investitionen in Schulen, Kitas und Bildungsinfrastruktur.", "Ausbau erneuerbarer Energien und Stromnetze.", "Klimaanpassung: Hitzeschutz, Wasserspeicherung, Entsiegelung, Hochwasserschutz.", "Pflege- und Gesundheitsinfrastruktur.", "Cybersicherheit und Schutz kritischer Infrastruktur.", "Demokratische Resilienz, Medienkompetenz, Rechtsstaatsstärkung.", "Unterstützung der Ukraine, sofern sie europäische Sicherheit, Abschreckung und demokratische Stabilität stärkt.", "Öffentliche Digitalisierung, wenn sie Zugang, Transparenz und Verwaltungskapazität verbessert."],
+    abgrenzung: [
+      ["Blindschulden", "Blindschulden bewegen Geld, ohne ausreichend nachweisbare positive Zustandsveränderung zu erzeugen. Wirkschulden verbessern Zustände oder senken Risiken plausibel und überprüfbar."],
+      ["Verlustschulden", "Verlustschulden erzeugen negative Netto-Wirkung oder stabilisieren destruktive Strukturen. Wirkschulden stärken Zukunftsfähigkeit."],
+      ["Reparaturschulden", "Reparaturschulden beheben Schäden, die bereits entstanden sind. Wirkschulden wirken idealerweise präventiv oder transformativ, bevor Schäden entstehen oder eskalieren."]
+    ],
+    leitsatz: "Wirkschulden belasten Zukunft nicht automatisch; sie können Zukunft entlasten.",
+    nicht: `<p>Bitte den Begriff nicht für jede kreditfinanzierte Ausgabe, jede Investition unabhängig von Wirkung oder politisch gewünschte Projekte ohne Wirkungsprüfung verwenden.</p><p><strong>Falsch:</strong> Investitionen sind immer Wirkschulden.</p><p><strong>Richtig:</strong> Investitionen können Wirkschulden sein, wenn sie positive Netto-Wirkung erzeugen.</p>`
+  },
+  blindschulden: {
+    glance: [
+      "Blindschulden bewegen Geld, erzeugen aber keine ausreichende positive Wirkung.",
+      "Sie entstehen häufig durch fehlende Wirkungsprüfung, Symbolpolitik oder schlechte Evaluation.",
+      "Sie sind nicht automatisch schädlich, aber wirkungsökonomisch problematisch.",
+      "Ihr Problem ist nicht der Kredit an sich, sondern die fehlende oder unklare Zustandsveränderung.",
+      "Blindschulden sind die Schuldenform öffentlicher Blindleistung."
+    ],
+    definition: `<p><strong>Blindschulden sind öffentliche Schulden, die finanzielle Bewegung erzeugen, aber keine ausreichend nachweisbare positive Zustandsveränderung bewirken.</strong></p><p>Sie entstehen, wenn der Staat Kredite aufnimmt oder Ausgaben finanziert, ohne klar zeigen zu können, welche Wirkung dadurch entsteht, für wen sie entsteht, wie sie gemessen wird und wie die Ausgabe in künftige Entscheidungen rückgekoppelt wird.</p><p><strong>Blindschulden bewegen Geld, aber nicht ausreichend Zustände.</strong></p>`,
+    einordnung: `<p>In der Wirkungsökonomie ist Bewegung nicht automatisch Wirkung. Eine Ausgabe kann groß, sichtbar und politisch präsent sein, aber trotzdem kaum reale Zustandsveränderung erzeugen.</p><p>Blindschulden sind die haushaltspolitische Entsprechung von Blindleistung: Mittel fließen, Programme starten, Berichte entstehen, aber die positive Netto-Wirkung bleibt unklar, gering oder nicht überprüfbar.</p>`,
+    verwendung: ["Wenn Ziele unklar bleiben.", "Wenn keine Wirkpfade beschrieben werden.", "Wenn Evaluation nur Output zählt.", "Wenn Programme Mittel binden, aber Zustände kaum verändern.", "Wenn Daten fehlen oder nicht rückgekoppelt werden.", "Wenn politisches Symbolhandeln als Investition erscheint."],
+    beispiele: ["Förderprogramme ohne klare Zielgruppe, Wirkungspfad oder Evaluation.", "Digitalisierungsausgaben, die Verwaltung nicht erleichtern und Zugang nicht verbessern.", "Subventionen ohne belegbaren gesellschaftlichen Nutzen.", "Infrastrukturprojekte ohne Bedarf, Nutzung oder Resilienzgewinn.", "Berichte, Kampagnen oder Modellprojekte, die keine Rückkopplung in Entscheidungen erzeugen."],
+    abgrenzung: [
+      ["Wirkschulden", "Wirkschulden haben plausible oder nachweisbare positive Netto-Wirkung. Blindschulden haben keine ausreichend belegte Zustandsveränderung."],
+      ["Verlustschulden", "Verlustschulden verschlechtern Zustände oder stabilisieren Schäden. Blindschulden sind vor allem unklar oder wirkungsarm."],
+      ["Reparaturschulden", "Reparaturschulden beheben bereits entstandene Schäden. Blindschulden erzeugen möglicherweise gar keine tragfähige Wirkung."]
+    ],
+    leitsatz: "Blindschulden sind nicht Schulden wegen fehlenden Geldes, sondern Schulden wegen fehlender Wirkung.",
+    nicht: `<p>Bitte Blindschulden nicht als pauschales Schimpfwort für unliebsame Ausgaben verwenden. Der Begriff braucht Prüfung, Daten und Unsicherheitsangabe.</p><p><strong>Falsch:</strong> Das ist politisch falsch, also sind es Blindschulden.</p><p><strong>Richtig:</strong> Blindschulden liegen vor, wenn positive Zustandsveränderung nicht ausreichend gezeigt oder überprüft wird.</p>`
+  },
+  verlustschulden: {
+    glance: [
+      "Verlustschulden erzeugen negative Netto-Wirkung.",
+      "Sie können Schäden, Pfadabhängigkeiten und spätere Kosten erhöhen.",
+      "Ihr Problem ist nicht nur fehlende Wirkung, sondern schädliche Wirkung.",
+      "Sie stabilisieren oft destruktive Strukturen, falsche Anreize oder vermeidbare Risiken.",
+      "Verlustschulden brauchen besonders strenge Wirkungsprüfung und Nichtkompensation."
+    ],
+    definition: `<p><strong>Verlustschulden sind öffentliche Schulden, die negative Netto-Wirkung erzeugen, künftige Schäden erhöhen oder destruktive Strukturen stabilisieren.</strong></p><p>Sie entstehen, wenn kreditfinanzierte Mittel unter dem Strich Zustände verschlechtern, Risiken erhöhen, Folgekosten erzeugen oder schädliche Pfade verlängern.</p><p><strong>Verlustschulden finanzieren nicht Zukunftsfähigkeit, sondern Wirkungsverlust.</strong></p>`,
+    einordnung: `<p>Die Wirkungsökonomie unterscheidet zwischen fehlender Wirkung und negativer Wirkung. Verlustschulden sind schwerwiegender als Blindschulden, weil sie nicht nur unklar wirken, sondern unter dem Strich Schaden erzeugen können.</p><p>Eine Ausgabe kann politisch gut gemeint sein und trotzdem Verlustschuld werden, wenn Nebenwirkungen, Rebound-Effekte, Abhängigkeiten oder ökologische und soziale Folgekosten die positiven Effekte übersteigen.</p>`,
+    verwendung: ["Wenn negative Netto-Wirkung plausibel oder nachweisbar ist.", "Wenn künftige Schäden, Risiken oder Reparaturkosten steigen.", "Wenn destruktive Strukturen stabilisiert werden.", "Wenn kurzfristige Entlastung langfristige Lasten erzeugt.", "Wenn schwere negative Wirkungen nicht durch positive Einzelwirkungen kompensiert werden dürfen."],
+    beispiele: ["Subventionen für dauerhaft schädliche Strukturen ohne Transformationspfad.", "Kreditfinanzierte Projekte, die ökologische Schäden oder Gesundheitsrisiken erhöhen.", "Infrastrukturen, die Lock-in-Effekte in klimaschädliche Pfade erzeugen.", "Rettungspakete ohne Bedingungen, die Fehlanreize dauerhaft verstärken.", "Ausgaben, die demokratisches Vertrauen, Teilhabe oder Rechtsstaatlichkeit schwächen."],
+    abgrenzung: [
+      ["Blindschulden", "Blindschulden bleiben wirkungsunklar. Verlustschulden erzeugen negative Netto-Wirkung."],
+      ["Wirkschulden", "Wirkschulden senken Risiken und verbessern Zustände. Verlustschulden erhöhen Risiken oder verschlechtern Zustände."],
+      ["Reparaturschulden", "Reparaturschulden beheben vorhandene Schäden. Verlustschulden können solche Schäden erst erzeugen oder vergrößern."]
+    ],
+    leitsatz: "Verlustschulden verschieben nicht nur Geld in die Zukunft, sondern Schäden.",
+    nicht: `<p>Bitte den Begriff nicht als moralische Verurteilung von Menschen, Parteien oder Gruppen verwenden. Er beschreibt die Wirkungsqualität einer Finanzierung und muss überprüfbar bleiben.</p><p><strong>Falsch:</strong> Jede Ausgabe, die ich politisch ablehne, ist Verlustschuld.</p><p><strong>Richtig:</strong> Verlustschulden liegen vor, wenn öffentliche Schulden negative Netto-Wirkung erzeugen oder schädliche Strukturen stabilisieren.</p>`
+  },
+  reparaturschulden: {
+    glance: [
+      "Reparaturschulden beheben Schäden, die bereits entstanden sind.",
+      "Sie können notwendig und legitim sein.",
+      "Sie zeigen aber oft, dass frühere Prävention, Instandhaltung oder Transformation unterblieben ist.",
+      "Sie sind teurer, wenn Schäden eskalieren.",
+      "Wirkungsfinanzpolitik fragt, welche Reparaturkosten durch frühere Wirkschulden vermeidbar gewesen wären."
+    ],
+    definition: `<p><strong>Reparaturschulden sind öffentliche Schulden, die notwendig werden, um Schäden zu beheben, die durch frühere Unterlassung, Fehlsteuerung oder negative Wirkung entstanden sind.</strong></p><p>Sie können nötig sein, um Brücken, Schulen, Gesundheitssysteme, soziale Infrastruktur, Ökosysteme, Sicherheitsfähigkeit oder demokratisches Vertrauen wiederherzustellen.</p><p><strong>Reparaturschulden sind oft der Preis früherer Wirkungslücken.</strong></p>`,
+    einordnung: `<p>Die Wirkungsökonomie bewertet Reparatur nicht als falsch. Wenn Schaden entstanden ist, kann Reparatur hohe positive Wirkung haben. Problematisch wird es, wenn Reparaturschulden regelmäßig entstehen, weil Prävention, Instandhaltung und Transformation verschleppt wurden.</p><p>Wirkungsfinanzpolitik macht sichtbar, dass Nicht-Handeln keine kostenlose Option ist. Unterlassung kann spätere Reparaturschulden erzeugen.</p>`,
+    verwendung: ["Wenn Schäden bereits eingetreten sind.", "Wenn frühere Unterlassung, Fehlsteuerung oder negative Wirkung sichtbar wird.", "Wenn spätere Schadensbehebung teurer ist als frühere Prävention gewesen wäre.", "Wenn Reparatur zwar notwendig ist, aber keine strukturelle Lösung ersetzt.", "Wenn aus Reparaturdaten künftige Präventionsentscheidungen folgen sollen."],
+    beispiele: ["Kreditfinanzierte Sanierung maroder Brücken nach jahrelanger Unterlassung.", "Wiederaufbau nach Hochwasserschäden, die durch fehlende Klimaanpassung verschärft wurden.", "Nachfinanzierung von Schulen, Krankenhäusern oder Pflege, weil Instandhaltung verschleppt wurde.", "Reparatur digitaler Verwaltungssysteme nach Sicherheits- und Modernisierungsrückstand.", "Maßnahmen gegen Vertrauensverlust, Polarisierung oder institutionelle Erosion."],
+    abgrenzung: [
+      ["Wirkschulden", "Wirkschulden können präventiv oder transformativ Zukunft entlasten. Reparaturschulden beheben Schäden, nachdem sie entstanden sind."],
+      ["Blindschulden", "Blindschulden wirken unklar. Reparaturschulden haben oft klare Reparaturwirkung, zeigen aber vorherige Wirkungslücken."],
+      ["Verlustschulden", "Verlustschulden erzeugen Schäden. Reparaturschulden finanzieren deren Behebung."]
+    ],
+    leitsatz: "Reparaturschulden zeigen, dass Unterlassen nicht kostenlos ist.",
+    nicht: `<p>Bitte Reparaturschulden nicht automatisch als schlechte Schulden darstellen. Reparatur kann notwendig und wirkungsvoll sein. Der Begriff soll sichtbar machen, welche Schäden früher vermeidbar gewesen wären.</p><p><strong>Falsch:</strong> Reparaturschulden sind immer falsch.</p><p><strong>Richtig:</strong> Reparaturschulden können notwendig sein, sollten aber Prävention und Transformation nicht ersetzen.</p>`
+  }
+};
+
+function debtClassDetailBody(term) {
+  const data = debtClassContent[term.slug];
+  const abgrenzung = data.abgrenzung.map(([title, text]) => `<section class="term-section-card"><h3>${esc(title)}</h3><p>${esc(text)}</p></section>`).join("");
+  return `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / <a href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Öffentliche Finanzen, Schulden und Wirkung</a> / ${esc(term.canonicalLabel)}</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">WÖk-Prägungsbegriff · Wirkungsfinanzpolitik</p>
+          <h1>${esc(term.canonicalLabel)}</h1>
+          <p class="lead">${esc(termLead(term))}</p>
+          <div class="term-meta-row" aria-label="Begriffsinformation"><span>Schuldenklasse</span><span>Wirkungsprüfung statt Schuldenmoral</span><span>Stand 2026-06-12</span></div>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../begriffe/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a><a class="btn btn-secondary" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier</a><a class="btn btn-secondary" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Cluster öffnen</a></div>
+        </header>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Leitformel</p>
+          <h2>Nicht die Höhe allein entscheidet</h2>
+          <p><strong>Nicht die Höhe staatlicher Schulden allein entscheidet über Zukunftsfähigkeit, sondern ihre Wirkung.</strong></p>
+          <p>Die Schuldenklassen der Wirkungsfinanzpolitik sind keine moralischen Etiketten. Sie ersetzen keine demokratische Haushaltsentscheidung. Sie sind Kategorien der Wirkungsprüfung: Entscheidend sind Zustandsveränderung, Netto-Wirkung, Nebenwirkungen, Zeithorizont, Datenqualität und Rückkopplung. Eine Bewertung kann sich durch neue Daten verändern; Unsicherheit muss sichtbar bleiben.</p>
+        </section>
+        ${financeCard("Auf einen Blick", "Kurzdefinition", listItems(data.glance))}
+        ${financeCard("Definition", `Was sind ${term.canonicalLabel}?`, data.definition)}
+        ${financeCard("Einordnung", "Einordnung in der Wirkungsökonomie", data.einordnung)}
+        ${financeCard("Verwendung", "Wann der Begriff passt", listItems(data.verwendung))}
+        ${financeCard("Beispiele", "Mögliche Anwendungsfälle", listItems(data.beispiele))}
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Abgrenzung</p>
+          <h2>Abgrenzung zu anderen Schuldenklassen</h2>
+          <div class="term-section-grid">${abgrenzung}</div>
+        </section>
+        ${financeCard("Wirkungsprüfung", "Prüffragen", financeQuestionList())}
+        ${financeCard("Leitsatz", data.leitsatz, `<p><strong>${esc(data.leitsatz)}</strong></p>`)}
+        ${financeCard("Nicht verwenden", "Schutz vor Verkürzung", data.nicht)}
+        ${financeCard("Vergleich", "Schuldenklassen im Überblick", financeComparisonTable())}
+        <section class="term-link-section" aria-labelledby="finance-related-${esc(term.slug)}">
+          <div><p class="section-eyebrow">Verknüpfungen</p><h2 id="finance-related-${esc(term.slug)}">Verwandte Begriffe und interne Links</h2></div>
+          ${financeChipRow(financeRelatedTerms)}
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">FAQ</p>
+          <h2>Häufige Fragen</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Ersetzt die Kategorie demokratische Entscheidungen?</h3><p>Nein. Sie macht Wirkungsannahmen, Unsicherheiten und Nebenwirkungen sichtbar, damit demokratische Entscheidungen besser begründet und später korrigiert werden können.</p></section>
+            <section class="term-section-card"><h3>Ist die Einordnung endgültig?</h3><p>Nein. Neue Daten, veränderte Rahmenbedingungen oder unerwartete Nebenwirkungen können die Bewertung verändern.</p></section>
+            <section class="term-section-card"><h3>Geht es nur um Geld?</h3><p>Nein. Wirkungsfinanzpolitik bezieht finanzielle und nicht-finanzielle Zukunftslasten ein: Infrastruktur, Klima, Gesundheit, Bildung, Sicherheit, Vertrauen und Demokratie.</p></section>
+          </div>
+        </section>
+        <section class="meta-box">
+          <h2>Version und Quellen</h2>
+          <p>Kategorie: Wirkungsfinanzpolitik · Version: ${esc(term.version || "3.0")} · Stand: 12. Juni 2026</p>
+          <p>Vertiefung: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>.</p>
+        </section>
+      </article>`;
+}
+
+function wirkungsfinanzpolitikDetailBody(term) {
+  return `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / <a href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Öffentliche Finanzen, Schulden und Wirkung</a> / Wirkungsfinanzpolitik</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">WÖk-Prägungsbegriff · Staat, Recht &amp; Demokratie</p>
+          <h1>Wirkungsfinanzpolitik</h1>
+          <p class="lead">Öffentliche Finanzen nach Wirkung steuern</p>
+          <p><strong>Wirkungsfinanzpolitik fragt nicht nur, was öffentliche Finanzierung kostet, sondern was sie bewirkt - und was es kostet, wenn sie unterbleibt.</strong></p>
+          <div class="term-meta-row" aria-label="Begriffsinformation"><span>Wirkungshaushalt</span><span>IOI und T-SROI</span><span>Schuldenklassen</span></div>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier öffnen</a><a class="btn btn-secondary" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag lesen</a><a class="btn btn-secondary" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfeld öffnen</a></div>
+        </header>
+        ${financeCard("Auf einen Blick", "Kurz erklärt", listItems([
+          "Wirkungsfinanzpolitik ist die wirkungsökonomische Steuerung öffentlicher Finanzen.",
+          "Sie bewertet Einnahmen, Ausgaben, Schulden, Steuern, Subventionen und Investitionen nach ihrer Wirkung.",
+          "Maßstab ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+          "Sie fragt nicht nur: Was kostet es?",
+          "Sie fragt auch: Was bewirkt es? Und was kostet es, wenn wir es nicht tun?",
+          "Sie unterscheidet zwischen Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, Präventionsschulden, Transformationsschulden und Zukunftsschulden.",
+          "Sie nutzt Methoden wie Wirkungshaushalt, Wirkungsprüfung öffentlicher Mittel, IOI, T-SROI, Netto-Wirkungs-Index und Nichtkompensation.",
+          "Sie ist weder Schuldenromantik noch Sparideologie, sondern Wirkungsdisziplin."
+        ]))}
+        ${financeCard("Definition", "Öffentliche Finanzmacht nach Wirkung bewerten", `<p><strong>Wirkungsfinanzpolitik ist die wirkungsökonomische Steuerung öffentlicher Einnahmen, Ausgaben, Schulden, Investitionen, Subventionen und Steuern nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie.</strong></p><p>Sie fragt nicht zuerst, ob der Staat Geld ausgibt oder spart, sondern welche Zustände durch öffentliche Finanzentscheidungen verändert werden.</p><p><strong>Wirkungsfinanzpolitik bewertet öffentliche Finanzmacht nach Wirkung.</strong></p>`)}
+        ${financeCard("Warum nötig?", "Finanzzahlen reichen nicht aus", `<p>Die klassische Finanzpolitik betrachtet vor allem Haushaltsdefizite, Schuldenstände, Zinsen, Steuereinnahmen und Ausgabengrenzen. Diese Größen sind wichtig, aber sie reichen nicht aus.</p><p>Ein Staat kann finanziell sparsam wirken und trotzdem reale Zukunftsschulden aufbauen: marode Brücken, kaputte Schulen, fehlende Stromnetze, Pflegekrisen, Klimaschäden, Sicherheitslücken, digitale Rückständigkeit und demokratischen Vertrauensverlust.</p><p><strong>Nicht die Höhe staatlicher Schulden allein entscheidet über Zukunftsfähigkeit, sondern ihre Wirkung.</strong></p>`)}
+        ${financeCard("Einordnung", "Der Haushalt als Wirkungsarchitektur", `<p>Die Wirkungsökonomie verschiebt den Maßstab gesellschaftlicher Steuerung von Kapital zu Wirkung. Dieser Perspektivwechsel gilt auch für öffentliche Finanzen.</p><p>Der Staatshaushalt ist in der Wirkungsökonomie nicht nur ein Zahlenplan, sondern eine <strong>Wirkungsarchitektur</strong>. Er entscheidet darüber, welche Zustände stabilisiert, repariert, verhindert oder transformiert werden.</p><p>Der Staat ist kein Privathaushalt. Aber er ist auch kein wirkungsfreier Geldautomat.</p>`)}
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Abgrenzung</p>
+          <h2>MMT, Functional Finance und Public Purpose</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>MMT</h3><p>Modern Monetary Theory zeigt, dass ein Staat mit eigener Währung nicht wie ein Privathaushalt funktioniert. Die Wirkungsfinanzpolitik übernimmt diese Einsicht, geht aber weiter: MMT fragt, was ein Staat finanzieren kann. Wirkungsfinanzpolitik fragt, was er finanzieren soll, weil es positive Netto-Wirkung erzeugt.</p><p><strong>MMT entkräftet den Schuldenmythos. Wirkungsfinanzpolitik liefert den Wirkungskompass.</strong></p></section>
+            <section class="term-section-card"><h3>Functional Finance</h3><p>Functional Finance bewertet staatliche Finanzpolitik nach ihrer makroökonomischen Funktion. Wirkungsfinanzpolitik erweitert diese Funktionsfrage um Mensch, Planet, Demokratie, Netto-Wirkung, Wirkungsrisiken, Zukunftskosten, Nichtkompensation und Wirkungshaushalt.</p><p><strong>Functional Finance fragt, ob Finanzpolitik funktioniert. Wirkungsfinanzpolitik fragt, ob sie richtig wirkt.</strong></p></section>
+            <section class="term-section-card"><h3>Public Purpose</h3><p>Public Purpose beschreibt, dass staatliche Finanzmacht einem gesellschaftlichen Zweck dienen soll. Die Wirkungsökonomie präzisiert diesen Zweck als positive Netto-Wirkung für Mensch, Planet und Demokratie.</p><p><strong>Public Purpose benennt den Anspruch. Wirkungsfinanzpolitik macht ihn prüfbar.</strong></p></section>
+          </div>
+        </section>
+        ${financeCard("Zentrale Fragen", "Was Wirkungsfinanzpolitik prüft", listItems([
+          "Welcher Zustand soll verändert werden?",
+          "Welche positive Netto-Wirkung wird erwartet?",
+          "Welche negativen Nebenwirkungen sind möglich?",
+          "Welche Zukunftskosten werden vermieden?",
+          "Welche Kosten entstehen bei Nicht-Handeln?",
+          "Welche realen Ressourcen werden benötigt?",
+          "Welche Wirkung entsteht kurzfristig, mittelfristig und langfristig?",
+          "Welche Wirkung entsteht erster, zweiter und dritter Ordnung?",
+          "Welche Daten und Indikatoren liegen vor?",
+          "Wie wird Wirkung später überprüft und rückgekoppelt?"
+        ]) + `<p><strong>Nicht nur: Was kostet es? Sondern: Was bewirkt es - und was kostet es, wenn wir es nicht tun?</strong></p>`)}
+        ${financeCard("Schuldenklassen", "Nicht jede Schuld wirkt gleich", financeComparisonTable())}
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Methoden und Kennzahlen</p>
+          <h2>Werkzeuge der Wirkungsfinanzpolitik</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Wirkungshaushalt</h3><p>Ein Wirkungshaushalt strukturiert Einnahmen, Ausgaben, Kredite, Investitionen und Förderungen nach erwarteter und überprüfter Wirkung.</p></section>
+            <section class="term-section-card"><h3>Wirkungsprüfung öffentlicher Mittel</h3><p>Sie fragt vor, während und nach einer Ausgabe, welche Zustandsveränderung entsteht, welche Nebenwirkungen auftreten und ob Korrektur nötig ist.</p></section>
+            <section class="term-section-card"><h3>IOI</h3><p>Impact-of-Investment misst, wie viel positive Netto-Wirkung pro investiertem Euro entsteht. IOI ergänzt ROI und T-SROI, ersetzt aber keine demokratische Abwägung.</p></section>
+            <section class="term-section-card"><h3>T-SROI</h3><p>T-SROI macht Transformationsnutzen, vermiedene Folgekosten und Resilienz als Wirkungsrechnung sichtbar.</p></section>
+            <section class="term-section-card"><h3>NWI</h3><p>Der Netto-Wirkungs-Index bündelt positive und negative Wirkungen, ohne nicht kompensierbare Schäden unsichtbar zu machen.</p></section>
+            <section class="term-section-card"><h3>Nichtkompensation</h3><p>Schwere negative Wirkungen dürfen nicht automatisch durch positive Wirkungen in anderen Bereichen verrechnet werden.</p></section>
+          </div>
+        </section>
+        ${financeCard("Beispiele", "Typische Anwendungsfelder", listItems([
+          "Brücken, Schulen, Kitas, Stromnetze, Pflege und Gesundheit.",
+          "Klimaanpassung, Hochwasserschutz, Hitzeschutz und Entsiegelung.",
+          "Cybersicherheit, kritische Infrastruktur und demokratische Resilienz.",
+          "Subventionsprüfung: Welche Förderung erzeugt Wirkung, welche nur Pfadabhängigkeit?",
+          "Steuerpolitik als Rückkopplung: Schäden bepreisen, positive Wirkung entlasten, Wirkungslücken schließen."
+        ]))}
+        ${financeCard("Was nicht", "Schutzlinien", listItems([
+          "Keine Schuldenromantik: Mehr Schulden sind nicht automatisch besser.",
+          "Keine Sparideologie: Weniger Schulden sind nicht automatisch zukunftsfähiger.",
+          "Keine Anti-MMT-Position: MMT bleibt Anschlussbegriff, nicht Gegner.",
+          "Keine technokratische Ersatzdemokratie: Messung ersetzt keine demokratische Entscheidung.",
+          "Kein Social Credit und keine Bewertung von Menschen.",
+          "Keine reine Kennzahlenlogik: IOI, T-SROI und NWI brauchen Schutzgrenzen, Datenqualität und öffentliche Kontrolle."
+        ]))}
+        ${financeCard("Leitsätze", "Kernformeln", listItems([
+          "Nicht Schulden belasten die Zukunft, sondern Schulden ohne Wirkung.",
+          "Die größte Staatsschuld steht nicht immer im Haushalt.",
+          "MMT öffnet den Raum. Wirkungsfinanzpolitik gibt ihm Richtung.",
+          "Public Purpose benennt den Anspruch. Wirkungsfinanzpolitik macht ihn prüfbar.",
+          "Wirkungsfinanzpolitik ist weder Schuldenromantik noch Sparideologie, sondern Wirkungsdisziplin."
+        ]))}
+        <section class="term-link-section" aria-labelledby="wfp-related">
+          <div><p class="section-eyebrow">Verknüpfungen</p><h2 id="wfp-related">Verwandte Begriffe und Inhalte</h2></div>
+          ${financeChipRow([
+            ["wirkungshaushalt", "Wirkungshaushalt"],
+            ["wirkungspruefung-oeffentlicher-mittel", "Wirkungsprüfung öffentlicher Mittel"],
+            ["impact-of-investment", "IOI / Impact of Investment"],
+            ["t-sroi", "T-SROI"],
+            ["nwi", "NWI"],
+            ["wirkschulden", "Wirkschulden"],
+            ["blindschulden", "Blindschulden"],
+            ["verlustschulden", "Verlustschulden"],
+            ["reparaturschulden", "Reparaturschulden"],
+            ["praeventionsschulden", "Präventionsschulden"],
+            ["transformationsschulden", "Transformationsschulden"],
+            ["zukunftsschulden", "Zukunftsschulden"],
+            ["nicht-finanzielle-staatsschulden", "Nicht-finanzielle Staatsschulden"],
+            ["unterlassungskosten", "Unterlassungskosten"],
+            ["wirkungsdisziplin", "Wirkungsdisziplin"],
+            ["public-purpose", "Public Purpose"],
+            ["mmt", "MMT"],
+            ["functional-finance", "Functional Finance"],
+            ["realressourcengrenze", "Realressourcengrenze"],
+            ["inflationsgrenze", "Inflationsgrenze"]
+          ])}
+          <div class="term-chip-row">
+            <a class="term-chip" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>
+            <a class="term-chip" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a>
+            <a class="term-chip" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfeld</a>
+            <a class="term-chip" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>
+          </div>
+        </section>
+        <section class="term-summary-card">
+          <p class="section-eyebrow">FAQ</p>
+          <h2>Häufige Fragen</h2>
+          <div class="term-section-grid">
+            <section class="term-section-card"><h3>Ist Wirkungsfinanzpolitik einfach MMT?</h3><p>Nein. MMT erklärt, warum der Staat nicht wie ein Privathaushalt funktioniert. Wirkungsfinanzpolitik ergänzt die Bewertungsfrage nach positiver Netto-Wirkung.</p></section>
+            <section class="term-section-card"><h3>Ist sie schuldenfreundlich?</h3><p>Nein. Sie ist wirkungsfreundlich. Mehr Schulden sind nicht automatisch gut, weniger Schulden nicht automatisch zukunftsfähig.</p></section>
+            <section class="term-section-card"><h3>Wer entscheidet, was Wirkung ist?</h3><p>Demokratische Institutionen entscheiden weiterhin. Wirkungsprüfung, Daten, Wissenschaft, öffentliche Kontrolle und Rückkopplung machen Annahmen überprüfbarer.</p></section>
+            <section class="term-section-card"><h3>Was ist die wichtigste Aussage?</h3><p>Nicht Schulden belasten die Zukunft, sondern Schulden ohne Wirkung.</p></section>
+          </div>
+        </section>
+        <section class="meta-box">
+          <h2>Version und Quellen</h2>
+          <p>Kategorie: Öffentliche Finanzen, Schulden und Wirkung · Version: ${esc(term.version || "3.0")} · Stand: 12. Juni 2026</p>
+          <p>Vertiefung: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a>, <a class="text-link" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfeld</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>.</p>
+        </section>
+      </article>`;
+}
+
+const financeClusterTerms = [
+  ["wirkungsfinanzpolitik", "Wirkungsfinanzpolitik", "Wirkungsfinanzpolitik steuert öffentliche Einnahmen, Ausgaben, Schulden, Investitionen, Subventionen und Steuern nach positiver Netto-Wirkung."],
+  ["wirkungshaushalt", "Wirkungshaushalt", "Ein Wirkungshaushalt strukturiert öffentliche Mittel nach erwarteter und überprüfter Wirkung."],
+  ["wirkungspruefung-oeffentlicher-mittel", "Wirkungsprüfung öffentlicher Mittel", "Sie prüft vor, während und nach einer Ausgabe, welche Zustandsveränderung entsteht und ob Korrektur nötig ist."],
+  ["impact-of-investment", "IOI / Impact of Investment", "IOI misst, wie viel positive Netto-Wirkung pro investiertem Euro entsteht."],
+  ["oeffentlicher-t-sroi", "Öffentlicher T-SROI", "Öffentlicher T-SROI macht Transformationsnutzen, vermiedene Folgekosten, Resilienz und Teilhabe sichtbar."],
+  ["wirkschulden", "Wirkschulden", "Wirkschulden erzeugen positive Netto-Wirkung, senken Risiken, erhöhen Resilienz oder vermeiden Folgekosten."],
+  ["praeventionsschulden", "Präventionsschulden", "Präventionsschulden werden aufgenommen, um absehbare Schäden, Krisen oder Folgekosten zu vermeiden."],
+  ["transformationsschulden", "Transformationsschulden", "Transformationsschulden ermöglichen strukturelle Veränderungen an Standards, Märkten, Infrastrukturen oder Handlungspfaden."],
+  ["blindschulden", "Blindschulden", "Blindschulden bewegen Geld, erzeugen aber keine ausreichend nachweisbare positive Zustandsveränderung."],
+  ["verlustschulden", "Verlustschulden", "Verlustschulden erzeugen negative Netto-Wirkung oder stabilisieren destruktive Strukturen."],
+  ["reparaturschulden", "Reparaturschulden", "Reparaturschulden beheben Schäden, die durch frühere Unterlassung, Fehlsteuerung oder negative Wirkung entstanden sind."],
+  ["zukunftsschulden", "Zukunftsschulden", "Zukunftsschulden sind heute erzeugte oder nicht verhinderte Lasten, die künftige Generationen tragen müssen."],
+  ["nicht-finanzielle-staatsschulden", "Nicht-finanzielle Staatsschulden", "Nicht-finanzielle Staatsschulden erscheinen nicht als Kredit im Haushalt, schwächen aber Zukunftsfähigkeit."],
+  ["unterlassungskosten", "Unterlassungskosten", "Unterlassungskosten entstehen, weil notwendige Maßnahmen nicht oder zu spät ergriffen werden."],
+  ["wirkungsdisziplin", "Wirkungsdisziplin", "Wirkungsdisziplin bindet Finanzierung an Wirkungsziel, Datenqualität, Ressourcenlage und Korrekturmechanismus."],
+  ["public-purpose", "Public Purpose", "Public Purpose benennt den öffentlichen Zweck; die WÖk macht ihn als positive Netto-Wirkung prüfbar."],
+  ["mmt", "MMT", "MMT entkräftet den Privathaushaltsmythos; Wirkungsfinanzpolitik ergänzt den Wirkungskompass."],
+  ["functional-finance", "Functional Finance", "Functional Finance fragt nach der Funktion von Finanzpolitik; die WÖk erweitert dies um Wirkung und Nichtkompensation."],
+  ["realressourcengrenze", "Realressourcengrenze", "Die Realressourcengrenze zeigt Grenzen durch Personal, Material, Energie, Fläche, Zeit und Verwaltungskapazität."],
+  ["inflationsgrenze", "Inflationsgrenze", "Die Inflationsgrenze zeigt, wo Nachfrage ohne reale Kapazität Preise, Grundbedarf oder Stabilität gefährdet."]
+];
+
+function financeClusterDetailBody(term) {
+  const cards = financeClusterTerms.map(([slug, label, definition]) => `<section class="term-section-card"><p class="section-eyebrow">Begriff</p><h2><a class="text-link" href="../../begriffe/${esc(slug)}/">${esc(label)}</a></h2><p>${esc(definition)}</p></section>`).join("");
+  return `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / Öffentliche Finanzen, Schulden und Wirkung</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">Wirkungsfinanzpolitik</p>
+          <h1>Öffentliche Finanzen, Schulden und Wirkung</h1>
+          <p class="lead">Dieses Glossar-Cluster erklärt die Begriffe, mit denen öffentliche Finanzierung nach positiver Netto-Wirkung statt nur nach Betrag, Defizit oder Schuldenstand gelesen wird.</p>
+          <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Bereich öffnen</a><a class="btn btn-secondary" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier</a><a class="btn btn-secondary" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag lesen</a></div>
+        </header>
+        ${financeCard("Auf einen Blick", "Öffentliche Finanzierung nach Wirkung lesen", `<p>Nicht jede öffentliche Schuld ist gleich. Entscheidend ist, ob Finanzierung Zukunft entlastet, Schäden vermeidet, Resilienz stärkt und demokratisch korrigierbar bleibt. MMT ist dabei ein wichtiger Anschluss gegen Schuldenmythen; Public Purpose benennt den Anspruch, den die Wirkungsökonomie als positive Netto-Wirkung prüfbar macht.</p><p><strong>Nicht die Höhe staatlicher Schulden allein entscheidet über Zukunftsfähigkeit, sondern ihre Wirkung.</strong></p>`)}
+        ${financeCard("Schuldenklassen", "Schuldenklassen im Vergleich", financeComparisonTable())}
+        <section class="term-summary-card">
+          <p class="section-eyebrow">Begriffsordnung</p>
+          <h2>Kernbegriffe des Clusters</h2>
+          <div class="term-section-grid">${cards}</div>
+        </section>
+        <section class="term-link-section" aria-labelledby="cluster-related">
+          <div><p class="section-eyebrow">Verknüpfungen</p><h2 id="cluster-related">Verwandte Inhalte</h2></div>
+          <div class="term-chip-row">
+            <a class="term-chip" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>
+            <a class="term-chip" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a>
+            <a class="term-chip" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfeld</a>
+            <a class="term-chip" href="../../begriffe/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+            <a class="term-chip" href="../../begriffe/impact-of-investment/">Impact-of-Investment (IOI)</a>
+            <a class="term-chip" href="../../werkzeuge/t-sroi/">T-SROI</a>
+          </div>
+        </section>
+        <section class="meta-box">
+          <h2>Version und Schutzlinie</h2>
+          <p>Kategorie: Öffentliche Finanzen, Staat und Demokratie · Version: 3.0 IOI-Erweiterung · Stand: 12. Juni 2026</p>
+          <p>Die Begriffe sind konzeptionelle Arbeitsbegriffe der Wirkungsökonomie. Sie ersetzen keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung.</p>
+        </section>
+      </article>`;
+}
+
 for (const term of indexedTerms) {
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
@@ -2128,6 +2522,12 @@ for (const term of indexedTerms) {
     ? sozialeInfrastrukturDetailBody(term)
     : term.slug === "staat"
     ? staatDetailBody(term)
+    : term.slug === "wirkungsfinanzpolitik"
+    ? wirkungsfinanzpolitikDetailBody(term)
+    : financeDebtSlugs.has(term.slug)
+    ? debtClassDetailBody(term)
+    : term.slug === "oeffentliche-finanzen-schulden-wirkung"
+    ? financeClusterDetailBody(term)
     : `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
         <header class="term-detail-hero">
@@ -2159,6 +2559,11 @@ ${chapterBlock(term)}
     ? {
         metaTitle: "Mensch, Planet und Demokratie - verständliche Übersetzung von SDGs und SDG+",
         metaDescription: "Mensch, Planet und Demokratie sind die drei Oberbegriffe, mit denen die Wirkungsökonomie SDGs, Agenda 2030 und SDG+ öffentlich verständlich zusammenfasst.",
+      }
+    : term.slug === "oeffentliche-finanzen-schulden-wirkung"
+    ? {
+        metaTitle: "Öffentliche Finanzen, Schulden und Wirkung - Glossar der Wirkungsökonomie",
+        metaDescription: "Glossar-Cluster der Wirkungsfinanzpolitik: IOI, Wirkungshaushalt, Wirkschulden, Blindschulden, Verlustschulden, Reparaturschulden, MMT, Public Purpose und Functional Finance.",
       }
     : {};
   if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
