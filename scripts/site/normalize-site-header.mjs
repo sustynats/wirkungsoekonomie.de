@@ -82,6 +82,7 @@ function headerFiles() {
   return output
     .split("\n")
     .map((file) => path.join(ROOT, file))
+    .filter((file) => fs.existsSync(file))
     .filter((file) => {
       const html = fs.readFileSync(file, "utf8");
       return html.includes('<header class="site-header"');

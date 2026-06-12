@@ -72,6 +72,15 @@ const genericWhyNotes = new Set([
   "wirkung entsteht erst über deutung, resonanz, vertrauen, handlungsoptionen und rückkopplung.",
 ]);
 
+const legacyPlaceholderPatterns = [
+  /Glossar-Bestand/i,
+  /Version Bestand/i,
+  /Begriffsreferenz der Wirkungsökonomie/i,
+  /Der Begriff gehört zum Bereich Glossar-Bestand/i,
+  /Bestand Stand\s*\/\s*Version Bestand/i,
+  /Stand\s*\/\s*Version Bestand/i,
+];
+
 function esc(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -227,6 +236,7 @@ function loadLegacyDetailTerms() {
         && !canonical.endsWith(`/begriffe/${entry.name}/`)
         && /<meta\s+name=["']robots["']\s+content=["'][^"']*\bnoindex\b/i.test(html);
       if (isAliasRoute) return null;
+      if (legacyPlaceholderPatterns.some((pattern) => pattern.test(html))) return null;
       const h1 = firstMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i);
       const title = firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i).replace(/\s*[|-]\s*Glossar.*$/i, "");
       const meta = firstMatch(html, /<meta\s+name=["']description["']\s+content=["']([^"']+)["'][^>]*>/i)
@@ -236,7 +246,7 @@ function loadLegacyDetailTerms() {
       const labelKey = normalizedHubConcept(label);
       if (sourceLabels.has(labelKey) || seenLegacyLabels.has(labelKey)) return null;
       seenLegacyLabels.add(labelKey);
-      const summary = meta || lead || "Bestehende Glossar-Detailseite aus dem Bestand.";
+      const summary = meta || lead || "Archivierter Glossarverweis mit bestehender Detailseite.";
       return {
         id: entry.name,
         termId: entry.name,
@@ -246,9 +256,9 @@ function loadLegacyDetailTerms() {
         shortDefinition: summary,
         hoverDefinition: summary,
         longDefinition: summary,
-        category: "Glossar-Bestand",
-        type: "Bestand",
-        version: "Bestand",
+        category: "Glossarverweis",
+        type: "Glossarverweis",
+        version: "",
         sourceDocument: "",
         sourceSection: "",
         glossaryOrderKey: label,
@@ -317,7 +327,7 @@ function renderFooter(base) {
 
 function pageShell(title, body, depth = "", options = {}) {
   const metaTitle = options.metaTitle || `${title} - Wirkungsökonomie`;
-  const metaDescription = options.metaDescription || `Begriffsreferenz der Wirkungsökonomie: ${title}.`;
+  const metaDescription = options.metaDescription || `${title} im Glossar der Wirkungsökonomie.`;
   return `<!DOCTYPE html>
 <html lang="de">
   <head>
@@ -593,7 +603,7 @@ function hasRealText(value) {
 }
 
 function containsForbiddenPublicText(value) {
-  return /\b(published|publikationsstatus|review-status|review_status|redaktionell zu prüfen|redaktionell zu pruefen|glossar-pack|professionalisiert|deep_glossary_entry|aktualisiert durch:\s*codex|updated_by:\s*codex|codex\s+anlage|no-delete|no_delete|source-hash|import-version|interne arbeitsgrundlage|interne quelle|quality_level|status im pack|pack:\s*\d+)/i.test(String(value || ""));
+  return /\b(published|publikationsstatus|review-status|review_status|redaktionell zu prüfen|redaktionell zu pruefen|glossar-pack|professionalisiert|deep_glossary_entry|aktualisiert durch:\s*codex|updated_by:\s*codex|codex\s+anlage|no-delete|no_delete|source-hash|import-version|interne arbeitsgrundlage|interne quelle|quality_level|status im pack|pack:\s*\d+|glossar-bestand|version bestand|begriffsreferenz der wirkungsökonomie|bestand stand\s*\/\s*version bestand)/i.test(String(value || ""));
 }
 
 function publicText(value) {

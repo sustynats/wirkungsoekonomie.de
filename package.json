@@ -53,6 +53,7 @@
     "check:logic-consistency": "node scripts/review/check-logic-consistency.mjs",
     "check:source-hierarchy": "node scripts/review/check-source-hierarchy.mjs",
     "check:live-reference-changelog": "node scripts/review/check-live-reference-changelog.mjs",
+    "glossary:sanitize-bestand": "node scripts/glossary/sanitize-glossar-bestand.mjs",
     "glossary:extract": "node scripts/glossary/extract-glossary.mjs",
     "glossary:build": "node scripts/glossary/build-glossary-registry.mjs && node scripts/glossary/build-term-links.mjs && node scripts/glossary/build-glossary-candidates.mjs && node scripts/glossary/build-glossary-reference-index.mjs && node scripts/glossary/build-glossary-pages.mjs",
     "glossary:check-alpha": "node scripts/glossary/check-glossary-alphabetical.mjs",

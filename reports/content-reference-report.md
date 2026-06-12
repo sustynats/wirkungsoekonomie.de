@@ -1,8 +1,8 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-12T08:08:11.274Z
-Resolved references: 826
-Warnings: 2638
+Erzeugt: 2026-06-12T08:27:58.524Z
+Resolved references: 818
+Warnings: 2819
 
 ## Warnungen
 
@@ -20,6 +20,8 @@ Warnings: 2638
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -47,6 +49,8 @@ Warnings: 2638
 - [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -63,10 +67,16 @@ Warnings: 2638
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
@@ -75,6 +85,8 @@ Warnings: 2638
 - [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] CSRD und Prüfungsstandards - Titel aus Slug erzeugt
@@ -84,10 +96,18 @@ Warnings: 2638
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkung-wirkungspotenzial-wirkungsrisiko - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -254,8 +274,8 @@ Warnings: 2638
 - [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Arbeitspapier Wirkungseinkommensteuer - Titel aus Slug erzeugt
 - [unresolved-reference] Arbeitspapier Wirkungseinkommensteuer - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Wirkungsfinanzpolitik v3 MMT Public Purpose IOI - Titel aus Slug erzeugt
-- [unresolved-reference] Wirkungsfinanzpolitik v3 MMT Public Purpose IOI - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -422,16 +442,32 @@ Warnings: 2638
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
+- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
+- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
+- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -466,42 +502,6 @@ Warnings: 2638
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
 - [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
 - [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
@@ -732,8 +732,6 @@ Warnings: 2638
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/rente-soziale-sicherung/ -> Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /begriffe/wirkungssteuergesetz/ -> Wirkungssteuergesetz (Glossarbegriff, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
@@ -742,11 +740,8 @@ Warnings: 2638
 - /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
@@ -769,7 +764,6 @@ Warnings: 2638
 - /referenz/kapitel-059-kapitalmaerkte-und-fonds/#woek-main-2026-k059-s001 -> Kapitel 59 – Kapitalmärkte und Fonds: 59.1 Kapital als Wirkungskraft (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsradar/studio/embed/kernenergie-wieder-in-deutschland/ -> Embed-Widget – Kernenergie wieder in Deutschland? (Distribution, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/rente-soziale-sicherung/ -> Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
@@ -1143,8 +1137,6 @@ Warnings: 2638
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsfelder/rente-soziale-sicherung/ -> Rente & soziale Sicherung (Wirkungsfeld, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /begriffe/wirkungssteuergesetz/ -> Wirkungssteuergesetz (Glossarbegriff, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
