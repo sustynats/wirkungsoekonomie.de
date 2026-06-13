@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T10:14:12.207Z",
+  "generatedAt": "2026-06-13T07:21:12.786Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -331,7 +331,8 @@
       "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
         "Affektheuristik",
-        "Affekt-Heuristik"
+        "Affekt-Heuristik",
+        "Affect heuristic"
       ],
       "relatedTerms": [
         "salienz",
@@ -340,7 +341,10 @@
         "emotionsregulation",
         "verfuegbarkeitsheuristik",
         "kognitive-dissonanz",
-        "affekt"
+        "affekt",
+        "angstappell",
+        "wirkungspotenzial",
+        "wirkungsbewertung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -395,7 +399,10 @@
         "astroturfing",
         "public-affairs",
         "propaganda",
-        "politischer-vorraum"
+        "politischer-vorraum",
+        "salienz",
+        "priming",
+        "wirkungsraum-oeffentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -588,6 +595,28 @@
         "wirkungsrat-konzept",
         "whitepaper-t-sroi"
       ],
+      "relatedObjections": []
+    },
+    "algorithmische-verstaerkung": {
+      "label": "Algorithmische Verstärkung",
+      "slug": "algorithmische-verstaerkung",
+      "url": "/begriffe/algorithmische-verstaerkung/",
+      "hoverDefinition": "Plattformalgorithmen erhöhen Sichtbarkeit bestimmter Inhalte und verändern dadurch öffentliche Resonanzräume.",
+      "shortDefinition": "Plattformalgorithmen erhöhen Sichtbarkeit bestimmter Inhalte und verändern dadurch öffentliche Resonanzräume.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Algorithmische Verstärkung"
+      ],
+      "relatedTerms": [
+        "filterblase",
+        "echokammer",
+        "rage-bait",
+        "informationssouveraenitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "allgemeines-gleichgewicht": {
@@ -789,6 +818,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "ambiguitaetsintoleranz": {
+      "label": "Ambiguitätsintoleranz",
+      "slug": "ambiguitaetsintoleranz",
+      "url": "/begriffe/ambiguitaetsintoleranz/",
+      "hoverDefinition": "Unsicherheit und Mehrdeutigkeit werden schlecht ausgehalten; einfache Gewissheiten erscheinen attraktiver.",
+      "shortDefinition": "Unsicherheit und Mehrdeutigkeit werden schlecht ausgehalten; einfache Gewissheiten erscheinen attraktiver.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Ambiguitätsintoleranz"
+      ],
+      "relatedTerms": [
+        "false-urgency",
+        "moralische-panik",
+        "wirkungskompetenz",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "anaerobe-vergaerung": {
       "label": "Anaerobe Vergärung",
       "slug": "anaerobe-vergaerung",
@@ -824,6 +875,28 @@
         "self-ownership",
         "non-aggression-principle",
         "oeffentliche-gueter"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "angstappell": {
+      "label": "Angstappell",
+      "slug": "angstappell",
+      "url": "/begriffe/angstappell/",
+      "hoverDefinition": "Kommunikation, die Bedrohung betont, um Aufmerksamkeit, Zustimmung oder Handlung auszulösen.",
+      "shortDefinition": "Kommunikation, die Bedrohung betont, um Aufmerksamkeit, Zustimmung oder Handlung auszulösen.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Angstappell"
+      ],
+      "relatedTerms": [
+        "affektheuristik",
+        "negativitaetsbias",
+        "moralische-panik",
+        "wirkungsrisiko"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -1546,7 +1619,11 @@
         "dark-money",
         "agenda-setting",
         "resonanzraum",
-        "gongo"
+        "gongo",
+        "manufactured-consensus",
+        "soziale-bewaehrtheit",
+        "lobbyismus",
+        "wirkungswahrheit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2169,6 +2246,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "autoritaetsbias": {
+      "label": "Autoritätsbias",
+      "slug": "autoritaetsbias",
+      "url": "/begriffe/autoritaetsbias/",
+      "hoverDefinition": "Aussagen von Autoritäten werden übergewichtet, auch wenn Belege fehlen oder Fachgrenzen überschritten werden.",
+      "shortDefinition": "Aussagen von Autoritäten werden übergewichtet, auch wenn Belege fehlen oder Fachgrenzen überschritten werden.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Autoritätsbias"
+      ],
+      "relatedTerms": [
+        "wirkungswahrheit",
+        "quellenklarheit",
+        "cognitive-ease",
+        "faktencheck"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "backend-ladeinfrastruktur": {
       "label": "Backend Ladeinfrastruktur",
       "slug": "backend-ladeinfrastruktur",
@@ -2183,6 +2282,28 @@
         "ocpp",
         "ladepunktbetreiber",
         "plug-and-charge"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "backfire-effekt": {
+      "label": "Backfire-Effekt",
+      "slug": "backfire-effekt",
+      "url": "/begriffe/backfire-effekt/",
+      "hoverDefinition": "Korrekturen können unter bestimmten Bedingungen Abwehr oder Gegenreaktionen verstärken.",
+      "shortDefinition": "Korrekturen können unter bestimmten Bedingungen Abwehr oder Gegenreaktionen verstärken.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Backfire-Effekt"
+      ],
+      "relatedTerms": [
+        "kognitive-dissonanz",
+        "motiviertes-denken",
+        "faktencheck",
+        "wirkungsbewertung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2251,6 +2372,28 @@
       "relatedTerms": [
         "halbleiter",
         "photovoltaik"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "bandwagon-effekt": {
+      "label": "Bandwagon-Effekt",
+      "slug": "bandwagon-effekt",
+      "url": "/begriffe/bandwagon-effekt/",
+      "hoverDefinition": "Menschen schließen sich Positionen eher an, wenn sie als wachsend oder mehrheitsfähig erscheinen.",
+      "shortDefinition": "Menschen schließen sich Positionen eher an, wenn sie als wachsend oder mehrheitsfähig erscheinen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Bandwagon-Effekt"
+      ],
+      "relatedTerms": [
+        "soziale-bewaehrtheit",
+        "manufactured-consensus",
+        "astroturfing",
+        "agenda-setting"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -3166,7 +3309,8 @@
       "shortDefinition": "Der Bestätigungsfehler beschreibt die Neigung, Informationen zu bevorzugen, die bestehende Überzeugungen bestätigen.",
       "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
-        "Bestätigungsfehler"
+        "Bestätigungsfehler",
+        "bestaetigungsfehler"
       ],
       "relatedTerms": [
         "motiviertes-denken",
@@ -3175,7 +3319,10 @@
         "resonanzraum",
         "wirkungsdaten",
         "wirkungsblindheit",
-        "meta-kognitive-intervention"
+        "meta-kognitive-intervention",
+        "echokammer",
+        "cherry-picking",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -3648,6 +3795,29 @@
       ],
       "relatedObjections": []
     },
+    "both-sidesism": {
+      "label": "Both-Sidesism",
+      "slug": "both-sidesism",
+      "url": "/begriffe/both-sidesism/",
+      "hoverDefinition": "Konflikte werden reflexhaft als zwei gleich legitime Seiten erzählt, auch wenn Fakten- oder Machtlage asymmetrisch ist.",
+      "shortDefinition": "Konflikte werden reflexhaft als zwei gleich legitime Seiten erzählt, auch wenn Fakten- oder Machtlage asymmetrisch ist.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Both-Sidesism",
+        "Falsche Äquidistanz"
+      ],
+      "relatedTerms": [
+        "false-balance",
+        "false-equivalence",
+        "quellenklarheit",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "brennstoffkette": {
       "label": "Brennstoffkette",
       "slug": "brennstoffkette",
@@ -3665,6 +3835,29 @@
         "energietraegerstrom",
         "umwandlungskette",
         "fossiles-kraftwerk"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "bullshit-asymmetrie-brandolinis-gesetz": {
+      "label": "Bullshit-Asymmetrie / Brandolinis Gesetz",
+      "slug": "bullshit-asymmetrie-brandolinis-gesetz",
+      "url": "/begriffe/bullshit-asymmetrie-brandolinis-gesetz/",
+      "hoverDefinition": "Das Widerlegen falscher Behauptungen braucht deutlich mehr Aufwand als ihre Produktion.",
+      "shortDefinition": "Das Widerlegen falscher Behauptungen braucht deutlich mehr Aufwand als ihre Produktion.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Bullshit-Asymmetrie / Brandolinis Gesetz",
+        "Brandolinis Gesetz"
+      ],
+      "relatedTerms": [
+        "gish-galopp",
+        "firehose-of-falsehood",
+        "faktencheck",
+        "wirkungsrueckkopplung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -3924,6 +4117,28 @@
         "geschaeftsmodellpruefung",
         "stranded-assets",
         "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "bystander-effekt": {
+      "label": "Bystander-Effekt",
+      "slug": "bystander-effekt",
+      "url": "/begriffe/bystander-effekt/",
+      "hoverDefinition": "Menschen greifen seltener ein, wenn viele andere anwesend sind oder zuständig erscheinen.",
+      "shortDefinition": "Menschen greifen seltener ein, wenn viele andere anwesend sind oder zuständig erscheinen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Bystander-Effekt"
+      ],
+      "relatedTerms": [
+        "verantwortungsdiffusion",
+        "soziale-sanktionierung",
+        "moderationsstandards",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -4260,6 +4475,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "cherry-picking": {
+      "label": "Cherry Picking",
+      "slug": "cherry-picking",
+      "url": "/begriffe/cherry-picking/",
+      "hoverDefinition": "Nur passende Daten oder Beispiele werden ausgewählt; widersprechende Evidenz bleibt unsichtbar.",
+      "shortDefinition": "Nur passende Daten oder Beispiele werden ausgewählt; widersprechende Evidenz bleibt unsichtbar.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Cherry Picking"
+      ],
+      "relatedTerms": [
+        "bestaetigungsfehler",
+        "quote-mining",
+        "impact-washing",
+        "netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "chicago-school": {
       "label": "Chicago School",
       "slug": "chicago-school",
@@ -4465,6 +4702,28 @@
         "externalitaet",
         "transaktionskosten",
         "eigentumsrechte"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "cognitive-ease": {
+      "label": "Cognitive Ease",
+      "slug": "cognitive-ease",
+      "url": "/begriffe/cognitive-ease/",
+      "hoverDefinition": "Leicht verarbeitete Informationen fühlen sich vertrauter, wahrer und plausibler an.",
+      "shortDefinition": "Leicht verarbeitete Informationen fühlen sich vertrauter, wahrer und plausibler an.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Cognitive Ease"
+      ],
+      "relatedTerms": [
+        "wahrheitsillusionseffekt",
+        "framing",
+        "reichweite",
+        "wirkungswahrheit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -5342,6 +5601,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "deformation-professionnelle": {
+      "label": "Déformation professionnelle",
+      "slug": "deformation-professionnelle",
+      "url": "/begriffe/deformation-professionnelle/",
+      "hoverDefinition": "Berufliche Perspektiven verengen die Wahrnehmung anderer Wirkungsdimensionen.",
+      "shortDefinition": "Berufliche Perspektiven verengen die Wahrnehmung anderer Wirkungsdimensionen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Déformation professionnelle"
+      ],
+      "relatedTerms": [
+        "wirkungsblindheit",
+        "interdisziplinaritaet",
+        "systemkompetenz",
+        "wirkungsaudit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "degradation-batterie": {
       "label": "Degradation",
       "slug": "degradation-batterie",
@@ -5357,6 +5638,28 @@
         "batteriealterung",
         "state-of-health",
         "zyklenfestigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "dehumanisierung": {
+      "label": "Dehumanisierung",
+      "slug": "dehumanisierung",
+      "url": "/begriffe/dehumanisierung/",
+      "hoverDefinition": "Menschen oder Gruppen werden sprachlich oder bildlich entmenschlicht.",
+      "shortDefinition": "Menschen oder Gruppen werden sprachlich oder bildlich entmenschlicht.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Dehumanisierung"
+      ],
+      "relatedTerms": [
+        "dog-whistle",
+        "suendenbockmechanismus",
+        "moralische-panik",
+        "wirkungsgrenze"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -5897,6 +6200,28 @@
         "ladehub",
         "megawatt-charging-system",
         "dynamisches-lastmanagement"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "derailing-themenverschiebung": {
+      "label": "Derailing / Themenverschiebung",
+      "slug": "derailing-themenverschiebung",
+      "url": "/begriffe/derailing-themenverschiebung/",
+      "hoverDefinition": "Eine Debatte wird vom eigentlichen Thema auf Nebenschauplätze verschoben.",
+      "shortDefinition": "Eine Debatte wird vom eigentlichen Thema auf Nebenschauplätze verschoben.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Derailing / Themenverschiebung"
+      ],
+      "relatedTerms": [
+        "red-herring",
+        "whataboutism",
+        "tone-policing",
+        "agenda-setting"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6765,6 +7090,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "dog-whistle": {
+      "label": "Dog Whistle",
+      "slug": "dog-whistle",
+      "url": "/begriffe/dog-whistle/",
+      "hoverDefinition": "Codierte Sprache sendet eine Botschaft an eine Zielgruppe, bleibt für andere scheinbar harmlos.",
+      "shortDefinition": "Codierte Sprache sendet eine Botschaft an eine Zielgruppe, bleibt für andere scheinbar harmlos.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Dog Whistle"
+      ],
+      "relatedTerms": [
+        "resonanzraum",
+        "overton-fenster",
+        "motte-and-bailey",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "dominanzlogik": {
       "label": "Dominanzlogik",
       "slug": "dominanzlogik",
@@ -7088,6 +7435,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "dunning-kruger-effekt": {
+      "label": "Dunning-Kruger-Effekt",
+      "slug": "dunning-kruger-effekt",
+      "url": "/begriffe/dunning-kruger-effekt/",
+      "hoverDefinition": "Geringe Kompetenz kann mit überschätzter eigener Urteilsfähigkeit einhergehen.",
+      "shortDefinition": "Geringe Kompetenz kann mit überschätzter eigener Urteilsfähigkeit einhergehen.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Dunning-Kruger-Effekt"
+      ],
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "cognitive-ease",
+        "autoritaetsbias",
+        "pluralistische-ignoranz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "dynamischer-stromtarif": {
       "label": "Dynamischer Stromtarif",
       "slug": "dynamischer-stromtarif",
@@ -7233,6 +7602,28 @@
         "agenda-2030",
         "sdg-plus",
         "wirkungsoekonomie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "echokammer": {
+      "label": "Echokammer",
+      "slug": "echokammer",
+      "url": "/begriffe/echokammer/",
+      "hoverDefinition": "Menschen begegnen überwiegend bestätigenden Stimmen, während Widerspruch schwächer wird.",
+      "shortDefinition": "Menschen begegnen überwiegend bestätigenden Stimmen, während Widerspruch schwächer wird.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Echokammer"
+      ],
+      "relatedTerms": [
+        "filterblase",
+        "bestaetigungsfehler",
+        "soziale-fragmentierung",
+        "schweigespirale"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7497,6 +7888,28 @@
         "ladepunktbetreiber",
         "ad-hoc-laden",
         "plug-and-charge"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "eigengruppen-homogenitaetsverzerrung": {
+      "label": "Eigengruppen-Homogenitätsverzerrung",
+      "slug": "eigengruppen-homogenitaetsverzerrung",
+      "url": "/begriffe/eigengruppen-homogenitaetsverzerrung/",
+      "hoverDefinition": "Die eigene Gruppe wird homogener wahrgenommen, als sie tatsächlich ist.",
+      "shortDefinition": "Die eigene Gruppe wird homogener wahrgenommen, als sie tatsächlich ist.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Eigengruppen-Homogenitätsverzerrung"
+      ],
+      "relatedTerms": [
+        "gruppendenken",
+        "normative-konformitaet",
+        "pluralistische-ignoranz",
+        "schweigespirale"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7925,6 +8338,29 @@
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "relatedObjections": []
+    },
+    "empoerungsbewirtschaftung": {
+      "label": "Empörungsbewirtschaftung",
+      "slug": "empoerungsbewirtschaftung",
+      "url": "/begriffe/empoerungsbewirtschaftung/",
+      "hoverDefinition": "Empörung wird systematisch erzeugt, verstärkt oder monetarisiert.",
+      "shortDefinition": "Empörung wird systematisch erzeugt, verstärkt oder monetarisiert.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Empörungsbewirtschaftung",
+        "Outrage Cycle"
+      ],
+      "relatedTerms": [
+        "rage-bait",
+        "negativitaetsbias",
+        "intermittent-reinforcement",
+        "oeffentlichkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "empowering-consumers-green-transition": {
@@ -10094,12 +10530,84 @@
       "category": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
       "synonyms": [
         "False Balance",
-        "falsche Ausgewogenheit"
+        "falsche Ausgewogenheit",
+        "false-balance"
       ],
       "relatedTerms": [
         "selektive-evidenz",
         "klimawandel",
-        "medienqualitaet"
+        "medienqualitaet",
+        "both-sidesism",
+        "false-equivalence",
+        "hostile-media-effect",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "false-consensus-effect": {
+      "label": "False Consensus Effect",
+      "slug": "false-consensus-effect",
+      "url": "/begriffe/false-consensus-effect/",
+      "hoverDefinition": "Menschen überschätzen, wie stark andere ihre eigenen Ansichten, Werte oder Verhaltensweisen teilen.",
+      "shortDefinition": "Menschen überschätzen, wie stark andere ihre eigenen Ansichten, Werte oder Verhaltensweisen teilen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "False Consensus Effect"
+      ],
+      "relatedTerms": [
+        "pluralistische-ignoranz",
+        "soziale-bewaehrtheit",
+        "echokammer",
+        "manufactured-consensus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "false-equivalence": {
+      "label": "False Equivalence",
+      "slug": "false-equivalence",
+      "url": "/begriffe/false-equivalence/",
+      "hoverDefinition": "Unterschiedliche Sachverhalte werden als gleichwertig dargestellt, obwohl relevante Unterschiede bestehen.",
+      "shortDefinition": "Unterschiedliche Sachverhalte werden als gleichwertig dargestellt, obwohl relevante Unterschiede bestehen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "False Equivalence",
+        "Falsche Gleichsetzung"
+      ],
+      "relatedTerms": [
+        "false-balance",
+        "both-sidesism",
+        "tu-quoque",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "false-urgency-kuenstliche-dringlichkeit": {
+      "label": "False Urgency / Künstliche Dringlichkeit",
+      "slug": "false-urgency-kuenstliche-dringlichkeit",
+      "url": "/begriffe/false-urgency-kuenstliche-dringlichkeit/",
+      "hoverDefinition": "Zeitdruck wird erzeugt, um Prüfung, Beteiligung oder Abwägung zu verkürzen.",
+      "shortDefinition": "Zeitdruck wird erzeugt, um Prüfung, Beteiligung oder Abwägung zu verkürzen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "False Urgency / Künstliche Dringlichkeit"
+      ],
+      "relatedTerms": [
+        "angstappell",
+        "moralische-panik",
+        "reueaversion",
+        "wirkungsaudit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -10476,6 +10984,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "filterblase": {
+      "label": "Filterblase",
+      "slug": "filterblase",
+      "url": "/begriffe/filterblase/",
+      "hoverDefinition": "Algorithmische oder persönliche Auswahl begrenzt die Vielfalt sichtbarer Informationen.",
+      "shortDefinition": "Algorithmische oder persönliche Auswahl begrenzt die Vielfalt sichtbarer Informationen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Filterblase"
+      ],
+      "relatedTerms": [
+        "echokammer",
+        "plattformlogik-und-algorithmen",
+        "informationssouveraenitaet",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "finalscore": {
       "label": "FinalScore",
       "slug": "finalscore",
@@ -10639,6 +11169,28 @@
       ],
       "relatedObjections": []
     },
+    "firehose-of-falsehood": {
+      "label": "Firehose of Falsehood",
+      "slug": "firehose-of-falsehood",
+      "url": "/begriffe/firehose-of-falsehood/",
+      "hoverDefinition": "Sehr viele widersprüchliche oder falsche Botschaften werden schnell, wiederholt und über viele Kanäle verbreitet.",
+      "shortDefinition": "Sehr viele widersprüchliche oder falsche Botschaften werden schnell, wiederholt und über viele Kanäle verbreitet.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Firehose of Falsehood"
+      ],
+      "relatedTerms": [
+        "flood-the-zone",
+        "gish-galopp",
+        "bullshit-asymmetrie",
+        "wirkungsresilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "fit-for-55": {
       "label": "Fit for 55",
       "slug": "fit-for-55",
@@ -10702,6 +11254,28 @@
         "lastmanagement",
         "speicher-energie",
         "netzdienlichkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "flood-the-zone": {
+      "label": "Flood-the-Zone",
+      "slug": "flood-the-zone",
+      "url": "/begriffe/flood-the-zone/",
+      "hoverDefinition": "Der Informationsraum wird mit Inhalten geflutet, damit Orientierung, Relevanz und Prüfung zusammenbrechen.",
+      "shortDefinition": "Der Informationsraum wird mit Inhalten geflutet, damit Orientierung, Relevanz und Prüfung zusammenbrechen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Flood-the-Zone"
+      ],
+      "relatedTerms": [
+        "firehose-of-falsehood",
+        "gish-galopp",
+        "derailing",
+        "agenda-setting"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -10958,7 +11532,9 @@
         "frame",
         "tonalitaet",
         "wirkungspfad",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "gegenframe",
+        "wirkpfad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -11288,6 +11864,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "frequenzillusion": {
+      "label": "Frequenzillusion",
+      "slug": "frequenzillusion",
+      "url": "/begriffe/frequenzillusion/",
+      "hoverDefinition": "Was einmal auffällt, scheint plötzlich überall aufzutauchen.",
+      "shortDefinition": "Was einmal auffällt, scheint plötzlich überall aufzutauchen.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Frequenzillusion"
+      ],
+      "relatedTerms": [
+        "verfuegbarkeitsheuristik",
+        "agenda-setting",
+        "filterblase",
+        "moralische-panik"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "friedlicher-machtwechsel": {
       "label": "Friedlicher Machtwechsel",
       "slug": "friedlicher-machtwechsel",
@@ -11364,6 +11962,28 @@
         "autoritarismus",
         "demokratieprinzip",
         "fuehrerkult"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "fundamentaler-attributionsfehler": {
+      "label": "Fundamentaler Attributionsfehler",
+      "slug": "fundamentaler-attributionsfehler",
+      "url": "/begriffe/fundamentaler-attributionsfehler/",
+      "hoverDefinition": "Verhalten anderer wird zu stark ihrer Persönlichkeit zugeschrieben und zu wenig dem Kontext.",
+      "shortDefinition": "Verhalten anderer wird zu stark ihrer Persönlichkeit zugeschrieben und zu wenig dem Kontext.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Fundamentaler Attributionsfehler"
+      ],
+      "relatedTerms": [
+        "suendenbockmechanismus",
+        "resonanzraum",
+        "wirkungsblindheit",
+        "systemischer-wert"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -12594,6 +13214,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "gish-galopp": {
+      "label": "Gish-Galopp",
+      "slug": "gish-galopp",
+      "url": "/begriffe/gish-galopp/",
+      "hoverDefinition": "Sehr viele Behauptungen werden schnell hintereinander gesetzt, sodass Prüfung kaum möglich ist.",
+      "shortDefinition": "Sehr viele Behauptungen werden schnell hintereinander gesetzt, sodass Prüfung kaum möglich ist.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Gish-Galopp"
+      ],
+      "relatedTerms": [
+        "bullshit-asymmetrie",
+        "flood-the-zone",
+        "firehose-of-falsehood",
+        "faktencheck"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "glaeserne-decke": {
       "label": "Gläserne Decke",
       "slug": "glaeserne-decke",
@@ -13665,6 +14307,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "gruppendenken": {
+      "label": "Gruppendenken",
+      "slug": "gruppendenken",
+      "url": "/begriffe/gruppendenken/",
+      "hoverDefinition": "Der Wunsch nach Einigkeit verdrängt kritische Prüfung und Alternativen.",
+      "shortDefinition": "Der Wunsch nach Einigkeit verdrängt kritische Prüfung und Alternativen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Gruppendenken"
+      ],
+      "relatedTerms": [
+        "normative-konformitaet",
+        "schweigespirale",
+        "pluralistische-ignoranz",
+        "wirkungsaudit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "habitatfragmentierung": {
       "label": "Habitatfragmentierung",
       "slug": "habitatfragmentierung",
@@ -13735,6 +14399,28 @@
         "photovoltaik",
         "quantenphysik",
         "quantenpunkt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "halo-effekt": {
+      "label": "Halo-Effekt",
+      "slug": "halo-effekt",
+      "url": "/begriffe/halo-effekt/",
+      "hoverDefinition": "Ein positives Merkmal überstrahlt die Bewertung anderer Merkmale.",
+      "shortDefinition": "Ein positives Merkmal überstrahlt die Bewertung anderer Merkmale.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Halo-Effekt"
+      ],
+      "relatedTerms": [
+        "sympathie-verzerrung",
+        "greenwashing",
+        "reverse-merit-order",
+        "wirkungsaudit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -14808,6 +15494,28 @@
       ],
       "relatedObjections": []
     },
+    "hostile-media-effect": {
+      "label": "Hostile Media Effect",
+      "slug": "hostile-media-effect",
+      "url": "/begriffe/hostile-media-effect/",
+      "hoverDefinition": "Ausgewogene Berichterstattung wird von stark positionierten Gruppen als feindlich gegen die eigene Seite erlebt.",
+      "shortDefinition": "Ausgewogene Berichterstattung wird von stark positionierten Gruppen als feindlich gegen die eigene Seite erlebt.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Hostile Media Effect"
+      ],
+      "relatedTerms": [
+        "medienvertrauen",
+        "false-balance",
+        "bestaetigungsfehler",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "hotspot-analyse": {
       "label": "Hotspot-Analyse",
       "slug": "hotspot-analyse",
@@ -15577,14 +16285,22 @@
         "Ingroup-Outgroup-Dynamik",
         "In-Group-Dynamik",
         "Out-Group-Dynamik",
-        "Gruppendynamik"
+        "Gruppendynamik",
+        "Eigengruppen-/Fremdgruppenverzerrung",
+        "Ingroup-/Outgroup-Bias",
+        "Ingroup-Outgroup-Bias",
+        "eigengruppen-fremdgruppenverzerrung"
       ],
       "relatedTerms": [
         "identitaetsschutz",
         "motiviertes-denken",
         "destruktives-narrativ",
         "vertrauensverschiebung",
-        "xenophobie"
+        "xenophobie",
+        "ingroup-outgroup-dynamik",
+        "outgroup-homogenitaet",
+        "resonanzraum",
+        "kontakt-hypothese"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -16006,6 +16722,28 @@
         "advocacy-organisation",
         "buergerinitiative",
         "legitimer-lobbyismus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "intermittent-reinforcement": {
+      "label": "Intermittent Reinforcement",
+      "slug": "intermittent-reinforcement",
+      "url": "/begriffe/intermittent-reinforcement/",
+      "hoverDefinition": "Unregelmäßige Belohnung verstärkt Verhalten besonders hartnäckig.",
+      "shortDefinition": "Unregelmäßige Belohnung verstärkt Verhalten besonders hartnäckig.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Intermittent Reinforcement"
+      ],
+      "relatedTerms": [
+        "rage-bait",
+        "empoerungsbewirtschaftung",
+        "plattformlogik",
+        "soziale-ansteckung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -17516,6 +18254,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "knallzeugen-effekt-blitzlichterinnerung": {
+      "label": "Knallzeugen-Effekt / Blitzlichterinnerung",
+      "slug": "knallzeugen-effekt-blitzlichterinnerung",
+      "url": "/begriffe/knallzeugen-effekt-blitzlichterinnerung/",
+      "hoverDefinition": "Emotional intensive Ereignisse werden besonders lebhaft erinnert, aber nicht zwingend genauer.",
+      "shortDefinition": "Emotional intensive Ereignisse werden besonders lebhaft erinnert, aber nicht zwingend genauer.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Knallzeugen-Effekt / Blitzlichterinnerung",
+        "Flashbulb Memory",
+        "Knallzeugen Effekt"
+      ],
+      "relatedTerms": [
+        "salienz",
+        "verfuegbarkeitsheuristik",
+        "moralische-panik",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "knappheit": {
       "label": "Knappheit",
       "slug": "knappheit",
@@ -17568,7 +18330,8 @@
       "shortDefinition": "Kognitive Dissonanz ist ein innerer Spannungszustand, der entsteht, wenn Wahrnehmung, Erwartung, Selbstbild, Überzeugung oder Realität nicht zusammenpassen.",
       "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
-        "Kognitive Dissonanz"
+        "Kognitive Dissonanz",
+        "kognitive-dissonanz"
       ],
       "relatedTerms": [
         "wirkungspotenzial",
@@ -17588,7 +18351,9 @@
         "scheinentlastung",
         "alarm-frame",
         "kohaerenz",
-        "praediktive-verarbeitung"
+        "praediktive-verarbeitung",
+        "backfire-effekt",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -18042,6 +18807,51 @@
         "praeferenzen",
         "vollstaendige-information",
         "wirkungsdaten"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "kontakthypothese": {
+      "label": "Kontakthypothese",
+      "slug": "kontakthypothese",
+      "url": "/begriffe/kontakthypothese/",
+      "hoverDefinition": "Unter geeigneten Bedingungen kann Kontakt zwischen Gruppen Vorurteile abbauen.",
+      "shortDefinition": "Unter geeigneten Bedingungen kann Kontakt zwischen Gruppen Vorurteile abbauen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Kontakthypothese"
+      ],
+      "relatedTerms": [
+        "outgroup-homogenitaet",
+        "soziale-fragmentierung",
+        "teilhabe",
+        "wirkungsraum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "kontaktschuld": {
+      "label": "Kontaktschuld",
+      "slug": "kontaktschuld",
+      "url": "/begriffe/kontaktschuld/",
+      "hoverDefinition": "Eine Person oder Position wird abgewertet, weil sie mit einer missbilligten Person oder Gruppe in Verbindung gebracht wird.",
+      "shortDefinition": "Eine Person oder Position wird abgewertet, weil sie mit einer missbilligten Person oder Gruppe in Verbindung gebracht wird.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Kontaktschuld",
+        "Guilt by Association"
+      ],
+      "relatedTerms": [
+        "kontaktschuld",
+        "derailing",
+        "ingroup-bias",
+        "diskursfaehigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -20430,6 +21240,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "manufactured-consensus": {
+      "label": "Manufactured Consensus",
+      "slug": "manufactured-consensus",
+      "url": "/begriffe/manufactured-consensus/",
+      "hoverDefinition": "Konsens oder Mehrheitsmeinung wird künstlich erzeugt oder simuliert.",
+      "shortDefinition": "Konsens oder Mehrheitsmeinung wird künstlich erzeugt oder simuliert.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Manufactured Consensus",
+        "Künstlicher Konsens"
+      ],
+      "relatedTerms": [
+        "astroturfing",
+        "soziale-bewaehrtheit",
+        "pluralistische-ignoranz",
+        "schweigespirale"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "marktgleichgewicht": {
       "label": "Marktgleichgewicht",
       "slug": "marktgleichgewicht",
@@ -21942,6 +22775,51 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "moralische-entkopplung": {
+      "label": "Moralische Entkopplung",
+      "slug": "moralische-entkopplung",
+      "url": "/begriffe/moralische-entkopplung/",
+      "hoverDefinition": "Menschen lösen eigenes Handeln von moralischer Verantwortung ab.",
+      "shortDefinition": "Menschen lösen eigenes Handeln von moralischer Verantwortung ab.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Moralische Entkopplung",
+        "Moral Disengagement"
+      ],
+      "relatedTerms": [
+        "verantwortungsdiffusion",
+        "resonanzraum",
+        "impact-washing",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "moralische-panik": {
+      "label": "Moralische Panik",
+      "slug": "moralische-panik",
+      "url": "/begriffe/moralische-panik/",
+      "hoverDefinition": "Eine Gruppe, Praxis oder Entwicklung wird als übergroße Bedrohung für Gesellschaft und Werte dargestellt.",
+      "shortDefinition": "Eine Gruppe, Praxis oder Entwicklung wird als übergroße Bedrohung für Gesellschaft und Werte dargestellt.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Moralische Panik"
+      ],
+      "relatedTerms": [
+        "angstappell",
+        "suendenbockmechanismus",
+        "verfuegbarkeitsheuristik",
+        "false-urgency"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "motiviertes-denken": {
       "label": "Motiviertes Denken",
       "slug": "motiviertes-denken",
@@ -21950,7 +22828,9 @@
       "shortDefinition": "Motiviertes Denken beschreibt Informationsverarbeitung, bei der Menschen Informationen danach bewerten, ob sie das eigene Weltbild, die eigene Identität oder Gruppenzugehörigkeit stabilisieren.",
       "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
-        "Motiviertes Denken"
+        "Motiviertes Denken",
+        "Motivated Reasoning",
+        "motivated-reasoning"
       ],
       "relatedTerms": [
         "identitaetsschutz",
@@ -21963,7 +22843,9 @@
         "meta-kognitive-intervention",
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
-        "ingroup-outgroup-dynamik"
+        "ingroup-outgroup-dynamik",
+        "echokammer",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -21971,6 +22853,50 @@
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "relatedObjections": []
+    },
+    "motte-and-bailey": {
+      "label": "Motte-and-Bailey",
+      "slug": "motte-and-bailey",
+      "url": "/begriffe/motte-and-bailey/",
+      "hoverDefinition": "Eine starke, strittige Behauptung wird bei Kritik auf eine schwächere, triviale Behauptung zurückgezogen.",
+      "shortDefinition": "Eine starke, strittige Behauptung wird bei Kritik auf eine schwächere, triviale Behauptung zurückgezogen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Motte-and-Bailey"
+      ],
+      "relatedTerms": [
+        "strohmann",
+        "moving-the-goalposts",
+        "dog-whistle",
+        "wirkungswahrheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "moving-the-goalposts": {
+      "label": "Moving the Goalposts",
+      "slug": "moving-the-goalposts",
+      "url": "/begriffe/moving-the-goalposts/",
+      "hoverDefinition": "Bewertungskriterien werden nachträglich verschoben, sobald eine Forderung erfüllt ist.",
+      "shortDefinition": "Bewertungskriterien werden nachträglich verschoben, sobald eine Forderung erfüllt ist.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Moving the Goalposts"
+      ],
+      "relatedTerms": [
+        "sealioning",
+        "nirvana-fehlschluss",
+        "wirkungsregister",
+        "wirkungsaudit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "muslimfeindlichkeit": {
@@ -22475,10 +23401,15 @@
       "shortDefinition": "Negativitätsbias beschreibt die Tendenz, negative Informationen stärker zu beachten und zu gewichten als positive.",
       "category": "Neuropsychologische Wirkmechanismen",
       "synonyms": [
-        "Negativitätsbias"
+        "Negativitätsbias",
+        "negativitaetsbias"
       ],
       "relatedTerms": [
-        "alarm-frame"
+        "alarm-frame",
+        "angstappell",
+        "empoerungsbewirtschaftung",
+        "rage-bait",
+        "pessimismus-bias"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23595,6 +24526,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "nirvana-fehlschluss": {
+      "label": "Nirvana-Fehlschluss",
+      "slug": "nirvana-fehlschluss",
+      "url": "/begriffe/nirvana-fehlschluss/",
+      "hoverDefinition": "Eine realistische Verbesserung wird abgewertet, weil sie nicht perfekt ist.",
+      "shortDefinition": "Eine realistische Verbesserung wird abgewertet, weil sie nicht perfekt ist.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Nirvana-Fehlschluss"
+      ],
+      "relatedTerms": [
+        "moving-the-goalposts",
+        "wirkungsresilienz",
+        "lernende-systeme",
+        "netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "nmc-batterie": {
       "label": "NMC-Batterie",
       "slug": "nmc-batterie",
@@ -23634,6 +24587,28 @@
         "resilienz",
         "klimafolgeschaeden",
         "wirkungshaushalt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nocebo-effekt": {
+      "label": "Nocebo-Effekt",
+      "slug": "nocebo-effekt",
+      "url": "/begriffe/nocebo-effekt/",
+      "hoverDefinition": "Negative Erwartungen können tatsächliche negative Erfahrungen, Symptome oder Bewertungen verstärken.",
+      "shortDefinition": "Negative Erwartungen können tatsächliche negative Erfahrungen, Symptome oder Bewertungen verstärken.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Nocebo-Effekt"
+      ],
+      "relatedTerms": [
+        "placebo-effekt",
+        "angstappell",
+        "pessimismus-bias",
+        "wirkungsrisiko"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23695,6 +24670,28 @@
       ],
       "relatedObjections": []
     },
+    "normalisierungseffekt": {
+      "label": "Normalisierungseffekt",
+      "slug": "normalisierungseffekt",
+      "url": "/begriffe/normalisierungseffekt/",
+      "hoverDefinition": "Wiederholung oder Gewöhnung lässt zuvor problematische Aussagen, Praktiken oder Grenzverletzungen normal erscheinen.",
+      "shortDefinition": "Wiederholung oder Gewöhnung lässt zuvor problematische Aussagen, Praktiken oder Grenzverletzungen normal erscheinen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Normalisierungseffekt"
+      ],
+      "relatedTerms": [
+        "overton-fenster",
+        "wahrheitsillusionseffekt",
+        "resonanzraum",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "normalladen": {
       "label": "Normalladen",
       "slug": "normalladen",
@@ -23708,6 +24705,28 @@
       "relatedTerms": [
         "ac-laden",
         "smart-charging"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "normative-konformitaet": {
+      "label": "Normative Konformität",
+      "slug": "normative-konformitaet",
+      "url": "/begriffe/normative-konformitaet/",
+      "hoverDefinition": "Menschen passen sich an, um Zugehörigkeit zu behalten oder Ablehnung zu vermeiden.",
+      "shortDefinition": "Menschen passen sich an, um Zugehörigkeit zu behalten oder Ablehnung zu vermeiden.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Normative Konformität"
+      ],
+      "relatedTerms": [
+        "pluralistische-ignoranz",
+        "schweigespirale",
+        "gruppendenken",
+        "soziale-sanktionierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23753,6 +24772,28 @@
         "operatives-management",
         "mensch-planet-demokratie",
         "st-galler-management-modell"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nostalgie-effekt": {
+      "label": "Nostalgie-Effekt",
+      "slug": "nostalgie-effekt",
+      "url": "/begriffe/nostalgie-effekt/",
+      "hoverDefinition": "Vergangenheit wird idealisiert; Gegenwart und Zukunft erscheinen dadurch schlechter oder bedrohlicher.",
+      "shortDefinition": "Vergangenheit wird idealisiert; Gegenwart und Zukunft erscheinen dadurch schlechter oder bedrohlicher.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Nostalgie-Effekt"
+      ],
+      "relatedTerms": [
+        "gegenframe",
+        "overton-fenster",
+        "status-quo-bias",
+        "normalisierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -24965,6 +26006,50 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "outgroup-homogenitaet": {
+      "label": "Outgroup-Homogenität",
+      "slug": "outgroup-homogenitaet",
+      "url": "/begriffe/outgroup-homogenitaet/",
+      "hoverDefinition": "Mitglieder fremder Gruppen werden als ähnlicher wahrgenommen, als sie sind.",
+      "shortDefinition": "Mitglieder fremder Gruppen werden als ähnlicher wahrgenommen, als sie sind.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Outgroup-Homogenität"
+      ],
+      "relatedTerms": [
+        "suendenbockmechanismus",
+        "resonanzraum",
+        "kontakthypothese",
+        "false-equivalence"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "overton-fenster": {
+      "label": "Overton-Fenster",
+      "slug": "overton-fenster",
+      "url": "/begriffe/overton-fenster/",
+      "hoverDefinition": "Der Bereich des öffentlich Sagbaren und politisch Vorstellbaren verschiebt sich.",
+      "shortDefinition": "Der Bereich des öffentlich Sagbaren und politisch Vorstellbaren verschiebt sich.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Overton-Fenster"
+      ],
+      "relatedTerms": [
+        "normalisierungseffekt",
+        "dog-whistle",
+        "gegenframe",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "pai": {
       "label": "PAI / Principal Adverse Impacts",
       "slug": "pai",
@@ -25307,6 +26392,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "peer-influence": {
+      "label": "Peer Influence",
+      "slug": "peer-influence",
+      "url": "/begriffe/peer-influence/",
+      "hoverDefinition": "Gleichaltrige oder Bezugsgruppen beeinflussen Verhalten, Einstellungen und Normen.",
+      "shortDefinition": "Gleichaltrige oder Bezugsgruppen beeinflussen Verhalten, Einstellungen und Normen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Peer Influence"
+      ],
+      "relatedTerms": [
+        "soziale-sanktionierung",
+        "soziale-bewaehrtheit",
+        "normative-konformitaet",
+        "soziale-ansteckung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "pef-product-environmental-footprint": {
       "label": "PEF / Product Environmental Footprint",
       "slug": "pef-product-environmental-footprint",
@@ -25395,6 +26502,28 @@
         "fuehrerkult",
         "autokratie",
         "state-capture"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "pessimismus-bias": {
+      "label": "Pessimismus-Bias",
+      "slug": "pessimismus-bias",
+      "url": "/begriffe/pessimismus-bias/",
+      "hoverDefinition": "Zukünftige Entwicklungen werden systematisch negativer eingeschätzt, als die Datenlage hergibt.",
+      "shortDefinition": "Zukünftige Entwicklungen werden systematisch negativer eingeschätzt, als die Datenlage hergibt.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Pessimismus-Bias"
+      ],
+      "relatedTerms": [
+        "negativitaetsbias",
+        "angstappell",
+        "selbstwirksamkeit",
+        "wirkungsresilienz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -25735,6 +26864,28 @@
       ],
       "relatedObjections": []
     },
+    "placebo-effekt": {
+      "label": "Placebo-Effekt",
+      "slug": "placebo-effekt",
+      "url": "/begriffe/placebo-effekt/",
+      "hoverDefinition": "Positive Erwartung kann Wahrnehmung, Verhalten oder körperliches Erleben verbessern.",
+      "shortDefinition": "Positive Erwartung kann Wahrnehmung, Verhalten oder körperliches Erleben verbessern.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Placebo-Effekt"
+      ],
+      "relatedTerms": [
+        "nocebo-effekt",
+        "selbstwirksamkeit",
+        "wirkungspotenzial",
+        "gesundheitskompetenz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "planetare-grenzen": {
       "label": "Planetare Grenzen",
       "slug": "planetare-grenzen",
@@ -26046,6 +27197,28 @@
         "theokratie",
         "mediengleichschaltung",
         "pluralismus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "pluralistische-ignoranz": {
+      "label": "Pluralistische Ignoranz",
+      "slug": "pluralistische-ignoranz",
+      "url": "/begriffe/pluralistische-ignoranz/",
+      "hoverDefinition": "Viele teilen privat Zweifel, halten sich aber fälschlich für allein damit.",
+      "shortDefinition": "Viele teilen privat Zweifel, halten sich aber fälschlich für allein damit.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Pluralistische Ignoranz"
+      ],
+      "relatedTerms": [
+        "schweigespirale",
+        "normative-konformitaet",
+        "gruppendenken",
+        "manufactured-consensus"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -26981,7 +28154,9 @@
         "normalisierung",
         "strukturelles-driften",
         "wirkstoff",
-        "ankereffekt"
+        "ankereffekt",
+        "agenda-setting",
+        "angstappell"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -27530,6 +28705,28 @@
         "thinktank",
         "policy-entrepreneurship",
         "politischer-vorraum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "projektions-bias": {
+      "label": "Projektions-Bias",
+      "slug": "projektions-bias",
+      "url": "/begriffe/projektions-bias/",
+      "hoverDefinition": "Eigene Gefühle, Motive oder Präferenzen werden auf andere Menschen oder Gruppen übertragen.",
+      "shortDefinition": "Eigene Gefühle, Motive oder Präferenzen werden auf andere Menschen oder Gruppen übertragen.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Projektions-Bias"
+      ],
+      "relatedTerms": [
+        "false-consensus",
+        "ingroup-bias",
+        "partizipation",
+        "wirkungsempfaenger"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28355,6 +29552,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "quote-mining-dekontextualisierung": {
+      "label": "Quote Mining / Dekontextualisierung",
+      "slug": "quote-mining-dekontextualisierung",
+      "url": "/begriffe/quote-mining-dekontextualisierung/",
+      "hoverDefinition": "Aussagen werden aus dem Zusammenhang gelöst, sodass ihre Bedeutung verzerrt wird.",
+      "shortDefinition": "Aussagen werden aus dem Zusammenhang gelöst, sodass ihre Bedeutung verzerrt wird.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Quote Mining / Dekontextualisierung",
+        "Dekontextualisierung"
+      ],
+      "relatedTerms": [
+        "cherry-picking",
+        "framing",
+        "wirkungswahrheit",
+        "faktencheck"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "radikal": {
       "label": "Radikal",
       "slug": "radikal",
@@ -28368,6 +29588,28 @@
       "relatedTerms": [
         "extremismus",
         "extrem"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "rage-bait": {
+      "label": "Rage Bait",
+      "slug": "rage-bait",
+      "url": "/begriffe/rage-bait/",
+      "hoverDefinition": "Inhalte werden so gestaltet, dass sie Wut, Spott oder aggressive Reaktion auslösen.",
+      "shortDefinition": "Inhalte werden so gestaltet, dass sie Wut, Spott oder aggressive Reaktion auslösen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Rage Bait"
+      ],
+      "relatedTerms": [
+        "empoerungsbewirtschaftung",
+        "negativitaetsbias",
+        "plattformlogik-und-algorithmen",
+        "wirkungsrisiko"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -29002,6 +30244,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "red-herring": {
+      "label": "Red Herring",
+      "slug": "red-herring",
+      "url": "/begriffe/red-herring/",
+      "hoverDefinition": "Ein irrelevantes Thema lenkt von der zentralen Wirkungsfrage ab.",
+      "shortDefinition": "Ein irrelevantes Thema lenkt von der zentralen Wirkungsfrage ab.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Red Herring"
+      ],
+      "relatedTerms": [
+        "derailing",
+        "whataboutism",
+        "strohmann",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "redispatch": {
       "label": "Redispatch",
       "slug": "redispatch",
@@ -29097,8 +30361,7 @@
       "synonyms": [
         "Reframing",
         "wirkungsorientiertes Reframing",
-        "Bewertungsmaßstab verschieben",
-        "Bewertungsmassstab verschieben"
+        "Bewertungsmaßstab verschieben"
       ],
       "relatedTerms": [
         "framing",
@@ -29124,7 +30387,9 @@
         "wirkungspfad",
         "resonanzraum",
         "wirkungspotenzial",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "agenda-setting",
+        "wirkpfad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -30281,6 +31546,28 @@
       ],
       "relatedObjections": []
     },
+    "reueaversion": {
+      "label": "Reueaversion",
+      "slug": "reueaversion",
+      "url": "/begriffe/reueaversion/",
+      "hoverDefinition": "Entscheidungen werden so getroffen, dass mögliche spätere Reue vermieden wird.",
+      "shortDefinition": "Entscheidungen werden so getroffen, dass mögliche spätere Reue vermieden wird.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Reueaversion"
+      ],
+      "relatedTerms": [
+        "status-quo-bias",
+        "verlustaversion",
+        "unterlassen",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "reverse-logistics": {
       "label": "Reverse Logistics",
       "slug": "reverse-logistics",
@@ -30883,6 +32170,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "rueckschaufehler": {
+      "label": "Rückschaufehler",
+      "slug": "rueckschaufehler",
+      "url": "/begriffe/rueckschaufehler/",
+      "hoverDefinition": "Nach einem Ereignis erscheint dessen Eintritt vorhersehbarer, als er tatsächlich war.",
+      "shortDefinition": "Nach einem Ereignis erscheint dessen Eintritt vorhersehbarer, als er tatsächlich war.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Rückschaufehler"
+      ],
+      "relatedTerms": [
+        "wirkungsresilienz",
+        "lernende-systeme",
+        "attributionsfehler",
+        "unterlassen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "rueckverstromung": {
       "label": "Rückverstromung",
       "slug": "rueckverstromung",
@@ -30946,7 +32255,8 @@
       "shortDefinition": "Salienz bezeichnet die Auffälligkeit oder mentale Hervorhebung eines Reizes, Themas, Risikos, Produkts oder Arguments.",
       "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
-        "Salienz"
+        "Salienz",
+        "Salienz-Effekt"
       ],
       "relatedTerms": [
         "salienzsteuerung",
@@ -30964,7 +32274,10 @@
         "neuropsychologische-wirkmechanismen",
         "wahrnehmung",
         "neuigkeitsbias",
-        "praeferenzen"
+        "praeferenzen",
+        "knallzeugen-effekt-blitzlichterinnerung",
+        "moralische-panik",
+        "agenda-setting"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -31101,6 +32414,29 @@
       "relatedDocuments": [
         "standardwerk-neue-ordnung-wohlstands-2026"
       ],
+      "relatedObjections": []
+    },
+    "scheinkausalitaet-false-cause": {
+      "label": "Scheinkausalität / False Cause",
+      "slug": "scheinkausalitaet-false-cause",
+      "url": "/begriffe/scheinkausalitaet-false-cause/",
+      "hoverDefinition": "Ein Zusammenhang wird als Ursache-Wirkung gedeutet, obwohl der Wirkmechanismus nicht belegt ist.",
+      "shortDefinition": "Ein Zusammenhang wird als Ursache-Wirkung gedeutet, obwohl der Wirkmechanismus nicht belegt ist.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Scheinkausalität / False Cause",
+        "False Cause"
+      ],
+      "relatedTerms": [
+        "wirkmechanismus",
+        "wirkungsnachweis",
+        "cherry-picking",
+        "verfuegbarkeitsheuristik"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "scheinleistung": {
@@ -31475,6 +32811,28 @@
       "relatedTerms": [
         "systemdienstleistungen",
         "wirkungsresilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "schweigespirale": {
+      "label": "Schweigespirale",
+      "slug": "schweigespirale",
+      "url": "/begriffe/schweigespirale/",
+      "hoverDefinition": "Menschen verschweigen Meinungen, wenn sie sich in der Minderheit glauben.",
+      "shortDefinition": "Menschen verschweigen Meinungen, wenn sie sich in der Minderheit glauben.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Schweigespirale"
+      ],
+      "relatedTerms": [
+        "pluralistische-ignoranz",
+        "manufactured-consensus",
+        "normative-konformitaet",
+        "diskursfaehigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -31977,6 +33335,28 @@
       ],
       "relatedObjections": []
     },
+    "sealioning": {
+      "label": "Sealioning",
+      "slug": "sealioning",
+      "url": "/begriffe/sealioning/",
+      "hoverDefinition": "Wiederholtes scheinbar höfliches Nachfragen wird genutzt, um Zeit, Energie und Aufmerksamkeit zu binden.",
+      "shortDefinition": "Wiederholtes scheinbar höfliches Nachfragen wird genutzt, um Zeit, Energie und Aufmerksamkeit zu binden.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Sealioning"
+      ],
+      "relatedTerms": [
+        "moving-the-goalposts",
+        "gish-galopp",
+        "derailing",
+        "moderation"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "second-life-batterie": {
       "label": "Second-Life-Batterie",
       "slug": "second-life-batterie",
@@ -32208,6 +33588,28 @@
         "libertarismus",
         "koerperliche-selbstbestimmung",
         "anarchokapitalismus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "self-serving-bias": {
+      "label": "Self-Serving Bias",
+      "slug": "self-serving-bias",
+      "url": "/begriffe/self-serving-bias/",
+      "hoverDefinition": "Erfolg wird eher sich selbst zugeschrieben, Misserfolg eher Umständen oder anderen.",
+      "shortDefinition": "Erfolg wird eher sich selbst zugeschrieben, Misserfolg eher Umständen oder anderen.",
+      "category": "Kognitive und affektive Verzerrungen",
+      "synonyms": [
+        "Self-Serving Bias"
+      ],
+      "relatedTerms": [
+        "wirkungsaudit",
+        "attributionsfehler",
+        "impact-washing",
+        "verantwortungsdiffusion"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32458,6 +33860,29 @@
         "vertrauen",
         "daseinsvorsorge",
         "gleichstellung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "slippery-slope-dammbruchargument": {
+      "label": "Slippery Slope / Dammbruchargument",
+      "slug": "slippery-slope-dammbruchargument",
+      "url": "/begriffe/slippery-slope-dammbruchargument/",
+      "hoverDefinition": "Eine Maßnahme wird abgelehnt, weil angeblich zwangsläufig extreme Folgen folgen.",
+      "shortDefinition": "Eine Maßnahme wird abgelehnt, weil angeblich zwangsläufig extreme Folgen folgen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Slippery Slope / Dammbruchargument",
+        "Dammbruchargument"
+      ],
+      "relatedTerms": [
+        "angstappell",
+        "false-urgency",
+        "framing",
+        "wirkungsrisiko"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32769,6 +34194,28 @@
       ],
       "relatedObjections": []
     },
+    "soziale-ansteckung": {
+      "label": "Soziale Ansteckung",
+      "slug": "soziale-ansteckung",
+      "url": "/begriffe/soziale-ansteckung/",
+      "hoverDefinition": "Emotionen, Verhalten oder Einstellungen verbreiten sich durch soziale Nähe und Netzwerke.",
+      "shortDefinition": "Emotionen, Verhalten oder Einstellungen verbreiten sich durch soziale Nähe und Netzwerke.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Soziale Ansteckung"
+      ],
+      "relatedTerms": [
+        "empoerungsbewirtschaftung",
+        "peer-influence",
+        "bandwagon-effekt",
+        "resonanzraum"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "soziale-bewaehrtheit": {
       "label": "Soziale Bewährtheit / Social Proof",
       "slug": "soziale-bewaehrtheit",
@@ -32780,13 +34227,40 @@
         "Soziale Bewährtheit / Social Proof",
         "Soziale Bewährtheit",
         "Social Proof",
-        "soziale Bewaehrtheit"
+        "soziale Bewaehrtheit",
+        "social-proof"
       ],
       "relatedTerms": [
         "normalisierung",
         "salienz",
         "selbstorganisation",
-        "resonanzraum"
+        "resonanzraum",
+        "bandwagon-effekt",
+        "astroturfing",
+        "manufactured-consensus",
+        "cognitive-ease"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "soziale-fragmentierung": {
+      "label": "Soziale Fragmentierung",
+      "slug": "soziale-fragmentierung",
+      "url": "/begriffe/soziale-fragmentierung/",
+      "hoverDefinition": "Gemeinsame Wirklichkeits-, Vertrauens- und Zugehörigkeitsräume zerfallen in getrennte Teilöffentlichkeiten.",
+      "shortDefinition": "Gemeinsame Wirklichkeits-, Vertrauens- und Zugehörigkeitsräume zerfallen in getrennte Teilöffentlichkeiten.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Soziale Fragmentierung"
+      ],
+      "relatedTerms": [
+        "echokammer",
+        "filterblase",
+        "resonanzraum",
+        "kontakt-hypothese"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32915,6 +34389,28 @@
         "patriarchat",
         "feminismus",
         "arbeiten-arendt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "soziale-sanktionierung": {
+      "label": "Soziale Sanktionierung",
+      "slug": "soziale-sanktionierung",
+      "url": "/begriffe/soziale-sanktionierung/",
+      "hoverDefinition": "Abweichendes Verhalten wird durch Spott, Ausschluss, Statusverlust oder Strafe begrenzt.",
+      "shortDefinition": "Abweichendes Verhalten wird durch Spott, Ausschluss, Statusverlust oder Strafe begrenzt.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Soziale Sanktionierung"
+      ],
+      "relatedTerms": [
+        "schweigespirale",
+        "normative-konformitaet",
+        "cancel-dynamiken",
+        "diskursfaehigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -33869,7 +35365,10 @@
         "verlustaversion",
         "reaktanz",
         "wirkungsrisiko",
-        "kognitive-dissonanz"
+        "kognitive-dissonanz",
+        "reueaversion",
+        "nostalgie-effekt",
+        "wirkungslenkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -34100,6 +35599,28 @@
       "relatedTerms": [
         "emotionsregulation",
         "wirkungsresilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "strohmann": {
+      "label": "Strohmann",
+      "slug": "strohmann",
+      "url": "/begriffe/strohmann/",
+      "hoverDefinition": "Eine gegnerische Position wird verzerrt dargestellt, um sie leichter anzugreifen.",
+      "shortDefinition": "Eine gegnerische Position wird verzerrt dargestellt, um sie leichter anzugreifen.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Strohmann"
+      ],
+      "relatedTerms": [
+        "motte-and-bailey",
+        "false-equivalence",
+        "framing",
+        "diskursfaehigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -34485,13 +36006,18 @@
       "shortDefinition": "Der Sündenbockmechanismus verschiebt komplexe Probleme auf eine Gruppe, Person oder Minderheit, die als Ursache markiert wird.",
       "category": "Faschismus, faschistoid und autoritäre Wirkungsrisiken",
       "synonyms": [
-        "Sündenbockmechanismus"
+        "Sündenbockmechanismus",
+        "suendenbockmechanismus"
       ],
       "relatedTerms": [
         "feindbildlogik",
         "populismus",
         "rassismus",
-        "faschismus"
+        "faschismus",
+        "fundamentaler-attributionsfehler",
+        "resonanzraum",
+        "moralische-panik",
+        "scheinkausalitaet-false-cause"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -34752,6 +36278,29 @@
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
+      "relatedObjections": []
+    },
+    "sympathie-verzerrung": {
+      "label": "Sympathie-Verzerrung",
+      "slug": "sympathie-verzerrung",
+      "url": "/begriffe/sympathie-verzerrung/",
+      "hoverDefinition": "Sympathische Personen, Marken oder Gruppen werden milder und positiver bewertet.",
+      "shortDefinition": "Sympathische Personen, Marken oder Gruppen werden milder und positiver bewertet.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Sympathie-Verzerrung",
+        "Liking Bias"
+      ],
+      "relatedTerms": [
+        "sympathie-verzerrung",
+        "halo-effekt",
+        "autoritaetsbias",
+        "wirkungsaudit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "systemdienstleistungen": {
@@ -35826,6 +37375,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "tone-policing": {
+      "label": "Tone Policing",
+      "slug": "tone-policing",
+      "url": "/begriffe/tone-policing/",
+      "hoverDefinition": "Der Ton einer Aussage wird genutzt, um ihren Inhalt oder ihre Wirkungsfrage abzuwerten.",
+      "shortDefinition": "Der Ton einer Aussage wird genutzt, um ihren Inhalt oder ihre Wirkungsfrage abzuwerten.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Tone Policing"
+      ],
+      "relatedTerms": [
+        "derailing",
+        "soziale-sanktionierung",
+        "diskursfaehigkeit",
+        "betroffenenperspektive"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "totalitarismus": {
       "label": "Totalitarismus",
       "slug": "totalitarismus",
@@ -36644,6 +38215,28 @@
         "agenda-2030",
         "sdg-plus",
         "wirkungsoekonomie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "tu-quoque": {
+      "label": "Tu-quoque",
+      "slug": "tu-quoque",
+      "url": "/begriffe/tu-quoque/",
+      "hoverDefinition": "Kritik wird abgewehrt, indem auf angebliche Heuchelei der kritisierenden Person verwiesen wird.",
+      "shortDefinition": "Kritik wird abgewehrt, indem auf angebliche Heuchelei der kritisierenden Person verwiesen wird.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Tu-quoque"
+      ],
+      "relatedTerms": [
+        "whataboutism",
+        "red-herring",
+        "self-serving-bias",
+        "wirkungsnachweis"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -37673,6 +39266,28 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "verantwortungsdiffusion": {
+      "label": "Verantwortungsdiffusion",
+      "slug": "verantwortungsdiffusion",
+      "url": "/begriffe/verantwortungsdiffusion/",
+      "hoverDefinition": "Verantwortung verteilt sich so stark, dass sich einzelne weniger zuständig fühlen.",
+      "shortDefinition": "Verantwortung verteilt sich so stark, dass sich einzelne weniger zuständig fühlen.",
+      "category": "Soziale und gruppendynamische Effekte",
+      "synonyms": [
+        "Verantwortungsdiffusion"
+      ],
+      "relatedTerms": [
+        "bystander-effekt",
+        "unterlassen",
+        "wirkungsaudit",
+        "lieferkettenwirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "verantwortungsverkuerzung": {
       "label": "Verantwortungsverkürzung",
       "slug": "verantwortungsverkuerzung",
@@ -37904,7 +39519,8 @@
       "shortDefinition": "Die Verfügbarkeitsheuristik beschreibt die Tendenz, leicht erinnerbare oder emotional auffällige Beispiele für häufiger oder wichtiger zu halten, als sie statistisch sind.",
       "category": "Psychologische und systemische Wirkmechanismen",
       "synonyms": [
-        "Verfügbarkeitsheuristik"
+        "Verfügbarkeitsheuristik",
+        "verfuegbarkeitsheuristik"
       ],
       "relatedTerms": [
         "salienz",
@@ -37912,7 +39528,10 @@
         "bestaetigungsfehler",
         "meta-kognitive-intervention",
         "wirkungsrisiko",
-        "affektheuristik"
+        "affektheuristik",
+        "frequenzillusion",
+        "agenda-setting",
+        "moralische-panik"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -37920,6 +39539,28 @@
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "relatedObjections": []
+    },
+    "verfuegbarkeitskaskade": {
+      "label": "Verfügbarkeitskaskade",
+      "slug": "verfuegbarkeitskaskade",
+      "url": "/begriffe/verfuegbarkeitskaskade/",
+      "hoverDefinition": "Eine Behauptung wird durch Wiederholung, Sichtbarkeit und soziale Reaktion immer plausibler.",
+      "shortDefinition": "Eine Behauptung wird durch Wiederholung, Sichtbarkeit und soziale Reaktion immer plausibler.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Verfügbarkeitskaskade"
+      ],
+      "relatedTerms": [
+        "frequenzillusion",
+        "wahrheitsillusionseffekt",
+        "agenda-setting",
+        "soziale-bewaehrtheit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "verhaeltnismaessigkeit": {
@@ -38077,7 +39718,10 @@
         "transformationswirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "status-quo-bias"
+        "status-quo-bias",
+        "reueaversion",
+        "nostalgie-effekt",
+        "transformation"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -38874,11 +40518,16 @@
       "category": "Neuropsychologische Wirkmechanismen",
       "synonyms": [
         "Wahrheitsillusionseffekt",
-        "Illusory Truth Effect"
+        "Illusory Truth Effect",
+        "illusory-truth-effect"
       ],
       "relatedTerms": [
         "faktencheck",
-        "folgencheck"
+        "folgencheck",
+        "cognitive-ease",
+        "firehose-of-falsehood",
+        "frequenzillusion",
+        "wirkungswahrheit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -39746,6 +41395,28 @@
         "ordoliberalismus",
         "wirkungsrueckkopplung",
         "innovation"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "whataboutism": {
+      "label": "Whataboutism",
+      "slug": "whataboutism",
+      "url": "/begriffe/whataboutism/",
+      "hoverDefinition": "Kritik wird abgewehrt, indem auf andere Missstände verwiesen wird.",
+      "shortDefinition": "Kritik wird abgewehrt, indem auf andere Missstände verwiesen wird.",
+      "category": "Diskurs-, Medien- und Verschiebungseffekte",
+      "synonyms": [
+        "Whataboutism"
+      ],
+      "relatedTerms": [
+        "red-herring",
+        "tu-quoque",
+        "derailing",
+        "wirkungsbewertung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

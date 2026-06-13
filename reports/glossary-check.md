@@ -1,6 +1,6 @@
 # Glossary Check
 
-Einträge: 28
+Einträge: 34
 Findings: 0
 
 Keine Findings.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T21:43:21.107Z",
+  "generatedAt": "2026-06-13T07:38:25.130Z",
   "entries": {
     "/begriffe/fuenftes-p-planet/": {
       "documentType": "begriff",
@@ -242,7 +242,10 @@
         "emotionsregulation",
         "verfuegbarkeitsheuristik",
         "kognitive-dissonanz",
-        "affekt"
+        "affekt",
+        "angstappell",
+        "wirkungspotenzial",
+        "wirkungsbewertung"
       ],
       "relatedDocuments": [],
       "sourceFile": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
@@ -284,7 +287,10 @@
         "astroturfing",
         "public-affairs",
         "propaganda",
-        "politischer-vorraum"
+        "politischer-vorraum",
+        "salienz",
+        "priming",
+        "wirkungsraum-oeffentlichkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -420,6 +426,22 @@
       ],
       "sourceFile": "Glossar-Pack 018: Digitalisierungs-, KI- & Wirkungsdatenraumlogik",
       "searchBoost": 140
+    },
+    "/begriffe/algorithmische-verstaerkung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-algorithmische-verstaerkung",
+      "documentId": "algorithmische-verstaerkung",
+      "relatedTerms": [
+        "filterblase",
+        "echokammer",
+        "rage-bait",
+        "informationssouveraenitaet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
     },
     "/begriffe/allgemeines-gleichgewicht/": {
       "documentType": "begriff",
@@ -568,6 +590,22 @@
       "sourceFile": "",
       "searchBoost": 110
     },
+    "/begriffe/ambiguitaetsintoleranz/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-ambiguitaetsintoleranz",
+      "documentId": "ambiguitaetsintoleranz",
+      "relatedTerms": [
+        "false-urgency",
+        "moralische-panik",
+        "wirkungskompetenz",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/anaerobe-vergaerung/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -596,6 +634,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/angstappell/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-angstappell",
+      "documentId": "angstappell",
+      "relatedTerms": [
+        "affektheuristik",
+        "negativitaetsbias",
+        "moralische-panik",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/ankereffekt/": {
@@ -1134,7 +1188,11 @@
         "dark-money",
         "agenda-setting",
         "resonanzraum",
-        "gongo"
+        "gongo",
+        "manufactured-consensus",
+        "soziale-bewaehrtheit",
+        "lobbyismus",
+        "wirkungswahrheit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -1541,6 +1599,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/autoritaetsbias/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-autoritaetsbias",
+      "documentId": "autoritaetsbias",
+      "relatedTerms": [
+        "wirkungswahrheit",
+        "quellenklarheit",
+        "cognitive-ease",
+        "faktencheck"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/backend-ladeinfrastruktur/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -1554,6 +1628,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/backfire-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-backfire-effekt",
+      "documentId": "backfire-effekt",
+      "relatedTerms": [
+        "kognitive-dissonanz",
+        "motiviertes-denken",
+        "faktencheck",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/backup-kapazitaet/": {
@@ -1603,6 +1693,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/bandwagon-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-bandwagon-effekt",
+      "documentId": "bandwagon-effekt",
+      "relatedTerms": [
+        "soziale-bewaehrtheit",
+        "manufactured-consensus",
+        "astroturfing",
+        "agenda-setting"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/baseline-verschiebung/": {
@@ -2260,7 +2366,10 @@
         "resonanzraum",
         "wirkungsdaten",
         "wirkungsblindheit",
-        "meta-kognitive-intervention"
+        "meta-kognitive-intervention",
+        "echokammer",
+        "cherry-picking",
+        "wirkungskompetenz"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2605,6 +2714,22 @@
       "sourceFile": "Definitionsmaster WÖk v1",
       "searchBoost": 110
     },
+    "/begriffe/both-sidesism/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-both-sidesism",
+      "documentId": "both-sidesism",
+      "relatedTerms": [
+        "false-balance",
+        "false-equivalence",
+        "quellenklarheit",
+        "wirkungswahrheit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/brennstoffkette/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -2618,6 +2743,22 @@
         "fossiles-kraftwerk"
       ],
       "relatedDocuments": [],
+      "searchBoost": 110
+    },
+    "/begriffe/bullshit-asymmetrie-brandolinis-gesetz/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-bullshit-asymmetrie-brandolinis-gesetz",
+      "documentId": "bullshit-asymmetrie-brandolinis-gesetz",
+      "relatedTerms": [
+        "gish-galopp",
+        "firehose-of-falsehood",
+        "faktencheck",
+        "wirkungsrueckkopplung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/bundesregierung/": {
@@ -2801,6 +2942,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "",
+      "searchBoost": 110
+    },
+    "/begriffe/bystander-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-bystander-effekt",
+      "documentId": "bystander-effekt",
+      "relatedTerms": [
+        "verantwortungsdiffusion",
+        "soziale-sanktionierung",
+        "moderationsstandards",
+        "wirkungskompetenz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/c-rate/": {
@@ -3037,6 +3194,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/cherry-picking/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-cherry-picking",
+      "documentId": "cherry-picking",
+      "relatedTerms": [
+        "bestaetigungsfehler",
+        "quote-mining",
+        "impact-washing",
+        "netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/chicago-school/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -3185,6 +3358,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/cognitive-ease/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-cognitive-ease",
+      "documentId": "cognitive-ease",
+      "relatedTerms": [
+        "wahrheitsillusionseffekt",
+        "framing",
+        "reichweite",
+        "wirkungswahrheit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/commons/": {
@@ -3849,6 +4038,22 @@
       "relatedDocuments": [],
       "searchBoost": 110
     },
+    "/begriffe/deformation-professionnelle/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-deformation-professionnelle",
+      "documentId": "deformation-professionnelle",
+      "relatedTerms": [
+        "wirkungsblindheit",
+        "interdisziplinaritaet",
+        "systemkompetenz",
+        "wirkungsaudit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/degradation-batterie/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -3862,6 +4067,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/dehumanisierung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-dehumanisierung",
+      "documentId": "dehumanisierung",
+      "relatedTerms": [
+        "dog-whistle",
+        "suendenbockmechanismus",
+        "moralische-panik",
+        "wirkungsgrenze"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/dekohaerenz/": {
@@ -4275,6 +4496,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/derailing-themenverschiebung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-derailing-themenverschiebung",
+      "documentId": "derailing-themenverschiebung",
+      "relatedTerms": [
+        "red-herring",
+        "whataboutism",
+        "tone-policing",
+        "agenda-setting"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/deregulierung/": {
@@ -4924,6 +5161,22 @@
       "sourceFile": "",
       "searchBoost": 110
     },
+    "/begriffe/dog-whistle/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-dog-whistle",
+      "documentId": "dog-whistle",
+      "relatedTerms": [
+        "resonanzraum",
+        "overton-fenster",
+        "motte-and-bailey",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/dominanzlogik/": {
       "documentType": "begriff",
       "status": "woek-praezisierungsbegriff",
@@ -5162,6 +5415,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/dunning-kruger-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-dunning-kruger-effekt",
+      "documentId": "dunning-kruger-effekt",
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "cognitive-ease",
+        "autoritaetsbias",
+        "pluralistische-ignoranz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/dynamischer-stromtarif/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -5276,6 +5545,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Definitionsmaster WÖk v1",
+      "searchBoost": 110
+    },
+    "/begriffe/echokammer/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-echokammer",
+      "documentId": "echokammer",
+      "relatedTerms": [
+        "filterblase",
+        "bestaetigungsfehler",
+        "soziale-fragmentierung",
+        "schweigespirale"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/eeg/": {
@@ -5478,6 +5763,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/eigengruppen-homogenitaetsverzerrung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-eigengruppen-homogenitaetsverzerrung",
+      "documentId": "eigengruppen-homogenitaetsverzerrung",
+      "relatedTerms": [
+        "gruppendenken",
+        "normative-konformitaet",
+        "pluralistische-ignoranz",
+        "schweigespirale"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/eigentum-mit-wirkungspflicht/": {
@@ -5788,6 +6089,22 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
+      "searchBoost": 110
+    },
+    "/begriffe/empoerungsbewirtschaftung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-empoerungsbewirtschaftung",
+      "documentId": "empoerungsbewirtschaftung",
+      "relatedTerms": [
+        "rage-bait",
+        "negativitaetsbias",
+        "intermittent-reinforcement",
+        "oeffentlichkeit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/empowering-consumers-green-transition/": {
@@ -7351,10 +7668,62 @@
       "relatedTerms": [
         "selektive-evidenz",
         "klimawandel",
-        "medienqualitaet"
+        "medienqualitaet",
+        "both-sidesism",
+        "false-equivalence",
+        "hostile-media-effect",
+        "wirkungswahrheit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/false-consensus-effect/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-false-consensus-effect",
+      "documentId": "false-consensus-effect",
+      "relatedTerms": [
+        "pluralistische-ignoranz",
+        "soziale-bewaehrtheit",
+        "echokammer",
+        "manufactured-consensus"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
+    "/begriffe/false-equivalence/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-false-equivalence",
+      "documentId": "false-equivalence",
+      "relatedTerms": [
+        "false-balance",
+        "both-sidesism",
+        "tu-quoque",
+        "wirkungsgrenze"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
+    "/begriffe/false-urgency-kuenstliche-dringlichkeit/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-false-urgency-kuenstliche-dringlichkeit",
+      "documentId": "false-urgency-kuenstliche-dringlichkeit",
+      "relatedTerms": [
+        "angstappell",
+        "moralische-panik",
+        "reueaversion",
+        "wirkungsaudit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/faschismus/": {
@@ -7634,6 +8003,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/filterblase/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-filterblase",
+      "documentId": "filterblase",
+      "relatedTerms": [
+        "echokammer",
+        "plattformlogik-und-algorithmen",
+        "informationssouveraenitaet",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/finalscore/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -7759,6 +8144,22 @@
       ],
       "searchBoost": 110
     },
+    "/begriffe/firehose-of-falsehood/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-firehose-of-falsehood",
+      "documentId": "firehose-of-falsehood",
+      "relatedTerms": [
+        "flood-the-zone",
+        "gish-galopp",
+        "bullshit-asymmetrie",
+        "wirkungsresilienz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/fit-for-55/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -7807,6 +8208,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/flood-the-zone/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-flood-the-zone",
+      "documentId": "flood-the-zone",
+      "relatedTerms": [
+        "firehose-of-falsehood",
+        "gish-galopp",
+        "derailing",
+        "agenda-setting"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/folgencheck/": {
@@ -7995,7 +8412,9 @@
         "frame",
         "tonalitaet",
         "wirkungspfad",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "gegenframe",
+        "wirkpfad"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -8248,6 +8667,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/frequenzillusion/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-frequenzillusion",
+      "documentId": "frequenzillusion",
+      "relatedTerms": [
+        "verfuegbarkeitsheuristik",
+        "agenda-setting",
+        "filterblase",
+        "moralische-panik"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/friedlicher-machtwechsel/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -8305,6 +8740,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/fundamentaler-attributionsfehler/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-fundamentaler-attributionsfehler",
+      "documentId": "fundamentaler-attributionsfehler",
+      "relatedTerms": [
+        "suendenbockmechanismus",
+        "resonanzraum",
+        "wirkungsblindheit",
+        "systemischer-wert"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/gaskraftwerk/": {
@@ -9159,6 +9610,22 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 110
     },
+    "/begriffe/gish-galopp/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-gish-galopp",
+      "documentId": "gish-galopp",
+      "relatedTerms": [
+        "bullshit-asymmetrie",
+        "flood-the-zone",
+        "firehose-of-falsehood",
+        "faktencheck"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/glaeserne-decke/": {
       "documentType": "begriff",
       "status": "woek-praezisierungsbegriff",
@@ -9928,6 +10395,22 @@
       "sourceFile": "",
       "searchBoost": 110
     },
+    "/begriffe/gruppendenken/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-gruppendenken",
+      "documentId": "gruppendenken",
+      "relatedTerms": [
+        "normative-konformitaet",
+        "schweigespirale",
+        "pluralistische-ignoranz",
+        "wirkungsaudit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/habitatfragmentierung/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -9976,6 +10459,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/halo-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-halo-effekt",
+      "documentId": "halo-effekt",
+      "relatedTerms": [
+        "sympathie-verzerrung",
+        "greenwashing",
+        "reverse-merit-order",
+        "wirkungsaudit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/haltung/": {
@@ -10689,6 +11188,22 @@
       "sourceFile": "Glossar-Pack 017: Creator-, Host-, Kultur- & Resonanzlogik",
       "searchBoost": 110
     },
+    "/begriffe/hostile-media-effect/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-hostile-media-effect",
+      "documentId": "hostile-media-effect",
+      "relatedTerms": [
+        "medienvertrauen",
+        "false-balance",
+        "bestaetigungsfehler",
+        "wirkungswahrheit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/hotspot-analyse/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -11179,7 +11694,11 @@
         "motiviertes-denken",
         "destruktives-narrativ",
         "vertrauensverschiebung",
-        "xenophobie"
+        "xenophobie",
+        "ingroup-outgroup-dynamik",
+        "outgroup-homogenitaet",
+        "resonanzraum",
+        "kontakt-hypothese"
       ],
       "relatedDocuments": [],
       "sourceFile": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
@@ -11495,6 +12014,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/intermittent-reinforcement/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-intermittent-reinforcement",
+      "documentId": "intermittent-reinforcement",
+      "relatedTerms": [
+        "rage-bait",
+        "empoerungsbewirtschaftung",
+        "plattformlogik",
+        "soziale-ansteckung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/internationale-krisenvorsorge/": {
@@ -12578,6 +13113,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/knallzeugen-effekt-blitzlichterinnerung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-knallzeugen-effekt-blitzlichterinnerung",
+      "documentId": "knallzeugen-effekt-blitzlichterinnerung",
+      "relatedTerms": [
+        "salienz",
+        "verfuegbarkeitsheuristik",
+        "moralische-panik",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/knappheit/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -12633,7 +13184,9 @@
         "scheinentlastung",
         "alarm-frame",
         "kohaerenz",
-        "praediktive-verarbeitung"
+        "praediktive-verarbeitung",
+        "backfire-effekt",
+        "wirkungskompetenz"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -12962,6 +13515,38 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/kontakthypothese/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-kontakthypothese",
+      "documentId": "kontakthypothese",
+      "relatedTerms": [
+        "outgroup-homogenitaet",
+        "soziale-fragmentierung",
+        "teilhabe",
+        "wirkungsraum"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
+    "/begriffe/kontaktschuld/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-kontaktschuld",
+      "documentId": "kontaktschuld",
+      "relatedTerms": [
+        "kontaktschuld",
+        "derailing",
+        "ingroup-bias",
+        "diskursfaehigkeit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/konzessionsabgabe/": {
@@ -14686,6 +15271,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/manufactured-consensus/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-manufactured-consensus",
+      "documentId": "manufactured-consensus",
+      "relatedTerms": [
+        "astroturfing",
+        "soziale-bewaehrtheit",
+        "pluralistische-ignoranz",
+        "schweigespirale"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/marktgleichgewicht/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -15766,6 +16367,38 @@
       "sourceFile": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
       "searchBoost": 110
     },
+    "/begriffe/moralische-entkopplung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-moralische-entkopplung",
+      "documentId": "moralische-entkopplung",
+      "relatedTerms": [
+        "verantwortungsdiffusion",
+        "resonanzraum",
+        "impact-washing",
+        "wirkungsgrenze"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
+    "/begriffe/moralische-panik/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-moralische-panik",
+      "documentId": "moralische-panik",
+      "relatedTerms": [
+        "angstappell",
+        "suendenbockmechanismus",
+        "verfuegbarkeitsheuristik",
+        "false-urgency"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/motiviertes-denken/": {
       "documentType": "begriff",
       "status": "woek-anschlussbegriff",
@@ -15783,12 +16416,46 @@
         "meta-kognitive-intervention",
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
-        "ingroup-outgroup-dynamik"
+        "ingroup-outgroup-dynamik",
+        "echokammer",
+        "wirkungskompetenz"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
+      "searchBoost": 110
+    },
+    "/begriffe/motte-and-bailey/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-motte-and-bailey",
+      "documentId": "motte-and-bailey",
+      "relatedTerms": [
+        "strohmann",
+        "moving-the-goalposts",
+        "dog-whistle",
+        "wirkungswahrheit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
+    "/begriffe/moving-the-goalposts/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-moving-the-goalposts",
+      "documentId": "moving-the-goalposts",
+      "relatedTerms": [
+        "sealioning",
+        "nirvana-fehlschluss",
+        "wirkungsregister",
+        "wirkungsaudit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/muslimfeindlichkeit/": {
@@ -16150,7 +16817,11 @@
       "sectionId": "begriff-negativitaetsbias",
       "documentId": "negativitaetsbias",
       "relatedTerms": [
-        "alarm-frame"
+        "alarm-frame",
+        "angstappell",
+        "empoerungsbewirtschaftung",
+        "rage-bait",
+        "pessimismus-bias"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -16975,6 +17646,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/nirvana-fehlschluss/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-nirvana-fehlschluss",
+      "documentId": "nirvana-fehlschluss",
+      "relatedTerms": [
+        "moving-the-goalposts",
+        "wirkungsresilienz",
+        "lernende-systeme",
+        "netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/nmc-batterie/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -17004,6 +17691,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "",
+      "searchBoost": 110
+    },
+    "/begriffe/nocebo-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-nocebo-effekt",
+      "documentId": "nocebo-effekt",
+      "relatedTerms": [
+        "placebo-effekt",
+        "angstappell",
+        "pessimismus-bias",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/non-aggression-principle/": {
@@ -17047,6 +17750,22 @@
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
       "searchBoost": 110
     },
+    "/begriffe/normalisierungseffekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-normalisierungseffekt",
+      "documentId": "normalisierungseffekt",
+      "relatedTerms": [
+        "overton-fenster",
+        "wahrheitsillusionseffekt",
+        "resonanzraum",
+        "wirkungsgrenze"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/normalladen/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -17059,6 +17778,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/normative-konformitaet/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-normative-konformitaet",
+      "documentId": "normative-konformitaet",
+      "relatedTerms": [
+        "pluralistische-ignoranz",
+        "schweigespirale",
+        "gruppendenken",
+        "soziale-sanktionierung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/normativer-wert/": {
@@ -17092,6 +17827,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/nostalgie-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-nostalgie-effekt",
+      "documentId": "nostalgie-effekt",
+      "relatedTerms": [
+        "gegenframe",
+        "overton-fenster",
+        "status-quo-bias",
+        "normalisierung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/zero-waste/": {
@@ -17989,6 +18740,38 @@
       "sourceFile": "Definitionsmaster WÖk v1",
       "searchBoost": 110
     },
+    "/begriffe/outgroup-homogenitaet/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-outgroup-homogenitaet",
+      "documentId": "outgroup-homogenitaet",
+      "relatedTerms": [
+        "suendenbockmechanismus",
+        "resonanzraum",
+        "kontakthypothese",
+        "false-equivalence"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
+    "/begriffe/overton-fenster/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-overton-fenster",
+      "documentId": "overton-fenster",
+      "relatedTerms": [
+        "normalisierungseffekt",
+        "dog-whistle",
+        "gegenframe",
+        "sdg-plus"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/pai/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -18236,6 +19019,22 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 110
     },
+    "/begriffe/peer-influence/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-peer-influence",
+      "documentId": "peer-influence",
+      "relatedTerms": [
+        "soziale-sanktionierung",
+        "soziale-bewaehrtheit",
+        "normative-konformitaet",
+        "soziale-ansteckung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/pef-product-environmental-footprint/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -18302,6 +19101,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/pessimismus-bias/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-pessimismus-bias",
+      "documentId": "pessimismus-bias",
+      "relatedTerms": [
+        "negativitaetsbias",
+        "angstappell",
+        "selbstwirksamkeit",
+        "wirkungsresilienz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/peter-drucker/": {
@@ -18533,6 +19348,22 @@
       "sourceFile": "Glossar-Pack 023: Transformations-, Übergangs- & Implementierungslogik",
       "searchBoost": 110
     },
+    "/begriffe/placebo-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-placebo-effekt",
+      "documentId": "placebo-effekt",
+      "relatedTerms": [
+        "nocebo-effekt",
+        "selbstwirksamkeit",
+        "wirkungspotenzial",
+        "gesundheitskompetenz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/planetare-grenzen/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -18760,6 +19591,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/pluralistische-ignoranz/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-pluralistische-ignoranz",
+      "documentId": "pluralistische-ignoranz",
+      "relatedTerms": [
+        "schweigespirale",
+        "normative-konformitaet",
+        "gruppendenken",
+        "manufactured-consensus"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/pluralitaet/": {
@@ -19443,7 +20290,9 @@
         "normalisierung",
         "strukturelles-driften",
         "wirkstoff",
-        "ankereffekt"
+        "ankereffekt",
+        "agenda-setting",
+        "angstappell"
       ],
       "relatedDocuments": [],
       "sourceFile": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
@@ -19806,6 +20655,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/projektions-bias/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-projektions-bias",
+      "documentId": "projektions-bias",
+      "relatedTerms": [
+        "false-consensus",
+        "ingroup-bias",
+        "partizipation",
+        "wirkungsempfaenger"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/propaganda/": {
@@ -20385,6 +21250,22 @@
       "relatedDocuments": [],
       "searchBoost": 110
     },
+    "/begriffe/quote-mining-dekontextualisierung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-quote-mining-dekontextualisierung",
+      "documentId": "quote-mining-dekontextualisierung",
+      "relatedTerms": [
+        "cherry-picking",
+        "framing",
+        "wirkungswahrheit",
+        "faktencheck"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/radikal/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -20397,6 +21278,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/rage-bait/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-rage-bait",
+      "documentId": "rage-bait",
+      "relatedTerms": [
+        "empoerungsbewirtschaftung",
+        "negativitaetsbias",
+        "plattformlogik-und-algorithmen",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/rassismus/": {
@@ -20871,6 +21768,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/red-herring/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-red-herring",
+      "documentId": "red-herring",
+      "relatedTerms": [
+        "derailing",
+        "whataboutism",
+        "strohmann",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/redispatch/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -20962,7 +21875,9 @@
         "wirkungspfad",
         "resonanzraum",
         "wirkungspotenzial",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "agenda-setting",
+        "wirkpfad"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -21734,6 +22649,22 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.1_Energy_Sharing.md",
       "searchBoost": 110
     },
+    "/begriffe/reueaversion/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-reueaversion",
+      "documentId": "reueaversion",
+      "relatedTerms": [
+        "status-quo-bias",
+        "verlustaversion",
+        "unterlassen",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/reverse-logistics/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -22138,6 +23069,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/rueckschaufehler/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-rueckschaufehler",
+      "documentId": "rueckschaufehler",
+      "relatedTerms": [
+        "wirkungsresilienz",
+        "lernende-systeme",
+        "attributionsfehler",
+        "unterlassen"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/rueckverstromung/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -22195,7 +23142,10 @@
         "neuropsychologische-wirkmechanismen",
         "wahrnehmung",
         "neuigkeitsbias",
-        "praeferenzen"
+        "praeferenzen",
+        "knallzeugen-effekt-blitzlichterinnerung",
+        "moralische-panik",
+        "agenda-setting"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -22295,6 +23245,22 @@
         "standardwerk-neue-ordnung-wohlstands-2026"
       ],
       "sourceFile": "Anlage Finanzsystem, Kapital & Lieferkettenrisiken",
+      "searchBoost": 110
+    },
+    "/begriffe/scheinkausalitaet-false-cause/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-scheinkausalitaet-false-cause",
+      "documentId": "scheinkausalitaet-false-cause",
+      "relatedTerms": [
+        "wirkmechanismus",
+        "wirkungsnachweis",
+        "cherry-picking",
+        "verfuegbarkeitsheuristik"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/scheinleistung/": {
@@ -22577,6 +23543,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/schweigespirale/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-schweigespirale",
+      "documentId": "schweigespirale",
+      "relatedTerms": [
+        "pluralistische-ignoranz",
+        "manufactured-consensus",
+        "normative-konformitaet",
+        "diskursfaehigkeit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/schwellenwert/": {
@@ -22959,6 +23941,22 @@
       "sourceFile": "Glossar-Pack 024: Kritik-, Missverständnis- & Schutzlogik",
       "searchBoost": 110
     },
+    "/begriffe/sealioning/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-sealioning",
+      "documentId": "sealioning",
+      "relatedTerms": [
+        "moving-the-goalposts",
+        "gish-galopp",
+        "derailing",
+        "moderation"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/second-life-batterie/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -23133,6 +24131,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/self-serving-bias/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-self-serving-bias",
+      "documentId": "self-serving-bias",
+      "relatedTerms": [
+        "wirkungsaudit",
+        "attributionsfehler",
+        "impact-washing",
+        "verantwortungsdiffusion"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/sensemaking/": {
       "documentType": "begriff",
       "status": "woek-anschlussbegriff",
@@ -23291,6 +24305,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/slippery-slope-dammbruchargument/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-slippery-slope-dammbruchargument",
+      "documentId": "slippery-slope-dammbruchargument",
+      "relatedTerms": [
+        "angstappell",
+        "false-urgency",
+        "framing",
+        "wirkungsrisiko"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/small-modular-reactor/": {
@@ -23501,6 +24531,22 @@
       "sourceFile": "Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente",
       "searchBoost": 110
     },
+    "/begriffe/soziale-ansteckung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-soziale-ansteckung",
+      "documentId": "soziale-ansteckung",
+      "relatedTerms": [
+        "empoerungsbewirtschaftung",
+        "peer-influence",
+        "bandwagon-effekt",
+        "resonanzraum"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/soziale-bewaehrtheit/": {
       "documentType": "begriff",
       "status": "woek-anschlussbegriff",
@@ -23511,10 +24557,30 @@
         "normalisierung",
         "salienz",
         "selbstorganisation",
-        "resonanzraum"
+        "resonanzraum",
+        "bandwagon-effekt",
+        "astroturfing",
+        "manufactured-consensus",
+        "cognitive-ease"
       ],
       "relatedDocuments": [],
       "sourceFile": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
+      "searchBoost": 110
+    },
+    "/begriffe/soziale-fragmentierung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-soziale-fragmentierung",
+      "documentId": "soziale-fragmentierung",
+      "relatedTerms": [
+        "echokammer",
+        "filterblase",
+        "resonanzraum",
+        "kontakt-hypothese"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/soziale-infrastruktur/": {
@@ -23596,6 +24662,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/soziale-sanktionierung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-soziale-sanktionierung",
+      "documentId": "soziale-sanktionierung",
+      "relatedTerms": [
+        "schweigespirale",
+        "normative-konformitaet",
+        "cancel-dynamiken",
+        "diskursfaehigkeit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/sozialfinanzierung/": {
@@ -24271,7 +25353,10 @@
         "verlustaversion",
         "reaktanz",
         "wirkungsrisiko",
-        "kognitive-dissonanz"
+        "kognitive-dissonanz",
+        "reueaversion",
+        "nostalgie-effekt",
+        "wirkungslenkung"
       ],
       "relatedDocuments": [],
       "sourceFile": "https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html",
@@ -24443,6 +25528,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/strohmann/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-strohmann",
+      "documentId": "strohmann",
+      "relatedTerms": [
+        "motte-and-bailey",
+        "false-equivalence",
+        "framing",
+        "diskursfaehigkeit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/stromgestehungskosten/": {
@@ -24713,7 +25814,11 @@
         "feindbildlogik",
         "populismus",
         "rassismus",
-        "faschismus"
+        "faschismus",
+        "fundamentaler-attributionsfehler",
+        "resonanzraum",
+        "moralische-panik",
+        "scheinkausalitaet-false-cause"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -24903,6 +26008,22 @@
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "sourceFile": "Glossar Wirkungsökonomie",
+      "searchBoost": 110
+    },
+    "/begriffe/sympathie-verzerrung/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-sympathie-verzerrung",
+      "documentId": "sympathie-verzerrung",
+      "relatedTerms": [
+        "sympathie-verzerrung",
+        "halo-effekt",
+        "autoritaetsbias",
+        "wirkungsaudit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/systemdienstleistungen/": {
@@ -25681,6 +26802,22 @@
       "sourceFile": "Glossar-Datenstandards",
       "searchBoost": 110
     },
+    "/begriffe/tone-policing/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-tone-policing",
+      "documentId": "tone-policing",
+      "relatedTerms": [
+        "derailing",
+        "soziale-sanktionierung",
+        "diskursfaehigkeit",
+        "betroffenenperspektive"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/totalitarismus/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -26304,6 +27441,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Definitionsmaster WÖk v1",
+      "searchBoost": 110
+    },
+    "/begriffe/tu-quoque/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-tu-quoque",
+      "documentId": "tu-quoque",
+      "relatedTerms": [
+        "whataboutism",
+        "red-herring",
+        "self-serving-bias",
+        "wirkungsnachweis"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/typ-2-stecker/": {
@@ -27064,6 +28217,22 @@
       "sourceFile": "",
       "searchBoost": 110
     },
+    "/begriffe/verantwortungsdiffusion/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-verantwortungsdiffusion",
+      "documentId": "verantwortungsdiffusion",
+      "relatedTerms": [
+        "bystander-effekt",
+        "unterlassen",
+        "wirkungsaudit",
+        "lieferkettenwirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
+      "searchBoost": 110
+    },
     "/begriffe/verantwortungsverkuerzung/": {
       "documentType": "begriff",
       "status": "fuehrender-begriff",
@@ -27232,12 +28401,31 @@
         "bestaetigungsfehler",
         "meta-kognitive-intervention",
         "wirkungsrisiko",
-        "affektheuristik"
+        "affektheuristik",
+        "frequenzillusion",
+        "agenda-setting",
+        "moralische-panik"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
+      "searchBoost": 110
+    },
+    "/begriffe/verfuegbarkeitskaskade/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-verfuegbarkeitskaskade",
+      "documentId": "verfuegbarkeitskaskade",
+      "relatedTerms": [
+        "frequenzillusion",
+        "wahrheitsillusionseffekt",
+        "agenda-setting",
+        "soziale-bewaehrtheit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/verhaeltnismaessigkeit/": {
@@ -27361,7 +28549,10 @@
         "transformationswirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "status-quo-bias"
+        "status-quo-bias",
+        "reueaversion",
+        "nostalgie-effekt",
+        "transformation"
       ],
       "relatedDocuments": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -27968,7 +29159,11 @@
       "documentId": "wahrheitsillusionseffekt",
       "relatedTerms": [
         "faktencheck",
-        "folgencheck"
+        "folgencheck",
+        "cognitive-ease",
+        "firehose-of-falsehood",
+        "frequenzillusion",
+        "wirkungswahrheit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -28600,6 +29795,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "",
+      "searchBoost": 110
+    },
+    "/begriffe/whataboutism/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "0.1",
+      "sectionId": "begriff-whataboutism",
+      "documentId": "whataboutism",
+      "relatedTerms": [
+        "red-herring",
+        "tu-quoque",
+        "derailing",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
       "searchBoost": 110
     },
     "/begriffe/who/": {
@@ -47482,7 +48693,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/index.html",
-      "contentHash": "72a86d3d55cca776",
+      "contentHash": "fb234bad55fc152d",
       "sectionId": "woek-page-e6bdb60cf0627b03"
     },
     "/bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/": {
