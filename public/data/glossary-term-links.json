@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T15:47:48.676Z",
+  "generatedAt": "2026-06-13T16:37:44.585Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -859,7 +859,11 @@
         "wissenschaftsfeindlichkeit",
         "sdg-plus",
         "medienqualitaet",
-        "demokratische-resilienz"
+        "demokratische-resilienz",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7498,7 +7502,14 @@
         "wirkungskompetenz",
         "cognitive-ease",
         "autoritaetsbias",
-        "pluralistische-ignoranz"
+        "pluralistische-ignoranz",
+        "amathia",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt",
+        "wirkungsblindheit",
+        "diskursfaehigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -16465,6 +16476,43 @@
         "vertrauen",
         "kognitive-belastung",
         "begrenzte-rationalitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "informelles-wissen": {
+      "label": "Informelles Wissen",
+      "slug": "informelles-wissen",
+      "url": "/begriffe/informelles-wissen/",
+      "hoverDefinition": "Informelles Wissen ist Wissen, das außerhalb formaler Systeme entsteht oder weitergegeben wird: durch Erfahrung, Alltag, Praxis, Beziehung, Beobachtung, Ausprobieren, lokale Kontexte und gemeinsames Handeln.",
+      "shortDefinition": "Informelles Wissen ist Wissen, das außerhalb formaler Systeme entsteht oder weitergegeben wird: durch Erfahrung, Alltag, Praxis, Beziehung, Beobachtung, Ausprobieren, lokale Kontexte und gemeinsames Handeln.",
+      "category": "Wissen, Wirkungskompetenz, Organisation, Bildung & Transformation",
+      "synonyms": [
+        "Informelles Wissen",
+        "Erfahrungswissen",
+        "Praxiswissen",
+        "Kontextwissen",
+        "lokales Wissen",
+        "Betroffenenwissen",
+        "informelles Lernen"
+      ],
+      "relatedTerms": [
+        "tacit-knowledge",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsraum",
+        "resonanzraum",
+        "teilgabe",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "sdg-plus",
+        "lernende-organisation",
+        "dunning-kruger-effekt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -29849,24 +29897,44 @@
       "label": "Rebound-Effekt",
       "slug": "rebound-effekt",
       "url": "/begriffe/rebound-effekt/",
-      "hoverDefinition": "Ein Rebound-Effekt entsteht, wenn Effizienzgewinne durch verändertes Verhalten teilweise oder vollständig aufgehoben werden.",
-      "shortDefinition": "Ein Rebound-Effekt entsteht, wenn Effizienzgewinne durch verändertes Verhalten teilweise oder vollständig aufgehoben werden.",
-      "category": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.",
+      "shortDefinition": "Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.",
+      "category": "Systemeffekte, Nachhaltigkeit, Wirkungsmessung & Transformation",
       "synonyms": [
-        "Rebound-Effekt"
+        "Rebound-Effekt",
+        "Rebound Effect",
+        "Jevons-Paradox",
+        "Backfire",
+        "digitale Rebound-Effekte"
       ],
       "relatedTerms": [
-        "netto-wirkung",
-        "wirkungspfad",
+        "wirkung",
+        "wirkungspotenzial",
         "wirkungsrisiko",
-        "energieeffizienz"
+        "wechselwirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "suffizienz",
+        "effizienz",
+        "backfire-effekt",
+        "sdg-plus",
+        "kreislaufwirtschaft",
+        "dunning-kruger-effekt",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [
-        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
-      ],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "rechenschaft": {
@@ -35614,6 +35682,48 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "streisand-effekt": {
+      "label": "Streisand-Effekt",
+      "slug": "streisand-effekt",
+      "url": "/begriffe/streisand-effekt/",
+      "hoverDefinition": "Der Streisand-Effekt beschreibt, dass der Versuch, eine Information zu unterdrücken, zu löschen oder unsichtbar zu machen, unbeabsichtigt erst recht Aufmerksamkeit erzeugt.",
+      "shortDefinition": "Der Streisand-Effekt beschreibt, dass der Versuch, eine Information zu unterdrücken, zu löschen oder unsichtbar zu machen, unbeabsichtigt erst recht Aufmerksamkeit erzeugt.",
+      "category": "Diskursqualität, Medienwirkung, psychologische Effekte & SDG+",
+      "synonyms": [
+        "Streisand-Effekt",
+        "Streisand Effect",
+        "Zensurverstärkung",
+        "Löschversuch-Effekt"
+      ],
+      "relatedTerms": [
+        "reaktanz",
+        "backfire-effekt",
+        "desinformation",
+        "medienqualitaet",
+        "diskursfaehigkeit",
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "amathia",
+        "dunning-kruger-effekt",
+        "false-balance",
+        "framing",
+        "overton-fenster",
+        "whataboutism",
+        "soziale-ansteckung",
+        "gruppendenken",
+        "sdg-plus",
+        "demokratische-resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "streitfaehigkeit": {
       "label": "Streitfähigkeit",
       "slug": "streitfaehigkeit",
@@ -36730,6 +36840,40 @@
         "tar-mittelspannung",
         "netzanschlusspunkt",
         "technische-anschlussregel"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "tacit-knowledge": {
+      "label": "Tacit Knowledge",
+      "slug": "tacit-knowledge",
+      "url": "/begriffe/tacit-knowledge/",
+      "hoverDefinition": "Tacit Knowledge bezeichnet stillschweigendes, verkörpertes Erfahrungswissen: Menschen können etwas erkennen, beurteilen oder tun, ohne dieses Wissen vollständig in Worte, Regeln oder Daten übersetzen zu können.",
+      "shortDefinition": "Tacit Knowledge bezeichnet stillschweigendes, verkörpertes Erfahrungswissen: Menschen können etwas erkennen, beurteilen oder tun, ohne dieses Wissen vollständig in Worte, Regeln oder Daten übersetzen zu können.",
+      "category": "Wissen, Wirkungskompetenz, Organisation & Transformation",
+      "synonyms": [
+        "Tacit Knowledge",
+        "Implizites Wissen",
+        "Stillschweigendes Wissen",
+        "verkörpertes Erfahrungswissen"
+      ],
+      "relatedTerms": [
+        "informelles-wissen",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "resonanzraum",
+        "wirkungsraum",
+        "lernende-organisation",
+        "sdg-plus",
+        "wirkungsrueckkopplung",
+        "dunning-kruger-effekt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -43115,17 +43259,21 @@
         "unsichtbare-arbeit",
         "modellblindheit",
         "gedankenlosigkeit",
-        "reframing"
+        "reframing",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie",
-        "Die neue Ordnung des Wohlstands",
-        "Technische Leitlinien WUStG",
-        "Wirkungsrat-Konzept",
-        "Produktbesteuerung durch Wirkung"
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/technische-leitlinien-wustg-v2/",
+        "dokumente/wirkungsrat-konzept/",
+        "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"
       ],
       "relatedObjections": []
     },
@@ -44646,17 +44794,22 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsoekonomie-in-der-lieferkette"
+        "blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html",
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/systemmodell-der-wirkungsoekonomie/",
+        "dokumente/whitepaper-t-sroi/",
+        "dokumente/wirkungsoekonomie-in-der-lieferkette/"
       ],
       "relatedObjections": []
     },

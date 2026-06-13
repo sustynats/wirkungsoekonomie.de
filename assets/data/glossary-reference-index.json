@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-13T15:47:48.847Z",
-  "count": 1640,
+  "generatedAt": "2026-06-13T16:37:44.765Z",
+  "count": 1643,
   "letters": [
     "#",
     "A",
@@ -625,6 +625,7 @@
       "informationsasymmetrie",
       "informationsintegritaet",
       "informationsueberlastung",
+      "informelles-wissen",
       "innere-loops",
       "innovation",
       "innovativer-unternehmer",
@@ -1336,6 +1337,7 @@
       "strandinggefaehrdeter-kredit",
       "strategische-reserve",
       "strategisches-management",
+      "streisand-effekt",
       "streitfaehigkeit",
       "stressreaktion",
       "strohmann",
@@ -1379,6 +1381,7 @@
     "T": [
       "t-sroi",
       "tab-mittelspannung",
+      "tacit-knowledge",
       "tandem-solarzelle",
       "tank-to-wheel",
       "tar-mittelspannung",
@@ -8914,6 +8917,23 @@
       ]
     },
     {
+      "id": "informelles-wissen",
+      "label": "Informelles Wissen",
+      "slug": "informelles-wissen",
+      "url": "/begriffe/informelles-wissen/",
+      "category": "Wissen, Wirkungskompetenz, Organisation, Bildung & Transformation",
+      "shortDefinition": "Informelles Wissen ist Wissen, das außerhalb formaler Systeme entsteht oder weitergegeben wird: durch Erfahrung, Alltag, Praxis, Beziehung, Beobachtung, Ausprobieren, lokale Kontexte und gemeinsames Handeln.",
+      "aliases": [
+        "Informelles Wissen",
+        "Erfahrungswissen",
+        "Praxiswissen",
+        "Kontextwissen",
+        "lokales Wissen",
+        "Betroffenenwissen",
+        "informelles Lernen"
+      ]
+    },
+    {
       "id": "innere-loops",
       "label": "Innere Loops",
       "slug": "innere-loops",
@@ -14799,10 +14819,14 @@
       "label": "Rebound-Effekt",
       "slug": "rebound-effekt",
       "url": "/begriffe/rebound-effekt/",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "shortDefinition": "Ein Rebound-Effekt entsteht, wenn Effizienzgewinne durch verändertes Verhalten teilweise oder vollständig aufgehoben werden.",
+      "category": "Systemeffekte, Nachhaltigkeit, Wirkungsmessung & Transformation",
+      "shortDefinition": "Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.",
       "aliases": [
-        "Rebound-Effekt"
+        "Rebound-Effekt",
+        "Rebound Effect",
+        "Jevons-Paradox",
+        "Backfire",
+        "digitale Rebound-Effekte"
       ]
     },
     {
@@ -17387,6 +17411,20 @@
       ]
     },
     {
+      "id": "streisand-effekt",
+      "label": "Streisand-Effekt",
+      "slug": "streisand-effekt",
+      "url": "/begriffe/streisand-effekt/",
+      "category": "Diskursqualität, Medienwirkung, psychologische Effekte & SDG+",
+      "shortDefinition": "Der Streisand-Effekt beschreibt, dass der Versuch, eine Information zu unterdrücken, zu löschen oder unsichtbar zu machen, unbeabsichtigt erst recht Aufmerksamkeit erzeugt.",
+      "aliases": [
+        "Streisand-Effekt",
+        "Streisand Effect",
+        "Zensurverstärkung",
+        "Löschversuch-Effekt"
+      ]
+    },
+    {
       "id": "streitfaehigkeit",
       "label": "Streitfähigkeit",
       "slug": "streitfaehigkeit",
@@ -17891,6 +17929,20 @@
       "shortDefinition": "Technische Anschlussbedingungen Mittelspannung konkretisieren Anforderungen des Netzbetreibers für den Anschluss an das Mittelspannungsnetz.",
       "aliases": [
         "TAB Mittelspannung"
+      ]
+    },
+    {
+      "id": "tacit-knowledge",
+      "label": "Tacit Knowledge",
+      "slug": "tacit-knowledge",
+      "url": "/begriffe/tacit-knowledge/",
+      "category": "Wissen, Wirkungskompetenz, Organisation & Transformation",
+      "shortDefinition": "Tacit Knowledge bezeichnet stillschweigendes, verkörpertes Erfahrungswissen: Menschen können etwas erkennen, beurteilen oder tun, ohne dieses Wissen vollständig in Worte, Regeln oder Daten übersetzen zu können.",
+      "aliases": [
+        "Tacit Knowledge",
+        "Implizites Wissen",
+        "Stillschweigendes Wissen",
+        "verkörpertes Erfahrungswissen"
       ]
     },
     {

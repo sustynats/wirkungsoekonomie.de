@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T15:48:02.077Z",
+  "generatedAt": "2026-06-13T16:38:00.287Z",
   "entries": {
     "/begriffe/fuenftes-p-planet/": {
       "documentType": "begriff",
@@ -621,7 +621,11 @@
         "wissenschaftsfeindlichkeit",
         "sdg-plus",
         "medienqualitaet",
-        "demokratische-resilienz"
+        "demokratische-resilienz",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -5462,7 +5466,14 @@
         "wirkungskompetenz",
         "cognitive-ease",
         "autoritaetsbias",
-        "pluralistische-ignoranz"
+        "pluralistische-ignoranz",
+        "amathia",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt",
+        "wirkungsblindheit",
+        "diskursfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "WOeK_Glossar_Psychologische_Effekte_Diskursverschiebung_v0_1.docx",
@@ -11823,6 +11834,31 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/informelles-wissen/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "1.0",
+      "sectionId": "begriff-informelles-wissen",
+      "documentId": "informelles-wissen",
+      "relatedTerms": [
+        "tacit-knowledge",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsraum",
+        "resonanzraum",
+        "teilgabe",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "sdg-plus",
+        "lernende-organisation",
+        "dunning-kruger-effekt"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "",
       "searchBoost": 110
     },
     "/begriffe/innere-loops/": {
@@ -21470,20 +21506,36 @@
     },
     "/begriffe/rebound-effekt/": {
       "documentType": "begriff",
-      "status": "woek-anschlussbegriff",
+      "status": "approved",
       "version": "1.0",
       "sectionId": "begriff-rebound-effekt",
       "documentId": "rebound-effekt",
       "relatedTerms": [
-        "netto-wirkung",
-        "wirkungspfad",
+        "wirkung",
+        "wirkungspotenzial",
         "wirkungsrisiko",
-        "energieeffizienz"
+        "wechselwirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "suffizienz",
+        "effizienz",
+        "backfire-effekt",
+        "sdg-plus",
+        "kreislaufwirtschaft",
+        "dunning-kruger-effekt",
+        "wirkungskompetenz"
       ],
-      "relatedDocuments": [
-        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
-      ],
-      "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
+      "relatedDocuments": [],
+      "sourceFile": "",
       "searchBoost": 110
     },
     "/begriffe/rechenschaft/": {
@@ -25538,6 +25590,39 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/streisand-effekt/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "1.0",
+      "sectionId": "begriff-streisand-effekt",
+      "documentId": "streisand-effekt",
+      "relatedTerms": [
+        "reaktanz",
+        "backfire-effekt",
+        "desinformation",
+        "medienqualitaet",
+        "diskursfaehigkeit",
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "amathia",
+        "dunning-kruger-effekt",
+        "false-balance",
+        "framing",
+        "overton-fenster",
+        "whataboutism",
+        "soziale-ansteckung",
+        "gruppendenken",
+        "sdg-plus",
+        "demokratische-resilienz"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "",
+      "searchBoost": 110
+    },
     "/begriffe/streitfaehigkeit/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -26346,6 +26431,31 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/tacit-knowledge/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "1.0",
+      "sectionId": "begriff-tacit-knowledge",
+      "documentId": "tacit-knowledge",
+      "relatedTerms": [
+        "informelles-wissen",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "resonanzraum",
+        "wirkungsraum",
+        "lernende-organisation",
+        "sdg-plus",
+        "wirkungsrueckkopplung",
+        "dunning-kruger-effekt"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "",
       "searchBoost": 110
     },
     "/begriffe/tandem-solarzelle/": {
@@ -31111,14 +31221,18 @@
         "unsichtbare-arbeit",
         "modellblindheit",
         "gedankenlosigkeit",
-        "reframing"
+        "reframing",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "relatedDocuments": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie",
-        "Die neue Ordnung des Wohlstands",
-        "Technische Leitlinien WUStG",
-        "Wirkungsrat-Konzept",
-        "Produktbesteuerung durch Wirkung"
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/technische-leitlinien-wustg-v2/",
+        "dokumente/wirkungsrat-konzept/",
+        "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"
       ],
       "sourceFile": "Glossar-Pack 004: Bewertungs- und Steuerungslogik",
       "searchBoost": 140
@@ -32274,14 +32388,19 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "relatedDocuments": [
-        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsoekonomie-in-der-lieferkette"
+        "blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html",
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/systemmodell-der-wirkungsoekonomie/",
+        "dokumente/whitepaper-t-sroi/",
+        "dokumente/wirkungsoekonomie-in-der-lieferkette/"
       ],
       "sourceFile": "Glossar-Pack 012: Unternehmen, Führung & Wirkungskompetenz",
       "searchBoost": 140

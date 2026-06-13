@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T15:47:48.479Z",
+  "generatedAt": "2026-06-13T16:37:44.392Z",
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -7861,7 +7861,11 @@
         "wissenschaftsfeindlichkeit",
         "sdg-plus",
         "medienqualitaet",
-        "demokratische-resilienz"
+        "demokratische-resilienz",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "officialSources": [
         "LSJ / Perseus: ἀμαθία|http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry=a)maqi/a",
@@ -65072,13 +65076,27 @@
         "wirkungskompetenz",
         "cognitive-ease",
         "autoritaetsbias",
-        "pluralistische-ignoranz"
+        "pluralistische-ignoranz",
+        "amathia",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt",
+        "wirkungsblindheit",
+        "diskursfaehigkeit"
       ],
       "related_terms": [
         "wirkungskompetenz",
         "cognitive-ease",
         "autoritaetsbias",
-        "pluralistische-ignoranz"
+        "pluralistische-ignoranz",
+        "amathia",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt",
+        "wirkungsblindheit",
+        "diskursfaehigkeit"
       ],
       "classicGlossary": true,
       "showInCategoryGlossary": true,
@@ -102236,7 +102254,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/gebaeudeenergiegesetz/",
       "dataStandardsGroup": "",
-      "priority": 1569,
+      "priority": 1571,
       "relatedDocuments": []
     },
     {
@@ -139030,6 +139048,270 @@
       "glossaryOrderKey": "Informationsüberlastung",
       "dataStandardsGroup": "",
       "priority": 540
+    },
+    {
+      "id": "informelles-wissen",
+      "termId": "informelles-wissen",
+      "label": "Informelles Wissen",
+      "canonicalLabel": "Informelles Wissen",
+      "slug": "informelles-wissen",
+      "aliases": [
+        "Informelles Wissen",
+        "Erfahrungswissen",
+        "Praxiswissen",
+        "Kontextwissen",
+        "lokales Wissen",
+        "Betroffenenwissen",
+        "informelles Lernen"
+      ],
+      "synonyms": [
+        "Informelles Wissen",
+        "Erfahrungswissen",
+        "Praxiswissen",
+        "Kontextwissen",
+        "lokales Wissen",
+        "Betroffenenwissen",
+        "informelles Lernen"
+      ],
+      "shortDefinition": "Informelles Wissen ist Wissen, das außerhalb formaler Systeme entsteht oder weitergegeben wird: durch Erfahrung, Alltag, Praxis, Beziehung, Beobachtung, Ausprobieren, lokale Kontexte und gemeinsames Handeln.",
+      "hoverDefinition": "Informelles Wissen ist Wissen, das außerhalb formaler Systeme entsteht oder weitergegeben wird: durch Erfahrung, Alltag, Praxis, Beziehung, Beobachtung, Ausprobieren, lokale Kontexte und gemeinsames Handeln.",
+      "definition": "Informelles Wissen bezeichnet Wissen, das nicht primär durch formale Ausbildung, offizielle Dokumentation oder institutionalisierte Forschung entsteht. Es entsteht im Tun: durch Erfahrung, Beobachtung, Wiederholung, Alltagspraxis, Fehler, Beziehungen und lokale Situationen.",
+      "longDefinition": "Informelles Wissen bezeichnet Wissen, das nicht primär durch formale Ausbildung, offizielle Dokumentation oder institutionalisierte Forschung entsteht. Es entsteht im Tun: durch Erfahrung, Beobachtung, Wiederholung, Alltagspraxis, Fehler, Beziehungen und lokale Situationen.\n\nMenschen wissen oft sehr viel über Wirkungszusammenhänge, ohne dieses Wissen in Berichten, Kennzahlen oder akademischen Begriffen ausdrücken zu können. Eine Pflegekraft erkennt früh, dass ein Mensch abbaut. Eine Lehrkraft spürt, warum eine Klasse kippt. Eine Handwerkerin sieht, ob ein Material dauerhaft funktionieren wird. Eine Nachbarschaft weiß, warum eine soziale Maßnahme nicht angenommen wird. Eine Community erkennt Diskriminierungsmuster, bevor sie statistisch sichtbar werden.\n\nIn der Wirkungsökonomie ist dieses Wissen zentral, weil Wirkung immer in konkreten Wirkungsräumen entsteht. Daten zeigen Muster. Informelles Wissen erklärt oft, warum diese Muster entstehen, wo sie brechen und welche Rückkopplungen tatsächlich relevant sind.",
+      "woekRelation": "Die Wirkungsökonomie versteht Gesellschaft als lernendes System. Lernen entsteht nicht allein durch Kennzahlen, sondern durch Rückkopplung zwischen Daten, Erfahrung, Betroffenheit, Praxis und Entscheidung. Informelles Wissen ist eine wichtige Quelle solcher Rückkopplung und Teil der Wirkungskompetenz: Es hilft, Wirkung nicht nur zu messen, sondern zu verstehen.",
+      "usageNote": "Den Begriff verwenden, wenn Wissen außerhalb formaler Bildungs-, Reporting-, Audit- oder Dokumentationssysteme entsteht, weitergegeben oder genutzt wird. Tacit Knowledge als verwandten, aber engeren Begriff erklären: Informelles Wissen beschreibt eher den Entstehungs- und Weitergabekontext, Tacit Knowledge die schwer explizierbare Qualität dieses Wissens.",
+      "doNotConfuseWith": [
+        "Tacit Knowledge: Tacit Knowledge ist eine spezielle Form informellen oder impliziten Wissens, das schwer artikulierbar ist. Informelles Wissen ist breiter.",
+        "Meinung: Informelles Wissen ist nicht bloß Meinung. Es beruht oft auf Erfahrung, Praxis und Kontext, muss aber trotzdem prüfbar und rückkoppelbar gemacht werden.",
+        "Anekdote: Eine einzelne Erfahrung kann ein wichtiges Signal sein, ist aber noch kein vollständiger Wirkungsnachweis.",
+        "Bauchgefühl: Informelles Wissen kann intuitiv erscheinen, basiert aber häufig auf eingeübter Mustererkennung.",
+        "Unwissenschaftlichkeit: Informelles Wissen steht nicht im Gegensatz zu Wissenschaft. Es kann wissenschaftliche Analyse ergänzen, präzisieren oder auf blinde Flecken hinweisen.",
+        "Tradition: Tradition kann informelles Wissen enthalten, kann aber auch überholte, diskriminierende oder schädliche Muster fortschreiben.",
+        "Dunning-Kruger-Effekt: Informelles Wissen ist nicht Selbstüberschätzung; es braucht Prüfung, Rückkopplung und Kontextualisierung."
+      ],
+      "examples": [
+        "Pflegekräfte erkennen frühzeitig Verschlechterungen, die in standardisierten Bögen erst später sichtbar werden.",
+        "Handwerker:innen wissen, welche Materialien unter realen Bedingungen funktionieren.",
+        "Lehrkräfte erkennen soziale Dynamiken in Klassen, bevor sie in Leistungsdaten sichtbar werden.",
+        "Bewohner:innen eines Quartiers wissen, welche Orte sicher, unsicher, inklusiv oder ausgrenzend wirken.",
+        "Mitarbeitende kennen Prozessprobleme, die in Management-Kennzahlen nicht auftauchen.",
+        "Communities können Diskriminierungs- oder Exklusionsmuster beschreiben, bevor sie statistisch erfasst sind.",
+        "Landwirt:innen verfügen über lokales Wissen zu Boden, Wasser, Wetter, Arten und Mikroklima."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Informelles Wissen entsteht oft außerhalb von Schulen, Hochschulen, Reports, Zertifikaten oder offiziellen Prozessen.",
+            "Es umfasst Erfahrungswissen, Praxiswissen, Kontextwissen, Beziehungswissen und lokales Wissen.",
+            "Es ist häufig entscheidend dafür, ob Maßnahmen tatsächlich wirken.",
+            "In Organisationen liegt informelles Wissen oft bei Mitarbeitenden, Kund:innen, Pflegekräften, Handwerker:innen, Betroffenen, Communities oder lokalen Akteur:innen.",
+            "In der Wirkungsökonomie ist informelles Wissen wichtig, weil Wirkung aus realen Kontexten, Rückkopplung und gelebter Erfahrung entsteht.",
+            "Informelles Wissen darf nicht romantisiert werden: Es kann wertvoll, aber auch fehlerhaft, verzerrt, ausschließend oder nicht überprüft sein.",
+            "Ziel ist nicht, informelles Wissen zu ersetzen, sondern es sichtbar, anschlussfähig und lernfähig zu machen."
+          ]
+        },
+        {
+          "title": "Warum ist informelles Wissen wichtig?",
+          "body": "Viele Systeme scheitern nicht daran, dass keine Daten vorhanden sind. Sie scheitern daran, dass formale Daten nicht mit der gelebten Realität verbunden werden. Informelles Wissen kann zeigen, warum eine Maßnahme auf dem Papier gut aussieht, aber vor Ort nicht funktioniert; warum Menschen ein Angebot nicht nutzen; warum Vertrauen fehlt; warum eine Organisation offiziell effizient wirkt, aber intern überlastet ist; oder warum eine Regel unbeabsichtigte Nebenwirkungen erzeugt."
+        },
+        {
+          "title": "Wirkmechanismus",
+          "items": [
+            "Erfahrung: Menschen erleben wiederkehrende Situationen.",
+            "Mustererkennung: Sie erkennen Zusammenhänge, Risiken oder Chancen.",
+            "Kontextwissen: Sie verstehen lokale, soziale oder kulturelle Bedingungen.",
+            "Frühwarnung: Sie nehmen schwache Signale wahr, bevor sie formale Systeme erreichen.",
+            "Übersetzung: Sie bringen Erfahrungswissen in Entscheidungen ein.",
+            "Wirkungskorrektur: Maßnahmen können angepasst werden, bevor Schaden entsteht.",
+            "Lernschleife: Organisationen, Politik oder Märkte verbessern ihre Wirkungsfähigkeit."
+          ]
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Informelles Wissen reduziert blinde Flecken formaler Steuerung. Ohne informelles Wissen werden Maßnahmen von oben geplant, aber vor Ort nicht angenommen; Kennzahlen verbessern sich, während Belastung, Misstrauen oder Ausschluss wachsen; Innovationen scheitern an Nutzungskontexten; Pflege, Bildung, Handwerk und soziale Arbeit werden unterschätzt; und Betroffene werden zu Datenpunkten statt als Wissensträger:innen anerkannt."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Informelles Wissen ist nicht vollständig standardisierbar, kann aber systematisch eingebunden werden: qualitative Interviews, Fokusgruppen, Bürger:innenräte, Beteiligungsformate, Praxisbeiräte, Wirkungswerkstätten, ethnografische Beobachtung, Beschwerde- und Hinweisgebersysteme, Mitarbeitendenfeedback, Community-Feedback, lokale Resonanzraumanalysen, Fallanalysen und qualitative Ergänzungen zu Scorecards."
+        },
+        {
+          "title": "Risiken",
+          "items": [
+            "Verzerrung durch Einzelfälle",
+            "Traditionsbias und Gruppendenken",
+            "unbewusste Diskriminierung und Hierarchieeffekte",
+            "romantisierte Alltagserfahrung",
+            "fehlende Überprüfbarkeit",
+            "Verallgemeinerung einzelner Gruppen",
+            "Monopolisierung durch Machtgruppen",
+            "ausschließende informelle Netzwerke"
+          ]
+        },
+        {
+          "title": "Umgang und Gegenmaßnahmen",
+          "items": [
+            "Erfahrungswissen systematisch einholen",
+            "Betroffene als Wissensträger:innen anerkennen",
+            "qualitative Daten neben quantitative Daten stellen",
+            "sichere Räume für kritisches Feedback schaffen",
+            "Praxiswissen in Scorecards und Audits einbinden",
+            "informelle Hinweise prüfen, statt sie vorschnell abzuwerten",
+            "Machtasymmetrien sichtbar machen",
+            "informelles Wissen versionieren und weiterentwickeln"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Externe Quellen sind Forschung zu informellem Lernen und Erfahrungswissen, Michael Polanyi zu Tacit Knowledge, Nonaka & Takeuchi zu organisationalem Wissen, Praxisforschung, partizipative Forschung, Citizen Science, lokale Wissenssysteme und Communities of Practice. Interne WÖk-Bezüge: Wirkung ist tatsächliche Zustandsveränderung, Wirkungskompetenz umfasst Nebenwirkungen und Rückkopplungen, Teilgabe bedeutet aktive Wissens- und Gestaltungskraft in gesellschaftlichen Wirkungsräumen."
+        }
+      ],
+      "relatedTerms": [
+        "tacit-knowledge",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsraum",
+        "resonanzraum",
+        "teilgabe",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "sdg-plus",
+        "lernende-organisation",
+        "dunning-kruger-effekt"
+      ],
+      "related_terms": [
+        "tacit-knowledge",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsraum",
+        "resonanzraum",
+        "teilgabe",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "sdg-plus",
+        "lernende-organisation",
+        "dunning-kruger-effekt"
+      ],
+      "officialSources": [
+        "Michael Polanyi: The Tacit Dimension",
+        "Nonaka & Takeuchi: The Knowledge-Creating Company",
+        "Forschung zu informellem Lernen, Erfahrungswissen und Communities of Practice"
+      ],
+      "sourceLinks": [
+        {
+          "source_type": "primary",
+          "title": "Michael Polanyi: The Tacit Dimension",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "academic",
+          "title": "Nonaka & Takeuchi: The Knowledge-Creating Company",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "source_links": [
+        {
+          "source_type": "primary",
+          "title": "Michael Polanyi: The Tacit Dimension",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "academic",
+          "title": "Nonaka & Takeuchi: The Knowledge-Creating Company",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "categories": [
+        "wissen-wirkungskompetenz-organisation-bildung-transformation",
+        "daten-standards-regularien"
+      ],
+      "category": "Wissen, Wirkungskompetenz, Organisation, Bildung & Transformation",
+      "type": "WÖk-Präzisierungsbegriff / Wirkungswissen",
+      "begriffstyp": "WÖk-Präzisierungsbegriff / Wirkungswissen",
+      "theme": [
+        "Wissen",
+        "Wirkungskompetenz",
+        "Organisation",
+        "Bildung",
+        "Transformation"
+      ],
+      "themes": [
+        "Wissen",
+        "Wirkungskompetenz",
+        "Organisation",
+        "Bildung",
+        "Transformation"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Rückkopplung",
+        "Wirkungskompetenz",
+        "Wirkungsmonitoring",
+        "Wirkungswissen"
+      ],
+      "applicationFields": [
+        "Organisationen",
+        "Bildung",
+        "Pflege",
+        "Handwerk",
+        "Kommunen",
+        "Communities",
+        "Transformation"
+      ],
+      "tags": [
+        "Informelles Wissen",
+        "Erfahrungswissen",
+        "Praxiswissen",
+        "Kontextwissen",
+        "lokales Wissen",
+        "Betroffenenwissen",
+        "informelles Lernen",
+        "implizites Wissen",
+        "Tacit Knowledge",
+        "Wirkungskompetenz",
+        "Wirkungsökonomie",
+        "Wissensmanagement",
+        "Organisationswissen",
+        "Transformation",
+        "SDG+",
+        "Communities of Practice"
+      ],
+      "conceptStatus": "WÖk-Präzisierungsbegriff / Wirkungswissen",
+      "concept_status": "WÖk-Präzisierungsbegriff / Wirkungswissen",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "pageUrl": "/begriffe/informelles-wissen/",
+      "priority": 380,
+      "version": "1.0",
+      "source": "Glossar-Erweiterung Informelles Wissen",
+      "sourceDocument": "",
+      "sourceSection": "Wissen, Wirkungskompetenz, Organisation, Bildung & Transformation",
+      "reviewStatus": "redaktionell ergänzt",
+      "metaTitle": "Informelles Wissen | Glossar der Wirkungsökonomie",
+      "metaDescription": "Informelles Wissen ist Erfahrungs-, Praxis- und Kontextwissen außerhalb formaler Systeme. In der Wirkungsökonomie ist es wichtig, weil Wirkung nur verstanden werden kann, wenn Daten, Alltagserfahrung und Rückkopplung zusammengeführt werden.",
+      "glossaryOrderKey": "Informelles Wissen",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-13",
+      "updatedAt": "2026-06-13",
+      "preferredUsage": "Den Begriff verwenden, wenn Wissen außerhalb formaler Bildungs-, Reporting-, Audit- oder Dokumentationssysteme entsteht, weitergegeben oder genutzt wird. Tacit Knowledge als verwandten, aber engeren Begriff erklären: Informelles Wissen beschreibt eher den Entstehungs- und Weitergabekontext, Tacit Knowledge die schwer explizierbare Qualität dieses Wissens.",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "statusNote": "",
+      "dataStandardsGroup": "",
+      "relatedDocuments": [],
+      "deprecatedUsage": []
     },
     {
       "id": "innere-loops",
@@ -260458,123 +260740,314 @@
       "canonicalLabel": "Rebound-Effekt",
       "slug": "rebound-effekt",
       "aliases": [
-        "Rebound-Effekt"
+        "Rebound-Effekt",
+        "Rebound Effect",
+        "Jevons-Paradox",
+        "Backfire",
+        "digitale Rebound-Effekte"
       ],
       "synonyms": [
-        "Rebound-Effekt"
+        "Rebound-Effekt",
+        "Rebound Effect",
+        "Jevons-Paradox",
+        "Backfire",
+        "digitale Rebound-Effekte"
       ],
-      "shortDefinition": "Ein Rebound-Effekt entsteht, wenn Effizienzgewinne durch verändertes Verhalten teilweise oder vollständig aufgehoben werden.",
-      "definition": "Rebound-Effekte zeigen, dass technische Verbesserung nicht automatisch positive Netto-Wirkung erzeugt. Wenn Effizienz Kosten senkt oder Nutzung erleichtert, kann zusätzlicher Konsum einen Teil der Einsparung aufzehren.",
-      "longDefinition": "Rebound-Effekte zeigen, dass technische Verbesserung nicht automatisch positive Netto-Wirkung erzeugt. Wenn Effizienz Kosten senkt oder Nutzung erleichtert, kann zusätzlicher Konsum einen Teil der Einsparung aufzehren.",
-      "woekRelation": "Der Rebound-Effekt ist eine Neben- oder Gegenwirkung. Er zeigt, warum Wirkung nicht allein am direkten Output gemessen werden darf.",
-      "statusNote": "Nicht als Diagnose für Personen und nicht als moralischen Kampfbegriff verwenden. Der Begriff dient der Beschreibung von Wirkpfaden, Resonanzräumen und Rückkopplungen.",
-      "usageNote": "Zwischen Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus, Resonanzraum und Wirkpfad unterscheiden.",
-      "categories": [
-        "psychologische-systemische-wirkmechanismen"
+      "shortDefinition": "Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.",
+      "hoverDefinition": "Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.",
+      "definition": "Der Rebound-Effekt beschreibt eine Rückwirkung von Effizienzsteigerungen: Eine Maßnahme senkt den Ressourcen-, Energie-, Zeit- oder Kostenaufwand pro Nutzungseinheit. Dadurch wird die Nutzung attraktiver; Menschen, Unternehmen oder Märkte nutzen das effizientere Angebot häufiger, intensiver oder zusätzlich. Die erwartete Einsparung fällt dann geringer aus als berechnet.",
+      "longDefinition": "Der Rebound-Effekt beschreibt eine Rückwirkung von Effizienzsteigerungen. Eine Maßnahme senkt den Ressourcen-, Energie-, Zeit- oder Kostenaufwand pro Nutzungseinheit. Dadurch wird die Nutzung attraktiver. Menschen, Unternehmen oder Märkte nutzen das effizientere Angebot häufiger, intensiver oder an anderer Stelle zusätzlich. Das Ergebnis: Die erwartete Einsparung fällt geringer aus als berechnet.\n\nEin sparsameres Auto verbraucht weniger Kraftstoff pro Kilometer. Wenn dadurch aber mehr gefahren wird, sinkt der tatsächliche Kraftstoffverbrauch weniger stark als technisch möglich. Eine effizientere Heizung senkt Kosten. Wenn deshalb stärker geheizt wird, wird ein Teil der Energieeinsparung wieder aufgezehrt. Effizientere digitale Infrastruktur kann einzelne Rechenoperationen günstiger machen. Wenn dadurch aber massiv mehr KI-Anwendungen, Streaming oder Datenverarbeitung genutzt werden, kann der Gesamtverbrauch steigen.\n\nDer Rebound-Effekt ist kein Argument gegen Effizienz. Er ist ein Hinweis darauf, dass Effizienz allein nicht genügt, wenn das Ziel absolute Reduktion, Ressourcenschutz oder positive Netto-Wirkung ist.",
+      "woekRelation": "Der Rebound-Effekt zeigt, warum die Wirkungsökonomie technische Verbesserung, Wirkungspotenzial, tatsächliche Wirkung, Nebenwirkung, Netto-Wirkung und Transformationswirkung trennt. Eine Effizienzmaßnahme kann ein positives Wirkungspotenzial haben; ob daraus positive Netto-Wirkung entsteht, hängt davon ab, wie Menschen, Märkte, Organisationen und Systeme darauf reagieren. Effizienz ist ein Mittel. Positive Netto-Wirkung ist das Ziel.",
+      "usageNote": "Den Begriff verwenden, wenn Effizienzgewinne durch Mehrnutzung, indirekten Mehrkonsum, Nachfrageausweitung oder systemische Rückkopplungen die erwartete Einsparung verringern. Nicht als Argument gegen Effizienz verwenden, sondern als Prüfhinweis für tatsächliche Netto-Wirkung.",
+      "doNotConfuseWith": [
+        "Effizienz: Effizienz bedeutet weniger Einsatz pro Einheit. Rebound beschreibt, dass dadurch die Gesamtnutzung steigen kann.",
+        "Suffizienz: Suffizienz zielt auf angemessenen, begrenzten Verbrauch. Rebound zeigt, warum Effizienz ohne Suffizienz oft nicht reicht.",
+        "Nebenwirkung: Rebound ist eine spezielle Form von Nebenwirkung oder Rückwirkung, die durch veränderte Nutzung nach Effizienzgewinnen entsteht.",
+        "Wechselwirkung: Wechselwirkungen sind allgemeine gegenseitige Effekte zwischen Systemteilen. Rebound ist eine bestimmte Wechselwirkung zwischen Effizienz, Kosten, Verhalten und Nachfrage.",
+        "Backfire: Backfire ist ein Extremfall des Rebounds, bei dem die Einsparung überkompensiert wird.",
+        "Jevons-Paradox: Das Jevons-Paradox beschreibt historisch, dass Effizienzsteigerungen bei einer Ressource zu steigender Gesamtnachfrage nach dieser Ressource führen können. Der Rebound-Effekt ist der breitere moderne Oberbegriff für solche Rückwirkungen.",
+        "Greenwashing: Greenwashing ist die irreführende Darstellung positiver Umweltwirkung. Rebound kann Greenwashing begünstigen, ist aber selbst ein realer Wirkmechanismus.",
+        "Dunning-Kruger-Effekt: Dunning-Kruger beschreibt Selbstüberschätzung bei geringer Kompetenz. Rebound beschreibt eine systemische Rückwirkung nach Effizienzgewinnen."
       ],
-      "tags": [
-        "Psychologie",
-        "Kommunikation",
-        "Medienwirkung",
-        "Systemtheorie",
-        "Konstruktivismus",
-        "Resonanz",
-        "Demokratie",
-        "Wirkungspotenzial",
-        "Wirkungsrisiko",
-        "Transformation",
-        "Kybernetik",
-        "politische Sprache",
-        "Resonanzraum",
-        "Vertrauen"
+      "examples": [
+        "Autos werden effizienter, aber Fahrzeuge werden größer, schwerer oder häufiger genutzt.",
+        "Dämmung senkt den Energiebedarf, aber Bewohner:innen heizen mehr Räume oder höhere Temperaturen.",
+        "LEDs sind effizienter, aber Beleuchtung wird billiger und breitet sich in Städten, Werbung und Außenräumen aus.",
+        "Datenverarbeitung wird effizienter, aber Streaming, Cloud-Dienste, KI-Anwendungen und Datenspeicherung wachsen stark.",
+        "Materialeffizientere Herstellung senkt Stückkosten; dadurch steigen Absatzmengen.",
+        "Produktivitätstools sparen Zeit, aber die frei werdende Zeit wird mit zusätzlichen Aufgaben gefüllt. Entlastung bleibt aus."
       ],
-      "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Der Rebound-Effekt zeigt, dass Effizienz nicht automatisch zu weniger Verbrauch führt.",
+            "Wenn etwas günstiger, bequemer oder effizienter wird, kann es häufiger oder intensiver genutzt werden.",
+            "Erwartete Einsparungen können teilweise, vollständig oder in Ausnahmefällen sogar überkompensiert werden.",
+            "Rebound-Effekte können direkt, indirekt oder systemisch auftreten.",
+            "Wirkungsökonomisch ist der Rebound-Effekt zentral, weil Wirkung nicht identisch mit technischer Effizienz ist.",
+            "Im WÖk-Stufenmodell gehört Rebound zu Nebenwirkungen, Wechselwirkungen und rückschlagenden Folgen.",
+            "Maßnahmen müssen an tatsächlicher Netto-Wirkung gemessen werden, nicht nur an theoretischem Einsparpotenzial."
+          ]
+        },
+        {
+          "title": "Wirkmechanismus",
+          "items": [
+            "Effizienzsteigerung: Ein Produkt, Prozess oder System benötigt weniger Energie, Material, Zeit oder Geld pro Nutzungseinheit.",
+            "Kostensenkung oder Komfortgewinn: Die Nutzung wird günstiger, einfacher, schneller oder attraktiver.",
+            "Verhaltensänderung: Menschen oder Organisationen nutzen das Angebot häufiger, intensiver oder in größerem Umfang.",
+            "Nachfrageausweitung: Neue Nutzer:innen, neue Anwendungen oder neue Märkte entstehen.",
+            "Kompensation der Einsparung: Ein Teil der ursprünglich erwarteten Einsparung wird durch Mehrnutzung aufgezehrt.",
+            "Systemische Rückkopplung: Sinkende Kosten können Märkte vergrößern, Geschäftsmodelle verändern oder zusätzlichen Ressourcenverbrauch erzeugen."
+          ]
+        },
+        {
+          "title": "Formen des Rebound-Effekts",
+          "body": "Direkter Rebound entsteht, wenn ein effizienteres Produkt häufiger genutzt wird. Indirekter Rebound entsteht, wenn Einsparungen an einer Stelle für anderen ressourcenverbrauchenden Konsum verwendet werden. Systemischer oder makroökonomischer Rebound entsteht, wenn Effizienzgewinne ganze Märkte, Branchen oder Infrastrukturen vergrößern. Backfire bezeichnet den Sonderfall, in dem der Gesamtverbrauch nach einer Effizienzsteigerung höher ist als vorher."
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Ein Produkt kann effizienter werden und trotzdem keine ausreichende positive Netto-Wirkung erzeugen, wenn Nutzung, Nachfrage, Infrastrukturbedarf oder indirekter Konsum stark wachsen. Die Wirkungsökonomie bewertet deshalb nicht nur Effizienz pro Einheit, sondern tatsächliche Zustandsveränderung im Wirkungsraum. Kernfrage: Sinkt die absolute Belastung für Mensch, Planet und Demokratie tatsächlich - oder verbessert sich nur die Effizienzkennzahl?"
+        },
+        {
+          "title": "SDG- und SDG+-Bezug",
+          "body": "Der Rebound-Effekt betrifft besonders SDG 7, SDG 9, SDG 11, SDG 12, SDG 13 und SDG 15 sowie SDG+-Felder wie Medienqualität, digitale Verantwortung, institutionelles Vertrauen und Transformationsfähigkeit. Besonders relevant ist er bei digitalen Technologien, KI, Mobilität, Energieeffizienz, Gebäuden, Kreislaufwirtschaft, Konsumgütern und Infrastrukturplanung."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Rebound-Effekte müssen in Wirkungsaudits, Wirkungsmonitoring und Scorecards berücksichtigt werden. Wichtige Beobachtungspunkte sind erwartete Einsparung pro Einheit, tatsächliche absolute Einsparung, Nutzungsintensität, Gesamtnachfrage, Kostenänderung pro Nutzungseinheit, indirekter Mehrkonsum, Infrastrukturbedarf, Lebenszyklus-Emissionen, Material- und Energieverbrauch, Nachfrageelastizität sowie Zeit- und sozialer Rebound.",
+          "items": [
+            "Prüfformel: Technisches Einsparpotenzial minus Rebound-Wirkung gleich tatsächliche Netto-Einsparung.",
+            "Einfacher: Nicht die Effizienz zählt, sondern die Netto-Wirkung."
+          ]
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche absolute Einsparung wurde erwartet und welche ist tatsächlich eingetreten?",
+            "Hat die Effizienzsteigerung Nutzung verbilligt oder erleichtert?",
+            "Hat sich die Nutzungshäufigkeit erhöht oder sind neue Nutzungen entstanden?",
+            "Wurden eingesparte Kosten an anderer Stelle ressourcenintensiv ausgegeben?",
+            "Gibt es indirekte oder makroökonomische Rückwirkungen?",
+            "Entsteht nur relative Entlastung oder auch absolute Reduktion?",
+            "Braucht die Maßnahme ergänzende Suffizienz-, Preis-, Mengen- oder Cap-Regeln?",
+            "Welche Wirkungsgrenzen dürfen nicht überschritten werden?"
+          ]
+        },
+        {
+          "title": "Umgang und Gegenmaßnahmen",
+          "items": [
+            "absolute Verbrauchsziele statt nur Effizienzziele",
+            "Ressourcen- oder Emissionsobergrenzen",
+            "Wirkungspreise, Wirkungssteuern und Bonus-Malus-Systeme",
+            "Suffizienzstrategien und soziale Ausgleichsmechanismen",
+            "transparente Verbrauchsinformation und Lebenszyklusbetrachtung",
+            "Förderung von Reparatur, Teilen, Langlebigkeit und Kreislaufwirtschaft",
+            "digitale Nutzungsgrenzen bei energieintensiven Anwendungen",
+            "Monitoring nach Einführung und Wirkungsfolgenabschätzung vor Skalierung",
+            "Transformationsprüfung statt bloßer Effizienzprüfung"
+          ]
+        },
+        {
+          "title": "Rebound in der Wirkungssteuer",
+          "body": "Für Produktwirkungssteuer und andere WÖk-Instrumente bedeutet Rebound: Effizienzwerte dürfen nicht isoliert bewertet werden. Absolute Verbräuche und Nutzungsintensitäten müssen mitgeführt werden. Scorecards sollten Rebound-Risiken als Wirkungsrisiko ausweisen. Bei hohem Rebound-Risiko kann ein Produkt oder Geschäftsmodell trotz Effizienz schlechter bewertet werden. Die Reverse Merit Order kann verhindern, dass Effizienzgewinne schwere negative Wirkungen überdecken."
+        },
+        {
+          "title": "Typische Warnsignale",
+          "items": [
+            "Nutzung wird deutlich billiger oder komfortabler.",
+            "Nachfrage ist kaum gesättigt.",
+            "Statusanreize fördern Mehrverbrauch.",
+            "Geschäftsmodelle beruhen auf Mengenausweitung.",
+            "Plattformlogiken belohnen mehr Nutzung.",
+            "Effizienzgewinne werden als Freifahrtschein kommuniziert.",
+            "Absolute Caps fehlen.",
+            "Technische Verbesserung wird als alleinige Lösung dargestellt."
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Externe Quellen sind u. a. Umweltbundesamt zu Rebound-Effekten, Forschung zu Energieeffizienz, Ressourcenökonomie, Jevons-Paradox und direktem, indirektem sowie makroökonomischem Rebound. Interne WÖk-Bezüge: Wirkung ist tatsächliche Zustandsveränderung, Wirkungspotenzial ist noch keine Wirkung, Netto-Wirkung berücksichtigt positive und negative Wirkungen sowie nichtkompensierbare Grenzen."
+        }
+      ],
       "relatedTerms": [
-        "netto-wirkung",
-        "wirkungspfad",
+        "wirkung",
+        "wirkungspotenzial",
         "wirkungsrisiko",
-        "energieeffizienz"
+        "wechselwirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "suffizienz",
+        "effizienz",
+        "backfire-effekt",
+        "sdg-plus",
+        "kreislaufwirtschaft",
+        "dunning-kruger-effekt",
+        "wirkungskompetenz"
+      ],
+      "related_terms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wechselwirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "suffizienz",
+        "effizienz",
+        "backfire-effekt",
+        "sdg-plus",
+        "kreislaufwirtschaft",
+        "dunning-kruger-effekt",
+        "wirkungskompetenz"
       ],
       "officialSources": [
-        "Warum Fakten nicht reichen|https://wirkungsoekonomie.de/blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html"
+        "Umweltbundesamt: Rebound-Effekte",
+        "Umweltbundesamt: Rebound-Effekte: Wie können sie effektiv begrenzt werden?",
+        "William Stanley Jevons: The Coal Question / Jevons-Paradox",
+        "Forschung zu direktem, indirektem und makroökonomischem Rebound"
       ],
-      "pageUrl": "/begriffe/rebound-effekt/",
-      "priority": 400,
-      "status": "woek-anschlussbegriff",
-      "version": "1.0",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "source": "Journalartikel und Glossar-Cluster Psychologische und systemische Wirkmechanismen",
-      "sourceDocument": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
-      "sourceSection": "Psychologische und systemische Wirkmechanismen",
-      "hoverDefinition": "Ein Rebound-Effekt entsteht, wenn Effizienzgewinne durch verändertes Verhalten teilweise oder vollständig aufgehoben werden.",
-      "doNotConfuseWith": [
-        "Wirkung",
-        "Wirkungspotenzial",
-        "Wirkungsnachweis"
+      "sourceLinks": [
+        {
+          "source_type": "agency",
+          "title": "Umweltbundesamt: Rebound-Effekte",
+          "url": "https://www.umweltbundesamt.de/themen/abfall-ressourcen/oekonomische-rechtliche-aspekte-der/rebound-effekte",
+          "status": "linked"
+        },
+        {
+          "source_type": "agency",
+          "title": "Umweltbundesamt: Rebound-Effekte: Wie können sie effektiv begrenzt werden?",
+          "url": "https://www.umweltbundesamt.de/publikationen/rebound-effekte-wie-koennen-sie-effektiv-begrenzt",
+          "status": "linked"
+        },
+        {
+          "source_type": "agency",
+          "title": "Umweltbundesamt: Rebound-Effekte durch digitale Leistungen und Produkte",
+          "url": "https://www.umweltbundesamt.de/publikationen/rebound-effekte-durch-digitale-leistungen-produkte",
+          "status": "linked"
+        }
       ],
-      "relatedDocuments": [
-        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
+      "source_links": [
+        {
+          "source_type": "agency",
+          "title": "Umweltbundesamt: Rebound-Effekte",
+          "url": "https://www.umweltbundesamt.de/themen/abfall-ressourcen/oekonomische-rechtliche-aspekte-der/rebound-effekte",
+          "status": "linked"
+        },
+        {
+          "source_type": "agency",
+          "title": "Umweltbundesamt: Rebound-Effekte: Wie können sie effektiv begrenzt werden?",
+          "url": "https://www.umweltbundesamt.de/publikationen/rebound-effekte-wie-koennen-sie-effektiv-begrenzt",
+          "status": "linked"
+        },
+        {
+          "source_type": "agency",
+          "title": "Umweltbundesamt: Rebound-Effekte durch digitale Leistungen und Produkte",
+          "url": "https://www.umweltbundesamt.de/publikationen/rebound-effekte-durch-digitale-leistungen-produkte",
+          "status": "linked"
+        }
       ],
-      "examples": [],
-      "preferredUsage": "Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.",
-      "deprecatedUsage": [
-        "als moralisches Etikett für Personen verwenden",
-        "mit eingetretener Wirkung gleichsetzen"
+      "categories": [
+        "systemeffekte-nachhaltigkeit-wirkungsmessung-transformation",
+        "psychologische-systemische-wirkmechanismen",
+        "daten-standards-regularien"
       ],
-      "metaTitle": "Rebound-Effekt | Glossar der Wirkungsökonomie",
-      "metaDescription": "Ein Rebound-Effekt entsteht, wenn Effizienzgewinne durch verändertes Verhalten teilweise oder vollständig aufgehoben werden.",
-      "reviewStatus": "approved",
-      "glossaryOrderKey": "Rebound-Effekt",
-      "firstApprovedIn": "2026.2",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
-      "related_terms": [
-        "netto-wirkung",
-        "wirkungspfad",
-        "wirkungsrisiko",
-        "energieeffizienz"
-      ],
-      "publicationStatus": "published",
-      "publication_status": "published",
-      "concept_status": "",
-      "source_links": [],
-      "internal_links": [],
-      "last_reviewed": "2026-05-29",
-      "type": "WÖk-Präzisierungsbegriff",
-      "begriffstyp": "WÖk-Präzisierungsbegriff",
+      "category": "Systemeffekte, Nachhaltigkeit, Wirkungsmessung & Transformation",
+      "type": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
       "theme": [
-        "Psychologische und systemische Wirkmechanismen"
+        "Systemeffekte",
+        "Nachhaltigkeit",
+        "Wirkungsmessung",
+        "Transformation"
       ],
       "themes": [
-        "Psychologische und systemische Wirkmechanismen"
+        "Systemeffekte",
+        "Nachhaltigkeit",
+        "Wirkungsmessung",
+        "Transformation"
       ],
       "dimensions": [
         "Mensch + Planet + Demokratie"
       ],
       "wirklogik": [
-        "Wirkungsbewertung"
+        "Nebenwirkung",
+        "Wechselwirkung",
+        "Rebound",
+        "Wirkungsrisiko",
+        "Netto-Wirkung"
       ],
       "applicationFields": [
-        "Politik",
-        "Unternehmen"
+        "Energie",
+        "Mobilität",
+        "Gebäude",
+        "Digitalisierung",
+        "KI",
+        "Konsum",
+        "Infrastrukturplanung"
       ],
-      "application_fields": [
-        "Politik",
-        "Unternehmen"
+      "tags": [
+        "Rebound-Effekt",
+        "Rebound Effect",
+        "Jevons-Paradox",
+        "Backfire",
+        "digitale Rebound-Effekte",
+        "Effizienz",
+        "Suffizienz",
+        "Energieeffizienz",
+        "Ressourcenverbrauch",
+        "Nachhaltigkeit",
+        "Netto-Wirkung",
+        "Wirkungsmessung",
+        "SDG",
+        "SDG+",
+        "Klimaschutz",
+        "KI und Energieverbrauch"
       ],
-      "sourceField": [
-        "WÖk-eigener Begriff"
-      ],
-      "source_field": [
-        "WÖk-eigener Begriff"
-      ],
-      "mythos": "",
-      "woekKlaerung": "",
-      "woek_klaerung": "",
-      "blindSpot": "",
-      "blind_spot": "",
-      "dataStandardsGroup": ""
+      "conceptStatus": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "concept_status": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "pageUrl": "/begriffe/rebound-effekt/",
+      "priority": 380,
+      "version": "1.0",
+      "source": "Glossar-Erweiterung Rebound-Effekt",
+      "sourceDocument": "",
+      "sourceSection": "Systemeffekte, Nachhaltigkeit, Wirkungsmessung & Transformation",
+      "reviewStatus": "redaktionell ergänzt",
+      "metaTitle": "Rebound-Effekt | Glossar der Wirkungsökonomie",
+      "metaDescription": "Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch Mehrnutzung oder neue Nachfrage teilweise oder ganz aufgehoben werden. In der Wirkungsökonomie zeigt er, warum nicht Effizienz, sondern positive Netto-Wirkung entscheidend ist.",
+      "glossaryOrderKey": "Rebound-Effekt",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-13",
+      "updatedAt": "2026-06-13",
+      "preferredUsage": "Den Begriff verwenden, wenn Effizienzgewinne durch Mehrnutzung, indirekten Mehrkonsum, Nachfrageausweitung oder systemische Rückkopplungen die erwartete Einsparung verringern. Nicht als Argument gegen Effizienz verwenden, sondern als Prüfhinweis für tatsächliche Netto-Wirkung.",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "statusNote": "",
+      "dataStandardsGroup": "",
+      "relatedDocuments": [],
+      "deprecatedUsage": []
     },
     {
       "id": "rechenschaft",
@@ -312403,6 +312876,265 @@
       "priority": 1196
     },
     {
+      "id": "streisand-effekt",
+      "termId": "streisand-effekt",
+      "label": "Streisand-Effekt",
+      "canonicalLabel": "Streisand-Effekt",
+      "slug": "streisand-effekt",
+      "aliases": [
+        "Streisand-Effekt",
+        "Streisand Effect",
+        "Zensurverstärkung",
+        "Löschversuch-Effekt"
+      ],
+      "synonyms": [
+        "Streisand-Effekt",
+        "Streisand Effect",
+        "Zensurverstärkung",
+        "Löschversuch-Effekt"
+      ],
+      "shortDefinition": "Der Streisand-Effekt beschreibt, dass der Versuch, eine Information zu unterdrücken, zu löschen oder unsichtbar zu machen, unbeabsichtigt erst recht Aufmerksamkeit erzeugt.",
+      "hoverDefinition": "Der Streisand-Effekt beschreibt, dass der Versuch, eine Information zu unterdrücken, zu löschen oder unsichtbar zu machen, unbeabsichtigt erst recht Aufmerksamkeit erzeugt.",
+      "definition": "Der Streisand-Effekt beschreibt eine paradoxe Kommunikationswirkung: Eine Person, Organisation, Institution oder Plattform versucht, eine Information zu löschen, zu unterdrücken oder ihre Verbreitung zu verhindern. Gerade dieser Versuch macht die Information interessanter, sichtbarer und verbreitungsfähiger.",
+      "longDefinition": "Der Streisand-Effekt beschreibt eine paradoxe Kommunikationswirkung: Eine Person, Organisation, Institution oder Plattform versucht, eine Information zu löschen, zu unterdrücken oder ihre Verbreitung zu verhindern. Gerade dieser Versuch macht die Information jedoch interessanter, sichtbarer und verbreitungsfähiger.\n\nDer Effekt beruht darauf, dass Unterdrückung selbst zum Signal wird. Menschen fragen sich: Warum soll das verschwinden? Wer will das verhindern? Was steht dahinter? Dadurch verschiebt sich die Aufmerksamkeit vom ursprünglichen Inhalt auf den Versuch der Kontrolle.\n\nIn digitalen Öffentlichkeiten kann dieser Effekt besonders schnell eskalieren, weil Löschversuche, Abmahnungen, Sperrungen oder Drohungen dokumentiert, kommentiert und weiterverbreitet werden. Aus einem kaum beachteten Inhalt kann dadurch ein Symbol für Machtmissbrauch, Zensur oder Intransparenz werden.",
+      "woekRelation": "Die Wirkungsökonomie unterscheidet zwischen Absicht, Maßnahme, Wirkungspotenzial und tatsächlicher Wirkung. Der Streisand-Effekt zeigt, dass eine Maßnahme mit der Absicht der Schadensbegrenzung eine gegenteilige Wirkung entfalten kann: Eine Information soll weniger sichtbar werden, wird aber sichtbarer, stärker emotionalisiert und breiter verbreitet. Ein Eingriff verändert nicht nur den Informationsstand, sondern auch den Resonanzraum.",
+      "usageNote": "Den Begriff verwenden, wenn ein Lösch-, Sperr-, Droh- oder Unterdrückungsversuch unbeabsichtigt Aufmerksamkeit, Misstrauen, Reaktanz oder Mobilisierung erhöht. Nicht verwenden, um jeden legitimen Rechts- oder Moderationseingriff pauschal als Zensur zu delegitimieren.",
+      "doNotConfuseWith": [
+        "Reaktanz: Reaktanz ist psychologischer Widerstand gegen wahrgenommene Einschränkung. Der Streisand-Effekt kann durch Reaktanz verstärkt werden, ist aber ein breiterer medialer Verbreitungseffekt.",
+        "Backfire-Effekt: Backfire beschreibt, dass Korrekturversuche falsche Überzeugungen unter Umständen verstärken können. Der Streisand-Effekt betrifft vor allem Aufmerksamkeit und Verbreitung.",
+        "Shitstorm: Ein Shitstorm ist eine massenhafte Empörungsreaktion. Der Streisand-Effekt kann einen Shitstorm auslösen, ist aber nicht identisch damit.",
+        "Zensur: Zensur ist ein Eingriff in Information oder Veröffentlichung. Der Streisand-Effekt beschreibt die unbeabsichtigte Aufmerksamkeitswirkung eines solchen oder ähnlich wirkenden Eingriffs.",
+        "Desinformation: Desinformation ist absichtlich irreführende Information. Der Streisand-Effekt kann Desinformation verbreiten helfen, beschreibt aber nicht deren Wahrheitsgehalt.",
+        "Agenda Setting: Agenda Setting beschreibt, welche Themen öffentliche Aufmerksamkeit erhalten. Der Streisand-Effekt ist ein spezieller Mechanismus, durch den ein Unterdrückungsversuch Agenda-Setting-Effekte auslösen kann."
+      ],
+      "examples": [
+        "Ein Unternehmen versucht, kritische Berichterstattung juristisch zu unterdrücken. Dadurch berichten erst recht mehr Medien über den Vorgang.",
+        "Eine Behörde lässt ein Dokument entfernen. Der Löschversuch führt dazu, dass Kopien massenhaft verbreitet werden.",
+        "Eine Plattform sperrt einen Inhalt ohne transparente Begründung. Nutzer:innen teilen Screenshots und diskutieren die Sperrung intensiver als den ursprünglichen Inhalt.",
+        "Eine prominente Person versucht, ein Foto löschen zu lassen. Der Löschversuch macht das Foto erst bekannt.",
+        "Eine Organisation droht einem kleinen Blog mit rechtlichen Schritten. Erst dadurch wird der Beitrag überregional wahrgenommen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Der Streisand-Effekt ist ein medialer und sozialpsychologischer Verstärkungseffekt.",
+            "Er entsteht, wenn Zensur, Löschversuche, Drohungen oder Unterdrückungsversuche als solche sichtbar werden.",
+            "Der Versuch, Aufmerksamkeit zu vermeiden, erzeugt dadurch neue Aufmerksamkeit.",
+            "Besonders stark wirkt der Effekt in digitalen Öffentlichkeiten, sozialen Medien und politisierten Resonanzräumen.",
+            "Wirkungsökonomisch ist relevant, dass Eingriffe in Kommunikation nicht nur Inhalte verändern, sondern Resonanz, Misstrauen, Aufmerksamkeit und Mobilisierung erzeugen können.",
+            "Im SDG+-Kontext betrifft der Effekt Medienqualität, Diskurskultur, institutionelles Vertrauen, Rechtsstaatlichkeit und demokratische Resilienz.",
+            "Der Begriff ist nicht nur ein Internetphänomen, sondern ein Beispiel für nichtlineare Kommunikationswirkung."
+          ]
+        },
+        {
+          "title": "Wirkmechanismus",
+          "items": [
+            "Sichtbarkeit des Eingriffs: Ein Lösch-, Sperr- oder Unterdrückungsversuch wird öffentlich wahrnehmbar.",
+            "Reaktanz: Menschen reagieren auf wahrgenommene Einschränkung ihrer Informationsfreiheit mit Widerstand oder Neugier.",
+            "Verdachtsbildung: Der Unterdrückungsversuch erzeugt den Eindruck, die Information müsse besonders wichtig oder brisant sein.",
+            "Symbolisierung: Der konkrete Inhalt wird zum Symbol für Macht, Zensur, Intransparenz oder institutionelles Fehlverhalten.",
+            "Soziale Weiterverbreitung: Menschen teilen die Information wegen des Inhalts und wegen der Geschichte um ihre Unterdrückung.",
+            "Medienlogik: Journalismus, soziale Plattformen und Creator greifen die Kontroverse auf, weil Konflikt Aufmerksamkeit erzeugt.",
+            "Rückkopplung: Je stärker gelöscht, bestritten oder gedroht wird, desto stärker kann sich die Erzählung verdichten."
+          ]
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Kommunikation besteht nicht nur aus Informationsübertragung. Kommunikation erzeugt Wirkungsräume. Eine Organisation kann rechtlich oder kommunikativ formal korrekt handeln und dennoch negative Netto-Wirkung erzeugen, wenn ihr Vorgehen Misstrauen, Polarisierung oder Gegenmobilisierung verstärkt. Deshalb ist nicht nur wichtig, ob ein Inhalt entfernt werden darf, sondern welche Wirkung der Entfernungsversuch im Resonanzraum erzeugt."
+        },
+        {
+          "title": "SDG+-Bezug",
+          "body": "Der Streisand-Effekt betrifft Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, Rechtsstaatlichkeit, demokratische Resilienz, Transparenz, Rechenschaft, digitale Selbstbestimmung, Plattformverantwortung, Schutz vor Desinformation und öffentliche Wahrheitsinfrastruktur."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Der Effekt ist nicht direkt wie CO₂ messbar, aber über Kommunikations- und Resonanzindikatoren beobachtbar: Reichweitenanstieg nach Löschung oder Klagedrohung, neue Erwähnungen, Tonalitätsverschiebung zur Zensur- oder Machtdebatte, Screenshots und Reposts, Hashtag-Bildung, Medienanschlussfähigkeit, Vertrauensverlust, Mobilisierung und Übergang vom Einzelinhalt zum Symbolkonflikt. Diese Indikatoren dienen der Analyse öffentlicher Wirkungsräume, nicht der Bewertung einzelner Personen."
+        },
+        {
+          "title": "Umgang und Gegenmaßnahmen",
+          "items": [
+            "vor Eingriffen eine Wirkungsfolgenabschätzung durchführen",
+            "zwischen rechtswidrigem Inhalt, Kritik, Satire, Irrtum und legitimer Berichterstattung unterscheiden",
+            "transparent und verhältnismäßig handeln",
+            "nicht reflexhaft juristisch eskalieren",
+            "Fehler offen korrigieren und Kontext bereitstellen",
+            "Kommunikationsräume moderieren statt kontrollieren",
+            "legitime Kritik nicht wie Feindhandlung behandeln",
+            "Quellenklarheit herstellen und eigene Machtposition reflektieren",
+            "bei Behörden und Plattformen Beschwerdewege transparent machen"
+          ]
+        },
+        {
+          "title": "Typische Warnsignale",
+          "items": [
+            "Information ist bereits kopierbar oder screenshotfähig.",
+            "Unterdrückung kann als ungerecht empfunden werden.",
+            "Ein Machtgefälle besteht.",
+            "Juristische Drohungen treffen kleinere Akteur:innen.",
+            "Die Maßnahme wirkt intransparent.",
+            "Die Öffentlichkeit ist bereits misstrauisch.",
+            "Der Inhalt ist politisch, moralisch oder identitär aufgeladen.",
+            "Creator, Journalist:innen oder Aktivist:innen können das Thema aufgreifen."
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Externe Quellen sind u. a. Encyclopaedia Britannica zum Streisand effect sowie Forschung zu Reaktanz, digitaler Öffentlichkeit, Krisenkommunikation und Plattformdynamiken. Interne WÖk-Bezüge: Wirkung ist tatsächliche Zustandsveränderung, Wirkungspotenzial ist noch keine Wirkung, Resonanzräume verstärken oder dämpfen Wirkung, und SDG+ umfasst Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen und gesellschaftlichen Zusammenhalt."
+        }
+      ],
+      "relatedTerms": [
+        "reaktanz",
+        "backfire-effekt",
+        "desinformation",
+        "medienqualitaet",
+        "diskursfaehigkeit",
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "amathia",
+        "dunning-kruger-effekt",
+        "false-balance",
+        "framing",
+        "overton-fenster",
+        "whataboutism",
+        "soziale-ansteckung",
+        "gruppendenken",
+        "sdg-plus",
+        "demokratische-resilienz"
+      ],
+      "related_terms": [
+        "reaktanz",
+        "backfire-effekt",
+        "desinformation",
+        "medienqualitaet",
+        "diskursfaehigkeit",
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "amathia",
+        "dunning-kruger-effekt",
+        "false-balance",
+        "framing",
+        "overton-fenster",
+        "whataboutism",
+        "soziale-ansteckung",
+        "gruppendenken",
+        "sdg-plus",
+        "demokratische-resilienz"
+      ],
+      "officialSources": [
+        "Encyclopaedia Britannica: Streisand effect",
+        "Forschung zu Reaktanz, digitaler Öffentlichkeit, Krisenkommunikation und Plattformdynamiken"
+      ],
+      "sourceLinks": [
+        {
+          "source_type": "reference",
+          "title": "Encyclopaedia Britannica: Streisand effect",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "source_links": [
+        {
+          "source_type": "reference",
+          "title": "Encyclopaedia Britannica: Streisand effect",
+          "url": "https://www.britannica.com/topic/Streisand-effect",
+          "status": "linked"
+        }
+      ],
+      "categories": [
+        "diskursqualitaet-medienwirkung-psychologische-effekte-sdg-plus",
+        "psychologische-effekte-diskursverschiebung",
+        "daten-standards-regularien"
+      ],
+      "category": "Diskursqualität, Medienwirkung, psychologische Effekte & SDG+",
+      "type": "Anschlussbegriff / SDG+-Diskursbegriff",
+      "begriffstyp": "Anschlussbegriff / SDG+-Diskursbegriff",
+      "theme": [
+        "Diskursqualität",
+        "Medienwirkung",
+        "Psychologische Effekte",
+        "SDG+"
+      ],
+      "themes": [
+        "Diskursqualität",
+        "Medienwirkung",
+        "Psychologische Effekte",
+        "SDG+"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungspotenzial",
+        "Wirkungsrisiko",
+        "Resonanzraum",
+        "Rückkopplung"
+      ],
+      "applicationFields": [
+        "Öffentlichkeit & Medien",
+        "Plattformmoderation",
+        "Krisenkommunikation",
+        "Politik",
+        "Unternehmen",
+        "Behördenkommunikation"
+      ],
+      "tags": [
+        "Streisand-Effekt",
+        "Streisand Effect",
+        "Zensurverstärkung",
+        "Löschversuch-Effekt",
+        "Zensur",
+        "Löschversuch",
+        "Reaktanz",
+        "digitale Öffentlichkeit",
+        "Shitstorm",
+        "Medienwirkung",
+        "Diskursqualität",
+        "Wirkungsökonomie",
+        "SDG+",
+        "Resonanzraum",
+        "Krisenkommunikation",
+        "Plattformmoderation",
+        "Desinformation",
+        "demokratische Resilienz"
+      ],
+      "conceptStatus": "Anschlussbegriff / SDG+-Diskursbegriff",
+      "concept_status": "Anschlussbegriff / SDG+-Diskursbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "pageUrl": "/begriffe/streisand-effekt/",
+      "priority": 380,
+      "version": "1.0",
+      "source": "Glossar-Erweiterung Streisand-Effekt",
+      "sourceDocument": "",
+      "sourceSection": "Diskursqualität, Medienwirkung, psychologische Effekte & SDG+",
+      "reviewStatus": "redaktionell ergänzt",
+      "metaTitle": "Streisand-Effekt | Glossar der Wirkungsökonomie",
+      "metaDescription": "Der Streisand-Effekt beschreibt, dass der Versuch, Informationen zu unterdrücken oder zu löschen, unbeabsichtigt mehr Aufmerksamkeit erzeugen kann. In der Wirkungsökonomie ist er ein wichtiger SDG+-Diskurseffekt.",
+      "glossaryOrderKey": "Streisand-Effekt",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-13",
+      "updatedAt": "2026-06-13",
+      "preferredUsage": "Den Begriff verwenden, wenn ein Lösch-, Sperr-, Droh- oder Unterdrückungsversuch unbeabsichtigt Aufmerksamkeit, Misstrauen, Reaktanz oder Mobilisierung erhöht. Nicht verwenden, um jeden legitimen Rechts- oder Moderationseingriff pauschal als Zensur zu delegitimieren.",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "statusNote": "",
+      "dataStandardsGroup": "",
+      "relatedDocuments": [],
+      "deprecatedUsage": []
+    },
+    {
       "id": "streitfaehigkeit",
       "termId": "streitfaehigkeit",
       "label": "Streitfähigkeit",
@@ -313390,7 +314122,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stromgestehungskosten",
       "dataStandardsGroup": "",
-      "priority": 1199
+      "priority": 1200
     },
     {
       "id": "strommarkt",
@@ -313681,7 +314413,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Strommarkt",
       "dataStandardsGroup": "",
-      "priority": 1200
+      "priority": 1201
     },
     {
       "id": "strommarktdesign",
@@ -313966,7 +314698,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Strommarktdesign",
       "dataStandardsGroup": "",
-      "priority": 1201
+      "priority": 1202
     },
     {
       "id": "strommix",
@@ -314353,7 +315085,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stromnetz",
       "dataStandardsGroup": "",
-      "priority": 1203
+      "priority": 1204
     },
     {
       "id": "stromnev",
@@ -314634,7 +315366,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "StromNEV",
       "dataStandardsGroup": "",
-      "priority": 1204
+      "priority": 1205
     },
     {
       "id": "strompreisbestandteile",
@@ -314919,7 +315651,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Strompreisbestandteile",
       "dataStandardsGroup": "",
-      "priority": 1205
+      "priority": 1206
     },
     {
       "id": "stromsteuer",
@@ -315196,7 +315928,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Stromsteuer",
       "dataStandardsGroup": "",
-      "priority": 1206
+      "priority": 1207
     },
     {
       "id": "strukturdeterminiertheit",
@@ -315389,7 +316121,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1207
+      "priority": 1208
     },
     {
       "id": "strukturelle-kopplung",
@@ -315890,7 +316622,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Struktureller Rassismus",
       "dataStandardsGroup": "",
-      "priority": 1209
+      "priority": 1210
     },
     {
       "id": "strukturelles-driften",
@@ -316406,7 +317138,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Studienfinanzierung",
       "dataStandardsGroup": "",
-      "priority": 1211
+      "priority": 1212
     },
     {
       "id": "subsidiaritaet",
@@ -317211,7 +317943,7 @@
         "WÖk-Glossar psychologische Effekte, Biases und Diskursverschiebung v0.1; ALL, GIR, WÖK-BL"
       ],
       "dataStandardsGroup": "",
-      "priority": 1214
+      "priority": 1215
     },
     {
       "id": "superkondensator",
@@ -317577,7 +318309,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Superkondensator",
       "dataStandardsGroup": "",
-      "priority": 1215
+      "priority": 1216
     },
     {
       "id": "superposition",
@@ -318159,7 +318891,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Supply-Chain-Resilienz",
-      "priority": 1217,
+      "priority": 1218,
       "deprecatedUsage": []
     },
     {
@@ -318592,7 +319324,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Supply-side Economics",
       "dataStandardsGroup": "",
-      "priority": 1218
+      "priority": 1219
     },
     {
       "id": "supraleitung",
@@ -318754,7 +319486,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Supraleitung",
       "dataStandardsGroup": "",
-      "priority": 1219
+      "priority": 1220
     },
     {
       "id": "sustainable-finance",
@@ -319055,7 +319787,7 @@
       "hoverDefinition": "Sustainable Value verbindet wirtschaftlichen Wert mit tragfähiger Wirkung auf Mensch, Planet und Demokratie.",
       "glossaryOrderKey": "sustainable value",
       "pageUrl": "/begriffe/sustainable-value/",
-      "priority": 1221
+      "priority": 1222
     },
     {
       "id": "sympathie-verzerrung",
@@ -319459,7 +320191,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Systemdienstleistungen",
       "dataStandardsGroup": "",
-      "priority": 1222
+      "priority": 1223
     },
     {
       "id": "systemgrenze",
@@ -319657,7 +320389,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1223
+      "priority": 1224
     },
     {
       "id": "systemhebel",
@@ -319765,7 +320497,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "",
       "glossaryOrderKey": "Systemhebel",
-      "priority": 1224,
+      "priority": 1225,
       "relatedDocuments": [],
       "deprecatedUsage": []
     },
@@ -319976,7 +320708,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1226,
+      "priority": 1227,
       "officialSources": []
     },
     {
@@ -320187,7 +320919,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1227
+      "priority": 1228
     },
     {
       "id": "systemkosten",
@@ -320480,7 +321212,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Systemkosten",
       "dataStandardsGroup": "",
-      "priority": 1228
+      "priority": 1229
     },
     {
       "id": "systemorientiertes-management",
@@ -320647,7 +321379,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1229
+      "priority": 1230
     },
     {
       "id": "systemqualitaet",
@@ -320722,7 +321454,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1230,
+      "priority": 1231,
       "officialSources": []
     },
     {
@@ -320795,7 +321527,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1231,
+      "priority": 1232,
       "officialSources": []
     },
     {
@@ -321233,7 +321965,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Systemverzerrender Lobbyismus",
       "dataStandardsGroup": "",
-      "priority": 1233
+      "priority": 1234
     },
     {
       "id": "t-sroi",
@@ -321723,7 +322455,269 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "TAB Mittelspannung",
       "dataStandardsGroup": "",
-      "priority": 1235
+      "priority": 1237
+    },
+    {
+      "id": "tacit-knowledge",
+      "termId": "tacit-knowledge",
+      "label": "Tacit Knowledge",
+      "canonicalLabel": "Tacit Knowledge",
+      "slug": "tacit-knowledge",
+      "aliases": [
+        "Tacit Knowledge",
+        "Implizites Wissen",
+        "Stillschweigendes Wissen",
+        "verkörpertes Erfahrungswissen"
+      ],
+      "synonyms": [
+        "Tacit Knowledge",
+        "Implizites Wissen",
+        "Stillschweigendes Wissen",
+        "verkörpertes Erfahrungswissen"
+      ],
+      "shortDefinition": "Tacit Knowledge bezeichnet stillschweigendes, verkörpertes Erfahrungswissen: Menschen können etwas erkennen, beurteilen oder tun, ohne dieses Wissen vollständig in Worte, Regeln oder Daten übersetzen zu können.",
+      "hoverDefinition": "Tacit Knowledge bezeichnet stillschweigendes, verkörpertes Erfahrungswissen: Menschen können etwas erkennen, beurteilen oder tun, ohne dieses Wissen vollständig in Worte, Regeln oder Daten übersetzen zu können.",
+      "definition": "Tacit Knowledge bezeichnet Wissen, das Menschen besitzen und anwenden, das sich aber nur schwer vollständig ausdrücken, dokumentieren oder formalisieren lässt. Es steckt im Körper, in Routinen, in Erfahrung, in Aufmerksamkeit, in sozialem Gespür und in geübter Mustererkennung.",
+      "longDefinition": "Tacit Knowledge bezeichnet Wissen, das Menschen besitzen und anwenden, das sich aber nur schwer vollständig ausdrücken, dokumentieren oder formalisieren lässt. Es steckt im Körper, in Routinen, in Erfahrung, in Aufmerksamkeit, in sozialem Gespür und in geübter Mustererkennung.\n\nEin Mensch kann ein Gesicht wiedererkennen, ohne genau erklären zu können, welche einzelnen Merkmale entscheidend waren. Eine Ärztin kann spüren, dass ein Krankheitsbild nicht passt. Ein erfahrener Moderator erkennt, wann eine Debatte kippt. Eine Pflegekraft bemerkt, dass ein Mensch anders wirkt als sonst. Eine Handwerkerin hört oder fühlt, ob etwas funktioniert. Eine Lehrkraft erkennt, ob eine Klasse noch erreichbar ist.\n\nTacit Knowledge ist kein mystisches Wissen. Es ist verdichtete Erfahrung, die oft schneller wirkt als bewusste Analyse.",
+      "woekRelation": "Die Wirkungsökonomie braucht Messbarkeit, Daten und Transparenz. Sie darf aber nicht in die Illusion verfallen, dass alles wirkungsrelevante Wissen vollständig explizierbar ist. Tacit Knowledge zeigt, dass Menschen Muster, Risiken und Chancen oft erkennen, bevor diese als Kennzahl sichtbar werden. Es ist Frühwarnsystem, Praxisfilter und Quelle für Wirkungsverständnis.",
+      "usageNote": "Tacit Knowledge als besondere Form von Erfahrungswissen verwenden. Informelles Wissen beschreibt den Entstehungs- und Weitergabekontext außerhalb formaler Systeme; Tacit Knowledge beschreibt die schwer explizierbare, verkörperte Qualität dieses Wissens.",
+      "doNotConfuseWith": [
+        "Informelles Wissen: Breiterer Begriff für Wissen außerhalb formaler Systeme. Tacit Knowledge ist enger und meint schwer artikulierbares implizites Wissen.",
+        "Intuition: Intuition kann Ausdruck von Tacit Knowledge sein, kann aber auch Vorurteil, Bias oder Projektion sein.",
+        "Bauchgefühl: Bauchgefühl ist nicht automatisch verlässlich. Tacit Knowledge entsteht durch Erfahrung, Übung und Rückkopplung.",
+        "Expertise: Expertise kann explizites und implizites Wissen umfassen. Tacit Knowledge ist der nicht vollständig explizierbare Anteil.",
+        "Geheimwissen: Tacit Knowledge ist nicht geheim, sondern schwer zu formulieren.",
+        "Datenwissen: Datenwissen ist explizit, dokumentiert und vergleichbar. Tacit Knowledge ergänzt es durch Erfahrungs- und Kontextwahrnehmung.",
+        "Meinung: Tacit Knowledge ist nicht bloß Meinung, sondern an praktische Erfahrung gebunden.",
+        "Dunning-Kruger-Effekt: Tacit Knowledge entsteht durch rückgekoppelte Erfahrung; Selbstüberschätzung ohne Kompetenz ist etwas anderes."
+      ],
+      "examples": [
+        "Eine erfahrene Pflegekraft erkennt eine Verschlechterung, bevor Messwerte eindeutig auffällig sind.",
+        "Ein:e Therapeut:in bemerkt Spannungen, die Patient:innen noch nicht benennen.",
+        "Ein:e Moderator:in erkennt, wann ein Gespräch in Polarisierung kippt.",
+        "Ein:e Journalist:in spürt, ob eine Quelle glaubwürdig wirkt, prüft dies aber zusätzlich.",
+        "Ein:e Handwerker:in fühlt, ob ein Werkstoff richtig verarbeitet ist.",
+        "Ein:e Lehrer:in erkennt, wann eine Klasse nicht mehr aufnahmefähig ist.",
+        "Ein:e Entwickler:in erkennt aus Erfahrung, wo ein System später fehleranfällig wird."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Tacit Knowledge wird oft als implizites oder stillschweigendes Wissen übersetzt.",
+            "Es beschreibt Wissen, das im Können, Wahrnehmen, Handeln und Erleben steckt.",
+            "Menschen können Tacit Knowledge anwenden, ohne es vollständig erklären zu können.",
+            "Beispiele sind handwerkliches Können, diagnostische Erfahrung, soziale Intuition, Führungserfahrung, Pflegeerfahrung oder Gespür für Material, Menschen und Situationen.",
+            "Tacit Knowledge ist für Wirkung zentral, weil viele Wirkungszusammenhänge erst in der Praxis erkennbar werden.",
+            "Es ist nicht dasselbe wie informelles Wissen, überschneidet sich aber stark damit.",
+            "In der Wirkungsökonomie ist Tacit Knowledge ein wichtiger Bestandteil von Wirkungskompetenz, Lernfähigkeit und realitätsnaher Steuerung."
+          ]
+        },
+        {
+          "title": "Unterschied zu informellem Wissen",
+          "body": "Tacit Knowledge und informelles Wissen überschneiden sich, sind aber nicht identisch. Informelles Wissen beschreibt vor allem, wo und wie Wissen entsteht: außerhalb formaler Bildungs-, Dokumentations-, Berichts- oder Auditsysteme. Tacit Knowledge beschreibt vor allem, wie Wissen beschaffen ist: implizit, verkörpert, schwer artikulierbar, erfahrungsbasiert und häufig nur im Handeln sichtbar. Kurz: Informelles Wissen beschreibt den Entstehungs- und Weitergabekontext, Tacit Knowledge die schwer explizierbare Qualität dieses Wissens."
+        },
+        {
+          "title": "Wirkmechanismus",
+          "items": [
+            "Wiederholung: Menschen erleben viele ähnliche Situationen.",
+            "Rückkopplung: Sie sehen, was funktioniert und was scheitert.",
+            "Verdichtung: Erfahrung wird zu impliziten Mustern.",
+            "Wahrnehmung: Abweichungen werden früh erkannt.",
+            "Handlung: Menschen reagieren oft schneller als formale Systeme.",
+            "Explikation: Teile des Wissens können nachträglich beschrieben werden.",
+            "Lernen: Durch Austausch kann Tacit Knowledge teilweise in organisationales Wissen überführt werden."
+          ]
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Tacit Knowledge zeigt, dass Wirkungsmessung nicht nur aus Kennzahlen bestehen darf. Wirkung entsteht in Pflegebeziehungen, Schulen, Organisationen, Lieferketten, Quartieren, Medienräumen, politischen Debatten, technischen Systemen, Kundeninteraktionen und kulturellen Resonanzräumen. Dort können erfahrene Menschen oft früh erkennen, ob Wirkungspotenziale kippen, Wirkungsrisiken entstehen oder Anschlussfähigkeit verloren geht."
+        },
+        {
+          "title": "Mess- und Steuerungsbezug",
+          "body": "Tacit Knowledge ist nur begrenzt direkt messbar, kann aber indirekt sichtbar und nutzbar gemacht werden: Erfahrungsinterviews, Expert:innenbefragungen, Shadowing, Praxisbeobachtung, Reflexionsrunden, After-Action-Reviews, Fallbesprechungen, Mentoring, Communities of Practice, Wissenslandkarten, Storytelling im Wissensmanagement, qualitative Wirkungsanalyse, Lessons Learned, Peer Reviews, Praxisbeiräte und Resonanzraum-Feedback."
+        },
+        {
+          "title": "Risiken",
+          "items": [
+            "Verwechslung von Erfahrung mit Vorurteil",
+            "unbewusste Biases und Expert:innenblindheit",
+            "Das haben wir immer so gemacht",
+            "Ausschluss neuer Perspektiven",
+            "informelle Machtstrukturen",
+            "fehlende Dokumentation und Wissensverlust bei Personalwechsel",
+            "Abhängigkeit von Einzelpersonen",
+            "schlechte Übertragbarkeit in neue Kontexte",
+            "Immunisierung gegen Daten oder Kritik"
+          ]
+        },
+        {
+          "title": "Umgang und Gegenmaßnahmen",
+          "items": [
+            "Räume für Erfahrungsreflexion schaffen",
+            "implizites Wissen durch Fragen, Beobachtung und Storytelling teilweise explizieren",
+            "erfahrene Praktiker:innen in Wirkungsprozesse einbeziehen",
+            "Tacit Knowledge mit Daten und Evidenz rückkoppeln",
+            "Mentoring und Peer-Learning fördern",
+            "Wissenstransfer bei Personalwechsel sichern",
+            "unterschiedliche Perspektiven einbeziehen",
+            "Bias-Schulungen und Reflexion nutzen",
+            "schwache Signale ernst nehmen",
+            "Tacit Knowledge nicht als Ersatz, sondern als Ergänzung formaler Daten behandeln"
+          ]
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Externe Quellen sind Michael Polanyi zu Tacit Knowledge, Forschung zu implizitem Wissen, Erfahrungswissen und Wissensmanagement, Nonaka & Takeuchi zu organisationalem Wissen, Communities of Practice, Praxisforschung, Organisationslernen und Professionalisierungsforschung. Interne WÖk-Bezüge: Wirkung ist tatsächliche Zustandsveränderung; Wirkungskompetenz umfasst Wirkungen, Nebenwirkungen, Wirkungsrisiken und Rückkopplungen; die Wirkungsökonomie verbindet Daten, Praxis, Rückkopplung und institutionelles Lernen."
+        }
+      ],
+      "relatedTerms": [
+        "informelles-wissen",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "resonanzraum",
+        "wirkungsraum",
+        "lernende-organisation",
+        "sdg-plus",
+        "wirkungsrueckkopplung",
+        "dunning-kruger-effekt"
+      ],
+      "related_terms": [
+        "informelles-wissen",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "resonanzraum",
+        "wirkungsraum",
+        "lernende-organisation",
+        "sdg-plus",
+        "wirkungsrueckkopplung",
+        "dunning-kruger-effekt"
+      ],
+      "officialSources": [
+        "Michael Polanyi: The Tacit Dimension / We know more than we can tell",
+        "Nonaka & Takeuchi: The Knowledge-Creating Company",
+        "Forschung zu implizitem Wissen, Erfahrungswissen und Wissensmanagement"
+      ],
+      "sourceLinks": [
+        {
+          "source_type": "primary",
+          "title": "Michael Polanyi: The Tacit Dimension",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "academic",
+          "title": "Nonaka & Takeuchi: The Knowledge-Creating Company",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "source_links": [
+        {
+          "source_type": "primary",
+          "title": "Michael Polanyi: The Tacit Dimension",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "academic",
+          "title": "Nonaka & Takeuchi: The Knowledge-Creating Company",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "categories": [
+        "wissen-wirkungskompetenz-organisation-transformation",
+        "daten-standards-regularien"
+      ],
+      "category": "Wissen, Wirkungskompetenz, Organisation & Transformation",
+      "type": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "begriffstyp": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "theme": [
+        "Wissen",
+        "Wirkungskompetenz",
+        "Organisation",
+        "Transformation"
+      ],
+      "themes": [
+        "Wissen",
+        "Wirkungskompetenz",
+        "Organisation",
+        "Transformation"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Rückkopplung",
+        "Wirkungskompetenz",
+        "Wirkungsmonitoring",
+        "Organisationslernen"
+      ],
+      "applicationFields": [
+        "Pflege",
+        "Bildung",
+        "Handwerk",
+        "Organisationen",
+        "Führung",
+        "Medienräume",
+        "technische Systeme"
+      ],
+      "tags": [
+        "Tacit Knowledge",
+        "Implizites Wissen",
+        "Stillschweigendes Wissen",
+        "verkörpertes Erfahrungswissen",
+        "implizites Wissen",
+        "stillschweigendes Wissen",
+        "Erfahrungswissen",
+        "informelles Wissen",
+        "Praxiswissen",
+        "Michael Polanyi",
+        "Wissensmanagement",
+        "Organisationswissen",
+        "Wirkungskompetenz",
+        "Wirkungsökonomie",
+        "Lernende Organisation",
+        "Transformationswissen",
+        "SDG+",
+        "Communities of Practice"
+      ],
+      "conceptStatus": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "concept_status": "Anschlussbegriff / WÖk-Präzisierungsbegriff",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "status": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "pageUrl": "/begriffe/tacit-knowledge/",
+      "priority": 380,
+      "version": "1.0",
+      "source": "Glossar-Erweiterung Tacit Knowledge",
+      "sourceDocument": "",
+      "sourceSection": "Wissen, Wirkungskompetenz, Organisation & Transformation",
+      "reviewStatus": "redaktionell ergänzt",
+      "metaTitle": "Tacit Knowledge | Glossar der Wirkungsökonomie",
+      "metaDescription": "Tacit Knowledge ist stillschweigendes, verkörpertes Erfahrungswissen, das Menschen im Handeln nutzen, aber oft nur schwer erklären können. In der Wirkungsökonomie ergänzt es Daten und Kennzahlen um Praxiswissen, Kontext und frühe Rückkopplung.",
+      "glossaryOrderKey": "Tacit Knowledge",
+      "firstApprovedIn": "2026.2",
+      "lastUpdated": "2026-06-13",
+      "updatedAt": "2026-06-13",
+      "preferredUsage": "Tacit Knowledge als besondere Form von Erfahrungswissen verwenden. Informelles Wissen beschreibt den Entstehungs- und Weitergabekontext außerhalb formaler Systeme; Tacit Knowledge beschreibt die schwer explizierbare, verkörperte Qualität dieses Wissens.",
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "statusNote": "",
+      "dataStandardsGroup": "",
+      "relatedDocuments": [],
+      "deprecatedUsage": []
     },
     {
       "id": "tandem-solarzelle",
@@ -321885,7 +322879,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Tandem-Solarzelle",
       "dataStandardsGroup": "",
-      "priority": 1236
+      "priority": 1238
     },
     {
       "id": "tank-to-wheel",
@@ -322105,7 +323099,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1237
+      "priority": 1239
     },
     {
       "id": "tar-mittelspannung",
@@ -322475,7 +323469,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "TAR Mittelspannung / VDE-AR-N 4110",
       "dataStandardsGroup": "",
-      "priority": 1238
+      "priority": 1240
     },
     {
       "id": "tauschwert",
@@ -322670,7 +323664,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1239
+      "priority": 1241
     },
     {
       "id": "taxonomy-kpis",
@@ -323556,7 +324550,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Technische Anschlussregel / TAR",
       "dataStandardsGroup": "",
-      "priority": 1245
+      "priority": 1247
     },
     {
       "id": "technische-bewertungskriterien",
@@ -323914,7 +324908,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Technischer Kreislauf",
       "dataStandardsGroup": "",
-      "priority": 1247
+      "priority": 1249
     },
     {
       "id": "technischer-naehrstoff",
@@ -324155,7 +325149,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Technischer Nährstoff",
       "dataStandardsGroup": "",
-      "priority": 1248
+      "priority": 1250
     },
     {
       "id": "technokratie-ueberwachung-social-credit",
@@ -324715,7 +325709,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1249,
+      "priority": 1251,
       "deprecatedUsage": []
     },
     {
@@ -324792,7 +325786,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/technologieoffenheit/",
       "dataStandardsGroup": "",
-      "priority": 1567,
+      "priority": 1569,
       "relatedDocuments": []
     },
     {
@@ -325038,7 +326032,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Teilen / Sharing",
       "dataStandardsGroup": "",
-      "priority": 1250
+      "priority": 1252
     },
     {
       "id": "teilgabe",
@@ -325144,7 +326138,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "",
       "glossaryOrderKey": "Teilgabe",
-      "priority": 1251,
+      "priority": 1253,
       "relatedDocuments": [],
       "deprecatedUsage": []
     },
@@ -325251,7 +326245,7 @@
       "dataStandardsGroup": "",
       "sourceSection": "",
       "glossaryOrderKey": "Teilhabe",
-      "priority": 1252,
+      "priority": 1254,
       "relatedDocuments": [],
       "deprecatedUsage": []
     },
@@ -325621,7 +326615,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Theokratie",
       "dataStandardsGroup": "",
-      "priority": 1253
+      "priority": 1255
     },
     {
       "id": "thermal-runaway",
@@ -325991,7 +326985,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thermal Runaway",
       "dataStandardsGroup": "",
-      "priority": 1254
+      "priority": 1256
     },
     {
       "id": "thermisches-kraftwerk",
@@ -326276,7 +327270,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thermisches Kraftwerk",
       "dataStandardsGroup": "",
-      "priority": 1255
+      "priority": 1257
     },
     {
       "id": "thg-emissions-scopes",
@@ -326494,7 +327488,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1256
+      "priority": 1258
     },
     {
       "id": "thinktank",
@@ -326892,7 +327886,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thinktank",
       "dataStandardsGroup": "",
-      "priority": 1257
+      "priority": 1259
     },
     {
       "id": "thinktank-netzwerk",
@@ -327266,7 +328260,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Thinktank-Netzwerk",
       "dataStandardsGroup": "",
-      "priority": 1258
+      "priority": 1260
     },
     {
       "id": "thomas-piketty",
@@ -328292,7 +329286,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Totalitarismus",
       "dataStandardsGroup": "",
-      "priority": 1262
+      "priority": 1264
     },
     {
       "id": "totalitarismus-arendt",
@@ -328665,7 +329659,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Totalitarismus nach Arendt",
       "dataStandardsGroup": "",
-      "priority": 1263
+      "priority": 1265
     },
     {
       "id": "totalverweigerer-frame",
@@ -328724,7 +329718,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/totalverweigerer-frame/",
       "dataStandardsGroup": "",
-      "priority": 1264,
+      "priority": 1266,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -329103,7 +330097,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Trafostation",
       "dataStandardsGroup": "",
-      "priority": 1265
+      "priority": 1267
     },
     {
       "id": "transaktionskosten",
@@ -329527,7 +330521,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transaktionskosten",
       "dataStandardsGroup": "",
-      "priority": 1266
+      "priority": 1268
     },
     {
       "id": "transferentzugsrate",
@@ -329587,7 +330581,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/transferentzugsrate/",
       "dataStandardsGroup": "",
-      "priority": 1267,
+      "priority": 1269,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -329651,7 +330645,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/transformation/",
       "dataStandardsGroup": "",
-      "priority": 1268,
+      "priority": 1270,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -329879,7 +330873,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/transformationscluster/",
       "dataStandardsGroup": "",
-      "priority": 1270,
+      "priority": 1272,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -330465,7 +331459,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Transformationspfad",
-      "priority": 1271,
+      "priority": 1273,
       "deprecatedUsage": []
     },
     {
@@ -330527,7 +331521,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/transformationsschulden/",
       "dataStandardsGroup": "",
-      "priority": 1272,
+      "priority": 1274,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -330705,7 +331699,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1273
+      "priority": 1275
     },
     {
       "id": "transformationswirkung",
@@ -331488,7 +332482,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transformator / Trafo",
       "dataStandardsGroup": "",
-      "priority": 1275
+      "priority": 1277
     },
     {
       "id": "transition-finance",
@@ -331878,7 +332872,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1279,
+      "priority": 1281,
       "deprecatedUsage": []
     },
     {
@@ -332245,7 +333239,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transparenz",
       "dataStandardsGroup": "",
-      "priority": 1280
+      "priority": 1282
     },
     {
       "id": "transparenzregister-lobbyismus",
@@ -332625,7 +333619,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Transparenzregister",
       "dataStandardsGroup": "",
-      "priority": 1281
+      "priority": 1283
     },
     {
       "id": "treibhausgasemissionen",
@@ -332865,7 +333859,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1282
+      "priority": 1284
     },
     {
       "id": "trickle-down-oekonomie",
@@ -333110,7 +334104,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Trickle-down-Ökonomie",
       "dataStandardsGroup": "",
-      "priority": 1283
+      "priority": 1285
     },
     {
       "id": "tritium",
@@ -333170,7 +334164,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/tritium/",
       "dataStandardsGroup": "",
-      "priority": 1284,
+      "priority": 1286,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -333599,7 +334593,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Trittbrettfahrerproblem",
       "dataStandardsGroup": "",
-      "priority": 1285
+      "priority": 1287
     },
     {
       "id": "triviale-maschine",
@@ -333782,7 +334776,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1286
+      "priority": 1288
     },
     {
       "id": "trustblock",
@@ -333843,7 +334837,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/trustblock/",
       "dataStandardsGroup": "",
-      "priority": 1287,
+      "priority": 1289,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -334329,7 +335323,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Typ-2-Stecker",
       "dataStandardsGroup": "",
-      "priority": 1288
+      "priority": 1290
     },
     {
       "id": "ukraine-facility",
@@ -334388,7 +335382,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/ukraine-facility/",
       "dataStandardsGroup": "",
-      "priority": 1289,
+      "priority": 1291,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -334451,7 +335445,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/ukraine-hilfe/",
       "dataStandardsGroup": "",
-      "priority": 1290,
+      "priority": 1292,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -335224,7 +336218,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1291
+      "priority": 1293
     },
     {
       "id": "umspannstation",
@@ -335592,7 +336586,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Umspannstation",
       "dataStandardsGroup": "",
-      "priority": 1292
+      "priority": 1294
     },
     {
       "id": "umspannwerk",
@@ -335960,7 +336954,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Umspannwerk",
       "dataStandardsGroup": "",
-      "priority": 1293
+      "priority": 1295
     },
     {
       "id": "umwandlungskette",
@@ -336209,7 +337203,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/un/",
       "dataStandardsGroup": "",
-      "priority": 1296,
+      "priority": 1298,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -336690,7 +337684,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Unbezahlte Arbeit",
       "dataStandardsGroup": "",
-      "priority": 1298
+      "priority": 1300
     },
     {
       "id": "unesco",
@@ -336748,7 +337742,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/unesco/",
       "dataStandardsGroup": "",
-      "priority": 1299,
+      "priority": 1301,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -337172,7 +338166,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Unsichtbare Arbeit",
       "dataStandardsGroup": "",
-      "priority": 1301
+      "priority": 1303
     },
     {
       "id": "unsichtbare-rechnung",
@@ -337296,7 +338290,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1302
+      "priority": 1304
     },
     {
       "id": "unterlassen",
@@ -337356,7 +338350,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/unterlassen/",
       "dataStandardsGroup": "",
-      "priority": 1303,
+      "priority": 1305,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -337420,7 +338414,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/unterlassungskosten/",
       "dataStandardsGroup": "",
-      "priority": 1304,
+      "priority": 1306,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -337477,7 +338471,7 @@
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1305,
+      "priority": 1307,
       "deprecatedUsage": []
     },
     {
@@ -338143,7 +339137,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1306,
+      "priority": 1308,
       "deprecatedUsage": []
     },
     {
@@ -338896,7 +339890,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Unternehmen als Wirkungssystem",
-      "priority": 1307,
+      "priority": 1309,
       "deprecatedUsage": []
     },
     {
@@ -339064,7 +340058,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1308
+      "priority": 1310
     },
     {
       "id": "unternehmerische-kompetenz",
@@ -339294,7 +340288,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1310
+      "priority": 1312
     },
     {
       "id": "unternehmertypen-jochen-roepke",
@@ -339354,7 +340348,7 @@
       "sourceSection": "",
       "importSource": "content/glossary/imports/website-2-0-glossar-nachtraege.json",
       "importAction": "Neu anlegen. Quellenlage prüfen; wenn Primärquelle nicht zugänglich, transparent als Röpke-Bezug/Sekundärdarstellung führen.",
-      "priority": 1311,
+      "priority": 1313,
       "classicGlossary": true,
       "showInHub": true,
       "showHover": true,
@@ -339659,7 +340653,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Upcycling",
       "dataStandardsGroup": "",
-      "priority": 1313
+      "priority": 1315
     },
     {
       "id": "urban-mining",
@@ -339900,7 +340894,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Urban Mining",
       "dataStandardsGroup": "",
-      "priority": 1314
+      "priority": 1316
     },
     {
       "id": "urban-mining-batterien",
@@ -340266,7 +341260,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Urban Mining Batterien",
       "dataStandardsGroup": "",
-      "priority": 1315
+      "priority": 1317
     },
     {
       "id": "urteilskraft",
@@ -340637,7 +341631,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Urteilskraft",
       "dataStandardsGroup": "",
-      "priority": 1316
+      "priority": 1318
     },
     {
       "id": "value-proposition",
@@ -341186,7 +342180,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1319
+      "priority": 1321
     },
     {
       "id": "vehicle-to-grid",
@@ -341469,7 +342463,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vehicle-to-Grid",
       "dataStandardsGroup": "",
-      "priority": 1320
+      "priority": 1322
     },
     {
       "id": "vehicle-to-home",
@@ -341837,7 +342831,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vehicle-to-Home",
       "dataStandardsGroup": "",
-      "priority": 1321
+      "priority": 1323
     },
     {
       "id": "vehicle-to-load",
@@ -342203,7 +343197,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vehicle-to-Load",
       "dataStandardsGroup": "",
-      "priority": 1322
+      "priority": 1324
     },
     {
       "id": "verantwortung-fuer-kommende-generationen",
@@ -342710,7 +343704,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verbrauchsgüter",
       "dataStandardsGroup": "",
-      "priority": 1325
+      "priority": 1327
     },
     {
       "id": "verbrenner-lock-in",
@@ -342787,7 +343781,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/verbrenner-lock-in/",
       "dataStandardsGroup": "",
-      "priority": 1571,
+      "priority": 1573,
       "relatedDocuments": []
     },
     {
@@ -342865,7 +343859,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/verbrenneraus/",
       "dataStandardsGroup": "",
-      "priority": 1570,
+      "priority": 1572,
       "relatedDocuments": []
     },
     {
@@ -343243,7 +344237,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassung",
       "dataStandardsGroup": "",
-      "priority": 1326
+      "priority": 1328
     },
     {
       "id": "verfassungsgerichtsbarkeit",
@@ -343597,7 +344591,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassungsgerichtsbarkeit",
       "dataStandardsGroup": "",
-      "priority": 1327
+      "priority": 1329
     },
     {
       "id": "verfassungsmaessige-wirkungsarchitektur",
@@ -343971,7 +344965,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassungsmäßige Wirkungsarchitektur",
       "dataStandardsGroup": "",
-      "priority": 1328
+      "priority": 1330
     },
     {
       "id": "verfassungsorgan",
@@ -344344,7 +345338,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verfassungsorgan",
       "dataStandardsGroup": "",
-      "priority": 1329
+      "priority": 1331
     },
     {
       "id": "verfassungspatriotismus",
@@ -345126,7 +346120,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verhältnismäßigkeit",
       "dataStandardsGroup": "",
-      "priority": 1332
+      "priority": 1334
     },
     {
       "id": "verhaeltnismaessigkeit-in-der-wirkungsoekonomie",
@@ -345730,7 +346724,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1334
+      "priority": 1336
     },
     {
       "id": "verlustaversion",
@@ -346104,7 +347098,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1336
+      "priority": 1338
     },
     {
       "id": "verlustschulden",
@@ -346178,7 +347172,7 @@
       "theme": "Öffentliche Finanzen, Schulden und Wirkung",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1337,
+      "priority": 1339,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -347104,7 +348098,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Versicherbarkeit",
-      "priority": 1340,
+      "priority": 1342,
       "deprecatedUsage": []
     },
     {
@@ -347723,7 +348717,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1341,
+      "priority": 1343,
       "deprecatedUsage": []
     },
     {
@@ -348015,7 +349009,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Versorgungssicherheit",
       "dataStandardsGroup": "",
-      "priority": 1342
+      "priority": 1344
     },
     {
       "id": "verstaerkungslernen",
@@ -348249,7 +349243,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verstärkungslernen",
       "dataStandardsGroup": "",
-      "priority": 1343
+      "priority": 1345
     },
     {
       "id": "verteilnetz",
@@ -348532,7 +349526,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verteilnetz",
       "dataStandardsGroup": "",
-      "priority": 1344
+      "priority": 1346
     },
     {
       "id": "vertragsfreiheit",
@@ -348960,7 +349954,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vertragsfreiheit",
       "dataStandardsGroup": "",
-      "priority": 1345
+      "priority": 1347
     },
     {
       "id": "vertrauen",
@@ -349547,7 +350541,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vertrautheitseffekt",
       "dataStandardsGroup": "",
-      "priority": 1348
+      "priority": 1350
     },
     {
       "id": "verwaltung",
@@ -349924,7 +350918,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Verwaltung",
       "dataStandardsGroup": "",
-      "priority": 1349
+      "priority": 1351
     },
     {
       "id": "viabilitaet",
@@ -350107,7 +351101,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1350
+      "priority": 1352
     },
     {
       "id": "viable-system-model",
@@ -350740,7 +351734,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vita activa",
       "dataStandardsGroup": "",
-      "priority": 1352
+      "priority": 1354
     },
     {
       "id": "volkssouveraenitaet",
@@ -351096,7 +352090,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Volkssouveränität",
       "dataStandardsGroup": "",
-      "priority": 1353
+      "priority": 1355
     },
     {
       "id": "vollstaendige-information",
@@ -351526,7 +352520,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Vollständige Information",
       "dataStandardsGroup": "",
-      "priority": 1354
+      "priority": 1356
     },
     {
       "id": "vorsorgeprinzip",
@@ -351920,7 +352914,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1357
+      "priority": 1359
     },
     {
       "id": "wahlintegritaet",
@@ -352278,7 +353272,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wahlintegrität",
       "dataStandardsGroup": "",
-      "priority": 1358
+      "priority": 1360
     },
     {
       "id": "wahlmanipulation",
@@ -352648,7 +353642,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wahlmanipulation",
       "dataStandardsGroup": "",
-      "priority": 1359
+      "priority": 1361
     },
     {
       "id": "wahrhaftigkeit",
@@ -352828,7 +353822,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1360
+      "priority": 1362
     },
     {
       "id": "wahrheit",
@@ -353016,7 +354010,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1361
+      "priority": 1363
     },
     {
       "id": "wahrheitsillusionseffekt",
@@ -353301,7 +354295,7 @@
         "WÖk-Glossar psychologische Effekte, Biases und Diskursverschiebung v0.1; HAS, FAZ, WÖK-SM"
       ],
       "dataStandardsGroup": "",
-      "priority": 1362
+      "priority": 1364
     },
     {
       "id": "wahrnehmung",
@@ -353539,7 +354533,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wahrnehmung",
       "dataStandardsGroup": "",
-      "priority": 1363
+      "priority": 1365
     },
     {
       "id": "wahrscheinlichkeit",
@@ -353968,7 +354962,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wallbox",
       "dataStandardsGroup": "",
-      "priority": 1365
+      "priority": 1367
     },
     {
       "id": "walter-eucken",
@@ -354402,7 +355396,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wandlermessung",
       "dataStandardsGroup": "",
-      "priority": 1367
+      "priority": 1369
     },
     {
       "id": "waok",
@@ -354465,7 +355459,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/waok/",
       "dataStandardsGroup": "",
-      "priority": 1368,
+      "priority": 1370,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -354663,7 +355657,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1369
+      "priority": 1371
     },
     {
       "id": "waerme-t-sroi",
@@ -354723,7 +355717,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/waerme-t-sroi/",
       "dataStandardsGroup": "",
-      "priority": 1370,
+      "priority": 1372,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -355011,7 +356005,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wärmepumpe",
       "dataStandardsGroup": "",
-      "priority": 1371
+      "priority": 1373
     },
     {
       "id": "waermespeicher",
@@ -355296,7 +356290,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wärmespeicher",
       "dataStandardsGroup": "",
-      "priority": 1372
+      "priority": 1374
     },
     {
       "id": "waermewende",
@@ -355357,7 +356351,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/waermewende/",
       "dataStandardsGroup": "",
-      "priority": 1373,
+      "priority": 1375,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -355716,7 +356710,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wartung / Maintenance",
       "dataStandardsGroup": "",
-      "priority": 1375
+      "priority": 1377
     },
     {
       "id": "wasserkraft",
@@ -355996,7 +356990,7 @@
       "glossaryOrderKey": "Wasserkraft",
       "autoLinkAliases": [],
       "dataStandardsGroup": "",
-      "priority": 1376
+      "priority": 1378
     },
     {
       "id": "wasserstoff",
@@ -356280,7 +357274,7 @@
       "glossaryOrderKey": "Wasserstoff",
       "autoLinkAliases": [],
       "dataStandardsGroup": "",
-      "priority": 1377
+      "priority": 1379
     },
     {
       "id": "wasserstoff-hierarchie",
@@ -356341,7 +357335,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wasserstoff-hierarchie/",
       "dataStandardsGroup": "",
-      "priority": 1378,
+      "priority": 1380,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -356404,7 +357398,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wasserstoff-kernnetz/",
       "dataStandardsGroup": "",
-      "priority": 1379,
+      "priority": 1381,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -356686,7 +357680,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wasserstoffspeicher",
       "dataStandardsGroup": "",
-      "priority": 1380
+      "priority": 1382
     },
     {
       "id": "wasserstress",
@@ -357180,7 +358174,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Watchdog-Organisation",
       "dataStandardsGroup": "",
-      "priority": 1382
+      "priority": 1384
     },
     {
       "id": "watzlawick-paul",
@@ -357649,7 +358643,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wehrhafte Demokratie",
       "dataStandardsGroup": "",
-      "priority": 1385
+      "priority": 1387
     },
     {
       "id": "weiterverteilung",
@@ -357888,7 +358882,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Weiterverteilung / Redistribute",
       "dataStandardsGroup": "",
-      "priority": 1386
+      "priority": 1388
     },
     {
       "id": "well-to-tank",
@@ -358108,7 +359102,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1387
+      "priority": 1389
     },
     {
       "id": "well-to-wheel",
@@ -358328,7 +359322,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1388
+      "priority": 1390
     },
     {
       "id": "welle-teilchen-dualismus",
@@ -358758,7 +359752,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Weltlosigkeit",
       "dataStandardsGroup": "",
-      "priority": 1390
+      "priority": 1392
     },
     {
       "id": "wert",
@@ -358961,7 +359955,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1391
+      "priority": 1393
     },
     {
       "id": "werte",
@@ -359156,7 +360150,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1392
+      "priority": 1394
     },
     {
       "id": "wertebruecke",
@@ -359195,7 +360189,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wertebrücke",
-      "priority": 1393,
+      "priority": 1395,
       "relatedDocuments": [],
       "deprecatedUsage": []
     },
@@ -359392,7 +360386,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1394
+      "priority": 1396
     },
     {
       "id": "werterhalt",
@@ -359643,7 +360637,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Werterhalt",
       "dataStandardsGroup": "",
-      "priority": 1395
+      "priority": 1397
     },
     {
       "id": "wertewandel",
@@ -359838,7 +360832,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1396
+      "priority": 1398
     },
     {
       "id": "wertschoepfung",
@@ -360033,7 +361027,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1397
+      "priority": 1399
     },
     {
       "id": "wesentlicher-beitrag",
@@ -360967,7 +361961,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1401,
+      "priority": 1403,
       "deprecatedUsage": []
     },
     {
@@ -361351,7 +362345,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wiedergeburtsnarrativ",
       "dataStandardsGroup": "",
-      "priority": 1402
+      "priority": 1404
     },
     {
       "id": "wiederverwendung",
@@ -361596,7 +362590,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wiederverwendung",
       "dataStandardsGroup": "",
-      "priority": 1403
+      "priority": 1405
     },
     {
       "id": "windenergie",
@@ -361878,7 +362872,7 @@
       "glossaryOrderKey": "Windenergie",
       "autoLinkAliases": [],
       "dataStandardsGroup": "",
-      "priority": 1404
+      "priority": 1406
     },
     {
       "id": "windenergieanlage-lebenszyklus",
@@ -362244,7 +363238,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Windenergieanlage Lebenszyklus",
       "dataStandardsGroup": "",
-      "priority": 1405
+      "priority": 1407
     },
     {
       "id": "windrad-recycling",
@@ -362614,7 +363608,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Windrad-Recycling",
       "dataStandardsGroup": "",
-      "priority": 1406
+      "priority": 1408
     },
     {
       "id": "wirkleistung",
@@ -363411,7 +364405,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wirklichkeitsbindung",
       "dataStandardsGroup": "",
-      "priority": 1408
+      "priority": 1410
     },
     {
       "id": "wirklichkeitskonstruktion",
@@ -363706,7 +364700,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkpfad",
-      "priority": 1411,
+      "priority": 1413,
       "relatedDocuments": [],
       "deprecatedUsage": [],
       "categories": [
@@ -363880,7 +364874,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1412
+      "priority": 1414
     },
     {
       "id": "wirksamkeit",
@@ -364196,7 +365190,7 @@
       "theme": "Öffentliche Finanzen, Schulden und Wirkung",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1414,
+      "priority": 1416,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -364889,7 +365883,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkung-dritter-ordnung/",
       "dataStandardsGroup": "",
-      "priority": 1418,
+      "priority": 1420,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -364952,7 +365946,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkung-erster-ordnung/",
       "dataStandardsGroup": "",
-      "priority": 1419,
+      "priority": 1421,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -365015,7 +366009,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkung-statt-kapital/",
       "dataStandardsGroup": "",
-      "priority": 1420,
+      "priority": 1422,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -365078,7 +366072,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkung-zweiter-ordnung/",
       "dataStandardsGroup": "",
-      "priority": 1421,
+      "priority": 1423,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -366021,7 +367015,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungs-bonus-malus-logik/",
       "dataStandardsGroup": "",
-      "priority": 1424,
+      "priority": 1426,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -366827,7 +367821,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1425
+      "priority": 1427
     },
     {
       "id": "wirkungsabwehr",
@@ -366961,7 +367955,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsanalyse von Sprache",
-      "priority": 1427
+      "priority": 1429
     },
     {
       "id": "wirkungsarchitektur",
@@ -368273,7 +369267,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsausgabe/",
       "dataStandardsGroup": "",
-      "priority": 1431,
+      "priority": 1433,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -368770,7 +369764,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1432
+      "priority": 1434
     },
     {
       "version": "1.0",
@@ -368919,7 +369913,7 @@
       "metaTitle": "Wirkungsbedingte Stranded Assets | Glossar der Wirkungsökonomie",
       "metaDescription": "Wirkungsbedingte Stranded Assets sind Vermögenswerte, deren Wert sinkt oder verloren geht, weil ihre wirtschaftliche Grundlage auf negativer oder nicht mehr akzeptierter Wirkung beruht. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1433
+      "priority": 1435
     },
     {
       "version": "1.0",
@@ -369079,7 +370073,7 @@
       "metaTitle": "Wirkungsbelasteter Kredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein wirkungsbelasteter Kredit ist ein Kredit, dessen Finanzierungsgegenstand, Schuldner, Sicherheit oder Lieferkette negative Wirkung oder relevantes Wirkungsrisiko enthält. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1434
+      "priority": 1436
     },
     {
       "id": "wirkungsbewertung",
@@ -369725,7 +370719,12 @@
         "unsichtbare-arbeit",
         "modellblindheit",
         "gedankenlosigkeit",
-        "reframing"
+        "reframing",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "officialSources": [
         "UN Sustainable Development Goals / Agenda 2030",
@@ -369753,11 +370752,10 @@
         "Absicht"
       ],
       "relatedDocuments": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie",
-        "Die neue Ordnung des Wohlstands",
-        "Technische Leitlinien WUStG",
-        "Wirkungsrat-Konzept",
-        "Produktbesteuerung durch Wirkung"
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/technische-leitlinien-wustg-v2/",
+        "dokumente/wirkungsrat-konzept/",
+        "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"
       ],
       "examples": [
         "Ein Importapfel und ein regionaler Bio-Apfel zahlen denselben Steuersatz, obwohl Klima-, Wasser- und Lieferkettenwirkungen verschieden sind.",
@@ -369779,17 +370777,11 @@
         "wirkungsbewertung",
         "wirkungslenkung",
         "wirkungsarchitektur",
-        "externalitaeten",
         "ehrliche-preise",
         "wirkung-im-preisschild",
         "greenwashing",
         "impact-washing",
         "wirkungssimulation",
-        "buerokratie-als-reparaturmaschine",
-        "kapital-als-falscher-kompass",
-        "reichweite",
-        "output",
-        "bip",
         "scheinleistung",
         "blindleistung",
         "wirkung",
@@ -369800,7 +370792,6 @@
         "transformationswirkung",
         "wirkungsrueckkopplung",
         "wirkungsgrenze",
-        "wirkungsrad",
         "wirkungspfad",
         "wirkungsnetz",
         "wirkungsdaten",
@@ -369835,7 +370826,12 @@
         "unsichtbare-arbeit",
         "modellblindheit",
         "gedankenlosigkeit",
-        "reframing"
+        "reframing",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -371437,7 +372433,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungscontrolling",
-      "priority": 1440,
+      "priority": 1442,
       "deprecatedUsage": []
     },
     {
@@ -372148,7 +373144,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1443
+      "priority": 1445
     },
     {
       "id": "wirkungseffizienz",
@@ -372947,7 +373943,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1448
+      "priority": 1450
     },
     {
       "id": "wirkungsfinanzpolitik",
@@ -373026,7 +374022,7 @@
       "theme": "Öffentliche Finanzen, Schulden und Wirkung",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 1449,
+      "priority": 1451,
       "officialSources": [],
       "deprecatedUsage": []
     },
@@ -373709,7 +374705,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wirkungsfreiheit",
       "dataStandardsGroup": "",
-      "priority": 1452
+      "priority": 1454
     },
     {
       "id": "wirkungsgovernance",
@@ -374196,7 +375192,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1453
+      "priority": 1455
     },
     {
       "id": "wirkungsgrad",
@@ -374380,7 +375376,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1454
+      "priority": 1456
     },
     {
       "id": "wirkungsgrenze",
@@ -377116,7 +378112,7 @@
       "blindSpot": "Kapital kann als Wirkungskapital bezeichnet werden, ohne dass seine tatsächliche positive Netto-Wirkung geprüft wird.",
       "blind_spot": "Kapital kann als Wirkungskapital bezeichnet werden, ohne dass seine tatsächliche positive Netto-Wirkung geprüft wird.",
       "dataStandardsGroup": "",
-      "priority": 1461
+      "priority": 1463
     },
     {
       "id": "wirkungskette",
@@ -377177,7 +378173,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungskette/",
       "dataStandardsGroup": "",
-      "priority": 1462,
+      "priority": 1464,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -377739,7 +378735,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungskommunikation",
-      "priority": 1463,
+      "priority": 1465,
       "deprecatedUsage": []
     },
     {
@@ -377858,7 +378854,12 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "officialSources": [],
       "pageUrl": "/begriffe/wirkungskompetenz/",
@@ -377878,11 +378879,11 @@
         "Social Credit: Wirkungskompetenz bewertet keine Menschen."
       ],
       "relatedDocuments": [
-        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsoekonomie-in-der-lieferkette"
+        "blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html",
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/systemmodell-der-wirkungsoekonomie/",
+        "dokumente/whitepaper-t-sroi/",
+        "dokumente/wirkungsoekonomie-in-der-lieferkette/"
       ],
       "examples": [
         "Eine Führungskraft fragt bei einer Investition nach ROI, NWI, T-SROI, Datenqualität, Wirkungsrisiko und Wirkungsgrenzen.",
@@ -377899,7 +378900,6 @@
       "updatedAt": "2026-06-01",
       "related_terms": [
         "unternehmen-als-wirkungssystem",
-        "wirkungsorientierte-unternehmensfuhrung",
         "wirkungscontrolling",
         "kii",
         "wirkung",
@@ -377914,8 +378914,6 @@
         "wirkungsblindheit",
         "wirkungsgrenze",
         "reverse-merit-order",
-        "datenqualitat",
-        "wok-id",
         "scorecard",
         "t-sroi",
         "nwi",
@@ -377923,21 +378921,13 @@
         "greenwashing",
         "scheinleistung",
         "blindleistung",
-        "bildung",
         "lernende-organisation",
         "wirkungsorientierte-unternehmensfuehrung",
-        "unternehmenszweck",
-        "purpose",
         "purpose-washing",
-        "gewinn-als-ergebnis",
-        "governance-nach-wirkung",
-        "wirkungsmanagement",
-        "wirkungsmonitoring",
         "wirkungsrueckkopplung",
         "wirkleistung",
         "produktwirkung",
         "produktscorecard",
-        "unternehmensscorecard",
         "woek-id",
         "wirkungsindikator",
         "datenqualitaet",
@@ -377956,7 +378946,6 @@
         "impact-washing",
         "sdg-washing",
         "esg",
-        "csr",
         "csrd",
         "esrs",
         "gri",
@@ -377966,15 +378955,16 @@
         "portfolio-wirkung",
         "wirkungsrendite",
         "versicherbarkeit",
-        "unternehmenskultur",
-        "rollenverantwortung",
-        "capex-nach-wirkung",
-        "opex-nach-wirkung",
         "wirkungskommunikation",
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "publicationStatus": "published",
       "publication_status": "published",
@@ -378701,7 +379691,7 @@
       "metaTitle": "Wirkungskonversionskredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein Wirkungskonversionskredit finanziert den Umbau belasteter Geschäftsmodelle, Lieferketten oder Vermögenswerte in resilientere und wirkungsärmere oder positive Wirkungspfade. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1465
+      "priority": 1467
     },
     {
       "version": "1.0",
@@ -378858,7 +379848,7 @@
       "metaTitle": "Wirkungskredit / W-Kredit | Glossar der Wirkungsökonomie",
       "metaDescription": "Ein Wirkungskredit ist ein Kredit, dessen Konditionen, Prüfung oder Kapitalzugang nach Wirkung, Wirkungsrisiko und Datenqualität differenziert werden. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1466
+      "priority": 1468
     },
     {
       "id": "wirkungslenkung",
@@ -379278,7 +380268,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsluecke/",
       "dataStandardsGroup": "",
-      "priority": 1468,
+      "priority": 1470,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -379341,7 +380331,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsmarkt/",
       "dataStandardsGroup": "",
-      "priority": 1469,
+      "priority": 1471,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -379405,7 +380395,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsmonitoring/",
       "dataStandardsGroup": "",
-      "priority": 1470,
+      "priority": 1472,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -379468,7 +380458,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsnachweis/",
       "dataStandardsGroup": "",
-      "priority": 1471,
+      "priority": 1473,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -379659,7 +380649,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsoffenheit/",
       "dataStandardsGroup": "",
-      "priority": 1568,
+      "priority": 1570,
       "relatedDocuments": []
     },
     {
@@ -379719,7 +380709,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsoekonomie/",
       "dataStandardsGroup": "",
-      "priority": 1473,
+      "priority": 1475,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -380492,7 +381482,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1474
+      "priority": 1476
     },
     {
       "id": "wirkungsoekonomische-kaufkraftlogik",
@@ -380551,7 +381541,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsoekonomische-kaufkraftlogik/",
       "dataStandardsGroup": "",
-      "priority": 1475,
+      "priority": 1477,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -381089,7 +382079,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1476
+      "priority": 1478
     },
     {
       "id": "wirkungsorientierte-schuldenregel",
@@ -381148,7 +382138,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsorientierte-schuldenregel/",
       "dataStandardsGroup": "",
-      "priority": 1477,
+      "priority": 1479,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -381211,7 +382201,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsorientierte-schuldentragfaehigkeit/",
       "dataStandardsGroup": "",
-      "priority": 1478,
+      "priority": 1480,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -381273,7 +382263,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsorientierte-subventionspruefung/",
       "dataStandardsGroup": "",
-      "priority": 1479,
+      "priority": 1481,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -382029,7 +383019,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsorientierte Unternehmensführung",
-      "priority": 1480,
+      "priority": 1482,
       "deprecatedUsage": []
     },
     {
@@ -382312,7 +383302,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungspartnerschaft/",
       "dataStandardsGroup": "",
-      "priority": 1483,
+      "priority": 1485,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -383142,7 +384132,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungspotenzialmanagement/",
       "dataStandardsGroup": "",
-      "priority": 1488,
+      "priority": 1490,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -383205,7 +384195,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungspraxis/",
       "dataStandardsGroup": "",
-      "priority": 1489,
+      "priority": 1491,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -383269,7 +384259,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsprofil/",
       "dataStandardsGroup": "",
-      "priority": 1490,
+      "priority": 1492,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -383821,7 +384811,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungspruefung-oeffentlicher-mittel/",
       "dataStandardsGroup": "",
-      "priority": 1492,
+      "priority": 1494,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -384571,7 +385561,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsqualitaet-der-schulden/",
       "dataStandardsGroup": "",
-      "priority": 1494,
+      "priority": 1496,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -385848,7 +386838,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1498
+      "priority": 1500
     },
     {
       "id": "wirkungsregister",
@@ -387050,7 +388040,7 @@
       "statusNote": "",
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsrendite",
-      "priority": 1500,
+      "priority": 1502,
       "deprecatedUsage": []
     },
     {
@@ -387111,7 +388101,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wirkungsrendite-oeffentlicher-ausgaben/",
       "dataStandardsGroup": "",
-      "priority": 1501,
+      "priority": 1503,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -388769,7 +389759,7 @@
       "metaTitle": "Wirkungsrisikoposition | Glossar der Wirkungsökonomie",
       "metaDescription": "Eine Wirkungsrisikoposition beschreibt eine Portfolio-, Kredit-, Versicherungs- oder Kapitalposition, die negativen Wirkungen oder Wirkungsrisiken ausgesetzt ist. Wirkungsökonomisch eingeordnet als WÖk-Präzisierungsbegriff.",
       "dataStandardsGroup": "",
-      "priority": 1505
+      "priority": 1507
     },
     {
       "id": "wirkungsrueckkopplung",
@@ -389830,7 +390820,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1508,
+      "priority": 1510,
       "deprecatedUsage": []
     },
     {
@@ -391837,7 +392827,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1515
+      "priority": 1517
     },
     {
       "id": "wirkungsvermietung",
@@ -392583,7 +393573,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1518
+      "priority": 1520
     },
     {
       "id": "wirkungswertschoepfung",
@@ -392778,7 +393768,7 @@
       "blindSpot": "",
       "blind_spot": "",
       "dataStandardsGroup": "",
-      "priority": 1519
+      "priority": 1521
     },
     {
       "id": "wirkungszurechnung",
@@ -392872,7 +393862,7 @@
       "officialSources": [],
       "statusNote": "",
       "dataStandardsGroup": "",
-      "priority": 1520,
+      "priority": 1522,
       "categories": [
         "grundbegriff"
       ]
@@ -393311,7 +394301,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wirtschaftsliberalismus",
       "dataStandardsGroup": "",
-      "priority": 1521
+      "priority": 1523
     },
     {
       "id": "wissenschaft-als-wirkungsinfrastruktur",
@@ -393839,7 +394829,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1522
+      "priority": 1524
     },
     {
       "id": "wissenschaftliche-politikberatung",
@@ -394381,7 +395371,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1523
+      "priority": 1525
     },
     {
       "id": "wissensrat",
@@ -394917,7 +395907,7 @@
         }
       ],
       "dataStandardsGroup": "",
-      "priority": 1524
+      "priority": 1526
     },
     {
       "id": "wix-vi",
@@ -395455,7 +396445,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wohlfahrtsökonomie",
       "dataStandardsGroup": "",
-      "priority": 1526
+      "priority": 1528
     },
     {
       "id": "wohlfahrtsoekonomik",
@@ -395779,7 +396769,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Wohlfahrtsstaat",
       "dataStandardsGroup": "",
-      "priority": 1528
+      "priority": 1530
     },
     {
       "id": "wohlstand",
@@ -395838,7 +396828,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wohlstand/",
       "dataStandardsGroup": "",
-      "priority": 1529,
+      "priority": 1531,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -395901,7 +396891,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wohlstand-als-systemzustand/",
       "dataStandardsGroup": "",
-      "priority": 1530,
+      "priority": 1532,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -396106,7 +397096,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/woek/",
       "dataStandardsGroup": "",
-      "priority": 1532,
+      "priority": 1534,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -396608,7 +397598,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/woek-ids/",
       "dataStandardsGroup": "",
-      "priority": 1534,
+      "priority": 1536,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -396672,7 +397662,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/wr/",
       "dataStandardsGroup": "",
-      "priority": 1535,
+      "priority": 1537,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -397643,7 +398633,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Xenophobie",
       "dataStandardsGroup": "",
-      "priority": 1541
+      "priority": 1543
     },
     {
       "id": "youth-jugendbeteiligung",
@@ -397801,7 +398791,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zeitfensterblindheit/",
       "dataStandardsGroup": "",
-      "priority": 1543,
+      "priority": 1545,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -398270,7 +399260,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zementverwertung Rotorblätter",
       "dataStandardsGroup": "",
-      "priority": 1545
+      "priority": 1547
     },
     {
       "id": "zen",
@@ -398593,7 +399583,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zentralverwaltungswirtschaft",
       "dataStandardsGroup": "",
-      "priority": 1547
+      "priority": 1549
     },
     {
       "id": "zero-sum-bias",
@@ -398653,7 +399643,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zero-sum-bias/",
       "dataStandardsGroup": "",
-      "priority": 1548,
+      "priority": 1550,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -398716,7 +399706,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zertifizierung/",
       "dataStandardsGroup": "",
-      "priority": 1549,
+      "priority": 1551,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -399473,7 +400463,7 @@
         "steering_logic"
       ],
       "dataStandardsGroup": "",
-      "priority": 1551,
+      "priority": 1553,
       "deprecatedUsage": []
     },
     {
@@ -399534,7 +400524,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zielzustand/",
       "dataStandardsGroup": "",
-      "priority": 1552,
+      "priority": 1554,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -399597,7 +400587,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zinslast/",
       "dataStandardsGroup": "",
-      "priority": 1553,
+      "priority": 1555,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -399661,7 +400651,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zinslast-ohne-gegenwert/",
       "dataStandardsGroup": "",
-      "priority": 1554,
+      "priority": 1556,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -399903,7 +400893,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zirkuläres Geschäftsmodell",
       "dataStandardsGroup": "",
-      "priority": 1555
+      "priority": 1557
     },
     {
       "id": "zirkularitaet",
@@ -400610,7 +401600,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zivilgesellschaft",
       "dataStandardsGroup": "",
-      "priority": 1557
+      "priority": 1559
     },
     {
       "id": "zivilgesellschaftsrepression",
@@ -400980,7 +401970,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zivilgesellschaftsrepression",
       "dataStandardsGroup": "",
-      "priority": 1558
+      "priority": 1560
     },
     {
       "id": "zugangsgerechtigkeit",
@@ -401487,7 +402477,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zukunftskosten/",
       "dataStandardsGroup": "",
-      "priority": 1563,
+      "priority": 1565,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -401551,7 +402541,7 @@
       "statusNote": "",
       "pageUrl": "/begriffe/zukunftsschulden/",
       "dataStandardsGroup": "",
-      "priority": 1564,
+      "priority": 1566,
       "officialSources": [],
       "relatedDocuments": [],
       "deprecatedUsage": []
@@ -401647,7 +402637,7 @@
       "officialSources": [],
       "statusNote": "",
       "dataStandardsGroup": "",
-      "priority": 1565,
+      "priority": 1567,
       "categories": [
         "schutzbegriff"
       ]
@@ -402020,7 +403010,7 @@
       "deprecatedUsage": [],
       "glossaryOrderKey": "Zyklenfestigkeit",
       "dataStandardsGroup": "",
-      "priority": 1566
+      "priority": 1568
     }
   ]
 }
