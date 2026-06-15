@@ -4,6 +4,35 @@ import path from "node:path";
 const root = process.cwd();
 const blogDir = path.join(root, "blog");
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
+const entryOverrides = new Map([
+  ["/blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html", {
+    excerpt: "Überarbeitete Journalfassung zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Labels, Zertifikate, Scores, Faktenchecks und Berichte machen Wirkung sichtbar, aber erst Rückkopplung in Preise, Regeln, Kapital, Beschaffung und Öffentlichkeit macht daraus reale Steuerung.",
+    tags: [
+      "Wissensgesellschaft",
+      "Wirkungsgesellschaft",
+      "Labels",
+      "Zertifikate",
+      "Scores",
+      "Faktencheck",
+      "Folgencheck",
+      "Wirkungsrückkopplung",
+      "positive Netto-Wirkung",
+      "6. Kondratieff"
+    ],
+    relatedPages: [
+      "/verstehen/wissensgesellschaft-wirkungsgesellschaft/",
+      "/dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/",
+      "/begriffe/wissensgesellschaft/",
+      "/begriffe/wirkungsgesellschaft/"
+    ],
+    relatedTerms: [
+      "Wissensgesellschaft",
+      "Wirkungsgesellschaft",
+      "Wirkungsrückkopplung",
+      "positive Netto-Wirkung"
+    ]
+  }]
+]);
 
 function readExistingIndex() {
   if (!fs.existsSync(indexPath)) return new Map();
@@ -132,6 +161,7 @@ function entryFromHtml(file, existing) {
     firstMatch(mainHtml(html), [/<img[^>]+alt=["']([^"']+)["'][^>]*>/i]);
   const previousAlt = previous.imageAlt === "Wirkungsökonomie Logo" ? "" : previous.imageAlt;
   const imageAlt = imageAltFromHtml || previousAlt || title;
+  const override = entryOverrides.get(url) || {};
 
   return {
     title,
@@ -140,15 +170,15 @@ function entryFromHtml(file, existing) {
     publishedAt: published,
     category,
     readingTime,
-    excerpt,
-    tags,
+    excerpt: override.excerpt || excerpt,
+    tags: override.tags || tags,
     type: normalizeType(previous.type),
     image,
     imageAlt,
     featured: Boolean(previous.featured),
     status: previous.status || "published",
-    relatedPages: previous.relatedPages || [],
-    relatedTerms: previous.relatedTerms || []
+    relatedPages: override.relatedPages || previous.relatedPages || [],
+    relatedTerms: override.relatedTerms || previous.relatedTerms || []
   };
 }
 
