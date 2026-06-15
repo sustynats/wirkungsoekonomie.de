@@ -239,6 +239,7 @@ const DOCUMENTS = [
     downloadAllowed: true,
     previewAllowed: true,
     onlinePath: "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/",
+    foundationPath: "verstehen/wissensgesellschaft-wirkungsgesellschaft/",
     section: "Grundlagen & Leitbild",
     order: 45
   },
@@ -1570,6 +1571,11 @@ function onlineHref(doc, prefix = "") {
   return "";
 }
 
+function foundationHref(doc, prefix = "") {
+  if (!doc.foundationPath) return "";
+  return `${prefix}${doc.foundationPath}`;
+}
+
 function card(doc, prefix = "") {
   return `<article class="document-card" data-document-card data-type="${escapeHtml(doc.documentType)}" data-status="${escapeHtml(doc.status)}" data-level="${escapeHtml(doc.level)}" data-audience="${escapeHtml(doc.audience.join(" "))}" data-topics="${escapeHtml(doc.topics.join(" "))}" data-methods="${escapeHtml(doc.methods.join(" "))}" data-fields="${escapeHtml(doc.impactFields.join(" "))}" data-order="${Number(doc.order || 999)}" data-date="${escapeHtml(doc.date || "")}" data-pages="${Number(doc.pageCount || 0)}">
     <div class="document-card-badges">${badge(doc.documentType)}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
@@ -1765,6 +1771,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
 function detailPage(doc, prefix = "../../") {
   const href = downloadHref(doc, prefix);
   const online = onlineHref(doc, prefix);
+  const foundation = foundationHref(doc, prefix);
   const related = (doc.relatedDocuments || []).map((id) => model.find((item) => item.id === id)).filter(Boolean);
   const onlineContent = doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))
     ? read(path.join(ROOT, doc.contentHtmlPath))
@@ -1782,6 +1789,7 @@ function detailPage(doc, prefix = "../../") {
     ? `<div class="callout"><strong>Führende Dokumentseite:</strong> Diese Bibliotheksseite ist die vollständige Arbeitsfassung zum Folgencheck politischer Sprache. Die ältere Seite <a class="text-link" href="../../werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/">Faktencheck und Folgencheck - Methodenseite</a> dient als methodischer Kurzüberblick und verweist hierher.</div>`
     : "";
   const actionLinks = [
+    foundation ? `<a class="btn btn-secondary" href="${foundation}">Grundlagenpfad</a>` : "",
     online ? `<a class="btn btn-secondary" href="${online}">Onlinefassung lesen</a>` : "",
     href ? `<a class="btn btn-primary" href="${href}">PDF öffnen</a>` : ""
   ].filter(Boolean);
@@ -1805,6 +1813,7 @@ function detailPage(doc, prefix = "../../") {
           <p>${escapeHtml(doc.summaryShort)}</p>
           <h2>Was dich erwartet</h2>
           <p>${escapeHtml(doc.whatToExpect || "Redaktionelle Einordnung folgt.")}</p>
+          ${foundation ? `<div class="callout"><strong>Grundlagenpfad:</strong> Für den schnellen Einstieg gibt es die Verstehen-Seite <a class="text-link" href="${foundation}">Von der Wissensgesellschaft zur Wirkungsgesellschaft</a>.</div>` : ""}
           <h2>Welche Fragen beantwortet das Dokument?</h2>
           <ul>${(doc.keyQuestions || []).map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ul>
           <h2>Für wen geeignet?</h2>
