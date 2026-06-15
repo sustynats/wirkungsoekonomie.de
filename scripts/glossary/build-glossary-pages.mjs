@@ -470,6 +470,8 @@ for (const document of documentRegistry) {
 }
 
 const termTargetLinks = new Map([
+  ["wissensgesellschaft", "../../verstehen/wissensgesellschaft-wirkungsgesellschaft/"],
+  ["wirkungsgesellschaft", "../../verstehen/wissensgesellschaft-wirkungsgesellschaft/"],
   ["agenda-2030", "../../verstehen/sdgs-sdgplus/geschichte/"],
   ["sdg-sdgplus-referenzrahmen", "../../verstehen/sdgs-sdgplus/"],
   ["sdg-plus", "../../verstehen/sdgs-sdgplus/#sdgplus"],
@@ -533,6 +535,11 @@ const termTargetLinks = new Map([
   ["wirkungsorientiertes-hosting", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/"],
   ["resonanzarchitektur", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/#16-hosts-als-resonanzarchitekt-innen"],
   ["host-wirkungsscore", "../../wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/#23-neun-wirkungsfelder-des-host-wirkungsscores"],
+]);
+
+const termTargetLabels = new Map([
+  ["wissensgesellschaft", "Grundlagenseite lesen"],
+  ["wirkungsgesellschaft", "Grundlagenseite lesen"],
 ]);
 
 const relatedContentTargets = new Map([
@@ -1479,7 +1486,7 @@ function mythBlock(term) {
 function detailLinks(term) {
   const links = [];
   const target = termTargetLinks.get(term.slug);
-  if (target) links.push({ href: target, label: "Themenseite öffnen" });
+  if (target) links.push({ href: target, label: termTargetLabels.get(term.slug) || "Themenseite öffnen" });
   links.push({ href: "../../begriffe/", label: "Alle Begriffe" });
   links.push({ href: `../../suche.html?q=${encodeURIComponent(term.canonicalLabel)}`, label: "Website durchsuchen" });
   return links
