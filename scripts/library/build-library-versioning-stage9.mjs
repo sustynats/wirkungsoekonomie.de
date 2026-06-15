@@ -181,13 +181,13 @@ const LEADING_OVERRIDES = new Map([
   }],
   ["dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html", {
     title: "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
-    shortDescription: "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+    shortDescription: "Erweiterte Dossierfassung v2.0 zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Labels, Zertifikate, Scores, Faktenchecks und Berichte werden erst wirksam, wenn sie in Bewertung, Rückkopplung und positive Netto-Wirkung übersetzt werden.",
     type: "Dossier",
     status: "aktuell"
   }],
   ["public/downloads/originals/von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf", {
     title: "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
-    shortDescription: "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+    shortDescription: "Erweiterte Dossierfassung v2.0 zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Labels, Zertifikate, Scores, Faktenchecks und Berichte werden erst wirksam, wenn sie in Bewertung, Rückkopplung und positive Netto-Wirkung übersetzt werden.",
     type: "Dossier",
     status: "aktuell"
   }],

@@ -216,14 +216,14 @@ const DOCUMENTS = [
     visibility: "public",
     audience: ["Einsteiger:innen", "Fachöffentlichkeit", "Politik", "Wissenschaft", "Bildung"],
     level: "fortgeschritten",
-    summaryShort: "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+    summaryShort: "Dossier v2.0 zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Die neue Fassung schärft Labels, Zertifikate, Scores, Faktenchecks und Berichte als Sichtbarkeitsinstrumente, die erst durch Bewertung und Rückkopplung Wirkung erzeugen.",
     whatToExpect: "Eine verständliche und zugleich systematische Einordnung der nächsten Fortschrittsstufe: von Wissen, Bericht und Messung zu Wirkungsarchitektur, demokratischer Lernfähigkeit und realer Zustandsveränderung.",
     keyQuestions: [
       "Warum reicht Wissen allein nicht mehr als Fortschrittsmaßstab?",
       "Was unterscheidet Wissensgesellschaft und Wirkungsgesellschaft?",
       "Wie werden Daten, KI, Wissenschaft, Märkte, Staat und Medien zu Rückkopplungsarchitekturen für positive Netto-Wirkung?"
     ],
-    topics: ["Wissensgesellschaft", "Wirkungsgesellschaft", "Wirkungskompetenz", "SDG+", "Rückkopplung", "KI", "Medienqualität", "Demokratie", "Positive Netto-Wirkung"],
+    topics: ["Wissensgesellschaft", "Wirkungsgesellschaft", "Labels", "Zertifikate", "Scores", "Faktencheck", "Folgencheck", "Wirkungsrückkopplung", "positive Netto-Wirkung"],
     methods: ["Wirkungsarchitektur", "Wirkungsrückkopplung", "Scorecards", "WÖk-IDs", "T-SROI"],
     impactFields: ["Mensch", "Planet", "Demokratie", "Öffentlichkeit & Wissen", "Wissenschaft & Innovation"],
     relatedDocuments: [
@@ -232,7 +232,7 @@ const DOCUMENTS = [
       "whitepaper-t-sroi",
       "standardwerk-neue-ordnung-wohlstands-2026"
     ],
-    version: "v1.0",
+    version: "v2.0",
     date: "2026-06-15",
     legalNotice: "Konzeptionelles Dossier. Keine Rechts-, Steuer-, Anlage-, Förder-, Bildungs-, Gesundheits- oder Politikberatung; keine amtliche Bewertung.",
     editorialNote: "Aus dem Ausgangsdossier in das WÖK-CI-Template überführt, als PDF veröffentlicht und als Online-Lesefassung verankert.",
