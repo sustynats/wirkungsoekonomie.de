@@ -205,6 +205,44 @@ const DOCUMENTS = [
     order: 40
   },
   {
+    id: "von-der-wissensgesellschaft-zur-wirkungsgesellschaft",
+    slug: "von-der-wissensgesellschaft-zur-wirkungsgesellschaft",
+    title: "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
+    subtitle: "Warum die nächste Stufe des Fortschritts nicht mehr fragt: Was wissen wir?, sondern: Was bewirkt es?",
+    fileName: "von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf",
+    filePath: "public/downloads/originals/von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf",
+    documentType: "dossier",
+    status: "aktuell",
+    visibility: "public",
+    audience: ["Einsteiger:innen", "Fachöffentlichkeit", "Politik", "Wissenschaft", "Bildung"],
+    level: "fortgeschritten",
+    summaryShort: "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+    whatToExpect: "Eine verständliche und zugleich systematische Einordnung der nächsten Fortschrittsstufe: von Wissen, Bericht und Messung zu Wirkungsarchitektur, demokratischer Lernfähigkeit und realer Zustandsveränderung.",
+    keyQuestions: [
+      "Warum reicht Wissen allein nicht mehr als Fortschrittsmaßstab?",
+      "Was unterscheidet Wissensgesellschaft und Wirkungsgesellschaft?",
+      "Wie werden Daten, KI, Wissenschaft, Märkte, Staat und Medien zu Rückkopplungsarchitekturen für positive Netto-Wirkung?"
+    ],
+    topics: ["Wissensgesellschaft", "Wirkungsgesellschaft", "Wirkungskompetenz", "SDG+", "Rückkopplung", "KI", "Medienqualität", "Demokratie", "Positive Netto-Wirkung"],
+    methods: ["Wirkungsarchitektur", "Wirkungsrückkopplung", "Scorecards", "WÖk-IDs", "T-SROI"],
+    impactFields: ["Mensch", "Planet", "Demokratie", "Öffentlichkeit & Wissen", "Wissenschaft & Innovation"],
+    relatedDocuments: [
+      "grundlagenpapier-wirkungsoekonomie",
+      "systemmodell-wirkungsoekonomie",
+      "whitepaper-t-sroi",
+      "standardwerk-neue-ordnung-wohlstands-2026"
+    ],
+    version: "v1.0",
+    date: "2026-06-15",
+    legalNotice: "Konzeptionelles Dossier. Keine Rechts-, Steuer-, Anlage-, Förder-, Bildungs-, Gesundheits- oder Politikberatung; keine amtliche Bewertung.",
+    editorialNote: "Aus dem Ausgangsdossier in das WÖK-CI-Template überführt, als PDF veröffentlicht und als Online-Lesefassung verankert.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    onlinePath: "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/",
+    section: "Grundlagen & Leitbild",
+    order: 45
+  },
+  {
     id: "standardwerk-neue-ordnung-wohlstands-2026",
     slug: "standardwerk-neue-ordnung-wohlstands-2026",
     title: "Die neue Ordnung des Wohlstands",

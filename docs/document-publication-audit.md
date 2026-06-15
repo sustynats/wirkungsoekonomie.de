@@ -4,8 +4,8 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Ergebnis
 
-- Kuratierte Metadatenkarten: 38
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 20
+- Kuratierte Metadatenkarten: 39
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 21
 - Archivdokumente nur im Archiv: 2
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 16
 - Red-Flag-Treffer: 27
