@@ -51,6 +51,7 @@ const ONLINE_ROOTS = [
 const TYPE_LABELS = [
   "Buch",
   "Grundlagenwerk",
+  "Dossier",
   "Whitepaper",
   "Arbeitspapier",
   "Gesetzesentwurf",
@@ -177,6 +178,18 @@ const LEADING_OVERRIDES = new Map([
   ["buch.html", {
     title: "Die neue Ordnung des Wohlstands",
     shortDescription: "Grundlagenwerk der Wirkungsökonomie und führende Gesamtreferenz für die Systemlogik."
+  }],
+  ["dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html", {
+    title: "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
+    shortDescription: "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+    type: "Dossier",
+    status: "aktuell"
+  }],
+  ["public/downloads/originals/von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf", {
+    title: "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
+    shortDescription: "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+    type: "Dossier",
+    status: "aktuell"
   }],
   ["assets/pdf/die-neue-ordnung-des-wohlstands.pdf", {
     title: "Die neue Ordnung des Wohlstands (PDF)",

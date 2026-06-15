@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-06-15T16:33:40.437Z",
+  "generatedAt": "2026-06-15T17:42:48.057Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
       "Buch",
       "Grundlagenwerk",
+      "Dossier",
       "Whitepaper",
       "Arbeitspapier",
       "Gesetzesentwurf",
@@ -204,10 +205,10 @@
     }
   ],
   "counts": {
-    "total": 1489,
+    "total": 1491,
     "byStatus": {
       "führend": 5,
-      "aktuell": 950,
+      "aktuell": 952,
       "Arbeitsfassung": 278,
       "ältere Fassung": 256
     },
@@ -220,15 +221,16 @@
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
       "Buch": 8,
-      "Whitepaper": 6
+      "Whitepaper": 6,
+      "Dossier": 2
     },
     "bySource": {
       "leading-reference": 7,
-      "download-or-document": 720,
-      "online-version": 762
+      "download-or-document": 721,
+      "online-version": 763
     },
-    "downloadFiles": 720,
-    "onlineVersions": 762
+    "downloadFiles": 721,
+    "onlineVersions": 763
   },
   "documents": [
     {
@@ -18857,6 +18859,54 @@
       "urls": {
         "primary": "referenz/volltext/",
         "sourcePath": "referenz/volltext/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-von-der-wissensgesellschaft-zur-wirkungsgesellsc",
+      "title": "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
+      "shortDescription": "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+      "type": "Dossier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf",
+        "sourcePath": "public/downloads/originals/von-der-wissensgesellschaft-zur-wirkungsgesellschaft-dossier.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html",
+      "title": "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
+      "shortDescription": "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Daten, Forschung und KI werden erst dann zukunftsfähig, wenn sie in Rückkopplung, Wirkungskompetenz und positive Netto-Wirkung übersetzt werden.",
+      "type": "Dossier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/",
+        "sourcePath": "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html"
       },
       "source": "online-version",
       "isLeadingReference": false

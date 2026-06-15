@@ -153,6 +153,7 @@ function typeIntro(type) {
     Journalartikel: "Aktuelle Einordnungen, Kommentare und Leitartikel aus dem Journal.",
     Buch: "Vollständige Bücher, Handbücher und online lesbare Gesamtfassungen.",
     Grundlagenwerk: "Tragende Referenzen, Bücher und Systemdarstellungen.",
+    Dossier: "Systematische Vertiefungen mit Kontext, Einordnung und Online-/PDF-Fassung.",
     Whitepaper: "Fachliche Einordnung mit Argumentations- und Methodenfokus.",
     Arbeitspapier: "Arbeits- und Diskussionsmaterial, oft mit Entwurfs- oder Vertiefungscharakter.",
     Gesetzesentwurf: "Rechtliche Entwürfe, Begründungen und regulatorische Arbeitsstände.",
