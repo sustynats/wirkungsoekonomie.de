@@ -296,8 +296,10 @@ function headerUtilityNav(base) {
     .filter((item) => headerUtilityLabels.has(item.label))
     .map((item) => {
       const label = esc(item.label);
+      const text = item.label === "WÖk-KI" ? "KI" : label;
+      const utilityClass = item.label === "WÖk-KI" ? "woek-ki" : navSlug(item.label);
       const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
-      return `<a class="site-utility-link site-utility-link--${esc(navSlug(item.label))}" href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${label}</a>`;
+      return `<a class="site-utility-link site-utility-link--${esc(utilityClass)}" href="${base}${esc(item.href)}" data-nav-match="${esc(navMatch(item))}" data-utility-label="${label}"${primary}>${text}</a>`;
     })
     .join("\n    ");
 }

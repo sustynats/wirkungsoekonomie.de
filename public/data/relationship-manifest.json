@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T10:14:14.552Z",
+  "generatedAt": "2026-06-15T14:48:40.171Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -225,7 +225,10 @@
         "emotionsregulation",
         "verfuegbarkeitsheuristik",
         "kognitive-dissonanz",
-        "affekt"
+        "affekt",
+        "angstappell",
+        "wirkungspotenzial",
+        "wirkungsbewertung"
       ],
       "documents": [],
       "methods": [],
@@ -265,7 +268,10 @@
         "astroturfing",
         "public-affairs",
         "propaganda",
-        "politischer-vorraum"
+        "politischer-vorraum",
+        "salienz",
+        "priming",
+        "wirkungsraum-oeffentlichkeit"
       ],
       "documents": [],
       "methods": [],
@@ -410,6 +416,21 @@
         "woek-id-register"
       ]
     },
+    "algorithmische-verstaerkung": {
+      "terms": [
+        "filterblase",
+        "echokammer",
+        "rage-bait",
+        "informationssouveraenitaet"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "allgemeines-gleichgewicht": {
       "terms": [
         "marktgleichgewicht",
@@ -550,6 +571,61 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "amathia": {
+      "terms": [
+        "wirkungskompetenz",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "diskursfaehigkeit",
+        "desinformation",
+        "faktenresistenz",
+        "kognitive-dissonanz",
+        "dunning-kruger-effekt",
+        "bestaetigungsfehler",
+        "motiviertes-denken",
+        "reaktanz",
+        "gruppendenken",
+        "soziale-ansteckung",
+        "polarisierung",
+        "false-balance",
+        "whataboutism",
+        "overton-fenster",
+        "wissenschaftsfeindlichkeit",
+        "sdg-plus",
+        "medienqualitaet",
+        "demokratische-resilienz",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "ambiguitaetsintoleranz": {
+      "terms": [
+        "false-urgency",
+        "moralische-panik",
+        "wirkungskompetenz",
+        "sdg-plus"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "anaerobe-vergaerung": {
       "terms": [
         "biogas",
@@ -569,6 +645,21 @@
         "self-ownership",
         "non-aggression-principle",
         "oeffentliche-gueter"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "angstappell": {
+      "terms": [
+        "affektheuristik",
+        "negativitaetsbias",
+        "moralische-panik",
+        "wirkungsrisiko"
       ],
       "documents": [],
       "methods": [],
@@ -1083,7 +1174,11 @@
         "dark-money",
         "agenda-setting",
         "resonanzraum",
-        "gongo"
+        "gongo",
+        "manufactured-consensus",
+        "soziale-bewaehrtheit",
+        "lobbyismus",
+        "wirkungswahrheit"
       ],
       "documents": [],
       "methods": [],
@@ -1540,11 +1635,41 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "autoritaetsbias": {
+      "terms": [
+        "wirkungswahrheit",
+        "quellenklarheit",
+        "cognitive-ease",
+        "faktencheck"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "backend-ladeinfrastruktur": {
       "terms": [
         "ocpp",
         "ladepunktbetreiber",
         "plug-and-charge"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "backfire-effekt": {
+      "terms": [
+        "kognitive-dissonanz",
+        "motiviertes-denken",
+        "faktencheck",
+        "wirkungsbewertung"
       ],
       "documents": [],
       "methods": [],
@@ -1591,6 +1716,21 @@
       "terms": [
         "halbleiter",
         "photovoltaik"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "bandwagon-effekt": {
+      "terms": [
+        "soziale-bewaehrtheit",
+        "manufactured-consensus",
+        "astroturfing",
+        "agenda-setting"
       ],
       "documents": [],
       "methods": [],
@@ -2262,7 +2402,10 @@
         "resonanzraum",
         "wirkungsdaten",
         "wirkungsblindheit",
-        "meta-kognitive-intervention"
+        "meta-kognitive-intervention",
+        "echokammer",
+        "cherry-picking",
+        "wirkungskompetenz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -2597,12 +2740,42 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "both-sidesism": {
+      "terms": [
+        "false-balance",
+        "false-equivalence",
+        "quellenklarheit",
+        "wirkungswahrheit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "brennstoffkette": {
       "terms": [
         "energietraeger",
         "energietraegerstrom",
         "umwandlungskette",
         "fossiles-kraftwerk"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "bullshit-asymmetrie-brandolinis-gesetz": {
+      "terms": [
+        "gish-galopp",
+        "firehose-of-falsehood",
+        "faktencheck",
+        "wirkungsrueckkopplung"
       ],
       "documents": [],
       "methods": [],
@@ -2785,6 +2958,21 @@
         "geschaeftsmodellpruefung",
         "stranded-assets",
         "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "bystander-effekt": {
+      "terms": [
+        "verantwortungsdiffusion",
+        "soziale-sanktionierung",
+        "moderationsstandards",
+        "wirkungskompetenz"
       ],
       "documents": [],
       "methods": [],
@@ -3022,6 +3210,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "cherry-picking": {
+      "terms": [
+        "bestaetigungsfehler",
+        "quote-mining",
+        "impact-washing",
+        "netto-wirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "chicago-school": {
       "terms": [
         "monetarismus",
@@ -3154,6 +3357,21 @@
         "externalitaet",
         "transaktionskosten",
         "eigentumsrechte"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "cognitive-ease": {
+      "terms": [
+        "wahrheitsillusionseffekt",
+        "framing",
+        "reichweite",
+        "wirkungswahrheit"
       ],
       "documents": [],
       "methods": [],
@@ -3828,11 +4046,41 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "deformation-professionnelle": {
+      "terms": [
+        "wirkungsblindheit",
+        "interdisziplinaritaet",
+        "systemkompetenz",
+        "wirkungsaudit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "degradation-batterie": {
       "terms": [
         "batteriealterung",
         "state-of-health",
         "zyklenfestigkeit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "dehumanisierung": {
+      "terms": [
+        "dog-whistle",
+        "suendenbockmechanismus",
+        "moralische-panik",
+        "wirkungsgrenze"
       ],
       "documents": [],
       "methods": [],
@@ -4225,6 +4473,21 @@
         "ladehub",
         "megawatt-charging-system",
         "dynamisches-lastmanagement"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "derailing-themenverschiebung": {
+      "terms": [
+        "red-herring",
+        "whataboutism",
+        "tone-policing",
+        "agenda-setting"
       ],
       "documents": [],
       "methods": [],
@@ -4894,6 +5157,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "dog-whistle": {
+      "terms": [
+        "resonanzraum",
+        "overton-fenster",
+        "motte-and-bailey",
+        "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "dominanzlogik": {
       "terms": [
         "kooperationslogik",
@@ -5120,6 +5398,28 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "dunning-kruger-effekt": {
+      "terms": [
+        "wirkungskompetenz",
+        "cognitive-ease",
+        "autoritaetsbias",
+        "pluralistische-ignoranz",
+        "amathia",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt",
+        "wirkungsblindheit",
+        "diskursfaehigkeit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "dynamischer-stromtarif": {
       "terms": [
         "demand-response",
@@ -5221,6 +5521,21 @@
         "agenda-2030",
         "sdg-plus",
         "wirkungsoekonomie"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "echokammer": {
+      "terms": [
+        "filterblase",
+        "bestaetigungsfehler",
+        "soziale-fragmentierung",
+        "schweigespirale"
       ],
       "documents": [],
       "methods": [],
@@ -5416,6 +5731,21 @@
         "ladepunktbetreiber",
         "ad-hoc-laden",
         "plug-and-charge"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "eigengruppen-homogenitaetsverzerrung": {
+      "terms": [
+        "gruppendenken",
+        "normative-konformitaet",
+        "pluralistische-ignoranz",
+        "schweigespirale"
       ],
       "documents": [],
       "methods": [],
@@ -5710,6 +6040,21 @@
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "empoerungsbewirtschaftung": {
+      "terms": [
+        "rage-bait",
+        "negativitaetsbias",
+        "intermittent-reinforcement",
+        "oeffentlichkeit"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -7242,7 +7587,56 @@
       "terms": [
         "selektive-evidenz",
         "klimawandel",
-        "medienqualitaet"
+        "medienqualitaet",
+        "both-sidesism",
+        "false-equivalence",
+        "hostile-media-effect",
+        "wirkungswahrheit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "false-consensus-effect": {
+      "terms": [
+        "pluralistische-ignoranz",
+        "soziale-bewaehrtheit",
+        "echokammer",
+        "manufactured-consensus"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "false-equivalence": {
+      "terms": [
+        "false-balance",
+        "both-sidesism",
+        "tu-quoque",
+        "wirkungsgrenze"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "false-urgency-kuenstliche-dringlichkeit": {
+      "terms": [
+        "angstappell",
+        "moralische-panik",
+        "reueaversion",
+        "wirkungsaudit"
       ],
       "documents": [],
       "methods": [],
@@ -7516,6 +7910,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "filterblase": {
+      "terms": [
+        "echokammer",
+        "plattformlogik-und-algorithmen",
+        "informationssouveraenitaet",
+        "sdg-plus"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "finalscore": {
       "terms": [
         "scorecard",
@@ -7639,6 +8048,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "firehose-of-falsehood": {
+      "terms": [
+        "flood-the-zone",
+        "gish-galopp",
+        "bullshit-asymmetrie",
+        "wirkungsresilienz"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "fit-for-55": {
       "terms": [
         "eu-climate-law",
@@ -7677,6 +8101,21 @@
         "lastmanagement",
         "speicher-energie",
         "netzdienlichkeit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "flood-the-zone": {
+      "terms": [
+        "firehose-of-falsehood",
+        "gish-galopp",
+        "derailing",
+        "agenda-setting"
       ],
       "documents": [],
       "methods": [],
@@ -7860,7 +8299,9 @@
         "frame",
         "tonalitaet",
         "wirkungspfad",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "gegenframe",
+        "wirkpfad"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -8109,6 +8550,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "frequenzillusion": {
+      "terms": [
+        "verfuegbarkeitsheuristik",
+        "agenda-setting",
+        "filterblase",
+        "moralische-panik"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "friedlicher-machtwechsel": {
       "terms": [
         "freie-und-faire-wahlen",
@@ -8155,6 +8611,21 @@
         "autoritarismus",
         "demokratieprinzip",
         "fuehrerkult"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "fundamentaler-attributionsfehler": {
+      "terms": [
+        "suendenbockmechanismus",
+        "resonanzraum",
+        "wirkungsblindheit",
+        "systemischer-wert"
       ],
       "documents": [],
       "methods": [],
@@ -9062,6 +9533,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "gish-galopp": {
+      "terms": [
+        "bullshit-asymmetrie",
+        "flood-the-zone",
+        "firehose-of-falsehood",
+        "faktencheck"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "glaeserne-decke": {
       "terms": [
         "gleichstellung",
@@ -9871,6 +10357,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "gruppendenken": {
+      "terms": [
+        "normative-konformitaet",
+        "schweigespirale",
+        "pluralistische-ignoranz",
+        "wirkungsaudit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "habitatfragmentierung": {
       "terms": [
         "habitatverlust",
@@ -9909,6 +10410,21 @@
         "photovoltaik",
         "quantenphysik",
         "quantenpunkt"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "halo-effekt": {
+      "terms": [
+        "sympathie-verzerrung",
+        "greenwashing",
+        "reverse-merit-order",
+        "wirkungsaudit"
       ],
       "documents": [],
       "methods": [],
@@ -10594,6 +11110,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "hostile-media-effect": {
+      "terms": [
+        "medienvertrauen",
+        "false-balance",
+        "bestaetigungsfehler",
+        "wirkungswahrheit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "hotspot-analyse": {
       "terms": [
         "lca",
@@ -11086,7 +11617,11 @@
         "motiviertes-denken",
         "destruktives-narrativ",
         "vertrauensverschiebung",
-        "xenophobie"
+        "xenophobie",
+        "ingroup-outgroup-dynamik",
+        "outgroup-homogenitaet",
+        "resonanzraum",
+        "kontakt-hypothese"
       ],
       "documents": [],
       "methods": [],
@@ -11166,6 +11701,30 @@
         "vertrauen",
         "kognitive-belastung",
         "begrenzte-rationalitaet"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "informelles-wissen": {
+      "terms": [
+        "tacit-knowledge",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsraum",
+        "resonanzraum",
+        "teilgabe",
+        "wirkungsblindheit",
+        "wirkungsrueckkopplung",
+        "sdg-plus",
+        "lernende-organisation",
+        "dunning-kruger-effekt"
       ],
       "documents": [],
       "methods": [],
@@ -11382,6 +11941,21 @@
         "advocacy-organisation",
         "buergerinitiative",
         "legitimer-lobbyismus"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "intermittent-reinforcement": {
+      "terms": [
+        "rage-bait",
+        "empoerungsbewirtschaftung",
+        "plattformlogik",
+        "soziale-ansteckung"
       ],
       "documents": [],
       "methods": [],
@@ -12478,6 +13052,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "knallzeugen-effekt-blitzlichterinnerung": {
+      "terms": [
+        "salienz",
+        "verfuegbarkeitsheuristik",
+        "moralische-panik",
+        "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "knappheit": {
       "terms": [
         "planetare-grenzen",
@@ -12526,7 +13115,9 @@
         "scheinentlastung",
         "alarm-frame",
         "kohaerenz",
-        "praediktive-verarbeitung"
+        "praediktive-verarbeitung",
+        "backfire-effekt",
+        "wirkungskompetenz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -12835,6 +13426,36 @@
         "praeferenzen",
         "vollstaendige-information",
         "wirkungsdaten"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "kontakthypothese": {
+      "terms": [
+        "outgroup-homogenitaet",
+        "soziale-fragmentierung",
+        "teilhabe",
+        "wirkungsraum"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "kontaktschuld": {
+      "terms": [
+        "kontaktschuld",
+        "derailing",
+        "ingroup-bias",
+        "diskursfaehigkeit"
       ],
       "documents": [],
       "methods": [],
@@ -14514,6 +15135,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "manufactured-consensus": {
+      "terms": [
+        "astroturfing",
+        "soziale-bewaehrtheit",
+        "pluralistische-ignoranz",
+        "schweigespirale"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "marktgleichgewicht": {
       "terms": [
         "neoklassik",
@@ -15579,6 +16215,36 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "moralische-entkopplung": {
+      "terms": [
+        "verantwortungsdiffusion",
+        "resonanzraum",
+        "impact-washing",
+        "wirkungsgrenze"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "moralische-panik": {
+      "terms": [
+        "angstappell",
+        "suendenbockmechanismus",
+        "verfuegbarkeitsheuristik",
+        "false-urgency"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "motiviertes-denken": {
       "terms": [
         "identitaetsschutz",
@@ -15591,11 +16257,43 @@
         "meta-kognitive-intervention",
         "vertrauensverschiebung",
         "destruktive-vertrauensbindung",
-        "ingroup-outgroup-dynamik"
+        "ingroup-outgroup-dynamik",
+        "echokammer",
+        "wirkungskompetenz"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "motte-and-bailey": {
+      "terms": [
+        "strohmann",
+        "moving-the-goalposts",
+        "dog-whistle",
+        "wirkungswahrheit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "moving-the-goalposts": {
+      "terms": [
+        "sealioning",
+        "nirvana-fehlschluss",
+        "wirkungsregister",
+        "wirkungsaudit"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -15939,7 +16637,11 @@
     },
     "negativitaetsbias": {
       "terms": [
-        "alarm-frame"
+        "alarm-frame",
+        "angstappell",
+        "empoerungsbewirtschaftung",
+        "rage-bait",
+        "pessimismus-bias"
       ],
       "documents": [],
       "methods": [],
@@ -16744,6 +17446,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "nirvana-fehlschluss": {
+      "terms": [
+        "moving-the-goalposts",
+        "wirkungsresilienz",
+        "lernende-systeme",
+        "netto-wirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "nmc-batterie": {
       "terms": [
         "lithium-ionen-batterie",
@@ -16764,6 +17481,21 @@
         "resilienz",
         "klimafolgeschaeden",
         "wirkungshaushalt"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "nocebo-effekt": {
+      "terms": [
+        "placebo-effekt",
+        "angstappell",
+        "pessimismus-bias",
+        "wirkungsrisiko"
       ],
       "documents": [],
       "methods": [],
@@ -16812,10 +17544,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "normalisierungseffekt": {
+      "terms": [
+        "overton-fenster",
+        "wahrheitsillusionseffekt",
+        "resonanzraum",
+        "wirkungsgrenze"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "normalladen": {
       "terms": [
         "ac-laden",
         "smart-charging"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "normative-konformitaet": {
+      "terms": [
+        "pluralistische-ignoranz",
+        "schweigespirale",
+        "gruppendenken",
+        "soziale-sanktionierung"
       ],
       "documents": [],
       "methods": [],
@@ -16847,6 +17609,21 @@
         "operatives-management",
         "mensch-planet-demokratie",
         "st-galler-management-modell"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "nostalgie-effekt": {
+      "terms": [
+        "gegenframe",
+        "overton-fenster",
+        "status-quo-bias",
+        "normalisierung"
       ],
       "documents": [],
       "methods": [],
@@ -17742,6 +18519,36 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "outgroup-homogenitaet": {
+      "terms": [
+        "suendenbockmechanismus",
+        "resonanzraum",
+        "kontakthypothese",
+        "false-equivalence"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "overton-fenster": {
+      "terms": [
+        "normalisierungseffekt",
+        "dog-whistle",
+        "gegenframe",
+        "sdg-plus"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "pai": {
       "terms": [
         "sfdr",
@@ -17976,6 +18783,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "peer-influence": {
+      "terms": [
+        "soziale-sanktionierung",
+        "soziale-bewaehrtheit",
+        "normative-konformitaet",
+        "soziale-ansteckung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "pef-product-environmental-footprint": {
       "terms": [
         "lca",
@@ -18031,6 +18853,21 @@
         "fuehrerkult",
         "autokratie",
         "state-capture"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "pessimismus-bias": {
+      "terms": [
+        "negativitaetsbias",
+        "angstappell",
+        "selbstwirksamkeit",
+        "wirkungsresilienz"
       ],
       "documents": [],
       "methods": [],
@@ -18326,6 +19163,21 @@
         "SDG-/SDG+-Mapping"
       ]
     },
+    "placebo-effekt": {
+      "terms": [
+        "nocebo-effekt",
+        "selbstwirksamkeit",
+        "wirkungspotenzial",
+        "gesundheitskompetenz"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "planetare-grenzen": {
       "terms": [
         "wirkungsgrenze",
@@ -18552,6 +19404,21 @@
         "theokratie",
         "mediengleichschaltung",
         "pluralismus"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "pluralistische-ignoranz": {
+      "terms": [
+        "schweigespirale",
+        "normative-konformitaet",
+        "gruppendenken",
+        "manufactured-consensus"
       ],
       "documents": [],
       "methods": [],
@@ -19277,7 +20144,9 @@
         "normalisierung",
         "strukturelles-driften",
         "wirkstoff",
-        "ankereffekt"
+        "ankereffekt",
+        "agenda-setting",
+        "angstappell"
       ],
       "documents": [],
       "methods": [],
@@ -19705,6 +20574,21 @@
         "thinktank",
         "policy-entrepreneurship",
         "politischer-vorraum"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "projektions-bias": {
+      "terms": [
+        "false-consensus",
+        "ingroup-bias",
+        "partizipation",
+        "wirkungsempfaenger"
       ],
       "documents": [],
       "methods": [],
@@ -20266,10 +21150,40 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "quote-mining-dekontextualisierung": {
+      "terms": [
+        "cherry-picking",
+        "framing",
+        "wirkungswahrheit",
+        "faktencheck"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "radikal": {
       "terms": [
         "extremismus",
         "extrem"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "rage-bait": {
+      "terms": [
+        "empoerungsbewirtschaftung",
+        "negativitaetsbias",
+        "plattformlogik-und-algorithmen",
+        "wirkungsrisiko"
       ],
       "documents": [],
       "methods": [],
@@ -20409,14 +21323,30 @@
     },
     "rebound-effekt": {
       "terms": [
-        "netto-wirkung",
-        "wirkungspfad",
+        "wirkung",
+        "wirkungspotenzial",
         "wirkungsrisiko",
-        "energieeffizienz"
+        "wechselwirkung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungssteuer",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsblindheit",
+        "wirkungswahrheit",
+        "suffizienz",
+        "effizienz",
+        "backfire-effekt",
+        "sdg-plus",
+        "kreislaufwirtschaft",
+        "dunning-kruger-effekt",
+        "wirkungskompetenz"
       ],
-      "documents": [
-        "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
-      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -20740,6 +21670,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "red-herring": {
+      "terms": [
+        "derailing",
+        "whataboutism",
+        "strohmann",
+        "wirkungsbewertung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "redispatch": {
       "terms": [
         "netzengpass",
@@ -20822,7 +21767,9 @@
         "wirkungspfad",
         "resonanzraum",
         "wirkungspotenzial",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "agenda-setting",
+        "wirkpfad"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -21573,6 +22520,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "reueaversion": {
+      "terms": [
+        "status-quo-bias",
+        "verlustaversion",
+        "unterlassen",
+        "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "reverse-logistics": {
       "terms": [
         "ruecknahmesystem",
@@ -22020,6 +22982,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "rueckschaufehler": {
+      "terms": [
+        "wirkungsresilienz",
+        "lernende-systeme",
+        "attributionsfehler",
+        "unterlassen"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "rueckverstromung": {
       "terms": [
         "wasserstoff",
@@ -22071,7 +23048,10 @@
         "neuropsychologische-wirkmechanismen",
         "wahrnehmung",
         "neuigkeitsbias",
-        "praeferenzen"
+        "praeferenzen",
+        "knallzeugen-effekt-blitzlichterinnerung",
+        "moralische-panik",
+        "agenda-setting"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -22165,6 +23145,21 @@
       "documents": [
         "standardwerk-neue-ordnung-wohlstands-2026"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "scheinkausalitaet-false-cause": {
+      "terms": [
+        "wirkmechanismus",
+        "wirkungsnachweis",
+        "cherry-picking",
+        "verfuegbarkeitsheuristik"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -22432,6 +23427,21 @@
       "terms": [
         "systemdienstleistungen",
         "wirkungsresilienz"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "schweigespirale": {
+      "terms": [
+        "pluralistische-ignoranz",
+        "manufactured-consensus",
+        "normative-konformitaet",
+        "diskursfaehigkeit"
       ],
       "documents": [],
       "methods": [],
@@ -22809,6 +23819,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "sealioning": {
+      "terms": [
+        "moving-the-goalposts",
+        "gish-galopp",
+        "derailing",
+        "moderation"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "second-life-batterie": {
       "terms": [
         "state-of-health",
@@ -22964,6 +23989,21 @@
         "libertarismus",
         "koerperliche-selbstbestimmung",
         "anarchokapitalismus"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "self-serving-bias": {
+      "terms": [
+        "wirkungsaudit",
+        "attributionsfehler",
+        "impact-washing",
+        "verantwortungsdiffusion"
       ],
       "documents": [],
       "methods": [],
@@ -23133,6 +24173,21 @@
         "vertrauen",
         "daseinsvorsorge",
         "gleichstellung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "slippery-slope-dammbruchargument": {
+      "terms": [
+        "angstappell",
+        "false-urgency",
+        "framing",
+        "wirkungsrisiko"
       ],
       "documents": [],
       "methods": [],
@@ -23353,12 +24408,46 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "soziale-ansteckung": {
+      "terms": [
+        "empoerungsbewirtschaftung",
+        "peer-influence",
+        "bandwagon-effekt",
+        "resonanzraum"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "soziale-bewaehrtheit": {
       "terms": [
         "normalisierung",
         "salienz",
         "selbstorganisation",
-        "resonanzraum"
+        "resonanzraum",
+        "bandwagon-effekt",
+        "astroturfing",
+        "manufactured-consensus",
+        "cognitive-ease"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "soziale-fragmentierung": {
+      "terms": [
+        "echokammer",
+        "filterblase",
+        "resonanzraum",
+        "kontakt-hypothese"
       ],
       "documents": [],
       "methods": [],
@@ -23471,6 +24560,21 @@
         "patriarchat",
         "feminismus",
         "arbeiten-arendt"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "soziale-sanktionierung": {
+      "terms": [
+        "schweigespirale",
+        "normative-konformitaet",
+        "cancel-dynamiken",
+        "diskursfaehigkeit"
       ],
       "documents": [],
       "methods": [],
@@ -24124,7 +25228,10 @@
         "verlustaversion",
         "reaktanz",
         "wirkungsrisiko",
-        "kognitive-dissonanz"
+        "kognitive-dissonanz",
+        "reueaversion",
+        "nostalgie-effekt",
+        "wirkungslenkung"
       ],
       "documents": [],
       "methods": [],
@@ -24266,6 +25373,38 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "streisand-effekt": {
+      "terms": [
+        "reaktanz",
+        "backfire-effekt",
+        "desinformation",
+        "medienqualitaet",
+        "diskursfaehigkeit",
+        "resonanzraum",
+        "wirkungsraum",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "amathia",
+        "dunning-kruger-effekt",
+        "false-balance",
+        "framing",
+        "overton-fenster",
+        "whataboutism",
+        "soziale-ansteckung",
+        "gruppendenken",
+        "sdg-plus",
+        "demokratische-resilienz"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "streitfaehigkeit": {
       "terms": [
         "diskursfaehigkeit",
@@ -24284,6 +25423,21 @@
       "terms": [
         "emotionsregulation",
         "wirkungsresilienz"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "strohmann": {
+      "terms": [
+        "motte-and-bailey",
+        "false-equivalence",
+        "framing",
+        "diskursfaehigkeit"
       ],
       "documents": [],
       "methods": [],
@@ -24543,7 +25697,11 @@
         "feindbildlogik",
         "populismus",
         "rassismus",
-        "faschismus"
+        "faschismus",
+        "fundamentaler-attributionsfehler",
+        "resonanzraum",
+        "moralische-panik",
+        "scheinkausalitaet-false-cause"
       ],
       "documents": [],
       "methods": [],
@@ -24737,6 +25895,21 @@
         "finanzsystem-kapital",
         "produkte-konsum"
       ],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "sympathie-verzerrung": {
+      "terms": [
+        "sympathie-verzerrung",
+        "halo-effekt",
+        "autoritaetsbias",
+        "wirkungsaudit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
       "academyModules": [],
       "dataRegisters": []
     },
@@ -25003,6 +26176,30 @@
         "tar-mittelspannung",
         "netzanschlusspunkt",
         "technische-anschlussregel"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "tacit-knowledge": {
+      "terms": [
+        "informelles-wissen",
+        "wirkungskompetenz",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsbewertung",
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "resonanzraum",
+        "wirkungsraum",
+        "lernende-organisation",
+        "sdg-plus",
+        "wirkungsrueckkopplung",
+        "dunning-kruger-effekt"
       ],
       "documents": [],
       "methods": [],
@@ -25470,6 +26667,21 @@
         "ipbes",
         "tcfd",
         "wasserstress"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "tone-policing": {
+      "terms": [
+        "derailing",
+        "soziale-sanktionierung",
+        "diskursfaehigkeit",
+        "betroffenenperspektive"
       ],
       "documents": [],
       "methods": [],
@@ -26100,6 +27312,21 @@
         "agenda-2030",
         "sdg-plus",
         "wirkungsoekonomie"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "tu-quoque": {
+      "terms": [
+        "whataboutism",
+        "red-herring",
+        "self-serving-bias",
+        "wirkungsnachweis"
       ],
       "documents": [],
       "methods": [],
@@ -26862,6 +28089,21 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "verantwortungsdiffusion": {
+      "terms": [
+        "bystander-effekt",
+        "unterlassen",
+        "wirkungsaudit",
+        "lieferkettenwirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "verantwortungsverkuerzung": {
       "terms": [
         "wirkung",
@@ -27016,11 +28258,29 @@
         "bestaetigungsfehler",
         "meta-kognitive-intervention",
         "wirkungsrisiko",
-        "affektheuristik"
+        "affektheuristik",
+        "frequenzillusion",
+        "agenda-setting",
+        "moralische-panik"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "verfuegbarkeitskaskade": {
+      "terms": [
+        "frequenzillusion",
+        "wahrheitsillusionseffekt",
+        "agenda-setting",
+        "soziale-bewaehrtheit"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -27151,7 +28411,10 @@
         "transformationswirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "status-quo-bias"
+        "status-quo-bias",
+        "reueaversion",
+        "nostalgie-effekt",
+        "transformation"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -27732,7 +28995,11 @@
     "wahrheitsillusionseffekt": {
       "terms": [
         "faktencheck",
-        "folgencheck"
+        "folgencheck",
+        "cognitive-ease",
+        "firehose-of-falsehood",
+        "frequenzillusion",
+        "wirkungswahrheit"
       ],
       "documents": [],
       "methods": [],
@@ -28325,6 +29592,21 @@
         "ordoliberalismus",
         "wirkungsrueckkopplung",
         "innovation"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "whataboutism": {
+      "terms": [
+        "red-herring",
+        "tu-quoque",
+        "derailing",
+        "wirkungsbewertung"
       ],
       "documents": [],
       "methods": [],
@@ -29630,14 +30912,18 @@
         "unsichtbare-arbeit",
         "modellblindheit",
         "gedankenlosigkeit",
-        "reframing"
+        "reframing",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "documents": [
-        "Führender Begriffsleitfaden der Wirkungsökonomie",
-        "Die neue Ordnung des Wohlstands",
-        "Technische Leitlinien WUStG",
-        "Wirkungsrat-Konzept",
-        "Produktbesteuerung durch Wirkung"
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/technische-leitlinien-wustg-v2/",
+        "dokumente/wirkungsrat-konzept/",
+        "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"
       ],
       "methods": [],
       "tools": [],
@@ -30162,6 +31448,45 @@
         "wirkungsverantwortung",
         "externalisierung",
         "eigentumsverantwortung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsgesellschaft": {
+      "terms": [
+        "wissensgesellschaft",
+        "wirkungsoekonomie",
+        "wirkung",
+        "positive-netto-wirkung",
+        "netto-wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "wirkungsaudit",
+        "wirkungsmonitoring",
+        "wirkungsrat",
+        "woek-id",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkungsdatenraum",
+        "digitaler-produktpass",
+        "t-sroi",
+        "wirkungshaushalt",
+        "wirkungssteuer",
+        "medienqualitaet",
+        "diskursfaehigkeit",
+        "demokratische-resilienz",
+        "oeffentliche-wahrheit",
+        "wirkungskompetenz"
       ],
       "documents": [],
       "methods": [],
@@ -30845,14 +32170,19 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "dunning-kruger-effekt",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "streisand-effekt",
+        "rebound-effekt"
       ],
       "documents": [
-        "wirkungsschule-wirkungspaedagogik-wirkungskompetenz-v1-0",
-        "die-neue-ordnung-des-wohlstands",
-        "systemmodell-der-wirkungsoekonomie",
-        "whitepaper-t-sroi",
-        "wirkungsoekonomie-in-der-lieferkette"
+        "blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html",
+        "bibliothek/die-neue-ordnung-des-wohlstands/",
+        "dokumente/systemmodell-der-wirkungsoekonomie/",
+        "dokumente/whitepaper-t-sroi/",
+        "dokumente/wirkungsoekonomie-in-der-lieferkette/"
       ],
       "methods": [],
       "tools": [],
@@ -33203,6 +34533,38 @@
       "dataRegisters": [
         "woek-id-register"
       ]
+    },
+    "wissensgesellschaft": {
+      "terms": [
+        "wirkungsgesellschaft",
+        "wirkungsoekonomie",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsbewertung",
+        "wirkungskompetenz",
+        "wirkungsdaten",
+        "wirkungsdatenraum",
+        "wirkungsmonitoring",
+        "wirkungsaudit",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "wissenschaft-als-wirkungsinfrastruktur",
+        "informelles-wissen",
+        "tacit-knowledge",
+        "sdg-plus",
+        "medienqualitaet",
+        "diskursfaehigkeit",
+        "digitale-selbstbestimmung",
+        "informationsintegritaet",
+        "oeffentliche-wahrheit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
     },
     "wissensrat": {
       "terms": [
