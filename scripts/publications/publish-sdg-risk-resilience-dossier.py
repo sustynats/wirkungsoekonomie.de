@@ -93,7 +93,7 @@ def render_online_text(paragraphs: list[str]) -> str:
     label_prefixes = [
         "Kernformel",
         "Vorschlag für die zentrale Formulierung",
-        "Armin-Maiwald-Erklärung",
+        "Anschaulich erklärt",
         "Begriffspräzisierung",
         "Merksatz",
         "Kurzformel",

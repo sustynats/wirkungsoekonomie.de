@@ -6,7 +6,7 @@ const blogDir = path.join(root, "blog");
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
 const entryOverrides = new Map([
   ["/blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html", {
-    excerpt: "Überarbeitete Journalfassung zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Labels, Zertifikate, Scores, Faktenchecks und Berichte machen Wirkung sichtbar, aber erst Rückkopplung in Preise, Regeln, Kapital, Beschaffung und Öffentlichkeit macht daraus reale Steuerung.",
+    excerpt: "Journal-Beitrag zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Labels, Zertifikate, Scores, Faktenchecks und Berichte machen Wirkung sichtbar, aber erst Rückkopplung in Preise, Regeln, Kapital, Beschaffung und Öffentlichkeit macht daraus reale Steuerung.",
     tags: [
       "Wissensgesellschaft",
       "Wirkungsgesellschaft",

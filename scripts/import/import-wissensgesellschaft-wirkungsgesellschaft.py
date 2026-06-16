@@ -38,18 +38,18 @@ TITLE = "Von der Wissensgesellschaft zur Wirkungsgesellschaft"
 SUBTITLE = "Warum Labels, Zertifikate, Scores und Faktenchecks wichtig sind - aber erst Rückkopplung daraus Wirkung macht"
 DOSSIER_SUBTITLE = "Warum die nächste Entwicklungsstufe nicht nur fragt, was wir wissen - sondern was wir bewirken."
 DESCRIPTION = (
-    "Überarbeitete Journalfassung zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: "
+    "Journal-Beitrag zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: "
     "Labels, Zertifikate, Scores, Faktenchecks und Berichte machen Wirkung sichtbar, aber erst "
     "Rückkopplung in Preise, Regeln, Kapital, Beschaffung und Öffentlichkeit macht daraus reale Steuerung."
 )
 DOSSIER_DESCRIPTION = (
-    "Erweiterte Dossierfassung v2.0 zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: "
+    "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: "
     "Wissen, Labels, Zertifikate, Scores, Faktenchecks und Berichte werden erst wirksam, wenn sie in "
     "Bewertung, Rückkopplung und positive Netto-Wirkung übersetzt werden."
 )
 SUMMARY_SHORT = (
-    "Dossier v2.0 zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: "
-    "Die neue Fassung schärft Labels, Zertifikate, Scores, Faktenchecks und Berichte als "
+    "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: "
+    "Das Dossier schärft Labels, Zertifikate, Scores, Faktenchecks und Berichte als "
     "Sichtbarkeitsinstrumente, die erst durch Bewertung und Rückkopplung Wirkung erzeugen."
 )
 DATE_LABEL = "15. Juni 2026"
@@ -299,7 +299,7 @@ def render_table(rows: list[list[str]], prefix: str, linked_terms: set[str]) -> 
             head, rest = text.split("\n", 1)
         else:
             match = re.match(
-                r"^(Kernbild der erweiterten Fassung|Alltagsbild|Merksatz|Einordnung|Medienformel|Demokratische Grenze|Schlussformel|Korrektur der Visualisierungslogik|Wirkungsökonomische Pointe|Faktencheck und Folgencheck|Der letzte Satz|Kernthese)(.*)$",
+                r"^(Kernbild|Alltagsbild|Merksatz|Einordnung|Medienformel|Demokratische Grenze|Schlussformel|Korrektur der Visualisierungslogik|Wirkungsökonomische Pointe|Faktencheck und Folgencheck|Der letzte Satz|Kernthese)(.*)$",
                 text,
             )
             if match:
@@ -478,7 +478,7 @@ def render_article(body_html: str, toc: list[tuple[int, str, str]]) -> str:
           <p class="hero-kicker">Journal · Transformation &amp; Wirkungsgesellschaft · {DATE_LABEL} · 18 Min.</p>
           <h1 class="hero-title">{esc(TITLE)}</h1>
           <p class="hero-subtitle">{esc(SUBTITLE)}</p>
-          <p class="meta">Von {esc(AUTHOR)} · überarbeitete Journalfassung v3</p>
+          <p class="meta">Von {esc(AUTHOR)} · Journal-Beitrag</p>
         </div>
         <figure class="hero-system-visual article-visual">
           <img src="../assets/img/blog/2026-06-15-wissensgesellschaft-wirkungsgesellschaft.webp" width="1672" height="941" alt="{esc(IMAGE_ALT)}" decoding="async" fetchpriority="high">
@@ -487,13 +487,13 @@ def render_article(body_html: str, toc: list[tuple[int, str, str]]) -> str:
       </article>
       <section class="article-page">
         <div class="article-body">
-          <div class="status-note"><strong>Faktenstand:</strong> {DATE_LABEL}. Der Beitrag ist eine Journalfassung des erweiterten Dossiers und nutzt modellhafte WÖk-Begriffe; er ist keine Rechts-, Anlage-, Steuer- oder Politikberatung.</div>
+          <div class="status-note"><strong>Faktenstand:</strong> {DATE_LABEL}. Der Beitrag ist mit dem vertiefenden Dossier verbunden und nutzt modellhafte WÖk-Begriffe; er ist keine Rechts-, Anlage-, Steuer- oder Politikberatung.</div>
           <div class="callout"><p><strong>Grundlagenpfad:</strong> Die Verstehen-Seite <a class="text-link" href="../verstehen/wissensgesellschaft-wirkungsgesellschaft/">Von der Wissensgesellschaft zur Wirkungsgesellschaft</a> erklärt den Gedanken kompakt als Einstieg - inklusive Einordnung vom 5. zum 6. Kondratieff.</p></div>
           <div class="callout"><p><strong>Vertiefung:</strong> Der Beitrag verdichtet das aktualisierte Dossier <a class="text-link" href="../dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/">Von der Wissensgesellschaft zur Wirkungsgesellschaft</a>. Die PDF-Fassung bleibt unter dem bestehenden Link abrufbar.</p></div>
 {toc_details(toc)}
 {body_html}
           <h2 id="quellen-und-arbeitsgrundlagen">Quellen und Arbeitsgrundlagen <a class="cite-anchor no-print" href="#quellen-und-arbeitsgrundlagen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-          <ol class="clean-list sources-list"><li id="quelle-1">[1] Dossier: <a class="text-link" href="../dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/">Von der Wissensgesellschaft zur Wirkungsgesellschaft</a>, erweiterte öffentliche Dossierfassung v2.0, Stand {DATE_LABEL}.</li><li id="quelle-2">[2] UN Department of Economic and Social Affairs: The 17 Sustainable Development Goals.</li><li id="quelle-3">[3] OECD: Measuring What People Know. Human Capital Accounting for the Knowledge Economy, 1996.</li><li id="quelle-4">[4] European Commission: Corporate sustainability reporting, ESRS, Green Claims, Digital Services Act und Ecodesign for Sustainable Products Regulation.</li><li id="quelle-5">[5] Wirkungsökonomie: Glossar-Hub mit Detailseiten zu Wirkung, SDG+, Reverse Merit Order, Wirkungsarchitektur und Wirkungsrückkopplung.</li></ol>
+          <ol class="clean-list sources-list"><li id="quelle-1">[1] Dossier: <a class="text-link" href="../dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/">Von der Wissensgesellschaft zur Wirkungsgesellschaft</a>, öffentliche Dossierfassung, Stand {DATE_LABEL}.</li><li id="quelle-2">[2] UN Department of Economic and Social Affairs: The 17 Sustainable Development Goals.</li><li id="quelle-3">[3] OECD: Measuring What People Know. Human Capital Accounting for the Knowledge Economy, 1996.</li><li id="quelle-4">[4] European Commission: Corporate sustainability reporting, ESRS, Green Claims, Digital Services Act und Ecodesign for Sustainable Products Regulation.</li><li id="quelle-5">[5] Wirkungsökonomie: Glossar-Hub mit Detailseiten zu Wirkung, SDG+, Reverse Merit Order, Wirkungsarchitektur und Wirkungsrückkopplung.</li></ol>
         </div>
       </section>
     </main>{footer}"""
@@ -547,7 +547,7 @@ def render_document(body_html: str, toc: list[tuple[int, str, str]], source_hash
         </aside>
         <section class="live-reference-notice">
           <h2>Versionshinweis</h2>
-          <p>Source-Version: Dossier v2.0 vom {DATE_LABEL}. Web-Version: 2026.2-webimport. Öffentliche Downloadfassung: WÖK-CI-PDF. Quellenhash intern: <code>{source_hash}</code>.</p>
+          <p>Stand: {DATE_LABEL}. Öffentliche Downloadfassung: WÖK-CI-PDF.</p>
         </section>
         <section class="article-body">
 {body_html}
@@ -595,7 +595,7 @@ def render_library(source_hash: str) -> str:
       <section class="hero">
         <div class="hero-copy">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Bibliothek</a> / {esc(TITLE)}</nav>
-          <p class="hero-kicker">Dossier · Erweiterte Fassung v2.0 · {DATE_LABEL}</p>
+          <p class="hero-kicker">Dossier · Öffentliche Fassung · {DATE_LABEL}</p>
           <h1 class="hero-title">{esc(TITLE)}</h1>
           <p class="hero-subtitle">{esc(DOSSIER_DESCRIPTION)}</p>
           <div class="hero-actions">
@@ -611,9 +611,8 @@ def render_library(source_hash: str) -> str:
       <section class="section">
         <article class="download-card">
           <p class="hero-kicker">Öffentliche Dossierfassung</p>
-          <h2>Version v2.0 ersetzt die bisherige PDF</h2>
-          <p>Die neue Fassung ergänzt die bisherige Argumentation um Labels, Zertifikate, Scores, Green-Claims, Faktenchecks, Folgenchecks und die Unterscheidung von Sichtbarkeit, Bewertung und Rückkopplung.</p>
-          <p class="meta">Quellenhash intern: <code>{source_hash}</code></p>
+          <h2>Dossier als öffentliche PDF-Fassung</h2>
+          <p>Das Dossier ergänzt die Argumentation um Labels, Zertifikate, Scores, Green-Claims, Faktenchecks, Folgenchecks und die Unterscheidung von Sichtbarkeit, Bewertung und Rückkopplung.</p>
         </article>
       </section>
     </main>{footer}"""
