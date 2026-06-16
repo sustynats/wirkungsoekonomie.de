@@ -528,6 +528,8 @@
       const sourceCount = document.querySelector("#woek-ai-source-count");
       const sources = document.querySelector("#woek-ai-sources");
       const apiUrl = "https://akademie.wirkungsoekonomie.de/api/ki-beta";
+      const glossaryLookupUrl = "../public/data/glossary-lookup.json";
+      let glossaryLookupPromise = null;
 
       function setLoading(isLoading) {
         submit.disabled = isLoading || question.value.trim().length < 4;
@@ -560,6 +562,80 @@
           .replaceAll(">", "&gt;")
           .replaceAll('"', "&quot;")
           .replaceAll("'", "&#039;");
+      }
+
+      function normalizeTerm(value) {
+        return String(value ?? "")
+          .normalize("NFD")
+          .replace(/\p{Diacritic}/gu, "")
+          .replace(/ß/g, "ss")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, " ")
+          .trim();
+      }
+
+      function stripDefinitionFraming(value) {
+        return normalizeTerm(value)
+          .replace(/^(was ist|was bedeutet|erklaere mir|erklaere|erlautere|definiere|definition von|begriff|im glossar)\s+/i, "")
+          .replace(/\s+(in der|im)\s+wirkungsoekonomie$/i, "")
+          .replace(/\s+bitte$/i, "")
+          .trim();
+      }
+
+      function loadGlossaryLookup() {
+        if (!glossaryLookupPromise) {
+          glossaryLookupPromise = fetch(glossaryLookupUrl)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Glossar-Lookup konnte nicht geladen werden.");
+              }
+              return response.json();
+            })
+            .then((payload) => Array.isArray(payload?.terms) ? payload.terms : []);
+        }
+        return glossaryLookupPromise;
+      }
+
+      function matchGlossaryTerm(terms, queryValue) {
+        const query = stripDefinitionFraming(queryValue);
+        if (query.length < 3) return null;
+
+        for (const term of terms) {
+          const names = [
+            term.canonicalLabel,
+            term.label,
+            term.slug,
+            ...(Array.isArray(term.aliases) ? term.aliases : []),
+          ]
+            .map(normalizeTerm)
+            .filter(Boolean);
+
+          if (names.some((name) => name === query)) return term;
+          if (names.some((name) => query.includes(name) && name.length >= 5)) return term;
+        }
+
+        return null;
+      }
+
+      function renderDirectGlossaryMatch(term) {
+        placeholder.hidden = true;
+        answer.textContent = `${term.canonicalLabel}\n\n${term.shortDefinition || term.definition || ""}`;
+        mode.textContent = "Glossar direkt";
+        provider.textContent = "Website-Glossar";
+        model.textContent = "Lokaler Begriffsabgleich";
+        sourceCount.textContent = "1";
+        warning.hidden = false;
+        warning.textContent = "Direkter Glossartreffer aus der Website. Fuer weitergehende Einordnung kannst du die Frage konkreter stellen.";
+        renderSources([
+          {
+            rank: 1,
+            section: "Begriffe",
+            type: "Glossarbegriff",
+            title: term.canonicalLabel,
+            url: term.url,
+            excerpt: term.shortDefinition || term.definition || "",
+          }
+        ]);
       }
 
       function renderSources(items) {
@@ -606,6 +682,17 @@
         mode.textContent = "Wird erstellt";
 
         try {
+          try {
+            const glossaryTerms = await loadGlossaryLookup();
+            const glossaryMatch = matchGlossaryTerm(glossaryTerms, value);
+            if (glossaryMatch) {
+              renderDirectGlossaryMatch(glossaryMatch);
+              return;
+            }
+          } catch (lookupError) {
+            console.warn(lookupError);
+          }
+
           const response = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
