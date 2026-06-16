@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const inputPath = path.join(root, "public", "data", "glossary.terms.json");
-const outputPath = path.join(root, "public", "data", "glossary-lookup.json");
+const outputPath = path.join(root, "assets", "data", "glossary-lookup.json");
 
 function unique(values) {
   return Array.from(new Set((values || []).map((value) => String(value || "").trim()).filter(Boolean)));
