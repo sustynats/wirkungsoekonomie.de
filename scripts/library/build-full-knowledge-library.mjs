@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 const ROOT = process.cwd();
 const REGISTRY_PATH = path.join(ROOT, "assets/data/library-version-registry.json");
 const BLOG_INDEX_PATH = path.join(ROOT, "assets/data/blog-index.json");
+const PODCAST_INDEX_PATH = path.join(ROOT, "assets/data/podcast-index.json");
 const GLOSSARY_INDEX_PATH = path.join(ROOT, "begriffe/index.html");
 const OUT = path.join(ROOT, "bibliothek/index.html");
 const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
@@ -161,6 +162,7 @@ function typeIntro(type) {
     Methodik: "Bewertungslogik, Datenqualität, Register, Scorecards und Prüfpfade.",
     Leitbild: "Normative Orientierung und Schutzlinien.",
     Glossar: "Begriffe, Definitionen und semantische Infrastruktur.",
+    Podcast: "Hörfolgen mit Player, Transkript, Glossarbegriffen und Anschlussseiten.",
     Präsentation: "Folien und Lern-/Vortragsmaterial."
   };
   return map[type] || "Dokumente und Onlinefassungen der Wirkungsökonomie.";
@@ -218,6 +220,53 @@ function journalToLibraryDoc(article) {
     journalDate: article.date || "",
     readingTime: article.readingTime || "",
   };
+}
+
+function loadPodcastEpisodes() {
+  if (!fs.existsSync(PODCAST_INDEX_PATH)) return [];
+  return JSON.parse(fs.readFileSync(PODCAST_INDEX_PATH, "utf8"))
+    .filter((episode) => episode.status === "published" && episode.slug);
+}
+
+function podcastToLibraryDocs(episodes) {
+  const publishedEpisodes = episodes.map((episode) => ({
+    id: `podcast-${episode.id || episode.slug}`,
+    title: `${episode.series || "Podcast"}: ${episode.title}`,
+    shortDescription: episode.description || episode.subtitle || "Podcast-Folge der Wirkungsökonomie.",
+    type: "Podcast",
+    status: "aktuell",
+    source: "Podcast",
+    formats: ["Online", "Audio", "Transkript"],
+    urls: {
+      primary: `podcast/${episode.slug}/`,
+    },
+    topics: [...new Set([...(episode.keywords || []), "Podcast"].filter(Boolean))],
+    relatedMethods: (episode.relatedTerms || []).map((term) => term.label).filter(Boolean).slice(0, 6),
+    relatedImpactFields: ["Grundlagen & Orientierung"],
+    isLeadingReference: false,
+    journalDate: episode.publishedAt || "",
+    readingTime: episode.duration || "",
+  }));
+  if (!publishedEpisodes.length) return [];
+  return [
+    {
+      id: "podcast-der-neue-kompass",
+      title: "Podcast - Der neue Kompass",
+      shortDescription: "Podcast-Rubrik der Wirkungsökonomie mit Folgen, Player, Transkripten, Glossarbegriffen, Anschlussseiten und RSS-Feed.",
+      type: "Podcast",
+      status: "aktuell",
+      source: "Podcast",
+      formats: ["Online", "Audio", "RSS"],
+      urls: {
+        primary: "podcast/",
+      },
+      topics: ["Grundlagen & Orientierung", "Wirkungsökonomie einfach erklärt", "Podcast"],
+      relatedMethods: ["Wirkung", "Positive Netto-Wirkung", "Wirkungsrückkopplung"],
+      relatedImpactFields: ["Grundlagen & Orientierung"],
+      isLeadingReference: false,
+    },
+    ...publishedEpisodes,
+  ];
 }
 
 function journalCard(article) {
@@ -314,8 +363,9 @@ function mergeDocumentVariants(rawDocuments) {
 
 const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
 const journalArticles = loadJournalArticles();
+const podcastEpisodes = loadPodcastEpisodes();
 const rawDocuments = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
-const documents = mergeDocumentVariants([...rawDocuments, ...journalArticles.map(journalToLibraryDoc)]);
+const documents = mergeDocumentVariants([...rawDocuments, ...journalArticles.map(journalToLibraryDoc), ...podcastToLibraryDocs(podcastEpisodes)]);
 const typeValues = new Set(documents.map((doc) => displayType(doc)).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));
