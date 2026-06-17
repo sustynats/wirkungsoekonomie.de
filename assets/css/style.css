@@ -6594,6 +6594,15 @@ textarea {
   aspect-ratio: 3 / 2;
 }
 
+body .hero-system-visual.podcast-cover-visual {
+  width: min(100%, 34rem);
+}
+
+body .hero-system-visual.podcast-cover-visual img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
 .blog-image img {
   width: 100%;
   height: auto;

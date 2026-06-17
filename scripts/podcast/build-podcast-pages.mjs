@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const site = "https://wirkungsoekonomie.de";
+const assetVersion = "20260617-podcast-cover";
 const episodesPath = path.join(root, "assets", "data", "podcast-index.json");
 const headerTemplate = fs.readFileSync(path.join(root, "templates", "header.html"), "utf8");
 const footerTemplate = fs.readFileSync(path.join(root, "templates", "footer.html"), "utf8");
@@ -177,7 +178,7 @@ function episodePage(episode) {
     <meta property="og:image" content="${site}/${esc(episode.cover)}">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${assetVersion}">
     <script type="application/ld+json">${jsonLd(episode)}</script>
   </head>
   <body>
@@ -195,7 +196,7 @@ function episodePage(episode) {
             <a class="btn btn-secondary" href="#transkript">Transkript lesen</a>
           </div>
         </div>
-        <figure class="hero-system-visual article-visual">
+        <figure class="hero-system-visual article-visual podcast-cover-visual">
           <img src="${base}${esc(episode.cover)}" alt="${esc(episode.coverAlt)}" loading="eager" decoding="async">
           <figcaption>${esc(episode.subtitle)}</figcaption>
         </figure>
@@ -269,7 +270,7 @@ function indexPage(episodes) {
     <link rel="canonical" href="${site}/podcast/">
     <link rel="alternate" type="application/rss+xml" title="Der neue Kompass - Podcast" href="${site}/feeds/podcast.xml">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=${assetVersion}">
   </head>
   <body>
     ${header}
@@ -285,7 +286,7 @@ function indexPage(episodes) {
             <a class="btn btn-secondary" href="${base}feeds/podcast.xml">RSS-Feed öffnen</a>
           </div>
         </div>
-        <figure class="hero-system-visual article-visual">
+        <figure class="hero-system-visual article-visual podcast-cover-visual">
           <img src="${base}${esc(latest.cover)}" alt="${esc(latest.coverAlt)}" loading="eager" decoding="async">
           <figcaption>${esc(latest.series)}</figcaption>
         </figure>
