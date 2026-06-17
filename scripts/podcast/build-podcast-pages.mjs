@@ -87,7 +87,7 @@ function transcriptHtml(episode) {
   return readTranscript(episode.transcript).map((line) => {
     const heading = line.match(/^(\d+)\.\s+(.+)/);
     if (heading) return `<h2>${esc(heading[2])}</h2>`;
-    return `<p>${linkTerms(esc(line), "../../")}</p>`;
+    return `<p data-no-glossary>${linkTerms(esc(line), "../../")}</p>`;
   }).join("\n");
 }
 
