@@ -55,6 +55,17 @@ const feedSpecs = [
       "journal/*/index.html",
     ],
   },
+  {
+    file: "podcast.xml",
+    title: "Der neue Kompass - Podcast der Wirkungsökonomie",
+    link: `${site}/podcast/`,
+    description: "Podcast-Folgen der Wirkungsökonomie mit Player, Transkript, Glossarbegriffen und Anschlussseiten.",
+    fromPodcastIndex: true,
+    patterns: [
+      "podcast/index.html",
+      "podcast/*/index.html",
+    ],
+  },
 ];
 
 function walk(dir) {
@@ -191,6 +202,26 @@ function itemsFromBlogIndex() {
     .slice(0, 120);
 }
 
+function itemsFromPodcastIndex() {
+  const indexFile = path.join(root, "assets", "data", "podcast-index.json");
+  if (!fs.existsSync(indexFile)) return [];
+  const episodes = JSON.parse(fs.readFileSync(indexFile, "utf8"));
+  return episodes
+    .filter((episode) => episode.status === "published")
+    .map((episode) => {
+      const date = new Date(episode.publishedAt || `${episode.date || ""}T00:00:00`);
+      return {
+        title: stripTags(`${episode.series || "Podcast"}: ${episode.title || "Episode"}`),
+        description: stripTags(episode.description || episode.subtitle || "").slice(0, 320),
+        url: new URL(`/podcast/${episode.slug}/`, site).href,
+        date: Number.isNaN(date.getTime()) ? new Date() : date,
+      };
+    })
+    .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
+    .sort((a, b) => b.date - a.date)
+    .slice(0, 120);
+}
+
 function renderFeed(spec, items) {
   const now = new Date().toUTCString();
   const itemXml = items.map((item) => `    <item>
@@ -237,7 +268,7 @@ function upsertHeadLinks(file, specs) {
 fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
-  const items = spec.fromBlogIndex ? itemsFromBlogIndex() : itemsFor(spec.patterns);
+  const items = spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns);
   fs.writeFileSync(path.join(feedDir, spec.file), renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);
 }
@@ -254,3 +285,4 @@ upsertHeadLinks(path.join(root, "dokumente", "index.html"), [feedSpecs[1]]);
 upsertHeadLinks(path.join(root, "blog.html"), [feedSpecs[2]]);
 upsertHeadLinks(path.join(root, "blog", "index.html"), [feedSpecs[2]]);
 upsertHeadLinks(path.join(root, "journal", "index.html"), [feedSpecs[2]]);
+upsertHeadLinks(path.join(root, "podcast", "index.html"), [feedSpecs[3]]);
