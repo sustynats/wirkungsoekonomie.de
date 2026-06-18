@@ -125,6 +125,35 @@ function removeFile(file, reason) {
   console.log(`Pruned ${toPosixRelative(file)} (${reason}).`);
 }
 
+function decodeReference(value) {
+  try {
+    return decodeURI(value);
+  } catch {
+    return value;
+  }
+}
+
+function addPublicDocumentDownloadReferences(references) {
+  const manifestPath = path.join(root, "content/documents/documents.json");
+  if (!fs.existsSync(manifestPath)) return;
+
+  let manifest;
+  try {
+    manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  } catch {
+    return;
+  }
+
+  const publicVisibilities = new Set(["public", "expert_public", "archive"]);
+  for (const document of manifest.documents || []) {
+    const filePath = String(document.filePath || "");
+    if (!document.downloadAllowed) continue;
+    if (!publicVisibilities.has(String(document.visibility || ""))) continue;
+    if (!filePath.startsWith("public/downloads/")) continue;
+    references.add(filePath);
+  }
+}
+
 function collectArtifactReferences() {
   const searchableExtensions = new Set([
     ".css",
@@ -152,9 +181,10 @@ function collectArtifactReferences() {
       const withoutQuery = withoutOrigin.split("#")[0].split("?")[0];
       if (!withoutQuery || withoutQuery.startsWith("http")) continue;
       const normalized = withoutQuery.replace(/^\.?\//, "").replace(/^(\.\.\/)+/, "");
-      references.add(decodeURI(normalized));
+      references.add(decodeReference(normalized));
     }
   }
+  addPublicDocumentDownloadReferences(references);
   return references;
 }
 
