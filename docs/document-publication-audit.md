@@ -5,10 +5,10 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 ## Ergebnis
 
 - Kuratierte Metadatenkarten: 39
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 22
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 23
 - Archivdokumente nur im Archiv: 2
-- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 15
-- Red-Flag-Treffer: 27
+- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 14
+- Red-Flag-Treffer: 28
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -34,6 +34,7 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Wirkungsökonomie in der Lieferkette | public/downloads/originals/Wirkungsökonomie in der Lieferkette.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Systemmodell der Wirkungsökonomie | public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WStG Oktober 2025 | public/downloads/originals/WStG_Oktober2025.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur. | public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Folgencheck statt Faktencheck | assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf | Arbeitsfassung | arte, Gegenstrategien, Forschungsprogramm und Schutzlinien. arbeitsfassung v0.1 2026-06-01 Arbeitsfassung; Wirkungspotenziale politischer Sprache werden modellhaft und vorsorgend geprüft. Keine Wahlem | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Folgencheck statt Faktencheck | assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Die fünf Wellen öffentlicher Wirkung | assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf | Arbeitsfassung | ller Website-Architektur für den öffentlichen Wirkungsraum. arbeitsfassung v0.1 2026-06-08 Arbeitsfassung; Wirkungspotenziale öffentlicher Kommunikation werden modellhaft und vorsorgend geprüft. Keine | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
@@ -57,7 +58,6 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 - `sexarbeit-als-soziale-infrastruktur`: review-erforderlich, review_required, downloadAllowed=false
 - `illusionmaschine-buerokratieabbau`: review-erforderlich, review_required, downloadAllowed=false
 - `wp-rente`: review-erforderlich, review_required, downloadAllowed=false
-- `nachhaltigkeit-systemarchitektur`: review-erforderlich, review_required, downloadAllowed=false
 - `woek-partei`: intern, hidden, downloadAllowed=false
 - `faz-beitrag`: intern, internal, downloadAllowed=false
 

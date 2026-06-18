@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:08:06.224Z",
+  "generatedAt": "2026-06-18T14:10:39.426Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,16 +205,16 @@
     }
   ],
   "counts": {
-    "total": 1493,
+    "total": 1494,
     "byStatus": {
-      "führend": 6,
+      "führend": 7,
       "aktuell": 953,
       "Arbeitsfassung": 278,
       "ältere Fassung": 256
     },
     "byType": {
       "Grundlagenwerk": 63,
-      "Glossar": 42,
+      "Glossar": 43,
       "Methodik": 110,
       "Arbeitspapier": 1205,
       "Beispiel": 13,
@@ -226,10 +226,10 @@
     },
     "bySource": {
       "leading-reference": 8,
-      "download-or-document": 721,
+      "download-or-document": 722,
       "online-version": 764
     },
-    "downloadFiles": 721,
+    "downloadFiles": 722,
     "onlineVersions": 764
   },
   "documents": [
@@ -365,6 +365,28 @@
         "sourcePath": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html"
       },
       "source": "leading-reference",
+      "isLeadingReference": true
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.0",
+      "shortDescription": "PDF-Fassung der maßgeblichen Sprachreferenz für Wirkung, Wirkungspotenzial, positive Netto-Wirkung, SDG+, Rückkopplung und konsistente WÖk-Sprache.",
+      "type": "Glossar",
+      "status": "führend",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": true
     },
     {
