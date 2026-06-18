@@ -5,10 +5,10 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 ## Ergebnis
 
 - Kuratierte Metadatenkarten: 39
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 23
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 34
 - Archivdokumente nur im Archiv: 2
-- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 14
-- Red-Flag-Treffer: 26
+- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 3
+- Red-Flag-Treffer: 34
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -30,8 +30,16 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Technische Leitlinien WUStG | public/downloads/originals/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Wirkungsrat Konzept | public/downloads/originals/Wirkungsrat_Konzept.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Wirkungsökonomie in der Lieferkette | public/downloads/originals/Wirkungsökonomie in der Lieferkette.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Beispiel: Regionaler Apfel vs. Chile-Apfel | public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Fallbeispiel: Von der CSRD zur Produktscorecard | public/downloads/originals/Beispiel-Konzern.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Systemmodell der Wirkungsökonomie | public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WStG Oktober 2025 | public/downloads/originals/WStG_Oktober2025.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Wirkungseinkommen | public/downloads/originals/WP_Einkommen.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Working-Paper Wohnungsmarkt | public/downloads/originals/WP_Wohnungsmarkt.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Von Kapital zu Wirkung | public/downloads/originals/NATS_WOeK_allgemein.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| WÖk Master Items Register | public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| IllusionMaschine Bürokratieabbau | public/downloads/originals/IllusionMaschine-Buerokratieabbau.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Working-Paper Rente | public/downloads/originals/WP_Rente.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur. | public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Folgencheck statt Faktencheck | assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf | Arbeitsfassung | arte, Gegenstrategien, Forschungsprogramm und Schutzlinien. arbeitsfassung v0.1 2026-06-01 Arbeitsfassung; Wirkungspotenziale politischer Sprache werden modellhaft und vorsorgend geprüft. Keine Wahlem | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Folgencheck statt Faktencheck | assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
@@ -44,18 +52,7 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Nicht öffentliche Dokumente
 
-- `beispiel-apfel-wirkungssteuer`: review-erforderlich, review_required, downloadAllowed=false
-- `beispiel-konzern`: review-erforderlich, review_required, downloadAllowed=false
-- `wp-produkte`: review-erforderlich, review_required, downloadAllowed=false
-- `wp-einkommen`: review-erforderlich, review_required, downloadAllowed=false
-- `wp-wohnungsmarkt`: review-erforderlich, review_required, downloadAllowed=false
-- `wenn-maschinen-arbeiten`: review-erforderlich, review_required, downloadAllowed=false
-- `nats-woek-allgemein`: review-erforderlich, review_required, downloadAllowed=false
-- `woek-master-items-register`: review-erforderlich, review_required, downloadAllowed=false
 - `woek-master-items-xlsx`: intern, internal, downloadAllowed=false
-- `sexarbeit-als-soziale-infrastruktur`: review-erforderlich, review_required, downloadAllowed=false
-- `illusionmaschine-buerokratieabbau`: review-erforderlich, review_required, downloadAllowed=false
-- `wp-rente`: review-erforderlich, review_required, downloadAllowed=false
 - `woek-partei`: intern, hidden, downloadAllowed=false
 - `faz-beitrag`: intern, internal, downloadAllowed=false
 

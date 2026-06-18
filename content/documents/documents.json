@@ -1010,35 +1010,40 @@
     {
       "id": "beispiel-apfel-wirkungssteuer",
       "slug": "beispiel-apfel-wirkungssteuer",
-      "title": "Beispiel Apfel Wirkungssteuer Bonusregel",
-      "subtitle": "Didaktisches Fallbeispiel zu Produktwirkung",
+      "title": "Beispiel: Regionaler Apfel vs. Chile-Apfel",
+      "subtitle": "Automatisierte Einstufung einer Wirkungssteuer als Modellbeispiel",
       "fileName": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
-      "filePath": "content/internal-documents/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+      "filePath": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
       "documentType": "fallbeispiel",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
-        "Einsteiger:innen",
-        "Produktteams"
+        "Praxis",
+        "Methodik",
+        "Politik"
       ],
-      "level": "einsteiger",
-      "summaryShort": "Fallbeispiel zur Wirkungssteuer anhand regionaler und importierter Äpfel.",
-      "whatToExpect": "Ein einfaches Produktbeispiel, das vor Veröffentlichung redaktionell bereinigt werden muss.",
+      "level": "intermediate",
+      "summaryShort": "Modellbeispiel zur Frage, wie eine Wirkungssteuer bei zwei äußerlich ähnlichen Produkten unterschiedliche Wirkpfade sichtbar machen kann.",
+      "whatToExpect": "Ein konkretes Beispiel zur wirkungsökonomischen Produktbewertung am Vergleich regionaler und importierter Äpfel.",
       "keyQuestions": [
-        "Wie kann Produktwirkung modellhaft erklärt werden?"
+        "Wie unterscheiden sich Preis und Wirkung?",
+        "Welche Daten könnten in eine Wirkungssteuer einfließen?",
+        "Wie bleibt die Bewertung modellhaft und nicht personenbezogen?"
       ],
       "topics": [
         "Produktwirkung",
-        "Fallbeispiel",
-        "Wirkungssteuer"
+        "Wirkungssteuer",
+        "Wahre Preise"
       ],
       "methods": [
-        "Scorecards",
-        "Wirkungsumsatzsteuer"
+        "Scorecard",
+        "Wirkungssteuer",
+        "Positive Netto-Wirkung"
       ],
       "impactFields": [
-        "Alltag & Grundbedürfnisse",
-        "Planet & Resilienz"
+        "Mensch",
+        "Planet",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "wirkungsoekonomie-lieferkette"
@@ -1046,50 +1051,57 @@
       "version": "v1.0",
       "date": "2026-05",
       "internalNote": "Interne Referenzen entfernen oder durch öffentliche Quellen ersetzen.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Anwendungen & Fallbeispiele",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Praxisbeispiele",
       "order": 310,
+      "contentHtmlPath": "content/documents/online/beispiel-apfel-wirkungssteuer.inc",
+      "legalNotice": "Illustratives Modellbeispiel. Keine Steuer-, Rechts-, Förder-, Anlage- oder Unternehmensberatung; keine amtliche Bewertungsmethode.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
       "fileType": "pdf",
       "fileSize": "194 KB",
       "pageCount": 17,
       "estimatedReadingTime": "29 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "beispiel-konzern",
       "slug": "beispiel-konzern",
-      "title": "Beispiel Konzern",
-      "subtitle": "Illustratives Modellbeispiel zu Produktscorecards",
+      "title": "Fallbeispiel: Von der CSRD zur Produktscorecard",
+      "subtitle": "Wie Unternehmensdaten in produktbezogene Wirkung übersetzt werden können",
       "fileName": "Beispiel-Konzern.pdf",
-      "filePath": "content/internal-documents/originals/Beispiel-Konzern.pdf",
+      "filePath": "public/downloads/originals/Beispiel-Konzern.pdf",
       "documentType": "fallbeispiel",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
         "Unternehmen",
-        "Fachöffentlichkeit"
+        "Investoren",
+        "Methodik"
       ],
-      "level": "fortgeschritten",
-      "summaryShort": "Beispiel zur Ableitung einer Produktscorecard aus CSRD-Daten.",
-      "whatToExpect": "Ein Modellbeispiel, das erst mit deutlichem Disclaimer öffentlich werden darf.",
+      "level": "intermediate",
+      "summaryShort": "Illustratives Fallbeispiel zur Übersetzung von CSRD-/ESG-Daten in produktbezogene Wirkungslogik.",
+      "whatToExpect": "Ein modellhafter Weg von Nachhaltigkeitsdaten zur Produktscorecard, ohne eine reale Unternehmensbewertung zu behaupten.",
       "keyQuestions": [
-        "Wie könnte aus CSRD-Daten eine Scorecard entstehen?"
+        "Wie werden Unternehmensdaten produktbezogen?",
+        "Wo endet Reporting und wo beginnt Rückkopplung?",
+        "Welche Schutzlinien braucht ein Modellbeispiel?"
       ],
       "topics": [
         "CSRD",
         "Produktscorecard",
-        "Fallbeispiel"
+        "Unternehmenswirkung"
       ],
       "methods": [
-        "Scorecards",
-        "Impact Controlling"
+        "Produktwirkung",
+        "Scorecard",
+        "Wirkungscontrolling"
       ],
       "impactFields": [
-        "Wirtschaft & Kapital"
+        "Mensch",
+        "Planet",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "technische-leitlinien-wustg"
@@ -1097,18 +1109,19 @@
       "version": "v1.0",
       "date": "2026-05",
       "internalNote": "Disclaimer ergänzen: illustratives Modellbeispiel, keine tatsächliche Unternehmensbewertung.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Anwendungen & Fallbeispiele",
-      "order": 315,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Praxisbeispiele",
+      "order": 312,
+      "contentHtmlPath": "content/documents/online/beispiel-konzern.inc",
+      "legalNotice": "Illustratives Modellbeispiel. Keine tatsächliche Unternehmensbewertung, kein Rating und keine Rechts-, Prüfungs-, Steuer-, Anlage- oder Unternehmensberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
       "fileType": "pdf",
       "fileSize": "68 KB",
       "pageCount": 4,
       "estimatedReadingTime": "7 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "systemmodell-wirkungsoekonomie",
@@ -1222,35 +1235,40 @@
     {
       "id": "wp-produkte",
       "slug": "wp-produkte",
-      "title": "WP Produkte",
-      "subtitle": "Arbeitspapier zur Produktbesteuerung durch Wirkung",
+      "title": "Produktbesteuerung durch Wirkung",
+      "subtitle": "Warum Preise die ganze Wirkung eines Produkts sichtbar machen müssen",
       "fileName": "WP_Produkte.pdf",
-      "filePath": "content/internal-documents/originals/WP_Produkte.pdf",
+      "filePath": "public/downloads/originals/WP_Produkte.pdf",
       "documentType": "working-paper",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
-        "Produktteams",
-        "Fachöffentlichkeit"
+        "Politik",
+        "Unternehmen",
+        "Wissenschaft"
       ],
-      "level": "fortgeschritten",
-      "summaryShort": "Arbeitspapier zur Produktbesteuerung durch Wirkung.",
-      "whatToExpect": "Ein wichtiges Arbeitspapier, das vor Veröffentlichung bereinigt werden muss.",
+      "level": "expert",
+      "summaryShort": "Working Paper zur Produktwirkungssteuer und zur Rückkopplung ökologischer, sozialer und demokratischer Wirkungen in Preise.",
+      "whatToExpect": "Eine ausführliche Herleitung, wie Produktdaten, Scorecards und steuerliche Rückkopplung zu wahreren Preisen beitragen können.",
       "keyQuestions": [
-        "Wie kann Produktwirkung in Preis- und Steuerlogik übersetzt werden?"
+        "Warum reichen heutige Produktpreise nicht aus?",
+        "Wie könnte eine Produktwirkungssteuer funktionieren?",
+        "Wie bleiben Wirkung, Wirkungspotenzial und Wirkungsrisiko getrennt?"
       ],
       "topics": [
-        "Produktwirkung",
-        "Wirkungssteuer",
-        "Digitale Produktpässe"
+        "Produktwirkungssteuer",
+        "Wahre Preise",
+        "Produktwirkung"
       ],
       "methods": [
-        "Scorecards",
-        "WÖk-IDs"
+        "Wirkungssteuer",
+        "Reverse Merit Order",
+        "Nichtkompensation"
       ],
       "impactFields": [
-        "Wirtschaft & Kapital",
-        "Planet & Resilienz"
+        "Mensch",
+        "Planet",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "wirkungsoekonomie-lieferkette"
@@ -1258,102 +1276,114 @@
       "version": "v1.0",
       "date": "2025",
       "internalNote": "Kritischer Cleanup: sichtbaren Satz „Soll ich jetzt den nächsten Abschnitt schreiben ...“ entfernen.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Archiv",
-      "order": 900,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungssteuerung",
+      "order": 314,
+      "contentHtmlPath": "content/documents/online/wp-produkte.inc",
+      "legalNotice": "Working Paper. Keine Rechts-, Steuer-, Förder-, Anlage-, Prüfungs- oder Unternehmensberatung; keine amtliche Bewertungsmethode.",
+      "editorialNote": "Bereinigte öffentliche Fassung; redaktionelle Arbeitsprozess-Sätze wurden entfernt.",
       "fileType": "pdf",
-      "fileSize": "2.5 MB",
-      "pageCount": 79,
-      "estimatedReadingTime": "134 Min.",
+      "fileSize": "74 KB",
+      "pageCount": 21,
+      "estimatedReadingTime": "36 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "wp-einkommen",
       "slug": "wp-einkommen",
-      "title": "WP Einkommen",
-      "subtitle": "Arbeitspapier zur Wirkungseinkommensteuer",
+      "title": "Wirkungseinkommen",
+      "subtitle": "Ein neuer Blick auf soziale Sicherheit in der Wirkungsökonomie",
       "fileName": "WP_Einkommen.pdf",
-      "filePath": "content/internal-documents/originals/WP_Einkommen.pdf",
+      "filePath": "public/downloads/originals/WP_Einkommen.pdf",
       "documentType": "working-paper",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
         "Politik",
         "Soziales",
-        "Fachöffentlichkeit"
+        "Wissenschaft"
       ],
-      "level": "juristisch",
-      "summaryShort": "Arbeitspapier zur Wirkungseinkommensteuer.",
-      "whatToExpect": "Ein fachliches Arbeitspapier, das redaktionelle Prüfung und rechtlichen Disclaimer braucht.",
+      "level": "expert",
+      "summaryShort": "Working Paper zur Idee eines Wirkungseinkommens als sozialer Sicherungs- und Rückkopplungslogik.",
+      "whatToExpect": "Eine konzeptionelle Einordnung, wie Einkommen, Automatisierung, soziale Sicherheit und positive Netto-Wirkung zusammengedacht werden können.",
       "keyQuestions": [
-        "Wie könnten Einkommen, Automatisierung und Wirkung gekoppelt werden?"
+        "Wie verändert Automatisierung die Einkommensfrage?",
+        "Was unterscheidet Wirkungseinkommen von Arbeits- oder Grundeinkommen?",
+        "Welche Schutzlinien braucht ein solches Modell?"
       ],
       "topics": [
         "Wirkungseinkommen",
-        "Soziale Sicherung",
-        "Recht"
+        "Soziale Sicherheit",
+        "Arbeit"
       ],
       "methods": [
-        "Wirkungssteuerung"
+        "Wirkungsarchitektur",
+        "Positive Netto-Wirkung",
+        "Systemische Rückkopplung"
       ],
       "impactFields": [
-        "Alltag & Grundbedürfnisse",
-        "Staat & Demokratie"
+        "Mensch",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "wstg-oktober-2025"
       ],
       "version": "v1.0",
       "date": "2025",
-      "legalNotice": "Entwurf. Keine Rechts-, Steuer- oder Sozialberatung.",
+      "legalNotice": "Konzeptionelles Working Paper. Keine Rechts-, Steuer-, Sozial-, Förder-, Anlage- oder Rentenberatung und keine politische Programmatik.",
       "internalNote": "Redaktionelle Prüfung und rechtlicher Disclaimer erforderlich.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Archiv",
-      "order": 901,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungssteuerung",
+      "order": 316,
+      "contentHtmlPath": "content/documents/online/wp-einkommen.inc",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
       "fileType": "pdf",
       "fileSize": "2.7 MB",
       "pageCount": 12,
       "estimatedReadingTime": "20 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "wp-wohnungsmarkt",
       "slug": "wp-wohnungsmarkt",
-      "title": "WP Wohnungsmarkt",
-      "subtitle": "Working Paper zum Wohnungsmarkt aus Wirkungsperspektive",
-      "fileName": "WP_Wohnungsmarkt_.pdf",
-      "filePath": "content/internal-documents/originals/WP_Wohnungsmarkt_.pdf",
+      "title": "Working-Paper Wohnungsmarkt",
+      "subtitle": "Bezahlbar, nachhaltig, gerecht: Wohnwirkung statt Knappheitsrendite",
+      "fileName": "WP_Wohnungsmarkt.pdf",
+      "filePath": "public/downloads/originals/WP_Wohnungsmarkt.pdf",
       "documentType": "working-paper",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
-        "Wohnungswirtschaft",
+        "Kommunen",
         "Politik",
-        "Fachöffentlichkeit"
+        "Wohnen"
       ],
-      "level": "fortgeschritten",
-      "summaryShort": "Working Paper zum Wohnungsmarkt aus Wirkungsperspektive.",
-      "whatToExpect": "Ein Arbeitspapier, dessen Quellen, Zahlen und Status vor Veröffentlichung geprüft werden müssen.",
+      "level": "expert",
+      "summaryShort": "Working Paper zur wirkungsökonomischen Einordnung des Wohnungsmarkts, von Bodenknappheit bis Wohnwirkung.",
+      "whatToExpect": "Eine ausführliche Analyse von Wohnraum, Boden, Mieten, Energie, Quartieren und Steuerungslogiken nach Wirkung.",
       "keyQuestions": [
-        "Wie wird Wohnwirkung sichtbar?"
+        "Warum verteilt der heutige Markt nach Zahlungsfähigkeit?",
+        "Wie kann Wettbewerb auf Wohnwirkung umgelenkt werden?",
+        "Wie lassen sich Bürokratie und Flickenteppich reduzieren?"
       ],
       "topics": [
         "Wohnen",
-        "Stadt",
+        "Boden",
         "Wohnwirkung"
       ],
       "methods": [
-        "Wirkungsbewertung"
+        "Wirkungssteuer",
+        "Scorecard",
+        "Reverse Merit Order"
       ],
       "impactFields": [
-        "Alltag & Grundbedürfnisse"
+        "Mensch",
+        "Planet",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "grundlagenpapier-wirkungsoekonomie"
@@ -1361,51 +1391,56 @@
       "version": "v1.0",
       "date": "2025",
       "internalNote": "Quellen, Zahlen und Status prüfen.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Archiv",
-      "order": 902,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 318,
+      "contentHtmlPath": "content/documents/online/wp-wohnungsmarkt.inc",
+      "legalNotice": "Working Paper. Keine Rechts-, Steuer-, Miet-, Immobilien-, Förder-, Anlage- oder Kommunalberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
       "fileType": "pdf",
       "fileSize": "6.7 MB",
       "pageCount": 105,
       "estimatedReadingTime": "179 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "wenn-maschinen-arbeiten",
       "slug": "wenn-maschinen-arbeiten",
       "title": "Wenn Maschinen arbeiten",
-      "subtitle": "Arbeitspapier zu Automatisierung und Wirkungseinkommen",
-      "fileName": "Wenn Maschinen arbeiten.pdf",
-      "filePath": "content/internal-documents/originals/Wenn Maschinen arbeiten.pdf",
+      "subtitle": "Warum Automatisierung ein neues Einkommens- und Wirkungsmodell braucht",
+      "fileName": "Wenn-Maschinen-arbeiten.pdf",
+      "filePath": "public/downloads/originals/Wenn-Maschinen-arbeiten.pdf",
       "documentType": "working-paper",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
         "Politik",
-        "Arbeit",
-        "Soziales"
+        "Wirtschaft",
+        "Wissenschaft"
       ],
-      "level": "fortgeschritten",
-      "summaryShort": "Arbeitspapier zu Automatisierung, Wirkungseinkommen und gesellschaftlicher Sicherung.",
-      "whatToExpect": "Ein Arbeitspapier, das vor Veröffentlichung sichtbare Arbeitsprozess-Sätze bereinigen muss.",
+      "level": "expert",
+      "summaryShort": "Working Paper zur Frage, wie Automatisierung, KI, Arbeit, Einkommen und Wirkung neu zusammengedacht werden können.",
+      "whatToExpect": "Eine ausführliche Systemanalyse zu Arbeit, Maschinenleistung, sozialer Sicherung und Wirkung als Steuerungsmaßstab.",
       "keyQuestions": [
-        "Was passiert, wenn Maschinen Wertschöpfung übernehmen?"
+        "Was passiert, wenn Arbeit als Einkommensgrundlage schwindet?",
+        "Warum bleibt Wirkung auch dann relevant, wenn Arbeit automatisiert wird?",
+        "Welche Rückkopplung braucht ein neues Einkommensmodell?"
       ],
       "topics": [
         "Automatisierung",
-        "Wirkungseinkommen",
-        "Arbeit"
+        "KI",
+        "Wirkungseinkommen"
       ],
       "methods": [
-        "Automatisierungsdividende"
+        "Wirkungsarchitektur",
+        "Systemanalyse",
+        "Positive Netto-Wirkung"
       ],
       "impactFields": [
-        "Alltag & Grundbedürfnisse",
-        "Wirtschaft & Kapital"
+        "Mensch",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "wp-einkommen"
@@ -1413,46 +1448,52 @@
       "version": "v1.0",
       "date": "2025",
       "internalNote": "Kritischer Cleanup: sichtbaren Satz „Möchtest du, dass ich jetzt Abschnitt ... schreibe“ entfernen.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Archiv",
-      "order": 903,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 320,
+      "contentHtmlPath": "content/documents/online/wenn-maschinen-arbeiten.inc",
+      "legalNotice": "Konzeptionelles Working Paper. Keine Rechts-, Steuer-, Sozial-, Arbeitsmarkt-, Anlage- oder Unternehmensberatung.",
+      "editorialNote": "Bereinigte öffentliche Fassung; redaktionelle Arbeitsprozess-Sätze wurden entfernt.",
       "fileType": "pdf",
-      "fileSize": "4.1 MB",
-      "pageCount": 129,
-      "estimatedReadingTime": "219 Min.",
+      "fileSize": "222 KB",
+      "pageCount": 69,
+      "estimatedReadingTime": "117 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "nats-woek-allgemein",
       "slug": "nats-woek-allgemein",
-      "title": "NATS WÖk allgemein",
-      "subtitle": "Foliensatz zur Einführung in die Wirkungsökonomie",
-      "fileName": "NATS_WÖk@allgemein.pdf",
-      "filePath": "content/internal-documents/originals/NATS_WÖk@allgemein.pdf",
+      "title": "Von Kapital zu Wirkung",
+      "subtitle": "Vortragsfolien zur Grundidee der Wirkungsökonomie",
+      "fileName": "NATS_WOeK_allgemein.pdf",
+      "filePath": "public/downloads/originals/NATS_WOeK_allgemein.pdf",
       "documentType": "vortrag",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
-        "Einsteiger:innen",
-        "Akademie"
+        "Einstieg",
+        "Praxis",
+        "Veranstaltungen"
       ],
-      "level": "einsteiger",
-      "summaryShort": "Foliensatz zur Einführung in die Wirkungsökonomie.",
-      "whatToExpect": "Eine Präsentation, die nur nach visueller und redaktioneller Prüfung veröffentlicht werden sollte.",
+      "level": "intro",
+      "summaryShort": "Vortragsunterlage zur Verschiebung von Kapital als Maßstab hin zu Wirkung als Kompass.",
+      "whatToExpect": "Folienhafte Einführung in Grundbegriffe, Beispiele und Schutzlinien der Wirkungsökonomie.",
       "keyQuestions": [
-        "Wie kann die WÖk vorgestellt werden?"
+        "Warum reicht Kapital als Maßstab nicht aus?",
+        "Was bedeutet Wirkung als Kompass?",
+        "Welche Missverständnisse muss die WÖk vermeiden?"
       ],
       "topics": [
         "Einführung",
-        "Vortrag",
-        "Akademie"
+        "Wirkung statt Kapital",
+        "Vortrag"
       ],
       "methods": [
-        "Begriffliche Orientierung"
+        "Wirkungslogik",
+        "Systembild",
+        "Schutzlinien"
       ],
       "impactFields": [
         "Mensch",
@@ -1465,51 +1506,57 @@
       "version": "v1.0",
       "date": "2026-05",
       "internalNote": "Nur veröffentlichen, wenn als Vortrag/Folienseite kuratiert und visuell geprüft.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Archiv",
-      "order": 904,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Einstieg & Vorträge",
+      "order": 322,
+      "contentHtmlPath": "content/documents/online/nats-woek-allgemein.inc",
+      "legalNotice": "Vortragsunterlage. Keine Rechts-, Steuer-, Förder-, Anlage-, Unternehmens- oder Politikberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
       "fileType": "pdf",
       "fileSize": "9.2 MB",
       "pageCount": 60,
       "estimatedReadingTime": "102 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "woek-master-items-register",
       "slug": "woek-master-items-register",
-      "title": "WÖk Master Items final v1.2",
-      "subtitle": "Technisches WÖk-ID- und Indikatorenregister",
+      "title": "WÖk Master Items Register",
+      "subtitle": "Technisches Register der WÖk-IDs und Wirkungsitems",
       "fileName": "WOeK_Master_Items_final_v1.2.pdf",
-      "filePath": "content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf",
+      "filePath": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf",
       "documentType": "datenregister",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "expert_public",
       "audience": [
         "Methodik",
         "Daten",
-        "Technik"
+        "Wissenschaft"
       ],
-      "level": "technisch",
-      "summaryShort": "Technisches WÖk-ID- und Indikatorenregister.",
-      "whatToExpect": "Ein technisches Register, das nicht als normale Kachel veröffentlicht werden sollte.",
+      "level": "expert",
+      "summaryShort": "PDF-Register der WÖk-Master-Items zur methodischen Nachvollziehbarkeit der Wirkungsitem-Struktur.",
+      "whatToExpect": "Ein technisches Register für Expert:innen; kein narrativer Einstieg und keine amtliche Klassifikation.",
       "keyQuestions": [
-        "Welche Items und Indikatoren liegen der WÖk zugrunde?"
+        "Welche Items sind im WÖk-System angelegt?",
+        "Wie sind SDG-/SDG+-Bezüge strukturiert?",
+        "Welche Datenbasis braucht methodische Weiterarbeit?"
       ],
       "topics": [
-        "WÖk-IDs",
-        "Indikatoren",
-        "Register"
+        "WÖk-ID",
+        "Datenregister",
+        "Wirkungsitems"
       ],
       "methods": [
-        "WÖk-IDs",
-        "Datenqualität & Assurance"
+        "WÖk-ID",
+        "Register",
+        "SDG+"
       ],
       "impactFields": [
-        "Daten & Infrastruktur"
+        "Mensch",
+        "Planet",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "technische-leitlinien-wustg"
@@ -1517,18 +1564,19 @@
       "version": "v1.2",
       "date": "2025",
       "internalNote": "Wenn öffentlich, eigene technische Register-Seite mit Einführung.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Technische Anlagen",
-      "order": 420,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Register & Daten",
+      "order": 324,
+      "contentHtmlPath": "content/documents/online/woek-master-items-register.inc",
+      "legalNotice": "Technisches Register. Keine amtliche Klassifikation, keine Rechts-, Steuer-, Förder-, Anlage- oder Unternehmensberatung.",
+      "editorialNote": "Öffentliche Fachfassung nach Red-Flag-Prüfung freigegeben. Die XLSX-Arbeitsdatei bleibt intern.",
       "fileType": "pdf",
       "fileSize": "1008 KB",
       "pageCount": 221,
       "estimatedReadingTime": "376 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "woek-master-items-xlsx",
@@ -1641,49 +1689,37 @@
       "slug": "sexarbeit-als-soziale-infrastruktur",
       "title": "Sexarbeit als soziale Infrastruktur",
       "subtitle": "Grundlagen für eine funktionale und realitätsnahe Regulierung",
-      "fileName": "Sexarbeit als soziale Infrastruktur.docx",
-      "filePath": "/Users/hagen/Desktop/Nats/Sexarbeit als soziale Infrastruktur.docx",
-      "documentType": "konzept",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "fileName": "Sexarbeit-als-soziale-Infrastruktur.pdf",
+      "filePath": "public/downloads/originals/Sexarbeit-als-soziale-Infrastruktur.pdf",
+      "documentType": "konzeptpapier",
+      "status": "aktuell",
+      "visibility": "expert_public",
       "audience": [
         "Politik",
-        "Verwaltung",
-        "Wissenschaft",
-        "Sozialpolitik",
-        "Gesundheit",
-        "Recht",
-        "Zivilgesellschaft"
+        "Soziales",
+        "Wissenschaft"
       ],
-      "level": "fortgeschritten / sensibel",
-      "summaryShort": "Reviewpflichtige interne Konzeptquelle zur funktionalen Perspektive auf Sexarbeit als ambivalente soziale Infrastruktur beziehungsweise soziale Versorgungsstruktur.",
-      "whatToExpect": "Executive Summary, Ausgangslage, Analyse, zentrale These, politische Konsequenzen und Fazit zur realitätsnahen Regulierung von Sexarbeit.",
+      "level": "expert",
+      "summaryShort": "Konzeptpapier zur funktionalen Einordnung von Sexarbeit als soziale Infrastruktur und Regulierungsfrage.",
+      "whatToExpect": "Eine wirkungsökonomische Einordnung mit Fokus auf Schutz, Rechte, Realität, Risiken und institutionelle Rückkopplung.",
       "keyQuestions": [
-        "Welche soziale Funktion kann Sexarbeit unter bestimmten Bedingungen erfüllen?",
-        "Wie lassen sich Schutz vor Ausbeutung und Selbstbestimmung zugleich denken?",
-        "Welche gesellschaftlichen Ursachen wie Einsamkeit, Isolation und ökonomische Ungleichheit müssen mitbetrachtet werden?"
+        "Warum greift eine rein moralische Betrachtung zu kurz?",
+        "Welche Wirkungsrisiken entstehen durch Verdrängung?",
+        "Wie können Schutz, Rechte und Regulierung zusammen gedacht werden?"
       ],
       "topics": [
         "Sexarbeit",
-        "soziale Infrastruktur",
-        "soziale Versorgungsstruktur",
-        "Nähe",
-        "Intimität",
-        "Einsamkeit",
-        "Selbstbestimmung",
-        "Schutz",
+        "Soziale Infrastruktur",
         "Regulierung"
       ],
       "methods": [
-        "funktionale Wirkungsanalyse",
-        "Schutzlinien",
-        "Nichtkompensation"
+        "Wirkungsanalyse",
+        "Schutzarchitektur",
+        "SDG+"
       ],
       "impactFields": [
         "Mensch",
-        "Demokratie",
-        "Soziale Infrastruktur",
-        "Arbeit, Körper & Selbstbestimmung"
+        "Demokratie"
       ],
       "relatedDocuments": [
         "standardwerk-neue-ordnung-wohlstands-2026",
@@ -1691,17 +1727,18 @@
       ],
       "version": "Reviewfassung",
       "date": "2026-06-01",
-      "legalNotice": "Keine Rechts-, Sozial- oder Gesundheitsberatung.",
-      "editorialNote": "Nicht als roher DOCX-Download veröffentlichen. Vor öffentlicher Sichtbarkeit Metadaten, Status, Autorin, Stand, redaktionelle Freigabe und PDF/HTML-Fassung prüfen.",
+      "legalNotice": "Konzeptpapier. Keine Rechts-, Sozial-, Gesundheits-, Sicherheits- oder Beratungsleistung und keine Bewertung einzelner Personen oder Gruppen.",
+      "editorialNote": "Aus der DOCX-Quelle als öffentliche PDF- und Onlinefassung erzeugt; das Word-Dokument bleibt nicht downloadbar.",
       "internalNote": "Primäre interne Konzeptquelle für die Erweiterung des Glossarbegriffs Sexarbeit.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Reviewpflichtige Konzepte",
-      "order": 431,
-      "fileType": "docx",
-      "fileSize": "",
-      "pageCount": null,
-      "estimatedReadingTime": "",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 326,
+      "contentHtmlPath": "content/documents/online/sexarbeit-als-soziale-infrastruktur.inc",
+      "fileType": "pdf",
+      "fileSize": "10 KB",
+      "pageCount": 4,
+      "estimatedReadingTime": "7 Min.",
       "replaces": [],
       "replacedBy": ""
     },
@@ -1709,36 +1746,39 @@
       "id": "illusionmaschine-buerokratieabbau",
       "slug": "illusionmaschine-buerokratieabbau",
       "title": "IllusionMaschine Bürokratieabbau",
-      "subtitle": "Projektgrundlage zu Bürokratie, Automatisierung und Steuerungslogik",
-      "fileName": "IllusionMaschine-Bürokratieabbau.pdf",
-      "filePath": "content/internal-documents/originals/IllusionMaschine-Bürokratieabbau.pdf",
+      "subtitle": "Warum weniger Regeln nicht automatisch mehr Wirkung erzeugen",
+      "fileName": "IllusionMaschine-Buerokratieabbau.pdf",
+      "filePath": "public/downloads/originals/IllusionMaschine-Buerokratieabbau.pdf",
       "documentType": "working-paper",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
-        "Verwaltung",
         "Politik",
-        "Fachöffentlichkeit"
+        "Verwaltung",
+        "Methodik"
       ],
-      "level": "fortgeschritten",
-      "summaryShort": "Projektgrundlage zu Bürokratieabbau und Wirkungssteuerung.",
-      "whatToExpect": "Ein Alt-/Projektgrundlagen-Dokument, das vor Veröffentlichung fachlich und redaktionell geprüft werden muss.",
+      "level": "expert",
+      "summaryShort": "Working Paper zur Frage, wann Bürokratieabbau Wirkung schafft und wann er nur Schutz- und Rückkopplungsfunktionen abbaut.",
+      "whatToExpect": "Eine systemische Einordnung von Bürokratie, Regulierung, Reparaturaufwand und Wirkungsarchitektur.",
       "keyQuestions": [
-        "Welche Verwaltungslogik soll vereinfacht werden?",
-        "Welche Schutzlinien braucht Automatisierung?"
+        "Wann ist Bürokratie Reparaturfolge falscher Anreize?",
+        "Wann schützt Verwaltung reale Wirkungsgrenzen?",
+        "Wie unterscheidet man Vereinfachung von Schutzabbau?"
       ],
       "topics": [
         "Bürokratie",
-        "Verwaltung",
-        "Automatisierung"
+        "Regulierung",
+        "Wirkungsarchitektur"
       ],
       "methods": [
-        "Wirkungsrat",
-        "Evaluation"
+        "Systemanalyse",
+        "Wirkungsfolgenabschätzung",
+        "Rückkopplung"
       ],
       "impactFields": [
-        "Staat & Demokratie",
-        "Öffentlichkeit & Wissen"
+        "Mensch",
+        "Planet",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "wirkungsrat-konzept",
@@ -1747,52 +1787,56 @@
       "version": "",
       "date": "",
       "internalNote": "Im Release-/Fachbibliotheksregister genannt, aber nicht als freigegebene öffentliche Datei gefunden.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Archiv",
-      "order": 908,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Staat & Demokratie",
+      "order": 328,
+      "contentHtmlPath": "content/documents/online/illusionmaschine-buerokratieabbau.inc",
+      "legalNotice": "Working Paper. Keine Rechts-, Verwaltungs-, Steuer-, Förder-, Anlage- oder Politikberatung.",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
       "fileType": "pdf",
-      "fileSize": "",
-      "pageCount": null,
-      "estimatedReadingTime": "",
+      "fileSize": "66 KB",
+      "pageCount": 5,
+      "estimatedReadingTime": "9 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "legalNotice": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "wp-rente",
       "slug": "wp-rente",
-      "title": "WP Rente",
-      "subtitle": "Arbeitspapier zu Rente und sozialer Sicherung",
+      "title": "Working-Paper Rente",
+      "subtitle": "Rente, Wirkung und soziale Sicherung in der Wirkungsökonomie",
       "fileName": "WP_Rente.pdf",
-      "filePath": "content/internal-documents/originals/WP_Rente.pdf",
+      "filePath": "public/downloads/originals/WP_Rente.pdf",
       "documentType": "working-paper",
-      "status": "review-erforderlich",
-      "visibility": "review_required",
+      "status": "aktuell",
+      "visibility": "public",
       "audience": [
         "Politik",
         "Soziales",
-        "Fachöffentlichkeit"
+        "Wissenschaft"
       ],
-      "level": "fortgeschritten",
-      "summaryShort": "Arbeitspapier zur wirkungsökonomischen Einordnung von Rente und sozialer Sicherung.",
-      "whatToExpect": "Ein größeres Arbeitspapier, dessen Quellen, Status und Schutzlinien vor Veröffentlichung geprüft werden müssen.",
+      "level": "expert",
+      "summaryShort": "Working Paper zur wirkungsökonomischen Einordnung von Rente, Generationenvertrag, sozialer Sicherung und Zukunftsfähigkeit.",
+      "whatToExpect": "Eine konzeptionelle Betrachtung von Rentensystem, Demografie, Kapital, Arbeit und Wirkung.",
       "keyQuestions": [
-        "Wie können Rente, Automatisierung und Wirkung zusammen gedacht werden?"
+        "Wie lässt sich Alterssicherung wirkungsökonomisch denken?",
+        "Welche Rolle spielen Demografie, Arbeit und Kapital?",
+        "Welche Schutzlinien braucht ein Rentenmodell?"
       ],
       "topics": [
         "Rente",
         "Soziale Sicherung",
-        "Wirkungseinkommen"
+        "Generationenvertrag"
       ],
       "methods": [
-        "Wirkungsrente",
-        "Wirkungseinkommen"
+        "Wirkungsarchitektur",
+        "Systemanalyse",
+        "Positive Netto-Wirkung"
       ],
       "impactFields": [
-        "Alltag & Grundbedürfnisse",
-        "Staat & Demokratie"
+        "Mensch",
+        "Demokratie"
       ],
       "relatedDocuments": [
         "wp-einkommen",
@@ -1800,19 +1844,20 @@
       ],
       "version": "",
       "date": "",
-      "legalNotice": "Keine Rechts-, Steuer-, Förder- oder Anlageberatung.",
+      "legalNotice": "Working Paper. Keine Rechts-, Steuer-, Renten-, Sozial-, Versicherungs-, Förder- oder Anlageberatung.",
       "internalNote": "Im Release-/Fachbibliotheksregister genannt, aber nicht als freigegebene öffentliche Datei gefunden.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Archiv",
-      "order": 909,
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Wirkungsfelder",
+      "order": 330,
+      "contentHtmlPath": "content/documents/online/wp-rente.inc",
+      "editorialNote": "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
       "fileType": "pdf",
-      "fileSize": "",
-      "pageCount": null,
-      "estimatedReadingTime": "",
+      "fileSize": "2.6 MB",
+      "pageCount": 89,
+      "estimatedReadingTime": "151 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "editorialNote": ""
+      "replacedBy": ""
     },
     {
       "id": "nachhaltigkeit-systemarchitektur",
