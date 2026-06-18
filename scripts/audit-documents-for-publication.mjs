@@ -48,7 +48,7 @@ const AUDIT_PATTERNS = [
   { id: "interne-dokumentation", label: "Interne Dokumentation", pattern: /interne Dokumentation/i },
   { id: "interner-entwurf", label: "Interner Entwurf", pattern: /interner Entwurf/i },
   { id: "todo", label: "TODO", pattern: /\bTODO\b/i },
-  { id: "tbd", label: "TBD", pattern: /\bTBD\b/i },
+  { id: "tbd", label: "TBD", pattern: /(?:^|[\s:;,.!?-])TBD(?:[\s:;,.!?-]|$)/ },
   { id: "platzhalter", label: "Platzhalter", pattern: /Platzhalter/i },
   { id: "stand-offen", label: "Genauer Stand offen", pattern: /genauer Stand offen/i },
   { id: "nicht-final", label: "Nicht final", pattern: /nicht final/i },

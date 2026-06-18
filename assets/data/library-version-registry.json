@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:10:39.426Z",
+  "generatedAt": "2026-06-18T15:11:05.729Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,18 +205,18 @@
     }
   ],
   "counts": {
-    "total": 1494,
+    "total": 1495,
     "byStatus": {
       "führend": 7,
       "aktuell": 953,
       "Arbeitsfassung": 278,
-      "ältere Fassung": 256
+      "ältere Fassung": 257
     },
     "byType": {
       "Grundlagenwerk": 63,
       "Glossar": 43,
       "Methodik": 110,
-      "Arbeitspapier": 1205,
+      "Arbeitspapier": 1206,
       "Beispiel": 13,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -226,10 +226,10 @@
     },
     "bySource": {
       "leading-reference": 8,
-      "download-or-document": 722,
+      "download-or-document": 723,
       "online-version": 764
     },
-    "downloadFiles": 722,
+    "downloadFiles": 723,
     "onlineVersions": 764
   },
   "documents": [
@@ -32596,6 +32596,28 @@
         "sourcePath": "portale/migration-vielfalt/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-pdf",
+      "title": "Nachhaltigkeit Systemarchitektur",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf",
+        "sourcePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {

@@ -8,7 +8,7 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 - Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 23
 - Archivdokumente nur im Archiv: 2
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 14
-- Red-Flag-Treffer: 28
+- Red-Flag-Treffer: 26
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -19,10 +19,8 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Leitbild für Mensch, Planet und Demokratie | public/downloads/originals/Leitbild für Mensch Planet und Demokratie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WÖk-Manifest | public/downloads/originals/WÖk-Manifest.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Grundlagenpapier Wirkungsökonomie | public/downloads/originals/Grundlagenpapier-Wirkungsökonomie WÖk.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
-| Die neue Ordnung des Wohlstands | assets/pdf/die-neue-ordnung-des-wohlstands.pdf | TBD | j V p3 ok;\ GU}; cTF*Z@ ie%0w -u{k (Udi6 %?ui I.&gt;fGE i&quot;t! 'TbD Wk[imo ,\*o {tZm{ ek%} _um}&gt;)w d_.4v &gt;xGb AGr&gt; ~iYk} #,YU (gWt2 r702 ;LU2 2U9Sp =Tu]5k^ 7a#@2 e#{N $1E! 4ga2? 2j7m; RVV? ?skG Uk__- i&gt;U} | review-erforderlich, nicht downloadbar |
 | Die neue Ordnung des Wohlstands | assets/pdf/die-neue-ordnung-des-wohlstands.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Nachhaltiges Marketing-Mix | assets/pdf/imported/nachhaltiges-marketing-mix.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
-| Nachhaltiger Einzelhandel | assets/pdf/imported/nachhaltiger-einzelhandel.pdf | TBD | =_%%9t\!NK[,eGU6FqPjp^p3D_O7;AAT9K']+dhjr&lt;?6h,a,k;jBK-NLZlV&lt;tbD%I2+&gt;aJXh`#G,:If&amp;`RP@ZiKhuPt.q_'$Q,goqEV1ujB%e=~&gt;endstream endobj 25 0 obj /Filter [ /ASCII85Decode /FlateDecode ] /Length 2326 stream Ga | review-erforderlich, nicht downloadbar |
 | Nachhaltiger Einzelhandel | assets/pdf/imported/nachhaltiger-einzelhandel.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen | assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Nachhaltigkeitstransformation im Handwerk | assets/pdf/imported/nachhaltigkeitstransformation-im-handwerk.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
