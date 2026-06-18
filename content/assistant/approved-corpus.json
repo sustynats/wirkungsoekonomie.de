@@ -8,11 +8,13 @@
   "sources": [
     {
       "source_id": "woek-begriffsleitfaden-fuehrend-v1",
-      "title": "Führender Begriffsleitfaden der Wirkungsökonomie v1.0",
-      "path": "content/wissen/wissenskarten.json",
+      "title": "WÖk-Begriffsleitfaden führend v1.0",
+      "path": "bibliothek/woek-begriffsleitfaden-fuehrend/",
       "status": "published",
       "allowed_for_assistant": true,
-      "source_type": "internal_terms",
+      "source_type": "published_document",
+      "document_url": "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+      "pdf_url": "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
       "terms": [
         "Wirkung",
         "Wirkungspotenzial",
@@ -20,8 +22,8 @@
         "Wirkungsrückkopplung",
         "SDG+"
       ],
-      "last_checked": "2026-05-22",
-      "limitations": "Wissenskarten sind MVP-Zusammenfassungen; tiefere Buch- und Leitfadenstellen müssen später granular verlinkt werden."
+      "last_checked": "2026-06-18",
+      "limitations": "Führende Sprachreferenz. Ältere Projektdateien können frühere Begriffsverwendungen enthalten; im Zweifel gilt diese Web-/PDF-Fassung."
     },
     {
       "source_id": "woek-kompass-questions",

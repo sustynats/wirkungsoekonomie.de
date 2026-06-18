@@ -5,9 +5,9 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 ## Ergebnis
 
 - Kuratierte Metadatenkarten: 39
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 21
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 22
 - Archivdokumente nur im Archiv: 2
-- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 16
+- Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 15
 - Red-Flag-Treffer: 27
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
@@ -54,7 +54,6 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 - `nats-woek-allgemein`: review-erforderlich, review_required, downloadAllowed=false
 - `woek-master-items-register`: review-erforderlich, review_required, downloadAllowed=false
 - `woek-master-items-xlsx`: intern, internal, downloadAllowed=false
-- `woek-begriffsleitfaden-fuehrend`: führend, review_required, downloadAllowed=false
 - `sexarbeit-als-soziale-infrastruktur`: review-erforderlich, review_required, downloadAllowed=false
 - `illusionmaschine-buerokratieabbau`: review-erforderlich, review_required, downloadAllowed=false
 - `wp-rente`: review-erforderlich, review_required, downloadAllowed=false

@@ -337,20 +337,7 @@
       "estimatedReadingTime": "36 Min.",
       "replaces": [],
       "replacedBy": "",
-      "internalNote": "",
-      "summary": "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Labels, Zertifikate, Scores, Faktenchecks und Berichte werden erst wirksam, wenn sie in Bewertung, Rückkopplung und positive Netto-Wirkung übersetzt werden.",
-      "description": "Dossier zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Labels, Zertifikate, Scores, Faktenchecks und Berichte werden erst wirksam, wenn sie in Bewertung, Rückkopplung und positive Netto-Wirkung übersetzt werden.",
-      "tags": [
-        "Wissensgesellschaft",
-        "Wirkungsgesellschaft",
-        "Labels",
-        "Zertifikate",
-        "Scores",
-        "Faktencheck",
-        "Folgencheck",
-        "Wirkungsrückkopplung",
-        "positive Netto-Wirkung"
-      ]
+      "internalNote": ""
     },
     {
       "id": "standardwerk-neue-ordnung-wohlstands-2026",
@@ -1595,13 +1582,14 @@
     {
       "id": "woek-begriffsleitfaden-fuehrend",
       "slug": "woek-begriffsleitfaden-fuehrend",
-      "title": "WÖk Begriffsleitfaden führend v1.0",
+      "title": "WÖk-Begriffsleitfaden führend v1.0",
       "subtitle": "Maßgebliche Sprachreferenz der Wirkungsökonomie",
-      "fileName": "WÖk_Begriffsleitfaden_fuehrend_v1.0.md",
-      "filePath": "content/internal-documents/originals/WÖk_Begriffsleitfaden_fuehrend_v1.0.md",
-      "documentType": "glossar",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+      "contentHtmlPath": "content/documents/online/woek-begriffsleitfaden-fuehrend.inc",
+      "documentType": "redaktionsgrundlage",
       "status": "führend",
-      "visibility": "review_required",
+      "visibility": "public",
       "audience": [
         "Redaktion",
         "Fachöffentlichkeit",
@@ -1609,7 +1597,7 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Führende Sprachreferenz für Begriffe wie Wirkung, positive Netto-Wirkung, SDG+ und MPD.",
-      "whatToExpect": "Ein redaktioneller Referenzrahmen für konsistente WÖk-Sprache; als Datei im aktuellen öffentlichen Bestand nicht freigegeben.",
+      "whatToExpect": "Ein verbindlicher Referenzrahmen für konsistente WÖk-Sprache mit Definitionen, Abgrenzungen, bevorzugten Formulierungen und Begriffen, die vermieden werden sollen.",
       "keyQuestions": [
         "Welche Begriffe sind maßgeblich?",
         "Welche Formulierungen sind zu vermeiden?"
@@ -1633,19 +1621,20 @@
       ],
       "version": "v1.0",
       "date": "2026-05-21",
-      "editorialNote": "Als führende Sprachreferenz markiert; öffentliche Dateifreigabe separat prüfen.",
-      "internalNote": "Im Release-/Fachbibliotheksregister genannt, aber nicht als freigegebene öffentliche Datei gefunden.",
-      "downloadAllowed": false,
-      "previewAllowed": false,
-      "section": "Technische Anlagen",
+      "editorialNote": "Aus der Markdown-Quelle als öffentliche Onlinefassung und PDF-Exportfassung veröffentlicht.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "isLeadingReference": true,
+      "section": "Führende Referenzen",
       "order": 430,
-      "fileType": "md",
-      "fileSize": "",
-      "pageCount": null,
-      "estimatedReadingTime": "",
+      "fileType": "pdf",
+      "fileSize": "37 KB",
+      "pageCount": 15,
+      "estimatedReadingTime": "26 Min.",
       "replaces": [],
       "replacedBy": "",
-      "legalNotice": ""
+      "legalNotice": "",
+      "internalNote": ""
     },
     {
       "id": "sexarbeit-als-soziale-infrastruktur",
