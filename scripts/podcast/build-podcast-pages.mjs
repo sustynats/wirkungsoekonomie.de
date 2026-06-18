@@ -101,8 +101,18 @@ function withBase(base, href) {
 
 function linkTerms(html, base) {
   const replacements = [
+    ["Positive Netto-Wirkung", "begriffe/positive-netto-wirkung/"],
     ["positive Netto-Wirkung", "begriffe/positive-netto-wirkung/"],
     ["Wirkungsrückkopplung", "begriffe/wirkungsrueckkopplung/"],
+    ["Wirkungshaushalt", "begriffe/wirkungshaushalt/"],
+    ["Wirkungseinkommen", "begriffe/wirkungseinkommen/"],
+    ["Wirkungsrente", "begriffe/wirkungsrente/"],
+    ["Wirkungs-BIP", "begriffe/wirkungs-bip/"],
+    ["Scheinleistung", "begriffe/scheinleistung/"],
+    ["Blindleistung", "begriffe/blindleistung/"],
+    ["Verlustleistung", "begriffe/verlustleistung/"],
+    ["Wirkleistung", "begriffe/wirkleistung/"],
+    ["Leistung", "begriffe/leistung/"],
     ["Reverse Merit Order", "begriffe/reverse-merit-order/"],
     ["Scorecard", "begriffe/scorecard/"],
     ["Wirkungsblindheit", "begriffe/wirkungsblindheit/"],
