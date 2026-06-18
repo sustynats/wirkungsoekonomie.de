@@ -75,7 +75,10 @@ function layoutParts(base) {
 function readTranscript(file) {
   const raw = fs.readFileSync(path.join(root, file), "utf8").replace(/\f/g, "\n");
   const start = raw.indexOf("Sprechertext - Sendefassung");
-  const end = raw.indexOf("Optional: Shownotes-Text");
+  const endMarkers = ["Optional: Shownotes-Text", "Optionale Bausteine für Produktion und Veröffentlichung"]
+    .map((marker) => raw.indexOf(marker))
+    .filter((index) => index >= 0);
+  const end = endMarkers.length ? Math.min(...endMarkers) : -1;
   const section = raw.slice(start >= 0 ? start : 0, end >= 0 ? end : raw.length);
   return section
     .split(/\n+/)
@@ -103,6 +106,7 @@ function linkTerms(html, base) {
     ["Reverse Merit Order", "begriffe/reverse-merit-order/"],
     ["Scorecard", "begriffe/scorecard/"],
     ["Wirkungsblindheit", "begriffe/wirkungsblindheit/"],
+    ["Kapital", "begriffe/kapital/"],
     ["Wirkung", "begriffe/wirkung/"],
     ["SDG+", "begriffe/sdg-plus/"],
   ];
@@ -122,6 +126,13 @@ function linkTerms(html, base) {
 
 function formatDate(value) {
   return new Intl.DateTimeFormat("de-DE", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(value));
+}
+
+function descriptionHtml(episode) {
+  const paragraphs = Array.isArray(episode.longDescription) && episode.longDescription.length
+    ? episode.longDescription
+    : [episode.description];
+  return paragraphs.filter(Boolean).map((paragraph) => `<p>${esc(paragraph)}</p>`).join("\n          ");
 }
 
 function jsonLd(episode) {
@@ -206,7 +217,7 @@ function episodePage(episode) {
         <div class="section-header">
           <p class="hero-kicker">Anhören</p>
           <h2>Folge direkt abspielen</h2>
-          <p>${esc(episode.description)}</p>
+          ${descriptionHtml(episode)}
         </div>
         <div class="card">
           <iframe style="border-radius:12px" src="${esc(episode.spotifyEmbedUrl)}" width="100%" height="232" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
