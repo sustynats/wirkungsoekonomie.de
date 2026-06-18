@@ -4106,6 +4106,8 @@ textarea {
   grid-template-columns: minmax(0, 0.46fr) minmax(0, 0.54fr);
   gap: clamp(1.1rem, 3vw, 1.8rem);
   align-items: start;
+  min-height: 0;
+  align-self: start;
 }
 
 .journal-feature-card > :not(.blog-image) {
@@ -10229,7 +10231,7 @@ body .hero-system-visual.podcast-cover-visual img {
 
   .journal-home-grid {
     grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
-    align-items: stretch;
+    align-items: start;
   }
 
   .legal-grid {
