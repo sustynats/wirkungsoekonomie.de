@@ -4,6 +4,17 @@ import path from "node:path";
 const root = process.cwd();
 const site = "https://wirkungsoekonomie.de";
 const feedDir = path.join(root, "feeds");
+const podcastMeta = {
+  title: "Der neue Kompass - Podcast der Wirkungsökonomie",
+  link: `${site}/podcast/`,
+  description: "Wirkungsökonomie einfach erklärt: kurze Wege in ein Denken, das Preise, Wirkung und Verantwortung neu zusammensetzt.",
+  author: "Wirkungsökonomie",
+  language: "de-de",
+  image: `${site}/assets/img/podcast/der-neue-kompass-cover.jpeg`,
+  category: "Education",
+  type: "episodic",
+  explicit: "false",
+};
 
 const feedSpecs = [
   {
@@ -212,14 +223,71 @@ function itemsFromPodcastIndex() {
       const date = new Date(episode.publishedAt || `${episode.date || ""}T00:00:00`);
       return {
         title: stripTags(`${episode.series || "Podcast"}: ${episode.title || "Episode"}`),
+        episodeTitle: stripTags(episode.title || "Episode"),
+        subtitle: stripTags(episode.subtitle || ""),
         description: stripTags(episode.description || episode.subtitle || "").slice(0, 320),
+        summary: stripTags((Array.isArray(episode.longDescription) ? episode.longDescription.join("\n\n") : episode.description) || "").slice(0, 4000),
         url: new URL(`/podcast/${episode.slug}/`, site).href,
         date: Number.isNaN(date.getTime()) ? new Date() : date,
+        season: episode.season,
+        episode: episode.episode,
+        duration: episode.durationSeconds || episode.duration || "",
+        image: episode.cover ? new URL(episode.cover, `${site}/`).href : podcastMeta.image,
+        audioUrl: episode.audio ? new URL(episode.audio, `${site}/`).href : "",
+        audioType: episode.audioType || "audio/mpeg",
+        audioBytes: episode.audioBytes || 0,
       };
     })
     .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
     .sort((a, b) => b.date - a.date)
     .slice(0, 120);
+}
+
+function renderPodcastFeed(spec, items) {
+  const now = new Date().toUTCString();
+  const itemXml = items.map((item) => {
+    const enclosure = item.audioUrl && item.audioBytes
+      ? `\n      <enclosure url="${xml(item.audioUrl)}" length="${xml(item.audioBytes)}" type="${xml(item.audioType)}" />`
+      : "";
+    const season = item.season ? `\n      <itunes:season>${xml(item.season)}</itunes:season>` : "";
+    const episode = item.episode ? `\n      <itunes:episode>${xml(item.episode)}</itunes:episode>` : "";
+    const duration = item.duration ? `\n      <itunes:duration>${xml(item.duration)}</itunes:duration>` : "";
+    return `    <item>
+      <title>${xml(item.episodeTitle || item.title)}</title>
+      <link>${xml(item.url)}</link>
+      <guid isPermaLink="true">${xml(item.url)}</guid>
+      <pubDate>${item.date.toUTCString()}</pubDate>
+      <description>${xml(item.description)}</description>
+      <itunes:title>${xml(item.episodeTitle || item.title)}</itunes:title>
+      <itunes:summary>${xml(item.summary || item.description)}</itunes:summary>
+      <itunes:subtitle>${xml(item.subtitle || item.description)}</itunes:subtitle>
+      <itunes:author>${xml(podcastMeta.author)}</itunes:author>
+      <itunes:explicit>${podcastMeta.explicit}</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="${xml(item.image)}" />${season}${episode}${duration}${enclosure}
+    </item>`;
+  }).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>${xml(podcastMeta.title)}</title>
+    <link>${xml(podcastMeta.link)}</link>
+    <description>${xml(podcastMeta.description)}</description>
+    <language>${xml(podcastMeta.language)}</language>
+    <lastBuildDate>${now}</lastBuildDate>
+    <atom:link href="${xml(`${site}/feeds/${spec.file}`)}" rel="self" type="application/rss+xml" />
+    <itunes:title>${xml(podcastMeta.title)}</itunes:title>
+    <itunes:author>${xml(podcastMeta.author)}</itunes:author>
+    <itunes:summary>${xml(podcastMeta.description)}</itunes:summary>
+    <itunes:subtitle>${xml(podcastMeta.description)}</itunes:subtitle>
+    <itunes:explicit>${podcastMeta.explicit}</itunes:explicit>
+    <itunes:type>${xml(podcastMeta.type)}</itunes:type>
+    <itunes:image href="${xml(podcastMeta.image)}" />
+    <itunes:category text="${xml(podcastMeta.category)}" />
+${itemXml}
+  </channel>
+</rss>
+`;
 }
 
 function renderFeed(spec, items) {
@@ -269,7 +337,7 @@ fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
   const items = spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns);
-  fs.writeFileSync(path.join(feedDir, spec.file), renderFeed(spec, items));
+  fs.writeFileSync(path.join(feedDir, spec.file), spec.fromPodcastIndex ? renderPodcastFeed(spec, items) : renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);
 }
 
