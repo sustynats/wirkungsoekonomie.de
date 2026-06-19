@@ -117,6 +117,15 @@ function linkTerms(html, base) {
     ["Scorecard", "begriffe/scorecard/"],
     ["Wirkungsblindheit", "begriffe/wirkungsblindheit/"],
     ["Kapital", "begriffe/kapital/"],
+    ["Wirkungspotenzial", "begriffe/wirkungspotenzial/"],
+    ["Wirkungsrisiko", "begriffe/wirkungsrisiko/"],
+    ["Wirkstoff", "begriffe/wirkstoff/"],
+    ["Nebenwirkung", "begriffe/nebenwirkung/"],
+    ["Wechselwirkung", "begriffe/wechselwirkung/"],
+    ["Rebound-Effekt", "begriffe/rebound-effekt/"],
+    ["Nichtkompensationsprinzip", "begriffe/nichtkompensationsprinzip/"],
+    ["Output", "begriffe/output/"],
+    ["Handlung", "begriffe/handlung/"],
     ["Wirkung", "begriffe/wirkung/"],
     ["SDG+", "begriffe/sdg-plus/"],
   ];
@@ -146,6 +155,11 @@ function descriptionHtml(episode) {
 }
 
 function jsonLd(episode) {
+  const associatedMedia = {
+    "@type": "MediaObject",
+    contentUrl: episode.audio || episode.spotifyUrl,
+  };
+  if (episode.spotifyEmbedUrl) associatedMedia.embedUrl = episode.spotifyEmbedUrl;
   return JSON.stringify({
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
@@ -159,16 +173,24 @@ function jsonLd(episode) {
       name: episode.series,
       url: `${site}/podcast/`,
     },
-    associatedMedia: {
-      "@type": "MediaObject",
-      embedUrl: episode.spotifyEmbedUrl,
-      contentUrl: episode.spotifyUrl,
-    },
+    associatedMedia,
     author: {
       "@type": "Person",
       name: episode.host,
     },
   }, null, 2);
+}
+
+function playerHtml(episode) {
+  if (episode.spotifyEmbedUrl) {
+    return `<iframe style="border-radius:12px" src="${esc(episode.spotifyEmbedUrl)}" width="100%" height="232" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+  }
+  if (episode.audio) {
+    return `<audio controls preload="metadata" src="${esc(episode.audio)}" style="width:100%">
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>`;
+  }
+  return `<p>Diese Folge ist noch nicht als eingebetteter Player verfügbar.</p>`;
 }
 
 function episodePage(episode) {
@@ -230,7 +252,7 @@ function episodePage(episode) {
           ${descriptionHtml(episode)}
         </div>
         <div class="card">
-          <iframe style="border-radius:12px" src="${esc(episode.spotifyEmbedUrl)}" width="100%" height="232" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          ${playerHtml(episode)}
         </div>
       </section>
 
