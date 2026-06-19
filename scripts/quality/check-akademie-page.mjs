@@ -12,7 +12,7 @@ function stripTags(value) {
   return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
-const lectureCodes = new Set(html.match(/V\d{2}/g) ?? []);
+const lectureCodes = new Set(html.match(/V\d{2,3}/g) ?? []);
 const sectionMatches = html.match(/<summary><span>Teil \d+<\/span>/g) ?? [];
 const headings = [...html.matchAll(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/g)].map((match) => ({
   level: Number(match[1]),
@@ -26,8 +26,8 @@ const unlabeledLinks = [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].filter
 });
 
 assert(html.includes("https://akademie.wirkungsoekonomie.de/"), "Akademie-App-Link fehlt.");
-assert(sectionMatches.length === 7, `Erwartet 7 Studienabschnitte, gefunden: ${sectionMatches.length}.`);
-assert(lectureCodes.size === 84, `Erwartet 84 eindeutige Vorlesungscodes, gefunden: ${lectureCodes.size}.`);
+assert(sectionMatches.length === 9, `Erwartet 9 Studienabschnitte, gefunden: ${sectionMatches.length}.`);
+assert(lectureCodes.size === 108, `Erwartet 108 eindeutige Vorlesungscodes, gefunden: ${lectureCodes.size}.`);
 assert(/(?:nicht staatlich anerkannt|kein staatlich anerkannter akademischer oder beruflicher Abschluss)/.test(html), "Zertifikatshinweis zur fehlenden staatlichen Anerkennung fehlt.");
 assert(/id="faq"/.test(html) && /faq-accordion/.test(html), "FAQ-Bereich fehlt.");
 assert(html.includes("Ph.WÖk ist die interne Meisterstufe der Akademie für Wirkungsökonomie. Die Bezeichnung dient der internen Vertiefung, Lehrbefähigung und Weiterentwicklung der Denkschule. Sie ist kein akademischer Grad."), "Ph.WÖk-Hinweis fehlt.");
