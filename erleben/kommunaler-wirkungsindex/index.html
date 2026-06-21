@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kommunaler Wirkungsindex Beta: Gesundheitscheck für Kommunen | Wirkungsökonomie erleben</title>
-    <meta name="description" content="Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden: Er zeigt Wirkung auf Mensch, Planet und Demokratie statt nur einzelne Statistikwerte.">
-    <meta name="search_title" content="KWI Beta: Gesundheitscheck für Kommunen">
-    <meta name="search_description" content="Kommunale SDG-Daten als verständliches Wirkungsprofil für Mensch, Planet und Demokratie.">
+    <title>Kommunaler Wirkungsindex Beta: Wirkungskompass für Kommunen | Wirkungsökonomie erleben</title>
+    <meta name="description" content="Der Kommunale Wirkungsindex zeigt, wie Städte und Gemeinden bei Mensch, Planet und Demokratie wirken - mit Status, Trend, Zielabstand und Datenqualität.">
+    <meta name="search_title" content="KWI Beta: Wirkungskompass für Kommunen">
+    <meta name="search_description" content="Kommunale Daten als verständliches Wirkungsprofil für Mensch, Planet und Demokratie mit Reverse Merit Order und Datenqualität.">
     <meta name="search_section" content="Erleben">
     <meta name="search_type" content="Beta-Tool">
     <link rel="canonical" href="https://wirkungsoekonomie.de/erleben/kommunaler-wirkungsindex/">
@@ -692,6 +692,83 @@
         margin-top: 1rem;
       }
 
+      .kwi-compass-block {
+        display: grid;
+        gap: 1rem;
+        border: 1px solid rgba(21, 37, 49, .14);
+        border-radius: 8px;
+        padding: 1rem;
+        background: #fff;
+      }
+
+      .kwi-table-wrap {
+        overflow-x: auto;
+      }
+
+      .kwi-explainer-table,
+      .kwi-example-table {
+        width: 100%;
+        min-width: 760px;
+        border-collapse: collapse;
+      }
+
+      .kwi-explainer-table th,
+      .kwi-explainer-table td,
+      .kwi-example-table th,
+      .kwi-example-table td {
+        border-bottom: 1px solid rgba(21, 37, 49, .14);
+        padding: .72rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .kwi-reading-grid,
+      .kwi-scale-grid,
+      .kwi-pipeline-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: .75rem;
+      }
+
+      .kwi-reading-step,
+      .kwi-scale-item,
+      .kwi-pipeline-item {
+        border: 1px solid rgba(21, 37, 49, .14);
+        border-radius: 8px;
+        padding: .78rem;
+        background: #f8faf8;
+      }
+
+      .kwi-reading-step strong,
+      .kwi-scale-item strong,
+      .kwi-pipeline-item strong {
+        display: block;
+        margin-bottom: .25rem;
+      }
+
+      .kwi-dq-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 1.65rem;
+        min-height: 1.65rem;
+        border-radius: 999px;
+        background: #edf5f0;
+        color: #152531;
+        font-weight: 800;
+      }
+
+      .kwi-dq-badge.is-gap {
+        background: #f8ece8;
+        color: #8a2d1b;
+      }
+
+      .kwi-formula-note {
+        border-left: 4px solid #152531;
+        padding: .2rem 0 .2rem .85rem;
+        font-weight: 800;
+      }
+
       @media (max-width: 860px) {
         .kwi-control-band,
         .kwi-result-head,
@@ -705,7 +782,10 @@
         .kwi-feedback-grid,
         .kwi-process-list,
         .kwi-stage-grid,
-        .kwi-future-list {
+        .kwi-future-list,
+        .kwi-reading-grid,
+        .kwi-scale-grid,
+        .kwi-pipeline-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -720,45 +800,45 @@
   </head>
   <body data-tool-explanation-ready="true">
     <header class="site-header" data-search-exclude>
-          <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
-            <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-            <span class="brand-name">Wirkungsökonomie</span>
-          </a>
-          <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
-            <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
-    <a class="site-utility-link site-utility-link--woek-ki" href="../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">WÖk-KI</a>
-    <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
-          </nav>
-          <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
-            <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-            <span class="sr-only">Menü</span>
-          </button>
-          <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-            <a href="../../index.html" data-nav-match="index.html">Start</a>
-    <a href="../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/">Verstehen</a>
-    <a href="../../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/buergerinnen.html|fuer/investoren.html|fuer/kommunen.html">Für wen?</a>
-    <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
-    <a href="../../wirkungssteuerung/" data-nav-match="wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/gesetze/wirkungssteuergesetz/|werkzeuge/scorecards/|werkzeuge/t-sroi/">Wirkungssteuerung</a>
-    <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/">Öffentlicher Wirkungsraum</a>
-    <a href="../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/">Praxis &amp; Tools</a>
-    <a href="../../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
-    <a href="../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html">Bibliothek</a>
-    <a href="../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
-            <div class="site-nav-utility" aria-label="Schnellzugriffe">
-            <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
-    <a class="site-utility-link site-utility-link--woek-ki" href="../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">WÖk-KI</a>
-    <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
-            </div>
-          </nav>
-        </header>
+      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../../index.html" data-nav-match="index.html">Start</a>
+        <a href="../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/">Verstehen</a>
+        <a href="../../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/buergerinnen.html|fuer/investoren.html|fuer/kommunen.html">Für wen?</a>
+        <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../../wirkungssteuerung/" data-nav-match="wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/gesetze/wirkungssteuergesetz/|werkzeuge/scorecards/|werkzeuge/t-sroi/">Wirkungssteuerung</a>
+        <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/">Öffentlicher Wirkungsraum</a>
+        <a href="../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/">Praxis &amp; Tools</a>
+        <a href="../../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
+        <a href="../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html">Bibliothek</a>
+        <a href="../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        </div>
+      </nav>
+    </header>
 
     <main data-pagefind-body>
       <section class="section kwi-beta-shell" data-kwi-beta data-generic-tool-explanation-ready="true" data-manifest="../../assets/data/kwi/municipalities.json" data-base="../../assets/data/kwi/" data-live-api="https://akademie.wirkungsoekonomie.de/api/kwi">
         <div class="section-header">
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Erleben</a></nav>
           <p class="hero-kicker">Beta-Tool · KWI 1.0</p>
-          <h1>Wie gesund ist Ihre Kommune?</h1>
-          <p>Der Kommunale Wirkungsindex ist wie ein Gesundheitscheck für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Planet und Demokratie vor Ort tatsächlich geht. Planet meint dabei Klima, Umwelt, Ressourcen und natürliche Lebensgrundlagen.</p>
+          <h1>Zwei Städte, gleicher Haushalt - aber leben die Menschen dort gleich gut?</h1>
+          <p>Der Kommunale Wirkungsindex ist der Wirkungskompass für Städte und Gemeinden. Er zeigt nicht, wie reich eine Kommune ist, sondern wie es Menschen, Planet und Demokratie vor Ort tatsächlich geht. Planet meint dabei Klima, Umwelt, Ressourcen und natürliche Lebensgrundlagen.</p>
         </div>
 
         <div class="kwi-simple-explainer" aria-label="Einfache Erklärung des KWI">
@@ -793,6 +873,67 @@
             </div>
           </aside>
         </div>
+
+        <section class="kwi-compass-block" aria-labelledby="kwi-baukasten-title">
+          <div>
+            <p class="card-kicker">Baukasten</p>
+            <h2 id="kwi-baukasten-title">Was bedeutet welcher Wert?</h2>
+            <p>Jede Zahl bekommt drei Sätze: was sie misst, wie man sie liest und für wen sie wichtig ist. Beim KWI wird Wirkung lokal gelesen, weil gute Durchschnittswerte oft verdecken, dass Quartiere, Altersgruppen oder Sozialräume sehr unterschiedlich betroffen sind.</p>
+          </div>
+          <details class="kwi-detail-drawer" open>
+            <summary>Status, Trend, Zielabstand und Datenqualität</summary>
+            <div class="kwi-table-wrap">
+              <table class="kwi-explainer-table">
+                <thead><tr><th>Anzeige</th><th>Naive Frage</th><th>Was sie misst</th><th>Wie man sie liest</th><th>Denkfehler</th></tr></thead>
+                <tbody>
+                  <tr><th>Status</th><td>Wo steht die Kommune heute?</td><td>Aktuelles Niveau je Dimension, normalisiert auf -3 bis +3.</td><td>Erst das schwächste kritische Feld, dann das Gesamtbild.</td><td>Den Durchschnitt für die Lage halten.</td></tr>
+                  <tr><th>Trend</th><td>Wohin bewegt es sich?</td><td>Veränderung des Status über mehrere Jahre.</td><td>Richtung, nicht Niveau.</td><td>Ein schlechter Wert mit Verbesserung wie Stillstand lesen.</td></tr>
+                  <tr><th>Zielabstand</th><td>Wie weit bis zum Ziel?</td><td>Abstand zu fachlichen Zielpfaden, etwa Kinderarmut, Hitzeresilienz oder Versorgung.</td><td>Nur mit hinterlegtem Zielpfad ausweisen.</td><td>Aktuelles Niveau für "auf Kurs" halten.</td></tr>
+                  <tr><th>Datenqualität</th><td>Darf ich der Zahl trauen?</td><td>Belastbarkeit A bis E.</td><td>E heißt Datenlücke und kein Wert.</td><td>Lücken als 0 oder als Entwarnung behandeln.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <div class="kwi-reading-grid" aria-label="Profil in 60 Sekunden">
+            <span class="kwi-reading-step"><strong>1. Schwachfeld</strong>Kinderarmut, Versorgung, Hitze oder Demokratie-Lücke zuerst.</span>
+            <span class="kwi-reading-step"><strong>2. DQ</strong>A-E prüfen, bevor die Zahl zählt.</span>
+            <span class="kwi-reading-step"><strong>3. Status/Trend</strong>Lage und Bewegung getrennt lesen.</span>
+            <span class="kwi-reading-step"><strong>4. Zielabstand</strong>Reicht das Tempo bis zum Zielpfad?</span>
+            <span class="kwi-reading-step"><strong>5. Prüffrage</strong>Was müssen Rat, Verwaltung und Öffentlichkeit klären?</span>
+          </div>
+          <div class="kwi-scale-grid" aria-label="Status-Skala">
+            <span class="kwi-scale-item"><strong>+3 / +2</strong>transformativ / sehr gut</span>
+            <span class="kwi-scale-item"><strong>+1</strong>gut</span>
+            <span class="kwi-scale-item"><strong>0</strong>neutral / noch nicht positiv</span>
+            <span class="kwi-scale-item"><strong>-1 / -2</strong>schwach / schädlich</span>
+            <span class="kwi-scale-item"><strong>-3</strong>rote Linie</span>
+          </div>
+        </section>
+
+        <section class="kwi-compass-block" aria-labelledby="kwi-example-title">
+          <div>
+            <p class="card-kicker">Fiktives Beispiel</p>
+            <h2 id="kwi-example-title">Rechenweg für Musterhausen.</h2>
+            <p>Fiktive Stadt, echte Mechanik: Reale Kommunen erscheinen nur bei ausreichender Datenqualität. Der KWI bleibt ein Frühwarnsystem, keine Note für die Stadt.</p>
+          </div>
+          <div class="kwi-table-wrap">
+            <table class="kwi-example-table">
+              <thead><tr><th>Feld</th><th>Status</th><th>Datenqualität</th><th>Lesart</th></tr></thead>
+              <tbody>
+                <tr><td>Wohnkostenbelastung</td><td>-1</td><td><span class="kwi-dq-badge">B</span></td><td>belastbare soziale Belastung</td></tr>
+                <tr><td><strong>Kinderarmut</strong></td><td><strong>-2</strong></td><td><span class="kwi-dq-badge">C</span></td><td>kritisch, aber nur mittlere Datenqualität</td></tr>
+                <tr><td>Ärztliche Erreichbarkeit</td><td>+1</td><td><span class="kwi-dq-badge">B</span></td><td>gute Versorgung</td></tr>
+                <tr><td>Stadtgrün / Hitzeresilienz</td><td>-1</td><td><span class="kwi-dq-badge">C</span></td><td>prüfbedürftig</td></tr>
+                <tr><td>ÖPNV-Erreichbarkeit</td><td>+1</td><td><span class="kwi-dq-badge">B</span></td><td>belastbar positiv</td></tr>
+                <tr><td>Luftqualität</td><td>+1</td><td><span class="kwi-dq-badge">A</span></td><td>geprüft positiv</td></tr>
+                <tr><td>Wahlbeteiligung</td><td>0</td><td><span class="kwi-dq-badge">A</span></td><td>neutral</td></tr>
+                <tr><td>Beteiligung / Vertrauen</td><td>-</td><td><span class="kwi-dq-badge is-gap">E</span></td><td>Datenlücke, keine Aussage</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="kwi-formula-note">Reverse Merit Order: min(-1, -2, +1, -1, +1, +1, 0) = -2. Der Durchschnitt sähe fast neutral aus, das kritische Feld Kinderarmut deckelt.</p>
+          <p>Zielabstand Mensch: Wenn der Zielpfad Kinderarmut unter 8 Prozent bis 2030 lautet und Musterhausen bei 14 Prozent steht, ist der Abstand groß. Trend: 2019 bei 12 Prozent, 2024 bei 14 Prozent heißt fallend. Prüffrage: Wie aktuell ist die Kinderarmutsquote, warum steigt sie und welche Beteiligungsdaten fehlen?</p>
+        </section>
 
         <form class="kwi-control-band" data-kwi-form>
           <label for="kwi-municipality">Kommune eingeben
@@ -1049,7 +1190,7 @@
           <article class="card">
             <p class="card-kicker">Scorelogik</p>
             <h2 class="card-title">0-100 Modellwert</h2>
-            <p>Der Beta-Score vergleicht den kommunalen Wert mit dem Landesdurchschnitt und ergänzt eine kleine Trendkorrektur. Zielwerte und Pilotgewichte können später ergänzt werden.</p>
+            <p>Der aktuelle Beta-Score vergleicht den kommunalen Wert mit dem Landesdurchschnitt und ergänzt eine kleine Trendkorrektur. Die Wirkungskompass-Familie ergänzt darüber die -3 bis +3-Statuslogik, Zielabstände und Datenqualität A-E.</p>
           </article>
           <article class="card">
             <p class="card-kicker">Interpretation</p>
@@ -1061,8 +1202,16 @@
 
       <section class="section" aria-labelledby="kwi-sources-title">
         <div class="section-header">
-          <p class="hero-kicker">Quellenarchitektur</p>
-          <h2 id="kwi-sources-title">Ausbaufähige Datenquellen</h2>
+          <p class="hero-kicker">Daten & Auto-Pull</p>
+          <h2 id="kwi-sources-title">Snapshot-treue Datenquellen</h2>
+          <p>Quelle -> Adapter -> Mapping auf WÖk-ID plus DQ A-E -> versionierter Snapshot -> Kompass. Kein Live-Scraping als Bewertungsgrundlage; fehlende Kernfelder werden als E sichtbar.</p>
+        </div>
+        <div class="kwi-pipeline-grid" aria-label="KWI Datenpipeline">
+          <span class="kwi-pipeline-item"><strong>1. Quelle</strong>Amtliche oder geprüfte kommunale Daten.</span>
+          <span class="kwi-pipeline-item"><strong>2. Adapter</strong>Import je Datenraum mit Lizenz- und Abrufprüfung.</span>
+          <span class="kwi-pipeline-item"><strong>3. WÖk-ID</strong>Mapping auf Indikator, Dimension und Polarität.</span>
+          <span class="kwi-pipeline-item"><strong>4. DQ A-E</strong>Lücke bleibt Lücke, keine 0-Füllung.</span>
+          <span class="kwi-pipeline-item"><strong>5. Snapshot</strong>Versioniert, prüfbar, später vergleichbar.</span>
         </div>
         <div class="table-wrap">
           <table class="data-table">
@@ -1075,29 +1224,29 @@
             </thead>
             <tbody>
               <tr>
-                <td><a class="text-link" href="https://sdg-portal.de/de/">SDG-Bereich</a></td>
-                <td>Kommunale SDG-Indikatoren, Zeitreihen, Landesdurchschnitt, Quellenhinweise.</td>
+                <td><a class="text-link" href="https://sdg-portal.de/de/">SDG-Bereich</a>, Destatis Regionaldatenbank, Zensus</td>
+                <td>Kommunale SDG-Indikatoren, Zeitreihen, Regionalstatistik, demografische Basis und Quellenhinweise.</td>
                 <td>angebunden über Snapshot-Skript</td>
               </tr>
               <tr>
-                <td><a class="text-link" href="https://www.wegweiser-kommune.de/open-data">Wegweiser Kommune</a></td>
-                <td>Erweiterbare Open-Data-Quelle mit REST-Exporten für kommunale Indikatoren.</td>
+                <td><a class="text-link" href="https://www.wegweiser-kommune.de/open-data">Wegweiser Kommune</a>, BBSR/INKAR, Landesämter</td>
+                <td>Sozialraum, Demografie, Wohnen, Arbeit, Verkehr, Umwelt und regionale Vergleichsdaten.</td>
                 <td>nächster Adapter</td>
               </tr>
               <tr>
-                <td><a class="text-link" href="https://www.inkar.de/">INKAR</a></td>
-                <td>Regionalstatistische Zusatzindikatoren für Demografie, Wohnen, Arbeit, Verkehr und Umwelt.</td>
-                <td>geplant als Download-/API-Adapter</td>
+                <td>Kommunale Bildungs-, Sozial-, Umwelt- und Gesundheitsberichte</td>
+                <td>Lokale Felder wie Kinderarmut, Pflege, Hitzeresilienz, Luftqualität, ärztliche Erreichbarkeit und Prävention.</td>
+                <td>geplant als kommunaler Dokument-/Open-Data-Adapter</td>
               </tr>
               <tr>
-                <td>Kommunale Haushalte</td>
-                <td>Brücke zu KWI 2.0: Produkte, Maßnahmen, Budget-Wirkungs-Matrix.</td>
-                <td>Pilotmodul</td>
+                <td>Wahlstatistik und offene Ratsinformationssysteme</td>
+                <td>Wahlbeteiligung, Ratsinformationen, Transparenz, Beteiligungsverfahren und demokratische Infrastruktur.</td>
+                <td>häufig C/E, besonders bei Vertrauen und Beteiligungswirksamkeit</td>
               </tr>
               <tr>
-                <td><a class="text-link" href="../../bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/">KWI-Diskussionspapier 1.0</a></td>
-                <td>Methodischer Rahmen, Datenkonzept, Schutzlinien und Entwicklungspfad.</td>
-                <td>veröffentlicht als WÖk-Dossierfassung</td>
+                <td>Typische Lücken</td>
+                <td>Beteiligung, Vertrauen, Einsamkeit und lokale Resonanzräume. Bei entscheidenden Lücken: Dimension sperren, Daten anfordern.</td>
+                <td>E sichtbar, keine Schätzung als Ersatz</td>
               </tr>
             </tbody>
           </table>
@@ -1172,7 +1321,6 @@
           <a href="../../werkzeuge/woek-ids/" data-nav-match="werkzeuge/woek-ids/|wirkungssteuerung/woek-ids/">WÖk-IDs</a>
           <a href="../../werkzeuge/scorecards/" data-nav-match="werkzeuge/scorecards/|wirkungssteuerung/scorecards/">Scorecards</a>
           <a href="../../werkzeuge/netto-wirkungs-index/" data-nav-match="werkzeuge/netto-wirkungs-index/">Netto-Wirkungs-Index</a>
-          <a href="../../begriffe/impact-of-investment/" data-nav-match="begriffe/impact-of-investment/">Impact-of-Investment</a>
           <a href="../../werkzeuge/t-sroi/" data-nav-match="werkzeuge/t-sroi/">T-SROI</a>
           <a href="../../werkzeuge/reverse-merit-order/" data-nav-match="werkzeuge/reverse-merit-order/|wirkungssteuerung/reverse-merit-order/">Reverse Merit Order</a>
           <a href="../../werkzeuge/" data-nav-match="werkzeuge/">Alle Werkzeuge</a>

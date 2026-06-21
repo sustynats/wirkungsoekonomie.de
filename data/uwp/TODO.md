@@ -10,3 +10,6 @@ Offene Schritte vor einer produktiven Bewertung:
 - Indikatorenkatalog für Mensch, Planet, Demokratie, Transformation und Datenqualität finalisieren.
 - Keine echten Scores anzeigen, bevor Beobachtungen, Quellenanker und Datenqualität ausreichend sind.
 - Lizenzstatus optionaler Provider wie CDP oder kommerzieller ESG-Daten prüfen.
+- Snapshot-Pipeline aus Quell-Adaptern, WÖk-ID-Mapping und Snapshot-Writer bauen.
+- Datenqualitätsklassen A-E pro Beobachtung ausweisen; D/E als Rückfrage statt Befund rendern.
+- Gesamtprofil sperren, wenn ein kritisches Feld fehlt oder nur mit unzureichender Datenqualität vorliegt.

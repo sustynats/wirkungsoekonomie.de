@@ -600,6 +600,16 @@
         <span><strong>${quality.mittel || 0}</strong> mittel</span>
         <span><strong>${quality.niedrig || 0}</strong> niedrig</span>
       </section>
+      <section class="kwi-compass-block" aria-label="Profil in 60 Sekunden">
+        <p class="card-kicker">Profil in 60 Sekunden</p>
+        <div class="kwi-reading-grid">
+          <span class="kwi-reading-step"><strong>1. Schwachfeld</strong>Größte Wirkungslücken zuerst, nicht den Durchschnitt.</span>
+          <span class="kwi-reading-step"><strong>2. Datenqualität</strong>Hoch, mittel, niedrig und fehlende Felder vor jeder Zahl lesen.</span>
+          <span class="kwi-reading-step"><strong>3. Status / Trend</strong>Aktuelle Lage und Bewegung über die Jahre getrennt prüfen.</span>
+          <span class="kwi-reading-step"><strong>4. Zielabstand</strong>Zielpfade sind im Beta-Ausbau noch zu ergänzen.</span>
+          <span class="kwi-reading-step"><strong>5. Prüffrage</strong>Aus dem Ergebnis eine Frage an Rat, Verwaltung und Öffentlichkeit machen.</span>
+        </div>
+      </section>
       ${renderTrendChart(snapshot, history)}
       ${renderDemocracyConcept()}
       ${renderInterpretation(snapshot, history, gaps, strengths)}

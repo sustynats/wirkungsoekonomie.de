@@ -11,21 +11,24 @@ const toolCopy = {
     noMatch: "Kein Bundesland gefunden. LWK-DE umfasst alle 16 Bundesländer.",
     resultType: "Bundesland",
     profileTitle: "Länderprofil",
-    compareHint: "Bis zu vier Bundesländer können nebeneinander als Datenprofile betrachtet werden."
+    compareHint: "Bis zu vier Bundesländer können nebeneinander als Datenprofile betrachtet werden.",
+    checkQuestion: "Welche Landesdaten zeigen, ob Teilhabe, Fläche, Versorgung und demokratische Infrastruktur auf Kurs sind?"
   },
   "ewk-eu27": {
     searchPlaceholder: "EU-Land suchen, z. B. Deutschland",
     noMatch: "Kein Treffer im EWK-EU27-Universum. Europa+ ist als spätere Erweiterung vorgesehen.",
     resultType: "EU-Mitgliedstaat",
     profileTitle: "Europa-Profil",
-    compareHint: "Bis zu vier EU-Staaten können nebeneinander als Datenprofile betrachtet werden."
+    compareHint: "Bis zu vier EU-Staaten können nebeneinander als Datenprofile betrachtet werden.",
+    checkQuestion: "Welche EU-Zielpfade, Rechtsstaatsdaten und SDG-Indikatoren sind belastbar genug für eine Richtungsaussage?"
   },
   "wwk-193": {
     searchPlaceholder: "Staat suchen, z. B. Ghana",
     noMatch: "Kein Treffer im WWK-193-Grunduniversum. Bitte offizielle englische UN-Bezeichnung prüfen.",
     resultType: "UN-Mitgliedstaat",
     profileTitle: "Welt-Profil",
-    compareHint: "Bis zu vier Staaten können nebeneinander als Datenprofile betrachtet werden."
+    compareHint: "Bis zu vier Staaten können nebeneinander als Datenprofile betrachtet werden.",
+    checkQuestion: "Welche Felder sind belastbar, welche sind unsicher und welche Dimension muss wegen Datenlücken gesperrt bleiben?"
   }
 };
 
@@ -90,7 +93,7 @@ function scoreCard(label, note) {
   return `
     <article class="card wk-score-card wk-score-card-empty">
       <p class="card-kicker">${escapeHtml(label)}</p>
-      <h3 class="card-title">Nicht berechnet</h3>
+      <h3 class="card-title">Datenlücke (E)</h3>
       <p class="card-text">${escapeHtml(note)}</p>
     </article>
   `;
@@ -105,9 +108,9 @@ function renderEmptyChart(target, toolName) {
       <line x1="70" y1="245" x2="660" y2="245" stroke="#d9d0c2"></line>
       <line x1="70" y1="50" x2="70" y2="245" stroke="#d9d0c2"></line>
       <line x1="70" y1="92" x2="660" y2="64" stroke="#5c6975" stroke-dasharray="7 7"></line>
-      <text x="70" y="35" class="wk-chart-label">Score 0-100</text>
-      <text x="548" y="88" class="wk-chart-label">Ziel-/Transformationspfad</text>
-      <text x="90" y="145" class="wk-chart-empty">${escapeHtml(toolName)} zeigt hier künftig Status, Mensch, Planet, Demokratie und Datenqualität über die Zeit. Im Beta-Snapshot liegen noch keine validierten Beobachtungen vor.</text>
+      <text x="70" y="35" class="wk-chart-label">Status -3 bis +3</text>
+      <text x="548" y="88" class="wk-chart-label">Zielpfad</text>
+      <text x="90" y="145" class="wk-chart-empty">${escapeHtml(toolName)} zeigt hier künftig Status, Trend, Zielabstand und Datenqualität über die Zeit. Im Beta-Snapshot liegen noch keine validierten Beobachtungen vor.</text>
       <g class="wk-chart-legend">
         <circle cx="80" cy="276" r="4"></circle><text x="92" y="280">Status</text>
         <circle cx="160" cy="276" r="4"></circle><text x="172" y="280">Mensch</text>
@@ -122,10 +125,26 @@ function renderEmptyChart(target, toolName) {
 function interpretation(entity, universe) {
   return [
     `Im vorhandenen Datenstand liegt für ${entity.name} ein Metadatenprofil im ${universe.shortname}-Universum vor. Ein Wirkungsprofil wird noch nicht berechnet, weil keine versionierten Beobachtungen, Quellenanker und Datenqualitätsprüfungen hinterlegt sind.`,
-    "Der Wirkungskompass zeigt deshalb Datenstatus, Vergleichsebene, geplante Provider und offene Datenlücken statt scheingenauer Gesamtwerte.",
+    "Der Wirkungskompass zeigt deshalb Datenstatus, Vergleichsebene, geplante Provider und offene Datenlücken statt scheingenauer Gesamtwerte. Fehlende Kernfelder werden als Datenlücke (E) markiert und nicht mit 0 gefüllt.",
     "Prüffrage: Welche Indikatoren liegen für Mensch, Planet und Demokratie über mehrere Jahre, mit Lizenz, Abrufdatum, Methodikversion und Datenqualität vor?",
     "Diese Einordnung ist kein Ranking, kein amtliches Rating, keine politische Gesinnungsbewertung und keine automatische Entscheidung."
   ];
+}
+
+function renderProfileReadingGuide(copy) {
+  return `
+    <section class="card" aria-labelledby="wk-reading-title">
+      <p class="hero-kicker">Profil in 60 Sekunden</p>
+      <h3 id="wk-reading-title">Erst lesen, dann urteilen.</h3>
+      <div class="wk-reading-grid">
+        <span class="wk-reading-step"><strong>1. Schwachfeld</strong>Reverse Merit Order: Das kritischste Feld zuerst, nicht den Schnitt.</span>
+        <span class="wk-reading-step"><strong>2. Datenqualität</strong>A bis E prüfen, bevor eine Zahl als belastbar gilt.</span>
+        <span class="wk-reading-step"><strong>3. Status / Trend</strong>Niveau und Richtung getrennt lesen.</span>
+        <span class="wk-reading-step"><strong>4. Zielabstand</strong>Nur mit hinterlegtem Zielpfad ausweisen.</span>
+        <span class="wk-reading-step"><strong>5. Prüffrage</strong>${escapeHtml(copy.checkQuestion)}</span>
+      </div>
+    </section>
+  `;
 }
 
 function renderSourceRows(universe) {
@@ -183,7 +202,7 @@ function renderProfile(entity, universe, state) {
           <span><strong>Gruppe</strong>${escapeHtml((entity.comparison_groups || []).join(", ") || entity.region_group)}</span>
           <span><strong>Datenstand</strong>Metadaten-Snapshot 10.06.2026</span>
           <span><strong>Methodik</strong>${escapeHtml(entity.method_version || universe.method_version)}</span>
-          <span><strong>Datenabdeckung</strong>${escapeHtml(entity.coverage || "0 %")}</span>
+          <span><strong>Datenabdeckung</strong>${escapeHtml(entity.coverage || "0 %")} · DQ E</span>
           <span><strong>Bevölkerung</strong>${formatNumber(entity.population)}</span>
           <span><strong>Fläche</strong>${formatNumber(entity.area, " km²")}</span>
         </div>
@@ -192,14 +211,16 @@ function renderProfile(entity, universe, state) {
       <aside class="protection-notice" role="note">
         <p class="card-kicker">Gesamtwert</p>
         <h3>Kein Gesamtwert</h3>
-        <p>Kein Gesamtwert: Datenabdeckung reicht für eine belastbare Gesamtaussage nicht aus.</p>
+        <p>Kein Gesamtwert: Datenabdeckung reicht für eine belastbare Gesamtaussage nicht aus. Fehlende Kernfelder sperren die Dimension, statt sie schönzurechnen.</p>
       </aside>
 
+      ${renderProfileReadingGuide(copy)}
+
       <div class="card-grid four wk-score-grid">
-        ${scoreCard(dimensionLabels.mensch, "Armut, Gesundheit, Bildung, Arbeit, Wohnen, Teilhabe und soziale Sicherheit.")}
-        ${scoreCard(dimensionLabels.planet, "Klima, Energie, Fläche, Luft, Wasser, Biodiversität, Ressourcen und Klimarisiken.")}
-        ${scoreCard(dimensionLabels.demokratie, "Wahlbeteiligung, Rechtsstaatlichkeit, Transparenz, Medienvielfalt, Vertrauen und Zivilgesellschaft als SDG+-Prüffeld.")}
-        ${scoreCard(dimensionLabels.datenqualitaet, "Vollständigkeit, Lizenz, Aktualität, Vergleichbarkeit, Quellenanker und Methodikversion.")}
+        ${scoreCard(dimensionLabels.mensch, "Misst Armut, Gesundheit, Bildung, Arbeit, Wohnen, Teilhabe und soziale Sicherheit. Lesart: ohne belastbare Kernfelder kein Urteil. Wichtig für Politik, Verwaltung, Zivilgesellschaft und Forschung.")}
+        ${scoreCard(dimensionLabels.planet, "Misst Klima, Energie, Fläche, Luft, Wasser, Biodiversität, Ressourcen und Klimarisiken. Lesart: rote Linien sind nicht durch gute Sozialwerte kompensierbar. Wichtig für Planung, Umweltpolitik und Investitionen.")}
+        ${scoreCard(dimensionLabels.demokratie, "Misst Wahlbeteiligung, Rechtsstaatlichkeit, Transparenz, Medienvielfalt, Vertrauen und Zivilgesellschaft als SDG+-Prüffeld. Lesart: Demokratiekrisen deckeln das Profil. Wichtig für Parlamente, Journalismus und Öffentlichkeit.")}
+        ${scoreCard(dimensionLabels.datenqualitaet, "Misst Vollständigkeit, Lizenz, Aktualität, Vergleichbarkeit, Quellenanker und Methodikversion. Lesart: E heißt Datenlücke, nicht schlechter Wert. Wichtig für jede Entscheidung, die auf den Daten aufbauen soll.")}
       </div>
 
       <section class="card" aria-labelledby="wk-timeline-title">
@@ -228,7 +249,7 @@ function renderProfile(entity, universe, state) {
         <article class="card">
           <p class="card-kicker">Datenlücken</p>
           <h3 class="card-title">Datenprofil ohne Score</h3>
-          <p class="card-text">Fehlende Daten bedeuten keine schlechte Wirkung. Sie markieren, wo Provider, Lizenz, Gebietsstand oder Vergleichbarkeit geprüft werden müssen.</p>
+          <p class="card-text">Fehlende Daten bedeuten keine schlechte Wirkung. Sie markieren, wo Provider, Lizenz, Gebietsstand oder Vergleichbarkeit geprüft werden müssen. Entscheidend fehlende Felder werden als E sichtbar.</p>
         </article>
       </div>
 

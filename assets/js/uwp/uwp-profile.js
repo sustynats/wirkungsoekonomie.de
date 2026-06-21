@@ -36,6 +36,15 @@ function canShowOverallScore(profile) {
   return profile.data_quality_score >= 50 && profile.overall_score !== null && profile.overall_score !== undefined;
 }
 
+function dataQualityClass(score) {
+  if (typeof score !== "number" || Number.isNaN(score)) return "E - Datenlücke";
+  if (score >= 80) return "A - geprüft";
+  if (score >= 65) return "B - belastbar";
+  if (score >= 50) return "C - mit Vorsicht brauchbar";
+  if (score >= 30) return "D - Schätzung oder Teilquelle";
+  return "E - Datenlücke";
+}
+
 function applyReverseMeritOrder(profile) {
   if (!profile || !Array.isArray(profile.red_lines) || profile.red_lines.length === 0) {
     return { blocked: false, note: "Keine belegten roten Linien im aktuellen Snapshot. Das ist kein Freispruch, sondern nur der Stand der erfassten Daten." };
@@ -51,7 +60,7 @@ function buildInterpretation(company, profile) {
   if (!profile) {
     return [
       `Im vorhandenen Datenstand liegt für ${name} ein Metadatenprofil vor. Ein Wirkungsprofil ist noch nicht berechnet, weil noch keine versionierten Beobachtungen aus Berichten, Quellenankern und Datenqualitätsprüfungen hinterlegt sind.`,
-      "Eine belastbare Aussage zu Mensch, Planet, Demokratie oder Transformation ist deshalb noch nicht möglich. Das Tool zeigt bewusst Datenstatus und Lücken statt erfundener Scores.",
+      "Eine belastbare Aussage zu Mensch, Planet, Demokratie oder Transformation ist deshalb noch nicht möglich. Das ist Datenqualität E: Datenlücke, kein Score.",
       "Prüffrage: Welche Berichte, CSRD-/ESRS-Daten, GRI-Angaben, Taxonomie-Kennzahlen, Klimaziele, Kontroversen und Assurance-Informationen liegen öffentlich und lizenzrechtlich nutzbar vor?",
       "Diese Einordnung ist kein kausaler Nachweis, kein Finanzrating und keine Investmentempfehlung."
     ];
@@ -65,6 +74,7 @@ function buildInterpretation(company, profile) {
   return [
     intro,
     redLine.note,
+    `Datenqualität: ${dataQualityClass(profile.data_quality_score)}. Ein Gesamtwert darf erst gelesen werden, wenn gerade das entscheidende kritische Feld ausreichend belastbar belegt ist.`,
     "Auffällige Verbesserungen oder Verschlechterungen werden erst ausgewiesen, wenn mehrere belegte Berichtsjahre vorliegen. Das Profil unterscheidet dann zwischen besserer Transparenz und tatsächlicher Wirkung.",
     "Prüffrage: Verbessert sich die reale Wirkung oder steigt vor allem die Berichtstiefe?"
   ];
@@ -99,7 +109,7 @@ function scoreCard(label, value, note) {
   return `
     <article class="card uwp-score-card ${hasScore ? "" : "uwp-score-card-empty"}">
       <p class="card-kicker">${escapeHtml(label)}</p>
-      <h3 class="card-title">${hasScore ? Math.round(value) : "Nicht berechnet"}</h3>
+      <h3 class="card-title">${hasScore ? Math.round(value) : "Datenlücke (E)"}</h3>
       <p class="card-text">${escapeHtml(note)}</p>
     </article>
   `;
@@ -154,6 +164,7 @@ function renderProfile(company, profile, universe) {
           <span><strong>Datenstand</strong>Metadaten-Snapshot 10.06.2026</span>
           <span><strong>Methodik</strong>${methodVersion}</span>
           <span><strong>Datenabdeckung</strong>${profile ? Math.round((profile.coverage || 0) * 100) + " %" : "0 %"}</span>
+          <span><strong>Datenqualität</strong>${escapeHtml(dataQualityClass(profile?.data_quality_score))}</span>
           <span><strong>Hinweis</strong>Kein Finanzrating</span>
         </div>
       </div>
@@ -161,8 +172,20 @@ function renderProfile(company, profile, universe) {
       <aside class="protection-notice" role="note">
         <p class="card-kicker">Gesamtwert</p>
         <h3>${overallAllowed ? "Vorläufiger Gesamtwert verfügbar" : "Kein Gesamtwert"}</h3>
-        <p>${overallAllowed ? "Der Gesamtwert erfüllt die Mindestregeln der Beta-Methodik." : "Kein Gesamtwert: Datenabdeckung oder rote Linien reichen für eine belastbare Gesamtbewertung nicht aus."}</p>
+        <p>${overallAllowed ? "Der Gesamtwert erfüllt die Mindestregeln der Beta-Methodik. Er bleibt eine Wirkungs-Lesart, kein Finanzrating." : "Kein Gesamtwert: Datenabdeckung, Datenqualität oder rote Linien reichen für eine belastbare Gesamtbewertung nicht aus. Das ist Rückfrage statt Urteil."}</p>
       </aside>
+
+      <section class="card uwp-reading-guide" aria-labelledby="uwp-profile-reading-title">
+        <p class="hero-kicker">Profil in 60 Sekunden</p>
+        <h3 id="uwp-profile-reading-title">So liest du dieses Profil</h3>
+        <ol class="content-list">
+          <li>Zuerst auf das schwächste Feld schauen, nicht auf den Schnitt.</li>
+          <li>Datenqualität prüfen, bevor du einer Zahl glaubst: A/B belastbar, C mit Vorsicht, D/E Rückfrage.</li>
+          <li>Status gegen Trend lesen: Wo steht es, und bewegt es sich wirklich?</li>
+          <li>Disclosure-to-Impact-Gap prüfen: Besser berichtet ist noch nicht besser gewirkt.</li>
+          <li>Eine Handlung ableiten: Welche konkrete Rückfrage würdest du jetzt stellen?</li>
+        </ol>
+      </section>
 
       <div class="card-grid five uwp-score-grid">
         ${scoreCard(labels.mensch, profileForScores.mensch_score, "Arbeitsbedingungen, Menschenrechte, Sicherheit, Zugang und soziale Produktwirkung.")}
