@@ -187,7 +187,7 @@
 }
 
 .wk-zoom-band {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   align-items: stretch;
 }
 
@@ -202,8 +202,10 @@
 }
 
 .wk-zoom-step {
+  display: grid;
+  gap: 0.45rem;
   position: relative;
-  min-height: 150px;
+  min-height: 170px;
 }
 
 .wk-zoom-step::after {
@@ -221,11 +223,21 @@
 }
 
 .wk-zoom-step strong,
+.wk-zoom-step span,
 .wk-reading-step strong,
 .wk-scale-item strong,
 .wk-quality-item strong {
   display: block;
   margin-bottom: 0.3rem;
+}
+
+.wk-zoom-step strong {
+  font-size: 1rem;
+}
+
+.wk-zoom-step span {
+  color: #27323a;
+  font-weight: 800;
 }
 
 .wk-reading-grid,
@@ -235,7 +247,12 @@
 
 .wk-scale-grid,
 .wk-quality-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+}
+
+.card .wk-scale-grid,
+.card .wk-quality-grid {
+  grid-template-columns: 1fr;
 }
 
 .wk-details {
@@ -262,6 +279,10 @@
   min-width: 760px;
 }
 
+.wk-explainer-table {
+  min-width: 980px;
+}
+
 .wk-compare-table {
   min-width: 920px;
 }
@@ -283,6 +304,46 @@
 .wk-compare-table th {
   color: #27323a;
   font-size: 0.88rem;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.wk-explainer-table th:first-child,
+.wk-explainer-table td:first-child {
+  min-width: 6.5rem;
+  white-space: nowrap;
+}
+
+.wk-indicator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.wk-indicator-card {
+  border: 1px solid #e2dbd0;
+  border-radius: 8px;
+  padding: 0.95rem;
+  background: #fff;
+}
+
+.wk-indicator-card dl {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.7rem 0 0;
+}
+
+.wk-indicator-card dt {
+  color: #5d646b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.wk-indicator-card dd {
+  margin: 0;
 }
 
 .wk-merksatz,
@@ -318,6 +379,7 @@
   .wk-score-grid.four,
   .wk-compare-list,
   .wk-zoom-band,
+  .wk-indicator-grid,
   .wk-reading-grid,
   .wk-process-grid,
   .wk-scale-grid,
@@ -335,6 +397,7 @@
   .wk-compare-list,
   .wk-meta-grid,
   .wk-zoom-band,
+  .wk-indicator-grid,
   .wk-reading-grid,
   .wk-process-grid,
   .wk-scale-grid,

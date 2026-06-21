@@ -13,7 +13,7 @@
     <meta name="search_tags" content="Wirkungskompass, KWI, UWP, LWK-DE, EWK, WWK-193, Mensch, Planet, Demokratie">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
-    <link rel="stylesheet" href="../../assets/css/wirkungskompass.css?v=20260610">
+    <link rel="stylesheet" href="../../assets/css/wirkungskompass.css?v=20260622-hotfix1">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -67,10 +67,10 @@
         </aside>
       </section>
 
-      <section class="section" aria-labelledby="zoom-title">
+      <section class="section" aria-labelledby="zoom-title" data-generic-tool-explanation-ready="true">
         <div class="section-header">
           <p class="hero-kicker">Eine Maschine, fünf Zoomstufen</p>
-          <h2 id="zoom-title">Kommune -> Unternehmen -> Bundesland -> Europa -> Welt.</h2>
+          <h2 id="zoom-title">Fünf Zoomstufen: Kommune, Unternehmen, Bundesland, Europa, Welt.</h2>
           <p>Jede Ebene liest Status, Trend, Zielabstand und Datenqualität für Mensch, Planet und Demokratie. Der Zoomregler wechselt nur den Datenraum.</p>
         </div>
         <div class="wk-zoom-band" aria-label="Zoomstufen der Wirkungskompass-Familie">
@@ -130,16 +130,43 @@
         </div>
         <details class="wk-details" open>
           <summary>Die vier Anzeigen der Wirkungskompass-Familie</summary>
-          <div class="wk-table-wrap">
-            <table class="wk-explainer-table">
-              <thead><tr><th>Anzeige</th><th>Naive Frage</th><th>Was sie misst</th><th>Wie man sie liest</th><th>Typischer Denkfehler</th></tr></thead>
-              <tbody>
-                <tr><th>Status</th><td>Wo steht es heute?</td><td>Aktuelles Niveau je Dimension, normalisiert auf -3 bis +3.</td><td>Nicht der Schnitt zählt, sondern das schwächste kritische Feld.</td><td>Ein starker Klimawert macht eine Demokratie-Krise nicht harmlos.</td></tr>
-                <tr><th>Trend</th><td>Wohin bewegt es sich?</td><td>Veränderung des Status über mehrere Jahre.</td><td>Richtung, nicht Niveau. Ein schlechter Wert mit Aufwärtstrend ist anders zu lesen als ein schlechter Wert, der steht.</td><td>Trend mit Status verwechseln.</td></tr>
-                <tr><th>Zielabstand</th><td>Wie weit bis zum Ziel?</td><td>Abstand zum fachlich begründeten Zielpfad, etwa einem 2030-Wert.</td><td>Zeigt, ob das Tempo reicht. Ohne Zielpfad gibt es keine Zielabstands-Zahl.</td><td>Aktuelles Niveau für "auf Kurs" halten.</td></tr>
-                <tr><th>Datenqualität</th><td>Darf ich der Zahl trauen?</td><td>Belastbarkeit der Werte in Klassen A bis E.</td><td>Vorbehalt vor jeder Zahl. Ein präziser Wert mit DQ E ist keine geprüfte Aussage.</td><td>Präzise aussehende Zahlen für geprüfte Zahlen halten.</td></tr>
-              </tbody>
-            </table>
+          <div class="wk-indicator-grid">
+            <article class="wk-indicator-card">
+              <h3 class="card-title">Status</h3>
+              <dl>
+                <div><dt>Naive Frage</dt><dd>Wo steht es heute?</dd></div>
+                <div><dt>Misst</dt><dd>Aktuelles Niveau je Dimension, normalisiert auf -3 bis +3.</dd></div>
+                <div><dt>Lesart</dt><dd>Erst das schwächste kritische Feld, dann das Gesamtbild.</dd></div>
+                <div><dt>Denkfehler</dt><dd>Ein starker Klimawert macht eine Demokratie-Krise nicht harmlos.</dd></div>
+              </dl>
+            </article>
+            <article class="wk-indicator-card">
+              <h3 class="card-title">Trend</h3>
+              <dl>
+                <div><dt>Naive Frage</dt><dd>Wohin bewegt es sich?</dd></div>
+                <div><dt>Misst</dt><dd>Veränderung des Status über mehrere Jahre.</dd></div>
+                <div><dt>Lesart</dt><dd>Richtung, nicht Niveau.</dd></div>
+                <div><dt>Denkfehler</dt><dd>Trend mit Status verwechseln.</dd></div>
+              </dl>
+            </article>
+            <article class="wk-indicator-card">
+              <h3 class="card-title">Zielabstand</h3>
+              <dl>
+                <div><dt>Naive Frage</dt><dd>Wie weit bis zum Ziel?</dd></div>
+                <div><dt>Misst</dt><dd>Abstand zum fachlich begründeten Zielpfad, etwa einem 2030-Wert.</dd></div>
+                <div><dt>Lesart</dt><dd>Zeigt, ob das Tempo reicht. Ohne Zielpfad keine Zielabstands-Zahl.</dd></div>
+                <div><dt>Denkfehler</dt><dd>Aktuelles Niveau für "auf Kurs" halten.</dd></div>
+              </dl>
+            </article>
+            <article class="wk-indicator-card">
+              <h3 class="card-title">Datenqualität</h3>
+              <dl>
+                <div><dt>Naive Frage</dt><dd>Darf ich der Zahl trauen?</dd></div>
+                <div><dt>Misst</dt><dd>Belastbarkeit der Werte in Klassen A bis E.</dd></div>
+                <div><dt>Lesart</dt><dd>Vorbehalt vor jeder Zahl. E heißt Datenlücke.</dd></div>
+                <div><dt>Denkfehler</dt><dd>Präzise aussehende Zahlen für geprüfte Zahlen halten.</dd></div>
+              </dl>
+            </article>
           </div>
         </details>
 
