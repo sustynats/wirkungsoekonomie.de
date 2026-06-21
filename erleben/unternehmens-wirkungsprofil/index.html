@@ -33,6 +33,23 @@
         padding: 1rem;
       }
 
+      .uwp-hero-list {
+        display: grid;
+        gap: 0.55rem;
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .uwp-hero-list li {
+        border-left: 4px solid #06382d;
+        padding-left: 0.75rem;
+      }
+
+      .uwp-hero-list strong {
+        display: block;
+      }
+
       .uwp-search-shell {
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
@@ -356,9 +373,13 @@
       <section class="hero">
         <div>
           <p class="hero-kicker">UWP-100 Beta · Unternehmens-Wirkungsprofil</p>
-          <h1 class="hero-title">Zwei Unternehmen, gleiche Bilanz - aber wirken sie gleich?</h1>
-          <p class="hero-subtitle">Nachhaltigkeitsberichte zeigen, was ein Unternehmen offenlegt. Das Unternehmens-Wirkungsprofil fragt den nächsten Schritt: Welche tatsächliche Zustandsveränderung entsteht für Mensch, Planet und Demokratie - und wo fehlen die Daten dafür noch?</p>
-          <p class="card-text">Das UWP macht aus einem Unternehmen keine Zahl. Es macht sichtbar, welche Wirkung entsteht - und wo die Daten dafür noch fehlen.</p>
+          <h1 class="hero-title">Unternehmens-Wirkungsprofil: Wirkung statt ESG-Blackbox.</h1>
+          <p class="hero-subtitle">Diese Beta-Seite zeigt, wie Unternehmensdaten in eine Wirkungs-Lesart übersetzt werden: Was ist belegt, wo liegt Wirkungspotenzial, wo entsteht Wirkungsrisiko - und welche Daten fehlen noch?</p>
+          <ul class="uwp-hero-list" aria-label="Was das UWP leistet">
+            <li><strong>Wofür?</strong> Unternehmen nicht nach Image oder Berichtsumfang lesen, sondern nach tatsächlicher Zustandsveränderung für Mensch, Planet und Demokratie.</li>
+            <li><strong>Wie?</strong> Datenqualität prüfen, kritische Schwachfelder sichtbar machen und gute Teilwerte nicht gegen rote Linien aufrechnen.</li>
+            <li><strong>Wofür nicht?</strong> Kein Ranking, kein Finanzrating, keine Kaufempfehlung und keine moralische Bewertung von Menschen.</li>
+          </ul>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#unternehmen-suchen">Unternehmen suchen</a>
             <a class="btn btn-secondary" href="#rechenweg">Rechenweg ansehen</a>
@@ -366,13 +387,13 @@
           </div>
         </div>
         <aside class="uwp-hero-note" role="note">
-          <p class="hero-kicker">Schutzlinie</p>
-          <h2>Kein Rating. Keine Empfehlung.</h2>
-          <p>Dieses Beta-Tool ist keine Investmentempfehlung, kein amtliches Rating und keine Kauf- oder Verkaufsempfehlung. Für echte Unternehmen erscheinen Scores nur bei belegten, versionierten Daten ausreichender Qualität.</p>
+          <p class="hero-kicker">Leitfrage</p>
+          <h2>Was verändert das Unternehmen wirklich?</h2>
+          <p>Eine gleiche Bilanz oder ein guter Nachhaltigkeitsbericht sagt noch nicht, ob eine Firma positiv wirkt. Das UWP fragt nach Geschäftsmodell, Lieferkette, Governance, Datenqualität und Transformation.</p>
         </aside>
       </section>
 
-      <section class="section" aria-labelledby="uwp-score-title">
+      <section class="section" aria-labelledby="uwp-score-title" data-generic-tool-explanation-ready="true">
         <div class="uwp-lede-grid">
           <div>
             <p class="hero-kicker">Aha</p>
