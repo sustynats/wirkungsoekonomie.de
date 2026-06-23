@@ -579,8 +579,13 @@
         return normalizeTerm(value)
           .replace(/^(was ist|was bedeutet|erklaere mir|erklaere|erlautere|definiere|definition von|begriff|im glossar)\s+/i, "")
           .replace(/\s+(in der|im)\s+wirkungsoekonomie$/i, "")
+          .replace(/^(der|die|das|den|dem|eine|einen|einem|einer)\s+/i, "")
           .replace(/\s+bitte$/i, "")
           .trim();
+      }
+
+      function isDefinitionQuestion(value) {
+        return /^(was ist|was bedeutet|erklaere mir|erklaere|erlautere|definiere|definition von|begriff|im glossar)\b/i.test(normalizeTerm(value));
       }
 
       function loadGlossaryLookup() {
@@ -601,6 +606,9 @@
         const query = stripDefinitionFraming(queryValue);
         if (query.length < 3) return null;
 
+        const queryWords = new Set(query.split(/\s+/).filter(Boolean));
+        const candidates = [];
+
         for (const term of terms) {
           const names = [
             term.canonicalLabel,
@@ -611,11 +619,32 @@
             .map(normalizeTerm)
             .filter(Boolean);
 
-          if (names.some((name) => name === query)) return term;
-          if (names.some((name) => query.includes(name) && name.length >= 5)) return term;
+          for (const name of names) {
+            const nameWords = name.split(/\s+/).filter(Boolean);
+            const allWordsMatch = nameWords.length > 0 && nameWords.every((word) => queryWords.has(word));
+
+            let score = 0;
+            if (name === query) {
+              score = 1000;
+            } else if (allWordsMatch) {
+              score = 800 + name.length;
+            } else if (query.includes(name) && name.length >= 5) {
+              score = 500 + name.length;
+            } else if (name.includes(query) && query.length >= 5) {
+              score = 400 + query.length;
+            }
+
+            if (score > 0) {
+              candidates.push({ term, score, nameLength: name.length });
+            }
+          }
         }
 
-        return null;
+        if (!candidates.length) return null;
+
+        candidates.sort((a, b) => b.score - a.score || b.nameLength - a.nameLength);
+        if (!isDefinitionQuestion(queryValue) && candidates[0].score < 1000) return null;
+        return candidates[0].term;
       }
 
       function renderDirectGlossaryMatch(term) {
