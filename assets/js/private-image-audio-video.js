@@ -45,6 +45,7 @@
     const size = sizes[ratioSelect.value] || sizes.square;
     canvas.width = size.width;
     canvas.height = size.height;
+    canvas.style.aspectRatio = `${size.width} / ${size.height}`;
     drawFrame(0);
   }
 
@@ -163,8 +164,28 @@
     }
   }
 
+  function deriveKnownAudioUrl(value) {
+    const trimmed = value.trim();
+    if (!trimmed) return "";
+
+    try {
+      const url = new URL(trimmed);
+      const songMatch = url.pathname.match(/\/song\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i);
+      if (songMatch && /(^|\.)3bfin\.com$/i.test(url.hostname)) {
+        return `https://cdn1.suno.ai/${songMatch[1]}.mp3`;
+      }
+    } catch {
+      const idMatch = trimmed.match(/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i);
+      if (idMatch && trimmed.includes("3bfin.com")) {
+        return `https://cdn1.suno.ai/${idMatch[1]}.mp3`;
+      }
+    }
+
+    return normalizeAudioUrl(trimmed);
+  }
+
   async function objectUrlFromAudioUrl(url) {
-    const normalizedUrl = normalizeAudioUrl(url);
+    const normalizedUrl = deriveKnownAudioUrl(url);
     const response = await fetch(normalizedUrl, { mode: "cors" });
     if (!response.ok) {
       throw new Error(`Die Audio-URL konnte nicht geladen werden (${response.status}).`);
@@ -176,7 +197,7 @@
     }
 
     const blob = await response.blob();
-    return URL.createObjectURL(blob);
+    return { objectUrl: URL.createObjectURL(blob), resolvedUrl: normalizedUrl };
   }
 
   async function getAudioObjectUrl() {
@@ -189,7 +210,8 @@
     }
 
     try {
-      return { url: await objectUrlFromAudioUrl(url), revoke: true };
+      const audio = await objectUrlFromAudioUrl(url);
+      return { url: audio.objectUrl, revoke: true, resolvedUrl: audio.resolvedUrl };
     } catch (error) {
       throw new Error(`${error.message} Fremde Player-Seiten blockieren das oft. Nutze in diesem Fall den Audiodatei-Upload.`);
     }
@@ -252,6 +274,9 @@
       previewImage = await loadImageFromFile(imageInput.files[0]);
       resizeCanvas();
       audioUrlRecord = await getAudioObjectUrl();
+      if (audioUrlRecord.resolvedUrl && audioUrlRecord.resolvedUrl !== normalizeAudioUrl(audioUrlInput.value)) {
+        setStatus("3bfin-Link erkannt. Die direkte MP3-Datei wurde automatisch gefunden ...");
+      }
 
       const audio = new Audio();
       audio.crossOrigin = "anonymous";

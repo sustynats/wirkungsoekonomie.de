@@ -186,7 +186,9 @@
       .private-video-canvas {
         display: block;
         width: 100%;
-        aspect-ratio: 16 / 9;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
         border: 1px solid rgba(11, 16, 32, 0.12);
         border-radius: 8px;
         background: #f4efe7;
@@ -253,8 +255,8 @@
 
             <div class="private-video-field">
               <label for="audio-url">Audio-URL</label>
-              <input id="audio-url" name="audio-url" type="url" inputmode="url" placeholder="https://.../audio.mp3">
-              <p class="private-video-hint">Optional. Wenn die URL nicht lädt, nutze stattdessen den Datei-Upload darunter.</p>
+              <input id="audio-url" name="audio-url" type="url" inputmode="url" placeholder="https://.../audio.mp3 oder https://play.3bfin.com/song/...">
+              <p class="private-video-hint">Optional. 3bfin-Player-Links werden automatisch auf die MP3-Datei aufgelöst. Wenn eine andere URL nicht lädt, nutze stattdessen den Datei-Upload darunter.</p>
             </div>
 
             <div class="private-video-field">
