@@ -2741,6 +2741,7 @@ const ResultInterpretationLayer = (() => {
 
   function applyToDataResults(scope) {
     scope.querySelectorAll("[data-result], [data-auto-result]").forEach((el) => {
+      if (el.closest("[data-no-result-interpretation]")) return;
       if (el.matches("p[data-result], p[data-auto-result]")) return;
       const host = el.closest("dl > div, .impact-kpi") || el.parentElement;
       if (!host || host.querySelector(":scope > [data-result-interpretation]")) return;

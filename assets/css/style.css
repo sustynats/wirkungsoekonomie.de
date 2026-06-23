@@ -9940,10 +9940,19 @@ body .hero-system-visual.podcast-cover-visual img {
 
 .calculator-result dl div {
   display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
+  min-width: 0;
   padding: 0.75rem;
   background: rgba(255, 255, 255, 0.85);
+}
+
+.calculator-result dt,
+.calculator-result dd {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .calculator-result dt {
@@ -9955,6 +9964,7 @@ body .hero-system-visual.podcast-cover-visual img {
   margin: 0;
   color: var(--navy);
   font-weight: 950;
+  text-align: right;
 }
 
 .calculator-metrics {
