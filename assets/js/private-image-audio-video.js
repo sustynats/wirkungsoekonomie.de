@@ -34,6 +34,13 @@
     progressBar.style.width = `${Math.max(0, Math.min(100, value))}%`;
   }
 
+  function formatTime(seconds) {
+    const safeSeconds = Math.max(0, Math.floor(seconds || 0));
+    const minutes = Math.floor(safeSeconds / 60);
+    const remainingSeconds = safeSeconds % 60;
+    return `${minutes}:${String(remainingSeconds).padStart(2, "0")}`;
+  }
+
   function revokeDownload() {
     if (currentDownloadUrl) URL.revokeObjectURL(currentDownloadUrl);
     currentDownloadUrl = null;
@@ -244,12 +251,23 @@
     });
   }
 
-  function stopRecorderWhenAudioEnds(audio, recorder) {
+  function stopRecorderWhenAudioEnds(audio, recorder, durationSeconds) {
     return new Promise((resolve) => {
-      audio.addEventListener("ended", () => {
+      let fallbackTimer = 0;
+      const stopRecorder = () => {
         if (recorder.state !== "inactive") recorder.stop();
+      };
+
+      audio.addEventListener("ended", stopRecorder, { once: true });
+
+      if (Number.isFinite(durationSeconds) && durationSeconds > 0) {
+        fallbackTimer = window.setTimeout(stopRecorder, (durationSeconds + 2) * 1000);
+      }
+
+      recorder.addEventListener("stop", () => {
+        if (fallbackTimer) window.clearTimeout(fallbackTimer);
+        resolve();
       }, { once: true });
-      recorder.addEventListener("stop", resolve, { once: true });
     });
   }
 
@@ -273,6 +291,7 @@
     try {
       previewImage = await loadImageFromFile(imageInput.files[0]);
       resizeCanvas();
+      setStatus("Audio wird geladen ...");
       audioUrlRecord = await getAudioObjectUrl();
       if (audioUrlRecord.resolvedUrl && audioUrlRecord.resolvedUrl !== normalizeAudioUrl(audioUrlInput.value)) {
         setStatus("3bfin-Link erkannt. Die direkte MP3-Datei wurde automatisch gefunden ...");
@@ -283,6 +302,8 @@
       audio.src = audioUrlRecord.url;
       audio.preload = "auto";
       await waitForAudioMetadata(audio);
+      const durationSeconds = audio.duration;
+      setStatus(`Audio geladen: ${formatTime(durationSeconds)}. Aufnahme startet ...`);
 
       const mimeType = getSupportedMimeType();
       if (!mimeType) {
@@ -292,7 +313,11 @@
       audioContext = new AudioContext();
       const sourceNode = audioContext.createMediaElementSource(audio);
       const destinationNode = audioContext.createMediaStreamDestination();
+      const monitorGain = audioContext.createGain();
+      monitorGain.gain.value = 0;
       sourceNode.connect(destinationNode);
+      sourceNode.connect(monitorGain);
+      monitorGain.connect(audioContext.destination);
 
       const canvasStream = canvas.captureStream(30);
       const mixedStream = new MediaStream([
@@ -305,6 +330,7 @@
         audioBitsPerSecond: 160000,
       });
       const chunks = [];
+      let lastStatusSecond = -1;
 
       recorder.addEventListener("dataavailable", (chunkEvent) => {
         if (chunkEvent.data && chunkEvent.data.size > 0) chunks.push(chunkEvent.data);
@@ -314,8 +340,20 @@
       const animate = () => {
         const elapsedSeconds = (performance.now() - startedAt) / 1000;
         drawFrame(elapsedSeconds);
-        if (Number.isFinite(audio.duration)) {
-          setProgress((audio.currentTime / audio.duration) * 100);
+        if (Number.isFinite(durationSeconds) && durationSeconds > 0) {
+          const progressSeconds = Math.min(durationSeconds, Math.max(audio.currentTime || 0, elapsedSeconds));
+          setProgress((progressSeconds / durationSeconds) * 100);
+
+          const currentStatusSecond = Math.floor(progressSeconds);
+          if (currentStatusSecond !== lastStatusSecond) {
+            lastStatusSecond = currentStatusSecond;
+            setStatus(`Aufnahme läuft (${fileExtensionFor(mimeType).toUpperCase()}) ... ${formatTime(progressSeconds)} / ${formatTime(durationSeconds)}`);
+          }
+
+          if (progressSeconds >= durationSeconds && recorder.state !== "inactive") {
+            recorder.stop();
+            return;
+          }
         }
         if (!recordingAbort && recorder.state !== "inactive") {
           animationFrame = requestAnimationFrame(animate);
@@ -327,7 +365,7 @@
       await audioContext.resume();
       await audio.play();
       animate();
-      await stopRecorderWhenAudioEnds(audio, recorder);
+      await stopRecorderWhenAudioEnds(audio, recorder, durationSeconds);
 
       cancelAnimationFrame(animationFrame);
       mixedStream.getTracks().forEach((track) => track.stop());
