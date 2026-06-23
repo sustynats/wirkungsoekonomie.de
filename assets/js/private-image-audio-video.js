@@ -13,9 +13,12 @@
   const progressBar = document.getElementById("progress-bar");
   const statusText = document.getElementById("video-status");
   const downloadLink = document.getElementById("download-link");
+  const shareButton = document.getElementById("share-button");
 
   let previewImage = null;
   let currentDownloadUrl = null;
+  let currentVideoBlob = null;
+  let currentVideoFileName = "bild-audio-video.mp4";
   let recordingAbort = false;
 
   const sizes = {
@@ -44,8 +47,51 @@
   function revokeDownload() {
     if (currentDownloadUrl) URL.revokeObjectURL(currentDownloadUrl);
     currentDownloadUrl = null;
+    currentVideoBlob = null;
+    currentVideoFileName = "bild-audio-video.mp4";
     downloadLink.classList.remove("is-visible");
     downloadLink.removeAttribute("href");
+    shareButton.classList.remove("is-visible");
+  }
+
+  function canShareVideo(blob, fileName) {
+    if (!navigator.share || typeof File === "undefined") return false;
+
+    try {
+      const file = new File([blob], fileName, { type: blob.type || "video/mp4" });
+      return !navigator.canShare || navigator.canShare({ files: [file] });
+    } catch {
+      return false;
+    }
+  }
+
+  async function shareVideo() {
+    if (!currentVideoBlob) {
+      setStatus("Bitte zuerst ein Video erstellen.", "error");
+      return;
+    }
+
+    if (!canShareVideo(currentVideoBlob, currentVideoFileName)) {
+      setStatus("Dieser Browser kann Videodateien nicht direkt teilen. Bitte den Download nutzen.", "error");
+      return;
+    }
+
+    const file = new File([currentVideoBlob], currentVideoFileName, {
+      type: currentVideoBlob.type || "video/mp4",
+    });
+
+    try {
+      await navigator.share({
+        title: "Bild-Audio-Video",
+        text: "Video aus Bild und Audio",
+        files: [file],
+      });
+      setStatus("Teilen-Menü geöffnet. Auf iPhone/iPad dort „Video sichern“ wählen.", "success");
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        setStatus("Das Teilen-Menü konnte nicht geöffnet werden. Bitte den Download nutzen.", "error");
+      }
+    }
   }
 
   function resizeCanvas() {
@@ -374,10 +420,15 @@
 
       const extension = fileExtensionFor(mimeType);
       const blob = new Blob(chunks, { type: mimeType });
+      currentVideoBlob = blob;
+      currentVideoFileName = `bild-audio-video.${extension}`;
       currentDownloadUrl = URL.createObjectURL(blob);
       downloadLink.href = currentDownloadUrl;
-      downloadLink.download = `bild-audio-video.${extension}`;
+      downloadLink.download = currentVideoFileName;
       downloadLink.classList.add("is-visible");
+      if (canShareVideo(blob, currentVideoFileName)) {
+        shareButton.classList.add("is-visible");
+      }
       setProgress(100);
       setStatus(`Fertig. Das Video kann jetzt heruntergeladen werden (${extension.toUpperCase()}, ${Math.round(blob.size / 1024 / 1024 * 10) / 10} MB).`, "success");
     } catch (error) {
@@ -415,6 +466,7 @@
   fitSelect.addEventListener("change", () => drawFrame(0));
   motionInput.addEventListener("change", () => drawFrame(0));
   resetButton.addEventListener("click", resetTool);
+  shareButton.addEventListener("click", shareVideo);
   form.addEventListener("submit", renderVideo);
 
   resizeCanvas();

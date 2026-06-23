@@ -194,12 +194,12 @@
         background: #f4efe7;
       }
 
-      .private-video-download {
+      .private-video-export {
         display: none;
         width: fit-content;
       }
 
-      .private-video-download.is-visible {
+      .private-video-export.is-visible {
         display: inline-flex;
       }
 
@@ -296,12 +296,15 @@
         </article>
 
         <article class="private-video-panel private-video-preview-wrap">
-          <h2>Vorschau und Download</h2>
+          <h2>Vorschau und Export</h2>
           <canvas class="private-video-canvas" id="video-canvas" width="1080" height="1080" aria-label="Videovorschau"></canvas>
           <div class="private-video-progress" aria-label="Fortschritt"><span id="progress-bar"></span></div>
           <p class="private-video-status" id="video-status">Bild und Audio auswählen, dann Video erstellen.</p>
-          <a class="button button-primary private-video-download" id="download-link" href="#" download="video.webm">Video herunterladen</a>
-          <p class="private-video-hint">Der Browser entscheidet, ob MP4 oder WebM erzeugt werden kann. WebM lässt sich in der Regel weiterverwenden oder bei Bedarf später lokal in MP4 umwandeln.</p>
+          <div class="private-video-actions">
+            <a class="button button-primary private-video-export" id="download-link" href="#" download="video.webm">Video herunterladen</a>
+            <button class="button button-secondary private-video-export" id="share-button" type="button">Teilen / In Fotos sichern</button>
+          </div>
+          <p class="private-video-hint">Der Browser entscheidet, ob MP4 oder WebM erzeugt werden kann. Auf iPhone und iPad öffnet „Teilen“ das Systemmenü; dort kannst du „Video sichern“ wählen.</p>
         </article>
       </section>
     </main>
