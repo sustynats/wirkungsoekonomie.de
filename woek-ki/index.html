@@ -602,7 +602,7 @@
         return glossaryLookupPromise;
       }
 
-      function matchGlossaryTerm(terms, queryValue) {
+      function matchGlossaryTerm(terms, queryValue, options = {}) {
         const query = stripDefinitionFraming(queryValue);
         if (query.length < 3) return null;
 
@@ -611,15 +611,16 @@
 
         for (const term of terms) {
           const names = [
-            term.canonicalLabel,
-            term.label,
-            term.slug,
-            ...(Array.isArray(term.aliases) ? term.aliases : []),
+            { value: term.canonicalLabel, priority: 30 },
+            { value: term.label, priority: 25 },
+            { value: term.slug, priority: 20 },
+            ...(Array.isArray(term.aliases) ? term.aliases.map((alias) => ({ value: alias, priority: 0 })) : []),
           ]
-            .map(normalizeTerm)
-            .filter(Boolean);
+            .map((item) => ({ value: normalizeTerm(item.value), priority: item.priority }))
+            .filter((item) => item.value);
 
-          for (const name of names) {
+          for (const nameItem of names) {
+            const name = nameItem.value;
             const nameWords = name.split(/\s+/).filter(Boolean);
             const allWordsMatch = nameWords.length > 0 && nameWords.every((word) => queryWords.has(word));
 
@@ -635,19 +636,19 @@
             }
 
             if (score > 0) {
-              candidates.push({ term, score, nameLength: name.length });
+              candidates.push({ term, score, priority: nameItem.priority, nameLength: name.length });
             }
           }
         }
 
         if (!candidates.length) return null;
 
-        candidates.sort((a, b) => b.score - a.score || b.nameLength - a.nameLength);
-        if (!isDefinitionQuestion(queryValue) && candidates[0].score < 1000) return null;
+        candidates.sort((a, b) => b.score - a.score || b.priority - a.priority || b.nameLength - a.nameLength);
+        if (!options.allowBroad && !isDefinitionQuestion(queryValue) && candidates[0].score < 1000) return null;
         return candidates[0].term;
       }
 
-      function renderDirectGlossaryMatch(term) {
+      function renderGlossaryMatch(term, notice) {
         placeholder.hidden = true;
         answer.textContent = `${term.canonicalLabel}\n\n${term.shortDefinition || term.definition || ""}`;
         mode.textContent = "Glossar direkt";
@@ -655,7 +656,7 @@
         model.textContent = "Lokaler Begriffsabgleich";
         sourceCount.textContent = "1";
         warning.hidden = false;
-        warning.textContent = "Direkter Glossartreffer aus der Website. Fuer weitergehende Einordnung kannst du die Frage konkreter stellen.";
+        warning.textContent = notice || "Direkter Glossartreffer aus der Website. Für weitergehende Einordnung kannst du die Frage konkreter stellen.";
         renderSources([
           {
             rank: 1,
@@ -666,6 +667,14 @@
             excerpt: term.shortDefinition || term.definition || "",
           }
         ]);
+      }
+
+      function renderDirectGlossaryMatch(term) {
+        renderGlossaryMatch(term);
+      }
+
+      function renderFallbackGlossaryMatch(term) {
+        renderGlossaryMatch(term, "Live-KI derzeit nicht verfügbar - Antwort aus dem Glossar.");
       }
 
       function renderSources(items) {
@@ -743,6 +752,17 @@
           warning.textContent = "";
           renderSources(data.sources || []);
         } catch (error) {
+          try {
+            const glossaryTerms = await loadGlossaryLookup();
+            const glossaryMatch = matchGlossaryTerm(glossaryTerms, value, { allowBroad: true });
+            if (glossaryMatch) {
+              renderFallbackGlossaryMatch(glossaryMatch);
+              return;
+            }
+          } catch (fallbackError) {
+            console.warn(fallbackError);
+          }
+
           placeholder.hidden = false;
           placeholder.textContent = error instanceof Error ? error.message : "Die WÖk-KI konnte diese Frage nicht bearbeiten.";
           mode.textContent = "Fehler";

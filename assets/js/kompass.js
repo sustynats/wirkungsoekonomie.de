@@ -74,7 +74,7 @@
         els.query.value = query;
         selectFromInput();
       } else {
-        selectQuestion("wirkung-bedeutung");
+        selectQuestion("wirkung-bedeutung", { syncQuery: false });
       }
     } catch (error) {
       els.answerPanel.innerHTML = `<article class="confidence-notice"><strong>Kompass-Daten konnten nicht geladen werden.</strong><p>${escapeHtml(error.message)}</p></article>`;
@@ -117,10 +117,21 @@
 
   function currentQuestions() {
     const query = (els.query.value || "").trim().toLowerCase();
+    const hasQuery = query.length >= 2;
+    const hasTopic = Boolean(state.topic);
     return state.questions
-      .filter((question) => question.mode === state.mode || query.length >= 2)
-      .filter((question) => !state.topic || question.topic === state.topic)
-      .filter((question) => questionMatches(question, query))
+      .filter((question) => {
+        if (hasTopic && hasQuery) {
+          return question.topic === state.topic || questionMatches(question, query);
+        }
+        if (hasTopic) {
+          return question.topic === state.topic;
+        }
+        if (hasQuery) {
+          return questionMatches(question, query);
+        }
+        return question.mode === state.mode;
+      })
       .slice(0, 12);
   }
 
@@ -146,6 +157,24 @@
   function renderQuestions() {
     const questions = currentQuestions();
     els.suggestionCount.textContent = `${questions.length} passende Einstiege`;
+
+    if (!questions.length) {
+      els.questionList.innerHTML = `<article class="confidence-notice compass-no-results">
+        <p class="hero-kicker">Keine passenden Einstiege</p>
+        <h3>Für diese Filterkombination gibt es noch keine freigegebene Startfrage.</h3>
+        <p>Setze die Filter zurück oder formuliere die Frage direkt im Suchfeld.</p>
+        <button class="btn btn-secondary" type="button" data-compass-reset>Filter zurücksetzen</button>
+      </article>`;
+      const resetButton = els.questionList.querySelector("[data-compass-reset]");
+      resetButton?.addEventListener("click", () => {
+        state.topic = "";
+        els.query.value = "";
+        renderTopics();
+        renderQuestions();
+      });
+      return;
+    }
+
     els.questionList.innerHTML = questions
       .map((question) => `<button type="button" class="compass-question-card" data-question-id="${escapeHtml(question.id)}">
         <span>${escapeHtml(question.question)}</span>
@@ -167,7 +196,7 @@
     }
   }
 
-  function selectQuestion(id) {
+  function selectQuestion(id, options = {}) {
     const question = state.questions.find((item) => item.id === id);
     if (!question) return;
     const answer = state.answers.find((item) => item.id === question.answer_template_id);
@@ -177,7 +206,9 @@
     }
     state.questionId = id;
     state.depth = "einfach";
-    els.query.value = question.question;
+    if (options.syncQuery !== false) {
+      els.query.value = question.question;
+    }
     renderAnswer(question, answer);
   }
 
