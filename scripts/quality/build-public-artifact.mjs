@@ -249,6 +249,27 @@ function copySnapshotManifestFiles() {
   if (copied) console.log(`Copied ${copied} Wirkungskompass snapshot files from manifest.`);
 }
 
+function copyPublicRuntimeContentData() {
+  const publicJsonFiles = [
+    ...["compass-answer-templates.json", "compass-questions.json", "compass-topics.json", "impact-paths.json"]
+      .map((fileName) => path.join("content/kompass", fileName)),
+    path.join("content/wissen", "wissenskarten.json"),
+  ];
+
+  let copied = 0;
+
+  for (const relative of publicJsonFiles) {
+    const source = path.join(root, relative);
+    const destination = path.join(artifactDir, relative);
+    if (!fs.existsSync(source)) continue;
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.copyFileSync(source, destination);
+    copied += 1;
+  }
+
+  if (copied) console.log(`Copied ${copied} public runtime content data files.`);
+}
+
 function sanitizePublicDataString(value) {
   return String(value || "")
     .replace(/https?:\/\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
@@ -559,6 +580,7 @@ for (const entry of fs.readdirSync(root, { withFileTypes: true }).sort((a, b) =>
 normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
 copySnapshotManifestFiles();
+copyPublicRuntimeContentData();
 prunePublicArtifact();
 validateNoCorruptedHtmlAttributes();
 validateNoTemplatePlaceholders();
