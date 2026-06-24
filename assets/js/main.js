@@ -3755,15 +3755,31 @@ const WoekUserSpace = (() => {
   }
 
   function recordVisit(item) {
-    return upsertItem(
-      "visit_history",
-      {
-        ...item,
-        id: item.id || normalizeId(item.url || item.title),
-        visited_at: timestamp()
-      },
-      { limit: 500, timestampField: "visited_at" }
-    );
+    if (!item || typeof item !== "object") return null;
+    return updateStore((store) => {
+      const object = store.objects.visit_history;
+      const now = timestamp();
+      const id = item.id || normalizeId(item.url || item.title || `visit-${now}`);
+      const existing = Array.isArray(object.items) ? object.items.find((entry) => entry.id === id) : null;
+      const firstVisitedAt = existing?.first_visited_at || existing?.visited_at || now;
+      const nextItem = normalizeSyncRecord(
+        {
+          ...existing,
+          ...item,
+          id,
+          first_visited_at: firstVisitedAt,
+          visited_at: now,
+          updated_at: now,
+          visit_count: Math.max(1, Number(existing?.visit_count || 0) + 1),
+          synced_at: null,
+          sync_status: "local_changed"
+        },
+        store.sync
+      );
+      object.items = [nextItem, ...(Array.isArray(object.items) ? object.items.filter((entry) => entry.id !== id) : [])].slice(0, 500);
+      touchObject(store, "visit_history", now);
+      return clone(nextItem);
+    });
   }
 
   function resetObject(objectName) {
@@ -5329,6 +5345,62 @@ const WirkungsraumLayer = (() => {
       .sort((a, b) => new Date(b.last_read_at || b.updated_at || 0) - new Date(a.last_read_at || a.updated_at || 0));
   }
 
+  function visitHistoryItems() {
+    const items = WoekUserSpace.getItems("visit_history");
+    return Array.isArray(items)
+      ? items
+          .filter((item) => item && item.url && item.title)
+          .map((item) => ({
+            ...item,
+            tags: Array.isArray(item.tags) ? item.tags : [],
+            visited_at: item.visited_at || item.updated_at || item.saved_at || null,
+            visit_count: Math.max(1, Number(item.visit_count || 1))
+          }))
+          .sort((a, b) => new Date(b.visited_at || 0) - new Date(a.visited_at || 0))
+      : [];
+  }
+
+  function startOfLocalDay(date) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  }
+
+  function startOfLocalWeek(date) {
+    const day = date.getDay() || 7;
+    const start = startOfLocalDay(date);
+    start.setDate(start.getDate() - day + 1);
+    return start;
+  }
+
+  function historyGroupLabel(value, now = new Date()) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "Ohne Datum";
+    const today = startOfLocalDay(now);
+    const visitedDay = startOfLocalDay(date);
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const weekStart = startOfLocalWeek(now);
+    const previousWeekStart = new Date(weekStart);
+    previousWeekStart.setDate(weekStart.getDate() - 7);
+
+    if (visitedDay.getTime() === today.getTime()) return "Heute";
+    if (visitedDay.getTime() === yesterday.getTime()) return "Gestern";
+    if (visitedDay >= weekStart) return "Diese Woche";
+    if (visitedDay >= previousWeekStart) return "Letzte Woche";
+    if (date.getFullYear() === now.getFullYear() && date.getMonth() === now.getMonth()) return "Dieser Monat";
+    return "Älter";
+  }
+
+  function groupHistoryItems(items) {
+    const order = ["Heute", "Gestern", "Diese Woche", "Letzte Woche", "Dieser Monat", "Älter", "Ohne Datum"];
+    const grouped = new Map(order.map((label) => [label, []]));
+    items.forEach((item) => {
+      const label = historyGroupLabel(item.visited_at);
+      if (!grouped.has(label)) grouped.set(label, []);
+      grouped.get(label).push(item);
+    });
+    return order.map((label) => ({ label, items: grouped.get(label) || [] })).filter((group) => group.items.length);
+  }
+
   function continueUrl(url) {
     const target = new URL(url || "/", window.location.origin);
     target.searchParams.set("weiterlesen", "1");
@@ -5396,6 +5468,49 @@ const WirkungsraumLayer = (() => {
     items.forEach((item) => container.append(itemCard(item, options)));
   }
 
+  function historyCard(item) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-item wirkungsraum-history-card";
+    const tags = Array.isArray(item.tags) ? item.tags.slice(0, 4) : [];
+    const visitCount = Number(item.visit_count || 1);
+    const visited = item.visited_at ? `<p class="wirkungsraum-meta">Besucht: ${escapeHtml(formatDateTime(item.visited_at))}${visitCount > 1 ? ` · ${visitCount} Aufrufe` : ""}</p>` : "";
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")}</p>
+      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      ${visited}
+      ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Zur Seite springen</a>
+      </p>
+    `;
+    return article;
+  }
+
+  function renderHistoryList(container, items) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">Noch keine Historie. Öffne Inhalte auf der Website, dann erscheinen sie hier nach Zeitraum gruppiert.</p>`;
+      container.append(empty);
+      return;
+    }
+    groupHistoryItems(items).forEach((group) => {
+      const section = document.createElement("section");
+      section.className = "wirkungsraum-history-group";
+      section.setAttribute("aria-label", `Historie: ${group.label}`);
+      const title = document.createElement("h3");
+      title.className = "wirkungsraum-history-heading";
+      title.textContent = group.label;
+      const list = document.createElement("div");
+      list.className = "wirkungsraum-list wirkungsraum-history-items";
+      group.items.forEach((item) => list.append(historyCard(item)));
+      section.append(title, list);
+      container.append(section);
+    });
+  }
+
   function exportFileName() {
     return `woek-user-space-${new Date().toISOString().slice(0, 10)}.json`;
   }
@@ -5454,7 +5569,8 @@ const WirkungsraumLayer = (() => {
       `Fortschritt: ${countObjectEntries(snapshot.objects.reading_progress)}`,
       `Sammlungen: ${countObjectEntries(snapshot.objects.collections)}`,
       `Lernliste: ${countObjectEntries(snapshot.objects.learning_items)}`,
-      `Notizen: ${countObjectEntries(snapshot.objects.notes)}`
+      `Notizen: ${countObjectEntries(snapshot.objects.notes)}`,
+      `Historie: ${countObjectEntries(snapshot.objects.visit_history)}`
     ].join(" · ");
   }
 
@@ -5559,6 +5675,7 @@ const WirkungsraumLayer = (() => {
   function refreshDashboardPanels(root, lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null)) {
     drawSavedDashboard(root);
     drawReadingDashboard(root);
+    drawHistoryDashboard(root);
     drawRelatedDashboard(root);
     drawCollectionsDashboard(root);
     drawLearningDashboard(root);
@@ -5571,7 +5688,8 @@ const WirkungsraumLayer = (() => {
     saved_items: "Merkliste",
     reading_progress: "Fortschritt",
     collections: "Sammlungen",
-    notes: "Notizen"
+    notes: "Notizen",
+    visit_history: "Historie"
   };
 
   function parseContentDate(value) {
@@ -5928,6 +6046,13 @@ const WirkungsraumLayer = (() => {
     if (statProgress) statProgress.textContent = String(reading.length);
     const statRead = root.querySelector("[data-stat-read]");
     if (statRead) statRead.textContent = String(reading.filter((item) => itemStatus(item) === "gelesen").length);
+  }
+
+  function drawHistoryDashboard(root) {
+    const history = visitHistoryItems();
+    renderHistoryList(root.querySelector("[data-history-list]"), history.slice(0, 80));
+    const statHistory = root.querySelector("[data-stat-history]");
+    if (statHistory) statHistory.textContent = String(history.length);
   }
 
   function noteCard(note) {
@@ -6396,6 +6521,15 @@ const WirkungsraumLayer = (() => {
           if (objectName === "saved_items") clearCollectionItemIds();
           refreshDashboardPanels(root);
           dataStatus(root, `${label} gelöscht.`, "success");
+          return;
+        }
+        const clearHistory = event.target instanceof HTMLElement ? event.target.closest("[data-clear-history]") : null;
+        if (clearHistory instanceof HTMLButtonElement) {
+          if (!window.confirm("Besuchshistorie lokal aus diesem Browser löschen?")) return;
+          WoekUserSpace.resetObject("visit_history");
+          drawHistoryDashboard(root);
+          drawNextStepsDashboard(root);
+          dataStatus(root, "Historie gelöscht.", "success");
           return;
         }
         const resetAll = event.target instanceof HTMLElement ? event.target.closest("[data-reset-wirkungsraum-all]") : null;

@@ -778,6 +778,30 @@
   min-height: 0;
 }
 
+.wirkungsraum-history-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.wirkungsraum-history-group {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.wirkungsraum-history-heading {
+  margin: 0;
+  color: var(--green-dark);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wirkungsraum-history-items {
+  align-items: stretch;
+}
+
 .wirkungsraum-item .card-title {
   margin-bottom: 0.75rem;
 }
