@@ -802,6 +802,71 @@
   gap: 1.25rem;
 }
 
+.wirkungsraum-collapsible {
+  margin-top: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+
+.wirkungsraum-collapsible summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.4rem;
+  padding: 0.95rem 1.05rem;
+  color: var(--ink);
+  font-weight: 900;
+  cursor: pointer;
+  list-style: none;
+}
+
+.wirkungsraum-collapsible summary::-webkit-details-marker {
+  display: none;
+}
+
+.wirkungsraum-collapsible summary::after {
+  content: "anzeigen";
+  flex: 0 0 auto;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wirkungsraum-collapsible[open] summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.wirkungsraum-collapsible[open] summary::after {
+  content: "ausblenden";
+}
+
+.wirkungsraum-collapsible summary:focus-visible {
+  outline: 3px solid rgba(47, 134, 103, 0.28);
+  outline-offset: -3px;
+}
+
+.wirkungsraum-collapsible-count {
+  margin-left: auto;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: rgba(47, 134, 103, 0.08);
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.wirkungsraum-collapsible-body {
+  padding: 1rem;
+}
+
 .wirkungsraum-history-group {
   display: grid;
   gap: 0.8rem;

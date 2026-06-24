@@ -7,7 +7,7 @@
     <meta name="description" content="Mein Wirkungsraum ist das persönliche Wissens- und Lerncockpit der Wirkungsökonomie: Merken, Historie, Such- und KI-Anfragen, Sammlungen, Notizen, Wissensnetz und Empfehlungen. Lokal, datenschutzfreundlich und ohne Login.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260624-cross-sell">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260624-collapsible-history">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -200,9 +200,17 @@
           <div class="wirkungsraum-toolbar">
             <button class="btn btn-secondary" type="button" data-clear-history>Historie leeren</button>
           </div>
-          <div class="wirkungsraum-history-list" data-history-list>
-            <article class="card"><p class="card-text">Noch keine Historie. Öffne Inhalte auf der Website, dann erscheinen sie hier nach Zeitraum gruppiert.</p></article>
-          </div>
+          <details class="wirkungsraum-collapsible" data-history-collapsible>
+            <summary>
+              <span>Besuchte Inhalte anzeigen</span>
+              <span class="wirkungsraum-collapsible-count" data-history-collapse-count>0 Einträge</span>
+            </summary>
+            <div class="wirkungsraum-collapsible-body">
+              <div class="wirkungsraum-history-list" data-history-list>
+                <article class="card"><p class="card-text">Noch keine Historie. Öffne Inhalte auf der Website, dann erscheinen sie hier nach Zeitraum gruppiert.</p></article>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -217,9 +225,17 @@
             <a class="btn btn-secondary" href="../suche.html">Suche öffnen</a>
             <button class="btn btn-secondary" type="button" data-clear-search-history>Suchanfragen leeren</button>
           </div>
-          <div class="wirkungsraum-history-list" data-search-history-list>
-            <article class="card"><p class="card-text">Noch keine Suchanfragen gespeichert. Nutze die Suche, dann erscheinen Anfragen und Treffer hier.</p></article>
-          </div>
+          <details class="wirkungsraum-collapsible" data-search-history-collapsible>
+            <summary>
+              <span>Vergangene Suchanfragen anzeigen</span>
+              <span class="wirkungsraum-collapsible-count" data-search-history-collapse-count>0 Einträge</span>
+            </summary>
+            <div class="wirkungsraum-collapsible-body">
+              <div class="wirkungsraum-history-list" data-search-history-list>
+                <article class="card"><p class="card-text">Noch keine Suchanfragen gespeichert. Nutze die Suche, dann erscheinen Anfragen und Treffer hier.</p></article>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -234,9 +250,17 @@
             <a class="btn btn-secondary" href="../woek-ki/">WÖk-KI öffnen</a>
             <button class="btn btn-secondary" type="button" data-clear-ai-history>KI-Anfragen leeren</button>
           </div>
-          <div class="wirkungsraum-history-list" data-ai-history-list>
-            <article class="card"><p class="card-text">Noch keine KI-Anfragen gespeichert. Stelle der WÖk-KI eine Frage, dann erscheinen Frage, Antwort und Quellen hier.</p></article>
-          </div>
+          <details class="wirkungsraum-collapsible" data-ai-history-collapsible>
+            <summary>
+              <span>Vergangene KI-Anfragen anzeigen</span>
+              <span class="wirkungsraum-collapsible-count" data-ai-history-collapse-count>0 Einträge</span>
+            </summary>
+            <div class="wirkungsraum-collapsible-body">
+              <div class="wirkungsraum-history-list" data-ai-history-list>
+                <article class="card"><p class="card-text">Noch keine KI-Anfragen gespeichert. Stelle der WÖk-KI eine Frage, dann erscheinen Frage, Antwort und Quellen hier.</p></article>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -570,6 +594,6 @@
       </div>
     </footer>
     <script src="../assets/js/vendor/qrcode-generator.js?v=20260605"></script>
-    <script src="../assets/js/main.js?v=20260624-cross-sell"></script>
+    <script src="../assets/js/main.js?v=20260624-collapsible-history"></script>
   </body>
 </html>

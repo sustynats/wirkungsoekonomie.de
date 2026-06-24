@@ -5761,6 +5761,7 @@ const WirkungsraumLayer = (() => {
     );
     const stat = root.querySelector("[data-stat-search-history]");
     if (stat) stat.textContent = String(items.length);
+    updateCollapsibleCount(root, "[data-search-history-collapse-count]", items.length);
   }
 
   function drawAiQueryHistoryDashboard(root) {
@@ -5775,6 +5776,7 @@ const WirkungsraumLayer = (() => {
     );
     const stat = root.querySelector("[data-stat-ai-history]");
     if (stat) stat.textContent = String(items.length);
+    updateCollapsibleCount(root, "[data-ai-history-collapse-count]", items.length);
   }
 
   function drawQueryHistoryInlinePanels() {
@@ -5963,6 +5965,15 @@ const WirkungsraumLayer = (() => {
       return;
     }
     showRecoveryImportPanel(root, decoded.package);
+  }
+
+  function openAnchoredCollapsible(root) {
+    const id = decodeURIComponent((window.location.hash || "").replace(/^#/, ""));
+    if (!id) return;
+    const section = document.getElementById(id);
+    if (!section || !root.contains(section)) return;
+    const panel = section.querySelector(".wirkungsraum-collapsible");
+    if (panel instanceof HTMLDetailsElement) panel.open = true;
   }
 
   function refreshDashboardPanels(root, lastVisit = WoekUserSpace.getSetting("last_wirkungsraum_visit", null)) {
@@ -6709,6 +6720,13 @@ const WirkungsraumLayer = (() => {
     renderHistoryList(root.querySelector("[data-history-list]"), history.slice(0, 80));
     const statHistory = root.querySelector("[data-stat-history]");
     if (statHistory) statHistory.textContent = String(history.length);
+    updateCollapsibleCount(root, "[data-history-collapse-count]", history.length);
+  }
+
+  function updateCollapsibleCount(root, selector, count) {
+    const node = root?.querySelector?.(selector);
+    if (!(node instanceof HTMLElement)) return;
+    node.textContent = `${count} ${count === 1 ? "Eintrag" : "Einträge"}`;
   }
 
   function noteCard(note) {
@@ -7321,11 +7339,15 @@ const WirkungsraumLayer = (() => {
           window.setTimeout(() => (exportButton.textContent = "JSON exportieren"), 1400);
         }
       });
-      window.addEventListener("hashchange", () => handleRecoveryHash(root));
+      window.addEventListener("hashchange", () => {
+        handleRecoveryHash(root);
+        openAnchoredCollapsible(root);
+      });
     }
 
     refreshDashboardPanels(root, validLastVisit ? validLastVisit.toISOString() : null);
     handleRecoveryHash(root);
+    openAnchoredCollapsible(root);
   }
 
   function comparablePath(value) {
