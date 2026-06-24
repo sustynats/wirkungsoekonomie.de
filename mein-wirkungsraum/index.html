@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mein Wirkungsraum | Persönliches Wissens- und Lerncockpit</title>
-    <meta name="description" content="Mein Wirkungsraum ist das persönliche Wissens- und Lerncockpit der Wirkungsökonomie: Merken, Historie, Suchanfragen, KI-Anfragen, Weiterlesen, Lesefortschritt, Glossar-Lernen, Sammlungen, Akademie-Fortschritt, Notizen, Wissensnetz, Empfehlungen sowie Export und Import. Lokal, datenschutzfreundlich und ohne Login.">
+    <meta name="description" content="Mein Wirkungsraum ist das persönliche Wissens- und Lerncockpit der Wirkungsökonomie: Merken, Historie, Such- und KI-Anfragen, Sammlungen, Notizen, Wissensnetz und Empfehlungen. Lokal, datenschutzfreundlich und ohne Login.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260624-query-history">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260624-cross-sell">
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -80,6 +80,7 @@
             <a class="btn btn-secondary" href="#zuletzt-gelesen">Weiterlesen</a>
             <a class="btn btn-secondary" href="#neue-inhalte">Neue Inhalte</a>
             <a class="btn btn-secondary" href="#verwandte-inhalte">Wissensnetz</a>
+            <a class="btn btn-secondary" href="#das-koennte-dir-gefallen">Das könnte Dir gefallen</a>
             <a class="btn btn-secondary" href="#naechste-schritte">Nächste Schritte</a>
             <a class="btn btn-secondary" href="#lernliste">Lernliste</a>
             <a class="btn btn-secondary" href="#akademie-fortschritt">Akademie</a>
@@ -100,6 +101,7 @@
             <article class="card"><p class="card-kicker">Historie</p><strong data-stat-history>0</strong><span>besuchte Inhalte</span></article>
             <article class="card"><p class="card-kicker">Suchanfragen</p><strong data-stat-search-history>0</strong><span>gespeicherte Suchen</span></article>
             <article class="card"><p class="card-kicker">KI-Anfragen</p><strong data-stat-ai-history>0</strong><span>gespeicherte Antworten</span></article>
+            <article class="card"><p class="card-kicker">Empfehlungen</p><strong data-stat-cross-sell>0</strong><span>lokale Anschlüsse</span></article>
             <article class="card"><p class="card-kicker">Lernliste</p><strong data-stat-learning>0</strong><span>aktive Lerninhalte</span></article>
             <article class="card"><p class="card-kicker">Akademie</p><strong data-stat-academy>0</strong><span>Module mit Fortschritt</span></article>
             <article class="card"><p class="card-kicker">Sammlungen</p><strong data-stat-collections>0</strong><span>thematische Bündel</span></article>
@@ -260,6 +262,19 @@
           </div>
           <div class="wirkungsraum-list wirkungsraum-related-list" data-related-content-list>
             <article class="card"><p class="card-text">Merke zuerst Inhalte. Danach zeigt dir das Wissensnetz verwandte Begriffe, Kapitel, Dokumente, Werkzeuge, Debatten und Akademie-Module.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="das-koennte-dir-gefallen">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Empfehlungen</p>
+            <h2>Das könnte Dir gefallen</h2>
+            <p>Aus Besuchshistorie, Merkliste, Lesestand, Sammlungen, Suchanfragen und KI-Anfragen entstehen lokal passende Anschlussinhalte. Der Bereich nutzt keine serverseitige Personenbewertung und kein verstecktes Tracking anderer Nutzer:innen.</p>
+          </div>
+          <div class="wirkungsraum-list wirkungsraum-recommendation-list" data-cross-sell-list>
+            <article class="card"><p class="card-text">Empfehlungen werden aus deinem lokalen Wirkungsraum berechnet.</p></article>
           </div>
         </div>
       </section>
@@ -555,6 +570,6 @@
       </div>
     </footer>
     <script src="../assets/js/vendor/qrcode-generator.js?v=20260605"></script>
-    <script src="../assets/js/main.js?v=20260624-query-history"></script>
+    <script src="../assets/js/main.js?v=20260624-cross-sell"></script>
   </body>
 </html>

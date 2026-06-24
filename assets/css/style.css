@@ -227,6 +227,25 @@
   gap: 0.65rem;
 }
 
+.wirkungsraum-recommendation-card {
+  display: grid;
+  gap: 0.7rem;
+  border-left: 4px solid rgba(212, 161, 63, 0.58);
+}
+
+.wirkungsraum-recommendation-reason {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 780;
+  line-height: 1.45;
+}
+
+.wirkungsraum-recommendation-reason strong {
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
 .wirkungsraum-update-card,
 .wirkungsraum-step-card {
   display: grid;

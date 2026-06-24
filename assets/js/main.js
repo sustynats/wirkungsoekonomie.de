@@ -4390,6 +4390,7 @@ const WirkungsraumLayer = (() => {
   let knowledgeCatalogPromise = null;
   let recentContentPromise = null;
   let relatedRenderRun = 0;
+  let crossSellRenderRun = 0;
 
   function toArray(value) {
     if (Array.isArray(value)) return value;
@@ -5973,6 +5974,7 @@ const WirkungsraumLayer = (() => {
     drawLearningDashboard(root);
     drawNotesDashboard(root);
     drawNewContentDashboard(root, lastVisit);
+    drawCrossSellDashboard(root);
     drawNextStepsDashboard(root);
     drawSearchHistoryDashboard(root);
     drawAiQueryHistoryDashboard(root);
@@ -6329,6 +6331,364 @@ const WirkungsraumLayer = (() => {
       });
   }
 
+  function recommendationNodeFromItem(item = {}, options = {}) {
+    const rawUrl = item.url || item.href || "";
+    const url = graphPath(rawUrl);
+    if (!url && !options.allowEmptyUrl) return null;
+    if (url && isKnowledgeHubPath(url)) return null;
+    const title = cleanText(item.title || item.label || item.question || item.query || url);
+    if (!title) return null;
+    const type = cleanText(options.type || item.type || item.section || item.format || nodeTypeFromEntry(item) || "Inhalt");
+    const category = cleanText(item.category || item.section || item.documentType || type);
+    const tags = uniqueStrings([item.tags, item.topics, item.aliases, item.standards, item.instruments, item.impactSpaces, category, type], 18);
+    const description = cleanText(item.description || item.excerpt || item.summaryShort || item.summary || item.answer || "").slice(0, 260);
+    const id = item.id || (url ? url.replace(/^\/+/, "") : graphSlug(title));
+    return {
+      id,
+      type,
+      title,
+      url,
+      category,
+      description,
+      tags,
+      priority: Number(item.priority || 0),
+      slug: graphSlug((url || "").split("/").filter(Boolean).pop() || title),
+      titleSlug: graphSlug(title),
+      tokens: graphTokens([title, description, category, type, tags], 48)
+    };
+  }
+
+  function crossSellExcludedPaths() {
+    const paths = new Set(["/mein-wirkungsraum"]);
+    [
+      ...savedItems(),
+      ...readingProgressItems(),
+      ...visitHistoryItems(),
+      ...learningItems()
+    ].forEach((item) => {
+      const path = graphPath(item.url || item.target_url || "");
+      if (path) paths.add(path);
+    });
+    notes().forEach((note) => {
+      const path = graphPath(note.target_url || "");
+      if (path) paths.add(path);
+    });
+    return paths;
+  }
+
+  function crossSellSignalWeight(base, count = 1, dateValue = "") {
+    const countBoost = Math.min(28, Math.max(0, Number(count || 1) - 1) * 5);
+    const date = parseContentDate(dateValue);
+    if (!date) return base + countBoost;
+    const ageDays = Math.max(0, (Date.now() - date.getTime()) / 86400000);
+    const recencyBoost = ageDays < 2 ? 18 : ageDays < 7 ? 12 : ageDays < 30 ? 6 : 0;
+    return base + countBoost + recencyBoost;
+  }
+
+  function addCrossSellSource(sources, item, label, weight, options = {}) {
+    const node = recommendationNodeFromItem(item, { allowEmptyUrl: true, type: options.type });
+    if (!node || !node.tokens.length) return;
+    sources.push({
+      node,
+      label,
+      weight,
+      sourceTitle: options.sourceTitle || node.title
+    });
+  }
+
+  function crossSellSources() {
+    const sources = [];
+    savedItems().slice(0, 28).forEach((item) => {
+      addCrossSellSource(sources, item, "Gemerkter Inhalt", crossSellSignalWeight(118, 1, item.saved_at || item.updated_at));
+    });
+    readingProgressItems().slice(0, 28).forEach((item) => {
+      const progressBoost = Math.min(20, normalizedProgress(item.progress) / 5);
+      addCrossSellSource(sources, item, "Lesestand", crossSellSignalWeight(84 + progressBoost, 1, item.last_read_at || item.updated_at));
+    });
+    visitHistoryItems().slice(0, 48).forEach((item) => {
+      addCrossSellSource(sources, item, "Historie", crossSellSignalWeight(62, item.visit_count, item.visited_at || item.updated_at));
+    });
+    learningItems().slice(0, 24).forEach((item) => {
+      addCrossSellSource(sources, item, "Lernliste", crossSellSignalWeight(92, 1, item.updated_at || item.added_at));
+    });
+    notes().slice(0, 20).forEach((note) => {
+      addCrossSellSource(
+        sources,
+        {
+          title: note.target_title,
+          url: note.target_url,
+          type: note.target_type || "Notiz",
+          category: note.target_category,
+          tags: note.tags,
+          description: note.content
+        },
+        "Notiz",
+        crossSellSignalWeight(66, 1, note.updated_at || note.created_at)
+      );
+    });
+    searchHistoryItems().slice(0, 18).forEach((item) => {
+      const query = item.query || "Gefilterte Suche";
+      addCrossSellSource(
+        sources,
+        {
+          title: `Suche: ${query}`,
+          type: "Suche",
+          category: "Suchanfrage",
+          tags: Object.values(item.filters || {}),
+          description: [
+            query,
+            ...(item.results || []).slice(0, 6).map((result) => `${result.title || ""} ${result.excerpt || result.description || ""}`)
+          ].join(" ")
+        },
+        "Suchanfrage",
+        crossSellSignalWeight(82, item.search_count, item.searched_at),
+        { sourceTitle: query, type: "Suche" }
+      );
+    });
+    aiQueryHistoryItems().slice(0, 18).forEach((item) => {
+      addCrossSellSource(
+        sources,
+        {
+          title: item.question,
+          type: "WÖk-KI",
+          category: "KI-Anfrage",
+          tags: item.sources?.map((source) => source.type || source.title),
+          description: [item.answer, ...(item.sources || []).slice(0, 5).map((source) => `${source.title || ""} ${source.excerpt || source.description || ""}`)].join(" ")
+        },
+        "KI-Anfrage",
+        crossSellSignalWeight(82, item.ask_count, item.asked_at),
+        { sourceTitle: item.question, type: "WÖk-KI" }
+      );
+    });
+    collections().slice(0, 18).forEach((collection) => {
+      addCrossSellSource(
+        sources,
+        {
+          title: collection.title,
+          type: "Sammlung",
+          category: "Sammlung",
+          description: collection.description,
+          tags: collection.item_ids
+        },
+        "Sammlung",
+        crossSellSignalWeight(58, collection.item_ids?.length || 1, collection.updated_at)
+      );
+    });
+    return sources;
+  }
+
+  function addCrossSellCandidate(map, candidate, context = {}) {
+    const node = candidate?.url ? recommendationNodeFromItem(candidate) : null;
+    const target = node || candidate;
+    const url = graphPath(target?.url || "");
+    if (!url || context.excludedPaths?.has(url) || isKnowledgeHubPath(url)) return;
+    const title = cleanText(target.title);
+    if (!title) return;
+    const score = Number(context.score || target.score || 0);
+    const reason = cleanText(context.reason || target.reason || "Thematische Nähe");
+    const sourceTitle = cleanText(context.sourceTitle || target.sourceTitle || "");
+    const label = cleanText(context.label || target.recommendationLabel || "Empfehlung");
+    const existing = map.get(url);
+    if (existing) {
+      existing.score += Math.max(1, Math.round(score * 0.7));
+      existing.reasons = uniqueStrings([existing.reasons, reason], 4);
+      existing.sourceTitles = uniqueStrings([existing.sourceTitles, sourceTitle], 4);
+      existing.recommendationLabels = uniqueStrings([existing.recommendationLabels, label], 3);
+      existing.reason = existing.reasons.join(" · ");
+      existing.recommendationLabel = existing.recommendationLabels[0] || "Empfehlung";
+      return;
+    }
+    map.set(url, {
+      ...target,
+      url,
+      title,
+      type: cleanText(target.type || "Inhalt"),
+      category: cleanText(target.category || target.type || "Inhalt"),
+      description: cleanText(target.description || "").slice(0, 260),
+      tags: uniqueStrings([target.tags, target.category], 5),
+      score,
+      reason,
+      reasons: reason ? [reason] : [],
+      sourceTitles: sourceTitle ? [sourceTitle] : [],
+      recommendationLabel: label,
+      recommendationLabels: label ? [label] : []
+    });
+  }
+
+  function addCrossSellKnowledgeCandidates(catalog, sources, candidates, excludedPaths) {
+    sources.slice(0, 60).forEach((source) => {
+      const localCandidates = new Map();
+      addExplicitKnowledgeCandidates(catalog, source.node, localCandidates);
+      addTokenKnowledgeCandidates(catalog, source.node, localCandidates, excludedPaths);
+      localCandidates.forEach((candidate) => {
+        addCrossSellCandidate(candidates, candidate, {
+          excludedPaths,
+          label: source.label,
+          sourceTitle: source.sourceTitle,
+          score: candidate.score + source.weight,
+          reason: `${source.label}: ${candidate.reason || "thematischer Anschluss"}`
+        });
+      });
+    });
+  }
+
+  function addCrossSellStoredResults(candidates, excludedPaths) {
+    searchHistoryItems().slice(0, 14).forEach((searchItem) => {
+      const query = searchItem.query || "Gefilterte Suche";
+      (searchItem.results || []).slice(0, 6).forEach((result, index) => {
+        addCrossSellCandidate(candidates, {
+          ...result,
+          description: result.excerpt || result.description || "",
+          category: result.category || result.section || result.type
+        }, {
+          excludedPaths,
+          label: "Suchtreffer",
+          sourceTitle: query,
+          score: crossSellSignalWeight(112 - index * 4, searchItem.search_count, searchItem.searched_at),
+          reason: `Aus deiner Suche „${query}“`
+        });
+      });
+    });
+    aiQueryHistoryItems().slice(0, 14).forEach((aiItem) => {
+      (aiItem.sources || []).slice(0, 6).forEach((source, index) => {
+        addCrossSellCandidate(candidates, {
+          ...source,
+          description: source.excerpt || source.description || "",
+          category: source.type || "Quelle"
+        }, {
+          excludedPaths,
+          label: "KI-Quelle",
+          sourceTitle: aiItem.question,
+          score: crossSellSignalWeight(108 - index * 4, aiItem.ask_count, aiItem.asked_at),
+          reason: `Quelle zu deiner KI-Frage „${aiItem.question}“`
+        });
+      });
+    });
+  }
+
+  function addCrossSellRecentMatches(recentItems, sources, candidates, excludedPaths) {
+    const recentNodes = recentItems.map((item) => recommendationNodeFromItem(item)).filter(Boolean);
+    recentNodes.forEach((node, index) => {
+      let bestShared = [];
+      let bestSource = null;
+      sources.slice(0, 48).forEach((source) => {
+        const shared = node.tokens.filter((token) => source.node.tokens.includes(token)).slice(0, 5);
+        if (shared.length > bestShared.length) {
+          bestShared = shared;
+          bestSource = source;
+        }
+      });
+      if (bestShared.length) {
+        addCrossSellCandidate(candidates, node, {
+          excludedPaths,
+          label: "Neuer Anschluss",
+          sourceTitle: bestSource?.sourceTitle || "",
+          score: 74 + bestShared.length * 9 + Math.max(0, 16 - index),
+          reason: `Neuer Inhalt mit gemeinsamer Spur: ${bestShared.slice(0, 3).join(", ")}`
+        });
+      }
+    });
+  }
+
+  function fallbackCrossSellItems(recentItems, excludedPaths) {
+    return recentItems
+      .map((item, index) => ({ node: recommendationNodeFromItem(item), index }))
+      .filter(({ node }) => node && !excludedPaths.has(node.url))
+      .slice(0, 6)
+      .map(({ node, index }) => ({
+        ...node,
+        score: 30 - index,
+        reason: "Aktueller Einstieg aus Journal oder Bibliothek",
+        recommendationLabel: "Zum Einstieg",
+        sourceTitles: []
+      }));
+  }
+
+  async function crossSellRecommendations() {
+    const [catalog, recentItems] = await Promise.all([knowledgeCatalog(), recentContentItems().catch(() => [])]);
+    const excludedPaths = crossSellExcludedPaths();
+    const sources = crossSellSources();
+    if (!sources.length) return fallbackCrossSellItems(recentItems, excludedPaths);
+    const candidates = new Map();
+    addCrossSellKnowledgeCandidates(catalog, sources, candidates, excludedPaths);
+    addCrossSellStoredResults(candidates, excludedPaths);
+    addCrossSellRecentMatches(recentItems, sources, candidates, excludedPaths);
+    if (candidates.size < 6) {
+      fallbackCrossSellItems(recentItems, excludedPaths).forEach((item) => {
+        addCrossSellCandidate(candidates, item, {
+          excludedPaths,
+          label: item.recommendationLabel,
+          score: item.score,
+          reason: item.reason
+        });
+      });
+    }
+    const sorted = Array.from(candidates.values())
+      .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, "de"));
+    const balanced = [];
+    const typeCounts = new Map();
+    sorted.forEach((item) => {
+      if (balanced.length >= 12) return;
+      const count = typeCounts.get(item.type) || 0;
+      if (count >= 4 && sorted.length > 12) return;
+      balanced.push(item);
+      typeCounts.set(item.type, count + 1);
+    });
+    return balanced;
+  }
+
+  function crossSellCard(item) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-recommendation-card";
+    const tags = uniqueStrings([item.category, item.tags], 4);
+    const sources = uniqueStrings(item.sourceTitles || [], 3);
+    const sourceLine = sources.length ? `<p class="wirkungsraum-knowledge-path"><span>${sources.map(escapeHtml).join("</span><span>")}</span><span>passt zu</span><span>${escapeHtml(item.title || "Inhalt")}</span></p>` : "";
+    article.innerHTML = `
+      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")} · ${escapeHtml(item.recommendationLabel || "Empfehlung")}</p>
+      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      ${item.description ? `<p class="card-text">${escapeHtml(item.description)}</p>` : ""}
+      ${sourceLine}
+      ${item.reason ? `<p class="wirkungsraum-recommendation-reason"><strong>Warum:</strong> ${escapeHtml(item.reason)}</p>` : ""}
+      ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Inhalt öffnen</a>
+      </p>
+    `;
+    return article;
+  }
+
+  function renderCrossSellList(container, items) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = `<p class="card-text">Noch keine Empfehlungen. Besuche, suche, frage oder merke ein paar Inhalte, dann entsteht hier ein persönlicher Anschlussfinder.</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="/suche.html">Suche öffnen</a></p>`;
+      container.append(empty);
+      return;
+    }
+    items.forEach((item) => container.append(crossSellCard(item)));
+  }
+
+  function drawCrossSellDashboard(root) {
+    const container = root.querySelector("[data-cross-sell-list]");
+    if (!container) return;
+    const stat = root.querySelector("[data-stat-cross-sell]");
+    const run = ++crossSellRenderRun;
+    container.innerHTML = `<article class="card"><p class="card-text">Empfehlungen werden aus deinem lokalen Wirkungsraum berechnet.</p></article>`;
+    crossSellRecommendations()
+      .then((items) => {
+        if (run !== crossSellRenderRun) return;
+        renderCrossSellList(container, items);
+        if (stat) stat.textContent = String(items.length);
+      })
+      .catch(() => {
+        if (run !== crossSellRenderRun) return;
+        renderCrossSellList(container, []);
+        if (stat) stat.textContent = "0";
+      });
+  }
+
   function drawReadingDashboard(root) {
     const reading = readingProgressItems();
     const readingList = root.querySelector("[data-reading-list]");
@@ -6657,6 +7017,7 @@ const WirkungsraumLayer = (() => {
         if (statusSelect instanceof HTMLSelectElement) {
           updateLearningStatus(statusSelect.dataset.learningStatus || "", statusSelect.value);
           drawLearningDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
         }
         const importInput = event.target instanceof HTMLElement ? event.target.closest("[data-import-wirkungsraum-file]") : null;
@@ -6698,6 +7059,7 @@ const WirkungsraumLayer = (() => {
           const description = form.querySelector("[name='collection-description']")?.value || "";
           if (createCollection(title, description)) form.reset();
           drawCollectionsDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           return;
         }
@@ -6709,6 +7071,7 @@ const WirkungsraumLayer = (() => {
           const description = form.querySelector("[name='collection-description']")?.value || "";
           updateCollection(card.dataset.collectionId || "", { title, description });
           drawCollectionsDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
         }
       });
@@ -6725,6 +7088,7 @@ const WirkungsraumLayer = (() => {
           drawSavedDashboard(root);
           drawCollectionsDashboard(root);
           drawRelatedDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           dataStatus(root, "Merkliste gelöscht. Sammlungen wurden von Verweisen auf gelöschte Inhalte bereinigt.", "success");
           return;
@@ -6824,6 +7188,7 @@ const WirkungsraumLayer = (() => {
           if (!window.confirm("Besuchshistorie lokal aus diesem Browser löschen?")) return;
           WoekUserSpace.resetObject("visit_history");
           drawHistoryDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           dataStatus(root, "Historie gelöscht.", "success");
           return;
@@ -6833,6 +7198,7 @@ const WirkungsraumLayer = (() => {
           if (!window.confirm("Vergangene Suchanfragen lokal aus diesem Browser löschen?")) return;
           WoekUserSpace.resetObject("search_history");
           drawSearchHistoryDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           dataStatus(root, "Suchanfragen gelöscht.", "success");
           return;
@@ -6842,6 +7208,7 @@ const WirkungsraumLayer = (() => {
           if (!window.confirm("Vergangene KI-Anfragen lokal aus diesem Browser löschen?")) return;
           WoekUserSpace.resetObject("ai_query_history");
           drawAiQueryHistoryDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           dataStatus(root, "KI-Anfragen gelöscht.", "success");
           return;
@@ -6865,6 +7232,7 @@ const WirkungsraumLayer = (() => {
         if (removeLearning instanceof HTMLButtonElement) {
           removeLearningItem(removeLearning.dataset.removeLearning || "");
           drawLearningDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           return;
         }
@@ -6872,6 +7240,7 @@ const WirkungsraumLayer = (() => {
         if (removeNoteButton instanceof HTMLButtonElement && window.confirm("Diese lokale Notiz löschen?")) {
           removeNote(removeNoteButton.dataset.removeNote || "");
           drawNotesDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           return;
         }
@@ -6881,6 +7250,7 @@ const WirkungsraumLayer = (() => {
           if (part) {
             upsertLearningItem(academyItemFromPart(part));
             drawLearningDashboard(root);
+            drawCrossSellDashboard(root);
             drawNextStepsDashboard(root);
           }
           return;
@@ -6892,6 +7262,7 @@ const WirkungsraumLayer = (() => {
           drawSavedDashboard(root);
           drawCollectionsDashboard(root);
           drawRelatedDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           return;
         }
@@ -6899,6 +7270,7 @@ const WirkungsraumLayer = (() => {
         if (templateButton instanceof HTMLButtonElement) {
           createCollection(templateButton.dataset.collectionTemplate || templateButton.textContent || "", templateButton.dataset.collectionDescription || "");
           drawCollectionsDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           return;
         }
@@ -6925,6 +7297,7 @@ const WirkungsraumLayer = (() => {
         if (deleteButton instanceof HTMLButtonElement && window.confirm("Diese Sammlung löschen? Die gemerkten Inhalte bleiben erhalten.")) {
           deleteCollection(deleteButton.dataset.deleteCollection || "");
           drawCollectionsDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           return;
         }
@@ -6932,6 +7305,7 @@ const WirkungsraumLayer = (() => {
         if (removeCollectionItem instanceof HTMLButtonElement) {
           removeItemFromCollection(removeCollectionItem.dataset.collectionId || "", removeCollectionItem.dataset.itemId || "");
           drawCollectionsDashboard(root);
+          drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
           return;
         }
