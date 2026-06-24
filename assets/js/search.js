@@ -261,6 +261,9 @@
     entrypoints: [],
     ready: false,
     timer: null,
+    historyTimer: null,
+    historyForceNext: false,
+    lastHistoryKey: "",
     searchRun: 0,
   };
 
@@ -955,6 +958,50 @@
     );
   }
 
+  function compactSearchResults(results) {
+    return (Array.isArray(results) ? results : [])
+      .map(({ entry }) => ({
+        title: entry.title || "",
+        url: entry.url || "",
+        type: getDisplayBadge(entry, entry._group || classifyEntry(entry)),
+        excerpt: makeSnippet(entry, input.value.trim()) || entry.description || ""
+      }))
+      .filter((item) => item.title || item.url)
+      .slice(0, 12);
+  }
+
+  function searchHistoryKey(rawQuery, filters) {
+    return `${normalize(rawQuery)}::${JSON.stringify(filters || {})}`;
+  }
+
+  function recordSearchHistory(rawQuery, finalResults, totalResults) {
+    const query = rawQuery.trim();
+    const filters = getFiltersFromControls();
+    if (normalize(query).length < 2 && !Object.keys(filters).length) return;
+    if (!window.WoekUserSpace?.recordSearchQuery) return;
+    const key = searchHistoryKey(query, filters);
+    if (key === state.lastHistoryKey && !state.historyForceNext) return;
+    state.lastHistoryKey = key;
+    window.WoekUserSpace.recordSearchQuery({
+      query,
+      filters,
+      result_count: Array.isArray(finalResults) ? finalResults.length : 0,
+      total_result_count: Number.isFinite(Number(totalResults)) ? Number(totalResults) : null,
+      results: compactSearchResults(finalResults)
+    });
+    document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+  }
+
+  function queueSearchHistory(rawQuery, finalResults, totalResults) {
+    window.clearTimeout(state.historyTimer);
+    const delay = state.historyForceNext ? 0 : 1200;
+    const forceWasSet = state.historyForceNext;
+    state.historyTimer = window.setTimeout(() => {
+      recordSearchHistory(rawQuery, finalResults, totalResults);
+      if (forceWasSet) state.historyForceNext = false;
+    }, delay);
+  }
+
   function updateUrl(rawQuery) {
     const params = new URLSearchParams();
     if (rawQuery.trim()) params.set("q", rawQuery.trim());
@@ -1027,6 +1074,7 @@
         resultsList.innerHTML = `<li class="search-result-card"><h2>Keine Treffer gefunden</h2><p>Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.</p></li>`;
       }
       updateUrl(rawQuery);
+      queueSearchHistory(rawQuery, finalResults, totalResults);
     };
 
     const processChunk = () => {
@@ -1090,6 +1138,7 @@
     input.addEventListener("input", scheduleSearch);
     form.addEventListener("submit", (event) => {
       event.preventDefault();
+      state.historyForceNext = true;
       runSearch();
     });
     filterControls.forEach((control) => control.addEventListener("change", () => {
@@ -1115,6 +1164,7 @@
           control.value = control.value === value ? "" : value;
         }
         syncQuickFilters();
+        state.historyForceNext = true;
         runSearch();
       });
     });
@@ -1125,12 +1175,14 @@
         }
       });
       quickFilterButtons.forEach((button) => button.classList.remove("active"));
+      state.historyForceNext = true;
       runSearch();
     });
     suggestionButtons.forEach((button) => {
       button.addEventListener("click", () => {
         input.value = button.dataset.searchSuggestion || "";
         input.focus();
+        state.historyForceNext = true;
         runSearch();
       });
     });

@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="Ein quellengebundener Beta-Assistent für Fragen zur Wirkungsökonomie.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260624-query-history">
     <style>
       .woek-ai-shell {
         display: grid;
@@ -364,6 +364,18 @@
           </aside>
         </div>
       </section>
+      <section class="section section-soft wirkungsraum-query-inline" aria-labelledby="ai-history-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Mein Wirkungsraum</p>
+            <h2 id="ai-history-title">Meine vergangenen KI-Anfragen</h2>
+            <p>Frühere KI-Fragen bleiben mit Antwort und Quellen lokal in diesem Browser. Du kannst eine Frage erneut öffnen oder sie direkt wieder in das Eingabefeld übernehmen.</p>
+          </div>
+          <div class="wirkungsraum-history-list" data-ai-history-inline-list>
+            <article class="card"><p class="card-text">Noch keine vergangenen KI-Anfragen in diesem Browser.</p></article>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer" data-search-exclude>
       <div class="footer-grid">
@@ -514,7 +526,7 @@
       </div>
     </footer>
 
-    <script src="../assets/js/main.js?v=20260612-mobile-table-fix"></script>
+    <script src="../assets/js/main.js?v=20260624-query-history"></script>
     <script>
       const form = document.querySelector("#woek-ai-form");
       const question = document.querySelector("#woek-ai-question");
@@ -649,6 +661,7 @@
       }
 
       function renderGlossaryMatch(term, notice) {
+        const source = glossarySourceFromTerm(term);
         placeholder.hidden = true;
         answer.textContent = `${term.canonicalLabel}\n\n${term.shortDefinition || term.definition || ""}`;
         mode.textContent = "Glossar direkt";
@@ -657,24 +670,42 @@
         sourceCount.textContent = "1";
         warning.hidden = false;
         warning.textContent = notice || "Direkter Glossartreffer aus der Website. Für weitergehende Einordnung kannst du die Frage konkreter stellen.";
-        renderSources([
-          {
-            rank: 1,
-            section: "Begriffe",
-            type: "Glossarbegriff",
-            title: term.canonicalLabel,
-            url: term.url,
-            excerpt: term.shortDefinition || term.definition || "",
-          }
-        ]);
+        renderSources([source]);
+        return source;
       }
 
       function renderDirectGlossaryMatch(term) {
-        renderGlossaryMatch(term);
+        return renderGlossaryMatch(term);
       }
 
       function renderFallbackGlossaryMatch(term) {
-        renderGlossaryMatch(term, "Live-KI derzeit nicht verfügbar - Antwort aus dem Glossar.");
+        return renderGlossaryMatch(term, "Live-KI derzeit nicht verfügbar: Antwort aus dem Glossar.");
+      }
+
+      function glossarySourceFromTerm(term) {
+        return {
+          rank: 1,
+          section: "Begriffe",
+          type: "Glossarbegriff",
+          title: term.canonicalLabel,
+          url: term.url,
+          excerpt: term.shortDefinition || term.definition || "",
+        };
+      }
+
+      function recordAiHistory(questionValue, payload = {}) {
+        if (!window.WoekUserSpace?.recordAiQuery) return;
+        const items = Array.isArray(payload.sources) ? payload.sources : [];
+        window.WoekUserSpace.recordAiQuery({
+          question: questionValue,
+          answer: payload.answer || answer.textContent || "",
+          sources: items,
+          source_count: Number.isFinite(Number(payload.source_count)) ? Number(payload.source_count) : items.length,
+          mode: payload.mode || mode.textContent || "",
+          provider: payload.provider || provider.textContent || "",
+          model: payload.model || model.textContent || ""
+        });
+        document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
       }
 
       function renderSources(items) {
@@ -708,6 +739,17 @@
         });
       });
 
+      function applyQuestionParam() {
+        const params = new URLSearchParams(window.location.search);
+        const value = params.get("frage");
+        if (!value) return;
+        question.value = value;
+        setLoading(false);
+        clearResult();
+      }
+
+      applyQuestionParam();
+
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
         const value = question.value.trim();
@@ -725,7 +767,8 @@
             const glossaryTerms = await loadGlossaryLookup();
             const glossaryMatch = matchGlossaryTerm(glossaryTerms, value);
             if (glossaryMatch) {
-              renderDirectGlossaryMatch(glossaryMatch);
+              const source = renderDirectGlossaryMatch(glossaryMatch);
+              recordAiHistory(value, { answer: answer.textContent, sources: [source], source_count: 1 });
               return;
             }
           } catch (lookupError) {
@@ -751,12 +794,21 @@
           warning.hidden = true;
           warning.textContent = "";
           renderSources(data.sources || []);
+          recordAiHistory(value, {
+            answer: data.answer || "",
+            sources: data.sources || [],
+            source_count: data.sources?.length || 0,
+            mode: modeLabel(data.mode),
+            provider: data.provider || "Hosted API",
+            model: data.model || "OpenAI-kompatibel"
+          });
         } catch (error) {
           try {
             const glossaryTerms = await loadGlossaryLookup();
             const glossaryMatch = matchGlossaryTerm(glossaryTerms, value, { allowBroad: true });
             if (glossaryMatch) {
-              renderFallbackGlossaryMatch(glossaryMatch);
+              const source = renderFallbackGlossaryMatch(glossaryMatch);
+              recordAiHistory(value, { answer: answer.textContent, sources: [source], source_count: 1 });
               return;
             }
           } catch (fallbackError) {

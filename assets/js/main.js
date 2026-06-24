@@ -3331,8 +3331,8 @@ const CopyAnswerLayer = (() => {
 
 const WoekUserSpace = (() => {
   const namespace = "woek_user_space";
-  const schemaVersion = 2;
-  const exportVersion = 2;
+  const schemaVersion = 3;
+  const exportVersion = 3;
   const recoveryLinkVersion = 1;
   const recoveryHashKey = "wrl";
   const conflictStrategy = "latest_updated_at_wins";
@@ -3344,6 +3344,8 @@ const WoekUserSpace = (() => {
     learning_items: { version: 1, kind: "list" },
     notes: { version: 1, kind: "list" },
     visit_history: { version: 1, kind: "list" },
+    search_history: { version: 1, kind: "list" },
+    ai_query_history: { version: 1, kind: "list" },
     user_settings: { version: 1, kind: "settings" }
   };
   const legacyKeys = {
@@ -3782,6 +3784,89 @@ const WoekUserSpace = (() => {
     });
   }
 
+  function normalizeHistoryResults(results, limit = 10) {
+    return (Array.isArray(results) ? results : [])
+      .filter((item) => item && typeof item === "object")
+      .map((item) => ({
+        title: String(item.title || item.label || "").replace(/\s+/g, " ").trim().slice(0, 180),
+        url: String(item.url || item.href || "").trim().slice(0, 420),
+        type: String(item.type || item.section || item.format || "").replace(/\s+/g, " ").trim().slice(0, 80),
+        excerpt: String(item.excerpt || item.description || item.summary || "").replace(/\s+/g, " ").trim().slice(0, 320)
+      }))
+      .filter((item) => item.title || item.url || item.excerpt)
+      .slice(0, limit);
+  }
+
+  function recordSearchQuery(item) {
+    if (!item || typeof item !== "object") return null;
+    const query = String(item.query || "").replace(/\s+/g, " ").trim();
+    const filters = item.filters && typeof item.filters === "object" && !Array.isArray(item.filters) ? item.filters : {};
+    if (!query && !Object.keys(filters).length) return null;
+    return updateStore((store) => {
+      const object = store.objects.search_history;
+      const now = timestamp();
+      const id = item.id || normalizeId(`search-${query || "filter"}-${stableStringify(filters)}`);
+      const existing = Array.isArray(object.items) ? object.items.find((entry) => entry.id === id) : null;
+      const firstSearchedAt = existing?.first_searched_at || existing?.searched_at || now;
+      const nextItem = normalizeSyncRecord(
+        {
+          ...existing,
+          ...item,
+          id,
+          query,
+          filters,
+          results: normalizeHistoryResults(item.results, 12),
+          first_searched_at: firstSearchedAt,
+          searched_at: now,
+          updated_at: now,
+          search_count: Math.max(1, Number(existing?.search_count || 0) + 1),
+          result_count: Number.isFinite(Number(item.result_count)) ? Number(item.result_count) : normalizeHistoryResults(item.results).length,
+          total_result_count: Number.isFinite(Number(item.total_result_count)) ? Number(item.total_result_count) : null,
+          synced_at: null,
+          sync_status: "local_changed"
+        },
+        store.sync
+      );
+      object.items = [nextItem, ...(Array.isArray(object.items) ? object.items.filter((entry) => entry.id !== id) : [])].slice(0, 120);
+      touchObject(store, "search_history", now);
+      return clone(nextItem);
+    });
+  }
+
+  function recordAiQuery(item) {
+    if (!item || typeof item !== "object") return null;
+    const question = String(item.question || "").replace(/\s+/g, " ").trim();
+    if (question.length < 4) return null;
+    return updateStore((store) => {
+      const object = store.objects.ai_query_history;
+      const now = timestamp();
+      const id = item.id || normalizeId(`ki-${question}`);
+      const existing = Array.isArray(object.items) ? object.items.find((entry) => entry.id === id) : null;
+      const firstAskedAt = existing?.first_asked_at || existing?.asked_at || now;
+      const nextItem = normalizeSyncRecord(
+        {
+          ...existing,
+          ...item,
+          id,
+          question,
+          answer: String(item.answer || "").trim().slice(0, 6000),
+          sources: normalizeHistoryResults(item.sources, 10),
+          first_asked_at: firstAskedAt,
+          asked_at: now,
+          updated_at: now,
+          ask_count: Math.max(1, Number(existing?.ask_count || 0) + 1),
+          source_count: Number.isFinite(Number(item.source_count)) ? Number(item.source_count) : normalizeHistoryResults(item.sources).length,
+          synced_at: null,
+          sync_status: "local_changed"
+        },
+        store.sync
+      );
+      object.items = [nextItem, ...(Array.isArray(object.items) ? object.items.filter((entry) => entry.id !== id) : [])].slice(0, 120);
+      touchObject(store, "ai_query_history", now);
+      return clone(nextItem);
+    });
+  }
+
   function resetObject(objectName) {
     if (!objectDefinitions[objectName]) return false;
     return updateStore((store) => {
@@ -4074,6 +4159,8 @@ const WoekUserSpace = (() => {
     upsertRecord,
     addNote,
     recordVisit,
+    recordSearchQuery,
+    recordAiQuery,
     resetObject,
     resetAll
   };
@@ -5360,6 +5447,37 @@ const WirkungsraumLayer = (() => {
       : [];
   }
 
+  function searchHistoryItems() {
+    const items = WoekUserSpace.getItems("search_history");
+    return Array.isArray(items)
+      ? items
+          .filter((item) => item && (item.query || item.filters) && Array.isArray(item.results))
+          .map((item) => ({
+            ...item,
+            filters: item.filters && typeof item.filters === "object" && !Array.isArray(item.filters) ? item.filters : {},
+            results: Array.isArray(item.results) ? item.results : [],
+            searched_at: item.searched_at || item.updated_at || null,
+            search_count: Math.max(1, Number(item.search_count || 1))
+          }))
+          .sort((a, b) => new Date(b.searched_at || 0) - new Date(a.searched_at || 0))
+      : [];
+  }
+
+  function aiQueryHistoryItems() {
+    const items = WoekUserSpace.getItems("ai_query_history");
+    return Array.isArray(items)
+      ? items
+          .filter((item) => item && item.question)
+          .map((item) => ({
+            ...item,
+            sources: Array.isArray(item.sources) ? item.sources : [],
+            asked_at: item.asked_at || item.updated_at || null,
+            ask_count: Math.max(1, Number(item.ask_count || 1))
+          }))
+          .sort((a, b) => new Date(b.asked_at || 0) - new Date(a.asked_at || 0))
+      : [];
+  }
+
   function startOfLocalDay(date) {
     return new Date(date.getFullYear(), date.getMonth(), date.getDate());
   }
@@ -5395,6 +5513,17 @@ const WirkungsraumLayer = (() => {
     const grouped = new Map(order.map((label) => [label, []]));
     items.forEach((item) => {
       const label = historyGroupLabel(item.visited_at);
+      if (!grouped.has(label)) grouped.set(label, []);
+      grouped.get(label).push(item);
+    });
+    return order.map((label) => ({ label, items: grouped.get(label) || [] })).filter((group) => group.items.length);
+  }
+
+  function groupTimeItems(items, field) {
+    const order = ["Heute", "Gestern", "Diese Woche", "Letzte Woche", "Dieser Monat", "Älter", "Ohne Datum"];
+    const grouped = new Map(order.map((label) => [label, []]));
+    items.forEach((item) => {
+      const label = historyGroupLabel(item?.[field] || item?.updated_at);
       if (!grouped.has(label)) grouped.set(label, []);
       grouped.get(label).push(item);
     });
@@ -5511,6 +5640,167 @@ const WirkungsraumLayer = (() => {
     });
   }
 
+  function resultLinkList(results, emptyText = "Keine einzelnen Ergebnisse gespeichert.") {
+    const items = (Array.isArray(results) ? results : []).filter((item) => item && (item.title || item.url || item.excerpt)).slice(0, 5);
+    if (!items.length) return `<p class="card-text">${escapeHtml(emptyText)}</p>`;
+    return `
+      <ul class="wirkungsraum-query-results">
+        ${items.map((item) => {
+          const title = item.title || item.url || "Treffer";
+          const type = item.type ? `<span>${escapeHtml(item.type)}</span>` : "";
+          const excerpt = item.excerpt ? `<small>${escapeHtml(item.excerpt)}</small>` : "";
+          const label = `<strong>${escapeHtml(title)}</strong>${type}${excerpt}`;
+          return `<li>${item.url ? `<a href="${escapeAttribute(item.url)}">${label}</a>` : label}</li>`;
+        }).join("")}
+      </ul>
+    `;
+  }
+
+  function searchReplayUrl(item) {
+    const url = new URL("/suche.html", window.location.origin);
+    if (item.query) url.searchParams.set("q", item.query);
+    Object.entries(item.filters || {}).forEach(([key, value]) => {
+      if (!value) return;
+      const paramNames = {
+        section: "bereich",
+        impactSpaces: "wirkungsraum",
+        standards: "standard",
+        instruments: "instrument",
+        tags: "thema"
+      };
+      url.searchParams.set(paramNames[key] || key, value);
+    });
+    return `${url.pathname}${url.search}`;
+  }
+
+  function aiReplayUrl(item) {
+    const url = new URL("/woek-ki/", window.location.origin);
+    if (item.question) url.searchParams.set("frage", item.question);
+    return `${url.pathname}${url.search}`;
+  }
+
+  function searchHistoryCard(item, options = {}) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-item wirkungsraum-query-card";
+    const query = item.query || "Gefilterte Suche";
+    const count = Number.isFinite(Number(item.result_count)) ? Number(item.result_count) : (item.results || []).length;
+    const searches = Number(item.search_count || 1);
+    const filters = Object.entries(item.filters || {}).filter(([, value]) => value);
+    const when = item.searched_at ? formatDateTime(item.searched_at) : "";
+    article.innerHTML = `
+      <p class="card-kicker">Suche${when ? ` · ${escapeHtml(when)}` : ""}</p>
+      <h3 class="card-title">„${escapeHtml(query)}“</h3>
+      <p class="wirkungsraum-meta">${count} gespeicherte Treffer${searches > 1 ? ` · ${searches} Aufrufe` : ""}</p>
+      ${filters.length ? `<div class="chip-row">${filters.map(([key, value]) => `<span class="chip">${escapeHtml(`${key}: ${value}`)}</span>`).join("")}</div>` : ""}
+      ${resultLinkList(item.results)}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(searchReplayUrl(item))}">Erneut suchen</a>
+        ${options.dashboard ? "" : `<a class="btn btn-secondary" href="/mein-wirkungsraum/#suchanfragen">Im Wirkungsraum ansehen</a>`}
+      </p>
+    `;
+    return article;
+  }
+
+  function aiHistoryCard(item, options = {}) {
+    const article = document.createElement("article");
+    article.className = "card wirkungsraum-item wirkungsraum-query-card";
+    const sourcesCount = Number.isFinite(Number(item.source_count)) ? Number(item.source_count) : (item.sources || []).length;
+    const asks = Number(item.ask_count || 1);
+    const when = item.asked_at ? formatDateTime(item.asked_at) : "";
+    const answerExcerpt = cleanText(item.answer || "").slice(0, 420);
+    article.innerHTML = `
+      <p class="card-kicker">WÖk-KI${when ? ` · ${escapeHtml(when)}` : ""}</p>
+      <h3 class="card-title">${escapeHtml(item.question || "Frage")}</h3>
+      <p class="wirkungsraum-meta">${sourcesCount} Quelle${sourcesCount === 1 ? "" : "n"}${asks > 1 ? ` · ${asks} Aufrufe` : ""}</p>
+      ${answerExcerpt ? `<p class="card-text">${escapeHtml(answerExcerpt)}${cleanText(item.answer || "").length > answerExcerpt.length ? " ..." : ""}</p>` : ""}
+      ${resultLinkList(item.sources, "Keine Quellen gespeichert.")}
+      <p class="wirkungsraum-item-actions">
+        <a class="btn btn-primary" href="${escapeAttribute(aiReplayUrl(item))}">Frage erneut öffnen</a>
+        <button class="btn btn-secondary" type="button" data-prefill-ai-question="${escapeAttribute(item.question || "")}">Frage übernehmen</button>
+        ${options.dashboard ? "" : `<a class="btn btn-secondary" href="/mein-wirkungsraum/#ki-anfragen">Im Wirkungsraum ansehen</a>`}
+      </p>
+    `;
+    return article;
+  }
+
+  function renderGroupedQueryHistory(container, items, field, cardFactory, emptyMarkup, options = {}) {
+    if (!container) return;
+    container.innerHTML = "";
+    if (!items.length) {
+      const empty = document.createElement("article");
+      empty.className = "card";
+      empty.innerHTML = emptyMarkup;
+      container.append(empty);
+      return;
+    }
+    groupTimeItems(items, field).forEach((group) => {
+      const section = document.createElement("section");
+      section.className = "wirkungsraum-history-group";
+      section.setAttribute("aria-label", `${group.label}`);
+      const title = document.createElement("h3");
+      title.className = "wirkungsraum-history-heading";
+      title.textContent = group.label;
+      const list = document.createElement("div");
+      list.className = "wirkungsraum-list wirkungsraum-history-items";
+      group.items.slice(0, options.groupLimit || 40).forEach((item) => list.append(cardFactory(item, options)));
+      section.append(title, list);
+      container.append(section);
+    });
+  }
+
+  function drawSearchHistoryDashboard(root) {
+    const items = searchHistoryItems();
+    renderGroupedQueryHistory(
+      root.querySelector("[data-search-history-list]"),
+      items.slice(0, 80),
+      "searched_at",
+      searchHistoryCard,
+      `<p class="card-text">Noch keine Suchanfragen gespeichert. Nutze die Suche, dann erscheinen Anfragen und ihre Treffer hier.</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="/suche.html">Suche öffnen</a></p>`,
+      { dashboard: true }
+    );
+    const stat = root.querySelector("[data-stat-search-history]");
+    if (stat) stat.textContent = String(items.length);
+  }
+
+  function drawAiQueryHistoryDashboard(root) {
+    const items = aiQueryHistoryItems();
+    renderGroupedQueryHistory(
+      root.querySelector("[data-ai-history-list]"),
+      items.slice(0, 80),
+      "asked_at",
+      aiHistoryCard,
+      `<p class="card-text">Noch keine KI-Anfragen gespeichert. Stelle der WÖk-KI eine Frage, dann erscheinen Frage, Antwort und Quellen hier.</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="/woek-ki/">WÖk-KI öffnen</a></p>`,
+      { dashboard: true }
+    );
+    const stat = root.querySelector("[data-stat-ai-history]");
+    if (stat) stat.textContent = String(items.length);
+  }
+
+  function drawQueryHistoryInlinePanels() {
+    const searchPanel = document.querySelector("[data-search-history-inline-list]");
+    if (searchPanel) {
+      renderGroupedQueryHistory(
+        searchPanel,
+        searchHistoryItems().slice(0, 12),
+        "searched_at",
+        searchHistoryCard,
+        `<p class="card-text">Noch keine vergangenen Suchanfragen in diesem Browser.</p>`,
+        { groupLimit: 6 }
+      );
+    }
+    const aiPanel = document.querySelector("[data-ai-history-inline-list]");
+    if (aiPanel) {
+      renderGroupedQueryHistory(
+        aiPanel,
+        aiQueryHistoryItems().slice(0, 12),
+        "asked_at",
+        aiHistoryCard,
+        `<p class="card-text">Noch keine vergangenen KI-Anfragen in diesem Browser.</p>`,
+        { groupLimit: 6 }
+      );
+    }
+  }
+
   function exportFileName() {
     return `woek-user-space-${new Date().toISOString().slice(0, 10)}.json`;
   }
@@ -5570,7 +5860,9 @@ const WirkungsraumLayer = (() => {
       `Sammlungen: ${countObjectEntries(snapshot.objects.collections)}`,
       `Lernliste: ${countObjectEntries(snapshot.objects.learning_items)}`,
       `Notizen: ${countObjectEntries(snapshot.objects.notes)}`,
-      `Historie: ${countObjectEntries(snapshot.objects.visit_history)}`
+      `Historie: ${countObjectEntries(snapshot.objects.visit_history)}`,
+      `Suchanfragen: ${countObjectEntries(snapshot.objects.search_history)}`,
+      `KI-Anfragen: ${countObjectEntries(snapshot.objects.ai_query_history)}`
     ].join(" · ");
   }
 
@@ -5682,6 +5974,8 @@ const WirkungsraumLayer = (() => {
     drawNotesDashboard(root);
     drawNewContentDashboard(root, lastVisit);
     drawNextStepsDashboard(root);
+    drawSearchHistoryDashboard(root);
+    drawAiQueryHistoryDashboard(root);
   }
 
   const resetObjectLabels = {
@@ -5689,7 +5983,9 @@ const WirkungsraumLayer = (() => {
     reading_progress: "Fortschritt",
     collections: "Sammlungen",
     notes: "Notizen",
-    visit_history: "Historie"
+    visit_history: "Historie",
+    search_history: "Suchanfragen",
+    ai_query_history: "KI-Anfragen"
   };
 
   function parseContentDate(value) {
@@ -6532,9 +6828,27 @@ const WirkungsraumLayer = (() => {
           dataStatus(root, "Historie gelöscht.", "success");
           return;
         }
+        const clearSearchHistory = event.target instanceof HTMLElement ? event.target.closest("[data-clear-search-history]") : null;
+        if (clearSearchHistory instanceof HTMLButtonElement) {
+          if (!window.confirm("Vergangene Suchanfragen lokal aus diesem Browser löschen?")) return;
+          WoekUserSpace.resetObject("search_history");
+          drawSearchHistoryDashboard(root);
+          drawNextStepsDashboard(root);
+          dataStatus(root, "Suchanfragen gelöscht.", "success");
+          return;
+        }
+        const clearAiHistory = event.target instanceof HTMLElement ? event.target.closest("[data-clear-ai-history]") : null;
+        if (clearAiHistory instanceof HTMLButtonElement) {
+          if (!window.confirm("Vergangene KI-Anfragen lokal aus diesem Browser löschen?")) return;
+          WoekUserSpace.resetObject("ai_query_history");
+          drawAiQueryHistoryDashboard(root);
+          drawNextStepsDashboard(root);
+          dataStatus(root, "KI-Anfragen gelöscht.", "success");
+          return;
+        }
         const resetAll = event.target instanceof HTMLElement ? event.target.closest("[data-reset-wirkungsraum-all]") : null;
         if (resetAll instanceof HTMLButtonElement) {
-          if (!window.confirm("Alle lokalen Wirkungsraum-Daten in diesem Browser löschen? Dies betrifft Merkliste, Fortschritt, Sammlungen, Lernliste, Notizen, Besuchshistorie und Einstellungen.")) return;
+          if (!window.confirm("Alle lokalen Wirkungsraum-Daten in diesem Browser löschen? Dies betrifft Merkliste, Fortschritt, Sammlungen, Lernliste, Notizen, Besuchshistorie, Suchanfragen, KI-Anfragen und Einstellungen.")) return;
           WoekUserSpace.resetAll();
           WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
           refreshDashboardPanels(root, null);
@@ -7088,6 +7402,23 @@ const WirkungsraumLayer = (() => {
     });
   }
 
+  function initQueryHistoryPanels() {
+    drawQueryHistoryInlinePanels();
+    document.addEventListener("click", (event) => {
+      const aiButton = event.target instanceof HTMLElement ? event.target.closest("[data-prefill-ai-question]") : null;
+      if (aiButton instanceof HTMLButtonElement) {
+        const textarea = document.querySelector("#woek-ai-question");
+        if (textarea instanceof HTMLTextAreaElement) {
+          textarea.value = aiButton.dataset.prefillAiQuestion || "";
+          textarea.dispatchEvent(new Event("input", { bubbles: true }));
+          textarea.focus();
+          document.querySelector("#frage")?.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      }
+    });
+    document.addEventListener("wirkungsraum:changed", drawQueryHistoryInlinePanels);
+  }
+
   function trackVisit() {
     const path = window.location.pathname;
     if (!isContentPath(path)) return;
@@ -7103,10 +7434,12 @@ const WirkungsraumLayer = (() => {
     restoreReadingPosition();
     trackReadingProgress();
     renderDashboard();
+    initQueryHistoryPanels();
     initSavedOnlyHubFilters();
     decorateProgressLinks();
     document.addEventListener("wirkungsraum:changed", () => {
       renderDashboard();
+      drawQueryHistoryInlinePanels();
       decorateProgressLinks();
     });
   }

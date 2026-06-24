@@ -802,6 +802,64 @@
   align-items: stretch;
 }
 
+.wirkungsraum-query-card {
+  align-content: start;
+}
+
+.wirkungsraum-query-inline {
+  margin-top: 1.5rem;
+}
+
+.wirkungsraum-query-results {
+  display: grid;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wirkungsraum-query-results li {
+  min-width: 0;
+}
+
+.wirkungsraum-query-results a,
+.wirkungsraum-query-results li > strong {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid rgba(23, 79, 56, 0.14);
+  border-radius: 8px;
+  background: rgba(47, 125, 92, 0.04);
+  text-decoration: none;
+}
+
+.wirkungsraum-query-results a:hover,
+.wirkungsraum-query-results a:focus-visible {
+  border-color: rgba(47, 125, 92, 0.36);
+  background: rgba(47, 125, 92, 0.08);
+}
+
+.wirkungsraum-query-results strong {
+  color: var(--navy);
+  font-size: 0.94rem;
+  line-height: 1.28;
+}
+
+.wirkungsraum-query-results span {
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wirkungsraum-query-results small {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
 .wirkungsraum-item .card-title {
   margin-bottom: 0.75rem;
 }
