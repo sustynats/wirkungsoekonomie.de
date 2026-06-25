@@ -13261,6 +13261,120 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   box-shadow: 0 24px 70px rgba(11, 16, 32, 0.1);
 }
 
+.impact-audience-page .hero-actions {
+  flex-wrap: wrap;
+}
+
+.impact-audience-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.impact-audience-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid rgba(11, 16, 48, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--navy);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.impact-media-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(1rem, 3vw, 1.6rem);
+  align-items: start;
+}
+
+.impact-resource-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.impact-resource-list a {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(11, 16, 48, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--navy);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.impact-resource-list span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.impact-calc-steps {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--navy);
+  font-weight: 680;
+  line-height: 1.45;
+}
+
+.impact-example-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.impact-example-card .impact-example-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.impact-example-card .impact-example-metrics span {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.65rem;
+  border: 1px solid rgba(11, 16, 48, 0.11);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.impact-example-card .impact-example-metrics strong {
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 950;
+}
+
+.impact-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.impact-link-grid a {
+  min-width: 0;
+}
+
+@media (max-width: 860px) {
+  .impact-media-grid,
+  .impact-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-example-card .impact-example-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
 .home-journey-grid .decision-card {
   min-height: 15rem;
 }

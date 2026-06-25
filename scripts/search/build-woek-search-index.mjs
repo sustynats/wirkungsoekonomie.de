@@ -12,6 +12,12 @@ const INTERNAL_PUBLIC_ROUTE_PATTERNS = [
   /^\/referenz\/version(?:en|-)/,
   /^\/referenz\/export\//
 ];
+const LEGACY_SEARCH_ROUTE_REDIRECTS = new Map([
+  [
+    "/docs/wirtschaft-unternehmen/source-html/detail_impact_controlling_im_unternehmen.html",
+    "/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/impact_controlling_im_unternehmen/",
+  ],
+]);
 const PUBLIC_SEARCH_REPLACEMENTS = [
   [/Kontext-Werkzeuge/g, "Methoden & Werkzeuge"],
   [/Werkstatt:/g, "Bibliothek:"],
@@ -113,7 +119,20 @@ function normalizeSearchRoute(url) {
 }
 
 function canonicalSearchRoute(url) {
-  return normalizeSearchRoute(url).replace(/^\/wirkungsradar\/detail\//, "/wirkungsradar/live/");
+  const route = normalizeSearchRoute(url).replace(/^\/wirkungsradar\/detail\//, "/wirkungsradar/live/");
+  return LEGACY_SEARCH_ROUTE_REDIRECTS.get(route) || route;
+}
+
+function canonicalizeLegacyEntry(entry) {
+  const originalRoute = normalizeSearchRoute(entry.url);
+  const route = LEGACY_SEARCH_ROUTE_REDIRECTS.get(originalRoute);
+  if (!route) return entry;
+  return {
+    ...entry,
+    url: route,
+    canonicalUrl: route,
+    aliases: unique([...(Array.isArray(entry.aliases) ? entry.aliases : []), originalRoute]),
+  };
 }
 
 function canonicalizeEntry(entry) {
@@ -389,7 +408,12 @@ for (const file of contentFiles) {
   }
 }
 
-const byUrl = new Map(existing.filter((entry) => !String(entry.id || "").startsWith("woek-")).map((entry) => [entry.url, entry]));
+const byUrl = new Map(
+  existing
+    .filter((entry) => !String(entry.id || "").startsWith("woek-"))
+    .map(canonicalizeLegacyEntry)
+    .map((entry) => [entry.url, entry]),
+);
 for (const entry of generated) byUrl.set(entry.url, entry);
 for (const entry of existing.filter((item) => !String(item.id || "").startsWith("woek-"))) {
   if (entry.url && existingMeta[entry.url]) meta[entry.url] = existingMeta[entry.url];

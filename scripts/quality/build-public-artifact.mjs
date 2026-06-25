@@ -68,6 +68,10 @@ const allowedRootFiles = new Set([
   "CNAME",
 ]);
 
+const legacyRedirectFiles = [
+  "docs/wirtschaft-unternehmen/source-html/detail_impact_controlling_im_unternehmen.html",
+];
+
 function removeArtifact() {
   fs.rmSync(artifactDir, { recursive: true, force: true });
   fs.mkdirSync(artifactDir, { recursive: true });
@@ -268,6 +272,19 @@ function copyPublicRuntimeContentData() {
   }
 
   if (copied) console.log(`Copied ${copied} public runtime content data files.`);
+}
+
+function copyLegacyRedirectFiles() {
+  let copied = 0;
+  for (const relative of legacyRedirectFiles) {
+    const source = path.join(root, relative);
+    const destination = path.join(artifactDir, relative);
+    if (!fs.existsSync(source)) continue;
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.copyFileSync(source, destination);
+    copied += 1;
+  }
+  if (copied) console.log(`Copied ${copied} legacy redirect files.`);
 }
 
 function sanitizePublicDataString(value) {
@@ -581,6 +598,7 @@ normalizePublicArtifactLinksAndText();
 copyReferencedPublicFiles();
 copySnapshotManifestFiles();
 copyPublicRuntimeContentData();
+copyLegacyRedirectFiles();
 prunePublicArtifact();
 validateNoCorruptedHtmlAttributes();
 validateNoTemplatePlaceholders();

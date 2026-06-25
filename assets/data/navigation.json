@@ -2,7 +2,7 @@
   "header": [
     { "label": "Start", "href": "index.html", "match": ["index.html"] },
     { "label": "Verstehen", "href": "verstehen/", "match": ["verstehen/", "verstehen.html", "wirkungsoekonomie.html", "wirkungsoekonomie/", "modell.html", "ordnung/", "so-wirkt-wirkungsoekonomie/"] },
-    { "label": "Für wen?", "href": "fuer/", "match": ["fuer/", "fuer-wen/", "fuer/unternehmen.html", "fuer/buergerinnen.html", "fuer/investoren.html", "fuer/kommunen.html"] },
+    { "label": "Für wen?", "href": "fuer/", "match": ["fuer/", "fuer-wen/", "fuer/unternehmen.html", "fuer/unternehmen/impact-controlling/", "fuer/buergerinnen.html", "fuer/investoren.html", "fuer/investoren/impact-controlling/", "fuer/kommunen.html"] },
     { "label": "Wirkungsfelder", "href": "wirkungsfelder/", "match": ["wirkungsfelder/", "anwendungen.html"] },
     { "label": "Wirkungssteuerung", "href": "wirkungssteuerung/", "match": ["wirkungssteuerung/", "fuer/wirkungssteuer.html", "werkstatt/gesetze/wirkungssteuergesetz/", "werkzeuge/scorecards/", "werkzeuge/t-sroi/"] },
     { "label": "Öffentlicher Wirkungsraum", "href": "oeffentlicher-wirkungsraum/", "match": ["oeffentlicher-wirkungsraum/", "wirkungsradar/", "woek-ki/"] },
@@ -39,6 +39,13 @@
       "href": "fuer/unternehmen.html",
       "match": [
         "fuer/unternehmen.html"
+      ]
+    },
+    {
+      "label": "Impact-Controlling für Unternehmen",
+      "href": "fuer/unternehmen/impact-controlling/",
+      "match": [
+        "fuer/unternehmen/impact-controlling/"
       ]
     },
     {
@@ -89,6 +96,13 @@
       "match": [
         "begriffe/t-sroi/",
         "glossar.html#begriff-t-sroi"
+      ]
+    },
+    {
+      "label": "Impact-Controlling Finanzmarkt",
+      "href": "fuer/investoren/impact-controlling/",
+      "match": [
+        "fuer/investoren/impact-controlling/"
       ]
     },
     {
@@ -147,9 +161,11 @@
         { "label": "Übersicht", "href": "fuer/", "match": ["fuer/"] },
         { "label": "Bürger:innen", "href": "fuer/buergerinnen.html", "match": ["fuer/buergerinnen.html"] },
         { "label": "Unternehmen", "href": "fuer/unternehmen.html", "match": ["fuer/unternehmen.html"] },
+        { "label": "Impact-Controlling Unternehmen", "href": "fuer/unternehmen/impact-controlling/", "match": ["fuer/unternehmen/impact-controlling/"] },
         { "label": "Politik", "href": "fuer/politik.html", "match": ["fuer/politik.html"] },
         { "label": "Kommunen", "href": "fuer/kommunen.html", "match": ["fuer/kommunen.html"] },
         { "label": "Investor:innen", "href": "fuer/investoren.html", "match": ["fuer/investoren.html"] },
+        { "label": "Impact-Controlling Finanzmarkt", "href": "fuer/investoren/impact-controlling/", "match": ["fuer/investoren/impact-controlling/"] },
         { "label": "Journalismus", "href": "fuer/journalismus.html", "match": ["fuer/journalismus.html"] },
         { "label": "Wissenschaft", "href": "fuer/wissenschaft-forschung.html", "match": ["fuer/wissenschaft-forschung.html"] },
         { "label": "Gesundheit", "href": "fuer/gesundheit.html", "match": ["fuer/gesundheit.html"] },
