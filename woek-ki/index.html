@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="Ein quellengebundener Beta-Assistent für Fragen zur Wirkungsökonomie.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260624-query-history">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260628-woek-ai-oracle">
     <style>
       .woek-ai-shell {
         display: grid;
@@ -274,8 +274,8 @@
         </div>
         <div class="hero-aside card">
           <p class="hero-kicker">Beta-Status</p>
-          <h2>Quellen zuerst, Antwort danach.</h2>
-          <p class="card-text">Die Antwort wird aus passenden WÖk-Quellen erzeugt und zeigt Fundstellen separat an. Unsicherheit, fehlende Quellen und Grenzen bleiben sichtbar.</p>
+          <h2>Antwort zuerst, Erklärung danach.</h2>
+          <p class="card-text">Die Antwort beginnt mit dem Satz, der direkt weiterhilft. Danach folgen WÖk-Einordnung, Quellen, Unsicherheit und Grenzen.</p>
         </div>
       </section>
 
@@ -301,7 +301,7 @@
         <div class="section-header">
           <p class="hero-kicker">Assistent</p>
           <h2 id="frage-title">Eine Frage stellen</h2>
-          <p>Formuliere deine Frage möglichst konkret. Die Beta sucht passende WÖk-Quellen und erzeugt daraus eine Antwort mit Quellenliste.</p>
+          <p>Formuliere deine Frage möglichst konkret. Die Beta nutzt denselben Oracle-Strang wie der Faktencheck: Antwort zuerst, danach WÖk-Einordnung, Quellen und Grenzen.</p>
         </div>
 
         <div class="woek-ai-shell">
@@ -526,7 +526,7 @@
       </div>
     </footer>
 
-    <script src="../assets/js/main.js?v=20260624-query-history"></script>
+    <script src="../assets/js/main.js?v=20260628-woek-ai-oracle"></script>
     <script>
       const form = document.querySelector("#woek-ai-form");
       const question = document.querySelector("#woek-ai-question");
@@ -540,7 +540,7 @@
       const model = document.querySelector("#woek-ai-model");
       const sourceCount = document.querySelector("#woek-ai-source-count");
       const sources = document.querySelector("#woek-ai-sources");
-      const apiUrl = "https://akademie.wirkungsoekonomie.de/api/ki-beta";
+      const apiUrl = window.WOEK_AI_API_URL || "https://130.162.217.58.sslip.io/api/woek-ai";
       const glossaryLookupUrl = "../assets/data/glossary-lookup.json";
       let glossaryLookupPromise = null;
 
@@ -564,6 +564,7 @@
 
       function modeLabel(value) {
         if (value === "rag-hosted-llm") return "LLM + Quellen";
+        if (value === "woek-ai-oracle-llm") return "Oracle WÖk-KI";
         if (value === "retrieval-only") return "Nur Quellen";
         return "Bereit";
       }
@@ -682,6 +683,23 @@
         return renderGlossaryMatch(term, "Live-KI derzeit nicht verfügbar: Antwort aus dem Glossar.");
       }
 
+      function renderAnswerPayload(payload) {
+        const lines = [];
+        if (payload.answer) {
+          lines.push(payload.answer);
+        }
+        if (payload.explanation) {
+          lines.push(`\nWarum das trägt:\n${payload.explanation}`);
+        }
+        if (payload.woekLens) {
+          lines.push(`\nWÖk-Einordnung:\n${payload.woekLens}`);
+        }
+        if (Array.isArray(payload.limits) && payload.limits.length) {
+          lines.push(`\nGrenzen:\n${payload.limits.map((item) => `- ${item}`).join("\n")}`);
+        }
+        return lines.join("\n").trim();
+      }
+
       function glossarySourceFromTerm(term) {
         return {
           rank: 1,
@@ -757,7 +775,7 @@
 
         setLoading(true);
         placeholder.hidden = false;
-        placeholder.textContent = "Die Beta sucht passende WÖk-Quellen und erstellt eine Antwort.";
+        placeholder.textContent = "Die Beta erstellt zuerst eine Antwort und prüft danach Quellen, WÖk-Einordnung und Grenzen.";
         answer.textContent = "";
         warning.hidden = true;
         mode.textContent = "Wird erstellt";
@@ -780,26 +798,27 @@
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ question: value }),
           });
-          const data = await response.json();
+          const data = await response.json().catch(() => undefined);
           if (!response.ok || !data.ok) {
-            throw new Error(data.message || "Die WÖk-KI konnte diese Frage nicht bearbeiten.");
+            throw new Error(data?.error || data?.message || "Die WÖk-KI konnte diese Frage nicht bearbeiten.");
           }
 
           placeholder.hidden = true;
-          answer.textContent = data.answer || "";
+          const renderedAnswer = renderAnswerPayload(data);
+          answer.textContent = renderedAnswer;
           mode.textContent = modeLabel(data.mode);
-          provider.textContent = data.provider || "Hosted API";
+          provider.textContent = data.provider || "Oracle WÖk-KI API";
           model.textContent = data.model || "OpenAI-kompatibel";
-          sourceCount.textContent = String(data.sources?.length || 0);
+          sourceCount.textContent = String(data.source_count || data.sources?.length || 0);
           warning.hidden = true;
           warning.textContent = "";
           renderSources(data.sources || []);
           recordAiHistory(value, {
-            answer: data.answer || "",
+            answer: renderedAnswer,
             sources: data.sources || [],
-            source_count: data.sources?.length || 0,
+            source_count: data.source_count || data.sources?.length || 0,
             mode: modeLabel(data.mode),
-            provider: data.provider || "Hosted API",
+            provider: data.provider || "Oracle WÖk-KI API",
             model: data.model || "OpenAI-kompatibel"
           });
         } catch (error) {
