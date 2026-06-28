@@ -126,6 +126,58 @@
         font-weight: 760;
       }
 
+      .woek-ai-feedback {
+        display: grid;
+        gap: 0.65rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(11, 16, 32, 0.1);
+      }
+
+      .woek-ai-feedback[hidden] {
+        display: none;
+      }
+
+      .woek-ai-feedback p {
+        margin: 0;
+        font-weight: 850;
+      }
+
+      .woek-ai-feedback-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .woek-ai-feedback button {
+        min-height: 2.35rem;
+        padding: 0.55rem 0.72rem;
+        border: 1px solid rgba(11, 16, 32, 0.16);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--ink, #171717);
+        font: inherit;
+        font-size: 0.9rem;
+        font-weight: 850;
+        cursor: pointer;
+      }
+
+      .woek-ai-feedback button:hover,
+      .woek-ai-feedback button:focus-visible {
+        border-color: rgba(47, 125, 92, 0.4);
+        color: var(--green, #2f7d5c);
+      }
+
+      .woek-ai-feedback button:disabled {
+        cursor: default;
+        opacity: 0.62;
+      }
+
+      .woek-ai-feedback small {
+        color: var(--muted, #6f6a61);
+        font-size: 0.82rem;
+        font-weight: 760;
+      }
+
       .woek-ai-sources {
         display: grid;
         gap: 0.75rem;
@@ -330,6 +382,14 @@
               <p class="card-text" id="woek-ai-placeholder">Noch keine Frage gestellt.</p>
               <p class="woek-ai-warning" id="woek-ai-warning" hidden></p>
               <div class="woek-ai-answer" id="woek-ai-answer"></div>
+              <section class="woek-ai-feedback" id="woek-ai-feedback" hidden>
+                <p>War diese Antwort hilfreich?</p>
+                <div class="woek-ai-feedback-actions">
+                  <button type="button" id="woek-ai-feedback-up" aria-label="Antwort als hilfreich bewerten">Hilfreich</button>
+                  <button type="button" id="woek-ai-feedback-down" aria-label="Antwort als nicht hilfreich bewerten">Nicht hilfreich</button>
+                </div>
+                <small id="woek-ai-feedback-status"></small>
+              </section>
             </section>
           </div>
 
@@ -545,9 +605,15 @@
       const model = document.querySelector("#woek-ai-model");
       const sourceCount = document.querySelector("#woek-ai-source-count");
       const sources = document.querySelector("#woek-ai-sources");
+      const feedback = document.querySelector("#woek-ai-feedback");
+      const feedbackUp = document.querySelector("#woek-ai-feedback-up");
+      const feedbackDown = document.querySelector("#woek-ai-feedback-down");
+      const feedbackStatus = document.querySelector("#woek-ai-feedback-status");
       const apiUrl = window.WOEK_AI_API_URL || "https://130.162.217.58.sslip.io/api/woek-ai";
+      const feedbackUrl = apiUrl.replace(/\/api\/woek-ai(?:\?.*)?$/, "/api/feedback");
       const glossaryLookupUrl = "../assets/data/glossary-lookup.json";
       let glossaryLookupPromise = null;
+      let currentFeedback = null;
 
       function setLoading(isLoading) {
         submit.disabled = isLoading || question.value.trim().length < 4;
@@ -555,6 +621,7 @@
       }
 
       function clearResult() {
+        currentFeedback = null;
         placeholder.hidden = false;
         placeholder.textContent = "Noch keine Frage gestellt.";
         answer.textContent = "";
@@ -565,6 +632,7 @@
         model.textContent = "OpenAI-kompatibel";
         sourceCount.textContent = "0";
         sources.innerHTML = '<p class="card-text">Noch keine Quellenabfrage in dieser Sitzung.</p>';
+        setFeedbackVisible(false);
       }
 
       function modeLabel(value) {
@@ -677,6 +745,12 @@
         warning.hidden = false;
         warning.textContent = notice || "Direkter Glossartreffer aus der Website. Für weitergehende Einordnung kannst du die Frage konkreter stellen.";
         renderSources([source]);
+        setFeedbackContext({
+          question: question.value.trim(),
+          answer: answer.textContent || "",
+          sources: [source],
+          model: "Lokaler Begriffsabgleich"
+        });
         return source;
       }
 
@@ -731,6 +805,73 @@
         document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
       }
 
+      function getClientId() {
+        const key = "woek_app_client_id";
+        const existing = window.localStorage.getItem(key);
+        if (existing) return existing;
+        const value = `woek-${crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`}`;
+        window.localStorage.setItem(key, value);
+        return value;
+      }
+
+      function setFeedbackVisible(visible) {
+        feedback.hidden = !visible;
+        feedbackUp.disabled = false;
+        feedbackDown.disabled = false;
+        feedbackStatus.textContent = "";
+      }
+
+      function setFeedbackContext(payload) {
+        currentFeedback = {
+          target: "woek-ai",
+          route: "/api/woek-ai",
+          question: payload.question || "",
+          answer: payload.answer || "",
+          sources: normalizeFeedbackSources(payload.sources || []),
+          model: payload.model || ""
+        };
+        setFeedbackVisible(Boolean(currentFeedback.question && currentFeedback.answer));
+      }
+
+      function normalizeFeedbackSources(items) {
+        if (!Array.isArray(items)) return [];
+        return items.slice(0, 8).map((item) => ({
+          title: item.title || item.url || "Quelle",
+          url: item.url || "",
+          excerpt: item.excerpt || item.note || item.supports || ""
+        })).filter((item) => item.url);
+      }
+
+      async function sendFeedback(rating) {
+        if (!currentFeedback) return;
+        feedbackUp.disabled = true;
+        feedbackDown.disabled = true;
+        feedbackStatus.textContent = "Wird gespeichert...";
+
+        try {
+          const response = await fetch(feedbackUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-WOEK-Client-ID": getClientId()
+            },
+            body: JSON.stringify({ ...currentFeedback, rating })
+          });
+          const data = await response.json().catch(() => undefined);
+          if (!response.ok || !data?.ok) {
+            throw new Error(data?.error || "Feedback konnte nicht gespeichert werden.");
+          }
+          feedbackStatus.textContent = rating === "down" ? "Danke. Diese Antwort landet im Review." : "Danke. Bewertung gespeichert.";
+        } catch (error) {
+          feedbackUp.disabled = false;
+          feedbackDown.disabled = false;
+          feedbackStatus.textContent = error instanceof Error ? error.message : "Feedback konnte nicht gespeichert werden.";
+        }
+      }
+
+      feedbackUp.addEventListener("click", () => sendFeedback("up"));
+      feedbackDown.addEventListener("click", () => sendFeedback("down"));
+
       function renderSources(items) {
         if (!items || !items.length) {
           sources.innerHTML = '<p class="card-text">Keine Quellen gefunden.</p>';
@@ -784,6 +925,7 @@
         answer.textContent = "";
         warning.hidden = true;
         mode.textContent = "Wird erstellt";
+        setFeedbackVisible(false);
 
         try {
           try {
@@ -800,7 +942,10 @@
 
           const response = await fetch(apiUrl, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+              "Content-Type": "application/json",
+              "X-WOEK-Client-ID": getClientId()
+            },
             body: JSON.stringify({ question: value }),
           });
           const data = await response.json().catch(() => undefined);
@@ -818,6 +963,12 @@
           warning.hidden = true;
           warning.textContent = "";
           renderSources(data.sources || []);
+          setFeedbackContext({
+            question: value,
+            answer: renderedAnswer,
+            sources: data.sources || [],
+            model: data.model || "OpenAI-kompatibel"
+          });
           recordAiHistory(value, {
             answer: renderedAnswer,
             sources: data.sources || [],

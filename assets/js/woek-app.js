@@ -12,6 +12,7 @@
   const panels = Array.from(root.querySelectorAll("[data-app-panel]"));
   const result = root.querySelector("[data-app-result]");
   const status = root.querySelector("[data-app-status]");
+  let feedbackContext = null;
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => setMode(tab.dataset.appTab || "factcheck"));
@@ -110,7 +111,7 @@
       if (!response.ok || !payload?.ok) {
         throw new Error(payload?.error || "Der Dienst ist gerade nicht erreichbar.");
       }
-      render(payload);
+      render(payload, body, path);
     } catch (error) {
       renderNotice(
         "Prüfung gerade nicht möglich",
@@ -121,8 +122,16 @@
     }
   }
 
-  function renderFactcheck(payload) {
+  function renderFactcheck(payload, request, route) {
     const item = payload.result;
+    feedbackContext = {
+      target: "factcheck",
+      question: request?.claim || "",
+      answer: item?.directAnswer || item?.rebuttal || item?.summary || "",
+      sources: item?.sources || [],
+      route,
+      model: item?.model || payload.model || ""
+    };
     replaceResult([
       kicker(statusLabel(item?.status)),
       heading("Antwort"),
@@ -136,7 +145,15 @@
     ]);
   }
 
-  function renderWoek(payload) {
+  function renderWoek(payload, request, route) {
+    feedbackContext = {
+      target: "woek-ai",
+      question: request?.question || "",
+      answer: payload.answer || "",
+      sources: payload.sources || [],
+      route,
+      model: payload.model || ""
+    };
     replaceResult([
       kicker(statusLabel(payload.status)),
       heading("Antwort"),
@@ -148,8 +165,16 @@
     ]);
   }
 
-  function renderProduct(payload) {
+  function renderProduct(payload, request, route) {
     const item = payload.result;
+    feedbackContext = {
+      target: "product-check",
+      question: request?.product || request?.claim || "",
+      answer: item?.directAnswer || item?.summary || "",
+      sources: item?.sources || [],
+      route,
+      model: item?.model || payload.model || ""
+    };
     replaceResult([
       kicker(statusLabel(item?.status)),
       heading("Antwort"),
@@ -165,6 +190,7 @@
   }
 
   function renderLoading() {
+    feedbackContext = null;
     replaceResult([
       kicker("Prüfung"),
       heading("Antwort wird vorbereitet."),
@@ -173,6 +199,7 @@
   }
 
   function renderNotice(title, text) {
+    feedbackContext = null;
     replaceResult([kicker("Hinweis"), heading(title), paragraph(text)]);
   }
 
@@ -257,7 +284,69 @@
 
   function replaceResult(nodes) {
     if (!result) return;
-    result.replaceChildren(...nodes.filter(Boolean));
+    result.replaceChildren(...nodes.filter(Boolean), feedbackSection());
+  }
+
+  function feedbackSection() {
+    const wrapper = node("section", "woek-app-feedback");
+    if (!feedbackContext) {
+      wrapper.hidden = true;
+      return wrapper;
+    }
+
+    const label = node("p", "", "War diese Antwort hilfreich?");
+    const actions = node("div", "woek-app-feedback-actions");
+    const statusText = node("small", "", "");
+    const up = node("button", "", "Hilfreich");
+    const down = node("button", "", "Nicht hilfreich");
+
+    up.type = "button";
+    down.type = "button";
+    up.setAttribute("aria-label", "Antwort als hilfreich bewerten");
+    down.setAttribute("aria-label", "Antwort als nicht hilfreich bewerten");
+    up.addEventListener("click", () => sendFeedback("up", statusText, [up, down]));
+    down.addEventListener("click", () => sendFeedback("down", statusText, [up, down]));
+    actions.append(up, down);
+    wrapper.append(label, actions, statusText);
+    return wrapper;
+  }
+
+  async function sendFeedback(rating, statusText, buttons) {
+    if (!feedbackContext) return;
+    buttons.forEach((button) => { button.disabled = true; });
+    statusText.textContent = "Wird gespeichert...";
+
+    try {
+      const response = await fetch(`${apiBase}/api/feedback`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-WOEK-Client-ID": clientId
+        },
+        body: JSON.stringify({
+          ...feedbackContext,
+          rating,
+          sources: normalizeFeedbackSources(feedbackContext.sources)
+        })
+      });
+      const payload = await response.json().catch(() => undefined);
+      if (!response.ok || !payload?.ok) {
+        throw new Error(payload?.error || "Feedback konnte nicht gespeichert werden.");
+      }
+      statusText.textContent = rating === "down" ? "Danke. Diese Antwort landet im Review." : "Danke. Bewertung gespeichert.";
+    } catch (error) {
+      buttons.forEach((button) => { button.disabled = false; });
+      statusText.textContent = error instanceof Error ? error.message : "Feedback konnte nicht gespeichert werden.";
+    }
+  }
+
+  function normalizeFeedbackSources(items) {
+    if (!Array.isArray(items)) return [];
+    return items.slice(0, 8).map((item) => ({
+      title: item.title || item.url || "Quelle",
+      url: item.url || "",
+      excerpt: item.excerpt || item.note || item.supports || ""
+    })).filter((item) => item.url);
   }
 
   function section(title, text) {
