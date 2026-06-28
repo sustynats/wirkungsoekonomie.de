@@ -18,6 +18,7 @@
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
+  const SEARCH_RESULT_CACHE_LIMIT = 40;
   const SEARCH_GROUPS = [
     { id: "fragen", label: "Fragen & Einwände", max: 4 },
     { id: "begriffe", label: "Begriffe", max: 5 },
@@ -265,6 +266,7 @@
     historyForceNext: false,
     lastHistoryKey: "",
     searchRun: 0,
+    resultCache: new Map(),
   };
 
   const dataUrl = (fileName) => {
@@ -974,6 +976,26 @@
     return `${normalize(rawQuery)}::${JSON.stringify(filters || {})}`;
   }
 
+  function searchResultCacheKey(rawQuery, filters) {
+    return searchHistoryKey(rawQuery, filters);
+  }
+
+  function readSearchResultCache(key) {
+    const cached = state.resultCache.get(key);
+    if (!cached) return null;
+    state.resultCache.delete(key);
+    state.resultCache.set(key, cached);
+    return cached;
+  }
+
+  function writeSearchResultCache(key, value) {
+    state.resultCache.delete(key);
+    state.resultCache.set(key, value);
+    if (state.resultCache.size <= SEARCH_RESULT_CACHE_LIMIT) return;
+    const oldestKey = state.resultCache.keys().next().value;
+    if (oldestKey) state.resultCache.delete(oldestKey);
+  }
+
   function recordSearchHistory(rawQuery, finalResults, totalResults) {
     const query = rawQuery.trim();
     const filters = getFiltersFromControls();
@@ -1026,6 +1048,7 @@
     const queryLength = normalize(rawQuery).length;
     const semanticConcepts = queryLength >= 2 ? semanticConceptsForQuery(rawQuery, tokens) : [];
     const filtersActive = filterControls.some((control) => control instanceof HTMLSelectElement && control.value);
+    const runId = ++state.searchRun;
 
     if (!state.ready) {
       status.textContent = "Suche wird geladen.";
@@ -1044,7 +1067,33 @@
     }
 
     emptyState.hidden = true;
-    const runId = ++state.searchRun;
+    const filters = getFiltersFromControls();
+    const cacheKey = searchResultCacheKey(rawQuery, filters);
+    const cachedSearch = readSearchResultCache(cacheKey);
+    if (cachedSearch) {
+      const matchingResults = cachedSearch.matchingResults;
+      const totalResults = matchingResults.length;
+      const groupedResults = groupResults(matchingResults);
+      const finalResults = groupedResults.flatMap((group) => group.results);
+
+      renderRecommended(queryLength >= 2 ? findRecommended(rawQuery) : null);
+      renderRelated(queryLength >= 2 ? findRelated(rawQuery, tokens) : []);
+      renderSuggestions(rawQuery, tokens);
+      renderResults(matchingResults, rawQuery, tokens);
+
+      const label = rawQuery ? ` für „${rawQuery}“` : "";
+      const resultWord = finalResults.length === 1 ? "kuratierter Treffer" : "kuratierte Treffer";
+      const groupNote = groupedResults.length ? ` in ${groupedResults.length} Wissensbereichen` : "";
+      const rawNote = totalResults > finalResults.length ? " aus dem Wissensindex gebündelt" : "";
+      status.textContent = `${finalResults.length} ${resultWord}${groupNote}${label}${rawNote}`;
+      if (!finalResults.length) {
+        resultsList.innerHTML = `<li class="search-result-card"><h2>Keine Treffer gefunden</h2><p>Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.</p></li>`;
+      }
+      updateUrl(rawQuery);
+      queueSearchHistory(rawQuery, finalResults, totalResults);
+      return;
+    }
+
     const filtered = state.index.filter(passesFilters);
     const scored = [];
     let cursor = 0;
@@ -1060,6 +1109,7 @@
       const groupedResults = groupResults(matchingResults);
       const finalResults = groupedResults.flatMap((group) => group.results);
 
+      writeSearchResultCache(cacheKey, { matchingResults });
       renderRecommended(queryLength >= 2 ? findRecommended(rawQuery) : null);
       renderRelated(queryLength >= 2 ? findRelated(rawQuery, tokens) : []);
       renderSuggestions(rawQuery, tokens);
