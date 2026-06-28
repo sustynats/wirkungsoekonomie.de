@@ -611,6 +611,8 @@
       const feedbackStatus = document.querySelector("#woek-ai-feedback-status");
       const apiUrl = window.WOEK_AI_API_URL || "https://130.162.217.58.sslip.io/api/woek-ai";
       const feedbackUrl = apiUrl.replace(/\/api\/woek-ai(?:\?.*)?$/, "/api/feedback");
+      const unavailableMessage = "Die WÖk-KI ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
+      const feedbackUnavailableMessage = "Feedback konnte gerade nicht gespeichert werden.";
       const glossaryLookupUrl = "../assets/data/glossary-lookup.json";
       let glossaryLookupPromise = null;
       let currentFeedback = null;
@@ -859,13 +861,13 @@
           });
           const data = await response.json().catch(() => undefined);
           if (!response.ok || !data?.ok) {
-            throw new Error(data?.error || "Feedback konnte nicht gespeichert werden.");
+            throw new Error(feedbackUnavailableMessage);
           }
           feedbackStatus.textContent = rating === "down" ? "Danke. Diese Antwort landet im Review." : "Danke. Bewertung gespeichert.";
         } catch (error) {
           feedbackUp.disabled = false;
           feedbackDown.disabled = false;
-          feedbackStatus.textContent = error instanceof Error ? error.message : "Feedback konnte nicht gespeichert werden.";
+          feedbackStatus.textContent = feedbackUnavailableMessage;
         }
       }
 
@@ -950,7 +952,7 @@
           });
           const data = await response.json().catch(() => undefined);
           if (!response.ok || !data.ok) {
-            throw new Error(data?.error || data?.message || "Die WÖk-KI konnte diese Frage nicht bearbeiten.");
+            throw new Error(unavailableMessage);
           }
 
           placeholder.hidden = true;
@@ -991,7 +993,7 @@
           }
 
           placeholder.hidden = false;
-          placeholder.textContent = error instanceof Error ? error.message : "Die WÖk-KI konnte diese Frage nicht bearbeiten.";
+          placeholder.textContent = unavailableMessage;
           mode.textContent = "Fehler";
           renderSources([]);
         } finally {

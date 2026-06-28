@@ -4,6 +4,7 @@
   if (!form || !result) return;
 
   const apiUrl = window.WOEK_FACTCHECK_API_URL || "https://130.162.217.58.sslip.io/api/factcheck";
+  const unavailableMessage = "Der Faktencheck-Dienst ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
   const submitButton = form.querySelector('button[type="submit"]');
 
   form.addEventListener("submit", async (event) => {
@@ -33,15 +34,12 @@
       });
       const payload = await response.json().catch(() => undefined);
       if (!response.ok || !payload?.ok) {
-        throw new Error(payload?.error || "Der Faktencheck-Dienst ist gerade nicht erreichbar.");
+        throw new Error(unavailableMessage);
       }
 
       renderFactcheck(payload.result);
     } catch (error) {
-      renderMessage(
-        "Faktencheck gerade nicht moeglich",
-        error instanceof Error ? error.message : "Der Faktencheck-Dienst ist gerade nicht erreichbar."
-      );
+      renderMessage("Faktencheck gerade nicht möglich", unavailableMessage);
     } finally {
       setBusy(false);
     }

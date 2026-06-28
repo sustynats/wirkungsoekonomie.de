@@ -3,6 +3,8 @@
   if (!root) return;
 
   const apiBase = window.WOEK_API_BASE || "https://130.162.217.58.sslip.io";
+  const unavailableMessage = "Der KI-Dienst ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
+  const feedbackUnavailableMessage = "Feedback konnte gerade nicht gespeichert werden.";
   const clientId = getClientId();
   const installDismissKey = "woek_app_install_dismissed";
   const tabs = Array.from(root.querySelectorAll("[data-app-tab]"));
@@ -180,7 +182,7 @@
 
   async function submitJson(path, body, render) {
     if (!navigator.onLine) {
-      renderNotice("Offline", "Die App ist gestartet, aber die KI-Prüfung braucht eine Verbindung zur Oracle-API.");
+      renderNotice("Offline", "Die Prüfung braucht eine Internetverbindung.");
       return;
     }
 
@@ -198,14 +200,11 @@
       });
       const payload = await response.json().catch(() => undefined);
       if (!response.ok || !payload?.ok) {
-        throw new Error(payload?.error || "Der Dienst ist gerade nicht erreichbar.");
+        throw new Error(unavailableMessage);
       }
       render(payload, body, path);
     } catch (error) {
-      renderNotice(
-        "Prüfung gerade nicht möglich",
-        error instanceof Error ? error.message : "Der Dienst ist gerade nicht erreichbar."
-      );
+      renderNotice("Prüfung gerade nicht möglich", unavailableMessage);
     } finally {
       setBusy(false);
     }
@@ -463,12 +462,12 @@
       });
       const payload = await response.json().catch(() => undefined);
       if (!response.ok || !payload?.ok) {
-        throw new Error(payload?.error || "Feedback konnte nicht gespeichert werden.");
+        throw new Error(feedbackUnavailableMessage);
       }
       statusText.textContent = rating === "down" ? "Danke. Diese Antwort landet im Review." : "Danke. Bewertung gespeichert.";
     } catch (error) {
       buttons.forEach((button) => { button.disabled = false; });
-      statusText.textContent = error instanceof Error ? error.message : "Feedback konnte nicht gespeichert werden.";
+      statusText.textContent = feedbackUnavailableMessage;
     }
   }
 
