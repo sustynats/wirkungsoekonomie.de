@@ -225,13 +225,17 @@
       heading("Antwort"),
       paragraph(item?.directAnswer || item?.rebuttal || item?.summary),
       section("Reframing", item?.reframing),
-      section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
-      section("Frame", frameText(item?.frame)),
-      section("Sprache & Narrativ", languageText(item?.languageAnalysis)),
-      section("Rhetorik & Psychologie", rhetoricText(item?.rhetoricAnalysis)),
-      listSection("WÖk-Einordnung", item?.impactNotes, (note) => `${note.label}: ${note.explanation}`),
-      sourceSection(item?.sources),
-      listSection("Grenzen", item?.limits, (value) => value)
+      section("Kurzurteil", item?.summary),
+      detailsSection("Prüfdetails öffnen", [
+        section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
+        section("Sprache & Narrativ", languageText(item?.languageAnalysis)),
+        section("Rhetorik & Psychologie", rhetoricText(item?.rhetoricAnalysis)),
+        section("Frame", frameText(item?.frame)),
+        listSection("WÖk-Einordnung", item?.impactNotes, (note) => `${note.label}: ${note.explanation}`),
+        section("Bessere Frage", item?.betterQuestion),
+        sourceSection(item?.sources),
+        listSection("Grenzen", item?.limits, (value) => value)
+      ])
     ]);
   }
 
@@ -544,6 +548,14 @@
       list.append(li);
     });
     wrapper.append(node("h3", "", "Quellen"), list);
+    return wrapper;
+  }
+
+  function detailsSection(title, items) {
+    const nodes = items.filter(Boolean);
+    if (!nodes.length) return null;
+    const wrapper = node("details", "woek-app-result-section woek-app-result-details");
+    wrapper.append(node("summary", "", title), ...nodes);
     return wrapper;
   }
 

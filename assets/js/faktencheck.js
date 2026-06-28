@@ -54,8 +54,8 @@
   function renderLoading() {
     replaceResult([
       node("p", "hero-kicker", "Prüfung"),
-      node("h3", "", "Erst entsteht die Antwort, dann die Begründung."),
-      node("p", "", "Das kann einen Moment dauern, weil der Dienst Quellenlage, Wahrheitsgehalt, Frame und Wirkungspfad gemeinsam prüft.")
+      node("h3", "", "Die Antwort wird vorbereitet."),
+      node("p", "", "Das kann einen Moment dauern, weil Quellenlage, Wahrheitsgehalt, Frame und Wirkungspfad gemeinsam geprüft werden.")
     ]);
   }
 
@@ -75,21 +75,29 @@
       node("p", "factcheck-result-summary", item.directAnswer || item.rebuttal || item.summary),
       block("Reframing", item.reframing || "Die bessere Rahmung ist: Welche konkrete Behauptung wird durch welche Quelle getragen?"),
       block("Kurzurteil", `${verdictLabel(item.verdict)}. ${item.summary || ""}`.trim()),
-      truthSection(item.truthCheck),
-      metaLine("Datenstand", item.dataStatus),
-      frameSection(item.frame),
-      languageSection(item.languageAnalysis),
-      rhetoricSection(item.rhetoricAnalysis),
-      section("Wirkungsökonomische Einordnung", item.impactNotes, renderImpact),
-      section("Quellen", item.sources, renderSource),
-      section("Prüfbare Einzelbehauptungen", item.atomicClaims, renderAtomicClaim),
-      block("Bessere Frage", item.betterQuestion),
-      section("Grenzen", item.limits, (value) => node("li", "", value))
+      detailBlock("Wahrheitsgehalt & Datenstand", [
+        truthSection(item.truthCheck),
+        metaLine("Datenstand", item.dataStatus)
+      ]),
+      detailBlock("Sprache, Rhetorik & Frame", [
+        languageSection(item.languageAnalysis),
+        rhetoricSection(item.rhetoricAnalysis),
+        frameSection(item.frame)
+      ]),
+      detailBlock("Quellen & Einzelbehauptungen", [
+        section("Quellen", item.sources, renderSource),
+        section("Prüfbare Einzelbehauptungen", item.atomicClaims, renderAtomicClaim)
+      ]),
+      detailBlock("WÖk-Einordnung & Grenzen", [
+        section("Wirkungsökonomische Einordnung", item.impactNotes, renderImpact),
+        block("Bessere Frage", item.betterQuestion),
+        section("Grenzen", item.limits, (value) => node("li", "", value))
+      ])
     ]);
   }
 
   function frameSection(frame) {
-    if (!frame) return document.createDocumentFragment();
+    if (!frame) return null;
     const wrapper = node("div", "factcheck-result-section");
     wrapper.append(node("h4", "", "Frame-Hinweis"));
     wrapper.append(node("p", "", `${frame.label}: ${frame.explanation}`));
@@ -102,7 +110,7 @@
   }
 
   function languageSection(language) {
-    if (!language) return document.createDocumentFragment();
+    if (!language) return null;
     const wrapper = node("div", "factcheck-result-section");
     wrapper.append(node("h4", "", "Sprache & Narrativ"));
     wrapper.append(metaLine("Sprachwahl", language.wording));
@@ -116,7 +124,7 @@
   }
 
   function rhetoricSection(rhetoric) {
-    if (!rhetoric) return document.createDocumentFragment();
+    if (!rhetoric) return null;
     const wrapper = node("div", "factcheck-result-section");
     wrapper.append(node("h4", "", "Rhetorik & Psychologie"));
     wrapper.append(node("p", "", rhetoric.summary || "Rhetorische und psychologische Muster im Originalkontext prüfen."));
@@ -136,11 +144,19 @@
   }
 
   function truthSection(truthCheck) {
-    if (!truthCheck) return document.createDocumentFragment();
+    if (!truthCheck) return null;
     return block(
       "Wahrheitsgehalt",
       `${verdictLabel(truthCheck.verdict)} (${truthCheck.confidence || "niedrig"}). ${truthCheck.explanation || "Die Beleglage ist offen."}`
     );
+  }
+
+  function detailBlock(title, children) {
+    const nodes = children.filter(Boolean);
+    if (!nodes.length) return null;
+    const wrapper = node("details", "factcheck-result-section factcheck-result-details");
+    wrapper.append(node("summary", "", title), ...nodes);
+    return wrapper;
   }
 
   function section(title, items, renderItem) {

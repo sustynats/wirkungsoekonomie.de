@@ -6704,6 +6704,49 @@ textarea {
   border-top: 1px solid rgba(11, 16, 32, 0.1);
 }
 
+.factcheck-result-details > summary,
+.woek-app-result-details > summary {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 900;
+  list-style: none;
+}
+
+.factcheck-result-details > summary::-webkit-details-marker,
+.woek-app-result-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.factcheck-result-details > summary::after,
+.woek-app-result-details > summary::after {
+  content: "+";
+  display: grid;
+  width: 1.55rem;
+  height: 1.55rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(47, 125, 92, 0.28);
+  border-radius: 999px;
+  color: var(--green-dark);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.factcheck-result-details[open] > summary::after,
+.woek-app-result-details[open] > summary::after {
+  content: "-";
+}
+
+.factcheck-result-details > .factcheck-result-section,
+.woek-app-result-details > .woek-app-result-section {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(11, 16, 32, 0.08);
+}
+
 .factcheck-result-list {
   display: grid;
   gap: 0.75rem;
