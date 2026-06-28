@@ -1,10 +1,11 @@
-const CACHE_NAME = "woek-app-shell-20260628-pwa";
+const CACHE_NAME = "woek-app-shell-20260628-community-auth";
 const APP_SHELL = [
   "/app/",
   "/offline.html",
   "/manifest.webmanifest",
   "/assets/css/style.css",
   "/assets/js/main.js",
+  "/assets/js/woek-community-auth.js",
   "/assets/js/woek-app.js",
   "/assets/img/brand/signet.svg",
   "/assets/img/brand/favicon.svg",
@@ -69,7 +70,7 @@ async function networkFirst(request, fallbackUrl) {
 
 async function staleWhileRevalidate(request) {
   const cache = await caches.open(CACHE_NAME);
-  const cached = await cache.match(request, { ignoreSearch: true });
+  const cached = await cache.match(request, { ignoreSearch: !isVersionedAsset(request) });
   const update = fetch(request)
     .then((response) => {
       if (response.ok) {
@@ -80,4 +81,9 @@ async function staleWhileRevalidate(request) {
     .catch(() => undefined);
 
   return cached ?? (await update) ?? new Response("", { status: 504, statusText: "Offline" });
+}
+
+function isVersionedAsset(request) {
+  const url = new URL(request.url);
+  return url.searchParams.has("v") && /\.(?:css|js)$/i.test(url.pathname);
 }
