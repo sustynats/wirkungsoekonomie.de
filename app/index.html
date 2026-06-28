@@ -20,7 +20,7 @@
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../assets/img/brand/app-icon-192.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260628-compact-result">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260628-community-auth">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -87,14 +87,15 @@
           </div>
         </div>
 
-        <div class="woek-app-community">
+        <div class="woek-app-community" data-community-auth data-community-variant="app">
           <div>
-            <p class="hero-kicker">Community-Funktionen</p>
-            <h2>Mehr Nutzen im WÖk-Server.</h2>
-            <p>Ohne Community-Mitgliedschaft ist die WebApp als Basiszugang gedacht. Im WÖk-Server kommen der erweiterte Faktencheck, Frag die WÖk, Produktcheck, Bot-Oberflächen, höhere Limits und gemeinsame Rückmeldungen zusammen.</p>
+            <p class="hero-kicker" data-community-kicker>Community-Funktionen</p>
+            <h2 data-community-title>Mehr Nutzen im WÖk-Server.</h2>
+            <p data-community-copy>Ohne Community-Mitgliedschaft ist die WebApp als Basiszugang gedacht. Mit Discord-Anmeldung erkennt die Website, ob du im WÖk-Server bist und kann erweiterte Workflows zuordnen.</p>
           </div>
-          <div class="woek-app-install-actions">
-            <a class="btn btn-primary" href="https://discord.gg/AtJpB3ErPZ" target="_blank" rel="noopener noreferrer">WÖk-Community beitreten</a>
+          <div class="woek-app-install-actions" data-community-actions>
+            <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1520742698615832586&amp;redirect_uri=https%3A%2F%2Fwirkungsoekonomie.de%2Fapp%2F&amp;response_type=token&amp;scope=identify">Mit Discord anmelden</a>
+            <a class="btn btn-secondary" href="https://discord.gg/AtJpB3ErPZ" target="_blank" rel="noopener noreferrer">Server ansehen</a>
             <a class="btn btn-secondary" href="../werkzeuge/faktencheck/">Faktencheck ansehen</a>
           </div>
         </div>
@@ -353,6 +354,7 @@
     </footer>
 
     <script src="../assets/js/main.js?v=20260612-mobile-table-fix"></script>
-    <script src="../assets/js/woek-app.js?v=20260628-compact-result" defer></script>
+    <script src="../assets/js/woek-community-auth.js?v=20260628-community-auth" defer></script>
+    <script src="../assets/js/woek-app.js?v=20260628-community-auth" defer></script>
   </body>
 </html>

@@ -194,7 +194,8 @@
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-WOEK-Client-ID": clientId
+          "X-WOEK-Client-ID": clientId,
+          ...communityAuthHeaders()
         },
         body: JSON.stringify(body)
       });
@@ -489,7 +490,8 @@
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-WOEK-Client-ID": clientId
+          "X-WOEK-Client-ID": clientId,
+          ...communityAuthHeaders()
         },
         body: JSON.stringify({
           ...feedbackContext,
@@ -660,5 +662,9 @@
     const value = `woek-${crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`}`;
     window.localStorage.setItem(key, value);
     return value;
+  }
+
+  function communityAuthHeaders() {
+    return window.WoekCommunityAuth?.authHeaders?.() || {};
   }
 })();

@@ -25,7 +25,7 @@
     try {
       const response = await fetch(apiUrl, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...communityAuthHeaders() },
         body: JSON.stringify({
           claim,
           context: context || undefined,
@@ -243,5 +243,9 @@
         nicht_pruefbar: "nicht prüfbar"
       }[value] || "Ergebnis"
     );
+  }
+
+  function communityAuthHeaders() {
+    return window.WoekCommunityAuth?.authHeaders?.() || {};
   }
 })();

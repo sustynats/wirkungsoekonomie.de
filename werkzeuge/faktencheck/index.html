@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Aussagen prüfen, Quellen einordnen, Frames sichtbar machen und Folgen verständlich erklären.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260628-compact-result">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260628-community-auth">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -71,7 +71,7 @@
             <p>Die öffentliche Seite ist der Basiszugang. Die volle KI-Prüfung ist als Community-Funktion gedacht und nutzt denselben WÖk-Prüfdienst, der auch in WebApp/App und Community-Server eingesetzt wird.</p>
             <div class="hero-actions no-print">
               <a class="btn btn-primary" href="#faktencheck-pruefen">Aussage prüfen</a>
-              <a class="btn btn-secondary" href="https://discord.gg/AtJpB3ErPZ" target="_blank" rel="noopener noreferrer">WÖk-Community beitreten</a>
+              <a class="btn btn-secondary" href="https://discord.com/oauth2/authorize?client_id=1520742698615832586&amp;redirect_uri=https%3A%2F%2Fwirkungsoekonomie.de%2Fapp%2F&amp;response_type=token&amp;scope=identify">Mit Discord anmelden</a>
               <a class="btn btn-secondary" href="../../wirkungsradar/">Debatten-Kompass öffnen</a>
             </div>
           </div>
@@ -87,6 +87,17 @@
           <h2 id="faktencheck-pruefen-title">Aussage eingeben, Antwort zuerst bekommen.</h2>
           <p>Der Faktencheck liefert zuerst eine direkt nutzbare Antwort. Danach folgen Wahrheitsgehalt, Quellen, Sprache, Narrativ, rhetorische und psychologische Muster, Frame, Wirkungspfad und Grenzen. Negierte Frames werden nicht einfach mitdiskutiert, sondern demaskiert und durch einen besseren Deutungsrahmen ersetzt. Öffentlich ist das der Basiszugang; mehr Funktionen, höhere Nutzungsmöglichkeiten und der volle Community-Workflow stehen Mitgliedern der WÖk-Community zur Verfügung.</p>
         </div>
+        <article class="factcheck-community-status" data-community-auth data-community-variant="factcheck">
+          <div>
+            <p class="hero-kicker" data-community-kicker>Community-Funktionen</p>
+            <h3 data-community-title>Mit Discord anmelden.</h3>
+            <p data-community-copy>Melde dich mit Discord an, damit die Website erkennt, ob du Mitglied im WÖk-Server bist. Ohne Anmeldung bleibt die Seite im Basiszugang.</p>
+          </div>
+          <div class="woek-app-install-actions" data-community-actions>
+            <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1520742698615832586&amp;redirect_uri=https%3A%2F%2Fwirkungsoekonomie.de%2Fapp%2F&amp;response_type=token&amp;scope=identify">Mit Discord anmelden</a>
+            <a class="btn btn-secondary" href="https://discord.gg/AtJpB3ErPZ" target="_blank" rel="noopener noreferrer">Server ansehen</a>
+          </div>
+        </article>
         <div class="factcheck-live-grid">
           <form class="factcheck-live-form" data-factcheck-form>
             <label>
@@ -110,7 +121,7 @@
               </select>
             </label>
             <button class="btn btn-primary" type="submit">Faktencheck starten</button>
-            <p class="factcheck-form-note">Noch nicht dabei? <a href="https://discord.gg/AtJpB3ErPZ" target="_blank" rel="noopener noreferrer">Der WÖk-Community auf Discord beitreten</a>.</p>
+            <p class="factcheck-form-note" data-community-note>Noch nicht angemeldet? <a href="https://discord.com/oauth2/authorize?client_id=1520742698615832586&amp;redirect_uri=https%3A%2F%2Fwirkungsoekonomie.de%2Fapp%2F&amp;response_type=token&amp;scope=identify">Mit Discord anmelden</a> oder <a href="https://discord.gg/AtJpB3ErPZ" target="_blank" rel="noopener noreferrer">dem WÖk-Server beitreten</a>.</p>
             <p class="factcheck-form-note">Kein Urteil ohne Quellen, Datenstand und klare Grenze. High-Stakes-Themen bleiben review-pflichtig.</p>
           </form>
           <article class="factcheck-result" data-factcheck-result aria-live="polite">
@@ -473,6 +484,7 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../../assets/js/faktencheck.js?v=20260628-compact-result" defer></script>
+    <script src="../../assets/js/woek-community-auth.js?v=20260628-community-auth" defer></script>
+    <script src="../../assets/js/faktencheck.js?v=20260628-community-auth" defer></script>
   </body>
 </html>

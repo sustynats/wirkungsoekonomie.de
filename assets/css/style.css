@@ -6683,6 +6683,34 @@ textarea {
   align-items: start;
 }
 
+.factcheck-community-status {
+  display: grid;
+  gap: 0.9rem;
+  align-items: center;
+  margin: 0 0 clamp(1rem, 3vw, 1.5rem);
+  padding: clamp(0.95rem, 2.4vw, 1.25rem);
+  border: 1px solid rgba(47, 125, 92, 0.26);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-card);
+}
+
+.factcheck-community-status h3,
+.factcheck-community-status p {
+  margin: 0;
+}
+
+.factcheck-community-status h3 {
+  font-size: clamp(1.18rem, 3vw, 1.45rem);
+  letter-spacing: 0;
+}
+
+.factcheck-community-status[data-community-state="member"],
+.woek-app-community[data-community-state="member"] {
+  border-color: rgba(47, 125, 92, 0.44);
+  background: linear-gradient(135deg, rgba(47, 125, 92, 0.13), rgba(255, 255, 255, 0.94));
+}
+
 .factcheck-live-form,
 .factcheck-result {
   display: grid;
@@ -7134,6 +7162,10 @@ textarea {
   }
 
   .woek-app-install {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .factcheck-community-status {
     grid-template-columns: minmax(0, 1fr) auto;
   }
 }
