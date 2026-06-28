@@ -121,7 +121,7 @@
       return "Die Website fragt den WÖk-Server ab und prüft, ob dein Discord-Konto dort Mitglied ist.";
     }
     if (state === "member") {
-      return "Dein Discord-Konto wurde als Mitglied des WÖk-Servers erkannt. Die Website kann den Community-Zugang jetzt an WÖk-Wirkungscheck, WebApp und spätere Limits weitergeben.";
+      return "Dein Discord-Konto wurde als Mitglied des WÖk-Servers erkannt. Damit stehen dir die Community-Funktionen auf Website und WebApp zur Verfügung.";
     }
     if (state === "nonmember") {
       return "Dein Discord-Konto ist angemeldet, aber auf dem WÖk-Server noch nicht als Mitglied gefunden. Tritt dem Server bei und prüfe den Status danach erneut.";
