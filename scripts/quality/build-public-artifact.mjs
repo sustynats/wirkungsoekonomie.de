@@ -66,6 +66,7 @@ const allowedRootFileExtensions = new Set([
 
 const allowedRootFiles = new Set([
   "CNAME",
+  "sw.js",
 ]);
 
 const legacyRedirectFiles = [
