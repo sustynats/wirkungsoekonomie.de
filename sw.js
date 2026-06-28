@@ -5,7 +5,7 @@ const APP_SHELL = [
   "/manifest.webmanifest",
   "/assets/css/style.css",
   "/assets/js/main.js",
-  "/assets/js/woek-community-auth.js",
+  "/assets/js/woek-community-auth-v2.js",
   "/assets/js/woek-app.js",
   "/assets/img/brand/signet.svg",
   "/assets/img/brand/favicon.svg",
