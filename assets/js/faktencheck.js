@@ -56,8 +56,8 @@
   function renderLoading() {
     replaceResult([
       node("p", "hero-kicker", "Prüfung"),
-      node("h3", "", "Quellen werden gesucht und eingeordnet."),
-      node("p", "", "Das kann einen Moment dauern, weil der Dienst nicht nur formuliert, sondern Quellenlage, Datenstand und Grenzen prüft.")
+      node("h3", "", "Erst entsteht die Antwort, dann die Begründung."),
+      node("p", "", "Das kann einen Moment dauern, weil der Dienst Quellenlage, Wahrheitsgehalt, Frame und Wirkungspfad gemeinsam prüft.")
     ]);
   }
 
@@ -73,14 +73,16 @@
 
     replaceResult([
       node("p", "hero-kicker", statusLabel(item.status)),
-      node("h3", "", `Kurzurteil: ${verdictLabel(item.verdict)}`),
-      node("p", "factcheck-result-summary", item.summary),
+      node("h3", "", "Antwort"),
+      node("p", "factcheck-result-summary", item.directAnswer || item.rebuttal || item.summary),
+      block("Reframing", item.reframing || "Die bessere Rahmung ist: Welche konkrete Behauptung wird durch welche Quelle getragen?"),
+      block("Kurzurteil", `${verdictLabel(item.verdict)}. ${item.summary || ""}`.trim()),
+      truthSection(item.truthCheck),
       metaLine("Datenstand", item.dataStatus),
-      section("Prüfbare Einzelbehauptungen", item.atomicClaims, renderAtomicClaim),
-      section("Quellen", item.sources, renderSource),
       frameSection(item.frame),
       section("Wirkungsökonomische Einordnung", item.impactNotes, renderImpact),
-      block("Ruhige Antwort", item.rebuttal),
+      section("Quellen", item.sources, renderSource),
+      section("Prüfbare Einzelbehauptungen", item.atomicClaims, renderAtomicClaim),
       block("Bessere Frage", item.betterQuestion),
       section("Grenzen", item.limits, (value) => node("li", "", value))
     ]);
@@ -91,9 +93,20 @@
     const wrapper = node("div", "factcheck-result-section");
     wrapper.append(node("h4", "", "Frame-Hinweis"));
     wrapper.append(node("p", "", `${frame.label}: ${frame.explanation}`));
-    wrapper.append(metaLine("Moegliche Funktion", frame.likelyFunction));
+    wrapper.append(metaLine("Warum er wirkt", frame.whyItWorks));
+    wrapper.append(metaLine("Wirkungspotenzial", frame.impact));
+    wrapper.append(metaLine("Mögliche Funktion", frame.likelyFunction));
+    wrapper.append(metaLine("Antwortstrategie", frame.responseStrategy));
     wrapper.append(metaLine("Grenze", frame.caution));
     return wrapper;
+  }
+
+  function truthSection(truthCheck) {
+    if (!truthCheck) return document.createDocumentFragment();
+    return block(
+      "Wahrheitsgehalt",
+      `${verdictLabel(truthCheck.verdict)} (${truthCheck.confidence || "niedrig"}). ${truthCheck.explanation || "Die Beleglage ist offen."}`
+    );
   }
 
   function section(title, items, renderItem) {
