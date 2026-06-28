@@ -6,6 +6,8 @@
     <title>WÖk-App | Wirkungsökonomie</title>
     <meta name="description" content="Die installierbare WÖk-App für Faktencheck, Frag die WÖk und Produktcheck mit Text, Link oder Bildbeleg.">
     <meta name="theme-color" content="#f7f1e8">
+    <meta name="application-name" content="WÖk-App">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="WÖk-App">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -18,7 +20,7 @@
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../assets/img/brand/app-icon-192.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260628-woek-feedback">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260628-pwa">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -69,6 +71,18 @@
           <button class="woek-app-tab" type="button" role="tab" data-app-tab="factcheck">Faktencheck</button>
           <button class="woek-app-tab" type="button" role="tab" data-app-tab="woek">Frag die WÖk</button>
           <button class="woek-app-tab" type="button" role="tab" data-app-tab="product">Produktcheck</button>
+        </div>
+
+        <div class="woek-app-install" data-pwa-install hidden>
+          <div>
+            <p class="hero-kicker">Installierbar</p>
+            <h2>Als App öffnen.</h2>
+            <p data-pwa-install-copy>Lege die WÖk-App auf Startbildschirm oder Dock. Sie startet dann ohne Browserrahmen.</p>
+          </div>
+          <div class="woek-app-install-actions">
+            <button class="btn btn-primary" type="button" data-pwa-install-button>Installieren</button>
+            <button class="btn btn-secondary" type="button" data-pwa-install-dismiss>Ausblenden</button>
+          </div>
         </div>
 
         <div class="woek-app-layout">
@@ -157,7 +171,7 @@
           <aside class="woek-app-result" aria-live="polite">
             <div class="woek-app-statusbar">
               <span data-app-status>Bereit</span>
-              <span>Beta</span>
+              <span data-pwa-status>Online</span>
             </div>
             <div data-app-result>
               <p class="hero-kicker">Bereit</p>
@@ -325,6 +339,6 @@
     </footer>
 
     <script src="../assets/js/main.js?v=20260612-mobile-table-fix"></script>
-    <script src="../assets/js/woek-app.js?v=20260628-product-killer" defer></script>
+    <script src="../assets/js/woek-app.js?v=20260628-pwa" defer></script>
   </body>
 </html>

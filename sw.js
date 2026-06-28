@@ -1,6 +1,7 @@
-const CACHE_NAME = "woek-app-shell-20260628";
+const CACHE_NAME = "woek-app-shell-20260628-pwa";
 const APP_SHELL = [
   "/app/",
+  "/offline.html",
   "/manifest.webmanifest",
   "/assets/css/style.css",
   "/assets/js/main.js",
@@ -31,25 +32,52 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
+
 self.addEventListener("fetch", (event) => {
   const request = event.request;
   const url = new URL(request.url);
 
-  if (request.method !== "GET" || url.pathname.startsWith("/api/")) {
+  if (request.method !== "GET" || url.origin !== self.location.origin || url.pathname.startsWith("/api/")) {
     return;
   }
 
-  event.respondWith(
-    caches.match(request).then((cached) => {
-      if (cached) return cached;
-      return fetch(request).then((response) => {
-        if (!response.ok || url.origin !== self.location.origin) {
-          return response;
-        }
-        const clone = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone)).catch(() => undefined);
-        return response;
-      });
-    })
-  );
+  if (request.mode === "navigate" || request.headers.get("accept")?.includes("text/html")) {
+    event.respondWith(networkFirst(request, "/offline.html"));
+    return;
+  }
+
+  event.respondWith(staleWhileRevalidate(request));
 });
+
+async function networkFirst(request, fallbackUrl) {
+  const cache = await caches.open(CACHE_NAME);
+  try {
+    const response = await fetch(request);
+    if (response.ok) {
+      await cache.put(request, response.clone());
+    }
+    return response;
+  } catch {
+    return (await cache.match(request, { ignoreSearch: true })) ?? (await cache.match(fallbackUrl));
+  }
+}
+
+async function staleWhileRevalidate(request) {
+  const cache = await caches.open(CACHE_NAME);
+  const cached = await cache.match(request, { ignoreSearch: true });
+  const update = fetch(request)
+    .then((response) => {
+      if (response.ok) {
+        cache.put(request, response.clone()).catch(() => undefined);
+      }
+      return response;
+    })
+    .catch(() => undefined);
+
+  return cached ?? (await update) ?? new Response("", { status: 504, statusText: "Offline" });
+}

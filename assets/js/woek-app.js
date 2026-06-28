@@ -1,18 +1,23 @@
 (() => {
-  if ("serviceWorker" in navigator && location.protocol === "https:") {
-    navigator.serviceWorker.register("/sw.js").catch(() => {});
-  }
-
   const root = document.querySelector("[data-woek-app]");
   if (!root) return;
 
   const apiBase = window.WOEK_API_BASE || "https://130.162.217.58.sslip.io";
   const clientId = getClientId();
+  const installDismissKey = "woek_app_install_dismissed";
   const tabs = Array.from(root.querySelectorAll("[data-app-tab]"));
   const panels = Array.from(root.querySelectorAll("[data-app-panel]"));
   const result = root.querySelector("[data-app-result]");
   const status = root.querySelector("[data-app-status]");
+  const pwaStatus = root.querySelector("[data-pwa-status]");
+  const installPanel = root.querySelector("[data-pwa-install]");
+  const installCopy = root.querySelector("[data-pwa-install-copy]");
+  const installButton = root.querySelector("[data-pwa-install-button]");
+  const installDismiss = root.querySelector("[data-pwa-install-dismiss]");
+  let deferredInstallPrompt = null;
   let feedbackContext = null;
+
+  initPwa();
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => setMode(tab.dataset.appTab || "factcheck"));
@@ -42,6 +47,85 @@
 
   const initialMode = new URLSearchParams(window.location.search).get("mode");
   setMode(["factcheck", "woek", "product"].includes(initialMode) ? initialMode : "factcheck");
+
+  function initPwa() {
+    updateConnectivity();
+    window.addEventListener("online", updateConnectivity);
+    window.addEventListener("offline", updateConnectivity);
+
+    installDismiss?.addEventListener("click", () => {
+      window.localStorage.setItem(installDismissKey, "1");
+      hideInstallPanel();
+    });
+
+    installButton?.addEventListener("click", async () => {
+      if (!deferredInstallPrompt) {
+        window.localStorage.setItem(installDismissKey, "1");
+        hideInstallPanel();
+        return;
+      }
+
+      deferredInstallPrompt.prompt();
+      await deferredInstallPrompt.userChoice.catch(() => undefined);
+      deferredInstallPrompt = null;
+      hideInstallPanel();
+    });
+
+    window.addEventListener("beforeinstallprompt", (event) => {
+      event.preventDefault();
+      deferredInstallPrompt = event;
+      showInstallPanel("Lege die WÖk-App auf Startbildschirm oder Dock. Sie startet dann ohne Browserrahmen.", "Installieren");
+    });
+
+    window.addEventListener("appinstalled", () => {
+      deferredInstallPrompt = null;
+      window.localStorage.setItem(installDismissKey, "1");
+      hideInstallPanel();
+      updatePwaStatus("Installiert");
+    });
+
+    if (isStandaloneDisplay()) {
+      updatePwaStatus(navigator.onLine ? "App · online" : "App · offline");
+    } else if (isManualInstallBrowser()) {
+      showInstallPanel(
+        "macOS Safari: Ablage > Zum Dock hinzufügen. iPhone/iPad: Teilen > Zum Home-Bildschirm. Chrome/Edge zeigen hier sonst einen Install-Button.",
+        "Verstanden",
+        true
+      );
+    }
+
+    registerServiceWorker();
+  }
+
+  async function registerServiceWorker() {
+    const canRegister = "serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost");
+    if (!canRegister) return;
+
+    try {
+      const registration = await navigator.serviceWorker.register("/sw.js");
+      registration.addEventListener("updatefound", () => {
+        const worker = registration.installing;
+        if (!worker) return;
+        worker.addEventListener("statechange", () => {
+          if (worker.state === "installed" && navigator.serviceWorker.controller) {
+            showInstallPanel("Eine neue Version ist bereit. Aktualisiere die App, um sie zu laden.", "Aktualisieren", false, true);
+            deferredInstallPrompt = {
+              prompt: () => worker.postMessage({ type: "SKIP_WAITING" }),
+              userChoice: Promise.resolve()
+            };
+          }
+        });
+      });
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (!window.__woekAppReloading) {
+          window.__woekAppReloading = true;
+          window.location.reload();
+        }
+      });
+    } catch {
+      updatePwaStatus(navigator.onLine ? "Online" : "Offline");
+    }
+  }
 
   async function submitFactcheck(form) {
     const data = new FormData(form);
@@ -95,6 +179,11 @@
   }
 
   async function submitJson(path, body, render) {
+    if (!navigator.onLine) {
+      renderNotice("Offline", "Die App ist gestartet, aber die KI-Prüfung braucht eine Verbindung zur Oracle-API.");
+      return;
+    }
+
     setBusy(true);
     renderLoading();
 
@@ -290,6 +379,39 @@
       button.textContent = isBusy ? "Prüfung läuft..." : button.dataset.label || "Prüfen";
     });
     if (status) status.textContent = isBusy ? "Prüfung läuft" : "Bereit";
+  }
+
+  function showInstallPanel(copy, buttonLabel, manual = false, force = false) {
+    if (!installPanel || (!force && window.localStorage.getItem(installDismissKey) === "1") || isStandaloneDisplay()) return;
+    if (installCopy) installCopy.textContent = copy;
+    if (installButton) {
+      installButton.textContent = buttonLabel;
+      installButton.dataset.manualInstall = manual ? "true" : "false";
+    }
+    installPanel.hidden = false;
+  }
+
+  function hideInstallPanel() {
+    if (installPanel) installPanel.hidden = true;
+  }
+
+  function updateConnectivity() {
+    const online = navigator.onLine;
+    updatePwaStatus(isStandaloneDisplay() ? `App · ${online ? "online" : "offline"}` : online ? "Online" : "Offline");
+  }
+
+  function updatePwaStatus(text) {
+    if (pwaStatus) pwaStatus.textContent = text;
+  }
+
+  function isStandaloneDisplay() {
+    return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  }
+
+  function isManualInstallBrowser() {
+    const ua = navigator.userAgent;
+    const isAppleEngine = /Safari/i.test(ua) && !/Chrome|CriOS|Edg|OPR|Firefox/i.test(ua);
+    return isAppleEngine;
   }
 
   function replaceResult(nodes) {
