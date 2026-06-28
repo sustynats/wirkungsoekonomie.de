@@ -144,6 +144,122 @@ function htmlMeta(html, name) {
   return "";
 }
 
+function htmlAttribute(tag, name) {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = new RegExp(`${escaped}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, "i").exec(tag);
+  return match ? entityDecode(match[1] || match[2] || "") : "";
+}
+
+function htmlMetaAll(html, name) {
+  const matches = [];
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(`<meta\\s+[^>]*(?:name|property)\\s*=\\s*(?:"${escaped}"|'${escaped}')[^>]*>`, "gi");
+  for (const match of html.matchAll(pattern)) {
+    const content = htmlAttribute(match[0], "content");
+    if (content) matches.push(content);
+  }
+  return matches;
+}
+
+function absoluteUrl(value, baseUrl = site) {
+  const raw = entityDecode(value).trim();
+  if (!raw) return "";
+  try {
+    const url = new URL(raw, baseUrl);
+    return /^https?:$/.test(url.protocol) ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
+function jsonLdObjects(html) {
+  const blocks = [...html.matchAll(/<script\b[^>]+type=(?:"application\/ld\+json"|'application\/ld\+json')[^>]*>([\s\S]*?)<\/script>/gi)];
+  return blocks.flatMap((match) => {
+    try {
+      const parsed = JSON.parse(entityDecode(match[1] || ""));
+      return Array.isArray(parsed) ? parsed : [parsed];
+    } catch {
+      return [];
+    }
+  });
+}
+
+function valuesFromJsonLd(value, keys) {
+  const results = [];
+  const visit = (node) => {
+    if (!node) return;
+    if (Array.isArray(node)) {
+      node.forEach(visit);
+      return;
+    }
+    if (typeof node !== "object") return;
+    for (const key of keys) {
+      const found = node[key];
+      if (Array.isArray(found)) {
+        for (const item of found) {
+          if (typeof item === "string") results.push(item);
+          else if (item && typeof item === "object") results.push(item.name || item.label || item.headline || "");
+        }
+      } else if (typeof found === "string") {
+        results.push(found);
+      } else if (found && typeof found === "object") {
+        results.push(found.url || found.contentUrl || found.name || "");
+      }
+    }
+    for (const child of Object.values(node)) {
+      if (child && typeof child === "object") visit(child);
+    }
+  };
+  visit(value);
+  return results.filter(Boolean);
+}
+
+function splitTags(value) {
+  return String(value || "")
+    .split(/[,;|]/)
+    .map((tag) => stripTags(entityDecode(tag)).trim())
+    .filter(Boolean);
+}
+
+function uniqueTags(tags, limit = 18) {
+  const seen = new Set();
+  const cleaned = [];
+  for (const tag of tags.flatMap((value) => Array.isArray(value) ? value : splitTags(value))) {
+    const clean = stripTags(tag).replace(/\s+/g, " ").trim();
+    const key = clean.toLocaleLowerCase("de-DE");
+    if (!clean || clean.length > 80 || seen.has(key)) continue;
+    seen.add(key);
+    cleaned.push(clean);
+    if (cleaned.length >= limit) break;
+  }
+  return cleaned;
+}
+
+function imageFromHtml(rel, html, pageUrl) {
+  const baseUrl = pageUrl || `${site}/${rel}`;
+  const candidates = [
+    htmlMeta(html, "og:image"),
+    htmlMeta(html, "twitter:image"),
+    htmlMeta(html, "search_image"),
+    ...jsonLdObjects(html).flatMap((block) => valuesFromJsonLd(block, ["image", "thumbnailUrl"])),
+  ];
+  for (const candidate of candidates) {
+    const url = absoluteUrl(candidate, baseUrl);
+    if (url) return url;
+  }
+  return "";
+}
+
+function tagsFromHtml(html) {
+  return uniqueTags([
+    htmlMeta(html, "search_section"),
+    htmlMeta(html, "search_type"),
+    htmlMeta(html, "search_tags"),
+    ...htmlMetaAll(html, "article:tag"),
+    ...jsonLdObjects(html).flatMap((block) => valuesFromJsonLd(block, ["keywords", "about"]))
+  ]);
+}
+
 function canonicalFor(rel, html) {
   const canonical = html.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1];
   if (canonical) return canonical;
@@ -174,14 +290,61 @@ function pageData(file) {
   const title = entityDecode(htmlMeta(html, "search_title") || html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || rel);
   const description = entityDecode(htmlMeta(html, "description") || htmlMeta(html, "search_description") || stripTags(html.match(/<main[\s\S]*?<\/main>/i)?.[0] || "").slice(0, 240));
   const stat = fs.statSync(file);
+  const url = canonicalFor(rel, html);
   return {
     rel,
     title: stripTags(title),
     description: stripTags(description).slice(0, 320),
-    url: canonicalFor(rel, html),
+    url,
     date: dateFromHtml(html, stat),
+    image: imageFromHtml(rel, html, url),
+    tags: tagsFromHtml(html),
     raw: stripTags(html).slice(0, 500),
     isRedirect: /<meta[^>]+http-equiv=["']refresh["']/i.test(html) || /window\.location\.(replace|href)/i.test(html) || /<meta[^>]+name=["']robots["'][^>]+noindex/i.test(html),
+  };
+}
+
+function loadDocumentTagMap() {
+  const sources = [
+    path.join(root, "assets", "data", "document-library.json"),
+    path.join(root, "assets", "data", "library-version-registry.json"),
+  ];
+  const map = new Map();
+  for (const source of sources) {
+    if (!fs.existsSync(source)) continue;
+    const data = JSON.parse(fs.readFileSync(source, "utf8"));
+    const documents = Array.isArray(data) ? data : Array.isArray(data.documents) ? data.documents : [];
+    for (const doc of documents) {
+      const rawUrl = doc.url || doc.urls?.primary || "";
+      if (!rawUrl || /^https?:\/\//i.test(rawUrl) && !rawUrl.startsWith(site)) continue;
+      const url = absoluteUrl(rawUrl, `${site}/`);
+      if (!url) continue;
+      const tags = uniqueTags([
+        doc.documentType,
+        doc.type,
+        doc.status,
+        doc.level,
+        doc.source,
+        ...(doc.audience || []),
+        ...(doc.topics || []),
+        ...(doc.methods || []),
+        ...(doc.relatedMethods || []),
+        ...(doc.impactFields || []),
+        ...(doc.relatedImpactFields || []),
+      ]);
+      if (tags.length) map.set(url.replace(/\/$/, ""), tags);
+    }
+  }
+  return map;
+}
+
+const documentTagsByUrl = loadDocumentTagMap();
+
+function enrichItemTags(item, fallbackTags = []) {
+  const mapped = documentTagsByUrl.get(String(item.url || "").replace(/\/$/, "")) || [];
+  return {
+    ...item,
+    tags: uniqueTags([...(item.tags || []), ...mapped, ...fallbackTags]),
   };
 }
 
@@ -208,11 +371,14 @@ function itemsFromBlogIndex() {
     .filter((post) => post.status === "published")
     .map((post) => {
       const date = new Date(post.publishedAt || `${post.date || ""}T00:00:00`);
+      const url = new URL(post.url || "/blog.html", site).href;
       return {
         title: stripTags(post.title || "Journalbeitrag"),
         description: stripTags(post.excerpt || post.description || "").slice(0, 320),
-        url: new URL(post.url || "/blog.html", site).href,
+        url,
         date: Number.isNaN(date.getTime()) ? new Date() : date,
+        image: absoluteUrl(post.image || "", url),
+        tags: uniqueTags([post.category, post.type, ...(post.tags || [])]),
       };
     })
     .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
@@ -243,6 +409,13 @@ function itemsFromPodcastIndex() {
         audioUrl: episode.audio ? new URL(episode.audio, `${site}/`).href : "",
         audioType: episode.audioType || "audio/mpeg",
         audioBytes: episode.audioBytes || 0,
+        tags: uniqueTags([
+          "Podcast",
+          episode.series,
+          episode.subtitle,
+          ...(episode.keywords || []),
+          ...(episode.relatedTerms || []).map((term) => term.label),
+        ]),
       };
     })
     .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
@@ -266,6 +439,32 @@ function itemsFromHomeIndex() {
     .slice(0, 80);
 }
 
+function imageMimeType(value) {
+  try {
+    const ext = path.extname(new URL(value).pathname).toLowerCase();
+    if (ext === ".png") return "image/png";
+    if (ext === ".webp") return "image/webp";
+    if (ext === ".gif") return "image/gif";
+    if (ext === ".svg") return "image/svg+xml";
+  } catch {
+    return "image/jpeg";
+  }
+  return "image/jpeg";
+}
+
+function renderImageTags(item) {
+  const image = item.image || "";
+  if (!image) return "";
+  return `
+      <media:content url="${xml(image)}" medium="image" type="${xml(imageMimeType(image))}" />
+      <media:thumbnail url="${xml(image)}" />`;
+}
+
+function renderCategoryTags(item, spec) {
+  const tags = uniqueTags([spec.title, ...(item.tags || [])], 20);
+  return tags.map((tag) => `\n      <category>${xml(tag)}</category>`).join("");
+}
+
 function renderPodcastFeed(spec, items) {
   const now = new Date().toUTCString();
   const itemXml = items.map((item) => {
@@ -287,11 +486,11 @@ function renderPodcastFeed(spec, items) {
       <itunes:author>${xml(podcastMeta.author)}</itunes:author>
       <itunes:explicit>${podcastMeta.explicit}</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:image href="${xml(item.image)}" />${season}${episode}${duration}${enclosure}
+      <itunes:image href="${xml(item.image)}" />${renderImageTags(item)}${renderCategoryTags(item, spec)}${season}${episode}${duration}${enclosure}
     </item>`;
   }).join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>${xml(podcastMeta.title)}</title>
     <link>${xml(podcastMeta.link)}</link>
@@ -320,10 +519,10 @@ function renderFeed(spec, items) {
       <link>${xml(item.url)}</link>
       <guid isPermaLink="true">${xml(item.url)}</guid>
       <pubDate>${item.date.toUTCString()}</pubDate>
-      <description>${xml(item.description)}</description>
+      <description>${xml(item.description)}</description>${renderImageTags(item)}${renderCategoryTags(item, spec)}
     </item>`).join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>${xml(spec.title)}</title>
     <link>${xml(spec.link)}</link>
@@ -359,7 +558,8 @@ function upsertHeadLinks(file, specs) {
 fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
-  const items = spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns);
+  const items = (spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns))
+    .map((item) => enrichItemTags(item, [spec.title]));
   fs.writeFileSync(path.join(feedDir, spec.file), spec.fromPodcastIndex ? renderPodcastFeed(spec, items) : renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);
 }
