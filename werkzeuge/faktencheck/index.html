@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Aussagen prüfen, Quellen einordnen, Frames sichtbar machen und Folgen verständlich erklären.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260628-faktencheck">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260628-faktencheck-live">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -69,13 +69,52 @@
             <p class="hero-subtitle">Aussagen prüfen, Quellen einordnen und sichtbar machen, welche Wirkung ein Frame entfalten kann.</p>
             <p>Der wirkungsökonomische Faktencheck fragt zuerst: Was wird behauptet, welche Quelle trägt diese Behauptung und was bleibt offen? Danach kommt der zweite Blick: Welcher Deutungsrahmen wird angeboten, welches Wirkungspotenzial entsteht und welche Antwort macht Menschen wieder handlungsfähig?</p>
             <div class="hero-actions no-print">
-              <a class="btn btn-primary" href="mailto:impact@wirkungsoekonomie.org?subject=Faktencheck-Hinweis">Aussage einreichen</a>
+              <a class="btn btn-primary" href="#faktencheck-pruefen">Aussage prüfen</a>
               <a class="btn btn-secondary" href="../../wirkungsradar/">Debatten-Kompass öffnen</a>
             </div>
           </div>
-          <figure class="hero-visual">
+          <figure class="hero-visual hero-visual--natural">
             <img src="../../assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp" alt="Grafik über Fakten, Wirkungspotenzial und öffentliche Resonanz" width="1659" height="948" decoding="async">
           </figure>
+        </div>
+      </section>
+
+      <section class="section section-soft factcheck-live-section" id="faktencheck-pruefen" aria-labelledby="faktencheck-pruefen-title">
+        <div class="section-header">
+          <p class="hero-kicker">Direkte Prüfung</p>
+          <h2 id="faktencheck-pruefen-title">Aussage eingeben, Quellenlage prüfen lassen.</h2>
+          <p>Der Faktencheck nutzt dieselbe Logik wie der Discord-Bot: Aussage zerlegen, Quellen suchen, Frame sichtbar machen, wirkungsökonomisch einordnen und ruhig antworten.</p>
+        </div>
+        <div class="factcheck-live-grid">
+          <form class="factcheck-live-form" data-factcheck-form>
+            <label>
+              <span>Aussage</span>
+              <textarea name="claim" rows="5" maxlength="1800" required placeholder="Zum Beispiel: Der Klimawandel ist nicht menschengemacht."></textarea>
+            </label>
+            <label>
+              <span>Kontext oder Link</span>
+              <textarea name="context" rows="3" maxlength="700" placeholder="Wer sagt das, wo, wann, mit welchem Link?"></textarea>
+            </label>
+            <label>
+              <span>Themenbereich</span>
+              <select name="domain">
+                <option value="">Automatisch erkennen</option>
+                <option value="general">Allgemein</option>
+                <option value="climate">Klima, Energie, Ressourcen</option>
+                <option value="social">Sozialstaat, Arbeit, Migration</option>
+                <option value="democracy">Demokratie, Medien, Öffentlichkeit</option>
+                <option value="highstakes">Recht, Medizin, Finanzen, Sicherheit</option>
+                <option value="breaking">Aktuelles Ereignis / Breaking News</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" type="submit">Faktencheck starten</button>
+            <p class="factcheck-form-note">Kein Urteil ohne Quellen, Datenstand und klare Grenze. High-Stakes-Themen bleiben review-pflichtig.</p>
+          </form>
+          <article class="factcheck-result" data-factcheck-result aria-live="polite">
+            <p class="hero-kicker">Ergebnis</p>
+            <h3>Noch keine Aussage geprüft.</h3>
+            <p>Nach dem Absenden erscheinen hier Kurzurteil, Belege, Frame-Hinweis, wirkungsökonomische Einordnung und eine ruhige Antwort.</p>
+          </article>
         </div>
       </section>
 
@@ -429,5 +468,6 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
+    <script src="../../assets/js/faktencheck.js?v=20260628-live" defer></script>
   </body>
 </html>

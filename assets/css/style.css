@@ -6607,6 +6607,131 @@ textarea {
   color: var(--muted);
 }
 
+.hero-visual--natural {
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: var(--shadow-card);
+}
+
+.hero-visual--natural img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.factcheck-live-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1rem, 3vw, 1.5rem);
+  align-items: start;
+}
+
+.factcheck-live-form,
+.factcheck-result {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-card);
+}
+
+.factcheck-live-form label {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.factcheck-live-form textarea,
+.factcheck-live-form select {
+  width: 100%;
+  min-height: 2.85rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid rgba(11, 16, 32, 0.18);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.factcheck-live-form textarea {
+  resize: vertical;
+}
+
+.factcheck-live-form textarea:focus,
+.factcheck-live-form select:focus {
+  border-color: rgba(47, 125, 92, 0.55);
+  outline: 3px solid rgba(47, 125, 92, 0.16);
+}
+
+.factcheck-live-form button[disabled] {
+  cursor: wait;
+  opacity: 0.76;
+  transform: none;
+}
+
+.factcheck-form-note,
+.factcheck-result p {
+  margin: 0;
+}
+
+.factcheck-form-note,
+.factcheck-result-summary,
+.factcheck-result-meta {
+  color: var(--muted);
+}
+
+.factcheck-result h3,
+.factcheck-result h4 {
+  margin: 0;
+}
+
+.factcheck-result-section {
+  display: grid;
+  gap: 0.45rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(11, 16, 32, 0.1);
+}
+
+.factcheck-result-list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.factcheck-result-list li {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.factcheck-result-list strong {
+  color: var(--navy);
+}
+
+.factcheck-result-list span,
+.factcheck-result-meta strong {
+  color: var(--green-dark);
+  font-weight: 850;
+}
+
+.factcheck-result-list a {
+  color: var(--green-dark);
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
 .principle-callout {
   display: grid;
   gap: 0.65rem;
@@ -6632,6 +6757,10 @@ textarea {
 
 @media (max-width: 720px) {
   .feedback-loop li {
+    grid-template-columns: 1fr;
+  }
+
+  .factcheck-live-grid {
     grid-template-columns: 1fr;
   }
 }
