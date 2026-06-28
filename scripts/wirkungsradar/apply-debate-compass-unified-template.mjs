@@ -4,7 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const RADAR_ROOT = path.join(ROOT, "wirkungsradar");
 const SITE_URL = "https://wirkungsoekonomie.de";
-const VERSION = "20260612-mobile-table-fix";
+const VERSION = "20260628-radar-toc";
 const MAIN_JS_VERSION = "20260612-mobile-table-fix";
 
 function esc(value) {
@@ -230,7 +230,7 @@ function toc() {
     ["Faktenlage", "#faktenlage"],
     ["Quellen", "#quellen"],
   ];
-  return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche">${items.map(([label, href]) => `<a href="${href}">${label}</a>`).join("")}</nav></article></div></section>`;
+  return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche">${items.map(([label, href]) => `<a href="${href}">${label}</a>`).join(" ")}</nav></article></div></section>`;
 }
 
 function claimBlock(claim) {

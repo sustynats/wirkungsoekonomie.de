@@ -98,7 +98,7 @@ export function V3PageNav() {
     ["Faktenlage", "#faktenlage"],
     ["Quellen", "#quellen"],
   ];
-  return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche">${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join("")}</nav></article></div></section>`;
+  return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Debattenkarte Seitenbereiche">${items.map(([label, href]) => `<a href="${esc(href)}">${esc(label)}</a>`).join(" ")}</nav></article></div></section>`;
 }
 
 export function FactsLayer({ factsLayer }) {

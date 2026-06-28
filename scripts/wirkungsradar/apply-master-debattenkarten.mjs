@@ -1148,7 +1148,7 @@ function shell({ title, description, canonical, base, main, searchType = "Debatt
     <meta name="search_type" content="${esc(searchType)}">
     <link rel="canonical" href="${esc(canonical)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260628-radar-toc">
   </head>
   <body>
 ${siteHeader(base)}
@@ -1171,7 +1171,7 @@ function redirectShell({ title, description, canonical, target, base }) {
     <link rel="canonical" href="${esc(canonical)}">
     <meta http-equiv="refresh" content="0; url=${esc(target)}">
     <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260628-radar-toc">
   </head>
   <body>
     <main class="section" data-search-exclude>
@@ -1220,7 +1220,7 @@ function renderToc() {
     ["#warum-zieht-das", "Warum zieht das?"],
     ["#methodik", "Methodik"],
   ];
-  return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Seitenbereiche">${links.map(([href, label]) => `<a href="${href}">${label}</a>`).join("")}</nav></article></div></section>`;
+  return `<section class="section debate-toc-section" id="inhaltsverzeichnis" data-debate-toc data-search-exclude><div><article class="card debate-toc-card"><p class="card-kicker">Inhaltsverzeichnis</p><nav class="dossier-tab-nav v3-radar-nav" aria-label="Seitenbereiche">${links.map(([href, label]) => `<a href="${href}">${label}</a>`).join(" ")}</nav></article></div></section>`;
 }
 
 function answerId(label) {

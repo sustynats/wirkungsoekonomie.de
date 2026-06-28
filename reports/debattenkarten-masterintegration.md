@@ -9,7 +9,7 @@ Stand: 2026-06-09
 - Neue Live-Routen angelegt: 0
 - Reaction-Felder sichtbar gerendert: 127
 - Reaction-Felder redaktionell automatisch abgeleitet / reviewNeeded: 122
-- Interne Quelle: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
+- Interne Quelle: `Wirkungsradar_Debattenkarten_Langfassung.docx`
 
 ## Cluster
 
