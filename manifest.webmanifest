@@ -1,7 +1,7 @@
 {
   "name": "WÖk-App",
   "short_name": "WÖk",
-  "description": "Faktencheck, Frag die WÖk und Produktcheck mit Text, Link oder Bildbeleg.",
+  "description": "WÖk-Wirkungscheck, Frag die WÖk und Produktcheck mit Text, Link oder Bildbeleg.",
   "id": "/app/",
   "start_url": "/app/?source=pwa",
   "scope": "/app/",
@@ -36,10 +36,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Faktencheck",
-      "short_name": "Check",
+      "name": "WÖk-Wirkungscheck",
+      "short_name": "Wirkungscheck",
       "url": "/app/?mode=factcheck",
-      "description": "Aussage, Artikel oder Screenshot prüfen.",
+      "description": "Fakten, Frames und Folgen prüfen.",
       "icons": [
         {
           "src": "/assets/img/brand/app-icon-192.png",
@@ -88,7 +88,7 @@
       "sizes": "390x844",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "WÖk-App auf dem Smartphone mit Faktencheck, Frag die WÖk und Produktcheck."
+      "label": "WÖk-App auf dem Smartphone mit WÖk-Wirkungscheck, Frag die WÖk und Produktcheck."
     }
   ]
 }

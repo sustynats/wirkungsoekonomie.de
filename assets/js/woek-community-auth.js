@@ -121,7 +121,7 @@
       return "Die Website fragt den WÖk-Server ab und prüft, ob dein Discord-Konto dort Mitglied ist.";
     }
     if (state === "member") {
-      return "Dein Discord-Konto wurde als Mitglied des WÖk-Servers erkannt. Die Website kann den Community-Zugang jetzt an Faktencheck, WebApp und spätere Limits weitergeben.";
+      return "Dein Discord-Konto wurde als Mitglied des WÖk-Servers erkannt. Die Website kann den Community-Zugang jetzt an WÖk-Wirkungscheck, WebApp und spätere Limits weitergeben.";
     }
     if (state === "nonmember") {
       return "Dein Discord-Konto ist angemeldet, aber auf dem WÖk-Server noch nicht als Mitglied gefunden. Tritt dem Server bei und prüfe den Status danach erneut.";
@@ -139,7 +139,7 @@
     actions.replaceChildren();
     if (state === "member") {
       actions.append(
-        actionLink(variant === "factcheck" ? "#faktencheck-pruefen" : "#woek-app-title", variant === "factcheck" ? "Faktencheck nutzen" : "Funktionen nutzen", "btn btn-primary"),
+        actionLink(variant === "factcheck" ? "#faktencheck-pruefen" : "#woek-app-title", variant === "factcheck" ? "Wirkungscheck nutzen" : "Funktionen nutzen", "btn btn-primary"),
         actionLink(discordInviteUrl, "WÖk-Server öffnen", "btn btn-secondary", true)
       );
       return;
@@ -160,7 +160,7 @@
       actionLink(discordInviteUrl, state === "nonmember" ? "WÖk-Community beitreten" : "Server ansehen", "btn btn-secondary", true)
     );
     if (variant !== "factcheck") {
-      actions.append(actionLink("../werkzeuge/faktencheck/", "Faktencheck ansehen", "btn btn-secondary"));
+      actions.append(actionLink("../werkzeuge/faktencheck/", "Wirkungscheck ansehen", "btn btn-secondary"));
     }
   }
 

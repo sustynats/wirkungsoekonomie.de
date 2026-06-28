@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T16:12:27.043Z",
+  "generatedAt": "2026-06-28T21:33:46.265Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,10 +205,10 @@
     }
   ],
   "counts": {
-    "total": 1495,
+    "total": 1507,
     "byStatus": {
       "führend": 7,
-      "aktuell": 953,
+      "aktuell": 965,
       "Arbeitsfassung": 278,
       "ältere Fassung": 257
     },
@@ -216,8 +216,8 @@
       "Grundlagenwerk": 63,
       "Glossar": 43,
       "Methodik": 110,
-      "Arbeitspapier": 1206,
-      "Beispiel": 13,
+      "Arbeitspapier": 1216,
+      "Beispiel": 15,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
       "Buch": 8,
@@ -226,10 +226,10 @@
     },
     "bySource": {
       "leading-reference": 8,
-      "download-or-document": 723,
+      "download-or-document": 735,
       "online-version": 764
     },
-    "downloadFiles": 723,
+    "downloadFiles": 735,
     "onlineVersions": 764
   },
   "documents": [
@@ -986,6 +986,32 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-public-downloads-originals-beispiel-apfel-wirkungssteuer-bonusregel-pdf",
+      "title": "Beispiel Apfel Wirkungssteuer Bonusregel",
+      "shortDescription": "Beispiel im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Beispiel",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+        "sourcePath": "public/downloads/originals/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-dokumente-beispiel-konzern-index-html",
       "title": "Beispiel konzern",
       "shortDescription": "Beispiel im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -1005,6 +1031,28 @@
         "sourcePath": "dokumente/beispiel-konzern/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-beispiel-konzern-pdf",
+      "title": "Beispiel Konzern",
+      "shortDescription": "Beispiel im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Beispiel",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Beispiel-Konzern.pdf",
+        "sourcePath": "public/downloads/originals/Beispiel-Konzern.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -6749,6 +6797,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-public-downloads-originals-illusionmaschine-buerokratieabbau-pdf",
+      "title": "IllusionMaschine Buerokratieabbau",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/IllusionMaschine-Buerokratieabbau.pdf",
+        "sourcePath": "public/downloads/originals/IllusionMaschine-Buerokratieabbau.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-arbeitsbibliothek-instrumente-impact-controlling-index-html",
       "title": "Impact controlling",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
@@ -6770,6 +6840,28 @@
         "sourcePath": "werkstatt/arbeitsbibliothek/instrumente/impact-controlling/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf",
+      "title": "Impact controlling einfach erklaert",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/impact-controlling-einfach-erklaert.pdf",
+        "sourcePath": "assets/downloads/impact-controlling-einfach-erklaert.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -11602,6 +11694,28 @@
         "sourcePath": "dokumente/nats-woek-allgemein/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-nats-woek-allgemein-pdf",
+      "title": "NATS WÖk allgemein",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/NATS_WOeK_allgemein.pdf",
+        "sourcePath": "public/downloads/originals/NATS_WOeK_allgemein.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -16463,6 +16577,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-public-downloads-originals-sexarbeit-als-soziale-infrastruktur-pdf",
+      "title": "Sexarbeit als soziale Infrastruktur",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Sexarbeit-als-soziale-Infrastruktur.pdf",
+        "sourcePath": "public/downloads/originals/Sexarbeit-als-soziale-Infrastruktur.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-sicherheit-resilienz-sicherheit-als-wirkungsfrage-index-html",
       "title": "Sicherheit als wirkungsfrage",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
@@ -19001,6 +19139,30 @@
         "sourcePath": "dokumente/wenn-maschinen-arbeiten/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-wenn-maschinen-arbeiten-pdf",
+      "title": "Wenn Maschinen arbeiten",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Wenn-Maschinen-arbeiten.pdf",
+        "sourcePath": "public/downloads/originals/Wenn-Maschinen-arbeiten.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -22208,6 +22370,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-public-downloads-originals-woek-master-items-final-v1-2-pdf",
+      "title": "WÖk Master Items final",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "v1.2",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-woek-register-woek-master-items-public-research-register-v",
       "title": "WÖk Master Items Public Research Register",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
@@ -23131,6 +23315,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-public-downloads-originals-wp-einkommen-pdf",
+      "title": "WP Einkommen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WP_Einkommen.pdf",
+        "sourcePath": "public/downloads/originals/WP_Einkommen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-dokumente-wp-produkte-index-html",
       "title": "Wp produkte",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung.",
@@ -23155,6 +23363,54 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-public-downloads-originals-wp-produkte-pdf",
+      "title": "WP Produkte",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Produkte, Konsum & Beschaffung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WP_Produkte.pdf",
+        "sourcePath": "public/downloads/originals/WP_Produkte.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-wp-rente-pdf",
+      "title": "WP Rente",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WP_Rente.pdf",
+        "sourcePath": "public/downloads/originals/WP_Rente.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-dokumente-wp-wohnungsmarkt-index-html",
       "title": "Wp wohnungsmarkt",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -23174,6 +23430,28 @@
         "sourcePath": "dokumente/wp-wohnungsmarkt/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-wp-wohnungsmarkt-pdf",
+      "title": "WP Wohnungsmarkt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WP_Wohnungsmarkt.pdf",
+        "sourcePath": "public/downloads/originals/WP_Wohnungsmarkt.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {

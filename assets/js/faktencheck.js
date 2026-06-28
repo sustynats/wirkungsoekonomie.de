@@ -4,7 +4,7 @@
   if (!form || !result) return;
 
   const apiUrl = window.WOEK_FACTCHECK_API_URL || "https://130.162.217.58.sslip.io/api/factcheck";
-  const unavailableMessage = "Der Faktencheck-Dienst ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
+  const unavailableMessage = "Der WÖk-Wirkungscheck ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
   const submitButton = form.querySelector('button[type="submit"]');
 
   form.addEventListener("submit", async (event) => {
@@ -39,7 +39,7 @@
 
       renderFactcheck(payload.result);
     } catch (error) {
-      renderMessage("Faktencheck gerade nicht möglich", unavailableMessage);
+      renderMessage("Wirkungscheck gerade nicht möglich", unavailableMessage);
     } finally {
       setBusy(false);
     }
@@ -48,7 +48,7 @@
   function setBusy(isBusy) {
     if (!submitButton) return;
     submitButton.disabled = isBusy;
-    submitButton.textContent = isBusy ? "Prüfung läuft..." : "Faktencheck starten";
+    submitButton.textContent = isBusy ? "Prüfung läuft..." : "Wirkungscheck starten";
   }
 
   function renderLoading() {
