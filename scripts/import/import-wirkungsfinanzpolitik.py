@@ -35,7 +35,7 @@ from docx.shared import Pt, RGBColor
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = Path("/Users/hagen/Downloads/Wirkungsfinanzpolitik_Aufsatz_WOeK_v3_MMT_PublicPurpose_IOI.docx")
+SOURCE = Path("Wirkungsfinanzpolitik_Aufsatz_WOeK_v3_MMT_PublicPurpose_IOI.docx")
 TEMPLATE = ROOT / "assets" / "downloads" / "woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx"
 LEGACY_TEMPLATE_COMMIT = "2c7192fdbad878e720e541093dfaa59d80fe5336"
 LEGACY_TEMPLATE_PATH = "assets/downloads/woek_publikationsstandard_detailkonzepte_dossiers_v0_3.docx"

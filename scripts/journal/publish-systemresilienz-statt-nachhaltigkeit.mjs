@@ -3,7 +3,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 const root = process.cwd();
-const sourcePath = process.env.JOURNAL_SOURCE_PATH || process.argv[2] || "/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Systemresilienz_statt_Nachhaltigkeit_Artikelpaket_SDGplus.docx";
+const sourcePath = process.env.JOURNAL_SOURCE_PATH || process.argv[2] || "Systemresilienz_statt_Nachhaltigkeit_Artikelpaket_SDGplus.docx";
 const slug = "systemresilienz-statt-nachhaltigkeit";
 const title = "Von Nachhaltigkeit zu Systemresilienz";
 const subtitle = "Warum die SDGs wirkungsökonomisch als globales Risiko- und Resilienzregister gelesen werden sollten.";

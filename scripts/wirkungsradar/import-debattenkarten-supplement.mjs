@@ -3,11 +3,11 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
-const DEFAULT_DOCX = "/Users/hagen/Downloads/CodeX_Debattenkarten_33_WOeK_Wirkungsradar.docx";
+const DEFAULT_DOCX = "CodeX_Debattenkarten_33_WOeK_Wirkungsradar.docx";
 const DOCX = process.env.SUPPLEMENT_DOCX || DEFAULT_DOCX;
 const MASTER_PATH = path.join(ROOT, "content/wirkungsradar/debattenkarten-master.json");
 const REPORT_PATH = path.join(ROOT, "reports/debattenkarten-supplement-2026-06-07.md");
-const PYTHON = process.env.CODEX_PYTHON || "/Users/hagen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3";
+const PYTHON = process.env.CODEX_PYTHON || "python3";
 const DATA_STAND = "2026-06-07";
 
 function extractLines(docxPath) {

@@ -7,8 +7,7 @@ const sourceRoots = [
   path.join(root, "source-assets/originals"),
   path.join(root, "public/downloads/originals"),
   path.join(root, "assets/pdf"),
-  "/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente",
-];
+].concat(process.env.WOEK_SOURCE_ROOT ? [process.env.WOEK_SOURCE_ROOT] : []);
 
 const expected = [
   "Natalie-Weber_Die neue Ordnung des Wohlstands.docx",
@@ -77,9 +76,7 @@ function sha256(file) {
 function publicPath(file) {
   const rel = path.relative(root, file);
   if (!rel.startsWith("..")) return rel;
-  return file
-    .replace("/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente", "[local Kerndokumente]")
-    .replace("/Users/hagen/Pictures/Photos Library.photoslibrary", "[local Photos Library]");
+  return path.basename(file);
 }
 
 const allFiles = sourceRoots.flatMap((dir) => walk(dir));

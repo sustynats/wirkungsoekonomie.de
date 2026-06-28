@@ -4,9 +4,9 @@ import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
 const MASTER_JSON = path.join(ROOT, "content/wirkungsradar/debattenkarten-master.json");
-const MASTER_DOCX_V2 = "/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx";
+const MASTER_DOCX_V2 = "Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx";
 const MASTER_DOCX_LEGACY =
-  "/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsradar_Debattenkarten_Langfassung.docx";
+  "Wirkungsradar_Debattenkarten_Langfassung.docx";
 const MASTER_DOCX =
   process.env.WOEK_DEBATTENKARTEN_MASTER_DOCX ||
   (fs.existsSync(MASTER_DOCX_V2) ? MASTER_DOCX_V2 : MASTER_DOCX_LEGACY);

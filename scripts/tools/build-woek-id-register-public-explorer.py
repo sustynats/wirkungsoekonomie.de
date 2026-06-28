@@ -16,7 +16,7 @@ VERSION = "v2.1"
 
 CONTENT_DIR = ROOT / "content" / "woek-register"
 DOWNLOAD_DIR = ROOT / "assets" / "downloads" / "woek-register"
-SOURCE_XLSX_LOCAL = Path("/Users/hagen/Downloads/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx")
+SOURCE_XLSX_LOCAL = Path("WOeK_Master_Items_Public_Research_Register_v2.1.xlsx")
 SOURCE_XLSX_PUBLIC = DOWNLOAD_DIR / "WOeK_Master_Items_Public_Research_Register_v2.1.xlsx"
 DATA_PATH = ROOT / "assets" / "data" / "woek-id-register.json"
 OVERVIEW_DIR = ROOT / "register"

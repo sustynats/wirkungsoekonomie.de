@@ -2,7 +2,7 @@
 
 ## Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx
 
-Pfad: `/Users/hagen/Downloads/Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx`
+Pfad: `Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx`
 
 - Journal-Beitrag | Wirkungsökonomie | Entwurf zur Veröffentlichung Nicht jedem Stöckchen hinterher Warum Transformation einen öffentlichen Wirkungsraum braucht - und wie Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator und Resilienz-Prinzipien zusammenwirken Vorschlag Autorinnenzeile: Natalie Weber | Wirkungsökonomie Kurzfassung für die Journal-Übersicht Viele Debatten scheitern nicht erst an falschen Fakten.
 - Der Debatten-Kompass hilft, wenn ein Narrativ bereits im Raum steht.
@@ -81,7 +81,7 @@ Pfad: `/Users/hagen/Downloads/Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten
 
 ## Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx`
+Pfad: `Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx`
 
 - CODEX-BRIEFING · WIRKUNGSÖKONOMIE · ÖFFENTLICHER WIRKUNGSRAUM Resonanz-Kompass und Debatten-Kompass 2.0 Vollständige Architektur, Inhalte, UX-Reihenfolge, Denkfehlerbibliothek, Quellenlogik und CodeX-Anweisung Kernentscheidung Die Meta-Ebene heißt öffentlich: „Öffentlicher Wirkungsraum“.
 - Das neue Key-Feature heißt: „Resonanz-Kompass“.
@@ -166,7 +166,7 @@ Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Resonanzkompass_Debattenkompass_
 
 ## Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx`
+Pfad: `Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx`
 
 - Wirkungsradar / Debatten-Kompass Redaktionelle Komplettüberarbeitung von 17 Live-Seiten Codex-Dokument zur professionellen Neufassung, Quellenlogik und Seitenstruktur Stand: 04.06.2026 Zweck dieses Dokuments Dieses Dokument enthält redaktionelle Ersatzfassungen für 17 qualitativ schwache Wirkungsradar-Live-Seiten.
 - Ziel ist nicht nur sprachliche Glättung, sondern ein systematischer Umbau: weg von generischen Generator-Blöcken und pseudoquellenhaften Angaben, hin zu narrativspezifischen Folgenchecks, klaren Wirkpfaden, handhabbaren Antwortbausteinen und sauberer Quellenlogik am Ende jeder Seite.
@@ -251,7 +251,7 @@ Pfad: `/Users/hagen/Downloads/Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seit
 
 ## Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
+Pfad: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`
 
 - Wirkungsökonomie Debatten-Kompass 2.0 Finaler Textmaster, Quellen- und Codex-Briefing für die Professionalisierung aller Debatten-Seiten Stand: 05.06.2026 · Umfang: 89 Debattenkarten · Zielversion Website 2.0 Nicht verhandelbarer Seiten-Contract für jede Debattenkarte: Hero → Was wird behauptet?
 - → Sofortantwort → Folgencheck → Wirkpfad → Kritische Fragen → Faktenlage → Quellen → Warum zieht das Narrativ?
@@ -336,7 +336,7 @@ Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Textmaster_Codex
 
 ## Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx`
+Pfad: `Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx`
 
 - Wirkungsökonomie Website 2.0 Überarbeitungs- und Perfektionierungsanweisung für die Tool-Landschaft Optik · Funktion · Inhalt · Verständlichkeit · Qualitätssicherung CodeX-Briefing / Version 2.0 Kernauftrag Die bestehende Tool-Landschaft der Website wird nicht reduziert, sondern verständlicher, schöner, eindeutiger, nutzbarer und vertrauenswürdiger gemacht.
 - Stand: 05.06.2026 · Für Umsetzung durch CodeX Inhalt 1.
@@ -421,7 +421,7 @@ Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefi
 
 ## Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx`
+Pfad: `Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx`
 
 - WIRKUNGSOEKONOMIE.DE Website-Relaunch Wirkungsoekonomie.de Designsystem, Inhaltsueberarbeitung und Codex-Umsetzungsauftrag Version 1.0 - Umsetzungsbriefing fuer einen koordinierten Relaunch 5.
 - Juni 2026 Leitentscheidung Dieses Dokument ist als umsetzbares Gesamtbriefing fuer Codex gedacht.
@@ -506,7 +506,7 @@ Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.
 
 ## Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx`
+Pfad: `Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx`
 
 - Öffentlicher Wirkungsraum Finales Codex-Briefing für Agenda-Radar, Ursachen-Navigator, Resilienz-Prinzipien und Gesamtintegration Debatten verstehen.
 - Version: 1.0 - Arbeitsbriefing für finale Umsetzung der Website 2.0 Ziel: Alles, was nach Debatten-Kompass und Resonanz-Kompass noch fehlt, so bündeln, dass Codex die finale öffentliche Architektur umsetzen kann.
@@ -591,7 +591,7 @@ Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final
 
 ## Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx`
+Pfad: `Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx`
 
 - Wirkungsökonomie.de Debatten-Kompass 2.0 Allumfassende Korrektur der Quellen-, Deeplink- und Verlinkungslogik für bestehende Debatten-Seiten Verbindlicher Auftrag an CodeX Alle bestehenden Debatten-Kompass-Seiten müssen quellenfähig, linkfähig und öffentlich professionell werden.
 - Quellen dürfen nicht nur textuell genannt werden.
@@ -676,7 +676,7 @@ Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Quellen_Link_Kor
 
 ## Wirkungsoekonomie_Glossar_Korrektur_Codex.docx
 
-Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonomie_Glossar_Korrektur_Codex.docx`
+Pfad: `Wirkungsoekonomie_Glossar_Korrektur_Codex.docx`
 
 - WIRKUNGSÖKONOMIE Glossar 2.0: öffentliche Härtung, Quellenlogik und Template-Korrektur Umfassende Korrektur- und Umsetzungsanweisung für CodeX Stand: 5.
 - Juni 2026 · Ziel: professionelle öffentliche Glossarseiten ohne interne Artefakte Nicht verhandelbares Ziel Alle Glossarbegriffe bleiben erhalten.
@@ -761,7 +761,7 @@ Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonom
 
 ## Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx
 
-Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx`
+Pfad: `Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx`
 
 - CodeX-Briefing Wirkungsoekonomie.de Professionalitäts-, Link- und Download-Härtung der gesamten Website Interne Artefakte entfernen · KI-Anstrich beseitigen · öffentliche Redaktion stärken · PDFs und Quellen sauber führen Nicht verhandelbarer Auftrag Alle öffentlich erreichbaren Seiten, Komponenten, Downloads, PDFs, Suchindizes, Sitemaps, Feed-Ausgaben und Metadaten werden so bereinigt, dass sie wie eine professionelle redaktionelle Website wirken.
 - Es darf öffentlich nichts erscheinen, was nach interner Arbeitsnotiz, Importpipeline, CodeX-/KI-Anweisung, Promptrest, provisorischem Deployment, technischer Quelle, unfertiger Platzhalterseite oder unredigiertem Rohimport aussieht.
@@ -846,7 +846,7 @@ Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonom
 
 ## Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx
 
-Pfad: `/Users/hagen/Desktop/WÖk-Konzepte etc/Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx`
+Pfad: `Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx`
 
 - Webseitenanalyse wirkungsoekonomie.de Styleguide-, Struktur-, Inhalts- und Dokumentenprüfung Codex-taugliches Korrekturreporting Stand der Prüfung: 04.06.2026 Prüfobjekt: https://wirkungsoekonomie.de/ und verlinkte Seitentypen Kurzfazit: Die neue Website hat einen deutlich tragfähigeren Kern als die alten Seiten.
 - Die Grundlogik „Wirkung statt Kapital“, „Mensch, Planet und Demokratie“ und die begriffliche Präzisierung sind auf den Hauptseiten erkennbar.

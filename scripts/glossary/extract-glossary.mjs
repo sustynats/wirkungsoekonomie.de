@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const guide = path.join(root, "source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md");
-const fallback = "/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
+const fallback = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
 const source = fs.existsSync(guide) ? guide : fallback;
 
 if (!fs.existsSync(source)) {

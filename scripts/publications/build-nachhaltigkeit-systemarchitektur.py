@@ -11,11 +11,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DOCX_CANDIDATES = [
-    Path("/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/Nachhaltigkeit-Systemarchitektur.docx"),
+    Path("Nachhaltigkeit-Systemarchitektur.docx"),
 ]
 PDF_CANDIDATES = [
-    Path("/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/Nachhaltigkeit-Systemarchitektur.pdf"),
-    Path("/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/Buch Neuauflage/Nachhaltigkeit-Systemarchitektur.pdf"),
+    Path("Nachhaltigkeit-Systemarchitektur.pdf"),
+    Path("Nachhaltigkeit-Systemarchitektur.pdf"),
 ]
 MARKDOWN = ROOT / "source-assets/originals/nachhaltigkeit-systemarchitektur.md"
 ONLINE = ROOT / "content/documents/online/nachhaltigkeit-systemarchitektur.inc"

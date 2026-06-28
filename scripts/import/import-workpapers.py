@@ -32,7 +32,7 @@ WORKPAPERS = [
         "slug": "grundlagenpapier-wirkungsoekonomie-woek",
         "documentType": "arbeitspapier",
         "status": "arbeitspapier",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
+        "source": "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
         "originalName": "Grundlagenpapier-Wirkungsökonomie WÖk.pdf",
     },
     {
@@ -40,7 +40,7 @@ WORKPAPERS = [
         "slug": "woek-master-items-final-v1-2",
         "documentType": "register",
         "status": "register",
-        "source": "/Users/hagen/Desktop/Alter-Schreibtsch/Schreibtisch3/WOeK_Master_Items_final_v1.2.pdf",
+        "source": "WOeK_Master_Items_final_v1.2.pdf",
         "originalName": "WOeK_Master_Items_final_v1.2.pdf",
     },
     {
@@ -48,7 +48,7 @@ WORKPAPERS = [
         "slug": "technische-leitlinien-wustg-v2",
         "documentType": "technische-leitlinie",
         "status": "technische-leitlinie",
-        "source": "/Users/hagen/Downloads/Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
+        "source": "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
         "originalName": "Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf",
     },
     {
@@ -56,7 +56,7 @@ WORKPAPERS = [
         "slug": "beispiel-apfel-wirkungssteuer-bonusregel",
         "documentType": "beispiel",
         "status": "beispielrechnung",
-        "source": "/Users/hagen/Downloads/Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
+        "source": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
         "originalName": "Beispiel_Apfel_Wirkungssteuer_Bonusregel.pdf",
     },
     {
@@ -64,7 +64,7 @@ WORKPAPERS = [
         "slug": "wirkungsrat-konzept",
         "documentType": "arbeitspapier",
         "status": "arbeitspapier",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/Wirkungsrat_Konzept.pdf",
+        "source": "Wirkungsrat_Konzept.pdf",
         "originalName": "Wirkungsrat_Konzept.pdf",
     },
     {
@@ -72,7 +72,7 @@ WORKPAPERS = [
         "slug": "whitepaper-t-sroi",
         "documentType": "whitepaper",
         "status": "arbeitspapier",
-        "source": "/Users/hagen/Downloads/Whitepaper-T-SROI.pdf",
+        "source": "Whitepaper-T-SROI.pdf",
         "originalName": "Whitepaper-T-SROI.pdf",
     },
     {
@@ -80,7 +80,7 @@ WORKPAPERS = [
         "slug": "wirkungsoekonomie-in-der-lieferkette",
         "documentType": "arbeitspapier",
         "status": "arbeitspapier",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/Wirkungsökonomie in der Lieferkette.pdf",
+        "source": "Wirkungsökonomie in der Lieferkette.pdf",
         "originalName": "Wirkungsökonomie in der Lieferkette.pdf",
     },
     {
@@ -88,7 +88,7 @@ WORKPAPERS = [
         "slug": "systemmodell-der-wirkungsoekonomie",
         "documentType": "arbeitspapier",
         "status": "arbeitspapier",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/Systemmodell-der-Wirkungsökonomie.pdf",
+        "source": "Systemmodell-der-Wirkungsökonomie.pdf",
         "originalName": "Systemmodell-der-Wirkungsökonomie.pdf",
     },
     {
@@ -136,7 +136,7 @@ WORKPAPERS = [
         "slug": "minifest-wirkungsoekonomie",
         "documentType": "manifest",
         "status": "archiv",
-        "source": "/Users/hagen/Downloads/anschreiben1_kampagne/Minifest_Wirkungsoekonomie.pdf",
+        "source": "Minifest_Wirkungsoekonomie.pdf",
         "originalName": "Minifest_Wirkungsoekonomie.pdf",
     },
     {
@@ -144,7 +144,7 @@ WORKPAPERS = [
         "slug": "woek-manifest",
         "documentType": "manifest",
         "status": "archiv",
-        "source": "/Users/hagen/Downloads/WÖk-Manifest.pdf",
+        "source": "WÖk-Manifest.pdf",
         "originalName": "WÖk-Manifest.pdf",
     },
     {
@@ -152,7 +152,7 @@ WORKPAPERS = [
         "slug": "woek-partei",
         "documentType": "parteiprogramm",
         "status": "archiv",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/WÖK-Partei.pdf",
+        "source": "WÖK-Partei.pdf",
         "originalName": "WÖK-Partei.pdf",
     },
     {
@@ -160,7 +160,7 @@ WORKPAPERS = [
         "slug": "nats-woek-allgemein",
         "documentType": "praesentation",
         "status": "archiv",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/NATS_WÖk@allgemein.pdf",
+        "source": "NATS_WÖk@allgemein.pdf",
         "originalName": "NATS_WÖk@allgemein.pdf",
     },
     {
@@ -168,7 +168,7 @@ WORKPAPERS = [
         "slug": "beispiel-konzern",
         "documentType": "beispiel",
         "status": "beispielrechnung",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/Beispiel-Konzern.pdf",
+        "source": "Beispiel-Konzern.pdf",
         "originalName": "Beispiel-Konzern.pdf",
     },
     {
@@ -176,7 +176,7 @@ WORKPAPERS = [
         "slug": "faz-beitrag",
         "documentType": "artikel",
         "status": "archiv",
-        "source": "/Users/hagen/Desktop/WÖk-Konzepte etc/Veröffentlichungen/FAZ-Beitrag.docx",
+        "source": "FAZ-Beitrag.docx",
         "originalName": "FAZ-Beitrag.docx",
     },
 ]

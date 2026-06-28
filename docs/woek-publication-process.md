@@ -14,7 +14,7 @@ einem Roh-DOCX veröffentlicht. Der Standardprozess ist:
 Das Template liegt lokal im WÖk-Dossier-Template-Paket:
 
 ```text
-/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/01_WOeK/01_Kerndokumente-Konzepte/Pakete-Ordner/Downloads/WOeK_Dossier_Template_Paket/WOeK_Dossier_Konzept_Template.dotx
+WOeK_Dossier_Konzept_Template.dotx
 ```
 
 Der wiederholbare Repo-Schritt ist:

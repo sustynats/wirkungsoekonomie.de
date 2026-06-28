@@ -4,7 +4,7 @@ Stand: 2026-06-01
 
 ## Primäre neue Quelle
 
-- Datei: `/Users/hagen/Desktop/Nats/Sexarbeit als soziale Infrastruktur.docx`
+- Datei: `Sexarbeit als soziale Infrastruktur.docx`
 - Titel: `Sexarbeit als soziale Infrastruktur`
 - Untertitel: `Grundlagen für eine funktionale und realitätsnahe Regulierung`
 - Status im Website-Kontext: `review_required`

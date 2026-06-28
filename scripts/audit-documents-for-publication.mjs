@@ -1165,7 +1165,7 @@ const DOCUMENTS = [
     title: "Sexarbeit als soziale Infrastruktur",
     subtitle: "Grundlagen für eine funktionale und realitätsnahe Regulierung",
     fileName: "Sexarbeit als soziale Infrastruktur.docx",
-    filePath: "/Users/hagen/Desktop/Nats/Sexarbeit als soziale Infrastruktur.docx",
+    filePath: "Sexarbeit als soziale Infrastruktur.docx",
     documentType: "konzept",
     status: "review-erforderlich",
     visibility: "review_required",

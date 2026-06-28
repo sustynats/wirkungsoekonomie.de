@@ -10,7 +10,7 @@ if (!input || !fs.existsSync(input)) {
   process.exit(1);
 }
 
-const python = "/Users/hagen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3";
+const python = "python3";
 const script = `
 import sys, zipfile, xml.etree.ElementTree as ET, pathlib, html
 src, out = sys.argv[1], pathlib.Path(sys.argv[2])

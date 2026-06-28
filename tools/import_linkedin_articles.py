@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-SOURCE_DIR = Path("/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/LinkedIn-Articles/Articles")
+SOURCE_DIR = Path("Articles")
 SITE_ROOT = Path(__file__).resolve().parents[1]
 ARTICLE_DIR = SITE_ROOT / "blog" / "linkedin"
 IMAGE_DIR = SITE_ROOT / "assets" / "img" / "linkedin"

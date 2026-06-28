@@ -2,7 +2,7 @@
 
 ## Eingebundene Audiodatei
 
-- Quelle: `/Users/hagen/Downloads/sprache-esv2-81p-bg-10p-music-10p.wav`
+- Quelle: `sprache-esv2-81p-bg-10p-music-10p.wav`
 - Zielpfad: `/assets/audio/wirkung-politischer-sprache.mp3`
 - Format: WAV
 - MIME-Type im Player: `audio/mpeg`

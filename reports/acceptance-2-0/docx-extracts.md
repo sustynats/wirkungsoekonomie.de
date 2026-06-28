@@ -2,7 +2,7 @@
 
 ## Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx
 
-Pfad: `/Users/hagen/Desktop/WÖk-Konzepte etc/Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx`  
+Pfad: `Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx`  
 Vorhanden: True  
 Zeichen: 30084
 
@@ -93,7 +93,7 @@ Druckdatum ist im normalen Webtext sichtbar und sollte print-only sein.
 
 ## Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx
 
-Pfad: `/Users/hagen/Downloads/Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx`  
+Pfad: `Journalbeitrag_Oeffentlicher_Wirkungsraum_Debatten_Resonanz_Kompass.docx`  
 Vorhanden: True  
 Zeichen: 24478
 
@@ -184,7 +184,7 @@ Der Resonanz-Kompass arbeitet mit einer einfachen, aber weitreichenden Untersche
 
 ## Wirkungsoekonomie_Audio_Erklaerungen_Seitenliste_Sprechertexte.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Audio_Erklaerungen_Seitenliste_Sprechertexte.docx`  
+Pfad: `Wirkungsoekonomie_Audio_Erklaerungen_Seitenliste_Sprechertexte.docx`  
 Vorhanden: True  
 Zeichen: 53587
 
@@ -275,7 +275,7 @@ https://wirkungsoekonomie.de/werkzeuge/impact-controlling/t-sroi/
 
 ## Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx`  
+Pfad: `Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx`  
 Vorhanden: True  
 Zeichen: 36093
 
@@ -366,7 +366,7 @@ Datenstand / Veröffentlichungsstand / letzte Prüfung.
 
 ## Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`  
+Pfad: `Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx`  
 Vorhanden: True  
 Zeichen: 561874
 
@@ -457,7 +457,7 @@ E-UN-CHARTER — UN Charter Art. 2(4) / UN General Assembly resolutions on Ukrai
 
 ## Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx`  
+Pfad: `Wirkungsoekonomie_Oeffentlicher_Wirkungsraum_Final_Codex_Briefing.docx`  
 Vorhanden: True  
 Zeichen: 84368
 
@@ -548,7 +548,7 @@ Ursachen-Navigator
 
 ## Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx`  
+Pfad: `Wirkungsoekonomie_Resonanzkompass_Debattenkompass_Codex_Briefing.docx`  
 Vorhanden: True  
 Zeichen: 91894
 
@@ -639,7 +639,7 @@ In der Wirkungsökonomie ist Wirkung nicht Absicht, Image oder Lautstärke. Wirk
 
 ## Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx`  
+Pfad: `Wirkungsoekonomie_Tool_Landschaft_2_0_Codex_Briefing.docx`  
 Vorhanden: True  
 Zeichen: 42643
 
@@ -730,7 +730,7 @@ Das Tool entscheidet.
 
 ## Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx`  
+Pfad: `Wirkungsoekonomie_Website_Relaunch_Codex_Briefing.docx`  
 Vorhanden: True  
 Zeichen: 46974
 
@@ -821,7 +821,7 @@ Nicht technokratisch. Daten sind Grundlage fuer Rueckkopplung, aber demokratisch
 
 ## Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx
 
-Pfad: `/Users/hagen/Downloads/Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx`  
+Pfad: `Wirkungsradar_Redaktionelle_Ueberarbeitung_17_Seiten_Codex.docx`  
 Vorhanden: True  
 Zeichen: 89746
 
@@ -912,7 +912,7 @@ Der natürliche Treibhauseffekt macht die Erde bewohnbar; zusätzliche Treibhaus
 
 ## Wirkungsoekonomie_Glossar_Korrektur_Codex.docx
 
-Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonomie_Glossar_Korrektur_Codex.docx`  
+Pfad: `Wirkungsoekonomie_Glossar_Korrektur_Codex.docx`  
 Vorhanden: True  
 Zeichen: 29400
 
@@ -1003,7 +1003,7 @@ Maximal drei bis fünf bullets oder ein kurzer Absatz: Was muss man sofort verst
 
 ## Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx
 
-Pfad: `/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx`  
+Pfad: `Wirkungsoekonomie_Website_Professionalitaets_Link_Download_Haertung_Codex.docx`  
 Vorhanden: True  
 Zeichen: 38857
 

@@ -2,7 +2,7 @@
 
 Stand: 2026-06-07
 
-Quelle: `/Users/hagen/Downloads/CodeX_Debattenkarten_33_WOeK_Wirkungsradar.docx`
+Quelle: `CodeX_Debattenkarten_33_WOeK_Wirkungsradar.docx`
 
 ## Ergebnis
 

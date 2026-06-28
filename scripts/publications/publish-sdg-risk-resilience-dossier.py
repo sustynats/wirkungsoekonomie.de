@@ -15,10 +15,10 @@ from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DOCX = Path(
-    "/Users/hagen/Library/Mobile Documents/com~apple~CloudDocs/"
+    "[redacted-local-source]"
     "SDGs_Risiko_Resilienz_Dossier_Wirkungsoekonomie_SDGplus_ausfuehrlich.docx"
 )
-PYTHON = Path("/Users/hagen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3")
+PYTHON = Path("python3")
 TEMPLATE_SCRIPT = ROOT / "scripts/publications/apply-woek-dossier-template.py"
 DOC_ID = "sdgs-sdgplus-risiko-resilienzregister-systemresilienz-v0-1"
 SLUG = "sdgs-sdgplus-risiko-resilienzregister-systemresilienz"

@@ -16,9 +16,9 @@ from xml.etree import ElementTree as ET
 ROOT = Path(__file__).resolve().parents[2]
 BUNDLED_PYTHON = Path.home() / ".cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"
 
-JOURNAL_SOURCE = Path("/Users/hagen/Downloads/Von_der_Wissensgesellschaft_zur_Wirkungsgesellschaft_Journalbeitrag_v3_final.docx")
-DOSSIER_SOURCE = Path("/Users/hagen/Downloads/Von_der_Wissensgesellschaft_zur_Wirkungsgesellschaft_Dossier_v2_erweitert.docx")
-SOURCE_IMAGE = Path("/Users/hagen/Downloads/ChatGPT Image 15. Juni 2026, 15_26_39.png")
+JOURNAL_SOURCE = Path("Von_der_Wissensgesellschaft_zur_Wirkungsgesellschaft_Journalbeitrag_v3_final.docx")
+DOSSIER_SOURCE = Path("Von_der_Wissensgesellschaft_zur_Wirkungsgesellschaft_Dossier_v2_erweitert.docx")
+SOURCE_IMAGE = Path("ChatGPT Image 15. Juni 2026, 15_26_39.png")
 
 ARTICLE_PATH = ROOT / "blog" / "von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html"
 DOCUMENT_PATH = ROOT / "dokumente" / "von-der-wissensgesellschaft-zur-wirkungsgesellschaft" / "index.html"

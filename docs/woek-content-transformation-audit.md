@@ -35,9 +35,9 @@ Wenn ältere Dokumente von der führenden Begriffslogik abweichen, gilt der füh
 
 Verarbeitet wurde zunächst der lokale Materialpool:
 
-- `/Users/hagen/Desktop/WÖk-Konzepte etc`
-- `/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente`
-- `/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/Buch Neuauflage`
+- `WÖk-Konzepte etc`
+- `Kerndokumente`
+- `Buch Neuauflage`
 
 Ergebnis:
 

@@ -25,7 +25,7 @@ from docx.text.paragraph import Paragraph
 
 
 DEFAULT_TEMPLATE = Path(
-    "/Users/hagen/Documents/Rechner-Cleanup/Sortiert_2026-05-25/"
+    "Sortiert_2026-05-25"
     "01_WOeK/01_Kerndokumente-Konzepte/Pakete-Ordner/Downloads/"
     "WOeK_Dossier_Template_Paket/WOeK_Dossier_Konzept_Template.dotx"
 )

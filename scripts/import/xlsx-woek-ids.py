@@ -14,7 +14,7 @@ try:
 except Exception as exc:
     raise SystemExit(f"openpyxl is required: {exc}")
 
-src = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/WOeK_Master_Items_final_v1.2.xlsx")
+src = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("WOeK_Master_Items_final_v1.2.xlsx")
 if not src.exists():
     raise SystemExit(f"Missing XLSX: {src}")
 

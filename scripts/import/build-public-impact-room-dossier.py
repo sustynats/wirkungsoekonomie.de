@@ -21,7 +21,7 @@ from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = Path(
-    "/Users/hagen/Downloads/Dossier_Oeffentlicher_Wirkungsraum_Wellen_Tiefe_WOeK_100Seiten_Arbeitsfassung.docx"
+    "Dossier_Oeffentlicher_Wirkungsraum_Wellen_Tiefe_WOeK_100Seiten_Arbeitsfassung.docx"
 )
 SOURCE_COPY = ROOT / "docs/oeffentlicher-wirkungsraum/source/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1.docx"
 PDF_TARGET = ROOT / "assets/downloads/woek_dossier_oeffentlicher_wirkungsraum_wellen_tiefe_v0_1.pdf"

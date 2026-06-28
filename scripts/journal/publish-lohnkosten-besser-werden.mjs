@@ -3,7 +3,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 const root = process.cwd();
-const sourcePath = process.env.JOURNAL_SOURCE_PATH || process.argv[2] || "/Users/hagen/Downloads/Nicht_billiger_werden_besser_werden_Lohnkosten_Artikel_clean.docx";
+const sourcePath = process.env.JOURNAL_SOURCE_PATH || process.argv[2] || "Nicht_billiger_werden_besser_werden_Lohnkosten_Artikel_clean.docx";
 const slug = "nicht-billiger-werden-besser-werden";
 const title = "Nicht billiger werden. Besser werden.";
 const subtitle = "Warum Deutschland keine Niedriglohnstrategie braucht - und weshalb hohe Löhne erst dann zum Problem werden, wenn Produktivität, Innovation, Infrastruktur und Systemqualität nicht mehr mithalten.";

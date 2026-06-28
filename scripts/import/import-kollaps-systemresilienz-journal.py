@@ -11,8 +11,8 @@ from xml.etree import ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE_DOCX = Path("/Users/hagen/Downloads/Journalbeitrag_Kollaps_Systemresilienz_Grundgesetz_SDGplus_WOeK_ohne_Meta_clean.docx")
-SOURCE_IMAGE = Path("/Users/hagen/Downloads/ChatGPT Image 15. Juni 2026, 20_26_49.png")
+SOURCE_DOCX = Path("Journalbeitrag_Kollaps_Systemresilienz_Grundgesetz_SDGplus_WOeK_ohne_Meta_clean.docx")
+SOURCE_IMAGE = Path("ChatGPT Image 15. Juni 2026, 20_26_49.png")
 ARTICLE_PATH = ROOT / "blog" / "kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.html"
 IMAGE_TARGET = ROOT / "assets" / "img" / "blog" / "2026-06-15-kollaps-zivilisation-systemresilienz-sdgplus.webp"
 HEADER_TEMPLATE = ROOT / "templates" / "header.html"

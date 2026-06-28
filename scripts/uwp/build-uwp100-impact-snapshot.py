@@ -1008,7 +1008,7 @@ def validate() -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("command", nargs="?", choices=["build", "validate"], default="build")
-    parser.add_argument("--pilot-zip", type=Path, default=Path("/Users/hagen/Downloads/files.zip"))
+    parser.add_argument("--pilot-zip", type=Path, default=Path("files.zip"))
     args = parser.parse_args()
     if args.command == "validate":
         validate()

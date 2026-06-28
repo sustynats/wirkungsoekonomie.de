@@ -11,8 +11,8 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[2]
-AUDIO_SOURCE = Path("/Users/hagen/Downloads/Wirkungsgesellschaft-esv2-89p-bg-10p-music-10p.wav")
-SCRIPT_SOURCE = Path("/Users/hagen/.codex/attachments/c6d1b141-1df1-458d-a229-feb2c928bdb9/pasted-text.txt")
+AUDIO_SOURCE = Path("Wirkungsgesellschaft-esv2-89p-bg-10p-music-10p.wav")
+SCRIPT_SOURCE = Path("pasted-text.txt")
 OUT_DIR = ROOT / "assets" / "video"
 WORK_DIR = ROOT / "tmp" / "wirkungsgesellschaft-video"
 VIDEO_TARGET = OUT_DIR / "wirkungsgesellschaft-erklaervideo.mp4"

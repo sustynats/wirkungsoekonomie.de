@@ -12,8 +12,8 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SCRIPT_SOURCE = Path("/Users/hagen/.codex/attachments/01124b42-40f4-4e11-b570-2ff41981ee1b/pasted-text.txt")
-AUDIO_SOURCE = Path("/Users/hagen/Downloads/wirkungsfinanzpolitik-esv2-92p-bg-10p-music-10p.wav")
+SCRIPT_SOURCE = Path("pasted-text.txt")
+AUDIO_SOURCE = Path("wirkungsfinanzpolitik-esv2-92p-bg-10p-music-10p.wav")
 OUT_DIR = ROOT / "assets" / "video"
 WORK_DIR = ROOT / "tmp" / "wirkungsfinanzpolitik-video"
 VIDEO_TARGET = OUT_DIR / "wirkungsfeld-wirkungsfinanzpolitik.mp4"

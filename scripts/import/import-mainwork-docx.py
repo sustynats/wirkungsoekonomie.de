@@ -21,7 +21,7 @@ from docx.text.paragraph import Paragraph
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_DOCX = Path("/Users/hagen/Desktop/WÖk-Konzepte etc/Kerndokumente/Neuauflage_Buch/Natalie-Weber_Die neue Ordnung des Wohlstands.docx")
+DEFAULT_DOCX = Path("Natalie-Weber_Die neue Ordnung des Wohlstands.docx")
 OUTPUT = ROOT / "referenz/index.html"
 ASSET_DIR = ROOT / "public/assets/imported/woek-main-2026"
 PUBLIC_ASSET_PREFIX = "../public/assets/imported/woek-main-2026"

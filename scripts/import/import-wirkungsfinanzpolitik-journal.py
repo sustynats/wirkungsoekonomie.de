@@ -11,8 +11,8 @@ from xml.etree import ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE_DOCX = Path("/Users/hagen/Downloads/Wirkungsfinanzpolitik_Journalbeitrag_WOeK_v3_MMT_PublicPurpose_IOI.docx")
-SOURCE_IMAGE = Path("/Users/hagen/Downloads/ChatGPT Image 11. Juni 2026, 20_59_00.png")
+SOURCE_DOCX = Path("Wirkungsfinanzpolitik_Journalbeitrag_WOeK_v3_MMT_PublicPurpose_IOI.docx")
+SOURCE_IMAGE = Path("ChatGPT Image 11. Juni 2026, 20_59_00.png")
 IMAGE_TARGET = ROOT / "assets" / "img" / "blog" / "2026-06-11-wirkungsfinanzpolitik-schulden-ohne-wirkung.png"
 ARTICLE_SLUG = "nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung"
 ARTICLE_PATH = ROOT / "blog" / f"{ARTICLE_SLUG}.html"

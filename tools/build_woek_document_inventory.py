@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 SITE_ROOT = Path(__file__).resolve().parents[1]
-SOURCE_ROOT = Path("/Users/hagen/Desktop/WÖk-Konzepte etc")
+SOURCE_ROOT = Path("WÖk-Konzepte etc")
 INVENTORY_PATH = SITE_ROOT / "docs" / "woek-dokumenten-inventar.md"
 
 SCAN_ROOTS = [

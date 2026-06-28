@@ -16,7 +16,7 @@ node scripts/import/all.mjs
 Für das WÖk-ID-Register:
 
 ```bash
-/Users/hagen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/import/xlsx-woek-ids.py
+python3 scripts/import/xlsx-woek-ids.py
 ```
 
 ## Build

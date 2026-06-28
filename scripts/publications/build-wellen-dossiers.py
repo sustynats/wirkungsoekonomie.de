@@ -44,7 +44,7 @@ class Publication:
 PUBLICATIONS = [
     Publication(
         slug="fuenf-wellen-oeffentlicher-wirkung",
-        source=Path("/Users/hagen/Downloads/Fuenf_Wellen_oeffentlicher_Wirkung_WOeK_Dossier_Arbeitsfassung.docx"),
+        source=Path("Fuenf_Wellen_oeffentlicher_Wirkung_WOeK_Dossier_Arbeitsfassung.docx"),
         output_docx=ROOT / "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.docx",
         output_pdf=ROOT / "assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf",
         online_include=ROOT / "content/documents/online/fuenf-wellen-oeffentlicher-wirkung.inc",
@@ -71,7 +71,7 @@ PUBLICATIONS = [
     ),
     Publication(
         slug="fuenf-wellen-wirkungsentfaltung",
-        source=Path("/Users/hagen/Downloads/Dossier_Die_fuenf_Wellen_der_Wirkungsentfaltung_WOeK_Arbeitsfassung.docx"),
+        source=Path("Dossier_Die_fuenf_Wellen_der_Wirkungsentfaltung_WOeK_Arbeitsfassung.docx"),
         output_docx=ROOT / "assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.docx",
         output_pdf=ROOT / "assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf",
         online_include=ROOT / "content/documents/online/fuenf-wellen-wirkungsentfaltung.inc",

@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[2]
-AUDIO_SOURCE = Path("/Users/hagen/Downloads/unterschiedGWÖ_1-esv2-89p-bg-10p-music-10p.wav")
+AUDIO_SOURCE = Path("unterschiedGWÖ_1-esv2-89p-bg-10p-music-10p.wav")
 OUT_DIR = ROOT / "assets" / "video"
 WORK_DIR = ROOT / "tmp" / "vergleich-video"
 VIDEO_TARGET = OUT_DIR / "vergleich-wirkungsoekonomie.mp4"
