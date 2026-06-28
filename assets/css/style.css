@@ -3715,13 +3715,21 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   gap: clamp(1rem, 3vw, 1.4rem);
-  align-items: start;
+  align-items: stretch;
 }
 
 .journal-side-list,
 .journal-related-grid {
   display: grid;
   gap: 1rem;
+}
+
+.journal-home-grid > .journal-side-list {
+  display: contents;
+}
+
+.journal-home-grid > .journal-feature-card {
+  align-self: stretch;
 }
 
 .journal-card {
@@ -10406,8 +10414,8 @@ body .hero-system-visual.podcast-cover-visual img {
   }
 
   .journal-home-grid {
-    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
-    align-items: start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
   }
 
   .legal-grid {

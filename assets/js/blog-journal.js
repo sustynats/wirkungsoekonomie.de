@@ -1,7 +1,8 @@
 (function () {
   const scriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="blog-journal.js"]')?.src || "";
-  const dataUrl = getVersionedDataUrl(scriptUrl);
+  const dataUrl = getVersionedDataUrl(scriptUrl, "blog-index.json");
+  const podcastDataUrl = getVersionedDataUrl(scriptUrl, "podcast-index.json");
 
   const relatedPaths = new Set([
     "/verstehen.html",
@@ -29,11 +30,12 @@
   ]);
 
   const homeTarget = document.querySelector("[data-journal-home]");
+  const podcastTarget = document.querySelector("[data-podcast-home]");
   const archiveTarget = document.querySelector("[data-journal-list]");
   const currentPath = normalizePath(window.location.pathname);
   const shouldRenderRelated = relatedPaths.has(currentPath);
 
-  if (!homeTarget && !archiveTarget && !shouldRenderRelated) {
+  if (!homeTarget && !podcastTarget && !archiveTarget && !shouldRenderRelated) {
     return;
   }
 
@@ -74,6 +76,26 @@
       }
     });
 
+  if (podcastTarget) {
+    fetch(podcastDataUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Podcast-Metadaten konnten nicht geladen werden.");
+        }
+        return response.json();
+      })
+      .then((episodes) => {
+        const publishedEpisodes = episodes
+          .filter((episode) => episode.status === "published")
+          .sort((a, b) => {
+            const dateDiff = new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0);
+            return dateDiff || Number(b.episode || 0) - Number(a.episode || 0);
+          });
+        renderHomePodcast(podcastTarget, publishedEpisodes);
+      })
+      .catch(() => {});
+  }
+
   function normalizePath(pathname) {
     if (!pathname || pathname === "/index.html") {
       return "/";
@@ -86,13 +108,13 @@
     return pathname;
   }
 
-  function getVersionedDataUrl(url) {
+  function getVersionedDataUrl(url, fileName) {
     if (!url) {
-      return "/assets/data/blog-index.json";
+      return `/assets/data/${fileName}`;
     }
 
     const sourceUrl = new URL(url);
-    const data = new URL("../data/blog-index.json", sourceUrl);
+    const data = new URL(`../data/${fileName}`, sourceUrl);
     const version = sourceUrl.searchParams.get("v");
     if (version) {
       data.searchParams.set("v", version);
@@ -117,10 +139,58 @@
             <p class="card-kicker">Archiv</p>
             <h3 class="card-title">Alle Journalartikel durchsuchen.</h3>
             <p class="card-text">Suche, Filter und Schlagworte führen gezielt durch das vollständige Archiv.</p>
-            <a class="text-link" href="#beitraege">Zum Archiv</a>
+            <a class="text-link" href="${currentPath === "/" ? "blog.html#beitraege" : "#beitraege"}">Zum Archiv</a>
           </article>
         </div>
       </div>
+    `;
+  }
+
+  function renderHomePodcast(target, episodes) {
+    const latest = episodes[0];
+    if (!latest) {
+      return;
+    }
+
+    target.innerHTML = `
+      <div class="journal-home-grid">
+        ${renderPodcastCard(latest)}
+        <div class="journal-side-list" aria-label="Podcast-Einstiege">
+          <article class="journal-card">
+            <p class="card-kicker">Serie</p>
+            <h3 class="card-title">Alle Folgen mit Transkript</h3>
+            <p class="card-text">Jede Episode enthält Player, Beschreibung, Transkript, passende Glossarbegriffe und Anschlussseiten.</p>
+            <a class="text-link" href="podcast/">Zur Podcast-Übersicht</a>
+          </article>
+          <article class="journal-card">
+            <p class="card-kicker">RSS</p>
+            <h3 class="card-title">Podcast folgen</h3>
+            <p class="card-text">Der Feed kann in Podcast-Apps abonniert werden und enthält die Folgen als direkt abspielbare Audiodateien.</p>
+            <a class="text-link" href="feeds/podcast.xml">RSS-Feed öffnen</a>
+          </article>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderPodcastCard(episode) {
+    const image = normalizeImagePath(episode.cover);
+    const keywords = (episode.keywords || [])
+      .slice(0, 3)
+      .map((keyword) => `<span>${escapeHtml(keyword)}</span>`)
+      .join("");
+    return `
+      <article class="blog-card editorial-feature-card journal-feature-card" data-origin="podcast" data-category="Wirkungsökonomie">
+        ${image ? `<div class="blog-image"><img src="${escapeHtml(image)}" alt="${escapeHtml(episode.coverAlt || episode.title)}" decoding="async" loading="lazy"></div>` : ""}
+        <div class="journal-feature-copy">
+          <div class="blog-badge-row"><span class="blog-origin-badge">Podcast</span><span class="blog-origin-badge">Aktuelle Folge</span></div>
+          <p class="card-kicker">Folge ${escapeHtml(episode.episode)} · <time datetime="${escapeHtml(episode.publishedAt || "")}">${formatDate(episode.publishedAt)}</time>${episode.duration ? ` · ${escapeHtml(episode.duration)}` : ""}</p>
+          <h3 class="card-title">${escapeHtml(episode.title)}</h3>
+          <p class="card-text">${escapeHtml(episode.description || episode.subtitle || "")}</p>
+          ${keywords ? `<div class="journal-chip-list" aria-label="Themen">${keywords}</div>` : ""}
+          <a class="text-link" href="${escapeHtml(`/podcast/${episode.slug}/`)}">Aktuelle Folge hören</a>
+        </div>
+      </article>
     `;
   }
 
@@ -319,7 +389,8 @@
   }
 
   function formatDate(dateString) {
-    const date = new Date(`${dateString}T00:00:00`);
+    const value = String(dateString || "");
+    const date = new Date(value.includes("T") ? value : `${value}T00:00:00`);
     return new Intl.DateTimeFormat("de-DE", {
       day: "2-digit",
       month: "long",
