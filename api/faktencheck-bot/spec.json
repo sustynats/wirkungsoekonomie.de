@@ -1,0 +1,33 @@
+{
+  "id": "woek-faktencheck-bot",
+  "version": "0.1.0",
+  "status": "modell-und-produktentwurf",
+  "updatedAt": "2026-06-28",
+  "title": "WÖk-Faktencheck-Bot",
+  "description": "Öffentliche Schnittstellenskizze für Website und Discord: Aussage zerlegen, Quellenpflicht sichern, Frame vorsichtig einordnen und wirkungsökonomische Antwort vorbereiten.",
+  "fullSpec": "/content/faktencheck/faktencheck-bot-spec.json",
+  "publicRoute": "/werkzeuge/faktencheck-bot/",
+  "hardRules": [
+    "Keine Tatsachenbehauptung ohne Quelle.",
+    "Bei fehlender Evidenz wird nur ein Prüfauftrag erzeugt.",
+    "Faktencheck, Frame-Analyse und Wirkungsökonomie bleiben getrennte Blöcke.",
+    "Absicht wird nicht unterstellt.",
+    "Keine Personenbewertung, kein Social Credit, keine amtliche Bewertung."
+  ],
+  "outputContract": [
+    "claim",
+    "shortVerdict",
+    "whatIsCheckable",
+    "whatSourcesSay",
+    "whatIsMissing",
+    "frameServed",
+    "impactEconomicAssessment",
+    "betterQuestion",
+    "responseDraft",
+    "sourceList",
+    "confidence",
+    "reviewStatus"
+  ],
+  "discordCommands": ["/check", "/quelle", "/karte", "/review"],
+  "publishRule": "Discord-Ausgaben sind vorläufig. Dauerhaft zitierbare Website-Faktenchecks brauchen Quellenprüfung und redaktionelle Freigabe."
+}
