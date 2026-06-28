@@ -6759,7 +6759,8 @@ textarea {
   background: rgba(255, 255, 255, 0.82);
 }
 
-.woek-app-install {
+.woek-app-install,
+.woek-app-community {
   display: grid;
   gap: 0.9rem;
   align-items: center;
@@ -6773,12 +6774,19 @@ textarea {
   display: none;
 }
 
+.woek-app-community {
+  background: rgba(255, 255, 255, 0.88);
+}
+
 .woek-app-install h2,
-.woek-app-install p {
+.woek-app-install p,
+.woek-app-community h2,
+.woek-app-community p {
   margin: 0;
 }
 
-.woek-app-install h2 {
+.woek-app-install h2,
+.woek-app-community h2 {
   font-size: clamp(1.25rem, 3vw, 1.65rem);
   letter-spacing: 0;
 }
