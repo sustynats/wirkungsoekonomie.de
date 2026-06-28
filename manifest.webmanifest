@@ -1,0 +1,55 @@
+{
+  "name": "WÖk-App",
+  "short_name": "WÖk",
+  "description": "Faktencheck, Frag die WÖk und Produktcheck mit Text, Link oder Bildbeleg.",
+  "id": "/app/",
+  "start_url": "/app/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "background_color": "#f7f1e8",
+  "theme_color": "#f7f1e8",
+  "orientation": "portrait-primary",
+  "lang": "de-DE",
+  "categories": ["education", "productivity", "news"],
+  "icons": [
+    {
+      "src": "/assets/img/brand/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/brand/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/brand/signet.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Faktencheck",
+      "short_name": "Check",
+      "url": "/app/?mode=factcheck",
+      "description": "Aussage, Artikel oder Screenshot prüfen."
+    },
+    {
+      "name": "Frag die WÖk",
+      "short_name": "WÖk",
+      "url": "/app/?mode=woek",
+      "description": "Eine Frage zur Wirkungsökonomie stellen."
+    },
+    {
+      "name": "Produktcheck",
+      "short_name": "Produkt",
+      "url": "/app/?mode=product",
+      "description": "Produktversprechen und Quellenlage prüfen."
+    }
+  ]
+}

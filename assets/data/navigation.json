@@ -5,7 +5,7 @@
     { "label": "Für wen?", "href": "fuer/", "match": ["fuer/", "fuer-wen/", "fuer/unternehmen.html", "fuer/unternehmen/impact-controlling/", "fuer/buergerinnen.html", "fuer/investoren.html", "fuer/investoren/impact-controlling/", "fuer/kommunen.html"] },
     { "label": "Wirkungsfelder", "href": "wirkungsfelder/", "match": ["wirkungsfelder/", "anwendungen.html"] },
     { "label": "Wirkungssteuerung", "href": "wirkungssteuerung/", "match": ["wirkungssteuerung/", "fuer/wirkungssteuer.html", "werkstatt/gesetze/wirkungssteuergesetz/", "werkzeuge/scorecards/", "werkzeuge/t-sroi/"] },
-    { "label": "Öffentlicher Wirkungsraum", "href": "oeffentlicher-wirkungsraum/", "match": ["oeffentlicher-wirkungsraum/", "wirkungsradar/", "woek-ki/"] },
+    { "label": "Öffentlicher Wirkungsraum", "href": "oeffentlicher-wirkungsraum/", "match": ["oeffentlicher-wirkungsraum/", "wirkungsradar/", "woek-ki/", "app/"] },
     { "label": "Praxis & Tools", "href": "werkzeuge/", "match": ["werkzeuge/", "tools/", "methodik/", "workflow.html", "scanner.html", "anwendungen/scanner.html", "scorecard-dashboard.html", "erleben/", "erleben.html", "ausprobieren/"] },
     { "label": "Lernen", "href": "lernen/", "match": ["lernen/", "akademie.html", "akademie/"] },
     { "label": "Bibliothek", "href": "bibliothek/", "match": ["bibliothek/", "downloads.html", "downloads/", "dokumente/", "referenz/", "buch.html", "buch/", "evidenz/", "quellen/", "fachbibliothek/", "blog.html", "blog/", "podcast/", "begriffe/", "glossar.html"] },
@@ -143,6 +143,13 @@
       ]
     },
     {
+      "label": "WÖk-App",
+      "href": "app/",
+      "match": [
+        "app/"
+      ]
+    },
+    {
       "label": "Mein Wirkungsraum",
       "href": "mein-wirkungsraum/",
       "match": [
@@ -227,12 +234,14 @@
         { "label": "Themenräume", "href": "wirkungsradar/themen/", "match": ["wirkungsradar/themen/"] },
         { "label": "Ursachen-Navigator", "href": "wirkungsradar/ursachen/", "match": ["wirkungsradar/ursachen/"] },
         { "label": "Antwort-Playbooks", "href": "wirkungsradar/antwort-playbooks/", "match": ["wirkungsradar/antwort-playbooks/"] },
-        { "label": "WÖk-KI", "href": "woek-ki/", "match": ["woek-ki/"] }
+        { "label": "WÖk-KI", "href": "woek-ki/", "match": ["woek-ki/"] },
+        { "label": "WÖk-App", "href": "app/", "match": ["app/"] }
       ]
     },
     {
       "title": "Praxis & Tools",
       "items": [
+        { "label": "WÖk-App", "href": "app/", "match": ["app/"] },
         { "label": "Interaktive Demos", "href": "erleben/", "match": ["erleben.html", "erleben/"] },
         { "label": "Produktwirkungsrechner", "href": "erleben/produktwirkungsrechner/", "match": ["erleben/produktwirkungsrechner/"] },
         { "label": "Impact-Controlling-Rechner", "href": "erleben/impact-controlling-rechner/", "match": ["erleben/impact-controlling-rechner/"] },

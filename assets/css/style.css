@@ -6732,6 +6732,208 @@ textarea {
   overflow-wrap: anywhere;
 }
 
+.woek-app-hero {
+  padding: clamp(4rem, 9vw, 7rem) var(--page-pad, clamp(1rem, 4vw, 3rem)) clamp(1.5rem, 4vw, 3rem);
+  background: linear-gradient(180deg, rgba(247, 241, 232, 0.96), rgba(255, 255, 255, 0.82));
+}
+
+.woek-app-hero > div,
+.woek-app-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.woek-app-shell {
+  display: grid;
+  gap: 1rem;
+  padding: 0 0 clamp(3rem, 7vw, 5rem);
+}
+
+.woek-app-toolbar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem;
+  padding: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.woek-app-tab {
+  min-height: 2.65rem;
+  padding: 0.55rem 0.65rem;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: clamp(0.78rem, 2.5vw, 0.95rem);
+  font-weight: 850;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.woek-app-tab.active {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.woek-app-layout {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.woek-app-input,
+.woek-app-result {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  padding: clamp(1rem, 3vw, 1.35rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-card);
+}
+
+.woek-app-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.woek-app-form label,
+.woek-app-file {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--navy);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.woek-app-form input,
+.woek-app-form select,
+.woek-app-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 0.82rem 0.9rem;
+  border: 1px solid rgba(11, 16, 32, 0.18);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.woek-app-form textarea {
+  resize: vertical;
+}
+
+.woek-app-file input {
+  padding: 0.75rem;
+  background: rgba(47, 125, 92, 0.06);
+}
+
+.woek-app-file small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 760;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.woek-app-statusbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.woek-app-result h2 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(1.45rem, 4.4vw, 2.1rem);
+  letter-spacing: 0;
+}
+
+.woek-app-result p,
+.woek-app-result li {
+  color: var(--navy);
+  line-height: 1.68;
+}
+
+.woek-app-result-section {
+  display: grid;
+  gap: 0.45rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(11, 16, 32, 0.1);
+}
+
+.woek-app-result-section h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+
+.woek-app-result-list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.woek-app-result-list a {
+  color: var(--green-dark);
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
+.woek-app-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (min-width: 920px) {
+  .woek-app-layout {
+    grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.68fr);
+  }
+
+  .woek-app-result {
+    position: sticky;
+    top: 5.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .woek-app-hero > div,
+  .woek-app-shell {
+    width: min(100% - 1rem, 1120px);
+  }
+
+  .woek-app-toolbar {
+    position: sticky;
+    top: 0.5rem;
+    z-index: 6;
+  }
+
+  .woek-app-input,
+  .woek-app-result {
+    padding: 0.95rem;
+  }
+}
+
 .principle-callout {
   display: grid;
   gap: 0.65rem;
