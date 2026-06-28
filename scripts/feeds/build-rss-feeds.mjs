@@ -18,6 +18,13 @@ const podcastMeta = {
 
 const feedSpecs = [
   {
+    file: "startseite.xml",
+    title: "Aktuelles auf der Startseite - Wirkungsökonomie",
+    link: `${site}/`,
+    description: "Neue Inhalte, die auf der Startseite der Wirkungsökonomie erscheinen: aktuelle Journalbeiträge, Podcastfolgen und zentrale Einstiege.",
+    fromHomeIndex: true,
+  },
+  {
     file: "oeffentlicher-wirkungsraum.xml",
     title: "Öffentlicher Wirkungsraum - Wirkungsökonomie",
     link: `${site}/oeffentlicher-wirkungsraum/`,
@@ -243,6 +250,22 @@ function itemsFromPodcastIndex() {
     .slice(0, 120);
 }
 
+function itemsFromHomeIndex() {
+  const journalItems = itemsFromBlogIndex().map((item) => ({
+    ...item,
+    title: `Journal: ${item.title}`,
+  }));
+  const podcastItems = itemsFromPodcastIndex().map((item) => ({
+    ...item,
+    title: `Podcast: ${item.episodeTitle || item.title}`,
+    description: item.description || item.subtitle || "",
+  }));
+  return [...journalItems, ...podcastItems]
+    .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
+    .sort((a, b) => b.date - a.date)
+    .slice(0, 80);
+}
+
 function renderPodcastFeed(spec, items) {
   const now = new Date().toUTCString();
   const itemXml = items.map((item) => {
@@ -324,11 +347,11 @@ function upsertHeadLinks(file, specs) {
   html = html
     .replace(/[ \t]*<link\s+rel="alternate"\s+type="application\/rss\+xml"\s+title="[^"]+"\s+href="https:\/\/wirkungsoekonomie\.de\/feeds\/[^"]+">\s*\n?/g, "")
     .replace(/\n{3,}/g, "\n\n");
-  const marker = html.match(/\n(\s*)<link\s+rel="(?:icon|stylesheet)"/i);
+  const marker = html.match(/\n([ \t]*)(<link\s+rel="(?:icon|stylesheet)"[^\n]*>)/i);
   if (!marker) return;
   const indent = marker[1]?.length ? marker[1] : "    ";
   const tags = specs.map((spec) => `${indent}${feedLinkTag(spec)}`).join("\n");
-  html = html.replace(marker[0], `\n${tags}${marker[0]}`);
+  html = html.replace(marker[0], `\n${tags}\n${indent}${marker[2]}`);
   html = html.replace(/\n{3,}/g, "\n\n");
   fs.writeFileSync(file, html);
 }
@@ -336,21 +359,21 @@ function upsertHeadLinks(file, specs) {
 fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
-  const items = spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns);
+  const items = spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns);
   fs.writeFileSync(path.join(feedDir, spec.file), spec.fromPodcastIndex ? renderPodcastFeed(spec, items) : renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);
 }
 
 upsertHeadLinks(path.join(root, "index.html"), feedSpecs);
 upsertHeadLinks(path.join(root, "updates", "index.html"), feedSpecs);
-upsertHeadLinks(path.join(root, "oeffentlicher-wirkungsraum", "index.html"), [feedSpecs[0]]);
-upsertHeadLinks(path.join(root, "wirkungsradar", "index.html"), [feedSpecs[0]]);
-upsertHeadLinks(path.join(root, "wirkungsradar", "live", "index.html"), [feedSpecs[0]]);
-upsertHeadLinks(path.join(root, "wirkungsradar", "debattenkarten", "index.html"), [feedSpecs[0]]);
-upsertHeadLinks(path.join(root, "downloads.html"), [feedSpecs[1]]);
-upsertHeadLinks(path.join(root, "bibliothek", "index.html"), [feedSpecs[1]]);
-upsertHeadLinks(path.join(root, "dokumente", "index.html"), [feedSpecs[1]]);
-upsertHeadLinks(path.join(root, "blog.html"), [feedSpecs[2]]);
-upsertHeadLinks(path.join(root, "blog", "index.html"), [feedSpecs[2]]);
-upsertHeadLinks(path.join(root, "journal", "index.html"), [feedSpecs[2]]);
-upsertHeadLinks(path.join(root, "podcast", "index.html"), [feedSpecs[3]]);
+upsertHeadLinks(path.join(root, "oeffentlicher-wirkungsraum", "index.html"), [feedSpecs[1]]);
+upsertHeadLinks(path.join(root, "wirkungsradar", "index.html"), [feedSpecs[1]]);
+upsertHeadLinks(path.join(root, "wirkungsradar", "live", "index.html"), [feedSpecs[1]]);
+upsertHeadLinks(path.join(root, "wirkungsradar", "debattenkarten", "index.html"), [feedSpecs[1]]);
+upsertHeadLinks(path.join(root, "downloads.html"), [feedSpecs[2]]);
+upsertHeadLinks(path.join(root, "bibliothek", "index.html"), [feedSpecs[2]]);
+upsertHeadLinks(path.join(root, "dokumente", "index.html"), [feedSpecs[2]]);
+upsertHeadLinks(path.join(root, "blog.html"), [feedSpecs[3]]);
+upsertHeadLinks(path.join(root, "blog", "index.html"), [feedSpecs[3]]);
+upsertHeadLinks(path.join(root, "journal", "index.html"), [feedSpecs[3]]);
+upsertHeadLinks(path.join(root, "podcast", "index.html"), [feedSpecs[4]]);
