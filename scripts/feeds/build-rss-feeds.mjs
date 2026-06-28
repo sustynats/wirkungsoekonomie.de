@@ -172,6 +172,50 @@ function absoluteUrl(value, baseUrl = site) {
   }
 }
 
+function isGenericFeedImage(value) {
+  try {
+    const pathname = new URL(value, site).pathname.toLowerCase();
+    return pathname.includes("/assets/img/generated/") || pathname.includes("/assets/img/brand/");
+  } catch {
+    return true;
+  }
+}
+
+const genericTagKeys = new Set([
+  "aktuelles auf der startseite - wirkungsökonomie",
+  "bibliothek und veröffentlichungen - wirkungsökonomie",
+  "der neue kompass - podcast der wirkungsökonomie",
+  "der neue kompass - wirkungsökonomie einfach erklärt",
+  "journal der wirkungsökonomie",
+  "öffentlicher wirkungsraum - wirkungsökonomie",
+  "wirkungsoekonomie",
+  "wirkungsökonomie",
+  "podcast",
+  "journalartikel",
+  "dokument",
+  "dokumente",
+  "dokumentenbibliothek",
+  "werkstatt",
+  "arbeitsbibliothek",
+  "arbeitspapier",
+  "aktuell",
+  "online-version",
+  "führend",
+  "einsteiger",
+  "fortgeschritten",
+  "expert",
+  "grundlagen & orientierung",
+  "alltag & grundbedürfnisse",
+  "mensch",
+  "planet",
+  "demokratie"
+]);
+
+function isSpecificTag(value) {
+  const key = stripTags(value).replace(/\s+/g, " ").trim().toLocaleLowerCase("de-DE");
+  return key.length >= 3 && !genericTagKeys.has(key);
+}
+
 function jsonLdObjects(html) {
   const blocks = [...html.matchAll(/<script\b[^>]+type=(?:"application\/ld\+json"|'application\/ld\+json')[^>]*>([\s\S]*?)<\/script>/gi)];
   return blocks.flatMap((match) => {
@@ -227,7 +271,7 @@ function uniqueTags(tags, limit = 18) {
   for (const tag of tags.flatMap((value) => Array.isArray(value) ? value : splitTags(value))) {
     const clean = stripTags(tag).replace(/\s+/g, " ").trim();
     const key = clean.toLocaleLowerCase("de-DE");
-    if (!clean || clean.length > 80 || seen.has(key)) continue;
+    if (!clean || clean.length > 80 || seen.has(key) || !isSpecificTag(clean)) continue;
     seen.add(key);
     cleaned.push(clean);
     if (cleaned.length >= limit) break;
@@ -245,19 +289,17 @@ function imageFromHtml(rel, html, pageUrl) {
   ];
   for (const candidate of candidates) {
     const url = absoluteUrl(candidate, baseUrl);
-    if (url) return url;
+    if (url && !isGenericFeedImage(url)) return url;
   }
   return "";
 }
 
 function tagsFromHtml(html) {
   return uniqueTags([
-    htmlMeta(html, "search_section"),
-    htmlMeta(html, "search_type"),
     htmlMeta(html, "search_tags"),
     ...htmlMetaAll(html, "article:tag"),
     ...jsonLdObjects(html).flatMap((block) => valuesFromJsonLd(block, ["keywords", "about"]))
-  ]);
+  ], 10);
 }
 
 function canonicalFor(rel, html) {
@@ -320,18 +362,12 @@ function loadDocumentTagMap() {
       const url = absoluteUrl(rawUrl, `${site}/`);
       if (!url) continue;
       const tags = uniqueTags([
-        doc.documentType,
-        doc.type,
-        doc.status,
-        doc.level,
-        doc.source,
-        ...(doc.audience || []),
         ...(doc.topics || []),
         ...(doc.methods || []),
         ...(doc.relatedMethods || []),
         ...(doc.impactFields || []),
         ...(doc.relatedImpactFields || []),
-      ]);
+      ], 8);
       if (tags.length) map.set(url.replace(/\/$/, ""), tags);
     }
   }
@@ -377,8 +413,11 @@ function itemsFromBlogIndex() {
         description: stripTags(post.excerpt || post.description || "").slice(0, 320),
         url,
         date: Number.isNaN(date.getTime()) ? new Date() : date,
-        image: absoluteUrl(post.image || "", url),
-        tags: uniqueTags([post.category, post.type, ...(post.tags || [])]),
+        image: (() => {
+          const image = absoluteUrl(post.image || "", url);
+          return image && !isGenericFeedImage(image) ? image : "";
+        })(),
+        tags: uniqueTags([post.category, ...(post.tags || [])], 8),
       };
     })
     .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
@@ -410,12 +449,10 @@ function itemsFromPodcastIndex() {
         audioType: episode.audioType || "audio/mpeg",
         audioBytes: episode.audioBytes || 0,
         tags: uniqueTags([
-          "Podcast",
-          episode.series,
           episode.subtitle,
           ...(episode.keywords || []),
           ...(episode.relatedTerms || []).map((term) => term.label),
-        ]),
+        ], 8),
       };
     })
     .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
@@ -461,7 +498,7 @@ function renderImageTags(item) {
 }
 
 function renderCategoryTags(item, spec) {
-  const tags = uniqueTags([spec.title, ...(item.tags || [])], 20);
+  const tags = uniqueTags(item.tags || [], 8);
   return tags.map((tag) => `\n      <category>${xml(tag)}</category>`).join("");
 }
 
@@ -559,7 +596,7 @@ fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
   const items = (spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns))
-    .map((item) => enrichItemTags(item, [spec.title]));
+    .map((item) => enrichItemTags(item));
   fs.writeFileSync(path.join(feedDir, spec.file), spec.fromPodcastIndex ? renderPodcastFeed(spec, items) : renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);
 }
