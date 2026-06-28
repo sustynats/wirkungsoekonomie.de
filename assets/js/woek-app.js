@@ -181,6 +181,16 @@
       paragraph(item?.directAnswer || item?.summary),
       section("Produktversprechen", item?.productPromise),
       section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
+      section("Wirkungsscore", impactScoreText(item?.impactScore)),
+      listSection("Wirkungsdimensionen", item?.dimensions, dimensionText),
+      section("Reverse Merit Order", rmoText(item?.reverseMeritOrder)),
+      listSection("Unternehmen: gut sichtbar", item?.companyAssessment?.strengths, companySignalText),
+      listSection("Unternehmen: schwach oder offen", item?.companyAssessment?.weaknesses, companySignalText),
+      listSection("Offene Unternehmensfragen", item?.companyAssessment?.openQuestions, (value) => value),
+      listSection("SDG-Bezug", item?.sdgAssessment?.sdgs, sdgText),
+      listSection("SDG+-Bezug", item?.sdgAssessment?.sdgPlus, sdgText),
+      listSection("SDG-Zielkonflikte", item?.sdgAssessment?.conflicts, (value) => value),
+      section("Datenqualität", dataQualityText(item?.dataQuality)),
       section("Frame", frameText(item?.frame)),
       listSection("WÖk-Einordnung", item?.impactNotes, (note) => `${note.label}: ${note.explanation}`),
       section("Reframing", item?.reframing),
@@ -391,6 +401,41 @@
       frame.impact ? `Wirkungspotenzial: ${frame.impact}` : "",
       frame.responseStrategy ? `Antwortstrategie: ${frame.responseStrategy}` : ""
     ].filter(Boolean).join("\n");
+  }
+
+  function impactScoreText(score) {
+    if (!score) return "";
+    return `${score.score}/5 - ${score.label} (${score.confidence}). ${score.explanation}`;
+  }
+
+  function dimensionText(dimension) {
+    const rmo = dimension?.rmoRelevant ? " [Reverse-Merit-Order-relevant]" : "";
+    return `${dimension?.label || "Wirkungsdimension"}: ${dimension?.score ?? 0}/5${rmo}. Beleg: ${dimension?.evidence || "offen"}. Risiko: ${dimension?.risk || "offen"}`;
+  }
+
+  function rmoText(rmo) {
+    if (!rmo) return "";
+    return [
+      `Status: ${rmo.triggered ? "ausgelöst" : "nicht hart ausgelöst / vorläufig"}`,
+      `Engpass: ${rmo.limitingDimension}`,
+      `Warum: ${rmo.reason}`,
+      `Folge: ${rmo.consequence}`,
+      `Besserungspfad: ${rmo.improvementPath}`
+    ].filter(Boolean).join("\n");
+  }
+
+  function companySignalText(signal) {
+    return `${signal?.label || "Signal"}: ${signal?.interpretation || "Einordnung offen"} (${signal?.evidence || "Beleglage offen"})`;
+  }
+
+  function sdgText(item) {
+    return `${item?.id || "SDG"} ${item?.title || ""}: ${item?.direction || "unclear"}. ${item?.relation || "Bezug offen"}`;
+  }
+
+  function dataQualityText(dataQuality) {
+    if (!dataQuality) return "";
+    const missing = Array.isArray(dataQuality.missingData) ? dataQuality.missingData.join(", ") : "offen";
+    return `Klasse ${dataQuality.level}: ${dataQuality.explanation}\nFehlt: ${missing}`;
   }
 
   function kicker(text) {
