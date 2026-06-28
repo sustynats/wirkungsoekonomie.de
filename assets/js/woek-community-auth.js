@@ -9,6 +9,15 @@
   const tokenKey = "woek_community_auth";
   const oauthStatePrefix = "woek_discord_oauth_state:";
 
+  window.WoekCommunityAuth = {
+    token: () => window.localStorage.getItem(tokenKey) || "",
+    authHeaders: () => {
+      const token = window.localStorage.getItem(tokenKey) || "";
+      return token ? { Authorization: `Bearer ${token}` } : {};
+    },
+    refresh: refreshStatus
+  };
+
   init();
 
   async function init() {
@@ -81,6 +90,7 @@
   function setPanels(state, status = {}) {
     panels.forEach((panel) => renderPanel(panel, state, status));
     renderNotes(state);
+    renderLoginLinks();
   }
 
   function renderPanel(panel, state, status) {
@@ -169,6 +179,12 @@
     });
   }
 
+  function renderLoginLinks() {
+    document.querySelectorAll("[data-community-login]").forEach((link) => {
+      link.setAttribute("href", buildDiscordLoginUrl());
+    });
+  }
+
   function buildDiscordLoginUrl() {
     const state = cryptoRandomState();
     window.sessionStorage.setItem(`${oauthStatePrefix}${state}`, cleanUrl(window.location.href));
@@ -225,12 +241,4 @@
     return url.href;
   }
 
-  window.WoekCommunityAuth = {
-    token: () => window.localStorage.getItem(tokenKey) || "",
-    authHeaders: () => {
-      const token = window.localStorage.getItem(tokenKey) || "";
-      return token ? { Authorization: `Bearer ${token}` } : {};
-    },
-    refresh: refreshStatus
-  };
 })();
