@@ -175,7 +175,11 @@ function absoluteUrl(value, baseUrl = site) {
 function isGenericFeedImage(value) {
   try {
     const pathname = new URL(value, site).pathname.toLowerCase();
-    return pathname.includes("/assets/img/generated/") || pathname.includes("/assets/img/brand/");
+    return (
+      pathname.includes("/assets/img/brand/") ||
+      pathname.endsWith("/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png") ||
+      pathname.endsWith("/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.webp")
+    );
   } catch {
     return true;
   }
@@ -297,9 +301,105 @@ function imageFromHtml(rel, html, pageUrl) {
 function tagsFromHtml(html) {
   return uniqueTags([
     htmlMeta(html, "search_tags"),
+    htmlMeta(html, "search_section"),
+    htmlMeta(html, "search_type"),
     ...htmlMetaAll(html, "article:tag"),
     ...jsonLdObjects(html).flatMap((block) => valuesFromJsonLd(block, ["keywords", "about"]))
   ], 10);
+}
+
+const pathTagMap = new Map(Object.entries({
+  "agenda-radar": ["Agenda-Radar", "Agenda-Setting", "öffentliche Gewichtung"],
+  "antwort-playbooks": ["Antwort-Playbooks", "Reframing", "Debattenführung"],
+  "arbeit-einkommen": ["Arbeit & Einkommen", "Arbeit", "Einkommen"],
+  "architektur": ["Wirkungsarchitektur", "Systemarchitektur"],
+  "bildung": ["Bildung", "Wissenschaft, Bildung & Lernen"],
+  "debattenkarten": ["Debatten-Kompass", "Debattenkarten", "Frameanalyse"],
+  "finanzsystem-kapital": ["Finanzsystem & Kapital", "Kapital & Finanzierung"],
+  "gesetze": ["Staat, Recht & Demokratie", "Recht", "Demokratie"],
+  "gesundheit-pflege": ["Gesundheit & Pflege", "Mensch & Teilhabe"],
+  "historische-dokumente": ["Historische Dokumente", "Archiv"],
+  "instrumente": ["Instrumente", "WÖk-Werkzeuge"],
+  "klima-energie-ressourcen": ["Klima, Energie & Ressourcen", "Planet & Resilienz"],
+  "konzepte-dossiers": ["Konzepte & Dossiers", "Dossiers", "Arbeitsmaterial"],
+  "kultur-identitaet-resonanz": ["Kultur, Identität & Resonanz", "Resonanz", "Identität"],
+  "medien-oeffentlichkeit": ["Medien & Öffentlichkeit", "Öffentlichkeit & Wissen", "Faktencheck & Folgencheck"],
+  "methodik": ["Methodik", "Wirkungsmethodik"],
+  "narrative": ["Narrative", "Frames", "Resonanzräume"],
+  "praxis": ["Praxisbeispiele", "Fallbeispiele"],
+  "produkte-konsum": ["Produkte & Konsum", "Produktwirkung", "Wirkungsumsatzsteuer"],
+  "rente-soziale-sicherung": ["Rente & soziale Sicherung", "Soziale Sicherung"],
+  "resilienz-prinzipien": ["Resilienz-Prinzipien", "Demokratische Resilienz"],
+  "resonanz-kompass": ["Resonanz-Kompass", "Resonanzprofil", "öffentliche Wirkung"],
+  "soziales": ["Soziales", "Mensch & Teilhabe"],
+  "ursachen-navigator": ["Ursachen-Navigator", "Ursachenprüfung", "Systemfrage"],
+  "whitepaper": ["Whitepaper", "Arbeitsmaterial"],
+  "wirkungsfelder": ["Wirkungsfelder", "Wirkungsanalyse"],
+  "wirkungsrat": ["Wirkungsrat", "Evaluation", "Rechtsschutz"],
+  "woek-ids": ["WÖk-IDs", "Wirkungsdaten", "Datenqualität"],
+  "wohnen-stadt": ["Wohnen & Stadt", "Wohnwirkung", "Stadt"]
+}));
+
+function tagsFromPathAndText(rel, title, description, rawText) {
+  const tags = [];
+  const lowerRel = rel.toLowerCase();
+  const combined = `${title} ${description} ${rawText}`;
+
+  if (lowerRel.startsWith("wirkungsradar/") || lowerRel.startsWith("oeffentlicher-wirkungsraum/")) {
+    tags.push("Öffentlicher Wirkungsraum", "Wirkungsradar");
+  }
+  if (lowerRel.startsWith("wirkungsradar/live/")) {
+    tags.push("Debatten-Kompass", "Debattenkarte", "Frameanalyse", "Folgencheck");
+    const debateCategory = extractDebateCategory(combined);
+    if (debateCategory) tags.push(debateCategory);
+  }
+  if (lowerRel.startsWith("bibliothek/")) {
+    tags.push("WÖk-Wissensbibliothek", "Publikation", "Wirkungsökonomie");
+  }
+  if (lowerRel.startsWith("dokumente/")) {
+    tags.push("Online-Dokumente", "WÖk-Wissensbibliothek", "Arbeitsmaterial");
+  }
+  if (lowerRel.startsWith("werkstatt/arbeitsbibliothek/")) {
+    tags.push("WÖk-Arbeitsbibliothek", "Arbeitsmaterial");
+  }
+  if (lowerRel.startsWith("referenz/kapitel-")) {
+    const chapter = lowerRel.match(/kapitel-(\d+)/)?.[1];
+    tags.push("Hauptwerk", "Referenzkapitel", "Die neue Ordnung des Wohlstands");
+    if (chapter) tags.push(`Kapitel ${chapter}`);
+  }
+
+  for (const [segment, segmentTags] of pathTagMap) {
+    if (lowerRel.includes(`/${segment}/`) || lowerRel.includes(`${segment}/`)) {
+      tags.push(...segmentTags);
+    }
+  }
+
+  return uniqueTags(tags, 10);
+}
+
+function extractDebateCategory(value) {
+  const patterns = [
+    /Debattenkarte\s*[·-]\s*([^?!.|]{3,80}?)(?=\s+[A-ZÄÖÜ0-9])/,
+    /Debattenkarten\s*\/\s*([^/]{3,80}?)\s+Debattenkarte/i
+  ];
+  for (const pattern of patterns) {
+    const match = pattern.exec(value);
+    const clean = stripTags(match?.[1] || "").replace(/\s+/g, " ").trim();
+    if (clean && !/[?!.]$/.test(clean)) return clean;
+  }
+  return "";
+}
+
+function tagsFromJournalText(title, description, url) {
+  const textValue = `${title} ${description} ${url}`.toLocaleLowerCase("de-DE");
+  const tags = [];
+  if (url.includes("/linkedin/")) tags.push("LinkedIn-Archiv");
+  if (/demokr/.test(textValue)) tags.push("Demokratie", "Politische Wirkung", "demokratische Resilienz");
+  if (/klima|energie|wärme|waerme|gebäude|gebaeude/.test(textValue)) tags.push("Klima & Energie");
+  if (/wirtschaft|unternehmen|markt|finanz/.test(textValue)) tags.push("Wirtschaft & Unternehmen");
+  if (/medien|kommunikation|fakten|diskurs|öffentlich/.test(textValue)) tags.push("Medien & Öffentlichkeit");
+  if (/wirkung|wirkungsökonomie|wirkungsoekonomie/.test(textValue)) tags.push("Wirkungslogik");
+  return uniqueTags(tags, 8);
 }
 
 function canonicalFor(rel, html) {
@@ -333,15 +433,18 @@ function pageData(file) {
   const description = entityDecode(htmlMeta(html, "description") || htmlMeta(html, "search_description") || stripTags(html.match(/<main[\s\S]*?<\/main>/i)?.[0] || "").slice(0, 240));
   const stat = fs.statSync(file);
   const url = canonicalFor(rel, html);
+  const raw = stripTags(html).slice(0, 500);
+  const cleanTitle = stripTags(title);
+  const cleanDescription = stripTags(description).slice(0, 320);
   return {
     rel,
-    title: stripTags(title),
-    description: stripTags(description).slice(0, 320),
+    title: cleanTitle,
+    description: cleanDescription,
     url,
     date: dateFromHtml(html, stat),
     image: imageFromHtml(rel, html, url),
-    tags: tagsFromHtml(html),
-    raw: stripTags(html).slice(0, 500),
+    tags: uniqueTags([...tagsFromHtml(html), ...tagsFromPathAndText(rel, cleanTitle, cleanDescription, raw)], 10),
+    raw,
     isRedirect: /<meta[^>]+http-equiv=["']refresh["']/i.test(html) || /window\.location\.(replace|href)/i.test(html) || /<meta[^>]+name=["']robots["'][^>]+noindex/i.test(html),
   };
 }
@@ -417,7 +520,7 @@ function itemsFromBlogIndex() {
           const image = absoluteUrl(post.image || "", url);
           return image && !isGenericFeedImage(image) ? image : "";
         })(),
-        tags: uniqueTags([post.category, ...(post.tags || [])], 8),
+        tags: uniqueTags([post.category, ...(post.tags || []), ...tagsFromJournalText(post.title || "", post.excerpt || post.description || "", url)], 8),
       };
     })
     .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
