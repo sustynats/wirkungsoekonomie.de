@@ -79,6 +79,7 @@
       metaLine("Datenstand", item.dataStatus),
       frameSection(item.frame),
       languageSection(item.languageAnalysis),
+      rhetoricSection(item.rhetoricAnalysis),
       section("Wirkungsökonomische Einordnung", item.impactNotes, renderImpact),
       section("Quellen", item.sources, renderSource),
       section("Prüfbare Einzelbehauptungen", item.atomicClaims, renderAtomicClaim),
@@ -111,6 +112,26 @@
     wrapper.append(metaLine("Nahegelegte Handlung", language.impliedAction));
     wrapper.append(metaLine("Wirkungspotenzial", language.impactPotential));
     wrapper.append(metaLine("Bessere Sprache", language.counterLanguage));
+    return wrapper;
+  }
+
+  function rhetoricSection(rhetoric) {
+    if (!rhetoric) return document.createDocumentFragment();
+    const wrapper = node("div", "factcheck-result-section");
+    wrapper.append(node("h4", "", "Rhetorik & Psychologie"));
+    wrapper.append(node("p", "", rhetoric.summary || "Rhetorische und psychologische Muster im Originalkontext prüfen."));
+    const list = node("ol", "factcheck-result-list");
+    (Array.isArray(rhetoric.moves) ? rhetoric.moves : []).forEach((move) => {
+      const li = node("li", "");
+      li.append(node("strong", "", move.label || "Muster offen"));
+      li.append(metaLine("Mechanismus", move.mechanism));
+      li.append(metaLine("Wirkungspotenzial", move.effectPotential));
+      li.append(metaLine("Antwort", move.response));
+      list.append(li);
+    });
+    if (list.children.length) wrapper.append(list);
+    wrapper.append(metaLine("Antwortstrategie", rhetoric.responseStrategy));
+    wrapper.append(metaLine("Grenze", rhetoric.caution));
     return wrapper;
   }
 

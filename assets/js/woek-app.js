@@ -228,6 +228,7 @@
       section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
       section("Frame", frameText(item?.frame)),
       section("Sprache & Narrativ", languageText(item?.languageAnalysis)),
+      section("Rhetorik & Psychologie", rhetoricText(item?.rhetoricAnalysis)),
       listSection("WÖk-Einordnung", item?.impactNotes, (note) => `${note.label}: ${note.explanation}`),
       sourceSection(item?.sources),
       listSection("Grenzen", item?.limits, (value) => value)
@@ -298,6 +299,24 @@
       `Nahegelegte Handlung: ${language.impliedAction || "offen"}`,
       `Wirkungspotenzial: ${language.impactPotential || "offen"}`,
       `Bessere Sprache: ${language.counterLanguage || "offen"}`
+    ].join("\n");
+  }
+
+  function rhetoricText(rhetoric) {
+    if (!rhetoric) return "";
+    const moves = Array.isArray(rhetoric.moves) && rhetoric.moves.length
+      ? rhetoric.moves
+          .map(
+            (move, index) =>
+              `${index + 1}. ${move.label || "Muster offen"}: ${move.mechanism || "Mechanismus offen"} Wirkungspotenzial: ${move.effectPotential || "offen"} Antwort: ${move.response || "offen"}`
+          )
+          .join("\n")
+      : "Keine belastbar benennbaren Muster ohne Originalkontext.";
+    return [
+      rhetoric.summary || "Rhetorische und psychologische Muster im Originalkontext prüfen.",
+      moves,
+      `Antwortstrategie: ${rhetoric.responseStrategy || "offen"}`,
+      `Grenze: ${rhetoric.caution || "Musteranalyse ist keine Personenbewertung."}`
     ].join("\n");
   }
 
