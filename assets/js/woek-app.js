@@ -227,6 +227,7 @@
       section("Reframing", item?.reframing),
       section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
       section("Frame", frameText(item?.frame)),
+      section("Sprache & Narrativ", languageText(item?.languageAnalysis)),
       listSection("WÖk-Einordnung", item?.impactNotes, (note) => `${note.label}: ${note.explanation}`),
       sourceSection(item?.sources),
       listSection("Grenzen", item?.limits, (value) => value)
@@ -285,6 +286,19 @@
       sourceSection(item?.sources),
       listSection("Grenzen", item?.limits, (value) => value)
     ]);
+  }
+
+  function languageText(language) {
+    if (!language) return "";
+    return [
+      `Sprachwahl: ${language.wording || "offen"}`,
+      `Narrativ: ${language.narrative || "offen"}`,
+      `Sprachbild: ${language.metaphor || "offen"}`,
+      `Entmenschlichungsrisiko: ${language.dehumanizationRisk || "offen"}`,
+      `Nahegelegte Handlung: ${language.impliedAction || "offen"}`,
+      `Wirkungspotenzial: ${language.impactPotential || "offen"}`,
+      `Bessere Sprache: ${language.counterLanguage || "offen"}`
+    ].join("\n");
   }
 
   function renderLoading() {

@@ -78,6 +78,7 @@
       truthSection(item.truthCheck),
       metaLine("Datenstand", item.dataStatus),
       frameSection(item.frame),
+      languageSection(item.languageAnalysis),
       section("Wirkungsökonomische Einordnung", item.impactNotes, renderImpact),
       section("Quellen", item.sources, renderSource),
       section("Prüfbare Einzelbehauptungen", item.atomicClaims, renderAtomicClaim),
@@ -96,6 +97,20 @@
     wrapper.append(metaLine("Mögliche Funktion", frame.likelyFunction));
     wrapper.append(metaLine("Antwortstrategie", frame.responseStrategy));
     wrapper.append(metaLine("Grenze", frame.caution));
+    return wrapper;
+  }
+
+  function languageSection(language) {
+    if (!language) return document.createDocumentFragment();
+    const wrapper = node("div", "factcheck-result-section");
+    wrapper.append(node("h4", "", "Sprache & Narrativ"));
+    wrapper.append(metaLine("Sprachwahl", language.wording));
+    wrapper.append(metaLine("Narrativ", language.narrative));
+    wrapper.append(metaLine("Sprachbild", language.metaphor));
+    wrapper.append(metaLine("Entmenschlichungsrisiko", language.dehumanizationRisk));
+    wrapper.append(metaLine("Nahegelegte Handlung", language.impliedAction));
+    wrapper.append(metaLine("Wirkungspotenzial", language.impactPotential));
+    wrapper.append(metaLine("Bessere Sprache", language.counterLanguage));
     return wrapper;
   }
 
