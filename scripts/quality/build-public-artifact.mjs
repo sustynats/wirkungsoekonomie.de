@@ -31,6 +31,7 @@ const excludedTopLevelDirs = new Set([
   "tiktok_archive",
   "tiktok_library",
   "tools",
+  "woek-akademie-app",
 ]);
 
 const excludedTopLevelFiles = new Set([
