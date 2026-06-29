@@ -201,11 +201,11 @@
       });
       const payload = await response.json().catch(() => undefined);
       if (!response.ok || !payload?.ok) {
-        throw new Error(unavailableMessage);
+        throw new Error(payload?.error || unavailableMessage);
       }
       render(payload, body, path);
     } catch (error) {
-      renderNotice("Prüfung gerade nicht möglich", unavailableMessage);
+      renderNotice("Prüfung gerade nicht möglich", error?.message || unavailableMessage);
     } finally {
       setBusy(false);
     }

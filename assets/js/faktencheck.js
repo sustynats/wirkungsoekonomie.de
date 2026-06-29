@@ -34,12 +34,12 @@
       });
       const payload = await response.json().catch(() => undefined);
       if (!response.ok || !payload?.ok) {
-        throw new Error(unavailableMessage);
+        throw new Error(payload?.error || unavailableMessage);
       }
 
       renderFactcheck(payload.result);
     } catch (error) {
-      renderMessage("Wirkungscheck gerade nicht möglich", unavailableMessage);
+      renderMessage("Wirkungscheck gerade nicht möglich", error?.message || unavailableMessage);
     } finally {
       setBusy(false);
     }

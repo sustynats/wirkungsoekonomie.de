@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-app-shell-20260628-community-copy";
+const CACHE_NAME = "woek-app-shell-20260629-wirkungscheck-errors";
 const APP_SHELL = [
   "/app/",
   "/offline.html",
