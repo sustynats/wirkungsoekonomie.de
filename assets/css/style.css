@@ -15380,9 +15380,11 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 
 .document-detail-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 20rem;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.25rem;
   align-items: start;
+  max-width: min(980px, calc(100vw - 3rem));
+  margin-inline: auto;
 }
 
 .document-detail-main h2 {
@@ -15395,16 +15397,22 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 }
 
 .document-detail-aside {
-  position: sticky;
-  top: 1rem;
+  position: static;
+  order: -1;
   display: grid;
   gap: 1rem;
 }
 
 .document-detail-aside dl {
   display: grid;
-  gap: 0.45rem;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.4rem 1rem;
+  align-items: start;
   margin: 0;
+}
+
+.document-detail-aside .document-action-row {
+  margin-top: 0;
 }
 
 .document-paper-reader.document-detail-grid {

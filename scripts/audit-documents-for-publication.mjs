@@ -2104,6 +2104,20 @@ function detailPage(doc, prefix = "../../") {
   const downloadBlock = actionLinks.length
     ? `<div class="document-action-row">${actionLinks.join("")}</div>`
     : `<p class="document-restricted">Kein öffentlicher Download: Dieses Dokument ist ${escapeHtml(doc.status)} und wird nicht direkt verlinkt.</p>`;
+  const metaAside = `
+        <aside class="document-detail-aside" data-search-exclude>
+          <dl>
+            <dt>Dokumentart</dt><dd>${escapeHtml(doc.documentType)}</dd>
+            <dt>Status</dt><dd>${escapeHtml(doc.status)}</dd>
+            <dt>Umfang</dt><dd>${escapeHtml([doc.pageCount ? `${doc.pageCount} Seiten` : "", doc.estimatedReadingTime, doc.fileType?.toUpperCase()].filter(Boolean).join(" · ") || "offen")}</dd>
+            <dt>Stand / Version</dt><dd>${escapeHtml([doc.date, doc.version].filter(Boolean).join(" · ") || "offen")}</dd>
+            <dt>Zielgruppe</dt><dd>${escapeHtml((doc.audience || []).join(", "))}</dd>
+            <dt>Niveau</dt><dd>${escapeHtml(doc.level)}</dd>
+          </dl>
+          <div class="document-chip-row">${chips(doc.topics, 8)}</div>
+          ${downloadBlock}
+          <a class="text-link" href="../">Zur Bibliothek</a>
+        </aside>`;
   const body = `
       <section class="hero compact-hero document-detail-hero">
         <p class="hero-kicker">${doc.isLeadingReference ? "führende dokumentseite · " : ""}${escapeHtml(doc.documentType)} · ${escapeHtml(doc.status)}</p>
@@ -2112,6 +2126,7 @@ function detailPage(doc, prefix = "../../") {
         <div class="document-card-badges">${badge(doc.documentType)}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
       </section>
       <section class="section document-detail-grid">
+        ${metaAside}
         <article class="document-detail-main">
           ${statusNotice}
           ${expertNotice}
@@ -2134,19 +2149,6 @@ function detailPage(doc, prefix = "../../") {
           <h2>Verwandte Inhalte</h2>
           <ul>${related.map((item) => `<li><a href="../${item.slug}/">${escapeHtml(item.title)}</a></li>`).join("") || "<li>Keine verwandten Dokumente hinterlegt.</li>"}</ul>
         </article>
-        <aside class="document-detail-aside" data-search-exclude>
-          <dl>
-            <dt>Dokumentart</dt><dd>${escapeHtml(doc.documentType)}</dd>
-            <dt>Status</dt><dd>${escapeHtml(doc.status)}</dd>
-            <dt>Umfang</dt><dd>${escapeHtml([doc.pageCount ? `${doc.pageCount} Seiten` : "", doc.estimatedReadingTime, doc.fileType?.toUpperCase()].filter(Boolean).join(" · ") || "offen")}</dd>
-            <dt>Stand / Version</dt><dd>${escapeHtml([doc.date, doc.version].filter(Boolean).join(" · ") || "offen")}</dd>
-            <dt>Zielgruppe</dt><dd>${escapeHtml((doc.audience || []).join(", "))}</dd>
-            <dt>Niveau</dt><dd>${escapeHtml(doc.level)}</dd>
-          </dl>
-          <div class="document-chip-row">${chips(doc.topics, 8)}</div>
-          ${downloadBlock}
-          <a class="text-link" href="../">Zur Bibliothek</a>
-        </aside>
       </section>`;
   return layout({
     title: `${doc.title} | Bibliothek der Wirkungsökonomie`,
