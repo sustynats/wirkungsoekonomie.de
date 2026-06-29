@@ -18,6 +18,9 @@
   const installDismiss = root.querySelector("[data-pwa-install-dismiss]");
   let deferredInstallPrompt = null;
   let feedbackContext = null;
+  let progressTimer = null;
+  let progressStartedAt = 0;
+  let progressPath = "/api/factcheck";
 
   initPwa();
 
@@ -187,7 +190,8 @@
     }
 
     setBusy(true);
-    renderLoading();
+    renderLoading(path);
+    startProgress(path);
 
     try {
       const response = await fetch(`${apiBase}${path}`, {
@@ -207,6 +211,7 @@
     } catch (error) {
       renderNotice("Prüfung gerade nicht möglich", error?.message || unavailableMessage);
     } finally {
+      stopProgress();
       setBusy(false);
     }
   }
@@ -325,12 +330,13 @@
     ].join("\n");
   }
 
-  function renderLoading() {
+  function renderLoading(path) {
     feedbackContext = null;
     replaceResult([
-      kicker("Prüfung"),
+      kicker("Prüfung läuft"),
       heading("Antwort wird vorbereitet."),
-      paragraph("Quellen, Frame und WÖk-Einordnung werden gemeinsam geprüft.")
+      paragraph("Quellen, Frame und WÖk-Einordnung werden gemeinsam geprüft."),
+      progressPanel(path)
     ]);
   }
 
@@ -416,6 +422,48 @@
       button.textContent = isBusy ? "Prüfung läuft..." : button.dataset.label || "Prüfen";
     });
     if (status) status.textContent = isBusy ? "Prüfung läuft" : "Bereit";
+  }
+
+  function startProgress(path) {
+    stopProgress();
+    progressPath = path;
+    progressStartedAt = Date.now();
+    updateProgress();
+    progressTimer = window.setInterval(updateProgress, 1000);
+  }
+
+  function stopProgress() {
+    if (progressTimer) {
+      window.clearInterval(progressTimer);
+      progressTimer = null;
+    }
+  }
+
+  function updateProgress() {
+    const progress = result?.querySelector("[data-woek-progress]");
+    if (!progress) return;
+
+    const elapsedSeconds = Math.max(0, Math.floor((Date.now() - progressStartedAt) / 1000));
+    const plan = progressPlanFor(progressPath);
+    const checkpoints = progressCheckpoints(plan.length);
+    const activeIndex = checkpoints.reduce((current, checkpoint, index) => (elapsedSeconds >= checkpoint ? index : current), 0);
+    const percent = Math.min(92, 12 + elapsedSeconds * 1.12);
+    const fill = progress.querySelector("[data-progress-fill]");
+    const time = progress.querySelector("[data-progress-time]");
+    const label = progress.querySelector("[data-progress-label]");
+    const bar = progress.querySelector("[role='progressbar']");
+
+    if (fill) fill.style.width = `${percent}%`;
+    if (bar) bar.setAttribute("aria-valuenow", String(Math.round(percent)));
+    if (time) time.textContent = `läuft seit ${formatElapsed(elapsedSeconds)}`;
+    if (label) label.textContent = plan[activeIndex] || "Prüfung läuft";
+    if (status) status.textContent = `Prüfung läuft · ${formatElapsed(elapsedSeconds)}`;
+
+    progress.querySelectorAll("[data-progress-step]").forEach((item) => {
+      const index = Number(item.getAttribute("data-progress-step") || "0");
+      item.classList.toggle("is-done", index < activeIndex);
+      item.classList.toggle("is-active", index === activeIndex);
+    });
   }
 
   function showInstallPanel(copy, buttonLabel, manual = false, force = false) {
@@ -559,6 +607,59 @@
     const wrapper = node("details", "woek-app-result-section woek-app-result-details");
     wrapper.append(node("summary", "", title), ...nodes);
     return wrapper;
+  }
+
+  function progressPanel(path) {
+    const plan = progressPlanFor(path);
+    const wrapper = node("section", "woek-progress");
+    wrapper.setAttribute("data-woek-progress", "");
+
+    const meta = node("div", "woek-progress__meta");
+    const label = node("span", "", plan[0] || "Prüfung läuft");
+    const time = node("span", "", "läuft seit 0:00");
+    label.setAttribute("data-progress-label", "");
+    time.setAttribute("data-progress-time", "");
+    meta.append(label, time);
+
+    const bar = node("div", "woek-progress__bar");
+    bar.setAttribute("role", "progressbar");
+    bar.setAttribute("aria-label", "Arbeitsfortschritt");
+    bar.setAttribute("aria-valuemin", "0");
+    bar.setAttribute("aria-valuemax", "100");
+    bar.setAttribute("aria-valuenow", "12");
+    const fill = node("div", "woek-progress__fill");
+    fill.setAttribute("data-progress-fill", "");
+    bar.append(fill);
+
+    const steps = node("ol", "woek-progress__steps");
+    plan.forEach((step, index) => {
+      const item = node("li", index === 0 ? "is-active" : "", step);
+      item.setAttribute("data-progress-step", String(index));
+      steps.append(item);
+    });
+
+    wrapper.append(meta, bar, steps, node("p", "woek-progress__hint", "Orientierungsbalken: Die genaue Dauer hängt von Quellenlage, Bild/Textbeleg und KI-Dienst ab."));
+    return wrapper;
+  }
+
+  function progressPlanFor(path) {
+    if (path === "/api/woek-ai") {
+      return ["Frage lesen", "WÖk-Wissensbasis abgleichen", "Passende Quellen bündeln", "Antwort in einfacher Sprache formulieren", "Grenzen prüfen"];
+    }
+    if (path === "/api/product-check") {
+      return ["Produktdaten sichern", "Öffentliche Hinweise prüfen", "Wirkungsdimensionen bewerten", "Reverse-Merit-Order einordnen", "Antwort und Grenzen formulieren"];
+    }
+    return ["Eingabe sichern", "WÖk-Wissensbasis abgleichen", "Quellenlage und Wahrheitsgehalt prüfen", "Sprache, Frame und Wirkungspfad analysieren", "Antwort und Grenzen formulieren"];
+  }
+
+  function progressCheckpoints(length) {
+    return [0, 6, 18, 38, 62].slice(0, Math.max(1, length));
+  }
+
+  function formatElapsed(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const rest = String(seconds % 60).padStart(2, "0");
+    return `${minutes}:${rest}`;
   }
 
   function frameText(frame) {

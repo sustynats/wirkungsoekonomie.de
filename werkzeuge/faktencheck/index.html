@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Fakten, Frames und Folgen prüfen. Aussagen, Quellen, Sprache und Wirkung verständlich einordnen.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260628-community-auth">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260629-progress-ui">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -104,15 +104,15 @@
         <div class="factcheck-live-grid">
           <form class="factcheck-live-form" data-factcheck-form>
             <label>
-              <span>Aussage</span>
+              <span class="field-label">Aussage <small class="field-badge field-badge--required">Pflicht</small></span>
               <textarea name="claim" rows="5" maxlength="1800" required placeholder="Zum Beispiel: Der Klimawandel ist nicht menschengemacht."></textarea>
             </label>
             <label>
-              <span>Kontext oder Link</span>
+              <span class="field-label">Kontext oder Link <small class="field-badge">optional</small></span>
               <textarea name="context" rows="3" maxlength="700" placeholder="Wer sagt das, wo, wann, mit welchem Link?"></textarea>
             </label>
             <label>
-              <span>Themenbereich</span>
+              <span class="field-label">Themenbereich <small class="field-badge">optional</small></span>
               <select name="domain">
                 <option value="">Automatisch erkennen</option>
                 <option value="general">Allgemein</option>
@@ -488,6 +488,6 @@
       </div>
     </footer>
     <script src="../../assets/js/woek-community-auth-v2.js?v=20260628-community-copy" defer></script>
-    <script src="../../assets/js/faktencheck.js?v=20260629-wirkungscheck-errors" defer></script>
+    <script src="../../assets/js/faktencheck.js?v=20260629-progress-ui" defer></script>
   </body>
 </html>

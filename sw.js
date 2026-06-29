@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-app-shell-20260629-wirkungscheck-errors";
+const CACHE_NAME = "woek-app-shell-20260629-progress-ui";
 const APP_SHELL = [
   "/app/",
   "/offline.html",

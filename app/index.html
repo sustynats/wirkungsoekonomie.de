@@ -20,7 +20,7 @@
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../assets/img/brand/app-icon-192.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260628-community-auth">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260629-progress-ui">
   </head>
   <body>
     <header class="site-header" data-search-exclude>
@@ -108,24 +108,24 @@
 
             <form class="woek-app-form" data-app-panel="factcheck" data-factcheck-form>
               <label>
-                <span>Aussage oder Behauptung</span>
+                <span class="field-label">Aussage oder Behauptung <small class="field-badge field-badge--required">Pflicht</small></span>
                 <textarea name="claim" rows="5" maxlength="1800" required placeholder="Welche Aussage soll geprüft werden?"></textarea>
               </label>
               <label>
-                <span>Artikel-Link oder Quelle</span>
+                <span class="field-label">Artikel-Link oder Quelle <small class="field-badge">optional</small></span>
                 <input name="evidenceUrl" type="url" inputmode="url" placeholder="https://...">
               </label>
               <label>
-                <span>Kopierter Text oder OCR</span>
+                <span class="field-label">Kopierter Text oder OCR <small class="field-badge">optional</small></span>
                 <textarea name="evidenceText" rows="4" maxlength="5000" placeholder="Text aus Artikel, Screenshot oder iOS/Android-Live-Text einfügen."></textarea>
               </label>
               <label class="woek-app-file">
-                <span>Screenshot oder Foto</span>
+                <span class="field-label">Screenshot oder Foto <small class="field-badge">optional</small></span>
                 <input name="image" type="file" accept="image/*" capture="environment">
                 <small data-file-name>Kein Bild ausgewählt</small>
               </label>
               <label>
-                <span>Themenbereich</span>
+                <span class="field-label">Themenbereich <small class="field-badge">optional</small></span>
                 <select name="domain">
                   <option value="">Automatisch erkennen</option>
                   <option value="general">Allgemein</option>
@@ -137,7 +137,7 @@
                 </select>
               </label>
               <label>
-                <span>Kontext</span>
+                <span class="field-label">Kontext <small class="field-badge">optional</small></span>
                 <textarea name="context" rows="3" maxlength="700" placeholder="Wer sagt das, wo, wann, mit welchem Zusammenhang?"></textarea>
               </label>
               <button class="btn btn-primary" type="submit" data-label="Wirkungscheck starten">Wirkungscheck starten</button>
@@ -145,11 +145,11 @@
 
             <form class="woek-app-form" data-app-panel="woek" data-woek-form hidden>
               <label>
-                <span>Frage</span>
+                <span class="field-label">Frage <small class="field-badge field-badge--required">Pflicht</small></span>
                 <textarea name="question" rows="7" maxlength="1800" required placeholder="Was möchtest du zur Wirkungsökonomie wissen?"></textarea>
               </label>
               <label>
-                <span>Kontext</span>
+                <span class="field-label">Kontext <small class="field-badge">optional</small></span>
                 <textarea name="context" rows="3" maxlength="700" placeholder="Optional: Anwendungsfall, Begriff oder Link."></textarea>
               </label>
               <button class="btn btn-primary" type="submit" data-label="Frage stellen">Frage stellen</button>
@@ -157,28 +157,28 @@
 
             <form class="woek-app-form" data-app-panel="product" data-product-form hidden>
               <label>
-                <span>Produkt</span>
+                <span class="field-label">Produkt <small class="field-badge field-badge--required">Pflicht</small></span>
                 <input name="product" type="text" maxlength="700" required placeholder="Produktname, Marke oder Produktlink">
               </label>
               <label>
-                <span>Produktlink</span>
+                <span class="field-label">Produktlink <small class="field-badge">optional</small></span>
                 <input name="url" type="url" inputmode="url" placeholder="https://...">
               </label>
               <label>
-                <span>Werbeclaim oder Frage</span>
+                <span class="field-label">Werbeclaim oder Frage <small class="field-badge">optional</small></span>
                 <textarea name="claim" rows="4" maxlength="900" placeholder="Zum Beispiel: klimaneutral, nachhaltig, besonders gesund, fair produziert."></textarea>
               </label>
               <label>
-                <span>Kopierter Text oder OCR</span>
+                <span class="field-label">Kopierter Text oder OCR <small class="field-badge">optional</small></span>
                 <textarea name="evidenceText" rows="4" maxlength="5000" placeholder="Text aus Produktseite, Anzeige, Etikett oder Screenshot einfügen."></textarea>
               </label>
               <label class="woek-app-file">
-                <span>Produktfoto oder Screenshot</span>
+                <span class="field-label">Produktfoto oder Screenshot <small class="field-badge">optional</small></span>
                 <input name="image" type="file" accept="image/*" capture="environment">
                 <small data-file-name>Kein Bild ausgewählt</small>
               </label>
               <label>
-                <span>Kontext</span>
+                <span class="field-label">Kontext <small class="field-badge">optional</small></span>
                 <textarea name="context" rows="3" maxlength="700" placeholder="Wofür wird das Produkt genutzt? Welche Wirkung soll geprüft werden?"></textarea>
               </label>
               <button class="btn btn-primary" type="submit" data-label="Produkt prüfen">Produkt prüfen</button>
@@ -357,6 +357,6 @@
 
     <script src="../assets/js/main.js?v=20260612-mobile-table-fix"></script>
     <script src="../assets/js/woek-community-auth-v2.js?v=20260628-community-copy" defer></script>
-    <script src="../assets/js/woek-app.js?v=20260629-wirkungscheck-errors" defer></script>
+    <script src="../assets/js/woek-app.js?v=20260629-progress-ui" defer></script>
   </body>
 </html>

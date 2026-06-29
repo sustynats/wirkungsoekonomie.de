@@ -6678,7 +6678,7 @@ textarea {
 
 .factcheck-live-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(1rem, 3vw, 1.5rem);
   align-items: start;
 }
@@ -6715,7 +6715,9 @@ textarea {
 .factcheck-result {
   display: grid;
   gap: 1rem;
+  width: min(920px, 100%);
   min-width: 0;
+  margin-inline: auto;
   padding: clamp(1rem, 3vw, 1.5rem);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -6728,6 +6730,37 @@ textarea {
   gap: 0.45rem;
   color: var(--navy);
   font-weight: 850;
+}
+
+.field-label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.field-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.25rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid rgba(11, 16, 32, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: none;
+}
+
+.field-badge--required {
+  border-color: rgba(47, 125, 92, 0.32);
+  background: rgba(47, 125, 92, 0.1);
+  color: var(--green-dark);
 }
 
 .factcheck-live-form textarea,
@@ -6758,6 +6791,117 @@ textarea {
   cursor: wait;
   opacity: 0.76;
   transform: none;
+}
+
+.woek-progress {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  border: 1px solid rgba(47, 125, 92, 0.22);
+  border-radius: 8px;
+  background: rgba(47, 125, 92, 0.07);
+}
+
+.woek-progress__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.woek-progress__bar {
+  position: relative;
+  overflow: hidden;
+  height: 0.58rem;
+  border-radius: 999px;
+  background: rgba(11, 16, 32, 0.1);
+}
+
+.woek-progress__fill {
+  width: 12%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--green), var(--gold));
+  transition: width 0.55s ease;
+}
+
+.woek-progress__bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: translateX(-100%);
+  animation: woek-progress-sheen 1.7s ease-in-out infinite;
+}
+
+.woek-progress__steps {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.woek-progress__steps li {
+  display: flex;
+  gap: 0.45rem;
+  align-items: baseline;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.woek-progress__steps li::before {
+  content: "";
+  width: 0.48rem;
+  height: 0.48rem;
+  flex: 0 0 auto;
+  margin-top: 0.42rem;
+  border-radius: 999px;
+  background: rgba(11, 16, 32, 0.18);
+}
+
+.woek-progress__steps li.is-done,
+.woek-progress__steps li.is-active {
+  color: var(--navy);
+}
+
+.woek-progress__steps li.is-done::before {
+  background: var(--green);
+}
+
+.woek-progress__steps li.is-active::before {
+  background: var(--gold);
+  box-shadow: 0 0 0 0.28rem rgba(200, 155, 60, 0.17);
+}
+
+.woek-progress__hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+@keyframes woek-progress-sheen {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .woek-progress__bar::after {
+    animation: none;
+  }
+
+  .woek-progress__fill {
+    transition: none;
+  }
 }
 
 .factcheck-form-note,
@@ -6948,7 +7092,9 @@ textarea {
 .woek-app-result {
   display: grid;
   gap: 1rem;
+  width: min(920px, 100%);
   min-width: 0;
+  margin-inline: auto;
   padding: clamp(1rem, 3vw, 1.35rem);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -6992,6 +7138,12 @@ textarea {
   letter-spacing: 0;
   line-height: 1.5;
   text-transform: none;
+}
+
+.woek-app-form button[disabled] {
+  cursor: wait;
+  opacity: 0.76;
+  transform: none;
 }
 
 .woek-app-form textarea {
@@ -7153,12 +7305,12 @@ textarea {
 
 @media (min-width: 920px) {
   .woek-app-layout {
-    grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.68fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .woek-app-result {
-    position: sticky;
-    top: 5.5rem;
+    position: static;
+    top: auto;
   }
 
   .woek-app-install {
