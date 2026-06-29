@@ -18,6 +18,8 @@
   const installDismiss = root.querySelector("[data-pwa-install-dismiss]");
   let deferredInstallPrompt = null;
   let feedbackContext = null;
+  let shareContext = null;
+  let currentShareUrl = "";
   let progressTimer = null;
   let progressStartedAt = 0;
   let progressPath = "/api/factcheck";
@@ -50,8 +52,11 @@
     });
   });
 
-  const initialMode = new URLSearchParams(window.location.search).get("mode");
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialMode = urlParams.get("mode");
   setMode(["factcheck", "woek", "product"].includes(initialMode) ? initialMode : "factcheck");
+  const sharedResultId = urlParams.get("share");
+  if (sharedResultId) void loadSharedResult(sharedResultId);
 
   function initPwa() {
     updateConnectivity();
@@ -218,18 +223,39 @@
 
   function renderFactcheck(payload, request, route) {
     const item = payload.result;
+    const answer = item?.directAnswer || item?.rebuttal || item?.summary || "";
+    const sections = shareSections([
+      ["Reframing", item?.reframing],
+      ["Kurzurteil", item?.summary],
+      ["Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""],
+      ["Sprache & Narrativ", languageText(item?.languageAnalysis)],
+      ["Rhetorik & Psychologie", rhetoricText(item?.rhetoricAnalysis)],
+      ["Frame", frameText(item?.frame)],
+      ["WÖk-Einordnung", listText(item?.impactNotes, (note) => `${note.label}: ${note.explanation}`)],
+      ["Bessere Frage", item?.betterQuestion],
+      ["Grenzen", listText(item?.limits, (value) => value)]
+    ]);
     feedbackContext = {
       target: "factcheck",
       question: request?.claim || "",
-      answer: item?.directAnswer || item?.rebuttal || item?.summary || "",
+      answer,
       sources: item?.sources || [],
       route,
       model: item?.model || payload.model || ""
     };
+    setShareContext({
+      target: "factcheck",
+      title: "WÖk-Wirkungscheck",
+      question: request?.claim || "",
+      answer,
+      sections,
+      sources: normalizeShareSources(item?.sources),
+      route
+    });
     replaceResult([
       kicker(statusLabel(item?.status)),
       heading("Antwort"),
-      paragraph(item?.directAnswer || item?.rebuttal || item?.summary),
+      paragraph(answer),
       section("Reframing", item?.reframing),
       section("Kurzurteil", item?.summary),
       detailsSection("Prüfdetails öffnen", [
@@ -246,6 +272,11 @@
   }
 
   function renderWoek(payload, request, route) {
+    const sections = shareSections([
+      ["Warum das trägt", payload.explanation],
+      ["WÖk-Einordnung", payload.woekLens],
+      ["Grenzen", listText(payload.limits, (value) => value)]
+    ]);
     feedbackContext = {
       target: "woek-ai",
       question: request?.question || "",
@@ -254,6 +285,15 @@
       route,
       model: payload.model || ""
     };
+    setShareContext({
+      target: "woek-ai",
+      title: "Frag die WÖk",
+      question: request?.question || "",
+      answer: payload.answer || "",
+      sections,
+      sources: normalizeShareSources(payload.sources),
+      route
+    });
     replaceResult([
       kicker(statusLabel(payload.status)),
       heading("Antwort"),
@@ -267,18 +307,46 @@
 
   function renderProduct(payload, request, route) {
     const item = payload.result;
+    const answer = item?.directAnswer || item?.summary || "";
+    const sections = shareSections([
+      ["Produktversprechen", item?.productPromise],
+      ["Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""],
+      ["Wirkungsscore", impactScoreText(item?.impactScore)],
+      ["Wirkungsdimensionen", listText(item?.dimensions, dimensionText)],
+      ["Reverse Merit Order", rmoText(item?.reverseMeritOrder)],
+      ["Unternehmen: gut sichtbar", listText(item?.companyAssessment?.strengths, companySignalText)],
+      ["Unternehmen: schwach oder offen", listText(item?.companyAssessment?.weaknesses, companySignalText)],
+      ["Offene Unternehmensfragen", listText(item?.companyAssessment?.openQuestions, (value) => value)],
+      ["SDG-Bezug", listText(item?.sdgAssessment?.sdgs, sdgText)],
+      ["SDG+-Bezug", listText(item?.sdgAssessment?.sdgPlus, sdgText)],
+      ["SDG-Zielkonflikte", listText(item?.sdgAssessment?.conflicts, (value) => value)],
+      ["Datenqualität", dataQualityText(item?.dataQuality)],
+      ["Frame", frameText(item?.frame)],
+      ["WÖk-Einordnung", listText(item?.impactNotes, (note) => `${note.label}: ${note.explanation}`)],
+      ["Reframing", item?.reframing],
+      ["Grenzen", listText(item?.limits, (value) => value)]
+    ]);
     feedbackContext = {
       target: "product-check",
       question: request?.product || request?.claim || "",
-      answer: item?.directAnswer || item?.summary || "",
+      answer,
       sources: item?.sources || [],
       route,
       model: item?.model || payload.model || ""
     };
+    setShareContext({
+      target: "product-check",
+      title: "Produktcheck",
+      question: request?.product || request?.claim || "",
+      answer,
+      sections,
+      sources: normalizeShareSources(item?.sources),
+      route
+    });
     replaceResult([
       kicker(statusLabel(item?.status)),
       heading("Antwort"),
-      paragraph(item?.directAnswer || item?.summary),
+      paragraph(answer),
       section("Produktversprechen", item?.productPromise),
       section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
       section("Wirkungsscore", impactScoreText(item?.impactScore)),
@@ -332,6 +400,8 @@
 
   function renderLoading(path) {
     feedbackContext = null;
+    shareContext = null;
+    currentShareUrl = "";
     replaceResult([
       kicker("Prüfung läuft"),
       heading("Antwort wird vorbereitet."),
@@ -342,6 +412,8 @@
 
   function renderNotice(title, text) {
     feedbackContext = null;
+    shareContext = null;
+    currentShareUrl = "";
     replaceResult([kicker("Hinweis"), heading(title), paragraph(text)]);
   }
 
@@ -501,7 +573,145 @@
 
   function replaceResult(nodes) {
     if (!result) return;
-    result.replaceChildren(...nodes.filter(Boolean), feedbackSection());
+    result.replaceChildren(...nodes.filter(Boolean), resultActionsSection(), feedbackSection());
+  }
+
+  function resultActionsSection() {
+    const wrapper = node("section", "woek-result-actions");
+    if (!shareContext) {
+      wrapper.hidden = true;
+      return wrapper;
+    }
+
+    const actions = node("div", "woek-result-actions__buttons");
+    const statusText = node("small", "woek-result-actions__status", "");
+    const link = node("button", "", "Link erstellen");
+    const copy = node("button", "", "Antwort kopieren");
+    const pdf = node("button", "", "PDF exportieren");
+
+    [link, copy, pdf].forEach((button) => {
+      button.type = "button";
+    });
+    link.addEventListener("click", () => createShareLink(statusText, link));
+    copy.addEventListener("click", () => copyShareMarkdown(statusText, copy));
+    pdf.addEventListener("click", () => exportSharePdf(statusText));
+
+    actions.append(link, copy, pdf);
+    wrapper.append(node("p", "hero-kicker", "Teilen"), actions, statusText);
+    return wrapper;
+  }
+
+  async function createShareLink(statusText, button) {
+    if (!shareContext) return;
+    button.disabled = true;
+    statusText.textContent = currentShareUrl ? "Link wird kopiert..." : "Link wird erstellt...";
+
+    try {
+      if (!currentShareUrl) {
+        const response = await fetch(`${apiBase}/api/share-result`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-WOEK-Client-ID": clientId,
+            ...communityAuthHeaders()
+          },
+          body: JSON.stringify(shareContext)
+        });
+        const payload = await response.json().catch(() => undefined);
+        if (!response.ok || !payload?.ok) {
+          throw new Error(payload?.error || "Der Link konnte gerade nicht erstellt werden.");
+        }
+        currentShareUrl = payload.url || shareableUrl(payload.id);
+      }
+      await copyText(currentShareUrl);
+      statusText.textContent = "Link erstellt und kopiert.";
+    } catch (error) {
+      statusText.textContent = error?.message || "Der Link konnte gerade nicht erstellt werden.";
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  async function copyShareMarkdown(statusText, button) {
+    if (!shareContext) return;
+    button.disabled = true;
+    statusText.textContent = "Antwort wird kopiert...";
+    try {
+      await copyText(buildShareMarkdown(shareContext, currentShareUrl));
+      statusText.textContent = "Antwort als Markdown kopiert.";
+    } catch {
+      statusText.textContent = "Kopieren ist in diesem Browser gerade nicht möglich.";
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  function exportSharePdf(statusText) {
+    if (!shareContext) return;
+    const popup = window.open("", "_blank", "noopener,noreferrer");
+    if (!popup) {
+      statusText.textContent = "PDF-Fenster konnte nicht geöffnet werden.";
+      return;
+    }
+    popup.document.write(sharePdfHtml(shareContext, currentShareUrl));
+    popup.document.close();
+    popup.focus();
+    statusText.textContent = "PDF-Ansicht geöffnet.";
+    window.setTimeout(() => popup.print(), 250);
+  }
+
+  async function loadSharedResult(id) {
+    const value = String(id || "").trim();
+    if (!/^sr-[0-9a-f-]{36}$/i.test(value)) {
+      renderNotice("Geteiltes Ergebnis nicht gefunden", "Der Link ist unvollständig oder abgelaufen.");
+      return;
+    }
+
+    if (status) status.textContent = "Geteiltes Ergebnis wird geladen";
+    feedbackContext = null;
+    shareContext = null;
+    currentShareUrl = "";
+    replaceResult([kicker("Geteiltes Ergebnis"), heading("Wird geladen."), paragraph("Das gespeicherte Ergebnis wird geholt.")]);
+
+    try {
+      const response = await fetch(`${apiBase}/api/share-result/${encodeURIComponent(value)}`, {
+        headers: {
+          "X-WOEK-Client-ID": clientId,
+          ...communityAuthHeaders()
+        }
+      });
+      const payload = await response.json().catch(() => undefined);
+      if (!response.ok || !payload?.ok || !payload.result) {
+        throw new Error(payload?.error || "Dieses geteilte Ergebnis wurde nicht gefunden oder ist abgelaufen.");
+      }
+      renderSharedResult(payload.result);
+      if (status) status.textContent = "Geteiltes Ergebnis";
+    } catch (error) {
+      renderNotice("Geteiltes Ergebnis nicht verfügbar", error?.message || "Dieses Ergebnis kann gerade nicht geladen werden.");
+    }
+  }
+
+  function renderSharedResult(item) {
+    const sections = shareSections((Array.isArray(item?.sections) ? item.sections : []).map((entry) => [entry.title, entry.body]));
+    setShareContext({
+      target: item?.target || "factcheck",
+      title: item?.title || "WÖk-Ergebnis",
+      question: item?.question || "",
+      answer: item?.answer || "",
+      sections,
+      sources: normalizeShareSources(item?.sources),
+      route: item?.route || ""
+    });
+    currentShareUrl = shareableUrl(item?.id);
+    feedbackContext = null;
+    replaceResult([
+      kicker("Geteiltes Ergebnis"),
+      heading(item?.title || "WÖk-Ergebnis"),
+      section("Ausgangsfrage", item?.question),
+      paragraph(item?.answer || ""),
+      ...sections.map((entry) => section(entry.title, entry.body)),
+      sourceSection(item?.sources)
+    ]);
   }
 
   function feedbackSection() {
@@ -565,6 +775,118 @@
       url: item.url || "",
       excerpt: item.excerpt || item.note || item.supports || ""
     })).filter((item) => item.url);
+  }
+
+  function normalizeShareSources(items) {
+    if (!Array.isArray(items)) return [];
+    return items.slice(0, 8).map((item) => ({
+      title: String(item?.title || item?.url || "Quelle").trim(),
+      url: String(item?.url || "").trim(),
+      excerpt: String(item?.excerpt || item?.note || item?.supports || item?.publisher || "").trim()
+    })).filter((item) => item.url);
+  }
+
+  function setShareContext(context) {
+    const sections = shareSections((context.sections || []).map((entry) => [entry.title, entry.body]));
+    const normalized = {
+      target: context.target || "factcheck",
+      title: String(context.title || "WÖk-Ergebnis").trim(),
+      question: String(context.question || "").trim(),
+      answer: String(context.answer || "").trim(),
+      sections,
+      sources: normalizeShareSources(context.sources),
+      route: String(context.route || "").trim()
+    };
+    shareContext = normalized.question && (normalized.answer || normalized.sections.length) ? normalized : null;
+    currentShareUrl = "";
+  }
+
+  function shareSections(entries) {
+    return entries
+      .map(([title, body]) => ({ title: String(title || "").trim(), body: String(body || "").trim() }))
+      .filter((entry) => entry.title && entry.body)
+      .slice(0, 12);
+  }
+
+  function listText(items, map) {
+    if (!Array.isArray(items) || !items.length) return "";
+    return items.map((item, index) => `${index + 1}. ${map(item)}`).join("\n");
+  }
+
+  function buildShareMarkdown(context, url = "") {
+    const lines = [`# ${context.title || "WÖk-Ergebnis"}`];
+    if (context.question) lines.push("", `**Ausgangsfrage:** ${context.question}`);
+    if (context.answer) lines.push("", "## Antwort", context.answer);
+    context.sections.forEach((entry) => {
+      lines.push("", `## ${entry.title}`, entry.body);
+    });
+    if (context.sources.length) {
+      lines.push("", "## Quellen");
+      context.sources.forEach((source) => {
+        lines.push(`- [${source.title || source.url}](${source.url})${source.excerpt ? ` - ${source.excerpt}` : ""}`);
+      });
+    }
+    if (url) lines.push("", `Link: ${url}`);
+    return lines.join("\n");
+  }
+
+  function sharePdfHtml(context, url = "") {
+    const sourceItems = context.sources.map((source) => `<li><a href="${escapeHtml(source.url)}">${escapeHtml(source.title || source.url)}</a>${source.excerpt ? `<p>${escapeHtml(source.excerpt)}</p>` : ""}</li>`).join("");
+    const sectionItems = context.sections.map((entry) => `<section><h2>${escapeHtml(entry.title)}</h2><p>${textToHtml(entry.body)}</p></section>`).join("");
+    return `<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>${escapeHtml(context.title || "WÖk-Ergebnis")}</title>
+  <style>
+    body { color: #070b1b; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; margin: 36px; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.1; }
+    h1 { font-size: 34px; margin-bottom: 18px; }
+    h2 { border-top: 1px solid #ddd8cc; font-size: 22px; margin-top: 24px; padding-top: 16px; }
+    p, li { font-size: 14px; }
+    .question { background: #f7f3eb; border: 1px solid #ddd8cc; padding: 14px; }
+    a { color: #0f5d43; }
+    @page { margin: 18mm; }
+  </style>
+</head>
+<body>
+  <h1>${escapeHtml(context.title || "WÖk-Ergebnis")}</h1>
+  ${context.question ? `<p class="question"><strong>Ausgangsfrage:</strong><br>${textToHtml(context.question)}</p>` : ""}
+  ${context.answer ? `<section><h2>Antwort</h2><p>${textToHtml(context.answer)}</p></section>` : ""}
+  ${sectionItems}
+  ${sourceItems ? `<section><h2>Quellen</h2><ol>${sourceItems}</ol></section>` : ""}
+  ${url ? `<p><strong>Link:</strong> <a href="${escapeHtml(url)}">${escapeHtml(url)}</a></p>` : ""}
+</body>
+</html>`;
+  }
+
+  function shareableUrl(id) {
+    const value = String(id || "").trim();
+    if (!value) return "";
+    const url = new URL(window.location.href);
+    url.pathname = "/app/";
+    url.search = `?share=${encodeURIComponent(value)}`;
+    url.hash = "";
+    return url.toString();
+  }
+
+  async function copyText(text) {
+    if (!navigator.clipboard?.writeText) throw new Error("Clipboard unavailable");
+    await navigator.clipboard.writeText(text);
+  }
+
+  function textToHtml(text) {
+    return escapeHtml(text).replace(/\n/g, "<br>");
+  }
+
+  function escapeHtml(text) {
+    return String(text || "").replace(/[&<>"']/g, (char) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    })[char]);
   }
 
   function section(title, text) {

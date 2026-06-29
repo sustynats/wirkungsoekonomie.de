@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-app-shell-20260629-progress-ui";
+const CACHE_NAME = "woek-app-shell-20260629-share-tools";
 const APP_SHELL = [
   "/app/",
   "/offline.html",

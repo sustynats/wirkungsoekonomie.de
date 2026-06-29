@@ -4,8 +4,11 @@
   if (!form || !result) return;
 
   const apiUrl = window.WOEK_FACTCHECK_API_URL || "https://130.162.217.58.sslip.io/api/factcheck";
+  const apiBase = apiUrl.replace(/\/api\/factcheck\/?$/i, "");
   const unavailableMessage = "Der WÖk-Wirkungscheck ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
   const submitButton = form.querySelector('button[type="submit"]');
+  let shareContext = null;
+  let currentShareUrl = "";
   let progressTimer = null;
   let progressStartedAt = 0;
 
@@ -40,7 +43,7 @@
         throw new Error(payload?.error || unavailableMessage);
       }
 
-      renderFactcheck(payload.result);
+      renderFactcheck(payload.result, { claim }, "/api/factcheck");
     } catch (error) {
       renderMessage("Wirkungscheck gerade nicht möglich", error?.message || unavailableMessage);
     } finally {
@@ -96,6 +99,8 @@
   }
 
   function renderLoading() {
+    shareContext = null;
+    currentShareUrl = "";
     replaceResult([
       node("p", "hero-kicker", "Prüfung läuft"),
       node("h3", "", "Die Antwort wird vorbereitet."),
@@ -105,19 +110,50 @@
   }
 
   function renderMessage(title, message) {
+    shareContext = null;
+    currentShareUrl = "";
     replaceResult([node("p", "hero-kicker", "Hinweis"), node("h3", "", title), node("p", "", message)]);
   }
 
-  function renderFactcheck(item) {
+  function renderFactcheck(item, request, route) {
     if (!item) {
       renderMessage("Keine Antwort", "Der Dienst hat keine verwertbare Antwort geliefert.");
       return;
     }
 
+    const answer = item.directAnswer || item.rebuttal || item.summary || "";
+    const sections = shareSections([
+      ["Reframing", item.reframing || "Die bessere Rahmung ist: Welche konkrete Behauptung wird durch welche Quelle getragen?"],
+      ["Kurzurteil", `${verdictLabel(item.verdict)}. ${item.summary || ""}`.trim()],
+      ["Wahrheitsgehalt & Datenstand", [
+        truthText(item.truthCheck),
+        item.dataStatus ? `Datenstand: ${item.dataStatus}` : ""
+      ].filter(Boolean).join("\n")],
+      ["Sprache, Rhetorik & Frame", [
+        languageText(item.languageAnalysis),
+        rhetoricText(item.rhetoricAnalysis),
+        frameText(item.frame)
+      ].filter(Boolean).join("\n\n")],
+      ["Quellen", listText(item.sources, (source) => `${source.title || source.url || "Quelle"} - ${source.note || source.supports || source.url || ""}`)],
+      ["Prüfbare Einzelbehauptungen", listText(item.atomicClaims, (claim) => `${claim.claim || "Einzelbehauptung offen"}: ${verdictLabel(claim.verdict)} (${claim.confidence || "niedrig"}). ${claim.explanation || ""}`)],
+      ["WÖk-Einordnung", listText(item.impactNotes, (impact) => `${impact.label || "Wirkungspotenzial"}: ${impact.explanation || ""}`)],
+      ["Bessere Frage", item.betterQuestion],
+      ["Grenzen", listText(item.limits, (value) => value)]
+    ]);
+    setShareContext({
+      target: "factcheck",
+      title: "WÖk-Wirkungscheck",
+      question: request?.claim || "",
+      answer,
+      sections,
+      sources: normalizeShareSources(item.sources),
+      route
+    });
+
     replaceResult([
       node("p", "hero-kicker", statusLabel(item.status)),
       node("h3", "", "Antwort"),
-      node("p", "factcheck-result-summary", item.directAnswer || item.rebuttal || item.summary),
+      node("p", "factcheck-result-summary", answer),
       block("Reframing", item.reframing || "Die bessere Rahmung ist: Welche konkrete Behauptung wird durch welche Quelle getragen?"),
       block("Kurzurteil", `${verdictLabel(item.verdict)}. ${item.summary || ""}`.trim()),
       detailBlock("Wahrheitsgehalt & Datenstand", [
@@ -298,8 +334,239 @@
     return p;
   }
 
+  function resultActionsSection() {
+    const wrapper = node("section", "woek-result-actions");
+    if (!shareContext) {
+      wrapper.hidden = true;
+      return wrapper;
+    }
+
+    const actions = node("div", "woek-result-actions__buttons");
+    const statusText = node("small", "woek-result-actions__status", "");
+    const link = node("button", "", "Link erstellen");
+    const copy = node("button", "", "Antwort kopieren");
+    const pdf = node("button", "", "PDF exportieren");
+
+    [link, copy, pdf].forEach((button) => {
+      button.type = "button";
+    });
+    link.addEventListener("click", () => createShareLink(statusText, link));
+    copy.addEventListener("click", () => copyShareMarkdown(statusText, copy));
+    pdf.addEventListener("click", () => exportSharePdf(statusText));
+
+    actions.append(link, copy, pdf);
+    wrapper.append(node("p", "hero-kicker", "Teilen"), actions, statusText);
+    return wrapper;
+  }
+
+  async function createShareLink(statusText, button) {
+    if (!shareContext) return;
+    button.disabled = true;
+    statusText.textContent = currentShareUrl ? "Link wird kopiert..." : "Link wird erstellt...";
+
+    try {
+      if (!currentShareUrl) {
+        const response = await fetch(`${apiBase}/api/share-result`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", ...communityAuthHeaders() },
+          body: JSON.stringify(shareContext)
+        });
+        const payload = await response.json().catch(() => undefined);
+        if (!response.ok || !payload?.ok) {
+          throw new Error(payload?.error || "Der Link konnte gerade nicht erstellt werden.");
+        }
+        currentShareUrl = payload.url || shareableUrl(payload.id);
+      }
+      await copyText(currentShareUrl);
+      statusText.textContent = "Link erstellt und kopiert.";
+    } catch (error) {
+      statusText.textContent = error?.message || "Der Link konnte gerade nicht erstellt werden.";
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  async function copyShareMarkdown(statusText, button) {
+    if (!shareContext) return;
+    button.disabled = true;
+    statusText.textContent = "Antwort wird kopiert...";
+    try {
+      await copyText(buildShareMarkdown(shareContext, currentShareUrl));
+      statusText.textContent = "Antwort als Markdown kopiert.";
+    } catch {
+      statusText.textContent = "Kopieren ist in diesem Browser gerade nicht möglich.";
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  function exportSharePdf(statusText) {
+    if (!shareContext) return;
+    const popup = window.open("", "_blank", "noopener,noreferrer");
+    if (!popup) {
+      statusText.textContent = "PDF-Fenster konnte nicht geöffnet werden.";
+      return;
+    }
+    popup.document.write(sharePdfHtml(shareContext, currentShareUrl));
+    popup.document.close();
+    popup.focus();
+    statusText.textContent = "PDF-Ansicht geöffnet.";
+    window.setTimeout(() => popup.print(), 250);
+  }
+
+  function setShareContext(context) {
+    const sections = shareSections((context.sections || []).map((entry) => [entry.title, entry.body]));
+    const normalized = {
+      target: context.target || "factcheck",
+      title: String(context.title || "WÖk-Wirkungscheck").trim(),
+      question: String(context.question || "").trim(),
+      answer: String(context.answer || "").trim(),
+      sections,
+      sources: normalizeShareSources(context.sources),
+      route: String(context.route || "").trim()
+    };
+    shareContext = normalized.question && (normalized.answer || normalized.sections.length) ? normalized : null;
+    currentShareUrl = "";
+  }
+
+  function normalizeShareSources(items) {
+    if (!Array.isArray(items)) return [];
+    return items.slice(0, 8).map((item) => ({
+      title: String(item?.title || item?.url || "Quelle").trim(),
+      url: String(item?.url || "").trim(),
+      excerpt: String(item?.excerpt || item?.note || item?.supports || item?.publisher || "").trim()
+    })).filter((item) => item.url);
+  }
+
+  function shareSections(entries) {
+    return entries
+      .map(([title, body]) => ({ title: String(title || "").trim(), body: String(body || "").trim() }))
+      .filter((entry) => entry.title && entry.body)
+      .slice(0, 12);
+  }
+
+  function listText(items, render) {
+    if (!Array.isArray(items) || !items.length) return "";
+    return items.map((item, index) => `${index + 1}. ${render(item)}`).join("\n");
+  }
+
+  function truthText(truthCheck) {
+    if (!truthCheck) return "";
+    return `Wahrheitsgehalt: ${verdictLabel(truthCheck.verdict)} (${truthCheck.confidence || "niedrig"}). ${truthCheck.explanation || "Die Beleglage ist offen."}`;
+  }
+
+  function languageText(language) {
+    if (!language) return "";
+    return [
+      `Sprache: ${language.wording || "offen"}`,
+      `Narrativ: ${language.narrative || "offen"}`,
+      `Sprachbild: ${language.metaphor || "offen"}`,
+      `Entmenschlichungsrisiko: ${language.dehumanizationRisk || "offen"}`,
+      `Nahegelegte Handlung: ${language.impliedAction || "offen"}`,
+      `Wirkungspotenzial: ${language.impactPotential || "offen"}`,
+      `Bessere Sprache: ${language.counterLanguage || "offen"}`
+    ].join("\n");
+  }
+
+  function rhetoricText(rhetoric) {
+    if (!rhetoric) return "";
+    const moves = Array.isArray(rhetoric.moves) && rhetoric.moves.length
+      ? rhetoric.moves.map((move, index) => `${index + 1}. ${move.label || "Muster offen"}: ${move.mechanism || "Mechanismus offen"} Wirkungspotenzial: ${move.effectPotential || "offen"} Antwort: ${move.response || "offen"}`).join("\n")
+      : "";
+    return [
+      rhetoric.summary || "Rhetorische und psychologische Muster im Originalkontext prüfen.",
+      moves,
+      rhetoric.responseStrategy ? `Antwortstrategie: ${rhetoric.responseStrategy}` : "",
+      rhetoric.caution ? `Grenze: ${rhetoric.caution}` : ""
+    ].filter(Boolean).join("\n");
+  }
+
+  function frameText(frame) {
+    if (!frame) return "";
+    return [
+      `${frame.label || "Frame"}: ${frame.explanation || "Einordnung offen"}`,
+      frame.whyItWorks ? `Warum er wirkt: ${frame.whyItWorks}` : "",
+      frame.impact ? `Wirkungspotenzial: ${frame.impact}` : "",
+      frame.likelyFunction ? `Mögliche Funktion: ${frame.likelyFunction}` : "",
+      frame.responseStrategy ? `Antwortstrategie: ${frame.responseStrategy}` : "",
+      frame.caution ? `Grenze: ${frame.caution}` : ""
+    ].filter(Boolean).join("\n");
+  }
+
+  function buildShareMarkdown(context, url = "") {
+    const lines = [`# ${context.title || "WÖk-Ergebnis"}`];
+    if (context.question) lines.push("", `**Ausgangsfrage:** ${context.question}`);
+    if (context.answer) lines.push("", "## Antwort", context.answer);
+    context.sections.forEach((entry) => {
+      lines.push("", `## ${entry.title}`, entry.body);
+    });
+    if (context.sources.length) {
+      lines.push("", "## Quellen");
+      context.sources.forEach((source) => {
+        lines.push(`- [${source.title || source.url}](${source.url})${source.excerpt ? ` - ${source.excerpt}` : ""}`);
+      });
+    }
+    if (url) lines.push("", `Link: ${url}`);
+    return lines.join("\n");
+  }
+
+  function sharePdfHtml(context, url = "") {
+    const sourceItems = context.sources.map((source) => `<li><a href="${escapeHtml(source.url)}">${escapeHtml(source.title || source.url)}</a>${source.excerpt ? `<p>${escapeHtml(source.excerpt)}</p>` : ""}</li>`).join("");
+    const sectionItems = context.sections.map((entry) => `<section><h2>${escapeHtml(entry.title)}</h2><p>${textToHtml(entry.body)}</p></section>`).join("");
+    return `<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>${escapeHtml(context.title || "WÖk-Ergebnis")}</title>
+  <style>
+    body { color: #070b1b; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; margin: 36px; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.1; }
+    h1 { font-size: 34px; margin-bottom: 18px; }
+    h2 { border-top: 1px solid #ddd8cc; font-size: 22px; margin-top: 24px; padding-top: 16px; }
+    p, li { font-size: 14px; }
+    .question { background: #f7f3eb; border: 1px solid #ddd8cc; padding: 14px; }
+    a { color: #0f5d43; }
+    @page { margin: 18mm; }
+  </style>
+</head>
+<body>
+  <h1>${escapeHtml(context.title || "WÖk-Ergebnis")}</h1>
+  ${context.question ? `<p class="question"><strong>Ausgangsfrage:</strong><br>${textToHtml(context.question)}</p>` : ""}
+  ${context.answer ? `<section><h2>Antwort</h2><p>${textToHtml(context.answer)}</p></section>` : ""}
+  ${sectionItems}
+  ${sourceItems ? `<section><h2>Quellen</h2><ol>${sourceItems}</ol></section>` : ""}
+  ${url ? `<p><strong>Link:</strong> <a href="${escapeHtml(url)}">${escapeHtml(url)}</a></p>` : ""}
+</body>
+</html>`;
+  }
+
+  function shareableUrl(id) {
+    const value = String(id || "").trim();
+    if (!value) return "";
+    return `${window.location.origin}/app/?share=${encodeURIComponent(value)}`;
+  }
+
+  async function copyText(text) {
+    if (!navigator.clipboard?.writeText) throw new Error("Clipboard unavailable");
+    await navigator.clipboard.writeText(text);
+  }
+
+  function textToHtml(text) {
+    return escapeHtml(text).replace(/\n/g, "<br>");
+  }
+
+  function escapeHtml(text) {
+    return String(text || "").replace(/[&<>"']/g, (char) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    })[char]);
+  }
+
   function replaceResult(children) {
-    result.replaceChildren(...children.filter(Boolean));
+    result.replaceChildren(...children.filter(Boolean), resultActionsSection());
   }
 
   function node(tagName, className, text) {
