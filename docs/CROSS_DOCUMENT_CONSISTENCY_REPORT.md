@@ -1,6 +1,6 @@
 # Cross-Document-Consistency-Report
 
-Stand: 2026-06-28
+Stand: 2026-06-29
 
 Prüft, ob prioritäre Dokumente als Webfassung mit Originaldatei-Link vorhanden sind.
 

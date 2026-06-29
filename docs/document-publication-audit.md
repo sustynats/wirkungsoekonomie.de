@@ -4,11 +4,11 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Ergebnis
 
-- Kuratierte Metadatenkarten: 39
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 34
+- Kuratierte Metadatenkarten: 40
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 35
 - Archivdokumente nur im Archiv: 2
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 3
-- Red-Flag-Treffer: 34
+- Red-Flag-Treffer: 35
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -45,6 +45,7 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Folgencheck statt Faktencheck | assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Die fünf Wellen öffentlicher Wirkung | assets/downloads/woek_dossier_fuenf_wellen_oeffentlicher_wirkung_v0_1.pdf | Arbeitsfassung | ller Website-Architektur für den öffentlichen Wirkungsraum. arbeitsfassung v0.1 2026-06-08 Arbeitsfassung; Wirkungspotenziale öffentlicher Kommunikation werden modellhaft und vorsorgend geprüft. Keine | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Die fünf Wellen der Wirkungsentfaltung | assets/downloads/woek_dossier_fuenf_wellen_wirkungsentfaltung_v0_1.pdf | Arbeitsfassung | rtragungen auf Wirkungsräume und methodischen Schutzlinien. arbeitsfassung v0.1 2026-06-08 Arbeitsfassung; allgemeines Grundmuster der Wirkungsökonomie zur fachlichen Weiterentwicklung. Keine amtliche | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Klimawandel und der Finanzmarkt | assets/downloads/woek_dossier_klimawandel_finanzmarkt_v1_0.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Die neue Ordnung des Wohlstands 2 | content/internal-documents/originals/Die neue Ordnung des Wohlstands_2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Die neue Ordnung des Wohlstands 2 | content/internal-documents/originals/Die neue Ordnung des Wohlstands_2.pdf | fehlender Status | Kein Statushinweis im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Whitepaper20 | content/internal-documents/originals/Whitepaper20.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |

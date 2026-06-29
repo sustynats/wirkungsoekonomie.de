@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T21:33:46.265Z",
+  "generatedAt": "2026-06-29T15:59:42.325Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,10 +205,10 @@
     }
   ],
   "counts": {
-    "total": 1507,
+    "total": 1508,
     "byStatus": {
       "führend": 7,
-      "aktuell": 965,
+      "aktuell": 966,
       "Arbeitsfassung": 278,
       "ältere Fassung": 257
     },
@@ -216,7 +216,7 @@
       "Grundlagenwerk": 63,
       "Glossar": 43,
       "Methodik": 110,
-      "Arbeitspapier": 1216,
+      "Arbeitspapier": 1217,
       "Beispiel": 15,
       "Gesetzesentwurf": 37,
       "Leitbild": 7,
@@ -226,10 +226,10 @@
     },
     "bySource": {
       "leading-reference": 8,
-      "download-or-document": 735,
+      "download-or-document": 736,
       "online-version": 764
     },
-    "downloadFiles": 735,
+    "downloadFiles": 736,
     "onlineVersions": 764
   },
   "documents": [
@@ -21940,6 +21940,32 @@
       "urls": {
         "primary": "assets/pdf/woek_bildung_wirkungsschule_wirkungspaedagogik_wirkungskompetenz_ausarbeitung_v1_0.pdf",
         "sourcePath": "assets/pdf/woek_bildung_wirkungsschule_wirkungspaedagogik_wirkungskompetenz_ausarbeitung_v1_0.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-dossier-klimawandel-finanzmarkt-v1-0-pdf",
+      "title": "WÖk dossier klimawandel finanzmarkt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung, Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Kapital & Finanzierung",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_dossier_klimawandel_finanzmarkt_v1_0.pdf",
+        "sourcePath": "assets/downloads/woek_dossier_klimawandel_finanzmarkt_v1_0.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
