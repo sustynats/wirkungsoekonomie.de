@@ -13,7 +13,17 @@ SITE_ROOT = Path(__file__).resolve().parents[1]
 NAVIGATION = json.loads((SITE_ROOT / "assets/data/navigation.json").read_text(encoding="utf-8"))
 HEADER_TEMPLATE = (SITE_ROOT / "templates/header.html").read_text(encoding="utf-8")
 FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-8")
-SYNC_EXCLUDED_DIRS = {".git", ".codex-backup", "_site", "node_modules", ".next", ".vercel", "__pycache__"}
+SYNC_EXCLUDED_DIRS = {
+    ".git",
+    ".cache",
+    ".codex-backup",
+    "_site",
+    "node_modules",
+    "outputs",
+    ".next",
+    ".vercel",
+    "__pycache__",
+}
 HEADER_UTILITY_LABELS = {"Suche", "WÖk-KI", "Mein Wirkungsraum"}
 
 
@@ -169,8 +179,24 @@ def sync(path: Path) -> bool:
     return True
 
 
+def iter_source_html() -> list[Path]:
+    files: list[Path] = []
+    stack = [SITE_ROOT]
+    while stack:
+        directory = stack.pop()
+        for path in directory.iterdir():
+            if path.is_symlink():
+                continue
+            if path.is_dir():
+                if path.name not in SYNC_EXCLUDED_DIRS:
+                    stack.append(path)
+            elif path.suffix == ".html":
+                files.append(path)
+    return sorted(files)
+
+
 def main() -> None:
-    changed = [path for path in sorted(SITE_ROOT.rglob("*.html")) if sync(path)]
+    changed = [path for path in iter_source_html() if sync(path)]
     for path in changed:
         print(path.relative_to(SITE_ROOT))
     print(f"Updated {len(changed)} files.")

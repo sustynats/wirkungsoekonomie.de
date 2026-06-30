@@ -76,7 +76,7 @@ function relFromAbs(file) {
 }
 
 function listHtmlFiles(dir) {
-  const skip = new Set([".git", "node_modules", ".next", "dist", "outputs", ".cache"]);
+  const skip = new Set([".git", "node_modules", ".next", "dist", "_site", "outputs", ".cache"]);
   const files = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (entry.name.startsWith(".") && entry.name !== ".github") continue;

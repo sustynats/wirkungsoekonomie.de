@@ -1,6 +1,6 @@
 # Live-Reference-Quellenhierarchie
 
-Stand: 2026-06-29
+Stand: 2026-06-30
 
 ## Ebene 1: Original / Source
 

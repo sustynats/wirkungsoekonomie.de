@@ -1,7 +1,7 @@
 # Live-Reference-Changelog
 
 Version: 2026.2-live-reference
-Stand: 2026-06-29
+Stand: 2026-06-30
 
 Dieses Changelog dokumentiert Aktualisierungen gegenüber der Source-Original-Fassung. Die Originaldateien bleiben unverändert zitierfähig.
 

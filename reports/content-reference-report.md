@@ -1,6 +1,6 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-06-29T15:59:22.626Z
+Erzeugt: 2026-06-30T15:34:10.301Z
 Resolved references: 820
 Warnings: 2809
 
@@ -830,7 +830,7 @@ Warnings: 2809
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/nachhaltigkeit-systemarchitektur/#synergetische-kopplung-antagonistische-kopplung-keine-signifikante-kopplung -> Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.: – : synergetische Kopplung– : antagonistische Kopplung– : keine signifikante Kopplung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/nachhaltigkeit-systemarchitektur/#1-der-zustandsvektor -> Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.: 1. Der Zustandsvektor (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)

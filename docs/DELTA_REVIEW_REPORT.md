@@ -1,6 +1,6 @@
 # Delta-Review-Report
 
-Stand: 2026-06-29
+Stand: 2026-06-30
 
 Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schicht.
 

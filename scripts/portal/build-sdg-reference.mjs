@@ -1307,10 +1307,26 @@ function dataFiles() {
   fs.writeFileSync(path.join(ROOT, "assets/js/sdg-data.js"), `window.WOEK_SDG_REFERENCES = ${JSON.stringify(serializable, null, 2)};\n`, "utf8");
 }
 
+const HTML_SCAN_SKIP_DIRS = new Set([".git", ".cache", "_site", "node_modules", "outputs", "woek-akademie-app"]);
+
+function sourceHtmlFiles(dir = ROOT, prefix = "") {
+  const files = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.isSymbolicLink()) continue;
+    const rel = prefix ? `${prefix}/${entry.name}` : entry.name;
+    const absolute = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      if (HTML_SCAN_SKIP_DIRS.has(entry.name)) continue;
+      files.push(...sourceHtmlFiles(absolute, rel));
+    } else if (entry.isFile() && entry.name.endsWith(".html")) {
+      files.push(rel);
+    }
+  }
+  return files;
+}
+
 function enhanceExistingBadges() {
-  const htmlFiles = [...fs.readdirSync(ROOT, { recursive: true })]
-    .filter((name) => typeof name === "string" && name.endsWith(".html"))
-    .filter((name) => !name.startsWith("node_modules/") && !name.startsWith("woek-akademie-app/"));
+  const htmlFiles = sourceHtmlFiles();
   for (const rel of htmlFiles) {
     const file = path.join(ROOT, rel);
     let html = fs.readFileSync(file, "utf8");
