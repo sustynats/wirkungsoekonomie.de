@@ -207,6 +207,7 @@ function entryFromTerm(term) {
     term.label,
     ...(term.aliases || []),
     ...(term.synonyms || []),
+    ...(term.searchKeywords || []),
     ...(term.relatedTerms || []),
   ]).slice(0, 48);
   const body = [
@@ -216,6 +217,7 @@ function entryFromTerm(term) {
     term.longDefinition,
     term.usageNote,
     ...(term.synonyms || []),
+    ...(term.searchKeywords || []),
     ...(term.relatedTerms || []),
   ].join(" ");
   return {
@@ -229,7 +231,7 @@ function entryFromTerm(term) {
     impactSpaces: ["Mensch", "Planet", "Demokratie"],
     standards: term.relatedTerms?.filter((item) => /sdg|csrd|esrs|taxonomie|gri|nace/i.test(item)) || [],
     instruments: term.relatedTerms || [],
-    tags: [term.status, term.version, term.reviewStatus, ...(term.synonyms || [])].filter(Boolean),
+    tags: [term.status, term.version, term.reviewStatus, ...(term.synonyms || []), ...(term.searchKeywords || [])].filter(Boolean),
     aliases: [...(term.synonyms || []), term.hoverDefinition],
     body,
     semanticTerms,

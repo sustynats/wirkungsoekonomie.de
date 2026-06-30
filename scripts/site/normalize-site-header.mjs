@@ -82,6 +82,7 @@ function headerFiles() {
   return output
     .split("\n")
     .map((file) => path.join(ROOT, file))
+    .filter((file) => !path.relative(ROOT, file).replace(/\\/g, "/").startsWith("templates/"))
     .filter((file) => fs.existsSync(file))
     .filter((file) => {
       const html = fs.readFileSync(file, "utf8");

@@ -1,17 +1,25 @@
 # Public Language Audit
 
-Stand: 2026-06-30T18:02:10.717Z
+Stand: 2026-06-30T18:59:06.850Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 4412
-- Sichtbare Blocklist-Treffer: 52
+- Geprüfte HTML-Dateien: 4415
+- Sichtbare Blocklist-Treffer: 60
 - Technische canonical-Tags: 2366
 
 ## Befunde
 
 | Datei | Begriff | Kontext | Empfehlung |
 | --- | --- | --- | --- |
+| `begriffe/index.html` | v0.1 | politik / WÖk-Prägungsbegriff / Resilienz- und Makrobegriff · Version Glossar-Erweiterung v0.1 Reform Eine Reform ist eine gezielte Veränderung von Regeln, Institutionen oder Praktiken | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/index.html` | v0.1 | anzpolitik / WÖk-Prägungsbegriff / Risiko- und Makrobegriff · Version Glossar-Erweiterung v0.1 Sozial-, Arbeits- und Menschenrechtsstandards Sozial-, Arbeits- und Menschenrechtsstandar | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/index.html` | v0.1 | politik / WÖk-Prägungsbegriff / Risiko- und Zustandsbegriff · Version Glossar-Erweiterung v0.1 Strandinggefährdeter Kredit Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückza | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/index.html` | v0.1 | litik / WÖk-Prägungsbegriff / Staats- und Governancebegriff · Version Glossar-Erweiterung v0.1 Wirkungskapital Wirkungskapital ist Kapital, das gezielt zur Erzeugung positiver Netto-Wi | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/refinanzierungsresilienz/index.html` | v0.1 | k / WÖk-Prägungsbegriff / Resilienz- und Makrobegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Refinanzierungsresilienz beschreibt, ob | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/souveraenes-stranding-risiko/index.html` | v0.1 | itik / WÖk-Prägungsbegriff / Risiko- und Makrobegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Souveränes Stranding-Risiko beschreibt  | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/stranded-sovereign/index.html` | v0.1 | k / WÖk-Prägungsbegriff / Risiko- und Zustandsbegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Ein Stranded Sovereign ist ein Staat, d | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/wirkungskapazitaet-des-staates/index.html` | v0.1 | / WÖk-Prägungsbegriff / Staats- und Governancebegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Wirkungskapazität bezeichnet die Fähigk | entfernen oder nutzerverständlich ersetzen |
 | `wirkungsradar/embed/index.html` | sichtbarer Markup-Rest | bed/card/migration-kostet-nur/" title="Debattenkarte: Migration kostet nur?" loading="lazy"></iframe> Deutschland nur 2 Prozent? 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirk | HTML/Markdown-Sanitizer prüfen; sichtbare Markup-Reste entfernen |
 | `wirkungsradar/embed/index.html` | sichtbarer Markup-Rest | d/card/migration-kostet-nur/" title="Debattenkarte: Migration kostet nur?" loading="lazy"></iframe> Deutschland nur 2 Prozent? 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirkung läuft | HTML/Markdown-Sanitizer prüfen; sichtbare Markup-Reste entfernen |
 | `wirkungsradar/embed/index.html` | sichtbarer Markup-Rest | schland-nur-zwei-prozent/" title="Debattenkarte: Deutschland nur 2 Prozent?" loading="lazy"></iframe> Windräder zerstören Natur? Gute Windkraft beginnt mit Planung: passende Standort | HTML/Markdown-Sanitizer prüfen; sichtbare Markup-Reste entfernen |
