@@ -3091,6 +3091,152 @@ textarea {
   margin-top: 0.25rem;
 }
 
+.certificate-hero {
+  background:
+    linear-gradient(135deg, rgba(255, 252, 245, 0.96), rgba(239, 248, 243, 0.82)),
+    var(--paper);
+}
+
+.certificate-status-panel {
+  border-top: 4px solid var(--green);
+}
+
+.certificate-status-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid rgba(47, 125, 92, 0.28);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  background: rgba(47, 125, 92, 0.1);
+  color: var(--green-dark);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.certificate-id-check {
+  max-width: 760px;
+}
+
+.certificate-id-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.certificate-id-form label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.certificate-id-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.certificate-id-row input {
+  width: 100%;
+  min-height: 2.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.75rem 0.9rem;
+  background: var(--white);
+  color: var(--navy);
+  font: inherit;
+  font-weight: 760;
+}
+
+.certificate-meta-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+}
+
+.certificate-meta-list div {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.certificate-meta-list dt {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.certificate-meta-list dd {
+  margin: 0;
+  color: var(--text);
+  font-weight: 760;
+}
+
+.certificate-meta-list code,
+.certificate-proof-strip code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+.certificate-verification-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 1rem;
+}
+
+.certificate-scope-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.certificate-scope-list li {
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.certificate-proof-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.certificate-proof-strip div {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.certificate-proof-strip span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.certificate-proof-strip strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--navy);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 840px) {
+  .certificate-verification-grid,
+  .certificate-proof-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-id-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 .academy-learning-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
