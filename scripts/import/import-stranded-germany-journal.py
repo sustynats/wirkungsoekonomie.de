@@ -170,6 +170,14 @@ def clean_body_text(text: str) -> str:
             "Wer Klimapolitik als bloße Ideologie behandelt, übersieht, dass Klimarisiken inzwischen finanzielle Risiken sind.",
             "Wer Klimapolitik nur als Ideologiethema behandelt, übersieht, dass Klimarisiken inzwischen finanzielle Risiken sind.",
         ),
+        (
+            "Deutschland könnte keine Anleihen mehr verkaufen.",
+            "Deutschland könnte seinen sicheren-Hafen-Status und damit einen Teil seiner Refinanzierungsresilienz verlieren.",
+        ),
+        (
+            "Aus einem sicheren Hafen würde nicht sofort ein toxisches Papier. Aber aus Selbstverständlichkeit würde Risiko. Aus Benchmark würde politische Wette. Aus Refinanzierungsresilienz würde Refinanzierungsfragilität.",
+            "Der fachlich präzisere Punkt ist: Deutschland könnte seinen sicheren-Hafen-Status und damit einen Teil seiner Refinanzierungsresilienz verlieren. Aus Selbstverständlichkeit würde Risiko. Aus Benchmark würde politische Wette. Aus Refinanzierungsresilienz würde Refinanzierungsfragilität.",
+        ),
         ("Klimaverweigerung als Bonitätsrisiko", "Klimapolitischer Rückbau als Bonitätsrisiko"),
         ("muss sauber bleiben:", "muss sauber bleiben:"),
     ]
