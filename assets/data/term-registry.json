@@ -35096,6 +35096,154 @@
       "glossaryOrderKey": "Capture Price / Marktwert von Strom"
     },
     {
+      "id": "capex",
+      "termId": "capex",
+      "label": "CAPEX",
+      "canonicalLabel": "CAPEX",
+      "slug": "capex",
+      "aliases": [
+        "CAPEX",
+        "CapEx",
+        "Capital Expenditure",
+        "Capital Expenditures",
+        "Investitionsausgaben",
+        "Kapitalausgaben",
+        "Investitionskosten"
+      ],
+      "synonyms": [
+        "CAPEX",
+        "CapEx",
+        "Capital Expenditure",
+        "Capital Expenditures",
+        "Investitionsausgaben",
+        "Kapitalausgaben",
+        "Investitionskosten"
+      ],
+      "shortDefinition": "CAPEX bezeichnet Investitionsausgaben, die Vermögenswerte schaffen, erweitern oder wesentlich verbessern und über mehrere Perioden wirken.",
+      "definition": "CAPEX steht für Capital Expenditure. Gemeint sind Ausgaben für Anlagen, Infrastruktur, Software, Gebäude, Maschinen, Produktentwicklung oder andere Vermögenswerte, die nicht nur laufenden Betrieb finanzieren, sondern künftige Nutzung, Kapazität oder Wirkung ermöglichen.",
+      "longDefinition": "CAPEX bezeichnet Investitionsausgaben, die Vermögenswerte schaffen, erweitern oder wesentlich verbessern und deren Nutzen über mehrere Perioden erwartet wird. In Unternehmenssteuerung, Energieprojekten und Wirkungsfinanzierung ist CAPEX relevant, weil Investitionen Pfade festlegen: Sie binden Kapital, prägen künftige Betriebskosten, Emissionen, Risiken, Versicherbarkeit, Resilienz und Wirkungskapazität. CAPEX ist deshalb nicht nur eine Kostenkategorie, sondern ein Hebel für Zukunftsfähigkeit.",
+      "woekRelation": "Wirkungsökonomisch entscheidet CAPEX darüber, welche Zukunftspfade kapitalisiert werden. Eine Investition kann finanziell sinnvoll erscheinen und dennoch negative Netto-Wirkung erzeugen, wenn sie fossile Abhängigkeiten, soziale Schäden, hohe Systemkosten oder Stranding-Risiken festschreibt. Umgekehrt kann hoher CAPEX positive Netto-Wirkung ermöglichen, wenn er spätere OPEX, Reparaturschulden, Emissionen, Gesundheitslasten oder Wirkungsrisiken senkt.",
+      "usageNote": "CAPEX verwenden, wenn es um Investitionsentscheidungen, Asset-Aufbau, Transformationspfade, Anlagen, Infrastruktur, Produktentwicklung oder Kapitalbindung geht. Immer Bilanzgrenze, Lebensdauer, Finanzierung, OPEX-Folgen, Rückbau, Systemkosten und Wirkungspfad mitprüfen.",
+      "statusNote": "Glossarergänzung zur Finanz-, Kosten- und Wirkungssteuerung. Keine Rechnungslegungs-, Steuer-, Anlage- oder Rechtsberatung.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "categories": [
+        "finanzsystem-kapital",
+        "wirtschaft-unternehmen",
+        "impact-controlling",
+        "sustainable-finance"
+      ],
+      "theme": [
+        "Finanzsystem & Kapital",
+        "Wirtschaft & Unternehmen",
+        "Impact Controlling",
+        "Sustainable Finance",
+        "Kapital, Markt und Macht"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungssteuerung",
+        "Wirkungsrückkopplung",
+        "Wirkungsrisiko"
+      ],
+      "applicationFields": [
+        "Unternehmen",
+        "Kapitalmärkte",
+        "Energie",
+        "Infrastruktur",
+        "Produktentwicklung",
+        "Staat und Verwaltung"
+      ],
+      "sourceField": [
+        "Rechnungslegung",
+        "Controlling",
+        "Sustainable Finance",
+        "Wirkungsökonomie"
+      ],
+      "conceptStatus": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "status": "anschlussbegriff",
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "version": "2026-07-01",
+      "lastReviewed": "2026-07-01",
+      "lastUpdated": "2026-07-01",
+      "updatedAt": "2026-07-01",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "autoLinkAliases": [
+        "CAPEX",
+        "CapEx"
+      ],
+      "firstOccurrenceOnly": true,
+      "exactMatchOnly": true,
+      "maxAutoLinksPerPage": 1,
+      "relatedTerms": [
+        "opex",
+        "gestehungskosten",
+        "impact-of-investment",
+        "wirkungscontrolling",
+        "kapitalrendite",
+        "kapitalwirkung",
+        "t-sroi",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "IFRS Foundation: IAS 16 Property, Plant and Equipment|https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/",
+        "IFRS Foundation: IAS 38 Intangible Assets|https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/",
+        "EFRAG: Sustainability reporting and ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "doNotConfuseWith": [
+        "OPEX: laufende operative Aufwendungen für Betrieb, Wartung, Personal, Energie, Miete oder Services.",
+        "Gestehungskosten: durchschnittliche Kosten je Einheit innerhalb einer definierten Bilanzgrenze.",
+        "ROI: finanzielle Rendite; sagt noch nichts über positive Netto-Wirkung.",
+        "Ausgabe im Haushalt: nicht jede Auszahlung ist CAPEX im betriebswirtschaftlichen oder bilanziellen Sinn."
+      ],
+      "deprecatedUsage": [
+        "CAPEX allein als Fortschritt oder Nachhaltigkeitsbeweis verwenden.",
+        "Investitionshöhe mit Wirkung gleichsetzen.",
+        "OPEX-Folgen, Rückbau, Finanzierungskosten, Systemkosten oder Stranding-Risiken ausblenden."
+      ],
+      "examples": [
+        "Eine Wärmepumpe, ein Windpark, eine Batteriespeicheranlage oder eine Produktionsumstellung erzeugen CAPEX und verändern spätere OPEX, Risiken und Wirkungspfade.",
+        "Ein fossiler Anlagenneubau kann kurzfristig produktiv wirken, aber langfristig Stranded-Asset-Risiken und negative Netto-Wirkung aufbauen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Berechnungs- und Datenbezug",
+          "items": [
+            "Investitionssumme und Aktivierungslogik",
+            "Nutzungsdauer, Abschreibung und Restwert",
+            "Finanzierungskosten und Kapitalkosten",
+            "Folge-OPEX, Wartung und Energiebedarf",
+            "Rückbau, Entsorgung, Kreislauffähigkeit und Systemkosten",
+            "Wirkungsdaten zu Emissionen, Ressourcen, Arbeit, Gesundheit, Resilienz und Demokratiebezug"
+          ]
+        },
+        {
+          "title": "Wirkungsfrage",
+          "body": "Die entscheidende Frage lautet nicht nur, ob eine Investition aktiviert werden kann oder sich amortisiert. Entscheidend ist, welche Zustandsveränderung sie über ihre Lebensdauer auslöst und ob sie positive Netto-Wirkung, Resilienz und Transformationsfähigkeit stärkt."
+        }
+      ],
+      "mythos": "Mehr CAPEX bedeutet automatisch mehr Zukunftsfähigkeit.",
+      "woekKlaerung": "CAPEX ist ein Hebel, aber keine Wirkungsgarantie. Zukunftsfähig wird eine Investition erst durch geprüfte Wirkung, Datenqualität, Nichtkompensation und Rückkopplung in Steuerung.",
+      "blindSpot": "CAPEX-Entscheidungen wirken oft lange nach. Wer nur Anschaffungskosten betrachtet, übersieht spätere OPEX, Systemkosten, Versicherbarkeit, Stranding-Risiken und Wirkungsschäden.",
+      "source": "Glossarergänzung Finanzsystem, Kapital & Impact Controlling",
+      "sourceDocument": "WÖk-Glossar Finanz-, Kosten- und Wirkungssteuerung",
+      "sourceSection": "CAPEX, OPEX und Gestehungskosten",
+      "hoverDefinition": "CAPEX sind Investitionsausgaben für Vermögenswerte, Infrastruktur oder Transformation, deren Wirkung über mehrere Perioden reicht.",
+      "pageUrl": "/begriffe/capex/",
+      "metaTitle": "CAPEX | Glossar der Wirkungsökonomie",
+      "metaDescription": "CAPEX bezeichnet Investitionsausgaben, die Vermögenswerte schaffen oder verbessern. Wirkungsökonomisch wichtig für Kapitalbindung, OPEX-Folgen, Transformationspfade und positive Netto-Wirkung.",
+      "glossaryOrderKey": "CAPEX"
+    },
+    {
       "id": "carbon-budget",
       "termId": "carbon-budget",
       "label": "Carbon Budget",
@@ -105794,6 +105942,154 @@
       "relatedTerms": [],
       "doNotConfuseWith": [],
       "officialSources": []
+    },
+    {
+      "id": "gestehungskosten",
+      "termId": "gestehungskosten",
+      "label": "Gestehungskosten",
+      "canonicalLabel": "Gestehungskosten",
+      "slug": "gestehungskosten",
+      "aliases": [
+        "Gestehungskosten",
+        "Levelized Cost",
+        "durchschnittliche Gestehungskosten",
+        "Erzeugungskosten je Einheit",
+        "Herstellungskosten je Einheit"
+      ],
+      "synonyms": [
+        "Gestehungskosten",
+        "Levelized Cost",
+        "durchschnittliche Gestehungskosten",
+        "Erzeugungskosten je Einheit",
+        "Herstellungskosten je Einheit"
+      ],
+      "shortDefinition": "Gestehungskosten beschreiben die durchschnittlichen Kosten zur Herstellung oder Erzeugung einer Einheit innerhalb einer definierten Bilanzgrenze.",
+      "definition": "Gestehungskosten geben an, welche durchschnittlichen Kosten entstehen, um eine Einheit eines Produkts, einer Leistung oder einer Energieform bereitzustellen. Die Aussage ist nur belastbar, wenn Bezugsgröße, Zeitraum, Bilanzgrenze, Kapitalkosten, OPEX, Restwert, Auslastung und Datenqualität klar sind.",
+      "longDefinition": "Gestehungskosten sind eine Kostenkennzahl für die durchschnittliche Herstellung, Erzeugung oder Bereitstellung einer Einheit. In der Energiewirtschaft werden sie häufig als Stromgestehungskosten oder LCOE berechnet. In anderen Kontexten können sie Produkt-, Anlagen-, Dienstleistungs- oder Infrastrukturkosten je Einheit beschreiben. Wirkungsökonomisch sind Gestehungskosten nützlich, aber begrenzt: Sie zeigen Kosten innerhalb einer gewählten Bilanzgrenze, aber nicht automatisch Systemkosten, externe Kosten, Wirkungsrisiken, Qualität, Versorgungssicherheit oder positive Netto-Wirkung.",
+      "woekRelation": "Die Wirkungsökonomie nutzt Gestehungskosten als Eingangsgröße, nicht als Endurteil. Niedrige Gestehungskosten können wichtig sein, aber sie sagen allein nicht, ob ein System günstiger, resilienter, gerechter oder ökologisch tragfähiger wird. Entscheidend ist der Zusammenhang mit Systemkosten, OPEX, CAPEX, externen Effekten, Wirkungsgrenzen, Datenqualität und Rückkopplung.",
+      "usageNote": "Gestehungskosten verwenden, wenn Kosten je Einheit über einen definierten Zeitraum verglichen werden. Immer angeben: Einheit, Zeitraum, Bilanzgrenze, CAPEX/OPEX-Annahmen, Finanzierungskosten, Auslastung, Restwert, Datenstand und ausgeschlossene Kosten.",
+      "statusNote": "Glossarergänzung zur Kosten- und Wirkungsbewertung. Keine Preis-, Tarif-, Anlagen- oder Investitionsberatung.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "categories": [
+        "energie-strommarkt-und-systemkosten",
+        "finanzsystem-kapital",
+        "impact-controlling",
+        "produkte-lieferketten-und-scorecards"
+      ],
+      "theme": [
+        "Energie und Strommarkt",
+        "Systemkosten und Gestehungskosten",
+        "Finanzsystem & Kapital",
+        "Impact Controlling",
+        "Produkte, Lieferketten und Scorecards",
+        "Kapital, Markt und Macht"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungssteuerung",
+        "Wirkungsrisiko"
+      ],
+      "applicationFields": [
+        "Energie",
+        "Unternehmen",
+        "Kapitalmärkte",
+        "Produkte",
+        "Infrastruktur",
+        "Staat und Verwaltung"
+      ],
+      "sourceField": [
+        "Ökonomie",
+        "Energiewirtschaft",
+        "Controlling",
+        "Wirkungsökonomie"
+      ],
+      "conceptStatus": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "status": "anschlussbegriff",
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "version": "2026-07-01",
+      "lastReviewed": "2026-07-01",
+      "lastUpdated": "2026-07-01",
+      "updatedAt": "2026-07-01",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "autoLinkAliases": [
+        "Gestehungskosten"
+      ],
+      "firstOccurrenceOnly": true,
+      "exactMatchOnly": true,
+      "maxAutoLinksPerPage": 1,
+      "relatedTerms": [
+        "stromgestehungskosten",
+        "systemkosten",
+        "grenzkosten",
+        "capex",
+        "opex",
+        "kapitalrendite",
+        "impact-of-investment",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "Fraunhofer ISE: Levelized Cost of Electricity|https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html",
+        "Fraunhofer ISE LCOE Study 2024 PDF|https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/EN2024_ISE_Study_Levelized_Cost_of_Electricity_Renewable_Energy_Technologies.pdf",
+        "IEA Glossary|https://www.iea.org/glossary",
+        "SMARD: So funktioniert der Strommarkt|https://www.smard.de/page/en/wiki-article/5884/5840/this-is-how-the-electricity-market-works"
+      ],
+      "doNotConfuseWith": [
+        "Marktpreis: entsteht aus Angebot, Nachfrage, Regeln und Marktdesign.",
+        "Grenzkosten: Kosten der zusätzlichen Einheit, nicht Durchschnittskosten über den Lebenszyklus.",
+        "Systemkosten: Kosten für Netze, Speicher, Reserve, Flexibilität, Redispatch und Versorgungssicherheit.",
+        "Positive Netto-Wirkung: bewertet Zustandsveränderungen, nicht nur Kosten."
+      ],
+      "deprecatedUsage": [
+        "Gestehungskosten als vollständige Aussage über Systemkosten verwenden.",
+        "Niedrige Gestehungskosten automatisch mit niedrigen Preisen gleichsetzen.",
+        "Externe Kosten, Risiken, Qualität, Zeitprofil oder Versorgungssicherheit ausblenden."
+      ],
+      "examples": [
+        "Stromgestehungskosten vergleichen Erzeugungskosten pro Kilowattstunde über die Lebensdauer einer Anlage.",
+        "Ein Produkt kann niedrige Gestehungskosten haben, aber hohe Folgekosten erzeugen, wenn Reparatur, Rücknahme, Umweltlasten oder Gesundheitswirkungen außerhalb der Bilanzgrenze liegen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Was in die Rechnung gehört",
+          "items": [
+            "CAPEX, Abschreibung, Nutzungsdauer und Restwert",
+            "OPEX, Wartung, Energie, Personal und Betrieb",
+            "Finanzierungskosten, Auslastung und Skaleneffekte",
+            "Einheit, Zeitraum und Bilanzgrenze",
+            "Datenstand, Unsicherheit und Sensitivitäten"
+          ]
+        },
+        {
+          "title": "Was häufig außerhalb bleibt",
+          "items": [
+            "Systemkosten und Netzintegration",
+            "externe Umwelt-, Klima- und Gesundheitskosten",
+            "Versicherbarkeit, Haftung und Stranding-Risiken",
+            "soziale Wirkung, Arbeitsbedingungen und demokratische Rückkopplung"
+          ]
+        }
+      ],
+      "mythos": "Die niedrigsten Gestehungskosten sind automatisch die beste Lösung.",
+      "woekKlaerung": "Gestehungskosten sind wichtig, aber nur eine Kostenperspektive. Wirkungsökonomisch müssen Systemkosten, externe Wirkungen, Risiko, Zeitprofil und positive Netto-Wirkung mitgeprüft werden.",
+      "blindSpot": "Wer nur Gestehungskosten betrachtet, kann Kosten sehen, aber Wirkung, Rückkopplung und Systemfolgen übersehen.",
+      "source": "Glossarergänzung Finanzsystem, Kapital & Impact Controlling",
+      "sourceDocument": "WÖk-Glossar Finanz-, Kosten- und Wirkungssteuerung",
+      "sourceSection": "CAPEX, OPEX und Gestehungskosten",
+      "hoverDefinition": "Gestehungskosten zeigen durchschnittliche Herstellungs- oder Erzeugungskosten je Einheit innerhalb einer klar definierten Bilanzgrenze.",
+      "pageUrl": "/begriffe/gestehungskosten/",
+      "metaTitle": "Gestehungskosten | Glossar der Wirkungsökonomie",
+      "metaDescription": "Gestehungskosten beschreiben durchschnittliche Herstellungs- oder Erzeugungskosten je Einheit. Wirkungsökonomisch wichtig für Systemkosten, CAPEX, OPEX, Bilanzgrenzen und positive Netto-Wirkung.",
+      "glossaryOrderKey": "Gestehungskosten"
     },
     {
       "version": "1.0",
@@ -217852,6 +218148,157 @@
       "blind_spot": ""
     },
     {
+      "id": "opex",
+      "termId": "opex",
+      "label": "OPEX",
+      "canonicalLabel": "OPEX",
+      "slug": "opex",
+      "aliases": [
+        "OPEX",
+        "OpEx",
+        "Operational Expenditure",
+        "Operating Expenditure",
+        "Operating Expenses",
+        "operative Aufwendungen",
+        "Betriebsausgaben",
+        "Betriebskosten",
+        "laufende Betriebskosten"
+      ],
+      "synonyms": [
+        "OPEX",
+        "OpEx",
+        "Operational Expenditure",
+        "Operating Expenditure",
+        "Operating Expenses",
+        "operative Aufwendungen",
+        "Betriebsausgaben",
+        "Betriebskosten",
+        "laufende Betriebskosten"
+      ],
+      "shortDefinition": "OPEX bezeichnet laufende operative Aufwendungen für Betrieb, Nutzung, Wartung, Personal, Energie, Miete, Services oder Instandhaltung.",
+      "definition": "OPEX steht für Operational oder Operating Expenditure. Gemeint sind laufende Aufwendungen, die entstehen, um ein Geschäftsmodell, eine Anlage, Infrastruktur, Software, Dienstleistung oder Organisation zu betreiben.",
+      "longDefinition": "OPEX bezeichnet laufende operative Aufwendungen. Dazu gehören je nach Kontext Personal, Energie, Wartung, Miete, Lizenzen, Services, Verbrauchsmaterial, Instandhaltung, Versicherung, Datenbetrieb oder Logistik. OPEX ist nicht automatisch weniger strategisch als CAPEX: Laufende Kosten entscheiden über Skalierbarkeit, Resilienz, Bezahlbarkeit, Wartungsqualität, Emissionen, Arbeitsbedingungen und die Fähigkeit, Wirkung dauerhaft zu stabilisieren.",
+      "woekRelation": "Wirkungsökonomisch zeigt OPEX, ob eine Lösung im Alltag tragfähig bleibt. Niedriger CAPEX kann hohe OPEX erzeugen; hoher CAPEX kann OPEX, Emissionen, Reparaturschäden oder Wirkungsrisiken senken. Deshalb müssen Investitionsentscheidungen immer als CAPEX/OPEX-Wirkungspfad gelesen werden, nicht als isolierte Kostenstelle.",
+      "usageNote": "OPEX verwenden, wenn laufende Betriebs-, Wartungs-, Nutzungs- oder Servicekosten gemeint sind. Bei Vergleichen immer prüfen: Leistungsniveau, Zeitbezug, Energie- und Ressourcenverbrauch, Personalwirkung, Wartungsqualität, Ausfallrisiken, Preispfade, Datenqualität und ausgelagerte Kosten.",
+      "statusNote": "Glossarergänzung zur Finanz-, Kosten- und Wirkungssteuerung. Keine Rechnungslegungs-, Steuer-, Anlage- oder Rechtsberatung.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "categories": [
+        "finanzsystem-kapital",
+        "wirtschaft-unternehmen",
+        "impact-controlling",
+        "sustainable-finance"
+      ],
+      "theme": [
+        "Finanzsystem & Kapital",
+        "Wirtschaft & Unternehmen",
+        "Impact Controlling",
+        "Sustainable Finance",
+        "Kapital, Markt und Macht",
+        "Management, Wirksamkeit und Organisation"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungssteuerung",
+        "Wirkungsrückkopplung",
+        "Wirkungsrisiko"
+      ],
+      "applicationFields": [
+        "Unternehmen",
+        "Kapitalmärkte",
+        "Energie",
+        "Infrastruktur",
+        "Produkte",
+        "Staat und Verwaltung"
+      ],
+      "sourceField": [
+        "Rechnungslegung",
+        "Controlling",
+        "Sustainable Finance",
+        "Wirkungsökonomie"
+      ],
+      "conceptStatus": "Anschlussbegriff",
+      "publicationStatus": "published",
+      "status": "anschlussbegriff",
+      "type": "Anschlussbegriff",
+      "begriffstyp": "Anschlussbegriff",
+      "version": "2026-07-01",
+      "lastReviewed": "2026-07-01",
+      "lastUpdated": "2026-07-01",
+      "updatedAt": "2026-07-01",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "autoLinkAliases": [
+        "OPEX",
+        "OpEx"
+      ],
+      "firstOccurrenceOnly": true,
+      "exactMatchOnly": true,
+      "maxAutoLinksPerPage": 1,
+      "relatedTerms": [
+        "capex",
+        "gestehungskosten",
+        "wirkungscontrolling",
+        "wirkungsrueckkopplung",
+        "systemkosten",
+        "kapitalwirkung",
+        "positive-netto-wirkung"
+      ],
+      "officialSources": [
+        "IFRS Foundation: IAS 16 Property, Plant and Equipment|https://www.ifrs.org/issued-standards/list-of-standards/ias-16-property-plant-and-equipment/",
+        "IFRS Foundation: IAS 38 Intangible Assets|https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/",
+        "EFRAG: Sustainability reporting and ESRS|https://www.efrag.org/en/sustainability-reporting"
+      ],
+      "doNotConfuseWith": [
+        "CAPEX: Investitionsausgaben für Vermögenswerte oder Kapazitäten über mehrere Perioden.",
+        "Gestehungskosten: Durchschnittskosten je Einheit über eine definierte Bilanzgrenze.",
+        "Fixkosten: können Teil von OPEX sein, sind aber nicht dasselbe.",
+        "Wirkungskosten: beschreibt nicht nur Geldabfluss, sondern reale Zustandsfolgen."
+      ],
+      "deprecatedUsage": [
+        "OPEX allein als Effizienzbeweis verwenden.",
+        "Wartung, Arbeitsbedingungen, Ausfallrisiken oder externe Kosten aus OPEX-Vergleichen herausrechnen.",
+        "CAPEX senken und die dadurch entstehenden OPEX- und Wirkungsrisiken unsichtbar lassen."
+      ],
+      "examples": [
+        "Eine Software-as-a-Service-Lösung kann wenig CAPEX, aber dauerhaft hohe OPEX erzeugen.",
+        "Eine energieeffiziente Anlage kann höheren CAPEX haben, aber OPEX, Emissionen und Wirkungsrisiken über die Nutzungsdauer senken."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Typische OPEX-Bestandteile",
+          "items": [
+            "Personal, Wartung, Instandhaltung und Service",
+            "Energie, Wasser, Material, Logistik und Verbrauchsmittel",
+            "Miete, Lizenzen, Cloud-, Daten- und Plattformkosten",
+            "Versicherung, Betriebssicherheit und Compliance",
+            "laufende Kosten für Monitoring, Audit und Wirkungsrückkopplung"
+          ]
+        },
+        {
+          "title": "Wirkungsfrage",
+          "body": "OPEX wird wirkungsökonomisch relevant, wenn laufende Kosten darüber entscheiden, ob eine Lösung langfristig bezahlbar, wartbar, resilient, emissionsarm, sozial tragfähig und steuerbar bleibt."
+        }
+      ],
+      "mythos": "Niedrige OPEX bedeuten automatisch hohe Effizienz.",
+      "woekKlaerung": "Niedrige OPEX können echte Effizienz zeigen, aber auch Unterwartung, Lohndruck, Externalisierung oder Datenlücken verdecken. Entscheidend ist die positive Netto-Wirkung über den Nutzungspfad.",
+      "blindSpot": "OPEX wird oft als reine Kostenstelle gelesen. Dabei zeigen laufende Aufwendungen, ob Wirkung im Alltag stabilisiert oder unterfinanziert wird.",
+      "source": "Glossarergänzung Finanzsystem, Kapital & Impact Controlling",
+      "sourceDocument": "WÖk-Glossar Finanz-, Kosten- und Wirkungssteuerung",
+      "sourceSection": "CAPEX, OPEX und Gestehungskosten",
+      "hoverDefinition": "OPEX sind laufende operative Aufwendungen für Betrieb, Wartung, Energie, Personal, Services oder Nutzung.",
+      "pageUrl": "/begriffe/opex/",
+      "metaTitle": "OPEX | Glossar der Wirkungsökonomie",
+      "metaDescription": "OPEX bezeichnet laufende operative Aufwendungen. Wirkungsökonomisch wichtig für Betrieb, Wartung, Energie, Bezahlbarkeit, Resilienz und CAPEX/OPEX-Wirkungspfade.",
+      "glossaryOrderKey": "OPEX"
+    },
+    {
       "id": "opferumkehr",
       "termId": "opferumkehr",
       "label": "Opferumkehr",
@@ -302413,13 +302860,11 @@
       "slug": "stromgestehungskosten",
       "aliases": [
         "Stromgestehungskosten",
-        "Gestehungskosten",
         "LCOE",
         "Levelized Cost of Electricity"
       ],
       "synonyms": [
         "Stromgestehungskosten",
-        "Gestehungskosten",
         "LCOE",
         "Levelized Cost of Electricity"
       ],
@@ -302432,11 +302877,13 @@
       "woek_einordnung": "LCOE ist nützlich, aber nicht vollständig: Systemkosten, Netze, Speicher, Umweltkosten, Gesundheit, Klimafolgen und Zeitpfad zählen mit.",
       "examples": [],
       "relatedTerms": [
+        "gestehungskosten",
         "systemkosten",
         "strommarkt",
         "energiewirtschaft"
       ],
       "related_terms": [
+        "gestehungskosten",
         "systemkosten",
         "strommarkt",
         "energiewirtschaft"
@@ -367359,6 +367806,162 @@
       "metaTitle": "Wirkungsökonomie | Glossar der Wirkungsökonomie",
       "metaDescription": "Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und…",
       "glossaryOrderKey": "Wirkungsökonomie"
+    },
+    {
+      "id": "wirkungsoekonomin-ph-woek",
+      "termId": "wirkungsoekonomin-ph-woek",
+      "label": "Wirkungsökonom:in (Ph.WÖk.)",
+      "canonicalLabel": "Wirkungsökonom:in (Ph.WÖk.)",
+      "slug": "wirkungsoekonomin-ph-woek",
+      "aliases": [
+        "Wirkungsökonom:in",
+        "Wirkungsökonomin",
+        "Wirkungsökonom",
+        "Wirkungsökonom:innen",
+        "Wirkungsökonominnen",
+        "Wirkungsökonomen",
+        "Ph.WÖk.",
+        "Ph. WÖk.",
+        "PhWÖk",
+        "Ph-WÖk",
+        "WÖk-Zertifikat Ph.WÖk.",
+        "Zertifizierte:r Wirkungsökonom:in",
+        "zertifizierte Wirkungsökonomin",
+        "zertifizierter Wirkungsökonom"
+      ],
+      "synonyms": [
+        "Wirkungsökonom:in",
+        "Wirkungsökonomin",
+        "Wirkungsökonom",
+        "Ph.WÖk.",
+        "WÖk-Zertifikat Ph.WÖk.",
+        "Zertifizierte:r Wirkungsökonom:in"
+      ],
+      "shortDefinition": "Wirkungsökonom:in (Ph.WÖk.) bezeichnet eine von der privaten Akademie für Wirkungsökonomie zertifizierte Qualifikation für die Anwendung, Prüfung und Vermittlung der Wirkungsökonomie.",
+      "hoverDefinition": "Wirkungsökonom:in (Ph.WÖk.) ist eine private WÖk-Zertifizierung der Akademie für Wirkungsökonomie. Sie ist kein staatlicher akademischer Grad und wird nur mit prüfbarer Zertifikats-ID beziehungsweise QR-Code gültig.",
+      "definition": "Wirkungsökonom:in (Ph.WÖk.) bezeichnet eine von der privaten Akademie für Wirkungsökonomie vergebene Zertifikats- und Qualifikationsbezeichnung. Sie bescheinigt, dass eine Person die Grundbegriffe, Bewertungslogik, Prüfprozesse und Anwendungsfelder der Wirkungsökonomie methodisch einordnen, anwenden und kommunizieren kann.",
+      "longDefinition": "Wirkungsökonom:in (Ph.WÖk.) ist eine institutsinterne Zertifikats- und Qualifikationsbezeichnung der privaten Akademie für Wirkungsökonomie. Sie steht für nachgewiesene Wirkungskompetenz in der Wirkungsökonomie: Wirkung als tatsächliche Zustandsveränderung, Unterscheidung von Wirkung, Wirkungspotenzial und Wirkungsrisiko, positive Netto-Wirkung im Referenzrahmen SDGs, Agenda 2030 und SDG+, Nichtkompensation, Reverse Merit Order, Wirkungsarchitektur, Wirkungsdaten, Scorecards, Wirkungsprüfung, Rückkopplung und verantwortliche Anwendung in Wirtschaft, Kapital, Politik, Verwaltung, Medien und Bildung.\n\nDie Bezeichnung ist kein staatlich verliehener akademischer Grad, keine Berufs- oder Kammerzulassung und kein Doktorgrad im hochschulrechtlichen Sinn. Gültigkeit entsteht erst durch einen dokumentierten Zertifikatsprozess der Akademie, eine eindeutige Zertifikats-ID, eine überprüfbare Ausstellungs- und Versionsangabe sowie eine öffentliche oder intern prüfbare Verifikationsseite, etwa per QR-Code.",
+      "woekRelation": "Der Begriff verankert Wirkungskompetenz als überprüfbare Fähigkeit, nicht als moralische Personenbewertung. Wirkungsökonom:innen sollen WÖk-Begriffe sauber unterscheiden, Wirkungsdaten kritisch prüfen, Wirkung nicht mit Reichweite oder Reporting verwechseln und Entscheidungen an positiver Netto-Wirkung für Mensch, Planet und Demokratie rückkoppeln.",
+      "usageNote": "Die Bezeichnung nur verwenden, wenn ein gültiges Zertifikat der Akademie für Wirkungsökonomie mit Zertifikats-ID, Datum, Prüf- oder Anerkennungsgrundlage und Verifikationsmöglichkeit vorliegt. Bei externen Darstellungen immer kenntlich machen, dass es sich um eine private, nicht staatliche Zertifizierung handelt.",
+      "statusNote": "Akademie- und Zertifizierungsbegriff. Keine staatliche Anerkennung, keine Hochschulgradvergabe, keine Berufs- oder Rechtsberatung und keine Personenbewertung.",
+      "category": "Akademie, Zertifizierung und Wirkungskompetenz",
+      "categories": [
+        "akademie-zertifizierung",
+        "Kompetenz, Bildung & Organisationsentwicklung",
+        "Prüfung, Audit & Qualitätssicherung",
+        "woek-kernbegriff"
+      ],
+      "theme": [
+        "Akademie & Zertifizierung",
+        "Wirkungskompetenz",
+        "Institutionelle Sicherung & Prüfarchitektur",
+        "Grundbegriffe der Wirkungsökonomie"
+      ],
+      "dimensions": [
+        "Mensch + Planet + Demokratie"
+      ],
+      "wirklogik": [
+        "Wirkungsbewertung",
+        "Wirkungsprüfung",
+        "Wirkungsrückkopplung",
+        "Wirkungskompetenz"
+      ],
+      "applicationFields": [
+        "Akademie",
+        "Bildung",
+        "Unternehmen",
+        "Politik",
+        "Verwaltung",
+        "Kapitalmärkte",
+        "Medien",
+        "Wissenschaft"
+      ],
+      "sourceField": [
+        "Akademie für Wirkungsökonomie",
+        "Wirkungsökonomie",
+        "Zertifizierung",
+        "Wirkungskompetenz"
+      ],
+      "conceptStatus": "WÖk-Akademiebegriff",
+      "publicationStatus": "published",
+      "status": "approved",
+      "type": "WÖk-Akademiebegriff / Zertifizierungsbegriff",
+      "begriffstyp": "WÖk-Akademiebegriff / Zertifizierungsbegriff",
+      "version": "2026-07-01",
+      "lastReviewed": "2026-07-01",
+      "lastUpdated": "2026-07-01",
+      "updatedAt": "2026-07-01",
+      "reviewStatus": "approved",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "autoLinkAliases": [
+        "Wirkungsökonom:in",
+        "Wirkungsökonomin",
+        "Wirkungsökonom",
+        "Ph.WÖk.",
+        "Ph. WÖk.",
+        "PhWÖk"
+      ],
+      "firstOccurrenceOnly": true,
+      "exactMatchOnly": true,
+      "maxAutoLinksPerPage": 1,
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "wirkungsoekonomie",
+        "wirkungsbewertung",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "nichtkompensation",
+        "reverse-merit-order",
+        "woek-id",
+        "qualitaetssicherung",
+        "social-credit",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
+      ],
+      "officialSources": [
+        "Akademie für Wirkungsökonomie: Zertifikats-, Prüf- und Verifikationsprozess"
+      ],
+      "doNotConfuseWith": [
+        "Staatlicher akademischer Grad: Ph.WÖk. ist keine staatliche Hochschulgradvergabe.",
+        "Doktorgrad: Die Bezeichnung ist kein Dr. oder Ph.D. im hochschulrechtlichen Sinn.",
+        "Berufszulassung: Das Zertifikat ersetzt keine Kammerzulassung, Approbation, Steuer-, Rechts- oder Anlageberatung.",
+        "Social Credit: Die Zertifizierung bewertet keine Menschen als Gesamtpersonen, sondern dokumentiert eine überprüfte WÖk-Qualifikation.",
+        "Reichweite oder Reputation: Sichtbarkeit, Bekanntheit oder Autorenschaft ersetzen keinen Zertifikats- und Prüfprozess."
+      ],
+      "examples": [
+        "Eine Person führt die Bezeichnung Wirkungsökonom:in (Ph.WÖk.), wenn die Akademie ein gültiges Zertifikat mit ID und QR-Verifikation ausgestellt hat.",
+        "In einem Beratungskontext weist die Bezeichnung darauf hin, dass WÖk-Grundbegriffe, Wirkungsbewertung, Nichtkompensation, Reverse Merit Order und Prüfprozesse methodisch angewendet werden können.",
+        "Bei Mitentwickler:innen kann die Akademie eine Anerkennung gleichwertiger Kompetenz dokumentieren, wenn der Prüf- und Gültigkeitsprozess dies ausdrücklich vorsieht."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Inhalt des Zertifikats",
+          "body": "Gegenstand ist Wirkungskompetenz in der Wirkungsökonomie: Begriffslogik, Wirkungsbewertung, Wirkungsrisiko, positive Netto-Wirkung, SDG+/Agenda-2030-Bezug, Datenqualität, Wirkungsarchitektur, Scorecards, WÖk-IDs, Nichtkompensation, Reverse Merit Order, Audit- und Assurance-Grundlagen sowie verantwortliche Kommunikation."
+        },
+        {
+          "title": "Gültigkeit und Verifikation",
+          "body": "Ein Zertifikat ist nur belastbar, wenn Aussteller, Person, Zertifikats-ID, Ausstellungsdatum, Version, Gültigkeitsstatus, Prüf- oder Anerkennungsgrundlage und eine QR- oder URL-basierte Verifikation dokumentiert sind."
+        },
+        {
+          "title": "Rechtliche Abgrenzung",
+          "body": "Die Bezeichnung ist privat-akademisch und institutsintern. Sie darf nicht als staatlicher Hochschulabschluss, Doktorgrad, Berufszulassung oder hoheitliche Qualifikation dargestellt werden."
+        }
+      ],
+      "mythos": "Ph.WÖk. klingt wie ein staatlicher akademischer Grad.",
+      "woekKlaerung": "Ph.WÖk. ist hier eine private Zertifikats- und Qualifikationsbezeichnung der Akademie für Wirkungsökonomie; die Gültigkeit hängt an Zertifikatsprozess, ID und Verifikation.",
+      "blindSpot": "Ohne klare Verifikation, Rechtsabgrenzung und Prüfgrundlage könnte die Bezeichnung missverständlich als staatlicher Abschluss gelesen werden.",
+      "metaTitle": "Wirkungsökonom:in (Ph.WÖk.) | Glossar der Wirkungsökonomie",
+      "metaDescription": "Wirkungsökonom:in (Ph.WÖk.) bezeichnet eine private WÖk-Zertifizierung der Akademie für Wirkungsökonomie - mit klarer Abgrenzung zu staatlichen Graden.",
+      "glossaryOrderKey": "Wirkungsökonom:in Ph.WÖk."
     },
     {
       "id": "wirkungsoekonomie-im-alltag",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T18:58:40.534Z",
+  "generatedAt": "2026-07-01T08:17:47.098Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -2986,6 +2986,25 @@
       "terms": [
         "ladeleistung",
         "batteriealterung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "capex": {
+      "terms": [
+        "opex",
+        "gestehungskosten",
+        "impact-of-investment",
+        "wirkungscontrolling",
+        "kapitalrendite",
+        "kapitalwirkung",
+        "t-sroi",
+        "positive-netto-wirkung"
       ],
       "documents": [],
       "methods": [],
@@ -9248,6 +9267,25 @@
     },
     "gesichtswahrende_korrektur": {
       "terms": [],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "gestehungskosten": {
+      "terms": [
+        "stromgestehungskosten",
+        "systemkosten",
+        "grenzkosten",
+        "capex",
+        "opex",
+        "kapitalrendite",
+        "impact-of-investment",
+        "positive-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18380,6 +18418,24 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "opex": {
+      "terms": [
+        "capex",
+        "gestehungskosten",
+        "wirkungscontrolling",
+        "wirkungsrueckkopplung",
+        "systemkosten",
+        "kapitalwirkung",
+        "positive-netto-wirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "opferumkehr": {
       "terms": [
         "narrativ",
@@ -25541,6 +25597,7 @@
     },
     "stromgestehungskosten": {
       "terms": [
+        "gestehungskosten",
         "systemkosten",
         "strommarkt",
         "energiewirtschaft"
@@ -32526,6 +32583,34 @@
         "impact-of-investment",
         "t-sroi",
         "reverse-merit-order"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsoekonomin-ph-woek": {
+      "terms": [
+        "wirkungskompetenz",
+        "wirkungsoekonomie",
+        "wirkungsbewertung",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "nichtkompensation",
+        "reverse-merit-order",
+        "woek-id",
+        "qualitaetssicherung",
+        "social-credit",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "documents": [],
       "methods": [],

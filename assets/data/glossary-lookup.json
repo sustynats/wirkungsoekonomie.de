@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-30T18:57:51.924Z",
-  "count": 1649,
+  "generatedAt": "2026-07-01T08:17:02.191Z",
+  "count": 1653,
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -1986,6 +1986,24 @@
       ],
       "shortDefinition": "Die C-Rate beschreibt, wie schnell eine Batterie im Verhältnis zu ihrer Kapazität geladen oder entladen wird.",
       "definition": "Die C-Rate beschreibt, wie schnell eine Batterie im Verhältnis zu ihrer Kapazität geladen oder entladen wird."
+    },
+    {
+      "id": "capex",
+      "label": "CAPEX",
+      "canonicalLabel": "CAPEX",
+      "slug": "capex",
+      "url": "/begriffe/capex/",
+      "aliases": [
+        "CAPEX",
+        "CapEx",
+        "Capital Expenditure",
+        "Capital Expenditures",
+        "Investitionsausgaben",
+        "Kapitalausgaben",
+        "Investitionskosten"
+      ],
+      "shortDefinition": "CAPEX bezeichnet Investitionsausgaben, die Vermögenswerte schaffen, erweitern oder wesentlich verbessern und über mehrere Perioden wirken.",
+      "definition": "CAPEX steht für Capital Expenditure. Gemeint sind Ausgaben für Anlagen, Infrastruktur, Software, Gebäude, Maschinen, Produktentwicklung oder andere Vermögenswerte, die nicht nur laufenden Betrieb finanzieren, sondern künftige Nutzung, Kapazität oder Wirkung ermöglichen."
     },
     {
       "id": "capture-price",
@@ -5947,6 +5965,22 @@
       ],
       "shortDefinition": "Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen.",
       "definition": "Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen."
+    },
+    {
+      "id": "gestehungskosten",
+      "label": "Gestehungskosten",
+      "canonicalLabel": "Gestehungskosten",
+      "slug": "gestehungskosten",
+      "url": "/begriffe/gestehungskosten/",
+      "aliases": [
+        "Gestehungskosten",
+        "Levelized Cost",
+        "durchschnittliche Gestehungskosten",
+        "Erzeugungskosten je Einheit",
+        "Herstellungskosten je Einheit"
+      ],
+      "shortDefinition": "Gestehungskosten beschreiben die durchschnittlichen Kosten zur Herstellung oder Erzeugung einer Einheit innerhalb einer definierten Bilanzgrenze.",
+      "definition": "Gestehungskosten geben an, welche durchschnittlichen Kosten entstehen, um eine Einheit eines Produkts, einer Leistung oder einer Energieform bereitzustellen. Die Aussage ist nur belastbar, wenn Bezugsgröße, Zeitraum, Bilanzgrenze, Kapitalkosten, OPEX, Restwert, Auslastung und Datenqualität klar sind."
     },
     {
       "id": "gestrandeter-kredit",
@@ -12287,6 +12321,26 @@
       "definition": "Es übersetzt strategische Ziele in Alltag, Abläufe, Zuständigkeiten und Entscheidungen."
     },
     {
+      "id": "opex",
+      "label": "OPEX",
+      "canonicalLabel": "OPEX",
+      "slug": "opex",
+      "url": "/begriffe/opex/",
+      "aliases": [
+        "OPEX",
+        "OpEx",
+        "Operational Expenditure",
+        "Operating Expenditure",
+        "Operating Expenses",
+        "operative Aufwendungen",
+        "Betriebsausgaben",
+        "Betriebskosten",
+        "laufende Betriebskosten"
+      ],
+      "shortDefinition": "OPEX bezeichnet laufende operative Aufwendungen für Betrieb, Nutzung, Wartung, Personal, Energie, Miete, Services oder Instandhaltung.",
+      "definition": "OPEX steht für Operational oder Operating Expenditure. Gemeint sind laufende Aufwendungen, die entstehen, um ein Geschäftsmodell, eine Anlage, Infrastruktur, Software, Dienstleistung oder Organisation zu betreiben."
+    },
+    {
       "id": "opferumkehr",
       "label": "Opferumkehr",
       "canonicalLabel": "Opferumkehr",
@@ -17018,7 +17072,6 @@
       "url": "/begriffe/stromgestehungskosten/",
       "aliases": [
         "Stromgestehungskosten",
-        "Gestehungskosten",
         "LCOE",
         "Levelized Cost of Electricity"
       ],
@@ -20956,6 +21009,32 @@
       ],
       "shortDefinition": "Wirkungsoffenheit bedeutet: Der Weg bleibt offen, aber die positive Netto-Wirkung wird verbindlich geprüft.",
       "definition": "Wirkungsoffenheit verschiebt die Frage von „Welche Technologie ist erlaubt?“ zu „Welche Lösung erzeugt welche reale Wirkung?“. Sie ist technologieoffen im Weg, aber verbindlich im Wirkungsmaßstab."
+    },
+    {
+      "id": "wirkungsoekonomin-ph-woek",
+      "label": "Wirkungsökonom:in (Ph.WÖk.)",
+      "canonicalLabel": "Wirkungsökonom:in (Ph.WÖk.)",
+      "slug": "wirkungsoekonomin-ph-woek",
+      "url": "/begriffe/wirkungsoekonomin-ph-woek/",
+      "aliases": [
+        "Wirkungsökonom:in (Ph.WÖk.)",
+        "Wirkungsökonom:in",
+        "Wirkungsökonomin",
+        "Wirkungsökonom",
+        "Wirkungsökonom:innen",
+        "Wirkungsökonominnen",
+        "Wirkungsökonomen",
+        "Ph.WÖk.",
+        "Ph. WÖk.",
+        "PhWÖk",
+        "Ph-WÖk",
+        "WÖk-Zertifikat Ph.WÖk.",
+        "Zertifizierte:r Wirkungsökonom:in",
+        "zertifizierte Wirkungsökonomin",
+        "zertifizierter Wirkungsökonom"
+      ],
+      "shortDefinition": "Wirkungsökonom:in (Ph.WÖk.) bezeichnet eine von der privaten Akademie für Wirkungsökonomie zertifizierte Qualifikation für die Anwendung, Prüfung und Vermittlung der Wirkungsökonomie.",
+      "definition": "Wirkungsökonom:in (Ph.WÖk.) bezeichnet eine von der privaten Akademie für Wirkungsökonomie vergebene Zertifikats- und Qualifikationsbezeichnung. Sie bescheinigt, dass eine Person die Grundbegriffe, Bewertungslogik, Prüfprozesse und Anwendungsfelder der Wirkungsökonomie methodisch einordnen, anwenden und kommunizieren kann."
     },
     {
       "id": "wirkungsoekonomie",

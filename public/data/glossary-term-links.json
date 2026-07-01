@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T18:57:52.164Z",
+  "generatedAt": "2026-07-01T08:17:02.413Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -4213,6 +4213,38 @@
       "relatedTerms": [
         "ladeleistung",
         "batteriealterung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "capex": {
+      "label": "CAPEX",
+      "slug": "capex",
+      "url": "/begriffe/capex/",
+      "hoverDefinition": "CAPEX sind Investitionsausgaben für Vermögenswerte, Infrastruktur oder Transformation, deren Wirkung über mehrere Perioden reicht.",
+      "shortDefinition": "CAPEX bezeichnet Investitionsausgaben, die Vermögenswerte schaffen, erweitern oder wesentlich verbessern und über mehrere Perioden wirken.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "CAPEX",
+        "CapEx",
+        "Capital Expenditure",
+        "Capital Expenditures",
+        "Investitionsausgaben",
+        "Kapitalausgaben",
+        "Investitionskosten"
+      ],
+      "relatedTerms": [
+        "opex",
+        "gestehungskosten",
+        "impact-of-investment",
+        "wirkungscontrolling",
+        "kapitalrendite",
+        "kapitalwirkung",
+        "t-sroi",
+        "positive-netto-wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -12899,6 +12931,36 @@
         "Gesichtswahrende Korrektur"
       ],
       "relatedTerms": [],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gestehungskosten": {
+      "label": "Gestehungskosten",
+      "slug": "gestehungskosten",
+      "url": "/begriffe/gestehungskosten/",
+      "hoverDefinition": "Gestehungskosten zeigen durchschnittliche Herstellungs- oder Erzeugungskosten je Einheit innerhalb einer klar definierten Bilanzgrenze.",
+      "shortDefinition": "Gestehungskosten beschreiben die durchschnittlichen Kosten zur Herstellung oder Erzeugung einer Einheit innerhalb einer definierten Bilanzgrenze.",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "synonyms": [
+        "Gestehungskosten",
+        "Levelized Cost",
+        "durchschnittliche Gestehungskosten",
+        "Erzeugungskosten je Einheit",
+        "Herstellungskosten je Einheit"
+      ],
+      "relatedTerms": [
+        "stromgestehungskosten",
+        "systemkosten",
+        "grenzkosten",
+        "capex",
+        "opex",
+        "kapitalrendite",
+        "impact-of-investment",
+        "positive-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -25906,6 +25968,39 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "opex": {
+      "label": "OPEX",
+      "slug": "opex",
+      "url": "/begriffe/opex/",
+      "hoverDefinition": "OPEX sind laufende operative Aufwendungen für Betrieb, Wartung, Energie, Personal, Services oder Nutzung.",
+      "shortDefinition": "OPEX bezeichnet laufende operative Aufwendungen für Betrieb, Nutzung, Wartung, Personal, Energie, Miete, Services oder Instandhaltung.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "OPEX",
+        "OpEx",
+        "Operational Expenditure",
+        "Operating Expenditure",
+        "Operating Expenses",
+        "operative Aufwendungen",
+        "Betriebsausgaben",
+        "Betriebskosten",
+        "laufende Betriebskosten"
+      ],
+      "relatedTerms": [
+        "capex",
+        "gestehungskosten",
+        "wirkungscontrolling",
+        "wirkungsrueckkopplung",
+        "systemkosten",
+        "kapitalwirkung",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "opferumkehr": {
       "label": "Opferumkehr",
       "slug": "opferumkehr",
@@ -35921,11 +36016,11 @@
       "category": "Energie, Strommarkt und Systemkosten",
       "synonyms": [
         "Stromgestehungskosten",
-        "Gestehungskosten",
         "LCOE",
         "Levelized Cost of Electricity"
       ],
       "relatedTerms": [
+        "gestehungskosten",
         "systemkosten",
         "strommarkt",
         "energiewirtschaft"
@@ -45331,6 +45426,55 @@
         "impact-of-investment",
         "t-sroi",
         "reverse-merit-order"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wirkungsoekonomin-ph-woek": {
+      "label": "Wirkungsökonom:in (Ph.WÖk.)",
+      "slug": "wirkungsoekonomin-ph-woek",
+      "url": "/begriffe/wirkungsoekonomin-ph-woek/",
+      "hoverDefinition": "Wirkungsökonom:in (Ph.WÖk.) ist eine private WÖk-Zertifizierung der Akademie für Wirkungsökonomie. Sie ist kein staatlicher akademischer Grad und wird nur mit prüfbarer Zertifikats-ID beziehungsweise QR-Code gültig.",
+      "shortDefinition": "Wirkungsökonom:in (Ph.WÖk.) bezeichnet eine von der privaten Akademie für Wirkungsökonomie zertifizierte Qualifikation für die Anwendung, Prüfung und Vermittlung der Wirkungsökonomie.",
+      "category": "Akademie, Zertifizierung und Wirkungskompetenz",
+      "synonyms": [
+        "Wirkungsökonom:in (Ph.WÖk.)",
+        "Wirkungsökonom:in",
+        "Wirkungsökonomin",
+        "Wirkungsökonom",
+        "Wirkungsökonom:innen",
+        "Wirkungsökonominnen",
+        "Wirkungsökonomen",
+        "Ph.WÖk.",
+        "Ph. WÖk.",
+        "PhWÖk",
+        "Ph-WÖk",
+        "WÖk-Zertifikat Ph.WÖk.",
+        "Zertifizierte:r Wirkungsökonom:in",
+        "zertifizierte Wirkungsökonomin",
+        "zertifizierter Wirkungsökonom"
+      ],
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "wirkungsoekonomie",
+        "wirkungsbewertung",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsarchitektur",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "nichtkompensation",
+        "reverse-merit-order",
+        "woek-id",
+        "qualitaetssicherung",
+        "social-credit",
+        "mensch-planet-demokratie",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

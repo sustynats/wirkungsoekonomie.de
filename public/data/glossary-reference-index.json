@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-30T18:57:52.369Z",
-  "count": 1649,
+  "generatedAt": "2026-07-01T08:17:02.604Z",
+  "count": 1653,
   "letters": [
     "#",
     "A",
@@ -192,6 +192,7 @@
     ],
     "C": [
       "c-rate",
+      "capex",
       "capture-price",
       "carbon-budget",
       "carbon-credits",
@@ -497,6 +498,7 @@
       "gesetz",
       "gesicherte-leistung",
       "gesichtswahrende-korrektur",
+      "gestehungskosten",
       "gestrandeter-kredit",
       "gesundheit",
       "gesundheitsdividende",
@@ -966,6 +968,7 @@
       "onshore-windenergie",
       "open-science",
       "operatives-management",
+      "opex",
       "opferumkehr",
       "opportunitaetskosten",
       "opposition",
@@ -1638,6 +1641,7 @@
       "wirkungsnachweis",
       "wirkungsnetz",
       "wirkungsoffenheit",
+      "wirkungsoekonomin-ph-woek",
       "wirkungsoekonomie",
       "wirkungsoekonomie-im-alltag",
       "wirkungsoekonomische-kaufkraftlogik",
@@ -3575,6 +3579,23 @@
       "aliases": [
         "C-Rate",
         "C Rate"
+      ]
+    },
+    {
+      "id": "capex",
+      "label": "CAPEX",
+      "slug": "capex",
+      "url": "/begriffe/capex/",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "shortDefinition": "CAPEX bezeichnet Investitionsausgaben, die Vermögenswerte schaffen, erweitern oder wesentlich verbessern und über mehrere Perioden wirken.",
+      "aliases": [
+        "CAPEX",
+        "CapEx",
+        "Capital Expenditure",
+        "Capital Expenditures",
+        "Investitionsausgaben",
+        "Kapitalausgaben",
+        "Investitionskosten"
       ]
     },
     {
@@ -7239,6 +7260,21 @@
       "shortDefinition": "Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen.",
       "aliases": [
         "Gesichtswahrende Korrektur"
+      ]
+    },
+    {
+      "id": "gestehungskosten",
+      "label": "Gestehungskosten",
+      "slug": "gestehungskosten",
+      "url": "/begriffe/gestehungskosten/",
+      "category": "Energie, Strommarkt und Systemkosten",
+      "shortDefinition": "Gestehungskosten beschreiben die durchschnittlichen Kosten zur Herstellung oder Erzeugung einer Einheit innerhalb einer definierten Bilanzgrenze.",
+      "aliases": [
+        "Gestehungskosten",
+        "Levelized Cost",
+        "durchschnittliche Gestehungskosten",
+        "Erzeugungskosten je Einheit",
+        "Herstellungskosten je Einheit"
       ]
     },
     {
@@ -13111,6 +13147,25 @@
       ]
     },
     {
+      "id": "opex",
+      "label": "OPEX",
+      "slug": "opex",
+      "url": "/begriffe/opex/",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "shortDefinition": "OPEX bezeichnet laufende operative Aufwendungen für Betrieb, Nutzung, Wartung, Personal, Energie, Miete, Services oder Instandhaltung.",
+      "aliases": [
+        "OPEX",
+        "OpEx",
+        "Operational Expenditure",
+        "Operating Expenditure",
+        "Operating Expenses",
+        "operative Aufwendungen",
+        "Betriebsausgaben",
+        "Betriebskosten",
+        "laufende Betriebskosten"
+      ]
+    },
+    {
       "id": "opferumkehr",
       "label": "Opferumkehr",
       "slug": "opferumkehr",
@@ -17517,7 +17572,6 @@
       "shortDefinition": "Stromgestehungskosten beschreiben durchschnittliche Erzeugungskosten über die Lebensdauer einer Anlage pro Kilowattstunde.",
       "aliases": [
         "Stromgestehungskosten",
-        "Gestehungskosten",
         "LCOE",
         "Levelized Cost of Electricity"
       ]
@@ -21167,6 +21221,31 @@
       "aliases": [
         "Wirkungsoffenheit",
         "wirkungsoffen"
+      ]
+    },
+    {
+      "id": "wirkungsoekonomin-ph-woek",
+      "label": "Wirkungsökonom:in (Ph.WÖk.)",
+      "slug": "wirkungsoekonomin-ph-woek",
+      "url": "/begriffe/wirkungsoekonomin-ph-woek/",
+      "category": "Akademie, Zertifizierung und Wirkungskompetenz",
+      "shortDefinition": "Wirkungsökonom:in (Ph.WÖk.) bezeichnet eine von der privaten Akademie für Wirkungsökonomie zertifizierte Qualifikation für die Anwendung, Prüfung und Vermittlung der Wirkungsökonomie.",
+      "aliases": [
+        "Wirkungsökonom:in (Ph.WÖk.)",
+        "Wirkungsökonom:in",
+        "Wirkungsökonomin",
+        "Wirkungsökonom",
+        "Wirkungsökonom:innen",
+        "Wirkungsökonominnen",
+        "Wirkungsökonomen",
+        "Ph.WÖk.",
+        "Ph. WÖk.",
+        "PhWÖk",
+        "Ph-WÖk",
+        "WÖk-Zertifikat Ph.WÖk.",
+        "Zertifizierte:r Wirkungsökonom:in",
+        "zertifizierte Wirkungsökonomin",
+        "zertifizierter Wirkungsökonom"
       ]
     },
     {
