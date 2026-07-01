@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import shutil
+import subprocess
 from pathlib import Path
 
 from reportlab.graphics import renderPDF
@@ -10,6 +12,7 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4, landscape
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
+from reportlab.lib.utils import ImageReader
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
@@ -19,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA_PATH = ROOT / "data/academy/certificates.json"
 OUTPUT_DIR = ROOT / "assets/downloads/zertifikate"
 ARCHIVE_DIR = ROOT / "output/pdf"
+TMP_DIR = ROOT / "tmp/pdfs"
 
 NAVY = colors.HexColor("#0B1020")
 IVORY = colors.HexColor("#F6F1E8")
@@ -63,7 +67,13 @@ def draw_qr(c: canvas.Canvas, value: str, x: float, y: float, size: float):
     renderPDF.draw(drawing, c, x, y)
 
 
-def certificate_pdf(record: dict, registry: dict, out_path: Path):
+def set_pdf_metadata(c: canvas.Canvas, record: dict, registry: dict):
+    c.setTitle(f"{record['holderName']} - {record['qualificationLabel']}")
+    c.setAuthor(registry["issuer"]["name"])
+    c.setSubject(f"Zertifikat {record['certificateId']}")
+
+
+def draw_certificate_pdf(record: dict, registry: dict, out_path: Path):
     width, height = landscape(A4)
     styles = getSampleStyleSheet()
     body = ParagraphStyle(
@@ -78,8 +88,8 @@ def certificate_pdf(record: dict, registry: dict, out_path: Path):
     small = ParagraphStyle(
         "CertificateSmall",
         parent=body,
-        fontSize=4.8,
-        leading=5.8,
+        fontSize=4.5,
+        leading=5.3,
         textColor=colors.HexColor("#4F5559"),
     )
     compact = ParagraphStyle(
@@ -90,9 +100,7 @@ def certificate_pdf(record: dict, registry: dict, out_path: Path):
     )
 
     c = canvas.Canvas(str(out_path), pagesize=landscape(A4))
-    c.setTitle(f"{record['holderName']} - {record['qualificationLabel']}")
-    c.setAuthor(registry["issuer"]["name"])
-    c.setSubject(f"Zertifikat {record['certificateId']}")
+    set_pdf_metadata(c, record, registry)
 
     margin = 17 * mm
     c.setFillColor(IVORY)
@@ -143,25 +151,54 @@ def certificate_pdf(record: dict, registry: dict, out_path: Path):
         compact_basis = "Anerkennung als Begründerin der Wirkungsökonomie; originäre Entwicklungs-, Lehr- und Prüfungsleistung zur internen Meisterstufe Ph.WÖk."
     elif record["certificateId"] == "WOEK-PH-2026-0002":
         compact_basis = "Anerkennung gleichwertiger WÖk-Entwicklungsleistung als Mitentwickler; Sonderfall ohne regulären Studien- und Prüfungsdurchlauf."
-    scope_text = "Wirkungskompetenz in der Wirkungsökonomie: Wirkungslogik, positive Netto-Wirkung, SDG/SDG+, Nichtkompensation, Reverse Merit Order, Wirkungsarchitektur, Wirkungsdaten und Rückkopplung."
-    y = details_y - 32 * mm
+    scope_text = "Wirkungskompetenz: Wirkungslogik, positive Netto-Wirkung, SDG/SDG+, Nichtkompensation, Reverse Merit Order, Wirkungsarchitektur, Wirkungsdaten und Rückkopplung."
+    y = details_y - 25 * mm
     y = draw_wrapped(c, f"<b>Prüfungs- und Anerkennungsgrundlage:</b> {compact_basis}", text_x, y, text_w, compact)
     y -= 1.5 * mm
     draw_wrapped(c, f"<b>Gegenstand der Qualifikation:</b> {scope_text}.", text_x, y, text_w, compact)
 
     c.setStrokeColor(LINE)
-    c.line(content_x + 1 * mm, margin + 16 * mm, content_x + content_w - 1 * mm, margin + 16 * mm)
-    draw_wrapped(c, f"<b>Rechtlicher Hinweis:</b> {registry['legalNotice']} Verifikation: {record['verificationUrl']}", content_x + 1 * mm, margin + 13 * mm, content_w - 2 * mm, small)
+    c.line(content_x + 1 * mm, margin + 18 * mm, content_x + content_w - 1 * mm, margin + 18 * mm)
+    draw_wrapped(c, f"<b>Rechtlicher Hinweis:</b> {registry['legalNotice']} Verifikation: {record['verificationUrl']}", content_x + 1 * mm, margin + 16 * mm, content_w - 2 * mm, small)
 
     c.setFont("Helvetica-Bold", 8)
     c.setFillColor(NAVY)
-    c.drawString(content_x + 1 * mm, margin + 4.8 * mm, registry["issuer"]["name"])
+    c.drawString(content_x + 1 * mm, margin + 6.2 * mm, registry["issuer"]["name"])
     c.setFont("Helvetica", 7)
     c.setFillColor(colors.HexColor("#4F5559"))
-    c.drawRightString(content_x + content_w - 1 * mm, margin + 4.8 * mm, "Wirkung statt Kapital. Für Mensch, Planet und Demokratie.")
+    c.drawRightString(content_x + content_w - 1 * mm, margin + 6.2 * mm, "Wirkung statt Kapital. Für Mensch, Planet und Demokratie.")
 
     c.showPage()
     c.save()
+
+
+def flatten_certificate_pdf(vector_path: Path, out_path: Path, record: dict, registry: dict):
+    pdftoppm = shutil.which("pdftoppm")
+    if not pdftoppm:
+        shutil.copyfile(vector_path, out_path)
+        return
+
+    TMP_DIR.mkdir(parents=True, exist_ok=True)
+    image_prefix = TMP_DIR / f"{out_path.stem}-flattened"
+    image_path = image_prefix.with_suffix(".png")
+    subprocess.run(
+        [pdftoppm, "-singlefile", "-png", "-r", "220", str(vector_path), str(image_prefix)],
+        check=True,
+    )
+
+    width, height = landscape(A4)
+    c = canvas.Canvas(str(out_path), pagesize=landscape(A4))
+    set_pdf_metadata(c, record, registry)
+    c.drawImage(ImageReader(str(image_path)), 0, 0, width=width, height=height, preserveAspectRatio=False)
+    c.showPage()
+    c.save()
+
+
+def certificate_pdf(record: dict, registry: dict, out_path: Path):
+    TMP_DIR.mkdir(parents=True, exist_ok=True)
+    vector_path = TMP_DIR / f"{out_path.stem}.vector.pdf"
+    draw_certificate_pdf(record, registry, vector_path)
+    flatten_certificate_pdf(vector_path, out_path, record, registry)
 
 
 def main():
