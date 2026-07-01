@@ -29,5 +29,4 @@ Die Doku beschreibt:
 - künftige Zertifikatslogik der App
 - Datenbankmigrationen
 - Auth-, Rollen-, Curriculum-, Prüfungs- und Analytics-Flüsse
-- bekannte Nicht-Integrationen wie Oracle/OCI
-
+- Oracle/OCI als externer Bot-/Feedback-/Analytics-Dienst sowie nicht vorhandene weitere Integrationen
