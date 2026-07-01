@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-app-shell-20260629-share-tools";
+const CACHE_NAME = "woek-app-shell-20260701-brand-logo";
 const APP_SHELL = [
   "/app/",
   "/offline.html",
@@ -9,6 +9,7 @@ const APP_SHELL = [
   "/assets/js/woek-app.js",
   "/assets/img/brand/signet.svg",
   "/assets/img/brand/favicon.svg",
+  "/assets/img/brand/apple-touch-icon.png",
   "/assets/img/brand/app-icon-192.png",
   "/assets/img/brand/app-icon-512.png"
 ];

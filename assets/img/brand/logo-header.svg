@@ -1,15 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
   <title id="title">Header-Logo der Wirkungsökonomie</title>
-  <desc id="desc">Signet und Wortmarke Wirkungsökonomie.</desc>
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="60" cy="42" r="28" stroke="#0B1020" stroke-width="4"/>
-    <circle cx="38" cy="76" r="28" stroke="#2F7D5C" stroke-width="4"/>
-    <circle cx="82" cy="76" r="28" stroke="#C89B3C" stroke-width="4"/>
-    <path d="M60 42 L38 76 L82 76 Z" stroke="#0B1020" stroke-width="2" opacity=".62"/>
-    <circle cx="60" cy="64" r="6" fill="#0B1020" stroke="none"/>
-    <circle cx="60" cy="42" r="4" fill="#0B1020" stroke="none"/>
-    <circle cx="38" cy="76" r="4" fill="#2F7D5C" stroke="none"/>
-    <circle cx="82" cy="76" r="4" fill="#C89B3C" stroke="none"/>
+  <desc id="desc">WÖk-Signet mit drei Kreisen, Kompass und Wortmarke Wirkungsökonomie.</desc>
+  <defs>
+    <linearGradient id="woek-bg" x1="13" y1="11" x2="107" y2="109" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#071a3a"/>
+      <stop offset=".52" stop-color="#031126"/>
+      <stop offset="1" stop-color="#08234a"/>
+    </linearGradient>
+    <radialGradient id="woek-glow" cx="50%" cy="52%" r="58%">
+      <stop offset="0" stop-color="#123866" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#031126" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="woek-needle-gold" x1="60" y1="50" x2="60" y2="73" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd27b"/>
+      <stop offset="1" stop-color="#d69d35"/>
+    </linearGradient>
+    <linearGradient id="woek-needle-cream" x1="60" y1="72" x2="60" y2="93" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6ead4"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="8" y="8" width="104" height="104" rx="25" fill="url(#woek-bg)"/>
+    <rect x="8" y="8" width="104" height="104" rx="25" fill="url(#woek-glow)"/>
+    <g fill="#8794a7" opacity=".58">
+      <path d="M60 18l3 18h-6z"/>
+      <path d="M60 102l-3-18h6z"/>
+      <path d="M18 71l18-3v6z"/>
+      <path d="M102 71l-18 3v-6z"/>
+    </g>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="60" cy="47" r="24" stroke="#fff3df" stroke-width="4"/>
+      <circle cx="45" cy="75" r="24" stroke="#3e9468" stroke-width="4"/>
+      <circle cx="75" cy="75" r="24" stroke="#d9a13a" stroke-width="4"/>
+      <path d="M60 47 45 75 75 75Z" stroke="#dbe3e5" stroke-width="1.7" opacity=".45"/>
+    </g>
+    <g stroke="#031126" stroke-linejoin="round" stroke-width=".8">
+      <path d="M60 54 65 72H60Z" fill="url(#woek-needle-gold)"/>
+      <path d="M60 54 55 72H60Z" fill="#f0b54b"/>
+      <path d="M60 92 65 72H60Z" fill="url(#woek-needle-cream)"/>
+      <path d="M60 92 55 72H60Z" fill="#fff9ee"/>
+    </g>
+    <path d="M45 72h30" stroke="#031126" stroke-linecap="round" stroke-width="1.2"/>
   </g>
-  <text x="128" y="70" fill="#0B1020" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="5">WIRKUNGSÖKONOMIE</text>
+  <text x="136" y="58" fill="#0B1020" font-family="Georgia, 'Times New Roman', serif" font-size="25" letter-spacing="2">WIRKUNGSÖKONOMIE</text>
+  <text x="138" y="88" fill="#2F7D5C" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.5">WIRKUNG STATT KAPITAL</text>
 </svg>
