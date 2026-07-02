@@ -2,20 +2,20 @@
 
 Die ausführliche technische Übergabe für Claude liegt in der Akademie-App:
 
-`/Users/hagen/Documents/New project/woek-akademie-app/docs/claude-architecture-handoff.md`
+`<Projekt-Root>/woek-akademie-app/docs/claude-architecture-handoff.md`
 
 Warum dort? Die Akademie-App ist ein eigenes Git-Repo unter:
 
-`/Users/hagen/Documents/New project/woek-akademie-app`
+`<Projekt-Root>/woek-akademie-app`
 
 Die öffentliche Website bleibt dieses Repo:
 
-`/Users/hagen/Documents/New project`
+`<Projekt-Root>`
 
 Claude soll vor Akademie-Arbeiten beide Stati prüfen:
 
 ```bash
-cd "/Users/hagen/Documents/New project"
+cd "<Projekt-Root>"
 git status --short
 git -C woek-akademie-app status --short
 ```
@@ -30,3 +30,7 @@ Die Doku beschreibt:
 - Datenbankmigrationen
 - Auth-, Rollen-, Curriculum-, Prüfungs- und Analytics-Flüsse
 - Oracle/OCI als externer Bot-/Feedback-/Analytics-Dienst sowie nicht vorhandene weitere Integrationen
+
+Ergänzende Übergabe für das geplante Institut:
+
+`<Projekt-Root>/docs/claude-institut-architecture-handoff.md`
