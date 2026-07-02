@@ -375,7 +375,7 @@ def register_page(items, sources, methods, data_quality, changelog, source_hash)
         <article class="card"><h3 class="card-title">Methodik</h3><a class="text-link" href="../woek-id-register/methodik/">Methodik online lesen</a></article>
         <article class="card"><h3 class="card-title">Quellen</h3><a class="text-link" href="../woek-id-register/quellen/">Quellen online lesen</a></article>
       </div></section>
-      <section class="section"><div class="card"><p class="hero-kicker">Feedback</p><h2>Review beitragen</h2><p>Quelle ergänzen, Benchmark vorschlagen, Fehler melden oder Fachreview beitragen. Bitte keine personenbezogenen Daten senden.</p><a class="btn btn-secondary" href="mailto:kontakt@wirkungsoekonomie.de?subject=Feedback%20zum%20WOEK-ID-Register%20v2.1&body=Bitte%20W%C3%96k-ID%2C%20Quelle%2C%20Benchmark%20oder%20Fehlerhinweis%20eintragen.%20Bitte%20keine%20personenbezogenen%20Daten%20senden.">Fehler / Ergänzung melden</a></div></section>
+      <section class="section"><div class="card"><p class="hero-kicker">Feedback</p><h2>Review beitragen</h2><p>Quelle vorschlagen, Benchmark vorschlagen, Fehler melden oder Fachreview beitragen. Bitte keine personenbezogenen Daten senden.</p><a class="btn btn-secondary" href="mailto:kontakt@wirkungsoekonomie.de?subject=Feedback%20zum%20WOEK-ID-Register%20v2.1&body=Bitte%20W%C3%96k-ID%2C%20Quelle%2C%20Benchmark%20oder%20Fehlerhinweis%20eintragen.%20Bitte%20keine%20personenbezogenen%20Daten%20senden.">Fehler / Ergänzung melden</a></div></section>
       <script id="woekRegisterData" type="application/json">{embedded}</script>
       <script>
 const data = JSON.parse(document.getElementById("woekRegisterData").textContent);

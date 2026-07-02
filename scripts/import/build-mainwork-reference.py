@@ -614,7 +614,7 @@ def write_report(parsed: dict[str, object], docx_path: Path) -> None:
     stats = parsed["stats"]  # type: ignore[assignment]
     report = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "sourceFile": str(docx_path),
+        "sourceFile": docx_path.name,
         "documentId": DOC_ID,
         "sourceVersion": SOURCE_VERSION,
         "webVersion": WEB_VERSION,
