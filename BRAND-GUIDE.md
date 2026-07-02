@@ -2,7 +2,14 @@
 
 Arbeitsgrundlage für Corporate Identity und Corporate Design
 
-Stand: 2026-05-17
+Stand: 2026-05-17 (Farben und Schriften am 2026-07-03 an den offiziellen, von Natalie
+verbindlich geteilten WÖk Brand Guide angeglichen)
+
+> Maßgeblich sind die Werte des offiziellen WÖk Brand Guide: Farbwelt (Navy `#0B1020`,
+> Ivory `#F6F1EB`, Green `#2F7D5C`, Gold `#C89B3C`, Coral `#C85A3C`, Text `#2C2C2E`) und
+> Typografie (Headlines Playfair Display, Fließtext/Zahlen/Tabellen/UI Source Sans 3,
+> Print/PDF Merriweather). Einzige bewusste Web-Abweichung: `--gold` wird im CSS auf `#9A6F12`
+> abgedunkelt, damit Gold auf Ivory ausreichend Kontrast (WCAG) erreicht.
 
 ## 1. Markenpositionierung
 
@@ -227,11 +234,11 @@ Ausgangspunkt:
 
 ```css
 --navy: #0B1020;
---ivory: #F6F1E8;
+--ivory: #F6F1EB;
 --green: #2F7D5C;
---gold: #C89B3C;
---coral: #C85A4A;
---text: #222222;
+--gold: #C89B3C;   /* Web-CSS: auf #9A6F12 abgedunkelt fuer WCAG-Kontrast auf Ivory */
+--coral: #C85A3C;
+--text: #2C2C2E;
 --line: #E8E4DC;
 ```
 
@@ -266,7 +273,7 @@ Die Palette beibehalten, aber um definierte Tints und funktionale Farben ergänz
 --ivory-deep: #EFE7D9;
 --success: #2F7D5C;
 --warning: #C89B3C;
---risk: #C85A4A;
+--risk: #C85A3C;
 ```
 
 ## 8. Typografie
@@ -275,18 +282,19 @@ Die Palette beibehalten, aber um definierte Tints und funktionale Farben ergänz
 
 Empfehlung:
 
-- Headlines: Source Serif 4
-- Body: Inter
+- Headlines: Playfair Display
+- Fließtext: Source Sans 3
+- Zahlen, Tabellen, UI: Source Sans 3
 
 Begründung:
 
-Source Serif 4 trägt den Buch- und Grundlagencharakter. Inter sorgt für klare, moderne Lesbarkeit in Navigation, Karten, Tabellen und UI.
+Playfair Display trägt den editorialen, autoritativen Charakter der Headlines. Source Sans 3 sorgt für klare, moderne Lesbarkeit in Fließtext, Navigation, Karten, Tabellen und UI und deckt zugleich Zahlen und Tabellen konsistent ab.
 
 Fallbacks:
 
 ```css
---font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
---font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+--font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+--font-body: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 ```
 
 ### Logo/Wortmarke
@@ -306,10 +314,11 @@ Die Wortmarke muss bei kleinen Headergrößen lesbar bleiben. Das Signet muss un
 
 Empfehlung:
 
-- Headlines: Source Serif 4 oder vergleichbare Editorial Serif
-- Body: Source Serif 4 oder eine sehr gut lesbare Serif/Sans-Kombination
-- Tabellen und Marginalien: Inter oder Source Sans 3
+- Headlines: Merriweather
+- Body: Merriweather
+- Tabellen und Marginalien: Source Sans 3
 
+Merriweather ist die offizielle Print/PDF-Schrift und wirkt sachlich, gut lesbar und ruhig.
 PDFs dürfen näher am Buchlook sein als die Website, aber nicht historisierend wirken.
 
 ### Social Media

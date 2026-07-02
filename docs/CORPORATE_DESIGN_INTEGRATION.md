@@ -12,16 +12,16 @@ Stand: 2026-07-02
 ## Farben
 
 - Navy: `#0B1020`
-- Ivory: `#F6F1E8`
+- Ivory: `#F6F1EB`
 - Green: `#2F7D5C`
-- Gold: `#9A6F12`
-- Coral: `#C85A4A`
+- Gold: `#9A6F12` (Brand-Gold `#C89B3C`, im Web bewusst fuer WCAG-Kontrast auf Ivory abgedunkelt)
+- Coral: `#C85A3C`
 - Linien: `#E8E4DC`
 
 ## Typografie
 
-- Headlines: `Source Serif 4` mit Georgia-Fallback
-- Fließtext/UI: `Inter` mit System-Fallback
+- Headlines: `Playfair Display` mit Georgia-Fallback
+- Fließtext/UI/Zahlen/Tabellen: `Source Sans 3` mit System-Fallback
 - Die Referenz nutzt diese bestehende Hierarchie weiter und begrenzt die Lesespalte stärker als allgemeine Seiten.
 
 ## Übernommene UI-Muster
