@@ -62,6 +62,15 @@ const tools = [
     why: "T-SROI übersetzt Investitionen, Prävention und Transformation in eine nachvollziehbare Wirkungsrendite.",
   },
   {
+    title: "Impact-of-Investment (IOI)",
+    type: "Investitionskennzahl",
+    status: "Dossier vorhanden",
+    href: "werkzeuge/impact-controlling/impact-of-investment/",
+    dossier: "werkzeuge/impact-controlling/dossiers/impact-of-investment/",
+    short: "IOI setzt positive Netto-Wirkung ins Verhältnis zum eingesetzten Kapital, Budget oder Investitionsvolumen.",
+    why: "IOI zeigt, ob ein Euro nur finanzielle Aktivität auslöst oder belegbare positive Netto-Wirkung erzeugt.",
+  },
+  {
     title: "Netto-Wirkungs-Index",
     type: "Kennzahl",
     status: "Dossier vorhanden",
@@ -174,7 +183,7 @@ const go10MethodPapers = [
 const wirkungscontrollingDetailDossier = {
   slug: "wirkungscontrolling",
   title: "Wirkungscontrolling / Impact Controlling",
-  text: "Umfassende zitierfähige Onlinefassung mit Rechenlogik, Scorecards, NWI, T-SROI, Datenqualität, Assurance und Umsetzungspfaden.",
+  text: "Umfassende zitierfähige Onlinefassung mit Rechenlogik, Scorecards, NWI, IOI, T-SROI, Datenqualität, Assurance und Umsetzungspfaden.",
   href: "werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
   pdf: "assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf",
 };
@@ -190,12 +199,14 @@ const go10ToolCards = [
   ["WÖk-ID-Browser", "Methodenseite vorhanden", "werkzeuge/woek-ids/", "Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen."],
   ["Scorecard-Generator", "Methodik", "werkzeuge/scorecards/", "Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten."],
   ["NWI-Rechner", "Methodik", "werkzeuge/netto-wirkungs-index/", "Positive, negative und neutrale Wirkung ohne freie Kompensation zusammenführen."],
+  ["IOI-Rechner", "Methodik", "werkzeuge/impact-controlling/impact-of-investment/", "Positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz sichtbar machen."],
   ["T-SROI-Rechner", "Methodik", "werkzeuge/t-sroi/", "Investitionen, Transformationswirkung, Resilienzfaktor und Datenqualität modellhaft zusammenführen."],
   ["Reverse-Merit-Order-Demo", "Methodik", "werkzeuge/reverse-merit-order/", "Rote Linien und schwächste kritische Wirkungsfelder sichtbar machen."],
   ["Datenqualitäts-/Assurance-Check", "Methodik", "werkzeuge/datenqualitaet-assurance/", "Prüfstatus, Datenherkunft, Schätzungen und Revisionsbedarf transparent markieren."],
 ];
 
 const dossierPages = [
+  ["impact-of-investment", "Impact-of-Investment (IOI)", "Kennzahl für positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz.", "IOI verbindet NWI, Investitionssumme und Entscheidungsvorlage: Er zeigt, ob Kapital in reale Zustandsverbesserung übersetzt wird, ohne rote Linien, Datenqualität oder demokratische Abwägung zu ersetzen."],
   ["t-sroi", "T-SROI", "Transformational Social Return on Investment als Instrument für Investitionswirkung, Prävention, Transformation und systemische Rendite.", "T-SROI macht sichtbar, welche gesellschaftlichen, ökologischen und demokratischen Zustandsveränderungen durch Investitionen entstehen und wie sie im Verhältnis zum Ressourceneinsatz bewertet werden können."],
   ["nwi", "Netto-Wirkungs-Index", "Operative Kennzahl für positive, negative und neutrale Wirkung im WÖk-Rahmen.", "Der NWI verdichtet Wirkung nicht zu einer moralischen Behauptung, sondern ordnet geprüfte positive und negative Zustandsveränderungen transparent ein."],
   ["woek-ids", "WÖk-IDs", "Indikatorenarchitektur für SDGs, SDG+, Standards, Datenquellen und Prüfstatus.", "WÖk-IDs schaffen die methodische Adresse jedes Wirkungsindikators und verhindern Dopplung, Beliebigkeit und unklare Quellen."],
@@ -209,6 +220,7 @@ const dossierPages = [
 ];
 
 const toolPages = [
+  ["werkzeuge/impact-controlling/impact-of-investment/index.html", "Impact-of-Investment (IOI)", "Positive Netto-Wirkung je investiertem Euro.", "IOI setzt geprüfte positive Netto-Wirkung ins Verhältnis zu Investition, Budget oder Kapitaleinsatz und ergänzt ROI, NWI und T-SROI.", "werkzeuge/impact-controlling/dossiers/impact-of-investment/"],
   ["werkzeuge/impact-controlling/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.", "werkzeuge/impact-controlling/dossiers/t-sroi/"],
   ["werkzeuge/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.", "werkzeuge/impact-controlling/dossiers/t-sroi/"],
   ["werkzeuge/netto-wirkungs-index/index.html", "Netto-Wirkungs-Index", "Kennzahl für positive, negative und neutrale Wirkung.", "Der Netto-Wirkungs-Index ordnet Wirkung im Referenzrahmen der SDGs, Agenda 2030 und SDG+ ein.", "werkzeuge/impact-controlling/dossiers/nwi/"],
@@ -502,7 +514,7 @@ function politicalBlock(base, context = "dieser Methodenbereich") {
       <p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit dieses Wirkungsfeld demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann. Unterschiedliche Parteien können innerhalb dieses Rahmens verschiedene Wege wählen. Entscheidend ist, dass die Wirkung sichtbar, überprüfbar und korrigierbar bleibt.</p>
       ${dataTable(["Ebene", "Aufgabe für Politik und Umsetzung"], [
         ["Aufgabe der Politik", `${context} braucht Mandat, Datenzugang, Prüfstandards, Verantwortlichkeiten und demokratische Korrekturwege.`],
-        ["Politische Rahmenbedingungen", "WÖk-IDs, Scorecards, NWI, T-SROI, Datenqualität und Assurance müssen in Gesetze, Haushalte, Förderlogiken und Berichtspflichten übersetzbar sein."],
+        ["Politische Rahmenbedingungen", "WÖk-IDs, Scorecards, NWI, IOI, T-SROI, Datenqualität und Assurance müssen in Gesetze, Haushalte, Förderlogiken und Berichtspflichten übersetzbar sein."],
         ["Ausgestaltungsspielraum", "Parteien können unterschiedliche Prioritäten bei Tempo, Verbindlichkeit, Pilotierung, Förderung, Sanktionen und Rückverteilung setzen."],
         ["Zielkonflikte", "Präzision, Bürokratiearmut, Datenschutz, KMU-Belastung, Innovationsschutz, Vergleichbarkeit und öffentliche Kontrolle müssen politisch austariert werden."],
         ["Rollenverteilung", "EU, Bund, Länder, Kommunen, Verwaltung, Wirtschaft, Wissenschaft und Zivilgesellschaft tragen Daten, Standards, Evaluation, Beteiligung und Umsetzung gemeinsam."],
@@ -521,7 +533,7 @@ function bookBlock(base) {
     <div class="section-header">
       <p class="hero-kicker">Online-Buch</p>
       ${sectionTitle("book-anchors", "Anker im Online-Buch")}
-      <p>Diese Kapitel bilden die methodische Grundlage für Wirkungsmessung, WÖk-IDs, Scorecards, T-SROI und Wirkungsdatenräume.</p>
+      <p>Diese Kapitel bilden die methodische Grundlage für Wirkungsmessung, WÖk-IDs, Scorecards, NWI, IOI, T-SROI und Wirkungsdatenräume.</p>
     </div>
     <div class="model-strip">${bookAnchors.map(([label, link]) => `<a href="${href(base, link)}">${escapeHtml(label)}</a>`).join("")}</div>
   </section>`;
@@ -609,6 +621,8 @@ function methodPapersForTool(title) {
       || (normalized.includes("score") && paper.slug.includes("scorecards"))
       || (normalized.includes("netto") && paper.slug.includes("nwi"))
       || (normalized.includes("t-sroi") && paper.slug.includes("t-sroi"))
+      || (normalized.includes("impact-of-investment") && paper.slug.includes("t-sroi"))
+      || (normalized.includes("ioi") && paper.slug.includes("t-sroi"))
       || (normalized.includes("reverse") && paper.slug.includes("scorecards"));
   });
 }
@@ -617,13 +631,13 @@ function overviewPage() {
   page({
     rel: "werkzeuge/impact-controlling/index.html",
     title: "Impact Controlling | Wirkungsökonomie",
-    description: "Impact Controlling übersetzt Wirkung in Steuerung, Controlling, Reporting, Risiko, Investition und Entscheidung.",
+    description: "Impact Controlling übersetzt Wirkung in Steuerung, Controlling, Reporting, Risiko, IOI, T-SROI, Investition und Entscheidung.",
     searchSection: "Werkzeuge",
     body: (base, route) => `${hero(base, {
       kicker: "Methodenbereich",
       title: "Impact Controlling",
       subtitle: "Wirkung sichtbar, bewertbar und entscheidungsrelevant machen.",
-      text: "Impact Controlling ist der methodische Dachbereich der Wirkungsökonomie. Es verbindet WÖk-IDs, Scorecards, NWI, T-SROI, Datenqualität, Benchmarks und Wirkungsdatenräume.",
+      text: "Impact Controlling ist der methodische Dachbereich der Wirkungsökonomie. Es verbindet WÖk-IDs, Scorecards, NWI, IOI, T-SROI, Datenqualität, Benchmarks und Wirkungsdatenräume.",
       action: `<a class="btn btn-primary" href="${href(base, wirkungscontrollingDetailDossier.href)}">Neues Detailkonzept-Dossier lesen</a><a class="btn btn-secondary" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF herunterladen</a><a class="btn btn-secondary" href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Gesamtdossier lesen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
@@ -632,12 +646,12 @@ function overviewPage() {
       <div class="section-header">
         <p class="hero-kicker">Methodik</p>
         ${sectionTitle("logic", "Von Wirkung zu Entscheidung")}
-        <p>Wirkung ist neutral und relational. Impact Controlling macht sichtbar, welche Zustände sich verändern, welche Nebenwirkungen entstehen, welche Daten belastbar sind und wie Entscheidungen auf positive Netto-Wirkung ausgerichtet werden können.</p>
+        <p>Wirkung ist neutral und relational. Impact Controlling macht sichtbar, welche Zustände sich verändern, welche Nebenwirkungen entstehen, welche Daten belastbar sind und wie Entscheidungen auf positive Netto-Wirkung, wirksamen Kapitaleinsatz und lernende Rückkopplung ausgerichtet werden können.</p>
       </div>
       ${cardGrid(base, [
         { title: "Messen", text: "WÖk-IDs, Datenquellen, Einheiten und Schwellen machen Wirkung adressierbar." },
-        { title: "Bewerten", text: "Scorecards, Benchmarks, NWI und Reverse Merit Order ordnen Wirkung ein." },
-        { title: "Steuern", text: "T-SROI, KII, Assurance und Wirkungsdatenräume machen Wirkung entscheidungsrelevant." },
+        { title: "Bewerten", text: "Scorecards, Benchmarks, NWI, IOI und Reverse Merit Order ordnen Wirkung ein." },
+        { title: "Steuern", text: "IOI, T-SROI, KII, Assurance und Wirkungsdatenräume machen Wirkung entscheidungsrelevant." },
       ])}
     </section>
     ${toolGrid(base)}
@@ -645,7 +659,7 @@ function overviewPage() {
       <div class="section-header">
         <p class="hero-kicker">Go 10 · Methodenpapiere</p>
         ${sectionTitle("methodenpapiere", "Ausführliche Methodenpapiere")}
-        <p>Diese Veröffentlichungen sind Methodenpapiere für Impact Controlling, WÖk-IDs, Scorecards, NWI und T-SROI. Sie sind keine Ausarbeitungen eines einzelnen Wirkungsfelds, sondern methodische Grundlagen für mehrere Wirkungsfelder.</p>
+        <p>Diese Veröffentlichungen sind Methodenpapiere für Impact Controlling, WÖk-IDs, Scorecards, NWI, IOI und T-SROI. Sie sind keine Ausarbeitungen eines einzelnen Wirkungsfelds, sondern methodische Grundlagen für mehrere Wirkungsfelder.</p>
       </div>
       <div class="card-grid three">
         <article class="card">
@@ -706,14 +720,14 @@ function dossierOverview() {
   page({
     rel: "werkzeuge/impact-controlling/dossier/index.html",
     title: "Gesamtdossier Impact Controlling | Wirkungsökonomie",
-    description: "Online-Gesamtdossier zu Impact Controlling, T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Benchmarks, Assurance und KII.",
+    description: "Online-Gesamtdossier zu Impact Controlling, IOI, T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Benchmarks, Assurance und KII.",
     searchSection: "Werkzeuge",
     searchType: "Dossier",
     body: (base, route) => `${hero(base, {
       kicker: "Gesamtdossier",
       title: "Gesamtdossier Impact Controlling",
-      subtitle: "T-SROI, NWI, WÖk-IDs, Scorecards und Wirkungsdatenräume.",
-      text: "Dieses Dossier bündelt die Methodenarchitektur des Impact Controllings und verweist auf passende Demos, Einzeldossiers und Arbeitsmaterialien.",
+      subtitle: "NWI, IOI, T-SROI, WÖk-IDs, Scorecards und Wirkungsdatenräume.",
+      text: "Dieses Dossier bündelt die Methodenarchitektur des Impact Controllings und verweist auf passende Demos, Einzeldossiers, Investitionskennzahlen und Arbeitsmaterialien.",
       action: `<a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Demo öffnen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
@@ -732,11 +746,12 @@ function dossierOverview() {
     <section class="section article-section">
       <article class="article-body fulltext-reader">
         ${sectionTitle("methodenarchitektur", "Methodenarchitektur")}
-        <p>Impact Controlling beginnt beim Referenzrahmen aus SDGs, Agenda 2030 und SDG+. Daraus werden WÖk-IDs, Scorecards, Benchmarks, NWI, T-SROI und Governance-Mechanismen abgeleitet.</p>
+        <p>Impact Controlling beginnt beim Referenzrahmen aus SDGs, Agenda 2030 und SDG+. Daraus werden WÖk-IDs, Scorecards, Benchmarks, NWI, IOI, T-SROI und Governance-Mechanismen abgeleitet.</p>
         ${sectionTitle("rechenlogik", "Rechenlogik")}
         ${dataTable(["Baustein", "Aufgabe", "Grenze"], [
           ["Scorecard", "Mehrdimensionale Bewertung von Wirkung", "Keine Schönrechnung kritischer Felder"],
           ["NWI", "Verdichtung positiver und negativer Wirkung", "Nur so belastbar wie Daten und Schwellen"],
+          ["IOI", "Positive Netto-Wirkung je investiertem Euro oder Budget", "Nicht als Autopilot für Investitionsentscheidungen verwenden"],
           ["T-SROI", "Verhältnis von Ressourceneinsatz und Transformationswirkung", "Keine monetäre Totalsimulation von Würde, Demokratie oder Natur"],
           ["Assurance", "Prüfstatus und Datenqualität", "Prüfung ersetzt keine politische Bewertung"],
         ])}
@@ -758,7 +773,7 @@ function dossierOverview() {
       <div class="section-header">
         <p class="hero-kicker">Go 10 · Methodenpapiere</p>
         ${sectionTitle("methodenpapiere", "Methodenpapiere als Grundlage")}
-        <p>Die folgenden Papiere vertiefen die Methodenlogik hinter WÖk-IDs, Scorecards, NWI und T-SROI.</p>
+        <p>Die folgenden Papiere vertiefen die Methodenlogik hinter WÖk-IDs, Scorecards, NWI, IOI und T-SROI.</p>
       </div>
       ${methodPaperCardGrid(base)}
     </section>
@@ -778,13 +793,13 @@ function methodPaperOverviewPage() {
   page({
     rel: "werkzeuge/impact-controlling/methodenpapiere/index.html",
     title: "Methodenpapiere Impact Controlling | Wirkungsökonomie",
-    description: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI und T-SROI als Online-Volltext mit DOCX- und PDF-Downloads.",
+    description: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI, IOI und T-SROI als Online-Volltext mit DOCX- und PDF-Downloads.",
     searchSection: "Werkzeuge",
     searchType: "Methodenpapier",
     body: (base, route) => `${hero(base, {
       kicker: "Methodenpapiere · Go 10",
       title: "Methodenpapiere Impact Controlling",
-      subtitle: "WÖk-IDs, Scorecards, NWI und T-SROI als methodische Grundlage.",
+      subtitle: "WÖk-IDs, Scorecards, NWI, IOI und T-SROI als methodische Grundlage.",
       text: "Diese Papiere sind keine Lebensbereichs-Detailkonzepte. Sie erklären die Methodenarchitektur, die in Produkten, Unternehmen, Staat, Kapital, Bildung, Gesundheit, Wohnen, Klima und weiteren Wirkungsfeldern genutzt wird.",
       action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/")}">Impact Controlling öffnen</a>`,
     })}
@@ -1142,7 +1157,7 @@ function workshopPages() {
       ${cardGrid(base, [
         { title: "Impact Controlling", text: "Methodenbereich und Einstieg.", href: "werkzeuge/impact-controlling/" },
         { title: "Gesamtdossier Impact Controlling", text: "Methodenarchitektur, Rechenlogik, Einzeldossiers und Demo-Grenzen.", href: "werkzeuge/impact-controlling/dossier/" },
-        { title: "Methodenpapiere Go 10", text: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI und T-SROI.", href: "werkzeuge/impact-controlling/methodenpapiere/" },
+        { title: "Methodenpapiere Go 10", text: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI, IOI und T-SROI.", href: "werkzeuge/impact-controlling/methodenpapiere/" },
         { title: "Impact-Controlling-Rechner", text: "Scorecard-, NWI-, IOI- und T-SROI-Demo.", href: "erleben/impact-controlling-rechner/" },
         ...go10MethodPapers.map((paper) => ({ title: paper.title, text: paper.subtitle, href: `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/` })),
         ...dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/` })),
@@ -1201,6 +1216,7 @@ function updateSitemap() {
     ...go10MethodPapers.map((paper) => `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`),
     wirkungscontrollingDetailDossier.href,
     ...dossierPages.map(([slug]) => `werkzeuge/impact-controlling/dossiers/${slug}/`),
+    "werkzeuge/impact-controlling/impact-of-investment/",
     "werkzeuge/impact-controlling/t-sroi/",
     "werkzeuge/t-sroi/",
     "werkzeuge/netto-wirkungs-index/",

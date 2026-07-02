@@ -305,7 +305,12 @@ function entriesFromContent(file) {
   const text = fs.readFileSync(file, "utf8");
   const route = routeFor(file);
   if (isInternalPublicRoute(route)) return [];
+  const metaTitle = clean(text.match(/<meta\s+name=["']search_title["']\s+content=["']([^"']+)["']/i)?.[1]);
+  const metaDescription =
+    clean(text.match(/<meta\s+name=["']search_description["']\s+content=["']([^"']+)["']/i)?.[1]) ||
+    clean(text.match(/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i)?.[1]);
   const title =
+    metaTitle ||
     text.match(/^title:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
     clean(text.match(/<h1[^>]*>(.*?)<\/h1>/i)?.[1]) ||
     path.basename(file).replace(/\.[^.]+$/, "");
@@ -334,7 +339,7 @@ function entriesFromContent(file) {
   const pageEntry = {
     id: `woek-page-${hash(file)}`,
     title,
-    description: body.slice(0, 240),
+    description: metaDescription || body.slice(0, 240),
     url: route,
     section: documentType,
     type: documentType,
@@ -401,7 +406,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["src/content/docs", "blog", "journal", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "anwendungen", "verstehen"]
+const contentFiles = ["src/content/docs", "blog", "journal", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "werkzeuge", "anwendungen", "verstehen"]
   .flatMap((dir) => walk(dir));
 for (const file of contentFiles) {
   for (const { entry, meta: itemMeta } of entriesFromContent(file)) {

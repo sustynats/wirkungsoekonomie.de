@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "generated_at": "2026-06-30T18:57:53.983Z",
+  "generated_at": "2026-07-02T18:22:49.880Z",
   "principle": "Erst Alltag, dann Begriff. Erst Nutzerfrage, dann Methode. Erst verstehen, dann ausprobieren.",
   "public_entrypoints": [
     {
@@ -51,7 +51,7 @@
     {
       "title": "Impact Controlling",
       "question": "Wie wird aus Daten eine bessere Entscheidung?",
-      "text": "Trennt operative Netto-Wirkung, NWI, T-SROI, Datenqualität, Audit und Lernschleife.",
+      "text": "Trennt operative Netto-Wirkung, NWI, IOI, T-SROI, Datenqualität, Audit und Lernschleife.",
       "href": "erleben/impact-controlling-rechner/",
       "status": "Demo",
       "type": "Controlling",
@@ -68,7 +68,7 @@
     }
   ],
   "counts": {
-    "tools": 112,
+    "tools": 113,
     "key_features": 2,
     "demos": 34,
     "prepared": 24,
@@ -820,9 +820,31 @@
       "prepared": false,
       "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
       "related": [
+        "IOI",
         "T-SROI",
         "Scorecards",
         "KII statt KPI"
+      ]
+    },
+    {
+      "title": "Impact-of-Investment / IOI",
+      "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/impact-of-investment/",
+      "cluster": "D",
+      "cluster_title": "Impact Controlling & Transformationsmessung",
+      "type": [
+        "Kennzahl",
+        "Methode"
+      ],
+      "status": "Methodik",
+      "public_position": "method_or_reference",
+      "method_bucket": "Controlling",
+      "demo": false,
+      "prepared": false,
+      "protection_line": "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
+      "related": [
+        "Impact Controlling",
+        "NWI",
+        "T-SROI"
       ]
     },
     {

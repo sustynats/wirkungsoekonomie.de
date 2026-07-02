@@ -855,6 +855,7 @@ function schoolPage() {
 
 const tools = [
   ["impact-controlling", "Impact Controlling", "Der übergeordnete Methodenbereich, der Wirkung in Steuerung, Controlling, Reporting, Risiko und Entscheidung übersetzt.", ["Wirtschaft & Unternehmen", "Staat, Recht & Demokratie"], "referenz/kapitel-044-wirkungscontrolling-im-unternehmen/"],
+  ["impact-controlling/impact-of-investment", "Impact-of-Investment / IOI", "Kennzahl für positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz.", ["Wirtschaft & Unternehmen", "Finanzsystem & Kapital"], "begriffe/impact-of-investment/"],
   ["impact-controlling/t-sroi", "T-SROI", "Transformational Social Return on Investment: ein Instrument zur Bewertung finanzieller, sozialer, ökologischer und systemischer Transformationswirkung.", ["Wirtschaft & Unternehmen", "Finanzsystem & Kapital"], "referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/"],
   ["netto-wirkungs-index", "Netto-Wirkungs-Index", "Operative Kennzahl zur Einordnung positiver, negativer und neutraler Wirkung innerhalb des WÖk-Rahmens.", ["Produkte & Konsum", "Staat, Recht & Demokratie"], "begriffe/nwi/"],
   ["scorecards", "Scorecards", "Strukturierte Bewertung von Produkten, Aktivitäten, Organisationen oder Entscheidungen anhand von WÖk-IDs, Benchmarks und Wirkungsskalen.", ["Produkte & Konsum", "Wirtschaft & Unternehmen"], "referenz/kapitel-032-benchmarks-skalen-und-scorecards/"],
@@ -881,7 +882,8 @@ const methodClusters = [
 ].map(([key, title, text]) => ({ key, title, text }));
 
 const legacyMethodMapTools = [
-  ["Impact Controlling", "Dachmethode, die Wirkung in Steuerung, Controlling, Reporting, Risiko, Investition und Entscheidung übersetzt.", "A", "Methodik", "werkzeuge/impact-controlling/", ["T-SROI", "Scorecards", "KII statt KPI"]],
+  ["Impact Controlling", "Dachmethode, die Wirkung in Steuerung, Controlling, Reporting, Risiko, IOI, Investition und Entscheidung übersetzt.", "A", "Methodik", "werkzeuge/impact-controlling/", ["IOI", "T-SROI", "Scorecards", "KII statt KPI"]],
+  ["Impact-of-Investment / IOI", "Positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz sichtbar machen.", "A", "Methodik", "werkzeuge/impact-controlling/impact-of-investment/", ["Impact Controlling", "NWI", "T-SROI"], "IOI ist Entscheidungshilfe, kein Autopilot und keine Anlageberatung."],
   ["T-SROI", "Transformationswirkung und Systemhebel im Verhältnis zum Ressourceneinsatz bewerten; nicht die operative Netto-Wirkungskennzahl.", "A", "Methodik", "werkzeuge/t-sroi/", ["Impact Controlling", "Wirkungsfonds", "Transformationswirkung"]],
   ["Benchmarks & Archetypen", "Branchen-, Produkt- und Organisationstypen in nachvollziehbare Bewertungsräume übersetzen.", "A", "Methodik", "werkzeuge/benchmarks-archetypen/", ["Scorecards", "WÖk-IDs", "Wirkungsrat"]],
   ["Reverse Merit Order", "Schutzregel: schwere negative Wirkung wird nicht durch positive Einzelwerte kompensiert.", "A", "Methodik", "werkzeuge/reverse-merit-order/", ["Scorecards", "Wirkungsrat", "Wirkungsumsatzsteuer"], "Rote Linien nicht kompensieren."],
@@ -1308,6 +1310,7 @@ const cardsToRestoreOrPrepare = [
 
 const clusterOverrideByTitle = new Map([
   ["Impact Controlling", "D"],
+  ["Impact-of-Investment / IOI", "D"],
   ["T-SROI", "D"],
   ["Netto-Wirkungs-Index", "C"],
   ["Scorecards", "C"],
@@ -1351,6 +1354,7 @@ const titleOverrideByTitle = new Map([["Netto-Wirkungs-Index", "Netto-Wirkungs-I
 
 const typeOverrideByTitle = new Map([
   ["Impact Controlling", ["Managementinstrument"]],
+  ["Impact-of-Investment / IOI", ["Kennzahl", "Methode"]],
   ["T-SROI", ["Kennzahl", "Methode"]],
   ["Netto-Wirkungs-Index", ["Kennzahl"]],
   ["Netto-Wirkungs-Index / NWI", ["Kennzahl"]],
@@ -1375,7 +1379,8 @@ const typeOverrideByTitle = new Map([
 ]);
 
 const textOverrideByTitle = new Map([
-  ["Impact Controlling", "Impact Controlling übersetzt Wirkungsdaten, Scorecards, KII, NWI und T-SROI in Steuerung, Reporting, Risiko, Investition und Entscheidung."],
+  ["Impact Controlling", "Impact Controlling übersetzt Wirkungsdaten, Scorecards, KII, NWI, IOI und T-SROI in Steuerung, Reporting, Risiko, Investition und Entscheidung."],
+  ["Impact-of-Investment / IOI", "IOI setzt geprüfte positive Netto-Wirkung ins Verhältnis zum eingesetzten Euro. Er ergänzt ROI, NWI und T-SROI, ersetzt aber keine demokratische Abwägung und keine Risikoprüfung."],
   ["T-SROI", "Der T-SROI bewertet Transformationswirkung und systemische Hebelwirkung. Er baut auf geprüfter Netto-Wirkung auf, ersetzt aber weder Scorecard noch NWI."],
   ["Netto-Wirkungs-Index", "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er verdichtet Scorecards, WÖk-IDs, Benchmarks, Einzelscores, Datenqualität, Mindestbedingungen und Reverse Merit Order zu einer prüfbaren Netto-Wirkungsbewertung."],
   ["Reverse Merit Order", "Die Reverse Merit Order begrenzt die Gesamtbewertung durch das kritischste zentrale Wirkungsfeld. Sie schützt vor Schönrechnung, Ablasslogik und Greenwashing."],
@@ -1384,6 +1389,7 @@ const textOverrideByTitle = new Map([
 
 const noticeOverrideByTitle = new Map([
   ["T-SROI", "T-SROI misst nicht noch einmal Netto-Wirkung. Diese Aufgabe liegt beim NWI."],
+  ["Impact-of-Investment / IOI", "IOI misst Wirkungseffizienz je Euro, entscheidet aber nicht allein über Investitionen."],
   ["Netto-Wirkungs-Index", "Der NWI ist keine Transformationskennzahl und kein Ersatz für die Scorecard."],
   ["Reverse Merit Order", "Bewertungsregel und Nichtkompensationslogik: rote Linien werden nicht kompensiert."],
   ["Wirkungsrat", "Governance- und Qualitätssicherungslogik, keine amtliche Entscheidung."],
@@ -1596,7 +1602,7 @@ const publicToolEntrypoints = [
   {
     title: "Impact Controlling",
     question: "Wie wird aus Daten eine bessere Entscheidung?",
-    text: "Trennt operative Netto-Wirkung, NWI, T-SROI, Datenqualität, Audit und Lernschleife.",
+    text: "Trennt operative Netto-Wirkung, NWI, IOI, T-SROI, Datenqualität, Audit und Lernschleife.",
     href: "erleben/impact-controlling-rechner/",
     status: "Demo",
     type: "Controlling",
@@ -1706,7 +1712,7 @@ function toolOverview() {
     rel: "werkzeuge/index.html",
     title: "Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0",
     description:
-      "Tool-Landschaft 2.0 der Wirkungsökonomie: Nutzerfragen, Demos, Methoden, Scorecards, NWI, T-SROI, Datenqualität, Governance und Schutzlinien.",
+      "Tool-Landschaft 2.0 der Wirkungsökonomie: Nutzerfragen, Demos, Methoden, Scorecards, NWI, IOI, T-SROI, Datenqualität, Governance und Schutzlinien.",
     searchSection: "Werkzeuge",
     body: (base) => `<section class="hero method-map-hero">
         <div class="hero-grid">
@@ -2083,10 +2089,10 @@ function workshopPages() {
     "Arbeitsbibliothek nach Instrumenten",
     "Materialien werden den Werkzeugen zugeordnet, ohne bestehende Dokumentpfade zu zerstören.",
     tools
-      .filter((tool) => ["wirkungssteuergesetz", "impact-controlling", "impact-controlling/t-sroi", "scorecards", "woek-ids", "wirkungsrat"].includes(tool.slug))
+      .filter((tool) => ["wirkungssteuergesetz", "impact-controlling", "impact-controlling/impact-of-investment", "impact-controlling/t-sroi", "scorecards", "woek-ids", "wirkungsrat"].includes(tool.slug))
       .map((tool) => ({ title: tool.title, text: tool.text, href: `werkstatt/arbeitsbibliothek/instrumente/${tool.slug.replace("impact-controlling/t-sroi", "t-sroi")}/`, linkLabel: "Regal öffnen" })),
   );
-  for (const tool of tools.filter((item) => ["wirkungssteuergesetz", "impact-controlling", "impact-controlling/t-sroi", "scorecards", "woek-ids", "wirkungsrat"].includes(item.slug))) {
+  for (const tool of tools.filter((item) => ["wirkungssteuergesetz", "impact-controlling", "impact-controlling/impact-of-investment", "impact-controlling/t-sroi", "scorecards", "woek-ids", "wirkungsrat"].includes(item.slug))) {
     const slug = tool.slug.replace("impact-controlling/t-sroi", "t-sroi");
     simpleLibraryPage(
       `werkstatt/arbeitsbibliothek/instrumente/${slug}/index.html`,
