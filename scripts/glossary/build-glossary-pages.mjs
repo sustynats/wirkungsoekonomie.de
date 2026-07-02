@@ -2689,6 +2689,11 @@ if (data.terms.some((term) => term.slug === "sechster-kondratieff")) {
   writeGlossaryTermAlias("6-kondratieff", "6. Kondratieff", "sechster-kondratieff", "6. Kondratieff", kondratieffAliasNote);
 }
 
+if (data.terms.some((term) => term.slug === "wahrheitsillusionseffekt")) {
+  const illusoryTruthAliasNote = `Dieser alternative Begriff verweist auf die kanonische Glossar-Detailseite <a href="../wahrheitsillusionseffekt/">Wahrheitsillusionseffekt</a>. Die Weiterleitung ist ein Alias für den Illusory-Truth-Effekt.`;
+  writeGlossaryTermAlias("illusory-truth-effekt", "Illusory-Truth-Effekt", "wahrheitsillusionseffekt", "Wahrheitsillusionseffekt", illusoryTruthAliasNote);
+}
+
 function writeStaleGlossaryRedirects() {
   const generatedSlugs = new Set(indexedTerms.map((term) => term.slug));
   const sourceByLabel = new Map();
