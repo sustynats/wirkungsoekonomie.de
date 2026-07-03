@@ -16,6 +16,7 @@ const ZIELBILD_URL = "https://institut.wirkungsoekonomie.de/zielbild";
 const STAKEHOLDER_URL = "https://institut.wirkungsoekonomie.de/stakeholder";
 const METHODIK_URL = "https://institut.wirkungsoekonomie.de/methodik";
 const WIRKUNGSMODELL_URL = "https://institut.wirkungsoekonomie.de/wirkungsmodell";
+const WIRKUNGSGESELLSCHAFT_URL = "https://institut.wirkungsoekonomie.de/wirkungsgesellschaft";
 const UNABHAENGIGKEIT_URL = "https://institut.wirkungsoekonomie.de/unabhaengigkeit";
 const FAQ_URL = "https://institut.wirkungsoekonomie.de/faq";
 const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
@@ -87,8 +88,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wirkungsinstitut - Think Tank der Wirkungsökonomie</title>
-    <meta name="description" content="Brückenseite zum Wirkungsinstitut: Zielbild, Methodenfamilie, Stakeholder, aktuelle Arbeiten und Mitwirkung im Think Tank der Wirkungsökonomie.">
+    <title>Wirkungsinstitut - vom Wissen zur Wirkung</title>
+    <meta name="description" content="Brückenseite zum Wirkungsinstitut: Think Tank und Forschungsraum der Wirkungsökonomie für Wirkungsforschung, Wirkungswissen und Rückkopplung.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/institut/">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -97,14 +98,14 @@ ${renderHeader(BASE)}
     <main>
       <section class="hero compact-hero">
         <nav class="breadcrumb"><a href="../index.html">Start</a> / Wirkungsinstitut</nav>
-        <p class="hero-kicker">Think Tank der Wirkungsökonomie</p>
-        <h1>Wirkung sichtbar machen.<br>Bevor Entscheidungen Folgen haben.</h1>
-        <p class="hero-subtitle">Das Wirkungsinstitut ist der Denk-, Forschungs- und Arbeitsraum der Wirkungsökonomie. Es untersucht, was Entscheidungen, Produkte, politische Narrative, Technologien, Kapitalflüsse und gesellschaftliche Entwicklungen wirklich bewirken - für Mensch, Planet und Demokratie.</p>
+        <p class="hero-kicker">Think Tank und Forschungsraum der Wirkungsökonomie</p>
+        <h1>Vom Wissen zur Wirkung.</h1>
+        <p class="hero-subtitle">Das Wirkungsinstitut untersucht, wie Wissen wirksam wird: in Entscheidungen, Preisen, Kapitalflüssen, politischen Programmen, Medienverantwortung und gesellschaftlicher Rückkopplung.</p>
         <p class="hero-subtitle">Diese Seite ist die Brücke von wirkungsoekonomie.de zum Institut. Die laufenden Arbeiten, Methoden, Veröffentlichungen und Mitwirkungswege liegen auf der Institutsplattform.</p>
         <div class="hero-actions">
           <a class="btn btn-secondary" href="${INSTITUT_URL}">Institut öffnen</a>
           <a class="btn btn-secondary" href="${AKTUELLE_ARBEITEN_URL}">Aktuelle Arbeiten ansehen</a>
-          <a class="btn btn-primary" href="${MITWIRKEN_URL}">Mitwirken</a>
+          <a class="btn btn-primary" href="${WIRKUNGSGESELLSCHAFT_URL}">Wirkungsgesellschaft verstehen</a>
         </div>
       </section>
 
@@ -123,12 +124,13 @@ ${renderHeader(BASE)}
       <section class="section" aria-labelledby="institut-ziel-title">
         <div class="section-header">
           <p class="hero-kicker">Zielbild</p>
-          <h2 id="institut-ziel-title">Wirkung soll sichtbar, prüfbar und entscheidungsrelevant werden</h2>
-          <p>Das Wirkungsinstitut macht Wirkung sichtbar, bevor Entscheidungen getroffen, Investitionen getätigt oder politische Narrative normalisiert werden.</p>
-          <p>Es übersetzt die Wirkungsökonomie in konkrete Analysen, Methoden, Wirkungschecks, Policy Briefs und Dossiers.</p>
+          <h2 id="institut-ziel-title">Wirkungswissen erzeugen. Rückkopplung ermöglichen. Entscheidungen verändern.</h2>
+          <p>Das Wirkungsinstitut entwickelt Wirkungswissen: Wissen, das nicht bei Analyse stehen bleibt, sondern Wirkung sichtbar, prüfbar und entscheidungsrelevant macht.</p>
+          <p>Es übersetzt die Wirkungsökonomie in konkrete Analysen, Methoden, Wirkungschecks, Policy Briefs und Dossiers - und fragt, welche Rückkopplung daraus entstehen muss.</p>
           <p>Ziel ist ein öffentlicher Denk- und Arbeitsraum, der bessere Entscheidungen ermöglicht - für Mensch, Planet und Demokratie.</p>
         </div>
         <div class="hero-actions">
+          <a class="btn btn-secondary" href="${WIRKUNGSGESELLSCHAFT_URL}">Wirkungsgesellschaft lesen</a>
           <a class="btn btn-secondary" href="${ZIELBILD_URL}">Zielbild lesen</a>
           <a class="btn btn-secondary" href="${WIRKUNGSMODELL_URL}">Wirkungsmodell ansehen</a>
         </div>
@@ -171,6 +173,18 @@ ${renderHeader(BASE)}
         </div>
       </section>
 
+      <section class="section" aria-labelledby="institut-wirkungsgesellschaft-title">
+        <div class="section-header">
+          <p class="hero-kicker">Wirkungsgesellschaft</p>
+          <h2 id="institut-wirkungsgesellschaft-title">Von der Wissensgesellschaft zur Wirkungsgesellschaft</h2>
+          <p>Die Wissensgesellschaft hat Daten, Studien und Berichte hervorgebracht. Die nächste Aufgabe ist die Wirkungsgesellschaft: Wissen muss in Entscheidungen, Preise, Kapitalflüsse, politische Programme, Medienverantwortung und Systemrückkopplung übersetzt werden.</p>
+          <p>Das Problem ist nicht nur der Mangel an Wissen. Das Problem ist die fehlende Rückkopplung von Wissen in Wirkung.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-secondary" href="${WIRKUNGSGESELLSCHAFT_URL}">Wirkungsgesellschaft verstehen</a>
+        </div>
+      </section>
+
       <section class="section" aria-labelledby="institut-stakeholder-title">
         <div class="section-header">
           <p class="hero-kicker">Für wen?</p>
@@ -188,8 +202,8 @@ ${renderHeader(BASE)}
             <p class="card-text">Für Politik, Verwaltung, Kommunen, Unternehmen und Kapital: Entscheidungen nicht nur nach Kosten, Interessen oder Rendite bewerten.</p>
           </article>
           <article class="card">
-            <h3 class="card-title">Wissensbeiträge</h3>
-            <p class="card-text">Für Wissenschaft, Fachleute und Zivilgesellschaft: Quellen, Praxisfälle, Gegenargumente und Reviews in belastbare Wirkungsbeiträge übersetzen.</p>
+            <h3 class="card-title">Wirkungswissen</h3>
+            <p class="card-text">Für Wissenschaft, Fachleute und Zivilgesellschaft: Quellen, Praxisfälle, Gegenargumente und Reviews in rückkopplungsfähige Wirkungsbeiträge übersetzen.</p>
           </article>
         </div>
         <div class="hero-actions">
@@ -200,11 +214,11 @@ ${renderHeader(BASE)}
       <section class="section" aria-labelledby="institut-prozess-title">
         <div class="section-header">
           <p class="hero-kicker">Wie gearbeitet wird</p>
-          <h2 id="institut-prozess-title">Von der Idee zur Veröffentlichung</h2>
-          <p>Das Wirkungsinstitut arbeitet als digitale Wissensplattform. Aus offenen Fragen sollen belastbare Wirkungsbeiträge entstehen.</p>
-          <p>Der Arbeitsprozess folgt einer klaren Kette: <strong>Idee → Diskussion → Projekt → Aufgabe → Dokument → Review → Veröffentlichung</strong></p>
+          <h2 id="institut-prozess-title">Von der Frage zur Rückkopplung</h2>
+          <p>Das Wirkungsinstitut ist keine Plattform für Wissensgenerierung. Es ist eine Plattform für Wirkungsforschung und Rückkopplung.</p>
+          <p>Der Arbeitsprozess folgt einer klaren Kette: <strong>Frage → Recherche → Diskussion → Methodenauswahl → Analyse → Entwurf → Review → Veröffentlichung → Rückkopplung</strong></p>
           <p>Dafür nutzt das Institut eigene Arbeitsbereiche wie Wirkungsboard, Diskursforum, Projektwerkstatt, Dokumentenwerkstatt, Quellenarchiv und Veröffentlichungen.</p>
-          <p>Discord kann als angeschlossener Kommunikationsraum dienen. Die Plattform bleibt jedoch der zentrale Ort für Wissen, Struktur und Veröffentlichung.</p>
+          <p>Discord kann als angeschlossener Kommunikationsraum dienen. Die Plattform bleibt jedoch der zentrale Ort für Wirkungswissen, Struktur, Veröffentlichung und Rückkopplung.</p>
         </div>
         <div class="hero-actions">
           <a class="btn btn-secondary" href="${ARBEITSWEISE_URL}">Arbeitsweise des Instituts ansehen</a>
@@ -256,8 +270,8 @@ ${renderHeader(BASE)}
           <p class="hero-kicker">Unabhängigkeit</p>
           <h2 id="institut-unabhaengigkeit-title">Unabhängig und nicht drittfinanziert</h2>
           <p>Das Wirkungsinstitut ist kein Verein, keine Partei und kein Lobbyinstrument.</p>
-          <p>Es ist ein unabhängiges Wissensprojekt von Natalie Weber und wird nicht von Unternehmen, Parteien, Verbänden oder Lobbyorganisationen finanziert oder gesteuert.</p>
-          <p>Der Maßstab ist Wirkung — nicht Auftrag, Parteizugehörigkeit oder Einzelinteresse.</p>
+          <p>Es ist ein unabhängiges, nicht drittfinanziertes Wirkungsforschungsprojekt von Natalie Weber und wird nicht von Unternehmen, Parteien, Verbänden oder Lobbyorganisationen finanziert oder gesteuert.</p>
+          <p>Der Maßstab ist Wirkung - nicht Auftrag, Parteizugehörigkeit oder Einzelinteresse.</p>
         </div>
         <div class="hero-actions">
           <a class="btn btn-secondary" href="${UNABHAENGIGKEIT_URL}">Mehr zur Unabhängigkeit</a>
@@ -279,9 +293,9 @@ ${renderHeader(BASE)}
 
       <section class="section" aria-labelledby="institut-cta-title">
         <div class="section-header compact">
-          <p class="hero-kicker">Wirkung statt Oberfläche</p>
-          <h2 id="institut-cta-title">Nicht nur fragen: Stimmt das?<br>Sondern: Was bewirkt es?</h2>
-          <p>Das Wirkungsinstitut ist der Ort, an dem diese Frage systematisch gestellt, diskutiert, geprüft und veröffentlicht wird.</p>
+          <p class="hero-kicker">Vom Wissen zur Wirkung</p>
+          <h2 id="institut-cta-title">Die Zukunft entsteht nicht durch mehr Wissen allein.</h2>
+          <p>Sie entsteht, wenn Wissen Wirkung entfaltet: von Information zu Orientierung, von Analyse zu Entscheidung, von Wissen zu Wirkung.</p>
           <p><strong>Für Mensch, Planet und Demokratie.</strong></p>
         </div>
         <div class="hero-actions">
