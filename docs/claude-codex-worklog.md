@@ -255,3 +255,10 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Geaendert: V29 WÖk-IDs/Benchmarks/Archetypen, V30 Datenqualitaet/Audit/Unsicherheit, V31 von Einzelwirkung zu Netto-Wirkung, V32 Scorecards/Bewertungsprofile. Je Skript: Website-Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
 - Pruefung: V32-DOCX gerendert (31 Seiten) und visuell geprueft. Umfang je Master ca. 8.0k-8.9k Woerter.
 - Offen fuer Codex: Sprint 5 V33-V36, danach V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.
+
+### 2026-07-03 - Codex - Studienskripte Sprint 5: V33-V36 ausgebaut
+- Status: abgeschlossen als Tiefenskript-Arbeitsfassungen, nicht als Claude/PDF-final.
+- Repo/Pfad: Website-Root `content/studienskripte/woek-g-v33.md` ... `woek-g-v36.md`, Word unter `docs/studienskripte/word-rohfassungen/`, App-Spiegel unter `woek-akademie-app/content/lehrgaenge/`.
+- Geaendert: V33 NWI/T-SROI unterscheiden, V34 Reverse Merit Order, V35 Nichtkompensation gegen Greenwashing, V36 Scorecard lesen und begruenden. Je Skript: Website-Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
+- Pruefung: V36-DOCX gerendert (30 Seiten) und visuell geprueft. Umfang je Master ca. 8.1k-9.6k Woerter.
+- Offen fuer Codex: Grundstudium V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.

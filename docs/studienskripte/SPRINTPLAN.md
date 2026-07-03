@@ -142,10 +142,13 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 
 ## Sprint 5 · Grundstudium V33-V36
 
-- `woek-g-v33`
-- `woek-g-v34`
-- `woek-g-v35`
-- `woek-g-v36`
+- [x] `woek-g-v33`
+- [x] `woek-g-v34`
+- [x] `woek-g-v35`
+- [x] `woek-g-v36`
+- Output je Skript: Markdown-Master, Word-Rohfassung, App-Spiegel, Mini-Quiz, Glossar, Quellen, Rueckfluss
+- Ergebnis: `tiefensprint-arbeitsfassung` mit NWI/T-SROI-Abgrenzung, Reverse Merit Order, Nichtkompensation gegen Greenwashing und Scorecard-Lese-/Begruendungslogik.
+- Hinweis: Diese Fassungen sind substanziell ausgebaut, aber noch nicht als `published` oder Claude-CI/PDF-final markiert.
 
 ## Danach
 
