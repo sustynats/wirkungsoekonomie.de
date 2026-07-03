@@ -15,6 +15,7 @@ const PYTHON = existsSync("/Users/hagen/.cache/codex-runtimes/codex-primary-runt
 const lectures = [
   {
     slug: "woek-g-v21",
+    sprint: 2,
     code: "V21",
     title: "Produkte, Technologien und Institutionen als Auslöser",
     thesis:
@@ -47,6 +48,7 @@ const lectures = [
   },
   {
     slug: "woek-g-v22",
+    sprint: 2,
     code: "V22",
     title: "Wirkungssprache und Quellenklarheit",
     thesis:
@@ -79,6 +81,7 @@ const lectures = [
   },
   {
     slug: "woek-g-v23",
+    sprint: 2,
     code: "V23",
     title: "Unsicherheit, Ambivalenz und transparente Bewertung",
     thesis:
@@ -111,6 +114,7 @@ const lectures = [
   },
   {
     slug: "woek-g-v24",
+    sprint: 2,
     code: "V24",
     title: "Deeskalierende und demokratiestärkende Kommunikation",
     thesis:
@@ -142,6 +146,161 @@ const lectures = [
       "Einwände gegen Technokratie und Social Credit in Video- und Studienskript-Lane konsistent verknüpfen.",
     ],
   },
+  {
+    slug: "woek-g-v25",
+    sprint: 3,
+    code: "V25",
+    title: "SDGs und Agenda 2030 als globaler Konsens der 193 Staaten",
+    thesis:
+      "Die SDGs sind für die WÖk kein Heilsversprechen und kein Weltregierungscode, sondern ein global verhandelter Mindestkompass, der positive Wirkung anschlussfähig macht und zugleich sauber in Zustandsveränderungen übersetzt werden muss.",
+    pages: [
+      "verstehen/sdgs-sdgplus/index.html",
+      "verstehen/sdgs-sdgplus/agenda-2030/index.html",
+      "verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/index.html",
+      "verstehen/sdgs-sdgplus/geschichte/index.html",
+      "verstehen/sdgs-sdgplus/unterziele/index.html",
+      "verstehen/sdgs-sdgplus/risiko-resilienzregister/index.html",
+      "referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/index.html",
+      "referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/index.html",
+    ],
+    matrix: [
+      ["Agenda 2030", "gemeinsamer politischer Referenzrahmen", "Agenda als direktes Weltgesetz missverstehen", "Mindestkompass, national und demokratisch umzusetzen"],
+      ["SDG-Zuordnung", "Anschluss an ein Ziel oder Unterziel", "Icon als Wirkungsnachweis behandeln", "Zustandsveränderung, Betroffene und Datenpflicht ergänzen"],
+      ["SDG-Indikator", "statistische Beobachtungsebene", "Indikator als vollständige Bewertung lesen", "Datenquelle, Systemgrenze und Kontext ausweisen"],
+      ["WÖk-Bewertung", "Übersetzung in positive Netto-Wirkung", "SDGs mechanisch addieren", "Zielkonflikte, Nichtkompensation und Rückkopplung prüfen"],
+    ],
+    cases: [
+      "Ein Bildungsprojekt kann SDG 4 plausibel berühren. Wirkung entsteht aber nicht durch das SDG-Icon, sondern durch belegbare Veränderungen bei Zugang, Kompetenzen, Übergängen, Teilhabe und Selbstwirksamkeit.",
+      "Ein kommunales Klimaprojekt kann SDG 13, 11 und 3 verbinden. Die WÖk fragt zusätzlich, ob soziale Belastungen, Beteiligung, Hitzeresilienz, Gesundheit und Finanzierung so gestaltet sind, dass positive Netto-Wirkung entsteht.",
+    ],
+    formula: "SDG\\text{-}Bezug \\neq Wirkung;\\quad Wirkung = \\Delta Zustand + Empfaenger + Quelle + Bewertung + Rueckkopplung",
+    formulaNote:
+      "Der SDG-Bezug ist ein Anschluss an einen Referenzrahmen. Wirkung entsteht erst, wenn eine tatsächliche oder belastbar plausibilisierte Zustandsveränderung beschrieben, bewertet und rückgekoppelt wird.",
+    externalNotes: [
+      "UN Sustainable Development Goals Knowledge Platform: Die Agenda 2030 benennt 17 Sustainable Development Goals und 169 Targets als integrierten und unteilbaren Zielrahmen. Quelle: https://sdgs.un.org/2030agenda",
+      "UN SDG Goals overview: Die 17 SDGs werden als gemeinsamer Handlungsaufruf aller Länder in globaler Partnerschaft beschrieben. Quelle: https://sdgs.un.org/goals",
+    ],
+    backflow: [
+      "SDG-Seiten konsequent um den Satz ergänzen: SDG-Bezug ist kein Wirkungsnachweis.",
+      "Agenda-2030-Einwände in Video- und Studienskript-Lane mit der Schutzlinie 'Kooperation ist keine Weltregierung' verbinden.",
+      "In Scorecard-Dokumenten zwischen SDG-Zuordnung, SDG-Indikator und WÖk-Bewertung unterscheiden.",
+    ],
+  },
+  {
+    slug: "woek-g-v26",
+    sprint: 3,
+    code: "V26",
+    title: "SDG+: Warum die SDGs für offene Gesellschaften nicht reichen",
+    thesis:
+      "SDG+ ergänzt den globalen SDG-Mindestkompass dort, wo offene Gesellschaften besondere Schutz- und Wirkungsdimensionen brauchen: Demokratiequalität, Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen und digitale Selbstbestimmung.",
+    pages: [
+      "verstehen/sdgs-sdgplus/sdgplus/index.html",
+      "verstehen/sdgs-sdgplus/sdgplus-demokratie/index.html",
+      "verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/index.html",
+      "verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/index.html",
+      "verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/index.html",
+      "verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/index.html",
+      "verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/index.html",
+      "verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/index.html",
+      "referenz/kapitel-028-demokratie-als-wirkungsraum/index.html",
+      "referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html",
+      "referenz/kapitel-079-diskurskultur/index.html",
+    ],
+    matrix: [
+      ["Demokratiequalität", "Beteiligung, Korrekturfähigkeit, legitimer Konflikt", "Mehrheitsentscheidung mit demokratischer Wirkung verwechseln", "Verfahren, Rechte und Resonanzräume prüfen"],
+      ["Rechtsstaatlichkeit", "Grundrechte, Rechtsschutz, Verhältnismäßigkeit", "Wirkungssteuerung als technokratische Abkürzung nutzen", "jede Rückkopplung rechtlich begrenzen"],
+      ["Medienqualität", "Orientierung, Quellen, Diskursfähigkeit", "Reichweite als demokratische Wirkung ausgeben", "Wirkung auf Vertrauen, Wahrheitsbindung und Konfliktfähigkeit analysieren"],
+      ["Digitale Selbstbestimmung", "Datenrechte, Transparenz, algorithmische Fairness", "Datenverfügbarkeit mit Legitimität verwechseln", "Privacy, Kontrolle und Beschwerdewege einbauen"],
+    ],
+    cases: [
+      "Eine Plattform kann politische Information verbreiten und zugleich Empörung belohnen. SDG+ fragt nicht nur nach Zugang zu Information, sondern nach Medienqualität, Diskursfähigkeit, Transparenz, algorithmischer Verantwortung und Schutz vor Manipulation.",
+      "Ein Wirkungsdatenraum kann Steuerung verbessern. Ohne Rechtsstaatlichkeit, Datenschutz, Beschwerdewege und Transparenz kann dieselbe Infrastruktur Vertrauen beschädigen.",
+    ],
+    formula: "SDG+ = SDG_{Mindestkompass} + Demokratie + Recht + Medien + Datenrechte + Vertrauen",
+    formulaNote:
+      "SDG+ ist keine offizielle UN-Kategorie und keine Konkurrenz zu den SDGs. Es ist die WÖk-Erweiterung für Wirkungen, die offene Gesellschaften stabilisieren oder schwächen.",
+    backflow: [
+      "SDG+-Begriffe stärker in Medien-, Digital- und Demokratie-Wirkungsfelder verlinken.",
+      "In Einwände-Texten klarstellen: SDG+ erweitert demokratische Schutzlinien, statt globale Vorgaben zu verschärfen.",
+      "Prüfungsfälle zu SDG+ mit Plattform-, Datenraum- und Rechtsstaatsbeispielen anlegen.",
+    ],
+  },
+  {
+    slug: "woek-g-v27",
+    sprint: 3,
+    code: "V27",
+    title: "Kernfelder, Wirkungsgrenzen und rote Linien",
+    thesis:
+      "Kernfelder und rote Linien schützen die Wirkungsbewertung vor Schönrechnung: Bestimmte Schäden dürfen nicht durch gute Einzelwerte verdeckt werden, weil positive Netto-Wirkung sonst zur Rechenkosmetik würde.",
+    pages: [
+      "begriffe/wirkungsgrenze/index.html",
+      "begriffe/rote-linien/index.html",
+      "referenz/kapitel-027-planet-koexistenz-statt-extraktion/index.html",
+      "referenz/kapitel-033-reverse-merit-order/index.html",
+      "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html",
+      "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html",
+    ],
+    matrix: [
+      ["Kernfeld", "wesentliche Wirkungsebene mit hoher Schutzrelevanz", "Kernfeld als Themenliste behandeln", "Bedeutung für Zustandsveränderung und Risiko begründen"],
+      ["Wirkungsgrenze", "rote Linie für nicht akzeptable Schäden", "Grenze in Durchschnittswerten verstecken", "nichtkompensierend ausweisen"],
+      ["Nichtkompensation", "Schutz gegen Wegrechnen schwerer Schäden", "positive Werte gegen Grundschäden aufrechnen", "kritisches Feld begrenzt Gesamtbewertung"],
+      ["Reverse Merit Order", "kritischstes relevantes Feld setzt Bewertungsobergrenze", "besten Einzelwert hervorheben", "schwächste zentrale Wirkung zuerst prüfen"],
+    ],
+    cases: [
+      "Ein Textilprodukt mit gutem Recyclinganteil bleibt problematisch, wenn Zwangsarbeit oder schwere Chemikalienrisiken in der Lieferkette vorliegen. Der gute Einzelwert darf die rote Linie nicht neutralisieren.",
+      "Ein Wohnprojekt kann energetisch stark sein und trotzdem negative Netto-Wirkung erzeugen, wenn Verdrängung, Barrierefreiheit oder demokratische Beteiligung missachtet werden.",
+    ],
+    formula: "FinalScore \\leq min(Kernfeld_{kritisch})\\quad wenn\\quad Wirkungsgrenze = verletzt",
+    formulaNote:
+      "Die Formel zeigt didaktisch die Sperrlogik: Eine verletzte Wirkungsgrenze oder ein kritisch schwaches Kernfeld begrenzt die Gesamtbewertung.",
+    backflow: [
+      "Rote Linien als Schutzlogik in Produkt-, Wohnungs-, Lieferketten- und Medienseiten konsistenter verlinken.",
+      "Reverse Merit Order im Grundstudium früher als Schutz gegen Greenwashing vorbereiten.",
+      "Prüfungsfälle mit absichtlich verführerischen guten Einzelwerten bauen, damit Nichtkompensation geübt wird.",
+    ],
+  },
+  {
+    slug: "woek-g-v28",
+    sprint: 3,
+    code: "V28",
+    title: "CSRD, ESRS, GRI, EU-Taxonomie, NACE und DPP",
+    thesis:
+      "CSRD, ESRS, GRI, EU-Taxonomie, NACE und DPP liefern keine fertige WÖk-Bewertung. Sie liefern Daten-, Berichts-, Klassifikations- und Produktinfrastruktur, die erst durch Wirkpfad, Datenqualität, Scorecard und Rückkopplung steuerungsfähig wird.",
+    pages: [
+      "referenz/kapitel-030-von-wirkung-zu-messung/index.html",
+      "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html",
+      "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html",
+      "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
+      "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html",
+    ],
+    matrix: [
+      ["CSRD/ESRS", "europäische Nachhaltigkeitsberichterstattung", "Berichtspflicht als Wirkung behandeln", "Datenquelle für Wesentlichkeit, Indikatoren und Audit nutzen"],
+      ["GRI", "international verbreitete Impact-Reporting-Standards", "GRI-Offenlegung als WÖk-Score ausgeben", "Offenlegungen als Evidenzbaustein einordnen"],
+      ["EU-Taxonomie", "Klassifikation ökologisch nachhaltiger Wirtschaftstätigkeiten", "Taxonomie-Konformität als positive Netto-Wirkung setzen", "ökologischen Hinweis mit Mensch/Demokratie und Risiken verbinden"],
+      ["NACE", "statistische Klassifikation wirtschaftlicher Tätigkeiten", "Branche mit Wirkung gleichsetzen", "Benchmark- und Archetypenlogik branchenspezifisch aufbauen"],
+      ["DPP", "Produktdatencontainer über Lebenszyklus", "Datenpass als Bewertung verwechseln", "Daten mit WÖk-ID, Scorecard, Prüfung und Rückkopplung verbinden"],
+    ],
+    cases: [
+      "Ein Chemieunternehmen berichtet nach ESRS Emissionen, Wasser, Arbeitsbedingungen und Lieferkettenrisiken. Die WÖk nutzt diese Daten nicht als fertiges Urteil, sondern ordnet sie WÖk-IDs, Benchmarks, Datenqualität und Wirkungsgrenzen zu.",
+      "Ein Textil-DPP kann Material, Herkunft und Kreislauffähigkeit enthalten. Für positive Netto-Wirkung fehlen dennoch Arbeitsbedingungen, Wasserstress, Nutzungsdauer, Reparierbarkeit, Entsorgung und Nichtkompensation bei schweren Schäden.",
+    ],
+    formula: "WÖk\\text{-}Bewertung = Reportingdaten + Klassifikation + Produktdaten + Wirkpfad + Datenqualitaet + Rueckkopplung",
+    formulaNote:
+      "Die Formel macht die WÖk-Übersetzung sichtbar: vorhandene Rahmenwerke sind Eingänge, nicht der Ausgang des Bewertungsprozesses.",
+    externalNotes: [
+      "European Commission CSRD: Unternehmen im CSRD-Anwendungsbereich berichten nach European Sustainability Reporting Standards; EFRAG entwickelt Entwürfe für die Standards. Quelle: https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en",
+      "EFRAG ESRS: Set 1 wurde als Delegated Act im Amtsblatt vom 22. Dezember 2023 übernommen; vereinfachte ESRS-Entwürfe werden als separater Reformstand geführt. Quelle: https://www.efrag.org/en/draft-simplified-esrs",
+      "European Commission EU Taxonomy: Die Taxonomie schafft eine gemeinsame Definition wirtschaftlicher Tätigkeiten, die als ökologisch nachhaltig gelten können. Quelle: https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+      "Eurostat NACE Rev. 2.1: Die 2025er Ausgabe beschreibt die statistische Klassifikation wirtschaftlicher Tätigkeiten in der EU. Quelle: https://ec.europa.eu/eurostat/web/nace",
+      "European data portal / ESPR-DPP: Der Digitale Produktpass ist Teil der Ecodesign-for-Sustainable-Products-Regulation-Logik und soll Produktinformationen entlang der Wertschöpfung zugänglich machen. Quelle: https://data.europa.eu/en/news-events/news/eus-digital-product-passport-advancing-transparency-and-sustainability",
+      "GRI: Die GRI Standards unterstützen Organisationen dabei, Auswirkungen auf Umwelt, Menschen und Wirtschaft zu verstehen und zu berichten. Quelle: https://www.globalreporting.org/",
+    ],
+    backflow: [
+      "V28 muss laufend mit EU-/EFRAG-Stand abgeglichen werden; Omnibus-/ESRS-Simplifizierung nicht statisch behandeln.",
+      "DPP-Seiten stärker mit WÖk-ID, Produktwirkung, Scorecards und Beschaffung verknüpfen.",
+      "NACE/Branchenlogik als Grundlage für Archetypen und Benchmarks in G3.2/G3.3 konsistent halten.",
+    ],
+  },
 ];
 
 function decode(text) {
@@ -168,7 +327,7 @@ function cleanText(text) {
     .trim();
 }
 
-function textFromHtml(path, maxBlocks = 26) {
+function textFromHtml(path, maxBlocks = 38) {
   if (!existsSync(path)) return [];
   let html = readFileSync(path, "utf8");
   html = html.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "");
@@ -214,8 +373,12 @@ function matrixMarkdown(rows) {
 }
 
 function buildDeepening(lecture) {
+  const sprint = lecture.sprint ?? 2;
   const sourceBlocks = lecture.pages.map(blockToMarkdown).filter(Boolean).join("\n\n");
-  return `## 7. Tiefenskript-Erweiterung Sprint 2
+  const externalNotes = lecture.externalNotes?.length
+    ? `\n### 7.8 Extern geprüfte Primärquellen und aktueller Stand\n\n${lecture.externalNotes.map((item) => `- ${item}`).join("\n")}\n`
+    : "";
+  return `## 7. Tiefenskript-Erweiterung Sprint ${sprint}
 
 **Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
 
@@ -273,25 +436,27 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ${sourceBlocks}
 
-### 7.8 Konsequenzen für die WÖk-Architektur
+${externalNotes}
+### 7.9 Konsequenzen für die WÖk-Architektur
 
 Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 
 ${lecture.backflow.map((item) => `- ${item}`).join("\n")}
 
-### 7.9 Kurzfazit
+### 7.10 Kurzfazit
 
 ${lecture.title} ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
 `;
 }
 
 function replaceOrInsert(markdown, lecture) {
+  const sprint = lecture.sprint ?? 2;
   let next = markdown
-    .replace(/\*\*Status:\*\* Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden/, `**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
+    .replace(/\*\*Status:\*\* Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden/, `**Status:** Tiefenskript-Sprint ${sprint} · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
     .replace(/\*\*Lesezeit:\*\* ca\. 45–60 Minuten/, "**Lesezeit:** ca. 120–180 Minuten");
 
   const deepening = buildDeepening(lecture).trim();
-  const marker = "## 7. Tiefenskript-Erweiterung Sprint 2";
+  const marker = `## 7. Tiefenskript-Erweiterung Sprint ${sprint}`;
   if (next.includes(marker)) {
     next = next.replace(new RegExp(`${marker}[\\s\\S]*?(?=\\n## 8\\. Prüfungsrelevanz|\\n## 7\\. Prüfungsrelevanz)`), deepening + "\n\n");
   } else {

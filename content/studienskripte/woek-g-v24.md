@@ -335,6 +335,30 @@ Ein viraler Clip kann Millionen Menschen erreichen und demokratische Verlustleis
 
 Verantwortung wächst mit Reichweite, Verstärkung und Macht. Ein privater Satz in einem kleinen Kreis hat andere Wirkung als dieselbe Formulierung auf einer Plattform mit Millionen Menschen. Eine Redaktion hat andere Verantwortung als ein privater Chat. Eine Plattform hat andere Verantwortung als ein einzelner Kommentar. Ein Creator mit großer Community verändert andere Wirkungsräume als ein Mensch ohne Reichweite. Diese Differenz wird später im Zusammenhang mit Creator-Verantwortung und digitalen Öffentlichkeiten vertieft. Hier gilt der Grundsatz: Wer Öffentlichkeit prägt, verändert Wirkungsräume.
 
+Verantwortung heißt nicht Zensur. Sie heißt nicht, dass starke Kritik vermieden werden soll. Demokratie braucht harte Kritik, investigative Recherche, Satire, Widerspruch und Streit. Verantwortung heißt, dass öffentliche Akteure Wirkungspotenziale ihrer Reichweite, Tonalität, Wiederholung, Bildauswahl, Quellenlage und Verstärkungslogik ernst nehmen. Kritik ist demokratische Wirkleistung, wenn sie Wirklichkeit klärt. Sie wird destruktiv, wenn sie Wahrheit, Würde und Korrekturfähigkeit beschädigt.
+
+### 74.4 Öffentlichkeit ohne Marktplatzillusion
+
+Der Marktplatz bleibt eine starke demokratische Metapher. Menschen kommen zusammen, tauschen Informationen aus, streiten, hören zu, vergleichen Argumente und bilden Meinungen. Habermas’ Analyse der bürgerlichen Öffentlichkeit knüpft an diesen Raum vernünftiger, zugänglicher und kritischer Verständigung über gemeinsame Angelegenheiten an. Diese Tradition bleibt wichtig.
+
+Aber die Metapher reicht nicht mehr.
+
+Ein realer Marktplatz hat Grenzen. Menschen sehen, wer spricht. Man kann gehen, widersprechen, zuhören. Lautstärke ist sichtbar. Eigentum am Platz ist begrenzt. Digitale Öffentlichkeit ist anders. Sie ist nicht ein Platz, sondern ein Netzwerk aus Plattformen, Suchmaschinen, Messengern, Videokanälen, Podcasts, Newslettern, Medienhäusern, Foren, Kommentarräumen, Werbesystemen, Datenbrokern, Empfehlungssystemen und KI-generierten Antwortsystemen.
+
+Sie ist nicht neutral zugänglich, sondern technisch sortiert. Sie ist nicht nur Gespräch, sondern Geschäftsmodell. Sie ist nicht nur Öffentlichkeit, sondern Datenernte. Sie ist nicht nur Meinungsbildung, sondern Verhaltenslenkung. Sie ist nicht nur Austausch, sondern Skalierung.
+
+Die Marktplatzillusion verdeckt drei Dinge. Erstens Eigentum: Digitale Öffentlichkeiten liegen häufig in privaten Infrastrukturen. Die Regeln des Sichtbaren werden durch Plattformarchitekturen, Geschäftsbedingungen, Moderation, Werbemodelle und Algorithmendesign mitbestimmt. Zweitens Verstärkung: Nicht jede Aussage wird gleich sichtbar. Ranking, Empfehlung, Trendlogik, Kommentarreihenfolge, Videoausspielung, Monetarisierung und Depriorisierung entscheiden mit. Drittens Asymmetrie: Einige Akteure können Sichtbarkeit kaufen, Daten nutzen, Bots einsetzen, Microtargeting betreiben, Netzwerke koordinieren oder professionelle Manipulation organisieren.
+
+Öffentlichkeit ist daher kein Marktplatz im einfachen Sinn. Sie ist Infrastruktur mit Macht. Wirkungsökonomisch bedeutet das: Man darf nicht nur auf Inhalte schauen. Man muss auf die Bedingungen schauen, unter denen Inhalte sichtbar werden. Wer besitzt die Infrastruktur? Wer finanziert Sichtbarkeit? Welche Daten fließen? Welche Inhalte werden verstärkt? Welche Korrekturen sind möglich? Welche Gruppen werden verdrängt? Welche Fehler werden wiederholt? Welche Akteure profitieren von Erregung? Welche Wahrheit bleibt unsichtbar, weil sie nicht attraktiv genug erscheint?
+
+Demokratische Öffentlichkeit entsteht nicht automatisch, wenn viele sprechen. Sie entsteht, wenn Sichtbarkeit, Widerspruch, Korrektur und Teilhabe fair organisiert sind. Das ist kein Argument gegen Meinungsfreiheit. Es ist ein Argument gegen die Verwechslung von Meinungsfreiheit mit unregulierter Macht über Sichtbarkeit.
+
+Die alte Frage lautete: Wer darf was sagen? Diese Frage bleibt grundrechtlich zentral. Die Wirkungsökonomie ergänzt: Welche Strukturen entscheiden, was sichtbar wird, was korrigierbar bleibt, wem geglaubt wird und ob Demokratie handlungsfähig bleibt?
+
+Damit wird Öffentlichkeit nicht verengt. Sie wird ernst genommen. Die nächsten Kapitel entfalten diese Logik: Plattformlogik und Algorithmen, Sprache, Framing und Tonalität, Desinformation und hybride Einflussnahme, Creator, Hosts und digitale Verantwortung sowie Diskurskultur.
+
+### 74.5 Zwischenfazit
+
 ### Quellenanker: Kapitel 75 - Plattformlogik und Algorithmen
 
 *Interne Quelle:* `referenz/kapitel-075-plattformlogik-und-algorithmen/index.html`
@@ -388,6 +412,30 @@ Der Digital Services Act müsste hier konsequent wirken: gegen illegale Inhalte,
 Die wirkungsökonomische Lösung heißt daher: nicht Kinder aus Zukunftsräumen aussperren, sondern Plattformmechaniken nach Wirkung umbauen.
 
 ### 75.3 Algorithmische Verstärkung
+
+Algorithmen sind keine neutralen Sortierwerkzeuge. Sie sind Entscheidungsarchitekturen. Sie ordnen Sichtbarkeit, Nähe, Wiederholung, Anschluss und Relevanz. Sie können helfen, gute Inhalte zu finden. Sie können Lernen, Barrierefreiheit, Kreativität, Minderheitensichtbarkeit, Beteiligung und Wissenschaft unterstützen. Sie können aber auch die falschen Signale verstärken: Erregung, Entwürdigung, Sucht, Feindbilder, Desinformation und Gruppenhass [I-K75-4; I-K75-6].
+
+Algorithmische Verstärkung wirkt besonders stark, weil sie unsichtbar erscheint. Viele Nutzer:innen sehen nur den Feed. Sie sehen nicht, welche Inhalte nicht angezeigt wurden, welche Gewichtungen wirken, welche Daten herangezogen wurden, welche Ziele optimiert werden und welche Gruppen bevorzugt oder benachteiligt werden. Sichtbarkeit wirkt dann wie natürliche Öffentlichkeit, obwohl sie technisch erzeugt wurde.
+
+Die Wirkungsökonomie fragt deshalb nicht nur, ob ein einzelner Beitrag wahr oder falsch ist. Sie fragt, warum dieser Beitrag Reichweite erhielt. Welche Optimierungsziele waren aktiv? Watchtime? Engagement? Werbung? Konflikt? Nähe zu früherem Verhalten? Profilähnlichkeit? Kommerzielle Relevanz? Politische Wirkung? Gruppendynamik? Welche Inhalte wurden verdrängt? Welche Korrekturen wurden langsamer? Welche Quellen wurden schwächer sichtbar?
+
+Algorithmische Verstärkung kann auch die Illusion sozialer Mehrheit erzeugen. Wenn bestimmte Inhalte häufig erscheinen, entsteht der Eindruck, sie seien repräsentativer, als sie sind. Wenn Bots, koordinierte Kampagnen, Microtargeting, Influencer-Netzwerke oder bezahlte Sichtbarkeit hinzukommen, wird der Wirkungsraum weiter verzerrt. Das ist keine bloße Kommunikationsfrage. Es betrifft Wahlen, Gesundheit, Wissenschaft, Minderheitenschutz, Sicherheit und Vertrauen.
+
+Die Wirkungsökonomie braucht deshalb algorithmische Rechenschaft. Nicht jede Codezeile muss öffentlich werden. Aber die Wirkungslogik muss prüfbar sein. Welche Kriterien steuern Sichtbarkeit? Welche Risiken wurden erkannt? Welche Daten wurden genutzt? Welche Gruppen sind besonders betroffen? Welche Beschwerdewege bestehen? Welche Forschung kann Zugang erhalten? Welche unabhängige Prüfung findet statt? Welche Folgen haben algorithmische Updates?
+
+Das Systemmodell der Wirkungsökonomie formuliert dafür Normen der digitalen Öffentlichkeit: Digitale Räume sollen Qualitäts-, Fairness- und Anti-Polarisierungsregeln folgen; Sichtbarkeit soll nicht auf Erregung beruhen; Informationssouveränität umfasst Zugang zu verlässlicher Information, Quellenklarheit, Offenlegung algorithmischer Entscheidungen, Schutz vor Manipulation, Schutz vor Deepfakes und öffentliche Wissensinfrastrukturen [I-K75-9; I-K75-10].
+
+Das ist keine Zensur. Zensur verbietet Meinungen. Algorithmische Rechenschaft prüft die Bedingungen der Sichtbarkeit. Eine Plattform kann weiterhin unterschiedliche Meinungen zulassen. Sie darf aber nicht verdeckt jene Inhalte belohnen, die Hass, Sucht, Desinformation oder demokratische Destabilisierung wirtschaftlich attraktiv machen.
+
+Algorithmische Verstärkung muss besonders dort begrenzt werden, wo Verwundbarkeit hoch ist: Kinder, Jugendliche, psychisch belastete Menschen, Menschen in Krisen, Minderheiten, von Gewalt Betroffene, ältere Menschen, politisch polarisierte Räume, Gesundheitsinformationen, Wahlen, Kriege und Katastrophen. Je höher Wirkungspotenzial und Reichweite, desto höher die Pflicht zur Prüfung.
+
+### 75.4 Plattformverantwortung
+
+Plattformverantwortung ist Wirkungspflicht. Sie umfasst Design, Empfehlungssysteme, Moderation, Werbung, Datenlogik, Alters- und Risikogerechtigkeit. Eine Plattform kann nicht sagen, sie stelle nur Infrastruktur bereit, wenn ihre Architektur Sichtbarkeit, Aufmerksamkeit, Monetarisierung, Community-Dynamik und Verhaltensmuster prägt.
+
+Eine soziale Plattform wirkt positiv, wenn sie Austausch, Gemeinschaft, Kreativität, Bildung, Kultur, politische Beteiligung, Minderheitensichtbarkeit und demokratische Debatte ermöglicht. Sie wirkt negativ, wenn sie Polarisierung verstärkt, Desinformation skaliert, Hass belohnt, psychische Belastungen erhöht, Kinder als Daten- und Aufmerksamkeitsquelle behandelt, Manipulation erleichtert oder öffentliche Aufmerksamkeit nach Erregung verteilt [I-K75-6; I-K75-4].
+
+Plattformverantwortung bedeutet fünf Grundpflichten.
 
 ### Quellenanker: Kapitel 76 - Framing, Sprache und Tonalität
 
@@ -443,6 +491,30 @@ Diese Grenze schützt Kritik. Wer Entwürdigung und Kritik vermischt, schwächt 
 
 Normalisierung geschieht durch Wiederholung. Ein Begriff, der einmal schockiert, kann nach hundert Wiederholungen gewöhnlich wirken. Eine Feindmarkierung kann als „zugespitzte Sprache“ erscheinen. Eine Verschwörungserzählung kann als „berechtigte Frage“ getarnt werden. Eine institutionelle Delegitimierung kann als „gesunder Zweifel“ auftreten. Wiederholung erzeugt Vertrautheit, und Vertrautheit kann Wahrheit simulieren.
 
+Daraus folgt eine redaktionelle Schutzregel: Ein Faktencheck kann formal richtig und wirkungsbezogen schwach sein, wenn er zuerst den falschen Frame groß wiederholt. Wahrheit braucht deshalb nicht nur Korrektur, sondern Dramaturgie. Die falsche Behauptung darf benannt werden, aber kurz, markiert und eingebettet in den stärkeren Wirkungsrahmen der Wahrheit. Ein Wirkungscheck ergänzt den Faktencheck: Welcher Frame wird aktiviert? Welche Bilder werden wiederholt? Welche Emotion wird freigesetzt? Wer wird zum Problem gemacht? Welche Wirkungspotenziale entstehen durch die Form der Korrektur selbst?
+
+Normalisierung wirkt besonders stark, wenn Kampfbegriffe mit Plattformlogik verbunden werden. Ein zugespitztes Wort erzeugt Reaktion. Reaktion erzeugt Reichweite. Reichweite erzeugt Wiederholung. Wiederholung erzeugt Vertrautheit. Vertrautheit verändert Sagbarkeit. So kann ein öffentlicher Raum schrittweise härter, feindseliger und entmenschlichender werden, ohne dass ein einzelner Satz allein alles erklärt.
+
+Feindbilder ordnen die Welt. Sie bieten Zugehörigkeit durch Abgrenzung. Wer dazugehören will, weiß, gegen wen er sein muss. Das ist politisch anschlussfähig, weil es Komplexität reduziert und Sicherheit verspricht. Aber es zerstört demokratische Wirklichkeit. Ein Feindbild muss nicht argumentieren. Es muss nur markieren. Es ersetzt Prüfung durch Loyalität.
+
+Häme hat eine ähnliche Wirkung. Sie erscheint leicht als Humor oder Ironie. Sie kann Macht kritisieren, Absurdität zeigen und Distanz schaffen. Sie kann aber auch Menschen entwürdigen, Leid lächerlich machen und Empathie abbauen. Eine Öffentlichkeit, die Häme belohnt, verliert leichter die Fähigkeit, Menschen hinter Konflikten zu sehen.
+
+Entmenschlichung ist die härteste Form dieser Entwicklung. Sie beginnt nicht erst mit Gewaltaufrufen. Sie beginnt, wenn Menschen nur noch als Masse, Schmutz, Krankheit, Last, Gefahr, Parasiten, Tiere, Müll oder Störung erscheinen. Solche Sprache senkt die Schwelle, Härte gegen Menschen als notwendig, gerecht oder unvermeidlich zu deuten. Das heißt nicht, dass Sprache automatisch Gewalt erzeugt. Es heißt: Sprache kann Handlungsschwellen verschieben.
+
+Die Wirkungsökonomie braucht deshalb Diskursindikatoren, die nicht Meinungen kontrollieren, sondern Muster beobachten: dominante Narrative, toxische Narrative, Entmenschlichung, Verschwörung, Resonanzfelder, Feindseligkeit, Tonlage, Aggression, Anfeindung, Echokammern, Fake-News-Dynamiken, Feindbilder, Outgroup-Hass, Radikalisierung und digitale Gewalt. Solche Indikatoren sind kein Ersatz für Recht. Sie sind Frühwarninstrumente für demokratische Erosion.
+
+### 76.4 Sprachliche Verantwortung
+
+Sprachliche Verantwortung bedeutet nicht, immer angenehm zu sprechen. Sie bedeutet, die Wirkung von Begriffen, Frames, Tonalität, Wiederholung, Bildern und Verstärkung auf Mensch, Planet und Demokratie mitzudenken. Eine Demokratie braucht Streit, Kritik, Protest, Satire, Kunst, Widerstand, Anklage und harte Worte. Sprachliche Verantwortung will all das nicht schwächen. Sie will verhindern, dass Sprache die Bedingungen zerstört, unter denen Streit, Wahrheit und Korrektur möglich bleiben.
+
+Die alte Frage lautete: Darf man das sagen? Diese Frage bleibt grundrechtlich wichtig. Die neue Frage lautet zusätzlich: Welche Wirkung entfaltet diese Sprache, welcher Resonanzraum entsteht, welche Gruppen werden gestärkt oder entwürdigt, welche Korrektur wird möglich oder unmöglich, und welche Folgen entstehen für Mensch, Planet und Demokratie?
+
+Für Politik bedeutet Sprachverantwortung: Nicht nur mobilisieren, sondern demokratische Grundbedingungen nicht beschädigen. Für Verwaltung bedeutet sie: Nicht nur rechtlich korrekt formulieren, sondern so erklären, dass Menschen handeln können. Für Wirtschaft bedeutet sie: Nicht nur Reputation schützen, sondern Interessen, Risiken, Daten und Folgen transparent machen. Für Medien bedeutet sie: Nicht nur berichten, sondern einordnen, korrigieren und Resonanzräume mitverantworten. Für Wissenschaft bedeutet sie: Unsicherheit erklären, ohne Arroganzverdacht oder Scheinsicherheit zu erzeugen.
+
+Sprachverantwortung ist Teil von Governance, nicht Zensur. Sie macht Institutionen lesbarer. Vertrauen entsteht nicht aus Perfektion, sondern aus Nachvollziehbarkeit. Eine Maßnahme wird anschlussfähiger, wenn Ziel, Mittel, Kosten, Alternativen, Wirkung und Evaluation erklärt werden. Eine Reform wird glaubwürdiger, wenn Zielkonflikte benannt werden. Eine Krise wird weniger anfällig für Desinformation, wenn Kommunikation weder beschönigt noch panisch macht.
+
+Hate Speech braucht rechtsstaatlich präzise Grenzziehung und verhältnismäßige Antworten. Der Europarat versteht Hassrede als Ausdrucksformen, die Gewalt, Hass oder Diskriminierung gegen Personen oder Gruppen aufgrund realer oder zugeschriebener Merkmale anstiften, fördern, verbreiten oder rechtfertigen oder solche Personen beziehungsweise Gruppen herabsetzen; zugleich unterscheidet er Schweregrade und verlangt verhältnismäßige Reaktionen. Wirkungsökonomisch heißt das: Nicht jede unangenehme Aussage ist Hassrede. Aber rechtlich und gesellschaftlich relevante Hasskommunikation darf nicht verharmlost werden.
+
 ### Quellenanker: Kapitel 77 - Desinformation und hybride Kriegsführung
 
 *Interne Quelle:* `referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/index.html`
@@ -496,6 +568,30 @@ Demokratie ist Zielscheibe, weil offene Gesellschaften auf Vertrauen angewiesen 
 Hybride Angriffe können diese Wirkung durch viele kleine Eingriffe erzeugen: ein Deepfake hier, ein Datenleck dort, ein Pseudomedium, eine koordinierte Empörung, ein lokaler Konflikt, eine juristische Verzögerung, ein anonym finanzierter Bericht, eine Influencer-Kampagne, ein Botnetz, ein Gerücht über Wahlbetrug, ein Angriff auf Energieinfrastruktur, eine erfundene Geschichte über Minderheiten, ein toxischer Kommentarraum, eine scheinbar unabhängige Studie. Ein einzelnes Ereignis wirkt klein. Die Wirkung entsteht durch Kombination.
 
 Die Wirkung misst sich nicht nur in zerstörten Anlagen. Sie misst sich in verzögerten Entscheidungen, blockierten Reformen, wachsendem Misstrauen, sinkender Wahlbeteiligung, beschädigtem Medienvertrauen, feindseliger Sprache, schlechter Krisenreaktion, politischer Erschöpfung und institutioneller Lähmung. Eine Gesellschaft kann materiell intakt wirken und trotzdem politisch schwach werden, wenn ihre Wirklichkeitsprüfung bricht.
+
+Die Akteurslage ist komplex. EDMO unterscheidet in einer EU-weiten Literaturübersicht unterschiedliche Akteurstypen: lokale Akteure, ausländische Informationsmanipulatoren, Akteure aus kulturell oder geografisch nahen Räumen, staatliche Akteure, Politiker:innen, Mainstreammedien und Randmedien. Lokale Akteure kommen in allen EU-Mitgliedstaaten vor, während ausländische Operationen nicht überall gleich dokumentiert sind. Genau diese Komplexität ist wichtig. Desinformation ist nicht nur Ausland. Und nicht jede destruktive Informationswirkung ist ausländisch. Der demokratische Schutz muss sowohl externe Einflussoperationen als auch inländische Verstärkungs- und Geschäftsmodelle sehen.
+
+Wirkungsökonomisch wird damit klar: Demokratie wird nicht nur an Grenzen verteidigt. Sie wird in Informationsräumen, lokalen Gemeinschaften, Schulen, Medien, Plattformen, Behörden, Gerichten, Kultur, Wissenschaft, Parteienfinanzierung und sozialen Sicherungssystemen verteidigt.
+
+### 77.4 Resiliente Öffentlichkeit
+
+Die Antwort auf Desinformation und hybride Einflussnahme ist nicht Zensur. Die Antwort ist resiliente Öffentlichkeit.
+
+Resiliente Öffentlichkeit bedeutet, dass eine Gesellschaft falsche, manipulative oder feindselige Informationsimpulse erkennen, einordnen, begrenzen und korrigieren kann, ohne legitime Kritik, Opposition, Satire, Kunst, Wissenschaft, Journalismus oder Protest zu beschädigen. Das ist die Grenze. Eine Wirkungsökonomie, die jede unbequeme Kritik als Sicherheitsproblem behandelt, würde die Demokratie selbst schwächen.
+
+Resilienz beginnt mit Quellenklarheit. Menschen müssen wissen können, woher eine Information kommt, welche Quelle sie belegt, welche Interessen wirken, ob KI eingesetzt wurde, ob ein Inhalt satirisch, journalistisch, werblich, politisch, wissenschaftlich oder manipulativ ist. Quellenklarheit ersetzt nicht Urteilskraft, aber sie macht Urteilskraft möglich.
+
+Medienkompetenz und Wirkungskompetenz sind die zweite Ebene. Bildung muss Menschen befähigen, Frames, Propaganda, toxische Narrative, Pseudoquellen, Deepfakes, Plattformverstärkung, Botmuster und emotionale Manipulation zu erkennen. Das Systemmodell der Wirkungsökonomie beschreibt Wirkungskompetenz ausdrücklich als Schutz vor Desinformation, Polarisierung, kognitiver Verkürzung, moralischer Überhöhung und Feindbildern.
+
+Journalismus ist die dritte Ebene. Eine Demokratie braucht unabhängige Medien, lokale Medien, investigative Recherche, Kontext, Korrektur, Quellenprüfung und transparente Fehlerkultur. Journalismus ist nicht perfekt. Aber ohne professionelle Informationsarbeit wird öffentliche Wirklichkeit anfälliger für Propaganda, Plattformlogik und PR.
+
+Plattformpflichten sind die vierte Ebene. Empfehlungssysteme, politische Werbung, KI-Inhalte, Deepfakes, synthetische Kommentare, Influencer-Netzwerke und Bot-Muster müssen forschbar, auditierbar und korrigierbar sein. Der Digital Services Act setzt dafür wichtige Regeln, aber die Wirkungsökonomie geht weiter: Plattformen müssen nicht nur rechtlich reagieren, sondern ihre Wirkung auf Diskurs, Polarisierung, Minderheiten, Wissenschaft, Demokratie und psychische Gesundheit ausweisen.
+
+Transparenz politischer Finanzierung und Einflussnahme ist die fünfte Ebene. Parteien, Kampagnen, Stiftungen, Medienbeteiligungen, Influencer-Kampagnen, Vorfeldorganisationen, strategische Studien und politische Werbung brauchen klare Offenlegung, ohne legitimen politischen Wettbewerb zu behindern. Die Wirkungsökonomie fragt nicht nur nach Spenden, sondern nach Sichtbarkeit, Daten, Reichweite, Vorfeldstrukturen und Narrativverstärkung.
+
+Gesellschaftliche Teilhabe ist die sechste Ebene. Eine Gesellschaft mit einsamen Menschen, regionaler Abwertung, Wohnungsangst, Pflegeüberlastung, Armut, Misstrauen und fehlender Resonanz ist leichter manipulierbar. Resilienz entsteht daher nicht nur durch Faktenchecks. Sie entsteht durch soziale Kohäsion, lokale Räume, Bildung, Kultur, Pflege, Wohnen, Gesundheit, Teilgabe und Vertrauen in faire Verfahren.
+
+Demokratische Kommunikationsstandards sind die siebte Ebene. Behörden müssen in Krisen nicht nur informieren, sondern erklären: Was wissen wir? Was wissen wir nicht? Was wird geprüft? Was gilt jetzt? Wann wird korrigiert? Welche Quellen sind belastbar? Korrekturfähigkeit ist glaubwürdiger als Scheinsicherheit.
 
 ### Quellenanker: Kapitel 79 - Diskurskultur
 
@@ -551,6 +647,30 @@ Quellenklarheit ist besonders wichtig für politische Kommunikation. Parteien, R
 
 Das gilt auch für den Umgang mit Unsicherheit. Demokratische Kommunikation muss unterscheiden: Das ist belegt. Das ist wahrscheinlich. Das ist Interpretation. Das ist normative Bewertung. Das ist politische Entscheidung. Das ist offen. Diese Ordnung schützt vor zwei Fehlern: vor Technokratie, die aus Daten unmittelbar Politik ableitet, und vor Relativismus, der jede Begründung zur Meinung erklärt.
 
+Quellenklarheit ist kein Luxus für Fachdebatten. Sie ist öffentliche Grundversorgung. Ohne sie wird Aufmerksamkeit stärker als Wahrheit, Erregung stärker als Einordnung und Wiederholung stärker als Beleg.
+
+### 79.3 Resonanzräume
+
+Resonanzräume sind öffentliche, soziale, kulturelle oder digitale Räume, in denen Menschen gehört werden, ohne dass jede Aussage gleichwertig wahr ist.
+
+Diese Formulierung ist wichtig. Viele Debatten kippen zwischen zwei falschen Polen. Der erste Pol sagt: Menschen sollen gehört werden, also müsse jede Wahrnehmung gleich viel Wahrheit beanspruchen dürfen. Das zerstört Quellenklarheit. Der zweite Pol sagt: Nur belastbar belegte Aussagen verdienen Raum. Das verkennt Erfahrung, Verletzlichkeit, Wut, Angst, Scham, Sorge und Lebenslage. Eine Demokratie braucht beides: Menschen müssen sprechen können; Wirklichkeit muss prüfbar bleiben.
+
+Resonanz bedeutet nicht Zustimmung. Resonanz bedeutet, dass eine Aussage, Erfahrung oder Sorge im gemeinsamen Raum nicht einfach abprallt. Ein Mensch kann gehört werden, ohne dass seine Deutung übernommen wird. Eine Sorge kann anerkannt werden, ohne ein falsches Narrativ zu bestätigen. Eine Wut kann ernst genommen werden, ohne Entwürdigung zu legitimieren. Eine Erfahrung kann wichtig sein, auch wenn sie nicht allein entscheidet.
+
+Die vorherigen Kapitel haben gezeigt, dass Menschen nicht nur aus Information handeln, dass Sprache Wirklichkeit rahmt und dass Desinformation vorhandene Risse nutzt. Resonanzräume sind deshalb kein Nebenthema. Sie entscheiden, ob Menschen mit ihren Erfahrungen in demokratische Korrektur finden oder in Feindbilder ausweichen [I-K79-2; I-K79-7].
+
+Ein demokratischer Resonanzraum erfüllt vier Aufgaben.
+
+Er öffnet Wahrnehmung. Menschen können sagen, was sie erleben: Wohnungsangst, Pflegeüberlastung, digitale Gewalt, Abstiegsangst, Diskriminierung, Einsamkeit, Klimasorge, Misstrauen, Überforderung, Kränkung, Erschöpfung. Nicht jede Deutung dieser Erfahrung ist richtig. Aber die Erfahrung selbst verschwindet nicht, wenn sie ignoriert wird.
+
+Er ordnet Wirklichkeit. Resonanz ohne Prüfung wird anfällig für Manipulation. Deshalb braucht der Resonanzraum Quellen, Kontext, Widerspruch, Moderation, Wissenschaft, Journalismus und institutionelle Korrektur. Gehörtwerden heißt nicht: Jede Behauptung bleibt unwidersprochen.
+
+Er hält Würde. Menschen dürfen nicht in Debatten auftauchen müssen, um dort erneut beschämt, vorgeführt oder entwürdigt zu werden. Das gilt für Minderheiten, Betroffene von Gewalt, Kinder, Pflegebedürftige, Menschen in Armut, Menschen mit Behinderung, Migrant:innen, queere Menschen, religiöse Gruppen, politische Gegner und öffentliche Amtsträger:innen. Würdeschutz ist keine Empfindlichkeit. Er ist Bedingung für Teilhabe.
+
+Er ermöglicht Korrektur. Ein Resonanzraum muss zur Handlung führen können: zu besseren Informationen, anderen Verfahren, Beteiligung, Prävention, Schutz, Evaluation, Reform oder Widerspruch. Wenn Menschen zwar sprechen dürfen, aber nichts rückgekoppelt wird, entsteht Beteiligung ohne Wirkung. Das erzeugt Zynismus.
+
+Resonanzräume können analog und digital sein: Bürgerräte, öffentliche Anhörungen, Schulen, Bibliotheken, Vereine, Kulturorte, lokale Medien, Podcasts, Community-Formate, wissenschaftliche Dialoge, journalistische Diskussionsräume, Parlamente, Gerichte, Verwaltungsverfahren, Plattformen und Nachbarschaften. Nicht jeder Raum muss dasselbe leisten. Aber jeder demokratische Raum muss die Spannung halten: hören, prüfen, würdigen, korrigieren.
+
 ### Quellenanker: Kapitel 103 - Technokratie, Überwachung und die Angst vor Steuerung
 
 *Interne Quelle:* `referenz/kapitel-103-technokratie-ueberwachung-und-die-angst-vor-steuerung/index.html`
@@ -605,7 +725,32 @@ Wirkungsökonomie heißt: Das System soll bessere Signale senden. Nicht: Der Men
 
 Daten sind in der Wirkungsökonomie Infrastruktur. Aber Infrastruktur kann unterschiedlich gebaut werden.
 
-### 7.8 Konsequenzen für die WÖk-Architektur
+Ein Wirkungsdatenraum soll nicht möglichst viele Daten sammeln. Er soll relevante Daten so verfügbar machen, dass Wirkung nachvollziehbar, prüfbar und rückkoppelbar wird. Der Zweck ist nicht Beobachtung um ihrer selbst willen, sondern Entscheidungsverbesserung: bessere Produkte, ehrlichere Preise, resilientere Lieferketten, wirkungsorientierte Beschaffung, tragfähige Kapitalflüsse, bessere öffentliche Haushalte, weniger Blindleistung und bessere Risikosteuerung.
+
+Der Unterschied zwischen Datenraum und Überwachungsraum liegt in mehreren Kriterien.
+
+Erstens: Zweckbindung. Daten dürfen nur für klar definierte Wirkungszwecke genutzt werden. Was für Produktscorecards erhoben wird, darf nicht ohne neue Legitimation zur Personenbewertung, Verhaltenssteuerung oder politischen Kontrolle verwendet werden.
+
+Zweitens: Datenminimierung. Es dürfen nicht alle verfügbaren Daten erhoben werden, sondern nur diejenigen, die für die jeweilige Wirkungsbewertung erforderlich sind.
+
+Drittens: Aggregation und Rollenbezug. Produkt-, Lieferketten-, Unternehmens-, Infrastruktur- oder Haushaltsdaten sind von personenbezogenen Daten zu trennen. Wo personenbezogene Daten unvermeidlich sind, müssen besondere Schutzregeln gelten.
+
+Viertens: Transparenz. Betroffene Akteure müssen wissen, welche Daten genutzt werden, wie sie bewertet werden, welche Datenqualität vorliegt und welche Folgen entstehen können.
+
+Fünftens: Anfechtbarkeit. Wirkungsbewertungen dürfen nicht zur Black Box werden. Unternehmen, Kommunen, Institutionen und gegebenenfalls betroffene Personen brauchen Korrektur-, Einspruchs- und Prüfwege.
+
+Sechstens: Dezentralität und Zugriffsbeschränkung. Ein Wirkungsdatenraum darf nicht automatisch eine zentrale Datensammelstelle sein. Föderierte, rollenbasierte und auditierbare Datenarchitekturen sind freiheitsverträglicher als zentrale Vollerfassung.
+
+Siebtens: Löschung, Versionierung und Begrenzung. Daten dürfen nicht unbegrenzt zweckfrei fortbestehen. Bewertungsmodelle müssen versioniert, überprüft und korrigiert werden.
+
+Damit wird klar: Wirkungsdatenräume sind nur dann legitim, wenn sie die Logik des Datenschutzes, der digitalen Souveränität und der demokratischen Kontrolle in ihre technische Architektur einbauen.
+
+### 103.4 Social Credit als rote Linie
+
+Der Begriff Social Credit ist in vielen Debatten unpräzise geworden. Er wird oft als Schlagwort verwendet, um jede Form von Bewertung, Nachhaltigkeitskennzeichnung oder digitaler Steuerung zu diskreditieren. Das ist analytisch zu grob. Nicht jede Scorecard ist Social Credit. Nicht jede Produktbewertung ist Personenbewertung. Nicht jede Risikoprüfung ist Überwachung. Nicht jede wirkungsbezogene Steuer ist Sozialkontrolle.
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
 
 Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 
@@ -613,7 +758,7 @@ Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 - Medienwirkungscheck und Sprach-/Framing-Analyse mit deeskalierenden Formulierungsbeispielen ergänzen.
 - Einwände gegen Technokratie und Social Credit in Video- und Studienskript-Lane konsistent verknüpfen.
 
-### 7.9 Kurzfazit
+### 7.10 Kurzfazit
 
 Deeskalierende und demokratiestärkende Kommunikation ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
 
