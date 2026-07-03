@@ -12,7 +12,12 @@ const INSTITUT_URL = "https://institut.wirkungsoekonomie.de/";
 const AKTUELLE_ARBEITEN_URL = "https://institut.wirkungsoekonomie.de/aktuelle-arbeiten";
 const MITWIRKEN_URL = "https://institut.wirkungsoekonomie.de/mitwirken";
 const ARBEITSWEISE_URL = "https://institut.wirkungsoekonomie.de/arbeitsweise";
+const ZIELBILD_URL = "https://institut.wirkungsoekonomie.de/zielbild";
+const STAKEHOLDER_URL = "https://institut.wirkungsoekonomie.de/stakeholder";
+const METHODIK_URL = "https://institut.wirkungsoekonomie.de/methodik";
+const WIRKUNGSMODELL_URL = "https://institut.wirkungsoekonomie.de/wirkungsmodell";
 const UNABHAENGIGKEIT_URL = "https://institut.wirkungsoekonomie.de/unabhaengigkeit";
+const FAQ_URL = "https://institut.wirkungsoekonomie.de/faq";
 const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 function esc(value) {
@@ -82,8 +87,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wirkungsinstitut – der Think Tank der Wirkungsökonomie</title>
-    <meta name="description" content="Das Wirkungsinstitut ist der Denk-, Forschungs- und Arbeitsraum der Wirkungsökonomie. Es ordnet Wirkungschecks, Methodenpapiere, Policy Briefs und Dossiers ein und führt zur Plattform.">
+    <title>Wirkungsinstitut - Think Tank der Wirkungsökonomie</title>
+    <meta name="description" content="Brückenseite zum Wirkungsinstitut: Zielbild, Methodenfamilie, Stakeholder, aktuelle Arbeiten und Mitwirkung im Think Tank der Wirkungsökonomie.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/institut/">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -92,10 +97,10 @@ ${renderHeader(BASE)}
     <main>
       <section class="hero compact-hero">
         <nav class="breadcrumb"><a href="../index.html">Start</a> / Wirkungsinstitut</nav>
-        <p class="hero-kicker">Der Think Tank der Wirkungsökonomie</p>
-        <h1>Wirkungsinstitut</h1>
-        <p class="hero-subtitle">Das Wirkungsinstitut ist der Denk-, Forschungs- und Arbeitsraum der Wirkungsökonomie. Hier entstehen Wirkungschecks, Methodenpapiere, Policy Briefs und Dossiers zu der Frage, was Entscheidungen, Produkte, Technologien, Kapitalflüsse, Narrative und politische Programme wirklich bewirken.</p>
-        <p class="hero-subtitle">Die Wirkungsökonomie fragt nicht nur, ob etwas wahr, teuer, populär oder politisch gewollt ist. Sie fragt: <strong>Was bewirkt es — für Mensch, Planet und Demokratie?</strong> Das Wirkungsinstitut macht diese Frage zum Arbeitsprinzip.</p>
+        <p class="hero-kicker">Think Tank der Wirkungsökonomie</p>
+        <h1>Wirkung sichtbar machen.<br>Bevor Entscheidungen Folgen haben.</h1>
+        <p class="hero-subtitle">Das Wirkungsinstitut ist der Denk-, Forschungs- und Arbeitsraum der Wirkungsökonomie. Es untersucht, was Entscheidungen, Produkte, politische Narrative, Technologien, Kapitalflüsse und gesellschaftliche Entwicklungen wirklich bewirken - für Mensch, Planet und Demokratie.</p>
+        <p class="hero-subtitle">Diese Seite ist die Brücke von wirkungsoekonomie.de zum Institut. Die laufenden Arbeiten, Methoden, Veröffentlichungen und Mitwirkungswege liegen auf der Institutsplattform.</p>
         <div class="hero-actions">
           <a class="btn btn-secondary" href="${INSTITUT_URL}">Institut öffnen</a>
           <a class="btn btn-secondary" href="${AKTUELLE_ARBEITEN_URL}">Aktuelle Arbeiten ansehen</a>
@@ -112,6 +117,20 @@ ${renderHeader(BASE)}
           <p>Ein Faktencheck kann prüfen, ob eine Aussage stimmt. Ein Wirkungscheck geht weiter: Er fragt, welches Wirkungspotenzial eine Aussage, Entscheidung oder Entwicklung erzeugt.</p>
           <p>Denn Wirkung entsteht nicht erst, wenn ein Schaden sichtbar ist. Sie beginnt oft dort, wo Erwartungen, Investitionen, Narrative, Märkte, politische Entscheidungen oder gesellschaftliche Resonanzräume verändert werden.</p>
           <p>Das Wirkungsinstitut ist der Ort, an dem solche Wirkungen gesammelt, diskutiert, geprüft, verdichtet und veröffentlicht werden.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="institut-ziel-title">
+        <div class="section-header">
+          <p class="hero-kicker">Zielbild</p>
+          <h2 id="institut-ziel-title">Wirkung soll sichtbar, prüfbar und entscheidungsrelevant werden</h2>
+          <p>Das Wirkungsinstitut macht Wirkung sichtbar, bevor Entscheidungen getroffen, Investitionen getätigt oder politische Narrative normalisiert werden.</p>
+          <p>Es übersetzt die Wirkungsökonomie in konkrete Analysen, Methoden, Wirkungschecks, Policy Briefs und Dossiers.</p>
+          <p>Ziel ist ein öffentlicher Denk- und Arbeitsraum, der bessere Entscheidungen ermöglicht - für Mensch, Planet und Demokratie.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-secondary" href="${ZIELBILD_URL}">Zielbild lesen</a>
+          <a class="btn btn-secondary" href="${WIRKUNGSMODELL_URL}">Wirkungsmodell ansehen</a>
         </div>
       </section>
 
@@ -137,6 +156,44 @@ ${renderHeader(BASE)}
             <h3 class="card-title">Dossiers</h3>
             <p class="card-text">Tiefere Analysen zu großen Systemfragen. Zum Beispiel Rente, Wohnen, Lieferketten, Erbschaftsteuer, Medienwirkung oder KI und Arbeit.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="institut-methodik-title">
+        <div class="section-header">
+          <p class="hero-kicker">Methodenfamilie</p>
+          <h2 id="institut-methodik-title">Nicht nur Wirkungsanalyse</h2>
+          <p>Das Institut entwickelt eine Methodenfamilie der Wirkungsökonomie: Wirkungsanalyse, Wirkungspotenzial-Analyse, Wirkungsrisiko-Analyse, Wirkungsbewertung, Wirkungsarchitektur, Wirkungslenkung, Impact-Controlling, Transformationsanalyse, Narrativ- und Resonanzraumanalyse sowie Policy- und Maßnahmenprüfung.</p>
+          <p>Gemeinsam ist allen Methoden: Wirkung, Wirkungspotenzial und Wirkungsrisiko werden getrennt; Reichweite ist nicht Wirkung; Reporting ist nicht Rückkopplung; Nichtkompensation und Reverse Merit Order schützen vor Schönrechnen.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-secondary" href="${METHODIK_URL}">Methoden kennenlernen</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="institut-stakeholder-title">
+        <div class="section-header">
+          <p class="hero-kicker">Für wen?</p>
+          <h2 id="institut-stakeholder-title">Für alle, die Wirkung verstehen und gestalten wollen</h2>
+          <p>Das Wirkungsinstitut richtet sich an Bürger:innen, Wissenschaft, Politik, Verwaltung, Unternehmen, Medien, Zivilgesellschaft, Bildung, Kommunen und Finanzmarktakteure.</p>
+          <p>Der gemeinsame Nenner ist nicht Zugehörigkeit, Titel oder Status, sondern die Frage: <strong>Was bewirkt unser Handeln - und wie können wir es besser machen?</strong></p>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <h3 class="card-title">Orientierung</h3>
+            <p class="card-text">Für Bürger:innen, Medien, Bildung und Öffentlichkeit: komplexe Debatten nach Wirkpfaden, Nebenwirkungen und Rückkopplungen einordnen.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Entscheidungsgrundlagen</h3>
+            <p class="card-text">Für Politik, Verwaltung, Kommunen, Unternehmen und Kapital: Entscheidungen nicht nur nach Kosten, Interessen oder Rendite bewerten.</p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Wissensbeiträge</h3>
+            <p class="card-text">Für Wissenschaft, Fachleute und Zivilgesellschaft: Quellen, Praxisfälle, Gegenargumente und Reviews in belastbare Wirkungsbeiträge übersetzen.</p>
+          </article>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-secondary" href="${STAKEHOLDER_URL}">Stakeholder ansehen</a>
         </div>
       </section>
 
@@ -230,6 +287,7 @@ ${renderHeader(BASE)}
         <div class="hero-actions">
           <a class="btn btn-primary" href="${INSTITUT_URL}">Institut öffnen</a>
           <a class="btn btn-secondary" href="${AKTUELLE_ARBEITEN_URL}">Aktuelle Arbeiten ansehen</a>
+          <a class="btn btn-secondary" href="${FAQ_URL}">Häufige Fragen</a>
         </div>
       </section>
     </main>
