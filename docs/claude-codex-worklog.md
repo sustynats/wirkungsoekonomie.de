@@ -233,3 +233,10 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Fehler zuvor: Musik-Versionen nur lokal gestaged (`voice-tts/website-videos-music/`), nie deployt → Live-Videos (z. B. /fuer/) hatten keine Musik. Jetzt behoben: 18 Videos im Repo ersetzt (IC-einfach ausgenommen).
 - Pruefung: nur assets/video geändert; IC unangetastet; Push ok (2. Versuch).
 - Offen fuer Natalie/Codex: PR #73 mergen (Achtung ~112 MB Media-Diff; ggf. Size-Gate pruefen). Perspektivisch Website-Videos auf GitHub-Release umstellen.
+
+### 2026-07-03 - Codex - Studienskripte Sprint 2: V21-V24 ausgebaut
+- Status: abgeschlossen als Tiefenskript-Arbeitsfassungen, nicht als Claude/PDF-final.
+- Repo/Pfad: Website-Root `content/studienskripte/woek-g-v21.md` ... `woek-g-v24.md`, Word unter `docs/studienskripte/word-rohfassungen/`, App-Spiegel unter `woek-akademie-app/content/lehrgaenge/`.
+- Geaendert: V21 Produkte/Technologien/Institutionen, V22 Wirkungssprache/Quellenklarheit, V23 Unsicherheit/Ambivalenz/Bewertung, V24 deeskalierende demokratiestaerkende Kommunikation auf substanzielle Arbeitsfassungen erweitert. Je Skript: Website-Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
+- Pruefung: JSON ok, App-Typecheck gruen, V21-DOCX gerendert (27 Seiten) und visuell geprueft. Umfang je Master ca. 7.5k-9.2k Woerter.
+- Offen fuer Codex: weitere Sprints V25-V28, V29-V32, V33-V36, danach V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.
