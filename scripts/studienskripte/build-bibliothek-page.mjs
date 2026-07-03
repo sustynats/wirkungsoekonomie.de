@@ -24,6 +24,7 @@ function statusLabel(status) {
   if (status === "pilot-arbeitsfassung") return "Pilot-Arbeitsfassung";
   if (status === "rohfassung-v0") return "Rohfassung V0";
   if (status === "studienskript-v1-rohfassung") return "V1-Rohfassung";
+  if (status === "studienskript-v1") return "Studienskript V1";
   return status;
 }
 
@@ -41,7 +42,7 @@ const sections = Array.from(byTrack.entries()).map(([track, scripts]) => `
               <span class="status-badge">${esc(statusLabel(script.status))}</span>
             </div>
             <h3>${esc(script.code)}: ${esc(script.title)}</h3>
-            <p>Markdown-Master, Word-Rohfassung und App-Zuordnung sind angelegt. Der nächste Produktionsschritt ist die fachliche Tiefenfassung und CI/CD-Finalisierung.</p>
+            <p>Markdown-Master, Word-Rohfassung, App-Spiegel und geschützter Fragepool sind vorhanden. Offen bleibt die Claude-CI/CD-Finalisierung für Reader, PDF, Satz und Freigabe.</p>
             <dl class="document-card-meta">
               <dt>Master</dt><dd>${esc(script.masterPath)}</dd>
               <dt>Word</dt><dd>${esc(script.wordRawPath)}</dd>
@@ -85,7 +86,7 @@ const html = `<!DOCTYPE html>
       <section class="section section-muted">
         <div class="section-header">
           <h2>Produktionsstand</h2>
-          <p>${registry.scripts.length} Vorlesungen liegen als Rohfassungs-Artefakte vor: Markdown-Master, Word-Rohfassung und App-Zuordnung. Rohfassung bedeutet: strukturiert und übergabefähig, aber noch nicht finaler 40-50-Seiten-Tiefenstandard.</p>
+          <p>${registry.scripts.length} Vorlesungen liegen als fachlich finale Codex-V1-Fassungen vor: Markdown-Master, Word-Rohfassung, App-Spiegel und geschützter Fragepool. Die Veröffentlichung als Reader/PDF erfolgt nach Claude-CI/CD-Freigabe.</p>
         </div>
       </section>
 ${sections}
