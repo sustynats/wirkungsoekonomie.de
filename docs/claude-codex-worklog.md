@@ -240,3 +240,11 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Geaendert: V21 Produkte/Technologien/Institutionen, V22 Wirkungssprache/Quellenklarheit, V23 Unsicherheit/Ambivalenz/Bewertung, V24 deeskalierende demokratiestaerkende Kommunikation auf substanzielle Arbeitsfassungen erweitert. Je Skript: Website-Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
 - Pruefung: JSON ok, App-Typecheck gruen, V21-DOCX gerendert (27 Seiten) und visuell geprueft. Umfang je Master ca. 7.5k-9.2k Woerter.
 - Offen fuer Codex: weitere Sprints V25-V28, V29-V32, V33-V36, danach V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.
+
+### 2026-07-03 - Codex - Studienskripte Sprint 3: V25-V28 ausgebaut
+- Status: abgeschlossen als Tiefenskript-Arbeitsfassungen, nicht als Claude/PDF-final.
+- Repo/Pfad: Website-Root `content/studienskripte/woek-g-v25.md` ... `woek-g-v28.md`, Word unter `docs/studienskripte/word-rohfassungen/`, App-Spiegel unter `woek-akademie-app/content/lehrgaenge/`.
+- Geaendert: V25 SDGs/Agenda 2030, V26 SDG+, V27 Kernfelder/Wirkungsgrenzen/rote Linien, V28 CSRD/ESRS/GRI/EU-Taxonomie/NACE/DPP auf substanzielle Arbeitsfassungen erweitert. Je Skript: Website-Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
+- Extern geprueft: V25/V28 mit Primaerquellen UN SDG/Agenda 2030, EU-Kommission CSRD/Taxonomie/DPP, EFRAG ESRS, Eurostat NACE Rev. 2.1 und GRI.
+- Pruefung: JSON ok; V28-DOCX gerendert (32 Seiten) und visuell geprueft. Umfang je Master ca. 7.3k-9.5k Woerter.
+- Offen fuer Codex: Sprint 4 V29-V32, Sprint 5 V33-V36, danach V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.

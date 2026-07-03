@@ -335,6 +335,30 @@ Handlung bezeichnet jeden Eingriff in einen bestehenden Zustand oder Möglichkei
 
 Unterlassen bezeichnet die wirkende Form des Nicht-Handelns. Nicht jede Nicht-Handlung ist wirkungsökonomisch relevant. Unterlassen wird dann relevant, wenn Handlung möglich, erwartbar oder verantwortlich gewesen wäre und das Ausbleiben dieser Handlung Zustände verändert, Risiken erhöht oder schädliche Pfade fortsetzt.
 
+Ein Staat, der marode Infrastruktur nicht saniert, handelt nicht neutral. Er lässt Wirkungsrisiko wachsen. Ein Unternehmen, das bekannte Lieferkettenrisiken nicht prüft, handelt nicht neutral. Es verschiebt Verantwortung. Eine Plattform, die systematische Desinformation ignoriert, handelt nicht neutral. Sie verändert den öffentlichen Resonanzraum durch Duldung. Eine Gesellschaft, die Pflege, Bildung oder Prävention vernachlässigt, spart nicht einfach. Sie erzeugt spätere Folgekosten.
+
+Handlung und Unterlassen sind deshalb zwei Grundformen des Wirkens. Beide können Wirkungspotenzial erzeugen, Wirkungsrisiko erhöhen oder tatsächliche Zustandsveränderungen auslösen. Die Wirkungsökonomie bewertet nicht nur, was getan wurde. Sie fragt auch, was hätte getan werden müssen, damit Schäden verhindert oder positive Wirkungen ermöglicht werden.
+
+### 16.4 Die vierte Ebene: Wirkungsträger, Wirkungsempfänger und Wirkungsraum
+
+Wirkung braucht Zuordnung. Sie entsteht nicht abstrakt. Sie geht von etwas aus, trifft etwas und entfaltet sich in einem bestimmten Zusammenhang.
+
+Wirkungsträger sind Menschen, Organisationen, Produkte, Dienstleistungen, Infrastrukturen, Institutionen, Technologien, Kapitalflüsse, Medieninhalte, Algorithmen, Gesetze oder politische Entscheidungen, von denen Wirkung ausgeht oder über die Wirkung weitergegeben wird. Ein Apfel kann Wirkungsträger sein. Ein T-Shirt kann Wirkungsträger sein. Eine Bank, ein Krankenhaus, eine Schule, ein Gesetz, ein Fonds, ein Video, eine Plattform oder ein Algorithmus können Wirkungsträger sein.
+
+Wirkungsempfänger sind Menschen, Gruppen, Regionen, Ökosysteme, Institutionen, Demokratien, Märkte, Unternehmen, künftige Generationen oder andere Zustandsräume, deren Zustand verändert wird. Wirkungsempfänger müssen nicht sichtbar, zahlungsfähig oder gegenwärtig sein. Auch Kinder, kommende Generationen, nicht-menschliche Natur und demokratische Öffentlichkeiten können Wirkungsempfänger sein.
+
+Der Wirkungsraum bezeichnet den Zusammenhang, in dem Wirkung entsteht. Wirkung liegt nie vollständig im isolierten Objekt. Ein Produkt wirkt anders je nach Lieferkette, Nutzung, Region, Wasserstress, Energiequelle, Arbeitsbedingungen, Preis, Datenlage und Entsorgung. Eine Aussage wirkt anders je nach Resonanzraum, Tonalität, Wiederholung, Publikum, Plattformlogik und politischer Lage. Eine Steuer wirkt anders, wenn Alternativen vorhanden sind, als wenn Menschen in alten Infrastrukturen gefangen bleiben.
+
+Der Wirkungsraum entscheidet mit, ob eine Handlung stabilisiert, belastet oder destabilisiert. Deshalb kann die Wirkungsökonomie Wirkung nicht losgelöst vom Kontext bewerten. Sie braucht Wirkungsträger, Wirkungsempfänger und Wirkungsraum, damit Zustandsveränderungen nicht beliebig behauptet, sondern sauber zugeordnet werden können.
+
+### 16.5 Die fünfte Ebene: systemischer Wert und normativer Wert
+
+Nicht jede Zustandsveränderung hat dieselbe Bedeutung. Eine Wirkung kann messbar sein und trotzdem geringe systemische Relevanz haben. Eine andere Wirkung kann klein erscheinen und dennoch einen kritischen Zustand berühren. Deshalb unterscheidet die Wirkungsökonomie zwischen systemischem Wert und normativem Wert.
+
+Systemischer Wert beschreibt die Bedeutung einer Wirkung für Stabilität, Resilienz, Regeneration, Funktionsfähigkeit, Vertrauen, Lernfähigkeit und demokratische Korrekturfähigkeit eines Systems. Er fragt nicht zuerst, ob eine Wirkung moralisch gut klingt. Er fragt, welche Rolle sie im Zusammenhang spielt. Stärkt sie tragende Strukturen? Entlastet sie Engpässe? Verringert sie Verwundbarkeit? Erhöht sie Anpassungsfähigkeit? Verhindert sie Kipppunkte? Öffnet sie bessere Handlungsmöglichkeiten?
+
+Normativer Wert beschreibt die Bewertung einer Wirkung gemessen an Mensch, Planet und Demokratie. Er fragt, ob eine Zustandsveränderung Würde, Freiheit, Gesundheit, Teilhabe, ökologische Regeneration, Rechtsstaatlichkeit, Wahrheit, Vertrauen und demokratische Stabilität stärkt oder schwächt.
+
 ### Quellenanker: Kapitel 30 - Von Wirkung zu Messung
 
 *Interne Quelle:* `referenz/kapitel-030-von-wirkung-zu-messung/index.html`
@@ -388,6 +412,30 @@ Unsicherheit darf jedoch nicht zur Ausrede werden. In komplexen Systemen gibt es
 Messgrenzen müssen in der Architektur sichtbar bleiben. Eine Wirkung kann gemessen, geschätzt, qualitativ bewertet, unsicher, offen oder nicht ausreichend belegt sein. Jede dieser Kategorien hat eine andere Bedeutung. Unbekannte Wirkung ist nicht neutrale Wirkung. Sie ist ein Hinweis auf Prüfbedarf.
 
 Damit entsteht eine methodische Ethik der Messung. Sie verlangt Genauigkeit, wo Genauigkeit möglich ist. Sie verlangt Transparenz, wo Schätzung nötig ist. Sie verlangt Vorsicht, wo Unsicherheit besteht. Sie verlangt Korrektur, wenn neue Daten alte Annahmen widerlegen.
+
+### 30.4 Warum Messung Rückkopplung vorbereitet
+
+Messung ist in der Wirkungsökonomie kein Selbstzweck. Sie soll keine Berichte füllen, keine Rankings als Ersatz für Urteil erzeugen und keine Aktivität simulieren. Sie soll Rückkopplung ermöglichen.
+
+Rückkopplung bedeutet: Eine beobachtete Wirkung kehrt in Entscheidungen zurück. Wenn eine Handlung Mensch, Planet oder Demokratie stärkt, soll diese Wirkung sichtbar und anschlussfähig werden. Wenn eine Handlung schadet, soll sie nicht unsichtbar bleiben. Wenn eine Wirkung unklar ist, soll Prüfung ausgelöst werden. Wenn eine Maßnahme unerwartete Nebenwirkungen erzeugt, soll das System lernen.
+
+Messung bereitet diese Rückkopplung vor, weil sie die Verbindung zwischen Handlung und Zustandsveränderung herstellt. Ohne Messung bleibt unklar, ob eine Maßnahme wirkt. Ohne Vergleich bleibt unklar, ob Wirkung stark oder schwach ist. Ohne Zeitbezug bleibt unklar, ob Wirkung dauerhaft oder vorübergehend ist. Ohne Kontext bleibt unklar, ob eine Verbesserung an einer Stelle Verschlechterung an anderer Stelle erzeugt.
+
+Die Wirkungsökonomie misst daher nicht nur Output. Output sagt, was getan wurde. Wirkung sagt, was sich verändert hat. Ein Förderprogramm kann ausgezahlt werden, ohne Armut zu senken. Ein Bildungsprojekt kann viele Teilnehmende erreichen, ohne Wirkungskompetenz zu stärken. Ein Unternehmen kann Nachhaltigkeitsdaten berichten, ohne Entscheidungen zu verändern. Eine Kampagne kann Reichweite erzielen, ohne Vertrauen zu erhöhen. Eine Sanierung kann Energie sparen und zugleich soziale Verdrängung verstärken.
+
+Messung muss deshalb auf Zustände bezogen sein. Sie muss zeigen, ob Mensch, Planet und Demokratie gestärkt oder geschwächt werden. Sie muss Nebenwirkungen erfassen, Zeitverzögerungen berücksichtigen und Wirkungsräume unterscheiden. Erst dann kann sie Rückkopplung vorbereiten.
+
+Die heute vorhandenen Berichts- und Offenlegungsstandards liefern dafür wichtige Anschlussstellen. ESRS, GRI, Lebenszyklusanalysen und Social-Value-Methoden strukturieren Daten, Auswirkungen, Risiken, Ressourcenflüsse, Stakeholderbezüge und Ergebnislogiken. Aus Sicht der Wirkungsökonomie sind sie jedoch nicht der Endpunkt. Sie werden erst dann zu einer Wirkungsarchitektur, wenn ihre Daten in Bewertung, Lenkung und Lernen zurückgeführt werden.
+
+Dieses Kapitel legt davor den methodischen Grundsatz fest: Wirkung muss messbar werden, aber Messung darf Wirkung nicht verkleinern. Sie muss empirische Beobachtung, systemische Einordnung und normative Bewertung verbinden. Sie muss Unsicherheit offenlegen. Sie muss Rückkopplung vorbereiten.
+
+Diese Frage führt zu Kapitel 31: WÖk-IDs und Indikatorenarchitektur.
+
+Endnoten und Quellen zu Kapitel 30
+
+Interne WÖk-Quellen
+
+Weber, Natalie: Grundlagenpapier Wirkungsökonomie, 2025. Grundlage für Wirkung als messbare, überprüfbare und an gesellschaftlichen, ökologischen sowie ethischen Zielen ausgerichtete Leitgröße. Das Grundlagenpapier benennt zugleich Risiken von Bürokratisierung, Wirkungssimulation, Zielkonflikten und Unsicherheit.
 
 ### Quellenanker: Kapitel 74 - Öffentlichkeit als Wirkungsraum
 
@@ -443,6 +491,30 @@ Ein viraler Clip kann Millionen Menschen erreichen und demokratische Verlustleis
 
 Verantwortung wächst mit Reichweite, Verstärkung und Macht. Ein privater Satz in einem kleinen Kreis hat andere Wirkung als dieselbe Formulierung auf einer Plattform mit Millionen Menschen. Eine Redaktion hat andere Verantwortung als ein privater Chat. Eine Plattform hat andere Verantwortung als ein einzelner Kommentar. Ein Creator mit großer Community verändert andere Wirkungsräume als ein Mensch ohne Reichweite. Diese Differenz wird später im Zusammenhang mit Creator-Verantwortung und digitalen Öffentlichkeiten vertieft. Hier gilt der Grundsatz: Wer Öffentlichkeit prägt, verändert Wirkungsräume.
 
+Verantwortung heißt nicht Zensur. Sie heißt nicht, dass starke Kritik vermieden werden soll. Demokratie braucht harte Kritik, investigative Recherche, Satire, Widerspruch und Streit. Verantwortung heißt, dass öffentliche Akteure Wirkungspotenziale ihrer Reichweite, Tonalität, Wiederholung, Bildauswahl, Quellenlage und Verstärkungslogik ernst nehmen. Kritik ist demokratische Wirkleistung, wenn sie Wirklichkeit klärt. Sie wird destruktiv, wenn sie Wahrheit, Würde und Korrekturfähigkeit beschädigt.
+
+### 74.4 Öffentlichkeit ohne Marktplatzillusion
+
+Der Marktplatz bleibt eine starke demokratische Metapher. Menschen kommen zusammen, tauschen Informationen aus, streiten, hören zu, vergleichen Argumente und bilden Meinungen. Habermas’ Analyse der bürgerlichen Öffentlichkeit knüpft an diesen Raum vernünftiger, zugänglicher und kritischer Verständigung über gemeinsame Angelegenheiten an. Diese Tradition bleibt wichtig.
+
+Aber die Metapher reicht nicht mehr.
+
+Ein realer Marktplatz hat Grenzen. Menschen sehen, wer spricht. Man kann gehen, widersprechen, zuhören. Lautstärke ist sichtbar. Eigentum am Platz ist begrenzt. Digitale Öffentlichkeit ist anders. Sie ist nicht ein Platz, sondern ein Netzwerk aus Plattformen, Suchmaschinen, Messengern, Videokanälen, Podcasts, Newslettern, Medienhäusern, Foren, Kommentarräumen, Werbesystemen, Datenbrokern, Empfehlungssystemen und KI-generierten Antwortsystemen.
+
+Sie ist nicht neutral zugänglich, sondern technisch sortiert. Sie ist nicht nur Gespräch, sondern Geschäftsmodell. Sie ist nicht nur Öffentlichkeit, sondern Datenernte. Sie ist nicht nur Meinungsbildung, sondern Verhaltenslenkung. Sie ist nicht nur Austausch, sondern Skalierung.
+
+Die Marktplatzillusion verdeckt drei Dinge. Erstens Eigentum: Digitale Öffentlichkeiten liegen häufig in privaten Infrastrukturen. Die Regeln des Sichtbaren werden durch Plattformarchitekturen, Geschäftsbedingungen, Moderation, Werbemodelle und Algorithmendesign mitbestimmt. Zweitens Verstärkung: Nicht jede Aussage wird gleich sichtbar. Ranking, Empfehlung, Trendlogik, Kommentarreihenfolge, Videoausspielung, Monetarisierung und Depriorisierung entscheiden mit. Drittens Asymmetrie: Einige Akteure können Sichtbarkeit kaufen, Daten nutzen, Bots einsetzen, Microtargeting betreiben, Netzwerke koordinieren oder professionelle Manipulation organisieren.
+
+Öffentlichkeit ist daher kein Marktplatz im einfachen Sinn. Sie ist Infrastruktur mit Macht. Wirkungsökonomisch bedeutet das: Man darf nicht nur auf Inhalte schauen. Man muss auf die Bedingungen schauen, unter denen Inhalte sichtbar werden. Wer besitzt die Infrastruktur? Wer finanziert Sichtbarkeit? Welche Daten fließen? Welche Inhalte werden verstärkt? Welche Korrekturen sind möglich? Welche Gruppen werden verdrängt? Welche Fehler werden wiederholt? Welche Akteure profitieren von Erregung? Welche Wahrheit bleibt unsichtbar, weil sie nicht attraktiv genug erscheint?
+
+Demokratische Öffentlichkeit entsteht nicht automatisch, wenn viele sprechen. Sie entsteht, wenn Sichtbarkeit, Widerspruch, Korrektur und Teilhabe fair organisiert sind. Das ist kein Argument gegen Meinungsfreiheit. Es ist ein Argument gegen die Verwechslung von Meinungsfreiheit mit unregulierter Macht über Sichtbarkeit.
+
+Die alte Frage lautete: Wer darf was sagen? Diese Frage bleibt grundrechtlich zentral. Die Wirkungsökonomie ergänzt: Welche Strukturen entscheiden, was sichtbar wird, was korrigierbar bleibt, wem geglaubt wird und ob Demokratie handlungsfähig bleibt?
+
+Damit wird Öffentlichkeit nicht verengt. Sie wird ernst genommen. Die nächsten Kapitel entfalten diese Logik: Plattformlogik und Algorithmen, Sprache, Framing und Tonalität, Desinformation und hybride Einflussnahme, Creator, Hosts und digitale Verantwortung sowie Diskurskultur.
+
+### 74.5 Zwischenfazit
+
 ### Quellenanker: Kapitel 76 - Framing, Sprache und Tonalität
 
 *Interne Quelle:* `referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html`
@@ -496,6 +568,30 @@ Die Grenze zwischen starker Kritik und entwürdigender Sprache ist deshalb wicht
 Diese Grenze schützt Kritik. Wer Entwürdigung und Kritik vermischt, schwächt Demokratie. Denn dann wird jede harte Kritik verdächtig und jede Entwürdigung als „nur Meinung“ verteidigt. Die Wirkungsökonomie braucht eine klare Trennung: Kritik ist Korrektur. Entwürdigung ist Verlustleistung im gemeinsamen Raum.
 
 Normalisierung geschieht durch Wiederholung. Ein Begriff, der einmal schockiert, kann nach hundert Wiederholungen gewöhnlich wirken. Eine Feindmarkierung kann als „zugespitzte Sprache“ erscheinen. Eine Verschwörungserzählung kann als „berechtigte Frage“ getarnt werden. Eine institutionelle Delegitimierung kann als „gesunder Zweifel“ auftreten. Wiederholung erzeugt Vertrautheit, und Vertrautheit kann Wahrheit simulieren.
+
+Daraus folgt eine redaktionelle Schutzregel: Ein Faktencheck kann formal richtig und wirkungsbezogen schwach sein, wenn er zuerst den falschen Frame groß wiederholt. Wahrheit braucht deshalb nicht nur Korrektur, sondern Dramaturgie. Die falsche Behauptung darf benannt werden, aber kurz, markiert und eingebettet in den stärkeren Wirkungsrahmen der Wahrheit. Ein Wirkungscheck ergänzt den Faktencheck: Welcher Frame wird aktiviert? Welche Bilder werden wiederholt? Welche Emotion wird freigesetzt? Wer wird zum Problem gemacht? Welche Wirkungspotenziale entstehen durch die Form der Korrektur selbst?
+
+Normalisierung wirkt besonders stark, wenn Kampfbegriffe mit Plattformlogik verbunden werden. Ein zugespitztes Wort erzeugt Reaktion. Reaktion erzeugt Reichweite. Reichweite erzeugt Wiederholung. Wiederholung erzeugt Vertrautheit. Vertrautheit verändert Sagbarkeit. So kann ein öffentlicher Raum schrittweise härter, feindseliger und entmenschlichender werden, ohne dass ein einzelner Satz allein alles erklärt.
+
+Feindbilder ordnen die Welt. Sie bieten Zugehörigkeit durch Abgrenzung. Wer dazugehören will, weiß, gegen wen er sein muss. Das ist politisch anschlussfähig, weil es Komplexität reduziert und Sicherheit verspricht. Aber es zerstört demokratische Wirklichkeit. Ein Feindbild muss nicht argumentieren. Es muss nur markieren. Es ersetzt Prüfung durch Loyalität.
+
+Häme hat eine ähnliche Wirkung. Sie erscheint leicht als Humor oder Ironie. Sie kann Macht kritisieren, Absurdität zeigen und Distanz schaffen. Sie kann aber auch Menschen entwürdigen, Leid lächerlich machen und Empathie abbauen. Eine Öffentlichkeit, die Häme belohnt, verliert leichter die Fähigkeit, Menschen hinter Konflikten zu sehen.
+
+Entmenschlichung ist die härteste Form dieser Entwicklung. Sie beginnt nicht erst mit Gewaltaufrufen. Sie beginnt, wenn Menschen nur noch als Masse, Schmutz, Krankheit, Last, Gefahr, Parasiten, Tiere, Müll oder Störung erscheinen. Solche Sprache senkt die Schwelle, Härte gegen Menschen als notwendig, gerecht oder unvermeidlich zu deuten. Das heißt nicht, dass Sprache automatisch Gewalt erzeugt. Es heißt: Sprache kann Handlungsschwellen verschieben.
+
+Die Wirkungsökonomie braucht deshalb Diskursindikatoren, die nicht Meinungen kontrollieren, sondern Muster beobachten: dominante Narrative, toxische Narrative, Entmenschlichung, Verschwörung, Resonanzfelder, Feindseligkeit, Tonlage, Aggression, Anfeindung, Echokammern, Fake-News-Dynamiken, Feindbilder, Outgroup-Hass, Radikalisierung und digitale Gewalt. Solche Indikatoren sind kein Ersatz für Recht. Sie sind Frühwarninstrumente für demokratische Erosion.
+
+### 76.4 Sprachliche Verantwortung
+
+Sprachliche Verantwortung bedeutet nicht, immer angenehm zu sprechen. Sie bedeutet, die Wirkung von Begriffen, Frames, Tonalität, Wiederholung, Bildern und Verstärkung auf Mensch, Planet und Demokratie mitzudenken. Eine Demokratie braucht Streit, Kritik, Protest, Satire, Kunst, Widerstand, Anklage und harte Worte. Sprachliche Verantwortung will all das nicht schwächen. Sie will verhindern, dass Sprache die Bedingungen zerstört, unter denen Streit, Wahrheit und Korrektur möglich bleiben.
+
+Die alte Frage lautete: Darf man das sagen? Diese Frage bleibt grundrechtlich wichtig. Die neue Frage lautet zusätzlich: Welche Wirkung entfaltet diese Sprache, welcher Resonanzraum entsteht, welche Gruppen werden gestärkt oder entwürdigt, welche Korrektur wird möglich oder unmöglich, und welche Folgen entstehen für Mensch, Planet und Demokratie?
+
+Für Politik bedeutet Sprachverantwortung: Nicht nur mobilisieren, sondern demokratische Grundbedingungen nicht beschädigen. Für Verwaltung bedeutet sie: Nicht nur rechtlich korrekt formulieren, sondern so erklären, dass Menschen handeln können. Für Wirtschaft bedeutet sie: Nicht nur Reputation schützen, sondern Interessen, Risiken, Daten und Folgen transparent machen. Für Medien bedeutet sie: Nicht nur berichten, sondern einordnen, korrigieren und Resonanzräume mitverantworten. Für Wissenschaft bedeutet sie: Unsicherheit erklären, ohne Arroganzverdacht oder Scheinsicherheit zu erzeugen.
+
+Sprachverantwortung ist Teil von Governance, nicht Zensur. Sie macht Institutionen lesbarer. Vertrauen entsteht nicht aus Perfektion, sondern aus Nachvollziehbarkeit. Eine Maßnahme wird anschlussfähiger, wenn Ziel, Mittel, Kosten, Alternativen, Wirkung und Evaluation erklärt werden. Eine Reform wird glaubwürdiger, wenn Zielkonflikte benannt werden. Eine Krise wird weniger anfällig für Desinformation, wenn Kommunikation weder beschönigt noch panisch macht.
+
+Hate Speech braucht rechtsstaatlich präzise Grenzziehung und verhältnismäßige Antworten. Der Europarat versteht Hassrede als Ausdrucksformen, die Gewalt, Hass oder Diskriminierung gegen Personen oder Gruppen aufgrund realer oder zugeschriebener Merkmale anstiften, fördern, verbreiten oder rechtfertigen oder solche Personen beziehungsweise Gruppen herabsetzen; zugleich unterscheidet er Schweregrade und verlangt verhältnismäßige Reaktionen. Wirkungsökonomisch heißt das: Nicht jede unangenehme Aussage ist Hassrede. Aber rechtlich und gesellschaftlich relevante Hasskommunikation darf nicht verharmlost werden.
 
 ### Quellenanker: Inhalt
 
@@ -551,7 +647,32 @@ Alltagsbild Ein Schild mit der Aufschrift „Achtung, rutschig“ ist wichtig. A
 
 Diese Fassung arbeitet deshalb eine neue Unterscheidung ein: Sichtbarmachung, Bewertung und Rückkopplung. Die Wissensgesellschaft endet nicht dort, wo ein Label sichtbar wird. Die Wirkungsgesellschaft beginnt dort, wo die Erkenntnis aus dem Label in die Struktur des Marktes, des Staates, des Kapitals oder der Öffentlichkeit zurückgeführt wird.
 
-### 7.8 Konsequenzen für die WÖk-Architektur
+Diese Erweiterung ist auch deshalb wichtig, weil sie die Wirkungsökonomie gegen zwei Missverständnisse schützt. Das erste Missverständnis lautet: „Wir haben doch schon Labels, Zertifikate, ESG, CO2-Preise und Verbote - wozu noch Wirkungsökonomie?“ Die Antwort: Weil diese Instrumente wichtige Vorformen sind, aber keine vollständige Systemarchitektur bilden. Das zweite Missverständnis lautet: „Wirkungsökonomie ist nur ein weiteres Label.“ Die Antwort: Nein. Die Wirkungsökonomie nutzt Labels, Daten und Zertifikate als Rohmaterial, aber sie bleibt nicht bei der Anzeige stehen. Sie will Rückkopplung.
+
+2. Die einfache Geschichte: vom Rauchmelder zum Herdschalter #
+
+Stellen wir uns eine Küche vor. Auf dem Herd steht ein Topf. Die Platte ist zu heiß. Es beginnt zu rauchen. Der Rauchmelder piept. Das ist gut. Ohne Rauchmelder würde vielleicht niemand merken, dass etwas schiefläuft.
+
+Die Wissensgesellschaft ist dieser Rauchmelder. Sie erkennt, misst, meldet, analysiert und dokumentiert. Sie sagt: Da ist Rauch. Da ist CO2. Da ist Wasserstress. Da ist Kinderarbeit. Da ist Polarisierung. Da ist eine Krankheitshäufung. Da ist Vertrauensverlust.
+
+Labels und Zertifikate sind dann wie kleine Anzeigen am Rauchmelder. Sie machen das Piepen verständlicher. Rot heißt Gefahr. Grün heißt eher unproblematisch. Ein Siegel sagt: geprüft. Ein Score sagt: hier besser, dort schlechter. Das hilft. Aber es löst das Problem nicht automatisch.
+
+Die Wirkungsgesellschaft ist der Schritt danach. Sie fragt: Was folgt aus dem Piepen? Wer schaltet den Herd aus? Wer verändert die Herdplatte, damit sie nicht jeden Tag überhitzt? Wer zahlt, wenn immer wieder Rauch entsteht? Wer hat einen Vorteil davon, dass niemand den Herd ausschaltet?
+
+Das ist die zentrale Verschiebung: Wissen allein ist Anzeige. Wirkungsgesellschaft ist Anzeige plus Reaktion plus Lernschleife. Sie verbindet Messung mit Verantwortung.
+
+Merksatz Die Wissensgesellschaft fragt: Was wissen wir? Die Wirkungsgesellschaft fragt: Was folgt daraus?
+
+Diese Unterscheidung ist nicht gegen Wissen gerichtet. Im Gegenteil. Ohne Wissensgesellschaft keine Wirkungsgesellschaft. Aber der nächste Schritt besteht darin, dass Wissen nicht folgenlos bleibt. Ein Bericht, der niemandes Entscheidung verändert, ist wie ein Rauchmelder, der in einem geschlossenen Schrank piept.
+
+3. Von Agrar-, Industrie- und Konsumgesellschaft zur Wissensgesellschaft #
+
+Gesellschaften steuern nicht immer nach demselben Maßstab. In jeder Epoche gibt es eine dominante Ressource, eine dominante Knappheit und eine dominante Erfolgslogik.
+
+In der Agrargesellschaft war Boden zentral. Wer Land, Wasser, Tiere, Saatgut und Ernte kontrollierte, kontrollierte Versorgung und Macht. Die Leitfrage lautete: Haben wir genug Nahrung?
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
 
 Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 
@@ -559,7 +680,7 @@ Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 - Glossarverweise zu Impact-Washing, Wirkungspotenzial und Quellenklarheit verdichten.
 - Journal- und Dossiertexte auf Reichweite-als-Wirkung-Verwechslung prüfen.
 
-### 7.9 Kurzfazit
+### 7.10 Kurzfazit
 
 Wirkungssprache und Quellenklarheit ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
 

@@ -335,6 +335,30 @@ Produktdaten müssen daher mehrdimensional sein. Sie müssen zeigen, wo ein Prod
 
 Produktverantwortung bedeutet in der Wirkungsökonomie, dass Wirkung nicht am Verkaufspunkt endet. Hersteller, Handel, Datenarchitektur und Nutzungskontext haben unterschiedliche Rollen. Keine Stelle kann allein alle Wirkungen steuern. Aber jede Stelle kann zur Sichtbarkeit, Prüfbarkeit und Verbesserung beitragen.
 
+Hersteller verantworten Design, Materialwahl, Produktionslogik, Lieferantenanforderungen, Datenbereitstellung, Reparierbarkeit, Sicherheit, Gebrauchsinformationen und Kreislauffähigkeit. Sie entscheiden früh, welche Wirkungspotenziale ein Produkt enthält. Ein Produkt, das nicht reparierbar konstruiert ist, wird später schwer kreislauffähig. Ein Produkt, das Daten sammelt, kann Datenschutz und Selbstbestimmung stärken oder schwächen. Ein Produkt, das auf knappe Rohstoffe angewiesen ist, erzeugt andere Wirkungsrisiken als ein Produkt mit zirkulären Materialien.
+
+Der Handel verantwortet Auswahl, Sichtbarkeit, Sortierung, Information, Zugang und teilweise auch Eigenmarken. Er entscheidet, welche Produkte Regalraum, Aufmerksamkeit, Preisaktionen oder digitale Platzierung erhalten. Handel ist daher kein neutraler Durchleiter. Er ist Teil des Wirkungsraums. Die detaillierte Konsum- und Verbraucherlogik folgt später in diesem Teil. Hier reicht die Produktlogik: Produktwirkung muss dort sichtbar werden, wo Produkte angeboten werden.
+
+Die Datenarchitektur verantwortet Prüfbarkeit. Produktdaten müssen nicht nur erhoben, sondern verknüpft, aktualisiert, versioniert und auditierbar gemacht werden. Datenlücken dürfen nicht zur neutralen Kategorie werden. Unklare Wirkung ist nicht automatisch gute Wirkung. Wer keine belastbaren Daten zur Verfügung stellt, schafft keine Entlastung, sondern Prüfbedarf [Kap. 23; I-K48-4].
+
+Produktverantwortung umfasst direkte, indirekte, verzögerte und systemische Wirkung. Direkt wirkt ein Produkt, wenn es unmittelbar Gesundheit, Sicherheit, Energieverbrauch oder Nutzung beeinflusst. Indirekt wirkt es über Rohstoffe, Lieferketten, Kapital, Arbeit oder Entsorgung. Verzögert wirkt es, wenn Schäden oder Nutzen erst später sichtbar werden, etwa über Haltbarkeit, Reparatur, Emissionen oder Gewohnheiten. Systemisch wirkt es, wenn es Standards, Märkte, Infrastrukturen, Abhängigkeiten oder soziale Normen verändert.
+
+Damit wird Produktverantwortung anspruchsvoller, aber auch fairer. Sie verteilt Verantwortung nicht beliebig auf alle, sondern ordnet sie nach Rolle, Einfluss, Wissen und Handlungsmacht. Ein Hersteller kann nicht jede spätere Nutzung vollständig kontrollieren, aber er kann Design, Daten und Risikoinformationen gestalten. Ein Händler kann nicht jede Vorleistung neu prüfen, aber er kann geprüfte Produktdaten verlangen und sichtbar machen. Kund:innen sollen nicht Lieferkettenprüfer:innen werden. Sie brauchen verlässliche Signale aus einem System, das seine Datenarbeit vor dem Kauf erledigt [I-K48-4; I-K48-5].
+
+Produktverantwortung ist daher keine moralische Überforderung Einzelner. Sie ist eine Strukturfrage. Produkte müssen so beschrieben, bewertet und verbessert werden, dass die reale Wirkung in Entscheidungen zurückkehren kann.
+
+### 48.5 Zwischenfazit
+
+Damit wird das Produkt zum Wirkungsträger. Es vermittelt Zustandsveränderungen zwischen Unternehmen, Lieferketten, Nutzer:innen, Ökosystemen, Märkten und künftigen Entscheidungen. Die Messarchitektur schafft dafür die Grundlage: WÖk-IDs adressieren Indikatoren, Scorecards bewerten Wirkung, der DPP speichert Produktdaten, Wirkungsdatenräume verbinden Akteure.
+
+Dieses Kapitel hat keine Produktsteuermechanik und keine Konsumpsychologie ausgeführt. Es hat den Produktbegriff der Wirkungsökonomie festgelegt. Produktimage reicht nicht. Produktdaten müssen zeigen, welche Wirkung tatsächlich entsteht. Produktverantwortung endet nicht am Verkauf. Sie bezieht Rohstoffe, Herstellung, Nutzung und Ende des Lebenszyklus ein.
+
+Die nächste Frage lautet: Wenn Produkte Wirkung enthalten, warum zeigen Preise diese Wirkung bisher so schlecht? Was bedeutet ein ehrlicher Preis, wenn Marktpreise Folgekosten, Vorgriffswohlstand und verschobene Schäden nicht abbilden?
+
+Diese Frage führt zu [Kap. 49]: Ehrliche Preise.
+
+Endnoten und Quellen zu Kapitel 48
+
 ### Quellenanker: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume
 
 *Interne Quelle:* `referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html`
@@ -388,6 +412,30 @@ Auditierbarkeit und Interoperabilität sind deshalb keine technischen Nebensache
 ### 35.4 Von Berichtsdaten zu Steuerungsdaten
 
 Der entscheidende Unterschied liegt zwischen Berichtsdaten und Steuerungsdaten.
+
+Berichtsdaten zeigen, was war. Steuerungsdaten verändern, was folgt.
+
+Ein Nachhaltigkeitsbericht kann Daten über Emissionen, Wasser, Arbeitsbedingungen, Governance, Lieferketten oder Risiken enthalten. Das ist wichtig. Aber solange diese Daten nur dokumentieren, verändern sie die Entscheidung nicht. Sie bleiben im Bericht, während Preise, Kapitalzugang, Beschaffung, Risiko, Management und Kundensignale weiter nach alten Logiken arbeiten.
+
+Steuerungsdaten entstehen, wenn diese Informationen entscheidungsrelevant werden. Ein Produktpass macht Daten am Produkt verfügbar. Ein Datenraum macht sie verknüpfbar. WÖk-IDs machen sie adressierbar. Benchmarks und Scorecards machen sie bewertbar. T-SROI macht systemische Transformationswirkung sichtbar. Damit können Daten in Entscheidungen zurückkehren.
+
+Diese Rückkehr kann verschiedene Adressaten haben. Unternehmen können ihre Lieferketten, Beschaffung, Produktentwicklung und Risiken besser lesen. Der Staat kann öffentliche Beschaffung, Planung und Wirkungsprüfung datenbasierter gestalten. Kapital kann Wirkungsrisiken und Transformationschancen erkennen. Versicherungen können Verwundbarkeiten besser einschätzen. Kund:innen können auf klare geprüfte Signale zugreifen. Forschung kann Systemmuster analysieren. Prüfstellen können Datenqualität sichern.
+
+Damit schließt dieses Kapitel an die systemische Logik der Wirkungslenkung an. Wirkungslenkung verlangt, dass Wirkung nicht nur sichtbar, sondern entscheidungsrelevant wird. Der digitale Produktpass und Wirkungsdatenräume sind dafür keine vollständige Lenkung. Sie sind die Datenbedingung der Lenkung.
+
+Das Kapitel schließt auch an die Risikologik der Wirkungsökonomie an. Wirkungsdaten sind Risikodaten. Wer Lieferketten, Wasserstress, Arbeitsbedingungen, Emissionen, Materialabhängigkeiten, Gesundheitsrisiken, Datenqualität oder Infrastrukturbelastung sichtbar macht, erkennt nicht nur vergangene Wirkung. Er erkennt Frühwarninformationen. Ein DPP kann zeigen, wo ein Produkt verwundbar ist. Ein Datenraum kann zeigen, wo ein System riskante Muster entwickelt. Damit werden Wirkungsdaten zur Grundlage von Resilienz.
+
+Berichtsdaten beantworten: Was wurde offengelegt?
+
+Steuerungsdaten beantworten: Welche Entscheidung muss sich dadurch verändern?
+
+Diese Verschiebung ist der Abschluss von Teil V. Wirkung wird nicht nur begrifflich definiert, normativ ausgerichtet und methodisch bewertet. Sie wird technisch anschlussfähig. Erst dadurch kann sie später in Recht, Staat, Unternehmen, Märkte, Volkswirtschaft, Gesellschaft, Öffentlichkeit, Digitalisierung und globale Ordnung übergehen.
+
+### 35.5 Abschluss von Teil V
+
+Damit ist die methodische Grundlage gelegt.
+
+Wirkung ist nun nicht mehr nur ein Begriff. Sie ist nicht nur normative Orientierung. Sie ist nicht nur ein Score. Sie kann adressiert, gemessen, verglichen, geprüft, versioniert, gespeichert und in Entscheidungen zurückgeführt werden.
 
 ### Quellenanker: Kapitel 42 - Unternehmen als Wirkungssysteme
 
@@ -443,6 +491,30 @@ Wirkung in Strategie bedeutet, dass ein Unternehmen seine Zukunft nicht nur nach
 
 Wirkung in Governance bedeutet, dass diese Fragen in die Entscheidungsarchitektur eingehen. Wirkung darf nicht als Bericht nach der Entscheidung erscheinen. Sie muss vor der Entscheidung in den Raum. Vorstand, Geschäftsführung, Aufsichtsgremien, Risikofunktionen, Controlling, Einkauf, Produktentwicklung, Personal, Recht, Kommunikation und Nachhaltigkeit müssen mit einer gemeinsamen Wirkungslogik arbeiten. Sonst entstehen Silos: Eine Abteilung optimiert Kosten, eine andere berichtet Nachhaltigkeit, eine dritte verwaltet Risiko, eine vierte kommuniziert Purpose.
 
+Die Wirkungsökonomie verlangt Verbindung. Das Begriffssystem der Wirkungsökonomie liefert dafür die Sprache: Wirkung, Wirkungspotenzial, Wirkungsträger, Wirkungsempfänger, Wirkungsraum, systemischer Wert, normativer Wert, Wirkleistung, Netto-Wirkung, Wirkungsrisiko, Wirkungsresilienz, Wirkungsdaten, Wirkungskapital und Wirkungskompetenz. Diese Begriffe sind nicht für das Buch allein geschrieben. Sie müssen in Organisationen handlungsfähig werden.
+
+Wirkung in Governance heißt deshalb: Entscheidungen werden nicht nur nach finanzieller Zielerreichung geprüft, sondern nach Wirkungszusammenhang. Welche direkte Wirkung entsteht? Welche indirekte Wirkung? Welche verzögerte Wirkung? Welche systemische Wirkung? Welche Nebenwirkung? Welche Gegenwirkung? Welche Datenqualität liegt vor? Welche Unsicherheit bleibt? Welche Rückkopplung ist vorgesehen?
+
+Hier verbindet sich Teil VII mit der Systemlogik der Wirkungsökonomie. Unternehmen brauchen ein eigenes Wirkungsrad: Handlung, Wirkung oder Wirkungspotenzial, Zustandsveränderung, systemischer Wert, normativer Wert, Wirkungslenkung, veränderte Anreize, neue Handlung, Rückkopplung und Lernen. Wenn diese Logik nicht in Unternehmensentscheidungen zurückkehrt, bleibt Wirkung externes Reporting. Wenn sie zurückkehrt, wird das Unternehmen lernfähig.
+
+Damit ist auch klar, was dieses Kapitel noch nicht leistet. Es entfaltet noch keine Führungslehre. Das folgt im nächsten Kapitel. Es baut noch kein Wirkungscontrolling auf. Das folgt später in diesem Teil. Es erklärt noch keine Lieferkettensteuerung im Detail. Auch das folgt später. Es legt nur die grundlegende Unternehmenslogik fest: Wirkung muss in Strategie und Governance erscheinen, sonst bleibt sie Kommunikation.
+
+### 42.4 Verantwortung über die Bilanz hinaus
+
+Die Bilanz zeigt Vermögen, Schulden, Eigenkapital, Erträge, Aufwendungen und finanzielle Lage. Sie ist unverzichtbar. Aber sie zeigt nicht vollständig, welche Zustände ein Unternehmen verändert. Viele Wirkungen erscheinen nicht in der Bilanz, obwohl sie real sind: Emissionen, Wasserstress, Arbeitsbelastung, Vertrauen, Gesundheitsfolgen, Lieferkettenrisiken, Datenmissbrauch, demokratische Rückwirkungen, Resilienzverluste, soziale Folgekosten, Naturkapitalverbrauch und künftige Haftungsrisiken.
+
+Verantwortung über die Bilanz hinaus bedeutet nicht, dass Unternehmen für alles verantwortlich sind. Es bedeutet, dass die Reichweite unternehmerischer Wirkung größer ist als die Reichweite der klassischen Rechnungslegung. Unternehmen wirken direkt, wenn sie produzieren, beschäftigen, investieren, kommunizieren und verkaufen. Sie wirken indirekt über Lieferketten, Kapital, Kundennutzung, technische Standards, Datenräume, Vertrieb, Lobbyarbeit und Branchenlogiken. Sie wirken verzögert, wenn Produkte, Infrastrukturen, Gewohnheiten oder Risiken erst später Folgen zeigen. Sie wirken systemisch, wenn sie Märkte, Normen, Technologien, Erwartungen und politische Möglichkeitsräume verändern.
+
+Diese Wirkung kann nicht vollständig in eine klassische Bilanz gepresst werden. Aber sie darf auch nicht außerhalb der Verantwortung bleiben.
+
+Die externe Debatte zur nichtfinanziellen Berichterstattung, zur doppelten Wesentlichkeit, zu Stakeholdern und zu Unternehmensverantwortung hat bereits gezeigt, dass finanzielle Berichte allein nicht mehr ausreichen. Die Wirkungsökonomie nimmt diesen Befund auf und entwickelt ihn weiter: Es genügt nicht, Wirkung zusätzlich offenzulegen. Wirkung muss in Strategie, Governance und Entscheidung zurückkehren.
+
+Verantwortung über die Bilanz hinaus bedeutet auch, Wirkung nicht an Unternehmensgrenzen enden zu lassen. Ein Unternehmen kann nicht nur auf die eigene Fabrik schauen, wenn ein großer Teil seiner Wirkung in Vorleistungen liegt. Es kann nicht nur den Verkauf erfassen, wenn die Nutzung des Produkts zentrale Wirkungen erzeugt. Es kann nicht nur den direkten Arbeitsplatz betrachten, wenn sein Geschäftsmodell ganze Arbeitsmärkte, Regionen oder Kommunikationsräume verändert.
+
+Das heißt nicht, jede Folge vollständig einem Unternehmen zuzurechnen. Die systemischen Teile haben gezeigt, dass Wirkung in nichttrivialen Systemen entsteht. Verantwortung braucht deshalb Differenzierung: Wissen, Einfluss, Rolle, Macht, Reichweite, Zumutbarkeit, Datenlage und Nähe zur Wirkung. Ein Unternehmen mit hoher Wirkungskraft, hoher Marktmacht, tiefen Lieferketten, großen Datenbeständen oder starkem öffentlichen Einfluss hat andere Verantwortung als ein kleines Unternehmen mit begrenzter Reichweite.
+
+Verantwortung über die Bilanz hinaus heißt daher: Unternehmen müssen die Wirkungen in den Räumen prüfen, die sie real gestalten können. Sie müssen nicht die Welt allein retten. Sie müssen aber ihre eigenen Wirkungsräume ernst nehmen.
+
 ### Quellenanker: Kapitel 80 - Digitalisierung als Infrastruktur der Wirkungsökonomie
 
 *Interne Quelle:* `referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html`
@@ -496,6 +568,30 @@ Daten sind aber nur dann Rückkopplung, wenn sie in Entscheidungen zurückkehren
 Das ist der Unterschied zwischen Berichtsdaten und Steuerungsdaten.
 
 Berichtsdaten dokumentieren. Steuerungsdaten verändern Handlungen. Berichtsdaten sagen: Das ist geschehen. Steuerungsdaten sagen zusätzlich: Daraus folgt etwas. Eine Emissionszahl wird erst dann rückkopplungsfähig, wenn sie Produktbewertung, Investitionsentscheidung, Steuerklasse, Lieferantenbewertung, Beschaffung oder Risikoprämie verändert. Ein Wasserindikator wird erst dann steuerungsfähig, wenn er Standortstrategie, Lieferkettenauswahl, Produktpreis oder Versicherbarkeit beeinflusst. Ein Pflegeindikator wird erst dann wirksam, wenn er Personalplanung, Entlastung, Prävention oder öffentliche Mittel verändert. Ein Vertrauensindikator wird erst dann relevant, wenn politische Kommunikation, Beteiligung und institutionelle Korrektur daraus lernen.
+
+Die Wirkungsökonomie braucht deshalb Daten in drei Funktionen.
+
+Erstens: Zustandsdaten. Sie beschreiben, was ist: Emissionen, Energie, Wasser, Boden, Arbeitsbedingungen, Gesundheit, Wohnen, Pflege, Bildung, Biodiversität, Diskursqualität, Vertrauen, Lieferkettenrisiken, Cyberrisiken, Kapitalflüsse. Zustandsdaten sind die empirische Grundlage.
+
+Zweitens: Veränderungsdaten. Sie zeigen, was sich bewegt: sinkt der Energiebedarf, steigt die Pflegeüberlastung, verschiebt sich Kapital in regenerative Geschäftsmodelle, verbessert sich Lieferkettenstabilität, sinkt die Wasserintensität, steigt die Versicherbarkeit, nimmt Desinformation ab, wird eine öffentliche Ausgabe wirksamer? Veränderungsdaten machen Wirkung sichtbar.
+
+Drittens: Entscheidungsdaten. Sie verbinden Zustand und Veränderung mit Handlung. Welche Beschaffung wird ausgelöst? Welche Steuerklasse folgt? Welche Risikoprämie ändert sich? Welche Investition wird erleichtert? Welche Förderlogik wird angepasst? Welche Verwaltungspraxis wird korrigiert? Welche Scorecard wird aktualisiert? Welcher Einspruch wird möglich?
+
+Erst die dritte Funktion macht Daten zu Rückkopplung.
+
+Daten als Rückkopplung verlangen auch Transparenz über Unsicherheit. Nicht jede Wirkung ist gleich messbar. Manche Daten sind direkt gemessen, andere geschätzt, andere abgeleitet, andere vorläufig. Diese Unterschiede müssen sichtbar bleiben. Eine Wirkungsarchitektur, die Schätzungen als Gewissheit ausgibt, erzeugt Scheingenauigkeit. Eine Wirkungsarchitektur, die wegen Unsicherheit nichts bewertet, erzeugt Blindheit. Die richtige Ordnung liegt dazwischen: messen, wo Messung möglich ist; schätzen, wo Schätzung notwendig ist; Unsicherheit ausweisen, wo Unsicherheit besteht; korrigieren, wenn Daten besser werden.
+
+Daten als Rückkopplung brauchen außerdem Datenqualität. Schlechte Daten lenken falsch. Unvollständige Daten können Verantwortung verschieben. Manipulierte Daten können Wirkungssimulation erzeugen. Veraltete Daten können Risiken verdecken. Datenqualität ist deshalb nicht nur technisches Detail. Sie ist Machtbegrenzung. Wer Datenqualität kontrolliert, kontrolliert Wirkungssichtbarkeit.
+
+Datenqualität umfasst Herkunft, Aktualität, Vollständigkeit, Prüfbarkeit, Vergleichbarkeit, Versionierung und Zweckbezug. Herkunft fragt: Woher kommt der Datensatz? Aktualität fragt: Ist er noch gültig? Vollständigkeit fragt: Welche Wirkungsfelder fehlen? Prüfbarkeit fragt: Kann eine unabhängige Stelle nachvollziehen, wie der Wert entstanden ist? Vergleichbarkeit fragt: Sind Einheiten, Grenzen und Standards kompatibel? Versionierung fragt: Welche Fassung gilt? Zweckbezug fragt: Wofür darf der Datensatz genutzt werden?
+
+Diese Anforderungen schützen nicht nur den Staat. Sie schützen auch Unternehmen. Ein Unternehmen, das dieselben Wirkungsdaten für jede Bank, jede Versicherung, jeden Kunden, jeden Investor und jede Behörde anders liefern muss, erlebt Datenchaos. Gemeinsame Standards senken Blindleistung. Ein gemeinsamer Wirkungsstecker ist weniger bürokratisch als Adapter für jeden Adressaten.
+
+Daten als Rückkopplung bedeuten daher nicht: mehr Daten um jeden Preis. Sie bedeuten: richtige Daten, richtige Qualität, richtige Schnittstellen, richtige Rechte, richtige Rückführung in Entscheidungen.
+
+Die Wirkungsökonomie hat kein Dateninteresse an sich. Sie hat ein Rückkopplungsinteresse.
+
+### 80.3 Interoperabilität
 
 ### Quellenanker: Kapitel 98 - Pilotprojekte
 
@@ -551,7 +647,32 @@ Ein kommunaler Pilot kann zum Beispiel ein Quartier wirkungsökonomisch betracht
 
 Kommunale Pilotprojekte können auch öffentliche Beschaffung testen. Eine Stadt kann Schulessen, Textilien, Baustoffe, IT-Geräte, Energie, Reinigungsleistungen, Pflegeinfrastruktur oder Mobilitätsangebote nicht nur nach Preis, sondern nach Wirkung bewerten. Sie muss dafür nicht sofort die ganze Produktwirkungssteuer einführen. Es reicht, Wirkungskriterien in Ausschreibungen, Gewichtungen, Informationspflichten, Lieferantenentwicklung und Evaluation einzubauen.
 
-### 7.8 Konsequenzen für die WÖk-Architektur
+Ein weiterer kommunaler Pilotbereich ist Hitzeresilienz. Hitzeschutz verbindet Gesundheit, Stadtgrün, Wasser, Gebäude, Mobilität, Pflege, ältere Menschen, Kinder, Arbeitsschutz, öffentliche Räume und kommunale Daten. Ein Hitzepilot kann zeigen, dass Prävention Wirkleistung ist: Bäume, Schatten, Trinkwasserstellen, kühle Räume, Gebäudesanierung, Pflegewarnsysteme, soziale Ansprache und Stadtplanung verhindern Schäden, die im klassischen Haushalt häufig erst später als Gesundheits-, Pflege- oder Krisenkosten sichtbar werden.
+
+Auch Energie eignet sich kommunal. Erneuerbare Energie kann in Quartieren, Stadtwerken, Genossenschaften, kommunalen Dächern, Schulen, Schwimmbädern, Pflegeeinrichtungen, Mieterstrommodellen, Wärmenetzen und lokalen Speichern als Infrastruktur gedacht werden. Ein kommunaler Pilot kann prüfen, wie Grundenergie, Eigenstrom, Netzentlastung und soziale Entlastung zusammenwirken. Es geht nicht um die Behauptung, Energie sei kostenlos. Es geht um die Frage, welche Bestandteile der erneuerbaren Versorgung nicht nach fossiler Brennstoffmarktlogik behandelt werden müssen.
+
+An dieser Stelle passt Mannheim als Praxisfenster.
+
+Mannheim ist kein fertiges Modell der Wirkungsökonomie. Aber Mannheim ist ein gutes Beispiel dafür, dass kommunale Steuerung bereits in Richtung Wirkungsorientierung, SDG-Bezug und lernende Verwaltung gedacht werden kann. Die Stadt beschreibt in ihrem früheren Modell zur Haushaltsaufstellung ausdrücklich, dass Ziele beschrieben und gemessen werden sollen und messbare Ergebnisse Grundlage für die Entscheidung über Ressourcenzuweisung werden sollen; zugleich wird die Verwaltung als lernende Organisation verstanden. Mannheim stellt sein Leitbild Mannheim 2030 in den Zusammenhang der Agenda 2030 und der 17 UN-Nachhaltigkeitsziele, berichtet regelmäßig über die lokale Umsetzung und beschreibt das Leitbild als Grundlage des aktuellen Haushalts. Ein UBA-Abschlussbericht zu Green Budgeting nennt Mannheim zudem als Beispiel, dessen Verwaltung seit 2016 vollständig auf wirkungsorientierte Steuerung umgestellt wurde; Wirkungskennzahlen sollen dort Auswirkungen der Verwaltungsleistungen auf Gesellschaft und Umwelt abbilden, und Wirkungsziele werden ex ante in Beschlussvorlagen berücksichtigt.
+
+Für die Wirkungsökonomie ist nicht maßgeblich, Mannheim als fertige Blaupause zu präsentieren. Maßgeblich ist der Lernpunkt: Kommunale Haushalte können mehr sein als Buchhaltung. Sie können Ziele, Maßnahmen, Indikatoren, Beschlussvorlagen, Bürger:innenbeteiligung, Nachhaltigkeitsberichte und politische Prioritäten miteinander verbinden. Dort beginnt die Brücke vom klassischen Haushalt zum Wirkungshaushalt.
+
+Mannheim zeigt damit einen kommunalen Vorläufer: SDG-Orientierung, Zielsystem, Bericht, Haushalt und Verwaltungshandeln werden gekoppelt. Die Wirkungsökonomie würde darauf aufbauen und weitergehen. Sie würde nicht nur SDG-Bezüge ausweisen, sondern fragen: Welche Wirkung entsteht tatsächlich? Welche Zielkonflikte entstehen? Welche Datenqualität liegt vor? Welche Maßnahmen erzeugen Wirkleistung, Blindleistung oder Verlustleistung? Welche kommunalen Ausgaben verhindern spätere Krisenkosten? Welche sozialen Gruppen profitieren? Welche demokratische Rückkopplung entsteht? Welche Projekte werden beendet, wenn sie nicht wirken?
+
+Ein kommunales Wirkungs-Pilotprojekt muss daher nicht bei null beginnen. Es kann an vorhandene kommunale Nachhaltigkeitsstrategien, SDG-Indikatoren, Bürgerbeteiligung, Haushaltsdaten, kommunale Statistik, Klimaanpassungspläne, Mobilitätskonzepte und soziale Daten anschließen. Studien zum wirkungsorientierten Nachhaltigkeitsmanagement betonen ebenfalls, dass Kommunen eine Schlüsselrolle bei der lokalen Umsetzung der Agenda 2030 spielen und Nachhaltigkeit messbar und überprüfbar gemacht werden muss.
+
+Ein guter kommunaler Pilot braucht vier Schutzlinien.
+
+Erstens: keine Bürger:innen-Simulation. Beteiligung muss echte Rückkopplung erzeugen. Bürger:innen sollen nicht nur Wünsche äußern, während die Entscheidung längst feststeht. Sie sollen verstehen können, welche Wirkungen, Kosten, Zielkonflikte und Alternativen bestehen.
+
+Zweitens: keine Datenüberforderung. Kommunen haben begrenzte Ressourcen. Wirkungsdaten müssen aus vorhandenen Quellen, öffentlichen Statistiken, Verwaltungsdaten, einfachen Indikatoren und digitalen Standards aufgebaut werden. Nicht jede Kommune braucht ein eigenes Spezialmodell.
+
+Drittens: keine soziale Blindheit. Eine Klimamaßnahme, eine Sanierung, eine Mobilitätsreform oder eine Beschaffungsumstellung darf nicht zu Verdrängung, Kaufkraftverlust oder Beteiligungsausschluss führen. Kommunale Wirkung ist immer auch soziale Wirkung.
+
+Viertens: keine Pilotprojekte ohne Konsequenz. Wenn ein Pilot zeigt, dass eine Maßnahme nicht wirkt, muss sie verändert oder beendet werden. Wenn er zeigt, dass eine Maßnahme starke Wirkung erzeugt, muss sie skaliert werden.
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
 
 Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 
@@ -559,7 +680,7 @@ Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 - Technologie in Glossar und Akademie konsequent als Möglichkeitsraum statt als Selbstzweck führen.
 - Institutionen als Wirkungsräume in späteren Management- und Controlling-Skripten wieder aufnehmen.
 
-### 7.9 Kurzfazit
+### 7.10 Kurzfazit
 
 Produkte, Technologien und Institutionen als Auslöser ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
 
