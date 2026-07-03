@@ -5,7 +5,7 @@
 **Vorlesungscode:** V33  
 **Modul/Abschnitt:** G3.3  
 **Titel:** NWI und T-SROI unterscheiden  
-**Status:** Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden  
+**Status:** Tiefenskript-Sprint 5 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v33-nwi-und-t-sroi-unterscheiden.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v33.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v33.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
@@ -218,7 +218,942 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Transformationswirkung | strukturelle Veränderung in Richtung zukunftsfähiger Zustände | `begriffe/transformationswirkung` |
 | FinalScore | verdichteter Ergebniswert einer Scorecard | `begriffe/finalscore` |
 
-## 7. Prüfungsrelevanz
+## 7. Tiefenskript-Erweiterung Sprint 5
+
+**Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
+
+### 7.1 Leitthese
+
+NWI und T-SROI beantworten unterschiedliche Fragen: Der Netto-Wirkungs-Index verdichtet ein Wirkungsprofil, T-SROI beschreibt Transformationswirkung im Verhältnis zu eingesetzten Ressourcen und langfristigen Systemeffekten.
+
+Die Vorlesung bleibt dabei an die Grundregel gebunden: Wirkung ist neutral und relational. Erst die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ entscheidet, ob eine Veränderung positiv, negativ oder ambivalent einzuordnen ist. Wenn eine Zielgröße gemeint ist, sprechen wir von positiver Netto-Wirkung.
+
+### 7.2 Didaktische Einordnung im Studiengang
+
+V33 liegt an der Schwelle zwischen begrifflicher Grundlegung und Bewertungsarchitektur. Die Studierenden sollen nicht nur Begriffe wiedergeben, sondern an Fällen erkennen, welche Aussage schon Wirkung behauptet, welche nur Wirkungspotenzial beschreibt und wo ein Wirkungsrisiko offenliegt. Der Tiefensinn dieser Vorlesung liegt deshalb nicht in zusätzlicher Komplexität, sondern in besserer Unterscheidungsfähigkeit.
+
+Für die spätere Praxis ist entscheidend, dass jede Analyse vier Ebenen getrennt hält:
+
+1. **Beschreibung:** Was geschieht tatsächlich oder soll geschehen?
+2. **Kausalannahme:** Über welchen Mechanismus könnte daraus eine Zustandsveränderung entstehen?
+3. **Bewertung:** Welche Richtung hat diese Veränderung im Referenzrahmen?
+4. **Rückkopplung:** Welche Entscheidung, Regel, Ressource oder Kommunikation wird dadurch verändert?
+
+Wo diese Ebenen vermischt werden, entstehen typische WÖk-Fehler: Aktivität wird als Wirkung ausgegeben, Reichweite ersetzt Zustandsveränderung, gute Absicht verdeckt Nebenwirkungen oder Reporting wird mit Lernen verwechselt.
+
+### 7.3 Analysemodell
+
+| Analyseobjekt | Woran es wirkt | Typischer Fehler | Saubere WÖk-Lesart |
+|---|---|---|---|
+| NWI | verdichtetes Bewertungsprofil positiver Netto-Wirkung | Index als absolute Wahrheit lesen | Profil, Datenqualität, Grenzen und Sperrlogik mitlesen |
+| T-SROI | Verhältnis von Transformationswirkung zu Ressourceneinsatz | klassischen ROI mit Wirkung verwechseln | langfristige Systemwirkung und vermiedene Schäden berücksichtigen |
+| Scorecard | mehrdimensionales Vorprofil | Scorecard und Index gleichsetzen | Scorecard erklärt, NWI verdichtet |
+| Entscheidung | Rückkopplung in Budget, Beschaffung, Kapital oder Strategie | Kennzahl als Bericht beenden | Kennzahl muss Steuerung verändern |
+
+### 7.4 Modellformel
+
+Die folgende Formel ist ein didaktisches Denkmodell, kein amtlicher Bewertungsstandard:
+
+$
+T\text{-}SROI = \frac{Transformationswirkung + vermiedene\;Schadenskosten + Systemlernen}{Ressourceneinsatz}
+$
+
+T-SROI ist didaktisch als Verhältnis gedacht. Entscheidend ist, welche Wirkungen, Zeiträume und Systemeffekte begründet einbezogen werden.
+
+Die Formel soll gerade keine Scheingenauigkeit erzeugen. Sie zwingt dazu, die Faktoren offen zu legen, die eine Aussage tragen. In einem echten Bewertungsprozess müssten Datenquelle, Aktualität, Datenqualitätsklasse, Unsicherheitsgrad und Rückkopplungsregel ergänzt werden.
+
+### 7.5 Fallfenster
+
+**Fall 1.** Ein Präventionsprogramm kann kurzfristig teuer wirken, aber über vermiedene Krankheit, Pflegebedarf, Arbeitsausfall und familiäre Belastung hohe Transformationswirkung entfalten. Hier hilft T-SROI.
+
+**Fall 2.** Ein Produktvergleich mit mehreren Wirkungsfeldern braucht zuerst Scorecard und NWI, bevor über Preis-, Beschaffungs- oder Kapitalrückkopplung entschieden wird.
+
+### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
+
+Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+
+1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
+2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
+3. Benenne mindestens ein Wirkungspotenzial und ein Wirkungsrisiko.
+4. Zeige, welche Quelle oder Datenart nötig wäre, um von Potenzial zu belastbarer Wirkungsaussage zu kommen.
+5. Prüfe, ob Nichtkompensation oder Reverse Merit Order einschlägig sein könnten.
+6. Formuliere eine saubere Wirkungsaussage in einem Satz: Was wissen wir, was nehmen wir an, was bleibt offen?
+
+### 7.7 Auswertung aus der lebenden Website-Referenz
+
+### Quellenanker: Kapitel 34 - T-SROI und systemische Transformationsmessung
+
+*Interne Quelle:* `referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html`
+
+Kapitel 33 hat eine methodische Grenze gesetzt: Eine starke Wirkung in einem Feld darf schwere Schäden in einem anderen Feld nicht unsichtbar machen. Die Reverse Merit Order schützt die Wirkungsbewertung vor Durchschnittstäuschung, Ablasslogik und falsch positiver Gesamtbilanz. Kapitel 32 hat dafür bereits die operative Kennzahl eingeführt: den Netto-Wirkungs-Index, kurz NWI. Er bewertet die Netto-Wirkung eines Bewertungsgegenstands in einem definierten Wirkungsraum.
+
+Kapitel 34 führt nun eine andere Kennzahlenlogik ein: den T-SROI - Transformational Social Return on Investment. Der T-SROI misst nicht noch einmal Netto-Wirkung. Diese Aufgabe liegt beim NWI. Der T-SROI fragt, ob aus einer geprüften Wirkung eine systemische Transformation entsteht. Er bewertet also Transformationswirkung und systemische Hebelwirkung.
+
+Diese Unterscheidung ist zentral. Ein Produkt, Projekt oder Unternehmen kann eine positive Netto-Wirkung haben und dennoch keine Struktur verändern. Es ist dann wirkungsvoll, aber nicht transformativ. Umgekehrt kann eine Investition zunächst nur eine moderate Netto-Wirkung zeigen und dennoch einen wichtigen Transformationspfad öffnen, wenn sie neue Infrastruktur, neue Standards, neue Märkte, neue Routinen oder neue Rückkopplungen ermöglicht.
+
+Der T-SROI ist deshalb kein Ersatz für den NWI. Er baut auf ihm auf. Der NWI beantwortet die Frage: Was bleibt netto übrig? Der T-SROI beantwortet die Frage: Welche systemische Veränderung wird dadurch möglich?
+
+Dieses Kapitel erklärt die Logik des T-SROI. Es behandelt keine konkrete Steuermechanik, keine vollständige Kapitalmarktarchitektur und keine Fondsregulierung. Es legt fest, warum die Wirkungsökonomie neben einer Netto-Wirkungskennzahl eine eigene Transformationskennzahl braucht.
+
+Für das Impact-Controlling entsteht daraus keine einzelne Superkennzahl, sondern eine gestufte Kennzahlenarchitektur. KIIs erfassen relevante Zustandsveränderungen. Scorecards ordnen diese KIIs nach WÖk-IDs, Benchmarks, Datenqualität und Reverse Merit Order. Der NWI verdichtet die operative Netto-Wirkung. Der IOI - Impact-of-Investment - setzt diese geprüfte positive Netto-Wirkung ins Verhältnis zum eingesetzten Kapital. Der T-SROI bewertet anschließend, ob daraus systemische Transformationswirkung entsteht.
+
+Damit lassen sich drei Entscheidungsfragen sauber trennen: Ist die Wirkung netto tragfähig? Das beantwortet der NWI. Wie viel positive Netto-Wirkung entsteht pro investiertem Euro? Das beantwortet der IOI. Verändert die Investition darüber hinaus Strukturen, Standards, Risiken oder Pfade? Das beantwortet der T-SROI. Diese Trennung schützt vor Impact-Washing, weil finanzielle Effizienz, operative Wirkung und Transformation nicht ineinander verwischt werden.
+
+### 34.1 Abgrenzung zu ROI, SROI, NWI, IOI und T-SROI
+
+Der klassische ROI, Return on Investment, beantwortet eine enge Frage: Welcher finanzielle Rückfluss entsteht im Verhältnis zur eingesetzten Investition? Diese Frage ist wichtig. Ohne finanzielle Tragfähigkeit können viele Projekte nicht dauerhaft bestehen. Der ROI zeigt, ob Kapital betriebswirtschaftlich sinnvoll eingesetzt wurde. Er sagt aber nicht, ob die damit erzeugte Wirkung Mensch, Planet oder Demokratie stärkt oder schwächt.
+
+Ein Projekt kann einen hohen ROI haben und zugleich negative Wirkung erzeugen. Es kann Ressourcen verbrauchen, Menschen belasten, Lieferkettenrisiken erhöhen, demokratische Räume schwächen oder Folgekosten in die Zukunft verschieben. Der ROI sieht diese Wirkungen nur, wenn sie finanziell zurückkehren. Solange sie ausgelagert bleiben, erscheinen sie in der Kennzahl nicht.
+
+Der klassische SROI, Social Return on Investment, erweitert die Perspektive. Er versucht, gesellschaftliche, soziale oder ökologische Wirkungen monetär auszudrücken und ins Verhältnis zu einer Investition zu setzen. Damit wird eine wichtige Korrektur vorgenommen: Nutzen außerhalb der reinen Finanzrechnung wird sichtbar. SROI-Ansätze haben geholfen, soziale Programme, Prävention, Integration, Bildung oder Gesundheitswirkungen nicht nur als Kosten, sondern als gesellschaftlichen Wert zu verstehen.
+
+Doch auch der klassische SROI bleibt begrenzt. Er ist häufig projektzentriert. Er kann positive Wirkungen addieren, ohne negative Wirkungen ausreichend zu berücksichtigen. Er kann kurzfristige Effekte stärker zeigen als langfristige Strukturveränderungen. Er kann Nutzen monetarisieren, ohne die Frage zu beantworten, ob eine Wirkung Pfade, Märkte, Institutionen, Lieferketten, Verhalten oder Resilienz verändert.
+
+Der NWI schließt diese Lücke auf der Ebene der Netto-Wirkung. Er führt positive und negative Wirkungen, Mindestbedingungen, Datenqualität, Unsicherheit, Zeitwirkung, Systemkontext und Nichtkompensation zu einer operativen Netto-Wirkungskennzahl zusammen. Er zeigt, ob ein Bewertungsgegenstand im definierten Wirkungsraum tragfähig wirkt oder nicht.
+
+Der T-SROI setzt erst danach an. Er fragt nicht: Wie ist die Netto-Wirkung? Er fragt: Verändert diese Netto-Wirkung die Struktur künftiger Entscheidungen? Ein hoher NWI ist keine automatische Transformation. Ein niedriger oder negativer NWI kann aber eine positive T-SROI-Bewertung blockieren, weil Transformation nicht auf schweren, verdeckten Schäden aufbauen darf.
+
+Der IOI liegt zwischen NWI und T-SROI. Er fragt nicht nach finanzieller Rendite und nicht nach Transformation, sondern nach Wirkungseffizienz des eingesetzten Kapitals: Welche geprüfte positive Netto-Wirkung entsteht im Verhältnis zur Investitionssumme? Ein positiver IOI setzt voraus, dass die vorgelagerte Scorecard- und NWI-Prüfung tragfähig ist und keine rote Linie verletzt wird.
+
+Damit entsteht eine klare Fünferlogik: ROI misst finanzielle Rendite. SROI monetarisiert sozialen oder ökologischen Zusatznutzen. NWI bewertet operative Netto-Wirkung. IOI misst positive Netto-Wirkung im Verhältnis zur Investition. T-SROI bewertet systemische Transformationsleistung.
+
+Tabelle 34-1: ROI, SROI, NWI, IOI und T-SROI im Vergleich
+
+### 34.2 Die Arbeitslogik von NWI, IOI und T-SROI
+
+T-SROI macht Transformationswirkung investitionsfähig. Er soll nicht nur anzeigen, ob eine Maßnahme unmittelbar nützt, sondern ob sie Systeme in Richtung Mensch, Planet und Demokratie verändert. Deshalb darf seine Formel die Netto-Wirkung nicht erneut als eigentlichen Gegenstand vereinnahmen. Die Netto-Wirkung ist die Prüfbasis. Die Transformationswirkung ist der Gegenstand des T-SROI.
+
+Formelkasten 34-1: Grundlogik des Impact-Controllings
+
+NWI = operative Netto-Wirkung
+
+IOI = positive Netto-Wirkung / Investitionssumme
+
+T-SROI = Transformationswirkung × systemische Hebelwirkung × Zeitwirkung × Resilienzfaktor × Datenqualität
+
+Der NWI wirkt dabei als Eingangsschwelle. Eine positive T-SROI-Bewertung setzt voraus, dass die Netto-Wirkung mindestens tragfähig ist und keine roten Linien verletzt werden. Der T-SROI darf negative Netto-Wirkung nicht durch große Transformationsversprechen überdecken. Transformation ohne tragfähige Netto-Wirkung wäre keine Wirkungsökonomie, sondern Wirkungssimulation.
+
+Formelkasten 34-2: Arbeitsformel als Bewertungslogik
+
+T-SROI = (T_struktur × H_sys × F_zeit × F_resilienz × Q_daten) / I
+
+Diese Arbeitsformel ist keine abschließende mathematische Norm. Sie zeigt die Logik. T_struktur bezeichnet die bewertete Transformationswirkung. H_sys bezeichnet die systemische Hebelwirkung, also Skalierung, Diffusion, Standardsetzung, Marktverschiebung, Infrastrukturwirkung oder Pfadveränderung. F_zeit berücksichtigt, ob die Wirkung kurzfristig, mittelfristig oder langfristig trägt. F_resilienz berücksichtigt, ob die Maßnahme Verwundbarkeit reduziert und Anpassungsfähigkeit stärkt. Q_daten macht sichtbar, wie belastbar die Datengrundlage ist. I bezeichnet die eingesetzte Investition oder den relevanten Mitteleinsatz.
+
+Entscheidend ist: W_pos, W_neg und Systemkosten gehören primär in die NWI-Berechnung. Sie sind nicht verschwunden. Sie werden nur methodisch an den richtigen Ort gestellt. Der IOI nutzt ausschließlich geprüfte positive Netto-Wirkung als Zähler. Der T-SROI übernimmt die Netto-Wirkung nicht als eigene Hauptleistung, sondern setzt voraus, dass sie bereits über Scorecard, Reverse Merit Order, NWI und bei Investitionsentscheidungen über den IOI nachvollziehbar geprüft wurde.
+
+Diese Trennung verhindert zwei Fehler. Erstens verhindert sie, dass jedes netto positive Projekt automatisch als transformativ erscheint. Zweitens verhindert sie, dass ein großes Transformationsnarrativ schwache oder negative Netto-Wirkung überdeckt.
+
+### 34.3 Transformation statt bloßer Projekt-Nutzen
+
+Transformation ist mehr als Projekterfolg. Ein Projekt kann Zielgruppen erreichen, Kosten sparen, Emissionen senken, Zugang verbessern oder eine lokale Wirkung erzeugen. Das ist wertvoll. Aber Transformation beginnt erst, wenn die Wirkung über den Einzelfall hinaus Bedingungen verändert.
+
+Ein Projekt-Nutzen bleibt innerhalb des Projekts. Eine Transformation verändert Pfade.
+
+Eine Bildungsmaßnahme kann Menschen erreichen. Transformativ wird sie, wenn sie neue Lernstandards, Wirkungskompetenz, institutionelle Routinen oder Bildungszugänge verändert. Eine Investition kann Emissionen senken. Transformativ wird sie, wenn sie Lieferketten, Branchenstandards, Technologien, Kapitalentscheidungen oder regulatorische Erwartungen verschiebt. Eine kommunale Maßnahme kann Versorgung verbessern. Transformativ wird sie, wenn sie dauerhaft andere Planungslogiken, Präventionsstrukturen oder Beteiligungsformen erzeugt.
+
+T-SROI misst deshalb nicht den direkten Nutzen als solchen. Er fragt, ob eine Wirkung weitere Wirkungen ermöglicht. Er fragt, ob ein Eingriff Multiplikatoreffekte auslöst, Nachahmung erzeugt, Standards verschiebt, Risiken senkt, Engpässe löst oder positive Rückkopplungen öffnet. Der Abzug negativer Wirkungen schafft die Ehrlichkeit im NWI. Der T-SROI macht danach sichtbar, ob daraus ein Transformationshebel entsteht.
+
+Diese Perspektive ist für die Wirkungsökonomie unverzichtbar, weil sie verhindert, dass kleine Verbesserungen als große Transformation erscheinen. Ein Projekt kann lokal gut sein und trotzdem keine systemische Veränderung auslösen. Umgekehrt kann eine Maßnahme anfangs begrenzt wirken, aber einen neuen Pfad öffnen, der später große Wirkung entfaltet.
+
+Transformation bedeutet nicht Größe um jeden Preis. Ein kleiner Wirkungsraum kann transformativ sein, wenn er einen Engpass löst oder ein neues Muster erzeugt. Ein großes Projekt kann nicht-transformativ bleiben, wenn es nur bestehende Strukturen effizienter macht, ohne ihre Richtung zu verändern.
+
+### 34.4 Systemische Hebelwirkung, Diffusion und Standardsetzung
+
+### Quellenanker: Wirkungsökonomie · Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/netto-wirkungs-index/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/netto-wirkungs-index/index.html`
+
+Methodenregister
+
+Kennzahl für positive, negative und neutrale Wirkung.
+
+Der Netto-Wirkungs-Index ordnet Wirkung im Referenzrahmen der SDGs, Agenda 2030 und SDG+ ein.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.
+
+Funktion
+
+Was es leistet #
+
+Der Netto-Wirkungs-Index ordnet Wirkung im Referenzrahmen der SDGs, Agenda 2030 und SDG+ ein.
+
+Anwendung
+
+Angewendet in #
+
+Impact Controlling, Produkte & Konsum, Wirtschaft & Unternehmen, Lieferketten und öffentlichen Steuerungsfragen.
+
+Grenze
+
+Nicht als Schönrechnung #
+
+Das Werkzeug darf negative Wirkung, Datenlücken oder rote Linien nicht verdecken.
+
+Methodenpapier
+
+Ausführliches Methodenpapier #
+
+Die kurze Toolseite bleibt Einstieg. Das Methodenpapier ist die ausführliche fachliche Grundlage mit DOCX- und PDF-Download.
+
+Methodenpapier 22
+
+Scorecards, Benchmarks und Netto-Wirkungs-Index
+
+Wie Wirkungsdaten zu prüfbaren Entscheidungen werden - ohne Kompensation, Scheingenauigkeit oder Personenbewertung
+
+Methoden & Werkzeuge
+
+Werkzeuge in diesem Bereich #
+
+Impact Controlling ist der Methodenrahmen. Interaktive Rechner werden als Rechner bezeichnet; statische Zielseiten führen als Methodik oder Dossier weiter.
+
+Kennzahl
+
+Netto-Wirkungs-Index
+
+Der NWI ordnet positive, negative und neutrale Wirkung im WÖk-Rahmen operativ ein.
+
+Warum hier relevant? Er verhindert, dass Wirkung nur als Story erzählt wird, und macht Vergleichbarkeit möglich.
+
+Tool-Suite
+
+Methoden in Werkzeuglogik übersetzen #
+
+Die Methodenpapiere beschreiben die fachliche Logik. Die Karten führen zu Methodenseiten; sie versprechen keine Interaktion, wenn keine Bedienoberfläche vorhanden ist.
+
+Methode
+
+WÖk-ID-Browser
+
+Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen.
+
+Methodik
+
+Scorecard-Generator
+
+Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten.
+
+### Quellenanker: Wirkungsökonomie · T-SROI · https://wirkungsoekonomie.de/werkzeuge/t-sroi/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/t-sroi/index.html`
+
+Methodenregister
+
+Transformational Social Return on Investment.
+
+T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.
+
+Funktion
+
+Was es leistet #
+
+T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.
+
+Anwendung
+
+Angewendet in #
+
+Impact Controlling, Produkte & Konsum, Wirtschaft & Unternehmen, Lieferketten und öffentlichen Steuerungsfragen.
+
+Grenze
+
+Nicht als Schönrechnung #
+
+Das Werkzeug darf negative Wirkung, Datenlücken oder rote Linien nicht verdecken.
+
+Methodenpapier
+
+Ausführliches Methodenpapier #
+
+Die kurze Toolseite bleibt Einstieg. Das Methodenpapier ist die ausführliche fachliche Grundlage mit DOCX- und PDF-Download.
+
+Methodenpapier 23
+
+T-SROI und Impact Controlling
+
+Transformational Social Return on Investment als Steuerungsinstrument für systemische Wirkung
+
+Methoden & Werkzeuge
+
+Werkzeuge in diesem Bereich #
+
+Impact Controlling ist der Methodenrahmen. Interaktive Rechner werden als Rechner bezeichnet; statische Zielseiten führen als Methodik oder Dossier weiter.
+
+Bewertungsmethode
+
+T-SROI
+
+Transformational Social Return on Investment bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung.
+
+Warum hier relevant? T-SROI übersetzt Investitionen, Prävention und Transformation in eine nachvollziehbare Wirkungsrendite.
+
+Tool-Suite
+
+Methoden in Werkzeuglogik übersetzen #
+
+Die Methodenpapiere beschreiben die fachliche Logik. Die Karten führen zu Methodenseiten; sie versprechen keine Interaktion, wenn keine Bedienoberfläche vorhanden ist.
+
+Methode
+
+WÖk-ID-Browser
+
+Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen.
+
+Methodik
+
+Scorecard-Generator
+
+Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten.
+
+### Quellenanker: Wirkungsökonomie · T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/t-sroi/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/impact-controlling/t-sroi/index.html`
+
+Methodenregister
+
+Transformational Social Return on Investment.
+
+T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.
+
+Funktion
+
+Was es leistet #
+
+T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.
+
+Anwendung
+
+Angewendet in #
+
+Impact Controlling, Produkte & Konsum, Wirtschaft & Unternehmen, Lieferketten und öffentlichen Steuerungsfragen.
+
+Grenze
+
+Nicht als Schönrechnung #
+
+Das Werkzeug darf negative Wirkung, Datenlücken oder rote Linien nicht verdecken.
+
+Methodenpapier
+
+Ausführliches Methodenpapier #
+
+Die kurze Toolseite bleibt Einstieg. Das Methodenpapier ist die ausführliche fachliche Grundlage mit DOCX- und PDF-Download.
+
+Methodenpapier 23
+
+T-SROI und Impact Controlling
+
+Transformational Social Return on Investment als Steuerungsinstrument für systemische Wirkung
+
+Methoden & Werkzeuge
+
+Werkzeuge in diesem Bereich #
+
+Impact Controlling ist der Methodenrahmen. Interaktive Rechner werden als Rechner bezeichnet; statische Zielseiten führen als Methodik oder Dossier weiter.
+
+Bewertungsmethode
+
+T-SROI
+
+Transformational Social Return on Investment bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung.
+
+Warum hier relevant? T-SROI übersetzt Investitionen, Prävention und Transformation in eine nachvollziehbare Wirkungsrendite.
+
+Tool-Suite
+
+Methoden in Werkzeuglogik übersetzen #
+
+Die Methodenpapiere beschreiben die fachliche Logik. Die Karten führen zu Methodenseiten; sie versprechen keine Interaktion, wenn keine Bedienoberfläche vorhanden ist.
+
+Methode
+
+WÖk-ID-Browser
+
+Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen.
+
+Methodik
+
+Scorecard-Generator
+
+Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten.
+
+### Quellenanker: Wirkungsökonomie · Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/impact-controlling/index.html`
+
+Methodenbereich
+
+Wirkung sichtbar, bewertbar und entscheidungsrelevant machen.
+
+Impact Controlling ist der methodische Dachbereich der Wirkungsökonomie. Es verbindet WÖk-IDs, Scorecards, NWI, IOI, T-SROI, Datenqualität, Benchmarks und Wirkungsdatenräume.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.
+
+Methodik
+
+Von Wirkung zu Entscheidung #
+
+Wirkung ist neutral und relational. Impact Controlling macht sichtbar, welche Zustände sich verändern, welche Nebenwirkungen entstehen, welche Daten belastbar sind und wie Entscheidungen auf positive Netto-Wirkung, wirksamen Kapitaleinsatz und lernende Rückkopplung ausgerichtet werden können.
+
+Messen
+
+WÖk-IDs, Datenquellen, Einheiten und Schwellen machen Wirkung adressierbar.
+
+Bewerten
+
+Scorecards, Benchmarks, NWI, IOI und Reverse Merit Order ordnen Wirkung ein.
+
+Steuern
+
+IOI, T-SROI, KII, Assurance und Wirkungsdatenräume machen Wirkung entscheidungsrelevant.
+
+Methoden & Werkzeuge
+
+Werkzeuge in diesem Bereich #
+
+Impact Controlling ist der Methodenrahmen. Interaktive Rechner werden als Rechner bezeichnet; statische Zielseiten führen als Methodik oder Dossier weiter.
+
+Bewertungsmethode
+
+T-SROI
+
+Transformational Social Return on Investment bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung.
+
+Warum hier relevant? T-SROI übersetzt Investitionen, Prävention und Transformation in eine nachvollziehbare Wirkungsrendite.
+
+Investitionskennzahl
+
+Impact-of-Investment (IOI)
+
+IOI setzt positive Netto-Wirkung ins Verhältnis zum eingesetzten Kapital, Budget oder Investitionsvolumen.
+
+Warum hier relevant? IOI zeigt, ob ein Euro nur finanzielle Aktivität auslöst oder belegbare positive Netto-Wirkung erzeugt.
+
+Kennzahl
+
+Netto-Wirkungs-Index
+
+Der NWI ordnet positive, negative und neutrale Wirkung im WÖk-Rahmen operativ ein.
+
+Warum hier relevant? Er verhindert, dass Wirkung nur als Story erzählt wird, und macht Vergleichbarkeit möglich.
+
+Datenarchitektur
+
+WÖk-IDs
+
+WÖk-IDs verbinden SDGs, SDG+, NACE, ESRS, GRI, Quellen, Einheiten, Schwellen und Versionen.
+
+Warum hier relevant? Sie bilden die Brücke zwischen Referenzrahmen und prüfbarer Wirkungsbewertung.
+
+Bewertungsraster
+
+Scorecards
+
+Scorecards übersetzen Daten und Benchmarks in nachvollziehbare Skalen und Entscheidungslogik.
+
+### Quellenanker: Wirkungsökonomie · Detailkonzept T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/t-sroi/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/impact-controlling/detailkonzepte/t-sroi/index.html`
+
+Detailkonzept · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
+
+Transformational Social Return on Investment für Investitions-, Präventions- und Transformationswirkung.
+
+Fachliche Onlinefassung mit politischer Anschlussfähigkeit, Werkzeugbezug und Arbeitsmaterial.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Du liest die Onlinefassung dieses Detailkonzepts. Die Downloadfassung und die Druckfunktion findest du am Ende der Seite.
+
+Kurzfassung und Ziel
+
+Ausgangslage und alte Logik
+
+Begriffliche Einordnung
+
+Wirkungsökonomischer Perspektivwechsel
+
+Systemarchitektur
+
+Mess-, Daten- und Bewertungslogik
+
+Politische Anschlussfähigkeit und Ausgestaltungsspielräume
+
+Akteursperspektiven
+
+Risiken, Nebenwirkungen und Schutzmechanismen
+
+Umsetzung und Pilotierung
+
+SDG-/SDG+-Bezug und WÖk-ID-Bezug
+
+Buchanker, Glossar, Werkzeuge und Verknüpfungen
+
+Politische Anschlussfähigkeit
+
+Risiken, Nebenwirkungen und Schutz
+
+Online-, Dossier- und Werkzeugbezug
+
+Kurzfassung und Ziel #
+
+T-SROI wird als fachlicher Unterbereich der Wirkungsökonomie online erklärt. Ziel ist eine öffentliche Langfassung mit fachlicher Einordnung, Bewertungspfad, politischem Rahmen und zitierfähigen Ankern.
+
+Ausgangslage und alte Logik #
+
+Die alte Logik betrachtet T-SROI häufig über isolierte Kennzahlen, Kosten, formale Zuständigkeiten oder kurzfristige Effizienz. Dadurch bleiben Nebenwirkungen, Folgekosten, Verdrängungen, Datenlücken und demokratische Rückkopplungen unsichtbar.
+
+Begriffliche Einordnung #
+
+Transformational Social Return on Investment für Investitions-, Präventions- und Transformationswirkung. Wirkung bedeutet hier die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein und wird nicht automatisch als Fortschritt behandelt.
+
+Wirkungsökonomischer Perspektivwechsel #
+
+Der neue Maßstab ist positive Netto-Wirkung für Mensch, Planet und Demokratie. Entscheidungen werden nicht nur danach bewertet, ob sie zulässig oder profitabel sind, sondern welche Zustandsveränderungen sie erzeugen und welche Risiken sichtbar bleiben müssen.
+
+Systemarchitektur #
+
+Akteur:innen, Wirkungsträger, Wirkungsempfänger, Datenquellen, Regeln, Preise, Budgets, Förderlogiken und Korrekturverfahren werden als zusammenhängende Architektur verstanden. Der Unterbereich wird mit Übersicht, Arbeitsmaterial, Werkzeugen, Buchankern und öffentlichen Quellen verbunden.
+
+Mess-, Daten- und Bewertungslogik #
+
+WÖk-IDs, Scorecards, Benchmarks, Vertrauensstufen, NWI, T-SROI und Reverse Merit Order schaffen eine nachvollziehbare Bewertungslogik. Datenlücken werden als Datenlücken ausgewiesen und nicht als positive Wirkung interpretiert.
+
+Politische Anschlussfähigkeit und Ausgestaltungsspielräume #
+
+Der Unterbereich beschreibt keinen fertigen Parteibeschluss. Politik schafft Verfahren, Standards, Schutzrechte, Finanzierung, Evaluation und Korrektur. Unterschiedliche demokratische Wege bleiben möglich, solange Wirkung sichtbar, überprüfbar und korrigierbar bleibt.
+
+Akteursperspektiven #
+
+Relevant sind Bürger:innen, betroffene Gruppen, Unternehmen, Verwaltung, Politik, Wissenschaft, Zivilgesellschaft, Kommunen und Prüfinstitutionen. Jede Perspektive erhält andere Aufgaben, Rechte, Datenbedarfe und Schutzinteressen.
+
+### Quellenanker: Wirkungsökonomie · Einzeldossier T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/t-sroi/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/t-sroi/index.html`
+
+Einzeldossier · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
+
+Transformational Social Return on Investment für Investitions-, Präventions- und Transformationswirkung.
+
+Praxisfrage, Bewertungsweg, Datenquellen, Annahmen, politische Optionen, Werkzeugbezug und Grenzen.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Du liest die Onlinefassung dieses Dossiers. Die Downloadfassung und die Druckfunktion findest du am Ende der Seite.
+
+Praxisfrage
+
+Fallbeispiel oder Anwendungsszenario
+
+Berechnungs-/Bewertungslogik
+
+Datenquellen und Vertrauensstufen
+
+Annahmenbox
+
+Beispielrechnung oder Bewertungsmatrix
+
+Ergebnisinterpretation
+
+Bedeutung für Akteur:innen
+
+Politische Umsetzungsoptionen
+
+Tool-/Rechnerbezug
+
+Grenzen und Missbrauchsschutz
+
+Download und Arbeitsmaterial
+
+Praxisfrage #
+
+Woran lässt sich im Alltag, in Daten oder in Entscheidungen erkennen, dass T-SROI Wirkung erzeugt, verdeckt oder verschiebt?
+
+Fallbeispiel oder Anwendungsszenario #
+
+Transformational Social Return on Investment für Investitions-, Präventions- und Transformationswirkung. Das Dossier nutzt ein modellhaftes Anwendungsszenario, um die praktische Bewertbarkeit zu zeigen, ohne eine amtliche Einstufung zu behaupten.
+
+Berechnungs-/Bewertungslogik #
+
+Die Bewertung folgt einem transparenten Pfad: Kontext bestimmen, relevante SDGs und SDG+-Dimensionen wählen, WÖk-IDs zuordnen, Datenquellen bewerten, Scorecard bilden, rote Linien prüfen und Ergebnis mit Unsicherheit ausweisen.
+
+Datenquellen und Vertrauensstufen #
+
+Vertrauensstufen reichen von geprüften Primärdaten über berichtete Organisationsdaten und öffentliche Statistik bis zu Schätzwerten. Jede Stufe muss sichtbar bleiben.
+
+Annahmenbox #
+
+Annahmen werden offen markiert: Bewertungszeitraum, Einheit, räumlicher Kontext, Datenlücken, Gewichtung, rote Linien und Unsicherheiten.
+
+Beispielrechnung oder Bewertungsmatrix #
+
+Die Matrix arbeitet mit Kernfeldern, Schwellen, Vertrauensstufen und Nicht-Kompensation. Ein positiver Wert in einem Feld hebt eine schwere negative Wirkung in einem anderen Feld nicht automatisch auf.
+
+Ergebnisinterpretation #
+
+Das Ergebnis ist eine Entscheidungsvorlage, keine moralische Endbewertung. Es zeigt, wo positive Netto-Wirkung wahrscheinlich ist, wo Risiken bestehen und wo Nachprüfung nötig bleibt.
+
+Bedeutung für Akteur:innen #
+
+Bürger:innen erhalten Verständlichkeit, Organisationen Steuerungswissen, Politik bessere Entscheidungsgrundlagen, Verwaltung Prüfpfade und Wissenschaft Anschlussfähigkeit an Daten und Methoden.
+
+Politische Umsetzungsoptionen #
+
+Möglich sind Marktanreize, Regulierung, Förderung, öffentliche Infrastruktur, kommunale Pilotierung, soziale Abfederung, Datenstandards, Beschaffung und Rechtsschutz. Die konkrete Gewichtung bleibt demokratisch.
+
+Tool-/Rechnerbezug #
+
+### Quellenanker: Wirkungsökonomie · T-SROI und Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/index.html`
+
+Methodenpapier 23 · Go 10
+
+Transformational Social Return on Investment als Steuerungsinstrument für systemische Wirkung
+
+Dieses Dokument ist ein ausführliches Methodenpapier für den Werkzeugbereich Impact Controlling. Es ist keine fachliche Ausarbeitung eines einzelnen Wirkungsfelds.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.
+
+T-SROI und Impact Controlling
+
+Kurzprofil
+
+Inhaltsübersicht
+
+Executive Summary
+
+Warum ROI und SROI nicht reichen
+
+Definition des T-SROI
+
+Wirkungsebenen: Output, Outcome, Impact, Transformation
+
+Berechnungslogik
+
+Netto-Wirkung und Negativwirkungen
+
+Transformationsmultiplikator
+
+Daten, Scorecards und Monetarisierung
+
+Anwendungsfelder
+
+T-SROI im Unternehmen
+
+T-SROI im Staat und in Wirkungsfonds
+
+Grenzen, Unsicherheit und Assurance
+
+Politische Anschlussfähigkeit und Umsetzungsoptionen
+
+SDG-/SDG+-Bezug
+
+Website- und Bereichintegration
+
+Fazit
+
+Onlinefassung #
+
+T-SROI und Impact Controlling #
+
+Transformational Social Return on Investment als Steuerungsinstrument für systemische Wirkung
+
+Wirkungsökonomie · Natalie Weber
+
+WIRKUNGSÖKONOMIE METHODENPAPIER
+
+T-SROI und Impact Controlling
+
+Transformational Social Return on Investment als Steuerungsinstrument für systemische Wirkung
+
+„T-SROI fragt nicht nur, ob sich etwas lohnt, sondern ob es ein System in Richtung Zukunftsfähigkeit verändert.“
+
+Kurzprofil #
+
+Inhaltsübersicht #
+
+1. Executive Summary
+
+2. Warum ROI und SROI nicht reichen
+
+### Quellenanker: Wirkungsökonomie · Scorecards, Benchmarks und Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/ · Druckdatum: 24.05.2026
+
+*Interne Quelle:* `werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html`
+
+Methodenpapier 22 · Go 10
+
+Wie Wirkungsdaten zu prüfbaren Entscheidungen werden - ohne Kompensation, Scheingenauigkeit oder Personenbewertung
+
+Dieses Dokument ist ein ausführliches Methodenpapier für den Werkzeugbereich Impact Controlling. Es ist keine fachliche Ausarbeitung eines einzelnen Wirkungsfelds.
+
+Onlinefassung
+
+Du liest die Onlinefassung
+
+Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.
+
+Scorecards, Benchmarks und Netto-Wirkungs-Index
+
+Kurzprofil
+
+Inhaltsübersicht
+
+Executive Summary
+
+Ausgangsdiagnose: Warum Daten ohne Scorecard nicht steuern
+
+Scorecards als Bewertungsoberfläche
+
+Die Wirkungsskala von -3 bis +3
+
+Benchmarks nach Branche, Kontext und Grenze
+
+Reverse Merit Order und Nichtkompensation
+
+Netto-Wirkungs-Index (NWI)
+
+Datenqualität, Unsicherheit und Schätzung
+
+Scorecard-Typen
+
+Beispiele
+
+Assurance, Audit und Governance
+
+Grenzen und Schutzmechanismen
+
+Politische Anschlussfähigkeit und Umsetzungsoptionen
+
+SDG-/SDG+-Bezug
+
+Website- und Bereichintegration
+
+Fazit
+
+Onlinefassung #
+
+Scorecards, Benchmarks und Netto-Wirkungs-Index #
+
+Wie Wirkungsdaten zu prüfbaren Entscheidungen werden - ohne Kompensation, Scheingenauigkeit oder Personenbewertung
+
+Wirkungsökonomie · Natalie Weber
+
+WIRKUNGSÖKONOMIE METHODENPAPIER
+
+Scorecards, Benchmarks und Netto-Wirkungs-Index
+
+Wie Wirkungsdaten zu prüfbaren Entscheidungen werden - ohne Kompensation, Scheingenauigkeit oder Personenbewertung
+
+„Eine Scorecard ist kein Urteil über Menschen, sondern ein Fenster auf Wirkungszusammenhänge.“
+
+Kurzprofil #
+
+Inhaltsübersicht #
+
+1. Executive Summary
+
+2. Ausgangsdiagnose
+
+### Quellenanker: Inhalt
+
+*Interne Quelle:* `dokumente/whitepaper-t-sroi/index.html`
+
+Webfassung aus der gelieferten Originaldatei. Der Originaltext bleibt über die Originaldatei zitierbar.
+
+Herunterladen
+
+Metadaten
+
+Diese Seite gehört zur lebenden Online-Referenzfassung 2026.2-live-reference. Die Source-Original-Fassung bleibt über Originaldatei und Importversion zitierfähig; begriffliche Präzisierungen, Reviewstatus und Aktualisierungen werden im Live-Reference-Changelog dokumentiert.
+
+Importstatus
+
+Diese Webfassung ist ein technischer Volltextimport. Layout, Fußnotenpositionen, komplexe Tabellen und eingebettete Grafiken können vom Original abweichen; die Originaldatei bleibt die zitierfähige Fassung.
+
+Diskurs zu einzelnen Abschnitten wird in Phase 2 aktiviert; die Abschnitts- und Absatz-IDs sind vorbereitet.
+
+Web-Volltext
+
+Seite 1
+
+© 2025 Natalie Weber. Stand 06.09.2025 1 Whitepaper T-SROI – Der neue Standard für Impact-Controlling in der Wirkungsökonomie 1. Executive Summary Die großen Herausforderungen unserer Zeit – Klimawandel, Ressourcenknappheit, soziale Ungleichheit und geopolitische Instabilität – verlangen nach einem neuen Kompass für Wirtschaft und Gesellschaft. Klassische Kennzahlen wie ROI (Return on Investment) oder NPV (Net Present Value) messen ausschließlich finanziellen Erfolg. Selbst moderne Ansätze wie ESG-Ratings oder der Social Return on Investment (SROI) bleiben unvollständig: Sie berücksichtigen zwar soziale und ökologische Faktoren, erfassen jedoch nicht die tieferliegende, transformative Wirkung eines Projekts oder einer Investition auf ganze Systeme. Hier setzt der T-SROI (Transformational Social Return on Investment) an. Er ist der neue Standard für Impact-Controlling, der finanzielle, soziale, ökologische und systemische Wirkungen integriert und diese entlang internationaler Benchmarks wie den SDGs, der EU-Taxonomie und den GRI-Standards bewertet. Während ROI die Frage beantwortet: „Lohnt sich die Investition finanziell?“, und SROI fragt: „Welchen gesellschaftlichen und ökologischen Nutzen erzeugt sie zusätzlich?“, geht T-SROI weiter und fragt: „Verändert diese Investition ganze Systeme im Sinne einer nachhaltigen, resilienten und gerechten Transformation?“ Der T-SROI ist damit nicht nur eine Kennzahl, sondern ein Steuerungsinstrument für die Wirkungsökonomie (WÖk). Er übersetzt Wirkung in eine nachvollziehbare, vergleichbare und messbare Größe, die Kapitalströme umlenkt – weg von reiner Gewinnorientierung, hin zu wirkungsorientiertem Handeln. Die Stärke des T-SROI liegt in seiner Praxisnähe und Skalierbarkeit: • Er kann auf einzelne Projekte (z. B. einen Agri-Solarpark), • auf Unternehmensstrategien (z. B. Umstellung auf Kreislaufwirtschaft), • oder ganze Branchen (z. B. Dekarbonisierung der Zementindustrie) angewendet werden. So wird Wirkung zur neuen Währung der Transformation.
+
+Seite 2
+
+© 2025 Natalie Weber. Stand 06.09.2025 2 2. Einleitung: Die Lücke in der Wirkungsmessung Wirtschaftliches Handeln wird traditionell an finanziellen Kennzahlen gemessen: Gewinn, Rendite, Return on Investment (ROI). Diese Indikatoren haben über Jahrzehnte Investitionen gesteuert und Kapitalallokationen geprägt. Doch sie erfassen nur einen Teil der Realität – den monetären Erfolg für das einzelne Unternehmen. Mit zunehmendem gesellschaftlichem Druck und globalen Herausforderungen entstanden ergänzende Instrumente wie CO2-Bilanzen, ESG-Ratings oder der Social Return on Investment (SROI). Sie sollten sicherstellen, dass nicht nur finanzielle, sondern auch soziale und ökologische Wirkungen sichtbar werden. Doch diese Ansätze stoßen an Grenzen: • ROI blendet externe Effekte aus und belohnt oft kurzfristige Gewinne zulasten langfristiger Nachhaltigkeit. • SROI erweitert die Perspektive, bleibt aber projektzentriert und kann systemische Wirkungen – wie den Beitrag zu Transformation, Resilienz oder globalen Nachhaltigkeitszielen – nicht vollständig abbilden. • ESG-Ratings beruhen häufig auf Selbstauskünften, sind nicht einheitlich standardisiert und bieten kaum Steuerungsimpulse. Die Folge: Trotz „grünem“ Reporting steigen CO2-Emissionen, Biodiversität geht verloren, Ungleichheit nimmt zu. Die Wirkungsmessung bleibt fragmentiert und unzureichend. Genau hier setzt der T-SROI (Transformational Social Return on Investment) an: • Er integriert finanzielle, soziale, ökologische und systemische Wirkungen. • Er bewertet Investitionen nicht nur nach ihrem direkten Output, sondern nach ihrem Beitrag zur Transformation im Sinne der SDGs. • Er übersetzt komplexe Wirkungszusammenhänge in eine klare Kennzahl, die Investoren, Unternehmen, Politik und Gesellschaft eine verlässliche Steuerungsgröße liefert. Damit schließt der T-SROI die entscheidende Lücke: Er macht sichtbar, ob eine Investition nicht nur rentabel ist, sondern ob sie unsere Gesellschaft in Richtung einer nachhaltigen, resilienten und gerechten Zukunft bewegt.
+
+Seite 3
+
+© 2025 Natalie Weber. Stand 06.09.2025 3 3. Vom Kapital zur Wirkung – ein Paradigmenwechsel 3. Der T-SROI – Konzept & Methodik 3.1 Definition Der Transformational Social Return on Investment (T-SROI) ist ein Steuerungsinstrument, das den finanziellen Return mit sozialen, ökologischen und systemischen Wirkungen verknüpft. Er misst nicht nur Output (z. B. produzierte Energie, eingesparte Emissionen), sondern auch Outcome (gesellschaftliche Effekte) und Impact (transformativer Beitrag zur Erreichung der Sustainable Development Goals, SDGs). Im Unterschied zu ROI und SROI erfasst der T-SROI die echte Netto-Wirkung, indem nicht nur positive Effekte, sondern auch negative Wirkungen systematisch abgezogen werden. Darüber hinaus berücksichtigt er mit dem Multiplikator M die systemische Breitenwirkung: Er zeigt, ob eine Investition lediglich lokal wirkt oder ob sie ganze Lieferketten, Branchen oder Märkte transformiert. Dadurch wird der T-SROI zu einem Instrument, das Greenwashing verhindert, die SDGs als Referenzrahmen nutzt und Wirkung als zentrale Steuerungsgröße in Politik, Wirtschaft und Gesellschaft operationalisiert. 3.2 Die Berechnungslogik Der T-SROI folgt einer klaren Berechnungslogik, die Wirkung systematisch und nachvollziehbar quantifiziert. Ausgangspunkt ist die Formel: Damit wird die Netto-Wirkung einer Investition erfasst – also der Überschuss an gesellschaftlichem, ökologischem und systemischem Nutzen nach Abzug der verursachten Belastungen. Scorecard-Prinzip Um die Wirkungen zu erfassen, wird eine Scorecard angewendet. Sie bewertet eine Investition entlang verschiedener Wirkungsfelder wie Klima, Energie, Arbeit, Region, Biodiversität oder Gesellschaft. Jeder Scorecard-Baustein enthält: 1. Indikator – Was wird gemessen? (z. B. CO2-Einsparung, Anzahl geschaffener Jobs) 2. Benchmark – Welcher Zielwert ist maßgeblich? (z. B. EU-Taxonomie, SDG-Unterziel, nationale Standards)
+
+Seite 4
+
+© 2025 Natalie Weber. Stand 06.09.2025 4 3. Projektwert – Welche Wirkung erzielt das konkrete Projekt? 4. Wirkungspunkte – Verhältnis von Projektwert zu Benchmark (&gt;1 = übertroffen, &lt;1 = verfehlt) 5. Monetarisierung – Bewertung der Wirkung in € (z. B. CO2-Preis, Jobwert, Wert ökologischer Dienstleistungen) Die Summe dieser monetarisierten Wirkungen ergibt die Gesamtwirkung. Von dieser werden die Negativwirkungen abgezogen – beispielsweise Rohstoffverbrauch, soziale Konflikte oder Flächenkonkurrenz. Das Ergebnis ist die Netto-Wirkung, die durch die Investition erzielt wird. Erst auf dieser Grundlage wird der T-SROI berechnet. 3.3 Abgrenzung zu ROI und SROI Der T-SROI baut auf den bekannten Konzepten ROI und SROI auf, erweitert diese jedoch entscheidend. Die Entwicklung lässt sich als dreistufige Formel-Kaskade darstellen: 1. ROI (Return on Investment) → misst ausschließlich die finanzielle Rendite. 2. SROI (Social Return on Investment) → erweitert den ROI um monetarisierte gesellschaftliche und ökologische Edekte. 3. T-SROI (Transformational Social Return on Investment) → macht Transformation messbar, indem nicht nur Positives addiert, sondern auch Negativwirkungen systematisch abgezogen werden.
+
+Seite 5
+
+© 2025 Natalie Weber. Stand 06.09.2025 5 Vergleichstabelle Kennzahl Fokus Methodik Schwäche T-SROI-Vorteil ROI finanzielle Rendite Einnahmen vs. Investition blendet externe Effekte aus – SROI finanzielle + soziale/ökologische Effekte Addition monetarisierter Zusatznutzen Negativwirkungen oft ignoriert, Gefahr von Greenwashing – T-SROI Netto-Wirkung + Transformation Scorecard, Benchmarks, Abzug Negativwirkungen – zeigt echte Netto-Wirkung, verhindert Greenwashing, orientiert an SDGs 3.4 Vorteile des T-SROI Der T-SROI bietet im Vergleich zu klassischen Kennzahlen und bestehenden Nachhaltigkeitsansätzen eine Reihe von Vorteilen: • Ganzheitlich Erfasst finanzielle, soziale, ökologische und systemische Wirkungen in einer einzigen Kennzahl. • Netto-orientiert Durch den Abzug der Negativwirkungen wird die echte Netto-Wirkung sichtbar – kein Projekt kann sich allein durch positive Effekte „grünrechnen“. • Vergleichbar Durch die Orientierung an Benchmarks (z. B. SDGs, EU-Taxonomie, GRI-Standards) lassen sich Investitionen über Projekte, Branchen und Länder hinweg vergleichen. • Steuerungsfähig Der T-SROI ist nicht nur ein Reporting-Instrument, sondern eine operative Steuerungsgröße für Investitionen, Strategien und Förderprogramme. • Transformativ Mit dem Multiplikator M wird sichtbar, ob ein Projekt über seine unmittelbare Wirkung hinaus systemische Veränderungen in Lieferketten, Branchen oder Märkten auslöst.
+
+Seite 6
+
+© 2025 Natalie Weber. Stand 06.09.2025 6 • Zukunftssicher Der T-SROI integriert aktuelle regulatorische Anforderungen (CSRD, ESRS, EU-Taxonomie) und geht darüber hinaus – er ist anschlussfähig an künftige Standards. 3.5 Erweiterung: Multiplikator M für systemische Wirkung Die bisherige Formel des T-SROI erfasst die Netto-Wirkung eines Projekts: Dabei wird bislang implizit mit M = 1 gerechnet – also unterstellt, dass die Wirkung auf das Projekt selbst begrenzt bleibt. In der Realität entfalten viele Investitionen jedoch eine systemische Hebelwirkung, die weit über die Projektgrenzen hinausgeht. Erweiterte Formel • M = 1 → Wirkung bleibt lokal (nur das Projekt selbst). • M &gt; 1 → Domino- oder Spillover-Effekte: Systemische Transformation: Lieferketten, Branchen oder Märkte verändern sich mit. • M &lt; 1 → negative systemische Effekte (z. B. wenn ein Projekt andere nachhaltige Lösungen verdrängt oder Lock-in-Effekte erzeugt). Kriterien zur Bestimmung von M Der Multiplikator wird anhand einer Scorecard bewertet, die fünf zentrale Kriterien umfasst: 1. Lieferkettentransfer – Stellen Zulieferer und Partner ebenfalls um? 2. Branchendurchdringung – Verändert das Projekt Standards in der Branche? 3. Politische Hebel – Setzt die Investition regulatorische Impulse? 4. Skalierbarkeit – Lässt sich das Modell auf andere Regionen oder Märkte übertragen? 5. Gesellschaftliche Akzeptanz – Wird das Modell von Bürger:innen und Stakeholdern getragen?
+
+Seite 7
+
+© 2025 Natalie Weber. Stand 06.09.2025 7 Messlogik Jedes erfüllte Kriterium erhöht M um einen Bruchteil. Ein mögliches Raster: • 0 erfüllte Kriterien → M = 1,0 • 3 erfüllte Kriterien → M = 1,3 • alle 5 Kriterien → M = 1,5 (bis max. 2,0 bei besonders starker Wirkung) Beispiele • Agri-Solarpark: Lokale Landwirte übernehmen die Idee → M ≈ 1,1 • Kreislaufwirtschaft: Lieferkette passt sich an, neue Geschäftsmodelle entstehen → M ≈ 1,3–1,5 • Zement/Wasserstod: Branchenstandard, regulatorische Anpassung → M ≈ 1,5–2,0 Damit wird der Multiplikator M zur Messgröße für die systemische Breitenwirkung einer Investition – und ergänzt die Netto-Betrachtung um die Dimension der Transformation ganzer Systeme. • Der Abzug der Negativwirkungen stellt die Ehrlichkeit her. • Der Multiplikator M zeigt die systemische Hebelwirkung. • Beides zusammen macht den T-SROI zum Instrument echter Transformation. 3.6 Vorteile des T-SROI • Ganzheitlich: Erfasst Wirkung in allen Dimensionen (ökonomisch, sozial, ökologisch, systemisch). • Vergleichbar: Benchmarks (SDGs, EU-Taxonomie) schaffen einheitliche Maßstäbe. • Steuerungsfähig: Eignet sich für Investitionsentscheidungen, Unternehmensstrategien und politische Programme. • Zukunftssicher: Macht sichtbar, ob Projekte wirklich transformativ sind oder nur „grün gewaschen“.
+
+Seite 8
+
+© 2025 Natalie Weber. Stand 06.09.2025 8 4. Integration in die Wirkungsökonomie (WÖk) Die Wirkungsökonomie (WÖk) definiert Wirkung als zentrale Steuerungsgröße – nicht Gewinn oder Kapital. Der T-SROI ist das operative Instrument, das diese Wirkung in konkrete, überprüfbare und vergleichbare Kennzahlen übersetzt. 4.1 Warum der T-SROI unverzichtbar ist • Fehlsteuerung durch Kapitalorientierung: Klassischer ROI bewertet nur die finanzielle Rendite. Er kann deshalb Projekte belohnen, die zwar profitabel sind, aber gleichzeitig ökologische oder soziale Schäden verursachen. • Grenzen des SROI: Der Social Return on Investment (SROI) berücksichtigt zwar zusätzliche gesellschaftliche und ökologische Effekte, ignoriert jedoch in vielen Fällen negative Wirkungen. Dadurch besteht die Gefahr von Greenwashing. • T-SROI schadt Transparenz: Durch den Abzug der Negativwirkungen wird die echte Netto-Wirkung sichtbar. Das unterscheidet ihn fundamental von allen bisherigen Kennzahlen. 4.2 Verbindung zu globalen Standards Der T-SROI ist anschlussfähig an etablierte internationale Rahmenwerke: • SDGs: Der T-SROI misst den Beitrag von Projekten zu den 17 globalen Nachhaltigkeitszielen und ihren Unterzielen. • EU-Taxonomie: Die technischen Kriterien für nachhaltige Investitionen fließen als Benchmarks in die Scorecards ein. • CSRD/GRI/ESRS: Berichtspflichten können über den T-SROI ergänzt werden, sodass neben Finanzkennzahlen auch Wirkungskennzahlen vergleichbar werden. • ISO/ILO-Normen: Standards für Qualität, Arbeit und Menschenrechte bieten zusätzliche Orientierungspunkte. Damit ist der T-SROI nicht nur ein eigenständiges Instrument, sondern auch eine Klammer, die bestehende Standards zusammenführt und in eine Steuerungslogik überführt.
+
+Seite 9
+
+© 2025 Natalie Weber. Stand 06.09.2025 9 4.3 Steuerung in Politik, Wirtschaft und Gesellschaft • Politik o Gestaltung einer Wirkungssteuer (WUStG), bei der Steuersätze an den T-SROI gekoppelt sind: Hohe Netto-Wirkung = niedrigere Steuerlast, geringe oder negative Wirkung = höhere Steuerlast. o Priorisierung von Förderprogrammen nach T-SROI-Werten: Investitionen mit hoher systemischer Wirkung werden bevorzugt unterstützt. o Evaluierung der Wirksamkeit politischer Maßnahmen anhand aggregierter T-SROI-Daten. • Unternehmen o Investitionen und Projekte werden nicht nur nach ROI, sondern nach T-SROI priorisiert. o Strategien können über ein T-SROI-Portfolio gesteuert werden: Welche Geschäftsfelder bringen den größten transformativen Beitrag? o Integration in das Pflicht-Reporting (CSRD/GRI), aber mit stärkerem Fokus auf Transformation statt nur Compliance. • Finanzmarkt o Banken und Investoren können T-SROI als Risikomaßstab nutzen: Projekte mit niedriger Netto-Wirkung oder ohne systemischen Hebel gelten als riskanter. o Kreditkonditionen (Zinsaufschläge oder -rabatte) können an T-SROI-Werte gekoppelt werden. o Impact-Investment-Fonds können T-SROI nutzen, um ihre Wirkungsmessung zu standardisieren und international vergleichbar zu machen. • Gesellschaft & Bürger:innen o Einführung eines T-SROI-Labels: Verbraucher:innen erkennen auf einen Blick, welche Produkte oder Unternehmen tatsächlich transformativ wirken. o Kommunale Beteiligungsprojekte können T-SROI-basiert bewertet werden, sodass die Bevölkerung transparente Entscheidungen nachvollziehen kann. o Stärkung des Vertrauens: Wenn Wirkung messbar wird, erhöht das die Legitimität von Transformationsprozessen.
+
+Seite 10
+
+© 2025 Natalie Weber. Stand 06.09.2025 10 4.4 Der systemische Mehrwert durch den Multiplikator M Ein Alleinstellungsmerkmal des T-SROI ist der Multiplikator M. Er macht sichtbar, ob eine Investition nur lokal wirkt (M = 1) oder ob sie ganze Lieferketten, Branchen oder Märkte transformiert (M &gt; 1). • Lokale Wirkung (M = 1): Wirkung bleibt auf das Projekt beschränkt, z. B. ein einzelner Solarpark ohne Spillover-Effekte. • Systemische Wirkung (M &gt; 1): Domino- oder Spillover-Effekte treten ein, z. B. eine Kreislaufwirtschaftsinitiative zwingt Zulieferer zur Anpassung. • Negative systemische Wirkung (M &lt; 1): Lock-in in nicht zukunftsfähige Technologien, die Transformation verhindern oder verzögern. So wird Transformation erstmals messbar und steuerbar: • Politische Entscheidungsträger:innen können Fördermittel gezielt in Projekte mit hohem M-Wert lenken. • Unternehmen können ihr Geschäftsmodell danach bewerten, ob es nur isolierte Effekte erzielt oder ganze Branchen verändert. • Bürger:innen und Finanzmärkte erhalten Transparenz darüber, welche Investitionen langfristig tragfähig sind. 4.5 Governance: Der Wirkungsrat Damit Benchmarks und Scorecards nicht politisch verzerrt werden, braucht es eine unabhängige Institution: den Wirkungsrat. • Zusammensetzung: Wissenschaft, Wirtschaft, Zivilgesellschaft. • Aufgabe: Pflege und Weiterentwicklung des Indikatorenregisters, Überprüfung von Benchmarks, Veröffentlichung transparenter Bewertungen. • Prinzipien: Wissenschaftlichkeit, Unabhängigkeit, Transparenz. Der Wirkungsrat sorgt dafür, dass die Anwendung des T-SROI objektiv, nachvollziehbar und legitim bleibt – und stellt sicher, dass die Wirkungsmessung nicht selbst zum Instrument politischer Willkür wird.
+
+Seite 11
+
+© 2025 Natalie Weber. Stand 06.09.2025 11 5. Praxisbeispiele 5.1 Agri-Solarpark Ausgangslage Ein Unternehmen investiert 50 Mio. € in den Bau eines Agri-Solarparks mit 100 ha Fläche. Davon sind 70 ha mit Solarmodulen bestückt, 30 ha bleiben landwirtschaftlich nutzbar. Der Park produziert jährlich 150 GWh Strom, spart 90.000 t CO2 ein und schafft 25 dauerhafte Arbeitsplätze. Zusätzlich werden Blühstreifen und Biodiversitätsmaßnahmen umgesetzt. Wirkungsfeld Indikator Benchmark Quelle Benchmark Projektwert Datenquelle / Herleitung Wirkungspunkte Monetarisierung (Ansatz) Wirkung in € Klima CO2-Reduktion (t/Jahr) 500.000 EU-Taxonomie Industrie, SDG 13 600.000 Substitution fossiler BrennstoLe 1,20 100 €/t CO2 (UBA) 600 Mio. € Energie Anteil erneuerbarer Energie (%) 70 % EU-Klimaziele 2030 100 % Brennöfen auf H2 1,43 20 €/MWh Zusatznutzen 40 Mio. € Innovation Neue Technologien (TRL-Level) 1 IPCC, SDG 9 2 Pilotcharakter, Vorreiterrolle 2,0 50 Mio. € Innovationswert 100 Mio. € Arbeit Dauerhafte Jobs gesichert 1.000 ILO, SDG 8.5 1.200 Standorterhalt 1,20 40.000 €/Job/Jahr 80 Mio. € Region Lokale Wertschöpfung (%) 40 % Industriecluster DE 50 % Zulieferer, Service 1,25 2 Mio. €/Jahr 30 Mio. € Gesellschaft Akzeptanz & Legitimität 70 % Zustimmung SDG 16 85 % Bürgerdialog 1,21 10 Mio. € 12 Mio. € Summe positiv – – – – – – – 862 Mio. € Negativwirkungen Hoher Energiebedarf, H2-Knappheit – Literatur H2-Industrie – Pauschal –50 Mio. € – –50 Mio. € –50 Mio. € Netto-Wirkung – – – – – – – 812 Mio. € ROI, SROI, T-SROI und T-SROI×M Kennzahl Formel Wert ROI (150 – 50) / 50 2,0 SROI (365 – 50) / 50 5,3 T-SROI (380 – 50) / 50 6,6 T-SROI × M (380 × 1,1 – 50) / 50 7,9 (hier: M = 1,1, da der Solarpark regionale Landwirtschaft mitzieht und dadurch einen Domino-EAekt entfaltet) Interpretation • ROI (2,0): Projekt ist finanziell tragfähig. • SROI (5,3): Sozial-ökologische Effekte vervielfachen den Nutzen. • T-SROI (6,6): Nach Abzug von Negativwirkungen sichtbar, dass die Netto-Wirkung stark bleibt. • T-SROI × M (7,9): Durch den systemischen Effekt (Landwirte in der Region stellen ebenfalls um) wird die Wirkung noch einmal verstärkt – das Projekt wirkt transformativ in die Breite.
+
+Seite 12
+
+© 2025 Natalie Weber. Stand 06.09.2025 12 5.2 Umstellung auf Kreislaufwirtschaft Ausgangslage Ein Produktionsunternehmen investiert 30 Mio. €, um seine Lieferkette konsequent auf Kreislaufwirtschaft umzustellen. Dazu gehören Rücknahmesysteme, Recycling, Materialeinsparungen und neue Geschäftsmodelle (z. B. Produkt-Service-Systeme). Wirkungsfeld Indikator Benchmark Quelle Benchmark Projektwert Datenquelle / Herleitung Wirkungspunkte Monetarisierung (Ansatz) Wirkung in € RessourceneLizienz Materialeinsparung (%) 20 % EU Circular Economy Action Plan, SDG 12.2 25 % StoLstromanalyse, Erfahrungswerte Kreislaufprojekte 1,25 500 €/t Material (durchschn. RohstoLkosten) 120 Mio. € Abfallvermeidung Abfallreduktion (t/Jahr) 10.000 EU-Abfallrahmenrichtlinie, SDG 12.5 12.000 Produktionsabfälle vorher/nachher 1,20 200 €/t (Entsorgungskosten + externe Schäden) 36 Mio. € CO2-Reduktion Emissionen (t/Jahr) 15.000 EU-Taxonomie Industrie-Standards 18.000 Energie-/Prozessumstellung 1,20 100 €/t CO2 (UBA) 27 Mio. € Innovation Neue Geschäftsmodelle 2 Ellen MacArthur Foundation, SDG 9 3 Einführung Produkt-Service-Systeme, Leasing 1,5 5 Mio. €/Modell 15 Mio. € Arbeit Dauerhafte Jobs 50 ILO, SDG 8.5 60 Rücknahmelogistik, Recyclingbetrieb 1,20 40.000 €/Job/Jahr (BIP pro Kopf) 36 Mio. € Region Lokale Wertschöpfung (%) 40 % DGRV/Bürgerbeteiligung, SDG 11 50 % Lokale Recyclingfirmen 1,25 1 Mio. €/Jahr 15 Mio. € Summe positiv – – – – – – – 249 Mio. € Negativwirkungen Investitionsrisiken, Übergangskosten – Literatur Transformationsprojekte – Pauschale Schätzung – –10 Mio. € –10 Mio. € Netto-Wirkung – – – – – – – 239 Mio. € ROI, SROI, T-SROI und T-SROI×M Kennzahl Formel Wert ROI (200 – 100) / 100 1,0–2,0 SROI (862 – 100) / 100 7,6 T-SROI (812 – 100) / 100 7,1 T-SROI × M (812 × 1,6 – 100) / 100 12,0 (M = 1,6, da das Projekt Branchenstandards setzt und regulatorische Impulse auslöst.) Interpretation • ROI (2,0): Finanziell attraktiv. • SROI (7,6): Zusätzliche soziale und ökologische Effekte stark. • T-SROI (7,1): Nach Abzug von Negativwirkungen bleibt hohe Netto-Wirkung. • T-SROI×M (12,0): Durch die systemische Hebelwirkung (Lieferanten & neue Geschäftsmodelle) besonders transformativ.
+
+Seite 13
+
+© 2025 Natalie Weber. Stand 06.09.2025 13 Hier zum Vergleich die drei Praxisbeispiele mit allen drei Kurven (ROI, SROI, T-SROI) nebeneinander. Interpretation der Praxisbeispiele • Agri-Solarpark o ROI (linear): stabil durch kontinuierliche Stromerlöse. o SROI (leicht progressiv): zusätzliche Wirkung durch CO2-Einsparung, Biodiversität und Jobs. o T-SROI (stärker progressiv): Netto-Wirkung nach Abzug von Rohsto`- und Flächenbelastungen bleibt hoch. o T-SROI×M (deutlich progressiv): M ≈ 1,1, da Landwirte in der Region nachziehen. Systemische Wirkung, aber begrenzt regional. • Kreislaufwirtschaft o ROI (linear): finanzielle Einsparungen durch Ressourceneffizienz. o SROI (stärker gebogen): zusätzliche Effekte durch Abfallvermeidung, CO2-Reduktion, neue Geschäftsmodelle. o T-SROI (noch stärker gebogen): Netto-Wirkung bleibt sehr hoch, da wenige Negativwirkungen. o T-SROI×M (fast exponentiell): M ≈ 1,4, da Lieferketten nachziehen und ganze Branchen sich anpassen. Transformationshebel sichtbar. • Zement/Wasserstod o ROI (flach/linear): knapp rentabel, stark abhängig von Energiepreisen. o SROI (hoch, leicht gebogen): massiver Klimanutzen durch CO2-Einsparung. o T-SROI (stark gebogen): trotz hohem Energiebedarf bleibt die Netto-Wirkung sehr hoch. o T-SROI×M (exponentiell): M ≈ 1,6, da die Technologie Branchenstandards setzt und regulatorische Impulse auslöst. Domino-Effekt für die gesamte Industrie.
+
+Seite 14
+
+© 2025 Natalie Weber. Stand 06.09.2025 14 6. Anwendung und Skalierung des T-SROI Der T-SROI entfaltet seine volle Wirkung erst, wenn er nicht nur in Einzelfällen berechnet, sondern systematisch in Unternehmen, Politik, Finanzmarkt und Gesellschaft eingesetzt wird. Er wird damit vom Messinstrument zum Steuerungsinstrument für Transformation. 6.1 Unternehmenssteuerung Unternehmen können den T-SROI als zentrale Kennzahl für ihre Investitionsentscheidungen, Strategieentwicklung und Portfoliosteuerung nutzen. • In der Projektbewertung ersetzt der T-SROI die rein finanzielle ROI-Perspektive durch eine ganzheitliche Betrachtung von Wirkung und Transformation. • In der strategischen Steuerung erlaubt der T-SROI-Portfolioansatz die Priorisierung der Geschäftsfelder, die den größten transformativen Beitrag leisten. • Im Reporting ist der T-SROI anschlussfähig an bestehende Standards wie CSRD, GRI und ESRS, geht aber darüber hinaus, indem er nicht nur Berichtspflichten erfüllt, sondern Steuerungsimpulse setzt. 6.2 Politik und Regulierung Auch die Politik kann den T-SROI als Steuerungsinstrument nutzen, um Investitionen gezielt in Richtung Transformation zu lenken. • Eine Wirkungssteuer (WUStG) könnte Steuerlasten an den T-SROI koppeln: Hohe Werte senken die Abgaben, geringe oder negative Werte erhöhen sie. • Förderprogramme können nach T-SROI-Werten priorisiert werden: Projekte mit hoher Netto- und systemischer Wirkung werden bevorzugt unterstützt. • Die ödentliche Beschadung kann den T-SROI als Auswahlkriterium nutzen, um staatliche Mittel wirksam einzusetzen. 6.3 Finanzmarkt Der Finanzmarkt ist ein zentraler Hebel für Skalierung. • Banken können Kreditkonditionen an T-SROI-Werte knüpfen: Projekte mit hoher Netto-Wirkung gelten als risikoärmer und erhalten günstigere Zinsen. • Investoren können den T-SROI nutzen, um Impact-Investments vergleichbar zu machen und Greenwashing zu vermeiden. • Rating-Agenturen könnten T-SROI-Werte als Teil ihrer Bonitäts- und Nachhaltigkeitsbewertungen einführen.
+
+Seite 15
+
+### Quellenanker: Wirkungsökonomie · T-SROI für Präventions- und Gesundheitsinvestitionen · https://wirkungsoekonomie.de/wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/ · Druckdatum: 2026-05-24
+
+*Interne Quelle:* `wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/index.html`
+
+Methode
+
+Bewertet Transformationsnutzen über vermiedene Schäden, Resilienz, Teilhabe und Folgekosten.
+
+Modellhafte Methodenseite. Keine medizinische Beratung, keine Diagnostik, keine Rechts- oder Förderberatung und keine Personenbewertung.
+
+Schutzgrenze
+
+Strukturen bewerten, nicht Menschen.
+
+Die Methode betrachtet Programme, Räume, Organisationen oder politische Maßnahmen. Gesundheitsdaten brauchen Datenschutz, Zweckbindung und Korrekturwege.
+
+Methodik: Gesundheitswirkungs-Tool-Suite
+
+Zweck
+
+Module
+
+Gesundheitswirkungscheck
+
+Präventionswirkungsrechner
+
+Pflegewirkungscheck
+
+Kommunaler Gesundheitsraum-Check
+
+Mental-Health-Reflexionstool (nicht-diagnostisch)
+
+One-Health-Score
+
+Gesundheitsdatenraum-/Privacy-by-Design-Check
+
+Grundformel Präventionswirkung
+
+Eingaben
+
+Ergebnisdarstellung
+
+Datenschutz und Schutzgrenzen
+
+Verlinkungen
+
+Methodik lesen #
+
+Methodik: Gesundheitswirkungs-Tool-Suite #
+
+Autorin: Natalie Weber Referenz: Wirkungsökonomie Modellhafte Fassung Stand: 24. Mai 2026 #
+
+Zweck #
+
+Die Tool-Suite macht Gesundheitswirkung auf Ebene von Programmen, Räumen, Institutionen und politischen Maßnahmen sichtbar. Sie ist keine medizinische Diagnostik, kein Personen-Scoring und keine Therapieempfehlung. #
+
+Module #
+
+Gesundheitswirkungscheck #
+
+Präventionswirkungsrechner #
+
+Pflegewirkungscheck #
+
+Kommunaler Gesundheitsraum-Check #
+
+Mental-Health-Reflexionstool (nicht-diagnostisch) #
+
+One-Health-Score #
+
+Gesundheitsdatenraum-/Privacy-by-Design-Check #
+
+Grundformel Präventionswirkung #
+
+Vermiedene Schäden = Basisrisiko × erwartete Risikoreduktion × Kosten je Ereignis × betroffene Population × Zeithorizont Gesundheitswirkungswert = vermiedene Schäden + Lebensqualitätsnutzen + Resilienzbeitrag + Teilhabebeitrag - Nebenwirkungsrisiken - Umsetzungskosten #
+
+Eingaben #
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
+
+Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
+
+- NWI und T-SROI in Werkzeugseiten konsequent als unterschiedliche Kennzahltypen erklären.
+- Präventions-, Bildungs- und Gesundheitsfälle als T-SROI-Lernfälle markieren.
+- Prüfungsfragen bauen, in denen Studierende entscheiden müssen, ob NWI oder T-SROI passend ist.
+
+### 7.10 Kurzfazit
+
+NWI und T-SROI unterscheiden ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
+
+
+## 8. Prüfungsrelevanz
 
 Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
 
@@ -229,7 +1164,7 @@ Für den Fragenpool sind besonders geeignet:
 - Missverständnisse: Reichweite, Aktivität, Reporting oder Absicht als Wirkung auszugeben.
 - Transfer: positive Netto-Wirkung unter Nichtkompensation und, wo passend, Reverse Merit Order begründen.
 
-## 8. Quellen
+## 9. Quellen
 
 ### Interne Quellen
 
@@ -246,7 +1181,7 @@ Für den Fragenpool sind besonders geeignet:
 - GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
 
-## 9. Rückfluss in den WÖk-Korpus
+## 10. Rückfluss in den WÖk-Korpus
 
 - **Glossar/Begriffe:** Im Tiefensprint prüfen, welche Begriffe aus **NWI und T-SROI unterscheiden** eigene Glossarseiten oder präzisere Verweise brauchen.
 - **Website/Erklärseiten:** Prüfen, ob eine kurze öffentliche Erklärseite oder ein Baustein für die Bibliothek fehlt.

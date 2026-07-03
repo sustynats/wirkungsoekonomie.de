@@ -5,7 +5,7 @@
 **Vorlesungscode:** V35  
 **Modul/Abschnitt:** G3.4  
 **Titel:** Nichtkompensation gegen Greenwashing  
-**Status:** Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden  
+**Status:** Tiefenskript-Sprint 5 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v35-nichtkompensation-gegen-greenwashing.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v35.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v35.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
@@ -218,7 +218,934 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Impact-Washing | übertriebene oder verdeckende Wirkungsbehauptung | `begriffe/impact-washing` |
 | Reverse Merit Order | schwächstes kritisches Feld begrenzt die Bewertung | `begriffe/reverse-merit-order` |
 
-## 7. Prüfungsrelevanz
+## 7. Tiefenskript-Erweiterung Sprint 5
+
+**Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
+
+### 7.1 Leitthese
+
+Nichtkompensation ist die harte Kante der WÖk gegen Greenwashing, Impact-Washing und SDG-Washing: Schwere Schäden dürfen nicht durch gute Einzelwerte, Kompensationsnarrative oder schöne Icons verschwinden.
+
+Die Vorlesung bleibt dabei an die Grundregel gebunden: Wirkung ist neutral und relational. Erst die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ entscheidet, ob eine Veränderung positiv, negativ oder ambivalent einzuordnen ist. Wenn eine Zielgröße gemeint ist, sprechen wir von positiver Netto-Wirkung.
+
+### 7.2 Didaktische Einordnung im Studiengang
+
+V35 liegt an der Schwelle zwischen begrifflicher Grundlegung und Bewertungsarchitektur. Die Studierenden sollen nicht nur Begriffe wiedergeben, sondern an Fällen erkennen, welche Aussage schon Wirkung behauptet, welche nur Wirkungspotenzial beschreibt und wo ein Wirkungsrisiko offenliegt. Der Tiefensinn dieser Vorlesung liegt deshalb nicht in zusätzlicher Komplexität, sondern in besserer Unterscheidungsfähigkeit.
+
+Für die spätere Praxis ist entscheidend, dass jede Analyse vier Ebenen getrennt hält:
+
+1. **Beschreibung:** Was geschieht tatsächlich oder soll geschehen?
+2. **Kausalannahme:** Über welchen Mechanismus könnte daraus eine Zustandsveränderung entstehen?
+3. **Bewertung:** Welche Richtung hat diese Veränderung im Referenzrahmen?
+4. **Rückkopplung:** Welche Entscheidung, Regel, Ressource oder Kommunikation wird dadurch verändert?
+
+Wo diese Ebenen vermischt werden, entstehen typische WÖk-Fehler: Aktivität wird als Wirkung ausgegeben, Reichweite ersetzt Zustandsveränderung, gute Absicht verdeckt Nebenwirkungen oder Reporting wird mit Lernen verwechselt.
+
+### 7.3 Analysemodell
+
+| Analyseobjekt | Woran es wirkt | Typischer Fehler | Saubere WÖk-Lesart |
+|---|---|---|---|
+| Greenwashing | ökologische Behauptung ohne tragfähige Wirkung | grünes Merkmal als Gesamturteil | Lebenszyklus, Grenzen, Daten prüfen |
+| Impact-Washing | übertriebene Wirkungsaussage | Potenzial als Wirkung verkaufen | Wirkung, Potenzial, Risiko trennen |
+| SDG-Washing | SDG-Symbole ohne Zustandsnachweis | Icon als Beleg verwenden | SDG-Zuordnung plus Daten und Rückkopplung verlangen |
+| Nichtkompensation | Schutz vor Wegrechnen schwerer Schäden | Kompensation als moralische Reinigung | rote Linie nicht verrechnen |
+
+### 7.4 Modellformel
+
+Die folgende Formel ist ein didaktisches Denkmodell, kein amtlicher Bewertungsstandard:
+
+$
+Schwere\;Schaden \nRightarrow keine\;Kompensation\;durch\;Nebenplus
+$
+
+Die Formel ist absichtlich einfach: Nichtkompensation schützt vor der Erzählung, ein guter Teil könne einen schweren Schaden einfach aufheben.
+
+Die Formel soll gerade keine Scheingenauigkeit erzeugen. Sie zwingt dazu, die Faktoren offen zu legen, die eine Aussage tragen. In einem echten Bewertungsprozess müssten Datenquelle, Aktualität, Datenqualitätsklasse, Unsicherheitsgrad und Rückkopplungsregel ergänzt werden.
+
+### 7.5 Fallfenster
+
+**Fall 1.** Ein Unternehmen pflanzt Bäume und bewirbt Klimapositivität, ohne Emissionen im Kerngeschäft zu senken. Nichtkompensation fragt, welche Schäden real vermieden werden und welche nur ausgelagert oder erzählt werden.
+
+**Fall 2.** Ein Produkt trägt mehrere SDG-Icons, während eine Lieferkette schwere Arbeitsrechtsrisiken enthält. SDG-Washing entsteht, wenn der positive Rahmen die rote Linie unsichtbar macht.
+
+### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
+
+Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+
+1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
+2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
+3. Benenne mindestens ein Wirkungspotenzial und ein Wirkungsrisiko.
+4. Zeige, welche Quelle oder Datenart nötig wäre, um von Potenzial zu belastbarer Wirkungsaussage zu kommen.
+5. Prüfe, ob Nichtkompensation oder Reverse Merit Order einschlägig sein könnten.
+6. Formuliere eine saubere Wirkungsaussage in einem Satz: Was wissen wir, was nehmen wir an, was bleibt offen?
+
+### 7.7 Auswertung aus der lebenden Website-Referenz
+
+### Quellenanker: WÖk-Präzisierungsbegriff
+
+*Interne Quelle:* `begriffe/nichtkompensationsprinzip/index.html`
+
+Das Nichtkompensationsprinzip verhindert, dass schwere Schäden durch positive Teilwirkungen schöngerechnet werden.
+
+Auf einen Blick
+
+Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden.
+
+Der Begriff gehört zum Bereich Bewertungsbegriff und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Nichtkompensationsprinzip“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie. Er ist besonders anschlussfähig an Reverse Merit Order, Wirkungsgrenze, Netto-Wirkung.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Das Prinzip verbindet Netto-Wirkung mit Wirkungsgrenzen und Reverse Merit Order. Es schützt zentrale Lebens-, Sozial- und Demokratiefunktionen.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Als Schutzlogik, nicht als Anti-Bewertung formulieren.
+
+Verwendung
+
+Verwendung
+
+Als Schutzlogik, nicht als Anti-Bewertung formulieren.
+
+Abgrenzung
+
+Abgrenzung
+
+Kompensation
+
+Offsetting
+
+Wirkungsökonomische Sicht & Einordnung
+
+Wie der Begriff in der WÖk gelesen wird
+
+Für die Wirkungsökonomie ist „Nichtkompensationsprinzip“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. Das Nichtkompensationsprinzip verhindert, dass schwere negative Wirkungen durch positive Werte an anderer Stelle verdeckt werden.
+
+Im Bereich Bewertungsbegriff hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.
+
+Beispiele
+
+Wo der Begriff praktisch auftaucht
+
+In einer Debatte klärt der Begriff, ob über Fakten, Deutung, Wirkungspotenzial oder eingetretene Wirkung gesprochen wird.
+
+In einem Werkzeug markiert „Nichtkompensationsprinzip“, welche Eingaben, Quellen oder Grenzen für eine belastbare Einordnung nötig sind.
+
+In Bewertungsbegriff hilft der Begriff, verkürzte Aussagen in eine überprüfbare Wirkungsfrage zu übersetzen.
+
+Mess- und Steuerungsbezug
+
+Wie daraus eine prüfbare Wirkungsfrage wird
+
+Prüfbar wird „Nichtkompensationsprinzip“, wenn klar ist, welcher Zustand betrachtet wird, welche Quelle herangezogen wird, welche Bilanzgrenze gilt und welche Veränderung tatsächlich gemeint ist.
+
+Für die Steuerung zählen deshalb nicht nur Definitionen, sondern Datenqualität, Vergleichsmaßstab, Zeitbezug, Nebenfolgen und die Rückkopplung in Entscheidung, Preis, Regel, Kapital, Kommunikation oder Verhalten.
+
+Querverweise
+
+Begriffe, die du mitdenken solltest
+
+Reverse Merit Order · Wirkungsgrenze · Netto-Wirkung · Planetare Grenzen · Nature Positive · Zielkonflikt · Biodiversity Net Gain / No Net Loss · Carbon Credits
+
+Verknüpfungen
+
+Verwandte Begriffe
+
+### Quellenanker: WÖk-Präzisierungsbegriff
+
+*Interne Quelle:* `begriffe/greenwashing/index.html`
+
+Greenwashing bezeichnet Nachhaltigkeits- oder Umweltversprechen, die stärker wirken als die belegbare tatsächliche Verbesserung.
+
+Auf einen Blick
+
+Greenwashing liegt vor, wenn grüne Claims, Bilder oder Labels eine positive Wirkung nahelegen, die durch Produktdaten, Methode oder reale Zustandsveränderung nicht gedeckt ist.
+
+Der Begriff gehört zum Bereich Datenbegriff und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Greenwashing“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie. Er ist besonders anschlussfähig an Impact-Washing, SDG-Washing, Green Claims Directive.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Greenwashing bezeichnet eine kommunikative oder strategische Verzerrung, bei der Produkte, Unternehmen, Finanzprodukte oder Maßnahmen ökologischer oder wirkungsvoller erscheinen, als sie nach überprüfbaren Daten sind. In der Wirkungsökonomie ist Greenwashing eine Form von Wirkungsblindheit oder Scheinwirkung: Aufmerksamkeit und Vertrauen werden erzeugt, ohne dass die behauptete Zustandsveränderung ausreichend belegt ist.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Greenwashing gefährdet Wirkungswahrheit: Märkte, Konsument:innen und Politik reagieren auf behauptete statt tatsächliche Wirkung. Dadurch werden positive Netto-Wirkung und faire Rückkopplung verzerrt.
+
+Verwendung
+
+Verwendung
+
+Nicht jeder unvollständige Claim ist automatisch bewusste Täuschung. Die WÖk prüft Datenlage, Kontext, Methode, Reichweite und tatsächliche Wirkung statt Absicht zu unterstellen.
+
+Abgrenzung
+
+Abgrenzung
+
+Nicht jede Nachhaltigkeitskommunikation ist Greenwashing.
+
+Impact Washing umfasst auch soziale oder demokratische Wirkung, nicht nur Umweltclaims.
+
+Fehlende Daten können ein Risiko sein, sind aber analytisch von vorsätzlicher Täuschung zu unterscheiden.
+
+Vertiefung
+
+Vertiefte Begriffsstruktur
+
+Kurzdefinition / Hover
+
+Greenwashing ist die Lücke zwischen grüner Behauptung und belegbarer tatsächlicher Wirkung.
+
+Auf einen Blick
+
+Betrifft Claims, Labels, Bilder, Rankings, Finanzprodukte und Produktversprechen.
+
+Kann durch Auslassung, Übertreibung, unklare Begriffe oder fehlende Daten entstehen.
+
+Verzerrt Marktentscheidungen und schwächt echte Transformation.
+
+Wird durch Produktdaten, klare Claims und Wirkungsrückkopplung begrenzt.
+
+Hauptdefinition
+
+Greenwashing bezeichnet die Darstellung von Produkten, Organisationen, Investitionen oder Maßnahmen als ökologisch vorteilhafter, als es durch überprüfbare Daten und tatsächliche Zustandsveränderungen gedeckt ist. Es kann ausdrücklich, indirekt oder visuell entstehen: durch Begriffe wie „grün“, Naturbilder, selektive Kennzahlen, unklare Kompensation, nicht vergleichbare Labels oder ausgelassene Scope-3-Lasten.
+
+Wirkungsökonomische Relevanz
+
+Greenwashing verschiebt Aufmerksamkeit, Vertrauen und Kapital in Richtung behaupteter Wirkung. Dadurch werden Unternehmen mit realer Transformation benachteiligt, Verbraucher:innen irregeführt und demokratische Steuerung erschwert.
+
+Wirkungsökonomische Sicht & Einordnung
+
+Die WÖk bewertet nicht die Moral einzelner Personen, sondern die Stimmigkeit von Aussage, Daten, Methode, Kontext und Wirkung. Greenwashing ist ein Wirkungsrisiko, weil behauptete positive Wirkung tatsächliche negative oder unklare Wirkung verdecken kann.
+
+Abgrenzung
+
+Greenwashing: ökologische Irreführung oder Überzeichnung.
+
+### Quellenanker: WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff
+
+*Interne Quelle:* `begriffe/impact-washing/index.html`
+
+Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist.
+
+Auf einen Blick
+
+Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.
+
+Der Begriff gehört zum Bereich Datenbegriff und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Impact-Washing“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie. Er ist besonders anschlussfähig an Greenwashing, SDG-Washing, Wirkungspfad.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Impact-Washing bezeichnet die irreführende Darstellung, Vermarktung oder Nutzung behaupteter positiver Wirkung. Es liegt vor, wenn ein Produkt, Unternehmen, Fonds, Projekt, Programm, Gesetz, Start-up, Investment oder Kommunikationsformat als wirkungsvoll dargestellt wird, ohne dass die behauptete Wirkung belastbar nachgewiesen, methodisch eingeordnet und in Entscheidungen rückgekoppelt ist.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Impact-Washing ist zentral, weil Wirkung in der WÖk steuerungsrelevant wird. Sobald Wirkung Kapitalzugang, Steuern, Preise, Beschaffung, Reputation, Fördermittel oder Kaufentscheidungen beeinflusst, entsteht ein starker Anreiz, Wirkung zu behaupten. Ohne Missbrauchsschutz wird nicht Kapital gefälscht, sondern Wirkung.
+
+Verwendung
+
+Verwendung
+
+Die WÖk unterscheidet Wirkungspotenzial, Output, Outcome, Wirkung, Netto-Wirkung und Transformationswirkung. Impact-Washing entsteht, wenn diese Ebenen vermischt werden. Schutz entsteht durch Belegketten, Datenqualität, WÖk-IDs, Scorecards, NWI, T-SROI, Reverse Merit Order, Wirkungsgrenzen, Audit, Assurance, Quellenklarheit und Korrekturmöglichkeiten.
+
+Abgrenzung
+
+Abgrenzung
+
+Nicht als bloßes Schlagwort verwenden: „Impact-Washing“ braucht Kontext, Bilanzgrenze und Prüffrage.
+
+Nicht mit einer fertigen Bewertung verwechseln: Der Begriff ordnet ein, er entscheidet nicht automatisch.
+
+Nicht von Datenqualität trennen: Als WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff bleibt er nur belastbar, wenn Quelle, Bedeutung und Grenze sichtbar sind.
+
+Wirkungsökonomische Sicht & Einordnung
+
+Wie der Begriff in der WÖk gelesen wird
+
+Für die Wirkungsökonomie ist „Impact-Washing“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. Impact-Washing bezeichnet irreführende Aussagen über positive Wirkung, ohne belastbare Daten, Kausalität, Grenzen oder Nebenwirkungen offenzulegen.
+
+Im Bereich Datenbegriff hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.
+
+Beispiele
+
+Wo der Begriff praktisch auftaucht
+
+In einer Debatte klärt der Begriff, ob über Fakten, Deutung, Wirkungspotenzial oder eingetretene Wirkung gesprochen wird.
+
+In einem Werkzeug markiert „Impact-Washing“, welche Eingaben, Quellen oder Grenzen für eine belastbare Einordnung nötig sind.
+
+In Datenbegriff hilft der Begriff, verkürzte Aussagen in eine überprüfbare Wirkungsfrage zu übersetzen.
+
+Mess- und Steuerungsbezug
+
+Wie daraus eine prüfbare Wirkungsfrage wird
+
+Prüfbar wird „Impact-Washing“, wenn klar ist, welcher Zustand betrachtet wird, welche Quelle herangezogen wird, welche Bilanzgrenze gilt und welche Veränderung tatsächlich gemeint ist.
+
+Für die Steuerung zählen deshalb nicht nur Definitionen, sondern Datenqualität, Vergleichsmaßstab, Zeitbezug, Nebenfolgen und die Rückkopplung in Entscheidung, Preis, Regel, Kapital, Kommunikation oder Verhalten.
+
+Querverweise
+
+Begriffe, die du mitdenken solltest
+
+Greenwashing · SDG-Washing · Wirkungspfad · Datenqualität · Folgencheck · Green Claims Directive · Responsible Marketing · Impact-Marketing
+
+Verknüpfungen
+
+### Quellenanker: WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff
+
+*Interne Quelle:* `begriffe/sdg-washing/index.html`
+
+SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden.
+
+Auf einen Blick
+
+SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden.
+
+Der Begriff gehört zum Bereich SDGs, Kommunikation & Missbrauchsschutz und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „SDG-Washing“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie. Er ist besonders anschlussfähig an SDGs, SDG+, Greenwashing.
+
+Definition
+
+Was bedeutet der Begriff?
+
+SDG-Washing bezeichnet die irreführende oder substanzarme Verwendung der Sustainable Development Goals. Es liegt vor, wenn Organisationen, Produkte, Projekte, Fonds, Kampagnen, politische Programme oder Berichte SDGs, SDG-Icons, Agenda-2030-Sprache oder globale Zielsymbolik nutzen, ohne belegbar zu zeigen, wie sie zu konkreten Unterzielen, Indikatoren und Wirkungen beitragen.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+SDG-Washing ist relevant, weil die WÖk die SDGs als global anschlussfähigen Referenzrahmen nutzt. Wenn SDGs inflationär oder dekorativ verwendet werden, verlieren sie Steuerungskraft. Aus einem Zielrahmen wird dann Markenästhetik.
+
+Verwendung
+
+Verwendung
+
+Aus WÖk-Sicht ist SDG-Kommunikation nur belastbar, wenn sie von Symbolik zu Steuerung übergeht: SDG wählen, Target benennen, Indikator oder WÖk-ID zuordnen, Wirkungsgegenstand definieren, Baseline, Messwert, Benchmark und Datenqualität zeigen, negative Wirkungen prüfen und Ergebnis in Entscheidungen rückkoppeln. SDG+ ist eine WÖk-Erweiterung, keine offizielle UN-Kategorie.
+
+Abgrenzung
+
+Abgrenzung
+
+SDG-Kommunikation ist legitim, wenn sie konkret und belegt ist.
+
+SDG-Mapping ist noch kein Wirkungsnachweis.
+
+Impact-Washing ist breiter; SDG-Washing ist eine spezielle Form mit Zielsymbolik.
+
+SDG-Bezug ist thematische Nähe; Wirkung braucht Daten.
+
+SDG+ ist legitim, wenn es als WÖk-Erweiterung benannt und nicht als UN-Standard ausgegeben wird.
+
+Vertiefung
+
+Vertiefte Begriffsstruktur
+
+Kurzdefinition / Hover
+
+SDG-Washing liegt vor, wenn SDGs oder SDG-Icons kommunikativ genutzt werden, ohne dass konkrete, belegbare und rückgekoppelte Beiträge zu den entsprechenden Zielen nachgewiesen werden.
+
+Auf einen Blick
+
+SDG-Washing ist mehr als die falsche Nutzung bunter SDG-Logos.
+
+Es liegt vor, wenn SDGs als Symbolik, Legitimation oder Dekoration ohne Ziel-, Indikator- und Wirkungsbeziehung verwendet werden.
+
+Ein SDG-Bezug braucht Target, Indikator, Datenquelle, Wirkungspfad, Datenqualität und Rückkopplung.
+
+Es verwechselt oft Themenbezug mit Wirkung.
+
+SDG-Washing beschädigt die Glaubwürdigkeit der Agenda 2030.
+
+Hauptdefinition
+
+SDG-Washing bezeichnet die irreführende oder substanzarme Verwendung der Sustainable Development Goals. Es liegt vor, wenn Organisationen, Produkte, Projekte, Fonds, Kampagnen, politische Programme oder Berichte SDGs, SDG-Icons, Agenda-2030-Sprache oder globale Zielsymbolik nutzen, ohne belegbar zu zeigen, wie sie zu konkreten Unterzielen, Indikatoren und Wirkungen beitragen.
+
+Wirkungsökonomische Relevanz
+
+SDG-Washing ist relevant, weil die WÖk die SDGs als global anschlussfähigen Referenzrahmen nutzt. Wenn SDGs inflationär oder dekorativ verwendet werden, verlieren sie Steuerungskraft. Aus einem Zielrahmen wird dann Markenästhetik.
+
+Wirkungsökonomische Sicht & Einordnung
+
+### Quellenanker: Glossarverweis
+
+*Interne Quelle:* `begriffe/wirkungswashing/index.html`
+
+Wirkungswashing im Glossar der Wirkungsökonomie.
+
+Auf einen Blick
+
+Wirkungswashing im Glossar der Wirkungsökonomie.
+
+Der Begriff gehört zum Bereich Glossarverweis und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Wirkungswashing“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Wirkungswashing im Glossar der Wirkungsökonomie.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Für die Wirkungsökonomie ist „Wirkungswashing“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. Wirkungswashing im Glossar der Wirkungsökonomie.
+
+Im Bereich Glossarverweis hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.
+
+Verwendung
+
+Verwendung
+
+Den Begriff „Wirkungswashing“ nutzen wir, wenn eine Aussage, ein Werkzeug, eine Quelle oder eine Entscheidung präzise eingeordnet werden muss: Wirkungswashing im Glossar der Wirkungsökonomie.
+
+Als Glossarverweis aus dem Bereich Glossarverweis ist er kein dekoratives Stichwort. Er soll helfen, die richtige Prüffrage zu stellen: Was verändert sich, für wen, auf welcher Datenbasis und mit welchen Nebenfolgen?
+
+Abgrenzung
+
+Abgrenzung
+
+Nicht als bloßes Schlagwort verwenden: „Wirkungswashing“ braucht Kontext, Bilanzgrenze und Prüffrage.
+
+Nicht mit einer fertigen Bewertung verwechseln: Der Begriff ordnet ein, er entscheidet nicht automatisch.
+
+Nicht von Datenqualität trennen: Als Glossarverweis bleibt er nur belastbar, wenn Quelle, Bedeutung und Grenze sichtbar sind.
+
+Wirkungsökonomische Sicht & Einordnung
+
+Wie der Begriff in der WÖk gelesen wird
+
+Für die Wirkungsökonomie ist „Wirkungswashing“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. Wirkungswashing im Glossar der Wirkungsökonomie.
+
+Im Bereich Glossarverweis hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.
+
+Beispiele
+
+Wo der Begriff praktisch auftaucht
+
+In einer Debatte klärt der Begriff, ob über Fakten, Deutung, Wirkungspotenzial oder eingetretene Wirkung gesprochen wird.
+
+In einem Werkzeug markiert „Wirkungswashing“, welche Eingaben, Quellen oder Grenzen für eine belastbare Einordnung nötig sind.
+
+In Glossarverweis hilft der Begriff, verkürzte Aussagen in eine überprüfbare Wirkungsfrage zu übersetzen.
+
+Mess- und Steuerungsbezug
+
+Wie daraus eine prüfbare Wirkungsfrage wird
+
+Prüfbar wird „Wirkungswashing“, wenn klar ist, welcher Zustand betrachtet wird, welche Quelle herangezogen wird, welche Bilanzgrenze gilt und welche Veränderung tatsächlich gemeint ist.
+
+Für die Steuerung zählen deshalb nicht nur Definitionen, sondern Datenqualität, Vergleichsmaßstab, Zeitbezug, Nebenfolgen und die Rückkopplung in Entscheidung, Preis, Regel, Kapital, Kommunikation oder Verhalten.
+
+### Quellenanker: Glossarverweis
+
+*Interne Quelle:* `begriffe/labelwashing/index.html`
+
+Labelwashing im Glossar der Wirkungsökonomie.
+
+Auf einen Blick
+
+Labelwashing im Glossar der Wirkungsökonomie.
+
+Der Begriff gehört zum Bereich Glossarverweis und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Labelwashing“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Labelwashing im Glossar der Wirkungsökonomie.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Für die Wirkungsökonomie ist „Labelwashing“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. Labelwashing im Glossar der Wirkungsökonomie.
+
+Im Bereich Glossarverweis hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.
+
+Verwendung
+
+Verwendung
+
+Den Begriff „Labelwashing“ nutzen wir, wenn eine Aussage, ein Werkzeug, eine Quelle oder eine Entscheidung präzise eingeordnet werden muss: Labelwashing im Glossar der Wirkungsökonomie.
+
+Als Glossarverweis aus dem Bereich Glossarverweis ist er kein dekoratives Stichwort. Er soll helfen, die richtige Prüffrage zu stellen: Was verändert sich, für wen, auf welcher Datenbasis und mit welchen Nebenfolgen?
+
+Abgrenzung
+
+Abgrenzung
+
+Nicht als bloßes Schlagwort verwenden: „Labelwashing“ braucht Kontext, Bilanzgrenze und Prüffrage.
+
+Nicht mit einer fertigen Bewertung verwechseln: Der Begriff ordnet ein, er entscheidet nicht automatisch.
+
+Nicht von Datenqualität trennen: Als Glossarverweis bleibt er nur belastbar, wenn Quelle, Bedeutung und Grenze sichtbar sind.
+
+Wirkungsökonomische Sicht & Einordnung
+
+Wie der Begriff in der WÖk gelesen wird
+
+Für die Wirkungsökonomie ist „Labelwashing“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. Labelwashing im Glossar der Wirkungsökonomie.
+
+Im Bereich Glossarverweis hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.
+
+Beispiele
+
+Wo der Begriff praktisch auftaucht
+
+In einer Debatte klärt der Begriff, ob über Fakten, Deutung, Wirkungspotenzial oder eingetretene Wirkung gesprochen wird.
+
+In einem Werkzeug markiert „Labelwashing“, welche Eingaben, Quellen oder Grenzen für eine belastbare Einordnung nötig sind.
+
+In Glossarverweis hilft der Begriff, verkürzte Aussagen in eine überprüfbare Wirkungsfrage zu übersetzen.
+
+Mess- und Steuerungsbezug
+
+Wie daraus eine prüfbare Wirkungsfrage wird
+
+Prüfbar wird „Labelwashing“, wenn klar ist, welcher Zustand betrachtet wird, welche Quelle herangezogen wird, welche Bilanzgrenze gilt und welche Veränderung tatsächlich gemeint ist.
+
+Für die Steuerung zählen deshalb nicht nur Definitionen, sondern Datenqualität, Vergleichsmaßstab, Zeitbezug, Nebenfolgen und die Rückkopplung in Entscheidung, Preis, Regel, Kapital, Kommunikation oder Verhalten.
+
+### Quellenanker: WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff
+
+*Interne Quelle:* `begriffe/purpose-washing/index.html`
+
+Purpose-Washing liegt vor, wenn ein Unternehmen einen gesellschaftlichen Zweck behauptet, dieser aber nicht in Geschäftsmodell, Produkte, Lieferketten, Kapital, Governance und Entscheidungen zurückwirkt.
+
+Auf einen Blick
+
+Purpose-Washing liegt vor, wenn ein Unternehmen einen gesellschaftlichen Zweck behauptet, dieser aber nicht in Geschäftsmodell, Produkte, Lieferketten, Kapital, Governance und Entscheidungen zurückwirkt.
+
+Der Begriff gehört zum Bereich Marketing, Unternehmenszweck & Missbrauchsschutz und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Purpose-Washing“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie. Er ist besonders anschlussfähig an Responsible Marketing, Wirkungskommunikation, Impact-Washing.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Purpose-Washing bezeichnet die irreführende oder substanzarme Darstellung eines Unternehmenszwecks. Es liegt vor, wenn ein Unternehmen behauptet, für Gesellschaft, Nachhaltigkeit, Menschen, Planet, Demokratie, Zukunft, Teilhabe, Gesundheit oder Transformation einzustehen, diese Behauptung aber nicht im Kern des Unternehmens wirksam wird.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Purpose-Washing ist relevant, weil Sinn- und Verantwortungsversprechen Kund:innen, Mitarbeitende, Investor:innen und Öffentlichkeit binden können. Wenn Purpose die Transformation ersetzt, entstehen Scheinleistung, Vertrauensverlust und unfaire Reputationsvorteile gegenüber Unternehmen mit echter Wirkung.
+
+Verwendung
+
+Verwendung
+
+Die WÖk prüft Purpose nicht an schönen Worten, sondern an Rückkopplung. Ein glaubwürdiger Purpose muss Wirkungsempfänger, Wirkungsraum, Produkte, WÖk-IDs, KII, Scorecards, rote Linien, Investitionen, Fortschrittsprüfung und Korrekturfolgen benennen. Purpose ist eine Wirkungsthese und muss operationalisiert werden.
+
+Abgrenzung
+
+Abgrenzung
+
+Purpose ist legitim, wenn er wirksam verankert ist.
+
+Greenwashing betrifft ökologische Irreführung; Purpose-Washing betrifft Sinn- und Zweckbehauptung.
+
+Impact-Washing behauptet Wirkung ohne Beleg; Purpose-Washing behauptet Sinn ohne Geschäftsmodellrückkopplung.
+
+Fehlerhafte Transformation ist nicht automatisch Washing, wenn Daten, Korrektur und Pfad ehrlich sind.
+
+Vision ist Zukunftsbild; Purpose muss in Gegenwartsentscheidungen wirken.
+
+Vertiefung
+
+Vertiefte Begriffsstruktur
+
+Kurzdefinition / Hover
+
+Purpose-Washing liegt vor, wenn ein Unternehmen einen gesellschaftlichen Zweck behauptet, dieser aber nicht in Geschäftsmodell, Produkte, Lieferketten, Kapital, Governance und Entscheidungen zurückwirkt.
+
+Auf einen Blick
+
+Purpose-Washing ist die Entkopplung von Zweckbehauptung und tatsächlicher Unternehmenswirkung.
+
+Es entsteht, wenn Purpose als Markenversprechen genutzt wird, ohne Geschäftsmodell, Produkte oder Anreizsysteme zu verändern.
+
+Purpose-Washing ist breiter als Greenwashing und betrifft Sinn, Verantwortung, Gemeinwohl, Transformation, Teilhabe oder Demokratie.
+
+Purpose kann keine Wirkungsgrenzen kompensieren.
+
+Purpose-Washing gefährdet Vertrauen und macht echte Wirkung unglaubwürdig.
+
+Hauptdefinition
+
+Purpose-Washing bezeichnet die irreführende oder substanzarme Darstellung eines Unternehmenszwecks. Es liegt vor, wenn ein Unternehmen behauptet, für Gesellschaft, Nachhaltigkeit, Menschen, Planet, Demokratie, Zukunft, Teilhabe, Gesundheit oder Transformation einzustehen, diese Behauptung aber nicht im Kern des Unternehmens wirksam wird.
+
+Wirkungsökonomische Relevanz
+
+Purpose-Washing ist relevant, weil Sinn- und Verantwortungsversprechen Kund:innen, Mitarbeitende, Investor:innen und Öffentlichkeit binden können. Wenn Purpose die Transformation ersetzt, entstehen Scheinleistung, Vertrauensverlust und unfaire Reputationsvorteile gegenüber Unternehmen mit echter Wirkung.
+
+Wirkungsökonomische Sicht & Einordnung
+
+### Quellenanker: WÖk-Prägungsbegriff / Schutzbegriff
+
+*Interne Quelle:* `begriffe/wirkungswahrheit/index.html`
+
+Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.
+
+Auf einen Blick
+
+Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.
+
+Der Begriff gehört zum Bereich Wirkungssprache & Missbrauchsschutz und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Wirkungswahrheit“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie. Er ist besonders anschlussfähig an Wirkungsblindheit, Wirkungsbewertung, Wirkungslenkung.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Wirkungswahrheit ist der Anspruch, dass Signale über Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, Politik oder Medien ihre relevanten Folgen nachvollziehbar abbilden. Der Begriff meint kein Wahrheitsmonopol, sondern Wirkungsnähe: Datenklarheit, Quellenklarheit, Systemgrenzen, Unsicherheit und überprüfbare Bewertung.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Wirkungswahrheit ist der Schutzbegriff gegen Greenwashing, Impact-Washing, SDG-Washing und Wirkungssimulation. Sie hält Märkte, Demokratie und Vertrauen korrigierbar.
+
+Verwendung
+
+Verwendung
+
+Der Begriff ist geeignet, wenn sichtbare Signale Wirkung behaupten, verdecken oder verzerren können.
+
+Abgrenzung
+
+Abgrenzung
+
+Faktenwahrheit: prüft Aussagen; Wirkungswahrheit prüft sichtbare oder verdeckte Folgen.
+
+Wahrheitsmonopol: ausdrücklich ausgeschlossen.
+
+Transparenz allein: reicht nicht, wenn Informationen wirkungsirrelevant oder unverständlich bleiben.
+
+Wirkungsbewertung: ordnet Wirkung ein; Wirkungswahrheit prüft Signalnähe.
+
+Green Claims: können berechtigt sein, müssen aber Kontext und Evidenz zeigen.
+
+absolute Wahrheit
+
+Meinungskontrolle
+
+Vertiefung
+
+Vertiefte Begriffsstruktur
+
+Kurzdefinition / Hover
+
+Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.
+
+Auf einen Blick
+
+- kein Wahrheitsmonopol - meint Wirkungsnähe, Datenklarheit und Transparenz über Folgen - Gegenbegriff zu Greenwashing, Impact-Washing und SDG-Washing - braucht Datenqualität, Quellen, Systemgrenzen und Prüfung - macht freie Entscheidungen informierter - schützt Marktvertrauen und demokratische Korrektur - trennt Wirkung, Potenzial und Risiko
+
+Hauptdefinition
+
+Wirkungswahrheit fragt, ob ein Preis, Bericht, Claim, Rating, Geschäftsmodell, Kapitalfluss oder politisches Versprechen die relevanten Folgen sichtbar macht oder verdeckt. Moderne Märkte, Medien und Politik funktionieren über Signale: Preise, Labels, Berichte, Ratings, Reichweite und politische Botschaften. Wenn diese Signale Folgewirkungen verschweigen oder verzerren, entsteht Wirkungsblindheit. Wenn sie Wirkungen transparent und prüfbar sichtbar machen, entsteht Wirkungswahrheit.
+
+Wirkungsökonomische Relevanz
+
+Freie Entscheidungen sind nur tragfähig, wenn Folgen nicht systematisch verborgen bleiben. Konsument:innen, Investor:innen, öffentliche Beschaffung, Politik und Medien brauchen wirkungsnahe Signale, um Verantwortung, Risiko, Preis und Nutzen einordnen zu können.
+
+Wirkungsökonomische Sicht & Einordnung
+
+Die WÖk versteht Wahrheit nicht als Besitz, sondern als Infrastruktur. Wirkungswahrheit entsteht durch transparente Datenquellen, nachvollziehbare Systemgrenzen, offene Methoden, unabhängige Prüfung, Unsicherheitskennzeichnung, Rechtsschutz, Korrekturmöglichkeiten und öffentliche Kontrolle.
+
+Abgrenzung: Nicht verwechseln mit
+
+### Quellenanker: Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation
+
+*Interne Quelle:* `referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html`
+
+Je wichtiger Wirkung wird, desto größer wird der Anreiz, Wirkung zu behaupten, zu inszenieren oder zu simulieren. Das ist kein Randproblem der Wirkungsökonomie. Es ist ihr zentraler methodischer Stresstest.
+
+Denn jede Steuerungsgröße erzeugt Anpassungsverhalten. Wenn Kapital zählt, wird Kapital optimiert. Wenn Gewinn zählt, wird Gewinn optimiert. Wenn Reichweite zählt, wird Reichweite optimiert. Wenn Wirkung zählt, wird auch Wirkung optimiert. Das kann positiv sein, wenn reale Zustände verbessert werden. Es kann aber destruktiv werden, wenn Akteure lernen, nicht die Wirkung selbst zu verbessern, sondern die Darstellung von Wirkung.
+
+Dann entsteht Wirkungssimulation.
+
+Wirkungssimulation bedeutet: Eine Handlung, Organisation, Investition, Kommunikation oder politische Maßnahme erzeugt den Anschein positiver Wirkung, ohne die zugrunde liegenden Zustände entsprechend zu verändern. Sie sieht nach Wirkung aus. Sie spricht die Sprache der Wirkung. Sie nutzt Indikatoren, Berichte, Labels, Zielbezüge, Kampagnen, Bilder, Versprechen oder Nachhaltigkeitsrhetorik. Aber sie erzeugt keine ausreichende reale Zustandsverbesserung - oder sie verdeckt negative Wirkungen an anderer Stelle.
+
+Die Wirkungsökonomie muss diese Gefahr offen benennen. Wenn sie Wirkung zur zentralen Steuerungsgröße macht, muss sie verhindern, dass Wirkung selbst zur neuen Oberfläche wird.
+
+Greenwashing, ESG-Theater, SDG-Washing, Impact-Washing, symbolische Politik, KPI-Gaming, moralische Selbsttäuschung und performative Verantwortung sind deshalb keine Nebenphänomene. Sie sind die Schattenseite jeder Ordnung, die Wirkung sichtbar macht. Je stärker Wirkung Anerkennung, Kapitalzugang, Marktposition, politische Legitimation oder Steuerentlastung beeinflusst, desto stärker wächst der Anreiz, Wirkung zu simulieren.
+
+Dieses Kapitel erklärt, warum das geschieht, welche Formen Wirkungssimulation annimmt und wie die Wirkungsökonomie sich dagegen schützen muss.
+
+### 104.1 Warum jede Kennzahl manipulierbar wird
+
+Sobald eine Kennzahl zur Steuerungsgröße wird, verändert sich das Verhalten derer, die an ihr gemessen werden. Das ist keine Besonderheit von Nachhaltigkeit. Es ist ein allgemeines Steuerungsproblem.
+
+Goodhart’s Law beschreibt diesen Zusammenhang zugespitzt: Wenn ein Maß zur Zielgröße wird, verliert es leicht seine Qualität als Maß. Campbell’s Law formuliert ähnlich, dass quantitative Indikatoren, die für soziale Entscheidungen verwendet werden, anfällig für Verfälschung und Verhaltensverzerrung werden.
+
+Das gilt für Schulnoten, Kriminalstatistiken, Krankenhauskennzahlen, Verkaufsziele, Produktivitätsvorgaben, Haushaltsmittel, Forschungsmetriken, Reichweitenzahlen und Nachhaltigkeitsindikatoren. Sobald Akteure wissen, welche Größe belohnt wird, können sie versuchen, genau diese Größe zu optimieren - unabhängig davon, ob sich die dahinterliegende Wirklichkeit verbessert.
+
+In der alten Ökonomie geschieht das ständig. Unternehmen können Gewinne verbessern, indem sie Kosten externalisieren. Plattformen können Reichweite steigern, indem sie Erregung verstärken. Verwaltungen können Mittelabfluss als Erfolg darstellen, obwohl die Wirkung unklar bleibt. Politik kann Maßnahmen zählen, ohne Zustände zu verbessern. Unternehmen können Nachhaltigkeitsberichte ausbauen, ohne ihre Steuerungslogik zu verändern.
+
+Die Wirkungsökonomie darf deshalb nicht glauben, sie sei gegen Manipulation immun, nur weil ihr Maßstab besser ist. Ein besserer Maßstab kann ebenfalls pervertiert werden, wenn er falsch operationalisiert wird.
+
+Je wertvoller Wirkung wird, desto wertvoller wird die Simulation von Wirkung.
+
+### 104.2 Wirkungssimulation als neue Form der Scheinleistung
+
+Wirkungssimulation ist eine Form von Scheinleistung. Sie erzeugt sichtbare Aktivität, Sprache, Berichte, Kampagnen oder Kennzahlen, aber keine entsprechende positive Zustandsveränderung.
+
+Sie unterscheidet sich von Irrtum. Nicht jede falsche Wirkungsannahme ist Simulation. Komplexe Systeme sind unsicher. Eine Maßnahme kann gut begründet sein und trotzdem anders wirken als erwartet. Ein Unternehmen kann ehrliche Ziele verfolgen und methodische Fehler machen. Eine Politik kann ernsthaft präventiv handeln wollen und Nebenfolgen unterschätzen.
+
+Wirkungssimulation beginnt dort, wo die Darstellung positiver Wirkung wichtiger wird als die reale Wirkung selbst. Sie beginnt, wenn ein Akteur ein Nachhaltigkeitsbild erzeugt, aber die zugrunde liegende Wirkung nicht ausreichend prüft. Sie beginnt, wenn einzelne positive Effekte hervorgehoben und zentrale negative Wirkungen verschwiegen werden. Sie beginnt, wenn Indikatoren so gewählt werden, dass sie das gewünschte Bild erzeugen. Sie beginnt, wenn Wirkungssprache zur Reputationsstrategie wird.
+
+Wirkungssimulation kann absichtlich sein. Dann ist sie Täuschung.
+
+Sie kann aber auch halbabsichtlich sein. Dann entsteht moralische Selbsttäuschung: Akteure glauben an ihre Wirkung, weil sie nur die Indikatoren sehen, die ihre Erzählung bestätigen. Sie verwechseln Absicht mit Wirkung, Aufwand mit Wirkung, Bericht mit Wirkung, Reichweite mit Wirkung oder Zielbezug mit Wirkung.
+
+Gerade diese zweite Form ist gefährlich, weil sie gesellschaftlich weit verbreitet ist. Viele Organisationen wollen gut wirken. Aber sie prüfen nicht streng genug, ob sie tatsächlich wirken.
+
+### 104.3 Greenwashing und die Illusion ökologischer Wirkung
+
+Greenwashing ist die bekannteste Form der Wirkungssimulation. Es entsteht, wenn ökologische Verantwortung behauptet, übertrieben, selektiv dargestellt oder irreführend kommuniziert wird.
+
+Die Europäische Kommission begründet ihre Green-Claims-Initiative ausdrücklich mit der Notwendigkeit, Greenwashing zu bekämpfen und Verbraucherinnen und Verbraucher vor irreführenden Umweltangaben zu schützen. Auf ihrer Green-Claims-Seite nennt sie unter anderem, dass 53 Prozent der geprüften Umweltangaben vage, irreführende oder unbegründete Informationen enthielten, 40 Prozent keine stützenden Belege hatten und die Vielzahl von Nachhaltigkeitslabels sehr unterschiedliche Transparenzniveaus aufweist.
+
+Die EU-Richtlinie 2024/825 verschärft zudem den Verbraucherschutz gegen unfaire Praktiken im Kontext grüner Transformation. Sie adressiert unter anderem Nachhaltigkeitslabel ohne Zertifizierungssystem oder öffentliche Grundlage, allgemeine Umweltbehauptungen ohne nachweisbare anerkannte hervorragende Umweltleistung, Umweltbehauptungen über das gesamte Produkt oder Unternehmen, die sich tatsächlich nur auf einen Teilaspekt beziehen, sowie Behauptungen klimaneutraler, reduzierter oder positiver Treibhausgaswirkung, wenn diese auf Kompensation beruhen.
+
+Diese Regulierung zeigt, dass Greenwashing kein bloßes Kommunikationsproblem ist. Es ist ein Steuerungsproblem. Wenn ein Produkt grün erscheint, ohne tatsächlich entsprechend zu wirken, werden Verbraucherentscheidungen verzerrt. Kapital kann falsch fließen. Verantwortliche Unternehmen verlieren Wettbewerbsvorteile. Destruktive Wirkung bleibt verdeckt. Vertrauen sinkt.
+
+Für die Wirkungsökonomie folgt daraus: Umweltwirkung darf nicht aus Sprache abgeleitet werden. Sie muss aus Daten, Kontext, Lebenszyklus, Lieferkette, Nutzung, Entsorgung, Systemwirkung und Nichtkompensation abgeleitet werden.
+
+Ein Produkt ist nicht nachhaltig, weil es so genannt wird. Es ist nur dann wirkungspositiv, wenn seine Zustandsveränderungen belastbar nachvollziehbar sind.
+
+### 104.4 ESG-Theater und Nachhaltigkeit als Bühnenbild
+
+ESG-Theater entsteht, wenn Nachhaltigkeit institutionell sichtbar wird, aber nicht tief genug in Entscheidungen zurückwirkt.
+
+Das Unternehmen berichtet. Das Portfolio klassifiziert. Die Bank fragt Daten ab. Das Management formuliert Ziele. Die Webseite zeigt SDG-Symbole. Der Bericht enthält Klimakapitel, Diversity-Ziele, Governance-Kennzahlen und Lieferkettenversprechen. Alles sieht nach Verantwortung aus.
+
+Aber die Kernfrage bleibt offen: Was verändert sich dadurch tatsächlich?
+
+ESG-Theater ist nicht automatisch Betrug. Oft ist es eine Zwischenform. Daten werden erhoben, aber nicht in Preise, Steuern, Kapitalzugang, Beschaffung, Managementboni oder Produktentscheidungen zurückgeführt. Nachhaltigkeit wird sichtbar, aber nicht steuernd. Die Organisation erfüllt Erwartungen, ohne ihre innere Logik ausreichend zu verändern.
+
+Die Europäische Wertpapier- und Marktaufsichtsbehörde ESMA hat Greenwashing im Finanzsektor als Aufsichtsthema behandelt. Ihr Final Report on Greenwashing von 2024 bewertet die Rolle der Aufsicht bei der Minderung von Greenwashing-Risiken und beschreibt eine schrittweise Verbesserung der Aufsichtspraxis in den kommenden Jahren.
+
+Dass Aufsichtsbehörden Greenwashing im Finanzmarkt ausdrücklich adressieren, zeigt: Nachhaltigkeitssprache ist wirtschaftlich relevant geworden. Wenn Fonds, Banken, Versicherungen, Ratings oder Finanzprodukte mit Nachhaltigkeit werben, beeinflusst dies Kapitalflüsse. Damit entstehen neue Täuschungsanreize.
+
+Die Wirkungsökonomie muss deshalb zwischen ESG-Sichtbarkeit und Wirkungsrückkopplung unterscheiden. Ein ESG-Bericht kann notwendige Daten liefern. Aber er ist noch kein Beweis positiver Wirkung. Ein ESG-Rating kann Hinweise geben. Aber es ersetzt keine Wirkungsanalyse. Ein nachhaltiger Fondsname kann Kapital lenken. Aber er darf keine Wirkung behaupten, die nicht belegt ist.
+
+ESG-Theater endet erst dort, wo Nachhaltigkeitsdaten reale Entscheidungen verändern und negative Wirkungen nicht durch positive Einzelbilder verdeckt werden.
+
+### Quellenanker: Kapitel 105 - Freiheit, Markt und der Vorwurf der Planwirtschaft
+
+*Interne Quelle:* `referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/index.html`
+
+Ein weiterer zentraler Gegenframe lautet: Wenn Wirkung in Preise, Steuern, Kapitalzugang, öffentliche Beschaffung, Produktbewertung, Haushalte und Unternehmensführung zurückgeführt wird, entstehe Planwirtschaft. Der Staat, so die Befürchtung, entscheide dann nicht mehr nur über Regeln, sondern über richtige und falsche Produkte, richtige und falsche Lebensweisen, richtige und falsche Unternehmen, richtige und falsche Investitionen. Aus Wirkung werde Lenkung. Aus Lenkung werde Kontrolle. Aus Kontrolle werde Plan.
+
+Dieser Einwand muss ernst genommen werden. Nicht, weil er die Wirkungsökonomie richtig beschreibt, sondern weil er ein reales historisches und politisches Risiko berührt. Gesellschaften, die wirtschaftliche Entscheidungen vollständig zentralisieren, verlieren dezentrales Wissen, Innovationskraft, Anpassungsfähigkeit und Freiheit. Eine Ordnung, die Menschen, Unternehmen und Märkte nur noch als Vollzugsorgane politischer Zielvorgaben behandelt, beschädigt genau jene offenen Suchprozesse, die moderne Gesellschaften brauchen.
+
+Die Wirkungsökonomie ist deshalb keine Planwirtschaft. Sie ist auch keine verkappte Planwirtschaft. Sie ersetzt nicht Marktentscheidungen durch zentrale Produktionsentscheidungen. Sie ersetzt nicht Eigentum durch Staatszuteilung. Sie ersetzt nicht Wettbewerb durch Behördenplanung. Sie ersetzt nicht dezentrale Preisbildung durch vollständige staatliche Mengensteuerung.
+
+Sie verändert den Informationsgehalt der Signale, nach denen Märkte, Unternehmen, Kapital, Konsumentinnen, Konsumenten und Staat handeln.
+
+Das ist ein fundamentaler Unterschied.
+
+Planwirtschaft sagt: Eine zentrale Instanz entscheidet, was produziert, verteilt und verbraucht werden soll.
+
+Wirkungsökonomie sagt: Dezentrale Entscheidungen bleiben erhalten, aber ihre Rückwirkungen auf Mensch, Planet und Demokratie dürfen nicht länger unsichtbar bleiben.
+
+Planwirtschaft ersetzt Marktkoordination.
+
+Wirkungsökonomie macht Marktkoordination wahrheitsfähiger.
+
+### 105.1 Warum der Planwirtschaftsvorwurf naheliegt
+
+Der Planwirtschaftsvorwurf entsteht, weil die Wirkungsökonomie tatsächlich in Anreizstrukturen eingreift. Sie bleibt nicht bei Appellen. Sie sagt nicht nur: Unternehmen sollen verantwortlicher handeln. Sie sagt: Wirkung muss in Preise, Steuern, Kapitalzugang, Versicherbarkeit, Beschaffung, Förderung, Haftung und öffentliche Haushalte zurückwirken.
+
+Das ist mehr als klassische Nachhaltigkeitskommunikation. Es ist echte Steuerung.
+
+Und genau deshalb wird der Einwand verständlich. Sobald ein System negative Wirkungen verteuert und positive Wirkungen entlastet, entsteht der Eindruck, der Staat oder eine Institution bestimme, was gut und schlecht sei. Sobald Scorecards, WÖk-IDs, Benchmarks oder Wirkungssteuern ins Spiel kommen, entsteht die Sorge, ein bürokratischer Apparat werde wirtschaftliche Freiheit ersetzen. Sobald Produkte nach Wirkung differenziert werden, entsteht die Frage, ob Konsumentscheidungen noch frei sind.
+
+Diese Sorge darf nicht durch bloße Beteuerung beantwortet werden. Eine schlecht gebaute Wirkungsökonomie könnte tatsächlich planwirtschaftliche Züge entwickeln. Sie könnte zu starr werden. Sie könnte zentrale Instanzen überdehnen. Sie könnte Innovation blockieren. Sie könnte kleine Unternehmen überlasten. Sie könnte Indikatoren politisch missbrauchen. Sie könnte Preise manipulieren, statt Wirklichkeit besser abzubilden.
+
+Darum muss die Abgrenzung präzise sein.
+
+Die Wirkungsökonomie darf nicht zur zentralen Ergebnisplanung werden. Sie muss eine Ordnung verbesserter Rückkopplung bleiben.
+
+### 105.2 Was Planwirtschaft ist - und was nicht
+
+Planwirtschaft bedeutet nicht schon, dass der Staat Regeln setzt. Jede Marktwirtschaft braucht Regeln: Eigentumsrechte, Vertragsrecht, Wettbewerbsrecht, Haftungsrecht, Steuerrecht, Verbraucherschutz, Arbeitsschutz, Umweltrecht, Finanzaufsicht und öffentliche Infrastruktur. Ohne Regeln gibt es keinen freien Markt, sondern Macht, Willkür, Monopol, Betrug oder Externalisierung.
+
+Planwirtschaft beginnt dort, wo eine zentrale Instanz wirtschaftliche Ergebnisse im Kern vorgibt: Mengen, Produktion, Verteilung, Preise, Investitionen, Eigentumszuordnung und Ressourcenallokation werden nicht mehr primär dezentral durch Markt, Wettbewerb, Nachfrage, Innovation und unternehmerische Entscheidung koordiniert, sondern politisch-administrativ festgelegt.
+
+Die Wirkungsökonomie verfolgt eine andere Logik.
+
+Sie sagt nicht: Der Staat entscheidet, welches Produkt in welcher Menge produziert wird.
+
+Sie sagt: Ein Produkt darf seine relevanten Schäden nicht im Preis verstecken.
+
+Sie sagt nicht: Unternehmen dürfen nur staatlich geplante Geschäftsmodelle verfolgen.
+
+Sie sagt: Geschäftsmodelle müssen ihre Wirkung auf Mensch, Planet und Demokratie sichtbar machen und die daraus folgenden Rückwirkungen tragen.
+
+Sie sagt nicht: Kapital darf nur noch politisch zugeteilt werden.
+
+Sie sagt: Kapital soll Wirkung nicht blind finanzieren.
+
+Sie sagt nicht: Bürgerinnen und Bürger verlieren Konsumfreiheit.
+
+Sie sagt: Konsumentscheidungen sollen nicht auf falschen Preisen, verdeckten Lieferketten und manipulierten Informationen beruhen.
+
+Damit bleibt die Entscheidungsstruktur dezentral. Aber die Signale werden ehrlicher.
+
+Das ist Ordnungspolitik, nicht Planwirtschaft.
+
+### 105.3 Märkte bleiben Suchprozesse
+
+Die Wirkungsökonomie braucht Märkte. Sie braucht Wettbewerb, Unternehmertum, Innovation, dezentrale Informationen, Preise, Risikoübernahme, Experiment, Scheitern, Lernen und Vielfalt von Lösungen.
+
+Friedrich Hayek hat die Bedeutung verteilten Wissens betont: Keine zentrale Instanz besitzt alle Informationen, die in einer Gesellschaft verstreut in Menschen, Orten, Unternehmen, Bedürfnissen, Technologien und Situationen vorhanden sind. Diese Einsicht bleibt wichtig. Die Wirkungsökonomie widerspricht ihr nicht. Sie baut auf ihr auf.
+
+Denn Wirkung lässt sich in komplexen Gesellschaften nicht zentral vollständig planen. Niemand kann von oben wissen, welche konkrete Produktinnovation, welche lokale Lösung, welche Unternehmensstrategie, welche Pflegeform, welche Bildungsarchitektur, welche Energielösung, welche Mobilitätsform oder welche Kreislauftechnologie in jedem Kontext am besten wirkt.
+
+Gerade deshalb müssen Märkte als Suchprozesse erhalten bleiben. Sie finden Lösungen, die keine zentrale Stelle vollständig vorwegnehmen kann. Wettbewerb kann Innovation ermöglichen. Preise können Knappheiten signalisieren. Unternehmen können experimentieren. Kundinnen und Kunden können wählen. Kapital kann Risiken eingehen. Regionen können unterschiedliche Wege entwickeln.
+
+Aber Märkte suchen nur so gut, wie ihre Signale sind.
+
+Wenn Preise CO2, Wasserstress, Ausbeutung, Gesundheitsfolgen, Biodiversitätsverlust, Wohnungsverdrängung oder demokratische Schäden ausblenden, dann sucht der Markt nicht nach der besten Lösung. Er sucht nach der besten Lösung innerhalb einer verzerrten Wirklichkeit. Dann kann das Schädlichere billiger, das Verantwortungsvollere teurer und das Kurzfristige rentabler erscheinen.
+
+### Quellenanker: Inhalt
+
+*Interne Quelle:* `dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html`
+
+Dossier · Erweiterte öffentliche Dossierfassung v2.0 · Stand 15. Juni 2026
+
+Warum die nächste Entwicklungsstufe nicht nur fragt, was wir wissen - sondern was wir bewirken.
+
+Kernaussage
+
+Sichtbarkeit ist notwendig, aber nicht ausreichend. Die Wirkungsgesellschaft beginnt dort, wo Wissen, Labels, Zertifikate, Scores, Berichte und Faktenchecks in Bewertung, Rückkopplung und positive Netto-Wirkung übersetzt werden.
+
+Schutzlinie
+
+Dossier, keine automatische Steuerung
+
+Das Dossier beschreibt einen konzeptionellen Lern- und Ordnungsrahmen. Die Wirkungsökonomie bewertet Maßnahmen, Strukturen und Wirkungsräume, nicht Menschen. Sie ist keine Planwirtschaft, keine Sprachpolizei und kein Social-Credit-System.
+
+Versionshinweis
+
+Stand: 15. Juni 2026. Öffentliche Downloadfassung: WÖK-CI-PDF.
+
+Executive Summary #
+
+Dieses Dossier beschreibt den Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft. Das Dossier verbindet die bisherige Argumentation mit einer entscheidenden Zwischenebene: Labels, Zertifikate, Scores, Faktenchecks und Folgenchecks.
+
+Die Leitthese bleibt: Die Wissensgesellschaft war ein historischer Fortschritt. Sie hat Wissen erzeugt, verteilt, digitalisiert und wirtschaftlich nutzbar gemacht. Aber Wissen allein verändert noch keine Welt. Es verändert erst dann etwas, wenn es in Entscheidungen, Preise, Steuern, Kapital, öffentliche Beschaffung, Plattformlogiken, Medienverantwortung, Bildungsziele und staatliche Haushalte zurückwirkt.
+
+Diese Perspektive macht die These greifbarer. Denn viele heutige Nachhaltigkeitsinstrumente sind im Grunde Sichtbarkeitsinstrumente: Bio-Label, Fairtrade, EU Ecolabel, Nutri-Score, ESG-Ratings, ISO-Zertifizierungen, Nachhaltigkeitsberichte, Faktenchecks oder Democracy-Scores. Sie machen Informationen sichtbar, vereinfachen Komplexität, schaffen Orientierung und können Vertrauen stiften. Das ist wichtig. Aber es ist noch keine vollständige Wirkungsökonomie.
+
+Der Unterschied ist einfach: Ein Label zeigt etwas. Eine Zertifizierung bestätigt etwas. Ein Score verdichtet etwas. Ein Faktencheck prüft etwas. Ein Folgencheck öffnet den Blick auf Wirkpfade. Aber erst eine Wirkungsrückkopplung verändert die Bedingungen künftigen Handelns. Erst dann wird aus Wissen Steuerung.
+
+Deshalb nutzt dieses Dossier eine Leitformel: Sichtbarkeit ist notwendig, aber nicht ausreichend. Die Wirkungsgesellschaft beginnt dort, wo sichtbare, bewertete Wirkung in reale Anreize zurückgeführt wird.
+
+Kernbild Die Wissensgesellschaft baut das Thermometer. Labels, Scores und Zertifikate kleben eine verständliche Anzeige auf das Thermometer. Die Wirkungsgesellschaft baut den demokratischen Thermostat: Sie sorgt dafür, dass die Messung Folgen für Preise, Steuern, Kapital, Beschaffung, Reichweite, Regulierung und Entscheidungen hat.
+
+Diese Perspektive ist kein Zusatzkapitel. Sie schärft das ganze Dossier. Denn sie zeigt, warum die heutige Transformation bereits begonnen hat, aber oft auf halbem Weg stehen bleibt. Wir haben immer mehr Wissen über Wirkung. Wir haben immer mehr Zeichen für Wirkung. Aber wir haben noch zu wenig Rückkopplung von Wirkung.
+
+Zentrale Vertiefungen sind: Greenwashing und Labelinflation, ESG-Theater, digitale Produktpässe, Plattform- und Reichweitenlogiken, Verbraucherüberforderung, öffentliche Beschaffung, Kapitalzugang, Datenqualität, Wirkungsrat und demokratischer Missbrauchsschutz. Sie machen sichtbar, wie Sichtbarkeit, Bewertung und Rückkopplung zusammengehören.
+
+1. Warum Sichtbarkeit allein nicht reicht #
+
+Die erste Fassung des Dossiers beschrieb den großen Bogen: von der Wissensgesellschaft zur Wirkungsgesellschaft. Sie zeigte, warum Wissen allein nicht reicht, wenn es nicht in reale Entscheidungen zurückwirkt. Diese These bleibt richtig. Aber sie brauchte eine genauere Zwischenstufe.
+
+Denn in der Gegenwart sehen wir nicht einfach nur „Wissen“ auf der einen und „ Wirkung “ auf der anderen Seite. Dazwischen steht eine ganze Landschaft aus Zeichen, Nachweisen, Labels, Zertifikaten, Ratings, Scores, Berichten, Faktenchecks und Transparenzpflichten. Sie alle sagen: Wir haben etwas erkannt. Wir können etwas einordnen. Wir können eine komplexe Wirklichkeit auf eine sichtbare Form bringen.
+
+Das ist ein Fortschritt. Ein Bio-Label ist besser als völlige Intransparenz. Ein Fairtrade-Siegel ist besser als eine unsichtbare Lieferkette. Ein ISO-Umweltmanagementsystem ist besser als gar kein systematischer Umgang mit Umweltfragen. Ein Nutri-Score ist besser als eine Nährwerttabelle, die viele Menschen im Alltag nicht lesen. Ein Faktencheck ist besser als eine Lüge, die unwidersprochen bleibt. Ein Folgencheck ist besser als eine Debatte, die nur fragt: „Stimmt der Satz?“, aber nicht: „Was macht diese Sprache mit Vertrauen, Zugehörigkeit und demokratischem Streit?“
+
+Aber genau hier liegt der Punkt: Diese Instrumente machen Wissen sichtbar. Sie sind noch nicht automatisch Wirkungsgesellschaft. Sie sind Markierungen auf dem Weg dorthin.
+
+Alltagsbild Ein Schild mit der Aufschrift „Achtung, rutschig“ ist wichtig. Aber es trocknet den Boden nicht. Es verändert Verhalten vielleicht. Aber wenn der Boden jeden Tag nass bleibt, braucht es mehr als ein Schild: andere Reinigung, andere Verantwortlichkeit, andere Haftung, andere Planung. Genau so verhält es sich mit Labels und Scores.
+
+Diese Fassung arbeitet deshalb eine neue Unterscheidung ein: Sichtbarmachung, Bewertung und Rückkopplung. Die Wissensgesellschaft endet nicht dort, wo ein Label sichtbar wird. Die Wirkungsgesellschaft beginnt dort, wo die Erkenntnis aus dem Label in die Struktur des Marktes, des Staates, des Kapitals oder der Öffentlichkeit zurückgeführt wird.
+
+Diese Erweiterung ist auch deshalb wichtig, weil sie die Wirkungsökonomie gegen zwei Missverständnisse schützt. Das erste Missverständnis lautet: „Wir haben doch schon Labels, Zertifikate, ESG, CO2-Preise und Verbote - wozu noch Wirkungsökonomie?“ Die Antwort: Weil diese Instrumente wichtige Vorformen sind, aber keine vollständige Systemarchitektur bilden. Das zweite Missverständnis lautet: „Wirkungsökonomie ist nur ein weiteres Label.“ Die Antwort: Nein. Die Wirkungsökonomie nutzt Labels, Daten und Zertifikate als Rohmaterial, aber sie bleibt nicht bei der Anzeige stehen. Sie will Rückkopplung.
+
+2. Die einfache Geschichte: vom Rauchmelder zum Herdschalter #
+
+Stellen wir uns eine Küche vor. Auf dem Herd steht ein Topf. Die Platte ist zu heiß. Es beginnt zu rauchen. Der Rauchmelder piept. Das ist gut. Ohne Rauchmelder würde vielleicht niemand merken, dass etwas schiefläuft.
+
+Die Wissensgesellschaft ist dieser Rauchmelder. Sie erkennt, misst, meldet, analysiert und dokumentiert. Sie sagt: Da ist Rauch. Da ist CO2. Da ist Wasserstress. Da ist Kinderarbeit. Da ist Polarisierung. Da ist eine Krankheitshäufung. Da ist Vertrauensverlust.
+
+Labels und Zertifikate sind dann wie kleine Anzeigen am Rauchmelder. Sie machen das Piepen verständlicher. Rot heißt Gefahr. Grün heißt eher unproblematisch. Ein Siegel sagt: geprüft. Ein Score sagt: hier besser, dort schlechter. Das hilft. Aber es löst das Problem nicht automatisch.
+
+Die Wirkungsgesellschaft ist der Schritt danach. Sie fragt: Was folgt aus dem Piepen? Wer schaltet den Herd aus? Wer verändert die Herdplatte, damit sie nicht jeden Tag überhitzt? Wer zahlt, wenn immer wieder Rauch entsteht? Wer hat einen Vorteil davon, dass niemand den Herd ausschaltet?
+
+Das ist die zentrale Verschiebung: Wissen allein ist Anzeige. Wirkungsgesellschaft ist Anzeige plus Reaktion plus Lernschleife. Sie verbindet Messung mit Verantwortung.
+
+Merksatz Die Wissensgesellschaft fragt: Was wissen wir? Die Wirkungsgesellschaft fragt: Was folgt daraus?
+
+Diese Unterscheidung ist nicht gegen Wissen gerichtet. Im Gegenteil. Ohne Wissensgesellschaft keine Wirkungsgesellschaft. Aber der nächste Schritt besteht darin, dass Wissen nicht folgenlos bleibt. Ein Bericht, der niemandes Entscheidung verändert, ist wie ein Rauchmelder, der in einem geschlossenen Schrank piept.
+
+3. Von Agrar-, Industrie- und Konsumgesellschaft zur Wissensgesellschaft #
+
+Gesellschaften steuern nicht immer nach demselben Maßstab. In jeder Epoche gibt es eine dominante Ressource, eine dominante Knappheit und eine dominante Erfolgslogik.
+
+In der Agrargesellschaft war Boden zentral. Wer Land, Wasser, Tiere, Saatgut und Ernte kontrollierte, kontrollierte Versorgung und Macht. Die Leitfrage lautete: Haben wir genug Nahrung?
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
+
+Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
+
+- Greenwashing-/Impact-Washing-Begriffe mit Nichtkompensation und Reverse Merit Order verknüpfen.
+- Öffentliche Beispiele vorsichtig modellhaft formulieren, ohne Personen- oder Unternehmenspranger.
+- Prüfungsfälle zu SDG-Washing und Kompensationsnarrativen geschuetzt ausarbeiten.
+
+### 7.10 Kurzfazit
+
+Nichtkompensation gegen Greenwashing ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
+
+
+## 8. Prüfungsrelevanz
 
 Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
 
@@ -229,7 +1156,7 @@ Für den Fragenpool sind besonders geeignet:
 - Missverständnisse: Reichweite, Aktivität, Reporting oder Absicht als Wirkung auszugeben.
 - Transfer: positive Netto-Wirkung unter Nichtkompensation und, wo passend, Reverse Merit Order begründen.
 
-## 8. Quellen
+## 9. Quellen
 
 ### Interne Quellen
 
@@ -246,7 +1173,7 @@ Für den Fragenpool sind besonders geeignet:
 - GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
 
-## 9. Rückfluss in den WÖk-Korpus
+## 10. Rückfluss in den WÖk-Korpus
 
 - **Glossar/Begriffe:** Im Tiefensprint prüfen, welche Begriffe aus **Nichtkompensation gegen Greenwashing** eigene Glossarseiten oder präzisere Verweise brauchen.
 - **Website/Erklärseiten:** Prüfen, ob eine kurze öffentliche Erklärseite oder ein Baustein für die Bibliothek fehlt.
