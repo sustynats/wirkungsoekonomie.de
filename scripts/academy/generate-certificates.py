@@ -147,8 +147,6 @@ def draw_certificate_pdf(record: dict, registry: dict, out_path: Path):
     text_x = content_x + 1 * mm
     text_w = content_w - 68 * mm
     compact_basis = record["recognitionBasis"]
-    if record["certificateId"] == "WOEK-PH-2025-0001":
-        compact_basis = "Anerkennung als Begründerin der Wirkungsökonomie; originäre Entwicklungs-, Lehr- und Prüfungsleistung zur internen Meisterstufe Ph.WÖk."
     scope_text = "Wirkungskompetenz: Wirkungslogik, positive Netto-Wirkung, SDG/SDG+, Nichtkompensation, Reverse Merit Order, Wirkungsarchitektur, Wirkungsdaten und Rückkopplung."
     y = details_y - 25 * mm
     y = draw_wrapped(c, f"<b>Prüfungs- und Anerkennungsgrundlage:</b> {compact_basis}", text_x, y, text_w, compact)
