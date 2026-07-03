@@ -1,6 +1,6 @@
 # KWI Live API
 
-Stand: 2026-06-09
+Stand: 2026-07-03
 
 ## Ziel
 
@@ -11,9 +11,10 @@ Die KWI-Demo soll jede im SDG-Bereich verfügbare Kommune annehmen können. Die 
 1. Nutzer:in gibt eine Kommune ein.
 2. Frontend sucht zuerst im lokalen Manifest `assets/data/kwi/municipalities.json`.
 3. Wenn kein Snapshot vorhanden ist, zeigt das Frontend einen Ladezustand und ruft `https://akademie.wirkungsoekonomie.de/api/kwi?q=<kommune>` auf.
-4. Die API läuft in der Akademie-App, sucht die Kommune im SDG-Portal, zieht die öffentliche Indikatorseite und berechnet einen KWI-Snapshot.
-5. Die API liefert denselben JSON-Aufbau wie die lokalen Snapshot-Dateien.
-6. Der Snapshot sollte im Deploy oder am Edge gecacht werden.
+4. Die API läuft in der Akademie-App und bedient zuerst lokale Snapshots aus `assets/data/kwi`.
+5. Das frühere SDG-Portal wurde zum 30.06.2026 abgeschaltet. Die alte Live-Scraping-Strecke ist deshalb als Fallback nicht mehr belastbar; für weitere Kommunen muss der Collector auf das Portal Nachhaltige Kommunen migriert werden.
+6. Die API liefert denselben JSON-Aufbau wie die lokalen Snapshot-Dateien.
+7. Der Snapshot sollte im Deploy oder am Edge gecacht werden.
 
 ## Frontend-Verhalten
 
@@ -23,6 +24,10 @@ Die KWI-Demo soll jede im SDG-Bereich verfügbare Kommune annehmen können. Die 
 - Fallback: Wenn der Live-Endpunkt nicht erreichbar ist, bleibt die Seite bedienbar und verweist auf die vorhandenen Snapshots im Dropdown.
 
 ## Lokaler Snapshot
+
+Der Serverless-Endpunkt nutzt das Manifest `assets/data/kwi/municipalities.json` als stabilen
+Fallback. Eingaben werden tolerant gematcht, inklusive Umlautvarianten (`Düsseldorf`,
+`Duesseldorf`, `Dusseldorf`).
 
 Einzelne Kommune neu erzeugen:
 
@@ -58,6 +63,9 @@ Antwort:
 ```
 
 Die API berechnet den Score deterministisch. Sie nutzt keine KI und verändert keine Gewichte.
+
+Wenn keine lokale Kommune gefunden wird und die externe Quelle nicht nutzbar ist, antwortet die API
+mit `source_unavailable` statt mit einem falschen `municipality_not_found`.
 
 ## Rolle der WÖk-KI
 

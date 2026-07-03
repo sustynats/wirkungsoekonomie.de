@@ -19,7 +19,12 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from tools.kwi_collect import MunicipalityNotFoundError, SnapshotExtractionError, collect  # noqa: E402
+from tools.kwi_collect import (  # noqa: E402
+    MunicipalityNotFoundError,
+    SnapshotExtractionError,
+    SourceUnavailableError,
+    collect,
+)
 
 
 def json_bytes(payload: dict, status: int = 200) -> tuple[int, bytes]:
@@ -81,6 +86,21 @@ class handler(BaseHTTPRequestHandler):
                     "detail": str(exc),
                 },
                 502,
+            )
+            self._send_json(status, body)
+            return
+        except SourceUnavailableError as exc:  # pragma: no cover - serverless boundary
+            status, body = json_bytes(
+                {
+                    "error": "source_unavailable",
+                    "message": (
+                        "Das bisherige SDG-Portal wurde abgeschaltet. Für bereits vorbereitete "
+                        "Kommunen liefert der KWI lokale Snapshots; für weitere Kommunen muss "
+                        "der Collector auf das Portal Nachhaltige Kommunen migriert werden."
+                    ),
+                    "detail": str(exc),
+                },
+                503,
             )
             self._send_json(status, body)
             return
