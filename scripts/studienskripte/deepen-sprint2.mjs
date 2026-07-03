@@ -301,6 +301,142 @@ const lectures = [
       "NACE/Branchenlogik als Grundlage für Archetypen und Benchmarks in G3.2/G3.3 konsistent halten.",
     ],
   },
+  {
+    slug: "woek-g-v29",
+    sprint: 4,
+    code: "V29",
+    title: "WÖk-IDs, Benchmarks und Archetypen",
+    thesis:
+      "WÖk-IDs machen Wirkung adressierbar, Benchmarks machen sie vergleichbar, Archetypen machen Vergleich fair. Ohne diese drei Ebenen bleiben Wirkungsdaten entweder sprachlich, beliebig oder ungerecht.",
+    pages: [
+      "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html",
+      "referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html",
+      "referenz/kapitel-050-produktscorecards/index.html",
+      "werkzeuge/woek-ids/index.html",
+      "werkzeuge/benchmarks-archetypen/index.html",
+      "dokumente/woek-master-items-final-v1-2/index.html",
+    ],
+    matrix: [
+      ["WÖk-ID", "eindeutige Adresse eines Wirkungsindikators", "ID als Score oder Urteil lesen", "Indikator, Einheit, Quelle, Version und Prüfstatus trennen"],
+      ["Benchmark", "Vergleichsmaßstab für eine Branche, Produktgruppe oder Maßnahme", "alle Akteure am selben Wert messen", "Vergleichsgruppe und Systemgrenze offenlegen"],
+      ["Archetyp", "typischer Fall oder Strukturtyp für faire Bewertung", "Einzelfälle über einen Kamm scheren", "passende Vergleichsfamilie bilden"],
+      ["Skala", "Übersetzung von Messwerten in Bewertungsstufen", "Skala als Naturgesetz behandeln", "Skala begründen, versionieren und korrigierbar halten"],
+    ],
+    cases: [
+      "Wasserverbrauch ist kein einziger Indikator. Relevant sind Standort, Wasserstress, Wiederverwendung, Lieferkettenbezug, Produktgruppe und Zeit. Eine WÖk-ID ordnet, welcher Wasseraspekt gemeint ist.",
+      "Ein Krankenhaus, eine Schule und ein Chemiewerk können Energieverbrauch nicht mit derselben Erwartung bewerten. Archetypen schützen davor, notwendige Funktionen mit schlechter Wirkung zu verwechseln.",
+    ],
+    formula: "Bewertung_{fair} = Messwert(WÖk\\text{-}ID) \\; im \\; Kontext(Benchmark, Archetyp, Datenqualitaet)",
+    formulaNote:
+      "Der Messwert wird erst fair bewertbar, wenn klar ist, welcher Indikator gemeint ist, welche Vergleichsgruppe gilt und wie belastbar die Daten sind.",
+    backflow: [
+      "WÖk-ID-Seiten stärker mit Datenqualität, Versionierung und Prüfstatus verbinden.",
+      "Archetypen als Schutz gegen falsche Vergleiche in Produkt-, Unternehmens- und Kommunalbewertung ausbauen.",
+      "Prüfungsfälle mit absichtlich falscher Vergleichsgruppe anlegen.",
+    ],
+  },
+  {
+    slug: "woek-g-v30",
+    sprint: 4,
+    code: "V30",
+    title: "Datenqualität, Audit und Unsicherheit",
+    thesis:
+      "Datenqualität ist keine Fußnote der WÖk, sondern Teil der Wirkungswahrheit. Audit und Unsicherheitsausweis verhindern, dass scheinbar präzise Zahlen mehr Sicherheit behaupten, als die Daten tragen.",
+    pages: [
+      "referenz/kapitel-030-von-wirkung-zu-messung/index.html",
+      "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html",
+      "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html",
+      "werkzeuge/datenqualitaet-assurance/index.html",
+      "begriffe/wirkungsaudit/index.html",
+      "begriffe/wirkungsassurance/index.html",
+    ],
+    matrix: [
+      ["Datenquelle", "woher die Aussage stammt", "Quelle verschweigen", "amtliche Daten, Audit, Studie, Modell oder Schätzung markieren"],
+      ["Datenqualität", "Passung, Aktualität, Vollständigkeit, Prüfbarkeit", "Zahl als automatisch belastbar lesen", "Qualitätsklasse ausweisen"],
+      ["Audit", "unabhängige oder strukturierte Prüfung", "Audit als inhaltliche Wirkung verwechseln", "Prüfung stärkt Aussage, ersetzt aber nicht Bewertung"],
+      ["Unsicherheit", "Grenze der Aussage", "Unsicherheit verstecken", "Bandbreite, Annahme und Korrekturweg nennen"],
+    ],
+    cases: [
+      "Ein Lieferant meldet CO2-Daten selbst. Das kann ein Anfang sein, aber Datenqualität hängt von Methode, Systemgrenze, Aktualität, Prüfstatus und Vergleichbarkeit ab.",
+      "Eine Kommune nutzt Hitzeindikatoren aus Wetterdaten, Gesundheitsdaten und Sozialraumanalyse. Die WÖk muss Datenschutz, Aggregation, Aktualität und Handlungsbezug zusammen denken.",
+    ],
+    formula: "Aussagekraft = Datenqualitaet \\times Quellenklarheit \\times Pruefstatus \\times Kontextpassung",
+    formulaNote:
+      "Eine Zahl mit niedriger Datenqualität kann für Lernen nützlich sein, darf aber nicht als harte Steuerungsgrundlage behandelt werden.",
+    backflow: [
+      "Datenqualitätsklassen als Pflichtfeld in Scorecard- und DPP-Templates vorsehen.",
+      "Audit-Begriffe auf Website klar von Wirkung und Bewertung abgrenzen.",
+      "Unsicherheitsampel in Prüfungsfällen und Reader-PDF sichtbar machen.",
+    ],
+  },
+  {
+    slug: "woek-g-v31",
+    sprint: 4,
+    code: "V31",
+    title: "Von Einzelwirkung zu Netto-Wirkung",
+    thesis:
+      "Netto-Wirkung entsteht nicht durch simple Addition guter und schlechter Einzelwirkungen. Sie entsteht durch profilierte Bewertung, Zielkonfliktprüfung, Nichtkompensation und Rückkopplung.",
+    pages: [
+      "referenz/kapitel-010-wirkung/index.html",
+      "referenz/kapitel-014-systemischer-wert-und-normativer-wert/index.html",
+      "referenz/kapitel-030-von-wirkung-zu-messung/index.html",
+      "referenz/kapitel-033-reverse-merit-order/index.html",
+      "referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html",
+      "begriffe/positive-netto-wirkung/index.html",
+    ],
+    matrix: [
+      ["Einzelwirkung", "eine konkrete Zustandsveränderung", "Einzelwert als Gesamtwirkung verkaufen", "Wirkungsfeld, Empfänger und Richtung markieren"],
+      ["Wirkungsprofil", "mehrere Wirkungen nebeneinander", "Profil sofort zu einer Zahl glätten", "positive, negative und ambivalente Felder zeigen"],
+      ["Netto-Wirkung", "bewertetes Gesamtbild unter Schutzlogiken", "alles verrechnen", "Nichtkompensation und kritische Felder beachten"],
+      ["Rückkopplung", "Konsequenz aus Bewertung", "Bewertung als Bericht beenden", "Preis, Beschaffung, Management oder Regel anpassen"],
+    ],
+    cases: [
+      "Ein Produkt senkt Emissionen, erhöht aber Wasserstress und enthält Arbeitsrechtsrisiken. Die WÖk darf nicht nur den Klimaeffekt feiern, sondern muss das Profil lesen.",
+      "Eine Maßnahme verbessert Teilhabe kurzfristig, erzeugt aber langfristige Abhängigkeit von einer Plattform. Netto-Wirkung verlangt den Blick über den ersten Nutzen hinaus.",
+    ],
+    formula: "NW_{pos} = Profil(\\Delta Z^+, \\Delta Z^-, Risiko, Grenze, Zeit, Empfaenger)",
+    formulaNote:
+      "Die Formel vermeidet Scheingenauigkeit: Positive Netto-Wirkung ist ein bewertetes Profil, nicht bloß eine mechanische Summe.",
+    backflow: [
+      "Begriff Netto-Wirkung und positive Netto-Wirkung im Glossar stärker unterscheiden.",
+      "Scorecard-Visuals als Profil vor Einzahlwert zeigen.",
+      "Prüfungsfälle mit scheinbar guter Einzelwirkung und kritischer Nebenwirkung bauen.",
+    ],
+  },
+  {
+    slug: "woek-g-v32",
+    sprint: 4,
+    code: "V32",
+    title: "Scorecards und Bewertungsprofile",
+    thesis:
+      "Scorecards übersetzen Wirkungsdaten in entscheidungsfähige Profile. Sie sind dann gut, wenn sie sichtbar machen, was stark, schwach, unsicher, kritisch und nicht kompensierbar ist.",
+    pages: [
+      "referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html",
+      "referenz/kapitel-050-produktscorecards/index.html",
+      "referenz/kapitel-051-das-apfelbeispiel/index.html",
+      "werkzeuge/scorecards/index.html",
+      "werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html",
+      "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html",
+    ],
+    matrix: [
+      ["Dimension", "Mensch, Planet, Demokratie oder spezifisches Wirkungsfeld", "Dimensionen beliebig wählen", "Referenzrahmen und Wesentlichkeit begründen"],
+      ["Indikator", "mess- oder belegbare Einheit", "Indikator ohne Quelle nutzen", "WÖk-ID, Einheit, Datenqualität ausweisen"],
+      ["Bewertungsstufe", "Skalenwert oder Profilfarbe", "Ampel als Wahrheit behandeln", "Skala und Benchmark erklären"],
+      ["Sperrlogik", "rote Linie oder kritisches Feld", "gute Felder kompensieren alles", "Nichtkompensation und Reverse Merit Order anwenden"],
+    ],
+    cases: [
+      "Das Apfelbeispiel zeigt, warum Herkunft, Wasser, Klima, Arbeit, Biodiversität, Gesundheit und Transport gemeinsam gelesen werden müssen. Ein regionaler Apfel ist nicht automatisch besser, wenn Wasserstress oder Pestizidrisiken schwer wiegen.",
+      "Eine Unternehmensscorecard muss Produktwirkung, Lieferkette, Arbeit, Daten, Governance und Transformationspfad verbinden. Einzelne ESG-Kennzahlen reichen nicht.",
+    ],
+    formula: "Scorecard = \\{Indikator, Benchmark, Skala, Datenqualitaet, Grenze, Rueckkopplung\\}_{n}",
+    formulaNote:
+      "Eine Scorecard ist kein hübsches Dashboard. Sie ist eine begründete Übersetzung von Daten in ein Bewertungsprofil mit Konsequenzen.",
+    backflow: [
+      "Scorecard-Seiten mit Pflichtfeldern für Datenqualität und Sperrlogik ergänzen.",
+      "Apfelbeispiel als durchgehenden Lernfall für V32-V36 verwenden.",
+      "Reader/PDF sollte Scorecards tabellarisch und als Profilgrafik abbilden.",
+    ],
+  },
 ];
 
 function decode(text) {
