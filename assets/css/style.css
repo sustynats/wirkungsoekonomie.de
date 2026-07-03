@@ -17757,6 +17757,11 @@ body .site-header .site-utility-link[aria-current="page"] {
   outline: none;
 }
 
+body .site-header .site-utility-link--language {
+  min-width: 2.65rem;
+  letter-spacing: 0;
+}
+
 body .site-header .site-nav-utility {
   display: grid;
   gap: 0.15rem;
@@ -17965,6 +17970,16 @@ body .audio-transcript-note {
 
   body .site-header .site-utility-nav .site-utility-link--woek-ki::before {
     content: "KI";
+    font-size: 0.82rem;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link--language[data-lang-switch="en"]::before {
+    content: "EN";
+    font-size: 0.82rem;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link--language[data-lang-switch="de"]::before {
+    content: "DE";
     font-size: 0.82rem;
   }
 

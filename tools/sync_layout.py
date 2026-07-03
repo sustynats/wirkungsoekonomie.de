@@ -108,7 +108,11 @@ def header_utility_link(item: dict[str, object], base: str) -> str:
 
 
 def header_utility_nav(base: str) -> str:
-    return "\n".join(header_utility_link(item, base) for item in header_utility_items())
+    language = (
+        f'<a class="site-utility-link site-utility-link--language" href="{escape(base, quote=True)}en/" '
+        'hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>'
+    )
+    return "\n".join([*(header_utility_link(item, base) for item in header_utility_items()), language])
 
 
 def footer_group(group: dict[str, object], base: str) -> str:

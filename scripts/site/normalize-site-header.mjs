@@ -25,6 +25,10 @@ function prefixFor(filePath) {
   return dir === "." ? "" : dir.split("/").map(() => "../").join("");
 }
 
+function isEnglishFile(filePath) {
+  return path.relative(ROOT, filePath).replace(/\\/g, "/").startsWith("en/");
+}
+
 function utilityClass(item) {
   if (item.label === "WÖk-KI") return "woek-ki";
   return item.label
@@ -42,30 +46,75 @@ function renderUtilityLink(base, item) {
   return `        <a class="site-utility-link site-utility-link--${escapeHtml(utilityClass(item))}" href="${base}${escapeHtml(item.href)}" data-nav-match="${escapeHtml(navMatch(item))}" data-utility-label="${escapeHtml(item.label)}"${primary}>${escapeHtml(text)}</a>`;
 }
 
+function renderLanguageSwitch(base, locale) {
+  if (locale === "en") {
+    return `        <a class="site-utility-link site-utility-link--language" href="${base}index.html" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>`;
+  }
+  return `        <a class="site-utility-link site-utility-link--language" href="${base}en/" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>`;
+}
+
 function renderMainLink(base, item) {
   return `        <a href="${base}${escapeHtml(item.href)}" data-nav-match="${escapeHtml(navMatch(item))}">${escapeHtml(item.label)}</a>`;
 }
 
-function renderHeader(base) {
-  const utilityLinks = (navigation.more || []).map((item) => renderUtilityLink(base, item)).join("\n");
-  const mainLinks = (navigation.header || []).map((item) => renderMainLink(base, item)).join("\n");
+function renderEnglishUtilityLink(base, item) {
+  const labels = new Map([
+    ["Suche", ["Search", "Search"]],
+    ["WÖk-KI", ["AI", "WÖk AI"]],
+    ["WÖk-App", ["WÖk App", "WÖk App"]],
+    ["Mein Wirkungsraum", ["My impact room", "My impact room"]],
+  ]);
+  const [text, utilityLabel] = labels.get(item.label) || [item.label, item.label];
+  const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
+  return `        <a class="site-utility-link site-utility-link--${escapeHtml(utilityClass(item))}" href="${base}${escapeHtml(item.href)}" data-nav-match="${escapeHtml(navMatch(item))}" data-utility-label="${escapeHtml(utilityLabel)}"${primary}>${escapeHtml(text)}</a>`;
+}
+
+function englishMainLinks() {
+  return [
+    ["Home", "en/", "en/"],
+    ["Understand", "en/#understand", "en/"],
+    ["For whom?", "en/#audiences", "en/"],
+    ["Impact fields", "en/#impact-fields", "en/"],
+    ["Impact governance", "en/#governance", "en/"],
+    ["Public impact space", "en/#public-impact-space", "en/"],
+    ["Tools", "en/#tools", "en/"],
+    ["Learn", "en/#learn", "en/"],
+    ["Library", "en/#library", "en/"],
+    ["Join", "en/#join", "en/"],
+  ].map(([label, href, match]) => `        <a href="../${escapeHtml(href)}" data-nav-match="${escapeHtml(match)}">${escapeHtml(label)}</a>`).join("\n");
+}
+
+function renderHeader(base, locale = "de") {
+  const utilityLinks = (navigation.more || [])
+    .map((item) => locale === "en" ? renderEnglishUtilityLink(base, item) : renderUtilityLink(base, item))
+    .join("\n");
+  const languageSwitch = renderLanguageSwitch(base, locale);
+  const mainLinks = locale === "en" ? englishMainLinks() : (navigation.header || []).map((item) => renderMainLink(base, item)).join("\n");
+  const brandHref = locale === "en" ? `${base}en/` : `${base}index.html`;
+  const brandLabel = locale === "en" ? "Wirkungsökonomie English homepage" : "Wirkungsökonomie Startseite";
+  const utilityLabel = locale === "en" ? "Quick links" : "Schnellzugriffe";
+  const menuOpen = locale === "en" ? "Open menu" : "Menü öffnen";
+  const menuText = locale === "en" ? "Menu" : "Menü";
+  const navLabel = locale === "en" ? "Main navigation" : "Hauptnavigation";
 
   return `<header class="site-header" data-search-exclude>
-      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite">
+      <a class="brand" href="${brandHref}" aria-label="${brandLabel}">
         <span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
         <span class="brand-name">Wirkungsökonomie</span>
       </a>
-      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+      <nav class="site-utility-nav" aria-label="${utilityLabel}" data-search-exclude>
 ${utilityLinks}
+${languageSwitch}
       </nav>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-label="${menuOpen}" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-icon" aria-hidden="true">☰</span>
-        <span class="sr-only">Menü</span>
+        <span class="sr-only">${menuText}</span>
       </button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+      <nav class="site-nav" id="site-nav" aria-label="${navLabel}" data-search-exclude>
 ${mainLinks}
-        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <div class="site-nav-utility" aria-label="${utilityLabel}">
 ${utilityLinks}
+${languageSwitch}
         </div>
       </nav>
     </header>`;
@@ -94,7 +143,7 @@ let changed = 0;
 
 for (const filePath of headerFiles()) {
   const before = fs.readFileSync(filePath, "utf8");
-  const afterHeader = before.replace(/<header class="site-header"[\s\S]*?<\/header>/, renderHeader(prefixFor(filePath)));
+  const afterHeader = before.replace(/<header class="site-header"[\s\S]*?<\/header>/, renderHeader(prefixFor(filePath), isEnglishFile(filePath) ? "en" : "de"));
   const after = afterHeader
     .replaceAll("20260612-shell-audio-fix", CSS_VERSION)
     .replaceAll("20260612-nav-restore", CSS_VERSION)

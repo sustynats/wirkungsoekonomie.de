@@ -435,7 +435,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["src/content/docs", "blog", "journal", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "werkzeuge", "anwendungen", "verstehen"]
+const contentFiles = ["src/content/docs", "blog", "journal", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "export", "werkstatt", "werkzeuge", "anwendungen", "verstehen", "en"]
   .flatMap((dir) => walk(dir));
 for (const file of contentFiles) {
   for (const { entry, meta: itemMeta } of entriesFromContent(file)) {

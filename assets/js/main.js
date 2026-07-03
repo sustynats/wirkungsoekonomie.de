@@ -5,6 +5,12 @@ const mainScriptUrl =
 const siteAnalyticsEndpoint = "https://akademie.wirkungsoekonomie.de/api/site-event";
 const siteAnalyticsSessionKey = "wirkungsoekonomie-site-session";
 const siteAnalyticsVisitorKey = "wirkungsoekonomie-site-visitor";
+const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
+const uiText = {
+  skipLink: siteLocale === "en" ? "Skip to content" : "Zum Inhalt springen",
+  menuOpen: siteLocale === "en" ? "Open menu" : "Menü öffnen",
+  menuClose: siteLocale === "en" ? "Close menu" : "Menü schließen",
+};
 
 const mainElement = document.querySelector("main");
 
@@ -22,7 +28,7 @@ if (mainElement && !document.querySelector(".skip-link")) {
   const skipLink = document.createElement("a");
   skipLink.className = "skip-link";
   skipLink.href = "#main-content";
-  skipLink.textContent = "Zum Inhalt springen";
+  skipLink.textContent = uiText.skipLink;
   document.body.prepend(skipLink);
 }
 
@@ -50,7 +56,7 @@ if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
-    navToggle.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+    navToggle.setAttribute("aria-label", isOpen ? uiText.menuClose : uiText.menuOpen);
     document.body.classList.toggle("nav-is-open", isOpen);
     navReturnFocus = isOpen && document.activeElement instanceof HTMLElement ? document.activeElement : null;
     if (isOpen) {
@@ -324,7 +330,7 @@ function getContextualQuestions() {
 }
 
 function injectContextualQuestions() {
-  if (isDebugPath() || !mainElement || document.querySelector(".related-questions-block")) {
+  if (siteLocale === "en" || isDebugPath() || !mainElement || document.querySelector(".related-questions-block")) {
     return;
   }
   const questions = getContextualQuestions().slice(0, 4);
