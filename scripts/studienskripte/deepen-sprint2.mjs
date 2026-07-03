@@ -585,6 +585,57 @@ const lectures = [
   },
 ];
 
+lectures.push(
+  ...[
+    ["woek-g-v01", 6, "V01", "Die Maßstabskrise", ["referenz/kapitel-002-die-massstabskrise/index.html", "referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html", "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html", "referenz/kapitel-005-wohlstand-auf-kosten-kuenftiger-stabilitaet/index.html"]],
+    ["woek-g-v02", 6, "V02", "Wirkung statt Kapital", ["referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html", "referenz/kapitel-009-die-einfache-idee/index.html", "referenz/kapitel-010-wirkung/index.html", "referenz/kapitel-015-leistung-neu-definieren/index.html"]],
+    ["woek-g-v03", 6, "V03", "Die Wirkungsökonomie als neue Steuerungslogik", ["referenz/kapitel-009-die-einfache-idee/index.html", "referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html", "referenz/kapitel-021-das-wirkungsrad/index.html", "referenz/kapitel-022-wirkungslenkung/index.html"]],
+    ["woek-g-v04", 6, "V04", "Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen", ["referenz/kapitel-015-leistung-neu-definieren/index.html", "referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html", "referenz/kapitel-053-markttransformation/index.html", "referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/index.html"]],
+    ["woek-g-v05", 6, "V05", "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung", ["referenz/kapitel-007-buerokratie-als-reparaturmaschine/index.html", "referenz/kapitel-015-leistung-neu-definieren/index.html", "referenz/kapitel-021-das-wirkungsrad/index.html", "referenz/kapitel-022-wirkungslenkung/index.html"]],
+    ["woek-g-v06", 6, "V06", "Zukunftsfähigkeit, Risiko und Resilienz", ["referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html", "referenz/kapitel-065-resilienzstaat/index.html", "referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/index.html", "referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/index.html"]],
+    ["woek-g-v07", 6, "V07", "Mensch als Wirkungsdimension", ["referenz/kapitel-024-der-mensch-im-system/index.html", "referenz/kapitel-025-angst-status-zugehoerigkeit-und-macht/index.html", "referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/index.html", "referenz/kapitel-071-kindheit-familie-und-fruehes-leben/index.html"]],
+    ["woek-g-v08", 6, "V08", "Planet als Wirkungsdimension", ["referenz/kapitel-027-planet-koexistenz-statt-extraktion/index.html", "referenz/kapitel-048-produkte-als-wirkungstraeger/index.html", "referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/index.html", "wirkungsfelder/klima-energie-ressourcen/index.html"]],
+    ["woek-g-v09", 6, "V09", "Demokratie als Wirkungsdimension", ["referenz/kapitel-028-demokratie-als-wirkungsraum/index.html", "referenz/kapitel-061-politik-als-wirkungsraum/index.html", "referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html", "referenz/kapitel-079-diskurskultur/index.html"]],
+    ["woek-g-v10", 7, "V10", "Wirkung ist nicht Absicht", ["referenz/kapitel-010-wirkung/index.html", "referenz/kapitel-011-wirkungspotenzial/index.html", "referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/index.html", "referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html"]],
+    ["woek-g-v11", 7, "V11", "Positive, negative und neutrale Wirkung", ["referenz/kapitel-010-wirkung/index.html", "referenz/kapitel-014-systemischer-wert-und-normativer-wert/index.html", "referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html", "referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html"]],
+    ["woek-g-v12", 7, "V12", "Wirkungsempfänger und Wirkungsräume", ["referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html", "referenz/kapitel-018-wirkungsordnungen/index.html", "referenz/kapitel-019-nichttriviale-systeme/index.html", "referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/index.html"]],
+    ["woek-g-v13", 7, "V13", "Handlung, Unterlassen und Zustandsveränderung", ["referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/index.html", "referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html", "referenz/kapitel-036-wirkung-als-rechtsprinzip/index.html", "referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/index.html"]],
+    ["woek-g-v14", 7, "V14", "Wirkung erster, zweiter und dritter Ordnung", ["referenz/kapitel-018-wirkungsordnungen/index.html", "referenz/kapitel-019-nichttriviale-systeme/index.html", "referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/index.html", "referenz/kapitel-021-das-wirkungsrad/index.html"]],
+    ["woek-g-v15", 7, "V15", "Nebenwirkungen, Rebound und Zielkonflikte", ["referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html", "referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html", "referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html", "begriffe/rebound-effekt/index.html"]],
+    ["woek-g-v16", 7, "V16", "Märkte, Produkte und Lieferketten als Wirkungsräume", ["referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html", "referenz/kapitel-048-produkte-als-wirkungstraeger/index.html", "referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/index.html", "dokumente/wirkungsoekonomie-in-der-lieferkette/index.html"]],
+    ["woek-g-v17", 7, "V17", "Medien, Sprache und Öffentlichkeit als Wirkungsräume", ["referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html", "referenz/kapitel-075-plattformlogik-und-algorithmen/index.html", "referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html", "referenz/kapitel-077-desinformation-und-hybride-kriegsfuehrung/index.html"]],
+    ["woek-g-v18", 7, "V18", "Zeit, Generationen und unsichtbare Betroffene", ["referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/index.html", "referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/index.html", "referenz/kapitel-060-verteilung-eigentum-und-wohlstand/index.html", "referenz/kapitel-071-kindheit-familie-und-fruehes-leben/index.html"]],
+    ["woek-g-v19", 7, "V19", "Wirkstoff, Wirkmechanismus und Wirkungspotenzial", ["referenz/kapitel-011-wirkungspotenzial/index.html", "referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/index.html", "referenz/kapitel-021-das-wirkungsrad/index.html", "referenz/kapitel-022-wirkungslenkung/index.html"]],
+    ["woek-g-v20", 7, "V20", "Gesellschaftliche Resonanzfaktoren", ["referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html", "referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html", "referenz/kapitel-079-diskurskultur/index.html", "referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/index.html"]],
+  ].map(([slug, sprint, code, title, pages]) => ({
+    slug,
+    sprint,
+    code,
+    title,
+    thesis: `${title} markiert im Grundstudium eine Grundentscheidung der Wirkungsökonomie: Entscheidend ist nicht, was plausibel klingt, sondern welche Zustände sich bei welchen Wirkungsempfängern in welchem Wirkungsraum tatsächlich verändern.`,
+    pages,
+    matrix: [
+      ["Begriff", "Was muss präzise getrennt werden?", "Typischer Fehler", "Saubere WÖk-Lesart"],
+      ["Wirkung", "tatsächliche Zustandsveränderung", "Absicht, Aktivität oder Reichweite als Wirkung ausgeben", "Zustand, Empfänger, Wirkpfad und Quelle nennen"],
+      ["Potenzial", "mögliche künftige Wirkung", "Möglichkeit als Ergebnis verkaufen", "Bedingungen, Unsicherheit und Resonanzraum markieren"],
+      ["Risiko", "mögliche negative Wirkung oder Nebenwirkung", "positive Geschichte ohne Schattenseite erzählen", "Nebenwirkungen, Rebound und Zielkonflikte offenlegen"],
+      ["Rückkopplung", "Konsequenz aus beobachteter oder bewerteter Wirkung", "Reporting als Abschluss behandeln", "Lernen und Steuerungsänderung einbauen"],
+    ],
+    cases: [
+      `Ein Projekt kann im Themenfeld ${title} überzeugend kommunizieren und trotzdem nur Wirkungspotenzial erzeugen. Die WÖk-Prüfung beginnt erst, wenn klar wird, welcher Zustand sich bei wem verändert.`,
+      `Eine Organisation kann im Themenfeld ${title} gute Absichten haben und zugleich Wirkungsrisiken übersehen. Das Skript trainiert deshalb die Trennung von Absicht, Auslöser, Wirkmechanismus, Empfänger, Datenlage und Bewertung.`,
+    ],
+    formula: "Wirkung = \\Delta Zustand(Empfaenger, Raum, Zeit) \\; durch \\; Wirkpfad(Ausloeser, Mechanismus, Resonanz, Rueckkopplung)",
+    formulaNote:
+      "Die Formel ist ein didaktisches Raster: Sie schützt davor, Wirkung auf Absicht, Output, Symbolik oder Reichweite zu verkürzen.",
+    backflow: [
+      `Glossar und Reader sollten ${title} mit Wirkung, Wirkungspotenzial, Wirkungsrisiko und Rückkopplung verlinken.`,
+      "Fallbeispiele aus Website und Journal als Prüfungsfälle ohne öffentliche Antwortlogik markieren.",
+      "Wo Begriffe noch unscharf sind, Rückfluss in zentrale Begriffsseiten und Erklärseiten anlegen.",
+    ],
+  })),
+);
+
 function decode(text) {
   return text
     .replace(/&nbsp;/g, " ")
@@ -735,6 +786,8 @@ function replaceOrInsert(markdown, lecture) {
   const sprint = lecture.sprint ?? 2;
   let next = markdown
     .replace(/\*\*Status:\*\* Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden/, `**Status:** Tiefenskript-Sprint ${sprint} · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
+    .replace(/\*\*Status:\*\* Tiefenskript-Sprint \d+ · [^\n]+/, `**Status:** Tiefenskript-Sprint ${sprint} · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
+    .replace(/\*\*Status:\*\* Pilot-Arbeitsfassung · [^\n]+/, `**Status:** Tiefenskript-Sprint ${sprint} · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
     .replace(/\*\*Lesezeit:\*\* ca\. 45–60 Minuten/, "**Lesezeit:** ca. 120–180 Minuten");
 
   const deepening = buildDeepening(lecture).trim();
@@ -742,7 +795,13 @@ function replaceOrInsert(markdown, lecture) {
   if (next.includes(marker)) {
     next = next.replace(new RegExp(`${marker}[\\s\\S]*?(?=\\n## 8\\. Prüfungsrelevanz|\\n## 7\\. Prüfungsrelevanz)`), deepening + "\n\n");
   } else {
-    next = next.replace(/\n## 7\. Prüfungsrelevanz/, `\n${deepening}\n\n## 8. Prüfungsrelevanz`);
+    if (/\n## 7\. Prüfungsrelevanz/.test(next)) {
+      next = next.replace(/\n## 7\. Prüfungsrelevanz/, `\n${deepening}\n\n## 8. Prüfungsrelevanz`);
+    } else if (/\n## 17\. Mini-Quiz/.test(next)) {
+      next = next.replace(/\n## 17\. Mini-Quiz/, `\n${deepening}\n\n## 17. Mini-Quiz`);
+    } else {
+      next = `${next.trim()}\n\n${deepening}\n`;
+    }
   }
   next = next
     .replace(/\n## 8\. Quellen/g, "\n## 9. Quellen")

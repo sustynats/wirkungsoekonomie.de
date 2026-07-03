@@ -5,7 +5,7 @@
 **Vorlesungscode:** V36  
 **Modul/Abschnitt:** G3.4  
 **Titel:** Scorecard lesen und begründen  
-**Status:** Tiefenskript-Sprint 5 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 5 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v36-scorecard-lesen-und-begruenden.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v36.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v36.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

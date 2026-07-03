@@ -5,7 +5,7 @@
 **Vorlesungscode:** V25  
 **Modul/Abschnitt:** G3.1  
 **Titel:** SDGs und Agenda 2030 als globaler Konsens der 193 Staaten  
-**Status:** Tiefenskript-Sprint 3 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 3 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v25-sdgs-agenda-2030-globaler-konsens.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v25.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v25.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

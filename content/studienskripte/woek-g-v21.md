@@ -5,7 +5,7 @@
 **Vorlesungscode:** V21  
 **Modul/Abschnitt:** G2.3  
 **Titel:** Produkte, Technologien und Institutionen als Auslöser  
-**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v21-produkte-technologien-institutionen-als-ausloeser.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v21.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v21.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

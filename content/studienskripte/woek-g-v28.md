@@ -5,7 +5,7 @@
 **Vorlesungscode:** V28  
 **Modul/Abschnitt:** G3.2  
 **Titel:** CSRD, ESRS, GRI, EU-Taxonomie, NACE und DPP  
-**Status:** Tiefenskript-Sprint 3 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 3 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v28-csrd-esrs-gri-eu-taxonomie-nace-dpp.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v28.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v28.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
