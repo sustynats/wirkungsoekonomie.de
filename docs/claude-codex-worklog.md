@@ -269,3 +269,11 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Geaendert: V01-V09 Grundlagenblock und V10-V20 Wirkungs-/Wirkungsraeume-Block auf substanzielle Arbeitsfassungen erweitert. Je Skript: Referenzmaterial aus dem aktuellen Website-/Grundlagenwerk-Korpus, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
 - Pruefung: V20-DOCX gerendert (41 Seiten) und visuell geprueft. Grundstudium V01-V36 umfasst jetzt ca. 322k Woerter im Masterbestand.
 - Offen fuer Codex: WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.
+
+### 2026-07-03 - Codex - Studienskripte Sprint 8/9: WM + WC ausgebaut, 56/56 erreicht
+- Status: abgeschlossen als Tiefenskript-Arbeitsfassungen, nicht als Claude/PDF-final.
+- Repo/Pfad: Website-Root `content/studienskripte/`, Word unter `docs/studienskripte/word-rohfassungen/`, App-Spiegel unter `woek-akademie-app/content/lehrgaenge/`.
+- Geaendert: Wirkungsmanagement V1-V10 und Impact-Controlling WC-V1-WC-V10 auf `tiefensprint-arbeitsfassung` erweitert. Je Skript: Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
+- Gesamtstand: 56/56 V1-Vorlesungen im Index auf `tiefensprint-arbeitsfassung`; Masterbestand ca. 474k Woerter.
+- Pruefung: WM10-DOCX gerendert (24 Seiten), WC10-DOCX gerendert (31 Seiten), beide visuell geprueft; JSON ok; App-Typecheck gruen.
+- Offen fuer Claude: CI/PDF-/Reader-Finalisierung und Lektorat. Offen fuer Codex: geschuetzte Pruefungs-Pools mit Antwortlogik ausbauen.

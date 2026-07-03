@@ -636,6 +636,88 @@ lectures.push(
   })),
 );
 
+lectures.push(
+  ...[
+    ["wirkungsmanagement-v1", 8, "WM-V1", "Was ist Wirkungsmanagement?", ["referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html", "referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html", "referenz/kapitel-022-wirkungslenkung/index.html", "werkzeuge/impact-controlling/dossiers/wirkungscontrolling/index.html"]],
+    ["wirkungsmanagement-v2", 8, "WM-V2", "Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade", ["referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html", "referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html", "referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html", "referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/index.html"]],
+    ["wirkungsmanagement-v3", 8, "WM-V3", "Wirkungsziele und Wirkungslogik in Organisationen", ["referenz/kapitel-021-das-wirkungsrad/index.html", "referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html", "referenz/kapitel-044-wirkungscontrolling-im-unternehmen/index.html", "werkzeuge/kii-statt-kpi/index.html"]],
+    ["wirkungsmanagement-v4", 8, "WM-V4", "Wesentlichkeit & Priorisierung", ["referenz/kapitel-030-von-wirkung-zu-messung/index.html", "referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html", "referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html", "dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/index.html"]],
+    ["wirkungsmanagement-v5", 8, "WM-V5", "Wirkungspotenziale und Wirkungsrisiken analysieren", ["referenz/kapitel-011-wirkungspotenzial/index.html", "referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html", "referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html", "werkzeuge/unternehmens-wirkungscheck/index.html"]],
+    ["wirkungsmanagement-v6", 8, "WM-V6", "Nebenwirkungen, Rebound, Zielkonflikte und Wirkungsgrenzen", ["referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html", "referenz/kapitel-033-reverse-merit-order/index.html", "begriffe/wirkungsgrenze/index.html", "begriffe/rebound-effekt/index.html"]],
+    ["wirkungsmanagement-v7", 8, "WM-V7", "Wirkungskompetenz, Führung und Organisationskultur", ["referenz/kapitel-024-der-mensch-im-system/index.html", "referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/index.html", "referenz/kapitel-045-organisation-kultur-und-verantwortung/index.html", "referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html"]],
+    ["wirkungsmanagement-v8", 8, "WM-V8", "Wirkungsstrategie im Unternehmen", ["referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html", "referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html", "referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html", "referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html"]],
+    ["wirkungsmanagement-v9", 8, "WM-V9", "Kommunikation ohne Impact-Washing", ["referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html", "referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html", "begriffe/impact-washing/index.html", "begriffe/wirkungswahrheit/index.html"]],
+    ["wirkungsmanagement-v10", 8, "WM-V10", "90-Tage-Umsetzungsplan (Abschlussprojekt)", ["referenz/kapitel-097-der-umsetzungspfad/index.html", "referenz/kapitel-098-pilotprojekte/index.html", "referenz/kapitel-100-transformationspfade/index.html", "werkzeuge/unternehmens-wirkungscheck/index.html"]],
+  ].map(([slug, sprint, code, title, pages]) => ({
+    slug,
+    sprint,
+    code,
+    title,
+    thesis: `${title} übersetzt die Wirkungsökonomie in Führungs-, Strategie- und Organisationspraxis. Wirkungsmanagement heißt: Wirkung nicht nur berichten, sondern Ziele, Rollen, Entscheidungen, Kultur und Rückkopplung danach ausrichten.`,
+    pages,
+    matrix: [
+      ["Managementebene", "WÖk-Frage", "Typischer Fehler", "Praxisanforderung"],
+      ["Strategie", "Welche positive Netto-Wirkung wird angestrebt?", "Purpose-Satz ohne Steuerung", "Ziel, Wirkpfad und Entscheidung koppeln"],
+      ["Organisation", "Wer trägt welche Wirkung?", "Verantwortung diffus lassen", "Rollen, Routinen und Eskalationswege definieren"],
+      ["Risiko", "Welche Nebenwirkungen und Zielkonflikte entstehen?", "nur positive Wirkung erzählen", "Wirkungsrisiken eigenständig analysieren"],
+      ["Lernen", "Wie verändert Bewertung die Praxis?", "Reporting als Abschluss", "Rückkopplung in Budget, Prozesse und Führung"],
+    ],
+    cases: [
+      `Ein Unternehmen kann ${title} als Workshop-Thema behandeln und danach unverändert weiterarbeiten. Wirkungsmanagement beginnt erst, wenn Entscheidungen, Verantwortlichkeiten und Budgets tatsächlich angepasst werden.`,
+      "Ein Team erkennt eine negative Nebenwirkung seines Produkts. Die WÖk-Frage lautet nicht, wer schuld ist, sondern welcher Wirkpfad korrigiert werden muss und welche Trägerstruktur Lernen ermöglicht.",
+    ],
+    formula: "Managementwirkung = Zielklarheit + Verantwortlichkeit + Daten + Entscheidung + Rueckkopplung",
+    formulaNote:
+      "Die Formel ist ein Arbeitsmodell: Management wirkt, wenn Ziel, Verantwortung, Daten, Entscheidung und Rückkopplung zusammenkommen.",
+    backflow: [
+      `${title} als Organisationsfall mit Rollen, Routinen und Entscheidungspunkten in die Management-Lane zurückspielen.`,
+      "Prüfungsfälle ohne öffentliche Antwortlogik als Managementszenarien anlegen.",
+      "Glossarverweise zu Wirkungsmanagement, Wirkungsstrategie und Rückkopplung verdichten.",
+    ],
+  })),
+);
+
+lectures.push(
+  ...[
+    ["wirkungscontrolling-wc-v1", 9, "WC-V1", "Von KPI zu KII und der Kennzahlen-Stack", ["referenz/kapitel-044-wirkungscontrolling-im-unternehmen/index.html", "werkzeuge/kii-statt-kpi/index.html", "werkzeuge/impact-controlling/index.html", "werkzeuge/impact-controlling/detailkonzepte/kii-statt-kpi/index.html", "werkzeuge/impact-controlling/dossiers/wirkungscontrolling/index.html", "werkzeuge/impact-controlling/detailkonzepte/impact-controlling-als-system/index.html", "werkzeuge/impact-controlling/methodenpapiere/index.html"]],
+    ["wirkungscontrolling-wc-v2", 9, "WC-V2", "Wirkungsdaten & Rahmenwerke", ["referenz/kapitel-030-von-wirkung-zu-messung/index.html", "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html", "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html", "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html"]],
+    ["wirkungscontrolling-wc-v3", 9, "WC-V3", "WÖk-IDs und Indikatorenarchitektur", ["referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html", "werkzeuge/woek-ids/index.html", "werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html", "werkzeuge/impact-controlling/dossiers/woek-ids/index.html", "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html", "dokumente/woek-master-items-final-v1-2/index.html"]],
+    ["wirkungscontrolling-wc-v4", 9, "WC-V4", "Scorecards, Benchmarks und Bewertungslogik", ["referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html", "referenz/kapitel-050-produktscorecards/index.html", "referenz/kapitel-051-das-apfelbeispiel/index.html", "werkzeuge/scorecards/index.html", "werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html", "werkzeuge/impact-controlling/dossiers/scorecards/index.html", "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html"]],
+    ["wirkungscontrolling-wc-v5", 9, "WC-V5", "Reverse Merit Order und Nichtkompensation (operativ)", ["referenz/kapitel-033-reverse-merit-order/index.html", "werkzeuge/reverse-merit-order/index.html", "begriffe/nichtkompensationsprinzip/index.html", "werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/index.html", "referenz/kapitel-050-produktscorecards/index.html", "begriffe/wirkungsgrenze/index.html", "begriffe/greenwashing/index.html", "referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html"]],
+    ["wirkungscontrolling-wc-v6", 9, "WC-V6", "Wirkungsmonitoring und Wirkungsdatenräume", ["referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html", "referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html", "referenz/kapitel-081-wirkungsdatenraeume/index.html", "werkzeuge/datenraum-reifegradcheck/index.html"]],
+    ["wirkungscontrolling-wc-v7", 9, "WC-V7", "T-SROI und IoI", ["referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html", "werkzeuge/t-sroi/index.html", "werkzeuge/impact-controlling/t-sroi/index.html", "werkzeuge/impact-controlling/dossiers/impact-of-investment/index.html", "werkzeuge/impact-controlling/dossiers/t-sroi/index.html", "dokumente/whitepaper-t-sroi/index.html", "wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/index.html", "begriffe/t-sroi/index.html"]],
+    ["wirkungscontrolling-wc-v8", 9, "WC-V8", "Wirkung in CAPEX, OPEX, Portfolio und Einkauf", ["referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html", "referenz/kapitel-048-produkte-als-wirkungstraeger/index.html", "referenz/kapitel-049-ehrliche-preise/index.html", "referenz/kapitel-059-kapitalmaerkte-und-fonds/index.html", "werkzeuge/impact-controlling/impact-of-investment/index.html", "werkzeuge/impact-controlling/dossiers/impact-of-investment/index.html", "werkzeuge/portfolio-wirkungsrating/index.html", "dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/index.html"]],
+    ["wirkungscontrolling-wc-v9", 9, "WC-V9", "Wirkungsaudit, Datenqualität, Assurance und Missbrauchsschutz", ["werkzeuge/datenqualitaet-assurance/index.html", "werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/index.html", "werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/index.html", "begriffe/wirkungsaudit/index.html", "begriffe/wirkungsassurance/index.html", "referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html", "referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/index.html"]],
+    ["wirkungscontrolling-wc-v10", 9, "WC-V10", "Fallstudie – Vom Wirkungsdatensatz zur Steuerungsentscheidung (Abschlussfall)", ["referenz/kapitel-098-pilotprojekte/index.html", "referenz/kapitel-099-wirkungsoekonomie-im-alltag/index.html", "referenz/kapitel-100-transformationspfade/index.html", "werkzeuge/impact-controlling/dossiers/impact-of-investment/index.html", "werkzeuge/impact-controlling/dossiers/beispielrechnungen/index.html", "dokumente/beispiel-konzern/index.html", "werkzeuge/unternehmens-wirkungscheck/index.html"]],
+  ].map(([slug, sprint, code, title, pages]) => ({
+    slug,
+    sprint,
+    code,
+    title,
+    thesis: `${title} macht die WÖk prüfbar: Impact-Controlling übersetzt Wirkungslogik in Indikatoren, Datenqualität, Bewertungsprofile, Audits und Steuerungsentscheidungen.`,
+    pages,
+    matrix: [
+      ["Controllingebene", "Funktion", "Typischer Fehler", "Saubere WÖk-Anwendung"],
+      ["Kennzahl", "Zustand sichtbar machen", "KPI als Wirkung ausgeben", "KII mit Wirkpfad und Empfänger verknüpfen"],
+      ["Datenqualität", "Aussagekraft begrenzen", "Zahl ohne Quelle nutzen", "Quelle, Einheit, Aktualität und Prüfstatus ausweisen"],
+      ["Bewertung", "Daten in Profil übersetzen", "Score als Wahrheit behandeln", "Benchmark, Archetyp und Sperrlogik offenlegen"],
+      ["Steuerung", "Entscheidung verändern", "Dashboard ohne Konsequenz", "CAPEX, OPEX, Einkauf, Portfolio oder Audit rückkoppeln"],
+    ],
+    cases: [
+      `Ein Dashboard zu ${title} ist erst dann Impact-Controlling, wenn die Kennzahl eine Zustandsveränderung adressiert und eine Entscheidung auslöst.`,
+      "Ein Datensatz mit guter Optik, aber schwacher Datenqualität darf nicht als harte Steuerungsgrundlage dienen. Die WÖk verlangt Unsicherheitsausweis, Auditpfad und Korrektur.",
+    ],
+    formula: "Impact\\text{-}Controlling = KII + Datenqualitaet + Bewertung + Audit + Steuerungsentscheidung",
+    formulaNote:
+      "Die Formel zeigt die operative Kette: Erst aus Kennzahlen, Datenqualität, Bewertung, Audit und Entscheidung entsteht steuerungsfähige Wirkung.",
+    backflow: [
+      `${title} als Controllingfall mit Datenfeldern, Qualitätsklassen und Entscheidungslogik weiter ausarbeiten.`,
+      "Geschützte Prüfungslogik mit Datensatz, Rubric und CorrectAnswer separat in der App-Lane pflegen.",
+      "Reader/PDF sollte Tabellen, Formeln und Auditpfad für Controlling-Lektionen besonders sauber setzen.",
+    ],
+  })),
+);
+
 function decode(text) {
   return text
     .replace(/&nbsp;/g, " ")
