@@ -122,10 +122,13 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 
 ## Sprint 3 · Grundstudium V25-V28
 
-- `woek-g-v25`
-- `woek-g-v26`
-- `woek-g-v27`
-- `woek-g-v28`
+- [x] `woek-g-v25`
+- [x] `woek-g-v26`
+- [x] `woek-g-v27`
+- [x] `woek-g-v28`
+- Output je Skript: Markdown-Master, Word-Rohfassung, App-Spiegel, Mini-Quiz, Glossar, Quellen, Rueckfluss
+- Ergebnis: `tiefensprint-arbeitsfassung` mit SDG/SDG+-Referenzmaterial, Wirkungsgrenzen/roten Linien und Reporting-/DPP-Infrastruktur.
+- Hinweis: V25 und V28 enthalten extern gepruefte Primaerquellenstaende (UN, EU-Kommission, EFRAG, Eurostat, GRI). Diese Fassungen sind substanziell ausgebaut, aber noch nicht als `published` oder Claude-CI/PDF-final markiert.
 
 ## Sprint 4 · Grundstudium V29-V32
 
