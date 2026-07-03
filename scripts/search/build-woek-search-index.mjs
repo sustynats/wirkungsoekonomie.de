@@ -150,6 +150,18 @@ function canonicalizeEntry(entry) {
   };
 }
 
+function isLocalPrivateUrl(url) {
+  const value = String(url || "");
+  return (
+    value.includes("/.claude/") ||
+    value.includes("/worktrees/") ||
+    value.includes("/Users/") ||
+    value.includes("/private/") ||
+    value.includes("file://") ||
+    /(^|\/)(?:Users|Volumes|tmp|var\/folders)\//i.test(value)
+  );
+}
+
 function canonicalEntryKey(entry) {
   const route = canonicalSearchRoute(entry.url);
   if (route) return route;
@@ -286,11 +298,25 @@ function semanticTermsForText(text, limit = 28) {
   return unique(matches.flatMap((match) => [match.label, ...match.related])).slice(0, limit);
 }
 
+const EXCLUDED_WALK_DIRS = new Set([
+  ".claude",
+  ".git",
+  ".next",
+  "_site",
+  "dist",
+  "node_modules",
+  "out",
+  "woek-akademie-app",
+  "woek-institut-app",
+]);
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) walk(full, files);
+    if (entry.isDirectory()) {
+      if (!EXCLUDED_WALK_DIRS.has(entry.name)) walk(full, files);
+    }
     else if (/\.(md|mdx|html)$/i.test(entry.name)) files.push(full);
   }
   return files;
@@ -421,12 +447,13 @@ for (const file of contentFiles) {
 const byUrl = new Map(
   existing
     .filter((entry) => !String(entry.id || "").startsWith("woek-"))
+    .filter((entry) => !isLocalPrivateUrl(entry.url))
     .map(canonicalizeLegacyEntry)
     .map((entry) => [entry.url, entry]),
 );
 for (const entry of generated) byUrl.set(entry.url, entry);
 for (const entry of existing.filter((item) => !String(item.id || "").startsWith("woek-"))) {
-  if (entry.url && existingMeta[entry.url]) meta[entry.url] = existingMeta[entry.url];
+  if (entry.url && !isLocalPrivateUrl(entry.url) && existingMeta[entry.url]) meta[entry.url] = existingMeta[entry.url];
 }
 const merged = Array.from(byUrl.values())
   .filter((entry) => !isInternalPublicRoute(entry.url))
@@ -435,6 +462,10 @@ const merged = Array.from(byUrl.values())
   .map(normalizePriority)
   .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
 
+const generatedAt = process.env.SOURCE_DATE_EPOCH
+  ? new Date(Number(process.env.SOURCE_DATE_EPOCH) * 1000).toISOString()
+  : "source-derived";
+
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
-fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: meta }, null, 2)}\n`);
+fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt, entries: meta }, null, 2)}\n`);
 console.log(`Integrated ${generated.length} WÖk search entries into existing search index.`);
