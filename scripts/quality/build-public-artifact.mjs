@@ -8,6 +8,7 @@ const artifactDir = path.join(root, "_site");
 const excludedTopLevelDirs = new Set([
   ".git",
   ".github",
+  ".claude",
   ".next",
   ".codex-backup",
   "_internal",
@@ -32,6 +33,7 @@ const excludedTopLevelDirs = new Set([
   "tiktok_library",
   "tools",
   "woek-akademie-app",
+  "woek-institut-app",
 ]);
 
 const excludedTopLevelFiles = new Set([
