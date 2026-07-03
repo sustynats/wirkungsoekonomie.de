@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungsstrategie im Unternehmen  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v8-wirkungsstrategie.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v8.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v8.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V8
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WM-V7
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§5 Stufen 11–13) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -83,9 +83,9 @@ Einzelmaßnahmen ergeben noch keine Wirkung. **Wie wird aus Zielen, Priorisierun
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wirkungsstrategie | kohärenter Kurs auf positive Netto-Wirkung | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkungslenkung | Rückführung der Bewertung in Entscheidungen | `begriffe/wirkungslenkung` |
-| Wirkungsarchitektur | Gerüst aus Rollen, Regeln, Daten, Lernschleifen | `begriffe/wirkungsarchitektur` |
-| positive Netto-Wirkung | Zielgröße | `begriffe/positive-netto-wirkung` |
+| Wirkungslenkung | Rückführung der Bewertung in Entscheidungen | [Wirkungslenkung](https://wirkungsoekonomie.de/begriffe/wirkungslenkung/) |
+| Wirkungsarchitektur | Gerüst aus Rollen, Regeln, Daten, Lernschleifen | [Wirkungsarchitektur](https://wirkungsoekonomie.de/begriffe/wirkungsarchitektur/) |
+| positive Netto-Wirkung | Zielgröße | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -277,9 +277,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V8. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5 Stufen 11–13
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
-- Glossar: `begriffe/wirkungslenkung`, `begriffe/wirkungsarchitektur`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §5 Stufen 11–13
+- [Was ist Wirkungsökonomie?](https://wirkungsoekonomie.de/wirkungsoekonomie.html)
+- Glossar: [Wirkungslenkung](https://wirkungsoekonomie.de/begriffe/wirkungslenkung/), [Wirkungsarchitektur](https://wirkungsoekonomie.de/begriffe/wirkungsarchitektur/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -364,9 +364,9 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wirkungsstrategie | kohärenter Kurs auf positive Netto-Wirkung | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkungslenkung | Rückführung der Bewertung in Entscheidungen | `begriffe/wirkungslenkung` |
-| Wirkungsarchitektur | Gerüst aus Rollen, Regeln, Daten, Lernschleifen | `begriffe/wirkungsarchitektur` |
-| positive Netto-Wirkung | Zielgröße | `begriffe/positive-netto-wirkung` |
+| Wirkungslenkung | Rückführung der Bewertung in Entscheidungen | [Wirkungslenkung](https://wirkungsoekonomie.de/begriffe/wirkungslenkung/) |
+| Wirkungsarchitektur | Gerüst aus Rollen, Regeln, Daten, Lernschleifen | [Wirkungsarchitektur](https://wirkungsoekonomie.de/begriffe/wirkungsarchitektur/) |
+| positive Netto-Wirkung | Zielgröße | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -434,7 +434,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 42 - Unternehmen als Wirkungssysteme
 
-*Interne Quelle:* `referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html`
+*Öffentliche Quelle:* [Kapitel 42 - Unternehmen als Wirkungssysteme](https://wirkungsoekonomie.de/referenz/kapitel-042-unternehmen-als-wirkungssysteme/)
 
 Ein Unternehmen ist dann nicht mehr nur eine Einheit zur Gewinnerzielung. Es ist ein organisierter Wirkungsraum, der Zustände verändert.
 
@@ -512,7 +512,7 @@ Verantwortung über die Bilanz hinaus heißt daher: Unternehmen müssen die Wirk
 
 ### Quellenanker: Kapitel 43 - Wirkungsorientierte Unternehmensführung
 
-*Interne Quelle:* `referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html`
+*Öffentliche Quelle:* [Kapitel 43 - Wirkungsorientierte Unternehmensführung](https://wirkungsoekonomie.de/referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/)
 
 Kapitel 42 hat Unternehmen als Wirkungssysteme beschrieben. Ein Unternehmen ist nicht nur eine Einheit zur Gewinnerzielung, sondern ein organisierter Wirkungsraum. Daraus folgt eine neue Führungsfrage: Wie werden Wahrnehmung, Entscheidung, Verantwortung und Korrektur so gestaltet, dass ein Unternehmen positive Wirkung erzeugen und negative Wirkung begrenzen kann?
 
@@ -590,7 +590,7 @@ Führung heißt in dieser Logik nicht Kontrolle jedes Details. Führung heißt, 
 
 ### Quellenanker: Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung
 
-*Interne Quelle:* `referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html`
+*Öffentliche Quelle:* [Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung](https://wirkungsoekonomie.de/referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/)
 
 Kapitel 45 hat gezeigt, dass Wirkung in Unternehmen an Organisation, Rollen, Kultur und Lernfähigkeit gebunden ist. Dieses Kapitel richtet den Blick auf die interne Wertschöpfung und auf Lieferketten. Denn ein Unternehmen wirkt nicht nur durch das, was es im eigenen Werk, Büro oder Geschäftsmodell sichtbar tut. Es wirkt durch das, was es einkauft, ermöglicht, verlangt, duldet und weitergibt.
 
@@ -668,7 +668,7 @@ Supply-Chain-Resilienz verlangt deshalb die Verbindung verschiedener Perspektive
 
 ### Quellenanker: Kapitel 47 - Unternehmensrisiko und Transformation
 
-*Interne Quelle:* `referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html`
+*Öffentliche Quelle:* [Kapitel 47 - Unternehmensrisiko und Transformation](https://wirkungsoekonomie.de/referenz/kapitel-047-unternehmensrisiko-und-transformation/)
 
 Kapitel 46 hat Lieferketten und interne Wertschöpfung als Wirkungsräume des Unternehmens beschrieben. Dieses Kapitel schließt Teil VII ab. Es verbindet Unternehmenszweck, Führung, Controlling, Organisation und Lieferkettensteuerung mit der Frage der Zukunftsfähigkeit. Wirkung ist für Unternehmen nicht nur Verantwortung. Wirkung ist Risiko, Resilienz und Transformationsfrage.
 
@@ -760,7 +760,7 @@ Wirkungsstrategie im Unternehmen ist kein Randthema. Es zeigt, ob die WÖk nur s
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -771,17 +771,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v8-wirkungsstrategie.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

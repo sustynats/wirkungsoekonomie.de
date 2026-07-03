@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G3.1  
 **Titel:** SDG+: Warum die SDGs für offene Gesellschaften nicht reichen  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v26-sdg-plus-warum-sdgs-nicht-reichen.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v26.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v26.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V26
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** V25 „SDGs und Agenda 2030 als globaler Konsens der 193 Staaten"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ SDG+ ist keine moralische Rangliste von Menschen. Es bewertet keine Personen. Es
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| SDG+ | Erweiterter Wirkungsrahmen für Mensch, Planet und Demokratie | `begriffe/sdg-plus` |
-| Demokratie als Wirkungsdimension | Wirkung auf Rechte, Teilhabe, Öffentlichkeit und Institutionen | `begriffe/demokratie-als-wirkungsdimension` |
-| Nichtkompensation | schwere Schäden dürfen nicht durch gute Werte verdeckt werden | `begriffe/nichtkompensation` |
-| Social Credit | unzulässige Personenranglogik | `begriffe/social-credit` |
+| SDG+ | Erweiterter Wirkungsrahmen für Mensch, Planet und Demokratie | [Sdg plus](https://wirkungsoekonomie.de/begriffe/sdg-plus/) |
+| Demokratie als Wirkungsdimension | Wirkung auf Rechte, Teilhabe, Öffentlichkeit und Institutionen | [Demokratie als wirkungsdimension](https://wirkungsoekonomie.de/begriffe/demokratie-als-wirkungsdimension/) |
+| Nichtkompensation | schwere Schäden dürfen nicht durch gute Werte verdeckt werden | [Nichtkompensation](https://wirkungsoekonomie.de/begriffe/nichtkompensation/) |
+| Social Credit | unzulässige Personenranglogik | [Social credit](https://wirkungsoekonomie.de/begriffe/social-credit/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -299,9 +299,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V26. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Demokratie, digitale Wirkung, SDG+
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/sdg-plus`, `begriffe/demokratie-als-wirkungsdimension`, `begriffe/nichtkompensation`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Demokratie, digitale Wirkung, SDG+
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Sdg plus](https://wirkungsoekonomie.de/begriffe/sdg-plus/), [Demokratie als wirkungsdimension](https://wirkungsoekonomie.de/begriffe/demokratie-als-wirkungsdimension/), [Nichtkompensation](https://wirkungsoekonomie.de/begriffe/nichtkompensation/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -385,10 +385,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| SDG+ | Erweiterter Wirkungsrahmen für Mensch, Planet und Demokratie | `begriffe/sdg-plus` |
-| Demokratie als Wirkungsdimension | Wirkung auf Rechte, Teilhabe, Öffentlichkeit und Institutionen | `begriffe/demokratie-als-wirkungsdimension` |
-| Nichtkompensation | schwere Schäden dürfen nicht durch gute Werte verdeckt werden | `begriffe/nichtkompensation` |
-| Social Credit | unzulässige Personenranglogik | `begriffe/social-credit` |
+| SDG+ | Erweiterter Wirkungsrahmen für Mensch, Planet und Demokratie | [Sdg plus](https://wirkungsoekonomie.de/begriffe/sdg-plus/) |
+| Demokratie als Wirkungsdimension | Wirkung auf Rechte, Teilhabe, Öffentlichkeit und Institutionen | [Demokratie als wirkungsdimension](https://wirkungsoekonomie.de/begriffe/demokratie-als-wirkungsdimension/) |
+| Nichtkompensation | schwere Schäden dürfen nicht durch gute Werte verdeckt werden | [Nichtkompensation](https://wirkungsoekonomie.de/begriffe/nichtkompensation/) |
+| Social Credit | unzulässige Personenranglogik | [Social credit](https://wirkungsoekonomie.de/begriffe/social-credit/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 3
 
@@ -455,7 +455,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 31 - WÖk-IDs und Indikatorenarchitektur
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus/index.html`
+*Öffentliche Quelle:* [Kapitel 31 - WÖk-IDs und Indikatorenarchitektur](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus/)
 
 ### Kapitel 32 - Benchmarks, Skalen und Scorecards
 
@@ -507,7 +507,7 @@ Layoutfassung des Fachdetailkonzepts als ergänzende Exportdatei.
 
 ### Quellenanker: Wirkungsökonomie · SDG+ Demokratie · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-demokratie · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus-demokratie/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG+ Demokratie · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-demokratie · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus-demokratie/)
 
 Weiterleitung
 
@@ -517,7 +517,7 @@ Zum Abschnitt SDG+ Demokratie
 
 ### Quellenanker: Wirkungsökonomie · SDG+ Rechtsstaatlichkeit · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG+ Rechtsstaatlichkeit · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus-rechtsstaatlichkeit/)
 
 Weiterleitung
 
@@ -527,7 +527,7 @@ Zum Abschnitt SDG+ Rechtsstaatlichkeit
 
 ### Quellenanker: Wirkungsökonomie · SDG+ Medienqualität · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-medienqualitaet · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG+ Medienqualität · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-medienqualitaet · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus-medienqualitaet/)
 
 Weiterleitung
 
@@ -537,7 +537,7 @@ Zum Abschnitt SDG+ Medienqualität
 
 ### Quellenanker: Wirkungsökonomie · SDG+ Diskursfähigkeit · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-diskursfaehigkeit · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG+ Diskursfähigkeit · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-diskursfaehigkeit · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus-diskursfaehigkeit/)
 
 Weiterleitung
 
@@ -547,7 +547,7 @@ Zum Abschnitt SDG+ Diskursfähigkeit
 
 ### Quellenanker: Wirkungsökonomie · SDG+ institutionelles Vertrauen · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG+ institutionelles Vertrauen · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus-institutionelles-vertrauen/)
 
 Weiterleitung
 
@@ -557,7 +557,7 @@ Zum Abschnitt SDG+ institutionelles Vertrauen
 
 ### Quellenanker: Wirkungsökonomie · SDG+ gesellschaftlicher Zusammenhalt · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-gesellschaftlicher-zusammenhalt · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG+ gesellschaftlicher Zusammenhalt · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-gesellschaftlicher-zusammenhalt · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus-gesellschaftlicher-zusammenhalt/)
 
 Weiterleitung
 
@@ -567,7 +567,7 @@ Zum Abschnitt SDG+ gesellschaftlicher Zusammenhalt
 
 ### Quellenanker: Wirkungsökonomie · SDG+ digitale Selbstbestimmung · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG+ digitale Selbstbestimmung · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus-digitale-selbstbestimmung/)
 
 Weiterleitung
 
@@ -577,7 +577,7 @@ Zum Abschnitt SDG+ digitale Selbstbestimmung
 
 ### Quellenanker: Kapitel 28 - Demokratie als Wirkungsraum
 
-*Interne Quelle:* `referenz/kapitel-028-demokratie-als-wirkungsraum/index.html`
+*Öffentliche Quelle:* [Kapitel 28 - Demokratie als Wirkungsraum](https://wirkungsoekonomie.de/referenz/kapitel-028-demokratie-als-wirkungsraum/)
 
 Kapitel 27 hat den Planeten als Lebensbedingung beschrieben. Der Planet ist nicht die Umgebung der Wirtschaft, sondern ihre Grundlage. Damit entsteht eine Folgefrage: Wie kann eine Gesellschaft über diese Grundlage verhandeln, ohne Natur zur bloßen Meinungssache zu machen und ohne ökologische Wahrheit autoritär zu verordnen?
 
@@ -655,7 +655,7 @@ Die Wirkungsökonomie braucht demokratische Korrektur, weil Wirkung nicht vollst
 
 ### Quellenanker: Kapitel 74 - Öffentlichkeit als Wirkungsraum
 
-*Interne Quelle:* `referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html`
+*Öffentliche Quelle:* [Kapitel 74 - Öffentlichkeit als Wirkungsraum](https://wirkungsoekonomie.de/referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/)
 
 Öffentlichkeit ist nicht nur der Ort, an dem Meinungen erscheinen. Sie ist die Rückkopplungsinfrastruktur, durch die eine Demokratie Wirklichkeit prüfen und sich selbst korrigieren kann.
 
@@ -733,7 +733,7 @@ Damit wird Öffentlichkeit nicht verengt. Sie wird ernst genommen. Die nächsten
 
 ### Quellenanker: Kapitel 79 - Diskurskultur
 
-*Interne Quelle:* `referenz/kapitel-079-diskurskultur/index.html`
+*Öffentliche Quelle:* [Kapitel 79 - Diskurskultur](https://wirkungsoekonomie.de/referenz/kapitel-079-diskurskultur/)
 
 Kapitel 78 hat Creator:innen, Hosts und digitale Community-Betreiber:innen als öffentliche Wirkungsträger beschrieben. Dieses Kapitel schließt Teil XII ab. Es zieht die Linie zusammen: Öffentlichkeit, Plattformen, Sprache, Desinformation, Creator-Verantwortung und Community-Dynamik brauchen eine gemeinsame demokratische Grundfähigkeit. Diese Fähigkeit heißt Diskurskultur.
 
@@ -825,7 +825,7 @@ SDG+: Warum die SDGs für offene Gesellschaften nicht reichen ist kein Randthema
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -836,17 +836,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v26-sdg-plus-warum-sdgs-nicht-reichen.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

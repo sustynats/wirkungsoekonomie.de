@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungspotenziale und Wirkungsrisiken analysieren  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v5-potenziale-risiken-analysieren.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v5.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v5.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V5
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WM-V4
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§5) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -90,10 +90,10 @@ Ein Vorhaben verspricht viel Gutes – und birgt zugleich Risiken. **Wie analysi
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungspotenzial | Möglichkeit positiver/ambivalenter Wirkung | `begriffe/wirkungspotenzial` |
-| Wirkungsrisiko | Möglichkeit negativer/destabilisierender Wirkung | `begriffe/wirkungsrisiko` |
-| Wirkmechanismus | wie Wirkung entstehen soll oder kann | `begriffe/wirkmechanismus` |
-| Nebenwirkung / Rebound | ungewollte, zurückschlagende Folgen | `begriffe/nebenwirkung`, `begriffe/rebound-effekt` |
+| Wirkungspotenzial | Möglichkeit positiver/ambivalenter Wirkung | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
+| Wirkungsrisiko | Möglichkeit negativer/destabilisierender Wirkung | [Wirkungsrisiko](https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/) |
+| Wirkmechanismus | wie Wirkung entstehen soll oder kann | [Wirkmechanismus](https://wirkungsoekonomie.de/begriffe/wirkmechanismus/) |
+| Nebenwirkung / Rebound | ungewollte, zurückschlagende Folgen | [Nebenwirkung](https://wirkungsoekonomie.de/begriffe/nebenwirkung/), [Rebound effekt](https://wirkungsoekonomie.de/begriffe/rebound-effekt/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -305,9 +305,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V5. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
-- Glossar: `begriffe/wirkungspotenzial`, `begriffe/wirkungsrisiko`, `begriffe/rebound-effekt`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §5
+- [Was ist Wirkungsökonomie?](https://wirkungsoekonomie.de/wirkungsoekonomie.html)
+- Glossar: [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/), [Wirkungsrisiko](https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/), [Rebound effekt](https://wirkungsoekonomie.de/begriffe/rebound-effekt/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -391,10 +391,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungspotenzial | Möglichkeit positiver/ambivalenter Wirkung | `begriffe/wirkungspotenzial` |
-| Wirkungsrisiko | Möglichkeit negativer/destabilisierender Wirkung | `begriffe/wirkungsrisiko` |
-| Wirkmechanismus | wie Wirkung entstehen soll oder kann | `begriffe/wirkmechanismus` |
-| Nebenwirkung / Rebound | ungewollte, zurückschlagende Folgen | `begriffe/nebenwirkung`, `begriffe/rebound-effekt` |
+| Wirkungspotenzial | Möglichkeit positiver/ambivalenter Wirkung | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
+| Wirkungsrisiko | Möglichkeit negativer/destabilisierender Wirkung | [Wirkungsrisiko](https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/) |
+| Wirkmechanismus | wie Wirkung entstehen soll oder kann | [Wirkmechanismus](https://wirkungsoekonomie.de/begriffe/wirkmechanismus/) |
+| Nebenwirkung / Rebound | ungewollte, zurückschlagende Folgen | [Nebenwirkung](https://wirkungsoekonomie.de/begriffe/nebenwirkung/), [Rebound effekt](https://wirkungsoekonomie.de/begriffe/rebound-effekt/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -462,7 +462,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 11 - Wirkungspotenzial
 
-*Interne Quelle:* `referenz/kapitel-011-wirkungspotenzial/index.html`
+*Öffentliche Quelle:* [Kapitel 11 - Wirkungspotenzial](https://wirkungsoekonomie.de/referenz/kapitel-011-wirkungspotenzial/)
 
 Wirkung entsteht nicht immer sofort. Manche Handlungen verändern einen Zustand unmittelbar: Ein Medikament lindert Schmerzen. Eine Sanierung senkt den Energieverbrauch. Eine Lohnerhöhung verändert Einkommen. Eine Entscheidung beendet ein Verfahren. In solchen Fällen lässt sich Wirkung relativ klar beschreiben: Vorher war ein Zustand anders als nachher. Die Wirkungsökonomie bezeichnet Wirkung deshalb als tatsächliche Veränderung von Zuständen; das Wirkungssteuergesetz fasst sie als nachweisbare Veränderung ökologischer, sozialer oder demokratischer Systembedingungen in Bezug auf Mensch, Planet und Demokratie [I-11-1].
 
@@ -540,7 +540,7 @@ Anschlussfähigkeit beschreibt, ob ein Potenzial in diesem Raum aufgenommen werd
 
 ### Quellenanker: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz
 
-*Interne Quelle:* `referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html`
+*Öffentliche Quelle:* [Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/)
 
 ### 23.1 Warum Wirkung immer auch Risiko bedeutet
 
@@ -618,7 +618,7 @@ Demokratische Resilienz bedeutet daher nicht nur Schutz von Wahlen. Sie umfasst 
 
 ### Quellenanker: Kapitel 47 - Unternehmensrisiko und Transformation
 
-*Interne Quelle:* `referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html`
+*Öffentliche Quelle:* [Kapitel 47 - Unternehmensrisiko und Transformation](https://wirkungsoekonomie.de/referenz/kapitel-047-unternehmensrisiko-und-transformation/)
 
 Kapitel 46 hat Lieferketten und interne Wertschöpfung als Wirkungsräume des Unternehmens beschrieben. Dieses Kapitel schließt Teil VII ab. Es verbindet Unternehmenszweck, Führung, Controlling, Organisation und Lieferkettensteuerung mit der Frage der Zukunftsfähigkeit. Wirkung ist für Unternehmen nicht nur Verantwortung. Wirkung ist Risiko, Resilienz und Transformationsfrage.
 
@@ -696,7 +696,7 @@ Ein lernendes Unternehmen stellt vier Fragen wiederholt. Welche Wirkung erzeugen
 
 ### Quellenanker: Wirkungsökonomie · Unternehmens-Wirkungscheck · https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/unternehmens-wirkungscheck/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Unternehmens-Wirkungscheck · https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/)
 
 Methode
 
@@ -788,7 +788,7 @@ Wirkungspotenziale und Wirkungsrisiken analysieren ist kein Randthema. Es zeigt,
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -799,17 +799,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v5-potenziale-risiken-analysieren.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

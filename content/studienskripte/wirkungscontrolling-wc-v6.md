@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkungsmonitoring und Wirkungsdatenräume  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v6-monitoring-wirkungsdatenraeume.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v6.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v6.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V6
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WC-V5
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§5) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/wirkungsmonitoring`, `begriffe/wirkungsdatenraum`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -82,10 +82,10 @@ Eine einmalige Bewertung veraltet sofort. **Wie wird Wirkung laufend beobachtet 
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsmonitoring | laufende Beobachtung der Wirkung über KIIs | `begriffe/wirkungsmonitoring` |
-| Wirkungsdatenraum | strukturierter, auditierbarer Datenaustausch | `begriffe/wirkungsdatenraum` |
-| Wirkungsrückkopplung | Rückführung in Entscheidungen | `begriffe/wirkungsrueckkopplung` |
-| KII | Key Impact Indicator | `begriffe/kii` |
+| Wirkungsmonitoring | laufende Beobachtung der Wirkung über KIIs | [Wirkungsmonitoring](https://wirkungsoekonomie.de/begriffe/wirkungsmonitoring/) |
+| Wirkungsdatenraum | strukturierter, auditierbarer Datenaustausch | [Wirkungsdatenraum](https://wirkungsoekonomie.de/begriffe/wirkungsdatenraum/) |
+| Wirkungsrückkopplung | Rückführung in Entscheidungen | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
+| KII | Key Impact Indicator | [KII](https://wirkungsoekonomie.de/begriffe/kii/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -305,9 +305,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V6. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
-- Glossar: `begriffe/wirkungsmonitoring`, `begriffe/wirkungsdatenraum`, `begriffe/wirkungsrueckkopplung`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §5
+- [Was ist Wirkungsökonomie?](https://wirkungsoekonomie.de/wirkungsoekonomie.html)
+- Glossar: [Wirkungsmonitoring](https://wirkungsoekonomie.de/begriffe/wirkungsmonitoring/), [Wirkungsdatenraum](https://wirkungsoekonomie.de/begriffe/wirkungsdatenraum/), [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -391,10 +391,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsmonitoring | laufende Beobachtung der Wirkung über KIIs | `begriffe/wirkungsmonitoring` |
-| Wirkungsdatenraum | strukturierter, auditierbarer Datenaustausch | `begriffe/wirkungsdatenraum` |
-| Wirkungsrückkopplung | Rückführung in Entscheidungen | `begriffe/wirkungsrueckkopplung` |
-| KII | Key Impact Indicator | `begriffe/kii` |
+| Wirkungsmonitoring | laufende Beobachtung der Wirkung über KIIs | [Wirkungsmonitoring](https://wirkungsoekonomie.de/begriffe/wirkungsmonitoring/) |
+| Wirkungsdatenraum | strukturierter, auditierbarer Datenaustausch | [Wirkungsdatenraum](https://wirkungsoekonomie.de/begriffe/wirkungsdatenraum/) |
+| Wirkungsrückkopplung | Rückführung in Entscheidungen | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
+| KII | Key Impact Indicator | [KII](https://wirkungsoekonomie.de/begriffe/kii/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -462,7 +462,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume
 
-*Interne Quelle:* `referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume](https://wirkungsoekonomie.de/referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/)
 
 Kapitel 34 hat T-SROI als Kennzahl für Transformation, Systemwirkung und langfristige Wirkungsqualität eingeführt. Damit ist die methodische Frage gestellt, wie Wirkung nicht nur als Einzelwert, sondern als Veränderung von Zuständen, Risiken und Zukunftspfaden sichtbar wird. Dieses Kapitel schließt Teil V ab und zeigt, welche technische Bedingung dafür nötig ist: Wirkungsdaten müssen verfügbar, prüfbar, verknüpfbar und entscheidungsrelevant werden.
 
@@ -540,7 +540,7 @@ Wirkung ist nun nicht mehr nur ein Begriff. Sie ist nicht nur normative Orientie
 
 ### Quellenanker: Kapitel 80 - Digitalisierung als Infrastruktur der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 80 - Digitalisierung als Infrastruktur der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/)
 
 Digitalisierung wird häufig als Beschleunigung verstanden. Prozesse sollen schneller werden, Formulare elektronisch, Verwaltung online, Berichte automatisiert, Daten abrufbar, Entscheidungen effizienter. Das kann sinnvoll sein. Aber es reicht nicht. Ein schlechter Prozess wird durch Digitalisierung nicht automatisch gut. Ein Formular, das vorher Blindleistung erzeugte, erzeugt digitalisierte Blindleistung, wenn die Logik dahinter gleich bleibt. Eine digitale Verwaltung, die dieselben Daten mehrfach abfragt, ist nicht modern. Sie ist nur schneller im Fehler.
 
@@ -618,7 +618,7 @@ Die Wirkungsökonomie hat kein Dateninteresse an sich. Sie hat ein Rückkopplung
 
 ### Quellenanker: Kapitel 81 - Wirkungsdatenräume
 
-*Interne Quelle:* `referenz/kapitel-081-wirkungsdatenraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 81 - Wirkungsdatenräume](https://wirkungsoekonomie.de/referenz/kapitel-081-wirkungsdatenraeume/)
 
 Kapitel 80 hat Digitalisierung als Infrastruktur der Wirkungsökonomie beschrieben. Digitale Systeme werden wirkungsökonomisch nicht daran gemessen, ob sie Prozesse beschleunigen, sondern ob sie bessere Wahrnehmung, Rückkopplung, Lernfähigkeit und demokratische Kontrolle ermöglichen. Dieses Kapitel führt diese Logik weiter. Es erklärt den Wirkungsdatenraum als technische und institutionelle Grundlage, durch die Wirkung zwischen Wirtschaft, Staat, Wissenschaft, Kapital, Lieferketten, Produkten, Verwaltung und Öffentlichkeit nutzbar wird.
 
@@ -696,7 +696,7 @@ Herkunft bedeutet: Jeder relevante Wert braucht eine Quelle. Ist er gemessen, ge
 
 ### Quellenanker: Wirkungsökonomie · Datenraum-Reifegradcheck · https://wirkungsoekonomie.de/werkzeuge/datenraum-reifegradcheck/ · Druckdatum: 2026-05-24
 
-*Interne Quelle:* `werkzeuge/datenraum-reifegradcheck/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Datenraum-Reifegradcheck · https://wirkungsoekonomie.de/werkzeuge/datenraum-reifegradcheck/ · Druckdatum: 2026-05-24](https://wirkungsoekonomie.de/werkzeuge/datenraum-reifegradcheck/)
 
 Reifegradcheck · Methodik
 
@@ -788,7 +788,7 @@ Wirkungsmonitoring und Wirkungsdatenräume ist kein Randthema. Es zeigt, ob die 
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -799,17 +799,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v6-monitoring-wirkungsdatenraeume.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

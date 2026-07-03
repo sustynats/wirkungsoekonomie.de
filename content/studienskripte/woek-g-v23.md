@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G2.4  
 **Titel:** Unsicherheit, Ambivalenz und transparente Bewertung  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v23.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v23.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V23
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** V22 „Wirkungssprache und Quellenklarheit"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -88,10 +88,10 @@ So entsteht Entscheidungsfähigkeit ohne Scheinsicherheit. Unsicherheit wird nic
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Ambivalenz | gleichzeitige positive und negative Wirkungsaspekte | `begriffe/zielkonflikt` |
-| Datenqualität | Verlässlichkeit, Aktualität und Passung von Daten | `begriffe/datenqualitaet` |
-| Nichtkompensation | Schutz gegen das Wegrechnen schwerer Schäden | `begriffe/nichtkompensation` |
-| Rückkopplung | Lernen aus Bewertung und tatsächlichen Folgen | `begriffe/wirkungsrueckkopplung` |
+| Ambivalenz | gleichzeitige positive und negative Wirkungsaspekte | [Zielkonflikt](https://wirkungsoekonomie.de/begriffe/zielkonflikt/) |
+| Datenqualität | Verlässlichkeit, Aktualität und Passung von Daten | [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/) |
+| Nichtkompensation | Schutz gegen das Wegrechnen schwerer Schäden | [Nichtkompensation](https://wirkungsoekonomie.de/begriffe/nichtkompensation/) |
+| Rückkopplung | Lernen aus Bewertung und tatsächlichen Folgen | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -269,9 +269,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V23. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Messung, Bewertung, Rückkopplung
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/zielkonflikt`, `begriffe/datenqualitaet`, `begriffe/nichtkompensation`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Messung, Bewertung, Rückkopplung
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Zielkonflikt](https://wirkungsoekonomie.de/begriffe/zielkonflikt/), [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/), [Nichtkompensation](https://wirkungsoekonomie.de/begriffe/nichtkompensation/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -355,10 +355,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Ambivalenz | gleichzeitige positive und negative Wirkungsaspekte | `begriffe/zielkonflikt` |
-| Datenqualität | Verlässlichkeit, Aktualität und Passung von Daten | `begriffe/datenqualitaet` |
-| Nichtkompensation | Schutz gegen das Wegrechnen schwerer Schäden | `begriffe/nichtkompensation` |
-| Rückkopplung | Lernen aus Bewertung und tatsächlichen Folgen | `begriffe/wirkungsrueckkopplung` |
+| Ambivalenz | gleichzeitige positive und negative Wirkungsaspekte | [Zielkonflikt](https://wirkungsoekonomie.de/begriffe/zielkonflikt/) |
+| Datenqualität | Verlässlichkeit, Aktualität und Passung von Daten | [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/) |
+| Nichtkompensation | Schutz gegen das Wegrechnen schwerer Schäden | [Nichtkompensation](https://wirkungsoekonomie.de/begriffe/nichtkompensation/) |
+| Rückkopplung | Lernen aus Bewertung und tatsächlichen Folgen | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 2
 
@@ -425,7 +425,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz
 
-*Interne Quelle:* `referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html`
+*Öffentliche Quelle:* [Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/)
 
 ### 23.1 Warum Wirkung immer auch Risiko bedeutet
 
@@ -503,7 +503,7 @@ Demokratische Resilienz bedeutet daher nicht nur Schutz von Wahlen. Sie umfasst 
 
 ### Quellenanker: Kapitel 30 - Von Wirkung zu Messung
 
-*Interne Quelle:* `referenz/kapitel-030-von-wirkung-zu-messung/index.html`
+*Öffentliche Quelle:* [Kapitel 30 - Von Wirkung zu Messung](https://wirkungsoekonomie.de/referenz/kapitel-030-von-wirkung-zu-messung/)
 
 Diese Frage bildet den Übergang von der normativen Ordnung zur Messarchitektur. Ohne Messung bleibt Wirkung ein Anspruch. Ohne Maßstab bleibt Messung blind. Ohne Rückkopplung bleibt Messung folgenlos. Die Wirkungsökonomie braucht daher eine Methodik, die Wirkung sichtbar macht, ohne ihre Komplexität zu zerstören.
 
@@ -581,7 +581,7 @@ Weber, Natalie: Grundlagenpapier Wirkungsökonomie, 2025. Grundlage für Wirkung
 
 ### Quellenanker: Kapitel 32 - Benchmarks, Skalen und Scorecards
 
-*Interne Quelle:* `referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html`
+*Öffentliche Quelle:* [Kapitel 32 - Benchmarks, Skalen und Scorecards](https://wirkungsoekonomie.de/referenz/kapitel-032-benchmarks-skalen-und-scorecards/)
 
 Kapitel 31 hat die WÖk-ID als Ordnungseinheit eingeführt. Sie macht Wirkungsindikatoren adressierbar, prüfbar und versionierbar. Damit ist jedoch noch keine Bewertung entstanden. Ein Messwert allein sagt nicht, ob eine Wirkung gut, schwach, riskant, durchschnittlich, schädlich oder transformativ ist. Ein Wasserverbrauch, eine Emissionsmenge, eine Unfallquote, ein Living-Wage-Anteil, ein Recyclingwert oder eine Transparenzkennzahl erhalten ihre Bedeutung erst durch Vergleich, Kontext und Schwellenwert.
 
@@ -659,7 +659,7 @@ Ebenso ersetzt der NWI keine Lebenszyklusanalyse, keine ESRS-Berichterstattung, 
 
 ### Quellenanker: Kapitel 34 - T-SROI und systemische Transformationsmessung
 
-*Interne Quelle:* `referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html`
+*Öffentliche Quelle:* [Kapitel 34 - T-SROI und systemische Transformationsmessung](https://wirkungsoekonomie.de/referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/)
 
 Kapitel 33 hat eine methodische Grenze gesetzt: Eine starke Wirkung in einem Feld darf schwere Schäden in einem anderen Feld nicht unsichtbar machen. Die Reverse Merit Order schützt die Wirkungsbewertung vor Durchschnittstäuschung, Ablasslogik und falsch positiver Gesamtbilanz. Kapitel 32 hat dafür bereits die operative Kennzahl eingeführt: den Netto-Wirkungs-Index, kurz NWI. Er bewertet die Netto-Wirkung eines Bewertungsgegenstands in einem definierten Wirkungsraum.
 
@@ -737,7 +737,7 @@ Transformation bedeutet nicht Größe um jeden Preis. Ein kleiner Wirkungsraum k
 
 ### Quellenanker: Kapitel 106 - Die Fehlbarkeit der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 106 - Die Fehlbarkeit der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/)
 
 Eine Wirkungsökonomie, die ihre eigene Fehlbarkeit nicht anerkennt, würde ihren Kern verraten. Sie würde Wirkung zur neuen Gewissheitsformel machen, obwohl Wirkung in komplexen Systemen nie vollständig vorhersagbar, nie vollständig messbar und nie endgültig bewertbar ist.
 
@@ -829,7 +829,7 @@ Unsicherheit, Ambivalenz und transparente Bewertung ist kein Randthema. Es zeigt
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -840,17 +840,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

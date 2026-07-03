@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G2.3  
 **Titel:** Produkte, Technologien und Institutionen als Auslöser  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v21-produkte-technologien-institutionen-als-ausloeser.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v21.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v21.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V21
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** V20 „Gesellschaftliche Resonanzfaktoren"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Die zentrale Lernfrage lautet: **Was löst der Auslöser aus?** Welche Menschen 
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Auslöser | Produkt, Handlung, Regel oder Technologie, die einen Wirkpfad startet | `begriffe/wirkungspfad` |
-| Wirkungsträger | Einheit, über die Wirkung vermittelt wird | `begriffe/wirkungstraeger` |
-| Wirkungsraum | Kontext, in dem Wirkung entsteht und Betroffene erreicht | `begriffe/wirkungsraum` |
-| positive Netto-Wirkung | bewertete Zielgröße nach positiven und negativen Wirkungen | `begriffe/positive-netto-wirkung` |
+| Auslöser | Produkt, Handlung, Regel oder Technologie, die einen Wirkpfad startet | [Wirkungspfad](https://wirkungsoekonomie.de/begriffe/wirkungspfad/) |
+| Wirkungsträger | Einheit, über die Wirkung vermittelt wird | [Wirkungstraeger](https://wirkungsoekonomie.de/begriffe/wirkungstraeger/) |
+| Wirkungsraum | Kontext, in dem Wirkung entsteht und Betroffene erreicht | [Wirkungsraum](https://wirkungsoekonomie.de/begriffe/wirkungsraum/) |
+| positive Netto-Wirkung | bewertete Zielgröße nach positiven und negativen Wirkungen | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -235,9 +235,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V21. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Produkte, Märkte, öffentliche Räume
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/wirkungstraeger`, `begriffe/wirkungsraum`, `begriffe/positive-netto-wirkung`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Produkte, Märkte, öffentliche Räume
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Wirkungstraeger](https://wirkungsoekonomie.de/begriffe/wirkungstraeger/), [Wirkungsraum](https://wirkungsoekonomie.de/begriffe/wirkungsraum/), [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -321,10 +321,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Auslöser | Produkt, Handlung, Regel oder Technologie, die einen Wirkpfad startet | `begriffe/wirkungspfad` |
-| Wirkungsträger | Einheit, über die Wirkung vermittelt wird | `begriffe/wirkungstraeger` |
-| Wirkungsraum | Kontext, in dem Wirkung entsteht und Betroffene erreicht | `begriffe/wirkungsraum` |
-| positive Netto-Wirkung | bewertete Zielgröße nach positiven und negativen Wirkungen | `begriffe/positive-netto-wirkung` |
+| Auslöser | Produkt, Handlung, Regel oder Technologie, die einen Wirkpfad startet | [Wirkungspfad](https://wirkungsoekonomie.de/begriffe/wirkungspfad/) |
+| Wirkungsträger | Einheit, über die Wirkung vermittelt wird | [Wirkungstraeger](https://wirkungsoekonomie.de/begriffe/wirkungstraeger/) |
+| Wirkungsraum | Kontext, in dem Wirkung entsteht und Betroffene erreicht | [Wirkungsraum](https://wirkungsoekonomie.de/begriffe/wirkungsraum/) |
+| positive Netto-Wirkung | bewertete Zielgröße nach positiven und negativen Wirkungen | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 2
 
@@ -391,7 +391,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 48 - Produkte als Wirkungsträger
 
-*Interne Quelle:* `referenz/kapitel-048-produkte-als-wirkungstraeger/index.html`
+*Öffentliche Quelle:* [Kapitel 48 - Produkte als Wirkungsträger](https://wirkungsoekonomie.de/referenz/kapitel-048-produkte-als-wirkungstraeger/)
 
 Diese Wirkung beginnt nicht im Ladenregal. Sie beginnt bei Rohstoffen, Boden, Wasser, Energie, Arbeit, Daten, Maschinen, Lieferketten, Eigentumsstrukturen, Transportwegen und Produktionsentscheidungen. Sie setzt sich in Nutzung, Reparierbarkeit, Lebensdauer, Gesundheit, Zugang, Sicherheit, Entsorgung und Kreislauffähigkeit fort. Manche Wirkungen entstehen direkt. Andere entstehen indirekt, verzögert oder systemisch. Ein Produkt kann Menschen entlasten, Gesundheit schützen, Ressourcen schonen, Arbeit fairer machen und Regeneration ermöglichen. Es kann aber auch Wasserstress, Ausbeutung, Schadstoffe, Abhängigkeit, Überwachung, Abfall, Gesundheitsrisiken oder demokratische Nebenwirkungen erzeugen [I-K48-1; I-K48-2].
 
@@ -469,7 +469,7 @@ Endnoten und Quellen zu Kapitel 48
 
 ### Quellenanker: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume
 
-*Interne Quelle:* `referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume](https://wirkungsoekonomie.de/referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/)
 
 Kapitel 34 hat T-SROI als Kennzahl für Transformation, Systemwirkung und langfristige Wirkungsqualität eingeführt. Damit ist die methodische Frage gestellt, wie Wirkung nicht nur als Einzelwert, sondern als Veränderung von Zuständen, Risiken und Zukunftspfaden sichtbar wird. Dieses Kapitel schließt Teil V ab und zeigt, welche technische Bedingung dafür nötig ist: Wirkungsdaten müssen verfügbar, prüfbar, verknüpfbar und entscheidungsrelevant werden.
 
@@ -547,7 +547,7 @@ Wirkung ist nun nicht mehr nur ein Begriff. Sie ist nicht nur normative Orientie
 
 ### Quellenanker: Kapitel 42 - Unternehmen als Wirkungssysteme
 
-*Interne Quelle:* `referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html`
+*Öffentliche Quelle:* [Kapitel 42 - Unternehmen als Wirkungssysteme](https://wirkungsoekonomie.de/referenz/kapitel-042-unternehmen-als-wirkungssysteme/)
 
 Ein Unternehmen ist dann nicht mehr nur eine Einheit zur Gewinnerzielung. Es ist ein organisierter Wirkungsraum, der Zustände verändert.
 
@@ -625,7 +625,7 @@ Verantwortung über die Bilanz hinaus heißt daher: Unternehmen müssen die Wirk
 
 ### Quellenanker: Kapitel 80 - Digitalisierung als Infrastruktur der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 80 - Digitalisierung als Infrastruktur der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/)
 
 Digitalisierung wird häufig als Beschleunigung verstanden. Prozesse sollen schneller werden, Formulare elektronisch, Verwaltung online, Berichte automatisiert, Daten abrufbar, Entscheidungen effizienter. Das kann sinnvoll sein. Aber es reicht nicht. Ein schlechter Prozess wird durch Digitalisierung nicht automatisch gut. Ein Formular, das vorher Blindleistung erzeugte, erzeugt digitalisierte Blindleistung, wenn die Logik dahinter gleich bleibt. Eine digitale Verwaltung, die dieselben Daten mehrfach abfragt, ist nicht modern. Sie ist nur schneller im Fehler.
 
@@ -703,7 +703,7 @@ Die Wirkungsökonomie hat kein Dateninteresse an sich. Sie hat ein Rückkopplung
 
 ### Quellenanker: Kapitel 98 - Pilotprojekte
 
-*Interne Quelle:* `referenz/kapitel-098-pilotprojekte/index.html`
+*Öffentliche Quelle:* [Kapitel 98 - Pilotprojekte](https://wirkungsoekonomie.de/referenz/kapitel-098-pilotprojekte/)
 
 Kapitel 97 hat den Umsetzungspfad beschrieben: Die Wirkungsökonomie wird nicht als Schock eingeführt, sondern als lernender Steuerungswechsel. Kapitel 98 macht diesen Übergang praktisch.
 
@@ -795,7 +795,7 @@ Produkte, Technologien und Institutionen als Auslöser ist kein Randthema. Es ze
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -806,17 +806,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v21-produkte-technologien-institutionen-als-ausloeser.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

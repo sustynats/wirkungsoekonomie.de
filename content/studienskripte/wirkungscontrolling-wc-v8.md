@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkung in CAPEX, OPEX, Portfolio und Einkauf  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v8-capex-opex-portfolio-einkauf.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v8.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v8.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V8
 **Empfohlene Dauer:** ~55 Min · **Videolänge:** ~16 Min
 **Voraussetzung:** WC-V7
-**Führende Quellen (Repo):** `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` · `docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -74,7 +74,7 @@ Wirkungscontrolling nützt nichts, wenn es neben den echten Finanzentscheidungen
 
 **IoI und NWI als Entscheidungskriterien.** Für die **Priorisierung** knapper Mittel eignet sich der **IoI** (Wirkung pro Euro): Vorhaben werden vergleichbar. Für die **Bewertung** dient der **NWI** samt Scorecard-Profil. Über allem steht die **Reverse Merit Order**: Ein Vorhaben mit kritisch schwachem Wirkungsfeld wird nicht durch guten IoI „hochgekauft" – kritische Felder sind Freigabe-relevant.
 
-**Einkauf und Lieferkette konkret.** Lieferantenentscheidungen laufen über die Scorecard (V4): Ein kritisch schwaches Wirkungsfeld (z. B. Arbeitsrechte) kann **Ausschlusskriterium** sein, nicht nur ein Minuspunkt. So wird Beschaffung zum stärksten Hebel für Netto-Wirkung entlang der Wertschöpfung (`docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md`).
+**Einkauf und Lieferkette konkret.** Lieferantenentscheidungen laufen über die Scorecard (V4): Ein kritisch schwaches Wirkungsfeld (z. B. Arbeitsrechte) kann **Ausschlusskriterium** sein, nicht nur ein Minuspunkt. So wird Beschaffung zum stärksten Hebel für Netto-Wirkung entlang der Wertschöpfung ([Wirkungsökonomie in der Lieferkette](https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/)).
 
 **Verankerung entscheidet.** Damit das trägt, gehören Wirkungskriterien in **Investitionsrichtlinien, Entscheidungs-Templates und Gremien** (Anschluss an L1 V8, Wirkungsstrategie): kein Investitionsantrag ohne Wirkungsabschnitt, kein Lieferant ohne Scorecard. Ohne diese Verankerung bleibt Wirkungscontrolling ein Paralleluniversum neben dem Controlling.
 
@@ -82,10 +82,10 @@ Wirkungscontrolling nützt nichts, wenn es neben den echten Finanzentscheidungen
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| IoI | Netto-Wirkung pro Euro (Priorisierung) | `begriffe/impact-of-investment` |
-| NWI | operative geprüfte Netto-Wirkung | `begriffe/netto-wirkungs-index` |
-| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | `begriffe/reverse-merit-order` |
-| Scorecard | Bewertungsprofil (Lieferant/Vorhaben) | `begriffe/scorecard` |
+| IoI | Netto-Wirkung pro Euro (Priorisierung) | [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/) |
+| NWI | operative geprüfte Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
+| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| Scorecard | Bewertungsprofil (Lieferant/Vorhaben) | [Scorecard](https://wirkungsoekonomie.de/begriffe/scorecard/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -241,9 +241,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V8. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`
-- `docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md`
-- Glossar: `begriffe/impact-of-investment`, `begriffe/reverse-merit-order`, `begriffe/scorecard`
+- [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/)
+- [Wirkungsökonomie in der Lieferkette](https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/)
+- Glossar: [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/), [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/), [Scorecard](https://wirkungsoekonomie.de/begriffe/scorecard/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -327,10 +327,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| IoI | Netto-Wirkung pro Euro (Priorisierung) | `begriffe/impact-of-investment` |
-| NWI | operative geprüfte Netto-Wirkung | `begriffe/netto-wirkungs-index` |
-| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | `begriffe/reverse-merit-order` |
-| Scorecard | Bewertungsprofil (Lieferant/Vorhaben) | `begriffe/scorecard` |
+| IoI | Netto-Wirkung pro Euro (Priorisierung) | [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/) |
+| NWI | operative geprüfte Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
+| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| Scorecard | Bewertungsprofil (Lieferant/Vorhaben) | [Scorecard](https://wirkungsoekonomie.de/begriffe/scorecard/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -398,7 +398,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung
 
-*Interne Quelle:* `referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html`
+*Öffentliche Quelle:* [Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung](https://wirkungsoekonomie.de/referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/)
 
 Kapitel 45 hat gezeigt, dass Wirkung in Unternehmen an Organisation, Rollen, Kultur und Lernfähigkeit gebunden ist. Dieses Kapitel richtet den Blick auf die interne Wertschöpfung und auf Lieferketten. Denn ein Unternehmen wirkt nicht nur durch das, was es im eigenen Werk, Büro oder Geschäftsmodell sichtbar tut. Es wirkt durch das, was es einkauft, ermöglicht, verlangt, duldet und weitergibt.
 
@@ -476,7 +476,7 @@ Supply-Chain-Resilienz verlangt deshalb die Verbindung verschiedener Perspektive
 
 ### Quellenanker: Kapitel 48 - Produkte als Wirkungsträger
 
-*Interne Quelle:* `referenz/kapitel-048-produkte-als-wirkungstraeger/index.html`
+*Öffentliche Quelle:* [Kapitel 48 - Produkte als Wirkungsträger](https://wirkungsoekonomie.de/referenz/kapitel-048-produkte-als-wirkungstraeger/)
 
 Diese Wirkung beginnt nicht im Ladenregal. Sie beginnt bei Rohstoffen, Boden, Wasser, Energie, Arbeit, Daten, Maschinen, Lieferketten, Eigentumsstrukturen, Transportwegen und Produktionsentscheidungen. Sie setzt sich in Nutzung, Reparierbarkeit, Lebensdauer, Gesundheit, Zugang, Sicherheit, Entsorgung und Kreislauffähigkeit fort. Manche Wirkungen entstehen direkt. Andere entstehen indirekt, verzögert oder systemisch. Ein Produkt kann Menschen entlasten, Gesundheit schützen, Ressourcen schonen, Arbeit fairer machen und Regeneration ermöglichen. Es kann aber auch Wasserstress, Ausbeutung, Schadstoffe, Abhängigkeit, Überwachung, Abfall, Gesundheitsrisiken oder demokratische Nebenwirkungen erzeugen [I-K48-1; I-K48-2].
 
@@ -554,7 +554,7 @@ Endnoten und Quellen zu Kapitel 48
 
 ### Quellenanker: Kapitel 49 - Ehrliche Preise
 
-*Interne Quelle:* `referenz/kapitel-049-ehrliche-preise/index.html`
+*Öffentliche Quelle:* [Kapitel 49 - Ehrliche Preise](https://wirkungsoekonomie.de/referenz/kapitel-049-ehrliche-preise/)
 
 Kapitel 48 hat Produkte als Wirkungsträger beschrieben. Ein Produkt ist nicht nur ein Gegenstand mit Preis. Es ist verdichtete Wirkung über seinen gesamten Lebenszyklus. Daraus folgt die nächste Frage: Wenn Produkte Wirkung enthalten, warum zeigt der Preis diese Wirkung so unvollständig?
 
@@ -632,7 +632,7 @@ Ein ehrlicher Preis ist daher kein Endpunkt. Er ist eine Lernfläche. Er zeigt, 
 
 ### Quellenanker: Kapitel 59 - Kapitalmärkte und Fonds
 
-*Interne Quelle:* `referenz/kapitel-059-kapitalmaerkte-und-fonds/index.html`
+*Öffentliche Quelle:* [Kapitel 59 - Kapitalmärkte und Fonds](https://wirkungsoekonomie.de/referenz/kapitel-059-kapitalmaerkte-und-fonds/)
 
 Kapitel 58 hat die Wirkungsrente als Frage beschrieben, wie eine Gesellschaft Lebenswirkung über Zeit anerkennt. Damit rückt Kapital erneut in den Blick. Renten, Transformation, Unternehmen, Infrastruktur, Pflege, Bildung, Energie, Wohnen und Digitalisierung brauchen Finanzierung. Kapital verschwindet in der Wirkungsökonomie nicht. Es verliert nur seine Rolle als oberster Zweck.
 
@@ -710,7 +710,7 @@ Der IOI kann helfen, Kapital nicht nur nach Ertrag, sondern nach positiver Netto
 
 ### Quellenanker: Wirkungsökonomie · Impact-of-Investment (IOI) · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/impact-of-investment/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/impact-of-investment/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Impact-of-Investment (IOI) · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/impact-of-investment/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/impact-of-investment/)
 
 Methodenregister
 
@@ -788,7 +788,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: Wirkungsökonomie · Impact-of-Investment (IOI) · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/impact-of-investment/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/impact-of-investment/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Impact-of-Investment (IOI) · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/impact-of-investment/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/impact-of-investment/)
 
 Einzeldossier · Impact Controlling
 
@@ -866,7 +866,7 @@ Anker im Online-Buch #
 
 ### Quellenanker: Wirkungsökonomie · Portfolio-Wirkungsrating · https://wirkungsoekonomie.de/werkzeuge/portfolio-wirkungsrating/ · Druckdatum: 2026-05-24
 
-*Interne Quelle:* `werkzeuge/portfolio-wirkungsrating/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Portfolio-Wirkungsrating · https://wirkungsoekonomie.de/werkzeuge/portfolio-wirkungsrating/ · Druckdatum: 2026-05-24](https://wirkungsoekonomie.de/werkzeuge/portfolio-wirkungsrating/)
 
 Rating · Methodik
 
@@ -944,7 +944,7 @@ Eingaben: Kapitalbetrag, Assetklasse, Branche/NACE, Zweck, Laufzeit, Datenqualit
 
 ### Quellenanker: Paper · Praxispaper · 04. Juni 2026
 
-*Interne Quelle:* `dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/index.html`
+*Öffentliche Quelle:* [Paper · Praxispaper · 04. Juni 2026](https://wirkungsoekonomie.de/dokumente/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/)
 
 Ein anonymisiertes Praxispaper aus der Chemieindustrie
 
@@ -1036,7 +1036,7 @@ Wirkung in CAPEX, OPEX, Portfolio und Einkauf ist kein Randthema. Es zeigt, ob d
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -1047,17 +1047,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v8-capex-opex-portfolio-einkauf.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

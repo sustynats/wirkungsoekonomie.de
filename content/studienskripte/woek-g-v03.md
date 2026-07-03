@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G1.1  
 **Titel:** Die Wirkungsökonomie als neue Steuerungslogik  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v03.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v03.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v03.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 9 - Die einfache Idee
 
-*Interne Quelle:* `referenz/kapitel-009-die-einfache-idee/index.html`
+*Öffentliche Quelle:* [Kapitel 9 - Die einfache Idee](https://wirkungsoekonomie.de/referenz/kapitel-009-die-einfache-idee/)
 
 Die Wirkungsökonomie beginnt mit einem einfachen Satz:
 
@@ -311,7 +311,7 @@ Das verändert die Sprache. Kapitalrendite ist dann nicht mehr die oberste Frage
 
 ### Quellenanker: Kapitel 16 - Das Begriffssystem der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 16 - Das Begriffssystem der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/)
 
 Die Wirkungsökonomie braucht eine klare Sprache. Ohne klare Begriffe wird Wirkung zu einem Sammelwort. Dann kann jede Maßnahme, jedes Ziel, jedes Projekt, jede Haltung und jede Kommunikationsabsicht als Wirkung bezeichnet werden. Genau das darf nicht geschehen.
 
@@ -389,7 +389,7 @@ Normativer Wert beschreibt die Bewertung einer Wirkung gemessen an Mensch, Plane
 
 ### Quellenanker: Kapitel 21 - Das Wirkungsrad
 
-*Interne Quelle:* `referenz/kapitel-021-das-wirkungsrad/index.html`
+*Öffentliche Quelle:* [Kapitel 21 - Das Wirkungsrad](https://wirkungsoekonomie.de/referenz/kapitel-021-das-wirkungsrad/)
 
 ### 21.1 Warum ein Rad nötig ist
 
@@ -467,7 +467,7 @@ Das Rad wird an diesem Punkt praktisch. Wirkung wird nicht nur beschrieben. Sie 
 
 ### Quellenanker: Kapitel 22 - Wirkungslenkung
 
-*Interne Quelle:* `referenz/kapitel-022-wirkungslenkung/index.html`
+*Öffentliche Quelle:* [Kapitel 22 - Wirkungslenkung](https://wirkungsoekonomie.de/referenz/kapitel-022-wirkungslenkung/)
 
 ### 22.1 Von der Bewertung zur Entscheidung
 
@@ -559,7 +559,7 @@ Die Wirkungsökonomie als neue Steuerungslogik ist kein Randthema. Es zeigt, ob 
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -732,17 +732,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V03. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v03.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G3.3  
 **Titel:** Scorecards und Bewertungsprofile  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v32-scorecards-und-bewertungsprofile.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v32.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v32.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V32
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** V31 „Von Einzelwirkung zu Netto-Wirkung"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Damit eine Scorecard glaubwürdig bleibt, braucht sie Quellenklarheit, Datenqual
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Scorecard | strukturierte Wirkungsbewertung über Felder und Indikatoren | `begriffe/scorecard` |
-| Bewertungsprofil | sichtbare Verteilung der Scores über Felder | `begriffe/wirkungsprofil` |
-| FinalScore | verdichteter Wert, der das Profil nicht verdecken darf | `begriffe/finalscore` |
-| Datenqualität | Belastbarkeit der zugrunde liegenden Daten | `begriffe/datenqualitaet` |
+| Scorecard | strukturierte Wirkungsbewertung über Felder und Indikatoren | [Scorecard](https://wirkungsoekonomie.de/begriffe/scorecard/) |
+| Bewertungsprofil | sichtbare Verteilung der Scores über Felder | [Wirkungsprofil](https://wirkungsoekonomie.de/begriffe/wirkungsprofil/) |
+| FinalScore | verdichteter Wert, der das Profil nicht verdecken darf | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| Datenqualität | Belastbarkeit der zugrunde liegenden Daten | [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -277,9 +277,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V32. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Scorecards, Wirkungsmessung
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/scorecard`, `begriffe/finalscore`, `begriffe/datenqualitaet`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Scorecards, Wirkungsmessung
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Scorecard](https://wirkungsoekonomie.de/begriffe/scorecard/), [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/), [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -363,10 +363,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Scorecard | strukturierte Wirkungsbewertung über Felder und Indikatoren | `begriffe/scorecard` |
-| Bewertungsprofil | sichtbare Verteilung der Scores über Felder | `begriffe/wirkungsprofil` |
-| FinalScore | verdichteter Wert, der das Profil nicht verdecken darf | `begriffe/finalscore` |
-| Datenqualität | Belastbarkeit der zugrunde liegenden Daten | `begriffe/datenqualitaet` |
+| Scorecard | strukturierte Wirkungsbewertung über Felder und Indikatoren | [Scorecard](https://wirkungsoekonomie.de/begriffe/scorecard/) |
+| Bewertungsprofil | sichtbare Verteilung der Scores über Felder | [Wirkungsprofil](https://wirkungsoekonomie.de/begriffe/wirkungsprofil/) |
+| FinalScore | verdichteter Wert, der das Profil nicht verdecken darf | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| Datenqualität | Belastbarkeit der zugrunde liegenden Daten | [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 4
 
@@ -433,7 +433,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 32 - Benchmarks, Skalen und Scorecards
 
-*Interne Quelle:* `referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html`
+*Öffentliche Quelle:* [Kapitel 32 - Benchmarks, Skalen und Scorecards](https://wirkungsoekonomie.de/referenz/kapitel-032-benchmarks-skalen-und-scorecards/)
 
 Kapitel 31 hat die WÖk-ID als Ordnungseinheit eingeführt. Sie macht Wirkungsindikatoren adressierbar, prüfbar und versionierbar. Damit ist jedoch noch keine Bewertung entstanden. Ein Messwert allein sagt nicht, ob eine Wirkung gut, schwach, riskant, durchschnittlich, schädlich oder transformativ ist. Ein Wasserverbrauch, eine Emissionsmenge, eine Unfallquote, ein Living-Wage-Anteil, ein Recyclingwert oder eine Transparenzkennzahl erhalten ihre Bedeutung erst durch Vergleich, Kontext und Schwellenwert.
 
@@ -511,7 +511,7 @@ Ebenso ersetzt der NWI keine Lebenszyklusanalyse, keine ESRS-Berichterstattung, 
 
 ### Quellenanker: Kapitel 50 - Produktscorecards
 
-*Interne Quelle:* `referenz/kapitel-050-produktscorecards/index.html`
+*Öffentliche Quelle:* [Kapitel 50 - Produktscorecards](https://wirkungsoekonomie.de/referenz/kapitel-050-produktscorecards/)
 
 Kapitel 48 hat Produkte als Wirkungsträger beschrieben. Kapitel 49 hat gezeigt, warum Preise realere Wirkungen sichtbar machen müssen. Zwischen Produktdaten und Preissignal steht eine methodische Frage: Wie wird aus vielen Daten eine nachvollziehbare Bewertung, ohne das Produkt auf eine einzige Zahl zu verkürzen?
 
@@ -589,7 +589,7 @@ Die dritte Grenze liegt in Sonderfällen. Manche Produkte haben sehr lange Nutzu
 
 ### Quellenanker: Kapitel 51 - Das Apfelbeispiel
 
-*Interne Quelle:* `referenz/kapitel-051-das-apfelbeispiel/index.html`
+*Öffentliche Quelle:* [Kapitel 51 - Das Apfelbeispiel](https://wirkungsoekonomie.de/referenz/kapitel-051-das-apfelbeispiel/)
 
 Kapitel 48 hat Produkte als Wirkungsträger beschrieben. Kapitel 49 hat gezeigt, warum Preise unvollständig bleiben, wenn sie reale Wirkungen verschweigen. Kapitel 50 hat die Produktscorecard als methodisches Instrument eingeführt. Dieses Kapitel verbindet diese Logik an einem einfachen Beispiel: Dem Apfel.
 
@@ -667,7 +667,7 @@ Der Apfel zeigt daher die gesamte Logik in einfacher Form: Produkt, Klassifikati
 
 ### Quellenanker: Wirkungsökonomie · Scorecards · https://wirkungsoekonomie.de/werkzeuge/scorecards/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/scorecards/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Scorecards · https://wirkungsoekonomie.de/werkzeuge/scorecards/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/scorecards/)
 
 Methodenregister
 
@@ -745,7 +745,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: Wirkungsökonomie · Scorecards, Benchmarks und Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Scorecards, Benchmarks und Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/)
 
 Methodenpapier 22 · Go 10
 
@@ -823,7 +823,7 @@ Inhaltsübersicht #
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html`
+*Öffentliche Quelle:* [Von der wissensgesellschaft zur wirkungsgesellschaft](https://wirkungsoekonomie.de/dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/)
 
 Dossier · Erweiterte öffentliche Dossierfassung v2.0 · Stand 15. Juni 2026
 
@@ -915,7 +915,7 @@ Scorecards und Bewertungsprofile ist kein Randthema. Es zeigt, ob die WÖk nur s
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -926,17 +926,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v32-scorecards-und-bewertungsprofile.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

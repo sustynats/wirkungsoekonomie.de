@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G2.4  
 **Titel:** Wirkungssprache und Quellenklarheit  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v22-wirkungssprache-und-quellenklarheit.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v22.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v22.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V22
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** V21 „Produkte, Technologien und Institutionen als Auslöser"
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Praktische Wirkungssprache arbeitet deshalb mit drei Sätzen: **Was wissen wir? 
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkung | tatsächliche Veränderung von Zuständen | `begriffe/wirkung` |
-| Wirkungspotenzial | mögliche Wirkung unter bestimmten Bedingungen | `begriffe/wirkungspotenzial` |
-| Wirkungsrisiko | mögliche negative oder unbeabsichtigte Wirkung | `begriffe/wirkungsrisiko` |
-| Impact-Washing | übertriebene oder unklare Wirkungsbehauptung | `begriffe/impact-washing` |
+| Wirkung | tatsächliche Veränderung von Zuständen | [Wirkung](https://wirkungsoekonomie.de/begriffe/wirkung/) |
+| Wirkungspotenzial | mögliche Wirkung unter bestimmten Bedingungen | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
+| Wirkungsrisiko | mögliche negative oder unbeabsichtigte Wirkung | [Wirkungsrisiko](https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/) |
+| Impact-Washing | übertriebene oder unklare Wirkungsbehauptung | [Impact washing](https://wirkungsoekonomie.de/begriffe/impact-washing/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -247,9 +247,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V22. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf`
-- Glossar: `begriffe/wirkung`, `begriffe/wirkungspotenzial`, `begriffe/wirkungsrisiko`, `begriffe/impact-washing`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html)
+- Glossar: [Wirkung](https://wirkungsoekonomie.de/begriffe/wirkung/), [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/), [Wirkungsrisiko](https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/), [Impact washing](https://wirkungsoekonomie.de/begriffe/impact-washing/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -333,10 +333,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkung | tatsächliche Veränderung von Zuständen | `begriffe/wirkung` |
-| Wirkungspotenzial | mögliche Wirkung unter bestimmten Bedingungen | `begriffe/wirkungspotenzial` |
-| Wirkungsrisiko | mögliche negative oder unbeabsichtigte Wirkung | `begriffe/wirkungsrisiko` |
-| Impact-Washing | übertriebene oder unklare Wirkungsbehauptung | `begriffe/impact-washing` |
+| Wirkung | tatsächliche Veränderung von Zuständen | [Wirkung](https://wirkungsoekonomie.de/begriffe/wirkung/) |
+| Wirkungspotenzial | mögliche Wirkung unter bestimmten Bedingungen | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
+| Wirkungsrisiko | mögliche negative oder unbeabsichtigte Wirkung | [Wirkungsrisiko](https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/) |
+| Impact-Washing | übertriebene oder unklare Wirkungsbehauptung | [Impact washing](https://wirkungsoekonomie.de/begriffe/impact-washing/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 2
 
@@ -403,7 +403,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 16 - Das Begriffssystem der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 16 - Das Begriffssystem der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/)
 
 Die Wirkungsökonomie braucht eine klare Sprache. Ohne klare Begriffe wird Wirkung zu einem Sammelwort. Dann kann jede Maßnahme, jedes Ziel, jedes Projekt, jede Haltung und jede Kommunikationsabsicht als Wirkung bezeichnet werden. Genau das darf nicht geschehen.
 
@@ -481,7 +481,7 @@ Normativer Wert beschreibt die Bewertung einer Wirkung gemessen an Mensch, Plane
 
 ### Quellenanker: Kapitel 30 - Von Wirkung zu Messung
 
-*Interne Quelle:* `referenz/kapitel-030-von-wirkung-zu-messung/index.html`
+*Öffentliche Quelle:* [Kapitel 30 - Von Wirkung zu Messung](https://wirkungsoekonomie.de/referenz/kapitel-030-von-wirkung-zu-messung/)
 
 Diese Frage bildet den Übergang von der normativen Ordnung zur Messarchitektur. Ohne Messung bleibt Wirkung ein Anspruch. Ohne Maßstab bleibt Messung blind. Ohne Rückkopplung bleibt Messung folgenlos. Die Wirkungsökonomie braucht daher eine Methodik, die Wirkung sichtbar macht, ohne ihre Komplexität zu zerstören.
 
@@ -559,7 +559,7 @@ Weber, Natalie: Grundlagenpapier Wirkungsökonomie, 2025. Grundlage für Wirkung
 
 ### Quellenanker: Kapitel 74 - Öffentlichkeit als Wirkungsraum
 
-*Interne Quelle:* `referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html`
+*Öffentliche Quelle:* [Kapitel 74 - Öffentlichkeit als Wirkungsraum](https://wirkungsoekonomie.de/referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/)
 
 Öffentlichkeit ist nicht nur der Ort, an dem Meinungen erscheinen. Sie ist die Rückkopplungsinfrastruktur, durch die eine Demokratie Wirklichkeit prüfen und sich selbst korrigieren kann.
 
@@ -637,7 +637,7 @@ Damit wird Öffentlichkeit nicht verengt. Sie wird ernst genommen. Die nächsten
 
 ### Quellenanker: Kapitel 76 - Framing, Sprache und Tonalität
 
-*Interne Quelle:* `referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html`
+*Öffentliche Quelle:* [Kapitel 76 - Framing, Sprache und Tonalität](https://wirkungsoekonomie.de/referenz/kapitel-076-framing-sprache-und-tonalitaet/)
 
 Kapitel 75 hat gezeigt, dass Plattformen Sichtbarkeit, Aufmerksamkeit und Resonanz steuern. Dieses Kapitel richtet den Blick auf das, was in diesen Räumen zirkuliert: Sprache, Bilder, Tonalität, Frames, Mimik, Stimme, Wiederholung, Metaphern und Kampfbegriffe. Kommunikation ist nicht nur Übertragung von Information. Sie schafft Wirkungspotenzial. Sie ordnet Wahrnehmung, Emotion, Zugehörigkeit und Handlungsschwellen.
 
@@ -715,7 +715,7 @@ Hate Speech braucht rechtsstaatlich präzise Grenzziehung und verhältnismäßig
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html`
+*Öffentliche Quelle:* [Von der wissensgesellschaft zur wirkungsgesellschaft](https://wirkungsoekonomie.de/dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/)
 
 Dossier · Erweiterte öffentliche Dossierfassung v2.0 · Stand 15. Juni 2026
 
@@ -807,7 +807,7 @@ Wirkungssprache und Quellenklarheit ist kein Randthema. Es zeigt, ob die WÖk nu
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -818,17 +818,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v22-wirkungssprache-und-quellenklarheit.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

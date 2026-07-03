@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungsziele und Wirkungslogik in Organisationen  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v3-wirkungsziele-wirkungslogik.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v3.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v3.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V3
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WM-V2
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -84,9 +84,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 |---|---|---|
 | Wirkungsziel | angestrebte, am Referenzrahmen bewertbare Veränderung beim Empfänger | _(noch keine Seite – ggf. anlegen)_ |
 | Wirkungslogik | explizite Verbindung von Aktivität, Mechanismus, Zielveränderung und Annahmen | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkmechanismus | wie Wirkung entstehen soll oder kann | `begriffe/wirkmechanismus` |
-| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
-| Wirkungsempfänger | diejenigen, bei denen Veränderung eintritt | `begriffe/wirkungsempfaenger` |
+| Wirkmechanismus | wie Wirkung entstehen soll oder kann | [Wirkmechanismus](https://wirkungsoekonomie.de/begriffe/wirkmechanismus/) |
+| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
+| Wirkungsempfänger | diejenigen, bei denen Veränderung eintritt | [Wirkungsempfaenger](https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -300,9 +300,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V3. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5/§6
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
-- Glossar: `begriffe/wirkmechanismus`, `begriffe/wirkungsempfaenger`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §5/§6
+- [Was ist Wirkungsökonomie?](https://wirkungsoekonomie.de/wirkungsoekonomie.html)
+- Glossar: [Wirkmechanismus](https://wirkungsoekonomie.de/begriffe/wirkmechanismus/), [Wirkungsempfaenger](https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -388,9 +388,9 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 |---|---|---|
 | Wirkungsziel | angestrebte, am Referenzrahmen bewertbare Veränderung beim Empfänger | _(noch keine Seite – ggf. anlegen)_ |
 | Wirkungslogik | explizite Verbindung von Aktivität, Mechanismus, Zielveränderung und Annahmen | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkmechanismus | wie Wirkung entstehen soll oder kann | `begriffe/wirkmechanismus` |
-| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
-| Wirkungsempfänger | diejenigen, bei denen Veränderung eintritt | `begriffe/wirkungsempfaenger` |
+| Wirkmechanismus | wie Wirkung entstehen soll oder kann | [Wirkmechanismus](https://wirkungsoekonomie.de/begriffe/wirkmechanismus/) |
+| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
+| Wirkungsempfänger | diejenigen, bei denen Veränderung eintritt | [Wirkungsempfaenger](https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -458,7 +458,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 21 - Das Wirkungsrad
 
-*Interne Quelle:* `referenz/kapitel-021-das-wirkungsrad/index.html`
+*Öffentliche Quelle:* [Kapitel 21 - Das Wirkungsrad](https://wirkungsoekonomie.de/referenz/kapitel-021-das-wirkungsrad/)
 
 ### 21.1 Warum ein Rad nötig ist
 
@@ -536,7 +536,7 @@ Das Rad wird an diesem Punkt praktisch. Wirkung wird nicht nur beschrieben. Sie 
 
 ### Quellenanker: Kapitel 43 - Wirkungsorientierte Unternehmensführung
 
-*Interne Quelle:* `referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html`
+*Öffentliche Quelle:* [Kapitel 43 - Wirkungsorientierte Unternehmensführung](https://wirkungsoekonomie.de/referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/)
 
 Kapitel 42 hat Unternehmen als Wirkungssysteme beschrieben. Ein Unternehmen ist nicht nur eine Einheit zur Gewinnerzielung, sondern ein organisierter Wirkungsraum. Daraus folgt eine neue Führungsfrage: Wie werden Wahrnehmung, Entscheidung, Verantwortung und Korrektur so gestaltet, dass ein Unternehmen positive Wirkung erzeugen und negative Wirkung begrenzen kann?
 
@@ -614,7 +614,7 @@ Führung heißt in dieser Logik nicht Kontrolle jedes Details. Führung heißt, 
 
 ### Quellenanker: Kapitel 44 - Wirkungscontrolling im Unternehmen
 
-*Interne Quelle:* `referenz/kapitel-044-wirkungscontrolling-im-unternehmen/index.html`
+*Öffentliche Quelle:* [Kapitel 44 - Wirkungscontrolling im Unternehmen](https://wirkungsoekonomie.de/referenz/kapitel-044-wirkungscontrolling-im-unternehmen/)
 
 Kapitel 43 hat Führung als Gestaltung von Rückkopplung, Verantwortung, Lernfähigkeit und Systemintelligenz beschrieben. Wenn Führung Wirkung ermöglichen soll, braucht sie Informationen, die mehr zeigen als Umsatz, Kosten, Marge und Termine. Sie braucht Daten, die Auskunft darüber geben, welche Zustände ein Unternehmen durch seine Entscheidungen verändert.
 
@@ -692,7 +692,7 @@ In der Produktentwicklung bedeutet Rückkopplung: Wirkung wird nicht erst nach M
 
 ### Quellenanker: Wirkungsökonomie · KII statt KPI · https://wirkungsoekonomie.de/werkzeuge/kii-statt-kpi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/kii-statt-kpi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · KII statt KPI · https://wirkungsoekonomie.de/werkzeuge/kii-statt-kpi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/kii-statt-kpi/)
 
 Methodenregister
 
@@ -784,7 +784,7 @@ Wirkungsziele und Wirkungslogik in Organisationen ist kein Randthema. Es zeigt, 
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -795,17 +795,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v3-wirkungsziele-wirkungslogik.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

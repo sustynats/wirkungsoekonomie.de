@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G2.1  
 **Titel:** Handlung, Unterlassen und Zustandsveränderung  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v13.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v13.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v13.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 12 - Handlung, Unterlassen und Rückkopplung
 
-*Interne Quelle:* `referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/index.html`
+*Öffentliche Quelle:* [Kapitel 12 - Handlung, Unterlassen und Rückkopplung](https://wirkungsoekonomie.de/referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/)
 
 ### 12.1 Warum Handlung allein nicht reicht
 
@@ -311,7 +311,7 @@ Das Wirkungssteuergesetz ist dafür ein Beispiel. Es macht Wirkung nicht nur sic
 
 ### Quellenanker: Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume
 
-*Interne Quelle:* `referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume](https://wirkungsoekonomie.de/referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/)
 
 ### 13.1 Warum Wirkung Zuordnung braucht
 
@@ -389,7 +389,7 @@ Wirkung lässt sich nicht immer vollständig zurechnen. In komplexen Systemen wi
 
 ### Quellenanker: Kapitel 36 - Wirkung als Rechtsprinzip
 
-*Interne Quelle:* `referenz/kapitel-036-wirkung-als-rechtsprinzip/index.html`
+*Öffentliche Quelle:* [Kapitel 36 - Wirkung als Rechtsprinzip](https://wirkungsoekonomie.de/referenz/kapitel-036-wirkung-als-rechtsprinzip/)
 
 Recht ordnet bisher vor allem Handlungen, Besitz, Einkommen, Verträge, Transaktionen, Zuständigkeiten, Verfahren und Pflichten. Es schützt Menschen, setzt Grenzen, schafft Verlässlichkeit und ermöglicht Freiheit. Doch reale Wirkung erscheint im Recht häufig nur indirekt: als Schaden, Haftung, Gefährdung, Genehmigung, Verbot, Berichtspflicht oder Förderbedingung. Die Wirkungsökonomie erweitert diese Logik. Sie fragt nicht nur, ob eine Handlung formal erlaubt, besteuerbar oder dokumentierbar ist. Sie fragt, welche Zustände durch sie verändert werden und wie diese Veränderung in die Rechtsordnung zurückkehrt.
 
@@ -467,7 +467,7 @@ Mensch, Planet und Demokratie bilden den Rechtsrahmen der Wirkungsökonomie. Wir
 
 ### Quellenanker: Kapitel 39 - Wirkungshaushalt und öffentliche Mittel
 
-*Interne Quelle:* `referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/index.html`
+*Öffentliche Quelle:* [Kapitel 39 - Wirkungshaushalt und öffentliche Mittel](https://wirkungsoekonomie.de/referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/)
 
 Kapitel 38 hat gezeigt, wie Produktwirkung im Umsatz- und Produktsteuerrecht sichtbar werden kann. Dieses Kapitel wendet die Wirkungslogik auf den Staat selbst an. Wenn Wirkung zur rechtlichen und methodischen Rückkopplung wird, darf der Staat nicht nur private oder unternehmerische Wirkung bewerten. Er muss auch die Wirkung seiner eigenen Mittelverwendung prüfen.
 
@@ -559,7 +559,7 @@ Handlung, Unterlassen und Zustandsveränderung ist kein Randthema. Es zeigt, ob 
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -710,17 +710,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V13. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v13.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

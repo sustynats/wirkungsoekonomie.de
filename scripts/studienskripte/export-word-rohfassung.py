@@ -82,7 +82,9 @@ def add_title(doc: Document, title: str, source: Path) -> None:
 
     meta = doc.add_paragraph()
     meta.add_run("Rohfassung fuer Claude / CI-CD-Finalisierung").italic = True
-    doc.add_paragraph(f"Quelle: {source}")
+    doc.add_paragraph(
+        "Quellenbasis: Die neue Ordnung des Wohlstands, WÖk-Referenz, Glossar, WÖk-Werkzeuge, Journal und zitierte externe Fachquellen."
+    )
 
 
 def is_table_start(lines: list[str], idx: int) -> bool:
@@ -138,6 +140,7 @@ def export(markdown_path: Path, output_path: Path) -> None:
 
     idx = 0
     in_formula = False
+    in_code_block = False
     formula_buffer: list[str] = []
     paragraph_buffer: list[str] = []
 
@@ -150,6 +153,16 @@ def export(markdown_path: Path, output_path: Path) -> None:
     while idx < len(lines):
         raw = lines[idx]
         line = raw.rstrip()
+
+        if line.strip().startswith("```"):
+            flush_paragraph()
+            in_code_block = not in_code_block
+            idx += 1
+            continue
+
+        if in_code_block:
+            idx += 1
+            continue
 
         if line.startswith("# "):
             flush_paragraph()

@@ -776,7 +776,8 @@ function blockToMarkdown(path) {
       return line;
     })
     .join("\n\n");
-  return `### Quellenanker: ${heading}\n\n*Interne Quelle:* \`${rel}\`\n\n${body}`;
+  const publicPath = rel.endsWith("/index.html") ? rel.slice(0, -"index.html".length) : rel;
+  return `### Quellenanker: ${heading}\n\n*Öffentliche Quelle:* [${heading}](https://wirkungsoekonomie.de/${publicPath})\n\n${body}`;
 }
 
 function matrixMarkdown(rows) {

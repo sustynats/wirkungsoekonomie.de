@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G1.1  
 **Titel:** Die Maßstabskrise  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v01.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v01.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v01.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 2 - Die Maßstabskrise
 
-*Interne Quelle:* `referenz/kapitel-002-die-massstabskrise/index.html`
+*Öffentliche Quelle:* [Kapitel 2 - Die Maßstabskrise](https://wirkungsoekonomie.de/referenz/kapitel-002-die-massstabskrise/)
 
 Dieses Kapitel beschreibt die zentrale Diagnose der Wirkungsökonomie: Die gegenwärtige Ordnung scheitert nicht an fehlenden Daten, sondern an einem falschen Maßstab. Moderne Gesellschaften messen präzise, permanent und global vernetzt. Sie erfassen Kapitalflüsse, Gewinne, Umsätze, Beschäftigung, Reichweiten, Marktwerte, Emissionen, Risiken und Produktivität. Doch sie messen nicht konsequent, ob diese Bewegung Zukunft erzeugt oder Zukunft verbraucht.
 
@@ -311,7 +311,7 @@ Aber Gewinn ist kein Beweis positiver Wirkung.
 
 ### Quellenanker: Kapitel 3 - Kapital als Werkzeug und falscher Kompass
 
-*Interne Quelle:* `referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html`
+*Öffentliche Quelle:* [Kapitel 3 - Kapital als Werkzeug und falscher Kompass](https://wirkungsoekonomie.de/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/)
 
 Dieses Kapitel klärt den Status des Kapitals in der Wirkungsökonomie. Es geht nicht darum, Kapital zu verteufeln oder Märkte abzuschaffen. Es geht darum, Kapital aus seiner falschen Rolle als gesellschaftlicher Kompass zu lösen und wieder als Werkzeug zu begreifen.
 
@@ -389,7 +389,7 @@ Eine Plattform kann einen hohen Marktwert haben, weil sie Daten, Aufmerksamkeit 
 
 ### Quellenanker: Kapitel 4 - Die Entstehung des falschen Kompasses
 
-*Interne Quelle:* `referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html`
+*Öffentliche Quelle:* [Kapitel 4 - Die Entstehung des falschen Kompasses](https://wirkungsoekonomie.de/referenz/kapitel-004-die-entstehung-des-falschen-kompasses/)
 
 Dieses Kapitel zeichnet keine vollständige Ideengeschichte der Ökonomie nach. Es erklärt, wie der falsche Kompass entstehen konnte: warum Markt, Kapital, Gewinn, Wachstum, Rendite und Preis zu dominanten Steuerungsgrößen wurden und weshalb diese Größen trotz ihrer historischen Leistung heute nicht mehr ausreichen. Die Wirkungsökonomie verwirft die ökonomische Tradition nicht. Sie ordnet sie neu ein. Sie zeigt, welche Einsichten bleiben, welche Verengungen korrigiert werden müssen und warum Wirkung zur zentralen Steuerungsgröße werden muss.
 
@@ -467,7 +467,7 @@ Dieses Modell prägte den Wiederaufbau, stabilisierte Demokratie und ermöglicht
 
 ### Quellenanker: Kapitel 5 - Wohlstand auf Kosten künftiger Stabilität
 
-*Interne Quelle:* `referenz/kapitel-005-wohlstand-auf-kosten-kuenftiger-stabilitaet/index.html`
+*Öffentliche Quelle:* [Kapitel 5 - Wohlstand auf Kosten künftiger Stabilität](https://wirkungsoekonomie.de/referenz/kapitel-005-wohlstand-auf-kosten-kuenftiger-stabilitaet/)
 
 Dieses Kapitel führt einen zentralen Begriff der Wirkungsökonomie ein: Vorgriffswohlstand. Gemeint ist Wohlstand, der in der Gegenwart real erscheint, aber auf dem Verbrauch künftiger Stabilität beruht. Das Kapitel unterscheidet deshalb zwischen echtem Wirkungswohlstand, Scheinwohlstand, Reparaturwohlstand und Wohlstand, der durch den Abbau ökologischer, sozialer oder demokratischer Grundlagen entsteht.
 
@@ -559,7 +559,7 @@ Die Maßstabskrise ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriff
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -742,17 +742,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V01. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v01.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

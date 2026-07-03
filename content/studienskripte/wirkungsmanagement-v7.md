@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungskompetenz, Führung und Organisationskultur  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v7-wirkungskompetenz-fuehrung-kultur.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v7.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v7.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V7
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** WM-V6
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§6.2) · `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` (Wirkungskompetenz) · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -82,9 +82,9 @@ Die beste Wirkungslogik nützt nichts, wenn niemand sie im Alltag anwendet. **Wi
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | `begriffe/wirkungskompetenz` |
+| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | [Wirkungskompetenz](https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/) |
 | Organisationskultur | geteilte Normen, die Wirkungsehrlichkeit ermöglichen oder verhindern | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkungsmanagement | plant, steuert, verbessert, verankert Wirkung | `begriffe/wirkungsmanagement` |
+| Wirkungsmanagement | plant, steuert, verbessert, verankert Wirkung | [Wirkungsmanagement](https://wirkungsoekonomie.de/begriffe/wirkungsmanagement/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -262,9 +262,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V7. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §6.2
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Wirkungskompetenz
-- Glossar: `begriffe/wirkungskompetenz`, `begriffe/wirkungsmanagement`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §6.2
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Wirkungskompetenz
+- Glossar: [Wirkungskompetenz](https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/), [Wirkungsmanagement](https://wirkungsoekonomie.de/begriffe/wirkungsmanagement/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -348,9 +348,9 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | `begriffe/wirkungskompetenz` |
+| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | [Wirkungskompetenz](https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/) |
 | Organisationskultur | geteilte Normen, die Wirkungsehrlichkeit ermöglichen oder verhindern | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkungsmanagement | plant, steuert, verbessert, verankert Wirkung | `begriffe/wirkungsmanagement` |
+| Wirkungsmanagement | plant, steuert, verbessert, verankert Wirkung | [Wirkungsmanagement](https://wirkungsoekonomie.de/begriffe/wirkungsmanagement/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -418,7 +418,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 24 - Der Mensch im System
 
-*Interne Quelle:* `referenz/kapitel-024-der-mensch-im-system/index.html`
+*Öffentliche Quelle:* [Kapitel 24 - Der Mensch im System](https://wirkungsoekonomie.de/referenz/kapitel-024-der-mensch-im-system/)
 
 Der Mensch ist in der Wirkungsökonomie kein isolierter Nutzenrechner. Er ist ein Wirkungswesen. Er nimmt Wirkung auf, verarbeitet sie körperlich, emotional, sprachlich und sozial, und er erzeugt selbst Wirkung durch Handlungen, Unterlassen, Entscheidungen, Beziehungen, Worte, Routinen und institutionelle Rollen. Menschen sind Wirkungsempfänger und Wirkungsträger. Sie werden von Preisen, Arbeitsbedingungen, Wohnräumen, Sprache, Anerkennung, Unsicherheit, Naturzuständen und politischen Ordnungen beeinflusst. Zugleich verändern sie durch ihr Verhalten andere Menschen, Systeme und Zukunftsräume.
 
@@ -496,7 +496,7 @@ Wenn der Mensch als bloßer Konsument erscheint, wird Wirkung zur Kaufentscheidu
 
 ### Quellenanker: Kapitel 26 - Sinn, Selbstwirksamkeit und Beziehung
 
-*Interne Quelle:* `referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/index.html`
+*Öffentliche Quelle:* [Kapitel 26 - Sinn, Selbstwirksamkeit und Beziehung](https://wirkungsoekonomie.de/referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/)
 
 Kapitel 25 hat gezeigt, dass Menschen nicht nur nach Information handeln. Angst, Status, Zugehörigkeit und Macht verändern Wahrnehmung, Vertrauen, politische Orientierung, Konsum, Arbeitsbeziehungen und demokratische Diskurse. Dieses Kapitel ergänzt die positive Seite dieses Menschenbildes: Menschen brauchen Sinn, Selbstwirksamkeit und Beziehung. Ohne diese drei Bedingungen wird Wirkung abstrakt. Mit ihnen wird Wirkung lebbar.
 
@@ -574,7 +574,7 @@ Weber, Natalie: Systemmodell der Wirkungsökonomie. Die systemische Ordnungskart
 
 ### Quellenanker: Kapitel 45 - Organisation, Kultur und Verantwortung
 
-*Interne Quelle:* `referenz/kapitel-045-organisation-kultur-und-verantwortung/index.html`
+*Öffentliche Quelle:* [Kapitel 45 - Organisation, Kultur und Verantwortung](https://wirkungsoekonomie.de/referenz/kapitel-045-organisation-kultur-und-verantwortung/)
 
 Kapitel 43 hat Führung als Gestaltung von Rückkopplung beschrieben. Kapitel 44 hat gezeigt, dass Wirkungscontrolling dort beginnt, wo Daten in Entscheidungen zurückkehren. Dieses Kapitel verbindet beide Linien. Wirkung scheitert in Unternehmen selten nur an fehlender Strategie. Sie scheitert an Organisation: an Silos, unklaren Rollen, Angst, Machtspielen, fehlender Schnittstellenverantwortung und einer Kultur, die gute Absichten in wirkungsarme Routinen verwandelt.
 
@@ -652,7 +652,7 @@ Eine lernende Organisation ist daher kein harmonischer Raum. Sie ist ein konflik
 
 ### Quellenanker: Kapitel 43 - Wirkungsorientierte Unternehmensführung
 
-*Interne Quelle:* `referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html`
+*Öffentliche Quelle:* [Kapitel 43 - Wirkungsorientierte Unternehmensführung](https://wirkungsoekonomie.de/referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/)
 
 Kapitel 42 hat Unternehmen als Wirkungssysteme beschrieben. Ein Unternehmen ist nicht nur eine Einheit zur Gewinnerzielung, sondern ein organisierter Wirkungsraum. Daraus folgt eine neue Führungsfrage: Wie werden Wahrnehmung, Entscheidung, Verantwortung und Korrektur so gestaltet, dass ein Unternehmen positive Wirkung erzeugen und negative Wirkung begrenzen kann?
 
@@ -744,7 +744,7 @@ Wirkungskompetenz, Führung und Organisationskultur ist kein Randthema. Es zeigt
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -755,17 +755,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v7-wirkungskompetenz-fuehrung-kultur.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

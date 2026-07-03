@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G3.3  
 **Titel:** Von Einzelwirkung zu Netto-Wirkung  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v31-von-einzelwirkung-zu-netto-wirkung.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v31.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v31.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V31
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** V30 „Datenqualität, Audit und Unsicherheit"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Netto-Wirkung ist deshalb ein begründetes Gesamtprofil. Es verbindet Daten, Wir
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Einzelwirkung | konkrete Zustandsveränderung in einem Wirkungsfeld | `begriffe/wirkung` |
-| Netto-Wirkung | zusammengeführte Bewertung positiver und negativer Wirkungen | `begriffe/netto-wirkung` |
-| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | `begriffe/positive-netto-wirkung` |
-| Wirkungsprofil | Feldprofil einer Bewertung | `begriffe/wirkungsprofil` |
+| Einzelwirkung | konkrete Zustandsveränderung in einem Wirkungsfeld | [Wirkung](https://wirkungsoekonomie.de/begriffe/wirkung/) |
+| Netto-Wirkung | zusammengeführte Bewertung positiver und negativer Wirkungen | [Netto wirkung](https://wirkungsoekonomie.de/begriffe/netto-wirkung/) |
+| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
+| Wirkungsprofil | Feldprofil einer Bewertung | [Wirkungsprofil](https://wirkungsoekonomie.de/begriffe/wirkungsprofil/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -273,9 +273,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V31. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Netto-Wirkung, Scorecards, Bewertung
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/netto-wirkung`, `begriffe/positive-netto-wirkung`, `begriffe/wirkungsprofil`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Netto-Wirkung, Scorecards, Bewertung
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Netto wirkung](https://wirkungsoekonomie.de/begriffe/netto-wirkung/), [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/), [Wirkungsprofil](https://wirkungsoekonomie.de/begriffe/wirkungsprofil/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -359,10 +359,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Einzelwirkung | konkrete Zustandsveränderung in einem Wirkungsfeld | `begriffe/wirkung` |
-| Netto-Wirkung | zusammengeführte Bewertung positiver und negativer Wirkungen | `begriffe/netto-wirkung` |
-| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | `begriffe/positive-netto-wirkung` |
-| Wirkungsprofil | Feldprofil einer Bewertung | `begriffe/wirkungsprofil` |
+| Einzelwirkung | konkrete Zustandsveränderung in einem Wirkungsfeld | [Wirkung](https://wirkungsoekonomie.de/begriffe/wirkung/) |
+| Netto-Wirkung | zusammengeführte Bewertung positiver und negativer Wirkungen | [Netto wirkung](https://wirkungsoekonomie.de/begriffe/netto-wirkung/) |
+| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
+| Wirkungsprofil | Feldprofil einer Bewertung | [Wirkungsprofil](https://wirkungsoekonomie.de/begriffe/wirkungsprofil/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 4
 
@@ -429,7 +429,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 10 - Wirkung
 
-*Interne Quelle:* `referenz/kapitel-010-wirkung/index.html`
+*Öffentliche Quelle:* [Kapitel 10 - Wirkung](https://wirkungsoekonomie.de/referenz/kapitel-010-wirkung/)
 
 Dieses Kapitel definiert den ersten Grundbegriff der Wirkungsökonomie. Nachdem Teil I den falschen Kompass beschrieben und Kapitel 9 die einfache Idee formuliert hat, beginnt hier die eigentliche Sprache der Wirkungsökonomie. Wirkung ist der Begriff, an dem sich alle weiteren Begriffe ausrichten: Wirkungspotenzial, Wirkungsraum, Wirkleistung, Wirkungsrisiko, Wirkungsgrad, Wirkungskapital und Wirkungswohlstand.
 
@@ -507,7 +507,7 @@ Ein Bericht verändert erst dann etwas, wenn seine Informationen Entscheidungen 
 
 ### Quellenanker: Kapitel 14 - Systemischer Wert und normativer Wert
 
-*Interne Quelle:* `referenz/kapitel-014-systemischer-wert-und-normativer-wert/index.html`
+*Öffentliche Quelle:* [Kapitel 14 - Systemischer Wert und normativer Wert](https://wirkungsoekonomie.de/referenz/kapitel-014-systemischer-wert-und-normativer-wert/)
 
 Dieses Kapitel führt zwei Wertbegriffe ein, die in der Wirkungsökonomie sauber getrennt werden müssen: systemischer Wert und normativer Wert. Ohne diese Trennung wird Wirkung entweder zu technisch oder zu moralisch. Wird nur systemisch gedacht, kann auch eine schädliche Ordnung als funktional erscheinen, solange sie stabil bleibt. Wird nur normativ gedacht, können gut gemeinte Ziele verfolgt werden, ohne zu prüfen, ob sie ein System tatsächlich verbessern oder unbeabsichtigt schwächen.
 
@@ -585,7 +585,7 @@ Ein Nachhaltigkeitsbericht kann normativ sinnvoll sein, weil Transparenz geschaf
 
 ### Quellenanker: Kapitel 30 - Von Wirkung zu Messung
 
-*Interne Quelle:* `referenz/kapitel-030-von-wirkung-zu-messung/index.html`
+*Öffentliche Quelle:* [Kapitel 30 - Von Wirkung zu Messung](https://wirkungsoekonomie.de/referenz/kapitel-030-von-wirkung-zu-messung/)
 
 Diese Frage bildet den Übergang von der normativen Ordnung zur Messarchitektur. Ohne Messung bleibt Wirkung ein Anspruch. Ohne Maßstab bleibt Messung blind. Ohne Rückkopplung bleibt Messung folgenlos. Die Wirkungsökonomie braucht daher eine Methodik, die Wirkung sichtbar macht, ohne ihre Komplexität zu zerstören.
 
@@ -663,7 +663,7 @@ Weber, Natalie: Grundlagenpapier Wirkungsökonomie, 2025. Grundlage für Wirkung
 
 ### Quellenanker: Kapitel 33 - Reverse Merit Order
 
-*Interne Quelle:* `referenz/kapitel-033-reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Kapitel 33 - Reverse Merit Order](https://wirkungsoekonomie.de/referenz/kapitel-033-reverse-merit-order/)
 
 Kapitel 32 hat Scorecards als Instrument beschrieben, mit dem Wirkungen geordnet, vergleichbar und steuerungsfähig werden. Eine Scorecard allein reicht jedoch nicht. Denn sobald mehrere Wirkungsfelder nebeneinander bewertet werden, entsteht eine gefährliche Versuchung: Man könnte gute Werte in einem Feld gegen schlechte Werte in einem anderen Feld aufrechnen.
 
@@ -741,7 +741,7 @@ Damit verhindert sie eine typische Fehlsteuerung heutiger Nachhaltigkeitsmodelle
 
 ### Quellenanker: Kapitel 34 - T-SROI und systemische Transformationsmessung
 
-*Interne Quelle:* `referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html`
+*Öffentliche Quelle:* [Kapitel 34 - T-SROI und systemische Transformationsmessung](https://wirkungsoekonomie.de/referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/)
 
 Kapitel 33 hat eine methodische Grenze gesetzt: Eine starke Wirkung in einem Feld darf schwere Schäden in einem anderen Feld nicht unsichtbar machen. Die Reverse Merit Order schützt die Wirkungsbewertung vor Durchschnittstäuschung, Ablasslogik und falsch positiver Gesamtbilanz. Kapitel 32 hat dafür bereits die operative Kennzahl eingeführt: den Netto-Wirkungs-Index, kurz NWI. Er bewertet die Netto-Wirkung eines Bewertungsgegenstands in einem definierten Wirkungsraum.
 
@@ -819,7 +819,7 @@ Transformation bedeutet nicht Größe um jeden Preis. Ein kleiner Wirkungsraum k
 
 ### Quellenanker: WÖk-Präzisierungsbegriff
 
-*Interne Quelle:* `begriffe/positive-netto-wirkung/index.html`
+*Öffentliche Quelle:* [WÖk-Präzisierungsbegriff](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/)
 
 Positive Netto-Wirkung ist die Zielgröße der Wirkungsökonomie: eine nach Bewertung der positiven und negativen Folgen tragfähige Wirkung für Mensch, Planet und Demokratie.
 
@@ -911,7 +911,7 @@ Von Einzelwirkung zu Netto-Wirkung ist kein Randthema. Es zeigt, ob die WÖk nur
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -922,17 +922,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v31-von-einzelwirkung-zu-netto-wirkung.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

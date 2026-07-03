@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G3.3  
 **Titel:** NWI und T-SROI unterscheiden  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v33-nwi-und-t-sroi-unterscheiden.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v33.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v33.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V33
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** V32 „Scorecards und Bewertungsprofile"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Beide Kennzahlen bleiben an dieselben Schutzlinien gebunden. Ein positiver T-SRO
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| NWI | Netto-Wirkungs-Index zur verdichteten Wirkungsbewertung | `begriffe/netto-wirkungs-index` |
-| T-SROI | Transformative Social Return on Investment | `begriffe/t-sroi` |
-| Transformationswirkung | strukturelle Veränderung in Richtung zukunftsfähiger Zustände | `begriffe/transformationswirkung` |
-| FinalScore | verdichteter Ergebniswert einer Scorecard | `begriffe/finalscore` |
+| NWI | Netto-Wirkungs-Index zur verdichteten Wirkungsbewertung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
+| T-SROI | Transformative Social Return on Investment | [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/) |
+| Transformationswirkung | strukturelle Veränderung in Richtung zukunftsfähiger Zustände | [Transformationswirkung](https://wirkungsoekonomie.de/begriffe/transformationswirkung/) |
+| FinalScore | verdichteter Ergebniswert einer Scorecard | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -261,9 +261,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V33. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – NWI, T-SROI, Transformationswirkung
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/netto-wirkungs-index`, `begriffe/t-sroi`, `begriffe/transformationswirkung`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – NWI, T-SROI, Transformationswirkung
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/), [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/), [Transformationswirkung](https://wirkungsoekonomie.de/begriffe/transformationswirkung/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -347,10 +347,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| NWI | Netto-Wirkungs-Index zur verdichteten Wirkungsbewertung | `begriffe/netto-wirkungs-index` |
-| T-SROI | Transformative Social Return on Investment | `begriffe/t-sroi` |
-| Transformationswirkung | strukturelle Veränderung in Richtung zukunftsfähiger Zustände | `begriffe/transformationswirkung` |
-| FinalScore | verdichteter Ergebniswert einer Scorecard | `begriffe/finalscore` |
+| NWI | Netto-Wirkungs-Index zur verdichteten Wirkungsbewertung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
+| T-SROI | Transformative Social Return on Investment | [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/) |
+| Transformationswirkung | strukturelle Veränderung in Richtung zukunftsfähiger Zustände | [Transformationswirkung](https://wirkungsoekonomie.de/begriffe/transformationswirkung/) |
+| FinalScore | verdichteter Ergebniswert einer Scorecard | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 5
 
@@ -417,7 +417,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 34 - T-SROI und systemische Transformationsmessung
 
-*Interne Quelle:* `referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html`
+*Öffentliche Quelle:* [Kapitel 34 - T-SROI und systemische Transformationsmessung](https://wirkungsoekonomie.de/referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/)
 
 Kapitel 33 hat eine methodische Grenze gesetzt: Eine starke Wirkung in einem Feld darf schwere Schäden in einem anderen Feld nicht unsichtbar machen. Die Reverse Merit Order schützt die Wirkungsbewertung vor Durchschnittstäuschung, Ablasslogik und falsch positiver Gesamtbilanz. Kapitel 32 hat dafür bereits die operative Kennzahl eingeführt: den Netto-Wirkungs-Index, kurz NWI. Er bewertet die Netto-Wirkung eines Bewertungsgegenstands in einem definierten Wirkungsraum.
 
@@ -495,7 +495,7 @@ Transformation bedeutet nicht Größe um jeden Preis. Ein kleiner Wirkungsraum k
 
 ### Quellenanker: Wirkungsökonomie · Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/netto-wirkungs-index/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/netto-wirkungs-index/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/netto-wirkungs-index/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/netto-wirkungs-index/)
 
 Methodenregister
 
@@ -573,7 +573,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: Wirkungsökonomie · T-SROI · https://wirkungsoekonomie.de/werkzeuge/t-sroi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/t-sroi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · T-SROI · https://wirkungsoekonomie.de/werkzeuge/t-sroi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/t-sroi/)
 
 Methodenregister
 
@@ -651,7 +651,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: Wirkungsökonomie · T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/t-sroi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/t-sroi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/t-sroi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/t-sroi/)
 
 Methodenregister
 
@@ -729,7 +729,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: Wirkungsökonomie · Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/)
 
 Methodenbereich
 
@@ -807,7 +807,7 @@ Scorecards übersetzen Daten und Benchmarks in nachvollziehbare Skalen und Entsc
 
 ### Quellenanker: Wirkungsökonomie · Detailkonzept T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/t-sroi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/detailkonzepte/t-sroi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Detailkonzept T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/t-sroi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/t-sroi/)
 
 Detailkonzept · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -885,7 +885,7 @@ Relevant sind Bürger:innen, betroffene Gruppen, Unternehmen, Verwaltung, Politi
 
 ### Quellenanker: Wirkungsökonomie · Einzeldossier T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/t-sroi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/t-sroi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Einzeldossier T-SROI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/t-sroi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/t-sroi/)
 
 Einzeldossier · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -963,7 +963,7 @@ Tool-/Rechnerbezug #
 
 ### Quellenanker: Wirkungsökonomie · T-SROI und Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · T-SROI und Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/)
 
 Methodenpapier 23 · Go 10
 
@@ -1041,7 +1041,7 @@ Inhaltsübersicht #
 
 ### Quellenanker: Wirkungsökonomie · Scorecards, Benchmarks und Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Scorecards, Benchmarks und Netto-Wirkungs-Index · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/)
 
 Methodenpapier 22 · Go 10
 
@@ -1119,7 +1119,7 @@ Inhaltsübersicht #
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/whitepaper-t-sroi/index.html`
+*Öffentliche Quelle:* [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/)
 
 Webfassung aus der gelieferten Originaldatei. Der Originaltext bleibt über die Originaldatei zitierbar.
 
@@ -1197,7 +1197,7 @@ Seite 15
 
 ### Quellenanker: Wirkungsökonomie · T-SROI für Präventions- und Gesundheitsinvestitionen · https://wirkungsoekonomie.de/wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/ · Druckdatum: 2026-05-24
 
-*Interne Quelle:* `wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · T-SROI für Präventions- und Gesundheitsinvestitionen · https://wirkungsoekonomie.de/wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/ · Druckdatum: 2026-05-24](https://wirkungsoekonomie.de/wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/)
 
 Methode
 
@@ -1289,7 +1289,7 @@ NWI und T-SROI unterscheiden ist kein Randthema. Es zeigt, ob die WÖk nur schö
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -1300,17 +1300,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v33-nwi-und-t-sroi-unterscheiden.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

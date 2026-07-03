@@ -169,7 +169,6 @@ function buildMarkdown(meta, sourceMarkdown, sourcePath, fallbackPath) {
   const source = sourceBlock(sourceMarkdown);
   const quiz = extractMiniQuiz(sourceMarkdown, title);
   const glossary = extractGlossary(sourceMarkdown);
-  const sourceRel = sourcePath ? sourcePath.replace(`${ROOT}/`, "") : fallbackPath?.replace(`${ROOT}/`, "") || "keine Quelle gefunden";
   const lectureNo = code.match(/\d+/)?.[0] ?? code;
 
   return `# ${track} · Vorlesung ${lectureNo}: ${title}
@@ -180,9 +179,9 @@ function buildMarkdown(meta, sourceMarkdown, sourcePath, fallbackPath) {
 **Modul/Abschnitt:** ${module}  
 **Titel:** ${title}  
 **Status:** Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden  
-**Quelle:** \`${sourceRel}\`  
-**Ablage:** Markdown-Master in \`content/studienskripte/${slug}.md\`, Word-Rohfassung in \`docs/studienskripte/word-rohfassungen/${slug}.docx\`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen
 
 ## Lernziele
 
@@ -277,7 +276,7 @@ ${glossary}
 
 ## 7. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter \`woek-akademie-app/content/pruefungen/\` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -288,19 +287,20 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 8. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- \`${sourceRel}\` — unmittelbarer Akademie-Quelltext dieser Rohfassung.
-- \`assets/pdf/die-neue-ordnung-des-wohlstands.pdf\` und \`buch.html\` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- \`docs/CODEX-HANDOFF-studienskripte.md\` — Produktionsstandard.
-- \`docs/CODEX-HANDOFF-pruefungen.md\` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer den Tiefensprint
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlägig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlägig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlägig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
 
 ## 9. Rückfluss in den WÖk-Korpus

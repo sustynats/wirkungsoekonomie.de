@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** WÖk-IDs und Indikatorenarchitektur  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v3-woek-ids-indikatorenarchitektur.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v3.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v3.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V3
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WC-V2
-**Führende Quellen (Repo):** `content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf` · `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` · Glossar `begriffe/woek-id`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -72,7 +72,7 @@ Daten ohne Ordnung sind Rauschen. **Wie werden Wirkungsdaten so strukturiert, da
 
 **Eine WÖk-ID ist ein Ordnungs- und Mapping-Instrument, kein Siegel.** Sie ordnet Daten, Produktmerkmale oder Aktivitäten einem **Wirkungsfeld**, einer **Bewertungslogik** und einer **Scorecard** zu (Grundlagen V6). Damit wird aus einem isolierten Datenpunkt eine bewertbare, vergleichbare Wirkungsinformation.
 
-**Die Indikatorenarchitektur** (Master Items) liefert die Bausteine: definierte Indikatoren, ihre Bezüge zum Referenzrahmen, Benchmarks und Archetypen. WÖk-IDs verweisen auf diese Architektur, statt Kennzahlen willkürlich neu zu erfinden. So bleibt das System konsistent und auditierbar (`content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf`).
+**Die Indikatorenarchitektur** (Master Items) liefert die Bausteine: definierte Indikatoren, ihre Bezüge zum Referenzrahmen, Benchmarks und Archetypen. WÖk-IDs verweisen auf diese Architektur, statt Kennzahlen willkürlich neu zu erfinden. So bleibt das System konsistent und auditierbar ([WÖk Master Items Register](https://wirkungsoekonomie.de/dokumente/woek-master-items-final-v1-2/)).
 
 **Anschluss an bestehende Codierungen.** WÖk-IDs docken an NACE (Branche), CSRD/ESRS-Datenpunkte und den digitalen Produktpass an. Ein Produkt oder eine Aktivität erhält damit eine nachvollziehbare Zuordnung zur Wirkungsbewertung – die Brücke von Rohdaten (V2) zur Scorecard (V4).
 
@@ -82,10 +82,10 @@ Daten ohne Ordnung sind Rauschen. **Wie werden Wirkungsdaten so strukturiert, da
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| WÖk-ID | Ordnungs-/Mapping-Instrument für Wirkungsdaten (kein Siegel) | `begriffe/woek-id` |
+| WÖk-ID | Ordnungs-/Mapping-Instrument für Wirkungsdaten (kein Siegel) | [WÖk id](https://wirkungsoekonomie.de/begriffe/woek-id/) |
 | Indikatorenarchitektur | strukturiertes System aus Indikatoren, Bezügen, Bewertungslogik | _(Master Items; ggf. Glossar-Seite anlegen)_ |
-| Benchmark | Vergleichsmaßstab je Wirkungsfeld | `begriffe/benchmark` |
-| Archetyp | typisierte Bewertungsvorlage | `begriffe/archetyp` |
+| Benchmark | Vergleichsmaßstab je Wirkungsfeld | [Benchmark](https://wirkungsoekonomie.de/begriffe/benchmark/) |
+| Archetyp | typisierte Bewertungsvorlage | [Archetyp](https://wirkungsoekonomie.de/begriffe/archetyp/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -327,9 +327,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V3. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf` – Indikatorenarchitektur
-- `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` – WÖk-IDs, Benchmarks, Archetypen, Auditierbarkeit
-- Glossar: `begriffe/woek-id`, `begriffe/benchmark`, `begriffe/archetyp`
+- [WÖk Master Items Register](https://wirkungsoekonomie.de/dokumente/woek-master-items-final-v1-2/) – Indikatorenarchitektur
+- [Wirkungssteuergesetz (WStG)](https://wirkungsoekonomie.de/referenz/kapitel-037-das-wirkungssteuergesetz-wstg/) – WÖk-IDs, Benchmarks, Archetypen, Auditierbarkeit
+- Glossar: [WÖk id](https://wirkungsoekonomie.de/begriffe/woek-id/), [Benchmark](https://wirkungsoekonomie.de/begriffe/benchmark/), [Archetyp](https://wirkungsoekonomie.de/begriffe/archetyp/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -413,10 +413,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| WÖk-ID | Ordnungs-/Mapping-Instrument für Wirkungsdaten (kein Siegel) | `begriffe/woek-id` |
+| WÖk-ID | Ordnungs-/Mapping-Instrument für Wirkungsdaten (kein Siegel) | [WÖk id](https://wirkungsoekonomie.de/begriffe/woek-id/) |
 | Indikatorenarchitektur | strukturiertes System aus Indikatoren, Bezügen, Bewertungslogik | _(Master Items; ggf. Glossar-Seite anlegen)_ |
-| Benchmark | Vergleichsmaßstab je Wirkungsfeld | `begriffe/benchmark` |
-| Archetyp | typisierte Bewertungsvorlage | `begriffe/archetyp` |
+| Benchmark | Vergleichsmaßstab je Wirkungsfeld | [Benchmark](https://wirkungsoekonomie.de/begriffe/benchmark/) |
+| Archetyp | typisierte Bewertungsvorlage | [Archetyp](https://wirkungsoekonomie.de/begriffe/archetyp/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -484,7 +484,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 31 - WÖk-IDs und Indikatorenarchitektur
 
-*Interne Quelle:* `referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html`
+*Öffentliche Quelle:* [Kapitel 31 - WÖk-IDs und Indikatorenarchitektur](https://wirkungsoekonomie.de/referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/)
 
 Kapitel 30 hat geklärt, warum Wirkung messbar werden muss, ohne auf Zahlen reduziert zu werden. Messung braucht empirische Daten, systemische Einordnung und normative Bewertung. Dieses Kapitel führt die Ordnungseinheit ein, mit der Wirkungsdaten adressierbar werden: die WÖk-ID.
 
@@ -562,7 +562,7 @@ Die SDG-Indikatoren der Vereinten Nationen schaffen den technischen Anschluss an
 
 ### Quellenanker: Wirkungsökonomie · WÖk-IDs · https://wirkungsoekonomie.de/werkzeuge/woek-ids/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/woek-ids/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · WÖk-IDs · https://wirkungsoekonomie.de/werkzeuge/woek-ids/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/woek-ids/)
 
 Methodenregister
 
@@ -640,7 +640,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: Wirkungsökonomie · WÖk-IDs und Indikatorenarchitektur · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · WÖk-IDs und Indikatorenarchitektur · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/)
 
 Methodenpapier 21 · Go 10
 
@@ -718,7 +718,7 @@ Inhaltsübersicht #
 
 ### Quellenanker: Wirkungsökonomie · Einzeldossier WÖk-IDs · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/woek-ids/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/woek-ids/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Einzeldossier WÖk-IDs · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/woek-ids/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/woek-ids/)
 
 Einzeldossier · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -796,7 +796,7 @@ Tool-/Rechnerbezug #
 
 ### Quellenanker: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume
 
-*Interne Quelle:* `referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume](https://wirkungsoekonomie.de/referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/)
 
 Kapitel 34 hat T-SROI als Kennzahl für Transformation, Systemwirkung und langfristige Wirkungsqualität eingeführt. Damit ist die methodische Frage gestellt, wie Wirkung nicht nur als Einzelwert, sondern als Veränderung von Zuständen, Risiken und Zukunftspfaden sichtbar wird. Dieses Kapitel schließt Teil V ab und zeigt, welche technische Bedingung dafür nötig ist: Wirkungsdaten müssen verfügbar, prüfbar, verknüpfbar und entscheidungsrelevant werden.
 
@@ -874,7 +874,7 @@ Wirkung ist nun nicht mehr nur ein Begriff. Sie ist nicht nur normative Orientie
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/woek-master-items-final-v1-2/index.html`
+*Öffentliche Quelle:* [WÖk master items final v1 2](https://wirkungsoekonomie.de/dokumente/woek-master-items-final-v1-2/)
 
 Strukturierte Webfassung aus der gelieferten XLSX-Datei. Der PDF-Fallback bleibt als Original-/Archivquelle auffindbar, führend für das Register ist diese Tabelle.
 
@@ -908,7 +908,7 @@ WÖk-IDs und Indikatorenarchitektur ist kein Randthema. Es zeigt, ob die WÖk nu
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -919,17 +919,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v3-woek-ids-indikatorenarchitektur.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

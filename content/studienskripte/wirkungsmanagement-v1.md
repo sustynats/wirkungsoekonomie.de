@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Was ist Wirkungsmanagement?  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v1-was-ist-wirkungsmanagement.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v1.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v1.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V1
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** Grundlagenlehrgang abgeschlossen (GRUND-V1…V7)
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§6.2 Präzisierungsbegriffe) · `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` (Unternehmen, Wirkungskompetenz) · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Baut auf den Grundlagen auf – Wirkung, Bewertungsrahmen und Kennzahlen werden vorausgesetzt.
+> Erstellt nach dem Vorlesungstemplate. Baut auf den Grundlagen auf – Wirkung, Bewertungsrahmen und Kennzahlen werden vorausgesetzt.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -91,10 +91,10 @@ Deine Organisation *hat* Wirkung – ob geplant oder nicht. Die Frage ist: **Wir
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsmanagement | plant, steuert, verbessert und verankert Wirkung in Organisationen | `begriffe/wirkungsmanagement` |
-| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | `begriffe/wirkungskompetenz` |
-| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | `begriffe/positive-netto-wirkung` |
-| Reporting ≠ Rückkopplung | Berichten ist nicht Steuern | `begriffe/wirkungsrueckkopplung` |
+| Wirkungsmanagement | plant, steuert, verbessert und verankert Wirkung in Organisationen | [Wirkungsmanagement](https://wirkungsoekonomie.de/begriffe/wirkungsmanagement/) |
+| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | [Wirkungskompetenz](https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/) |
+| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
+| Reporting ≠ Rückkopplung | Berichten ist nicht Steuern | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -128,7 +128,7 @@ Beschreibe für deine Organisation in je einem Satz, wie die vier Kernaufgaben h
 
 ## 8. Praxisbeispiel
 
-**Das Reporting-Team ohne Steuerungswirkung.** Ein Unternehmen hat ein CSRD-Reporting aufgebaut, aber Einkauf und Investitionen entscheiden weiter rein nach Preis. Wirkungsmanagement würde hier ansetzen: Wirkungsziele definieren, kritische Wirkungsfelder priorisieren und die Bewertung in echte Entscheidungen zurückkoppeln. (Vertiefung: `content/internal-documents/originals/Beispiel-Konzern.pdf`.)
+**Das Reporting-Team ohne Steuerungswirkung.** Ein Unternehmen hat ein CSRD-Reporting aufgebaut, aber Einkauf und Investitionen entscheiden weiter rein nach Preis. Wirkungsmanagement würde hier ansetzen: Wirkungsziele definieren, kritische Wirkungsfelder priorisieren und die Bewertung in echte Entscheidungen zurückkoppeln. (Vertiefung: [Beispiel-Konzern](https://wirkungsoekonomie.de/dokumente/beispiel-konzern/).)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
@@ -304,9 +304,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V1. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §6.2
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Unternehmen, Wirkungskompetenz
-- Glossar: `begriffe/wirkungsmanagement`, `begriffe/wirkungskompetenz`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §6.2
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Unternehmen, Wirkungskompetenz
+- Glossar: [Wirkungsmanagement](https://wirkungsoekonomie.de/begriffe/wirkungsmanagement/), [Wirkungskompetenz](https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -390,10 +390,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsmanagement | plant, steuert, verbessert und verankert Wirkung in Organisationen | `begriffe/wirkungsmanagement` |
-| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | `begriffe/wirkungskompetenz` |
-| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | `begriffe/positive-netto-wirkung` |
-| Reporting ≠ Rückkopplung | Berichten ist nicht Steuern | `begriffe/wirkungsrueckkopplung` |
+| Wirkungsmanagement | plant, steuert, verbessert und verankert Wirkung in Organisationen | [Wirkungsmanagement](https://wirkungsoekonomie.de/begriffe/wirkungsmanagement/) |
+| Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | [Wirkungskompetenz](https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/) |
+| positive Netto-Wirkung | Zielgröße für Mensch, Planet und Demokratie | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
+| Reporting ≠ Rückkopplung | Berichten ist nicht Steuern | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -461,7 +461,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 42 - Unternehmen als Wirkungssysteme
 
-*Interne Quelle:* `referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html`
+*Öffentliche Quelle:* [Kapitel 42 - Unternehmen als Wirkungssysteme](https://wirkungsoekonomie.de/referenz/kapitel-042-unternehmen-als-wirkungssysteme/)
 
 Ein Unternehmen ist dann nicht mehr nur eine Einheit zur Gewinnerzielung. Es ist ein organisierter Wirkungsraum, der Zustände verändert.
 
@@ -539,7 +539,7 @@ Verantwortung über die Bilanz hinaus heißt daher: Unternehmen müssen die Wirk
 
 ### Quellenanker: Kapitel 43 - Wirkungsorientierte Unternehmensführung
 
-*Interne Quelle:* `referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html`
+*Öffentliche Quelle:* [Kapitel 43 - Wirkungsorientierte Unternehmensführung](https://wirkungsoekonomie.de/referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/)
 
 Kapitel 42 hat Unternehmen als Wirkungssysteme beschrieben. Ein Unternehmen ist nicht nur eine Einheit zur Gewinnerzielung, sondern ein organisierter Wirkungsraum. Daraus folgt eine neue Führungsfrage: Wie werden Wahrnehmung, Entscheidung, Verantwortung und Korrektur so gestaltet, dass ein Unternehmen positive Wirkung erzeugen und negative Wirkung begrenzen kann?
 
@@ -617,7 +617,7 @@ Führung heißt in dieser Logik nicht Kontrolle jedes Details. Führung heißt, 
 
 ### Quellenanker: Kapitel 22 - Wirkungslenkung
 
-*Interne Quelle:* `referenz/kapitel-022-wirkungslenkung/index.html`
+*Öffentliche Quelle:* [Kapitel 22 - Wirkungslenkung](https://wirkungsoekonomie.de/referenz/kapitel-022-wirkungslenkung/)
 
 ### 22.1 Von der Bewertung zur Entscheidung
 
@@ -695,7 +695,7 @@ Datenqualität bleibt Teil der Bewertung. Wer gute Wirkung behauptet, muss sie n
 
 ### Quellenanker: Wirkungsökonomie · Wirkungscontrolling / Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ · Stand: 01.06.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/wirkungscontrolling/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Wirkungscontrolling / Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ · Stand: 01.06.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/)
 
 Detailkonzept-Dossier · Version 1.0 · 01. Juni 2026
 
@@ -767,9 +767,9 @@ Hinweis: Dieses Dossier ist ein fachliches Konzeptpapier. Es ersetzt keine Recht
 
 0. Zitationsweise, Quellenlogik und Dokumentstatus #
 
-Dieses Dossier verwendet eine zweigeteilte Kurzbeleglogik. Interne Quellen der Wirkungsökonomie werden als [I-xx] zitiert. Externe Standards, Rechtsquellen, Fachquellen und methodische Anschlussquellen werden als [E-xx] zitiert. Die vollständigen Angaben stehen im Quellenverzeichnis am Ende des Dokuments. Diese Zitationsweise ist bewusst transparent gewählt: Sie trennt die originäre WÖk-Methodik von externen Anschlussstandards und verhindert, dass normative Modellannahmen mit bereits geltenden Berichtspflichten verwechselt werden.
+Dieses Dossier verwendet eine zweigeteilte Kurzbeleglogik. WÖk-Quellen werden als [I-xx] zitiert. Externe Standards, Rechtsquellen, Fachquellen und methodische Anschlussquellen werden als [E-xx] zitiert. Die vollständigen Angaben stehen im Quellenverzeichnis am Ende des Dokuments. Diese Zitationsweise ist bewusst transparent gewählt: Sie trennt die originäre WÖk-Methodik von externen Anschlussstandards und verhindert, dass normative Modellannahmen mit bereits geltenden Berichtspflichten verwechselt werden.
 
-Die interne Primärquelle ist das neue Grundlagenbuch „Die neue Ordnung des Wohlstands“ in der 2026er Fassung. Für Wirkungscontrolling sind vor allem Teil V „Messung, Daten und Methodik“, Kapitel 30 bis 35, sowie Kapitel 44 „Wirkungscontrolling im Unternehmen“ maßgeblich [I-01]. Der online geprüfte Stand der Website bestätigt die Leitidee, dass positive Netto-Wirkung entscheidungsrelevant werden soll und Wirkung erst dann systemrelevant wird, wenn sie in Preise, Steuern, Kapital und Entscheidungen zurückwirkt [I-02].
+Die primäre WÖk-Quelle ist das neue Grundlagenbuch „Die neue Ordnung des Wohlstands“ in der 2026er Fassung. Für Wirkungscontrolling sind vor allem Teil V „Messung, Daten und Methodik“, Kapitel 30 bis 35, sowie Kapitel 44 „Wirkungscontrolling im Unternehmen“ maßgeblich [I-01]. Der online geprüfte Stand der Website bestätigt die Leitidee, dass positive Netto-Wirkung entscheidungsrelevant werden soll und Wirkung erst dann systemrelevant wird, wenn sie in Preise, Steuern, Kapital und Entscheidungen zurückwirkt [I-02].
 
 
 ### 7.9 Konsequenzen für die WÖk-Architektur
@@ -787,7 +787,7 @@ Was ist Wirkungsmanagement? ist kein Randthema. Es zeigt, ob die WÖk nur schön
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -798,17 +798,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v1-was-ist-wirkungsmanagement.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

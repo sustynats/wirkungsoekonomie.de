@@ -7,7 +7,7 @@
 **Voraussetzungen:** V01–V19, insbesondere V18 „Zeit, Generationen und unsichtbare Betroffene" und V19 „Wirkstoff, Wirkmechanismus und Wirkungspotenzial"  
 **Lesezeit:** ca. 90–120 Minuten  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus, Journal/Blog, Akademie-Quelltexte und externe Literatur
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -559,14 +559,11 @@ WÖk. Es geht um die Bedingungen, unter denen Wirkungspotenzial verantwortbar in
 
 ## 19. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `docs/lehrgaenge/woek-g-v20-gesellschaftliche-resonanzfaktoren.md` — Quell-Dokument für diese Vorlesung.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Format- und Produktionsvorgabe für ausführliche Studienskripte.
-- `docs/unternehmenslehrgaenge-konzept.md` — didaktischer Rahmen der WÖk-Akademie.
-- `docs/lehrgaenge/sprechertexte/woek-g-v19.md` — Anschluss an Wirkstoff, Wirkmechanismus und Wirkungspotenzial.
-- Website-Root `../buch.html` und `../assets/pdf/die-neue-ordnung-des-wohlstands.pdf` — aktuelles Grundlagenwerk der Wirkungsökonomie.
-- Website-Root `../feeds/journal.xml`, `../blog/wirkstoff-narrative-rechte-frames-wirkungspotenzial.html`, `../blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html`, `../blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html` — Journalbeispiele zu Narrativen, Resonanz, Faktenwirkung und Rückkopplung.
+- [Wirkstoff, Wirkmechanismus und Wirkungspotenzial](https://wirkungsoekonomie.de/bibliothek/studienskripte/woek-g-v19/) — Anschluss an die vorherige Vorlesung.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Journalbeispiele zu Narrativen, Resonanz, Faktenwirkung und Rückkopplung, insbesondere [Wirkstoff Narrative](https://wirkungsoekonomie.de/blog/wirkstoff-narrative-rechte-frames-wirkungspotenzial.html), [Wirkungspotenzial](https://wirkungsoekonomie.de/blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html) und [Wissensgesellschaft zur Wirkungsgesellschaft](https://wirkungsoekonomie.de/blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html).
 - WÖk-Begriffslogik aus dem Website-/Projektkorpus: Wirkung, Wirkungspotenzial, Wirkungsrisiko, positive Netto-Wirkung, Rückkopplung, Nichtkompensation.
 
 ### Externe Quellen
@@ -575,7 +572,7 @@ WÖk. Es geht um die Bedingungen, unter denen Wirkungspotenzial verantwortbar in
 - Kingdon, John W. (1984): *Agendas, Alternatives, and Public Policies*. Boston: Little, Brown.
 - Luhmann, Niklas (1979): *Trust and Power*. Chichester: Wiley.
 - Habermas, Jürgen (1992): *Faktizität und Geltung*. Frankfurt am Main: Suhrkamp.
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*. UN General Assembly Resolution A/RES/70/1.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda). UN General Assembly Resolution A/RES/70/1.
 
 ## 20. Transferaufgabe
 
@@ -738,7 +735,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 74 - Öffentlichkeit als Wirkungsraum
 
-*Interne Quelle:* `referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html`
+*Öffentliche Quelle:* [Kapitel 74 - Öffentlichkeit als Wirkungsraum](https://wirkungsoekonomie.de/referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/)
 
 Öffentlichkeit ist nicht nur der Ort, an dem Meinungen erscheinen. Sie ist die Rückkopplungsinfrastruktur, durch die eine Demokratie Wirklichkeit prüfen und sich selbst korrigieren kann.
 
@@ -816,7 +813,7 @@ Damit wird Öffentlichkeit nicht verengt. Sie wird ernst genommen. Die nächsten
 
 ### Quellenanker: Kapitel 76 - Framing, Sprache und Tonalität
 
-*Interne Quelle:* `referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html`
+*Öffentliche Quelle:* [Kapitel 76 - Framing, Sprache und Tonalität](https://wirkungsoekonomie.de/referenz/kapitel-076-framing-sprache-und-tonalitaet/)
 
 Kapitel 75 hat gezeigt, dass Plattformen Sichtbarkeit, Aufmerksamkeit und Resonanz steuern. Dieses Kapitel richtet den Blick auf das, was in diesen Räumen zirkuliert: Sprache, Bilder, Tonalität, Frames, Mimik, Stimme, Wiederholung, Metaphern und Kampfbegriffe. Kommunikation ist nicht nur Übertragung von Information. Sie schafft Wirkungspotenzial. Sie ordnet Wahrnehmung, Emotion, Zugehörigkeit und Handlungsschwellen.
 
@@ -894,7 +891,7 @@ Hate Speech braucht rechtsstaatlich präzise Grenzziehung und verhältnismäßig
 
 ### Quellenanker: Kapitel 79 - Diskurskultur
 
-*Interne Quelle:* `referenz/kapitel-079-diskurskultur/index.html`
+*Öffentliche Quelle:* [Kapitel 79 - Diskurskultur](https://wirkungsoekonomie.de/referenz/kapitel-079-diskurskultur/)
 
 Kapitel 78 hat Creator:innen, Hosts und digitale Community-Betreiber:innen als öffentliche Wirkungsträger beschrieben. Dieses Kapitel schließt Teil XII ab. Es zieht die Linie zusammen: Öffentlichkeit, Plattformen, Sprache, Desinformation, Creator-Verantwortung und Community-Dynamik brauchen eine gemeinsame demokratische Grundfähigkeit. Diese Fähigkeit heißt Diskurskultur.
 
@@ -972,7 +969,7 @@ Resonanzräume können analog und digital sein: Bürgerräte, öffentliche Anhö
 
 ### Quellenanker: Kapitel 102 - Die SDGs zwischen globaler Kooperation und Verschwörungsnarrativ
 
-*Interne Quelle:* `referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/index.html`
+*Öffentliche Quelle:* [Kapitel 102 - Die SDGs zwischen globaler Kooperation und Verschwörungsnarrativ](https://wirkungsoekonomie.de/referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/)
 
 Die Sustainable Development Goals, kurz SDGs, gehören zu den wichtigsten globalen Referenzrahmen der Gegenwart. Sie formulieren Ziele, die fast niemand grundsätzlich ablehnen würde, wenn sie einzeln betrachtet werden: Armut beenden, Hunger verringern, Gesundheit verbessern, Bildung sichern, Wasser schützen, saubere Energie ermöglichen, menschenwürdige Arbeit fördern, Ungleichheit reduzieren, nachhaltige Städte entwickeln, verantwortliche Produktion stärken, Klima schützen, Biodiversität bewahren, Frieden sichern, Institutionen stärken und internationale Zusammenarbeit verbessern.
 

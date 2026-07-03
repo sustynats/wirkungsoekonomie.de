@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Nebenwirkungen, Rebound, Zielkonflikte und Wirkungsgrenzen  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v6-nebenwirkungen-zielkonflikte.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v6.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v6.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V6
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WM-V5
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§4/§5) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -90,10 +90,10 @@ Gute Maßnahmen haben oft unerwünschte Nebenfolgen – und manchmal widersprech
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Nebenwirkung / Wechselwirkung | indirekte, gegenseitige Folgen | `begriffe/nebenwirkung`, `begriffe/wechselwirkung` |
-| Rebound | zurückschlagender Effekt, der Wirkung mindert | `begriffe/rebound-effekt` |
+| Nebenwirkung / Wechselwirkung | indirekte, gegenseitige Folgen | [Nebenwirkung](https://wirkungsoekonomie.de/begriffe/nebenwirkung/), [Wechselwirkung](https://wirkungsoekonomie.de/begriffe/wechselwirkung/) |
+| Rebound | zurückschlagender Effekt, der Wirkung mindert | [Rebound effekt](https://wirkungsoekonomie.de/begriffe/rebound-effekt/) |
 | Wirkungsgrenzen | nicht verrechenbare rote Linien | _(noch keine Seite – Begriffsleitfaden §4)_ |
-| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
+| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -335,9 +335,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V6. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4/§5
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` – „Schutzlogik"
-- Glossar: `begriffe/nebenwirkung`, `begriffe/rebound-effekt`, `begriffe/nichtkompensationsprinzip`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §4/§5
+- [Was ist Wirkungsökonomie?](https://wirkungsoekonomie.de/wirkungsoekonomie.html) – „Schutzlogik"
+- Glossar: [Nebenwirkung](https://wirkungsoekonomie.de/begriffe/nebenwirkung/), [Rebound effekt](https://wirkungsoekonomie.de/begriffe/rebound-effekt/), [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -421,10 +421,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Nebenwirkung / Wechselwirkung | indirekte, gegenseitige Folgen | `begriffe/nebenwirkung`, `begriffe/wechselwirkung` |
-| Rebound | zurückschlagender Effekt, der Wirkung mindert | `begriffe/rebound-effekt` |
+| Nebenwirkung / Wechselwirkung | indirekte, gegenseitige Folgen | [Nebenwirkung](https://wirkungsoekonomie.de/begriffe/nebenwirkung/), [Wechselwirkung](https://wirkungsoekonomie.de/begriffe/wechselwirkung/) |
+| Rebound | zurückschlagender Effekt, der Wirkung mindert | [Rebound effekt](https://wirkungsoekonomie.de/begriffe/rebound-effekt/) |
 | Wirkungsgrenzen | nicht verrechenbare rote Linien | _(noch keine Seite – Begriffsleitfaden §4)_ |
-| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
+| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -492,7 +492,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz
 
-*Interne Quelle:* `referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html`
+*Öffentliche Quelle:* [Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/)
 
 ### 23.1 Warum Wirkung immer auch Risiko bedeutet
 
@@ -570,7 +570,7 @@ Demokratische Resilienz bedeutet daher nicht nur Schutz von Wahlen. Sie umfasst 
 
 ### Quellenanker: Kapitel 33 - Reverse Merit Order
 
-*Interne Quelle:* `referenz/kapitel-033-reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Kapitel 33 - Reverse Merit Order](https://wirkungsoekonomie.de/referenz/kapitel-033-reverse-merit-order/)
 
 Kapitel 32 hat Scorecards als Instrument beschrieben, mit dem Wirkungen geordnet, vergleichbar und steuerungsfähig werden. Eine Scorecard allein reicht jedoch nicht. Denn sobald mehrere Wirkungsfelder nebeneinander bewertet werden, entsteht eine gefährliche Versuchung: Man könnte gute Werte in einem Feld gegen schlechte Werte in einem anderen Feld aufrechnen.
 
@@ -648,7 +648,7 @@ Damit verhindert sie eine typische Fehlsteuerung heutiger Nachhaltigkeitsmodelle
 
 ### Quellenanker: WÖk-Prägungsbegriff / Schutzbegriff
 
-*Interne Quelle:* `begriffe/wirkungsgrenze/index.html`
+*Öffentliche Quelle:* [WÖk-Prägungsbegriff / Schutzbegriff](https://wirkungsoekonomie.de/begriffe/wirkungsgrenze/)
 
 Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.
 
@@ -726,7 +726,7 @@ Wirkungsgrenzen sind keine willkürlichen Verbote und keine private Moral. Sie m
 
 ### Quellenanker: Anschlussbegriff / WÖk-Präzisierungsbegriff
 
-*Interne Quelle:* `begriffe/rebound-effekt/index.html`
+*Öffentliche Quelle:* [Anschlussbegriff / WÖk-Präzisierungsbegriff](https://wirkungsoekonomie.de/begriffe/rebound-effekt/)
 
 Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.
 
@@ -818,7 +818,7 @@ Nebenwirkungen, Rebound, Zielkonflikte und Wirkungsgrenzen ist kein Randthema. E
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -829,17 +829,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v6-nebenwirkungen-zielkonflikte.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

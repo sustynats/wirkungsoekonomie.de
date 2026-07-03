@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** Fallstudie – Vom Wirkungsdatensatz zur Steuerungsentscheidung (Abschlussfall)  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v10-fallstudie-datensatz-steuerungsentscheidung.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v10.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v10.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V10
 **Empfohlene Dauer:** ~60 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WC-V9
-**Führende Quellen (Repo):** gesamter Wirkungscontrolling-Track · `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -92,9 +92,9 @@ Jetzt zusammen: Daten liegen vor, die Scorecard ist erstellt. **Wie kommst du vo
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Steuerungsentscheidung | begründete Konsequenz aus der Wirkungsbewertung | _(zusammengesetzt; siehe Wirkungslenkung)_ |
-| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | `begriffe/reverse-merit-order` |
-| NWI | operative geprüfte Netto-Wirkung | `begriffe/netto-wirkungs-index` |
-| IoI / T-SROI | Wirkung pro Euro / Transformationswirkung | `begriffe/impact-of-investment`, `begriffe/t-sroi` |
+| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| NWI | operative geprüfte Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
+| IoI / T-SROI | Wirkung pro Euro / Transformationswirkung | [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/), [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -306,9 +306,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V10. Offen ble
 
 ## 9. Quellen / Vertiefung
 
-- gesamter Wirkungscontrolling-Track (`docs/lehrgaenge/`)
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`
-- Glossar: `begriffe/reverse-merit-order`, `begriffe/netto-wirkungs-index`, `begriffe/impact-of-investment`, `begriffe/t-sroi`
+- gesamter Wirkungscontrolling-Track
+- [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/)
+- Glossar: [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/), [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/), [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/), [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -393,9 +393,9 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Steuerungsentscheidung | begründete Konsequenz aus der Wirkungsbewertung | _(zusammengesetzt; siehe Wirkungslenkung)_ |
-| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | `begriffe/reverse-merit-order` |
-| NWI | operative geprüfte Netto-Wirkung | `begriffe/netto-wirkungs-index` |
-| IoI / T-SROI | Wirkung pro Euro / Transformationswirkung | `begriffe/impact-of-investment`, `begriffe/t-sroi` |
+| Reverse Merit Order | kritisches Feld begrenzt/entscheidet | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| NWI | operative geprüfte Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
+| IoI / T-SROI | Wirkung pro Euro / Transformationswirkung | [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/), [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -463,7 +463,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 98 - Pilotprojekte
 
-*Interne Quelle:* `referenz/kapitel-098-pilotprojekte/index.html`
+*Öffentliche Quelle:* [Kapitel 98 - Pilotprojekte](https://wirkungsoekonomie.de/referenz/kapitel-098-pilotprojekte/)
 
 Kapitel 97 hat den Umsetzungspfad beschrieben: Die Wirkungsökonomie wird nicht als Schock eingeführt, sondern als lernender Steuerungswechsel. Kapitel 98 macht diesen Übergang praktisch.
 
@@ -541,7 +541,7 @@ Viertens: keine Pilotprojekte ohne Konsequenz. Wenn ein Pilot zeigt, dass eine M
 
 ### Quellenanker: Kapitel 99 - Wirkungsökonomie im Alltag
 
-*Interne Quelle:* `referenz/kapitel-099-wirkungsoekonomie-im-alltag/index.html`
+*Öffentliche Quelle:* [Kapitel 99 - Wirkungsökonomie im Alltag](https://wirkungsoekonomie.de/referenz/kapitel-099-wirkungsoekonomie-im-alltag/)
 
 Kapitel 98 hat Pilotprojekte als Lernräume beschrieben. Dort wird die Wirkungsökonomie getestet: an Produkten, in Kommunen, in Unternehmen, in Wirkungsfonds und Datenräumen. Kapitel 99 fragt nun, wie dieser Steuerungswechsel im Alltag spürbar wird.
 
@@ -619,7 +619,7 @@ Fünftens: Automatisierungsdividende. Wenn Maschinen mehr produktive Leistung ü
 
 ### Quellenanker: Kapitel 100 - Transformationspfade
 
-*Interne Quelle:* `referenz/kapitel-100-transformationspfade/index.html`
+*Öffentliche Quelle:* [Kapitel 100 - Transformationspfade](https://wirkungsoekonomie.de/referenz/kapitel-100-transformationspfade/)
 
 Kapitel 99 hat gezeigt, wie die Wirkungsökonomie im Alltag erfahrbar wird: nicht durch moralische Überforderung, sondern dadurch, dass bessere Wirkung leichter, sichtbarer, bezahlbarer und selbstverständlicher wird. Kapitel 100 bündelt nun die praktischen Handlungsfelder.
 
@@ -697,7 +697,7 @@ Der Erfolg politischer Programme bemisst sich dann nicht daran, dass sie existie
 
 ### Quellenanker: Wirkungsökonomie · Impact-of-Investment (IOI) · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/impact-of-investment/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/impact-of-investment/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Impact-of-Investment (IOI) · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/impact-of-investment/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/impact-of-investment/)
 
 Einzeldossier · Impact Controlling
 
@@ -775,7 +775,7 @@ Anker im Online-Buch #
 
 ### Quellenanker: Wirkungsökonomie · Einzeldossier Beispielrechnungen Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/beispielrechnungen/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/beispielrechnungen/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Einzeldossier Beispielrechnungen Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/beispielrechnungen/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/beispielrechnungen/)
 
 Einzeldossier · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -853,7 +853,7 @@ Tool-/Rechnerbezug #
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/beispiel-konzern/index.html`
+*Öffentliche Quelle:* [Beispiel konzern](https://wirkungsoekonomie.de/dokumente/beispiel-konzern/)
 
 Webfassung aus der gelieferten Originaldatei. Der Originaltext bleibt über die Originaldatei zitierbar.
 
@@ -895,7 +895,7 @@ Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschl
 
 ### Quellenanker: Wirkungsökonomie · Unternehmens-Wirkungscheck · https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/unternehmens-wirkungscheck/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Unternehmens-Wirkungscheck · https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/)
 
 Methode
 
@@ -987,7 +987,7 @@ Fallstudie – Vom Wirkungsdatensatz zur Steuerungsentscheidung (Abschlussfall) 
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -998,17 +998,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v10-fallstudie-datensatz-steuerungsentscheidung.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

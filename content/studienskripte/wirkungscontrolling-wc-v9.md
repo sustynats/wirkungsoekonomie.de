@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkungsaudit, Datenqualität, Assurance und Missbrauchsschutz  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v9-audit-datenqualitaet-assurance.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v9.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v9.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V9
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WC-V8
-**Führende Quellen (Repo):** `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` · `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` · Glossar `begriffe/datenqualitaet`, `begriffe/assurance`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -74,7 +74,7 @@ Wirkungsdaten laden zum Schönen ein. **Wie stellt man sicher, dass Bewertungen 
 
 **Unsicherheit gehört ausgewiesen.** Die Wirkungsökonomie verlangt **Zurechnung ohne Scheingenauigkeit**: Unsicherheiten, Annahmen und Bandbreiten werden benannt. „Wirkungswahrheit" meint Datenklarheit und Transparenz über Folgen – **kein** Wahrheitsmonopol (Grundlagen V7). Ehrlich ausgewiesene Unsicherheit ist ein Qualitätsmerkmal, kein Makel.
 
-**Auditierbarkeit und Assurance.** Weil Daten über **WÖk-IDs** (V3) nachvollziehbar zugeordnet sind, werden Bewertungen **auditierbar** – Herkunft und Bewertungslogik sind rückverfolgbar. **Assurance** ist die unabhängige Prüfung dieser Bewertungen. Auditierbarkeit ist Voraussetzung für Vertrauen und für spätere verifizierte Prüfungen (`docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md`).
+**Auditierbarkeit und Assurance.** Weil Daten über **WÖk-IDs** (V3) nachvollziehbar zugeordnet sind, werden Bewertungen **auditierbar** – Herkunft und Bewertungslogik sind rückverfolgbar. **Assurance** ist die unabhängige Prüfung dieser Bewertungen. Auditierbarkeit ist Voraussetzung für Vertrauen und für spätere verifizierte Prüfungen ([Wirkungssteuergesetz (WStG)](https://wirkungsoekonomie.de/referenz/kapitel-037-das-wirkungssteuergesetz-wstg/)).
 
 **Missbrauchsschutz und Governance.** Typische Manipulationen: selektive **Scope-Grenzen**, **Cherry-Picking** günstiger Indikatoren, **Kompensation** kritischer Felder. Wirkungscontrolling erkennt diese Muster (Anschluss an V5). Governance-Instrumente – **Wirkungsrat**, Rechtsschutz, Versionierung – halten das System lernfähig, anfechtbar und korrigierbar. Bewertung ist damit kein Endurteil, sondern ein überprüfbarer, revidierbarer Prozess.
 
@@ -82,10 +82,10 @@ Wirkungsdaten laden zum Schönen ein. **Wie stellt man sicher, dass Bewertungen 
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Datenqualität | Belastbarkeit eines Werts (Quelle, Messung, Scope) | `begriffe/datenqualitaet` |
-| Assurance | unabhängige Prüfung der Bewertung | `begriffe/assurance` |
+| Datenqualität | Belastbarkeit eines Werts (Quelle, Messung, Scope) | [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/) |
+| Assurance | unabhängige Prüfung der Bewertung | [Assurance](https://wirkungsoekonomie.de/begriffe/assurance/) |
 | Auditierbarkeit | Nachvollziehbarkeit von Herkunft/Logik | _(noch keine Seite – WUStG-Leitlinien)_ |
-| Wirkungswahrheit | Datenklarheit/Transparenz, kein Wahrheitsmonopol | `begriffe/wirkungswahrheit` |
+| Wirkungswahrheit | Datenklarheit/Transparenz, kein Wahrheitsmonopol | [Wirkungswahrheit](https://wirkungsoekonomie.de/begriffe/wirkungswahrheit/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -327,9 +327,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V9. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` – Auditierbarkeit, Missbrauchsschutz
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`
-- Glossar: `begriffe/datenqualitaet`, `begriffe/assurance`, `begriffe/wirkungswahrheit`
+- [Wirkungssteuergesetz (WStG)](https://wirkungsoekonomie.de/referenz/kapitel-037-das-wirkungssteuergesetz-wstg/) – Auditierbarkeit, Missbrauchsschutz
+- [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/)
+- Glossar: [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/), [Assurance](https://wirkungsoekonomie.de/begriffe/assurance/), [Wirkungswahrheit](https://wirkungsoekonomie.de/begriffe/wirkungswahrheit/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -413,10 +413,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Datenqualität | Belastbarkeit eines Werts (Quelle, Messung, Scope) | `begriffe/datenqualitaet` |
-| Assurance | unabhängige Prüfung der Bewertung | `begriffe/assurance` |
+| Datenqualität | Belastbarkeit eines Werts (Quelle, Messung, Scope) | [Datenqualitaet](https://wirkungsoekonomie.de/begriffe/datenqualitaet/) |
+| Assurance | unabhängige Prüfung der Bewertung | [Assurance](https://wirkungsoekonomie.de/begriffe/assurance/) |
 | Auditierbarkeit | Nachvollziehbarkeit von Herkunft/Logik | _(noch keine Seite – WUStG-Leitlinien)_ |
-| Wirkungswahrheit | Datenklarheit/Transparenz, kein Wahrheitsmonopol | `begriffe/wirkungswahrheit` |
+| Wirkungswahrheit | Datenklarheit/Transparenz, kein Wahrheitsmonopol | [Wirkungswahrheit](https://wirkungsoekonomie.de/begriffe/wirkungswahrheit/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -484,7 +484,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Wirkungsökonomie · Datenqualität & Assurance · https://wirkungsoekonomie.de/werkzeuge/datenqualitaet-assurance/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/datenqualitaet-assurance/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Datenqualität & Assurance · https://wirkungsoekonomie.de/werkzeuge/datenqualitaet-assurance/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/datenqualitaet-assurance/)
 
 Methodenregister
 
@@ -562,7 +562,7 @@ Positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz sichtbar
 
 ### Quellenanker: Wirkungsökonomie · Detailkonzept Datenqualität und Assurance · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Detailkonzept Datenqualität und Assurance · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/datenqualitaet-assurance/)
 
 Detailkonzept · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -640,7 +640,7 @@ Relevant sind Bürger:innen, betroffene Gruppen, Unternehmen, Verwaltung, Politi
 
 ### Quellenanker: Wirkungsökonomie · Einzeldossier Datenqualität und Assurance · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Einzeldossier Datenqualität und Assurance · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/)
 
 Einzeldossier · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -718,7 +718,7 @@ Tool-/Rechnerbezug #
 
 ### Quellenanker: WÖk-Präzisierungsbegriff / Prüfbegriff
 
-*Interne Quelle:* `begriffe/wirkungsaudit/index.html`
+*Öffentliche Quelle:* [WÖk-Präzisierungsbegriff / Prüfbegriff](https://wirkungsoekonomie.de/begriffe/wirkungsaudit/)
 
 Ein Wirkungsaudit prüft, ob Wirkungsdaten, Scorecards, Bewertungen und Nachweise nachvollziehbar, plausibel und regelkonform sind.
 
@@ -796,7 +796,7 @@ Abgrenzung: Nicht verwechseln mit
 
 ### Quellenanker: Anschlussbegriff / WÖk-Präzisierung
 
-*Interne Quelle:* `begriffe/wirkungsassurance/index.html`
+*Öffentliche Quelle:* [Anschlussbegriff / WÖk-Präzisierung](https://wirkungsoekonomie.de/begriffe/wirkungsassurance/)
 
 Wirkungsassurance bezeichnet die unabhängige Prüfung und Absicherung von Wirkungsdaten und Wirkungsbewertungen.
 
@@ -874,7 +874,7 @@ Abgrenzung: Nicht verwechseln mit
 
 ### Quellenanker: Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation
 
-*Interne Quelle:* `referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html`
+*Öffentliche Quelle:* [Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation](https://wirkungsoekonomie.de/referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/)
 
 Je wichtiger Wirkung wird, desto größer wird der Anreiz, Wirkung zu behaupten, zu inszenieren oder zu simulieren. Das ist kein Randproblem der Wirkungsökonomie. Es ist ihr zentraler methodischer Stresstest.
 
@@ -952,7 +952,7 @@ ESG-Theater endet erst dort, wo Nachhaltigkeitsdaten reale Entscheidungen verän
 
 ### Quellenanker: Kapitel 106 - Die Fehlbarkeit der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 106 - Die Fehlbarkeit der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/)
 
 Eine Wirkungsökonomie, die ihre eigene Fehlbarkeit nicht anerkennt, würde ihren Kern verraten. Sie würde Wirkung zur neuen Gewissheitsformel machen, obwohl Wirkung in komplexen Systemen nie vollständig vorhersagbar, nie vollständig messbar und nie endgültig bewertbar ist.
 
@@ -1044,7 +1044,7 @@ Wirkungsaudit, Datenqualität, Assurance und Missbrauchsschutz ist kein Randthem
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -1055,17 +1055,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v9-audit-datenqualitaet-assurance.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

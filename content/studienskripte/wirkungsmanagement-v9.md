@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Kommunikation ohne Impact-Washing  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v9-kommunikation-ohne-impact-washing.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v9.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v9.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V9
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** WM-V8
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§4) · Glossar `begriffe/impact-washing`, `begriffe/greenwashing` · Blog-Beispiele
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -89,10 +89,10 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Impact-Washing | unbelegte oder überzogene Wirkungsbehauptung | `begriffe/impact-washing` |
-| Greenwashing | Vortäuschen ökologischer Wirkung | `begriffe/greenwashing` |
+| Impact-Washing | unbelegte oder überzogene Wirkungsbehauptung | [Impact washing](https://wirkungsoekonomie.de/begriffe/impact-washing/) |
+| Greenwashing | Vortäuschen ökologischer Wirkung | [Greenwashing](https://wirkungsoekonomie.de/begriffe/greenwashing/) |
 | Reichweite ≠ Wirkung | Aufmerksamkeit ist kein Wirkungsnachweis | _(noch keine Seite – Begriffsleitfaden §4)_ |
-| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
+| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -334,8 +334,8 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V9. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4 (Reichweite ≠ Wirkung)
-- Glossar: `begriffe/impact-washing`, `begriffe/greenwashing`, `begriffe/wirkungspotenzial`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §4 (Reichweite ≠ Wirkung)
+- Glossar: [Impact washing](https://wirkungsoekonomie.de/begriffe/impact-washing/), [Greenwashing](https://wirkungsoekonomie.de/begriffe/greenwashing/), [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -419,10 +419,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Impact-Washing | unbelegte oder überzogene Wirkungsbehauptung | `begriffe/impact-washing` |
-| Greenwashing | Vortäuschen ökologischer Wirkung | `begriffe/greenwashing` |
+| Impact-Washing | unbelegte oder überzogene Wirkungsbehauptung | [Impact washing](https://wirkungsoekonomie.de/begriffe/impact-washing/) |
+| Greenwashing | Vortäuschen ökologischer Wirkung | [Greenwashing](https://wirkungsoekonomie.de/begriffe/greenwashing/) |
 | Reichweite ≠ Wirkung | Aufmerksamkeit ist kein Wirkungsnachweis | _(noch keine Seite – Begriffsleitfaden §4)_ |
-| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
+| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -490,7 +490,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 76 - Framing, Sprache und Tonalität
 
-*Interne Quelle:* `referenz/kapitel-076-framing-sprache-und-tonalitaet/index.html`
+*Öffentliche Quelle:* [Kapitel 76 - Framing, Sprache und Tonalität](https://wirkungsoekonomie.de/referenz/kapitel-076-framing-sprache-und-tonalitaet/)
 
 Kapitel 75 hat gezeigt, dass Plattformen Sichtbarkeit, Aufmerksamkeit und Resonanz steuern. Dieses Kapitel richtet den Blick auf das, was in diesen Räumen zirkuliert: Sprache, Bilder, Tonalität, Frames, Mimik, Stimme, Wiederholung, Metaphern und Kampfbegriffe. Kommunikation ist nicht nur Übertragung von Information. Sie schafft Wirkungspotenzial. Sie ordnet Wahrnehmung, Emotion, Zugehörigkeit und Handlungsschwellen.
 
@@ -568,7 +568,7 @@ Hate Speech braucht rechtsstaatlich präzise Grenzziehung und verhältnismäßig
 
 ### Quellenanker: Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation
 
-*Interne Quelle:* `referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html`
+*Öffentliche Quelle:* [Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation](https://wirkungsoekonomie.de/referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/)
 
 Je wichtiger Wirkung wird, desto größer wird der Anreiz, Wirkung zu behaupten, zu inszenieren oder zu simulieren. Das ist kein Randproblem der Wirkungsökonomie. Es ist ihr zentraler methodischer Stresstest.
 
@@ -646,7 +646,7 @@ ESG-Theater endet erst dort, wo Nachhaltigkeitsdaten reale Entscheidungen verän
 
 ### Quellenanker: WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff
 
-*Interne Quelle:* `begriffe/impact-washing/index.html`
+*Öffentliche Quelle:* [WÖk-Präzisierungsbegriff / Risiko- und Washingbegriff](https://wirkungsoekonomie.de/begriffe/impact-washing/)
 
 Impact-Washing liegt vor, wenn positive Wirkung behauptet, vermarktet oder finanziell genutzt wird, ohne dass sie belastbar belegt, bewertet und rückgekoppelt ist.
 
@@ -724,7 +724,7 @@ Verknüpfungen
 
 ### Quellenanker: WÖk-Prägungsbegriff / Schutzbegriff
 
-*Interne Quelle:* `begriffe/wirkungswahrheit/index.html`
+*Öffentliche Quelle:* [WÖk-Prägungsbegriff / Schutzbegriff](https://wirkungsoekonomie.de/begriffe/wirkungswahrheit/)
 
 Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.
 
@@ -816,7 +816,7 @@ Kommunikation ohne Impact-Washing ist kein Randthema. Es zeigt, ob die WÖk nur 
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -827,17 +827,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v9-kommunikation-ohne-impact-washing.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkungsdaten & Rahmenwerke  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v2-wirkungsdaten-rahmenwerke.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v2.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v2.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V2
 **Empfohlene Dauer:** ~55 Min · **Videolänge:** ~16 Min
 **Voraussetzung:** WC-V1
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§6.1 Anschlussbegriffe) · `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -90,12 +90,12 @@ CSRD, ESRS, GRI, EU-Taxonomie – Unternehmen ertrinken in Berichtspflichten. **
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| CSRD | EU-Berichtspflicht zur Nachhaltigkeit | `begriffe/csrd` |
-| ESRS | europäische Berichtsstandards | `begriffe/esrs` |
-| GRI | Global Reporting Initiative-Standards | `begriffe/gri` |
-| EU-Taxonomie | Klassifikation nachhaltiger Aktivitäten | `begriffe/eu-taxonomie` |
-| NACE | Branchencodierung | `begriffe/nace` |
-| Digitaler Produktpass | produktbezogene Lebenszyklusdaten | `begriffe/digitaler-produktpass`, `begriffe/dpp` |
+| CSRD | EU-Berichtspflicht zur Nachhaltigkeit | [Csrd](https://wirkungsoekonomie.de/begriffe/csrd/) |
+| ESRS | europäische Berichtsstandards | [Esrs](https://wirkungsoekonomie.de/begriffe/esrs/) |
+| GRI | Global Reporting Initiative-Standards | [Gri](https://wirkungsoekonomie.de/begriffe/gri/) |
+| EU-Taxonomie | Klassifikation nachhaltiger Aktivitäten | [Eu taxonomie](https://wirkungsoekonomie.de/begriffe/eu-taxonomie/) |
+| NACE | Branchencodierung | [Nace](https://wirkungsoekonomie.de/begriffe/nace/) |
+| Digitaler Produktpass | produktbezogene Lebenszyklusdaten | [Digitaler produktpass](https://wirkungsoekonomie.de/begriffe/digitaler-produktpass/), [Dpp](https://wirkungsoekonomie.de/begriffe/dpp/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -129,7 +129,7 @@ Nimm einen realen Berichtsdatenpunkt (z. B. aus CSRD/ESRS oder GRI) deiner Organ
 
 ## 8. Praxisbeispiel
 
-**Taxonomie-konform, aber nicht netto-positiv.** Eine Aktivität kann EU-Taxonomie-konform gemeldet werden und dennoch, unter Reverse Merit Order betrachtet, ein kritisches Wirkungsfeld schwächen. Wirkungscontrolling nutzt die Taxonomie-Daten, ersetzt aber die Bewertung nicht durch das Label. (Vertiefung: `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md`.)
+**Taxonomie-konform, aber nicht netto-positiv.** Eine Aktivität kann EU-Taxonomie-konform gemeldet werden und dennoch, unter Reverse Merit Order betrachtet, ein kritisches Wirkungsfeld schwächen. Wirkungscontrolling nutzt die Taxonomie-Daten, ersetzt aber die Bewertung nicht durch das Label. (Vertiefung: [Wirkungssteuergesetz (WStG)](https://wirkungsoekonomie.de/referenz/kapitel-037-das-wirkungssteuergesetz-wstg/).)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
@@ -315,9 +315,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V2. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §6.1 Anschlussbegriffe
-- `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md`
-- Glossar: `begriffe/csrd`, `begriffe/esrs`, `begriffe/eu-taxonomie`, `begriffe/digitaler-produktpass`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §6.1 Anschlussbegriffe
+- [Wirkungssteuergesetz (WStG)](https://wirkungsoekonomie.de/referenz/kapitel-037-das-wirkungssteuergesetz-wstg/)
+- Glossar: [Csrd](https://wirkungsoekonomie.de/begriffe/csrd/), [Esrs](https://wirkungsoekonomie.de/begriffe/esrs/), [Eu taxonomie](https://wirkungsoekonomie.de/begriffe/eu-taxonomie/), [Digitaler produktpass](https://wirkungsoekonomie.de/begriffe/digitaler-produktpass/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -401,12 +401,12 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| CSRD | EU-Berichtspflicht zur Nachhaltigkeit | `begriffe/csrd` |
-| ESRS | europäische Berichtsstandards | `begriffe/esrs` |
-| GRI | Global Reporting Initiative-Standards | `begriffe/gri` |
-| EU-Taxonomie | Klassifikation nachhaltiger Aktivitäten | `begriffe/eu-taxonomie` |
-| NACE | Branchencodierung | `begriffe/nace` |
-| Digitaler Produktpass | produktbezogene Lebenszyklusdaten | `begriffe/digitaler-produktpass`, `begriffe/dpp` |
+| CSRD | EU-Berichtspflicht zur Nachhaltigkeit | [Csrd](https://wirkungsoekonomie.de/begriffe/csrd/) |
+| ESRS | europäische Berichtsstandards | [Esrs](https://wirkungsoekonomie.de/begriffe/esrs/) |
+| GRI | Global Reporting Initiative-Standards | [Gri](https://wirkungsoekonomie.de/begriffe/gri/) |
+| EU-Taxonomie | Klassifikation nachhaltiger Aktivitäten | [Eu taxonomie](https://wirkungsoekonomie.de/begriffe/eu-taxonomie/) |
+| NACE | Branchencodierung | [Nace](https://wirkungsoekonomie.de/begriffe/nace/) |
+| Digitaler Produktpass | produktbezogene Lebenszyklusdaten | [Digitaler produktpass](https://wirkungsoekonomie.de/begriffe/digitaler-produktpass/), [Dpp](https://wirkungsoekonomie.de/begriffe/dpp/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -474,7 +474,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 30 - Von Wirkung zu Messung
 
-*Interne Quelle:* `referenz/kapitel-030-von-wirkung-zu-messung/index.html`
+*Öffentliche Quelle:* [Kapitel 30 - Von Wirkung zu Messung](https://wirkungsoekonomie.de/referenz/kapitel-030-von-wirkung-zu-messung/)
 
 Diese Frage bildet den Übergang von der normativen Ordnung zur Messarchitektur. Ohne Messung bleibt Wirkung ein Anspruch. Ohne Maßstab bleibt Messung blind. Ohne Rückkopplung bleibt Messung folgenlos. Die Wirkungsökonomie braucht daher eine Methodik, die Wirkung sichtbar macht, ohne ihre Komplexität zu zerstören.
 
@@ -552,7 +552,7 @@ Weber, Natalie: Grundlagenpapier Wirkungsökonomie, 2025. Grundlage für Wirkung
 
 ### Quellenanker: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume
 
-*Interne Quelle:* `referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume](https://wirkungsoekonomie.de/referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/)
 
 Kapitel 34 hat T-SROI als Kennzahl für Transformation, Systemwirkung und langfristige Wirkungsqualität eingeführt. Damit ist die methodische Frage gestellt, wie Wirkung nicht nur als Einzelwert, sondern als Veränderung von Zuständen, Risiken und Zukunftspfaden sichtbar wird. Dieses Kapitel schließt Teil V ab und zeigt, welche technische Bedingung dafür nötig ist: Wirkungsdaten müssen verfügbar, prüfbar, verknüpfbar und entscheidungsrelevant werden.
 
@@ -630,7 +630,7 @@ Wirkung ist nun nicht mehr nur ein Begriff. Sie ist nicht nur normative Orientie
 
 ### Quellenanker: Kapitel 85 - DPP-Infrastruktur und technische Umsetzung
 
-*Interne Quelle:* `referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html`
+*Öffentliche Quelle:* [Kapitel 85 - DPP-Infrastruktur und technische Umsetzung](https://wirkungsoekonomie.de/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/)
 
 Kapitel 84 hat Cyberresilienz als Grundbedingung der digitalen Wirkungsökonomie beschrieben. Dieses Kapitel schließt Teil XIII ab und führt die digitale Architektur an den Punkt zurück, an dem Wirkung für Märkte, Unternehmen, Lieferketten, Kund:innen, Kapital, Staat und Verwaltung praktisch wird: zum Produkt.
 
@@ -708,7 +708,7 @@ Viertens: Forschungs- und Evaluationszugang. Dazu gehören aggregierte, anonymis
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html`
+*Öffentliche Quelle:* [Von der wissensgesellschaft zur wirkungsgesellschaft](https://wirkungsoekonomie.de/dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/)
 
 Dossier · Erweiterte öffentliche Dossierfassung v2.0 · Stand 15. Juni 2026
 
@@ -800,7 +800,7 @@ Wirkungsdaten & Rahmenwerke ist kein Randthema. Es zeigt, ob die WÖk nur schön
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -811,17 +811,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v2-wirkungsdaten-rahmenwerke.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

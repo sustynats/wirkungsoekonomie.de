@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G2.2  
 **Titel:** Zeit, Generationen und unsichtbare Betroffene  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v18.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v18.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v18.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 29 - Zeit, Endlichkeit und Generationenverantwortung
 
-*Interne Quelle:* `referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/index.html`
+*Öffentliche Quelle:* [Kapitel 29 - Zeit, Endlichkeit und Generationenverantwortung](https://wirkungsoekonomie.de/referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/)
 
 Wirkung hat immer eine Zeitdimension. Eine Handlung verändert nicht nur einen gegenwärtigen Zustand. Sie verändert Möglichkeiten, Risiken, Pfade und Bedingungen, die später wirksam werden. Manche Wirkungen entstehen sofort. Andere entstehen verzögert, über Jahre oder Generationen. Einige Wirkungen zeigen sich erst, wenn Entscheidungen längst getroffen, Bilanzen geschlossen, Legislaturen beendet und Verantwortliche aus ihren Ämtern ausgeschieden sind. Gerade deshalb braucht die Wirkungsökonomie einen Zeitbegriff, der weiter reicht als Quartal, Wahlperiode, Haushaltsjahr oder Bilanzstichtag.
 
@@ -311,7 +311,7 @@ Rentenzeit ist die gesellschaftliche Form, in der Lebenszeit, Arbeit, Care, Kapi
 
 ### Quellenanker: Kapitel 55 - Wachstum, Innovation und Transformation innerhalb planetarer Grenzen
 
-*Interne Quelle:* `referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/index.html`
+*Öffentliche Quelle:* [Kapitel 55 - Wachstum, Innovation und Transformation innerhalb planetarer Grenzen](https://wirkungsoekonomie.de/referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/)
 
 Kapitel 54 hat gezeigt, dass das klassische BIP wirtschaftliche Aktivität misst, aber nicht zuverlässig unterscheidet, ob diese Aktivität Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt. Damit stellt sich die Wachstumsfrage neu. Wenn nicht jede Aktivität Wohlstand bedeutet, kann auch nicht jedes Wachstum Fortschritt sein.
 
@@ -389,7 +389,7 @@ Damit wird auch die klassische Wachstumskritik präzisiert. Die Grenzen des Wach
 
 ### Quellenanker: Kapitel 60 - Verteilung, Eigentum und Wohlstand
 
-*Interne Quelle:* `referenz/kapitel-060-verteilung-eigentum-und-wohlstand/index.html`
+*Öffentliche Quelle:* [Kapitel 60 - Verteilung, Eigentum und Wohlstand](https://wirkungsoekonomie.de/referenz/kapitel-060-verteilung-eigentum-und-wohlstand/)
 
 Kapitel 54 hat Wohlstand als Systemzustand beschrieben. Kapitel 55 hat Wachstum an Problemlösungsfähigkeit, Regeneration und künftige Freiheit gebunden. Kapitel 56 hat gezeigt, dass Erwerbsarbeit als alleiniger Maßstab gesellschaftlicher Leistung brüchig wird. Kapitel 57 und Kapitel 58 haben Einkommen und Rente wirkungsökonomisch neu gelesen. Kapitel 59 hat Kapital als Wirkungskraft eingeordnet. Am Ende von Teil IX steht deshalb die Frage, wie Verteilung, Eigentum und Wohlstand verstanden werden müssen, wenn Wirkung auf Mensch, Planet und Demokratie der Maßstab ist.
 
@@ -467,7 +467,7 @@ Damit führt Teil IX in den nächsten Teil. Wenn Eigentum, Kapital, Arbeit, Vert
 
 ### Quellenanker: Kapitel 71 - Kindheit, Familie und frühes Leben
 
-*Interne Quelle:* `referenz/kapitel-071-kindheit-familie-und-fruehes-leben/index.html`
+*Öffentliche Quelle:* [Kapitel 71 - Kindheit, Familie und frühes Leben](https://wirkungsoekonomie.de/referenz/kapitel-071-kindheit-familie-und-fruehes-leben/)
 
 Kapitel 70 hat Wohnen als räumliche Grundlage von Sicherheit, Gesundheit, Zugehörigkeit und Teilhabe beschrieben. Dieses Kapitel geht einen Schritt zurück: zu den ersten Lebensjahren, in denen Menschen Sicherheit, Sprache, Bindung, Körpergefühl, Vertrauen, Grenzen, Schutz und Selbstwirksamkeit erfahren. Eine Gesellschaft beginnt nicht erst mit Arbeitsmarkt, Wahlrecht oder Konsum. Sie beginnt dort, wo Kinder Sicherheit, Bindung, Sprache, Schutz und Selbstwirksamkeit erleben.
 
@@ -559,7 +559,7 @@ Zeit, Generationen und unsichtbare Betroffene ist kein Randthema. Es zeigt, ob d
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -704,17 +704,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V18. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v18.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

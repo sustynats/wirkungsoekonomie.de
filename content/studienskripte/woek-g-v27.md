@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G3.1  
 **Titel:** Kernfelder, Wirkungsgrenzen und rote Linien  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v27-kernfelder-wirkungsgrenzen-rote-linien.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v27.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v27.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V27
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** V26 „SDG+: Warum die SDGs für offene Gesellschaften nicht reichen"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Damit bereitet diese Vorlesung die Scorecard-Logik vor: In einer guten Scorecard
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Kernfeld | zentrales Wirkungsfeld innerhalb eines Referenzrahmens | `begriffe/wirkungsfeld` |
-| Wirkungsgrenze | sachliche, räumliche oder zeitliche Grenze einer Bewertung | `begriffe/wirkungsgrenze` |
-| rote Linie | nicht kompensierbare Schutzgrenze | `begriffe/rote-linie` |
-| Wirkungsprofil | sichtbare Verteilung von Wirkungen über Felder | `begriffe/wirkungsprofil` |
+| Kernfeld | zentrales Wirkungsfeld innerhalb eines Referenzrahmens | [Wirkungsfeld](https://wirkungsoekonomie.de/begriffe/wirkungsfeld/) |
+| Wirkungsgrenze | sachliche, räumliche oder zeitliche Grenze einer Bewertung | [Wirkungsgrenze](https://wirkungsoekonomie.de/begriffe/wirkungsgrenze/) |
+| rote Linie | nicht kompensierbare Schutzgrenze | [Rote linie](https://wirkungsoekonomie.de/begriffe/rote-linie/) |
+| Wirkungsprofil | sichtbare Verteilung von Wirkungen über Felder | [Wirkungsprofil](https://wirkungsoekonomie.de/begriffe/wirkungsprofil/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -279,9 +279,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V27. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Bewertungsrahmen, Mensch/Planet/Demokratie
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/wirkungsgrenze`, `begriffe/wirkungsfeld`, `begriffe/nichtkompensation`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Bewertungsrahmen, Mensch/Planet/Demokratie
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Wirkungsgrenze](https://wirkungsoekonomie.de/begriffe/wirkungsgrenze/), [Wirkungsfeld](https://wirkungsoekonomie.de/begriffe/wirkungsfeld/), [Nichtkompensation](https://wirkungsoekonomie.de/begriffe/nichtkompensation/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -365,10 +365,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Kernfeld | zentrales Wirkungsfeld innerhalb eines Referenzrahmens | `begriffe/wirkungsfeld` |
-| Wirkungsgrenze | sachliche, räumliche oder zeitliche Grenze einer Bewertung | `begriffe/wirkungsgrenze` |
-| rote Linie | nicht kompensierbare Schutzgrenze | `begriffe/rote-linie` |
-| Wirkungsprofil | sichtbare Verteilung von Wirkungen über Felder | `begriffe/wirkungsprofil` |
+| Kernfeld | zentrales Wirkungsfeld innerhalb eines Referenzrahmens | [Wirkungsfeld](https://wirkungsoekonomie.de/begriffe/wirkungsfeld/) |
+| Wirkungsgrenze | sachliche, räumliche oder zeitliche Grenze einer Bewertung | [Wirkungsgrenze](https://wirkungsoekonomie.de/begriffe/wirkungsgrenze/) |
+| rote Linie | nicht kompensierbare Schutzgrenze | [Rote linie](https://wirkungsoekonomie.de/begriffe/rote-linie/) |
+| Wirkungsprofil | sichtbare Verteilung von Wirkungen über Felder | [Wirkungsprofil](https://wirkungsoekonomie.de/begriffe/wirkungsprofil/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 3
 
@@ -435,7 +435,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: WÖk-Prägungsbegriff / Schutzbegriff
 
-*Interne Quelle:* `begriffe/wirkungsgrenze/index.html`
+*Öffentliche Quelle:* [WÖk-Prägungsbegriff / Schutzbegriff](https://wirkungsoekonomie.de/begriffe/wirkungsgrenze/)
 
 Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.
 
@@ -513,7 +513,7 @@ Wirkungsgrenzen sind keine willkürlichen Verbote und keine private Moral. Sie m
 
 ### Quellenanker: Glossarverweis
 
-*Interne Quelle:* `begriffe/rote-linien/index.html`
+*Öffentliche Quelle:* [Glossarverweis](https://wirkungsoekonomie.de/begriffe/rote-linien/)
 
 Rote Linien im Glossar der Wirkungsökonomie.
 
@@ -587,7 +587,7 @@ Für die Steuerung zählen deshalb nicht nur Definitionen, sondern Datenqualitä
 
 ### Quellenanker: Kapitel 27 - Planet: Koexistenz statt Extraktion
 
-*Interne Quelle:* `referenz/kapitel-027-planet-koexistenz-statt-extraktion/index.html`
+*Öffentliche Quelle:* [Kapitel 27 - Planet: Koexistenz statt Extraktion](https://wirkungsoekonomie.de/referenz/kapitel-027-planet-koexistenz-statt-extraktion/)
 
 Die Wirkungsökonomie versteht Natur nicht als Rohstofflager, das außerhalb menschlicher Gesellschaft liegt. Sie versteht Natur auch nicht als dekorative Kulisse für menschliches Leben. Natur ist Mit-System: Böden, Wasser, Klima, Biodiversität, Luft, Landschaften, Tiere, Pflanzen, Mikroorganismen, Meere, Wälder, Stadtgrün und regionale Ökosysteme bilden die Regenerationsgrundlage, ohne die Gesundheit, Wirtschaft, soziale Stabilität und Demokratie nicht bestehen können.
 
@@ -665,7 +665,7 @@ Biodiversität bestimmt Regeneration, Bestäubung, Bodenleben, Schädlingsbalanc
 
 ### Quellenanker: Kapitel 33 - Reverse Merit Order
 
-*Interne Quelle:* `referenz/kapitel-033-reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Kapitel 33 - Reverse Merit Order](https://wirkungsoekonomie.de/referenz/kapitel-033-reverse-merit-order/)
 
 Kapitel 32 hat Scorecards als Instrument beschrieben, mit dem Wirkungen geordnet, vergleichbar und steuerungsfähig werden. Eine Scorecard allein reicht jedoch nicht. Denn sobald mehrere Wirkungsfelder nebeneinander bewertet werden, entsteht eine gefährliche Versuchung: Man könnte gute Werte in einem Feld gegen schlechte Werte in einem anderen Feld aufrechnen.
 
@@ -743,7 +743,7 @@ Damit verhindert sie eine typische Fehlsteuerung heutiger Nachhaltigkeitsmodelle
 
 ### Quellenanker: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume
 
-*Interne Quelle:* `referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume](https://wirkungsoekonomie.de/referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/)
 
 Kapitel 34 hat T-SROI als Kennzahl für Transformation, Systemwirkung und langfristige Wirkungsqualität eingeführt. Damit ist die methodische Frage gestellt, wie Wirkung nicht nur als Einzelwert, sondern als Veränderung von Zuständen, Risiken und Zukunftspfaden sichtbar wird. Dieses Kapitel schließt Teil V ab und zeigt, welche technische Bedingung dafür nötig ist: Wirkungsdaten müssen verfügbar, prüfbar, verknüpfbar und entscheidungsrelevant werden.
 
@@ -821,7 +821,7 @@ Wirkung ist nun nicht mehr nur ein Begriff. Sie ist nicht nur normative Orientie
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html`
+*Öffentliche Quelle:* [Von der wissensgesellschaft zur wirkungsgesellschaft](https://wirkungsoekonomie.de/dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/)
 
 Dossier · Erweiterte öffentliche Dossierfassung v2.0 · Stand 15. Juni 2026
 
@@ -913,7 +913,7 @@ Kernfelder, Wirkungsgrenzen und rote Linien ist kein Randthema. Es zeigt, ob die
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -924,17 +924,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v27-kernfelder-wirkungsgrenzen-rote-linien.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

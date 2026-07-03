@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G1.2  
 **Titel:** Zukunftsfähigkeit, Risiko und Resilienz  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v06.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v06.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v06.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz
 
-*Interne Quelle:* `referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html`
+*Öffentliche Quelle:* [Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/)
 
 ### 23.1 Warum Wirkung immer auch Risiko bedeutet
 
@@ -311,7 +311,7 @@ Demokratische Resilienz bedeutet daher nicht nur Schutz von Wahlen. Sie umfasst 
 
 ### Quellenanker: Kapitel 65 - Resilienzstaat
 
-*Interne Quelle:* `referenz/kapitel-065-resilienzstaat/index.html`
+*Öffentliche Quelle:* [Kapitel 65 - Resilienzstaat](https://wirkungsoekonomie.de/referenz/kapitel-065-resilienzstaat/)
 
 Kapitel 64 hat Verwaltung und Bürgerbeteiligung als Orte politischer Wirkung beschrieben. Verwaltung soll nicht nur Verfahren abarbeiten, sondern bessere Zustände ermöglichen. Beteiligung soll nicht Symbolik bleiben, sondern Rückkopplung erzeugen. Dieses Kapitel führt diese Logik weiter: Ein Staat muss nicht nur entscheiden und verwalten. Er muss vorsorgen.
 
@@ -389,7 +389,7 @@ Prävention verlangt eine andere Haushaltswahrnehmung. Eine vermiedene Krise ers
 
 ### Quellenanker: Kapitel 95 - Globale Resilienz, Sicherheit und Kooperation
 
-*Interne Quelle:* `referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/index.html`
+*Öffentliche Quelle:* [Kapitel 95 - Globale Resilienz, Sicherheit und Kooperation](https://wirkungsoekonomie.de/referenz/kapitel-095-globale-resilienz-sicherheit-und-kooperation/)
 
 Kapitel 94 hat gezeigt, dass eine weltfähige Wirkungsökonomie kulturell übersetzbar bleiben muss, ohne universelle Schutzgüter aufzugeben. Kapitel 95 fragt nun, was daraus für globale Sicherheit und Resilienz folgt.
 
@@ -467,7 +467,7 @@ Damit wird Sicherheit von der Reaktion zur Architektur.
 
 ### Quellenanker: Kapitel 106 - Die Fehlbarkeit der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 106 - Die Fehlbarkeit der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/)
 
 Eine Wirkungsökonomie, die ihre eigene Fehlbarkeit nicht anerkennt, würde ihren Kern verraten. Sie würde Wirkung zur neuen Gewissheitsformel machen, obwohl Wirkung in komplexen Systemen nie vollständig vorhersagbar, nie vollständig messbar und nie endgültig bewertbar ist.
 
@@ -559,7 +559,7 @@ Zukunftsfähigkeit, Risiko und Resilienz ist kein Randthema. Es zeigt, ob die W�
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -724,17 +724,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V06. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v06.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

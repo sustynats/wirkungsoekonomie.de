@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G1.4  
 **Titel:** Positive, negative und neutrale Wirkung  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v11.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v11.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v11.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 10 - Wirkung
 
-*Interne Quelle:* `referenz/kapitel-010-wirkung/index.html`
+*Öffentliche Quelle:* [Kapitel 10 - Wirkung](https://wirkungsoekonomie.de/referenz/kapitel-010-wirkung/)
 
 Dieses Kapitel definiert den ersten Grundbegriff der Wirkungsökonomie. Nachdem Teil I den falschen Kompass beschrieben und Kapitel 9 die einfache Idee formuliert hat, beginnt hier die eigentliche Sprache der Wirkungsökonomie. Wirkung ist der Begriff, an dem sich alle weiteren Begriffe ausrichten: Wirkungspotenzial, Wirkungsraum, Wirkleistung, Wirkungsrisiko, Wirkungsgrad, Wirkungskapital und Wirkungswohlstand.
 
@@ -311,7 +311,7 @@ Ein Bericht verändert erst dann etwas, wenn seine Informationen Entscheidungen 
 
 ### Quellenanker: Kapitel 14 - Systemischer Wert und normativer Wert
 
-*Interne Quelle:* `referenz/kapitel-014-systemischer-wert-und-normativer-wert/index.html`
+*Öffentliche Quelle:* [Kapitel 14 - Systemischer Wert und normativer Wert](https://wirkungsoekonomie.de/referenz/kapitel-014-systemischer-wert-und-normativer-wert/)
 
 Dieses Kapitel führt zwei Wertbegriffe ein, die in der Wirkungsökonomie sauber getrennt werden müssen: systemischer Wert und normativer Wert. Ohne diese Trennung wird Wirkung entweder zu technisch oder zu moralisch. Wird nur systemisch gedacht, kann auch eine schädliche Ordnung als funktional erscheinen, solange sie stabil bleibt. Wird nur normativ gedacht, können gut gemeinte Ziele verfolgt werden, ohne zu prüfen, ob sie ein System tatsächlich verbessern oder unbeabsichtigt schwächen.
 
@@ -389,7 +389,7 @@ Ein Nachhaltigkeitsbericht kann normativ sinnvoll sein, weil Transparenz geschaf
 
 ### Quellenanker: Kapitel 16 - Das Begriffssystem der Wirkungsökonomie
 
-*Interne Quelle:* `referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html`
+*Öffentliche Quelle:* [Kapitel 16 - Das Begriffssystem der Wirkungsökonomie](https://wirkungsoekonomie.de/referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/)
 
 Die Wirkungsökonomie braucht eine klare Sprache. Ohne klare Begriffe wird Wirkung zu einem Sammelwort. Dann kann jede Maßnahme, jedes Ziel, jedes Projekt, jede Haltung und jede Kommunikationsabsicht als Wirkung bezeichnet werden. Genau das darf nicht geschehen.
 
@@ -467,7 +467,7 @@ Normativer Wert beschreibt die Bewertung einer Wirkung gemessen an Mensch, Plane
 
 ### Quellenanker: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz
 
-*Interne Quelle:* `referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html`
+*Öffentliche Quelle:* [Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/)
 
 ### 23.1 Warum Wirkung immer auch Risiko bedeutet
 
@@ -559,7 +559,7 @@ Positive, negative und neutrale Wirkung ist kein Randthema. Es zeigt, ob die WÖ
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -738,17 +738,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V11. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v11.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

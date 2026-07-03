@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Wesentlichkeit & Priorisierung  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v4-wesentlichkeit-priorisierung.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v4.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v4.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V4
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WM-V3
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§4) · `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -90,8 +90,8 @@ Keine Organisation kann alles gleichzeitig steuern. **Woran erkennt man, welches
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wesentlichkeit | Bedeutung eines Wirkungsfelds; in der WÖk unter Nichtkompensation | _(noch keine Seite – ggf. anlegen)_ |
-| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt die Bewertung | `begriffe/reverse-merit-order` |
-| Nichtkompensationsprinzip | schwere Negativwirkungen nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
+| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt die Bewertung | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| Nichtkompensationsprinzip | schwere Negativwirkungen nicht wegkompensierbar | [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) |
 | Wirkungsgrenzen | nicht beliebig verrechenbare Schutzgüter | _(noch keine Seite – Begriffsleitfaden §4)_ |
 
 ## 6. Verständnisfragen (Mini-Quiz)
@@ -129,7 +129,7 @@ Wende das Priorisierungsraster auf deine Organisation an:
 
 ## 8. Praxisbeispiel
 
-**Der attraktive Nebenschauplatz.** Ein Konzern feiert seine Klima-Fortschritte, während in einem Zulieferland gravierende Arbeitsrechtsverletzungen bestehen. Nach Reverse Merit Order ist das Arbeitsrechtsfeld – das schwächste kritische Feld – zuerst zu sichern; die Klima-Optimierung kann die Menschenrechtslücke nicht aufwiegen. (Grundlage: Begriffsleitfaden §4; `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`.)
+**Der attraktive Nebenschauplatz.** Ein Konzern feiert seine Klima-Fortschritte, während in einem Zulieferland gravierende Arbeitsrechtsverletzungen bestehen. Nach Reverse Merit Order ist das Arbeitsrechtsfeld – das schwächste kritische Feld – zuerst zu sichern; die Klima-Optimierung kann die Menschenrechtslücke nicht aufwiegen. (Grundlage: Begriffsleitfaden §4; [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/).)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
@@ -307,9 +307,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V4. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – Reverse Merit Order
-- Glossar: `begriffe/reverse-merit-order`, `begriffe/nichtkompensationsprinzip`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §4
+- [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/) – Reverse Merit Order
+- Glossar: [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/), [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -394,8 +394,8 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wesentlichkeit | Bedeutung eines Wirkungsfelds; in der WÖk unter Nichtkompensation | _(noch keine Seite – ggf. anlegen)_ |
-| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt die Bewertung | `begriffe/reverse-merit-order` |
-| Nichtkompensationsprinzip | schwere Negativwirkungen nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
+| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt die Bewertung | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| Nichtkompensationsprinzip | schwere Negativwirkungen nicht wegkompensierbar | [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) |
 | Wirkungsgrenzen | nicht beliebig verrechenbare Schutzgüter | _(noch keine Seite – Begriffsleitfaden §4)_ |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
@@ -464,7 +464,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 30 - Von Wirkung zu Messung
 
-*Interne Quelle:* `referenz/kapitel-030-von-wirkung-zu-messung/index.html`
+*Öffentliche Quelle:* [Kapitel 30 - Von Wirkung zu Messung](https://wirkungsoekonomie.de/referenz/kapitel-030-von-wirkung-zu-messung/)
 
 Diese Frage bildet den Übergang von der normativen Ordnung zur Messarchitektur. Ohne Messung bleibt Wirkung ein Anspruch. Ohne Maßstab bleibt Messung blind. Ohne Rückkopplung bleibt Messung folgenlos. Die Wirkungsökonomie braucht daher eine Methodik, die Wirkung sichtbar macht, ohne ihre Komplexität zu zerstören.
 
@@ -542,7 +542,7 @@ Weber, Natalie: Grundlagenpapier Wirkungsökonomie, 2025. Grundlage für Wirkung
 
 ### Quellenanker: Kapitel 32 - Benchmarks, Skalen und Scorecards
 
-*Interne Quelle:* `referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html`
+*Öffentliche Quelle:* [Kapitel 32 - Benchmarks, Skalen und Scorecards](https://wirkungsoekonomie.de/referenz/kapitel-032-benchmarks-skalen-und-scorecards/)
 
 Kapitel 31 hat die WÖk-ID als Ordnungseinheit eingeführt. Sie macht Wirkungsindikatoren adressierbar, prüfbar und versionierbar. Damit ist jedoch noch keine Bewertung entstanden. Ein Messwert allein sagt nicht, ob eine Wirkung gut, schwach, riskant, durchschnittlich, schädlich oder transformativ ist. Ein Wasserverbrauch, eine Emissionsmenge, eine Unfallquote, ein Living-Wage-Anteil, ein Recyclingwert oder eine Transparenzkennzahl erhalten ihre Bedeutung erst durch Vergleich, Kontext und Schwellenwert.
 
@@ -620,7 +620,7 @@ Ebenso ersetzt der NWI keine Lebenszyklusanalyse, keine ESRS-Berichterstattung, 
 
 ### Quellenanker: Kapitel 47 - Unternehmensrisiko und Transformation
 
-*Interne Quelle:* `referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html`
+*Öffentliche Quelle:* [Kapitel 47 - Unternehmensrisiko und Transformation](https://wirkungsoekonomie.de/referenz/kapitel-047-unternehmensrisiko-und-transformation/)
 
 Kapitel 46 hat Lieferketten und interne Wertschöpfung als Wirkungsräume des Unternehmens beschrieben. Dieses Kapitel schließt Teil VII ab. Es verbindet Unternehmenszweck, Führung, Controlling, Organisation und Lieferkettensteuerung mit der Frage der Zukunftsfähigkeit. Wirkung ist für Unternehmen nicht nur Verantwortung. Wirkung ist Risiko, Resilienz und Transformationsfrage.
 
@@ -698,7 +698,7 @@ Ein lernendes Unternehmen stellt vier Fragen wiederholt. Welche Wirkung erzeugen
 
 ### Quellenanker: Arbeitspapier · Stand 04. Juni 2026
 
-*Interne Quelle:* `dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/index.html`
+*Öffentliche Quelle:* [Arbeitspapier · Stand 04. Juni 2026](https://wirkungsoekonomie.de/dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/)
 
 Von der CSRD-Wesentlichkeitsprüfung zu Impact-Management, Impact-Controlling und wirkungsökonomischer Rückkopplung.
 
@@ -758,7 +758,7 @@ Wesentlichkeit & Priorisierung ist kein Randthema. Es zeigt, ob die WÖk nur sch
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -769,17 +769,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v4-wesentlichkeit-priorisierung.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

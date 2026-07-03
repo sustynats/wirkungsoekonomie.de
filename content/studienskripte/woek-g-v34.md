@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G3.4  
 **Titel:** Reverse Merit Order  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v34-reverse-merit-order.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v34.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v34.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V34
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** V33 „NWI und T-SROI unterscheiden"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Diese Logik ist besonders wichtig für Steuerung: Sie zeigt, wo Verbesserung zue
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt Gesamtbewertung | `begriffe/reverse-merit-order` |
-| kritisches Wirkungsfeld | Feld, dessen schlechter Wert Gesamtwirkung begrenzt | `begriffe/kritisches-wirkungsfeld` |
-| FinalScore | verdichteter Score unter Schutzlogik | `begriffe/finalscore` |
-| Greenwashing | positive Darstellung trotz verdeckter Schäden | `begriffe/greenwashing` |
+| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt Gesamtbewertung | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| kritisches Wirkungsfeld | Feld, dessen schlechter Wert Gesamtwirkung begrenzt | [Kritisches wirkungsfeld](https://wirkungsoekonomie.de/begriffe/kritisches-wirkungsfeld/) |
+| FinalScore | verdichteter Score unter Schutzlogik | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| Greenwashing | positive Darstellung trotz verdeckter Schäden | [Greenwashing](https://wirkungsoekonomie.de/begriffe/greenwashing/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -279,9 +279,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V34. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Reverse Merit Order, Wirkungssteuer, Scorecards
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/reverse-merit-order`, `begriffe/kritisches-wirkungsfeld`, `begriffe/finalscore`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Reverse Merit Order, Wirkungssteuer, Scorecards
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/), [Kritisches wirkungsfeld](https://wirkungsoekonomie.de/begriffe/kritisches-wirkungsfeld/), [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -365,10 +365,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt Gesamtbewertung | `begriffe/reverse-merit-order` |
-| kritisches Wirkungsfeld | Feld, dessen schlechter Wert Gesamtwirkung begrenzt | `begriffe/kritisches-wirkungsfeld` |
-| FinalScore | verdichteter Score unter Schutzlogik | `begriffe/finalscore` |
-| Greenwashing | positive Darstellung trotz verdeckter Schäden | `begriffe/greenwashing` |
+| Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt Gesamtbewertung | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| kritisches Wirkungsfeld | Feld, dessen schlechter Wert Gesamtwirkung begrenzt | [Kritisches wirkungsfeld](https://wirkungsoekonomie.de/begriffe/kritisches-wirkungsfeld/) |
+| FinalScore | verdichteter Score unter Schutzlogik | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| Greenwashing | positive Darstellung trotz verdeckter Schäden | [Greenwashing](https://wirkungsoekonomie.de/begriffe/greenwashing/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 5
 
@@ -435,7 +435,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 33 - Reverse Merit Order
 
-*Interne Quelle:* `referenz/kapitel-033-reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Kapitel 33 - Reverse Merit Order](https://wirkungsoekonomie.de/referenz/kapitel-033-reverse-merit-order/)
 
 Kapitel 32 hat Scorecards als Instrument beschrieben, mit dem Wirkungen geordnet, vergleichbar und steuerungsfähig werden. Eine Scorecard allein reicht jedoch nicht. Denn sobald mehrere Wirkungsfelder nebeneinander bewertet werden, entsteht eine gefährliche Versuchung: Man könnte gute Werte in einem Feld gegen schlechte Werte in einem anderen Feld aufrechnen.
 
@@ -513,7 +513,7 @@ Damit verhindert sie eine typische Fehlsteuerung heutiger Nachhaltigkeitsmodelle
 
 ### Quellenanker: Wirkungsökonomie · Reverse Merit Order · https://wirkungsoekonomie.de/werkzeuge/reverse-merit-order/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Reverse Merit Order · https://wirkungsoekonomie.de/werkzeuge/reverse-merit-order/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/reverse-merit-order/)
 
 Methodenregister
 
@@ -591,7 +591,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: Kapitel 50 - Produktscorecards
 
-*Interne Quelle:* `referenz/kapitel-050-produktscorecards/index.html`
+*Öffentliche Quelle:* [Kapitel 50 - Produktscorecards](https://wirkungsoekonomie.de/referenz/kapitel-050-produktscorecards/)
 
 Kapitel 48 hat Produkte als Wirkungsträger beschrieben. Kapitel 49 hat gezeigt, warum Preise realere Wirkungen sichtbar machen müssen. Zwischen Produktdaten und Preissignal steht eine methodische Frage: Wie wird aus vielen Daten eine nachvollziehbare Bewertung, ohne das Produkt auf eine einzige Zahl zu verkürzen?
 
@@ -669,7 +669,7 @@ Die dritte Grenze liegt in Sonderfällen. Manche Produkte haben sehr lange Nutzu
 
 ### Quellenanker: Kapitel 51 - Das Apfelbeispiel
 
-*Interne Quelle:* `referenz/kapitel-051-das-apfelbeispiel/index.html`
+*Öffentliche Quelle:* [Kapitel 51 - Das Apfelbeispiel](https://wirkungsoekonomie.de/referenz/kapitel-051-das-apfelbeispiel/)
 
 Kapitel 48 hat Produkte als Wirkungsträger beschrieben. Kapitel 49 hat gezeigt, warum Preise unvollständig bleiben, wenn sie reale Wirkungen verschweigen. Kapitel 50 hat die Produktscorecard als methodisches Instrument eingeführt. Dieses Kapitel verbindet diese Logik an einem einfachen Beispiel: Dem Apfel.
 
@@ -747,7 +747,7 @@ Der Apfel zeigt daher die gesamte Logik in einfacher Form: Produkt, Klassifikati
 
 ### Quellenanker: WÖk-Präzisierungsbegriff
 
-*Interne Quelle:* `begriffe/reverse-merit-order/index.html`
+*Öffentliche Quelle:* [WÖk-Präzisierungsbegriff](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/)
 
 Die Reverse Merit Order ist das Bewertungsprinzip der Wirkungsökonomie, nach dem das schwächste relevante Wirkungsfeld die Gesamtbewertung begrenzt und schwere negative Wirkungen nicht durch positive Wirkungen überdeckt werden dürfen.
 
@@ -825,7 +825,7 @@ Worauf achten?
 
 ### Quellenanker: Inhalt
 
-*Interne Quelle:* `dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html`
+*Öffentliche Quelle:* [Von der wissensgesellschaft zur wirkungsgesellschaft](https://wirkungsoekonomie.de/dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/)
 
 Dossier · Erweiterte öffentliche Dossierfassung v2.0 · Stand 15. Juni 2026
 
@@ -917,7 +917,7 @@ Reverse Merit Order ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begrif
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -928,17 +928,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v34-reverse-merit-order.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

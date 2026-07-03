@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v2-wirkungsempfaenger-wirkpfade.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v2.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v2.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V2
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WM-V1
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§5) · `docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -76,17 +76,17 @@ Bevor man Wirkung steuern kann, muss man wissen: **Auf wen oder was wirkt die Or
 
 **Wirkpfade machen Wirkung nachvollziehbar.** Ein Wirkpfad ist die Kette *Aktivität → Wirkmechanismus → Veränderung beim Wirkungsempfänger* (Grundlagen V2/V5). Er zwingt zur Ehrlichkeit: Was ist nur **Wirkungspotenzial**, was ist tatsächliche **Wirkung**? Bei Kommunikation, Sprache und Kultur bleibt man vorsichtig und spricht von **Resonanzräumen** und Potenzialen, nicht von nachgewiesener Wirkung.
 
-**Praxis: die Lieferkette.** Gerade in Lieferketten sind die wichtigsten Wirkungsempfänger oft weit entfernt und stimmlos (Arbeitsbedingungen, Böden, Wasser). Wirkungsmanagement macht sie über Wirkpfade sichtbar (`docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md`).
+**Praxis: die Lieferkette.** Gerade in Lieferketten sind die wichtigsten Wirkungsempfänger oft weit entfernt und stimmlos (Arbeitsbedingungen, Böden, Wasser). Wirkungsmanagement macht sie über Wirkpfade sichtbar ([Wirkungsökonomie in der Lieferkette](https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/)).
 
 ## 5. Glossar der Kernbegriffe
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsempfänger | diejenigen, bei denen Zustandsveränderung eintritt | `begriffe/wirkungsempfaenger` |
+| Wirkungsempfänger | diejenigen, bei denen Zustandsveränderung eintritt | [Wirkungsempfaenger](https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/) |
 | Stakeholder | Anspruchs-/Interessengruppen | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkpfad | Kette Aktivität → Mechanismus → Veränderung | `begriffe/wirkpfad` |
-| Resonanzraum | Raum für Wirkungspotenziale (Sprache/Medien) | `begriffe/resonanzraum` |
-| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
+| Wirkpfad | Kette Aktivität → Mechanismus → Veränderung | [Wirkpfad](https://wirkungsoekonomie.de/begriffe/wirkpfad/) |
+| Resonanzraum | Raum für Wirkungspotenziale (Sprache/Medien) | [Resonanzraum](https://wirkungsoekonomie.de/begriffe/resonanzraum/) |
+| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -123,7 +123,7 @@ Erstelle für deine Organisation eine kleine Landkarte:
 
 ## 8. Praxisbeispiel
 
-**Lieferketten-Wirkung sichtbar machen.** Ein Textilunternehmen sieht zunächst nur Lieferanten und Preise. Über Wirkpfade werden die eigentlichen Wirkungsempfänger sichtbar: Näher:innen (Arbeitsbedingungen), Böden und Wasser (Anbau), lokale Gemeinschaften. Erst diese Landkarte erlaubt gezielte Steuerung. (`docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md`.)
+**Lieferketten-Wirkung sichtbar machen.** Ein Textilunternehmen sieht zunächst nur Lieferanten und Preise. Über Wirkpfade werden die eigentlichen Wirkungsempfänger sichtbar: Näher:innen (Arbeitsbedingungen), Böden und Wasser (Anbau), lokale Gemeinschaften. Erst diese Landkarte erlaubt gezielte Steuerung. ([Wirkungsökonomie in der Lieferkette](https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/).)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
@@ -295,9 +295,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V2. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5
-- `docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md`
-- Glossar: `begriffe/wirkungsempfaenger`, `begriffe/wirkpfad`, `begriffe/resonanzraum`
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §5
+- [Wirkungsökonomie in der Lieferkette](https://wirkungsoekonomie.de/dokumente/wirkungsoekonomie-in-der-lieferkette/)
+- Glossar: [Wirkungsempfaenger](https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/), [Wirkpfad](https://wirkungsoekonomie.de/begriffe/wirkpfad/), [Resonanzraum](https://wirkungsoekonomie.de/begriffe/resonanzraum/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -381,11 +381,11 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsempfänger | diejenigen, bei denen Zustandsveränderung eintritt | `begriffe/wirkungsempfaenger` |
+| Wirkungsempfänger | diejenigen, bei denen Zustandsveränderung eintritt | [Wirkungsempfaenger](https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/) |
 | Stakeholder | Anspruchs-/Interessengruppen | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkpfad | Kette Aktivität → Mechanismus → Veränderung | `begriffe/wirkpfad` |
-| Resonanzraum | Raum für Wirkungspotenziale (Sprache/Medien) | `begriffe/resonanzraum` |
-| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
+| Wirkpfad | Kette Aktivität → Mechanismus → Veränderung | [Wirkpfad](https://wirkungsoekonomie.de/begriffe/wirkpfad/) |
+| Resonanzraum | Raum für Wirkungspotenziale (Sprache/Medien) | [Resonanzraum](https://wirkungsoekonomie.de/begriffe/resonanzraum/) |
+| Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -453,7 +453,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume
 
-*Interne Quelle:* `referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html`
+*Öffentliche Quelle:* [Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume](https://wirkungsoekonomie.de/referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/)
 
 ### 13.1 Warum Wirkung Zuordnung braucht
 
@@ -531,7 +531,7 @@ Wirkung lässt sich nicht immer vollständig zurechnen. In komplexen Systemen wi
 
 ### Quellenanker: Kapitel 42 - Unternehmen als Wirkungssysteme
 
-*Interne Quelle:* `referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html`
+*Öffentliche Quelle:* [Kapitel 42 - Unternehmen als Wirkungssysteme](https://wirkungsoekonomie.de/referenz/kapitel-042-unternehmen-als-wirkungssysteme/)
 
 Ein Unternehmen ist dann nicht mehr nur eine Einheit zur Gewinnerzielung. Es ist ein organisierter Wirkungsraum, der Zustände verändert.
 
@@ -609,7 +609,7 @@ Verantwortung über die Bilanz hinaus heißt daher: Unternehmen müssen die Wirk
 
 ### Quellenanker: Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung
 
-*Interne Quelle:* `referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html`
+*Öffentliche Quelle:* [Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung](https://wirkungsoekonomie.de/referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/)
 
 Kapitel 45 hat gezeigt, dass Wirkung in Unternehmen an Organisation, Rollen, Kultur und Lernfähigkeit gebunden ist. Dieses Kapitel richtet den Blick auf die interne Wertschöpfung und auf Lieferketten. Denn ein Unternehmen wirkt nicht nur durch das, was es im eigenen Werk, Büro oder Geschäftsmodell sichtbar tut. Es wirkt durch das, was es einkauft, ermöglicht, verlangt, duldet und weitergibt.
 
@@ -687,7 +687,7 @@ Supply-Chain-Resilienz verlangt deshalb die Verbindung verschiedener Perspektive
 
 ### Quellenanker: Kapitel 92 - Handel, Lieferketten und globale Wirkung
 
-*Interne Quelle:* `referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/index.html`
+*Öffentliche Quelle:* [Kapitel 92 - Handel, Lieferketten und globale Wirkung](https://wirkungsoekonomie.de/referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/)
 
 Kapitel 91 hat Europa als möglichen Wirkungsraum beschrieben: als Raum, in dem Markt, Recht, Daten, Demokratie und Standards zusammengeführt werden können. Kapitel 92 weitet diese Logik auf internationalen Handel und globale Lieferketten aus. Es geht nicht um eine vollständige Theorie des Welthandels und nicht um eine technische Ausarbeitung des Welthandelsrechts. Es geht um die Frage, wie Wirkung sichtbar bleibt, wenn Waren, Rohstoffe, Dienstleistungen, Daten, Kapital und Risiken über Grenzen hinweg verschoben werden.
 
@@ -779,7 +779,7 @@ Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade ist kein Randthema
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -790,17 +790,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v2-wirkungsempfaenger-wirkpfade.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

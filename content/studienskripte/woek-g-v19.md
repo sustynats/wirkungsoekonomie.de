@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G2.3  
 **Titel:** Wirkstoff, Wirkmechanismus und Wirkungspotenzial  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v19.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v19.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v19.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 11 - Wirkungspotenzial
 
-*Interne Quelle:* `referenz/kapitel-011-wirkungspotenzial/index.html`
+*Öffentliche Quelle:* [Kapitel 11 - Wirkungspotenzial](https://wirkungsoekonomie.de/referenz/kapitel-011-wirkungspotenzial/)
 
 Wirkung entsteht nicht immer sofort. Manche Handlungen verändern einen Zustand unmittelbar: Ein Medikament lindert Schmerzen. Eine Sanierung senkt den Energieverbrauch. Eine Lohnerhöhung verändert Einkommen. Eine Entscheidung beendet ein Verfahren. In solchen Fällen lässt sich Wirkung relativ klar beschreiben: Vorher war ein Zustand anders als nachher. Die Wirkungsökonomie bezeichnet Wirkung deshalb als tatsächliche Veränderung von Zuständen; das Wirkungssteuergesetz fasst sie als nachweisbare Veränderung ökologischer, sozialer oder demokratischer Systembedingungen in Bezug auf Mensch, Planet und Demokratie [I-11-1].
 
@@ -311,7 +311,7 @@ Anschlussfähigkeit beschreibt, ob ein Potenzial in diesem Raum aufgenommen werd
 
 ### Quellenanker: Kapitel 20 - Systemhebel, Engpässe und Interdependenzen
 
-*Interne Quelle:* `referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/index.html`
+*Öffentliche Quelle:* [Kapitel 20 - Systemhebel, Engpässe und Interdependenzen](https://wirkungsoekonomie.de/referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/)
 
 Kapitel 19 hat gezeigt: Wirtschaft, Gesellschaft, Natur, Medien, Demokratie, Unternehmen und Menschen sind nichttriviale Systeme. Sie reagieren nicht mechanisch auf einzelne Impulse. Sie verarbeiten Impulse aus Geschichte, Struktur, Lage, Erwartungen, Vertrauen, Ressourcen, Machtverhältnissen und Rückkopplungen. Damit stellt sich die nächste Frage: Wo kann eine Wirkungsökonomie sinnvoll eingreifen?
 
@@ -389,7 +389,7 @@ Der Informationshebel wirkt erst vollständig, wenn er nicht bei Transparenz end
 
 ### Quellenanker: Kapitel 21 - Das Wirkungsrad
 
-*Interne Quelle:* `referenz/kapitel-021-das-wirkungsrad/index.html`
+*Öffentliche Quelle:* [Kapitel 21 - Das Wirkungsrad](https://wirkungsoekonomie.de/referenz/kapitel-021-das-wirkungsrad/)
 
 ### 21.1 Warum ein Rad nötig ist
 
@@ -467,7 +467,7 @@ Das Rad wird an diesem Punkt praktisch. Wirkung wird nicht nur beschrieben. Sie 
 
 ### Quellenanker: Kapitel 22 - Wirkungslenkung
 
-*Interne Quelle:* `referenz/kapitel-022-wirkungslenkung/index.html`
+*Öffentliche Quelle:* [Kapitel 22 - Wirkungslenkung](https://wirkungsoekonomie.de/referenz/kapitel-022-wirkungslenkung/)
 
 ### 22.1 Von der Bewertung zur Entscheidung
 
@@ -559,7 +559,7 @@ Wirkstoff, Wirkmechanismus und Wirkungspotenzial ist kein Randthema. Es zeigt, o
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -716,17 +716,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V19. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v19.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

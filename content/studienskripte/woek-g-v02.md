@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G1.1  
 **Titel:** Wirkung statt Kapital  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v02.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v02.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v02.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 3 - Kapital als Werkzeug und falscher Kompass
 
-*Interne Quelle:* `referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html`
+*Öffentliche Quelle:* [Kapitel 3 - Kapital als Werkzeug und falscher Kompass](https://wirkungsoekonomie.de/referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/)
 
 Dieses Kapitel klärt den Status des Kapitals in der Wirkungsökonomie. Es geht nicht darum, Kapital zu verteufeln oder Märkte abzuschaffen. Es geht darum, Kapital aus seiner falschen Rolle als gesellschaftlicher Kompass zu lösen und wieder als Werkzeug zu begreifen.
 
@@ -311,7 +311,7 @@ Eine Plattform kann einen hohen Marktwert haben, weil sie Daten, Aufmerksamkeit 
 
 ### Quellenanker: Kapitel 9 - Die einfache Idee
 
-*Interne Quelle:* `referenz/kapitel-009-die-einfache-idee/index.html`
+*Öffentliche Quelle:* [Kapitel 9 - Die einfache Idee](https://wirkungsoekonomie.de/referenz/kapitel-009-die-einfache-idee/)
 
 Die Wirkungsökonomie beginnt mit einem einfachen Satz:
 
@@ -389,7 +389,7 @@ Das verändert die Sprache. Kapitalrendite ist dann nicht mehr die oberste Frage
 
 ### Quellenanker: Kapitel 10 - Wirkung
 
-*Interne Quelle:* `referenz/kapitel-010-wirkung/index.html`
+*Öffentliche Quelle:* [Kapitel 10 - Wirkung](https://wirkungsoekonomie.de/referenz/kapitel-010-wirkung/)
 
 Dieses Kapitel definiert den ersten Grundbegriff der Wirkungsökonomie. Nachdem Teil I den falschen Kompass beschrieben und Kapitel 9 die einfache Idee formuliert hat, beginnt hier die eigentliche Sprache der Wirkungsökonomie. Wirkung ist der Begriff, an dem sich alle weiteren Begriffe ausrichten: Wirkungspotenzial, Wirkungsraum, Wirkleistung, Wirkungsrisiko, Wirkungsgrad, Wirkungskapital und Wirkungswohlstand.
 
@@ -467,7 +467,7 @@ Ein Bericht verändert erst dann etwas, wenn seine Informationen Entscheidungen 
 
 ### Quellenanker: Kapitel 15 - Leistung neu definieren
 
-*Interne Quelle:* `referenz/kapitel-015-leistung-neu-definieren/index.html`
+*Öffentliche Quelle:* [Kapitel 15 - Leistung neu definieren](https://wirkungsoekonomie.de/referenz/kapitel-015-leistung-neu-definieren/)
 
 Dieses Kapitel korrigiert einen der mächtigsten Begriffe der alten Ordnung: Leistung. Die Wirkungsökonomie schafft das Leistungsprinzip nicht ab. Sie rettet es vor seiner falschen Messung. Denn eine Gesellschaft braucht Anerkennung für echte Beiträge. Aber sie muss präziser bestimmen, was ein Beitrag ist. Leistung ist nicht bloß Aufwand, Einkommen, Umsatz, Gewinn, Reichweite oder Aktivität. Leistung ist positive Wirkung.
 
@@ -559,7 +559,7 @@ Wirkung statt Kapital ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begr
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -756,17 +756,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V02. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v02.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

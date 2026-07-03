@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** Von KPI zu KII und der Kennzahlen-Stack  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v1-kpi-zu-kii-kennzahlenstack.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v1.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v1.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V1
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** Grundlagenlehrgang; empfohlen Wirkungsmanagement (L1)
-**Führende Quellen (Repo):** `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` (Teil 2) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Baut auf Grundlagen + Wirkungsmanagement auf.
+> Erstellt nach dem Vorlesungstemplate. Baut auf Grundlagen + Wirkungsmanagement auf.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -92,12 +92,12 @@ Ein Dashboard voller grüner KPIs – und trotzdem weiß niemand, ob echte posit
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| KII | Key Impact Indicator: misst tatsächliche Wirkung | `begriffe/kii`, `begriffe/key-impact-indicator` |
-| KPI | Key Performance Indicator: misst Aktivität | `begriffe/kpi` |
-| FinalScore | verdichtete Wirkung unter Schutzlogik | `begriffe/finalscore` |
-| NWI | Netto-Wirkungs-Index, operative Kennzahl geprüfter Netto-Wirkung | `begriffe/netto-wirkungs-index`, `begriffe/nwi` |
-| T-SROI | Transformational Social Return on Investment | `begriffe/t-sroi` |
-| IoI | Impact of Investment, Netto-Wirkung pro Euro | `begriffe/impact-of-investment` |
+| KII | Key Impact Indicator: misst tatsächliche Wirkung | [KII](https://wirkungsoekonomie.de/begriffe/kii/), [Key impact indicator](https://wirkungsoekonomie.de/begriffe/key-impact-indicator/) |
+| KPI | Key Performance Indicator: misst Aktivität | [KPI](https://wirkungsoekonomie.de/begriffe/kpi/) |
+| FinalScore | verdichtete Wirkung unter Schutzlogik | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| NWI | Netto-Wirkungs-Index, operative Kennzahl geprüfter Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/), [NWI](https://wirkungsoekonomie.de/begriffe/nwi/) |
+| T-SROI | Transformational Social Return on Investment | [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/) |
+| IoI | Impact of Investment, Netto-Wirkung pro Euro | [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -135,7 +135,7 @@ Wähle drei KPIs aus deinem Umfeld und überführe sie in **KIIs**: Für jede Ak
 
 ## 8. Praxisbeispiel
 
-**Das grüne Dashboard ohne Netto-Wirkung.** Ein Unternehmen meldet steigende „Nachhaltigkeits-KPIs" (Schulungsstunden, Reichweite von Kampagnen). Keine davon ist ein KII. Erst KIIs (z. B. gemessene Reduktion realer Emissionen bei konkreten Prozessen) + der Kennzahlen-Stack zeigen, ob positive Netto-Wirkung entsteht. (Grundlage: `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`.)
+**Das grüne Dashboard ohne Netto-Wirkung.** Ein Unternehmen meldet steigende „Nachhaltigkeits-KPIs" (Schulungsstunden, Reichweite von Kampagnen). Keine davon ist ein KII. Erst KIIs (z. B. gemessene Reduktion realer Emissionen bei konkreten Prozessen) + der Kennzahlen-Stack zeigen, ob positive Netto-Wirkung entsteht. (Grundlage: [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/).)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
@@ -335,9 +335,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V1. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – Teil 2 „Vier Kennzahlen sauber trennen"
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` – „Instrumente"
-- Glossar: `begriffe/kii`, `begriffe/netto-wirkungs-index`, `begriffe/t-sroi`, `begriffe/impact-of-investment`
+- [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/) – Teil 2 „Vier Kennzahlen sauber trennen"
+- [Was ist Wirkungsökonomie?](https://wirkungsoekonomie.de/wirkungsoekonomie.html) – „Instrumente"
+- Glossar: [KII](https://wirkungsoekonomie.de/begriffe/kii/), [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/), [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/), [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -425,12 +425,12 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| KII | Key Impact Indicator: misst tatsächliche Wirkung | `begriffe/kii`, `begriffe/key-impact-indicator` |
-| KPI | Key Performance Indicator: misst Aktivität | `begriffe/kpi` |
-| FinalScore | verdichtete Wirkung unter Schutzlogik | `begriffe/finalscore` |
-| NWI | Netto-Wirkungs-Index, operative Kennzahl geprüfter Netto-Wirkung | `begriffe/netto-wirkungs-index`, `begriffe/nwi` |
-| T-SROI | Transformational Social Return on Investment | `begriffe/t-sroi` |
-| IoI | Impact of Investment, Netto-Wirkung pro Euro | `begriffe/impact-of-investment` |
+| KII | Key Impact Indicator: misst tatsächliche Wirkung | [KII](https://wirkungsoekonomie.de/begriffe/kii/), [Key impact indicator](https://wirkungsoekonomie.de/begriffe/key-impact-indicator/) |
+| KPI | Key Performance Indicator: misst Aktivität | [KPI](https://wirkungsoekonomie.de/begriffe/kpi/) |
+| FinalScore | verdichtete Wirkung unter Schutzlogik | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| NWI | Netto-Wirkungs-Index, operative Kennzahl geprüfter Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/), [NWI](https://wirkungsoekonomie.de/begriffe/nwi/) |
+| T-SROI | Transformational Social Return on Investment | [T-SROI](https://wirkungsoekonomie.de/begriffe/t-sroi/) |
+| IoI | Impact of Investment, Netto-Wirkung pro Euro | [Impact of investment](https://wirkungsoekonomie.de/begriffe/impact-of-investment/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -498,7 +498,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 44 - Wirkungscontrolling im Unternehmen
 
-*Interne Quelle:* `referenz/kapitel-044-wirkungscontrolling-im-unternehmen/index.html`
+*Öffentliche Quelle:* [Kapitel 44 - Wirkungscontrolling im Unternehmen](https://wirkungsoekonomie.de/referenz/kapitel-044-wirkungscontrolling-im-unternehmen/)
 
 Kapitel 43 hat Führung als Gestaltung von Rückkopplung, Verantwortung, Lernfähigkeit und Systemintelligenz beschrieben. Wenn Führung Wirkung ermöglichen soll, braucht sie Informationen, die mehr zeigen als Umsatz, Kosten, Marge und Termine. Sie braucht Daten, die Auskunft darüber geben, welche Zustände ein Unternehmen durch seine Entscheidungen verändert.
 
@@ -576,7 +576,7 @@ In der Produktentwicklung bedeutet Rückkopplung: Wirkung wird nicht erst nach M
 
 ### Quellenanker: Wirkungsökonomie · KII statt KPI · https://wirkungsoekonomie.de/werkzeuge/kii-statt-kpi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/kii-statt-kpi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · KII statt KPI · https://wirkungsoekonomie.de/werkzeuge/kii-statt-kpi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/kii-statt-kpi/)
 
 Methodenregister
 
@@ -654,7 +654,7 @@ Positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz sichtbar
 
 ### Quellenanker: Wirkungsökonomie · Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/)
 
 Methodenbereich
 
@@ -732,7 +732,7 @@ Scorecards übersetzen Daten und Benchmarks in nachvollziehbare Skalen und Entsc
 
 ### Quellenanker: Wirkungsökonomie · Detailkonzept KII statt KPI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/kii-statt-kpi/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/detailkonzepte/kii-statt-kpi/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Detailkonzept KII statt KPI · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/kii-statt-kpi/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/kii-statt-kpi/)
 
 Detailkonzept · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -810,7 +810,7 @@ Der neue Maßstab ist positive Netto-Wirkung für Mensch, Planet und Demokratie.
 
 ### Quellenanker: Wirkungsökonomie · Wirkungscontrolling / Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ · Stand: 01.06.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/dossiers/wirkungscontrolling/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Wirkungscontrolling / Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/ · Stand: 01.06.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/)
 
 Detailkonzept-Dossier · Version 1.0 · 01. Juni 2026
 
@@ -882,13 +882,13 @@ Hinweis: Dieses Dossier ist ein fachliches Konzeptpapier. Es ersetzt keine Recht
 
 0. Zitationsweise, Quellenlogik und Dokumentstatus #
 
-Dieses Dossier verwendet eine zweigeteilte Kurzbeleglogik. Interne Quellen der Wirkungsökonomie werden als [I-xx] zitiert. Externe Standards, Rechtsquellen, Fachquellen und methodische Anschlussquellen werden als [E-xx] zitiert. Die vollständigen Angaben stehen im Quellenverzeichnis am Ende des Dokuments. Diese Zitationsweise ist bewusst transparent gewählt: Sie trennt die originäre WÖk-Methodik von externen Anschlussstandards und verhindert, dass normative Modellannahmen mit bereits geltenden Berichtspflichten verwechselt werden.
+Dieses Dossier verwendet eine zweigeteilte Kurzbeleglogik. WÖk-Quellen werden als [I-xx] zitiert. Externe Standards, Rechtsquellen, Fachquellen und methodische Anschlussquellen werden als [E-xx] zitiert. Die vollständigen Angaben stehen im Quellenverzeichnis am Ende des Dokuments. Diese Zitationsweise ist bewusst transparent gewählt: Sie trennt die originäre WÖk-Methodik von externen Anschlussstandards und verhindert, dass normative Modellannahmen mit bereits geltenden Berichtspflichten verwechselt werden.
 
-Die interne Primärquelle ist das neue Grundlagenbuch „Die neue Ordnung des Wohlstands“ in der 2026er Fassung. Für Wirkungscontrolling sind vor allem Teil V „Messung, Daten und Methodik“, Kapitel 30 bis 35, sowie Kapitel 44 „Wirkungscontrolling im Unternehmen“ maßgeblich [I-01]. Der online geprüfte Stand der Website bestätigt die Leitidee, dass positive Netto-Wirkung entscheidungsrelevant werden soll und Wirkung erst dann systemrelevant wird, wenn sie in Preise, Steuern, Kapital und Entscheidungen zurückwirkt [I-02].
+Die primäre WÖk-Quelle ist das neue Grundlagenbuch „Die neue Ordnung des Wohlstands“ in der 2026er Fassung. Für Wirkungscontrolling sind vor allem Teil V „Messung, Daten und Methodik“, Kapitel 30 bis 35, sowie Kapitel 44 „Wirkungscontrolling im Unternehmen“ maßgeblich [I-01]. Der online geprüfte Stand der Website bestätigt die Leitidee, dass positive Netto-Wirkung entscheidungsrelevant werden soll und Wirkung erst dann systemrelevant wird, wenn sie in Preise, Steuern, Kapital und Entscheidungen zurückwirkt [I-02].
 
 ### Quellenanker: Wirkungsökonomie · Detailkonzept Impact Controlling als System · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/impact-controlling-als-system/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/detailkonzepte/impact-controlling-als-system/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Detailkonzept Impact Controlling als System · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/impact-controlling-als-system/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/impact-controlling-als-system/)
 
 Detailkonzept · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -966,7 +966,7 @@ Relevant sind Bürger:innen, betroffene Gruppen, Unternehmen, Verwaltung, Politi
 
 ### Quellenanker: Wirkungsökonomie · Methodenpapiere Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/methodenpapiere/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Methodenpapiere Impact Controlling · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/)
 
 Methodenpapiere · Go 10
 
@@ -1058,7 +1058,7 @@ Von KPI zu KII und der Kennzahlen-Stack ist kein Randthema. Es zeigt, ob die WÖ
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -1069,17 +1069,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v1-kpi-zu-kii-kennzahlenstack.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

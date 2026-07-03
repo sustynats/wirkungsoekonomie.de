@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WC  
 **Titel:** Reverse Merit Order und Nichtkompensation (operativ)  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v5-reverse-merit-order-operativ.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v5.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v5.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V5
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WC-V4
-**Führende Quellen (Repo):** `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` (§3.11) · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§4) · Glossar `begriffe/reverse-merit-order`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -82,10 +82,10 @@ In den Grundlagen war Reverse Merit Order ein Prinzip. **Jetzt wird es operativ:
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Reverse Merit Order | schwächstes kritisches Feld begrenzt die Bewertung | `begriffe/reverse-merit-order` |
-| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
-| FinalScore | Verdichtung unter Schutzlogik | `begriffe/finalscore` |
-| NWI | operative geprüfte Netto-Wirkung | `begriffe/netto-wirkungs-index` |
+| Reverse Merit Order | schwächstes kritisches Feld begrenzt die Bewertung | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) |
+| FinalScore | Verdichtung unter Schutzlogik | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| NWI | operative geprüfte Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -281,9 +281,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V5. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – §3.11 Reverse Merit Order
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4
-- Glossar: `begriffe/reverse-merit-order`, `begriffe/nichtkompensationsprinzip`, `begriffe/finalscore`
+- [Whitepaper T-SROI](https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/) – §3.11 Reverse Merit Order
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) – §4
+- Glossar: [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/), [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/), [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -367,10 +367,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Reverse Merit Order | schwächstes kritisches Feld begrenzt die Bewertung | `begriffe/reverse-merit-order` |
-| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
-| FinalScore | Verdichtung unter Schutzlogik | `begriffe/finalscore` |
-| NWI | operative geprüfte Netto-Wirkung | `begriffe/netto-wirkungs-index` |
+| Reverse Merit Order | schwächstes kritisches Feld begrenzt die Bewertung | [Reverse merit order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) |
+| Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | [Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) |
+| FinalScore | Verdichtung unter Schutzlogik | [Finalscore](https://wirkungsoekonomie.de/begriffe/finalscore/) |
+| NWI | operative geprüfte Netto-Wirkung | [Netto wirkungs index](https://wirkungsoekonomie.de/begriffe/netto-wirkungs-index/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
@@ -438,7 +438,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 33 - Reverse Merit Order
 
-*Interne Quelle:* `referenz/kapitel-033-reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Kapitel 33 - Reverse Merit Order](https://wirkungsoekonomie.de/referenz/kapitel-033-reverse-merit-order/)
 
 Kapitel 32 hat Scorecards als Instrument beschrieben, mit dem Wirkungen geordnet, vergleichbar und steuerungsfähig werden. Eine Scorecard allein reicht jedoch nicht. Denn sobald mehrere Wirkungsfelder nebeneinander bewertet werden, entsteht eine gefährliche Versuchung: Man könnte gute Werte in einem Feld gegen schlechte Werte in einem anderen Feld aufrechnen.
 
@@ -516,7 +516,7 @@ Damit verhindert sie eine typische Fehlsteuerung heutiger Nachhaltigkeitsmodelle
 
 ### Quellenanker: Wirkungsökonomie · Reverse Merit Order · https://wirkungsoekonomie.de/werkzeuge/reverse-merit-order/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Reverse Merit Order · https://wirkungsoekonomie.de/werkzeuge/reverse-merit-order/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/reverse-merit-order/)
 
 Methodenregister
 
@@ -594,7 +594,7 @@ Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche
 
 ### Quellenanker: WÖk-Präzisierungsbegriff
 
-*Interne Quelle:* `begriffe/nichtkompensationsprinzip/index.html`
+*Öffentliche Quelle:* [WÖk-Präzisierungsbegriff](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/)
 
 Das Nichtkompensationsprinzip verhindert, dass schwere Schäden durch positive Teilwirkungen schöngerechnet werden.
 
@@ -672,7 +672,7 @@ Verwandte Begriffe
 
 ### Quellenanker: Wirkungsökonomie · Detailkonzept Reverse Merit Order · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Detailkonzept Reverse Merit Order · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/)
 
 Detailkonzept · Impact Controlling / T-SROI / NWI / WÖk-IDs / Scorecards
 
@@ -750,7 +750,7 @@ Relevant sind Bürger:innen, betroffene Gruppen, Unternehmen, Verwaltung, Politi
 
 ### Quellenanker: Kapitel 50 - Produktscorecards
 
-*Interne Quelle:* `referenz/kapitel-050-produktscorecards/index.html`
+*Öffentliche Quelle:* [Kapitel 50 - Produktscorecards](https://wirkungsoekonomie.de/referenz/kapitel-050-produktscorecards/)
 
 Kapitel 48 hat Produkte als Wirkungsträger beschrieben. Kapitel 49 hat gezeigt, warum Preise realere Wirkungen sichtbar machen müssen. Zwischen Produktdaten und Preissignal steht eine methodische Frage: Wie wird aus vielen Daten eine nachvollziehbare Bewertung, ohne das Produkt auf eine einzige Zahl zu verkürzen?
 
@@ -828,7 +828,7 @@ Die dritte Grenze liegt in Sonderfällen. Manche Produkte haben sehr lange Nutzu
 
 ### Quellenanker: WÖk-Prägungsbegriff / Schutzbegriff
 
-*Interne Quelle:* `begriffe/wirkungsgrenze/index.html`
+*Öffentliche Quelle:* [WÖk-Prägungsbegriff / Schutzbegriff](https://wirkungsoekonomie.de/begriffe/wirkungsgrenze/)
 
 Eine Wirkungsgrenze ist eine rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf.
 
@@ -906,7 +906,7 @@ Wirkungsgrenzen sind keine willkürlichen Verbote und keine private Moral. Sie m
 
 ### Quellenanker: WÖk-Präzisierungsbegriff
 
-*Interne Quelle:* `begriffe/greenwashing/index.html`
+*Öffentliche Quelle:* [WÖk-Präzisierungsbegriff](https://wirkungsoekonomie.de/begriffe/greenwashing/)
 
 Greenwashing bezeichnet Nachhaltigkeits- oder Umweltversprechen, die stärker wirken als die belegbare tatsächliche Verbesserung.
 
@@ -984,7 +984,7 @@ Greenwashing: ökologische Irreführung oder Überzeichnung.
 
 ### Quellenanker: Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation
 
-*Interne Quelle:* `referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html`
+*Öffentliche Quelle:* [Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation](https://wirkungsoekonomie.de/referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/)
 
 Je wichtiger Wirkung wird, desto größer wird der Anreiz, Wirkung zu behaupten, zu inszenieren oder zu simulieren. Das ist kein Randproblem der Wirkungsökonomie. Es ist ihr zentraler methodischer Stresstest.
 
@@ -1076,7 +1076,7 @@ Reverse Merit Order und Nichtkompensation (operativ) ist kein Randthema. Es zeig
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -1087,17 +1087,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v5-reverse-merit-order-operativ.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

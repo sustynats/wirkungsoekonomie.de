@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** WM  
 **Titel:** 90-Tage-Umsetzungsplan (Abschlussprojekt)  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v10-90-tage-umsetzungsplan.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v10.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v10.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V10
 **Empfohlene Dauer:** ~60 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** WM-V9
-**Führende Quellen (Repo):** gesamter Grundlagen- und Wirkungsmanagement-Track · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -88,9 +88,9 @@ Verstehen allein verändert nichts. **Was tust du in den nächsten 90 Tagen konk
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsrückkopplung | Rückführung der Bewertung in Entscheidungen | `begriffe/wirkungsrueckkopplung` |
-| Wirkungslenkung | Rückführung in Preise, Investitionen, Beschaffung, Ziele | `begriffe/wirkungslenkung` |
-| positive Netto-Wirkung | Zielgröße | `begriffe/positive-netto-wirkung` |
+| Wirkungsrückkopplung | Rückführung der Bewertung in Entscheidungen | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
+| Wirkungslenkung | Rückführung in Preise, Investitionen, Beschaffung, Ziele | [Wirkungslenkung](https://wirkungsoekonomie.de/begriffe/wirkungslenkung/) |
+| positive Netto-Wirkung | Zielgröße | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -341,9 +341,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V10. Offen ble
 
 ## 9. Quellen / Vertiefung
 
-- gesamter Grundlagen- + Wirkungsmanagement-Track (`docs/lehrgaenge/`)
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/wirkungsrueckkopplung`, `begriffe/wirkungslenkung`
+- gesamter Grundlagen- und Wirkungsmanagement-Track
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/), [Wirkungslenkung](https://wirkungsoekonomie.de/begriffe/wirkungslenkung/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -427,9 +427,9 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsrückkopplung | Rückführung der Bewertung in Entscheidungen | `begriffe/wirkungsrueckkopplung` |
-| Wirkungslenkung | Rückführung in Preise, Investitionen, Beschaffung, Ziele | `begriffe/wirkungslenkung` |
-| positive Netto-Wirkung | Zielgröße | `begriffe/positive-netto-wirkung` |
+| Wirkungsrückkopplung | Rückführung der Bewertung in Entscheidungen | [Wirkungsrueckkopplung](https://wirkungsoekonomie.de/begriffe/wirkungsrueckkopplung/) |
+| Wirkungslenkung | Rückführung in Preise, Investitionen, Beschaffung, Ziele | [Wirkungslenkung](https://wirkungsoekonomie.de/begriffe/wirkungslenkung/) |
+| positive Netto-Wirkung | Zielgröße | [Positive netto wirkung](https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
@@ -497,7 +497,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 97 - Der Umsetzungspfad
 
-*Interne Quelle:* `referenz/kapitel-097-der-umsetzungspfad/index.html`
+*Öffentliche Quelle:* [Kapitel 97 - Der Umsetzungspfad](https://wirkungsoekonomie.de/referenz/kapitel-097-der-umsetzungspfad/)
 
 Die Wirkungsökonomie darf nicht als Schock eingeführt werden.
 
@@ -575,7 +575,7 @@ Daraus folgt: Der richtige Einführungspfad ist gestuft.
 
 ### Quellenanker: Kapitel 98 - Pilotprojekte
 
-*Interne Quelle:* `referenz/kapitel-098-pilotprojekte/index.html`
+*Öffentliche Quelle:* [Kapitel 98 - Pilotprojekte](https://wirkungsoekonomie.de/referenz/kapitel-098-pilotprojekte/)
 
 Kapitel 97 hat den Umsetzungspfad beschrieben: Die Wirkungsökonomie wird nicht als Schock eingeführt, sondern als lernender Steuerungswechsel. Kapitel 98 macht diesen Übergang praktisch.
 
@@ -653,7 +653,7 @@ Viertens: keine Pilotprojekte ohne Konsequenz. Wenn ein Pilot zeigt, dass eine M
 
 ### Quellenanker: Kapitel 100 - Transformationspfade
 
-*Interne Quelle:* `referenz/kapitel-100-transformationspfade/index.html`
+*Öffentliche Quelle:* [Kapitel 100 - Transformationspfade](https://wirkungsoekonomie.de/referenz/kapitel-100-transformationspfade/)
 
 Kapitel 99 hat gezeigt, wie die Wirkungsökonomie im Alltag erfahrbar wird: nicht durch moralische Überforderung, sondern dadurch, dass bessere Wirkung leichter, sichtbarer, bezahlbarer und selbstverständlicher wird. Kapitel 100 bündelt nun die praktischen Handlungsfelder.
 
@@ -731,7 +731,7 @@ Der Erfolg politischer Programme bemisst sich dann nicht daran, dass sie existie
 
 ### Quellenanker: Wirkungsökonomie · Unternehmens-Wirkungscheck · https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `werkzeuge/unternehmens-wirkungscheck/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Unternehmens-Wirkungscheck · https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/werkzeuge/unternehmens-wirkungscheck/)
 
 Methode
 
@@ -823,7 +823,7 @@ Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -834,17 +834,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v10-90-tage-umsetzungsplan.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

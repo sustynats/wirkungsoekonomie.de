@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G1.2  
 **Titel:** Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v04.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v04.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v04.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 15 - Leistung neu definieren
 
-*Interne Quelle:* `referenz/kapitel-015-leistung-neu-definieren/index.html`
+*Öffentliche Quelle:* [Kapitel 15 - Leistung neu definieren](https://wirkungsoekonomie.de/referenz/kapitel-015-leistung-neu-definieren/)
 
 Dieses Kapitel korrigiert einen der mächtigsten Begriffe der alten Ordnung: Leistung. Die Wirkungsökonomie schafft das Leistungsprinzip nicht ab. Sie rettet es vor seiner falschen Messung. Denn eine Gesellschaft braucht Anerkennung für echte Beiträge. Aber sie muss präziser bestimmen, was ein Beitrag ist. Leistung ist nicht bloß Aufwand, Einkommen, Umsatz, Gewinn, Reichweite oder Aktivität. Leistung ist positive Wirkung.
 
@@ -311,7 +311,7 @@ Der Begriff ist wichtig, weil negative Wirkung nicht als bloßer Nebeneffekt ver
 
 ### Quellenanker: Kapitel 42 - Unternehmen als Wirkungssysteme
 
-*Interne Quelle:* `referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html`
+*Öffentliche Quelle:* [Kapitel 42 - Unternehmen als Wirkungssysteme](https://wirkungsoekonomie.de/referenz/kapitel-042-unternehmen-als-wirkungssysteme/)
 
 Ein Unternehmen ist dann nicht mehr nur eine Einheit zur Gewinnerzielung. Es ist ein organisierter Wirkungsraum, der Zustände verändert.
 
@@ -389,7 +389,7 @@ Verantwortung über die Bilanz hinaus heißt daher: Unternehmen müssen die Wirk
 
 ### Quellenanker: Kapitel 53 - Markttransformation
 
-*Interne Quelle:* `referenz/kapitel-053-markttransformation/index.html`
+*Öffentliche Quelle:* [Kapitel 53 - Markttransformation](https://wirkungsoekonomie.de/referenz/kapitel-053-markttransformation/)
 
 Kapitel 48 hat Produkte als Wirkungsträger beschrieben. Kapitel 49 hat gezeigt, dass Preise keine neutralen Zahlen sind, sondern Orientierungssignale. Kapitel 50 hat Produktscorecards als methodische Bewertungsinstrumente eingeführt. Kapitel 51 hat am Apfelbeispiel gezeigt, wie Produktwirkung praktisch sichtbar werden kann. Kapitel 52 hat erklärt, warum Verbraucherinformation Orientierung geben muss, ohne Menschen moralisch zu überfordern. Dieses Kapitel schließt Teil VIII ab. Es fragt, was mit Märkten geschieht, wenn Produkte nicht länger nur nach Preis, Marke, Gewohnheit und Verfügbarkeit konkurrieren, sondern auch nach geprüfter Wirkung.
 
@@ -467,7 +467,7 @@ Die folgende Tabelle verdichtet den Unterschied zwischen Billigmarkt und Wirkung
 
 ### Quellenanker: Kapitel 55 - Wachstum, Innovation und Transformation innerhalb planetarer Grenzen
 
-*Interne Quelle:* `referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/index.html`
+*Öffentliche Quelle:* [Kapitel 55 - Wachstum, Innovation und Transformation innerhalb planetarer Grenzen](https://wirkungsoekonomie.de/referenz/kapitel-055-wachstum-innovation-und-transformation-innerhalb-planetarer-grenzen/)
 
 Kapitel 54 hat gezeigt, dass das klassische BIP wirtschaftliche Aktivität misst, aber nicht zuverlässig unterscheidet, ob diese Aktivität Wirkleistung, Scheinleistung, Blindleistung oder Verlustleistung erzeugt. Damit stellt sich die Wachstumsfrage neu. Wenn nicht jede Aktivität Wohlstand bedeutet, kann auch nicht jedes Wachstum Fortschritt sein.
 
@@ -559,7 +559,7 @@ Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen ist kein Ran
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -704,17 +704,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V04. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v04.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G3.1  
 **Titel:** SDGs und Agenda 2030 als globaler Konsens der 193 Staaten  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v25-sdgs-agenda-2030-globaler-konsens.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v25.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v25.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -43,9 +43,9 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** V25
 **Empfohlene Dauer:** ~45 Min · **Videolänge:** ~14 Min
 **Voraussetzung:** V24 „Deeskalierende und demokratiestärkende Kommunikation"
-**Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
+**Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
+> Erstellt nach dem Vorlesungstemplate. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -86,10 +86,10 @@ Die SDGs sind also kein Ersatz für Bewertung. Sie sind der Startpunkt. Die WÖk
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| SDGs | 17 globale Nachhaltigkeitsziele der Agenda 2030 | `begriffe/sdgs` |
-| Agenda 2030 | UN-Rahmen für nachhaltige Entwicklung | `begriffe/agenda-2030` |
-| SDG+ | Erweiterung der SDGs um offene Gesellschaft, Demokratie und Schutzlogiken | `begriffe/sdg-plus` |
-| Referenzrahmen | Maßstab, an dem Wirkung bewertet wird | `begriffe/referenzrahmen` |
+| SDGs | 17 globale Nachhaltigkeitsziele der Agenda 2030 | [Sdgs](https://wirkungsoekonomie.de/begriffe/sdgs/) |
+| Agenda 2030 | UN-Rahmen für nachhaltige Entwicklung | [Agenda 2030](https://wirkungsoekonomie.de/begriffe/agenda-2030/) |
+| SDG+ | Erweiterung der SDGs um offene Gesellschaft, Demokratie und Schutzlogiken | [Sdg plus](https://wirkungsoekonomie.de/begriffe/sdg-plus/) |
+| Referenzrahmen | Maßstab, an dem Wirkung bewertet wird | [Referenzrahmen](https://wirkungsoekonomie.de/begriffe/referenzrahmen/) |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -299,9 +299,9 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V25. Offen bleibt
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Referenzrahmen, SDG/SDG+
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
-- Glossar: `begriffe/sdgs`, `begriffe/sdg-plus`, `begriffe/referenzrahmen`
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) – Referenzrahmen, SDG/SDG+
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html)
+- Glossar: [Sdgs](https://wirkungsoekonomie.de/begriffe/sdgs/), [Sdg plus](https://wirkungsoekonomie.de/begriffe/sdg-plus/), [Referenzrahmen](https://wirkungsoekonomie.de/begriffe/referenzrahmen/)
 
 ## 4. Wirkungsökonomische Vertiefung
 
@@ -385,10 +385,10 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| SDGs | 17 globale Nachhaltigkeitsziele der Agenda 2030 | `begriffe/sdgs` |
-| Agenda 2030 | UN-Rahmen für nachhaltige Entwicklung | `begriffe/agenda-2030` |
-| SDG+ | Erweiterung der SDGs um offene Gesellschaft, Demokratie und Schutzlogiken | `begriffe/sdg-plus` |
-| Referenzrahmen | Maßstab, an dem Wirkung bewertet wird | `begriffe/referenzrahmen` |
+| SDGs | 17 globale Nachhaltigkeitsziele der Agenda 2030 | [Sdgs](https://wirkungsoekonomie.de/begriffe/sdgs/) |
+| Agenda 2030 | UN-Rahmen für nachhaltige Entwicklung | [Agenda 2030](https://wirkungsoekonomie.de/begriffe/agenda-2030/) |
+| SDG+ | Erweiterung der SDGs um offene Gesellschaft, Demokratie und Schutzlogiken | [Sdg plus](https://wirkungsoekonomie.de/begriffe/sdg-plus/) |
+| Referenzrahmen | Maßstab, an dem Wirkung bewertet wird | [Referenzrahmen](https://wirkungsoekonomie.de/begriffe/referenzrahmen/) |
 
 ## 7. Tiefenskript-Erweiterung Sprint 3
 
@@ -455,7 +455,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Wirkungsökonomie · SDG-/SDG+-Referenzrahmen · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDG-/SDG+-Referenzrahmen · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/)
 
 Referenzrahmen
 
@@ -533,7 +533,7 @@ SDG 1 - Keine Armut
 
 ### Quellenanker: Kapitel 31 - WÖk-IDs und Indikatorenarchitektur
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/agenda-2030/index.html`
+*Öffentliche Quelle:* [Kapitel 31 - WÖk-IDs und Indikatorenarchitektur](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/agenda-2030/)
 
 ### Kapitel 32 - Benchmarks, Skalen und Scorecards
 
@@ -585,7 +585,7 @@ Layoutfassung des Fachdetailkonzepts als ergänzende Exportdatei.
 
 ### Quellenanker: Wirkungsökonomie · SDGs und Agenda 2030 als globaler Referenzrahmen · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · SDGs und Agenda 2030 als globaler Referenzrahmen · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/)
 
 Referenz-Fachvertiefung · v0.4
 
@@ -663,7 +663,7 @@ Kurzprofil #
 
 ### Quellenanker: Wirkungsökonomie · Die Geschichte der SDGs · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/geschichte/ · Druckdatum: 24.05.2026
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/geschichte/index.html`
+*Öffentliche Quelle:* [Wirkungsökonomie · Die Geschichte der SDGs · https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/geschichte/ · Druckdatum: 24.05.2026](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/geschichte/)
 
 Agenda 2030
 
@@ -741,7 +741,7 @@ Die 17 SDGs sind stark, aber nicht vollständig. Im 21. Jahrhundert entstehen Wi
 
 ### Quellenanker: Kapitel 31 - WÖk-IDs und Indikatorenarchitektur
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/unterziele/index.html`
+*Öffentliche Quelle:* [Kapitel 31 - WÖk-IDs und Indikatorenarchitektur](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/)
 
 ### Kapitel 32 - Benchmarks, Skalen und Scorecards
 
@@ -793,7 +793,7 @@ Layoutfassung des Fachdetailkonzepts als ergänzende Exportdatei.
 
 ### Quellenanker: Dossier
 
-*Interne Quelle:* `verstehen/sdgs-sdgplus/risiko-resilienzregister/index.html`
+*Öffentliche Quelle:* [Dossier](https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/risiko-resilienzregister/)
 
 Warum Nachhaltigkeit nicht der operative Kern ist - und warum die Wirkungsökonomie mit SDG+ die fehlende Korrekturfähigkeit ergänzt.
 
@@ -863,7 +863,7 @@ Nein. Bewertet werden nicht angenehme oder unangenehme Meinungen, sondern Wirkun
 
 ### Quellenanker: Kapitel 102 - Die SDGs zwischen globaler Kooperation und Verschwörungsnarrativ
 
-*Interne Quelle:* `referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/index.html`
+*Öffentliche Quelle:* [Kapitel 102 - Die SDGs zwischen globaler Kooperation und Verschwörungsnarrativ](https://wirkungsoekonomie.de/referenz/kapitel-102-die-sdgs-zwischen-globaler-kooperation-und-verschwoerungsnarrativ/)
 
 Die Sustainable Development Goals, kurz SDGs, gehören zu den wichtigsten globalen Referenzrahmen der Gegenwart. Sie formulieren Ziele, die fast niemand grundsätzlich ablehnen würde, wenn sie einzeln betrachtet werden: Armut beenden, Hunger verringern, Gesundheit verbessern, Bildung sichern, Wasser schützen, saubere Energie ermöglichen, menschenwürdige Arbeit fördern, Ungleichheit reduzieren, nachhaltige Städte entwickeln, verantwortliche Produktion stärken, Klima schützen, Biodiversität bewahren, Frieden sichern, Institutionen stärken und internationale Zusammenarbeit verbessern.
 
@@ -941,7 +941,7 @@ In staatskritischen Milieus wird die Agenda 2030 oft mit Misstrauen gegenüber I
 
 ### Quellenanker: Kapitel 96 - Wirkungsökonomie als weltfähige Ordnung
 
-*Interne Quelle:* `referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/index.html`
+*Öffentliche Quelle:* [Kapitel 96 - Wirkungsökonomie als weltfähige Ordnung](https://wirkungsoekonomie.de/referenz/kapitel-096-wirkungsoekonomie-als-weltfaehige-ordnung/)
 
 Kapitel 91 hat Europa als Wirkungsraum beschrieben. Kapitel 92 hat Handel und Lieferketten als globale Wirkungsketten gelesen. Kapitel 93 hat globale Institutionen und Wirkungsgovernance ohne Weltregierung eingeordnet. Kapitel 94 hat kulturelle Anschlussfähigkeit und multipolare Ordnung verbunden. Kapitel 95 hat globale Resilienz, Sicherheit und Kooperation als gemeinsame Vorsorgefähigkeit beschrieben.
 
@@ -1038,7 +1038,7 @@ SDGs und Agenda 2030 als globaler Konsens der 193 Staaten ist kein Randthema. Es
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -1049,17 +1049,18 @@ Für den Fragenpool sind besonders geeignet:
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v25-sdgs-agenda-2030-globaler-konsens.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.

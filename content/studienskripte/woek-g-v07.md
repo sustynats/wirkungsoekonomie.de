@@ -6,9 +6,9 @@
 **Modul/Abschnitt:** G1.3  
 **Titel:** Mensch als Wirkungsdimension  
 **Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v07.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v07.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v07.docx`  
-**Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
 
 ## Lernziele
 
@@ -233,7 +233,7 @@ Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogi
 
 ### Quellenanker: Kapitel 24 - Der Mensch im System
 
-*Interne Quelle:* `referenz/kapitel-024-der-mensch-im-system/index.html`
+*Öffentliche Quelle:* [Kapitel 24 - Der Mensch im System](https://wirkungsoekonomie.de/referenz/kapitel-024-der-mensch-im-system/)
 
 Der Mensch ist in der Wirkungsökonomie kein isolierter Nutzenrechner. Er ist ein Wirkungswesen. Er nimmt Wirkung auf, verarbeitet sie körperlich, emotional, sprachlich und sozial, und er erzeugt selbst Wirkung durch Handlungen, Unterlassen, Entscheidungen, Beziehungen, Worte, Routinen und institutionelle Rollen. Menschen sind Wirkungsempfänger und Wirkungsträger. Sie werden von Preisen, Arbeitsbedingungen, Wohnräumen, Sprache, Anerkennung, Unsicherheit, Naturzuständen und politischen Ordnungen beeinflusst. Zugleich verändern sie durch ihr Verhalten andere Menschen, Systeme und Zukunftsräume.
 
@@ -311,7 +311,7 @@ Wenn der Mensch als bloßer Konsument erscheint, wird Wirkung zur Kaufentscheidu
 
 ### Quellenanker: Kapitel 25 - Angst, Status, Zugehörigkeit und Macht
 
-*Interne Quelle:* `referenz/kapitel-025-angst-status-zugehoerigkeit-und-macht/index.html`
+*Öffentliche Quelle:* [Kapitel 25 - Angst, Status, Zugehörigkeit und Macht](https://wirkungsoekonomie.de/referenz/kapitel-025-angst-status-zugehoerigkeit-und-macht/)
 
 Kapitel 24 hat den Menschen als Wirkungswesen beschrieben: körperlich, emotional, sozial, sprachlich, kulturell und institutionell eingebettet. Dieses Menschenbild ist für die Wirkungsökonomie unverzichtbar, weil Menschen nicht nur nach Information handeln. Sie handeln aus Sicherheit, Angst, Zugehörigkeit, Anerkennung und Machtverhältnissen heraus. Wer Wirtschaft, Politik, Medien und Demokratie verstehen will, muss diese Tiefenschicht sehen.
 
@@ -389,7 +389,7 @@ Sprachmacht ist ein zweites Beispiel. Begriffe können Menschengruppen sichtbar 
 
 ### Quellenanker: Kapitel 26 - Sinn, Selbstwirksamkeit und Beziehung
 
-*Interne Quelle:* `referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/index.html`
+*Öffentliche Quelle:* [Kapitel 26 - Sinn, Selbstwirksamkeit und Beziehung](https://wirkungsoekonomie.de/referenz/kapitel-026-sinn-selbstwirksamkeit-und-beziehung/)
 
 Kapitel 25 hat gezeigt, dass Menschen nicht nur nach Information handeln. Angst, Status, Zugehörigkeit und Macht verändern Wahrnehmung, Vertrauen, politische Orientierung, Konsum, Arbeitsbeziehungen und demokratische Diskurse. Dieses Kapitel ergänzt die positive Seite dieses Menschenbildes: Menschen brauchen Sinn, Selbstwirksamkeit und Beziehung. Ohne diese drei Bedingungen wird Wirkung abstrakt. Mit ihnen wird Wirkung lebbar.
 
@@ -467,7 +467,7 @@ Weber, Natalie: Systemmodell der Wirkungsökonomie. Die systemische Ordnungskart
 
 ### Quellenanker: Kapitel 71 - Kindheit, Familie und frühes Leben
 
-*Interne Quelle:* `referenz/kapitel-071-kindheit-familie-und-fruehes-leben/index.html`
+*Öffentliche Quelle:* [Kapitel 71 - Kindheit, Familie und frühes Leben](https://wirkungsoekonomie.de/referenz/kapitel-071-kindheit-familie-und-fruehes-leben/)
 
 Kapitel 70 hat Wohnen als räumliche Grundlage von Sicherheit, Gesundheit, Zugehörigkeit und Teilhabe beschrieben. Dieses Kapitel geht einen Schritt zurück: zu den ersten Lebensjahren, in denen Menschen Sicherheit, Sprache, Bindung, Körpergefühl, Vertrauen, Grenzen, Schutz und Selbstwirksamkeit erfahren. Eine Gesellschaft beginnt nicht erst mit Arbeitsmarkt, Wahlrecht oder Konsum. Sie beginnt dort, wo Kinder Sicherheit, Bindung, Sprache, Schutz und Selbstwirksamkeit erleben.
 
@@ -559,7 +559,7 @@ Mensch als Wirkungsdimension ist kein Randthema. Es zeigt, ob die WÖk nur schö
 
 ## 8. Prüfungsrelevanz
 
-Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
 
 Für den Fragenpool sind besonders geeignet:
 
@@ -692,17 +692,18 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V07. Offen bleibt
 
 ## 9. Quellen
 
-### Interne Quellen
+### WÖk-Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v07.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
-- Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
 
 ### Externe Quellen fuer die V1-Fassung
 
-- United Nations (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*.
-- European Commission: CSRD, ESRS, EU Taxonomy und Digital Product Passport, soweit fuer das Thema einschlägig.
-- GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
