@@ -21,7 +21,7 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Offen (Codex):** CI-Gates noch aufsetzen — Website-PR-Check mit Suchindex-Build, Privacy-/Leak-Scan, `url-baseline-diff` als Gate.
 
 ### Codex · Institut-Teaser-Seite (live via PR)
-- Neue öffentliche Seite `/institut/` + Footer-Link „WÖk-Institut" (Gruppe Lernen). Generatorbasiert.
+- Neue öffentliche Seite `/institut/` + Footer-Link „Wirkungsinstitut" (Gruppe Lernen). Generatorbasiert.
 - **Pfade:** `scripts/site/build-institut-teaser.mjs` (neu), `assets/data/navigation.json`, `package.json`.
 - **Commit:** PR #70 → squash-merged auf `main` (`dda16982f5`). CTA „Am Institut mitwirken" → `institut.wirkungsoekonomie.de/bewerbung`.
 - **Geprüft:** Generator läuft, Preview ok, additiv (nur neue URL `/institut/`, keine entfernt). Live-Verifikation nach Deploy.

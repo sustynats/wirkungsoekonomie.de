@@ -79,8 +79,8 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WÖk-Institut – der ThinkTank der Wirkungsökonomie</title>
-    <meta name="description" content="Das WÖk-Institut ist der Forschungs- und Arbeitsraum neben der WÖk-Akademie: Modelle, Analysen und Veröffentlichungen zur tatsächlichen Wirkung wirtschaftlicher und politischer Entscheidungen.">
+    <title>Wirkungsinstitut – der ThinkTank der Wirkungsökonomie</title>
+    <meta name="description" content="Das Wirkungsinstitut ist der Forschungs- und Arbeitsraum neben der WÖk-Akademie: Modelle, Analysen und Veröffentlichungen zur tatsächlichen Wirkung wirtschaftlicher und politischer Entscheidungen.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/institut/">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -88,10 +88,10 @@ const html = `<!doctype html>
 ${renderHeader(BASE)}
     <main>
       <section class="hero compact-hero">
-        <nav class="breadcrumb"><a href="../index.html">Start</a> / WÖk-Institut</nav>
+        <nav class="breadcrumb"><a href="../index.html">Start</a> / Wirkungsinstitut</nav>
         <p class="hero-kicker">Der ThinkTank der Wirkungsökonomie</p>
-        <h1>WÖk-Institut</h1>
-        <p class="hero-subtitle">Das WÖk-Institut ist der Forschungs- und Arbeitsraum neben der WÖk-Akademie. Hier wird die Wirkungsökonomie weitergedacht, geprüft und in konkrete Modelle, Analysen und Veröffentlichungen übersetzt – nachvollziehbar und am Referenzrahmen der SDGs orientiert.</p>
+        <h1>Wirkungsinstitut</h1>
+        <p class="hero-subtitle">Das Wirkungsinstitut ist der Forschungs- und Arbeitsraum neben der WÖk-Akademie. Hier wird die Wirkungsökonomie weitergedacht, geprüft und in konkrete Modelle, Analysen und Veröffentlichungen übersetzt – nachvollziehbar und am Referenzrahmen der SDGs orientiert.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="${BEWERBUNG_URL}">Am Institut mitwirken</a>
           <a class="btn btn-secondary" href="${INSTITUT_URL}">Institut öffnen</a>
