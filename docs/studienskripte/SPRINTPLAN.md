@@ -106,17 +106,19 @@ Ziel: alle V1-Vorlesungen als Rohfassungs-Artefakte herstellen und danach V20 al
 - [x] 16 fehlende Grundstudium-App-Spiegel V21-V36 angelegt
 - [x] Bibliotheksindex aus `content/studienskripte/index.json` aktualisiert
 - [x] V20 im ersten Tiefensprint von Pilotfassung auf ausfuehrliche Zwischenfassung erweitert
-- [ ] V21-V24 als erste 40-50-Seiten-Tiefenfassungen ausbauen
+- [x] V21-V24 als substanzielle Tiefenskript-Arbeitsfassungen ausbauen (ca. 27 Seiten V21-Render; 50-Seiten-Finalisierung offen)
 
 ## Sprint 2 · Grundstudium V21-V24
 
 Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-akademie-app/docs/lehrgaenge/`.
 
-- `woek-g-v21`
-- `woek-g-v22`
-- `woek-g-v23`
-- `woek-g-v24`
+- [x] `woek-g-v21`
+- [x] `woek-g-v22`
+- [x] `woek-g-v23`
+- [x] `woek-g-v24`
 - Output je Skript: Markdown-Master, Word-Rohfassung, App-Spiegel, Mini-Quiz, Glossar, Quellen, Rueckfluss
+- Ergebnis: `tiefensprint-arbeitsfassung` mit Website-Referenzmaterial, Fallfenstern, Modellformel, Analysemodell und pruefungsnahen Fallfragen ohne geschuetzte Antwortlogik.
+- Hinweis: Diese Fassungen sind substanziell ausgebaut, aber noch nicht als `published` oder Claude-CI/PDF-final markiert.
 
 ## Sprint 3 · Grundstudium V25-V28
 
