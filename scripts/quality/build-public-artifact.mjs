@@ -27,7 +27,6 @@ const excludedTopLevelDirs = new Set([
   "scripts",
   "source-assets",
   "src",
-  "sustynats",
   "templates",
   "tiktok_archive",
   "tiktok_library",
