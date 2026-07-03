@@ -5,7 +5,7 @@
 **Vorlesungscode:** V23  
 **Modul/Abschnitt:** G2.4  
 **Titel:** Unsicherheit, Ambivalenz und transparente Bewertung  
-**Status:** Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden  
+**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v23.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v23.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
@@ -220,7 +220,353 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Nichtkompensation | Schutz gegen das Wegrechnen schwerer Schäden | `begriffe/nichtkompensation` |
 | Rückkopplung | Lernen aus Bewertung und tatsächlichen Folgen | `begriffe/wirkungsrueckkopplung` |
 
-## 7. Prüfungsrelevanz
+## 7. Tiefenskript-Erweiterung Sprint 2
+
+**Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
+
+### 7.1 Leitthese
+
+Ambivalenz ist kein Defekt der Wirkungsbewertung. Sie ist der Normalfall komplexer Systeme und muss durch Profile, Datenqualitätsklassen, Nichtkompensation und Rückkopplung entscheidungsfähig werden.
+
+Die Vorlesung bleibt dabei an die Grundregel gebunden: Wirkung ist neutral und relational. Erst die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ entscheidet, ob eine Veränderung positiv, negativ oder ambivalent einzuordnen ist. Wenn eine Zielgröße gemeint ist, sprechen wir von positiver Netto-Wirkung.
+
+### 7.2 Didaktische Einordnung im Studiengang
+
+V23 liegt an der Schwelle zwischen begrifflicher Grundlegung und Bewertungsarchitektur. Die Studierenden sollen nicht nur Begriffe wiedergeben, sondern an Fällen erkennen, welche Aussage schon Wirkung behauptet, welche nur Wirkungspotenzial beschreibt und wo ein Wirkungsrisiko offenliegt. Der Tiefensinn dieser Vorlesung liegt deshalb nicht in zusätzlicher Komplexität, sondern in besserer Unterscheidungsfähigkeit.
+
+Für die spätere Praxis ist entscheidend, dass jede Analyse vier Ebenen getrennt hält:
+
+1. **Beschreibung:** Was geschieht tatsächlich oder soll geschehen?
+2. **Kausalannahme:** Über welchen Mechanismus könnte daraus eine Zustandsveränderung entstehen?
+3. **Bewertung:** Welche Richtung hat diese Veränderung im Referenzrahmen?
+4. **Rückkopplung:** Welche Entscheidung, Regel, Ressource oder Kommunikation wird dadurch verändert?
+
+Wo diese Ebenen vermischt werden, entstehen typische WÖk-Fehler: Aktivität wird als Wirkung ausgegeben, Reichweite ersetzt Zustandsveränderung, gute Absicht verdeckt Nebenwirkungen oder Reporting wird mit Lernen verwechselt.
+
+### 7.3 Analysemodell
+
+| Analyseobjekt | Woran es wirkt | Typischer Fehler | Saubere WÖk-Lesart |
+|---|---|---|---|
+| Datenunsicherheit | Daten fehlen, sind alt, indirekt oder schwer vergleichbar | Score als exakte Wahrheit ausgeben | Datenqualitätsklasse und Annahmen ausweisen |
+| Wirkungsambivalenz | positive und negative Zustandsveränderungen treten gleichzeitig auf | eine Seite rhetorisch unsichtbar machen | Profil statt Einzahlwert, Zielkonflikt offenlegen |
+| Modellunsicherheit | Gewichtungen, Benchmarks und Kausalannahmen sind begründet, aber vorläufig | Modell als Naturgesetz behandeln | Version, Quelle und Korrekturweg nennen |
+| Entscheidungsunsicherheit | Handeln ist nötig, obwohl Erkenntnis unvollständig bleibt | Unsicherheit als Stillstandsargument nutzen | Vorsorge, Pilot, Monitoring und Rückkopplung verbinden |
+
+### 7.4 Modellformel
+
+Die folgende Formel ist ein didaktisches Denkmodell, kein amtlicher Bewertungsstandard:
+
+$
+Bewertbarkeit = Datenqualitaet + Profilklarheit + Risikotransparenz + Rueckkopplungsfaehigkeit
+$
+
+Unsicherheit wird nicht wegaddiert. Sie wird als Eigenschaft der Bewertung sichtbar gemacht und über Lernschleifen reduziert.
+
+Die Formel soll gerade keine Scheingenauigkeit erzeugen. Sie zwingt dazu, die Faktoren offen zu legen, die eine Aussage tragen. In einem echten Bewertungsprozess müssten Datenquelle, Aktualität, Datenqualitätsklasse, Unsicherheitsgrad und Rückkopplungsregel ergänzt werden.
+
+### 7.5 Fallfenster
+
+**Fall 1.** Energetische Sanierung kann Klima und Gesundheit verbessern, aber Verdrängung auslösen. Eine transparente Bewertung muss Emissionsminderung, Heizkosten, Mieten, Sozialschutz, Gebäudezustand, Förderlogik und Beteiligung getrennt ausweisen. Erst dann wird der Konflikt steuerbar.
+
+**Fall 2.** Eine KI-Anwendung in der Verwaltung kann Wartezeiten senken, aber Fehler, Diskriminierung oder Intransparenz erzeugen. Die WÖk darf weder den Effizienzgewinn romantisieren noch die Technologie pauschal verwerfen; sie braucht Prüfpfad, Datenqualität, Beschwerdewege und Audit.
+
+### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
+
+Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+
+1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
+2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
+3. Benenne mindestens ein Wirkungspotenzial und ein Wirkungsrisiko.
+4. Zeige, welche Quelle oder Datenart nötig wäre, um von Potenzial zu belastbarer Wirkungsaussage zu kommen.
+5. Prüfe, ob Nichtkompensation oder Reverse Merit Order einschlägig sein könnten.
+6. Formuliere eine saubere Wirkungsaussage in einem Satz: Was wissen wir, was nehmen wir an, was bleibt offen?
+
+### 7.7 Auswertung aus der lebenden Website-Referenz
+
+### Quellenanker: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz
+
+*Interne Quelle:* `referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html`
+
+### 23.1 Warum Wirkung immer auch Risiko bedeutet
+
+Kapitel 22 hat gezeigt: Wirkung darf nicht bei Sichtbarkeit stehen bleiben. Sie muss in Entscheidungsstrukturen zurückkehren. Wenn Wirkung Preise, Steuern, Kapitalzugang, Versicherbarkeit, Beschaffung, Management, Einkommen, öffentliche Haushalte, Recht, Bildung oder Medienlogik verändert, wird sie lenkend [I-23-1].
+
+Dieses Kapitel schließt Teil III ab und ergänzt die Systemlogik um eine zweite Perspektive. Wirkung ist nicht nur Nutzenlogik. Wirkung ist auch Risikologik. Wer Wirkung als Zustandsveränderung versteht, muss auch die Möglichkeit negativer Zustandsveränderung betrachten: Gesundheit kann geschwächt werden, Vertrauen kann sinken, Böden können erschöpfen, Lieferketten können brüchig werden, Kapital kann falsche Pfade finanzieren, Öffentlichkeit kann manipulierbarer werden, Demokratie kann ihre Korrekturfähigkeit verlieren [I-23-2].
+
+Wirkungsrisiko bezeichnet die Möglichkeit einer negativen Zustandsveränderung für Mensch, Planet oder Demokratie. Es ist mehr als finanzielles Risiko. Finanzielle Schäden sind häufig nur die späte Übersetzung negativer Wirkung. Eine Lieferkette kann kurzfristig billig sein und später durch Wasserstress, Arbeitsrechtsverletzungen, Reputationsschäden oder politische Instabilität teuer werden. Ein Geschäftsmodell kann Gewinne erzeugen und zugleich ökologische, soziale oder demokratische Risiken aufbauen. Eine Infrastruktur kann im Alltag funktionieren und bei Hitze, Cyberangriff, Energieengpass oder Personalmangel brüchig werden [I-23-3].
+
+Die Wirkungsökonomie verschiebt deshalb den Risikobegriff. Risiko beginnt nicht erst, wenn ein Verlust in der Bilanz steht. Risiko beginnt, wenn ein Zustand verletzlicher wird.
+
+### 23.2 Wirkungspotenzial, Wirkungsrisiko und eingetretener Schaden
+
+Wirkungspotenzial beschreibt den Möglichkeitsraum vor der eingetretenen Wirkung. Wirkungsrisiko beschreibt jenen Teil dieses Möglichkeitsraums, der negative Zustandsveränderungen wahrscheinlicher macht [I-23-4]. Ein Gesetzesentwurf kann Wirkungspotenzial erzeugen, bevor er beschlossen ist. Eine politische Aussage kann Wirkungspotenzial erzeugen, bevor sie Verhalten verändert. Ein Produktdesign kann Wirkungsrisiko erzeugen, bevor Nutzung, Reparatur oder Entsorgung Schäden auslösen. Eine ungesicherte digitale Infrastruktur kann Wirkungsrisiko erzeugen, bevor ein Angriff gelingt.
+
+Eingetretener Schaden liegt erst vor, wenn sich ein Zustand tatsächlich negativ verändert hat. Die Wirkungsökonomie darf diese drei Ebenen nicht vermischen. Potenzial ist nicht Wirkung. Risiko ist nicht Schaden. Schaden ist nicht bloß Verdacht. Diese Trennung schützt Freiheit, Datenqualität und Fairness.
+
+Gleichzeitig darf die Trennung nicht zur Verharmlosung führen. Eine marode Brücke ist nicht erst relevant, wenn sie bricht. Eine unsanierte Wohnung ist nicht erst relevant, wenn Menschen krank werden. Eine Lieferkette mit ungeprüften Arbeitsbedingungen ist nicht erst relevant, wenn ein Skandal öffentlich wird. Eine Plattformlogik, die Manipulation verstärkt, ist nicht erst relevant, wenn demokratische Institutionen beschädigt sind [I-23-5].
+
+Wirkungsrisiko ist daher Frühwarnung. Es verlangt Prüfung, Beobachtung, Priorisierung und gegebenenfalls Lenkung. Es begründet nicht automatisch Schuld. Es begründet Verantwortlichkeit im Umgang mit möglichen Folgen.
+
+### 23.3 Risiko nach erster, zweiter und dritter Wirkungsordnung
+
+Kapitel 18 hat Wirkungen erster, zweiter und dritter Ordnung unterschieden [Kap. 18]. Diese Unterscheidung gilt auch für Risiken.
+
+Wirkungsrisiko erster Ordnung betrifft eine direkte negative Zustandsveränderung. Ein Produkt kann gesundheitsgefährdende Stoffe enthalten. Eine Straße kann Unfallrisiken erhöhen. Eine Wohnung kann Schimmelbelastung erzeugen. Ein fossiler Energieträger kann direkte Emissionen verursachen. Diese Risiken liegen nah an der Handlung, am Produkt oder am Zustand.
+
+Wirkungsrisiko zweiter Ordnung betrifft indirekte Folgen. Eine schlechte Wohnung kann nicht nur krank machen, sondern Bildungswege, Arbeitsfähigkeit, Familienleben und soziale Stabilität beeinflussen. Ein billiges Fast-Fashion-Produkt kann nicht nur Ressourcen verbrauchen, sondern Arbeitsbedingungen, Abfallströme, Chemikalienbelastung, Preisdruck und Konsumroutinen verändern [I-23-6]. Eine politische Aussage kann nicht nur Aufmerksamkeit erzeugen, sondern Vertrauen, Gruppenzugehörigkeit, Angst oder Handlungsbereitschaft verschieben [I-23-7].
+
+Wirkungsrisiko dritter Ordnung betrifft die Struktur, in der spätere Entscheidungen entstehen. Wenn schlechte Wirkung dauerhaft billiger bleibt, verändert das den Wettbewerb. Wenn Kapital externe Risiken ignoriert, finanziert es fragile Pfade. Wenn öffentliche Kommunikation Wahrheit durch Reichweite ersetzt, verändert sich die demokratische Entscheidungsstruktur. Wenn Versicherbarkeit sinkt, zeigt sich ein Systemrisiko, das nicht mehr nur einzelne Schäden betrifft [I-23-8].
+
+Diese Ordnung schützt vor zu enger Risikolesart. Eine Gefahr ist nicht nur das, was direkt eintritt. Eine Gefahr kann auch in Folgeketten und Entscheidungsstrukturen liegen.
+
+### 23.4 Wirkungsdaten als Frühwarninformationen
+
+Wirkungsdaten sind nicht nur Bewertungsdaten. Sie sind Frühwarninformationen. Sie zeigen nicht nur, was geschehen ist, sondern auch, wo Verwundbarkeit entsteht, wo negative Wirkung wahrscheinlicher wird und wo Prävention möglich ist [I-23-9].
+
+Klimadaten zeigen nicht nur Emissionen, sondern künftige Kosten, Versicherungsrisiken, Standortfragen, Lieferkettenrisiken und politische Belastungen. Arbeitsdaten zeigen nicht nur soziale Standards, sondern Fluktuation, Konflikt, Ausbeutung, Reputationsrisiken und Resilienz der Wertschöpfung. Gesundheitsdaten zeigen nicht nur Krankheit, sondern Überlastung, Präventionslücken, Wohnrisiken, Arbeitsrisiken und Pflegeengpässe. Demokratiedaten zeigen nicht nur Institutionenvertrauen, sondern Manipulationsanfälligkeit, Polarisierung, Medienqualität und Korrekturfähigkeit [I-23-10].
+
+Die Wirkungsökonomie liest Daten daher nicht als Berichtspflicht, sondern als Risikointelligenz. CSRD, ESRS, GRI, NACE, WÖk-IDs, Scorecards, digitale Produktpässe, T-SROI, Wirkungsberichte und Datenqualitätsklassen können nur dann Sinn entfalten, wenn sie nicht in Dokumenten enden, sondern in Entscheidungen zurückwirken [I-23-11][E-23-1].
+
+Ein Bericht zeigt einen Zustand. Rückkopplung verändert den Umgang mit diesem Zustand.
+
+### 23.5 Finanzierbarkeit, Versicherbarkeit und Kapitalzugang
+
+Risiko wird im Finanzsystem sichtbar, sobald es Finanzierungskosten, Kapitalzugang, Versicherbarkeit, Bewertung oder Geschäftsmodellstabilität verändert. Genau dort wird Wirkung ökonomisch relevant [I-23-8].
+
+Ein Unternehmen mit hohen Emissionen hat nicht nur ein Klimathema. Es hat mögliche Kosten aus Regulierung, CO2-Preisen, Technologieumstellung, Reputationsdruck, Lieferkettenanforderungen, Kapitalbewertung und Marktverlusten. Eine Immobilie in einer Risikoregion hat nicht nur ein Standortthema. Sie hat ein Versicherungs-, Finanzierungs- und Wertthema. Eine Lieferkette mit schlechten Arbeits- und Umweltbedingungen hat nicht nur ein Compliance-Thema. Sie hat ein Produktions-, Haftungs-, Beschaffungs- und Kapitalthema [I-23-12].
+
+Versicherbarkeit wird damit zum Resilienzindikator. Was nicht mehr oder nur noch sehr teuer versicherbar ist, zeigt eine reale Verwundbarkeit des Systems. Versicherungen sind in der Wirkungsökonomie nicht nur Schadensausgleicher. Sie sind Wirkungslenker, weil sie Risiken bepreisen und damit Investitionen, Standortentscheidungen und Prävention beeinflussen [I-23-8].
+
+### Quellenanker: Kapitel 30 - Von Wirkung zu Messung
+
+*Interne Quelle:* `referenz/kapitel-030-von-wirkung-zu-messung/index.html`
+
+Diese Frage bildet den Übergang von der normativen Ordnung zur Messarchitektur. Ohne Messung bleibt Wirkung ein Anspruch. Ohne Maßstab bleibt Messung blind. Ohne Rückkopplung bleibt Messung folgenlos. Die Wirkungsökonomie braucht daher eine Methodik, die Wirkung sichtbar macht, ohne ihre Komplexität zu zerstören.
+
+Messung ist nicht die Wahrheit selbst. Sie ist die Bedingung, damit Wirkung beobachtbar, prüfbar, vergleichbar und rückkoppelbar wird.
+
+### 30.1 Messbarkeit ohne Reduktionismus
+
+Wirkung muss messbar werden, weil sie sonst nicht verlässlich in Entscheidungen zurückkehren kann. Was nicht beobachtet wird, bleibt leicht unsichtbar. Was unsichtbar bleibt, wird selten systematisch berücksichtigt. Was nicht berücksichtigt wird, kann weiter externalisiert, verschoben oder rhetorisch überhöht werden. Eine Gesellschaft, die Wirkung ernst nimmt, muss deshalb wissen, welche Zustände sich verändern, welche Risiken entstehen, welche Belastungen verlagert werden und welche positiven Veränderungen tatsächlich eintreten.
+
+Gleichzeitig hat Messung eine Grenze. Sie kann den Gegenstand verkürzen. Wenn nur das zählt, was leicht zu zählen ist, wird das Wichtige durch das Messbare ersetzt. Dann werden Tonnen, Euro, Prozente, Indizes oder Punktwerte mit Wirklichkeit verwechselt. Eine solche Messung wäre keine Wirkungsökonomie, sondern eine neue Form technokratischer Blindheit.
+
+Die Wirkungsökonomie misst deshalb nicht, weil alles in Zahlen aufgeht. Sie misst, weil Wirkung sonst nicht lernfähig wird. Zahlen sind Signale. Sie sind keine vollständige Beschreibung der Welt. Ein Indikator kann zeigen, dass Emissionen sinken, Wasserverbrauch steigt, Arbeitsunfälle abnehmen, Vertrauen beschädigt wird oder Teilhabe wächst. Er erklärt aber nicht allein, warum dies geschieht, welche Nebenwirkungen entstehen, welche Gruppen betroffen sind und ob die Veränderung systemisch sowie normativ erwünscht ist.
+
+Messbarkeit ohne Reduktionismus bedeutet: Zahlen werden in Zusammenhänge gestellt. Eine gemessene Veränderung wird als Zustandsveränderung gelesen, nicht als isolierter Wert. Sie wird auf systemischen Wert bezogen, an Mensch, Planet und Demokratie normativ bewertet und in Rückkopplung übersetzt. Damit unterscheidet sich die Wirkungsökonomie von einer bloßen Kennzahlenordnung. Sie fragt nicht, welche Zahl gut aussieht. Sie fragt, welcher Zustand sich verändert, in welchem Wirkungsraum, für wen, auf welcher Zeitskala und mit welchen Nebenwirkungen.
+
+Ein System, das nur Zahlen sammelt, wird nicht automatisch klüger. Es kann sogar blinder werden, wenn es die falschen Zahlen optimiert. Ein System, das Wirkung misst, muss daher auch fragen, welche Dimensionen nicht vollständig quantifizierbar sind, welche Annahmen hinter der Messung stehen und welche Wirkungen nur über qualitative, relationale oder langfristige Beobachtung erfasst werden können. Gerade Vertrauen, Würde, Pflegequalität, Bildung, demokratische Stabilität, kulturelle Resonanz, Prävention und langfristige ökologische Regeneration verlangen eine vorsichtige Methodik.
+
+Messbarkeit ohne Reduktionismus heißt deshalb: Wirkung wird messbar gemacht, aber nicht auf Messung reduziert.
+
+### 30.2 Empirische, systemische und normative Ebene
+
+Wirkungsmessung braucht drei Ebenen. Diese Ebenen müssen getrennt und verbunden werden, sonst entsteht Scheingenauigkeit.
+
+Die erste Ebene ist empirisch. Sie fragt: Was lässt sich beobachten? Welche Daten liegen vor? Welche Zustände haben sich verändert? Wie entwickeln sich Emissionen, Ressourcenverbrauch, Gesundheitswerte, Arbeitsbedingungen, Bildungszugang, Beteiligung, Sicherheit, Vertrauen, Biodiversität, Wohnqualität oder demokratische Stabilität? Die empirische Ebene braucht Daten, Indikatoren, Quellen, Zeitreihen, Vergleichswerte und Prüfbarkeit. Sie schützt die Wirkungsökonomie vor bloßer Behauptung.
+
+Die zweite Ebene ist systemisch. Sie fragt: Was bedeutet diese Veränderung im Zusammenhang? Ein Wert kann für sich positiv aussehen und im System problematisch sein. Eine Effizienzsteigerung kann Ressourcen sparen und zugleich Mehrverbrauch auslösen. Eine Kostensenkung kann kurzfristig entlasten und langfristig Infrastruktur schwächen. Eine hohe Reichweite kann Aufmerksamkeit schaffen und zugleich Diskursqualität beschädigen. Die systemische Ebene betrachtet Rückkopplungen, Engpässe, Nebenwirkungen, Verzögerungen, Interdependenzen und Wirkungsräume.
+
+Die dritte Ebene ist normativ. Sie fragt: Ist diese Wirkung gemessen an Mensch, Planet und Demokratie wünschenswert? Nicht jede systemisch starke Wirkung ist gut. Eine autoritäre Ordnung kann effizient sein. Ein Geschäftsmodell kann hohe Bindung erzeugen und Menschen abhängig machen. Ein Medienmechanismus kann stark wirken und Vertrauen zerstören. Eine Technologie kann mächtig sein und demokratische Selbstbestimmung schwächen. Deshalb reicht Wirkungskraft nicht. Wirkung braucht normative Bewertung.
+
+Diese drei Ebenen bilden zusammen die methodische Grundlage von Teil V. Die empirische Ebene fragt, was sich verändert. Die systemische Ebene fragt, was diese Veränderung im Zusammenhang bedeutet. Die normative Ebene fragt, ob die Veränderung an Mensch, Planet und Demokratie gemessen erwünscht ist. Wenn eine Ebene fehlt, wird Messung fehlerhaft. Ohne Empirie bleibt Wirkung Behauptung. Ohne Systemik wird Wirkung isoliert. Ohne Normativität wird Wirkung richtungslos.
+
+Die Wirkungsökonomie verbindet diese Ebenen, ohne sie zu vermischen. Empirische Daten ersetzen keine normative Bewertung. Normative Bewertung ersetzt keine Daten. Systemische Einordnung ersetzt keine Prüfung. Erst die Verbindung macht Wirkung steuerungsfähig.
+
+### 30.3 Messgrenzen, Schätzungen und Unsicherheit
+
+Wirkung ist messbar, aber nicht vollständig. Diese Grenze muss offen benannt werden.
+
+Manche Wirkungen lassen sich direkt erfassen: Energieverbrauch, Emissionen, Recyclingquote, Unfallzahlen, Lärmbelastung, Wasserverbrauch, Flächenversiegelung, Lieferzeiten, Gesundheitsdaten, Bildungsabschlüsse, Mietbelastung, Schadstoffwerte. Andere Wirkungen sind indirekter: Vertrauen, Zugehörigkeit, Würde, demokratische Diskursqualität, Selbstwirksamkeit, kulturelle Lebendigkeit, Zukunftsangst, institutionelle Glaubwürdigkeit.
+
+Indirekte Wirkungen sind nicht unwichtig, nur weil sie schwerer zu messen sind. Eine Wirkungsökonomie darf die Welt nicht auf das reduzieren, was Sensoren, Bilanzen oder Reports leicht erfassen. Sie muss unterschiedliche Messformen zulassen: quantitative Daten, qualitative Bewertung, Experteneinschätzung, Beteiligung, Indizes, Plausibilitätsannahmen, Szenarien, Vergleichswerte und konservative Schätzungen.
+
+Schätzungen sind kein Makel, wenn sie transparent sind. Eine präzise Scheingenauigkeit ist gefährlicher als eine ehrliche Spanne. Wenn Daten fehlen, muss die Lücke markiert werden. Wenn Unsicherheit besteht, muss sie ausgewiesen werden. Wenn ein Wert nur näherungsweise bestimmbar ist, muss er als Näherung erscheinen. Wenn ein Wirkungszusammenhang nicht belastbar genug ist, darf er nicht als gesicherte Wahrheit behandelt werden.
+
+Die Wirkungsökonomie unterscheidet daher zwischen Messwert, Schätzung, Plausibilität, Unsicherheit, Ambivalenz und Offenheit. Ein Messwert ist ein beobachtbarer oder berechenbarer Wert. Eine Schätzung ist eine methodisch begründete Annäherung. Plausibilität ist die nachvollziehbare Erklärung, warum eine Handlung über bestimmte Mechanismen zu einer Wirkung führen kann. Unsicherheit ist der ausgewiesene Bereich dessen, was noch nicht sicher bekannt ist. Ambivalenz bezeichnet das gleichzeitige Vorliegen positiver und negativer Wirkungen. Offenheit markiert ein Feld, das noch nicht belastbar bewertet werden kann.
+
+Unsicherheit darf jedoch nicht zur Ausrede werden. In komplexen Systemen gibt es selten vollständige Gewissheit. Wer vollständige Gewissheit verlangt, bevor gehandelt wird, erzeugt Wirkung durch Verzögerung. Die Wirkungsökonomie braucht daher einen verantwortlichen Umgang mit Unsicherheit: nicht vorschnell behaupten, nicht leichtfertig ignorieren, nicht endlos verschieben.
+
+Messgrenzen müssen in der Architektur sichtbar bleiben. Eine Wirkung kann gemessen, geschätzt, qualitativ bewertet, unsicher, offen oder nicht ausreichend belegt sein. Jede dieser Kategorien hat eine andere Bedeutung. Unbekannte Wirkung ist nicht neutrale Wirkung. Sie ist ein Hinweis auf Prüfbedarf.
+
+Damit entsteht eine methodische Ethik der Messung. Sie verlangt Genauigkeit, wo Genauigkeit möglich ist. Sie verlangt Transparenz, wo Schätzung nötig ist. Sie verlangt Vorsicht, wo Unsicherheit besteht. Sie verlangt Korrektur, wenn neue Daten alte Annahmen widerlegen.
+
+### Quellenanker: Kapitel 32 - Benchmarks, Skalen und Scorecards
+
+*Interne Quelle:* `referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html`
+
+Kapitel 31 hat die WÖk-ID als Ordnungseinheit eingeführt. Sie macht Wirkungsindikatoren adressierbar, prüfbar und versionierbar. Damit ist jedoch noch keine Bewertung entstanden. Ein Messwert allein sagt nicht, ob eine Wirkung gut, schwach, riskant, durchschnittlich, schädlich oder transformativ ist. Ein Wasserverbrauch, eine Emissionsmenge, eine Unfallquote, ein Living-Wage-Anteil, ein Recyclingwert oder eine Transparenzkennzahl erhalten ihre Bedeutung erst durch Vergleich, Kontext und Schwellenwert.
+
+Dieses Kapitel erklärt, wie aus Daten vergleichbare Bewertungen entstehen. Es führt Benchmarks, Wirkungsskalen und Scorecards als methodische Brücke zwischen Rohdaten und Wirkungseinschätzung ein. Scorecards sind keine moralischen Etiketten. Sie sind strukturierte Übersetzungen von Wirkungsdaten in nachvollziehbare Bewertung.
+
+Die verbindliche Grenze bleibt klar: Dieses Kapitel erklärt noch nicht die Reverse Merit Order im Detail, keine Produktsteuer, keine konkrete Steuermechanik und keine rechtliche Anwendung. Es geht um die Bewertungslogik zwischen Daten, Schwellenwerten, Kontext und Wirkungsklassen.
+
+### 32.1 Wirkungsskala von negativ bis transformativ
+
+Eine Wirkungsskala übersetzt Messwerte in Bedeutung. Sie sagt nicht nur, dass ein Wert hoch oder niedrig ist. Sie ordnet ein, ob dieser Wert eine negative, neutrale, positive oder transformative Wirkung anzeigt. Ohne Skala bleiben Daten schwer verständlich. Mit einer schlechten Skala entsteht Scheingenauigkeit. Mit einer guten Skala wird sichtbar, in welchem Wirkungsbereich ein Zustand liegt.
+
+Die Wirkungsökonomie arbeitet mit einer Skala von -3 bis +3. Der genaue Zuschnitt kann je nach Wirkungsfeld, Indikatorfamilie und Kontext variieren. Der Zweck bleibt gleich: Daten sollen nicht nur gesammelt, sondern in eine verständliche Wirkungsordnung überführt werden.
+
+Tabelle 32-1: Wirkungsskala von -3 bis +3
+
+Eine solche Skala ist kein bloßer Übersetzungsmechanismus. Sie macht sichtbar, dass Wirkung nicht nur „vorhanden“ oder „nicht vorhanden“ ist. Zwischen Schaden und Transformation liegen Zwischenstufen. Ein Wert kann noch problematisch sein, aber besser als ein destruktiver Ausgangszustand. Ein anderer Wert kann neutral sein, also keine relevante Verbesserung erzeugen. Wieder ein anderer kann positiv sein, aber noch nicht systemisch transformativ. Transformativ ist eine Wirkung erst dann, wenn sie nicht nur einen Einzelwert verbessert, sondern einen Zukunftspfad verändert, Regeneration ermöglicht, Risiken senkt oder positive Rückkopplungen erzeugt.
+
+Die Skala schützt vor zwei Fehlern. Der erste Fehler wäre Schwarz-Weiß-Bewertung. Dann wird alles entweder gut oder schlecht. Diese Logik verfehlt Übergänge, Lernprozesse und Transformation. Der zweite Fehler wäre Beliebigkeit. Dann wird jeder kleine Fortschritt schon als nachhaltig oder positiv bezeichnet. Diese Logik entwertet echte Transformation.
+
+Eine Wirkungsskala braucht daher klare Schwellen. Sie muss zeigen, wann ein Wert noch schädlich ist, wann er neutral wird, wann er positive Wirkung anzeigt und wann er transformativ wirkt. Diese Schwellen dürfen nicht aus Kommunikation oder Wunschdenken entstehen. Sie müssen aus Daten, wissenschaftlichen Referenzen, regulatorischen Standards, Branchenbenchmarks, Wirkungspfaden und normativen Mindestanforderungen abgeleitet werden.
+
+Wichtig ist: Die Skala bewertet nicht den Menschen, der handelt. Sie bewertet eine Wirkung in einem definierten Wirkungsraum. Diese Trennung ist methodisch notwendig. Wer Wirkung misst, darf nicht moralisch etikettieren. Eine Score-Stufe sagt nicht: Eine Person ist gut oder schlecht. Sie sagt: Ein bestimmter Indikatorwert liegt in einem bestimmten Wirkungsbereich.
+
+### 32.2 Benchmarks nach Branche und Kontext
+
+Benchmarks sind Vergleichsmaßstäbe. Sie beantworten die Frage: Womit wird ein Messwert verglichen? Ohne Benchmark bleibt ein Wert leer. Zehn Tonnen Emissionen können je nach Produkt, Branche, Menge, Standort und Lebenszyklus sehr hoch, moderat oder niedrig sein. Ein Wasserverbrauch kann in einer wasserreichen Region anders zu bewerten sein als in einer Stressregion. Ein Lohnwert kann je nach Lebenshaltungskosten, Arbeitszeit, Tarifbindung und Lieferkettenstufe unterschiedliche Bedeutung haben.
+
+Die Wirkungsökonomie braucht deshalb Branchen- und Kontextbenchmarks. Ein Wert wird nicht abstrakt bewertet, sondern im Verhältnis zu Aktivität, Branche, Region, Systemgrenze und Wirkungsfeld. Die technischen Leitlinien der WÖk nennen sektorspezifische Referenzwerte, Archetypen und Benchmarks als methodische Grundlage, damit Messwerte nicht frei interpretiert werden, sondern in nachvollziehbare Bewertungsrahmen eingehen.
+
+Branchenbenchmarks verhindern falsche Vergleichbarkeit. Eine Schule, ein Stahlwerk, ein Pflegeheim, ein Medienhaus, ein Textilprodukt, ein Wohngebäude, eine Bank und eine digitale Plattform erzeugen unterschiedliche Wirkungen. Sie dürfen nicht mit derselben Indikatorenmischung bewertet werden. Gleichwohl können sie über gemeinsame Wirkungsdimensionen verbunden werden: Mensch, Planet und Demokratie. Vergleichbarkeit entsteht also nicht durch Gleichsetzung, sondern durch geordnete Übersetzung.
+
+Kontextbenchmarks verhindern ebenfalls Verzerrung. Ein niedriger Wasserverbrauch kann noch problematisch sein, wenn er in einem extrem wasserarmen Gebiet entsteht. Ein hoher Energiebedarf kann anders zu bewerten sein, wenn er unvermeidbare Grundversorgung sichert oder aus vermeidbarer Verschwendung stammt. Ein Beschäftigungswert kann positiv erscheinen, aber durch schlechte Arbeitsbedingungen, Gesundheitsrisiken oder fehlende Mitbestimmung relativiert werden. Ein emissionsarmer Prozess kann gesellschaftlich schädlich sein, wenn er auf Zwangsarbeit, Biodiversitätsverlust oder demokratisch problematischer Abhängigkeit beruht.
+
+Benchmarks müssen daher mehrere Ebenen verbinden. Sie brauchen wissenschaftliche Referenzen, regulatorische Vorgaben, Branchenwerte, regionale Bedingungen, Lebenszyklusbezug, Mindeststandards und Transformationspfade. Ein guter Benchmark ist nicht nur Durchschnitt. Durchschnitt kann eine schlechte Realität stabilisieren. Wenn eine ganze Branche schädlich arbeitet, kann der Branchendurchschnitt nicht automatisch als neutral gelten. Der Benchmark muss sich an Wirkung orientieren, nicht nur an vorhandener Praxis.
+
+Damit wird ein wichtiger Unterschied sichtbar: Ein statistischer Durchschnitt beschreibt, was üblich ist. Ein Wirkungsbenchmark beschreibt, was gemessen an Mensch, Planet und Demokratie tragfähig oder transformativ ist. Beide Informationen können nützlich sein. Sie dürfen aber nicht verwechselt werden.
+
+### 32.3 Scorecard-Aufbau
+
+Eine Scorecard bündelt mehrere Indikatoren zu einer strukturierten Wirkungsbewertung. Sie besteht nicht aus zufällig ausgewählten Kennzahlen. Sie ordnet relevante WÖk-IDs, Datenquellen, Benchmarks, Schwellenwerte, Skalenlogik und Kontextinformationen zu einem Wirkungsfeld.
+
+Der Aufbau einer Scorecard beginnt mit der Frage, was bewertet wird. Ein Produkt, eine Dienstleistung, eine Organisation, ein Kapitalfluss, eine Tätigkeit, ein Gebäude, eine Lieferkette oder eine öffentliche Maßnahme haben unterschiedliche Wirkungsprofile. Danach folgt die Auswahl der relevanten Indikatorfamilien. Je nach Wirkungsfeld können Klima, Wasser, Ressourcen, Arbeit, Gesundheit, Sicherheit, Bildung, Teilhabe, Transparenz, Medienqualität, Demokratie, Resilienz oder digitale Verantwortung relevant sein.
+
+Im nächsten Schritt werden Messwerte erfasst. Diese Messwerte stammen aus Datenquellen, die im vorherigen Kapitel eingeführt wurden: Berichte, Audits, Lebenszyklusanalysen, amtliche Daten, Lieferkettendaten, Branchenwerte, wissenschaftliche Quellen, Sensorik oder qualifizierte Schätzungen. Danach werden die Werte gegen Benchmarks gelesen. Erst dieser Vergleich erlaubt die Übersetzung in eine Wirkungsskala.
+
+Eine Scorecard enthält damit mindestens fünf Ebenen. Die erste Ebene ist der Indikator. Die zweite Ebene ist der Messwert. Die dritte Ebene ist der Benchmark. Die vierte Ebene ist die Übersetzung in eine Wirkungsskala. Die fünfte Ebene ist die systemische Einordnung: Welche Wirkung entsteht im Zusammenhang? Eine Scorecard ist deshalb mehr als ein Punkteschema. Sie ist ein geordnetes Bewertungsinstrument, das Daten, Kontext und normativen Maßstab verbindet.
+
+Tabelle 32-2: Aufbau einer Scorecard
+
+Scorecards müssen lesbar und prüfbar sein. Lesbarkeit bedeutet, dass Akteure verstehen, warum ein Wert zu einer bestimmten Bewertung führt. Prüfbarkeit bedeutet, dass Datenquelle, Einheit, Systemgrenze, Zeitraum, Benchmark, Bewertungslogik und Unsicherheit nachvollziehbar sind. Ohne Lesbarkeit entsteht Misstrauen. Ohne Prüfbarkeit entsteht Willkür.
+
+### Quellenanker: Kapitel 34 - T-SROI und systemische Transformationsmessung
+
+*Interne Quelle:* `referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html`
+
+Kapitel 33 hat eine methodische Grenze gesetzt: Eine starke Wirkung in einem Feld darf schwere Schäden in einem anderen Feld nicht unsichtbar machen. Die Reverse Merit Order schützt die Wirkungsbewertung vor Durchschnittstäuschung, Ablasslogik und falsch positiver Gesamtbilanz. Kapitel 32 hat dafür bereits die operative Kennzahl eingeführt: den Netto-Wirkungs-Index, kurz NWI. Er bewertet die Netto-Wirkung eines Bewertungsgegenstands in einem definierten Wirkungsraum.
+
+Kapitel 34 führt nun eine andere Kennzahlenlogik ein: den T-SROI - Transformational Social Return on Investment. Der T-SROI misst nicht noch einmal Netto-Wirkung. Diese Aufgabe liegt beim NWI. Der T-SROI fragt, ob aus einer geprüften Wirkung eine systemische Transformation entsteht. Er bewertet also Transformationswirkung und systemische Hebelwirkung.
+
+Diese Unterscheidung ist zentral. Ein Produkt, Projekt oder Unternehmen kann eine positive Netto-Wirkung haben und dennoch keine Struktur verändern. Es ist dann wirkungsvoll, aber nicht transformativ. Umgekehrt kann eine Investition zunächst nur eine moderate Netto-Wirkung zeigen und dennoch einen wichtigen Transformationspfad öffnen, wenn sie neue Infrastruktur, neue Standards, neue Märkte, neue Routinen oder neue Rückkopplungen ermöglicht.
+
+Der T-SROI ist deshalb kein Ersatz für den NWI. Er baut auf ihm auf. Der NWI beantwortet die Frage: Was bleibt netto übrig? Der T-SROI beantwortet die Frage: Welche systemische Veränderung wird dadurch möglich?
+
+Dieses Kapitel erklärt die Logik des T-SROI. Es behandelt keine konkrete Steuermechanik, keine vollständige Kapitalmarktarchitektur und keine Fondsregulierung. Es legt fest, warum die Wirkungsökonomie neben einer Netto-Wirkungskennzahl eine eigene Transformationskennzahl braucht.
+
+Für das Impact-Controlling entsteht daraus keine einzelne Superkennzahl, sondern eine gestufte Kennzahlenarchitektur. KIIs erfassen relevante Zustandsveränderungen. Scorecards ordnen diese KIIs nach WÖk-IDs, Benchmarks, Datenqualität und Reverse Merit Order. Der NWI verdichtet die operative Netto-Wirkung. Der IOI - Impact-of-Investment - setzt diese geprüfte positive Netto-Wirkung ins Verhältnis zum eingesetzten Kapital. Der T-SROI bewertet anschließend, ob daraus systemische Transformationswirkung entsteht.
+
+Damit lassen sich drei Entscheidungsfragen sauber trennen: Ist die Wirkung netto tragfähig? Das beantwortet der NWI. Wie viel positive Netto-Wirkung entsteht pro investiertem Euro? Das beantwortet der IOI. Verändert die Investition darüber hinaus Strukturen, Standards, Risiken oder Pfade? Das beantwortet der T-SROI. Diese Trennung schützt vor Impact-Washing, weil finanzielle Effizienz, operative Wirkung und Transformation nicht ineinander verwischt werden.
+
+### 34.1 Abgrenzung zu ROI, SROI, NWI, IOI und T-SROI
+
+Der klassische ROI, Return on Investment, beantwortet eine enge Frage: Welcher finanzielle Rückfluss entsteht im Verhältnis zur eingesetzten Investition? Diese Frage ist wichtig. Ohne finanzielle Tragfähigkeit können viele Projekte nicht dauerhaft bestehen. Der ROI zeigt, ob Kapital betriebswirtschaftlich sinnvoll eingesetzt wurde. Er sagt aber nicht, ob die damit erzeugte Wirkung Mensch, Planet oder Demokratie stärkt oder schwächt.
+
+Ein Projekt kann einen hohen ROI haben und zugleich negative Wirkung erzeugen. Es kann Ressourcen verbrauchen, Menschen belasten, Lieferkettenrisiken erhöhen, demokratische Räume schwächen oder Folgekosten in die Zukunft verschieben. Der ROI sieht diese Wirkungen nur, wenn sie finanziell zurückkehren. Solange sie ausgelagert bleiben, erscheinen sie in der Kennzahl nicht.
+
+Der klassische SROI, Social Return on Investment, erweitert die Perspektive. Er versucht, gesellschaftliche, soziale oder ökologische Wirkungen monetär auszudrücken und ins Verhältnis zu einer Investition zu setzen. Damit wird eine wichtige Korrektur vorgenommen: Nutzen außerhalb der reinen Finanzrechnung wird sichtbar. SROI-Ansätze haben geholfen, soziale Programme, Prävention, Integration, Bildung oder Gesundheitswirkungen nicht nur als Kosten, sondern als gesellschaftlichen Wert zu verstehen.
+
+Doch auch der klassische SROI bleibt begrenzt. Er ist häufig projektzentriert. Er kann positive Wirkungen addieren, ohne negative Wirkungen ausreichend zu berücksichtigen. Er kann kurzfristige Effekte stärker zeigen als langfristige Strukturveränderungen. Er kann Nutzen monetarisieren, ohne die Frage zu beantworten, ob eine Wirkung Pfade, Märkte, Institutionen, Lieferketten, Verhalten oder Resilienz verändert.
+
+Der NWI schließt diese Lücke auf der Ebene der Netto-Wirkung. Er führt positive und negative Wirkungen, Mindestbedingungen, Datenqualität, Unsicherheit, Zeitwirkung, Systemkontext und Nichtkompensation zu einer operativen Netto-Wirkungskennzahl zusammen. Er zeigt, ob ein Bewertungsgegenstand im definierten Wirkungsraum tragfähig wirkt oder nicht.
+
+Der T-SROI setzt erst danach an. Er fragt nicht: Wie ist die Netto-Wirkung? Er fragt: Verändert diese Netto-Wirkung die Struktur künftiger Entscheidungen? Ein hoher NWI ist keine automatische Transformation. Ein niedriger oder negativer NWI kann aber eine positive T-SROI-Bewertung blockieren, weil Transformation nicht auf schweren, verdeckten Schäden aufbauen darf.
+
+Der IOI liegt zwischen NWI und T-SROI. Er fragt nicht nach finanzieller Rendite und nicht nach Transformation, sondern nach Wirkungseffizienz des eingesetzten Kapitals: Welche geprüfte positive Netto-Wirkung entsteht im Verhältnis zur Investitionssumme? Ein positiver IOI setzt voraus, dass die vorgelagerte Scorecard- und NWI-Prüfung tragfähig ist und keine rote Linie verletzt wird.
+
+Damit entsteht eine klare Fünferlogik: ROI misst finanzielle Rendite. SROI monetarisiert sozialen oder ökologischen Zusatznutzen. NWI bewertet operative Netto-Wirkung. IOI misst positive Netto-Wirkung im Verhältnis zur Investition. T-SROI bewertet systemische Transformationsleistung.
+
+Tabelle 34-1: ROI, SROI, NWI, IOI und T-SROI im Vergleich
+
+### 34.2 Die Arbeitslogik von NWI, IOI und T-SROI
+
+T-SROI macht Transformationswirkung investitionsfähig. Er soll nicht nur anzeigen, ob eine Maßnahme unmittelbar nützt, sondern ob sie Systeme in Richtung Mensch, Planet und Demokratie verändert. Deshalb darf seine Formel die Netto-Wirkung nicht erneut als eigentlichen Gegenstand vereinnahmen. Die Netto-Wirkung ist die Prüfbasis. Die Transformationswirkung ist der Gegenstand des T-SROI.
+
+Formelkasten 34-1: Grundlogik des Impact-Controllings
+
+NWI = operative Netto-Wirkung
+
+IOI = positive Netto-Wirkung / Investitionssumme
+
+T-SROI = Transformationswirkung × systemische Hebelwirkung × Zeitwirkung × Resilienzfaktor × Datenqualität
+
+Der NWI wirkt dabei als Eingangsschwelle. Eine positive T-SROI-Bewertung setzt voraus, dass die Netto-Wirkung mindestens tragfähig ist und keine roten Linien verletzt werden. Der T-SROI darf negative Netto-Wirkung nicht durch große Transformationsversprechen überdecken. Transformation ohne tragfähige Netto-Wirkung wäre keine Wirkungsökonomie, sondern Wirkungssimulation.
+
+Formelkasten 34-2: Arbeitsformel als Bewertungslogik
+
+### Quellenanker: Kapitel 106 - Die Fehlbarkeit der Wirkungsökonomie
+
+*Interne Quelle:* `referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/index.html`
+
+Eine Wirkungsökonomie, die ihre eigene Fehlbarkeit nicht anerkennt, würde ihren Kern verraten. Sie würde Wirkung zur neuen Gewissheitsformel machen, obwohl Wirkung in komplexen Systemen nie vollständig vorhersagbar, nie vollständig messbar und nie endgültig bewertbar ist.
+
+Dieses Kapitel schließt den Kritikteil deshalb nicht mit einer Verteidigung, sondern mit einer Begrenzung. Die Wirkungsökonomie darf nicht als fertige Maschine auftreten. Sie darf nicht behaupten, für jede Handlung, jedes Produkt, jede politische Maßnahme, jedes Unternehmen, jede Technologie und jeden Kapitalfluss von Beginn an die vollständige Wirkung bestimmen zu können. Sie darf nicht so tun, als ließe sich Gesellschaft exakt berechnen, wenn nur genug Daten vorhanden sind.
+
+Das wäre Scheingenauigkeit.
+
+Die Stärke der Wirkungsökonomie liegt nicht darin, unfehlbar zu sein. Ihre Stärke liegt darin, Fehler sichtbar, prüfbar und korrigierbar zu machen. Sie ersetzt nicht Unsicherheit durch Gewissheit. Sie ersetzt unsichtbare Unsicherheit durch markierte Unsicherheit. Sie ersetzt starre Steuerung durch lernende Rückkopplung. Sie ersetzt moralische Selbstgewissheit durch Wirkungsprüfung.
+
+Eine fehlbare Wirkungsökonomie ist glaubwürdig. Eine unfehlbare wäre gefährlich.
+
+### 106.1 Warum Wirkung nie vollständig sicher ist
+
+Wirkung entsteht in nichttrivialen Systemen. Menschen, Märkte, Unternehmen, Staaten, Medien, Natur, Kapitalflüsse, Technologien und Demokratien reagieren nicht wie einfache Maschinen. Sie haben Geschichte, Eigendynamik, Erwartungen, Routinen, Machtverhältnisse, Emotionen, kulturelle Prägungen, technische Infrastrukturen und Rückkopplungen.
+
+Darum kann dieselbe Maßnahme in unterschiedlichen Wirkungsräumen unterschiedlich wirken. Ein CO2-Preis kann Emissionen senken, aber soziale Abwehr erzeugen, wenn Alternativen fehlen. Eine energetische Sanierung kann Klima schützen, aber Verdrängung auslösen, wenn Mietwirkung nicht begrenzt wird. Ein Bildungsprogramm kann Kompetenzen stärken, aber bestimmte Gruppen verfehlen, wenn Zugangshürden bestehen. Eine Plattformregel kann Desinformation reduzieren, aber neue Moderationsmacht erzeugen. Ein Wirkungsindikator kann Transparenz schaffen, aber auch Manipulationsanreize erzeugen.
+
+Diese Unsicherheit ist kein Argument gegen Wirkungsmessung. Sie ist ein Argument gegen Überheblichkeit.
+
+Die Wirkungsökonomie darf nicht so tun, als könne sie die Welt vollständig abbilden. Sie muss aber auch nicht vor Komplexität kapitulieren. Zwischen Allwissenheit und Blindheit liegt der Raum der lernenden Steuerung.
+
+Was messbar ist, wird gemessen. Was geschätzt werden muss, wird transparent geschätzt. Was unsicher bleibt, wird als unsicher markiert. Was sich als falsch erweist, wird korrigiert.
+
+Das ist die Grundhaltung einer fehlbaren Wirkungsökonomie.
+
+### 106.2 Messgrenzen sind kein Scheitern
+
+Nicht alles, was wichtig ist, lässt sich gleich gut messen. Emissionen, Energieverbrauch, Wasserentnahmen oder Materialflüsse sind häufig besser quantifizierbar als Vertrauen, Würde, Diskursqualität, psychische Stabilität, Zugehörigkeit oder demokratische Resilienz. Lieferkettenwirkungen sind anders messbar als Medienwirkungen. Produktwirkungen sind anders messbar als Wirkungen politischer Sprache. Kurzfristige Wirkungen sind leichter sichtbar als langfristige Rückkopplungen.
+
+Daraus folgt nicht, dass weicher messbare Wirkungen ignoriert werden dürfen. Gerade dort, wo Messung schwierig ist, können Schäden besonders lange unsichtbar bleiben. Demokratischer Vertrauensverlust, soziale Entfremdung, psychische Überlastung, kulturelle Resonanzverluste oder institutionelle Erosion werden oft erst dann ernst genommen, wenn sie bereits Folgekosten erzeugen.
+
+Aber schwierige Messung verlangt methodische Demut.
+
+Die Wirkungsökonomie muss unterschiedliche Evidenzformen zulassen: harte Messdaten, geprüfte Berichte, wissenschaftliche Studien, qualitative Beobachtungen, Risikomodelle, Indikatorfamilien, Fallanalysen, Experteneinschätzungen, Beteiligungsverfahren und Frühwarnsignale. Diese Formen dürfen nicht gleichgesetzt werden. Ihre Datenqualität muss sichtbar sein.
+
+Ein Wert mit hoher Datenqualität darf anders wirken als eine plausible Schätzung. Eine Schätzung darf nicht als Gewissheit auftreten. Eine qualitative Diagnose darf nicht als exakte Zahl verkleidet werden. Ein Score darf nicht stärker scheinen als seine Datengrundlage.
+
+Messgrenzen sind kein Scheitern. Sie werden erst gefährlich, wenn sie verdeckt werden.
+
+### 106.3 Unsicherheit muss Sprache bekommen
+
+Eine lernende Wirkungsökonomie braucht eine Sprache für Unsicherheit. Ohne diese Sprache entstehen zwei falsche Reaktionen.
+
+Die erste Reaktion ist Scheingenauigkeit. Sie tut so, als sei alles berechenbar. Dann entstehen präzise Scores, Rankings oder Formeln, die mehr Gewissheit ausstrahlen, als ihre Daten tragen. Das erzeugt Vertrauen auf der Oberfläche und Misstrauen, sobald Fehler sichtbar werden.
+
+Die zweite Reaktion ist Relativismus. Sie sagt: Weil nicht alles sicher messbar ist, kann man gar nichts bewerten. Dann bleiben negative Wirkungen unsichtbar, obwohl genug Wissen vorhanden wäre, um besser zu handeln.
+
+Beide Reaktionen sind falsch.
+
+Der IPCC hat für seine Berichte eine eigene Logik der Unsicherheitskommunikation entwickelt, um Vertrauen, Evidenz, Wahrscheinlichkeit und Expert:innenurteile konsistenter darzustellen. Die Wirkungsökonomie braucht eine vergleichbare methodische Haltung: Unsicherheit wird nicht verschwiegen, sondern geordnet kommuniziert.
+
+### 7.8 Konsequenzen für die WÖk-Architektur
+
+Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
+
+- Datenqualitätsklassen und Unsicherheitsampel in Scorecard-Dokumente einheitlich übernehmen.
+- Nichtkompensation nicht nur als Bewertungsregel, sondern als Kommunikationsschutz erklären.
+- Fehlbarkeit der WÖk in Prüfungsfällen explizit abfragen: Korrektur ist Stärke, nicht Schwäche.
+
+### 7.9 Kurzfazit
+
+Unsicherheit, Ambivalenz und transparente Bewertung ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
+
+
+## 8. Prüfungsrelevanz
 
 Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
 
@@ -231,7 +577,7 @@ Für den Fragenpool sind besonders geeignet:
 - Missverständnisse: Reichweite, Aktivität, Reporting oder Absicht als Wirkung auszugeben.
 - Transfer: positive Netto-Wirkung unter Nichtkompensation und, wo passend, Reverse Merit Order begründen.
 
-## 8. Quellen
+## 9. Quellen
 
 ### Interne Quellen
 
@@ -248,7 +594,7 @@ Für den Fragenpool sind besonders geeignet:
 - GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
 
-## 9. Rückfluss in den WÖk-Korpus
+## 10. Rückfluss in den WÖk-Korpus
 
 - **Glossar/Begriffe:** Im Tiefensprint prüfen, welche Begriffe aus **Unsicherheit, Ambivalenz und transparente Bewertung** eigene Glossarseiten oder präzisere Verweise brauchen.
 - **Website/Erklärseiten:** Prüfen, ob eine kurze öffentliche Erklärseite oder ein Baustein für die Bibliothek fehlt.
