@@ -795,7 +795,7 @@ function buildDeepening(lecture) {
     : "";
   return `## 7. Tiefenskript-Erweiterung Sprint ${sprint}
 
-**Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
+**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -894,10 +894,12 @@ function replaceOrInsert(markdown, lecture) {
 function updateIndex(slugs) {
   const indexPath = join(MASTER_DIR, "index.json");
   const index = JSON.parse(readFileSync(indexPath, "utf8"));
+  const sprintBySlug = new Map(lectures.map((lecture) => [lecture.slug, lecture.sprint ?? 2]));
   for (const item of index.scripts) {
     if (slugs.includes(item.slug)) {
+      const sprint = sprintBySlug.get(item.slug) ?? 2;
       item.status = "tiefensprint-arbeitsfassung";
-      item.notes = "Tiefenskript-Sprint 2: substanzielle Arbeitsfassung mit Website-Referenzmaterial; Claude-CI/CD-Finalisierung offen.";
+      item.notes = `Tiefenskript-Sprint ${sprint}: substanzielle Arbeitsfassung mit Website-Referenzmaterial; Claude-CI/CD-Finalisierung offen.`;
     }
   }
   writeFileSync(indexPath, JSON.stringify(index, null, 2) + "\n");
