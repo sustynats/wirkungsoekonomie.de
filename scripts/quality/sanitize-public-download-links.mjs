@@ -5,6 +5,7 @@ const root = process.cwd();
 const ignoreDirs = new Set([".git", "node_modules", ".codex-backup", "outputs"]);
 const htmlFiles = [];
 const allowedSpreadsheetPattern = /assets\/downloads\/woek-register\/WOeK_Master_Items_Public_Research_Register_v2\.1\.(xlsx|xls)(?:[#?][^"']*)?$/i;
+const allowedStudyScriptRawPattern = /^docs\/studienskripte\/word-rohfassungen\/[a-z0-9-]+\.docx$/i;
 const publicDownloadDirPattern = /^(assets\/downloads|downloads|public\/downloads)\//i;
 const forbiddenDownloadPattern = /(?:href|src)=["'](?!(?:[^"']*assets\/downloads\/woek-register\/WOeK_Master_Items_Public_Research_Register_v2\.1\.(?:xlsx|xls)(?:[#?][^"']*)?["']))[^"']*\.(docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?["']/i;
 const forbiddenAnchorPattern = /<a\b([^>]*?)\bhref=(["'])([^"']*\.(?:docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?)\2([^>]*)>([\s\S]*?)<\/a>/gi;
@@ -21,6 +22,7 @@ function walk(dir) {
     const rel = path.relative(root, full);
     if (/\.(docx|dotx|pages|key|numbers|zip|wav)$/i.test(entry.name)) {
       if (allowedSpreadsheetPattern.test(rel)) continue;
+      if (allowedStudyScriptRawPattern.test(rel)) continue;
       forbiddenFiles.push(path.relative(root, full));
       continue;
     }
