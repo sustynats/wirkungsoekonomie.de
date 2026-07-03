@@ -6,7 +6,7 @@
 **Titel:** Gesellschaftliche Resonanzfaktoren  
 **Voraussetzungen:** V01–V19, insbesondere V18 „Zeit, Generationen und unsichtbare Betroffene" und V19 „Wirkstoff, Wirkmechanismus und Wirkungspotenzial"  
 **Lesezeit:** ca. 90–120 Minuten  
-**Status:** Tiefenskript-Sprint 7 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
+**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus, Journal/Blog, Akademie-Quelltexte und externe Literatur
 
 ## Lernziele

@@ -240,3 +240,12 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [x] Bibliotheksindex aus `content/studienskripte/index.json` neu gebaut.
 - [x] Verifikation: `scripts/studienskripte/verify-v1.mjs` prueft Status, Mindestumfang, Pflichtabschnitte, App-Spiegel-Gleichheit, Word-Dateien, Fragepools und Assessment-Blueprints.
 - Hinweis: `studienskript-v1` bedeutet fachlich finale Codex-Fassung. `published` setzt erst Claude nach CI/CD-, Reader-, PDF- und Lektoratsfreigabe.
+
+### Automationslauf 2026-07-03 · Schlusspruefung
+
+- [x] V20-Metadatenstatus im Markdown-Master und App-Spiegel auf die einheitliche V1-Finalformulierung korrigiert.
+- [x] V20-Word-Rohfassung aus dem korrigierten Master neu exportiert.
+- [x] Verifikation erneut gruen: 56/56 Skripte, Mindestumfang 14.500 Woerter, App-Spiegel-Gleichheit, Word-Dateien, Fragepools und 5 Assessment-Blueprints.
+- [x] JSON-Stichprobe: 162 JSON-Dateien aus Content-, Public-, Assets- und App-Content-Bestand parsebar.
+- [x] App-Typecheck: `npm run typecheck` in `woek-akademie-app` gruen.
+- [x] DOCX-Stichprobe: `woek-g-v20.docx` erfolgreich zu 47 PNG-Seiten gerendert; Anfang, Mitte und Schluss visuell unauffaellig.
