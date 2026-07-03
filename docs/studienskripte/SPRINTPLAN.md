@@ -155,7 +155,7 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 1. [x] Grundstudium V01-V19 zu Tiefenskript-Arbeitsfassungen ausbauen.
 2. [x] Wirkungsmanagement V1-V10 zu Tiefenskript-Arbeitsfassungen ausbauen.
 3. [x] Impact-Controlling V1-V10 zu Tiefenskript-Arbeitsfassungen ausbauen.
-4. [ ] Pruefungsfragen-Pools je Vorlesung geschuetzt erweitern.
+4. [x] Pruefungsfragen-Pools je Vorlesung geschuetzt erweitern.
 
 ## Sprint 6 · Grundstudium V01-V09
 
@@ -220,4 +220,13 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - Word-Rohfassungen: `docs/studienskripte/word-rohfassungen/`
 - App-Spiegel: `woek-akademie-app/content/lehrgaenge/`
 - Umfang: ca. 474k Woerter im Masterbestand.
-- Weiter offen: Claude-CI/PDF-Finalisierung und geschuetzte Pruefungs-Pools mit Antwortlogik.
+- Geschuetzte Pruefungs-Pools: `woek-akademie-app/content/pruefungen/question-pools/`
+- Assessment-Blueprints: `woek-akademie-app/content/pruefungen/assessments/`
+- Weiter offen: Claude-CI/PDF-Finalisierung und kuratierte Schlussfreigabe.
+
+## Sprint 10 · Geschuetzte Pruefungs-Pools
+
+- [x] 56 slug-basierte Fragepools fuer alle V1-Vorlesungen erzeugt.
+- [x] Je Vorlesung 8 Fragen mit `CorrectAnswer`, `ScoringRule`, Feedback, Distraktorenlogik, Kompetenzfeld, Schwierigkeitsgrad, Punkten und Tags.
+- [x] Blueprints fuer Zwischenpruefungen ZP1-ZP3 sowie WM-Final und WC-Final angelegt/aktualisiert.
+- Hinweis: Die Antwortlogik bleibt in der geschuetzten Akademie-Lane und wird nicht in die oeffentlichen Studienskripte gespiegelt.
