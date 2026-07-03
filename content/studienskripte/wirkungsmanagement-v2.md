@@ -5,7 +5,7 @@
 **Vorlesungscode:** WM-V2  
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade  
-**Status:** Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden  
+**Status:** Tiefenskript-Sprint 8 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v2-wirkungsempfaenger-wirkpfade.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v2.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v2.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
@@ -219,7 +219,397 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Resonanzraum | Raum für Wirkungspotenziale (Sprache/Medien) | `begriffe/resonanzraum` |
 | Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
 
-## 7. Prüfungsrelevanz
+## 7. Tiefenskript-Erweiterung Sprint 8
+
+**Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
+
+### 7.1 Leitthese
+
+Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade übersetzt die Wirkungsökonomie in Führungs-, Strategie- und Organisationspraxis. Wirkungsmanagement heißt: Wirkung nicht nur berichten, sondern Ziele, Rollen, Entscheidungen, Kultur und Rückkopplung danach ausrichten.
+
+Die Vorlesung bleibt dabei an die Grundregel gebunden: Wirkung ist neutral und relational. Erst die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ entscheidet, ob eine Veränderung positiv, negativ oder ambivalent einzuordnen ist. Wenn eine Zielgröße gemeint ist, sprechen wir von positiver Netto-Wirkung.
+
+### 7.2 Didaktische Einordnung im Studiengang
+
+WM-V2 liegt an der Schwelle zwischen begrifflicher Grundlegung und Bewertungsarchitektur. Die Studierenden sollen nicht nur Begriffe wiedergeben, sondern an Fällen erkennen, welche Aussage schon Wirkung behauptet, welche nur Wirkungspotenzial beschreibt und wo ein Wirkungsrisiko offenliegt. Der Tiefensinn dieser Vorlesung liegt deshalb nicht in zusätzlicher Komplexität, sondern in besserer Unterscheidungsfähigkeit.
+
+Für die spätere Praxis ist entscheidend, dass jede Analyse vier Ebenen getrennt hält:
+
+1. **Beschreibung:** Was geschieht tatsächlich oder soll geschehen?
+2. **Kausalannahme:** Über welchen Mechanismus könnte daraus eine Zustandsveränderung entstehen?
+3. **Bewertung:** Welche Richtung hat diese Veränderung im Referenzrahmen?
+4. **Rückkopplung:** Welche Entscheidung, Regel, Ressource oder Kommunikation wird dadurch verändert?
+
+Wo diese Ebenen vermischt werden, entstehen typische WÖk-Fehler: Aktivität wird als Wirkung ausgegeben, Reichweite ersetzt Zustandsveränderung, gute Absicht verdeckt Nebenwirkungen oder Reporting wird mit Lernen verwechselt.
+
+### 7.3 Analysemodell
+
+| Analyseobjekt | Woran es wirkt | Typischer Fehler | Saubere WÖk-Lesart |
+|---|---|---|---|
+| Managementebene | WÖk-Frage | Typischer Fehler | Praxisanforderung |
+| Strategie | Welche positive Netto-Wirkung wird angestrebt? | Purpose-Satz ohne Steuerung | Ziel, Wirkpfad und Entscheidung koppeln |
+| Organisation | Wer trägt welche Wirkung? | Verantwortung diffus lassen | Rollen, Routinen und Eskalationswege definieren |
+| Risiko | Welche Nebenwirkungen und Zielkonflikte entstehen? | nur positive Wirkung erzählen | Wirkungsrisiken eigenständig analysieren |
+| Lernen | Wie verändert Bewertung die Praxis? | Reporting als Abschluss | Rückkopplung in Budget, Prozesse und Führung |
+
+### 7.4 Modellformel
+
+Die folgende Formel ist ein didaktisches Denkmodell, kein amtlicher Bewertungsstandard:
+
+$
+Managementwirkung = Zielklarheit + Verantwortlichkeit + Daten + Entscheidung + Rueckkopplung
+$
+
+Die Formel ist ein Arbeitsmodell: Management wirkt, wenn Ziel, Verantwortung, Daten, Entscheidung und Rückkopplung zusammenkommen.
+
+Die Formel soll gerade keine Scheingenauigkeit erzeugen. Sie zwingt dazu, die Faktoren offen zu legen, die eine Aussage tragen. In einem echten Bewertungsprozess müssten Datenquelle, Aktualität, Datenqualitätsklasse, Unsicherheitsgrad und Rückkopplungsregel ergänzt werden.
+
+### 7.5 Fallfenster
+
+**Fall 1.** Ein Unternehmen kann Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade als Workshop-Thema behandeln und danach unverändert weiterarbeiten. Wirkungsmanagement beginnt erst, wenn Entscheidungen, Verantwortlichkeiten und Budgets tatsächlich angepasst werden.
+
+**Fall 2.** Ein Team erkennt eine negative Nebenwirkung seines Produkts. Die WÖk-Frage lautet nicht, wer schuld ist, sondern welcher Wirkpfad korrigiert werden muss und welche Trägerstruktur Lernen ermöglicht.
+
+### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
+
+Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+
+1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
+2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
+3. Benenne mindestens ein Wirkungspotenzial und ein Wirkungsrisiko.
+4. Zeige, welche Quelle oder Datenart nötig wäre, um von Potenzial zu belastbarer Wirkungsaussage zu kommen.
+5. Prüfe, ob Nichtkompensation oder Reverse Merit Order einschlägig sein könnten.
+6. Formuliere eine saubere Wirkungsaussage in einem Satz: Was wissen wir, was nehmen wir an, was bleibt offen?
+
+### 7.7 Auswertung aus der lebenden Website-Referenz
+
+### Quellenanker: Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume
+
+*Interne Quelle:* `referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html`
+
+### 13.1 Warum Wirkung Zuordnung braucht
+
+Wirkung ist Zustandsveränderung. Damit diese Zustandsveränderung analysiert, bewertet und gesteuert werden kann, braucht sie Zuordnung. Es muss klar sein, von wem oder was die Wirkung ausgeht, wen oder was sie betrifft und in welchem Raum sie entsteht [I-13-1].
+
+Ohne Zuordnung bleibt Wirkung Behauptung. Ein Unternehmen kann sagen, ein Produkt sei nachhaltig. Ein Staat kann sagen, ein Gesetz sei gerecht. Eine Plattform kann sagen, ihre Technik sei neutral. Eine Bank kann sagen, sie finanziere Zukunft. Solche Aussagen reichen nicht. Die Wirkungsökonomie fragt genauer: Wer oder was ist Wirkungsträger? Wer oder was ist Wirkungsempfänger? In welchem Wirkungsraum entsteht die Veränderung? Welche Reichweite hat sie? Welche Rückwirkung entsteht?
+
+Diese Fragen sind die Grundlage fairer Bewertung. Sie verhindern, dass sichtbare Akteure überzeichnet und unsichtbare Betroffene ausgeblendet werden. Sie verhindern auch, dass Verantwortung dort verschwindet, wo Wirkung über Lieferketten, Datenräume, Kapitalflüsse, Preise, Regeln oder öffentliche Kommunikation vermittelt wird.
+
+### 13.2 Wirkungsträger
+
+Wirkungsträger sind Akteure, Objekte, Regeln, Technologien, Strukturen oder Muster, von denen Wirkung ausgeht. Ein Wirkungsträger kann ein Mensch sein, ein Unternehmen, ein Staat, eine Kommune, eine Schule, ein Krankenhaus, eine Pflegeeinrichtung, ein Medium, eine Plattform, ein Algorithmus, ein Produkt, ein Gebäude, ein Kapitalfluss, ein Gesetz, ein Preis, ein Förderprogramm, ein Narrativ oder eine kulturelle Praxis [I-13-1].
+
+Diese breite Definition ist notwendig, weil Wirkung nicht nur aus bewussten Entscheidungen entsteht. Auch Dinge und Strukturen verändern Möglichkeitsräume. Ein Produkt wirkt durch Material, Herstellung, Nutzung, Reparierbarkeit, Entsorgung, Preis und Lieferkette. Ein Gebäude wirkt durch Energiebedarf, Gesundheit, Sicherheit, Lage, Barrierefreiheit und soziale Nutzung. Ein Algorithmus wirkt durch Sortierung, Reichweite, Sichtbarkeit und Verstärkung. Ein Preis wirkt durch Anreiz. Ein Gesetz wirkt durch Rechte, Pflichten, Sanktionen, Verfahren und Erwartungen.
+
+Ein Wirkungsträger muss daher nicht menschlich sein. Aber menschliche und institutionelle Verantwortung bleibt relevant. Ein Algorithmus ist Wirkungsträger, aber er wurde entworfen, trainiert, eingesetzt, finanziert, überwacht oder nicht überwacht. Ein Preis ist Wirkungsträger, aber er entsteht aus Marktstruktur, Steuerrecht, Subvention, Lieferkette und Wettbewerb. Ein Produkt ist Wirkungsträger, aber es wurde designt, hergestellt, beschafft, beworben und reguliert.
+
+### 13.3 Direkte und indirekte Wirkungsträger
+
+Wirkungsträger können direkt oder indirekt wirken. Ein direkter Wirkungsträger löst eine Zustandsveränderung unmittelbar aus. Eine Pflegekraft versorgt eine Person. Ein Medikament verändert einen körperlichen Zustand. Ein Unternehmen produziert ein Produkt. Eine Behörde erlässt einen Bescheid. Eine Redaktion veröffentlicht einen Beitrag.
+
+Ein indirekter Wirkungsträger verändert Bedingungen, unter denen spätere Wirkungen wahrscheinlicher werden. Ein Kapitalgeber finanziert eine Anlage. Eine Plattform gestaltet Reichweitenlogik. Ein Gesetz setzt Preis- oder Haftungssignale. Eine Norm definiert einen technischen Standard. Eine Schule bildet Fähigkeiten aus, die später in Gesundheit, Einkommen, Teilhabe und Demokratie wirksam werden. Eine Steuerklasse verändert Produktentscheidungen, ohne selbst das Produkt herzustellen [I-13-2].
+
+Diese Unterscheidung ist für die Wirkungsökonomie zentral. Wer nur direkte Wirkungsträger betrachtet, übersieht Macht in Strukturen. Kapital, Recht, Daten, Beschaffung, Standards und Plattformlogiken wirken häufig indirekt. Ihre Wirkung ist nicht weniger real, nur weil sie vermittelt ist.
+
+### 13.4 Wirkungsempfänger
+
+Wirkungsempfänger sind jene, deren Zustand verändert wird. Das können einzelne Menschen sein, Gruppen, Haushalte, Beschäftigte, Kund:innen, Patient:innen, Schüler:innen, Pflegebedürftige, Mieter:innen, Regionen, Ökosysteme, Böden, Wasser, Klima, Biodiversität, Institutionen, Demokratien, Märkte, Infrastrukturen oder künftige Generationen [I-13-1][I-13-3].
+
+Wirkungsempfänger sind nicht immer diejenigen, die am Markt sichtbar auftreten. Ein Produkt kann Käufer:innen nützen und Arbeiter:innen in der Lieferkette belasten. Ein Gebäude kann Eigentümer:innen Rendite bringen und Mieter:innen durch schlechte Dämmung, Schimmel oder hohe Nebenkosten schädigen. Ein Kapitalfluss kann ein Unternehmen stärken und gleichzeitig ökologische oder soziale Risiken erhöhen. Eine Plattform kann Nutzer:innen verbinden und zugleich öffentliche Diskursräume beschädigen.
+
+Die Wirkungsökonomie erweitert deshalb die Empfängerseite. Sie fragt nicht nur, wer bezahlt, wer besitzt oder wer entscheidet. Sie fragt, wer betroffen ist. Diese Betroffenheit kann direkt, indirekt, zeitverzögert oder strukturell sein.
+
+### 13.5 Unsichtbare Empfänger
+
+Viele Wirkungsempfänger sind im alten System unsichtbar. Die Lieferkette macht Arbeiter:innen, Wasser, Böden, Chemikalien, Energie und Abfall unsichtbar. Der Finanzmarkt macht künftige Risiken unsichtbar, solange sie nicht eingepreist sind. Der Wohnungsmarkt macht Gesundheit, Nachbarschaft, Teilhabe und soziale Stabilität unsichtbar, solange nur Rendite und Marktwert zählen. Die digitale Öffentlichkeit macht psychische Belastung, Vertrauen, Wahrheitsfähigkeit und demokratische Stabilität unsichtbar, solange Reichweite als Erfolg gilt [I-13-4][I-13-5].
+
+Auch künftige Generationen sind Wirkungsempfänger. Sie sind nicht am Vertrag beteiligt, nicht im Supermarkt anwesend, nicht in der Bilanz sichtbar und nicht im heutigen Wahlkampf stimmberechtigt. Trotzdem verändern heutige Entscheidungen ihre Zustände: Klima, Schulden, Infrastruktur, Biodiversität, Bildungsqualität, demokratische Stabilität und technologische Abhängigkeit. Die Wirkungsökonomie muss diese Empfänger sichtbar machen, ohne ihre Interessen beliebig zu behaupten. Sie braucht Daten, Szenarien, Vorsorgeprinzip, nicht-kompensatorische Grenzen und institutionelle Prüfung [I-13-6].
+
+### 13.6 Wirkungsräume
+
+Der Wirkungsraum ist der Zusammenhang, in dem Wirkung entsteht. Er ist nicht bloßer Hintergrund. Er bestimmt, wie ein Impuls aufgenommen, blockiert, verstärkt, umgedeutet oder in Handlung übersetzt wird [I-13-1][I-13-7].
+
+Ein Wirkungsraum kann physisch sein: ein Gebäude, eine Straße, ein Quartier, ein Krankenhaus, ein Wald, ein Fluss, ein Produktionsstandort. Er kann sozial sein: eine Familie, eine Klasse, ein Betrieb, eine Nachbarschaft, ein Verein, ein Pflegeteam. Er kann digital sein: eine Plattform, ein Datenraum, ein Suchsystem, ein soziales Netzwerk, ein algorithmischer Entscheidungsraum. Er kann ökologisch sein: ein Boden, ein Wassereinzugsgebiet, ein Klima, ein Ökosystem. Er kann institutionell sein: eine Verwaltung, ein Gericht, ein Markt, eine Schule, ein Steuerrecht. Er kann kulturell sein: ein Diskurs, ein Narrativ, ein Symbolraum, eine Erinnerungskultur. Er kann zeitlich sein: eine Entscheidung wirkt heute anders als in zehn Jahren.
+
+Wirkungsräume sind nicht passiv. Ein stabiler Raum verarbeitet einen Impuls anders als ein verletzter Raum. Ein vertrauensvoller Raum kann Kritik aufnehmen. Ein polarisierter Raum kann denselben Satz als Angriff lesen. Ein Markt mit Alternativen kann einen CO2-Preis in Innovation übersetzen. Ein Markt ohne Alternativen kann denselben Preis als Belastung weitergeben. Eine gute Schule kann ein Bildungsprogramm aufnehmen. Eine überlastete Schule kann es nur formal verwalten.
+
+### 13.7 Resonanzräume und Anschlussfähigkeit
+
+Ein besonderer Wirkungsraum ist der Resonanzraum. Er beschreibt, ob ein Impuls aufgenommen, verstanden, geteilt, abgelehnt, verstärkt oder in Handlung übersetzt wird. Resonanzräume entstehen in Kommunikation, Bildung, Medien, Politik, Kultur, Religion, Nachbarschaft, Organisationen, Märkten und digitalen Plattformen [I-13-7].
+
+Anschlussfähigkeit ist die Bedingung dafür, dass Wirkungspotenzial in tatsächliche Wirkung übergehen kann. Eine Information kann sachlich richtig sein und trotzdem wirkungslos bleiben, wenn Vertrauen fehlt. Ein Produktpass kann gute Daten liefern und trotzdem wenig verändern, wenn Preis, Zugang oder Gewohnheit stärker sind. Eine Fördermaßnahme kann sinnvoll sein und trotzdem nicht wirken, wenn Antragsverfahren, Sprache oder Zeitdruck den Zugang blockieren. Eine demokratische Botschaft kann formal richtig sein und trotzdem keinen Raum finden, wenn Desinformation, Angst oder Zugehörigkeitskonflikte den Resonanzraum prägen [I-13-8].
+
+Wirkungsräume erklären daher, warum dieselbe Maßnahme in verschiedenen Kontexten unterschiedliche Wirkung erzeugt. Diese Einsicht macht Wirkung nicht beliebig. Sie macht sie genauer.
+
+### 13.8 Mehrfachrollen: Wer wirkt, kann zugleich betroffen sein
+
+Akteure können zugleich Wirkungsträger und Wirkungsempfänger sein. Ein Unternehmen wirkt durch Produkte, Lieferketten, Arbeitsbedingungen und Kapitalentscheidungen. Zugleich ist es Empfänger von Regulierung, Preisen, Kundenentscheidungen, Fachkräftemangel, Klimarisiken, Energiepreisen und Kapitalanforderungen. Eine Kommune wirkt durch Planung, Infrastruktur, Beschaffung und Verwaltung. Zugleich ist sie Empfänger von Bundesrecht, Landespolitik, Haushaltslage, Klimafolgen und sozialer Belastung. Bürger:innen wirken durch Kauf, Arbeit, Sprache, Wahl, Engagement, Pflege und Teilhabe. Zugleich sind sie Empfänger von Preisen, Wohnungsmarkt, Medienlogik, Arbeitsbedingungen, Gesundheitssystem und Klima [I-13-3].
+
+Diese Mehrfachrolle verhindert einfache Schuldzuweisungen. Die Wirkungsökonomie bewertet nicht Personen als gut oder schlecht. Sie betrachtet Rollen, Räume, Möglichkeiten, Einfluss und Rückwirkungen. Ein Mensch kann in einem Wirkungsraum nur begrenzt handeln und in einem anderen hohe Wirkungsmacht haben. Ein kleines Unternehmen kann unter Lieferkettenvorgaben leiden und zugleich eigene Beschaffung steuern. Ein Staat kann Regeln setzen und zugleich von globalen Kapital-, Klima- oder Migrationsdynamiken betroffen sein.
+
+Wirkungsanalyse muss diese Mehrfachrollen abbilden. Sonst verschiebt sie Verantwortung an die falsche Stelle.
+
+### 13.9 Reichweite, Intensität und Dauer
+
+Wirkung lässt sich nicht nur nach Ursprung, Empfänger und Raum beschreiben. Sie braucht auch Reichweite, Intensität und Dauer. Reichweite fragt, wie viele Menschen, Systeme, Räume oder Zeiträume betroffen sind. Intensität fragt, wie stark ein Zustand verändert wird. Dauer fragt, ob die Veränderung kurzfristig, mittelfristig, langfristig oder strukturell bleibt [I-13-9].
+
+Ein Produkt mit geringer Stückzahl kann hohe Intensität haben, wenn es giftig, gefährlich oder besonders entlastend ist. Ein digitales System kann hohe Reichweite haben, obwohl jede einzelne Interaktion klein erscheint. Eine Sanierung kann langfristige Wirkung haben, obwohl die erste Veränderung schlicht als Energieeinsparung sichtbar wird. Ein politisches Narrativ kann zunächst schwer messbar sein, aber durch Wiederholung, Reichweite und Anschlussfähigkeit systemische Wirkung entfalten.
+
+Die Wirkungsökonomie verbindet daher qualitative Zuordnung mit quantitativer Bewertung. WÖk-IDs, Scorecards, Datenqualitätsklassen, Benchmarks und Produktpässe helfen, Reichweite, Intensität, Dauer und Datenlage zu ordnen [I-13-10]. Sie ersetzen die Wirkungsanalyse nicht. Sie machen sie prüfbar.
+
+### 13.10 Zurechnung ohne Scheingenauigkeit
+
+Wirkung lässt sich nicht immer vollständig zurechnen. In komplexen Systemen wirken mehrere Auslöser zusammen. Ein Gesundheitsergebnis kann durch Medizin, Wohnraum, Einkommen, Bildung, Ernährung, Arbeit, Umwelt und Beziehung beeinflusst werden. Eine politische Entwicklung kann durch Medien, Plattformen, ökonomische Unsicherheit, Parteien, Kultur, internationale Ereignisse und persönliche Erfahrung geprägt sein. Ein Produktpreis kann durch Energie, Löhne, Steuern, Lieferketten, Margen, Subventionen und Nachfrage entstehen [I-13-6][E-13-1].
+
+### Quellenanker: Kapitel 42 - Unternehmen als Wirkungssysteme
+
+*Interne Quelle:* `referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html`
+
+Ein Unternehmen ist dann nicht mehr nur eine Einheit zur Gewinnerzielung. Es ist ein organisierter Wirkungsraum, der Zustände verändert.
+
+Unternehmen erzeugen Produkte, Dienstleistungen, Arbeitsbedingungen, Lieferketten, Daten, Kapitalflüsse, Innovationen, Routinen, Deutungen, Kultur und gesellschaftliche Rückwirkungen. Sie beeinflussen Klima, Wasser, Ressourcen, Gesundheit, Sicherheit, Einkommen, Kompetenzen, Regionen, Familien, demokratische Öffentlichkeit und künftige Entwicklungspfade. Sie stehen nicht außerhalb der Gesellschaft. Sie sind Teil ihrer Wirkungsarchitektur.
+
+Das bedeutet nicht, Gewinn, Markt oder Wettbewerb abzuschaffen. Es bedeutet, sie an den richtigen Ort zu stellen. Gewinn bleibt notwendig, aber er ist nicht der letzte Maßstab. Er zeigt, dass ein Unternehmen wirtschaftlich tragfähig sein kann. Er beweist nicht, dass seine Wirkung positiv ist. Ein Unternehmen kann profitabel sein und zugleich Mensch, Planet oder Demokratie schwächen. Es kann auch wirtschaftlich erfolgreich sein, weil es reale Probleme löst, Resilienz stärkt und Zukunft ermöglicht.
+
+Der Leitgedanke dieses Kapitels lautet: Ein Unternehmen ist nicht nur eine Einheit zur Gewinnerzielung. Es ist ein organisierter Wirkungsraum, der Zustände verändert.
+
+### 42.1 Unternehmenszweck
+
+Der Zweck eines Unternehmens kann nicht länger nur aus Kapitalvermehrung abgeleitet werden. Ein Unternehmen organisiert Menschen, Ressourcen, Wissen, Kapital, Technologie und Beziehungen, um etwas in der Welt hervorzubringen. Dieses Hervorbringen verändert Zustände. Genau dort beginnt der wirkungsökonomische Unternehmenszweck.
+
+Der klassische Unternehmenszweck wurde lange eng gelesen: Kapital einsetzen, Produkte oder Dienstleistungen verkaufen, Gewinne erzielen, Eigentümerinteressen erfüllen. Diese Sicht hat betriebswirtschaftliche Klarheit. Sie erklärt, warum Unternehmen investieren, kalkulieren, Risiken eingehen und Effizienz suchen. Sie greift aber zu kurz, wenn sie die tatsächliche Wirkung des Unternehmens ausblendet.
+
+Ein Unternehmen existiert nicht nur in seiner Bilanz. Es existiert in Wirkungsräumen: in seinen Lieferketten, Produktionsstandorten, Arbeitsbeziehungen, Produkten, Datenstrukturen, Kundenerfahrungen, Innovationspfaden und öffentlichen Signalen. Deshalb muss Unternehmenszweck mehr bedeuten als wirtschaftliche Selbsterhaltung. Er muss beantworten, welche positive Netto-Wirkung das Unternehmen ermöglicht und welche negativen Wirkungen es begrenzt.
+
+Das Systemmodell der Wirkungsökonomie beschreibt Wirtschaft als Wirkungssystem: Wertschöpfung soll nicht aus Ressourcenentzug, sondern aus Wirkung entstehen; Unternehmen sollen positive Netto-Wirkung erzeugen, Mensch, Planet und Demokratie stärken, Ressourcen regenerieren und gesellschaftliche Transformation unterstützen. Diese Formulierung benennt die Richtung: Unternehmen werden nicht nur danach gelesen, was sie verkaufen, sondern danach, welche Zustände sie verändern.
+
+Damit grenzt sich die Wirkungsökonomie auch von bloßem Purpose-Marketing ab. Ein Unternehmenszweck ist kein Slogan, keine Kampagne und kein Leitbild auf der Website. Wirkung ist nicht die Behauptung eines guten Zwecks. Wirkung ist die tatsächliche Veränderung von Zuständen. Ein Unternehmen kann „Purpose“ kommunizieren und dennoch geringe oder negative Wirkung erzeugen. Umgekehrt kann ein Unternehmen ohne große Sprache hohe Wirkung leisten, wenn seine Produkte, Prozesse, Arbeitsbedingungen und Lieferketten reale Zustände verbessern.
+
+Ein wirkungsökonomischer Unternehmenszweck muss daher überprüfbar sein. Er muss in Strategie, Governance, Investitionen, Produktentwicklung, Beschaffung, Personal, Daten, Risiko und Entscheidungen wieder auftauchen. Er darf nicht neben dem Geschäftsmodell stehen. Er muss das Geschäftsmodell ordnen.
+
+Externe Unternehmensdebatten haben diese Verschiebung vorbereitet. Die Stakeholder-Theorie machte sichtbar, dass Unternehmen nicht nur gegenüber Anteilseigner:innen, sondern gegenüber vielen Anspruchsgruppen in Beziehung stehen. Neuere Arbeiten zum Unternehmenszweck betonen, dass Unternehmen Probleme profitabel lösen sollen, statt Profit aus der Erzeugung von Problemen zu ziehen. Die Wirkungsökonomie geht darüber hinaus, indem sie diese Einsicht nicht nur als Governance-Frage, sondern als Wirkungsarchitektur versteht: Zweck wird erst dann real, wenn Wirkung gemessen, bewertet und rückgekoppelt wird.
+
+### 42.2 Gewinn als Ergebnis, nicht Ziel
+
+Gewinn ist nicht der Feind der Wirkungsökonomie. Ein Unternehmen, das dauerhaft Verluste erzeugt, kann seine Wirkung kaum stabil erhalten. Es kann keine Löhne zahlen, keine Innovation finanzieren, keine Lieferanten sichern, keine Infrastruktur pflegen und keine Risiken auffangen. Wirtschaftliche Tragfähigkeit ist notwendig.
+
+Aber Gewinn ist Ergebnis, nicht Ziel.
+
+Wenn Gewinn zum obersten Ziel wird, ordnet sich das Unternehmen der Kapitalvermehrung unter. Dann werden Produkte, Arbeit, Lieferketten, Kund:innen, Natur, Daten und Öffentlichkeit nach ihrer Fähigkeit gelesen, Gewinn zu erzeugen. Wirkungen, die nicht im Preis erscheinen, werden leichter ausgelagert. Negative Wirkung kann rational erscheinen, wenn sie Kosten senkt oder Erlöse erhöht. Positive Wirkung kann benachteiligt werden, wenn sie kurzfristig teurer ist.
+
+Die Wirkungsökonomie verschiebt diese Logik. Ein Unternehmen soll nicht zufällig positive Wirkung erzeugen, während Gewinn das Ziel bleibt. Es soll Gewinn durch gute Wirkung ermöglichen. Der Gewinn zeigt dann nicht, dass das Unternehmen gut ist. Er zeigt nur, dass seine Lösung wirtschaftlich besteht. Ob sie wirkungsökonomisch tragfähig ist, entscheidet sich an Mensch, Planet und Demokratie.
+
+Diese Unterscheidung ist wichtig, weil sonst zwei Fehler entstehen. Der erste Fehler ist Gewinnfeindlichkeit. Dann wird wirtschaftliche Tragfähigkeit unterschätzt. Der zweite Fehler ist Gewinnvergötzung. Dann wird jedes profitable Geschäftsmodell als wertvoll behandelt, selbst wenn es negative Zustände erzeugt. Die Wirkungsökonomie vermeidet beide Fehler. Sie ordnet Gewinn in eine größere Wirkungslogik ein.
+
+Ein Gewinn kann aus Wirkleistung entstehen. Dann löst ein Unternehmen reale Probleme, verbessert Zustände, begrenzt Risiken, schafft gute Arbeit, entwickelt nützliche Technologien, stärkt Regeneration oder erhöht Lebensqualität. Ein Gewinn kann aber auch aus Scheinleistung, Blindleistung oder Verlustleistung entstehen. Dann verkauft ein Unternehmen Produkte, die Folgekosten verschieben, Aufmerksamkeit ausbeuten, Naturkapital verbrauchen, Beschäftigte überlasten oder demokratische Räume beschädigen.
+
+In der alten Ordnung sehen beide Gewinne in der Bilanz ähnlich aus. In der Wirkungsökonomie werden sie verschieden gelesen.
+
+Das bedeutet nicht, dass Unternehmen moralisch sortiert werden. Es bedeutet, dass wirtschaftliche Erfolge nicht ohne Wirkungsprüfung verstanden werden dürfen. Gewinn bleibt ein wichtiges Signal. Aber er ist ein Tragfähigkeitssignal, kein Wahrheitsbeweis. Ein Unternehmen ist nicht erfolgreich, weil es Gewinn macht. Es ist wirkungsökonomisch erfolgreich, wenn es Gewinn auf eine Weise erzielt, die positive Netto-Wirkung erzeugt und negative Wirkung begrenzt.
+
+### 42.3 Wirkung in Strategie und Governance
+
+Wenn Unternehmen Wirkungssysteme sind, darf Wirkung nicht in einer Nachhaltigkeitsabteilung enden. Sie muss in Strategie und Governance eingehen. Strategie entscheidet, wohin ein Unternehmen seine Fähigkeiten, Investitionen, Produkte, Märkte, Daten, Talente und Kapitalströme lenkt. Governance entscheidet, wer Verantwortung übernimmt, welche Informationen im Entscheidungsraum erscheinen, wie Risiken behandelt werden und welche Ziele Priorität erhalten.
+
+Wirkung in Strategie bedeutet, dass ein Unternehmen seine Zukunft nicht nur nach Umsatz, Marge, Marktanteil oder Wachstum plant. Es fragt auch, welche Zustände durch seine Strategie verändert werden. Welche Probleme löst das Unternehmen? Welche Risiken erzeugt es? Welche Ressourcen verbraucht es? Welche Abhängigkeiten schafft es? Welche Fähigkeiten baut es auf? Welche Wirkungsräume stärkt oder schwächt es? Welche Wirkungspotenziale entstehen durch neue Produkte, Daten, Technologien oder Märkte?
+
+Wirkung in Governance bedeutet, dass diese Fragen in die Entscheidungsarchitektur eingehen. Wirkung darf nicht als Bericht nach der Entscheidung erscheinen. Sie muss vor der Entscheidung in den Raum. Vorstand, Geschäftsführung, Aufsichtsgremien, Risikofunktionen, Controlling, Einkauf, Produktentwicklung, Personal, Recht, Kommunikation und Nachhaltigkeit müssen mit einer gemeinsamen Wirkungslogik arbeiten. Sonst entstehen Silos: Eine Abteilung optimiert Kosten, eine andere berichtet Nachhaltigkeit, eine dritte verwaltet Risiko, eine vierte kommuniziert Purpose.
+
+Die Wirkungsökonomie verlangt Verbindung. Das Begriffssystem der Wirkungsökonomie liefert dafür die Sprache: Wirkung, Wirkungspotenzial, Wirkungsträger, Wirkungsempfänger, Wirkungsraum, systemischer Wert, normativer Wert, Wirkleistung, Netto-Wirkung, Wirkungsrisiko, Wirkungsresilienz, Wirkungsdaten, Wirkungskapital und Wirkungskompetenz. Diese Begriffe sind nicht für das Buch allein geschrieben. Sie müssen in Organisationen handlungsfähig werden.
+
+Wirkung in Governance heißt deshalb: Entscheidungen werden nicht nur nach finanzieller Zielerreichung geprüft, sondern nach Wirkungszusammenhang. Welche direkte Wirkung entsteht? Welche indirekte Wirkung? Welche verzögerte Wirkung? Welche systemische Wirkung? Welche Nebenwirkung? Welche Gegenwirkung? Welche Datenqualität liegt vor? Welche Unsicherheit bleibt? Welche Rückkopplung ist vorgesehen?
+
+Hier verbindet sich Teil VII mit der Systemlogik der Wirkungsökonomie. Unternehmen brauchen ein eigenes Wirkungsrad: Handlung, Wirkung oder Wirkungspotenzial, Zustandsveränderung, systemischer Wert, normativer Wert, Wirkungslenkung, veränderte Anreize, neue Handlung, Rückkopplung und Lernen. Wenn diese Logik nicht in Unternehmensentscheidungen zurückkehrt, bleibt Wirkung externes Reporting. Wenn sie zurückkehrt, wird das Unternehmen lernfähig.
+
+Damit ist auch klar, was dieses Kapitel noch nicht leistet. Es entfaltet noch keine Führungslehre. Das folgt im nächsten Kapitel. Es baut noch kein Wirkungscontrolling auf. Das folgt später in diesem Teil. Es erklärt noch keine Lieferkettensteuerung im Detail. Auch das folgt später. Es legt nur die grundlegende Unternehmenslogik fest: Wirkung muss in Strategie und Governance erscheinen, sonst bleibt sie Kommunikation.
+
+### 42.4 Verantwortung über die Bilanz hinaus
+
+Die Bilanz zeigt Vermögen, Schulden, Eigenkapital, Erträge, Aufwendungen und finanzielle Lage. Sie ist unverzichtbar. Aber sie zeigt nicht vollständig, welche Zustände ein Unternehmen verändert. Viele Wirkungen erscheinen nicht in der Bilanz, obwohl sie real sind: Emissionen, Wasserstress, Arbeitsbelastung, Vertrauen, Gesundheitsfolgen, Lieferkettenrisiken, Datenmissbrauch, demokratische Rückwirkungen, Resilienzverluste, soziale Folgekosten, Naturkapitalverbrauch und künftige Haftungsrisiken.
+
+Verantwortung über die Bilanz hinaus bedeutet nicht, dass Unternehmen für alles verantwortlich sind. Es bedeutet, dass die Reichweite unternehmerischer Wirkung größer ist als die Reichweite der klassischen Rechnungslegung. Unternehmen wirken direkt, wenn sie produzieren, beschäftigen, investieren, kommunizieren und verkaufen. Sie wirken indirekt über Lieferketten, Kapital, Kundennutzung, technische Standards, Datenräume, Vertrieb, Lobbyarbeit und Branchenlogiken. Sie wirken verzögert, wenn Produkte, Infrastrukturen, Gewohnheiten oder Risiken erst später Folgen zeigen. Sie wirken systemisch, wenn sie Märkte, Normen, Technologien, Erwartungen und politische Möglichkeitsräume verändern.
+
+Diese Wirkung kann nicht vollständig in eine klassische Bilanz gepresst werden. Aber sie darf auch nicht außerhalb der Verantwortung bleiben.
+
+Die externe Debatte zur nichtfinanziellen Berichterstattung, zur doppelten Wesentlichkeit, zu Stakeholdern und zu Unternehmensverantwortung hat bereits gezeigt, dass finanzielle Berichte allein nicht mehr ausreichen. Die Wirkungsökonomie nimmt diesen Befund auf und entwickelt ihn weiter: Es genügt nicht, Wirkung zusätzlich offenzulegen. Wirkung muss in Strategie, Governance und Entscheidung zurückkehren.
+
+Verantwortung über die Bilanz hinaus bedeutet auch, Wirkung nicht an Unternehmensgrenzen enden zu lassen. Ein Unternehmen kann nicht nur auf die eigene Fabrik schauen, wenn ein großer Teil seiner Wirkung in Vorleistungen liegt. Es kann nicht nur den Verkauf erfassen, wenn die Nutzung des Produkts zentrale Wirkungen erzeugt. Es kann nicht nur den direkten Arbeitsplatz betrachten, wenn sein Geschäftsmodell ganze Arbeitsmärkte, Regionen oder Kommunikationsräume verändert.
+
+Das heißt nicht, jede Folge vollständig einem Unternehmen zuzurechnen. Die systemischen Teile haben gezeigt, dass Wirkung in nichttrivialen Systemen entsteht. Verantwortung braucht deshalb Differenzierung: Wissen, Einfluss, Rolle, Macht, Reichweite, Zumutbarkeit, Datenlage und Nähe zur Wirkung. Ein Unternehmen mit hoher Wirkungskraft, hoher Marktmacht, tiefen Lieferketten, großen Datenbeständen oder starkem öffentlichen Einfluss hat andere Verantwortung als ein kleines Unternehmen mit begrenzter Reichweite.
+
+Verantwortung über die Bilanz hinaus heißt daher: Unternehmen müssen die Wirkungen in den Räumen prüfen, die sie real gestalten können. Sie müssen nicht die Welt allein retten. Sie müssen aber ihre eigenen Wirkungsräume ernst nehmen.
+
+### Quellenanker: Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung
+
+*Interne Quelle:* `referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html`
+
+Kapitel 45 hat gezeigt, dass Wirkung in Unternehmen an Organisation, Rollen, Kultur und Lernfähigkeit gebunden ist. Dieses Kapitel richtet den Blick auf die interne Wertschöpfung und auf Lieferketten. Denn ein Unternehmen wirkt nicht nur durch das, was es im eigenen Werk, Büro oder Geschäftsmodell sichtbar tut. Es wirkt durch das, was es einkauft, ermöglicht, verlangt, duldet und weitergibt.
+
+Lieferketten sind keine vorgelagerten Nebenzonen. Sie sind Wirkungsräume. In ihnen entstehen Rohstoffwirkungen, Arbeitsbedingungen, Wasserverbrauch, Emissionen, Energieabhängigkeiten, Qualitätsrisiken, Menschenrechtsrisiken, Datenlücken, politische Abhängigkeiten und Resilienzprobleme. Wer Lieferketten ausschließlich als Kosten- und Verfügbarkeitsfrage behandelt, unterschätzt einen zentralen Hebel unternehmerischer Wirkung [I-K46-1; I-K46-2].
+
+Dieses Kapitel bleibt auf der Ebene der Unternehmenslogik. Es entwickelt keine Produktsteuerarchitektur, keine globale Handelsordnung und keine detaillierte Regulierungsdogmatik. Es beschreibt, wie Unternehmen Beschaffung, Lieferantenbewertung, Supply-Chain-Resilienz und interne Datenflüsse so organisieren können, dass Wirkung nicht an der Unternehmensgrenze endet.
+
+Der Leitgedanke lautet: Ein Unternehmen wirkt nicht nur durch das, was es selbst tut. Es wirkt durch das, was es einkauft, ermöglicht, verlangt, duldet und weitergibt.
+
+### 46.1 Beschaffung als Wirkungshebel
+
+Beschaffung gehört zu den wirksamsten Steuerungsstellen eines Unternehmens. Einkaufsentscheidungen bestimmen, welche Rohstoffe genutzt werden, welche Produktionsweisen wirtschaftlich bestehen können, welche Lieferanten wachsen, welche Arbeitsbedingungen stabilisiert werden und welche ökologischen Belastungen entlang der Wertschöpfungskette entstehen.
+
+In vielen Unternehmen wird Einkauf primär über Preis, Qualität, Lieferfähigkeit und Vertragsbedingungen gesteuert. Diese Kriterien bleiben notwendig. Ein Unternehmen muss wirtschaftlich einkaufen können. Wirkung verschwindet jedoch aus dem Entscheidungsraum, wenn Beschaffung ausschließlich auf kurzfristige Kostenreduktion reduziert wird.
+
+Die internen Lieferkettenarbeiten der Wirkungsökonomie zeigen, dass erhebliche ökologische und soziale Wirkungen nicht am eigenen Standort entstehen, sondern in Vorstufen, Rohstoffketten, Zulieferbetrieben, Transportstrukturen und ausgelagerten Produktionsschritten. Unternehmen können deshalb lokal effizient wirken und gleichzeitig systemische Schäden entlang ihrer Vorleistungen verstärken.
+
+Beschaffung wird damit zu einer Form unternehmerischer Wirkungslenkung. Einkaufsentscheidungen beeinflussen Wasserverbrauch, Emissionen, Arbeitsbedingungen, Biodiversität, Energieabhängigkeiten, Resilienz und regionale Stabilität. Sie beeinflussen außerdem, welche Standards sich in Märkten durchsetzen.
+
+Wirkungsorientierte Beschaffung bedeutet nicht, jede problematische Lieferbeziehung sofort zu beenden. Eine solche Logik würde viele Probleme lediglich verlagern. Lieferantenentwicklung kann wirksamer sein als kurzfristiger Austausch. Unternehmen können Wirkung verbessern, indem sie bessere Datenstandards verlangen, langfristige Verträge anbieten, technische Unterstützung ermöglichen oder realistische Übergänge organisieren [E-K46-1; E-K46-2].
+
+Dadurch verändert sich die Rolle des Einkaufs. Einkauf bewertet nicht nur Preise, sondern Wirkungsbedingungen. Lieferanten werden nicht allein nach Kosten beurteilt, sondern auch nach Menschenrechten, Klima, Ressourcenverbrauch, Datenqualität, Resilienz und Entwicklungsfähigkeit.
+
+Ein Einkaufssystem, das ausschließlich niedrigste Preise belohnt, erzeugt strukturell andere Ergebnisse als ein Einkaufssystem, das auch Wirkungsqualität berücksichtigt. Die Zielsysteme des Einkaufs müssen deshalb erweitert werden. Preis, Qualität und Verfügbarkeit bleiben relevant, werden aber um Wirkung ergänzt.
+
+Beschaffung wird damit zu einem praktischen Anwendungsfeld der Wirkungslenkung aus den methodischen Teilen dieses Buches. Lieferanten mit belastbaren Wirkungsdaten, stabileren Standards und höherer Resilienz erhalten bessere Anschlussfähigkeit. Negative Wirkung wird schwieriger auslagerbar.
+
+### 46.2 Lieferantenbewertung
+
+Lieferantenbewertung verbindet Beschaffung mit Wirkungsmessung. Sie übersetzt Lieferanteninformationen in Entscheidungsfähigkeit.
+
+Klassische Lieferantenbewertungen konzentrieren sich häufig auf Preis, Qualität, Liefertreue und Vertragsstabilität. Eine wirkungsorientierte Bewertung erweitert diese Perspektive um zusätzliche Wirkungsfelder: Menschenrechte, Arbeitsbedingungen, Gesundheit, Sicherheit, Klima, Wasser, Ressourcenverbrauch, Biodiversität, Energie, Datenintegrität, Korruptionsrisiken, politische Abhängigkeiten und Resilienz.
+
+Nicht jeder Lieferant ist in jedem Wirkungsfeld gleich relevant. Ein Rohstofflieferant erzeugt andere Wirkungen als ein Softwaredienstleister, ein Logistikpartner oder ein Reinigungsunternehmen. Wirkungsbewertung muss deshalb kontextbezogen bleiben.
+
+Die Verbindung zu den methodischen Teilen des Buches ist unmittelbar. WÖk-IDs machen Indikatoren adressierbar. Scorecards strukturieren Bewertung. Datenräume und digitale Produktpässe verbinden Informationen über Lieferstufen hinweg. T-SROI kann ergänzend genutzt werden, wenn größere Transformationsprojekte oder systemische Wirkungen bewertet werden sollen [I-K46-3; I-K46-4].
+
+Lieferantenbewertung darf jedoch nicht zu einer reinen Dokumentationsbürokratie werden. Lange Fragebögen ersetzen keine Wirkung. Kleine Lieferanten verfügen häufig nicht über dieselben Berichtskapazitäten wie große Konzerne. Eine belastbare Lieferantenbewertung braucht daher risikobasierte Tiefe, Datenqualität und Entwicklungsperspektiven.
+
+Risikobasierte Tiefe bedeutet: Hohe Wirkungs- oder Risikofelder werden intensiver geprüft. Rohstoffe aus Wasserstressregionen, Lieferanten in Konfliktregionen oder sensible Technologieanbieter benötigen andere Prüfintensitäten als risikoarme Standardleistungen.
+
+Lieferantenentwicklung ist ein zweiter zentraler Bestandteil. Unternehmen können ihre eigene Wirkung verbessern, indem sie Lieferanten beim Aufbau von Datenqualität, Arbeitsstandards, Ressourceneffizienz und Resilienz unterstützen. Lieferanten dürfen nicht ausschließlich als austauschbare Kostenposition erscheinen.
+
+Lieferantenbewertung muss daher zwischen unterschiedlichen Situationen unterscheiden:
+
+Lieferanten mit positiver oder klar verbesserbarer Wirkung
+
+Lieferanten mit ambivalenter Wirkung und notwendigem Entwicklungsplan
+
+Lieferanten mit schweren Mindeststandardverletzungen oder roten Linien
+
+Diese Differenzierung verhindert sowohl naive Loyalität als auch reflexhaften Ausschluss.
+
+Menschenrechte bilden dabei eine nicht verhandelbare Grenze. Die UN-Leitprinzipien für Wirtschaft und Menschenrechte sowie die OECD-Leitsätze zur Sorgfaltspflicht verpflichten Unternehmen zur Identifikation, Vermeidung und Minderung menschenrechtlicher Risiken entlang ihrer Wertschöpfungsketten [E-K46-1; E-K46-2]. Die Wirkungsökonomie integriert diese Prinzipien in ihre eigene Wirkungslogik von Mensch, Planet und Demokratie.
+
+### 46.3 Supply-Chain-Resilienz
+
+Lieferkettenwirkung ist nicht nur Nachhaltigkeitsfrage. Sie ist Resilienzfrage.
+
+Eine Lieferkette kann kurzfristig effizient und gleichzeitig hochgradig verletzlich sein. Wasserstress, Energieabhängigkeiten, politische Konflikte, Rohstoffkonzentration, Arbeitsrechtsverletzungen, Cyberrisiken oder Datenlücken können Lieferfähigkeit, Kostenstruktur, Reputation und Geschäftsmodellstabilität erheblich beeinflussen [Kap. 23; I-K46-5].
+
+Supply-Chain-Resilienz beschreibt deshalb mehr als Notfallplanung oder Lagerhaltung. Gemeint ist die Fähigkeit einer Wertschöpfungskette, Störungen zu begrenzen, Alternativen zu aktivieren, kritische Funktionen aufrechtzuerhalten und aus Rückkopplung zu lernen.
+
+Resilienz entsteht nicht dadurch, dass Risiken an schwächere Glieder der Kette ausgelagert werden. Eine Lieferkette bleibt verletzlich, wenn ihre Stabilität nur auf Kosten anderer Akteure gesichert wird.
+
+Hier entsteht ein typischer Wahrnehmungskonflikt. Frühzeitige Lieferantenentwicklung, Datenaufbau, faire Vertragslogiken oder regionale Alternativen wirken im Alltag weniger sichtbar als Krisenreaktionen nach Lieferkettenbrüchen. Prävention bleibt häufig unsichtbar, gerade weil sie funktioniert.
+
+Wirkungsorientierte Lieferkettensteuerung muss diese Verzerrung korrigieren. Sie bewertet nicht nur die Geschwindigkeit der Krisenreaktion, sondern auch die Fähigkeit, Störungen frühzeitig zu vermeiden oder abzumildern.
+
+Die vermiedene Lieferunterbrechung, der früh erkannte Wasserstress, die stabile Ersatzquelle oder die rechtzeitig verbesserte Datenqualität sind ebenfalls Wirkleistung.
+
+Frühes Handeln erweitert außerdem die Zahl der Handlungsoptionen. Unternehmen, die früh alternative Bezugsquellen, bessere Datenstandards oder resiliente Lieferantenbeziehungen aufbauen, verfügen im Krisenfall über größere Entscheidungsspielräume. Unternehmen, die erst unter Schock reagieren, handeln unter höherem Zeitdruck, höheren Preisen und geringerer Auswahl.
+
+Supply-Chain-Resilienz verlangt deshalb die Verbindung verschiedener Perspektiven: Einkauf, Nachhaltigkeit, Recht, Risikomanagement, Produktentwicklung, IT, Controlling und Management müssen dieselben kritischen Wirkungsräume erkennen können.
+
+### Quellenanker: Kapitel 92 - Handel, Lieferketten und globale Wirkung
+
+*Interne Quelle:* `referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/index.html`
+
+Kapitel 91 hat Europa als möglichen Wirkungsraum beschrieben: als Raum, in dem Markt, Recht, Daten, Demokratie und Standards zusammengeführt werden können. Kapitel 92 weitet diese Logik auf internationalen Handel und globale Lieferketten aus. Es geht nicht um eine vollständige Theorie des Welthandels und nicht um eine technische Ausarbeitung des Welthandelsrechts. Es geht um die Frage, wie Wirkung sichtbar bleibt, wenn Waren, Rohstoffe, Dienstleistungen, Daten, Kapital und Risiken über Grenzen hinweg verschoben werden.
+
+Handel ist nicht nur Warenaustausch. Handel ist Wirkungsverlagerung.
+
+Ein Produkt kann in einem Land konsumiert werden, während seine ökologische, soziale, gesundheitliche, arbeitsrechtliche oder demokratische Wirkung in einem anderen Land entsteht. Die Käuferin sieht den Preis. Das Unternehmen sieht die Kosten. Der Zoll sieht die Ware. Der Kapitalmarkt sieht Marge und Risiko. Aber Wasserstress, Rohstoffabbau, Arbeitsbedingungen, Entwaldung, Zwangsarbeit, Biodiversitätsverlust, Korruption, politische Abhängigkeit oder digitale Überwachung können weit vor der Grenze liegen.
+
+Die alte Handelslogik fragte: Wo ist es billiger? Wo sind Regeln schwächer? Wo ist Arbeit günstiger? Wo sind Zölle niedriger? Wo ist die Lieferkette effizienter?
+
+Die Wirkungsökonomie fragt: Welche Wirkung entsteht entlang der Kette? Welche Schäden werden verschoben? Welche Abhängigkeiten entstehen? Welche Daten sind prüfbar? Welche Menschen tragen die Kosten? Welche Ökosysteme werden belastet? Welche Wertschöpfung entsteht lokal? Welche Rechte werden geschützt? Welche Resilienz wird aufgebaut?
+
+Globaler Handel wird wirkungsökonomisch nicht danach beurteilt, ob Waren möglichst billig fließen, sondern danach, welche Wirkung entlang der gesamten Kette erzeugt, verschoben oder verhindert wird.
+
+### 92.1 Wirkungsbasierter Handel
+
+Wirkungsbasierter Handel bedeutet nicht, Handel abzuschaffen. Er bedeutet, Handel an Wirklichkeit rückzubinden.
+
+Handel kann Wohlstand schaffen. Er kann Arbeit ermöglichen, Märkte öffnen, Innovation verbreiten, Versorgung sichern, Wissen austauschen, Spezialisierung ermöglichen, Regionen verbinden und Teilhabe erweitern. Viele Länder, Unternehmen und Menschen leben davon, dass Güter, Dienstleistungen, Rohstoffe, Technologien und Kapital über Grenzen hinweg fließen. Eine Wirkungsökonomie darf globale Lieferketten deshalb nicht pauschal romantisieren und nicht pauschal verurteilen.
+
+Aber Handel kann auch Schäden verschieben. Er kann billige Produkte ermöglichen, weil Wasser in anderen Regionen verbraucht wird, weil Löhne nicht existenzsichernd sind, weil Arbeitsschutz schwach ist, weil Emissionen außerhalb des importierenden Landes entstehen, weil Biodiversität in Herkunftsregionen zerstört wird, weil Rohstoffe unter Gewalt, Korruption oder autoritärer Kontrolle gewonnen werden, oder weil demokratische und arbeitsrechtliche Standards entlang der Kette nicht gelten.
+
+Die alte Handelslogik behandelte solche Folgen zu häufig als „extern“. Wirkungsökonomisch sind sie nicht extern. Sie sind nur verlagert.
+
+Ein T-Shirt ist nicht erst im Laden ein Produkt. Es ist Baumwolle, Wasser, Chemie, Energie, Arbeit, Transport, Färbung, Verpackung, Lohn, Arbeitsschutz, Gesundheit, Entsorgung und Modezyklus. Ein Smartphone ist nicht erst im Geschäft ein Gerät. Es ist Rohstoffabbau, seltene Erden, Kobalt, Lithium, Elektronikfertigung, Energie, Software, Datenrechte, Reparierbarkeit und Elektroschrott. Ein Lebensmittel ist nicht erst beim Verzehr Wirkung. Es ist Saatgut, Boden, Wasser, Pestizide, Tierhaltung, Futter, Arbeit, Kühlung, Verpackung, Transport und Food Waste. Die Arbeitsfassungen der Wirkungsökonomie beschreiben Produkte deshalb als verdichtete Wirkungsketten und warnen davor, Wirkung nur im eigenen Werk zu optimieren, während sie in unsichtbare Vorstufen verschoben wird [I-K92-2; I-K92-3].
+
+Wirkungsbasierter Handel stellt daher eine andere Grundfrage.
+
+Nicht: Wo bekommen wir es billiger?
+
+Sondern: Wo entsteht echte Wirkleistung?
+
+Diese Frage verändert die Rolle aller Beteiligten.
+
+Unternehmen müssen Lieferketten nicht nur als Kosten-, Qualitäts- und Verfügbarkeitsketten lesen, sondern als Wirkungsketten und Risikoketten. Ein Unternehmen, das seine Lieferkette nicht kennt, kennt seine Wirkung nicht. Und ein Unternehmen, das seine Wirkung nicht kennt, kennt sein Geschäftsmodell nicht. Die alte Lieferkettenlogik fragte nach Preis, Qualität und Verfügbarkeit. Die Wirkungsökonomie fragt nach Wirkung, Resilienz, Datenqualität, Fairness und Entwicklung.
+
+Staaten müssen Handel nicht nur als Export- oder Importvolumen betrachten, sondern als Verschiebung realer Wirkungen über Grenzen. Wenn ein importiertes Produkt billiger ist, weil seine Schäden anderswo entstehen, ist der Preis nicht effizient. Er ist unvollständig.
+
+Kapitalgeber müssen globale Lieferketten als Risikodaten lesen. Lieferkettenrisiken sind keine moralischen Zusatzdaten. Sie sind Kredit-, Versicherungs-, Portfolio-, Standort-, Haftungs-, Reputations- und Transformationsrisiken.
+
+Öffentliche Beschaffung muss ihre Marktmacht nutzen, ohne globale Anbieter pauschal auszuschließen. Sie muss fragen: Welche Daten liegen vor? Welche Wirkung ist geprüft? Welche Standards gelten? Welche roten Linien werden eingehalten? Welche Lieferanten können entwickelt werden?
+
+Konsument:innen dürfen nicht zu privaten Lieferkettenprüfer:innen gemacht werden. Sie sollen nicht am Regal Wasserstress, Arbeitsrechte, Entwaldung, Transportemissionen und Demokratiebezug rekonstruieren müssen. Diese Verantwortung gehört in Datenräume, Produktpässe, Scorecards, Standards, Beschaffung, Kapitalprüfung und Preise.
+
+Wirkungsbasierter Handel individualisiert Verantwortung nicht. Er architekturiert sie.
+
+Das bedeutet auch: Der billigste Preis ist nicht automatisch verbraucherfreundlich. Ein Preis ist nur dann wirklich günstig, wenn er die wesentlichen Wirkungen nicht verschweigt. Ein Produkt, das billig ist, weil andere Menschen, andere Regionen, andere Generationen oder Ökosysteme zahlen, ist nicht günstig. Es ist vorfinanziert durch Schäden.
+
+Wirkungsbasierter Handel fragt deshalb nicht nur nach Kosten. Er fragt nach Kostenwahrheit.
+
+### 92.2 CBAM und Grenzausgleich
+
+Eine Wirkungsordnung wird durchlässig, wenn Wirkung an der Grenze verschwindet.
+
+Wenn ein Land oder ein Wirtschaftsraum ökologische, soziale oder demokratische Standards einführt, importierte Produkte aber ohne vergleichbare Wirkungskosten in denselben Markt gelangen, entstehen verzerrte Signale. Dann wird verantwortliche Produktion teurer, während verlagertes Risiko billig bleibt. Das ist kein fairer Wettbewerb. Es ist Wettbewerb um Unsichtbarkeit.
+
+Grenzausgleich ist deshalb keine bloße Zollfrage. Er ist die Frage, ob importierte Wirkung sichtbar wird.
+
+Der europäische CBAM ist ein erster klimapolitischer Grenzmechanismus. Die EU beschreibt ihn als Instrument gegen Carbon Leakage; das definitive Regime gilt ab 2026 nach einer Übergangsphase von 2023 bis 2025. Die Europäische Kommission meldete zudem, dass CBAM am 1. Januar 2026 in Kraft getreten ist und CBAM-Register, nationale Zollimport-Systeme, TARIC und EU Customs Single Window miteinander verbunden wurden.
+
+Wirkungsökonomisch ist CBAM aus drei Gründen wichtig.
+
+Erstens zeigt CBAM, dass Grenzwirkung politisch und technisch adressierbar ist. Die Wirkung eines Produkts endet nicht am Zoll. Wenn Emissionen in einem Drittland entstehen und das Produkt in Europa verkauft wird, bleibt die Klimawirkung Teil des europäischen Konsums.
+
+Zweitens zeigt CBAM, dass Preise nicht neutral sind, wenn sie ungleiche Wirkungskosten verschweigen. Ein europäisches Unternehmen, das Emissionskosten trägt, konkurriert verzerrt mit Importen, deren eingebettete Emissionen nicht vergleichbar belastet werden.
+
+Drittens zeigt CBAM die Grenze eines rein klimabezogenen Instruments. CBAM ist ein wichtiger Anfang. Aber Wirkung ist breiter als CO2. Sie umfasst Wasser, Arbeit, Menschenrechte, Biodiversität, Ressourcen, Demokratiebezug, Korruption, Lieferkettenresilienz, Datenqualität und soziale Stabilität.
+
+Die Wirkungsökonomie lernt aus CBAM, aber sie verengt sich nicht auf CBAM.
+
+CBAM zeigt: Grenzwirkung ist möglich.
+
+Die EU-Entwaldungsverordnung zeigt: Lieferkettenherkunft zählt.
+
+Die EU-Verordnung gegen Zwangsarbeit zeigt: Manche Schäden werden nicht nur verteuert, sondern ausgeschlossen.
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
+
+Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
+
+- Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade als Organisationsfall mit Rollen, Routinen und Entscheidungspunkten in die Management-Lane zurückspielen.
+- Prüfungsfälle ohne öffentliche Antwortlogik als Managementszenarien anlegen.
+- Glossarverweise zu Wirkungsmanagement, Wirkungsstrategie und Rückkopplung verdichten.
+
+### 7.10 Kurzfazit
+
+Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
+
+
+## 8. Prüfungsrelevanz
 
 Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
 
@@ -230,7 +620,7 @@ Für den Fragenpool sind besonders geeignet:
 - Missverständnisse: Reichweite, Aktivität, Reporting oder Absicht als Wirkung auszugeben.
 - Transfer: positive Netto-Wirkung unter Nichtkompensation und, wo passend, Reverse Merit Order begründen.
 
-## 8. Quellen
+## 9. Quellen
 
 ### Interne Quellen
 
@@ -247,7 +637,7 @@ Für den Fragenpool sind besonders geeignet:
 - GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
 
-## 9. Rückfluss in den WÖk-Korpus
+## 10. Rückfluss in den WÖk-Korpus
 
 - **Glossar/Begriffe:** Im Tiefensprint prüfen, welche Begriffe aus **Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade** eigene Glossarseiten oder präzisere Verweise brauchen.
 - **Website/Erklärseiten:** Prüfen, ob eine kurze öffentliche Erklärseite oder ein Baustein für die Bibliothek fehlt.
