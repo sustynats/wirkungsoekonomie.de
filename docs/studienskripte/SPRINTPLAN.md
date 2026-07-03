@@ -99,11 +99,14 @@ Ziel: Ablage, Export, Status und Handoff so setzen, dass alle folgenden Sprints 
 
 ## Sprint 1 · G2/G3 Pilotvertiefung
 
-Ziel: V20 als Tiefenskript fertigstellen und daraus den Standard fuer die naechsten Skripte ableiten.
+Ziel: alle V1-Vorlesungen als Rohfassungs-Artefakte herstellen und danach V20 als Tiefenskript fertigstellen.
 
-- `woek-g-v20` — Gesellschaftliche Resonanzfaktoren
-- Output: Markdown-Master, Word-Rohfassung, App-Spiegel, Pruefungsfragen-Pool, Statusupdate
-- Statusziel: `studienskript-v1-rohfassung`
+- [x] 56 Markdown-Master in `content/studienskripte/`
+- [x] 56 Word-Rohfassungen in `docs/studienskripte/word-rohfassungen/`
+- [x] 16 fehlende Grundstudium-App-Spiegel V21-V36 angelegt
+- [x] Bibliotheksindex aus `content/studienskripte/index.json` aktualisiert
+- [ ] V20 auf echten Tiefen-Umfang erweitern
+- [ ] V21-V24 als erste 40-50-Seiten-Tiefenfassungen ausbauen
 
 ## Sprint 2 · Grundstudium V21-V24
 

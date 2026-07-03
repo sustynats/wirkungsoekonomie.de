@@ -51,8 +51,11 @@ Diese Pruefungsartefakte bleiben in der App-/Admin-Lane.
 
 ## Status
 
-Aktuell existiert nur eine Pilot-Arbeitsfassung:
+Aktueller Rohfassungsbestand:
 
-- `woek-g-v20.md` — Grundstudium V20: Gesellschaftliche Resonanzfaktoren
+- 36 Grundstudium-Vorlesungen
+- 10 Wirkungsmanagement-Vorlesungen
+- 10 Impact-Controlling-Vorlesungen
 
-Sie ist noch kein fertiges 40-50-Seiten-Tiefenskript.
+Alle 56 V1-Vorlesungen sind als Markdown-Master und Word-Rohfassung angelegt. Status: Rohfassung/Pilot,
+noch nicht finaler 40-50-Seiten-Tiefenstandard.
