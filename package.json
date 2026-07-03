@@ -21,6 +21,8 @@
     "build:factcheck-bot-guides": "node scripts/site/build-faktencheck-bot-guides.mjs",
     "check:search": "node scripts/quality/check-search-integration.mjs",
     "check:search-contamination": "node scripts/quality/check-search-index-contamination.mjs",
+    "check:privacy": "node scripts/quality/check-public-artifact-privacy.mjs",
+    "check:url-baseline": "node scripts/quality/check-url-baseline.mjs",
     "check:tool-default-states": "node scripts/quality/check-tool-default-states.mjs",
     "check:dashboards": "node scripts/audit-tool-dashboards.mjs",
     "check:publication-abstracts": "node scripts/quality/check-publication-abstracts.mjs",

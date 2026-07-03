@@ -435,6 +435,10 @@ const merged = Array.from(byUrl.values())
   .map(normalizePriority)
   .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
 
+const generatedAt = process.env.SOURCE_DATE_EPOCH
+  ? new Date(Number(process.env.SOURCE_DATE_EPOCH) * 1000).toISOString()
+  : "source-derived";
+
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
-fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: meta }, null, 2)}\n`);
+fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt, entries: meta }, null, 2)}\n`);
 console.log(`Integrated ${generated.length} WÖk search entries into existing search index.`);
