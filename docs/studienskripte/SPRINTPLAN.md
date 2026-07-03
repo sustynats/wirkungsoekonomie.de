@@ -132,10 +132,13 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 
 ## Sprint 4 · Grundstudium V29-V32
 
-- `woek-g-v29`
-- `woek-g-v30`
-- `woek-g-v31`
-- `woek-g-v32`
+- [x] `woek-g-v29`
+- [x] `woek-g-v30`
+- [x] `woek-g-v31`
+- [x] `woek-g-v32`
+- Output je Skript: Markdown-Master, Word-Rohfassung, App-Spiegel, Mini-Quiz, Glossar, Quellen, Rueckfluss
+- Ergebnis: `tiefensprint-arbeitsfassung` mit WÖk-ID-/Benchmark-/Archetypenlogik, Datenqualitaet/Audit/Unsicherheit, Netto-Wirkung und Scorecard-/Bewertungsprofilen.
+- Hinweis: Diese Fassungen sind substanziell ausgebaut, aber noch nicht als `published` oder Claude-CI/PDF-final markiert.
 
 ## Sprint 5 · Grundstudium V33-V36
 

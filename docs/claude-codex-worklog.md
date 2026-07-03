@@ -248,3 +248,10 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Extern geprueft: V25/V28 mit Primaerquellen UN SDG/Agenda 2030, EU-Kommission CSRD/Taxonomie/DPP, EFRAG ESRS, Eurostat NACE Rev. 2.1 und GRI.
 - Pruefung: JSON ok; V28-DOCX gerendert (32 Seiten) und visuell geprueft. Umfang je Master ca. 7.3k-9.5k Woerter.
 - Offen fuer Codex: Sprint 4 V29-V32, Sprint 5 V33-V36, danach V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.
+
+### 2026-07-03 - Codex - Studienskripte Sprint 4: V29-V32 ausgebaut
+- Status: abgeschlossen als Tiefenskript-Arbeitsfassungen, nicht als Claude/PDF-final.
+- Repo/Pfad: Website-Root `content/studienskripte/woek-g-v29.md` ... `woek-g-v32.md`, Word unter `docs/studienskripte/word-rohfassungen/`, App-Spiegel unter `woek-akademie-app/content/lehrgaenge/`.
+- Geaendert: V29 WÖk-IDs/Benchmarks/Archetypen, V30 Datenqualitaet/Audit/Unsicherheit, V31 von Einzelwirkung zu Netto-Wirkung, V32 Scorecards/Bewertungsprofile. Je Skript: Website-Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
+- Pruefung: V32-DOCX gerendert (31 Seiten) und visuell geprueft. Umfang je Master ca. 8.0k-8.9k Woerter.
+- Offen fuer Codex: Sprint 5 V33-V36, danach V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.
