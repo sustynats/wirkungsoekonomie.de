@@ -5,7 +5,7 @@
 **Vorlesungscode:** V26  
 **Modul/Abschnitt:** G3.1  
 **Titel:** SDG+: Warum die SDGs für offene Gesellschaften nicht reichen  
-**Status:** Tiefenskript-Sprint 3 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 3 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v26-sdg-plus-warum-sdgs-nicht-reichen.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v26.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v26.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

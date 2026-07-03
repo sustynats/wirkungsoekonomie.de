@@ -5,7 +5,7 @@
 **Vorlesungscode:** V23  
 **Modul/Abschnitt:** G2.4  
 **Titel:** Unsicherheit, Ambivalenz und transparente Bewertung  
-**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v23.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v23.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

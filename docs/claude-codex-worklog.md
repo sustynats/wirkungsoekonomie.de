@@ -262,3 +262,10 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Geaendert: V33 NWI/T-SROI unterscheiden, V34 Reverse Merit Order, V35 Nichtkompensation gegen Greenwashing, V36 Scorecard lesen und begruenden. Je Skript: Website-Referenzmaterial, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
 - Pruefung: V36-DOCX gerendert (30 Seiten) und visuell geprueft. Umfang je Master ca. 8.1k-9.6k Woerter.
 - Offen fuer Codex: Grundstudium V01-V19, WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.
+
+### 2026-07-03 - Codex - Studienskripte Sprint 6/7: Grundstudium V01-V20 ausgebaut
+- Status: abgeschlossen als Tiefenskript-Arbeitsfassungen, nicht als Claude/PDF-final.
+- Repo/Pfad: Website-Root `content/studienskripte/woek-g-v01.md` ... `woek-g-v20.md`, Word unter `docs/studienskripte/word-rohfassungen/`, App-Spiegel unter `woek-akademie-app/content/lehrgaenge/`.
+- Geaendert: V01-V09 Grundlagenblock und V10-V20 Wirkungs-/Wirkungsraeume-Block auf substanzielle Arbeitsfassungen erweitert. Je Skript: Referenzmaterial aus dem aktuellen Website-/Grundlagenwerk-Korpus, Analysemodell, Modellformel, Fallfenster, pruefungsnahe Fallfragen ohne geschuetzte Antwortlogik, Rueckfluss.
+- Pruefung: V20-DOCX gerendert (41 Seiten) und visuell geprueft. Grundstudium V01-V36 umfasst jetzt ca. 322k Woerter im Masterbestand.
+- Offen fuer Codex: WM V1-V10, WC V1-V10; Pruefungs-Pools geschuetzt weiter ausbauen.

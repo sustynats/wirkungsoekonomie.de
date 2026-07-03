@@ -5,7 +5,7 @@
 **Vorlesungscode:** V30  
 **Modul/Abschnitt:** G3.2  
 **Titel:** Datenqualität, Audit und Unsicherheit  
-**Status:** Tiefenskript-Sprint 4 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 4 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v30-datenqualitaet-audit-unsicherheit.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v30.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v30.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

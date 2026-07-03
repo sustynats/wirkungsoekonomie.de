@@ -5,7 +5,7 @@
 **Vorlesungscode:** V29  
 **Modul/Abschnitt:** G3.2  
 **Titel:** WÖk-IDs, Benchmarks und Archetypen  
-**Status:** Tiefenskript-Sprint 4 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 4 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v29-woek-ids-benchmarks-archetypen.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v29.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v29.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

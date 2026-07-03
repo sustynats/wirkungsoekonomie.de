@@ -152,7 +152,35 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 
 ## Danach
 
-1. Grundstudium V01-V19 zu Tiefenskripten ausbauen.
-2. Wirkungsmanagement V1-V10 zu Tiefenskripten ausbauen.
-3. Impact-Controlling V1-V10 zu Tiefenskripten ausbauen.
-4. Pruefungsfragen-Pools je Vorlesung geschuetzt erweitern.
+1. [x] Grundstudium V01-V19 zu Tiefenskript-Arbeitsfassungen ausbauen.
+2. [ ] Wirkungsmanagement V1-V10 zu Tiefenskripten ausbauen.
+3. [ ] Impact-Controlling V1-V10 zu Tiefenskripten ausbauen.
+4. [ ] Pruefungsfragen-Pools je Vorlesung geschuetzt erweitern.
+
+## Sprint 6 · Grundstudium V01-V09
+
+- [x] `woek-g-v01`
+- [x] `woek-g-v02`
+- [x] `woek-g-v03`
+- [x] `woek-g-v04`
+- [x] `woek-g-v05`
+- [x] `woek-g-v06`
+- [x] `woek-g-v07`
+- [x] `woek-g-v08`
+- [x] `woek-g-v09`
+- Ergebnis: `tiefensprint-arbeitsfassung` auf Basis der lebenden Referenzkapitel zu Maßstabskrise, Kapital, neuer Steuerungslogik, Leistung, Resilienz sowie Mensch/Planet/Demokratie.
+
+## Sprint 7 · Grundstudium V10-V20
+
+- [x] `woek-g-v10`
+- [x] `woek-g-v11`
+- [x] `woek-g-v12`
+- [x] `woek-g-v13`
+- [x] `woek-g-v14`
+- [x] `woek-g-v15`
+- [x] `woek-g-v16`
+- [x] `woek-g-v17`
+- [x] `woek-g-v18`
+- [x] `woek-g-v19`
+- [x] `woek-g-v20`
+- Ergebnis: `tiefensprint-arbeitsfassung` auf Basis der Referenzkapitel zu Wirkung, Wirkungspotenzial, Wirkungsräumen, Handeln/Unterlassen, Wirkungsordnungen, Nebenwirkungen, Märkten, Medien, Zeit/Generationen und Resonanz.

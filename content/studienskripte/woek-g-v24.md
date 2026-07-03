@@ -5,7 +5,7 @@
 **Vorlesungscode:** V24  
 **Modul/Abschnitt:** G2.4  
 **Titel:** Deeskalierende und demokratiestärkende Kommunikation  
-**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 2 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v24-deeskalierende-demokratiestaerkende-kommunikation.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v24.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v24.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen

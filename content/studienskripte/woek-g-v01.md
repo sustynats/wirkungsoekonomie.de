@@ -5,7 +5,7 @@
 **Vorlesungscode:** V01  
 **Modul/Abschnitt:** G1.1  
 **Titel:** Die Maßstabskrise  
-**Status:** Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden  
+**Status:** Tiefenskript-Sprint 6 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v01.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v01.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v01.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
@@ -167,7 +167,397 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | positive Netto-Wirkung | Bewertete Zielgröße nach positiven und negativen Wirkungen im Referenzrahmen Mensch, Planet und Demokratie. |
 | Rückkopplung | Lern- und Steuerungsprozess, der Wirkungsergebnisse in Entscheidungen zurückführt. |
 
-## 7. Prüfungsrelevanz
+## 7. Tiefenskript-Erweiterung Sprint 6
+
+**Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
+
+### 7.1 Leitthese
+
+Die Maßstabskrise markiert im Grundstudium eine Grundentscheidung der Wirkungsökonomie: Entscheidend ist nicht, was plausibel klingt, sondern welche Zustände sich bei welchen Wirkungsempfängern in welchem Wirkungsraum tatsächlich verändern.
+
+Die Vorlesung bleibt dabei an die Grundregel gebunden: Wirkung ist neutral und relational. Erst die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ entscheidet, ob eine Veränderung positiv, negativ oder ambivalent einzuordnen ist. Wenn eine Zielgröße gemeint ist, sprechen wir von positiver Netto-Wirkung.
+
+### 7.2 Didaktische Einordnung im Studiengang
+
+V01 liegt an der Schwelle zwischen begrifflicher Grundlegung und Bewertungsarchitektur. Die Studierenden sollen nicht nur Begriffe wiedergeben, sondern an Fällen erkennen, welche Aussage schon Wirkung behauptet, welche nur Wirkungspotenzial beschreibt und wo ein Wirkungsrisiko offenliegt. Der Tiefensinn dieser Vorlesung liegt deshalb nicht in zusätzlicher Komplexität, sondern in besserer Unterscheidungsfähigkeit.
+
+Für die spätere Praxis ist entscheidend, dass jede Analyse vier Ebenen getrennt hält:
+
+1. **Beschreibung:** Was geschieht tatsächlich oder soll geschehen?
+2. **Kausalannahme:** Über welchen Mechanismus könnte daraus eine Zustandsveränderung entstehen?
+3. **Bewertung:** Welche Richtung hat diese Veränderung im Referenzrahmen?
+4. **Rückkopplung:** Welche Entscheidung, Regel, Ressource oder Kommunikation wird dadurch verändert?
+
+Wo diese Ebenen vermischt werden, entstehen typische WÖk-Fehler: Aktivität wird als Wirkung ausgegeben, Reichweite ersetzt Zustandsveränderung, gute Absicht verdeckt Nebenwirkungen oder Reporting wird mit Lernen verwechselt.
+
+### 7.3 Analysemodell
+
+| Analyseobjekt | Woran es wirkt | Typischer Fehler | Saubere WÖk-Lesart |
+|---|---|---|---|
+| Begriff | Was muss präzise getrennt werden? | Typischer Fehler | Saubere WÖk-Lesart |
+| Wirkung | tatsächliche Zustandsveränderung | Absicht, Aktivität oder Reichweite als Wirkung ausgeben | Zustand, Empfänger, Wirkpfad und Quelle nennen |
+| Potenzial | mögliche künftige Wirkung | Möglichkeit als Ergebnis verkaufen | Bedingungen, Unsicherheit und Resonanzraum markieren |
+| Risiko | mögliche negative Wirkung oder Nebenwirkung | positive Geschichte ohne Schattenseite erzählen | Nebenwirkungen, Rebound und Zielkonflikte offenlegen |
+| Rückkopplung | Konsequenz aus beobachteter oder bewerteter Wirkung | Reporting als Abschluss behandeln | Lernen und Steuerungsänderung einbauen |
+
+### 7.4 Modellformel
+
+Die folgende Formel ist ein didaktisches Denkmodell, kein amtlicher Bewertungsstandard:
+
+$
+Wirkung = \Delta Zustand(Empfaenger, Raum, Zeit) \; durch \; Wirkpfad(Ausloeser, Mechanismus, Resonanz, Rueckkopplung)
+$
+
+Die Formel ist ein didaktisches Raster: Sie schützt davor, Wirkung auf Absicht, Output, Symbolik oder Reichweite zu verkürzen.
+
+Die Formel soll gerade keine Scheingenauigkeit erzeugen. Sie zwingt dazu, die Faktoren offen zu legen, die eine Aussage tragen. In einem echten Bewertungsprozess müssten Datenquelle, Aktualität, Datenqualitätsklasse, Unsicherheitsgrad und Rückkopplungsregel ergänzt werden.
+
+### 7.5 Fallfenster
+
+**Fall 1.** Ein Projekt kann im Themenfeld Die Maßstabskrise überzeugend kommunizieren und trotzdem nur Wirkungspotenzial erzeugen. Die WÖk-Prüfung beginnt erst, wenn klar wird, welcher Zustand sich bei wem verändert.
+
+**Fall 2.** Eine Organisation kann im Themenfeld Die Maßstabskrise gute Absichten haben und zugleich Wirkungsrisiken übersehen. Das Skript trainiert deshalb die Trennung von Absicht, Auslöser, Wirkmechanismus, Empfänger, Datenlage und Bewertung.
+
+### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
+
+Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+
+1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
+2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
+3. Benenne mindestens ein Wirkungspotenzial und ein Wirkungsrisiko.
+4. Zeige, welche Quelle oder Datenart nötig wäre, um von Potenzial zu belastbarer Wirkungsaussage zu kommen.
+5. Prüfe, ob Nichtkompensation oder Reverse Merit Order einschlägig sein könnten.
+6. Formuliere eine saubere Wirkungsaussage in einem Satz: Was wissen wir, was nehmen wir an, was bleibt offen?
+
+### 7.7 Auswertung aus der lebenden Website-Referenz
+
+### Quellenanker: Kapitel 2 - Die Maßstabskrise
+
+*Interne Quelle:* `referenz/kapitel-002-die-massstabskrise/index.html`
+
+Dieses Kapitel beschreibt die zentrale Diagnose der Wirkungsökonomie: Die gegenwärtige Ordnung scheitert nicht an fehlenden Daten, sondern an einem falschen Maßstab. Moderne Gesellschaften messen präzise, permanent und global vernetzt. Sie erfassen Kapitalflüsse, Gewinne, Umsätze, Beschäftigung, Reichweiten, Marktwerte, Emissionen, Risiken und Produktivität. Doch sie messen nicht konsequent, ob diese Bewegung Zukunft erzeugt oder Zukunft verbraucht.
+
+Die Wirkungsökonomie kritisiert deshalb nicht Messung an sich. Sie kritisiert die falsche Einordnung dessen, was gemessen wird. Kapital, BIP, Gewinn, Umsatz, Beschäftigung, Reichweite und Marktwert bleiben wichtige Aktivitätsgrößen. Aber sie sind keine ausreichenden Maßstäbe für Wohlstand und Zukunftsfähigkeit.
+
+Eine Maßstabskrise entsteht, wenn eine Gesellschaft die falschen Größen für die richtigen hält: wenn sie Aktivität als Fortschritt deutet, Bewegung mit Entwicklung verwechselt, Geldströme mit Wohlstand, Beschäftigung mit gesellschaftlicher Leistung, Reichweite mit Orientierung, Marktwert mit Wert und Wachstum mit Zukunftsfähigkeit.
+
+Diese Krise ist gefährlicher als eine reine Datenlücke. Eine Datenlücke bedeutet: Wir wissen noch nicht genug. Eine Maßstabskrise bedeutet: Wir wissen viel, aber wir ordnen falsch ein.
+
+Noch nie verfügten Unternehmen, Staaten, Banken, Versicherungen, Investoren, Wissenschaft und Öffentlichkeit über so viele Informationen zu ökologischen, sozialen, finanziellen und politischen Zuständen. Dennoch bleiben die zentralen Steuerungssignale weitgehend unverändert: Kapital, BIP, Gewinn, Umsatz, Beschäftigung, Reichweite und Marktwert.
+
+Diese Größen sind nicht bedeutungslos. Sie zeigen Aktivität, Intensität, Zahlungsfähigkeit, Nachfrage, Erwartungen, Knappheit und Bewegung. Problematisch werden sie dort, wo sie zum eigentlichen Kompass werden. Denn sie zeigen nicht zuverlässig, ob eine Handlung Mensch, Planet und Demokratie stärkt oder schwächt.
+
+Die alte Ordnung hat deshalb kein reines Wissensproblem. Sie hat ein Orientierungsproblem.
+
+### 2.1 Warum Maßstäbe niemals neutral sind
+
+Ein Maßstab ist nie nur eine Zahl.
+
+Sobald eine Zahl darüber entscheidet, wohin Kapital fließt, welche Projekte gefördert werden, welche Unternehmen Kredite erhalten, welche Vorstände Boni bekommen, welche Produkte billiger erscheinen oder welche politischen Maßnahmen als Erfolg gelten, wird sie zur Steuerungsgröße.
+
+Dann beschreibt sie die Welt nicht mehr nur. Sie verändert sie.
+
+Was gemessen wird, wird wichtig. Was verglichen wird, wird optimiert. Was belohnt wird, wächst. Was unsichtbar bleibt, wird strukturell benachteiligt oder zerstört.
+
+Darum reicht die Maßstabskrise so tief. Kapital, Gewinn, Umsatz, BIP, Beschäftigung, Reichweite und Marktwert sind nicht bloß technische Kennzahlen. Sie prägen Wahrnehmung, Anerkennung und politische Rationalität.
+
+Ein Unternehmen mit steigenden Gewinnen gilt als erfolgreich. Ein Staat mit wachsendem BIP gilt als stabil. Eine Branche mit vielen Arbeitsplätzen gilt als schützenswert. Eine Plattform mit hoher Reichweite gilt als relevant. Eine Person mit hohem Einkommen gilt als leistungsfähig.
+
+Diese Zuschreibungen erzeugen eine Ordnung der Sichtbarkeit. Ein Pflegeheim, das Würde und Stabilität erzeugt, aber geringe Rendite erwirtschaftet, erscheint wirtschaftlich schwach. Eine Schule, die demokratische Mündigkeit stärkt, erscheint als Kostenfaktor. Ein Wald wird ökonomisch häufig erst dann sichtbar, wenn er verkauft, bebaut oder verrechnet werden kann. Ein differenzierter Medienbeitrag erscheint schwächer als ein polarisierender Beitrag mit Millionen Klicks.
+
+Der Maßstab entscheidet darüber, was als Leistung gilt. Wenn der Maßstab falsch ist, wird das Falsche leistungsfähig gemacht.
+
+### 2.2 Kapital: Werkzeug ohne Richtung
+
+Kapital ist nicht das Problem.
+
+Kapital ist gespeicherte Handlungsmöglichkeit. Es kann Infrastruktur finanzieren, Forschung ermöglichen, Häuser sanieren, Bildung stärken, Innovation beschleunigen und Transformation tragen. Kapital kann Zukunft ermöglichen.
+
+Aber Kapital kann ebenso Zerstörung skalieren, Spekulation verstärken, Rohstoffe ausbeuten, Wohnraum verknappen, politische Einflussnahme finanzieren oder ökologische Schäden in die Zukunft verschieben.
+
+Kapital besitzt keine eigene Richtung. Es folgt der Steuerungslogik, in die es eingebettet ist.
+
+Wenn diese Logik Gewinnmaximierung lautet, fließt Kapital dorthin, wo hohe Rendite erwartet wird. Das kann gesellschaftlich sinnvoll sein. Es kann aber auch destruktiv wirken. Kapital fragt zunächst nicht, ob ein Geschäftsmodell Lebensgrundlagen schützt. Es fragt nach Ertrag. Kapital fragt nicht, ob eine Plattform demokratische Diskursräume stabilisiert. Es fragt nach Aufmerksamkeit, Daten und Werbeeinnahmen. Kapital fragt nicht, ob Wohnraum bezahlbar bleibt. Es fragt nach Renditepotenzial.
+
+Das ist kein moralischer Fehler einzelner Akteure. Es ist eine strukturelle Logik.
+
+Kapital ist ein Verstärker. Die entscheidende Frage lautet: Was verstärkt es?
+
+In der alten Ordnung verstärkt Kapital primär Kapitalvermehrung. Es finanziert, was sich rechnet. Doch was sich rechnet, hängt davon ab, welche Kosten sichtbar werden und welche nicht. Wenn CO2, Wasserstress, schlechte Arbeitsbedingungen, Polarisierung oder demokratische Schäden nicht ausreichend zurückwirken, kann Kapital destruktive Pfade rational finanzieren.
+
+Als Werkzeug bleibt Kapital unverzichtbar. Als Kompass ist es blind.
+
+### 2.3 BIP: Die Summe der Bewegung
+
+Das Bruttoinlandsprodukt gehört zu den mächtigsten Kennzahlen der Moderne. Regierungen werden an Wachstum gemessen. Reformen werden danach bewertet, ob sie Wachstum fördern oder bremsen. Schrumpft das BIP, beginnt die Krisensprache. Wächst es, gilt das als Fortschritt.
+
+Dabei wurde das BIP nie dafür entwickelt, Zukunftsfähigkeit zu messen. Es misst wirtschaftliche Aktivität: den Wert aller produzierten Waren und Dienstleistungen innerhalb eines bestimmten Zeitraums. Dafür ist es nützlich. Es hilft, Produktion, Nachfrage und Konjunktur sichtbar zu machen. Aber es misst nicht, ob eine Gesellschaft tragfähig bleibt.
+
+Das BIP steigt auch, wenn nach einer Flut zerstörte Häuser wieder aufgebaut werden. Es steigt, wenn Krankheiten behandelt werden müssen, die durch Umweltbelastungen entstanden sind. Es steigt, wenn Sicherheitskosten wachsen, weil gesellschaftliches Vertrauen sinkt.
+
+Das Problem liegt nicht in der Rechenmethode. Das Problem liegt in der politischen Deutung.
+
+Das BIP unterscheidet nicht ausreichend zwischen Prävention und Reparatur, zwischen Aufbau und Wiederaufbau, zwischen Wertschöpfung und Folgekosten. Ein Land kann wachsen und gleichzeitig seine Böden erschöpfen, Wohnraum unbezahlbar machen oder demokratische Stabilität verlieren.
+
+Die Kritik am BIP ist deshalb keine bloße Wachstumskritik. Sie ist eine Kritik am Maßstab. Robert F. Kennedy formulierte bereits 1968, das BIP messe vieles - aber nicht das, was das Leben lebenswert mache. Die Stiglitz-Sen-Fitoussi-Kommission griff diese Kritik später erneut auf.
+
+Die Wirkungsökonomie sagt nicht: Wachstum ist grundsätzlich falsch. Sie sagt: Wachstum bleibt unzureichend, solange seine Wirkung unklar bleibt. Entscheidend ist nicht, ob etwas wächst. Entscheidend ist, was wächst.
+
+### 2.4 Gewinn: Buchhalterischer Erfolg ohne Wirkungswahrheit
+
+Gewinn ist eine der wichtigsten Größen unternehmerischer Steuerung. Ein Unternehmen, das dauerhaft keinen Gewinn erzielt, kann nicht investieren, keine Rücklagen bilden und keine Transformation finanzieren. Gewinn kann deshalb ein Hinweis auf Tragfähigkeit sein.
+
+Aber Gewinn ist kein Beweis positiver Wirkung.
+
+### Quellenanker: Kapitel 3 - Kapital als Werkzeug und falscher Kompass
+
+*Interne Quelle:* `referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html`
+
+Dieses Kapitel klärt den Status des Kapitals in der Wirkungsökonomie. Es geht nicht darum, Kapital zu verteufeln oder Märkte abzuschaffen. Es geht darum, Kapital aus seiner falschen Rolle als gesellschaftlicher Kompass zu lösen und wieder als Werkzeug zu begreifen.
+
+Kapital bleibt notwendig. Ohne Kapital lassen sich Infrastruktur, Forschung, Pflege, Bildung, Energie, Digitalisierung, Wohnraum, Transformation und Resilienz nicht dauerhaft finanzieren. Aber Kapital darf nicht länger selbst bestimmen, was als wertvoll, zukunftsfähig oder leistungsfähig gilt.
+
+Kapital ist weder gut noch böse. Es hat keine Moral, keine Absicht, keine Richtung und kein Gewissen. Kapital ist gespeicherte Möglichkeit. Es kann bauen, forschen, pflegen, retten, sanieren, verbinden und transformieren. Es kann aber auch zerstören, spekulieren, ausbeuten, verknappen, täuschen und destabilisieren. Kapital ist Macht zur Veränderung. Aber Veränderung ist noch keine Verbesserung.
+
+Die alte Ordnung hat Kapital vom Werkzeug zum Ziel erhoben. Kapitalvermehrung wurde zum Zeichen von Erfolg. Rendite wurde zum Ausdruck von Leistung. Marktwert wurde mit Wert verwechselt. Vermögen wurde als Stärke gelesen. Wachstum wurde als Fortschritt gedeutet. Damit wurde ein Mittel zum Maßstab. Ein Verstärker wurde zum Kompass.
+
+Die Wirkungsökonomie stellt Kapital an seinen richtigen Ort zurück.
+
+Kapital darf nicht verschwinden. Kapital muss wirken.
+
+Nicht Kapital abschaffen, sondern Kapital ausrichten.
+
+Nicht Gewinn verbieten, sondern Gewinn einordnen.
+
+Nicht Märkte ersetzen, sondern Märkte wahrheitsfähiger machen.
+
+Nicht Investitionen bremsen, sondern Investitionen in Richtung Zukunft lenken.
+
+Die Frage lautet also nicht: Kapital oder kein Kapital?
+
+Die Frage lautet: Wofür arbeitet Kapital?
+
+Für Vermehrung seiner selbst? Oder für Mensch, Planet und Demokratie?
+
+### 3.1 Kapital ist gespeicherte Handlungsmöglichkeit
+
+Kapital ist verdichtete Möglichkeit.
+
+Geld, Vermögen, Kredit, Beteiligung, Infrastruktur, Maschinen, Boden, Daten, Patente, Wissen, Netzwerke und Liquidität können Kapitalform annehmen. Sie erlauben, Gegenwart in Zukunft zu übersetzen. Kapital macht Projekte möglich, bevor ihr Nutzen bereits entstanden ist. Es überbrückt Zeit, bündelt Vertrauen und schafft Spielräume.
+
+Ohne Kapital gäbe es keine großen Investitionen: keine Energienetze, keine Krankenhäuser, keine Forschungslabore, keine Wohnungsbauprogramme, keine Maschinenparks, keine öffentlichen Infrastrukturen, keine großen Bildungs-, Pflege-, Verkehrs-, Digital- oder Klimaprojekte.
+
+Kapital ist deshalb nicht der Gegner der Wirkungsökonomie. Eine wirkungsorientierte Gesellschaft braucht Kapital. Sie braucht sogar sehr viel Kapital. Die ökologische Transformation, die Erneuerung öffentlicher Infrastruktur, die Resilienz von Kommunen, die Digitalisierung, die Pflege, die Bildung, der Wohnungsbau und die Dekarbonisierung industrieller Systeme lassen sich nicht mit guten Absichten allein finanzieren.
+
+Aber Kapital allein entscheidet nicht, ob diese Transformation gelingt.
+
+Kapital ist wie Energie. Es kann eine Stadt beleuchten oder eine Bombe zünden. Es kann einen Wald regenerieren oder ihn abholzen. Es kann eine Schule bauen oder eine Desinformationskampagne finanzieren. Es kann bezahlbaren Wohnraum ermöglichen oder Wohnraum verknappen.
+
+Kapital ist ein Verstärker. Es macht das größer, worauf es gerichtet wird.
+
+Deshalb ist seine Richtung entscheidend.
+
+### 3.2 Der Fehler beginnt, wenn das Werkzeug zum Ziel wird
+
+Ein Werkzeug wird gefährlich, wenn es nicht mehr als Werkzeug erkannt wird.
+
+Ein Hammer ist nützlich, solange klar ist, was gebaut werden soll. Wird das Hämmern selbst zum Ziel, entstehen Lärm, Zerstörung oder sinnloser Aufwand. Dasselbe gilt für Kapital. Kapital ist nützlich, solange klar ist, welcher gesellschaftliche, ökologische oder demokratische Zweck damit ermöglicht wird. Wird Kapitalvermehrung selbst zum Ziel, entsteht eine selbstreferenzielle Ordnung.
+
+Dann investiert Kapital nicht mehr, um Leben zu verbessern. Es investiert, um mehr Kapital zu werden. Dann dient Arbeit nicht mehr primär Versorgung, Würde oder Teilhabe. Sie dient Rendite. Dann dient Produktion nicht mehr primär Nutzen. Sie dient Absatz, Marge und Skalierung. Dann dient Wohnen nicht mehr primär Sicherheit und Zuhause. Es dient Wertsteigerung. Dann dient Öffentlichkeit nicht mehr primär Orientierung. Sie dient Aufmerksamkeit und Monetarisierung.
+
+Das Problem ist nicht, dass Kapital existiert. Das Problem ist, dass Kapital in der alten Ordnung häufig zur letzten Instanz der Bewertung wird.
+
+Was sich rechnet, gilt als rational. Was Gewinn bringt, gilt als erfolgreich. Was Rendite verspricht, gilt als investierbar. Was Vermögen steigert, gilt als wertvoll. Was nicht monetarisierbar ist, gilt als Kostenstelle.
+
+Damit verschiebt sich die Wahrnehmung der Wirklichkeit. Pflege, Bildung, Prävention, soziale Stabilität, saubere Luft, Artenvielfalt, Vertrauen, demokratische Diskursfähigkeit, psychische Gesundheit und gesellschaftliche Resilienz erscheinen als Ausgaben. Spekulation, Ressourcenausbeutung, Überkonsum, Datenextraktion oder polarisierende Reichweitenmodelle erscheinen als Geschäftsmodelle.
+
+Das ist der Moment, in dem Kapital vom Werkzeug zum falschen Kompass wird.
+
+### 3.3 Kapital misst nicht Wert, sondern Verwertbarkeit
+
+Kapital kann viel sichtbar machen.
+
+Aber nicht alles, was zählt.
+
+Kapital misst Zahlungsfähigkeit, Eigentumsrechte, Knappheit, Renditeerwartungen, Risikoaufschläge, Liquidität, Marktpositionen, Sicherheiten und Verwertbarkeit. Das ist wichtig. Aber es ist nicht identisch mit gesellschaftlichem Wert.
+
+Ein Wald hat ökonomischen Wert, wenn er verkauft, bewirtschaftet, als CO2-Senke bilanziert, touristisch genutzt oder als Baufläche verwertet wird. Aber sein Systemwert reicht weiter: Er speichert Wasser, kühlt Landschaften, schützt Böden, erhält Biodiversität, bindet Kohlenstoff, reduziert Hochwasserrisiken und verbessert Lebensqualität.
+
+Ein Mensch hat Einkommen, wenn seine Tätigkeit am Markt vergütet wird. Aber seine gesellschaftliche Wirkung kann weit über dieses Einkommen hinausgehen. Eine Erzieherin, eine Pflegekraft, eine Lehrkraft, eine Sozialarbeiterin oder ein Mensch, der Angehörige pflegt, erzeugt Systemstabilität, die im Kapitalmaßstab unterbewertet bleibt.
+
+Eine Plattform kann einen hohen Marktwert haben, weil sie Daten, Aufmerksamkeit und Werbeerlöse bündelt. Aber dieser Marktwert sagt nicht, ob sie Vertrauen stärkt, Diskursqualität erhöht, Desinformation begrenzt oder demokratische Resonanzräume schützt.
+
+### Quellenanker: Kapitel 4 - Die Entstehung des falschen Kompasses
+
+*Interne Quelle:* `referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html`
+
+Dieses Kapitel zeichnet keine vollständige Ideengeschichte der Ökonomie nach. Es erklärt, wie der falsche Kompass entstehen konnte: warum Markt, Kapital, Gewinn, Wachstum, Rendite und Preis zu dominanten Steuerungsgrößen wurden und weshalb diese Größen trotz ihrer historischen Leistung heute nicht mehr ausreichen. Die Wirkungsökonomie verwirft die ökonomische Tradition nicht. Sie ordnet sie neu ein. Sie zeigt, welche Einsichten bleiben, welche Verengungen korrigiert werden müssen und warum Wirkung zur zentralen Steuerungsgröße werden muss.
+
+Ökonomische Theorien entstehen aus den Problemen ihrer Zeit. Sie sind keine ewigen Wahrheiten, sondern Antworten auf historische Lagen. Adam Smith schrieb gegen Merkantilismus, Monopole und feudale Privilegien. Karl Marx schrieb gegen Ausbeutung, Entfremdung und die brutale Sozialordnung des frühen Industriekapitalismus. Die Neoklassik suchte mathematische Ordnung in einer wachsenden Marktwelt. Keynes antwortete auf Massenarbeitslosigkeit, Nachfrageeinbruch und Weltwirtschaftskrise. Die soziale Marktwirtschaft reagierte auf Krieg, Diktatur, Armut und die Erfahrung zerstörerischer Extreme. Der Neoliberalismus entstand als Gegenbewegung zu Staatsversagen, Inflation, Verkrustung und überdehnter Regulierung. Die Finanzialisierung versprach, Kapital beweglicher, effizienter und globaler einsetzbar zu machen. Die Wachstumsideologie erzählte, dass mehr Produktion, mehr Konsum und mehr BIP langfristig auch mehr Wohlstand bedeuten würden.
+
+Keine dieser Antworten war von Anfang an unsinnig. Jede sah etwas Reales. Smith sah die Kraft dezentraler Koordination. Marx sah Kapitalmacht und Ausbeutung. Die Neoklassik sah Knappheit, Preise und Anreize. Keynes sah Instabilität, Nachfrage und Erwartung. Die soziale Marktwirtschaft sah, dass Freiheit soziale Einbettung braucht. Der Neoliberalismus sah Bürokratie, Machtmissbrauch und Staatsversagen. Die Finanzialisierung sah, dass Kapital Zeit, Risiko und Investition organisieren kann. Die Wachstumsideologie sah den realen Fortschritt industrieller Entwicklung.
+
+Der Irrweg begann dort, wo eine richtige Einsicht zum allgemeinen Maßstab wurde. Markt wurde zum Wahrheitsersatz. Kapital wurde zum Ziel. Gewinn wurde zum Erfolgsbeweis. Wachstum wurde zur Fortschrittserzählung. Preis wurde mit Wert verwechselt. Beschäftigung wurde mit Wirkleistung verwechselt. BIP wurde zum Wohlstandsindikator. Rendite wurde zum Beweis wirtschaftlicher Vernunft.
+
+Die Wirkungsökonomie widerspricht deshalb nicht der gesamten Geschichte der Ökonomie. Sie widerspricht ihrer falschen Verallgemeinerung. Sie sagt nicht, Smith, Marx, Keynes, Neoklassik, soziale Marktwirtschaft, Neoliberalismus, Finanzsysteme oder Wachstum seien schlicht falsch gewesen. Sie sagt: Diese Modelle beschrieben Ausschnitte. Sie erklärten bestimmte Probleme. Sie erzeugten nützliche Instrumente. Aber sie machten Wirkung nicht zum Maßstab. Sie fragten nicht durchgängig, welche Zustände wirtschaftliches Handeln für Mensch, Planet und Demokratie verändert.
+
+Dieses Kapitel zeigt daher die historische Linie, die erklärt, warum Kapital, Wachstum, Marktwert und Rendite so mächtig wurden und warum sie als alleinige Steuerungsgrößen nicht mehr ausreichen. Die genaue Abgrenzung der Wirkungsökonomie gegenüber ESG, CSR, Gemeinwohlökonomie, Donut-Ökonomie, Wellbeing Economy, Degrowth, Kapitalismus und Sozialismus erfolgt später im systematischen Vergleich. Hier geht es um die Entstehung des falschen Kompasses.
+
+### 4.1 Adam Smith: Markt als Befreiung aus alter Macht
+
+Adam Smith gehört an den Anfang dieser Entwicklung, auch wenn sein Hauptwerk vor 1800 erschien. Seine Wirkung prägte das 19. Jahrhundert und die spätere marktwirtschaftliche Ordnung. Smith schrieb in einer Welt, in der feudale Privilegien, Monopole, Zunftordnungen und staatlich gelenkte Handelsinteressen wirtschaftliche Entwicklung blockierten. Gegen diese Ordnung stellte er Arbeitsteilung, Wettbewerb, dezentrale Koordination und das Eigeninteresse freier Akteure.
+
+Die Stärke dieser Idee war groß. Wenn Märkte offen sind, wenn Wettbewerb funktioniert, wenn Eigentum gesichert und Monopole begrenzt werden, können Menschen handeln, produzieren, tauschen, lernen und Wohlstand schaffen. Smith erkannte, dass keine zentrale Instanz alle Bedürfnisse, Knappheiten und Möglichkeiten einer Gesellschaft vollständig überblicken kann. Der Markt verarbeitet verteiltes Wissen. Er verbindet Entscheidungen vieler Menschen über Preise. Er kann Innovation und Spezialisierung ermöglichen.
+
+Doch Smith war nicht der kalte Marktgläubige, zu dem ihn spätere Deutungen machten. Er war Moralphilosoph. In seiner Theorie moralischer Gefühle spielen Sympathie, Anstand, Gerechtigkeit und gesellschaftliche Einbettung eine zentrale Rolle. Das spätere Missverständnis bestand darin, Smiths Marktbeobachtung von diesem moralischen Rahmen zu lösen. Aus dem Gedanken, dass Eigeninteresse unter bestimmten Bedingungen gesellschaftlich nützlich sein kann, wurde die Behauptung, Eigeninteresse sei an sich schon Gemeinwohl. Aus Marktkoordination wurde Marktlegitimation.
+
+Der falsche Kompass begann, als der Markt nicht mehr als Koordinationsform verstanden wurde, sondern als Wahrheitsinstanz. Was sich am Markt durchsetzt, gilt dann als gut. Was Gewinn bringt, gilt als wertvoll. Was Nachfrage findet, gilt als legitim. Was billig ist, gilt als effizient. Doch ein Markt, der ökologische Schäden, Ausbeutung, Gesundheitsfolgen oder demokratische Risiken nicht im Preis abbildet, koordiniert keine Wahrheit. Er koordiniert verzerrte Signale.
+
+Smith bleibt für die Wirkungsökonomie wichtig, weil dezentrale Entscheidungen unverzichtbar bleiben. Die Wirkungsökonomie will Märkte nicht ersetzen. Sie will ihre Informationsgrundlage verbessern. Märkte können nur dann in Richtung Zukunft arbeiten, wenn Preise, Steuern, Kapitalzugang und Beschaffung Wirkung sichtbar machen.
+
+Der Markt ist nicht das Problem. Ein Markt ohne Wirkungswahrheit ist das Problem.
+
+### 4.2 Karl Marx: Kapitalmacht erkannt, Wirkung nicht operationalisiert
+
+Karl Marx sah, was die liberale Ökonomie des 19. Jahrhunderts unterschätzte: Kapital ist nicht nur Produktionsmittel oder Tauschgröße. Kapital ist ein Machtverhältnis. Es ordnet Arbeit, Eigentum, Zeit, Technik, Produktion und gesellschaftliche Abhängigkeit. Marx beschrieb Ausbeutung, Entfremdung, Konzentration, Krisenanfälligkeit und den Drang des Kapitals, sich selbst zu vermehren.
+
+Diese Kritik berührte eine reale Wunde der Industrialisierung. Menschen wurden zur Arbeitskraft. Natur wurde zum Rohstoff. Zeit wurde zu Lohnzeit. Städte wuchsen, Fabriken verdichteten Arbeit, Eigentum konzentrierte sich, Krisen zerstörten Existenzen. Marx erkannte, dass der Markt nicht einfach freie Gleichheit zwischen Akteuren herstellt, wenn Eigentum, Macht und Abhängigkeit ungleich verteilt sind.
+
+Seine Grenze lag nicht in der Kritik, sondern in der Schlussrichtung. Die Antwort, Kapitalmacht über zentrale Planung und staatliche Eigentumsordnung zu überwinden, erzeugte neue Formen der Blindheit. Zentralplanerische Systeme konnten Bedürfnisse, Wissen, Innovation, lokale Besonderheiten und individuelle Freiheit nicht dauerhaft angemessen verarbeiten. Wo Preise, dezentrale Rückmeldung, offene Kritik und institutionelle Freiheit fehlen, wird Planung selbst zum Machtapparat. Das Problem verschiebt sich von Kapitalmacht zu Staatsmacht.
+
+Für die Wirkungsökonomie bleibt Marx trotzdem bedeutsam. Er zeigt, dass Kapital nicht unschuldig ist, sobald es zum Selbstzweck wird. Er zeigt, dass Eigentum, Produktion und Arbeit nicht nur technische Kategorien sind, sondern soziale Ordnungen. Er zeigt, dass wirtschaftliche Systeme Menschen formen. Aber Marx machte Wirkung nicht zur eigenständigen Steuerungsgröße. Eigentumsform, Klasse und Produktionsverhältnisse standen im Vordergrund. Die Frage, welche konkrete Wirkung eine Tätigkeit, ein Produkt, ein Kapitalfluss oder ein staatlicher Betrieb auf Mensch, Planet und Demokratie erzeugt, blieb nicht systematisch operationalisiert.
+
+Daraus folgt keine Rückkehr zu Marx und keine pauschale Abwehr. Die Lehre lautet: Kapital darf nicht der Kompass sein. Aber Staatseigentum allein ist auch kein Kompass. Wirkung muss gemessen, bewertet und rückgekoppelt werden. Ein privates Unternehmen kann positive Wirkung erzeugen. Ein staatlicher Betrieb kann Verlustleistung erzeugen. Eine Genossenschaft kann gute oder schlechte Wirkung haben. Die Eigentumsform ersetzt nicht die Wirkungsprüfung.
+
+### 4.3 Die Neoklassik: Eleganz des Modells, Verengung der Wirklichkeit
+
+Die Neoklassik brachte eine neue Form der ökonomischen Ordnung hervor. Sie modellierte Nutzen, Knappheit, Preise, Gleichgewicht, Grenzkosten, Präferenzen und rationale Entscheidungen. Jevons, Walras, Menger, Marshall und spätere Schulen schufen eine Ökonomie, die berechenbarer, formalisierter und mathematisch anschlussfähig wurde.
+
+Ihre Stärke liegt bis heute in der Analyse von Knappheit und Anreizen. Preise können Informationen verdichten. Knappheit kann Verhalten verändern. Menschen reagieren auf Kosten und Nutzen. Unternehmen reagieren auf Margen, Risiken und Wettbewerb. Diese Einsichten bleiben wichtig. Eine Wirkungsökonomie, die Anreize ignoriert, wäre wirkungsschwach.
+
+Doch die Neoklassik erreichte ihre Klarheit durch Reduktion. Der Mensch wurde zum rationalen Entscheider mit Präferenzen. Natur wurde Ressource. Gesellschaft wurde Marktumfeld. Macht wurde Störfaktor oder Randbedingung. Demokratie, Vertrauen, Care, psychische Gesundheit, Medienqualität, Biodiversität, Systemresilienz und kulturelle Resonanz passten schlecht in die Modellarchitektur. Was nicht in Preis, Nutzen oder Kosten übersetzt werden konnte, erschien schnell als extern.
+
+Der Begriff der Externalität ist dafür aufschlussreich. Er klingt, als liege ein Schaden außerhalb des wirtschaftlichen Vorgangs. In Wahrheit liegt er nur außerhalb der Rechnung. Für den Fluss, der verschmutzt wird, ist der Schaden nicht extern. Für Menschen mit Atemwegserkrankungen ist Luftverschmutzung nicht extern. Für Kinder in ausbeuterischen Lieferketten ist schlechte Arbeit nicht extern. Extern ist der Schaden vor allem für die Bilanz der Verursacher.
+
+Die Neoklassik beschreibt also eine wichtige Teilwahrheit. Sie zeigt, wie Menschen und Unternehmen auf Signale reagieren. Aber sie fragt zu wenig, ob diese Signale die Wirklichkeit vollständig genug abbilden. Wenn Preise Wirkungen verschweigen, reagieren Akteure rational auf falsche Informationen. Ein Unternehmen kann betriebswirtschaftlich effizient sein und zugleich hohe Verlustleistung erzeugen. Eine Konsumentin kann preisbewusst handeln und damit ungewollt schädliche Lieferketten stärken. Ein Staat kann Wachstum ermöglichen und zugleich künftige Stabilität mindern.
+
+Die Wirkungsökonomie übernimmt deshalb nicht den neoklassischen Preisglauben. Sie übernimmt den Ernst für Anreize. Der Preis bleibt wichtig. Aber er muss ehrlicher werden. Erst wenn Wirkung in Preis, Steuer, Haftung, Kapitalzugang und Beschaffung zurückwirkt, kann dezentrale Entscheidungskraft zukunftsfähig werden.
+
+### 4.4 Keynes: Stabilisierung ohne Wirkungsrichtung
+
+John Maynard Keynes reagierte auf eine Welt, in der Märkte nicht von selbst in Stabilität zurückfanden. Die Weltwirtschaftskrise zeigte, dass Nachfrage einbrechen, Investitionen ausbleiben, Arbeitslosigkeit sich verfestigen und eine Volkswirtschaft in eine Abwärtsspirale geraten kann. Keynes erkannte, dass Erwartungen, Unsicherheit und Nachfrage zentrale Größen sind. Der Staat muss in solchen Situationen investieren, stabilisieren und Vertrauen wiederherstellen.
+
+Diese Einsicht bleibt unverzichtbar. Eine moderne Ordnung kann nicht darauf vertrauen, dass Märkte jede Krise aus eigener Kraft heilen. Arbeitslosigkeit, Krisenangst, Investitionsstau und Nachfrageschwäche können soziale und politische Schäden erzeugen. Keynes rettete die Marktwirtschaft vor der Illusion, dass Nicht-Handeln immer die beste staatliche Antwort sei.
+
+Seine Grenze lag im Maßstab der Stabilisierung. Keynes fragte, wie wirtschaftliche Aktivität wieder in Gang kommt. Er fragte weniger, welche Art von Aktivität stabilisiert wird. Nachfrage ist nicht automatisch positive Wirkung. Ein Staat kann Ausgaben erhöhen und damit Beschäftigung, Produktion und BIP steigern. Wenn diese Ausgaben jedoch fossile Abhängigkeit verlängern, Flächenverbrauch erhöhen, schlechte Infrastruktur stabilisieren oder kurzfristige Konsumanreize gegen langfristige Resilienz setzen, stabilisiert er den falschen Pfad.
+
+Die Wirkungsökonomie widerspricht Keynes nicht. Sie erweitert ihn. Staatliche Nachfrage kann notwendig sein. Öffentliche Investitionen können Märkte aktivieren. Krisenpolitik kann Gesellschaften vor Absturz schützen. Aber die Frage nach der Richtung darf nicht nachgelagert bleiben.
+
+Ein Wirkungshaushalt fragt deshalb nicht nur, ob Geld ausgegeben wird, sondern welche Zustandsveränderung daraus entsteht. Er fragt, ob eine Ausgabe Gesundheit verbessert, Bildung stärkt, Klima schützt, Wohnraum stabilisiert, Pflege entlastet, Infrastruktur resilienter macht oder demokratisches Vertrauen sichert.
+
+Keynes zeigt, dass der Staat handeln muss, wenn Märkte versagen.
+
+Die Wirkungsökonomie ergänzt: Der Staat muss nach Wirkung handeln.
+
+### 4.5 Die soziale Marktwirtschaft: Freiheit und Sicherheit, aber ohne planetare Tiefenlogik
+
+Die soziale Marktwirtschaft war eine der großen Ordnungsleistungen des 20. Jahrhunderts. Nach Krieg, Diktatur und wirtschaftlichem Zusammenbruch verband sie Wettbewerb mit sozialem Ausgleich, Eigentum mit Verantwortung, Markt mit Rechtsstaat und unternehmerische Freiheit mit sozialer Sicherung. Ihre Stärke lag in der politischen Einbettung des Marktes. Sie erkannte, dass reine Marktlogik soziale Spaltung erzeugen kann und dass eine freie Wirtschaft rechtliche, soziale und institutionelle Ordnung braucht.
+
+Dieses Modell prägte den Wiederaufbau, stabilisierte Demokratie und ermöglichte breiten Wohlstand. Es war eine Antwort auf zwei Extreme: ungezügelten Kapitalismus und totalitäre Planwirtschaft. Damit bleibt es historisch stark. Auch die Wirkungsökonomie übernimmt zentrale Anliegen: Freiheit, Wettbewerb, soziale Sicherung, Eigentumsverantwortung, dezentrale Entscheidung, Rechtsstaatlichkeit und öffentliche Rahmensetzung.
+
+### Quellenanker: Kapitel 5 - Wohlstand auf Kosten künftiger Stabilität
+
+*Interne Quelle:* `referenz/kapitel-005-wohlstand-auf-kosten-kuenftiger-stabilitaet/index.html`
+
+Dieses Kapitel führt einen zentralen Begriff der Wirkungsökonomie ein: Vorgriffswohlstand. Gemeint ist Wohlstand, der in der Gegenwart real erscheint, aber auf dem Verbrauch künftiger Stabilität beruht. Das Kapitel unterscheidet deshalb zwischen echtem Wirkungswohlstand, Scheinwohlstand, Reparaturwohlstand und Wohlstand, der durch den Abbau ökologischer, sozialer oder demokratischer Grundlagen entsteht.
+
+Der gefährlichste Irrtum der alten Wohlstandsordnung besteht nicht darin, dass sie keinen Wohlstand geschaffen hätte. Sie hat Häuser gebaut, Industrien aufgebaut, medizinische Versorgung verbessert, Bildung verbreitet, Mobilität ermöglicht, Märkte geöffnet, soziale Sicherungssysteme finanziert und technische Entwicklung beschleunigt. Dieser reale Fortschritt darf nicht geleugnet werden.
+
+Der Irrtum liegt tiefer: Ein Teil dieses Wohlstands war kein echter Wohlstand, sondern vorgezogener Verbrauch künftiger Stabilität.
+
+Wir haben nicht nur aus Produktivität gelebt. Wir haben aus Substanz gelebt: aus Böden, die erschöpft wurden; aus Wasser, das verknappt wurde; aus Atmosphäre, die als kostenlose Deponie benutzt wurde; aus Care-Arbeit, die unterbezahlt blieb; aus Vertrauen, das verbraucht wurde; aus Infrastrukturen, deren Sanierung verschoben wurde; aus Demokratien, die Angriffe auf Wahrheit, Institutionen und Zusammenhalt lange als Nebenthemen behandelten.
+
+Eine Gesellschaft kann reich wirken und ihre künftigen Wohlstandsbedingungen abbauen. Sie kann Wachstum melden und ärmer werden. Sie kann Vermögen aufbauen und Wohnsicherheit verlieren. Sie kann Gesundheitsausgaben steigern und Gesundheit verlieren. Sie kann nach Katastrophen Wiederaufbau finanzieren und diese Reparatur als wirtschaftliche Aktivität zählen, obwohl zuvor realer Wohlstand zerstört wurde. Sie kann billige Produkte kaufen und die Rechnung an Ökosysteme, Arbeiterinnen und Arbeiter, Kommunen, Krankenkassen, Kinder und kommende Generationen weiterreichen.
+
+Der alte Wohlstandsbegriff ist deshalb nicht nur unvollständig. Er ist zeitlich verzerrt. Er zählt, was heute produziert, verkauft und konsumiert wird. Er sieht zu schwach, welche Stabilität morgen fehlt. Er behandelt Gegenwartsnutzen als Wohlstand, auch wenn dieser Nutzen aus künftigen Kosten entsteht.
+
+Die Wirkungsökonomie nennt diesen Fehler beim Namen: Wohlstand, der seine eigenen Grundlagen schwächt, ist kein vollständiger Wohlstand. Er ist Vorgriffswohlstand.
+
+### 5.1 Die alte Wohlstandsrechnung
+
+Die alte Wohlstandsrechnung folgt einer einfachen Logik: Was Einkommen erzeugt, ist wirtschaftlich relevant. Was Umsatz schafft, gilt als Leistung. Was Nachfrage auslöst, erscheint als Beitrag. Was Vermögen erhöht, wird als Wohlstandsgewinn gelesen.
+
+Diese Logik war für Statistik, Steuerung und Verwaltung nützlich, weil sie wirtschaftliche Aktivität sichtbar machte. Aus einer Aktivitätsmessung wurde jedoch ein Fortschrittsmaß. Dort begann die Verwechslung.
+
+Wenn eine Flut Häuser zerstört, ist zunächst realer Wohlstand verloren: Sicherheit, Gebäude, Erinnerungen, Versicherbarkeit, Gesundheit, Lebenszeit und Vertrauen. Der Wiederaufbau kann das BIP erhöhen, weil Bauleistungen, Material, Versicherungszahlungen und Kredite aktiviert werden. Doch niemand wäre reicher, wenn die Zerstörung hätte verhindert werden können.
+
+Der Wiederaufbau kann notwendig sein. Er kann sogar Wirkleistung erzeugen, wenn danach widerstandsfähiger, gerechter und klimafester gebaut wird. Wird aber nur verlorene Substanz ersetzt, ist er keine Wohlstandsmehrung, sondern eine verspätete Rechnung.
+
+Dasselbe gilt für Krankheit, soziale Instabilität, Umweltzerstörung oder Vertrauensverlust. Eine Gesellschaft kann mehr Behandlung, mehr Sicherheit, mehr Verwaltung und mehr Krisenkommunikation bezahlen und dadurch wirtschaftliche Aktivität erzeugen, während die zugrunde liegenden Zustände schlechter werden.
+
+Die alte Rechnung sieht Aktivität. Die Wirkungsrechnung fragt, ob sich Zustände verbessern.
+
+Darum muss Wohlstand von Aktivität getrennt werden.
+
+Aktivität kann Wirkleistung sein, wenn sie echte positive Zustandsveränderung erzeugt. Aktivität kann Scheinleistung sein, wenn sie nach Leistung aussieht, aber keinen positiven Zustand nachweist. Aktivität kann Blindleistung sein, wenn sie ein falsch gesteuertes System beschäftigt hält. Aktivität kann Verlustleistung sein, wenn sie Schäden erzeugt.
+
+Das klassische BIP enthält alle diese Formen. Genau deshalb darf es nicht alleiniger Wohlstandsmaßstab bleiben.
+
+Die vollständige Methodik des Wirkungs-BIP wird später erläutert. An dieser Stelle reicht die Einsicht: Nicht jede wirtschaftliche Aktivität ist Wohlstand.
+
+### 5.2 Vorgriff auf Zukunft
+
+Vorgriff auf Zukunft entsteht, wenn heutiger Nutzen durch den Abbau künftiger Stabilität möglich wird. Diese Verschiebung kann ökologisch, sozial, demokratisch, gesundheitlich, kulturell oder infrastrukturell geschehen. Sie ist besonders gefährlich, weil sie in der Gegenwart wie Wohlstand aussieht.
+
+Fossile Energie war lange günstiger, weil Klima-, Gesundheits-, Sicherheits- und Abhängigkeitskosten nur teilweise im Preis erschienen. Billige Lebensmittel können günstig wirken, weil Bodenverlust, Pestizidfolgen, Wasserstress, Tierleid, Niedriglöhne oder spätere Gesundheitskosten ausgelagert werden. Billige Kleidung kann günstig wirken, weil Löhne gedrückt, Chemikalienrisiken verschoben, Retouren vernichtet und Entsorgungskosten an andere Systeme abgegeben werden. Ein Preis ist dann nicht effizient. Er ist unvollständig.
+
+Die alte Ökonomie nennt solche Folgen Externalitäten. Der Begriff klingt neutral, fast technisch. In Wahrheit handelt es sich um reale Kosten, die im falschen Konto landen. Für das Klima sind CO2-Emissionen nicht extern. Für Menschen, die krank werden, sind Luftschadstoffe nicht extern. Für Arbeiterinnen und Arbeiter in unsicheren Lieferketten ist Ausbeutung nicht extern. Extern sind diese Kosten vor allem für die Bilanz derjenigen, die sie verursachen und nicht vollständig übernehmen.
+
+Vorgriff auf Zukunft ist deshalb eine verdeckte Kreditaufnahme. Nur steht sie nicht im Staatshaushalt. Sie steht in steigenden Klimarisiken, sinkender Biodiversität, geschwächten Böden, überlasteten Familien, erschöpften Pflegekräften, maroder Infrastruktur, Vertrauensverlust und politischer Instabilität.
+
+Die alte Ordnung nahm diesen Kredit auf, ohne ihn als Kredit auszuweisen. Sie hatte keinen Tilgungsplan, keine Risikoprämie und keine Generationenbilanz.
+
+### 5.3 Naturkapital
+
+Natur war die größte stille Subvention der industriellen Moderne.
+
+Atmosphäre, Böden, Wasser, Wälder, Meere, Artenvielfalt, Rohstoffe und stabile Klimasysteme wurden behandelt, als seien sie entweder unbegrenzt verfügbar oder später technisch ersetzbar. Die Wirtschaft rechnete mit Rohstoffen, nicht mit Regenerationsfähigkeit. Sie rechnete mit Energie, nicht mit Atmosphäre. Sie rechnete mit Ertrag, nicht mit Bodenfruchtbarkeit. Sie rechnete mit Fläche, nicht mit Lebensraum.
+
+Dadurch entstand eine doppelte Täuschung. Erstens erschienen Produkte billiger, weil natürliche Schäden nicht vollständig eingepreist wurden. Zweitens erschien die Volkswirtschaft wohlhabender, weil der Abbau von Naturkapital nicht konsequent als Vermögensverzehr behandelt wurde.
+
+Wer einen Wald abholzt, kann Holz verkaufen und Einkommen erzeugen. Wenn aber die Funktionen des Waldes - Wasserspeicherung, Kühlung, Bodenschutz, Kohlenstoffbindung, Biodiversität, Erholung und Resilienz - nicht als Wohlstandsbestand erscheinen, wird Entnahme als Gewinn gelesen.
+
+Naturkapital ist kein romantischer Zusatz zur Ökonomie. Es ist eine materielle Voraussetzung von Wohlstand.
+
+Ohne fruchtbare Böden keine Ernährungssicherheit. Ohne Wasser keine Industrie, Landwirtschaft oder Gesundheit. Ohne Biodiversität keine stabilen Ökosysteme. Ohne stabiles Klima keine planbare Infrastruktur, keine bezahlbare Versicherung, keine sichere Ernte und keine verlässliche Stadtentwicklung.
+
+Der Planet ist nicht die Umgebung der Wirtschaft. Er ist ihre Existenzbedingung.
+
+Deshalb ist Naturzerstörung nicht nur Umweltproblem. Sie ist Wohlstandsverlust.
+
+### 5.4 Sozialkapital
+
+Der zweite Vorgriff betrifft Menschen.
+
+Gesellschaften können sich wohlhabend fühlen, weil bestimmte Kosten nicht bezahlt, sondern von Menschen übernommen werden: von Pflegekräften, Eltern, Lehrkräften, Erzieherinnen und Erziehern, Alleinerziehenden, prekär Beschäftigten, Migrantinnen und Migranten, Ehrenamtlichen, Angehörigen, Menschen in globalen Lieferketten und jenen, die soziale Konflikte im Alltag auffangen. Sie zahlen mit Zeit, Gesundheit, Planbarkeit, Einkommen, psychischer Kraft und Anerkennung.
+
+Care-Arbeit zeigt diesen Fehler besonders deutlich. Pflege, Erziehung, Beziehung, Begleitung, emotionale Stabilisierung, Konfliktvermittlung und soziale Reparatur erzeugen hohe Wirkleistung. Sie ermöglichen Bildung, Gesundheit, Familienleben, Arbeitsfähigkeit, Vertrauen, Sicherheit und demokratische Alltagspraxis. Dennoch erscheint vieles davon im alten Maßstab als Kostenstelle, private Aufgabe oder schlecht vergütete Arbeit.
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
+
+Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
+
+- Glossar und Reader sollten Die Maßstabskrise mit Wirkung, Wirkungspotenzial, Wirkungsrisiko und Rückkopplung verlinken.
+- Fallbeispiele aus Website und Journal als Prüfungsfälle ohne öffentliche Antwortlogik markieren.
+- Wo Begriffe noch unscharf sind, Rückfluss in zentrale Begriffsseiten und Erklärseiten anlegen.
+
+### 7.10 Kurzfazit
+
+Die Maßstabskrise ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
+
+
+## 8. Prüfungsrelevanz
 
 Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.
 
@@ -178,7 +568,7 @@ Für den Fragenpool sind besonders geeignet:
 - Missverständnisse: Reichweite, Aktivität, Reporting oder Absicht als Wirkung auszugeben.
 - Transfer: positive Netto-Wirkung unter Nichtkompensation und, wo passend, Reverse Merit Order begründen.
 
-## 8. Quellen
+## 9. Quellen
 
 ### Interne Quellen
 
@@ -195,7 +585,7 @@ Für den Fragenpool sind besonders geeignet:
 - GRI Standards, soweit fuer Berichts- und Indikatorenfragen einschlägig.
 - Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
 
-## 9. Rückfluss in den WÖk-Korpus
+## 10. Rückfluss in den WÖk-Korpus
 
 - **Glossar/Begriffe:** Im Tiefensprint prüfen, welche Begriffe aus **Die Maßstabskrise** eigene Glossarseiten oder präzisere Verweise brauchen.
 - **Website/Erklärseiten:** Prüfen, ob eine kurze öffentliche Erklärseite oder ein Baustein für die Bibliothek fehlt.
