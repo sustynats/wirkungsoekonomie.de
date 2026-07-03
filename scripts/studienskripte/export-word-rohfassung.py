@@ -20,11 +20,30 @@ TABLE_BORDER = "Table Grid"
 def clean_inline(text: str) -> str:
     text = re.sub(r"\$\$([^$]+)\$\$", r"\1", text)
     text = re.sub(r"\$([^$]+)\$", r"\1", text)
+    text = clean_formula_text(text)
     text = re.sub(r"`([^`]+)`", r"\1", text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
     text = re.sub(r"\*([^*]+)\*", r"\1", text)
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1 (\2)", text)
     return text.strip()
+
+
+def clean_formula_text(text: str) -> str:
+    replacements = {
+        r"\sum": "sum",
+        r"\cdot": "*",
+        r"\Delta": "Delta ",
+        r"\frac": "frac",
+        r"\leq": "<=",
+        r"\geq": ">=",
+        r"\times": "*",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    text = text.replace("{", "").replace("}", "")
+    text = re.sub(r"\\([A-Za-z]+)", r"\1", text)
+    text = re.sub(r"\s+", " ", text)
+    return text
 
 
 def set_style(doc: Document) -> None:
@@ -131,7 +150,7 @@ def export(markdown_path: Path, output_path: Path) -> None:
 
         if line.strip() == "$$":
             if in_formula:
-                doc.add_paragraph("Formel: " + " ".join(formula_buffer), style="Intense Quote")
+                doc.add_paragraph("Formel: " + clean_formula_text(" ".join(formula_buffer)), style="Intense Quote")
                 formula_buffer = []
                 in_formula = False
             else:
@@ -174,7 +193,7 @@ def export(markdown_path: Path, output_path: Path) -> None:
         elif re.match(r"^[-*]\s+", stripped):
             doc.add_paragraph(clean_inline(re.sub(r"^[-*]\s+", "", stripped)), style="List Bullet")
         elif re.match(r"^\d+\.\s+", stripped):
-            doc.add_paragraph(clean_inline(re.sub(r"^\d+\.\s+", "", stripped)), style="List Number")
+            doc.add_paragraph(clean_inline(stripped))
         else:
             doc.add_paragraph(clean_inline(stripped))
         idx += 1
