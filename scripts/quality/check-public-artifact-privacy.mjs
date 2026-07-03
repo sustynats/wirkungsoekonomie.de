@@ -18,6 +18,7 @@ const textExtensions = new Set([
 
 const scannedPaths = [
   "_site",
+  "zertifikat",
   "assets/search/search-index.json",
   "public/data/woek-search-meta.json",
   "public/data/glossary-lookup.json",
@@ -76,6 +77,13 @@ function assertNoCertificatePdfs() {
   }
 }
 
+function assertNoStaticPersonCertificatePage(file) {
+  const relative = toRepoRelative(file);
+  if (/(?:^|\/)(?:_site\/)?zertifikat\/WOEK-[A-Z0-9-]+\/index\.html$/i.test(relative)) {
+    failures.push(`${relative}: person-level certificate pages must not be stored in the public repo/artifact`);
+  }
+}
+
 function assertCertificateRegistryIsNeutral(file, text) {
   const relative = toRepoRelative(file);
   const isCertificateRegistry =
@@ -101,6 +109,7 @@ function scanTextFile(file) {
   const text = fs.readFileSync(file, "utf8");
   const relative = toRepoRelative(file);
   scannedFiles.push(relative);
+  assertNoStaticPersonCertificatePage(file);
 
   for (const { label, pattern } of blockedContentPatterns) {
     if (pattern.test(text)) failures.push(`${relative}: contains ${label}`);

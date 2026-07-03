@@ -9,6 +9,11 @@ const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
 const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 const registry = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
 const siteUrl = "https://wirkungsoekonomie.de";
+const publicCertificateRecords = Array.isArray(registry.certificates) ? registry.certificates : [];
+
+if (publicCertificateRecords.length > 0) {
+  throw new Error("Public website repo must not contain person-level certificate records.");
+}
 
 function esc(value) {
   return String(value ?? "").replace(/[&<>"]/g, (char) => ({
@@ -158,12 +163,33 @@ function renderIndex() {
         (() => {
           const form = document.querySelector("[data-certificate-id-form]");
           if (!form) return;
+          const result = document.createElement("p");
+          result.className = "card-text";
+          result.setAttribute("aria-live", "polite");
+          form.append(result);
           form.addEventListener("submit", (event) => {
             event.preventDefault();
             const input = form.querySelector("input[name='certificateId']");
             const id = String(input?.value || "").trim().toUpperCase().replace(/[^A-Z0-9-]/g, "");
             if (!id) return;
-            window.location.href = id + "/";
+            result.textContent = "Zertifikat wird im Verifikationssystem geprüft ...";
+            fetch("https://akademie.wirkungsoekonomie.de/api/certificates/" + encodeURIComponent(id), {
+              headers: { "Accept": "application/json" }
+            })
+              .then((response) => response.json().then((body) => ({ ok: response.ok, body })))
+              .then(({ ok, body }) => {
+                if (!ok || !body.ok || !body.certificate) {
+                  result.textContent = body.message || "Dieses Zertifikat konnte nicht verifiziert werden.";
+                  return;
+                }
+                const certificate = body.certificate;
+                const status = certificate.statusLabel || certificate.status || "verifiziert";
+                const issued = certificate.issueDateDisplay || certificate.issueDate || "ohne Datumsanzeige";
+                result.textContent = "Verifiziert: " + (certificate.qualificationLabel || "WÖk-Zertifikat") + ", Status " + status + ", ausgestellt " + issued + ".";
+              })
+              .catch(() => {
+                result.textContent = "Die Zertifikatsprüfung ist derzeit nicht erreichbar.";
+              });
           });
         })();
       </script>`;
@@ -249,19 +275,12 @@ function renderCertificate(record) {
 
 fs.mkdirSync(outRoot, { recursive: true });
 
-const records = registry.certificates.map((record) => ({
-  ...record,
-  verificationUrl: certificateUrl(record),
-  pdfUrl: `${siteUrl}/${record.pdfPath}`,
-  registryFingerprint: fingerprint(record)
-}));
+for (const entry of fs.readdirSync(outRoot, { withFileTypes: true })) {
+  if (entry.isDirectory() && /^WOEK-[A-Z0-9-]+$/.test(entry.name)) {
+    fs.rmSync(path.join(outRoot, entry.name), { recursive: true, force: true });
+  }
+}
 
 fs.writeFileSync(path.join(outRoot, "index.html"), renderIndex());
 
-for (const record of records) {
-  const dir = path.join(outRoot, record.certificateId);
-  fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), renderCertificate(record));
-}
-
-console.log(`Wrote ${records.length} certificate verification pages.`);
+console.log("Wrote neutral certificate verification page; no person-level certificate pages in public repo.");
