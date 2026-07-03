@@ -1194,11 +1194,13 @@ function chapterBlock(term) {
 }
 
 function sourceReferenceBlock(term) {
+  const sourceUrl = publicText(term.sourceUrl || term.sourceURL || term.sourceHref || term.source_url || "");
   const source = publicText(term.sourceDocument || term.source_document || "");
   const sourceSection = publicText(term.sourceSection || term.source_section || "");
-  if (containsForbiddenPublicText(source) || containsForbiddenPublicText(sourceSection)) return "";
-  if (!source || /\.(md|docx?|rtf|txt)(\?|#|$)/i.test(source)) return "";
-  const reference = resolveContentReference(source, {
+  if (containsForbiddenPublicText(sourceUrl) || containsForbiddenPublicText(source) || containsForbiddenPublicText(sourceSection)) return "";
+  if (!sourceUrl && (!source || /\.(md|docx?|rtf|txt)(\?|#|$)/i.test(source))) return "";
+  const reference = resolveContentReference(sourceUrl || source, {
+    fallbackTitle: source,
     scopeLabel: sourceSection,
     allowTextFallback: false,
     relevanceReason: "source",
