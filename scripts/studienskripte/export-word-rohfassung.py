@@ -139,16 +139,25 @@ def export(markdown_path: Path, output_path: Path) -> None:
     idx = 0
     in_formula = False
     formula_buffer: list[str] = []
+    paragraph_buffer: list[str] = []
+
+    def flush_paragraph() -> None:
+        nonlocal paragraph_buffer
+        if paragraph_buffer:
+            doc.add_paragraph(clean_inline(" ".join(paragraph_buffer)))
+            paragraph_buffer = []
 
     while idx < len(lines):
         raw = lines[idx]
         line = raw.rstrip()
 
         if line.startswith("# "):
+            flush_paragraph()
             idx += 1
             continue
 
         if line.strip() == "$$":
+            flush_paragraph()
             if in_formula:
                 doc.add_paragraph("Formel: " + clean_formula_text(" ".join(formula_buffer)), style="Intense Quote")
                 formula_buffer = []
@@ -165,12 +174,14 @@ def export(markdown_path: Path, output_path: Path) -> None:
 
         image_match = re.match(r"!\[([^\]]*)\]\(([^)]+)\)", line.strip())
         if image_match:
+            flush_paragraph()
             alt, path = image_match.groups()
             doc.add_paragraph(f"Bildvorgabe: {clean_inline(alt)} — {path}", style="Intense Quote")
             idx += 1
             continue
 
         if is_table_start(lines, idx):
+            flush_paragraph()
             table_rows = [split_table_row(line)]
             idx += 2
             while idx < len(lines) and "|" in lines[idx] and lines[idx].strip():
@@ -181,23 +192,30 @@ def export(markdown_path: Path, output_path: Path) -> None:
 
         stripped = line.strip()
         if not stripped:
+            flush_paragraph()
             idx += 1
             continue
 
         if stripped.startswith("### "):
+            flush_paragraph()
             doc.add_paragraph(clean_inline(stripped[4:]), style="Heading 3")
         elif stripped.startswith("## "):
+            flush_paragraph()
             doc.add_paragraph(clean_inline(stripped[3:]), style="Heading 2")
         elif stripped.startswith("# "):
+            flush_paragraph()
             doc.add_paragraph(clean_inline(stripped[2:]), style="Heading 1")
         elif re.match(r"^[-*]\s+", stripped):
+            flush_paragraph()
             doc.add_paragraph(clean_inline(re.sub(r"^[-*]\s+", "", stripped)), style="List Bullet")
         elif re.match(r"^\d+\.\s+", stripped):
+            flush_paragraph()
             doc.add_paragraph(clean_inline(stripped))
         else:
-            doc.add_paragraph(clean_inline(stripped))
+            paragraph_buffer.append(stripped)
         idx += 1
 
+    flush_paragraph()
     output_path.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output_path)
 
