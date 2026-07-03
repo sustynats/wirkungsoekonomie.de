@@ -153,8 +153,8 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 ## Danach
 
 1. [x] Grundstudium V01-V19 zu Tiefenskript-Arbeitsfassungen ausbauen.
-2. [ ] Wirkungsmanagement V1-V10 zu Tiefenskripten ausbauen.
-3. [ ] Impact-Controlling V1-V10 zu Tiefenskripten ausbauen.
+2. [x] Wirkungsmanagement V1-V10 zu Tiefenskript-Arbeitsfassungen ausbauen.
+3. [x] Impact-Controlling V1-V10 zu Tiefenskript-Arbeitsfassungen ausbauen.
 4. [ ] Pruefungsfragen-Pools je Vorlesung geschuetzt erweitern.
 
 ## Sprint 6 · Grundstudium V01-V09
@@ -184,3 +184,40 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [x] `woek-g-v19`
 - [x] `woek-g-v20`
 - Ergebnis: `tiefensprint-arbeitsfassung` auf Basis der Referenzkapitel zu Wirkung, Wirkungspotenzial, Wirkungsräumen, Handeln/Unterlassen, Wirkungsordnungen, Nebenwirkungen, Märkten, Medien, Zeit/Generationen und Resonanz.
+
+## Sprint 8 · Wirkungsmanagement V1-V10
+
+- [x] `wirkungsmanagement-v1`
+- [x] `wirkungsmanagement-v2`
+- [x] `wirkungsmanagement-v3`
+- [x] `wirkungsmanagement-v4`
+- [x] `wirkungsmanagement-v5`
+- [x] `wirkungsmanagement-v6`
+- [x] `wirkungsmanagement-v7`
+- [x] `wirkungsmanagement-v8`
+- [x] `wirkungsmanagement-v9`
+- [x] `wirkungsmanagement-v10`
+- Ergebnis: `tiefensprint-arbeitsfassung` mit Organisations-, Strategie-, Wesentlichkeits-, Risiko-, Kultur-, Kommunikations- und 90-Tage-Umsetzungsperspektive.
+
+## Sprint 9 · Impact-Controlling V1-V10
+
+- [x] `wirkungscontrolling-wc-v1`
+- [x] `wirkungscontrolling-wc-v2`
+- [x] `wirkungscontrolling-wc-v3`
+- [x] `wirkungscontrolling-wc-v4`
+- [x] `wirkungscontrolling-wc-v5`
+- [x] `wirkungscontrolling-wc-v6`
+- [x] `wirkungscontrolling-wc-v7`
+- [x] `wirkungscontrolling-wc-v8`
+- [x] `wirkungscontrolling-wc-v9`
+- [x] `wirkungscontrolling-wc-v10`
+- Ergebnis: `tiefensprint-arbeitsfassung` mit KII/KPI-Stack, Rahmenwerken, WÖk-IDs, Scorecards, Reverse Merit Order, Datenräumen, T-SROI/IoI, CAPEX/OPEX/Einkauf, Audit und Abschlussfall.
+
+## Aktueller Gesamtstand
+
+- 56/56 V1-Vorlesungen stehen als `tiefensprint-arbeitsfassung` im Masterbestand.
+- Master: `content/studienskripte/`
+- Word-Rohfassungen: `docs/studienskripte/word-rohfassungen/`
+- App-Spiegel: `woek-akademie-app/content/lehrgaenge/`
+- Umfang: ca. 474k Woerter im Masterbestand.
+- Weiter offen: Claude-CI/PDF-Finalisierung und geschuetzte Pruefungs-Pools mit Antwortlogik.
