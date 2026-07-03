@@ -32,3 +32,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Commit:** `19fb09f664`. Vorher waren die im CSS referenzierten Fonts nicht geladen (System-Fallback).
 - **Hinweis:** Das ist Claudes Design-Lane — von Codex nur committet, weil vom Nutzer direkt beauftragt.
 - **Offen für Claude:** Design gehört ab jetzt Claude; kann darauf aufsetzen oder anpassen. Codex fasst Design-/App-UX-/Folien-/TTS-/Video-Dateien nicht mehr an.
+
+### Codex · Website-Release PR #71/#69/#67 (live)
+- **Veröffentlicht:** PR #71 `feat/akademie-zwei-zugaenge` (`b1ee3a4`), PR #69 `ci/website-gates` (`523c5c9`), PR #67 `glossary-relations` (`e599087`).
+- **Inhalt:** Akademie-Seite mit zwei klaren Zugängen; CI-/Privacy-/URL-Gates für Website-PRs; zentrales Glossar-Beziehungsnetz als `assets/data/glossary-relations.json`.
+- **Deploy:** GitHub Pages Workflow `deploy.yml` grün, Run `28674403646`.
+- **Geprüft:** `npm run build && npm run build:artifact && bash scripts/quality/url-baseline-diff.sh`; URL-Baseline `4622`, aktuelle URLs `4623`, `removed = 0`, neu/erlaubt: `/institut/`.
+- **Live-Smoke:** `/`, `/akademie.html`, `/institut/`, `/begriffe/output/` jeweils HTTP 200; alte Akademie-Metaphrase `0` Treffer; `assets/data/glossary-relations.json` HTTP 200.
+- **Privacy:** statische personenbezogene Zertifikats-Detailseiten sind nicht öffentlich erreichbar; Zertifikatsdaten bleiben ueber Backend/geschuetzte Quelle zu verifizieren bzw. berechtigt auszuliefern, nicht aus dem oeffentlichen GitHub-Artefakt.
+- **Nicht gemerged:** PR #65 bleibt Claudes Design-Lane; PR #68 ist durch #69 ueberholt; alte/unklare PRs #2/#9/#13/#14/#16 bleiben separat zu triagieren.
