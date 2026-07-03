@@ -17995,3 +17995,64 @@ body .audio-transcript-note {
     font-size: 0.94rem;
   }
 }
+
+/* =====================================================================
+   WÖk Design-Refresh (Codex, 2026-07-03) — Override-Layer am Dateiende.
+   Zweck: echte selbst-gehostete Schriften (DSGVO), ruhigere Typo-Skala,
+   konsistente Abstands-Tokens, robuste (umbrechende) Mehrspalten-Grids.
+   Reversibel: dieser Block kann als Ganzes entfernt werden.
+   ===================================================================== */
+
+/* 1) Selbst-gehostete Schriften — DSGVO-konform, kein Google-CDN */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/inter-400.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/inter-500.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/inter-600.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/inter-700.woff2") format("woff2");}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/source-serif-4-400.woff2") format("woff2");}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url("../fonts/source-serif-4-400-italic.woff2") format("woff2");}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/source-serif-4-600.woff2") format("woff2");}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/source-serif-4-700.woff2") format("woff2");}
+
+/* 2) Konsistente Tokens (überschreibt frühere Mehrfach-Definitionen) */
+:root{
+  --space-gutter: clamp(1rem, 4vw, 2.5rem);
+  --space-section: clamp(2.25rem, 5vw, 4rem);
+  --measure: 68ch;
+}
+
+/* 3) Typografische Basis — Laufweite, Zeilenhöhe, Rendering */
+body{
+  font-feature-settings:"kern" 1,"liga" 1,"calt" 1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  line-height:1.7;
+}
+h1,h2,h3,h4,h5,h6,.hero-title,.card-title,.section-title{
+  font-family:var(--font-heading);
+  line-height:1.16;
+  letter-spacing:-0.012em;
+  text-wrap:balance;
+}
+h1,.hero-title{letter-spacing:-0.022em;}
+/* angenehme Lesebreite + weichere Umbrüche für Fließtext */
+.prose p,.prose li,article p,.hero-text,.hero-subtitle{max-width:var(--measure);}
+.prose p{text-wrap:pretty;}
+
+/* 4) Mehrspalten robust: feste Spaltenzahlen brechen auf schmalen Screens um */
+@media (max-width:900px){
+  .card-grid,.card-grid.three,.card-grid.four,.why-grid,.timeline-grid,
+  .academy-stat-grid,.portal-meta-grid,.standard-stage-grid,.demo-method-grid,
+  .result-explainer-grid,.scanner-mode-card-grid,.scanner-quality-grid,
+  .compass-preview-grid,.document-link-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media (max-width:620px){
+  .card-grid,.card-grid.three,.card-grid.four,.why-grid,.timeline-grid,
+  .academy-stat-grid,.portal-meta-grid,.standard-stage-grid,.demo-method-grid,
+  .result-explainer-grid,.scanner-mode-card-grid,.scanner-quality-grid,
+  .compass-preview-grid,.document-link-grid{
+    grid-template-columns:1fr!important;
+  }
+}
