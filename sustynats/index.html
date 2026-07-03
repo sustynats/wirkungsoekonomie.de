@@ -72,7 +72,7 @@
       .page {
         width: min(100%, 780px);
         margin: 0 auto;
-        padding: 1rem;
+        padding: 0.78rem 0.88rem calc(1.4rem + env(safe-area-inset-bottom));
       }
 
       .topbar {
@@ -80,7 +80,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 0.65rem;
-        min-height: 3.25rem;
+        min-height: 2.75rem;
       }
 
       .brand {
@@ -116,19 +116,42 @@
         text-underline-offset: 0.22em;
       }
 
+      .skip-link {
+        position: fixed;
+        top: 0.7rem;
+        left: 0.7rem;
+        z-index: 20;
+        transform: translateY(-160%);
+        padding: 0.62rem 0.78rem;
+        border-radius: 6px;
+        background: var(--navy);
+        color: var(--white);
+        font-weight: 850;
+        text-decoration: none;
+      }
+
+      .skip-link:focus,
+      .skip-link:focus-visible {
+        transform: translateY(0);
+      }
+
       .hero {
         display: grid;
-        gap: 1.15rem;
-        padding: clamp(1.1rem, 4vw, 2rem) 0 1.4rem;
+        grid-template-columns: minmax(0, 1fr) clamp(5.6rem, 28vw, 7.6rem);
+        align-items: start;
+        gap: 0.72rem 0.9rem;
+        padding: 0.7rem 0 1.05rem;
       }
 
       .portrait-wrap {
+        grid-column: 2;
+        grid-row: 1 / span 3;
         position: relative;
         overflow: hidden;
         border-radius: 8px;
         background: var(--navy);
-        box-shadow: var(--shadow);
-        aspect-ratio: 1 / 1;
+        box-shadow: 0 12px 34px rgba(11, 16, 32, 0.16);
+        aspect-ratio: 4 / 5;
       }
 
       .portrait-wrap picture,
@@ -151,8 +174,7 @@
       }
 
       .hero-copy {
-        display: grid;
-        gap: 0.85rem;
+        display: contents;
       }
 
       .kicker {
@@ -182,49 +204,61 @@
       }
 
       h1 {
+        grid-column: 1;
         max-width: 12ch;
-        font-size: clamp(3rem, 17vw, 6rem);
+        font-size: clamp(2.55rem, 13.2vw, 3.85rem);
       }
 
       .lead {
+        grid-column: 1 / -1;
         color: var(--navy);
         font-family: var(--font-heading);
-        font-size: clamp(1.25rem, 5.8vw, 2.2rem);
-        line-height: 1.12;
+        font-size: clamp(1.08rem, 5.05vw, 1.5rem);
+        line-height: 1.16;
+      }
+
+      .lead span {
+        display: block;
       }
 
       .intro {
+        grid-column: 1 / -1;
         order: 4;
         color: var(--muted);
-        font-size: 1rem;
+        font-size: 0.94rem;
+        line-height: 1.5;
       }
 
       .signal-row {
+        grid-column: 1 / -1;
         order: 5;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.55rem;
-        margin-top: 0.15rem;
+        gap: 0.42rem;
+        margin-top: 0.04rem;
       }
 
       .signal {
-        min-height: 4.2rem;
-        padding: 0.68rem 0.6rem;
+        display: grid;
+        align-items: center;
+        min-height: 3.45rem;
+        padding: 0.58rem 0.44rem;
         border: 1px solid var(--line);
         border-radius: var(--radius);
         background: rgba(255, 255, 255, 0.66);
         color: var(--navy);
-        font-size: 0.78rem;
+        font-size: 0.72rem;
         font-weight: 820;
         line-height: 1.18;
         text-align: center;
       }
 
       .actions {
+        grid-column: 1 / -1;
         order: 3;
         display: grid;
-        gap: 0.72rem;
-        margin-top: 0.25rem;
+        gap: 0.54rem;
+        margin-top: 0.05rem;
       }
 
       .btn {
@@ -232,8 +266,8 @@
         align-items: center;
         justify-content: space-between;
         gap: 0.8rem;
-        min-height: 3.35rem;
-        padding: 0.86rem 1rem;
+        min-height: 3.1rem;
+        padding: 0.78rem 0.88rem;
         border: 1px solid transparent;
         border-radius: var(--radius);
         font-weight: 860;
@@ -267,7 +301,7 @@
       .section {
         display: grid;
         gap: 1rem;
-        padding: 1.35rem 0;
+        padding: 1.1rem 0;
       }
 
       .section-header {
@@ -276,7 +310,7 @@
       }
 
       .section-header h2 {
-        font-size: clamp(1.72rem, 9vw, 3rem);
+        font-size: clamp(1.55rem, 8vw, 2.7rem);
       }
 
       .section-header p {
@@ -285,13 +319,13 @@
 
       .link-stack {
         display: grid;
-        gap: 0.72rem;
+        gap: 0.6rem;
       }
 
       .link-card {
         display: grid;
-        gap: 0.42rem;
-        padding: 1rem;
+        gap: 0.35rem;
+        padding: 0.86rem;
         border: 1px solid var(--line);
         border-left: 4px solid var(--green);
         border-radius: var(--radius);
@@ -314,13 +348,13 @@
         justify-content: space-between;
         gap: 0.75rem;
         color: var(--navy);
-        font-size: 1.02rem;
+        font-size: 0.98rem;
         line-height: 1.22;
       }
 
       .link-card span {
         color: var(--muted);
-        font-size: 0.92rem;
+        font-size: 0.88rem;
       }
 
       .link-card svg {
@@ -332,9 +366,9 @@
 
       .quote-band {
         display: grid;
-        gap: 0.9rem;
-        margin: 0.4rem -1rem;
-        padding: 1.35rem 1rem;
+        gap: 0.72rem;
+        margin: 0.35rem -0.88rem;
+        padding: 1.15rem 0.88rem;
         background: var(--navy);
         color: var(--white);
       }
@@ -346,7 +380,7 @@
       .quote-band strong {
         color: var(--white);
         font-family: var(--font-heading);
-        font-size: clamp(1.8rem, 9vw, 3.4rem);
+        font-size: clamp(1.58rem, 8.2vw, 3.2rem);
         font-weight: 500;
         line-height: 1.08;
       }
@@ -359,14 +393,15 @@
       .identity-card {
         display: grid;
         gap: 0.35rem;
-        padding: 1rem;
+        padding: 0.9rem;
         border: 1px solid var(--line);
         border-radius: var(--radius);
         background: rgba(255, 252, 245, 0.78);
       }
 
       .identity-card h3 {
-        font-size: 1.28rem;
+        font-size: 1.14rem;
+        line-height: 1.13;
       }
 
       .identity-card p {
@@ -424,23 +459,39 @@
         .portrait-wrap {
           aspect-ratio: 5 / 6;
           order: 2;
+          grid-column: auto;
+          grid-row: auto;
+          box-shadow: var(--shadow);
         }
 
         .hero-copy {
+          display: grid;
+          gap: 0.85rem;
           order: 1;
         }
 
         h1 {
+          grid-column: auto;
           font-size: clamp(5rem, 9vw, 8rem);
         }
 
+        .lead {
+          grid-column: auto;
+          font-size: clamp(1.25rem, 5.8vw, 2.2rem);
+          line-height: 1.12;
+        }
+
         .intro {
+          grid-column: auto;
           max-width: 40rem;
           font-size: 1.08rem;
         }
 
         .actions {
+          grid-column: auto;
           grid-template-columns: 1fr 1fr;
+          gap: 0.72rem;
+          margin-top: 0.25rem;
         }
 
         .actions .btn:first-child {
@@ -471,6 +522,35 @@
         }
       }
 
+      @media (max-width: 380px) {
+        .page {
+          padding-inline: 0.72rem;
+        }
+
+        .hero {
+          grid-template-columns: minmax(0, 1fr) 5.25rem;
+          gap: 0.62rem 0.72rem;
+        }
+
+        h1 {
+          font-size: clamp(2.28rem, 12.8vw, 3.1rem);
+        }
+
+        .lead {
+          font-size: 1.03rem;
+        }
+
+        .signal {
+          min-height: 3.25rem;
+          font-size: 0.68rem;
+        }
+
+        .btn {
+          min-height: 3rem;
+          padding-inline: 0.78rem;
+        }
+      }
+
       @media (prefers-reduced-motion: no-preference) {
         .btn,
         .link-card,
@@ -495,7 +575,7 @@
       }
     </style>
   </head>
-  <body>
+  <body data-wirkungsraum-exclude="true">
     <div class="page">
       <header class="topbar">
         <a class="brand" href="../" aria-label="Wirkungsökonomie Startseite">
@@ -516,7 +596,7 @@
           <div class="hero-copy">
             <p class="kicker">Natalie Weber</p>
             <h1 id="natalie-title">Wirkung wird Kompass.</h1>
-            <p class="lead">Begründerin der Wirkungsökonomie, Gründerin und Dozentin der WÖk-Akademie und Gründerin des Wirkungsinstituts.</p>
+            <p class="lead"><span>Begründerin der Wirkungsökonomie.</span><span>Gründerin und Dozentin der WÖk-Akademie.</span><span>Gründerin des Wirkungsinstituts.</span></p>
             <p class="intro">Drei Orte, eine Linie: Die Wirkungsökonomie beschreibt den Maßstab, die Akademie übersetzt ihn in Bildung, das Institut entwickelt Forschung, Methodik und Anwendung weiter.</p>
             <div class="signal-row" aria-label="Kern der Wirkungsökonomie">
               <div class="signal">Mensch stärken</div>
