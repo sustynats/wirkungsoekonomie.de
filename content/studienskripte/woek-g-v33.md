@@ -5,7 +5,7 @@
 **Vorlesungscode:** V33  
 **Modul/Abschnitt:** G3.3  
 **Titel:** NWI und T-SROI unterscheiden  
-**Status:** Tiefenskript-Sprint 5 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen  
+**Status:** Tiefenskript-Sprint 5 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
 **Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v33-nwi-und-t-sroi-unterscheiden.md`  
 **Ablage:** Markdown-Master in `content/studienskripte/woek-g-v33.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v33.docx`  
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
