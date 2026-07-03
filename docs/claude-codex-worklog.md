@@ -45,7 +45,7 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 |---|---|---|
 | Video-Skripte Tier 1 | Codex hat 16 Skriptdateien unter `docs/video-skripte/` angelegt. | Claude: Sprechertexte, Audio-QS, Video-Rendering (wartet auf Natalies Go). |
 | Video-Handoff | `docs/CODEX-HANDOFF-videoskripte.md` liegt im Website-Repo. | Beide: als Formatvorgabe fuer weitere Video-Batches nutzen. |
-| Studienskripte | 56 V1-Vorlesungen liegen als Rohfassungs-Artefakte vor: Markdown-Master, Word-Rohfassung, Index; V21-V36 mit App-Spiegel. | Codex: Tiefenfassungen sprintweise; Claude: CI/CD-Finalisierung, Reader, PDF. |
+| Studienskripte | 56/56 V1-Vorlesungen liegen als `tiefensprint-arbeitsfassung` vor: Markdown-Master, Word-Rohfassung, App-Spiegel; geschuetzte Fragepools V1 sind angelegt. | Claude: CI/CD-Finalisierung, Reader, PDF; Codex: bei Bedarf Nachschaerfung einzelner Skripte/Pools. |
 | Institut-App | Feature-komplett live auf `main` (Glossar zentral, Auth-Fix, Forum-Struktur, Frag die WÖk + Wirkungscheck/Faktencheck auf Oracle, Board Zoom/Notizzettel, Dashboard, Dev-Login). Letzter Commit `3735c1b`. | Codex: nichts offen; KI-Tools liegen zentral auf Oracle. |
 | PR #69 (Website) | Release-Blocker Suchindex behoben, Gate gruen, von Claude QA-abgenommen. | Natalie: mergen (Ready → Squash). |
 | Zertifikat WOEK-PH-2026-0002 | Codex nicht angefasst. | Natalie: behalten oder anonymisieren? |
@@ -53,6 +53,15 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 | Institut-Arbeitsteilung | `docs/institut-arbeitsteilung-claude-codex.md` beschreibt Institut-spezifischen Prozess. | Beide: bei Institut-App/Website-Schnittstellen nutzen. |
 
 ## Chronologisches Log
+
+### 2026-07-03 - Codex - Studienskripte 56/56 + geschuetzte Pruefungs-Pools
+- Status: vorbereitet
+- Repo/Pfad: Website-Repo `content/studienskripte/`, `docs/studienskripte/`, `bibliothek/studienskripte/`; Akademie-App `content/lehrgaenge/`, `content/pruefungen/question-pools/`, `content/pruefungen/assessments/`
+- Branch/Commit: Website bis `74fbe025ec` plus Pruefungsstatus-Commit; Akademie-App bis `4c63175` plus Pruefungspool-Commit
+- Geaendert: alle 56 V1-Vorlesungen auf `tiefensprint-arbeitsfassung`, ca. 474k Woerter Masterbestand, 56 Word-Rohfassungen, 56 App-Spiegel; 56 geschuetzte slug-basierte Fragepools mit je 8 Fragen und Antwortlogik; 5 Assessment-Blueprints.
+- Pruefung: JSON ok; App-Typecheck gruen; repraesentative DOCX-Renders fuer V20, V21, V28, V32, V36, WM10 und WC10; 456 `CorrectAnswer`-Eintraege inkl. V20-Pilotpool.
+- Offen fuer Claude: CI/CD-Lektorat, Reader-/PDF-Finalisierung, finale Freigabe und ggf. kuratierte Nachschaerfung der Pruefungslogik.
+- Offen fuer Codex: keine Massenproduktion offen; nur gezielte Nacharbeit, falls Claude/Natalie beim Finalisieren etwas markiert.
 
 ### 2026-07-03 - Codex - Studienskripte Sprint 0 Produktionsschiene
 - Status: vorbereitet
