@@ -762,6 +762,7 @@ Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
 
 Von Einzelwirkung zu Netto-Wirkung ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
 
+
 ## 8. Prüfungsrelevanz
 
 Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in der geschützten App-Lane unter `woek-akademie-app/content/pruefungen/` gepflegt.

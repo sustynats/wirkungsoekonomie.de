@@ -437,6 +437,152 @@ const lectures = [
       "Reader/PDF sollte Scorecards tabellarisch und als Profilgrafik abbilden.",
     ],
   },
+  {
+    slug: "woek-g-v33",
+    sprint: 5,
+    code: "V33",
+    title: "NWI und T-SROI unterscheiden",
+    thesis:
+      "NWI und T-SROI beantworten unterschiedliche Fragen: Der Netto-Wirkungs-Index verdichtet ein Wirkungsprofil, T-SROI beschreibt Transformationswirkung im Verhältnis zu eingesetzten Ressourcen und langfristigen Systemeffekten.",
+    pages: [
+      "referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html",
+      "werkzeuge/netto-wirkungs-index/index.html",
+      "werkzeuge/t-sroi/index.html",
+      "werkzeuge/impact-controlling/t-sroi/index.html",
+      "werkzeuge/impact-controlling/index.html",
+      "werkzeuge/impact-controlling/detailkonzepte/t-sroi/index.html",
+      "werkzeuge/impact-controlling/dossiers/t-sroi/index.html",
+      "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/index.html",
+      "werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html",
+      "dokumente/whitepaper-t-sroi/index.html",
+      "wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/index.html",
+    ],
+    matrix: [
+      ["NWI", "verdichtetes Bewertungsprofil positiver Netto-Wirkung", "Index als absolute Wahrheit lesen", "Profil, Datenqualität, Grenzen und Sperrlogik mitlesen"],
+      ["T-SROI", "Verhältnis von Transformationswirkung zu Ressourceneinsatz", "klassischen ROI mit Wirkung verwechseln", "langfristige Systemwirkung und vermiedene Schäden berücksichtigen"],
+      ["Scorecard", "mehrdimensionales Vorprofil", "Scorecard und Index gleichsetzen", "Scorecard erklärt, NWI verdichtet"],
+      ["Entscheidung", "Rückkopplung in Budget, Beschaffung, Kapital oder Strategie", "Kennzahl als Bericht beenden", "Kennzahl muss Steuerung verändern"],
+    ],
+    cases: [
+      "Ein Präventionsprogramm kann kurzfristig teuer wirken, aber über vermiedene Krankheit, Pflegebedarf, Arbeitsausfall und familiäre Belastung hohe Transformationswirkung entfalten. Hier hilft T-SROI.",
+      "Ein Produktvergleich mit mehreren Wirkungsfeldern braucht zuerst Scorecard und NWI, bevor über Preis-, Beschaffungs- oder Kapitalrückkopplung entschieden wird.",
+    ],
+    formula: "T\\text{-}SROI = \\frac{Transformationswirkung + vermiedene\\;Schadenskosten + Systemlernen}{Ressourceneinsatz}",
+    formulaNote:
+      "T-SROI ist didaktisch als Verhältnis gedacht. Entscheidend ist, welche Wirkungen, Zeiträume und Systemeffekte begründet einbezogen werden.",
+    backflow: [
+      "NWI und T-SROI in Werkzeugseiten konsequent als unterschiedliche Kennzahltypen erklären.",
+      "Präventions-, Bildungs- und Gesundheitsfälle als T-SROI-Lernfälle markieren.",
+      "Prüfungsfragen bauen, in denen Studierende entscheiden müssen, ob NWI oder T-SROI passend ist.",
+    ],
+  },
+  {
+    slug: "woek-g-v34",
+    sprint: 5,
+    code: "V34",
+    title: "Reverse Merit Order",
+    thesis:
+      "Reverse Merit Order dreht die Aufmerksamkeit auf das kritischste zentrale Wirkungsfeld. Sie verhindert, dass gute Einzelwerte die schlechteste relevante Wirkung verdecken.",
+    pages: [
+      "referenz/kapitel-033-reverse-merit-order/index.html",
+      "werkzeuge/reverse-merit-order/index.html",
+      "referenz/kapitel-050-produktscorecards/index.html",
+      "referenz/kapitel-051-das-apfelbeispiel/index.html",
+      "begriffe/reverse-merit-order/index.html",
+      "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html",
+    ],
+    matrix: [
+      ["Merit Order klassisch", "bestes oder günstigstes Kriterium priorisiert", "positive Highlights dominieren", "für WÖk nur begrenzt geeignet"],
+      ["Reverse Merit Order", "kritischstes relevantes Feld begrenzt Bewertung", "als Straflogik missverstehen", "Schutzlogik gegen Schönrechnung"],
+      ["Kritisches Feld", "schwere negative Wirkung oder rote Linie", "kritisches Feld nebenbei erwähnen", "zuerst prüfen und begründen"],
+      ["Gesamtbewertung", "durch schwächstes zentrales Feld begrenzt", "Durchschnitt bildet alles ab", "Profil plus Sperrlogik verwenden"],
+    ],
+    cases: [
+      "Ein Lebensmittel kann regional, lecker und klimatisch ordentlich sein. Wenn sein Anbau in einer Wasserstressregion schwere Belastungen erzeugt, darf der Regionalvorteil diese Wirkung nicht neutralisieren.",
+      "Ein digitales Angebot kann Bildungszugang verbessern. Wenn es Kinder umfassend trackt und Datenrechte verletzt, muss die digitale Selbstbestimmung als kritisches Feld zuerst geprüft werden.",
+    ],
+    formula: "FinalScore = min(Score_{kritische\\;Kernfelder}) \\quad bevor \\quad Durchschnittswerte\\;gebildet\\;werden",
+    formulaNote:
+      "Die Formel ist eine Sperrlogik: Das kritischste relevante Feld setzt eine Obergrenze, bevor gute Einzelwerte eine falsche Gesamtglättung erzeugen.",
+    backflow: [
+      "Reverse Merit Order als Standardbaustein in Produkt- und Scorecard-Seiten verwenden.",
+      "Visual: Bewertungsprofil mit kritischem Feld als Obergrenze produzieren.",
+      "Prüfungsfälle mit bewusst verführerischen Durchschnittswerten erstellen.",
+    ],
+  },
+  {
+    slug: "woek-g-v35",
+    sprint: 5,
+    code: "V35",
+    title: "Nichtkompensation gegen Greenwashing",
+    thesis:
+      "Nichtkompensation ist die harte Kante der WÖk gegen Greenwashing, Impact-Washing und SDG-Washing: Schwere Schäden dürfen nicht durch gute Einzelwerte, Kompensationsnarrative oder schöne Icons verschwinden.",
+    pages: [
+      "begriffe/nichtkompensationsprinzip/index.html",
+      "begriffe/greenwashing/index.html",
+      "begriffe/impact-washing/index.html",
+      "begriffe/sdg-washing/index.html",
+      "begriffe/wirkungswashing/index.html",
+      "begriffe/labelwashing/index.html",
+      "begriffe/purpose-washing/index.html",
+      "begriffe/wirkungswahrheit/index.html",
+      "referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/index.html",
+      "referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/index.html",
+      "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html",
+    ],
+    matrix: [
+      ["Greenwashing", "ökologische Behauptung ohne tragfähige Wirkung", "grünes Merkmal als Gesamturteil", "Lebenszyklus, Grenzen, Daten prüfen"],
+      ["Impact-Washing", "übertriebene Wirkungsaussage", "Potenzial als Wirkung verkaufen", "Wirkung, Potenzial, Risiko trennen"],
+      ["SDG-Washing", "SDG-Symbole ohne Zustandsnachweis", "Icon als Beleg verwenden", "SDG-Zuordnung plus Daten und Rückkopplung verlangen"],
+      ["Nichtkompensation", "Schutz vor Wegrechnen schwerer Schäden", "Kompensation als moralische Reinigung", "rote Linie nicht verrechnen"],
+    ],
+    cases: [
+      "Ein Unternehmen pflanzt Bäume und bewirbt Klimapositivität, ohne Emissionen im Kerngeschäft zu senken. Nichtkompensation fragt, welche Schäden real vermieden werden und welche nur ausgelagert oder erzählt werden.",
+      "Ein Produkt trägt mehrere SDG-Icons, während eine Lieferkette schwere Arbeitsrechtsrisiken enthält. SDG-Washing entsteht, wenn der positive Rahmen die rote Linie unsichtbar macht.",
+    ],
+    formula: "Schwere\\;Schaden \\nRightarrow keine\\;Kompensation\\;durch\\;Nebenplus",
+    formulaNote:
+      "Die Formel ist absichtlich einfach: Nichtkompensation schützt vor der Erzählung, ein guter Teil könne einen schweren Schaden einfach aufheben.",
+    backflow: [
+      "Greenwashing-/Impact-Washing-Begriffe mit Nichtkompensation und Reverse Merit Order verknüpfen.",
+      "Öffentliche Beispiele vorsichtig modellhaft formulieren, ohne Personen- oder Unternehmenspranger.",
+      "Prüfungsfälle zu SDG-Washing und Kompensationsnarrativen geschuetzt ausarbeiten.",
+    ],
+  },
+  {
+    slug: "woek-g-v36",
+    sprint: 5,
+    code: "V36",
+    title: "Scorecard lesen und begründen",
+    thesis:
+      "Eine Scorecard lesen heißt nicht, Farben abzulesen. Es heißt, Indikatoren, Datenqualität, Benchmarks, rote Linien, Unsicherheit und Rückkopplung so zu begründen, dass eine Entscheidung nachvollziehbar wird.",
+    pages: [
+      "referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html",
+      "referenz/kapitel-050-produktscorecards/index.html",
+      "referenz/kapitel-051-das-apfelbeispiel/index.html",
+      "werkzeuge/scorecards/index.html",
+      "werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html",
+      "werkzeuge/impact-controlling/dossiers/impact-of-investment/index.html",
+    ],
+    matrix: [
+      ["Lesen", "Profil, Felder, Skalen und Datenqualität erkennen", "Ampel intuitiv deuten", "jede Stufe mit Quelle und Benchmark verbinden"],
+      ["Begründen", "warum eine Bewertung gilt", "Wert behaupten", "Wirkpfad, Daten, Unsicherheit und Grenze nennen"],
+      ["Entscheiden", "Konsequenz aus Profil ziehen", "Score nur dokumentieren", "Beschaffung, Preis, Budget oder Strategie rückkoppeln"],
+      ["Kommunizieren", "verständlich und nicht übertreibend erklären", "Score als Wahrheit verkaufen", "Aussagegrenzen sichtbar machen"],
+    ],
+    cases: [
+      "Beim Apfel wird die Scorecard erst verständlich, wenn Studierende Klima, Wasser, Boden, Arbeit, Gesundheit, Transport, Verpackung und Datenqualität getrennt lesen und danach das kritische Feld begründen.",
+      "Eine Investment-Scorecard kann hohe Transformationswirkung zeigen, aber schlechte Datenqualität enthalten. Dann ist die Entscheidung vielleicht ein Pilot, nicht eine harte Kapitalallokation.",
+    ],
+    formula: "Begruendung = Score + Quelle + Benchmark + Datenqualitaet + Grenze + Rueckkopplung",
+    formulaNote:
+      "Eine Scorecard ist erst begründet, wenn nicht nur der Wert, sondern auch Herkunft, Vergleich, Unsicherheit, Grenze und Konsequenz sichtbar sind.",
+    backflow: [
+      "Reader sollte Scorecard-Lesehilfe als wiederverwendbaren Kasten bekommen.",
+      "Apfelbeispiel als Abschlussfall von G3.4 in Quiz und Prüfung aufnehmen.",
+      "PDF-CI sollte Scorecards nicht nur als Tabellen, sondern als Bewertungsprofile setzen.",
+    ],
+  },
 ];
 
 function decode(text) {
