@@ -80,10 +80,6 @@ Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
 
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
-
 ## 2. Automatisierung und Maschinenleistung
 
 Dieses Detailkonzept beschreibt Maschinenleistung als neue ökonomische Kategorie. KI, Robotik und algorithmische Systeme erzeugen Produktivität, aber keine soziale Beitragsbasis im alten Sinn.
@@ -131,10 +127,6 @@ Rang 7 Rente: Wirkungsrente und Lebensleistung.
 Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und Erbschaftsteuer.
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
-
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
 
 ## 3. Sozialabgaben entkoppeln
 
@@ -184,10 +176,6 @@ Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
 
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
-
 ## 4. Wirkungseinkommen
 
 Dieses Detailkonzept beschreibt Wirkungseinkommen als Verbindung von Grunddividende, Markteinkommen, Wirkungsbonus und Transformationsschutz.
@@ -235,10 +223,6 @@ Rang 7 Rente: Wirkungsrente und Lebensleistung.
 Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und Erbschaftsteuer.
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
-
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
 
 ## 5. Wirkungseinkommensteuer WEstG
 
@@ -288,10 +272,6 @@ Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
 
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
-
 ## 6. Wirkungsfonds und Wirkungsdividende
 
 Dieses Detailkonzept beschreibt die Fondsarchitektur, aus der Grunddividende, Wirkungsboni, Weiterbildungsfonds und Transformationsschutz entstehen.
@@ -339,10 +319,6 @@ Rang 7 Rente: Wirkungsrente und Lebensleistung.
 Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und Erbschaftsteuer.
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
-
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
 
 ## 7. Care, Bildung, Ehrenamt und Gemeinwesen
 
@@ -392,10 +368,6 @@ Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
 
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
-
 ## 8. Unternehmen, Roboter und Mitbestimmung
 
 Dieses Detailkonzept behandelt die Unternehmensperspektive: Was geschieht, wenn Menschen durch Roboter ersetzt werden, und wie entsteht eine faire Rückkopplung?
@@ -443,10 +415,6 @@ Rang 7 Rente: Wirkungsrente und Lebensleistung.
 Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und Erbschaftsteuer.
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
-
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
 
 ## 9. Übergangsarbeitsmarkt und Weiterbildung
 
@@ -496,10 +464,6 @@ Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
 
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
-
 ## 10. Politische Anschlussfähigkeit
 
 Dieses Detailkonzept beschreibt, wie unterschiedliche Parteien und Ebenen die Umsetzung verschieden ausgestalten können, ohne den Wirkungsrahmen zu verlassen.
@@ -547,10 +511,6 @@ Rang 7 Rente: Wirkungsrente und Lebensleistung.
 Rang 12 Finanzsystem & Kapital: Wirkungsfonds, Wirkungsdividende, Vermögen- und Erbschaftsteuer.
 
 Werkzeuge: T-SROI, NWI, WÖk-IDs, Scorecards, Reverse Merit Order, Wirkungsdatenräume.
-
-### 8. Online-Darstellung
-
-Auf der Website soll jeder Unterbereich als eigene Online-Seite mit Inhaltsverzeichnis, Dossier, Toolbezug, SDG-/SDG+-Block, Buchankern, politischen Optionen, Download und Druckfunktion erscheinen.
 
 ## Quellen
 
