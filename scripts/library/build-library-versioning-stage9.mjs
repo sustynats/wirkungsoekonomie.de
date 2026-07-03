@@ -17,6 +17,11 @@ const INTERNAL_REFERENCE_ROUTE_PATTERNS = [
   /^referenz\/version(?:en|-)/,
   /^referenz\/export\//
 ];
+// macOS-Duplikat-Artefakte ("… 2.html"). Ihr kanonisches Geschwister
+// (…/index.html bzw. ….html) trägt denselben Inhalt und wird ohnehin erfasst;
+// die " 2.html"-Route bleibt als archivierter Redirect-Stub erreichbar, gehört
+// aber nicht als eigener Eintrag ins Versions-/Bibliotheksregister.
+const MACOS_DUPLICATE_HTML = / \d+\.html$/i;
 const SKIP_DIRS = new Set([
   ".git",
   ".codex-backup",
@@ -315,6 +320,7 @@ function walk(dir, extensions, acc = []) {
     if (!entry.isFile()) continue;
     if (TRACKED_FILES && !TRACKED_FILES.has(relative)) continue;
     if (INTERNAL_REFERENCE_ROUTE_PATTERNS.some((pattern) => pattern.test(relative))) continue;
+    if (MACOS_DUPLICATE_HTML.test(entry.name)) continue;
     const ext = path.extname(entry.name).toLowerCase();
     if (NON_PUBLIC_FILE_EXTENSIONS.has(ext)) continue;
     if (extensions.has(ext)) acc.push(abs);

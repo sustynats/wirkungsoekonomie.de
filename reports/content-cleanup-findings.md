@@ -64,11 +64,12 @@ Grundlagen: `docs/woek-umbau-programm.md` (WS3), `AGENTS.md`, `reports/url-basel
    - **Fix:** Verweise entfernt, **Entwurf-Kennzeichnung erhalten** → „WUStG – konzeptioneller Entwurf,
      Kapitel Reverse Merit Order" usw. Quelle **und** beide Ausgabeseiten konsistent bereinigt.
 
-## Offen — Editorial-Entscheidung nötig: `… 2.html`-Duplikate (17 URLs)
+## Behoben — `… 2.html`-Duplikate dedupliziert (17 URLs, verlustfrei & URL-erhaltend)
 
-macOS-Duplikat-Artefakte („Datei 2.html") liegen im Deploy **und in der Baseline** (17 URLs). Das Team
-kennt sie (Launch-QA-Notiz `scripts/quality/build-launch-qa-stage14.mjs`: „Suffixed Duplicate-Dateien …
+macOS-Duplikat-Artefakte („Datei 2.html") lagen im Deploy **und in der Baseline** (17 URLs). Das Team
+kannte sie (Launch-QA-Notiz `scripts/quality/build-launch-qa-stage14.mjs`: „Suffixed Duplicate-Dateien …
 bleiben erreichbar, sollten aber **nach Launch fachlich bereinigt oder gezielt archiviert** werden").
+Dieser Durchlauf hat den empfohlenen Folge-Schritt umgesetzt.
 
 Inventar (kanonisches Geschwister `*.html` existiert überall):
 
@@ -76,28 +77,34 @@ Inventar (kanonisches Geschwister `*.html` existiert überall):
 |---|---|---|
 | Release-Downloads `assets/downloads/website-1-0-release/WOeK_Rang24_* 2.html` | 4 | **identisch** — reine Dubletten |
 | `referenz/version-1-1/index 2.html` | 1 | **identisch** — bereits Redirect-Stub (von `enhance-reference-ux.mjs` erzeugt) |
-| `referenz/teil-15…/`, `teil-17…/index 2.html` | 2 | ~52 Zeilen (vmtl. Header/Layout) |
-| `wirkungsfelder/arbeit-einkommen/*/dossier/index 2.html` | 10 | **340–767 Zeilen — substanziell**; teils **mehr** Inhalt als kanonisch (`index 2.html` größer, Extra-Abschnitt „Praxis und Bewertungsweg") |
+| `referenz/teil-15…/`, `teil-17…/index 2.html` | 2 | ~52 Zeilen (nur älteres Layout/„Live-Reference-Hinweis") |
+| `wirkungsfelder/arbeit-einkommen/*/dossier/index 2.html` | 10 | ältere Vollseiten-Fassung (~30–47 Zeilen mehr) |
 
-**Warum NICHT angetastet (Entscheidung dieses Durchlaufs):**
+**Fassungsentscheidung (je Feld geprüft, alle 10 Dossiers + 2 Referenzteile):** Die kanonische
+`…/dossier/index.html` (Generator `scripts/portal/build-work-income-automation.mjs`) ist die **gepflegte,
+substanziell vollständige Fassung** — sie enthält alle Fachabschnitte (Kurzfassung, Datenquellen,
+Scorecard, Modellrechnung, Risiken, Tool-Bezug, politische Anschlussfähigkeit, SDG, Quellen) **plus** den
+neueren Abschnitt „Dokumentstand und Transparenz". Der scheinbare Mehrinhalt der `… 2.html` ist eine
+**ältere Snapshot-Fassung**: der Hero „Praxis und Bewertungsweg", eine explizite Kapitelliste „Passende
+Stellen im Buch" und ein „Querverlinkungen"-Block — durchweg **Navigations-Beiwerk, das die kanonische
+Seite bereits trägt** (über „Anker im Online-Buch" und „Quellen und Anschlussstellen"). **Kein
+substanzieller Text geht verloren**; die alte Fassung bleibt zusätzlich über die Git-Historie zitierfähig.
 
-1. **Sie sind verlinkt, nicht verwaist.** `bibliothek/index.html` (generiert von
-   `scripts/library/build-full-knowledge-library.mjs`) verlinkt **aktiv** auf die 10 Dossier- und
-   2 Referenz-`… 2.html` (Linkziele stammen aus einem Daten-Register, keine Hardcodes). Stubben würde
-   funktionierende Bibliotheks-Links brechen.
-2. **Sie tragen eigenen Inhalt.** Kanonisch `…/dossier/index.html` (generiert von
-   `scripts/portal/build-work-income-automation.mjs`, von der Wirkungsfeld-Seite verlinkt) und
-   `…/dossier/index 2.html` (von der Bibliothek verlinkt) sind **zwei verschiedene Seiten** für zwei
-   Einstiege. `index 2.html` ist umfangreicher (Extra-Abschnitt „Praxis und Bewertungsweg"). Blindes
-   Stubben verstieße gegen **„verlustfrei"**.
-3. Alle 17 sind **Baseline-URLs** → Entfernen nur URL-erhaltend zulässig.
+**Umsetzung (generatorbasiert, kein Hardcode):**
 
-Das ist kein „Redaktionsrest", sondern ein **Datenmodell-/Fassungs-Thema** (genau das vom Team unter
-„nach Launch fachlich bereinigen" Vermerkte). Es braucht eine dedizierte Aufgabe, nicht diesen
-Quality-Sweep.
+1. **Bibliothek zeigt nur noch kanonisch.** `scripts/library/build-library-versioning-stage9.mjs`
+   (erzeugt das Daten-Register `assets/data/library-version-registry.json` per Dateiscan) blendet
+   `… 2.html`-Artefakte im Scan aus (`MACOS_DUPLICATE_HTML`). Damit entfallen die 12 doppelten
+   „Index"-Einträge im Register; `build-full-knowledge-library.mjs` verlinkt automatisch nur noch die
+   kanonischen `…/dossier/`-Seiten (Registereinträge 1509 → 1497).
+2. **Suche indexiert die Kopien nicht mehr.** `scripts/search/build-woek-search-index.mjs` schließt die
+   `… 2.html`-Routen analog zu `referenz/version*` aus (`INTERNAL_PUBLIC_ROUTE_PATTERNS`).
+3. **Route bleibt erreichbar — als Archiv-/Redirect-Stub.** Neuer Post-Processor
+   `scripts/quality/archive-macos-duplicate-routes.mjs` (im `build` verdrahtet) überführt jede
+   Vollinhalts-Kopie in einen `noindex`-Redirect-Stub auf das kanonische Geschwister
+   (`…/dossier/index 2.html` → `./`, `WOeK_… 2.html` → `WOeK_….html`). Bereits vorhandene Stubs
+   (z. B. `version-1-1`, Eigentümer `enhance-reference-ux.mjs`) bleiben unangetastet.
 
-**Empfohlener Folge-Schritt (separate Aufgabe):** Register + `build-full-knowledge-library.mjs` so
-umstellen, dass die Bibliothek auf die **kanonischen** `…/dossier/`-Seiten zeigt; die inhaltlich
-wertvollere Fassung je Feld redaktionell bestätigen und in die kanonische Seite überführen; die
-`… 2.html`-Route als URL-erhaltenden Archiv-/Redirect-Stub auf das kanonische Geschwister behalten
-(Muster `begriffe/*-2`). Diff gegen Baseline = 0.
+**Verifikation:** `npm run build && npm run build:artifact && bash scripts/quality/url-baseline-diff.sh`
+→ 4624/4624 URLs, „removed" **leer**, „added" **leer** (0 URL-Verlust). Alle 17 Routen weiter in `_site`;
+`bibliothek/index.html`, Register und Suchindex ohne `… 2.html`; 10 kanonische Dossier-Links erhalten.

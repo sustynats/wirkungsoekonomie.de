@@ -10,7 +10,10 @@ const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
 const INTERNAL_PUBLIC_ROUTE_PATTERNS = [
   /^\/referenz\/version(?:en|-)/,
-  /^\/referenz\/export\//
+  /^\/referenz\/export\//,
+  // macOS-Duplikat-Artefakte ("… 2.html"): archivierte Redirect-Stubs auf das
+  // kanonische Geschwister. Route bleibt erreichbar, wird aber nicht indexiert.
+  / \d+\.html$/
 ];
 const LEGACY_SEARCH_ROUTE_REDIRECTS = new Map([
   [
