@@ -233,7 +233,32 @@
 <h3 id="27-technische-architektur-des-mvp">27. Technische Architektur des MVP <a class="cite-anchor no-print" href="#27-technische-architektur-des-mvp" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <div class="table-scroll"><table class="data-table"><thead><tr><th>Baustein</th><th>Funktion</th><th>MVP-Loesung</th><th>Spaeterer Ausbau</th></tr></thead><tbody><tr><td>Ortssuche</td><td>Name zu Gemeindeschlüssel aufloesen</td><td>lokale Gemeindeliste</td><td>Autocomplete, Geocoding, Historisierung</td></tr><tr><td>Datenimport</td><td>Indikatorwerte laden</td><td>CSV/Excel/JSON Snapshots</td><td>APIs, automatisierte Updates</td></tr><tr><td>Mapping</td><td>Indikator zu Dimension/Unterdimension</td><td>YAML-Konfiguration</td><td>Methodik-Editor</td></tr><tr><td>Normalisierung</td><td>0-100 Scores berechnen</td><td>Python-Funktionen</td><td>Zielwertbibliothek und Sensitivitaet</td></tr><tr><td>Qualität</td><td>Datenlage bewerten</td><td>Missingness und Aktualität</td><td>Konfidenz, Versionierung, Audit</td></tr><tr><td>Bericht</td><td>HTML/PDF/Word/CSV erzeugen</td><td>Webseite plus Download</td><td>API, Dashboard, Ratsvorlagen</td></tr><tr><td>Governance</td><td>Methodik transparent machen</td><td>GitHub/Methodenpapier</td><td>Beirat, Peer Review, kommunale Pilotgruppe</td></tr></tbody></table></div>
 <h3 id="28-pseudocode-fuer-den-kwi-1-0">28. Pseudocode für den KWI 1.0 <a class="cite-anchor no-print" href="#28-pseudocode-fuer-den-kwi-1-0" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
-<p><br># KWI 1.0 - stark vereinfachter Pseudocode<br>kommune = suche_kommune(nutzer_eingabe)<br>ags = kommune.amtlicher_gemeindeschluessel<br><br>indikatoren = lade_indikatorenkatalog(&quot;kwi_1_0.yml&quot;)<br>daten = lade_datenquellen([&quot;sdg_portal.csv&quot;, &quot;inkar.csv&quot;, &quot;wegweiser.csv&quot;])<br><br>werte = filtere_werte(daten, ags)<br>for indikator in indikatoren:<br>    rohwert = werte[indikator.id]<br>    score = normalisiere(<br>        wert=rohwert,<br>        richtung=indikator.richtung,<br>        minimum=indikator.minimum,<br>        ziel=indikator.ziel,<br>        vergleichsgruppe=kommune.typ<br>    )<br>    indikator.score = begrenze(score, 0, 100)<br>    indikator.qualität = bewerte_datenqualität(rohwert, indikator.quelle, indikator.jahr)<br><br>mensch = gewichteter_mittelwert(indikatoren, dimension=&quot;Mensch&quot;)<br>planet = gewichteter_mittelwert(indikatoren, dimension=&quot;Planet&quot;)<br>demokratie = gewichteter_mittelwert(indikatoren, dimension=&quot;Demokratie&quot;)<br><br>kwi = 0.40 * mensch + 0.30 * planet + 0.30 * demokratie<br>bericht = erzeuge_bericht(kommune, kwi, mensch, planet, demokratie, indikatoren)<br></p>
+<pre class="document-code-block"><code># KWI 1.0 - stark vereinfachter Pseudocode
+kommune = suche_kommune(nutzer_eingabe)
+ags = kommune.amtlicher_gemeindeschluessel
+
+indikatoren = lade_indikatorenkatalog(&quot;kwi_1_0.yml&quot;)
+daten = lade_datenquellen([&quot;sdg_portal.csv&quot;, &quot;inkar.csv&quot;, &quot;wegweiser.csv&quot;])
+
+werte = filtere_werte(daten, ags)
+for indikator in indikatoren:
+    rohwert = werte[indikator.id]
+    score = normalisiere(
+        wert=rohwert,
+        richtung=indikator.richtung,
+        minimum=indikator.minimum,
+        ziel=indikator.ziel,
+        vergleichsgruppe=kommune.typ
+    )
+    indikator.score = begrenze(score, 0, 100)
+    indikator.qualität = bewerte_datenqualität(rohwert, indikator.quelle, indikator.jahr)
+
+mensch = gewichteter_mittelwert(indikatoren, dimension=&quot;Mensch&quot;)
+planet = gewichteter_mittelwert(indikatoren, dimension=&quot;Planet&quot;)
+demokratie = gewichteter_mittelwert(indikatoren, dimension=&quot;Demokratie&quot;)
+
+kwi = 0.40 * mensch + 0.30 * planet + 0.30 * demokratie
+bericht = erzeuge_bericht(kommune, kwi, mensch, planet, demokratie, indikatoren)</code></pre>
 <h3 id="29-ergebnisdarstellung-auf-der-website">29. Ergebnisdarstellung auf der Website <a class="cite-anchor no-print" href="#29-ergebnisdarstellung-auf-der-website" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
 <p>Die Website sollte den KWI nicht wie ein sportliches Ranking praesentieren. Besser ist ein Wirkungsprofil. Auf der ersten Ebene sieht die Nutzerin drei Balken oder Kacheln: Mensch, Planet, Demokratie. Auf der zweiten Ebene erscheinen Unterdimensionen. Auf der dritten Ebene kann jeder Indikator mit Quelle, Jahr, Interpretation und Methodik geoeffnet werden.</p>
 <p>Wichtig ist ein klarer Hinweis: Der KWI ist ein Modell. Er ersetzt keine amtliche Statistik, keine kommunale Strategie und keine politische Entscheidung. Er macht vorhandene Daten in einer wirkungsökonomischen Logik sichtbar.</p>

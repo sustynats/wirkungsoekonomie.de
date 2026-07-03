@@ -6,6 +6,7 @@ const out = path.join(root, "public/data/publication-qa-normalization.json");
 const htmlTargets = [
   "werkzeuge/index.html",
   "werkstatt/gesetze/wirkungssteuergesetz/index.html",
+  "bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/index.html",
 ];
 
 function stripTags(value) {
@@ -32,12 +33,22 @@ function normalizeToolSearchAttributes(html) {
     .replace(/\sdata-search="([^"]*)"/g, (_match, value) => ` data-search="${stripTags(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;")}"`);
 }
 
+function normalizeKwiPseudocode(html) {
+  return html.replace(
+    /<p><br># KWI 1\.0 - stark vereinfachter Pseudocode<br>([\s\S]*?)<br><\/p>/,
+    (_match, body) => {
+      const code = `# KWI 1.0 - stark vereinfachter Pseudocode\n${body.replaceAll("<br>", "\n").trim()}`;
+      return `<pre class="document-code-block"><code>${code}</code></pre>`;
+    },
+  );
+}
+
 let changedFiles = 0;
 for (const rel of htmlTargets) {
   const file = path.join(root, rel);
   if (!fs.existsSync(file)) continue;
   const before = fs.readFileSync(file, "utf8");
-  const after = normalizeGermanText(normalizeToolSearchAttributes(before));
+  const after = normalizeKwiPseudocode(normalizeGermanText(normalizeToolSearchAttributes(before)));
   if (after !== before) {
     fs.writeFileSync(file, after, "utf8");
     changedFiles += 1;

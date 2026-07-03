@@ -1943,7 +1943,7 @@ function preparedToolPage(tool) {
             <p class="hero-kicker">Werkzeug · ${StatusBadge(status)}</p>
             <h1 class="hero-title">${escapeHtml(title)}</h1>
             <p class="hero-subtitle">${escapeHtml(text)}</p>
-            <p class="hero-text">Diese Seite ist als Platzhalter vorbereitet, damit die Methodenlandkarte vollständig bleibt. Sie behauptet noch keine fertige Methodik und ersetzt keine fachliche, rechtliche, steuerliche, finanzielle oder amtliche Prüfung.</p>
+            <p class="hero-text">Diese Seite ist als vorbereiteter Arbeitsstand angelegt, damit die Methodenlandkarte vollständig bleibt. Sie macht Anschluss, Schutzlinien und spätere Ausarbeitung sichtbar, ersetzt aber keine fachliche, rechtliche, steuerliche, finanzielle oder amtliche Prüfung.</p>
             ${printActions(base)}
           </div>
           <aside class="card">
