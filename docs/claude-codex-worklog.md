@@ -45,7 +45,7 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 |---|---|---|
 | Video-Skripte Tier 1 | Codex hat 16 Skriptdateien unter `docs/video-skripte/` angelegt. | Claude: Sprechertexte, Audio-QS, Video-Rendering (wartet auf Natalies Go). |
 | Video-Handoff | `docs/CODEX-HANDOFF-videoskripte.md` liegt im Website-Repo. | Beide: als Formatvorgabe fuer weitere Video-Batches nutzen. |
-| Studienskripte | Sprint-Schiene fuer Markdown-Master, Word-Rohfassungen und App-Spiegel angelegt. | Codex: sprintweise Rohfassungen; Claude: CI/CD-Finalisierung, Reader, PDF. |
+| Studienskripte | 56 V1-Vorlesungen liegen als Rohfassungs-Artefakte vor: Markdown-Master, Word-Rohfassung, Index; V21-V36 mit App-Spiegel. | Codex: Tiefenfassungen sprintweise; Claude: CI/CD-Finalisierung, Reader, PDF. |
 | Institut-App | Feature-komplett live auf `main` (Glossar zentral, Auth-Fix, Forum-Struktur, Frag die WÖk + Wirkungscheck/Faktencheck auf Oracle, Board Zoom/Notizzettel, Dashboard, Dev-Login). Letzter Commit `3735c1b`. | Codex: nichts offen; KI-Tools liegen zentral auf Oracle. |
 | PR #69 (Website) | Release-Blocker Suchindex behoben, Gate gruen, von Claude QA-abgenommen. | Natalie: mergen (Ready → Squash). |
 | Zertifikat WOEK-PH-2026-0002 | Codex nicht angefasst. | Natalie: behalten oder anonymisieren? |
@@ -62,6 +62,15 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Pruefung: JSON-Index gueltig; DOCX V20 gerendert und visuell stichprobengeprueft; Exporter kompiliert.
 - Offen fuer Codex: V20 auf Tiefen-Umfang ausbauen, dann V21-V24 als Sprint 2.
 - Offen fuer Claude: Word-Rohfassungen final im Akademie-CI setzen, Reader/PDF und Freigabe uebernehmen.
+
+### 2026-07-03 - Codex - Studienskripte alle V1-Rohfassungen erzeugt
+- Status: vorbereitet
+- Repo/Pfad: Website-Repo `content/studienskripte/`, `docs/studienskripte/word-rohfassungen/`, `bibliothek/studienskripte/`; Akademie-App `content/lehrgaenge/woek-g-v21...v36.md`
+- Branch/Commit: in Arbeit
+- Geaendert: 56 Rohfassungen im Index; 55 neue Markdown-Master plus vorhandener V20-Pilot; 56 Word-Rohfassungen; 16 fehlende Grundstudium-App-Spiegel V21-V36.
+- Pruefung: Index-JSON gueltig; App-Typecheck gruen; Word-Rohfassungen exemplarisch gerendert fuer V21, WM-V3 und WC-V3.
+- Offen fuer Codex: echte Tiefenfassungen 40-50 Seiten je Skript, beginnend mit V20 und V21-V24.
+- Offen fuer Claude: Word-Rohfassungen koennen als CI/CD-Rohmaterial gesehen werden, aber noch nicht als finale Studienskripte.
 
 ### 2026-07-03 - Codex - Tier-1-Video-Skripte angelegt
 - Status: abgeschlossen
@@ -201,3 +210,11 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Geaendert: Mitwirkende je Dokument einladen (einer/mehrere/alle per Checkbox+Alle/Keine); Dashboard "Woran ich arbeite" zeigt jetzt auch Dokumente, an denen ich eingeladen bin. Datenschicht degradiert graceful, solange die Tabelle fehlt.
 - Pruefung: typecheck+build gruen. Vollstaendiger E2E-Klick braucht Migration 0009 + existierende Mitglieder/Dokumente.
 - **Offen fuer Codex:** `npm run db:migrate` im `woek-institut-app`-Repo → bringt `institut_0009_document_collaborators` in Supabase (additiv, idempotent, im Runner ergaenzt). Danach `npm run db:verify`; kurze Notiz genuegt.
+
+### 2026-07-03 - Claude - Tier-1-Erklaervideos: Sprechertext KOMPLETT (16/16)
+- Status: abgeschlossen (Text) — Rendering laeuft ueber die bestehende Pipeline
+- Repo/Pfad: `voice-tts/video-folien/` (lokal); Quellen `docs/video-skripte/`
+- Geaendert: die 5 fehlenden Wirkungsfeld-Sprechertexte getextet (bildung, medien-oeffentlichkeit, produkte-konsum, staat-recht-demokratie, wirtschaft-unternehmen) im etablierten Format (TITEL + je 6× `## S0N` + `SPRECH:`), Armin-Maiwald-Stil. Damit **16/16 Tier-1 vertextet**.
+- Pruefung: Struktur ok (je 6 Folien + 6 SPRECH); TTS-Check sauber — Akronyme in der Narration ausgeschrieben (Medienwirkungsindex, Key Impact Indicators, Nichtkompensation …). Rendering NICHT angestossen (batch.py/produce_lecture liefen aktiv auf Vorlesungen — CPU).
+- Offen fuer Claude/parallele Voice-Session: die 5 neuen Slugs rendern (`video_render.sh`) und nach `assets/video/<slug>.mp4` ablegen.
+- Offen fuer Codex: fertige `.mp4` auf den Zielseiten einbinden (Zielseite steht im Skript-Kopf, `wirkungsfelder/<feld>/`).
