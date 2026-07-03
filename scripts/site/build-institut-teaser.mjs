@@ -103,6 +103,20 @@ ${renderHeader(BASE)}
         </div>
       </section>
 
+      <section class="section home-video-section" id="institut-video" aria-labelledby="institut-video-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Kurz erklärt</p>
+            <h2 id="institut-video-title">Das Wirkungsinstitut in viereinhalb Minuten</h2>
+            <p>Von der ersten Idee bis zur geprüften Veröffentlichung: Wie aus einem Gedanken belastbares Wissen wird — transparent im Prozess, geschützt im Rohdenken.</p>
+          </div>
+          <video class="home-explainer-video" controls controlsList="nodownload" preload="metadata" playsinline poster="../assets/video/institut-poster.png?v=20260703" aria-label="Erklärvideo zum Wirkungsinstitut">
+            <source src="../assets/video/institut.mp4?v=20260703" type="video/mp4">
+            Dein Browser kann dieses Video nicht direkt abspielen.
+          </video>
+        </div>
+      </section>
+
       <section class="section" aria-labelledby="institut-warum-title">
         <div class="section-header">
           <p class="hero-kicker">Warum ein Institut?</p>
