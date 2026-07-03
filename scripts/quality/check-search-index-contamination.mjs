@@ -35,6 +35,16 @@ const blockedPublicFragments = [
   "dein browser kann diese audiodatei nicht direkt abspielen",
 ];
 
+const blockedUrlFragments = [
+  "/.claude/",
+  "/worktrees/",
+  "/Users/",
+  "/private/",
+  "file://",
+];
+
+const absoluteLocalPathPattern = /(^|\/)(?:Users|Volumes|tmp|var\/folders)\//i;
+
 const failures = [];
 
 for (const entry of entries) {
@@ -42,6 +52,16 @@ for (const entry of entries) {
   const section = String(entry.section || "").trim().toLowerCase();
   const body = String(entry.body || "").toLowerCase();
   const url = String(entry.url || "");
+
+  for (const fragment of blockedUrlFragments) {
+    if (url.includes(fragment)) {
+      failures.push(`${url} contains local/private URL fragment "${fragment}"`);
+    }
+  }
+
+  if (absoluteLocalPathPattern.test(url)) {
+    failures.push(`${url} contains an absolute local filesystem path`);
+  }
 
   if (forbiddenTitle.has(title) && body.length < 900) {
     failures.push(`${url} has navigation/footer-like title "${entry.title}"`);

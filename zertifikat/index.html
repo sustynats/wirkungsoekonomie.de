@@ -91,12 +91,33 @@
         (() => {
           const form = document.querySelector("[data-certificate-id-form]");
           if (!form) return;
+          const result = document.createElement("p");
+          result.className = "card-text";
+          result.setAttribute("aria-live", "polite");
+          form.append(result);
           form.addEventListener("submit", (event) => {
             event.preventDefault();
             const input = form.querySelector("input[name='certificateId']");
             const id = String(input?.value || "").trim().toUpperCase().replace(/[^A-Z0-9-]/g, "");
             if (!id) return;
-            window.location.href = id + "/";
+            result.textContent = "Zertifikat wird im Verifikationssystem geprüft ...";
+            fetch("https://akademie.wirkungsoekonomie.de/api/certificates/" + encodeURIComponent(id), {
+              headers: { "Accept": "application/json" }
+            })
+              .then((response) => response.json().then((body) => ({ ok: response.ok, body })))
+              .then(({ ok, body }) => {
+                if (!ok || !body.ok || !body.certificate) {
+                  result.textContent = body.message || "Dieses Zertifikat konnte nicht verifiziert werden.";
+                  return;
+                }
+                const certificate = body.certificate;
+                const status = certificate.statusLabel || certificate.status || "verifiziert";
+                const issued = certificate.issueDateDisplay || certificate.issueDate || "ohne Datumsanzeige";
+                result.textContent = "Verifiziert: " + (certificate.qualificationLabel || "WÖk-Zertifikat") + ", Status " + status + ", ausgestellt " + issued + ".";
+              })
+              .catch(() => {
+                result.textContent = "Die Zertifikatsprüfung ist derzeit nicht erreichbar.";
+              });
           });
         })();
       </script>
