@@ -894,12 +894,11 @@ function replaceOrInsert(markdown, lecture) {
 function updateIndex(slugs) {
   const indexPath = join(MASTER_DIR, "index.json");
   const index = JSON.parse(readFileSync(indexPath, "utf8"));
-  const sprintBySlug = new Map(lectures.map((lecture) => [lecture.slug, lecture.sprint ?? 2]));
   for (const item of index.scripts) {
     if (slugs.includes(item.slug)) {
-      const sprint = sprintBySlug.get(item.slug) ?? 2;
-      item.status = "tiefensprint-arbeitsfassung";
-      item.notes = `Tiefenskript-Sprint ${sprint}: substanzielle Arbeitsfassung mit Website-Referenzmaterial; Claude-CI/CD-Finalisierung offen.`;
+      item.status = "studienskript-v1";
+      item.notes =
+        "Studienskript V1: fachlich finale Codex-Fassung; Markdown-Master, Word-Rohfassung, App-Spiegel und geschuetzter Pruefungspool vorhanden. Claude-CI/CD-Satzfreigabe offen.";
     }
   }
   writeFileSync(indexPath, JSON.stringify(index, null, 2) + "\n");
