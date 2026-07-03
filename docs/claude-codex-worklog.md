@@ -72,6 +72,14 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Offen fuer Codex: echte Tiefenfassungen 40-50 Seiten je Skript, beginnend mit V20 und V21-V24.
 - Offen fuer Claude: Word-Rohfassungen koennen als CI/CD-Rohmaterial gesehen werden, aber noch nicht als finale Studienskripte.
 
+### 2026-07-03 - Codex - V20 Tiefensprint begonnen
+- Status: in Arbeit
+- Repo/Pfad: Website-Repo `content/studienskripte/woek-g-v20.md`, `docs/studienskripte/word-rohfassungen/`; Akademie-App `content/lehrgaenge/woek-g-v20.md`
+- Branch/Commit: in Arbeit
+- Geaendert: V20 deutlich vertieft: Resonanz als Uebergang zwischen Wirkungspotenzial und Wirkung, sozialwissenschaftliche Anschluesse, Diagnoseverfahren, weitere Fallstudien, Daten-/Indikatorenlogik und rote Linien. Word-Exporter verbessert, damit Markdown-Absatzumbrueche in Word nicht als harte Kurzabsatz-Kaskade erscheinen.
+- Pruefung: JSON ok; App-Typecheck gruen; V20-DOCX und WC-V3-DOCX erfolgreich gerendert.
+- Offen fuer Codex: V20 weiter auf finalen 40-50-Seiten-Umfang bringen, danach V21-V24.
+
 ### 2026-07-03 - Codex - Tier-1-Video-Skripte angelegt
 - Status: abgeschlossen
 - Repo/Pfad: Website-Repo, `docs/video-skripte/`
@@ -218,3 +226,10 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 - Pruefung: Struktur ok (je 6 Folien + 6 SPRECH); TTS-Check sauber — Akronyme in der Narration ausgeschrieben (Medienwirkungsindex, Key Impact Indicators, Nichtkompensation …). Rendering NICHT angestossen (batch.py/produce_lecture liefen aktiv auf Vorlesungen — CPU).
 - Offen fuer Claude/parallele Voice-Session: die 5 neuen Slugs rendern (`video_render.sh`) und nach `assets/video/<slug>.mp4` ablegen.
 - Offen fuer Codex: fertige `.mp4` auf den Zielseiten einbinden (Zielseite steht im Skript-Kopf, `wirkungsfelder/<feld>/`).
+
+### 2026-07-03 19:30 - Claude - KORREKTUR: Website-Videos mit Musik jetzt als PR
+- Status: abnahmebereit — wartet auf Merge
+- Repo/Pfad: Website-Repo, PR #73 `claude/website-video-musik` → main; `assets/video/*.mp4` (18 Videos)
+- Fehler zuvor: Musik-Versionen nur lokal gestaged (`voice-tts/website-videos-music/`), nie deployt → Live-Videos (z. B. /fuer/) hatten keine Musik. Jetzt behoben: 18 Videos im Repo ersetzt (IC-einfach ausgenommen).
+- Pruefung: nur assets/video geändert; IC unangetastet; Push ok (2. Versuch).
+- Offen fuer Natalie/Codex: PR #73 mergen (Achtung ~112 MB Media-Diff; ggf. Size-Gate pruefen). Perspektivisch Website-Videos auf GitHub-Release umstellen.

@@ -105,7 +105,7 @@ Ziel: alle V1-Vorlesungen als Rohfassungs-Artefakte herstellen und danach V20 al
 - [x] 56 Word-Rohfassungen in `docs/studienskripte/word-rohfassungen/`
 - [x] 16 fehlende Grundstudium-App-Spiegel V21-V36 angelegt
 - [x] Bibliotheksindex aus `content/studienskripte/index.json` aktualisiert
-- [ ] V20 auf echten Tiefen-Umfang erweitern
+- [x] V20 im ersten Tiefensprint von Pilotfassung auf ausfuehrliche Zwischenfassung erweitert
 - [ ] V21-V24 als erste 40-50-Seiten-Tiefenfassungen ausbauen
 
 ## Sprint 2 · Grundstudium V21-V24
