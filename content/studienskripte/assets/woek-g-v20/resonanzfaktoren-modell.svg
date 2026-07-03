@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Resonanzfaktoren-Modell</title>
+  <desc id="desc">Diagramm mit einem Wirkimpuls in der Mitte und fuenf Resonanzfaktoren: Vertrauen, Relevanz, Verstaendlichkeit, Anschlussfaehigkeit und Traegerstruktur.</desc>
+  <rect width="960" height="540" fill="#f7f4ec"/>
+  <circle cx="480" cy="270" r="82" fill="#0b2f4a"/>
+  <text x="480" y="260" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="25" font-weight="700" fill="#ffffff">Wirkimpuls</text>
+  <text x="480" y="292" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="18" fill="#ffffff">Potenzial, noch keine Wirkung</text>
+  <g font-family="Source Sans 3, Arial, sans-serif" font-size="22" font-weight="700" fill="#0b2f4a">
+    <rect x="96" y="74" width="260" height="76" rx="10" fill="#ffffff" stroke="#c79a2b" stroke-width="3"/>
+    <text x="226" y="121" text-anchor="middle">Vertrauen</text>
+    <rect x="604" y="74" width="260" height="76" rx="10" fill="#ffffff" stroke="#2f7d59" stroke-width="3"/>
+    <text x="734" y="121" text-anchor="middle">Relevanz</text>
+    <rect x="62" y="386" width="300" height="76" rx="10" fill="#ffffff" stroke="#2f7d59" stroke-width="3"/>
+    <text x="212" y="433" text-anchor="middle">Verstaendlichkeit</text>
+    <rect x="598" y="386" width="300" height="76" rx="10" fill="#ffffff" stroke="#c79a2b" stroke-width="3"/>
+    <text x="748" y="433" text-anchor="middle">Traegerstruktur</text>
+    <rect x="350" y="28" width="260" height="70" rx="10" fill="#ffffff" stroke="#0b2f4a" stroke-width="3"/>
+    <text x="480" y="72" text-anchor="middle">Anschlussfaehigkeit</text>
+  </g>
+  <g stroke="#6f7d86" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M346 139 C390 170 420 206 438 220"/>
+    <path d="M614 139 C570 170 540 206 522 220"/>
+    <path d="M480 98 C480 150 480 181 480 188"/>
+    <path d="M346 395 C390 364 420 334 438 320"/>
+    <path d="M614 395 C570 364 540 334 522 320"/>
+  </g>
+  <text x="480" y="510" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="18" fill="#2f3a41">Resonanz entsteht erst, wenn soziale Bedingungen Aufnahme, Verstaerkung und Rueckkopplung ermoeglichen.</text>
+</svg>

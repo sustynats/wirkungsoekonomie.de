@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2026-07-studienskripte-library",
+  "purpose": "Zentrales Masterverzeichnis der oeffentlich lesbaren Studienskripte. Die Akademie-App spiegelt diese Inhalte in ihre Reader-Slots.",
+  "publicLibraryBase": "bibliothek/studienskripte/",
+  "appMirrorBase": "woek-akademie-app/content/lehrgaenge/",
+  "scripts": [
+    {
+      "slug": "woek-g-v20",
+      "track": "Grundstudium Wirkungsökonomie",
+      "code": "V20",
+      "title": "Gesellschaftliche Resonanzfaktoren",
+      "status": "pilot-arbeitsfassung",
+      "masterPath": "content/studienskripte/woek-g-v20.md",
+      "wordRawPath": "docs/studienskripte/word-rohfassungen/woek-g-v20.docx",
+      "appMirrorPath": "woek-akademie-app/content/lehrgaenge/woek-g-v20.md",
+      "publicPath": "bibliothek/studienskripte/woek-g-v20/",
+      "notes": "Struktur, Tonalitaet und Pflichtteile angelegt; noch nicht 40-50 Seiten."
+    }
+  ]
+}
