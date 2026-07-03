@@ -51,11 +51,18 @@ Diese Pruefungsartefakte bleiben in der App-/Admin-Lane.
 
 ## Status
 
-Aktueller Rohfassungsbestand:
+Aktueller V1-Bestand:
 
 - 36 Grundstudium-Vorlesungen
 - 10 Wirkungsmanagement-Vorlesungen
 - 10 Impact-Controlling-Vorlesungen
 
-Alle 56 V1-Vorlesungen sind als Markdown-Master und Word-Rohfassung angelegt. Status: Rohfassung/Pilot,
-noch nicht finaler 40-50-Seiten-Tiefenstandard.
+Alle 56 V1-Vorlesungen sind als fachlich finale Codex-V1-Fassung vorhanden:
+
+- Markdown-Master in `content/studienskripte/`
+- Word-Rohfassung fuer Claude in `docs/studienskripte/word-rohfassungen/`
+- App-Spiegel in `woek-akademie-app/content/lehrgaenge/`
+- geschuetzter Fragepool in `woek-akademie-app/content/pruefungen/question-pools/`
+
+Status: `studienskript-v1`. Offen bleibt die Claude-CI/CD-Finalisierung fuer Reader, PDF, Satz, visuelle
+Qualitaetssicherung und Freigabe als `published`.
