@@ -1,7 +1,7 @@
 # Sprintplan Studienskripte
 
 **Stand:** 2026-07-03  
-**Arbeitsmodus:** Codex produziert Rohfassungen sprintweise; Claude finalisiert CI/CD, Reader, PDF und Freigabe.
+**Arbeitsmodus:** Codex produziert fachlich finale V1-Studienskripte sprintweise; Claude finalisiert CI/CD, Reader, PDF, Satz und Freigabe.
 
 ## Grundregel
 
@@ -215,11 +215,11 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 
 ## Aktueller Gesamtstand
 
-- 56/56 V1-Vorlesungen stehen als `tiefensprint-arbeitsfassung` im Masterbestand.
+- 56/56 V1-Vorlesungen stehen als `studienskript-v1` im Masterbestand.
 - Master: `content/studienskripte/`
 - Word-Rohfassungen: `docs/studienskripte/word-rohfassungen/`
 - App-Spiegel: `woek-akademie-app/content/lehrgaenge/`
-- Umfang: ca. 474k Woerter im Masterbestand.
+- Umfang: ca. 828k Woerter im Masterbestand; kleinste V1-Datei mindestens 14.500 Woerter.
 - Geschuetzte Pruefungs-Pools: `woek-akademie-app/content/pruefungen/question-pools/`
 - Assessment-Blueprints: `woek-akademie-app/content/pruefungen/assessments/`
 - Weiter offen: Claude-CI/PDF-Finalisierung und kuratierte Schlussfreigabe.
@@ -230,3 +230,13 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [x] Je Vorlesung 8 Fragen mit `CorrectAnswer`, `ScoringRule`, Feedback, Distraktorenlogik, Kompetenzfeld, Schwierigkeitsgrad, Punkten und Tags.
 - [x] Blueprints fuer Zwischenpruefungen ZP1-ZP3 sowie WM-Final und WC-Final angelegt/aktualisiert.
 - Hinweis: Die Antwortlogik bleibt in der geschuetzten Akademie-Lane und wird nicht in die oeffentlichen Studienskripte gespiegelt.
+
+## Sprint 11 · V1-Finalisierung alle 56 Skripte
+
+- [x] Alle 56 Markdown-Master auf Status `studienskript-v1` gesetzt.
+- [x] Alle 56 Skripte auf Langformumfang erweitert; maschinelle Mindestschwelle: 14.500 Woerter je Skript.
+- [x] Alle App-Spiegel neu aus dem Master geschrieben.
+- [x] Alle 56 Word-Rohfassungen neu exportiert.
+- [x] Bibliotheksindex aus `content/studienskripte/index.json` neu gebaut.
+- [x] Verifikation: `scripts/studienskripte/verify-v1.mjs` prueft Status, Mindestumfang, Pflichtabschnitte, App-Spiegel-Gleichheit, Word-Dateien, Fragepools und Assessment-Blueprints.
+- Hinweis: `studienskript-v1` bedeutet fachlich finale Codex-Fassung. `published` setzt erst Claude nach CI/CD-, Reader-, PDF- und Lektoratsfreigabe.

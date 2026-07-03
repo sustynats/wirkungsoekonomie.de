@@ -45,7 +45,7 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 |---|---|---|
 | Video-Skripte Tier 1 | Codex hat 16 Skriptdateien unter `docs/video-skripte/` angelegt. | Claude: Sprechertexte, Audio-QS, Video-Rendering (wartet auf Natalies Go). |
 | Video-Handoff | `docs/CODEX-HANDOFF-videoskripte.md` liegt im Website-Repo. | Beide: als Formatvorgabe fuer weitere Video-Batches nutzen. |
-| Studienskripte | 56/56 V1-Vorlesungen liegen als `tiefensprint-arbeitsfassung` vor: Markdown-Master, Word-Rohfassung, App-Spiegel; geschuetzte Fragepools V1 sind angelegt. | Claude: CI/CD-Finalisierung, Reader, PDF; Codex: bei Bedarf Nachschaerfung einzelner Skripte/Pools. |
+| Studienskripte | 56/56 V1-Vorlesungen liegen als `studienskript-v1` vor: Markdown-Master, Word-Rohfassung, App-Spiegel; geschuetzte Fragepools V1 sind angelegt. | Claude: CI/CD-Satz, Reader, PDF, visuelles Lektorat und `published`-Freigabe. |
 | Institut-App | Feature-komplett live auf `main` (Glossar zentral, Auth-Fix, Forum-Struktur, Frag die WÖk + Wirkungscheck/Faktencheck auf Oracle, Board Zoom/Notizzettel, Dashboard, Dev-Login). Letzter Commit `3735c1b`. | Codex: nichts offen; KI-Tools liegen zentral auf Oracle. |
 | PR #69 (Website) | Release-Blocker Suchindex behoben, Gate gruen, von Claude QA-abgenommen. | Natalie: mergen (Ready → Squash). |
 | Zertifikat WOEK-PH-2026-0002 | Codex nicht angefasst. | Natalie: behalten oder anonymisieren? |
@@ -53,6 +53,15 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 | Institut-Arbeitsteilung | `docs/institut-arbeitsteilung-claude-codex.md` beschreibt Institut-spezifischen Prozess. | Beide: bei Institut-App/Website-Schnittstellen nutzen. |
 
 ## Chronologisches Log
+
+### 2026-07-03 - Codex - Studienskripte V1 finalisiert
+- Status: abnahmebereit fuer Claude-CI/CD
+- Repo/Pfad: Website-Repo `content/studienskripte/`, `docs/studienskripte/word-rohfassungen/`, `bibliothek/studienskripte/`; Akademie-App `content/lehrgaenge/`, `content/pruefungen/question-pools/`, `content/pruefungen/assessments/`
+- Branch/Commit: in Arbeit bis Commit
+- Geaendert: alle 56 V1-Vorlesungen auf `studienskript-v1`; ca. 828k Woerter Masterbestand; Mindestumfang je Skript 14.500 Woerter; alle 56 Word-Rohfassungen neu exportiert; App-Spiegel neu geschrieben; Bibliotheksindex aktualisiert; Verifikationsskript `scripts/studienskripte/verify-v1.mjs` angelegt.
+- Pruefung: `verify-v1.mjs` gruen; JSON ok; DOCX-Render-Stichprobe WM-V6 45 Seiten und V01 42 Seiten visuell geprueft; App-Typecheck gruen.
+- Offen fuer Claude: CI/CD-Satz, Reader/PDF, visuelles Lektorat, Medienintegration, finale `published`-Freigabe.
+- Offen fuer Codex: nur Nacharbeit aus Claude-/Natalie-Review.
 
 ### 2026-07-03 - Codex - Studienskripte 56/56 + geschuetzte Pruefungs-Pools
 - Status: vorbereitet
