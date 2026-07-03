@@ -2,20 +2,20 @@
 
 Die ausführliche technische Übergabe für Claude liegt in der Akademie-App:
 
-`<Projekt-Root>/woek-akademie-app/docs/claude-architecture-handoff.md`
+`<akademie-app-repo>/docs/claude-architecture-handoff.md`
 
 Warum dort? Die Akademie-App ist ein eigenes Git-Repo unter:
 
-`<Projekt-Root>/woek-akademie-app`
+`<akademie-app-repo>`
 
 Die öffentliche Website bleibt dieses Repo:
 
-`<Projekt-Root>`
+`<website-repo>`
 
 Claude soll vor Akademie-Arbeiten beide Stati prüfen:
 
 ```bash
-cd "<Projekt-Root>"
+cd "<website-repo>"
 git status --short
 git -C woek-akademie-app status --short
 ```
@@ -33,4 +33,4 @@ Die Doku beschreibt:
 
 Ergänzende Übergabe für das geplante Institut:
 
-`<Projekt-Root>/docs/claude-institut-architecture-handoff.md`
+`<website-repo>/docs/claude-institut-architecture-handoff.md`
