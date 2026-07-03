@@ -22,6 +22,14 @@ from pathlib import Path
 
 SDG_PORTAL = "https://sdg-portal.de"
 SEARCH_URL = f"{SDG_PORTAL}/de/api/municipalities.json?data=1&q={{query}}"
+PNK_PORTAL = "https://nachhaltigekommunen.de"
+PNK_ORGANIZATION_ID = "b7e4c3a0-0847-4016-8db2-1e4949006491"
+PNK_SEARCH_URL = (
+    f"{PNK_PORTAL}/container?organization={PNK_ORGANIZATION_ID}"
+    "&payloadType=organizational_unit&terms={query}&limit=10"
+)
+ROOT = Path(__file__).resolve().parents[1]
+LOCAL_SNAPSHOT_DIR = ROOT / "assets" / "data" / "kwi"
 CURRENT_YEAR = dt.date.today().year
 
 SDG_TITLES = {
@@ -75,6 +83,10 @@ class SnapshotExtractionError(RuntimeError):
     """Raised when a municipality page exists but no indicator data can be read."""
 
 
+class SourceUnavailableError(RuntimeError):
+    """Raised when the upstream municipal data source is no longer available."""
+
+
 def fetch_text(url: str) -> str:
     req = urllib.request.Request(
         url,
@@ -101,6 +113,128 @@ def slugify_name(name: str) -> str:
     slug = slug.replace("–", "-").replace("—", "-")
     slug = re.sub(r"[^0-9a-zäöüß]+", "-", slug)
     return slug.strip("-")
+
+
+def ascii_fold(value: str) -> str:
+    return (
+        value.lower()
+        .replace("ä", "ae")
+        .replace("ö", "oe")
+        .replace("ü", "ue")
+        .replace("ß", "ss")
+    )
+
+
+def plain_fold(value: str) -> str:
+    return (
+        value.lower()
+        .replace("ä", "a")
+        .replace("ö", "o")
+        .replace("ü", "u")
+        .replace("ß", "ss")
+    )
+
+
+def normalized_key(value: str) -> str:
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def search_key(value: str) -> str:
+    return normalized_key(ascii_fold(value))
+
+
+def search_keys(value: str) -> set[str]:
+    return {
+        normalized_key(value.lower()),
+        normalized_key(ascii_fold(value)),
+        normalized_key(plain_fold(value)),
+    }
+
+
+def compact_key(value: str) -> str:
+    return search_key(value).replace(" ", "")
+
+
+def trim_municipality_qualifiers(value: str) -> str:
+    value = search_key(value)
+    qualifiers = [
+        "stadt",
+        "kreisfreie stadt",
+        "universitaetsstadt",
+        "landeshauptstadt",
+        "hansestadt",
+        "kreisstadt",
+        "documenta stadt",
+        "freie und hansestadt",
+    ]
+    for qualifier in sorted(qualifiers, key=len, reverse=True):
+        value = re.sub(rf"\b{re.escape(qualifier)}\b", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def local_snapshot_candidates(query: str) -> list[tuple[int, dict]]:
+    manifest_path = LOCAL_SNAPSHOT_DIR / "municipalities.json"
+    if not manifest_path.exists():
+        return []
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+
+    query_keys = set()
+    for key in search_keys(query):
+        query_keys.add(key)
+        query_keys.add(key.replace(" ", ""))
+        trimmed = trim_municipality_qualifiers(key)
+        query_keys.add(trimmed)
+        query_keys.add(trimmed.replace(" ", ""))
+    query_keys = {item for item in query_keys if item}
+
+    matches: list[tuple[int, dict]] = []
+    for item in manifest.get("municipalities", []):
+        values = [item.get("name", ""), item.get("slug", ""), item.get("file", "")]
+        item_keys = set()
+        for value in values:
+            if not value:
+                continue
+            for key in search_keys(value):
+                item_keys.add(key)
+                item_keys.add(key.replace(" ", ""))
+                trimmed = trim_municipality_qualifiers(key)
+                item_keys.add(trimmed)
+                item_keys.add(trimmed.replace(" ", ""))
+        item_keys = {key for key in item_keys if key}
+
+        score = 0
+        if query_keys & item_keys:
+            score = 100
+        elif any(q and q in key for q in query_keys for key in item_keys):
+            score = 80
+        elif any(key and key in q for q in query_keys for key in item_keys):
+            score = 70
+
+        if score:
+            matches.append((score, item))
+
+    return sorted(matches, key=lambda match: (-match[0], match[1].get("name", "")))
+
+
+def load_local_snapshot(query: str) -> dict | None:
+    for _score, item in local_snapshot_candidates(query):
+        file_name = item.get("file")
+        if not file_name:
+            continue
+        path = LOCAL_SNAPSHOT_DIR / file_name
+        try:
+            snapshot = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        snapshot.setdefault("source", {})
+        snapshot["source"]["cache"] = "local_snapshot"
+        snapshot["servedAt"] = dt.datetime.now(dt.timezone.utc).isoformat()
+        return snapshot
+    return None
 
 
 def portal_slug_candidates(name: str) -> list[str]:
@@ -321,12 +455,18 @@ def parse_indicators(page_html: str, municipality_name: str) -> list[dict]:
 
 
 def resolve_municipality(query: str) -> dict:
-    data = json.loads(fetch_text(SEARCH_URL.format(query=urllib.parse.quote(query))))
-    results = data.get("data", [])
-    if results:
-        exact = [item for item in results if item["name"].lower() == query.lower()]
-        selected = exact[0] if exact else results[0]
-        return selected
+    try:
+        data = json.loads(fetch_text(SEARCH_URL.format(query=urllib.parse.quote(query))))
+        results = data.get("data", [])
+        if results:
+            exact = [item for item in results if item["name"].lower() == query.lower()]
+            selected = exact[0] if exact else results[0]
+            return selected
+    except Exception:
+        # sdg-portal.de was shut down on 2026-06-30 and now returns 404 for the
+        # former API/page structure. Continue with direct/new-portal probes so
+        # callers receive a source error instead of a false "not found".
+        pass
 
     for slug in portal_slug_candidates(query):
         try:
@@ -342,7 +482,21 @@ def resolve_municipality(query: str) -> dict:
             "resolvedBy": "direct-page",
         }
 
-    raise MunicipalityNotFoundError(f"Keine Kommune im SDG-Portal gefunden: {query}")
+    try:
+        data = json.loads(fetch_text(PNK_SEARCH_URL.format(query=urllib.parse.quote(query))))
+        if data:
+            names = ", ".join(item.get("payload", {}).get("name", "Unbenannte Kommune") for item in data[:3])
+            raise SourceUnavailableError(
+                "Das alte SDG-Portal ist abgeschaltet. Das neue Portal Nachhaltige Kommunen "
+                "kennt diese Eingabe, aber der KWI-Parser ist noch nicht auf dessen "
+                f"Indikatorstruktur migriert: {names}"
+            )
+    except SourceUnavailableError:
+        raise
+    except Exception:
+        pass
+
+    raise MunicipalityNotFoundError(f"Keine Kommune in den verfügbaren KWI-Quellen gefunden: {query}")
 
 
 def fetch_municipality_page(name: str | None = None, slug: str | None = None) -> str:
@@ -384,7 +538,12 @@ def aggregate(indicators: list[dict]) -> dict:
     }
 
 
-def collect(query: str) -> dict:
+def collect(query: str, prefer_local: bool = True) -> dict:
+    if prefer_local:
+        local_snapshot = load_local_snapshot(query)
+        if local_snapshot:
+            return local_snapshot
+
     municipality = resolve_municipality(query)
     page = (
         fetch_municipality_page(slug=municipality.get("slug"))
@@ -479,7 +638,7 @@ def main() -> int:
     snapshots = []
     for query in args.municipality:
         print(f"Collecting {query} ...", file=sys.stderr)
-        snapshots.append(collect(query))
+        snapshots.append(collect(query, prefer_local=False))
     write_outputs(Path(args.out), snapshots, append=args.append)
     print(f"Wrote {len(snapshots)} snapshot(s) to {args.out}", file=sys.stderr)
     return 0
