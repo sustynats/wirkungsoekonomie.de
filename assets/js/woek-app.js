@@ -2,9 +2,11 @@
   const root = document.querySelector("[data-woek-app]");
   if (!root) return;
 
+  const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
+  const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
   const apiBase = window.WOEK_API_BASE || "https://130.162.217.58.sslip.io";
-  const unavailableMessage = "Der KI-Dienst ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
-  const feedbackUnavailableMessage = "Feedback konnte gerade nicht gespeichert werden.";
+  const unavailableMessage = i18n("Der KI-Dienst ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.", "The AI service is temporarily unavailable. Please try again later.");
+  const feedbackUnavailableMessage = i18n("Feedback konnte gerade nicht gespeichert werden.", "Feedback could not be saved right now.");
   const clientId = getClientId();
   const installDismissKey = "woek_app_install_dismissed";
   const tabs = Array.from(root.querySelectorAll("[data-app-tab]"));
@@ -48,7 +50,7 @@
   root.querySelectorAll('input[type="file"]').forEach((input) => {
     input.addEventListener("change", () => {
       const label = input.closest(".woek-app-file")?.querySelector("[data-file-name]");
-      if (label) label.textContent = input.files?.[0]?.name || "Kein Bild ausgewählt";
+      if (label) label.textContent = input.files?.[0]?.name || i18n("Kein Bild ausgewählt", "No image selected");
     });
   });
 
@@ -84,22 +86,22 @@
     window.addEventListener("beforeinstallprompt", (event) => {
       event.preventDefault();
       deferredInstallPrompt = event;
-      showInstallPanel("Lege die WÖk-App auf Startbildschirm oder Dock. Sie startet dann ohne Browserrahmen.", "Installieren");
+      showInstallPanel(i18n("Lege die WÖk-App auf Startbildschirm oder Dock. Sie startet dann ohne Browserrahmen.", "Add the WÖk App to your home screen or dock. It will then start without the browser frame."), i18n("Installieren", "Install"));
     });
 
     window.addEventListener("appinstalled", () => {
       deferredInstallPrompt = null;
       window.localStorage.setItem(installDismissKey, "1");
       hideInstallPanel();
-      updatePwaStatus("Installiert");
+      updatePwaStatus(i18n("Installiert", "Installed"));
     });
 
     if (isStandaloneDisplay()) {
       updatePwaStatus(navigator.onLine ? "App · online" : "App · offline");
     } else if (isManualInstallBrowser()) {
       showInstallPanel(
-        "macOS Safari: Ablage > Zum Dock hinzufügen. iPhone/iPad: Teilen > Zum Home-Bildschirm. Chrome/Edge zeigen hier sonst einen Install-Button.",
-        "Verstanden",
+        i18n("macOS Safari: Ablage > Zum Dock hinzufügen. iPhone/iPad: Teilen > Zum Home-Bildschirm. Chrome/Edge zeigen hier sonst einen Install-Button.", "macOS Safari: File > Add to Dock. iPhone/iPad: Share > Add to Home Screen. Chrome/Edge usually show an install button here."),
+        i18n("Verstanden", "Understood"),
         true
       );
     }
@@ -118,7 +120,7 @@
         if (!worker) return;
         worker.addEventListener("statechange", () => {
           if (worker.state === "installed" && navigator.serviceWorker.controller) {
-            showInstallPanel("Eine neue Version ist bereit. Aktualisiere die App, um sie zu laden.", "Aktualisieren", false, true);
+            showInstallPanel(i18n("Eine neue Version ist bereit. Aktualisiere die App, um sie zu laden.", "A new version is ready. Refresh the app to load it."), i18n("Aktualisieren", "Refresh"), false, true);
             deferredInstallPrompt = {
               prompt: () => worker.postMessage({ type: "SKIP_WAITING" }),
               userChoice: Promise.resolve()
@@ -141,7 +143,7 @@
     const data = new FormData(form);
     const claim = read(data, "claim");
     if (!claim) {
-      renderNotice("Aussage fehlt", "Bitte gib eine prüfbare Aussage ein.");
+      renderNotice(i18n("Aussage fehlt", "Statement missing"), i18n("Bitte gib eine prüfbare Aussage ein.", "Please enter a checkable statement."));
       return;
     }
 
@@ -159,7 +161,7 @@
     const data = new FormData(form);
     const question = read(data, "question");
     if (!question) {
-      renderNotice("Frage fehlt", "Bitte gib eine Frage ein.");
+      renderNotice(i18n("Frage fehlt", "Question missing"), i18n("Bitte gib eine Frage ein.", "Please enter a question."));
       return;
     }
 
@@ -173,7 +175,7 @@
     const data = new FormData(form);
     const product = read(data, "product");
     if (!product) {
-      renderNotice("Produkt fehlt", "Bitte gib ein Produkt oder einen Link ein.");
+      renderNotice(i18n("Produkt fehlt", "Product missing"), i18n("Bitte gib ein Produkt oder einen Link ein.", "Please enter a product or product link."));
       return;
     }
 
@@ -190,7 +192,7 @@
 
   async function submitJson(path, body, render) {
     if (!navigator.onLine) {
-      renderNotice("Offline", "Die Prüfung braucht eine Internetverbindung.");
+      renderNotice("Offline", i18n("Die Prüfung braucht eine Internetverbindung.", "The check needs an internet connection."));
       return;
     }
 
@@ -214,7 +216,7 @@
       }
       render(payload, body, path);
     } catch (error) {
-      renderNotice("Prüfung gerade nicht möglich", error?.message || unavailableMessage);
+      renderNotice(i18n("Prüfung gerade nicht möglich", "Check currently unavailable"), error?.message || unavailableMessage);
     } finally {
       stopProgress();
       setBusy(false);
@@ -245,7 +247,7 @@
     };
     setShareContext({
       target: "factcheck",
-      title: "WÖk-Wirkungscheck",
+      title: i18n("WÖk-Wirkungscheck", "WÖk Impact Check"),
       question: request?.claim || "",
       answer,
       sections,
@@ -254,11 +256,11 @@
     });
     replaceResult([
       kicker(statusLabel(item?.status)),
-      heading("Antwort"),
+      heading(i18n("Antwort", "Answer")),
       paragraph(answer),
       section("Reframing", item?.reframing),
       section("Kurzurteil", item?.summary),
-      detailsSection("Prüfdetails öffnen", [
+      detailsSection(i18n("Prüfdetails öffnen", "Open check details"), [
         section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
         section("Sprache & Narrativ", languageText(item?.languageAnalysis)),
         section("Rhetorik & Psychologie", rhetoricText(item?.rhetoricAnalysis)),
@@ -287,7 +289,7 @@
     };
     setShareContext({
       target: "woek-ai",
-      title: "Frag die WÖk",
+      title: i18n("Frag die WÖk", "Ask WÖk"),
       question: request?.question || "",
       answer: payload.answer || "",
       sections,
@@ -296,7 +298,7 @@
     });
     replaceResult([
       kicker(statusLabel(payload.status)),
-      heading("Antwort"),
+      heading(i18n("Antwort", "Answer")),
       paragraph(payload.answer),
       section("Warum das trägt", payload.explanation),
       section("WÖk-Einordnung", payload.woekLens),
@@ -336,7 +338,7 @@
     };
     setShareContext({
       target: "product-check",
-      title: "Produktcheck",
+      title: i18n("Produktcheck", "Product check"),
       question: request?.product || request?.claim || "",
       answer,
       sections,
@@ -345,7 +347,7 @@
     });
     replaceResult([
       kicker(statusLabel(item?.status)),
-      heading("Antwort"),
+      heading(i18n("Antwort", "Answer")),
       paragraph(answer),
       section("Produktversprechen", item?.productPromise),
       section("Wahrheitsgehalt", item?.truthCheck ? `${verdictLabel(item.truthCheck.verdict)} (${item.truthCheck.confidence}). ${item.truthCheck.explanation}` : ""),
@@ -403,9 +405,9 @@
     shareContext = null;
     currentShareUrl = "";
     replaceResult([
-      kicker("Prüfung läuft"),
-      heading("Antwort wird vorbereitet."),
-      paragraph("Quellen, Frame und WÖk-Einordnung werden gemeinsam geprüft."),
+      kicker(i18n("Prüfung läuft", "Check running")),
+      heading(i18n("Antwort wird vorbereitet.", "Preparing answer.")),
+      paragraph(i18n("Quellen, Frame und WÖk-Einordnung werden gemeinsam geprüft.", "Sources, framing and WÖk context are being checked together.")),
       progressPanel(path)
     ]);
   }
@@ -414,17 +416,17 @@
     feedbackContext = null;
     shareContext = null;
     currentShareUrl = "";
-    replaceResult([kicker("Hinweis"), heading(title), paragraph(text)]);
+    replaceResult([kicker(i18n("Hinweis", "Notice")), heading(title), paragraph(text)]);
   }
 
   async function imagePayload(form) {
     const file = form.querySelector('input[type="file"]')?.files?.[0];
     if (!file) return {};
     if (!file.type.startsWith("image/")) {
-      throw new Error("Der Beleg muss ein Bild sein.");
+      throw new Error(i18n("Der Beleg muss ein Bild sein.", "The evidence file must be an image."));
     }
     if (file.size > 8_000_000) {
-      throw new Error("Das Bild ist zu groß. Bitte Screenshot oder Foto kleiner zuschneiden.");
+      throw new Error(i18n("Das Bild ist zu groß. Bitte Screenshot oder Foto kleiner zuschneiden.", "The image is too large. Please crop the screenshot or photo."));
     }
 
     const image = await compressImage(file);
@@ -447,10 +449,10 @@
       canvas.width = width;
       canvas.height = height;
       const context = canvas.getContext("2d");
-      if (!context) throw new Error("Das Bild konnte nicht vorbereitet werden.");
+      if (!context) throw new Error(i18n("Das Bild konnte nicht vorbereitet werden.", "The image could not be prepared."));
       context.drawImage(image, 0, 0, width, height);
       const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg", 0.72));
-      if (!blob) throw new Error("Das Bild konnte nicht komprimiert werden.");
+      if (!blob) throw new Error(i18n("Das Bild konnte nicht komprimiert werden.", "The image could not be compressed."));
       const dataUrl = await blobToDataUrl(blob);
       return { base64: dataUrl.replace(/^data:image\/jpeg;base64,/, ""), mime: "image/jpeg" };
     } finally {
@@ -462,7 +464,7 @@
     return new Promise((resolve, reject) => {
       const image = new Image();
       image.onload = () => resolve(image);
-      image.onerror = () => reject(new Error("Das Bildformat konnte nicht gelesen werden. Bitte Text kopieren oder JPEG/PNG nutzen."));
+      image.onerror = () => reject(new Error(i18n("Das Bildformat konnte nicht gelesen werden. Bitte Text kopieren oder JPEG/PNG nutzen.", "The image format could not be read. Please copy text or use JPEG/PNG.")));
       image.src = url;
     });
   }
@@ -471,7 +473,7 @@
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.onload = () => resolve(String(reader.result || ""));
-      reader.onerror = () => reject(new Error("Das Bild konnte nicht gelesen werden."));
+      reader.onerror = () => reject(new Error(i18n("Das Bild konnte nicht gelesen werden.", "The image could not be read.")));
       reader.readAsDataURL(blob);
     });
   }
@@ -485,15 +487,15 @@
     panels.forEach((panel) => {
       panel.hidden = panel.dataset.appPanel !== mode;
     });
-    renderNotice("Bereit", mode === "woek" ? "Stelle eine Frage zur Wirkungsökonomie." : "Gib Text, Link oder Bildbeleg ein.");
+    renderNotice(i18n("Bereit", "Ready"), mode === "woek" ? i18n("Stelle eine Frage zur Wirkungsökonomie.", "Ask a question about Wirkungsökonomie.") : i18n("Gib Text, Link oder Bildbeleg ein.", "Enter text, a link or image evidence."));
   }
 
   function setBusy(isBusy) {
     root.querySelectorAll('button[type="submit"]').forEach((button) => {
       button.disabled = isBusy;
-      button.textContent = isBusy ? "Prüfung läuft..." : button.dataset.label || "Prüfen";
+      button.textContent = isBusy ? i18n("Prüfung läuft...", "Check running...") : button.dataset.label || i18n("Prüfen", "Check");
     });
-    if (status) status.textContent = isBusy ? "Prüfung läuft" : "Bereit";
+    if (status) status.textContent = isBusy ? i18n("Prüfung läuft", "Check running") : i18n("Bereit", "Ready");
   }
 
   function startProgress(path) {
@@ -527,9 +529,9 @@
 
     if (fill) fill.style.width = `${percent}%`;
     if (bar) bar.setAttribute("aria-valuenow", String(Math.round(percent)));
-    if (time) time.textContent = `läuft seit ${formatElapsed(elapsedSeconds)}`;
-    if (label) label.textContent = plan[activeIndex] || "Prüfung läuft";
-    if (status) status.textContent = `Prüfung läuft · ${formatElapsed(elapsedSeconds)}`;
+    if (time) time.textContent = `${i18n("läuft seit", "running for")} ${formatElapsed(elapsedSeconds)}`;
+    if (label) label.textContent = plan[activeIndex] || i18n("Prüfung läuft", "Check running");
+    if (status) status.textContent = `${i18n("Prüfung läuft", "Check running")} · ${formatElapsed(elapsedSeconds)}`;
 
     progress.querySelectorAll("[data-progress-step]").forEach((item) => {
       const index = Number(item.getAttribute("data-progress-step") || "0");
@@ -585,9 +587,9 @@
 
     const actions = node("div", "woek-result-actions__buttons");
     const statusText = node("small", "woek-result-actions__status", "");
-    const link = node("button", "", "Link erstellen");
-    const copy = node("button", "", "Antwort kopieren");
-    const pdf = node("button", "", "PDF exportieren");
+    const link = node("button", "", i18n("Link erstellen", "Create link"));
+    const copy = node("button", "", i18n("Antwort kopieren", "Copy answer"));
+    const pdf = node("button", "", i18n("PDF exportieren", "Export PDF"));
 
     [link, copy, pdf].forEach((button) => {
       button.type = "button";
@@ -597,14 +599,14 @@
     pdf.addEventListener("click", () => exportSharePdf(statusText));
 
     actions.append(link, copy, pdf);
-    wrapper.append(node("p", "hero-kicker", "Teilen"), actions, statusText);
+    wrapper.append(node("p", "hero-kicker", i18n("Teilen", "Share")), actions, statusText);
     return wrapper;
   }
 
   async function createShareLink(statusText, button) {
     if (!shareContext) return;
     button.disabled = true;
-    statusText.textContent = currentShareUrl ? "Link wird kopiert..." : "Link wird erstellt...";
+    statusText.textContent = currentShareUrl ? i18n("Link wird kopiert...", "Copying link...") : i18n("Link wird erstellt...", "Creating link...");
 
     try {
       if (!currentShareUrl) {
@@ -619,14 +621,14 @@
         });
         const payload = await response.json().catch(() => undefined);
         if (!response.ok || !payload?.ok) {
-          throw new Error(payload?.error || "Der Link konnte gerade nicht erstellt werden.");
+          throw new Error(payload?.error || i18n("Der Link konnte gerade nicht erstellt werden.", "The link could not be created right now."));
         }
         currentShareUrl = payload.url || shareableUrl(payload.id);
       }
       await copyText(currentShareUrl);
-      statusText.textContent = "Link erstellt und kopiert.";
+      statusText.textContent = i18n("Link erstellt und kopiert.", "Link created and copied.");
     } catch (error) {
-      statusText.textContent = error?.message || "Der Link konnte gerade nicht erstellt werden.";
+      statusText.textContent = error?.message || i18n("Der Link konnte gerade nicht erstellt werden.", "The link could not be created right now.");
     } finally {
       button.disabled = false;
     }
@@ -635,12 +637,12 @@
   async function copyShareMarkdown(statusText, button) {
     if (!shareContext) return;
     button.disabled = true;
-    statusText.textContent = "Antwort wird kopiert...";
+    statusText.textContent = i18n("Antwort wird kopiert...", "Copying answer...");
     try {
       await copyText(buildShareMarkdown(shareContext, currentShareUrl));
-      statusText.textContent = "Antwort als Markdown kopiert.";
+      statusText.textContent = i18n("Antwort als Markdown kopiert.", "Answer copied as Markdown.");
     } catch {
-      statusText.textContent = "Kopieren ist in diesem Browser gerade nicht möglich.";
+      statusText.textContent = i18n("Kopieren ist in diesem Browser gerade nicht möglich.", "Copying is not available in this browser right now.");
     } finally {
       button.disabled = false;
     }
@@ -650,28 +652,28 @@
     if (!shareContext) return;
     const popup = window.open("", "_blank", "noopener,noreferrer");
     if (!popup) {
-      statusText.textContent = "PDF-Fenster konnte nicht geöffnet werden.";
+      statusText.textContent = i18n("PDF-Fenster konnte nicht geöffnet werden.", "PDF window could not be opened.");
       return;
     }
     popup.document.write(sharePdfHtml(shareContext, currentShareUrl));
     popup.document.close();
     popup.focus();
-    statusText.textContent = "PDF-Ansicht geöffnet.";
+    statusText.textContent = i18n("PDF-Ansicht geöffnet.", "PDF view opened.");
     window.setTimeout(() => popup.print(), 250);
   }
 
   async function loadSharedResult(id) {
     const value = String(id || "").trim();
     if (!/^sr-[0-9a-f-]{36}$/i.test(value)) {
-      renderNotice("Geteiltes Ergebnis nicht gefunden", "Der Link ist unvollständig oder abgelaufen.");
+      renderNotice(i18n("Geteiltes Ergebnis nicht gefunden", "Shared result not found"), i18n("Der Link ist unvollständig oder abgelaufen.", "The link is incomplete or expired."));
       return;
     }
 
-    if (status) status.textContent = "Geteiltes Ergebnis wird geladen";
+    if (status) status.textContent = i18n("Geteiltes Ergebnis wird geladen", "Loading shared result");
     feedbackContext = null;
     shareContext = null;
     currentShareUrl = "";
-    replaceResult([kicker("Geteiltes Ergebnis"), heading("Wird geladen."), paragraph("Das gespeicherte Ergebnis wird geholt.")]);
+    replaceResult([kicker(i18n("Geteiltes Ergebnis", "Shared result")), heading(i18n("Wird geladen.", "Loading.")), paragraph(i18n("Das gespeicherte Ergebnis wird geholt.", "The saved result is being loaded."))]);
 
     try {
       const response = await fetch(`${apiBase}/api/share-result/${encodeURIComponent(value)}`, {
@@ -682,12 +684,12 @@
       });
       const payload = await response.json().catch(() => undefined);
       if (!response.ok || !payload?.ok || !payload.result) {
-        throw new Error(payload?.error || "Dieses geteilte Ergebnis wurde nicht gefunden oder ist abgelaufen.");
+        throw new Error(payload?.error || i18n("Dieses geteilte Ergebnis wurde nicht gefunden oder ist abgelaufen.", "This shared result was not found or has expired."));
       }
       renderSharedResult(payload.result);
-      if (status) status.textContent = "Geteiltes Ergebnis";
+      if (status) status.textContent = i18n("Geteiltes Ergebnis", "Shared result");
     } catch (error) {
-      renderNotice("Geteiltes Ergebnis nicht verfügbar", error?.message || "Dieses Ergebnis kann gerade nicht geladen werden.");
+      renderNotice(i18n("Geteiltes Ergebnis nicht verfügbar", "Shared result unavailable"), error?.message || i18n("Dieses Ergebnis kann gerade nicht geladen werden.", "This result cannot be loaded right now."));
     }
   }
 
@@ -695,7 +697,7 @@
     const sections = shareSections((Array.isArray(item?.sections) ? item.sections : []).map((entry) => [entry.title, entry.body]));
     setShareContext({
       target: item?.target || "factcheck",
-      title: item?.title || "WÖk-Ergebnis",
+      title: item?.title || i18n("WÖk-Ergebnis", "WÖk result"),
       question: item?.question || "",
       answer: item?.answer || "",
       sections,
@@ -705,9 +707,9 @@
     currentShareUrl = shareableUrl(item?.id);
     feedbackContext = null;
     replaceResult([
-      kicker("Geteiltes Ergebnis"),
-      heading(item?.title || "WÖk-Ergebnis"),
-      section("Ausgangsfrage", item?.question),
+      kicker(i18n("Geteiltes Ergebnis", "Shared result")),
+      heading(item?.title || i18n("WÖk-Ergebnis", "WÖk result")),
+      section(i18n("Ausgangsfrage", "Initial question"), item?.question),
       paragraph(item?.answer || ""),
       ...sections.map((entry) => section(entry.title, entry.body)),
       sourceSection(item?.sources)
@@ -721,16 +723,16 @@
       return wrapper;
     }
 
-    const label = node("p", "", "War diese Antwort hilfreich?");
+    const label = node("p", "", i18n("War diese Antwort hilfreich?", "Was this answer helpful?"));
     const actions = node("div", "woek-app-feedback-actions");
     const statusText = node("small", "", "");
-    const up = node("button", "", "Hilfreich");
-    const down = node("button", "", "Nicht hilfreich");
+    const up = node("button", "", i18n("Hilfreich", "Helpful"));
+    const down = node("button", "", i18n("Nicht hilfreich", "Not helpful"));
 
     up.type = "button";
     down.type = "button";
-    up.setAttribute("aria-label", "Antwort als hilfreich bewerten");
-    down.setAttribute("aria-label", "Antwort als nicht hilfreich bewerten");
+    up.setAttribute("aria-label", i18n("Antwort als hilfreich bewerten", "Rate answer as helpful"));
+    down.setAttribute("aria-label", i18n("Antwort als nicht hilfreich bewerten", "Rate answer as not helpful"));
     up.addEventListener("click", () => sendFeedback("up", statusText, [up, down]));
     down.addEventListener("click", () => sendFeedback("down", statusText, [up, down]));
     actions.append(up, down);
@@ -741,7 +743,7 @@
   async function sendFeedback(rating, statusText, buttons) {
     if (!feedbackContext) return;
     buttons.forEach((button) => { button.disabled = true; });
-    statusText.textContent = "Wird gespeichert...";
+    statusText.textContent = i18n("Wird gespeichert...", "Saving...");
 
     try {
       const response = await fetch(`${apiBase}/api/feedback`, {
@@ -761,7 +763,7 @@
       if (!response.ok || !payload?.ok) {
         throw new Error(feedbackUnavailableMessage);
       }
-      statusText.textContent = rating === "down" ? "Danke. Diese Antwort landet im Review." : "Danke. Bewertung gespeichert.";
+      statusText.textContent = rating === "down" ? i18n("Danke. Diese Antwort landet im Review.", "Thanks. This answer will go into review.") : i18n("Danke. Bewertung gespeichert.", "Thanks. Rating saved.");
     } catch (error) {
       buttons.forEach((button) => { button.disabled = false; });
       statusText.textContent = feedbackUnavailableMessage;
@@ -814,19 +816,19 @@
   }
 
   function buildShareMarkdown(context, url = "") {
-    const lines = [`# ${context.title || "WÖk-Ergebnis"}`];
-    if (context.question) lines.push("", `**Ausgangsfrage:** ${context.question}`);
-    if (context.answer) lines.push("", "## Antwort", context.answer);
+    const lines = [`# ${context.title || i18n("WÖk-Ergebnis", "WÖk result")}`];
+    if (context.question) lines.push("", `**${i18n("Ausgangsfrage", "Initial question")}:** ${context.question}`);
+    if (context.answer) lines.push("", `## ${i18n("Antwort", "Answer")}`, context.answer);
     context.sections.forEach((entry) => {
       lines.push("", `## ${entry.title}`, entry.body);
     });
     if (context.sources.length) {
-      lines.push("", "## Quellen");
+      lines.push("", `## ${i18n("Quellen", "Sources")}`);
       context.sources.forEach((source) => {
         lines.push(`- [${source.title || source.url}](${source.url})${source.excerpt ? ` - ${source.excerpt}` : ""}`);
       });
     }
-    if (url) lines.push("", `Link: ${url}`);
+    if (url) lines.push("", `${i18n("Link", "Link")}: ${url}`);
     return lines.join("\n");
   }
 
@@ -834,10 +836,10 @@
     const sourceItems = context.sources.map((source) => `<li><a href="${escapeHtml(source.url)}">${escapeHtml(source.title || source.url)}</a>${source.excerpt ? `<p>${escapeHtml(source.excerpt)}</p>` : ""}</li>`).join("");
     const sectionItems = context.sections.map((entry) => `<section><h2>${escapeHtml(entry.title)}</h2><p>${textToHtml(entry.body)}</p></section>`).join("");
     return `<!doctype html>
-<html lang="de">
+<html lang="${siteLocale}">
 <head>
   <meta charset="utf-8">
-  <title>${escapeHtml(context.title || "WÖk-Ergebnis")}</title>
+  <title>${escapeHtml(context.title || i18n("WÖk-Ergebnis", "WÖk result"))}</title>
   <style>
     body { color: #070b1b; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; margin: 36px; }
     h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.1; }
@@ -850,12 +852,12 @@
   </style>
 </head>
 <body>
-  <h1>${escapeHtml(context.title || "WÖk-Ergebnis")}</h1>
-  ${context.question ? `<p class="question"><strong>Ausgangsfrage:</strong><br>${textToHtml(context.question)}</p>` : ""}
-  ${context.answer ? `<section><h2>Antwort</h2><p>${textToHtml(context.answer)}</p></section>` : ""}
+  <h1>${escapeHtml(context.title || i18n("WÖk-Ergebnis", "WÖk result"))}</h1>
+  ${context.question ? `<p class="question"><strong>${i18n("Ausgangsfrage", "Initial question")}:</strong><br>${textToHtml(context.question)}</p>` : ""}
+  ${context.answer ? `<section><h2>${i18n("Antwort", "Answer")}</h2><p>${textToHtml(context.answer)}</p></section>` : ""}
   ${sectionItems}
-  ${sourceItems ? `<section><h2>Quellen</h2><ol>${sourceItems}</ol></section>` : ""}
-  ${url ? `<p><strong>Link:</strong> <a href="${escapeHtml(url)}">${escapeHtml(url)}</a></p>` : ""}
+  ${sourceItems ? `<section><h2>${i18n("Quellen", "Sources")}</h2><ol>${sourceItems}</ol></section>` : ""}
+  ${url ? `<p><strong>${i18n("Link", "Link")}:</strong> <a href="${escapeHtml(url)}">${escapeHtml(url)}</a></p>` : ""}
 </body>
 </html>`;
   }
@@ -912,14 +914,14 @@
     const list = node("ol", "woek-app-result-list");
     items.forEach((item) => {
       const li = node("li", "");
-      const link = node("a", "", item.title || item.url || "Quelle");
+      const link = node("a", "", item.title || item.url || i18n("Quelle", "Source"));
       link.href = item.url || "#";
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      li.append(link, node("p", "", item.note || item.excerpt || item.supports || "Belegfunktion offen."));
+      li.append(link, node("p", "", item.note || item.excerpt || item.supports || i18n("Belegfunktion offen.", "Evidence function open.")));
       list.append(li);
     });
-    wrapper.append(node("h3", "", "Quellen"), list);
+    wrapper.append(node("h3", "", i18n("Quellen", "Sources")), list);
     return wrapper;
   }
 
@@ -937,15 +939,15 @@
     wrapper.setAttribute("data-woek-progress", "");
 
     const meta = node("div", "woek-progress__meta");
-    const label = node("span", "", plan[0] || "Prüfung läuft");
-    const time = node("span", "", "läuft seit 0:00");
+    const label = node("span", "", plan[0] || i18n("Prüfung läuft", "Check running"));
+    const time = node("span", "", `${i18n("läuft seit", "running for")} 0:00`);
     label.setAttribute("data-progress-label", "");
     time.setAttribute("data-progress-time", "");
     meta.append(label, time);
 
     const bar = node("div", "woek-progress__bar");
     bar.setAttribute("role", "progressbar");
-    bar.setAttribute("aria-label", "Arbeitsfortschritt");
+    bar.setAttribute("aria-label", i18n("Arbeitsfortschritt", "Work progress"));
     bar.setAttribute("aria-valuemin", "0");
     bar.setAttribute("aria-valuemax", "100");
     bar.setAttribute("aria-valuenow", "12");
@@ -960,18 +962,18 @@
       steps.append(item);
     });
 
-    wrapper.append(meta, bar, steps, node("p", "woek-progress__hint", "Orientierungsbalken: Die genaue Dauer hängt von Quellenlage, Bild/Textbeleg und KI-Dienst ab."));
+    wrapper.append(meta, bar, steps, node("p", "woek-progress__hint", i18n("Orientierungsbalken: Die genaue Dauer hängt von Quellenlage, Bild/Textbeleg und KI-Dienst ab.", "Orientation bar: the exact duration depends on source situation, image/text evidence and AI service.")));
     return wrapper;
   }
 
   function progressPlanFor(path) {
     if (path === "/api/woek-ai") {
-      return ["Frage lesen", "WÖk-Wissensbasis abgleichen", "Passende Quellen bündeln", "Antwort in einfacher Sprache formulieren", "Grenzen prüfen"];
+      return siteLocale === "en" ? ["Read question", "Compare WÖk knowledge base", "Bundle matching sources", "Formulate answer in plain language", "Check limits"] : ["Frage lesen", "WÖk-Wissensbasis abgleichen", "Passende Quellen bündeln", "Antwort in einfacher Sprache formulieren", "Grenzen prüfen"];
     }
     if (path === "/api/product-check") {
-      return ["Produktdaten sichern", "Öffentliche Hinweise prüfen", "Wirkungsdimensionen bewerten", "Reverse-Merit-Order einordnen", "Antwort und Grenzen formulieren"];
+      return siteLocale === "en" ? ["Capture product data", "Check public evidence", "Assess impact dimensions", "Classify reverse merit order", "Formulate answer and limits"] : ["Produktdaten sichern", "Öffentliche Hinweise prüfen", "Wirkungsdimensionen bewerten", "Reverse-Merit-Order einordnen", "Antwort und Grenzen formulieren"];
     }
-    return ["Eingabe sichern", "WÖk-Wissensbasis abgleichen", "Quellenlage und Wahrheitsgehalt prüfen", "Sprache, Frame und Wirkungspfad analysieren", "Antwort und Grenzen formulieren"];
+    return siteLocale === "en" ? ["Capture input", "Compare WÖk knowledge base", "Check source situation and truth status", "Analyze language, framing and impact pathway", "Formulate answer and limits"] : ["Eingabe sichern", "WÖk-Wissensbasis abgleichen", "Quellenlage und Wahrheitsgehalt prüfen", "Sprache, Frame und Wirkungspfad analysieren", "Antwort und Grenzen formulieren"];
   }
 
   function progressCheckpoints(length) {

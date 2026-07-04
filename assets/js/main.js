@@ -53,6 +53,8 @@ const uiText = {
   noteDeleteConfirm: siteLocale === "en" ? "Delete this local note?" : "Diese lokale Notiz löschen?",
   noteDeleted: siteLocale === "en" ? "Note deleted." : "Notiz gelöscht.",
 };
+const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
+const i18nPath = (dePath, enPath) => (siteLocale === "en" ? enPath : dePath);
 
 const mainElement = document.querySelector("main");
 
@@ -4308,9 +4310,9 @@ const WirkungsraumLayer = (() => {
   }
 
   function statusLabel(status) {
-    if (status === "gelesen") return "gelesen";
-    if (status === "begonnen") return "begonnen";
-    return "ungelesen";
+    if (status === "gelesen") return i18n("gelesen", "read");
+    if (status === "begonnen") return i18n("begonnen", "started");
+    return i18n("ungelesen", "unread");
   }
 
   function itemStatus(item) {
@@ -5611,20 +5613,20 @@ const WirkungsraumLayer = (() => {
     const status = hasProgress ? itemStatus({ ...item, progress: progressValue }) : null;
     const statusText = status ? `${statusSymbol(status)} ${statusLabel(status)}${progressValue !== null ? ` · ${progressValue}%` : ""}` : "";
     const progress = hasProgress
-      ? `<p class="wirkungsraum-progress" aria-label="Lesefortschritt ${progressValue}%"><span style="width:${Math.max(3, progressValue)}%"></span></p>`
+      ? `<p class="wirkungsraum-progress" aria-label="${i18n("Lesefortschritt", "Reading progress")} ${progressValue}%"><span style="width:${Math.max(3, progressValue)}%"></span></p>`
       : "";
-    const lastRead = options.showLastRead && item.last_read_at ? `<p class="wirkungsraum-meta">Zuletzt gelesen: ${escapeHtml(formatDateTime(item.last_read_at))}</p>` : "";
+    const lastRead = options.showLastRead && item.last_read_at ? `<p class="wirkungsraum-meta">${i18n("Zuletzt gelesen", "Last read")}: ${escapeHtml(formatDateTime(item.last_read_at))}</p>` : "";
     const href = typeof options.href === "function" ? options.href(item) : item.url || "#";
     article.innerHTML = `
-      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")}</p>
-      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      <p class="card-kicker">${escapeHtml(item.type || i18n("Inhalt", "Content"))}</p>
+      <h3 class="card-title">${escapeHtml(item.title || i18n("Ohne Titel", "Untitled"))}</h3>
       ${options.showStatus && statusText ? `<p class="wirkungsraum-reading-status">${escapeHtml(statusText)}</p>` : ""}
       ${progress}
       ${lastRead}
       ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(href)}">${options.readLabel || "Öffnen"}</a>
-        ${options.removable ? `<button class="btn btn-secondary" type="button" data-remove-saved="${escapeAttribute(item.id || "")}">Entfernen</button>` : ""}
+        <a class="btn btn-primary" href="${escapeAttribute(href)}">${options.readLabel || i18n("Öffnen", "Open")}</a>
+        ${options.removable ? `<button class="btn btn-secondary" type="button" data-remove-saved="${escapeAttribute(item.id || "")}">${i18n("Entfernen", "Remove")}</button>` : ""}
       </p>
     `;
     return article;
@@ -5656,14 +5658,14 @@ const WirkungsraumLayer = (() => {
     article.className = "card wirkungsraum-item wirkungsraum-history-card";
     const tags = Array.isArray(item.tags) ? item.tags.slice(0, 4) : [];
     const visitCount = Number(item.visit_count || 1);
-    const visited = item.visited_at ? `<p class="wirkungsraum-meta">Besucht: ${escapeHtml(formatDateTime(item.visited_at))}${visitCount > 1 ? ` · ${visitCount} Aufrufe` : ""}</p>` : "";
+    const visited = item.visited_at ? `<p class="wirkungsraum-meta">${i18n("Besucht", "Visited")}: ${escapeHtml(formatDateTime(item.visited_at))}${visitCount > 1 ? ` · ${visitCount} ${i18n("Aufrufe", "visits")}` : ""}</p>` : "";
     article.innerHTML = `
-      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")}</p>
-      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      <p class="card-kicker">${escapeHtml(item.type || i18n("Inhalt", "Content"))}</p>
+      <h3 class="card-title">${escapeHtml(item.title || i18n("Ohne Titel", "Untitled"))}</h3>
       ${visited}
       ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Zur Seite springen</a>
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">${i18n("Zur Seite springen", "Open page")}</a>
       </p>
     `;
     return article;
@@ -5675,7 +5677,7 @@ const WirkungsraumLayer = (() => {
     if (!items.length) {
       const empty = document.createElement("article");
       empty.className = "card";
-      empty.innerHTML = `<p class="card-text">Noch keine Historie. Öffne Inhalte auf der Website, dann erscheinen sie hier nach Zeitraum gruppiert.</p>`;
+      empty.innerHTML = `<p class="card-text">${i18n("Noch keine Historie. Öffne Inhalte auf der Website, dann erscheinen sie hier nach Zeitraum gruppiert.", "No history yet. Open content on the website and it will appear here grouped by time period.")}</p>`;
       container.append(empty);
       return;
     }
@@ -5694,13 +5696,13 @@ const WirkungsraumLayer = (() => {
     });
   }
 
-  function resultLinkList(results, emptyText = "Keine einzelnen Ergebnisse gespeichert.") {
+  function resultLinkList(results, emptyText = i18n("Keine einzelnen Ergebnisse gespeichert.", "No individual results saved.")) {
     const items = (Array.isArray(results) ? results : []).filter((item) => item && (item.title || item.url || item.excerpt)).slice(0, 5);
     if (!items.length) return `<p class="card-text">${escapeHtml(emptyText)}</p>`;
     return `
       <ul class="wirkungsraum-query-results">
         ${items.map((item) => {
-          const title = item.title || item.url || "Treffer";
+          const title = item.title || item.url || i18n("Treffer", "Result");
           const type = item.type ? `<span>${escapeHtml(item.type)}</span>` : "";
           const excerpt = item.excerpt ? `<small>${escapeHtml(item.excerpt)}</small>` : "";
           const label = `<strong>${escapeHtml(title)}</strong>${type}${excerpt}`;
@@ -5711,7 +5713,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function searchReplayUrl(item) {
-    const url = new URL("/suche.html", window.location.origin);
+    const url = new URL(i18nPath("/suche.html", "/en/#tools"), window.location.origin);
     if (item.query) url.searchParams.set("q", item.query);
     Object.entries(item.filters || {}).forEach(([key, value]) => {
       if (!value) return;
@@ -5728,7 +5730,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function aiReplayUrl(item) {
-    const url = new URL("/woek-ki/", window.location.origin);
+    const url = new URL(i18nPath("/woek-ki/", "/en/woek-ai/"), window.location.origin);
     if (item.question) url.searchParams.set("frage", item.question);
     return `${url.pathname}${url.search}`;
   }
@@ -5736,20 +5738,20 @@ const WirkungsraumLayer = (() => {
   function searchHistoryCard(item, options = {}) {
     const article = document.createElement("article");
     article.className = "card wirkungsraum-item wirkungsraum-query-card";
-    const query = item.query || "Gefilterte Suche";
+    const query = item.query || i18n("Gefilterte Suche", "Filtered search");
     const count = Number.isFinite(Number(item.result_count)) ? Number(item.result_count) : (item.results || []).length;
     const searches = Number(item.search_count || 1);
     const filters = Object.entries(item.filters || {}).filter(([, value]) => value);
     const when = item.searched_at ? formatDateTime(item.searched_at) : "";
     article.innerHTML = `
-      <p class="card-kicker">Suche${when ? ` · ${escapeHtml(when)}` : ""}</p>
+      <p class="card-kicker">${i18n("Suche", "Search")}${when ? ` · ${escapeHtml(when)}` : ""}</p>
       <h3 class="card-title">„${escapeHtml(query)}“</h3>
-      <p class="wirkungsraum-meta">${count} gespeicherte Treffer${searches > 1 ? ` · ${searches} Aufrufe` : ""}</p>
+      <p class="wirkungsraum-meta">${count} ${i18n("gespeicherte Treffer", "saved results")}${searches > 1 ? ` · ${searches} ${i18n("Aufrufe", "searches")}` : ""}</p>
       ${filters.length ? `<div class="chip-row">${filters.map(([key, value]) => `<span class="chip">${escapeHtml(`${key}: ${value}`)}</span>`).join("")}</div>` : ""}
       ${resultLinkList(item.results)}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(searchReplayUrl(item))}">Erneut suchen</a>
-        ${options.dashboard ? "" : `<a class="btn btn-secondary" href="/mein-wirkungsraum/#suchanfragen">Im Wirkungsraum ansehen</a>`}
+        <a class="btn btn-primary" href="${escapeAttribute(searchReplayUrl(item))}">${i18n("Erneut suchen", "Search again")}</a>
+        ${options.dashboard ? "" : `<a class="btn btn-secondary" href="${i18nPath("/mein-wirkungsraum/#suchanfragen", "/en/my-impact-space/#search-history")}">${i18n("Im Wirkungsraum ansehen", "View in My Impact Space")}</a>`}
       </p>
     `;
     return article;
@@ -5763,15 +5765,15 @@ const WirkungsraumLayer = (() => {
     const when = item.asked_at ? formatDateTime(item.asked_at) : "";
     const answerExcerpt = cleanText(item.answer || "").slice(0, 420);
     article.innerHTML = `
-      <p class="card-kicker">WÖk-KI${when ? ` · ${escapeHtml(when)}` : ""}</p>
-      <h3 class="card-title">${escapeHtml(item.question || "Frage")}</h3>
-      <p class="wirkungsraum-meta">${sourcesCount} Quelle${sourcesCount === 1 ? "" : "n"}${asks > 1 ? ` · ${asks} Aufrufe` : ""}</p>
+      <p class="card-kicker">${i18n("WÖk-KI", "WÖk AI")}${when ? ` · ${escapeHtml(when)}` : ""}</p>
+      <h3 class="card-title">${escapeHtml(item.question || i18n("Frage", "Question"))}</h3>
+      <p class="wirkungsraum-meta">${sourcesCount} ${sourcesCount === 1 ? i18n("Quelle", "source") : i18n("Quellen", "sources")}${asks > 1 ? ` · ${asks} ${i18n("Aufrufe", "asks")}` : ""}</p>
       ${answerExcerpt ? `<p class="card-text">${escapeHtml(answerExcerpt)}${cleanText(item.answer || "").length > answerExcerpt.length ? " ..." : ""}</p>` : ""}
-      ${resultLinkList(item.sources, "Keine Quellen gespeichert.")}
+      ${resultLinkList(item.sources, i18n("Keine Quellen gespeichert.", "No sources saved."))}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(aiReplayUrl(item))}">Frage erneut öffnen</a>
-        <button class="btn btn-secondary" type="button" data-prefill-ai-question="${escapeAttribute(item.question || "")}">Frage übernehmen</button>
-        ${options.dashboard ? "" : `<a class="btn btn-secondary" href="/mein-wirkungsraum/#ki-anfragen">Im Wirkungsraum ansehen</a>`}
+        <a class="btn btn-primary" href="${escapeAttribute(aiReplayUrl(item))}">${i18n("Frage erneut öffnen", "Open question again")}</a>
+        <button class="btn btn-secondary" type="button" data-prefill-ai-question="${escapeAttribute(item.question || "")}">${i18n("Frage übernehmen", "Use question")}</button>
+        ${options.dashboard ? "" : `<a class="btn btn-secondary" href="${i18nPath("/mein-wirkungsraum/#ki-anfragen", "/en/my-impact-space/#ai-history")}">${i18n("Im Wirkungsraum ansehen", "View in My Impact Space")}</a>`}
       </p>
     `;
     return article;
@@ -5809,7 +5811,7 @@ const WirkungsraumLayer = (() => {
       items.slice(0, 80),
       "searched_at",
       searchHistoryCard,
-      `<p class="card-text">Noch keine Suchanfragen gespeichert. Nutze die Suche, dann erscheinen Anfragen und ihre Treffer hier.</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="/suche.html">Suche öffnen</a></p>`,
+      `<p class="card-text">${i18n("Noch keine Suchanfragen gespeichert. Nutze die Suche, dann erscheinen Anfragen und ihre Treffer hier.", "No search queries saved yet. Use search and your queries and results will appear here.")}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="${i18nPath("/suche.html", "/en/#tools")}">${i18n("Suche öffnen", "Open search")}</a></p>`,
       { dashboard: true }
     );
     const stat = root.querySelector("[data-stat-search-history]");
@@ -5824,7 +5826,7 @@ const WirkungsraumLayer = (() => {
       items.slice(0, 80),
       "asked_at",
       aiHistoryCard,
-      `<p class="card-text">Noch keine KI-Anfragen gespeichert. Stelle der WÖk-KI eine Frage, dann erscheinen Frage, Antwort und Quellen hier.</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="/woek-ki/">WÖk-KI öffnen</a></p>`,
+      `<p class="card-text">${i18n("Noch keine KI-Anfragen gespeichert. Stelle der WÖk-KI eine Frage, dann erscheinen Frage, Antwort und Quellen hier.", "No AI questions saved yet. Ask WÖk AI a question and the question, answer and sources will appear here.")}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="${i18nPath("/woek-ki/", "/en/woek-ai/")}">${i18n("WÖk-KI öffnen", "Open WÖk AI")}</a></p>`,
       { dashboard: true }
     );
     const stat = root.querySelector("[data-stat-ai-history]");
@@ -5840,7 +5842,7 @@ const WirkungsraumLayer = (() => {
         searchHistoryItems().slice(0, 12),
         "searched_at",
         searchHistoryCard,
-        `<p class="card-text">Noch keine vergangenen Suchanfragen in diesem Browser.</p>`,
+        `<p class="card-text">${i18n("Noch keine vergangenen Suchanfragen in diesem Browser.", "No past search queries in this browser yet.")}</p>`,
         { groupLimit: 6 }
       );
     }
@@ -5851,7 +5853,7 @@ const WirkungsraumLayer = (() => {
         aiQueryHistoryItems().slice(0, 12),
         "asked_at",
         aiHistoryCard,
-        `<p class="card-text">Noch keine vergangenen KI-Anfragen in diesem Browser.</p>`,
+        `<p class="card-text">${i18n("Noch keine vergangenen KI-Anfragen in diesem Browser.", "No past AI questions in this browser yet.")}</p>`,
         { groupLimit: 6 }
       );
     }
@@ -5911,14 +5913,14 @@ const WirkungsraumLayer = (() => {
   function localDataSummary() {
     const snapshot = WoekUserSpace.snapshot();
     return [
-      `Merkliste: ${countObjectEntries(snapshot.objects.saved_items)}`,
-      `Fortschritt: ${countObjectEntries(snapshot.objects.reading_progress)}`,
-      `Sammlungen: ${countObjectEntries(snapshot.objects.collections)}`,
-      `Lernliste: ${countObjectEntries(snapshot.objects.learning_items)}`,
-      `Notizen: ${countObjectEntries(snapshot.objects.notes)}`,
-      `Historie: ${countObjectEntries(snapshot.objects.visit_history)}`,
-      `Suchanfragen: ${countObjectEntries(snapshot.objects.search_history)}`,
-      `KI-Anfragen: ${countObjectEntries(snapshot.objects.ai_query_history)}`
+      `${i18n("Merkliste", "Saved items")}: ${countObjectEntries(snapshot.objects.saved_items)}`,
+      `${i18n("Fortschritt", "Progress")}: ${countObjectEntries(snapshot.objects.reading_progress)}`,
+      `${i18n("Sammlungen", "Collections")}: ${countObjectEntries(snapshot.objects.collections)}`,
+      `${i18n("Lernliste", "Learning list")}: ${countObjectEntries(snapshot.objects.learning_items)}`,
+      `${i18n("Notizen", "Notes")}: ${countObjectEntries(snapshot.objects.notes)}`,
+      `${i18n("Historie", "History")}: ${countObjectEntries(snapshot.objects.visit_history)}`,
+      `${i18n("Suchanfragen", "Search queries")}: ${countObjectEntries(snapshot.objects.search_history)}`,
+      `${i18n("KI-Anfragen", "AI questions")}: ${countObjectEntries(snapshot.objects.ai_query_history)}`
     ].join(" · ");
   }
 
@@ -6045,13 +6047,13 @@ const WirkungsraumLayer = (() => {
   }
 
   const resetObjectLabels = {
-    saved_items: "Merkliste",
-    reading_progress: "Fortschritt",
-    collections: "Sammlungen",
-    notes: "Notizen",
-    visit_history: "Historie",
-    search_history: "Suchanfragen",
-    ai_query_history: "KI-Anfragen"
+    saved_items: i18n("Merkliste", "Saved items"),
+    reading_progress: i18n("Fortschritt", "Progress"),
+    collections: i18n("Sammlungen", "Collections"),
+    notes: i18n("Notizen", "Notes"),
+    visit_history: i18n("Historie", "History"),
+    search_history: i18n("Suchanfragen", "Search queries"),
+    ai_query_history: i18n("KI-Anfragen", "AI questions")
   };
 
   function parseContentDate(value) {
@@ -6708,14 +6710,14 @@ const WirkungsraumLayer = (() => {
     const sources = uniqueStrings(item.sourceTitles || [], 3);
     const sourceLine = sources.length ? `<p class="wirkungsraum-knowledge-path"><span>${sources.map(escapeHtml).join("</span><span>")}</span><span>passt zu</span><span>${escapeHtml(item.title || "Inhalt")}</span></p>` : "";
     article.innerHTML = `
-      <p class="card-kicker">${escapeHtml(item.type || "Inhalt")} · ${escapeHtml(item.recommendationLabel || "Empfehlung")}</p>
-      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
+      <p class="card-kicker">${escapeHtml(item.type || i18n("Inhalt", "Content"))} · ${escapeHtml(item.recommendationLabel || i18n("Empfehlung", "Recommendation"))}</p>
+      <h3 class="card-title">${escapeHtml(item.title || i18n("Ohne Titel", "Untitled"))}</h3>
       ${item.description ? `<p class="card-text">${escapeHtml(item.description)}</p>` : ""}
       ${sourceLine}
-      ${item.reason ? `<p class="wirkungsraum-recommendation-reason"><strong>Warum:</strong> ${escapeHtml(item.reason)}</p>` : ""}
+      ${item.reason ? `<p class="wirkungsraum-recommendation-reason"><strong>${i18n("Warum", "Why")}:</strong> ${escapeHtml(item.reason)}</p>` : ""}
       ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Inhalt öffnen</a>
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">${i18n("Inhalt öffnen", "Open content")}</a>
       </p>
     `;
     return article;
@@ -6727,7 +6729,7 @@ const WirkungsraumLayer = (() => {
     if (!items.length) {
       const empty = document.createElement("article");
       empty.className = "card";
-      empty.innerHTML = `<p class="card-text">Noch keine Empfehlungen. Besuche, suche, frage oder merke ein paar Inhalte, dann entsteht hier ein persönlicher Anschlussfinder.</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="/suche.html">Suche öffnen</a></p>`;
+      empty.innerHTML = `<p class="card-text">${i18n("Noch keine Empfehlungen. Besuche, suche, frage oder merke ein paar Inhalte, dann entsteht hier ein persönlicher Anschlussfinder.", "No recommendations yet. Visit, search, ask or save a few pieces of content and a personal connection finder will emerge here.")}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="${i18nPath("/suche.html", "/en/#tools")}">${i18n("Suche öffnen", "Open search")}</a></p>`;
       container.append(empty);
       return;
     }
@@ -6739,7 +6741,7 @@ const WirkungsraumLayer = (() => {
     if (!container) return;
     const stat = root.querySelector("[data-stat-cross-sell]");
     const run = ++crossSellRenderRun;
-    container.innerHTML = `<article class="card"><p class="card-text">Empfehlungen werden aus deinem lokalen Wirkungsraum berechnet.</p></article>`;
+    container.innerHTML = `<article class="card"><p class="card-text">${i18n("Empfehlungen werden aus deinem lokalen Wirkungsraum berechnet.", "Recommendations are calculated from your local Impact Space.")}</p></article>`;
     crossSellRecommendations()
       .then((items) => {
         if (run !== crossSellRenderRun) return;
@@ -6756,8 +6758,8 @@ const WirkungsraumLayer = (() => {
   function drawReadingDashboard(root) {
     const reading = readingProgressItems();
     const readingList = root.querySelector("[data-reading-list]");
-    renderList(readingList, reading.slice(0, 12), "Noch kein Lesefortschritt. Öffne ein Referenzkapitel, Buchkapitel, Dokument, Dossier oder Akademie-Modul.", {
-      readLabel: "Weiterlesen",
+    renderList(readingList, reading.slice(0, 12), i18n("Noch kein Lesefortschritt. Öffne ein Referenzkapitel, Buchkapitel, Dokument, Dossier oder Akademie-Modul.", "No reading progress yet. Open a reference chapter, book chapter, document, dossier or academy module."), {
+      readLabel: i18n("Weiterlesen", "Continue reading"),
       showStatus: true,
       showLastRead: true,
       href: (item) => continueUrl(item.url)
@@ -6779,7 +6781,7 @@ const WirkungsraumLayer = (() => {
   function updateCollapsibleCount(root, selector, count) {
     const node = root?.querySelector?.(selector);
     if (!(node instanceof HTMLElement)) return;
-    node.textContent = `${count} ${count === 1 ? "Eintrag" : "Einträge"}`;
+    node.textContent = `${count} ${count === 1 ? i18n("Eintrag", "entry") : i18n("Einträge", "entries")}`;
   }
 
   function noteCard(note) {
@@ -6787,16 +6789,16 @@ const WirkungsraumLayer = (() => {
     article.className = "card wirkungsraum-note-card";
     article.dataset.noteId = note.id;
     const tags = Array.isArray(note.tags) ? note.tags.slice(0, 4) : [];
-    const updated = note.updated_at ? `<p class="wirkungsraum-meta">Aktualisiert: ${escapeHtml(formatDateTime(note.updated_at))}</p>` : "";
+    const updated = note.updated_at ? `<p class="wirkungsraum-meta">${i18n("Aktualisiert", "Updated")}: ${escapeHtml(formatDateTime(note.updated_at))}</p>` : "";
     article.innerHTML = `
-      <p class="card-kicker">${escapeHtml(note.target_type || "Notiz")}</p>
-      <h3 class="card-title">${escapeHtml(note.target_title || "Ohne Titel")}</h3>
+      <p class="card-kicker">${escapeHtml(note.target_type || i18n("Notiz", "Note"))}</p>
+      <h3 class="card-title">${escapeHtml(note.target_title || i18n("Ohne Titel", "Untitled"))}</h3>
       <p class="wirkungsraum-note-text">${escapeHtml(note.content || "")}</p>
       ${updated}
       ${tags.length ? `<div class="chip-row">${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(note.target_url || "#")}">Seite öffnen</a>
-        <button class="btn btn-secondary" type="button" data-remove-note="${escapeAttribute(note.id || "")}">Notiz löschen</button>
+        <a class="btn btn-primary" href="${escapeAttribute(note.target_url || "#")}">${i18n("Seite öffnen", "Open page")}</a>
+        <button class="btn btn-secondary" type="button" data-remove-note="${escapeAttribute(note.id || "")}">${i18n("Notiz löschen", "Delete note")}</button>
       </p>
     `;
     return article;
@@ -6808,7 +6810,7 @@ const WirkungsraumLayer = (() => {
     if (!items.length) {
       const empty = document.createElement("article");
       empty.className = "card";
-      empty.innerHTML = `<p class="card-text">Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.</p>`;
+      empty.innerHTML = `<p class="card-text">${i18n("Noch keine Notizen. Auf Inhaltsseiten erscheint ein lokales Notizfeld.", "No notes yet. Content pages show a local note field.")}</p>`;
       container.append(empty);
       return;
     }
@@ -6832,17 +6834,17 @@ const WirkungsraumLayer = (() => {
       .map(([value, label]) => `<option value="${escapeAttribute(value)}" ${normalizeLearningStatus(item.learning_status) === value ? "selected" : ""}>${escapeHtml(label)}</option>`)
       .join("");
     article.innerHTML = `
-      <p class="card-kicker">${escapeHtml(item.type || "Lerninhalt")}</p>
-      <h3 class="card-title">${escapeHtml(item.title || "Ohne Titel")}</h3>
-      <p class="wirkungsraum-meta">Lernstatus: ${escapeHtml(learningStatusLabel(item.learning_status))}</p>
+      <p class="card-kicker">${escapeHtml(item.type || i18n("Lerninhalt", "Learning item"))}</p>
+      <h3 class="card-title">${escapeHtml(item.title || i18n("Ohne Titel", "Untitled"))}</h3>
+      <p class="wirkungsraum-meta">${i18n("Lernstatus", "Learning status")}: ${escapeHtml(learningStatusLabel(item.learning_status))}</p>
       <label class="wirkungsraum-status-select">
-        <span>Status ändern</span>
+        <span>${i18n("Status ändern", "Change status")}</span>
         <select data-learning-status="${escapeAttribute(item.id)}">${statusOptions}</select>
       </label>
       ${(part || tags.length) ? `<div class="chip-row">${part}${tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       <p class="wirkungsraum-item-actions">
-        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">Öffnen</a>
-        <button class="btn btn-secondary" type="button" data-remove-learning="${escapeAttribute(item.id || "")}">Entfernen</button>
+        <a class="btn btn-primary" href="${escapeAttribute(item.url || "#")}">${i18n("Öffnen", "Open")}</a>
+        <button class="btn btn-secondary" type="button" data-remove-learning="${escapeAttribute(item.id || "")}">${i18n("Entfernen", "Remove")}</button>
       </p>
     `;
     return article;
@@ -6854,7 +6856,7 @@ const WirkungsraumLayer = (() => {
     if (!items.length) {
       const empty = document.createElement("article");
       empty.className = "card";
-      empty.innerHTML = `<p class="card-text">Noch keine Lernliste. Auf Inhaltsseiten erscheint automatisch „Zur Lernliste hinzufügen“.</p>`;
+      empty.innerHTML = `<p class="card-text">${i18n("Noch keine Lernliste. Auf Inhaltsseiten erscheint automatisch „Zur Lernliste hinzufügen“.", "No learning list yet. Content pages automatically show “Add to learning list”.")}</p>`;
       container.append(empty);
       return;
     }
@@ -6864,10 +6866,10 @@ const WirkungsraumLayer = (() => {
   function academyItemFromPart(part) {
     return {
       id: `akademie-${part.id}`,
-      type: "Akademie",
+      type: i18n("Akademie", "Academy"),
       title: `${part.label}: ${part.title}`,
       url: part.href,
-      category: "Akademie-Grundstudium",
+      category: i18n("Akademie-Grundstudium", "Academy foundation course"),
       tags: ["Akademie", "Lernpfad", part.label],
       learning_status: "offen",
       part_id: part.id,
@@ -6982,7 +6984,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function collectionItemMarkup(collection, savedById) {
-    if (!collection.item_ids.length) return `<p class="card-text">Noch keine Inhalte in dieser Sammlung.</p>`;
+    if (!collection.item_ids.length) return `<p class="card-text">${i18n("Noch keine Inhalte in dieser Sammlung.", "No items in this collection yet.")}</p>`;
     return `
       <div class="wirkungsraum-collection-items">
         ${collection.item_ids
@@ -6991,15 +6993,15 @@ const WirkungsraumLayer = (() => {
             if (!item) {
               return `
                 <span class="wirkungsraum-collection-item muted">
-                  <span>Nicht mehr gemerkt</span>
-                  <button type="button" data-remove-collection-item data-collection-id="${escapeAttribute(collection.id)}" data-item-id="${escapeAttribute(itemId)}">Entfernen</button>
+                  <span>${i18n("Nicht mehr gemerkt", "No longer saved")}</span>
+                  <button type="button" data-remove-collection-item data-collection-id="${escapeAttribute(collection.id)}" data-item-id="${escapeAttribute(itemId)}">${i18n("Entfernen", "Remove")}</button>
                 </span>
               `;
             }
             return `
               <span class="wirkungsraum-collection-item">
-                <a href="${escapeAttribute(item.url || "#")}">${escapeHtml(item.title || "Ohne Titel")}</a>
-                <button type="button" data-remove-collection-item data-collection-id="${escapeAttribute(collection.id)}" data-item-id="${escapeAttribute(itemId)}">Entfernen</button>
+                <a href="${escapeAttribute(item.url || "#")}">${escapeHtml(item.title || i18n("Ohne Titel", "Untitled"))}</a>
+                <button type="button" data-remove-collection-item data-collection-id="${escapeAttribute(collection.id)}" data-item-id="${escapeAttribute(itemId)}">${i18n("Entfernen", "Remove")}</button>
               </span>
             `;
           })
@@ -7012,32 +7014,32 @@ const WirkungsraumLayer = (() => {
     const article = document.createElement("article");
     article.className = "card wirkungsraum-collection-card";
     article.dataset.collectionId = collection.id;
-    const updated = collection.updated_at ? `<p class="wirkungsraum-meta">Aktualisiert: ${escapeHtml(formatDateTime(collection.updated_at))}</p>` : "";
+    const updated = collection.updated_at ? `<p class="wirkungsraum-meta">${i18n("Aktualisiert", "Updated")}: ${escapeHtml(formatDateTime(collection.updated_at))}</p>` : "";
     article.innerHTML = `
       <div data-collection-view>
-        <p class="card-kicker">Sammlung</p>
+        <p class="card-kicker">${i18n("Sammlung", "Collection")}</p>
         <h3 class="card-title">${escapeHtml(collection.title)}</h3>
         ${collection.description ? `<p class="card-text">${escapeHtml(collection.description)}</p>` : ""}
-        <p class="wirkungsraum-meta">${collection.item_ids.length} Inhalt${collection.item_ids.length === 1 ? "" : "e"}</p>
+        <p class="wirkungsraum-meta">${collection.item_ids.length} ${collection.item_ids.length === 1 ? i18n("Inhalt", "item") : i18n("Inhalte", "items")}</p>
         ${updated}
         ${collectionItemMarkup(collection, savedById)}
         <p class="wirkungsraum-collection-actions">
-          <button class="btn btn-secondary" type="button" data-edit-collection="${escapeAttribute(collection.id)}">Umbenennen</button>
-          <button class="btn btn-secondary" type="button" data-delete-collection="${escapeAttribute(collection.id)}">Löschen</button>
+          <button class="btn btn-secondary" type="button" data-edit-collection="${escapeAttribute(collection.id)}">${i18n("Umbenennen", "Rename")}</button>
+          <button class="btn btn-secondary" type="button" data-delete-collection="${escapeAttribute(collection.id)}">${i18n("Löschen", "Delete")}</button>
         </p>
       </div>
       <form class="wirkungsraum-collection-edit-form" data-collection-edit-form hidden>
         <label>
-          <span>Titel</span>
+          <span>${i18n("Titel", "Title")}</span>
           <input type="text" name="collection-title" value="${escapeAttribute(collection.title)}" required>
         </label>
         <label>
-          <span>Beschreibung</span>
+          <span>${i18n("Beschreibung", "Description")}</span>
           <input type="text" name="collection-description" value="${escapeAttribute(collection.description || "")}">
         </label>
         <p class="wirkungsraum-collection-actions">
-          <button class="btn btn-primary" type="submit">Speichern</button>
-          <button class="btn btn-secondary" type="button" data-cancel-collection-edit>Abbrechen</button>
+          <button class="btn btn-primary" type="submit">${i18n("Speichern", "Save")}</button>
+          <button class="btn btn-secondary" type="button" data-cancel-collection-edit>${i18n("Abbrechen", "Cancel")}</button>
         </p>
       </form>
     `;
@@ -7054,7 +7056,7 @@ const WirkungsraumLayer = (() => {
     if (!currentCollections.length) {
       const empty = document.createElement("article");
       empty.className = "card";
-      empty.innerHTML = `<p class="card-text">Noch keine Sammlung. Erstelle eine Sammlung oder füge eine Inhaltsseite mit „Zu Sammlung hinzufügen“ hinzu.</p>`;
+      empty.innerHTML = `<p class="card-text">${i18n("Noch keine Sammlung. Erstelle eine Sammlung oder füge eine Inhaltsseite mit „Zu Sammlung hinzufügen“ hinzu.", "No collection yet. Create a collection or add a content page with “Add to collection”.")}</p>`;
       collectionList.append(empty);
       return;
     }
@@ -7071,8 +7073,8 @@ const WirkungsraumLayer = (() => {
     const note = root.querySelector("[data-last-visit-note]");
     if (note) {
       note.textContent = validLastVisit
-        ? `Letzter Besuch deines Wirkungsraums: ${validLastVisit.toLocaleString("de-DE")}.`
-        : "Dies ist dein erster gültiger Dashboard-Besuch in diesem Browser. Ab jetzt erscheinen hier nur wirklich neue Veröffentlichungen.";
+        ? i18n(`Letzter Besuch deines Wirkungsraums: ${validLastVisit.toLocaleString("de-DE")}.`, `Last visit to My Impact Space: ${validLastVisit.toLocaleString("en-US")}.`)
+        : i18n("Dies ist dein erster gültiger Dashboard-Besuch in diesem Browser. Ab jetzt erscheinen hier nur wirklich neue Veröffentlichungen.", "This is your first valid dashboard visit in this browser. From now on, only genuinely new publications will appear here.");
     }
     WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
 
@@ -7102,20 +7104,23 @@ const WirkungsraumLayer = (() => {
               const payload = JSON.parse(text);
               const result = WoekUserSpace.importData(payload, { mode });
               if (!result.ok) {
-                dataStatus(root, result.error || "Import fehlgeschlagen.", "error");
+                dataStatus(root, result.error || i18n("Import fehlgeschlagen.", "Import failed."), "error");
                 return;
               }
               refreshDashboardPanels(root);
               const conflictNote = result.conflicts?.length
-                ? ` ${result.conflicts.length} mögliche Konflikte wurden lokal nach Zeitstempel aufgelöst.`
+                ? i18n(` ${result.conflicts.length} mögliche Konflikte wurden lokal nach Zeitstempel aufgelöst.`, ` ${result.conflicts.length} possible conflicts were resolved locally by timestamp.`)
                 : "";
               dataStatus(
                 root,
-                `Import abgeschlossen: ${result.imported.length} Kategorien ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.${conflictNote}`,
+                i18n(
+                  `Import abgeschlossen: ${result.imported.length} Kategorien ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.${conflictNote}`,
+                  `Import complete: ${result.imported.length} categories ${mode === "replace" ? "replaced" : "merged"}.${conflictNote}`
+                ),
                 "success"
               );
             })
-            .catch(() => dataStatus(root, "Import fehlgeschlagen: Die Datei ist keine gültige Wirkungsraum-JSON-Datei.", "error"))
+            .catch(() => dataStatus(root, i18n("Import fehlgeschlagen: Die Datei ist keine gültige Wirkungsraum-JSON-Datei.", "Import failed: this file is not a valid Impact Space JSON file."), "error"))
             .finally(() => {
               importInput.value = "";
             });
@@ -7161,12 +7166,12 @@ const WirkungsraumLayer = (() => {
           drawRelatedDashboard(root);
           drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
-          dataStatus(root, "Merkliste gelöscht. Sammlungen wurden von Verweisen auf gelöschte Inhalte bereinigt.", "success");
+          dataStatus(root, i18n("Merkliste gelöscht. Sammlungen wurden von Verweisen auf gelöschte Inhalte bereinigt.", "Saved item removed. Collections were cleaned of references to removed items."), "success");
           return;
         }
         const showLocalData = event.target instanceof HTMLElement ? event.target.closest("[data-show-local-data]") : null;
         if (showLocalData instanceof HTMLButtonElement) {
-          dataStatus(root, `Nur in deinem Browser gespeichert: ${localDataSummary()}.`, "success");
+          dataStatus(root, i18n(`Nur in deinem Browser gespeichert: ${localDataSummary()}.`, `Stored only in your browser: ${localDataSummary()}.`), "success");
           return;
         }
         const createRecovery = event.target instanceof HTMLElement ? event.target.closest("[data-create-recovery-link]") : null;
@@ -7179,25 +7184,25 @@ const WirkungsraumLayer = (() => {
           const packageData = WoekUserSpace.createRecoveryPackage({ includeNotes, expiry });
           const link = recoveryLink(packageData);
           setRecoveryOutput(root, packageData, link);
-          createRecovery.textContent = "Link erstellt";
-          window.setTimeout(() => (createRecovery.textContent = "Privaten Wiederherstellungslink erstellen"), 1400);
+          createRecovery.textContent = i18n("Link erstellt", "Link created");
+          window.setTimeout(() => (createRecovery.textContent = i18n("Privaten Wiederherstellungslink erstellen", "Create private recovery link")), 1400);
           return;
         }
         const copyRecovery = event.target instanceof HTMLElement ? event.target.closest("[data-copy-recovery-link]") : null;
         if (copyRecovery instanceof HTMLButtonElement) {
           if (!currentRecoveryLink) {
-            dataStatus(root, "Erstelle zuerst einen privaten Wiederherstellungslink.", "error");
+            dataStatus(root, i18n("Erstelle zuerst einen privaten Wiederherstellungslink.", "Create a private recovery link first."), "error");
             return;
           }
           copyText(currentRecoveryLink)
-            .then(() => dataStatus(root, "Privater Wiederherstellungslink kopiert.", "success"))
-            .catch(() => dataStatus(root, "Kopieren ist in diesem Browser nicht verfügbar. Markiere den Link im Feld und kopiere ihn manuell.", "error"));
+            .then(() => dataStatus(root, i18n("Privater Wiederherstellungslink kopiert.", "Private recovery link copied."), "success"))
+            .catch(() => dataStatus(root, i18n("Kopieren ist in diesem Browser nicht verfügbar. Markiere den Link im Feld und kopiere ihn manuell.", "Copying is not available in this browser. Select the link and copy it manually."), "error"));
           return;
         }
         const toggleQr = event.target instanceof HTMLElement ? event.target.closest("[data-toggle-recovery-qr]") : null;
         if (toggleQr instanceof HTMLButtonElement) {
           if (!currentRecoveryLink) {
-            dataStatus(root, "Erstelle zuerst einen privaten Wiederherstellungslink.", "error");
+            dataStatus(root, i18n("Erstelle zuerst einen privaten Wiederherstellungslink.", "Create a private recovery link first."), "error");
             return;
           }
           renderRecoveryQr(root);
@@ -7206,23 +7211,23 @@ const WirkungsraumLayer = (() => {
         const exportRecovery = event.target instanceof HTMLElement ? event.target.closest("[data-export-recovery-file]") : null;
         if (exportRecovery instanceof HTMLButtonElement) {
           if (!currentRecoveryPackage || !currentRecoveryLink) {
-            dataStatus(root, "Erstelle zuerst einen privaten Wiederherstellungslink.", "error");
+            dataStatus(root, i18n("Erstelle zuerst einen privaten Wiederherstellungslink.", "Create a private recovery link first."), "error");
             return;
           }
           downloadJsonFile(recoveryFileName(), JSON.stringify({ ...currentRecoveryPackage, recovery_link: currentRecoveryLink }, null, 2));
-          dataStatus(root, "Wiederherstellungslink als Datei exportiert.", "success");
+          dataStatus(root, i18n("Wiederherstellungslink als Datei exportiert.", "Recovery link exported as a file."), "success");
           return;
         }
         const recoveryImport = event.target instanceof HTMLElement ? event.target.closest("[data-recovery-import-mode]") : null;
         if (recoveryImport instanceof HTMLButtonElement) {
           if (!pendingRecoveryPackage) {
-            dataStatus(root, "Kein Wiederherstellungslink geladen.", "error");
+            dataStatus(root, i18n("Kein Wiederherstellungslink geladen.", "No recovery link loaded."), "error");
             return;
           }
           const mode = recoveryImport.dataset.recoveryImportMode === "replace" ? "replace" : "merge";
           const result = WoekUserSpace.importData(pendingRecoveryPackage, { mode });
           if (!result.ok) {
-            dataStatus(root, result.error || "Wiederherstellung fehlgeschlagen.", "error");
+            dataStatus(root, result.error || i18n("Wiederherstellung fehlgeschlagen.", "Recovery failed."), "error");
             return;
           }
           pendingRecoveryPackage = null;
@@ -7230,8 +7235,8 @@ const WirkungsraumLayer = (() => {
           if (panel instanceof HTMLElement) panel.hidden = true;
           cleanRecoveryHash();
           refreshDashboardPanels(root);
-          const conflictNote = result.conflicts?.length ? ` ${result.conflicts.length} mögliche Konflikte wurden nach Zeitstempel aufgelöst.` : "";
-          dataStatus(root, `Wirkungsraum ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.${conflictNote}`, "success");
+          const conflictNote = result.conflicts?.length ? i18n(` ${result.conflicts.length} mögliche Konflikte wurden nach Zeitstempel aufgelöst.`, ` ${result.conflicts.length} possible conflicts were resolved by timestamp.`) : "";
+          dataStatus(root, i18n(`Wirkungsraum ${mode === "replace" ? "ersetzt" : "zusammengeführt"}.${conflictNote}`, `Impact Space ${mode === "replace" ? "replaced" : "merged"}.${conflictNote}`), "success");
           return;
         }
         const cancelRecoveryImport = event.target instanceof HTMLElement ? event.target.closest("[data-recovery-import-cancel]") : null;
@@ -7240,57 +7245,57 @@ const WirkungsraumLayer = (() => {
           const panel = root.querySelector("[data-recovery-import-panel]");
           if (panel instanceof HTMLElement) panel.hidden = true;
           cleanRecoveryHash();
-          dataStatus(root, "Wiederherstellung abgebrochen. Lokale Daten bleiben unverändert.", "success");
+          dataStatus(root, i18n("Wiederherstellung abgebrochen. Lokale Daten bleiben unverändert.", "Recovery cancelled. Local data remains unchanged."), "success");
           return;
         }
         const resetObject = event.target instanceof HTMLElement ? event.target.closest("[data-reset-wirkungsraum-object]") : null;
         if (resetObject instanceof HTMLButtonElement) {
           const objectName = resetObject.dataset.resetWirkungsraumObject || "";
-          const label = resetObjectLabels[objectName] || "Kategorie";
-          if (!window.confirm(`${label} lokal aus diesem Browser löschen?`)) return;
+          const label = resetObjectLabels[objectName] || i18n("Kategorie", "Category");
+          if (!window.confirm(i18n(`${label} lokal aus diesem Browser löschen?`, `Delete ${label} locally from this browser?`))) return;
           WoekUserSpace.resetObject(objectName);
           if (objectName === "saved_items") clearCollectionItemIds();
           refreshDashboardPanels(root);
-          dataStatus(root, `${label} gelöscht.`, "success");
+          dataStatus(root, i18n(`${label} gelöscht.`, `${label} deleted.`), "success");
           return;
         }
         const clearHistory = event.target instanceof HTMLElement ? event.target.closest("[data-clear-history]") : null;
         if (clearHistory instanceof HTMLButtonElement) {
-          if (!window.confirm("Besuchshistorie lokal aus diesem Browser löschen?")) return;
+          if (!window.confirm(i18n("Besuchshistorie lokal aus diesem Browser löschen?", "Delete visit history locally from this browser?"))) return;
           WoekUserSpace.resetObject("visit_history");
           drawHistoryDashboard(root);
           drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
-          dataStatus(root, "Historie gelöscht.", "success");
+          dataStatus(root, i18n("Historie gelöscht.", "History deleted."), "success");
           return;
         }
         const clearSearchHistory = event.target instanceof HTMLElement ? event.target.closest("[data-clear-search-history]") : null;
         if (clearSearchHistory instanceof HTMLButtonElement) {
-          if (!window.confirm("Vergangene Suchanfragen lokal aus diesem Browser löschen?")) return;
+          if (!window.confirm(i18n("Vergangene Suchanfragen lokal aus diesem Browser löschen?", "Delete past search queries locally from this browser?"))) return;
           WoekUserSpace.resetObject("search_history");
           drawSearchHistoryDashboard(root);
           drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
-          dataStatus(root, "Suchanfragen gelöscht.", "success");
+          dataStatus(root, i18n("Suchanfragen gelöscht.", "Search queries deleted."), "success");
           return;
         }
         const clearAiHistory = event.target instanceof HTMLElement ? event.target.closest("[data-clear-ai-history]") : null;
         if (clearAiHistory instanceof HTMLButtonElement) {
-          if (!window.confirm("Vergangene KI-Anfragen lokal aus diesem Browser löschen?")) return;
+          if (!window.confirm(i18n("Vergangene KI-Anfragen lokal aus diesem Browser löschen?", "Delete past AI questions locally from this browser?"))) return;
           WoekUserSpace.resetObject("ai_query_history");
           drawAiQueryHistoryDashboard(root);
           drawCrossSellDashboard(root);
           drawNextStepsDashboard(root);
-          dataStatus(root, "KI-Anfragen gelöscht.", "success");
+          dataStatus(root, i18n("KI-Anfragen gelöscht.", "AI questions deleted."), "success");
           return;
         }
         const resetAll = event.target instanceof HTMLElement ? event.target.closest("[data-reset-wirkungsraum-all]") : null;
         if (resetAll instanceof HTMLButtonElement) {
-          if (!window.confirm("Alle lokalen Wirkungsraum-Daten in diesem Browser löschen? Dies betrifft Merkliste, Fortschritt, Sammlungen, Lernliste, Notizen, Besuchshistorie, Suchanfragen, KI-Anfragen und Einstellungen.")) return;
+          if (!window.confirm(i18n("Alle lokalen Wirkungsraum-Daten in diesem Browser löschen? Dies betrifft Merkliste, Fortschritt, Sammlungen, Lernliste, Notizen, Besuchshistorie, Suchanfragen, KI-Anfragen und Einstellungen.", "Delete all local Impact Space data in this browser? This includes saved items, progress, collections, learning list, notes, visit history, search queries, AI questions and settings."))) return;
           WoekUserSpace.resetAll();
           WoekUserSpace.setSetting("last_wirkungsraum_visit", new Date().toISOString());
           refreshDashboardPanels(root, null);
-          dataStatus(root, "Alle lokalen Wirkungsraum-Daten wurden gelöscht.", "success");
+          dataStatus(root, i18n("Alle lokalen Wirkungsraum-Daten wurden gelöscht.", "All local Impact Space data was deleted."), "success");
           return;
         }
         const importTrigger = event.target instanceof HTMLElement ? event.target.closest("[data-import-wirkungsraum-trigger]") : null;
@@ -7308,7 +7313,7 @@ const WirkungsraumLayer = (() => {
           return;
         }
         const removeNoteButton = event.target instanceof HTMLElement ? event.target.closest("[data-remove-note]") : null;
-        if (removeNoteButton instanceof HTMLButtonElement && window.confirm("Diese lokale Notiz löschen?")) {
+        if (removeNoteButton instanceof HTMLButtonElement && window.confirm(i18n("Diese lokale Notiz löschen?", "Delete this local note?"))) {
           removeNote(removeNoteButton.dataset.removeNote || "");
           drawNotesDashboard(root);
           drawCrossSellDashboard(root);
@@ -7327,7 +7332,7 @@ const WirkungsraumLayer = (() => {
           return;
         }
         const clear = event.target instanceof HTMLElement ? event.target.closest("[data-clear-wirkungsraum]") : null;
-        if (clear instanceof HTMLButtonElement && window.confirm("Alle lokal gemerkten Inhalte aus diesem Browser löschen?")) {
+        if (clear instanceof HTMLButtonElement && window.confirm(i18n("Alle lokal gemerkten Inhalte aus diesem Browser löschen?", "Delete all locally saved items from this browser?"))) {
           WoekUserSpace.resetObject("saved_items");
           clearCollectionItemIds();
           drawSavedDashboard(root);
@@ -7365,7 +7370,7 @@ const WirkungsraumLayer = (() => {
           return;
         }
         const deleteButton = event.target instanceof HTMLElement ? event.target.closest("[data-delete-collection]") : null;
-        if (deleteButton instanceof HTMLButtonElement && window.confirm("Diese Sammlung löschen? Die gemerkten Inhalte bleiben erhalten.")) {
+        if (deleteButton instanceof HTMLButtonElement && window.confirm(i18n("Diese Sammlung löschen? Die gemerkten Inhalte bleiben erhalten.", "Delete this collection? Saved items remain available."))) {
           deleteCollection(deleteButton.dataset.deleteCollection || "");
           drawCollectionsDashboard(root);
           drawCrossSellDashboard(root);
@@ -7387,9 +7392,9 @@ const WirkungsraumLayer = (() => {
           if (navigator.clipboard?.writeText) {
             navigator.clipboard.writeText(payload).catch(() => {});
           }
-          dataStatus(root, "JSON-Export wurde erstellt. Eine Kopie liegt zusätzlich in der Zwischenablage, falls der Browser das erlaubt.", "success");
-          exportButton.textContent = "JSON exportiert";
-          window.setTimeout(() => (exportButton.textContent = "JSON exportieren"), 1400);
+          dataStatus(root, i18n("JSON-Export wurde erstellt. Eine Kopie liegt zusätzlich in der Zwischenablage, falls der Browser das erlaubt.", "JSON export created. A copy was also placed in the clipboard if the browser allows it."), "success");
+          exportButton.textContent = i18n("JSON exportiert", "JSON exported");
+          window.setTimeout(() => (exportButton.textContent = i18n("JSON exportieren", "Export JSON")), 1400);
         }
       });
       window.addEventListener("hashchange", () => {

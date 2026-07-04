@@ -8,7 +8,7 @@
     <meta name="description" content="English entry point for the personal local knowledge and learning cockpit.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/en/my-impact-space/">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260704-en-functions">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260704-en-runtime">
 
   </head>
   <body>
@@ -51,13 +51,79 @@
           <div class="hero-actions"><a class="btn btn-primary" href="../library/">Open English library</a><a class="btn btn-secondary" href="../tools/">Open English tools</a><a class="btn btn-secondary" href="../woek-ai/">Ask WÖk AI</a></div>
         </div>
       </section>
-      <section class="section section-soft">
-        <div class="section-header"><p class="hero-kicker">Status</p><h2>English dashboard runtime in progress</h2><p>The German dashboard is a large local-data application. This English page prevents the language switch from falling back to German and describes the same privacy model. The next implementation step is the full JavaScript runtime translation for all dashboard controls and generated labels.</p></div>
-        <div class="card-grid three">
-          <article class="card"><p class="card-kicker">Local first</p><h3>Browser storage</h3><p class="card-text">Saved items, collections, learning lists and notes stay on this device.</p></article>
-          <article class="card"><p class="card-kicker">Portable</p><h3>Export and import</h3><p class="card-text">The data model supports JSON export, import and private recovery links.</p></article>
-          <article class="card"><p class="card-kicker">Guardrail</p><h3>No social credit</h3><p class="card-text">My Impact Space organizes learning and orientation. It does not rank people.</p></article>
+      <section class="section section-soft wirkungsraum-status" data-wirkungsraum-dashboard aria-label="My Impact Space dashboard">
+        <div>
+          <p class="card-text" data-last-visit-note></p>
+          <div class="wirkungsraum-stats compact" data-wirkungsraum-stats>
+            <article class="card"><p class="card-kicker">Saved</p><strong data-stat-saved>0</strong><span>items in this browser</span></article>
+            <article class="card"><p class="card-kicker">Visible</p><strong data-stat-visible>0</strong><span>filtered results</span></article>
+            <article class="card"><p class="card-kicker">Continue</p><strong data-stat-progress>0</strong><span>items with progress</span></article>
+            <article class="card"><p class="card-kicker">Read</p><strong data-stat-read>0</strong><span>completed items</span></article>
+            <article class="card"><p class="card-kicker">Notes</p><strong data-stat-notes>0</strong><span>local thoughts</span></article>
+            <article class="card"><p class="card-kicker">History</p><strong data-stat-history>0</strong><span>visited items</span></article>
+            <article class="card"><p class="card-kicker">Searches</p><strong data-stat-search-history>0</strong><span>saved queries</span></article>
+            <article class="card"><p class="card-kicker">AI</p><strong data-stat-ai-history>0</strong><span>saved questions</span></article>
+            <article class="card"><p class="card-kicker">Recommendations</p><strong data-stat-cross-sell>0</strong><span>local connections</span></article>
+            <article class="card"><p class="card-kicker">Learning</p><strong data-stat-learning>0</strong><span>active items</span></article>
+            <article class="card"><p class="card-kicker">Academy</p><strong data-stat-academy>0</strong><span>modules with progress</span></article>
+            <article class="card"><p class="card-kicker">Collections</p><strong data-stat-collections>0</strong><span>topic bundles</span></article>
+          </div>
         </div>
+      </section>
+      <section class="section section-soft" id="saved-items">
+        <div class="section-header"><p class="hero-kicker">Saved items</p><h2>Saved content</h2><p>Everything you save on content pages appears here with title, type, URL, category, tags and save time.</p></div>
+        <div class="wirkungsraum-filter-row" role="group" aria-label="Filter saved items by type">
+          <button class="filter-chip active" type="button" data-saved-type-filter="all" aria-pressed="true">All</button>
+          <button class="filter-chip" type="button" data-saved-type-filter="begriffe" aria-pressed="false">Terms</button>
+          <button class="filter-chip" type="button" data-saved-type-filter="kapitel" aria-pressed="false">Chapters</button>
+          <button class="filter-chip" type="button" data-saved-type-filter="dokumente" aria-pressed="false">Documents</button>
+          <button class="filter-chip" type="button" data-saved-type-filter="debatten" aria-pressed="false">Debates</button>
+          <button class="filter-chip" type="button" data-saved-type-filter="werkzeuge" aria-pressed="false">Tools</button>
+          <button class="filter-chip" type="button" data-saved-type-filter="akademie" aria-pressed="false">Academy</button>
+        </div>
+        <div class="wirkungsraum-toolbar"><label class="sr-only" for="impact-space-filter">Search saved content</label><input id="impact-space-filter" type="search" placeholder="Search saved content" data-saved-search><button class="btn btn-secondary" type="button" data-clear-wirkungsraum>Clear saved items</button></div>
+        <div class="wirkungsraum-list" data-saved-list><article class="card"><p class="card-text">Nothing saved yet.</p></article></div>
+      </section>
+      <section class="section section-soft" id="collections">
+        <div class="section-header"><p class="hero-kicker">Collections</p><h2>Personal collections</h2><p>Bundle saved content by topic. Collections stay local in this browser.</p></div>
+        <form class="wirkungsraum-collection-form" data-collection-create-form><label class="sr-only" for="collection-title">Collection title</label><input id="collection-title" type="text" name="collection-title" placeholder="New collection, e.g. foundations" required><label class="sr-only" for="collection-description">Description</label><input id="collection-description" type="text" name="collection-description" placeholder="Optional description"><button class="btn btn-primary" type="submit">Create collection</button></form>
+        <div class="wirkungsraum-list wirkungsraum-collection-list" data-collection-list><article class="card"><p class="card-text">No collection yet.</p></article></div>
+      </section>
+      <section class="section section-soft" id="notes">
+        <div class="section-header"><p class="hero-kicker">Notes</p><h2>My notes</h2><p>Your own thoughts about content stay only in this browser.</p></div>
+        <div class="wirkungsraum-list" data-notes-list><article class="card"><p class="card-text">No notes yet.</p></article></div>
+      </section>
+      <section class="section section-soft" id="continue-reading">
+        <div class="section-header"><p class="hero-kicker">Continue</p><h2>Recently read</h2><p>Reference chapters, documents, dossiers and academy modules can store local reading progress.</p></div>
+        <div class="wirkungsraum-list" data-reading-list><article class="card"><p class="card-text">No reading progress yet.</p></article></div>
+      </section>
+      <section class="section section-soft" id="history">
+        <div class="section-header"><p class="hero-kicker">History</p><h2>Visited content</h2><p>Your recently opened content is collected locally in this browser.</p></div>
+        <div class="wirkungsraum-toolbar"><button class="btn btn-secondary" type="button" data-clear-history>Clear history</button></div>
+        <details class="wirkungsraum-collapsible" data-history-collapsible><summary><span>Show visited content</span><span class="wirkungsraum-collapsible-count" data-history-collapse-count>0 entries</span></summary><div class="wirkungsraum-collapsible-body"><div class="wirkungsraum-history-list" data-history-list></div></div></details>
+      </section>
+      <section class="section section-soft" id="search-history">
+        <div class="section-header"><p class="hero-kicker">Search</p><h2>Past search queries</h2><p>Search queries stay local in your browser.</p></div>
+        <div class="wirkungsraum-toolbar"><button class="btn btn-secondary" type="button" data-clear-search-history>Clear search history</button></div>
+        <div class="wirkungsraum-history-list" data-search-history-list></div>
+      </section>
+      <section class="section section-soft" id="ai-history">
+        <div class="section-header"><p class="hero-kicker">AI</p><h2>Past AI questions</h2><p>AI questions, answers and sources stay local in your browser.</p></div>
+        <div class="wirkungsraum-toolbar"><button class="btn btn-secondary" type="button" data-clear-ai-history>Clear AI history</button></div>
+        <div class="wirkungsraum-history-list" data-ai-history-list></div>
+      </section>
+      <section class="section section-soft" id="learning-list">
+        <div class="section-header"><p class="hero-kicker">Learning</p><h2>Learning list</h2><p>Collect learning content and keep local progress visible.</p></div>
+        <div class="wirkungsraum-list" data-learning-list></div>
+      </section>
+      <section class="section section-soft" id="recommendations">
+        <div class="section-header"><p class="hero-kicker">Connections</p><h2>Recommended next content</h2><p>Recommendations are calculated locally from saved items, history, notes and learning signals.</p></div>
+        <div class="wirkungsraum-list" data-cross-sell-list></div>
+      </section>
+      <section class="section section-soft" id="data-control">
+        <div class="section-header"><p class="hero-kicker">Data control</p><h2>Local data</h2><p>Inspect, export or clear the local data stored by My Impact Space.</p></div>
+        <div class="hero-actions"><button class="btn btn-secondary" type="button" data-show-local-data>Show local data summary</button><button class="btn btn-primary" type="button" data-export-wirkungsraum>Export JSON</button><button class="btn btn-secondary" type="button" data-reset-wirkungsraum-all>Clear all local data</button></div>
+        <p class="wirkungsraum-data-status" data-wirkungsraum-data-status></p>
       </section>
     </main>
 
@@ -78,7 +144,7 @@
         <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
       </div>
     </footer>
-    <script src="../../assets/js/main.js?v=20260704-en-functions"></script>
+    <script src="../../assets/js/main.js?v=20260704-en-runtime"></script>
 
   </body>
 </html>
