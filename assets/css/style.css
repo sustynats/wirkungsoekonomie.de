@@ -18124,3 +18124,13 @@ body.theme-akademie .akademie-wordmark-2{
 @media (max-width:600px){
   body.theme-akademie .akademie-brand{ flex-direction:column; align-items:flex-start; gap:.6rem; }
 }
+
+/* === Hauptdomain-Redesign (Claude) – Schritt 1: mehr Kontrast & Ruhe (Institut-Vorbild) === */
+/* Überschriften ruhiger (weniger dominant) */
+.hero-title{ font-weight:600; font-size:clamp(1.95rem,4vw,2.7rem); letter-spacing:-0.02em; }
+h2, .section-title{ font-weight:600; }
+/* Boxen/Karten mit klarer Definition + dezentem Schatten → mehr Kontrast, ruhiger */
+.card{
+  border:1px solid #DAD3C4;
+  box-shadow:0 1px 2px rgba(11,16,32,.05), 0 12px 30px -16px rgba(11,16,32,.14);
+}
