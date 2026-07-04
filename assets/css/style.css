@@ -18124,3 +18124,35 @@ body.theme-akademie .akademie-wordmark-2{
 @media (max-width:600px){
   body.theme-akademie .akademie-brand{ flex-direction:column; align-items:flex-start; gap:.6rem; }
 }
+
+/* === Akademie Farbwelt – Variante A "Grünes Band" (überschreibt frühere flaue Grün-Tönung) === */
+/* Hero = kräftiges grünes Band, helle Schrift (max. Kontrast) */
+body.theme-akademie .hero{ background:#154A34; }
+body.theme-akademie .hero .hero-kicker{ color:#9FD8BB; }
+body.theme-akademie .hero .akademie-wordmark-1,
+body.theme-akademie .hero .hero-title{ color:#F5F0E6; }
+body.theme-akademie .hero .akademie-wordmark-2{ color:#C9E6D6; }
+body.theme-akademie .hero .hero-subtitle,
+body.theme-akademie .hero .hero-text,
+body.theme-akademie .hero p{ color:#DCEAE1; }
+body.theme-akademie .hero a{ color:#F5F0E6; text-decoration-color:rgba(245,240,230,.6); }
+body.theme-akademie .hero .btn-primary{ background:#F5F0E6; border-color:#F5F0E6; color:#154A34; }
+body.theme-akademie .hero .btn-primary:hover{ background:#fff; border-color:#fff; }
+body.theme-akademie .hero .btn-secondary{ color:#F5F0E6; border-color:rgba(245,240,230,.55); }
+body.theme-akademie .hero .btn-secondary:hover{ background:rgba(245,240,230,.12); }
+/* Studienraum-Karte im Hero bleibt weiß + dunkler Text (Lesbarkeit) */
+body.theme-akademie .hero .card{ background:#fff; border-color:transparent; box-shadow:0 12px 34px -18px rgba(0,0,0,.5); }
+body.theme-akademie .hero .card p,
+body.theme-akademie .hero .card .card-text,
+body.theme-akademie .hero .card li{ color:#2b2b2b; }
+body.theme-akademie .hero .card a{ color:#1D6B49; text-decoration-color:rgba(29,107,73,.5); }
+body.theme-akademie .hero .card .card-title{ color:#123D2B; }
+/* Inhalt unterhalb: kontrastreich, ruhig */
+body.theme-akademie .section-soft{ background:#F1F6F2; }
+body.theme-akademie h2,
+body.theme-akademie h3,
+body.theme-akademie .section-title,
+body.theme-akademie .card-title{ color:#123D2B; }
+body.theme-akademie .btn-primary{ background:#1D6B49; border-color:#1D6B49; color:#fff; }
+body.theme-akademie .btn-primary:hover{ background:#2F7D5C; border-color:#2F7D5C; }
+body.theme-akademie .card{ background:#fff; border:1px solid #CBDECF; border-top:3px solid #2F7D5C; box-shadow:0 1px 2px rgba(11,16,32,.04), 0 12px 30px -18px rgba(11,16,32,.12); }
