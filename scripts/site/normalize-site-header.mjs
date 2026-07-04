@@ -50,6 +50,9 @@ function germanSwitchHref(base, filePath) {
   const relative = path.relative(ROOT, filePath).replace(/\\/g, "/");
   if (relative === "en/library/index.html") return `${base}bibliothek/`;
   if (relative === "en/tools/index.html") return `${base}werkzeuge/`;
+  if (relative === "en/app/index.html") return `${base}app/`;
+  if (relative === "en/woek-ai/index.html") return `${base}woek-ki/`;
+  if (relative === "en/my-impact-space/index.html") return `${base}mein-wirkungsraum/`;
   return `${base}index.html`;
 }
 
@@ -67,9 +70,9 @@ function renderMainLink(base, item) {
 function renderEnglishUtilityLink(base, item) {
   const labels = new Map([
     ["Suche", ["Search", "Search", "en/#tools"]],
-    ["WÖk-KI", ["AI", "WÖk AI", "en/#tools"]],
-    ["WÖk-App", ["WÖk App", "WÖk App", "en/#tools"]],
-    ["Mein Wirkungsraum", ["My impact room", "My impact room", "en/#join"]],
+    ["WÖk-KI", ["AI", "WÖk AI", "en/woek-ai/"]],
+    ["WÖk-App", ["WÖk App", "WÖk App", "en/app/"]],
+    ["Mein Wirkungsraum", ["My Impact Space", "My Impact Space", "en/my-impact-space/"]],
   ]);
   const [text, utilityLabel, href] = labels.get(item.label) || [item.label, item.label, "en/"];
   const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";

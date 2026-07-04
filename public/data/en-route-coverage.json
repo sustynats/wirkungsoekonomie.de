@@ -5,8 +5,8 @@
   "rule": "Every visible public German route needs an English counterpart below /en/ with translated visible text, translated UI and English-aware media/download routing.",
   "counts": {
     "total": 4271,
-    "available": 4,
-    "missing": 4267,
+    "available": 7,
+    "missing": 4264,
     "byCategory": {
       "top-level": {
         "total": 22,
@@ -30,8 +30,8 @@
       },
       "app": {
         "total": 1,
-        "available": 0,
-        "missing": 1
+        "available": 1,
+        "missing": 0
       },
       "begriffe": {
         "total": 1855,
@@ -120,8 +120,8 @@
       },
       "mein-wirkungsraum": {
         "total": 1,
-        "available": 0,
-        "missing": 1
+        "available": 1,
+        "missing": 0
       },
       "methodik": {
         "total": 4,
@@ -245,8 +245,8 @@
       },
       "woek-ki": {
         "total": 1,
-        "available": 0,
-        "missing": 1
+        "available": 1,
+        "missing": 0
       }
     }
   },
@@ -564,7 +564,7 @@
       "englishRoute": "/en/app/",
       "category": "app",
       "title": "WÖk-App | Wirkungsökonomie",
-      "status": "missing"
+      "status": "available"
     },
     {
       "sourceFile": "begriffe/abfallhierarchie/index.html",
@@ -19811,11 +19811,11 @@
     {
       "sourceFile": "mein-wirkungsraum/index.html",
       "sourceRoute": "/mein-wirkungsraum/",
-      "englishFile": "en/mein-wirkungsraum/index.html",
-      "englishRoute": "/en/mein-wirkungsraum/",
+      "englishFile": "en/my-impact-space/index.html",
+      "englishRoute": "/en/my-impact-space/",
       "category": "mein-wirkungsraum",
       "title": "Mein Wirkungsraum | Persönliches Wissens- und Lerncockpit",
-      "status": "missing"
+      "status": "available"
     },
     {
       "sourceFile": "methodik/daten-standards-regularien.html",
@@ -38675,11 +38675,11 @@
     {
       "sourceFile": "woek-ki/index.html",
       "sourceRoute": "/woek-ki/",
-      "englishFile": "en/woek-ki/index.html",
-      "englishRoute": "/en/woek-ki/",
+      "englishFile": "en/woek-ai/index.html",
+      "englishRoute": "/en/woek-ai/",
       "category": "woek-ki",
       "title": "WÖk-KI Beta | Wirkungsökonomie",
-      "status": "missing"
+      "status": "available"
     },
     {
       "sourceFile": "workflow.html",

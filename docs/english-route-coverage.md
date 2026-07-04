@@ -9,8 +9,8 @@ Every visible public German route needs an English counterpart below `/en/` with
 ## Summary
 
 - Public visible source routes: 4271
-- English routes already present: 4
-- English routes missing: 4267
+- English routes already present: 7
+- English routes missing: 4264
 
 ## Categories
 
@@ -43,7 +43,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | akademie | 2 | 0 | 2 |
 | oeffentlicher-wirkungsraum | 2 | 0 | 2 |
 | anwendungen | 1 | 0 | 1 |
-| app | 1 | 0 | 1 |
+| app | 1 | 1 | 0 |
 | einwaende | 1 | 0 | 1 |
 | evidenz | 1 | 0 | 1 |
 | export | 1 | 0 | 1 |
@@ -54,7 +54,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | institut | 1 | 0 | 1 |
 | journal | 1 | 0 | 1 |
 | lernen | 1 | 0 | 1 |
-| mein-wirkungsraum | 1 | 0 | 1 |
+| mein-wirkungsraum | 1 | 1 | 0 |
 | pilot-starten | 1 | 0 | 1 |
 | register | 1 | 0 | 1 |
 | sdg-sdgplus | 1 | 0 | 1 |
@@ -63,7 +63,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | tools | 1 | 1 | 0 |
 | updates | 1 | 0 | 1 |
 | website-1-0-release | 1 | 0 | 1 |
-| woek-ki | 1 | 0 | 1 |
+| woek-ki | 1 | 1 | 0 |
 
 ## First Missing Routes
 
@@ -103,7 +103,6 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/api/wirkungsradar/distribution/windraeder-voegel-wald-beton-rueckbau/` | `/en/api/wirkungsradar/distribution/windraeder-voegel-wald-beton-rueckbau/` | api |  |
 | `/api/wirkungsradar/report-myth/` | `/en/api/wirkungsradar/report-myth/` | api |  |
 | `/api/wirkungsradar/report-narrative/` | `/en/api/wirkungsradar/report-narrative/` | api |  |
-| `/app/` | `/en/app/` | app | WÖk-App \| Wirkungsökonomie |
 | `/begriffe/abfallhierarchie/` | `/en/begriffe/abfallhierarchie/` | begriffe | Abfallhierarchie \| Glossar der Wirkungsökonomie |
 | `/begriffe/abregelung/` | `/en/begriffe/abregelung/` | begriffe | Abregelung \| Glossar der Wirkungsökonomie |
 | `/begriffe/ac-laden/` | `/en/begriffe/ac-laden/` | begriffe | AC-Laden \| Glossar der Wirkungsökonomie |
@@ -149,3 +148,4 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/begriffe/antisemitismus/` | `/en/begriffe/antisemitismus/` | begriffe | Antisemitismus \| Glossar der Wirkungsökonomie |
 | `/begriffe/antiziganismus/` | `/en/begriffe/antiziganismus/` | begriffe | Antiziganismus \| Glossar der Wirkungsökonomie |
 | `/begriffe/anwendungskontext/` | `/en/begriffe/anwendungskontext/` | begriffe | Anwendungskontext \| Glossar der Wirkungsökonomie |
+| `/begriffe/arbeiten-arendt/` | `/en/begriffe/arbeiten-arendt/` | begriffe | Arbeiten \| Glossar der Wirkungsökonomie |
