@@ -1,0 +1,256 @@
+{
+  "generatedAt": "2026-07-04T21:52:10.150Z",
+  "version": "v1",
+  "principles": [
+    "Ein modularer WÖk-Kern stellt Daten und Funktionen bereit; Frontends bleiben dünne Oberflächen.",
+    "GitHub bleibt der versionierte Wissenskern für öffentliche, read-only Inhalte.",
+    "Supabase wird für Auth, personenbezogene, schreibende und transaktionale Daten genutzt.",
+    "Statische Endpunkte sind read-only, cachebar und reproduzierbar.",
+    "Wirkung, Wirkungspotenzial, Wirkungsrisiko und positive Netto-Wirkung werden nicht vermischt.",
+    "Keine Personenbewertung, keine moralische Rangliste und keine Social-Credit-Logik."
+  ],
+  "sharedCoreFunctions": [
+    {
+      "id": "mein-wirkungsraum",
+      "label": "Mein Wirkungsraum",
+      "canonicalOwner": "Supabase + WÖk-Kern-API",
+      "dataClass": "personal-write",
+      "consumers": [
+        "Website",
+        "Akademie",
+        "Institut",
+        "App"
+      ],
+      "rule": "Personalisierte Daten liegen nicht in statischen Website-Dateien, sondern im Datenkern mit Auth/RLS."
+    },
+    {
+      "id": "woek-ki",
+      "label": "WÖk-KI",
+      "canonicalOwner": "WÖk-Kern-API",
+      "dataClass": "dynamic-logic",
+      "consumers": [
+        "Website",
+        "Akademie",
+        "Institut",
+        "App"
+      ],
+      "rule": "Retrieval, Prompt-Verträge und LLM-Aufrufe werden nicht pro Frontend dupliziert."
+    },
+    {
+      "id": "wirkungscheck-narrative",
+      "label": "Wirkungscheck und Narrative",
+      "canonicalOwner": "WÖk-Kern-API + Wirkungsradar-Daten",
+      "dataClass": "public-read-with-dynamic-evaluation",
+      "consumers": [
+        "Website",
+        "Akademie",
+        "Institut",
+        "Redaktion",
+        "Community-Workflows"
+      ],
+      "rule": "Narrative werden als Wirkungspotenzial, Resonanzraum und Wirkpfad behandelt; Reichweite ist keine Wirkung."
+    },
+    {
+      "id": "glossary",
+      "label": "Glossar",
+      "canonicalOwner": "GitHub-Wissenskern",
+      "dataClass": "public-read",
+      "consumers": [
+        "Website",
+        "Akademie",
+        "Institut",
+        "App",
+        "KI-Retrieval",
+        "Suche"
+      ],
+      "rule": "Begriffe, Aliaslisten und Definitionen werden aus einer Quelle generiert."
+    },
+    {
+      "id": "bibliothek",
+      "label": "Bibliothek",
+      "canonicalOwner": "GitHub-Wissenskern",
+      "dataClass": "public-read",
+      "consumers": [
+        "Website",
+        "Akademie",
+        "Institut",
+        "App",
+        "KI-Retrieval",
+        "Suche"
+      ],
+      "rule": "Bibliotheksmetadaten und Veröffentlichungen werden versioniert, nicht in Frontends nachgebaut."
+    },
+    {
+      "id": "search",
+      "label": "Suche",
+      "canonicalOwner": "GitHub-Wissenskern + WÖk-Kern-API",
+      "dataClass": "public-read",
+      "consumers": [
+        "Website",
+        "Akademie",
+        "Institut",
+        "App",
+        "KI-Retrieval"
+      ],
+      "rule": "Indexaufbau ist zentral; Frontends dürfen höchstens Darstellung, Filter und Proxy enthalten."
+    },
+    {
+      "id": "woek-id-register",
+      "label": "WÖk-ID-Register",
+      "canonicalOwner": "GitHub-Wissenskern",
+      "dataClass": "public-read",
+      "consumers": [
+        "Website",
+        "Akademie",
+        "Institut",
+        "App",
+        "Zertifikate",
+        "KI-Retrieval"
+      ],
+      "rule": "Stabile IDs sind Verträge; Umbenennungen brauchen Redirects und Aliasführung."
+    }
+  ],
+  "dataPlacementRules": [
+    {
+      "class": "public-read",
+      "canonicalPlace": "GitHub repository, generated static JSON, pages and feeds",
+      "examples": [
+        "Glossar",
+        "Bibliothek",
+        "Suchindex",
+        "SDG+-Referenz",
+        "Wirkungsradar-Karten"
+      ],
+      "antiPattern": "dieselben Daten in mehreren Frontend-Repos manuell pflegen"
+    },
+    {
+      "class": "personal-write",
+      "canonicalPlace": "Supabase with Auth, RLS and API mediation",
+      "examples": [
+        "Mein Wirkungsraum",
+        "Profile",
+        "Saved Items",
+        "Notizen",
+        "Fortschritt"
+      ],
+      "antiPattern": "personenbezogene Daten in statische Assets oder öffentliche JSON-Dateien schreiben"
+    },
+    {
+      "class": "dynamic-logic",
+      "canonicalPlace": "WÖk-Kern-API behind stable base URL",
+      "examples": [
+        "KI",
+        "Wirkungscheck",
+        "KWI",
+        "serverseitige Retrieval- und Bewertungslogik"
+      ],
+      "antiPattern": "fachliche Logik in Website, Akademie und Institut getrennt implementieren"
+    },
+    {
+      "class": "large-media",
+      "canonicalPlace": "release/object storage with referenced metadata",
+      "examples": [
+        "Podcast-Audio",
+        "Videos",
+        "große PDFs"
+      ],
+      "antiPattern": "große Medien direkt ins Repo oder ins Deploy-Artefakt kopieren"
+    }
+  ],
+  "contaminationControls": [
+    {
+      "id": "single-source",
+      "risk": "Daten werden in mehreren Oberflächen auseinanderentwickelt.",
+      "control": "Jedes Datenprodukt hat einen canonicalOwner und einen canonicalPlace.",
+      "gate": "production-workflow-manifest.dataProducts"
+    },
+    {
+      "id": "no-frontend-logic-duplication",
+      "risk": "Website, Akademie und Institut implementieren dieselbe Fachlogik getrennt.",
+      "control": "Fachlogik wird als sharedCoreFunction markiert und über Kern-API oder generierte Daten konsumiert.",
+      "gate": "architecture review before new frontend features"
+    },
+    {
+      "id": "artifact-drift",
+      "risk": "Generierte HTML-, JSON- oder _site-Artefakte driften von Quellen weg.",
+      "control": "Build-Skripte erzeugen Manifeste reproduzierbar; deployt wird das Artefakt aus CI.",
+      "gate": "npm run build:artifact + npm run check:size"
+    },
+    {
+      "id": "parallel-agent-overwrite",
+      "risk": "Claude/Codex/Hintergrundprozesse schreiben gleichzeitig in dieselben Bereiche.",
+      "control": "Arbeitsbereiche werden über Owner, Datenklasse und eng gefasste Build-Schritte getrennt.",
+      "gate": "git status before edits; no unrelated reverts; generated manifests expose changed surfaces"
+    },
+    {
+      "id": "public-private-mixing",
+      "risk": "Personalisierte oder transaktionale Daten landen in öffentlichen statischen Dateien.",
+      "control": "Datenklassen erzwingen GitHub für public-read, Supabase für personal-write.",
+      "gate": "dataPlacementRules"
+    },
+    {
+      "id": "language-and-concept-drift",
+      "risk": "Wirkung, Wirkungspotenzial, Risiko, Reporting und Reichweite werden vermischt.",
+      "control": "Capabilities und Kernprinzipien codieren die begrifflichen Grenzen.",
+      "gate": "npm run lint + content review"
+    }
+  ],
+  "domains": [
+    {
+      "id": "knowledge",
+      "label": "Wissenskern",
+      "sources": [
+        "assets/data/glossary-lookup.json",
+        "assets/search/search-index.json",
+        "assets/data/woek-id-register.json"
+      ],
+      "capabilities": [
+        "Glossar",
+        "Suche",
+        "WÖk-ID-Register",
+        "öffentliche Wissensnavigation"
+      ]
+    },
+    {
+      "id": "impact-reference",
+      "label": "Wirkungsreferenz",
+      "sources": [
+        "assets/data/sdg-reference.json",
+        "assets/data/wirkungsradar-resonance-cards.json"
+      ],
+      "capabilities": [
+        "SDG/SDG+-Einordnung",
+        "Wirkungsradar",
+        "Debatten- und Resonanzlogik"
+      ]
+    },
+    {
+      "id": "production",
+      "label": "Produktion und Workflows",
+      "sources": [
+        "package.json",
+        "scripts/",
+        ".github/workflows/deploy.yml"
+      ],
+      "capabilities": [
+        "Build-Phasen",
+        "Qualitätsgates",
+        "Deployment-Artefakt",
+        "Workflow-Inventar"
+      ]
+    }
+  ],
+  "boundaries": {
+    "allowed": [
+      "read-only Zugriff auf veröffentlichte Inhalte",
+      "interne Wiederverwendung in Website, Akademie, Institut und App",
+      "partnerfähige Glossar-, SDG+- und Wirkungsradar-Snapshots nach Freigabe"
+    ],
+    "notAllowed": [
+      "Personenbewertung",
+      "Social-Credit-Logik",
+      "automatisierte moralische Ranglisten",
+      "Vermischung von Reichweite, Reporting und tatsächlicher Wirkung"
+    ]
+  }
+}

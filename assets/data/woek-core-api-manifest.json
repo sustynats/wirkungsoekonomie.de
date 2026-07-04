@@ -1,0 +1,98 @@
+{
+  "id": "woek-core-static-api",
+  "name": "WÖk Core Static API",
+  "version": "v1",
+  "generatedAt": "2026-07-04T21:52:10.150Z",
+  "baseUrl": "https://wirkungsoekonomie.de/api/v1/",
+  "status": "read-only-static",
+  "contract": {
+    "format": "JSON",
+    "cacheable": true,
+    "canonicalSource": "Website-Repo build outputs",
+    "dynamicCoreBaseUrlEnv": "WOEK_KERN_API_URL"
+  },
+  "endpoints": [
+    {
+      "id": "core-index",
+      "url": "/api/v1/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Versionierter Einstieg in die statischen WÖk-Kern-Endpunkte.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/"
+    },
+    {
+      "id": "capabilities",
+      "url": "/api/v1/capabilities/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Maschinenlesbarer Überblick über Datenbereiche, Grenzen und Nutzungsregeln.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/capabilities/"
+    },
+    {
+      "id": "glossary",
+      "url": "/api/v1/glossary/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Glossar-Snapshot aus dem versionierten Wissenskern.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/glossary/"
+    },
+    {
+      "id": "search",
+      "url": "/api/v1/search/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal"
+      ],
+      "description": "Suchindex-Metadaten und Verweise auf die produktive statische Suche.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/search/"
+    },
+    {
+      "id": "sdg-plus",
+      "url": "/api/v1/sdg-plus/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "SDG/SDG+-Referenzrahmen als maschinenlesbarer Snapshot.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/sdg-plus/"
+    },
+    {
+      "id": "wirkungsradar",
+      "url": "/api/v1/wirkungsradar/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Wirkungsradar-Karten, Resonanzkarten und bestehende Embed-/Distribution-Endpunkte.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/wirkungsradar/"
+    },
+    {
+      "id": "production",
+      "url": "/api/v1/production/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal"
+      ],
+      "description": "Produktionsprozess-, Build-, Gate- und Workflow-Manifest.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/production/"
+    }
+  ]
+}
