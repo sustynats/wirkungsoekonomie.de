@@ -18134,3 +18134,17 @@ h2, .section-title{ font-weight:600; }
   border:1px solid #DAD3C4;
   box-shadow:0 1px 2px rgba(11,16,32,.05), 0 12px 30px -16px rgba(11,16,32,.14);
 }
+
+/* === Hauptdomain – Richtung 1 "ruhig Navy/Ivory, weiße Boxen" (Institut-Vorbild, hoher Kontrast) === */
+/* Weiße Boxen mit klarer Kante — poppen auf Ivory/getönten Sektionen */
+.card{
+  background:#ffffff;
+  border:1px solid #D5CBB6;
+  box-shadow:0 1px 2px rgba(11,16,32,.05), 0 14px 32px -18px rgba(11,16,32,.16);
+}
+/* Überschriften: hoher Kontrast (Navy), ruhig */
+h1, h2, h3, .hero-title, .section-title{ color:#0B1020; }
+.card-title{ color:#0B1020; }
+.hero-kicker, .card-kicker{ color:#2F7D5C; font-weight:600; }
+/* getönte Sektionen etwas neutraler/ruhiger halten */
+.section-soft{ background:#F5F1E8; }
