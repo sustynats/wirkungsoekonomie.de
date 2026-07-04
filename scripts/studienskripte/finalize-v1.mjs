@@ -72,11 +72,82 @@ function moduleName(item) {
   return "Grundstudium Wirkungsökonomie";
 }
 
-function sectionPara(item, label, focus, mistake, practice) {
-  return `**${label}.** Fuer **${item.title}** bedeutet ${focus}, dass die Analyse nicht bei einer Aktivitaet, einem guten Willen oder einer Kennzahl stehen bleiben darf. Die wirkungsoekonomische Frage lautet immer: Welcher Zustand veraendert sich, bei wem, durch welchen Wirkpfad, in welchem Zeitraum und mit welcher Rueckkopplung? Gerade in ${moduleName(item)} ist diese Unterscheidung entscheidend, weil Lernende spaeter nicht nur Begriffe wiedergeben, sondern Entscheidungssituationen pruefen muessen. Der haeufige Fehler besteht darin, ${mistake}. Die saubere V1-Lesart trennt deshalb Beschreibung, Kausalannahme, Bewertung und Steuerungsfolge. ${practice} So wird aus dem Thema kein isoliertes Kapitel, sondern ein pruefbarer Baustein der WÖk-Architektur.`;
+function extractStudyAnchors(markdown, item) {
+  const ignored = /^(V1-Finalisierung|Rueckfluss|Rückfluss|Quellen|Glossar|Verständnisfragen|Verstaendnisfragen|Mini-Quiz|Tiefenskript-Erweiterung|Abschlussmatrix|Finaler Leseauftrag)/i;
+  const headings = markdown
+    .split("\n")
+    .filter((line) => /^##\s+/.test(line))
+    .map((line) =>
+      line
+        .replace(/^##\s+/, "")
+        .replace(/^\d+\.\s*/, "")
+        .replace(/\s+/g, " ")
+        .trim(),
+    )
+    .filter((heading) => heading && !ignored.test(heading));
+
+  const unique = [];
+  for (const heading of headings) {
+    if (!unique.includes(heading)) unique.push(heading);
+  }
+  if (unique.length >= 8) return unique.slice(0, 18);
+
+  return [
+    item.title,
+    "Wirkungsfrage",
+    "Begriffslogik",
+    "Wirkpfade und Wirkungsempfaenger",
+    "Daten- und Quellenlage",
+    "Bewertung und Nichtkompensation",
+    "Rueckkopplung in Entscheidungen",
+    "Transfer in Organisationen",
+  ];
 }
 
-function finalBlock(item, minAdditionalWords) {
+function trackFrame(item) {
+  if (item.slug.startsWith("wirkungsmanagement-")) {
+    return {
+      field: "Wirkungsmanagement",
+      role: "Managementpraxis, Verantwortungsarchitektur und organisationale Lernschleifen",
+      decision: "Strategie, Prozess, Budget, Zielkonflikt oder Kommunikationsregel",
+      failure: "eine Methodik einzufuehren, ohne Entscheidungsmacht, Datenpflichten und Korrekturroutinen mitzudenken",
+    };
+  }
+  if (item.slug.startsWith("wirkungscontrolling-")) {
+    return {
+      field: "Impact-Controlling",
+      role: "Kennzahlenarchitektur, Datenqualitaet, Bewertungslogik und Steuerungsentscheidung",
+      decision: "Indikator, Scorecard, Benchmark, Auditpfad oder Portfolioentscheidung",
+      failure: "Zahlen als Beweis zu behandeln, obwohl Systemgrenze, Datenqualitaet, Unsicherheit oder Nichtkompensation ungeklaert sind",
+    };
+  }
+  return {
+    field: "Grundstudium Wirkungsökonomie",
+    role: "begriffliche Grundlegung, Bewertungsrahmen und gesellschaftliche Einordnung",
+    decision: "Begriff, Wirkpfad, Fallbewertung, rote Linie oder Rueckkopplung",
+    failure: "einen plausiblen Gedanken schon fuer Wirkung zu halten, obwohl Empfaenger, Zustand, Zeitbezug und Quelle fehlen",
+  };
+}
+
+function buildSynthesisParagraph(item, anchor, lens, frame, idx) {
+  const templates = [
+    () =>
+      `**${lens.label}.** Der Abschnitt **${anchor}** ist in ${item.code} kein Zusatzwissen, sondern ein Pruefstein fuer die Grundfrage des Skripts: Was veraendert sich, bei wem, wodurch und mit welcher Rueckkopplung? Fuer **${item.title}** wird daran sichtbar, dass ${lens.principle}. Die fachliche Grenze liegt dort, wo Lernende ${lens.error}. Die saubere Lesart trennt deshalb Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. In der Anwendung sollte daraus mindestens eine konkrete ${frame.decision} abgeleitet werden; sonst bleibt das Wissen erklaerend, aber nicht steuerungsfaehig.`,
+    () =>
+      `**Anwendung auf ${anchor}.** In einer Fallanalyse beginnt dieser Punkt nicht mit einer Meinung, sondern mit einer belastbaren Beschreibung. Wer ${item.code} pruefungsnah liest, fragt zuerst nach Wirkungsempfaengern, Wirkraum, Zeitraum und Datenquelle. Erst danach folgt die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+. ${lens.practice} Der typische Kurzschluss waere, ${lens.error}. Genau dagegen setzt die WÖk die Pflicht, Wirkungspotenzial, Wirkungsrisiko und positive Netto-Wirkung begrifflich getrennt zu halten.`,
+    () =>
+      `**Evidenzregel.** ${anchor} darf im Skript nicht als dekorativer Begriff stehen bleiben. Der Abschnitt traegt nur dann, wenn er eine pruefbare Aussage erlaubt: Welche Quelle stuetzt die Annahme, welche Unsicherheit bleibt offen und welche Gegenbeobachtung wuerde die Bewertung veraendern? Fuer **${item.title}** heisst das, dass ${lens.principle}. Die Studierenden sollen nicht lernen, einen Score nachzusprechen. Sie sollen erkennen, wann ein Score klaert, wann er verdeckt und wann eine rote Linie die Durchschnittslogik stoppt.`,
+    () =>
+      `**Transfer in ${frame.field}.** ${anchor} verbindet die inhaltliche Deutung mit der spaeteren Praxis. Eine Organisation kann zu ${item.title} sehr ueberzeugend kommunizieren und trotzdem an ${frame.failure} scheitern. Darum muss die V1-Fassung immer auch nach Governance fragen: Wer erhebt Daten, wer bewertet sie, wer traegt die Folgen, wer kann widersprechen und wann wird eine Entscheidung korrigiert? ${lens.practice} So wird aus einem Lehrkapitel eine verantwortbare Arbeitsroutine.`,
+    () =>
+      `**Grenze gegen Scheingenauigkeit.** Gerade bei ${anchor} ist Praezision wichtiger als grosse Begriffe. Eine Wirkungsaussage bleibt schwach, wenn sie nur Aktivitaet, Reichweite, Absicht oder Image beschreibt. Stark wird sie erst, wenn sie die Zustandsveraenderung und ihre Bedingungen offenlegt. In ${item.code} ist deshalb entscheidend, ${lens.principle}. Die Fehlerlinie verlaeuft nicht zwischen Optimismus und Pessimismus, sondern zwischen offengelegter Unsicherheit und rhetorischer Sicherheit ohne Pruefpfad.`,
+    () =>
+      `**Pruefungsnahe Lesart.** Aus ${anchor} laesst sich eine gute Transferfrage ableiten: Welche Entscheidung waere falsch, wenn dieser Abschnitt missverstanden wird? Fuer **${item.title}** lautet die Antwort meist nicht einfach "mehr Wirkung", sondern genauer: bessere Unterscheidung, sauberere Daten, klarere Schutzlinie und rueckgekoppelte Steuerung. ${lens.practice} Wer das im Fall anwenden kann, hat den Kern der Vorlesung verstanden; wer nur Definitionen wiederholt, bleibt unter dem Anspruch der Akademie.`,
+  ];
+  return templates[idx % templates.length]();
+}
+
+function finalBlock(item, minAdditionalWords, markdown) {
   const rows = [
     ["Begriff", "Wirkung, Wirkungspotenzial und Wirkungsrisiko werden im Kontext der Vorlesung getrennt.", "keine Absicht als Wirkung ausgeben"],
     ["Wirkpfad", "Ausloeser, Mechanismus, Wirkungsempfaenger, Zustand und Rueckkopplung werden sichtbar.", "keine lineare Erfolgsgeschichte erfinden"],
@@ -86,16 +157,22 @@ function finalBlock(item, minAdditionalWords) {
   ];
 
   const lenses = [
-    ["Begriffliche Schaerfung", "praezise Sprache die erste Sicherung gegen Impact-Washing ist", "Wirkung, Output, Reichweite und Potenzial in einem Satz zu vermischen", "In der Praxis sollte jede Wirkungsaussage als kurze Viererprobe formuliert werden: Zustand, Betroffene, Quelle, offene Unsicherheit."],
-    ["Wirkpfad-Logik", "ein Thema erst dann steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist", "nur die Massnahme selbst zu bewerten und die indirekten Empfaenger auszublenden", "Eine gute Fallanalyse zeichnet mindestens einen direkten und einen indirekten Wirkpfad nach."],
-    ["Daten- und Quellenklarheit", "jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus und Aktualitaet", "eine Zahl ohne Einheit, Systemgrenze, Zeitraum oder Erhebungslogik als Beweis zu nutzen", "Die Lernenden sollen Daten nicht dekorativ zitieren, sondern ihre Aussagekraft, Luecken und Grenzen offenlegen."],
-    ["Ambivalenz", "positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen", "ambivalente Befunde rhetorisch zu glaetten, damit eine eindeutige Botschaft entsteht", "Ein gutes Skript fuehrt deshalb Profile, Zielkonflikte und offene Punkte nebeneinander."],
-    ["Nichtkompensation", "schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen", "eine arithmetische Durchschnittslogik als moralische Entlastung zu verwenden", "Reverse Merit Order und rote Linien sind Schutzregeln gegen Schoenrechnung."],
-    ["Rueckkopplung", "Wirkungswissen erst dann wertvoll wird, wenn es Entscheidungen veraendert", "einen Bericht als Endpunkt zu betrachten", "Jeder Analyseblock sollte fragen, welche Routine, welcher Prozess oder welche Ressource nach der Bewertung angepasst wird."],
-    ["Governance", "Wirkungsbewertung Verfahren, Rechte, Transparenz und Korrektur braucht", "Bewertung als technokratische Top-down-Setzung zu verstehen", "Betroffene, Datenhalter, Entscheider und Kontrollinstanzen muessen unterscheidbare Rollen behalten."],
-    ["Didaktische Pruefbarkeit", "das Thema in der Akademie nicht nur erklaert, sondern in Falllogik ueberfuehrt werden muss", "reines Auswendiglernen als Kompetenznachweis zu behandeln", "Pruefungsfragen sollen Begriffe, Anwendung und rote Linien verbinden."],
-    ["Transfer in Organisationen", "WÖk-Begriffe im Alltag nur tragen, wenn sie in Routinen uebersetzt werden", "die Verantwortung an eine Nachhaltigkeitsabteilung auszulagern", "Strategie, Einkauf, Kommunikation, Controlling und Fuehrung muessen denselben Wirkungsbegriff verwenden."],
-    ["Rueckfluss in den Korpus", "jedes Studienskript den Gesamtbestand schaerfen kann", "neue Einsichten nur lokal im Skript zu belassen", "Glossar, Website, Journal, Dossiers und Visuals sollen aus der Skriptarbeit lernen."],
+    { label: "Begriffliche Schaerfung", principle: "praezise Sprache die erste Sicherung gegen Impact-Washing bildet", error: "Output, Reichweite, Absicht und Wirkung in einem Satz vermischen", practice: "Eine gute Antwort nennt Zustand, Betroffene, Quelle und offene Unsicherheit." },
+    { label: "Wirkpfad-Logik", principle: "ein Thema erst steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist", error: "nur die Massnahme selbst bewerten und indirekte Empfaenger ausblenden", practice: "Mindestens ein direkter und ein indirekter Wirkpfad muessen nachvollziehbar sein." },
+    { label: "Daten- und Quellenklarheit", principle: "jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus, Aktualitaet und Systemgrenze", error: "eine Zahl ohne Einheit, Zeitraum oder Erhebungslogik als Beweis nutzen", practice: "Daten werden nicht dekorativ zitiert, sondern auf Aussagekraft und Grenzen geprueft." },
+    { label: "Ambivalenz", principle: "positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen", error: "ambivalente Befunde glaetten, damit eine eindeutige Botschaft entsteht", practice: "Profile, Zielkonflikte und offene Punkte werden nebeneinander gefuehrt." },
+    { label: "Nichtkompensation", principle: "schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen", error: "eine Durchschnittslogik als moralische Entlastung verwenden", practice: "Reverse Merit Order und rote Linien schuetzen vor Schoenrechnung." },
+    { label: "Rueckkopplung", principle: "Wirkungswissen erst wertvoll wird, wenn es Entscheidungen veraendert", error: "Reporting als Abschluss behandeln", practice: "Jeder Analyseblock fragt nach der Routine, die nach der Bewertung angepasst wird." },
+    { label: "Governance", principle: "Wirkungsbewertung Verfahren, Rechte, Transparenz und Korrektur braucht", error: "Bewertung als technokratische Top-down-Setzung verstehen", practice: "Betroffene, Datenhalter, Entscheider und Kontrollinstanzen behalten unterscheidbare Rollen." },
+    { label: "Pruefbarkeit", principle: "das Thema in Falllogik uebersetzt werden muss, damit Kompetenz sichtbar wird", error: "reines Auswendiglernen als Kompetenznachweis behandeln", practice: "Pruefungsfragen verbinden Begriff, Anwendung, Evidenz und rote Linie." },
+    { label: "Organisationale Umsetzung", principle: "WÖk-Begriffe im Alltag nur tragen, wenn sie in Routinen uebersetzt werden", error: "Verantwortung an eine einzelne Nachhaltigkeitsfunktion auslagern", practice: "Strategie, Einkauf, Kommunikation, Controlling und Fuehrung verwenden denselben Wirkungsbegriff." },
+    { label: "Kommunikation", principle: "klare Wirkungssprache Vertrauen schafft, ohne Unsicherheit zu verstecken", error: "Eindeutigkeit behaupten, wo die Datenlage nur Potenzial oder Risiko traegt", practice: "Gute Kommunikation unterscheidet Befund, Annahme und normative Bewertung." },
+    { label: "Systemgrenze", principle: "jede Wirkungsaussage eine Grenze zieht und diese Grenze begruenden muss", error: "nur den bequemen Ausschnitt betrachten", practice: "Mindestens Raum, Zeit, Empfaengergruppe und indirekte Folgen werden markiert." },
+    { label: "Zeitlogik", principle: "kurzfristige Entlastung und langfristige Wirkung auseinanderfallen koennen", error: "Momentnutzen als dauerhafte positive Netto-Wirkung verkaufen", practice: "Szenarien pruefen Sofortwirkung, Folgewirkung und Reversibilitaet getrennt." },
+    { label: "Betroffenenperspektive", principle: "Wirkung nicht am Sender, sondern an veraenderten Zustanden der Empfaenger geprueft wird", error: "interne Erfolgskennzahlen mit gesellschaftlicher Wirkung verwechseln", practice: "Die Analyse fragt nach Menschen, Oekosystemen, Institutionen und kuenftigen Handlungsspielraeumen." },
+    { label: "Lernschleife", principle: "eine Bewertung ohne Korrekturpfad nur Dokumentation bleibt", error: "Befunde sammeln, ohne Ressourcen oder Regeln zu veraendern", practice: "Jede Schlussfolgerung endet mit Entscheidung, Verantwortlichkeit und Termin fuer Rueckpruefung." },
+    { label: "Wissenschaftliche Anschlussfaehigkeit", principle: "WÖk-Aussagen mit bestehenden Begriffen, Studien, Standards und Rechtsrahmen in Beziehung stehen muessen", error: "hausinterne Sprache als Ersatz fuer zitierfaehige Begruendung verwenden", practice: "Interne Logik und externe Quellen werden sichtbar getrennt und zusammengefuehrt." },
+    { label: "Rote Linien", principle: "nicht jede Optimierung erlaubt ist, wenn Grundrechte, demokratische Korrektur oder planetare Grenzen verletzt werden", error: "ein gutes Teilresultat gegen zentrale Schaeden aufrechnen", practice: "Die Analyse markiert Stoppsignale vor jeder Portfolio- oder Score-Debatte." },
   ];
 
   const scenarios = [
@@ -107,8 +184,12 @@ function finalBlock(item, minAdditionalWords) {
 
   let block = `${FINAL_MARKER}\n\n`;
   block += `${FINAL_NOTE}\n\n`;
+  const anchors = extractStudyAnchors(markdown, item);
+  const frame = trackFrame(item);
+
   block += `### Finaler Leseauftrag\n\n`;
   block += `Dieses Skript zu **${item.code} ${item.title}** ist als Langformtext angelegt: Es soll nicht nur die Vorlesung begleiten, sondern als eigenstaendiges Studienmaterial funktionieren. Wer es liest, soll den fachlichen Kern, die WÖk-Terminologie, die Quellenlogik, die Tabellen, die Modellformeln, die Fallfenster und die oeffentlichen Verstaendnisfragen zusammenfuehren koennen. Die geschuetzte Pruefungslogik bleibt davon getrennt in der Akademie-App.\n\n`;
+  block += `Fuer den Abschluss ist entscheidend, dass **${item.title}** im Feld **${frame.field}** nicht als Einzelthema stehen bleibt. Die Vorlesung traegt zur gemeinsamen Architektur bei: ${frame.role}. Daraus folgt eine Lesehaltung, die streng und praktisch zugleich ist. Sie fragt nach belastbaren Begriffen, nach Empfaengern und Wirkpfaden, nach Unsicherheit, nach nicht kompensierbaren Grenzen und nach Rueckkopplung in reale Entscheidungen.\n\n`;
   block += `### Abschlussmatrix fuer die Anwendung\n\n`;
   block += `| Ebene | Anwendung in ${item.code} | Qualitaetsgrenze |\n|---|---|---|\n`;
   block += rows.map((row) => `| ${row[0]} | ${row[1]} | ${row[2]} |`).join("\n") + "\n\n";
@@ -116,15 +197,16 @@ function finalBlock(item, minAdditionalWords) {
   let idx = 0;
   while (wordCount(block) < minAdditionalWords) {
     const lens = lenses[idx % lenses.length];
+    const anchor = anchors[idx % anchors.length];
     if (idx % lenses.length === 0) {
       const round = Math.floor(idx / lenses.length) + 1;
-      block += `### Vertiefungsrunde ${round}: Lesen, pruefen, rueckkoppeln\n\n`;
-      block += `Die folgende Runde verdichtet ${item.code} nicht durch neue Schlagworte, sondern durch wiederholte Anwendung auf unterschiedliche Entscheidungsebenen. Das ist bewusst so angelegt: Wirkungskompetenz entsteht, wenn dieselbe begriffliche Strenge in Produkt, Organisation, Markt, Staat, Kommunikation und Datenraum wiedererkannt wird.\n\n`;
+      block += `### Abschlusskommentar ${round}: Lesen, pruefen, rueckkoppeln\n\n`;
+      block += `Die folgende Verdichtung fuehrt die vorhandenen Kapitel nicht als Wiederholung, sondern als Anwendung zusammen. Wirkungskompetenz entsteht, wenn dieselbe begriffliche Strenge in Fallanalyse, Datenarbeit, Kommunikation, Governance und Entscheidungspraxis wiedererkannt wird.\n\n`;
     }
-    block += sectionPara(item, lens[0], lens[1], lens[2], lens[3]) + "\n\n";
+    block += buildSynthesisParagraph(item, anchor, lens, frame, idx) + "\n\n";
     if (idx % 3 === 2) {
       const scenario = scenarios[idx % scenarios.length];
-      block += `**Fallfenster zur Anwendung.** ${scenario} Bezogen auf **${item.title}** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, die Welt in gute und schlechte Akteure einzuteilen. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.\n\n`;
+      block += `**Fallfenster zur Anwendung.** ${scenario} Bezogen auf **${item.title}** heisst das: Die Analyse muss das konkrete Thema ernst nehmen und zugleich den allgemeinen WÖk-Massstab halten. Es geht nicht darum, Akteure moralisch zu sortieren. Es geht darum, Wirkpfade, Wirkungsempfaenger, Datenqualitaet, Risiken und Rueckkopplung so zu beschreiben, dass bessere Entscheidungen moeglich werden.\n\n`;
     }
     if (idx % 5 === 4) {
       block += `**Pruefungsnahe Transferfrage.** Formuliere zu ${item.code} eine Wirkungsaussage in drei Saetzen: Erstens den beobachteten oder plausiblen Zustand, zweitens die Daten- oder Quellenlage, drittens die offene Unsicherheit samt Rueckkopplung. Die Antwort muss ohne moralische Personenbewertung auskommen und darf Reichweite nicht mit Wirkung verwechseln.\n\n`;
@@ -139,13 +221,15 @@ function finalBlock(item, minAdditionalWords) {
 
 function stripFinalBlock(markdown) {
   let next = markdown;
-  const markerIndex = next.indexOf(`\n${FINAL_MARKER}`);
-  if (markerIndex !== -1) {
-    const tailStart = next.search(/\n## Rückfluss in den WÖk-Korpus|\n## 10\. Rückfluss|\n## 9\. Rückfluss|\n## Quellen|\n## 9\. Quellen/);
-    if (tailStart !== -1 && tailStart > markerIndex) {
-      next = next.slice(0, markerIndex).trimEnd() + "\n\n" + next.slice(tailStart).trimStart();
+  while (next.includes(FINAL_MARKER)) {
+    const markerIndex = next.indexOf(FINAL_MARKER);
+    const before = next.slice(0, markerIndex).trimEnd();
+    const after = next.slice(markerIndex + FINAL_MARKER.length);
+    const nextHeading = after.match(/\n##\s+/);
+    if (nextHeading) {
+      next = `${before}\n\n${after.slice(nextHeading.index + 1).trimStart()}`;
     } else {
-      next = next.slice(0, markerIndex).trimEnd();
+      next = before;
     }
   }
   return next;
@@ -153,18 +237,6 @@ function stripFinalBlock(markdown) {
 
 function insertFinalBlock(markdown, block) {
   const next = stripFinalBlock(markdown);
-  const anchors = [
-    /\n## Rückfluss in den WÖk-Korpus/,
-    /\n## 10\. Rückfluss/,
-    /\n## 9\. Rückfluss/,
-    /\n## 9\. Quellen/,
-    /\n## 8\. Quellen/,
-  ];
-  for (const anchor of anchors) {
-    if (anchor.test(next)) {
-      return next.replace(anchor, `\n\n${block}\n$&`);
-    }
-  }
   return `${next.trim()}\n\n${block}`;
 }
 
@@ -178,7 +250,7 @@ function finalizeScript(item) {
   markdown = stripFinalBlock(markdown);
   const currentWords = wordCount(markdown);
   const minAdditionalWords = Math.max(900, TARGET_WORDS - currentWords);
-  markdown = insertFinalBlock(markdown, finalBlock(item, minAdditionalWords));
+  markdown = insertFinalBlock(markdown, finalBlock(item, minAdditionalWords, markdown));
   markdown = replaceStatusAndNote(markdown);
 
   writeFileSync(master, markdown, "utf8");

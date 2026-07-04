@@ -219,7 +219,7 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - Master: `content/studienskripte/`
 - Word-Rohfassungen: `docs/studienskripte/word-rohfassungen/`
 - App-Spiegel: `woek-akademie-app/content/lehrgaenge/`
-- Umfang: ca. 828k Woerter im Masterbestand; kleinste V1-Datei mindestens 14.500 Woerter.
+- Umfang: ca. 818k Woerter im Masterbestand; kleinste V1-Datei mindestens 14.500 Woerter.
 - Geschuetzte Pruefungs-Pools: `woek-akademie-app/content/pruefungen/question-pools/`
 - Assessment-Blueprints: `woek-akademie-app/content/pruefungen/assessments/`
 - Weiter offen: Claude-CI/PDF-Finalisierung und kuratierte Schlussfreigabe.
@@ -259,3 +259,15 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [!] Harte Qualitaetsabweichung: In allen 56 Markdown-Mastern stehen nach `## V1-Finalisierung: Vertiefung, Anwendung und Evidenz` noch weitere nummerierte Hauptabschnitte. Die WC-V6-Stichprobe zeigt eine unplausible Reihenfolge mit `V1-Abschlussnotiz` und Quellen vor spaeteren Vertiefungskapiteln.
 - [!] Inhaltlicher Blocker: Die automatisch erzeugten V1-Schlussbloecke sind stark generisch und wiederholend. Formal sind die Artefakte vorhanden, redaktionell sind sie noch nicht als echte finale Studienskripte belastbar.
 - Naechster Schritt: Finalisierungslogik korrigieren, Abschnittsreihenfolge je Master bereinigen, generische Wiederholungsbloecke fachlich ersetzen, danach Word-Rohfassungen neu exportieren und erneut renderpruefen.
+
+### Automationslauf 2026-07-04 · Blocker behoben und V1 neu exportiert
+
+- [x] Finalisierungslogik korrigiert: alte Schlussbloecke werden vollstaendig entfernt, neue V1-Finalisierung wird erst nach allen nummerierten Hauptabschnitten angehaengt.
+- [x] Alle 56 Markdown-Master neu finalisiert und in die Akademie-App gespiegelt.
+- [x] Alle 56 Word-Rohfassungen neu exportiert.
+- [x] Strukturpruefung gruen: exakt ein V1-Finalisierungsmarker je Skript; keine nummerierten Hauptabschnitte nach der V1-Abschlussnotiz.
+- [x] Maschinelle V1-Verifikation gruen: 56/56 Skripte, `minWords` 14.545, 5 Assessment-Blueprints.
+- [x] JSON-Stichprobe gruen: 162 JSON-Dateien parsebar.
+- [x] App-Typecheck in `woek-akademie-app` gruen.
+- [x] DOCX-Stichprobe gerendert und visuell geprueft: `wirkungscontrolling-wc-v6.docx` 45 Seiten, `woek-g-v20.docx` 48 Seiten, `wirkungsmanagement-v10.docx` 46 Seiten.
+- Ergebnis: Der harte Blocker aus der visuellen Stichprobe ist fuer die Codex-V1-Fassung behoben. Weiter offen bleibt nur die separate Claude-CI/PDF-/Reader-Freigabe und kuratierte Schlusslektoratsrunde vor `published`.

@@ -15,6 +15,7 @@ const REQUIRED_PATTERNS = [
   [/Rückfluss|Rueckfluss|zurück in den WÖk-Korpus/, "Rueckfluss"],
   [/## V1-Finalisierung: Vertiefung, Anwendung und Evidenz/, "V1-Finalisierung"],
 ];
+const FINAL_MARKER = "## V1-Finalisierung: Vertiefung, Anwendung und Evidenz";
 
 function fail(message) {
   throw new Error(message);
@@ -60,6 +61,12 @@ for (const item of index.scripts) {
 
   for (const [pattern, label] of REQUIRED_PATTERNS) {
     if (!pattern.test(master)) fail(`${item.slug}: missing required section marker ${label}`);
+  }
+  const markerMatches = master.match(new RegExp(FINAL_MARKER.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) ?? [];
+  if (markerMatches.length !== 1) fail(`${item.slug}: expected exactly one V1 finalization marker, got ${markerMatches.length}`);
+  const afterFinalization = master.slice(master.indexOf(FINAL_MARKER) + FINAL_MARKER.length);
+  if (/^##\s+\d+\./m.test(afterFinalization)) {
+    fail(`${item.slug}: numbered main section appears after V1 finalization marker`);
   }
   if (/noch nicht die finale 40[-–]50-Seiten-Tiefenfassung/.test(master)) {
     fail(`${item.slug}: still contains non-final self-description`);
