@@ -18182,9 +18182,9 @@ body.theme-akademie .card{ background:#fff; border:1px solid #CBDECF; border-top
 
 /* === Website Richtung 2: dunkles Navy-Band im Startseiten-Hero (scoped) === */
 .home-journey-hero{
-  background:#0B1020;
+  background:#24314F;
   border-radius:20px;
-  padding:clamp(2rem,5vw,3.75rem) clamp(1.5rem,4vw,3rem);
+  padding:clamp(1.75rem,4vw,3rem) clamp(1.5rem,4vw,3rem);
 }
 .home-journey-hero .hero-kicker{ color:#9FB0D0; }
 .home-journey-hero .hero-title, .home-journey-hero h1{ color:#F6F1E8; }
