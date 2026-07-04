@@ -4,6 +4,7 @@ import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
 const artifactDir = path.join(root, "_site");
+const publicReleaseAssetsFile = path.join(root, "assets", "data", "public-release-assets.json");
 
 const excludedTopLevelDirs = new Set([
   ".git",
@@ -78,6 +79,72 @@ const legacyRedirectFiles = [
 function removeArtifact() {
   fs.rmSync(artifactDir, { recursive: true, force: true });
   fs.mkdirSync(artifactDir, { recursive: true });
+}
+
+function loadPublicReleaseAssets() {
+  if (!fs.existsSync(publicReleaseAssetsFile)) return new Map();
+  const data = JSON.parse(fs.readFileSync(publicReleaseAssetsFile, "utf8"));
+  return new Map(Object.entries(data.assets || {}));
+}
+
+const publicReleaseAssets = loadPublicReleaseAssets();
+
+function releaseAssetReferenceVariants(relative) {
+  const variants = new Set([
+    relative,
+    `/${relative}`,
+    `https://wirkungsoekonomie.de/${relative}`,
+  ]);
+  const encoded = relative
+    .split("/")
+    .map((part) => encodeURIComponent(part))
+    .join("/");
+  variants.add(encoded);
+  variants.add(`/${encoded}`);
+  variants.add(`https://wirkungsoekonomie.de/${encoded}`);
+  for (let depth = 1; depth <= 8; depth += 1) {
+    variants.add(`${"../".repeat(depth)}${relative}`);
+    variants.add(`${"../".repeat(depth)}${encoded}`);
+  }
+  return [...variants].sort((a, b) => b.length - a.length);
+}
+
+const publicReleaseAssetRewrites = [...publicReleaseAssets.entries()].flatMap(([relative, url]) =>
+  releaseAssetReferenceVariants(relative).map((variant) => [variant, url]),
+);
+const publicReleaseAssetRewriteMap = new Map(publicReleaseAssetRewrites);
+const publicReleaseAssetPattern = /(?:https:\/\/wirkungsoekonomie\.de\/|\/|(?:\.\.\/){1,8})?(?:assets\/audio|assets\/video|assets\/pdf|assets\/downloads|content\/governance|public\/downloads|docs)\/[^"'<>\\]+?\.(?:docx|mp3|mp4|pdf|xlsx|zip)(?=[?#"'<>\\\s]|$)/gi;
+
+function rewritePublicReleaseAssetReferences(content) {
+  if (!publicReleaseAssets.size) return content;
+  if (
+    !content.includes("assets/") &&
+    !content.includes("content/governance/") &&
+    !content.includes("public/downloads/") &&
+    !content.includes("docs/") &&
+    !content.includes("wirkungsoekonomie.de/")
+  ) {
+    return content;
+  }
+
+  return content.replace(publicReleaseAssetPattern, (match) => {
+    const direct = publicReleaseAssetRewriteMap.get(match);
+    if (direct) return direct;
+
+    const normalized = match
+      .replace(/^https:\/\/wirkungsoekonomie\.de\//, "")
+      .replace(/^\/+/, "")
+      .replace(/^(?:\.\.\/)+/, "");
+    const normalizedUrl = publicReleaseAssets.get(normalized);
+    if (normalizedUrl) return normalizedUrl;
+
+    try {
+      const decoded = decodeURI(normalized);
+      return publicReleaseAssets.get(decoded) || match;
+    } catch {
+      return match;
+    }
+  });
 }
 
 function shouldCopyRootFile(name) {
@@ -334,7 +401,7 @@ function normalizePublicArtifactLinksAndText() {
     const relative = toPosixRelative(file);
     const preserveMainworkFulltext = relative === "referenz/volltext/index.html";
 
-    content = content
+    content = rewritePublicReleaseAssetReferences(content)
       .replace(/([?&])utm_source=chatgpt\.com(?:&amp;|&)?/gi, (match, separator) => {
         if (match.endsWith("&amp;") || match.endsWith("&")) return separator;
         return "";
@@ -534,6 +601,7 @@ function prunePublicArtifact() {
     ".jpg",
     ".json",
     ".mp3",
+    ".mp4",
     ".pdf",
     ".png",
     ".svg",
@@ -546,6 +614,12 @@ function prunePublicArtifact() {
   for (const file of walkFiles(artifactDir)) {
     const ext = path.extname(file).toLowerCase();
     const relative = toPosixRelative(file);
+
+    if (publicReleaseAssets.has(relative)) {
+      removeFile(file, "large public asset is served from GitHub Releases");
+      pruned += 1;
+      continue;
+    }
 
     if (ext === ".wav") {
       removeFile(file, "source audio is kept locally; public pages use mp3");

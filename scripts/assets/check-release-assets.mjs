@@ -4,7 +4,19 @@ import path from "node:path";
 const root = process.cwd();
 const releaseBase = "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/";
 const podcastIndexFile = path.join(root, "assets", "data", "podcast-index.json");
+const publicReleaseAssetsFile = path.join(root, "assets", "data", "public-release-assets.json");
+const artifactDir = path.join(root, "_site");
 const maxInlineVideoBytes = 20 * 1024 * 1024;
+const publicReleaseAssetRoots = [
+  "assets/audio",
+  "assets/video",
+  "assets/pdf",
+  "assets/downloads",
+  "public/downloads",
+  "content/governance",
+  "docs",
+];
+const publicReleaseAssetExtensions = new Set([".docx", ".mp3", ".mp4", ".pdf", ".xlsx", ".zip"]);
 
 const failures = [];
 const warnings = [];
@@ -24,6 +36,17 @@ function walk(dir) {
     if (entry.isDirectory()) return walk(full);
     return entry.isFile() ? [full] : [];
   });
+}
+
+function toPosixRelative(file) {
+  return path.relative(root, file).split(path.sep).join("/");
+}
+
+function readPublicReleaseAssets() {
+  if (!fs.existsSync(publicReleaseAssetsFile)) return new Map();
+
+  const manifest = JSON.parse(fs.readFileSync(publicReleaseAssetsFile, "utf8"));
+  return new Map(Object.entries(manifest.assets || {}));
 }
 
 if (fs.existsSync(podcastIndexFile)) {
@@ -52,6 +75,28 @@ const localPodcastAudio = walk(path.join(root, "assets", "audio", "podcast"))
 for (const file of localPodcastAudio) {
   const rel = path.relative(root, file);
   failures.push(`${rel}: podcast audio must be stored as GitHub Release assets, not in the website deploy tree`);
+}
+
+const publicReleaseAssets = readPublicReleaseAssets();
+const publicReleaseFiles = publicReleaseAssetRoots.flatMap((assetRoot) => walk(path.join(root, assetRoot)))
+  .filter((file) => publicReleaseAssetExtensions.has(path.extname(file).toLowerCase()));
+
+for (const file of publicReleaseFiles) {
+  const rel = toPosixRelative(file);
+  const releaseUrl = publicReleaseAssets.get(rel);
+  if (!releaseUrl) {
+    failures.push(`${rel}: public media/doc asset must be listed in ${path.relative(root, publicReleaseAssetsFile)}`);
+  } else if (!String(releaseUrl).startsWith(releaseBase)) {
+    failures.push(`${rel}: public media/doc asset must point to a GitHub Release URL`);
+  }
+}
+
+if (fs.existsSync(artifactDir)) {
+  for (const relative of publicReleaseAssets.keys()) {
+    if (fs.existsSync(path.join(artifactDir, relative))) {
+      failures.push(`${relative}: release-hosted public asset must not be present in _site`);
+    }
+  }
 }
 
 const videos = walk(path.join(root, "assets", "video"))
