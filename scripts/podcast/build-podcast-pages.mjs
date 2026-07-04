@@ -168,9 +168,10 @@ function descriptionHtml(episode) {
 }
 
 function jsonLd(episode) {
+  const audioUrl = episode.audio ? new URL(episode.audio, `${site}/`).href : episode.spotifyUrl;
   const associatedMedia = {
     "@type": "MediaObject",
-    contentUrl: episode.audio || episode.spotifyUrl,
+    contentUrl: audioUrl,
   };
   if (episode.spotifyEmbedUrl) associatedMedia.embedUrl = episode.spotifyEmbedUrl;
   return JSON.stringify({

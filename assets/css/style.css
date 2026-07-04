@@ -18179,3 +18179,40 @@ body.theme-akademie .card-title{ color:#123D2B; }
 body.theme-akademie .btn-primary{ background:#1D6B49; border-color:#1D6B49; color:#fff; }
 body.theme-akademie .btn-primary:hover{ background:#2F7D5C; border-color:#2F7D5C; }
 body.theme-akademie .card{ background:#fff; border:1px solid #CBDECF; border-top:3px solid #2F7D5C; box-shadow:0 1px 2px rgba(11,16,32,.04), 0 12px 30px -18px rgba(11,16,32,.12); }
+
+/* === Website Richtung 2: dunkles Navy-Band im Startseiten-Hero (scoped) === */
+.home-journey-hero{
+  background:#24314F;
+  border-radius:20px;
+  padding:clamp(1.75rem,4vw,3rem) clamp(1.5rem,4vw,3rem);
+}
+.home-journey-hero .hero-kicker{ color:#9FB0D0; }
+.home-journey-hero .hero-title, .home-journey-hero h1{ color:#F6F1E8; }
+.home-journey-hero .hero-subtitle, .home-journey-hero .hero-text,
+.home-journey-hero p, .home-journey-hero li{ color:#C7CDDC; }
+.home-journey-hero strong{ color:#F6F1E8; }
+.home-journey-hero a{ color:#F6F1E8; text-decoration-color:rgba(246,241,232,.55); }
+.home-journey-hero .btn-primary{ background:#F6F1E8; color:#0B1020; border-color:#F6F1E8; }
+.home-journey-hero .btn-primary:hover{ background:#fff; border-color:#fff; }
+.home-journey-hero .btn-secondary{ color:#F6F1E8; border-color:rgba(246,241,232,.5); }
+.home-journey-hero .card{ background:#fff; color:#2b2b2b; border-color:transparent; box-shadow:0 18px 40px -20px rgba(0,0,0,.5); }
+.home-journey-hero .card p, .home-journey-hero .card li{ color:#2b2b2b; }
+.home-journey-hero .card a{ color:#1D6B49; }
+/* === Institut-Schriften übernehmen: Playfair Display (Headings) + Source Sans 3 (Text), self-hosted === */
+@font-face{font-family:"Playfair Display";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/playfair-display-500.woff2") format("woff2");}
+@font-face{font-family:"Playfair Display";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/playfair-display-600.woff2") format("woff2");}
+@font-face{font-family:"Playfair Display";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/playfair-display-700.woff2") format("woff2");}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/source-sans-3-400.woff2") format("woff2");}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/source-sans-3-500.woff2") format("woff2");}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/source-sans-3-600.woff2") format("woff2");}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/source-sans-3-700.woff2") format("woff2");}
+:root{
+  --font-heading:"Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body:"Source Sans 3", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+/* Schriftgrößen wie Institut */
+h1, .hero-title{ font-size:clamp(2rem,4vw,3rem); }
+h2, .section-title{ font-size:clamp(1.5rem,3vw,2rem); }
+h3{ font-size:1.2rem; }
+h1, h2, h3, .hero-title, .section-title{ line-height:1.15; }
+body{ line-height:1.6; }
