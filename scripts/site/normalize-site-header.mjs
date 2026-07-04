@@ -59,14 +59,14 @@ function renderMainLink(base, item) {
 
 function renderEnglishUtilityLink(base, item) {
   const labels = new Map([
-    ["Suche", ["Search", "Search"]],
-    ["WÖk-KI", ["AI", "WÖk AI"]],
-    ["WÖk-App", ["WÖk App", "WÖk App"]],
-    ["Mein Wirkungsraum", ["My impact room", "My impact room"]],
+    ["Suche", ["Search", "Search", "en/#tools"]],
+    ["WÖk-KI", ["AI", "WÖk AI", "en/#tools"]],
+    ["WÖk-App", ["WÖk App", "WÖk App", "en/#tools"]],
+    ["Mein Wirkungsraum", ["My impact room", "My impact room", "en/#join"]],
   ]);
-  const [text, utilityLabel] = labels.get(item.label) || [item.label, item.label];
+  const [text, utilityLabel, href] = labels.get(item.label) || [item.label, item.label, "en/"];
   const primary = item.label === "Mein Wirkungsraum" ? ' data-utility-primary="true"' : "";
-  return `        <a class="site-utility-link site-utility-link--${escapeHtml(utilityClass(item))}" href="${base}${escapeHtml(item.href)}" data-nav-match="${escapeHtml(navMatch(item))}" data-utility-label="${escapeHtml(utilityLabel)}"${primary}>${escapeHtml(text)}</a>`;
+  return `        <a class="site-utility-link site-utility-link--${escapeHtml(utilityClass(item))}" href="${base}${escapeHtml(href)}" data-nav-match="en/" data-utility-label="${escapeHtml(utilityLabel)}"${primary}>${escapeHtml(text)}</a>`;
 }
 
 function englishMainLinks() {

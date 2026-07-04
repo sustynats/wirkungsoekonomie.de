@@ -155,11 +155,11 @@ if (navToggle && siteNav) {
 
 if (siteNav && !document.querySelector(".site-search-shortcut") && !Array.from(document.querySelectorAll(".site-header a")).some((link) => /suche\.html/.test(link.getAttribute("href") || ""))) {
   const searchLink = document.createElement("a");
-  searchLink.href = relativeSiteUrl("suche.html");
+  searchLink.href = siteLocale === "en" ? relativeSiteUrl("en/#tools") : relativeSiteUrl("suche.html");
   searchLink.className = "site-search-shortcut";
-  searchLink.textContent = "Suche";
-  searchLink.setAttribute("aria-label", "Website-Suche öffnen");
-  searchLink.setAttribute("title", "Suche");
+  searchLink.textContent = siteLocale === "en" ? "Search" : "Suche";
+  searchLink.setAttribute("aria-label", siteLocale === "en" ? "Open search section" : "Website-Suche öffnen");
+  searchLink.setAttribute("title", siteLocale === "en" ? "Search" : "Suche");
   if (window.location.pathname.endsWith("/suche.html")) {
     searchLink.classList.add("active");
     searchLink.setAttribute("aria-current", "page");
@@ -1526,6 +1526,9 @@ function getGlossaryContext() {
 }
 
 function loadGlossaryTermsAndInit() {
+  if (siteLocale === "en") {
+    return;
+  }
   if (isDebugPath()) {
     return;
   }
