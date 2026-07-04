@@ -73,7 +73,8 @@ function moduleName(item) {
 }
 
 function extractStudyAnchors(markdown, item) {
-  const ignored = /^(V1-Finalisierung|Rueckfluss|Rückfluss|Quellen|Glossar|Verständnisfragen|Verstaendnisfragen|Mini-Quiz|Tiefenskript-Erweiterung|Abschlussmatrix|Finaler Leseauftrag)/i;
+  const ignored =
+    /^(Lernziele|Video|Transkript|Skript \/ Folien|Praxisbeispiel|Transferaufgabe|Pruefungsrelevanz|Prüfungsrelevanz|V1-Finalisierung|Rueckfluss|Rückfluss|Quellen|Glossar|Verständnisfragen|Verstaendnisfragen|Mini-Quiz|Tiefenskript-Erweiterung|Abschlussmatrix|Finaler Leseauftrag)/i;
   const headings = markdown
     .split("\n")
     .filter((line) => /^##\s+/.test(line))
@@ -109,30 +110,30 @@ function trackFrame(item) {
     return {
       field: "Wirkungsmanagement",
       role: "Managementpraxis, Verantwortungsarchitektur und organisationale Lernschleifen",
-      decision: "Strategie, Prozess, Budget, Zielkonflikt oder Kommunikationsregel",
-      failure: "eine Methodik einzufuehren, ohne Entscheidungsmacht, Datenpflichten und Korrekturroutinen mitzudenken",
+      decision: "eine Strategie-, Prozess-, Budget-, Zielkonflikt- oder Kommunikationsregel",
+      failure: "fehlenden Entscheidungspfaden, unklaren Datenpflichten oder fehlenden Korrekturroutinen",
     };
   }
   if (item.slug.startsWith("wirkungscontrolling-")) {
     return {
       field: "Impact-Controlling",
       role: "Kennzahlenarchitektur, Datenqualitaet, Bewertungslogik und Steuerungsentscheidung",
-      decision: "Indikator, Scorecard, Benchmark, Auditpfad oder Portfolioentscheidung",
-      failure: "Zahlen als Beweis zu behandeln, obwohl Systemgrenze, Datenqualitaet, Unsicherheit oder Nichtkompensation ungeklaert sind",
+      decision: "einen Indikator, eine Scorecard, einen Benchmark, einen Auditpfad oder eine Portfolioentscheidung",
+      failure: "Scores ohne geklaerte Systemgrenze, Datenqualitaet, Unsicherheit oder Nichtkompensation",
     };
   }
   return {
     field: "Grundstudium Wirkungsökonomie",
     role: "begriffliche Grundlegung, Bewertungsrahmen und gesellschaftliche Einordnung",
-    decision: "Begriff, Wirkpfad, Fallbewertung, rote Linie oder Rueckkopplung",
-    failure: "einen plausiblen Gedanken schon fuer Wirkung zu halten, obwohl Empfaenger, Zustand, Zeitbezug und Quelle fehlen",
+    decision: "einen Begriff, einen Wirkpfad, eine Fallbewertung, eine rote Linie oder eine Rueckkopplung",
+    failure: "fehlender Trennung von Empfaengern, Zustand, Zeitbezug und Quelle",
   };
 }
 
 function buildSynthesisParagraph(item, anchor, lens, frame, idx) {
   const templates = [
     () =>
-      `**${lens.label}.** Der Abschnitt **${anchor}** ist in ${item.code} kein Zusatzwissen, sondern ein Pruefstein fuer die Grundfrage des Skripts: Was veraendert sich, bei wem, wodurch und mit welcher Rueckkopplung? Fuer **${item.title}** wird daran sichtbar, dass ${lens.principle}. Die fachliche Grenze liegt dort, wo Lernende ${lens.error}. Die saubere Lesart trennt deshalb Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. In der Anwendung sollte daraus mindestens eine konkrete ${frame.decision} abgeleitet werden; sonst bleibt das Wissen erklaerend, aber nicht steuerungsfaehig.`,
+      `**${lens.label}.** Der Abschnitt **${anchor}** ist in ${item.code} kein Zusatzwissen, sondern ein Pruefstein fuer die Grundfrage des Skripts: Was veraendert sich, bei wem, wodurch und mit welcher Rueckkopplung? Fuer **${item.title}** wird daran sichtbar, dass ${lens.principle}. Die fachliche Grenze liegt dort, wo Lernende ${lens.error}. Die saubere Lesart trennt deshalb Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. In der Anwendung sollte daraus mindestens ${frame.decision} abgeleitet werden; sonst bleibt das Wissen erklaerend, aber nicht steuerungsfaehig.`,
     () =>
       `**Anwendung auf ${anchor}.** In einer Fallanalyse beginnt dieser Punkt nicht mit einer Meinung, sondern mit einer belastbaren Beschreibung. Wer ${item.code} pruefungsnah liest, fragt zuerst nach Wirkungsempfaengern, Wirkraum, Zeitraum und Datenquelle. Erst danach folgt die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+. ${lens.practice} Der typische Kurzschluss waere, ${lens.error}. Genau dagegen setzt die WÖk die Pflicht, Wirkungspotenzial, Wirkungsrisiko und positive Netto-Wirkung begrifflich getrennt zu halten.`,
     () =>
@@ -161,10 +162,10 @@ function finalBlock(item, minAdditionalWords, markdown) {
     { label: "Wirkpfad-Logik", principle: "ein Thema erst steuerbar wird, wenn der Mechanismus zwischen Ausloeser und Zustandsveraenderung beschrieben ist", error: "nur die Massnahme selbst bewerten und indirekte Empfaenger ausblenden", practice: "Mindestens ein direkter und ein indirekter Wirkpfad muessen nachvollziehbar sein." },
     { label: "Daten- und Quellenklarheit", principle: "jede Bewertung nur so belastbar ist wie Datenlage, Quellenstatus, Aktualitaet und Systemgrenze", error: "eine Zahl ohne Einheit, Zeitraum oder Erhebungslogik als Beweis nutzen", practice: "Daten werden nicht dekorativ zitiert, sondern auf Aussagekraft und Grenzen geprueft." },
     { label: "Ambivalenz", principle: "positive und negative Zustandsveraenderungen gleichzeitig auftreten koennen", error: "ambivalente Befunde glaetten, damit eine eindeutige Botschaft entsteht", practice: "Profile, Zielkonflikte und offene Punkte werden nebeneinander gefuehrt." },
-    { label: "Nichtkompensation", principle: "schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden duerfen", error: "eine Durchschnittslogik als moralische Entlastung verwenden", practice: "Reverse Merit Order und rote Linien schuetzen vor Schoenrechnung." },
+    { label: "Nichtkompensation", principle: "schwere zentrale Schaeden nicht durch beliebige positive Einzelwerte neutralisiert werden koennen", error: "eine Durchschnittslogik als moralische Entlastung verwenden", practice: "Reverse Merit Order und rote Linien schuetzen vor Schoenrechnung." },
     { label: "Rueckkopplung", principle: "Wirkungswissen erst wertvoll wird, wenn es Entscheidungen veraendert", error: "Reporting als Abschluss behandeln", practice: "Jeder Analyseblock fragt nach der Routine, die nach der Bewertung angepasst wird." },
     { label: "Governance", principle: "Wirkungsbewertung Verfahren, Rechte, Transparenz und Korrektur braucht", error: "Bewertung als technokratische Top-down-Setzung verstehen", practice: "Betroffene, Datenhalter, Entscheider und Kontrollinstanzen behalten unterscheidbare Rollen." },
-    { label: "Pruefbarkeit", principle: "das Thema in Falllogik uebersetzt werden muss, damit Kompetenz sichtbar wird", error: "reines Auswendiglernen als Kompetenznachweis behandeln", practice: "Pruefungsfragen verbinden Begriff, Anwendung, Evidenz und rote Linie." },
+    { label: "Pruefbarkeit", principle: "das Thema in Falllogik uebersetzt werden muss, damit Kompetenz sichtbar wird", error: "reines Auswendiglernen als Kompetenznachweis behandeln", practice: "Eine Pruefungsfrage verbindet Begriff, Anwendung, Evidenz und rote Linie." },
     { label: "Organisationale Umsetzung", principle: "WÖk-Begriffe im Alltag nur tragen, wenn sie in Routinen uebersetzt werden", error: "Verantwortung an eine einzelne Nachhaltigkeitsfunktion auslagern", practice: "Strategie, Einkauf, Kommunikation, Controlling und Fuehrung verwenden denselben Wirkungsbegriff." },
     { label: "Kommunikation", principle: "klare Wirkungssprache Vertrauen schafft, ohne Unsicherheit zu verstecken", error: "Eindeutigkeit behaupten, wo die Datenlage nur Potenzial oder Risiko traegt", practice: "Gute Kommunikation unterscheidet Befund, Annahme und normative Bewertung." },
     { label: "Systemgrenze", principle: "jede Wirkungsaussage eine Grenze zieht und diese Grenze begruenden muss", error: "nur den bequemen Ausschnitt betrachten", practice: "Mindestens Raum, Zeit, Empfaengergruppe und indirekte Folgen werden markiert." },

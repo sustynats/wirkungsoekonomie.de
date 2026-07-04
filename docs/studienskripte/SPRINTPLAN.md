@@ -289,3 +289,13 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [x] App-Typecheck in `woek-akademie-app` gruen.
 - [x] DOCX-Stichprobe gerendert und visuell geprueft: `wirkungscontrolling-wc-v6.docx` 49 Seiten, `woek-g-v20.docx` 49 Seiten, `wirkungsmanagement-v10.docx` 49 Seiten.
 - Ergebnis: Der Codex-V1-Gesamtauftrag ist in Website-Master, Word-Rohfassungen, App-Spiegel und geschuetzter Pruefungslane abgeschlossen; `published` bleibt der separaten Claude-CI/PDF-/Reader-Freigabe vorbehalten.
+
+### Automationslauf 2026-07-04 · redaktionelle Nachschaerfung
+
+- [x] Finalisierungsgenerator erneut bereinigt: generische `Schlussvertiefung`-Bloecke ersetzt, ungrammatische Anschlussformulierungen reduziert und unpassende Lern-/Video-/Transkriptanker aus der Schlussverdichtung herausgefiltert.
+- [x] Alle 56 Markdown-Master erneut finalisiert, in `woek-akademie-app/content/lehrgaenge/` gespiegelt und als Word-Rohfassungen neu exportiert.
+- [x] Maschinelle V1-Verifikation gruen: 56/56 Skripte, `minWords` 14.545, 5 Assessment-Blueprints.
+- [x] JSON-Stichprobe gruen: 138 JSON-Dateien aus Website-, Asset- und App-Content parsebar.
+- [x] App-Typecheck in `woek-akademie-app` gruen.
+- [x] DOCX-Stichprobe gerendert und visuell geprueft: `woek-g-v20.docx` 52 Seiten, `wirkungscontrolling-wc-v6.docx` 48 Seiten, `wirkungsmanagement-v10.docx` 48 Seiten.
+- Ergebnis: Die Codex-V1-Artefakte bleiben abgeschlossen; die Nachschaerfung betrifft nur die redaktionelle Qualitaet der finalen Schlussverdichtung und die daraus exportierten Rohfassungen.
