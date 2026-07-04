@@ -54,6 +54,14 @@ fachliche Entscheidungen bleiben in den jeweiligen Fachdocs, z. B.:
 
 ## Chronologisches Log
 
+### 2026-07-04 - Codex - Studienskripte V1-Schlussbloecke repariert
+- Status: abnahmebereit fuer Claude-CI/CD
+- Repo/Pfad: Website-Repo `content/studienskripte/`, `docs/studienskripte/word-rohfassungen/`, `scripts/studienskripte/`; Akademie-App `woek-akademie-app/content/lehrgaenge/`
+- Branch/Commit: in Arbeit bis Commit
+- Geaendert: reproduzierbares Reparaturskript `refine-v1-final-blocks.mjs`; alle 56 Markdown-Master mit V1-Finalisierung am Dokumentende, ohne nummerierte Hauptabschnitte nach der Finalisierung; repetitive Transferfragen-Kaskaden entfernt; App-Spiegel und Word-Rohfassungen neu geschrieben.
+- Pruefung: `verify-v1.mjs` gruen (`minWords` 14.929); JSON-Stichprobe 162 Dateien gruen; App-Typecheck gruen; WC-V6-DOCX erneut zu 49 PNG-Seiten gerendert und Anfang/Mitte/Schluss visuell unauffaellig.
+- Offen fuer Claude: CI/CD-Satz, Reader/PDF, Medienintegration, visuelles Lektorat und finale `published`-Freigabe.
+
 ### 2026-07-03 - Codex - Studienskripte V1 finalisiert
 - Status: abnahmebereit fuer Claude-CI/CD
 - Repo/Pfad: Website-Repo `content/studienskripte/`, `docs/studienskripte/word-rohfassungen/`, `bibliothek/studienskripte/`; Akademie-App `content/lehrgaenge/`, `content/pruefungen/question-pools/`, `content/pruefungen/assessments/`

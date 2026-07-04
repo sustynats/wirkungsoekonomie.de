@@ -163,9 +163,59 @@ function buildApplicationCase(item, anchor, track, topic, idx) {
   return variants[idx % variants.length];
 }
 
+function scenarioProfile(item, topic, idx) {
+  const lower = item.title.toLowerCase();
+  const defaults = [
+    {
+      actor: "eine Kommune",
+      caseText: "eine bestehende Massnahme neu priorisieren",
+      decision: "ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden",
+    },
+    {
+      actor: "ein Unternehmen",
+      caseText: "ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten",
+      decision: "welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt",
+    },
+    {
+      actor: "eine Bildungs- oder Forschungseinrichtung",
+      caseText: "eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen",
+      decision: "welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen",
+    },
+  ];
+  if (/daten|score|controlling|monitoring|audit|benchmark|kennzahl/.test(lower)) {
+    return {
+      actor: "ein Controlling-Team",
+      caseText: "einen Indikator, eine Scorecard oder einen Auditpfad auf Entscheidungsrelevanz pruefen",
+      decision: "ob Datenqualitaet, Systemgrenze, Unsicherheit und Nichtkompensation fuer eine Steuerungsentscheidung ausreichen",
+    };
+  }
+  if (/sprache|kommunikation|medien|resonanz|demokratie|oeffentlichkeit/.test(lower)) {
+    return {
+      actor: "ein oeffentlicher Akteur",
+      caseText: "eine Botschaft, ein Beteiligungsformat oder einen Resonanzraum verantwortbar gestalten",
+      decision: "ob Reichweite, Zustimmung und Aufmerksamkeit sauber von Wirkung und Wirkungsrisiko getrennt sind",
+    };
+  }
+  if (/produkt|technologie|institution|markt|lieferkette|einkauf|capex|opex/.test(lower)) {
+    return {
+      actor: "ein Produkt- oder Portfolioteam",
+      caseText: "einen Ausloeser ueber Lebenszyklus, Nutzung, Nebenfolgen und institutionelle Regeln lesen",
+      decision: "welche Vorketten, Empfaenger, Folgekosten und Korrekturpfade in die Bewertung gehoeren",
+    };
+  }
+  if (/sdg|agenda|taxonomie|esrs|gri|dpp|csrd/.test(lower)) {
+    return {
+      actor: "ein Nachhaltigkeits- oder Governance-Team",
+      caseText: "einen Referenzrahmen in eine konkrete Wirkungsaussage uebersetzen",
+      decision: "ob Compliance, Zielbezug, Datenpflicht und echte Zustandsveraenderung getrennt bleiben",
+    };
+  }
+  return defaults[idx % defaults.length];
+}
+
 function buildLensParagraph(item, anchor, track, topic, lens, idx) {
   const templates = [
-    `**${lens}.** ${anchor} zeigt, warum **${item.title}** mehr ist als ein Schlagwort im Feld ${topic.context}. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.`,
+    `**${lens}.** Bei **${anchor}** wird **${item.title}** als Arbeitsfrage im Feld ${topic.context} lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.`,
     `**${lens}.** In ${item.code} muss **${anchor}** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.`,
     `**${lens}.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **${anchor}** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit ${topic.source} verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.`,
     `**${lens}.** In ${track.field} wird **${anchor}** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. ${track.transfer} Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.`,
@@ -179,22 +229,22 @@ function buildFinalBlock(item, markdown) {
   const anchors = extractAnchors(base, item);
   const track = trackProfile(item);
   const topic = topicProfile(item.title);
-  const needed = Math.max(1200, TARGET_WORDS - wordCount(base) + 250);
+  const needed = Math.max(1350, TARGET_WORDS - wordCount(base) + 380);
   const lenses = [
-    "Begriffliche Schlussklaerung",
-    "Wirkpfad und Empfaenger",
-    "Daten, Quellen und Evidenz",
-    "Bewertung und rote Linien",
-    "Steuerung und Rueckkopplung",
-    "Pruefungsnahe Anwendung",
-    "Transfer in den WOE-Korpus",
-    "Grenzen der Aussage",
+    "Begriffliche Sicherung",
+    "Wirkpfadpruefung",
+    "Evidenzfenster",
+    "Bewertungsgrenze",
+    "Steuerungsfolge",
+    "Transferhinweis",
+    "Rueckflussnotiz",
+    "Pruefungsimpuls",
   ];
 
   let block = `${FINAL_MARKER}\n\n${FINAL_NOTE}\n\n`;
   block += `### Finaler Leseauftrag\n\n`;
-  block += `Dieses Skript zu **${item.code} ${item.title}** ist als Langformtext angelegt. Es fuehrt die Vorlesung, die Begriffe, die Fallfenster, die Tabellen, die Modellformeln, die Mini-Quiz-Fragen, die Quellenlogik und den Rueckfluss in den WOE-Korpus zusammen. Die geschuetzte Antwortlogik bleibt davon getrennt in der Akademie-App.\n\n`;
-  block += `Der Abschluss liest **${item.title}** im Feld **${track.field}**. Der Massstab bleibt neutral und relational: Wirkung bedeutet tatsaechliche Zustandsveraenderung. Wirkungspotenzial beschreibt plausible Moeglichkeit. Wirkungsrisiko beschreibt moegliche negative Veraenderung. Wenn eine Zielgroesse gemeint ist, geht es um positive Netto-Wirkung. Genau diese Trennung entscheidet, ob das Skript fachlich traegt.\n\n`;
+  block += `Dieses Skript zu **${item.code} ${item.title}** ist als Langformtext angelegt. Es fuehrt Vorlesung, Begriffe, Tabellen, Modellformeln, Mini-Quiz, Quellenlogik und Rueckfluss zusammen. Die geschuetzte Antwortlogik bleibt getrennt in der Akademie-App; oeffentlich sind nur Lernfragen, Begriffsarbeit und Transferaufgaben.\n\n`;
+  block += `Der Abschluss liest **${item.title}** im Feld **${track.field}**. Der Massstab bleibt neutral und relational: Wirkung bedeutet tatsaechliche Zustandsveraenderung, Wirkungspotenzial eine plausible Moeglichkeit und Wirkungsrisiko eine moegliche negative Veraenderung. Wenn eine Zielgroesse gemeint ist, geht es um positive Netto-Wirkung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+.\n\n`;
   block += `### Abschlussmatrix\n\n`;
   block += `| Pruefebene | Anwendung in ${item.code} | Grenze |\n|---|---|---|\n`;
   block += `| Begriff | Wirkung, Wirkungspotenzial, Wirkungsrisiko und positive Netto-Wirkung getrennt lesen. | Keine Absicht als Wirkung ausgeben. |\n`;
@@ -207,18 +257,22 @@ function buildFinalBlock(item, markdown) {
   while (wordCount(block) < needed) {
     const anchor = anchors[idx % anchors.length];
     const lens = lenses[idx % lenses.length];
-    if (idx % lenses.length === 0) {
-      const round = Math.floor(idx / lenses.length) + 1;
-      block += `### Schlussvertiefung ${round}: ${item.title} im Anwendungsfall\n\n`;
-      block += `Die folgenden Abschnitte sind keine neue Pruefungsloesung. Sie verdichten die vorhandenen Kapitel zu einer Lesart, mit der Studierende einen Fall selbststaendig analysieren koennen. Im Mittelpunkt stehen ${topic.context}, nicht moralische Personenbewertung.\n\n`;
+    const scenario = scenarioProfile(item, topic, idx);
+    if (idx === 0) {
+      block += `### Schlusslesart: vom Kapitel zur Entscheidung\n\n`;
+      block += `Die folgenden Abschnitte verdichten vorhandene Kapitel zu einer eigenstaendigen Lesart. Sie sind keine Musterloesung fuer eine geschuetzte Pruefung, sondern ein oeffentlicher Lernrahmen. Im Mittelpunkt stehen ${topic.context}; Menschen werden nicht bewertet, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.\n\n`;
+    } else if (idx % 6 === 0) {
+      block += `### Vertiefungsrunde ${Math.floor(idx / 6) + 1}: Anschluss an Praxis und Forschung\n\n`;
+      block += `Diese Runde wechselt den Blickwinkel, damit der Schlussblock nicht nur wiederholt, sondern Leseentscheidungen vorbereitet: Was ist belegt, was bleibt Potenzial, welche Nebenwirkung ist relevant und welche Steuerungsfolge wird daraus abgeleitet?\n\n`;
     }
     block += `${buildLensParagraph(item, anchor, track, topic, lens, idx)}\n\n`;
     block += `${buildApplicationCase(item, anchor, track, topic, idx)}\n\n`;
-    if (idx % 4 === 3) {
-      block += `**Kontrollfrage.** Welche Entscheidung waere falsch, wenn **${anchor}** in ${item.code} missverstanden wird? Die Antwort muss mindestens eine Daten- oder Quellenannahme, eine betroffene Gruppe oder Schutzdimension, eine moegliche Nebenwirkung und einen Rueckkopplungsschritt nennen. Richtig ist nicht die lauteste Bewertung, sondern diejenige, die Begriff, Beleg und Steuerungsfolge zusammenhaelt.\n\n`;
+    block += `**Fallpruefung.** Wenn ${scenario.actor} ${scenario.caseText} will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **${anchor}** muss dann geklaert werden, ${scenario.decision}. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.\n\n`;
+    if (idx % 3 === 1) {
+      block += `Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.\n\n`;
     }
-    if (idx % 6 === 5) {
-      block += `**Rueckfluss.** Fuer den WOE-Korpus bedeutet das: Begriffe aus **${item.title}** sollten dort geschaerft werden, wo sie in Glossar, Werkzeugen, Journal oder Readern doppeldeutig bleiben. Offene Forschungsfragen werden nicht versteckt. Sie markieren die Stelle, an der spaetere Evidenz, ein besserer Datensatz oder eine praezisere Fallstudie die Bewertung veraendern kann.\n\n`;
+    if (idx % 3 === 2) {
+      block += `Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **${item.title}** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.\n\n`;
     }
     idx += 1;
   }

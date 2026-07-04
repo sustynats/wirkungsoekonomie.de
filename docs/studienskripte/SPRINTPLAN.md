@@ -258,6 +258,19 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [x] DOCX-Stichprobe `wirkungscontrolling-wc-v6.docx` rendert zu 46 PNG-Seiten.
 - [!] Harte Qualitaetsabweichung: In allen 56 Markdown-Mastern stehen nach `## V1-Finalisierung: Vertiefung, Anwendung und Evidenz` noch weitere nummerierte Hauptabschnitte. Die WC-V6-Stichprobe zeigt eine unplausible Reihenfolge mit `V1-Abschlussnotiz` und Quellen vor spaeteren Vertiefungskapiteln.
 - [!] Inhaltlicher Blocker: Die automatisch erzeugten V1-Schlussbloecke sind stark generisch und wiederholend. Formal sind die Artefakte vorhanden, redaktionell sind sie noch nicht als echte finale Studienskripte belastbar.
+
+### Automationslauf 2026-07-04 · V1-Schlussblock-Reparatur
+
+- [x] Reproduzierbares Reparaturskript `scripts/studienskripte/refine-v1-final-blocks.mjs` angelegt.
+- [x] Alle 56 Markdown-Master so repariert, dass die V1-Finalisierung am Dokumentende liegt und keine nummerierten Hauptabschnitte danach folgen.
+- [x] Repetitive `Pruefungsnahe Transferfrage`-Kaskaden in den V1-Schlussbloecken entfernt; neue Schlussbloecke arbeiten mit Abschlussmatrix, Schlusslesart, Fallpruefung, Nichtkompensation, Reverse Merit Order und Rueckfluss.
+- [x] Alle 56 App-Spiegel erneut synchron aus den Mastern geschrieben.
+- [x] Alle 56 Word-Rohfassungen erneut exportiert.
+- [x] Verifikation: `scripts/studienskripte/verify-v1.mjs` gruen, `minWords` 14.929, 56/56 Skripte, 5 Assessment-Blueprints.
+- [x] JSON-Stichprobe gruen: 162 JSON-Dateien parsebar.
+- [x] App-Typecheck in `woek-akademie-app` gruen.
+- [x] DOCX-Stichprobe `wirkungscontrolling-wc-v6.docx` erfolgreich zu 49 PNG-Seiten gerendert; Anfang, Mitte und Schluss visuell unauffaellig.
+- Hinweis: Die V1-Fassung bleibt Codex-fachfinale Rohfassung. Claude-CI/CD-Satz, Reader/PDF, Medienintegration und Lektorat bleiben separate Freigabelane.
 - Naechster Schritt: Finalisierungslogik korrigieren, Abschnittsreihenfolge je Master bereinigen, generische Wiederholungsbloecke fachlich ersetzen, danach Word-Rohfassungen neu exportieren und erneut renderpruefen.
 
 ### Automationslauf 2026-07-04 · Blocker behoben und V1 neu exportiert
