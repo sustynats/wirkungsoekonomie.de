@@ -271,3 +271,11 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [x] App-Typecheck in `woek-akademie-app` gruen.
 - [x] DOCX-Stichprobe gerendert und visuell geprueft: `wirkungscontrolling-wc-v6.docx` 45 Seiten, `woek-g-v20.docx` 48 Seiten, `wirkungsmanagement-v10.docx` 46 Seiten.
 - Ergebnis: Der harte Blocker aus der visuellen Stichprobe ist fuer die Codex-V1-Fassung behoben. Weiter offen bleibt nur die separate Claude-CI/PDF-/Reader-Freigabe und kuratierte Schlusslektoratsrunde vor `published`.
+
+### Automationslauf 2026-07-04 · Schlussvalidierung
+
+- [x] Maschinelle V1-Verifikation erneut gruen: 56/56 Skripte, `minWords` 14.795, 5 Assessment-Blueprints.
+- [x] JSON-Stichprobe gruen: 188 JSON-Dateien aus Website- und App-Content parsebar.
+- [x] App-Typecheck in `woek-akademie-app` gruen.
+- [x] DOCX-Stichprobe gerendert: `wirkungscontrolling-wc-v6.docx` 49 Seiten, `woek-g-v20.docx` 49 Seiten, `wirkungsmanagement-v10.docx` 49 Seiten.
+- Ergebnis: Alle 56 Codex-V1-Studienskripte sind als finale Codex-Fassungen vorhanden, gespiegelt, exportiert und erneut verifiziert. Offen bleibt nur die separate Claude-CI/PDF-/Reader-Freigabe vor `published`.
