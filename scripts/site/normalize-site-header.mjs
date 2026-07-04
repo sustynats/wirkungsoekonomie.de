@@ -69,7 +69,7 @@ function renderMainLink(base, item) {
 
 function renderEnglishUtilityLink(base, item) {
   const labels = new Map([
-    ["Suche", ["Search", "Search", "en/#tools"]],
+    ["Suche", ["Search", "Search", "en/search/"]],
     ["WÖk-KI", ["AI", "WÖk AI", "en/woek-ai/"]],
     ["WÖk-App", ["WÖk App", "WÖk App", "en/app/"]],
     ["Mein Wirkungsraum", ["My Impact Space", "My Impact Space", "en/my-impact-space/"]],

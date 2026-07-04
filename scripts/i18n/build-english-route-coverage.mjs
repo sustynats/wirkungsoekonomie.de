@@ -25,6 +25,7 @@ const ENGLISH_ROUTE_OVERRIDES = new Map([
   ["bibliothek/index.html", "en/library/index.html"],
   ["app/index.html", "en/app/index.html"],
   ["mein-wirkungsraum/index.html", "en/my-impact-space/index.html"],
+  ["suche.html", "en/search/index.html"],
   ["tools/index.html", "en/tools/index.html"],
   ["werkzeuge/index.html", "en/tools/index.html"],
   ["woek-ki/index.html", "en/woek-ai/index.html"],

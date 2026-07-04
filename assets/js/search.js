@@ -14,23 +14,26 @@
   const suggestionButtons = Array.from(document.querySelectorAll("[data-search-suggestion]"));
   const searchScriptUrl =
     document.currentScript?.src || document.querySelector('script[src*="assets/js/search.js"]')?.src || "";
+  const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
+  const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
+  const searchPageHref = siteLocale === "en" ? "/en/search/" : "/suche.html";
   const searchDataVersion = "20260602-semantic-ranking";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
   const SEARCH_RESULT_CACHE_LIMIT = 40;
   const SEARCH_GROUPS = [
-    { id: "fragen", label: "Fragen & Einwände", max: 4 },
-    { id: "begriffe", label: "Begriffe", max: 5 },
-    { id: "grundlagen", label: "Grundlagen", max: 4 },
-    { id: "wirkungsfelder", label: "Wirkungsfelder", max: 5 },
-    { id: "werkzeuge", label: "Werkzeuge", max: 5 },
-    { id: "methoden", label: "Veröffentlichungen", max: 5 },
-    { id: "akademie", label: "Akademie", max: 3 },
+    { id: "fragen", label: i18n("Fragen & Einwände", "Questions & objections"), max: 4 },
+    { id: "begriffe", label: i18n("Begriffe", "Terms"), max: 5 },
+    { id: "grundlagen", label: i18n("Grundlagen", "Foundations"), max: 4 },
+    { id: "wirkungsfelder", label: i18n("Wirkungsfelder", "Impact fields"), max: 5 },
+    { id: "werkzeuge", label: i18n("Werkzeuge", "Tools"), max: 5 },
+    { id: "methoden", label: i18n("Veröffentlichungen", "Publications"), max: 5 },
+    { id: "akademie", label: i18n("Akademie", "Academy"), max: 3 },
     { id: "downloads", label: "Downloads", max: 3 },
     { id: "journal", label: "Journal", max: 3 },
-    { id: "beispiele", label: "Beispiele & Fallstudien", max: 3 },
-    { id: "weitere", label: "Weitere Treffer", max: 4 },
+    { id: "beispiele", label: i18n("Beispiele & Fallstudien", "Examples & case studies"), max: 3 },
+    { id: "weitere", label: i18n("Weitere Treffer", "More results"), max: 4 },
   ];
   const GROUP_SCORE_BONUS = {
     fragen: 340,
@@ -423,7 +426,7 @@
   }
 
   function getGroupLabel(groupId) {
-    return SEARCH_GROUPS.find((group) => group.id === groupId)?.label || "Weitere Treffer";
+    return SEARCH_GROUPS.find((group) => group.id === groupId)?.label || i18n("Weitere Treffer", "More results");
   }
 
   function getDisplayBadge(entry, groupId) {
@@ -437,7 +440,7 @@
     if (groupId === "downloads") return "Download";
     if (groupId === "journal") return "Journal";
     if (groupId === "beispiele") return "Beispiel";
-    return entry.section || entry.type || "Treffer";
+    return entry.section || entry.type || i18n("Treffer", "Result");
   }
 
   function getDisplayPath(entry, groupId) {
@@ -788,7 +791,7 @@
     const list = unique(asArray(tags).map((tag) => String(tag || "").trim()).filter(Boolean)).slice(0, 6);
     if (!list.length) return "";
     return `<ul class="search-tag-list">${list
-      .map((tag) => `<li><a href="suche.html?q=${encodeURIComponent(tag)}" aria-label="Nach ${escapeHtml(tag)} suchen">${escapeHtml(tag)}</a></li>`)
+      .map((tag) => `<li><a href="${searchPageHref}?q=${encodeURIComponent(tag)}" aria-label="${escapeHtml(i18n(`Nach ${tag} suchen`, `Search for ${tag}`))}">${escapeHtml(tag)}</a></li>`)
       .join("")}</ul>`;
   }
 
@@ -814,11 +817,11 @@
     }
     recommendedPanel.hidden = false;
     recommendedPanel.innerHTML = `
-      <p class="hero-kicker">Empfohlener Einstieg</p>
+      <p class="hero-kicker">${i18n("Empfohlener Einstieg", "Recommended starting point")}</p>
       <h2>${escapeHtml(entrypoint.title)}</h2>
       <p>${escapeHtml(entrypoint.description)}</p>
       ${renderTagList(entrypoint.tags)}
-      <p><a href="${escapeHtml(entrypoint.url)}">Einstieg öffnen</a></p>
+      <p><a href="${escapeHtml(entrypoint.url)}">${i18n("Einstieg öffnen", "Open starting point")}</a></p>
     `;
   }
 
@@ -831,9 +834,9 @@
     }
     relatedPanel.hidden = false;
     relatedPanel.innerHTML = `
-      <h2>Verwandte Themen</h2>
+      <h2>${i18n("Verwandte Themen", "Related topics")}</h2>
       <ul class="search-topic-list">
-        ${topics.map((topic) => `<li><a href="suche.html?q=${encodeURIComponent(topic)}">${escapeHtml(topic)}</a></li>`).join("")}
+        ${topics.map((topic) => `<li><a href="${searchPageHref}?q=${encodeURIComponent(topic)}">${escapeHtml(topic)}</a></li>`).join("")}
       </ul>
     `;
   }
@@ -852,7 +855,7 @@
         return aliases.some((alias) => alias.includes(query) || query.includes(alias) || tokens.some((token) => alias.includes(token)));
       })
       .slice(0, 6)
-      .map((term) => ({ label: term.label, type: "Begriff", q: term.label }));
+      .map((term) => ({ label: term.label, type: i18n("Begriff", "Term"), q: term.label }));
     const entryMatches = state.index
       .filter((entry) => {
         const groupId = entry._group || classifyEntry(entry);
@@ -880,7 +883,7 @@
     }
     suggestionsPanel.hidden = false;
     suggestionsPanel.innerHTML = `
-      <p class="hero-kicker">Vorschläge</p>
+      <p class="hero-kicker">${i18n("Vorschläge", "Suggestions")}</p>
       <div class="search-suggestion-list">
         ${suggestions.map((item) => `<button type="button" data-suggest-query="${escapeHtml(item.q)}"><span>${escapeHtml(item.label)}</span><small>${escapeHtml(item.type)}</small></button>`).join("")}
       </div>
@@ -1051,7 +1054,7 @@
     const runId = ++state.searchRun;
 
     if (!state.ready) {
-      status.textContent = "Suche wird geladen.";
+      status.textContent = i18n("Suche wird geladen.", "Loading search.");
       return;
     }
 
@@ -1061,7 +1064,7 @@
       renderRecommended(null);
       renderRelated(getDefaultTopics());
       renderSuggestions("", []);
-      status.textContent = "Empfohlene Einstiege";
+      status.textContent = i18n("Empfohlene Einstiege", "Recommended starting points");
       updateUrl("");
       return;
     }
@@ -1081,13 +1084,13 @@
       renderSuggestions(rawQuery, tokens);
       renderResults(matchingResults, rawQuery, tokens);
 
-      const label = rawQuery ? ` für „${rawQuery}“` : "";
-      const resultWord = finalResults.length === 1 ? "kuratierter Treffer" : "kuratierte Treffer";
-      const groupNote = groupedResults.length ? ` in ${groupedResults.length} Wissensbereichen` : "";
-      const rawNote = totalResults > finalResults.length ? " aus dem Wissensindex gebündelt" : "";
+      const label = rawQuery ? i18n(` für „${rawQuery}“`, ` for "${rawQuery}"`) : "";
+      const resultWord = finalResults.length === 1 ? i18n("kuratierter Treffer", "curated result") : i18n("kuratierte Treffer", "curated results");
+      const groupNote = groupedResults.length ? i18n(` in ${groupedResults.length} Wissensbereichen`, ` in ${groupedResults.length} knowledge areas`) : "";
+      const rawNote = totalResults > finalResults.length ? i18n(" aus dem Wissensindex gebündelt", " bundled from the knowledge index") : "";
       status.textContent = `${finalResults.length} ${resultWord}${groupNote}${label}${rawNote}`;
       if (!finalResults.length) {
-        resultsList.innerHTML = `<li class="search-result-card"><h2>Keine Treffer gefunden</h2><p>Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.</p></li>`;
+        resultsList.innerHTML = `<li class="search-result-card"><h2>${i18n("Keine Treffer gefunden", "No results found")}</h2><p>${i18n("Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.", "Try a simpler term, an abbreviation or a related entry point such as impact, tax, SDG, democracy or reporting.")}</p></li>`;
       }
       updateUrl(rawQuery);
       queueSearchHistory(rawQuery, finalResults, totalResults);
@@ -1098,7 +1101,7 @@
     const scored = [];
     let cursor = 0;
 
-    status.textContent = "Suche läuft ...";
+    status.textContent = i18n("Suche läuft ...", "Searching ...");
 
     const finishSearch = () => {
       if (runId !== state.searchRun) return;
@@ -1115,13 +1118,13 @@
       renderSuggestions(rawQuery, tokens);
       renderResults(matchingResults, rawQuery, tokens);
 
-      const label = rawQuery ? ` für „${rawQuery}“` : "";
-      const resultWord = finalResults.length === 1 ? "kuratierter Treffer" : "kuratierte Treffer";
-      const groupNote = groupedResults.length ? ` in ${groupedResults.length} Wissensbereichen` : "";
-      const rawNote = totalResults > finalResults.length ? " aus dem Wissensindex gebündelt" : "";
+      const label = rawQuery ? i18n(` für „${rawQuery}“`, ` for "${rawQuery}"`) : "";
+      const resultWord = finalResults.length === 1 ? i18n("kuratierter Treffer", "curated result") : i18n("kuratierte Treffer", "curated results");
+      const groupNote = groupedResults.length ? i18n(` in ${groupedResults.length} Wissensbereichen`, ` in ${groupedResults.length} knowledge areas`) : "";
+      const rawNote = totalResults > finalResults.length ? i18n(" aus dem Wissensindex gebündelt", " bundled from the knowledge index") : "";
       status.textContent = `${finalResults.length} ${resultWord}${groupNote}${label}${rawNote}`;
       if (!finalResults.length) {
-        resultsList.innerHTML = `<li class="search-result-card"><h2>Keine Treffer gefunden</h2><p>Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.</p></li>`;
+        resultsList.innerHTML = `<li class="search-result-card"><h2>${i18n("Keine Treffer gefunden", "No results found")}</h2><p>${i18n("Versuche einen einfacheren Begriff, eine Abkürzung oder einen verwandten Einstieg wie Wirkung, Steuer, SDG, Demokratie oder Reporting.", "Try a simpler term, an abbreviation or a related entry point such as impact, tax, SDG, democracy or reporting.")}</p></li>`;
       }
       updateUrl(rawQuery);
       queueSearchHistory(rawQuery, finalResults, totalResults);
@@ -1198,12 +1201,12 @@
     filtersDetails?.addEventListener("toggle", () => {
       const summary = filtersDetails.querySelector("summary");
       if (summary) {
-        summary.textContent = filtersDetails.open ? "Erweiterte Filter ausblenden" : "Erweiterte Filter anzeigen";
+        summary.textContent = filtersDetails.open ? i18n("Erweiterte Filter ausblenden", "Hide advanced filters") : i18n("Erweiterte Filter anzeigen", "Show advanced filters");
       }
     });
     if (filtersDetails instanceof HTMLDetailsElement && filtersDetails.open) {
       const summary = filtersDetails.querySelector("summary");
-      if (summary) summary.textContent = "Erweiterte Filter ausblenden";
+      if (summary) summary.textContent = i18n("Erweiterte Filter ausblenden", "Hide advanced filters");
     }
     quickFilterButtons.forEach((button) => {
       button.addEventListener("click", () => {
@@ -1261,7 +1264,7 @@
       state.ready = true;
       runSearch();
     } catch (error) {
-      status.textContent = "Die Suche konnte nicht geladen werden.";
+      status.textContent = i18n("Die Suche konnte nicht geladen werden.", "Search could not be loaded.");
     }
   }
 

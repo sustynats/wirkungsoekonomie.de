@@ -147,9 +147,9 @@ const html = `<!doctype html>
         <span class="brand-name">Wirkungsökonomie</span>
       </a>
       <nav class="site-utility-nav" aria-label="Quick links" data-search-exclude>
-        <a class="site-utility-link site-utility-link--suche" href="./" data-nav-match="en/tools/" data-utility-label="Search">Search</a>
-        <a class="site-utility-link site-utility-link--woek-ki" href="../#tools" data-nav-match="en/" data-utility-label="WÖk AI">AI</a>
-        <a class="site-utility-link site-utility-link--wok-app" href="../#tools" data-nav-match="en/" data-utility-label="WÖk App">WÖk App</a>
+        <a class="site-utility-link site-utility-link--suche" href="../search/" data-nav-match="en/search/" data-utility-label="Search">Search</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../woek-ai/" data-nav-match="en/woek-ai/" data-utility-label="WÖk AI">AI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../app/" data-nav-match="en/app/" data-utility-label="WÖk App">WÖk App</a>
         <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../my-impact-space/" data-nav-match="en/my-impact-space/" data-utility-label="My Impact Space" data-utility-primary="true">My Impact Space</a>
         <a class="site-utility-link site-utility-link--language" href="../../werkzeuge/" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>
       </nav>

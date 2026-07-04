@@ -157,7 +157,7 @@ if (navToggle && siteNav) {
 
 if (siteNav && !document.querySelector(".site-search-shortcut") && !Array.from(document.querySelectorAll(".site-header a")).some((link) => /suche\.html/.test(link.getAttribute("href") || ""))) {
   const searchLink = document.createElement("a");
-  searchLink.href = siteLocale === "en" ? relativeSiteUrl("en/#tools") : relativeSiteUrl("suche.html");
+  searchLink.href = siteLocale === "en" ? relativeSiteUrl("en/search/") : relativeSiteUrl("suche.html");
   searchLink.className = "site-search-shortcut";
   searchLink.textContent = siteLocale === "en" ? "Search" : "Suche";
   searchLink.setAttribute("aria-label", siteLocale === "en" ? "Open search section" : "Website-Suche öffnen");
@@ -4077,7 +4077,7 @@ const WoekUserSpace = (() => {
       if (!validation.ok) return { ok: false, error: validation.error };
       return { ok: true, package: packageData };
     } catch {
-      return { ok: false, error: "Der Wiederherstellungslink kann nicht gelesen werden." };
+      return { ok: false, error: i18n("Der Wiederherstellungslink kann nicht gelesen werden.", "The restore link cannot be read.") };
     }
   }
 
@@ -4868,10 +4868,10 @@ const WirkungsraumLayer = (() => {
   }
 
   const learningStatuses = {
-    offen: "offen",
-    in_arbeit: "in Arbeit",
-    verstanden: "verstanden",
-    wiederholen: "wiederholen"
+    offen: i18n("offen", "open"),
+    in_arbeit: i18n("in Arbeit", "in progress"),
+    verstanden: i18n("verstanden", "understood"),
+    wiederholen: i18n("wiederholen", "repeat")
   };
 
   const learningStatusScores = {
@@ -4882,13 +4882,13 @@ const WirkungsraumLayer = (() => {
   };
 
   const academyParts = [
-    { id: "teil-1", label: "Teil I", title: "Grundverständnis", href: "/akademie.html#studienstruktur", keywords: ["teil 1", "teil i", "g1.", "zp1", "grundverständnis", "grundverstaendnis"] },
-    { id: "teil-2", label: "Teil II", title: "Wirkungskompetenz", href: "/akademie.html#studienstruktur", keywords: ["teil 2", "teil ii", "g2.", "zp2", "wirkungskompetenz"] },
-    { id: "teil-3", label: "Teil III", title: "Maßstab und Bewertung", href: "/akademie.html#studienstruktur", keywords: ["teil 3", "teil iii", "g3.", "zp3", "maßstab", "massstab", "bewertung"] },
-    { id: "teil-4", label: "Teil IV", title: "Steuerung und Rückkopplung", href: "/akademie.html#studienstruktur", keywords: ["teil 4", "teil iv", "g4.", "zp4", "steuerung", "rückkopplung", "rueckkopplung"] },
-    { id: "teil-5", label: "Teil V", title: "Anwendung", href: "/akademie.html#studienstruktur", keywords: ["teil 5", "teil v", "g5.", "zp5", "anwendung"] },
-    { id: "teil-6", label: "Teil VI", title: "Transformation und Systemdesign", href: "/akademie.html#studienstruktur", keywords: ["teil 6", "teil vi", "g6.", "zp6", "transformation", "systemdesign"] },
-    { id: "teil-7", label: "Teil VII", title: "Praxisprojekt und Abschluss", href: "/akademie.html#studienstruktur", keywords: ["teil 7", "teil vii", "g7.", "zp7", "praxisprojekt", "abschluss"] }
+    { id: "teil-1", label: i18n("Teil I", "Part I"), title: i18n("Grundverständnis", "Basic understanding"), href: "/akademie.html#studienstruktur", keywords: ["teil 1", "teil i", "g1.", "zp1", "grundverständnis", "grundverstaendnis"] },
+    { id: "teil-2", label: i18n("Teil II", "Part II"), title: i18n("Wirkungskompetenz", "Impact competence"), href: "/akademie.html#studienstruktur", keywords: ["teil 2", "teil ii", "g2.", "zp2", "wirkungskompetenz"] },
+    { id: "teil-3", label: i18n("Teil III", "Part III"), title: i18n("Maßstab und Bewertung", "Reference frame and assessment"), href: "/akademie.html#studienstruktur", keywords: ["teil 3", "teil iii", "g3.", "zp3", "maßstab", "massstab", "bewertung"] },
+    { id: "teil-4", label: i18n("Teil IV", "Part IV"), title: i18n("Steuerung und Rückkopplung", "Governance and feedback"), href: "/akademie.html#studienstruktur", keywords: ["teil 4", "teil iv", "g4.", "zp4", "steuerung", "rückkopplung", "rueckkopplung"] },
+    { id: "teil-5", label: i18n("Teil V", "Part V"), title: i18n("Anwendung", "Application"), href: "/akademie.html#studienstruktur", keywords: ["teil 5", "teil v", "g5.", "zp5", "anwendung"] },
+    { id: "teil-6", label: i18n("Teil VI", "Part VI"), title: i18n("Transformation und Systemdesign", "Transformation and system design"), href: "/akademie.html#studienstruktur", keywords: ["teil 6", "teil vi", "g6.", "zp6", "transformation", "systemdesign"] },
+    { id: "teil-7", label: i18n("Teil VII", "Part VII"), title: i18n("Praxisprojekt und Abschluss", "Practice project and completion"), href: "/akademie.html#studienstruktur", keywords: ["teil 7", "teil vii", "g7.", "zp7", "praxisprojekt", "abschluss"] }
   ];
 
   function normalizeLearningStatus(status) {
@@ -5713,7 +5713,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function searchReplayUrl(item) {
-    const url = new URL(i18nPath("/suche.html", "/en/#tools"), window.location.origin);
+    const url = new URL(i18nPath("/suche.html", "/en/search/"), window.location.origin);
     if (item.query) url.searchParams.set("q", item.query);
     Object.entries(item.filters || {}).forEach(([key, value]) => {
       if (!value) return;
@@ -5811,7 +5811,7 @@ const WirkungsraumLayer = (() => {
       items.slice(0, 80),
       "searched_at",
       searchHistoryCard,
-      `<p class="card-text">${i18n("Noch keine Suchanfragen gespeichert. Nutze die Suche, dann erscheinen Anfragen und ihre Treffer hier.", "No search queries saved yet. Use search and your queries and results will appear here.")}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="${i18nPath("/suche.html", "/en/#tools")}">${i18n("Suche öffnen", "Open search")}</a></p>`,
+      `<p class="card-text">${i18n("Noch keine Suchanfragen gespeichert. Nutze die Suche, dann erscheinen Anfragen und ihre Treffer hier.", "No search queries saved yet. Use search and your queries and results will appear here.")}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="${i18nPath("/suche.html", "/en/search/")}">${i18n("Suche öffnen", "Open search")}</a></p>`,
       { dashboard: true }
     );
     const stat = root.querySelector("[data-stat-search-history]");
@@ -5926,13 +5926,13 @@ const WirkungsraumLayer = (() => {
 
   function recoverySummary(packageData) {
     const parts = [
-      `${countObjectEntries(packageData.saved_items)} gemerkte Inhalte`,
-      `${countObjectEntries(packageData.reading_progress)} Lesestände`,
-      `${countObjectEntries(packageData.collections)} Sammlungen`,
-      `${countObjectEntries(packageData.learning_items)} Lernlisteneinträge`
+      `${countObjectEntries(packageData.saved_items)} ${i18n("gemerkte Inhalte", "saved items")}`,
+      `${countObjectEntries(packageData.reading_progress)} ${i18n("Lesestände", "reading states")}`,
+      `${countObjectEntries(packageData.collections)} ${i18n("Sammlungen", "collections")}`,
+      `${countObjectEntries(packageData.learning_items)} ${i18n("Lernlisteneinträge", "learning-list entries")}`
     ];
-    parts.push(packageData.includes_notes ? `${countObjectEntries(packageData.notes)} Notizen` : "ohne persönliche Notizen");
-    if (packageData.expires_at) parts.push(`gültig bis ${new Date(packageData.expires_at).toLocaleDateString("de-DE")}`);
+    parts.push(packageData.includes_notes ? `${countObjectEntries(packageData.notes)} ${i18n("Notizen", "notes")}` : i18n("ohne persönliche Notizen", "without personal notes"));
+    if (packageData.expires_at) parts.push(`${i18n("gültig bis", "valid until")} ${new Date(packageData.expires_at).toLocaleDateString(siteLocale === "en" ? "en-US" : "de-DE")}`);
     else parts.push("ohne Ablaufdatum");
     return parts.join(" · ");
   }
@@ -6008,14 +6008,14 @@ const WirkungsraumLayer = (() => {
       panel.hidden = false;
       panel.scrollIntoView({ block: "center", behavior: "smooth" });
     }
-    dataStatus(root, "Privater Wiederherstellungslink erkannt. Es wurde noch nichts übernommen.", "success");
+    dataStatus(root, i18n("Privater Wiederherstellungslink erkannt. Es wurde noch nichts übernommen.", "Private restore link detected. Nothing has been imported yet."), "success");
   }
 
   function handleRecoveryHash(root) {
     const decoded = WoekUserSpace.recoveryPackageFromHash(window.location.hash);
     if (!decoded) return;
     if (!decoded.ok) {
-      dataStatus(root, decoded.error || "Der Wiederherstellungslink kann nicht gelesen werden.", "error");
+      dataStatus(root, decoded.error || i18n("Der Wiederherstellungslink kann nicht gelesen werden.", "The restore link cannot be read."), "error");
       cleanRecoveryHash();
       return;
     }
@@ -6201,85 +6201,85 @@ const WirkungsraumLayer = (() => {
 
     if (activeReading) {
       steps.push({
-        kicker: "Weiterlesen",
-        title: activeReading.title || "Zuletzt gelesenen Inhalt fortsetzen",
-        text: "Dort weitermachen, wo du zuletzt aufgehört hast.",
+        kicker: i18n("Weiterlesen", "Continue reading"),
+        title: activeReading.title || i18n("Zuletzt gelesenen Inhalt fortsetzen", "Continue the last item you read"),
+        text: i18n("Dort weitermachen, wo du zuletzt aufgehört hast.", "Pick up where you left off."),
         href: continueUrl(activeReading.url),
-        label: "Weiterlesen",
+        label: i18n("Weiterlesen", "Continue"),
         primary: true
       });
     } else {
       steps.push({
-        kicker: "Start",
-        title: "Einen Grundlagentext beginnen",
-        text: "Ein Referenzkapitel oder Dokument öffnen und den Lesefortschritt starten.",
-        href: "/referenz/",
-        label: "Referenz öffnen",
+        kicker: i18n("Start", "Start"),
+        title: i18n("Einen Grundlagentext beginnen", "Start a foundation text"),
+        text: i18n("Ein Referenzkapitel oder Dokument öffnen und den Lesefortschritt starten.", "Open a reference chapter or document and start reading progress."),
+        href: i18nPath("/referenz/", "/en/library/"),
+        label: i18n("Referenz öffnen", "Open library"),
         primary: true
       });
     }
 
     if (saved.length) {
       steps.push({
-        kicker: "Anschlüsse",
-        title: "Verwandte Inhalte prüfen",
-        text: "Zu deinen gemerkten Themen passende Begriffe, Werkzeuge, Dokumente und Debatten ansehen.",
+        kicker: i18n("Anschlüsse", "Connections"),
+        title: i18n("Verwandte Inhalte prüfen", "Review related content"),
+        text: i18n("Zu deinen gemerkten Themen passende Begriffe, Werkzeuge, Dokumente und Debatten ansehen.", "Review terms, tools, documents and debates connected to your saved topics."),
         href: "#verwandte-inhalte",
-        label: "Verwandte öffnen"
+        label: i18n("Verwandte öffnen", "Open related content")
       });
     } else {
       steps.push({
-        kicker: "Merken",
-        title: "Erste Inhalte speichern",
-        text: "Suche einen Begriff, ein Kapitel, ein Werkzeug oder eine Debattenkarte und lege sie in deinem Wirkungsraum ab.",
-        href: "/suche.html",
-        label: "Suche öffnen"
+        kicker: i18n("Merken", "Save"),
+        title: i18n("Erste Inhalte speichern", "Save your first items"),
+        text: i18n("Suche einen Begriff, ein Kapitel, ein Werkzeug oder eine Debattenkarte und lege sie in deinem Wirkungsraum ab.", "Search for a term, chapter, tool or debate card and save it in your Impact Space."),
+        href: i18nPath("/suche.html", "/en/search/"),
+        label: i18n("Suche öffnen", "Open search")
       });
     }
 
     if (saved.length && !currentCollections.length) {
       steps.push({
-        kicker: "Sammeln",
-        title: "Eine Sammlung anlegen",
-        text: "Gemerkte Inhalte thematisch bündeln, damit sie später leichter wiederzufinden sind.",
+        kicker: i18n("Sammeln", "Collect"),
+        title: i18n("Eine Sammlung anlegen", "Create a collection"),
+        text: i18n("Gemerkte Inhalte thematisch bündeln, damit sie später leichter wiederzufinden sind.", "Group saved items by topic so they are easier to find later."),
         href: "#sammlungen",
-        label: "Sammlungen öffnen"
+        label: i18n("Sammlungen öffnen", "Open collections")
       });
     } else if (currentCollections.length) {
       steps.push({
-        kicker: "Sammeln",
-        title: "Sammlungen prüfen",
-        text: "Bestehende Materialbündel öffnen, ergänzen oder bereinigen.",
+        kicker: i18n("Sammeln", "Collect"),
+        title: i18n("Sammlungen prüfen", "Review collections"),
+        text: i18n("Bestehende Materialbündel öffnen, ergänzen oder bereinigen.", "Open, extend or clean up existing bundles of material."),
         href: "#sammlungen",
-        label: "Sammlungen öffnen"
+        label: i18n("Sammlungen öffnen", "Open collections")
       });
     }
 
     if (activeLearning) {
       steps.push({
-        kicker: "Lernen",
-        title: activeLearning.title || "Lernliste fortsetzen",
-        text: "Den nächsten offenen Lerninhalt bearbeiten oder seinen Status aktualisieren.",
+        kicker: i18n("Lernen", "Learning"),
+        title: activeLearning.title || i18n("Lernliste fortsetzen", "Continue learning list"),
+        text: i18n("Den nächsten offenen Lerninhalt bearbeiten oder seinen Status aktualisieren.", "Work on the next open learning item or update its status."),
         href: activeLearning.url || "#lernliste",
-        label: "Weiterlernen"
+        label: i18n("Weiterlernen", "Continue learning")
       });
     } else {
       steps.push({
-        kicker: "Lernen",
-        title: "Akademie-Lernpfad aufnehmen",
-        text: "Ein Modul zur Lernliste hinzufügen und den eigenen Fortschritt sichtbar machen.",
+        kicker: i18n("Lernen", "Learning"),
+        title: i18n("Akademie-Lernpfad aufnehmen", "Add an academy learning path"),
+        text: i18n("Ein Modul zur Lernliste hinzufügen und den eigenen Fortschritt sichtbar machen.", "Add a module to the learning list and make your progress visible."),
         href: "#akademie-fortschritt",
-        label: "Akademie öffnen"
+        label: i18n("Akademie öffnen", "Open academy")
       });
     }
 
     if ((saved.length || reading.length || learning.length) && !currentNotes.length) {
       steps.push({
-        kicker: "Notizen",
-        title: "Eine eigene Notiz ergänzen",
-        text: "Auf einer Inhaltsseite festhalten, was du dir merken oder prüfen willst.",
+        kicker: i18n("Notizen", "Notes"),
+        title: i18n("Eine eigene Notiz ergänzen", "Add a personal note"),
+        text: i18n("Auf einer Inhaltsseite festhalten, was du dir merken oder prüfen willst.", "Capture what you want to remember or check on a content page."),
         href: (activeReading || saved[0] || learning[0])?.url || "#notizen",
-        label: "Inhalt öffnen"
+        label: i18n("Inhalt öffnen", "Open content")
       });
     }
 
@@ -6329,7 +6329,7 @@ const WirkungsraumLayer = (() => {
     const filterKey = activeSavedFilter(root);
     const filtered = saved.filter((item) => matchesSavedFilter(item, filterKey) && (!query || savedSearchText(item).includes(query)));
 
-    renderList(savedList, filtered, "Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „⭐ Merken“.", { removable: true });
+    renderList(savedList, filtered, i18n("Noch nichts gemerkt. Auf Inhaltsseiten erscheint automatisch „⭐ Merken“.", "Nothing saved yet. Content pages automatically show “☆ Save”."), { removable: true });
     const statSaved = root.querySelector("[data-stat-saved]");
     if (statSaved) statSaved.textContent = String(saved.length);
     const statVisible = root.querySelector("[data-stat-visible]");
@@ -6377,23 +6377,23 @@ const WirkungsraumLayer = (() => {
     if (!container) return;
     const saved = savedItems();
     if (!saved.length) {
-      renderRelatedKnowledgeList(container, [], "Merke zuerst Begriffe, Kapitel, Dokumente, Werkzeuge oder Debatten. Danach zeigt dir das Wissensnetz passende Anschlüsse.");
+      renderRelatedKnowledgeList(container, [], i18n("Merke zuerst Begriffe, Kapitel, Dokumente, Werkzeuge oder Debatten. Danach zeigt dir das Wissensnetz passende Anschlüsse.", "First save terms, chapters, documents, tools or debates. The knowledge network will then show matching connections."));
       root.dataset.knowledgeGraphNodes = "0";
       root.dataset.knowledgeGraphEdges = "0";
       return;
     }
     const run = ++relatedRenderRun;
-    container.innerHTML = `<article class="card"><p class="card-text">Wissensnetz wird aus deinen gemerkten Inhalten aufgebaut.</p></article>`;
+    container.innerHTML = `<article class="card"><p class="card-text">${i18n("Wissensnetz wird aus deinen gemerkten Inhalten aufgebaut.", "The knowledge network is built from your saved items.")}</p></article>`;
     relatedKnowledgeForSaved(saved)
       .then(({ graph, related }) => {
         if (run !== relatedRenderRun) return;
         root.dataset.knowledgeGraphNodes = String(graph.nodes.length);
         root.dataset.knowledgeGraphEdges = String(graph.edges.length);
-        renderRelatedKnowledgeList(container, related, "Noch keine belastbaren Verknüpfungen gefunden. Merke weitere Inhalte aus Glossar, Referenz, Werkzeugen oder Debatten.");
+        renderRelatedKnowledgeList(container, related, i18n("Noch keine belastbaren Verknüpfungen gefunden. Merke weitere Inhalte aus Glossar, Referenz, Werkzeugen oder Debatten.", "No robust connections found yet. Save more items from the glossary, reference, tools or debates."));
       })
       .catch(() => {
         if (run !== relatedRenderRun) return;
-        renderRelatedKnowledgeList(container, [], "Das Wissensnetz konnte gerade nicht geladen werden. Deine gemerkten Inhalte bleiben unverändert lokal gespeichert.");
+        renderRelatedKnowledgeList(container, [], i18n("Das Wissensnetz konnte gerade nicht geladen werden. Deine gemerkten Inhalte bleiben unverändert lokal gespeichert.", "The knowledge network could not be loaded right now. Your saved items remain stored locally."));
       });
   }
 
@@ -6469,13 +6469,13 @@ const WirkungsraumLayer = (() => {
     });
     readingProgressItems().slice(0, 28).forEach((item) => {
       const progressBoost = Math.min(20, normalizedProgress(item.progress) / 5);
-      addCrossSellSource(sources, item, "Lesestand", crossSellSignalWeight(84 + progressBoost, 1, item.last_read_at || item.updated_at));
+      addCrossSellSource(sources, item, i18n("Lesestand", "Reading progress"), crossSellSignalWeight(84 + progressBoost, 1, item.last_read_at || item.updated_at));
     });
     visitHistoryItems().slice(0, 48).forEach((item) => {
-      addCrossSellSource(sources, item, "Historie", crossSellSignalWeight(62, item.visit_count, item.visited_at || item.updated_at));
+      addCrossSellSource(sources, item, i18n("Historie", "History"), crossSellSignalWeight(62, item.visit_count, item.visited_at || item.updated_at));
     });
     learningItems().slice(0, 24).forEach((item) => {
-      addCrossSellSource(sources, item, "Lernliste", crossSellSignalWeight(92, 1, item.updated_at || item.added_at));
+      addCrossSellSource(sources, item, i18n("Lernliste", "Learning list"), crossSellSignalWeight(92, 1, item.updated_at || item.added_at));
     });
     notes().slice(0, 20).forEach((note) => {
       addCrossSellSource(
@@ -6483,32 +6483,32 @@ const WirkungsraumLayer = (() => {
         {
           title: note.target_title,
           url: note.target_url,
-          type: note.target_type || "Notiz",
+          type: note.target_type || i18n("Notiz", "Note"),
           category: note.target_category,
           tags: note.tags,
           description: note.content
         },
-        "Notiz",
+        i18n("Notiz", "Note"),
         crossSellSignalWeight(66, 1, note.updated_at || note.created_at)
       );
     });
     searchHistoryItems().slice(0, 18).forEach((item) => {
-      const query = item.query || "Gefilterte Suche";
+      const query = item.query || i18n("Gefilterte Suche", "Filtered search");
       addCrossSellSource(
         sources,
         {
-          title: `Suche: ${query}`,
-          type: "Suche",
-          category: "Suchanfrage",
+          title: `${i18n("Suche", "Search")}: ${query}`,
+          type: i18n("Suche", "Search"),
+          category: i18n("Suchanfrage", "Search query"),
           tags: Object.values(item.filters || {}),
           description: [
             query,
             ...(item.results || []).slice(0, 6).map((result) => `${result.title || ""} ${result.excerpt || result.description || ""}`)
           ].join(" ")
         },
-        "Suchanfrage",
+        i18n("Suchanfrage", "Search query"),
         crossSellSignalWeight(82, item.search_count, item.searched_at),
-        { sourceTitle: query, type: "Suche" }
+        { sourceTitle: query, type: i18n("Suche", "Search") }
       );
     });
     aiQueryHistoryItems().slice(0, 18).forEach((item) => {
@@ -6517,11 +6517,11 @@ const WirkungsraumLayer = (() => {
         {
           title: item.question,
           type: "WÖk-KI",
-          category: "KI-Anfrage",
+          category: i18n("KI-Anfrage", "AI question"),
           tags: item.sources?.map((source) => source.type || source.title),
           description: [item.answer, ...(item.sources || []).slice(0, 5).map((source) => `${source.title || ""} ${source.excerpt || source.description || ""}`)].join(" ")
         },
-        "KI-Anfrage",
+        i18n("KI-Anfrage", "AI question"),
         crossSellSignalWeight(82, item.ask_count, item.asked_at),
         { sourceTitle: item.question, type: "WÖk-KI" }
       );
@@ -6531,12 +6531,12 @@ const WirkungsraumLayer = (() => {
         sources,
         {
           title: collection.title,
-          type: "Sammlung",
-          category: "Sammlung",
+          type: i18n("Sammlung", "Collection"),
+          category: i18n("Sammlung", "Collection"),
           description: collection.description,
           tags: collection.item_ids
         },
-        "Sammlung",
+        i18n("Sammlung", "Collection"),
         crossSellSignalWeight(58, collection.item_ids?.length || 1, collection.updated_at)
       );
     });
@@ -6729,7 +6729,7 @@ const WirkungsraumLayer = (() => {
     if (!items.length) {
       const empty = document.createElement("article");
       empty.className = "card";
-      empty.innerHTML = `<p class="card-text">${i18n("Noch keine Empfehlungen. Besuche, suche, frage oder merke ein paar Inhalte, dann entsteht hier ein persönlicher Anschlussfinder.", "No recommendations yet. Visit, search, ask or save a few pieces of content and a personal connection finder will emerge here.")}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="${i18nPath("/suche.html", "/en/#tools")}">${i18n("Suche öffnen", "Open search")}</a></p>`;
+      empty.innerHTML = `<p class="card-text">${i18n("Noch keine Empfehlungen. Besuche, suche, frage oder merke ein paar Inhalte, dann entsteht hier ein persönlicher Anschlussfinder.", "No recommendations yet. Visit, search, ask or save a few pieces of content and a personal connection finder will emerge here.")}</p><p class="wirkungsraum-item-actions"><a class="btn btn-secondary" href="${i18nPath("/suche.html", "/en/search/")}">${i18n("Suche öffnen", "Open search")}</a></p>`;
       container.append(empty);
       return;
     }
@@ -6870,7 +6870,7 @@ const WirkungsraumLayer = (() => {
       title: `${part.label}: ${part.title}`,
       url: part.href,
       category: i18n("Akademie-Grundstudium", "Academy foundation course"),
-      tags: ["Akademie", "Lernpfad", part.label],
+      tags: [i18n("Akademie", "Academy"), i18n("Lernpfad", "Learning path"), part.label],
       learning_status: "offen",
       part_id: part.id,
       part_label: part.label,
@@ -6913,10 +6913,10 @@ const WirkungsraumLayer = (() => {
             <div>
               <p class="card-kicker">${escapeHtml(part.label)}</p>
               <h3 class="card-title">${escapeHtml(part.title)}</h3>
-              <p class="wirkungsraum-meta">${partLearning.length} Lerninhalt${partLearning.length === 1 ? "" : "e"} · ${progress}%</p>
+              <p class="wirkungsraum-meta">${partLearning.length} ${partLearning.length === 1 ? i18n("Lerninhalt", "learning item") : i18n("Lerninhalte", "learning items")} · ${progress}%</p>
             </div>
-            <p class="wirkungsraum-progress" aria-label="${escapeAttribute(part.label)} Fortschritt ${progress}%"><span style="width:${Math.max(3, progress)}%"></span></p>
-            <p class="wirkungsraum-part-meta">verstanden: ${understood} · in Arbeit: ${inWork} · wiederholen: ${repeat}</p>
+            <p class="wirkungsraum-progress" aria-label="${escapeAttribute(i18n(`${part.label} Fortschritt ${progress}%`, `${part.label} progress ${progress}%`))}"><span style="width:${Math.max(3, progress)}%"></span></p>
+            <p class="wirkungsraum-part-meta">${i18n("verstanden", "understood")}: ${understood} · ${i18n("in Arbeit", "in progress")}: ${inWork} · ${i18n("wiederholen", "repeat")}: ${repeat}</p>
           </article>
         `)
         .join("");
@@ -6939,8 +6939,8 @@ const WirkungsraumLayer = (() => {
         modulesById.set(key, existing ? { ...existing, ...item, progress: Math.max(normalizedProgress(existing.progress), normalizedProgress(item.progress)) } : item);
       });
       const academyModules = [...modulesById.values()].sort((a, b) => new Date(b.last_read_at || b.updated_at || b.added_at || 0) - new Date(a.last_read_at || a.updated_at || a.added_at || 0));
-      renderList(moduleList, academyModules.slice(0, 6), "Noch kein Akademie-Lesefortschritt. Öffne Akademie-Seiten oder füge Teile zur Lernliste hinzu.", {
-        readLabel: "Weiterlernen",
+      renderList(moduleList, academyModules.slice(0, 6), i18n("Noch kein Akademie-Lesefortschritt. Öffne Akademie-Seiten oder füge Teile zur Lernliste hinzu.", "No academy reading progress yet. Open academy pages or add parts to the learning list."), {
+        readLabel: i18n("Weiterlernen", "Continue learning"),
         showStatus: true,
         showLastRead: true,
         href: (item) => continueUrl(item.url)
@@ -6962,10 +6962,10 @@ const WirkungsraumLayer = (() => {
           <article class="card text-link-card">
             <p class="card-kicker">${escapeHtml(part.label)} · ${progress}%</p>
             <h3 class="card-title">${escapeHtml(part.title)}</h3>
-            <p class="card-text">Nächster sinnvoller Lernschritt im Grundstudium.</p>
+            <p class="card-text">${i18n("Nächster sinnvoller Lernschritt im Grundstudium.", "Next useful learning step in the foundation course.")}</p>
             <p class="wirkungsraum-item-actions">
-              <a class="btn btn-secondary" href="${escapeAttribute(part.href)}">Modul öffnen</a>
-              <button class="btn btn-primary" type="button" data-add-learning-suggestion="${escapeAttribute(part.id)}">${already ? "In Lernliste" : "Zur Lernliste hinzufügen"}</button>
+              <a class="btn btn-secondary" href="${escapeAttribute(part.href)}">${i18n("Modul öffnen", "Open module")}</a>
+              <button class="btn btn-primary" type="button" data-add-learning-suggestion="${escapeAttribute(part.id)}">${already ? i18n("In Lernliste", "In learning list") : i18n("Zur Lernliste hinzufügen", "Add to learning list")}</button>
             </p>
           </article>
         `;

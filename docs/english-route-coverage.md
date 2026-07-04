@@ -9,8 +9,8 @@ Every visible public German route needs an English counterpart below `/en/` with
 ## Summary
 
 - Public visible source routes: 4271
-- English routes already present: 7
-- English routes missing: 4264
+- English routes already present: 8
+- English routes missing: 4263
 
 ## Categories
 
@@ -29,7 +29,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | bibliothek | 42 | 1 | 41 |
 | api | 29 | 0 | 29 |
 | dokumente | 25 | 0 | 25 |
-| top-level | 22 | 0 | 22 |
+| top-level | 22 | 1 | 21 |
 | erleben | 21 | 0 | 21 |
 | wirkungssteuerung | 20 | 0 | 20 |
 | fuer | 18 | 0 | 18 |

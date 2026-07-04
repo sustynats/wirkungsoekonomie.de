@@ -1,0 +1,3343 @@
+{
+  "schemaVersion": "2026-07-english-asset-text-inventory",
+  "generatedAt": "2026-07-04",
+  "scope": "Static inventory for visible German text in website image assets. SVG text can usually be translated directly; raster images need manual/OCR review and English variants where embedded text exists.",
+  "summary": {
+    "totalImages": 272,
+    "svgEditableText": 4,
+    "rasterReviewNeeded": 137,
+    "noVisibleGermanTextDetected": 131
+  },
+  "assets": [
+    {
+      "file": "assets/img/app/pwa-screenshot-mobile.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/app/pwa-screenshot-wide.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-05-17-massstabskrise.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-05-17-massstabskrise.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wir-messen-das-falsche.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Systemgrafik: Gewinn, Wachstum und Reichweite gelten als Erfolg; die Wirkungsökonomie fragt nach Wirkung.",
+        "Systemgrafik zur Maßstabskrise: alte Ordnung misst Bewegung, neue Ordnung steuert Wirkung für Mensch, Planet und Demokratie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-19-spaltung-wirkungsraeume.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Symbolische Brücke zwischen gesellschaftlicher Spaltung und demokratischen Werten: Menschen begegnen sich zwischen dunklen Feindbildern und hellen Räumen für Vertrauen, Dialog und gemeinsame Wirklichkeit."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-19-wirkungspotenzial-fakten.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 3,
+      "usedBy": [
+        "blog.html",
+        "blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html",
+        "wirkungsradar/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Editoriale Wirkungsökonomie-Grafik: Fakten sind nicht gleich Wirkung, politische Narrative enthalten Wirkstoffe wie Angst, Kränkung, Zugehörigkeit, Empörung und Wiederholung.",
+        "Editoriale Wirkungsökonomie-Grafik: Fakten sind nicht gleich Wirkung, politische Narrative enthalten Resonanzfaktoren wie Angst, Kränkung, Zugehörigkeit, Empörung und Wiederholung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-21-wirkung-ist-nicht-wirkungsmanagement.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wegweiser zwischen Bewegung messen und Wirkung verändern: Fördergeld, Programme, Output und Berichte stehen einer systemischen Wirkungsarchitektur gegenüber."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-22-demokratischer-wirkungsrahmen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/wirkungsoekonomie-kein-parteiprogramm.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Infografik zur Wirkungsökonomie als demokratisch anschlussfähigem Ordnungsrahmen mit Parteienperspektiven, SDGs, SDG+ und einem gemeinsamen Wirkungskompass."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-23-was-ist-nachhaltigkeit-wirklich.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/was-ist-nachhaltigkeit-wirklich.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Titelbild zum Beitrag Was ist Nachhaltigkeit wirklich mit Haus, Solardach, Stadt, Windrädern und Familie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-27-social-taxonomy.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Social Taxonomy: Netzwerk sozialer Wirkungsfelder rund um Finanzen, Wirkung und Nachhaltigkeit in Europa."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-27-wirkungsschule.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wirkungsschule: Jugendliche arbeiten mit einer Lehrerin an einem Zukunftsprojekt, mit Symbolen für Ich, Wir, Welt und Demokratie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-28-co2-preis-warum-wir-ihn-ohnehin-zahlen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Infografik zum CO₂-Preis: Ohne CO₂-Preis bleiben Klimaschäden unsichtbar; mit CO₂-Preis werden Kosten, Anreize und langfristige Einsparungen sichtbar."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-28-warum-billig-oft-teuer-ist-apfel.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 3,
+      "usedBy": [
+        "blog.html",
+        "blog/warum-billig-oft-teuer-ist.html",
+        "styleguide.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wertschöpfungskette Apfel: positive Wirkung und negative Wirkung im Vergleich mit Wirkungsscore und steuerlicher Behandlung.",
+        "Apfel als Beispielbild für Kostenwahrheit"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-05-28-warum-billig-oft-teuer-ist-tshirt.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/warum-billig-oft-teuer-ist.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wertschöpfungskette T-Shirt: positive Wirkung und negative Wirkung im Vergleich mit Wirkungsscore und steuerlicher Behandlung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-01-strom-vom-nachbarn-energiegenossenschaften.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Infografik zu Energiegenossenschaften, Energy Sharing und Strom vom Nachbarn.",
+        "Infografik zu Energiegenossenschaften: gemeinschaftliche Erzeugung, Teilen und Handeln von erneuerbarem Strom, lokale Nutzung, Reststrom und Vorteile für Klima, Region und Gemeinschaft."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-02-sprache-spaltet-oder-verbindet.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/sprache-als-politischer-wirkstoff-rechte-narrative.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Geteiltes Titelbild: links eskalierende politische Schlagworte, rechts demokratische Gesprächssituationen mit Zuhören, Verstehen und Lösungen finden."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-06-oeffentlicher-wirkungsraum-kompass.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-06-07-wellen-tiefen-modell-oeffentliche-kommunikation.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/wellen-tiefen-modell-oeffentliche-kommunikation.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wellen auf einer Wasseroberfläche als Modell für Aufmerksamkeit, Emotion, Deutung, Resonanz und Verschiebung im öffentlichen Wirkungsraum."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-08-der-versoehner-und-die-wellen.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-06-08-kognitive-dissonanz-als-wirkungsbremse.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-06-09-meinungsfreiheit-ist-keine-folgenfreiheit.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-06-09-nicht-billiger-werden-besser-werden.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-06-10-partei-der-verwundbarkeit-afd-programm.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-06-10-schoepferisch-zerstoert-konservative-politik-systemresilienz.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-06-11-wirkungsfinanzpolitik-schulden-ohne-wirkung.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wirkungsfinanzpolitik als Waage: Wirkschulden stehen Schulden ohne Wirkung gegenüber.",
+        "Wirkungsfinanzpolitik als Waage: Wirkschulden mit Bildung, Klimaschutz und Infrastruktur stehen Schulden ohne Wirkung gegenüber."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-12-boden-kein-broetchen-wohnungsmarkt.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Boden ist kein Brötchen: geteilte Bildwelt mit Bäckerei, Stadtentwicklung, Bodenspekulation und wirkungsökonomischen Regeln für bezahlbares Wohnen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-12-geg-wirkungscheck-ioi-t-sroi.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/geg-wirkungscheck-ioi-t-sroi.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "GEG im Wirkungscheck: geteiltes Haus mit Wärmepumpe, erneuerbaren Energien, Gasheizung, fossilen Risiken sowie IOI- und T-SROI-Wirkungsbilanz."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-12-gemeinwohl-kompass-wirkungsoekonomie.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wirkung statt Kapital: ein Kompass richtet Wirtschaft an Mensch, Planet und Demokratie aus; links das alte Kapitalparadigma, rechts das Wirkungsparadigma."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-12-technologieoffenheit-wirkungsoffenheit-geg-verbrenner.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Technologieoffenheit oder Wirkungsoffenheit: geteilte Bildwelt mit fossilem Lock-in, Gasheizung, Verbrenner, erneuerbaren Energien, Elektroauto und Wärmepumpe."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-15-ki-souveraenitaet-fable-moment.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "KI-Souveränität statt Abhängigkeit: USA und Europa mit KI-Infrastruktur, blockiertem Datenfluss, globaler Wertschöpfung, Fragmentierung und regionalen Tech-Stacks."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-15-ki-texte-kennzeichnen-wirkung-verantwortung.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/ki-texte-kennzeichnen-wirkung-verantwortung.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "KI-Texte kennzeichnen: eine Waage zwischen Herkunft und Wirkung, Dokumente, KI-Figur, Inklusionssymbole und offene Wissensbücher."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-15-kollaps-zivilisation-systemresilienz-sdgplus.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Kollaps der Zivilisation: Deutschland zwischen Systemstress und Systemresilienz, mit Grundgesetz, Demokratie, Medienqualität, Transparenz, sozialem Zusammenhalt und ökologischer Stabilität."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-15-social-media-verbot-kinder-falscher-ansatz.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/social-media-verbot-kinder-falscher-ansatz.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Social-Media-Verbot für Kinder: Kinder nutzen kreative digitale Räume, daneben ein dunkler Strom aus Hass, Desinformation und Empörungsframes."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-15-wissensgesellschaft-wirkungsgesellschaft.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Von der Wissensgesellschaft zur Wirkungsgesellschaft: Daten, Analyse und Wissen werden über Rückkopplung in Handeln, Klimaschutz, Bildung, Gesundheit, Teilhabe und Kreislaufwirtschaft übersetzt."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-19-was-der-staat-wirklich-produziert.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Was der Staat wirklich produziert: visuelle Darstellung von Recht, Infrastruktur, Mensch, Planet, Demokratie, Wirkung, Rückkopplung, Vertrauen und Wohlstand."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-29-die-stille-neubewertung.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/die-stille-neubewertung.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Klimawandel, Finanzmarkt und Wirkungsökonomie: Versicherungsrisiken, Stranded Assets, Sustainable Finance, Wirkungskapital und eine vernetzte Neubewertung von Vermögen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-30-der-verbrenner-risikomanagement-finanzsystem.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Ein älterer Verbrenner auf einem Prüfstand vor Risikodashboards zu sinkendem Restwert, steigenden CO2-Kosten, Versicherungsrisiko, Refinanzierungsdruck und Stranded-Asset-Gefahr."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-06-30-stranded-germany-refinanzierungsresilienz.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/stranded-germany-afd-politik-refinanzierungsresilienz.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Ein deutscher Frachter verlässt einen sicheren Hafen in einen Sturm; Bundeswertpapiere, Renditekurven, Euro-Symbole und europäische Institutionen stehen für Refinanzierungsrisiken."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-02-wirkstoff-narrative-rechte-frames.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "bibliothek/index.html",
+        "blog/wirkstoff-narrative-rechte-frames-wirkungspotenzial.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Dunkles Titelbild zu Wirkstoff Narrative: rechte Frames werden als kommunikativer Wirkstoff wiederholt, verstärkt und können Vertrauen sowie Demokratie belasten."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-04-wirkungsinstitut-think-tank.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 4,
+      "usedBy": [
+        "bibliothek/index.html",
+        "blog.html",
+        "blog/warum-ich-das-wirkungsinstitut-gegruendet-habe.html",
+        "index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Titelbild des Wirkungsinstituts mit Kompass-Signet, europäischer Karte, institutioneller Architektur und vernetzten Wirkungspfaden."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/kostenwahrheit-eu-vorschriften-wirkungsoekonomie.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "blog.html",
+        "blog/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Infografik mit zwei Seiten: links scheinbar billige Produktion ohne Regeln mit Umwelt- und Gesundheitsfolgen, rechts geregelte Produktion mit Kostenwahrheit, Schadensvermeidung und fairen Anreizen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/book/cover.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/cover.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 4,
+      "usedBy": [
+        "buch.html",
+        "index.html",
+        "natalie-weber.html",
+        "styleguide.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/book/image1.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image10.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image11.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image12.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image13.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image14.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image15.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image16.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image17.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image18.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image19.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image2.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image20.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image21.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image22.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image23.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image24.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image3.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image4.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image5.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image6.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image7.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image8.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/book/image9.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/brand/app-icon-192.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/brand/app-icon-512.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/brand/apple-touch-icon.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/brand/favicon.svg",
+      "kind": "svg",
+      "status": "svg-editable-text",
+      "usageCount": 1,
+      "usedBy": [
+        "styleguide.html"
+      ],
+      "detectedSvgText": [
+        "Favicon der Wirkungsökonomie",
+        "Dunkles WÖk-Logo mit drei Kreisen und Kompassnadel."
+      ],
+      "germanAltOrTitle": [
+        "Favicon der Wirkungsökonomie"
+      ],
+      "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
+    },
+    {
+      "file": "assets/img/brand/logo-full.svg",
+      "kind": "svg",
+      "status": "svg-editable-text",
+      "usageCount": 1,
+      "usedBy": [
+        "styleguide.html"
+      ],
+      "detectedSvgText": [
+        "Logo der Wirkungsökonomie",
+        "Vollstaendiges WÖk-Logo mit Signet, Wortmarke und Claim.",
+        "WIRKUNGSÖKONOMIE",
+        "Für Mensch, Planet und Demokratie."
+      ],
+      "germanAltOrTitle": [
+        "Hauptlogo der Wirkungsökonomie"
+      ],
+      "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
+    },
+    {
+      "file": "assets/img/brand/logo-header.svg",
+      "kind": "svg",
+      "status": "svg-editable-text",
+      "usageCount": 1,
+      "usedBy": [
+        "styleguide.html"
+      ],
+      "detectedSvgText": [
+        "Header-Logo der Wirkungsökonomie",
+        "WÖk-Signet mit drei Kreisen, Kompass und Wortmarke Wirkungsökonomie.",
+        "WIRKUNGSÖKONOMIE"
+      ],
+      "germanAltOrTitle": [
+        "Header-Logo der Wirkungsökonomie"
+      ],
+      "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
+    },
+    {
+      "file": "assets/img/brand/signet.svg",
+      "kind": "svg",
+      "status": "svg-editable-text",
+      "usageCount": 143,
+      "usedBy": [
+        "akademie.html",
+        "akademie.html",
+        "anwendungen.html",
+        "anwendungen/scanner.html",
+        "app/index.html",
+        "begriffe/index.html",
+        "bibliothek/index.html",
+        "blog.html",
+        "blog/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.html",
+        "blog/co2-preis-warum-wir-ihn-ohnehin-zahlen.html",
+        "blog/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.html",
+        "blog/die-stille-neubewertung.html"
+      ],
+      "detectedSvgText": [
+        "Signet der Wirkungsökonomie",
+        "Drei verbundene Kreise und ein Kompass als Zeichen fuer wirkungsorientierte Orientierung."
+      ],
+      "germanAltOrTitle": [
+        "Wirkungsökonomie Logo",
+        "Signet der Wirkungsökonomie"
+      ],
+      "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
+    },
+    {
+      "file": "assets/img/brand/woek-logo-dc.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "styleguide.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Reduzierte Systemgrafik der Wirkungsökonomie"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/generated/hero-systemgrafik-wirkungsoekonomie.webp",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/generated/oeffentlicher-wirkungsraum-fuenf-wellen.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "oeffentlicher-wirkungsraum/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Infografik zum Wellen- und Tiefenmodell des öffentlichen Wirkungsraums: Aussage, Aufmerksamkeitswelle, Emotionswelle, Deutungswelle, Verschiebungswelle und darunterliegende Ursachenräume."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/generated/oeffentlicher-wirkungsraum-hero.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wellen auf einer Wasseroberfläche als Bild für Aussage, Wirkungspotenzial, Resonanzraum, Öffentlichkeit, Mensch, Planet und Demokratie."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/generated/sdg-sdgplus-referenzrahmen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "styleguide.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "SDG- und SDG+-Referenzrahmen als Systemgrafik"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/generated/sdg_sdgplus_referenzrahmen_hero_v0_1.png",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil-01-c3005217d3.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil-02-dd0b8850de.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-10-24-von-werten-zu-wirkung-01-c3af2dca39.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi-01-b7ce929474.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi-02-76299eb288.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-01-6a333d0d9d.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-02-ea31305aa0.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-03-422e0d068b.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-04-08374670f4.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-05-4c7ea5da20.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-06-22cfd298d9.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen-01-a49ec02809.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie-01-bfc4beb373.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie-02-93f9227d29.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2025-12-30-wie-die-wirkungsokonomie-funktioniert-01-8b75e50ce0.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert-01-f35049b496.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert-01-8060a44763.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells-01-499744d881.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms-01-bbdfb2fc96.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-01-29-was-ist-wirkungsokonomie-01-9a13ee503f.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt-01-439ab83647.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist-01-ab291ebf9d.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie-01-e43349cb6d.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf-01-fa62fd6f9b.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf-02-419626e3d8.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf-03-ee209b5c66.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-01-3d17153245.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-02-918c63e0db.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-03-3ead212fcf.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-04-34127f889a.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-05-a558e8e8ff.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-06-d180801fe9.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-07-eb495f89f8.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-08-c268f697aa.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-09-d83ee4faa6.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-10-2152a80e32.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-01-981b637f49.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-02-a5f463db04.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-03-7da03ca3e1.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-04-4a9a5d92a3.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-05-be05269fba.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-06-9da0d9969d.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei-01-a9c0e7554e.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-01-cff8d7ba68.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-02-b02f1ae932.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-03-892110886f.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-04-7c1f84b2eb.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-05-722c766576.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-06-3161b449ae.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-07-8cc2eeda00.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-08-a289280dcf.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-09-8c414a3a56.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-10-18a1e56717.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-11-012981ccbe.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-01-9022a24f56.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-02-5ec864fede.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-03-9d256ade5c.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-04-c775f65899.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-05-5b9bec0669.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-06-0fd73847cc.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-07-47e1fba3be.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-08-5f999a918f.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken-01-558b8f6863.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann-01-a91791dc65.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann-02-d55df3c412.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-01-23feeeafd7.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-02-3b71fb1b26.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-03-f3424bb701.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-04-bd5719007b.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-05-b3c7968f8e.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-06-d9ffe4272c.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a-01-a6de561968.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a-02-104bb150e5.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation-01-ae896e96ec.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-01-80848ceef5.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-02-d2ab1889ea.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-03-94697e8d67.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-04-4434b5343a.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-05-ea3d755f91.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-06-de06bf8318.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-07-375c365454.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-08-ac311d3439.jpg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil-01-c3005217d3.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wenn Mieten Wirkung zeigen - Wohnungsmarkt fair und stabil"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2025-10-24-von-werten-zu-wirkung-01-c3af2dca39.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Von Werten zu Wirkung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi-01-b7ce929474.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Warum Deutschland Wohlstand verschenkt - und das größte Wachstumspotenzial seiner Geschichte übersieht"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-01-6a333d0d9d.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Die Wirkungsökonomie - ein lernendes Kreislaufsystem zur Steuerung von Wirtschaft und Gesellschaft durch Wirkung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen-01-a49ec02809.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wirkungsökonomie: Wie wir Wirtschaft nach Wirkung auf Mensch, Planet und Demokratie steuern können"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie-01-bfc4beb373.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Von der Pigou-Steuer zur Wirkungsökonomie"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2025-12-30-wie-die-wirkungsokonomie-funktioniert-01-8b75e50ce0.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wie die Wirkungsökonomie funktioniert"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert-01-f35049b496.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Reverse Merit-Order Wie Wirkungsökonomie Märkte und politische Entscheidungen steuert"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert-01-8060a44763.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells-01-499744d881.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Soziale Resilienz gegen Verhetzung - Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms-01-bbdfb2fc96.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wirkung statt Weltbild - eine wirkungsökonomische Analyse des AfD-Regierungsprogramms"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-01-29-was-ist-wirkungsokonomie-01-9a13ee503f.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Was ist Wirkungsökonomie?"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt-01-439ab83647.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Warum unser Wirtschaftsmodell an seine logischen Grenzen stößt - und was daraus folgt"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist-01-ab291ebf9d.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie-01-e43349cb6d.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wenn Kommunikation Realität formt - Wirkung als neue demokratische Leitkategorie"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf-01-fa62fd6f9b.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Von der Wertschöpfungskette zum Wirkungskreislauf"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-01-3d17153245.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wahl-O-Mat zur Landtagswahl Baden-Württemberg wirkungsökonomisch gelesen: Welche Politik sichert die Zukunft?"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-01-981b637f49.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Der CO₂-Rucksack sagt systemisch nichts - Warum wir Elektroauto und Verbrenner falsch vergleichen."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei-01-a9c0e7554e.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Was wir 2021 fürchteten - und was wir 2026 diskutieren. Eine gefährliche Verschiebung des Sicherheitsbegriffs."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-01-cff8d7ba68.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-01-9022a24f56.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken-01-558b8f6863.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wenn Empörung zum Verstärker wird und wie politische Narrative wirken"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann-01-a91791dc65.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-01-23feeeafd7.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Wirtschaft in einer Welt systemischer Risiken - Warum Wirkung zum neuen Maßstab wird"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a-01-a6de561968.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag 25 % der Bevölkerung gegen unsere Wirtschaft. Unser System steht von innen unter Spannung - und von außen unter Druck*"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-03-20-integritat-als-blinder-fleck-der-transformation-01-ae896e96ec.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Integrität als blinder Fleck der Transformation"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/linkedin/thumbs/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-01-80848ceef5.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung aus dem Beitrag Warum wir schneller „grün“ werden, als es sich AfD und CDU je vorstellen konnten"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/people/natalie-weber-sustynats.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "sustynats/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/people/natalie-weber-sustynats.webp",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "sustynats/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/people/natalie-weber.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "index.html",
+        "natalie-weber.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Natalie Weber, Begründerin der Wirkungsökonomie"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/podcast/der-apfel-war-nur-der-anfang.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/podcast/der-falsche-kompass.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/podcast/der-lange-wellenschlag.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/podcast/der-neue-kompass-cover.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/podcast/nicht-alles-was-sich-bewegt.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/podcast/wie-misst-man-etwas-das-man-nicht-sieht.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/podcast/wirkung-ist-nicht-absicht.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/podcast/worte-wirken.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "index.html",
+        "podcast/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/podcast/zwei-aepfel-ein-preis.jpeg",
+      "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image1.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image10.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 10 aus Die neue Ordnung des Wohlstands: Kapitel 3 - Kapital als Werkzeug und falscher Kompass"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image11.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image12.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image13.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-009-die-einfache-idee/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image14.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-010-wirkung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 14 aus Die neue Ordnung des Wohlstands: Kapitel 10 - Wirkung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image15.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-011-wirkungspotenzial/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image16.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-011-wirkungspotenzial/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image17.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 17 aus Die neue Ordnung des Wohlstands: Kapitel 12 - Handlung, Unterlassen und Rückkopplung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image18.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 18 aus Die neue Ordnung des Wohlstands: Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image19.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-014-systemischer-wert-und-normativer-wert/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 19 aus Die neue Ordnung des Wohlstands: Kapitel 14 - Systemischer Wert und normativer Wert"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image2.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image20.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-014-systemischer-wert-und-normativer-wert/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 20 aus Die neue Ordnung des Wohlstands: Kapitel 14 - Systemischer Wert und normativer Wert"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image21.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-015-leistung-neu-definieren/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image22.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-015-leistung-neu-definieren/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image23.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 23 aus Die neue Ordnung des Wohlstands: Kapitel 16 - Das Begriffssystem der Wirkungsökonomie"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image24.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 24 aus Die neue Ordnung des Wohlstands: Kapitel 16 - Das Begriffssystem der Wirkungsökonomie"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image25.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-017-wirkungsoekonomie-im-vergleich/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 25 aus Die neue Ordnung des Wohlstands: Kapitel 17 - Wirkungsökonomie im Vergleich"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image26.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-018-wirkungsordnungen/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image27.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-019-nichttriviale-systeme/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image28.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-021-das-wirkungsrad/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image29.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-022-wirkungslenkung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image3.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image30.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 30 aus Die neue Ordnung des Wohlstands: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image31.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-024-der-mensch-im-system/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 31 aus Die neue Ordnung des Wohlstands: Kapitel 24 - Der Mensch im System"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image32.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-027-planet-koexistenz-statt-extraktion/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 32 aus Die neue Ordnung des Wohlstands: Kapitel 27 - Planet: Koexistenz statt Extraktion"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image33.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-028-demokratie-als-wirkungsraum/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 33 aus Die neue Ordnung des Wohlstands: Kapitel 28 - Demokratie als Wirkungsraum"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image34.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-028-demokratie-als-wirkungsraum/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 34 aus Die neue Ordnung des Wohlstands: Kapitel 28 - Demokratie als Wirkungsraum"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image35.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-029-zeit-endlichkeit-und-generationenverantwortung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 35 aus Die neue Ordnung des Wohlstands: Kapitel 29 - Zeit, Endlichkeit und Generationenverantwortung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image36.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image37.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-030-von-wirkung-zu-messung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 37 aus Die neue Ordnung des Wohlstands: Kapitel 30 - Von Wirkung zu Messung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image38.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 38 aus Die neue Ordnung des Wohlstands: Kapitel 31 - WÖk-IDs und Indikatorenarchitektur"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image39.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 39 aus Die neue Ordnung des Wohlstands: Kapitel 31 - WÖk-IDs und Indikatorenarchitektur"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image4.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-001-meine-reise-zur-wirkung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 4 aus Die neue Ordnung des Wohlstands: Kapitel 1 - Meine Reise zur Wirkung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image40.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 40 aus Die neue Ordnung des Wohlstands: Kapitel 32 - Benchmarks, Skalen und Scorecards"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image41.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-033-reverse-merit-order/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image42.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 42 aus Die neue Ordnung des Wohlstands: Kapitel 34 - T-SROI und systemische Transformationsmessung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image43.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 43 aus Die neue Ordnung des Wohlstands: Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image44.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-036-wirkung-als-rechtsprinzip/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 44 aus Die neue Ordnung des Wohlstands: Kapitel 36 - Wirkung als Rechtsprinzip"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image45.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 45 aus Die neue Ordnung des Wohlstands: Kapitel 38 - Das WUStG und die Produktwirkungssteuer"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image46.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image47.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 47 aus Die neue Ordnung des Wohlstands: Kapitel 43 - Wirkungsorientierte Unternehmensführung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image48.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 48 aus Die neue Ordnung des Wohlstands: Kapitel 43 - Wirkungsorientierte Unternehmensführung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image49.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-045-organisation-kultur-und-verantwortung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 49 aus Die neue Ordnung des Wohlstands: Kapitel 45 - Organisation, Kultur und Verantwortung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image5.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-002-die-massstabskrise/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 5 aus Die neue Ordnung des Wohlstands: Kapitel 2 - Die Maßstabskrise"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image50.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-046-interne-wertschoepfung-und-lieferkettensteuerung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 50 aus Die neue Ordnung des Wohlstands: Kapitel 46 - Interne Wertschöpfung und Lieferkettensteuerung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image51.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-048-produkte-als-wirkungstraeger/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 51 aus Die neue Ordnung des Wohlstands: Kapitel 48 - Produkte als Wirkungsträger"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image52.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-048-produkte-als-wirkungstraeger/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 52 aus Die neue Ordnung des Wohlstands: Kapitel 48 - Produkte als Wirkungsträger"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image53.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-051-das-apfelbeispiel/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image54.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 54 aus Die neue Ordnung des Wohlstands: Kapitel 52 - Konsumwirkung und Verbraucherinformation"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image55.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-052-konsumwirkung-und-verbraucherinformation/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 55 aus Die neue Ordnung des Wohlstands: Kapitel 52 - Konsumwirkung und Verbraucherinformation"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image56.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-054-wirkungs-bip-und-neue-wohlstandsmessung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 56 aus Die neue Ordnung des Wohlstands: Kapitel 54 - Wirkungs-BIP und neue Wohlstandsmessung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image57.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-054-wirkungs-bip-und-neue-wohlstandsmessung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 57 aus Die neue Ordnung des Wohlstands: Kapitel 54 - Wirkungs-BIP und neue Wohlstandsmessung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image58.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-057-wirkungseinkommen/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image59.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-057-wirkungseinkommen/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image6.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-002-die-massstabskrise/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 6 aus Die neue Ordnung des Wohlstands: Kapitel 2 - Die Maßstabskrise"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image60.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-057-wirkungseinkommen/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image61.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-058-wirkungsrente/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image62.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-068-gesundheit/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image63.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-070-wohnen/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image64.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-074-oeffentlichkeit-als-wirkungsraum/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 64 aus Die neue Ordnung des Wohlstands: Kapitel 74 - Öffentlichkeit als Wirkungsraum"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image65.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-075-plattformlogik-und-algorithmen/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 65 aus Die neue Ordnung des Wohlstands: Kapitel 75 - Plattformlogik und Algorithmen"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image66.jpeg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 66 aus Die neue Ordnung des Wohlstands: Kapitel 85 - DPP-Infrastruktur und technische Umsetzung"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image67.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-097-der-umsetzungspfad/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image68.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-100-transformationspfade/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image69.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-107-zukunftsbilder/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image7.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-002-die-massstabskrise/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 7 aus Die neue Ordnung des Wohlstands: Kapitel 2 - Die Maßstabskrise"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image70.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image8.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-002-die-massstabskrise/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 8 aus Die neue Ordnung des Wohlstands: Kapitel 2 - Die Maßstabskrise"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "public/assets/imported/woek-main-2026/image9.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 2,
+      "usedBy": [
+        "referenz/kapitel-002-die-massstabskrise/index.html",
+        "referenz/volltext/index.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Abbildung 9 aus Die neue Ordnung des Wohlstands: Kapitel 2 - Die Maßstabskrise"
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    }
+  ]
+}

@@ -5,13 +5,13 @@
   "rule": "Every visible public German route needs an English counterpart below /en/ with translated visible text, translated UI and English-aware media/download routing.",
   "counts": {
     "total": 4271,
-    "available": 7,
-    "missing": 4264,
+    "available": 8,
+    "missing": 4263,
     "byCategory": {
       "top-level": {
         "total": 22,
-        "available": 0,
-        "missing": 22
+        "available": 1,
+        "missing": 21
       },
       "akademie": {
         "total": 2,
@@ -23096,11 +23096,11 @@
     {
       "sourceFile": "suche.html",
       "sourceRoute": "/suche.html",
-      "englishFile": "en/suche/index.html",
-      "englishRoute": "/en/suche/",
+      "englishFile": "en/search/index.html",
+      "englishRoute": "/en/search/",
       "category": "top-level",
       "title": "Suche - Wirkungsökonomie",
-      "status": "missing"
+      "status": "available"
     },
     {
       "sourceFile": "sustynats/index.html",
