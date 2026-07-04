@@ -46,9 +46,16 @@ function renderUtilityLink(base, item) {
   return `        <a class="site-utility-link site-utility-link--${escapeHtml(utilityClass(item))}" href="${base}${escapeHtml(item.href)}" data-nav-match="${escapeHtml(navMatch(item))}" data-utility-label="${escapeHtml(item.label)}"${primary}>${escapeHtml(text)}</a>`;
 }
 
-function renderLanguageSwitch(base, locale) {
+function germanSwitchHref(base, filePath) {
+  const relative = path.relative(ROOT, filePath).replace(/\\/g, "/");
+  if (relative === "en/library/index.html") return `${base}bibliothek/`;
+  if (relative === "en/tools/index.html") return `${base}werkzeuge/`;
+  return `${base}index.html`;
+}
+
+function renderLanguageSwitch(base, locale, filePath) {
   if (locale === "en") {
-    return `        <a class="site-utility-link site-utility-link--language" href="${base}index.html" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>`;
+    return `        <a class="site-utility-link site-utility-link--language" href="${germanSwitchHref(base, filePath)}" hreflang="de" lang="de" data-lang-switch="de" data-utility-label="Deutsch">DE</a>`;
   }
   return `        <a class="site-utility-link site-utility-link--language" href="${base}en/" hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>`;
 }
@@ -77,18 +84,18 @@ function englishMainLinks() {
     ["Impact fields", "en/#impact-fields", "en/"],
     ["Impact governance", "en/#governance", "en/"],
     ["Public impact space", "en/#public-impact-space", "en/"],
-    ["Tools", "en/#tools", "en/"],
+    ["Tools", "en/tools/", "en/tools/"],
     ["Learn", "en/#learn", "en/"],
-    ["Library", "en/#library", "en/"],
+    ["Library", "en/library/", "en/library/"],
     ["Join", "en/#join", "en/"],
   ].map(([label, href, match]) => `        <a href="../${escapeHtml(href)}" data-nav-match="${escapeHtml(match)}">${escapeHtml(label)}</a>`).join("\n");
 }
 
-function renderHeader(base, locale = "de") {
+function renderHeader(base, locale = "de", filePath = "") {
   const utilityLinks = (navigation.more || [])
     .map((item) => locale === "en" ? renderEnglishUtilityLink(base, item) : renderUtilityLink(base, item))
     .join("\n");
-  const languageSwitch = renderLanguageSwitch(base, locale);
+  const languageSwitch = renderLanguageSwitch(base, locale, filePath);
   const mainLinks = locale === "en" ? englishMainLinks() : (navigation.header || []).map((item) => renderMainLink(base, item)).join("\n");
   const brandHref = locale === "en" ? `${base}en/` : `${base}index.html`;
   const brandLabel = locale === "en" ? "Wirkungsökonomie English homepage" : "Wirkungsökonomie Startseite";
@@ -143,7 +150,7 @@ let changed = 0;
 
 for (const filePath of headerFiles()) {
   const before = fs.readFileSync(filePath, "utf8");
-  const afterHeader = before.replace(/<header class="site-header"[\s\S]*?<\/header>/, renderHeader(prefixFor(filePath), isEnglishFile(filePath) ? "en" : "de"));
+  const afterHeader = before.replace(/<header class="site-header"[\s\S]*?<\/header>/, renderHeader(prefixFor(filePath), isEnglishFile(filePath) ? "en" : "de", filePath));
   const after = afterHeader
     .replaceAll("20260612-shell-audio-fix", CSS_VERSION)
     .replaceAll("20260612-nav-restore", CSS_VERSION)

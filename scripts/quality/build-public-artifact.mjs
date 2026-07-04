@@ -329,6 +329,7 @@ function copyPublicRuntimeContentData() {
       .map((fileName) => path.join("content/kompass", fileName)),
     path.join("content/wissen", "wissenskarten.json"),
     path.join("public/data", "en-document-translation-manifest.json"),
+    path.join("public/data", "en-route-coverage.json"),
   ];
 
   let copied = 0;
@@ -643,6 +644,7 @@ function prunePublicArtifact() {
       ![
         "public/data/relationship-manifest.json",
         "public/data/en-document-translation-manifest.json",
+        "public/data/en-route-coverage.json",
       ].includes(relative)
     ) {
       removeFile(file, "internal data export is not public");
