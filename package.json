@@ -17,6 +17,7 @@
     "import:workpapers": "python3 scripts/import/import-workpapers.py",
     "export:pdf": "node scripts/export/export-glossary.mjs && node scripts/export/export-mainwork.mjs && node scripts/export/export-document.mjs && node scripts/export/export-bundle.mjs",
     "build:search": "node scripts/search/build-woek-search-index.mjs",
+    "i18n:documents": "node scripts/i18n/build-english-document-manifest.mjs",
     "build:so-wirkt": "node scripts/site/build-so-wirkt-wirkungsoekonomie.mjs",
     "build:factcheck-bot-guides": "node scripts/site/build-faktencheck-bot-guides.mjs",
     "check:search": "node scripts/quality/check-search-integration.mjs",
