@@ -272,11 +272,11 @@ function updateHomepage() {
   html = updateMeta(
     html,
     "Die Wirkungsökonomie macht Wirkung, Risiko und Systemresilienz sichtbar: positive Netto-Wirkung für Mensch, Planet und Demokratie statt Blindflug nach Gewinn und Wachstum.",
-    "Gewinn und Wachstum reichen als Maßstab nicht | Wirkungsökonomie",
+    "Gewinn und Wachstum reichen nicht als Maßstab | Wirkungsökonomie",
   );
   html = replaceHeroText(html, {
     kicker: "WAS PREISE, BERICHTE UND GEWINNE BISLANG NICHT ZEIGEN",
-    title: "Gewinn und Wachstum reichen als Maßstab nicht.",
+    title: "Gewinn und Wachstum reichen nicht als Maßstab.",
     subtitle:
       "Und zentrale Kontrolle ist keine Lösung. Die Wirkungsökonomie gibt Märkten, Politik, Kapital und öffentlichen Entscheidungen einen besseren Kompass: Wirkung statt Kapital, Systemresilienz statt Blindflug.",
   });
