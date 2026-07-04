@@ -249,3 +249,13 @@ Ziel: erster echter Viererbatch auf Basis der bestehenden Quelltexte in `woek-ak
 - [x] JSON-Stichprobe: 162 JSON-Dateien aus Content-, Public-, Assets- und App-Content-Bestand parsebar.
 - [x] App-Typecheck: `npm run typecheck` in `woek-akademie-app` gruen.
 - [x] DOCX-Stichprobe: `woek-g-v20.docx` erfolgreich zu 47 PNG-Seiten gerendert; Anfang, Mitte und Schluss visuell unauffaellig.
+
+### Automationslauf 2026-07-04 · Blocker nach visueller Stichprobe
+
+- [x] Maschinelle V1-Verifikation erneut gruen: 56/56 Skripte, `minWords` 14.624, 5 Assessment-Blueprints.
+- [x] JSON-Stichprobe gruen: 255 JSON-Dateien parsebar.
+- [x] App-Typecheck in `woek-akademie-app` gruen.
+- [x] DOCX-Stichprobe `wirkungscontrolling-wc-v6.docx` rendert zu 46 PNG-Seiten.
+- [!] Harte Qualitaetsabweichung: In allen 56 Markdown-Mastern stehen nach `## V1-Finalisierung: Vertiefung, Anwendung und Evidenz` noch weitere nummerierte Hauptabschnitte. Die WC-V6-Stichprobe zeigt eine unplausible Reihenfolge mit `V1-Abschlussnotiz` und Quellen vor spaeteren Vertiefungskapiteln.
+- [!] Inhaltlicher Blocker: Die automatisch erzeugten V1-Schlussbloecke sind stark generisch und wiederholend. Formal sind die Artefakte vorhanden, redaktionell sind sie noch nicht als echte finale Studienskripte belastbar.
+- Naechster Schritt: Finalisierungslogik korrigieren, Abschnittsreihenfolge je Master bereinigen, generische Wiederholungsbloecke fachlich ersetzen, danach Word-Rohfassungen neu exportieren und erneut renderpruefen.
