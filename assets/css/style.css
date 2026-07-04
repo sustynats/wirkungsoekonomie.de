@@ -18071,3 +18071,33 @@ h1,.hero-title{letter-spacing:-0.022em;}
     grid-template-columns:1fr!important;
   }
 }
+
+/* =====================================================================
+   Akademie – eigene Farbwelt (grün-geführt), SEITENSCOPED via body.theme-akademie.
+   Ziel: Akademie optisch von Institut/Default (Navy/Ivory) unterscheiden.
+   Reversibel: Block + Body-Klasse entfernen. Andere Seiten unberührt.
+   ===================================================================== */
+body.theme-akademie{
+  --paper:#FAFDFA;
+  --cream:#F2F8F3;
+  --ivory:#E9F2EB;
+  --line:#D3E3D6;
+  --border-color:#CBDECF;
+}
+body.theme-akademie .hero,
+body.theme-akademie .section-soft{
+  background:linear-gradient(180deg,#E9F3EB 0%, #F4FAF5 100%);
+}
+body.theme-akademie h1,
+body.theme-akademie h2,
+body.theme-akademie h3,
+body.theme-akademie .hero-title,
+body.theme-akademie .section-title,
+body.theme-akademie .card-title{ color:var(--green-dark); }
+body.theme-akademie .hero-kicker,
+body.theme-akademie .card-kicker{ color:var(--green); }
+body.theme-akademie .btn-primary{
+  background:var(--green-dark); border-color:var(--green-dark); color:#fff;
+}
+body.theme-akademie .btn-primary:hover{ background:var(--green); border-color:var(--green); }
+body.theme-akademie .card{ border-top:3px solid var(--green); }
