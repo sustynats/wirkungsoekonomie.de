@@ -157,6 +157,8 @@ def should_sync(path: Path, text: str) -> bool:
     relative_parts = path.relative_to(SITE_ROOT).parts
     if any(part in SYNC_EXCLUDED_DIRS for part in relative_parts):
         return False
+    if relative_parts[0] == "en":
+        return False
     if path.name == "404.html":
         return False
     if relative_parts[0] in {"templates"}:
