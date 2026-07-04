@@ -328,6 +328,7 @@ function copyPublicRuntimeContentData() {
     ...["compass-answer-templates.json", "compass-questions.json", "compass-topics.json", "impact-paths.json"]
       .map((fileName) => path.join("content/kompass", fileName)),
     path.join("content/wissen", "wissenskarten.json"),
+    path.join("public/data", "en-document-translation-manifest.json"),
   ];
 
   let copied = 0;
@@ -637,7 +638,13 @@ function prunePublicArtifact() {
       continue;
     }
 
-    if (relative.startsWith("public/data/") && relative !== "public/data/relationship-manifest.json") {
+    if (
+      relative.startsWith("public/data/") &&
+      ![
+        "public/data/relationship-manifest.json",
+        "public/data/en-document-translation-manifest.json",
+      ].includes(relative)
+    ) {
       removeFile(file, "internal data export is not public");
       pruned += 1;
       continue;
