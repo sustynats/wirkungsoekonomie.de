@@ -10,6 +10,48 @@ const uiText = {
   skipLink: siteLocale === "en" ? "Skip to content" : "Zum Inhalt springen",
   menuOpen: siteLocale === "en" ? "Open menu" : "Menü öffnen",
   menuClose: siteLocale === "en" ? "Close menu" : "Menü schließen",
+  learningAdd: siteLocale === "en" ? "Add to learning list" : "Zur Lernliste hinzufügen",
+  learningAdded: siteLocale === "en" ? "✓ In learning list" : "✓ In Lernliste",
+  collectionUntitled: siteLocale === "en" ? "Untitled collection" : "Unbenannte Sammlung",
+  collectionAdd: siteLocale === "en" ? "Add to collection" : "Zu Sammlung hinzufügen",
+  collectionEmptyInline:
+    siteLocale === "en"
+      ? "No collection yet. Create the first one below and save this page to it."
+      : "Noch keine Sammlung. Lege unten die erste an und speichere diese Seite direkt darin.",
+  collectionsKicker: siteLocale === "en" ? "Collections" : "Sammlungen",
+  collectionPanelTitle: siteLocale === "en" ? "Save in collection" : "In Sammlung ablegen",
+  collectionNew: siteLocale === "en" ? "New collection" : "Neue Sammlung",
+  collectionDescription: siteLocale === "en" ? "Description" : "Beschreibung",
+  collectionDescriptionPlaceholder: siteLocale === "en" ? "optional" : "optional",
+  collectionCreateAndAdd: siteLocale === "en" ? "Create and add" : "Erstellen und hinzufügen",
+  collectionItemSingular: siteLocale === "en" ? "item" : "Inhalt",
+  collectionItemPlural: siteLocale === "en" ? "items" : "Inhalte",
+  saveAdd: siteLocale === "en" ? "☆ Save" : "☆ Merken",
+  saveRemove: siteLocale === "en" ? "Remove bookmark" : "Nicht mehr merken",
+  saveSavedStatus: siteLocale === "en" ? "★ Saved" : "★ Gemerkt",
+  saveAriaAdd: siteLocale === "en" ? "Save" : "merken",
+  saveAriaRemove: siteLocale === "en" ? "Remove from bookmarks" : "aus der Merkliste entfernen",
+  analyticsBookmarkTitle: siteLocale === "en" ? "Bookmark" : "Merkzettel",
+  noteKicker: siteLocale === "en" ? "Personal note" : "Persönliche Notiz",
+  noteTitle: siteLocale === "en" ? "Your thoughts on this page" : "Eigene Gedanken zu dieser Seite",
+  noteHint:
+    siteLocale === "en"
+      ? "This note is stored only in your browser."
+      : "Diese Notiz wird nur in deinem Browser gespeichert.",
+  notePresent: siteLocale === "en" ? "Note added" : "Notiz vorhanden",
+  noteTextLabel: siteLocale === "en" ? "Note text" : "Notiztext",
+  notePlaceholder:
+    siteLocale === "en"
+      ? "What do you want to remember about this content?"
+      : "Was willst du dir zu diesem Inhalt merken?",
+  noteUpdate: siteLocale === "en" ? "Update note" : "Notiz aktualisieren",
+  noteSave: siteLocale === "en" ? "Save note" : "Notiz speichern",
+  noteDelete: siteLocale === "en" ? "Delete note" : "Notiz löschen",
+  noteSavedPrefix: siteLocale === "en" ? "Saved:" : "Gespeichert:",
+  noteEmptyWarning: siteLocale === "en" ? "Write a note first." : "Schreibe zuerst eine Notiz.",
+  noteSaved: siteLocale === "en" ? "Saved." : "Gespeichert.",
+  noteDeleteConfirm: siteLocale === "en" ? "Delete this local note?" : "Diese lokale Notiz löschen?",
+  noteDeleted: siteLocale === "en" ? "Note deleted." : "Notiz gelöscht.",
 };
 
 const mainElement = document.querySelector("main");
@@ -49,7 +91,7 @@ if (navToggle && siteNav) {
   const closeNavigation = () => {
     siteNav.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
-    navToggle.setAttribute("aria-label", "Menü öffnen");
+    navToggle.setAttribute("aria-label", uiText.menuOpen);
     document.body.classList.remove("nav-is-open");
   };
 
@@ -4930,7 +4972,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function learningButtonLabel(button, active) {
-    button.textContent = active ? "✓ In Lernliste" : "Zur Lernliste hinzufügen";
+    button.textContent = active ? uiText.learningAdded : uiText.learningAdd;
     button.setAttribute("aria-pressed", String(active));
   }
 
@@ -4952,7 +4994,7 @@ const WirkungsraumLayer = (() => {
 
   function normalizedCollection(collection) {
     if (!collection || typeof collection !== "object") return null;
-    const title = String(collection.title || "").replace(/\s+/g, " ").trim() || "Unbenannte Sammlung";
+    const title = String(collection.title || "").replace(/\s+/g, " ").trim() || uiText.collectionUntitled;
     const now = new Date().toISOString();
     const itemIds = Array.from(
       new Set(Array.isArray(collection.item_ids) ? collection.item_ids.filter(Boolean).map((id) => String(id)) : [])
@@ -5099,7 +5141,7 @@ const WirkungsraumLayer = (() => {
   function trackWirkungsraumEvent(eventType, item = currentItem(), extra = {}) {
     if (typeof sendSiteAnalyticsEvent !== "function" || !item?.id) return;
     sendSiteAnalyticsEvent(eventType, {
-      title: `Merkzettel: ${eventType}: ${item.title}`,
+      title: `${uiText.analyticsBookmarkTitle}: ${eventType}: ${item.title}`,
       entityType: item.type || "Inhalt",
       entityId: item.id,
       entityTitle: item.title,
@@ -5129,9 +5171,9 @@ const WirkungsraumLayer = (() => {
   }
 
   function buttonLabel(button, saved, item = currentItem()) {
-    button.textContent = saved ? "Nicht mehr merken" : "☆ Merken";
+    button.textContent = saved ? uiText.saveRemove : uiText.saveAdd;
     button.setAttribute("aria-pressed", String(saved));
-    button.setAttribute("aria-label", saved ? `${item.title} aus der Merkliste entfernen` : `${item.title} merken`);
+    button.setAttribute("aria-label", saved ? `${uiText.saveAriaRemove}: ${item.title}` : `${uiText.saveAriaAdd}: ${item.title}`);
     button.classList.toggle("is-saved", saved);
   }
 
@@ -5170,30 +5212,32 @@ const WirkungsraumLayer = (() => {
                 <input type="checkbox" value="${escapeAttribute(collection.id)}" data-collection-toggle ${checked ? "checked" : ""}>
                 <span>
                   <strong>${escapeHtml(collection.title)}</strong>
-                  <small>${collection.item_ids.length} Inhalt${collection.item_ids.length === 1 ? "" : "e"}</small>
+                  <small>${collection.item_ids.length} ${
+                    collection.item_ids.length === 1 ? uiText.collectionItemSingular : uiText.collectionItemPlural
+                  }</small>
                 </span>
               </label>
             `;
           })
           .join("")
-      : `<p class="card-text">Noch keine Sammlung. Lege unten die erste an und speichere diese Seite direkt darin.</p>`;
+      : `<p class="card-text">${uiText.collectionEmptyInline}</p>`;
 
     panel.innerHTML = `
       <div class="wirkungsraum-collection-panel-header">
-        <p class="card-kicker">Sammlungen</p>
-        <strong>In Sammlung ablegen</strong>
+        <p class="card-kicker">${uiText.collectionsKicker}</p>
+        <strong>${uiText.collectionPanelTitle}</strong>
       </div>
       <div class="wirkungsraum-collection-options">${options}</div>
       <form class="wirkungsraum-collection-inline-form" data-collection-inline-create>
         <label>
-          <span>Neue Sammlung</span>
+          <span>${uiText.collectionNew}</span>
           <input type="text" name="collection-title" placeholder="z. B. Debatten-Kompass" required>
         </label>
         <label>
-          <span>Beschreibung</span>
-          <input type="text" name="collection-description" placeholder="optional">
+          <span>${uiText.collectionDescription}</span>
+          <input type="text" name="collection-description" placeholder="${uiText.collectionDescriptionPlaceholder}">
         </label>
-        <button class="btn btn-primary" type="submit">Erstellen und hinzufügen</button>
+        <button class="btn btn-primary" type="submit">${uiText.collectionCreateAndAdd}</button>
       </form>
     `;
   }
@@ -5215,7 +5259,7 @@ const WirkungsraumLayer = (() => {
     button.className = "btn btn-secondary wirkungsraum-collection-button";
     button.dataset.wirkungsraumCollectionButton = item.id;
     button.setAttribute("aria-expanded", "false");
-    button.textContent = "Zu Sammlung hinzufügen";
+    button.textContent = uiText.collectionAdd;
 
     const panel = document.createElement("div");
     panel.className = "wirkungsraum-collection-panel";
@@ -5301,24 +5345,24 @@ const WirkungsraumLayer = (() => {
     panel.innerHTML = `
       <summary class="wirkungsraum-note-summary">
         <span class="wirkungsraum-note-summary-copy">
-          <span class="card-kicker">Persönliche Notiz</span>
-          <span class="wirkungsraum-note-title">Eigene Gedanken zu dieser Seite</span>
-          <span class="wirkungsraum-note-hint">Diese Notiz wird nur in deinem Browser gespeichert.</span>
+          <span class="card-kicker">${uiText.noteKicker}</span>
+          <span class="wirkungsraum-note-title">${uiText.noteTitle}</span>
+          <span class="wirkungsraum-note-hint">${uiText.noteHint}</span>
         </span>
         <span class="wirkungsraum-note-state" data-wirkungsraum-note-state ${hasExistingNote ? "" : "hidden"}>
-          <span aria-hidden="true">✎</span> Notiz vorhanden
+          <span aria-hidden="true">✎</span> ${uiText.notePresent}
         </span>
       </summary>
       <form class="wirkungsraum-note-form" data-wirkungsraum-note-form>
         <label>
-          <span class="sr-only">Notiztext</span>
-          <textarea data-wirkungsraum-note-text rows="5" placeholder="Was willst du dir zu diesem Inhalt merken?">${escapeHtml(existing?.content || "")}</textarea>
+          <span class="sr-only">${uiText.noteTextLabel}</span>
+          <textarea data-wirkungsraum-note-text rows="5" placeholder="${uiText.notePlaceholder}">${escapeHtml(existing?.content || "")}</textarea>
         </label>
         <p class="wirkungsraum-note-actions">
-          <button class="btn btn-primary" type="submit">${existing ? "Notiz aktualisieren" : "Notiz speichern"}</button>
-          <button class="btn btn-secondary" type="button" data-delete-note="${escapeAttribute(noteIdForItem(item))}" ${existing ? "" : "disabled"}>Notiz löschen</button>
+          <button class="btn btn-primary" type="submit">${existing ? uiText.noteUpdate : uiText.noteSave}</button>
+          <button class="btn btn-secondary" type="button" data-delete-note="${escapeAttribute(noteIdForItem(item))}" ${existing ? "" : "disabled"}>${uiText.noteDelete}</button>
         </p>
-        <p class="wirkungsraum-note-status" data-wirkungsraum-note-status>${existing?.updated_at ? `Gespeichert: ${escapeHtml(formatDateTime(existing.updated_at))}` : ""}</p>
+        <p class="wirkungsraum-note-status" data-wirkungsraum-note-status>${existing?.updated_at ? `${uiText.noteSavedPrefix} ${escapeHtml(formatDateTime(existing.updated_at))}` : ""}</p>
       </form>
     `;
 
@@ -5339,25 +5383,25 @@ const WirkungsraumLayer = (() => {
       event.preventDefault();
       const content = textarea.value.trim();
       if (!content) {
-        if (status) status.textContent = "Schreibe zuerst eine Notiz.";
+        if (status) status.textContent = uiText.noteEmptyWarning;
         textarea.focus();
         return;
       }
       const stored = saveNoteForItem(item, content);
       if (deleteButton instanceof HTMLButtonElement) deleteButton.disabled = false;
-      if (submitButton instanceof HTMLButtonElement) submitButton.textContent = "Notiz aktualisieren";
-      if (status) status.textContent = stored?.updated_at ? `Gespeichert: ${formatDateTime(stored.updated_at)}` : "Gespeichert.";
+      if (submitButton instanceof HTMLButtonElement) submitButton.textContent = uiText.noteUpdate;
+      if (status) status.textContent = stored?.updated_at ? `${uiText.noteSavedPrefix} ${formatDateTime(stored.updated_at)}` : uiText.noteSaved;
       setNoteState(Boolean(stored?.content?.trim()));
     });
 
     deleteButton?.addEventListener("click", () => {
       if (!(deleteButton instanceof HTMLButtonElement) || deleteButton.disabled) return;
-      if (!window.confirm("Diese lokale Notiz löschen?")) return;
+      if (!window.confirm(uiText.noteDeleteConfirm)) return;
       removeNote(noteIdForItem(item));
       if (textarea instanceof HTMLTextAreaElement) textarea.value = "";
       deleteButton.disabled = true;
-      if (submitButton instanceof HTMLButtonElement) submitButton.textContent = "Notiz speichern";
-      if (status) status.textContent = "Notiz gelöscht.";
+      if (submitButton instanceof HTMLButtonElement) submitButton.textContent = uiText.noteSave;
+      if (status) status.textContent = uiText.noteDeleted;
       setNoteState(false);
     });
 
@@ -5546,13 +5590,13 @@ const WirkungsraumLayer = (() => {
   function formatDateTime(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "";
-    return date.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" });
+    return date.toLocaleString(siteLocale === "en" ? "en-US" : "de-DE", { dateStyle: "medium", timeStyle: "short" });
   }
 
   function formatDate(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "";
-    return date.toLocaleDateString("de-DE", { dateStyle: "medium" });
+    return date.toLocaleDateString(siteLocale === "en" ? "en-US" : "de-DE", { dateStyle: "medium" });
   }
 
   function itemCard(item, options = {}) {
@@ -7548,7 +7592,7 @@ const WirkungsraumLayer = (() => {
       row.className = "reference-bookmark-row";
       row.dataset.referenceBookmarkRow = "true";
       row.innerHTML = `
-        <span class="reference-bookmark-status" data-reference-bookmark-status hidden>★ Gemerkt</span>
+        <span class="reference-bookmark-status" data-reference-bookmark-status hidden>${uiText.saveSavedStatus}</span>
         <button class="reference-bookmark-button" type="button" data-reference-bookmark-button></button>
       `;
       const meta = card.querySelector(".chapter-card-meta");
@@ -7561,10 +7605,10 @@ const WirkungsraumLayer = (() => {
     const button = row.querySelector("[data-reference-bookmark-button]");
     if (status instanceof HTMLElement) status.hidden = !saved;
     if (button instanceof HTMLButtonElement) {
-      button.textContent = saved ? "Nicht mehr merken" : "☆ Merken";
+      button.textContent = saved ? uiText.saveRemove : uiText.saveAdd;
       button.classList.toggle("is-saved", saved);
       button.setAttribute("aria-pressed", String(saved));
-      button.setAttribute("aria-label", saved ? `${item.title} aus der Merkliste entfernen` : `${item.title} merken`);
+      button.setAttribute("aria-label", saved ? `${uiText.saveAriaRemove}: ${item.title}` : `${uiText.saveAriaAdd}: ${item.title}`);
       if (!button.dataset.referenceBookmarkBound) {
         button.dataset.referenceBookmarkBound = "true";
         button.addEventListener("click", () => {
