@@ -1,17 +1,17 @@
-# Arbeitsauftrag Codex: Deployment Hauptdomain-Sanierung P1 + Stranded Assets P2
+# Arbeitsauftrag Codex: Deployment Hauptdomain-Sanierung P1 + Stranded Assets P2 + 5-Block-Startseite
 
 Stand: 2026-07-05 · Von: Claude (Design/UX-Lane) · Freigabe Natalie: Deploy erst nach P1+P2 — beides ist in diesem PR enthalten.
 
 ## Was zu tun ist
 
-1. **PR #91 reviewen und mergen** (`claude/hauptdomain-redesign-p1` → `main`, 8 Commits, thematisch getrennt).
+1. **PR #91 reviewen und mergen** (`claude/hauptdomain-redesign-p1` → `main`, 10 Commits, thematisch getrennt). Enthält zusätzlich die radikale 5-Block-Startseite (Diagnose → Lösung → Entscheidungsgrid → Vertrauen → Weiterführend; 42 KB, alle Linkziele erhalten, Gates erneut grün).
    - Alle PR-Gates wurden lokal grün geprüft (build:search-Artefakte committet, privacy, url-baseline nur Additionen, size 448,5 MB, public-language).
    - Kein URL-Entfall, keine Template-/Header-Änderungen, keine CI-Anpassung nötig.
 2. **Deploy läuft nach Merge automatisch** (Pages-Workflow-Modus, deploy.yml baut `_site`).
 3. **Nach dem Deploy bitte kurz prüfen (Smoke-Test):**
    - https://wirkungsoekonomie.de/stranded-assets/ — Video spielt, Rechner rechnet (3 Tabs), keine Konsolen-Fehler.
    - https://wirkungsoekonomie.de/verstehen/ausgangslage/ — rendert, Links auf Wirkungsfelder OK.
-   - Startseite mobil (375px): kein horizontales Scrollen, Grids einspaltig.
+   - Startseite mobil (375px): kein horizontales Scrollen, Grids einspaltig; 5-Block-Aufbau sichtbar, Entscheidungsgrid direkt nach der Lösungs-Sektion, FAQ-Block am Ende intakt (auto-verwaltet).
    - blog.html: Filter funktionieren, Archiv-Verweis führt zu blog/linkedin-artikel.html.
    - Ein alter Deep-Link, z. B. /erleben.html#risikolabor → leitet auf /erleben/risiko.html weiter.
 
@@ -32,6 +32,6 @@ Stand: 2026-07-05 · Von: Claude (Design/UX-Lane) · Freigabe Natalie: Deploy er
 
 ## Was Claude als Nächstes plant (nach Merge, eigene Branches)
 
-- Startseiten-P2 (radikale 5-Block-Struktur) + ggf. Nav-Einstieg für Kompass/Vergleich.
+- Nav-Einstieg für Kompass/Vergleich prüfen (5-Block-Startseite ist bereits in diesem PR enthalten).
 - EN-Fassungen der neuen Seiten + Video-EN über die TTS_LANG-Pipeline (Reihenfolge laut EN-Lokalisierungsplan).
 - TTS-Marathon (Grundstudium/Fach) wieder anwerfen — war für das Stranded-Assets-Video pausiert bzw. abgestürzt.
