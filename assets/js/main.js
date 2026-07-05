@@ -568,7 +568,7 @@ const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
 const blogTypeLinks = Array.from(document.querySelectorAll("[data-blog-type-filter]"));
 const blogFilterStatus = document.querySelector(".blog-filter-status");
 const blogLoadMoreButton = document.querySelector("[data-blog-load-more]");
-const blogSearchInput = document.querySelector("[data-blog-search]");
+const blogSearchInputs = Array.from(document.querySelectorAll("[data-blog-search]"));
 const blogResetButton = document.querySelector("[data-blog-reset]");
 const blogInitialLimit = Number.POSITIVE_INFINITY;
 const blogLoadStep = 12;
@@ -686,9 +686,9 @@ function resetBlogFilters() {
   blogFilterState.query = "";
   blogFilterState.limit = blogInitialLimit;
 
-  if (blogSearchInput) {
-    blogSearchInput.value = "";
-  }
+  blogSearchInputs.forEach((input) => {
+    input.value = "";
+  });
 
   applyBlogFilter();
 }
@@ -763,13 +763,18 @@ if (blogLoadMoreButton) {
   });
 }
 
-if (blogSearchInput) {
-  blogSearchInput.addEventListener("input", () => {
-    blogFilterState.query = blogSearchInput.value.trim().toLowerCase();
+blogSearchInputs.forEach((input) => {
+  input.addEventListener("input", () => {
+    blogFilterState.query = input.value.trim().toLowerCase();
     blogFilterState.limit = blogInitialLimit;
+    blogSearchInputs.forEach((otherInput) => {
+      if (otherInput !== input) {
+        otherInput.value = input.value;
+      }
+    });
     applyBlogFilter();
   });
-}
+});
 
 if (blogResetButton) {
   blogResetButton.addEventListener("click", () => {
