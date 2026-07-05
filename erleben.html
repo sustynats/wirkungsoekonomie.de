@@ -19,6 +19,28 @@
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.css?v=20260612-mobile-table-fix">
+    <script>
+      // Anker-Weiterleitung: Deep-Links auf verschobene Demo-Sektionen bleiben gültig.
+      (function () {
+        var map = {
+          "simulator": "erleben/produktwirkung.html",
+          "alltag": "erleben/produktwirkung.html",
+          "scanner": "erleben/produktwirkung.html",
+          "medienwirkung": "erleben/medienwirkung.html",
+          "scorecard-demos": "erleben/medienwirkung.html",
+          "plattformwirkung": "erleben/plattformen.html",
+          "risikolabor": "erleben/risiko.html"
+        };
+        function route() {
+          var id = window.location.hash.replace(/^#/, "");
+          if (Object.prototype.hasOwnProperty.call(map, id)) {
+            window.location.replace(map[id] + window.location.search + "#" + id);
+          }
+        }
+        window.addEventListener("hashchange", route);
+        route();
+      })();
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -78,8 +100,8 @@
           <p class="hero-subtitle">Was wirkt hier wirklich? Die <a class="text-link" href="glossar.html#begriff-wirkungsoekonomie">Wirkungsökonomie</a> bewertet Erfolg danach, ob etwas Mensch, Planet und Demokratie stärkt oder schädigt. Wähle ein Beispiel und sieh, wie diese Wirkung sichtbar wird.</p>
           <p class="card-text">Nachhaltigkeitsmanagement ist hier kein Berichtsthema am Rand, sondern Risikomanagement: Geopolitik, Energie, Ressourcen, Klima, Lieferketten und Öffentlichkeit entscheiden längst über Kosten, Kapitalzugang und Überlebensfähigkeit.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#erlebniswelt">Mehr erfahren</a>
-            <a class="btn btn-secondary" href="#medienwirkung">Medienwirkung testen</a>
+            <a class="btn btn-primary" href="#erlebniswelt">Zu den Beispielen</a>
+            <a class="btn btn-secondary" href="erleben/medienwirkung.html">Medienwirkung testen</a>
           </div>
         </div>
         <div class="hero-aside card">
@@ -160,8 +182,8 @@
             </div>
             <p class="card-text">Der Ablauf ist immer gleich: Beispiel wählen, Bewertung lesen, Logik verstehen und übertragen, was sich ändern würde, wenn Preise, Steuern, Reichweite oder Kapital nach Wirkung entschieden würden.</p>
           </div>
-          <div class="card-grid three tool-card-overview" aria-label="Primäre Einstiege">
-            <article class="card tool-summary-card">
+          <div class="card-grid four tool-card-overview" aria-label="Primäre Einstiege">
+            <article class="card tool-summary-card" id="simulator">
               <p class="card-kicker">Tool</p>
               <h3 class="card-title">Produktwirkung verstehen</h3>
               <dl class="tool-card-journey">
@@ -170,9 +192,9 @@
                 <div><dt>Was das Tool zeigt</dt><dd>Du siehst, wie Produktdaten, Lieferkette, schwächstes Wirkungsfeld und Steuerlogik zusammenwirken.</dd></div>
                 <div><dt>Ergebnis bedeutet</dt><dd>Der Score zeigt nicht "gut" oder "böse", sondern welche Wirkung im Modell die Steuerklasse begrenzen würde.</dd></div>
               </dl>
-              <a class="text-link tool-card-cta" href="#simulator">Produktwirkung testen</a>
+              <a class="text-link tool-card-cta" href="erleben/produktwirkung.html">Produktwirkung testen</a>
             </article>
-            <article class="card tool-summary-card">
+            <article class="card tool-summary-card" id="medienwirkung">
               <p class="card-kicker">Tool</p>
               <h3 class="card-title">Medienwirkung verstehen</h3>
               <dl class="tool-card-journey">
@@ -181,9 +203,9 @@
                 <div><dt>Was das Tool zeigt</dt><dd>Du prüfst Quellenklarheit, Framing, Emotionalisierung und Resonanzrisiko.</dd></div>
                 <div><dt>Ergebnis bedeutet</dt><dd>Der Score ist kein Wahrheitsurteil, sondern eine Ersteinschätzung zum Wirkungspotenzial.</dd></div>
               </dl>
-              <a class="text-link tool-card-cta" href="#medienwirkung">Medienwirkung testen</a>
+              <a class="text-link tool-card-cta" href="erleben/medienwirkung.html">Medienwirkung testen</a>
             </article>
-            <article class="card tool-summary-card">
+            <article class="card tool-summary-card" id="risikolabor">
               <p class="card-kicker">Tool</p>
               <h3 class="card-title">Risiko und Resilienz verstehen</h3>
               <dl class="tool-card-journey">
@@ -192,7 +214,18 @@
                 <div><dt>Was das Tool zeigt</dt><dd>Du simulierst, wie Stressfaktoren Kosten, Kapitalzugang und Handlungsspielraum verändern.</dd></div>
                 <div><dt>Ergebnis bedeutet</dt><dd>Der Score ist keine Prognose, sondern zeigt, wo Resilienz im Modell schwach wird.</dd></div>
               </dl>
-              <a class="text-link tool-card-cta" href="#risikolabor">Risikolabor ansehen</a>
+              <a class="text-link tool-card-cta" href="erleben/risiko.html">Risikolabor ansehen</a>
+            </article>
+            <article class="card tool-summary-card" id="plattformwirkung">
+              <p class="card-kicker">Tool</p>
+              <h3 class="card-title">Plattformwirkung verstehen</h3>
+              <dl class="tool-card-journey">
+                <div><dt>Nutzerfrage</dt><dd>Warum wirkt derselbe Inhalt anders, wenn ein Algorithmus ihn verstärkt?</dd></div>
+                <div><dt>Heutige Blindstelle</dt><dd>Engagement wird belohnt, auch wenn Empörung und Gruppendruck Polarisierung verstärken.</dd></div>
+                <div><dt>Was das Tool zeigt</dt><dd>Du regelst Erregung, Konflikt, Gruppenbezug und Netzwerkverstärkung und siehst die Demokratiewirkung.</dd></div>
+                <div><dt>Ergebnis bedeutet</dt><dd>Der Faktor zeigt eine Plattformlogik im Modell, kein reales Audit.</dd></div>
+              </dl>
+              <a class="text-link tool-card-cta" href="erleben/plattformen.html">Plattformwirkung testen</a>
             </article>
           </div>
           <div class="demo-method-grid" aria-label="Einordnung der Erleben-Demos">
@@ -202,15 +235,15 @@
             <article><span>Scanner und Kompass</span><p>Orientierungszugänge für erste Wirkungspfad-Prüfungen. Vertiefungen liegen in Werkzeuge, Werkstatt und den Wirkungsfeldern.</p></article>
           </div>
           <div class="experience-path-grid">
-            <a class="experience-path-card" href="#simulator"><span>01</span><strong>Produktwirkung erleben</strong><em>Lieferkette, Score, Steuer und Preiswahrheit.</em></a>
-            <a class="experience-path-card" href="#medienwirkung"><span>02</span><strong>Medienwirkung erleben</strong><em>Text, Quellen, Framing und Demokratiewirkung.</em></a>
-            <a class="experience-path-card" href="#plattformwirkung"><span>03</span><strong>Plattform- und Algorithmuswirkung</strong><em>Reichweite, Empörung, Vertrauen und Polarisierung.</em></a>
+            <a class="experience-path-card" href="erleben/produktwirkung.html"><span>01</span><strong>Produktwirkung erleben</strong><em>Lieferkette, Score, Steuer und Preiswahrheit.</em></a>
+            <a class="experience-path-card" href="erleben/medienwirkung.html"><span>02</span><strong>Medienwirkung erleben</strong><em>Text, Quellen, Framing und Demokratiewirkung.</em></a>
+            <a class="experience-path-card" href="erleben/plattformen.html"><span>03</span><strong>Plattform- und Algorithmuswirkung</strong><em>Reichweite, Empörung, Vertrauen und Polarisierung.</em></a>
             <a class="experience-path-card" href="sdg-plus/medien-demokratie/wirkung-politischer-sprache.html"><span>04</span><strong>Wirkung politischer Sprache</strong><em>Narrative, Frames und politische Begriffe als demokratische Wirkungsräume.</em></a>
-            <a class="experience-path-card" href="#risikolabor"><span>05</span><strong>Risiko- und Resilienz-Simulation</strong><em>Geopolitik, Klima, Energie, Lieferketten und Timing.</em></a>
-            <a class="experience-path-card" href="#alltag"><span>06</span><strong>Alltagswirkung erleben</strong><em>Apfel, T-Shirt, Wohnen, Energie, Pflege und Medien.</em></a>
+            <a class="experience-path-card" href="erleben/risiko.html"><span>05</span><strong>Risiko- und Resilienz-Simulation</strong><em>Geopolitik, Klima, Energie, Lieferketten und Timing.</em></a>
+            <a class="experience-path-card" id="alltag" href="erleben/produktwirkung.html#alltag"><span>06</span><strong>Alltagswirkung erleben</strong><em>Apfel, T-Shirt, Wohnen, Energie, Pflege und Medien.</em></a>
             <a class="experience-path-card" href="#lernmodule"><span>07</span><strong>Quiz und Lernmodule</strong><em>Wirkung erkennen, Kapital und Wirkung unterscheiden.</em></a>
-            <a class="experience-path-card" href="#scorecard-demos"><span>08</span><strong>Wirkungsbewertungen</strong><em>Medienbewertung und Produktpass-Dashboard.</em></a>
-            <a class="experience-path-card" href="#scanner"><span>09</span><strong>Wirkungsscanner und Rechner</strong><em>Kleine Rechner für Texte, Alltag und Strategien.</em></a>
+            <a class="experience-path-card" id="scorecard-demos" href="erleben/medienwirkung.html#scorecard-demos"><span>08</span><strong>Wirkungsbewertungen</strong><em>Medienbewertung und Produktpass-Dashboard.</em></a>
+            <a class="experience-path-card" id="scanner" href="erleben/produktwirkung.html#scanner"><span>09</span><strong>Wirkungsscanner und Rechner</strong><em>Kleine Rechner für Texte, Alltag und Strategien.</em></a>
           </div>
           <aside class="related-questions-block" aria-labelledby="tools-related-title">
             <div class="section-header">
@@ -223,314 +256,6 @@
               <article class="related-question-card"><span>Schutzfrage</span><strong>Bewerten die Tools Menschen?</strong><a class="text-link" href="fragen/#social-credit">Antwort lesen</a></article>
             </div>
           </aside>
-        </div>
-      </section>
-
-      <section class="section" id="simulator" data-simulator>
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Wirkungssteuer-Simulator</p>
-              <h2>Lieferkette wählen. Wirkung sehen. Preis neu lesen.</h2>
-            </div>
-            <p class="card-text">Demo v1.0 mit Score -3 bis +3, Steuerklasse 0 bis 25 Prozent und Bonus/Malus pro Komponente.</p>
-          </div>
-          <div class="model-strip" aria-label="Workflow des Produkt-Simulators">
-            <span>Daten</span>
-            <span>Scorecard</span>
-            <span>Schwächstes Feld</span>
-            <span>Wirkungsklasse</span>
-            <span>Steuerklasse</span>
-            <span>Preis</span>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Berechnung im Browser</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Lieferantenauswahl, schwächstes Wirkungsfeld, Steuerlogik und Preiswirkung zusammenspielen.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Produktpass, Lieferanten- und Materialdaten, Auditdaten, LCA, ESRS/GRI-Bezüge, Preise und Herkunftsnachweise.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Beispielwerte, lineare Schwellen und pauschale Bonus-/Maluslogik ersetzen keine Prüfung.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Demo nutzt Beispielwerte und vereinfachte Schwellen. Reale Einstufungen brauchen versionierte Datenquellen und unabhängige Prüfung.</p></article>
-          </div>
-
-          <div class="experience-tool simulator-shell">
-            <aside class="simulator-controls" aria-label="Simulator Steuerung">
-              <label class="control-label" for="product-select">
-                Produkt
-                <select id="product-select" data-product-select></select>
-              </label>
-              <p class="card-text" data-product-description></p>
-              <div class="preset-row" aria-label="Schnellauswahl">
-                <button class="chip-button" type="button" data-preset="cheap">Kostenminimum</button>
-                <button class="chip-button" type="button" data-preset="balanced">Ausgewogen</button>
-                <button class="chip-button" type="button" data-preset="best">Bestwirkung</button>
-              </div>
-              <div class="method-strip" aria-label="Berechnungsmethode">
-                <div class="method-step"><span>1</span> Indikatoren werden gegen Schwellen bewertet.</div>
-                <div class="method-step"><span>2</span> Je Komponente zählt das schwächste Kernfeld.</div>
-                <div class="method-step"><span>3</span> Global bestimmt das schwächste Feld den Steuersatz.</div>
-                <div class="method-step"><span>4</span> Positive Lieferanten erhalten Bonus, negative erzeugen Malus.</div>
-              </div>
-            </aside>
-
-            <section class="simulator-results" aria-label="Simulator Ergebnis">
-              <p class="hero-kicker">Ergebnis</p>
-              <h3>Reverse-Merit-Order</h3>
-              <div class="impact-kpis">
-                <div class="impact-kpi"><span>Schwächstes Feld</span><strong data-weakest-field>Klima</strong></div>
-                <div class="impact-kpi"><span>Score</span><strong><span class="score-pill tone-bad" data-final-score>-2,40</span></strong></div>
-                <div class="impact-kpi"><span>Wirkungssteuer</span><strong><span class="score-pill tone-bad" data-tax-rate>25 %</span></strong></div>
-                <div class="impact-kpi"><span>Gesamtpreis</span><strong data-total-price>7,25 €</strong></div>
-              </div>
-              <div class="result-explainer-grid">
-                <div><span>Erklärung</span><p data-product-explanation>Der Score wird aus den schwächsten Wirkungsfeldern der ausgewählten Komponenten abgeleitet.</p></div>
-                <div><span>Mögliche Folgen</span><p data-product-feedback>Der Preis kann sinken oder steigen, wenn Wirkung in Bonus, Malus und Steuerlogik einfließt.</p></div>
-              </div>
-              <div class="impact-bars" data-impact-bars></div>
-              <div class="price-summary" data-price-summary></div>
-            </section>
-          </div>
-
-          <div class="component-list" data-component-list></div>
-        </div>
-      </section>
-
-      <section class="section section-muted" id="medienwirkung" data-media-lab>
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Medienwirkung erleben</p>
-              <h2>Öffentlichkeit ist ein Wirkungsraum.</h2>
-            </div>
-            <p class="card-text">Medienberichte, Creator:innen und Plattformlogiken öffnen Resonanzräume für Wahrheit, Vertrauen, Polarisierung, Minderheitenschutz und demokratische Stabilität. Diese Demo bewertet Wirkungspotenziale und Risiken, nicht die Zulässigkeit einer Meinung.</p>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Auswertung im Browser</span>
-            <span class="prototype-badge prototype-badge-caution">Bewertet Wirkungspotenziale, nicht Zulässigkeit oder Wahrheit einer Meinung.</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Textsignale, Quellenklarheit, Kontext, Framing und Erregung zu einer Medien-Wirkungspotenzial-Scorecard werden.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Sichtbarer Text, Quellen, Faktenchecks, Pressekodex, Plattformdaten, Sentiment, Hate-Speech- und Netzwerkindikatoren.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Die Demo nutzt Heuristik. Sie ist keine Wahrheitsprüfung, keine Rechtsbewertung und keine Zensurlogik.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Heuristik ist transparent und begrenzt. Sie ersetzt keine Faktenprüfung, Rechtsbewertung oder redaktionelle Verantwortung.</p></article>
-          </div>
-
-          <div class="media-lab-grid">
-            <aside class="tool-card">
-              <p class="hero-kicker">Beitrag auswählen oder Text testen</p>
-              <dl class="tool-card-journey compact">
-                <div><dt>Nutzerfrage</dt><dd>Welche demokratische Wirkung kann ein Text entfalten?</dd></div>
-                <div><dt>Heutige Blindstelle</dt><dd>Oft zählt nur Reichweite, nicht Quellenklarheit, Framing oder Resonanzrisiko.</dd></div>
-                <div><dt>Was das Tool zeigt</dt><dd>Du wählst ein Beispiel oder prüfst eigenen Text anhand sichtbarer Signale.</dd></div>
-                <div><dt>Ergebnis bedeutet</dt><dd>Die Ausgabe ist Wirkungspotenzial, keine Wahrheitseinstufung.</dd></div>
-              </dl>
-              <label class="control-label" for="media-example">
-                Beispiel
-                <select id="media-example" data-media-example></select>
-              </label>
-              <textarea data-media-input aria-label="Medientext eingeben"></textarea>
-              <div class="preset-row">
-                <button class="chip-button active" type="button" data-media-mode="example">Beispiel bewerten</button>
-                <button class="chip-button" type="button" data-media-mode="custom">Eigenen Text bewerten</button>
-              </div>
-              <p class="formula-note">Demo: Heuristik und Modelllogik. Keine Zensur, kein Faktenurteil, keine amtliche Einstufung.</p>
-            </aside>
-
-            <section class="simulator-results media-score-output" aria-label="Medienwirkung Ergebnis">
-              <p class="hero-kicker">Medien-Wirkungspotenzial-Scorecard</p>
-              <h3 data-media-title>Medienbeitrag</h3>
-              <div class="impact-kpis">
-                <div class="impact-kpi"><span>Score</span><strong><span class="score-pill tone-good" data-media-score>+1,89</span></strong></div>
-                <div class="impact-kpi"><span>Ampel</span><strong data-media-traffic>grün</strong></div>
-                <div class="impact-kpi"><span>Schwächstes Feld</span><strong data-media-harm>keine dominante</strong></div>
-                <div class="impact-kpi"><span>Mögliche Folgen</span><strong data-media-benefit>stärkt Orientierung und Quellenklarheit</strong></div>
-              </div>
-              <div class="result-explainer-grid">
-                <div><span>Erklärung</span><p data-media-explanation></p></div>
-                <div><span>Mögliche Folgen</span><p data-media-feedback>Reichweite kann Vertrauen, Polarisierung und Diskursqualität verstärken oder stabilisieren.</p></div>
-              </div>
-              <div class="media-dimensions" data-media-dimensions></div>
-            </section>
-          </div>
-
-          <div class="scorecard-data-box">
-            <div>
-              <p class="hero-kicker">Woher kommen die Daten?</p>
-              <h3>Für Medien ist jede Bewertung auf sichtbare und überprüfbare Spuren angewiesen.</h3>
-            </div>
-            <ul>
-              <li>öffentlich sichtbarer Text und Quellenangaben im Beitrag</li>
-              <li>Faktencheck-Datenbanken, journalistische Standards und Pressekodex</li>
-              <li>Plattformdaten wie Reichweite, Kommentare, Shares und Wiederholung</li>
-              <li>Sentiment-Analyse, Hate-Speech-Erkennung und Desinformationsmuster</li>
-              <li>Netzwerk- und Bot-Indikatoren sowie Transparenz zu Autor:in, Medium und Finanzierung</li>
-            </ul>
-            <p class="formula-note">Aktueller Stand hier: Demo und hypothetische Simulation. Reale Anwendungen müssten Datenherkunft, Gewichtung und Einspruchsmöglichkeiten offenlegen.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="plattformwirkung" data-platform-lab>
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Plattform- und Algorithmuswirkung</p>
-              <h2>Ein Inhalt wirkt anders, wenn ein Algorithmus ihn verstärkt.</h2>
-            </div>
-            <p class="card-text">Formale Meinungsäußerung kann gesellschaftlich sehr unterschiedliche Wirkungen haben, je nachdem ob Erregung, Feindbilder, Wiederholung und Netzwerkverstärkung Reichweite erzeugen.</p>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Auswertung im Browser</span>
-            <span class="prototype-badge prototype-badge-caution">Bewertet Wirkungspotenziale, nicht Zulässigkeit oder Wahrheit einer Meinung.</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Grundwirkung durch Erregung, Empörung, Gruppenzugehörigkeit, Kommentare und Netzwerkverstärkung skaliert.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Impressions, Shares, Kommentare, Verweildauer, Wiederholung, Graphdaten, Moderationssignale und Reichweitenverläufe.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Regler ersetzen Plattformtelemetrie. Es findet keine personenbezogene Analyse und kein reales Ranking-Audit statt.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Demo zeigt Muster und Wirkungspotenziale. Reale Plattformbewertung braucht transparente Schnittstellen und unabhängige Audits.</p></article>
-          </div>
-          <div class="platform-grid">
-            <div class="tool-card">
-              <p class="hero-kicker">Simulation</p>
-              <dl class="tool-card-journey compact">
-                <div><dt>Nutzerfrage</dt><dd>Warum verändert Verstärkung die Wirkung eines Inhalts?</dd></div>
-                <div><dt>Heutige Blindstelle</dt><dd>Engagement wird belohnt, auch wenn Empörung und Gruppendruck Polarisierung verstärken.</dd></div>
-                <div><dt>Was das Tool zeigt</dt><dd>Du regelst Erregung, Konflikt, Gruppenbezug und Netzwerkverstärkung.</dd></div>
-                <div><dt>Ergebnis bedeutet</dt><dd>Der Faktor zeigt eine Plattformlogik im Modell, kein reales Audit.</dd></div>
-              </dl>
-              <label class="control-label" for="platform-scenario">Szenario<select id="platform-scenario" data-platform-scenario></select></label>
-              <div class="range-field"><label for="platform-emotion">Emotionale Erregung</label><input id="platform-emotion" data-platform-input name="emotion" type="range" min="0" max="100" value="55"></div>
-              <div class="range-field"><label for="platform-outrage">Empörung und Konflikt</label><input id="platform-outrage" data-platform-input name="outrage" type="range" min="0" max="100" value="50"></div>
-              <div class="range-field"><label for="platform-identity">Gruppenzugehörigkeit und Feindbilder</label><input id="platform-identity" data-platform-input name="identity" type="range" min="0" max="100" value="42"></div>
-              <div class="range-field"><label for="platform-comments">Kommentaraktivität und Wiederholung</label><input id="platform-comments" data-platform-input name="comments" type="range" min="0" max="100" value="64"></div>
-              <div class="range-field"><label for="platform-network">Netzwerkverstärkung</label><input id="platform-network" data-platform-input name="network" type="range" min="0" max="100" value="48"></div>
-            </div>
-            <div class="simulator-results">
-              <p class="hero-kicker">Algorithmische Verstärkung</p>
-              <h3 data-platform-title>Wirkungsverstärkung</h3>
-              <div class="impact-kpis">
-                <div class="impact-kpi"><span>Score</span><strong data-platform-base>+1,60</strong></div>
-                <div class="impact-kpi"><span>Schwächstes Feld</span><strong data-platform-weakest>Reichweite</strong></div>
-                <div class="impact-kpi"><span>Verstärkungsfaktor</span><strong data-platform-factor>3,9x</strong></div>
-                <div class="impact-kpi"><span>Demokratiewirkung</span><strong data-platform-democracy>+1,16</strong></div>
-              </div>
-              <div class="result-explainer-grid">
-                <div><span>Erklärung</span><p data-platform-explanation>Die Simulation verbindet Inhaltswirkung mit algorithmischer Verstärkung.</p></div>
-                <div><span>Mögliche Folgen</span><p data-platform-feedback>Hohe Verstärkung kann Vertrauen, Polarisierung und demokratische Resilienz verschieben.</p></div>
-              </div>
-              <div class="radar-bars" data-platform-bars></div>
-              <p class="formula-note" data-platform-note></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-muted" id="risikolabor" data-risk-lab>
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Risiko- und Resilienz-Simulation</p>
-              <h2>Nachhaltigkeitsmanagement ist Risiko-Management.</h2>
-            </div>
-            <p class="card-text">Wirtschaftliche Risiken werden nicht durch Regulierung erzeugt, sondern durch physische Realität, Märkte und gesellschaftliche Stabilität. Die Regulierung macht diese Risiken nur sichtbarer.</p>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Simulation im Browser</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Klima, Energie, Geopolitik, soziale Faktoren, Transparenz und Timing den Handlungsspielraum verändern.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Lieferantennetzwerke, Energie- und Rohstoffdaten, Logistik, Versicherungen, Klimarisiken, Marktpreise und geopolitische Indikatoren.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Das Szenario ist keine Prognose und keine Bilanzierung, sondern eine nachvollziehbare Risikologik.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Szenarien arbeiten mit Modellannahmen. Reale Frühwarnung braucht geprüfte Unternehmens- und Umfelddaten.</p></article>
-          </div>
-
-          <div class="risk-lab-grid">
-            <aside class="tool-card">
-              <p class="hero-kicker">Szenario wählen</p>
-              <dl class="tool-card-journey compact">
-                <div><dt>Nutzerfrage</dt><dd>Wo wird ein Geschäftsmodell unter Stress verwundbar?</dd></div>
-                <div><dt>Heutige Blindstelle</dt><dd>Risiken werden oft erst sichtbar, wenn Kosten, Lieferfähigkeit oder Finanzierung reagieren.</dd></div>
-                <div><dt>Was das Tool zeigt</dt><dd>Du veränderst Klima-, Energie-, Lieferketten- und Transparenzstress.</dd></div>
-                <div><dt>Ergebnis bedeutet</dt><dd>Der Score zeigt Engpässe im Szenario, keine Prognose.</dd></div>
-              </dl>
-              <label class="control-label" for="risk-scenario">
-                Branche / Lage
-                <select id="risk-scenario" data-risk-scenario></select>
-              </label>
-              <div class="range-field">
-                <label for="risk-geopolitics">Geopolitische Instabilität</label>
-                <input id="risk-geopolitics" data-risk-input name="geopolitics" type="range" min="0" max="100" value="58">
-              </div>
-              <div class="range-field">
-                <label for="risk-energy">Energie- und Ressourcenstress</label>
-                <input id="risk-energy" data-risk-input name="energy" type="range" min="0" max="100" value="62">
-              </div>
-              <div class="range-field">
-                <label for="risk-climate">Klima- und Extremwetterrisiko</label>
-                <input id="risk-climate" data-risk-input name="climate" type="range" min="0" max="100" value="54">
-              </div>
-              <div class="range-field">
-                <label for="risk-social">Arbeits- und Menschenrechtsdruck</label>
-                <input id="risk-social" data-risk-input name="social" type="range" min="0" max="100" value="46">
-              </div>
-              <div class="range-field">
-                <label for="risk-transparency">Daten- und Lieferkettentransparenz</label>
-                <input id="risk-transparency" data-risk-input name="transparency" type="range" min="0" max="100" value="38">
-              </div>
-              <div class="range-field">
-                <label for="risk-timing">Zeitpunkt der Entscheidung</label>
-                <input id="risk-timing" data-risk-input name="timing" type="range" min="0" max="100" value="42">
-              </div>
-            </aside>
-
-            <section class="simulator-results risk-output" aria-label="Risiko Ergebnis">
-              <p class="hero-kicker">Resiliente Unternehmenssteuerung</p>
-              <h3 data-risk-title>Wertschöpfung unter Stress</h3>
-              <div class="impact-kpis">
-                <div class="impact-kpi"><span>Score</span><strong data-risk-score>57 / 100</strong></div>
-                <div class="impact-kpi"><span>Schwächstes Feld</span><strong data-risk-weakest>Lieferkettenresilienz</strong></div>
-                <div class="impact-kpi"><span>Finanzierungswirkung</span><strong data-risk-finance>Kapital wird selektiv</strong></div>
-                <div class="impact-kpi"><span>Lieferkettenresilienz</span><strong data-risk-resilience>instabil</strong></div>
-              </div>
-              <div class="risk-flow">
-                <div>
-                  <span>Physische Realität</span>
-                  <strong>Ressourcen, Energie, Wasser, Klima, Extremwetter</strong>
-                </div>
-                <div>
-                  <span>Ökonomische Realität</span>
-                  <strong>Lieferketten, Transport, Versicherungen, Finanzierung</strong>
-                </div>
-                <div>
-                  <span>Wirkungsökonomie</span>
-                  <strong>Daten, Bewertungen, Szenarien, frühe Entscheidungen</strong>
-                </div>
-              </div>
-              <div class="radar-bars" data-risk-bars></div>
-              <div class="result-explainer-grid">
-                <div><span>Erklärung</span><p data-risk-explanation></p></div>
-                <div><span>Mögliche Folgen</span><p data-risk-feedback>Je später Risiken erkannt werden, desto stärker steigen Kosten, Prämien und Notlösungsdruck.</p></div>
-              </div>
-            </section>
-          </div>
-
-          <div class="risk-thesis-grid">
-            <article class="card">
-              <p class="hero-kicker">Frühes Handeln</p>
-              <h3>Viele Optionen, geringere Kosten.</h3>
-              <p class="card-text">Wer Wertschöpfung früh transparent macht, kann Lieferanten entwickeln, Materialflüsse ändern, Energie absichern und Kapitalrisiken senken.</p>
-            </article>
-            <article class="card">
-              <p class="hero-kicker">Spätes Handeln</p>
-              <h3>Optionen schrumpfen, Risikoprämien steigen.</h3>
-              <p class="card-text">Wenn geopolitische, ökologische und soziale Risiken bereits eingepreist werden, wird Transformation teurer und hektischer.</p>
-            </article>
-            <article class="card">
-              <p class="hero-kicker">Krisenmodus</p>
-              <h3>Notlösungen ersetzen Steuerung.</h3>
-              <p class="card-text">Dann geht es nicht mehr um Nachhaltigkeitsimage, sondern um Lieferfähigkeit, Versicherung, Finanzierung, Marktvertrauen und Marge.</p>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -585,149 +310,6 @@
                 <div><span>Mögliche Folgen</span><p data-compass-feedback>Wirkung kann Preise, Prioritäten, Legitimität und Vertrauen verändern.</p></div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="alltag" data-everyday-lab>
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Alltagswirkung erleben</p>
-              <h2>Gleiche Funktion, andere Systemwirkung.</h2>
-            </div>
-            <p class="card-text">Wähle eine Karte und sieh, wie die Wirkungsökonomie nicht nur den Preis oder die Reichweite betrachtet, sondern Folgen, Risiken und bessere Anreize.</p>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Auswertung im Browser</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Alltagssituationen bei gleicher Funktion sehr unterschiedliche Wirkungen auf Mensch, Planet und Demokratie haben.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Lebenszyklusdaten, soziale Indikatoren, regionale Herkunft, Nutzungsdauer, externe Kosten und Marktpreise.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Die Karten sind Beispiele und ersetzen keine vollständige Produkt-, Sozial- oder Infrastrukturbewertung.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Alltagsbeispiele nutzen vereinfachte Annahmen. Lokale Kontexte und geprüfte Daten würden die Bewertung verändern.</p></article>
-          </div>
-          <div class="everyday-grid" data-everyday-grid></div>
-          <article class="scorecard-data-box" data-everyday-output></article>
-        </div>
-      </section>
-
-      <section class="section section-muted" id="scorecard-demos">
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Wirkungsbewertungen</p>
-              <h2>Eine klare Bewertung macht Wirkung diskutierbar.</h2>
-            </div>
-            <p class="card-text">Die Demo zeigt Felder, Begründungen, mögliche Datenquellen und Wirkungen auf unmittelbarer, systemischer und langfristiger Ebene. Für Produktpässe gibt es zusätzlich ein eigenes Dashboard.</p>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Auswertung im Browser</span>
-            <span class="prototype-badge prototype-badge-caution">Bewertet Wirkungspotenziale, nicht Zulässigkeit oder Wahrheit einer Meinung.</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Bewertungsfelder Begründung, Datenquelle und Wirkungen auf unmittelbarer bis langfristiger Ebene sichtbar machen.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Quellen, Indikatoren, Prüfpfade, Auditnotizen, Versionierung und Kontextdaten je Wirkungsfeld.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Die Beispielscorecard zeigt Struktur und Logik, aber keine geprüfte Einstufung eines realen Beitrags.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Bewertungsbeispiele sind didaktisch. Reale Register brauchen Quellenstatus, Reviewhistorie und Exportformate.</p></article>
-          </div>
-          <div class="media-scorecard-demo" data-media-scorecard></div>
-          <div class="button-row">
-            <a class="btn btn-primary" href="scorecard-dashboard.html">Mehr erfahren</a>
-            <a class="btn btn-secondary" href="#medienwirkung">Medienwirkung testen</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="scanner">
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Wirkungsscanner und Rechner</p>
-              <h2>Rechner für Wirkung in Zahlen.</h2>
-            </div>
-            <p class="card-text">Drei vereinfachte Rechner übersetzen Wirkung in Bewertung, gesellschaftlichen Nutzen und Wohlfahrtsbilanz. Sie sind Demo-Modelle, keine amtliche Berechnung.</p>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Berechnung im Browser</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Wirkung in vereinfachte Bewertungen, Nutzenrechnungen und Wohlfahrtsbilanzen übersetzt werden kann.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Primärdaten, Wirkungsnachweise, Gegenfaktoren, Zeiträume, Attribution, Unsicherheit und Prüfstandards.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Die Rechner nutzen klare Formeln, aber keine amtlichen Datensätze und keine geprüfte Monetarisierung.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Rechner nutzen vereinfachte Annahmen. Ergebnisse sind Orientierung, keine amtliche Bewertung und keine Beratung.</p></article>
-          </div>
-
-          <div class="tool-lab">
-            <article class="tool-card" data-kpi-calculator>
-              <p class="hero-kicker">Wirkungsindikatoren-Demo</p>
-              <h3>Wirkungsscore aus vier Kernindikatoren</h3>
-              <dl class="tool-card-journey compact">
-                <div><dt>Nutzerfrage</dt><dd>Wie wird aus mehreren Wirkungsdimensionen ein lesbarer Score?</dd></div>
-                <div><dt>Heutige Blindstelle</dt><dd>Einzel-KPIs wirken präzise, verdecken aber oft Zielkonflikte und Datenqualität.</dd></div>
-                <div><dt>Was das Tool zeigt</dt><dd>Du gewichtest Mensch, Planet, Demokratie und Datenqualität zu einer Demo-Kennzahl.</dd></div>
-                <div><dt>Ergebnis bedeutet</dt><dd>Der Score ist ein Gesprächseinstieg, keine geprüfte Bewertung.</dd></div>
-              </dl>
-              <div class="input-grid">
-                <div class="range-field">
-                  <label for="kpi-human">Mensch</label>
-                  <input id="kpi-human" name="human" type="range" min="0" max="100" value="72">
-                </div>
-                <div class="range-field">
-                  <label for="kpi-planet">Planet</label>
-                  <input id="kpi-planet" name="planet" type="range" min="0" max="100" value="66">
-                </div>
-                <div class="range-field">
-                  <label for="kpi-democracy">Demokratie</label>
-                  <input id="kpi-democracy" name="democracy" type="range" min="0" max="100" value="58">
-                </div>
-                <div class="range-field">
-                  <label for="kpi-quality">Datenqualität</label>
-                  <input id="kpi-quality" name="quality" type="range" min="0" max="100" value="70">
-                </div>
-              </div>
-              <div class="calculator-output" data-kpi-output></div>
-              <p class="formula-note">Formel: 30 % Mensch, 30 % Planet, 25 % Demokratie, 15 % Datenqualität.</p>
-            </article>
-
-            <article class="tool-card" data-nwi-calculator>
-              <p class="hero-kicker">NWI-Rechner</p>
-              <h3>Wohlfahrt statt bloßer Menge</h3>
-              <dl class="tool-card-journey compact">
-                <div><dt>Nutzerfrage</dt><dd>Warum sagt Wachstum allein wenig über Wohlstand aus?</dd></div>
-                <div><dt>Heutige Blindstelle</dt><dd>BIP-Logik zählt Menge, aber Care-Arbeit, Ungleichheit und Folgekosten nur unzureichend.</dd></div>
-                <div><dt>Was das Tool zeigt</dt><dd>Du rechnest Basiswert, Care-Arbeit, Ungleichheit sowie ökologische und soziale Folgekosten zusammen.</dd></div>
-                <div><dt>Ergebnis bedeutet</dt><dd>Der Wert zeigt eine Wohlfahrtsbilanz im Modell, keine amtliche Statistik.</dd></div>
-              </dl>
-              <div class="input-grid">
-                <label class="control-label" for="nwi-base">Konsum / Basiswert in Mrd. Euro<input id="nwi-base" name="base" type="number" min="0" value="2500"></label>
-                <label class="control-label" for="nwi-unpaid">Unbezahlte Care-Arbeit in Mrd. Euro<input id="nwi-unpaid" name="unpaid" type="number" min="0" value="520"></label>
-                <label class="control-label" for="nwi-inequality">Ungleichheitsabschlag in Prozent<input id="nwi-inequality" name="inequality" type="number" min="0" max="100" value="14"></label>
-                <label class="control-label" for="nwi-ecology">Ökologische Folgekosten in Mrd. Euro<input id="nwi-ecology" name="ecology" type="number" min="0" value="380"></label>
-                <label class="control-label" for="nwi-social">Soziale Folgekosten in Mrd. Euro<input id="nwi-social" name="social" type="number" min="0" value="210"></label>
-              </div>
-              <div class="calculator-output" data-nwi-output></div>
-              <p class="formula-note">Formel: Basiswert - Ungleichheitsabschlag + Care-Arbeit - ökologische und soziale Folgekosten.</p>
-            </article>
-
-            <article class="tool-card" data-tsroi-calculator>
-              <p class="hero-kicker">T-SROI-Rechner</p>
-              <h3>Gesellschaftlicher Nutzen pro investiertem Euro</h3>
-              <dl class="tool-card-journey compact">
-                <div><dt>Nutzerfrage</dt><dd>Wann lohnt sich Prävention gesellschaftlich, auch wenn sie im Budget zuerst kostet?</dd></div>
-                <div><dt>Heutige Blindstelle</dt><dd>Klassische Budgets sehen Ausgaben sofort, vermiedene Folgekosten aber oft zu spät.</dd></div>
-                <div><dt>Was das Tool zeigt</dt><dd>Du vergleichst Investition, direkten Nutzen, vermiedene Folgekosten und Ohnehin-Effekt.</dd></div>
-                <div><dt>Ergebnis bedeutet</dt><dd>Die Quote zeigt einen modellhaften Nutzen pro Euro, keinen geprüften Sozialertrag.</dd></div>
-              </dl>
-              <div class="input-grid">
-                <label class="control-label" for="tsroi-investment">Investition in Euro<input id="tsroi-investment" name="investment" type="number" min="1" value="100000"></label>
-                <label class="control-label" for="tsroi-benefit">Direkter Nutzen in Euro<input id="tsroi-benefit" name="benefit" type="number" min="0" value="145000"></label>
-                <label class="control-label" for="tsroi-avoided">Vermiedene Folgekosten in Euro<input id="tsroi-avoided" name="avoided" type="number" min="0" value="90000"></label>
-                <label class="control-label" for="tsroi-deadweight">Ohnehin-Effekt in Prozent<input id="tsroi-deadweight" name="deadweight" type="number" min="0" max="100" value="18"></label>
-              </div>
-              <div class="calculator-output" data-tsroi-output></div>
-              <p class="formula-note">Formel: (direkter Nutzen + vermiedene Folgekosten) × (1 - Ohnehin-Effekt) / Investition.</p>
-            </article>
           </div>
         </div>
       </section>
@@ -904,27 +486,6 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="card-grid">
-            <article class="card">
-              <p class="hero-kicker">Vom Bericht zur Steuerung</p>
-              <h3>Standards werden handlungsfähig.</h3>
-              <p class="card-text">GRI, ESRS und SDG-Indikatoren erscheinen nicht als PDF-Anhang, sondern als Kriterien, die Lieferanten, Preise und Steuerlast beeinflussen.</p>
-            </article>
-            <article class="card">
-              <p class="hero-kicker">Keine Durchschnitts-Flucht</p>
-              <h3>Das schwächste Feld zählt.</h3>
-              <p class="card-text">Reverse-Merit-Order verhindert, dass schlechte Arbeitsbedingungen oder Sicherheitsrisiken durch gute Materialwerte überdeckt werden.</p>
-            </article>
-            <article class="card">
-              <p class="hero-kicker">Verhalten wird plausibel</p>
-              <h3>Bessere Lieferanten werden ökonomisch sichtbar.</h3>
-              <p class="card-text">Ein höherer Einkaufspreis kann im Gesamtsystem günstiger werden, wenn Bonus, Steuer und Risiko gemeinsam betrachtet werden.</p>
-            </article>
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="footer" data-search-exclude>
       <div class="footer-grid">
