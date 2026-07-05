@@ -3,36 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Risiko- und Resilienz-Simulation erleben - Wertschöpfung unter Stress</title>
-    <meta name="description" content="Interaktive Demo der Wirkungsökonomie: Risiko- und Resilienz-Simulator zu Geopolitik, Energie, Klima, Lieferketten, Transparenz und Timing von Entscheidungen.">
-    <link rel="canonical" href="https://wirkungsoekonomie.de/erleben/risiko.html">
+    <title>Stranded Assets: Wenn Werte stranden, bevor sie abgeschrieben sind</title>
+    <meta name="description" content="Stranded Assets verständlich erklärt: Warum Autos, Häuser und Geschäftsmodelle Wert verlieren, bevor sie abgeschrieben sind - mit Erklärvideo und interaktivem Stranded-Asset-Rechner (Modellrechnung, läuft lokal im Browser).">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/stranded-assets/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
-    <meta property="og:title" content="Risiko- und Resilienz-Simulation erleben - Wertschöpfung unter Stress">
-    <meta property="og:description" content="Interaktive Demo der Wirkungsökonomie: Risiko- und Resilienz-Simulator zu Geopolitik, Energie, Klima, Lieferketten, Transparenz und Timing von Entscheidungen.">
-    <meta property="og:url" content="https://wirkungsoekonomie.de/erleben/risiko.html">
+    <meta property="og:title" content="Stranded Assets: Wenn Werte stranden, bevor sie abgeschrieben sind">
+    <meta property="og:description" content="Stranded Assets verständlich erklärt: Warum Autos, Häuser und Geschäftsmodelle Wert verlieren, bevor sie abgeschrieben sind - mit Erklärvideo und interaktivem Stranded-Asset-Rechner (Modellrechnung, läuft lokal im Browser).">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/stranded-assets/">
     <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Risiko- und Resilienz-Simulation erleben - Wertschöpfung unter Stress">
-    <meta name="twitter:description" content="Interaktive Demo der Wirkungsökonomie: Risiko- und Resilienz-Simulator zu Geopolitik, Energie, Klima, Lieferketten, Transparenz und Timing von Entscheidungen.">
+    <meta name="twitter:title" content="Stranded Assets: Wenn Werte stranden, bevor sie abgeschrieben sind">
+    <meta name="twitter:description" content="Stranded Assets verständlich erklärt: Warum Autos, Häuser und Geschäftsmodelle Wert verlieren, bevor sie abgeschrieben sind - mit Erklärvideo und interaktivem Stranded-Asset-Rechner (Modellrechnung, läuft lokal im Browser).">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="../assets/video/stranded-assets-poster.jpg?v=20260705">
     <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "@id": "https://wirkungsoekonomie.de/erleben/risiko.html#webpage",
-        "url": "https://wirkungsoekonomie.de/erleben/risiko.html",
-        "name": "Risiko- und Resilienz-Simulation erleben - Wertschöpfung unter Stress",
-        "description": "Interaktive Demo der Wirkungsökonomie: Risiko- und Resilienz-Simulator zu Geopolitik, Energie, Klima, Lieferketten, Transparenz und Timing von Entscheidungen.",
+        "@id": "https://wirkungsoekonomie.de/stranded-assets/#webpage",
+        "url": "https://wirkungsoekonomie.de/stranded-assets/",
+        "name": "Stranded Assets: Wenn Werte stranden, bevor sie abgeschrieben sind",
+        "description": "Stranded Assets verständlich erklärt: Warum Autos, Häuser und Geschäftsmodelle Wert verlieren, bevor sie abgeschrieben sind - mit Erklärvideo und interaktivem Stranded-Asset-Rechner (Modellrechnung, läuft lokal im Browser).",
         "inLanguage": "de",
         "isPartOf": {
           "@id": "https://wirkungsoekonomie.de/#website"
         }
       }
     </script>
+    <style>
+      /* Stranded-Asset-Rechner: Stufen-Badges (seitenlokal, nutzt Site-Variablen) */
+      .sa-stufe--gruen { border-color: var(--green); color: var(--green-dark); }
+      .sa-stufe--gelb { border-color: var(--gold-deep, #9A6F12); color: var(--gold-deep, #9A6F12); }
+      .sa-stufe--rot { border-color: var(--coral); color: var(--coral); }
+      [data-sa-szenario] label { margin-right: 1rem; }
+      .sa-disclaimer { font-size: 0.85rem; }
+      [data-sa-szenario] .card-text, [data-sa-szenario] label { text-transform: none; letter-spacing: normal; font-weight: 400; }
+    </style>
   </head>
   <body>
 <header class="site-header" data-search-exclude>
@@ -73,132 +83,209 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="hero-kicker">Erlebniswelt · Interaktive Demo</p>
-          <h1 class="hero-title">Risiko- und Resilienz-Simulation</h1>
-          <p class="hero-subtitle">Nachhaltigkeitsmanagement ist Risikomanagement: Der Simulator zeigt, wie Klima-, Energie-, Lieferketten- und Transparenzstress Kosten, Kapitalzugang und Handlungsspielraum verändern.</p>
+          <p class="hero-kicker">Systemresilienz · Risikomanagement</p>
+          <h1 class="hero-title">Stranded Assets: Wenn Werte stranden, bevor sie abgeschrieben sind</h1>
+          <p class="hero-subtitle">Autos, Häuser, Anlagen und ganze Geschäftsmodelle können Wert verlieren, lange bevor sie verbraucht sind - weil Folgekosten heute nicht auf dem Preisschild stehen. Diese Seite zeigt die Risikologik dahinter, und der Rechner macht sie für deinen Fall greifbar.</p>
           <div class="hero-actions">
-            <a class="btn btn-secondary" href="../erleben.html">Zur Erlebniswelt-Übersicht</a>
+            <a class="btn btn-primary" href="#rechner">Zum Stranded-Asset-Rechner</a>
+            <a class="btn btn-secondary" href="#video">Video ansehen (4,5 Min.)</a>
           </div>
         </div>
       </section>
 
-      <section class="section section-muted" id="risikolabor" data-risk-lab>
-        <div class="container-wide">
-          <div class="inline-heading">
-            <div>
-              <p class="hero-kicker">Risiko- und Resilienz-Simulation</p>
-              <h2>Nachhaltigkeitsmanagement ist Risiko-Management.</h2>
-            </div>
-            <p class="card-text">Wirtschaftliche Risiken werden nicht durch Regulierung erzeugt, sondern durch physische Realität, Märkte und gesellschaftliche Stabilität. Die Regulierung macht diese Risiken nur sichtbarer.</p>
-          </div>
-          <div class="prototype-badge-row" aria-label="Demo-Hinweise">
-            <span class="prototype-badge">Modellhafte Demo · keine amtliche Einstufung · lokale Simulation im Browser</span>
-          </div>
-          <div class="demo-method-grid" aria-label="Was diese Demo zeigt">
-            <article><span>Was wird gezeigt?</span><p>Wie Klima, Energie, Geopolitik, soziale Faktoren, Transparenz und Timing den Handlungsspielraum verändern.</p></article>
-            <article><span>Welche Daten wären real nötig?</span><p>Lieferantennetzwerke, Energie- und Rohstoffdaten, Logistik, Versicherungen, Klimarisiken, Marktpreise und geopolitische Indikatoren.</p></article>
-            <article><span>Was ist vereinfacht?</span><p>Das Szenario ist keine Prognose und keine Bilanzierung, sondern eine nachvollziehbare Risikologik.</p></article>
-            <article><span>Methodik und Grenzen</span><p>Die Szenarien arbeiten mit Modellannahmen. Reale Frühwarnung braucht geprüfte Unternehmens- und Umfelddaten.</p></article>
-          </div>
+      <section class="section" id="video">
+        <div class="section-header">
+          <p class="hero-kicker">Erklärvideo</p>
+          <h2>Warum Werte stranden - in viereinhalb Minuten</h2>
+        </div>
+        <div class="video-frame">
+          <video class="home-explainer-video" controls controlsList="nodownload" preload="metadata" playsinline poster="../assets/video/stranded-assets-poster.jpg?v=20260705" aria-label="Erklärvideo: Stranded Assets - wenn Werte stranden, bevor sie abgeschrieben sind">
+            <source src="../assets/video/stranded-assets.mp4?v=20260705" type="video/mp4">
+            Dein Browser kann dieses Video nicht direkt abspielen.
+          </video>
+        </div>
+        <details class="transcript">
+          <summary>Transkript des Videos anzeigen</summary>
+          <p>Stell dir einen Hafen vor, in dem Schiffe liegen, die nie wieder auslaufen werden. Sie sind nicht kaputt. Sie sind gestrandet, weil sich die Welt um sie herum verändert hat. Genau das passiert gerade mit Vermögenswerten. Ein Auto, ein Haus, eine Fabrik, ein ganzes Geschäftsmodell kann Wert verlieren, lange bevor es abgenutzt ist. Solche Werte nennt man gestrandete Vermögen, auf Englisch Stranded Assets.</p>
+          <p>Warum passiert das? Weil unsere Preise nicht die ganze Geschichte erzählen. Was ein Auto oder eine Heizung an Folgekosten verursacht, steht heute nicht auf dem Preisschild. Diese Kosten sind aber nicht weg. Sie sammeln sich an, unsichtbar, wie Wasser hinter einem Damm. Und irgendwann bricht der Damm. Dann holen neue Regeln, Klimafolgen oder veränderte Märkte die Rechnung nach - auf einmal.</p>
+          <p>Das betrifft nicht nur große Konzerne: den Verbrenner in der Garage, die Gasheizung im Keller, Unternehmen mit gestrigen Annahmen, Kommunen, Rentenkassen und Staaten. Die Frage ist nicht, ob dich das betrifft - sondern wie stark.</p>
+          <p>Banken, Versicherungen und Investoren können mit Risiken umgehen, solange sie einen Preis haben. Gefährlich sind die unbepreisten, korrelierten Risiken. Deshalb ziehen sich Versicherer heute schon aus ganzen Regionen zurück. Was nicht mehr versicherbar ist, ist schwer verkäuflich - und verliert Wert.</p>
+          <p>Die Wirkungsökonomie setzt mit einer Logik an, die jeder Risikomanager versteht: Eine Kette ist so stark wie ihr schwächstes Glied. Das schwächste Wirkungsfeld bleibt sichtbar - wie ein Frühwarnsystem. Und der wahre Preis zeigt den Abstand zwischen Marktpreis und ehrlicher Rechnung: Dieser Abstand ist schlafendes Risiko.</p>
+          <p>Der Rechner auf dieser Seite macht das greifbar: Du stellst die Annahmen selbst ein und bekommst einen Korridor, kein Orakel. Gestrandet wird nicht per Schicksal: Wer seine Schwachstelle kennt, kann handeln. Früh handeln kostet Planung, spät reagieren kostet Substanz. Am Ende geht es nicht um Angst, sondern um Widerstandskraft - Resilienz ist die Rendite dieser Ehrlichkeit.</p>
+        </details>
+      </section>
 
-          <div class="risk-lab-grid">
-            <aside class="tool-card">
-              <p class="hero-kicker">Szenario wählen</p>
-              <dl class="tool-card-journey compact">
-                <div><dt>Nutzerfrage</dt><dd>Wo wird ein Geschäftsmodell unter Stress verwundbar?</dd></div>
-                <div><dt>Heutige Blindstelle</dt><dd>Risiken werden oft erst sichtbar, wenn Kosten, Lieferfähigkeit oder Finanzierung reagieren.</dd></div>
-                <div><dt>Was das Tool zeigt</dt><dd>Du veränderst Klima-, Energie-, Lieferketten- und Transparenzstress.</dd></div>
-                <div><dt>Ergebnis bedeutet</dt><dd>Der Score zeigt Engpässe im Szenario, keine Prognose.</dd></div>
-              </dl>
-              <label class="control-label" for="risk-scenario">
-                Branche / Lage
-                <select id="risk-scenario" data-risk-scenario></select>
-              </label>
-              <div class="range-field">
-                <label for="risk-geopolitics">Geopolitische Instabilität</label>
-                <input id="risk-geopolitics" data-risk-input name="geopolitics" type="range" min="0" max="100" value="58">
-              </div>
-              <div class="range-field">
-                <label for="risk-energy">Energie- und Ressourcenstress</label>
-                <input id="risk-energy" data-risk-input name="energy" type="range" min="0" max="100" value="62">
-              </div>
-              <div class="range-field">
-                <label for="risk-climate">Klima- und Extremwetterrisiko</label>
-                <input id="risk-climate" data-risk-input name="climate" type="range" min="0" max="100" value="54">
-              </div>
-              <div class="range-field">
-                <label for="risk-social">Arbeits- und Menschenrechtsdruck</label>
-                <input id="risk-social" data-risk-input name="social" type="range" min="0" max="100" value="46">
-              </div>
-              <div class="range-field">
-                <label for="risk-transparency">Daten- und Lieferkettentransparenz</label>
-                <input id="risk-transparency" data-risk-input name="transparency" type="range" min="0" max="100" value="38">
-              </div>
-              <div class="range-field">
-                <label for="risk-timing">Zeitpunkt der Entscheidung</label>
-                <input id="risk-timing" data-risk-input name="timing" type="range" min="0" max="100" value="42">
-              </div>
-            </aside>
-
-            <section class="simulator-results risk-output" aria-label="Risiko Ergebnis">
-              <p class="hero-kicker">Resiliente Unternehmenssteuerung</p>
-              <h3 data-risk-title>Wertschöpfung unter Stress</h3>
-              <div class="impact-kpis">
-                <div class="impact-kpi"><span>Score</span><strong data-risk-score>57 / 100</strong></div>
-                <div class="impact-kpi"><span>Schwächstes Feld</span><strong data-risk-weakest>Lieferkettenresilienz</strong></div>
-                <div class="impact-kpi"><span>Finanzierungswirkung</span><strong data-risk-finance>Kapital wird selektiv</strong></div>
-                <div class="impact-kpi"><span>Lieferkettenresilienz</span><strong data-risk-resilience>instabil</strong></div>
-              </div>
-              <div class="risk-flow">
-                <div>
-                  <span>Physische Realität</span>
-                  <strong>Ressourcen, Energie, Wasser, Klima, Extremwetter</strong>
-                </div>
-                <div>
-                  <span>Ökonomische Realität</span>
-                  <strong>Lieferketten, Transport, Versicherungen, Finanzierung</strong>
-                </div>
-                <div>
-                  <span>Wirkungsökonomie</span>
-                  <strong>Daten, Bewertungen, Szenarien, frühe Entscheidungen</strong>
-                </div>
-              </div>
-              <div class="radar-bars" data-risk-bars></div>
-              <div class="result-explainer-grid">
-                <div><span>Erklärung</span><p data-risk-explanation></p></div>
-                <div><span>Mögliche Folgen</span><p data-risk-feedback>Je später Risiken erkannt werden, desto stärker steigen Kosten, Prämien und Notlösungsdruck.</p></div>
-              </div>
-            </section>
-          </div>
-
-          <div class="risk-thesis-grid">
-            <article class="card">
-              <p class="hero-kicker">Frühes Handeln</p>
-              <h3>Viele Optionen, geringere Kosten.</h3>
-              <p class="card-text">Wer Wertschöpfung früh transparent macht, kann Lieferanten entwickeln, Materialflüsse ändern, Energie absichern und Kapitalrisiken senken.</p>
-            </article>
-            <article class="card">
-              <p class="hero-kicker">Spätes Handeln</p>
-              <h3>Optionen schrumpfen, Risikoprämien steigen.</h3>
-              <p class="card-text">Wenn geopolitische, ökologische und soziale Risiken bereits eingepreist werden, wird Transformation teurer und hektischer.</p>
-            </article>
-            <article class="card">
-              <p class="hero-kicker">Krisenmodus</p>
-              <h3>Notlösungen ersetzen Steuerung.</h3>
-              <p class="card-text">Dann geht es nicht mehr um Nachhaltigkeitsimage, sondern um Lieferfähigkeit, Versicherung, Finanzierung, Marktvertrauen und Marge.</p>
-            </article>
-          </div>
+      <section class="section section-muted">
+        <div class="section-header">
+          <p class="hero-kicker">Die Risikologik</p>
+          <h2>Was strandet - und warum</h2>
+          <p class="card-text">Werte stranden, wenn Folgekosten, die lange unsichtbar waren, plötzlich eingepreist werden - durch Regeln, Märkte, Klimafolgen oder Versicherer. Das betrifft alle Ebenen:</p>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>Das Auto</h3>
+            <p class="card-text">Der Wiederverkaufswert eines Verbrenners hängt daran, dass ihn in fünf Jahren noch jemand kaufen will - zu heutigen Bedingungen. Strengere Regeln, Zufahrtszonen und steigende Betriebskosten verschieben diese Rechnung leise, aber stetig.</p>
+          </article>
+          <article class="card">
+            <h3>Das Haus mit seiner Heizung</h3>
+            <p class="card-text">Effizienzklasse und Heizungstyp entscheiden zunehmend über Finanzierbarkeit, Versicherbarkeit und Verkaufspreis. Ein unsaniertes Gebäude mit fossiler Heizung trägt ein Risiko, das im Kaufpreis von gestern nicht enthalten war.</p>
+          </article>
+          <article class="card">
+            <h3>Das Unternehmen</h3>
+            <p class="card-text">Geschäftsmodelle stranden, wenn ihr Kern an unbepreisten Folgekosten hängt: emissionsintensive Prozesse, ein dominanter Inputpreis, schwindende Versicherbarkeit. Die Bilanz zeigt das erst, wenn es teuer ist.</p>
+          </article>
+        </div>
+        <div class="card-grid two">
+          <article class="card">
+            <h3>Kommune und Staat</h3>
+            <p class="card-text">Kommunale Infrastruktur, Gewerbesteuerbasis und staatliche Beteiligungen stehen auf denselben Werten. Strandet die Basis, stranden Haushalte - von der Kreisstadt bis zum Staatsfonds. Mehr dazu im Wirkungsfeld <a class="text-link" href="../wirkungsfelder/staat-recht-demokratie/">Staat, Recht &amp; Demokratie</a>.</p>
+          </article>
+          <article class="card">
+            <h3>Gesellschaft und Vorsorge</h3>
+            <p class="card-text">Rentenkapital und Ersparnisse sind investiert - auch in Werte mit Strandungsrisiko. Systemresilienz heißt, diese Konzentration zu sehen, bevor sie sich realisiert. Mehr dazu im Wirkungsfeld <a class="text-link" href="../wirkungsfelder/finanzsystem-kapital/">Finanzsystem &amp; Kapital</a>.</p>
+          </article>
+        </div>
+        <div class="why-block">
+          <p class="hero-kicker">Der Kern in einem Satz</p>
+          <p class="card-text">Die Lücke zwischen Marktpreis und wahrem Preis ist schlafendes Risiko: Je größer sie ist, desto härter fällt die Korrektur aus, wenn die Wirklichkeit sie schließt. Die Wirkungsökonomie macht diese Lücke sichtbar - mit dem <a class="text-link" href="../modell.html">schwächsten Wirkungsfeld als Frühwarnsystem</a> und dem wahren Preis als risikoadjustierter Bewertung.</p>
         </div>
       </section>
 
-      <section class="section section-muted" aria-label="Einordnung">
-        <div class="container">
-          <p class="formula-note">Alle Module dieser Seite sind modellhafte Demos mit lokaler Berechnung im Browser: keine amtliche Einstufung, keine Beratung, keine Personenbewertung. Methodik und Schutzlinien erklärt die <a class="text-link" href="../erleben.html">Übersichtsseite der Erlebniswelt</a>.</p>
-          <p class="formula-note">Vertiefung: Was unbepreiste Risiken für Auto, Haus und Geschäftsmodell bedeuten, zeigt das Dossier <a class="text-link" href="../stranded-assets/">Stranded Assets - mit Rechner und Erklärvideo</a>.</p>
+      <section class="section" id="rechner" data-stranded-rechner data-parameter-url="../assets/data/stranded-assets-parameter.json">
+        <div class="section-header">
+          <p class="hero-kicker">Interaktive Modellrechnung</p>
+          <h2>Der Stranded-Asset-Rechner</h2>
+          <p class="card-text">Wähle, was du prüfen willst, und stelle das Szenario ein: Wie konsequent werden Folgekosten in den nächsten Jahren eingepreist? Alles läuft lokal in deinem Browser - es werden keine Daten übertragen.</p>
+        </div>
+        <div class="prototype-badge-row" aria-label="Demo-Hinweise">
+          <span class="prototype-badge">Modellrechnung v1 · illustriert die Risikologik · keine Anlage-, Kauf- oder Rechtsberatung · keine Datenübertragung</span>
+        </div>
+
+        <fieldset class="control-label" data-sa-szenario>
+          <legend>Szenario: Wie konsequent werden Folgekosten eingepreist?</legend>
+          <label><input type="radio" name="sa-szenario" value="moderat"> Moderat</label>
+          <label><input type="radio" name="sa-szenario" value="mittel" checked> Mittel</label>
+          <label><input type="radio" name="sa-szenario" value="streng"> Streng</label>
+          <p class="card-text" data-sa-szenario-note aria-live="polite"></p>
+        </fieldset>
+
+        <div class="compass-mode-selector" role="tablist" aria-label="Was möchtest du prüfen?">
+          <button type="button" role="tab" data-sa-tab="auto" aria-selected="true">Mein Auto</button>
+          <button type="button" role="tab" data-sa-tab="haus" aria-selected="false">Mein Haus &amp; meine Heizung</button>
+          <button type="button" role="tab" data-sa-tab="unternehmen" aria-selected="false">Mein Geschäftsmodell</button>
+        </div>
+
+        <div class="card" data-sa-panel="auto">
+          <div data-sa-auto>
+            <label class="control-label" for="sa-auto-antrieb">Antrieb
+              <select id="sa-auto-antrieb" name="sa-auto-antrieb">
+                <option value="benzin" selected>Benzin</option>
+                <option value="diesel">Diesel</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="elektro">Elektro</option>
+              </select>
+            </label>
+            <label class="control-label" for="sa-auto-alter">Fahrzeugalter (Jahre)
+              <input id="sa-auto-alter" name="sa-auto-alter" type="number" min="0" max="30" value="4">
+            </label>
+            <label class="control-label" for="sa-auto-haltedauer">Geplante weitere Haltedauer (Jahre)
+              <input id="sa-auto-haltedauer" name="sa-auto-haltedauer" type="number" min="1" max="15" value="5">
+            </label>
+            <label class="control-label" for="sa-auto-km">Jahresfahrleistung (km)
+              <input id="sa-auto-km" name="sa-auto-km" type="number" min="0" max="60000" step="1000" value="12000">
+            </label>
+          </div>
+          <div data-sa-ergebnis="auto" aria-live="polite"></div>
+        </div>
+
+        <div class="card" data-sa-panel="haus" hidden>
+          <div data-sa-haus>
+            <label class="control-label" for="sa-haus-heizung">Heizung
+              <select id="sa-haus-heizung" name="sa-haus-heizung">
+                <option value="gas" selected>Gasheizung</option>
+                <option value="oel">Ölheizung</option>
+                <option value="fernwaerme">Fernwärme</option>
+                <option value="waermepumpe">Wärmepumpe</option>
+              </select>
+            </label>
+            <label class="control-label" for="sa-haus-klasse">Energie-Effizienzklasse (grob)
+              <select id="sa-haus-klasse" name="sa-haus-klasse">
+                <option value="ab">A/B (effizient)</option>
+                <option value="cd">C/D</option>
+                <option value="ef" selected>E/F</option>
+                <option value="gh">G/H (unsaniert alt)</option>
+              </select>
+            </label>
+            <label class="control-label" for="sa-haus-stand">Sanierungsstand
+              <select id="sa-haus-stand" name="sa-haus-stand">
+                <option value="frisch">Umfassend saniert</option>
+                <option value="teil" selected>Teilsaniert</option>
+                <option value="unsaniert">Lange nichts gemacht</option>
+              </select>
+            </label>
+          </div>
+          <div data-sa-ergebnis="haus" aria-live="polite"></div>
+        </div>
+
+        <div class="card" data-sa-panel="unternehmen" hidden>
+          <p class="card-text">Fünf Fragen, Schwächstes-Feld-Logik: Die schlechteste Antwort bestimmt das Ergebnis - so, wie es die Reverse Merit Order der Wirkungsökonomie vorsieht.</p>
+          <div data-sa-unternehmen></div>
+          <div data-sa-ergebnis="unternehmen" aria-live="polite"></div>
+        </div>
+
+        <details class="transcript" data-sa-annahmen-wrap>
+          <summary>Alle Modellannahmen im Klartext anzeigen</summary>
+          <div data-sa-annahmen></div>
+        </details>
+      </section>
+
+      <section class="section section-muted">
+        <div class="section-header">
+          <p class="hero-kicker">Handlungsspielraum</p>
+          <h2>Was das Risiko senkt</h2>
+          <p class="card-text">Gestrandet wird nicht per Schicksal. Fast immer gilt: Früh handeln kostet Planung, spät reagieren kostet Substanz.</p>
+        </div>
+        <div class="card-grid four">
+          <article class="card">
+            <h3>Sanieren</h3>
+            <p class="card-text">Gebäudehülle und Heizung sind planbare Projekte. Jede Stufe Effizienzklasse verkleinert den Risiko-Korridor - und erhöht Finanzierbarkeit und Versicherbarkeit.</p>
+          </article>
+          <article class="card">
+            <h3>Umstellen</h3>
+            <p class="card-text">Antrieb, Energieträger, Prozesse: Wer den Wechsel selbst terminiert, wählt den günstigen Zeitpunkt. Wer wartet, überlässt ihn den Ereignissen.</p>
+          </article>
+          <article class="card">
+            <h3>Diversifizieren</h3>
+            <p class="card-text">Ein dominanter Inputpreis oder ein einzelnes Produkt ist ein Klumpenrisiko. Breitere Umsatzbasis heißt: Kein einzelnes Feld kann das Ganze stranden lassen.</p>
+          </article>
+          <article class="card">
+            <h3>Transparenz schaffen</h3>
+            <p class="card-text">Wer seine Wirkungsdaten kennt, verhandelt besser - mit Banken, Versicherern und Käufern. Sichtbares Risiko ist steuerbares Risiko.</p>
+          </article>
         </div>
       </section>
 
+      <section class="section next-step-block">
+        <div class="section-header">
+          <p class="hero-kicker">Weiter im Thema</p>
+          <h2>Vom Einzelfall zum System</h2>
+        </div>
+        <div class="card-grid two">
+          <article class="card">
+            <h3>Für Investoren und Finanzmarkt</h3>
+            <p class="card-text">Wirkungsrendite, schwächstes Feld als Risikosignal und der wahre Preis als Bewertungskorrektur.</p>
+            <a class="btn btn-primary" href="../fuer/investoren.html">Zur Investoren-Perspektive</a>
+          </article>
+          <article class="card">
+            <h3>Risiko im Labor testen</h3>
+            <p class="card-text">Der Risiko- und Resilienz-Simulator zeigt, wie Stressoren ein Geschäftsmodell unter Druck setzen.</p>
+            <a class="btn btn-secondary" href="../erleben/risiko.html">Zum Risikolabor</a>
+          </article>
+        </div>
+        <p class="card-text">Vertiefung: <a class="text-link" href="../wirkungsfelder/finanzsystem-kapital/">Wirkungsfeld Finanzsystem &amp; Kapital</a> · <a class="text-link" href="../modell.html">Das Modell der Wirkungsökonomie</a> · <a class="text-link" href="../vergleich.html">Abgrenzung zu ESG &amp; Co.</a></p>
+      </section>
     </main>
+
 <footer class="footer" data-search-exclude>
       <div class="footer-grid">
         <div>
@@ -353,6 +440,6 @@
       </div>
     </footer>
     <script src="../assets/js/main.js?v=20260612-mobile-table-fix"></script>
-    <script src="../assets/js/erleben.js?v=20260525-ux-finish"></script>
+    <script src="../assets/js/stranded-assets.js?v=20260705"></script>
   </body>
 </html>
