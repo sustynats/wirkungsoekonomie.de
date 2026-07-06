@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-06T11:48:29.719Z",
-  "count": 1659,
+  "generatedAt": "2026-07-06T12:54:00.612Z",
+  "count": 1660,
   "letters": [
     "#",
     "A",
@@ -645,6 +645,7 @@
       "intersektionalitaet",
       "intertemporale-freiheit",
       "intertemporale-freiheitssicherung",
+      "invention",
       "investitionsschuld",
       "ipbes",
       "ipcc",
@@ -2354,12 +2355,15 @@
       "slug": "arbitrageur",
       "url": "/begriffe/arbitrageur/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Ein Arbitrageur erkennt und nutzt Unterschiede zwischen Preisen, Informationen, Regulierung, Orten oder Zeitpunkten. Arbitrage kann Ineffizienzen abbauen, aber auch bloße Wertabschöpfung ohne positive Systemwirkung erzeugen.",
+      "shortDefinition": "Ein Arbitrageur erkennt und nutzt Preis-, Informations-, Zeit-, Regulierungs- oder Bewertungsdifferenzen. Wirkungsökonomisch zählt, ob dadurch Koordination verbessert oder Wirkung abgeschöpft und externalisiert wird.",
       "aliases": [
         "Arbitrageur / Arbitrageunternehmer",
         "Arbitrageur",
         "Arbitrageunternehmer",
-        "Arbitrage"
+        "Arbitrage",
+        "findiger Unternehmer",
+        "Kirzner-Unternehmer",
+        "Koordinationsunternehmer"
       ]
     },
     {
@@ -5745,9 +5749,13 @@
       "slug": "erfindung",
       "url": "/begriffe/erfindung/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Eine Erfindung ist eine neue technische, organisatorische oder konzeptionelle Möglichkeit, die noch nicht notwendigerweise wirksam verbreitet ist.",
+      "shortDefinition": "Eine Erfindung ist eine neue Lösung oder Möglichkeit. Sie ist noch keine Innovation, solange sie nicht angewendet, durchgesetzt und wirksam verbreitet ist.",
       "aliases": [
-        "Erfindung"
+        "Erfindung",
+        "technische Erfindung",
+        "neue Lösung",
+        "konzeptionelle Erfindung",
+        "organisatorische Erfindung"
       ]
     },
     {
@@ -6124,9 +6132,13 @@
       "slug": "evolutorischer-unternehmer",
       "url": "/begriffe/evolutorischer-unternehmer/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte oder Märkte, sondern auch die eigene Kompetenz, Wahrnehmung, Organisation und Entscheidungslogik weiter. Bei Jochen Röpke steht damit unternehmerisches Lernen, Selbstveränderung und Kompetenzentwicklung im Zentrum.",
+      "shortDefinition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte und Märkte, sondern die eigene Wahrnehmung, Kompetenz, Organisation und Entscheidungslogik weiter.",
       "aliases": [
-        "Evolutorischer Unternehmer"
+        "Evolutorischer Unternehmer",
+        "Röpke-Unternehmer",
+        "lernender Unternehmer",
+        "selbstevolutorischer Unternehmer",
+        "homo sapiens oeconomicus"
       ]
     },
     {
@@ -8466,10 +8478,14 @@
       "slug": "homo-oeconomicus",
       "url": "/begriffe/homo-oeconomicus/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Der Homo Oeconomicus ist ein Modellakteur der klassischen und neoklassischen Ökonomie: rational, nutzenmaximierend, informiert und auf eigene Präferenzen bezogen. Er ist ein analytisches Werkzeug, kein realistisches Menschenbild.",
+      "shortDefinition": "Der Homo Oeconomicus ist ein ökonomischer Modellakteur. In der Röpke-Lesart markiert er die Routine- und Allokationslogik des Verwaltens innerhalb gegebener Ziele.",
       "aliases": [
         "Homo Oeconomicus",
-        "Homo oeconomicus"
+        "Homo oeconomicus",
+        "Homo Ökonomicus",
+        "rationaler Nutzenmaximierer",
+        "Modellakteur der Neoklassik",
+        "Routineunternehmer als Homo oeconomicus"
       ]
     },
     {
@@ -8998,9 +9014,13 @@
       "slug": "innovation",
       "url": "/begriffe/innovation/",
       "category": "Glossar-Erweiterung",
-      "shortDefinition": "Im Schumpeter-Sinn entsteht Innovation durch neue Kombinationen von Produktionsfaktoren, Technologien, Organisationen, Märkten oder Ressourcenpfaden.",
+      "shortDefinition": "Innovation ist die Durchsetzung einer Neuerung in Markt, Organisation, Infrastruktur oder gesellschaftlicher Praxis. Sie unterscheidet sich von Invention und Erfindung durch Anwendung, Diffusion und Wirkung.",
       "aliases": [
-        "Innovation"
+        "Innovation",
+        "Durchsetzung von Neuerungen",
+        "Marktdurchsetzung von Neuerungen",
+        "Innovation nach Schumpeter",
+        "neue Kombination in Nutzung"
       ]
     },
     {
@@ -9009,9 +9029,13 @@
       "slug": "innovativer-unternehmer",
       "url": "/begriffe/innovativer-unternehmer/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, neue Produktionsweisen, neue Märkte, neue Bezugsquellen oder neue Organisationsformen. Er verschiebt bestehende Gleichgewichte und eröffnet neue Entwicklungspfade.",
+      "shortDefinition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden nicht nur erfunden, sondern wirtschaftlich und gesellschaftlich wirksam.",
       "aliases": [
-        "Innovativer Unternehmer"
+        "Innovativer Unternehmer",
+        "schöpferischer Unternehmer",
+        "Schumpeter-Unternehmer",
+        "Innovationsunternehmer",
+        "Durchsetzer neuer Kombinationen"
       ]
     },
     {
@@ -9189,6 +9213,21 @@
       ]
     },
     {
+      "id": "invention",
+      "label": "Invention",
+      "slug": "invention",
+      "url": "/begriffe/invention/",
+      "category": "Innovation, Evolution und Unternehmertum",
+      "shortDefinition": "Invention bezeichnet die neue Möglichkeit vor ihrer Durchsetzung: Idee, Prototyp, Verfahren oder Lösung, die erst durch Anwendung und Diffusion zur Innovation wird.",
+      "aliases": [
+        "Invention",
+        "Inventionen",
+        "Invention stage",
+        "Vorstufe der Innovation",
+        "neue Möglichkeit vor Innovation"
+      ]
+    },
+    {
       "id": "investitionsschuld",
       "label": "Investitionsschuld",
       "slug": "investitionsschuld",
@@ -9282,9 +9321,13 @@
       "slug": "jochen-roepke",
       "url": "/begriffe/jochen-roepke/",
       "category": "Glossar-Erweiterung",
-      "shortDefinition": "Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
+      "shortDefinition": "Jochen Röpke ist für die Wirkungsökonomie eine Bezugslinie für Unternehmertum als Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
       "aliases": [
-        "Jochen Röpke"
+        "Jochen Röpke",
+        "Röpke",
+        "Prof. Jochen Röpke",
+        "Röpke-Unternehmertypen",
+        "Der lernende Unternehmer"
       ]
     },
     {
@@ -10679,9 +10722,13 @@
       "slug": "lernebenen",
       "url": "/begriffe/lernebenen/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Lernebenen unterscheiden unterschiedliche Tiefen des Lernens: Anpassung, Reflexion, Transformation und Entwicklung der eigenen Lernfähigkeit.",
+      "shortDefinition": "Lernebenen unterscheiden, ob Lernen nur Anpassung, Reflexion, Transformation oder Entwicklung der eigenen Lernfähigkeit bedeutet.",
       "aliases": [
-        "Lernebenen"
+        "Lernebenen",
+        "Lernstufen",
+        "Ebenen unternehmerischen Lernens",
+        "Lernen lernen",
+        "Selbstevolution"
       ]
     },
     {
@@ -12342,12 +12389,14 @@
       "slug": "neukombination",
       "url": "/begriffe/neukombination/",
       "category": "Glossar-Erweiterung",
-      "shortDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Kombinationen bestehender Produktionsfaktoren und Wissensbestände.",
+      "shortDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung durch neue Kombinationen bestehender Produktionsfaktoren, Wissensbestände, Technologien, Kompetenzen und Organisationsformen entsteht.",
       "aliases": [
         "Neukombination",
         "neue Kombination",
         "Rekombination",
-        "Schumpeter-Neukombination"
+        "Schumpeter-Neukombination",
+        "Neokombination",
+        "neue Kombination bestehender Produktionsfaktoren"
       ]
     },
     {
@@ -15309,11 +15358,14 @@
       "slug": "rekombination",
       "url": "/begriffe/rekombination/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Rekombination beschreibt die neue Kombination bestehender Ressourcen, Technologien, Kompetenzen, Märkte oder Organisationsformen.",
+      "shortDefinition": "Rekombination beschreibt die neue Verbindung bestehender Ressourcen, Technologien, Kompetenzen, Märkte oder Organisationsformen und ist Kern schumpeterscher Innovation.",
       "aliases": [
         "Rekombination / neue Kombination",
         "Neue Kombination",
-        "neue Kombinationen"
+        "neue Kombinationen",
+        "Rekombination",
+        "Neokombination",
+        "Neukombination"
       ]
     },
     {
@@ -15910,11 +15962,18 @@
       "slug": "routineunternehmer",
       "url": "/begriffe/routineunternehmer/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Der Routineunternehmer stabilisiert und reproduziert bestehende Abläufe, Geschäftsmodelle und Kompetenzen. Er arbeitet im Rahmen bekannter Märkte, bekannter Regeln und erprobter Entscheidungslogiken.",
+      "shortDefinition": "Der Routineunternehmer oder Manager-Verwalter stabilisiert bestehende Abläufe, optimiert Ressourcen und handelt im Rahmen bekannter Märkte, Regeln und Ziele.",
       "aliases": [
         "Routineunternehmer",
         "Routineunternehmer / Homo oeconomicus",
-        "Homo oeconomicus"
+        "Homo oeconomicus",
+        "Routine-Unternehmer",
+        "Manager",
+        "Verwalter",
+        "Manager / Verwalter",
+        "Homo oeconomicus als Routineunternehmer",
+        "Lehrbuchunternehmer",
+        "Allokationsunternehmer"
       ]
     },
     {
@@ -16181,9 +16240,12 @@
       "slug": "schoepferische-zerstoerung",
       "url": "/begriffe/schoepferische-zerstoerung/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen verdrängt und neue hervorbringt.",
+      "shortDefinition": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen, Produkte, Routinen oder Geschäftsmodelle verdrängt und neue Entwicklungspfade eröffnet.",
       "aliases": [
-        "Schöpferische Zerstörung"
+        "Schöpferische Zerstörung",
+        "Creative Destruction",
+        "kreative Zerstörung",
+        "schumpetersche schöpferische Zerstörung"
       ]
     },
     {
@@ -16225,12 +16287,14 @@
       "slug": "schumpetersche-innovation",
       "url": "/begriffe/schumpetersche-innovation/",
       "category": "Glossar-Erweiterung",
-      "shortDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
+      "shortDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen von Produkten, Verfahren, Märkten, Bezugsquellen oder Organisationsformen.",
       "aliases": [
         "Schumpetersche Innovation / Neue Kombination",
         "Schumpetersche Innovation",
         "Neue Kombination",
-        "Innovation nach Schumpeter"
+        "Innovation nach Schumpeter",
+        "Neokombination",
+        "Neukombination nach Schumpeter"
       ]
     },
     {
@@ -19052,9 +19116,12 @@
       "slug": "unternehmerisches-lernen",
       "url": "/begriffe/unternehmerisches-lernen/",
       "category": "Innovation, Evolution und Unternehmertum",
-      "shortDefinition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit.",
+      "shortDefinition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko-, Innovations- und Transformationsfähigkeit.",
       "aliases": [
-        "Unternehmerisches Lernen"
+        "Unternehmerisches Lernen",
+        "unternehmerische Lernfähigkeit",
+        "Lernen des Unternehmers",
+        "Entrepreneurial Learning"
       ]
     },
     {
@@ -19062,12 +19129,15 @@
       "label": "Unternehmertypen nach Jochen Röpke",
       "slug": "unternehmertypen-jochen-roepke",
       "url": "/begriffe/unternehmertypen-jochen-roepke/",
-      "category": "Anschlussbegriff",
-      "shortDefinition": "Die Unternehmertypen nach Röpke helfen, Unternehmertum als Lern-, Innovations- und Transformationsfähigkeit zu verstehen.",
+      "category": "Innovation, Evolution und Unternehmertum",
+      "shortDefinition": "Die Unternehmertypen nach Jochen Röpke unterscheiden Routineunternehmer, Arbitrageur, innovativen Unternehmer und evolutorischen Unternehmer danach, welche unternehmerische Funktion und welche Kompetenzlogik im Vordergrund steht.",
       "aliases": [
         "Unternehmertypen nach Jochen Röpke",
         "Unternehmertypen nach Röpke",
-        "Röpke-Unternehmertypen"
+        "Röpke-Unternehmertypen",
+        "Röpke-Modell",
+        "vier Unternehmertypen",
+        "Routineunternehmer Arbitrageur innovativer Unternehmer evolutorischer Unternehmer"
       ]
     },
     {
