@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-06T11:32:59.712Z",
-  "count": 1656,
+  "generatedAt": "2026-07-06T11:48:29.719Z",
+  "count": 1659,
   "letters": [
     "#",
     "A",
@@ -1215,6 +1215,7 @@
       "rueckbaustandard",
       "rueckbauverpflichtung",
       "rueckkopplung",
+      "rueckkopplungsfaehigkeit",
       "rueckkopplungspreis",
       "ruecknahmefaehigkeit",
       "ruecknahmesystem",
@@ -1426,6 +1427,7 @@
       "transformation",
       "transformationsbonus",
       "transformationscluster",
+      "transformationsfaehigkeit",
       "transformationspfad",
       "transformationsschulden",
       "transformationswelle",
@@ -1575,6 +1577,7 @@
       "windrad-recycling",
       "wirkleistung",
       "wirklichkeitsbindung",
+      "wirklichkeitsfaehigkeit",
       "wirklichkeitskonstruktion",
       "wirkmechanismus",
       "wirkpfad",
@@ -15960,6 +15963,22 @@
       ]
     },
     {
+      "id": "rueckkopplungsfaehigkeit",
+      "label": "Rückkopplungsfähigkeit",
+      "slug": "rueckkopplungsfaehigkeit",
+      "url": "/begriffe/rueckkopplungsfaehigkeit/",
+      "category": "Wirkungsforschung, Rückkopplung & Lernsysteme",
+      "shortDefinition": "Rückkopplungsfähigkeit ist die Fähigkeit, Erkenntnisse über Wirkung so in Entscheidungen, Regeln, Preise, Budgets, Kapitalflüsse, Medienpraxis oder Organisationsroutinen zurückzuführen, dass Lernen und Korrektur möglich werden.",
+      "aliases": [
+        "Rückkopplungsfähigkeit",
+        "Rueckkopplungsfaehigkeit",
+        "Feedbackfähigkeit",
+        "Feedbackfaehigkeit",
+        "Lern- und Rückkopplungsfähigkeit",
+        "Feedback literacy"
+      ]
+    },
+    {
       "id": "rueckkopplungspreis",
       "label": "Rückkopplungspreis",
       "slug": "rueckkopplungspreis",
@@ -18513,6 +18532,22 @@
       ]
     },
     {
+      "id": "transformationsfaehigkeit",
+      "label": "Transformationsfähigkeit",
+      "slug": "transformationsfaehigkeit",
+      "url": "/begriffe/transformationsfaehigkeit/",
+      "category": "Transformation, Lernfähigkeit & Zukunftsfähigkeit",
+      "shortDefinition": "Transformationsfähigkeit ist die Fähigkeit von Menschen, Organisationen, Institutionen und Gesellschaften, notwendige Veränderung als lernfähige Normalität zu gestalten und in Richtung positiver Netto-Wirkung zu steuern.",
+      "aliases": [
+        "Transformationsfähigkeit",
+        "Transformationsfaehigkeit",
+        "Transformationskompetenz",
+        "Veränderungsfähigkeit",
+        "Veraenderungsfaehigkeit",
+        "Transformation capability"
+      ]
+    },
+    {
       "id": "transformationspfad",
       "label": "Transformationspfad",
       "slug": "transformationspfad",
@@ -20236,6 +20271,22 @@
       "shortDefinition": "Wirklichkeitsbindung beschreibt die Rückbindung von Entscheidungen an überprüfbare Zustände, Folgen und Daten.",
       "aliases": [
         "Wirklichkeitsbindung"
+      ]
+    },
+    {
+      "id": "wirklichkeitsfaehigkeit",
+      "label": "Wirklichkeitsfähigkeit",
+      "slug": "wirklichkeitsfaehigkeit",
+      "url": "/begriffe/wirklichkeitsfaehigkeit/",
+      "category": "Wirkungsforschung, Wahrnehmung & Entscheidung",
+      "shortDefinition": "Wirklichkeitsfähigkeit ist die Fähigkeit, nicht nur Absichten, Erzählungen oder Kennzahlen zu sehen, sondern die tatsächlichen Zustandsveränderungen, die Handeln für Mensch, Planet und Demokratie bewirkt.",
+      "aliases": [
+        "Wirklichkeitsfähigkeit",
+        "Wirklichkeitsfaehigkeit",
+        "Realitätsfähigkeit",
+        "Realitaetsfaehigkeit",
+        "Wirklichkeitskompetenz",
+        "Reality literacy"
       ]
     },
     {
