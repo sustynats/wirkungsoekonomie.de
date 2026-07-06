@@ -11849,20 +11849,26 @@
         "Arbitrageur",
         "Arbitrageur / Arbitrageunternehmer",
         "Arbitrageunternehmer",
-        "Arbitrage"
+        "Arbitrage",
+        "findiger Unternehmer",
+        "Kirzner-Unternehmer",
+        "Koordinationsunternehmer"
       ],
       "synonyms": [
         "Arbitrageur",
         "Arbitrageur / Arbitrageunternehmer",
         "Arbitrageunternehmer",
-        "Arbitrage"
+        "Arbitrage",
+        "findiger Unternehmer",
+        "Kirzner-Unternehmer",
+        "Koordinationsunternehmer"
       ],
-      "shortDefinition": "Ein Arbitrageur erkennt und nutzt Unterschiede zwischen Preisen, Informationen, Regulierung, Orten oder Zeitpunkten. Arbitrage kann Ineffizienzen abbauen, aber auch bloße Wertabschöpfung ohne positive Systemwirkung erzeugen.",
+      "shortDefinition": "Ein Arbitrageur erkennt und nutzt Preis-, Informations-, Zeit-, Regulierungs- oder Bewertungsdifferenzen. Wirkungsökonomisch zählt, ob dadurch Koordination verbessert oder Wirkung abgeschöpft und externalisiert wird.",
       "short_definition": "Der Arbitrageur nutzt Preis-, Informations- oder Marktunterschiede aus und trägt dadurch zur Angleichung von Differenzen bei.",
       "definition": "Ein Arbitrageur erkennt und nutzt Unterschiede zwischen Preisen, Informationen, Regulierung, Orten oder Zeitpunkten. Arbitrage kann Ineffizienzen abbauen, aber auch bloße Wertabschöpfung ohne positive Systemwirkung erzeugen.",
-      "longDefinition": "Ein Arbitrageur erkennt und nutzt Unterschiede zwischen Preisen, Informationen, Regulierung, Orten oder Zeitpunkten. Arbitrage kann Ineffizienzen abbauen, aber auch bloße Wertabschöpfung ohne positive Systemwirkung erzeugen.",
+      "longDefinition": "Ein Arbitrageur erkennt und nutzt Unterschiede zwischen Preisen, Informationen, Orten, Zeitpunkten, Regulierungen oder Bewertungen. In der Röpke-Typologie steht er für Koordinationseffizienz: Märkte sind nicht perfekt im Gleichgewicht, also entstehen Chancen durch Differenzen.\n\nWirkungsökonomisch ist Arbitrage nicht automatisch gut oder schlecht. Sie kann Ineffizienzen abbauen, Liquidität schaffen, Fehlbewertungen korrigieren und Koordination verbessern. Sie kann aber auch bloße Wertabschöpfung erzeugen, externe Kosten ignorieren, regulatorische Lücken ausnutzen oder Wirkung von einem Ort an einen anderen verlagern.",
       "long_definition": "Arbitrage kann Märkte effizienter machen, aber sie erzeugt nicht automatisch bessere Zustände.",
-      "woekRelation": "Aus WÖk-Sicht ist Arbitrage ambivalent. Sie kann Märkte effizienter machen, wenn sie echte Fehlbewertungen sichtbar macht. Sie kann aber schädlich sein, wenn sie Steuerlücken, Arbeitsrechtsunterschiede, Umweltstandards oder Informationsasymmetrien ausnutzt.",
+      "woekRelation": "Die WÖk prüft Arbitrage daran, ob sie positive Netto-Wirkung erzeugt oder nur Differenzen monetarisiert. Entscheidend sind Wirkungsgrenzen, Betroffene, Externalitäten, Datenqualität und Rückkopplung.",
       "woek_einordnung": "Relevant ist, ob Arbitrage reale Zustände verbessert oder nur Wert aus Differenzen abschöpft.",
       "examples": [],
       "relatedTerms": [
@@ -11873,16 +11879,36 @@
         "externalitaeten",
         "kapitalwirkung",
         "wirkungskapital",
-        "jochen-roepke"
+        "jochen-roepke",
+        "unternehmertypen-jochen-roepke",
+        "innovativer-unternehmer",
+        "evolutorischer-unternehmer",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "rueckkopplungsfaehigkeit"
       ],
       "related_terms": [
         "routineunternehmer",
         "business-value",
-        "impact-value"
+        "impact-value",
+        "marktversagen",
+        "externalitaeten",
+        "kapitalwirkung",
+        "wirkungskapital",
+        "jochen-roepke",
+        "unternehmertypen-jochen-roepke",
+        "innovativer-unternehmer",
+        "evolutorischer-unternehmer",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "rueckkopplungsfaehigkeit"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -11907,6 +11933,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -11955,20 +11999,20 @@
       "publication_status": "published",
       "status": "approved",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Unternehmertypen, Innovation und Schumpeter/Röpke",
       "sourceDocument": "",
       "sourceSection": "Unternehmertypen, Innovation und Schumpeter/Röpke",
-      "hoverDefinition": "Ein Arbitrageur erkennt und nutzt Unterschiede zwischen Preisen, Informationen, Regulierung, Orten oder Zeitpunkten. Arbitrage kann Ineffizienzen abbauen, aber auch bloße Wertabschöpfung ohne positive Systemwirkung erzeugen.",
+      "hoverDefinition": "Der Arbitrageur nutzt Differenzen: Preise, Informationen, Orte, Zeitpunkte, Regulierung oder Bewertungen.",
       "statusNote": "",
-      "usageNote": "Aus WÖk-Sicht ist Arbitrage ambivalent. Sie kann Märkte effizienter machen, wenn sie echte Fehlbewertungen sichtbar macht. Sie kann aber schädlich sein, wenn sie Steuerlücken, Arbeitsrechtsunterschiede, Umweltstandards oder Informationsasymmetrien ausnutzt.",
+      "usageNote": "Nicht jede Arbitrage ist Abzocke, aber jede Arbitrage braucht Wirkungsprüfung. Besonders wichtig sind externe Kosten, Informationsasymmetrien und Machtgefälle.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/arbitrageur/",
       "metaTitle": "Arbitrageur | Glossar der Wirkungsökonomie",
       "metaDescription": "Der Arbitrageur nutzt Preis-, Informations- oder Marktunterschiede aus und trägt dadurch zur Angleichung von Differenzen bei. Wirkungsökonomisch eingeordnet als Quellen-/Bezugslinienbegriff.",
@@ -12019,7 +12063,66 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Arbitrageur steht für den findigen Unternehmer.",
+            "Kernfunktion: Koordination durch Ausnutzen von Differenzen.",
+            "Typische Differenzen: Preis, Information, Regulierung, Zeit, Ort, Bewertung, Risiko.",
+            "Skills: Alertness, Marktbeobachtung, Timing, Vergleichsfähigkeit, Verhandlung, Risikopreisung.",
+            "WÖk-Risiko: Wertabschöpfung ohne positive Systemwirkung.",
+            "WÖk-Chance: Fehlbewertungen sichtbar machen und Koordination verbessern."
+          ]
+        },
+        {
+          "title": "Kompetenzprofil / Skills",
+          "items": [
+            "Differenzen erkennen",
+            "Informationen schneller kombinieren",
+            "Märkte und Regeln vergleichen",
+            "Timing und Geschwindigkeit nutzen",
+            "Risiken bewerten und bepreisen",
+            "Liquidität und Zugänge organisieren",
+            "Verhandeln und Transaktionskosten senken"
+          ]
+        },
+        {
+          "title": "Wirkungsökonomische Prüflinie",
+          "body": "Arbitrage ist wirkungsrelevant, weil sie Signale verstärken kann. Sie kann Kapital in unterbewertete Lösungen lenken oder schädliche Lücken ausnutzen. Deshalb fragt die WÖk nicht nur nach Gewinn, sondern nach Wirkungspfad, Externalisierung und Rückkopplung."
+        },
+        {
+          "title": "Abgrenzung zu Innovation",
+          "body": "Arbitrage nutzt Differenzen innerhalb bestehender Strukturen. Innovation setzt neue Kombinationen durch und verändert dadurch Strukturen. In der Praxis können beide zusammenfallen, etwa wenn eine neue Plattform Informationsdifferenzen neu organisiert."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche Differenz wird genutzt?",
+            "Wer gewinnt und wer trägt Kosten oder Risiko?",
+            "Wird eine Fehlbewertung korrigiert oder eine Lücke ausgenutzt?",
+            "Welche externe Wirkung bleibt unbepreist?",
+            "Führt Arbitrage zu besserer Koordination oder zu Wirkungsextraktion?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Der Arbitrageur ist die Differenzlogik des Unternehmertums: findig, schnell und koordinierend, aber wirkungsökonomisch nur tragfähig, wenn Differenznutzung nicht zur Externalisierung wird."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "archetyp",
@@ -77814,34 +77917,57 @@
       "canonicalLabel": "Erfindung",
       "slug": "erfindung",
       "aliases": [
-        "Erfindung"
+        "Erfindung",
+        "technische Erfindung",
+        "neue Lösung",
+        "konzeptionelle Erfindung",
+        "organisatorische Erfindung"
       ],
       "synonyms": [
-        "Erfindung"
+        "Erfindung",
+        "technische Erfindung",
+        "neue Lösung",
+        "konzeptionelle Erfindung",
+        "organisatorische Erfindung"
       ],
-      "shortDefinition": "Eine Erfindung ist eine neue technische, organisatorische oder konzeptionelle Möglichkeit, die noch nicht notwendigerweise wirksam verbreitet ist.",
+      "shortDefinition": "Eine Erfindung ist eine neue Lösung oder Möglichkeit. Sie ist noch keine Innovation, solange sie nicht angewendet, durchgesetzt und wirksam verbreitet ist.",
       "short_definition": "Eine Erfindung ist eine neue technische, organisatorische oder konzeptionelle Möglichkeit, die noch nicht notwendigerweise wirksam verbreitet ist.",
       "definition": "Erfindungen schaffen Optionen. Ob daraus Innovation wird, entscheidet sich an Anwendung, Akzeptanz, Diffusion und Wirkung.",
-      "longDefinition": "Erfindungen schaffen Optionen. Ob daraus Innovation wird, entscheidet sich an Anwendung, Akzeptanz, Diffusion und Wirkung.",
+      "longDefinition": "Eine Erfindung ist eine neue technische, organisatorische oder konzeptionelle Lösung. Sie kann als Idee, Verfahren, Produktentwurf, Prototyp oder Methode vorliegen. Im Innovationsprozess ist sie eine wichtige Vorstufe, aber noch nicht identisch mit Innovation.\n\nWirkungsökonomisch wird eine Erfindung zunächst als Wirkungspotenzial gelesen. Sie kann positive Wirkung ermöglichen, negative Wirkung erzeugen oder folgenlos bleiben. Entscheidend wird erst der Wirkpfad: Wer nutzt sie, unter welchen Bedingungen, mit welchen Nebenwirkungen und in welcher Bilanzgrenze?",
       "long_definition": "Erfindungen schaffen Optionen. Ob daraus Innovation wird, entscheidet sich an Anwendung, Akzeptanz, Diffusion und Wirkung.",
-      "woekRelation": "Erfindung wird erst durch Anwendung, Diffusion und Wirkung zur Innovation.",
+      "woekRelation": "Die WÖk trennt Erfindung von Innovation, damit Neuheit nicht vorschnell als Wirkung ausgegeben wird. Eine Erfindung braucht Wirkungsprüfung, bevor sie als Fortschritt gilt.",
       "woek_einordnung": "Erfindung wird erst durch Anwendung, Diffusion und Wirkung zur Innovation.",
       "examples": [],
       "relatedTerms": [
         "innovation",
         "diffusion",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "invention",
+        "wirkungsrisiko",
+        "innovativer-unternehmer",
+        "schumpetersche-innovation",
+        "wirkungsinnovation"
       ],
       "related_terms": [
         "innovation",
         "diffusion",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "invention",
+        "wirkungsrisiko",
+        "innovativer-unternehmer",
+        "schumpetersche-innovation",
+        "wirkungsinnovation"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
         "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
         "Nikolai Kondratieff: The Long Waves in Economic Life",
-        "EconStor|https://www.econstor.eu/"
+        "EconStor|https://www.econstor.eu/",
+        "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -77866,6 +77992,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -77912,22 +78056,22 @@
       "concept_status": "Anschlussbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "anschlussbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
+      "status": "approved",
+      "version": "1.1",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Innovation, Evolution und Unternehmertum",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
       "sourceSection": "Innovation, Evolution und Unternehmertum",
-      "hoverDefinition": "Eine Erfindung ist eine neue technische, organisatorische oder konzeptionelle Möglichkeit, die noch nicht notwendigerweise wirksam verbreitet ist.",
+      "hoverDefinition": "Erfindung ist die neue Möglichkeit; Innovation entsteht erst durch Anwendung, Durchsetzung und Wirkung.",
       "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "usageNote": "Für Ideen, Prototypen, technische Lösungen oder neue Verfahren verwenden, die noch nicht breit angewendet oder durchgesetzt sind.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/erfindung/",
       "metaTitle": "Erfindung | Glossar der Wirkungsökonomie",
       "metaDescription": "Eine Erfindung ist eine neue technische, organisatorische oder konzeptionelle Möglichkeit, die noch nicht notwendigerweise wirksam verbreitet ist. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
@@ -77968,7 +78112,58 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Erfindung ist eine neue Lösung oder Möglichkeit.",
+            "Sie kann technisch, organisatorisch, sozial oder konzeptionell sein.",
+            "Sie ist noch nicht automatisch Innovation.",
+            "WÖk liest Erfindung als Wirkungspotenzial.",
+            "Erst Nutzung, Diffusion und Rückkopplung zeigen Wirkung."
+          ]
+        },
+        {
+          "title": "Abgrenzung zu Invention und Innovation",
+          "body": "Erfindung und Invention überlappen stark. Invention bezeichnet oft die frühe Innovationsphase oder neue Möglichkeit; Erfindung klingt stärker nach konkreter Lösung. Innovation entsteht erst, wenn diese Möglichkeit in Praxis, Markt oder Organisation wirksam wird."
+        },
+        {
+          "title": "Wirkungspotenzial",
+          "body": "Eine Erfindung kann viele mögliche Wirkpfade haben. Dieselbe Technologie kann Teilhabe erleichtern, Ressourcen sparen oder Überwachung verstärken. Deshalb reicht die technische Neuheit nicht als Bewertung."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche neue Möglichkeit wurde geschaffen?",
+            "Welches Problem soll sie lösen?",
+            "Welche Bedingungen braucht ihre Anwendung?",
+            "Welche Nebenwirkungen sind plausibel?",
+            "Wann wird aus der Erfindung eine Innovation?",
+            "Welche Wirkung darf nicht behauptet werden, solange Nutzung und Rückkopplung fehlen?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Erfindung ist die neue Möglichkeit vor ihrer bewährten Wirkung. Sie öffnet einen Wirkpfad, beweist aber noch keine positive Wirkung."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "erinnerungskultur",
@@ -82435,17 +82630,25 @@
       "canonicalLabel": "Evolutorischer Unternehmer",
       "slug": "evolutorischer-unternehmer",
       "aliases": [
-        "Evolutorischer Unternehmer"
+        "Evolutorischer Unternehmer",
+        "Röpke-Unternehmer",
+        "lernender Unternehmer",
+        "selbstevolutorischer Unternehmer",
+        "homo sapiens oeconomicus"
       ],
       "synonyms": [
-        "Evolutorischer Unternehmer"
+        "Evolutorischer Unternehmer",
+        "Röpke-Unternehmer",
+        "lernender Unternehmer",
+        "selbstevolutorischer Unternehmer",
+        "homo sapiens oeconomicus"
       ],
-      "shortDefinition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte oder Märkte, sondern auch die eigene Kompetenz, Wahrnehmung, Organisation und Entscheidungslogik weiter. Bei Jochen Röpke steht damit unternehmerisches Lernen, Selbstveränderung und Kompetenzentwicklung im Zentrum.",
+      "shortDefinition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte und Märkte, sondern die eigene Wahrnehmung, Kompetenz, Organisation und Entscheidungslogik weiter.",
       "short_definition": "Der evolutorische Unternehmer entwickelt die Fähigkeit des Systems zur Selbstentwicklung und Erneuerung.",
       "definition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte oder Märkte, sondern auch die eigene Kompetenz, Wahrnehmung, Organisation und Entscheidungslogik weiter. Bei Jochen Röpke steht damit unternehmerisches Lernen, Selbstveränderung und Kompetenzentwicklung im Zentrum.",
-      "longDefinition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte oder Märkte, sondern auch die eigene Kompetenz, Wahrnehmung, Organisation und Entscheidungslogik weiter. Bei Jochen Röpke steht damit unternehmerisches Lernen, Selbstveränderung und Kompetenzentwicklung im Zentrum.",
+      "longDefinition": "Der evolutorische Unternehmer erweitert die Schumpeter-Figur um Lernen, Selbstevolution und Kompetenzentwicklung. Er setzt nicht nur neue Kombinationen durch, sondern entwickelt die Fähigkeit, neue Möglichkeiten überhaupt wahrzunehmen, mit Unsicherheit umzugehen, eigene Routinen zu verändern und sich an neue Herausforderungen bewusst anzupassen.\n\nFür die Wirkungsökonomie ist diese Figur besonders anschlussfähig, weil sie Wirklichkeitsfähigkeit, Rückkopplungsfähigkeit und Transformationsfähigkeit verbindet. Sie fragt nicht nur: Was kann ich durchsetzen? Sondern auch: Was bewirkt mein Handeln, was muss ich lernen, welche Kompetenz fehlt und welche alte Routine muss ich verlassen?",
       "long_definition": "Der Begriff markiert Unternehmertum als Beitrag zur Evolution von Kompetenzen, Märkten und Strukturen.",
-      "woekRelation": "Für die WÖk ist dieser Typ besonders wichtig: Transformation verlangt Akteure, die ihre Wirkungen lesen, Routinen korrigieren, Geschäftsmodelle erneuern und aus Rückkopplung lernen können. Evolutorisches Unternehmertum ist damit näher an Wirkungskompetenz als an bloßer Gründerromantik.",
+      "woekRelation": "Die WÖk liest den evolutorischen Unternehmer als Lernfigur der Wirkungsgesellschaft. Er steht für unternehmerische Selbstevolution im Verhältnis zu realen Wirkungen, nicht für Selbstoptimierung ohne Referenzrahmen.",
       "woek_einordnung": "Relevant für Transformation, Wirkungsinnovation und Systemerneuerung.",
       "examples": [],
       "relatedTerms": [
@@ -82459,17 +82662,37 @@
         "wirkungskompetenz",
         "transformationspfad",
         "joseph-schumpeter",
-        "systemtheorie"
+        "systemtheorie",
+        "lernebenen",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "positive-netto-wirkung"
       ],
       "related_terms": [
         "unternehmerisches-lernen",
         "wirkungsinnovation",
         "transformationswelle",
-        "jochen-roepke"
+        "jochen-roepke",
+        "unternehmertypen-jochen-roepke",
+        "lernende-organisation",
+        "transformationswirkung",
+        "wirkungskompetenz",
+        "transformationspfad",
+        "joseph-schumpeter",
+        "systemtheorie",
+        "lernebenen",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "positive-netto-wirkung"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -82494,6 +82717,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -82544,20 +82785,20 @@
       "publication_status": "published",
       "status": "approved",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-06-06",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Unternehmertypen, Innovation und Schumpeter/Röpke",
       "sourceDocument": "",
       "sourceSection": "Unternehmertypen, Innovation und Schumpeter/Röpke",
-      "hoverDefinition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte oder Märkte, sondern auch die eigene Kompetenz, Wahrnehmung, Organisation und Entscheidungslogik weiter. Bei Jochen Röpke steht damit unternehmerisches Lernen, Selbstveränderung und Kompetenzentwicklung im Zentrum.",
+      "hoverDefinition": "Der evolutorische Unternehmer lernt, sich selbst und seine Organisation weiterzuentwickeln: Selbstevolution statt bloßer Optimierung.",
       "statusNote": "",
-      "usageNote": "Für die WÖk ist dieser Typ besonders wichtig: Transformation verlangt Akteure, die ihre Wirkungen lesen, Routinen korrigieren, Geschäftsmodelle erneuern und aus Rückkopplung lernen können. Evolutorisches Unternehmertum ist damit näher an Wirkungskompetenz als an bloßer Gründerromantik.",
+      "usageNote": "Nicht als Heroisierung einzelner Gründer verwenden. Evolutorisch ist eine Lern- und Kompetenzlogik, die auch Organisationen, Verwaltungen, Regionen und Institutionen betreffen kann.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/evolutorischer-unternehmer/",
       "metaTitle": "Evolutorischer Unternehmer | Glossar der Wirkungsökonomie",
       "metaDescription": "Der evolutorische Unternehmer entwickelt die Fähigkeit des Systems zur Selbstentwicklung und Erneuerung. Wirkungsökonomisch eingeordnet als Quellen-/Bezugslinienbegriff.",
@@ -82606,57 +82847,60 @@
         {
           "title": "Auf einen Blick",
           "items": [
-            "Der evolutorische Unternehmer steht für unternehmerische Lernfähigkeit, Selbstveränderung und Entwicklung neuer Wirkungspfade.",
-            "Der Begriff gehört zum Bereich Innovation, Evolution und Unternehmertum und dient der präzisen Wirkungsprüfung.",
-            "Wirkungsökonomisch wird er an Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung gebunden.",
-            "Personen und Theorien sind hier Bezugslinien, keine Autoritäten der WÖk."
+            "Der evolutorische Unternehmer ist Röpke-Unternehmer und Lernfigur.",
+            "Er erweitert Innovation um Selbstevolution und Kompetenzentwicklung.",
+            "Kernfunktion: Evolutionseffizienz, also Steigerung von Wahrnehmungs-, Lern- und Handlungskompetenz.",
+            "Skills: Lernen lernen, Selbstreflexion, Vision, Ambiguitätstoleranz, Rückkopplung, Transformation.",
+            "WÖk-Bezug: Wirklichkeitsfähigkeit, Rückkopplungsfähigkeit und Transformationsfähigkeit."
           ]
         },
         {
-          "title": "Hauptdefinition",
-          "body": "Die WÖk nutzt diesen Begriff, um Transformation als Lernpfad zu verstehen: Unternehmen müssen ihr Wirkungsprofil verändern können und dürfen Innovation nicht mit Gründerromantik oder Disruption verwechseln."
-        },
-        {
-          "title": "Wirkungsökonomische Relevanz",
-          "body": "Wichtig für Geschäftsmodellprüfung, Transformationspfade, Wirkungskapital und Innovation innerhalb planetarer Grenzen."
-        },
-        {
-          "title": "Verwendung in der WÖk",
-          "body": "Nutzen bei Innovation, Röpke, lernender Organisation und Transformationswirkung."
-        },
-        {
-          "title": "Abgrenzung",
+          "title": "Kompetenzprofil / Skills",
           "items": [
-            "Start-up-Romantik",
-            "Disruption um jeden Preis",
-            "charismatischer Gründerkult"
+            "eigene Kompetenzgrenzen erkennen",
+            "Lernen lernen und Lernroutinen gestalten",
+            "Visionen und Zielbilder entwickeln",
+            "Wirklichkeitssignale aufnehmen statt abwehren",
+            "Irritation, Kritik und Gegenargumente nutzen",
+            "Organisation und Geschäftsmodell verändern",
+            "Transformation als dauerhafte Lernfähigkeit organisieren"
           ]
         },
         {
-          "title": "Querverweise",
+          "title": "Selbstevolution",
+          "body": "Selbstevolution meint, dass Entwicklung nicht nur zufällig oder von außen geschieht. Der evolutorische Unternehmer reflektiert eigene Kompetenzen, wählt Lernfelder, verwirft unbrauchbare Routinen und entwickelt neue Fähigkeiten im Verhältnis zu veränderten Herausforderungen."
+        },
+        {
+          "title": "Unterschied zum innovativen Unternehmer",
+          "body": "Der innovative Unternehmer setzt neue Kombinationen durch. Der evolutorische Unternehmer fragt zusätzlich, welche Wahrnehmung, Kompetenz und Organisation nötig sind, um neue Kombinationen überhaupt verantwortbar hervorzubringen, zu prüfen und weiterzuentwickeln."
+        },
+        {
+          "title": "WÖk-Erweiterung",
+          "body": "In der Wirkungsökonomie wird Selbstevolution an Wirkung gebunden. Kompetenzentwicklung ist nicht Selbstzweck. Sie muss helfen, Wirkungsrisiken zu erkennen, positive Netto-Wirkung zu ermöglichen und Rückkopplung in Entscheidungen zu übersetzen."
+        },
+        {
+          "title": "Schutzlinien",
           "items": [
-            "Unternehmerisches Lernen",
-            "Wirkungsinnovation",
-            "Transformationswelle",
-            "Jochen Röpke",
-            "Unternehmertypen nach Jochen Röpke",
-            "Lernende Organisation",
-            "Transformationswirkung"
+            "Keine Heroisierung des Unternehmers.",
+            "Keine Personenbewertung oder moralische Rangliste.",
+            "Keine Transformation ohne Betroffenenperspektive.",
+            "Keine Innovation als Ausrede für nichtkompensierbare Schäden.",
+            "Lernfähigkeit umfasst auch Korrektur, Abbruch und Umsteuerung."
           ]
         },
         {
-          "title": "Quellenbasis und Bezugslinien",
-          "body": "Interne Quellen: WÖk-Begriffsleitfaden, Grundlagenpapier und relevante Website-Artikel. Externe Bezugslinien: Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung · Joseph A. Schumpeter: Capitalism, Socialism and Democracy · Nikolai Kondratieff: The Long Waves in Economic Life · EconStor · WÖk-Begriffsleitfaden, Version 1.0."
-        },
-        {
-          "title": "Redaktionelle Metadaten",
+          "title": "WÖk-Prüffragen",
           "items": [
-            "Glossar-Pack: Bezugslinien 2.0",
-            "Version: 1.0",
-            "Status: synchronisiert",
-            "Qualitätsmaßstab: Struktur 5. P = Planet",
-            "Personen sind Bezugslinien, nicht Autoritäten."
+            "Welche Kompetenz muss entstehen, damit positive Wirkung möglich wird?",
+            "Welche alte Routine blockiert Lernen?",
+            "Welche Rückkopplung wird abgewehrt?",
+            "Welche Wirklichkeitssignale werden übersehen?",
+            "Wie wird aus Einsicht eine neue Praxis?"
           ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Der evolutorische Unternehmer ist die Lern- und Selbstevolutionsfigur der Ökonomie: Er entwickelt nicht nur Neues, sondern die Fähigkeit, Neues wirksam, verantwortbar und rückgekoppelt hervorzubringen."
         }
       ],
       "sourceNotes": "Intern: Kap. 47 und 55; Extern: Jochen Röpke, Der lernende Unternehmer.",
@@ -82666,7 +82910,19 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "exergie",
@@ -126973,18 +127229,26 @@
       "slug": "homo-oeconomicus",
       "aliases": [
         "Homo oeconomicus",
-        "Homo Oeconomicus"
+        "Homo Oeconomicus",
+        "Homo Ökonomicus",
+        "rationaler Nutzenmaximierer",
+        "Modellakteur der Neoklassik",
+        "Routineunternehmer als Homo oeconomicus"
       ],
       "synonyms": [
         "Homo oeconomicus",
-        "Homo Oeconomicus"
+        "Homo Oeconomicus",
+        "Homo Ökonomicus",
+        "rationaler Nutzenmaximierer",
+        "Modellakteur der Neoklassik",
+        "Routineunternehmer als Homo oeconomicus"
       ],
-      "shortDefinition": "Der Homo Oeconomicus ist ein Modellakteur der klassischen und neoklassischen Ökonomie: rational, nutzenmaximierend, informiert und auf eigene Präferenzen bezogen. Er ist ein analytisches Werkzeug, kein realistisches Menschenbild.",
+      "shortDefinition": "Der Homo Oeconomicus ist ein ökonomischer Modellakteur. In der Röpke-Lesart markiert er die Routine- und Allokationslogik des Verwaltens innerhalb gegebener Ziele.",
       "short_definition": "Der Homo oeconomicus ist ein Modell des rational eigennützig handelnden Menschen, der Präferenzen unter Knappheit optimiert.",
       "definition": "Der Homo Oeconomicus ist ein Modellakteur der klassischen und neoklassischen Ökonomie: rational, nutzenmaximierend, informiert und auf eigene Präferenzen bezogen. Er ist ein analytisches Werkzeug, kein realistisches Menschenbild.",
-      "longDefinition": "Der Homo Oeconomicus ist ein Modellakteur der klassischen und neoklassischen Ökonomie: rational, nutzenmaximierend, informiert und auf eigene Präferenzen bezogen. Er ist ein analytisches Werkzeug, kein realistisches Menschenbild.",
+      "longDefinition": "Der Homo Oeconomicus ist ein ökonomischer Modellakteur: rational, nutzenorientiert, entscheidungsfähig und innerhalb gegebener Präferenzen optimierend. In der Röpke-Lesart wird diese Figur zur Routine- und Allokationslogik: vorhandene Mittel werden innerhalb bestehender Ziele möglichst effizient eingesetzt.\n\nWirkungsökonomisch ist der Begriff wichtig, weil er zeigt, was klassische Optimierung leisten kann und was nicht. Sie kann Ressourcen verteilen und Prozesse verbessern. Sie erkennt aber nicht automatisch Wirkungsrisiken, nichtkompensierbare Schäden, Betroffenenperspektiven oder Transformationsbedarf.",
       "long_definition": "Der Homo oeconomicus ist ein Modell des rational eigennützig handelnden Menschen, der Präferenzen unter Knappheit optimiert.",
-      "woekRelation": "Die WÖk nutzt den Begriff, um die Grenze alter Steuerungsmodelle sichtbar zu machen. Menschen handeln nicht nur nach Preis und Eigennutz, sondern auch nach Angst, Status, Zugehörigkeit, Sinn, Beziehung, Moral, Gewohnheit und Resonanz. Deshalb müssen Anreize Wirkung sichtbar machen, ohne Menschen auf Rechenmaschinen zu reduzieren.",
+      "woekRelation": "Die WÖk behandelt den Homo Oeconomicus als Modell, nicht als realistisches Menschenbild. Er ist nützlich, solange seine Grenzen sichtbar bleiben und Wirklichkeit, Rückkopplung und Transformation ergänzt werden.",
       "woek_einordnung": "Als Modell nützlich, als Menschenbild unzureichend: Menschen handeln auch aus Angst, Zugehörigkeit, Vertrauen, Status, Sinn, Care, Dissonanz, Moral, Gewohnheit und Resonanzräumen.",
       "examples": [],
       "relatedTerms": [
@@ -126994,17 +127258,31 @@
         "begrenzte-rationalitaet",
         "mensch-planet-demokratie",
         "wirkungskompetenz",
-        "wirkungsarchitektur"
+        "wirkungsarchitektur",
+        "routineunternehmer",
+        "unternehmertypen-jochen-roepke",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit"
       ],
       "related_terms": [
         "neoklassik",
         "nutzenmaximierung",
         "praeferenzen",
-        "begrenzte-rationalitaet"
+        "begrenzte-rationalitaet",
+        "mensch-planet-demokratie",
+        "wirkungskompetenz",
+        "wirkungsarchitektur",
+        "routineunternehmer",
+        "unternehmertypen-jochen-roepke",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -127124,6 +127402,36 @@
         {
           "source_type": "primary",
           "title": "Ludwig von Mises: Human Action",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
+          "status": "linked"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
           "url": "",
           "status": "bibliographic"
         }
@@ -127355,20 +127663,20 @@
       "blindSpot": "",
       "blind_spot": "",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Unternehmertypen, Innovation und Schumpeter/Röpke",
       "sourceDocument": "",
       "sourceSection": "Unternehmertypen, Innovation und Schumpeter/Röpke",
-      "hoverDefinition": "Der Homo Oeconomicus ist ein Modellakteur der klassischen und neoklassischen Ökonomie: rational, nutzenmaximierend, informiert und auf eigene Präferenzen bezogen. Er ist ein analytisches Werkzeug, kein realistisches Menschenbild.",
+      "hoverDefinition": "Homo Oeconomicus ist ein Modell rationaler Optimierung; bei Röpke steht er nahe an Routine, Verwaltung und Allokation.",
       "statusNote": "",
-      "usageNote": "Die WÖk nutzt den Begriff, um die Grenze alter Steuerungsmodelle sichtbar zu machen. Menschen handeln nicht nur nach Preis und Eigennutz, sondern auch nach Angst, Status, Zugehörigkeit, Sinn, Beziehung, Moral, Gewohnheit und Resonanz. Deshalb müssen Anreize Wirkung sichtbar machen, ohne Menschen auf Rechenmaschinen zu reduzieren.",
+      "usageNote": "Immer als Modellbegriff kennzeichnen. Nicht als Menschenbild der Wirkungsökonomie verwenden.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/homo-oeconomicus/",
       "metaTitle": "Homo oeconomicus | Glossar der Wirkungsökonomie",
       "metaDescription": "Der Homo oeconomicus ist ein Modell des rational eigennützig handelnden Menschen, der Präferenzen unter Knappheit optimiert. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
@@ -127386,7 +127694,63 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Modellfigur rationaler Optimierung.",
+            "Im Röpke-Kontext anschlussfähig an Routineunternehmer und Manager-Verwalter.",
+            "Stärke: klare Allokation, Kosten-Nutzen-Kalkül, Entscheidungslogik.",
+            "Grenze: keine automatische Wirkungssicht, keine Selbstevolution, keine demokratische oder ökologische Bewertung.",
+            "WÖk nutzt den Begriff als Kontrastfolie, nicht als Menschenbild."
+          ]
+        },
+        {
+          "title": "Kompetenzlogik",
+          "items": [
+            "optimieren",
+            "abwägen",
+            "knappe Mittel verteilen",
+            "Kosten und Nutzen vergleichen",
+            "Regeln anwenden",
+            "Ziele effizient verfolgen"
+          ]
+        },
+        {
+          "title": "Grenzen im Wirkungsdenken",
+          "body": "Ein Modell kann helfen, Entscheidungen zu strukturieren. Es darf aber nicht so behandelt werden, als sei der Mensch vollständig durch Nutzenmaximierung erklärt. Wirkung entsteht relational, sozial, ökologisch, demokratisch und zeitlich. Diese Dimensionen müssen in die Bilanzgrenze aufgenommen werden."
+        },
+        {
+          "title": "Verbindung zu Röpke",
+          "body": "Bei Röpke steht der Homo oeconomicus nah am Routineunternehmer: Er handelt innerhalb gegebener Regeln. Der evolutorische Unternehmer dagegen wird zum Regelmacher, weil er die eigene Kompetenz und Wahrnehmung weiterentwickelt."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche Annahme über Menschen steckt in der Entscheidung?",
+            "Welche Wirkung bleibt außerhalb des Kalküls?",
+            "Welche Präferenzen, Kosten oder Risiken werden als gegeben behandelt?",
+            "Wo braucht Optimierung Rückkopplung und Wirklichkeitsfähigkeit?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Der Homo Oeconomicus ist für die WÖk ein nützliches, aber enges Modell: Er erklärt Optimierung unter gegebenen Annahmen, nicht die volle Wirklichkeit von Wirkung, Lernen und Transformation."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "host-wirkungsscore",
@@ -134370,17 +134734,25 @@
       "canonicalLabel": "Innovation",
       "slug": "innovation",
       "aliases": [
-        "Innovation"
+        "Innovation",
+        "Durchsetzung von Neuerungen",
+        "Marktdurchsetzung von Neuerungen",
+        "Innovation nach Schumpeter",
+        "neue Kombination in Nutzung"
       ],
       "synonyms": [
-        "Innovation"
+        "Innovation",
+        "Durchsetzung von Neuerungen",
+        "Marktdurchsetzung von Neuerungen",
+        "Innovation nach Schumpeter",
+        "neue Kombination in Nutzung"
       ],
-      "shortDefinition": "Im Schumpeter-Sinn entsteht Innovation durch neue Kombinationen von Produktionsfaktoren, Technologien, Organisationen, Märkten oder Ressourcenpfaden.",
+      "shortDefinition": "Innovation ist die Durchsetzung einer Neuerung in Markt, Organisation, Infrastruktur oder gesellschaftlicher Praxis. Sie unterscheidet sich von Invention und Erfindung durch Anwendung, Diffusion und Wirkung.",
       "short_definition": "Innovation ist die erfolgreiche Durchsetzung einer neuen Problemlösung in einem sozialen, wirtschaftlichen oder technischen System.",
       "definition": "Im Schumpeter-Sinn entsteht Innovation durch neue Kombinationen von Produktionsfaktoren, Technologien, Organisationen, Märkten oder Ressourcenpfaden.",
-      "longDefinition": "Im Schumpeter-Sinn entsteht Innovation durch neue Kombinationen von Produktionsfaktoren, Technologien, Organisationen, Märkten oder Ressourcenpfaden.",
+      "longDefinition": "Innovation bezeichnet die Durchsetzung einer Neuerung in Markt, Organisation, Infrastruktur oder gesellschaftlicher Praxis. Im Schumpeter-Sinn entsteht sie durch neue Kombinationen von Produktionsfaktoren, Wissen, Technik, Organisation, Märkten, Bezugsquellen oder Geschäftsmodellen.\n\nDamit ist Innovation mehr als Invention oder Erfindung. Eine Erfindung kann neu sein, ohne genutzt zu werden. Eine Invention kann als Idee, Konzept, Prototyp oder technische Möglichkeit vorliegen. Innovation beginnt, wenn diese Neuerung Anschluss findet, sich durchsetzt, diffundiert und Zustände verändert. Wirkungsökonomisch ist danach noch die zweite Frage nötig: Ist diese Veränderung positive Netto-Wirkung?",
       "long_definition": "Innovation ist mehr als Erfindung oder Neuheit. Sie wird erst relevant, wenn eine neue Lösung Anwendung, Diffusion und Systemwirkung entfaltet.",
-      "woekRelation": "Die WÖk übernimmt die Dynamik der Neukombination, bewertet Innovation aber erst als Fortschritt, wenn sie Mensch, Planet und Demokratie stärkt.",
+      "woekRelation": "Die WÖk bewertet Innovation nicht nach Neuheitsgrad allein, sondern nach tatsächlicher Wirkung, Wirkungspotenzial, Wirkungsrisiko, Nichtkompensation und Rückkopplung.",
       "woek_einordnung": "Innovation ist in der WÖk nur dann Fortschritt, wenn sie positive Netto-Wirkung erzeugt. Neuheit allein reicht nicht.",
       "examples": [],
       "relatedTerms": [
@@ -134397,7 +134769,13 @@
         "neukombination",
         "regeneratives-wachstum",
         "kreislaufwirtschaft",
-        "unternehmertypen-jochen-roepke"
+        "unternehmertypen-jochen-roepke",
+        "invention",
+        "schumpetersche-innovation",
+        "innovativer-unternehmer",
+        "wirkungsrisiko",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "related_terms": [
         "erfindung",
@@ -134409,11 +134787,24 @@
         "kondratieff-zyklus",
         "joseph-schumpeter",
         "neuigkeitsbias",
-        "natalitaet"
+        "natalitaet",
+        "neukombination",
+        "regeneratives-wachstum",
+        "kreislaufwirtschaft",
+        "unternehmertypen-jochen-roepke",
+        "invention",
+        "schumpetersche-innovation",
+        "innovativer-unternehmer",
+        "wirkungsrisiko",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -134438,6 +134829,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -134488,20 +134897,20 @@
       "publication_status": "published",
       "status": "approved",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-06-06",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Artikelpaket C: Innovation, Wachstum und Unternehmertum",
       "sourceDocument": "",
       "sourceSection": "Artikelpaket C: Innovation, Wachstum und Unternehmertum",
-      "hoverDefinition": "Im Schumpeter-Sinn entsteht Innovation durch neue Kombinationen von Produktionsfaktoren, Technologien, Organisationen, Märkten oder Ressourcenpfaden.",
+      "hoverDefinition": "Innovation ist nicht bloße Neuheit, sondern die durchgesetzte Neuerung, die Nutzung, Markt oder Praxis verändert.",
       "statusNote": "",
-      "usageNote": "Die WÖk übernimmt die Dynamik der Neukombination, bewertet Innovation aber erst als Fortschritt, wenn sie Mensch, Planet und Demokratie stärkt.",
+      "usageNote": "Innovation nur dann verwenden, wenn eine Neuerung in Anwendung, Markt, Organisation oder Praxis wirksam wird. Für bloße Ideen, Prototypen oder technische Neuerungen besser Invention oder Erfindung verwenden.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/innovation/",
       "metaTitle": "Innovation | Glossar der Wirkungsökonomie",
       "metaDescription": "Innovation ist die erfolgreiche Durchsetzung einer neuen Problemlösung in einem sozialen, wirtschaftlichen oder technischen System. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
@@ -134550,60 +134959,49 @@
         {
           "title": "Auf einen Blick",
           "items": [
-            "Innovation ist in der WÖk nicht bloße Neuheit, sondern neue Problemlösungsfähigkeit mit positiver Netto-Wirkung.",
-            "Der Begriff gehört zum Bereich Innovation, Evolution und Unternehmertum und dient der präzisen Wirkungsprüfung.",
-            "Wirkungsökonomisch wird er an Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung gebunden.",
-            "Personen und Theorien sind hier Bezugslinien, keine Autoritäten der WÖk."
+            "Innovation ist die Durchsetzung einer Neuerung.",
+            "Erfindung/Invention ist die neue Möglichkeit; Innovation ist ihre wirksame Anwendung.",
+            "Schumpeter beschreibt Innovation als neue Kombination.",
+            "Innovation kann Produkt, Verfahren, Markt, Bezugsquelle, Organisation oder Geschäftsmodell betreffen.",
+            "WÖk bewertet Innovation erst am Maßstab positiver Netto-Wirkung."
           ]
         },
         {
-          "title": "Hauptdefinition",
-          "body": "Die WÖk übernimmt die Dynamik der Neukombination, bewertet Innovation aber erst als Fortschritt, wenn sie Mensch, Planet und Demokratie stärkt. Neuheit allein reicht nicht."
-        },
-        {
-          "title": "Wirkungsökonomische Relevanz",
-          "body": "Der Begriff klärt, warum Kreislaufwirtschaft, regenerative Produktion und neue Geschäftsmodelle Wachstum erzeugen können, ohne Inputverbrauch zu erhöhen - sofern positive Netto-Wirkung entsteht."
-        },
-        {
-          "title": "Verwendung in der WÖk",
-          "body": "Nutzen bei Wachstum, Kreislaufwirtschaft, Schumpeter, Röpke, Unternehmen, Forschungsförderung und Innovationspolitik."
-        },
-        {
-          "title": "Abgrenzung",
+          "title": "Innovation, Invention, Erfindung",
           "items": [
-            "Neuheit",
-            "technischer Fortschritt",
-            "Disruption",
-            "Wachstum um jeden Preis",
-            "schöpferische Zerstörung ohne Wirkungsbewertung"
+            "Erfindung: konkrete neue technische, organisatorische oder konzeptionelle Lösung.",
+            "Invention: Frühphase einer neuen Möglichkeit, Idee, Methode, Prototyp oder Lösung.",
+            "Innovation: durchgesetzte Neuerung in Markt, Organisation oder gesellschaftlicher Praxis.",
+            "Diffusion: Verbreitung der Innovation über Nutzer, Organisationen, Regionen oder Systeme.",
+            "Wirkungsinnovation: Innovation, die messbar positive Netto-Wirkung ermöglicht."
           ]
         },
         {
-          "title": "Querverweise",
+          "title": "Schumpeters neue Kombinationen",
+          "body": "Schumpeter beschreibt wirtschaftliche Entwicklung als neue Kombinationen: neue Güter, neue Produktionsmethoden, neue Absatzmärkte, neue Bezugsquellen und neue Organisationsformen. Der innovative Unternehmer setzt diese Kombinationen durch."
+        },
+        {
+          "title": "WÖk-Bewertung",
+          "body": "Neuheit ist kein Wert an sich. Eine Innovation kann Ressourcen sparen, Teilhabe erhöhen und demokratische Resilienz stärken. Sie kann aber auch Rebound-Effekte, Abhängigkeiten, Desinformation, Stranding oder ökologische Schäden erzeugen. Die WÖk fragt daher nach Netto-Wirkung."
+        },
+        {
+          "title": "Nichtkompensation",
+          "body": "Positive Effekte einer Innovation dürfen schwere Schäden nicht verdecken. Eine neue Technologie kann effizient, profitabel und beliebt sein und dennoch nichtkompensierbare Risiken erzeugen. Diese müssen zuerst geprüft werden."
+        },
+        {
+          "title": "WÖk-Prüffragen",
           "items": [
-            "Erfindung",
-            "Diffusion",
-            "Wirkungsinnovation",
-            "positive Netto-Wirkung",
-            "Rekombination / neue Kombination",
-            "Schöpferische Zerstörung",
-            "Kondratieff-Zyklus",
-            "Joseph A. Schumpeter"
+            "Welche Neuerung wurde tatsächlich durchgesetzt?",
+            "Welche Invention oder Erfindung liegt zugrunde?",
+            "Welche Nutzung, Praxis oder Marktstruktur verändert sich?",
+            "Welche Zustände verändern sich für Mensch, Planet und Demokratie?",
+            "Welche Risiken, Rebounds oder Verlagerungen entstehen?",
+            "Welche Rückkopplung verändert das Design oder Geschäftsmodell?"
           ]
         },
         {
-          "title": "Quellenbasis und Bezugslinien",
-          "body": "Interne Quellen: WÖk-Begriffsleitfaden, Grundlagenpapier und relevante Website-Artikel. Externe Bezugslinien: Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung · Joseph A. Schumpeter: Capitalism, Socialism and Democracy · Nikolai Kondratieff: The Long Waves in Economic Life · EconStor · WÖk-Begriffsleitfaden, Version 1.0."
-        },
-        {
-          "title": "Redaktionelle Metadaten",
-          "items": [
-            "Glossar-Pack: Bezugslinien 2.0",
-            "Version: 1.0",
-            "Status: synchronisiert",
-            "Qualitätsmaßstab: Struktur 5. P = Planet",
-            "Personen sind Bezugslinien, nicht Autoritäten."
-          ]
+          "title": "WÖk-Formulierung",
+          "body": "Innovation ist die durchgesetzte neue Kombination. Wirkungsökonomisch wird sie erst dann Fortschritt, wenn sie reale Zustände positiv verändert und Risiken nicht externalisiert."
         }
       ],
       "sourceNotes": "Schumpeter, Jochen Röpke, Kondratieff, Kreislaufwirtschaft.",
@@ -134613,7 +135011,19 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "innovativer-unternehmer",
@@ -134622,17 +135032,25 @@
       "canonicalLabel": "Innovativer Unternehmer",
       "slug": "innovativer-unternehmer",
       "aliases": [
-        "Innovativer Unternehmer"
+        "Innovativer Unternehmer",
+        "schöpferischer Unternehmer",
+        "Schumpeter-Unternehmer",
+        "Innovationsunternehmer",
+        "Durchsetzer neuer Kombinationen"
       ],
       "synonyms": [
-        "Innovativer Unternehmer"
+        "Innovativer Unternehmer",
+        "schöpferischer Unternehmer",
+        "Schumpeter-Unternehmer",
+        "Innovationsunternehmer",
+        "Durchsetzer neuer Kombinationen"
       ],
-      "shortDefinition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, neue Produktionsweisen, neue Märkte, neue Bezugsquellen oder neue Organisationsformen. Er verschiebt bestehende Gleichgewichte und eröffnet neue Entwicklungspfade.",
+      "shortDefinition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden nicht nur erfunden, sondern wirtschaftlich und gesellschaftlich wirksam.",
       "short_definition": "Der innovative Unternehmer setzt neue Kombinationen durch und eröffnet neue Märkte, Produkte, Prozesse oder Organisationsformen.",
       "definition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, neue Produktionsweisen, neue Märkte, neue Bezugsquellen oder neue Organisationsformen. Er verschiebt bestehende Gleichgewichte und eröffnet neue Entwicklungspfade.",
-      "longDefinition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, neue Produktionsweisen, neue Märkte, neue Bezugsquellen oder neue Organisationsformen. Er verschiebt bestehende Gleichgewichte und eröffnet neue Entwicklungspfade.",
+      "longDefinition": "Der innovative Unternehmer ist die Schumpeter-Figur der wirtschaftlichen Entwicklung. Er bringt nicht nur eine Idee hervor, sondern setzt eine neue Kombination durch: neue Produkte, Produktionsweisen, Märkte, Bezugsquellen, Organisationsformen oder Ressourcenpfade.\n\nDamit unterscheidet er sich von der bloßen Erfindung oder Invention. Eine Erfindung kann im Labor, im Kopf oder als Prototyp existieren. Innovation entsteht erst, wenn die Neuerung in Markt, Organisation, Infrastruktur oder Gesellschaft wirksam wird. Wirkungsökonomisch reicht auch das noch nicht als Fortschritt: Bewertet wird, ob die neue Kombination positive Netto-Wirkung erzeugt und schwere Schäden nicht verdeckt.",
       "long_definition": "Der Begriff beschreibt die Durchsetzungsfunktion von Innovation.",
-      "woekRelation": "In der WÖk zählt Innovation nicht als Neuheit, sondern als bessere Wirkung. Ein innovativer Unternehmer wird zum positiven Wirkungsakteur, wenn seine neue Kombination Mensch, Planet und Demokratie stärkt, Verlustleistung reduziert und Resilienz erhöht.",
+      "woekRelation": "Die WÖk verbindet Schumpeters Durchsetzungslogik mit Wirkungsprüfung. Innovation ist nicht bloße Neuheit, sondern muss an Wirkung, Wirkungspotenzial, Wirkungsrisiko, Nichtkompensation und Rückkopplung gebunden werden.",
       "woek_einordnung": "In der WÖk ist Innovation nur dann positiv, wenn sie positive Netto-Wirkung erzeugt.",
       "examples": [],
       "relatedTerms": [
@@ -134644,17 +135062,47 @@
         "kreislaufinnovation",
         "wirkungspionier",
         "t-sroi",
-        "transformationswirkung"
+        "transformationswirkung",
+        "innovation",
+        "invention",
+        "erfindung",
+        "diffusion",
+        "neukombination",
+        "schoepferische-zerstoerung",
+        "unternehmertypen-jochen-roepke",
+        "evolutorischer-unternehmer",
+        "positive-netto-wirkung",
+        "wirkungsrisiko",
+        "rueckkopplungsfaehigkeit"
       ],
       "related_terms": [
         "unternehmerfunktion",
         "rekombination",
         "wirkungsinnovation",
-        "routineunternehmer"
+        "routineunternehmer",
+        "schumpetersche-innovation",
+        "kreislaufinnovation",
+        "wirkungspionier",
+        "t-sroi",
+        "transformationswirkung",
+        "innovation",
+        "invention",
+        "erfindung",
+        "diffusion",
+        "neukombination",
+        "schoepferische-zerstoerung",
+        "unternehmertypen-jochen-roepke",
+        "evolutorischer-unternehmer",
+        "positive-netto-wirkung",
+        "wirkungsrisiko",
+        "rueckkopplungsfaehigkeit"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -134679,6 +135127,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -134727,20 +135193,20 @@
       "publication_status": "published",
       "status": "approved",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Unternehmertypen, Innovation und Schumpeter/Röpke",
       "sourceDocument": "",
       "sourceSection": "Unternehmertypen, Innovation und Schumpeter/Röpke",
-      "hoverDefinition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, neue Produktionsweisen, neue Märkte, neue Bezugsquellen oder neue Organisationsformen. Er verschiebt bestehende Gleichgewichte und eröffnet neue Entwicklungspfade.",
+      "hoverDefinition": "Der innovative Unternehmer setzt neue Kombinationen durch und macht aus Invention wirksame Innovation.",
       "statusNote": "",
-      "usageNote": "In der WÖk zählt Innovation nicht als Neuheit, sondern als bessere Wirkung. Ein innovativer Unternehmer wird zum positiven Wirkungsakteur, wenn seine neue Kombination Mensch, Planet und Demokratie stärkt, Verlustleistung reduziert und Resilienz erhöht.",
+      "usageNote": "Nicht jede Neuheit ist Innovation und nicht jede Innovation ist positive Wirkung. Immer zwischen Erfindung/Invention, Durchsetzung, Diffusion und Wirkung unterscheiden.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/innovativer-unternehmer/",
       "metaTitle": "Innovativer Unternehmer | Glossar der Wirkungsökonomie",
       "metaDescription": "Der innovative Unternehmer setzt neue Kombinationen durch und eröffnet neue Märkte, Produkte, Prozesse oder Organisationsformen. Wirkungsökonomisch eingeordnet als Quellen-/Bezugslinienbegriff.",
@@ -134791,7 +135257,70 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Der innovative Unternehmer steht für Schumpeters Entwicklungslogik.",
+            "Kernfunktion: neue Kombinationen durchsetzen.",
+            "Innovation unterscheidet sich von Erfindung/Invention durch Anwendung, Durchsetzung und Diffusion.",
+            "Skills: Rekombination, Experimentieren, Marktgestaltung, Kapitalmobilisierung, Widerstandstoleranz, Teamaufbau.",
+            "WÖk-Prüfung: Führt die Innovation zu positiver Netto-Wirkung?"
+          ]
+        },
+        {
+          "title": "Kompetenzprofil / Skills",
+          "items": [
+            "Probleme neu rahmen",
+            "Ressourcen, Wissen und Produktionsfaktoren neu kombinieren",
+            "Prototypen und Geschäftsmodelle testen",
+            "Kapital, Partner und Teams mobilisieren",
+            "Widerstände aushalten und Adoption ermöglichen",
+            "Märkte, Regeln oder Nutzungspraktiken mitgestalten",
+            "Wirkung und Nebenwirkungen rückkoppeln"
+          ]
+        },
+        {
+          "title": "Innovation vs. Erfindung/Invention",
+          "body": "Erfindung oder Invention ist die neue Möglichkeit. Innovation ist die durchgesetzte Neuerung. Eine Idee, Technologie oder Methode wird erst zur Innovation, wenn sie in Nutzung, Markt, Organisation oder gesellschaftliche Praxis gelangt und dort Zustände verändert."
+        },
+        {
+          "title": "Schumpeter-Linie",
+          "body": "Schumpeter beschreibt Entwicklung als neue Kombination. Diese Kombination kann Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen betreffen. Der Unternehmer ist dabei nicht bloß Verwalter, sondern treibende Kraft der Durchsetzung."
+        },
+        {
+          "title": "WÖk-Erweiterung",
+          "body": "Die WÖk ergänzt: Durchsetzung allein ist noch kein positiver Fortschritt. Eine Innovation kann Wirkungsrisiken, Rebound-Effekte oder soziale und ökologische Schäden erzeugen. Deshalb braucht Innovation Wirkungsforschung und Rückkopplung."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche neue Kombination wird durchgesetzt?",
+            "Welche Erfindung oder Invention liegt zugrunde?",
+            "Welche Zustände verändern sich durch Nutzung und Diffusion?",
+            "Welche alten Strukturen werden verdrängt?",
+            "Welche Wirkungspotenziale und Wirkungsrisiken entstehen?",
+            "Welche Schäden sind nicht kompensierbar?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Der innovative Unternehmer macht aus neuer Möglichkeit wirksame neue Kombination. Wirkungsökonomisch wird daraus erst Fortschritt, wenn die Durchsetzung positive Netto-Wirkung erzeugt."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "insetting",
@@ -139880,17 +140409,25 @@
       "canonicalLabel": "Jochen Röpke",
       "slug": "jochen-roepke",
       "aliases": [
-        "Jochen Röpke"
+        "Jochen Röpke",
+        "Röpke",
+        "Prof. Jochen Röpke",
+        "Röpke-Unternehmertypen",
+        "Der lernende Unternehmer"
       ],
       "synonyms": [
-        "Jochen Röpke"
+        "Jochen Röpke",
+        "Röpke",
+        "Prof. Jochen Röpke",
+        "Röpke-Unternehmertypen",
+        "Der lernende Unternehmer"
       ],
-      "shortDefinition": "Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
+      "shortDefinition": "Jochen Röpke ist für die Wirkungsökonomie eine Bezugslinie für Unternehmertum als Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
       "short_definition": "Jochen Röpke ist relevant, weil Transformation unternehmerisches Lernen und Selbstveränderung verlangt.",
       "definition": "Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
-      "longDefinition": "Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
+      "longDefinition": "Jochen Röpke ist für die Wirkungsökonomie eine Bezugslinie, weil er Unternehmertum nicht nur als Optimierung oder Marktdurchsetzung liest, sondern als Lern- und Kompetenzentwicklung. In der Röpke-Linie wird der Unternehmer zum Akteur, der nicht nur Produkte, Märkte oder Organisationen verändert, sondern auch eigene Wahrnehmung und Handlungsfähigkeit weiterentwickelt.\n\nFür die WÖk ist das anschlussfähig an Wirkungsgesellschaft, Wirklichkeitsfähigkeit, Rückkopplungsfähigkeit und Transformationsfähigkeit. Die Bezugslinie wird nicht als Autoritätsargument genutzt, sondern als Werkzeug, um unternehmerische Funktionen und Lernlogiken präziser zu unterscheiden.",
       "long_definition": "Der lernende Unternehmer entwickelt Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit. WÖk-Korrektur / Abgrenzung: Unternehmertypen und Lernebenen bleiben quellenprüfpflichtig, bevor sie endgültig Röpke zugeschrieben werden.",
-      "woekRelation": "Die WÖk nutzt Röpke zur Einordnung, dass Transformation unternehmerische Lernfähigkeit verlangt und nicht nur technische Umrüstung ist.",
+      "woekRelation": "Röpke liefert eine wichtige Brücke zwischen Schumpeter, unternehmerischem Lernen und WÖk-Transformation: Wirkung braucht nicht nur Innovation, sondern Kompetenzentwicklung und Rückkopplung.",
       "woek_einordnung": "Der WÖk-Unternehmer wird zum Wirkungsakteur, der Wirkungen liest und bessere Wirkungspfade erzeugt.",
       "examples": [],
       "relatedTerms": [
@@ -139900,17 +140437,31 @@
         "lernebenen",
         "innovation",
         "wirkungsinnovation",
-        "lernende-organisation"
+        "lernende-organisation",
+        "unternehmertypen-jochen-roepke",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "related_terms": [
         "lernender-unternehmer",
         "unternehmerisches-lernen",
         "evolutorischer-unternehmer",
-        "lernebenen"
+        "lernebenen",
+        "innovation",
+        "wirkungsinnovation",
+        "lernende-organisation",
+        "unternehmertypen-jochen-roepke",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -139935,6 +140486,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -139983,20 +140552,20 @@
       "publication_status": "published",
       "status": "approved",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Glossar-Erweiterung Website 2.0",
       "sourceDocument": "",
       "sourceSection": "Glossar-Erweiterung Website 2.0",
       "hoverDefinition": "Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung, Innovation und Selbstevolution.",
       "statusNote": "",
-      "usageNote": "Die WÖk nutzt Röpke zur Einordnung, dass Transformation unternehmerische Lernfähigkeit verlangt und nicht nur technische Umrüstung ist.",
+      "usageNote": "Als Bezugslinie nutzen, nicht als Dogma. Personen sind Quellen und Denkräume, keine Autoritäten der WÖk.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/jochen-roepke/",
       "metaTitle": "Jochen Röpke | Glossar der Wirkungsökonomie",
       "metaDescription": "Jochen Röpke ist relevant, weil Transformation unternehmerisches Lernen und Selbstveränderung verlangt. Wirkungsökonomisch eingeordnet als Vordenker-/Bezugslinienbegriff.",
@@ -140049,7 +140618,59 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Röpke ist Bezugslinie für lernendes und evolutorisches Unternehmertum.",
+            "Zentrale Begriffe: Unternehmertypen, unternehmerisches Lernen, Selbstevolution, Kompetenzentwicklung.",
+            "Die WÖk nutzt Röpke zur Unterscheidung von Routine, Arbitrage, Innovation und Evolution.",
+            "Keine Personenverehrung, sondern methodische Bezugslinie."
+          ]
+        },
+        {
+          "title": "Warum relevant für die WÖk?",
+          "body": "Die Wirkungsgesellschaft braucht Akteure, die aus Wissen Wirkung machen. Röpke hilft, diese Fähigkeit als Lern- und Kompetenzfrage zu verstehen: Wer nur verwaltet oder Chancen abschöpft, transformiert noch nicht. Wer evolutorisch lernt, kann eigene Routinen und Wirkpfade verändern."
+        },
+        {
+          "title": "Begriffsnetz",
+          "items": [
+            "Unternehmertypen nach Jochen Röpke",
+            "Routineunternehmer / Homo oeconomicus",
+            "Arbitrageur",
+            "Innovativer Unternehmer",
+            "Evolutorischer Unternehmer",
+            "Unternehmerisches Lernen",
+            "Lernebenen"
+          ]
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche Lernfähigkeit zeigt ein Unternehmen oder eine Institution?",
+            "Welche Kompetenzen fehlen für positive Netto-Wirkung?",
+            "Wird Rückkopplung aufgenommen oder abgewehrt?",
+            "Bleibt Innovation bei Marktdurchsetzung stehen oder verändert sie auch Wahrnehmung und Verantwortung?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Jochen Röpke ist eine Bezugslinie für Unternehmertum als lernfähige Selbstevolution: nicht nur handeln, sondern die eigene Fähigkeit zum wirksamen Handeln weiterentwickeln."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "john-dewey",
@@ -167351,15 +167972,23 @@
       "canonicalLabel": "Lernebenen",
       "slug": "lernebenen",
       "aliases": [
-        "Lernebenen"
+        "Lernebenen",
+        "Lernstufen",
+        "Ebenen unternehmerischen Lernens",
+        "Lernen lernen",
+        "Selbstevolution"
       ],
       "synonyms": [
-        "Lernebenen"
+        "Lernebenen",
+        "Lernstufen",
+        "Ebenen unternehmerischen Lernens",
+        "Lernen lernen",
+        "Selbstevolution"
       ],
-      "shortDefinition": "Lernebenen unterscheiden unterschiedliche Tiefen des Lernens: Anpassung, Reflexion, Transformation und Entwicklung der eigenen Lernfähigkeit.",
+      "shortDefinition": "Lernebenen unterscheiden, ob Lernen nur Anpassung, Reflexion, Transformation oder Entwicklung der eigenen Lernfähigkeit bedeutet.",
       "short_definition": "Lernebenen unterscheiden unterschiedliche Tiefen des Lernens: Anpassung, Reflexion, Transformation und Entwicklung der eigenen Lernfähigkeit.",
       "definition": "Als vorläufige Arbeitsstruktur unterscheidet die WÖk Anpassungslernen, Reflexionslernen, Transformationslernen und Selbstevolution. Die genaue Zuschreibung zu Röpke / Rassidakis bleibt quellenmäßig zu prüfen.",
-      "longDefinition": "Als vorläufige Arbeitsstruktur unterscheidet die WÖk Anpassungslernen, Reflexionslernen, Transformationslernen und Selbstevolution. Die genaue Zuschreibung zu Röpke / Rassidakis bleibt quellenmäßig zu prüfen.",
+      "longDefinition": "Lernebenen unterscheiden unterschiedliche Tiefen des Lernens. Auf einer einfachen Ebene werden Handlungen angepasst. Auf tieferen Ebenen werden Regeln, Annahmen, Wahrnehmungsmuster, Ziele und schließlich die eigene Lernfähigkeit verändert.\n\nFür Röpke und die Wirkungsökonomie ist diese Unterscheidung wichtig, weil Transformation mehr verlangt als Informationsaufnahme. Eine Organisation kann Fehler korrigieren und trotzdem dieselbe Logik reproduzieren. Evolutorisches Lernen beginnt, wenn sie die eigene Logik und Kompetenz weiterentwickelt.",
       "long_definition": "Als vorläufige Arbeitsstruktur unterscheidet die WÖk Anpassungslernen, Reflexionslernen, Transformationslernen und Selbstevolution. Die genaue Zuschreibung zu Röpke / Rassidakis bleibt quellenmäßig zu prüfen.",
       "woekRelation": "Hilfreich, um Wirkungskompetenz und unternehmerisches Lernen nicht nur als Wissen, sondern als Entwicklungsfähigkeit zu verstehen.",
       "woek_einordnung": "Hilfreich, um Wirkungskompetenz und unternehmerisches Lernen nicht nur als Wissen, sondern als Entwicklungsfähigkeit zu verstehen.",
@@ -167368,19 +167997,32 @@
         "unternehmerisches-lernen",
         "lernender-unternehmer",
         "wirkungskompetenz",
-        "jochen-roepke"
+        "jochen-roepke",
+        "evolutorischer-unternehmer",
+        "lernende-organisation",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "related_terms": [
         "unternehmerisches-lernen",
         "lernender-unternehmer",
         "wirkungskompetenz",
-        "jochen-roepke"
+        "jochen-roepke",
+        "evolutorischer-unternehmer",
+        "lernende-organisation",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
         "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
         "Nikolai Kondratieff: The Long Waves in Economic Life",
-        "EconStor|https://www.econstor.eu/"
+        "EconStor|https://www.econstor.eu/",
+        "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -167405,6 +168047,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -167451,22 +168111,22 @@
       "concept_status": "Quellen-/Bezugslinienbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "bezugsbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
+      "status": "approved",
+      "version": "1.1",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "needs_source_check",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Innovation, Evolution und Unternehmertum",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
       "sourceSection": "Innovation, Evolution und Unternehmertum",
-      "hoverDefinition": "Lernebenen unterscheiden unterschiedliche Tiefen des Lernens: Anpassung, Reflexion, Transformation und Entwicklung der eigenen Lernfähigkeit.",
+      "hoverDefinition": "Lernebenen zeigen, wie tief Lernen geht: Anpassung, Reflexion, Transformation und Lernen lernen.",
       "statusNote": "Die Viererstruktur ist als WÖk-Arbeitsstruktur markiert und nicht endgültig Röpke zugeschrieben.",
       "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/lernebenen/",
       "metaTitle": "Lernebenen | Glossar der Wirkungsökonomie",
       "metaDescription": "Lernebenen unterscheiden unterschiedliche Tiefen des Lernens: Anpassung, Reflexion, Transformation und Entwicklung der eigenen Lernfähigkeit. Wirkungsökonomisch eingeordnet als Quellen-/Bezugslinienbegriff.",
@@ -167507,7 +168167,61 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Lernebenen beschreiben Tiefe von Lernen.",
+            "Ebene 1: Anpassung innerhalb bestehender Regeln.",
+            "Ebene 2: Reflexion der Regeln und Annahmen.",
+            "Ebene 3: Transformation von Routinen, Zielen und Strukturen.",
+            "Ebene 4: Lernen lernen und Selbstevolution.",
+            "WÖk fragt, welche Ebene für positive Netto-Wirkung nötig ist."
+          ]
+        },
+        {
+          "title": "Wirkungsökonomische Relevanz",
+          "body": "Viele Systeme reagieren nur auf Symptome. Lernebenen helfen zu prüfen, ob Rückkopplung wirklich strukturell wirkt oder nur kosmetische Anpassung erzeugt."
+        },
+        {
+          "title": "Verbindung zu den drei Video-Fähigkeiten",
+          "items": [
+            "Wirklichkeitsfähigkeit erkennt, was tatsächlich geschieht.",
+            "Rückkopplungsfähigkeit führt Erkenntnis in Entscheidungen zurück.",
+            "Transformationsfähigkeit macht daraus lernfähige Normalität."
+          ]
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Wird nur Verhalten angepasst oder auch die Regel verändert?",
+            "Welche Annahme muss neu geprüft werden?",
+            "Welche Kompetenz fehlt?",
+            "Was müsste gelernt werden, damit die Wirkung besser wird?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Lernebenen machen sichtbar, ob ein System nur reagiert oder seine eigene Fähigkeit zur Wirkung weiterentwickelt."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "lernende-organisation",
@@ -204535,17 +205249,21 @@
         "Neukombination",
         "neue Kombination",
         "Rekombination",
-        "Schumpeter-Neukombination"
+        "Schumpeter-Neukombination",
+        "Neokombination",
+        "neue Kombination bestehender Produktionsfaktoren"
       ],
       "synonyms": [
         "Neukombination",
         "neue Kombination",
         "Rekombination",
-        "Schumpeter-Neukombination"
+        "Schumpeter-Neukombination",
+        "Neokombination",
+        "neue Kombination bestehender Produktionsfaktoren"
       ],
-      "shortDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Kombinationen bestehender Produktionsfaktoren und Wissensbestände.",
+      "shortDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung durch neue Kombinationen bestehender Produktionsfaktoren, Wissensbestände, Technologien, Kompetenzen und Organisationsformen entsteht.",
       "definition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Kombinationen bestehender Produktionsfaktoren und Wissensbestände.",
-      "longDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Kombinationen bestehender Produktionsfaktoren und Wissensbestände.",
+      "longDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Verbindungen. Produktionsfaktoren, Wissen, Technik, Organisation, Märkte, Daten, Kapital und Kompetenzen werden anders kombiniert und schaffen dadurch neue Möglichkeiten.\n\nIn der Schumpeter-Linie ist Neukombination Kern der Innovation. In der Wirkungsökonomie wird sie zusätzlich an Wirkung gebunden: Nicht jede neue Kombination ist besser. Entscheidend ist, ob sie Zustände für Mensch, Planet und Demokratie verbessert und Wirkungsrisiken reduziert.",
       "woekRelation": "Für die WÖk ist das zentral: Kreislaufwirtschaft, Remanufacturing, erneuerbare Energien, Datenräume und neue Lieferketten können Wachstum als bessere Wirkung statt mehr Verbrauch erzeugen.",
       "usageNote": "Für die WÖk ist das zentral: Kreislaufwirtschaft, Remanufacturing, erneuerbare Energien, Datenräume und neue Lieferketten können Wachstum als bessere Wirkung statt mehr Verbrauch erzeugen.",
       "category": "Glossar-Erweiterung",
@@ -204559,74 +205277,84 @@
         "kreislaufwirtschaft",
         "wirkungsinnovation",
         "regeneratives-wachstum",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "schumpetersche-innovation",
+        "rekombination",
+        "invention",
+        "erfindung",
+        "innovativer-unternehmer",
+        "positive-netto-wirkung"
       ],
       "doNotConfuseWith": [
         "Mehrproduktion, Erfindung, reine Effizienzsteigerung, bloße Optimierung."
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "deepGlossarySections": [
         {
-          "title": "Hauptdefinition",
-          "body": "Für die WÖk ist Neukombination zentral, weil Kreislaufwirtschaft, Remanufacturing, erneuerbare Energien, Datenräume und neue Lieferketten Wachstum als bessere Wirkung statt bloß mehr Verbrauch ermöglichen können."
+          "title": "Auf einen Blick",
+          "items": [
+            "Neukombination ist die Verbindung vorhandener und neuer Möglichkeiten.",
+            "Sie betrifft Produktionsfaktoren, Wissen, Technik, Organisation, Märkte und Kapital.",
+            "Sie ist Kern der Schumpeter-Innovation.",
+            "Sie unterscheidet sich von bloßer Mehrproduktion.",
+            "WÖk bewertet sie nach positiver Netto-Wirkung."
+          ]
         },
         {
-          "title": "Wirkungsökonomische Relevanz",
-          "body": "Der Begriff korrigiert die Gleichsetzung von Wachstum mit Ressourcenausweitung. Fortschritt entsteht erst, wenn die neue Kombination positive Netto-Wirkung ermöglicht."
+          "title": "Bestehende Produktionsfaktoren neu verbinden",
+          "body": "Der zentrale Gedanke: Entwicklung entsteht nicht nur, indem mehr Arbeit, Kapital, Material oder Energie eingesetzt wird. Entwicklung entsteht, wenn vorhandene Faktoren anders, klüger, kreislauffähiger oder wirkungsorientierter verbunden werden."
         },
         {
-          "title": "Verwendung in der WÖk",
-          "body": "Nutzen bei Innovation, Wachstum, Kreislaufwirtschaft, regenerativem Wachstum und Wirkungsinnovation."
+          "title": "WÖk-Beispiele",
+          "items": [
+            "Kreislaufwirtschaft kombiniert Produktdesign, Materialdaten, Reparatur, Rücknahme und Geschäftsmodell neu.",
+            "Wirkungsdatenräume kombinieren Daten, Standards, Governance und Entscheidung.",
+            "Erneuerbare Energiesysteme kombinieren Erzeugung, Speicher, Flexibilität, Netze und Nachfrage.",
+            "Wirkungsinnovation kombiniert Problemlösung, Rückkopplung, SDG+ und positive Netto-Wirkung."
+          ]
         },
         {
           "title": "Abgrenzung",
           "items": [
-            "Mehrproduktion",
-            "Erfindung allein",
-            "reine Effizienzsteigerung",
-            "bloße Optimierung"
+            "Nicht bloß Effizienzsteigerung innerhalb alter Pfade.",
+            "Nicht bloß Erfindung ohne Anwendung.",
+            "Nicht bloß Wachstum durch mehr Input.",
+            "Nicht automatisch positive Wirkung."
           ]
         },
         {
-          "title": "Querverweise",
+          "title": "WÖk-Prüffragen",
           "items": [
-            "Innovation",
-            "Kreislaufwirtschaft",
-            "Wirkungsinnovation",
-            "Regeneratives Wachstum",
-            "Joseph Schumpeter"
+            "Welche Faktoren werden neu kombiniert?",
+            "Welche alte Kombination erzeugte Wirkungsrisiken?",
+            "Welche neue Wirkung entsteht?",
+            "Welche Nebenwirkungen oder Rebounds sind plausibel?",
+            "Welche Rückkopplung verbessert die Kombination weiter?"
           ]
         },
         {
-          "title": "Quellenbasis und Bezugslinien",
-          "body": "Interne Quellen: WÖk-Kapitel Wachstum und Innovation. Externe Bezugslinie: Schumpeter."
-        },
-        {
-          "title": "Redaktionelle Metadaten",
-          "items": [
-            "Glossar-Pack: Bezugslinien 2.0",
-            "Version: 1.0",
-            "Status: synchronisiert oder neu angelegt",
-            "Qualitätsmaßstab: Struktur 5. P = Planet",
-            "Personen sind Bezugslinien, nicht Autoritäten."
-          ]
+          "title": "WÖk-Formulierung",
+          "body": "Neukombination ist die produktive Neuverbindung von Ressourcen, Wissen und Kompetenzen. Wirkungsökonomisch zählt, ob daraus bessere Zustände entstehen."
         }
       ],
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "version": "2.0",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "updatedBy": "codex",
-      "updatedAt": "2026-06-06",
-      "hoverDefinition": "Neukombination meint, dass wirtschaftliche Entwicklung nicht nur durch mehr Input entsteht, sondern durch neue Kombinationen bestehender Produktionsfaktoren und Wissensbestände.",
+      "updatedAt": "2026-07-06",
+      "hoverDefinition": "Neukombination verbindet bestehende Ressourcen, Wissen und Produktionsfaktoren neu und eröffnet Entwicklungspfade.",
       "sourceNotes": "Joseph Schumpeter, WÖk-Kapitel Wachstum/Innovation.",
       "type": "Anschlussbegriff",
       "status": "approved",
       "source": "Artikelpaket C: Innovation, Wachstum und Unternehmertum",
       "glossaryOrderKey": "Neukombination",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "sourceDocument": "",
       "sourceSection": "Artikelpaket C: Innovation, Wachstum und Unternehmertum",
       "importSource": "content/glossary/imports/website-2-0-glossar-nachtraege.json",
@@ -204635,7 +205363,71 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "conceptStatus": "Bezugslinie der Wirkungsökonomie",
+      "concept_status": "Bezugslinie der Wirkungsökonomie",
+      "lastUpdated": "2026-07-06",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "firstOccurrenceOnly": true,
+      "sourceLinks": [
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
+          "status": "linked"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "related_terms": [
+        "innovation",
+        "kreislaufwirtschaft",
+        "wirkungsinnovation",
+        "regeneratives-wachstum",
+        "joseph-schumpeter",
+        "schumpetersche-innovation",
+        "rekombination",
+        "invention",
+        "erfindung",
+        "innovativer-unternehmer",
+        "positive-netto-wirkung"
+      ],
+      "metaTitle": "Neukombination | Glossar der Wirkungsökonomie",
+      "metaDescription": "Neukombination meint, dass wirtschaftliche Entwicklung durch neue Kombinationen bestehender Produktionsfaktoren, Wissensbestände, Technologien, Kompetenzen und Organisationsformen entsteht.",
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "neuroplastizitaet",
@@ -262130,17 +262922,23 @@
       "aliases": [
         "Rekombination / neue Kombination",
         "Neue Kombination",
-        "neue Kombinationen"
+        "neue Kombinationen",
+        "Rekombination",
+        "Neokombination",
+        "Neukombination"
       ],
       "synonyms": [
         "Rekombination / neue Kombination",
         "Neue Kombination",
-        "neue Kombinationen"
+        "neue Kombinationen",
+        "Rekombination",
+        "Neokombination",
+        "Neukombination"
       ],
-      "shortDefinition": "Rekombination beschreibt die neue Kombination bestehender Ressourcen, Technologien, Kompetenzen, Märkte oder Organisationsformen.",
+      "shortDefinition": "Rekombination beschreibt die neue Verbindung bestehender Ressourcen, Technologien, Kompetenzen, Märkte oder Organisationsformen und ist Kern schumpeterscher Innovation.",
       "short_definition": "Rekombination beschreibt die neue Kombination bestehender Ressourcen, Technologien, Kompetenzen, Märkte oder Organisationsformen.",
       "definition": "Der Begriff schließt an Schumpeters neue Kombinationen an. Fortschritt entsteht oft nicht durch völlig Neues, sondern durch neue Kombinationen.",
-      "longDefinition": "Der Begriff schließt an Schumpeters neue Kombinationen an. Fortschritt entsteht oft nicht durch völlig Neues, sondern durch neue Kombinationen.",
+      "longDefinition": "Rekombination beschreibt die neue Verbindung bestehender Ressourcen, Technologien, Kompetenzen, Märkte, Daten, Kapital oder Organisationsformen. Sie ist eng mit Schumpeters neuer Kombination verbunden.\n\nWirkungsökonomisch zählt nicht nur, dass etwas neu kombiniert wird, sondern welche Zustandsveränderung daraus entsteht. Rekombination kann Verlustleistung senken und positive Wirkung ermöglichen; sie kann aber auch Risiken verlagern oder alte Schäden effizienter machen.",
       "long_definition": "Der Begriff schließt an Schumpeters neue Kombinationen an. Fortschritt entsteht oft nicht durch völlig Neues, sondern durch neue Kombinationen.",
       "woekRelation": "Rekombination wird zur Wirkungsinnovation, wenn sie mehr positive Netto-Wirkung bei weniger Verlustleistung erzeugt.",
       "woek_einordnung": "Rekombination wird zur Wirkungsinnovation, wenn sie mehr positive Netto-Wirkung bei weniger Verlustleistung erzeugt.",
@@ -262151,7 +262949,12 @@
         "wirkungsinnovation",
         "verlustleistung",
         "innovativer-unternehmer",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "neukombination",
+        "schumpetersche-innovation",
+        "invention",
+        "erfindung",
+        "positive-netto-wirkung"
       ],
       "related_terms": [
         "unternehmerfunktion",
@@ -262159,13 +262962,23 @@
         "wirkungsinnovation",
         "verlustleistung",
         "innovativer-unternehmer",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "neukombination",
+        "schumpetersche-innovation",
+        "invention",
+        "erfindung",
+        "positive-netto-wirkung"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
         "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
         "Nikolai Kondratieff: The Long Waves in Economic Life",
-        "EconStor|https://www.econstor.eu/"
+        "EconStor|https://www.econstor.eu/",
+        "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -262190,6 +263003,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -262236,22 +263067,22 @@
       "concept_status": "Anschlussbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "anschlussbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
+      "status": "approved",
+      "version": "1.1",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Innovation, Evolution und Unternehmertum",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
       "sourceSection": "Innovation, Evolution und Unternehmertum",
-      "hoverDefinition": "Rekombination beschreibt die neue Kombination bestehender Ressourcen, Technologien, Kompetenzen, Märkte oder Organisationsformen.",
+      "hoverDefinition": "Rekombination verbindet bestehende Ressourcen und Kompetenzen neu und kann Innovation auslösen.",
       "statusNote": "",
       "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/rekombination/",
       "metaTitle": "Rekombination / neue Kombination | Glossar der Wirkungsökonomie",
       "metaDescription": "Rekombination beschreibt die neue Kombination bestehender Ressourcen, Technologien, Kompetenzen, Märkte oder Organisationsformen. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
@@ -262292,7 +263123,52 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Rekombination ist die Neuverbindung bestehender Möglichkeiten.",
+            "Sie ist Kern von Neukombination und Innovation.",
+            "Sie kann technische, organisatorische, soziale und finanzielle Elemente betreffen.",
+            "WÖk prüft Wirkung, Risiko, Bilanzgrenze und Rückkopplung."
+          ]
+        },
+        {
+          "title": "Abgrenzung",
+          "body": "Rekombination ist noch nicht automatisch Innovation. Sie wird innovationsrelevant, wenn sie in Anwendung kommt und Zustände verändert. Sie wird wirkungsökonomisch wertvoll, wenn diese Veränderung positive Netto-Wirkung erzeugt."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Was wird neu verbunden?",
+            "Welche alte Kombination wird ersetzt?",
+            "Welche Wirkung entsteht?",
+            "Welche Nebenwirkung oder Externalität wird sichtbar?",
+            "Welche Rückkopplung verbessert die Rekombination?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Rekombination ist der kreative Verbindungsvorgang vor und in Innovation. Ihre Qualität zeigt sich an Wirkung, nicht nur an Neuheit."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "rekursion",
@@ -272392,37 +273268,75 @@
       "aliases": [
         "Routineunternehmer / Homo oeconomicus",
         "Homo oeconomicus",
-        "Routineunternehmer"
+        "Routineunternehmer",
+        "Routine-Unternehmer",
+        "Manager",
+        "Verwalter",
+        "Manager / Verwalter",
+        "Homo oeconomicus als Routineunternehmer",
+        "Lehrbuchunternehmer",
+        "Allokationsunternehmer"
       ],
       "synonyms": [
         "Routineunternehmer / Homo oeconomicus",
         "Homo oeconomicus",
-        "Routineunternehmer"
+        "Routineunternehmer",
+        "Routine-Unternehmer",
+        "Manager",
+        "Verwalter",
+        "Manager / Verwalter",
+        "Homo oeconomicus als Routineunternehmer",
+        "Lehrbuchunternehmer",
+        "Allokationsunternehmer"
       ],
-      "shortDefinition": "Der Routineunternehmer stabilisiert und reproduziert bestehende Abläufe, Geschäftsmodelle und Kompetenzen. Er arbeitet im Rahmen bekannter Märkte, bekannter Regeln und erprobter Entscheidungslogiken.",
+      "shortDefinition": "Der Routineunternehmer oder Manager-Verwalter stabilisiert bestehende Abläufe, optimiert Ressourcen und handelt im Rahmen bekannter Märkte, Regeln und Ziele.",
       "short_definition": "Der Routineunternehmer handelt innerhalb gegebener Marktlogiken, optimiert Ressourcen und reproduziert bestehende Muster.",
-      "definition": "Der Routineunternehmer stabilisiert und reproduziert bestehende Abläufe, Geschäftsmodelle und Kompetenzen. Er arbeitet im Rahmen bekannter Märkte, bekannter Regeln und erprobter Entscheidungslogiken.",
-      "longDefinition": "Der Routineunternehmer stabilisiert und reproduziert bestehende Abläufe, Geschäftsmodelle und Kompetenzen. Er arbeitet im Rahmen bekannter Märkte, bekannter Regeln und erprobter Entscheidungslogiken.",
+      "definition": "Der Routineunternehmer beschreibt in der Röpke-Typologie die unternehmerische Funktion der Allokation und Verwaltung. Er arbeitet mit vorhandenen Ressourcen, bekannten Regeln und bestehenden Märkten.",
+      "longDefinition": "Der Routineunternehmer beschreibt in der Röpke-Typologie die unternehmerische Funktion der Allokation und Verwaltung. Als Manager oder Verwalter sorgt er dafür, dass bestehende Ressourcen effizient eingesetzt, Prozesse stabil gehalten und bekannte Ziele erreicht werden.\n\nWirkungsökonomisch ist diese Rolle ambivalent: Sie ist notwendig für Verlässlichkeit, Qualität und Umsetzung. Sie reicht aber nicht aus, wenn alte Routinen negative Wirkung erzeugen, Wirkungsrisiken externalisieren oder Transformation blockieren. Routine braucht deshalb Rückkopplung, sonst wird sie zur Pfadabhängigkeit.",
       "long_definition": "Routine kann stabilisieren und effizient machen, aber auch bestehende Pfade verfestigen.",
-      "woekRelation": "WÖk-seitig ist Routine nicht negativ. Sie sichert Qualität, Versorgung, Skalierung und Verlässlichkeit. Problematisch wird Routine, wenn sie Wirkungsblindheit, Pfadabhängigkeit oder Business-as-usual gegen bessere Wirkung verteidigt.",
+      "woekRelation": "Die WÖk nutzt den Routineunternehmer, um zwischen notwendiger Stabilisierung und transformationsblinder Verwaltung zu unterscheiden. Entscheidend ist, ob Routine an Wirkung rückgekoppelt wird.",
       "woek_einordnung": "Wichtig als Gegenpol zum lernenden und wirkungsorientierten Unternehmer.",
-      "examples": [],
+      "examples": [
+        "Ein Unternehmen optimiert Einkauf, Produktion und Kosten, ohne Produktwirkung oder Lieferkettenrisiken neu zu bewerten.",
+        "Eine Verwaltung verteilt Mittel korrekt nach Regeln, prüft aber nicht, ob die Mittel die gewünschten Zustände verändern.",
+        "Ein Betrieb hält Qualität stabil und Ausfälle niedrig; das ist wirkungsrelevant, wenn es an reale Zustände rückgekoppelt bleibt."
+      ],
       "relatedTerms": [
         "lernender-unternehmer",
         "arbitrageur",
         "innovativer-unternehmer",
         "evolutorischer-unternehmer",
         "pfadabhaengigkeit",
-        "transformationswirkung"
+        "transformationswirkung",
+        "homo-oeconomicus",
+        "unternehmertypen-jochen-roepke",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "positive-netto-wirkung"
       ],
       "related_terms": [
         "lernender-unternehmer",
         "arbitrageur",
-        "innovativer-unternehmer"
+        "innovativer-unternehmer",
+        "evolutorischer-unternehmer",
+        "pfadabhaengigkeit",
+        "transformationswirkung",
+        "homo-oeconomicus",
+        "unternehmertypen-jochen-roepke",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "positive-netto-wirkung"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -272447,6 +273361,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -272495,25 +273427,27 @@
       "publication_status": "published",
       "status": "approved",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "redaktionell synchronisiert",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Unternehmertypen, Innovation und Schumpeter/Röpke",
       "sourceDocument": "",
       "sourceSection": "Unternehmertypen, Innovation und Schumpeter/Röpke",
-      "hoverDefinition": "Der Routineunternehmer stabilisiert und reproduziert bestehende Abläufe, Geschäftsmodelle und Kompetenzen. Er arbeitet im Rahmen bekannter Märkte, bekannter Regeln und erprobter Entscheidungslogiken.",
+      "hoverDefinition": "Der Routineunternehmer verwaltet und optimiert bestehende Muster: Allokation, Prozesse, Kosten, Qualität und Stabilität.",
       "statusNote": "",
-      "usageNote": "WÖk-seitig ist Routine nicht negativ. Sie sichert Qualität, Versorgung, Skalierung und Verlässlichkeit. Problematisch wird Routine, wenn sie Wirkungsblindheit, Pfadabhängigkeit oder Business-as-usual gegen bessere Wirkung verteidigt.",
+      "usageNote": "Nicht abwertend verwenden. Routine, Verwaltung und Management sind notwendig. Problematisch wird die Logik, wenn sie Wirkungsrisiken, Pfadabhängigkeit und notwendige Transformation ausblendet.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/routineunternehmer/",
       "metaTitle": "Routineunternehmer / Homo oeconomicus | Glossar der Wirkungsökonomie",
       "metaDescription": "Der Routineunternehmer handelt innerhalb gegebener Marktlogiken, optimiert Ressourcen und reproduziert bestehende Muster. Wirkungsökonomisch eingeordnet als Quellen-/Bezugslinienbegriff.",
       "doNotConfuseWith": [
-        "Nicht mit „schlechter Unternehmer“ gleichsetzen. Routine ist notwendig, aber unzureichend für Transformation. Die öffentliche Einordnung sollte den Begriff in eine evolutorische Hierarchie einordnen: Routine, Arbitrage, Innovation, Evolutorik."
+        "Bürokratiekritik: Verwaltung kann Wirkung ermöglichen, wenn sie rückgekoppelt ist.",
+        "Homo oeconomicus als Menschenbild: Im Röpke-Kontext meint die Figur eine Funktionslogik, nicht eine vollständige Anthropologie.",
+        "Innovation: Routine setzt Bestehendes effizient um; Innovation setzt neue Kombinationen durch."
       ],
       "relatedDocuments": [],
       "preferredUsage": "",
@@ -272559,7 +273493,70 @@
       "showInHub": true,
       "showHover": true,
       "autoLinkAllowed": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Routineunternehmer steht für Manager- und Verwalterlogik.",
+            "Kernfunktion: Allokation, Stabilisierung und Optimierung bestehender Ressourcen.",
+            "Typische Skills: Planung, Prozessdisziplin, Kostenkontrolle, Qualitätssicherung, Umsetzung, Risikovermeidung.",
+            "Stärke: Verlässlichkeit und Effizienz.",
+            "Risiko: Pfadabhängigkeit, Wirkungsblindheit und Transformationsverzögerung.",
+            "WÖk-Frage: Wird Routine an tatsächliche Wirkung zurückgekoppelt?"
+          ]
+        },
+        {
+          "title": "Kompetenzprofil / Skills",
+          "items": [
+            "Ressourcen planen und verteilen",
+            "Prozesse standardisieren und stabilisieren",
+            "Kosten, Qualität und Termine kontrollieren",
+            "Regeln korrekt anwenden",
+            "operative Risiken reduzieren",
+            "Leistung messbar machen",
+            "bestehende Ziele zuverlässig erfüllen"
+          ]
+        },
+        {
+          "title": "Wirkungsökonomische Stärke",
+          "body": "Routine ist nicht der Feind von Wirkung. Ohne stabile Abläufe, Zuständigkeiten, Qualitätskontrolle und Verlässlichkeit können gute Ideen wirkungslos bleiben. Routine wird wirkungsfähig, wenn sie Datenqualität, Betroffenenperspektiven und Rückkopplung integriert."
+        },
+        {
+          "title": "Wirkungsökonomisches Risiko",
+          "body": "Routine wird problematisch, wenn sie alte Wirkungspfade stabilisiert, obwohl deren Schäden sichtbar sind. Dann optimiert sie innerhalb falscher Bilanzgrenzen: effizienter Verbrauch, effizienteres Wegsehen, effizientere Externalisierung."
+        },
+        {
+          "title": "Abgrenzung zu Innovation und Evolution",
+          "body": "Der Routineunternehmer verändert nicht primär die Spielregeln. Der innovative Unternehmer setzt neue Kombinationen durch. Der evolutorische Unternehmer verändert zusätzlich die eigene Kompetenz- und Wahrnehmungsstruktur. Routine kann aber Grundlage beider sein, wenn sie lernfähig bleibt."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche Routine wird stabilisiert?",
+            "Welche Wirkung wird dadurch erzeugt oder verhindert?",
+            "Welche Daten zeigen, ob die Routine noch trägt?",
+            "Welche alten Regeln blockieren Transformation?",
+            "Wo braucht Verwaltung Rückkopplung statt bloßer Regelbefolgung?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Der Routineunternehmer ist die Manager- und Verwalterlogik der Ökonomie: notwendig für Stabilität, aber nur dann zukunftsfähig, wenn Routine an Wirkung rückgekoppelt und lernfähig bleibt."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "rueckbau-windenergieanlagen",
@@ -276770,36 +277767,63 @@
       "canonicalLabel": "Schöpferische Zerstörung",
       "slug": "schoepferische-zerstoerung",
       "aliases": [
-        "Schöpferische Zerstörung"
+        "Schöpferische Zerstörung",
+        "Creative Destruction",
+        "kreative Zerstörung",
+        "schumpetersche schöpferische Zerstörung"
       ],
       "synonyms": [
-        "Schöpferische Zerstörung"
+        "Schöpferische Zerstörung",
+        "Creative Destruction",
+        "kreative Zerstörung",
+        "schumpetersche schöpferische Zerstörung"
       ],
-      "shortDefinition": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen verdrängt und neue hervorbringt.",
+      "shortDefinition": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen, Produkte, Routinen oder Geschäftsmodelle verdrängt und neue Entwicklungspfade eröffnet.",
       "short_definition": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen verdrängt und neue hervorbringt.",
       "definition": "Bei Schumpeter ist schöpferische Zerstörung ein Kernmoment kapitalistischer Entwicklung.",
-      "longDefinition": "Bei Schumpeter ist schöpferische Zerstörung ein Kernmoment kapitalistischer Entwicklung.",
+      "longDefinition": "Schöpferische Zerstörung bezeichnet bei Schumpeter den Prozess, in dem neue Kombinationen bestehende Strukturen verdrängen und dadurch wirtschaftliche Entwicklung antreiben. Alte Produkte, Verfahren, Organisationen, Märkte oder Geschäftsmodelle verlieren Tragfähigkeit, während neue entstehen.\n\nWirkungsökonomisch darf schöpferische Zerstörung nicht romantisiert werden. Zerstörung ist nicht automatisch schöpferisch. Sie wird nur dann legitimierbar, wenn die neue Struktur positive Netto-Wirkung ermöglicht, Übergangsrisiken fair bearbeitet und nichtkompensierbare Schäden vermieden werden.",
       "long_definition": "Bei Schumpeter ist schöpferische Zerstörung ein Kernmoment kapitalistischer Entwicklung.",
-      "woekRelation": "Nicht jede schöpferische Zerstörung ist Fortschritt. Wenn neue Strukturen Mensch, Planet oder Demokratie schwächen, ist sie wirkungsökonomisch negativ.",
+      "woekRelation": "Die WÖk verbindet Schumpeters Dynamik mit Nichtkompensation, Reverse Merit Order und Transformationsgerechtigkeit. Kreative Rekonstruktion ist oft die bessere WÖk-Form: Altes nicht blind vernichten, sondern wirksam umbauen, wo das möglich ist.",
       "woek_einordnung": "Nicht jede schöpferische Zerstörung ist Fortschritt. Wenn neue Strukturen Mensch, Planet oder Demokratie schwächen, ist sie wirkungsökonomisch negativ.",
       "examples": [],
       "relatedTerms": [
         "kreative-rekonstruktion",
         "innovation",
         "positive-netto-wirkung",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "schumpetersche-innovation",
+        "neukombination",
+        "rekombination",
+        "innovativer-unternehmer",
+        "transformationsfaehigkeit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsrisiko"
       ],
       "related_terms": [
         "kreative-rekonstruktion",
         "innovation",
         "positive-netto-wirkung",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "schumpetersche-innovation",
+        "neukombination",
+        "rekombination",
+        "innovativer-unternehmer",
+        "transformationsfaehigkeit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsrisiko"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
         "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
         "Nikolai Kondratieff: The Long Waves in Economic Life",
-        "EconStor|https://www.econstor.eu/"
+        "EconStor|https://www.econstor.eu/",
+        "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -276824,6 +277848,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -276870,22 +277912,22 @@
       "concept_status": "Quellen-/Bezugslinienbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "bezugsbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
+      "status": "approved",
+      "version": "1.1",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "approved",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Innovation, Evolution und Unternehmertum",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
       "sourceSection": "Innovation, Evolution und Unternehmertum",
-      "hoverDefinition": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen verdrängt und neue hervorbringt.",
+      "hoverDefinition": "Schöpferische Zerstörung beschreibt, wie Innovation alte Strukturen verdrängt und neue hervorbringt.",
       "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "usageNote": "Nicht als Freifahrtschein für Disruption verwenden. Immer prüfen, wer Kosten trägt, welche Schäden entstehen und welche positive Netto-Wirkung plausibel ist.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/schoepferische-zerstoerung/",
       "metaTitle": "Schöpferische Zerstörung | Glossar der Wirkungsökonomie",
       "metaDescription": "Schöpferische Zerstörung bezeichnet den Prozess, in dem Innovation alte Strukturen verdrängt und neue hervorbringt. Wirkungsökonomisch eingeordnet als Quellen-/Bezugslinienbegriff.",
@@ -276926,7 +277968,63 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Schöpferische Zerstörung ist Schumpeters Dynamik von Verdrängung durch Innovation.",
+            "Sie entsteht durch neue Kombinationen und Marktdurchsetzung.",
+            "Sie kann Produktivität und neue Möglichkeiten schaffen.",
+            "Sie kann aber auch soziale, ökologische und demokratische Schäden erzeugen.",
+            "WÖk prüft: Ist die Zerstörung wirklich schöpferisch und für wen?",
+            "Nichtkompensation und Reverse Merit Order setzen Grenzen."
+          ]
+        },
+        {
+          "title": "Schumpeter-Linie",
+          "body": "Innovation bricht den Kreislauf der Routine. Neue Kombinationen treten neben alte Strukturen, setzen sich durch und verändern Märkte. Dadurch entstehen Gewinne, Nachahmung, Diffusion und neue Gleichgewichte, bis der nächste Entwicklungsschub beginnt."
+        },
+        {
+          "title": "WÖk-Korrektur",
+          "body": "Die Wirkungsökonomie übernimmt die Entwicklungsdynamik, aber nicht die automatische Fortschrittserzählung. Eine verdrängende Innovation kann positive Wirkung erzeugen, sie kann aber auch Existenzen, Gemeingüter, Demokratiequalität oder ökologische Systeme beschädigen."
+        },
+        {
+          "title": "Kreative Rekonstruktion",
+          "body": "Wo möglich, bevorzugt die WÖk kreative Rekonstruktion: bestehende Ressourcen, Kompetenzen, Infrastrukturen und Organisationen werden umgebaut, statt sie nur zu entwerten. Das senkt Verlustleistung und Übergangsschäden."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche alte Struktur wird verdrängt?",
+            "Welche neue Kombination setzt sich durch?",
+            "Wer trägt Übergangskosten?",
+            "Welche Schäden wären nicht kompensierbar?",
+            "Kann Rekonstruktion statt Zerstörung wirken?",
+            "Welche positive Netto-Wirkung entsteht nachweisbar?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Schöpferische Zerstörung ist nur dann schöpferisch, wenn die neue Ordnung mehr positive Netto-Wirkung erzeugt, als sie an nichtkompensierbarem Schaden riskiert."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "schulden-nichtkompensation",
@@ -277471,18 +278569,22 @@
         "Schumpetersche Innovation / Neue Kombination",
         "Schumpetersche Innovation",
         "Neue Kombination",
-        "Innovation nach Schumpeter"
+        "Innovation nach Schumpeter",
+        "Neokombination",
+        "Neukombination nach Schumpeter"
       ],
       "synonyms": [
         "Schumpetersche Innovation / Neue Kombination",
         "Schumpetersche Innovation",
         "Neue Kombination",
-        "Innovation nach Schumpeter"
+        "Innovation nach Schumpeter",
+        "Neokombination",
+        "Neukombination nach Schumpeter"
       ],
-      "shortDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
-      "hoverDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
+      "shortDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen von Produkten, Verfahren, Märkten, Bezugsquellen oder Organisationsformen.",
+      "hoverDefinition": "Schumpetersche Innovation ist die Durchsetzung neuer Kombinationen, nicht bloß eine Idee oder Erfindung.",
       "definition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
-      "longDefinition": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen: Produkte, Verfahren, Märkte, Bezugsquellen oder Organisationsformen werden neu verbunden und verändern Entwicklungspfade.",
+      "longDefinition": "Schumpetersche Innovation beschreibt wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen. Das kann neue Produkte, neue Produktionsmethoden, neue Absatzmärkte, neue Bezugsquellen oder neue Organisationsformen betreffen. Entscheidend ist nicht die bloße Idee, sondern die Veränderung wirtschaftlicher Praxis.\n\nWirkungsökonomisch wird diese Logik um Wirkung erweitert: Neue Kombinationen sind erst dann Fortschritt, wenn sie positive Netto-Wirkung erzeugen, Risiken transparent machen und Rückkopplung ermöglichen.",
       "woekRelation": "Die WÖk übernimmt den Gedanken der Neukombination, verschiebt aber den Maßstab: Innovation ist nur dann Fortschritt, wenn sie positive Netto-Wirkung erzeugt. Kreislaufwirtschaft ist ein zentraler WÖk-Anwendungsfall: vorhandene Materialien, Produkte, Daten, Energieflüsse und Kompetenzen werden neu kombiniert, statt immer mehr Primärinput zu verbrauchen.",
       "usageNote": "Die WÖk übernimmt den Gedanken der Neukombination, verschiebt aber den Maßstab: Innovation ist nur dann Fortschritt, wenn sie positive Netto-Wirkung erzeugt. Kreislaufwirtschaft ist ein zentraler WÖk-Anwendungsfall: vorhandene Materialien, Produkte, Daten, Energieflüsse und Kompetenzen werden neu kombiniert, statt immer mehr Primärinput zu verbrauchen.",
       "doNotConfuseWith": [
@@ -277493,17 +278595,29 @@
         "kreislaufwirtschaft",
         "schoepferische-rekonstruktion",
         "t-sroi",
-        "regeneratives-wachstum"
+        "regeneratives-wachstum",
+        "invention",
+        "erfindung",
+        "neukombination",
+        "rekombination",
+        "schoepferische-zerstoerung",
+        "innovativer-unternehmer",
+        "joseph-schumpeter",
+        "wirkungsinnovation",
+        "positive-netto-wirkung"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
-        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)"
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceNotes": "Intern: Kap. 55; Extern: Joseph A. Schumpeter; Ellen MacArthur Foundation zur Circular Economy.",
       "category": "Glossar-Erweiterung",
       "type": "Anschlussbegriff",
       "version": "2.0",
-      "lastReviewed": "2026-06-07",
+      "lastReviewed": "2026-07-06",
       "sourceDocument": "",
       "sourceSection": "Glossar-Erweiterung Website 2.0",
       "importSource": "content/glossary/imports/website-2-0-glossar-nachtraege.json",
@@ -277516,8 +278630,121 @@
       "maxAutoLinksPerPage": 1,
       "status": "approved",
       "source": "Glossar-Erweiterung Website 2.0",
-      "reviewStatus": "redaktionell synchronisiert",
-      "glossaryOrderKey": "Schumpetersche Innovation / Neue Kombination"
+      "reviewStatus": "redaktionell vertieft",
+      "glossaryOrderKey": "Schumpetersche Innovation / Neue Kombination",
+      "conceptStatus": "Bezugslinie der Wirkungsökonomie",
+      "concept_status": "Bezugslinie der Wirkungsökonomie",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "showInCategoryGlossary": true,
+      "firstOccurrenceOnly": true,
+      "sourceLinks": [
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
+          "status": "linked"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "related_terms": [
+        "innovation",
+        "kreislaufwirtschaft",
+        "schoepferische-rekonstruktion",
+        "t-sroi",
+        "regeneratives-wachstum",
+        "invention",
+        "erfindung",
+        "neukombination",
+        "rekombination",
+        "schoepferische-zerstoerung",
+        "innovativer-unternehmer",
+        "joseph-schumpeter",
+        "wirkungsinnovation",
+        "positive-netto-wirkung"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Innovation nach Schumpeter ist neue Kombination.",
+            "Sie betrifft Produkte, Verfahren, Märkte, Bezugsquellen und Organisation.",
+            "Sie wird durch Unternehmerfunktion durchgesetzt.",
+            "Sie unterscheidet sich von Invention und Erfindung.",
+            "WÖk ergänzt: Durchsetzung braucht Wirkungsbewertung."
+          ]
+        },
+        {
+          "title": "Fünf klassische Kombinationsfelder",
+          "items": [
+            "neue Güter oder neue Qualität von Gütern",
+            "neue Produktionsmethoden",
+            "neue Absatzmärkte",
+            "neue Bezugsquellen für Rohstoffe oder Vorprodukte",
+            "neue Organisationsformen oder Marktstrukturen"
+          ]
+        },
+        {
+          "title": "Neokombination / Neukombination",
+          "body": "Der oft verwendete Ausdruck Neokombination meint im WÖk-Kontext die Neukombination bestehender Produktionsfaktoren, Wissensbestände, Technologien, Kompetenzen und Organisationsformen. Entwicklung entsteht nicht nur durch mehr Input, sondern durch bessere Verbindung."
+        },
+        {
+          "title": "WÖk-Erweiterung",
+          "body": "Die WÖk fragt, welche Zustände die neue Kombination verändert. Eine neue Kombination kann Ressourcen sparen, Teilhabe stärken und Resilienz erhöhen; sie kann aber auch neue Abhängigkeiten, Rebound-Effekte oder Externalitäten schaffen."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Welche Kombination ist wirklich neu?",
+            "Welche Produktionsfaktoren, Kompetenzen oder Wissensbestände werden verbunden?",
+            "Wo beginnt Anwendung und Durchsetzung?",
+            "Welche alten Strukturen werden verdrängt?",
+            "Welche Wirkung entsteht für Mensch, Planet und Demokratie?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Schumpetersche Innovation ist die wirksame Neukombination bestehender und neuer Möglichkeiten. Die WÖk macht daraus erst Fortschritt, wenn die neue Kombination positive Netto-Wirkung erzeugt."
+        }
+      ],
+      "metaTitle": "Schumpetersche Innovation / Neue Kombination | Glossar der Wirkungsökonomie",
+      "metaDescription": "Schumpetersche Innovation versteht wirtschaftliche Entwicklung als Durchsetzung neuer Kombinationen von Produkten, Verfahren, Märkten, Bezugsquellen oder Organisationsformen.",
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "schutz-natuerlicher-lebensgrundlagen",
@@ -328304,15 +329531,21 @@
       "canonicalLabel": "Unternehmerisches Lernen",
       "slug": "unternehmerisches-lernen",
       "aliases": [
-        "Unternehmerisches Lernen"
+        "Unternehmerisches Lernen",
+        "unternehmerische Lernfähigkeit",
+        "Lernen des Unternehmers",
+        "Entrepreneurial Learning"
       ],
       "synonyms": [
-        "Unternehmerisches Lernen"
+        "Unternehmerisches Lernen",
+        "unternehmerische Lernfähigkeit",
+        "Lernen des Unternehmers",
+        "Entrepreneurial Learning"
       ],
-      "shortDefinition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit.",
+      "shortDefinition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko-, Innovations- und Transformationsfähigkeit.",
       "short_definition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit.",
       "definition": "Es umfasst nicht nur Wissenserwerb, sondern Veränderung von Routinen, Entscheidungen und Möglichkeiten.",
-      "longDefinition": "Es umfasst nicht nur Wissenserwerb, sondern Veränderung von Routinen, Entscheidungen und Möglichkeiten.",
+      "longDefinition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko-, Innovations- und Transformationsfähigkeit. Es meint nicht bloße Wissensakkumulation, sondern die Fähigkeit, neue Möglichkeiten zu erkennen, Wirklichkeitssignale aufzunehmen, eigene Routinen zu verändern und Handlungskompetenz aufzubauen.\n\nWirkungsökonomisch ist unternehmerisches Lernen zentral, weil positive Netto-Wirkung nicht durch Wissen allein entsteht. Erkenntnisse müssen in Entscheidungen, Geschäftsmodelle, Routinen und Kompetenzen zurückfließen.",
       "long_definition": "Es umfasst nicht nur Wissenserwerb, sondern Veränderung von Routinen, Entscheidungen und Möglichkeiten.",
       "woekRelation": "In der WÖk wird es zur Fähigkeit, Wirkung zu lesen und bessere Wirkungspfade zu erzeugen.",
       "woek_einordnung": "In der WÖk wird es zur Fähigkeit, Wirkung zu lesen und bessere Wirkungspfade zu erzeugen.",
@@ -328322,20 +329555,33 @@
         "lernebenen",
         "wirkungskompetenz",
         "evolutorischer-unternehmer",
-        "jochen-roepke"
+        "jochen-roepke",
+        "lernende-organisation",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "wirklichkeitsfaehigkeit"
       ],
       "related_terms": [
         "lernender-unternehmer",
         "lernebenen",
         "wirkungskompetenz",
         "evolutorischer-unternehmer",
-        "jochen-roepke"
+        "jochen-roepke",
+        "lernende-organisation",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "wirklichkeitsfaehigkeit"
       ],
       "officialSources": [
         "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
         "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
         "Nikolai Kondratieff: The Long Waves in Economic Life",
-        "EconStor|https://www.econstor.eu/"
+        "EconStor|https://www.econstor.eu/",
+        "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "sourceLinks": [
         {
@@ -328360,6 +329606,24 @@
           "source_type": "secondary",
           "title": "EconStor",
           "url": "https://www.econstor.eu/",
+          "status": "linked"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
           "status": "linked"
         }
       ],
@@ -328406,22 +329670,22 @@
       "concept_status": "Quellen-/Bezugslinienbegriff",
       "publicationStatus": "published",
       "publication_status": "published",
-      "status": "bezugsbegriff",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
+      "status": "approved",
+      "version": "1.1",
+      "lastReviewed": "2026-07-06",
       "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
       "firstApprovedIn": "2026-05-29",
-      "reviewStatus": "needs_source_check",
+      "reviewStatus": "redaktionell vertieft",
       "source": "Innovation, Evolution und Unternehmertum",
       "sourceDocument": "Glossar-Architektur Wirkmechanismen",
       "sourceSection": "Innovation, Evolution und Unternehmertum",
-      "hoverDefinition": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit.",
+      "hoverDefinition": "Unternehmerisches Lernen entwickelt Wahrnehmung, Kompetenz und Fähigkeit zur wirksamen Veränderung.",
       "statusNote": "",
       "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
       "classicGlossary": true,
-      "showInCategoryGlossary": false,
+      "showInCategoryGlossary": true,
       "pageUrl": "/begriffe/unternehmerisches-lernen/",
       "metaTitle": "Unternehmerisches Lernen | Glossar der Wirkungsökonomie",
       "metaDescription": "Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko- und Innovationsfähigkeit. Wirkungsökonomisch eingeordnet als Quellen-/Bezugslinienbegriff.",
@@ -328462,7 +329726,64 @@
       "woekKlaerung": "",
       "woek_klaerung": "",
       "blindSpot": "",
-      "blind_spot": ""
+      "blind_spot": "",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Nicht nur Wissen, sondern Kompetenzentwicklung.",
+            "Lernen heißt: Wahrnehmung, Entscheidung und Handlung verändern sich.",
+            "Wichtig für Röpke, evolutorischen Unternehmer und Wirkungsgesellschaft.",
+            "WÖk verbindet Lernen mit Rückkopplung und positiver Netto-Wirkung."
+          ]
+        },
+        {
+          "title": "Kompetenzfelder",
+          "items": [
+            "Chancen erkennen",
+            "Chancen durchsetzen",
+            "Wirkung prüfen",
+            "Risiken und Nebenwirkungen verstehen",
+            "Kritik und Irritation nutzen",
+            "Kompetenzen gezielt entwickeln",
+            "Organisationen lernfähig machen"
+          ]
+        },
+        {
+          "title": "Abgrenzung zu Wissensakkumulation",
+          "body": "Mehr Wissen erzeugt nicht automatisch anderes Handeln. Unternehmerisches Lernen beginnt, wenn Wissen die eigene Wahrnehmung, Entscheidung, Praxis und Verantwortung verändert."
+        },
+        {
+          "title": "WÖk-Prüffragen",
+          "items": [
+            "Was wurde wirklich gelernt?",
+            "Welche Entscheidung ändert sich dadurch?",
+            "Welche Kompetenz entsteht neu?",
+            "Welche Rückkopplung wird institutionalisiert?",
+            "Welche Wirkung verbessert sich nachweisbar?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Unternehmerisches Lernen ist die Fähigkeit, Wissen in neue Wahrnehmung, neue Kompetenz und wirksamere Handlung zu übersetzen."
+        }
+      ],
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ]
     },
     {
       "id": "unternehmertypen-jochen-roepke",
@@ -328473,19 +329794,25 @@
       "aliases": [
         "Unternehmertypen nach Jochen Röpke",
         "Unternehmertypen nach Röpke",
-        "Röpke-Unternehmertypen"
+        "Röpke-Unternehmertypen",
+        "Röpke-Modell",
+        "vier Unternehmertypen",
+        "Routineunternehmer Arbitrageur innovativer Unternehmer evolutorischer Unternehmer"
       ],
       "synonyms": [
         "Unternehmertypen nach Jochen Röpke",
         "Unternehmertypen nach Röpke",
-        "Röpke-Unternehmertypen"
+        "Röpke-Unternehmertypen",
+        "Röpke-Modell",
+        "vier Unternehmertypen",
+        "Routineunternehmer Arbitrageur innovativer Unternehmer evolutorischer Unternehmer"
       ],
-      "shortDefinition": "Die Unternehmertypen nach Röpke helfen, Unternehmertum als Lern-, Innovations- und Transformationsfähigkeit zu verstehen.",
-      "definition": "In Sekundärdarstellungen werden Routineunternehmer, Arbitrageunternehmer, innovativer Unternehmer und evolutorischer Unternehmer unterschieden.",
-      "longDefinition": "Die WÖk nutzt die Typen nicht zur Bewertung einzelner Personen, sondern zur Beschreibung von Geschäftsmodell- und Transformationslogiken: stabilisiert ein Unternehmen Routinen, nutzt es Marktchancen, erzeugt es Innovation oder verändert es sich selbst evolutorisch?",
-      "woekRelation": "Der Begriff hilft, Unternehmen nicht als Heldenerzählung, sondern als lernfähige Wirkungssysteme zu analysieren.",
-      "usageNote": "Nutzen bei Unternehmen, Transformation, Innovation, lernender Organisation, Geschäftsmodellprüfung und Wirkungskapital.",
-      "category": "Anschlussbegriff",
+      "shortDefinition": "Die Unternehmertypen nach Jochen Röpke unterscheiden Routineunternehmer, Arbitrageur, innovativen Unternehmer und evolutorischen Unternehmer danach, welche unternehmerische Funktion und welche Kompetenzlogik im Vordergrund steht.",
+      "definition": "Die Unternehmertypen nach Jochen Röpke sind eine funktionale Typologie von Unternehmertum. Sie beschreibt, ob ein Akteur bestehende Ressourcen effizient verwaltet, Markt- und Bewertungsunterschiede nutzt, neue Kombinationen durchsetzt oder die eigene Kompetenz- und Lernfähigkeit evolutorisch weiterentwickelt.",
+      "longDefinition": "Die Unternehmertypen nach Jochen Röpke sind eine funktionale Typologie von Unternehmertum. Sie unterscheidet nicht den moralischen Wert von Personen, sondern die dominante unternehmerische Funktion: Routine und Allokation, Arbitrage und Koordination, Innovation und neue Kombination sowie Evolution und Selbstevolution.\n\nFür die Wirkungsökonomie ist diese Unterscheidung wichtig, weil Transformation nicht nur neue Technik braucht. Sie braucht Wirklichkeitsfähigkeit, Rückkopplungsfähigkeit und Transformationsfähigkeit. Ein System kann perfekt verwaltet sein und trotzdem in alten Wirkungspfaden feststecken; es kann Arbitragegewinne erzeugen und trotzdem Wirkung externalisieren; es kann innovativ sein und dennoch Schäden verlagern. Erst die evolutorische Perspektive fragt, ob Akteure und Organisationen ihre Wahrnehmung, Kompetenzen, Routinen und Regeln so weiterentwickeln, dass positive Netto-Wirkung wahrscheinlicher wird.",
+      "woekRelation": "Die WÖk liest Röpke nicht als Persönlichkeitsranking, sondern als Analyse von Wirkungs- und Lernlogiken. Die Typen helfen zu prüfen, ob ein Unternehmen oder eine Institution nur verwaltet, nur Chancen abschöpft, neue Kombinationen durchsetzt oder sich selbst als lernendes Wirkungssystem verändert.",
+      "usageNote": "Den Begriff verwenden, wenn unternehmerische Funktionen, Transformationsfähigkeit, Innovationsfähigkeit oder Kompetenzentwicklung unterschieden werden sollen. Nicht als Charaktertest, Gründerkult, moralische Rangliste oder Social-Credit-Logik verwenden.",
+      "category": "Innovation, Evolution und Unternehmertum",
       "categories": [
         "glossar",
         "bezugslinien-20"
@@ -328497,72 +329824,204 @@
         "lernende-organisation",
         "wirkungsinnovation",
         "transformationspfad",
-        "jochen-roepke"
+        "jochen-roepke",
+        "routineunternehmer",
+        "homo-oeconomicus",
+        "arbitrageur",
+        "innovativer-unternehmer",
+        "unternehmerisches-lernen",
+        "lernebenen",
+        "invention",
+        "erfindung",
+        "neukombination",
+        "rekombination",
+        "schumpetersche-innovation",
+        "schoepferische-zerstoerung",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "positive-netto-wirkung",
+        "wirkungskompetenz",
+        "wirkungsrisiko"
       ],
       "doNotConfuseWith": [
-        "Charaktertest",
-        "moralische Unternehmerbewertung",
-        "Social Credit",
-        "Heldenerzählung"
+        "Persönlichkeitsdiagnose: Die Typen beschreiben Funktionen und Kompetenzlogiken, nicht den Wert einer Person.",
+        "Branchenrolle: Eine Person oder Organisation kann je nach Situation mehrere Typenlogiken zeigen.",
+        "Gründerromantik: Innovation ist nicht automatisch positive Wirkung.",
+        "Management-Bashing: Routine und Verwaltung sind notwendig, aber transformationsblind, wenn sie nicht rückgekoppelt werden.",
+        "Social Credit: Die WÖk bewertet keine Menschen, sondern Wirkpfade, Routinen und Zustandsveränderungen."
       ],
       "officialSources": [
         "WÖk-Begriffsleitfaden, Version 1.0",
         "Jochen Röpke: Der lernende Unternehmer",
-        "Natalie Weber: Die neue Ordnung des Wohlstands, 2026"
+        "Natalie Weber: Die neue Ordnung des Wohlstands, 2026",
+        "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
       ],
       "deepGlossarySections": [
         {
-          "title": "Hauptdefinition",
-          "body": "Die WÖk nutzt die Typen nicht zur Bewertung einzelner Personen, sondern zur Beschreibung von Geschäftsmodell- und Transformationslogiken: stabilisiert ein Unternehmen Routinen, nutzt es Marktchancen, erzeugt es Innovation oder verändert es sich selbst evolutorisch?"
+          "title": "Auf einen Blick",
+          "items": [
+            "Vier Typen: Routineunternehmer, Arbitrageur, innovativer Unternehmer, evolutorischer Unternehmer.",
+            "Die Typen unterscheiden unternehmerische Funktionen, nicht den moralischen Wert von Menschen.",
+            "Routine steht für Allokation und Verwaltung bestehender Muster.",
+            "Arbitrage steht für Koordination durch das Erkennen von Differenzen.",
+            "Innovation steht für die Durchsetzung neuer Kombinationen.",
+            "Evolution steht für Lernen, Selbstevolution und Kompetenzentwicklung.",
+            "Wirkungsökonomisch werden alle Typen an Wirkung, Wirkungspotenzial, Wirkungsrisiko und positiver Netto-Wirkung geprüft."
+          ]
         },
         {
-          "title": "Wirkungsökonomische Relevanz",
-          "body": "Der Begriff hilft, Unternehmen nicht als Heldenerzählung, sondern als lernfähige Wirkungssysteme zu analysieren."
+          "title": "Die vier Typen",
+          "items": [
+            "Routineunternehmer / Homo oeconomicus / Manager-Verwalter: optimiert Ressourcen, Abläufe und bekannte Regeln innerhalb bestehender Märkte.",
+            "Arbitrageur: erkennt Preis-, Informations-, Zeit-, Regulierungs- oder Bewertungsdifferenzen und nutzt sie.",
+            "Innovativer Unternehmer: kombiniert Ressourcen, Technik, Organisation, Märkte oder Bezugsquellen neu und setzt diese Neuerung im Markt oder System durch.",
+            "Evolutorischer Unternehmer: entwickelt zusätzlich die eigene Wahrnehmung, Kompetenz, Organisation und Lernfähigkeit weiter."
+          ]
         },
         {
-          "title": "Verwendung in der WÖk",
-          "body": "Nutzen bei Unternehmen, Transformation, Innovation, lernender Organisation, Geschäftsmodellprüfung und Wirkungskapital."
+          "title": "Kompetenzprofile / Skills",
+          "items": [
+            "Routine: Planung, Verwaltung, Prozessdisziplin, Kostenkontrolle, Qualitätssicherung, Ressourcenallokation, Stabilisierung.",
+            "Arbitrage: Alertness, Marktbeobachtung, Informationsvorsprung, Timing, Vergleichsfähigkeit, Verhandlung, Risikopreisung.",
+            "Innovation: Rekombination, Experimentieren, Prototyping, Marktdurchsetzung, Kapitalmobilisierung, Widerstandstoleranz, Narrative und Teamaufbau.",
+            "Evolution: Lernen lernen, Selbstreflexion, Wirklichkeitsfähigkeit, Rückkopplungsfähigkeit, Transformationsfähigkeit, Ambiguitätstoleranz, Kompetenzentwicklung."
+          ]
+        },
+        {
+          "title": "WÖk-Einordnung",
+          "body": "Die Wirkungsökonomie übernimmt die Dynamik der Typologie, verschiebt aber den Bewertungsmaßstab. Nicht der Typ selbst ist gut oder schlecht. Entscheidend ist, ob die jeweilige Logik positive Netto-Wirkung ermöglicht, Wirkungsrisiken reduziert und Rückkopplung zulässt."
+        },
+        {
+          "title": "Nichtkompensation und Reverse Merit Order",
+          "body": "Innovation oder Arbitrage dürfen schwere Schäden nicht durch andere Vorteile unsichtbar machen. Wenn eine neue Kombination Klima-, Gesundheits-, Demokratie- oder Menschenrechtsrisiken verstärkt, gilt keine einfache Verrechnung. Reverse Merit Order priorisiert die Vermeidung schwerer negativer Wirkung."
         },
         {
           "title": "Abgrenzung",
           "items": [
-            "Charaktertest",
-            "moralische Unternehmerbewertung",
-            "Social Credit",
-            "Heldenerzählung"
+            "Routine ist nicht wertlos; ohne Routine werden Systeme instabil.",
+            "Arbitrage ist nicht automatisch Ausbeutung; sie kann Koordinationsfehler sichtbar machen.",
+            "Innovation ist nicht jede Idee; sie muss durchgesetzt und wirksam werden.",
+            "Evolution ist nicht Selbstoptimierung als Lifestyle, sondern Kompetenzentwicklung im Verhältnis zu realen Herausforderungen."
           ]
         },
         {
-          "title": "Querverweise",
+          "title": "WÖk-Prüffragen",
           "items": [
-            "Innovation",
-            "Evolutorischer Unternehmer",
-            "Lernende Organisation",
-            "Wirkungsinnovation",
-            "Transformationspfad",
-            "Jochen Röpke"
+            "Welche Typenlogik dominiert hier: Routine, Arbitrage, Innovation oder Evolution?",
+            "Welche Zustände verändern sich tatsächlich?",
+            "Welche Kompetenzen fehlen, damit aus Wissen Wirkung wird?",
+            "Welche externen Kosten oder Wirkungsrisiken bleiben unsichtbar?",
+            "Wo wird Rückkopplung blockiert?",
+            "Welche alte Routine müsste beendet, welche neue Fähigkeit aufgebaut werden?"
           ]
         },
         {
-          "title": "Quellenbasis und Bezugslinien",
-          "body": "Interne Quellen: WÖk-Unternehmens- und Transformationslogik. Externe Bezugslinie: Jochen Röpke; Quellenlage transparent als Bezugslinie führen."
-        },
-        {
-          "title": "Redaktionelle Metadaten",
-          "items": [
-            "Glossar-Pack: Bezugslinien 2.0",
-            "Version: 1.0",
-            "Status: synchronisiert oder neu angelegt",
-            "Qualitätsmaßstab: Struktur 5. P = Planet",
-            "Personen sind Bezugslinien, nicht Autoritäten."
-          ]
+          "title": "WÖk-Formulierung",
+          "body": "Die Unternehmertypen nach Röpke helfen, Unternehmertum als Funktions- und Lernlogik zu lesen: vom Verwalten bestehender Ordnung über das Nutzen von Differenzen und die Durchsetzung neuer Kombinationen bis zur Selbstevolution von Kompetenz."
         }
       ],
-      "showInCategoryGlossary": false,
-      "version": "1.0",
-      "reviewStatus": "redaktionell synchronisiert",
+      "showInCategoryGlossary": true,
+      "version": "1.1",
+      "reviewStatus": "redaktionell vertieft",
       "updatedBy": "codex",
-      "updatedAt": "2026-06-06"
+      "updatedAt": "2026-07-06",
+      "status": "approved",
+      "conceptStatus": "Bezugslinie der Wirkungsökonomie",
+      "concept_status": "Bezugslinie der Wirkungsökonomie",
+      "lastReviewed": "2026-07-06",
+      "lastUpdated": "2026-07-06",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "sourceLinks": [
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
+          "status": "linked"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "related_terms": [
+        "innovation",
+        "evolutorischer-unternehmer",
+        "lernende-organisation",
+        "wirkungsinnovation",
+        "transformationspfad",
+        "jochen-roepke",
+        "routineunternehmer",
+        "homo-oeconomicus",
+        "arbitrageur",
+        "innovativer-unternehmer",
+        "unternehmerisches-lernen",
+        "lernebenen",
+        "invention",
+        "erfindung",
+        "neukombination",
+        "rekombination",
+        "schumpetersche-innovation",
+        "schoepferische-zerstoerung",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "positive-netto-wirkung",
+        "wirkungskompetenz",
+        "wirkungsrisiko"
+      ],
+      "hoverDefinition": "Röpke unterscheidet Unternehmertypen nach Routine, Arbitrage, Innovation und Selbstevolution: vom Verwalten bestehender Muster bis zur Entwicklung neuer Kompetenzen.",
+      "preferredUsage": "Die Röpke-Typen beschreiben Funktionslogiken: verwalten, koordinieren, innovieren, evolvieren. Wirkungsökonomisch zählt, welche Zustandsveränderung daraus entsteht.",
+      "examples": [
+        "Eine Verwaltung handelt routineunternehmerisch, wenn sie knappe Mittel sauber allokiert, aber keine neuen Wirkpfade erprobt.",
+        "Ein Arbitrageur nutzt Preis-, Informations- oder Regulierungsunterschiede; wirkungsökonomisch ist zu prüfen, ob dadurch Koordination verbessert oder Wirkung externalisiert wird.",
+        "Ein innovativer Unternehmer setzt eine neue Kombination im Markt durch, etwa ein neues Produkt, Verfahren, Geschäftsmodell oder eine neue Bezugsquelle.",
+        "Ein evolutorischer Unternehmer verändert auch die eigenen Kompetenzen, Routinen und Wahrnehmungsmuster und macht Rückkopplung zur Lernquelle."
+      ],
+      "metaTitle": "Unternehmertypen nach Jochen Röpke | Glossar der Wirkungsökonomie",
+      "metaDescription": "Die Unternehmertypen nach Jochen Röpke unterscheiden Routineunternehmer, Arbitrageur, innovativen Unternehmer und evolutorischen Unternehmer danach, welche unternehmerische Funktion und welche Kompetenzlogik im Vordergrund steht.",
+      "searchKeywords": [
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Innovation",
+        "Invention",
+        "Erfindung",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
+      ],
+      "glossaryOrderKey": "Unternehmertypen nach Jochen Röpke"
     },
     {
       "id": "unternehmertypen-nach-jochen-roepke",
@@ -401649,6 +403108,176 @@
           "source_type": "öffentlich",
           "status": "Video-/Marketingseite"
         }
+      ]
+    },
+    {
+      "id": "invention",
+      "termId": "invention",
+      "label": "Invention",
+      "canonicalLabel": "Invention",
+      "canonicalTitle": "Invention",
+      "slug": "invention",
+      "aliases": [
+        "Invention",
+        "Inventionen",
+        "Invention stage",
+        "Vorstufe der Innovation",
+        "neue Möglichkeit vor Innovation"
+      ],
+      "synonyms": [
+        "Invention",
+        "Inventionen",
+        "Vorstufe der Innovation"
+      ],
+      "category": "Innovation, Evolution und Unternehmertum",
+      "categories": [
+        "innovation-evolution-und-unternehmertum"
+      ],
+      "shortDefinition": "Invention bezeichnet die neue Möglichkeit vor ihrer Durchsetzung: Idee, Prototyp, Verfahren oder Lösung, die erst durch Anwendung und Diffusion zur Innovation wird.",
+      "hoverDefinition": "Invention ist die Vorstufe der Innovation: eine neue Möglichkeit, die noch nicht durchgesetzt und wirksam verbreitet ist.",
+      "definition": "Invention bezeichnet im Innovationsprozess die Entstehung einer neuen Möglichkeit, Idee, Lösung, Methode, Technologie oder eines Prototyps vor ihrer Durchsetzung in Markt, Organisation oder gesellschaftlicher Praxis.",
+      "longDefinition": "Invention bezeichnet im Innovationsprozess die Entstehung einer neuen Möglichkeit, Idee, Lösung, Methode, Technologie oder eines Prototyps vor ihrer Durchsetzung in Markt, Organisation oder gesellschaftlicher Praxis. Der Begriff hilft, Neuheit, Anwendung und Wirkung sauber zu trennen.\n\nWirkungsökonomisch ist Invention zunächst Wirkungspotenzial. Sie kann später Innovation werden, wenn sie Anschluss findet, genutzt wird, diffundiert und Zustände verändert. Sie kann aber auch folgenlos bleiben oder negative Wirkungsrisiken erzeugen. Deshalb darf Invention nicht mit Fortschritt gleichgesetzt werden.",
+      "woekRelation": "Die WÖk nutzt Invention, um zwischen Möglichkeit, Durchsetzung und Wirkung zu unterscheiden. Erst Rückkopplung zeigt, ob aus einer Invention positive Netto-Wirkung entsteht.",
+      "usageNote": "Verwenden, wenn eine neue Idee, Methode, Technologie oder Lösung noch nicht als Innovation durchgesetzt ist. Bei konkreter technischer Lösung kann Erfindung treffender sein; bei Markt- oder Praxisdurchsetzung Innovation.",
+      "preferredUsage": "Invention ist die neue Möglichkeit; Innovation ist die durchgesetzte Neuerung; Wirkungsinnovation ist die Neuerung mit positiver Netto-Wirkung.",
+      "doNotConfuseWith": [
+        "Innovation: Innovation verlangt Anwendung, Durchsetzung und Wirkung.",
+        "Erfindung: Erfindung ist oft die konkrete Lösung; Invention bezeichnet stärker die Innovationsphase.",
+        "Diffusion: Diffusion ist die Verbreitung nach der Durchsetzung.",
+        "Fortschritt: Eine Invention ist nicht automatisch positive Wirkung."
+      ],
+      "examples": [
+        "Ein Labor entwickelt einen Prototyp; das ist Invention, aber noch keine Innovation.",
+        "Ein Team entwirft eine neue Förderlogik; erst wenn sie angewendet und rückgekoppelt wird, entsteht Innovation.",
+        "Eine Softwaremethode ist neu, bleibt aber Invention, solange sie keine Praxis verändert."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Auf einen Blick",
+          "items": [
+            "Invention ist die neue Möglichkeit vor der Durchsetzung.",
+            "Sie kann Idee, Prototyp, Methode, Verfahren oder Lösung sein.",
+            "Sie ist eng mit Erfindung verwandt, aber stärker als Prozessphase lesbar.",
+            "Innovation entsteht erst durch Anwendung, Durchsetzung und Diffusion.",
+            "WÖk liest Invention als Wirkungspotenzial, nicht als bewiesene Wirkung."
+          ]
+        },
+        {
+          "title": "Dreischritt",
+          "items": [
+            "Invention: neue Möglichkeit entsteht.",
+            "Innovation: Neuerung wird durchgesetzt und genutzt.",
+            "Diffusion: Neuerung verbreitet sich und verändert Systeme."
+          ]
+        },
+        {
+          "title": "Abgrenzung zur Erfindung",
+          "body": "Erfindung betont die konkrete neue Lösung. Invention betont die Phase im Innovationsprozess. In vielen Kontexten überlappen beide Begriffe. Für die WÖk ist entscheidend: Beide sind noch nicht automatisch Wirkung."
+        },
+        {
+          "title": "WÖk-Prüfung",
+          "items": [
+            "Welches Wirkungspotenzial steckt in der Invention?",
+            "Welche Bedingungen braucht sie, um Innovation zu werden?",
+            "Welche Risiken entstehen bei Skalierung?",
+            "Welche Betroffenenperspektiven fehlen?",
+            "Welche Rückkopplung entscheidet über Weiterentwicklung oder Abbruch?"
+          ]
+        },
+        {
+          "title": "WÖk-Formulierung",
+          "body": "Invention ist die Vorform von Innovation: eine neue Möglichkeit, die erst durch Anwendung, Diffusion und Rückkopplung zur wirkungsrelevanten Neuerung wird."
+        }
+      ],
+      "relatedTerms": [
+        "erfindung",
+        "innovation",
+        "diffusion",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "innovativer-unternehmer",
+        "schumpetersche-innovation",
+        "neukombination",
+        "wirkungsinnovation",
+        "positive-netto-wirkung"
+      ],
+      "sourceLinks": [
+        {
+          "source_type": "sekundär",
+          "title": "Beobachter-Blog: Unternehmertypen nach Jochen Röpke",
+          "url": "https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+          "status": "linked"
+        },
+        {
+          "source_type": "bibliografisch",
+          "title": "Jochen Röpke: Der lernende Unternehmer",
+          "url": "https://www.medimops.de/jochen-roepke-der-lernende-unternehmer-zur-evolution-und-konstruktion-unternehmerischer-kompetenz-taschenbuch-M03831137226.html",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "sekundär",
+          "title": "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung",
+          "url": "https://d-nb.info/100088239X/34",
+          "status": "linked"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung",
+          "url": "",
+          "status": "bibliographic"
+        },
+        {
+          "source_type": "primary",
+          "title": "Joseph A. Schumpeter: Capitalism, Socialism and Democracy",
+          "url": "",
+          "status": "bibliographic"
+        }
+      ],
+      "officialSources": [
+        "Joseph A. Schumpeter: Theorie der wirtschaftlichen Entwicklung (Bezugslinie)",
+        "Joseph A. Schumpeter: Capitalism, Socialism and Democracy (Bezugslinie)",
+        "Jochen Röpke: Der lernende Unternehmer (Bezugslinie)",
+        "Unternehmertypen nach Jochen Röpke|https://fisbeck.wordpress.com/2006/01/02/unternehmertypen-nach-jochen-ropke/",
+        "Persönlichkeitsentfaltung zu unternehmerischen Kompetenzen in ökonomischer Bildung|https://d-nb.info/100088239X/34"
+      ],
+      "source": "Schumpeter/Röpke-Bezugslinie",
+      "sourceDocument": "Glossarvertiefung Innovation und Unternehmertum",
+      "sourceSection": "Innovation, Invention und Erfindung",
+      "status": "approved",
+      "reviewStatus": "redaktionell ergänzt",
+      "conceptStatus": "Anschlussbegriff",
+      "concept_status": "Anschlussbegriff",
+      "version": "1.0",
+      "publicationStatus": "published",
+      "publication_status": "published",
+      "lastReviewed": "2026-07-06",
+      "lastUpdated": "2026-07-06",
+      "updatedAt": "2026-07-06",
+      "firstApprovedIn": "2026-07-06",
+      "classicGlossary": true,
+      "showInCategoryGlossary": true,
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "metaTitle": "Invention | Glossar der Wirkungsökonomie",
+      "metaDescription": "Invention bezeichnet die neue Möglichkeit vor der Innovation: Idee, Prototyp oder Lösung, die erst durch Anwendung und Diffusion wirksam wird.",
+      "glossaryOrderKey": "Invention",
+      "searchKeywords": [
+        "Invention",
+        "Erfindung",
+        "Innovation",
+        "Diffusion",
+        "neue Möglichkeit",
+        "Prototyp",
+        "Wirkungspotenzial",
+        "Jochen Röpke",
+        "Schumpeter",
+        "Unternehmertypen",
+        "Neukombination",
+        "Schöpferische Zerstörung",
+        "unternehmerisches Lernen"
       ]
     }
   ]

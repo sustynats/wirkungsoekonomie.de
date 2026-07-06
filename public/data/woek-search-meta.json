@@ -975,7 +975,13 @@
         "externalitaeten",
         "kapitalwirkung",
         "wirkungskapital",
-        "jochen-roepke"
+        "jochen-roepke",
+        "unternehmertypen-jochen-roepke",
+        "innovativer-unternehmer",
+        "evolutorischer-unternehmer",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "rueckkopplungsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -6762,14 +6768,19 @@
     },
     "/begriffe/erfindung/": {
       "documentType": "begriff",
-      "status": "anschlussbegriff",
-      "version": "1.0",
+      "status": "approved",
+      "version": "1.1",
       "sectionId": "begriff-erfindung",
       "documentId": "erfindung",
       "relatedTerms": [
         "innovation",
         "diffusion",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "invention",
+        "wirkungsrisiko",
+        "innovativer-unternehmer",
+        "schumpetersche-innovation",
+        "wirkungsinnovation"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -7444,7 +7455,12 @@
         "wirkungskompetenz",
         "transformationspfad",
         "joseph-schumpeter",
-        "systemtheorie"
+        "systemtheorie",
+        "lernebenen",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "positive-netto-wirkung"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -11164,7 +11180,11 @@
         "begrenzte-rationalitaet",
         "mensch-planet-demokratie",
         "wirkungskompetenz",
-        "wirkungsarchitektur"
+        "wirkungsarchitektur",
+        "routineunternehmer",
+        "unternehmertypen-jochen-roepke",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -11940,7 +11960,13 @@
         "neukombination",
         "regeneratives-wachstum",
         "kreislaufwirtschaft",
-        "unternehmertypen-jochen-roepke"
+        "unternehmertypen-jochen-roepke",
+        "invention",
+        "schumpetersche-innovation",
+        "innovativer-unternehmer",
+        "wirkungsrisiko",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -11961,7 +11987,18 @@
         "kreislaufinnovation",
         "wirkungspionier",
         "t-sroi",
-        "transformationswirkung"
+        "transformationswirkung",
+        "innovation",
+        "invention",
+        "erfindung",
+        "diffusion",
+        "neukombination",
+        "schoepferische-zerstoerung",
+        "unternehmertypen-jochen-roepke",
+        "evolutorischer-unternehmer",
+        "positive-netto-wirkung",
+        "wirkungsrisiko",
+        "rueckkopplungsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -12266,6 +12303,28 @@
       "sourceFile": "",
       "searchBoost": 110
     },
+    "/begriffe/invention/": {
+      "documentType": "begriff",
+      "status": "approved",
+      "version": "1.0",
+      "sectionId": "begriff-invention",
+      "documentId": "invention",
+      "relatedTerms": [
+        "erfindung",
+        "innovation",
+        "diffusion",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "innovativer-unternehmer",
+        "schumpetersche-innovation",
+        "neukombination",
+        "wirkungsinnovation",
+        "positive-netto-wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Glossarvertiefung Innovation und Unternehmertum",
+      "searchBoost": 110
+    },
     "/begriffe/investitionsschuld/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -12398,7 +12457,11 @@
         "lernebenen",
         "innovation",
         "wirkungsinnovation",
-        "lernende-organisation"
+        "lernende-organisation",
+        "unternehmertypen-jochen-roepke",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -14655,15 +14718,19 @@
     },
     "/begriffe/lernebenen/": {
       "documentType": "begriff",
-      "status": "bezugsbegriff",
-      "version": "1.0",
+      "status": "approved",
+      "version": "1.1",
       "sectionId": "begriff-lernebenen",
       "documentId": "lernebenen",
       "relatedTerms": [
         "unternehmerisches-lernen",
         "lernender-unternehmer",
         "wirkungskompetenz",
-        "jochen-roepke"
+        "jochen-roepke",
+        "evolutorischer-unternehmer",
+        "lernende-organisation",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -17416,7 +17483,13 @@
         "kreislaufwirtschaft",
         "wirkungsinnovation",
         "regeneratives-wachstum",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "schumpetersche-innovation",
+        "rekombination",
+        "invention",
+        "erfindung",
+        "innovativer-unternehmer",
+        "positive-netto-wirkung"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -22291,8 +22364,8 @@
     },
     "/begriffe/rekombination/": {
       "documentType": "begriff",
-      "status": "anschlussbegriff",
-      "version": "1.0",
+      "status": "approved",
+      "version": "1.1",
       "sectionId": "begriff-rekombination",
       "documentId": "rekombination",
       "relatedTerms": [
@@ -22301,7 +22374,12 @@
         "wirkungsinnovation",
         "verlustleistung",
         "innovativer-unternehmer",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "neukombination",
+        "schumpetersche-innovation",
+        "invention",
+        "erfindung",
+        "positive-netto-wirkung"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -23130,7 +23208,14 @@
         "innovativer-unternehmer",
         "evolutorischer-unternehmer",
         "pfadabhaengigkeit",
-        "transformationswirkung"
+        "transformationswirkung",
+        "homo-oeconomicus",
+        "unternehmertypen-jochen-roepke",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "wirkungsblindheit",
+        "wirkungskompetenz",
+        "positive-netto-wirkung"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -23597,15 +23682,23 @@
     },
     "/begriffe/schoepferische-zerstoerung/": {
       "documentType": "begriff",
-      "status": "bezugsbegriff",
-      "version": "1.0",
+      "status": "approved",
+      "version": "1.1",
       "sectionId": "begriff-schoepferische-zerstoerung",
       "documentId": "schoepferische-zerstoerung",
       "relatedTerms": [
         "kreative-rekonstruktion",
         "innovation",
         "positive-netto-wirkung",
-        "joseph-schumpeter"
+        "joseph-schumpeter",
+        "schumpetersche-innovation",
+        "neukombination",
+        "rekombination",
+        "innovativer-unternehmer",
+        "transformationsfaehigkeit",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsrisiko"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -23677,7 +23770,16 @@
         "kreislaufwirtschaft",
         "schoepferische-rekonstruktion",
         "t-sroi",
-        "regeneratives-wachstum"
+        "regeneratives-wachstum",
+        "invention",
+        "erfindung",
+        "neukombination",
+        "rekombination",
+        "schoepferische-zerstoerung",
+        "innovativer-unternehmer",
+        "joseph-schumpeter",
+        "wirkungsinnovation",
+        "positive-netto-wirkung"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -28400,8 +28502,8 @@
     },
     "/begriffe/unternehmerisches-lernen/": {
       "documentType": "begriff",
-      "status": "bezugsbegriff",
-      "version": "1.0",
+      "status": "approved",
+      "version": "1.1",
       "sectionId": "begriff-unternehmerisches-lernen",
       "documentId": "unternehmerisches-lernen",
       "relatedTerms": [
@@ -28409,7 +28511,11 @@
         "lernebenen",
         "wirkungskompetenz",
         "evolutorischer-unternehmer",
-        "jochen-roepke"
+        "jochen-roepke",
+        "lernende-organisation",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "wirklichkeitsfaehigkeit"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -28418,7 +28524,7 @@
     "/begriffe/unternehmertypen-jochen-roepke/": {
       "documentType": "begriff",
       "status": "approved",
-      "version": "1.0",
+      "version": "1.1",
       "sectionId": "begriff-unternehmertypen-jochen-roepke",
       "documentId": "unternehmertypen-jochen-roepke",
       "relatedTerms": [
@@ -28428,6 +28534,24 @@
         "wirkungsinnovation",
         "transformationspfad",
         "jochen-roepke",
+        "routineunternehmer",
+        "homo-oeconomicus",
+        "arbitrageur",
+        "innovativer-unternehmer",
+        "unternehmerisches-lernen",
+        "lernebenen",
+        "invention",
+        "erfindung",
+        "neukombination",
+        "rekombination",
+        "schumpetersche-innovation",
+        "schoepferische-zerstoerung",
+        "wirklichkeitsfaehigkeit",
+        "rueckkopplungsfaehigkeit",
+        "transformationsfaehigkeit",
+        "positive-netto-wirkung",
+        "wirkungskompetenz",
+        "wirkungsrisiko",
         "geschaeftsmodellpruefung"
       ],
       "relatedDocuments": [],
