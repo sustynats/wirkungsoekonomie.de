@@ -84,6 +84,13 @@ const feedSpecs = [
       "podcast/*/index.html",
     ],
   },
+  {
+    file: "quellenarchiv.xml",
+    title: "Quellenarchiv der Wirkungsökonomie",
+    link: `${site}/quellenarchiv/`,
+    description: "Neu ins kuratierte Quellenarchiv aufgenommene Quellen - jede mit Kurzbeschreibung und wirkungsökonomischer Einordnung. Read-only-Spiegel aus dem Wirkungsinstitut.",
+    fromQuellenarchiv: true,
+  },
 ];
 
 function walk(dir) {
@@ -579,6 +586,55 @@ function itemsFromHomeIndex() {
     .slice(0, 80);
 }
 
+function quellenarchivSlug(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/ö/g, "oe").replace(/ä/g, "ae").replace(/ü/g, "ue").replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function itemsFromQuellenarchiv() {
+  const file = path.join(root, "content/quellenarchiv/sources.json");
+  if (!fs.existsSync(file)) return [];
+  let data;
+  try {
+    data = JSON.parse(fs.readFileSync(file, "utf8"));
+  } catch {
+    return [];
+  }
+  const sources = Array.isArray(data.sources) ? data.sources : [];
+  const generatedAt = data.generatedAt ? new Date(data.generatedAt) : new Date();
+  const date = Number.isNaN(generatedAt.getTime()) ? new Date() : generatedAt;
+  const codeNum = (code) => {
+    const m = String(code || "").match(/(\d+)/);
+    return m ? parseInt(m[1], 10) : 0;
+  };
+  return sources
+    .slice()
+    .sort((a, b) => codeNum(b.code) - codeNum(a.code)) // neueste Ergänzungen zuerst
+    .slice(0, 60)
+    .map((s) => {
+      const url = `${site}/quellenarchiv/${quellenarchivSlug(s.code)}/`;
+      const meta = [s.clusterLabel, s.typeLabel, s.origin === "intern" ? "WÖk-intern" : "extern"]
+        .filter(Boolean)
+        .join(" · ");
+      const body = [
+        s.summary ? stripTags(s.summary) : "",
+        s.einordnung ? `Wirkungsökonomische Einordnung: ${stripTags(s.einordnung)}` : "",
+      ].filter(Boolean).join(" ");
+      const description = [meta, body].filter(Boolean).join(" — ").slice(0, 600);
+      return {
+        title: s.title || s.code || "Quelle",
+        url,
+        description,
+        date,
+        tags: Array.isArray(s.impactFields) ? s.impactFields.slice(0, 8) : [],
+      };
+    });
+}
+
 function imageMimeType(value) {
   try {
     const ext = path.extname(new URL(value).pathname).toLowerCase();
@@ -698,7 +754,7 @@ function upsertHeadLinks(file, specs) {
 fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
-  const items = (spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : itemsFor(spec.patterns))
+  const items = (spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : spec.fromQuellenarchiv ? itemsFromQuellenarchiv() : itemsFor(spec.patterns))
     .map((item) => enrichItemTags(item));
   fs.writeFileSync(path.join(feedDir, spec.file), spec.fromPodcastIndex ? renderPodcastFeed(spec, items) : renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);
