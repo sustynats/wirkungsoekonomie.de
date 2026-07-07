@@ -610,29 +610,29 @@ Die Neuheit liegt nicht im isolierten Wort Wirkung und auch nicht darin, dass zu
 
 Der Weber’sche Beitrag lässt sich in zwölf Punkten verdichten:
 
-Wirkung wird als Grundkategorie gesellschaftlicher Realität verstanden.
+1. Wirkung wird als Grundkategorie gesellschaftlicher Realität verstanden.
 
-Der Wirkungsbegriff wird neutral und relational definiert.
+2. Der Wirkungsbegriff wird neutral und relational definiert.
 
-Mensch, Planet und Demokratie bilden den normativen Referenzrahmen.
+3. Mensch, Planet und Demokratie bilden den normativen Referenzrahmen.
 
-SDG+ erweitert die SDGs um demokratische und institutionelle Voraussetzungen.
+4. SDG+ erweitert die SDGs um demokratische und institutionelle Voraussetzungen.
 
-Eine gestufte Begriffswelt trennt Auslöser, Potenzial, Mechanismus, Wirkung, Bewertung, Netto-Wirkung und Rückkopplung.
+5. Eine gestufte Begriffswelt trennt Auslöser, Potenzial, Mechanismus, Wirkung, Bewertung, Netto-Wirkung und Rückkopplung.
 
-Reverse Merit Order und Nichtkompensation verhindern Schönrechnen schwerer Schäden.
+6. Reverse Merit Order und Nichtkompensation verhindern Schönrechnen schwerer Schäden.
 
-Netto-Wirkung und Transformationswirkung werden unterschieden.
+7. Netto-Wirkung und Transformationswirkung werden unterschieden.
 
-Wirkungsdaten werden nicht nur berichtet, sondern in Anreize rückgekoppelt.
+8. Wirkungsdaten werden nicht nur berichtet, sondern in Anreize rückgekoppelt.
 
-Wirkungsrat, Wirkungsregister und Wirkungsaudits sichern die Governance.
+9. Wirkungsrat, Wirkungsregister und Wirkungsaudits sichern die Governance.
 
-Medien, Sprache und Demokratie werden als Wirkungsräume ernst genommen.
+10. Medien, Sprache und Demokratie werden als Wirkungsräume ernst genommen.
 
-Wissenschaft wird nach Erkenntniswirkung und Systemwirkung mitgedacht.
+11. Wissenschaft wird nach Erkenntniswirkung und Systemwirkung mitgedacht.
 
-Wirkungswissenschaften werden als Dachrahmen begründet, in dem Wirkungsforschung Methoden liefert und Wirkungsökonomie Ordnung schafft.
+12. Wirkungswissenschaften werden als Dachrahmen begründet, in dem Wirkungsforschung Methoden liefert und Wirkungsökonomie Ordnung schafft.
 
 ### 13.2 Erhalten Wirkungsforschung und Wirkungswissenschaften dadurch erst Sinn?
 

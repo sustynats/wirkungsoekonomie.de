@@ -53,8 +53,12 @@ function renderBody(blocks) {
   const html = [];
   const sections = [];
   let listBuf = [];
+  let listType = null; // "ul" | "ol"
   const flush = () => {
-    if (listBuf.length) { html.push(`<ul>${listBuf.map((li) => `<li>${inline(li)}</li>`).join("")}</ul>`); listBuf = []; }
+    if (!listBuf.length) return;
+    const tag = listType === "ol" ? "ol" : "ul";
+    html.push(`<${tag}>${listBuf.map((li) => `<li>${inline(li)}</li>`).join("")}</${tag}>`);
+    listBuf = []; listType = null;
   };
   let skipUntilH2 = false;
   for (const b of blocks) {
@@ -77,8 +81,10 @@ function renderBody(blocks) {
       continue;
     }
     if (skipUntilH2) continue;
-    const li = b.match(/^[-•]\s+(.*)$/s);
-    if (li) { listBuf.push(li[1].replace(/\s*\n[-•]\s+/g, " ").trim()); continue; }
+    const uli = b.match(/^[-•]\s+(.*)$/s);
+    if (uli) { if (listType && listType !== "ul") flush(); listType = "ul"; listBuf.push(uli[1].replace(/\s*\n[-•]\s+/g, " ").trim()); continue; }
+    const oli = b.match(/^\d+\.\s+(.*)$/s);
+    if (oli) { if (listType && listType !== "ol") flush(); listType = "ol"; listBuf.push(oli[1].replace(/\s*\n\d+\.\s+/g, " ").trim()); continue; }
     flush();
     const kw = b.match(/^(Schlüsselwörter|Keywords):\s*(.*)$/s);
     if (kw) { html.push(`<p class="muted"><strong>${esc(kw[1])}:</strong> ${inline(kw[2])}</p>`); continue; }
