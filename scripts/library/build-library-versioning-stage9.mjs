@@ -182,6 +182,12 @@ const LEADING_REFERENCE_PATTERNS = [
 ];
 
 const LEADING_OVERRIDES = new Map([
+  ["dokumente/dossier-wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie/index.html", {
+    title: "Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie",
+    shortDescription: "Grundlagendossier von Natalie Weber: systemische Einordnung der Disziplinen, Begriffsarchitektur der Wirkung und Glossarbasis für Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie.",
+    type: "Dossier",
+    status: "aktuell"
+  }],
   ["buch.html", {
     title: "Die neue Ordnung des Wohlstands",
     shortDescription: "Grundlagenwerk der Wirkungsökonomie und führende Gesamtreferenz für die Systemlogik."
