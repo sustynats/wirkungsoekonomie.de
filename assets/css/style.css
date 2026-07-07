@@ -18402,3 +18402,26 @@ h1, h2, h3 {
   margin-top: var(--space-sm);
   font-size: 0.9rem;
 }
+
+/* --- Grundlagenbereich Wirkungswissenschaften ------------------------------ */
+.wiwi-figure { margin: 1.5rem 0; }
+.wiwi-svg { width: 100%; height: auto; display: block; }
+.wiwi-figure figcaption { margin-top: .5rem; font-size: .9rem; color: var(--muted, #5b6672); text-align: center; }
+.wiwi-figure svg text { font-family: inherit; }
+.term-prose > h2 { margin-top: 2rem; }
+.toc-list { margin: .5rem 0 0; padding-left: 1.3rem; columns: 2; column-gap: 2rem; }
+.toc-list li { margin: .2rem 0; break-inside: avoid; }
+@media (max-width: 640px) { .toc-list { columns: 1; } }
+.term-chip--active { background: var(--navy, #13335B); color: #fff; border-color: var(--navy, #13335B); }
+.wiwi-glossary { display: grid; gap: .1rem; margin: 1rem 0; }
+.wiwi-term { display: grid; grid-template-columns: minmax(190px, 260px) 1fr; gap: 1rem; padding: .7rem 0; border-top: 1px solid var(--line, #e6e2d8); }
+.wiwi-term dt { margin: 0; font-weight: 700; }
+.wiwi-term dd { margin: 0; color: var(--ink, #222a33); }
+@media (max-width: 640px) { .wiwi-term { grid-template-columns: 1fr; gap: .2rem; } }
+.wiwi-faq { display: grid; gap: .6rem; margin: 1rem 0; }
+.wiwi-faq-item { border: 1px solid var(--line, #e6e2d8); border-radius: 10px; padding: .3rem .9rem; background: #fff; }
+.wiwi-faq-item > summary { cursor: pointer; font-weight: 600; padding: .6rem 0; list-style: none; }
+.wiwi-faq-item > summary::-webkit-details-marker { display: none; }
+.wiwi-faq-item > summary::before { content: "＋"; margin-right: .6rem; color: var(--gold, #C9A227); font-weight: 700; }
+.wiwi-faq-item[open] > summary::before { content: "－"; }
+.wiwi-faq-item > div { padding: 0 0 .7rem; }
