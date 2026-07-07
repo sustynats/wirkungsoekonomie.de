@@ -1,6 +1,6 @@
 :root {
   --navy: #0B1020;
-  --ivory: #F6F1E8;
+  --ivory: #F6F1EB;
   --cream: #FFF9EE;
   --paper: #FFFCF5;
   --green: #2F7D5C;
@@ -11,8 +11,8 @@
      (#9A6F12, ~4,5:1 auf Ivory) verwenden. */
   --gold: #C89B3C;
   --gold-deep: #9A6F12;
-  --coral: #C85A4A;
-  --text: #222222;
+  --coral: #C85A3C;
+  --text: #2C2C2E;
   --muted: #4a4a44; /* Lesbarkeit: von #555555 angehoben (mehr Kontrast für Sekundärtext) */
   --line: #E8E4DC;
   --white: #FFFFFF;
@@ -15976,7 +15976,7 @@ body[data-reader-mode="updates"] .discussion-placeholder {
 :root {
   --navy: #0B1020;
   --navy-80: #1A2440;
-  --ivory: #F6F1E8;
+  --ivory: #F6F1EB;
   --ivory-deep: #EFE7D9;
   --cream: #FFF9EE;
   --paper: #FFFCF5;
@@ -15990,14 +15990,14 @@ body[data-reader-mode="updates"] .discussion-placeholder {
   --gold-dark: #7A5512;
   --gold-deep: #9A6F12; /* Kleintext-Gold auf hellem Grund (Kontrast ~4,5:1), s. Kommentar am ersten :root */
   --gold-soft: #F1E3C4;
-  --coral: #C85A4A;
+  --coral: #C85A3C;
   --coral-dark: #8F3529;
   --coral-soft: #F5D8D3;
   --success: #2F7D5C;
   --warning: #C89B3C;
-  --risk: #C85A4A;
+  --risk: #C85A3C;
   --ink: #0B1020;
-  --text: #222222;
+  --text: #2C2C2E;
   --text-strong: #161616;
   --text-muted: #4a4a44; /* Lesbarkeit: angehoben (mehr Kontrast für Sekundärtext) */
   --muted: #4a4a44;
