@@ -395,6 +395,18 @@ const typeCards = [...typeValues].sort((a, b) => a.localeCompare(b, "de")).map((
   const count = documents.filter((doc) => displayType(doc) === type).length;
   return `<article class="library-type-card"><strong>${esc(type)}</strong><span>${formatCount(count)} Einträge</span><p>${esc(typeIntro(type))}</p></article>`;
 }).join("\n");
+const quellenarchivCard = (() => {
+  const snapshotPath = path.join(ROOT, "content/quellenarchiv/sources.json");
+  let count = 0;
+  try {
+    if (fs.existsSync(snapshotPath)) {
+      count = (JSON.parse(fs.readFileSync(snapshotPath, "utf8")).sources || []).length;
+    }
+  } catch { /* Snapshot fehlt beim Erstbuild – Karte ohne Zähler */ }
+  const countLabel = count ? `${formatCount(count)} Quellen` : "Quellenarchiv öffnen";
+  return `<a class="library-type-card library-type-card--link" href="../quellenarchiv/" aria-label="Quellenarchiv mit ${esc(countLabel)} öffnen"><strong>Quellenarchiv</strong><span>${esc(countLabel)}</span><p>Kuratierte, wirkungsökonomisch eingeordnete Quellen – gespiegelt aus dem Wirkungsinstitut, hier read-only.</p></a>`;
+})();
+const typeCardsWithArchive = `${quellenarchivCard}\n${typeCards}`;
 const allCards = documents.map((doc, index) => card(doc, index, onlineByKey)).join("\n");
 
 const html = `<!DOCTYPE html>
@@ -458,7 +470,7 @@ const html = `<!DOCTYPE html>
           <p class="hero-kicker">Dokumentarten</p>
           <h2>Was öffne ich?</h2>
         </div>
-        <div class="library-type-grid">${typeCards}</div>
+        <div class="library-type-grid">${typeCardsWithArchive}</div>
       </section>
       <section class="section section-muted">
         <div class="section-header">

@@ -1,0 +1,57 @@
+name: Quellenarchiv-Sync
+
+# Hält den Website-Spiegel des Quellenarchivs mit dem Wirkungsinstitut synchron.
+# Zieht den aktuellen Stand aus der öffentlichen Institut-API und aktualisiert den
+# Snapshot content/quellenarchiv/sources.json. Änderungen werden als Pull Request
+# vorgelegt (kein direkter main-Push) — nach dem Merge baut deploy.yml den Spiegel
+# aus der Quelle neu und stellt ihn live. Der Spiegel bleibt read-only; kuratiert,
+# hinzugefügt und diskutiert wird ausschließlich im Institut.
+
+on:
+  schedule:
+    - cron: "0 4 * * 1" # wöchentlich, Montag 04:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Snapshot aus der Institut-API aktualisieren
+        env:
+          QUELLENARCHIV_FETCH: "1"
+        run: node scripts/quellenarchiv/build-quellenarchiv-pages.mjs
+
+      - name: PR öffnen, falls sich der Snapshot geändert hat
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Nur den Snapshot betrachten – generierte Artefakte ignorieren.
+          if git diff --quiet -- content/quellenarchiv/sources.json; then
+            echo "Snapshot unverändert – nichts zu tun."
+            exit 0
+          fi
+          STAMP="$(date -u +%Y%m%d-%H%M)"
+          BRANCH="chore/quellenarchiv-sync-${STAMP}"
+          COUNT="$(node -e "console.log((require('./content/quellenarchiv/sources.json').sources||[]).length)")"
+          git config user.name "woek-quellenarchiv-sync"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add content/quellenarchiv/sources.json
+          git commit -m "chore(quellenarchiv): Snapshot mit Institut synchronisieren (${COUNT} Quellen, ${STAMP})"
+          git push origin "$BRANCH"
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "Quellenarchiv-Sync: ${COUNT} Quellen (${STAMP})" \
+            --body "Automatischer Abgleich des Quellenarchiv-Spiegels mit dem Wirkungsinstitut. Nur der Snapshot \`content/quellenarchiv/sources.json\` ändert sich; nach dem Merge baut der CI-Build die Seiten neu. Read-only-Spiegel – kuratiert wird ausschließlich im Institut."

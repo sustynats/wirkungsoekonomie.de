@@ -18323,3 +18323,82 @@ h1, h2, h3 {
     min-width: 34rem; /* statt 42rem */
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Quellenarchiv-Spiegel (read-only) — build-quellenarchiv-pages.mjs   */
+/* ------------------------------------------------------------------ */
+.quellenarchiv-filter-panel {
+  display: grid;
+  gap: var(--space-md);
+}
+.quellenarchiv-filter-panel .filter-chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  align-items: center;
+}
+.quellenarchiv-filter-panel .filter-chip-group .section-eyebrow {
+  flex-basis: 100%;
+  margin: 0 0 var(--space-xs);
+}
+.filter-chip-count {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0 0.45em;
+  border-radius: var(--radius-sm);
+  background: var(--surface-soft);
+  color: var(--text-muted);
+  font-size: 0.78em;
+  font-variant-numeric: tabular-nums;
+}
+.filter-chip.active .filter-chip-count,
+.filter-chip[aria-pressed="true"] .filter-chip-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: inherit;
+}
+.quellenarchiv-count {
+  margin: 0;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.quellenarchiv-card .card-eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.quellenarchiv-card .card-summary {
+  color: var(--text-muted);
+}
+.quellenarchiv-card .card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-top: auto;
+}
+.source-fact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-sm) var(--space-md);
+  margin: 0;
+}
+.source-fact {
+  display: grid;
+  gap: 0.15rem;
+}
+.source-fact dt {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.source-fact dd {
+  margin: 0;
+  color: var(--text-strong);
+}
+.source-readonly-note {
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+}
