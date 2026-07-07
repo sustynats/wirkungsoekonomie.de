@@ -383,6 +383,7 @@
               </div>
               <p class="card-text" id="woek-ai-placeholder">Noch keine Frage gestellt.</p>
               <p class="woek-ai-warning" id="woek-ai-warning" hidden></p>
+              <div id="woek-ai-progress" hidden></div>
               <div class="woek-ai-answer" id="woek-ai-answer"></div>
               <section class="woek-ai-feedback" id="woek-ai-feedback" hidden>
                 <p>War diese Antwort hilfreich?</p>
@@ -618,6 +619,106 @@
       const glossaryLookupUrl = "../assets/data/glossary-lookup.json";
       let glossaryLookupPromise = null;
       let currentFeedback = null;
+
+      // Fortschrittsbalken (analog zum Wirkungscheck): zeigt, was gerade läuft.
+      const progressEl = document.querySelector("#woek-ai-progress");
+      const AI_PROGRESS_PLAN = [
+        "Frage verstehen",
+        "WÖk-Wissensbasis & Quellen durchsuchen",
+        "Antwort formulieren",
+        "Wirkungsökonomisch einordnen",
+        "Quellen & Grenzen prüfen"
+      ];
+      let progressTimer = null;
+      let progressStartedAt = 0;
+
+      function progressNode(tag, cls, text) {
+        const n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text != null) n.textContent = text;
+        return n;
+      }
+
+      function formatElapsed(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        return `${minutes}:${String(seconds % 60).padStart(2, "0")}`;
+      }
+
+      function buildProgressPanel() {
+        const wrap = progressNode("section", "woek-progress");
+        wrap.setAttribute("data-woek-progress", "");
+        const meta = progressNode("div", "woek-progress__meta");
+        const label = progressNode("span", "", AI_PROGRESS_PLAN[0]);
+        const time = progressNode("span", "", "läuft seit 0:00");
+        label.setAttribute("data-progress-label", "");
+        time.setAttribute("data-progress-time", "");
+        meta.append(label, time);
+        const bar = progressNode("div", "woek-progress__bar");
+        bar.setAttribute("role", "progressbar");
+        bar.setAttribute("aria-label", "Arbeitsfortschritt");
+        bar.setAttribute("aria-valuemin", "0");
+        bar.setAttribute("aria-valuemax", "100");
+        bar.setAttribute("aria-valuenow", "12");
+        const fill = progressNode("div", "woek-progress__fill");
+        fill.setAttribute("data-progress-fill", "");
+        bar.append(fill);
+        const steps = progressNode("ol", "woek-progress__steps");
+        AI_PROGRESS_PLAN.forEach((step, index) => {
+          const item = progressNode("li", index === 0 ? "is-active" : "", step);
+          item.setAttribute("data-progress-step", String(index));
+          steps.append(item);
+        });
+        wrap.append(
+          meta,
+          bar,
+          steps,
+          progressNode("p", "woek-progress__hint", "Orientierungsbalken: Die genaue Dauer hängt von Frage, Quellenlage und KI-Dienst ab.")
+        );
+        return wrap;
+      }
+
+      function updateProgress() {
+        if (!progressEl) return;
+        const elapsed = Math.max(0, Math.floor((Date.now() - progressStartedAt) / 1000));
+        const checkpoints = [0, 3, 9, 20, 34];
+        const activeIndex = checkpoints.reduce((current, cp, index) => (elapsed >= cp ? index : current), 0);
+        const percent = Math.min(92, 12 + elapsed * 1.6);
+        const fill = progressEl.querySelector("[data-progress-fill]");
+        const time = progressEl.querySelector("[data-progress-time]");
+        const label = progressEl.querySelector("[data-progress-label]");
+        const bar = progressEl.querySelector("[role='progressbar']");
+        if (fill) fill.style.width = `${percent}%`;
+        if (bar) bar.setAttribute("aria-valuenow", String(Math.round(percent)));
+        if (time) time.textContent = `läuft seit ${formatElapsed(elapsed)}`;
+        if (label) label.textContent = AI_PROGRESS_PLAN[activeIndex] || "Antwort wird erstellt";
+        progressEl.querySelectorAll("[data-progress-step]").forEach((item) => {
+          const index = Number(item.getAttribute("data-progress-step") || "0");
+          item.classList.toggle("is-done", index < activeIndex);
+          item.classList.toggle("is-active", index === activeIndex);
+        });
+      }
+
+      function startProgress() {
+        stopProgress();
+        if (!progressEl) return;
+        progressEl.innerHTML = "";
+        progressEl.append(buildProgressPanel());
+        progressEl.hidden = false;
+        progressStartedAt = Date.now();
+        updateProgress();
+        progressTimer = window.setInterval(updateProgress, 1000);
+      }
+
+      function stopProgress() {
+        if (progressTimer) {
+          window.clearInterval(progressTimer);
+          progressTimer = null;
+        }
+        if (progressEl) {
+          progressEl.hidden = true;
+          progressEl.innerHTML = "";
+        }
+      }
 
       function setLoading(isLoading) {
         submit.disabled = isLoading || question.value.trim().length < 4;
@@ -944,6 +1045,7 @@
             console.warn(lookupError);
           }
 
+          startProgress();
           const response = await fetch(apiUrl, {
             method: "POST",
             headers: {
@@ -999,6 +1101,7 @@
           mode.textContent = "Fehler";
           renderSources([]);
         } finally {
+          stopProgress();
           setLoading(false);
         }
       });
