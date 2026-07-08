@@ -18404,16 +18404,23 @@ h1, h2, h3 {
 }
 
 /* --- Grundlagenbereich Wirkungswissenschaften ------------------------------ */
-.wiwi-figure { margin: 1.5rem 0; }
+.wiwi-figure { margin: 1.5rem 0 0; }
 .wiwi-svg { width: 100%; height: auto; display: block; }
 .wiwi-figure figcaption { margin-top: .5rem; font-size: .9rem; color: var(--muted, #5b6672); text-align: center; }
 .wiwi-figure svg text { font-family: inherit; }
-.term-prose > h2 { margin-top: 2rem; }
-.toc-list { margin: .5rem 0 0; padding-left: 1.3rem; columns: 2; column-gap: 2rem; }
-.toc-list li { margin: .2rem 0; break-inside: avoid; }
-@media (max-width: 640px) { .toc-list { columns: 1; } }
-.term-chip--active { background: var(--navy, #13335B); color: #fff; border-color: var(--navy, #13335B); }
-.wiwi-glossary { display: grid; gap: .1rem; margin: 1rem 0; }
+.wiwi-subnav { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 auto clamp(1rem, 3vw, 2rem); width: min(100%, var(--container)); }
+.wiwi-subnav-link { display: inline-block; padding: .4rem .85rem; border: 1px solid var(--line, #e6e2d8); border-radius: 999px; font-size: .9rem; font-weight: 500; text-decoration: none; color: var(--ink, #222a33); background: #fff; transition: border-color .15s, color .15s; }
+.wiwi-subnav-link:hover { border-color: var(--navy, #13335B); }
+.wiwi-subnav-link.is-active { background: var(--navy, #13335B); color: #fff; border-color: var(--navy, #13335B); }
+.wiwi-formula { margin-top: 1.4rem; padding: 1.3rem 1.6rem; background: var(--surface-soft, #f4f1ea); border: 1px solid var(--line, #e6e2d8); border-left: 4px solid var(--gold, #C9A227); border-radius: 12px; }
+.wiwi-formula .card-kicker { margin: 0 0 .5rem; }
+.wiwi-formula ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .4rem; }
+.wiwi-formula p { margin: 0; }
+.wiwi-meta { color: var(--muted, #5b6672); font-size: .9rem; margin-top: .8rem; }
+.wiwi-chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.3rem; }
+.wiwi-chip { display: inline-block; padding: .35rem .8rem; border: 1px solid var(--line, #e6e2d8); border-radius: 999px; font-size: .88rem; text-decoration: none; color: var(--navy, #13335B); background: #fff; transition: border-color .15s; }
+.wiwi-chip:hover { border-color: var(--gold, #C9A227); }
+.wiwi-glossary { display: grid; gap: .1rem; margin: 1rem 0 0; }
 .wiwi-term { display: grid; grid-template-columns: minmax(190px, 260px) 1fr; gap: 1rem; padding: .7rem 0; border-top: 1px solid var(--line, #e6e2d8); }
 .wiwi-term dt { margin: 0; font-weight: 700; }
 .wiwi-term dd { margin: 0; color: var(--ink, #222a33); }
