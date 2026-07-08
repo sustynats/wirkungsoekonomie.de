@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Natalie Weber | Begründerin der Wirkungsökonomie</title>
-    <meta name="description" content="Natalie Weber ist Begründerin der Wirkungsökonomie und des wirkungswissenschaftlichen Rahmenmodells. Brückenseite zwischen der Werkplattform wirkungsoekonomie.de und der persönlichen Website natalie-weber.de.">
+    <meta name="description" content="Natalie Weber ist Physikerin, Nachhaltigkeitsstrategin, Autorin und Begründerin der Wirkungsökonomie und des wirkungswissenschaftlichen Rahmenmodells.">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://wirkungsoekonomie.de/w/natalie-weber/">
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
     <meta property="og:title" content="Natalie Weber – Begründerin der Wirkungsökonomie">
-    <meta property="og:description" content="Die Person hinter der Wirkungsökonomie und dem wirkungswissenschaftlichen Rahmenmodell.">
+    <meta property="og:description" content="Physikerin, Nachhaltigkeitsstrategin, Autorin und Begründerin der Wirkungsökonomie.">
     <meta property="og:url" content="https://wirkungsoekonomie.de/w/natalie-weber/">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/people/natalie-weber.jpeg">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
     <style>
       @font-face { font-family: "Playfair Display"; src: url("../../assets/fonts/playfair-display-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
@@ -28,16 +29,11 @@
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
-      body {
-        margin: 0; background: var(--cream); color: var(--ink);
-        font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        font-size: 18px; line-height: 1.65; -webkit-font-smoothing: antialiased;
-      }
+      body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; font-size: 18px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
       h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; line-height: 1.12; letter-spacing: -0.01em; }
       a { color: inherit; }
       .wrap { max-width: 1060px; margin: 0 auto; padding: 0 clamp(22px, 5vw, 56px); }
 
-      /* Topbar */
       .nw-top { position: sticky; top: 0; z-index: 10; background: rgba(16,31,56,.86); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line-dark); }
       .nw-top .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; }
       .nw-brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 600; letter-spacing: .02em; font-size: .95rem; }
@@ -45,30 +41,31 @@
       .nw-top-cta { color: var(--navy); background: var(--gold-soft); text-decoration: none; font-weight: 600; font-size: .9rem; padding: 8px 16px; border-radius: 999px; transition: background .2s; }
       .nw-top-cta:hover { background: #fff; }
 
-      /* Hero */
       .hero { position: relative; color: #f4efe4; background:
-        radial-gradient(1100px 520px at 78% -10%, rgba(201,162,39,.22), transparent 60%),
-        radial-gradient(760px 460px at 8% 8%, rgba(47,125,84,.16), transparent 55%),
+        radial-gradient(1100px 520px at 82% -10%, rgba(201,162,39,.22), transparent 60%),
+        radial-gradient(760px 460px at 6% 12%, rgba(47,125,84,.16), transparent 55%),
         linear-gradient(160deg, var(--navy), var(--navy-2)); overflow: hidden; }
-      .hero::after { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Ccircle cx='1' cy='1' r='.5' fill='%23ffffff' opacity='.03'/%3E%3C/svg%3E"); pointer-events: none; }
-      .hero .wrap { position: relative; padding-top: clamp(64px, 12vw, 120px); padding-bottom: clamp(56px, 10vw, 104px); }
-      .eyebrow { text-transform: uppercase; letter-spacing: .22em; font-size: .74rem; font-weight: 600; color: var(--gold-soft); margin: 0 0 22px; }
-      .hero h1 { font-size: clamp(3rem, 8.5vw, 5.6rem); margin: 0; color: #fff; }
-      .hero .sub { font-family: "Playfair Display", Georgia, serif; font-weight: 600; font-size: clamp(1.25rem, 3vw, 1.75rem); color: var(--gold-soft); margin: 18px 0 0; max-width: 40ch; }
-      .hero .intro { max-width: 60ch; margin: 26px 0 0; color: #d9dae0; font-size: 1.08rem; }
-      .rule { width: 74px; height: 3px; background: var(--gold); border: 0; margin: 30px 0 0; }
-      .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+      .hero .wrap { position: relative; padding-top: clamp(48px, 8vw, 92px); padding-bottom: clamp(48px, 8vw, 88px); display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(28px, 5vw, 60px); align-items: center; }
+      .eyebrow { text-transform: uppercase; letter-spacing: .22em; font-size: .74rem; font-weight: 600; color: var(--gold-soft); margin: 0 0 20px; }
+      .hero h1 { font-size: clamp(2.6rem, 6.5vw, 4.4rem); margin: 0; color: #fff; }
+      .hero .sub { font-family: "Playfair Display", Georgia, serif; font-weight: 600; font-size: clamp(1.15rem, 2.4vw, 1.5rem); color: var(--gold-soft); margin: 16px 0 0; max-width: 30ch; }
+      .hero .intro { max-width: 46ch; margin: 22px 0 0; color: #d9dae0; font-size: 1.05rem; }
+      .rule { width: 74px; height: 3px; background: var(--gold); border: 0; margin: 26px 0 0; }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
       .btn { display: inline-block; text-decoration: none; font-weight: 600; font-size: .98rem; padding: 14px 26px; border-radius: 999px; transition: transform .15s, background .2s, color .2s; }
       .btn-primary { background: var(--gold); color: var(--navy); }
       .btn-primary:hover { background: var(--gold-soft); transform: translateY(-1px); }
       .btn-ghost { background: transparent; color: #f4efe4; border: 1px solid rgba(255,255,255,.32); }
       .btn-ghost:hover { border-color: var(--gold-soft); color: #fff; }
+      .hero-portrait { justify-self: center; }
+      .hero-portrait img { width: min(320px, 70vw); aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; border: 1px solid rgba(228,199,106,.4); box-shadow: 0 24px 60px rgba(0,0,0,.4); }
+      .hero-portrait figcaption { margin-top: 12px; text-align: center; font-size: .82rem; color: #aeb6c4; }
 
-      /* Sections */
-      section { padding: clamp(52px, 8vw, 92px) 0; }
+      section { padding: clamp(52px, 8vw, 88px) 0; }
       .section-num { color: var(--gold); font-weight: 600; letter-spacing: .16em; font-size: .74rem; text-transform: uppercase; }
       h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: 12px 0 0; color: var(--navy); }
       .lead-p { font-size: 1.12rem; color: #34404f; }
+      p.body { color: #33404e; max-width: 68ch; }
       .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 60px); align-items: start; }
       .split .col h3 { font-size: 1.35rem; color: var(--navy); margin: 0 0 10px; }
       .split .col p { margin: 0; color: #3a4551; }
@@ -78,6 +75,11 @@
       .band { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
       .band-dark { background: linear-gradient(160deg, var(--navy), var(--navy-2)); color: #eae6da; }
       .band-dark h2 { color: #fff; } .band-dark .section-num { color: var(--gold-soft); }
+
+      .facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 34px; }
+      .fact { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; }
+      .fact .k { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+      .fact .v { font-family: "Playfair Display", serif; font-size: 1.15rem; color: var(--navy); margin-top: 6px; }
 
       .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 40px; }
       .card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 30px 26px; position: relative; overflow: hidden; }
@@ -100,66 +102,88 @@
       .pub p { margin: 0 0 16px; color: #4a5560; font-size: .95rem; flex: 1; }
       .pub .go { color: #a6851a; font-weight: 600; font-size: .9rem; }
 
+      .book { display: grid; grid-template-columns: auto 1fr; gap: clamp(22px, 4vw, 44px); align-items: center; margin-top: 34px; }
+      .book img { width: 150px; border-radius: 8px; box-shadow: 0 16px 40px rgba(16,31,56,.22); }
+      .book h3 { font-size: 1.5rem; color: var(--navy); margin: 0 0 10px; }
+      @media (max-width: 620px) { .book { grid-template-columns: 1fr; justify-items: start; } }
+
       .close { text-align: center; }
       .close h2 { max-width: 22ch; margin-inline: auto; }
       .close .cta-row { justify-content: center; }
 
-      /* Mini-Footer */
       footer { background: var(--navy); color: #b9c1cf; padding: 42px 0; }
       footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; justify-content: center; text-align: center; font-size: .9rem; }
       footer a { color: #d7dce4; text-decoration: none; }
       footer a:hover { color: var(--gold-soft); }
       footer .sep { color: #45526b; }
 
-      @media (max-width: 820px) { .split, .cards, .pubs { grid-template-columns: 1fr; } }
+      @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; text-align: left; } .hero-portrait { justify-self: start; order: -1; } .split, .cards, .pubs, .facts { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
     <div class="nw-top">
       <div class="wrap">
         <a class="nw-brand" href="../../index.html"><img src="../../assets/img/brand/signet.svg" alt="">Wirkungsökonomie</a>
-        <a class="nw-top-cta" href="https://natalie-weber.de" rel="noopener">natalie-weber.de</a>
+        <a class="nw-top-cta" href="https://natalieweber.de" rel="noopener">natalieweber.de</a>
       </div>
     </div>
 
     <header class="hero">
       <div class="wrap">
-        <p class="eyebrow">Autorin · Begründerin</p>
-        <h1>Natalie Weber</h1>
-        <p class="sub">Begründerin der Wirkungsökonomie und des wirkungswissenschaftlichen Rahmenmodells.</p>
-        <hr class="rule">
-        <p class="intro">Die Wirkungsökonomie ist das von Natalie Weber begründete Ordnungsmodell, das Wirkung statt Kapital zum zentralen Maßstab für Wirtschaft, Politik, Recht, Kapital, Medien, Wissenschaft und Demokratie macht. Diese Seite verbindet die Werkplattform wirkungsoekonomie.de mit der persönlichen Autorinnen- und Profilseite natalie-weber.de.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://natalie-weber.de" rel="noopener">Zur Website von Natalie Weber</a>
-          <a class="btn btn-ghost" href="../../index.html">Zur Wirkungsökonomie</a>
+        <div class="hero-copy">
+          <p class="eyebrow">Autorin · Begründerin</p>
+          <h1>Natalie Weber</h1>
+          <p class="sub">Physikerin, Nachhaltigkeitsstrategin, Autorin und Begründerin der Wirkungsökonomie.</p>
+          <hr class="rule">
+          <p class="intro">Natalie Weber entwickelte die Wirkungsökonomie aus der Erfahrung, dass Wirtschaft, Politik und Gesellschaft enorme Datenmengen erzeugen, diese aber zu selten in echte Steuerung übersetzen. Ihr Ansatz verbindet Physik, Systemdenken, Nachhaltigkeitsmanagement und demokratische Verantwortung zu einer Frage: Welche Wirkung hat unser Handeln auf Mensch, Planet und Demokratie?</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://natalieweber.de" rel="noopener">Zur Website von Natalie Weber</a>
+          </div>
         </div>
+        <figure class="hero-portrait">
+          <img src="../../assets/img/people/natalie-weber.jpeg" alt="Natalie Weber – Physikerin, Nachhaltigkeitsstrategin und Autorin" width="320" height="400" decoding="async">
+          <figcaption>Natalie Weber</figcaption>
+        </figure>
       </div>
     </header>
 
     <main>
+      <section class="band">
+        <div class="wrap">
+          <p class="section-num">01 · Ursprung</p>
+          <h2>Wie die Wirkungsökonomie entstand</h2>
+          <p class="lead-p" style="max-width:70ch; margin-top:22px">Die Wirkungsökonomie entstand nicht als abstrakte Theorie am Schreibtisch, sondern aus einem Widerspruch: In Unternehmen, Märkten und politischen Systemen wird immer mehr gemessen, berichtet und reguliert. Trotzdem bleibt die zentrale Frage häufig offen — was verändert sich dadurch wirklich?</p>
+          <p class="body">Als Physikerin war Natalie Weber früh von der Vorstellung geprägt, dass nichts isoliert geschieht: Jede Handlung verändert Zustände, jede Veränderung wirkt in ein System zurück. Später, im Nachhaltigkeitsmanagement eines Industriekonzerns, wurde daraus eine ökonomische Frage: Warum erzeugen Unternehmen Wirkungsdaten, während Kapital, Gewinn und Kosten weiterhin die eigentlichen Entscheidungen bestimmen?</p>
+          <p class="body">Aus dieser Unruhe entstand die Wirkungsökonomie. Sie macht Wirkung zum Maßstab — nicht als moralisches Etikett, sondern als reale Zustandsveränderung für Mensch, Planet und Demokratie.</p>
+        </div>
+      </section>
+
       <section>
         <div class="wrap">
-          <p class="section-num">01 · Orientierung</p>
-          <h2>Werk und Person bewusst getrennt</h2>
-          <div class="split" style="margin-top:28px">
-            <div class="col">
-              <span class="tag gold">Das Werk</span>
-              <h3>wirkungsoekonomie.de</h3>
-              <p>Die Plattform für das Modell: Wirkungsökonomie, Wirkungswissenschaften, Wirkungsforschung, Dossiers, Journalbeiträge, Glossar, Methoden und Anwendungen.</p>
-            </div>
-            <div class="col">
-              <span class="tag">Die Person</span>
-              <h3>natalie-weber.de</h3>
-              <p>Die persönliche Website von Natalie Weber: Autorin, Begründerin, Sprecherin und Impulsgeberin hinter der Wirkungsökonomie — mit Biografie, Veröffentlichungen, Vorträgen und weiteren Projekten.</p>
-            </div>
+          <p class="section-num">02 · Kurzprofil</p>
+          <h2>Kurzprofil</h2>
+          <p class="lead-p" style="max-width:70ch; margin-top:22px">Natalie Weber ist Physikerin und arbeitete viele Jahre im Nachhaltigkeitsmanagement eines Industriekonzerns. Aus dieser Verbindung von naturwissenschaftlichem Denken, Unternehmenspraxis und Systemanalyse entwickelte sie die Wirkungsökonomie. Ihre Arbeit konzentriert sich auf Wirkungsmessung, wirkungsorientierte Steuerung, ehrliche Preise, Kapitalwirkung, Demokratie als Wirkungsraum und eine neue Wohlstandsordnung innerhalb planetarer Grenzen.</p>
+          <div class="facts">
+            <div class="fact"><p class="k">Fachlicher Ursprung</p><p class="v">Physik und Systemdenken</p></div>
+            <div class="fact"><p class="k">Praxisfeld</p><p class="v">Nachhaltigkeitsmanagement im Industriekonzern</p></div>
+            <div class="fact"><p class="k">Rolle</p><p class="v">Autorin und Begründerin der Wirkungsökonomie</p></div>
+            <div class="fact"><p class="k">Fokus</p><p class="v">Wirkung auf Mensch, Planet und Demokratie</p></div>
           </div>
-          <p class="lead-p" style="margin-top:30px; max-width:70ch">Beide Seiten gehören zusammen, erfüllen aber unterschiedliche Aufgaben. Die eine erklärt das Werk. Die andere zeigt die Person.</p>
         </div>
       </section>
 
       <section class="band">
         <div class="wrap">
-          <p class="section-num">02 · Urheberschaft</p>
+          <p class="section-num">03 · Arbeitsansatz</p>
+          <h2>Arbeitsansatz</h2>
+          <p class="lead-p" style="max-width:70ch; margin-top:22px">Natalie Weber versteht die Wirkungsökonomie als lernendes Wirtschafts- und Gesellschaftsmodell. Kapital, Märkte und Wettbewerb bleiben erhalten — aber sie erhalten einen neuen Kompass: Wirkung auf Mensch, Planet und Demokratie.</p>
+          <p class="body">Die zentrale Frage lautet nicht mehr nur, wie viel Gewinn entsteht, sondern welche Zustände sich verändern. Genau daraus entsteht die Grundidee: Positive Netto-Wirkung soll entscheidungsrelevant werden; schädliche Wirkung soll sichtbar, bewertet und zurückgekoppelt werden.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <p class="section-num">04 · Urheberschaft</p>
           <h2>Was Natalie Weber begründet</h2>
           <div class="cards">
             <article class="card">
@@ -183,7 +207,7 @@
 
       <section class="band-dark">
         <div class="wrap">
-          <p class="section-num">03 · Kern</p>
+          <p class="section-num">05 · Kern</p>
           <h2>Die zentrale Idee</h2>
           <p class="intro" style="max-width:66ch; color:#d9dae0; margin-top:22px">Nicht Kapital, Wachstum, Gewinn oder Reichweite entscheiden darüber, ob etwas zukunftsfähig ist. Entscheidend ist die tatsächliche Wirkung: Welche Zustände verändern sich — für Menschen, für den Planeten, für Demokratie, Rechtsstaatlichkeit, Vertrauen, Gesundheit, Ressourcen, Medienqualität und gesellschaftlichen Zusammenhalt?</p>
           <div class="formula">
@@ -200,16 +224,21 @@
 
       <section>
         <div class="wrap">
-          <p class="section-num">04 · Anschluss</p>
-          <h2>Auf bestehender Forschung aufbauend</h2>
-          <p class="lead-p" style="max-width:74ch; margin-top:22px">Die Wirkungsökonomie und die Wirkungswissenschaften entstehen nicht im luftleeren Raum. Sie schließen an bestehende Felder an: Wirkungsforschung, Evaluation, Impact Measurement, Impact Assessment, Nachhaltigkeitswissenschaft, Transformationsforschung, Systemtheorie, Medienwirkungsforschung, Technikfolgenabschätzung und Governance-Forschung.</p>
-          <p class="lead-p" style="max-width:74ch">Der neue Beitrag liegt darin, diese verstreuten Ansätze in einen gemeinsamen Rahmen zu stellen. Wirkung wird nicht nur untersucht, sondern zur Leitkategorie gesellschaftlicher Erkenntnis, Bewertung und Steuerung weiterentwickelt.</p>
+          <p class="section-num">06 · Grundlagenwerk</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <div class="book">
+            <img src="../../assets/img/book/cover.webp" alt="Buchcover: Die neue Ordnung des Wohlstands">
+            <div>
+              <p class="body" style="margin-top:0">In ihrem Buch <strong>Die neue Ordnung des Wohlstands</strong> entwickelt Natalie Weber die Grundlagen der Wirkungsökonomie systematisch weiter. Es beschreibt die Maßstabskrise moderner Gesellschaften und zeigt, warum Wohlstand nicht länger nur über Kapital, Wachstum, Gewinn oder Reichweite verstanden werden kann. Der Maßstab der neuen Ordnung lautet Wirkung: auf Mensch, Planet und Demokratie.</p>
+              <p><a class="btn btn-primary" href="../../buch.html" style="color:#101f38">Zum Buch</a></p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="band">
         <div class="wrap">
-          <p class="section-num">05 · Grundlagen</p>
+          <p class="section-num">07 · Grundlagen</p>
           <h2>Publikationen und Belege</h2>
           <p class="lead-p" style="max-width:70ch; margin-top:18px">Die theoretische und methodische Einordnung ist in Dossier, Journalbeitrag und Glossar ausgearbeitet.</p>
           <div class="pubs">
@@ -218,10 +247,10 @@
               <p>Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie — systematische Einordnung der Disziplinen, Begriffe und Wirkungsarchitektur.</p>
               <span class="go">Dossier lesen →</span>
             </a>
-            <a class="pub" href="../../blog/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie/">
-              <h3>Journalbeitrag</h3>
-              <p>„Wirkungswissenschaften als neuer Bezugsrahmen" — die wissenschaftliche Einordnung im Kontext der Wirkungsökonomie.</p>
-              <span class="go">Journalbeitrag lesen →</span>
+            <a class="pub" href="../../wirkungswissenschaften/">
+              <h3>Grundlagenbereich</h3>
+              <p>„Wirkungswissenschaften" — der wissenschaftliche Rahmen der Wirkungsökonomie, mit Definition, Methodik und Begriffssystem.</p>
+              <span class="go">Rahmen verstehen →</span>
             </a>
             <a class="pub" href="../../begriffe/">
               <h3>Glossar</h3>
@@ -234,12 +263,11 @@
 
       <section class="close">
         <div class="wrap">
-          <p class="section-num">06 · Zur Person</p>
-          <h2>Die Person hinter dem Modell</h2>
-          <p class="lead-p" style="max-width:60ch; margin:18px auto 0">Die Wirkungsökonomie ist ein offenes, weiterentwickelbares Modell. Ihr Ursprung liegt jedoch in der Arbeit von Natalie Weber. Die persönliche Website führt zu Biografie, Veröffentlichungen, Vorträgen, Interviews und weiteren Projekten.</p>
+          <p class="section-num">08 · Persönlich</p>
+          <h2>Mehr über Natalie Weber</h2>
+          <p class="lead-p" style="max-width:56ch; margin:18px auto 0">Die persönliche Website führt zu Biografie, Veröffentlichungen, Vorträgen, Interviews und weiteren Projekten.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://natalie-weber.de" rel="noopener" style="color:#101f38">Zu natalie-weber.de</a>
-            <a class="btn btn-ghost" href="../../index.html" style="color:#16294a; border-color:#c9a227">Zurück zur Wirkungsökonomie</a>
+            <a class="btn btn-primary" href="https://natalieweber.de" rel="noopener" style="color:#101f38">Zu natalieweber.de</a>
           </div>
         </div>
       </section>
@@ -249,9 +277,7 @@
       <div class="wrap">
         <span>© 2026 Natalie Weber</span>
         <span class="sep">·</span>
-        <a href="../../index.html">Wirkungsökonomie</a>
-        <span class="sep">·</span>
-        <a href="https://natalie-weber.de" rel="noopener">natalie-weber.de</a>
+        <a href="https://natalieweber.de" rel="noopener">natalieweber.de</a>
         <span class="sep">·</span>
         <a href="../../impressum.html">Impressum</a>
         <span class="sep">·</span>
