@@ -170,6 +170,30 @@ function normalizeSearch(value) {
     .replace(/ö/g, "oe").replace(/ä/g, "ae").replace(/ü/g, "ue").replace(/ß/g, "ss");
 }
 
+// Autor:innen/Herausgeber in Einzelnamen zerlegen. Trennzeichen: " / ", ";",
+// " & ", " und ", " and ". Bewusst NICHT reines "," (würde "Nachname, Vorname"
+// zerreißen). Whitespace wird vereinheitlicht, damit Namen konsistent matchen.
+function parseAuthors(author) {
+  if (!author) return [];
+  return String(author)
+    .split(/\s*[;/]\s*|\s+(?:&|und|and)\s+/i)
+    .map((a) => a.replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+}
+// Kanonische Vergleichsform (identisch zur Client-normalize()) für data-authors.
+function authorKey(name) {
+  return normalizeSearch(name).replace(/\s+/g, " ").trim();
+}
+// Verlinkte Autorzeile; jeder Name führt auf die gefilterte Übersicht (?autor=…).
+// base = Pfad zur /quellenarchiv/-Übersicht (Detailseite: "../", Übersicht: "").
+function authorLine(author, base) {
+  const names = parseAuthors(author);
+  if (!names.length) return "";
+  return names
+    .map((n) => `<a href="${base}?autor=${encodeURIComponent(n)}">${esc(n)}</a>`)
+    .join(", ");
+}
+
 // ---------------------------------------------------------------------------
 // Detailseite je Quelle
 // ---------------------------------------------------------------------------
@@ -233,6 +257,7 @@ function detailBody(source, clusterLabels) {
         <header class="term-detail-hero">
           <p class="hero-kicker">${esc(clusterLabel || "Quelle")}</p>
           <h1>${esc(source.title)}</h1>
+          ${source.author ? `<p class="source-authors">${authorLine(source.author, "../")}</p>` : ""}
           <p class="lead">${esc(source.summary || "")}</p>
           <div class="term-meta-row" aria-label="Quellinformation">
             ${metaRow}
@@ -311,12 +336,15 @@ function indexBody(sources, clusters) {
     if (!items.length) return "";
     const cards = items.map((s) => {
       const searchText = normalizeSearch([s.title, s.code, s.summary, s.author, s.domain, (s.impactFields || []).join(" "), s.clusterLabel, s.typeLabel].join(" "));
+      const authorKeys = parseAuthors(s.author).map(authorKey).join("|");
       return `<article class="info-card quellenarchiv-card" data-card
             data-origin="${esc(s.origin)}"
             data-cluster="${esc(s.cluster)}"
+            data-authors="${esc(authorKeys)}"
             data-search="${esc(searchText)}">
             <p class="card-eyebrow">${esc(s.clusterLabel || c.label)} · ${esc(s.typeLabel || "Quelle")}</p>
             <h3><a href="${esc(slug(s.code))}/">${esc(s.title)}</a></h3>
+            ${s.author ? `<p class="card-authors">${authorLine(s.author, "")}</p>` : ""}
             <p class="card-summary">${esc((s.summary || "").slice(0, 180))}</p>
             <p class="card-meta"><span class="badge">${esc(originLabel(s.origin))}</span> <span class="badge">${esc(reviewLabel(s.reviewStatus))}</span>${s.domain ? ` <span class="muted">${esc(s.domain)}</span>` : ""}</p>
           </article>`;
@@ -355,7 +383,7 @@ ${sections}
 
       <script>
       (function () {
-        var state = { origin: new Set(), cluster: new Set(), q: "" };
+        var state = { origin: new Set(), cluster: new Set(), q: "", author: "" };
         var cards = Array.prototype.slice.call(document.querySelectorAll("[data-card]"));
         var sectionsEls = Array.prototype.slice.call(document.querySelectorAll("[data-cluster-section]"));
         var chips = Array.prototype.slice.call(document.querySelectorAll(".filter-chip"));
@@ -372,7 +400,8 @@ ${sections}
             var okOrigin = !state.origin.size || state.origin.has(card.dataset.origin);
             var okCluster = !state.cluster.size || state.cluster.has(card.dataset.cluster);
             var okText = !q || (card.dataset.search || "").indexOf(q) !== -1;
-            var show = okOrigin && okCluster && okText;
+            var okAuthor = !state.author || (card.dataset.authors || "").split("|").indexOf(state.author) !== -1;
+            var show = okOrigin && okCluster && okText && okAuthor;
             card.hidden = !show;
             if (show) visible++;
           });
@@ -397,6 +426,35 @@ ${sections}
             t = setTimeout(function () { state.q = input.value; apply(); }, 80);
           });
         }
+        (function initAuthorFilter() {
+          var raw = new URLSearchParams(window.location.search).get("autor");
+          if (!raw) return;
+          state.author = normalize(raw).replace(/\s+/g, " ").trim();
+          var panel = document.querySelector(".quellenarchiv-filter-panel");
+          if (!panel) return;
+          var banner = document.createElement("p");
+          banner.className = "quellenarchiv-author-filter";
+          banner.setAttribute("aria-live", "polite");
+          var label = document.createElement("span");
+          label.textContent = "Quellen von: ";
+          var name = document.createElement("strong");
+          name.textContent = raw;
+          var clear = document.createElement("button");
+          clear.type = "button";
+          clear.className = "filter-chip filter-chip--clear";
+          clear.textContent = "Filter aufheben \u2715";
+          clear.addEventListener("click", function () {
+            state.author = "";
+            banner.remove();
+            history.replaceState(null, "", window.location.pathname);
+            apply();
+          });
+          banner.appendChild(label);
+          banner.appendChild(name);
+          banner.appendChild(document.createTextNode(" "));
+          banner.appendChild(clear);
+          panel.appendChild(banner);
+        })();
         apply();
       })();
       </script>`;
