@@ -87,6 +87,16 @@ const CSS = `
       .faq details[open] summary::before { content:"－"; }
       .faq details > div { padding:0 0 .8rem; color:#3a4551; }
       .close { text-align:center; } .close h2 { max-width:24ch; margin-inline:auto; } .close .cta-row { justify-content:center; }
+      .quote-grid { display:grid; gap:16px; margin-top:26px; }
+      .quote { background:var(--paper); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; padding:20px 24px; }
+      .quote p { margin:0; font-family:"Playfair Display",serif; font-size:1.16rem; line-height:1.4; color:var(--navy); }
+      .quote .src { display:block; margin-top:12px; font-family:"Inter",sans-serif; font-size:.82rem; font-weight:600; letter-spacing:.02em; color:var(--muted); }
+      .notice { background:rgba(47,125,84,.08); border:1px solid rgba(47,125,84,.28); border-radius:12px; padding:20px 24px; margin-top:26px; color:#274a37; }
+      .notice strong { color:var(--green); }
+      .modules { list-style:none; margin:26px 0 0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:10px; counter-reset:mod; }
+      .modules li { position:relative; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:14px 16px 14px 48px; font-size:.96rem; color:#33404e; }
+      .modules li::before { counter-increment:mod; content:counter(mod,decimal-leading-zero); position:absolute; left:16px; top:14px; font-family:"Playfair Display",serif; font-weight:700; color:var(--gold); font-size:.95rem; }
+      @media (max-width:860px){ .modules{grid-template-columns:1fr;} }
       .subhero { background:linear-gradient(160deg,var(--navy),var(--navy-2)); color:#f4efe4; }
       .subhero .wrap { padding:clamp(40px,7vw,72px) 0; }
       .subhero h1 { font-size:clamp(2.1rem,5vw,3.4rem); color:#fff; margin:10px 0 0; }
@@ -292,14 +302,19 @@ ${sec({ num: "07 · Einordnung", h2: "Wissenschaftlich sauber: Was neu ist und w
     intro: "Wirkung wurde auch vor Natalie Weber untersucht. Neu ist der systemische Rahmen, in dem Wirkung als gemeinsame Leitkategorie von Erkenntnis, Bewertung und Steuerung zusammengeführt wird.",
     inner: `        <p class="body">Natalie Weber beansprucht nicht, dass vor ihr niemand Wirkung untersucht hätte. Ihr Beitrag liegt in der systemischen Verbindung: Wirkung wird als tatsächliche Veränderung von Zuständen verstanden, am Rahmen Mensch, Planet und Demokratie bewertet und in Entscheidungen, Preise, Kapital, Recht, Medien und Governance rückgekoppelt. Die Wirkungswissenschaften sind kein staatlich oder akademisch bereits anerkanntes Fach, sondern ein in Entwicklung befindlicher Rahmen.</p>
         <p><a class="chip" href="${base}urheberschaft/">Urheberschaft und Abgrenzung →</a></p>` })}
+${sec({ num: "08 · Öffentliche Kommunikation", h2: "Bewusst im Hintergrund — wirksam über Strukturen",
+    intro: "Natalie Weber konzentriert sich bewusst auf Grundlagenarbeit, Autorinnenschaft und die Weiterentwicklung der Wirkungsökonomie. Die Wirkungsökonomie soll nicht über eine einzelne Person skaliert werden, sondern über Institutionen, Materialien, Schulungen und qualifizierte Multiplikator:innen.",
+    inner: `        <p class="body">Ihr Schwerpunkt liegt auf Theorieentwicklung, systemischer Einordnung, Texten, Konzepten, Methodik, Akademie und der Befähigung von Multiplikator:innen. Öffentliche Anfragen, Fachgespräche und Schulungsformate werden daher institutionell über das Wirkungsinstitut, die Akademie oder autorisierte Ansprechpartner:innen koordiniert.</p>
+        <div class="notice"><strong>Ziel:</strong> ein tragfähiges Wissens-, Schulungs- und Multiplikator:innensystem, das die Methode unabhängig, qualitätsgesichert und skalierbar vermittelt — statt sie an die öffentliche Verfügbarkeit einer einzelnen Person zu binden.</div>` })}
     <section class="close band">
       <div class="wrap">
-        <p class="section-num">08 · Kontakt</p>
-        <h2>Kontakt, Presse und Anfragen</h2>
-        <p class="lead-p" style="max-width:56ch; margin:18px auto 0">Für Interviews, Vorträge, Fachgespräche, Kooperationen oder Rückfragen zur Wirkungsökonomie.</p>
+        <p class="section-num">09 · Presse & Anfragen</p>
+        <h2>Presse, Materialien und institutionelle Anfragen</h2>
+        <p class="lead-p" style="max-width:60ch; margin:18px auto 0">Kurzprofile, Hintergrundmaterialien, Zitate zur Verwendung und die passenden Ansprechpartner:innen für Medien, Organisationen und Kooperationen.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="${base}../../mitmachen.html" style="color:#101f38">Kontakt aufnehmen</a>
-          <a class="btn btn-ghost" href="${base}presse/" style="color:#16294a; border-color:#c9a227">Presse & Kurzprofile</a>
+          <a class="btn btn-primary" href="${base}presse/" style="color:#101f38">Zum Pressebereich</a>
+          <a class="btn btn-ghost" href="${base}../../institut/" style="color:#16294a; border-color:#c9a227">Wirkungsinstitut</a>
+          <a class="btn btn-ghost" href="${base}../../akademie.html" style="color:#16294a; border-color:#c9a227">Akademie</a>
         </div>
       </div>
     </section>`;
@@ -361,18 +376,76 @@ function buildSubpages() {
       intro: "Musik zeigt eine andere Seite derselben Grundfrage wie die Wirkungsökonomie: Was berührt, was verändert, was bleibt? Als „sustynats“ verbindet Natalie Weber Sprache, Gefühl und Öffentlichkeit.",
       inner: `        <p class="chips"><a class="chip" href="${LINKS.appleMusic}">Apple Music</a><a class="chip" href="${LINKS.amazonMusic}">Amazon Music</a><a class="chip" href="${LINKS.youtubeMusic}">YouTube Music</a></p>` }) ));
 
-  out.push(sub("presse/", "presse/", "Presse", "Presse, Vorträge und Anfragen", "Kurzprofile, Themen und Kontakt für Medien und Veranstalter.",
-    "Pressebereich von Natalie Weber: Kurzprofile, Vortrags- und Interviewthemen sowie Kontakt für Journalist:innen, Veranstalter:innen und Kooperationspartner:innen.",
-    (base) => sec({ num: "Kurzprofil", h2: "Kurzprofil (100 Wörter)",
-      intro: "Natalie Weber ist Physikerin, Nachhaltigkeitsstrategin, Autorin und Begründerin der Wirkungsökonomie. Sie entwickelte das Modell aus der Erfahrung, dass moderne Gesellschaften immer mehr messen, ihre Entscheidungen aber weiterhin oft an Kapital, Wachstum, Gewinn oder Reichweite ausrichten. Mit den Wirkungswissenschaften entwickelt sie einen Rahmen, der Wirkung als tatsächliche Veränderung von Zuständen sichtbar, bewertbar und rückkoppelbar macht — für Mensch, Planet und Demokratie. Sie gründete das Wirkungsinstitut als Forschungsraum und die Akademie als Lernraum.",
-      inner: cardList([
-        { k: "Themen", title: "Vorträge & Panels", text: "Wirkung statt Kapital, Wirkungswissenschaften, ehrliche Preise, Kapital- und Medienwirkung, Demokratie als Wirkungsraum.", },
-        { k: "Formate", title: "Interviews & Gespräche", text: "Fachgespräche, Podcast-Interviews, Hintergrund zur Entstehung der Wirkungsökonomie.", },
-        { k: "Kontakt", title: "Anfragen", text: "Über die zentrale Kontaktseite der Wirkungsökonomie.", href: `${base}../../mitmachen.html`, go: "Kontakt" },
-      ], "cards") + `        <p class="chips"><a class="chip" href="${LINKS.linkedin}">LinkedIn</a><a class="chip" href="${base}../../assets/img/people/natalie-weber.jpeg">Pressefoto (JPG)</a></p>
-        <p class="body" style="margin-top:1rem"><strong>Korrekte Schreibweise/Claims:</strong> „Natalie Weber, Begründerin der Wirkungsökonomie“. Nicht: „hat die Wirkungsforschung erfunden“.</p>` }) ));
+  out.push(sub("presse/", "presse/", "Presse", "Presse & Anfragen", "Presseinformationen zur Wirkungsökonomie, Hintergrundmaterialien und die passenden institutionellen Ansprechpartner:innen.",
+    "Pressebereich zur Wirkungsökonomie: Kurzprofile, Hintergrundmaterialien, Zitate zur Verwendung sowie institutionelle Ansprechpartner:innen und Multiplikator:innen. Natalie Weber arbeitet bewusst im Hintergrund; Anfragen werden über Wirkungsinstitut, Akademie und autorisierte Vertreter:innen koordiniert.",
+    (base) => sec({ num: "Öffentliche Kommunikation", h2: "Keine personenbezogene Auftrittslogik",
+      intro: "Natalie Weber steht nicht für klassische Personeninterviews, öffentliche Vorträge oder Panelauftritte zur Verfügung. Ihre Arbeit konzentriert sich auf Grundlagen, Texte, Modelle, Akademie, Methodik und institutionellen Aufbau.",
+      inner: `        <p class="body">Die Wirkungsökonomie soll nicht von der öffentlichen Verfügbarkeit einer einzelnen Person abhängen. Ziel ist der Aufbau eines tragfähigen Wissens-, Schulungs- und Multiplikator:innensystems, das die Methode unabhängig, qualitätsgesichert und skalierbar vermittelt. Öffentliche Anfragen, Fachgespräche und Schulungsformate werden daher institutionell über das Wirkungsinstitut, die Akademie oder autorisierte Ansprechpartner:innen koordiniert.</p>` })
+
+      + sec({ band: "band", num: "Presseprofil", h2: "Kurzprofil zur Verwendung",
+        intro: "Natalie Weber ist Physikerin, Nachhaltigkeitsstrategin, Autorin und Begründerin der Wirkungsökonomie. Sie entwickelte das Modell aus der Erfahrung, dass moderne Gesellschaften immer mehr messen, ihre Entscheidungen aber weiterhin oft an Kapital, Wachstum, Gewinn oder Reichweite ausrichten. Mit den Wirkungswissenschaften entwickelt sie einen Rahmen, der Wirkung als tatsächliche Veränderung von Zuständen sichtbar, bewertbar und rückkoppelbar macht — für Mensch, Planet und Demokratie. Sie gründete das Wirkungsinstitut als Forschungsraum und die Akademie als Lernraum.",
+        inner: `        <div class="notice"><strong>Kurzbeschreibung Wirkungsökonomie:</strong> Die Wirkungsökonomie macht Wirkung — die tatsächliche Veränderung von Zuständen für Mensch, Planet und Demokratie — zum Maßstab für Wirtschaft, Kapital, Politik, Recht und Medien und koppelt sie in Entscheidungen zurück.</div>` })
+
+      + sec({ num: "Institutionelle Kommunikation", h2: "Anfragen laufen über Strukturen, nicht über eine Person",
+        intro: "Anfragen zur Wirkungsökonomie werden über die jeweils passende Struktur beantwortet — je nach Thema fachlich, wissenschaftlich, institutionell oder didaktisch.",
+        inner: cardList([
+          { k: "Forschung & Einordnung", title: "Wirkungsinstitut", text: "Wissenschaftliche und fachliche Einordnung, Quellen, Analysen, Dossiers und Hintergrund zur Wirkungsökonomie.", href: `${base}../../institut/`, go: "Institut" },
+          { k: "Bildung & Schulung", title: "Akademie", text: "Lern- und Schulungsformate, Workshops und die Qualifizierung von Multiplikator:innen.", href: `${base}../../akademie.html`, go: "Akademie" },
+          { k: "Vermittlung", title: "Autorisierte Ansprechpartner:innen", text: "Perspektivisch benannte, geschulte Vertreter:innen für Fachgespräche, Medien- und Schulungsformate.", },
+        ]) })
+
+      + sec({ band: "band", num: "Statements", h2: "Zitate & Statements zur Verwendung",
+        intro: "Freigegebene Formulierungen, die Medien und Organisationen der Wirkungsökonomie bzw. Natalie Weber zuordnen dürfen.",
+        inner: `        <div class="quote-grid">
+          <blockquote class="quote"><p>„Wir messen mehr als je zuvor — und steuern trotzdem zu oft am Ziel vorbei. Die Wirkungsökonomie macht Wirkung, nicht Kapital, zum Maßstab.“</p><span class="src">Natalie Weber, Begründerin der Wirkungsökonomie</span></blockquote>
+          <blockquote class="quote"><p>„Wirkung ist die tatsächliche Veränderung von Zuständen — für Mensch, Planet und Demokratie. Alles andere ist Aktivität.“</p><span class="src">Natalie Weber, Begründerin der Wirkungsökonomie</span></blockquote>
+          <blockquote class="quote"><p>„Die Wirkungsökonomie soll nicht von der Verfügbarkeit einer einzelnen Person abhängen, sondern von einem tragfähigen System aus Wissen, Schulung und Multiplikation.“</p><span class="src">Natalie Weber, Begründerin der Wirkungsökonomie</span></blockquote>
+          <blockquote class="quote"><p>„Wer den Maßstab ändert, ändert die Entscheidungen. Nachhaltigkeit scheitert selten am Wollen, sondern am Maßstab.“</p><span class="src">Natalie Weber, Begründerin der Wirkungsökonomie</span></blockquote>
+        </div>` })
+
+      + sec({ num: "Materialien", h2: "Materialien für Medien und Organisationen",
+        intro: "Bereitgestellt werden Hintergrundmaterialien, Kurzprofile und weiterführende Quellen. Weitere Visuals oder ein vertieftes Hintergrundpapier stellen wir auf Anfrage zusammen.",
+        inner: cardList([
+          { k: "Hintergrund", title: "Hintergrundpapier / Dossier", text: "Systematische Einordnung von Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie.", href: `${base}../../dokumente/dossier-wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie/`, go: "Dossier öffnen" },
+          { k: "Grundlagenwerk", title: "Buch", text: "„Die neue Ordnung des Wohlstands“ — das frei zugängliche Grundlagenwerk.", href: `${base}../../buch.html`, go: "Zur Buchseite" },
+          { k: "Begriffe", title: "Glossar der Wirkungsökonomie", text: "Präzise Definitionen für eine belastbare Berichterstattung.", href: `${base}../../begriffe/`, go: "Zum Glossar" },
+        ]) + `        <p class="chips" style="margin-top:24px">
+          <a class="chip" href="${base}../../assets/img/people/natalie-weber.jpeg">Pressefoto (JPG)</a>
+          <a class="chip" href="${base}../../wirkungsoekonomie.html">Kurzbeschreibung Wirkungsökonomie</a>
+          <a class="chip" href="${base}faq/">FAQ für Medien</a>
+          <a class="chip" href="${base}../../akademie.html">Akademie</a>
+          <a class="chip" href="${base}../../mitmachen.html">Kontaktformular für Anfragen</a>
+        </p>` })
+
+      + sec({ band: "band-dark", num: "Vertretung", h2: "Multiplikator:innen statt Personenkult",
+        intro: "Für Interviews, Fachgespräche, Workshops, Vorträge, Schulungen oder Medienformate können perspektivisch geschulte Vertreter:innen benannt werden. Die Wirkungsökonomie soll über qualifizierte Personen und Institutionen vermittelt werden.",
+        inner: `        <p class="body" style="color:#d9dae0">Dazu können Coaches, Trainer:innen, Wissenschaftler:innen, Berater:innen, Lehrende und Organisationen geschult und zertifiziert werden — als tragfähiges Netzwerk, das die Methode unabhängig, qualitätsgesichert und skalierbar erklärt, anwendet und weitervermittelt, ohne dass jede Anfrage an Natalie Weber persönlich gebunden ist.</p>` })
+
+      + sec({ num: "Akademie", h2: "Akademie für Multiplikator:innen",
+        intro: "Im Aufbau: ein eigener Akademie-Bereich „Multiplikator:innen für Wirkungsökonomie“ für Coaches, Trainer:innen, Wissenschaftler:innen, Fachautor:innen, Berater:innen und institutionelle Multiplikator:innen aus Unternehmen, Bildung, Politik, Verwaltung, Medien und Zivilgesellschaft.",
+        inner: `        <p class="chips"><a class="chip">Coaches</a><a class="chip">Trainer:innen</a><a class="chip">Wissenschaftler:innen</a><a class="chip">Berater:innen</a><a class="chip">Lehrende</a><a class="chip">Nachhaltigkeits- & ESG-Verantwortliche</a><a class="chip">Politische Bildner:innen</a><a class="chip">Journalist:innen</a><a class="chip">Organisationsentwickler:innen</a></p>
+        <ol class="modules">
+          <li>Grundlagen der Wirkungsökonomie</li>
+          <li>Wirkung, Wirkstoff, Wirkungspotenzial und Wirkungspfad</li>
+          <li>Wirkungsmanagement</li>
+          <li>Wirkungscontrolling</li>
+          <li>Netto-Wirkung, T-SROI, NWI und Impact-of-Investment</li>
+          <li>Wirkungsökonomie in Unternehmen</li>
+          <li>Wirkungsökonomie in Politik und Verwaltung</li>
+          <li>Wirkungskommunikation ohne Greenwashing</li>
+          <li>Umgang mit Medien, Narrativen und gesellschaftlicher Wirkung</li>
+          <li>Abschlussprüfung / Zertifizierung</li>
+        </ol>
+        <div class="notice" style="margin-top:26px"><strong>Ziel:</strong> ein qualitätsgesichertes Netzwerk aus Menschen, die die Wirkungsökonomie erklären, anwenden und weitervermitteln können. <a href="${base}../../akademie.html" style="color:var(--green); font-weight:600">Zur Akademie →</a></div>` })
+
+      + sec({ band: "band", num: "Hinweise", h2: "Korrekte Schreibweise, Claims und Kontakt",
+        inner: `        <p class="body"><strong>Korrekte Bezeichnung:</strong> „Natalie Weber, Begründerin der Wirkungsökonomie“. <strong>Nicht:</strong> „hat die Wirkungsforschung erfunden“. Die Wirkungswissenschaften sind ein in Entwicklung befindlicher Rahmen, kein bereits staatlich oder akademisch anerkanntes Fach.</p>
+        <p class="cta-row" style="margin-top:22px"><a class="btn btn-primary" href="${base}../../mitmachen.html" style="color:#101f38">Anfrage stellen</a> <a class="chip" href="${LINKS.linkedin}">LinkedIn</a></p>` }) ));
 
   const faqs = [
+    ["Gibt Natalie Weber Interviews, Vorträge oder Panelauftritte?", "Natalie Weber konzentriert sich bewusst auf Grundlagenarbeit, Autorinnenschaft und die Weiterentwicklung der Wirkungsökonomie. Sie steht daher nicht für klassische Personeninterviews, öffentliche Vorträge oder Panelauftritte zur Verfügung. Öffentliche Anfragen, Fachgespräche und Schulungsformate werden institutionell über das Wirkungsinstitut, die Akademie oder autorisierte Multiplikator:innen koordiniert."],
+    ["Wie werden Presse- und Medienanfragen beantwortet?", "Über die jeweils passende Struktur: das Wirkungsinstitut für wissenschaftliche und fachliche Einordnung, die Akademie für Schulungs- und Bildungsformate sowie autorisierte Ansprechpartner:innen und geschulte Multiplikator:innen. Materialien, Kurzprofile und Zitate zur Verwendung stehen im Pressebereich bereit."],
+    ["Kann man die Wirkungsökonomie als Coach oder Trainer:in vermitteln?", "Perspektivisch ja. Die Akademie baut einen Bereich „Multiplikator:innen für Wirkungsökonomie“ auf, in dem Coaches, Trainer:innen, Wissenschaftler:innen, Berater:innen und Lehrende geschult und zertifiziert werden, um die Methode qualitätsgesichert weiterzugeben."],
     ["Hat Natalie Weber die Wirkungsforschung erfunden?", "Nein. Wirkung wurde in Evaluation, Impact Assessment und Nachhaltigkeitsforschung schon lange untersucht. Neu ist die systemische Zusammenführung in einen Rahmen, in dem Wirkung bewertet und rückgekoppelt wird."],
     ["Was ist das Neue an der Wirkungsökonomie?", "Sie macht Wirkung — die tatsächliche Veränderung von Zuständen für Mensch, Planet und Demokratie — zum Maßstab für Wirtschaft, Kapital, Recht, Medien und Politik und koppelt sie in Entscheidungen zurück."],
     ["Was sind Wirkungswissenschaften?", "Der von Natalie Weber begründete inter- und transdisziplinäre Rahmen, der Wirkung untersucht, bewertet und rückkoppelt. Kein bereits staatlich oder akademisch anerkanntes Fach, sondern ein in Entwicklung befindlicher Rahmen."],

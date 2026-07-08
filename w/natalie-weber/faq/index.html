@@ -82,6 +82,16 @@
       .faq details[open] summary::before { content:"－"; }
       .faq details > div { padding:0 0 .8rem; color:#3a4551; }
       .close { text-align:center; } .close h2 { max-width:24ch; margin-inline:auto; } .close .cta-row { justify-content:center; }
+      .quote-grid { display:grid; gap:16px; margin-top:26px; }
+      .quote { background:var(--paper); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; padding:20px 24px; }
+      .quote p { margin:0; font-family:"Playfair Display",serif; font-size:1.16rem; line-height:1.4; color:var(--navy); }
+      .quote .src { display:block; margin-top:12px; font-family:"Inter",sans-serif; font-size:.82rem; font-weight:600; letter-spacing:.02em; color:var(--muted); }
+      .notice { background:rgba(47,125,84,.08); border:1px solid rgba(47,125,84,.28); border-radius:12px; padding:20px 24px; margin-top:26px; color:#274a37; }
+      .notice strong { color:var(--green); }
+      .modules { list-style:none; margin:26px 0 0; padding:0; display:grid; grid-template-columns:repeat(2,1fr); gap:10px; counter-reset:mod; }
+      .modules li { position:relative; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:14px 16px 14px 48px; font-size:.96rem; color:#33404e; }
+      .modules li::before { counter-increment:mod; content:counter(mod,decimal-leading-zero); position:absolute; left:16px; top:14px; font-family:"Playfair Display",serif; font-weight:700; color:var(--gold); font-size:.95rem; }
+      @media (max-width:860px){ .modules{grid-template-columns:1fr;} }
       .subhero { background:linear-gradient(160deg,var(--navy),var(--navy-2)); color:#f4efe4; }
       .subhero .wrap { padding:clamp(40px,7vw,72px) 0; }
       .subhero h1 { font-size:clamp(2.1rem,5vw,3.4rem); color:#fff; margin:10px 0 0; }
@@ -124,6 +134,9 @@
       </div>
     </header>
     <section class="section"><div class="wrap"><div class="faq">
+      <details><summary>Gibt Natalie Weber Interviews, Vorträge oder Panelauftritte?</summary><div>Natalie Weber konzentriert sich bewusst auf Grundlagenarbeit, Autorinnenschaft und die Weiterentwicklung der Wirkungsökonomie. Sie steht daher nicht für klassische Personeninterviews, öffentliche Vorträge oder Panelauftritte zur Verfügung. Öffentliche Anfragen, Fachgespräche und Schulungsformate werden institutionell über das Wirkungsinstitut, die Akademie oder autorisierte Multiplikator:innen koordiniert.</div></details>
+      <details><summary>Wie werden Presse- und Medienanfragen beantwortet?</summary><div>Über die jeweils passende Struktur: das Wirkungsinstitut für wissenschaftliche und fachliche Einordnung, die Akademie für Schulungs- und Bildungsformate sowie autorisierte Ansprechpartner:innen und geschulte Multiplikator:innen. Materialien, Kurzprofile und Zitate zur Verwendung stehen im Pressebereich bereit.</div></details>
+      <details><summary>Kann man die Wirkungsökonomie als Coach oder Trainer:in vermitteln?</summary><div>Perspektivisch ja. Die Akademie baut einen Bereich „Multiplikator:innen für Wirkungsökonomie“ auf, in dem Coaches, Trainer:innen, Wissenschaftler:innen, Berater:innen und Lehrende geschult und zertifiziert werden, um die Methode qualitätsgesichert weiterzugeben.</div></details>
       <details><summary>Hat Natalie Weber die Wirkungsforschung erfunden?</summary><div>Nein. Wirkung wurde in Evaluation, Impact Assessment und Nachhaltigkeitsforschung schon lange untersucht. Neu ist die systemische Zusammenführung in einen Rahmen, in dem Wirkung bewertet und rückgekoppelt wird.</div></details>
       <details><summary>Was ist das Neue an der Wirkungsökonomie?</summary><div>Sie macht Wirkung — die tatsächliche Veränderung von Zuständen für Mensch, Planet und Demokratie — zum Maßstab für Wirtschaft, Kapital, Recht, Medien und Politik und koppelt sie in Entscheidungen zurück.</div></details>
       <details><summary>Was sind Wirkungswissenschaften?</summary><div>Der von Natalie Weber begründete inter- und transdisziplinäre Rahmen, der Wirkung untersucht, bewertet und rückkoppelt. Kein bereits staatlich oder akademisch anerkanntes Fach, sondern ein in Entwicklung befindlicher Rahmen.</div></details>
