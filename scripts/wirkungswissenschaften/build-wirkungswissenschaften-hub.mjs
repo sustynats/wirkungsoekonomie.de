@@ -393,9 +393,7 @@ ${prose("Mindeststandards", "Leitthese", [
           <p>Weber, Natalie (2026): Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie. Dossier zur systemischen Einordnung, Version 1.0, Stand 7. Juli 2026.</p>
           <div class="document-action-row">
             <a class="btn btn-primary" href="${base}downloads/wirkungswissenschaften/dossier-wirkungswissenschaften.pdf">Dossier (PDF)</a>
-            <a class="btn btn-ghost" href="${base}downloads/wirkungswissenschaften/dossier-wirkungswissenschaften.docx">Dossier (Word)</a>
             <a class="btn btn-primary" href="${base}downloads/wirkungswissenschaften/journalbeitrag-wirkungswissenschaften.pdf">Journalbeitrag (PDF)</a>
-            <a class="btn btn-ghost" href="${base}downloads/wirkungswissenschaften/journalbeitrag-wirkungswissenschaften.docx">Journalbeitrag (Word)</a>
           </div>
           <p class="muted">Autorin: Natalie Weber · Status: Grundlagenpapier / Arbeitsfassung · Version 1.0 · Stand Juli 2026.</p>
         </section>`,

@@ -168,10 +168,8 @@ function publicationBox({ base, self }) {
     ? ""
     : `<a class="btn btn-secondary" href="${base}blog/${JOURNAL_SLUG}/">Journalbeitrag lesen</a>`;
   const dl = self === "dossier"
-    ? `<a class="btn btn-primary" href="${base}downloads/wirkungswissenschaften/dossier-wirkungswissenschaften.pdf">PDF herunterladen</a>
-            <a class="btn btn-ghost" href="${base}downloads/wirkungswissenschaften/dossier-wirkungswissenschaften.docx">Word (Arbeitsfassung)</a>`
-    : `<a class="btn btn-primary" href="${base}downloads/wirkungswissenschaften/journalbeitrag-wirkungswissenschaften.pdf">PDF herunterladen</a>
-            <a class="btn btn-ghost" href="${base}downloads/wirkungswissenschaften/journalbeitrag-wirkungswissenschaften.docx">Word (Arbeitsfassung)</a>`;
+    ? `<a class="btn btn-primary" href="${base}downloads/wirkungswissenschaften/dossier-wirkungswissenschaften.pdf">PDF herunterladen</a>`
+    : `<a class="btn btn-primary" href="${base}downloads/wirkungswissenschaften/journalbeitrag-wirkungswissenschaften.pdf">PDF herunterladen</a>`;
   return `        <section class="term-link-section">
           <div>
             <p class="section-eyebrow">Publikation</p>
