@@ -18425,3 +18425,11 @@ h1, h2, h3 {
 .wiwi-faq-item > summary::before { content: "＋"; margin-right: .6rem; color: var(--gold, #C9A227); font-weight: 700; }
 .wiwi-faq-item[open] > summary::before { content: "－"; }
 .wiwi-faq-item > div { padding: 0 0 .7rem; }
+
+/* --- Quellenarchiv: Autor:innen/Herausgeber unter dem Titel ---------------- */
+.source-authors { margin: .35rem 0 .7rem; font-size: 1.02rem; color: var(--muted, #5b6672); }
+.card-authors { margin: .15rem 0 .55rem; font-size: .92rem; color: var(--muted, #5b6672); }
+.source-authors a, .card-authors a { color: inherit; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.source-authors a:hover, .card-authors a:hover { color: var(--navy, #13335B); }
+.quellenarchiv-author-filter { margin: .8rem 0 0; padding: .6rem .9rem; background: #fff; border: 1px solid var(--line, #e6e2d8); border-radius: 10px; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.filter-chip--clear { cursor: pointer; }
