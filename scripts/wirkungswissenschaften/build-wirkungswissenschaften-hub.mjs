@@ -158,7 +158,7 @@ const SVG_DISCIPLINES = `<figure class="wiwi-figure">
         </figure>`;
 
 const DOSSIER = "dokumente/dossier-wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie/";
-const JOURNAL = "blog/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie/";
+const JOURNAL = "blog/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.html";
 
 function publikationenCards(base) {
   return cardGrid("three", [
