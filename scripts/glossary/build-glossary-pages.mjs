@@ -2696,6 +2696,11 @@ if (data.terms.some((term) => term.slug === "wahrheitsillusionseffekt")) {
   writeGlossaryTermAlias("illusory-truth-effekt", "Illusory-Truth-Effekt", "wahrheitsillusionseffekt", "Wahrheitsillusionseffekt", illusoryTruthAliasNote);
 }
 
+if (data.terms.some((term) => term.slug === "massstabskrise")) {
+  const massstabskriseAliasNote = `Diese alternative Schreibweise verweist auf die kanonische Glossar-Detailseite <a href="../massstabskrise/">Maßstabskrise</a>. Die Weiterleitung ist ein Alias für den Begriff Maßstabskrise.`;
+  writeGlossaryTermAlias("masstabskrise", "Maßstabskrise", "massstabskrise", "Maßstabskrise", massstabskriseAliasNote);
+}
+
 function writeStaleGlossaryRedirects() {
   const generatedSlugs = new Set(indexedTerms.map((term) => term.slug));
   const sourceByLabel = new Map();
