@@ -105,7 +105,7 @@ ${items}
         </nav>`;
 }
 
-function pageHead({ route, title, description, base, section, ogType, extraMeta = "" }) {
+function pageHead({ route, title, description, base, section, ogType, extraMeta = "", mainAttrs = "" }) {
   const canonical = `${SITE}${route}`;
   const shortTitle = title.replace(/\s+[|·].*$/, "");
   return `<!doctype html>
@@ -131,7 +131,7 @@ ${extraMeta}    <link rel="icon" href="${base}assets/img/brand/favicon.svg" type
   </head>
   <body>
 ${renderHeader(base)}
-    <main>`;
+    <main${mainAttrs}>`;
 }
 function pageTail(base) {
   return `    </main>
@@ -269,29 +269,41 @@ function buildDossier() {
   const head = pageHead({
     route: DOSSIER_ROUTE, title: "Dossier Wirkungswissenschaften | Bibliothek der Wirkungsökonomie",
     description, base, section: "Bibliothek", ogType: "article", extraMeta,
+    mainAttrs: ` class="reference-work reference-reader workpaper-reader" data-pagefind-body`,
   });
   const thesis = fm.leadBlocks.map((b) => `<p>${inline(b)}</p>`).join("\n            ");
+  void sections; void publicationBox; void tableOfContents; void citationBox; void relatedChips;
   const article = `      <article class="article-shell">
-        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}bibliothek/">Bibliothek</a> / <a href="${base}wirkungswissenschaften/">Wirkungswissenschaften</a></nav>
-        <header class="term-detail-hero">
-          <p class="hero-kicker">Grundlagendossier</p>
-          <h1>${esc(fm.title)}</h1>
-          <p class="lead">${esc(fm.subtitle)}</p>
-          <div class="term-meta-row" aria-label="Dokumentstatus">
-            <span>Dossier</span>
-            <span>Autorin: Natalie Weber</span>
-            <span>Version 1.0 · Stand 7. Juli 2026</span>
-            <span>Arbeitsfassung</span>
-          </div>
-        </header>
-${thesis ? `        <section class="term-summary-card"><p class="section-eyebrow">Kernthese</p>\n            ${thesis}\n        </section>` : ""}
-${publicationBox({ base, self: "dossier" })}
-${tableOfContents(sections, base)}
-        <section class="term-prose">
+        <nav class="breadcrumb"><a href="${base}dokumente/">Dokumente</a> / Dossier</nav>
+        <p class="hero-kicker">Dossier · Grundlagendossier · Version 1.0 · Stand 7. Juli 2026</p>
+        <h1>${esc(fm.title)}</h1>
+        <p class="lead">${esc(fm.subtitle)}</p>
+        <div class="document-reader-tools">
+          <a class="btn btn-secondary" href="${base}dokumente/">Dokumentenbibliothek</a>
+          <a class="btn btn-secondary" href="${base}wirkungswissenschaften/">Grundlagenbereich</a>
+          <a class="btn btn-secondary" href="${base}blog/${JOURNAL_SLUG}/">Journalbeitrag</a>
+          <a class="btn btn-secondary" href="${base}begriffe/">Glossar</a>
+          <button class="btn btn-secondary" type="button" data-print-page>Drucken</button>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="${base}downloads/wirkungswissenschaften/dossier-wirkungswissenschaften.pdf">Herunterladen (PDF)</a>
+        </div>
+${thesis ? `        <section class="callout">
+          <h2>Kernthese</h2>
+          ${thesis}
+        </section>` : ""}
+        <aside class="citation-note" role="note">
+          <p class="card-kicker">Zitierempfehlung</p>
+          <h2>So wird dieses Dossier zitiert</h2>
+          <p>Weber, Natalie (2026): Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie. Dossier zur systemischen Einordnung, Version 1.0, Stand 7. Juli 2026.</p>
+        </aside>
+        <section class="live-reference-notice">
+          <h2>Versionshinweis</h2>
+          <p>Autorin: Natalie Weber · Status: Grundlagenpapier / Arbeitsfassung · Version 1.0 · Stand 7. Juli 2026.</p>
+        </section>
+        <section class="article-body">
           ${body}
         </section>
-${citationBox("Weber, Natalie (2026): Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie. Dossier zur systemischen Einordnung, Version 1.0, Stand 7. Juli 2026.")}
-${relatedChips(base)}
       </article>`;
   const out = path.join(ROOT, `dokumente/${DOSSIER_SLUG}/index.html`);
   fs.mkdirSync(path.dirname(out), { recursive: true });
