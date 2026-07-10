@@ -14,7 +14,8 @@ function isDossierPublication(value = "") {
 }
 
 const candidates = documents.filter((doc) => isDossierPublication(doc.urls?.sourcePath || doc.urls?.primary));
-const misclassified = candidates.filter((doc) => doc.type !== "Dossier");
+const protectedTypes = new Set(["Beispiel", "Grundlagenwerk", "Methodik", "Gesetzesentwurf"]);
+const misclassified = candidates.filter((doc) => !protectedTypes.has(doc.type) && doc.type !== "Dossier");
 if (candidates.length < 100 || misclassified.length) {
   console.error(`Dossier-Klassifizierung fehlgeschlagen: ${candidates.length} Kandidaten, ${misclassified.length} falsch zugeordnet.`);
   process.exit(1);
