@@ -478,6 +478,15 @@ function typeFor(relativePath, title) {
   if (/beispiel|use-case|use_case|fallstudie/.test(s)) return "Beispiel";
   if (/method|scorecard|indikator|datenqualitaet|assurance|referenzrahmen|standard|master-items|toolkarten/.test(s)) return "Methodik";
   if (/grundlagen|wohlstand|referenz\/version|buch/.test(s)) return "Grundlagenwerk";
+  // Dossierfassungen wurden bisher pauschal als Arbeitspapiere geführt, weil
+  // die Dokumentart nur aus Titel-/Dateimustern abgeleitet wurde. Hubs bleiben
+  // außen vor; Einzeldossiers, Feld-Dossiers und Gesamtdossiers werden gezählt.
+  const isDossierPublication =
+    !/detailkonzept/.test(s) &&
+    (/(?:^|\/)dossier(?:s)?\/(?:index\.html|[^/]+\/index\.html)$/.test(relativePath.toLowerCase()) ||
+      /(?:^|\/)gesamtdossier\/index\.html$/.test(relativePath.toLowerCase()) ||
+      /(?:^|\/)[^/]*dossier[^/]*\.pdf$/.test(relativePath.toLowerCase()));
+  if (isDossierPublication) return "Dossier";
   return "Arbeitspapier";
 }
 
