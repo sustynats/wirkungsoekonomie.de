@@ -35,6 +35,8 @@ jobs:
         run: npm run build
       - name: Build public deploy artifact
         run: npm run build:artifact
+      - name: Check public artifact privacy
+        run: npm run check:privacy
       - name: Check site size
         run: npm run check:size
       - name: Upload artifact
