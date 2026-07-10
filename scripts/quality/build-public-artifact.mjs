@@ -332,6 +332,8 @@ function copyPublicRuntimeContentData() {
     path.join("public/data", "en-document-translation-manifest.json"),
     path.join("public/data", "en-route-coverage.json"),
     path.join("public/data", "woek-g-curriculum.json"),
+    path.join("public/data", "woems-canvas.json"),
+    path.join("public/data", "woems-methoden.json"),
   ];
 
   let copied = 0;
@@ -649,6 +651,8 @@ function prunePublicArtifact() {
         "public/data/en-document-translation-manifest.json",
         "public/data/en-route-coverage.json",
         "public/data/woek-g-curriculum.json",
+        "public/data/woems-canvas.json",
+        "public/data/woems-methoden.json",
       ].includes(relative)
     ) {
       removeFile(file, "internal data export is not public");
