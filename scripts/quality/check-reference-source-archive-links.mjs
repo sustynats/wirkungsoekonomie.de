@@ -17,6 +17,7 @@ function exists(relative) {
 
 const fulltext = read("referenz/volltext/index.html");
 assert(!/href="\.\.\/quellen\/#/.test(fulltext), "Volltext enthält noch alte Quellenanker ../quellen/#.");
+assert(!/href="[^"]*referenz\/quellen\/#/.test(fulltext), "Volltext enthält noch alte Quellenanker referenz/quellen/#.");
 assert(fulltext.includes('data-source-id="I-K1-1"') && fulltext.includes("../../quellenarchiv/woek-q-0576/"), "I-K1-1 verlinkt nicht direkt auf WÖK-Q-0576.");
 assert(fulltext.includes('data-source-id="E-K1-4"') && fulltext.includes("../../referenz/quellen/e-k1-4/"), "E-K1-4 verlinkt nicht auf die Quellen-Vorschaltseite.");
 

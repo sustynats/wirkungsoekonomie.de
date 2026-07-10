@@ -1057,7 +1057,7 @@ function sourceChips(html, file = "") {
   const base = file ? baseFor(file) : "../";
   let next = html.replace(/<a\b[^>]*class=["'][^"']*source-chip[^"']*["'][^>]*>([\s\S]*?)<\/a>/gi, (_match, label) => stripTags(label));
   next = next.replace(/\[((?:I|E)-K\d{1,3}-\d+)\]/g, (match, id) => {
-    const target = referenceSourceTargets.get(id) || `referenz/quellen/#${slugify(id)}`;
+    const target = referenceSourceTargets.get(id) || `referenz/quellen/${slugify(id)}/`;
     const href = hrefFromBase(base, target);
     return `<a class="source-chip" href="${href}" data-source-id="${esc(id)}">${match}</a>`;
   });
