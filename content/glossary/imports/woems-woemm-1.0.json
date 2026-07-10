@@ -1,0 +1,1838 @@
+{
+  "sourceDocument": "WÖMS 1.0 und WÖMM 1.0",
+  "sourcePath": "content/methods/woems-methoden.json",
+  "stand": "2026-07-10",
+  "note": "Methodennamen werden aus der kanonischen WÖMS-Registry abgeleitet; Definitionen und Einordnungen speisen die term-registry.",
+  "terms": [
+    {
+      "title": "Wirkungsökonomisches Methodensystem",
+      "aliases": [
+        "WÖMS",
+        "WOEMS"
+      ],
+      "section": "WÖMS 1.0 · Methodensystem",
+      "Kurzdefinition": "Das Wirkungsökonomische Methodensystem (WÖMS) ist die methodische Säule der Wirkungsökonomie mit 84 Kernmethoden, 32 Anwendungs-Canvas und zwölf Workshop-Journeys.",
+      "WÖk-Verwendung": "Das WÖMS operationalisiert das vorgelagerte WÖMM für Diagnose, Modellierung, Bewertung, Gestaltung, Entscheidung, Umsetzung und Lernen.",
+      "Abgrenzung": "Nicht als lose Werkzeugbibliothek oder als Ersatz fachlicher Analyse verwenden; Methodenwahl, Grenzen, Evidenz und Governance bleiben verbindlich.",
+      "Querverweise": "Wirkungsökonomisches Managementmodell, WÖMS-Methodenkreislauf, WÖMS-Methodenkarte, WÖMS-Workshop-Journey, Canvas-Mindeststandard",
+      "slug": "wirkungsoekonomisches-methodensystem",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMS 1.0 · Methodensystem. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Wirkungsökonomisches Managementmodell",
+      "aliases": [
+        "WÖMM",
+        "WOEMM"
+      ],
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Das Wirkungsökonomische Managementmodell (WÖMM) ist die integrierte Management- und Steuerungsarchitektur für Organisationen als lernende Wirkungssysteme.",
+      "WÖk-Verwendung": "Das WÖMM verbindet Wirkungskompass, Systemlandkarte, Managementarchitektur, Wirkungsrad und Betriebssystem und ist die vorgelagerte Grundlage für das WÖMS.",
+      "Abgrenzung": "Kein Nachhaltigkeitszusatz, keine Personenbewertung, keine Zentralplanung und kein Ein-Zahlen-System.",
+      "Querverweise": "Wirkungsökonomisches Methodensystem, Wirkungskompass, Systemlandkarte, Wirkungsökonomische Managementarchitektur, WÖMM-Betriebssystem",
+      "slug": "wirkungsoekonomisches-managementmodell",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Wirkungskompass",
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Der Wirkungskompass richtet Entscheidungen an Mensch, Planet und Demokratie sowie SDGs, Agenda 2030, SDG+, Wirkungsgrenzen und positiver Netto-Wirkung aus.",
+      "WÖk-Verwendung": "Er legt Richtung und Schutzrahmen fest, bevor Optionen auf Preis, Geschwindigkeit, Marge oder Skalierung optimiert werden.",
+      "Abgrenzung": "SDG-Symbole oder allgemeine Nachhaltigkeitsziele ersetzen keine begründete Priorisierung und Grenzprüfung.",
+      "Querverweise": "Wirkungsökonomisches Managementmodell, Wirkungskompass-Ausrichtung, positive Netto-Wirkung, Wirkungsgrenze",
+      "slug": "wirkungskompass",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Systemlandkarte",
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Die Systemlandkarte erfasst Wirkungsempfänger, Wirkungsräume, Wirkpfade, Wirkungsordnungen, Zeit, Risiken und Interdependenzen eines Wirkungssystems.",
+      "WÖk-Verwendung": "Sie macht sichtbar, wer oder was betroffen ist und wie Ressourcen-, Daten-, Geld-, Macht- und Wirkungsbeziehungen zusammenhängen.",
+      "Abgrenzung": "Nicht mit einer statischen Stakeholderliste oder einer vollständigen Vorhersage komplexer Systeme verwechseln.",
+      "Querverweise": "Wirkungsökonomisches Managementmodell, Wirkungssystem-Landkarte, Wirkungsnetz, Wirkungsraum",
+      "slug": "systemlandkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Wirkungsökonomische Managementarchitektur",
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Die wirkungsökonomische Managementarchitektur ordnet zwölf Managementfelder von Zweck und Strategie bis Governance, Lernen und Transformation.",
+      "WÖk-Verwendung": "Sie verbindet Managemententscheidungen mit positiver Netto-Wirkung, Tragfähigkeit, Resilienz und Lernfähigkeit.",
+      "Abgrenzung": "Keine zusätzliche Nachhaltigkeitssäule neben klassischem Management, sondern dessen übergreifende Wirkungsordnung.",
+      "Querverweise": "Wirkungsökonomisches Managementmodell, Wirkungsökonomische Erfolgslogik, WÖMM-Betriebssystem",
+      "slug": "wirkungsoekonomische-managementarchitektur",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Wirkungsökonomische Erfolgslogik",
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Die wirkungsökonomische Erfolgslogik verbindet positive Netto-Wirkung, wirtschaftliche Tragfähigkeit, Resilienz und Lernfähigkeit als gemeinsam notwendige Bedingungen.",
+      "WÖk-Verwendung": "Die Bedingungen werden nicht beliebig gegeneinander aufgerechnet; eine fehlende Grundbedingung begrenzt den dauerhaften Managementerfolg.",
+      "Abgrenzung": "Nicht als additiver Durchschnittsscore oder reine Finanzkennzahl verwenden.",
+      "Querverweise": "positive Netto-Wirkung, wirtschaftliche Tragfähigkeit, Resilienz, Wirkungsrückkopplung",
+      "slug": "wirkungsoekonomische-erfolgslogik",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "WÖMM-Betriebssystem",
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Das WÖMM-Betriebssystem verankert Rollen, Daten, Entscheidungstore, Gremien, Assurance, Managementrhythmen, Kompetenzen und Beteiligung im Organisationsalltag.",
+      "WÖk-Verwendung": "Es macht aus der Managementarchitektur eine institutionell wirksame, prüfbare und lernende Praxis.",
+      "Abgrenzung": "Kein IT-Betriebssystem und kein zentralistisches Kontrollsystem.",
+      "Querverweise": "Wirkungsökonomisches Managementmodell, Wirkungsgovernance, Wirkungsassurance, Wirkungsrückkopplung",
+      "slug": "woemm-betriebssystem",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "WÖMS-Methodenkreislauf",
+      "section": "WÖMS 1.0 · Methodensystem",
+      "Kurzdefinition": "Der WÖMS-Methodenkreislauf strukturiert Wahrnehmen, Abgrenzen, Verstehen, Modellieren, Bewerten, Gestalten, Entscheiden, Umsetzen, Beobachten und Lernen.",
+      "WÖk-Verwendung": "Er führt eine Wirkungsfrage von Mandat und Systemgrenze bis zur beobachteten Wirkung und methodischen Korrektur.",
+      "Abgrenzung": "Keine starre lineare Checkliste; Schleifen, Rücksprünge und risikoproportionale Methodenauswahl bleiben möglich.",
+      "Querverweise": "Wirkungsökonomisches Methodensystem, WÖMS-Methodenkarte, Wirkungsrückkopplung",
+      "slug": "woems-methodenkreislauf",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMS 1.0 · Methodensystem. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "WÖMS-Methodenkarte",
+      "section": "WÖMS 1.0 · Methodensystem",
+      "Kurzdefinition": "Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln einer Methode.",
+      "WÖk-Verwendung": "Sie ist der standardisierte, versionierbare Datensatz für Anwendung, Ausbildung, Prüfung und Assurance.",
+      "Abgrenzung": "Keine bloße Moderationskarte und kein Ersatz fachlicher Evidenz.",
+      "Querverweise": "Wirkungsökonomisches Methodensystem, WÖMS-Methodenregister, Canvas-Mindeststandard",
+      "slug": "woems-methodenkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMS 1.0 · Methodensystem. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "WÖMS-Workshop-Journey",
+      "section": "WÖMS 1.0 · Methodensystem",
+      "Kurzdefinition": "Eine WÖMS-Workshop-Journey verbindet ausgewählte Kernmethoden zu einem vollständigen Arbeitsprozess mit Vorbereitung, Vertiefung, Entscheidung und Review.",
+      "WÖk-Verwendung": "Zwölf Standard-Journeys decken unter anderem Strategie, Innovation, Lieferketten, Politik, Medien, Sozialräume, Forschung und Assurance ab.",
+      "Abgrenzung": "Kein fertiges Workshop-Skript ohne Kontext-, Betroffenen-, Schutz- und Datenprüfung.",
+      "Querverweise": "Wirkungsökonomisches Methodensystem, WÖMS-Moderation, WÖMS-Methodenkreislauf",
+      "slug": "woems-workshop-journey",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMS 1.0 · Methodensystem. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "WÖMS-Moderation",
+      "section": "WÖMS 1.0 · Methodensystem",
+      "Kurzdefinition": "WÖMS-Moderation sichert Mandat, Begriffe, Betroffenenperspektiven, Grenzen, Evidenztrennung, Widerspruch, Entscheidungsfähigkeit und Dokumentation.",
+      "WÖk-Verwendung": "Sie trägt prozedurale und wirkungsbezogene Verantwortung; Fachentscheidungen bleiben bei legitimierten Rollen.",
+      "Abgrenzung": "Moderator:innen sind weder neutrale Protokollierende noch inhaltliche Alleinentscheider:innen.",
+      "Querverweise": "WÖMS-Workshop-Journey, Beteiligungs- und Repräsentationsdesign, Wirkungsassurance",
+      "slug": "woems-moderation",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMS 1.0 · Methodensystem. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Canvas-Mindeststandard",
+      "section": "WÖMS 1.0 · Canvas-Mindeststandard",
+      "Kurzdefinition": "Der Canvas-Mindeststandard verlangt ID, Version, Datum, Fall, verantwortliche Moderation sowie Felder für Evidenzstatus, Unsicherheit, negative Wirkung, Wirkungsgrenzen und offene Fragen.",
+      "WÖk-Verwendung": "Er hält Informationsarchitektur, Barrierearmut, Versionierung und Nichtkompensation über Web-, Druck-, Miro- und Präsentationsvarianten stabil.",
+      "Abgrenzung": "Farbe darf Bedeutung nie allein tragen; aggregierte Werte dürfen Grenzverletzungen oder betroffene Gruppen nicht verdecken.",
+      "Querverweise": "WÖMS-Methodenkarte, Wirkungsgrenze, Nichtkompensation, Datenqualität",
+      "slug": "canvas-mindeststandard",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMS 1.0 · Canvas-Mindeststandard. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "WÖMS-Methodenregister",
+      "section": "WÖMS 1.0 · Methodensystem",
+      "Kurzdefinition": "Das WÖMS-Methodenregister führt stabile Methoden-IDs, Version, Herkunft, Evidenzstatus, Änderungsanträge, Konsultation, Freigabe und Release Notes.",
+      "WÖk-Verwendung": "Es ist die Governance- und Versionierungsgrundlage für die 84 Kernmethoden und ihre Canvas-Spezifikationen.",
+      "Abgrenzung": "Kein bloßes Inhaltsverzeichnis; Änderungen an Methodenlogik und Schutzregeln müssen nachvollziehbar freigegeben werden.",
+      "Querverweise": "Wirkungsökonomisches Methodensystem, WÖMS-Methodenkarte, Wirkungsassurance",
+      "slug": "woems-methodenregister",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMS 1.0 · Methodensystem. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Wirkungssystem-Landkarte",
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Die Wirkungssystem-Landkarte visualisiert Wirkungsempfänger, Wirkungsräume, Ressourcen-, Daten-, Geld- und Informationsflüsse sowie Macht, Abhängigkeiten und Wirkungsordnungen.",
+      "WÖk-Verwendung": "Sie übersetzt die Systemlandkarte des WÖMM in eine bearbeitbare methodische Arbeitsfläche.",
+      "Abgrenzung": "Nicht als vollständige oder objektive Abbildung eines komplexen Systems behandeln; Annahmen und Datenlücken bleiben sichtbar.",
+      "Querverweise": "Systemlandkarte, Wirkungsnetz, Wirkungsraum, Datenqualität",
+      "slug": "wirkungssystem-landkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "Wirtschaftliche Tragfähigkeit",
+      "section": "WÖMM 1.0 · Managementmodell",
+      "Kurzdefinition": "Wirtschaftliche Tragfähigkeit bezeichnet die dauerhafte organisatorische und finanzielle Fähigkeit, positive Wirkung zu tragen.",
+      "WÖk-Verwendung": "Sie ist eine notwendige Erfolgsbedingung neben positiver Netto-Wirkung, Resilienz und Lernfähigkeit, aber nicht der letzte Wirkungsmaßstab.",
+      "Abgrenzung": "Profitabilität oder Rendite sind weder Wirkungsnachweis noch Freigabe für Grenzverletzungen.",
+      "Querverweise": "Wirkungsökonomische Erfolgslogik, positive Netto-Wirkung, Resilienz, Nichtkompensation",
+      "slug": "wirtschaftliche-tragfaehigkeit",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "Quellenhinweise": "WÖMM 1.0 · Managementmodell. Quellen: Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx und Wirkungsoekonomisches_Managementmodell_WOEMM_1.0.docx."
+    },
+    {
+      "title": "WÖMS-Auftragsklärung",
+      "slug": "woems-auftragsklaerung",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Klären, welche Entscheidung, Zustandsveränderung und Verantwortung der Methodenprozess tatsächlich unterstützen soll.",
+      "WÖk-Verwendung": "A01 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Ein schriftliches Wirkungsmandat mit Entscheidungsfrage, Auftraggeber:in, Entscheidungsspielraum, Betroffenen, Zeithorizont und Abbruchkriterien.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungskompass-Ausrichtung",
+        "Systemgrenzen- und Reichweiten-Canvas",
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A01, DOCX-Seite 19."
+    },
+    {
+      "title": "Wirkungskompass-Ausrichtung",
+      "slug": "wirkungskompass-ausrichtung",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Den normativen Referenzrahmen Mensch, Planet und Demokratie sowie SDGs, Agenda 2030 und SDG+ für den konkreten Fall operationalisieren.",
+      "WÖk-Verwendung": "A02 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine priorisierte Kompasskarte mit relevanten Zielen, Schutzgütern, Spannungen und Begründungen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖMS-Auftragsklärung",
+        "Wirkungsgrenzen- und Rechteprüfung",
+        "Referenzrahmen- und Standardmapping",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A02, DOCX-Seite 21."
+    },
+    {
+      "title": "Systemgrenzen- und Reichweiten-Canvas",
+      "slug": "systemgrenzen-und-reichweiten-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Zeitliche, räumliche, organisatorische, lebenszyklische und kausale Grenzen so festlegen, dass wesentliche Wirkungen weder versteckt noch unbeherrschbar weit gefasst werden.",
+      "WÖk-Verwendung": "A03 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine begründete Systemgrenzendefinition einschließlich einbezogener und ausgeschlossener Bereiche sowie Review-Zeitpunkt.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖMS-Auftragsklärung",
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungszustandskarte",
+        "Wirkungspfad",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A03, DOCX-Seite 23."
+    },
+    {
+      "title": "Wirkungsempfänger- und Stakeholder-Landkarte",
+      "slug": "wirkungsempfaenger-und-stakeholder-landkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Alle direkt und indirekt betroffenen Menschen, Gruppen, Lebewesen, Ökosysteme, Institutionen und künftigen Generationen identifizieren und ihre Perspektiven unterscheiden.",
+      "WÖk-Verwendung": "A04 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine priorisierte Betroffenenkarte mit Betroffenheit, Einfluss, Verletzlichkeit, Stimme und Beteiligungsbedarf.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Systemgrenzen- und Reichweiten-Canvas",
+        "Beteiligungs- und Repräsentationsdesign",
+        "Wirkungszustandskarte",
+        "Outcome- und Empfängerlandkarte",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A04, DOCX-Seite 25."
+    },
+    {
+      "title": "Wirkungsgrenzen- und Rechteprüfung",
+      "slug": "wirkungsgrenzen-und-rechtepruefung",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Nicht kompensierbare Grenzen, Rechte, Mindeststandards und rote Linien vor Optimierung und Abwägung prüfen.",
+      "WÖk-Verwendung": "A05 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Ein Gate-Protokoll mit zulässig, redesignpflichtig oder unzulässig sowie dokumentierten Schutzmaßnahmen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungskompass-Ausrichtung",
+        "Systemgrenzen- und Reichweiten-Canvas",
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A05, DOCX-Seite 27."
+    },
+    {
+      "title": "Evidenz- und Annahmenregister",
+      "slug": "evidenz-und-annahmenregister",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.",
+      "WÖk-Verwendung": "A06 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Versioniertes Register mit Aussage, Typ, Evidenzstufe E0–E5, Quelle, Unsicherheit, Verantwortlichen und Prüfdatum.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A06, DOCX-Seite 29."
+    },
+    {
+      "title": "Entscheidungskontext- und Komplexitätscheck",
+      "slug": "entscheidungskontext-und-komplexitaetscheck",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Bestimmen, ob eine Situation überwiegend klar, kompliziert, komplex, chaotisch oder widersprüchlich ist und welche Vorgehenslogik dazu passt.",
+      "WÖk-Verwendung": "A07 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Kontextklassifikation mit passender Kombination aus Analyse, Expertise, Experiment, Schutz und Krisenintervention.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖMS-Auftragsklärung",
+        "Wirkungskompass-Ausrichtung",
+        "Systemgrenzen- und Reichweiten-Canvas",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A07, DOCX-Seite 31."
+    },
+    {
+      "title": "Beteiligungs- und Repräsentationsdesign",
+      "slug": "beteiligungs-und-repraesentationsdesign",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie A",
+      "Kurzdefinition": "Beteiligung so gestalten, dass Betroffene, Wissensträger:innen, Entscheider:innen und fehlende Stimmen angemessen in Analyse und Entscheidung eingehen.",
+      "WÖk-Verwendung": "A08 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Beteiligungsplan mit Zweck, Stufe, Auswahl, Barrierenabbau, Entscheidungseinfluss, Rückmeldung und Schutz.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode A08, DOCX-Seite 33."
+    },
+    {
+      "title": "Wirkungszustandskarte",
+      "slug": "wirkungszustandskarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Den gegenwärtigen Zustand eines Wirkungsraums anhand beobachtbarer Bedingungen, Erfahrungen, Daten und institutioneller Regeln beschreiben.",
+      "WÖk-Verwendung": "B01 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Gemeinsames, evidenzmarkiertes Ausgangsbild mit Stärken, Schäden, Spannungen und Datenlücken.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungskompass-Ausrichtung",
+        "Systemgrenzen- und Reichweiten-Canvas",
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungsgrenzen- und Rechteprüfung",
+        "Evidenz- und Annahmenregister",
+        "Wirkungsproblem-Canvas",
+        "Problem- und Wirkungsbaum",
+        "WÖk-Indikatorenarchitektur",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B01, DOCX-Seite 36."
+    },
+    {
+      "title": "Wirkungsproblem-Canvas",
+      "slug": "wirkungsproblem-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Ein Problem als unerwünschte Zustandsveränderung mit Betroffenen, Ursachen, aufrechterhaltenden Bedingungen und Folgewirkungen formulieren.",
+      "WÖk-Verwendung": "B02 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Präzise Problemdefinition statt lösungsnaher oder moralischer Problembehauptung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungszustandskarte",
+        "Problem- und Wirkungsbaum",
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Bestands- und Flussmodell",
+        "Interdependenz- und Abhängigkeitsmatrix",
+        "Externalitäten- und Kostenverlagerungskarte",
+        "Wirkungsproblem–Lösungs-Fit",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B02, DOCX-Seite 38."
+    },
+    {
+      "title": "Problem- und Wirkungsbaum",
+      "slug": "problem-und-wirkungsbaum",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Ursachen, Kernproblem und Folgewirkungen in einer ersten gerichteten Struktur ordnen und später in ein dynamisches Modell überführen.",
+      "WÖk-Verwendung": "B03 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Problembaum mit Wurzelursachen, vermittelnden Ursachen, Kernzustand und Wirkungsfolgen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsproblem-Canvas",
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Wirkungspfad",
+        "Wirkungsökonomische Theory of Change",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B03, DOCX-Seite 40."
+    },
+    {
+      "title": "Kausalschleifen- und Rückkopplungsdiagramm",
+      "slug": "kausalschleifen-und-rueckkopplungsdiagramm",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare Dynamiken sichtbar machen.",
+      "WÖk-Verwendung": "B04 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Causal Loop Diagram mit Variablen, Wirkungsrichtung, Polarität, Schleifen und Zeitverzögerungen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Problem- und Wirkungsbaum",
+        "Bestands- und Flussmodell",
+        "Interdependenz- und Abhängigkeitsmatrix",
+        "Systemhebel-Analyse",
+        "Nebenwirkungs-, Wechselwirkungs- und Rebound-Analyse",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B04, DOCX-Seite 42."
+    },
+    {
+      "title": "Bestands- und Flussmodell",
+      "slug": "bestands-und-flussmodell",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Akkumulationen, Zuflüsse, Abflüsse und Verzögerungen erfassen, wenn Mengen- und Zeitdynamik entscheidend sind.",
+      "WÖk-Verwendung": "B05 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Qualitatives oder quantitatives Stock-and-Flow-Modell mit definierten Einheiten und Hypothesen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Zeit-, Verzögerungs- und Generationenkarte",
+        "Wirkungs-Systemstresstest",
+        "Wirkungsszenarien und Zukunftsbilder",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B05, DOCX-Seite 44."
+    },
+    {
+      "title": "Interdependenz- und Abhängigkeitsmatrix",
+      "slug": "interdependenz-und-abhaengigkeitsmatrix",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Wechselwirkungen zwischen Wirkungsfeldern, Akteuren, Ressourcen oder Systemzuständen strukturiert vergleichen.",
+      "WÖk-Verwendung": "B06 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Quadratische Matrix mit Richtung, Stärke, Art, Zeit und Evidenz der Abhängigkeiten.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungszustandskarte",
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Systemhebel-Analyse",
+        "Wirkungsportfolio",
+        "Wirkungsrisiko-Matrix",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B06, DOCX-Seite 46."
+    },
+    {
+      "title": "Externalitäten- und Kostenverlagerungskarte",
+      "slug": "externalitaeten-und-kostenverlagerungskarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Unsichtbare ökologische, soziale, gesundheitliche, demokratische und zeitliche Kosten sowie Nutzen entlang von Akteuren und Lebenszyklus sichtbar machen.",
+      "WÖk-Verwendung": "B07 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Karte der internen und externalisierten Wirkungen mit Trägern, Empfängern, Zeit und möglicher Rückführung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungszustandskarte",
+        "Wirkungsproblem-Canvas",
+        "Problem- und Wirkungsbaum",
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Netto-Wirkungs-Index (NWI)",
+        "Wirkungsbudgetierung",
+        "Preis-, Anreiz- und Rückkopplungs-Canvas",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B07, DOCX-Seite 48."
+    },
+    {
+      "title": "Wirkungsordnungen-Landkarte",
+      "slug": "wirkungsordnungen-landkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Unmittelbare, indirekte und strukturverändernde Wirkungen erster, zweiter und dritter Ordnung unterscheiden.",
+      "WÖk-Verwendung": "B08 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Zeitlich und kausal geordnete Landkarte mit direkten Zustandsänderungen, Folgewirkungen und Veränderungen von Regeln oder Handlungspfaden.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Wirkungspfad",
+        "Transformationswirkungs-Logik",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B08, DOCX-Seite 50."
+    },
+    {
+      "title": "Zeit-, Verzögerungs- und Generationenkarte",
+      "slug": "zeit-verzoegerungs-und-generationenkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Wirkungszeit, Regenerationszeit, Entscheidungszeit, Nutzungszeit und Generationenfolgen explizit machen.",
+      "WÖk-Verwendung": "B09 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Mehrhorizont-Zeitkarte mit Verzögerungen, Kipppunkten, Irreversibilitäten und Verantwortung für Abwesende.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Bestands- und Flussmodell",
+        "Wirkungsordnungen-Landkarte",
+        "Wirkungsszenarien und Zukunftsbilder",
+        "WÖk-Indikatorenarchitektur",
+        "Wirkungstransformations-Roadmap",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B09, DOCX-Seite 52."
+    },
+    {
+      "title": "Systemhebel-Analyse",
+      "slug": "systemhebel-analyse",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpotenzial identifizieren und nicht mit bloß zentralen Variablen verwechseln.",
+      "WÖk-Verwendung": "B10 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Priorisierte Hebelliste von Parametern über Informationsflüsse und Regeln bis zu Zielen und Paradigmen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Bestands- und Flussmodell",
+        "Interdependenz- und Abhängigkeitsmatrix",
+        "Transformationswirkungs-Logik",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungsdesign-Doppelschleife",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B10, DOCX-Seite 54."
+    },
+    {
+      "title": "Engpass- und Reverse-Merit-Analyse",
+      "slug": "engpass-und-reverse-merit-analyse",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Das schwächste relevante Wirkungsfeld, eine harte Mindestbedingung oder den systemischen Engpass bestimmen, der den Gesamterfolg begrenzt.",
+      "WÖk-Verwendung": "B11 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Engpassprofil mit Mindestbedingungen, FinalScore-Logik und Redesignpriorität.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsgrenzen- und Rechteprüfung",
+        "Wirkungsscorecard und FinalScore",
+        "Wirkungsmodell-Canvas",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B11, DOCX-Seite 56."
+    },
+    {
+      "title": "Wirkungs-Systemstresstest",
+      "slug": "wirkungs-systemstresstest",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie B",
+      "Kurzdefinition": "Prüfen, wie ein Modell unter Schocks, Trendbrüchen, Datenfehlern, Gegenstrategien und kumulativen Belastungen wirkt.",
+      "WÖk-Verwendung": "B12 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Stresstestbericht mit kritischen Szenarien, Schwellen, Ausfallmodi, Frühwarnsignalen und Schutzmaßnahmen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Bestands- und Flussmodell",
+        "Interdependenz- und Abhängigkeitsmatrix",
+        "Externalitäten- und Kostenverlagerungskarte",
+        "Wirkungsordnungen-Landkarte",
+        "Zeit-, Verzögerungs- und Generationenkarte",
+        "Systemhebel-Analyse",
+        "Engpass- und Reverse-Merit-Analyse",
+        "Wirkungsresilienz-Pfade",
+        "Wirkungsrisiko-Matrix",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode B12, DOCX-Seite 58."
+    },
+    {
+      "title": "Wirkungspfad",
+      "slug": "wirkpfad",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.",
+      "WÖk-Verwendung": "C01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Prüfbarer Wirkungspfad mit Empfängern, Annahmen, Kontextbedingungen, Nebenwirkungen und Evidenz.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsproblem-Canvas",
+        "Problem- und Wirkungsbaum",
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Bestands- und Flussmodell",
+        "Interdependenz- und Abhängigkeitsmatrix",
+        "Externalitäten- und Kostenverlagerungskarte",
+        "Wirkungsordnungen-Landkarte",
+        "Zeit-, Verzögerungs- und Generationenkarte",
+        "Wirkmechanismus-Canvas",
+        "WÖk-Indikatorenarchitektur",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C01, DOCX-Seite 61."
+    },
+    {
+      "title": "Wirkmechanismus-Canvas",
+      "slug": "wirkmechanismus-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Erklären, durch welchen sozialen, technischen, ökonomischen, psychologischen, institutionellen oder ökologischen Mechanismus eine Handlung Zustände verändern soll.",
+      "WÖk-Verwendung": "C02 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Mechanismushypothese mit Auslöser, Empfänger, Vermittlung, Kontext, Gegenmechanismus und Beobachtungsmerkmalen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungspfad",
+        "Wirkungsökonomische Theory of Change",
+        "Wirkungshypothesen-Register",
+        "Wirkungsprototyp-Canvas",
+        "Wirkungsexperiment",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C02, DOCX-Seite 63."
+    },
+    {
+      "title": "Wirkungsökonomische Theory of Change",
+      "slug": "wirkungsoekonomische-theory-of-change",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Eine Theory of Change um negative Wirkungen, Nichtkompensation, Systemhebel, Rückkopplung, Transformationswirkung und Entscheidungstore erweitern.",
+      "WÖk-Verwendung": "C03 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Gesamtmodell von Ausgangslage, Voraussetzungen, Interventionen, Wirkungspfaden, Risiken, Grenzen, Lernfragen und Governance.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungspfad",
+        "Wirkmechanismus-Canvas",
+        "WÖk-Indikatorenarchitektur",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C03, DOCX-Seite 65."
+    },
+    {
+      "title": "Outcome- und Empfängerlandkarte",
+      "slug": "outcome-und-empfaengerlandkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.",
+      "WÖk-Verwendung": "C04 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Empfängerbezogene Outcome-Landkarte mit Fortschrittsmarkern, Einflussbereich und Beobachtungsplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungspfad",
+        "WÖk-Indikatorenarchitektur",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C04, DOCX-Seite 67."
+    },
+    {
+      "title": "Beitragsanalyse",
+      "slug": "beitragsanalyse",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Plausibel und evidenzbasiert beurteilen, welchen Beitrag eine Intervention zu beobachteten Wirkungen geleistet hat, ohne unangemessene Alleinursächlichkeit zu behaupten.",
+      "WÖk-Verwendung": "C05 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Beitragsnarrativ mit Alternativerklärungen, Evidenzkette, verbleibender Unsicherheit und Lernschlussfolgerung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsökonomische Theory of Change",
+        "Evaluations- und Lernfragen-Design",
+        "Netto-Wirkungs-Index (NWI)",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C05, DOCX-Seite 69."
+    },
+    {
+      "title": "Wirkungshypothesen-Register",
+      "slug": "wirkungshypothesen-register",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Alle entscheidungsrelevanten Wirkungsannahmen als testbare Hypothesen mit Falsifikations- und Lernkriterien führen.",
+      "WÖk-Verwendung": "C06 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Priorisiertes Hypothesenportfolio mit Risiko, Evidenz, Test, Ergebnis und Entscheidungsfolge.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Evidenz- und Annahmenregister",
+        "Wirkungspfad",
+        "Wirkmechanismus-Canvas",
+        "Wirkungsökonomische Theory of Change",
+        "Wirkungsexperiment",
+        "Wirkungspilot-Design",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C06, DOCX-Seite 71."
+    },
+    {
+      "title": "Nebenwirkungs-, Wechselwirkungs- und Rebound-Analyse",
+      "slug": "nebenwirkungs-wechselwirkungs-und-rebound-analyse",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Unerwünschte, indirekte, kompensierende oder zurückschlagende Wirkungen systematisch vor und während der Umsetzung prüfen.",
+      "WÖk-Verwendung": "C07 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Nebenwirkungsregister mit Wirkpfad, Betroffenen, Schwere, Frühwarnsignal, Gegenmaßnahme und Restunsicherheit.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Externalitäten- und Kostenverlagerungskarte",
+        "Wirkungspfad",
+        "Wirkungsrisiko-Matrix",
+        "Wirkungsexperiment",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C07, DOCX-Seite 73."
+    },
+    {
+      "title": "Wirkungsszenarien und Zukunftsbilder",
+      "slug": "wirkungsszenarien-und-zukunftsbilder",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Mehrere plausible Zukunftskontexte entwickeln, um Strategien, Wirkungsmodelle und Annahmen auf Robustheit und blinde Flecken zu prüfen.",
+      "WÖk-Verwendung": "C08 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Drei bis fünf plausible Szenarien mit Treibern, Wirkungszuständen, Kipppunkten, Signalen und strategischen Implikationen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Zeit-, Verzögerungs- und Generationenkarte",
+        "Wirkungs-Systemstresstest",
+        "Wirkungsresilienz-Pfade",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungstransformations-Roadmap",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C08, DOCX-Seite 75."
+    },
+    {
+      "title": "Wirkungsresilienz-Pfade",
+      "slug": "wirkungsresilienz-pfade",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Fähigkeiten und Pfade entwerfen, mit denen wesentliche positive Wirkung unter Störungen erhalten, angepasst oder regeneriert wird.",
+      "WÖk-Verwendung": "C09 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Resilienzarchitektur aus kritischen Funktionen, Redundanz, Diversität, Puffer, Anpassung, Wiederherstellung und Lernen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungs-Systemstresstest",
+        "Wirkungsszenarien und Zukunftsbilder",
+        "Wirkungsrisiko-Matrix",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C09, DOCX-Seite 77."
+    },
+    {
+      "title": "Transformationswirkungs-Logik",
+      "slug": "transformationswirkungs-logik",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie C",
+      "Kurzdefinition": "Erfassen, ob und wie eine Intervention Entscheidungsregeln, Standards, Infrastrukturen, Märkte, Machtverhältnisse oder Handlungspfade verändert.",
+      "WÖk-Verwendung": "C10 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Transformationsmodell mit Hebel, Diffusion, Standardsetzung, Pfadveränderung, Resilienzgewinn und Risiken.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsordnungen-Landkarte",
+        "Systemhebel-Analyse",
+        "Wirkungsökonomische Theory of Change",
+        "T-SROI – Transformational Social Return on Investment",
+        "Transformationsportfolio",
+        "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode C10, DOCX-Seite 79."
+    },
+    {
+      "title": "Referenzrahmen- und Standardmapping",
+      "slug": "referenzrahmen-und-standardmapping",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Relevante SDGs, SDG+, ESRS, GRI, ISO-, Branchen-, Rechts- und Wissenschaftsreferenzen einem Wirkungsobjekt zuordnen.",
+      "WÖk-Verwendung": "D01 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Referenzmatrix mit Ziel, Standard, Indikator, Datenquelle, Verbindlichkeit und Lücke.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungskompass-Ausrichtung",
+        "Systemgrenzen- und Reichweiten-Canvas",
+        "Wirkungsrelevanz- und Materialitätsanalyse",
+        "WÖk-Indikatorenarchitektur",
+        "KII-Design – Key Impact Indicators",
+        "Wirkungsdaten-Inventur und Datenflusskarte",
+        "Datenqualitäts- und Evidenzmatrix",
+        "Wirkungsscorecard und FinalScore",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D01, DOCX-Seite 82."
+    },
+    {
+      "title": "Wirkungsrelevanz- und Materialitätsanalyse",
+      "slug": "wirkungsrelevanz-und-materialitaetsanalyse",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Relevante tatsächliche und potenzielle Wirkungen unabhängig von finanzieller Materialität identifizieren und anschließend mit Risiken, Chancen und Abhängigkeiten verbinden.",
+      "WÖk-Verwendung": "D02 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Priorisierte IRO- und Wirkungslandkarte mit Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Betroffenen und finanzieller Rückwirkung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungszustandskarte",
+        "Referenzrahmen- und Standardmapping",
+        "WÖk-Indikatorenarchitektur",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D02, DOCX-Seite 84."
+    },
+    {
+      "title": "WÖk-Indikatorenarchitektur",
+      "slug": "woek-indikatorenarchitektur",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.",
+      "WÖk-Verwendung": "D03 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Indikatorenbaum mit Definition, Einheit, Referenzwert, Quelle, Frequenz, Empfänger, Verantwortlichen und WÖk-ID.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungspfad",
+        "Wirkmechanismus-Canvas",
+        "Wirkungsökonomische Theory of Change",
+        "Outcome- und Empfängerlandkarte",
+        "Referenzrahmen- und Standardmapping",
+        "Wirkungsrelevanz- und Materialitätsanalyse",
+        "KII-Design – Key Impact Indicators",
+        "Wirkungsdaten-Inventur und Datenflusskarte",
+        "Datenqualitäts- und Evidenzmatrix",
+        "Wirkungsscorecard und FinalScore",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D03, DOCX-Seite 86."
+    },
+    {
+      "title": "KII-Design – Key Impact Indicators",
+      "slug": "kii-design-key-impact-indicators",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.",
+      "WÖk-Verwendung": "D04 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: KII-Set mit Zielwerten, Schwellen, Verantwortlichen, Gate-Verknüpfung und Eskalationsregeln.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖk-Indikatorenarchitektur",
+        "Engpass- und Reverse-Merit-Analyse",
+        "Wirkungsziele und Impact-OKR",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D04, DOCX-Seite 88."
+    },
+    {
+      "title": "Wirkungsdaten-Inventur und Datenflusskarte",
+      "slug": "wirkungsdaten-inventur-und-datenflusskarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Vorhandene und benötigte Wirkungsdaten, ihre Herkunft, Verarbeitung, Rechte, Schnittstellen und Nutzung über den gesamten Datenfluss erfassen.",
+      "WÖk-Verwendung": "D05 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Datenkatalog und Flusskarte mit Datenlücken, Eigentum, Qualität, Zugriff, Automatisierung und Schutz.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖk-Indikatorenarchitektur",
+        "Datenqualitäts- und Evidenzmatrix",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D05, DOCX-Seite 90."
+    },
+    {
+      "title": "Datenqualitäts- und Evidenzmatrix",
+      "slug": "datenqualitaets-und-evidenzmatrix",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Daten und Evidenz nach Herkunft, Vollständigkeit, Aktualität, Vergleichbarkeit, Prüfbarkeit, Verzerrung und Unsicherheit bewerten.",
+      "WÖk-Verwendung": "D06 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Qualitätsprofil je Indikator samt Freigabestufe, konservativer Behandlung und Verbesserungsplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Evidenz- und Annahmenregister",
+        "Wirkungsdaten-Inventur und Datenflusskarte",
+        "Wirkungsscorecard und FinalScore",
+        "Netto-Wirkungs-Index (NWI)",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsrisiko-Matrix",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D06, DOCX-Seite 92."
+    },
+    {
+      "title": "Wirkungsscorecard und FinalScore",
+      "slug": "wirkungsscorecard-und-finalscore",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Messwerte anhand transparenter Benchmarks in Wirkungsscores übersetzen und unter Nichtkompensation zu einem entscheidungsfähigen Profil zusammenführen.",
+      "WÖk-Verwendung": "D07 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Scorecard je Wirkungsobjekt mit Einzelwerten, Benchmarks, Datenqualität, Mindestbedingungen und FinalScore.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Referenzrahmen- und Standardmapping",
+        "Wirkungsrelevanz- und Materialitätsanalyse",
+        "WÖk-Indikatorenarchitektur",
+        "KII-Design – Key Impact Indicators",
+        "Wirkungsdaten-Inventur und Datenflusskarte",
+        "Datenqualitäts- und Evidenzmatrix",
+        "Engpass- und Reverse-Merit-Analyse",
+        "Netto-Wirkungs-Index (NWI)",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsportfolio",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D07, DOCX-Seite 94."
+    },
+    {
+      "title": "Netto-Wirkungs-Index (NWI)",
+      "slug": "nwi",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl verdichten.",
+      "WÖk-Verwendung": "D08 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: NWI mit Wirkungsprofil, Spannbreite, Grenzprüfung und Entscheidungsinterpretation.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsscorecard und FinalScore",
+        "Externalitäten- und Kostenverlagerungskarte",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsportfolio",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D08, DOCX-Seite 96."
+    },
+    {
+      "title": "T-SROI – Transformational Social Return on Investment",
+      "slug": "t-sroi",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Auf Grundlage geprüfter Netto-Wirkung beurteilen, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung erzeugt.",
+      "WÖk-Verwendung": "D09 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: T-SROI-Auswertung mit Basiswirkung, Investition, Transformationsmultiplikatoren, Risiken, Grenzen und Sensitivität.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Transformationswirkungs-Logik",
+        "Netto-Wirkungs-Index (NWI)",
+        "Transformationsportfolio",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D09, DOCX-Seite 98."
+    },
+    {
+      "title": "Wirkungsrisiko-Matrix",
+      "slug": "wirkungsrisiko-matrix",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Potenzielle negative Zustandsveränderungen nach Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Zeit und Datenqualität bewerten.",
+      "WÖk-Verwendung": "D10 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Risikoregister mit Prävention, Owner, Frühwarnsignal, Restwirkung und Eskalationsstufe.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Nebenwirkungs-, Wechselwirkungs- und Rebound-Analyse",
+        "Wirkungsresilienz-Pfade",
+        "Wirkungs-Systemstresstest",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsentscheidungsmemo",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D10, DOCX-Seite 100."
+    },
+    {
+      "title": "Wirkungsbilanz und Leistungszerlegung",
+      "slug": "wirkungsbilanz-und-leistungszerlegung",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung eines Projekts, Portfolios oder Systems sichtbar machen.",
+      "WÖk-Verwendung": "D11 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Wirkungsbilanz mit realen Zustandsverbesserungen, bloßen Aktivitäten, systemerhaltendem Aufwand und verursachten Verlusten.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsscorecard und FinalScore",
+        "Netto-Wirkungs-Index (NWI)",
+        "Wirkungsportfolio",
+        "Wirkungsbudgetierung",
+        "Wirkungsorientiertes Operating Model",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D11, DOCX-Seite 102."
+    },
+    {
+      "title": "Evaluations- und Lernfragen-Design",
+      "slug": "evaluations-und-lernfragen-design",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie D",
+      "Kurzdefinition": "Eine verhältnismäßige Evaluation entwerfen, die Relevanz, Kohärenz, Wirksamkeit, Effizienz, Wirkung, Nachhaltigkeit und WÖMS-spezifische Systemfragen beantwortet.",
+      "WÖk-Verwendung": "D12 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Evaluationsdesign mit Fragen, Kriterien, Methodenmix, Vergleichslogik, Beteiligung, Zeitplan und Nutzung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsökonomische Theory of Change",
+        "WÖk-Indikatorenarchitektur",
+        "Wirkungsrisiko-Matrix",
+        "Beitragsanalyse",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode D12, DOCX-Seite 104."
+    },
+    {
+      "title": "Wirkungszielbild",
+      "slug": "wirkungszielbild",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzustands entwickeln, ohne es mit Maßnahmen zu verwechseln.",
+      "WÖk-Verwendung": "E01 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielbild 3–10 Jahre mit Zuständen, Empfängern, Grenzen, Indikatoren und Nicht-Zielen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungskompass-Ausrichtung",
+        "Wirkungszustandskarte",
+        "Wirkungsszenarien und Zukunftsbilder",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungsziele und Impact-OKR",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E01, DOCX-Seite 107."
+    },
+    {
+      "title": "Wirkungsstrategie-Canvas",
+      "slug": "wirkungsstrategie-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Wirkungsziel, Systemhebel, Fähigkeiten, Portfolios, Ressourcen, Risiken, Governance und Lernen in einer gemeinsamen Strategie verbinden.",
+      "WÖk-Verwendung": "E02 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Integrierte Wirkungsstrategie mit klaren Entscheidungen, Prioritäten und Rückkopplung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungszielbild",
+        "Systemhebel-Analyse",
+        "Wirkungsökonomische Theory of Change",
+        "Wirkungsziele und Impact-OKR",
+        "Wirkungsportfolio",
+        "Transformationsportfolio",
+        "Wirkungsbudgetierung",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsgovernance-Canvas",
+        "Wirkungsrollen- und Verantwortungsmatrix",
+        "Wirkungsentscheidungsmemo",
+        "Wirkungstransformations-Roadmap",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E02, DOCX-Seite 109."
+    },
+    {
+      "title": "Wirkungsziele und Impact-OKR",
+      "slug": "wirkungsziele-und-impact-okr",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Strategische Wirkungsziele in überprüfbare, lernorientierte Zielzyklen übersetzen, ohne Aktivitätskennzahlen mit Wirkung zu verwechseln.",
+      "WÖk-Verwendung": "E03 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielhierarchie aus Outcome-/Impact-Objectives, Key Impact Results, Grenzen und Lernhypothesen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsstrategie-Canvas",
+        "KII-Design – Key Impact Indicators",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsführungsrad",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E03, DOCX-Seite 111."
+    },
+    {
+      "title": "Wirkungsportfolio",
+      "slug": "wirkungsportfolio",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Produkte, Projekte, Programme oder Geschäftsfelder nach Netto-Wirkung, Tragfähigkeit, Resilienz, Evidenz und strategischer Bedeutung steuern.",
+      "WÖk-Verwendung": "E04 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Portfolio mit Investitions-, Transformations-, Halte-, Redesign- und Exit-Entscheidungen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsscorecard und FinalScore",
+        "Netto-Wirkungs-Index (NWI)",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsrisiko-Matrix",
+        "Wirkungsbilanz und Leistungszerlegung",
+        "Transformationsportfolio",
+        "Wirkungsbudgetierung",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E04, DOCX-Seite 113."
+    },
+    {
+      "title": "Transformationsportfolio",
+      "slug": "transformationsportfolio",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Transformationsinitiativen nach Systemhebel, Netto-Wirkung, Reife, Lernwert, Abhängigkeit und zeitlicher Sequenz ordnen.",
+      "WÖk-Verwendung": "E05 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Ausbalanciertes Portfolio aus Soforthebeln, Enablern, Experimenten, strukturellen Umbauten und Exits.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Transformationswirkungs-Logik",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsportfolio",
+        "Wirkungstransformations-Roadmap",
+        "Wirkungstransformations-Bereitschaft",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E05, DOCX-Seite 115."
+    },
+    {
+      "title": "Wirkungsbudgetierung",
+      "slug": "wirkungsbudgetierung",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Budgets und Kapazitäten nach erwarteter Netto-Wirkung, Pflicht, Prävention, Resilienz, Evidenz und Transformationsbeitrag verteilen.",
+      "WÖk-Verwendung": "E06 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Wirkungsbudget mit Basisversorgung, Schutzpflichten, Portfolioentscheidungen, Reserven und Reviewregeln.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsportfolio",
+        "Transformationsportfolio",
+        "Wirkungsbilanz und Leistungszerlegung",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E06, DOCX-Seite 117."
+    },
+    {
+      "title": "Wirkungskapital- und Investitionsgate",
+      "slug": "wirkungskapital-und-investitionsgate",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "CAPEX, Akquisitionen, Finanzierungen und größere Programme vor Freigabe auf Grenzen, Netto-Wirkung, Tragfähigkeit, Resilienz und Transformation prüfen.",
+      "WÖk-Verwendung": "E07 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Investitionsmemo mit Gate-Entscheidung, Auflagen, Szenarien, KII, Exit- und Lernbedingungen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsscorecard und FinalScore",
+        "Netto-Wirkungs-Index (NWI)",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsrisiko-Matrix",
+        "Wirkungsportfolio",
+        "Transformationsportfolio",
+        "Wirkungsbudgetierung",
+        "Wirkungspilot-Design",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E07, DOCX-Seite 119."
+    },
+    {
+      "title": "Wirkungsgovernance-Canvas",
+      "slug": "wirkungsgovernance-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Entscheidungsrechte, Verantwortlichkeit, unabhängige Prüfung, Beteiligung, Datenhoheit, Widerspruch und Lernpflichten institutionell verankern.",
+      "WÖk-Verwendung": "E08 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Governance-Blueprint mit Organen, Rollen, Rechten, Informationsflüssen, Eskalation und Review.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Beteiligungs- und Repräsentationsdesign",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungsrollen- und Verantwortungsmatrix",
+        "Wirkungsentscheidungsmemo",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E08, DOCX-Seite 121."
+    },
+    {
+      "title": "Wirkungsrollen- und Verantwortungsmatrix",
+      "slug": "wirkungsrollen-und-verantwortungsmatrix",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Verantwortung für Wirkung, Daten, Entscheidungen, Beteiligung, Prüfung und Lernen über Prozesse und Ebenen eindeutig zuweisen.",
+      "WÖk-Verwendung": "E09 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: RACI+-Matrix mit Responsible, Accountable, Consulted, Informed sowie Challenge, Affected und Stop-Recht.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsgovernance-Canvas",
+        "Wirkungsorientiertes Operating Model",
+        "Prozess- und Systemintegration",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E09, DOCX-Seite 123."
+    },
+    {
+      "title": "Wirkungsentscheidungsmemo",
+      "slug": "wirkungsentscheidungsmemo",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Komplexe Wirkungsentscheidungen knapp, vergleichbar und revisionsfähig dokumentieren.",
+      "WÖk-Verwendung": "E10 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Standardmemo mit Problem, Optionen, Evidenz, Wirkung, Grenzen, Risiken, Entscheidung, Auflagen und Lernplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungspilot-Design",
+        "Prozess- und Systemintegration",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E10, DOCX-Seite 125."
+    },
+    {
+      "title": "Wirkungstransformations-Roadmap",
+      "slug": "wirkungstransformations-roadmap",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Strategie in eine zeitlich, kausal und organisatorisch sinnvolle Abfolge aus Schutz, Enablern, Piloten, Skalierung, Umbau und Exit übersetzen.",
+      "WÖk-Verwendung": "E11 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Mehrhorizont-Roadmap mit Meilensteinen, Abhängigkeiten, Wirkungsgates, KII und Übergangsschutz.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsstrategie-Canvas",
+        "Transformationsportfolio",
+        "Wirkungstransformations-Bereitschaft",
+        "Wirkungspilot-Design",
+        "Prozess- und Systemintegration",
+        "Umsetzungs- und Übergangsschutzplan",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E11, DOCX-Seite 127."
+    },
+    {
+      "title": "WÖMS-Reifegrad- und Fähigkeitsassessment",
+      "slug": "woems-reifegrad-und-faehigkeitsassessment",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie E",
+      "Kurzdefinition": "Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelter und transformativer Steuerung entwickelt ist.",
+      "WÖk-Verwendung": "E12 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Reifegradprofil 0–5 je Dimension mit Evidenz, Lücken, Zielniveau und Entwicklungsplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖMS-Auftragsklärung",
+        "Wirkungsstrategie-Canvas",
+        "Wirkungstransformations-Roadmap",
+        "Wirkungskompetenz-Matrix",
+        "Wirkungstransformations-Bereitschaft",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode E12, DOCX-Seite 129."
+    },
+    {
+      "title": "Wirkungsproblem–Lösungs-Fit",
+      "slug": "wirkungsproblem-loesungs-fit",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.",
+      "WÖk-Verwendung": "F01 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Fit-Statement mit Problembeleg, Empfängern, Mechanismus, Grenzen, Alternativen und kritischsten Hypothesen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsproblem-Canvas",
+        "Wirkmechanismus-Canvas",
+        "Wirkungsversprechen-Canvas",
+        "Wirkungsdesign-Doppelschleife",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F01, DOCX-Seite 132."
+    },
+    {
+      "title": "Wirkungsversprechen-Canvas",
+      "slug": "wirkungsversprechen-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Nutzerwert, Wirkung für weitere Empfänger und Systemwirkung zu einem verantwortbaren Leistungsversprechen verbinden.",
+      "WÖk-Verwendung": "F02 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Wirkungsversprechen mit Nutzeraufgaben, Bedürfnissen, Zustandsgewinn, externen Wirkungen, Grenzen und Nachweis.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsproblem–Lösungs-Fit",
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungsmodell-Canvas",
+        "Wirkungsprototyp-Canvas",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F02, DOCX-Seite 134."
+    },
+    {
+      "title": "Wirkungsmodell-Canvas",
+      "slug": "wirkungsmodell-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Ein Geschäfts-, Finanzierungs- oder Leistungsmodell als dynamisches Wirkungssystem mit Zuständen, Empfängern, Mechanismen, Wertschöpfung, Tragfähigkeit, Grenzen und Lernen gestalten.",
+      "WÖk-Verwendung": "F03 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Vollständiges Wirkungsmodell mit zwölf Feldern und Anschluss an Scorecards, Portfolios und Gates.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsproblem–Lösungs-Fit",
+        "Wirkungsversprechen-Canvas",
+        "Wirkungsökonomische Theory of Change",
+        "Wirkungsexperiment",
+        "Wirkungs-MVP",
+        "Problem–Wirkungs–System–Markt-Fit",
+        "Produktlebenszyklus-Wirkungs-Canvas",
+        "Lieferketten-Wirkungs-Canvas",
+        "Plattform- und Netzwerkeffekt-Canvas",
+        "Preis-, Anreiz- und Rückkopplungs-Canvas",
+        "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F03, DOCX-Seite 136."
+    },
+    {
+      "title": "Wirkungsdesign-Doppelschleife",
+      "slug": "wirkungsdesign-doppelschleife",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern.",
+      "WÖk-Verwendung": "F04 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Durchgängiger Innovationsprozess von Problemraum über Wirkungsraum und Lösungsraum zur verantwortbaren Erprobung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsoptionen- und Ideenportfolio",
+        "Wirkungsprototyp-Canvas",
+        "Wirkungsexperiment",
+        "Wirkungs-MVP",
+        "Problem–Wirkungs–System–Markt-Fit",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F04, DOCX-Seite 138."
+    },
+    {
+      "title": "Wirkungsoptionen- und Ideenportfolio",
+      "slug": "wirkungsoptionen-und-ideenportfolio",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Vielfältige Interventionsoptionen auf unterschiedlichen Systemhebeln erzeugen, kombinieren und vor vorschneller Lieblingslösung schützen.",
+      "WÖk-Verwendung": "F05 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Breites Optionenportfolio mit Mechanismus, Hebeltiefe, Wirkung, Grenzen, Aufwand und Lernwert.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Systemhebel-Analyse",
+        "Wirkungsdesign-Doppelschleife",
+        "Wirkungsprototyp-Canvas",
+        "Wirkungsexperiment",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F05, DOCX-Seite 140."
+    },
+    {
+      "title": "Wirkungsprototyp-Canvas",
+      "slug": "wirkungsprototyp-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Eine minimale Darstellung oder Intervention bauen, die neben Nutzung auch Mechanismus, Betroffenenwirkung und Risiken lernbar macht.",
+      "WÖk-Verwendung": "F06 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Prototypplan mit Lernfragen, betroffenen Gruppen, Schutzmaßnahmen, Beobachtungen und Abbruchregeln.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsversprechen-Canvas",
+        "Wirkungsoptionen- und Ideenportfolio",
+        "Wirkungshypothesen-Register",
+        "Wirkungsexperiment",
+        "Wirkungs-MVP",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F06, DOCX-Seite 142."
+    },
+    {
+      "title": "Wirkungsexperiment",
+      "slug": "wirkungsexperiment",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Eine Wirkungshypothese unter kontrollierten oder realweltlichen Bedingungen so testen, dass Lernen, Schutz und Entscheidung möglich werden.",
+      "WÖk-Verwendung": "F07 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Experimentprotokoll mit Hypothese, Vergleich, Messung, Ethik, Nebenwirkungen, Ergebnis und Entscheidungsregel.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungshypothesen-Register",
+        "Wirkungsprototyp-Canvas",
+        "Wirkungs-MVP",
+        "Problem–Wirkungs–System–Markt-Fit",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F07, DOCX-Seite 144."
+    },
+    {
+      "title": "Wirkungs-MVP",
+      "slug": "wirkungs-mvp",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Die kleinste real nutzbare Lösung bestimmen, die eine relevante positive Zustandsveränderung verantwortbar testen kann.",
+      "WÖk-Verwendung": "F08 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: MVP-Scope mit Mindestwirkung, Mindesttragfähigkeit, Schutzgrenzen, Zielgruppe, Daten und Lernplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsprototyp-Canvas",
+        "Wirkungsexperiment",
+        "Problem–Wirkungs–System–Markt-Fit",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F08, DOCX-Seite 146."
+    },
+    {
+      "title": "Problem–Wirkungs–System–Markt-Fit",
+      "slug": "problem-wirkungs-system-markt-fit",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.",
+      "WÖk-Verwendung": "F09 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Fit-Profil mit fünf Dimensionen, Engpass, Evidenz und nächstem Lernschritt.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsproblem–Lösungs-Fit",
+        "Wirkungsversprechen-Canvas",
+        "Wirkungsmodell-Canvas",
+        "Wirkungsdesign-Doppelschleife",
+        "Wirkungsoptionen- und Ideenportfolio",
+        "Wirkungsprototyp-Canvas",
+        "Wirkungsexperiment",
+        "Wirkungs-MVP",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
+        "Wirkungspilot-Design",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F09, DOCX-Seite 148."
+    },
+    {
+      "title": "Produktlebenszyklus-Wirkungs-Canvas",
+      "slug": "produktlebenszyklus-wirkungs-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Wirkungen von Rohstoffen über Herstellung, Distribution, Nutzung, Wartung und Ende des Lebenszyklus gemeinsam gestalten.",
+      "WÖk-Verwendung": "F10 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Lebenszyklusprofil mit Hotspots, Empfängern, Daten, Kreisläufen, Grenzen und Designentscheidungen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsmodell-Canvas",
+        "Referenzrahmen- und Standardmapping",
+        "Lieferketten-Wirkungs-Canvas",
+        "Preis-, Anreiz- und Rückkopplungs-Canvas",
+        "Wirkungsscorecard und FinalScore",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F10, DOCX-Seite 150."
+    },
+    {
+      "title": "Lieferketten-Wirkungs-Canvas",
+      "slug": "lieferketten-wirkungs-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Lieferketten als Wirkungs- und Risikonetz statt als reine Kostenkette gestalten.",
+      "WÖk-Verwendung": "F11 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Lieferkettenkarte mit Stufen, WÖk-IDs, Wirkungen, Datenqualität, Macht, Risiken, Alternativen und Entwicklungsplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Produktlebenszyklus-Wirkungs-Canvas",
+        "Wirkungsdaten-Inventur und Datenflusskarte",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F11, DOCX-Seite 152."
+    },
+    {
+      "title": "Plattform- und Netzwerkeffekt-Canvas",
+      "slug": "plattform-und-netzwerkeffekt-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Direkte und indirekte Netzwerkeffekte, Moderation, Daten-, Ranking- und Machtlogiken sowie gesellschaftliche Wirkungen einer Plattform gestalten.",
+      "WÖk-Verwendung": "F12 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Plattformmodell mit Akteursseiten, Wert-/Datenflüssen, Wirkmechanismen, Externalitäten, Governance und Schutz.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsmodell-Canvas",
+        "Kausalschleifen- und Rückkopplungsdiagramm",
+        "Preis-, Anreiz- und Rückkopplungs-Canvas",
+        "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F12, DOCX-Seite 154."
+    },
+    {
+      "title": "Preis-, Anreiz- und Rückkopplungs-Canvas",
+      "slug": "preis-anreiz-und-rueckkopplungs-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signale so gestalten, dass sie Wirkung sichtbar machen und keine schädlichen Nebenanreize erzeugen.",
+      "WÖk-Verwendung": "F13 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Anreizarchitektur mit Zielverhalten, Wirkmechanismus, Verteilung, Gegenanreiz, Schutz und Monitoring.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Externalitäten- und Kostenverlagerungskarte",
+        "Wirkungsmodell-Canvas",
+        "Wirkungspilot-Design",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F13, DOCX-Seite 156."
+    },
+    {
+      "title": "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
+      "slug": "wirkungsskalierungs-diffusions-und-exit-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie F",
+      "Kurzdefinition": "Entscheiden, ob Wirkung durch Organisationswachstum, Replikation, Partnerschaft, Open Source, Standardsetzung, Politikänderung oder bewussten Exit verbreitet wird.",
+      "WÖk-Verwendung": "F14 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Skalierungsstrategie mit Pfad, Voraussetzungen, Qualitätsgrenzen, Macht- und Lock-in-Schutz sowie Exit-Regeln.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Problem–Wirkungs–System–Markt-Fit",
+        "Transformationswirkungs-Logik",
+        "T-SROI – Transformational Social Return on Investment",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode F14, DOCX-Seite 158."
+    },
+    {
+      "title": "Organisationswirkungs-Canvas",
+      "slug": "organisationswirkungs-canvas",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Die Organisation als Wirkungssystem aus Zweck, Rollen, Prozessen, Netzwerken, Ressourcen, Daten, Anreizen, Governance und Lernen gestalten.",
+      "WÖk-Verwendung": "G01 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Organisationsblueprint mit Wirkungskern, Betriebsmodell und Entwicklungsprioritäten.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsstrategie-Canvas",
+        "Wirkungsgovernance-Canvas",
+        "Wirkungsführungsrad",
+        "Wirkungsorientiertes Operating Model",
+        "Kultur-, Verhaltens- und Anreizlandkarte",
+        "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
+        "Psychologische Sicherheit und Wirkungswiderspruch",
+        "Wirkungskompetenz-Matrix",
+        "Lern- und Rückkopplungsarchitektur",
+        "Prozess- und Systemintegration",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G01, DOCX-Seite 161."
+    },
+    {
+      "title": "Wirkungsführungsrad",
+      "slug": "wirkungsfuehrungsrad",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Führung als Gestaltung von Orientierung, Bedingungen, Entscheidungen, Rückkopplung, Schutz, Lernen und Selbstwirksamkeit operationalisieren.",
+      "WÖk-Verwendung": "G02 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Führungsprofil und Teamvereinbarung mit sieben Führungsfunktionen und beobachtbaren Praktiken.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Organisationswirkungs-Canvas",
+        "Wirkungsrollen- und Verantwortungsmatrix",
+        "Kultur-, Verhaltens- und Anreizlandkarte",
+        "Psychologische Sicherheit und Wirkungswiderspruch",
+        "Lern- und Rückkopplungsarchitektur",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G02, DOCX-Seite 163."
+    },
+    {
+      "title": "Wirkungsorientiertes Operating Model",
+      "slug": "wirkungsorientiertes-operating-model",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Strategie und Wirkung in End-to-End-Prozesse, Entscheidungsrechte, Daten, Technologie, Fähigkeiten und Steuerungsrhythmen übersetzen.",
+      "WÖk-Verwendung": "G03 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Operating-Model-Blueprint mit Kernprozessen, Governance, Datenpunkten, KII und Schnittstellen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Organisationswirkungs-Canvas",
+        "Wirkungsrollen- und Verantwortungsmatrix",
+        "Prozess- und Systemintegration",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G03, DOCX-Seite 165."
+    },
+    {
+      "title": "Kultur-, Verhaltens- und Anreizlandkarte",
+      "slug": "kultur-verhaltens-und-anreizlandkarte",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Untersuchen, welche formellen und informellen Signale tatsächliches Verhalten fördern und ob sie mit dem Wirkungsauftrag übereinstimmen.",
+      "WÖk-Verwendung": "G04 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Kultur- und Anreizprofil mit Verstärkern, Widersprüchen, Ritualen und Veränderungshebeln.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Organisationswirkungs-Canvas",
+        "Wirkungsführungsrad",
+        "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
+        "Psychologische Sicherheit und Wirkungswiderspruch",
+        "Wirkungskompetenz-Matrix",
+        "Lern- und Rückkopplungsarchitektur",
+        "Wirkungstransformations-Bereitschaft",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G04, DOCX-Seite 167."
+    },
+    {
+      "title": "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
+      "slug": "macht-abhaengigkeits-und-entscheidungsraumanalyse",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Sichtbare und unsichtbare Macht, Ressourcenabhängigkeiten, Vetos, Agenda-Setting und Ausschlüsse in Wirkungssystemen analysieren.",
+      "WÖk-Verwendung": "G05 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Machtlandkarte mit Quellen, Abhängigkeiten, Schutzrisiken, Gegenmacht und Governanceoptionen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsempfänger- und Stakeholder-Landkarte",
+        "Wirkungsgovernance-Canvas",
+        "Kultur-, Verhaltens- und Anreizlandkarte",
+        "Psychologische Sicherheit und Wirkungswiderspruch",
+        "Wirkungsrollen- und Verantwortungsmatrix",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G05, DOCX-Seite 169."
+    },
+    {
+      "title": "Psychologische Sicherheit und Wirkungswiderspruch",
+      "slug": "psychologische-sicherheit-und-wirkungswiderspruch",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Räume und Regeln schaffen, in denen Risiken, Grenzverletzungen, Fehler und abweichende Perspektiven früh geäußert werden können.",
+      "WÖk-Verwendung": "G06 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Widerspruchsvereinbarung mit Kanälen, Reaktionsstandard, Schutz, Eskalation und Lernroutine.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsführungsrad",
+        "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
+        "Wirkungsgovernance-Canvas",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G06, DOCX-Seite 171."
+    },
+    {
+      "title": "Wirkungskompetenz-Matrix",
+      "slug": "wirkungskompetenz-matrix",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Benötigte Fähigkeiten für Wirkungsverständnis, Systemdenken, Daten, Moderation, Bewertung, Governance und Transformation bestimmen und entwickeln.",
+      "WÖk-Verwendung": "G07 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Rollenbezogene Kompetenzmatrix mit Niveaus, Evidenz, Lernpfaden und Kapazitätsplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖMS-Reifegrad- und Fähigkeitsassessment",
+        "Organisationswirkungs-Canvas",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G07, DOCX-Seite 173."
+    },
+    {
+      "title": "Lern- und Rückkopplungsarchitektur",
+      "slug": "lern-und-rueckkopplungsarchitektur",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie G",
+      "Kurzdefinition": "Single-, Double- und Triple-Loop-Lernen so institutionalisieren, dass nicht nur Maßnahmen, sondern Annahmen, Regeln und Ziele korrigiert werden.",
+      "WÖk-Verwendung": "G08 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Lernarchitektur mit Rhythmen, Daten, Reflexionsfragen, Entscheidungsrechten, Wissensspeicher und Methodenpflege.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsführungsrad",
+        "Wirkungsorientiertes Operating Model",
+        "Kultur-, Verhaltens- und Anreizlandkarte",
+        "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
+        "Psychologische Sicherheit und Wirkungswiderspruch",
+        "Wirkungskompetenz-Matrix",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode G08, DOCX-Seite 175."
+    },
+    {
+      "title": "Wirkungstransformations-Bereitschaft",
+      "slug": "wirkungstransformations-bereitschaft",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "Prüfen, ob Mandat, Fähigkeiten, Daten, Ressourcen, Governance, Kultur und Schutz für eine Transformation ausreichen.",
+      "WÖk-Verwendung": "H01 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Readiness-Profil mit kritischen Voraussetzungen, No-Go-Lücken und Aufbauplan.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungstransformations-Roadmap",
+        "WÖMS-Reifegrad- und Fähigkeitsassessment",
+        "Kultur-, Verhaltens- und Anreizlandkarte",
+        "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
+        "Psychologische Sicherheit und Wirkungswiderspruch",
+        "Wirkungskompetenz-Matrix",
+        "Wirkungspilot-Design",
+        "Prozess- und Systemintegration",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H01, DOCX-Seite 178."
+    },
+    {
+      "title": "Wirkungspilot-Design",
+      "slug": "wirkungspilot-design",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "Eine begrenzte, reversible und lernorientierte Umsetzung gestalten, die reale Wirkung prüft und Betroffene schützt.",
+      "WÖk-Verwendung": "H02 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Pilot-Charta mit Scope, Hypothesen, Population, KII, Risiken, Schutz, Governance, Stop und Skalierungskriterien.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsexperiment",
+        "Wirkungs-MVP",
+        "Problem–Wirkungs–System–Markt-Fit",
+        "Wirkungskapital- und Investitionsgate",
+        "Wirkungstransformations-Bereitschaft",
+        "Prozess- und Systemintegration",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H02, DOCX-Seite 180."
+    },
+    {
+      "title": "Prozess- und Systemintegration",
+      "slug": "prozess-und-systemintegration",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "Wirkungsentscheidungen, Daten, Rollen und Kontrollen in bestehende Kernprozesse und IT-Systeme einbauen, ohne Parallelbürokratie zu schaffen.",
+      "WÖk-Verwendung": "H03 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Integrationsplan je Prozess mit Entscheidungspunkt, Daten, Rolle, System, Kontrolle und Vereinfachung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsorientiertes Operating Model",
+        "Wirkungsrollen- und Verantwortungsmatrix",
+        "Wirkungspilot-Design",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H03, DOCX-Seite 182."
+    },
+    {
+      "title": "Umsetzungs- und Übergangsschutzplan",
+      "slug": "umsetzungs-und-uebergangsschutzplan",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "Umsetzung so planen, dass Beschäftigte, Betroffene, Versorgung, Kaufkraft und kritische Funktionen während des Übergangs geschützt werden.",
+      "WÖk-Verwendung": "H04 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Übergangsplan mit Betroffenenfolgen, Qualifizierung, Kompensation, Versorgungsschutz, Kommunikation und Eskalation.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungstransformations-Roadmap",
+        "Wirkungstransformations-Bereitschaft",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H04, DOCX-Seite 184."
+    },
+    {
+      "title": "Wirkungsdashboard und Managementcockpit",
+      "slug": "wirkungsdashboard-und-managementcockpit",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "KII, Grenzen, Risiken, Datenqualität, Portfolio und Lernfragen in einer entscheidungsfähigen, nicht überladenen Sicht zusammenführen.",
+      "WÖk-Verwendung": "H05 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Rollenbezogenes Dashboard mit Trend, Ziel, Grenze, Verteilung, Evidenz, Kommentar und Entscheidung.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "WÖk-Indikatorenarchitektur",
+        "KII-Design – Key Impact Indicators",
+        "Wirkungsscorecard und FinalScore",
+        "Wirkungsorientiertes Operating Model",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsentscheidungsmemo",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H05, DOCX-Seite 186."
+    },
+    {
+      "title": "Wirkungsfrühwarn- und Eskalationssystem",
+      "slug": "wirkungsfruehwarn-und-eskalationssystem",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "Schwache Signale, Trends, Grenznähe, Beschwerden, Datenanomalien und Systemrisiken früh erkennen und verbindlich eskalieren.",
+      "WÖk-Verwendung": "H06 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Frühwarnregister mit Signal, Schwelle, Quelle, Owner, Eskalationsweg, Sofortschutz und Lernschleife.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsrisiko-Matrix",
+        "Wirkungs-Systemstresstest",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsentscheidungsmemo",
+        "Wirkungsreview und lernende Retrospektive",
+        "Wirkungsassurance, Audit und Methodenprüfung",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H06, DOCX-Seite 188."
+    },
+    {
+      "title": "Wirkungsreview und lernende Retrospektive",
+      "slug": "wirkungsreview-und-lernende-retrospektive",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "Regelmäßig prüfen, was tatsächlich wirkte, was nicht, welche Nebenwirkungen entstanden und welche Annahmen, Regeln oder Ziele geändert werden müssen.",
+      "WÖk-Verwendung": "H07 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Reviewprotokoll mit Evidenz, Abweichung, Beitrag, Nebenwirkung, Lernstufe und verbindlichen Änderungen.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungspilot-Design",
+        "Prozess- und Systemintegration",
+        "Umsetzungs- und Übergangsschutzplan",
+        "Wirkungsdashboard und Managementcockpit",
+        "Wirkungsfrühwarn- und Eskalationssystem",
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H07, DOCX-Seite 190."
+    },
+    {
+      "title": "Wirkungsassurance, Audit und Methodenprüfung",
+      "slug": "wirkungsassurance-audit-und-methodenpruefung",
+      "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
+      "section": "WÖMS 1.0 · Kernmethoden · Kategorie H",
+      "Kurzdefinition": "Daten, Bewertungslogik, Grenzprüfung, Governance, Aussagen und Methodenprozess unabhängig und risikoorientiert prüfen.",
+      "WÖk-Verwendung": "H08 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Assurance-Bericht mit Prüfgegenstand, Kriterien, Umfang, Feststellungen, Konfidenz, Auflagen und Follow-up.",
+      "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
+      "Querverweise": [
+        "Wirkungsökonomisches Methodensystem",
+        "Wirkungsökonomisches Managementmodell"
+      ],
+      "Quellenhinweise": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 1.0, Methode H08, DOCX-Seite 192."
+    }
+  ]
+}

@@ -1,0 +1,1777 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryId": "woems-methoden-registry",
+  "version": "1.0",
+  "stand": "2026-07-10",
+  "sourceSha256": "b082088a27f3a06931c1e535ce74a779c171c022aa00e09a79a555b5e1d70e0a",
+  "counts": {
+    "categories": 8,
+    "methods": 84
+  },
+  "kategorien": [
+    {
+      "id": "A",
+      "name": "Orientierung, Mandat und Schutzrahmen"
+    },
+    {
+      "id": "B",
+      "name": "Systemdiagnose und Wirkungszusammenhänge"
+    },
+    {
+      "id": "C",
+      "name": "Wirkungsmodellierung und Zukunftslogik"
+    },
+    {
+      "id": "D",
+      "name": "Messung, Bewertung und Evidenz"
+    },
+    {
+      "id": "E",
+      "name": "Strategie, Portfolio und Governance"
+    },
+    {
+      "id": "F",
+      "name": "Innovation, Angebote und Geschäftsmodelle"
+    },
+    {
+      "id": "G",
+      "name": "Organisation, Führung und Kultur"
+    },
+    {
+      "id": "H",
+      "name": "Umsetzung, Monitoring, Lernen und Assurance"
+    }
+  ],
+  "methods": [
+    {
+      "id": "A01",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "WÖMS-Auftragsklärung",
+      "docxSeite": 19,
+      "zweck": "Klären, welche Entscheidung, Zustandsveränderung und Verantwortung der Methodenprozess tatsächlich unterstützen soll.",
+      "schnittstellen": {
+        "bautAuf": [],
+        "fuehrtZu": [
+          "A02",
+          "A03",
+          "A04"
+        ]
+      },
+      "canvasRef": "canvas-A01"
+    },
+    {
+      "id": "A02",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "Wirkungskompass-Ausrichtung",
+      "docxSeite": 21,
+      "zweck": "Den normativen Referenzrahmen Mensch, Planet und Demokratie sowie SDGs, Agenda 2030 und SDG+ für den konkreten Fall operationalisieren.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A01"
+        ],
+        "fuehrtZu": [
+          "A05",
+          "D01"
+        ]
+      },
+      "canvasRef": "canvas-A02"
+    },
+    {
+      "id": "A03",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "Systemgrenzen- und Reichweiten-Canvas",
+      "docxSeite": 23,
+      "zweck": "Zeitliche, räumliche, organisatorische, lebenszyklische und kausale Grenzen so festlegen, dass wesentliche Wirkungen weder versteckt noch unbeherrschbar weit gefasst werden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A01"
+        ],
+        "fuehrtZu": [
+          "A04",
+          "B01",
+          "C01"
+        ]
+      },
+      "canvasRef": "canvas-A03"
+    },
+    {
+      "id": "A04",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "Wirkungsempfänger- und Stakeholder-Landkarte",
+      "docxSeite": 25,
+      "zweck": "Alle direkt und indirekt betroffenen Menschen, Gruppen, Lebewesen, Ökosysteme, Institutionen und künftigen Generationen identifizieren und ihre Perspektiven unterscheiden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A03"
+        ],
+        "fuehrtZu": [
+          "A08",
+          "B01",
+          "C04"
+        ]
+      },
+      "canvasRef": "canvas-A04"
+    },
+    {
+      "id": "A05",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "Wirkungsgrenzen- und Rechteprüfung",
+      "docxSeite": 27,
+      "zweck": "Nicht kompensierbare Grenzen, Rechte, Mindeststandards und rote Linien vor Optimierung und Abwägung prüfen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A02",
+          "A03",
+          "A04"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-A05"
+    },
+    {
+      "id": "A06",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "Evidenz- und Annahmenregister",
+      "docxSeite": 29,
+      "zweck": "Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.",
+      "schnittstellen": {
+        "bautAuf": [],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-A06"
+    },
+    {
+      "id": "A07",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "Entscheidungskontext- und Komplexitätscheck",
+      "docxSeite": 31,
+      "zweck": "Bestimmen, ob eine Situation überwiegend klar, kompliziert, komplex, chaotisch oder widersprüchlich ist und welche Vorgehenslogik dazu passt.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03"
+        ],
+        "fuehrtZu": [
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-A07"
+    },
+    {
+      "id": "A08",
+      "kategorie": "A",
+      "kategorieName": "Orientierung, Mandat und Schutzrahmen",
+      "name": "Beteiligungs- und Repräsentationsdesign",
+      "docxSeite": 33,
+      "zweck": "Beteiligung so gestalten, dass Betroffene, Wissensträger:innen, Entscheider:innen und fehlende Stimmen angemessen in Analyse und Entscheidung eingehen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A04"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-A08"
+    },
+    {
+      "id": "B01",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Wirkungszustandskarte",
+      "docxSeite": 36,
+      "zweck": "Den gegenwärtigen Zustand eines Wirkungsraums anhand beobachtbarer Bedingungen, Erfahrungen, Daten und institutioneller Regeln beschreiben.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": [
+          "B02",
+          "B03",
+          "D03"
+        ]
+      },
+      "canvasRef": "canvas-B01"
+    },
+    {
+      "id": "B02",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Wirkungsproblem-Canvas",
+      "docxSeite": 38,
+      "zweck": "Ein Problem als unerwünschte Zustandsveränderung mit Betroffenen, Ursachen, aufrechterhaltenden Bedingungen und Folgewirkungen formulieren.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B01"
+        ],
+        "fuehrtZu": [
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "F01"
+        ]
+      },
+      "canvasRef": "canvas-B02"
+    },
+    {
+      "id": "B03",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Problem- und Wirkungsbaum",
+      "docxSeite": 40,
+      "zweck": "Ursachen, Kernproblem und Folgewirkungen in einer ersten gerichteten Struktur ordnen und später in ein dynamisches Modell überführen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B02"
+        ],
+        "fuehrtZu": [
+          "B04",
+          "C01",
+          "C03"
+        ]
+      },
+      "canvasRef": "canvas-B03"
+    },
+    {
+      "id": "B04",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Kausalschleifen- und Rückkopplungsdiagramm",
+      "docxSeite": 42,
+      "zweck": "Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare Dynamiken sichtbar machen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B03"
+        ],
+        "fuehrtZu": [
+          "B05",
+          "B06",
+          "B10",
+          "C07"
+        ]
+      },
+      "canvasRef": "canvas-B04"
+    },
+    {
+      "id": "B05",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Bestands- und Flussmodell",
+      "docxSeite": 44,
+      "zweck": "Akkumulationen, Zuflüsse, Abflüsse und Verzögerungen erfassen, wenn Mengen- und Zeitdynamik entscheidend sind.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B04"
+        ],
+        "fuehrtZu": [
+          "B09",
+          "B12",
+          "C08"
+        ]
+      },
+      "canvasRef": "canvas-B05"
+    },
+    {
+      "id": "B06",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Interdependenz- und Abhängigkeitsmatrix",
+      "docxSeite": 46,
+      "zweck": "Wechselwirkungen zwischen Wirkungsfeldern, Akteuren, Ressourcen oder Systemzuständen strukturiert vergleichen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B01",
+          "B04"
+        ],
+        "fuehrtZu": [
+          "B10",
+          "E04",
+          "D10"
+        ]
+      },
+      "canvasRef": "canvas-B06"
+    },
+    {
+      "id": "B07",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Externalitäten- und Kostenverlagerungskarte",
+      "docxSeite": 48,
+      "zweck": "Unsichtbare ökologische, soziale, gesundheitliche, demokratische und zeitliche Kosten sowie Nutzen entlang von Akteuren und Lebenszyklus sichtbar machen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B01",
+          "B02",
+          "B03",
+          "B04"
+        ],
+        "fuehrtZu": [
+          "D08",
+          "E06",
+          "F13"
+        ]
+      },
+      "canvasRef": "canvas-B07"
+    },
+    {
+      "id": "B08",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Wirkungsordnungen-Landkarte",
+      "docxSeite": 50,
+      "zweck": "Unmittelbare, indirekte und strukturverändernde Wirkungen erster, zweiter und dritter Ordnung unterscheiden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B04"
+        ],
+        "fuehrtZu": [
+          "C01",
+          "C10",
+          "D09"
+        ]
+      },
+      "canvasRef": "canvas-B08"
+    },
+    {
+      "id": "B09",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Zeit-, Verzögerungs- und Generationenkarte",
+      "docxSeite": 52,
+      "zweck": "Wirkungszeit, Regenerationszeit, Entscheidungszeit, Nutzungszeit und Generationenfolgen explizit machen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B04",
+          "B05",
+          "B08"
+        ],
+        "fuehrtZu": [
+          "C08",
+          "D03",
+          "E11"
+        ]
+      },
+      "canvasRef": "canvas-B09"
+    },
+    {
+      "id": "B10",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Systemhebel-Analyse",
+      "docxSeite": 54,
+      "zweck": "Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpotenzial identifizieren und nicht mit bloß zentralen Variablen verwechseln.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B04",
+          "B05",
+          "B06"
+        ],
+        "fuehrtZu": [
+          "C10",
+          "E02",
+          "F04"
+        ]
+      },
+      "canvasRef": "canvas-B10"
+    },
+    {
+      "id": "B11",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Engpass- und Reverse-Merit-Analyse",
+      "docxSeite": 56,
+      "zweck": "Das schwächste relevante Wirkungsfeld, eine harte Mindestbedingung oder den systemischen Engpass bestimmen, der den Gesamterfolg begrenzt.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A05",
+          "D07"
+        ],
+        "fuehrtZu": [
+          "F03",
+          "E07",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-B11"
+    },
+    {
+      "id": "B12",
+      "kategorie": "B",
+      "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
+      "name": "Wirkungs-Systemstresstest",
+      "docxSeite": 58,
+      "zweck": "Prüfen, wie ein Modell unter Schocks, Trendbrüchen, Datenfehlern, Gegenstrategien und kumulativen Belastungen wirkt.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11"
+        ],
+        "fuehrtZu": [
+          "C09",
+          "D10",
+          "E07",
+          "H06"
+        ]
+      },
+      "canvasRef": "canvas-B12"
+    },
+    {
+      "id": "C01",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Wirkungspfad",
+      "docxSeite": 61,
+      "zweck": "Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09"
+        ],
+        "fuehrtZu": [
+          "C02",
+          "D03",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-C01"
+    },
+    {
+      "id": "C02",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Wirkmechanismus-Canvas",
+      "docxSeite": 63,
+      "zweck": "Erklären, durch welchen sozialen, technischen, ökonomischen, psychologischen, institutionellen oder ökologischen Mechanismus eine Handlung Zustände verändern soll.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C01"
+        ],
+        "fuehrtZu": [
+          "C03",
+          "C06",
+          "F06",
+          "F07"
+        ]
+      },
+      "canvasRef": "canvas-C02"
+    },
+    {
+      "id": "C03",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Wirkungsökonomische Theory of Change",
+      "docxSeite": 65,
+      "zweck": "Eine Theory of Change um negative Wirkungen, Nichtkompensation, Systemhebel, Rückkopplung, Transformationswirkung und Entscheidungstore erweitern.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C01",
+          "C02"
+        ],
+        "fuehrtZu": [
+          "D03",
+          "E02",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-C03"
+    },
+    {
+      "id": "C04",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Outcome- und Empfängerlandkarte",
+      "docxSeite": 67,
+      "zweck": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A04",
+          "C01"
+        ],
+        "fuehrtZu": [
+          "D03",
+          "H05"
+        ]
+      },
+      "canvasRef": "canvas-C04"
+    },
+    {
+      "id": "C05",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Beitragsanalyse",
+      "docxSeite": 69,
+      "zweck": "Plausibel und evidenzbasiert beurteilen, welchen Beitrag eine Intervention zu beobachteten Wirkungen geleistet hat, ohne unangemessene Alleinursächlichkeit zu behaupten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C03",
+          "D12"
+        ],
+        "fuehrtZu": [
+          "D08",
+          "D09",
+          "H07"
+        ]
+      },
+      "canvasRef": "canvas-C05"
+    },
+    {
+      "id": "C06",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Wirkungshypothesen-Register",
+      "docxSeite": 71,
+      "zweck": "Alle entscheidungsrelevanten Wirkungsannahmen als testbare Hypothesen mit Falsifikations- und Lernkriterien führen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A06",
+          "C01",
+          "C02",
+          "C03"
+        ],
+        "fuehrtZu": [
+          "F07",
+          "H02",
+          "H07"
+        ]
+      },
+      "canvasRef": "canvas-C06"
+    },
+    {
+      "id": "C07",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Nebenwirkungs-, Wechselwirkungs- und Rebound-Analyse",
+      "docxSeite": 73,
+      "zweck": "Unerwünschte, indirekte, kompensierende oder zurückschlagende Wirkungen systematisch vor und während der Umsetzung prüfen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B04",
+          "B07",
+          "C01"
+        ],
+        "fuehrtZu": [
+          "D10",
+          "F07",
+          "H06"
+        ]
+      },
+      "canvasRef": "canvas-C07"
+    },
+    {
+      "id": "C08",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Wirkungsszenarien und Zukunftsbilder",
+      "docxSeite": 75,
+      "zweck": "Mehrere plausible Zukunftskontexte entwickeln, um Strategien, Wirkungsmodelle und Annahmen auf Robustheit und blinde Flecken zu prüfen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B09",
+          "B12"
+        ],
+        "fuehrtZu": [
+          "C09",
+          "E02",
+          "E11"
+        ]
+      },
+      "canvasRef": "canvas-C08"
+    },
+    {
+      "id": "C09",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Wirkungsresilienz-Pfade",
+      "docxSeite": 77,
+      "zweck": "Fähigkeiten und Pfade entwerfen, mit denen wesentliche positive Wirkung unter Störungen erhalten, angepasst oder regeneriert wird.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B12",
+          "C08"
+        ],
+        "fuehrtZu": [
+          "D10",
+          "E02",
+          "H06"
+        ]
+      },
+      "canvasRef": "canvas-C09"
+    },
+    {
+      "id": "C10",
+      "kategorie": "C",
+      "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
+      "name": "Transformationswirkungs-Logik",
+      "docxSeite": 79,
+      "zweck": "Erfassen, ob und wie eine Intervention Entscheidungsregeln, Standards, Infrastrukturen, Märkte, Machtverhältnisse oder Handlungspfade verändert.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B08",
+          "B10",
+          "C03"
+        ],
+        "fuehrtZu": [
+          "D09",
+          "E05",
+          "F14"
+        ]
+      },
+      "canvasRef": "canvas-C10"
+    },
+    {
+      "id": "D01",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Referenzrahmen- und Standardmapping",
+      "docxSeite": 82,
+      "zweck": "Relevante SDGs, SDG+, ESRS, GRI, ISO-, Branchen-, Rechts- und Wissenschaftsreferenzen einem Wirkungsobjekt zuordnen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A02",
+          "A03"
+        ],
+        "fuehrtZu": [
+          "D02",
+          "D03",
+          "D04",
+          "D05",
+          "D06",
+          "D07"
+        ]
+      },
+      "canvasRef": "canvas-D01"
+    },
+    {
+      "id": "D02",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Wirkungsrelevanz- und Materialitätsanalyse",
+      "docxSeite": 84,
+      "zweck": "Relevante tatsächliche und potenzielle Wirkungen unabhängig von finanzieller Materialität identifizieren und anschließend mit Risiken, Chancen und Abhängigkeiten verbinden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A04",
+          "B01",
+          "D01"
+        ],
+        "fuehrtZu": [
+          "D03",
+          "E02"
+        ]
+      },
+      "canvasRef": "canvas-D02"
+    },
+    {
+      "id": "D03",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "WÖk-Indikatorenarchitektur",
+      "docxSeite": 86,
+      "zweck": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "D01",
+          "D02"
+        ],
+        "fuehrtZu": [
+          "D04",
+          "D05",
+          "D06",
+          "D07",
+          "H05"
+        ]
+      },
+      "canvasRef": "canvas-D03"
+    },
+    {
+      "id": "D04",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "KII-Design – Key Impact Indicators",
+      "docxSeite": 88,
+      "zweck": "Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D03",
+          "B11"
+        ],
+        "fuehrtZu": [
+          "E03",
+          "H05",
+          "H06"
+        ]
+      },
+      "canvasRef": "canvas-D04"
+    },
+    {
+      "id": "D05",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Wirkungsdaten-Inventur und Datenflusskarte",
+      "docxSeite": 90,
+      "zweck": "Vorhandene und benötigte Wirkungsdaten, ihre Herkunft, Verarbeitung, Rechte, Schnittstellen und Nutzung über den gesamten Datenfluss erfassen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D03"
+        ],
+        "fuehrtZu": [
+          "D06",
+          "H05",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-D05"
+    },
+    {
+      "id": "D06",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Datenqualitäts- und Evidenzmatrix",
+      "docxSeite": 92,
+      "zweck": "Daten und Evidenz nach Herkunft, Vollständigkeit, Aktualität, Vergleichbarkeit, Prüfbarkeit, Verzerrung und Unsicherheit bewerten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A06",
+          "D05"
+        ],
+        "fuehrtZu": [
+          "D07",
+          "D08",
+          "D09",
+          "D10",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-D06"
+    },
+    {
+      "id": "D07",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Wirkungsscorecard und FinalScore",
+      "docxSeite": 94,
+      "zweck": "Messwerte anhand transparenter Benchmarks in Wirkungsscores übersetzen und unter Nichtkompensation zu einem entscheidungsfähigen Profil zusammenführen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "D05",
+          "D06",
+          "B11"
+        ],
+        "fuehrtZu": [
+          "D08",
+          "D09",
+          "E04",
+          "E07",
+          "H05"
+        ]
+      },
+      "canvasRef": "canvas-D07"
+    },
+    {
+      "id": "D08",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Netto-Wirkungs-Index (NWI)",
+      "docxSeite": 96,
+      "zweck": "Positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl verdichten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D07",
+          "B07"
+        ],
+        "fuehrtZu": [
+          "D09",
+          "E04",
+          "E07",
+          "H05"
+        ]
+      },
+      "canvasRef": "canvas-D08"
+    },
+    {
+      "id": "D09",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "T-SROI – Transformational Social Return on Investment",
+      "docxSeite": 98,
+      "zweck": "Auf Grundlage geprüfter Netto-Wirkung beurteilen, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung erzeugt.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C10",
+          "D08"
+        ],
+        "fuehrtZu": [
+          "E05",
+          "E07",
+          "F14"
+        ]
+      },
+      "canvasRef": "canvas-D09"
+    },
+    {
+      "id": "D10",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Wirkungsrisiko-Matrix",
+      "docxSeite": 100,
+      "zweck": "Potenzielle negative Zustandsveränderungen nach Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Zeit und Datenqualität bewerten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C07",
+          "C09",
+          "B12"
+        ],
+        "fuehrtZu": [
+          "E07",
+          "E10",
+          "H06"
+        ]
+      },
+      "canvasRef": "canvas-D10"
+    },
+    {
+      "id": "D11",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Wirkungsbilanz und Leistungszerlegung",
+      "docxSeite": 102,
+      "zweck": "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung eines Projekts, Portfolios oder Systems sichtbar machen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D07",
+          "D08"
+        ],
+        "fuehrtZu": [
+          "E04",
+          "E06",
+          "G03"
+        ]
+      },
+      "canvasRef": "canvas-D11"
+    },
+    {
+      "id": "D12",
+      "kategorie": "D",
+      "kategorieName": "Messung, Bewertung und Evidenz",
+      "name": "Evaluations- und Lernfragen-Design",
+      "docxSeite": 104,
+      "zweck": "Eine verhältnismäßige Evaluation entwerfen, die Relevanz, Kohärenz, Wirksamkeit, Effizienz, Wirkung, Nachhaltigkeit und WÖMS-spezifische Systemfragen beantwortet.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C03",
+          "D03",
+          "D10"
+        ],
+        "fuehrtZu": [
+          "C05",
+          "H07",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-D12"
+    },
+    {
+      "id": "E01",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungszielbild",
+      "docxSeite": 107,
+      "zweck": "Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzustands entwickeln, ohne es mit Maßnahmen zu verwechseln.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A02",
+          "B01",
+          "C08"
+        ],
+        "fuehrtZu": [
+          "E02",
+          "E03"
+        ]
+      },
+      "canvasRef": "canvas-E01"
+    },
+    {
+      "id": "E02",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungsstrategie-Canvas",
+      "docxSeite": 109,
+      "zweck": "Wirkungsziel, Systemhebel, Fähigkeiten, Portfolios, Ressourcen, Risiken, Governance und Lernen in einer gemeinsamen Strategie verbinden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E01",
+          "B10",
+          "C03"
+        ],
+        "fuehrtZu": [
+          "E03",
+          "E04",
+          "E05",
+          "E06",
+          "E07",
+          "E08",
+          "E09",
+          "E10",
+          "E11"
+        ]
+      },
+      "canvasRef": "canvas-E02"
+    },
+    {
+      "id": "E03",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungsziele und Impact-OKR",
+      "docxSeite": 111,
+      "zweck": "Strategische Wirkungsziele in überprüfbare, lernorientierte Zielzyklen übersetzen, ohne Aktivitätskennzahlen mit Wirkung zu verwechseln.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E02",
+          "D04"
+        ],
+        "fuehrtZu": [
+          "H05",
+          "H07",
+          "G02"
+        ]
+      },
+      "canvasRef": "canvas-E03"
+    },
+    {
+      "id": "E04",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungsportfolio",
+      "docxSeite": 113,
+      "zweck": "Produkte, Projekte, Programme oder Geschäftsfelder nach Netto-Wirkung, Tragfähigkeit, Resilienz, Evidenz und strategischer Bedeutung steuern.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D07",
+          "D08",
+          "D09",
+          "D10",
+          "D11"
+        ],
+        "fuehrtZu": [
+          "E05",
+          "E06",
+          "E07"
+        ]
+      },
+      "canvasRef": "canvas-E04"
+    },
+    {
+      "id": "E05",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Transformationsportfolio",
+      "docxSeite": 115,
+      "zweck": "Transformationsinitiativen nach Systemhebel, Netto-Wirkung, Reife, Lernwert, Abhängigkeit und zeitlicher Sequenz ordnen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C10",
+          "D09",
+          "E04"
+        ],
+        "fuehrtZu": [
+          "E11",
+          "H01",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-E05"
+    },
+    {
+      "id": "E06",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungsbudgetierung",
+      "docxSeite": 117,
+      "zweck": "Budgets und Kapazitäten nach erwarteter Netto-Wirkung, Pflicht, Prävention, Resilienz, Evidenz und Transformationsbeitrag verteilen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E04",
+          "E05",
+          "D11"
+        ],
+        "fuehrtZu": [
+          "E07",
+          "H05"
+        ]
+      },
+      "canvasRef": "canvas-E06"
+    },
+    {
+      "id": "E07",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungskapital- und Investitionsgate",
+      "docxSeite": 119,
+      "zweck": "CAPEX, Akquisitionen, Finanzierungen und größere Programme vor Freigabe auf Grenzen, Netto-Wirkung, Tragfähigkeit, Resilienz und Transformation prüfen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D07",
+          "D08",
+          "D09",
+          "D10",
+          "E04",
+          "E05",
+          "E06"
+        ],
+        "fuehrtZu": [
+          "H02",
+          "H05",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-E07"
+    },
+    {
+      "id": "E08",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungsgovernance-Canvas",
+      "docxSeite": 121,
+      "zweck": "Entscheidungsrechte, Verantwortlichkeit, unabhängige Prüfung, Beteiligung, Datenhoheit, Widerspruch und Lernpflichten institutionell verankern.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A08",
+          "E02"
+        ],
+        "fuehrtZu": [
+          "E09",
+          "E10",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-E08"
+    },
+    {
+      "id": "E09",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungsrollen- und Verantwortungsmatrix",
+      "docxSeite": 123,
+      "zweck": "Verantwortung für Wirkung, Daten, Entscheidungen, Beteiligung, Prüfung und Lernen über Prozesse und Ebenen eindeutig zuweisen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E08"
+        ],
+        "fuehrtZu": [
+          "G03",
+          "H03",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-E09"
+    },
+    {
+      "id": "E10",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungsentscheidungsmemo",
+      "docxSeite": 125,
+      "zweck": "Komplexe Wirkungsentscheidungen knapp, vergleichbar und revisionsfähig dokumentieren.",
+      "schnittstellen": {
+        "bautAuf": [],
+        "fuehrtZu": [
+          "H02",
+          "H03",
+          "H07"
+        ]
+      },
+      "canvasRef": "canvas-E10"
+    },
+    {
+      "id": "E11",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "Wirkungstransformations-Roadmap",
+      "docxSeite": 127,
+      "zweck": "Strategie in eine zeitlich, kausal und organisatorisch sinnvolle Abfolge aus Schutz, Enablern, Piloten, Skalierung, Umbau und Exit übersetzen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E02",
+          "E05"
+        ],
+        "fuehrtZu": [
+          "H01",
+          "H02",
+          "H03",
+          "H04"
+        ]
+      },
+      "canvasRef": "canvas-E11"
+    },
+    {
+      "id": "E12",
+      "kategorie": "E",
+      "kategorieName": "Strategie, Portfolio und Governance",
+      "name": "WÖMS-Reifegrad- und Fähigkeitsassessment",
+      "docxSeite": 129,
+      "zweck": "Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelter und transformativer Steuerung entwickelt ist.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A01"
+        ],
+        "fuehrtZu": [
+          "E02",
+          "E11",
+          "G07",
+          "H01"
+        ]
+      },
+      "canvasRef": "canvas-E12"
+    },
+    {
+      "id": "F01",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsproblem–Lösungs-Fit",
+      "docxSeite": 132,
+      "zweck": "Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B02",
+          "C02"
+        ],
+        "fuehrtZu": [
+          "F02",
+          "F04"
+        ]
+      },
+      "canvasRef": "canvas-F01"
+    },
+    {
+      "id": "F02",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsversprechen-Canvas",
+      "docxSeite": 134,
+      "zweck": "Nutzerwert, Wirkung für weitere Empfänger und Systemwirkung zu einem verantwortbaren Leistungsversprechen verbinden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F01",
+          "A04"
+        ],
+        "fuehrtZu": [
+          "F03",
+          "F06"
+        ]
+      },
+      "canvasRef": "canvas-F02"
+    },
+    {
+      "id": "F03",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsmodell-Canvas",
+      "docxSeite": 136,
+      "zweck": "Ein Geschäfts-, Finanzierungs- oder Leistungsmodell als dynamisches Wirkungssystem mit Zuständen, Empfängern, Mechanismen, Wertschöpfung, Tragfähigkeit, Grenzen und Lernen gestalten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F01",
+          "F02",
+          "C03"
+        ],
+        "fuehrtZu": [
+          "F07",
+          "F08",
+          "F09",
+          "F10",
+          "F11",
+          "F12",
+          "F13",
+          "F14",
+          "E07"
+        ]
+      },
+      "canvasRef": "canvas-F03"
+    },
+    {
+      "id": "F04",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsdesign-Doppelschleife",
+      "docxSeite": 138,
+      "zweck": "Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern.",
+      "schnittstellen": {
+        "bautAuf": [],
+        "fuehrtZu": [
+          "F05",
+          "F06",
+          "F07",
+          "F08",
+          "F09",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-F04"
+    },
+    {
+      "id": "F05",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsoptionen- und Ideenportfolio",
+      "docxSeite": 140,
+      "zweck": "Vielfältige Interventionsoptionen auf unterschiedlichen Systemhebeln erzeugen, kombinieren und vor vorschneller Lieblingslösung schützen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B10",
+          "F04"
+        ],
+        "fuehrtZu": [
+          "F06",
+          "F07"
+        ]
+      },
+      "canvasRef": "canvas-F05"
+    },
+    {
+      "id": "F06",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsprototyp-Canvas",
+      "docxSeite": 142,
+      "zweck": "Eine minimale Darstellung oder Intervention bauen, die neben Nutzung auch Mechanismus, Betroffenenwirkung und Risiken lernbar macht.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F02",
+          "F05",
+          "C06"
+        ],
+        "fuehrtZu": [
+          "F07",
+          "F08"
+        ]
+      },
+      "canvasRef": "canvas-F06"
+    },
+    {
+      "id": "F07",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsexperiment",
+      "docxSeite": 144,
+      "zweck": "Eine Wirkungshypothese unter kontrollierten oder realweltlichen Bedingungen so testen, dass Lernen, Schutz und Entscheidung möglich werden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "C06",
+          "F06"
+        ],
+        "fuehrtZu": [
+          "F08",
+          "F09",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-F07"
+    },
+    {
+      "id": "F08",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungs-MVP",
+      "docxSeite": 146,
+      "zweck": "Die kleinste real nutzbare Lösung bestimmen, die eine relevante positive Zustandsveränderung verantwortbar testen kann.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F06",
+          "F07"
+        ],
+        "fuehrtZu": [
+          "F09",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-F08"
+    },
+    {
+      "id": "F09",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Problem–Wirkungs–System–Markt-Fit",
+      "docxSeite": 148,
+      "zweck": "Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F05",
+          "F06",
+          "F07",
+          "F08"
+        ],
+        "fuehrtZu": [
+          "E07",
+          "F14",
+          "H02"
+        ]
+      },
+      "canvasRef": "canvas-F09"
+    },
+    {
+      "id": "F10",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Produktlebenszyklus-Wirkungs-Canvas",
+      "docxSeite": 150,
+      "zweck": "Wirkungen von Rohstoffen über Herstellung, Distribution, Nutzung, Wartung und Ende des Lebenszyklus gemeinsam gestalten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F03",
+          "D01"
+        ],
+        "fuehrtZu": [
+          "F11",
+          "F13",
+          "D07"
+        ]
+      },
+      "canvasRef": "canvas-F10"
+    },
+    {
+      "id": "F11",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Lieferketten-Wirkungs-Canvas",
+      "docxSeite": 152,
+      "zweck": "Lieferketten als Wirkungs- und Risikonetz statt als reine Kostenkette gestalten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F10",
+          "D05"
+        ],
+        "fuehrtZu": [
+          "E07",
+          "H05",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-F11"
+    },
+    {
+      "id": "F12",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Plattform- und Netzwerkeffekt-Canvas",
+      "docxSeite": 154,
+      "zweck": "Direkte und indirekte Netzwerkeffekte, Moderation, Daten-, Ranking- und Machtlogiken sowie gesellschaftliche Wirkungen einer Plattform gestalten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F03",
+          "B04"
+        ],
+        "fuehrtZu": [
+          "F13",
+          "F14"
+        ]
+      },
+      "canvasRef": "canvas-F12"
+    },
+    {
+      "id": "F13",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Preis-, Anreiz- und Rückkopplungs-Canvas",
+      "docxSeite": 156,
+      "zweck": "Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signale so gestalten, dass sie Wirkung sichtbar machen und keine schädlichen Nebenanreize erzeugen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "B07",
+          "F03"
+        ],
+        "fuehrtZu": [
+          "H02",
+          "H05"
+        ]
+      },
+      "canvasRef": "canvas-F13"
+    },
+    {
+      "id": "F14",
+      "kategorie": "F",
+      "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
+      "name": "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
+      "docxSeite": 158,
+      "zweck": "Entscheiden, ob Wirkung durch Organisationswachstum, Replikation, Partnerschaft, Open Source, Standardsetzung, Politikänderung oder bewussten Exit verbreitet wird.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F09",
+          "C10",
+          "D09"
+        ],
+        "fuehrtZu": [
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-F14"
+    },
+    {
+      "id": "G01",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Organisationswirkungs-Canvas",
+      "docxSeite": 161,
+      "zweck": "Die Organisation als Wirkungssystem aus Zweck, Rollen, Prozessen, Netzwerken, Ressourcen, Daten, Anreizen, Governance und Lernen gestalten.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E02",
+          "E08"
+        ],
+        "fuehrtZu": [
+          "G02",
+          "G03",
+          "G04",
+          "G05",
+          "G06",
+          "G07",
+          "G08",
+          "H03"
+        ]
+      },
+      "canvasRef": "canvas-G01"
+    },
+    {
+      "id": "G02",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Wirkungsführungsrad",
+      "docxSeite": 163,
+      "zweck": "Führung als Gestaltung von Orientierung, Bedingungen, Entscheidungen, Rückkopplung, Schutz, Lernen und Selbstwirksamkeit operationalisieren.",
+      "schnittstellen": {
+        "bautAuf": [
+          "G01",
+          "E09"
+        ],
+        "fuehrtZu": [
+          "G04",
+          "G06",
+          "G08"
+        ]
+      },
+      "canvasRef": "canvas-G02"
+    },
+    {
+      "id": "G03",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Wirkungsorientiertes Operating Model",
+      "docxSeite": 165,
+      "zweck": "Strategie und Wirkung in End-to-End-Prozesse, Entscheidungsrechte, Daten, Technologie, Fähigkeiten und Steuerungsrhythmen übersetzen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "G01",
+          "E09"
+        ],
+        "fuehrtZu": [
+          "H03",
+          "H05",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-G03"
+    },
+    {
+      "id": "G04",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Kultur-, Verhaltens- und Anreizlandkarte",
+      "docxSeite": 167,
+      "zweck": "Untersuchen, welche formellen und informellen Signale tatsächliches Verhalten fördern und ob sie mit dem Wirkungsauftrag übereinstimmen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "G01",
+          "G02"
+        ],
+        "fuehrtZu": [
+          "G05",
+          "G06",
+          "G07",
+          "G08",
+          "H01"
+        ]
+      },
+      "canvasRef": "canvas-G04"
+    },
+    {
+      "id": "G05",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
+      "docxSeite": 169,
+      "zweck": "Sichtbare und unsichtbare Macht, Ressourcenabhängigkeiten, Vetos, Agenda-Setting und Ausschlüsse in Wirkungssystemen analysieren.",
+      "schnittstellen": {
+        "bautAuf": [
+          "A04",
+          "E08",
+          "G04"
+        ],
+        "fuehrtZu": [
+          "G06",
+          "E09",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-G05"
+    },
+    {
+      "id": "G06",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Psychologische Sicherheit und Wirkungswiderspruch",
+      "docxSeite": 171,
+      "zweck": "Räume und Regeln schaffen, in denen Risiken, Grenzverletzungen, Fehler und abweichende Perspektiven früh geäußert werden können.",
+      "schnittstellen": {
+        "bautAuf": [
+          "G02",
+          "G05",
+          "E08"
+        ],
+        "fuehrtZu": [
+          "H06",
+          "H07",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-G06"
+    },
+    {
+      "id": "G07",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Wirkungskompetenz-Matrix",
+      "docxSeite": 173,
+      "zweck": "Benötigte Fähigkeiten für Wirkungsverständnis, Systemdenken, Daten, Moderation, Bewertung, Governance und Transformation bestimmen und entwickeln.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E12",
+          "G01"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-G07"
+    },
+    {
+      "id": "G08",
+      "kategorie": "G",
+      "kategorieName": "Organisation, Führung und Kultur",
+      "name": "Lern- und Rückkopplungsarchitektur",
+      "docxSeite": 175,
+      "zweck": "Single-, Double- und Triple-Loop-Lernen so institutionalisieren, dass nicht nur Maßnahmen, sondern Annahmen, Regeln und Ziele korrigiert werden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "G02",
+          "G03",
+          "G04",
+          "G05",
+          "G06",
+          "G07"
+        ],
+        "fuehrtZu": [
+          "H05",
+          "H06",
+          "H07",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-G08"
+    },
+    {
+      "id": "H01",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Wirkungstransformations-Bereitschaft",
+      "docxSeite": 178,
+      "zweck": "Prüfen, ob Mandat, Fähigkeiten, Daten, Ressourcen, Governance, Kultur und Schutz für eine Transformation ausreichen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E11",
+          "E12",
+          "G04",
+          "G05",
+          "G06",
+          "G07"
+        ],
+        "fuehrtZu": [
+          "H02",
+          "H03"
+        ]
+      },
+      "canvasRef": "canvas-H01"
+    },
+    {
+      "id": "H02",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Wirkungspilot-Design",
+      "docxSeite": 180,
+      "zweck": "Eine begrenzte, reversible und lernorientierte Umsetzung gestalten, die reale Wirkung prüft und Betroffene schützt.",
+      "schnittstellen": {
+        "bautAuf": [
+          "F07",
+          "F08",
+          "F09",
+          "E07",
+          "H01"
+        ],
+        "fuehrtZu": [
+          "H03",
+          "H05",
+          "H06",
+          "H07"
+        ]
+      },
+      "canvasRef": "canvas-H02"
+    },
+    {
+      "id": "H03",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Prozess- und Systemintegration",
+      "docxSeite": 182,
+      "zweck": "Wirkungsentscheidungen, Daten, Rollen und Kontrollen in bestehende Kernprozesse und IT-Systeme einbauen, ohne Parallelbürokratie zu schaffen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "G03",
+          "E09",
+          "H02"
+        ],
+        "fuehrtZu": [
+          "H05",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-H03"
+    },
+    {
+      "id": "H04",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Umsetzungs- und Übergangsschutzplan",
+      "docxSeite": 184,
+      "zweck": "Umsetzung so planen, dass Beschäftigte, Betroffene, Versorgung, Kaufkraft und kritische Funktionen während des Übergangs geschützt werden.",
+      "schnittstellen": {
+        "bautAuf": [
+          "E11",
+          "H01"
+        ],
+        "fuehrtZu": [
+          "H05",
+          "H06",
+          "H07"
+        ]
+      },
+      "canvasRef": "canvas-H04"
+    },
+    {
+      "id": "H05",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Wirkungsdashboard und Managementcockpit",
+      "docxSeite": 186,
+      "zweck": "KII, Grenzen, Risiken, Datenqualität, Portfolio und Lernfragen in einer entscheidungsfähigen, nicht überladenen Sicht zusammenführen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D03",
+          "D04",
+          "D07",
+          "G03"
+        ],
+        "fuehrtZu": [
+          "H06",
+          "H07",
+          "E10"
+        ]
+      },
+      "canvasRef": "canvas-H05"
+    },
+    {
+      "id": "H06",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Wirkungsfrühwarn- und Eskalationssystem",
+      "docxSeite": 188,
+      "zweck": "Schwache Signale, Trends, Grenznähe, Beschwerden, Datenanomalien und Systemrisiken früh erkennen und verbindlich eskalieren.",
+      "schnittstellen": {
+        "bautAuf": [
+          "D10",
+          "B12",
+          "H05"
+        ],
+        "fuehrtZu": [
+          "E10",
+          "H07",
+          "H08"
+        ]
+      },
+      "canvasRef": "canvas-H06"
+    },
+    {
+      "id": "H07",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Wirkungsreview und lernende Retrospektive",
+      "docxSeite": 190,
+      "zweck": "Regelmäßig prüfen, was tatsächlich wirkte, was nicht, welche Nebenwirkungen entstanden und welche Annahmen, Regeln oder Ziele geändert werden müssen.",
+      "schnittstellen": {
+        "bautAuf": [
+          "H02",
+          "H03",
+          "H04",
+          "H05",
+          "H06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-H07"
+    },
+    {
+      "id": "H08",
+      "kategorie": "H",
+      "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
+      "name": "Wirkungsassurance, Audit und Methodenprüfung",
+      "docxSeite": 192,
+      "zweck": "Daten, Bewertungslogik, Grenzprüfung, Governance, Aussagen und Methodenprozess unabhängig und risikoorientiert prüfen.",
+      "schnittstellen": {
+        "bautAuf": [],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-H08"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ const ROOT = process.cwd();
 const DEFAULT_IMPORT_FILE = "content/glossary/imports/recht-wirtschaft-innovation-klima.json";
 const IMPORT_FILE = process.env.GLOSSARY_IMPORT_FILE || DEFAULT_IMPORT_FILE;
 const REGISTRY_FILE = path.join(ROOT, "assets/data/term-registry.json");
-const DATA_STAND = "2026-06-07";
+const DEFAULT_DATA_STAND = "2026-06-07";
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(path.resolve(ROOT, filePath), "utf8"));
@@ -49,8 +49,8 @@ function normalizeKey(value) {
 }
 
 function splitList(value) {
+  if (Array.isArray(value)) return value.map((item) => String(item).trim()).filter(Boolean);
   return String(value || "")
-    .replace(/\b(?:und|sowie)\b/gi, ",")
     .split(/[,;·]/)
     .map((item) => item.trim())
     .filter(Boolean);
@@ -72,6 +72,8 @@ function aliasesForTitle(title) {
 }
 
 function categoryForSection(section) {
+  if (/WÖMS|Methodensystem|Kernmethoden|Canvas-Mindeststandard/i.test(section)) return "WÖMS Methodensystem";
+  if (/WÖMM|Managementmodell|Managementarchitektur/i.test(section)) return "WÖMM Managementmodell";
   if (/Demokratie|Ausgrenzung/i.test(section)) return "Demokratie, Recht und gesellschaftliche Resilienz";
   if (/Unternehmertypen|Schumpeter|Röpke/i.test(section)) return "Innovation, Evolution und Unternehmertum";
   if (/Ökonomische Schulen|Ordnungspolitik|Management/i.test(section)) return "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken";
@@ -82,7 +84,7 @@ function categoryForSection(section) {
 function typeForTerm(term) {
   if (/Walter Eucken|Ludwig Erhard/i.test(term.title)) return "Bezugslinie";
   if (/Wirkungspionier|Eigentum mit Wirkungspflicht|Produkt-Markt-Wirkungs-Fit/i.test(term.title)) return "WÖk-Präzisierungsbegriff";
-  if (/Canvas|Persona|Design Thinking|Value Proposition/i.test(term.title)) return "Methodenbegriff";
+  if (/WÖMS|Canvas|Persona|Design Thinking|Value Proposition|Methodenkreislauf|Workshop-Journey|Wirkungskompass|Systemlandkarte/i.test(`${term.title} ${term.section || ""}`)) return "Methodenbegriff";
   return "Anschlussbegriff";
 }
 
@@ -261,7 +263,7 @@ function buildAliasMap(terms, importTerms) {
     const slug = term.slug || slugify(term.title);
     add(term.title, slug);
     add(slug, slug);
-    for (const alias of aliasesForTitle(term.title)) add(alias, slug);
+    for (const alias of [...aliasesForTitle(term.title), ...(term.aliases || [])]) add(alias, slug);
   }
   return map;
 }
@@ -297,7 +299,7 @@ function validateImport(data) {
 function normalizeImportedTerm(raw, aliasMap, missingRelated) {
   const label = raw.title.trim();
   const slug = raw.slug || slugify(label);
-  const aliases = aliasesForTitle(label);
+  const aliases = unique([...aliasesForTitle(label), ...(raw.aliases || [])]);
   const relatedTerms = resolveRelatedTerms(raw.Querverweise, aliasMap, missingRelated);
   return {
     id: slug,
@@ -325,7 +327,7 @@ function normalizeImportedTerm(raw, aliasMap, missingRelated) {
     reviewStatus: "redaktionell synchronisiert",
     glossaryOrderKey: label,
     lastReviewed: DATA_STAND,
-    sourceDocument: "",
+    sourceDocument: importData.sourceDocument || "",
     sourceSection: raw.section || "",
     importSource: IMPORT_FILE,
     importAction: raw.action,
@@ -352,6 +354,7 @@ function mergeTerm(existing, imported) {
 }
 
 const importData = readJson(IMPORT_FILE);
+const DATA_STAND = importData.stand || process.env.GLOSSARY_IMPORT_STAND || DEFAULT_DATA_STAND;
 validateImport(importData);
 
 const registry = readJson(REGISTRY_FILE);
@@ -380,8 +383,9 @@ for (const term of importedTerms) {
 }
 
 registry.generatedAt = new Date().toISOString();
+const existingSourceNotes = String(registry.sourceNote || "").split(/\s*·\s*/);
 registry.sourceNote = unique([
-  registry.sourceNote,
+  ...existingSourceNotes,
   `${importData.sourceDocument || path.basename(IMPORT_FILE)} synchronisiert am ${DATA_STAND}`,
 ]).join(" · ");
 registry.terms = terms;

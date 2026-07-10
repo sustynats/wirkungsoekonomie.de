@@ -6,6 +6,7 @@ const ROOT = process.cwd();
 const OUTPUT = path.join(ROOT, "assets/data/library-version-registry.json");
 const DOWNLOADS_PAGE = path.join(ROOT, "downloads.html");
 const STAGE_DOC = path.join(ROOT, "docs/stage-9-library-versioning.md");
+const CURATED_PUBLICATIONS = path.join(ROOT, "content/publications/grundlagenpublikationen.json");
 
 const START = "<!-- stage9-library-versioning:start -->";
 const END = "<!-- stage9-library-versioning:end -->";
@@ -629,7 +630,13 @@ function buildRegistry() {
     "bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/index.html",
     "bibliothek/nachhaltigkeitstransformation-im-handwerk/index.html"
   ].filter(exists).map((file) => documentFor(file, "leading-reference"));
-  const documents = mergeDocuments([...requiredReferences, ...fileDocuments, ...onlineDocuments]);
+  const curatedPublications = fs.existsSync(CURATED_PUBLICATIONS)
+    ? JSON.parse(fs.readFileSync(CURATED_PUBLICATIONS, "utf8")).publications.map((publication) => ({
+        ...publication,
+        source: "curated-publication"
+      }))
+    : [];
+  const documents = mergeDocuments([...curatedPublications, ...requiredReferences, ...fileDocuments, ...onlineDocuments]);
   const counts = documents.reduce((acc, doc) => {
     acc.total += 1;
     acc.byStatus[doc.status] = (acc.byStatus[doc.status] || 0) + 1;
@@ -637,7 +644,7 @@ function buildRegistry() {
     acc.bySource[doc.source] = (acc.bySource[doc.source] || 0) + 1;
     return acc;
   }, { total: 0, byStatus: {}, byType: {}, bySource: {} });
-  counts.downloadFiles = fileDocuments.length;
+  counts.downloadFiles = fileDocuments.length + curatedPublications.length;
   counts.onlineVersions = onlineDocuments.length;
   return {
     generatedAt: new Date().toISOString(),
