@@ -1,0 +1,399 @@
+{
+  "version": "2026-07-10",
+  "name": "WÖk-Community Discord Zielstruktur",
+  "purpose": "Discord ist Community-, Austausch- und Veröffentlichungsraum. Akademie-Zugang kann über Community-Beitritt oder über LinkedIn-Freischaltung entstehen. Lernfortschritt, Prüfungen, Zertifikate, Review-Entscheidungen und Institutsarbeit werden auf den Plattformen gepflegt.",
+  "migrationStatus": {
+    "summary": "Zielstruktur nach Entkopplung. Discord bleibt einer von zwei Zugangspfaden zur Akademie: Community-Beitritt oder LinkedIn-Freischaltung. Akademie-bezogene Discord-Rollen dürfen erst gelöscht werden, wenn die Akademie-App Zugang, Kohorte, Status und Leitungsrechte vollständig aus Supabase liest.",
+    "currentRisk": "Die separate Akademie-App leitet Zugang, Kohorte und App-Rollen derzeit noch aus Discord-Rollen ab und spiegelt sie nach Supabase. LinkedIn-Freischaltung muss als zweiter Zugangspfad in derselben Plattformlogik abgebildet werden.",
+    "safeCleanupStage": "Vor der App-Migration nur Kanäle, Texte und eindeutig reine Community-Rollen bereinigen. Akademie-Zugangsrollen zunächst behalten oder nur als deprecated markieren; Lernfortschritt bleibt ausschließlich Akademie/Supabase.",
+    "legacyProtection": "Bestehende Studierende behalten ihren aktuellen Lernraum. Vor dem Entfernen alter Discord-Akademie-Rollen müssen Zugang, Kohorte, Status und vorhandener Fortschritt in der Akademie-Plattform fixiert sein. Während der Migration gewinnt immer der zugangserhaltende Status."
+  },
+  "principles": [
+    "So wenig Kanäle wie möglich.",
+    "Discord ist Community und ein Zugangssignal, aber nicht Lernstands-, Prüfungs- oder Zertifikatsquelle.",
+    "LinkedIn-Freischaltung und Community-Beitritt sind gleichwertige Einstiegssignale für Akademie-Zugang.",
+    "Die Akademie ist die einzige Quelle für Lernfortschritt, Prüfungen und Zertifikate.",
+    "Veröffentlichungen laufen automatisiert in wenige Update-Kanäle.",
+    "Arbeitslogik, Quellenlogik, Curriculum, Review und Zertifikate bleiben auf der Plattform.",
+    "Keine Personenbewertung, kein Social Credit, keine Lernstands- oder Prüfungsrollen.",
+    "Private Räume nur für Moderation und Teamkoordination."
+  ],
+  "roles": [
+    {
+      "name": "Community",
+      "purpose": "Normale Community-Mitgliedschaft und Schreibzugang zu offenen Gesprächsräumen.",
+      "managedByPlatform": false,
+      "usedForAccessControl": false,
+      "mentionable": false
+    },
+    {
+      "name": "Akademie",
+      "purpose": "Benachrichtigungsrolle für Akademie-Updates, nicht für Lernzugang.",
+      "managedByPlatform": false,
+      "usedForAccessControl": false,
+      "mentionable": true
+    },
+    {
+      "name": "Institut",
+      "purpose": "Benachrichtigungsrolle für öffentliche Instituts-Updates, nicht für Institutsrechte.",
+      "managedByPlatform": false,
+      "usedForAccessControl": false,
+      "mentionable": true
+    },
+    {
+      "name": "Moderation",
+      "purpose": "Community-Moderation im Discord.",
+      "managedByPlatform": false,
+      "usedForAccessControl": false,
+      "mentionable": false
+    },
+    {
+      "name": "Team",
+      "purpose": "Interne Community- und Veröffentlichungskoordination.",
+      "managedByPlatform": false,
+      "usedForAccessControl": false,
+      "mentionable": false
+    },
+    {
+      "name": "Bot",
+      "purpose": "Technische Veröffentlichungen, Logs und Automationen.",
+      "managedByPlatform": false,
+      "usedForAccessControl": false,
+      "mentionable": false
+    }
+  ],
+  "rolesToRemoveOrStopUsing": [
+    {
+      "name": "Rookie",
+      "reason": "Level-/Gamification-Rolle ohne klare Aufgabe."
+    },
+    {
+      "name": "Standard",
+      "reason": "Unklarer Status; erzeugt Komplexität."
+    },
+    {
+      "name": "Level2",
+      "reason": "Level-/Gamification-Rolle ohne klare Aufgabe."
+    },
+    {
+      "name": "Akademie-Zugang",
+      "reason": "Zugang soll auf der Plattform aus Community-Beitritt oder LinkedIn-Freischaltung geregelt werden.",
+      "deleteOnlyAfter": "Akademie-App liest has_akademie_zugang direkt aus Supabase und nutzt Discord nur noch als Community-/Login-Signal."
+    },
+    {
+      "name": "Akademie-Stufe-1",
+      "reason": "Lernstand und Stufenfreischaltung gehören auf die Plattform.",
+      "deleteOnlyAfter": "Alle Stufen-/Track-Freischaltungen liegen in Supabase."
+    },
+    {
+      "name": "Akademie-Stufe-2",
+      "reason": "Lernstand und Stufenfreischaltung gehören auf die Plattform.",
+      "deleteOnlyAfter": "Alle Stufen-/Track-Freischaltungen liegen in Supabase."
+    },
+    {
+      "name": "Akademie-Stufe-3",
+      "reason": "Lernstand und Stufenfreischaltung gehören auf die Plattform.",
+      "deleteOnlyAfter": "Alle Stufen-/Track-Freischaltungen liegen in Supabase."
+    },
+    {
+      "name": "Akademie-Stufe-4",
+      "reason": "Lernstand und Stufenfreischaltung gehören auf die Plattform.",
+      "deleteOnlyAfter": "Alle Stufen-/Track-Freischaltungen liegen in Supabase."
+    },
+    {
+      "name": "Kohorte-2026-V1",
+      "reason": "Kohorten sind Akademie-Plattformdaten.",
+      "deleteOnlyAfter": "Akademie-App liest cohort_key aus Supabase und benötigt keine Discord-Kohortenrolle mehr."
+    },
+    {
+      "name": "Kohorte-2026-V2",
+      "reason": "Kohorten sind Akademie-Plattformdaten.",
+      "deleteOnlyAfter": "Akademie-App liest cohort_key aus Supabase und benötigt keine Discord-Kohortenrolle mehr."
+    },
+    {
+      "name": "Student:in",
+      "reason": "Kann als Plattformstatus bestehen, muss aber nicht Discord-Recht sein.",
+      "deleteOnlyAfter": "Akademie-App liest Rollen wie student, instructor, dozent und admin aus Supabase."
+    },
+    {
+      "name": "Absolvent:in",
+      "reason": "Kann als Plattformstatus bestehen, muss aber nicht Discord-Recht sein.",
+      "deleteOnlyAfter": "Abschlussstatus und Zertifikate liegen vollständig in Supabase."
+    },
+    {
+      "name": "Mentor:in",
+      "reason": "Mentoring-Rechte gehören in die Akademie-Plattform; Discord höchstens als Team-/Community-Kontext.",
+      "deleteOnlyAfter": "Akademie-App nutzt keine Discord-Mentorrolle mehr für Instructor-Zugriff."
+    },
+    {
+      "name": "Akademie-Leitung",
+      "reason": "Leitungsrechte gehören in die Akademie-Plattform; Discord nutzt Team/Moderation.",
+      "deleteOnlyAfter": "Akademie-App nutzt Supabase-App-Rollen für Admin/Leitung."
+    }
+  ],
+  "categories": [
+    {
+      "name": "Start",
+      "position": 1,
+      "purpose": "Orientierung ohne Einstiegshürde.",
+      "channels": [
+        {
+          "name": "willkommen",
+          "type": "text",
+          "topic": "Kurzorientierung: Was ist hier, was ist auf Website, Akademie und Institut?",
+          "readOnlyForCommunity": true,
+          "publishTargets": []
+        },
+        {
+          "name": "regeln",
+          "type": "text",
+          "topic": "Kurze Community-Regeln: respektvoll, sachlich, keine Personenbewertung, keine Heils-/Finanz-/Rechtsberatung.",
+          "readOnlyForCommunity": true,
+          "publishTargets": []
+        },
+        {
+          "name": "ankuendigungen",
+          "type": "text",
+          "topic": "Wichtige Hinweise zur WÖk-Community.",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "manual",
+            "bot"
+          ]
+        },
+        {
+          "name": "bot-hilfe",
+          "type": "text",
+          "topic": "Kurze Orientierung: Welche Bots posten was, welche Befehle gibt es, wo findet man Website, Akademie, Institut und Quellenarchiv?",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "manual",
+            "bot"
+          ]
+        },
+        {
+          "name": "hilfe-und-fragen",
+          "type": "text",
+          "topic": "Technische und organisatorische Fragen zur Orientierung.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        }
+      ]
+    },
+    {
+      "name": "Veröffentlichungen",
+      "position": 2,
+      "purpose": "Alles Neue kommt in wenige klare Kanäle.",
+      "channels": [
+        {
+          "name": "journal",
+          "type": "text",
+          "topic": "Neue Journalartikel und Einordnungen.",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "feed:journal"
+          ]
+        },
+        {
+          "name": "bibliothek",
+          "type": "text",
+          "topic": "Neue Publikationen, Dossiers, Onlinefassungen und Quellenupdates.",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "feed:bibliothek"
+          ]
+        },
+        {
+          "name": "akademie-updates",
+          "type": "text",
+          "topic": "Neue Kurse, Vorlesungen, Termine und Lernhinweise. Kein Lernzugang.",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "feed:akademie"
+          ]
+        },
+        {
+          "name": "institut-updates",
+          "type": "text",
+          "topic": "Öffentliche Institutsupdates, Quellenarchiv, Reviews und Mitwirkungsmöglichkeiten.",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "feed:institut"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Community",
+      "position": 3,
+      "purpose": "Austausch ohne Themenwald.",
+      "channels": [
+        {
+          "name": "vorstellen",
+          "type": "text",
+          "topic": "Kurz vorstellen: Wer bist du, was interessiert dich an Wirkung?",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        },
+        {
+          "name": "allgemeiner-austausch",
+          "type": "text",
+          "topic": "Allgemeiner Austausch zur Wirkungsökonomie.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        },
+        {
+          "name": "frag-die-woek",
+          "type": "text",
+          "topic": "Kurze Fragen zur Wirkungsökonomie, zu Begriffen, Quellen, Anwendungsideen und Einordnung. Antworten sind Orientierung, keine Beratung.",
+          "readOnlyForCommunity": false,
+          "publishTargets": [
+            "bot:woek-ai"
+          ]
+        },
+        {
+          "name": "feedback",
+          "type": "text",
+          "topic": "Hinweise, Fehler, Unklarheiten, fehlende Quellen und Verbesserungsvorschläge.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        }
+      ]
+    },
+    {
+      "name": "Themenräume",
+      "position": 4,
+      "purpose": "Wenige Räume für die wichtigsten Diskussionsstränge.",
+      "channels": [
+        {
+          "name": "wirkungsfelder",
+          "type": "text",
+          "topic": "Anwendung auf Arbeit, Wohnen, Gesundheit, Finanzsystem, Medien, Staat und weitere Wirkungsfelder.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        },
+        {
+          "name": "management-woemm-woems",
+          "type": "text",
+          "topic": "WÖMM, WÖMS, Methoden, Canvas, Umsetzung und Unternehmensführung.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        },
+        {
+          "name": "mensch-und-wirkung",
+          "type": "text",
+          "topic": "Wirkungspsychologie, Wirkungspraxis und säkulare Lebenspraxis; keine Therapie, keine Diagnosen, keine Heilsversprechen.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        },
+        {
+          "name": "medien-und-sprache",
+          "type": "text",
+          "topic": "Wirkung von Worten, Frames, Narrativen, Faktenchecks und öffentlicher Kommunikation.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        }
+      ]
+    },
+    {
+      "name": "Termine",
+      "position": 5,
+      "purpose": "Veranstaltungen und Live-Austausch.",
+      "channels": [
+        {
+          "name": "termine",
+          "type": "text",
+          "topic": "Sprechstunden, Workshops, Akademie-Termine und Community-Treffen.",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "manual",
+            "bot"
+          ]
+        },
+        {
+          "name": "sprechstunde",
+          "type": "voice",
+          "topic": "Live-Austausch und offene Sprechstunde.",
+          "readOnlyForCommunity": false,
+          "publishTargets": []
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "position": 6,
+      "purpose": "Interne Koordination, nicht öffentlich.",
+      "private": true,
+      "channels": [
+        {
+          "name": "team-intern",
+          "type": "text",
+          "topic": "Interne Community- und Veröffentlichungskoordination.",
+          "readOnlyForCommunity": true,
+          "publishTargets": []
+        },
+        {
+          "name": "moderation-log",
+          "type": "text",
+          "topic": "Moderationshinweise und Bot-Protokoll.",
+          "readOnlyForCommunity": true,
+          "publishTargets": [
+            "bot:moderation"
+          ]
+        }
+      ]
+    }
+  ],
+  "channelTexts": {
+    "willkommen": {
+      "title": "Willkommen in der WÖk-Community",
+      "body": "Dieser Discord ist der offene Austauschraum zur Wirkungsökonomie. Die Website erklärt öffentlich, die Akademie bildet aus, das Institut arbeitet an Quellen, Forschung und Review. Discord ist der Ort für Fragen, Hinweise, Diskussion und Updates."
+    },
+    "regeln": {
+      "title": "Kurzregeln",
+      "body": "Sachlich bleiben. Menschen nicht bewerten. Quellen und Unsicherheit benennen. Keine Rechts-, Finanz-, Steuer-, Gesundheits- oder Therapieberatung. Keine Heilsversprechen. Kritik ist willkommen, Abwertung nicht."
+    },
+    "hilfe-und-fragen": {
+      "title": "Wobei brauchst du Orientierung?",
+      "body": "Fragen zu Website, Akademie, Institut, Bibliothek, Glossar, Quellenarchiv oder Community bitte hier sammeln. Wenn es um einen konkreten Fehler geht, nutze am besten den Feedback-Kanal."
+    },
+    "bot-hilfe": {
+      "title": "Bots und Automationen",
+      "body": "Die Bots posten neue Veröffentlichungen, helfen bei der Orientierung und können später einfache WÖk-Fragen beantworten. Sie ersetzen keine Beratung und keine finale Bewertung. Wenn du unsicher bist: lieber Quelle, Kontext und offene Frage dazuschreiben."
+    },
+    "frag-die-woek": {
+      "title": "Frag die WÖk",
+      "body": "Stelle kurze Fragen zur Wirkungsökonomie, zu Begriffen, Wirkungsfeldern, WÖMM, WÖMS oder Quellen. Gute Fragen enthalten Kontext: Worum geht es, welche Entscheidung oder Aussage soll eingeordnet werden, welche Quelle liegt vor?"
+    },
+    "feedback": {
+      "title": "Feedback und Fehler",
+      "body": "Bitte poste möglichst konkret: Link, kurzer Befund, erwartetes Verhalten. Bei Quellenhinweisen gern Titel, Autor:in, Jahr und Link oder bibliografische Angabe."
+    },
+    "mensch-und-wirkung": {
+      "title": "Rote Linie Mensch & Wirkung",
+      "body": "Dieser Raum ist für Wirkungspraxis, Reflexion und säkulare Lebenspraxis. Er ersetzt keine Psychotherapie, keine medizinische Beratung und keine Krisenhilfe. Es werden keine Menschen bewertet."
+    }
+  },
+  "websiteTouchpoints": [
+    {
+      "path": "/mitmachen/",
+      "role": "Öffentlicher Einstieg in Austausch und Mitwirkung."
+    },
+    {
+      "path": "/app/",
+      "role": "Öffentliche Web-App; Plattform regelt Rechte, Discord bleibt Community-Link."
+    },
+    {
+      "path": "/bibliothek/",
+      "role": "Veröffentlichungen und Onlinefassungen."
+    },
+    {
+      "path": "/quellenarchiv/",
+      "role": "Quellen-Detailseiten und Belege."
+    },
+    {
+      "path": "/akademie.html",
+      "role": "Lernen, Curriculum, Prüfungen, Zertifikate."
+    }
+  ]
+}

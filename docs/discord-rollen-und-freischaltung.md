@@ -2,6 +2,8 @@
 
 Stand: 19. Mai 2026
 
+> Überholt / Übergang: Diese Rollenlogik darf nicht als Zielbild verwendet werden. Zielstand ab Juli 2026: Zugang kann über Community-Beitritt oder LinkedIn-Freischaltung entstehen; Lernfortschritt, Prüfungen, Zertifikate und Kohortenlogik gehören ausschließlich in die Akademie-Plattform. Bestehende Studierende müssen ihren aktuellen Lernraum behalten. Alte Discord-Akademie-Rollen erst entfernen, wenn `user_access`, Kohorte, Plattformrollen und Legacy-Fortschritt in Supabase fixiert sind. Aktuelle Zielstruktur: `docs/discord-community-neustart.md`.
+
 ## Grundsatz
 
 Discord steuert Zugang, Kohorte und Stufe.

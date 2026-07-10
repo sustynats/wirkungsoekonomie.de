@@ -1,0 +1,98 @@
+{
+  "version": "2026-07-10",
+  "title": "Zugangsmodell Akademie und Community",
+  "summary": "Akademie-Zugang kann über zwei Wege entstehen: Community-Beitritt oder LinkedIn-Freischaltung. Lernfortschritt, Prüfungen, Zertifikate und Kohortenlogik laufen ausschließlich in der Akademie.",
+  "legacyProtection": {
+    "principle": "Bestehende Studierende behalten ihren aktuellen Lernraum. Niemand darf durch Discord-Aufräumen Zugang, Kohorte, Fortschritt, Prüfungsstatus oder Zertifikatsstatus verlieren.",
+    "requiredBeforeDiscordRoleCleanup": [
+      "Alle bestehenden Discord-basierten Akademie-Zugänge in Supabase user_access übernehmen.",
+      "cohort_key für Legacy-Studierende dauerhaft in Supabase setzen.",
+      "Bestehende Rollen wie student, absolvent, instructor, dozent und admin als Plattformrollen speichern.",
+      "Legacy-Fortschritt in legacy_progress und/oder user_progress prüfen.",
+      "Akademie-App so umstellen, dass Supabase Vorrang vor Discord-Rollen hat.",
+      "Erst nach erfolgreichem Audit Discord-Akademie-Rollen entfernen oder entwerten."
+    ],
+    "fallbackRule": "Wenn Discord-Rolle und Supabase-Status voneinander abweichen, gewinnt während der Migration der jeweils zugangserhaltende Status. Kein negativer Entzug ohne manuelle Entscheidung."
+  },
+  "accessSignals": [
+    {
+      "id": "community_membership",
+      "label": "Community-Beitritt",
+      "description": "Eine Person ist Mitglied der WÖk-Community. Discord kann dieses Signal liefern, wenn die Person dem Server beigetreten ist.",
+      "source": "Discord",
+      "grants": [
+        "community_status",
+        "academy_access_if_enabled"
+      ],
+      "doesNotGrant": [
+        "learning_progress",
+        "exam_release",
+        "certificate",
+        "institute_review_rights"
+      ]
+    },
+    {
+      "id": "linkedin_approval",
+      "label": "LinkedIn-Freischaltung",
+      "description": "Eine Person wird unabhängig von Discord über LinkedIn oder einen LinkedIn-basierten Freischaltprozess zugelassen.",
+      "source": "LinkedIn / manuelle Freischaltung",
+      "grants": [
+        "academy_access_if_enabled"
+      ],
+      "doesNotGrant": [
+        "learning_progress",
+        "exam_release",
+        "certificate",
+        "discord_channel_permissions",
+        "institute_review_rights"
+      ]
+    }
+  ],
+  "platformSources": [
+    {
+      "system": "Akademie",
+      "owns": [
+        "Lernfortschritt",
+        "Vorlesungsstatus",
+        "Prüfungsversuche",
+        "Prüfungsfreigaben",
+        "Praxisprojekt",
+        "Zertifikate",
+        "Kohorten-/Track-Zuordnung"
+      ]
+    },
+    {
+      "system": "Discord",
+      "owns": [
+        "Community-Austausch",
+        "Veröffentlichungsfeeds",
+        "Community-Beitritt als Zugangssignal",
+        "Moderation im Discord"
+      ]
+    },
+    {
+      "system": "LinkedIn",
+      "owns": [
+        "Externe Freischaltungsanbahnung",
+        "manuell bestätigtes Zugangssignal"
+      ]
+    },
+    {
+      "system": "Institut",
+      "owns": [
+        "Quellenarbeit",
+        "Review",
+        "Mitwirkungsrollen",
+        "Forschungs- und Publikationslogik"
+      ]
+    }
+  ],
+  "implementationNotes": [
+    "Die Akademie-App darf Lernfortschritt nie aus Discord-Rollen ableiten.",
+    "Discord-Rollen duerfen keine Prüfungen, Zertifikate, Module oder Vorlesungen freischalten.",
+    "LinkedIn-Freischaltung und Community-Beitritt muessen in derselben Akademie-Zugangslogik landen.",
+    "Discord darf als Community-Beitrittssignal erhalten bleiben.",
+    "Vor dem Löschen alter Akademie-Rollen muss die Akademie-App Zugang und Kohorte aus Supabase lesen."
+    ,"Legacy-Studierende muessen ihren bisherigen Lernraum behalten; Migration ist additiv, nicht entziehend."
+  ]
+}
