@@ -111,28 +111,28 @@
   function titleText(state, variant, userName) {
     if (state === "checking") return "Discord-Status wird geprüft.";
     if (state === "member") return `Du bist angemeldet${userName ? `, ${userName}` : ""}.`;
-    if (state === "nonmember") return "Discord erkannt, aber noch keine WÖk-Mitgliedschaft.";
+    if (state === "nonmember") return "Discord erkannt, aber noch keine Community-Freischaltung.";
     if (state === "error") return "Anmeldestatus gerade nicht erreichbar.";
-    return variant === "factcheck" ? "Mit Discord anmelden." : "Mehr Nutzen im WÖk-Server.";
+    return variant === "factcheck" ? "Mit Community verbinden." : "Community verbinden.";
   }
 
   function copyText(state, variant) {
     if (state === "checking") {
-      return "Die Website fragt den WÖk-Server ab und prüft, ob dein Discord-Konto dort Mitglied ist.";
+      return "Die Website prüft dein Community-Signal. Akademie-Fortschritt und Prüfungen bleiben in der Akademie.";
     }
     if (state === "member") {
-      return "Dein Discord-Konto wurde als Mitglied des WÖk-Servers erkannt. Damit stehen dir die Community-Funktionen auf Website und WebApp zur Verfügung.";
+      return "Dein Community-Beitritt wurde erkannt. Erweiterte Bereiche können über Community-Beitritt oder LinkedIn-Freischaltung freigegeben werden.";
     }
     if (state === "nonmember") {
-      return "Dein Discord-Konto ist angemeldet, aber auf dem WÖk-Server noch nicht als Mitglied gefunden. Tritt dem Server bei und prüfe den Status danach erneut.";
+      return "Dein Discord-Konto ist angemeldet, aber noch nicht als Community-Beitritt erkannt. Alternativ ist eine LinkedIn-Freischaltung möglich.";
     }
     if (state === "error") {
       return "Der Login kann lokal gespeichert sein, aber die Mitgliedschaft konnte gerade nicht geprüft werden. Du kannst es direkt noch einmal versuchen.";
     }
     if (variant === "factcheck") {
-      return "Melde dich mit Discord an, damit die Website erkennt, ob du Mitglied im WÖk-Server bist. Ohne Anmeldung bleibt die Seite im Basiszugang.";
+      return "Verbinde dich mit der Community oder nutze die LinkedIn-Freischaltung. Ohne Freischaltung bleibt die Seite im Basiszugang.";
     }
-    return "Ohne Community-Mitgliedschaft ist die WebApp als Basiszugang gedacht. Mit Discord-Anmeldung erkennt die Website, ob du im WÖk-Server bist und kann erweiterte Workflows zuordnen.";
+    return "Ohne Freischaltung ist die WebApp als Basiszugang gedacht. Community-Beitritt und LinkedIn-Freischaltung sind die zwei Wege in erweiterte Bereiche; Lernfortschritt läuft in der Akademie.";
   }
 
   function renderActions(actions, state, variant) {
@@ -157,7 +157,7 @@
 
     actions.append(
       actionLink(buildDiscordLoginUrl(), "Mit Discord anmelden", "btn btn-primary"),
-      actionLink(discordInviteUrl, state === "nonmember" ? "WÖk-Community beitreten" : "Server ansehen", "btn btn-secondary", true)
+      actionLink(discordInviteUrl, state === "nonmember" ? "WÖk-Community beitreten" : "Community ansehen", "btn btn-secondary", true)
     );
     if (variant !== "factcheck") {
       actions.append(actionLink("../werkzeuge/faktencheck/", "Wirkungscheck ansehen", "btn btn-secondary"));
@@ -168,7 +168,7 @@
     document.querySelectorAll("[data-community-note]").forEach((note) => {
       note.replaceChildren();
       if (state === "member") {
-        note.append(document.createTextNode("Community-Zugang aktiv: Dein Discord-Login wurde erkannt."));
+        note.append(document.createTextNode("Community-Zugang aktiv: Dein Community-Beitritt wurde erkannt."));
         return;
       }
       note.append(document.createTextNode("Noch nicht angemeldet? "));

@@ -2,6 +2,8 @@
 
 Stand: 19. Mai 2026
 
+> Überholt / Übergang: Diese Anleitung beschreibt den alten Zustand, in dem Discord Zugang, Kohorte und Status für die Akademie vorgelagert hat. Zielstand ab Juli 2026: Akademie-Zugang kann über Community-Beitritt oder LinkedIn-Freischaltung entstehen, aber Lernfortschritt, Prüfungen, Zertifikate und Kohortenlogik laufen ausschließlich in der Akademie-Plattform. Bestehende Studierende dürfen nicht zurückfallen; alte Discord-Rollen erst nach Plattform-Audit entfernen. Aktuelle Zielstruktur: `docs/discord-community-neustart.md`.
+
 ## Ziel
 
 Discord regelt Zugang, Kohorte und groben Status. Supabase regelt Lernstand, Module, Prüfungen, Fortschritt und Freischaltungen.
