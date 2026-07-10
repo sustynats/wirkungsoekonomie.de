@@ -384,8 +384,9 @@ for (const term of importedTerms) {
 
 registry.generatedAt = new Date().toISOString();
 const existingSourceNotes = String(registry.sourceNote || "").split(/\s*·\s*/);
+const supersededSourceDocuments = importData.supersedesSourceDocuments || [];
 registry.sourceNote = unique([
-  ...existingSourceNotes,
+  ...existingSourceNotes.filter((note) => !supersededSourceDocuments.some((document) => note.startsWith(`${document} synchronisiert am `))),
   `${importData.sourceDocument || path.basename(IMPORT_FILE)} synchronisiert am ${DATA_STAND}`,
 ]).join(" · ");
 registry.terms = terms;

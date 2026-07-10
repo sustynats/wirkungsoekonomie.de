@@ -4,15 +4,24 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const SOURCE = process.env.WOEMS_TEXT;
+const PAGE_MAP_SOURCE = process.env.WOEMS_PAGE_MAP;
 const METHOD_OUT = path.join(ROOT, "content/methods/woems-methoden.json");
 const CANVAS_OUT = path.join(ROOT, "content/methods/woems-canvas.json");
 
 if (!SOURCE || !fs.existsSync(SOURCE)) {
-  throw new Error("WOEMS_TEXT muss auf den mit textutil extrahierten WOEMS-1.0-Text zeigen.");
+  throw new Error("WOEMS_TEXT muss auf den mit textutil extrahierten WÖMS-Quelltext zeigen.");
+}
+if (!PAGE_MAP_SOURCE || !fs.existsSync(PAGE_MAP_SOURCE)) {
+  throw new Error("WOEMS_PAGE_MAP muss auf die aus dem gerenderten PDF extrahierte Methoden-Seitenkarte zeigen.");
 }
 
-const raw = fs.readFileSync(SOURCE, "utf8").replace(/\f/g, "\n");
+const sourceText = fs.readFileSync(SOURCE, "utf8");
+const normalizeText = (value) => String(value)
+  .replace(/[\u200e\u200f\u202a-\u202e\u2066-\u2069]/g, "")
+  .replace(/[\u2028\u2029]/g, "\n");
+const raw = normalizeText(sourceText).replace(/\f/g, "\n");
 const lines = raw.split(/\r?\n/).map((line) => line.trim());
+const sourcePageMap = JSON.parse(fs.readFileSync(PAGE_MAP_SOURCE, "utf8"));
 
 const categories = {
   A: "Orientierung, Mandat und Schutzrahmen",
@@ -22,7 +31,20 @@ const categories = {
   E: "Strategie, Portfolio und Governance",
   F: "Innovation, Angebote und Geschäftsmodelle",
   G: "Organisation, Führung und Kultur",
-  H: "Umsetzung, Monitoring, Lernen und Assurance"
+  H: "Umsetzung, Monitoring, Lernen und Assurance",
+  I: "Strategische Vorausschau und Entscheidungsintelligenz",
+  J: "Business Architecture, Capabilities und Zielarchitektur",
+  K: "Wirkungswertströme, Prozesse, Services und Flow",
+  L: "Product Operating Model, Teams, Plattformen und Ökosysteme",
+  M: "Change, Adoption, Workforce, Skills und Wissen",
+  N: "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+  O: "Daten, Technologie, KI und agentische Systeme",
+  P: "Qualität, operative Resilienz, Kontrollen und integrierte Assurance"
+};
+
+const categorySizes = {
+  A: 8, B: 12, C: 10, D: 12, E: 12, F: 14, G: 8, H: 8,
+  I: 8, J: 8, K: 8, L: 8, M: 10, N: 8, O: 8, P: 10
 };
 
 const requiredCanvasFields = [
@@ -65,7 +87,31 @@ const variantMethodMap = {
   "Wirkungspartnerschafts-Mandat": "A01",
   "Ecosystem-Wirkungsmodell": "C03",
   "Geteilte Daten- und Evidenzarchitektur": "D05",
-  "Konflikt-, Nutzen- und Lastenteilungs-Canvas": "G05"
+  "Konflikt-, Nutzen- und Lastenteilungs-Canvas": "G05",
+  "Annahmen- und Unsicherheits-Canvas": "I01",
+  "Horizon-Scanning-Radar": "I02",
+  "Szenario- und Wirkungsstresstest-Canvas": "I05",
+  "Adaptive-Pfade-Canvas": "I06",
+  "Wirkungs-Capability-Canvas": "J01",
+  "Capability-to-Impact-Heatmap": "J02",
+  "Wirkungswertstrom-Canvas": "K01",
+  "Target-Operating-Model-Canvas": "J07",
+  "Wirkungs-Product-Operating-Model-Canvas": "L01",
+  "Wirkungs-Teamtopologie-Canvas": "L04",
+  "Plattform-als-Wirkungsinfrastruktur-Canvas": "L06",
+  "Produktfinanzierungs-Canvas": "L07",
+  "Change-Impact-Canvas": "M02",
+  "Sponsor- und Change-Netzwerk-Canvas": "M05",
+  "Adoptions- und Verhaltens-Canvas": "M08",
+  "Skills- und Wissensarchitektur-Canvas": "M09",
+  "Wirkungstransformations-Portfolio": "N01",
+  "Programm- und Abhängigkeits-Canvas": "N02",
+  "Impact-and-Benefits-Realization-Canvas": "N06",
+  "Handover-in-den-Regelbetrieb-Canvas": "N07",
+  "Wirkungsdaten- und Lineage-Canvas": "O02",
+  "KI-/Agenten-Wirkungsgovernance-Canvas": "O05",
+  "Kritische-Wirkungsservice- und BIA-Canvas": "P04",
+  "Integrierte-Assurance-Canvas": "P09"
 };
 
 function slug(value) {
@@ -121,10 +167,20 @@ function expandRange(start, end) {
 function expandMethodRefs(value) {
   const normalized = String(value).replace(/[–—]/g, "-");
   const ids = [];
-  if (/\bG\/H\b/.test(normalized)) {
-    ids.push(...expandRange("G01", "G08"), ...expandRange("H01", "H08"));
+  for (const match of normalized.matchAll(/\b([A-P])\/([A-P])\b/g)) {
+    for (const category of [match[1], match[2]]) {
+      ids.push(...expandRange(`${category}01`, `${category}${String(categorySizes[category]).padStart(2, "0")}`));
+    }
   }
-  for (const match of normalized.matchAll(/([A-H]\d{2})\s*-\s*([A-H]\d{2})|([A-H]\d{2})/g)) {
+  for (const match of normalized.matchAll(/\b([A-P])\s*-\s*([A-P])\b/g)) {
+    const start = match[1].charCodeAt(0);
+    const end = match[2].charCodeAt(0);
+    for (let code = Math.min(start, end); code <= Math.max(start, end); code += 1) {
+      const category = String.fromCharCode(code);
+      ids.push(...expandRange(`${category}01`, `${category}${String(categorySizes[category]).padStart(2, "0")}`));
+    }
+  }
+  for (const match of normalized.matchAll(/([A-P]\d{2})\s*-\s*([A-P]\d{2})|([A-P]\d{2})/g)) {
     if (match[1] && match[2]) ids.push(...expandRange(match[1], match[2]));
     else if (match[3]) ids.push(match[3]);
   }
@@ -168,24 +224,19 @@ function canvasFields(canvasSpec, steps) {
 }
 
 const methodStarts = [];
-for (let index = 0; index < lines.length; index += 1) {
-  const match = lines[index].match(/^([A-H]\d{2}) · ([^\t]+)$/);
+const methodSectionEnd = lines.findLastIndex((line) => line.startsWith("Teil V – Vierzehn Anwendungs- und Realisierungsmodule"));
+for (let index = 0; index < methodSectionEnd; index += 1) {
+  const match = lines[index].match(/^([A-P]\d{2}) · ([^\t]+)$/);
   if (match && !/Fortsetzung/.test(match[2])) methodStarts.push({ index, id: match[1], name: match[2] });
 }
 
 const uniqueStarts = methodStarts.filter((item, index, all) => all.findIndex((other) => other.id === item.id) === index);
-if (uniqueStarts.length !== 84) throw new Error(`84 Kernmethoden erwartet, ${uniqueStarts.length} gefunden.`);
-
-const tocPages = new Map();
-for (const line of lines) {
-  const match = line.match(/^([A-H]\d{2}) · .+\t(\d+)$/);
-  if (match && !tocPages.has(match[1])) tocPages.set(match[1], Number(match[2]));
-}
+if (uniqueStarts.length !== 152) throw new Error(`152 Kernmethoden erwartet, ${uniqueStarts.length} gefunden.`);
 
 const methods = uniqueStarts.map((start, index) => {
-  const end = uniqueStarts[index + 1]?.index ?? lines.findIndex((line, lineIndex) => lineIndex > start.index && line.startsWith("Teil IV"));
+  const end = uniqueStarts[index + 1]?.index ?? lines.findIndex((line, lineIndex) => lineIndex > start.index && line.startsWith("Teil V"));
   const segment = lines.slice(start.index, end > start.index ? end : undefined);
-  const versionIndex = segment.findIndex((line) => /^Version 1\.0/.test(line));
+  const versionIndex = segment.findIndex((line) => /^Version \d+\.\d+/.test(line));
   const purpose = versionIndex >= 0 ? segment.slice(versionIndex + 1).find(Boolean) || "" : "";
   const output = nextValue(segment, "Verbindlicher Output");
   const inputs = splitItems(nextValue(segment, "Benötigte Inputs"));
@@ -194,10 +245,8 @@ const methods = uniqueStarts.map((start, index) => {
     .filter((line) => /^\d+\.\s/.test(line))
     .map(stripListMarker);
   const quality = between(segment, "Qualitätskriterien", ["Typische Fehlanwendungen und Schutzmaßnahmen"])
-    .filter((line) => /^[•\-]/.test(line))
     .map(stripListMarker);
   const protection = between(segment, "Typische Fehlanwendungen und Schutzmaßnahmen", ["Varianten", "Quellen- und Herkunftslinie"])
-    .filter((line) => /^[•\-]/.test(line))
     .map(stripListMarker);
   const canvasSpec = nextValue(segment, "Visualisierungs- und Canvas-Spezifikation");
   const canvasId = `canvas-${start.id}`;
@@ -206,7 +255,7 @@ const methods = uniqueStarts.map((start, index) => {
     kategorie: start.id[0],
     kategorieName: categories[start.id[0]],
     name: start.name,
-    docxSeite: tocPages.get(start.id) || null,
+    docxSeite: sourcePageMap[start.id] || null,
     zweck: purpose,
     inputs,
     schritte: steps,
@@ -227,15 +276,15 @@ const methodCanvases = methods.map((method) => ({
   pflichtfelder: requiredCanvasFields
 }));
 
-const partStart = lines.findLastIndex((line) => line.startsWith("Teil IV – Acht Anwendungsmodule"));
-const partEnd = lines.findIndex((line, index) => index > partStart && line.startsWith("Teil V – Zwölf"));
+const partStart = lines.findLastIndex((line) => line.startsWith("Teil V – Vierzehn Anwendungs- und Realisierungsmodule"));
+const partEnd = lines.findIndex((line, index) => index > partStart && line.startsWith("Teil VI – Zwanzig"));
 const variantLines = lines.slice(partStart, partEnd);
 let domain = "";
 let recommended = [];
 const variantCanvases = [];
 for (let index = 0; index < variantLines.length; index += 1) {
   const line = variantLines[index];
-  if (/^[1-8]\.\s/.test(line)) {
+  if (/^(?:[1-9]|1[0-4])\.\s/.test(line)) {
     domain = line.replace(/^\d+\.\s*/, "");
     recommended = [];
     continue;
@@ -268,18 +317,18 @@ for (let index = 0; index < variantLines.length; index += 1) {
   });
 }
 
-if (variantCanvases.length !== 32) throw new Error(`32 Canvas-Varianten erwartet, ${variantCanvases.length} gefunden.`);
+if (variantCanvases.length !== 56) throw new Error(`56 Canvas-Varianten erwartet, ${variantCanvases.length} gefunden.`);
 
-const sourceHash = crypto.createHash("sha256").update(raw).digest("hex");
+const sourceHash = crypto.createHash("sha256").update(sourceText).digest("hex");
 const methodRegistry = {
   schemaVersion: "1.0.0",
   registryId: "woems-methoden-registry",
   title: "Wirkungsökonomisches Methodensystem (WÖMS) – Methoden-Registry",
-  version: "1.0",
+  version: "2.0",
   stand: "2026-07-10",
-  source: "Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx",
+  source: "Wirkungsoekonomisches_Methodensystem_WOEMS_2.0.docx",
   sourceSha256: sourceHash,
-  counts: { categories: 8, methods: methods.length },
+  counts: { categories: 16, methods: methods.length },
   kategorien: Object.entries(categories).map(([id, name]) => ({ id, name })),
   methods: methods.map(({ _canvasSpezifikation, ...method }) => method)
 };
@@ -288,9 +337,9 @@ const canvasRegistry = {
   schemaVersion: "1.0.0",
   registryId: "woems-canvas-registry",
   title: "WÖMS Canvas-Spezifikationen",
-  version: "1.0",
+  version: "2.0",
   stand: "2026-07-10",
-  source: "Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx",
+  source: "Wirkungsoekonomisches_Methodensystem_WOEMS_2.0.docx",
   counts: { methodCanvases: methodCanvases.length, variants: variantCanvases.length, total: methodCanvases.length + variantCanvases.length },
   mindeststandard: {
     metadaten: ["canvasId", "methodId", "version", "datum", "fall", "verantwortlicheModeration"],

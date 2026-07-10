@@ -1,11 +1,11 @@
-# Glossar-Import WÖMS 1.0 und WÖMM 1.0
+# Glossar-Import WÖMS 2.0 und WÖMM 2.0
 
 Stand: 2026-07-10
 
-- Importquelle: `content/glossary/imports/woems-woemm-1.0.json`
-- Redaktionsquelle: WÖMS 1.0 und WÖMM 1.0
+- Importquelle: `content/glossary/imports/woems-woemm-2.0.json`
+- Redaktionsquelle: WÖMS 2.0 und WÖMM 2.0
 - Neue Begriffe: 0
-- Aktualisierte Begriffe: 99
+- Aktualisierte Begriffe: 175
 - Offene Querverweise ohne Glossarziel: 0
 
 ## Neu angelegt
@@ -29,6 +29,14 @@ Stand: 2026-07-10
 - /begriffe/woems-methodenregister/
 - /begriffe/wirkungssystem-landkarte/
 - /begriffe/wirtschaftliche-tragfaehigkeit/
+- /begriffe/wirkungsrealisierungsarchitektur/
+- /begriffe/woems-realisierungs-und-betriebsmethoden/
+- /begriffe/woemm-managementfunktion/
+- /begriffe/wirkungs-capability/
+- /begriffe/wirkungswertstrom/
+- /begriffe/wirkungs-product-operating-model/
+- /begriffe/impact-benefits-realization/
+- /begriffe/integrierte-assurance/
 - /begriffe/woems-auftragsklaerung/
 - /begriffe/wirkungskompass-ausrichtung/
 - /begriffe/systemgrenzen-und-reichweiten-canvas/
@@ -113,6 +121,74 @@ Stand: 2026-07-10
 - /begriffe/wirkungsfruehwarn-und-eskalationssystem/
 - /begriffe/wirkungsreview-und-lernende-retrospektive/
 - /begriffe/wirkungsassurance-audit-und-methodenpruefung/
+- /begriffe/annahmen-und-unsicherheitslandkarte/
+- /begriffe/horizon-scanning-und-schwache-signale-radar/
+- /begriffe/trend-diskontinuitaets-und-wild-card-analyse/
+- /begriffe/mehrfachszenario-konstruktion/
+- /begriffe/strategie-und-wirkungsstresstest/
+- /begriffe/robuste-optionen-und-adaptive-wirkungspfade/
+- /begriffe/entscheidungsklassen-und-reversibilitaetscheck/
+- /begriffe/entscheidungslog-pre-mortem-und-evidenzupdate/
+- /begriffe/wirkungs-capability-map/
+- /begriffe/capability-to-impact-matrix/
+- /begriffe/capability-reifegrad-und-heatmap/
+- /begriffe/capability-abhaengigkeitsnetz/
+- /begriffe/capability-gap-und-investitionspriorisierung/
+- /begriffe/business-architecture-systemkarte/
+- /begriffe/zielarchitektur-und-uebergangszustaende/
+- /begriffe/architekturprinzipien-und-entscheidungsprotokolle/
+- /begriffe/wirkungswertstrom-karte/
+- /begriffe/outcome-stream-map/
+- /begriffe/end-to-end-prozessarchitektur/
+- /begriffe/service-blueprint-mit-wirkungsempfaengern/
+- /begriffe/nutzer-stakeholder-und-betroffenenreise/
+- /begriffe/prozess-kii-und-wirkungskontrollpunkte/
+- /begriffe/engpass-verschwendungs-und-externalitaetenanalyse/
+- /begriffe/process-mining-und-realitaetsreview/
+- /begriffe/wirkungs-product-operating-model-canvas/
+- /begriffe/langfristige-produkt-und-wirkungsverantwortungskarte/
+- /begriffe/discovery-delivery-wirkungslernloop/
+- /begriffe/wirkungsorientierte-teamtopologie/
+- /begriffe/kognitive-last-und-teaminteraktionskarte/
+- /begriffe/plattform-als-wirkungsinfrastruktur-canvas/
+- /begriffe/produktfinanzierungs-und-outcome-portfolio/
+- /begriffe/oekosystem-und-plattformorchestrierungsarchitektur/
+- /begriffe/wirkungsoekonomischer-change-case/
+- /begriffe/change-impact-und-betroffenheitsanalyse/
+- /begriffe/sponsor-und-fuehrungskoalitionsarchitektur/
+- /begriffe/macht-widerstands-und-konfliktkarte/
+- /begriffe/change-netzwerk-und-multiplikatorenmodell/
+- /begriffe/change-story-und-kommunikationsarchitektur/
+- /begriffe/befaehigungs-und-qualifizierungsplan/
+- /begriffe/adoptions-und-verhaltensaenderungsplan/
+- /begriffe/skills-workforce-und-rollenarchitektur/
+- /begriffe/wissensfluss-kritisches-wissen-und-communities-canvas/
+- /begriffe/wirkungstransformations-portfolio/
+- /begriffe/programmarchitektur-und-abhaengigkeitskarte/
+- /begriffe/initiativenauftrag-und-wirkungsvertrag/
+- /begriffe/transformationsbacklog-und-portfolio-kanban/
+- /begriffe/kapazitaets-ressourcen-und-kritischer-pfad-plan/
+- /begriffe/impact-and-benefits-realization-map/
+- /begriffe/benefit-impact-owner-und-uebergabe-in-den-regelbetrieb/
+- /begriffe/transformation-office-design-und-delivery-review/
+- /begriffe/wirkungsdaten-governance-und-data-ownership/
+- /begriffe/data-lineage-und-evidenzherkunftskarte/
+- /begriffe/datenprodukt-canvas/
+- /begriffe/technologieabhaengigkeits-lock-in-und-souveraenitaetskarte/
+- /begriffe/ki-system-wirkungsfolgenabschaetzung/
+- /begriffe/ki-lebenszyklus-modellrisiko-und-human-oversight-canvas/
+- /begriffe/agentische-delegations-und-orchestrierungsarchitektur/
+- /begriffe/ki-agenten-incident-abschalt-und-rueckbauplan/
+- /begriffe/wirkungs-excellence-selbstbewertung/
+- /begriffe/kontinuierliche-wirkungsverbesserung/
+- /begriffe/ursachen-incident-und-lernanalyse/
+- /begriffe/business-impact-analysis-fuer-kritische-wirkungsservices/
+- /begriffe/kontinuitaets-recovery-und-wirkungsresilienzplan/
+- /begriffe/krisensimulation-red-teaming-und-tabletop-exercise/
+- /begriffe/barrier-bow-tie-und-kontrollwirksamkeitskarte/
+- /begriffe/key-impact-controls-und-kontrollbibliothek/
+- /begriffe/integrierte-assurance-map-und-three-lines/
+- /begriffe/unabhaengige-methoden-modell-und-wirkungspruefung/
 
 ## Offene Querverweise
 

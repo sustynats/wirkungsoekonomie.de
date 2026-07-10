@@ -2,13 +2,13 @@
   "schemaVersion": "1.0.0",
   "registryId": "woems-methoden-registry",
   "title": "Wirkungsökonomisches Methodensystem (WÖMS) – Methoden-Registry",
-  "version": "1.0",
+  "version": "2.0",
   "stand": "2026-07-10",
-  "source": "Wirkungsoekonomisches_Methodensystem_WOEMS_1.0.docx",
-  "sourceSha256": "b082088a27f3a06931c1e535ce74a779c171c022aa00e09a79a555b5e1d70e0a",
+  "source": "Wirkungsoekonomisches_Methodensystem_WOEMS_2.0.docx",
+  "sourceSha256": "fdfb7cb2484666daa71af84caa376bf3d7c8621dc4d5b493807d505daa1c9a40",
   "counts": {
-    "categories": 8,
-    "methods": 84
+    "categories": 16,
+    "methods": 152
   },
   "kategorien": [
     {
@@ -42,6 +42,38 @@
     {
       "id": "H",
       "name": "Umsetzung, Monitoring, Lernen und Assurance"
+    },
+    {
+      "id": "I",
+      "name": "Strategische Vorausschau und Entscheidungsintelligenz"
+    },
+    {
+      "id": "J",
+      "name": "Business Architecture, Capabilities und Zielarchitektur"
+    },
+    {
+      "id": "K",
+      "name": "Wirkungswertströme, Prozesse, Services und Flow"
+    },
+    {
+      "id": "L",
+      "name": "Product Operating Model, Teams, Plattformen und Ökosysteme"
+    },
+    {
+      "id": "M",
+      "name": "Change, Adoption, Workforce, Skills und Wissen"
+    },
+    {
+      "id": "N",
+      "name": "Portfolio, Programme, Delivery und Impact & Benefits Realization"
+    },
+    {
+      "id": "O",
+      "name": "Daten, Technologie, KI und agentische Systeme"
+    },
+    {
+      "id": "P",
+      "name": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance"
     }
   ],
   "methods": [
@@ -50,7 +82,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "WÖMS-Auftragsklärung",
-      "docxSeite": 19,
+      "docxSeite": 21,
       "zweck": "Klären, welche Entscheidung, Zustandsveränderung und Verantwortung der Methodenprozess tatsächlich unterstützen soll.",
       "inputs": [
         "Anlass",
@@ -97,7 +129,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "Wirkungskompass-Ausrichtung",
-      "docxSeite": 21,
+      "docxSeite": 23,
       "zweck": "Den normativen Referenzrahmen Mensch, Planet und Demokratie sowie SDGs, Agenda 2030 und SDG+ für den konkreten Fall operationalisieren.",
       "inputs": [
         "Auftrag",
@@ -144,7 +176,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "Systemgrenzen- und Reichweiten-Canvas",
-      "docxSeite": 23,
+      "docxSeite": 25,
       "zweck": "Zeitliche, räumliche, organisatorische, lebenszyklische und kausale Grenzen so festlegen, dass wesentliche Wirkungen weder versteckt noch unbeherrschbar weit gefasst werden.",
       "inputs": [
         "Auftrag",
@@ -192,7 +224,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "Wirkungsempfänger- und Stakeholder-Landkarte",
-      "docxSeite": 25,
+      "docxSeite": 27,
       "zweck": "Alle direkt und indirekt betroffenen Menschen, Gruppen, Lebewesen, Ökosysteme, Institutionen und künftigen Generationen identifizieren und ihre Perspektiven unterscheiden.",
       "inputs": [
         "Auftrag",
@@ -240,7 +272,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "Wirkungsgrenzen- und Rechteprüfung",
-      "docxSeite": 27,
+      "docxSeite": 29,
       "zweck": "Nicht kompensierbare Grenzen, Rechte, Mindeststandards und rote Linien vor Optimierung und Abwägung prüfen.",
       "inputs": [
         "Auftrag",
@@ -286,7 +318,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "Evidenz- und Annahmenregister",
-      "docxSeite": 29,
+      "docxSeite": 31,
       "zweck": "Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.",
       "inputs": [
         "Auftrag",
@@ -328,7 +360,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "Entscheidungskontext- und Komplexitätscheck",
-      "docxSeite": 31,
+      "docxSeite": 33,
       "zweck": "Bestimmen, ob eine Situation überwiegend klar, kompliziert, komplex, chaotisch oder widersprüchlich ist und welche Vorgehenslogik dazu passt.",
       "inputs": [
         "Auftrag",
@@ -376,7 +408,7 @@
       "kategorie": "A",
       "kategorieName": "Orientierung, Mandat und Schutzrahmen",
       "name": "Beteiligungs- und Repräsentationsdesign",
-      "docxSeite": 33,
+      "docxSeite": 35,
       "zweck": "Beteiligung so gestalten, dass Betroffene, Wissensträger:innen, Entscheider:innen und fehlende Stimmen angemessen in Analyse und Entscheidung eingehen.",
       "inputs": [
         "Auftrag",
@@ -420,7 +452,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Wirkungszustandskarte",
-      "docxSeite": 36,
+      "docxSeite": 38,
       "zweck": "Den gegenwärtigen Zustand eines Wirkungsraums anhand beobachtbarer Bedingungen, Erfahrungen, Daten und institutioneller Regeln beschreiben.",
       "inputs": [
         "Auftrag",
@@ -472,7 +504,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Wirkungsproblem-Canvas",
-      "docxSeite": 38,
+      "docxSeite": 40,
       "zweck": "Ein Problem als unerwünschte Zustandsveränderung mit Betroffenen, Ursachen, aufrechterhaltenden Bedingungen und Folgewirkungen formulieren.",
       "inputs": [
         "Auftrag",
@@ -523,7 +555,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Problem- und Wirkungsbaum",
-      "docxSeite": 40,
+      "docxSeite": 42,
       "zweck": "Ursachen, Kernproblem und Folgewirkungen in einer ersten gerichteten Struktur ordnen und später in ein dynamisches Modell überführen.",
       "inputs": [
         "Auftrag",
@@ -571,7 +603,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Kausalschleifen- und Rückkopplungsdiagramm",
-      "docxSeite": 42,
+      "docxSeite": 44,
       "zweck": "Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare Dynamiken sichtbar machen.",
       "inputs": [
         "Auftrag",
@@ -620,7 +652,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Bestands- und Flussmodell",
-      "docxSeite": 44,
+      "docxSeite": 46,
       "zweck": "Akkumulationen, Zuflüsse, Abflüsse und Verzögerungen erfassen, wenn Mengen- und Zeitdynamik entscheidend sind.",
       "inputs": [
         "Auftrag",
@@ -668,7 +700,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Interdependenz- und Abhängigkeitsmatrix",
-      "docxSeite": 46,
+      "docxSeite": 48,
       "zweck": "Wechselwirkungen zwischen Wirkungsfeldern, Akteuren, Ressourcen oder Systemzuständen strukturiert vergleichen.",
       "inputs": [
         "Auftrag",
@@ -717,7 +749,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Externalitäten- und Kostenverlagerungskarte",
-      "docxSeite": 48,
+      "docxSeite": 50,
       "zweck": "Unsichtbare ökologische, soziale, gesundheitliche, demokratische und zeitliche Kosten sowie Nutzen entlang von Akteuren und Lebenszyklus sichtbar machen.",
       "inputs": [
         "Auftrag",
@@ -768,7 +800,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Wirkungsordnungen-Landkarte",
-      "docxSeite": 50,
+      "docxSeite": 52,
       "zweck": "Unmittelbare, indirekte und strukturverändernde Wirkungen erster, zweiter und dritter Ordnung unterscheiden.",
       "inputs": [
         "Auftrag",
@@ -816,7 +848,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Zeit-, Verzögerungs- und Generationenkarte",
-      "docxSeite": 52,
+      "docxSeite": 54,
       "zweck": "Wirkungszeit, Regenerationszeit, Entscheidungszeit, Nutzungszeit und Generationenfolgen explizit machen.",
       "inputs": [
         "Auftrag",
@@ -866,7 +898,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Systemhebel-Analyse",
-      "docxSeite": 54,
+      "docxSeite": 56,
       "zweck": "Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpotenzial identifizieren und nicht mit bloß zentralen Variablen verwechseln.",
       "inputs": [
         "Auftrag",
@@ -916,7 +948,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Engpass- und Reverse-Merit-Analyse",
-      "docxSeite": 56,
+      "docxSeite": 58,
       "zweck": "Das schwächste relevante Wirkungsfeld, eine harte Mindestbedingung oder den systemischen Engpass bestimmen, der den Gesamterfolg begrenzt.",
       "inputs": [
         "Auftrag",
@@ -965,7 +997,7 @@
       "kategorie": "B",
       "kategorieName": "Systemdiagnose und Wirkungszusammenhänge",
       "name": "Wirkungs-Systemstresstest",
-      "docxSeite": 58,
+      "docxSeite": 60,
       "zweck": "Prüfen, wie ein Modell unter Schocks, Trendbrüchen, Datenfehlern, Gegenstrategien und kumulativen Belastungen wirkt.",
       "inputs": [
         "Auftrag",
@@ -1021,7 +1053,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Wirkungspfad",
-      "docxSeite": 61,
+      "docxSeite": 63,
       "zweck": "Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.",
       "inputs": [
         "Auftrag",
@@ -1076,7 +1108,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Wirkmechanismus-Canvas",
-      "docxSeite": 63,
+      "docxSeite": 65,
       "zweck": "Erklären, durch welchen sozialen, technischen, ökonomischen, psychologischen, institutionellen oder ökologischen Mechanismus eine Handlung Zustände verändern soll.",
       "inputs": [
         "Auftrag",
@@ -1125,7 +1157,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Wirkungsökonomische Theory of Change",
-      "docxSeite": 65,
+      "docxSeite": 67,
       "zweck": "Eine Theory of Change um negative Wirkungen, Nichtkompensation, Systemhebel, Rückkopplung, Transformationswirkung und Entscheidungstore erweitern.",
       "inputs": [
         "Auftrag",
@@ -1174,7 +1206,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Outcome- und Empfängerlandkarte",
-      "docxSeite": 67,
+      "docxSeite": 69,
       "zweck": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.",
       "inputs": [
         "Auftrag",
@@ -1222,7 +1254,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Beitragsanalyse",
-      "docxSeite": 69,
+      "docxSeite": 71,
       "zweck": "Plausibel und evidenzbasiert beurteilen, welchen Beitrag eine Intervention zu beobachteten Wirkungen geleistet hat, ohne unangemessene Alleinursächlichkeit zu behaupten.",
       "inputs": [
         "Auftrag",
@@ -1271,7 +1303,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Wirkungshypothesen-Register",
-      "docxSeite": 71,
+      "docxSeite": 73,
       "zweck": "Alle entscheidungsrelevanten Wirkungsannahmen als testbare Hypothesen mit Falsifikations- und Lernkriterien führen.",
       "inputs": [
         "Auftrag",
@@ -1322,7 +1354,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Nebenwirkungs-, Wechselwirkungs- und Rebound-Analyse",
-      "docxSeite": 73,
+      "docxSeite": 75,
       "zweck": "Unerwünschte, indirekte, kompensierende oder zurückschlagende Wirkungen systematisch vor und während der Umsetzung prüfen.",
       "inputs": [
         "Auftrag",
@@ -1372,7 +1404,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Wirkungsszenarien und Zukunftsbilder",
-      "docxSeite": 75,
+      "docxSeite": 77,
       "zweck": "Mehrere plausible Zukunftskontexte entwickeln, um Strategien, Wirkungsmodelle und Annahmen auf Robustheit und blinde Flecken zu prüfen.",
       "inputs": [
         "Auftrag",
@@ -1421,7 +1453,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Wirkungsresilienz-Pfade",
-      "docxSeite": 77,
+      "docxSeite": 79,
       "zweck": "Fähigkeiten und Pfade entwerfen, mit denen wesentliche positive Wirkung unter Störungen erhalten, angepasst oder regeneriert wird.",
       "inputs": [
         "Auftrag",
@@ -1470,7 +1502,7 @@
       "kategorie": "C",
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Transformationswirkungs-Logik",
-      "docxSeite": 79,
+      "docxSeite": 81,
       "zweck": "Erfassen, ob und wie eine Intervention Entscheidungsregeln, Standards, Infrastrukturen, Märkte, Machtverhältnisse oder Handlungspfade verändert.",
       "inputs": [
         "Auftrag",
@@ -1520,7 +1552,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Referenzrahmen- und Standardmapping",
-      "docxSeite": 82,
+      "docxSeite": 84,
       "zweck": "Relevante SDGs, SDG+, ESRS, GRI, ISO-, Branchen-, Rechts- und Wissenschaftsreferenzen einem Wirkungsobjekt zuordnen.",
       "inputs": [
         "Auftrag",
@@ -1572,7 +1604,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Wirkungsrelevanz- und Materialitätsanalyse",
-      "docxSeite": 84,
+      "docxSeite": 86,
       "zweck": "Relevante tatsächliche und potenzielle Wirkungen unabhängig von finanzieller Materialität identifizieren und anschließend mit Risiken, Chancen und Abhängigkeiten verbinden.",
       "inputs": [
         "Auftrag",
@@ -1621,7 +1653,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "WÖk-Indikatorenarchitektur",
-      "docxSeite": 86,
+      "docxSeite": 88,
       "zweck": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.",
       "inputs": [
         "Auftrag",
@@ -1676,7 +1708,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "KII-Design – Key Impact Indicators",
-      "docxSeite": 88,
+      "docxSeite": 90,
       "zweck": "Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.",
       "inputs": [
         "Auftrag",
@@ -1725,7 +1757,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Wirkungsdaten-Inventur und Datenflusskarte",
-      "docxSeite": 90,
+      "docxSeite": 92,
       "zweck": "Vorhandene und benötigte Wirkungsdaten, ihre Herkunft, Verarbeitung, Rechte, Schnittstellen und Nutzung über den gesamten Datenfluss erfassen.",
       "inputs": [
         "Auftrag",
@@ -1773,7 +1805,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Datenqualitäts- und Evidenzmatrix",
-      "docxSeite": 92,
+      "docxSeite": 94,
       "zweck": "Daten und Evidenz nach Herkunft, Vollständigkeit, Aktualität, Vergleichbarkeit, Prüfbarkeit, Verzerrung und Unsicherheit bewerten.",
       "inputs": [
         "Auftrag",
@@ -1824,7 +1856,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Wirkungsscorecard und FinalScore",
-      "docxSeite": 94,
+      "docxSeite": 96,
       "zweck": "Messwerte anhand transparenter Benchmarks in Wirkungsscores übersetzen und unter Nichtkompensation zu einem entscheidungsfähigen Profil zusammenführen.",
       "inputs": [
         "Auftrag",
@@ -1880,7 +1912,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Netto-Wirkungs-Index (NWI)",
-      "docxSeite": 96,
+      "docxSeite": 98,
       "zweck": "Positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl verdichten.",
       "inputs": [
         "Auftrag",
@@ -1930,7 +1962,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "T-SROI – Transformational Social Return on Investment",
-      "docxSeite": 98,
+      "docxSeite": 100,
       "zweck": "Auf Grundlage geprüfter Netto-Wirkung beurteilen, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung erzeugt.",
       "inputs": [
         "Auftrag",
@@ -1979,7 +2011,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Wirkungsrisiko-Matrix",
-      "docxSeite": 100,
+      "docxSeite": 102,
       "zweck": "Potenzielle negative Zustandsveränderungen nach Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Zeit und Datenqualität bewerten.",
       "inputs": [
         "Auftrag",
@@ -2029,7 +2061,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Wirkungsbilanz und Leistungszerlegung",
-      "docxSeite": 102,
+      "docxSeite": 104,
       "zweck": "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung eines Projekts, Portfolios oder Systems sichtbar machen.",
       "inputs": [
         "Auftrag",
@@ -2078,7 +2110,7 @@
       "kategorie": "D",
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Evaluations- und Lernfragen-Design",
-      "docxSeite": 104,
+      "docxSeite": 106,
       "zweck": "Eine verhältnismäßige Evaluation entwerfen, die Relevanz, Kohärenz, Wirksamkeit, Effizienz, Wirkung, Nachhaltigkeit und WÖMS-spezifische Systemfragen beantwortet.",
       "inputs": [
         "Auftrag",
@@ -2128,7 +2160,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungszielbild",
-      "docxSeite": 107,
+      "docxSeite": 109,
       "zweck": "Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzustands entwickeln, ohne es mit Maßnahmen zu verwechseln.",
       "inputs": [
         "Auftrag",
@@ -2177,7 +2209,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungsstrategie-Canvas",
-      "docxSeite": 109,
+      "docxSeite": 111,
       "zweck": "Wirkungsziel, Systemhebel, Fähigkeiten, Portfolios, Ressourcen, Risiken, Governance und Lernen in einer gemeinsamen Strategie verbinden.",
       "inputs": [
         "Auftrag",
@@ -2233,7 +2265,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungsziele und Impact-OKR",
-      "docxSeite": 111,
+      "docxSeite": 113,
       "zweck": "Strategische Wirkungsziele in überprüfbare, lernorientierte Zielzyklen übersetzen, ohne Aktivitätskennzahlen mit Wirkung zu verwechseln.",
       "inputs": [
         "Auftrag",
@@ -2282,7 +2314,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungsportfolio",
-      "docxSeite": 113,
+      "docxSeite": 115,
       "zweck": "Produkte, Projekte, Programme oder Geschäftsfelder nach Netto-Wirkung, Tragfähigkeit, Resilienz, Evidenz und strategischer Bedeutung steuern.",
       "inputs": [
         "Auftrag",
@@ -2334,7 +2366,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Transformationsportfolio",
-      "docxSeite": 115,
+      "docxSeite": 117,
       "zweck": "Transformationsinitiativen nach Systemhebel, Netto-Wirkung, Reife, Lernwert, Abhängigkeit und zeitlicher Sequenz ordnen.",
       "inputs": [
         "Auftrag",
@@ -2384,7 +2416,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungsbudgetierung",
-      "docxSeite": 117,
+      "docxSeite": 119,
       "zweck": "Budgets und Kapazitäten nach erwarteter Netto-Wirkung, Pflicht, Prävention, Resilienz, Evidenz und Transformationsbeitrag verteilen.",
       "inputs": [
         "Auftrag",
@@ -2433,7 +2465,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungskapital- und Investitionsgate",
-      "docxSeite": 119,
+      "docxSeite": 121,
       "zweck": "CAPEX, Akquisitionen, Finanzierungen und größere Programme vor Freigabe auf Grenzen, Netto-Wirkung, Tragfähigkeit, Resilienz und Transformation prüfen.",
       "inputs": [
         "Auftrag",
@@ -2487,7 +2519,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungsgovernance-Canvas",
-      "docxSeite": 121,
+      "docxSeite": 123,
       "zweck": "Entscheidungsrechte, Verantwortlichkeit, unabhängige Prüfung, Beteiligung, Datenhoheit, Widerspruch und Lernpflichten institutionell verankern.",
       "inputs": [
         "Auftrag",
@@ -2536,7 +2568,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungsrollen- und Verantwortungsmatrix",
-      "docxSeite": 123,
+      "docxSeite": 125,
       "zweck": "Verantwortung für Wirkung, Daten, Entscheidungen, Beteiligung, Prüfung und Lernen über Prozesse und Ebenen eindeutig zuweisen.",
       "inputs": [
         "Auftrag",
@@ -2584,7 +2616,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungsentscheidungsmemo",
-      "docxSeite": 125,
+      "docxSeite": 127,
       "zweck": "Komplexe Wirkungsentscheidungen knapp, vergleichbar und revisionsfähig dokumentieren.",
       "inputs": [
         "Auftrag",
@@ -2630,7 +2662,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "Wirkungstransformations-Roadmap",
-      "docxSeite": 127,
+      "docxSeite": 129,
       "zweck": "Strategie in eine zeitlich, kausal und organisatorisch sinnvolle Abfolge aus Schutz, Enablern, Piloten, Skalierung, Umbau und Exit übersetzen.",
       "inputs": [
         "Auftrag",
@@ -2680,7 +2712,7 @@
       "kategorie": "E",
       "kategorieName": "Strategie, Portfolio und Governance",
       "name": "WÖMS-Reifegrad- und Fähigkeitsassessment",
-      "docxSeite": 129,
+      "docxSeite": 131,
       "zweck": "Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelter und transformativer Steuerung entwickelt ist.",
       "inputs": [
         "Auftrag",
@@ -2729,7 +2761,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsproblem–Lösungs-Fit",
-      "docxSeite": 132,
+      "docxSeite": 134,
       "zweck": "Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.",
       "inputs": [
         "Auftrag",
@@ -2777,7 +2809,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsversprechen-Canvas",
-      "docxSeite": 134,
+      "docxSeite": 136,
       "zweck": "Nutzerwert, Wirkung für weitere Empfänger und Systemwirkung zu einem verantwortbaren Leistungsversprechen verbinden.",
       "inputs": [
         "Auftrag",
@@ -2825,7 +2857,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsmodell-Canvas",
-      "docxSeite": 136,
+      "docxSeite": 138,
       "zweck": "Ein Geschäfts-, Finanzierungs- oder Leistungsmodell als dynamisches Wirkungssystem mit Zuständen, Empfängern, Mechanismen, Wertschöpfung, Tragfähigkeit, Grenzen und Lernen gestalten.",
       "inputs": [
         "Auftrag",
@@ -2881,7 +2913,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsdesign-Doppelschleife",
-      "docxSeite": 138,
+      "docxSeite": 140,
       "zweck": "Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern.",
       "inputs": [
         "Auftrag",
@@ -2913,7 +2945,28 @@
         "Prototypenerfolg nicht mit Langzeitwirkung verwechseln."
       ],
       "schnittstellen": {
-        "bautAuf": [],
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11",
+          "B12"
+        ],
         "fuehrtZu": [
           "F05",
           "F06",
@@ -2930,7 +2983,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsoptionen- und Ideenportfolio",
-      "docxSeite": 140,
+      "docxSeite": 142,
       "zweck": "Vielfältige Interventionsoptionen auf unterschiedlichen Systemhebeln erzeugen, kombinieren und vor vorschneller Lieblingslösung schützen.",
       "inputs": [
         "Auftrag",
@@ -2978,7 +3031,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsprototyp-Canvas",
-      "docxSeite": 142,
+      "docxSeite": 144,
       "zweck": "Eine minimale Darstellung oder Intervention bauen, die neben Nutzung auch Mechanismus, Betroffenenwirkung und Risiken lernbar macht.",
       "inputs": [
         "Auftrag",
@@ -3027,7 +3080,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsexperiment",
-      "docxSeite": 144,
+      "docxSeite": 146,
       "zweck": "Eine Wirkungshypothese unter kontrollierten oder realweltlichen Bedingungen so testen, dass Lernen, Schutz und Entscheidung möglich werden.",
       "inputs": [
         "Auftrag",
@@ -3076,7 +3129,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungs-MVP",
-      "docxSeite": 146,
+      "docxSeite": 148,
       "zweck": "Die kleinste real nutzbare Lösung bestimmen, die eine relevante positive Zustandsveränderung verantwortbar testen kann.",
       "inputs": [
         "Auftrag",
@@ -3124,7 +3177,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Problem–Wirkungs–System–Markt-Fit",
-      "docxSeite": 148,
+      "docxSeite": 150,
       "zweck": "Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.",
       "inputs": [
         "Auftrag",
@@ -3179,7 +3232,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Produktlebenszyklus-Wirkungs-Canvas",
-      "docxSeite": 150,
+      "docxSeite": 152,
       "zweck": "Wirkungen von Rohstoffen über Herstellung, Distribution, Nutzung, Wartung und Ende des Lebenszyklus gemeinsam gestalten.",
       "inputs": [
         "Auftrag",
@@ -3228,7 +3281,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Lieferketten-Wirkungs-Canvas",
-      "docxSeite": 152,
+      "docxSeite": 154,
       "zweck": "Lieferketten als Wirkungs- und Risikonetz statt als reine Kostenkette gestalten.",
       "inputs": [
         "Auftrag",
@@ -3277,7 +3330,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Plattform- und Netzwerkeffekt-Canvas",
-      "docxSeite": 154,
+      "docxSeite": 156,
       "zweck": "Direkte und indirekte Netzwerkeffekte, Moderation, Daten-, Ranking- und Machtlogiken sowie gesellschaftliche Wirkungen einer Plattform gestalten.",
       "inputs": [
         "Auftrag",
@@ -3325,7 +3378,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Preis-, Anreiz- und Rückkopplungs-Canvas",
-      "docxSeite": 156,
+      "docxSeite": 158,
       "zweck": "Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signale so gestalten, dass sie Wirkung sichtbar machen und keine schädlichen Nebenanreize erzeugen.",
       "inputs": [
         "Auftrag",
@@ -3373,7 +3426,7 @@
       "kategorie": "F",
       "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
       "name": "Wirkungsskalierungs-, Diffusions- und Exit-Canvas",
-      "docxSeite": 158,
+      "docxSeite": 160,
       "zweck": "Entscheiden, ob Wirkung durch Organisationswachstum, Replikation, Partnerschaft, Open Source, Standardsetzung, Politikänderung oder bewussten Exit verbreitet wird.",
       "inputs": [
         "Auftrag",
@@ -3421,7 +3474,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Organisationswirkungs-Canvas",
-      "docxSeite": 161,
+      "docxSeite": 163,
       "zweck": "Die Organisation als Wirkungssystem aus Zweck, Rollen, Prozessen, Netzwerken, Ressourcen, Daten, Anreizen, Governance und Lernen gestalten.",
       "inputs": [
         "Auftrag",
@@ -3475,7 +3528,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Wirkungsführungsrad",
-      "docxSeite": 163,
+      "docxSeite": 165,
       "zweck": "Führung als Gestaltung von Orientierung, Bedingungen, Entscheidungen, Rückkopplung, Schutz, Lernen und Selbstwirksamkeit operationalisieren.",
       "inputs": [
         "Auftrag",
@@ -3524,7 +3577,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Wirkungsorientiertes Operating Model",
-      "docxSeite": 165,
+      "docxSeite": 167,
       "zweck": "Strategie und Wirkung in End-to-End-Prozesse, Entscheidungsrechte, Daten, Technologie, Fähigkeiten und Steuerungsrhythmen übersetzen.",
       "inputs": [
         "Auftrag",
@@ -3573,7 +3626,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Kultur-, Verhaltens- und Anreizlandkarte",
-      "docxSeite": 167,
+      "docxSeite": 169,
       "zweck": "Untersuchen, welche formellen und informellen Signale tatsächliches Verhalten fördern und ob sie mit dem Wirkungsauftrag übereinstimmen.",
       "inputs": [
         "Auftrag",
@@ -3624,7 +3677,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Macht-, Abhängigkeits- und Entscheidungsraumanalyse",
-      "docxSeite": 169,
+      "docxSeite": 171,
       "zweck": "Sichtbare und unsichtbare Macht, Ressourcenabhängigkeiten, Vetos, Agenda-Setting und Ausschlüsse in Wirkungssystemen analysieren.",
       "inputs": [
         "Auftrag",
@@ -3674,7 +3727,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Psychologische Sicherheit und Wirkungswiderspruch",
-      "docxSeite": 171,
+      "docxSeite": 173,
       "zweck": "Räume und Regeln schaffen, in denen Risiken, Grenzverletzungen, Fehler und abweichende Perspektiven früh geäußert werden können.",
       "inputs": [
         "Auftrag",
@@ -3724,7 +3777,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Wirkungskompetenz-Matrix",
-      "docxSeite": 173,
+      "docxSeite": 175,
       "zweck": "Benötigte Fähigkeiten für Wirkungsverständnis, Systemdenken, Daten, Moderation, Bewertung, Governance und Transformation bestimmen und entwickeln.",
       "inputs": [
         "Auftrag",
@@ -3769,7 +3822,7 @@
       "kategorie": "G",
       "kategorieName": "Organisation, Führung und Kultur",
       "name": "Lern- und Rückkopplungsarchitektur",
-      "docxSeite": 175,
+      "docxSeite": 177,
       "zweck": "Single-, Double- und Triple-Loop-Lernen so institutionalisieren, dass nicht nur Maßnahmen, sondern Annahmen, Regeln und Ziele korrigiert werden.",
       "inputs": [
         "Auftrag",
@@ -3823,7 +3876,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Wirkungstransformations-Bereitschaft",
-      "docxSeite": 178,
+      "docxSeite": 180,
       "zweck": "Prüfen, ob Mandat, Fähigkeiten, Daten, Ressourcen, Governance, Kultur und Schutz für eine Transformation ausreichen.",
       "inputs": [
         "Auftrag",
@@ -3875,7 +3928,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Wirkungspilot-Design",
-      "docxSeite": 180,
+      "docxSeite": 182,
       "zweck": "Eine begrenzte, reversible und lernorientierte Umsetzung gestalten, die reale Wirkung prüft und Betroffene schützt.",
       "inputs": [
         "Auftrag",
@@ -3928,7 +3981,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Prozess- und Systemintegration",
-      "docxSeite": 182,
+      "docxSeite": 184,
       "zweck": "Wirkungsentscheidungen, Daten, Rollen und Kontrollen in bestehende Kernprozesse und IT-Systeme einbauen, ohne Parallelbürokratie zu schaffen.",
       "inputs": [
         "Auftrag",
@@ -3977,7 +4030,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Umsetzungs- und Übergangsschutzplan",
-      "docxSeite": 184,
+      "docxSeite": 186,
       "zweck": "Umsetzung so planen, dass Beschäftigte, Betroffene, Versorgung, Kaufkraft und kritische Funktionen während des Übergangs geschützt werden.",
       "inputs": [
         "Auftrag",
@@ -4026,7 +4079,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Wirkungsdashboard und Managementcockpit",
-      "docxSeite": 186,
+      "docxSeite": 188,
       "zweck": "KII, Grenzen, Risiken, Datenqualität, Portfolio und Lernfragen in einer entscheidungsfähigen, nicht überladenen Sicht zusammenführen.",
       "inputs": [
         "Auftrag",
@@ -4077,7 +4130,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Wirkungsfrühwarn- und Eskalationssystem",
-      "docxSeite": 188,
+      "docxSeite": 190,
       "zweck": "Schwache Signale, Trends, Grenznähe, Beschwerden, Datenanomalien und Systemrisiken früh erkennen und verbindlich eskalieren.",
       "inputs": [
         "Auftrag",
@@ -4127,7 +4180,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Wirkungsreview und lernende Retrospektive",
-      "docxSeite": 190,
+      "docxSeite": 192,
       "zweck": "Regelmäßig prüfen, was tatsächlich wirkte, was nicht, welche Nebenwirkungen entstanden und welche Annahmen, Regeln oder Ziele geändert werden müssen.",
       "inputs": [
         "Auftrag",
@@ -4166,7 +4219,92 @@
           "H05",
           "H06"
         ],
-        "fuehrtZu": []
+        "fuehrtZu": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06",
+          "A07",
+          "A08",
+          "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11",
+          "B12",
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "C05",
+          "C06",
+          "C07",
+          "C08",
+          "C09",
+          "C10",
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "D05",
+          "D06",
+          "D07",
+          "D08",
+          "D09",
+          "D10",
+          "D11",
+          "D12",
+          "E01",
+          "E02",
+          "E03",
+          "E04",
+          "E05",
+          "E06",
+          "E07",
+          "E08",
+          "E09",
+          "E10",
+          "E11",
+          "E12",
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F05",
+          "F06",
+          "F07",
+          "F08",
+          "F09",
+          "F10",
+          "F11",
+          "F12",
+          "F13",
+          "F14",
+          "G01",
+          "G02",
+          "G03",
+          "G04",
+          "G05",
+          "G06",
+          "G07",
+          "G08",
+          "H01",
+          "H02",
+          "H03",
+          "H04",
+          "H05",
+          "H06",
+          "H07",
+          "H08"
+        ]
       },
       "canvasRef": "canvas-H07"
     },
@@ -4175,7 +4313,7 @@
       "kategorie": "H",
       "kategorieName": "Umsetzung, Monitoring, Lernen und Assurance",
       "name": "Wirkungsassurance, Audit und Methodenprüfung",
-      "docxSeite": 192,
+      "docxSeite": 194,
       "zweck": "Daten, Bewertungslogik, Grenzprüfung, Governance, Aussagen und Methodenprozess unabhängig und risikoorientiert prüfen.",
       "inputs": [
         "Auftrag",
@@ -4207,10 +4345,3295 @@
         "Unabhängigkeit durch Beratungsinteressen gefährden."
       ],
       "schnittstellen": {
-        "bautAuf": [],
+        "bautAuf": [
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "D05",
+          "D06",
+          "D07",
+          "D08",
+          "D09",
+          "D10",
+          "D11",
+          "D12",
+          "H01",
+          "H02",
+          "H03",
+          "H04",
+          "H05",
+          "H06",
+          "H07",
+          "H08"
+        ],
         "fuehrtZu": []
       },
       "canvasRef": "canvas-H08"
+    },
+    {
+      "id": "I01",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Annahmen- und Unsicherheitslandkarte",
+      "docxSeite": 198,
+      "zweck": "Zukunftsannahmen, Wissenslücken und Unsicherheitsarten sichtbar machen, bevor Strategie oder Investition festgelegt werden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Entscheidungsgegenstand und Zeithorizont festlegen.",
+        "Explizite und implizite Annahmen sammeln.",
+        "Annahmen nach Evidenz, Beeinflussbarkeit und Unsicherheitsart klassifizieren.",
+        "Kritische Abhängigkeiten und Kaskaden identifizieren.",
+        "Widerlegungsindikatoren und Beobachtungsverantwortung festlegen.",
+        "Annahmen in Szenarien, Gates und Reviewrhythmen überführen."
+      ],
+      "outputs": [
+        "Versioniertes Annahmenregister mit Unsicherheitsklasse, Bedeutung, Evidenz, Verantwortlichen und Aktualisierungstriggern."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I01"
+    },
+    {
+      "id": "I02",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Horizon Scanning und Schwache-Signale-Radar",
+      "docxSeite": 200,
+      "zweck": "Frühe Veränderungen, neue Risiken, Technologien, soziale Dynamiken und regulatorische Verschiebungen systematisch beobachten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Suchfelder aus Mensch, Planet, Demokratie und Geschäftsmodell ableiten.",
+        "Interne und externe Quellen sowie Perspektiven bestimmen.",
+        "Signale erfassen und von Trends oder Ereignissen trennen.",
+        "Relevanz, Neuigkeit, Plausibilität und Wirkungsreichweite bewerten.",
+        "Signalcluster und mögliche Wechselwirkungen bilden.",
+        "Monitoring, Schwellen und Eskalationswege festlegen."
+      ],
+      "outputs": [
+        "Priorisiertes Signalradar mit Quelle, Reife, möglicher Wirkung, Zeithorizont und Beobachtungsauftrag."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I02"
+    },
+    {
+      "id": "I03",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Trend-, Diskontinuitäts- und Wild-Card-Analyse",
+      "docxSeite": 202,
+      "zweck": "Kontinuierliche Entwicklungen von Brüchen, Kipppunkten und seltenen Ereignissen unterscheiden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Relevante Trends und Gegenbewegungen erfassen.",
+        "Diskontinuitäten, Kipppunkte und Wild Cards ergänzen.",
+        "Treiber nach Richtung, Geschwindigkeit und Unsicherheit bewerten.",
+        "Kopplungen und Verstärkungsschleifen analysieren.",
+        "Auswirkungen auf Empfänger, Fähigkeiten und Resilienz ableiten.",
+        "Treiber für Szenarien und Stresstests auswählen."
+      ],
+      "outputs": [
+        "Zukunftstreiber-Portfolio mit Dynamik, Unsicherheit, Wechselwirkung und potenzieller Wirkung erster bis dritter Ordnung."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I03"
+    },
+    {
+      "id": "I04",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Mehrfachszenario-Konstruktion",
+      "docxSeite": 204,
+      "zweck": "Mehrere plausible, intern konsistente Zukunftsräume entwickeln, ohne Prognose als Gewissheit auszugeben.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Fokusfrage, Zeitraum und Systemgrenze definieren.",
+        "Kritische Treiber und Unsicherheiten auswählen.",
+        "Szenariologik und konsistente Kombinationen bilden.",
+        "Zustände für Mensch, Planet, Demokratie und Organisation beschreiben.",
+        "Wirkungsrisiken, Chancen und Capability-Anforderungen ableiten.",
+        "Frühindikatoren und Übergänge zwischen Szenarien bestimmen."
+      ],
+      "outputs": [
+        "Drei bis fünf Szenarien mit Treiberlogik, Zustandsbild, Wirkungsfolgen, Frühindikatoren und Managementimplikationen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I04"
+    },
+    {
+      "id": "I05",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Strategie- und Wirkungsstresstest",
+      "docxSeite": 206,
+      "zweck": "Strategien, Geschäftsmodelle oder politische Maßnahmen unter mehreren Zukunfts- und Störungslagen prüfen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Strategieelemente, Zielwirkungen und Abhängigkeiten aufnehmen.",
+        "Szenarien und Schocks auswählen.",
+        "Finanzielle, operative, soziale, ökologische und demokratische Wirkung prüfen.",
+        "Kaskaden, Engpässe und nicht kompensierbare Folgen identifizieren.",
+        "Robustheitsoptionen und Schutzmaßnahmen entwickeln.",
+        "Gate-Entscheidung und Wiederholungsrhythmus festlegen."
+      ],
+      "outputs": [
+        "Stresstestbericht mit Versagensmodi, Wirkungseinbrüchen, Grenzverletzungen, Robustheitslücken und Redesign-Aufträgen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I05"
+    },
+    {
+      "id": "I06",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Robuste Optionen und adaptive Wirkungspfade",
+      "docxSeite": 208,
+      "zweck": "Unter hoher Unsicherheit Maßnahmen wählen, die robust, schrittweise, reversibel und lernfähig sind.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Zielzustand und unverhandelbare Grenzen festlegen.",
+        "No-regret- und Low-regret-Optionen identifizieren.",
+        "Reversible Experimente und vorbereitende Optionen entwickeln.",
+        "Pfadabhängigkeiten, Lock-ins und Übergangskosten bewerten.",
+        "Trigger für Ausbau, Wechsel, Pause oder Exit definieren.",
+        "Portfolio, Budgets und Verantwortlichkeiten zuordnen."
+      ],
+      "outputs": [
+        "Adaptiver Pfad mit Sofortmaßnahmen, Realoptionen, Entscheidungspunkten, Triggern und Stop-/Skalierungsregeln."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I06"
+    },
+    {
+      "id": "I07",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Entscheidungsklassen- und Reversibilitätscheck",
+      "docxSeite": 210,
+      "zweck": "Entscheidungsmodus, Beteiligung, Evidenz- und Assurancetiefe an Komplexität, Reversibilität und Wirkungsschwere anpassen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Entscheidungsgegenstand und mögliche Folgen beschreiben.",
+        "Reversibilität, Zeithorizont und Pfadabhängigkeit bewerten.",
+        "Komplexität, Neuheit und Evidenzgrad einordnen.",
+        "Wirkungsschwere, Rechte- und Sicherheitsnähe prüfen.",
+        "Entscheidungsmodus und erforderliche Rollen festlegen.",
+        "Dokumentations-, Assurance- und Revisit-Regel beschließen."
+      ],
+      "outputs": [
+        "Klassifizierte Entscheidung mit vorgeschriebenem Verfahren, Gate, Beteiligung, Prüftiefe und Reviewfrequenz."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I07"
+    },
+    {
+      "id": "I08",
+      "kategorie": "I",
+      "kategorieName": "Strategische Vorausschau und Entscheidungsintelligenz",
+      "name": "Entscheidungslog, Pre-Mortem und Evidenzupdate",
+      "docxSeite": 212,
+      "zweck": "Entscheidungsqualität verbessern und Hindsight Bias durch nachvollziehbare Vorannahmen und spätere Evidenzupdates begrenzen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Entscheidungsfrage, Optionen und Kriterien dokumentieren.",
+        "Pre-Mortem durchführen: Warum ist die Entscheidung gescheitert?",
+        "Gegenargumente, Minderheitsvoten und fehlende Daten festhalten.",
+        "Erwartete Wirkung, Zeitpunkte und Signale protokollieren.",
+        "Entscheidung, Verantwortliche und Revisit-Datum beschließen.",
+        "Neue Evidenz und tatsächliche Wirkung ohne Umschreiben der Historie ergänzen."
+      ],
+      "outputs": [
+        "Versioniertes Entscheidungslog mit Pre-Mortem, Alternativen, Unsicherheit, erwarteten Signalen und späterem Outcome-Review."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Unsicherheit und alternative Zukünfte werden nicht zu Scheingenauigkeit verdichtet.",
+        "Trigger für Kurswechsel sind beobachtbar."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Ein Lieblingsszenario nicht als Prognose ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-I08"
+    },
+    {
+      "id": "J01",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Wirkungs-Capability-Map",
+      "docxSeite": 215,
+      "zweck": "Stabile Fähigkeiten identifizieren, die ein System unabhängig von Organigramm, Projekten oder Technologien dauerhaft beherrschen muss.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wirkungsversprechen und strategische Outcomes aufnehmen.",
+        "Fähigkeiten als „Was muss das System können?“ formulieren.",
+        "Capabilities hierarchisch strukturieren und redundanzfrei abgrenzen.",
+        "Wirkungsbeitrag, Empfänger und kritische Abhängigkeiten verknüpfen.",
+        "Owner und relevante Organisationen zuordnen.",
+        "Map versionieren und mit Portfolio, Daten und Prozessen verbinden."
+      ],
+      "outputs": [
+        "Hierarchische Capability Map mit Definition, Wirkungsbeitrag, Owner und Systemgrenze."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J01"
+    },
+    {
+      "id": "J02",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Capability-to-Impact-Matrix",
+      "docxSeite": 217,
+      "zweck": "Fähigkeiten direkt mit Wirkungspfaden, Empfängern, KII und Risiken verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Priorisierte Wirkungspfade auswählen.",
+        "Benötigte Capabilities zuordnen.",
+        "Beitragsart und Kritikalität bewerten.",
+        "Wirkungsgrenzen und Fehlermodi ergänzen.",
+        "KII und Evidenzquellen je Verbindung festlegen.",
+        "Lücken und Investitionsbedarfe markieren."
+      ],
+      "outputs": [
+        "Matrix mit Capability-Beitrag, Wirkungspfad, Empfänger, KII, Risiko, Reife und Verantwortlichkeit."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J02"
+    },
+    {
+      "id": "J03",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Capability-Reifegrad und Heatmap",
+      "docxSeite": 219,
+      "zweck": "Ist- und Zielreife der wirkungskritischen Fähigkeiten evidenzbasiert bewerten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Bewertete Capabilities und Reifeskala festlegen.",
+        "Kriterien für Menschen, Prozesse, Daten, Technologie, Governance und Partner definieren.",
+        "Evidenz erheben und Selbstbild challengen.",
+        "Ist-Reife, Zielreife und Kritikalität bewerten.",
+        "Lücken, Ursachen und Abhängigkeiten priorisieren.",
+        "Verbesserungsroadmap und Review festlegen."
+      ],
+      "outputs": [
+        "Capability Heatmap mit Reifegrad, Evidenz, Zielzustand, Risiko und Verbesserungsauftrag."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J03"
+    },
+    {
+      "id": "J04",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Capability-Abhängigkeitsnetz",
+      "docxSeite": 221,
+      "zweck": "Abhängigkeiten, gemeinsame Enabler, Konzentrationsrisiken und Kaskaden zwischen Fähigkeiten sichtbar machen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Capabilities und Schnittstellen erfassen.",
+        "Informations-, Technologie-, Personen- und Partnerabhängigkeiten modellieren.",
+        "Kritikalität, Substituierbarkeit und Zeitabhängigkeit bewerten.",
+        "Kaskaden und gemeinsame Engpässe identifizieren.",
+        "Redundanz, Modularisierung und Entkopplung entwickeln.",
+        "Netzwerk in Resilienz- und Investitionsplanung überführen."
+      ],
+      "outputs": [
+        "Netzwerkdiagramm mit kritischen Knoten, Single Points of Failure, Enablern und Entkopplungsoptionen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J04"
+    },
+    {
+      "id": "J05",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Capability-Gap- und Investitionspriorisierung",
+      "docxSeite": 223,
+      "zweck": "Fähigkeitslücken nach Wirkungsbeitrag, Dringlichkeit, Risiko, Aufwand und Lernwert priorisieren.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Reife- und Wirkungsdaten zusammenführen.",
+        "Gap zwischen Ist und Ziel bestimmen.",
+        "Wirkungsbeitrag, Risiko und Abhängigkeiten bewerten.",
+        "Investitionsoptionen und alternative Realisierungswege entwickeln.",
+        "Portfolio unter Budget- und Kapazitätsgrenzen priorisieren.",
+        "Owner, Benefits, KII und Gates zuordnen."
+      ],
+      "outputs": [
+        "Priorisiertes Capability-Investment-Portfolio mit Entscheidung, Budget, Sequenz und Benefit-/Impact-Owner."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J05"
+    },
+    {
+      "id": "J06",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Business-Architecture-Systemkarte",
+      "docxSeite": 225,
+      "zweck": "Strategie, Stakeholder, Capabilities, Wertströme, Information, Organisation, Produkte und Regeln in einer konsistenten Sicht verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Architekturfrage und Systemgrenze festlegen.",
+        "Stakeholder, Produkte, Policies und Outcomes aufnehmen.",
+        "Capabilities, Wertströme und Informationskonzepte modellieren.",
+        "Organisationen, Partner und Initiativen zuordnen.",
+        "Inkonsistenzen, Lücken und Machtasymmetrien identifizieren.",
+        "Sichten für Entscheidungen und Transitionen freigeben."
+      ],
+      "outputs": [
+        "Integrierte Business-Architecture-Map mit definierten Beziehungen und Architektursichten."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J06"
+    },
+    {
+      "id": "J07",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Zielarchitektur und Übergangszustände",
+      "docxSeite": 227,
+      "zweck": "Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Ausgangsarchitektur und Wirkungszielbild aufnehmen.",
+        "Architekturprinzipien und Mindestbedingungen festlegen.",
+        "Zielbausteine und Beziehungen modellieren.",
+        "Übergangszustände und notwendige Parallelbetriebe entwickeln.",
+        "Risiken, technische Schulden und Rückbau identifizieren.",
+        "Transitionen mit Initiativen, Capabilities und Gates verknüpfen."
+      ],
+      "outputs": [
+        "Zielarchitektur mit Übergangsarchitekturen, Architekturbausteinen, Risiken, Abhängigkeiten und Roadmap."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J07"
+    },
+    {
+      "id": "J08",
+      "kategorie": "J",
+      "kategorieName": "Business Architecture, Capabilities und Zielarchitektur",
+      "name": "Architekturprinzipien und Entscheidungsprotokolle",
+      "docxSeite": 229,
+      "zweck": "Dauerhafte Leitplanken für dezentrale Architekturentscheidungen festlegen und Ausnahmen nachvollziehbar dokumentieren.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wiederkehrende Entscheidungskonflikte sammeln.",
+        "Prinzipien aus Wirkungskompass, Resilienz und Strategie ableiten.",
+        "Begründung, Konsequenzen und Messkriterien formulieren.",
+        "Prioritäten und Konfliktregeln festlegen.",
+        "Ausnahme- und ADR-Prozess gestalten.",
+        "Prinzipien regelmäßig anhand realer Wirkung überprüfen."
+      ],
+      "outputs": [
+        "Katalog von Wirkungs-, Daten-, Technologie-, Sicherheits- und Interoperabilitätsprinzipien plus Architecture Decision Records."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Capabilities sind organisationsneutral und outcome-bezogen definiert.",
+        "Architektursichten sind konsistent miteinander verknüpft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Capabilities nicht mit Abteilungen, Systemen oder Projekten verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-J08"
+    },
+    {
+      "id": "K01",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "Wirkungswertstrom-Karte",
+      "docxSeite": 232,
+      "zweck": "Den End-to-End-Fluss vom Bedarf beziehungsweise Problem bis zur tatsächlichen Zustandsveränderung darstellen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Ausgangs- und Zielzustand des Empfängers definieren.",
+        "Wertstromstufen unabhängig von Abteilungen bestimmen.",
+        "Aktionen, Übergaben, Informationen und Entscheidungen aufnehmen.",
+        "Wartezeiten, Rückschleifen, Externalitäten und Wirkungsverluste markieren.",
+        "KII und Kontrollpunkte je Stufe festlegen.",
+        "Zielwertstrom und Verbesserungsbacklog entwickeln."
+      ],
+      "outputs": [
+        "Wirkungswertstrom mit Stufen, Empfängerzuständen, Übergaben, Daten, Wartezeiten, Risiken und KII."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K01"
+    },
+    {
+      "id": "K02",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "Outcome-Stream-Map",
+      "docxSeite": 234,
+      "zweck": "Mehrere Produkte, Services und Prozesse auf einen gemeinsamen Empfänger-Outcome ausrichten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Zieloutcome und Wirkungsempfänger festlegen.",
+        "Notwendige Zwischenoutcomes rückwärts ableiten.",
+        "Produkte, Services und Interventionen zuordnen.",
+        "Capability- und Datenabhängigkeiten identifizieren.",
+        "Beitragsannahmen und KII festlegen.",
+        "Owner, Prioritäten und Lernschleifen bestimmen."
+      ],
+      "outputs": [
+        "Outcome Stream mit Teiloutcomes, Beiträgen, Capabilities, Produkten, KII und Abhängigkeiten."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K02"
+    },
+    {
+      "id": "K03",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "End-to-End-Prozessarchitektur",
+      "docxSeite": 236,
+      "zweck": "Prozesslandschaft, Kernprozesse, Steuerungs- und Unterstützungsprozesse mit Wirkungspfaden verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Prozesslandkarte und Architekturprinzipien definieren.",
+        "Kern-, Steuerungs- und Unterstützungsprozesse abgrenzen.",
+        "End-to-End-Owner und Empfänger zuordnen.",
+        "Wirkung, Risiken, Daten und Controls verknüpfen.",
+        "Detailierungsbedarf und BPMN-Modelle festlegen.",
+        "Governance, Pflege und Verbesserung organisieren."
+      ],
+      "outputs": [
+        "Prozessarchitektur mit Ebenen, Verantwortungen, Schnittstellen, KII und Modellierungsregeln."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K03"
+    },
+    {
+      "id": "K04",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "Service Blueprint mit Wirkungsempfängern",
+      "docxSeite": 238,
+      "zweck": "Sichtbare Serviceerfahrung, Backstage-Abläufe, Unterstützungsprozesse und indirekte Wirkungen gemeinsam gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Primäre und indirekte Empfänger bestimmen.",
+        "Nutzer- und Betroffenenreise erfassen.",
+        "Frontstage-Interaktionen modellieren.",
+        "Backstage-, Support- und Partnerprozesse zuordnen.",
+        "Fehlerpunkte, Barrieren und externe Wirkungen markieren.",
+        "Serviceprinzipien, KII und Verbesserungen entwickeln."
+      ],
+      "outputs": [
+        "Service Blueprint mit Nutzerhandlung, Betroffenenperspektive, Frontstage, Backstage, Support, Daten, Risiken und KII."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K04"
+    },
+    {
+      "id": "K05",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "Nutzer-, Stakeholder- und Betroffenenreise",
+      "docxSeite": 240,
+      "zweck": "Erfahrungen und Zustandsveränderungen unterschiedlicher Rollen über Zeit vergleichen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Rollen und Mehrfachrollen auswählen.",
+        "Zeitraum und relevante Phasen bestimmen.",
+        "Handlungen, Erwartungen und Erfahrungen erfassen.",
+        "Zustandsveränderungen und indirekte Folgen markieren.",
+        "Barrieren, Ausschlüsse und Machtasymmetrien analysieren.",
+        "Interventionspunkte und Schutzmaßnahmen priorisieren."
+      ],
+      "outputs": [
+        "Mehrperspektivische Journey mit Touchpoints, Emotionen, Barrieren, Macht, Daten, Wirkung und Schutzbedarf."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K05"
+    },
+    {
+      "id": "K06",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "Prozess-KII und Wirkungskontrollpunkte",
+      "docxSeite": 242,
+      "zweck": "Prozessleistung mit tatsächlicher Wirkung, Risiken und Schutzkontrollen verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wirkungsziel und kritische Prozessstufen festlegen.",
+        "Leading, lagging und Gegenindikatoren bestimmen.",
+        "Wirkungsgrenzen und unerwünschte Nebenwirkungen operationalisieren.",
+        "Kontrollpunkte und Evidenzquellen zuordnen.",
+        "Schwellen, Reaktion und Eskalation definieren.",
+        "Dashboard und Reviewrhythmus integrieren."
+      ],
+      "outputs": [
+        "KII- und Kontrollplan je Prozessstufe mit Definition, Datenquelle, Schwelle, Owner und Eskalation."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K06"
+    },
+    {
+      "id": "K07",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "Engpass-, Verschwendungs- und Externalitätenanalyse",
+      "docxSeite": 244,
+      "zweck": "Flow-Verluste, Blindleistung und ausgelagerte Kosten gemeinsam analysieren.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wirkungswertstrom und Daten auswählen.",
+        "Wartezeiten, Fehler, Überproduktion, Übergaben und Schleifen erfassen.",
+        "Externalitäten und Belastungsverschiebungen ergänzen.",
+        "Systemengpass und lokale Optimierungen unterscheiden.",
+        "Ursachen und Rückkopplungen analysieren.",
+        "Verbesserungen nach Netto-Wirkung priorisieren."
+      ],
+      "outputs": [
+        "Priorisierte Liste von Engpässen, Verschwendung, Externalitäten, Ursachen und Verbesserungsoptionen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K07"
+    },
+    {
+      "id": "K08",
+      "kategorie": "K",
+      "kategorieName": "Wirkungswertströme, Prozesse, Services und Flow",
+      "name": "Process-Mining- und Realitätsreview",
+      "docxSeite": 246,
+      "zweck": "Tatsächliche Prozessabläufe aus Ereignisdaten mit Sollmodell, Wirkung und Kontrollen vergleichen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Fragestellung, Event Log und Datenschutzrahmen klären.",
+        "Datenqualität und Prozessidentität prüfen.",
+        "Ist-Varianten und Durchlaufzeiten analysieren.",
+        "Abweichungen mit Ursachen und Kontext interpretieren.",
+        "Wirkungs-, Fairness- und Kontrollfolgen bewerten.",
+        "Maßnahmen testen und Wirkung erneut messen."
+      ],
+      "outputs": [
+        "Reality Map mit Varianten, Durchlaufzeiten, Abweichungen, Wirkungsrisiken und priorisierten Untersuchungen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "End-to-End-Wirkung wird nicht durch Abteilungsgrenzen fragmentiert.",
+        "Prozess-KII und externe Wirkungen sind berücksichtigt."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Lokale Effizienz nicht auf Kosten externer Wirkung optimieren."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-K08"
+    },
+    {
+      "id": "L01",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Wirkungs-Product-Operating-Model-Canvas",
+      "docxSeite": 249,
+      "zweck": "Dauerhafte Produktverantwortung für Problem, Outcome, Nebenwirkung, Betrieb und Lernen gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Produkt als dauerhaft verantworteten Wirkungsraum definieren.",
+        "Problem, Empfänger, Outcome und Grenzen festlegen.",
+        "Team, Entscheidungsrechte und Stakeholderbeziehung gestalten.",
+        "Discovery-, Delivery- und Betriebsrhythmus verbinden.",
+        "Finanzierung, Plattformen, Daten und Enabler zuordnen.",
+        "Outcome-Review, Exit und Produktlebenszyklus verankern."
+      ],
+      "outputs": [
+        "Product Operating Model mit Produktgrenzen, Outcome, Team, Finanzierung, Discovery/Delivery, Plattformen, Governance und KII."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L01"
+    },
+    {
+      "id": "L02",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Langfristige Produkt- und Wirkungsverantwortungskarte",
+      "docxSeite": 251,
+      "zweck": "Ownership über Produktlebenszyklus, Betrieb, Daten, Wirkung und Rückbau eindeutig zuordnen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Produkt- und Systemgrenze festlegen.",
+        "Lebenszyklusphasen und kritische Entscheidungen aufnehmen.",
+        "Verantwortungen und Entscheidungshoheit zuordnen.",
+        "Konflikte, Lücken und geteilte Verantwortung analysieren.",
+        "Eskalation und unabhängige Challenge festlegen.",
+        "Rückbau, Stilllegung und Nachsorge verankern."
+      ],
+      "outputs": [
+        "Responsibility Map mit Product Owner, Impact Owner, Operations, Data, Risk, Legal, Community und Exit-Verantwortung."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L02"
+    },
+    {
+      "id": "L03",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Discovery–Delivery–Wirkungslernloop",
+      "docxSeite": 253,
+      "zweck": "Kontinuierliche Problemexploration, Lösungsentdeckung, sichere Lieferung, Betrieb und Wirkungslernen verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Outcome und kritische Annahmen festlegen.",
+        "Discovery-Hypothesen und verantwortbare Tests planen.",
+        "Delivery mit Schutz- und Beobachtungsanforderungen koppeln.",
+        "Release- und Betriebsdaten erfassen.",
+        "Nutzung, Wirkung und Nebenwirkung überprüfen.",
+        "Skalieren, redesignen, pausieren oder beenden."
+      ],
+      "outputs": [
+        "Integrierter Loop mit Hypothesen, Experimente, Release, Betriebsdaten, Wirkungsmessung und Kursentscheidung."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L03"
+    },
+    {
+      "id": "L04",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Wirkungsorientierte Teamtopologie",
+      "docxSeite": 255,
+      "zweck": "Teams entlang von Wirkungswertströmen, Plattformen, Enabling-Bedarf und Spezialkomplexität gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wirkungswertströme und kognitive Last analysieren.",
+        "Stream-aligned Verantwortungsbereiche bestimmen.",
+        "Plattform-, Enabling- und Spezialteam-Bedarf ableiten.",
+        "Teamgrenzen und End-to-End-Ownership festlegen.",
+        "Interaktionsmodi und zeitliche Begrenzung definieren.",
+        "Flow, Wirkung und Teamgesundheit beobachten."
+      ],
+      "outputs": [
+        "Teamtopologie mit Teamtypen, Verantwortungsgrenzen, Outcomes, KII und geplanten Interaktionsmodi."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L04"
+    },
+    {
+      "id": "L05",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Kognitive-Last- und Teaminteraktionskarte",
+      "docxSeite": 257,
+      "zweck": "Überforderung, Koordinationslast und diffuse Verantwortungen als Risiko für Qualität und Wirkung sichtbar machen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Teamaufgaben und Verantwortungsumfang erfassen.",
+        "Domänen-, technische und Koordinationslast bewerten.",
+        "Abhängigkeiten und Kontextwechsel analysieren.",
+        "Wirkungs- und Qualitätsfolgen der Überlastung prüfen.",
+        "Plattform-, Enabling-, Automatisierungs- oder Scope-Optionen entwickeln.",
+        "Interaktionsmodus und Review festlegen."
+      ],
+      "outputs": [
+        "Heatmap kognitiver Last mit Aufgabenarten, Abhängigkeiten, Teaminteraktionen und Entlastungsoptionen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L05"
+    },
+    {
+      "id": "L06",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Plattform-als-Wirkungsinfrastruktur-Canvas",
+      "docxSeite": 259,
+      "zweck": "Interne oder externe Plattformen nach ihrem Beitrag zu Flow, Qualität, Zugänglichkeit, Macht und gesellschaftlicher Wirkung gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Zielgruppen und zu reduzierende Komplexität bestimmen.",
+        "Plattformservices und Verantwortungsgrenzen definieren.",
+        "Self-Service, Standards und Supportmodell gestalten.",
+        "Daten-, Sicherheits- und Zugangsregeln festlegen.",
+        "Lock-in, Macht, externe Effekte und Resilienz prüfen.",
+        "Adoption, KII und Produktroadmap festlegen."
+      ],
+      "outputs": [
+        "Plattformcanvas mit Nutzerteams, Services, Self-Service, Daten, Governance, Lock-in, KII und Schutzregeln."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L06"
+    },
+    {
+      "id": "L07",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Produktfinanzierungs- und Outcome-Portfolio",
+      "docxSeite": 261,
+      "zweck": "Finanzierung von zeitlich begrenzten Projekten zu dauerhaften Produkten, Outcomes und Lernoptionen verschieben.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Produkte, Outcomes und Wirkungspfade definieren.",
+        "Bisherige Projektbudgets und laufende Kosten transparent machen.",
+        "Dauerhafte Teams und Enabler finanzieren.",
+        "Budget nach Outcome, Risiko, Reife und Lernwert allokieren.",
+        "Gates, Stop-Regeln und Reallokation festlegen.",
+        "Outcome und Netto-Wirkung regelmäßig überprüfen."
+      ],
+      "outputs": [
+        "Portfolio mit Produkt-/Outcome-Budgets, Capabilities, KII, Lernmeilensteinen und Stop-/Reallokationsregeln."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L07"
+    },
+    {
+      "id": "L08",
+      "kategorie": "L",
+      "kategorieName": "Product Operating Model, Teams, Plattformen und Ökosysteme",
+      "name": "Ökosystem- und Plattformorchestrierungsarchitektur",
+      "docxSeite": 263,
+      "zweck": "Mehrere Organisationen, Plattformen und öffentliche Akteure auf gemeinsame Wirkung, faire Lastenteilung und robuste Regeln ausrichten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Gemeinsames Wirkungsproblem und Systemgrenze klären.",
+        "Akteure, Ressourcen, Macht und Abhängigkeiten kartieren.",
+        "Orchestrator- und Teilnehmerrollen festlegen.",
+        "Gemeinsame Daten-, Qualitäts- und Wirkungsregeln gestalten.",
+        "Nutzen, Lasten, Finanzierung und Haftung verteilen.",
+        "Konflikt, Wechsel, Exit und unabhängige Assurance regeln."
+      ],
+      "outputs": [
+        "Orchestrierungsmodell mit Rollen, gemeinsamen Outcomes, Daten, Finanzierung, Entscheidungsrechten, Konflikt- und Exit-Regeln."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Teams besitzen dauerhafte Outcome- und Betriebsverantwortung.",
+        "Plattformen und Abhängigkeiten sind auf kognitive Last, Lock-in und Macht geprüft."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Empowerment nicht ohne Grenzen, Kompetenz, Daten und Accountability behaupten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-L08"
+    },
+    {
+      "id": "M01",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Wirkungsökonomischer Change Case",
+      "docxSeite": 267,
+      "zweck": "Die Veränderung aus Wirkung, Risiko, Strategie und realen Betroffenheiten legitimieren statt nur aus Effizienz oder Managementwillen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Ausgangsproblem und Nicht-Verändern-Folgen beschreiben.",
+        "Zielzustand und positive Netto-Wirkung formulieren.",
+        "Betroffene, Lasten, Macht- und Sicherheitsfolgen analysieren.",
+        "Nutzen, Risiken, Kosten und Alternativen vergleichen.",
+        "Schutz, Beteiligung und Erfolgskriterien festlegen.",
+        "Mandat, Sponsorship und Revisit-Regel beschließen."
+      ],
+      "outputs": [
+        "Change Case mit Ausgangszustand, Zielwirkung, Nicht-Verändern-Risiko, Betroffenen, Übergangslasten, Benefits und Mandat."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M01"
+    },
+    {
+      "id": "M02",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Change-Impact- und Betroffenheitsanalyse",
+      "docxSeite": 269,
+      "zweck": "Auswirkungen der Veränderung auf Rollen, Aufgaben, Identität, Macht, Systeme, Standorte und externe Gruppen differenziert erfassen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Veränderungskomponenten und Zeitplan aufnehmen.",
+        "Interne und externe Betroffenengruppen bestimmen.",
+        "Änderungen an Arbeit, Fähigkeiten, Status, Sicherheit und Beziehungen analysieren.",
+        "Belastung, Nutzen und kumulative Transformationslast bewerten.",
+        "Schutz-, Beteiligungs- und Befähigungsbedarf ableiten.",
+        "Maßnahmen, Owner und Monitoring festlegen."
+      ],
+      "outputs": [
+        "Betroffenheitsmatrix mit Ausmaß, Art, Zeitpunkt, Bereitschaft, Schutzbedarf und verantwortlicher Maßnahme."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M02"
+    },
+    {
+      "id": "M03",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Sponsor- und Führungskoalitionsarchitektur",
+      "docxSeite": 271,
+      "zweck": "Aktive, glaubwürdige und widerspruchsfähige Führung über Hierarchie- und Organisationsgrenzen gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Erforderliche Entscheidungen und Machtressourcen bestimmen.",
+        "Executive Sponsor, operative Sponsoren und lokale Führung identifizieren.",
+        "Interessen, Glaubwürdigkeit und Konflikte analysieren.",
+        "Gemeinsame Führungsprinzipien und sichtbare Verhaltenszusagen festlegen.",
+        "Cadence, Entscheidungen und Eskalation organisieren.",
+        "Wirksamkeit der Koalition überprüfen."
+      ],
+      "outputs": [
+        "Sponsor Map mit Rollen, Entscheidungen, Ressourcen, Verhaltenszusagen, Konflikten und Eskalationswegen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M03"
+    },
+    {
+      "id": "M04",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Macht-, Widerstands- und Konfliktkarte",
+      "docxSeite": 273,
+      "zweck": "Widerstand nicht als Defizit einzelner Personen, sondern als Information über Interessen, Verluste, Identität und Systemwidersprüche nutzen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Konflikte und Widerstandssignale sammeln.",
+        "Akteure, Interessen, Werte, Verluste und Abhängigkeiten analysieren.",
+        "Legitimen Widerspruch von Sabotage und Fehlinformation unterscheiden.",
+        "Machtasymmetrien und sichere Artikulationsräume prüfen.",
+        "Bearbeitungs-, Beteiligungs- und Entscheidungswege festlegen.",
+        "Ergebnisse und offene Dissense dokumentieren."
+      ],
+      "outputs": [
+        "Konfliktkarte mit Themen, Akteuren, Macht, legitimen Anliegen, Risiken, Dialog- und Entscheidungsformaten."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M04"
+    },
+    {
+      "id": "M05",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Change-Netzwerk und Multiplikatorenmodell",
+      "docxSeite": 275,
+      "zweck": "Dezentrale Übersetzung, Rückmeldung und Befähigung über formale Hierarchien hinaus organisieren.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Zielgruppen, Orte und Kommunikationsräume bestimmen.",
+        "Multiplikator-, Champion-, Expert- und Feedbackrollen definieren.",
+        "Personen transparent auswählen und Kapazität sichern.",
+        "Befähigung, Materialien und Entscheidungsrechte festlegen.",
+        "Zweiwegkommunikation und Eskalation organisieren.",
+        "Netzwerkwirkung und Belastung beobachten."
+      ],
+      "outputs": [
+        "Change-Netzwerk mit Rollen, Auswahlkriterien, Reichweite, Feedbackkanälen, Schutz und Lernrhythmus."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M05"
+    },
+    {
+      "id": "M06",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Change Story und Kommunikationsarchitektur",
+      "docxSeite": 277,
+      "zweck": "Eine wahrhaftige, zielgruppengerechte und dialogfähige Veränderungserzählung mit konkreten Entscheidungs- und Feedbackformaten verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Fakten, Unsicherheit, Zielwirkung und Grenzen klären.",
+        "Kernnarrativ ohne Manipulation und falsche Gewissheit formulieren.",
+        "Zielgruppenbedürfnisse und mögliche Frames analysieren.",
+        "Botschaften, Absender, Kanäle und Zeitpunkte gestalten.",
+        "Dialog, Fragen, Widerspruch und Korrekturen einbauen.",
+        "Verständnis, Vertrauen und Fehlwirkungen messen."
+      ],
+      "outputs": [
+        "Change Story, Botschaftsarchitektur, Zielgruppenplan, Kanäle, Dialogformate, Quellen und Korrekturregeln."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M06"
+    },
+    {
+      "id": "M07",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Befähigungs- und Qualifizierungsplan",
+      "docxSeite": 279,
+      "zweck": "Menschen rechtzeitig mit Wissen, Skills, Übungsräumen, Werkzeugen und Unterstützung für die neue Wirkungslogik ausstatten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Rollen- und Skilländerungen aus Betroffenheitsanalyse ableiten.",
+        "Zielkompetenzen und Mindestniveaus definieren.",
+        "Lernpfade, Praxisfälle und Übungsumgebungen gestalten.",
+        "Trainer, Plattformen, Zeit und Barrierefreiheit sichern.",
+        "Kompetenz und Anwendung im Arbeitskontext prüfen.",
+        "Support, Coaching und Nachlernen organisieren."
+      ],
+      "outputs": [
+        "Enablement-Plan mit Zielkompetenzen, Lernformaten, Praxisaufgaben, Support, Nachweis und Transfermessung."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M07"
+    },
+    {
+      "id": "M08",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Adoptions- und Verhaltensänderungsplan",
+      "docxSeite": 281,
+      "zweck": "Nutzung und neues Verhalten als Ergebnis von Fähigkeit, Gelegenheit, Motivation, Anreizen und Systembedingungen gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Zielverhalten präzise und beobachtbar definieren.",
+        "Capability, Opportunity und Motivation analysieren.",
+        "Systemische Barrieren, Anreize und Gewohnheiten identifizieren.",
+        "Interventionen kombinieren und auf Manipulationsrisiko prüfen.",
+        "Pilotieren, Adoption und Gegenwirkungen messen.",
+        "Erfolgreiches Verhalten institutionalisieren oder Intervention anpassen."
+      ],
+      "outputs": [
+        "Adoptionsplan mit Zielverhalten, Barrieren, Interventionen, ethischen Grenzen, Messung und Verstetigung."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M08"
+    },
+    {
+      "id": "M09",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Skills-, Workforce- und Rollenarchitektur",
+      "docxSeite": 283,
+      "zweck": "Zukünftige Fähigkeiten, Rollen, Kapazitäten, Mensch-KI-Arbeitsteilung und faire Übergänge systematisch planen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Ziel-Capabilities und Wertströme aufnehmen.",
+        "Rollen und Skillprofile ableiten.",
+        "Ist-Bestand, Kapazität und kritische Lücken analysieren.",
+        "Build, Buy, Borrow, Partner und Automatisierung abwägen.",
+        "Faire Übergänge, Umschulung und Schutz gestalten.",
+        "Workforce- und Skillindikatoren laufend aktualisieren."
+      ],
+      "outputs": [
+        "Workforce Architecture mit Rollenfamilien, Skills, Kapazität, Sourcing, Übergängen, Risiken und Entwicklungswegen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M09"
+    },
+    {
+      "id": "M10",
+      "kategorie": "M",
+      "kategorieName": "Change, Adoption, Workforce, Skills und Wissen",
+      "name": "Wissensfluss-, kritisches-Wissen- und Communities-Canvas",
+      "docxSeite": 285,
+      "zweck": "Wissen als Wirkungsinfrastruktur erfassen, teilen, schützen und erneuern.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wirkungskritische Entscheidungen und Wissensbedarfe bestimmen.",
+        "Explizites, implizites und relationales Wissen erfassen.",
+        "Wissensträger, Communities, Systeme und Flüsse kartieren.",
+        "Verlust-, Qualitäts-, Zugangs- und Machtprobleme analysieren.",
+        "Transfer, Dokumentation, Community und Nachfolge gestalten.",
+        "Nutzung und Aktualität des Wissens überprüfen."
+      ],
+      "outputs": [
+        "Knowledge Map mit kritischem Wissen, Quellen, Communities, Flüssen, Risiken, Schutz, Nachfolge und Lernschleifen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Übergangslasten, Macht- und Sicherheitsverluste sind sichtbar.",
+        "Adoption wird als reales Verhalten, nicht als Kommunikationsteilnahme gemessen."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Widerstand nicht pathologisieren und Kommunikation nicht mit Adoption verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-M10"
+    },
+    {
+      "id": "N01",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Wirkungstransformations-Portfolio",
+      "docxSeite": 288,
+      "zweck": "Alle Initiativen nach strategischem Wirkungsbeitrag, Capability-Aufbau, Risiko, Abhängigkeit, Aufwand und Lernwert steuern.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Strategische Wirkungspfade und Constraints festlegen.",
+        "Initiativen und laufende Verpflichtungen vollständig erfassen.",
+        "Beitrag, Evidenz, Risiko, Reife und Abhängigkeiten bewerten.",
+        "Portfolio unter Kapazitäts- und Budgetgrenzen optimieren.",
+        "Sequenz, Gates und Lernoptionen festlegen.",
+        "Regelmäßig stoppen, reallokieren und aktualisieren."
+      ],
+      "outputs": [
+        "Portfolio mit Initiativen, Wirkungspfaden, Capabilities, Benefits, Risiken, Ressourcen, Gates und Stop-/Reallokationsregeln."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N01"
+    },
+    {
+      "id": "N02",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Programmarchitektur und Abhängigkeitskarte",
+      "docxSeite": 290,
+      "zweck": "Zusammengehörige Initiativen, Capabilities, Übergänge und Benefits in einer koordinierten Transformationsarchitektur verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Programmoutcomes und Systemgrenze klären.",
+        "Workstreams, Produkte, Projekte und BAU-Anteile strukturieren.",
+        "Abhängigkeiten und kritische Integrationspunkte modellieren.",
+        "Benefits, Impact Owner und Übergabe zuordnen.",
+        "Governance, Entscheidungsrechte und Assurance festlegen.",
+        "Roadmap, Gates und Lernrhythmen synchronisieren."
+      ],
+      "outputs": [
+        "Program Blueprint mit Outcomes, Workstreams, Abhängigkeiten, Meilensteinen, Benefits, Governance und Risiken."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N02"
+    },
+    {
+      "id": "N03",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Initiativenauftrag und Wirkungsvertrag",
+      "docxSeite": 292,
+      "zweck": "Jede Initiative mit klarem Problem, Output, Outcome, Wirkung, Grenzen, Ownern und Lernpflicht starten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Problem und strategischen Beitrag formulieren.",
+        "Deliverables, Nutzung, Benefits und Wirkung trennen.",
+        "Empfänger, Grenzen und Risiken festlegen.",
+        "Capability- und Abhängigkeitsbeitrag bestimmen.",
+        "Owner für Delivery, Benefit und Impact benennen.",
+        "Gates, Evidenz, Review und Exit vereinbaren."
+      ],
+      "outputs": [
+        "Wirkungsvertrag mit Mandat, Scope, Deliverables, Outcomes, Benefits, KII, Capabilities, Schutz und Gates."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N03"
+    },
+    {
+      "id": "N04",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Transformationsbacklog und Portfolio-Kanban",
+      "docxSeite": 294,
+      "zweck": "Transformation als transparenten, begrenzten Fluss von Optionen, Entscheidungen, Umsetzung und Benefits steuern.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Workflow von Idee bis realisierte Wirkung definieren.",
+        "Eintrittskriterien und Pflichtinformationen festlegen.",
+        "WIP-Limits und Kapazität je Zustand bestimmen.",
+        "Priorisierung und Expedite-Regeln definieren.",
+        "Blocker, Abhängigkeiten und Aging visualisieren.",
+        "Nach Delivery bis Benefit und Wirkung weiterverfolgen."
+      ],
+      "outputs": [
+        "Portfolio-Kanban mit WIP-Limits, Entscheidungszuständen, Evidenz, Risiken, Gates und Benefit-Tracking."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N04"
+    },
+    {
+      "id": "N05",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Kapazitäts-, Ressourcen- und kritischer-Pfad-Plan",
+      "docxSeite": 296,
+      "zweck": "Portfolioambition mit realer Kapazität, knappen Skills, Abhängigkeiten und Betriebsbelastung abgleichen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Benötigte Capabilities, Rollen und Zeitfenster erfassen.",
+        "Verfügbare Kapazität inklusive BAU und Störungen bestimmen.",
+        "Abhängigkeiten und kritischen Pfad modellieren.",
+        "Engpässe, Multitasking und Transformationslast bewerten.",
+        "Optionen: Sequenzieren, reduzieren, verstärken oder stoppen.",
+        "Reserven und regelmäßige Replanung festlegen."
+      ],
+      "outputs": [
+        "Ressourcen- und Kapazitätsplan mit Engpässen, kritischem Pfad, Reserven und Repriorisierungsentscheidungen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N05"
+    },
+    {
+      "id": "N06",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Impact-and-Benefits-Realization-Map",
+      "docxSeite": 298,
+      "zweck": "Die Kette von Deliverables über Nutzung und Benefits bis zur positiven Netto-Wirkung explizit und prüfbar machen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Strategisches Ziel und Wirkungsempfänger festlegen.",
+        "Deliverables, Nutzung, Verhaltensänderung und Benefits unterscheiden.",
+        "Kausalbeiträge und externe Bedingungen modellieren.",
+        "Owner, KII, Daten und Zeitpunkte zuordnen.",
+        "Nebenwirkungen, Verteilung und Nachhaltigkeit prüfen.",
+        "Realisierung, Abweichung und Korrektur laufend steuern."
+      ],
+      "outputs": [
+        "Benefit-/Impact-Map mit Annahmen, Ownern, Messpunkten, Zeitverzug, Nebenwirkungen und Nachhaltigkeitsplan."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N06"
+    },
+    {
+      "id": "N07",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Benefit-/Impact-Owner und Übergabe in den Regelbetrieb",
+      "docxSeite": 300,
+      "zweck": "Verantwortung, Betrieb, Budget, Daten und Lernpflicht nach Projekt- oder Programmende sichern.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Betriebs- und Wirkungsverantwortung früh bestimmen.",
+        "Abnahmekriterien für Technik, Prozess, Menschen, Daten und Kontrollen definieren.",
+        "Adoption, Support, Budget und Capabilities prüfen.",
+        "Benefits und KII mit Ownern und Baselines übergeben.",
+        "Offene Risiken, Schulden und Übergangsschutz dokumentieren.",
+        "Post-Implementation- und Impact-Reviews terminieren."
+      ],
+      "outputs": [
+        "Handover- und Ownership-Plan mit Abnahmekriterien, Betriebsfähigkeit, Benefit Owner, Impact Owner und Reviewkalender."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N07"
+    },
+    {
+      "id": "N08",
+      "kategorie": "N",
+      "kategorieName": "Portfolio, Programme, Delivery und Impact & Benefits Realization",
+      "name": "Transformation-Office-Design und Delivery Review",
+      "docxSeite": 302,
+      "zweck": "Eine zeitlich begrenzte Integrationsfunktion für Portfolio, Architektur, Change, Benefits, Risiken und Entscheidungsvorbereitung gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Integrationsprobleme und Mandat klären.",
+        "Services und Nicht-Aufgaben des Offices definieren.",
+        "Rollen aus Strategie, Architektur, Delivery, Change, Finance, Risk und Impact verbinden.",
+        "Daten, Cadence und Entscheidungsprodukte festlegen.",
+        "Unabhängige Challenge und Eskalation sichern.",
+        "Sunset oder Übergang in Linienfunktionen planen."
+      ],
+      "outputs": [
+        "Design des Transformation Office mit Auftrag, Rollen, Services, Daten, Entscheidungsforen, Sunset-Kriterien und Reviewformat."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Output, Nutzung, Benefit und Wirkung sind getrennt.",
+        "Benefit- und Impact-Owner bleiben nach Delivery verantwortlich."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Go-live und Projektabschluss nicht als realisierten Benefit ausgeben."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-N08"
+    },
+    {
+      "id": "O01",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "Wirkungsdaten-Governance und Data Ownership",
+      "docxSeite": 305,
+      "zweck": "Daten als gemeinsame Wirkungs- und Entscheidungsinfrastruktur mit eindeutiger Verantwortung, Rechten und Qualitätsregeln organisieren.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Entscheidungen und Wirkungsdatenbedarfe bestimmen.",
+        "Datendomänen, Produkte und kritische Elemente definieren.",
+        "Owner, Steward, Custodian und Nutzerrechte zuordnen.",
+        "Qualität, Datenschutz, Ethik und Zugriff regeln.",
+        "Issue-, Change- und Eskalationsprozesse festlegen.",
+        "Governance anhand Nutzung und Wirkung überprüfen."
+      ],
+      "outputs": [
+        "Data Governance Map mit Domains, Ownern, Stewards, Nutzungsrechten, Qualitätszielen, Zugriff, KII und Eskalation."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O01"
+    },
+    {
+      "id": "O02",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "Data Lineage und Evidenzherkunftskarte",
+      "docxSeite": 307,
+      "zweck": "Herkunft, Transformation, Aggregation, Unsicherheit und Nutzung von Wirkungsdaten nachvollziehbar machen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Kritische Kennzahl oder Entscheidung auswählen.",
+        "Primärquellen und Erhebungsmethoden erfassen.",
+        "Transformationen, Modelle und Aggregationen dokumentieren.",
+        "Qualitäts-, Bias- und Manipulationsrisiken bewerten.",
+        "Kontrollen und Freigaben zuordnen.",
+        "Lineage versionieren und bei Änderung neu prüfen."
+      ],
+      "outputs": [
+        "Lineage Map von Quelle bis Entscheidung mit Transformationen, Kontrollen, Qualitätsklasse und Verantwortlichen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O02"
+    },
+    {
+      "id": "O03",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "Datenprodukt-Canvas",
+      "docxSeite": 309,
+      "zweck": "Wiederverwendbare, betreibbare Datenprodukte mit klaren Nutzern, Verträgen, Qualität, Wirkung und Lifecycle gestalten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Nutzer und zu unterstützende Entscheidungen bestimmen.",
+        "Datenproduktgrenze und Versprechen definieren.",
+        "Quellen, Modelle, Schnittstellen und SLAs gestalten.",
+        "Qualität, Rechte, Datenschutz und Fairness festlegen.",
+        "Betrieb, Kosten, Owner und Support organisieren.",
+        "Nutzung, Wirkung und Stilllegung überprüfen."
+      ],
+      "outputs": [
+        "Canvas mit Nutzerentscheidungen, Datenversprechen, Quellen, Schnittstellen, Qualität, Owner, Kosten, Risiken und KII."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O03"
+    },
+    {
+      "id": "O04",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "Technologieabhängigkeits-, Lock-in- und Souveränitätskarte",
+      "docxSeite": 311,
+      "zweck": "Kritische Technologie-, Anbieter-, Cloud-, Schnittstellen- und Kompetenzabhängigkeiten analysieren.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Kritische Services und Technologien erfassen.",
+        "Anbieter-, Daten-, Schnittstellen- und Skillabhängigkeiten modellieren.",
+        "Kritikalität, Wechselbarkeit und Konzentration bewerten.",
+        "Lock-in-, geopolitische und Sicherheitsrisiken analysieren.",
+        "Portabilität, Standards, Redundanz und Exitoptionen entwickeln.",
+        "Investitions- und Kontinuitätsplan festlegen."
+      ],
+      "outputs": [
+        "Dependency Map mit Kritikalität, Substituierbarkeit, Datenportabilität, Exitkosten, Resilienz und Maßnahmen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O04"
+    },
+    {
+      "id": "O05",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "KI-System-Wirkungsfolgenabschätzung",
+      "docxSeite": 313,
+      "zweck": "Voraussichtliche Auswirkungen eines KI-Systems auf Menschen, Gruppen, Organisation, Planet und Demokratie über den Lebenszyklus prüfen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Systemzweck, Anwendungen und Entscheidungsrolle definieren.",
+        "Direkte und indirekte Betroffene bestimmen.",
+        "Nutzen, Risiken, Rechte, Umwelt- und Gesellschaftsfolgen analysieren.",
+        "Daten, Modell, Human Oversight und Missbrauchsszenarien prüfen.",
+        "Kontrollen, Monitoring, Beschwerde und Redress gestalten.",
+        "Freigabe, Einschränkung, Pilot, Redesign oder Verbot entscheiden."
+      ],
+      "outputs": [
+        "AI Impact Assessment mit Kontext, Betroffenen, Nutzen, Risiken, Daten, Bias, Rechte, Kontrollen, Monitoring und Entscheidung."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O05"
+    },
+    {
+      "id": "O06",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "KI-Lebenszyklus-, Modellrisiko- und Human-Oversight-Canvas",
+      "docxSeite": 315,
+      "zweck": "Modellentwicklung, Freigabe, Betrieb, Änderung und menschliche Verantwortung durchgängig steuern.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Lebenszyklusphasen und Modellgrenzen definieren.",
+        "Rollen für Entwicklung, Validierung, Betrieb und Oversight trennen.",
+        "Daten-, Leistungs-, Robustheits-, Fairness- und Sicherheitsanforderungen festlegen.",
+        "Menschliche Eingriffs- und Entscheidungsmöglichkeiten testen.",
+        "Monitoring, Drift, Incident und Change Control organisieren.",
+        "Revalidierung, Abschaltung und Rückbau regeln."
+      ],
+      "outputs": [
+        "Lifecycle Governance mit Rollen, Tests, Validierung, Schwellen, Overrides, Monitoring, Changes und Decommissioning."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O06"
+    },
+    {
+      "id": "O07",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "Agentische Delegations- und Orchestrierungsarchitektur",
+      "docxSeite": 317,
+      "zweck": "Ziele, Aufgaben, Werkzeuge und Entscheidungsrechte zwischen Menschen und autonomen oder teilautonomen Agenten sicher verteilen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Agentenzweck und erlaubten Wirkungsraum definieren.",
+        "Aufgaben, Entscheidungen und Verbote klassifizieren.",
+        "Tools, Daten, Identitäten und Berechtigungen zuordnen.",
+        "Interaktionen zwischen Agenten und Menschen modellieren.",
+        "Kontrollen, Monitoring, Stop und Eskalation testen.",
+        "Betrieb, Änderung und Audit organisieren."
+      ],
+      "outputs": [
+        "Agent Architecture mit Rollen, Delegationsgrenzen, Toolrechten, Kontext, Kontrollpunkten, Logs, Eskalation und Haftung."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O07"
+    },
+    {
+      "id": "O08",
+      "kategorie": "O",
+      "kategorieName": "Daten, Technologie, KI und agentische Systeme",
+      "name": "KI-/Agenten-Incident-, Abschalt- und Rückbauplan",
+      "docxSeite": 319,
+      "zweck": "Fehler, Missbrauch, Kontrollverlust und schädliche Wirkung schnell begrenzen und Systeme geordnet stilllegen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Incidentklassen und Wirkungsschwere definieren.",
+        "Erkennungs- und Alarmquellen bestimmen.",
+        "Triage, Entscheidungsrechte und Kill-Switch testen.",
+        "Eindämmung, Fallback und Betriebsfortführung planen.",
+        "Betroffene informieren, Schäden beheben und Beweise sichern.",
+        "Root Cause, Revalidierung oder Decommissioning durchführen."
+      ],
+      "outputs": [
+        "Incident- und Exit-Playbook mit Erkennung, Triage, Eindämmung, Abschaltung, Kommunikation, Redress, Recovery und Lernen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Datenherkunft, Human Oversight und Decommissioning sind geregelt.",
+        "Keine Personenbewertung oder automatisierte normative Letztentscheidung."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Human Oversight nicht als symbolischen Klick ohne Eingriffsmöglichkeit gestalten."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-O08"
+    },
+    {
+      "id": "P01",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Wirkungs-Excellence-Selbstbewertung",
+      "docxSeite": 323,
+      "zweck": "Führung, Strategie, Realisierung, Ergebnisse und Lernen ganzheitlich gegen das WÖMM/WÖMS bewerten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Bewertungsbereich und Reifegradmodell festlegen.",
+        "Evidenz zu Richtung, Umsetzung, Wirkung und Lernen sammeln.",
+        "Bewertung durch gemischtes Team durchführen.",
+        "Ergebnisse, Ansätze, Deployment und Refinement prüfen.",
+        "Lücken nach Wirkung und Risiko priorisieren.",
+        "Verbesserungen, Owner und Review festlegen."
+      ],
+      "outputs": [
+        "Selbstbewertung mit Stärken, Evidenz, Reife, Ergebnisqualität, Lücken und priorisierter Verbesserungsroadmap."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P01"
+    },
+    {
+      "id": "P02",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Kontinuierliche Wirkungsverbesserung",
+      "docxSeite": 325,
+      "zweck": "PDCA und systemisches Lernen auf Wirkung, Prozess, Capability und Governance anwenden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Verbesserungsproblem und Baseline festlegen.",
+        "Ursache und Wirkungsannahme formulieren.",
+        "Kleine, sichere Veränderung planen.",
+        "Umsetzen und Leading-/Lagging-KII beobachten.",
+        "Wirkung, Nebenwirkung und Kontext bewerten.",
+        "Standardisieren, skalieren, anpassen oder zurücknehmen."
+      ],
+      "outputs": [
+        "Verbesserungszyklus mit Problem, Baseline, Hypothese, Experiment, KII, Ergebnis, Standardisierung oder Rücknahme."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P02"
+    },
+    {
+      "id": "P03",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Ursachen-, Incident- und Lernanalyse",
+      "docxSeite": 327,
+      "zweck": "Nach Fehlern, Beinaheereignissen oder Wirkungsabweichungen systemisch lernen, ohne vorschnelle Personalisierung.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Sicheren, nicht schuldorientierten Rahmen schaffen.",
+        "Ereignis, Kontext und Zeitlinie rekonstruieren.",
+        "Unmittelbare und latente Systembedingungen analysieren.",
+        "Barrieren, Entscheidungen und Informationsflüsse prüfen.",
+        "Wirkungsfolgen und Betroffene einbeziehen.",
+        "Maßnahmen auf Systemebene beschließen und nachverfolgen."
+      ],
+      "outputs": [
+        "Lernbericht mit Ereignislinie, Systembedingungen, Barrieren, Ursachen, Wirkungsfolgen und Maßnahmen."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P03"
+    },
+    {
+      "id": "P04",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Business Impact Analysis für kritische Wirkungsservices",
+      "docxSeite": 329,
+      "zweck": "Kritische Produkte, Services, gesellschaftliche Funktionen und maximal tolerierbare Ausfälle bestimmen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Produkte, Services und Wirkungsempfänger erfassen.",
+        "Kritische Outcomes und Schutzpflichten bestimmen.",
+        "Auswirkungen eines Ausfalls über Zeit bewerten.",
+        "Maximal tolerierbare Unterbrechung und Mindestniveau festlegen.",
+        "Ressourcen- und Lieferkettenabhängigkeiten analysieren.",
+        "Recovery-Prioritäten und Strategieanforderungen ableiten."
+      ],
+      "outputs": [
+        "BIA mit kritischen Services, Empfängern, Auswirkungen über Zeit, Toleranzen, Abhängigkeiten und Prioritäten."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P04"
+    },
+    {
+      "id": "P05",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Kontinuitäts-, Recovery- und Wirkungsresilienzplan",
+      "docxSeite": 331,
+      "zweck": "Kritische Wirkung unter Störung erhalten beziehungsweise sicher und priorisiert wiederherstellen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "BIA und kritische Abhängigkeiten übernehmen.",
+        "Störungsszenarien und Resilienzziele definieren.",
+        "Kontinuitäts- und Recovery-Strategien auswählen.",
+        "Rollen, Ressourcen, Fallbacks und Lieferketten sichern.",
+        "Kommunikation und Schutz vulnerabler Empfänger planen.",
+        "Übungen, Wartung und Review organisieren."
+      ],
+      "outputs": [
+        "Continuity Plan mit Szenarien, Strategien, Mindestservices, RTO/RPO, Rollen, Fallback, Kommunikation und Tests."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P05"
+    },
+    {
+      "id": "P06",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Krisensimulation, Red Teaming und Tabletop Exercise",
+      "docxSeite": 333,
+      "zweck": "Entscheidungen, Kommunikation, Barrieren und Recovery unter realistischen Störungen testen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Ziele, Szenario und Schutzrahmen festlegen.",
+        "Teilnehmende, Rollen und Injects vorbereiten.",
+        "Simulation durchführen und Entscheidungen dokumentieren.",
+        "Wirkungsfolgen, Kommunikation und vulnerable Gruppen beobachten.",
+        "Hot Wash und strukturierte Auswertung durchführen.",
+        "Maßnahmen, Owner und Re-Test terminieren."
+      ],
+      "outputs": [
+        "Übungsdesign und After-Action-Report mit Beobachtungen, Lücken, Maßnahmen und Re-Test."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P06"
+    },
+    {
+      "id": "P07",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Barrier-, Bow-Tie- und Kontrollwirksamkeitskarte",
+      "docxSeite": 335,
+      "zweck": "Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Gefahr, Top Event und Wirkungskonsequenz definieren.",
+        "Bedrohungen und Ursachen identifizieren.",
+        "Präventive Barrieren zuordnen.",
+        "Reaktive Barrieren und Recovery ergänzen.",
+        "Wirksamkeit, Degradationsfaktoren und Owner bewerten.",
+        "KII, Tests und Verbesserungen festlegen."
+      ],
+      "outputs": [
+        "Bow-Tie mit Top Event, Ursachen, Folgen, Barrieren, Ownern, Wirksamkeit, Degradation und KII."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P07"
+    },
+    {
+      "id": "P08",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Key Impact Controls und Kontrollbibliothek",
+      "docxSeite": 337,
+      "zweck": "Wesentliche Kontrollen für Wirkungsgrenzen, Daten, KI, Prozesse und Governance standardisieren und betreiben.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wesentliche Wirkungsrisiken und Grenzen auswählen.",
+        "Kontrollziele und Kontrolltypen definieren.",
+        "Kontrollen dokumentieren und redundanzfrei strukturieren.",
+        "Owner, Frequenz, Evidenz und Automatisierung festlegen.",
+        "Design- und Operating Effectiveness testen.",
+        "Lücken, Ausnahmen und Remediation steuern."
+      ],
+      "outputs": [
+        "Control Library mit Risiko/Wirkung, Ziel, Design, Owner, Frequenz, Evidenz, Test und Wirksamkeitsstatus."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P08"
+    },
+    {
+      "id": "P09",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Integrierte Assurance Map und Three Lines",
+      "docxSeite": 339,
+      "zweck": "Management, spezialisierte Challenge, interne Revision und externe Assurance auf wesentliche Wirkungsrisiken ausrichten.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Wesentliche Risiken, Wirkungsgrenzen und regulatorische Pflichten erfassen.",
+        "First-, Second- und Third-Line-Verantwortung zuordnen.",
+        "Externe Assurance und Zertifizierungen ergänzen.",
+        "Abdeckung, Überschneidung und Lücken analysieren.",
+        "Reliance, Unabhängigkeit und Reporting festlegen.",
+        "Jährlichen risikobasierten Assuranceplan beschließen."
+      ],
+      "outputs": [
+        "Assurance Map mit Risiken, Controls, Assurance-Anbietern, Tiefe, Frequenz, Lücken und Reliance."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P09"
+    },
+    {
+      "id": "P10",
+      "kategorie": "P",
+      "kategorieName": "Qualität, operative Resilienz, Kontrollen und integrierte Assurance",
+      "name": "Unabhängige Methoden-, Modell- und Wirkungsprüfung",
+      "docxSeite": 341,
+      "zweck": "WÖMS-Anwendung, Bewertungsmodelle, Daten, Entscheidungen und behauptete Wirkung unabhängig challengen.",
+      "inputs": [
+        "Wirkungsmandat",
+        "vorhandene Daten und relevante Vorarbeiten"
+      ],
+      "schritte": [
+        "Mandat, Unabhängigkeit und Prüfkriterien festlegen.",
+        "Methodenauswahl, Daten und Modelllogik nachvollziehen.",
+        "Betroffene, Grenzen und Nichtkompensation prüfen.",
+        "Rechenwege, Annahmen und Sensitivität testen.",
+        "Behauptete Wirkung und alternative Erklärungen bewerten.",
+        "Feststellungen, Remediation und Follow-up veröffentlichen."
+      ],
+      "outputs": [
+        "Prüfbericht mit Scope, Kriterien, Evidenz, Feststellungen, Unsicherheiten, Managementantwort und Follow-up."
+      ],
+      "qualitaetsregeln": [
+        "Empfänger, Systemgrenze, Wirkungsziel und Schutzrahmen sind eindeutig.",
+        "Befunde, Annahmen, Modelle und normative Bewertungen bleiben unterscheidbar.",
+        "Der Output besitzt Owner, Version, Evidenzstatus und eine klare nächste Entscheidung.",
+        "Kontrollen und Assurance sind risikobasiert und unabhängig genug.",
+        "Kontinuität schützt kritische Wirkung und vulnerable Empfänger."
+      ],
+      "schutzregeln": [
+        "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
+        "Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
+        "Keine Fach-, Rechts-, Sicherheits- oder Datenprüfung durch ein Canvas ersetzen.",
+        "Kontrollmenge nicht mit Kontrollwirksamkeit verwechseln."
+      ],
+      "schnittstellen": {
+        "bautAuf": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "A05",
+          "A06"
+        ],
+        "fuehrtZu": []
+      },
+      "canvasRef": "canvas-P10"
     }
   ]
 }

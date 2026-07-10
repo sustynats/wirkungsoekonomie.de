@@ -6,8 +6,10 @@ Stand: 10. Juli 2026
 
 Veröffentlicht und als führende Referenzen registriert sind:
 
-- Das Wirkungsökonomische Managementmodell, WÖMM 1.0, 76 Seiten.
-- Das Wirkungsökonomische Methodensystem, WÖMS 1.0, 231 Seiten.
+- Das Wirkungsökonomische Managementmodell, WÖMM 2.0, 98 Seiten.
+- Das Wirkungsökonomische Methodensystem, WÖMS 2.0, 387 Seiten.
+
+Die Fassungen 2.0 ersetzen die zuvor eingebundenen Fassungen 1.0 vollständig; es werden keine parallelen 1.0-Bibliothekseinträge oder Downloads erzeugt.
 
 Kuratierte Metadaten stehen in `content/publications/grundlagenpublikationen.json`. Die öffentlichen PDFs liegen unter `assets/downloads/grundlagen/`.
 

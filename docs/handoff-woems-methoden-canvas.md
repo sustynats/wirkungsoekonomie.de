@@ -4,12 +4,12 @@ Stand: 10. Juli 2026
 
 ## Ergebnis
 
-Die Datenlane für WÖMS 1.0 ist als kanonische Single Source umgesetzt. Sie enthält ausschließlich aus der Referenzfassung extrahierte Methodenfakten und Feldspezifikationen. Narrative Methodenseiten, Praxisbeispiele, Visuals, Folien und Videos gehören nicht zu diesem Paket.
+Die Datenlane für WÖMS 2.0 ist als kanonische Single Source umgesetzt. Sie enthält ausschließlich aus der Referenzfassung extrahierte Methodenfakten und Feldspezifikationen. Narrative Methodenseiten, Praxisbeispiele, Visuals, Folien und Videos gehören nicht zu diesem Paket.
 
 ## Kanonische Dateien
 
-- `content/methods/woems-methoden.json`: 84 Kernmethoden A01 bis H08 in acht Kategorien.
-- `content/methods/woems-canvas.json`: 84 methodenspezifische Canvas und 32 Anwendungs-Canvas.
+- `content/methods/woems-methoden.json`: 152 Kernmethoden A01 bis P10 in 16 Kategorien.
+- `content/methods/woems-canvas.json`: 152 methodenspezifische Canvas und 56 Anwendungs- und Realisierungs-Canvas.
 - `content/methods/woems-methods.ts`: Typen und typisierte Imports; keine zweite Datenpflege.
 - `content/methods/schema/woems-canvas-instance.schema.json`: Schema für ausgefüllte Canvas-Instanzen.
 - `lib/woems/validate-canvas.mjs`: Mindeststandard und harte Nichtkompensationsregel.
@@ -24,7 +24,7 @@ Jede Methode enthält exakt:
   "kategorie": "F",
   "kategorieName": "Innovation, Angebote und Geschäftsmodelle",
   "name": "Wirkungsmodell-Canvas",
-  "docxSeite": 136,
+  "docxSeite": 138,
   "zweck": "...",
   "inputs": ["..."],
   "schritte": ["..."],
@@ -49,7 +49,7 @@ Jede Spezifikation enthält `id`, `methodId`, `name`, feldgenaue `felder` mit `k
 - Wirkungsgrenzen
 - offene Fragen
 
-Die 32 Anwendungsvarianten tragen zusätzlich `anwendungsmodul` und `relatedMethodIds`.
+Die 56 Anwendungsvarianten tragen zusätzlich `anwendungsmodul` und `relatedMethodIds`.
 
 ## Website- und Kernexport
 
@@ -58,15 +58,16 @@ Die 32 Anwendungsvarianten tragen zusätzlich `anwendungsmodul` und `relatedMeth
 - Kern-Endpunkt Methoden: `/api/v1/methods/`
 - Kern-Endpunkt Canvas: `/api/v1/canvases/`
 
-Die Akademie synchronisiert den Methodenexport als generierten Snapshot. Manuelle Kopien der 84 Methoden sind nicht zulässig.
+Die Akademie synchronisiert den Methodenexport als generierten Snapshot. Manuelle Kopien der 152 Methoden sind nicht zulässig.
 
 ## Aktualisierung
 
 1. DOCX nach Text extrahieren, zum Beispiel mit `textutil`.
-2. `WOEMS_TEXT=/pfad/WOEMS.txt npm run methods:import`
-3. `npm run methods:build`
-4. `npm run check:woems`
-5. Glossarimport neu ableiten und ausführen.
+2. DOCX rendern und aus dem PDF mit `scripts/methods/extract-woems-page-map.py` die physische Seitenkarte erzeugen.
+3. `WOEMS_TEXT=/pfad/WOEMS.txt WOEMS_PAGE_MAP=/pfad/woems-pages.json npm run methods:import`
+4. `npm run methods:build`
+5. `npm run check:woems`
+6. Glossarimport neu ableiten und ausführen.
 
 ## Schutzlogik
 

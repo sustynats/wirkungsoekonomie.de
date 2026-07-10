@@ -8,19 +8,19 @@ const canvases = JSON.parse(fs.readFileSync(path.join(ROOT, "content/methods/woe
 const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 
-assert(methods.methods.length === 84, "Methoden-Registry enthält nicht 84 Methoden.");
-assert(methods.kategorien.length === 8, "Methoden-Registry enthält nicht 8 Kategorien.");
-assert(canvases.counts.methodCanvases === 84, "Es fehlen methodenspezifische Canvas.");
-assert(canvases.counts.variants === 32, "Es fehlen Canvas-Varianten.");
-assert(canvases.canvases.length === 116, "Canvas-Registry enthält nicht 116 Spezifikationen.");
+assert(methods.methods.length === 152, "Methoden-Registry enthält nicht 152 Methoden.");
+assert(methods.kategorien.length === 16, "Methoden-Registry enthält nicht 16 Kategorien.");
+assert(canvases.counts.methodCanvases === 152, "Es fehlen methodenspezifische Canvas.");
+assert(canvases.counts.variants === 56, "Es fehlen Canvas-Varianten.");
+assert(canvases.canvases.length === 208, "Canvas-Registry enthält nicht 208 Spezifikationen.");
 
 const methodIds = new Set(methods.methods.map((method) => method.id));
 const canvasIds = new Set(canvases.canvases.map((canvas) => canvas.id));
-assert(methodIds.size === 84, "Doppelte Methoden-ID gefunden.");
-assert(canvasIds.size === 116, "Doppelte canvasId gefunden.");
+assert(methodIds.size === 152, "Doppelte Methoden-ID gefunden.");
+assert(canvasIds.size === 208, "Doppelte canvasId gefunden.");
 
 for (const method of methods.methods) {
-  assert(/^[A-H]\d{2}$/.test(method.id), `Ungültige Methoden-ID: ${method.id}`);
+  assert(/^[A-P]\d{2}$/.test(method.id), `Ungültige Methoden-ID: ${method.id}`);
   for (const key of ["name", "zweck", "kategorie", "kategorieName", "docxSeite", "canvasRef"]) assert(Boolean(method[key]), `${method.id}: ${key} fehlt.`);
   for (const key of ["inputs", "schritte", "outputs", "qualitaetsregeln", "schutzregeln"]) {
     assert(Array.isArray(method[key]), `${method.id}: ${key} ist kein Array.`);
@@ -45,7 +45,7 @@ assert(nonCompensation.decision === "stop_or_redesign" && !nonCompensation.aggre
 const validCanvas = validateCanvasInstance({
   canvasId: "canvas-A01",
   methodId: "A01",
-  version: "1.0",
+  version: "2.0",
   datum: "2026-07-10",
   fall: "Testfall",
   verantwortlicheModeration: "Test",
@@ -63,4 +63,4 @@ if (failures.length) {
   console.error(["WÖMS-Registry-Check fehlgeschlagen:", ...failures.map((failure) => `- ${failure}`)].join("\n"));
   process.exit(1);
 }
-console.log("WÖMS-Registry-Check bestanden: 84 Methoden, 32 Varianten, 116 Canvas-Spezifikationen.");
+console.log("WÖMS-Registry-Check bestanden: 152 Methoden, 56 Varianten, 208 Canvas-Spezifikationen.");
