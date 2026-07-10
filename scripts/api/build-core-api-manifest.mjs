@@ -31,6 +31,22 @@ const endpointDefinitions = [
     description: "Glossar-Snapshot aus dem versionierten Wissenskern.",
   },
   {
+    id: "methods",
+    url: "/api/v1/methods/",
+    method: "GET",
+    lifecycle: "stable",
+    audience: ["internal", "partners"],
+    description: "Schlanker WÖMS-Snapshot der 84 kanonischen Kernmethoden.",
+  },
+  {
+    id: "canvases",
+    url: "/api/v1/canvases/",
+    method: "GET",
+    lifecycle: "stable",
+    audience: ["internal", "partners"],
+    description: "Feldgenaue WÖMS-Canvas-Spezifikationen und verbindlicher Mindeststandard.",
+  },
+  {
     id: "search",
     url: "/api/v1/search/",
     method: "GET",
@@ -229,7 +245,7 @@ function writeEndpoint(directory, data) {
   ensureDirFor(htmlPath);
   fs.writeFileSync(
     path.join(root, htmlPath),
-    `<pre>${htmlEscape(JSON.stringify(data, null, 2))}</pre>\n`,
+    `<!doctype html>\n<html lang="de">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>WÖk API · ${htmlEscape(data.title ?? data.registryId ?? "Daten")}</title>\n</head>\n<body>\n<pre>${htmlEscape(JSON.stringify(data, null, 2))}</pre>\n</body>\n</html>\n`,
   );
 }
 
@@ -282,6 +298,8 @@ const navigation = readJson("assets/data/navigation.json", {});
 const documentRegistry = readJson("assets/data/document-registry.json", {});
 const toolRegistry = readJson("assets/data/tool-registry.json", []);
 const woekIds = readJson("assets/data/woek-id-register.json", []);
+const woemsMethods = readJson("public/data/woems-methoden.json", { methods: [], counts: {} });
+const woemsCanvases = readJson("public/data/woems-canvas.json", { canvases: [], counts: {} });
 
 const routeGroups = Object.entries(navigation)
   .filter(([, value]) => Array.isArray(value))
@@ -332,8 +350,10 @@ const capabilities = {
         "assets/data/glossary-lookup.json",
         "assets/search/search-index.json",
         "assets/data/woek-id-register.json",
+        "public/data/woems-methoden.json",
+        "public/data/woems-canvas.json",
       ],
-      capabilities: ["Glossar", "Suche", "WÖk-ID-Register", "öffentliche Wissensnavigation"],
+      capabilities: ["Glossar", "Suche", "WÖk-ID-Register", "WÖMS-Methoden", "Canvas-Spezifikationen", "öffentliche Wissensnavigation"],
     },
     {
       id: "impact-reference",
@@ -403,6 +423,22 @@ const searchEndpoint = {
     format: entry.format,
     tags: entry.tags || [],
   })),
+};
+
+const methodsEndpoint = {
+  generatedAt,
+  version: "v1",
+  canonicalSource: "content/methods/woems-methoden.json",
+  publicExport: "public/data/woems-methoden.json",
+  ...woemsMethods,
+};
+
+const canvasesEndpoint = {
+  generatedAt,
+  version: "v1",
+  canonicalSource: "content/methods/woems-canvas.json",
+  publicExport: "public/data/woems-canvas.json",
+  ...woemsCanvases,
 };
 
 const sdgPlusEndpoint = {
@@ -501,6 +537,18 @@ const workflowManifest = {
       owner: "Wissenskern",
     },
     {
+      id: "woems-methods",
+      path: "content/methods/woems-methoden.json",
+      count: woemsMethods.methods?.length || 0,
+      owner: "Wissenskern",
+    },
+    {
+      id: "woems-canvases",
+      path: "content/methods/woems-canvas.json",
+      count: woemsCanvases.canvases?.length || 0,
+      owner: "Wissenskern",
+    },
+    {
       id: "sdg-reference",
       path: "assets/data/sdg-reference.json",
       count: sdgReference.length,
@@ -581,6 +629,8 @@ writeEndpoint("api", {
 writeEndpoint("api/v1", apiIndex);
 writeEndpoint("api/v1/capabilities", capabilities);
 writeEndpoint("api/v1/glossary", glossaryEndpoint);
+writeEndpoint("api/v1/methods", methodsEndpoint);
+writeEndpoint("api/v1/canvases", canvasesEndpoint);
 writeEndpoint("api/v1/search", searchEndpoint);
 writeEndpoint("api/v1/sdg-plus", sdgPlusEndpoint);
 writeEndpoint("api/v1/wirkungsradar", wirkungsradarEndpoint);

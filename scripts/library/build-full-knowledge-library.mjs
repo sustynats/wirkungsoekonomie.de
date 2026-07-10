@@ -8,6 +8,8 @@ const BLOG_INDEX_PATH = path.join(ROOT, "assets/data/blog-index.json");
 const PODCAST_INDEX_PATH = path.join(ROOT, "assets/data/podcast-index.json");
 const GLOSSARY_INDEX_PATH = path.join(ROOT, "begriffe/index.html");
 const OUT = path.join(ROOT, "bibliothek/index.html");
+const DETAIL_DIR = path.join(ROOT, "bibliothek/eintraege");
+const DETAIL_REGISTRY_PATH = path.join(ROOT, "assets/data/library-source-details.json");
 const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
 
 function esc(value = "") {
@@ -27,10 +29,10 @@ function slug(value = "") {
     .replace(/^-|-$/g, "");
 }
 
-function siteHref(primary = "") {
+function siteHref(primary = "", prefix = "../") {
   if (!primary) return "#";
   if (/^(https?:|mailto:|tel:)/.test(primary)) return primary;
-  return `../${primary.replace(/^\/+/, "")}`;
+  return `${prefix}${primary.replace(/^\/+/, "")}`;
 }
 
 function isPublicLibraryFormat(primary = "") {
@@ -78,7 +80,7 @@ function extent(doc) {
   const formats = [...new Set(doc.formats || ["Online"])].join(", ");
   const publicFiles = doc.variants?.filter((variant) => /\.(pdf|pptx|xlsx|csv|json)$/i.test(variant.primary || "")) || [];
   const sizeSource = publicFiles.find((variant) => /\.pdf$/i.test(variant.primary || ""))?.sourcePath || primary;
-  const pages = pdfPages(sizeSource) || pdfPages(primary) || officePages(primary);
+  const pages = doc.pages || pdfPages(sizeSource) || pdfPages(primary) || officePages(primary);
   const size = fileSize(sizeSource) || fileSize(primary);
   const bits = [];
   if (pages) bits.push(`${pages} Seiten`);
@@ -98,7 +100,7 @@ function normalizedPairKey(value = "") {
     .trim());
 }
 
-function actionLinks(doc, onlineByKey) {
+function actionLinks(doc, onlineByKey, prefix = "../") {
   const primary = doc.urls?.primary || "";
   const sourcePath = doc.urls?.sourcePath || primary;
   const variants = doc.variants || [];
@@ -107,25 +109,25 @@ function actionLinks(doc, onlineByKey) {
   const isPdf = /\.pdf$/i.test(primary);
   const isOnline = doc.source === "online-version" || /\.html$/i.test(primary) || /\/$/.test(primary);
   const links = [];
-  if (onlineVariant) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineVariant.primary))}">Onlinefassung lesen</a>`);
-  if (pdfVariant) links.push(`<a class="btn btn-primary" href="${esc(siteHref(pdfVariant.primary))}">PDF öffnen</a>`);
+  if (onlineVariant) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineVariant.primary, prefix))}">Onlinefassung lesen</a>`);
+  if (pdfVariant) links.push(`<a class="btn btn-primary" href="${esc(siteHref(pdfVariant.primary, prefix))}">PDF öffnen</a>`);
   if (links.length) return `<div class="document-action-row">${links.join("")}</div>`;
   const onlineMatch = !isOnline ? onlineByKey.get(normalizedPairKey(doc.title)) : "";
   if (isOnline) {
-    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Online lesen</a>`);
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Online lesen</a>`);
   } else if (isPdf) {
-    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">PDF öffnen</a>`);
-    if (onlineMatch) links.push(`<a class="btn btn-ghost" href="${esc(siteHref(onlineMatch))}">Online lesen</a>`);
+    links.push(`<a class="btn btn-primary" href="${esc(siteHref(primary, prefix))}">PDF öffnen</a>`);
+    if (onlineMatch) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineMatch, prefix))}">Online lesen</a>`);
   } else if (/\.(xlsx|csv|json)$/i.test(primary)) {
-    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Daten öffnen</a>`);
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Daten öffnen</a>`);
   } else if (/\.(pptx)$/i.test(primary)) {
-    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Präsentation öffnen</a>`);
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Präsentation öffnen</a>`);
   } else if (/\.docx$/i.test(sourcePath)) {
     links.push(`<span class="btn btn-ghost" aria-disabled="true">PDF wird vorbereitet</span>`);
   } else if (!isPublicLibraryFormat(primary)) {
     links.push(`<span class="btn btn-ghost" aria-disabled="true">Onlinefassung wird vorbereitet</span>`);
   } else {
-    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary))}">Eintrag öffnen</a>`);
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Eintrag öffnen</a>`);
   }
   return `<div class="document-action-row">${links.join("")}</div>`;
 }
@@ -284,7 +286,6 @@ function journalCard(article) {
 }
 
 function card(doc, index, onlineByKey) {
-  const primary = doc.urls?.primary || "";
   const topics = doc.topics || [];
   const methods = doc.relatedMethods || [];
   const fields = doc.relatedImpactFields || [];
@@ -304,8 +305,115 @@ function card(doc, index, onlineByKey) {
         <dt>Themen</dt><dd>${esc(topics.slice(0, 4).join(", ") || "nicht verschlagwortet")}</dd>
       </dl>
       <div class="document-chip-row muted">${[...methods.slice(0, 3), ...fields.slice(0, 2)].map((item) => `<span>${esc(item)}</span>`).join("")}</div>
-      ${actionLinks(doc, onlineByKey)}
+      <div class="document-action-row"><a class="btn btn-primary" href="eintraege/${esc(doc.detailSlug)}/">Details zur Quelle</a></div>
     </article>`;
+}
+
+function assignDetailSlugs(items) {
+  const used = new Set();
+  return items.map((doc, index) => {
+    const base = (slug(doc.id || doc.title) || `eintrag-${index + 1}`).slice(0, 110);
+    let detailSlug = base;
+    let suffix = 2;
+    while (used.has(detailSlug)) detailSlug = `${base}-${suffix++}`;
+    used.add(detailSlug);
+    return { ...doc, detailSlug };
+  });
+}
+
+function sourceLabel(value = "") {
+  const labels = {
+    "curated-publication": "Kuratierte WÖk-Publikation",
+    "leading-reference": "Führende WÖk-Referenz",
+    "download-or-document": "Dokumentenbibliothek",
+    "online-version": "Onlinefassung",
+    Journal: "Journal",
+    Podcast: "Podcast"
+  };
+  return labels[value] || value || "Bibliothek";
+}
+
+function relatedDocuments(doc, all) {
+  const signals = new Set([...(doc.topics || []), ...(doc.relatedMethods || []), ...(doc.relatedImpactFields || [])]);
+  return all
+    .filter((candidate) => candidate.detailSlug !== doc.detailSlug)
+    .map((candidate) => ({
+      candidate,
+      score: [...new Set([...(candidate.topics || []), ...(candidate.relatedMethods || []), ...(candidate.relatedImpactFields || [])])]
+        .filter((item) => signals.has(item)).length
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.candidate.title.localeCompare(b.candidate.title, "de"))
+    .slice(0, 4)
+    .map((item) => item.candidate);
+}
+
+function detailPage(doc, all, onlineByKey) {
+  const type = displayType(doc);
+  const topics = doc.topics || [];
+  const methods = doc.relatedMethods || [];
+  const impactFields = doc.relatedImpactFields || [];
+  const related = relatedDocuments(doc, all);
+  const facts = [
+    ["Dokumentart", type],
+    ["Status", doc.status],
+    ["Version", doc.version || doc.dateOrStand],
+    ["Stand", doc.publicationDate ? formatDate(doc.publicationDate) : doc.dateOrStand],
+    ["Autor:in / Institution", doc.author || doc.publisher],
+    ["Umfang", extent(doc)],
+    ["Formate", [...new Set(doc.formats || [])].join(", ")],
+    ["Herkunft", sourceLabel(doc.source)],
+    ["Prüfstatus", doc.reviewStatus],
+    ["Bibliotheks-ID", doc.id]
+  ].filter(([, value]) => value);
+  const factsHtml = facts.map(([key, value]) => `<div class="source-fact"><dt>${esc(key)}</dt><dd>${esc(value)}</dd></div>`).join("\n");
+  const keyPoints = (doc.keyPoints || []).map((item) => `<li>${esc(item)}</li>`).join("");
+  const outline = (doc.contentOutline || topics).map((item) => `<li>${esc(item)}</li>`).join("");
+  const chips = [...topics, ...methods, ...impactFields].slice(0, 16).map((item) => `<span class="term-chip">${esc(item)}</span>`).join("");
+  const relatedHtml = related.map((item) => `<li><a href="../${esc(item.detailSlug)}/">${esc(item.title)}</a></li>`).join("");
+  const classification = doc.impactClassification || `${typeIntro(type)} Der Eintrag wird über Themen, Methoden, Status und Herkunft in die Wirkungsökonomie eingeordnet; die zugrunde liegende Quelle bleibt für ihre Aussagen verantwortlich.`;
+  return `<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${esc(doc.title)} | Bibliothek der Wirkungsökonomie</title>
+    <meta name="description" content="${esc(doc.shortDescription || typeIntro(type))}">
+    <meta name="search_section" content="Bibliothek">
+    <meta name="search_type" content="${esc(type)}">
+    <link rel="stylesheet" href="../../../assets/css/style.css?v=20260612-mobile-table-fix">
+  </head>
+  <body>
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../../../index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="../../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude></nav>
+    </header>
+    <main class="section" data-pagefind-body>
+      <article class="article-shell quellenarchiv-detail">
+        <nav class="breadcrumb" aria-label="Brotkrumen"><a href="../../">Bibliothek</a> / ${esc(doc.title)}</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">${esc(type)} · ${esc(doc.status)}</p>
+          <h1>${esc(doc.title)}</h1>
+          ${doc.subtitle ? `<p class="lead">${esc(doc.subtitle)}</p>` : ""}
+          <p class="lead">${esc(doc.shortDescription || typeIntro(type))}</p>
+          <div class="term-meta-row"><span>${esc(sourceLabel(doc.source))}</span>${doc.author ? `<span>${esc(doc.author)}</span>` : ""}${doc.dateOrStand ? `<span>${esc(doc.dateOrStand)}</span>` : ""}</div>
+          ${actionLinks(doc, onlineByKey, "../../../")}
+        </header>
+        <section class="term-summary-card"><h2>Auf einen Blick</h2><p>${esc(doc.abstract || doc.shortDescription || typeIntro(type))}</p>${keyPoints ? `<ul class="clean-list">${keyPoints}</ul>` : ""}</section>
+        <div class="term-section-grid">
+          <section class="term-section-card"><p class="section-eyebrow">Einordnung</p><h2>Wirkungsökonomische Einordnung</h2><p>${esc(classification)}</p></section>
+          <section class="term-section-card"><p class="section-eyebrow">Inhalt</p><h2>Was die Quelle enthält</h2><ul>${outline || "<li>Inhaltserschließung wird ergänzt.</li>"}</ul></section>
+        </div>
+        ${chips ? `<section class="term-link-section"><div><p class="section-eyebrow">Verknüpfung</p><h2>Themen, Methoden und Wirkungsfelder</h2></div><div class="term-chip-row">${chips}</div></section>` : ""}
+        <section class="meta-box source-steckbrief"><h2>Steckbrief</h2><dl class="source-fact-grid">${factsHtml}</dl>${doc.citation ? `<h3>Zitierangabe</h3><p>${esc(doc.citation)}</p>` : ""}</section>
+        <section><h2>Schutz- und Nutzungshinweis</h2><p>Diese Bibliotheksseite ordnet eine Quelle ein und ersetzt keine fachliche Einzelfallprüfung. Modellhafte Aussagen bleiben als Modell oder Referenzfassung gekennzeichnet. Es werden Tätigkeiten, Angebote, Systeme und Entscheidungen betrachtet, nicht der soziale Wert von Personen.</p></section>
+        <section><h2>Verwandte Quellen</h2><ul>${relatedHtml || "<li>Noch keine verwandten Einträge zugeordnet.</li>"}</ul></section>
+      </article>
+    </main>
+    <script src="../../../assets/js/main.js?v=20260612-mobile-table-fix"></script>
+  </body>
+</html>`;
 }
 
 function variantKind(doc) {
@@ -365,7 +473,7 @@ const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
 const journalArticles = loadJournalArticles();
 const podcastEpisodes = loadPodcastEpisodes();
 const rawDocuments = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
-const documents = mergeDocumentVariants([...rawDocuments, ...journalArticles.map(journalToLibraryDoc), ...podcastToLibraryDocs(podcastEpisodes)]);
+const documents = assignDetailSlugs(mergeDocumentVariants([...rawDocuments, ...journalArticles.map(journalToLibraryDoc), ...podcastToLibraryDocs(podcastEpisodes)]));
 const typeValues = new Set(documents.map((doc) => displayType(doc)).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));
@@ -377,6 +485,36 @@ for (const doc of documents) {
     if (key && !onlineByKey.has(key)) onlineByKey.set(key, primary);
   }
 }
+
+const previousDetailRegistry = fs.existsSync(DETAIL_REGISTRY_PATH)
+  ? JSON.parse(fs.readFileSync(DETAIL_REGISTRY_PATH, "utf8"))
+  : { entries: [] };
+for (const entry of previousDetailRegistry.entries || []) {
+  if (entry.detailSlug && !documents.some((doc) => doc.detailSlug === entry.detailSlug)) {
+    fs.rmSync(path.join(DETAIL_DIR, entry.detailSlug), { recursive: true, force: true });
+  }
+}
+for (const doc of documents) {
+  const directory = path.join(DETAIL_DIR, doc.detailSlug);
+  fs.mkdirSync(directory, { recursive: true });
+  fs.writeFileSync(path.join(directory, "index.html"), detailPage(doc, documents, onlineByKey).replace(/[ \t]+$/gm, ""));
+}
+fs.mkdirSync(path.dirname(DETAIL_REGISTRY_PATH), { recursive: true });
+fs.writeFileSync(DETAIL_REGISTRY_PATH, `${JSON.stringify({
+  schemaVersion: "1.0.0",
+  generatedAt: new Date().toISOString(),
+  count: documents.length,
+  entries: documents.map((doc) => ({
+    id: doc.id,
+    detailSlug: doc.detailSlug,
+    title: doc.title,
+    type: displayType(doc),
+    status: doc.status,
+    source: doc.source,
+    detailUrl: `/bibliothek/eintraege/${doc.detailSlug}/`,
+    primaryUrl: doc.urls?.primary || ""
+  }))
+}, null, 2)}\n`);
 
 const leadingCards = documents.filter((doc) => doc.isLeadingReference).slice(0, 12).map((doc, index) => card(doc, index, onlineByKey)).join("\n");
 const latestJournalCards = journalArticles.slice(0, 2).map(journalCard).join("\n");
