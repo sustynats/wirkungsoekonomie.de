@@ -25,6 +25,10 @@ const glossaryByLabel = new Map(glossary.map((term) => [String(term.canonicalLab
 const workpapers = fs.existsSync("public/data/workpaper-imports.json")
   ? JSON.parse(fs.readFileSync("public/data/workpaper-imports.json", "utf8")).documents || []
   : [];
+const quellenarchivSnapshot = fs.existsSync("content/quellenarchiv/sources.json")
+  ? JSON.parse(fs.readFileSync("content/quellenarchiv/sources.json", "utf8")).sources || []
+  : [];
+let referenceSourceTargets = new Map();
 
 const priorityChapters = new Set([
   10, 11, 12, 13, 16, 18, 21, 22,
@@ -147,6 +151,55 @@ function slugify(value = "") {
     .replaceAll("ß", "ss")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+}
+
+function normalizeForMatch(value = "") {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ö/g, "oe")
+    .replace(/ä/g, "ae")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9:/._-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeUrl(value = "") {
+  return String(value || "")
+    .trim()
+    .replace(/[),.;]+$/g, "")
+    .replace(/^https?:\/\/(www\.)?/i, "")
+    .replace(/\/$/g, "")
+    .toLowerCase();
+}
+
+function quellenarchivSlug(code = "") {
+  return slugify(String(code).replace(/Ö/g, "Oe").replace(/ö/g, "oe"));
+}
+
+const quellenarchivByCode = new Map(quellenarchivSnapshot.map((source) => [String(source.code || "").toUpperCase(), source]));
+const quellenarchivByUrl = new Map(
+  quellenarchivSnapshot
+    .filter((source) => source.url)
+    .map((source) => [normalizeUrl(source.url), source])
+);
+
+const internalArchiveRules = [
+  [/die neue ordnung des wohlstands/i, ["WÖK-Q-0576"]],
+  [/minifest/i, ["WÖK-Q-0588"]],
+  [/wök[-\s]?manifest|woek[-\s]?manifest/i, ["WÖK-Q-0608"]],
+  [/leitbild für mensch planet und demokratie/i, ["WÖK-Q-0586"]],
+  [/leitbild mensch planet demokratie/i, ["WÖK-Q-0587"]],
+  [/wirkungssteuergesetz|wstg/i, ["WÖK-Q-0604", "WÖK-Q-0605", "WÖK-Q-0613"]],
+  [/lernendes kreislaufsystem/i, ["WÖK-Q-0729", "WÖK-Q-0731"]],
+  [/nachhaltigkeit ist keine strategie/i, ["WÖK-Q-0685"]],
+];
+
+function hrefFromBase(base, target) {
+  return target.startsWith("#") ? target : `${base}${target}`;
 }
 
 function roman(number) {
@@ -633,14 +686,20 @@ function guidedReadingHtml(chapters) {
 }
 
 function sourcesHtml(chapters) {
+  const sources = collectReferenceSources(chapters);
+  return sourcesHtmlFromEntries(sources);
+}
+
+function sourceCategory(id, text) {
+  if (id.startsWith("I-")) return "WÖk-interne Quelle";
+  const normalized = text.toLowerCase();
+  if (/\b(csrd|esrs|gri|nace|taxonomie|taxonomy|produktpass|dpp|verordnung|richtlinie|standard|iso|eu)\b/i.test(normalized)) return "Daten-/Standardquelle";
+  if (/\b(working paper|whitepaper|wirkungsökonomie|wök|hauptwerk|manifest|leitfaden)\b/i.test(normalized)) return "Historische Quelle";
+  return "Anschlussquelle";
+}
+
+function collectReferenceSources(chapters) {
   const sourceMap = new Map();
-  function sourceCategory(id, text) {
-    if (id.startsWith("I-")) return "WÖk-interne Quelle";
-    const normalized = text.toLowerCase();
-    if (/\b(csrd|esrs|gri|nace|taxonomie|taxonomy|produktpass|dpp|verordnung|richtlinie|standard|iso|eu)\b/i.test(normalized)) return "Daten-/Standardquelle";
-    if (/\b(working paper|whitepaper|wirkungsökonomie|wök|hauptwerk|manifest|leitfaden)\b/i.test(normalized)) return "Historische Quelle";
-    return "Anschlussquelle";
-  }
   for (const chapter of chapters) {
     const html = read(chapter.file);
     for (const paragraph of html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)) {
@@ -658,12 +717,74 @@ function sourcesHtml(chapters) {
           id,
           type: id.startsWith("I-") ? "Interne Quelle" : "Externe Quelle",
           category,
-          text: sourceText.slice(0, 420),
+          text: sourceText,
           chapter,
+          archiveMatches: archiveMatchesForReference(id, sourceText),
         });
       }
     }
   }
+  return [...sourceMap.values()];
+}
+
+function archiveMatchesForReference(id, sourceText) {
+  const matches = new Map();
+  const add = (source) => {
+    if (source?.code) matches.set(source.code, source);
+  };
+
+  for (const codeMatch of sourceText.matchAll(/W[ÖO]K-Q-\d{4}/gi)) {
+    add(quellenarchivByCode.get(codeMatch[0].toUpperCase().replace("O", "Ö")));
+    add(quellenarchivByCode.get(codeMatch[0].toUpperCase()));
+  }
+
+  for (const urlMatch of sourceText.matchAll(/https?:\/\/\S+/g)) {
+    add(quellenarchivByUrl.get(normalizeUrl(urlMatch[0])));
+  }
+
+  for (const [pattern, codes] of internalArchiveRules) {
+    if (!pattern.test(sourceText)) continue;
+    for (const code of codes) add(quellenarchivByCode.get(code));
+  }
+
+  const normalizedSourceText = normalizeForMatch(sourceText);
+  for (const source of quellenarchivSnapshot) {
+    const title = normalizeForMatch(source.title);
+    if (title.length < 18) continue;
+    if (normalizedSourceText.includes(title)) add(source);
+    if (matches.size >= 8) break;
+  }
+
+  return [...matches.values()];
+}
+
+function quellenarchivHref(source, base = "../../") {
+  return `${base}quellenarchiv/${quellenarchivSlug(source.code)}/`;
+}
+
+function sourceArchiveLinks(source, base = "../../") {
+  const matches = source.archiveMatches || [];
+  if (!matches.length) {
+    return `<p class="notice source-archive-status">Noch kein eindeutiger Quellenarchiv-Eintrag erkannt. Diese Referenzkarte bleibt bis zur Archiv-Ergänzung der zitierfähige Zwischenanker.</p>`;
+  }
+  return `<div class="source-archive-links">
+            <p class="section-eyebrow">Quellenarchiv</p>
+            ${matches.map((match) => `<a class="text-link" href="${esc(quellenarchivHref(match, base))}">${esc(match.code)} · ${esc(match.title)}</a>`).join("\n            ")}
+          </div>`;
+}
+
+function prepareReferenceSourceTargets(sources) {
+  referenceSourceTargets = new Map();
+  for (const source of sources) {
+    const matches = source.archiveMatches || [];
+    const href = matches.length === 1
+      ? quellenarchivHref(matches[0], "")
+      : `referenz/quellen/${slugify(source.id)}/`;
+    referenceSourceTargets.set(source.id, href);
+  }
+}
+
+function sourcesHtmlFromEntries(sources) {
   return `<main class="reference-portal" data-pagefind-body>
     <section class="reference-hero compact-reference-hero">
       <div>
@@ -677,13 +798,38 @@ function sourcesHtml(chapters) {
     </section>
     <section class="reference-section">
       <div class="source-card-grid">
-        ${[...sourceMap.values()].map((source) => `<article class="source-card" id="${slugify(source.id)}">
+        ${sources.map((source) => `<article class="source-card" id="${slugify(source.id)}">
           <span>${esc(source.category)} · ${esc(source.type)}</span>
-          <h2>${esc(source.id)}</h2>
-          <p>${esc(source.text || "Quelle im Kapitelquellenblock des Hauptwerks.")}</p>
+          <h2><a class="text-link" href="${slugify(source.id)}/">${esc(source.id)}</a></h2>
+          <p>${esc((source.text || "Quelle im Kapitelquellenblock des Hauptwerks.").slice(0, 420))}</p>
+          ${sourceArchiveLinks(source)}
           <a href="../${source.chapter.slug}/#woek-main-2026-k${String(source.chapter.number).padStart(3, "0")}">Verwendet in Kapitel ${source.chapter.number}</a>
         </article>`).join("")}
       </div>
+    </section>
+  </main>`;
+}
+
+function sourceDetailHtml(source) {
+  const matches = source.archiveMatches || [];
+  return `<main class="reference-portal" data-pagefind-body>
+    <section class="reference-hero compact-reference-hero">
+      <div>
+        <nav class="breadcrumb"><a href="../../">Referenz</a> / <a href="../">Quellen</a> / ${esc(source.id)}</nav>
+        <p class="hero-kicker">${esc(source.category)} · ${esc(source.type)}</p>
+        <h1>${esc(source.id)}</h1>
+        <p class="hero-subtitle">Quellenkarte der Online-Referenz mit Backlink in das Hauptwerk und Verknüpfung zum öffentlichen Quellenarchiv, sofern ein eindeutiger Archivtreffer vorliegt.</p>
+      </div>
+    </section>
+    <section class="reference-section">
+      <article class="source-card">
+        <span>${esc(source.category)} · ${esc(source.type)}</span>
+        <h2>Quellentext</h2>
+        <p>${esc(source.text || "Quelle im Kapitelquellenblock des Hauptwerks. Die Originalformulierung bleibt im Kapitel erhalten.")}</p>
+        ${sourceArchiveLinks(source, "../../../")}
+        <a href="../../${source.chapter.slug}/#woek-main-2026-k${String(source.chapter.number).padStart(3, "0")}">Verwendet in Kapitel ${source.chapter.number}: ${esc(source.chapter.title)}</a>
+      </article>
+      ${matches.length > 1 ? `<p class="notice">Diese Quellenangabe bündelt mehrere Anschlussquellen. Deshalb führt der Quellenchip zuerst auf diese Vorschaltseite; von hier aus sind die einzelnen Quellenarchiv-Detailseiten erreichbar.</p>` : ""}
     </section>
   </main>`;
 }
@@ -907,19 +1053,13 @@ function legacyPartRedirectHtml(part) {
 </html>`;
 }
 
-function sourceChips(html) {
-  const saved = [];
-  let next = html.replace(/<a\b[^>]*class=["'][^"']*source-chip[^"']*["'][\s\S]*?<\/a>/gi, (match) => {
-    const key = `__SOURCE_CHIP_${saved.length}__`;
-    saved.push(match);
-    return key;
-  });
+function sourceChips(html, file = "") {
+  const base = file ? baseFor(file) : "../";
+  let next = html.replace(/<a\b[^>]*class=["'][^"']*source-chip[^"']*["'][^>]*>([\s\S]*?)<\/a>/gi, (_match, label) => stripTags(label));
   next = next.replace(/\[((?:I|E)-K\d{1,3}-\d+)\]/g, (match, id) => {
-    const href = `../quellen/#${slugify(id)}`;
+    const target = referenceSourceTargets.get(id) || `referenz/quellen/#${slugify(id)}`;
+    const href = hrefFromBase(base, target);
     return `<a class="source-chip" href="${href}" data-source-id="${esc(id)}">${match}</a>`;
-  });
-  saved.forEach((value, index) => {
-    next = next.replace(`__SOURCE_CHIP_${index}__`, value);
   });
   return next;
 }
@@ -1056,7 +1196,7 @@ function contextAdditions(chapter) {
 function enhanceChapter(chapter, chapters) {
   let html = stripUxMarkers(read(chapter.file));
   html = applyChapterMetadataCorrections(html, chapter);
-  html = sourceChips(html);
+  html = sourceChips(html, chapter.file);
   html = html.replace(
     /<main class="([^"]*reference-work[^"]*)"([^>]*)>/,
     (match, classes, rest) => `<main class="${uniqueClasses(classes, "chapter-reader reference-reader")}" data-reference-reader${cleanMainRest(rest, "data-reference-reader")}>${modeBar(chapter)}`
@@ -1089,7 +1229,7 @@ function enhanceDocument(file) {
     .map((match) => ({ id: match[1].match(/\sid=["']([^"']+)["']/i)?.[1] || "", title: cleanTitle(match[2]) }))
     .filter((item) => item.id && item.title)
     .slice(0, 12);
-  html = sourceChips(html);
+  html = sourceChips(html, file);
   html = html.replace(/<main class="([^"]*reference-work[^"]*)"([^>]*)>/, (match, classes, rest) => {
     if (classes.includes("workpaper-reader")) return match;
     return `<main class="${uniqueClasses(classes, "workpaper-reader reference-reader")}" data-reference-reader${cleanMainRest(rest, "data-reference-reader")}>`;
@@ -1118,6 +1258,7 @@ function enhanceFullText() {
   const file = "referenz/volltext/index.html";
   if (!fs.existsSync(file)) return;
   let html = stripUxMarkers(read(file));
+  html = sourceChips(html, file);
   const chapterAnchors = [...html.matchAll(/<h[23]\b[^>]*\bid="(woek-main-2026-k(\d{3}))"[^>]*>([\s\S]*?)<\/h[23]>/g)]
     .map((match) => ({
       id: match[1],
@@ -1309,6 +1450,8 @@ Der Exportbereich unterscheidet Originalfassungen, Web-Volltext, Glossar, Dokume
 function main() {
   const parts = collectParts();
   const chapters = collectChapters(parts);
+  const referenceSources = collectReferenceSources(chapters);
+  prepareReferenceSourceTargets(referenceSources);
 
   write("referenz/index.html", page("referenz/index.html", {
     title: "Die neue Ordnung des Wohlstands",
@@ -1344,9 +1487,20 @@ function main() {
     description: "Quellenkarten und Backlinks der Online-Referenz.",
     section: "Quellen",
     type: "Quellenregister",
-    body: sourcesHtml(chapters),
+    body: sourcesHtmlFromEntries(referenceSources),
     bodyClass: "reference-ux-page",
   }));
+
+  for (const source of referenceSources) {
+    write(`referenz/quellen/${slugify(source.id)}/index.html`, page(`referenz/quellen/${slugify(source.id)}/index.html`, {
+      title: `Quelle ${source.id}`,
+      description: `Quellenkarte ${source.id} der Online-Referenz.`,
+      section: "Quellen",
+      type: "Quellenkarte",
+      body: sourceDetailHtml(source),
+      bodyClass: "reference-ux-page",
+    }));
+  }
 
   write("referenz/glossar/index.html", page("referenz/glossar/index.html", {
     title: "Glossar der Online-Referenz",
