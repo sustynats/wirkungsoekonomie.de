@@ -29,7 +29,10 @@ const scannedPaths = [
 
 const blockedContentPatterns = [
   { label: "local macOS home path", pattern: /\/Users\// },
+  { label: "local Linux Hagen path", pattern: /\/home\/hagen\//i },
+  { label: "local volume path", pattern: /\/Volumes\/[A-Za-z0-9._ -]+\// },
   { label: "private temp path", pattern: /\/private\/(?:tmp|var|folders)\// },
+  { label: "temporary build path", pattern: /\/tmp\/[A-Za-z0-9._-]+\// },
   { label: "Claude worktree path", pattern: /(?:^|[/"'])\.claude(?:[/"']|$)/i },
   { label: "local worktree path", pattern: /(?:^|[/"'])worktrees(?:[/"']|$)/i },
   { label: "file URL", pattern: /file:\/\//i },
@@ -37,6 +40,16 @@ const blockedContentPatterns = [
   { label: "GitHub token", pattern: /\bgh[opsu]_[A-Za-z0-9_]{20,}\b/ },
   { label: "Supabase service key", pattern: /\beyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\b/ },
   { label: "generic secret assignment", pattern: /\b(?:SECRET|TOKEN|PRIVATE_KEY|SERVICE_ROLE_KEY)\b\s*[:=]\s*["'][^"']{12,}["']/i },
+];
+
+const binaryPathPatterns = [
+  { label: "local macOS home path", pattern: /\/Users\/[A-Za-z0-9._-]+\// },
+  { label: "local Hagen home path", pattern: /\/Users\/hagen\//i },
+  { label: "local Linux Hagen path", pattern: /\/home\/hagen\//i },
+  { label: "local account path segment", pattern: /\/hagen\//i },
+  { label: "private temp path", pattern: /\/private\/(?:tmp|var|folders)\// },
+  { label: "temporary build path", pattern: /\/tmp\/[A-Za-z0-9._-]+\// },
+  { label: "file URL", pattern: /file:\/\//i },
 ];
 
 const certificateIdentityPatterns = [
@@ -104,7 +117,30 @@ function assertCertificateRegistryIsNeutral(file, text) {
   }
 }
 
+function assertArtifactExists() {
+  if (!fs.existsSync(artifactDir)) {
+    failures.push("_site: public artifact missing; run npm run build:artifact before npm run check:privacy");
+    return;
+  }
+
+  const artifactFiles = walk(artifactDir);
+  if (!artifactFiles.length) {
+    failures.push("_site: public artifact contains no files; privacy gate cannot verify deployment output");
+  }
+}
+
+function scanBinaryPathLeaks(file) {
+  const relative = toRepoRelative(file);
+  if (!relative.startsWith("_site/")) return;
+
+  const haystack = fs.readFileSync(file).toString("latin1");
+  for (const { label, pattern } of binaryPathPatterns) {
+    if (pattern.test(haystack)) failures.push(`${relative}: contains ${label}`);
+  }
+}
+
 function scanTextFile(file) {
+  scanBinaryPathLeaks(file);
   if (!isTextFile(file)) return;
   const text = fs.readFileSync(file, "utf8");
   const relative = toRepoRelative(file);
@@ -123,6 +159,8 @@ function scanTextFile(file) {
 
   assertCertificateRegistryIsNeutral(file, text);
 }
+
+assertArtifactExists();
 
 for (const relative of scannedPaths) {
   const absolute = path.join(root, relative);
