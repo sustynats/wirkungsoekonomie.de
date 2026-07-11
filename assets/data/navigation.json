@@ -43,27 +43,6 @@
       ]
     },
     {
-      "label": "Wirkungssteuerung",
-      "href": "wirkungssteuerung/",
-      "match": [
-        "wirkungssteuerung/",
-        "fuer/wirkungssteuer.html",
-        "werkstatt/gesetze/wirkungssteuergesetz/",
-        "werkzeuge/scorecards/",
-        "werkzeuge/t-sroi/"
-      ]
-    },
-    {
-      "label": "Öffentlicher Wirkungsraum",
-      "href": "oeffentlicher-wirkungsraum/",
-      "match": [
-        "oeffentlicher-wirkungsraum/",
-        "wirkungsradar/",
-        "woek-ki/",
-        "app/"
-      ]
-    },
-    {
       "label": "Praxis & Tools",
       "href": "werkzeuge/",
       "match": [
@@ -76,7 +55,20 @@
         "scorecard-dashboard.html",
         "erleben/",
         "erleben.html",
-        "ausprobieren/"
+        "ausprobieren/",
+        "wirkungssteuerung/",
+        "fuer/wirkungssteuer.html",
+        "werkstatt/gesetze/wirkungssteuergesetz/"
+      ]
+    },
+    {
+      "label": "Debatte & Radar",
+      "href": "oeffentlicher-wirkungsraum/",
+      "match": [
+        "oeffentlicher-wirkungsraum/",
+        "wirkungsradar/",
+        "woek-ki/",
+        "app/"
       ]
     },
     {
@@ -244,16 +236,10 @@
       ]
     },
     {
-      "label": "WÖk-KI",
+      "label": "Frag die WÖk",
       "href": "woek-ki/",
       "match": [
-        "woek-ki/"
-      ]
-    },
-    {
-      "label": "WÖk-App",
-      "href": "app/",
-      "match": [
+        "woek-ki/",
         "app/"
       ]
     },
