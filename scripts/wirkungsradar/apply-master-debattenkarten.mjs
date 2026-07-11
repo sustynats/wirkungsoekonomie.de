@@ -579,7 +579,7 @@ const debateSourceDirectory = {
   },
   "I-RENTE": {
     title: "Wirkungsrente",
-    url: "/dokumente/wp-rente/",
+    url: "/bibliothek/wp-rente/",
     type: "Interne WÖk-Quelle",
     limitation: "Belegt den WÖk-Vorschlag, nicht geltendes Rentenrecht.",
   },

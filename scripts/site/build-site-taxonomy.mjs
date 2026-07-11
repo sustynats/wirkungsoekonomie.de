@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const outFile = path.join(root, "content", "taxonomy", "site-map.json");
-const ignoredDirs = new Set([".git", "_site", "node_modules", "woek-institut-app"]);
+const ignoredDirs = new Set([".git", "_site", "node_modules", "templates", "woek-institut-app"]);
 const ignoredRoutePatterns = [
   /^\/(?:_debug|admin)\//,
   /^\/404\.html$/,

@@ -177,7 +177,12 @@ function normalizeUrl(value = "") {
 }
 
 function quellenarchivSlug(code = "") {
-  return slugify(String(code).replace(/Ö/g, "Oe").replace(/ö/g, "oe"));
+  return String(code || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 const quellenarchivByCode = new Map(quellenarchivSnapshot.map((source) => [String(source.code || "").toUpperCase(), source]));
@@ -700,28 +705,44 @@ function sourceCategory(id, text) {
 
 function collectReferenceSources(chapters) {
   const sourceMap = new Map();
+  const addSource = (id, sourceText, chapter) => {
+    let cleanSourceText = String(sourceText || "").trim();
+    if (!cleanSourceText || cleanSourceText === "." || cleanSourceText.startsWith("[I-") || cleanSourceText.startsWith("[E-")) {
+      cleanSourceText = "Quelle im Kapitelquellenblock des Hauptwerks. Die Originalformulierung bleibt im Kapitel erhalten.";
+    }
+    if (!sourceMap.has(id)) {
+      const category = sourceCategory(id, cleanSourceText);
+      sourceMap.set(id, {
+        id,
+        type: id.startsWith("I-") ? "Interne Quelle" : "Externe Quelle",
+        category,
+        text: cleanSourceText,
+        chapter,
+        archiveMatches: archiveMatchesForReference(id, cleanSourceText),
+      });
+    }
+  };
   for (const chapter of chapters) {
     const html = read(chapter.file);
     for (const paragraph of html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)) {
       const text = stripTags(paragraph[1]);
-      const match = text.match(/^\[((?:I|E)-K\d{1,3}-\d+)\]\s*(.*)$/);
-      if (!match) continue;
-      const id = match[1];
-      let sourceText = match[2].trim();
-      if (!sourceText || sourceText === "." || sourceText.startsWith("[I-") || sourceText.startsWith("[E-")) {
-        sourceText = "Quelle im Kapitelquellenblock des Hauptwerks. Die Originalformulierung bleibt im Kapitel erhalten.";
+      const match = text.match(/^\[?((?:I|E)-K\d{1,3}-\d+)\]?\s*(.*)$/);
+      if (match) addSource(match[1], match[2], chapter);
+
+      const refs = [...text.matchAll(/\[?((?:I|E)-K\d{1,3}-\d+)\]?\s*/g)];
+      for (let index = 0; index < refs.length; index += 1) {
+        const ref = refs[index];
+        const id = ref[1];
+        if (sourceMap.has(id)) continue;
+        const start = (ref.index || 0) + ref[0].length;
+        const end = index + 1 < refs.length ? refs[index + 1].index || text.length : text.length;
+        const sourceText = text.slice(start, end).trim();
+        if (!sourceText || sourceText.startsWith(";") || !/[A-ZÄÖÜ][^.!?]{2,120}:\s/.test(sourceText)) continue;
+        addSource(id, sourceText, chapter);
       }
-      if (!sourceMap.has(id)) {
-        const category = sourceCategory(id, sourceText);
-        sourceMap.set(id, {
-          id,
-          type: id.startsWith("I-") ? "Interne Quelle" : "Externe Quelle",
-          category,
-          text: sourceText,
-          chapter,
-          archiveMatches: archiveMatchesForReference(id, sourceText),
-        });
-      }
+    }
+    for (const ref of html.matchAll(/(?:data-source-id=["']|\[)((?:I|E)-K\d{1,3}-\d+)/g)) {
+      addSource(ref[1], "", chapter);
     }
   }
   return [...sourceMap.values()];

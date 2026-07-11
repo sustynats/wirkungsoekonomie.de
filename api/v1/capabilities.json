@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T21:52:10.150Z",
+  "generatedAt": "2026-07-11T23:03:44.863Z",
   "version": "v1",
   "principles": [
     "Ein modularer WÖk-Kern stellt Daten und Funktionen bereit; Frontends bleiben dünne Oberflächen.",
@@ -202,12 +202,16 @@
       "sources": [
         "assets/data/glossary-lookup.json",
         "assets/search/search-index.json",
-        "assets/data/woek-id-register.json"
+        "assets/data/woek-id-register.json",
+        "public/data/woems-methoden.json",
+        "public/data/woems-canvas.json"
       ],
       "capabilities": [
         "Glossar",
         "Suche",
         "WÖk-ID-Register",
+        "WÖMS-Methoden",
+        "Canvas-Spezifikationen",
         "öffentliche Wissensnavigation"
       ]
     },

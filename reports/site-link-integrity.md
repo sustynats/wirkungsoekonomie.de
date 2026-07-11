@@ -1,131 +1,10 @@
 # Site Link Integrity
 Stand: generiert aus dem aktuellen Arbeitsbaum
-- HTML-Seiten: 4850
-- Interne Broken Links: 5256
-- Waisenseiten ohne eingehende Links: 1187
-- Doppelte Seitentitel: 242
+- HTML-Seiten: 10608
+- Interne Broken Links: 0
+- Waisenseiten ohne eingehende Links: 1200
+- Doppelte Seitentitel: 636
 ## Broken Links
-- /akademie/lernpfad.html -> /quellenarchiv/
-- /akademie/pruefungen.html -> /quellenarchiv/
-- /akademie/studienstruktur.html -> /quellenarchiv/
-- /akademie/weiterbildung.html -> /quellenarchiv/
-- /akademie/wirkungsfinanzpolitik/ -> /quellenarchiv/
-- /akademie/wirkungsradar/ -> /quellenarchiv/
-- /akademie.html -> /quellenarchiv/
-- /anwendungen/scanner.html -> /quellenarchiv/
-- /anwendungen.html -> /quellenarchiv/
-- /app/ -> /quellenarchiv/
-- /begriffe/abfallhierarchie/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/abfallhierarchie/ -> /quellenarchiv/
-- /begriffe/abregelung/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/abregelung/ -> /quellenarchiv/
-- /begriffe/ac-laden/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/ac-laden/ -> /quellenarchiv/
-- /begriffe/ad-hoc-laden/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/ad-hoc-laden/ -> /quellenarchiv/
-- /begriffe/adam-smith/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/adam-smith/ -> /quellenarchiv/
-- /begriffe/adoe/ -> /Definitionsmaster WÖk v1/
-- /begriffe/adoe/ -> /quellenarchiv/
-- /begriffe/adverse-selection/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/adverse-selection/ -> /quellenarchiv/
-- /begriffe/advocacy-organisation/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/advocacy-organisation/ -> /quellenarchiv/
-- /begriffe/aeussere-loops/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/aeussere-loops/ -> /quellenarchiv/
-- /begriffe/afd-ideologie/ -> /quellenarchiv/
-- /begriffe/affekt/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/affekt/ -> /quellenarchiv/
-- /begriffe/affektheuristik/ -> /quellenarchiv/
-- /begriffe/agenda-2030/ -> /quellenarchiv/
-- /begriffe/agenda-setting/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/agenda-setting/ -> /quellenarchiv/
-- /begriffe/ai-act/ -> /quellenarchiv/
-- /begriffe/akkumulation/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/akkumulation/ -> /quellenarchiv/
-- /begriffe/akkumulator/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/akkumulator/ -> /quellenarchiv/
-- /begriffe/alan-watts-daoismus/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/alan-watts-daoismus/ -> /quellenarchiv/
-- /begriffe/alarm-frame/ -> /warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt/
-- /begriffe/alarm-frame/ -> /quellenarchiv/
-- /begriffe/algorithmische-fairness/ -> /quellenarchiv/
-- /begriffe/algorithmische-verstaerkung/ -> /quellenarchiv/
-- /begriffe/allgemeines-gleichgewicht/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/allgemeines-gleichgewicht/ -> /quellenarchiv/
-- /begriffe/allmendeproblem/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/allmendeproblem/ -> /quellenarchiv/
-- /begriffe/allokation/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/allokation/ -> /quellenarchiv/
-- /begriffe/alltag-2035/ -> /manifest-der-wirkungsoekonomie/
-- /begriffe/alltag-2035/ -> /t-sroi-whitepaper/
-- /begriffe/alltag-2035/ -> /quellenarchiv/
-- /begriffe/alltagsladen/ -> /Definitionsmaster WÖk v1/
-- /begriffe/alltagsladen/ -> /quellenarchiv/
-- /begriffe/alltagsrassismus/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/alltagsrassismus/ -> /quellenarchiv/
-- /begriffe/amartya-sen/ -> /quellenarchiv/
-- /begriffe/amathia/ -> /quellenarchiv/
-- /begriffe/ambiguitaetsintoleranz/ -> /quellenarchiv/
-- /begriffe/anaerobe-vergaerung/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/anaerobe-vergaerung/ -> /quellenarchiv/
-- /begriffe/anarchokapitalismus/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/anarchokapitalismus/ -> /quellenarchiv/
-- /begriffe/angstappell/ -> /quellenarchiv/
-- /begriffe/ankereffekt/ -> /quellenarchiv/
-- /begriffe/anlagenpass/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/anlagenpass/ -> /quellenarchiv/
-- /begriffe/anpassungskapazitaet/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/anpassungskapazitaet/ -> /quellenarchiv/
-- /begriffe/anschlussfaehigkeit/ -> /warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt/
-- /begriffe/anschlussfaehigkeit/ -> /quellenarchiv/
-- /begriffe/anschlusskosten/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/anschlusskosten/ -> /quellenarchiv/
-- /begriffe/anschlussleistung/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/anschlussleistung/ -> /quellenarchiv/
-- /begriffe/anti-slapp-richtlinie/ -> /quellenarchiv/
-- /begriffe/antidiskriminierung/ -> /quellenarchiv/
-- /begriffe/antikollisionssystem/ -> /Definitionsmaster WÖk v1/
-- /begriffe/antikollisionssystem/ -> /quellenarchiv/
-- /begriffe/antisemitismus/ -> /quellenarchiv/
-- /begriffe/antiziganismus/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/antiziganismus/ -> /quellenarchiv/
-- /begriffe/anwendungskontext/ -> /Definitionsmaster WÖk v1/
-- /begriffe/anwendungskontext/ -> /quellenarchiv/
-- /begriffe/arbeiten-arendt/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/arbeiten-arendt/ -> /quellenarchiv/
-- /begriffe/arbeitsanreiz/ -> /Definitionsmaster WÖk v1/
-- /begriffe/arbeitsanreiz/ -> /quellenarchiv/
-- /begriffe/arbeitspreis/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/arbeitspreis/ -> /quellenarchiv/
-- /begriffe/arbitrageur/ -> /quellenarchiv/
-- /begriffe/archetyp/ -> /Führender Begriffsleitfaden der Wirkungsökonomie/
-- /begriffe/archetyp/ -> /BASF Polyamid Beispiel von der CSRD zur Produktscorecard/
-- /begriffe/archetyp/ -> /T-SROI-Whitepaper/
-- /begriffe/archetyp/ -> /quellenarchiv/
-- /begriffe/archetypen/ -> /Definitionsmaster WÖk v1/
-- /begriffe/archetypen/ -> /quellenarchiv/
-- /begriffe/art-11-aeuv-umweltintegrationsprinzip/ -> /quellenarchiv/
-- /begriffe/art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip/ -> /quellenarchiv/
-- /begriffe/art-2-euv-werte-der-europaeischen-union/ -> /quellenarchiv/
-- /begriffe/art-20a-gg/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/art-20a-gg/ -> /quellenarchiv/
-- /begriffe/art-3-euv-nachhaltige-entwicklung-europas/ -> /quellenarchiv/
-- /begriffe/art-37-eu-grundrechtecharta-umweltschutz/ -> /quellenarchiv/
-- /begriffe/artikel-20a-grundgesetz/ -> /quellenarchiv/
-- /begriffe/assurance/ -> /CSRD und Prüfungsstandards/
-- /begriffe/assurance/ -> /quellenarchiv/
-- /begriffe/astroturfing/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/astroturfing/ -> /quellenarchiv/
-- /begriffe/atlas-network/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/atlas-network/ -> /quellenarchiv/
-- /begriffe/attributionsforschung/ -> /quellenarchiv/
-- /begriffe/audit/ -> /Definitionsmaster WÖk v1/
-- /begriffe/audit/ -> /quellenarchiv/
-- /begriffe/aufmerksamkeit/ -> /Glossar-Architektur Wirkmechanismen/
-- /begriffe/aufmerksamkeit/ -> /quellenarchiv/
-- /begriffe/aufmerksamkeitsoekonomie/ -> /Glossar-Architektur Wirkmechanismen/
-- ... 5136 weitere
 ## Waisenseiten
 - /afd-programm/
 - /anwendungen/
@@ -189,6 +68,7 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - /begriffe/negative-wirkung-2/
 - /begriffe/neoklassische-foerderlogik-2/
 - /begriffe/netto-wirkung-2/
+- /begriffe/netto-wirkungs-index/
 - /begriffe/nicht-kompensation-2/
 - /begriffe/nicht-kompensation/
 - /begriffe/normativer-massstab-2/
@@ -286,11 +166,11 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - /begriffe/wok/
 - /begriffe/zivilgesellschaftliche-infrastruktur/
 - /bibliothek/agenda2030-sdg-esg-handout/
-- /bibliothek/apfel-t-shirt-wirkung-im-preis/
-- ... 1027 weitere
+- ... 1040 weitere
 ## Doppelte Seitentitel
 - Weiterleitung: /afd-programm/, /akademie/, /anwendungen/, /ausprobieren/, /blog/, /buch/, /datenschutz/, /fa-qs-und-links/, /funktionsweise.html, /impressum/, /inhalt-und-strategie/, /leitbild/, /manifest/, /mitmachen/, /modell/, /natalie-weber.html, /scorecard-dashboard/, /sdg-und-sdg-plus/, /teil-i-grundlagen/, /teil-ii-methoden-and-instrumente/, /teil-iii-anwendung-and-praxis/, /teil-iv-transformation-and-zukunft/, /ueber-die-w-oek/, /ueber-die-woek/, /ueber/, /veroeffentlichungen/, /w-est-g-journal/, /wirkung-werte-journal/, /wirkungsoekonomie/
-- Archivierte Kopie - weitergeleitet: /assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0 2.html, /referenz/teil-15-internationale-ordnung-globalisierung-und-geopolitik/index 2.html, /referenz/teil-17-kritik-missverstaendnisse-und-ideologische-projektionen/index 2.html, /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html
+- WÖk API · Daten: /api/, /api/v1/, /api/v1/capabilities/, /api/v1/glossary/, /api/v1/production/, /api/v1/sdg-plus/, /api/v1/search/, /api/v1/wirkungsradar/
+- Archivierte Kopie - weitergeleitet: /assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0 2.html, /referenz/teil-15-internationale-ordnung-globalisierung-und-geopolitik/index 2.html, /referenz/teil-17-kritik-missverstaendnisse-und-ideologische-projektionen/index 2.html, /verstehen/index 2.html, /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html
 - DNSH / Do No Significant Harm - Weiterleitung zum Glossarbegriff DNSH – Do No Significant Harm: /begriffe/dnsh-2/, /begriffe/dnsh/
 - Lokale Energie als Wirkungsinfrastruktur | Glossar der Wirkungsökonomie: /begriffe/lokale-energie-als-wirkungsinfrastruktur/, /begriffe/oeffentlichkeit-als-wirkungsraum/
 - Nicht-Kompensation - Weiterleitung zum Glossarbegriff Nichtkompensationsprinzip: /begriffe/nicht-kompensation-2/, /begriffe/nicht-kompensation/
@@ -304,69 +184,68 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - Wirkungswohlstand - Weiterleitung zum Glossarbegriff Neue Ordnung des Wohlstands: /begriffe/wirkungswohlstand-2/, /begriffe/wirkungswohlstand/
 - Wirkungszeit - Weiterleitung zum Glossarbegriff Zeitwirkung: /begriffe/wirkungszeit-2/, /begriffe/wirkungszeit/
 - Weiterleitung - Wirkungsökonomie: /bibliothek/agenda2030-sdg-esg-handout/, /bibliothek/apfel-t-shirt-wirkung-im-preis/, /bibliothek/beispiel-zange-sdg-esrs-fussnoten/, /bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/, /bibliothek/demokratie-schuetzen/, /bibliothek/die-neue-ordnung-des-wohlstands/, /bibliothek/energiepolitik-2026/, /bibliothek/groesster-denkfehler-klimadebatte/, /bibliothek/handbuch-wirkungskompetenz/, /bibliothek/landwirtschaft-wirkungsoekonomie/, /bibliothek/leitbild-deutschland-2030-woek/, /bibliothek/prozessarchitektur-wirkungsoekonomie/, /bibliothek/social-taxonomy-wirkungsoekonomie/, /bibliothek/t-sroi-standard-impact-controlling/, /bibliothek/wirkung-statt-kapital/, /bibliothek/wirkungseinkommensteuergesetz-westg/, /bibliothek/woek-master-items-v1-2/, /bibliothek/working-paper-wohnungsmarkt/, /blog/folgencheck-statt-faktencheck-democracy-intelligence.html, /blog/wirkungfoerderung-bildung-statt-defizitverwaltung.html, /erleben/wirkungssteuer-beispiele/, /suche/, /verstehen/regularien-standards/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/buergerbeteiligung-wirkungsdemokratie/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/lobbyismus-machtkonzentration/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/politische-wirkungspruefung/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/verwaltung-rechtsschutz-korrektur/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkung-als-rechtsprinzip/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungseinkommensteuer-westg/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungshaushalt/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsrat/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungssteuergesetz-wstg/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsumsatzsteuer-rechtsrahmen/
-- Wirkungsorientierte Unternehmensführung: /blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html, /docs/wirtschaft-unternehmen/source-html/detail_wirkungsorientierte_unternehmensfuehrung.html
-- Unternehmen als Wirkungssysteme: /docs/wirtschaft-unternehmen/source-html/detail_unternehmen_als_wirkungssysteme.html, /fuer/unternehmen.html
-- Von der Wissensgesellschaft zur Wirkungsgesellschaft | Wirkungsökonomie: /dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/, /verstehen/wissensgesellschaft-wirkungsgesellschaft/
-- Wirkungsökonomie erleben - Produkte, Medien, Risiko und Wirkung: /erleben.html, /erleben/
-- Weiterleitung zum vollständigen Glossar - Wirkungsökonomie: /glossar.html, /glossar/
-- Gesamtdossier | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/, /portale/migration-vielfalt/gesamtdossier/, /portale/sicherheit-resilienz/gesamtdossier/, /portale/transformation-uebergaenge-implementierung/gesamtdossier/
-- Konzeptpapier | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/konzeptpapier/, /portale/migration-vielfalt/konzeptpapier/, /portale/sicherheit-resilienz/konzeptpapier/, /portale/transformation-uebergaenge-implementierung/konzeptpapier/
-- Politische Anschlussfähigkeit | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/politische-anschlussfaehigkeit/, /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/, /portale/kritik-missverstaendnisse-schutzarchitektur/politische-anschlussfaehigkeit/, /portale/migration-vielfalt/politische-anschlussfaehigkeit/, /portale/sicherheit-resilienz/politische-anschlussfaehigkeit/, /portale/transformation-uebergaenge-implementierung/politische-anschlussfaehigkeit/, /portale/wirkungsakademie-fachbibliothek/politische-anschlussfaehigkeit/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/politische-anschlussfaehigkeit/, /portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/
-- Quellen und Glossarlinks | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/quellen-glossar/, /portale/internationale-ordnung-globalisierung-geopolitik/quellen-glossar/, /portale/kritik-missverstaendnisse-schutzarchitektur/quellen-glossar/, /portale/migration-vielfalt/quellen-glossar/, /portale/sicherheit-resilienz/quellen-glossar/, /portale/transformation-uebergaenge-implementierung/quellen-glossar/, /portale/wirkungsakademie-fachbibliothek/quellen-glossar/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/quellen-glossar/, /portale/zukunftsbilder-wirkungswohlstand/quellen-glossar/
-- SDG-/SDG+-Block | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/sdg-sdgplus/, /portale/kritik-missverstaendnisse-schutzarchitektur/sdg-sdgplus/, /portale/transformation-uebergaenge-implementierung/sdg-sdgplus/, /portale/wirkungsakademie-fachbibliothek/sdg-sdgplus/
-- Toolkarten | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/toolkarten/, /portale/internationale-ordnung-globalisierung-geopolitik/toolkarten/, /portale/kritik-missverstaendnisse-schutzarchitektur/toolkarten/, /portale/migration-vielfalt/toolkarten/, /portale/sicherheit-resilienz/toolkarten/, /portale/transformation-uebergaenge-implementierung/toolkarten/, /portale/wirkungsakademie-fachbibliothek/toolkarten/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/toolkarten/, /portale/zukunftsbilder-wirkungswohlstand/toolkarten/
-- Wirkungsindikatoren | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsindikatoren/, /portale/internationale-ordnung-globalisierung-geopolitik/wirkungsindikatoren/, /portale/kritik-missverstaendnisse-schutzarchitektur/wirkungsindikatoren/, /portale/migration-vielfalt/wirkungsindikatoren/, /portale/transformation-uebergaenge-implementierung/wirkungsindikatoren/, /portale/wirkungsakademie-fachbibliothek/wirkungsindikatoren/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wirkungsindikatoren/, /portale/zukunftsbilder-wirkungswohlstand/wirkungsindikatoren/
-- Publikationsübersicht | Wirkungsökonomie: /portale/migration-vielfalt/bestands-und-nachlieferliste/, /portale/sicherheit-resilienz/publikationsuebersicht/
-- Downloads | Wirkungsökonomie: /portale/migration-vielfalt/downloads/, /portale/sicherheit-resilienz/downloads/
-- SDG-/SDG+-Bezug | Wirkungsökonomie: /portale/migration-vielfalt/sdg-sdgplus/, /portale/sicherheit-resilienz/sdg-sdgplus/
-- Version 1.1 - Begriffliche Präzisierung und Referenzordnung - nicht öffentlich gelistet: /referenz/version-1-1/, /referenz/version-1-1/index 2.html
-- SDG-/SDG+-Referenzrahmen | Wirkungsökonomie: /referenzrahmen/sdgs-sdgplus/, /sdg-sdgplus/, /verstehen/sdgs-sdgplus/
-- Verstehen | Wirkungsökonomie: /verstehen/, /verstehen/index 2.html
-- SDGs und Agenda 2030 als globaler Referenzrahmen | Wirkungsökonomie: /verstehen/sdgs-sdgplus/agenda-2030/, /verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/
-- SDG+ als Erweiterung der Wirkungsökonomie | Wirkungsökonomie: /verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/, /verstehen/sdgs-sdgplus/sdgplus/
-- SDG-Unterziele global, Europa und Deutschland | Wirkungsökonomie: /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/, /verstehen/sdgs-sdgplus/unterziele/
-- Detailkonzept Reverse Merit Order | Wirkungsökonomie: /werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/, /wirkungsfelder/produkte-konsum/detailkonzepte/reverse-merit-order/
-- Einzeldossier Reverse Merit Order | Wirkungsökonomie: /werkzeuge/impact-controlling/dossiers/reverse-merit-order/, /wirkungsfelder/produkte-konsum/dossiers/reverse-merit-order/
-- T-SROI | Wirkungsökonomie: /werkzeuge/impact-controlling/t-sroi/, /werkzeuge/t-sroi/
-- Bürger:innenfonds, Wirkungsrente und Teilhabe am Kapital | Finanzsystem &amp; Kapital: /wirkungsfelder/finanzsystem-kapital/buergerinnenfonds-wirkungsrente-kapitalteilhabe/, /wirkungsfelder/finanzsystem-kapital/buergerinnenfonds/
-- ESG-Ratings, Börsen und Impact Exchange | Finanzsystem &amp; Kapital: /wirkungsfelder/finanzsystem-kapital/esg-ratings-boersen-impact-exchange/, /wirkungsfelder/finanzsystem-kapital/esg-ratings-impact-exchange/
-- Creator:innen, Hosts und Influencer-Verantwortung | Medien &amp; Öffentlichkeit: /wirkungsfelder/medien-oeffentlichkeit/creator-hosts-influencer/, /wirkungsfelder/medien-oeffentlichkeit/creator-hosts/
-- Plattformen, Algorithmen und Reichweitenlogik | Medien &amp; Öffentlichkeit: /wirkungsfelder/medien-oeffentlichkeit/plattformen-algorithmen/, /wirkungsfelder/medien-oeffentlichkeit/plattformen-social-media/
-- Sprache, Framing und Diskurskultur | Medien &amp; Öffentlichkeit: /wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/, /wirkungsfelder/medien-oeffentlichkeit/sprache-framing-diskurskultur/
-- Antwort-Playbooks | Wirkungsökonomie: /wirkungsradar/antwort-playbooks/, /wirkungsradar/host-playbook/
-- Moderationskarten | Wirkungsökonomie: /wirkungsradar/antwort-playbooks/moderationskarten/, /wirkungsradar/host-playbook/moderationskarten/
-- Debattenkarten | Debatten-Kompass: /wirkungsradar/debattenkarten/, /wirkungsradar/live/
-- 15-Minuten-Stadt oder Klimakäfig? | Debatten-Kompass: /wirkungsradar/detail/15-minuten-stadt-oder-klimakaefig/, /wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/
-- Die AfD ist für den kleinen Mann da? | Debatten-Kompass: /wirkungsradar/detail/afd-kleiner-mann-wohlstandsgrundlagen/, /wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/
-- Aktienrente löst die Rente? | Debatten-Kompass: /wirkungsradar/detail/aktienrente-loest-die-rente/, /wirkungsradar/live/aktienrente-loest-die-rente/
-- Algorithmen sind neutral? | Debatten-Kompass: /wirkungsradar/detail/algorithmen-sind-neutral/, /wirkungsradar/live/algorithmen-sind-neutral/
-- Altparteien? | Debatten-Kompass: /wirkungsradar/detail/altparteien/, /wirkungsradar/live/altparteien/
-- Diese Aussage wurde zusammengeführt · Debatten-Kompass: /wirkungsradar/detail/altparteiendiktatur/, /wirkungsradar/detail/die-boesen-reichen/, /wirkungsradar/detail/fuenfzehn-minuten-stadt-klimakaefig/, /wirkungsradar/detail/genderismus/, /wirkungsradar/detail/leistungstraeger-werden-ausgepresst/, /wirkungsradar/detail/masseneinwanderung/, /wirkungsradar/detail/medien-zensur/, /wirkungsradar/detail/remigration/, /wirkungsradar/detail/verfassungsschutz-regierungsschutz/, /wirkungsradar/live/altparteiendiktatur/, /wirkungsradar/live/die-boesen-reichen/, /wirkungsradar/live/fuenfzehn-minuten-stadt-klimakaefig/, /wirkungsradar/live/genderismus/, /wirkungsradar/live/leistungstraeger-werden-ausgepresst/, /wirkungsradar/live/masseneinwanderung/, /wirkungsradar/live/medien-zensur/, /wirkungsradar/live/remigration/, /wirkungsradar/live/verfassungsschutz-regierungsschutz/
-- Angst vor AfD-Wahlsieg? | Debatten-Kompass: /wirkungsradar/detail/angst-vor-afd-wahlsieg/, /wirkungsradar/live/angst-vor-afd-wahlsieg/
-- Antisemitismus ist importiert? | Debatten-Kompass: /wirkungsradar/detail/antisemitismus-ist-importiert/, /wirkungsradar/live/antisemitismus-ist-importiert/
-- Arbeit lohnt sich nicht mehr? | Debatten-Kompass: /wirkungsradar/detail/arbeit-lohnt-sich-nicht-mehr/, /wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/
-- Ausländer plündern den Sozialstaat? | Debatten-Kompass: /wirkungsradar/detail/auslaender-pluendern-sozialstaat/, /wirkungsradar/live/auslaender-pluendern-sozialstaat/
-- Batterien sind nicht recyclebar? | Debatten-Kompass: /wirkungsradar/detail/batterien-sind-nicht-recyclebar/, /wirkungsradar/live/batterien-sind-nicht-recyclebar/
-- Bio kann die Welt nicht ernähren? | Debatten-Kompass: /wirkungsradar/detail/bio-kann-die-welt-nicht-ernaehren/, /wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/
-- Biodiversität ist Luxusproblem? | Debatten-Kompass: /wirkungsradar/detail/biodiversitaet-ist-luxusproblem/, /wirkungsradar/live/biodiversitaet-ist-luxusproblem/
-- Bürgergeld macht faul? | Debatten-Kompass: /wirkungsradar/detail/buergergeld-macht-faul/, /wirkungsradar/live/buergergeld-macht-faul/
-- Bürokratieabbau statt Wirkung? | Debatten-Kompass: /wirkungsradar/detail/buerokratieabbau-statt-wirkung/, /wirkungsradar/live/buerokratieabbau-statt-wirkung/
-- Cancel Culture zerstört Debatte? | Debatten-Kompass: /wirkungsradar/detail/cancel-culture-zerstoert-debatte/, /wirkungsradar/live/cancel-culture-zerstoert-debatte/
-- CO₂ ist nur ein Spurengas? | Debatten-Kompass: /wirkungsradar/detail/co2-ist-nur-ein-spurengas/, /wirkungsradar/live/co2-ist-nur-ein-spurengas/
-- CO₂-Preis oder fossile Systemkosten? | Debatten-Kompass: /wirkungsradar/detail/co2-preis-oder-fossile-systemkosten/, /wirkungsradar/live/co2-preis-oder-fossile-systemkosten/
-- Corona-Verschwörung? War die Pandemie geplant? | Debatten-Kompass: /wirkungsradar/detail/corona-verschwoerung-war-die-pandemie-geplant/, /wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/
-- Cyberangriffe sind IT-Problem? | Debatten-Kompass: /wirkungsradar/detail/cyberangriffe-sind-it-problem/, /wirkungsradar/live/cyberangriffe-sind-it-problem/
-- Das ist alles gesteuert? | Debatten-Kompass: /wirkungsradar/detail/das-ist-alles-gesteuert/, /wirkungsradar/live/das-ist-alles-gesteuert/
-- Zensurbehörden / betreute Meinung / ÖRR-Frame? | Debatten-Kompass: /wirkungsradar/detail/das-ist-zensur/, /wirkungsradar/live/das-ist-zensur/
-- Datenschutz verhindert Innovation? | Debatten-Kompass: /wirkungsradar/detail/datenschutz-verhindert-innovation/, /wirkungsradar/live/datenschutz-verhindert-innovation/
-- Deepfakes sind nur Spaß? | Debatten-Kompass: /wirkungsradar/detail/deepfakes-sind-nur-spass/, /wirkungsradar/live/deepfakes-sind-nur-spass/
-- Deutschland hat keine Verfassung? | Debatten-Kompass: /wirkungsradar/detail/deutschland-hat-keine-verfassung/, /wirkungsradar/live/deutschland-hat-keine-verfassung/
-- Deutschland nur 2 Prozent? | Debatten-Kompass: /wirkungsradar/detail/deutschland-nur-zwei-prozent/, /wirkungsradar/live/deutschland-nur-zwei-prozent/
-- Deutschland schafft sich ab? | Debatten-Kompass: /wirkungsradar/detail/deutschland-schafft-sich-ab/, /wirkungsradar/live/deutschland-schafft-sich-ab/
-- Die Bauern werden geopfert? | Debatten-Kompass: /wirkungsradar/detail/die-bauern-werden-geopfert/, /wirkungsradar/live/die-bauern-werden-geopfert/
-- Die da oben machen sowieso, was sie wollen? | Debatten-Kompass: /wirkungsradar/detail/die-da-oben/, /wirkungsradar/live/die-da-oben/
-- Die Wissenschaft ist gekauft? | Debatten-Kompass: /wirkungsradar/detail/die-wissenschaft-ist-gekauft/, /wirkungsradar/live/die-wissenschaft-ist-gekauft/
-- Diktatur der Altparteien? | Debatten-Kompass: /wirkungsradar/detail/diktatur-der-altparteien/, /wirkungsradar/live/diktatur-der-altparteien/
-- E-Autos schlimmer als Verbrenner? | Debatten-Kompass: /wirkungsradar/detail/e-autos-schlimmer-als-verbrenner/, /wirkungsradar/live/e-autos-schlimmer-als-verbrenner/
-- E-Fuels retten den Verbrenner? | Debatten-Kompass: /wirkungsradar/detail/e-fuels-retten-den-verbrenner/, /wirkungsradar/live/e-fuels-retten-den-verbrenner/
-- ... 162 weitere
+- WÖk SDGs agenda2030 referenzrahmen detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-01-woek-sdgs-agenda2030-referenzrahmen-detailkonzept-v1-0/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-01-woek-sdgs-agenda2030-referenzr/
+- WÖk SDG+ erweiterung detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-02-woek-sdgplus-erweiterung-detailkonzept-v1-0-pdf/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-02-woek-sdgplus-erweiterung-detai/
+- WÖk sdg unterziele global europa deutschland detailkonzept | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-03-woek-sdg-unterziele-global-europa-deutschland-detailkon/, /bibliothek/eintraege/download-or-document-docs-go3-sdg-referenzrahmen-v1-source-pdf-03-woek-sdg-unterziele-global-eur/
+- Sdg SDG+ block | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-16-sicherheit-resilienz-16-sdg-sdgplus-block-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-15-sdg-sdgplus-block-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-15-sdg-sdgplus-block-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-15-sdg-sdgplus-block-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-15-sdg-sdgplus-block/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-15-sdg-sdgplus-block-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-15-sdg-sdgplus-block-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-16-sdg-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-16-sdg/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-16-sdg-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-16-sdg/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-16-sdg-sdgplus-bl-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-16-sdg-sdgplus-bl/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-16-sdg-sdgplus-blo-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-16-sdg-sdgplus-blo/
+- Rang 17 digitalisierung KI: Portalstartseite und Online-Einstieg | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-00-portalstartseite-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-00-portalstartseite-pdf/
+- Rang 17 digitalisierung KI: Konzeptpapier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-01-konzeptpapier-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-01-konzeptpapier-pdf/
+- Rang 17 digitalisierung KI: Gesamtdossier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-02-gesamtdossier-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-02-gesamtdossier-pdf/
+- Detail digitale produktpaesse | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-03-detail-digitale-produktpaess-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-03-detail-digitale-produktpaess/
+- Detail wirkungsdatenraeume | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-04-detail-wirkungsdatenraeume-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-04-detail-wirkungsdatenraeume-p/
+- Detail KI governance | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-05-detail-ki-governance-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-05-detail-ki-governance-pdf/
+- Detail algorithmische fairness | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-06-detail-algorithmische-fairne-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-06-detail-algorithmische-fairne/
+- Detail digitale souveraenitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-07-detail-digitale-souveraenita-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-07-detail-digitale-souveraenita/
+- Detail cyberresilienz | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-08-detail-cyberresilienz-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-08-detail-cyberresilienz-pdf/
+- Detail plattformlogik | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-09-detail-plattformlogik-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-09-detail-plattformlogik-pdf/
+- Detail wirkungsscanner | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-10-detail-wirkungsscanner-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-10-detail-wirkungsscanner-pdf/
+- Detail interoperabilitaet register | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-11-detail-interoperabilitaet-re-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-11-detail-interoperabilitaet-re/
+- Detail audit assurance datenqualitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-12-detail-audit-assurance-daten-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-12-detail-audit-assurance-daten/
+- Quellen glossarlinks | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-17-quellen-glossarlinks-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-17-quellen-glossarlinks-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-17-quellen-glossarli-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-17-quellen-glossarli/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-17-quellen-glossarlinks-2-p/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-17-quellen-glossarlinks-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-18-quel-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-18-quel/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-18-que-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-18-que/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-18-quellen-glossa-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-22-zukunftsbilder-wirkungswohlstand-18-quellen-glossa/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-18-quellen-glossar-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-23-wirkungsakademie-fachbibliothek-18-quellen-glossar/
+- WÖk Rang17 Gesamtpaket Alle Inhalte | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-woek-rang17-gesamtpaket-alle-in-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-17-digitalisierung-ki-woek-rang17-gesamtpaket-alle-in/
+- Rang 18 wissen wissenschaft forschung: Portalstartseite und Online-Einstieg | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-00-portalstartseite-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-00-portalstartseite/
+- Rang 18 wissen wissenschaft forschung: Konzeptpapier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-01-konzeptpapier-2-p/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-01-konzeptpapier-pdf/
+- Rang 18 wissen wissenschaft forschung: Gesamtdossier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-02-gesamtdossier-2-p/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-02-gesamtdossier-pdf/
+- Detail wissenschaft als wirklichkeitspruefung | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-03-detail-wissenscha-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-03-detail-wissenscha/
+- Detail wissensrat integritaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-04-detail-wissensrat-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-04-detail-wissensrat/
+- Detail open science wissensinfrastruktur | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-05-detail-open-scien-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-05-detail-open-scien/
+- Detail forschungsbewertung wirkungsindikatoren | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-06-detail-forschungs-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-06-detail-forschungs/
+- Detail mission oriented research wirkungsinnovation | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-07-detail-mission-or-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-07-detail-mission-or/
+- Detail transdisziplinaritaet citizen science | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-08-detail-transdiszi-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-08-detail-transdiszi/
+- Detail science for policy statistik | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-09-detail-science-fo-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-09-detail-science-fo/
+- Detail forschungsdaten replikation qualitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-10-detail-forschungs-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-10-detail-forschungs/
+- Detail rechtsprechung sachverstaendige wirkungsrecht | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-11-detail-rechtsprec-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-11-detail-rechtsprec/
+- Detail wirkungskompetenz akademie | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-12-detail-wirkungsko-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-12-detail-wirkungsko/
+- WÖk Rang18 Gesamtpaket Alle Inhalte | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-woek-rang18-gesamtpa-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-woek-rang18-gesamtpa/
+- Rang 19 internationale ordnung: Portalstartseite und Online-Einstieg | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-00-portalstartseite-2-pdf/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-00-portalstartseite-pdf/
+- Detail globale wirkungsgovernance | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-06-detail-globale-wirkungsg-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-06-detail-globale-wirkungsg/
+- Detail globale resilienz fruehwarnkooperation | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-09-detail-globale-resilienz-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-09-detail-globale-resilienz/
+- Detail entwicklungspartnerschaften wirkungsfonds | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-10-detail-entwicklungspartn-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-10-detail-entwicklungspartn/
+- Detail datenstandards interoperabilitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-11-detail-datenstandards-in-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-11-detail-datenstandards-in/
+- Rang 20 transformation uebergaenge implementierung: Portalstartseite und Online-Einstieg | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-00-port-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-00-port/
+- Rang 20 transformation uebergaenge implementierung: Konzeptpapier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-01-konz-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-01-konz/
+- Rang 20 transformation uebergaenge implementierung: Gesamtdossier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-02-gesa-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-02-gesa/
+- Detail umsetzungspfad | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-03-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-03-deta/
+- Detail pilotkommunen | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-04-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-04-deta/
+- Detail produkt beschaffungspiloten | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-05-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-05-deta/
+- Detail unternehmens transformationspfade | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-06-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-06-deta/
+- Detail wirkungsfonds brueckenfinanzierung | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-07-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-07-deta/
+- Detail wirkungsdaten versionierung register | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-08-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-08-deta/
+- Detail reallabore regulatory sandboxes | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-09-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-09-deta/
+- Detail soziale abfederung kaufkraftschutz | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-10-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-10-deta/
+- Detail kommunikation change partizipation | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-11-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-11-deta/
+- Detail evaluation rechtsschutz lernschleifen | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-12-deta-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-12-deta/
+- WÖk Rang20 Gesamtpaket Alle Inhalte | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-woek-ra-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-20-transformation-uebergaenge-implementierung-woek-ra/
+- Rang 21 kritik missverstaendnisse schutzarchitektur: Portalstartseite und Online-Einstieg | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-00-por-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-00-por/
+- Rang 21 kritik missverstaendnisse schutzarchitektur: Konzeptpapier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-01-kon-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-01-kon/
+- Rang 21 kritik missverstaendnisse schutzarchitektur: Gesamtdossier | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-02-ges-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-02-ges/
+- Detail widerstand neue massstaebe | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-03-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-03-det/
+- Detail SDGs verschwoerungsnarrativ | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-04-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-04-det/
+- Detail technokratie social credit | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-05-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-05-det/
+- Detail wirkungssimulation manipulation | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-06-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-06-det/
+- Detail freiheit markt planwirtschaft | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-07-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-07-det/
+- Detail fehlbarkeit korrektur | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-08-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-08-det/
+- Detail datenmacht datenschutz | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-09-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-09-det/
+- Detail missbrauchsschutz rechtsschutz governance | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-11-det-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-11-det/
+- Risiko schutzmatrix | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-20-ris-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-20-ris/
+- ... 556 weitere
