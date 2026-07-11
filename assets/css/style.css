@@ -3997,6 +3997,13 @@ textarea {
   font-weight: 800;
 }
 
+.journal-card .card-title,
+.journal-feature-card .card-title {
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
 .journal-card .card-title {
   margin: 0;
   font-size: clamp(1.25rem, 2.2vw, 1.65rem);
@@ -4004,7 +4011,7 @@ textarea {
 }
 
 .journal-feature-card .card-title {
-  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
 }
 
 .journal-card .card-text {
@@ -4504,7 +4511,7 @@ textarea {
 
 .journal-feature-card {
   display: grid;
-  grid-template-columns: minmax(0, 0.46fr) minmax(0, 0.54fr);
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
   gap: clamp(1.1rem, 3vw, 1.8rem);
   align-items: start;
   min-height: 0;
