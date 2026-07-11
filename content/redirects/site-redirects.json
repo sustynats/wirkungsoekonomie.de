@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "description": "Kanonische Redirect-Map fuer IA-Umbau, Rubrik-Fusionen und Legacy-Aliasse. Nur enabled=true wird gebaut.",
+  "defaults": {
+    "status": 301,
+    "replaceExisting": false,
+    "allowMissingTarget": false
+  },
+  "redirects": [
+    {
+      "enabled": true,
+      "from": "/wirkungssteuerung/",
+      "to": "/wirkung-steuern/",
+      "title": "Wirkung steuern",
+      "reason": "Die bisherigen Rubriken Wirkungssteuerung und Praxis & Tools werden zur neuen Rubrik Wirkung steuern zusammengefuehrt.",
+      "replaceExisting": true,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/werkzeuge/",
+      "to": "/wirkung-steuern/",
+      "title": "Wirkung steuern",
+      "reason": "Werkzeuge werden im IA-Umbau unter Wirkung steuern gebuendelt.",
+      "replaceExisting": true,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/praxis-tools/",
+      "to": "/wirkung-steuern/",
+      "title": "Wirkung steuern",
+      "reason": "Legacy-Alias fuer die neue Rubrik Wirkung steuern.",
+      "replaceExisting": true,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/praxis-und-tools/",
+      "to": "/wirkung-steuern/",
+      "title": "Wirkung steuern",
+      "reason": "Legacy-Alias fuer die neue Rubrik Wirkung steuern.",
+      "replaceExisting": true,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/tools/",
+      "to": "/wirkung-steuern/",
+      "title": "Wirkung steuern",
+      "reason": "Legacy-Alias fuer die neue Rubrik Wirkung steuern.",
+      "replaceExisting": true,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/oeffentlicher-wirkungsraum/",
+      "to": "/debatte-radar/",
+      "title": "Debatte & Radar",
+      "reason": "Der oeffentliche Wirkungsraum wird im IA-Umbau zur Rubrik Debatte & Radar.",
+      "replaceExisting": true,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/oeffentlichkeit/",
+      "to": "/debatte-radar/",
+      "title": "Debatte & Radar",
+      "reason": "Legacy-Alias fuer die neue Rubrik Debatte & Radar.",
+      "replaceExisting": false,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/debatte-und-radar/",
+      "to": "/debatte-radar/",
+      "title": "Debatte & Radar",
+      "reason": "Schreibvarianten werden auf den kanonischen Rubrik-Slug gefuehrt.",
+      "replaceExisting": false,
+      "allowMissingTarget": true
+    },
+    {
+      "enabled": true,
+      "from": "/radar/",
+      "to": "/debatte-radar/",
+      "title": "Debatte & Radar",
+      "reason": "Legacy-Alias fuer die neue Rubrik Debatte & Radar.",
+      "replaceExisting": false,
+      "allowMissingTarget": true
+    }
+  ]
+}
