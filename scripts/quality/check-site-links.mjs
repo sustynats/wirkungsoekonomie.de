@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportFile = path.join(root, "reports", "site-link-integrity.md");
-const ignoredDirs = new Set([".git", "_site", "node_modules", "woek-institut-app"]);
+const ignoredDirs = new Set([".git", "_site", "node_modules", "templates", "woek-institut-app"]);
 const ignoredRoutePatterns = [
   /^\/(?:_debug|admin)\//,
   /^\/404\.html$/,
@@ -35,6 +35,7 @@ function routeToFile(route) {
 
 function normalizeHref(href, sourceFile) {
   if (!href || href.startsWith("#")) return "";
+  if (href.includes("${") || href.includes("{{")) return "";
   if (/^(mailto:|tel:|javascript:|data:|https?:\/\/|\/\/)/i.test(href)) return "";
   const clean = href.split("#")[0].split("?")[0];
   if (!clean) return "";

@@ -79,7 +79,7 @@ function renderEnglishUtilityLink(base, item) {
   return `        <a class="site-utility-link site-utility-link--${escapeHtml(utilityClass(item))}" href="${base}${escapeHtml(href)}" data-nav-match="en/" data-utility-label="${escapeHtml(utilityLabel)}"${primary}>${escapeHtml(text)}</a>`;
 }
 
-function englishMainLinks() {
+function englishMainLinks(base) {
   return [
     ["Home", "en/", "en/"],
     ["Understand", "en/#understand", "en/"],
@@ -91,7 +91,7 @@ function englishMainLinks() {
     ["Learn", "en/#learn", "en/"],
     ["Library", "en/library/", "en/library/"],
     ["Join", "en/#join", "en/"],
-  ].map(([label, href, match]) => `        <a href="../${escapeHtml(href)}" data-nav-match="${escapeHtml(match)}">${escapeHtml(label)}</a>`).join("\n");
+  ].map(([label, href, match]) => `        <a href="${base}${escapeHtml(href)}" data-nav-match="${escapeHtml(match)}">${escapeHtml(label)}</a>`).join("\n");
 }
 
 function renderHeader(base, locale = "de", filePath = "") {
@@ -99,7 +99,7 @@ function renderHeader(base, locale = "de", filePath = "") {
     .map((item) => locale === "en" ? renderEnglishUtilityLink(base, item) : renderUtilityLink(base, item))
     .join("\n");
   const languageSwitch = renderLanguageSwitch(base, locale, filePath);
-  const mainLinks = locale === "en" ? englishMainLinks() : (navigation.header || []).map((item) => renderMainLink(base, item)).join("\n");
+  const mainLinks = locale === "en" ? englishMainLinks(base) : (navigation.header || []).map((item) => renderMainLink(base, item)).join("\n");
   const brandHref = locale === "en" ? `${base}en/` : `${base}index.html`;
   const brandLabel = locale === "en" ? "Wirkungsökonomie English homepage" : "Wirkungsökonomie Startseite";
   const utilityLabel = locale === "en" ? "Quick links" : "Schnellzugriffe";

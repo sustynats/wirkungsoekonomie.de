@@ -1,8 +1,16 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WÖk API · Daten</title>
+</head>
+<body>
 <pre>{
   &quot;id&quot;: &quot;woek-core-static-api&quot;,
   &quot;name&quot;: &quot;WÖk Core Static API&quot;,
   &quot;version&quot;: &quot;v1&quot;,
-  &quot;generatedAt&quot;: &quot;2026-07-04T21:52:10.150Z&quot;,
+  &quot;generatedAt&quot;: &quot;2026-07-11T23:03:44.863Z&quot;,
   &quot;baseUrl&quot;: &quot;https://wirkungsoekonomie.de/api/v1/&quot;,
   &quot;status&quot;: &quot;read-only-static&quot;,
   &quot;contract&quot;: {
@@ -47,6 +55,30 @@
       ],
       &quot;description&quot;: &quot;Glossar-Snapshot aus dem versionierten Wissenskern.&quot;,
       &quot;absoluteUrl&quot;: &quot;https://wirkungsoekonomie.de/api/v1/glossary/&quot;
+    },
+    {
+      &quot;id&quot;: &quot;methods&quot;,
+      &quot;url&quot;: &quot;/api/v1/methods/&quot;,
+      &quot;method&quot;: &quot;GET&quot;,
+      &quot;lifecycle&quot;: &quot;stable&quot;,
+      &quot;audience&quot;: [
+        &quot;internal&quot;,
+        &quot;partners&quot;
+      ],
+      &quot;description&quot;: &quot;Schlanker WÖMS-Snapshot der 84 kanonischen Kernmethoden.&quot;,
+      &quot;absoluteUrl&quot;: &quot;https://wirkungsoekonomie.de/api/v1/methods/&quot;
+    },
+    {
+      &quot;id&quot;: &quot;canvases&quot;,
+      &quot;url&quot;: &quot;/api/v1/canvases/&quot;,
+      &quot;method&quot;: &quot;GET&quot;,
+      &quot;lifecycle&quot;: &quot;stable&quot;,
+      &quot;audience&quot;: [
+        &quot;internal&quot;,
+        &quot;partners&quot;
+      ],
+      &quot;description&quot;: &quot;Feldgenaue WÖMS-Canvas-Spezifikationen und verbindlicher Mindeststandard.&quot;,
+      &quot;absoluteUrl&quot;: &quot;https://wirkungsoekonomie.de/api/v1/canvases/&quot;
     },
     {
       &quot;id&quot;: &quot;search&quot;,
@@ -96,3 +128,5 @@
     }
   ]
 }</pre>
+</body>
+</html>

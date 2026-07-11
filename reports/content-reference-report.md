@@ -1,511 +1,46 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-07-02T20:49:31.965Z
-Resolved references: 820
-Warnings: 2817
+Erzeugt: 2026-07-11T23:01:04.897Z
+Resolved references: 1035
+Warnings: 35
 
 ## Warnungen
 
-- [missing-title-slug-fallback] Wirkungsökonomie Glossar - Titel aus Slug erzeugt
-- [unresolved-reference] Wirkungsökonomie Glossar - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] manifest-der-wirkungsoekonomie - Titel aus Slug erzeugt
-- [unresolved-reference] manifest-der-wirkungsoekonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] t-sroi-whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] t-sroi-whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
-- [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] CSRD und Prüfungsstandards - Titel aus Slug erzeugt
-- [unresolved-reference] CSRD und Prüfungsstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wirkung-wirkungspotenzial-wirkungsrisiko - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden und Website-Rahmen Arbeit, Automatisierung, Wirkungseinkommen, Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 56: Arbeit, Automatisierung und Maschinenleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 57: Wirkungseinkommen - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 57: Wirkungseinkommen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Kapitel 58: Wirkungsrente - Titel aus Slug erzeugt
-- [unresolved-reference] Kapitel 58: Wirkungsrente - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
-- [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Maßstabskrise - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Maßstabskrise - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Leistung neu definieren - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Leistung neu definieren - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Titel aus Slug erzeugt
-- [unresolved-reference] Die neue Ordnung des Wohlstands: Wirkungs-BIP und neue Wohlstandsmessung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Arbeitspapier Wirkungseinkommensteuer - Titel aus Slug erzeugt
-- [unresolved-reference] Arbeitspapier Wirkungseinkommensteuer - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] WÖk-Glossar Finanz-, Kosten- und Wirkungssteuerung - Titel aus Slug erzeugt
-- [unresolved-reference] WÖk-Glossar Finanz-, Kosten- und Wirkungssteuerung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] EU-Kommission Clean Industrial Deal - Titel aus Slug erzeugt
-- [unresolved-reference] EU-Kommission Clean Industrial Deal - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Titel aus Slug erzeugt
-- [unresolved-reference] BASF Polyamid Beispiel von der CSRD zur Produktscorecard - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] T-SROI-Whitepaper - Titel aus Slug erzeugt
-- [unresolved-reference] T-SROI-Whitepaper - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Wirkungsradar Sprachmuster und Emotionalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] Wirkungsradar Sprachmuster und Emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Titel aus Slug erzeugt
-- [unresolved-reference] wirkungsradar-narrative-sprachmuster-und-emotionalisierung - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Crosslink-Audit und WÖk-Begriffsleitfaden - Fallback-Karte aus Eingabe erzeugt
 - [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
 - [unresolved-reference] [object Object] - Leerer oder technischer Verweis
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Definitionsmaster WÖk v1 - Titel aus Slug erzeugt
-- [unresolved-reference] Definitionsmaster WÖk v1 - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Datenstandards - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Datenstandards - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Führender Begriffsleitfaden der Wirkungsökonomie - Titel aus Slug erzeugt
-- [unresolved-reference] Führender Begriffsleitfaden der Wirkungsökonomie - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Working-Paper Wirkungssteuergesetz - Titel aus Slug erzeugt
-- [unresolved-reference] Working-Paper Wirkungssteuergesetz - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Titel aus Slug erzeugt
-- [unresolved-reference] warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt - Fallback-Karte aus Eingabe erzeugt
-- [missing-title-slug-fallback] Glossar-Architektur Wirkmechanismen - Titel aus Slug erzeugt
-- [unresolved-reference] Glossar-Architektur Wirkmechanismen - Fallback-Karte aus Eingabe erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wirkungsfonds-gesundheit-pflege - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] wirkungsfonds-gesundheit-pflege - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] gesundheit-pflege-und-soziales - Titel aus Slug erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] one-health-score - Titel aus Slug erzeugt
+- [missing-title-slug-fallback] klima-energie-ressourcen - Titel aus Slug erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wissenschaft-innovation-digitalisierung - Titel aus Slug erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wirkung-wirkungspotenzial-wirkungsrisiko - Titel aus Slug erzeugt
+- [unresolved-reference] [object Object] - Leerer oder technischer Verweis
+- [missing-title-slug-fallback] wirkung-wirkungspotenzial-wirkungsrisiko - Titel aus Slug erzeugt
 
 ## Aufgelöste Verweise
 
@@ -523,8 +58,10 @@ Warnings: 2817
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -533,6 +70,7 @@ Warnings: 2817
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. (Online-Buch-Kapitel, Beschreibung: ja)
@@ -542,27 +80,49 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -571,6 +131,7 @@ Warnings: 2817
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -583,6 +144,7 @@ Warnings: 2817
 - /wirkungsradar/studio/embed/kernenergie-wieder-in-deutschland/ -> Embed-Widget – Kernenergie wieder in Deutschland? (Distribution, Beschreibung: ja)
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -590,6 +152,7 @@ Warnings: 2817
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /quellenarchiv/wok-q-0394/ -> EU-Kommission Clean Industrial Deal (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
@@ -601,12 +164,15 @@ Warnings: 2817
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -615,6 +181,8 @@ Warnings: 2817
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -630,6 +198,8 @@ Warnings: 2817
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -655,17 +225,28 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
+- /quellenarchiv/wok-q-0540/ -> ESMA ESEF (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /buch.html -> Die neue Ordnung des Wohlstands (Grundlagenwerk, Beschreibung: ja)
 - /bibliothek/systemmodell-wirkungsoekonomie/ -> Systemmodell der Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /quellenarchiv/wok-q-0393/ -> EU-Kommission European Green Deal (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/#modell-title -> Faktencheck und Folgencheck – Methodenseite: Das 10-Schritte-Modell (Methode, Beschreibung: ja)
@@ -673,10 +254,15 @@ Warnings: 2817
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/folgencheck-statt-faktencheck-democracy-intelligence.html -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -685,24 +271,32 @@ Warnings: 2817
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsradar/studio/embed/schulden-machen-oder-sparen/ -> Embed-Widget – Schulden machen oder sparen? (Distribution, Beschreibung: ja)
+- /quellenarchiv/wok-q-0327/ -> Rat der EU Fit for 55 (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/#modell-title -> Faktencheck und Folgencheck – Methodenseite: Das 10-Schritte-Modell (Methode, Beschreibung: ja)
 - /bibliothek/folgencheck-wirkungspolitische-sprache/ -> Folgencheck statt Faktencheck | Bibliothek der Wirkungsökonomie (Dokument, Beschreibung: ja)
 - /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/afd-ideologie-kann-deinen-job-kosten/ -> AfD-Ideologie kann deinen Job kosten (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsradar/studio/embed/schulden-machen-oder-sparen/ -> Embed-Widget – Schulden machen oder sparen? (Distribution, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -712,25 +306,34 @@ Warnings: 2817
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsradar/studio/embed/schulden-machen-oder-sparen/ -> Embed-Widget – Schulden machen oder sparen? (Distribution, Beschreibung: ja)
+- /quellenarchiv/wok-q-0378/ -> EU-Kommission Green Deal Industrial Plan (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -747,10 +350,12 @@ Warnings: 2817
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsradar/studio/embed/schulden-machen-oder-sparen/ -> Embed-Widget – Schulden machen oder sparen? (Distribution, Beschreibung: ja)
 - /begriffe/esrs/ -> ESRS (Glossarbegriff, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
@@ -767,6 +372,9 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -792,6 +400,9 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /wirkungsradar/studio/embed/kernenergie-wieder-in-deutschland/ -> Embed-Widget – Kernenergie wieder in Deutschland? (Distribution, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -813,15 +424,27 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -839,12 +462,16 @@ Warnings: 2817
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /begriffe/eu/ -> EU (Glossarbegriff, Beschreibung: ja)
+- /blog/das-managementmodell-der-zukunft/ -> Das Managementmodell der Zukunft (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
@@ -854,6 +481,7 @@ Warnings: 2817
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
@@ -869,9 +497,13 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
@@ -887,6 +519,7 @@ Warnings: 2817
 - /referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/#woek-main-2026-k003-s001 -> Kapitel 3 – Kapital als Werkzeug und falscher Kompass: 3.1 Kapital ist gespeicherte Handlungsmöglichkeit (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/#woek-main-2026-k034-s001 -> Kapitel 34 – T-SROI und systemische Transformationsmessung: 34.1 Abgrenzung zu ROI, SROI, NWI, IOI und T-SROI (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-059-kapitalmaerkte-und-fonds/#woek-main-2026-k059-s001 -> Kapitel 59 – Kapitalmärkte und Fonds: 59.1 Kapital als Wirkungskraft (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/das-managementmodell-der-zukunft/ -> Das Managementmodell der Zukunft (Online-Buch-Kapitel, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/risiko-resilienzregister/ -> Die SDGs als globales Risiko- und Resilienzregister (Online-Buch-Kapitel, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/#book-anchors -> SDG-/SDG+-Referenzrahmen: Anker im Online-Buch (Detailkonzept, Beschreibung: ja)
 - /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
@@ -894,9 +527,15 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/nachhaltiges-marketing-mix/ -> Nachhaltiges Marketing-Mix | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
@@ -909,6 +548,9 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
@@ -925,18 +567,29 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
+- /institut/ -> Wirkungsinstitut – vom Wissen zur Wirkung (Seite, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
@@ -953,7 +606,9 @@ Warnings: 2817
 - /blog/systemresilienz-statt-nachhaltigkeit/ -> Von Nachhaltigkeit zu Systemresilienz (Online-Buch-Kapitel, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/#book-anchors -> SDG-/SDG+-Referenzrahmen: Anker im Online-Buch (Detailkonzept, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
@@ -965,6 +620,9 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/systemmodell-wirkungsoekonomie/ -> Systemmodell der Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
@@ -978,11 +636,16 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-wohnungsmarkt/#political-implementation -> WP Wohnungsmarkt: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1004,6 +667,7 @@ Warnings: 2817
 - /bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/#1-executive-summary -> Die SDGs und SDG+ als globales Risiko- und Resilienzregister: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
 - /verstehen/sdgs-sdgplus/#book-anchors -> SDG-/SDG+-Referenzrahmen: Anker im Online-Buch (Online-Buch-Kapitel, Beschreibung: ja)
 - /portale/sicherheit-resilienz/ -> Sicherheit, Resilienz und globale Kooperation (Sicherheit, Resilienz und globale Kooperation, Beschreibung: ja)
+- /blog/das-managementmodell-der-zukunft/ -> Das Managementmodell der Zukunft (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/nicht-billiger-werden-besser-werden/ -> Nicht billiger werden. Besser werden. (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1017,11 +681,17 @@ Warnings: 2817
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
+- /institut/ -> Wirkungsinstitut – vom Wissen zur Wirkung (Seite, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1041,6 +711,7 @@ Warnings: 2817
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1063,23 +734,36 @@ Warnings: 2817
 - /referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/#woek-main-2026-k034-s001 -> Kapitel 34 – T-SROI und systemische Transformationsmessung: 34.1 Abgrenzung zu ROI, SROI, NWI, IOI und T-SROI (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-059-kapitalmaerkte-und-fonds/#woek-main-2026-k059-s001 -> Kapitel 59 – Kapitalmärkte und Fonds: 59.1 Kapital als Wirkungskraft (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/eintraege/leading-reference-glossar-html/ -> Glossar der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/folgencheck-statt-faktencheck-democracy-intelligence.html -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-028-demokratie-als-wirkungsraum/#woek-main-2026-k028-s001 -> Kapitel 28 – Demokratie als Wirkungsraum: 28.1 Demokratie ist mehr als Institutionenordnung (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/folgencheck-statt-faktencheck-democracy-intelligence.html -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/wirkung-schlaegt-wahrheit.html -> Wirkung schlägt Wahrheit (Online-Buch-Kapitel, Beschreibung: ja)
+- /quellenarchiv/wok-q-0433/ -> EFRAG VSME (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
+- /institut/ -> Wirkungsinstitut – vom Wissen zur Wirkung (Seite, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1090,6 +774,7 @@ Warnings: 2817
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/grundlagenpapier-wirkungsoekonomie/ -> Grundlagenpapier Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1099,22 +784,28 @@ Warnings: 2817
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /wirkungsradar/ -> Folgencheck für öffentliche Aussagen (Analysebereich, Beschreibung: ja)
 - /blog/systemresilienz-statt-nachhaltigkeit/ -> Von Nachhaltigkeit zu Systemresilienz (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1124,6 +815,7 @@ Warnings: 2817
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1131,6 +823,9 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/technische-leitlinien-wustg-v2/#political-implementation -> Technische Leitlinien WUStG Vollversion Extended v2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1138,9 +833,14 @@ Warnings: 2817
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1157,21 +857,36 @@ Warnings: 2817
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
+- /institut/ -> Wirkungsinstitut – vom Wissen zur Wirkung (Seite, Beschreibung: ja)
+- /institut/ -> Wirkungsinstitut – vom Wissen zur Wirkung (Seite, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/systemmodell-wirkungsoekonomie/ -> Systemmodell der Wirkungsökonomie | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1180,11 +895,14 @@ Warnings: 2817
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1193,15 +911,18 @@ Warnings: 2817
 - /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /institut/ -> Wirkungsinstitut – vom Wissen zur Wirkung (Seite, Beschreibung: ja)
 - /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/nachhaltiges-marketing-mix/ -> Nachhaltiges Marketing-Mix | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/das-managementmodell-der-zukunft/ -> Das Managementmodell der Zukunft (Online-Buch-Kapitel, Beschreibung: ja)
 - /blog/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.html -> Wirkungsschule: Warum Bildung mehr sein muss als Stoff, Note und Abschluss (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1214,6 +935,7 @@ Warnings: 2817
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1226,6 +948,8 @@ Warnings: 2817
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/#political-implementation -> Leitbild für Mensch, Planet und Demokratie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/das-managementmodell-der-zukunft/ -> Das Managementmodell der Zukunft (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/das-managementmodell-der-zukunft/ -> Das Managementmodell der Zukunft (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1236,29 +960,39 @@ Warnings: 2817
 - /referenz/kapitel-042-unternehmen-als-wirkungssysteme/#woek-main-2026-k042-s001 -> Kapitel 42 – Unternehmen als Wirkungssysteme: 42.1 Unternehmenszweck (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-043-wirkungsorientierte-unternehmensfuehrung/#woek-main-2026-k043-s001 -> Kapitel 43 – Wirkungsorientierte Unternehmensführung: 43.1 Führung als Systemsteuerung (Online-Buch-Kapitel, Beschreibung: ja)
 - /referenz/kapitel-044-wirkungscontrolling-im-unternehmen/#woek-main-2026-k044-s001 -> Kapitel 44 – Wirkungscontrolling im Unternehmen: 44.1 KPI versus KII (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /begriffe/wirkungssteuergesetz/ -> Wirkungssteuergesetz (Glossarbegriff, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /blog/das-managementmodell-der-zukunft/ -> Das Managementmodell der Zukunft (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1272,16 +1006,34 @@ Warnings: 2817
 - /bibliothek/wp-rente/ -> Working-Paper Rente | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wenn-maschinen-arbeiten/#political-implementation -> Wenn Maschinen arbeiten: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wp-einkommen/#political-implementation -> WP Einkommen: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/#woek-main-2026-k056-s001 -> Kapitel 56 – Arbeit, Automatisierung und Maschinenleistung: 56.1 Wenn Arbeit verschwindet (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-057-wirkungseinkommen/#woek-main-2026-k057-s001 -> Kapitel 57 – Wirkungseinkommen: 57.1 Warum Einkommen neu gedacht werden muss (Online-Buch-Kapitel, Beschreibung: ja)
+- /referenz/kapitel-058-wirkungsrente/#woek-main-2026-k058-s001 -> Kapitel 58 – Wirkungsrente: 58.1 Lebensleistung statt Erwerbsbiografie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/standardwerk-neue-ordnung-wohlstands-2026/ -> Die neue Ordnung des Wohlstands | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/wirkungsoekonomie-lieferkette/ -> Wirkungsökonomie in der Lieferkette | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/#einbauorte -> Doppelte Wesentlichkeit, Impact-Controlling und Wirkungsökonomie: Empfohlene Einbauorte (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
+- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
+- /bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments -> WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie: 1. Zweck dieses Dokuments (Online-Buch-Kapitel, Beschreibung: ja)
+- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
 - /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
@@ -1292,40 +1044,3 @@ Warnings: 2817
 - /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
 - /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
 - /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/beispiel-apfel-wirkungssteuer-bonusregel/#political-implementation -> Beispiel Apfel Wirkungssteuer Bonusregel: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsoekonomie-in-der-lieferkette/#political-implementation -> Wirkungsökonomie in der Lieferkette: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/woek-master-items-final-v1-2/#political-implementation -> WÖk Master Items final v1.2: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/leitbild-mensch-planet-demokratie/ -> Leitbild für Mensch, Planet und Demokratie (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /werkstatt/whitepaper/produktbesteuerung-durch-wirkung/#downloads -> Whitepaper Produktbesteuerung durch Wirkung: Materialien und Downloads (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/whitepaper-t-sroi/#political-implementation -> Whitepaper T-SROI: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/woek-master-items-register/ -> WÖk Master Items Register | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /werkzeuge/impact-controlling/dossiers/wirkungscontrolling/#0-zitationsweise-quellenlogik-und-dokumentstatus -> Wirkungscontrolling / Impact Controlling · Detailkonzept-Dossier: 0. Zitationsweise, Quellenlogik und Dokumentstatus (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/impact-strategie-controlling-marketing-management-einkauf-chemieindustrie/#executive-summary -> Impact-Strategie, Impact-Controlling, Impact-Marketing und Impact-Management im Unternehmenseinkauf | Bibliothek der Wirkungsökonomie: 1. Executive Summary (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wstg-oktober-2025/#political-implementation -> WStG Oktober 2025: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/wirkungsrat-konzept/#political-implementation -> Wirkungsrat Konzept: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/technische-leitlinien-wustg/ -> Technische Leitlinien WUStG | Bibliothek der Wirkungsökonomie (Online-Buch-Kapitel, Beschreibung: ja)
-- /dokumente/systemmodell-der-wirkungsoekonomie/#political-implementation -> Systemmodell der Wirkungsökonomie: Politische Anschlussfähigkeit und Umsetzungsoptionen (Online-Buch-Kapitel, Beschreibung: ja)
-- /blog/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.html -> Warum Fakten nicht reichen – und was stattdessen gesellschaftliche Stabilität erzeugt (Online-Buch-Kapitel, Beschreibung: ja)
-- /bibliothek/die-neue-ordnung-des-wohlstands/ -> Weiterleitung (Online-Buch-Kapitel, Beschreibung: ja)

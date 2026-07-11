@@ -1,6 +1,6 @@
 # Corporate-Design-Integration der WÖk-Referenz
 
-Stand: 2026-07-02
+Stand: 2026-07-11
 
 ## Bestehende CSS- und Designbasis
 

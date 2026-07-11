@@ -2,7 +2,7 @@
   "id": "woek-core-static-api",
   "name": "WÖk Core Static API",
   "version": "v1",
-  "generatedAt": "2026-07-04T21:52:10.150Z",
+  "generatedAt": "2026-07-11T23:03:44.863Z",
   "baseUrl": "https://wirkungsoekonomie.de/api/v1/",
   "status": "read-only-static",
   "contract": {
@@ -47,6 +47,30 @@
       ],
       "description": "Glossar-Snapshot aus dem versionierten Wissenskern.",
       "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/glossary/"
+    },
+    {
+      "id": "methods",
+      "url": "/api/v1/methods/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Schlanker WÖMS-Snapshot der 84 kanonischen Kernmethoden.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/methods/"
+    },
+    {
+      "id": "canvases",
+      "url": "/api/v1/canvases/",
+      "method": "GET",
+      "lifecycle": "stable",
+      "audience": [
+        "internal",
+        "partners"
+      ],
+      "description": "Feldgenaue WÖMS-Canvas-Spezifikationen und verbindlicher Mindeststandard.",
+      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/canvases/"
     },
     {
       "id": "search",

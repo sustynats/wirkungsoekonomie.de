@@ -584,6 +584,12 @@ const relatedContentTargets = new Map([
   ["wirkungsrueckkopplung", ["Wirkungsrückkopplung", "../../begriffe/wirkungsrueckkopplung/"]],
   ["wenn-maschinen-arbeiten", ["Wenn Maschinen arbeiten", "../../dokumente/wenn-maschinen-arbeiten/"]],
   ["wp-einkommen", ["Working Paper Einkommen", "../../dokumente/wp-einkommen/"]],
+  ["wp-rente", ["Working Paper Rente", "../../bibliothek/wp-rente/"]],
+  ["fuehrender-begriffsleitfaden", ["Führender Begriffsleitfaden der Wirkungsökonomie", "../../bibliothek/woek-begriffsleitfaden-fuehrend/"]],
+  ["fuehrender-begriffsleitfaden-der-wirkungsoekonomie", ["Führender Begriffsleitfaden der Wirkungsökonomie", "../../bibliothek/woek-begriffsleitfaden-fuehrend/"]],
+  ["t-sroi-whitepaper", ["T-SROI-Whitepaper", "../../dokumente/whitepaper-t-sroi/"]],
+  ["working-paper-wirkungssteuergesetz", ["Wirkungssteuergesetz WStG", "../../dokumente/wstg-oktober-2025/"]],
+  ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung", ["Wirkungsradar: Narrative, Sprachmuster und Emotionalisierung", "../../wirkungsradar/"]],
   ["arbeitspapier-doppelte-wesentlichkeit-impact-controlling", ["Arbeitspapier Doppelte Wesentlichkeit", "../../dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/"]],
   ["doppelte-wesentlichkeit-impact-controlling", ["Arbeitspapier Doppelte Wesentlichkeit", "../../dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/"]],
   ["impact-controlling", ["Impact Controlling", "../../werkzeuge/impact-controlling/"]],
@@ -784,7 +790,10 @@ function parseSource(value) {
       status: value.status || "",
     };
   }
-  const [label, url] = String(value || "").split("|");
+  const raw = String(value || "");
+  const separatorIndex = raw.lastIndexOf("|");
+  const label = separatorIndex >= 0 ? raw.slice(0, separatorIndex) : raw;
+  const url = separatorIndex >= 0 ? raw.slice(separatorIndex + 1) : "";
   return {
     label: label?.trim() || "Quelle",
     url: url?.trim() || "",
@@ -906,6 +915,17 @@ function extentLabelFor(entry, url) {
   return readingTimeFromBody(entry.body);
 }
 
+function chapterEntryFromLabel(value) {
+  const match = String(value || "").match(/^Kapitel\s+(\d+)/i);
+  if (!match) return null;
+  const chapterPrefix = `/referenz/kapitel-${String(Number(match[1])).padStart(3, "0")}-`;
+  for (const entry of contentByUrl.values()) {
+    const url = normalizeReferenceUrl(entry.url || "");
+    if (url.startsWith(chapterPrefix)) return entry;
+  }
+  return null;
+}
+
 function resolveContentReference(input, options = {}) {
   const raw = typeof input === "object" && input
     ? input.url || input.href || input.pageUrl || input.onlineUrl || input.id || input.slug || input.title || input.label || ""
@@ -921,7 +941,8 @@ function resolveContentReference(input, options = {}) {
   const entry = contentByUrl.get(canonicalUrl)
     || contentByUrl.get(canonicalUrl.split("#")[0])
     || contentBySlug.get(slug)
-    || contentByTitle.get(titleKey);
+    || contentByTitle.get(titleKey)
+    || chapterEntryFromLabel(rawText);
   if (!entry && relatedContentTargets.has(slug)) {
     const [title, href] = relatedContentTargets.get(slug);
     const canonicalTarget = normalizeReferenceUrl(href);
@@ -1098,7 +1119,11 @@ function documentCard(value) {
         scopeLabel: document.category,
         extentLabel: document.fileSize && document.pdfUrl ? `PDF · ${document.fileSize}` : document.stand ? `Stand ${document.stand}` : "",
       })
-    : resolveContentReference(value);
+    : resolveContentReference(value, {
+        fallbackTitle: typeof value === "object" && value ? value.title || value.label || value.name : value,
+        allowTextFallback: true,
+        relevanceReason: "context",
+      });
   return contentReferenceCard(reference);
 }
 
@@ -1202,7 +1227,7 @@ function sourceReferenceBlock(term) {
   const reference = resolveContentReference(sourceUrl || source, {
     fallbackTitle: source,
     scopeLabel: sourceSection,
-    allowTextFallback: false,
+    allowTextFallback: !sourceUrl,
     relevanceReason: "source",
   });
   if (!reference) return "";
