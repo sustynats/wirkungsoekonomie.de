@@ -380,20 +380,39 @@ gesamtbild();
 function canvasIndex() {
   const base = '../../';
   const anwend = C.canvases.filter((c) => c.anwendungsmodul);
+  const byModul = {};
+  anwend.forEach((c) => { (byModul[c.anwendungsmodul] ||= []).push(c); });
+  const modulCards = Object.entries(byModul)
+    .map(([modul, list]) =>
+      `<article class="card"><p class="card-kicker">Anwendungsmodul</p><h3>${esc(modul)}</h3><ul class="link-list">${list
+        .map((c) => (byId[c.methodId]
+          ? `<li><a href="${base}methodenraum/methoden/${slug(c.methodId)}/">${esc(c.name)}</a></li>`
+          : `<li>${esc(c.name)}</li>`))
+        .join('')}</ul></article>`)
+    .join('');
   const body = `      <section class="hero"><div class="hero-grid"><div>
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}methodenraum.html">Methodenraum</a> / Canvas</nav>
         <p class="hero-kicker">WÖMS · Canvas-Prinzip</p>
         <h1>Canvas: die Arbeitsfläche jeder Methode</h1>
-        <p class="hero-subtitle">Zu jeder Methode gehört ein Canvas — eine Arbeitsfläche mit klaren Leitfragen, als leere Vorlage und als ausgefülltes Beispiel. So wird aus Theorie sofort etwas, das man im Team ausfüllen kann.</p>
+        <p class="hero-subtitle">Zu jeder Methode gehört ein Canvas — eine Arbeitsfläche mit klaren Leitfragen zum Ausfüllen. So wird aus Theorie sofort etwas, das man im Team bearbeiten kann.</p>
+        <div class="hero-actions no-print"><a class="btn btn-primary" href="${base}methodenraum/methoden/">Zu den 152 Methoden-Canvas</a></div>
       </div><aside class="card"><p class="card-kicker">Auf einen Blick</p><dl class="portal-meta-grid compact"><div><dt>Methoden-Canvas</dt><dd>152</dd></div><div><dt>Anwendungs-Canvas</dt><dd>56</dd></div><div><dt>Pflichtfelder</dt><dd>5</dd></div></dl></aside></div></section>
+      <section class="section section-soft"><div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Canvas-Prinzip im Video</h2></div>
+        <figure style="max-width:900px;margin:0 auto"><video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4">Dein Browser unterstützt kein Video.</video></figure>
+      </section>
       <section class="section"><div class="card">
         <p class="hero-kicker">Immer dabei</p><h2>Die fünf Pflichtfelder</h2>
         <p>Egal welche Methode — diese fünf Felder sind nie optional. Sie halten die Ehrlichkeit im System und verhindern, dass gute Zahlen schlechte überdecken.</p>
         <ul>${li(PFLICHT.map((p) => p.charAt(0).toUpperCase() + p.slice(1)))}</ul>
         <p class="note">Nichtkompensation: Eine verletzte Wirkungsgrenze erzeugt immer „Stopp oder neu gestalten". Ein aggregierter Gesamtwert ist dann unzulässig.</p>
       </div></section>
-      <section class="section"><div class="section-header"><p class="hero-kicker">56 Anwendungs- und Realisierungs-Canvas</p><h2>Für konkrete Module</h2><p>Zusätzlich zu den 152 Methoden-Canvas gibt es fachspezifische Varianten für einzelne Anwendungsmodule.</p></div>
-        <ul class="link-list columns">${anwend.map((c) => `<li>${esc(c.name)}${c.anwendungsmodul ? ` <span class="badge">${esc(c.anwendungsmodul)}</span>` : ''}</li>`).join('')}</ul>
+      <section class="section"><div class="card">
+        <p class="hero-kicker">Die 152 Methoden-Canvas</p><h2>Jede Methode hat ihr eigenes Canvas</h2>
+        <p>Das eigentliche, füllbare Canvas liegt bei jeder Methode selbst — als leere Vorlage mit Leitfragen und den fünf Pflichtfeldern. Öffne eine Methode und scrolle zu „Die Arbeitsfläche".</p>
+        <div class="hero-actions no-print"><a class="btn btn-secondary" href="${base}methodenraum/methoden/">Alle 152 Methoden öffnen</a></div>
+      </div></section>
+      <section class="section"><div class="section-header"><p class="hero-kicker">56 Anwendungs- und Realisierungs-Canvas</p><h2>Für konkrete Module</h2><p>Zusätzlich zu den 152 Methoden-Canvas gibt es fachspezifische Varianten für einzelne Anwendungsmodule. Jede führt zu ihrer Methode.</p></div>
+        <div class="card-grid three">${modulCards}</div>
       </section>`;
   write('methodenraum/canvas/index.html', page({ base, title: 'Canvas-Prinzip | WÖMS | Wirkungsökonomie', desc: 'Das Canvas-Prinzip des WÖMS: 152 Methoden-Canvas und 56 Anwendungs-Canvas mit fünf Pflichtfeldern und Nichtkompensation.', type: 'Übersicht', body }));
 }
@@ -436,6 +455,9 @@ function journeys() {
         <h1>20 Standard-Workshop-Journeys</h1>
         <p class="hero-subtitle">Fertige Ablaufpläne, die Methoden zu einem Workshop verketten — für Team, Beratung und Coaching. Jede Journey ist ein roter Faden aus mehreren Methoden.</p>
       </div><aside class="card"><p class="card-kicker">Hinweis</p><p class="note">Die ausführlichen Moderationsleitfäden je Journey folgen fortlaufend; die Methoden dahinter sind bereits vollständig verlinkt.</p></aside></div></section>
+      <section class="section section-soft"><div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Methodensystem im Video</h2></div>
+        <figure style="max-width:900px;margin:0 auto"><video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4">Dein Browser unterstützt kein Video.</video></figure>
+      </section>
       <section class="section"><div class="card-grid three">${cards}</div></section>`;
   write('methodenraum/journeys/index.html', page({ base, title: '20 Workshop-Journeys | WÖMS | Wirkungsökonomie', desc: '20 Standard-Workshop-Journeys des WÖMS: fertige Ablaufpläne, die Methoden zu Workshops für Team, Beratung und Coaching verketten.', type: 'Übersicht', body }));
 }
