@@ -15,7 +15,7 @@
  * damit die Seiten automatisch im Hausstil erscheinen. Header wird von
  * scripts/site/normalize-site-header.mjs synchron gehalten.
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -410,4 +410,88 @@ function journeys() {
 }
 journeys();
 
-console.log(`Methodenraum generiert: ${nMethod} Methodenseiten + Hub + Gesamtbild + Canvas + Journeys.`);
+// --- 6) Referenzpräsentation zum Online-Durchklicken -----------------------
+function praesentation() {
+  const base = '../../';
+  const imgDir = resolve(ROOT, 'assets/img/methodenraum/praesentation');
+  const slides = existsSync(imgDir)
+    ? readdirSync(imgDir).filter((f) => /^slide-\d+\.jpg$/.test(f)).sort()
+    : [];
+  if (!slides.length) return 0;
+  const srcs = slides.map((f) => `${base}assets/img/methodenraum/praesentation/${f}`);
+  const style = `<style>
+    .deck{max-width:960px;margin:0 auto}
+    .deck-stage{position:relative;margin:0;background:#0f1526;border-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(20,26,46,.18);aspect-ratio:16/9}
+    .deck-stage img{display:block;width:100%;height:100%;object-fit:contain}
+    .deck-stage button.edge{position:absolute;top:0;height:100%;width:18%;border:0;background:transparent;cursor:pointer;color:#fff}
+    .deck-stage button.edge:hover{background:linear-gradient(90deg,rgba(0,0,0,.22),transparent)}
+    .deck-stage button.edge.next{right:0;background-position:right;transform:scaleX(-1)}
+    .deck-stage .arrow{font-size:2rem;line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5))}
+    .deck-bar{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1rem;flex-wrap:wrap}
+    .deck-bar button{font:inherit;padding:.5rem .9rem;border-radius:8px;border:1px solid var(--line,#d8d3c7);background:var(--card,#fff);cursor:pointer;color:inherit}
+    .deck-bar button:hover{border-color:#356B87}
+    .deck-counter{font-variant-numeric:tabular-nums;min-width:4.5rem;text-align:center}
+    .deck-dots{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;margin-top:.9rem}
+    .deck-dots button{width:11px;height:11px;padding:0;border-radius:50%;border:1px solid #9aa2b1;background:transparent;cursor:pointer}
+    .deck-dots button[aria-current="true"]{background:#356B87;border-color:#356B87}
+    @media (max-width:640px){.deck-stage button.edge{width:24%}}
+  </style>`;
+  const body = `      <section class="hero"><div class="hero-grid"><div>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}methodenraum.html">Methodenraum</a> / Präsentation</nav>
+        <p class="hero-kicker">WÖMM &amp; WÖMS · Referenzpräsentation</p>
+        <h1>Zum Durchklicken</h1>
+        <p class="hero-subtitle">Managementmodell, Realisierungsarchitektur, Methodenlandschaft und Canvas-Prinzip — ${slides.length} Folien. Mit den Pfeiltasten ← → blättern, oder unten die Punkte.</p>
+      </div><aside class="card"><p class="card-kicker">Auch als Datei</p><div class="hero-actions no-print"><a class="btn btn-secondary" href="${base}assets/downloads/woemm-woems-praesentation-2.0.pdf">PDF herunterladen</a></div></aside></div></section>
+      <section class="section">
+        ${style}
+        <div class="deck">
+          <figure class="deck-stage">
+            <img id="deck-img" src="${srcs[0]}" alt="Folie 1 von ${slides.length}">
+            <button class="edge prev" type="button" aria-label="Vorige Folie"><span class="arrow">‹</span></button>
+            <button class="edge next" type="button" aria-label="Nächste Folie"><span class="arrow">‹</span></button>
+          </figure>
+          <div class="deck-bar">
+            <button id="deck-prev" type="button">← Zurück</button>
+            <span class="deck-counter"><span id="deck-cur">1</span> / ${slides.length}</span>
+            <button id="deck-next" type="button">Weiter →</button>
+            <button id="deck-full" type="button" aria-label="Vollbild">⤢ Vollbild</button>
+          </div>
+          <div class="deck-dots" id="deck-dots" role="tablist" aria-label="Folien"></div>
+        </div>
+        <script>
+        (function(){
+          var S=${JSON.stringify(srcs)}, i=0;
+          var img=document.getElementById('deck-img'), cur=document.getElementById('deck-cur'),
+              dots=document.getElementById('deck-dots'), stage=document.querySelector('.deck-stage');
+          S.forEach(function(_,k){var b=document.createElement('button');b.type='button';
+            b.setAttribute('role','tab');b.setAttribute('aria-label','Folie '+(k+1));
+            b.addEventListener('click',function(){go(k)});dots.appendChild(b);});
+          function go(n){i=(n+S.length)%S.length;img.src=S[i];img.alt='Folie '+(i+1)+' von '+S.length;
+            cur.textContent=i+1;
+            [].forEach.call(dots.children,function(d,k){d.setAttribute('aria-current',k===i?'true':'false')});}
+          document.getElementById('deck-prev').onclick=function(){go(i-1)};
+          document.getElementById('deck-next').onclick=function(){go(i+1)};
+          document.querySelector('.edge.prev').onclick=function(){go(i-1)};
+          document.querySelector('.edge.next').onclick=function(){go(i+1)};
+          document.getElementById('deck-full').onclick=function(){
+            if(!document.fullscreenElement){(stage.requestFullscreen||stage.webkitRequestFullscreen).call(stage);}
+            else{document.exitFullscreen();}};
+          document.addEventListener('keydown',function(e){
+            if(e.key==='ArrowRight'||e.key==='PageDown'){go(i+1);}
+            else if(e.key==='ArrowLeft'||e.key==='PageUp'){go(i-1);}});
+          go(0);
+        })();
+        </script>
+      </section>`;
+  write('methodenraum/praesentation/index.html', page({
+    base,
+    title: 'Referenzpräsentation zum Durchklicken | WÖMM & WÖMS | Wirkungsökonomie',
+    desc: `Die kombinierte WÖMM- & WÖMS-Referenzpräsentation (${slides.length} Folien) online durchklicken — Managementmodell, Realisierungsarchitektur, Methodenlandschaft und Canvas-Prinzip.`,
+    type: 'Präsentation',
+    body,
+  }));
+  return slides.length;
+}
+const nSlides = praesentation();
+
+console.log(`Methodenraum generiert: ${nMethod} Methodenseiten + Hub + Gesamtbild + Canvas + Journeys + Präsentation (${nSlides} Folien).`);
