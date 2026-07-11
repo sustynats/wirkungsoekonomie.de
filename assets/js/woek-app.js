@@ -201,19 +201,14 @@
     startProgress(path);
 
     try {
-      const response = await fetch(`${apiBase}${path}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-WOEK-Client-ID": clientId,
-          ...communityAuthHeaders()
-        },
-        body: JSON.stringify(body)
+      const payload = await window.WoekAiClient.requestJson({
+        apiBase,
+        path,
+        body,
+        clientId,
+        headers: communityAuthHeaders(),
+        unavailableMessage
       });
-      const payload = await response.json().catch(() => undefined);
-      if (!response.ok || !payload?.ok) {
-        throw new Error(payload?.error || unavailableMessage);
-      }
       render(payload, body, path);
     } catch (error) {
       renderNotice(i18n("Prüfung gerade nicht möglich", "Check currently unavailable"), error?.message || unavailableMessage);
@@ -746,23 +741,17 @@
     statusText.textContent = i18n("Wird gespeichert...", "Saving...");
 
     try {
-      const response = await fetch(`${apiBase}/api/feedback`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-WOEK-Client-ID": clientId,
-          ...communityAuthHeaders()
-        },
-        body: JSON.stringify({
+      await window.WoekAiClient.sendFeedback({
+        apiBase,
+        clientId,
+        headers: communityAuthHeaders(),
+        unavailableMessage: feedbackUnavailableMessage,
+        feedback: {
           ...feedbackContext,
           rating,
           sources: normalizeFeedbackSources(feedbackContext.sources)
-        })
+        }
       });
-      const payload = await response.json().catch(() => undefined);
-      if (!response.ok || !payload?.ok) {
-        throw new Error(feedbackUnavailableMessage);
-      }
       statusText.textContent = rating === "down" ? i18n("Danke. Diese Antwort landet im Review.", "Thanks. This answer will go into review.") : i18n("Danke. Bewertung gespeichert.", "Thanks. Rating saved.");
     } catch (error) {
       buttons.forEach((button) => { button.disabled = false; });

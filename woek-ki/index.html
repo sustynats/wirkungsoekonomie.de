@@ -532,6 +532,7 @@
   </div>
 </footer>
     <script src="../assets/js/main.js?v=20260628-woek-feedback"></script>
+    <script src="../assets/js/woek-ai-client.js?v=20260711-ia-infra"></script>
     <script>
       const form = document.querySelector("#woek-ai-form");
       const question = document.querySelector("#woek-ai-question");
@@ -891,18 +892,12 @@
         feedbackStatus.textContent = "Wird gespeichert...";
 
         try {
-          const response = await fetch(feedbackUrl, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "X-WOEK-Client-ID": getClientId()
-            },
-            body: JSON.stringify({ ...currentFeedback, rating })
+          await window.WoekAiClient.sendFeedback({
+            feedbackUrl,
+            clientId: getClientId(),
+            unavailableMessage: feedbackUnavailableMessage,
+            feedback: { ...currentFeedback, rating }
           });
-          const data = await response.json().catch(() => undefined);
-          if (!response.ok || !data?.ok) {
-            throw new Error(feedbackUnavailableMessage);
-          }
           feedbackStatus.textContent = rating === "down" ? "Danke. Diese Antwort landet im Review." : "Danke. Bewertung gespeichert.";
         } catch (error) {
           feedbackUp.disabled = false;
@@ -983,18 +978,12 @@
           }
 
           startProgress();
-          const response = await fetch(apiUrl, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "X-WOEK-Client-ID": getClientId()
-            },
-            body: JSON.stringify({ question: value }),
+          const data = await window.WoekAiClient.askWoek({
+            url: apiUrl,
+            question: value,
+            clientId: getClientId(),
+            unavailableMessage
           });
-          const data = await response.json().catch(() => undefined);
-          if (!response.ok || !data.ok) {
-            throw new Error(unavailableMessage);
-          }
 
           placeholder.hidden = true;
           const renderedAnswer = renderAnswerPayload(data);

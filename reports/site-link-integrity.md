@@ -1,0 +1,372 @@
+# Site Link Integrity
+Stand: generiert aus dem aktuellen Arbeitsbaum
+- HTML-Seiten: 4850
+- Interne Broken Links: 5256
+- Waisenseiten ohne eingehende Links: 1187
+- Doppelte Seitentitel: 242
+## Broken Links
+- /akademie/lernpfad.html -> /quellenarchiv/
+- /akademie/pruefungen.html -> /quellenarchiv/
+- /akademie/studienstruktur.html -> /quellenarchiv/
+- /akademie/weiterbildung.html -> /quellenarchiv/
+- /akademie/wirkungsfinanzpolitik/ -> /quellenarchiv/
+- /akademie/wirkungsradar/ -> /quellenarchiv/
+- /akademie.html -> /quellenarchiv/
+- /anwendungen/scanner.html -> /quellenarchiv/
+- /anwendungen.html -> /quellenarchiv/
+- /app/ -> /quellenarchiv/
+- /begriffe/abfallhierarchie/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/abfallhierarchie/ -> /quellenarchiv/
+- /begriffe/abregelung/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/abregelung/ -> /quellenarchiv/
+- /begriffe/ac-laden/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/ac-laden/ -> /quellenarchiv/
+- /begriffe/ad-hoc-laden/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/ad-hoc-laden/ -> /quellenarchiv/
+- /begriffe/adam-smith/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/adam-smith/ -> /quellenarchiv/
+- /begriffe/adoe/ -> /Definitionsmaster WÖk v1/
+- /begriffe/adoe/ -> /quellenarchiv/
+- /begriffe/adverse-selection/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/adverse-selection/ -> /quellenarchiv/
+- /begriffe/advocacy-organisation/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/advocacy-organisation/ -> /quellenarchiv/
+- /begriffe/aeussere-loops/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/aeussere-loops/ -> /quellenarchiv/
+- /begriffe/afd-ideologie/ -> /quellenarchiv/
+- /begriffe/affekt/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/affekt/ -> /quellenarchiv/
+- /begriffe/affektheuristik/ -> /quellenarchiv/
+- /begriffe/agenda-2030/ -> /quellenarchiv/
+- /begriffe/agenda-setting/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/agenda-setting/ -> /quellenarchiv/
+- /begriffe/ai-act/ -> /quellenarchiv/
+- /begriffe/akkumulation/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/akkumulation/ -> /quellenarchiv/
+- /begriffe/akkumulator/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/akkumulator/ -> /quellenarchiv/
+- /begriffe/alan-watts-daoismus/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/alan-watts-daoismus/ -> /quellenarchiv/
+- /begriffe/alarm-frame/ -> /warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt/
+- /begriffe/alarm-frame/ -> /quellenarchiv/
+- /begriffe/algorithmische-fairness/ -> /quellenarchiv/
+- /begriffe/algorithmische-verstaerkung/ -> /quellenarchiv/
+- /begriffe/allgemeines-gleichgewicht/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/allgemeines-gleichgewicht/ -> /quellenarchiv/
+- /begriffe/allmendeproblem/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/allmendeproblem/ -> /quellenarchiv/
+- /begriffe/allokation/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/allokation/ -> /quellenarchiv/
+- /begriffe/alltag-2035/ -> /manifest-der-wirkungsoekonomie/
+- /begriffe/alltag-2035/ -> /t-sroi-whitepaper/
+- /begriffe/alltag-2035/ -> /quellenarchiv/
+- /begriffe/alltagsladen/ -> /Definitionsmaster WÖk v1/
+- /begriffe/alltagsladen/ -> /quellenarchiv/
+- /begriffe/alltagsrassismus/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/alltagsrassismus/ -> /quellenarchiv/
+- /begriffe/amartya-sen/ -> /quellenarchiv/
+- /begriffe/amathia/ -> /quellenarchiv/
+- /begriffe/ambiguitaetsintoleranz/ -> /quellenarchiv/
+- /begriffe/anaerobe-vergaerung/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/anaerobe-vergaerung/ -> /quellenarchiv/
+- /begriffe/anarchokapitalismus/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/anarchokapitalismus/ -> /quellenarchiv/
+- /begriffe/angstappell/ -> /quellenarchiv/
+- /begriffe/ankereffekt/ -> /quellenarchiv/
+- /begriffe/anlagenpass/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/anlagenpass/ -> /quellenarchiv/
+- /begriffe/anpassungskapazitaet/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/anpassungskapazitaet/ -> /quellenarchiv/
+- /begriffe/anschlussfaehigkeit/ -> /warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt/
+- /begriffe/anschlussfaehigkeit/ -> /quellenarchiv/
+- /begriffe/anschlusskosten/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/anschlusskosten/ -> /quellenarchiv/
+- /begriffe/anschlussleistung/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/anschlussleistung/ -> /quellenarchiv/
+- /begriffe/anti-slapp-richtlinie/ -> /quellenarchiv/
+- /begriffe/antidiskriminierung/ -> /quellenarchiv/
+- /begriffe/antikollisionssystem/ -> /Definitionsmaster WÖk v1/
+- /begriffe/antikollisionssystem/ -> /quellenarchiv/
+- /begriffe/antisemitismus/ -> /quellenarchiv/
+- /begriffe/antiziganismus/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/antiziganismus/ -> /quellenarchiv/
+- /begriffe/anwendungskontext/ -> /Definitionsmaster WÖk v1/
+- /begriffe/anwendungskontext/ -> /quellenarchiv/
+- /begriffe/arbeiten-arendt/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/arbeiten-arendt/ -> /quellenarchiv/
+- /begriffe/arbeitsanreiz/ -> /Definitionsmaster WÖk v1/
+- /begriffe/arbeitsanreiz/ -> /quellenarchiv/
+- /begriffe/arbeitspreis/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/arbeitspreis/ -> /quellenarchiv/
+- /begriffe/arbitrageur/ -> /quellenarchiv/
+- /begriffe/archetyp/ -> /Führender Begriffsleitfaden der Wirkungsökonomie/
+- /begriffe/archetyp/ -> /BASF Polyamid Beispiel von der CSRD zur Produktscorecard/
+- /begriffe/archetyp/ -> /T-SROI-Whitepaper/
+- /begriffe/archetyp/ -> /quellenarchiv/
+- /begriffe/archetypen/ -> /Definitionsmaster WÖk v1/
+- /begriffe/archetypen/ -> /quellenarchiv/
+- /begriffe/art-11-aeuv-umweltintegrationsprinzip/ -> /quellenarchiv/
+- /begriffe/art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip/ -> /quellenarchiv/
+- /begriffe/art-2-euv-werte-der-europaeischen-union/ -> /quellenarchiv/
+- /begriffe/art-20a-gg/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/art-20a-gg/ -> /quellenarchiv/
+- /begriffe/art-3-euv-nachhaltige-entwicklung-europas/ -> /quellenarchiv/
+- /begriffe/art-37-eu-grundrechtecharta-umweltschutz/ -> /quellenarchiv/
+- /begriffe/artikel-20a-grundgesetz/ -> /quellenarchiv/
+- /begriffe/assurance/ -> /CSRD und Prüfungsstandards/
+- /begriffe/assurance/ -> /quellenarchiv/
+- /begriffe/astroturfing/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/astroturfing/ -> /quellenarchiv/
+- /begriffe/atlas-network/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/atlas-network/ -> /quellenarchiv/
+- /begriffe/attributionsforschung/ -> /quellenarchiv/
+- /begriffe/audit/ -> /Definitionsmaster WÖk v1/
+- /begriffe/audit/ -> /quellenarchiv/
+- /begriffe/aufmerksamkeit/ -> /Glossar-Architektur Wirkmechanismen/
+- /begriffe/aufmerksamkeit/ -> /quellenarchiv/
+- /begriffe/aufmerksamkeitsoekonomie/ -> /Glossar-Architektur Wirkmechanismen/
+- ... 5136 weitere
+## Waisenseiten
+- /afd-programm/
+- /anwendungen/
+- /ausprobieren/
+- /begriffe/6-kondratieff/
+- /begriffe/anwendungskontext-2/
+- /begriffe/biodiversitaet-2/
+- /begriffe/blindleistung-2/
+- /begriffe/c2c/
+- /begriffe/care-als-wirkleistung/
+- /begriffe/csddd-2/
+- /begriffe/csrd-2/
+- /begriffe/datenqualitaetsklasse/
+- /begriffe/demokratie-2/
+- /begriffe/diskursfaehigkeit-2/
+- /begriffe/dnsh-2/
+- /begriffe/dnsh/
+- /begriffe/dosis-2/
+- /begriffe/dosis-wirkungs-beziehung-2/
+- /begriffe/dpp-2/
+- /begriffe/dpp/
+- /begriffe/eba-esg-risikomanagement/
+- /begriffe/ecg/
+- /begriffe/efrag-2/
+- /begriffe/epd-2/
+- /begriffe/erwuenschte-wirkung-2/
+- /begriffe/esg-2/
+- /begriffe/espr-2/
+- /begriffe/esrs-2/
+- /begriffe/eu-taxonomie-2/
+- /begriffe/foerdercontrolling-2/
+- /begriffe/foerderlogik-2/
+- /begriffe/fossiler-lock-in/
+- /begriffe/frame-2/
+- /begriffe/gesellschaftliche-infrastruktur/
+- /begriffe/ghg-protocol-2/
+- /begriffe/gri-2/
+- /begriffe/h2-ready/
+- /begriffe/handlung-2/
+- /begriffe/hybride-kriegsfuehrung/
+- /begriffe/illusory-truth-effect/
+- /begriffe/illusory-truth-effekt/
+- /begriffe/ilo-2/
+- /begriffe/ingroup-outgroup-bias/
+- /begriffe/ipbes-2/
+- /begriffe/ipcc-2/
+- /begriffe/iro-impacts-risks-opportunities/
+- /begriffe/kapital-2/
+- /begriffe/kausalitaet-zurechnung/
+- /begriffe/kommunikation-und-wirklichkeitskonstruktion/
+- /begriffe/kontraindikation-2/
+- /begriffe/lca-2/
+- /begriffe/leistung-2/
+- /begriffe/masstabskrise/
+- /begriffe/medienqualitaet-2/
+- /begriffe/motivated-reasoning/
+- /begriffe/mpd/
+- /begriffe/nace-2/
+- /begriffe/narrativ-2/
+- /begriffe/nebenwirkung-2/
+- /begriffe/negative-wirkung-2/
+- /begriffe/neoklassische-foerderlogik-2/
+- /begriffe/netto-wirkung-2/
+- /begriffe/nicht-kompensation-2/
+- /begriffe/nicht-kompensation/
+- /begriffe/normativer-massstab-2/
+- /begriffe/normativer-wert-2/
+- /begriffe/nwi-2/
+- /begriffe/oekosystemleistungen/
+- /begriffe/outcome-2/
+- /begriffe/output-2/
+- /begriffe/pai-principal-adverse-impacts/
+- /begriffe/pcf/
+- /begriffe/physisches-klimarisiko/
+- /begriffe/planet-2/
+- /begriffe/praevention-als-wirkleistung-2/
+- /begriffe/programmatik-praxis-luecke-2/
+- /begriffe/prostitution/
+- /begriffe/rebound-effekt-2/
+- /begriffe/referenzrahmen/
+- /begriffe/reparaturwohlstand-2/
+- /begriffe/resilienz-2/
+- /begriffe/reverse-merit-order-2/
+- /begriffe/rueckkopplung-2/
+- /begriffe/scheinleistung-2/
+- /begriffe/scheinwohlstand-2/
+- /begriffe/scorecards-2/
+- /begriffe/sex-work/
+- /begriffe/sfdr-2/
+- /begriffe/sozialer-infrastruktur/
+- /begriffe/synthetischer-kraftstoff/
+- /begriffe/systemischer-wert-2/
+- /begriffe/systemwirkung/
+- /begriffe/t-sroi-2/
+- /begriffe/t-sroi-3/
+- /begriffe/tiere-nicht-menschliches-leben/
+- /begriffe/tonalitaet/
+- /begriffe/transitionsrisiko/
+- /begriffe/unterlassen-2/
+- /begriffe/unternehmertypen-nach-jochen-roepke/
+- /begriffe/verlustleistung-2/
+- /begriffe/wechselwirkung-2/
+- /begriffe/westg/
+- /begriffe/who-2/
+- /begriffe/wirkleistung-2/
+- /begriffe/wirkmechanismus-2/
+- /begriffe/wirkstoff-2/
+- /begriffe/wirkung-2/
+- /begriffe/wirkung-dritter-ordnung-2/
+- /begriffe/wirkung-dritter-ordnung-3/
+- /begriffe/wirkung-erster-ordnung-2/
+- /begriffe/wirkung-erster-ordnung-3/
+- /begriffe/wirkung-zweiter-ordnung-2/
+- /begriffe/wirkung-zweiter-ordnung-3/
+- /begriffe/wirkungsanalyse-2/
+- /begriffe/wirkungsanalyse/
+- /begriffe/wirkungsarchitektur-2/
+- /begriffe/wirkungsbericht-2/
+- /begriffe/wirkungsbericht/
+- /begriffe/wirkungsblindheit-2/
+- /begriffe/wirkungscontrolling-2/
+- /begriffe/wirkungsdaten-2/
+- /begriffe/wirkungsfaehigkeit/
+- /begriffe/wirkungsfinanzierung/
+- /begriffe/wirkungsgrad-2/
+- /begriffe/wirkungskennzahl/
+- /begriffe/wirkungsklasse-2/
+- /begriffe/wirkungslenkung-2/
+- /begriffe/wirkungsluecke-2/
+- /begriffe/wirkungsmanagement-2/
+- /begriffe/wirkungsmonitoring-2/
+- /begriffe/wirkungsnachweis-2/
+- /begriffe/wirkungsoekonomie-2/
+- /begriffe/wirkungsordnung/
+- /begriffe/wirkungspflicht-eigentum/
+- /begriffe/wirkungspotenzial-2/
+- /begriffe/wirkungspotenzialmanagement-2/
+- /begriffe/wirkungspraxis-2/
+- /begriffe/wirkungsprofil-2/
+- /begriffe/wirkungspruefung-2/
+- /begriffe/wirkungsrat-2/
+- /begriffe/wirkungsraum-2/
+- /begriffe/wirkungsresilienz-2/
+- /begriffe/wirkungsrisiko-2/
+- /begriffe/wirkungsrisikomanagement-2/
+- /begriffe/wirkungsrueckkopplung-2/
+- /begriffe/wirkungssimulation-2/
+- /begriffe/wirkungstraeger-2/
+- /begriffe/wirkungswahrheit-2/
+- /begriffe/wirkungswashing-2/
+- /begriffe/wirkungswohlstand-2/
+- /begriffe/wirkungswohlstand/
+- /begriffe/wirkungszeit-2/
+- /begriffe/wirkungszeit/
+- /begriffe/woek-id-2/
+- /begriffe/woek-ids-2/
+- /begriffe/wohlstand-2/
+- /begriffe/wok/
+- /begriffe/zivilgesellschaftliche-infrastruktur/
+- /bibliothek/agenda2030-sdg-esg-handout/
+- /bibliothek/apfel-t-shirt-wirkung-im-preis/
+- ... 1027 weitere
+## Doppelte Seitentitel
+- Weiterleitung: /afd-programm/, /akademie/, /anwendungen/, /ausprobieren/, /blog/, /buch/, /datenschutz/, /fa-qs-und-links/, /funktionsweise.html, /impressum/, /inhalt-und-strategie/, /leitbild/, /manifest/, /mitmachen/, /modell/, /natalie-weber.html, /scorecard-dashboard/, /sdg-und-sdg-plus/, /teil-i-grundlagen/, /teil-ii-methoden-and-instrumente/, /teil-iii-anwendung-and-praxis/, /teil-iv-transformation-and-zukunft/, /ueber-die-w-oek/, /ueber-die-woek/, /ueber/, /veroeffentlichungen/, /w-est-g-journal/, /wirkung-werte-journal/, /wirkungsoekonomie/
+- Archivierte Kopie - weitergeleitet: /assets/downloads/website-1-0-release/WOeK_Rang24_Gesamtpaket_Alle_Inhalte_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Master-Releasebericht_Website-1.0_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Masterbibliothek_Architektur_v1.0 2.html, /assets/downloads/website-1-0-release/WOeK_Rang24_Offene-Punkte-und-QA-Risiken_v1.0 2.html, /referenz/teil-15-internationale-ordnung-globalisierung-und-geopolitik/index 2.html, /referenz/teil-17-kritik-missverstaendnisse-und-ideologische-projektionen/index 2.html, /wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/politische-anschlussfaehigkeit/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommen/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/dossier/index 2.html, /wirkungsfelder/arbeit-einkommen/wirkungsfonds-dividende/dossier/index 2.html
+- DNSH / Do No Significant Harm - Weiterleitung zum Glossarbegriff DNSH – Do No Significant Harm: /begriffe/dnsh-2/, /begriffe/dnsh/
+- Lokale Energie als Wirkungsinfrastruktur | Glossar der Wirkungsökonomie: /begriffe/lokale-energie-als-wirkungsinfrastruktur/, /begriffe/oeffentlichkeit-als-wirkungsraum/
+- Nicht-Kompensation - Weiterleitung zum Glossarbegriff Nichtkompensationsprinzip: /begriffe/nicht-kompensation-2/, /begriffe/nicht-kompensation/
+- Scorecards - Weiterleitung zum Glossarbegriff Scorecard: /begriffe/scorecards-2/, /begriffe/scorecards/
+- Wirkung dritter Ordnung - Weiterleitung zum Glossarbegriff Wirkung dritter Ordnung: /begriffe/wirkung-dritter-ordnung-2/, /begriffe/wirkung-dritter-ordnung-3/
+- Wirkung erster Ordnung - Weiterleitung zum Glossarbegriff Wirkung erster Ordnung: /begriffe/wirkung-erster-ordnung-2/, /begriffe/wirkung-erster-ordnung-3/
+- Wirkung zweiter Ordnung - Weiterleitung zum Glossarbegriff Wirkung zweiter Ordnung: /begriffe/wirkung-zweiter-ordnung-2/, /begriffe/wirkung-zweiter-ordnung-3/
+- Wirkungsanalyse - Weiterleitung zum Glossarbegriff Wirkungsbewertung: /begriffe/wirkungsanalyse-2/, /begriffe/wirkungsanalyse/
+- Wirkungsbericht - Weiterleitung zum Glossarbegriff Wirkungstransparenzbericht: /begriffe/wirkungsbericht-2/, /begriffe/wirkungsbericht/
+- Wirkungsmanagement - Weiterleitung zum Glossarbegriff Impact-Management: /begriffe/wirkungsmanagement-2/, /begriffe/wirkungsmanagement/
+- Wirkungswohlstand - Weiterleitung zum Glossarbegriff Neue Ordnung des Wohlstands: /begriffe/wirkungswohlstand-2/, /begriffe/wirkungswohlstand/
+- Wirkungszeit - Weiterleitung zum Glossarbegriff Zeitwirkung: /begriffe/wirkungszeit-2/, /begriffe/wirkungszeit/
+- Weiterleitung - Wirkungsökonomie: /bibliothek/agenda2030-sdg-esg-handout/, /bibliothek/apfel-t-shirt-wirkung-im-preis/, /bibliothek/beispiel-zange-sdg-esrs-fussnoten/, /bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/, /bibliothek/demokratie-schuetzen/, /bibliothek/die-neue-ordnung-des-wohlstands/, /bibliothek/energiepolitik-2026/, /bibliothek/groesster-denkfehler-klimadebatte/, /bibliothek/handbuch-wirkungskompetenz/, /bibliothek/landwirtschaft-wirkungsoekonomie/, /bibliothek/leitbild-deutschland-2030-woek/, /bibliothek/prozessarchitektur-wirkungsoekonomie/, /bibliothek/social-taxonomy-wirkungsoekonomie/, /bibliothek/t-sroi-standard-impact-controlling/, /bibliothek/wirkung-statt-kapital/, /bibliothek/wirkungseinkommensteuergesetz-westg/, /bibliothek/woek-master-items-v1-2/, /bibliothek/working-paper-wohnungsmarkt/, /blog/folgencheck-statt-faktencheck-democracy-intelligence.html, /blog/wirkungfoerderung-bildung-statt-defizitverwaltung.html, /erleben/wirkungssteuer-beispiele/, /suche/, /verstehen/regularien-standards/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/buergerbeteiligung-wirkungsdemokratie/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/lobbyismus-machtkonzentration/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/politische-wirkungspruefung/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/verwaltung-rechtsschutz-korrektur/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkung-als-rechtsprinzip/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungseinkommensteuer-westg/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungshaushalt/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsrat/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungssteuergesetz-wstg/, /werkstatt/dossiers/staat-recht-demokratie/dossiers/wirkungsumsatzsteuer-rechtsrahmen/
+- Wirkungsorientierte Unternehmensführung: /blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html, /docs/wirtschaft-unternehmen/source-html/detail_wirkungsorientierte_unternehmensfuehrung.html
+- Unternehmen als Wirkungssysteme: /docs/wirtschaft-unternehmen/source-html/detail_unternehmen_als_wirkungssysteme.html, /fuer/unternehmen.html
+- Von der Wissensgesellschaft zur Wirkungsgesellschaft | Wirkungsökonomie: /dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/, /verstehen/wissensgesellschaft-wirkungsgesellschaft/
+- Wirkungsökonomie erleben - Produkte, Medien, Risiko und Wirkung: /erleben.html, /erleben/
+- Weiterleitung zum vollständigen Glossar - Wirkungsökonomie: /glossar.html, /glossar/
+- Gesamtdossier | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/gesamtdossier/, /portale/migration-vielfalt/gesamtdossier/, /portale/sicherheit-resilienz/gesamtdossier/, /portale/transformation-uebergaenge-implementierung/gesamtdossier/
+- Konzeptpapier | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/konzeptpapier/, /portale/migration-vielfalt/konzeptpapier/, /portale/sicherheit-resilienz/konzeptpapier/, /portale/transformation-uebergaenge-implementierung/konzeptpapier/
+- Politische Anschlussfähigkeit | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/politische-anschlussfaehigkeit/, /portale/internationale-ordnung-globalisierung-geopolitik/politische-anschlussfaehigkeit/, /portale/kritik-missverstaendnisse-schutzarchitektur/politische-anschlussfaehigkeit/, /portale/migration-vielfalt/politische-anschlussfaehigkeit/, /portale/sicherheit-resilienz/politische-anschlussfaehigkeit/, /portale/transformation-uebergaenge-implementierung/politische-anschlussfaehigkeit/, /portale/wirkungsakademie-fachbibliothek/politische-anschlussfaehigkeit/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/politische-anschlussfaehigkeit/, /portale/zukunftsbilder-wirkungswohlstand/politische-anschlussfaehigkeit/
+- Quellen und Glossarlinks | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/quellen-glossar/, /portale/internationale-ordnung-globalisierung-geopolitik/quellen-glossar/, /portale/kritik-missverstaendnisse-schutzarchitektur/quellen-glossar/, /portale/migration-vielfalt/quellen-glossar/, /portale/sicherheit-resilienz/quellen-glossar/, /portale/transformation-uebergaenge-implementierung/quellen-glossar/, /portale/wirkungsakademie-fachbibliothek/quellen-glossar/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/quellen-glossar/, /portale/zukunftsbilder-wirkungswohlstand/quellen-glossar/
+- SDG-/SDG+-Block | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/sdg-sdgplus/, /portale/kritik-missverstaendnisse-schutzarchitektur/sdg-sdgplus/, /portale/transformation-uebergaenge-implementierung/sdg-sdgplus/, /portale/wirkungsakademie-fachbibliothek/sdg-sdgplus/
+- Toolkarten | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/toolkarten/, /portale/internationale-ordnung-globalisierung-geopolitik/toolkarten/, /portale/kritik-missverstaendnisse-schutzarchitektur/toolkarten/, /portale/migration-vielfalt/toolkarten/, /portale/sicherheit-resilienz/toolkarten/, /portale/transformation-uebergaenge-implementierung/toolkarten/, /portale/wirkungsakademie-fachbibliothek/toolkarten/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/toolkarten/, /portale/zukunftsbilder-wirkungswohlstand/toolkarten/
+- Wirkungsindikatoren | Wirkungsökonomie: /portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsindikatoren/, /portale/internationale-ordnung-globalisierung-geopolitik/wirkungsindikatoren/, /portale/kritik-missverstaendnisse-schutzarchitektur/wirkungsindikatoren/, /portale/migration-vielfalt/wirkungsindikatoren/, /portale/transformation-uebergaenge-implementierung/wirkungsindikatoren/, /portale/wirkungsakademie-fachbibliothek/wirkungsindikatoren/, /portale/wissen-wissenschaft-forschung-wirkungsinnovation/wirkungsindikatoren/, /portale/zukunftsbilder-wirkungswohlstand/wirkungsindikatoren/
+- Publikationsübersicht | Wirkungsökonomie: /portale/migration-vielfalt/bestands-und-nachlieferliste/, /portale/sicherheit-resilienz/publikationsuebersicht/
+- Downloads | Wirkungsökonomie: /portale/migration-vielfalt/downloads/, /portale/sicherheit-resilienz/downloads/
+- SDG-/SDG+-Bezug | Wirkungsökonomie: /portale/migration-vielfalt/sdg-sdgplus/, /portale/sicherheit-resilienz/sdg-sdgplus/
+- Version 1.1 - Begriffliche Präzisierung und Referenzordnung - nicht öffentlich gelistet: /referenz/version-1-1/, /referenz/version-1-1/index 2.html
+- SDG-/SDG+-Referenzrahmen | Wirkungsökonomie: /referenzrahmen/sdgs-sdgplus/, /sdg-sdgplus/, /verstehen/sdgs-sdgplus/
+- Verstehen | Wirkungsökonomie: /verstehen/, /verstehen/index 2.html
+- SDGs und Agenda 2030 als globaler Referenzrahmen | Wirkungsökonomie: /verstehen/sdgs-sdgplus/agenda-2030/, /verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/
+- SDG+ als Erweiterung der Wirkungsökonomie | Wirkungsökonomie: /verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/, /verstehen/sdgs-sdgplus/sdgplus/
+- SDG-Unterziele global, Europa und Deutschland | Wirkungsökonomie: /verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/, /verstehen/sdgs-sdgplus/unterziele/
+- Detailkonzept Reverse Merit Order | Wirkungsökonomie: /werkzeuge/impact-controlling/detailkonzepte/reverse-merit-order/, /wirkungsfelder/produkte-konsum/detailkonzepte/reverse-merit-order/
+- Einzeldossier Reverse Merit Order | Wirkungsökonomie: /werkzeuge/impact-controlling/dossiers/reverse-merit-order/, /wirkungsfelder/produkte-konsum/dossiers/reverse-merit-order/
+- T-SROI | Wirkungsökonomie: /werkzeuge/impact-controlling/t-sroi/, /werkzeuge/t-sroi/
+- Bürger:innenfonds, Wirkungsrente und Teilhabe am Kapital | Finanzsystem &amp; Kapital: /wirkungsfelder/finanzsystem-kapital/buergerinnenfonds-wirkungsrente-kapitalteilhabe/, /wirkungsfelder/finanzsystem-kapital/buergerinnenfonds/
+- ESG-Ratings, Börsen und Impact Exchange | Finanzsystem &amp; Kapital: /wirkungsfelder/finanzsystem-kapital/esg-ratings-boersen-impact-exchange/, /wirkungsfelder/finanzsystem-kapital/esg-ratings-impact-exchange/
+- Creator:innen, Hosts und Influencer-Verantwortung | Medien &amp; Öffentlichkeit: /wirkungsfelder/medien-oeffentlichkeit/creator-hosts-influencer/, /wirkungsfelder/medien-oeffentlichkeit/creator-hosts/
+- Plattformen, Algorithmen und Reichweitenlogik | Medien &amp; Öffentlichkeit: /wirkungsfelder/medien-oeffentlichkeit/plattformen-algorithmen/, /wirkungsfelder/medien-oeffentlichkeit/plattformen-social-media/
+- Sprache, Framing und Diskurskultur | Medien &amp; Öffentlichkeit: /wirkungsfelder/medien-oeffentlichkeit/sprache-diskurskultur/, /wirkungsfelder/medien-oeffentlichkeit/sprache-framing-diskurskultur/
+- Antwort-Playbooks | Wirkungsökonomie: /wirkungsradar/antwort-playbooks/, /wirkungsradar/host-playbook/
+- Moderationskarten | Wirkungsökonomie: /wirkungsradar/antwort-playbooks/moderationskarten/, /wirkungsradar/host-playbook/moderationskarten/
+- Debattenkarten | Debatten-Kompass: /wirkungsradar/debattenkarten/, /wirkungsradar/live/
+- 15-Minuten-Stadt oder Klimakäfig? | Debatten-Kompass: /wirkungsradar/detail/15-minuten-stadt-oder-klimakaefig/, /wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/
+- Die AfD ist für den kleinen Mann da? | Debatten-Kompass: /wirkungsradar/detail/afd-kleiner-mann-wohlstandsgrundlagen/, /wirkungsradar/live/afd-kleiner-mann-wohlstandsgrundlagen/
+- Aktienrente löst die Rente? | Debatten-Kompass: /wirkungsradar/detail/aktienrente-loest-die-rente/, /wirkungsradar/live/aktienrente-loest-die-rente/
+- Algorithmen sind neutral? | Debatten-Kompass: /wirkungsradar/detail/algorithmen-sind-neutral/, /wirkungsradar/live/algorithmen-sind-neutral/
+- Altparteien? | Debatten-Kompass: /wirkungsradar/detail/altparteien/, /wirkungsradar/live/altparteien/
+- Diese Aussage wurde zusammengeführt · Debatten-Kompass: /wirkungsradar/detail/altparteiendiktatur/, /wirkungsradar/detail/die-boesen-reichen/, /wirkungsradar/detail/fuenfzehn-minuten-stadt-klimakaefig/, /wirkungsradar/detail/genderismus/, /wirkungsradar/detail/leistungstraeger-werden-ausgepresst/, /wirkungsradar/detail/masseneinwanderung/, /wirkungsradar/detail/medien-zensur/, /wirkungsradar/detail/remigration/, /wirkungsradar/detail/verfassungsschutz-regierungsschutz/, /wirkungsradar/live/altparteiendiktatur/, /wirkungsradar/live/die-boesen-reichen/, /wirkungsradar/live/fuenfzehn-minuten-stadt-klimakaefig/, /wirkungsradar/live/genderismus/, /wirkungsradar/live/leistungstraeger-werden-ausgepresst/, /wirkungsradar/live/masseneinwanderung/, /wirkungsradar/live/medien-zensur/, /wirkungsradar/live/remigration/, /wirkungsradar/live/verfassungsschutz-regierungsschutz/
+- Angst vor AfD-Wahlsieg? | Debatten-Kompass: /wirkungsradar/detail/angst-vor-afd-wahlsieg/, /wirkungsradar/live/angst-vor-afd-wahlsieg/
+- Antisemitismus ist importiert? | Debatten-Kompass: /wirkungsradar/detail/antisemitismus-ist-importiert/, /wirkungsradar/live/antisemitismus-ist-importiert/
+- Arbeit lohnt sich nicht mehr? | Debatten-Kompass: /wirkungsradar/detail/arbeit-lohnt-sich-nicht-mehr/, /wirkungsradar/live/arbeit-lohnt-sich-nicht-mehr/
+- Ausländer plündern den Sozialstaat? | Debatten-Kompass: /wirkungsradar/detail/auslaender-pluendern-sozialstaat/, /wirkungsradar/live/auslaender-pluendern-sozialstaat/
+- Batterien sind nicht recyclebar? | Debatten-Kompass: /wirkungsradar/detail/batterien-sind-nicht-recyclebar/, /wirkungsradar/live/batterien-sind-nicht-recyclebar/
+- Bio kann die Welt nicht ernähren? | Debatten-Kompass: /wirkungsradar/detail/bio-kann-die-welt-nicht-ernaehren/, /wirkungsradar/live/bio-kann-die-welt-nicht-ernaehren/
+- Biodiversität ist Luxusproblem? | Debatten-Kompass: /wirkungsradar/detail/biodiversitaet-ist-luxusproblem/, /wirkungsradar/live/biodiversitaet-ist-luxusproblem/
+- Bürgergeld macht faul? | Debatten-Kompass: /wirkungsradar/detail/buergergeld-macht-faul/, /wirkungsradar/live/buergergeld-macht-faul/
+- Bürokratieabbau statt Wirkung? | Debatten-Kompass: /wirkungsradar/detail/buerokratieabbau-statt-wirkung/, /wirkungsradar/live/buerokratieabbau-statt-wirkung/
+- Cancel Culture zerstört Debatte? | Debatten-Kompass: /wirkungsradar/detail/cancel-culture-zerstoert-debatte/, /wirkungsradar/live/cancel-culture-zerstoert-debatte/
+- CO₂ ist nur ein Spurengas? | Debatten-Kompass: /wirkungsradar/detail/co2-ist-nur-ein-spurengas/, /wirkungsradar/live/co2-ist-nur-ein-spurengas/
+- CO₂-Preis oder fossile Systemkosten? | Debatten-Kompass: /wirkungsradar/detail/co2-preis-oder-fossile-systemkosten/, /wirkungsradar/live/co2-preis-oder-fossile-systemkosten/
+- Corona-Verschwörung? War die Pandemie geplant? | Debatten-Kompass: /wirkungsradar/detail/corona-verschwoerung-war-die-pandemie-geplant/, /wirkungsradar/live/corona-verschwoerung-war-die-pandemie-geplant/
+- Cyberangriffe sind IT-Problem? | Debatten-Kompass: /wirkungsradar/detail/cyberangriffe-sind-it-problem/, /wirkungsradar/live/cyberangriffe-sind-it-problem/
+- Das ist alles gesteuert? | Debatten-Kompass: /wirkungsradar/detail/das-ist-alles-gesteuert/, /wirkungsradar/live/das-ist-alles-gesteuert/
+- Zensurbehörden / betreute Meinung / ÖRR-Frame? | Debatten-Kompass: /wirkungsradar/detail/das-ist-zensur/, /wirkungsradar/live/das-ist-zensur/
+- Datenschutz verhindert Innovation? | Debatten-Kompass: /wirkungsradar/detail/datenschutz-verhindert-innovation/, /wirkungsradar/live/datenschutz-verhindert-innovation/
+- Deepfakes sind nur Spaß? | Debatten-Kompass: /wirkungsradar/detail/deepfakes-sind-nur-spass/, /wirkungsradar/live/deepfakes-sind-nur-spass/
+- Deutschland hat keine Verfassung? | Debatten-Kompass: /wirkungsradar/detail/deutschland-hat-keine-verfassung/, /wirkungsradar/live/deutschland-hat-keine-verfassung/
+- Deutschland nur 2 Prozent? | Debatten-Kompass: /wirkungsradar/detail/deutschland-nur-zwei-prozent/, /wirkungsradar/live/deutschland-nur-zwei-prozent/
+- Deutschland schafft sich ab? | Debatten-Kompass: /wirkungsradar/detail/deutschland-schafft-sich-ab/, /wirkungsradar/live/deutschland-schafft-sich-ab/
+- Die Bauern werden geopfert? | Debatten-Kompass: /wirkungsradar/detail/die-bauern-werden-geopfert/, /wirkungsradar/live/die-bauern-werden-geopfert/
+- Die da oben machen sowieso, was sie wollen? | Debatten-Kompass: /wirkungsradar/detail/die-da-oben/, /wirkungsradar/live/die-da-oben/
+- Die Wissenschaft ist gekauft? | Debatten-Kompass: /wirkungsradar/detail/die-wissenschaft-ist-gekauft/, /wirkungsradar/live/die-wissenschaft-ist-gekauft/
+- Diktatur der Altparteien? | Debatten-Kompass: /wirkungsradar/detail/diktatur-der-altparteien/, /wirkungsradar/live/diktatur-der-altparteien/
+- E-Autos schlimmer als Verbrenner? | Debatten-Kompass: /wirkungsradar/detail/e-autos-schlimmer-als-verbrenner/, /wirkungsradar/live/e-autos-schlimmer-als-verbrenner/
+- E-Fuels retten den Verbrenner? | Debatten-Kompass: /wirkungsradar/detail/e-fuels-retten-den-verbrenner/, /wirkungsradar/live/e-fuels-retten-den-verbrenner/
+- ... 162 weitere
