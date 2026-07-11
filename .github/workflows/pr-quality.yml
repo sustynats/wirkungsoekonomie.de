@@ -38,6 +38,12 @@ jobs:
       - name: Ensure generated search artifacts are committed
         run: git diff --exit-code -- assets/search/search-index.json public/data/woek-search-meta.json
 
+      - name: Build content taxonomy
+        run: npm run taxonomy:build
+
+      - name: Ensure generated taxonomy is committed
+        run: git diff --exit-code -- content/taxonomy/site-map.json
+
       - name: Build public deploy artifact
         run: npm run build:artifact
 
@@ -46,6 +52,9 @@ jobs:
 
       - name: Check URL baseline
         run: npm run check:url-baseline
+
+      - name: Report internal link integrity
+        run: npm run check:site-links
 
       - name: Check site size
         run: npm run check:size
