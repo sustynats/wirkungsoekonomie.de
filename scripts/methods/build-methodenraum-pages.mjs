@@ -142,12 +142,26 @@ function methodPage(m) {
   const section = (kicker, h, inner) =>
     `      <section class="section">\n        <div class="card">\n          <p class="hero-kicker">${kicker}</p>\n          <h2>${h}</h2>\n${inner}\n        </div>\n      </section>`;
 
+  const cell = (label, lf, pflicht) =>
+    `<div class="woems-cell${pflicht ? ' woems-cell--pflicht' : ''}"><span class="woems-lbl">${esc(label)}</span><span class="woems-lf">${esc(lf)}</span><span class="woems-space"></span></div>`;
   const canvasFelder = canvas
-    ? `<div class="table-wrap"><table class="data-table"><thead><tr><th>Feld</th><th>Leitfrage</th><th>Deine Notiz</th></tr></thead><tbody>${canvas.felder
-        .map((f) => `<tr><td><strong>${esc(f.label)}</strong></td><td>${esc(f.leitfrage)}</td><td class="note">…</td></tr>`)
-        .join('')}${PFLICHT.map(
-        (p) => `<tr><td><strong>${esc(p)}</strong> <span class="badge">Pflicht</span></td><td>Immer auszufüllen — auch wenn unbequem.</td><td class="note">…</td></tr>`
-      ).join('')}</tbody></table></div>`
+    ? `<style>
+    .woems-canvas{border:2px solid var(--navy,#141a2e);border-radius:10px;overflow:hidden;background:#fff;margin:.6rem 0}
+    .woems-canvas-head{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;padding:.65rem .9rem;border-bottom:2px solid var(--navy,#141a2e);font-size:.82rem;background:rgba(200,155,60,.07)}
+    .woems-canvas-head b{font-family:var(--font-serif,Georgia,serif)}
+    .woems-canvas-head .fill{border-bottom:1px dashed #9aa2b1;min-width:5rem;display:inline-block}
+    .woems-canvas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
+    .woems-cell{border-right:1px solid #ddd8cc;border-bottom:1px solid #ddd8cc;padding:.7rem .8rem;min-height:160px;display:flex;flex-direction:column}
+    .woems-lbl{font-weight:800;font-size:.92rem;color:var(--navy,#141a2e)}
+    .woems-lf{font-size:.78rem;color:#5b6472;line-height:1.35;margin-top:.15rem}
+    .woems-space{flex:1;margin-top:.5rem}
+    .woems-cell--pflicht{background:rgba(200,155,60,.09)}
+    .woems-cell--pflicht .woems-lbl::after{content:" • Pflicht";color:#b8892f;font-size:.72rem}
+    </style>
+    <div class="woems-canvas">
+      <div class="woems-canvas-head"><span><b>${esc(m.id)} · ${esc(canvas.name)}</b></span><span>Fall: <span class="fill"></span></span><span>Datum: <span class="fill"></span></span><span>Version: <span class="fill"></span></span><span>Moderation: <span class="fill"></span></span></div>
+      <div class="woems-canvas-grid">${canvas.felder.map((f) => cell(f.label, f.leitfrage)).join('')}${PFLICHT.map((p) => cell(p.charAt(0).toUpperCase() + p.slice(1), 'Immer ausfüllen – auch wenn unbequem.', true)).join('')}</div>
+    </div>`
     : '<p class="note">Canvas-Spezifikation folgt.</p>';
 
   const body = `      <section class="hero">
@@ -253,15 +267,26 @@ function hub() {
               <li><a href="${base}methodenraum/gesamtbild/">WÖMM · Das Gesamtbild</a></li>
               <li><a href="${base}methodenraum/canvas/">56 Canvas &amp; das Prinzip</a></li>
               <li><a href="${base}methodenraum/journeys/">20 Workshop-Journeys</a></li>
+              <li><a href="${base}lernen/">Methoden in der Akademie lernen</a></li>
             </ul>
           </aside>
         </div>
+      </section>
+      <section class="section section-soft">
+        <div class="section-header">
+          <p class="hero-kicker">Zum Einstieg</p>
+          <h2>Das Methodensystem in Kürze</h2>
+        </div>
+        <figure style="max-width:900px;margin:0 auto">
+          <video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4">Dein Browser unterstützt kein Video.</video>
+        </figure>
       </section>
       <section class="section">
         <div class="card">
           <p class="hero-kicker">So liest du das System</p>
           <h2>A–H Grundlogik, I–P Realisierung</h2>
           <p>Die Kategorien <strong>A–H</strong> bilden die wirkungsökonomische Grundlogik von Mandat bis Lernen. <strong>I–P</strong> operationalisieren die Realisierung: von Vorausschau über Fähigkeiten, Prozesse und Produkte bis zu Daten, KI und Assurance. Über <em>Baut auf</em> und <em>Führt zu</em> hängt alles zusammen — nichts steht für sich.</p>
+          <div class="hero-actions no-print" style="margin-top:1rem"><a class="btn btn-secondary" href="${base}lernen/">Diese Methoden in der Akademie lernen</a></div>
         </div>
       </section>
 ${catBlocks}`;
@@ -295,6 +320,12 @@ function gesamtbild() {
           </div>
           <aside class="card"><p class="card-kicker">Der Kern in einem Satz</p><p class="lead">Ein Modell zeigt, <em>worauf</em> es ankommt — die Methoden zeigen, <em>wie</em> man es tut. Das WÖMM ist das Worauf.</p></aside>
         </div>
+      </section>
+      <section class="section section-soft">
+        <div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Modell im Video</h2></div>
+        <figure style="max-width:900px;margin:0 auto">
+          <video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woek-erklaervideo.mp4">Dein Browser unterstützt kein Video.</video>
+        </figure>
       </section>
       <section class="section"><div class="card">
         <p class="hero-kicker">Warum überhaupt ein neues Modell</p>
