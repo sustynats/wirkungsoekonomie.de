@@ -32,7 +32,7 @@ const ENGLISH_ROUTE_OVERRIDES = new Map([
 ]);
 
 function gitFiles() {
-  return execFileSync("git", ["ls-files", "*.html"], { cwd: ROOT, encoding: "utf8" })
+  return execFileSync("git", ["ls-files", "*.html"], { cwd: ROOT, encoding: "utf8", maxBuffer: 512 * 1024 * 1024,})
     .trim()
     .split("\n")
     .filter(Boolean);

@@ -134,6 +134,7 @@ function headerFiles() {
   const output = execFileSync("git", ["ls-files", "*.html"], {
     cwd: ROOT,
     encoding: "utf8",
+    maxBuffer: 512 * 1024 * 1024,
   }).trim();
 
   if (!output) return [];
