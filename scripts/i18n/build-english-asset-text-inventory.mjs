@@ -11,7 +11,7 @@ const rasterPattern = /\.(png|jpe?g|webp|avif)$/i;
 const germanTextPattern = /\b(und|oder|für|Wirkung|Wirkungs|Wirkungsökonomie|Mensch|Planet|Demokratie|Beispiel|Grundlagen|Werkzeug|Suche|Merken|Lernen|Sammlung|öffent|Ökonomie|Steuer|Daten|Bewertung)\b|[äöüÄÖÜß]/;
 
 function gitFiles(patterns) {
-  return execFileSync("git", ["ls-files", ...patterns], { cwd: ROOT, encoding: "utf8" })
+  return execFileSync("git", ["ls-files", ...patterns], { cwd: ROOT, encoding: "utf8", maxBuffer: 512 * 1024 * 1024,})
     .trim()
     .split("\n")
     .filter(Boolean);
