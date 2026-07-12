@@ -69,7 +69,7 @@ HEADER = '''    <header class="site-header" data-search-exclude>
     </header>'''
 
 
-def page_shell(r, title, desc, body, css_v="20260612-mobile-table-fix"):
+def page_shell(r, title, desc, body, css_v="20260712-reader"):
     return f'''<!DOCTYPE html>
 <html lang="de">
   <head>
