@@ -2487,6 +2487,71 @@ body.nav-is-open {
   outline-offset: 2px;
 }
 
+/* Onlinefassung / Kapitel-Lesefassung der Grundlagenwerke */
+.reader-heading:hover .cite-anchor,
+.reader-heading:focus-within .cite-anchor {
+  opacity: 1;
+}
+.reader-body {
+  max-width: 44rem;
+  margin-top: 1.5rem;
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+.reader-body h2.reader-heading {
+  margin: 2.2rem 0 0.7rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(20, 33, 61, 0.1);
+  scroll-margin-top: 5rem;
+  font-size: 1.32rem;
+}
+.reader-body h3.reader-heading {
+  margin: 1.6rem 0 0.5rem;
+  scroll-margin-top: 5rem;
+  font-size: 1.1rem;
+}
+.reader-body p { margin: 0 0 0.95rem; }
+.reader-body p + p { text-indent: 0; }
+.chapter-reader .term-detail-hero h1 { scroll-margin-top: 5rem; }
+.reader-toc { list-style: none; margin: 0; padding: 0; }
+.reader-toc-chapter { margin: 0 0 0.35rem; }
+.reader-toc-link {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+.reader-toc-link:hover { background: rgba(47, 125, 92, 0.08); }
+.reader-toc-num {
+  flex: 0 0 auto;
+  min-width: 1.9rem;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.reader-toc-subs {
+  list-style: none;
+  margin: 0.1rem 0 0.7rem 2.6rem;
+  padding: 0;
+  font-size: 0.92rem;
+}
+.reader-toc-subs li { margin: 0.15rem 0; }
+.reader-toc-subs a { color: var(--muted, #5a6472); text-decoration: none; }
+.reader-toc-subs a:hover { color: var(--green); text-decoration: underline; }
+.chapter-bottom-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(20, 33, 61, 0.1);
+}
+
 .citation-note {
   padding: clamp(1.2rem, 2vw, 1.8rem);
   border: 1px solid rgba(47, 125, 92, 0.18);
