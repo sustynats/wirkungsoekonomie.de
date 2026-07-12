@@ -108,6 +108,11 @@ function actionLinks(doc, onlineByKey, prefix = "../") {
   const pdfVariant = variants.find((variant) => variant.kind === "pdf");
   const isPdf = /\.pdf$/i.test(primary);
   const isOnline = doc.source === "online-version" || /\.html$/i.test(primary) || /\/$/.test(primary);
+  // Zitierbare Kapitel-Lesefassung, falls neben der Detailseite eine lesen/-Fassung existiert
+  // (bibliothek/eintraege/<slug>/lesen/). Selbsttragend, ohne Registry-Eintrag.
+  const readerHref = doc.detailSlug
+    && fs.existsSync(path.join(ROOT, "bibliothek/eintraege", doc.detailSlug, "lesen", "index.html"))
+    ? siteHref(`bibliothek/eintraege/${doc.detailSlug}/lesen/`, prefix) : "";
   const links = [];
   if (onlineVariant) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineVariant.primary, prefix))}">Onlinefassung lesen</a>`);
   if (pdfVariant) links.push(`<a class="btn btn-primary" href="${esc(siteHref(pdfVariant.primary, prefix))}">PDF öffnen</a>`);
@@ -116,8 +121,9 @@ function actionLinks(doc, onlineByKey, prefix = "../") {
   if (isOnline) {
     links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Online lesen</a>`);
   } else if (isPdf) {
-    links.push(`<a class="btn btn-primary" href="${esc(siteHref(primary, prefix))}">PDF öffnen</a>`);
-    if (onlineMatch) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineMatch, prefix))}">Online lesen</a>`);
+    if (readerHref) links.push(`<a class="btn btn-primary" href="${esc(readerHref)}">Onlinefassung lesen</a>`);
+    links.push(`<a class="btn ${readerHref ? "btn-secondary" : "btn-primary"}" href="${esc(siteHref(primary, prefix))}">PDF öffnen</a>`);
+    if (!readerHref && onlineMatch) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineMatch, prefix))}">Online lesen</a>`);
   } else if (/\.(xlsx|csv|json)$/i.test(primary)) {
     links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Daten öffnen</a>`);
   } else if (/\.(pptx)$/i.test(primary)) {
@@ -407,8 +413,8 @@ function detailPage(doc, all, onlineByKey) {
         </div>
         ${chips ? `<section class="term-link-section"><div><p class="section-eyebrow">Verknüpfung</p><h2>Themen, Methoden und Wirkungsfelder</h2></div><div class="term-chip-row">${chips}</div></section>` : ""}
         <section class="meta-box source-steckbrief"><h2>Steckbrief</h2><dl class="source-fact-grid">${factsHtml}</dl>${doc.citation ? `<h3>Zitierangabe</h3><p>${esc(doc.citation)}</p>` : ""}</section>
-        <section><h2>Schutz- und Nutzungshinweis</h2><p>Diese Bibliotheksseite ordnet eine Quelle ein und ersetzt keine fachliche Einzelfallprüfung. Modellhafte Aussagen bleiben als Modell oder Referenzfassung gekennzeichnet. Es werden Tätigkeiten, Angebote, Systeme und Entscheidungen betrachtet, nicht der soziale Wert von Personen.</p></section>
-        <section><h2>Verwandte Quellen</h2><ul>${relatedHtml || "<li>Noch keine verwandten Einträge zugeordnet.</li>"}</ul></section>
+        <section class="term-section-card"><p class="section-eyebrow">Hinweis</p><h2>Schutz- und Nutzungshinweis</h2><p>Diese Bibliotheksseite ordnet eine Quelle ein und ersetzt keine fachliche Einzelfallprüfung. Modellhafte Aussagen bleiben als Modell oder Referenzfassung gekennzeichnet. Es werden Tätigkeiten, Angebote, Systeme und Entscheidungen betrachtet, nicht der soziale Wert von Personen.</p></section>
+        <section class="term-section-card term-related"><p class="section-eyebrow">Weiterlesen</p><h2>Verwandte Quellen</h2><ul class="clean-list">${relatedHtml || "<li>Noch keine verwandten Einträge zugeordnet.</li>"}</ul></section>
       </article>
     </main>
     <script src="../../../assets/js/main.js?v=20260612-mobile-table-fix"></script>
