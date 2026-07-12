@@ -135,27 +135,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was ist die zentrale Wirkungsfrage dieser Vorlesung?**
    - A) Wie hoch ist die Reichweite?  B) Welche tatsächliche Zustandsveränderung entsteht und bei wem?  C) Wer wirkt sympathisch?  D) Welche Absicht wurde formuliert?
-   - ✅ **Richtig: B** — Wirkung meint tatsächliche Veränderung von Zuständen, nicht Absicht, Aktivität oder Reichweite.
+   - ✅ **Richtig: B** - Wirkung meint tatsächliche Veränderung von Zuständen, nicht Absicht, Aktivität oder Reichweite.
 
 2. **Warum reicht ein guter Auslöser noch nicht aus?**
    - A) Weil Wirkung immer zufällig ist  B) Weil erst Wirkpfad, Empfänger, Resonanz und Rückkopplung klären, ob Wirkung entsteht  C) Weil Daten unwichtig sind  D) Weil Bewertung verboten ist
-   - ✅ **Richtig: B** — Ein Auslöser erzeugt höchstens Wirkungspotenzial, solange keine tatsächliche Veränderung nachvollziehbar ist.
+   - ✅ **Richtig: B** - Ein Auslöser erzeugt höchstens Wirkungspotenzial, solange keine tatsächliche Veränderung nachvollziehbar ist.
 
 3. **Welche rote Linie gilt auch bei „Märkte, Produkte und Lieferketten als Wirkungsräume"?**
    - A) Menschen dürfen moralisch sortiert werden  B) Reichweite gilt als Wirkung  C) Keine Personenbewertung, kein Social Credit, keine Vermischung von Wirkung und Meinung  D) Reporting ersetzt Rückkopplung
-   - ✅ **Richtig: C** — Die WÖk bewertet Wirkpfade und Zustandsveränderungen, nicht den Wert von Menschen.
+   - ✅ **Richtig: C** - Die WÖk bewertet Wirkpfade und Zustandsveränderungen, nicht den Wert von Menschen.
 
 4. **Wann ist eine Aussage prüfbar?**
    - A) Wenn Quelle, Begriff, Wirkpfad und Unsicherheit benannt sind  B) Wenn sie oft geteilt wurde  C) Wenn sie gut klingt  D) Wenn sie keine Gegenfragen zulässt
-   - ✅ **Richtig: A** — Quellenklarheit und begriffliche Präzision sind Voraussetzungen für prüfbare Wirkungsaussagen.
+   - ✅ **Richtig: A** - Quellenklarheit und begriffliche Präzision sind Voraussetzungen für prüfbare Wirkungsaussagen.
 
 5. **Was unterscheidet Reporting von Rückkopplung?**
    - A) Nichts  B) Reporting beschreibt, Rückkopplung verändert Steuerung nach beobachteter Wirkung  C) Reporting ist immer falsch  D) Rückkopplung ist nur Marketing
-   - ✅ **Richtig: B** — Rückkopplung bedeutet Lernen und Nachsteuern anhand tatsächlicher Zustandsveränderungen.
+   - ✅ **Richtig: B** - Rückkopplung bedeutet Lernen und Nachsteuern anhand tatsächlicher Zustandsveränderungen.
 
 6. **Welche Zielgröße bleibt leitend?**
    - A) Positive Netto-Wirkung  B) Maximale Aktivität  C) Maximale Reichweite  D) Geringste Kritik
-   - ✅ **Richtig: A** — Wenn eine Zielgröße gemeint ist, geht es um positive Netto-Wirkung im Referenzrahmen Mensch, Planet und Demokratie.
+   - ✅ **Richtig: A** - Wenn eine Zielgröße gemeint ist, geht es um positive Netto-Wirkung im Referenzrahmen Mensch, Planet und Demokratie.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -531,7 +531,7 @@ Natalie Weber – September 2025 11 Tabelle: Heute vs. WÖk „grün“ (FinalSc
 
 Seite 12
 
-Natalie Weber – September 2025 12 3.7 Direktvergleich der drei Welten (gleiche Nettopreise) System Importsteuer (e.ektiv) Handelsteuer (e.ektiv) Vorsteuerkette? Sichtbarkeit im Laden Endpreis Heute (19 %) EUSt 19 % voll abziehbar 19 % je Stufe, Vorsteuer voll Ja (immer) keine 23,80 € WÖk „rot“ (FinalScore –2 → 20 %) 20 % nicht abziehbar 20 % je Stufe, nicht abziehbar Nein (Score &lt; +1) Ampel: Rot ≈ 25,00 € WÖk „grün“ (FinalScore +1 → 5 %) 5 % voll abziehbar 5 % je Stufe, Vorsteuer voll Ja (Score ≥ +1) Ampel: Grün, Wirkungspunkte 21,00 € Lesart: Die gleiche Netto-Kostenkette wird unter WÖk preislich auseinandergezogen—schädlich wird teurer, transformativ günstiger. Das ist exakt die Lenkungswirkung, die §§ 5, 7, 10–11 WUStG bezwecken (Score → Steuersatz; Vorsteuer nur bei positiven Eingaben; Bonus/Malus). 3.8 Warum +1 (5 %) und nicht 0 %? Null-Satz (0 %) ist nach § 5 nur bei sehr hoher Wirkung (+2/+3) bzw. § 10-Klassenlogik erreichbar. Für realistische, breit skalierbare Lieferketten (Bio-Rohsto`, saubere Färberei, Living-Wage-Programme, EE-Strom, verifizierte Daten) ist +1 die robuste Baseline; +2/+3 sind „Best-in-Class“ und erreichbar, aber seltener. 3.9 Einordnung & Anschluss • Internationale MwSt-Logik bleibt: Steuer entsteht im Importland; nur die Vorsteuerfähigkeit hängt künftig von der Wirkung ab (Kap. 2.7). • Scorecards & Benchmarks stammen aus SDGs/ESRS/GRI/ILO und sind global anschlussfähig; keine „deutschen Sondernormen“. • Governance & Anti-Lobby-Schutz: Wirkungsrat evaluiert Indikatoren/Schwellen im 3-Jahres-Rhythmus, öffentliche Protokolle → keine Willkür.
+Natalie Weber – September 2025 12 3.7 Direktvergleich der drei Welten (gleiche Nettopreise) System Importsteuer (e.ektiv) Handelsteuer (e.ektiv) Vorsteuerkette? Sichtbarkeit im Laden Endpreis Heute (19 %) EUSt 19 % voll abziehbar 19 % je Stufe, Vorsteuer voll Ja (immer) keine 23,80 € WÖk „rot“ (FinalScore –2 → 20 %) 20 % nicht abziehbar 20 % je Stufe, nicht abziehbar Nein (Score &lt; +1) Ampel: Rot ≈ 25,00 € WÖk „grün“ (FinalScore +1 → 5 %) 5 % voll abziehbar 5 % je Stufe, Vorsteuer voll Ja (Score ≥ +1) Ampel: Grün, Wirkungspunkte 21,00 € Lesart: Die gleiche Netto-Kostenkette wird unter WÖk preislich auseinandergezogen-schädlich wird teurer, transformativ günstiger. Das ist exakt die Lenkungswirkung, die §§ 5, 7, 10–11 WUStG bezwecken (Score → Steuersatz; Vorsteuer nur bei positiven Eingaben; Bonus/Malus). 3.8 Warum +1 (5 %) und nicht 0 %? Null-Satz (0 %) ist nach § 5 nur bei sehr hoher Wirkung (+2/+3) bzw. § 10-Klassenlogik erreichbar. Für realistische, breit skalierbare Lieferketten (Bio-Rohsto`, saubere Färberei, Living-Wage-Programme, EE-Strom, verifizierte Daten) ist +1 die robuste Baseline; +2/+3 sind „Best-in-Class“ und erreichbar, aber seltener. 3.9 Einordnung & Anschluss • Internationale MwSt-Logik bleibt: Steuer entsteht im Importland; nur die Vorsteuerfähigkeit hängt künftig von der Wirkung ab (Kap. 2.7). • Scorecards & Benchmarks stammen aus SDGs/ESRS/GRI/ILO und sind global anschlussfähig; keine „deutschen Sondernormen“. • Governance & Anti-Lobby-Schutz: Wirkungsrat evaluiert Indikatoren/Schwellen im 3-Jahres-Rhythmus, öffentliche Protokolle → keine Willkür.
 
 Seite 13
 
@@ -690,11 +690,11 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V16. Offen bleibt
 
 ### Interne Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v16.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/content/lehrgaenge/woek-g-v16.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

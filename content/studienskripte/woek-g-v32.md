@@ -95,27 +95,27 @@ Damit eine Scorecard glaubwürdig bleibt, braucht sie Quellenklarheit, Datenqual
 
 1. **Was ist eine Scorecard?**
    - A) eine reine Werbegrafik  B) eine strukturierte Matrix aus Feldern, Indikatoren, Werten und Begründungen  C) ein Personenranking  D) ein Videoformat
-   - ✅ **Richtig: B** — Scorecards machen Bewertungsgrundlagen sichtbar.
+   - ✅ **Richtig: B** - Scorecards machen Bewertungsgrundlagen sichtbar.
 
 2. **Warum ist ein Bewertungsprofil wichtig?**
    - A) Es zeigt Stärken, Schwächen und Unsicherheiten  B) Es ersetzt Quellen  C) Es versteckt Felder  D) Es bewertet Menschen
-   - ✅ **Richtig: A** — Das Profil verhindert blinde Ein-Zahl-Logik.
+   - ✅ **Richtig: A** - Das Profil verhindert blinde Ein-Zahl-Logik.
 
 3. **Was braucht jeder Score?**
    - A) Quelle, Benchmark und Begründung  B) nur eine Farbe  C) nur ein Logo  D) keine Daten
-   - ✅ **Richtig: A** — Ohne Begründung bleibt ein Score leer.
+   - ✅ **Richtig: A** - Ohne Begründung bleibt ein Score leer.
 
 4. **Wozu dienen Scorecards in der WÖk?**
    - A) Rückkopplung und Steuerungsentscheidung  B) Dekoration  C) Reichweitensteigerung  D) Geheimhaltung
-   - ✅ **Richtig: A** — Scorecards sollen Entscheidungen verbessern.
+   - ✅ **Richtig: A** - Scorecards sollen Entscheidungen verbessern.
 
 5. **Was darf ein FinalScore nicht tun?**
    - A) kritische Schwachstellen verdecken  B) Daten zusammenführen  C) auf ein Profil verweisen  D) Unsicherheit markieren
-   - ✅ **Richtig: A** — Verdichtung darf nicht zur Schönrechnung werden.
+   - ✅ **Richtig: A** - Verdichtung darf nicht zur Schönrechnung werden.
 
 6. **Welche Logik wird später beim Lesen von Scorecards wichtig?**
    - A) Reverse Merit Order  B) Zufall  C) Likes  D) Designfarbe
-   - ✅ **Richtig: A** — Das schwächste kritische Feld begrenzt die Bewertung.
+   - ✅ **Richtig: A** - Das schwächste kritische Feld begrenzt die Bewertung.
 
 ## 7. Transferaufgabe
 
@@ -337,27 +337,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was ist eine Scorecard?**
    - A) eine reine Werbegrafik  B) eine strukturierte Matrix aus Feldern, Indikatoren, Werten und Begründungen  C) ein Personenranking  D) ein Videoformat
-   - ✅ **Richtig: B** — Scorecards machen Bewertungsgrundlagen sichtbar.
+   - ✅ **Richtig: B** - Scorecards machen Bewertungsgrundlagen sichtbar.
 
 2. **Warum ist ein Bewertungsprofil wichtig?**
    - A) Es zeigt Stärken, Schwächen und Unsicherheiten  B) Es ersetzt Quellen  C) Es versteckt Felder  D) Es bewertet Menschen
-   - ✅ **Richtig: A** — Das Profil verhindert blinde Ein-Zahl-Logik.
+   - ✅ **Richtig: A** - Das Profil verhindert blinde Ein-Zahl-Logik.
 
 3. **Was braucht jeder Score?**
    - A) Quelle, Benchmark und Begründung  B) nur eine Farbe  C) nur ein Logo  D) keine Daten
-   - ✅ **Richtig: A** — Ohne Begründung bleibt ein Score leer.
+   - ✅ **Richtig: A** - Ohne Begründung bleibt ein Score leer.
 
 4. **Wozu dienen Scorecards in der WÖk?**
    - A) Rückkopplung und Steuerungsentscheidung  B) Dekoration  C) Reichweitensteigerung  D) Geheimhaltung
-   - ✅ **Richtig: A** — Scorecards sollen Entscheidungen verbessern.
+   - ✅ **Richtig: A** - Scorecards sollen Entscheidungen verbessern.
 
 5. **Was darf ein FinalScore nicht tun?**
    - A) kritische Schwachstellen verdecken  B) Daten zusammenführen  C) auf ein Profil verweisen  D) Unsicherheit markieren
-   - ✅ **Richtig: A** — Verdichtung darf nicht zur Schönrechnung werden.
+   - ✅ **Richtig: A** - Verdichtung darf nicht zur Schönrechnung werden.
 
 6. **Welche Logik wird später beim Lesen von Scorecards wichtig?**
    - A) Reverse Merit Order  B) Zufall  C) Likes  D) Designfarbe
-   - ✅ **Richtig: A** — Das schwächste kritische Feld begrenzt die Bewertung.
+   - ✅ **Richtig: A** - Das schwächste kritische Feld begrenzt die Bewertung.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -928,11 +928,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v32-scorecards-und-bewertungsprofile.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v32-scorecards-und-bewertungsprofile.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

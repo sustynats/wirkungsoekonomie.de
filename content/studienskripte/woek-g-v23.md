@@ -97,27 +97,27 @@ So entsteht Entscheidungsfähigkeit ohne Scheinsicherheit. Unsicherheit wird nic
 
 1. **Was bedeutet Ambivalenz in der Wirkungsbewertung?**
    - A) Eine Wirkung ist immer neutral  B) Es gibt gleichzeitig positive und negative Wirkungsaspekte  C) Daten sind verboten  D) Bewertung ist unmöglich
-   - ✅ **Richtig: B** — Viele Maßnahmen wirken in verschiedenen Feldern unterschiedlich.
+   - ✅ **Richtig: B** - Viele Maßnahmen wirken in verschiedenen Feldern unterschiedlich.
 
 2. **Wie sollte Unsicherheit behandelt werden?**
    - A) Verstecken  B) Sichtbar machen und begründen  C) Durch Werbung ersetzen  D) Ignorieren
-   - ✅ **Richtig: B** — Transparenz über Unsicherheit erhöht die Qualität der Bewertung.
+   - ✅ **Richtig: B** - Transparenz über Unsicherheit erhöht die Qualität der Bewertung.
 
 3. **Warum reicht eine einzige Zahl oft nicht aus?**
    - A) Weil Zahlen nie helfen  B) Weil sie Zielkonflikte und Datenqualität verdecken kann  C) Weil Bewertung nur Gefühl ist  D) Weil Quellen unwichtig sind
-   - ✅ **Richtig: B** — Eine Zahl braucht Profil, Begründung und Grenzen.
+   - ✅ **Richtig: B** - Eine Zahl braucht Profil, Begründung und Grenzen.
 
 4. **Was ist ein Zielkonflikt?**
    - A) Zwei Ziele stehen in Spannung zueinander  B) Ein Ziel ist erreicht  C) Alle Ziele sind gleich  D) Es gibt keine Betroffenen
-   - ✅ **Richtig: A** — Zielkonflikte entstehen, wenn Verbesserungen in einem Feld Belastungen in einem anderen erzeugen.
+   - ✅ **Richtig: A** - Zielkonflikte entstehen, wenn Verbesserungen in einem Feld Belastungen in einem anderen erzeugen.
 
 5. **Was leistet Nichtkompensation?**
    - A) Sie erlaubt beliebiges Aufrechnen  B) Sie verhindert, dass schwere Schäden durch gute Werte verdeckt werden  C) Sie ersetzt Daten  D) Sie bewertet Menschen
-   - ✅ **Richtig: B** — Nichtkompensation schützt vor Schönrechnung.
+   - ✅ **Richtig: B** - Nichtkompensation schützt vor Schönrechnung.
 
 6. **Was macht Unsicherheit entscheidungsfähig?**
    - A) Rückkopplung, Vorsicht und klare Annahmen  B) Ignoranz  C) Reichweite  D) Lautstärke
-   - ✅ **Richtig: A** — Lernende Steuerung arbeitet mit Unsicherheit, nicht gegen sie.
+   - ✅ **Richtig: A** - Lernende Steuerung arbeitet mit Unsicherheit, nicht gegen sie.
 
 ## 7. Transferaufgabe
 
@@ -329,27 +329,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was bedeutet Ambivalenz in der Wirkungsbewertung?**
    - A) Eine Wirkung ist immer neutral  B) Es gibt gleichzeitig positive und negative Wirkungsaspekte  C) Daten sind verboten  D) Bewertung ist unmöglich
-   - ✅ **Richtig: B** — Viele Maßnahmen wirken in verschiedenen Feldern unterschiedlich.
+   - ✅ **Richtig: B** - Viele Maßnahmen wirken in verschiedenen Feldern unterschiedlich.
 
 2. **Wie sollte Unsicherheit behandelt werden?**
    - A) Verstecken  B) Sichtbar machen und begründen  C) Durch Werbung ersetzen  D) Ignorieren
-   - ✅ **Richtig: B** — Transparenz über Unsicherheit erhöht die Qualität der Bewertung.
+   - ✅ **Richtig: B** - Transparenz über Unsicherheit erhöht die Qualität der Bewertung.
 
 3. **Warum reicht eine einzige Zahl oft nicht aus?**
    - A) Weil Zahlen nie helfen  B) Weil sie Zielkonflikte und Datenqualität verdecken kann  C) Weil Bewertung nur Gefühl ist  D) Weil Quellen unwichtig sind
-   - ✅ **Richtig: B** — Eine Zahl braucht Profil, Begründung und Grenzen.
+   - ✅ **Richtig: B** - Eine Zahl braucht Profil, Begründung und Grenzen.
 
 4. **Was ist ein Zielkonflikt?**
    - A) Zwei Ziele stehen in Spannung zueinander  B) Ein Ziel ist erreicht  C) Alle Ziele sind gleich  D) Es gibt keine Betroffenen
-   - ✅ **Richtig: A** — Zielkonflikte entstehen, wenn Verbesserungen in einem Feld Belastungen in einem anderen erzeugen.
+   - ✅ **Richtig: A** - Zielkonflikte entstehen, wenn Verbesserungen in einem Feld Belastungen in einem anderen erzeugen.
 
 5. **Was leistet Nichtkompensation?**
    - A) Sie erlaubt beliebiges Aufrechnen  B) Sie verhindert, dass schwere Schäden durch gute Werte verdeckt werden  C) Sie ersetzt Daten  D) Sie bewertet Menschen
-   - ✅ **Richtig: B** — Nichtkompensation schützt vor Schönrechnung.
+   - ✅ **Richtig: B** - Nichtkompensation schützt vor Schönrechnung.
 
 6. **Was macht Unsicherheit entscheidungsfähig?**
    - A) Rückkopplung, Vorsicht und klare Annahmen  B) Ignoranz  C) Reichweite  D) Lautstärke
-   - ✅ **Richtig: A** — Lernende Steuerung arbeitet mit Unsicherheit, nicht gegen sie.
+   - ✅ **Richtig: A** - Lernende Steuerung arbeitet mit Unsicherheit, nicht gegen sie.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -842,11 +842,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

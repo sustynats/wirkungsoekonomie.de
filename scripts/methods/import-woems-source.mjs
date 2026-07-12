@@ -165,7 +165,7 @@ function expandRange(start, end) {
 }
 
 function expandMethodRefs(value) {
-  const normalized = String(value).replace(/[–—]/g, "-");
+  const normalized = String(value).replace(/[–-]/g, "-");
   const ids = [];
   for (const match of normalized.matchAll(/\b([A-P])\/([A-P])\b/g)) {
     for (const category of [match[1], match[2]]) {

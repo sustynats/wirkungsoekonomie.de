@@ -8,17 +8,17 @@ Every visible public German route needs an English counterpart below `/en/` with
 
 ## Summary
 
-- Public visible source routes: 8703
+- Public visible source routes: 14980
 - English routes already present: 8
-- English routes missing: 8695
+- English routes missing: 14972
 
 ## Categories
 
 | Category | Total | Available | Missing |
 | --- | ---: | ---: | ---: |
+| bibliothek | 7851 | 1 | 7850 |
 | begriffe | 2035 | 0 | 2035 |
 | referenz | 1662 | 0 | 1662 |
-| bibliothek | 1575 | 1 | 1574 |
 | quellenarchiv | 992 | 0 | 992 |
 | woek-id-register | 624 | 0 | 624 |
 | wirkungsradar | 594 | 0 | 594 |
@@ -41,7 +41,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | podcast | 9 | 0 | 9 |
 | w | 8 | 0 | 8 |
 | wirkungswissenschaften | 8 | 0 | 8 |
-| akademie | 6 | 0 | 6 |
+| akademie | 7 | 0 | 7 |
 | wissen | 6 | 0 | 6 |
 | methodik | 4 | 0 | 4 |
 | sdg-plus | 3 | 0 | 3 |
@@ -77,6 +77,7 @@ Every visible public German route needs an English counterpart below `/en/` with
 | German route | English target | Category | Title |
 | --- | --- | --- | --- |
 | `/akademie.html` | `/en/akademie/` | top-level | Akademie \| Lernpfad Wirkungskompetenz |
+| `/akademie/grundlagen.html` | `/en/akademie/grundlagen/` | akademie | Grundlagen der Wirkungsökonomie \| Akademie für Wirkungsökonomie |
 | `/akademie/lernpfad.html` | `/en/akademie/lernpfad/` | akademie | Lernpfad Wirkungskompetenz \| Akademie für Wirkungsökonomie |
 | `/akademie/pruefungen.html` | `/en/akademie/pruefungen/` | akademie | Prüfungen, Zertifikat und FAQ \| Akademie für Wirkungsökonomie |
 | `/akademie/studienstruktur.html` | `/en/akademie/studienstruktur/` | akademie | Studium und Studienstruktur \| Akademie für Wirkungsökonomie |
@@ -155,4 +156,3 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/begriffe/alltagsrassismus/` | `/en/begriffe/alltagsrassismus/` | begriffe | Alltagsrassismus \| Glossar der Wirkungsökonomie |
 | `/begriffe/amartya-sen/` | `/en/begriffe/amartya-sen/` | begriffe | Amartya Sen \| Glossar der Wirkungsökonomie |
 | `/begriffe/amathia/` | `/en/begriffe/amathia/` | begriffe | Amathia \| Glossar der Wirkungsökonomie |
-| `/begriffe/ambiguitaetsintoleranz/` | `/en/begriffe/ambiguitaetsintoleranz/` | begriffe | Ambiguitätsintoleranz \| Glossar der Wirkungsökonomie |

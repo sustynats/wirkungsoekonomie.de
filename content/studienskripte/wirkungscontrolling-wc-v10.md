@@ -79,7 +79,7 @@ Jetzt zusammen: Daten liegen vor, die Scorecard ist erstellt. **Wie kommst du vo
 | 3 | Schwächstes **kritisches** Wirkungsfeld bestimmen (Reverse Merit Order) | V5 |
 | 4 | FinalScore/NWI lesen – begrenzt das kritische Feld die Bewertung? | V1, V5 |
 | 5 | Bei Priorisierung/Investition IoI und T-SROI heranziehen | V7–V8 |
-| 6 | Steuerungsentscheidung ableiten und **begründen** | — |
+| 6 | Steuerungsentscheidung ableiten und **begründen** | - |
 
 **Die Entscheidung ist nachvollziehbar und missbrauchssicher.** Weil jeder Schritt dokumentiert ist (Datenqualität, Zuordnung über WÖk-IDs, Reverse Merit Order), lässt sich die Entscheidung prüfen und anfechten. Ein kritisch schwaches Feld führt zu Sicherung/Mitigation vor Optimierung – kein guter IoI kauft eine rote Linie frei.
 
@@ -1000,11 +1000,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v10-fallstudie-datensatz-steuerungsentscheidung.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v10-fallstudie-datensatz-steuerungsentscheidung.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

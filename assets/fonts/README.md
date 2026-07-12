@@ -22,11 +22,11 @@ Die OFL erlaubt Nutzung, Einbettung, Bündelung und Weitergabe der Fonts
 (auch kommerziell); die Fonts selbst dürfen nicht einzeln verkauft werden.
 Copyright verbleibt bei den jeweiligen Urhebern:
 
-- Playfair Display — Copyright 2017 The Playfair Display Project Authors
+- Playfair Display - Copyright 2017 The Playfair Display Project Authors
   (https://github.com/clauseggers/Playfair-Display)
-- Source Sans 3 — Copyright 2010-2024 Adobe (https://github.com/adobe-fonts/source-sans)
-- Source Serif 4 — Copyright 2014-2024 Adobe (https://github.com/adobe-fonts/source-serif)
-- Inter — Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+- Source Sans 3 - Copyright 2010-2024 Adobe (https://github.com/adobe-fonts/source-sans)
+- Source Serif 4 - Copyright 2014-2024 Adobe (https://github.com/adobe-fonts/source-serif)
+- Inter - Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
 
 ## Quelle
 

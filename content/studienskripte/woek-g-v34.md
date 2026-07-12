@@ -95,27 +95,27 @@ Diese Logik ist besonders wichtig für Steuerung: Sie zeigt, wo Verbesserung zue
 
 1. **Woran orientiert sich die Reverse Merit Order?**
    - A) am besten Wert  B) am schwächsten kritischen Wirkungsfeld  C) an Werbung  D) an Reichweite
-   - ✅ **Richtig: B** — Das schwächste kritische Feld begrenzt die Bewertung.
+   - ✅ **Richtig: B** - Das schwächste kritische Feld begrenzt die Bewertung.
 
 2. **Warum nutzt die WÖk diese Logik?**
    - A) Um gute Werte zu ignorieren  B) Um verdeckte Schäden und Schönrechnung zu verhindern  C) Um Daten zu vermeiden  D) Um Personen zu bewerten
-   - ✅ **Richtig: B** — Kritische Schäden sollen sichtbar bleiben.
+   - ✅ **Richtig: B** - Kritische Schäden sollen sichtbar bleiben.
 
 3. **Was bedeutet das Kettenbild?**
    - A) Eine Kette ist so stark wie ihr schwächstes Glied  B) Alle Glieder sind egal  C) Nur das schönste Glied zählt  D) Ketten sind verboten
-   - ✅ **Richtig: A** — Systeme können an Schwachstellen brechen.
+   - ✅ **Richtig: A** - Systeme können an Schwachstellen brechen.
 
 4. **Was passiert mit guten Teilwerten?**
    - A) Sie bleiben sichtbar, dürfen aber kritische Schäden nicht verdecken  B) Sie werden gelöscht  C) Sie ersetzen Quellen  D) Sie zählen allein
-   - ✅ **Richtig: A** — Das Profil bleibt erhalten.
+   - ✅ **Richtig: A** - Das Profil bleibt erhalten.
 
 5. **Wofür hilft Reverse Merit Order in der Steuerung?**
    - A) Sie zeigt, wo Verbesserung zuerst ansetzen muss  B) Sie macht alles beliebig  C) Sie verhindert Lernen  D) Sie ersetzt Scorecards
-   - ✅ **Richtig: A** — Das schwächste Feld ist oft der wichtigste Hebel.
+   - ✅ **Richtig: A** - Das schwächste Feld ist oft der wichtigste Hebel.
 
 6. **Welcher Fall verlangt Reverse Merit Order?**
    - A) Gute CO2-Bilanz, aber schwere Arbeitsrechtsverletzung  B) gute Werte überall  C) keine Daten  D) nur Design
-   - ✅ **Richtig: A** — Ein kritisches Feld darf nicht überstrahlt werden.
+   - ✅ **Richtig: A** - Ein kritisches Feld darf nicht überstrahlt werden.
 
 ## 7. Transferaufgabe
 
@@ -339,27 +339,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Woran orientiert sich die Reverse Merit Order?**
    - A) am besten Wert  B) am schwächsten kritischen Wirkungsfeld  C) an Werbung  D) an Reichweite
-   - ✅ **Richtig: B** — Das schwächste kritische Feld begrenzt die Bewertung.
+   - ✅ **Richtig: B** - Das schwächste kritische Feld begrenzt die Bewertung.
 
 2. **Warum nutzt die WÖk diese Logik?**
    - A) Um gute Werte zu ignorieren  B) Um verdeckte Schäden und Schönrechnung zu verhindern  C) Um Daten zu vermeiden  D) Um Personen zu bewerten
-   - ✅ **Richtig: B** — Kritische Schäden sollen sichtbar bleiben.
+   - ✅ **Richtig: B** - Kritische Schäden sollen sichtbar bleiben.
 
 3. **Was bedeutet das Kettenbild?**
    - A) Eine Kette ist so stark wie ihr schwächstes Glied  B) Alle Glieder sind egal  C) Nur das schönste Glied zählt  D) Ketten sind verboten
-   - ✅ **Richtig: A** — Systeme können an Schwachstellen brechen.
+   - ✅ **Richtig: A** - Systeme können an Schwachstellen brechen.
 
 4. **Was passiert mit guten Teilwerten?**
    - A) Sie bleiben sichtbar, dürfen aber kritische Schäden nicht verdecken  B) Sie werden gelöscht  C) Sie ersetzen Quellen  D) Sie zählen allein
-   - ✅ **Richtig: A** — Das Profil bleibt erhalten.
+   - ✅ **Richtig: A** - Das Profil bleibt erhalten.
 
 5. **Wofür hilft Reverse Merit Order in der Steuerung?**
    - A) Sie zeigt, wo Verbesserung zuerst ansetzen muss  B) Sie macht alles beliebig  C) Sie verhindert Lernen  D) Sie ersetzt Scorecards
-   - ✅ **Richtig: A** — Das schwächste Feld ist oft der wichtigste Hebel.
+   - ✅ **Richtig: A** - Das schwächste Feld ist oft der wichtigste Hebel.
 
 6. **Welcher Fall verlangt Reverse Merit Order?**
    - A) Gute CO2-Bilanz, aber schwere Arbeitsrechtsverletzung  B) gute Werte überall  C) keine Daten  D) nur Design
-   - ✅ **Richtig: A** — Ein kritisches Feld darf nicht überstrahlt werden.
+   - ✅ **Richtig: A** - Ein kritisches Feld darf nicht überstrahlt werden.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -930,11 +930,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v34-reverse-merit-order.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v34-reverse-merit-order.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

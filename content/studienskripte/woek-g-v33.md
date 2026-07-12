@@ -95,27 +95,27 @@ Beide Kennzahlen bleiben an dieselben Schutzlinien gebunden. Ein positiver T-SRO
 
 1. **Welche Frage beantwortet der NWI?**
    - A) Wie viele Klicks gibt es?  B) Wie ist die Netto-Wirkung im Profil zu bewerten?  C) Wie klingt das Video?  D) Wer ist besser als Mensch?
-   - ✅ **Richtig: B** — Der NWI verdichtet Wirkungsbewertung.
+   - ✅ **Richtig: B** - Der NWI verdichtet Wirkungsbewertung.
 
 2. **Welche Frage beantwortet T-SROI?**
    - A) Transformationswirkung im Verhältnis zu eingesetzten Ressourcen  B) reine Reichweite  C) nur Designqualität  D) Personenwert
-   - ✅ **Richtig: A** — T-SROI verbindet Wirkung und Ressourceneinsatz.
+   - ✅ **Richtig: A** - T-SROI verbindet Wirkung und Ressourceneinsatz.
 
 3. **Warum dürfen NWI und T-SROI nicht verwechselt werden?**
    - A) Sie beantworten unterschiedliche Fragen  B) Sie sind identisch  C) Beide sind nur Marketing  D) Einer ist verboten
-   - ✅ **Richtig: A** — NWI ist Bewertungsprofil, T-SROI Investitions-/Transformationsperspektive.
+   - ✅ **Richtig: A** - NWI ist Bewertungsprofil, T-SROI Investitions-/Transformationsperspektive.
 
 4. **Was darf ein positiver T-SROI nicht tun?**
    - A) rote Linien verdecken  B) Investitionen vergleichen  C) Quellen nutzen  D) Transformation sichtbar machen
-   - ✅ **Richtig: A** — Schutzlogiken bleiben gültig.
+   - ✅ **Richtig: A** - Schutzlogiken bleiben gültig.
 
 5. **Was ist beim NWI wichtig?**
    - A) Er ersetzt das Profil vollständig  B) Er verweist auf Scorecard, Datenqualität und Begründung  C) Er braucht keine Daten  D) Er bewertet Personen
-   - ✅ **Richtig: B** — Verdichtung bleibt begründungspflichtig.
+   - ✅ **Richtig: B** - Verdichtung bleibt begründungspflichtig.
 
 6. **Was meint Transformationswirkung?**
    - A) kurzfristige Werbung  B) strukturelle Veränderung in Richtung zukunftsfähiger Zustände  C) bloße Absicht  D) reine Kostenersparnis
-   - ✅ **Richtig: B** — Transformation verändert Systeme, nicht nur Einzelwerte.
+   - ✅ **Richtig: B** - Transformation verändert Systeme, nicht nur Einzelwerte.
 
 ## 7. Transferaufgabe
 
@@ -321,27 +321,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Welche Frage beantwortet der NWI?**
    - A) Wie viele Klicks gibt es?  B) Wie ist die Netto-Wirkung im Profil zu bewerten?  C) Wie klingt das Video?  D) Wer ist besser als Mensch?
-   - ✅ **Richtig: B** — Der NWI verdichtet Wirkungsbewertung.
+   - ✅ **Richtig: B** - Der NWI verdichtet Wirkungsbewertung.
 
 2. **Welche Frage beantwortet T-SROI?**
    - A) Transformationswirkung im Verhältnis zu eingesetzten Ressourcen  B) reine Reichweite  C) nur Designqualität  D) Personenwert
-   - ✅ **Richtig: A** — T-SROI verbindet Wirkung und Ressourceneinsatz.
+   - ✅ **Richtig: A** - T-SROI verbindet Wirkung und Ressourceneinsatz.
 
 3. **Warum dürfen NWI und T-SROI nicht verwechselt werden?**
    - A) Sie beantworten unterschiedliche Fragen  B) Sie sind identisch  C) Beide sind nur Marketing  D) Einer ist verboten
-   - ✅ **Richtig: A** — NWI ist Bewertungsprofil, T-SROI Investitions-/Transformationsperspektive.
+   - ✅ **Richtig: A** - NWI ist Bewertungsprofil, T-SROI Investitions-/Transformationsperspektive.
 
 4. **Was darf ein positiver T-SROI nicht tun?**
    - A) rote Linien verdecken  B) Investitionen vergleichen  C) Quellen nutzen  D) Transformation sichtbar machen
-   - ✅ **Richtig: A** — Schutzlogiken bleiben gültig.
+   - ✅ **Richtig: A** - Schutzlogiken bleiben gültig.
 
 5. **Was ist beim NWI wichtig?**
    - A) Er ersetzt das Profil vollständig  B) Er verweist auf Scorecard, Datenqualität und Begründung  C) Er braucht keine Daten  D) Er bewertet Personen
-   - ✅ **Richtig: B** — Verdichtung bleibt begründungspflichtig.
+   - ✅ **Richtig: B** - Verdichtung bleibt begründungspflichtig.
 
 6. **Was meint Transformationswirkung?**
    - A) kurzfristige Werbung  B) strukturelle Veränderung in Richtung zukunftsfähiger Zustände  C) bloße Absicht  D) reine Kostenersparnis
-   - ✅ **Richtig: B** — Transformation verändert Systeme, nicht nur Einzelwerte.
+   - ✅ **Richtig: B** - Transformation verändert Systeme, nicht nur Einzelwerte.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -1302,11 +1302,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v33-nwi-und-t-sroi-unterscheiden.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v33-nwi-und-t-sroi-unterscheiden.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

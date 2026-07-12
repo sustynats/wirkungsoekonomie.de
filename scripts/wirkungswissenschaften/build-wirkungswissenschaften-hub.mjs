@@ -162,7 +162,7 @@ const JOURNAL = "blog/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie
 
 function publikationenCards(base) {
   return cardGrid("three", [
-    { kicker: "Dossier", title: "Grundlagendossier", text: "Systematische Einordnung der Disziplinen, Begriffe und Wirkungsarchitektur — Grundlage für Website, Glossar und Akademie.", href: `${base}${DOSSIER}`, link: "Dossier lesen" },
+    { kicker: "Dossier", title: "Grundlagendossier", text: "Systematische Einordnung der Disziplinen, Begriffe und Wirkungsarchitektur - Grundlage für Website, Glossar und Akademie.", href: `${base}${DOSSIER}`, link: "Dossier lesen" },
     { kicker: "Journal", title: "Wirkungswissenschaften als neuer Bezugsrahmen", text: "Konzeptioneller Beitrag zur wissenschaftlichen Einordnung im Kontext der Wirkungsökonomie.", href: `${base}${JOURNAL}`, link: "Journalbeitrag lesen" },
     { kicker: "Glossar", title: "Begriffe der Wirkung", text: "Wirkung, Wirkstoff, Wirkungspotenzial, Wirkungspfad, Wirkungsgrad, Netto-Wirkung und Wirkungsarchitektur.", href: `${base}begriffe/`, link: "Zum Glossar" },
   ]);
@@ -190,7 +190,7 @@ function buildHub() {
     subnav(base, "wirkungswissenschaften/"),
     section({ kicker: "Die Grundunterscheidung", heading: "Rahmen, Methode, Steuerungsdisziplin",
       inner: cardGrid("three", [
-        { kicker: "Der Oberrahmen", title: "Wirkungswissenschaften", text: "Fragen, wie Zustände entstehen, verändert, stabilisiert oder destabilisiert werden — und wie diese Wirkung verantwortbar bewertet und rückgekoppelt werden kann.", href: `${base}wirkungswissenschaften/definition/`, link: "Definition" },
+        { kicker: "Der Oberrahmen", title: "Wirkungswissenschaften", text: "Fragen, wie Zustände entstehen, verändert, stabilisiert oder destabilisiert werden - und wie diese Wirkung verantwortbar bewertet und rückgekoppelt werden kann.", href: `${base}wirkungswissenschaften/definition/`, link: "Definition" },
         { kicker: "Die methodische Teildisziplin", title: "Wirkungsforschung", text: "Untersucht Wirkungen, Wirkungspotenziale, Wirkmechanismen, Nebenwirkungen, Wechselwirkungen und Transformationsbeiträge empirisch, theoretisch und systemisch.", href: `${base}wirkungswissenschaften/wirkungsforschung/`, link: "Wirkungsforschung" },
         { kicker: "Die erste Steuerungsdisziplin", title: "Wirkungsökonomie", text: "Überführt Wirkung in Preise, Steuern, Kapital, Unternehmen, Politik, Recht, Medien und demokratische Rückkopplung.", href: `${base}wirkungswissenschaften/wirkungsoekonomie/`, link: "Wirkungsökonomie" },
       ]) }),
@@ -253,7 +253,7 @@ function buildSubPages() {
   out.push(subPage({
     slug: "definition", title: "Definition der Wirkungswissenschaften",
     metaTitle: "Definition | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Grundlagen",
-    subtitle: "Was Wirkungswissenschaften sind — und wie sie sich abgrenzen.",
+    subtitle: "Was Wirkungswissenschaften sind - und wie sie sich abgrenzen.",
     description: "Wirkungswissenschaften sind der von Natalie Weber im Kontext der Wirkungsökonomie begründete inter- und transdisziplinäre Rahmen, der Wirkung als tatsächliche Zustandsveränderung untersucht, bewertet und rückkoppelt.",
     intro: "",
     bodySections: (base) => [
@@ -266,7 +266,7 @@ function buildSubPages() {
         inner: cardGrid("three", [
           { kicker: "Abgrenzung", title: "Nicht nur Wirkungsforschung", text: "Wirkungsforschung ist die methodische Teildisziplin. Die Wirkungswissenschaften sind der übergreifende Rahmen, der Erkenntnis, Bewertung und Rückkopplung verbindet." },
           { kicker: "Abgrenzung", title: "Mehr als Impact Measurement", text: "Impact Measurement misst einzelne Wirkungen. Die Wirkungswissenschaften fragen zusätzlich, wie Wirkung bewertet, gewichtet und in Entscheidungen zurückgeführt wird." },
-          { kicker: "Referenzrahmen", title: "Mensch, Planet, Demokratie", text: "Positive Wirkung wird an Mensch, Planet und Demokratie sowie an SDGs und SDG+ eingeordnet — nicht an Kapitalrendite allein." },
+          { kicker: "Referenzrahmen", title: "Mensch, Planet, Demokratie", text: "Positive Wirkung wird an Mensch, Planet und Demokratie sowie an SDGs und SDG+ eingeordnet - nicht an Kapitalrendite allein." },
         ]) }),
       section({ kicker: "Disziplinenordnung", heading: "Der Oberrahmen und seine Spezialbereiche", inner: `        ${SVG_DISCIPLINES}` }),
     ],
@@ -276,7 +276,7 @@ function buildSubPages() {
     slug: "wirkungsforschung", title: "Wirkungsforschung",
     metaTitle: "Wirkungsforschung | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Methodische Teildisziplin",
     subtitle: "Von der Evaluation zur systemischen Wirkungsforschung.",
-    description: "Wirkungsforschung ist innerhalb der Wirkungswissenschaften die methodische Teildisziplin — von Natalie Weber von einer nachträglichen Evaluationspraxis zur voraus-, begleit- und rückkoppelnden systemischen Wirkungsforschung erweitert.",
+    description: "Wirkungsforschung ist innerhalb der Wirkungswissenschaften die methodische Teildisziplin - von Natalie Weber von einer nachträglichen Evaluationspraxis zur voraus-, begleit- und rückkoppelnden systemischen Wirkungsforschung erweitert.",
     intro: "",
     bodySections: (base) => [
       section({ kicker: "Kerndefinition", heading: "Was Wirkungsforschung untersucht",
@@ -286,12 +286,12 @@ function buildSubPages() {
         ]) }),
       section({ soft: true, kicker: "Vom Befund zum System", heading: "Alte und neue Wirkungsforschung",
         inner: cardGrid("three", [
-          { kicker: "Vorher", title: "Klassische Wirkungsforschung", text: "Evaluation, Impact Assessment und Wirkungsmessung liefern wichtige Methoden — überwiegend als nachträgliche Bewertung einzelner Programme." },
+          { kicker: "Vorher", title: "Klassische Wirkungsforschung", text: "Evaluation, Impact Assessment und Wirkungsmessung liefern wichtige Methoden - überwiegend als nachträgliche Bewertung einzelner Programme." },
           { kicker: "Grenze", title: "Zu punktuell, zu spät", text: "Einzelbefunde bleiben oft ohne systemischen Rahmen, ohne Rückkopplung und ohne Schutz vor Scheinkausalität und Wirkungssimulation." },
           { kicker: "Neu", title: "Systemische Wirkungsforschung", text: "Voraus-, begleit- und rückkoppelnd: Sie fragt, wie Wirkung entsteht, wie sie plausibel nachgewiesen, begrenzt, bewertet und in künftige Entscheidungen zurückgeführt wird." },
         ]) }),
       section({ kicker: "Methodischer Anschluss", heading: "Werkzeuge der Wirkungsforschung",
-        inner: prose([`Zum Kanon gehören Theory of Change, Contribution Analysis, Wirkpfade, Indikatoren und Scorecards, Datenqualität und Unsicherheitsangaben — ausführlich auf der Seite <a class="text-link" href="${base}wirkungswissenschaften/methodik/">Methodik</a>.`]) }),
+        inner: prose([`Zum Kanon gehören Theory of Change, Contribution Analysis, Wirkpfade, Indikatoren und Scorecards, Datenqualität und Unsicherheitsangaben - ausführlich auf der Seite <a class="text-link" href="${base}wirkungswissenschaften/methodik/">Methodik</a>.`]) }),
     ],
   }));
 
@@ -299,7 +299,7 @@ function buildSubPages() {
     slug: "wirkungsoekonomie", title: "Wirkungsökonomie als Steuerungsdisziplin",
     metaTitle: "Wirkungsökonomie | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Steuerungsdisziplin",
     subtitle: "Wie Wirkung in Preise, Steuern, Kapital und Governance übergeht.",
-    description: "Die Wirkungsökonomie ist die von Natalie Weber begründete erste ausgearbeitete Steuerungs- und Ordnungsdisziplin der Wirkungswissenschaften — sie überführt Wirkung in Preise, Steuern, Kapital und Governance.",
+    description: "Die Wirkungsökonomie ist die von Natalie Weber begründete erste ausgearbeitete Steuerungs- und Ordnungsdisziplin der Wirkungswissenschaften - sie überführt Wirkung in Preise, Steuern, Kapital und Governance.",
     intro: "",
     bodySections: (base) => [
       section({ kicker: "Kerndefinition", heading: "Die erste ausgearbeitete Steuerungsdisziplin",
@@ -316,21 +316,21 @@ function buildSubPages() {
   out.push(subPage({
     slug: "begriffssystem", title: "Begriffssystem der Wirkungswissenschaften",
     metaTitle: "Begriffssystem | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Glossarbasis",
-    subtitle: "Die zentralen Begriffe — systemisch geordnet.",
-    description: "Das systemische Begriffssystem der Wirkungswissenschaften — vom Auslöser über Wirkungspotenzial und Wirkungspfad bis zur Wirkungsarchitektur.",
+    subtitle: "Die zentralen Begriffe - systemisch geordnet.",
+    description: "Das systemische Begriffssystem der Wirkungswissenschaften - vom Auslöser über Wirkungspotenzial und Wirkungspfad bis zur Wirkungsarchitektur.",
     intro: "",
     bodySections: (base) => {
       const terms = [
-        ["wirkung", "Wirkung", "Die tatsächliche Veränderung von Zuständen — positiv, negativ oder neutral, immer mit Bezugspunkt."],
+        ["wirkung", "Wirkung", "Die tatsächliche Veränderung von Zuständen - positiv, negativ oder neutral, immer mit Bezugspunkt."],
         ["wirkstoff", "Wirkstoff", "Didaktische Analogie für einen Auslöser mit Wirkungspotenzial. Nicht selbst Wirkung, sondern das, was Wirkung ermöglicht."],
-        ["wirkungspotenzial", "Wirkungspotenzial", "Die Möglichkeit, dass eine Handlung, ein Produkt, ein Gesetz oder ein Kapitalfluss Wirkung entfaltet — noch keine eingetretene Wirkung."],
+        ["wirkungspotenzial", "Wirkungspotenzial", "Die Möglichkeit, dass eine Handlung, ein Produkt, ein Gesetz oder ein Kapitalfluss Wirkung entfaltet - noch keine eingetretene Wirkung."],
         ["wirkungsrisiko", "Wirkungsrisiko", "Die Möglichkeit negativer, destabilisierender oder unbeabsichtigter Wirkungen."],
         ["wirkmechanismus", "Wirkmechanismus", "Wie eine Wirkung entstehen soll oder kann."],
         ["wirkpfad", "Wirkungspfad", "Der plausible Weg vom Auslöser über Wirkmechanismus, Wirkungsraum und Nebenwirkungen zur Zustandsveränderung."],
         ["wirkungsraum", "Wirkungsraum", "Der Bereich, in dem eine Handlung, ein Produkt oder Kommunikation Folgen entfaltet."],
         ["wirkungsbewertung", "Wirkungsbewertung", "Die Einordnung einer Zustandsveränderung an Mensch, Planet und Demokratie sowie an SDGs und SDG+."],
         ["netto-wirkung", "Netto-Wirkung", "Die zusammenführende Bewertung positiver und negativer Wirkungen unter Wirkungsgrenzen und Nichtkompensation."],
-        ["wirkungsgrad", "Wirkungsgrad", "Das Verhältnis von eingesetzten Ressourcen und Aktivität zu tatsächlich positiver Netto-Wirkung — Wirkleistung statt Scheinleistung."],
+        ["wirkungsgrad", "Wirkungsgrad", "Das Verhältnis von eingesetzten Ressourcen und Aktivität zu tatsächlich positiver Netto-Wirkung - Wirkleistung statt Scheinleistung."],
         ["transformationswirkung", "Transformationswirkung", "Die Veränderung von Systemlogiken, Standards, Anreizen, Infrastrukturen oder Handlungspfaden."],
         ["wirkungsrueckkopplung", "Wirkungsrückkopplung", "Der Lernprozess, durch den bewertete Wirkung in künftige Entscheidungen, Regeln und Anreize zurückfließt."],
         ["wirkungsarchitektur", "Wirkungsarchitektur", "Das Gesamtsystem aus Daten, Begriffen, Methoden, Institutionen, Regeln, Schutzlinien und Rückkopplungen."],
@@ -357,7 +357,7 @@ ${terms.map(([s, t, d]) => `          <div class="wiwi-term"><dt><a href="${base
         inner: cardGrid("two", [
           { kicker: "Wirkung modellieren", title: "Wirkpfade & Theory of Change", text: "Plausible Ketten von Auslöser zu Wirkung, inklusive Wirkmechanismus, Nebenwirkungen und Annahmen." },
           { kicker: "Beitrag klären", title: "Contribution Analysis", text: "Statt vorschneller Kausalitätsbehauptung: den plausiblen Beitrag unter Alternativerklärungen prüfen." },
-          { kicker: "Bewerten", title: "Scorecards, NWI, T-SROI", text: "Von Indikatoren zur bewerteten Netto-Wirkung — mit Wirkungsgrenzen und Nichtkompensation." },
+          { kicker: "Bewerten", title: "Scorecards, NWI, T-SROI", text: "Von Indikatoren zur bewerteten Netto-Wirkung - mit Wirkungsgrenzen und Nichtkompensation." },
           { kicker: "Absichern", title: "Datenqualität & Unsicherheit", text: "Datenherkunft, Qualität und Unsicherheit ausweisen; Schutz vor Scheinkausalität und Wirkungssimulation." },
         ]) }),
       section({ soft: true, kicker: "Leitthese", heading: "Wirkleistung statt Scheinleistung",
@@ -368,7 +368,7 @@ ${terms.map(([s, t, d]) => `          <div class="wiwi-term"><dt><a href="${base
   out.push(subPage({
     slug: "publikationen", title: "Publikationen zu Wirkungswissenschaften",
     metaTitle: "Publikationen | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Belege & Downloads",
-    subtitle: "Dossier, Journalbeitrag und Glossar — mit Zitierempfehlung.",
+    subtitle: "Dossier, Journalbeitrag und Glossar - mit Zitierempfehlung.",
     description: "Dossier, Journalbeitrag und Glossarbasis zu Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie.",
     intro: "",
     bodySections: (base) => [
@@ -387,15 +387,15 @@ ${terms.map(([s, t, d]) => `          <div class="wiwi-term"><dt><a href="${base
     ["Hat Natalie Weber die Wirkungsforschung erfunden?", "Nein. Bestehende Wirkungsforschung, Evaluation und Impact Assessment liefern wichtige Vorarbeiten. Natalie Weber führt sie in einen eigenständigen systemischen Rahmen zusammen und erweitert sie zur voraus-, begleit- und rückkoppelnden Wirkungsforschung."],
     ["Was ist der neue Beitrag der Wirkungsökonomie?", "Die Wirkungsökonomie ist die erste ausgearbeitete Steuerungs- und Ordnungsdisziplin dieses Rahmens: Sie überführt Wirkung in Preise, Steuern, Kapital, Recht, Medien und demokratische Rückkopplung."],
     ["Ist das eine neue Wissenschaft oder ein Ordnungsrahmen?", "Beides ist zu unterscheiden: Die Wirkungswissenschaften sind ein Wissenschafts- und Bezugsrahmen; die Wirkungsökonomie ist die daraus abgeleitete Steuerungsdisziplin."],
-    ["Bewerten Wirkungswissenschaften Menschen?", "Nein. Bewertet werden Wirkungen von Handlungen, Produkten, Strukturen, Institutionen, Kapitalflüssen und Kommunikation — nicht Personen. Personenbewertung ist eine rote Linie."],
+    ["Bewerten Wirkungswissenschaften Menschen?", "Nein. Bewertet werden Wirkungen von Handlungen, Produkten, Strukturen, Institutionen, Kapitalflüssen und Kommunikation - nicht Personen. Personenbewertung ist eine rote Linie."],
     ["Wie verhalten sich Wirkungswissenschaften zu ESG, SROI und Nachhaltigkeitswissenschaft?", "Sie schließen an diese Felder an, gehen aber über Berichtspflichten und Einzelkennzahlen hinaus, indem sie Wirkung bewerten, gewichten und in Entscheidungen zurückkoppeln."],
-    ["Was bedeutet Mensch, Planet und Demokratie?", "Der normative Referenzrahmen, an dem positive Wirkung eingeordnet wird — ergänzt um SDGs und SDG+."],
+    ["Was bedeutet Mensch, Planet und Demokratie?", "Der normative Referenzrahmen, an dem positive Wirkung eingeordnet wird - ergänzt um SDGs und SDG+."],
   ];
   out.push(subPage({
     slug: "faq", title: "Häufige Fragen zu Wirkungswissenschaften",
     metaTitle: "FAQ | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Einwände & Missverständnisse",
     subtitle: "Antworten auf die häufigsten Fragen.",
-    description: "Häufige Fragen zu Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie — und wie sich Natalie Webers Beitrag präzise und wissenschaftlich sauber einordnen lässt.",
+    description: "Häufige Fragen zu Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie - und wie sich Natalie Webers Beitrag präzise und wissenschaftlich sauber einordnen lässt.",
     intro: "",
     bodySections: () => [
       section({ kicker: "FAQ", heading: "Fragen und Missverständnisse",

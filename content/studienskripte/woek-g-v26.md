@@ -95,27 +95,27 @@ SDG+ ist keine moralische Rangliste von Menschen. Es bewertet keine Personen. Es
 
 1. **Was macht SDG+ mit den SDGs?**
    - A) Es ersetzt sie vollständig  B) Es ergänzt und schärft sie  C) Es ignoriert sie  D) Es macht sie geheim
-   - ✅ **Richtig: B** — SDG+ baut auf den SDGs auf und ergänzt Schutzlinien.
+   - ✅ **Richtig: B** - SDG+ baut auf den SDGs auf und ergänzt Schutzlinien.
 
 2. **Welche Dimension ergänzt SDG+ besonders deutlich?**
    - A) Demokratie  B) Gewinn  C) Reichweite  D) Werbung
-   - ✅ **Richtig: A** — Demokratie wird als eigenständiger Wirkungsraum sichtbar.
+   - ✅ **Richtig: A** - Demokratie wird als eigenständiger Wirkungsraum sichtbar.
 
 3. **Warum reicht SDG 16 allein nicht immer?**
    - A) Es ist unwichtig  B) Moderne digitale und demokratische Wirkungsrisiken brauchen feinere Fragen  C) Es verbietet Daten  D) Es gilt nur für Unternehmen
-   - ✅ **Richtig: B** — Plattformmacht, KI und Desinformation verlangen präzisere Bewertung.
+   - ✅ **Richtig: B** - Plattformmacht, KI und Desinformation verlangen präzisere Bewertung.
 
 4. **Was ist eine rote Linie von SDG+?**
    - A) Personen bewerten  B) Demokratische Schäden mit Klimanutzen schönrechnen  C) Quellen nennen  D) Zielkonflikte offenlegen
-   - ✅ **Richtig: B** — Nichtkompensation gilt auch zwischen demokratischen und ökologischen Wirkungen.
+   - ✅ **Richtig: B** - Nichtkompensation gilt auch zwischen demokratischen und ökologischen Wirkungen.
 
 5. **Was ist SDG+ ausdrücklich nicht?**
    - A) Ein Schutzrahmen  B) Ein Social-Credit-System  C) Eine Ergänzung der SDGs  D) Ein Referenzrahmen
-   - ✅ **Richtig: B** — SDG+ bewertet Wirkungen, nicht den Wert von Menschen.
+   - ✅ **Richtig: B** - SDG+ bewertet Wirkungen, nicht den Wert von Menschen.
 
 6. **Welche Frage passt zu SDG+?**
    - A) Wie viele Klicks erzeugt es?  B) Stärkt oder schwächt es Teilhabe, Vertrauen und Rechte?  C) Wer ist moralisch besser?  D) Wie klingt die Marke?
-   - ✅ **Richtig: B** — SDG+ fragt nach demokratischer Wirkung.
+   - ✅ **Richtig: B** - SDG+ fragt nach demokratischer Wirkung.
 
 ## 7. Transferaufgabe
 
@@ -359,27 +359,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was macht SDG+ mit den SDGs?**
    - A) Es ersetzt sie vollständig  B) Es ergänzt und schärft sie  C) Es ignoriert sie  D) Es macht sie geheim
-   - ✅ **Richtig: B** — SDG+ baut auf den SDGs auf und ergänzt Schutzlinien.
+   - ✅ **Richtig: B** - SDG+ baut auf den SDGs auf und ergänzt Schutzlinien.
 
 2. **Welche Dimension ergänzt SDG+ besonders deutlich?**
    - A) Demokratie  B) Gewinn  C) Reichweite  D) Werbung
-   - ✅ **Richtig: A** — Demokratie wird als eigenständiger Wirkungsraum sichtbar.
+   - ✅ **Richtig: A** - Demokratie wird als eigenständiger Wirkungsraum sichtbar.
 
 3. **Warum reicht SDG 16 allein nicht immer?**
    - A) Es ist unwichtig  B) Moderne digitale und demokratische Wirkungsrisiken brauchen feinere Fragen  C) Es verbietet Daten  D) Es gilt nur für Unternehmen
-   - ✅ **Richtig: B** — Plattformmacht, KI und Desinformation verlangen präzisere Bewertung.
+   - ✅ **Richtig: B** - Plattformmacht, KI und Desinformation verlangen präzisere Bewertung.
 
 4. **Was ist eine rote Linie von SDG+?**
    - A) Personen bewerten  B) Demokratische Schäden mit Klimanutzen schönrechnen  C) Quellen nennen  D) Zielkonflikte offenlegen
-   - ✅ **Richtig: B** — Nichtkompensation gilt auch zwischen demokratischen und ökologischen Wirkungen.
+   - ✅ **Richtig: B** - Nichtkompensation gilt auch zwischen demokratischen und ökologischen Wirkungen.
 
 5. **Was ist SDG+ ausdrücklich nicht?**
    - A) Ein Schutzrahmen  B) Ein Social-Credit-System  C) Eine Ergänzung der SDGs  D) Ein Referenzrahmen
-   - ✅ **Richtig: B** — SDG+ bewertet Wirkungen, nicht den Wert von Menschen.
+   - ✅ **Richtig: B** - SDG+ bewertet Wirkungen, nicht den Wert von Menschen.
 
 6. **Welche Frage passt zu SDG+?**
    - A) Wie viele Klicks erzeugt es?  B) Stärkt oder schwächt es Teilhabe, Vertrauen und Rechte?  C) Wer ist moralisch besser?  D) Wie klingt die Marke?
-   - ✅ **Richtig: B** — SDG+ fragt nach demokratischer Wirkung.
+   - ✅ **Richtig: B** - SDG+ fragt nach demokratischer Wirkung.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -838,11 +838,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v26-sdg-plus-warum-sdgs-nicht-reichen.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v26-sdg-plus-warum-sdgs-nicht-reichen.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

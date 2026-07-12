@@ -95,27 +95,27 @@ Die SDGs sind also kein Ersatz für Bewertung. Sie sind der Startpunkt. Die WÖk
 
 1. **Warum braucht Wirkung einen Referenzrahmen?**
    - A) Damit jede Behauptung beliebig bleibt  B) Damit positive Wirkung begründbar bewertet werden kann  C) Damit Quellen verschwinden  D) Damit Personen bewertet werden
-   - ✅ **Richtig: B** — Ohne Maßstab ist „positiv" nicht belastbar.
+   - ✅ **Richtig: B** - Ohne Maßstab ist „positiv" nicht belastbar.
 
 2. **Was macht die SDGs besonders anschlussfähig?**
    - A) Sie gelten nur für Unternehmen  B) Sie sind ein Konsens aller 193 UN-Mitgliedstaaten  C) Sie ersetzen Demokratie  D) Sie sind geheim
-   - ✅ **Richtig: B** — Der breite politische Konsens macht sie als Mindestkompass wichtig.
+   - ✅ **Richtig: B** - Der breite politische Konsens macht sie als Mindestkompass wichtig.
 
 3. **Welche Rolle spielen die SDGs in der WÖk?**
    - A) Sie sind ein Startpunkt für Wirkungsbewertung  B) Sie ersetzen jede Datenprüfung  C) Sie sind nur Marketing  D) Sie bewerten Menschen
-   - ✅ **Richtig: A** — Die WÖk nutzt sie als Referenz, nicht als fertige Scorecard.
+   - ✅ **Richtig: A** - Die WÖk nutzt sie als Referenz, nicht als fertige Scorecard.
 
 4. **Warum braucht es SDG+?**
    - A) Weil die SDGs nutzlos sind  B) Weil offene Gesellschaft, Demokratie und Schutzlinien präziser ergänzt werden müssen  C) Weil Daten verboten sind  D) Weil die SDGs geheim sind
-   - ✅ **Richtig: B** — SDG+ schärft den Rahmen für moderne demokratische Wirkungsräume.
+   - ✅ **Richtig: B** - SDG+ schärft den Rahmen für moderne demokratische Wirkungsräume.
 
 5. **Was ist ein häufiger Fehler im Umgang mit SDGs?**
    - A) Sie als Mindestkompass nutzen  B) SDG-Icons als Beleg für tatsächliche Wirkung behandeln  C) Quellen nennen  D) Zielkonflikte prüfen
-   - ✅ **Richtig: B** — Ein Icon zeigt Anschluss, aber noch keine Wirkung.
+   - ✅ **Richtig: B** - Ein Icon zeigt Anschluss, aber noch keine Wirkung.
 
 6. **Was bleibt trotz SDGs erforderlich?**
    - A) Daten, Bewertung und Begründung  B) Nur Werbung  C) Keine Prüfung  D) reine Meinung
-   - ✅ **Richtig: A** — Ziele müssen in Wirkungsdaten und Entscheidungen übersetzt werden.
+   - ✅ **Richtig: A** - Ziele müssen in Wirkungsdaten und Entscheidungen übersetzt werden.
 
 ## 7. Transferaufgabe
 
@@ -359,27 +359,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Warum braucht Wirkung einen Referenzrahmen?**
    - A) Damit jede Behauptung beliebig bleibt  B) Damit positive Wirkung begründbar bewertet werden kann  C) Damit Quellen verschwinden  D) Damit Personen bewertet werden
-   - ✅ **Richtig: B** — Ohne Maßstab ist „positiv" nicht belastbar.
+   - ✅ **Richtig: B** - Ohne Maßstab ist „positiv" nicht belastbar.
 
 2. **Was macht die SDGs besonders anschlussfähig?**
    - A) Sie gelten nur für Unternehmen  B) Sie sind ein Konsens aller 193 UN-Mitgliedstaaten  C) Sie ersetzen Demokratie  D) Sie sind geheim
-   - ✅ **Richtig: B** — Der breite politische Konsens macht sie als Mindestkompass wichtig.
+   - ✅ **Richtig: B** - Der breite politische Konsens macht sie als Mindestkompass wichtig.
 
 3. **Welche Rolle spielen die SDGs in der WÖk?**
    - A) Sie sind ein Startpunkt für Wirkungsbewertung  B) Sie ersetzen jede Datenprüfung  C) Sie sind nur Marketing  D) Sie bewerten Menschen
-   - ✅ **Richtig: A** — Die WÖk nutzt sie als Referenz, nicht als fertige Scorecard.
+   - ✅ **Richtig: A** - Die WÖk nutzt sie als Referenz, nicht als fertige Scorecard.
 
 4. **Warum braucht es SDG+?**
    - A) Weil die SDGs nutzlos sind  B) Weil offene Gesellschaft, Demokratie und Schutzlinien präziser ergänzt werden müssen  C) Weil Daten verboten sind  D) Weil die SDGs geheim sind
-   - ✅ **Richtig: B** — SDG+ schärft den Rahmen für moderne demokratische Wirkungsräume.
+   - ✅ **Richtig: B** - SDG+ schärft den Rahmen für moderne demokratische Wirkungsräume.
 
 5. **Was ist ein häufiger Fehler im Umgang mit SDGs?**
    - A) Sie als Mindestkompass nutzen  B) SDG-Icons als Beleg für tatsächliche Wirkung behandeln  C) Quellen nennen  D) Zielkonflikte prüfen
-   - ✅ **Richtig: B** — Ein Icon zeigt Anschluss, aber noch keine Wirkung.
+   - ✅ **Richtig: B** - Ein Icon zeigt Anschluss, aber noch keine Wirkung.
 
 6. **Was bleibt trotz SDGs erforderlich?**
    - A) Daten, Bewertung und Begründung  B) Nur Werbung  C) Keine Prüfung  D) reine Meinung
-   - ✅ **Richtig: A** — Ziele müssen in Wirkungsdaten und Entscheidungen übersetzt werden.
+   - ✅ **Richtig: A** - Ziele müssen in Wirkungsdaten und Entscheidungen übersetzt werden.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -1051,11 +1051,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v25-sdgs-agenda-2030-globaler-konsens.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v25-sdgs-agenda-2030-globaler-konsens.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

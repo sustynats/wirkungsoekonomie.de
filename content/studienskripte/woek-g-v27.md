@@ -95,27 +95,27 @@ Damit bereitet diese Vorlesung die Scorecard-Logik vor: In einer guten Scorecard
 
 1. **Warum braucht Wirkungsbewertung Kernfelder?**
    - A) Damit nur ein Lieblingswert zählt  B) Damit relevante Wirkungsbereiche sichtbar werden  C) Damit Daten verschwinden  D) Damit Menschen bewertet werden
-   - ✅ **Richtig: B** — Kernfelder strukturieren die Bewertung über mehrere Dimensionen.
+   - ✅ **Richtig: B** - Kernfelder strukturieren die Bewertung über mehrere Dimensionen.
 
 2. **Was klären Wirkungsgrenzen?**
    - A) Welche Wirkungen einbezogen werden  B) Welche Farbe die Scorecard hat  C) Wer sympathisch ist  D) Welche Werbung erlaubt ist
-   - ✅ **Richtig: A** — Grenzen definieren Umfang und Verantwortungsbereich.
+   - ✅ **Richtig: A** - Grenzen definieren Umfang und Verantwortungsbereich.
 
 3. **Was ist eine rote Linie?**
    - A) Ein beliebiger Wunsch  B) Eine Schutzgrenze gegen unzulässige Kompensation  C) Ein Durchschnittswert  D) Eine Marketingaussage
-   - ✅ **Richtig: B** — Rote Linien halten schwere Schäden sichtbar.
+   - ✅ **Richtig: B** - Rote Linien halten schwere Schäden sichtbar.
 
 4. **Warum sind rote Linien keine Schönfärbung?**
    - A) Sie verhindern gerade, dass Schäden verdeckt werden  B) Sie ignorieren Schäden  C) Sie ersetzen Quellen  D) Sie bewerten Personen
-   - ✅ **Richtig: A** — Sie machen Bewertung strenger und ehrlicher.
+   - ✅ **Richtig: A** - Sie machen Bewertung strenger und ehrlicher.
 
 5. **Welcher Fall zeigt einen Kernfeld-Konflikt?**
    - A) Gute Klimawerte, aber schwere Arbeitsrechtsprobleme  B) Gute Daten und gute Wirkung  C) Keine Wirkung  D) Nur eine Farbe im Bericht
-   - ✅ **Richtig: A** — Unterschiedliche Felder können gegensätzlich ausfallen.
+   - ✅ **Richtig: A** - Unterschiedliche Felder können gegensätzlich ausfallen.
 
 6. **Wofür bereitet diese Vorlesung vor?**
    - A) Scorecards und Bewertungsprofile  B) reine Werbung  C) Personenranking  D) TTS-Produktion
-   - ✅ **Richtig: A** — Kernfelder und Grenzen sind Grundlage von Scorecards.
+   - ✅ **Richtig: A** - Kernfelder und Grenzen sind Grundlage von Scorecards.
 
 ## 7. Transferaufgabe
 
@@ -339,27 +339,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Warum braucht Wirkungsbewertung Kernfelder?**
    - A) Damit nur ein Lieblingswert zählt  B) Damit relevante Wirkungsbereiche sichtbar werden  C) Damit Daten verschwinden  D) Damit Menschen bewertet werden
-   - ✅ **Richtig: B** — Kernfelder strukturieren die Bewertung über mehrere Dimensionen.
+   - ✅ **Richtig: B** - Kernfelder strukturieren die Bewertung über mehrere Dimensionen.
 
 2. **Was klären Wirkungsgrenzen?**
    - A) Welche Wirkungen einbezogen werden  B) Welche Farbe die Scorecard hat  C) Wer sympathisch ist  D) Welche Werbung erlaubt ist
-   - ✅ **Richtig: A** — Grenzen definieren Umfang und Verantwortungsbereich.
+   - ✅ **Richtig: A** - Grenzen definieren Umfang und Verantwortungsbereich.
 
 3. **Was ist eine rote Linie?**
    - A) Ein beliebiger Wunsch  B) Eine Schutzgrenze gegen unzulässige Kompensation  C) Ein Durchschnittswert  D) Eine Marketingaussage
-   - ✅ **Richtig: B** — Rote Linien halten schwere Schäden sichtbar.
+   - ✅ **Richtig: B** - Rote Linien halten schwere Schäden sichtbar.
 
 4. **Warum sind rote Linien keine Schönfärbung?**
    - A) Sie verhindern gerade, dass Schäden verdeckt werden  B) Sie ignorieren Schäden  C) Sie ersetzen Quellen  D) Sie bewerten Personen
-   - ✅ **Richtig: A** — Sie machen Bewertung strenger und ehrlicher.
+   - ✅ **Richtig: A** - Sie machen Bewertung strenger und ehrlicher.
 
 5. **Welcher Fall zeigt einen Kernfeld-Konflikt?**
    - A) Gute Klimawerte, aber schwere Arbeitsrechtsprobleme  B) Gute Daten und gute Wirkung  C) Keine Wirkung  D) Nur eine Farbe im Bericht
-   - ✅ **Richtig: A** — Unterschiedliche Felder können gegensätzlich ausfallen.
+   - ✅ **Richtig: A** - Unterschiedliche Felder können gegensätzlich ausfallen.
 
 6. **Wofür bereitet diese Vorlesung vor?**
    - A) Scorecards und Bewertungsprofile  B) reine Werbung  C) Personenranking  D) TTS-Produktion
-   - ✅ **Richtig: A** — Kernfelder und Grenzen sind Grundlage von Scorecards.
+   - ✅ **Richtig: A** - Kernfelder und Grenzen sind Grundlage von Scorecards.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -926,11 +926,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v27-kernfelder-wirkungsgrenzen-rote-linien.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v27-kernfelder-wirkungsgrenzen-rote-linien.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

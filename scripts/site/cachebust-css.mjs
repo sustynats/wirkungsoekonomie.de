@@ -9,7 +9,7 @@ try {
   const SITE = path.join(process.cwd(), "_site");
   const cssPath = path.join(SITE, "assets", "css", "style.css");
   if (!fs.existsSync(cssPath)) {
-    console.warn("cachebust-css: _site/assets/css/style.css fehlt — übersprungen.");
+    console.warn("cachebust-css: _site/assets/css/style.css fehlt - übersprungen.");
     process.exit(0);
   }
   const hash = crypto.createHash("sha256").update(fs.readFileSync(cssPath)).digest("hex").slice(0, 12);

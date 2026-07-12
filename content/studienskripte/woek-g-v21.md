@@ -95,27 +95,27 @@ Die zentrale Lernfrage lautet: **Was löst der Auslöser aus?** Welche Menschen 
 
 1. **Was kann ein Auslöser von Wirkung sein?**
    - A) Nur eine Absicht  B) Produkt, Technologie, Institution oder Handlung  C) Nur eine Person  D) Nur ein Gesetz
-   - ✅ **Richtig: B** — Wirkungspfade können durch viele Arten von Auslösern starten.
+   - ✅ **Richtig: B** - Wirkungspfade können durch viele Arten von Auslösern starten.
 
 2. **Warum sind Produkte Wirkungsträger?**
    - A) Weil sie immer positiv wirken  B) Weil sie Lieferkette, Nutzung und Entsorgung bündeln  C) Weil sie teuer sind  D) Weil sie Werbung brauchen
-   - ✅ **Richtig: B** — Produktwirkung entsteht über den gesamten Lebenszyklus.
+   - ✅ **Richtig: B** - Produktwirkung entsteht über den gesamten Lebenszyklus.
 
 3. **Was verändern Technologien besonders häufig?**
    - A) Nur Farben  B) Möglichkeitsräume, Kosten, Sichtbarkeit und Skalierung  C) Nur Gesetze  D) Nur Preise
-   - ✅ **Richtig: B** — Technologien verändern, was Menschen tun können und was leicht wird.
+   - ✅ **Richtig: B** - Technologien verändern, was Menschen tun können und was leicht wird.
 
 4. **Wie wirken Institutionen?**
    - A) Über Regeln, Routinen, Vertrauen und Anreize  B) Nur über Gebäude  C) Nur über Moral  D) Gar nicht
-   - ✅ **Richtig: A** — Institutionen strukturieren Erwartungen und Entscheidungen.
+   - ✅ **Richtig: A** - Institutionen strukturieren Erwartungen und Entscheidungen.
 
 5. **Warum reicht Modernität als Bewertung nicht aus?**
    - A) Weil Neues immer schlecht ist  B) Weil entscheidend die tatsächliche Netto-Wirkung ist  C) Weil Daten unnötig sind  D) Weil Institutionen unwichtig sind
-   - ✅ **Richtig: B** — Modernität sagt noch nichts über Zustandsveränderungen aus.
+   - ✅ **Richtig: B** - Modernität sagt noch nichts über Zustandsveränderungen aus.
 
 6. **Welche Frage steht am Anfang der Analyse?**
    - A) Wer bekommt Applaus?  B) Was löst der Auslöser aus und bei wem?  C) Wie klingt die Kampagne?  D) Wie hoch ist die Reichweite?
-   - ✅ **Richtig: B** — Die Analyse beginnt beim Wirkungspfad und den Betroffenen.
+   - ✅ **Richtig: B** - Die Analyse beginnt beim Wirkungspfad und den Betroffenen.
 
 ## 7. Transferaufgabe
 
@@ -295,27 +295,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was kann ein Auslöser von Wirkung sein?**
    - A) Nur eine Absicht  B) Produkt, Technologie, Institution oder Handlung  C) Nur eine Person  D) Nur ein Gesetz
-   - ✅ **Richtig: B** — Wirkungspfade können durch viele Arten von Auslösern starten.
+   - ✅ **Richtig: B** - Wirkungspfade können durch viele Arten von Auslösern starten.
 
 2. **Warum sind Produkte Wirkungsträger?**
    - A) Weil sie immer positiv wirken  B) Weil sie Lieferkette, Nutzung und Entsorgung bündeln  C) Weil sie teuer sind  D) Weil sie Werbung brauchen
-   - ✅ **Richtig: B** — Produktwirkung entsteht über den gesamten Lebenszyklus.
+   - ✅ **Richtig: B** - Produktwirkung entsteht über den gesamten Lebenszyklus.
 
 3. **Was verändern Technologien besonders häufig?**
    - A) Nur Farben  B) Möglichkeitsräume, Kosten, Sichtbarkeit und Skalierung  C) Nur Gesetze  D) Nur Preise
-   - ✅ **Richtig: B** — Technologien verändern, was Menschen tun können und was leicht wird.
+   - ✅ **Richtig: B** - Technologien verändern, was Menschen tun können und was leicht wird.
 
 4. **Wie wirken Institutionen?**
    - A) Über Regeln, Routinen, Vertrauen und Anreize  B) Nur über Gebäude  C) Nur über Moral  D) Gar nicht
-   - ✅ **Richtig: A** — Institutionen strukturieren Erwartungen und Entscheidungen.
+   - ✅ **Richtig: A** - Institutionen strukturieren Erwartungen und Entscheidungen.
 
 5. **Warum reicht Modernität als Bewertung nicht aus?**
    - A) Weil Neues immer schlecht ist  B) Weil entscheidend die tatsächliche Netto-Wirkung ist  C) Weil Daten unnötig sind  D) Weil Institutionen unwichtig sind
-   - ✅ **Richtig: B** — Modernität sagt noch nichts über Zustandsveränderungen aus.
+   - ✅ **Richtig: B** - Modernität sagt noch nichts über Zustandsveränderungen aus.
 
 6. **Welche Frage steht am Anfang der Analyse?**
    - A) Wer bekommt Applaus?  B) Was löst der Auslöser aus und bei wem?  C) Wie klingt die Kampagne?  D) Wie hoch ist die Reichweite?
-   - ✅ **Richtig: B** — Die Analyse beginnt beim Wirkungspfad und den Betroffenen.
+   - ✅ **Richtig: B** - Die Analyse beginnt beim Wirkungspfad und den Betroffenen.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -808,11 +808,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v21-produkte-technologien-institutionen-als-ausloeser.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v21-produkte-technologien-institutionen-als-ausloeser.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

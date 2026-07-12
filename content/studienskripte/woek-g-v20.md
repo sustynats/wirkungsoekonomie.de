@@ -522,27 +522,27 @@ WÖk. Es geht um die Bedingungen, unter denen Wirkungspotenzial verantwortbar in
 
 1. **Was bedeutet gesellschaftliche Resonanz in dieser Vorlesung?**
    - A) Zustimmung in sozialen Medien  B) Anschlussfähigkeit eines Wirkimpulses in einem sozialen Raum  C) Werbebudget für eine Kampagne  D) gesetzliche Pflicht zur Veröffentlichung
-   - ✅ **Richtig: B** — Resonanz meint, ob ein Impuls aufgenommen, weitergetragen und in Zustandsveränderungen übersetzt werden kann.
+   - ✅ **Richtig: B** - Resonanz meint, ob ein Impuls aufgenommen, weitergetragen und in Zustandsveränderungen übersetzt werden kann.
 
 2. **Warum ist Reichweite nicht dasselbe wie Wirkung?**
    - A) Weil Reichweite nie messbar ist  B) Weil Reichweite Kontakte zählt, Wirkung aber tatsächliche Zustandsveränderung meint  C) Weil Reichweite immer negativ ist  D) Weil Wirkung nur offline entsteht
-   - ✅ **Richtig: B** — Viele Kontakte können folgenlos bleiben; Wirkung zeigt sich erst in der Veränderung von Zuständen.
+   - ✅ **Richtig: B** - Viele Kontakte können folgenlos bleiben; Wirkung zeigt sich erst in der Veränderung von Zuständen.
 
 3. **Welcher Faktor kann sachlich richtige Informationen trotzdem wirkungsarm machen?**
    - A) fehlendes Vertrauen  B) zu wenig Farbe im Layout  C) zu kurze Dateinamen  D) zu viele Tabellen
-   - ✅ **Richtig: A** — Ohne Vertrauen werden Informationen oft abgewehrt oder nicht in Entscheidungen übernommen.
+   - ✅ **Richtig: A** - Ohne Vertrauen werden Informationen oft abgewehrt oder nicht in Entscheidungen übernommen.
 
 4. **Was ist mit Anschlussfähigkeit gemeint?**
    - A) Alles so formulieren, dass niemand widerspricht  B) Neue Inhalte an vorhandene Erfahrungen, Rollen und Institutionen anschließen  C) Nur bekannte Begriffe verwenden  D) Wirkung vermeiden, damit keine Konflikte entstehen
-   - ✅ **Richtig: B** — Anschlussfähigkeit baut Brücken zwischen neuem Maßstab und bestehender Praxis.
+   - ✅ **Richtig: B** - Anschlussfähigkeit baut Brücken zwischen neuem Maßstab und bestehender Praxis.
 
 5. **Warum sind Trägerstrukturen wichtig?**
    - A) Sie ersetzen Wirkung  B) Sie stabilisieren Veränderungen über individuelle Einsicht hinaus  C) Sie verhindern Debatten  D) Sie machen Datenqualität überflüssig
-   - ✅ **Richtig: B** — Rollen, Routinen, Budgets und Institutionen tragen Wirkung dauerhaft.
+   - ✅ **Richtig: B** - Rollen, Routinen, Budgets und Institutionen tragen Wirkung dauerhaft.
 
 6. **Welche rote Linie gilt für Resonanzarbeit?**
    - A) Verständlich erklären  B) Quellen offenlegen  C) manipulative Überwältigung statt Klärung  D) Unsicherheit benennen
-   - ✅ **Richtig: C** — Resonanzarbeit darf nicht manipulieren; sie soll verständliche, prüfbare Orientierung ermöglichen.
+   - ✅ **Richtig: C** - Resonanzarbeit darf nicht manipulieren; sie soll verständliche, prüfbare Orientierung ermöglichen.
 
 ## 18. Glossar der Kernbegriffe
 
@@ -561,12 +561,12 @@ WÖk. Es geht um die Bedingungen, unter denen Wirkungspotenzial verantwortbar in
 
 ### Interne Quellen
 
-- `docs/lehrgaenge/woek-g-v20-gesellschaftliche-resonanzfaktoren.md` — Quell-Dokument für diese Vorlesung.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Format- und Produktionsvorgabe für ausführliche Studienskripte.
-- `docs/unternehmenslehrgaenge-konzept.md` — didaktischer Rahmen der WÖk-Akademie.
-- `docs/lehrgaenge/sprechertexte/woek-g-v19.md` — Anschluss an Wirkstoff, Wirkmechanismus und Wirkungspotenzial.
-- Website-Root `../buch.html` und `../assets/pdf/die-neue-ordnung-des-wohlstands.pdf` — aktuelles Grundlagenwerk der Wirkungsökonomie.
-- Website-Root `../feeds/journal.xml`, `../blog/wirkstoff-narrative-rechte-frames-wirkungspotenzial.html`, `../blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html`, `../blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html` — Journalbeispiele zu Narrativen, Resonanz, Faktenwirkung und Rückkopplung.
+- `docs/lehrgaenge/woek-g-v20-gesellschaftliche-resonanzfaktoren.md` - Quell-Dokument für diese Vorlesung.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Format- und Produktionsvorgabe für ausführliche Studienskripte.
+- `docs/unternehmenslehrgaenge-konzept.md` - didaktischer Rahmen der WÖk-Akademie.
+- `docs/lehrgaenge/sprechertexte/woek-g-v19.md` - Anschluss an Wirkstoff, Wirkmechanismus und Wirkungspotenzial.
+- Website-Root `../buch.html` und `../assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - aktuelles Grundlagenwerk der Wirkungsökonomie.
+- Website-Root `../feeds/journal.xml`, `../blog/wirkstoff-narrative-rechte-frames-wirkungspotenzial.html`, `../blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html`, `../blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html` - Journalbeispiele zu Narrativen, Resonanz, Faktenwirkung und Rückkopplung.
 - WÖk-Begriffslogik aus dem Website-/Projektkorpus: Wirkung, Wirkungspotenzial, Wirkungsrisiko, positive Netto-Wirkung, Rückkopplung, Nichtkompensation.
 
 ### Externe Quellen

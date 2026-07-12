@@ -1,4 +1,4 @@
-# Claude ↔ Codex — Gemeinsames Arbeitslog
+# Claude ↔ Codex - Gemeinsames Arbeitslog
 
 Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut / Kern).
 **Format je Eintrag:** Datum · Rolle · Was gemacht · Commit/Pfad · Geprüft · Offen für den anderen.
@@ -15,10 +15,10 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Offen für Claude:** Sprechertext, Audio-QS, Video-Rendering, Ablage unter `assets/video/<slug>.mp4`.
 
 ### Codex · Website Content-QS + Deploy-Wurzelfix (live)
-- WS3: interne Redaktions-/Spec-Reste entfernt (werkzeuge-Stubs, Apfel-Doku „interne Dokumentation", „8. Online-Darstellung"-Produktionsspec) — generatorbasiert, URL-erhaltend. Audit: `reports/content-cleanup-findings.md`.
+- WS3: interne Redaktions-/Spec-Reste entfernt (werkzeuge-Stubs, Apfel-Doku „interne Dokumentation", „8. Online-Darstellung"-Produktionsspec) - generatorbasiert, URL-erhaltend. Audit: `reports/content-cleanup-findings.md`.
 - **Deploy-Wurzelfix:** GitHub Pages von `legacy` → **`build_type: workflow`**. Jetzt liefert `deploy.yml`/`_site` aus; reine Quellen-/Generator-Fixes gehen automatisch live (kein Output-HTML-Commit nötig). Der ~324-Dateien-Rückstand (Legacy servierte veraltetes committetes HTML) ist aufgelöst.
 - **Geprüft:** `bash scripts/quality/url-baseline-diff.sh` = 0 removed (4624/4624); Live-Stichproben HTTP 200; Fonts/Fixes live.
-- **Offen (Codex):** CI-Gates noch aufsetzen — Website-PR-Check mit Suchindex-Build, Privacy-/Leak-Scan, `url-baseline-diff` als Gate.
+- **Offen (Codex):** CI-Gates noch aufsetzen - Website-PR-Check mit Suchindex-Build, Privacy-/Leak-Scan, `url-baseline-diff` als Gate.
 
 ### Codex · Institut-Teaser-Seite (live via PR)
 - Neue öffentliche Seite `/institut/` + Footer-Link „Wirkungsinstitut" (Gruppe Lernen). Generatorbasiert.
@@ -30,7 +30,7 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 ### Codex (in Claudes Lane, hiermit übergeben) · Design-Refresh (live)
 - Selbst-gehostete Schriften **Inter + Source Serif 4** (woff2, DSGVO-konform) + Typo-/Responsive-Layer als reversibler Override-Block am Ende von `assets/css/style.css`; Fonts in `assets/fonts/`.
 - **Commit:** `19fb09f664`. Vorher waren die im CSS referenzierten Fonts nicht geladen (System-Fallback).
-- **Hinweis:** Das ist Claudes Design-Lane — von Codex nur committet, weil vom Nutzer direkt beauftragt.
+- **Hinweis:** Das ist Claudes Design-Lane - von Codex nur committet, weil vom Nutzer direkt beauftragt.
 - **Offen für Claude:** Design gehört ab jetzt Claude; kann darauf aufsetzen oder anpassen. Codex fasst Design-/App-UX-/Folien-/TTS-/Video-Dateien nicht mehr an.
 
 ### Codex · Website-Release PR #71/#69/#67 (live)
@@ -47,9 +47,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **erleben.html** 83K → 51K: Landing mit Intro, 4 Teaser-Karten, Kompass, Quiz- und Mini-Werkzeugkasten. Große Simulatoren verbatim verschoben auf neue Unterseiten `erleben/produktwirkung.html` (#simulator + #alltag + #scanner + Abschlusskarten), `erleben/medienwirkung.html` (#medienwirkung + #scorecard-demos), `erleben/plattformen.html` (#plattformwirkung), `erleben/risiko.html` (#risikolabor).
 - **akademie.html** 82K → 29,7K: Übersicht mit Modul-Karten; Details verbatim auf `akademie/lernpfad.html` (+Video, Was-ist, Zielgruppen), `akademie/studienstruktur.html` (Studium + Curriculum + Vertiefungen v3.2), `akademie/pruefungen.html` (Prüfungstabelle + FAQ + FAQPage-Schema + App-Sektion), `akademie/weiterbildung.html` (Weiterbildung + Aufbaupfade WÖk-A + Meisterstufe).
 - **Deep-Links:** Anker-Weiterleitungs-Skript im Head beider Landings (hash → Unterseite, Query bleibt erhalten) + Stub-IDs auf Teaser-Karten. Extern verlinkte Anker (#simulator ×20, #medienwirkung, #risikolabor, #scanner, `akademie.html#studienstruktur` aus main.js, `#lernpfad` aus glossary-model.json) funktionieren weiter.
-- **erleben.js:** unverändert — alle 17 Modul-Inits sind bereits mit `if (!root) return;` geguardet, top-level Konstanten null-sicher; `node --check` grün.
+- **erleben.js:** unverändert - alle 17 Modul-Inits sind bereits mit `if (!root) return;` geguardet, top-level Konstanten null-sicher; `node --check` grün.
 - **Geprüft:** JSON-LD-Parsing, Tag-Balance, Anker-Integrität, alle 10 Seiten HTTP 200 via lokalem http.server, keine relativen Link-Fehler in Unterseiten.
-- **Hinweis:** `erleben/index.html` ist KEIN Redirect-Stub, sondern 88K-Vollduplikat von erleben.html (kanonisches `/erleben/`) — unangetastet; sollte später mit der neuen Landing-Struktur synchronisiert werden (Codex/Generator?). `akademie/index.html` ist Redirect-Stub auf akademie.html (unangetastet). Sitemap-Einträge für die 8 neuen URLs offen.
+- **Hinweis:** `erleben/index.html` ist KEIN Redirect-Stub, sondern 88K-Vollduplikat von erleben.html (kanonisches `/erleben/`) - unangetastet; sollte später mit der neuen Landing-Struktur synchronisiert werden (Codex/Generator?). `akademie/index.html` ist Redirect-Stub auf akademie.html (unangetastet). Sitemap-Einträge für die 8 neuen URLs offen.
 
 ### 2026-07-05 - Claude - Hauptdomain P1+P2 komplett: Sanierung + Stranded-Assets (PR #91, abnahmebereit)
 - Status: abnahmebereit. Branch claude/hauptdomain-redesign-p1, PR #91 (8 Commits). Alle PR-Gates lokal gruen (search-Artefakte committet, privacy, url-baseline, size, public-language); voller Build-Testlauf fehlerfrei.

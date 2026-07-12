@@ -95,27 +95,27 @@ Deeskalation ist keine Weichzeichnung. Eine schädliche Wirkung darf und muss be
 
 1. **Was bewertet die WÖk ausdrücklich nicht?**
    - A) Wirkungen von Produkten  B) Wirkungen von Regeln  C) Den Wert einzelner Menschen  D) Wirkungen von Institutionen
-   - ✅ **Richtig: C** — Die WÖk ist keine Personenbewertung und kein Social-Credit-System.
+   - ✅ **Richtig: C** - Die WÖk ist keine Personenbewertung und kein Social-Credit-System.
 
 2. **Was ist deeskalierende Kommunikation?**
    - A) Alles beschönigen  B) Sachlich beschreiben, Quellen nennen und Personenwürde achten  C) Konflikte vermeiden  D) Daten weglassen
-   - ✅ **Richtig: B** — Deeskalation hält Klarheit und Würde zusammen.
+   - ✅ **Richtig: B** - Deeskalation hält Klarheit und Würde zusammen.
 
 3. **Warum hat Wirkungskommunikation selbst Wirkung?**
    - A) Weil Sprache Orientierung, Vertrauen oder Abwehr erzeugen kann  B) Weil Sprache keine Rolle spielt  C) Weil Kommunikation immer neutral bleibt  D) Weil nur Zahlen wirken
-   - ✅ **Richtig: A** — Kommunikation verändert soziale Resonanzräume.
+   - ✅ **Richtig: A** - Kommunikation verändert soziale Resonanzräume.
 
 4. **Was stärkt demokratische Kommunikation?**
    - A) Feindbilder  B) Quellenklarheit, Beteiligung und Handlungsmöglichkeiten  C) Beschämung  D) absolute Gewissheit
-   - ✅ **Richtig: B** — Demokratie braucht begründete Orientierung und Teilhabe.
+   - ✅ **Richtig: B** - Demokratie braucht begründete Orientierung und Teilhabe.
 
 5. **Was bedeutet Deeskalation nicht?**
    - A) Quellen nennen  B) Schädliche Wirkung verharmlosen  C) respektvoll sprechen  D) Alternativen zeigen
-   - ✅ **Richtig: B** — Schädliche Wirkung bleibt klar benennbar.
+   - ✅ **Richtig: B** - Schädliche Wirkung bleibt klar benennbar.
 
 6. **Welche Formulierung passt am besten?**
    - A) Ihr seid das Problem  B) Diese Regel erzeugt in Feld X messbare Belastungen und sollte angepasst werden  C) Alles ist egal  D) Wer widerspricht, ist schlecht
-   - ✅ **Richtig: B** — Sie beschreibt Wirkung und Handlungsebene, ohne Personen abzuwerten.
+   - ✅ **Richtig: B** - Sie beschreibt Wirkung und Handlungsebene, ohne Personen abzuwerten.
 
 ## 7. Transferaufgabe
 
@@ -267,27 +267,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was bewertet die WÖk ausdrücklich nicht?**
    - A) Wirkungen von Produkten  B) Wirkungen von Regeln  C) Den Wert einzelner Menschen  D) Wirkungen von Institutionen
-   - ✅ **Richtig: C** — Die WÖk ist keine Personenbewertung und kein Social-Credit-System.
+   - ✅ **Richtig: C** - Die WÖk ist keine Personenbewertung und kein Social-Credit-System.
 
 2. **Was ist deeskalierende Kommunikation?**
    - A) Alles beschönigen  B) Sachlich beschreiben, Quellen nennen und Personenwürde achten  C) Konflikte vermeiden  D) Daten weglassen
-   - ✅ **Richtig: B** — Deeskalation hält Klarheit und Würde zusammen.
+   - ✅ **Richtig: B** - Deeskalation hält Klarheit und Würde zusammen.
 
 3. **Warum hat Wirkungskommunikation selbst Wirkung?**
    - A) Weil Sprache Orientierung, Vertrauen oder Abwehr erzeugen kann  B) Weil Sprache keine Rolle spielt  C) Weil Kommunikation immer neutral bleibt  D) Weil nur Zahlen wirken
-   - ✅ **Richtig: A** — Kommunikation verändert soziale Resonanzräume.
+   - ✅ **Richtig: A** - Kommunikation verändert soziale Resonanzräume.
 
 4. **Was stärkt demokratische Kommunikation?**
    - A) Feindbilder  B) Quellenklarheit, Beteiligung und Handlungsmöglichkeiten  C) Beschämung  D) absolute Gewissheit
-   - ✅ **Richtig: B** — Demokratie braucht begründete Orientierung und Teilhabe.
+   - ✅ **Richtig: B** - Demokratie braucht begründete Orientierung und Teilhabe.
 
 5. **Was bedeutet Deeskalation nicht?**
    - A) Quellen nennen  B) Schädliche Wirkung verharmlosen  C) respektvoll sprechen  D) Alternativen zeigen
-   - ✅ **Richtig: B** — Schädliche Wirkung bleibt klar benennbar.
+   - ✅ **Richtig: B** - Schädliche Wirkung bleibt klar benennbar.
 
 6. **Welche Formulierung passt am besten?**
    - A) Ihr seid das Problem  B) Diese Regel erzeugt in Feld X messbare Belastungen und sollte angepasst werden  C) Alles ist egal  D) Wer widerspricht, ist schlecht
-   - ✅ **Richtig: B** — Sie beschreibt Wirkung und Handlungsebene, ohne Personen abzuwerten.
+   - ✅ **Richtig: B** - Sie beschreibt Wirkung und Handlungsebene, ohne Personen abzuwerten.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -858,11 +858,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v24-deeskalierende-demokratiestaerkende-kommunikation.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v24-deeskalierende-demokratiestaerkende-kommunikation.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

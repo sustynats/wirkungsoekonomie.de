@@ -95,27 +95,27 @@ Die WÖk strebt keine Scheingenauigkeit an. Sie macht Datenqualität sichtbar, d
 
 1. **Warum sind Daten nicht automatisch Wahrheit?**
    - A) Weil sie aus Quellen, Methoden und Annahmen entstehen  B) Weil Daten nie helfen  C) Weil nur Meinung zählt  D) Weil Daten verboten sind
-   - ✅ **Richtig: A** — Daten müssen hinsichtlich Herkunft und Methode geprüft werden.
+   - ✅ **Richtig: A** - Daten müssen hinsichtlich Herkunft und Methode geprüft werden.
 
 2. **Welche Dimension gehört zur Datenqualität?**
    - A) Relevanz  B) Markenfarbe  C) Lautstärke  D) Klickrate allein
-   - ✅ **Richtig: A** — Relevanz zeigt, ob der Indikator das richtige Wirkungsfeld trifft.
+   - ✅ **Richtig: A** - Relevanz zeigt, ob der Indikator das richtige Wirkungsfeld trifft.
 
 3. **Was prüft ein Audit?**
    - A) Nur Rechtschreibung  B) Quelle, Methode, Grenze, Berechnung und Begründung  C) nur Design  D) nur Reichweite
-   - ✅ **Richtig: B** — Audit prüft die Belastbarkeit der Bewertung.
+   - ✅ **Richtig: B** - Audit prüft die Belastbarkeit der Bewertung.
 
 4. **Wie sollte Unsicherheit behandelt werden?**
    - A) Markieren und bei Entscheidungen berücksichtigen  B) Verstecken  C) Als Beweis nutzen  D) Ignorieren
-   - ✅ **Richtig: A** — Unsicherheit muss sichtbar in die Bewertung einfließen.
+   - ✅ **Richtig: A** - Unsicherheit muss sichtbar in die Bewertung einfließen.
 
 5. **Was ist problematisch an hohem Score mit schwacher Datenlage?**
    - A) Er ist weniger belastbar  B) Er ist immer falsch  C) Er ist automatisch besser  D) Er ersetzt Quellen
-   - ✅ **Richtig: A** — Bewertung braucht Score und Datenqualität.
+   - ✅ **Richtig: A** - Bewertung braucht Score und Datenqualität.
 
 6. **Was ist das Ziel der WÖk bei Datenqualität?**
    - A) Scheingenauigkeit  B) prüfbare und lernfähige Wirkungsbewertung  C) gar keine Daten  D) Personenranking
-   - ✅ **Richtig: B** — Datenqualität ermöglicht verlässliche Rückkopplung.
+   - ✅ **Richtig: B** - Datenqualität ermöglicht verlässliche Rückkopplung.
 
 ## 7. Transferaufgabe
 
@@ -341,27 +341,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Warum sind Daten nicht automatisch Wahrheit?**
    - A) Weil sie aus Quellen, Methoden und Annahmen entstehen  B) Weil Daten nie helfen  C) Weil nur Meinung zählt  D) Weil Daten verboten sind
-   - ✅ **Richtig: A** — Daten müssen hinsichtlich Herkunft und Methode geprüft werden.
+   - ✅ **Richtig: A** - Daten müssen hinsichtlich Herkunft und Methode geprüft werden.
 
 2. **Welche Dimension gehört zur Datenqualität?**
    - A) Relevanz  B) Markenfarbe  C) Lautstärke  D) Klickrate allein
-   - ✅ **Richtig: A** — Relevanz zeigt, ob der Indikator das richtige Wirkungsfeld trifft.
+   - ✅ **Richtig: A** - Relevanz zeigt, ob der Indikator das richtige Wirkungsfeld trifft.
 
 3. **Was prüft ein Audit?**
    - A) Nur Rechtschreibung  B) Quelle, Methode, Grenze, Berechnung und Begründung  C) nur Design  D) nur Reichweite
-   - ✅ **Richtig: B** — Audit prüft die Belastbarkeit der Bewertung.
+   - ✅ **Richtig: B** - Audit prüft die Belastbarkeit der Bewertung.
 
 4. **Wie sollte Unsicherheit behandelt werden?**
    - A) Markieren und bei Entscheidungen berücksichtigen  B) Verstecken  C) Als Beweis nutzen  D) Ignorieren
-   - ✅ **Richtig: A** — Unsicherheit muss sichtbar in die Bewertung einfließen.
+   - ✅ **Richtig: A** - Unsicherheit muss sichtbar in die Bewertung einfließen.
 
 5. **Was ist problematisch an hohem Score mit schwacher Datenlage?**
    - A) Er ist weniger belastbar  B) Er ist immer falsch  C) Er ist automatisch besser  D) Er ersetzt Quellen
-   - ✅ **Richtig: A** — Bewertung braucht Score und Datenqualität.
+   - ✅ **Richtig: A** - Bewertung braucht Score und Datenqualität.
 
 6. **Was ist das Ziel der WÖk bei Datenqualität?**
    - A) Scheingenauigkeit  B) prüfbare und lernfähige Wirkungsbewertung  C) gar keine Daten  D) Personenranking
-   - ✅ **Richtig: B** — Datenqualität ermöglicht verlässliche Rückkopplung.
+   - ✅ **Richtig: B** - Datenqualität ermöglicht verlässliche Rückkopplung.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -932,11 +932,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v30-datenqualitaet-audit-unsicherheit.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v30-datenqualitaet-audit-unsicherheit.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

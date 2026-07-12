@@ -95,27 +95,27 @@ Praktische Wirkungssprache arbeitet deshalb mit drei Sätzen: **Was wissen wir? 
 
 1. **Was ist Wirkung in der WÖk?**
    - A) Eine gute Absicht  B) Tatsächliche Veränderung von Zuständen  C) Ein Werbeslogan  D) Eine Reichweitenzahl
-   - ✅ **Richtig: B** — Wirkung ist neutral und beschreibt reale Zustandsveränderung.
+   - ✅ **Richtig: B** - Wirkung ist neutral und beschreibt reale Zustandsveränderung.
 
 2. **Was unterscheidet Wirkungspotenzial von Wirkung?**
    - A) Potenzial ist eine Möglichkeit, Wirkung eine tatsächliche Veränderung  B) Es gibt keinen Unterschied  C) Potenzial ist immer negativ  D) Wirkung ist nur ein Gefühl
-   - ✅ **Richtig: A** — Potenzial kann Wirkung ermöglichen, ersetzt sie aber nicht.
+   - ✅ **Richtig: A** - Potenzial kann Wirkung ermöglichen, ersetzt sie aber nicht.
 
 3. **Warum ist Quellenklarheit wichtig?**
    - A) Damit Aussagen belastbar und begrenzt bleiben  B) Damit Texte länger werden  C) Damit niemand widerspricht  D) Damit Daten ersetzt werden
-   - ✅ **Richtig: A** — Die Quelle zeigt, wie stark eine Aussage getragen ist.
+   - ✅ **Richtig: A** - Die Quelle zeigt, wie stark eine Aussage getragen ist.
 
 4. **Welche Formulierung ist am saubersten?**
    - A) Wir retten die Demokratie  B) Diese Maßnahme kann unter bestimmten Bedingungen demokratische Teilhabe stärken  C) Unsere Wirkung ist garantiert  D) Alle profitieren
-   - ✅ **Richtig: B** — Sie benennt Potenzial und Bedingung statt Garantie.
+   - ✅ **Richtig: B** - Sie benennt Potenzial und Bedingung statt Garantie.
 
 5. **Was ist Impact-Washing?**
    - A) Ehrliche Unsicherheit  B) Übertriebene oder unklare Wirkungsbehauptung  C) Saubere Quellenarbeit  D) Kritische Prüfung
-   - ✅ **Richtig: B** — Impact-Washing macht Wirkung größer oder sicherer, als sie belegt ist.
+   - ✅ **Richtig: B** - Impact-Washing macht Wirkung größer oder sicherer, als sie belegt ist.
 
 6. **Welche drei Fragen helfen bei sauberer Wirkungssprache?**
    - A) Was kostet es, wer wirbt, wer klickt?  B) Was wissen wir, was nehmen wir an, was ist offen?  C) Wer gewinnt, wer verliert, wer schweigt?  D) Was klingt gut, was ist kurz, was verkauft?
-   - ✅ **Richtig: B** — Diese drei Fragen halten Aussage, Annahme und Grenze auseinander.
+   - ✅ **Richtig: B** - Diese drei Fragen halten Aussage, Annahme und Grenze auseinander.
 
 ## 7. Transferaufgabe
 
@@ -307,27 +307,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was ist Wirkung in der WÖk?**
    - A) Eine gute Absicht  B) Tatsächliche Veränderung von Zuständen  C) Ein Werbeslogan  D) Eine Reichweitenzahl
-   - ✅ **Richtig: B** — Wirkung ist neutral und beschreibt reale Zustandsveränderung.
+   - ✅ **Richtig: B** - Wirkung ist neutral und beschreibt reale Zustandsveränderung.
 
 2. **Was unterscheidet Wirkungspotenzial von Wirkung?**
    - A) Potenzial ist eine Möglichkeit, Wirkung eine tatsächliche Veränderung  B) Es gibt keinen Unterschied  C) Potenzial ist immer negativ  D) Wirkung ist nur ein Gefühl
-   - ✅ **Richtig: A** — Potenzial kann Wirkung ermöglichen, ersetzt sie aber nicht.
+   - ✅ **Richtig: A** - Potenzial kann Wirkung ermöglichen, ersetzt sie aber nicht.
 
 3. **Warum ist Quellenklarheit wichtig?**
    - A) Damit Aussagen belastbar und begrenzt bleiben  B) Damit Texte länger werden  C) Damit niemand widerspricht  D) Damit Daten ersetzt werden
-   - ✅ **Richtig: A** — Die Quelle zeigt, wie stark eine Aussage getragen ist.
+   - ✅ **Richtig: A** - Die Quelle zeigt, wie stark eine Aussage getragen ist.
 
 4. **Welche Formulierung ist am saubersten?**
    - A) Wir retten die Demokratie  B) Diese Maßnahme kann unter bestimmten Bedingungen demokratische Teilhabe stärken  C) Unsere Wirkung ist garantiert  D) Alle profitieren
-   - ✅ **Richtig: B** — Sie benennt Potenzial und Bedingung statt Garantie.
+   - ✅ **Richtig: B** - Sie benennt Potenzial und Bedingung statt Garantie.
 
 5. **Was ist Impact-Washing?**
    - A) Ehrliche Unsicherheit  B) Übertriebene oder unklare Wirkungsbehauptung  C) Saubere Quellenarbeit  D) Kritische Prüfung
-   - ✅ **Richtig: B** — Impact-Washing macht Wirkung größer oder sicherer, als sie belegt ist.
+   - ✅ **Richtig: B** - Impact-Washing macht Wirkung größer oder sicherer, als sie belegt ist.
 
 6. **Welche drei Fragen helfen bei sauberer Wirkungssprache?**
    - A) Was kostet es, wer wirbt, wer klickt?  B) Was wissen wir, was nehmen wir an, was ist offen?  C) Wer gewinnt, wer verliert, wer schweigt?  D) Was klingt gut, was ist kurz, was verkauft?
-   - ✅ **Richtig: B** — Diese drei Fragen halten Aussage, Annahme und Grenze auseinander.
+   - ✅ **Richtig: B** - Diese drei Fragen halten Aussage, Annahme und Grenze auseinander.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -820,11 +820,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v22-wirkungssprache-und-quellenklarheit.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v22-wirkungssprache-und-quellenklarheit.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

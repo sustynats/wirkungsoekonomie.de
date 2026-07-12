@@ -95,27 +95,27 @@ Der Digitale Produktpass kann ein wichtiger Datencontainer werden. Aber auch hie
 
 1. **Was liefern CSRD, ESRS und GRI vor allem?**
    - A) Fertige Wirkungsklassen  B) Berichtsdaten und Struktur  C) Personenbewertungen  D) TTS-Dateien
-   - ✅ **Richtig: B** — Sie strukturieren Daten und Berichtspflichten.
+   - ✅ **Richtig: B** - Sie strukturieren Daten und Berichtspflichten.
 
 2. **Warum ist Reporting noch keine Wirkungssteuerung?**
    - A) Weil Daten immer falsch sind  B) Weil Daten erst in Wirkpfade, Bewertung und Entscheidungen übersetzt werden müssen  C) Weil Berichte verboten sind  D) Weil Wirkung nur Meinung ist
-   - ✅ **Richtig: B** — Reporting ist Quelle, nicht automatisch Rückkopplung.
+   - ✅ **Richtig: B** - Reporting ist Quelle, nicht automatisch Rückkopplung.
 
 3. **Wozu hilft NACE?**
    - A) Branchen zu klassifizieren  B) Menschen zu sortieren  C) Audio zu erzeugen  D) Demokratie zu ersetzen
-   - ✅ **Richtig: A** — Branchenklassifikation ermöglicht passende Benchmarks.
+   - ✅ **Richtig: A** - Branchenklassifikation ermöglicht passende Benchmarks.
 
 4. **Was kann ein Digitaler Produktpass leisten?**
    - A) Produktdaten bündeln  B) Wirkung garantieren  C) alle Zielkonflikte lösen  D) Quellen überflüssig machen
-   - ✅ **Richtig: A** — Der DPP kann Daten bereitstellen, aber nicht allein bewerten.
+   - ✅ **Richtig: A** - Der DPP kann Daten bereitstellen, aber nicht allein bewerten.
 
 5. **Was macht die WÖk mit Reportingdaten?**
    - A) Sie ignoriert sie  B) Sie übersetzt sie in Wirkungslogik, Scorecards und Steuerung  C) Sie ersetzt sie durch Werbung  D) Sie nutzt sie für Personenranking
-   - ✅ **Richtig: B** — Die WÖk macht aus Daten entscheidungsrelevante Wirkung.
+   - ✅ **Richtig: B** - Die WÖk macht aus Daten entscheidungsrelevante Wirkung.
 
 6. **Ist Taxonomie-Konformität automatisch positive Netto-Wirkung?**
    - A) Ja, immer  B) Nein, sie muss im Wirkungsprofil geprüft werden  C) Nur bei großen Unternehmen  D) Nur ohne Daten
-   - ✅ **Richtig: B** — Konformität ist ein Hinweis, kein vollständiges Wirkungsurteil.
+   - ✅ **Richtig: B** - Konformität ist ein Hinweis, kein vollständiges Wirkungsurteil.
 
 ## 7. Transferaufgabe
 
@@ -315,27 +315,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was liefern CSRD, ESRS und GRI vor allem?**
    - A) Fertige Wirkungsklassen  B) Berichtsdaten und Struktur  C) Personenbewertungen  D) TTS-Dateien
-   - ✅ **Richtig: B** — Sie strukturieren Daten und Berichtspflichten.
+   - ✅ **Richtig: B** - Sie strukturieren Daten und Berichtspflichten.
 
 2. **Warum ist Reporting noch keine Wirkungssteuerung?**
    - A) Weil Daten immer falsch sind  B) Weil Daten erst in Wirkpfade, Bewertung und Entscheidungen übersetzt werden müssen  C) Weil Berichte verboten sind  D) Weil Wirkung nur Meinung ist
-   - ✅ **Richtig: B** — Reporting ist Quelle, nicht automatisch Rückkopplung.
+   - ✅ **Richtig: B** - Reporting ist Quelle, nicht automatisch Rückkopplung.
 
 3. **Wozu hilft NACE?**
    - A) Branchen zu klassifizieren  B) Menschen zu sortieren  C) Audio zu erzeugen  D) Demokratie zu ersetzen
-   - ✅ **Richtig: A** — Branchenklassifikation ermöglicht passende Benchmarks.
+   - ✅ **Richtig: A** - Branchenklassifikation ermöglicht passende Benchmarks.
 
 4. **Was kann ein Digitaler Produktpass leisten?**
    - A) Produktdaten bündeln  B) Wirkung garantieren  C) alle Zielkonflikte lösen  D) Quellen überflüssig machen
-   - ✅ **Richtig: A** — Der DPP kann Daten bereitstellen, aber nicht allein bewerten.
+   - ✅ **Richtig: A** - Der DPP kann Daten bereitstellen, aber nicht allein bewerten.
 
 5. **Was macht die WÖk mit Reportingdaten?**
    - A) Sie ignoriert sie  B) Sie übersetzt sie in Wirkungslogik, Scorecards und Steuerung  C) Sie ersetzt sie durch Werbung  D) Sie nutzt sie für Personenranking
-   - ✅ **Richtig: B** — Die WÖk macht aus Daten entscheidungsrelevante Wirkung.
+   - ✅ **Richtig: B** - Die WÖk macht aus Daten entscheidungsrelevante Wirkung.
 
 6. **Ist Taxonomie-Konformität automatisch positive Netto-Wirkung?**
    - A) Ja, immer  B) Nein, sie muss im Wirkungsprofil geprüft werden  C) Nur bei großen Unternehmen  D) Nur ohne Daten
-   - ✅ **Richtig: B** — Konformität ist ein Hinweis, kein vollständiges Wirkungsurteil.
+   - ✅ **Richtig: B** - Konformität ist ein Hinweis, kein vollständiges Wirkungsurteil.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -838,11 +838,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v28-csrd-esrs-gri-eu-taxonomie-nace-dpp.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v28-csrd-esrs-gri-eu-taxonomie-nace-dpp.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

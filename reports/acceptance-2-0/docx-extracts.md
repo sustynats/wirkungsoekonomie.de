@@ -409,47 +409,47 @@ Wirkungsrückkopplung
 Daten bleiben nicht im Bericht, sondern verändern Preise, Steuern, Kapitalzugang, Förderung, Beschaffung oder Entscheidungen.
 4. Quellenbibliothek
 Verwendung: Die Karten nennen Quellen-IDs. Codex soll diese IDs in echte Quellenmodule, Fußnoten, Hover-Quellen oder Quellenkarten übersetzen. Externe Quellen sind vor Deployment auf Aktualität zu prüfen.
-I-BEG — WOeK_Begriffsleitfaden_fuehrend_v1.0.md: Führender Begriffsrahmen: Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkpfad, positive Netto-Wirkung, politische Sprache/Medien.
-I-WOHL — Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf: Grundmodell der Wirkungsökonomie, Mensch–Planet–Demokratie, Wirkungsrad, Rückkopplung, Medien- und Demokratiekapitel.
-I-SYS — Systemmodell-der-Wirkungsoekonomie.pdf: Systemische Ordnungskarte Mensch–Planet–Demokratie; Staat, Wirtschaft, Medien, Gesundheit, Kultur, Wissen als gekoppelte Wirkungsräume.
-I-NACH — Nachhaltigkeit-Systemarchitektur.pdf: Nachhaltigkeit als interdependente Systemarchitektur statt additiver Strategie; Nichtlinearität, Rückkopplung, Systemhebel.
-I-WSTG — WStG_Oktober2025.pdf: Wirkungssteuergesetz als Rahmenlogik für steuerliche Rückkopplung nach Wirkung auf Mensch, Planet und Demokratie.
-I-WUSTG — Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf: Technische Logik: WÖk-IDs, Archetypen, Benchmarks, Scorecards, Assurance, Reverse Merit Order.
-I-PROD — WP_Produkte.pdf: Produktwirkung, Preiswahrheit, digitale Produktpässe, Produktbesteuerung durch Wirkung.
-I-LIEFER — Wirkungsoekonomie in der Lieferkette.pdf: Lieferkettenwirkung, Vorsteuerlogik, T-Shirt-Beispiel, Scorecards, Nichtkompensation.
-I-RAT — Wirkungsrat_Konzept.pdf: Wirkungsrat, unabhängige Prüfung, Evaluation, Missbrauchsschutz, Transparenz.
-I-TSROI — Whitepaper-T-SROI.pdf: Transformational Social Return on Investment; Netto-Wirkung und Transformationswirkung.
-I-WOHN — WP_Wohnungsmarkt_.pdf: Wohnen als Wirkungsfeld, soziale/ökologische/demokratische Wohnwirkung, Verdrängung als nicht kompensierbares Feld.
-I-RENTE — WP_Rente.pdf: Wirkungsrente, demografische Schieflage, Lebensleistung statt bloßer Erwerbsbiografie.
-I-WESTG — WP_Einkommen.pdf: Wirkungseinkommensteuer, Einkommen als Wirkungskette, Tätigkeitswirkung.
-E-SDG — UN Sustainable Development Goals / Agenda 2030: Globaler Referenzrahmen der SDGs und Agenda 2030.
-E-IPCC — IPCC AR6 Synthesis Report: Klimawissenschaftlicher Referenzrahmen: Erwärmung, Ursachen, Emissionspfade, Risiken.
-E-GCP — Global Carbon Budget / Global Carbon Project: Aktuelle globale CO₂-Emissionsdaten.
-E-EDGAR — JRC EDGAR GHG Emissions Reports: Emissionsdaten und Länder-/EU-Vergleiche.
-E-UBA — Umweltbundesamt: Deutschlanddaten zu Treibhausgasen, Verkehr, Gebäuden, Energie, Landwirtschaft, Tempolimit, Ökobilanzen.
-E-IEA — International Energy Agency: Energiepfade, Erneuerbare, Wasserstoff, Stromsysteme, Elektromobilität.
-E-FRAUNHOFER — Fraunhofer ISE Energy Charts / Jahresberichte: Stromerzeugung Deutschland, Anteil erneuerbarer Energien, Kohlestromentwicklung.
-E-ICCT — International Council on Clean Transportation: Lebenszyklusanalysen E-Auto/Verbrenner.
-E-IAB — Institut für Arbeitsmarkt- und Berufsforschung: Beschäftigung, Migration, Geflüchtete, Fachkräftemangel, Bürgergeld-/Arbeitsmarktforschung.
-E-DEST — Statistisches Bundesamt: Demografie, Wohnen, Einkommen, Sozialdaten, Bevölkerung.
-E-BA — Bundesagentur für Arbeit: Arbeitsmarkt, Migration und Beschäftigungsstatistik.
-E-BUNDESBANK — Deutsche Bundesbank / EU-Haushaltsanalysen: EU-Nettozahlungen und ökonomischer Kontext des Binnenmarkts.
-E-BMZ — Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung: Entwicklungszusammenarbeit, Faktenchecks, Projektlogiken, ODA.
-E-OECD — OECD: Gesundheit, Bildung, Entwicklung, Sozialstaat, Governance, internationale Vergleiche.
-E-WHO — World Health Organization: Prävention, Gesundheitsförderung, One Health.
-E-FAO — Food and Agriculture Organization: Ernährungssysteme, versteckte Kosten, Landwirtschaft, Food Waste.
-E-EMFA — European Media Freedom Act: Medienfreiheit, Pluralismus und Schutz öffentlicher Information in der EU.
-E-DSA — EU Digital Services Act: Plattformverantwortung, Risikominimierung, Grundrechtsschutz im digitalen Raum.
-E-UNESCO — UNESCO Journalism, Disinformation, AI & Education resources: Medienkompetenz, Desinformation, KI in Bildung, Pressefreiheit.
-E-IMF — IMF AI and Future of Work: Auswirkungen von KI auf Beschäftigung und Einkommensverteilung.
-E-ILO — ILO Generative AI and Jobs: Arbeitsmarktwirkungen von generativer KI, Augmentation statt reine Verdrängung.
-E-BVERFG — Bundesverfassungsgericht: Demokratische Grundordnung, Parteiverbotsmaßstäbe, Grundrechtslogik.
-E-BFV — Bundesamt für Verfassungsschutz: freiheitliche demokratische Grundordnung und Beobachtung extremistischer Bestrebungen.
-E-UN-CHARTER — UN Charter Art. 2(4) / UN General Assembly resolutions on Ukraine: Souveränität, Gewaltverbot, Aggression und internationale Ordnung.
+I-BEG - WOeK_Begriffsleitfaden_fuehrend_v1.0.md: Führender Begriffsrahmen: Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkpfad, positive Netto-Wirkung, politische Sprache/Medien.
+I-WOHL - Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf: Grundmodell der Wirkungsökonomie, Mensch–Planet–Demokratie, Wirkungsrad, Rückkopplung, Medien- und Demokratiekapitel.
+I-SYS - Systemmodell-der-Wirkungsoekonomie.pdf: Systemische Ordnungskarte Mensch–Planet–Demokratie; Staat, Wirtschaft, Medien, Gesundheit, Kultur, Wissen als gekoppelte Wirkungsräume.
+I-NACH - Nachhaltigkeit-Systemarchitektur.pdf: Nachhaltigkeit als interdependente Systemarchitektur statt additiver Strategie; Nichtlinearität, Rückkopplung, Systemhebel.
+I-WSTG - WStG_Oktober2025.pdf: Wirkungssteuergesetz als Rahmenlogik für steuerliche Rückkopplung nach Wirkung auf Mensch, Planet und Demokratie.
+I-WUSTG - Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf: Technische Logik: WÖk-IDs, Archetypen, Benchmarks, Scorecards, Assurance, Reverse Merit Order.
+I-PROD - WP_Produkte.pdf: Produktwirkung, Preiswahrheit, digitale Produktpässe, Produktbesteuerung durch Wirkung.
+I-LIEFER - Wirkungsoekonomie in der Lieferkette.pdf: Lieferkettenwirkung, Vorsteuerlogik, T-Shirt-Beispiel, Scorecards, Nichtkompensation.
+I-RAT - Wirkungsrat_Konzept.pdf: Wirkungsrat, unabhängige Prüfung, Evaluation, Missbrauchsschutz, Transparenz.
+I-TSROI - Whitepaper-T-SROI.pdf: Transformational Social Return on Investment; Netto-Wirkung und Transformationswirkung.
+I-WOHN - WP_Wohnungsmarkt_.pdf: Wohnen als Wirkungsfeld, soziale/ökologische/demokratische Wohnwirkung, Verdrängung als nicht kompensierbares Feld.
+I-RENTE - WP_Rente.pdf: Wirkungsrente, demografische Schieflage, Lebensleistung statt bloßer Erwerbsbiografie.
+I-WESTG - WP_Einkommen.pdf: Wirkungseinkommensteuer, Einkommen als Wirkungskette, Tätigkeitswirkung.
+E-SDG - UN Sustainable Development Goals / Agenda 2030: Globaler Referenzrahmen der SDGs und Agenda 2030.
+E-IPCC - IPCC AR6 Synthesis Report: Klimawissenschaftlicher Referenzrahmen: Erwärmung, Ursachen, Emissionspfade, Risiken.
+E-GCP - Global Carbon Budget / Global Carbon Project: Aktuelle globale CO₂-Emissionsdaten.
+E-EDGAR - JRC EDGAR GHG Emissions Reports: Emissionsdaten und Länder-/EU-Vergleiche.
+E-UBA - Umweltbundesamt: Deutschlanddaten zu Treibhausgasen, Verkehr, Gebäuden, Energie, Landwirtschaft, Tempolimit, Ökobilanzen.
+E-IEA - International Energy Agency: Energiepfade, Erneuerbare, Wasserstoff, Stromsysteme, Elektromobilität.
+E-FRAUNHOFER - Fraunhofer ISE Energy Charts / Jahresberichte: Stromerzeugung Deutschland, Anteil erneuerbarer Energien, Kohlestromentwicklung.
+E-ICCT - International Council on Clean Transportation: Lebenszyklusanalysen E-Auto/Verbrenner.
+E-IAB - Institut für Arbeitsmarkt- und Berufsforschung: Beschäftigung, Migration, Geflüchtete, Fachkräftemangel, Bürgergeld-/Arbeitsmarktforschung.
+E-DEST - Statistisches Bundesamt: Demografie, Wohnen, Einkommen, Sozialdaten, Bevölkerung.
+E-BA - Bundesagentur für Arbeit: Arbeitsmarkt, Migration und Beschäftigungsstatistik.
+E-BUNDESBANK - Deutsche Bundesbank / EU-Haushaltsanalysen: EU-Nettozahlungen und ökonomischer Kontext des Binnenmarkts.
+E-BMZ - Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung: Entwicklungszusammenarbeit, Faktenchecks, Projektlogiken, ODA.
+E-OECD - OECD: Gesundheit, Bildung, Entwicklung, Sozialstaat, Governance, internationale Vergleiche.
+E-WHO - World Health Organization: Prävention, Gesundheitsförderung, One Health.
+E-FAO - Food and Agriculture Organization: Ernährungssysteme, versteckte Kosten, Landwirtschaft, Food Waste.
+E-EMFA - European Media Freedom Act: Medienfreiheit, Pluralismus und Schutz öffentlicher Information in der EU.
+E-DSA - EU Digital Services Act: Plattformverantwortung, Risikominimierung, Grundrechtsschutz im digitalen Raum.
+E-UNESCO - UNESCO Journalism, Disinformation, AI & Education resources: Medienkompetenz, Desinformation, KI in Bildung, Pressefreiheit.
+E-IMF - IMF AI and Future of Work: Auswirkungen von KI auf Beschäftigung und Einkommensverteilung.
+E-ILO - ILO Generative AI and Jobs: Arbeitsmarktwirkungen von generativer KI, Augmentation statt reine Verdrängung.
+E-BVERFG - Bundesverfassungsgericht: Demokratische Grundordnung, Parteiverbotsmaßstäbe, Grundrechtslogik.
+E-BFV - Bundesamt für Verfassungsschutz: freiheitliche demokratische Grundordnung und Beobachtung extremistischer Bestrebungen.
+E-UN-CHARTER - UN Charter Art. 2(4) / UN General Assembly resolutions on Ukraine: Souveränität, Gewaltverbot, Aggression und internationale Ordnung.
 5. Kartenindex
-01. Migration kostet nur? — Migration
-02. Deutschland nur 2 Prozent? — Klima & Energie
-03. Windräder zerstören Natur? — Klima & Energie
+01. Migration kostet nur? - Migration
+02. Deutschland nur 2 Prozent? - Klima & Energie
+03. Windräder zerstören Natur? - Klima & Energie
 
 
 …

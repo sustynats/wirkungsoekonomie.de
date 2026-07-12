@@ -105,19 +105,19 @@ const write = (rel, html) => {
 const KAT_INTRO = {
   A: 'Bevor irgendetwas gemessen oder gebaut wird: Wofür haben wir überhaupt ein Mandat, und wo verlaufen die roten Linien für Mensch, Planet und Demokratie?',
   B: 'Erst verstehen, dann steuern. Wie hängt das System zusammen, welche Rückkopplungen und Hebel gibt es, und wo entstehen Wirkungen wirklich?',
-  C: 'Vom Zusammenhang zum Modell: Wir bilden ab, wie aus Handeln Zustandsveränderungen werden — mit Zukunftslogik statt Wunschdenken.',
-  D: 'Was zählt, muss auch ehrlich gemessen werden. Indikatoren, Bewertung und Evidenz — inklusive Unsicherheit und Gegenprobe.',
+  C: 'Vom Zusammenhang zum Modell: Wir bilden ab, wie aus Handeln Zustandsveränderungen werden - mit Zukunftslogik statt Wunschdenken.',
+  D: 'Was zählt, muss auch ehrlich gemessen werden. Indikatoren, Bewertung und Evidenz - inklusive Unsicherheit und Gegenprobe.',
   E: 'Aus Wirkung wird Richtung: Strategie, Portfolio und Governance sorgen dafür, dass Entscheidungen der Wirkung folgen und nicht umgekehrt.',
-  F: 'Angebote, Geschäfts- und Finanzierungsmodelle als Wirkungssysteme denken — tragfähig, mit klaren Grenzen und eingebautem Lernen.',
+  F: 'Angebote, Geschäfts- und Finanzierungsmodelle als Wirkungssysteme denken - tragfähig, mit klaren Grenzen und eingebautem Lernen.',
   G: 'Menschen machen Wirkung. Organisation, Führung und Kultur so gestalten, dass das Richtige leicht und das Schädliche schwer wird.',
-  H: 'Umsetzen, beobachten, lernen — und prüfbar bleiben. Der Kreis schließt sich mit Monitoring, Lernen und Assurance.',
+  H: 'Umsetzen, beobachten, lernen - und prüfbar bleiben. Der Kreis schließt sich mit Monitoring, Lernen und Assurance.',
   I: 'Nach vorn schauen: Szenarien, Frühwarnung und Entscheidungsintelligenz für eine Welt voller Unsicherheit.',
   J: 'Die Bauzeichnung der Organisation: Fähigkeiten und Zielarchitektur, damit Strategie tragende Strukturen bekommt.',
   K: 'Wie fließt die Arbeit? Wertströme, Prozesse und Services so gestalten, dass Wirkung ohne Reibung entsteht.',
   L: 'Produkte dauerhaft betreiben: Teams, Plattformen und Ökosysteme statt Projekt-Strohfeuer.',
-  M: 'Veränderung, die ankommt: Adoption, Workforce, Skills und Wissen — damit Neues wirklich gelebt wird.',
+  M: 'Veränderung, die ankommt: Adoption, Workforce, Skills und Wissen - damit Neues wirklich gelebt wird.',
   N: 'Vieles gleichzeitig steuern: Portfolio, Programme und Delivery, konsequent auf realisierte Wirkung ausgerichtet.',
-  O: 'Daten, Technologie und KI verantwortungsvoll nutzen — inklusive agentischer Systeme, mit Schutzregeln first.',
+  O: 'Daten, Technologie und KI verantwortungsvoll nutzen - inklusive agentischer Systeme, mit Schutzregeln first.',
   P: 'Vertrauen durch Nachweis: Qualität, operative Resilienz, Kontrollen und integrierte Assurance.',
 };
 
@@ -177,7 +177,7 @@ function methodPage(m) {
             <dl class="portal-meta-grid compact">
               <div><dt>Kategorie</dt><dd>${esc(m.kategorie)}</dd></div>
               <div><dt>Schritte</dt><dd>${(m.schritte || []).length}</dd></div>
-              <div><dt>Canvas</dt><dd>${canvas ? (canvas.felder.length + PFLICHT.length) + ' Felder' : '—'}</dd></div>
+              <div><dt>Canvas</dt><dd>${canvas ? (canvas.felder.length + PFLICHT.length) + ' Felder' : '-'}</dd></div>
             </dl>
           </aside>
         </div>
@@ -190,16 +190,16 @@ ${m.schutzregeln?.length ? section('Die roten Linien', 'Schutzregeln', `        
       <section class="section">
         <div class="card">
           <p class="hero-kicker">Die Arbeitsfläche</p>
-          <h2>Canvas${canvas ? ' — ' + esc(canvas.name) : ''}</h2>
-          <p>Eine leere Vorlage mit klaren Leitfragen. Die fünf Pflichtfelder sind immer auszufüllen — sie halten Ehrlichkeit und Nichtkompensation im Blick.</p>
+          <h2>Canvas${canvas ? ' - ' + esc(canvas.name) : ''}</h2>
+          <p>Eine leere Vorlage mit klaren Leitfragen. Die fünf Pflichtfelder sind immer auszufüllen - sie halten Ehrlichkeit und Nichtkompensation im Blick.</p>
           ${canvasFelder}
           <p class="note">Ausgefülltes Beispiel folgt. <a href="${base}methodenraum/canvas/">Mehr zum Canvas-Prinzip</a>.</p>
         </div>
       </section>
       <section class="section">
         <div class="card-grid two">
-          <article class="card"><p class="card-kicker">Baut auf</p>${(m.schnittstellen?.bautAuf?.length ? `<p>${m.schnittstellen.bautAuf.map(linkChip).join(' ')}</p>` : '<p class="note">—</p>')}</article>
-          <article class="card"><p class="card-kicker">Führt zu</p>${(m.schnittstellen?.fuehrtZu?.length ? `<p>${m.schnittstellen.fuehrtZu.map(linkChip).join(' ')}</p>` : '<p class="note">—</p>')}</article>
+          <article class="card"><p class="card-kicker">Baut auf</p>${(m.schnittstellen?.bautAuf?.length ? `<p>${m.schnittstellen.bautAuf.map(linkChip).join(' ')}</p>` : '<p class="note">-</p>')}</article>
+          <article class="card"><p class="card-kicker">Führt zu</p>${(m.schnittstellen?.fuehrtZu?.length ? `<p>${m.schnittstellen.fuehrtZu.map(linkChip).join(' ')}</p>` : '<p class="note">-</p>')}</article>
         </div>
       </section>
       <section class="section">
@@ -258,7 +258,7 @@ function hub() {
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}methodenraum.html">Methodenraum</a> / Methoden</nav>
             <p class="hero-kicker">WÖMS · Methodensystem</p>
             <h1>152 Methoden in 16 Kategorien</h1>
-            <p class="hero-subtitle">Jede Methode zeigt konkret, <em>wie</em> man einen Schritt der Wirkungsökonomie ab Montag tut — mit Zweck, Schritten, Outputs, Qualitäts- und Schutzregeln und einem Canvas zum Ausfüllen.</p>
+            <p class="hero-subtitle">Jede Methode zeigt konkret, <em>wie</em> man einen Schritt der Wirkungsökonomie ab Montag tut - mit Zweck, Schritten, Outputs, Qualitäts- und Schutzregeln und einem Canvas zum Ausfüllen.</p>
             <p>${catNav}</p>
           </div>
           <aside class="card">
@@ -285,7 +285,7 @@ function hub() {
         <div class="card">
           <p class="hero-kicker">So liest du das System</p>
           <h2>A–H Grundlogik, I–P Realisierung</h2>
-          <p>Die Kategorien <strong>A–H</strong> bilden die wirkungsökonomische Grundlogik von Mandat bis Lernen. <strong>I–P</strong> operationalisieren die Realisierung: von Vorausschau über Fähigkeiten, Prozesse und Produkte bis zu Daten, KI und Assurance. Über <em>Baut auf</em> und <em>Führt zu</em> hängt alles zusammen — nichts steht für sich.</p>
+          <p>Die Kategorien <strong>A–H</strong> bilden die wirkungsökonomische Grundlogik von Mandat bis Lernen. <strong>I–P</strong> operationalisieren die Realisierung: von Vorausschau über Fähigkeiten, Prozesse und Produkte bis zu Daten, KI und Assurance. Über <em>Baut auf</em> und <em>Führt zu</em> hängt alles zusammen - nichts steht für sich.</p>
           <div class="hero-actions no-print" style="margin-top:1rem"><a class="btn btn-secondary" href="${base}lernen/">Diese Methoden in der Akademie lernen</a></div>
         </div>
       </section>
@@ -296,7 +296,7 @@ ${catBlocks}`;
     page({
       base,
       title: 'WÖMS · 152 Methoden | Methodensystem der Wirkungsökonomie',
-      desc: 'Alle 152 Kernmethoden des Wirkungsökonomischen Methodensystems (WÖMS) in 16 Kategorien — mit Schritten, Schutzregeln und Canvas.',
+      desc: 'Alle 152 Kernmethoden des Wirkungsökonomischen Methodensystems (WÖMS) in 16 Kategorien - mit Schritten, Schutzregeln und Canvas.',
       type: 'Übersicht',
       body,
     })
@@ -318,7 +318,7 @@ function gesamtbild() {
             <p class="hero-subtitle">Wie sich eine Organisation als <em>lernendes Wirkungssystem</em> führen lässt: der normative Kompass, die Räume und Felder des Managements, und die Architektur, die aus Absicht echte Wirkung macht.</p>
             <div class="hero-actions no-print"><a class="btn btn-primary" href="${base}assets/downloads/woemm-woems-praesentation-2.0.pdf">Referenzpräsentation (PDF)</a><a class="btn btn-secondary" href="${base}methodenraum/methoden/">Zum Methodensystem</a></div>
           </div>
-          <aside class="card"><p class="card-kicker">Der Kern in einem Satz</p><p class="lead">Ein Modell zeigt, <em>worauf</em> es ankommt — die Methoden zeigen, <em>wie</em> man es tut. Das WÖMM ist das Worauf.</p></aside>
+          <aside class="card"><p class="card-kicker">Der Kern in einem Satz</p><p class="lead">Ein Modell zeigt, <em>worauf</em> es ankommt - die Methoden zeigen, <em>wie</em> man es tut. Das WÖMM ist das Worauf.</p></aside>
         </div>
       </section>
       <section class="section section-soft">
@@ -330,37 +330,37 @@ function gesamtbild() {
       <section class="section"><div class="card">
         <p class="hero-kicker">Warum überhaupt ein neues Modell</p>
         <h2>Weil die alten Werkzeuge die falsche Tabelle führen</h2>
-        <p>Klassische Managementmodelle optimieren, was sich leicht zählen lässt: Umsatz, Kosten, Auslastung. Wirkung auf Mensch, Planet und Demokratie taucht darin bestenfalls als Bericht am Jahresende auf — wie ein Fairplay-Preis nach dem Spiel. Das WÖMM verändert die Tabelle selbst: Zustandsveränderungen werden zum obersten Maßstab, an dem Strategie, Angebote und Betrieb ausgerichtet werden.</p>
+        <p>Klassische Managementmodelle optimieren, was sich leicht zählen lässt: Umsatz, Kosten, Auslastung. Wirkung auf Mensch, Planet und Demokratie taucht darin bestenfalls als Bericht am Jahresende auf - wie ein Fairplay-Preis nach dem Spiel. Das WÖMM verändert die Tabelle selbst: Zustandsveränderungen werden zum obersten Maßstab, an dem Strategie, Angebote und Betrieb ausgerichtet werden.</p>
       </div></section>
       <section class="section">
-        <div class="section-header"><p class="hero-kicker">Der Kompass</p><h2>Wirkungskompass: Mensch · Planet · Demokratie</h2><p>Drei Wirkungsdimensionen geben die Richtung vor. Sie werden nicht gegeneinander verrechnet — eine verletzte Grenze in einer Dimension lässt sich nicht durch Erfolge in einer anderen ausgleichen (Nichtkompensation).</p></div>
+        <div class="section-header"><p class="hero-kicker">Der Kompass</p><h2>Wirkungskompass: Mensch · Planet · Demokratie</h2><p>Drei Wirkungsdimensionen geben die Richtung vor. Sie werden nicht gegeneinander verrechnet - eine verletzte Grenze in einer Dimension lässt sich nicht durch Erfolge in einer anderen ausgleichen (Nichtkompensation).</p></div>
         <div class="card-grid three">
-          ${card('Dimension', 'Mensch', 'Gesundheit, Teilhabe, Würde, Sicherheit — spürt der Mensch eine echte Verbesserung?')}
-          ${card('Dimension', 'Planet', 'Klima, Ressourcen, Biodiversität — bleibt der ökologische Boden tragfähig?')}
-          ${card('Dimension', 'Demokratie', 'Vertrauen, Fairness, Institutionen — wird das Gemeinwesen gestärkt statt ausgehöhlt?')}
+          ${card('Dimension', 'Mensch', 'Gesundheit, Teilhabe, Würde, Sicherheit - spürt der Mensch eine echte Verbesserung?')}
+          ${card('Dimension', 'Planet', 'Klima, Ressourcen, Biodiversität - bleibt der ökologische Boden tragfähig?')}
+          ${card('Dimension', 'Demokratie', 'Vertrauen, Fairness, Institutionen - wird das Gemeinwesen gestärkt statt ausgehöhlt?')}
         </div>
       </section>
       <section class="section">
-        <div class="section-header"><p class="hero-kicker">Die Landkarte</p><h2>Sieben Wirkungsräume &amp; zwölf Managementfelder</h2><p>Die Wirkungsräume sagen, <em>wo</em> Organisationen wirken; die zwölf Managementfelder in vier Clustern sagen, <em>was</em> dort gesteuert wird — von Orientierung und Strategie über Angebote und Organisation bis zu Umsetzung, Daten und Assurance.</p></div>
+        <div class="section-header"><p class="hero-kicker">Die Landkarte</p><h2>Sieben Wirkungsräume &amp; zwölf Managementfelder</h2><p>Die Wirkungsräume sagen, <em>wo</em> Organisationen wirken; die zwölf Managementfelder in vier Clustern sagen, <em>was</em> dort gesteuert wird - von Orientierung und Strategie über Angebote und Organisation bis zu Umsetzung, Daten und Assurance.</p></div>
         <div class="card-grid two">
-          ${card('Cluster', 'Ausrichten', 'Mandat, Systemdiagnose, Wirkungsmodell, Messung — verstehen und Richtung geben.')}
-          ${card('Cluster', 'Gestalten', 'Strategie & Portfolio, Angebote & Geschäftsmodelle — das Richtige entwerfen.')}
-          ${card('Cluster', 'Realisieren', 'Organisation, Prozesse, Produkte, Change — es tatsächlich zum Laufen bringen.')}
-          ${card('Cluster', 'Sichern', 'Daten & KI, Qualität, Resilienz, Assurance — nachweisbar und robust halten.')}
+          ${card('Cluster', 'Ausrichten', 'Mandat, Systemdiagnose, Wirkungsmodell, Messung - verstehen und Richtung geben.')}
+          ${card('Cluster', 'Gestalten', 'Strategie & Portfolio, Angebote & Geschäftsmodelle - das Richtige entwerfen.')}
+          ${card('Cluster', 'Realisieren', 'Organisation, Prozesse, Produkte, Change - es tatsächlich zum Laufen bringen.')}
+          ${card('Cluster', 'Sichern', 'Daten & KI, Qualität, Resilienz, Assurance - nachweisbar und robust halten.')}
         </div>
       </section>
       <section class="section">
         <div class="section-header"><p class="hero-kicker">Der Rhythmus</p><h2>Wirkungsrad, sechs Entscheidungstore, Reifegrade</h2></div>
         <div class="card-grid three">
           ${card('Wirkungsrad', 'Der Lernkreis', 'Ausrichten → Gestalten → Realisieren → Messen → Lernen, immer wieder. Wirkung ist kein Projekt, sondern ein Kreislauf.')}
-          ${card('Entscheidungstore', 'Tor 0 bis Tor 5', 'An jedem Tor wird bewusst entschieden: weitermachen, nachbessern — oder stoppen und neu denken, wenn eine Wirkungsgrenze verletzt wird.')}
-          ${card('Reifegrade', 'Wo stehen wir?', 'Sechs Stufen zeigen, wie tief die Organisation Wirkung schon steuert — vom ersten Bewusstsein bis zur durchgängigen Wirkungsführung.')}
+          ${card('Entscheidungstore', 'Tor 0 bis Tor 5', 'An jedem Tor wird bewusst entschieden: weitermachen, nachbessern - oder stoppen und neu denken, wenn eine Wirkungsgrenze verletzt wird.')}
+          ${card('Reifegrade', 'Wo stehen wir?', 'Sechs Stufen zeigen, wie tief die Organisation Wirkung schon steuert - vom ersten Bewusstsein bis zur durchgängigen Wirkungsführung.')}
         </div>
       </section>
       <section class="section"><div class="card">
         <p class="hero-kicker">Der entscheidende Unterschied</p>
         <h2>Wirkungsrealisierungsarchitektur: „Deliverables ≠ Wirkung"</h2>
-        <p>Viele Vorhaben liefern fleißig Ergebnisse — Berichte, Features, Workshops — und verwechseln diese Deliverables mit Wirkung. Die Realisierungsarchitektur schließt genau diese Lücke: Sie verfolgt die Kette von Leistung über Nutzung und Verhaltensänderung bis zur tatsächlichen Zustandsveränderung, und macht sichtbar, wo sie reißt. Erst am Ende dieser Kette steht Wirkung.</p>
+        <p>Viele Vorhaben liefern fleißig Ergebnisse - Berichte, Features, Workshops - und verwechseln diese Deliverables mit Wirkung. Die Realisierungsarchitektur schließt genau diese Lücke: Sie verfolgt die Kette von Leistung über Nutzung und Verhaltensänderung bis zur tatsächlichen Zustandsveränderung, und macht sichtbar, wo sie reißt. Erst am Ende dieser Kette steht Wirkung.</p>
         <div class="hero-actions no-print"><a class="btn btn-primary" href="${base}methodenraum/methoden/">152 Methoden ansehen</a></div>
       </div></section>`;
   write(
@@ -394,7 +394,7 @@ function canvasIndex() {
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}methodenraum.html">Methodenraum</a> / Canvas</nav>
         <p class="hero-kicker">WÖMS · Canvas-Prinzip</p>
         <h1>Canvas: die Arbeitsfläche jeder Methode</h1>
-        <p class="hero-subtitle">Zu jeder Methode gehört ein Canvas — eine Arbeitsfläche mit klaren Leitfragen zum Ausfüllen. So wird aus Theorie sofort etwas, das man im Team bearbeiten kann.</p>
+        <p class="hero-subtitle">Zu jeder Methode gehört ein Canvas - eine Arbeitsfläche mit klaren Leitfragen zum Ausfüllen. So wird aus Theorie sofort etwas, das man im Team bearbeiten kann.</p>
         <div class="hero-actions no-print"><a class="btn btn-primary" href="${base}methodenraum/methoden/">Zu den 152 Methoden-Canvas</a></div>
       </div><aside class="card"><p class="card-kicker">Auf einen Blick</p><dl class="portal-meta-grid compact"><div><dt>Methoden-Canvas</dt><dd>152</dd></div><div><dt>Anwendungs-Canvas</dt><dd>56</dd></div><div><dt>Pflichtfelder</dt><dd>5</dd></div></dl></aside></div></section>
       <section class="section section-soft"><div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Canvas-Prinzip im Video</h2></div>
@@ -402,13 +402,13 @@ function canvasIndex() {
       </section>
       <section class="section"><div class="card">
         <p class="hero-kicker">Immer dabei</p><h2>Die fünf Pflichtfelder</h2>
-        <p>Egal welche Methode — diese fünf Felder sind nie optional. Sie halten die Ehrlichkeit im System und verhindern, dass gute Zahlen schlechte überdecken.</p>
+        <p>Egal welche Methode - diese fünf Felder sind nie optional. Sie halten die Ehrlichkeit im System und verhindern, dass gute Zahlen schlechte überdecken.</p>
         <ul>${li(PFLICHT.map((p) => p.charAt(0).toUpperCase() + p.slice(1)))}</ul>
         <p class="note">Nichtkompensation: Eine verletzte Wirkungsgrenze erzeugt immer „Stopp oder neu gestalten". Ein aggregierter Gesamtwert ist dann unzulässig.</p>
       </div></section>
       <section class="section"><div class="card">
         <p class="hero-kicker">Die 152 Methoden-Canvas</p><h2>Jede Methode hat ihr eigenes Canvas</h2>
-        <p>Das eigentliche, füllbare Canvas liegt bei jeder Methode selbst — als leere Vorlage mit Leitfragen und den fünf Pflichtfeldern. Öffne eine Methode und scrolle zu „Die Arbeitsfläche".</p>
+        <p>Das eigentliche, füllbare Canvas liegt bei jeder Methode selbst - als leere Vorlage mit Leitfragen und den fünf Pflichtfeldern. Öffne eine Methode und scrolle zu „Die Arbeitsfläche".</p>
         <div class="hero-actions no-print"><a class="btn btn-secondary" href="${base}methodenraum/methoden/">Alle 152 Methoden öffnen</a></div>
       </div></section>
       <section class="section"><div class="section-header"><p class="hero-kicker">56 Anwendungs- und Realisierungs-Canvas</p><h2>Für konkrete Module</h2><p>Zusätzlich zu den 152 Methoden-Canvas gibt es fachspezifische Varianten für einzelne Anwendungsmodule. Jede führt zu ihrer Methode.</p></div>
@@ -453,7 +453,7 @@ function journeys() {
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}methodenraum.html">Methodenraum</a> / Journeys</nav>
         <p class="hero-kicker">WÖMS · Workshop-Journeys</p>
         <h1>20 Standard-Workshop-Journeys</h1>
-        <p class="hero-subtitle">Fertige Ablaufpläne, die Methoden zu einem Workshop verketten — für Team, Beratung und Coaching. Jede Journey ist ein roter Faden aus mehreren Methoden.</p>
+        <p class="hero-subtitle">Fertige Ablaufpläne, die Methoden zu einem Workshop verketten - für Team, Beratung und Coaching. Jede Journey ist ein roter Faden aus mehreren Methoden.</p>
       </div><aside class="card"><p class="card-kicker">Hinweis</p><p class="note">Die ausführlichen Moderationsleitfäden je Journey folgen fortlaufend; die Methoden dahinter sind bereits vollständig verlinkt.</p></aside></div></section>
       <section class="section section-soft"><div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Methodensystem im Video</h2></div>
         <figure style="max-width:900px;margin:0 auto"><video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4">Dein Browser unterstützt kein Video.</video></figure>
@@ -493,7 +493,7 @@ function praesentation() {
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}methodenraum.html">Methodenraum</a> / Präsentation</nav>
         <p class="hero-kicker">WÖMM &amp; WÖMS · Referenzpräsentation</p>
         <h1>Zum Durchklicken</h1>
-        <p class="hero-subtitle">Managementmodell, Realisierungsarchitektur, Methodenlandschaft und Canvas-Prinzip — ${slides.length} Folien. Mit den Pfeiltasten ← → blättern, oder unten die Punkte.</p>
+        <p class="hero-subtitle">Managementmodell, Realisierungsarchitektur, Methodenlandschaft und Canvas-Prinzip - ${slides.length} Folien. Mit den Pfeiltasten ← → blättern, oder unten die Punkte.</p>
       </div><aside class="card"><p class="card-kicker">Auch als Datei</p><div class="hero-actions no-print"><a class="btn btn-secondary" href="${base}assets/downloads/woemm-woems-praesentation-2.0.pdf">PDF herunterladen</a></div></aside></div></section>
       <section class="section">
         ${style}
@@ -539,7 +539,7 @@ function praesentation() {
   write('methodenraum/praesentation/index.html', page({
     base,
     title: 'Referenzpräsentation zum Durchklicken | WÖMM & WÖMS | Wirkungsökonomie',
-    desc: `Die kombinierte WÖMM- & WÖMS-Referenzpräsentation (${slides.length} Folien) online durchklicken — Managementmodell, Realisierungsarchitektur, Methodenlandschaft und Canvas-Prinzip.`,
+    desc: `Die kombinierte WÖMM- & WÖMS-Referenzpräsentation (${slides.length} Folien) online durchklicken - Managementmodell, Realisierungsarchitektur, Methodenlandschaft und Canvas-Prinzip.`,
     type: 'Präsentation',
     body,
   }));

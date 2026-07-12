@@ -7,10 +7,10 @@
 </head>
 <body>
 <pre>{
-  &quot;generatedAt&quot;: &quot;2026-07-11T23:03:44.863Z&quot;,
+  &quot;generatedAt&quot;: &quot;2026-07-12T21:52:06.302Z&quot;,
   &quot;version&quot;: &quot;v1&quot;,
   &quot;summary&quot;: {
-    &quot;totalBuildSteps&quot;: 79,
+    &quot;totalBuildSteps&quot;: 81,
     &quot;dataProducts&quot;: 9,
     &quot;workflowGates&quot;: 5,
     &quot;scripts&quot;: 97
@@ -209,7 +209,7 @@
     }
   ],
   &quot;build&quot;: {
-    &quot;totalSteps&quot;: 79,
+    &quot;totalSteps&quot;: 81,
     &quot;phases&quot;: [
       &quot;academy-certificates&quot;,
       &quot;build-step&quot;,
@@ -615,7 +615,17 @@
       },
       {
         &quot;order&quot;: 79,
+        &quot;command&quot;: &quot;node scripts/search/build-woek-search-index.mjs&quot;,
+        &quot;phase&quot;: &quot;knowledge-search&quot;
+      },
+      {
+        &quot;order&quot;: 80,
         &quot;command&quot;: &quot;node scripts/check-public-language.js&quot;,
+        &quot;phase&quot;: &quot;quality-gate&quot;
+      },
+      {
+        &quot;order&quot;: 81,
+        &quot;command&quot;: &quot;node scripts/quality/check-no-em-dash.mjs --fix&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       }
     ]
@@ -623,8 +633,8 @@
   &quot;scripts&quot;: [
     {
       &quot;name&quot;: &quot;build&quot;,
-      &quot;command&quot;: &quot;node scripts/methods/build-woems-exports.mjs &amp;&amp; node scripts/methods/build-methodenraum-pages.mjs &amp;&amp; node scripts/academy/build-curriculum-exports.mjs &amp;&amp; node scripts/glossary/build-glossary-registry.mjs &amp;&amp; node scripts/glossary/build-term-links.mjs &amp;&amp; node scripts/glossary/build-glossary-candidates.mjs &amp;&amp; node scripts/glossary/build-glossary-reference-index.mjs &amp;&amp; node scripts/glossary/build-glossary-pages.mjs &amp;&amp; node scripts/glossary/build-glossary-lookup.mjs &amp;&amp; node scripts/quellenarchiv/build-quellenarchiv-pages.mjs &amp;&amp; node scripts/publications/build-grundlagenpublikationen-pages.mjs &amp;&amp; node scripts/glossary/build-glossary-relations.mjs &amp;&amp; node scripts/portal/build-portal-architecture.mjs &amp;&amp; node scripts/portal/build-product-taxation.mjs &amp;&amp; node scripts/portal/build-impact-controlling.mjs &amp;&amp; node scripts/portal/build-state-law-democracy.mjs &amp;&amp; node scripts/portal/build-business-enterprise.mjs &amp;&amp; node scripts/portal/build-housing-city.mjs &amp;&amp; node scripts/portal/build-work-income-automation.mjs &amp;&amp; node scripts/portal/build-pension-social-security.mjs &amp;&amp; node scripts/portal/build-education-effect-school.mjs &amp;&amp; node scripts/portal/build-media-public-sphere.mjs &amp;&amp; node scripts/portal/build-health-care.mjs &amp;&amp; node scripts/portal/build-science-innovation-digitalization.mjs &amp;&amp; node scripts/portal/build-finance-capital.mjs &amp;&amp; node scripts/portal/build-detail-concept-corrections.mjs &amp;&amp; node scripts/portal/build-sdg-reference.mjs &amp;&amp; python3 scripts/portal/build-rang24-release.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/wirkungsradar/build-narrative-library.mjs &amp;&amp; node scripts/wirkungsradar/apply-master-debattenkarten.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; python3 tools/sync_layout.py &amp;&amp; node scripts/review/build-delta-review.mjs &amp;&amp; node scripts/reference/enhance-reference-ux.mjs &amp;&amp; node scripts/portal/apply-political-implementation-standard.mjs &amp;&amp; node scripts/portal/apply-publication-access-hubs.mjs &amp;&amp; node scripts/portal/apply-impact-field-stage7.mjs &amp;&amp; node scripts/portal/apply-demo-governance-stage8.mjs &amp;&amp; node scripts/library/build-library-versioning-stage9.mjs &amp;&amp; node scripts/tools/sanitize-public-tool-language.mjs &amp;&amp; node scripts/quality/fix-public-self-ctas.mjs &amp;&amp; node scripts/publications/apply-publication-abstracts.mjs &amp;&amp; node scripts/audit-documents-for-publication.mjs &amp;&amp; node scripts/library/build-full-knowledge-library.mjs &amp;&amp; python3 scripts/tools/build-woek-id-register-public-explorer.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/tools/build-tool-examples-dashboard.mjs &amp;&amp; node scripts/blog/build-blog-index.mjs &amp;&amp; node scripts/quality/check-journal-index.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; node scripts/assets/check-release-assets.mjs &amp;&amp; node scripts/feeds/build-rss-feeds.mjs &amp;&amp; node scripts/feeds/build-feeds-page.mjs &amp;&amp; node scripts/quality/produce-public-pdf-downloads.mjs &amp;&amp; node scripts/quality/sanitize-public-download-links.mjs &amp;&amp; node scripts/site/build-so-wirkt-wirkungsoekonomie.mjs &amp;&amp; node scripts/site/build-institut-teaser.mjs &amp;&amp; node scripts/site/build-faktencheck-bot-guides.mjs &amp;&amp; node scripts/academy/build-certificates.mjs &amp;&amp; node scripts/import/build-relationships.mjs &amp;&amp; node scripts/import/build-content-manifest.mjs &amp;&amp; node scripts/i18n/build-english-document-manifest.mjs &amp;&amp; node scripts/i18n/build-english-library.mjs &amp;&amp; node scripts/i18n/build-english-tools.mjs &amp;&amp; node scripts/i18n/build-english-function-pages.mjs &amp;&amp; node scripts/i18n/build-english-search.mjs &amp;&amp; node scripts/i18n/build-english-asset-text-inventory.mjs &amp;&amp; node scripts/i18n/build-english-route-coverage.mjs &amp;&amp; node scripts/search/build-woek-search-index.mjs &amp;&amp; node scripts/site/build-site-taxonomy.mjs &amp;&amp; node scripts/api/build-core-api-manifest.mjs &amp;&amp; node scripts/quality/apply-publication-qa-normalization.mjs &amp;&amp; node scripts/site/normalize-site-header.mjs &amp;&amp; node scripts/site/normalize-site-footer.mjs &amp;&amp; node scripts/quality/archive-macos-duplicate-routes.mjs &amp;&amp; node scripts/check-public-language.js&quot;,
-      &quot;stepCount&quot;: 79,
+      &quot;command&quot;: &quot;node scripts/methods/build-woems-exports.mjs &amp;&amp; node scripts/methods/build-methodenraum-pages.mjs &amp;&amp; node scripts/academy/build-curriculum-exports.mjs &amp;&amp; node scripts/glossary/build-glossary-registry.mjs &amp;&amp; node scripts/glossary/build-term-links.mjs &amp;&amp; node scripts/glossary/build-glossary-candidates.mjs &amp;&amp; node scripts/glossary/build-glossary-reference-index.mjs &amp;&amp; node scripts/glossary/build-glossary-pages.mjs &amp;&amp; node scripts/glossary/build-glossary-lookup.mjs &amp;&amp; node scripts/quellenarchiv/build-quellenarchiv-pages.mjs &amp;&amp; node scripts/publications/build-grundlagenpublikationen-pages.mjs &amp;&amp; node scripts/glossary/build-glossary-relations.mjs &amp;&amp; node scripts/portal/build-portal-architecture.mjs &amp;&amp; node scripts/portal/build-product-taxation.mjs &amp;&amp; node scripts/portal/build-impact-controlling.mjs &amp;&amp; node scripts/portal/build-state-law-democracy.mjs &amp;&amp; node scripts/portal/build-business-enterprise.mjs &amp;&amp; node scripts/portal/build-housing-city.mjs &amp;&amp; node scripts/portal/build-work-income-automation.mjs &amp;&amp; node scripts/portal/build-pension-social-security.mjs &amp;&amp; node scripts/portal/build-education-effect-school.mjs &amp;&amp; node scripts/portal/build-media-public-sphere.mjs &amp;&amp; node scripts/portal/build-health-care.mjs &amp;&amp; node scripts/portal/build-science-innovation-digitalization.mjs &amp;&amp; node scripts/portal/build-finance-capital.mjs &amp;&amp; node scripts/portal/build-detail-concept-corrections.mjs &amp;&amp; node scripts/portal/build-sdg-reference.mjs &amp;&amp; python3 scripts/portal/build-rang24-release.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/wirkungsradar/build-narrative-library.mjs &amp;&amp; node scripts/wirkungsradar/apply-master-debattenkarten.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; python3 tools/sync_layout.py &amp;&amp; node scripts/review/build-delta-review.mjs &amp;&amp; node scripts/reference/enhance-reference-ux.mjs &amp;&amp; node scripts/portal/apply-political-implementation-standard.mjs &amp;&amp; node scripts/portal/apply-publication-access-hubs.mjs &amp;&amp; node scripts/portal/apply-impact-field-stage7.mjs &amp;&amp; node scripts/portal/apply-demo-governance-stage8.mjs &amp;&amp; node scripts/library/build-library-versioning-stage9.mjs &amp;&amp; node scripts/tools/sanitize-public-tool-language.mjs &amp;&amp; node scripts/quality/fix-public-self-ctas.mjs &amp;&amp; node scripts/publications/apply-publication-abstracts.mjs &amp;&amp; node scripts/audit-documents-for-publication.mjs &amp;&amp; node scripts/library/build-full-knowledge-library.mjs &amp;&amp; python3 scripts/tools/build-woek-id-register-public-explorer.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/tools/build-tool-examples-dashboard.mjs &amp;&amp; node scripts/blog/build-blog-index.mjs &amp;&amp; node scripts/quality/check-journal-index.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; node scripts/assets/check-release-assets.mjs &amp;&amp; node scripts/feeds/build-rss-feeds.mjs &amp;&amp; node scripts/feeds/build-feeds-page.mjs &amp;&amp; node scripts/quality/produce-public-pdf-downloads.mjs &amp;&amp; node scripts/quality/sanitize-public-download-links.mjs &amp;&amp; node scripts/site/build-so-wirkt-wirkungsoekonomie.mjs &amp;&amp; node scripts/site/build-institut-teaser.mjs &amp;&amp; node scripts/site/build-faktencheck-bot-guides.mjs &amp;&amp; node scripts/academy/build-certificates.mjs &amp;&amp; node scripts/import/build-relationships.mjs &amp;&amp; node scripts/import/build-content-manifest.mjs &amp;&amp; node scripts/i18n/build-english-document-manifest.mjs &amp;&amp; node scripts/i18n/build-english-library.mjs &amp;&amp; node scripts/i18n/build-english-tools.mjs &amp;&amp; node scripts/i18n/build-english-function-pages.mjs &amp;&amp; node scripts/i18n/build-english-search.mjs &amp;&amp; node scripts/i18n/build-english-asset-text-inventory.mjs &amp;&amp; node scripts/i18n/build-english-route-coverage.mjs &amp;&amp; node scripts/search/build-woek-search-index.mjs &amp;&amp; node scripts/site/build-site-taxonomy.mjs &amp;&amp; node scripts/api/build-core-api-manifest.mjs &amp;&amp; node scripts/quality/apply-publication-qa-normalization.mjs &amp;&amp; node scripts/site/normalize-site-header.mjs &amp;&amp; node scripts/site/normalize-site-footer.mjs &amp;&amp; node scripts/quality/archive-macos-duplicate-routes.mjs &amp;&amp; node scripts/search/build-woek-search-index.mjs &amp;&amp; node scripts/check-public-language.js &amp;&amp; node scripts/quality/check-no-em-dash.mjs --fix&quot;,
+      &quot;stepCount&quot;: 81,
       &quot;phases&quot;: [
         &quot;academy-certificates&quot;,
         &quot;build-step&quot;,
@@ -1426,7 +1436,7 @@
     {
       &quot;id&quot;: &quot;search-index&quot;,
       &quot;path&quot;: &quot;assets/search/search-index.json&quot;,
-      &quot;count&quot;: 19313,
+      &quot;count&quot;: 27883,
       &quot;owner&quot;: &quot;Wissenskern&quot;
     },
     {
@@ -1502,12 +1512,8 @@
   &quot;routeGroups&quot;: [
     {
       &quot;id&quot;: &quot;header&quot;,
-      &quot;count&quot;: 9,
+      &quot;count&quot;: 8,
       &quot;entries&quot;: [
-        {
-          &quot;label&quot;: &quot;Start&quot;,
-          &quot;href&quot;: &quot;index.html&quot;
-        },
         {
           &quot;label&quot;: &quot;Verstehen&quot;,
           &quot;href&quot;: &quot;verstehen/&quot;

@@ -2,7 +2,18 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const ignoreDirs = new Set([".git", "node_modules", ".codex-backup", "outputs"]);
+const ignoreDirs = new Set([
+  ".git",
+  ".github",
+  ".claude",
+  ".next",
+  ".vercel",
+  "node_modules",
+  ".codex-backup",
+  "outputs",
+  "woek-akademie-app",
+  "woek-institut-app"
+]);
 const htmlFiles = [];
 const allowedSpreadsheetPattern = /assets\/downloads\/woek-register\/WOeK_Master_Items_Public_Research_Register_v2\.1\.(xlsx|xls)(?:[#?][^"']*)?$/i;
 const allowedStudyScriptRawPattern = /^docs\/studienskripte\/word-rohfassungen\/[a-z0-9-]+\.docx$/i;
@@ -15,6 +26,7 @@ const forbiddenFiles = [];
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (ignoreDirs.has(entry.name)) continue;
+    if (entry.name.startsWith(".wt-")) continue;
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) walk(full);
     if (!entry.isFile()) continue;

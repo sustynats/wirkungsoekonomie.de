@@ -95,27 +95,27 @@ WÖk-IDs, Benchmarks und Archetypen sind also Infrastruktur. Sie machen Wirkung 
 
 1. **Warum sind WÖk-IDs hilfreich?**
    - A) Sie ersetzen Bewertung  B) Sie ordnen Daten eindeutig zu  C) Sie bewerten Menschen  D) Sie erzeugen Audio
-   - ✅ **Richtig: B** — Eindeutige Kennungen verhindern Dubletten und Verwechslungen.
+   - ✅ **Richtig: B** - Eindeutige Kennungen verhindern Dubletten und Verwechslungen.
 
 2. **Was leistet ein Benchmark?**
    - A) Er macht einen Rohwert vergleichbar  B) Er ersetzt Quellen  C) Er garantiert Wirkung  D) Er löscht Unsicherheit
-   - ✅ **Richtig: A** — Ein Wert braucht einen Maßstab.
+   - ✅ **Richtig: A** - Ein Wert braucht einen Maßstab.
 
 3. **Warum braucht man Archetypen?**
    - A) Alle Fälle sind gleich  B) Unterschiedliche Kontexte brauchen passende Vergleichsgruppen  C) Um Daten zu verstecken  D) Um rote Linien aufzuheben
-   - ✅ **Richtig: B** — Branchen und Produkte haben unterschiedliche Wirkungslogiken.
+   - ✅ **Richtig: B** - Branchen und Produkte haben unterschiedliche Wirkungslogiken.
 
 4. **Was darf ein Branchenbenchmark nicht tun?**
    - A) Vergleich ermöglichen  B) schwere Schäden relativieren  C) Daten strukturieren  D) Unterschiede sichtbar machen
-   - ✅ **Richtig: B** — „Branchenüblich" ist kein Freibrief.
+   - ✅ **Richtig: B** - „Branchenüblich" ist kein Freibrief.
 
 5. **Wie hängen Scorecards und WÖk-IDs zusammen?**
    - A) IDs können Scorecard-Elemente eindeutig referenzieren  B) Sie haben nichts miteinander zu tun  C) Scorecards ersetzen IDs  D) IDs sind nur Design
-   - ✅ **Richtig: A** — IDs machen Scorecard-Daten auffindbar und konsistent.
+   - ✅ **Richtig: A** - IDs machen Scorecard-Daten auffindbar und konsistent.
 
 6. **Was bleibt trotz Benchmark nötig?**
    - A) Datenqualität und Begründung  B) reine Meinung  C) Personenranking  D) keine Prüfung
-   - ✅ **Richtig: A** — Vergleich braucht immer Datenqualität und transparente Begründung.
+   - ✅ **Richtig: A** - Vergleich braucht immer Datenqualität und transparente Begründung.
 
 ## 7. Transferaufgabe
 
@@ -349,27 +349,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Warum sind WÖk-IDs hilfreich?**
    - A) Sie ersetzen Bewertung  B) Sie ordnen Daten eindeutig zu  C) Sie bewerten Menschen  D) Sie erzeugen Audio
-   - ✅ **Richtig: B** — Eindeutige Kennungen verhindern Dubletten und Verwechslungen.
+   - ✅ **Richtig: B** - Eindeutige Kennungen verhindern Dubletten und Verwechslungen.
 
 2. **Was leistet ein Benchmark?**
    - A) Er macht einen Rohwert vergleichbar  B) Er ersetzt Quellen  C) Er garantiert Wirkung  D) Er löscht Unsicherheit
-   - ✅ **Richtig: A** — Ein Wert braucht einen Maßstab.
+   - ✅ **Richtig: A** - Ein Wert braucht einen Maßstab.
 
 3. **Warum braucht man Archetypen?**
    - A) Alle Fälle sind gleich  B) Unterschiedliche Kontexte brauchen passende Vergleichsgruppen  C) Um Daten zu verstecken  D) Um rote Linien aufzuheben
-   - ✅ **Richtig: B** — Branchen und Produkte haben unterschiedliche Wirkungslogiken.
+   - ✅ **Richtig: B** - Branchen und Produkte haben unterschiedliche Wirkungslogiken.
 
 4. **Was darf ein Branchenbenchmark nicht tun?**
    - A) Vergleich ermöglichen  B) schwere Schäden relativieren  C) Daten strukturieren  D) Unterschiede sichtbar machen
-   - ✅ **Richtig: B** — „Branchenüblich" ist kein Freibrief.
+   - ✅ **Richtig: B** - „Branchenüblich" ist kein Freibrief.
 
 5. **Wie hängen Scorecards und WÖk-IDs zusammen?**
    - A) IDs können Scorecard-Elemente eindeutig referenzieren  B) Sie haben nichts miteinander zu tun  C) Scorecards ersetzen IDs  D) IDs sind nur Design
-   - ✅ **Richtig: A** — IDs machen Scorecard-Daten auffindbar und konsistent.
+   - ✅ **Richtig: A** - IDs machen Scorecard-Daten auffindbar und konsistent.
 
 6. **Was bleibt trotz Benchmark nötig?**
    - A) Datenqualität und Begründung  B) reine Meinung  C) Personenranking  D) keine Prüfung
-   - ✅ **Richtig: A** — Vergleich braucht immer Datenqualität und transparente Begründung.
+   - ✅ **Richtig: A** - Vergleich braucht immer Datenqualität und transparente Begründung.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -882,11 +882,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v29-woek-ids-benchmarks-archetypen.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v29-woek-ids-benchmarks-archetypen.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

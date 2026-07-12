@@ -3130,7 +3130,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Bozo-Effekt",
       "Bozo Effect"
     ],
-    "definition": "Sich selbst verstärkende Abwärtsspirale der Mittelmäßigkeit — in Firmen, auf Plattformen und in Gesellschaften: Schwache ziehen Schwächere an, bis Qualität kippt.",
+    "definition": "Sich selbst verstärkende Abwärtsspirale der Mittelmäßigkeit - in Firmen, auf Plattformen und in Gesellschaften: Schwache ziehen Schwächere an, bis Qualität kippt.",
     "url": "/begriffe/bozo-explosion/",
     "priority": 147,
     "autoLinkAllowed": true,
@@ -3151,7 +3151,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Bozo Implosion",
       "Bozo-Implosion"
     ],
-    "definition": "Kollaps nach innen: das System stößt seine besten Kräfte ab und höhlt sich selbst aus — in Firmen, auf Plattformen und in Gesellschaften.",
+    "definition": "Kollaps nach innen: das System stößt seine besten Kräfte ab und höhlt sich selbst aus - in Firmen, auf Plattformen und in Gesellschaften.",
     "url": "/begriffe/bozo-implosion/",
     "priority": 148,
     "autoLinkAllowed": true,
@@ -35691,7 +35691,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "wirkungsorientierte Forschung",
       "Forschung zu Wirkung und Rückkopplung"
     ],
-    "definition": "Empirisch-methodischer Kern der Wirkungswissenschaften: untersucht, ob, wie, warum und für wen eine Wirkung eintritt — mit Beitrag, Plausibilität und Unsicherheit statt vorschneller Kausalitätsbehauptung.",
+    "definition": "Empirisch-methodischer Kern der Wirkungswissenschaften: untersucht, ob, wie, warum und für wen eine Wirkung eintritt - mit Beitrag, Plausibilität und Unsicherheit statt vorschneller Kausalitätsbehauptung.",
     "url": "/begriffe/wirkungsforschung/",
     "priority": 1653,
     "autoLinkAllowed": true,
@@ -38385,7 +38385,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungswissenschaft",
       "Wirkungswissenschaften im Weber'schen Sinn"
     ],
-    "definition": "Integrierter Rahmen, der Wirkung zur gemeinsamen Leitkategorie von Erkenntnis, Bewertung und Steuerung macht — er verbindet empirische Wirkungsforschung, systemische Analyse, normative Bewertung und operative Rückkopplung.",
+    "definition": "Integrierter Rahmen, der Wirkung zur gemeinsamen Leitkategorie von Erkenntnis, Bewertung und Steuerung macht - er verbindet empirische Wirkungsforschung, systemische Analyse, normative Bewertung und operative Rückkopplung.",
     "url": "/begriffe/wirkungswissenschaften/",
     "priority": 1769,
     "autoLinkAllowed": true,

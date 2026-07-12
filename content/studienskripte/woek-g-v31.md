@@ -95,27 +95,27 @@ Netto-Wirkung ist deshalb ein begründetes Gesamtprofil. Es verbindet Daten, Wir
 
 1. **Warum reicht eine Einzelwirkung nicht für ein Gesamturteil?**
    - A) Weil Maßnahmen mehrere Felder berühren können  B) Weil Einzelwirkungen nie existieren  C) Weil Daten unwichtig sind  D) Weil nur Meinung zählt
-   - ✅ **Richtig: A** — Wirkung entsteht oft gleichzeitig in mehreren Feldern.
+   - ✅ **Richtig: A** - Wirkung entsteht oft gleichzeitig in mehreren Feldern.
 
 2. **Was bedeutet Netto-Wirkung in der WÖk?**
    - A) blindes Addieren  B) begründetes Zusammenführen positiver und negativer Wirkungen  C) nur Gewinn  D) nur CO2
-   - ✅ **Richtig: B** — Netto-Wirkung ist Gesamtbetrachtung mit Schutzlinien.
+   - ✅ **Richtig: B** - Netto-Wirkung ist Gesamtbetrachtung mit Schutzlinien.
 
 3. **Was darf Netto-Wirkung nicht tun?**
    - A) Schäden unsichtbar verrechnen  B) Felder vergleichen  C) Quellen nutzen  D) Unsicherheit benennen
-   - ✅ **Richtig: A** — Nichtkompensation verhindert Schönrechnung.
+   - ✅ **Richtig: A** - Nichtkompensation verhindert Schönrechnung.
 
 4. **Was zeigt ein Wirkungsprofil?**
    - A) nur Umsatz  B) positive, negative, neutrale und unsichere Wirkungen über Felder  C) nur Likes  D) Personenwert
-   - ✅ **Richtig: B** — Das Profil macht Mehrfeldwirkung sichtbar.
+   - ✅ **Richtig: B** - Das Profil macht Mehrfeldwirkung sichtbar.
 
 5. **Was ist die Zielgröße der WÖk?**
    - A) maximale Reichweite  B) positive Netto-Wirkung für Mensch, Planet und Demokratie  C) beliebige Wirkung  D) maximale Berichte
-   - ✅ **Richtig: B** — Positive Netto-Wirkung ist die zentrale Zielgröße.
+   - ✅ **Richtig: B** - Positive Netto-Wirkung ist die zentrale Zielgröße.
 
 6. **Welche Schutzlogiken werden für Netto-Wirkung wichtig?**
    - A) Nichtkompensation und Reverse Merit Order  B) Werbung und Reichweite  C) Likes und Views  D) Zufall und Bauchgefühl
-   - ✅ **Richtig: A** — Beide verhindern verdeckte schwere Schäden.
+   - ✅ **Richtig: A** - Beide verhindern verdeckte schwere Schäden.
 
 ## 7. Transferaufgabe
 
@@ -333,27 +333,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Warum reicht eine Einzelwirkung nicht für ein Gesamturteil?**
    - A) Weil Maßnahmen mehrere Felder berühren können  B) Weil Einzelwirkungen nie existieren  C) Weil Daten unwichtig sind  D) Weil nur Meinung zählt
-   - ✅ **Richtig: A** — Wirkung entsteht oft gleichzeitig in mehreren Feldern.
+   - ✅ **Richtig: A** - Wirkung entsteht oft gleichzeitig in mehreren Feldern.
 
 2. **Was bedeutet Netto-Wirkung in der WÖk?**
    - A) blindes Addieren  B) begründetes Zusammenführen positiver und negativer Wirkungen  C) nur Gewinn  D) nur CO2
-   - ✅ **Richtig: B** — Netto-Wirkung ist Gesamtbetrachtung mit Schutzlinien.
+   - ✅ **Richtig: B** - Netto-Wirkung ist Gesamtbetrachtung mit Schutzlinien.
 
 3. **Was darf Netto-Wirkung nicht tun?**
    - A) Schäden unsichtbar verrechnen  B) Felder vergleichen  C) Quellen nutzen  D) Unsicherheit benennen
-   - ✅ **Richtig: A** — Nichtkompensation verhindert Schönrechnung.
+   - ✅ **Richtig: A** - Nichtkompensation verhindert Schönrechnung.
 
 4. **Was zeigt ein Wirkungsprofil?**
    - A) nur Umsatz  B) positive, negative, neutrale und unsichere Wirkungen über Felder  C) nur Likes  D) Personenwert
-   - ✅ **Richtig: B** — Das Profil macht Mehrfeldwirkung sichtbar.
+   - ✅ **Richtig: B** - Das Profil macht Mehrfeldwirkung sichtbar.
 
 5. **Was ist die Zielgröße der WÖk?**
    - A) maximale Reichweite  B) positive Netto-Wirkung für Mensch, Planet und Demokratie  C) beliebige Wirkung  D) maximale Berichte
-   - ✅ **Richtig: B** — Positive Netto-Wirkung ist die zentrale Zielgröße.
+   - ✅ **Richtig: B** - Positive Netto-Wirkung ist die zentrale Zielgröße.
 
 6. **Welche Schutzlogiken werden für Netto-Wirkung wichtig?**
    - A) Nichtkompensation und Reverse Merit Order  B) Werbung und Reichweite  C) Likes und Views  D) Zufall und Bauchgefühl
-   - ✅ **Richtig: A** — Beide verhindern verdeckte schwere Schäden.
+   - ✅ **Richtig: A** - Beide verhindern verdeckte schwere Schäden.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -924,11 +924,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v31-von-einzelwirkung-zu-netto-wirkung.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v31-von-einzelwirkung-zu-netto-wirkung.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

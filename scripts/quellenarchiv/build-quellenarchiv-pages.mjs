@@ -278,12 +278,12 @@ function detailBody(source, clusterLabels) {
           <section class="term-section-card">
             <p class="section-eyebrow">Kurzbeschreibung</p>
             <h2>Worum es geht</h2>
-            <p>${esc(source.summary || "—")}</p>
+            <p>${esc(source.summary || "-")}</p>
           </section>
           <section class="term-section-card">
             <p class="section-eyebrow">Wirkungsökonomie</p>
             <h2>Wirkungsökonomische Einordnung</h2>
-            <p>${esc(source.einordnung || "—")}</p>
+            <p>${esc(source.einordnung || "-")}</p>
           </section>
         </div>
 
@@ -360,7 +360,7 @@ function indexBody(sources, clusters) {
   return `      <section class="hero compact-hero">
         <p class="hero-kicker">Bibliothek</p>
         <h1>Quellenarchiv der Wirkungsökonomie</h1>
-        <p class="lead">${total} kuratierte Quellen — von amtlichen Datenreihen über Normen bis zu Forschungsarbeiten, jede mit einer wirkungsökonomischen Einordnung. Gespiegelt aus dem <a class="text-link" href="https://institut.wirkungsoekonomie.de/quellen/">Wirkungsinstitut</a>; hier read-only.</p>
+        <p class="lead">${total} kuratierte Quellen - von amtlichen Datenreihen über Normen bis zu Forschungsarbeiten, jede mit einer wirkungsökonomischen Einordnung. Gespiegelt aus dem <a class="text-link" href="https://institut.wirkungsoekonomie.de/quellen/">Wirkungsinstitut</a>; hier read-only.</p>
       </section>
 
       <section class="content-band quellenarchiv-filter-panel" aria-label="Quellen filtern">
@@ -467,7 +467,7 @@ function updateSitemap(sources) {
   const sitemapPath = "sitemap.xml";
   if (!fs.existsSync(sitemapPath)) return;
   let xml = fs.readFileSync(sitemapPath, "utf8");
-  // Alte Quellenarchiv-Einträge entfernen (idempotent) — inkl. optionalem <lastmod>
+  // Alte Quellenarchiv-Einträge entfernen (idempotent) - inkl. optionalem <lastmod>
   xml = xml.replace(/\s*<url><loc>https:\/\/wirkungsoekonomie\.de\/quellenarchiv\/[^<]*<\/loc>(?:<lastmod>[^<]*<\/lastmod>)?<\/url>/g, "");
   const dateStr = new Date().toISOString().slice(0, 10);
   const lines = [`  <url><loc>https://wirkungsoekonomie.de/quellenarchiv/</loc><lastmod>${dateStr}</lastmod></url>`];
@@ -508,7 +508,7 @@ async function main() {
   const idxBody = indexBody(sources, clusters);
   const idxHtml = pageShell("Quellenarchiv", idxBody, "../", {
     metaTitle: "Quellenarchiv der Wirkungsökonomie",
-    metaDescription: `${sources.length} kuratierte, wirkungsökonomisch eingeordnete Quellen — Datenreihen, Normen, Studien und Berichte. Read-only-Spiegel des Wirkungsinstituts.`
+    metaDescription: `${sources.length} kuratierte, wirkungsökonomisch eingeordnete Quellen - Datenreihen, Normen, Studien und Berichte. Read-only-Spiegel des Wirkungsinstituts.`
   });
   fs.writeFileSync(path.join(OUT_DIR, "index.html"), idxHtml);
 

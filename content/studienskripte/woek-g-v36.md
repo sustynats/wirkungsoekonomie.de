@@ -102,27 +102,27 @@ Damit schließt G3: Du kannst nun von Daten über Scorecards zu Netto-Wirkung, N
 
 1. **Was bedeutet Scorecard lesen in der WÖk?**
    - A) nur Farbe betrachten  B) Felder, Daten, Benchmarks, Grenzen und Begründung prüfen  C) Menschen bewerten  D) Werbung übernehmen
-   - ✅ **Richtig: B** — Scorecards brauchen begründete Lektüre.
+   - ✅ **Richtig: B** - Scorecards brauchen begründete Lektüre.
 
 2. **Was sollte zuerst geklärt werden?**
    - A) Was bewertet wird und welche Wirkungsgrenzen gelten  B) welche Musik passt  C) wer sympathisch ist  D) wie viele Likes es gibt
-   - ✅ **Richtig: A** — Ohne Objekt und Grenze ist die Bewertung unklar.
+   - ✅ **Richtig: A** - Ohne Objekt und Grenze ist die Bewertung unklar.
 
 3. **Warum ist Datenqualität Teil der Lektüre?**
    - A) Weil gleich hohe Scores unterschiedlich belastbar sein können  B) Weil Daten stören  C) Weil Quellen unwichtig sind  D) Weil Unsicherheit verboten ist
-   - ✅ **Richtig: A** — Belastbarkeit gehört zur Bewertung.
+   - ✅ **Richtig: A** - Belastbarkeit gehört zur Bewertung.
 
 4. **Wann wird Reverse Merit Order angewandt?**
    - A) nachdem Felder, Daten und kritische Werte gelesen sind  B) vor jeder Quelle  C) nur bei Werbung  D) nie
-   - ✅ **Richtig: A** — Erst das Profil lesen, dann das begrenzende Feld bestimmen.
+   - ✅ **Richtig: A** - Erst das Profil lesen, dann das begrenzende Feld bestimmen.
 
 5. **Was ist ein guter Entscheidungssatz?**
    - A) Alles ist super  B) Kritisches Feld X begrenzt die Bewertung; vor Freigabe braucht es Maßnahme Y  C) Der Score ist schön  D) Menschen sind schlecht
-   - ✅ **Richtig: B** — Er verbindet Befund, Schutzlogik und Folge.
+   - ✅ **Richtig: B** - Er verbindet Befund, Schutzlogik und Folge.
 
 6. **Was ist das Lernziel dieser Vorlesung?**
    - A) Eine einfache Wirkungs-Scorecard begründet lesen  B) TTS produzieren  C) Personen ranken  D) Daten ignorieren
-   - ✅ **Richtig: A** — Genau das ist die Kompetenz am Ende von G3.
+   - ✅ **Richtig: A** - Genau das ist die Kompetenz am Ende von G3.
 
 ## 7. Transferaufgabe
 
@@ -352,27 +352,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was bedeutet Scorecard lesen in der WÖk?**
    - A) nur Farbe betrachten  B) Felder, Daten, Benchmarks, Grenzen und Begründung prüfen  C) Menschen bewerten  D) Werbung übernehmen
-   - ✅ **Richtig: B** — Scorecards brauchen begründete Lektüre.
+   - ✅ **Richtig: B** - Scorecards brauchen begründete Lektüre.
 
 2. **Was sollte zuerst geklärt werden?**
    - A) Was bewertet wird und welche Wirkungsgrenzen gelten  B) welche Musik passt  C) wer sympathisch ist  D) wie viele Likes es gibt
-   - ✅ **Richtig: A** — Ohne Objekt und Grenze ist die Bewertung unklar.
+   - ✅ **Richtig: A** - Ohne Objekt und Grenze ist die Bewertung unklar.
 
 3. **Warum ist Datenqualität Teil der Lektüre?**
    - A) Weil gleich hohe Scores unterschiedlich belastbar sein können  B) Weil Daten stören  C) Weil Quellen unwichtig sind  D) Weil Unsicherheit verboten ist
-   - ✅ **Richtig: A** — Belastbarkeit gehört zur Bewertung.
+   - ✅ **Richtig: A** - Belastbarkeit gehört zur Bewertung.
 
 4. **Wann wird Reverse Merit Order angewandt?**
    - A) nachdem Felder, Daten und kritische Werte gelesen sind  B) vor jeder Quelle  C) nur bei Werbung  D) nie
-   - ✅ **Richtig: A** — Erst das Profil lesen, dann das begrenzende Feld bestimmen.
+   - ✅ **Richtig: A** - Erst das Profil lesen, dann das begrenzende Feld bestimmen.
 
 5. **Was ist ein guter Entscheidungssatz?**
    - A) Alles ist super  B) Kritisches Feld X begrenzt die Bewertung; vor Freigabe braucht es Maßnahme Y  C) Der Score ist schön  D) Menschen sind schlecht
-   - ✅ **Richtig: B** — Er verbindet Befund, Schutzlogik und Folge.
+   - ✅ **Richtig: B** - Er verbindet Befund, Schutzlogik und Folge.
 
 6. **Was ist das Lernziel dieser Vorlesung?**
    - A) Eine einfache Wirkungs-Scorecard begründet lesen  B) TTS produzieren  C) Personen ranken  D) Daten ignorieren
-   - ✅ **Richtig: A** — Genau das ist die Kompetenz am Ende von G3.
+   - ✅ **Richtig: A** - Genau das ist die Kompetenz am Ende von G3.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -943,11 +943,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v36-scorecard-lesen-und-begruenden.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v36-scorecard-lesen-und-begruenden.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

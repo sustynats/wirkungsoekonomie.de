@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 // Übersichtsseite aller RSS-Feeds unter /feeds/. Scannt dynamisch feeds/*.xml
-// (Kanal-Titel/Beschreibung/Link) — neue Feeds erscheinen automatisch.
+// (Kanal-Titel/Beschreibung/Link) - neue Feeds erscheinen automatisch.
 const site = "https://wirkungsoekonomie.de";
 const CSS_VERSION = "20260612-mobile-table-fix";
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
@@ -113,7 +113,7 @@ function main() {
   const body = `      <section class="hero compact-hero">
         <p class="hero-kicker">Bleib auf dem Laufenden</p>
         <h1>RSS-Feeds der Wirkungsökonomie</h1>
-        <p class="lead">Abonniere einzelne Bereiche als RSS-Feed und bekomme neue Inhalte automatisch in deinem Feed-Reader — ohne Newsletter, ohne Konto.</p>
+        <p class="lead">Abonniere einzelne Bereiche als RSS-Feed und bekomme neue Inhalte automatisch in deinem Feed-Reader - ohne Newsletter, ohne Konto.</p>
       </section>
 
       <section class="content-band">

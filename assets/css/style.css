@@ -18123,13 +18123,13 @@ body .audio-transcript-note {
 }
 
 /* =====================================================================
-   WÖk Design-Refresh (Codex, 2026-07-03) — Override-Layer am Dateiende.
+   WÖk Design-Refresh (Codex, 2026-07-03) - Override-Layer am Dateiende.
    Zweck: echte selbst-gehostete Schriften (DSGVO), ruhigere Typo-Skala,
    konsistente Abstands-Tokens, robuste (umbrechende) Mehrspalten-Grids.
    Reversibel: dieser Block kann als Ganzes entfernt werden.
    ===================================================================== */
 
-/* 1) Selbst-gehostete Schriften — DSGVO-konform, kein Google-CDN */
+/* 1) Selbst-gehostete Schriften - DSGVO-konform, kein Google-CDN */
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/inter-400.woff2") format("woff2");}
 @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/inter-500.woff2") format("woff2");}
 @font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/inter-600.woff2") format("woff2");}
@@ -18146,7 +18146,7 @@ body .audio-transcript-note {
   --measure: 68ch;
 }
 
-/* 3) Typografische Basis — Laufweite, Zeilenhöhe, Rendering */
+/* 3) Typografische Basis - Laufweite, Zeilenhöhe, Rendering */
 body{
   font-feature-settings:"kern" 1,"liga" 1,"calt" 1;
   -webkit-font-smoothing:antialiased;
@@ -18247,7 +18247,7 @@ h2, .section-title{ font-weight:600; }
 }
 
 /* === Hauptdomain – Richtung 1 "ruhig Navy/Ivory, weiße Boxen" (Institut-Vorbild, hoher Kontrast) === */
-/* Weiße Boxen mit klarer Kante — poppen auf Ivory/getönten Sektionen */
+/* Weiße Boxen mit klarer Kante - poppen auf Ivory/getönten Sektionen */
 .card{
   background:#ffffff;
   border:1px solid #D5CBB6;
@@ -18401,7 +18401,7 @@ h1, h2, h3 {
     grid-template-columns: 1fr !important;
   }
 
-  /* e) Tabellen: harte Mindestbreiten >900px entschärfen — Tabellen bleiben
+  /* e) Tabellen: harte Mindestbreiten >900px entschärfen - Tabellen bleiben
      in ihren overflow-x:auto-Wrappern scrollbar, müssen aber nicht mehr
      Viewport-Vielfache erzwingen. .table-wrap table/.data-table (760px)
      bleiben unverändert: dort ist 760px + Wrapper-Scroll bewusst gesetzt
@@ -18427,7 +18427,7 @@ h1, h2, h3 {
 }
 
 /* ------------------------------------------------------------------ */
-/* Quellenarchiv-Spiegel (read-only) — build-quellenarchiv-pages.mjs   */
+/* Quellenarchiv-Spiegel (read-only) - build-quellenarchiv-pages.mjs   */
 /* ------------------------------------------------------------------ */
 .quellenarchiv-filter-panel {
   display: grid;

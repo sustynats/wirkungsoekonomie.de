@@ -135,27 +135,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was ist die zentrale Wirkungsfrage dieser Vorlesung?**
    - A) Wie hoch ist die Reichweite?  B) Welche tatsächliche Zustandsveränderung entsteht und bei wem?  C) Wer wirkt sympathisch?  D) Welche Absicht wurde formuliert?
-   - ✅ **Richtig: B** — Wirkung meint tatsächliche Veränderung von Zuständen, nicht Absicht, Aktivität oder Reichweite.
+   - ✅ **Richtig: B** - Wirkung meint tatsächliche Veränderung von Zuständen, nicht Absicht, Aktivität oder Reichweite.
 
 2. **Warum reicht ein guter Auslöser noch nicht aus?**
    - A) Weil Wirkung immer zufällig ist  B) Weil erst Wirkpfad, Empfänger, Resonanz und Rückkopplung klären, ob Wirkung entsteht  C) Weil Daten unwichtig sind  D) Weil Bewertung verboten ist
-   - ✅ **Richtig: B** — Ein Auslöser erzeugt höchstens Wirkungspotenzial, solange keine tatsächliche Veränderung nachvollziehbar ist.
+   - ✅ **Richtig: B** - Ein Auslöser erzeugt höchstens Wirkungspotenzial, solange keine tatsächliche Veränderung nachvollziehbar ist.
 
 3. **Welche rote Linie gilt auch bei „Mensch als Wirkungsdimension"?**
    - A) Menschen dürfen moralisch sortiert werden  B) Reichweite gilt als Wirkung  C) Keine Personenbewertung, kein Social Credit, keine Vermischung von Wirkung und Meinung  D) Reporting ersetzt Rückkopplung
-   - ✅ **Richtig: C** — Die WÖk bewertet Wirkpfade und Zustandsveränderungen, nicht den Wert von Menschen.
+   - ✅ **Richtig: C** - Die WÖk bewertet Wirkpfade und Zustandsveränderungen, nicht den Wert von Menschen.
 
 4. **Wann ist eine Aussage prüfbar?**
    - A) Wenn Quelle, Begriff, Wirkpfad und Unsicherheit benannt sind  B) Wenn sie oft geteilt wurde  C) Wenn sie gut klingt  D) Wenn sie keine Gegenfragen zulässt
-   - ✅ **Richtig: A** — Quellenklarheit und begriffliche Präzision sind Voraussetzungen für prüfbare Wirkungsaussagen.
+   - ✅ **Richtig: A** - Quellenklarheit und begriffliche Präzision sind Voraussetzungen für prüfbare Wirkungsaussagen.
 
 5. **Was unterscheidet Reporting von Rückkopplung?**
    - A) Nichts  B) Reporting beschreibt, Rückkopplung verändert Steuerung nach beobachteter Wirkung  C) Reporting ist immer falsch  D) Rückkopplung ist nur Marketing
-   - ✅ **Richtig: B** — Rückkopplung bedeutet Lernen und Nachsteuern anhand tatsächlicher Zustandsveränderungen.
+   - ✅ **Richtig: B** - Rückkopplung bedeutet Lernen und Nachsteuern anhand tatsächlicher Zustandsveränderungen.
 
 6. **Welche Zielgröße bleibt leitend?**
    - A) Positive Netto-Wirkung  B) Maximale Aktivität  C) Maximale Reichweite  D) Geringste Kritik
-   - ✅ **Richtig: A** — Wenn eine Zielgröße gemeint ist, geht es um positive Netto-Wirkung im Referenzrahmen Mensch, Planet und Demokratie.
+   - ✅ **Richtig: A** - Wenn eine Zielgröße gemeint ist, geht es um positive Netto-Wirkung im Referenzrahmen Mensch, Planet und Demokratie.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -694,11 +694,11 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V07. Offen bleibt
 
 ### Interne Quellen
 
-- `woek-akademie-app/content/lehrgaenge/woek-g-v07.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/content/lehrgaenge/woek-g-v07.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

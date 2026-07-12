@@ -19,10 +19,15 @@ const NON_PUBLIC_VISIBILITIES = new Set(["review_required", "internal", "hidden"
 
 const SKIP_PARTS = [
   ".git/",
+  ".github/",
+  ".claude/",
   ".codex-backup/",
+  ".next/",
+  ".vercel/",
   "node_modules/",
-  "woek-akademie-app/.next/",
-  "woek-akademie-app/node_modules/",
+  ".wt-",
+  "woek-akademie-app/",
+  "woek-institut-app/",
   "outputs/"
 ];
 

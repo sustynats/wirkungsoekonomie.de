@@ -7,7 +7,7 @@ Status: Vorschlag (Claude-Lane, Design/Content) · Stand 2026-07-08 · zur Abnah
 Die Wirkungsökonomie soll nicht über die öffentliche Verfügbarkeit einer einzelnen
 Person skaliert werden, sondern über ein tragfähiges Wissens-, Schulungs- und
 Multiplikator:innensystem. Der neue Akademie-Bereich qualifiziert Menschen, die die
-Methode **erklären, anwenden und weitervermitteln** — unabhängig, qualitätsgesichert
+Methode **erklären, anwenden und weitervermitteln** - unabhängig, qualitätsgesichert
 und skalierbar. Er ist die strukturelle Entsprechung zur strategischen Fokussierung
 im Pressebereich (`/w/natalie-weber/presse/`).
 
@@ -15,7 +15,7 @@ im Pressebereich (`/w/natalie-weber/presse/`).
 
 Coaches · Trainer:innen · Wissenschaftler:innen · Fachautor:innen · Berater:innen ·
 Lehrende · Nachhaltigkeits-/Impact-/ESG-Verantwortliche · politische Bildner:innen ·
-Journalist:innen · Organisationsentwickler:innen — als Multiplikator:innen für
+Journalist:innen · Organisationsentwickler:innen - als Multiplikator:innen für
 Unternehmen, Bildung, Politik, Verwaltung, Medien und Zivilgesellschaft.
 
 ## Curriculum (10 Module)
@@ -32,18 +32,18 @@ Unternehmen, Bildung, Politik, Verwaltung, Medien und Zivilgesellschaft.
 10. Abschlussprüfung / Zertifizierung
 
 Die Module knüpfen an bestehende Akademie-Inhalte (Grundstudium, Fachlehrgänge
-Wirkungsmanagement/Impact-Controlling) und das Glossar an — Modul 5 z. B. an
+Wirkungsmanagement/Impact-Controlling) und das Glossar an - Modul 5 z. B. an
 `/begriffe/netto-wirkung/`, `/begriffe/impact-of-investment/`,
 `/begriffe/wirkungssteuer/`; Modul 2 an `/begriffe/wirkpfad/`,
 `/begriffe/wirkungspotenzial/`.
 
 ## Rollen / Zertifizierungsstufen (Vorschlag)
 
-- **WÖk-Multiplikator:in** — Grundzertifikat (Module 1–4 + Prüfung): darf die
+- **WÖk-Multiplikator:in** - Grundzertifikat (Module 1–4 + Prüfung): darf die
   Wirkungsökonomie erklären und in Bildungs-/Beratungskontexten einsetzen.
-- **WÖk-Trainer:in / Coach** — Aufbaustufe (Module 5–9 + Lehrprobe): darf Schulungen
+- **WÖk-Trainer:in / Coach** - Aufbaustufe (Module 5–9 + Lehrprobe): darf Schulungen
   und Workshops im Namen der Methode geben.
-- **Wissenschaftliche:r / Fachpartner:in** — für Einordnung, Fachgespräche und
+- **Wissenschaftliche:r / Fachpartner:in** - für Einordnung, Fachgespräche und
   Medienformate als autorisierte:r Ansprechpartner:in (Bezug zum Wirkungsinstitut).
 
 Qualitätssicherung: Prüfung, Praxisnachweis, Wiederzertifizierung; Führung eines
@@ -67,7 +67,7 @@ Discord bleibt optionaler Community-Kanal.
 3. **Akademie-App-Integration** (Codex/Kern): Rollen `multiplikator`, `trainer`,
    `fachpartner`; Kurszuordnung; Zertifikatsausgabe über bestehende
    `build-certificates`-Pipeline; Verzeichnis autorisierter Personen.
-4. **Datenschutz:** keine Zertifikatsinhaber-Daten ins Website-Repo — Verzeichnis
+4. **Datenschutz:** keine Zertifikatsinhaber-Daten ins Website-Repo - Verzeichnis
    über Akademie-API + geschützte Quelle (vgl. Zertifikat-Privacy-Regel).
 
 ## Nächster Schritt

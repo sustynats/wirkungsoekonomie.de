@@ -95,27 +95,27 @@ Praktisch heißt das: Ein Unternehmen darf sagen, dass es ein positives Projekt 
 
 1. **Was bedeutet Nichtkompensation?**
    - A) Jeder Vorteil zählt doppelt  B) schwere Schäden dürfen nicht durch andere Vorteile neutralisiert werden  C) Daten sind unwichtig  D) alle Wirkung ist negativ
-   - ✅ **Richtig: B** — Nichtkompensation hält kritische Schäden sichtbar.
+   - ✅ **Richtig: B** - Nichtkompensation hält kritische Schäden sichtbar.
 
 2. **Wogegen schützt Nichtkompensation?**
    - A) Quellenklarheit  B) Greenwashing und Schönrechnung  C) Datenqualität  D) Rückkopplung
-   - ✅ **Richtig: B** — Positive Teilaspekte dürfen Schäden nicht verdecken.
+   - ✅ **Richtig: B** - Positive Teilaspekte dürfen Schäden nicht verdecken.
 
 3. **Was ist der Unterschied zur Reverse Merit Order?**
    - A) Es gibt keinen  B) Nichtkompensation verhindert Wegrechnen, Reverse Merit Order begrenzt über das schwächste Feld  C) Reverse Merit Order ist Werbung  D) Nichtkompensation bewertet Personen
-   - ✅ **Richtig: B** — Beide Logiken ergänzen sich.
+   - ✅ **Richtig: B** - Beide Logiken ergänzen sich.
 
 4. **Welche Aussage ist WÖk-konform?**
    - A) Wir verschmutzen, pflanzen aber Bäume, also ist alles neutral  B) Die Baumpflanzung ist positiv, die Verschmutzung bleibt ein eigener Schaden  C) Schaden ist egal  D) Wirkung ist nur Absicht
-   - ✅ **Richtig: B** — Positive Zusatzwirkung hebt Schaden nicht automatisch auf.
+   - ✅ **Richtig: B** - Positive Zusatzwirkung hebt Schaden nicht automatisch auf.
 
 5. **Was ist bessere Praxis?**
    - A) Schaden reduzieren und Zusatzwirkung transparent ausweisen  B) Schaden verstecken  C) nur Zertifikate kaufen  D) Betroffene ignorieren
-   - ✅ **Richtig: A** — Wirkungssteuerung setzt am Wirkpfad an.
+   - ✅ **Richtig: A** - Wirkungssteuerung setzt am Wirkpfad an.
 
 6. **Warum ist Nichtkompensation demokratisch relevant?**
    - A) Sie verhindert verdeckte Schäden und stärkt Wahrheit im öffentlichen Raum  B) Sie ersetzt Debatten  C) Sie bewertet Menschen  D) Sie verbietet Kritik
-   - ✅ **Richtig: A** — Ehrliche Wirkungsaussagen schützen Orientierung und Vertrauen.
+   - ✅ **Richtig: A** - Ehrliche Wirkungsaussagen schützen Orientierung und Vertrauen.
 
 ## 7. Transferaufgabe
 
@@ -329,27 +329,27 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 1. **Was bedeutet Nichtkompensation?**
    - A) Jeder Vorteil zählt doppelt  B) schwere Schäden dürfen nicht durch andere Vorteile neutralisiert werden  C) Daten sind unwichtig  D) alle Wirkung ist negativ
-   - ✅ **Richtig: B** — Nichtkompensation hält kritische Schäden sichtbar.
+   - ✅ **Richtig: B** - Nichtkompensation hält kritische Schäden sichtbar.
 
 2. **Wogegen schützt Nichtkompensation?**
    - A) Quellenklarheit  B) Greenwashing und Schönrechnung  C) Datenqualität  D) Rückkopplung
-   - ✅ **Richtig: B** — Positive Teilaspekte dürfen Schäden nicht verdecken.
+   - ✅ **Richtig: B** - Positive Teilaspekte dürfen Schäden nicht verdecken.
 
 3. **Was ist der Unterschied zur Reverse Merit Order?**
    - A) Es gibt keinen  B) Nichtkompensation verhindert Wegrechnen, Reverse Merit Order begrenzt über das schwächste Feld  C) Reverse Merit Order ist Werbung  D) Nichtkompensation bewertet Personen
-   - ✅ **Richtig: B** — Beide Logiken ergänzen sich.
+   - ✅ **Richtig: B** - Beide Logiken ergänzen sich.
 
 4. **Welche Aussage ist WÖk-konform?**
    - A) Wir verschmutzen, pflanzen aber Bäume, also ist alles neutral  B) Die Baumpflanzung ist positiv, die Verschmutzung bleibt ein eigener Schaden  C) Schaden ist egal  D) Wirkung ist nur Absicht
-   - ✅ **Richtig: B** — Positive Zusatzwirkung hebt Schaden nicht automatisch auf.
+   - ✅ **Richtig: B** - Positive Zusatzwirkung hebt Schaden nicht automatisch auf.
 
 5. **Was ist bessere Praxis?**
    - A) Schaden reduzieren und Zusatzwirkung transparent ausweisen  B) Schaden verstecken  C) nur Zertifikate kaufen  D) Betroffene ignorieren
-   - ✅ **Richtig: A** — Wirkungssteuerung setzt am Wirkpfad an.
+   - ✅ **Richtig: A** - Wirkungssteuerung setzt am Wirkpfad an.
 
 6. **Warum ist Nichtkompensation demokratisch relevant?**
    - A) Sie verhindert verdeckte Schäden und stärkt Wahrheit im öffentlichen Raum  B) Sie ersetzt Debatten  C) Sie bewertet Menschen  D) Sie verbietet Kritik
-   - ✅ **Richtig: A** — Ehrliche Wirkungsaussagen schützen Orientierung und Vertrauen.
+   - ✅ **Richtig: A** - Ehrliche Wirkungsaussagen schützen Orientierung und Vertrauen.
 
 ## 6. Glossar der Kernbegriffe
 
@@ -1302,11 +1302,11 @@ Für den Fragenpool sind besonders geeignet:
 
 ### Interne Quellen
 
-- `woek-akademie-app/docs/lehrgaenge/woek-g-v35-nichtkompensation-gegen-greenwashing.md` — unmittelbarer Akademie-Quelltext dieser V1-Fassung.
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` — aktuelles Grundlagenwerk.
+- `woek-akademie-app/docs/lehrgaenge/woek-g-v35-nichtkompensation-gegen-greenwashing.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` — Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` — geschützte Prüfungs- und Antwortlogik.
+- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
+- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

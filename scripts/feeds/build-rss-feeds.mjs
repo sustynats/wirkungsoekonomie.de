@@ -624,7 +624,7 @@ function itemsFromQuellenarchiv() {
         s.summary ? stripTags(s.summary) : "",
         s.einordnung ? `Wirkungsökonomische Einordnung: ${stripTags(s.einordnung)}` : "",
       ].filter(Boolean).join(" ");
-      const description = [meta, body].filter(Boolean).join(" — ").slice(0, 600);
+      const description = [meta, body].filter(Boolean).join(" - ").slice(0, 600);
       return {
         title: s.title || s.code || "Quelle",
         url,

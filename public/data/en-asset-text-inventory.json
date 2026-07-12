@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2026-07-english-asset-text-inventory",
-  "generatedAt": "2026-07-11",
+  "generatedAt": "2026-07-12",
   "scope": "Static inventory for visible German text in website image assets. SVG text can usually be translated directly; raster images need manual/OCR review and English variants where embedded text exists.",
   "summary": {
     "totalImages": 289,
@@ -943,10 +943,11 @@
       "file": "assets/img/brand/signet.svg",
       "kind": "svg",
       "status": "svg-editable-text",
-      "usageCount": 156,
+      "usageCount": 157,
       "usedBy": [
         "akademie.html",
         "akademie.html",
+        "akademie/grundlagen.html",
         "akademie/lernpfad.html",
         "akademie/pruefungen.html",
         "akademie/studienstruktur.html",
@@ -955,8 +956,7 @@
         "anwendungen/scanner.html",
         "app/index.html",
         "begriffe/index.html",
-        "bibliothek/index.html",
-        "blog.html"
+        "bibliothek/index.html"
       ],
       "detectedSvgText": [
         "Signet der Wirkungsökonomie",
