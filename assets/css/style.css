@@ -2488,15 +2488,23 @@ body.nav-is-open {
 }
 
 /* Onlinefassung / Kapitel-Lesefassung der Grundlagenwerke */
+/* Ganze Leseseite als zentrierte, komfortabel breite Lesespalte (Kopf + Text gleich
+   breit, keine tote Fläche rechts). Trifft nur die selbstgebauten Leseseiten
+   (article-shell.reference-reader), nicht den kuratierten Referenz-Reader. */
+.article-shell.reference-reader {
+  width: 100%;
+  max-width: 52rem;
+  margin-inline: auto;
+}
 .reader-heading:hover .cite-anchor,
 .reader-heading:focus-within .cite-anchor {
   opacity: 1;
 }
 .reader-body {
-  max-width: 44rem;
+  max-width: none;
   margin-top: 1.5rem;
-  font-size: 1.02rem;
-  line-height: 1.72;
+  font-size: 1.06rem;
+  line-height: 1.75;
 }
 .reader-body h2.reader-heading {
   margin: 2.2rem 0 0.7rem;
