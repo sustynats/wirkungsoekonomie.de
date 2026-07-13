@@ -278,7 +278,7 @@ function hub() {
           <h2>Das Methodensystem in Kürze</h2>
         </div>
         <figure style="max-width:900px;margin:0 auto">
-          <video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4">Dein Browser unterstützt kein Video.</video>
+          <video controls controlsList="nodownload" playsinline preload="metadata" style="width:100%;border-radius:12px;display:block" aria-label="Das WÖMS im Überblick"><source src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4" type="video/mp4">Dein Browser unterstützt kein Video.</video>
         </figure>
       </section>
       <section class="section">
@@ -324,7 +324,7 @@ function gesamtbild() {
       <section class="section section-soft">
         <div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Modell im Video</h2></div>
         <figure style="max-width:900px;margin:0 auto">
-          <video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woek-erklaervideo.mp4">Dein Browser unterstützt kein Video.</video>
+          <video controls controlsList="nodownload" playsinline preload="metadata" style="width:100%;border-radius:12px;display:block" aria-label="Wirkungsökonomie einfach erklärt"><source src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woek-erklaervideo.mp4" type="video/mp4">Dein Browser unterstützt kein Video.</video>
         </figure>
       </section>
       <section class="section"><div class="card">
@@ -398,7 +398,7 @@ function canvasIndex() {
         <div class="hero-actions no-print"><a class="btn btn-primary" href="${base}methodenraum/methoden/">Zu den 152 Methoden-Canvas</a></div>
       </div><aside class="card"><p class="card-kicker">Auf einen Blick</p><dl class="portal-meta-grid compact"><div><dt>Methoden-Canvas</dt><dd>152</dd></div><div><dt>Anwendungs-Canvas</dt><dd>56</dd></div><div><dt>Pflichtfelder</dt><dd>5</dd></div></dl></aside></div></section>
       <section class="section section-soft"><div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Canvas-Prinzip im Video</h2></div>
-        <figure style="max-width:900px;margin:0 auto"><video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4">Dein Browser unterstützt kein Video.</video></figure>
+        <figure style="max-width:900px;margin:0 auto"><video controls controlsList="nodownload" playsinline preload="metadata" style="width:100%;border-radius:12px;display:block" aria-label="Das WÖMS im Überblick"><source src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4" type="video/mp4">Dein Browser unterstützt kein Video.</video></figure>
       </section>
       <section class="section"><div class="card">
         <p class="hero-kicker">Immer dabei</p><h2>Die fünf Pflichtfelder</h2>
@@ -456,7 +456,7 @@ function journeys() {
         <p class="hero-subtitle">Fertige Ablaufpläne, die Methoden zu einem Workshop verketten - für Team, Beratung und Coaching. Jede Journey ist ein roter Faden aus mehreren Methoden.</p>
       </div><aside class="card"><p class="card-kicker">Hinweis</p><p class="note">Die ausführlichen Moderationsleitfäden je Journey folgen fortlaufend; die Methoden dahinter sind bereits vollständig verlinkt.</p></aside></div></section>
       <section class="section section-soft"><div class="section-header"><p class="hero-kicker">Zum Einstieg</p><h2>Das Methodensystem im Video</h2></div>
-        <figure style="max-width:900px;margin:0 auto"><video controls preload="metadata" style="width:100%;border-radius:12px;display:block" src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4">Dein Browser unterstützt kein Video.</video></figure>
+        <figure style="max-width:900px;margin:0 auto"><video controls controlsList="nodownload" playsinline preload="metadata" style="width:100%;border-radius:12px;display:block" aria-label="Das WÖMS im Überblick"><source src="https://github.com/sustynats/wirkungsoekonomie.de/releases/download/akademie-media-2026-07/woems-kern-video.mp4" type="video/mp4">Dein Browser unterstützt kein Video.</video></figure>
       </section>
       <section class="section"><div class="card-grid three">${cards}</div></section>`;
   write('methodenraum/journeys/index.html', page({ base, title: '20 Workshop-Journeys | WÖMS | Wirkungsökonomie', desc: '20 Standard-Workshop-Journeys des WÖMS: fertige Ablaufpläne, die Methoden zu Workshops für Team, Beratung und Coaching verketten.', type: 'Übersicht', body }));
