@@ -57,6 +57,7 @@
     "sanitize:public-downloads": "node scripts/quality/sanitize-public-download-links.mjs",
     "check:internal-reference-publication": "node scripts/quality/check-internal-reference-publication.mjs",
     "check:assets": "node scripts/quality/check-assets.mjs",
+    "check:mobile-videos": "node scripts/quality/check-mobile-video-markup.mjs",
     "check:release-assets": "node scripts/assets/check-release-assets.mjs",
     "check:public-hardening": "node scripts/quality/check-public-hardening.mjs",
     "sanierung:status": "node scripts/quality/build-detaildossier-sanierung-status.mjs",
