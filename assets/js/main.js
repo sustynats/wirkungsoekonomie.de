@@ -2,7 +2,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const mainScriptUrl =
   document.currentScript?.src || document.querySelector('script[src*="assets/js/main.js"]')?.src || "";
-const siteAnalyticsEndpoint = "https://akademie.wirkungsoekonomie.de/api/site-event";
+const siteAnalyticsEndpoint = "https://fganranxrdyewbjpvubx.supabase.co/functions/v1/site-event";
 const siteAnalyticsSessionKey = "wirkungsoekonomie-site-session";
 const siteAnalyticsVisitorKey = "wirkungsoekonomie-site-visitor";
 const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
@@ -535,7 +535,6 @@ function sendSiteAnalyticsEvent(eventType, details = {}) {
 }
 
 sendSiteAnalyticsEvent("page_view");
-window.setInterval(() => sendSiteAnalyticsEvent("heartbeat"), 60000);
 
 document.querySelectorAll("[data-analytics-event='academy_app_cta']").forEach((link) => {
   if (!(link instanceof HTMLAnchorElement)) {
