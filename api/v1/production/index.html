@@ -7,13 +7,13 @@
 </head>
 <body>
 <pre>{
-  &quot;generatedAt&quot;: &quot;2026-07-12T21:52:06.302Z&quot;,
+  &quot;generatedAt&quot;: &quot;2026-07-15T10:58:18.688Z&quot;,
   &quot;version&quot;: &quot;v1&quot;,
   &quot;summary&quot;: {
     &quot;totalBuildSteps&quot;: 81,
     &quot;dataProducts&quot;: 9,
     &quot;workflowGates&quot;: 5,
-    &quot;scripts&quot;: 97
+    &quot;scripts&quot;: 98
   },
   &quot;operatingModel&quot;: {
     &quot;architecture&quot;: &quot;modularer Kern, statisch-first Website, dünne Frontends&quot;,
@@ -1072,6 +1072,14 @@
       ]
     },
     {
+      &quot;name&quot;: &quot;check:mobile-videos&quot;,
+      &quot;command&quot;: &quot;node scripts/quality/check-mobile-video-markup.mjs&quot;,
+      &quot;stepCount&quot;: 1,
+      &quot;phases&quot;: [
+        &quot;quality-gate&quot;
+      ]
+    },
+    {
       &quot;name&quot;: &quot;check:release-assets&quot;,
       &quot;command&quot;: &quot;node scripts/assets/check-release-assets.mjs&quot;,
       &quot;stepCount&quot;: 1,
@@ -1430,13 +1438,13 @@
     {
       &quot;id&quot;: &quot;glossary&quot;,
       &quot;path&quot;: &quot;assets/data/glossary-lookup.json&quot;,
-      &quot;count&quot;: 1835,
+      &quot;count&quot;: 1851,
       &quot;owner&quot;: &quot;Wissenskern&quot;
     },
     {
       &quot;id&quot;: &quot;search-index&quot;,
       &quot;path&quot;: &quot;assets/search/search-index.json&quot;,
-      &quot;count&quot;: 27883,
+      &quot;count&quot;: 27899,
       &quot;owner&quot;: &quot;Wissenskern&quot;
     },
     {
