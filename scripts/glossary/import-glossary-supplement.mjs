@@ -56,6 +56,37 @@ function splitList(value) {
     .filter(Boolean);
 }
 
+function sourceLabel(value) {
+  return String(value || "").split("|")[0].trim();
+}
+
+function deepSectionsFor(raw, shortDefinition, woekRelation, examples, sources) {
+  const sections = [
+    {
+      title: "Wirkmechanismus und Kontext",
+      body: raw.Wirkmechanismus || woekRelation,
+    },
+    {
+      title: "Prüffragen für einen offenen Diskurs",
+      items: splitList(raw.Prueffragen || raw.Prüffragen),
+    },
+    {
+      title: "Beispiele und Abgrenzung",
+      body: raw.Abgrenzung || "Die Einordnung betrifft die konkrete kommunikative Funktion, nicht automatisch jede Verwendung des Ausdrucks oder die Personen, die ihn verwenden.",
+      items: examples,
+    },
+    {
+      title: "Wirkungsökonomische Einordnung",
+      body: woekRelation,
+    },
+    {
+      title: "Quellenbasis",
+      items: sources.map(sourceLabel),
+    },
+  ];
+  return sections.filter((section) => section.body || section.items?.length);
+}
+
 function aliasesForTitle(title) {
   const parts = String(title || "").split("/").map((item) => item.trim()).filter(Boolean);
   const aliases = [title, ...parts];
@@ -301,6 +332,10 @@ function normalizeImportedTerm(raw, aliasMap, missingRelated) {
   const slug = raw.slug || slugify(label);
   const aliases = unique([...aliasesForTitle(label), ...(raw.aliases || [])]);
   const relatedTerms = resolveRelatedTerms(raw.Querverweise, aliasMap, missingRelated);
+  const shortDefinition = raw.Kurzdefinition.trim();
+  const woekRelation = raw["WÖk-Verwendung"].trim();
+  const examples = splitList(raw.Beispiele);
+  const officialSources = unique([...(raw.officialSources || []), ...sourcesForTerm(raw)]);
   return {
     id: slug,
     termId: slug,
@@ -309,15 +344,15 @@ function normalizeImportedTerm(raw, aliasMap, missingRelated) {
     slug,
     aliases,
     synonyms: aliases,
-    shortDefinition: raw.Kurzdefinition.trim(),
-    hoverDefinition: raw.Kurzdefinition.trim(),
-    definition: raw.Kurzdefinition.trim(),
-    longDefinition: raw.Kurzdefinition.trim(),
-    woekRelation: raw["WÖk-Verwendung"].trim(),
-    usageNote: raw["WÖk-Verwendung"].trim(),
+    shortDefinition,
+    hoverDefinition: shortDefinition,
+    definition: shortDefinition,
+    longDefinition: raw.Langdefinition?.trim() || shortDefinition,
+    woekRelation,
+    usageNote: woekRelation,
     doNotConfuseWith: [raw.Abgrenzung.trim()],
     relatedTerms,
-    officialSources: sourcesForTerm(raw),
+    officialSources,
     sourceNotes: raw.Quellenhinweise || "",
     category: categoryForSection(raw.section),
     type: typeForTerm(raw),
@@ -337,6 +372,8 @@ function normalizeImportedTerm(raw, aliasMap, missingRelated) {
     showHover: true,
     autoLinkAllowed: true,
     maxAutoLinksPerPage: 1,
+    examples,
+    deepGlossarySections: deepSectionsFor(raw, shortDefinition, woekRelation, examples, officialSources),
   };
 }
 

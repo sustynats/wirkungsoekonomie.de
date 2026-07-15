@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-12T21:52:06.302Z",
+  "generatedAt": "2026-07-15T10:58:18.688Z",
   "version": "v1",
   "summary": {
     "totalBuildSteps": 81,
     "dataProducts": 9,
     "workflowGates": 5,
-    "scripts": 97
+    "scripts": 98
   },
   "operatingModel": {
     "architecture": "modularer Kern, statisch-first Website, dünne Frontends",
@@ -1064,6 +1064,14 @@
       ]
     },
     {
+      "name": "check:mobile-videos",
+      "command": "node scripts/quality/check-mobile-video-markup.mjs",
+      "stepCount": 1,
+      "phases": [
+        "quality-gate"
+      ]
+    },
+    {
       "name": "check:release-assets",
       "command": "node scripts/assets/check-release-assets.mjs",
       "stepCount": 1,
@@ -1422,13 +1430,13 @@
     {
       "id": "glossary",
       "path": "assets/data/glossary-lookup.json",
-      "count": 1835,
+      "count": 1851,
       "owner": "Wissenskern"
     },
     {
       "id": "search-index",
       "path": "assets/search/search-index.json",
-      "count": 27883,
+      "count": 27899,
       "owner": "Wissenskern"
     },
     {
