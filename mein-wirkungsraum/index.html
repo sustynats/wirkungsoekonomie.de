@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mein Wirkungsraum | Persönliches Wissens- und Lerncockpit</title>
-    <meta name="description" content="Mein Wirkungsraum ist das persönliche Wissens- und Lerncockpit der Wirkungsökonomie: Merken, Historie, Such- und KI-Anfragen, Sammlungen, Notizen, Wissensnetz und Empfehlungen. Lokal, datenschutzfreundlich und ohne Login.">
+    <meta name="description" content="Mein Wirkungsraum ist das persönliche Wissens- und Lerncockpit der Wirkungsökonomie. Merkliste mit WÖk-ID über Geräte synchronisieren; persönliche Historie und Notizen bleiben lokal.">
     <link rel="canonical" href="https://wirkungsoekonomie.de/mein-wirkungsraum/">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../assets/css/style.css?v=20260624-collapsible-history">
@@ -51,7 +51,7 @@
           <p class="hero-kicker">Persönliches Wissens- und Lerncockpit</p>
           <h1 class="hero-title">Mein Wirkungsraum</h1>
           <p class="hero-subtitle">Mein Wirkungsraum ist das persönliche Wissens- und Lerncockpit der Wirkungsökonomie.</p>
-          <p class="card-text">Er verbindet Merken, Historie, vergangene Suchanfragen, vergangene KI-Anfragen, Weiterlesen, Lesefortschritt, Glossar-Lernen, Sammlungen, Akademie-Fortschritt, Notizen, Wissensnetz, Empfehlungen sowie Export und Import. Alles bleibt zunächst lokal, datenschutzfreundlich und ohne Login in deinem Browser.</p>
+          <p class="card-text">Er verbindet Merken, Historie, vergangene Suchanfragen, vergangene KI-Anfragen, Weiterlesen, Lesefortschritt, Glossar-Lernen, Sammlungen, Akademie-Fortschritt, Notizen, Wissensnetz, Empfehlungen sowie Export und Import. Ohne Anmeldung bleibt alles lokal; mit deiner freiwillig verknüpften WÖk-ID steht deine Merkliste auch auf anderen Geräten sowie in Institut und Akademie bereit.</p>
           <div class="wirkungsraum-connect" aria-label="Mein Wirkungsraum verbindet">
             <p class="card-kicker">Es verbindet</p>
             <ul class="wirkungsraum-connect-list">
@@ -361,8 +361,19 @@
           <div class="section-header">
             <p class="hero-kicker">Datenspeicherung &amp; Synchronisation</p>
             <h2 id="datenkontrolle-title">Auf anderem Gerät nutzen</h2>
-            <p>Mein Wirkungsraum ist nur in deinem Browser gespeichert. Ohne Login werden keine persönlichen Daten an den Server übertragen. Du kannst ihn per privatem Wiederherstellungslink, JSON-Datei oder lokaler Löschung selbst kontrollieren.</p>
-            <p>Die Datenstruktur enthält bereits optionale Sync-Felder für eine spätere Konto-Anbindung. Registrierung, Login und Server-Speicherung sind nicht aktiv.</p>
+            <p>Ohne Login bleibt Mein Wirkungsraum ausschließlich in diesem Browser. Mit einer WÖk-ID kannst du deine Merkliste freiwillig zwischen Website, Institut und Akademie synchronisieren. Historie, Such- und KI-Anfragen, Lesefortschritt und persönliche Notizen bleiben lokal.</p>
+          </div>
+          <div class="wirkungsraum-sync-card" data-wirkungsraum-account aria-labelledby="woek-id-sync-title">
+            <div>
+              <p class="card-kicker">WÖk-ID</p>
+              <h3 id="woek-id-sync-title">Merkliste übergreifend nutzen</h3>
+              <p data-wirkungsraum-account-status role="status" aria-live="polite">Verbindungsstatus wird geprüft.</p>
+            </div>
+            <div class="wirkungsraum-data-toolbar">
+              <a class="btn btn-primary" data-wirkungsraum-account-login href="https://akademie.wirkungsoekonomie.de/login">Mit LinkedIn oder Discord verbinden</a>
+              <button class="btn btn-secondary" type="button" data-wirkungsraum-account-sync hidden>Merkliste jetzt synchronisieren</button>
+              <a class="btn btn-secondary" href="https://akademie.wirkungsoekonomie.de/profil">Profil und Einstellungen</a>
+            </div>
           </div>
           <div class="wirkungsraum-sync-card" aria-labelledby="wiederherstellungslink-title">
             <div>
@@ -441,7 +452,7 @@
             <button class="btn btn-secondary" type="button" data-reset-wirkungsraum-object="ai_query_history">KI-Anfragen löschen</button>
             <button class="btn btn-danger" type="button" data-reset-wirkungsraum-all>Alle lokalen Daten löschen</button>
           </div>
-          <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Keine Datenübertragung an den Server. Export, Import und private Wiederherstellungslinks laufen ausschließlich in deinem Browser. Synchronisation ist technisch vorbereitet, aber ausgeschaltet.</p>
+          <p class="wirkungsraum-data-status" data-wirkungsraum-data-status role="status" aria-live="polite">Ohne WÖk-ID bleiben alle Daten lokal. Mit WÖk-ID wird ausschließlich die Merkliste synchronisiert; private Notizen und Verläufe bleiben auf diesem Gerät.</p>
         </div>
       </section>
     </main>
@@ -551,5 +562,6 @@
 </footer>
     <script src="../assets/js/vendor/qrcode-generator.js?v=20260605"></script>
     <script src="../assets/js/main.js?v=20260624-collapsible-history"></script>
+    <script src="../assets/js/woek-wirkungsraum-account.js?v=20260716"></script>
   </body>
 </html>

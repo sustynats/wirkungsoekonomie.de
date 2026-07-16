@@ -5163,6 +5163,7 @@ const WirkungsraumLayer = (() => {
 
   function saveItem(item) {
     const stored = WoekUserSpace.upsertItem("saved_items", item, { limit: 300, timestampField: "saved_at" });
+    window.WoekWirkungsraumAccount?.saveItem?.(stored || item);
     trackWirkungsraumEvent("saved_item_add", stored || item);
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
   }
@@ -5170,6 +5171,7 @@ const WirkungsraumLayer = (() => {
   function removeItem(id) {
     const existing = savedItemById(id);
     WoekUserSpace.removeItem("saved_items", id);
+    if (existing) window.WoekWirkungsraumAccount?.removeItem?.(existing);
     removeItemFromAllCollections(id);
     if (existing) trackWirkungsraumEvent("saved_item_remove", existing);
     document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
@@ -7915,4 +7917,10 @@ document.addEventListener("DOMContentLoaded", () => {
   MethodToolFilterLayer.init();
   CopyAnswerLayer.init();
   WirkungsraumLayer.init();
+  if (!window.WoekWirkungsraumAccount) {
+    const script = document.createElement("script");
+    script.src = "https://wirkungsoekonomie.de/assets/js/woek-wirkungsraum-account.js?v=20260716";
+    script.async = true;
+    document.head.append(script);
+  }
 });
