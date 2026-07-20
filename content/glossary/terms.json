@@ -20388,7 +20388,7 @@
         "Grundgesetz"
       ],
       "shortDefinition": "Das Grundgesetz ist die Verfassung der Bundesrepublik Deutschland und legt Grundrechte, Staatsstrukturprinzipien, demokratische Ordnung und Grenzen staatlicher Macht fest.",
-      "hoverDefinition": "Das Grundgesetz ist die Verfassung der Bundesrepublik Deutschland und legt Grundrechte, Staatsstrukturprinzipien, demokratische Ordnung und Grenzen staatlicher Macht fest.",
+      "hoverDefinition": "Das Grundgesetz schützt Grundrechte, ordnet Demokratie und Rechtsstaat und enthält staatliche Schutz- und Gestaltungsaufträge, etwa zu Gleichberechtigung, natürlichen Lebensgrundlagen und Tieren.",
       "longDefinitionSource": "Glossar-Architektur Wirkmechanismen",
       "detailPath": "/begriffe/grundgesetz/",
       "category": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
@@ -20401,6 +20401,7 @@
         "demokratieprinzip",
         "rechtsstaatsprinzip",
         "sozialstaatsprinzip",
+        "staatsziele-und-verfassungsauftraege",
         "art-20a-gg",
         "verhaeltnismaessigkeit",
         "rechtsschutz",
@@ -38733,6 +38734,83 @@
       "internalNotes": ""
     },
     {
+      "id": "normative-wirkungsarchitektur",
+      "slug": "normative-wirkungsarchitektur",
+      "canonicalTitle": "WÖk-Mehrebenen-Normen- und Zielrahmen",
+      "aliases": [
+        "Normative Wirkungsarchitektur",
+        "Mehrebenen-Normen- und Zielrahmen",
+        "mehrere normative Anker"
+      ],
+      "shortDefinition": "Der WÖk-Mehrebenen-Normen- und Zielrahmen ordnet globale Ziele, Menschenrechte, europäisches Recht, Grundgesetz, Staatsziele und Fachrecht als getrennte normative Anker einer Wirkungsprüfung zu. Eine Folge wird dabei einmal gemessen und bewertet, nicht pro Anker erneut gezählt.",
+      "hoverDefinition": "Mehrere normative Anker können dieselbe Wirkung begründen, aber keinen zweiten Messwert oder Score erzeugen. Ein Wirkungsbefund ersetzt weder Rechtsprüfung noch demokratische Abwägung.",
+      "longDefinitionSource": "SDG+ und Staatsziele: Redaktions- und Umsetzungsstandard",
+      "detailPath": "/begriffe/normative-wirkungsarchitektur/",
+      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "status": "approved",
+      "priority": "core",
+      "source": "Grundgesetz (GG), WÖK-Q-0157; EMRK, WÖK-Q-0342; EUV Art. 3, WÖK-Q-0993; AEUV Art. 11 und 13, WÖK-Q-0994 und WÖK-Q-0995",
+      "lastReviewed": "2026-07-20",
+      "relatedTerms": [
+        "sdg-plus",
+        "voelkerrecht-und-menschenrechte",
+        "europaeisches-primaerrecht-und-grundrechte",
+        "staatsziele-und-verfassungsauftraege",
+        "art-20a-gg",
+        "tierschutz-und-tierwohl",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [
+        "wirkpfad",
+        "wirkungsbewertung"
+      ],
+      "relatedTools": [
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "relatedDemos": [],
+      "relatedImpactFields": [
+        "Staat, Recht & Demokratie",
+        "Klima, Energie & Ressourcen",
+        "Landwirtschaft und Ernährung"
+      ],
+      "relatedAcademyModules": [],
+      "relatedDataRegisters": [],
+      "usedOnRoutes": [
+        "/verstehen/sdgs-sdgplus/"
+      ],
+      "oldRoutes": [],
+      "redirectTargets": [],
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "exactMatchOnly": false,
+      "excludeInRoutes": [
+        "/quellenarchiv/"
+      ],
+      "includeInRoutes": [],
+      "excludedContexts": [
+        "nav",
+        "header",
+        "footer",
+        "button",
+        "cta",
+        "breadcrumb",
+        "heading",
+        "table",
+        "formula",
+        "code",
+        "metadata",
+        "alt"
+      ],
+      "internalNotes": "Normative Anker sind kein zusätzlicher Zielkatalog und keine Rechenpunkte. Grundrechte, Staatsstrukturprinzipien, Staatsziele und Fachrecht sind zu unterscheiden. Ein negativer WÖk-Befund ist keine Rechtsfeststellung und keine individuelle Rechtsberatung."
+    },
+    {
       "id": "normativer-wert",
       "slug": "normativer-wert",
       "canonicalTitle": "Normativer Wert",
@@ -42369,10 +42447,10 @@
       "longDefinitionSource": "Glossar-Architektur Wirkmechanismen",
       "detailPath": "/begriffe/plug-and-charge/",
       "category": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
-      "status": "restored",
-      "priority": "low",
+      "status": "approved",
+      "priority": "core",
       "source": "Batterien, Ladeinfrastruktur, Netzanschluss und Energiespeicher",
-      "lastReviewed": "2026-05-29",
+      "lastReviewed": "2026-07-18",
       "relatedTerms": [
         "eichrecht-ladeinfrastruktur",
         "backend-ladeinfrastruktur"
@@ -51801,11 +51879,11 @@
         "SDG Plus",
         "SDG-Plus"
       ],
-      "shortDefinition": "SDG+ ist die WÖk-Erweiterung der SDGs um demokratische, mediale, institutionelle und digitale Wirkungsfelder.",
-      "hoverDefinition": "SDG+ ist die transparente WÖk-Erweiterung der SDGs um Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskurs und digitale Selbstbestimmung. SDG+ ist keine offizielle UN-Kategorie",
-      "longDefinitionSource": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "shortDefinition": "SDG+ ist die transparente WÖk-Erweiterung der SDGs um demokratische, mediale, rechtsstaatliche, soziale und digitale Voraussetzungen positiver Netto-Wirkung. Bei nationaler Anwendung wird SDG+ durch den jeweiligen Verfassungs- und Staatszielrahmen konkretisiert.",
+      "hoverDefinition": "SDG+ ergänzt die globalen SDGs, ist aber keine offizielle UN-Kategorie. In Deutschland gelten zusätzlich Grundrechte, Staatsstrukturprinzipien sowie Staatsziele und Verfassungsaufträge des Grundgesetzes.",
+      "longDefinitionSource": "SDG+ und Staatsziele: Redaktions- und Umsetzungsstandard",
       "detailPath": "/begriffe/sdg-plus/",
-      "category": "Demokratiebegriff",
+      "category": "Grundbegriff",
       "status": "restored",
       "priority": "low",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
@@ -51816,6 +51894,9 @@
         "mensch-planet-demokratie",
         "positive-netto-wirkung",
         "wirkungsbewertung",
+        "staatsziele-und-verfassungsauftraege",
+        "tierschutz-und-tierwohl",
+        "art-20a-gg",
         "idgs",
         "sdg-sdgplus-referenzrahmen",
         "sdg-washing",
@@ -51858,7 +51939,7 @@
         "metadata",
         "alt"
       ],
-      "internalNotes": ""
+      "internalNotes": "SDG+ ist global als WÖk-Erweiterung ausgewiesen. Der WÖk-Mehrebenen-Normen- und Zielrahmen verbindet für konkrete Anwendungen SDGs, SDG+, einschlägige Menschenrechte, europäische Menschenrechtsordnung, EU-Recht sowie Verfassungs- und Fachrecht, ohne diese Ebenen zu vermischen oder Wirkungen doppelt zu zählen; keine neue UN-Kategorie und keine individuelle Rechtsberatung."
     },
     {
       "id": "sdg-sdgplus-referenzrahmen",
@@ -53875,7 +53956,7 @@
         "Sozialstaatsprinzip"
       ],
       "shortDefinition": "Das Sozialstaatsprinzip verpflichtet den Staat, soziale Sicherheit, Teilhabe und Ausgleich als Staatsziel zu berücksichtigen.",
-      "hoverDefinition": "Das Sozialstaatsprinzip verpflichtet den Staat, soziale Sicherheit, Teilhabe und Ausgleich als Staatsziel zu berücksichtigen.",
+      "hoverDefinition": "Das Sozialstaatsprinzip ist ein Staatsstrukturprinzip: Es verpflichtet den Staat zu sozialer Sicherheit, Teilhabe und sozialem Ausgleich.",
       "longDefinitionSource": "Glossar-Architektur Wirkmechanismen",
       "detailPath": "/begriffe/sozialstaatsprinzip/",
       "category": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
@@ -54343,6 +54424,82 @@
         "alt"
       ],
       "internalNotes": ""
+    },
+    {
+      "id": "staatsziele-und-verfassungsauftraege",
+      "slug": "staatsziele-und-verfassungsauftraege",
+      "canonicalTitle": "Staatsziele und Verfassungsaufträge",
+      "aliases": [
+        "Staatsziele",
+        "Staatszielbestimmungen",
+        "Verfassungsaufträge",
+        "Staatsziele des Grundgesetzes"
+      ],
+      "shortDefinition": "Staatsziele und Verfassungsaufträge geben staatlichem Handeln eine verbindliche öffentliche Orientierung. Zum überkommenen Bestand werden Sozialstaatlichkeit, europäische Integration, Friedenspflicht sowie Umwelt- und Tierschutz gerechnet; hinzu kommen weitere Förder- und Schutzaufträge wie die tatsächliche Gleichberechtigung.",
+      "hoverDefinition": "Staatsziele ergänzen den globalen SDG-/SDG+-Rahmen in Deutschland durch verfassungsrechtliche Schutz- und Gestaltungsaufträge. Sie begründen nicht automatisch einen individuellen Anspruch und ersetzen weder Grundrechte noch demokratische Abwägung.",
+      "longDefinitionSource": "SDG+ und Staatsziele: Redaktions- und Umsetzungsstandard",
+      "detailPath": "/begriffe/staatsziele-und-verfassungsauftraege/",
+      "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "status": "approved",
+      "priority": "core",
+      "source": "Grundgesetz (GG), WÖK-Q-0157; SDG+ und Staatsziele: Redaktions- und Umsetzungsstandard",
+      "lastReviewed": "2026-07-18",
+      "relatedTerms": [
+        "grundgesetz",
+        "art-20a-gg",
+        "sozialstaatsprinzip",
+        "gleichberechtigung",
+        "tierschutz-und-tierwohl",
+        "rechtsstaatlichkeit",
+        "demokratieprinzip",
+        "intertemporale-freiheit",
+        "schutzpflicht",
+        "sdg-sdgplus-referenzrahmen"
+      ],
+      "relatedMethods": [],
+      "relatedTools": [
+        "wirkungsrat",
+        "scorecard"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "relatedDemos": [],
+      "relatedImpactFields": [
+        "Staat, Recht & Demokratie",
+        "Klima, Energie & Ressourcen",
+        "Bildung"
+      ],
+      "relatedAcademyModules": [],
+      "relatedDataRegisters": [],
+      "usedOnRoutes": [
+        "/verstehen/sdgs-sdgplus/"
+      ],
+      "oldRoutes": [],
+      "redirectTargets": [],
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "exactMatchOnly": false,
+      "excludeInRoutes": [],
+      "includeInRoutes": [],
+      "excludedContexts": [
+        "nav",
+        "header",
+        "footer",
+        "button",
+        "cta",
+        "breadcrumb",
+        "heading",
+        "table",
+        "formula",
+        "code",
+        "metadata",
+        "alt"
+      ],
+      "internalNotes": "Rechtliche Einordnung: Grundrechte, Staatsstrukturprinzipien und Staatszielbestimmungen sind nicht gleichzusetzen. Sozialstaatlichkeit wird dogmatisch als Staatsstrukturprinzip (Art. 20 Abs. 1, Art. 28 Abs. 1 GG) und im weiteren Bestand der Staatszielbestimmungen behandelt. Keine individuelle Rechtsberatung. Externe Leitquelle: https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/"
     },
     {
       "id": "staatsdelegitimierung",
@@ -57400,6 +57557,80 @@
         "alt"
       ],
       "internalNotes": ""
+    },
+    {
+      "id": "tierschutz-und-tierwohl",
+      "slug": "tierschutz-und-tierwohl",
+      "canonicalTitle": "Tierschutz und Tierwohl",
+      "aliases": [
+        "Tierschutz",
+        "Tierwohl",
+        "Schutz empfindungsfähiger Tiere",
+        "Tierschutz als Staatsziel"
+      ],
+      "shortDefinition": "Tierschutz ist nach Art. 20a GG ein ausdrücklicher staatlicher Schutzauftrag. Tierwohl beschreibt als Wirkungsfeld, wie es einzelnen empfindungsfähigen Tieren in Haltung, Zucht, Transport, Nutzung, Forschung und Tötung tatsächlich ergeht.",
+      "hoverDefinition": "Tierschutz und Tierwohl sind nicht dasselbe wie Biodiversität: Biodiversität schützt Arten und Ökosysteme, Tierwohl fragt zusätzlich nach Leiden, Gesundheit, Verhalten und Lebensbedingungen einzelner Tiere.",
+      "longDefinitionSource": "SDG+ und Staatsziele: Redaktions- und Umsetzungsstandard",
+      "detailPath": "/begriffe/tierschutz-und-tierwohl/",
+      "category": "Klima, Umwelt und Lebensgrundlagen",
+      "status": "approved",
+      "priority": "core",
+      "source": "Grundgesetz (GG), Art. 20a, WÖK-Q-0157",
+      "lastReviewed": "2026-07-18",
+      "relatedTerms": [
+        "art-20a-gg",
+        "staatsziele-und-verfassungsauftraege",
+        "biodiversitaet",
+        "planetare-grenzen",
+        "positive-netto-wirkung",
+        "sdg-plus",
+        "nichtkompensation"
+      ],
+      "relatedMethods": [],
+      "relatedTools": [
+        "scorecard",
+        "woek-id"
+      ],
+      "relatedDocuments": [
+        "standardwerk-neue-ordnung-wohlstands-2026"
+      ],
+      "relatedDemos": [],
+      "relatedImpactFields": [
+        "Klima, Energie & Ressourcen",
+        "Produkte & Konsum",
+        "Landwirtschaft und Ernährung",
+        "Staat, Recht & Demokratie"
+      ],
+      "relatedAcademyModules": [],
+      "relatedDataRegisters": [],
+      "usedOnRoutes": [
+        "/verstehen/sdgs-sdgplus/"
+      ],
+      "oldRoutes": [],
+      "redirectTargets": [],
+      "showInHub": true,
+      "showHover": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "firstOccurrenceOnly": true,
+      "exactMatchOnly": false,
+      "excludeInRoutes": [],
+      "includeInRoutes": [],
+      "excludedContexts": [
+        "nav",
+        "header",
+        "footer",
+        "button",
+        "cta",
+        "breadcrumb",
+        "heading",
+        "table",
+        "formula",
+        "code",
+        "metadata",
+        "alt"
+      ],
+      "internalNotes": "Tierwohl ist ein WÖk-Wirkungsfeld zur Operationalisierung des in Art. 20a GG ausdrücklich genannten Tierschutzes. Eine negative Tierwohlwirkung ist nicht automatisch ein Rechtsverstoß; Rechtswidrigkeit erfordert eine gesonderte juristische Prüfung. Externe Leitquelle: https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/"
     },
     {
       "id": "t-sroi",

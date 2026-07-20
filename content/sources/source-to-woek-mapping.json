@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Mapping externer Quellen auf WÖk-Struktur",
     "status": "draft",
-    "last_updated": "2026-05-22",
+    "last_updated": "2026-07-18",
     "rule": "Externe Quelle, WÖk-Interpretation, WÖk-Mapping und WÖk-Bewertung immer trennen."
   },
   "mappings": [
@@ -8890,6 +8890,61 @@
         "Wirkungsordnung"
       ],
       "mapping_note": "Kontextquelle; WÖk übersetzt diese Anschlussstellen in Wirkung, Datenlage, Zielkonflikte und Rückkopplungslogik."
+    },
+    {
+      "source_id": "grundgesetz-gg",
+      "source_category": "german_constitutional_law",
+      "woek_relevance": ["WÖk-Mehrebenen-Normen- und Zielrahmen", "WÖk-ID-Anwendungs-Overlay", "Wirkungsgrenzen", "Nichtkompensation", "demokratische Rückkopplung"],
+      "related_woek_pages": ["/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene", "/begriffe/normative-wirkungsarchitektur/", "/begriffe/staatsziele-und-verfassungsauftraege/", "/begriffe/tierschutz-und-tierwohl/", "/quellenarchiv/wok-q-0157/"],
+      "related_glossary_terms": ["WÖk-Mehrebenen-Normen- und Zielrahmen", "SDG+", "Staatsziele und Verfassungsaufträge", "Art. 20a GG", "Tierschutz und Tierwohl", "Nichtkompensationsprinzip"],
+      "mapping_note": "Das Grundgesetz ist die deutsche Ebene im WÖk-Mehrebenen-Normen- und Zielrahmen, nicht die Quelle einer globalen SDG-Geltung. Grundrechte, Staatsstrukturprinzipien, Staatsziele und Schutzaufträge werden getrennt dokumentiert. Mehrere normative Anker erzeugen keinen zweiten Score; ein negativer WÖk-Score ist keine automatische Rechtsverletzung.",
+      "impact_spaces": ["Mensch", "Planet", "Demokratie"],
+      "llm_use": {"allowed": true, "use_type": "careful summary / citation / national-reference mapping", "citation_required": true, "risk_note": "Keine individuelle Rechtsberatung oder Verfassungsfeststellung. Rechtsquelle und WÖk-Einordnung trennen."},
+      "recommended_action": "use_with_legal_context"
+    },
+    {
+      "source_id": "bundestag-waldhoff-staatszielbestimmungen-2023",
+      "source_category": "official_expert_statement",
+      "woek_relevance": ["WÖk-Mehrebenen-Normen- und Zielrahmen", "Staatsziele", "Wirkungsgrenzen", "WÖk-ID-Anwendungs-Overlay"],
+      "related_woek_pages": ["/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene", "/begriffe/normative-wirkungsarchitektur/", "/quellenarchiv/wok-q-0992/"],
+      "related_glossary_terms": ["WÖk-Mehrebenen-Normen- und Zielrahmen", "Staatsziele und Verfassungsaufträge", "Sozialstaatsprinzip", "Tierschutz und Tierwohl"],
+      "mapping_note": "Die Stellungnahme belegt die dogmatische Abgrenzung von Staatszielbestimmungen. Sie ergänzt den Gesetzestext, ersetzt ihn aber nicht.",
+      "impact_spaces": ["Mensch", "Planet", "Demokratie"],
+      "llm_use": {"allowed": true, "use_type": "careful legal-context summary / citation", "citation_required": true, "risk_note": "Keine Gleichsetzung einer WÖk-Wirkungsaussage mit einer rechtlichen Feststellung."},
+      "recommended_action": "use_with_legal_context"
+    },
+    {
+      "source_id": "euv-art-3",
+      "source_category": "eu_primary_law",
+      "woek_relevance": ["WÖk-Mehrebenen-Normen- und Zielrahmen", "Wirkungsziele", "Nichtkompensation", "demokratische Rückkopplung"],
+      "related_woek_pages": ["/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene", "/begriffe/europaeisches-primaerrecht-und-grundrechte/", "/quellenarchiv/wok-q-0993/"],
+      "related_glossary_terms": ["Europäisches Primärrecht und Grundrechte", "SDG+", "WÖk-Mehrebenen-Normen- und Zielrahmen"],
+      "mapping_note": "Art. 3 EUV ist ein europäischer Werte- und Zielanker. Der Vertrag von Lissabon prägt die heutige Vertragsordnung, ist aber kein eigenständiger zusätzlicher Zielkatalog. Norm-Mapping führt nicht zu zusätzlichen Wirkungspunkten.",
+      "impact_spaces": ["Mensch", "Planet", "Demokratie"],
+      "llm_use": {"allowed": true, "use_type": "careful legal-context summary / citation", "citation_required": true, "risk_note": "Keine Aussage zur konkreten Anwendbarkeit oder Rechtsfolge ohne gesonderte Prüfung."},
+      "recommended_action": "use_with_legal_context"
+    },
+    {
+      "source_id": "aeuv-art-11",
+      "source_category": "eu_primary_law",
+      "woek_relevance": ["WÖk-Mehrebenen-Normen- und Zielrahmen", "Umweltintegration", "Wirkungsgrenzen"],
+      "related_woek_pages": ["/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene", "/begriffe/europaeisches-primaerrecht-und-grundrechte/", "/quellenarchiv/wok-q-0994/"],
+      "related_glossary_terms": ["Europäisches Primärrecht und Grundrechte", "WÖk-Mehrebenen-Normen- und Zielrahmen", "Nichtkompensationsprinzip"],
+      "mapping_note": "Art. 11 AEUV verankert Umweltschutz als Querschnittsanforderung. Er kann Mindeststandards und Prüfintensität prägen, ersetzt aber keine Wirkpfadprüfung und erzeugt keinen zweiten Score.",
+      "impact_spaces": ["Planet", "Mensch", "Demokratie"],
+      "llm_use": {"allowed": true, "use_type": "careful legal-context summary / citation", "citation_required": true, "risk_note": "Sachlicher Anwendungsbereich und Fachrecht bleiben im Einzelfall zu prüfen."},
+      "recommended_action": "use_with_legal_context"
+    },
+    {
+      "source_id": "aeuv-art-13-tierwohl",
+      "source_category": "eu_primary_law",
+      "woek_relevance": ["WÖk-Mehrebenen-Normen- und Zielrahmen", "Tierwohl", "Wirkungsgrenzen", "Nichtkompensation"],
+      "related_woek_pages": ["/begriffe/tierschutz-und-tierwohl/", "/begriffe/europaeisches-primaerrecht-und-grundrechte/", "/quellenarchiv/wok-q-0995/"],
+      "related_glossary_terms": ["Tierschutz und Tierwohl", "Art. 20a GG", "WÖk-Mehrebenen-Normen- und Zielrahmen", "Nichtkompensationsprinzip"],
+      "mapping_note": "Art. 13 AEUV ist neben Art. 20a GG ein normativer Anker derselben Tierwohlprüfung. Tierwohl und Biodiversität sind unterschiedliche Wirkungsfelder; die Anker ergeben keinen zweiten Messwert oder Score.",
+      "impact_spaces": ["Mensch", "Planet", "Demokratie"],
+      "llm_use": {"allowed": true, "use_type": "careful legal-context summary / citation", "citation_required": true, "risk_note": "Der Artikel gilt in den dort genannten Politikbereichen; keine automatische Rechtsfolge behaupten."},
+      "recommended_action": "use_with_legal_context"
     }
   ]
 }
