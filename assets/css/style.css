@@ -5927,6 +5927,29 @@ textarea {
   line-height: 1.18;
 }
 
+.compare-principle--transparency {
+  margin-top: clamp(1rem, 2.4vw, 1.5rem);
+  border-color: rgba(200, 155, 60, 0.52);
+  border-left: 3px solid var(--gold);
+  background: var(--ivory);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.compare-principle--transparency h2 {
+  margin: 0 0 0.55rem;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: var(--type-h3);
+  line-height: 1.14;
+}
+
+.compare-principle--transparency p {
+  margin: 0;
+  color: var(--text);
+}
+
 .compare-card-grid {
   display: grid;
   gap: 1rem;
