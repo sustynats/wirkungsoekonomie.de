@@ -1350,8 +1350,18 @@ function termLead(term) {
   if (term.termId === "mensch-planet-demokratie") {
     return "Mensch, Planet und Demokratie sind die verständliche Zusammenfassung der SDGs, der Agenda 2030 und der SDG+-Erweiterung der Wirkungsökonomie. Der Dreiklang übersetzt den fachlichen Referenzrahmen in eine Sprache, die öffentlich anschlussfähig ist.";
   }
-  const candidates = [term.shortDefinition, term.short_definition, term.hoverDefinition, term.definition, term.longDefinition];
+  const candidates = [term.lead, term.shortDefinition, term.short_definition, term.hoverDefinition, term.definition, term.longDefinition];
   return publicText(candidates.find((value) => hasRealText(value) && !containsForbiddenPublicText(value)) || `${term.canonicalLabel} ist ein Begriff der Wirkungsökonomie.`);
+}
+
+function keyMessageBlock(term) {
+  const message = publicText(term.keyMessage || "");
+  if (!hasRealText(message) || containsForbiddenPublicText(message)) return "";
+  return `<section class="term-summary-card" aria-labelledby="key-message-${esc(term.slug)}">
+          <p class="section-eyebrow">Merksatz</p>
+          <h2 id="key-message-${esc(term.slug)}">Was bleibt</h2>
+          <p><strong>${esc(message)}</strong></p>
+        </section>`;
 }
 
 function termSummary(term) {
@@ -2655,6 +2665,7 @@ for (const term of indexedTerms) {
         <header class="term-detail-hero">
           <p class="hero-kicker">${esc(publicTermType(term))}</p>
           <h1>${esc(term.canonicalLabel)}</h1>
+          ${term.subtitle ? `<p class="hero-subtitle">${esc(publicText(term.subtitle))}</p>` : ""}
           <p class="lead">${esc(termLead(term))}</p>
           ${metaItems ? `<div class="term-meta-row" aria-label="Begriffsinformation">${metaItems}</div>` : ""}
           <div class="term-action-row">${detailLinks(term)}</div>
@@ -2669,6 +2680,7 @@ ${mythBlock(term)}
 ${learningBlock(term)}
 ${deepGlossarySectionsBlock(term)}
 ${fallbackDeepGlossaryBlock(term)}
+${keyMessageBlock(term)}
 ${relatedTermsChips(term)}${relatedContentBlock(term)}
 ${chapterBlock(term)}
         ${sourceHtml ? `<section class="meta-box">
