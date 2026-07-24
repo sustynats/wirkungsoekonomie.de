@@ -3,6 +3,9 @@ import path from "node:path";
 
 const root = process.cwd();
 const source = path.join(root, "assets/data/term-registry.json");
+const supplementSources = [
+  path.join(root, "content/glossary/imports/wirkungsfinanzpolitik-term-definitions.json"),
+];
 const out = path.join(root, "public/data/glossary.terms.json");
 const historyOut = path.join(root, "public/data/glossary-version-history.json");
 const hoverOut = path.join(root, "assets/js/glossaryTerms.js");
@@ -218,7 +221,14 @@ function dedupeCanonicalLabels(terms) {
 }
 
 const raw = JSON.parse(fs.readFileSync(source, "utf8"));
-const rawTerms = Array.isArray(raw) ? raw : raw.terms || [];
+const rawTerms = [
+  ...(Array.isArray(raw) ? raw : raw.terms || []),
+  ...supplementSources.flatMap((file) => {
+    if (!fs.existsSync(file)) return [];
+    const supplement = JSON.parse(fs.readFileSync(file, "utf8"));
+    return Array.isArray(supplement) ? supplement : supplement.terms || [];
+  }),
+];
 const terms = dedupeCanonicalLabels(rawTerms.map(normalizeTerm))
   .sort((a, b) => collator.compare(a.glossaryOrderKey || a.canonicalLabel, b.glossaryOrderKey || b.canonicalLabel));
 

@@ -2705,6 +2705,9 @@ ${chapterBlock(term)}
         metaDescription: "Impact-of-Investment (IOI) misst positive Netto-Wirkung je investiertem Euro und ergänzt ROI, SROI, T-SROI und Wirkungsfinanzpolitik.",
       }
     : {};
+  if (term.shortDefinition && !pageOptions.metaDescription) {
+    pageOptions.metaDescription = term.shortDefinition;
+  }
   if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
   if (term.metaDescription) pageOptions.metaDescription = term.metaDescription;
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));

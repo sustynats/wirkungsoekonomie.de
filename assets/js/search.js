@@ -17,7 +17,7 @@
   const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
   const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
   const searchPageHref = siteLocale === "en" ? "/en/search/" : "/suche.html";
-  const searchDataVersion = "20260602-semantic-ranking";
+  const searchDataVersion = "20260725-submit-search";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
@@ -264,7 +264,8 @@
     associations: {},
     entrypoints: [],
     ready: false,
-    timer: null,
+    loading: null,
+    hasSubmittedSearch: false,
     historyTimer: null,
     historyForceNext: false,
     lastHistoryKey: "",
@@ -1053,11 +1054,6 @@
     const filtersActive = filterControls.some((control) => control instanceof HTMLSelectElement && control.value);
     const runId = ++state.searchRun;
 
-    if (!state.ready) {
-      status.textContent = i18n("Suche wird geladen.", "Loading search.");
-      return;
-    }
-
     if (queryLength < 2 && !filtersActive) {
       emptyState.hidden = false;
       renderFlatResults(getDefaultResults(), "", []);
@@ -1148,9 +1144,32 @@
     processChunk();
   }
 
-  function scheduleSearch() {
-    window.clearTimeout(state.timer);
-    state.timer = window.setTimeout(runSearch, 300);
+  function showInitialResults() {
+    emptyState.hidden = false;
+    renderFlatResults(getDefaultResults(), "", []);
+    renderRecommended(null);
+    renderRelated(getDefaultTopics());
+    renderSuggestions("", []);
+    status.textContent = i18n("Gib einen Suchbegriff ein und starte die Suche.", "Enter a search term and start the search.");
+  }
+
+  function requestSearch() {
+    state.hasSubmittedSearch = true;
+    state.historyForceNext = true;
+    if (state.ready) {
+      runSearch();
+      return;
+    }
+    status.textContent = i18n("Suchindex wird geladen ...", "Loading search index ...");
+    loadSearchData().then(() => {
+      if (state.ready) runSearch();
+    });
+  }
+
+  function handleInput() {
+    if (!state.hasSubmittedSearch) return;
+    state.searchRun += 1;
+    status.textContent = i18n("Eingabe geändert. Drücke Suchen, um die Treffer zu aktualisieren.", "Input changed. Press Search to refresh the results.");
   }
 
   function applyParams() {
@@ -1188,15 +1207,14 @@
         button.classList.toggle("active", control instanceof HTMLSelectElement && control.value === button.dataset.searchValue);
       });
     }
-    input.addEventListener("input", scheduleSearch);
+    input.addEventListener("input", handleInput);
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      state.historyForceNext = true;
-      runSearch();
+      requestSearch();
     });
     filterControls.forEach((control) => control.addEventListener("change", () => {
       syncQuickFilters();
-      runSearch();
+      if (state.hasSubmittedSearch) requestSearch();
     }));
     filtersDetails?.addEventListener("toggle", () => {
       const summary = filtersDetails.querySelector("summary");
@@ -1217,8 +1235,7 @@
           control.value = control.value === value ? "" : value;
         }
         syncQuickFilters();
-        state.historyForceNext = true;
-        runSearch();
+        requestSearch();
       });
     });
     resetButton?.addEventListener("click", () => {
@@ -1228,22 +1245,23 @@
         }
       });
       quickFilterButtons.forEach((button) => button.classList.remove("active"));
-      state.historyForceNext = true;
-      runSearch();
+      if (state.hasSubmittedSearch) requestSearch();
+      else showInitialResults();
     });
     suggestionButtons.forEach((button) => {
       button.addEventListener("click", () => {
         input.value = button.dataset.searchSuggestion || "";
         input.focus();
-        state.historyForceNext = true;
-        runSearch();
+        requestSearch();
       });
     });
     syncQuickFilters();
   }
 
   async function loadSearchData() {
-    try {
+    if (state.ready) return;
+    if (state.loading) return state.loading;
+    state.loading = (async () => {
       const [index, dictionary, associations, entrypoints] = await Promise.all([
         fetch(dataUrl("search-index.json")).then((response) => response.json()),
         fetch(dataUrl("search-dictionary.json")).then((response) => response.json()),
@@ -1262,13 +1280,18 @@
       state.associations = associations;
       state.entrypoints = entrypoints;
       state.ready = true;
-      runSearch();
-    } catch (error) {
+    })().catch(() => {
       status.textContent = i18n("Die Suche konnte nicht geladen werden.", "Search could not be loaded.");
-    }
+    }).finally(() => {
+      state.loading = null;
+    });
+    return state.loading;
   }
 
   applyParams();
   bindEvents();
-  loadSearchData();
+  const hasQueryInUrl = input.value.trim().length >= 2;
+  const hasActiveFilters = filterControls.some((control) => control instanceof HTMLSelectElement && control.value);
+  if (hasQueryInUrl || hasActiveFilters) requestSearch();
+  else showInitialResults();
 })();
