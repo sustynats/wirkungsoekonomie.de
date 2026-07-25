@@ -1419,6 +1419,10 @@ function fallbackAbgrenzungHtml(term) {
 }
 
 function termAtAGlanceHtml(term) {
+  const explicitPoints = asList(term.keyPoints)
+    .filter((point) => hasRealText(point) && !containsForbiddenPublicText(point))
+    .slice(0, 5);
+  if (explicitPoints.length) return `<ul>${explicitPoints.map((point) => `<li>${esc(point)}</li>`).join("")}</ul>`;
   const label = termLabel(term);
   const summary = termSummary(term);
   const category = termCategory(term);
@@ -2218,6 +2222,9 @@ function financeComparisonTable() {
 
 const financeRelatedTerms = [
   ["wirkungsfinanzpolitik", "Wirkungsfinanzpolitik"],
+  ["wirkungsgrad", "Wirkungsgrad"],
+  ["wirkungsoekonomischer-wirkungsgrad", "Wirkungsökonomischer Wirkungsgrad"],
+  ["fiskalischer-wirkungsgrad", "Fiskalischer Wirkungsgrad"],
   ["wirkungshaushalt", "Wirkungshaushalt"],
   ["wirkungspruefung-oeffentlicher-mittel", "Wirkungsprüfung öffentlicher Mittel"],
   ["positive-netto-wirkung", "positive Netto-Wirkung"],
@@ -2240,17 +2247,17 @@ function impactOfInvestmentDetailBody(term) {
         <header class="term-detail-hero">
           <p class="hero-kicker">Messbegriff · Wirkungsfinanzpolitik</p>
           <h1>Impact-of-Investment / IOI</h1>
-          <p class="lead">Impact-of-Investment misst, wie viel positive Netto-Wirkung durch einen eingesetzten Euro entsteht. IOI ergänzt ROI, SROI und T-SROI, ersetzt aber keine demokratische Abwägung.</p>
+          <p class="lead">${esc(termLead(term))}</p>
           <div class="term-action-row"><a class="btn btn-primary" href="../../begriffe/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a><a class="btn btn-secondary" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier</a><a class="btn btn-secondary" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a></div>
         </header>
         ${financeCard("Auf einen Blick", "Was IOI zeigt", listItems([
           "IOI steht für Impact-of-Investment.",
-          "IOI fragt, welche positive Netto-Wirkung pro investiertem Euro entsteht.",
+          "IOI fragt, welche positive Netto-Wirkung pro investiertem Kapital entsteht.",
           "Formelhaft: IOI = positive Netto-Wirkung / Investitionssumme.",
-          "IOI kann für öffentliche Ausgaben, Förderprogramme, Portfolios, Projekte und Investitionen genutzt werden.",
+          "IOI ist investitionsbezogen; der Kapitaleinsatz kann öffentlich oder privat sein.",
           "IOI ist kein Autopilot: Nichtkompensation, Grundrechte, Realressourcen, Datenqualität und demokratische Rückkopplung bleiben nötig."
         ]))}
-        ${financeCard("Definition", "Wirkung je investiertem Euro", `<p><strong>Impact-of-Investment (IOI) ist eine Kennzahl der Wirkungsökonomie, die die positive Netto-Wirkung einer Ausgabe, Investition oder Finanzierung ins Verhältnis zur eingesetzten Investitionssumme setzt.</strong></p><p>IOI macht sichtbar, wo ein Euro besonders viel reale Zustandsverbesserung erzeugt und wo Geld zwar fließt, aber kaum Wirkung, Haushaltsblindleistung oder sogar negative Netto-Wirkung entsteht.</p><p><strong>Nicht nur: Was kostet es? Sondern: Welche positive Netto-Wirkung entsteht pro Euro?</strong></p>`)}
+        ${financeCard("Definition", "Wirkung je investiertem Kapital", termDefinitionHtml(term))}
         <section class="term-summary-card">
           <p class="section-eyebrow">Rechnung</p>
           <h2>Grundformel</h2>
@@ -2268,6 +2275,8 @@ function impactOfInvestmentDetailBody(term) {
             <section class="term-section-card"><h3>SROI</h3><p>SROI monetarisiert soziale und ökologische Nutzen. IOI ist breiter als Kennzahl der Wirkungseffizienz und kann auch mit nicht-monetären Wirkungswerten arbeiten.</p></section>
             <section class="term-section-card"><h3>T-SROI</h3><p>T-SROI fragt zusätzlich nach Transformationswirkung: Verändert die Investition Standards, Märkte, Infrastrukturen, Anreize oder Pfade?</p></section>
             <section class="term-section-card"><h3>NWI</h3><p>Der Netto-Wirkungs-Index bündelt positive und negative Wirkungen. IOI setzt diese Wirkung ins Verhältnis zum eingesetzten Kapital.</p></section>
+            <section class="term-section-card"><h3>Wirkungsökonomischer Wirkungsgrad</h3><p>Der wirkungsökonomische Wirkungsgrad kann jeden klar benannten Einsatz ins Verhältnis zur positiven Netto-Wirkung setzen. IOI ist dessen investitionsbezogene Variante: Sein Nenner ist das investierte Kapital.</p></section>
+            <section class="term-section-card"><h3>Fiskalischer Wirkungsgrad</h3><p>Der fiskalische Wirkungsgrad bezieht sich auf einen öffentlichen Euro. IOI kann sich mit ihm bei einer öffentlichen Investition überschneiden, ist aber nicht auf öffentliche Mittel beschränkt.</p></section>
             <section class="term-section-card"><h3>Impact Investing</h3><p>Impact Investing ist eine Markt- und Investitionspraxis. IOI ist eine Bewertungsfrage: Welche reale Wirkung entsteht durch den Kapitaleinsatz?</p></section>
             <section class="term-section-card"><h3>ESG</h3><p>ESG beschreibt Umwelt-, Sozial- und Governance-Faktoren. IOI fragt konkreter nach tatsächlicher Zustandsveränderung.</p></section>
           </div>
@@ -2704,7 +2713,7 @@ ${chapterBlock(term)}
     : term.slug === "impact-of-investment"
     ? {
         metaTitle: "Impact-of-Investment / IOI - Glossar der Wirkungsökonomie",
-        metaDescription: "Impact-of-Investment (IOI) misst positive Netto-Wirkung je investiertem Euro und ergänzt ROI, SROI, T-SROI und Wirkungsfinanzpolitik.",
+        metaDescription: "Impact-of-Investment (IOI) misst bewertete positive Netto-Wirkung pro investiertem Kapital und grenzt sich vom wirkungsökonomischen sowie fiskalischen Wirkungsgrad ab.",
       }
     : {};
   if (term.shortDefinition && !pageOptions.metaDescription) {

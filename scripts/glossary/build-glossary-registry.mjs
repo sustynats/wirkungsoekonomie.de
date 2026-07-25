@@ -6,6 +6,7 @@ const source = path.join(root, "assets/data/term-registry.json");
 const supplementSources = [
   path.join(root, "content/glossary/imports/wirkungsfinanzpolitik-term-definitions.json"),
   path.join(root, "content/glossary/imports/legacy-detail-definitions.json"),
+  path.join(root, "content/glossary/imports/wirkungsgrad-differenzierung.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
 const historyOut = path.join(root, "public/data/glossary-version-history.json");
