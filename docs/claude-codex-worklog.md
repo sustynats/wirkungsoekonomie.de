@@ -66,6 +66,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - Hinweis: Agenten-Limit (monthly spend) schlug waehrend P2 zu; Stranded-Assets-Teil daher von Claude direkt gebaut und browser-getestet (6 Proberechnungen monoton ueber Szenarien).
 - Nachtrag 2026-07-05: 5-Block-Startseite ebenfalls in PR #91 (Commit 953833ca8a): Diagnose/Loesung/Entscheidungsgrid/Vertrauen/Weiterfuehrend, 51K->42K, Link-Check + Gates erneut gruen, Suchindex aktualisiert. Deploy-Freigabe Natalie: P1+P2 komplett.
 
+### 2026-07-25 · Codex · Nachtrag zu PR #171: Suchindex synchronisiert
+
+- Die freigegebenen Studienskript-Lesefassungen aus PR #171 waren bereits in `main`; der PR-Gate meldete ausschließlich fehlende generierte Suchartefakte.
+- Nachgeneriert und separat nachzureichen: `assets/search/search-index.json` sowie `public/data/woek-search-meta.json` (nur die neuen öffentlichen Studienskript-Routen und -Abschnitte).
+- Vollbuild, Taxonomie-, Privacy-, URL-, Link- und Größenchecks sowie `git diff --check` liefen im frischen Worktree erfolgreich. Keine Reader-, Kurs- oder PDF-Datei wird durch diesen Nachtrag geändert.
+
 ### 2026-07-08 · Claude · Presse-/Öffentlichkeitsbereich Natalie Weber strategisch umgebaut
 - **Was:** `/w/natalie-weber/` Presse-Bereich weg von „Person buchen" hin zu institutioneller Kommunikation. Presse-Unterseite komplett neu (Öffentliche Kommunikation / Keine personenbezogene Auftrittslogik · Kurzprofil · Institutionelle Kommunikation · Zitate & Statements zur Verwendung · Materialien für Medien · Multiplikator:innen statt Personenkult · Akademie für Multiplikator:innen mit 10-Modul-Raster). Hauptseite: Kontaktsektion → „Öffentliche Kommunikation" + „Presse & Anfragen" (souverän, nicht defensiv, keine privaten Gründe). FAQ +3 (Interviews/Vorträge, Medienanfragen, Multiplikator:innen).
 - **Pfad/Quelle:** `scripts/natalie/build-natalie-pages.mjs` (einzige Quelle; neue CSS-Bausteine `.quote/.notice/.modules`), regeneriert 8 `w/natalie-weber/*`-Seiten. Konzept: `docs/akademie-multiplikatoren-konzept.md`.
