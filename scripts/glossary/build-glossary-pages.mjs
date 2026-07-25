@@ -2598,14 +2598,16 @@ const financeClusterTerms = [
 
 function financeClusterDetailBody(term) {
   const cards = financeClusterTerms.map(([slug, label, definition]) => `<section class="term-section-card"><p class="section-eyebrow">Begriff</p><h2><a class="text-link" href="../../begriffe/${esc(slug)}/">${esc(label)}</a></h2><p>${esc(definition)}</p></section>`).join("");
+  const definition = term.shortDefinition || "Dieses Glossar-Cluster erklärt die Begriffe, mit denen öffentliche Finanzierung nach positiver Netto-Wirkung statt nur nach Betrag, Defizit oder Schuldenstand gelesen wird.";
   return `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / Öffentliche Finanzen, Schulden und Wirkung</nav>
         <header class="term-detail-hero">
           <p class="hero-kicker">Wirkungsfinanzpolitik</p>
           <h1>Öffentliche Finanzen, Schulden und Wirkung</h1>
-          <p class="lead">Dieses Glossar-Cluster erklärt die Begriffe, mit denen öffentliche Finanzierung nach positiver Netto-Wirkung statt nur nach Betrag, Defizit oder Schuldenstand gelesen wird.</p>
+          <p class="lead">${esc(definition)}</p>
           <div class="term-action-row"><a class="btn btn-primary" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Bereich öffnen</a><a class="btn btn-secondary" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier</a><a class="btn btn-secondary" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag lesen</a></div>
         </header>
+        ${financeCard("Definition", "Was bedeutet der Begriff?", `<p>${esc(definition)}</p>`)}
         ${financeCard("Auf einen Blick", "Öffentliche Finanzierung nach Wirkung lesen", `<p>Nicht jede öffentliche Schuld ist gleich. Entscheidend ist, ob Finanzierung Zukunft entlastet, Schäden vermeidet, Resilienz stärkt und demokratisch korrigierbar bleibt. MMT ist dabei ein wichtiger Anschluss gegen Schuldenmythen; Public Purpose benennt den Anspruch, den die Wirkungsökonomie als positive Netto-Wirkung prüfbar macht.</p><p><strong>Nicht die Höhe staatlicher Schulden allein entscheidet über Zukunftsfähigkeit, sondern ihre Wirkung.</strong></p>`)}
         ${financeCard("Schuldenklassen", "Schuldenklassen im Vergleich", financeComparisonTable())}
         <section class="term-summary-card">
