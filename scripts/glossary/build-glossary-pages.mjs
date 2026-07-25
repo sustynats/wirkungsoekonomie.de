@@ -1542,6 +1542,24 @@ function formulaBlock(term) {
         </section>`;
 }
 
+function calculationModelBlock(term) {
+  const rawModel = term.calculationModel || term.calculation_model || null;
+  if (!rawModel) return "";
+  const model = typeof rawModel === "string" ? { explanation: rawModel } : rawModel;
+  const title = publicText(model.title || "Rechenfolge und Schutzregeln");
+  const explanation = publicText(model.explanation || model.meaning || "");
+  const steps = asList(model.steps || model.items).filter((value) => hasRealText(value) && !containsForbiddenPublicText(value));
+  const note = publicText(model.note || model.limitation || "");
+  if (!hasRealText(explanation) && !steps.length && !hasRealText(note)) return "";
+  return `<section class="term-summary-card" aria-labelledby="calculation-model-${esc(term.slug)}">
+          <p class="section-eyebrow">Berechnungslogik</p>
+          <h2 id="calculation-model-${esc(term.slug)}">${esc(title)}</h2>
+          ${explanation ? `<p>${esc(explanation)}</p>` : ""}
+          ${steps.length ? `<ol class="clean-list">${steps.map((value) => `<li>${esc(value)}</li>`).join("")}</ol>` : ""}
+          ${note ? `<p>${esc(note)}</p>` : ""}
+        </section>`;
+}
+
 function mythBlock(term) {
   const mythos = !containsForbiddenPublicText(term.mythos) ? publicText(term.mythos) : "";
   const klaerung = !containsForbiddenPublicText(term.woekKlaerung || term.woek_klaerung) ? publicText(term.woekKlaerung || term.woek_klaerung) : "";
@@ -2722,6 +2740,7 @@ for (const term of indexedTerms) {
         </section>
         ${sectionCards ? `<div class="term-section-grid">${sectionCards}</div>` : ""}
 ${formulaBlock(term)}
+${calculationModelBlock(term)}
 ${termExtraBlock(term)}
 ${mythBlock(term)}
 ${learningBlock(term)}
