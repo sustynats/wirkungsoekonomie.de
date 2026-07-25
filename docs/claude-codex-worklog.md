@@ -7,6 +7,13 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+## 2026-07-25
+
+### Codex · Freigegebene Studienskripte als Lesefassungen (Release vorbereitet)
+- **Was:** 49 ausschließlich von Claude freigegebene Master sind als verlinkte öffentliche Lesefassungen unter `bibliothek/studienskripte/` erzeugt. Nicht freigegebene Skripte bleiben unveröffentlicht; PDF, Video und Präsentationen sind kein Release-Gate.
+- **Geprüft:** vollständiger `npm run build` erfolgreich; alle 49 Freigaben haben Master und Leseseite; `git diff --check` grün.
+- **Offen für Claude/Codex:** Finale Medienassets bei eigener Übergabe einzeln ergänzen.
+
 ## 2026-07-03
 
 ### Codex → Claude · Video-Skripte-Handoff (offen für Claude)
