@@ -53,6 +53,38 @@ FIGURES = {
     "rId20": ("2026-07-25-demokratische-gegenarchitektur.png", "Sechs miteinander verbundene Hebel für positive demokratische Netto-Wirkung."),
 }
 
+SOURCE_CODES = {
+    "Adelson, E. H.": "WÖK-Q-0996",
+    "Hasher, L.": "WÖK-Q-0997",
+    "Hayek, F. A.": "WÖK-Q-0085",
+    "Kahan, D. M.": "WÖK-Q-0998",
+    "Kunda, Z.": "WÖK-Q-0999",
+    "Lafer-Sousa, R.": "WÖK-Q-1000",
+    "Lewandowsky, S.": "WÖK-Q-1001",
+    "Maturana, H. R. (2002)": "WÖK-Q-1002",
+    "Maturana, H. R.; Varela, F. J. (1980)": "WÖK-Q-0758",
+    "Maturana, H. R.; Varela, F. J. (1987/2009)": "WÖK-Q-0759",
+    "McCombs, M. E.": "WÖK-Q-1003",
+    "Nickerson, R. S.": "WÖK-Q-1004",
+    "Pigou, A. C.": "WÖK-Q-0821",
+    "Steindl, C.": "WÖK-Q-1005",
+    "Stiglitz, J. E.": "WÖK-Q-0474",
+    "Tversky, A.": "WÖK-Q-1006",
+    "Weber, N. (2026): Wirkungsökonomie.": "WÖK-Q-1018",
+    "Boese-Schlosser, V. A.": "WÖK-Q-1007",
+    "Bundeswahlleiterin (2025)": "WÖK-Q-1008",
+    "Ecker, U. K. H.": "WÖK-Q-1009",
+    "Hirndorf, D.": "WÖK-Q-1010",
+    "Jänicke, C.": "WÖK-Q-1011",
+    "Kinast, J. K.": "WÖK-Q-1012",
+    "Lewandowsky, M.": "WÖK-Q-1013",
+    "Roozenbeek, J.": "WÖK-Q-1014",
+    "Saldivia Gonzatti, D.": "WÖK-Q-1015",
+    "Siebel, H.": "WÖK-Q-1016",
+    "Solovev, K.": "WÖK-Q-1017",
+    "Weber, N. (2026): Die neue Ordnung": "WÖK-Q-0576",
+}
+
 
 def esc(value: str) -> str:
     return html.escape(value or "", quote=True)
@@ -186,7 +218,12 @@ def render_content() -> str:
                 parts.append(f"            <li>{esc(text)}</li>")
             elif style == "Bibliography":
                 close_list()
-                parts.append(f'          <p class="source-entry">{esc(text)}</p>')
+                code = next((value for prefix, value in SOURCE_CODES.items() if text.startswith(prefix)), None)
+                if code:
+                    source_slug = code.replace("WÖK", "wok").lower()
+                    parts.append(f'          <p class="source-entry"><a class="text-link" href="../quellenarchiv/{source_slug}/">{esc(text)}</a></p>')
+                else:
+                    parts.append(f'          <p class="source-entry">{esc(text)}</p>')
             elif style == "SmallText":
                 close_list()
                 parts.append(f'          <p class="small-text">{esc(text)}</p>')
