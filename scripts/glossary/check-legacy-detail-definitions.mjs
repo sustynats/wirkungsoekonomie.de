@@ -22,10 +22,11 @@ for (const term of terms) {
   }
   const html = fs.readFileSync(file, "utf8");
   const lead = decodeHtml(html.match(/<p class="lead">([\s\S]*?)<\/p>/)?.[1]);
-  const definition = decodeHtml(html.match(/<p class="section-eyebrow">Definition<\/p>[\s\S]*?<p>([\s\S]*?)<\/p>/)?.[1]);
   const meta = decodeHtml(html.match(/<meta name="description" content="([^"]*)">/)?.[1]);
   if (lead !== term.shortDefinition) errors.push(`${term.slug}: Lead weicht von der zentralen Definition ab`);
-  if (definition !== term.shortDefinition) errors.push(`${term.slug}: Definitionskarte weicht von der zentralen Definition ab`);
+  // Die Kurzdefinition steht einmal im Einstieg. Eine nachfolgende Definitionskarte
+  // ist nur für eine zusätzliche Erläuterung vorgesehen und darf die Definition nicht
+  // erneut wörtlich wiederholen.
   if (/im Glossar der Wirkungsökonomie\.?$/i.test(meta)) errors.push(`${term.slug}: generische Meta-Beschreibung`);
 }
 

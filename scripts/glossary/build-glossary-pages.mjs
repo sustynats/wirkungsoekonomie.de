@@ -114,8 +114,18 @@ function textFromHtml(value) {
 function normalizedPublicText(value) {
   return publicText(value)
     .toLowerCase()
+    .replace(/[.,;:!?]/g, "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function hasDistinctTermText(value, references = []) {
+  const candidate = normalizedPublicText(value);
+  if (!candidate) return false;
+  return references.every((reference) => {
+    const normalizedReference = normalizedPublicText(reference);
+    return !normalizedReference || normalizedReference !== candidate;
+  });
 }
 
 function isGenericUsageNote(value) {
@@ -1262,13 +1272,21 @@ function relatedContentBlock(term) {
 function deepGlossarySectionsBlock(term) {
   const sections = asList(term.deepGlossarySections);
   if (!sections.length) return "";
+  const lead = normalizedPublicText(termLead(term));
+  const formula = normalizedPublicText(term.formula?.expression || term.calculation?.expression || term.formula || "");
   const publicSections = sections
     .map((section) => ({
       title: section.title || "Vertiefung",
       body: section.body || "",
-      items: asList(section.items).filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)),
+      items: asList(section.items).filter((item) => hasRealText(item) && !containsForbiddenPublicText(item) && normalizedPublicText(item) !== formula),
     }))
-    .filter((section) => !containsForbiddenPublicText(section.title) && (paragraphs(section.body) || section.items.length));
+    .filter((section) => {
+      const title = normalizedPublicText(section.title);
+      const body = normalizedPublicText(section.body);
+      const duplicateLead = body && body === lead;
+      const duplicateSummarySection = /kurzdefinition|hover/.test(title) && duplicateLead;
+      return !containsForbiddenPublicText(section.title) && !duplicateSummarySection && !duplicateLead && (paragraphs(section.body) || section.items.length);
+    });
   if (!publicSections.length) return "";
   return `
         <section class="term-summary-card" aria-labelledby="deep-glossary-${esc(term.slug)}">
@@ -1393,19 +1411,17 @@ function termRelatedLabels(term, limit = 8) {
 
 function fallbackWhyHtml(term) {
   const label = termLabel(term);
-  const summary = termSummary(term);
   const category = termCategory(term);
-  return `<p>Für die Wirkungsökonomie ist „${esc(label)}“ wichtig, weil der Begriff entscheidet, welche Wirkungsfrage überhaupt sichtbar wird. ${esc(summary)}</p>
-          <p>Im Bereich ${esc(category)} hilft der Begriff, nicht nur über ein Schlagwort zu sprechen, sondern über Zustände, Betroffene, Bilanzgrenzen, Wirkpfade und Rückkopplungen. Genau dort beginnt die wirkungsökonomische Prüfung.</p>`;
+  return `<p>In der Wirkungsökonomie hilft „${esc(label)}“, die passende Wirkungsfrage im Bereich ${esc(category)} zu stellen: Welche Zustände verändern sich, für wen, innerhalb welcher Bilanzgrenze und mit welchen Nebenfolgen?</p>
+          <p>Der Begriff allein belegt keine positive Wirkung. Seine Bedeutung wird erst durch Daten, Kontext, Vergleichsmaßstab und Rückkopplung in Entscheidungen belastbar.</p>`;
 }
 
 function fallbackUsageHtml(term) {
   const label = termLabel(term);
   const type = termTypeLabel(term);
   const category = termCategory(term);
-  const summary = termSummary(term);
-  return `<p>Den Begriff „${esc(label)}“ nutzen wir, wenn eine Aussage, ein Werkzeug, eine Quelle oder eine Entscheidung präzise eingeordnet werden muss: ${esc(summary)}</p>
-          <p>Als ${esc(type)} aus dem Bereich ${esc(category)} ist er kein dekoratives Stichwort. Er soll helfen, die richtige Prüffrage zu stellen: Was verändert sich, für wen, auf welcher Datenbasis und mit welchen Nebenfolgen?</p>`;
+  return `<p>„${esc(label)}“ wird verwendet, um Aussagen, Daten, Werkzeuge oder Entscheidungen im Bereich ${esc(category)} präzise zuzuordnen.</p>
+          <p>Als ${esc(type)} macht der Begriff sichtbar, welche Frage geprüft werden muss; er ersetzt weder Belege noch eine Bewertung der tatsächlichen Wirkung.</p>`;
 }
 
 function fallbackAbgrenzungHtml(term) {
@@ -1423,16 +1439,15 @@ function termAtAGlanceHtml(term) {
     .filter((point) => hasRealText(point) && !containsForbiddenPublicText(point))
     .slice(0, 5);
   if (explicitPoints.length) return `<ul>${explicitPoints.map((point) => `<li>${esc(point)}</li>`).join("")}</ul>`;
-  const label = termLabel(term);
-  const summary = termSummary(term);
   const category = termCategory(term);
+  const type = termTypeLabel(term);
   const related = termRelatedLabels(term, 3);
   const relatedText = related.length ? ` Er ist besonders anschlussfähig an ${related.map(esc).join(", ")}.` : "";
   return `<ul>
-            <li>${esc(summary)}</li>
-            <li>Der Begriff gehört zum Bereich ${esc(category)} und dient der präzisen Wirkungsprüfung.</li>
-            <li>Wirkungsökonomisch fragt „${esc(label)}“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.</li>
-            <li>Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie.${relatedText}</li>
+            <li>Einordnung: ${esc(type)} im Bereich ${esc(category)}.</li>
+            <li>Wofür der Begriff gebraucht wird: Er hilft, die passende Frage zu Zuständen, Ursachen, Folgen und Grenzen zu stellen.</li>
+            <li>Wirkungsökonomisch zählen Datenqualität, Bilanzgrenze, Zeitbezug, Nebenfolgen und Rückkopplung in Entscheidungen.</li>
+            <li>Der Begriff ist keine fertige Bewertung und darf nicht isoliert gelesen werden.${relatedText}</li>
           </ul>`;
 }
 
@@ -1454,26 +1469,11 @@ function fallbackMeasurementHtml(term) {
 
 function fallbackDeepGlossaryBlock(term) {
   if (deepGlossarySectionsBlock(term)) return "";
-  const related = termRelatedLabels(term, 8);
-  const relatedHtml = related.length
-    ? `<section class="term-summary-card"><p class="section-eyebrow">Querverweise</p><h2>Begriffe, die du mitdenken solltest</h2><p>${related.map(esc).join(" · ")}</p></section>`
-    : "";
   return `<section class="term-summary-card">
-            <p class="section-eyebrow">Wirkungsökonomische Sicht &amp; Einordnung</p>
-            <h2>Wie der Begriff in der WÖk gelesen wird</h2>
-            ${fallbackWhyHtml(term)}
-          </section>
-          <section class="term-summary-card">
-            <p class="section-eyebrow">Beispiele</p>
-            <h2>Wo der Begriff praktisch auftaucht</h2>
-            ${fallbackExamplesHtml(term)}
-          </section>
-          <section class="term-summary-card">
             <p class="section-eyebrow">Mess- und Steuerungsbezug</p>
             <h2>Wie daraus eine prüfbare Wirkungsfrage wird</h2>
             ${fallbackMeasurementHtml(term)}
-          </section>
-          ${relatedHtml}`;
+          </section>`;
 }
 
 function termDefinitionHtml(term) {
@@ -1481,7 +1481,15 @@ function termDefinitionHtml(term) {
     return `<p>Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
             <p>Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele. Sie sind die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt.</p>`;
   }
-  return paragraphs(term.longDefinition || term.long_definition || term.definition || term.shortDefinition);
+  const definition = String(term.longDefinition || term.long_definition || term.definition || "").trim();
+  const lead = publicText(termLead(term));
+  const prefix = definition.slice(0, lead.length);
+  if (normalizedPublicText(prefix) === normalizedPublicText(lead)) {
+    const extension = definition.slice(lead.length).replace(/^[\s.,;:!?]+/, "").trim();
+    return extension ? paragraphs(extension) : "";
+  }
+  if (!hasDistinctTermText(definition, [lead])) return "";
+  return paragraphs(definition);
 }
 
 function termWhyHtml(term) {
@@ -1489,10 +1497,14 @@ function termWhyHtml(term) {
     return `<p>Die SDGs und die Agenda 2030 sind fachlich zentral, aber in der Bevölkerung wenig bekannt. Für öffentliche Kommunikation braucht die Wirkungsökonomie deshalb eine einfache, klare und wiedererkennbare Sprache. Mensch, Planet und Demokratie macht sichtbar, worum es geht: nicht um abstrakte Zielnummern, sondern um Lebensqualität, ökologische Stabilität und demokratische Handlungsfähigkeit.</p>
             <p>Der Dreiklang ersetzt die SDGs nicht. Er übersetzt sie.</p>`;
   }
-  const usage = !isGenericUsageNote(term.usageNote) ? term.usageNote : "";
-  const why = !isGenericWhyNote(term.woekRelation || term.woek_einordnung) ? term.woekRelation || term.woek_einordnung : "";
-  const preferred = !isGenericWhyNote(term.preferredUsage) ? term.preferredUsage : "";
-  const html = paragraphs(why || preferred || usage);
+  const references = [termLead(term), term.shortDefinition, term.longDefinition, term.definition];
+  const why = !isGenericWhyNote(term.woekRelation || term.woek_einordnung) && hasDistinctTermText(term.woekRelation || term.woek_einordnung, references)
+    ? term.woekRelation || term.woek_einordnung
+    : "";
+  const preferred = !isGenericWhyNote(term.preferredUsage) && hasDistinctTermText(term.preferredUsage, [...references, why])
+    ? term.preferredUsage
+    : "";
+  const html = paragraphs(why || preferred);
   return html || fallbackWhyHtml(term);
 }
 
@@ -1500,12 +1512,34 @@ function termUsageHtml(term) {
   if (term.termId === "mensch-planet-demokratie") {
     return `<p>Mensch, Planet und Demokratie nicht als Zusatz-Ziel neben den SDGs verwenden. Der Dreiklang ist die öffentliche Übersetzung des fachlichen Referenzrahmens und bleibt an Wirkung, Wirkungsbewertung und positive Netto-Wirkung gebunden.</p>`;
   }
-  const usage = !isGenericUsageNote(term.usageNote) ? term.usageNote : "";
-  const explicitUsage = usage || term.preferredUsage;
+  const references = [termLead(term), term.shortDefinition, term.longDefinition, term.definition, term.woekRelation, term.woek_einordnung];
+  const usage = !isGenericUsageNote(term.usageNote) && hasDistinctTermText(term.usageNote, references) ? term.usageNote : "";
+  const preferred = hasDistinctTermText(term.preferredUsage, [...references, usage]) ? term.preferredUsage : "";
+  const explicitUsage = usage || preferred;
   if (hasRealText(explicitUsage) && !containsForbiddenPublicText(explicitUsage)) {
     return paragraphs(explicitUsage);
   }
   return fallbackUsageHtml(term);
+}
+
+function formulaBlock(term) {
+  const rawFormula = term.formula || term.calculation || null;
+  if (!rawFormula) return "";
+  const formula = typeof rawFormula === "string" ? { expression: rawFormula } : rawFormula;
+  const expression = publicText(formula.expression || formula.formula || formula.value || "");
+  if (!hasRealText(expression) || containsForbiddenPublicText(expression)) return "";
+  const title = publicText(formula.title || "Wie die Kennzahl berechnet wird");
+  const explanation = publicText(formula.explanation || formula.meaning || "");
+  const variables = asList(formula.variables).filter((value) => hasRealText(value) && !containsForbiddenPublicText(value));
+  const note = publicText(formula.note || formula.limitation || "");
+  return `<section class="term-summary-card" aria-labelledby="formula-${esc(term.slug)}">
+          <p class="section-eyebrow">Rechenlogik</p>
+          <h2 id="formula-${esc(term.slug)}">${esc(title)}</h2>
+          <p><strong>${esc(expression)}</strong></p>
+          ${explanation ? `<p>${esc(explanation)}</p>` : ""}
+          ${variables.length ? `<ul class="clean-list">${variables.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>` : ""}
+          ${note ? `<p>${esc(note)}</p>` : ""}
+        </section>`;
 }
 
 function mythBlock(term) {
@@ -2242,6 +2276,7 @@ const financeRelatedTerms = [
 ];
 
 function impactOfInvestmentDetailBody(term) {
+  const formula = publicText(term.formula?.expression || "IOI = positive Netto-Wirkung / Investitionssumme");
   return `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / Impact-of-Investment / IOI</nav>
         <header class="term-detail-hero">
@@ -2253,7 +2288,7 @@ function impactOfInvestmentDetailBody(term) {
         ${financeCard("Auf einen Blick", "Was IOI zeigt", listItems([
           "IOI steht für Impact-of-Investment.",
           "IOI fragt, welche positive Netto-Wirkung pro investiertem Kapital entsteht.",
-          "Formelhaft: IOI = positive Netto-Wirkung / Investitionssumme.",
+          `Formelhaft: ${formula}.`,
           "IOI ist investitionsbezogen; der Kapitaleinsatz kann öffentlich oder privat sein.",
           "IOI ist kein Autopilot: Nichtkompensation, Grundrechte, Realressourcen, Datenqualität und demokratische Rückkopplung bleiben nötig."
         ]))}
@@ -2262,7 +2297,7 @@ function impactOfInvestmentDetailBody(term) {
           <p class="section-eyebrow">Rechnung</p>
           <h2>Grundformel</h2>
           <div class="term-section-grid">
-            <section class="term-section-card"><h3>Vereinfachte Formel</h3><p><strong>IOI = positive Netto-Wirkung / Investitionssumme</strong></p><p>Die positive Netto-Wirkung kann monetarisiert, als Punktwert, Index oder qualitative Wirkungsbilanz dargestellt werden.</p></section>
+            <section class="term-section-card"><h3>Vereinfachte Formel</h3><p><strong>${esc(formula)}</strong></p><p>Die positive Netto-Wirkung kann monetarisiert, als Punktwert, Index oder qualitative Wirkungsbilanz dargestellt werden.</p></section>
             <section class="term-section-card"><h3>Wichtige Grenzen</h3><p>Die Formel ist nur sinnvoll, wenn Bilanzgrenzen, Zeithorizont, Zielgruppen, Nebenwirkungen, Wirkungsrisiken, Datenqualität und Nichtkompensation transparent sind.</p></section>
             <section class="term-section-card"><h3>Öffentliche Finanzen</h3><p>In der Wirkungsfinanzpolitik hilft IOI, Ausgaben, Subventionen, Investitionen und Schulden nach ihrer Wirkungseffizienz zu vergleichen.</p></section>
           </div>
@@ -2651,7 +2686,7 @@ for (const term of indexedTerms) {
     term.version && !containsForbiddenPublicText(term.version) ? `Stand / Version ${publicText(term.version)}` : "",
   ].filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)).map((item) => `<span>${esc(item)}</span>`).join("");
   const sectionCards = [
-    optionalTermSection({ eyebrow: "Definition", title: "Was bedeutet der Begriff?", html: termDefinitionHtml(term) }),
+    optionalTermSection({ eyebrow: "Definition", title: "Was der Begriff zusätzlich aussagt", html: termDefinitionHtml(term) }),
     optionalTermSection({ eyebrow: "Wirkungsökonomie", title: "Einordnung in der Wirkungsökonomie", html: termWhyHtml(term) }),
     optionalTermSection({ eyebrow: "Verwendung", title: "Verwendung", html: termUsageHtml(term) }),
     optionalTermSection({ eyebrow: "Abgrenzung", title: "Abgrenzung", html: listItems(term.doNotConfuseWith) || fallbackAbgrenzungHtml(term) }),
@@ -2686,6 +2721,7 @@ for (const term of indexedTerms) {
           ${termAtAGlanceHtml(term)}
         </section>
         ${sectionCards ? `<div class="term-section-grid">${sectionCards}</div>` : ""}
+${formulaBlock(term)}
 ${termExtraBlock(term)}
 ${mythBlock(term)}
 ${learningBlock(term)}
