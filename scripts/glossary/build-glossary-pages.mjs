@@ -1522,6 +1522,14 @@ function termUsageHtml(term) {
   return fallbackUsageHtml(term);
 }
 
+function formulaExpressionHtml(formula, expression) {
+  const mathml = String(formula.mathml || "").trim();
+  const validMathml = /^<math\b[^>]*>[\s\S]*<\/math>$/.test(mathml) && !/<(?:script|style|iframe|object|embed)\b/i.test(mathml);
+  return validMathml
+    ? `<div class="term-formula" aria-label="${esc(expression)}">${mathml}</div><p class="sr-only">${esc(expression)}</p>`
+    : `<p><strong>${esc(expression)}</strong></p>`;
+}
+
 function formulaBlock(term) {
   const rawFormula = term.formula || term.calculation || null;
   if (!rawFormula) return "";
@@ -1535,7 +1543,7 @@ function formulaBlock(term) {
   return `<section class="term-summary-card" aria-labelledby="formula-${esc(term.slug)}">
           <p class="section-eyebrow">Rechenlogik</p>
           <h2 id="formula-${esc(term.slug)}">${esc(title)}</h2>
-          <p><strong>${esc(expression)}</strong></p>
+          ${formulaExpressionHtml(formula, expression)}
           ${explanation ? `<p>${esc(explanation)}</p>` : ""}
           ${variables.length ? `<ul class="clean-list">${variables.map((value) => `<li>${esc(value)}</li>`).join("")}</ul>` : ""}
           ${note ? `<p>${esc(note)}</p>` : ""}
@@ -2295,6 +2303,7 @@ const financeRelatedTerms = [
 
 function impactOfInvestmentDetailBody(term) {
   const formula = publicText(term.formula?.expression || "IOI = positive Netto-Wirkung / Investitionssumme");
+  const formulaMarkup = formulaExpressionHtml(term.formula || {}, formula);
   return `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / Impact-of-Investment / IOI</nav>
         <header class="term-detail-hero">
@@ -2315,7 +2324,7 @@ function impactOfInvestmentDetailBody(term) {
           <p class="section-eyebrow">Rechnung</p>
           <h2>Grundformel</h2>
           <div class="term-section-grid">
-            <section class="term-section-card"><h3>Vereinfachte Formel</h3><p><strong>${esc(formula)}</strong></p><p>Die positive Netto-Wirkung kann monetarisiert, als Punktwert, Index oder qualitative Wirkungsbilanz dargestellt werden.</p></section>
+            <section class="term-section-card"><h3>Vereinfachte Formel</h3>${formulaMarkup}<p>Die positive Netto-Wirkung kann monetarisiert, als Punktwert, Index oder qualitative Wirkungsbilanz dargestellt werden.</p></section>
             <section class="term-section-card"><h3>Wichtige Grenzen</h3><p>Die Formel ist nur sinnvoll, wenn Bilanzgrenzen, Zeithorizont, Zielgruppen, Nebenwirkungen, Wirkungsrisiken, Datenqualität und Nichtkompensation transparent sind.</p></section>
             <section class="term-section-card"><h3>Öffentliche Finanzen</h3><p>In der Wirkungsfinanzpolitik hilft IOI, Ausgaben, Subventionen, Investitionen und Schulden nach ihrer Wirkungseffizienz zu vergleichen.</p></section>
           </div>

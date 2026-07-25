@@ -31,9 +31,21 @@ for (const slug of calculationTerms) {
   }
 }
 
+for (const term of glossary.terms.filter((entry) => entry.formula?.expression || entry.calculation?.expression)) {
+  const mathml = String(term.formula?.mathml || term.calculation?.mathml || "").trim();
+  if (!/^<math\b[^>]*>[\s\S]*<\/math>$/.test(mathml)) {
+    errors.push(`${term.slug}: Formel ist nicht als MathML hinterlegt`);
+    continue;
+  }
+  const page = `begriffe/${term.slug}/index.html`;
+  if (!fs.existsSync(page) || !fs.readFileSync(page, "utf8").includes("<math")) {
+    errors.push(`${term.slug}: mathematische Darstellung fehlt auf der Detailseite`);
+  }
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
 
-console.log(`Impact-Controlling Rechenlogik check passed for ${formulaTerms.length} Formeln and ${calculationTerms.length} Berechnungsfolgen.`);
+console.log(`Impact-Controlling Rechenlogik check passed for ${formulaTerms.length} priorisierten Formeln, ${calculationTerms.length} Berechnungsfolgen und ${glossary.terms.filter((entry) => entry.formula?.expression || entry.calculation?.expression).length} MathML-Formeln.`);

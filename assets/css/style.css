@@ -1520,6 +1520,27 @@ a {
   font-size: clamp(1.22rem, 1.7vw, 1.7rem);
 }
 
+.term-formula {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0.85rem 0;
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--navy);
+  font-size: clamp(1.15rem, 2.1vw, 1.55rem);
+  line-height: 1.35;
+}
+
+.term-formula math {
+  margin: 0;
+  font-family: "STIX Two Math", "Cambria Math", "Latin Modern Math", serif;
+}
+
 .term-resource-heading {
   margin-bottom: clamp(0.85rem, 2vw, 1.1rem);
 }

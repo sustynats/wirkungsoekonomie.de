@@ -41,7 +41,10 @@ for (const term of glossary.terms || []) {
   }
   const html = fs.readFileSync(file, "utf8");
   const formula = term.formula?.expression || term.calculation?.expression || (typeof term.formula === "string" ? term.formula : "");
-  if (formula && !html.includes(formula)) errors.push(`${term.slug}: Rechenformel fehlt auf der Detailseite`);
+  const hasMathml = Boolean(term.formula?.mathml || term.calculation?.mathml);
+  if (formula && !html.includes(formula) && !(hasMathml && html.includes("<math"))) {
+    errors.push(`${term.slug}: Rechenformel fehlt auf der Detailseite`);
+  }
   if (specialPages.has(term.slug)) continue;
 
   const lead = decode(html.match(/<p class="lead">([\s\S]*?)<\/p>/i)?.[1]);

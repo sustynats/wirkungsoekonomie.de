@@ -153,6 +153,7 @@
       "formula": {
         "title": "NWI-Grundformel",
         "expression": "NWI = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>NWI</mi><mo>=</mo><munderover><mo>∑</mo><mi>i</mi><mi>n</mi></munderover><msubsup><mi>w</mi><mi>i</mi><mo>+</mo></msubsup><msubsup><mi>ΔZ</mi><mi>i</mi><mo>+</mo></msubsup><mo>−</mo><munderover><mo>∑</mo><mi>j</mi><mi>m</mi></munderover><msubsup><mi>w</mi><mi>j</mi><mo>−</mo></msubsup><msubsup><mi>ΔZ</mi><mi>j</mi><mo>−</mo></msubsup></mrow></math>",
         "explanation": "Die Summen beziehen sich nur auf Wirkungen innerhalb der offengelegten Systemgrenze, des Zeitraums und der Bewertungslogik. Gewichte machen Relevanz, Verteilung, Zeitbezug und Datenqualität nachvollziehbar.",
         "variables": ["Positive und negative Wirkungen müssen auf derselben dokumentierten Skala bewertet werden.", "Gewichte, Zurechnung, Datenqualität und Unsicherheit sind Teil der Rechnung.", "Mindestbedingungen und nicht kompensierbare Schäden werden vor der Verdichtung geprüft."],
         "note": "Die Formel ist eine Grundstruktur, keine Lizenz zum Wegrechnen: Wirkungsgrenzen, Nichtkompensation und Reverse Merit Order begrenzen den Index."
@@ -177,6 +178,7 @@
       "formula": {
         "title": "T-SROI-Grundformel",
         "expression": "T-SROI = diskontierter bewerteter Transformationsnutzen / Investitionssumme",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>T-SROI</mi><mo>=</mo><mfrac><msub><mi>TN</mi><mtext>diskontiert</mtext></msub><mi>I</mi></mfrac></mrow></math>",
         "explanation": "Der Zähler umfasst die bewertete, über den Betrachtungszeitraum diskontierte Transformationswirkung. Er baut auf geprüfter Netto-Wirkung auf und berücksichtigt systemische Hebel, Diffusion, Resilienz, Zeitwirkung und relevante Risiken.",
         "variables": ["Investitionssumme: klar abgegrenzter Kapitaleinsatz.", "Transformationsnutzen: nur nachvollziehbar bewertete Wirkung innerhalb der Systemgrenze.", "Diskontierung, Zeitraum, Zurechnung, Datenqualität und Sensitivitäten sind offen zu legen."],
         "note": "T-SROI ist kein Renditeversprechen und keine additive Schönrechnung. Nichtkompensation und Wirkungsgrenzen bleiben vorgelagert."
@@ -201,6 +203,7 @@
       "formula": {
         "title": "Formel für öffentliche Transformationsinvestitionen",
         "expression": "Öffentlicher T-SROI = diskontierter bewerteter Transformationsnutzen / klar abgegrenzter öffentlicher Mitteleinsatz",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>T-SROI</mi><mtext>öffentlich</mtext></msub><mo>=</mo><mfrac><msub><mi>TN</mi><mtext>diskontiert</mtext></msub><msub><mi>M</mi><mtext>öffentlich</mtext></msub></mfrac></mrow></math>",
         "explanation": "Die Formel wendet die T-SROI-Logik auf staatliche Investitionen, Förderprogramme, Haushalte oder öffentliche Schulden an. Der Nenner enthält den transparent abgegrenzten öffentlichen Mitteleinsatz.",
         "note": "Ein hoher Wert ersetzt weder demokratische Haushaltsentscheidung noch Schutzgrenzen und darf schwere negative Wirkung nicht wegverrechnen."
       },
@@ -224,6 +227,7 @@
       "formula": {
         "title": "Verhältnisformel der Wirkungseffizienz",
         "expression": "Wirkungseffizienz = bewertete positive Netto-Wirkung / klar benannter Ressourceneinsatz",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>WE</mi><mo>=</mo><mfrac><msup><mi>NW</mi><mo>+</mo></msup><mi>R</mi></mfrac></mrow></math>",
         "explanation": "Der Ressourceneinsatz kann zum Beispiel Kapital, Zeit, Energie, Material oder institutionelle Kapazität sein. Er muss für den Vergleich gleich definiert sein.",
         "note": "Eine niedrige Kosten- oder Inputzahl beweist keine Wirkungseffizienz, wenn Schäden verlagert, Datenlücken verdeckt oder Wirkungsgrenzen verletzt werden."
       },
@@ -247,6 +251,7 @@
       "formula": {
         "title": "Grundformel der Netto-Wirkungsrendite",
         "expression": "Netto-Wirkungsrendite = bewertete positive Netto-Wirkung / eingesetztes Kapital",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>r</mi><mtext>Wirkung</mtext></msub><mo>=</mo><mfrac><msup><mi>NW</mi><mo>+</mo></msup><mi>K</mi></mfrac></mrow></math>",
         "explanation": "Die Formel beschreibt eine kapitalbezogene Variante der Wirkungsrendite. Je nach Zweck kann der Zähler über NWI, IOI, T-SROI, vermiedene Schäden oder eine andere offengelegte Wirkungsmetrik operationalisiert werden.",
         "note": "Finanzrendite und Wirkungsrendite sind getrennt auszuweisen. Die Kennzahl ist keine Anlageempfehlung und kein Garantieversprechen."
       },
@@ -270,6 +275,7 @@
       "formula": {
         "title": "Verhältnis öffentlicher Wirkung und Mitteleinsatz",
         "expression": "Wirkungsrendite öffentlicher Ausgaben = bewertete positive Netto-Wirkung / klar abgegrenzte öffentliche Ausgaben",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mi>r</mi><mtext>öffentlich</mtext></msub><mo>=</mo><mfrac><msup><mi>NW</mi><mo>+</mo></msup><msub><mi>A</mi><mtext>öffentlich</mtext></msub></mfrac></math>",
         "explanation": "Die Kennzahl macht den gesellschaftlichen, ökologischen und demokratischen Gegenwert eines öffentlichen Mitteleinsatzes pro Euro vergleichbar, sofern die Wirkungslogik einheitlich ist.",
         "note": "Sie ersetzt weder eine demokratische Haushaltsentscheidung noch die Prüfung nicht kompensierbarer Schäden."
       },
@@ -293,6 +299,7 @@
       "formula": {
         "title": "Grundformel der Gestehungskosten",
         "expression": "Gestehungskosten je Einheit = abgezinste Gesamtkosten / abgezinste erzeugte oder bereitgestellte Einheiten",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>GK</mi><mo>=</mo><mfrac><msub><mi>K</mi><mtext>abgezinst</mtext></msub><msub><mi>Q</mi><mtext>abgezinst</mtext></msub></mfrac></mrow></math>",
         "explanation": "Die Gesamtkosten umfassen innerhalb der gewählten Bilanzgrenze zum Beispiel Investition, Betrieb, Wartung, Finanzierung und Restwert. Bei Stromgestehungskosten wird dieselbe Logik als LCOE verwendet.",
         "note": "Systemkosten, externe Umwelt-, Klima- und Gesundheitskosten sowie soziale oder demokratische Wirkungen sind nicht automatisch enthalten und müssen separat ausgewiesen werden."
       },

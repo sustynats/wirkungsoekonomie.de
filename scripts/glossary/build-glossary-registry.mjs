@@ -8,6 +8,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/legacy-detail-definitions.json"),
   path.join(root, "content/glossary/imports/wirkungsgrad-differenzierung.json"),
   path.join(root, "content/glossary/imports/impact-controlling-rechenlogiken.json"),
+  path.join(root, "content/glossary/imports/formalisierte-leistungsbegriffe.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
 const historyOut = path.join(root, "public/data/glossary-version-history.json");
