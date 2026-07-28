@@ -26,9 +26,16 @@
 
   const state = { title: "", segments: [] };
   const recordings = new Map();
-  const previewUrls = [];
+  const previewUrls = new Map();
+  const previewBlobs = new Map();
   const downloads = [];
   let recording = null;
+  let recordingStarting = false;
+  let recordingStartingIndex = null;
+  let recordingSaving = false;
+  let recordingSavingIndex = null;
+  let microphoneStream = null;
+  let microphoneReleaseTimer = null;
   let productionRunning = false;
 
   function openDatabase() {
@@ -122,7 +129,9 @@
   }
 
   function revokePreviewUrls() {
-    previewUrls.splice(0).forEach((url) => URL.revokeObjectURL(url));
+    previewUrls.forEach((url) => URL.revokeObjectURL(url));
+    previewUrls.clear();
+    previewBlobs.clear();
   }
 
   function revokeDownloads() {
@@ -139,6 +148,62 @@
     return button;
   }
 
+  function recordingIsBusy() {
+    return Boolean(recording || recordingStarting || recordingSaving);
+  }
+
+  function updateProduceButton() {
+    produceButton.disabled = productionRunning || recordingIsBusy() || !state.segments.length;
+  }
+
+  function updatePreviewAudio(host, id, blob) {
+    if (previewBlobs.get(id) === blob && host.querySelector("audio")) return;
+    const previousUrl = previewUrls.get(id);
+    if (previousUrl) URL.revokeObjectURL(previousUrl);
+    previewUrls.delete(id);
+    previewBlobs.delete(id);
+    host.replaceChildren();
+    if (!blob) return;
+
+    const audio = document.createElement("audio");
+    const url = URL.createObjectURL(blob);
+    previewUrls.set(id, url);
+    previewBlobs.set(id, blob);
+    audio.controls = true;
+    audio.src = url;
+    audio.preload = "metadata";
+    host.append(audio);
+  }
+
+  function updateSegmentCard(index) {
+    const card = segmentsElement.querySelector(`[data-segment-index="${index}"]`);
+    if (!card) return;
+    const id = segmentId(index);
+    const blob = recordings.get(id);
+    const isActive = Boolean(recording && recording.index === index);
+    const isStarting = recordingStarting && recordingStartingIndex === index;
+    const isSaving = recordingSaving && recordingSavingIndex === index;
+    const busyElsewhere = recordingIsBusy() && !isActive && !isStarting && !isSaving;
+    card.classList.toggle("is-recording", isActive || isStarting);
+
+    const status = card.querySelector("[data-segment-status]");
+    status.textContent = isActive ? "Aufnahme läuft" : isStarting ? "Mikrofon wird gestartet" : isSaving ? "Wird gespeichert" : blob ? "Gespeichert" : "Noch offen";
+
+    const actions = card.querySelector("[data-segment-actions]");
+    actions.replaceChildren();
+    if (isActive) {
+      actions.append(makeButton("Stopp & speichern", "studio-button", stopRecording));
+    } else {
+      actions.append(makeButton(blob ? "Neu aufnehmen" : "Sprechen", "studio-button", () => startRecording(index), busyElsewhere || isStarting || isSaving));
+    }
+    updatePreviewAudio(card.querySelector("[data-segment-audio]"), id, blob);
+  }
+
+  function updateSegmentCards() {
+    state.segments.forEach((_, index) => updateSegmentCard(index));
+    updateProduceButton();
+  }
+
   function renderSegments() {
     revokePreviewUrls();
     segmentsElement.replaceChildren();
@@ -150,10 +215,9 @@
       fragment.append(empty);
     }
     state.segments.forEach((text, index) => {
-      const id = segmentId(index);
-      const blob = recordings.get(id);
       const card = document.createElement("article");
-      card.className = `studio-segment${recording && recording.index === index ? " is-recording" : ""}`;
+      card.className = "studio-segment";
+      card.dataset.segmentIndex = index;
 
       const top = document.createElement("div");
       top.className = "studio-segment-top";
@@ -162,7 +226,7 @@
       number.textContent = `Absatz ${String(index + 1).padStart(2, "0")}`;
       const status = document.createElement("span");
       status.className = "studio-segment-state";
-      status.textContent = recording && recording.index === index ? "Aufnahme läuft" : blob ? "Gespeichert" : "Noch offen";
+      status.dataset.segmentStatus = "";
       top.append(number, status);
 
       const paragraph = document.createElement("p");
@@ -171,27 +235,14 @@
 
       const actions = document.createElement("div");
       actions.className = "studio-actions";
-      const anotherRecordingIsActive = Boolean(recording && recording.index !== index);
-      if (recording && recording.index === index) {
-        actions.append(makeButton("Stopp & speichern", "studio-button", stopRecording));
-      } else {
-        actions.append(makeButton(blob ? "Neu aufnehmen" : "Sprechen", "studio-button", () => startRecording(index), anotherRecordingIsActive));
-      }
-      if (blob) {
-        const audio = document.createElement("audio");
-        const url = URL.createObjectURL(blob);
-        previewUrls.push(url);
-        audio.controls = true;
-        audio.src = url;
-        audio.preload = "metadata";
-        card.append(top, paragraph, actions, audio);
-      } else {
-        card.append(top, paragraph, actions);
-      }
+      actions.dataset.segmentActions = "";
+      const audio = document.createElement("div");
+      audio.dataset.segmentAudio = "";
+      card.append(top, paragraph, actions, audio);
       fragment.append(card);
     });
     segmentsElement.append(fragment);
-    produceButton.disabled = productionRunning || Boolean(recording) || !state.segments.length;
+    updateSegmentCards();
   }
 
   function recorderMimeType() {
@@ -199,44 +250,123 @@
     return candidates.find((item) => window.MediaRecorder && MediaRecorder.isTypeSupported(item)) || "";
   }
 
+  function captureViewport() {
+    return { left: window.scrollX, top: window.scrollY };
+  }
+
+  function restoreViewport(viewport) {
+    if (!viewport) return;
+    requestAnimationFrame(() => {
+      window.scrollTo(viewport.left, viewport.top);
+      requestAnimationFrame(() => window.scrollTo(viewport.left, viewport.top));
+    });
+  }
+
+  function hasLiveMicrophoneStream() {
+    return Boolean(microphoneStream && microphoneStream.getAudioTracks().some((track) => track.readyState === "live"));
+  }
+
+  function cancelMicrophoneRelease() {
+    if (microphoneReleaseTimer) window.clearTimeout(microphoneReleaseTimer);
+    microphoneReleaseTimer = null;
+  }
+
+  function releaseMicrophone() {
+    cancelMicrophoneRelease();
+    if (microphoneStream) microphoneStream.getTracks().forEach((track) => track.stop());
+    microphoneStream = null;
+  }
+
+  function scheduleMicrophoneRelease() {
+    cancelMicrophoneRelease();
+    microphoneReleaseTimer = window.setTimeout(() => {
+      if (!recordingIsBusy()) releaseMicrophone();
+    }, 2 * 60 * 1000);
+  }
+
+  async function acquireMicrophoneStream() {
+    if (hasLiveMicrophoneStream()) return microphoneStream;
+    microphoneStream = await navigator.mediaDevices.getUserMedia({
+      audio: { channelCount: 1, sampleRate: TARGET_SAMPLE_RATE, echoCancellation: false, noiseSuppression: true, autoGainControl: false },
+    });
+    return microphoneStream;
+  }
+
+  function microphoneErrorMessage(error) {
+    if (error && error.name === "NotAllowedError") return "Der Mikrofonzugriff wurde nicht erlaubt.";
+    if (error && error.name === "NotReadableError") return "Das Mikrofon ist gerade belegt. Bitte schließe Anruf- oder Audio-Apps und versuche es erneut.";
+    if (error && error.name === "AbortError") return "Die Mikrofonverbindung wurde vom Browser beendet. Bitte erneut auf „Sprechen“ tippen.";
+    if (error && error.name === "InvalidStateError") return "Die Seite ist gerade nicht aktiv. Bitte zur Studio-Aufnahme zurückkehren und erneut starten.";
+    return "Das Mikrofon konnte nicht gestartet werden. Bitte die Seite geöffnet lassen und erneut auf „Sprechen“ tippen.";
+  }
+
   async function startRecording(index) {
+    if (recordingIsBusy()) return;
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
       setRecordingStatus("Dieser Browser kann keine Mikrofonaufnahme starten. Bitte Safari oder Chrome aktuell verwenden.");
       return;
     }
+    const viewport = captureViewport();
+    recordingStarting = true;
+    recordingStartingIndex = index;
+    cancelMicrophoneRelease();
+    setRecordingStatus(`Mikrofon für Absatz ${index + 1} wird gestartet …`);
+    updateSegmentCards();
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        audio: { channelCount: 1, sampleRate: TARGET_SAMPLE_RATE, echoCancellation: false, noiseSuppression: true, autoGainControl: false },
-      });
+      const stream = await acquireMicrophoneStream();
+      if (document.hidden) {
+        releaseMicrophone();
+        throw new DOMException("Die Seite ist nicht aktiv.", "InvalidStateError");
+      }
       const mimeType = recorderMimeType();
       const options = { audioBitsPerSecond: 160000 };
       if (mimeType) options.mimeType = mimeType;
       const recorder = new MediaRecorder(stream, options);
       const chunks = [];
-      recording = { index, recorder, stream, chunks };
       recorder.addEventListener("dataavailable", (event) => {
         if (event.data && event.data.size) chunks.push(event.data);
       });
       recorder.addEventListener("stop", async () => {
-        const stoppedRecording = recording;
-        stream.getTracks().forEach((track) => track.stop());
+        if (!recording || recording.recorder !== recorder) return;
         recording = null;
+        recordingSaving = true;
+        recordingSavingIndex = index;
+        updateSegmentCards();
         try {
           const blob = new Blob(chunks, { type: recorder.mimeType || "audio/webm" });
           if (blob.size < 1000) throw new Error("Die Aufnahme war zu kurz. Bitte erneut sprechen.");
-          recordings.set(segmentId(index), blob);
           await saveRecording(segmentId(index), blob);
+          recordings.set(segmentId(index), blob);
           setRecordingStatus(`Absatz ${index + 1} gespeichert. Du kannst ihn anhören oder neu aufnehmen.`);
         } catch (error) {
           setRecordingStatus(error.message || "Die Aufnahme konnte nicht gespeichert werden.");
+        } finally {
+          recordingSaving = false;
+          recordingSavingIndex = null;
+          updateSegmentCards();
+          if (document.hidden) releaseMicrophone();
+          else scheduleMicrophoneRelease();
         }
-        if (stoppedRecording) renderSegments();
       }, { once: true });
+      recorder.addEventListener("error", () => {
+        setRecordingStatus("Der Browser hat die Aufnahme beendet. Bitte den Absatz erneut starten.");
+        if (recorder.state !== "inactive") recorder.stop();
+      }, { once: true });
+      recording = { index, recorder, chunks };
+      recordingStarting = false;
+      recordingStartingIndex = null;
       recorder.start(1000);
       setRecordingStatus(`Absatz ${index + 1} läuft. Sprich den Text und tippe danach auf „Stopp & speichern“.`);
-      renderSegments();
+      updateSegmentCards();
+      restoreViewport(viewport);
     } catch (error) {
-      setRecordingStatus(error.name === "NotAllowedError" ? "Der Mikrofonzugriff wurde nicht erlaubt." : "Das Mikrofon konnte nicht gestartet werden.");
+      recording = null;
+      recordingStarting = false;
+      recordingStartingIndex = null;
+      releaseMicrophone();
+      updateSegmentCards();
+      setRecordingStatus(microphoneErrorMessage(error));
+      restoreViewport(viewport);
     }
   }
 
@@ -370,7 +500,7 @@
   }
 
   async function produce() {
-    if (productionRunning || recording) return;
+    if (productionRunning || recordingIsBusy()) return;
     const missing = state.segments.map((_, index) => segmentId(index)).filter((id) => !recordings.has(id));
     if (missing.length) {
       setProductionStatus(`Es fehlen noch ${missing.length} Absatz${missing.length === 1 ? "" : "e"}.`);
@@ -426,7 +556,7 @@
   }
 
   async function useText() {
-    if (recording) return;
+    if (recordingIsBusy()) return;
     const segments = splitParagraphs(textInput.value);
     if (!segments.length) {
       setRecordingStatus("Bitte zuerst einen Sprechertext einfügen.");
@@ -436,6 +566,7 @@
     await clearRecordings();
     recordings.clear();
     revokePreviewUrls();
+    releaseMicrophone();
     state.title = titleInput.value.trim();
     state.segments = segments;
     textInput.value = segments.join("\n\n");
@@ -448,13 +579,14 @@
   }
 
   async function clearAll() {
-    if (recording || !state.segments.length || !window.confirm("Text und alle lokal gespeicherten Segmentaufnahmen auf diesem Gerät löschen?")) return;
+    if (recordingIsBusy() || !state.segments.length || !window.confirm("Text und alle lokal gespeicherten Segmentaufnahmen auf diesem Gerät löschen?")) return;
     await clearRecordings();
     recordings.clear();
     revokePreviewUrls();
     revokeDownloads();
     state.title = "";
     state.segments = [];
+    releaseMicrophone();
     localStorage.removeItem(STATE_KEY);
     titleInput.value = "";
     textInput.value = "";
@@ -483,6 +615,12 @@
   window.addEventListener("beforeunload", () => {
     revokePreviewUrls();
     revokeDownloads();
+    releaseMicrophone();
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) return;
+    if (recording) stopRecording();
+    else if (!recordingSaving) releaseMicrophone();
   });
   initialize();
 })();
