@@ -77,7 +77,7 @@
           <p class="studio-kicker">Private Aufnahme</p>
           <h1 id="studio-title">Studio-Aufnahme</h1>
           <p>Text einfügen, Absatz für Absatz einsprechen und anschließend direkt auf dem Handy als WAV und MP3 erzeugen.</p>
-          <p class="studio-notice">Die Aufnahmen werden nicht hochgeladen. Sie liegen nur lokal in diesem Browser, bis du sie löschst oder die Browserdaten entfernst. Das Mikrofon bleibt beim absatzweisen Arbeiten aktiv und wird nach zwei Minuten Pause oder beim Schließen der Seite freigegeben.</p>
+          <p class="studio-notice">Die Aufnahmen werden nicht hochgeladen. Sie liegen nur lokal in diesem Browser, bis du sie löschst oder die Browserdaten entfernst. Ein kurzer Anlauf wird beim Produzieren entfernt, damit keine mobilen Startartefakte in die Enddateien gelangen.</p>
         </section>
 
         <div class="studio-grid">
@@ -108,7 +108,7 @@
 
         <section class="studio-card" style="margin-top: 1rem" aria-labelledby="produce-title">
           <h2 id="produce-title">3. Fertig produzieren</h2>
-          <p class="studio-hint">Die Rohfassung wird nur mit den Absatzpausen zusammengesetzt. Die Studio-Fassung erhält zusätzlich Rauschunterdrückung der Aufnahme, Hochpass, Wärme, Präsenz, Höhenkorrektur, Kompression und eine sichere Spitzenpegel-Normalisierung. Alles arbeitet vollständig lokal.</p>
+          <p class="studio-hint">Die Rohfassung wird ohne Klangbearbeitung mit den Absatzpausen zusammengesetzt; nur ein kurzer Startschutz gegen mobile Anlaufartefakte wird entfernt. Die Studio-Fassung erhält zusätzlich Rauschunterdrückung der Aufnahme, Hochpass, Wärme, Präsenz, Höhenkorrektur, Kompression und eine sichere Spitzenpegel-Normalisierung. Alles arbeitet vollständig lokal.</p>
           <div class="studio-progress" aria-label="Produktionsfortschritt"><span id="production-progress"></span></div>
           <p class="studio-status" id="production-status" role="status">Noch keine Enddatei erzeugt.</p>
           <div class="studio-actions">
@@ -129,6 +129,6 @@
       </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js" defer></script>
-    <script src="../../assets/js/studio-browser-recorder.js?v=20260728-studio-reliability" defer></script>
+    <script src="../../assets/js/studio-browser-recorder.js?v=20260729-clean-onsets" defer></script>
   </body>
 </html>
