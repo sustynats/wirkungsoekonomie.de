@@ -19,6 +19,8 @@
   const productionProgress = document.getElementById("production-progress");
   const output = document.getElementById("output");
   const outputStatus = document.getElementById("output-status");
+  const downloadRawWav = document.getElementById("download-raw-wav");
+  const downloadRawMp3 = document.getElementById("download-raw-mp3");
   const downloadWav = document.getElementById("download-wav");
   const downloadMp3 = document.getElementById("download-mp3");
 
@@ -276,6 +278,33 @@
     return highPass;
   }
 
+  async function renderRawMix(decoded, totalFrames) {
+    const context = new OfflineAudioContext(1, totalFrames, TARGET_SAMPLE_RATE);
+    let startsAt = 0;
+    decoded.forEach((buffer) => {
+      const source = context.createBufferSource();
+      source.buffer = buffer;
+      source.connect(context.destination);
+      source.start(startsAt);
+      startsAt += buffer.duration + GAP_SECONDS;
+    });
+    return context.startRendering();
+  }
+
+  async function renderStudioMix(decoded, totalFrames) {
+    const context = new OfflineAudioContext(1, totalFrames, TARGET_SAMPLE_RATE);
+    const chainInput = buildProcessingChain(context);
+    let startsAt = 0;
+    decoded.forEach((buffer) => {
+      const source = context.createBufferSource();
+      source.buffer = buffer;
+      source.connect(chainInput);
+      source.start(startsAt);
+      startsAt += buffer.duration + GAP_SECONDS;
+    });
+    return context.startRendering();
+  }
+
   function normalisedMono(buffer) {
     const source = buffer.getChannelData(0);
     let peak = 0;
@@ -362,29 +391,28 @@
       }
       await decoder.close();
       const duration = decoded.reduce((total, item) => total + item.duration, 0) + Math.max(0, decoded.length - 1) * GAP_SECONDS;
-      const offline = new OfflineAudioContext(1, Math.ceil((duration + 0.1) * TARGET_SAMPLE_RATE), TARGET_SAMPLE_RATE);
-      const chainInput = buildProcessingChain(offline);
-      let startsAt = 0;
-      decoded.forEach((buffer) => {
-        const source = offline.createBufferSource();
-        source.buffer = buffer;
-        source.connect(chainInput);
-        source.start(startsAt);
-        startsAt += buffer.duration + GAP_SECONDS;
-      });
-      productionProgress.style.width = "48%";
+      const totalFrames = Math.ceil((duration + 0.1) * TARGET_SAMPLE_RATE);
+      productionProgress.style.width = "44%";
+      setProductionStatus("Rohfassung wird lokal zusammengesetzt …");
+      const rawRendered = await renderRawMix(decoded, totalFrames);
+      const rawSamples = new Float32Array(rawRendered.getChannelData(0));
+      const rawWav = encodeWav(rawSamples, TARGET_SAMPLE_RATE);
+      const rawMp3 = encodeMp3(rawSamples, TARGET_SAMPLE_RATE);
+      productionProgress.style.width = "63%";
       setProductionStatus("Browser-Studio-Kette arbeitet …");
-      const rendered = await offline.startRendering();
-      productionProgress.style.width = "76%";
+      const rendered = await renderStudioMix(decoded, totalFrames);
+      productionProgress.style.width = "78%";
       const samples = normalisedMono(rendered);
       const wav = encodeWav(samples, TARGET_SAMPLE_RATE);
-      setProductionStatus("WAV ist fertig. MP3 wird erzeugt …");
+      setProductionStatus("Studio-MP3 wird erzeugt …");
       const mp3 = encodeMp3(samples, TARGET_SAMPLE_RATE);
       const stem = fileStem();
       revokeDownloads();
-      setDownload(downloadWav, wav, `${stem}.wav`);
-      setDownload(downloadMp3, mp3, `${stem}.mp3`);
-      outputStatus.textContent = `Fertig: WAV (${Math.round(wav.size / 1024 / 1024 * 10) / 10} MB) und MP3 (${Math.round(mp3.size / 1024 / 1024 * 10) / 10} MB).`;
+      setDownload(downloadRawWav, rawWav, `${stem}-roh.wav`);
+      setDownload(downloadRawMp3, rawMp3, `${stem}-roh.mp3`);
+      setDownload(downloadWav, wav, `${stem}-studio.wav`);
+      setDownload(downloadMp3, mp3, `${stem}-studio.mp3`);
+      outputStatus.textContent = `Fertig: Rohfassung und Studio-Fassung liegen jeweils als WAV und MP3 vor.`;
       output.classList.add("is-visible");
       productionProgress.style.width = "100%";
       setProductionStatus("Enddateien sind nur in diesem Browser bereit und können jetzt heruntergeladen werden.");
