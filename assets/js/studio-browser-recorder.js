@@ -7,6 +7,9 @@
   const GAP_SECONDS = 0.32;
   const TARGET_SAMPLE_RATE = 48000;
   const TARGET_PEAK = Math.pow(10, -1.5 / 20);
+  const SEGMENT_START_GUARD_SECONDS = 0.24;
+  const SEGMENT_FADE_SECONDS = 0.018;
+  const MICROPHONE_SETTLE_MS = 180;
 
   const titleInput = document.getElementById("recording-title");
   const textInput = document.getElementById("recording-text");
@@ -34,8 +37,7 @@
   let recordingStartingIndex = null;
   let recordingSaving = false;
   let recordingSavingIndex = null;
-  let microphoneStream = null;
-  let microphoneReleaseTimer = null;
+  let nextMicrophoneStartAt = 0;
   let productionRunning = false;
 
   function openDatabase() {
@@ -262,34 +264,17 @@
     });
   }
 
-  function hasLiveMicrophoneStream() {
-    return Boolean(microphoneStream && microphoneStream.getAudioTracks().some((track) => track.readyState === "live"));
-  }
-
-  function cancelMicrophoneRelease() {
-    if (microphoneReleaseTimer) window.clearTimeout(microphoneReleaseTimer);
-    microphoneReleaseTimer = null;
-  }
-
-  function releaseMicrophone() {
-    cancelMicrophoneRelease();
-    if (microphoneStream) microphoneStream.getTracks().forEach((track) => track.stop());
-    microphoneStream = null;
-  }
-
-  function scheduleMicrophoneRelease() {
-    cancelMicrophoneRelease();
-    microphoneReleaseTimer = window.setTimeout(() => {
-      if (!recordingIsBusy()) releaseMicrophone();
-    }, 2 * 60 * 1000);
-  }
-
   async function acquireMicrophoneStream() {
-    if (hasLiveMicrophoneStream()) return microphoneStream;
-    microphoneStream = await navigator.mediaDevices.getUserMedia({
+    const waitMs = Math.max(0, nextMicrophoneStartAt - Date.now());
+    if (waitMs) await new Promise((resolve) => window.setTimeout(resolve, waitMs));
+    return navigator.mediaDevices.getUserMedia({
       audio: { channelCount: 1, sampleRate: TARGET_SAMPLE_RATE, echoCancellation: false, noiseSuppression: true, autoGainControl: false },
     });
-    return microphoneStream;
+  }
+
+  function stopMicrophoneStream(stream) {
+    if (stream) stream.getTracks().forEach((track) => track.stop());
+    nextMicrophoneStartAt = Date.now() + MICROPHONE_SETTLE_MS;
   }
 
   function microphoneErrorMessage(error) {
@@ -309,13 +294,13 @@
     const viewport = captureViewport();
     recordingStarting = true;
     recordingStartingIndex = index;
-    cancelMicrophoneRelease();
     setRecordingStatus(`Mikrofon für Absatz ${index + 1} wird gestartet …`);
     updateSegmentCards();
+    let stream = null;
     try {
-      const stream = await acquireMicrophoneStream();
+      stream = await acquireMicrophoneStream();
       if (document.hidden) {
-        releaseMicrophone();
+        stopMicrophoneStream(stream);
         throw new DOMException("Die Seite ist nicht aktiv.", "InvalidStateError");
       }
       const mimeType = recorderMimeType();
@@ -329,6 +314,7 @@
       recorder.addEventListener("stop", async () => {
         if (!recording || recording.recorder !== recorder) return;
         recording = null;
+        stopMicrophoneStream(stream);
         recordingSaving = true;
         recordingSavingIndex = index;
         updateSegmentCards();
@@ -344,15 +330,13 @@
           recordingSaving = false;
           recordingSavingIndex = null;
           updateSegmentCards();
-          if (document.hidden) releaseMicrophone();
-          else scheduleMicrophoneRelease();
         }
       }, { once: true });
       recorder.addEventListener("error", () => {
         setRecordingStatus("Der Browser hat die Aufnahme beendet. Bitte den Absatz erneut starten.");
         if (recorder.state !== "inactive") recorder.stop();
       }, { once: true });
-      recording = { index, recorder, chunks };
+      recording = { index, recorder, stream, chunks };
       recordingStarting = false;
       recordingStartingIndex = null;
       recorder.start(1000);
@@ -363,7 +347,7 @@
       recording = null;
       recordingStarting = false;
       recordingStartingIndex = null;
-      releaseMicrophone();
+      stopMicrophoneStream(stream);
       updateSegmentCards();
       setRecordingStatus(microphoneErrorMessage(error));
       restoreViewport(viewport);
@@ -408,29 +392,40 @@
     return highPass;
   }
 
-  async function renderRawMix(decoded, totalFrames) {
+  function preparedSegments(decoded) {
+    return decoded.map((buffer) => {
+      const trim = Math.min(SEGMENT_START_GUARD_SECONDS, Math.max(0, buffer.duration - 0.08));
+      return { buffer, trim, duration: buffer.duration - trim };
+    });
+  }
+
+  function addSegmentSource(context, segment, destination, startsAt) {
+    const source = context.createBufferSource();
+    const fade = context.createGain();
+    source.buffer = segment.buffer;
+    fade.gain.setValueAtTime(0, startsAt);
+    fade.gain.linearRampToValueAtTime(1, startsAt + Math.min(SEGMENT_FADE_SECONDS, segment.duration / 2));
+    source.connect(fade).connect(destination);
+    source.start(startsAt, segment.trim);
+  }
+
+  async function renderRawMix(segments, totalFrames) {
     const context = new OfflineAudioContext(1, totalFrames, TARGET_SAMPLE_RATE);
     let startsAt = 0;
-    decoded.forEach((buffer) => {
-      const source = context.createBufferSource();
-      source.buffer = buffer;
-      source.connect(context.destination);
-      source.start(startsAt);
-      startsAt += buffer.duration + GAP_SECONDS;
+    segments.forEach((segment) => {
+      addSegmentSource(context, segment, context.destination, startsAt);
+      startsAt += segment.duration + GAP_SECONDS;
     });
     return context.startRendering();
   }
 
-  async function renderStudioMix(decoded, totalFrames) {
+  async function renderStudioMix(segments, totalFrames) {
     const context = new OfflineAudioContext(1, totalFrames, TARGET_SAMPLE_RATE);
     const chainInput = buildProcessingChain(context);
     let startsAt = 0;
-    decoded.forEach((buffer) => {
-      const source = context.createBufferSource();
-      source.buffer = buffer;
-      source.connect(chainInput);
-      source.start(startsAt);
-      startsAt += buffer.duration + GAP_SECONDS;
+    segments.forEach((segment) => {
+      addSegmentSource(context, segment, chainInput, startsAt);
+      startsAt += segment.duration + GAP_SECONDS;
     });
     return context.startRendering();
   }
@@ -520,17 +515,18 @@
         productionProgress.style.width = `${10 + ((index + 1) / state.segments.length) * 30}%`;
       }
       await decoder.close();
-      const duration = decoded.reduce((total, item) => total + item.duration, 0) + Math.max(0, decoded.length - 1) * GAP_SECONDS;
+      const segments = preparedSegments(decoded);
+      const duration = segments.reduce((total, item) => total + item.duration, 0) + Math.max(0, segments.length - 1) * GAP_SECONDS;
       const totalFrames = Math.ceil((duration + 0.1) * TARGET_SAMPLE_RATE);
       productionProgress.style.width = "44%";
       setProductionStatus("Rohfassung wird lokal zusammengesetzt …");
-      const rawRendered = await renderRawMix(decoded, totalFrames);
+      const rawRendered = await renderRawMix(segments, totalFrames);
       const rawSamples = new Float32Array(rawRendered.getChannelData(0));
       const rawWav = encodeWav(rawSamples, TARGET_SAMPLE_RATE);
       const rawMp3 = encodeMp3(rawSamples, TARGET_SAMPLE_RATE);
       productionProgress.style.width = "63%";
       setProductionStatus("Browser-Studio-Kette arbeitet …");
-      const rendered = await renderStudioMix(decoded, totalFrames);
+      const rendered = await renderStudioMix(segments, totalFrames);
       productionProgress.style.width = "78%";
       const samples = normalisedMono(rendered);
       const wav = encodeWav(samples, TARGET_SAMPLE_RATE);
@@ -566,7 +562,6 @@
     await clearRecordings();
     recordings.clear();
     revokePreviewUrls();
-    releaseMicrophone();
     state.title = titleInput.value.trim();
     state.segments = segments;
     textInput.value = segments.join("\n\n");
@@ -586,7 +581,6 @@
     revokeDownloads();
     state.title = "";
     state.segments = [];
-    releaseMicrophone();
     localStorage.removeItem(STATE_KEY);
     titleInput.value = "";
     textInput.value = "";
@@ -615,12 +609,11 @@
   window.addEventListener("beforeunload", () => {
     revokePreviewUrls();
     revokeDownloads();
-    releaseMicrophone();
+    if (recording) stopMicrophoneStream(recording.stream);
   });
   document.addEventListener("visibilitychange", () => {
     if (!document.hidden) return;
     if (recording) stopRecording();
-    else if (!recordingSaving) releaseMicrophone();
   });
   initialize();
 })();
