@@ -26,11 +26,11 @@
   const downloadRawMp3 = document.getElementById("download-raw-mp3");
   const downloadWav = document.getElementById("download-wav");
   const downloadMp3 = document.getElementById("download-mp3");
+  const prepareSegmentArchiveButton = document.getElementById("prepare-segment-archive");
+  const downloadSegmentArchive = document.getElementById("download-segment-archive");
 
   const state = { title: "", segments: [] };
   const recordings = new Map();
-  const previewUrls = new Map();
-  const previewBlobs = new Map();
   const downloads = [];
   let recording = null;
   let recordingStarting = false;
@@ -38,6 +38,8 @@
   let recordingSaving = false;
   let recordingSavingIndex = null;
   let nextMicrophoneStartAt = 0;
+  let segmentArchiveUrl = null;
+  let activePreview = null;
   let productionRunning = false;
 
   function openDatabase() {
@@ -131,13 +133,22 @@
   }
 
   function revokePreviewUrls() {
-    previewUrls.forEach((url) => URL.revokeObjectURL(url));
-    previewUrls.clear();
-    previewBlobs.clear();
+    if (!activePreview) return;
+    activePreview.host.replaceChildren();
+    URL.revokeObjectURL(activePreview.url);
+    activePreview = null;
   }
 
   function revokeDownloads() {
     downloads.splice(0).forEach((url) => URL.revokeObjectURL(url));
+  }
+
+  function clearSegmentArchive() {
+    if (segmentArchiveUrl) URL.revokeObjectURL(segmentArchiveUrl);
+    segmentArchiveUrl = null;
+    downloadSegmentArchive.hidden = true;
+    downloadSegmentArchive.removeAttribute("href");
+    downloadSegmentArchive.removeAttribute("download");
   }
 
   function makeButton(label, className, onClick, disabled) {
@@ -158,23 +169,51 @@
     produceButton.disabled = productionRunning || recordingIsBusy() || !state.segments.length;
   }
 
-  function updatePreviewAudio(host, id, blob) {
-    if (previewBlobs.get(id) === blob && host.querySelector("audio")) return;
-    const previousUrl = previewUrls.get(id);
-    if (previousUrl) URL.revokeObjectURL(previousUrl);
-    previewUrls.delete(id);
-    previewBlobs.delete(id);
-    host.replaceChildren();
-    if (!blob) return;
+  function rawSegmentExtension(blob) {
+    if (blob.type.includes("mp4")) return "m4a";
+    if (blob.type.includes("ogg")) return "ogg";
+    if (blob.type.includes("webm")) return "webm";
+    return "audio";
+  }
 
+  function rawSegmentFileName(index, blob, stem = fileStem()) {
+    return `${stem}-absatz-${String(index + 1).padStart(2, "0")}.${rawSegmentExtension(blob)}`;
+  }
+
+  function downloadRawSegment(index) {
+    const blob = recordings.get(segmentId(index));
+    if (!blob) return;
+    const link = document.createElement("a");
+    const url = URL.createObjectURL(blob);
+    link.href = url;
+    link.download = rawSegmentFileName(index, blob);
+    link.hidden = true;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 2000);
+  }
+
+  function playRawSegment(index) {
+    const id = segmentId(index);
+    const blob = recordings.get(id);
+    if (!blob) return;
+    if (activePreview && activePreview.id === id) {
+      activePreview.audio.play().catch(() => setRecordingStatus("Die Vorschau konnte nicht gestartet werden. Du kannst den Rohschnipsel dennoch herunterladen."));
+      return;
+    }
+    revokePreviewUrls();
+    const card = segmentsElement.querySelector(`[data-segment-index="${index}"]`);
+    if (!card) return;
+    const host = card.querySelector("[data-segment-audio]");
     const audio = document.createElement("audio");
     const url = URL.createObjectURL(blob);
-    previewUrls.set(id, url);
-    previewBlobs.set(id, blob);
     audio.controls = true;
     audio.src = url;
-    audio.preload = "metadata";
-    host.append(audio);
+    audio.preload = "auto";
+    activePreview = { id, url, audio, host };
+    host.replaceChildren(audio);
+    audio.play().catch(() => setRecordingStatus("Die Vorschau konnte nicht gestartet werden. Du kannst den Rohschnipsel dennoch herunterladen."));
   }
 
   function updateSegmentCard(index) {
@@ -198,7 +237,10 @@
     } else {
       actions.append(makeButton(blob ? "Neu aufnehmen" : "Sprechen", "studio-button", () => startRecording(index), busyElsewhere || isStarting || isSaving));
     }
-    updatePreviewAudio(card.querySelector("[data-segment-audio]"), id, blob);
+    if (blob) {
+      actions.append(makeButton("Anhören", "studio-button studio-button--quiet", () => playRawSegment(index), recordingIsBusy()));
+      actions.append(makeButton("Rohschnipsel laden", "studio-button studio-button--quiet", () => downloadRawSegment(index), recordingIsBusy()));
+    }
   }
 
   function updateSegmentCards() {
@@ -323,6 +365,7 @@
           if (blob.size < 1000) throw new Error("Die Aufnahme war zu kurz. Bitte erneut sprechen.");
           await saveRecording(segmentId(index), blob);
           recordings.set(segmentId(index), blob);
+          clearSegmentArchive();
           setRecordingStatus(`Absatz ${index + 1} gespeichert. Du kannst ihn anhören oder neu aufnehmen.`);
         } catch (error) {
           setRecordingStatus(error.message || "Die Aufnahme konnte nicht gespeichert werden.");
@@ -494,6 +537,42 @@
     link.download = fileName;
   }
 
+  async function prepareSegmentArchive() {
+    if (recordingIsBusy() || productionRunning) return;
+    const missing = state.segments.map((_, index) => segmentId(index)).filter((id) => !recordings.has(id));
+    if (missing.length) {
+      setProductionStatus(`Für das Archiv fehlen noch ${missing.length} Absatz${missing.length === 1 ? "" : "e"}.`);
+      return;
+    }
+    if (!window.fflate || !window.fflate.zip) {
+      setProductionStatus("Das ZIP-Modul konnte nicht geladen werden. Bitte die Seite neu öffnen und erneut versuchen.");
+      return;
+    }
+    prepareSegmentArchiveButton.disabled = true;
+    clearSegmentArchive();
+    setProductionStatus("Rohschnipsel werden lokal als ZIP vorbereitet …");
+    try {
+      const stem = fileStem();
+      const files = {};
+      for (let index = 0; index < state.segments.length; index += 1) {
+        const blob = recordings.get(segmentId(index));
+        files[rawSegmentFileName(index, blob, stem)] = new Uint8Array(await blob.arrayBuffer());
+      }
+      const archive = await new Promise((resolve, reject) => {
+        window.fflate.zip(files, { level: 0 }, (error, data) => error ? reject(error) : resolve(data));
+      });
+      segmentArchiveUrl = URL.createObjectURL(new Blob([archive], { type: "application/zip" }));
+      downloadSegmentArchive.href = segmentArchiveUrl;
+      downloadSegmentArchive.download = `${stem}-rohschnipsel.zip`;
+      downloadSegmentArchive.hidden = false;
+      setProductionStatus("Rohschnipsel-ZIP ist lokal bereit. Tippe jetzt auf „Rohschnipsel-ZIP laden“.");
+    } catch (error) {
+      setProductionStatus(error.message || "Das Rohschnipsel-ZIP konnte nicht erzeugt werden.");
+    } finally {
+      prepareSegmentArchiveButton.disabled = false;
+    }
+  }
+
   async function produce() {
     if (productionRunning || recordingIsBusy()) return;
     const missing = state.segments.map((_, index) => segmentId(index)).filter((id) => !recordings.has(id));
@@ -562,6 +641,7 @@
     await clearRecordings();
     recordings.clear();
     revokePreviewUrls();
+    clearSegmentArchive();
     state.title = titleInput.value.trim();
     state.segments = segments;
     textInput.value = segments.join("\n\n");
@@ -579,6 +659,7 @@
     recordings.clear();
     revokePreviewUrls();
     revokeDownloads();
+    clearSegmentArchive();
     state.title = "";
     state.segments = [];
     localStorage.removeItem(STATE_KEY);
@@ -606,9 +687,11 @@
   useTextButton.addEventListener("click", useText);
   clearAllButton.addEventListener("click", clearAll);
   produceButton.addEventListener("click", produce);
+  prepareSegmentArchiveButton.addEventListener("click", prepareSegmentArchive);
   window.addEventListener("beforeunload", () => {
     revokePreviewUrls();
     revokeDownloads();
+    clearSegmentArchive();
     if (recording) stopMicrophoneStream(recording.stream);
   });
   document.addEventListener("visibilitychange", () => {

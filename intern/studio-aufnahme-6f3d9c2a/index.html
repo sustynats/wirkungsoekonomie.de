@@ -113,6 +113,8 @@
           <p class="studio-status" id="production-status" role="status">Noch keine Enddatei erzeugt.</p>
           <div class="studio-actions">
             <button class="studio-button" id="produce" type="button">WAV + MP3 erzeugen</button>
+            <button class="studio-button studio-button--quiet" id="prepare-segment-archive" type="button">Rohschnipsel-ZIP erzeugen</button>
+            <a class="studio-link" id="download-segment-archive" href="#" hidden>Rohschnipsel-ZIP laden</a>
           </div>
           <div class="studio-output" id="output">
             <p id="output-status">Enddateien sind bereit.</p>
@@ -129,6 +131,7 @@
       </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js" defer></script>
-    <script src="../../assets/js/studio-browser-recorder.js?v=20260729-clean-onsets" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js" defer></script>
+    <script src="../../assets/js/studio-browser-recorder.js?v=20260729-segment-export" defer></script>
   </body>
 </html>
