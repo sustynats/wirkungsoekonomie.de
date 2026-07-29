@@ -8,6 +8,14 @@ const glossaryPath = "public/data/glossary.terms.json";
 const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
+
+function compareStableText(left, right) {
+  const a = String(left);
+  const b = String(right);
+  if (a === b) return 0;
+  return a < b ? -1 : 1;
+}
+
 const INTERNAL_PUBLIC_ROUTE_PATTERNS = [
   /^\/referenz\/version(?:en|-)/,
   /^\/referenz\/export\//,
@@ -294,7 +302,7 @@ function semanticTermsForText(text, limit = 28) {
       related: (term.relatedTerms || []).slice(0, 5),
     });
   }
-  matches.sort((a, b) => b.score - a.score || String(a.label).localeCompare(String(b.label), "de"));
+  matches.sort((a, b) => b.score - a.score || compareStableText(a.label, b.label));
   return unique(matches.flatMap((match) => [match.label, ...match.related])).slice(0, limit);
 }
 
@@ -312,7 +320,7 @@ const EXCLUDED_WALK_DIRS = new Set([
 
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => compareStableText(a.name, b.name))) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       if (!EXCLUDED_WALK_DIRS.has(entry.name)) walk(full, files);
@@ -460,12 +468,18 @@ const merged = Array.from(byUrl.values())
   .filter((entry) => !isSearchNoiseEntry(entry))
   .map(publicSearchValue)
   .map(normalizePriority)
-  .sort((a, b) => Number(b.priority || 0) - Number(a.priority || 0) || String(a.title).localeCompare(String(b.title), "de"));
+  .sort(
+    (a, b) =>
+      Number(b.priority || 0) - Number(a.priority || 0) ||
+      compareStableText(a.title, b.title) ||
+      compareStableText(a.url, b.url),
+  );
 
 const generatedAt = process.env.SOURCE_DATE_EPOCH
   ? new Date(Number(process.env.SOURCE_DATE_EPOCH) * 1000).toISOString()
   : "source-derived";
 
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
-fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt, entries: meta }, null, 2)}\n`);
+const stableMeta = Object.fromEntries(Object.entries(meta).sort(([a], [b]) => compareStableText(a, b)));
+fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt, entries: stableMeta }, null, 2)}\n`);
 console.log(`Integrated ${generated.length} WÖk search entries into existing search index.`);
