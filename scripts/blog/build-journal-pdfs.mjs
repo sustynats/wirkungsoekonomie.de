@@ -22,7 +22,7 @@ const root = process.cwd();
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
 const outputRoot = path.join(root, "assets", "pdf", "journal");
 const manifestPath = path.join(root, "assets", "data", "journal-pdf-manifest.json");
-const generatorVersion = "2026-07-29.2";
+const generatorVersion = "2026-07-29.4";
 const onlyArgs = process.argv
   .filter((argument, index, all) => all[index - 1] === "--only")
   .map((value) => normalizeJournalUrl(value));
@@ -103,6 +103,18 @@ function extractMain(html) {
   return html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || "";
 }
 
+function pdfSourceHash(entry, sourceHtml) {
+  return hash(JSON.stringify({
+    main: extractMain(sourceHtml),
+    title: entry.title || "",
+    excerpt: entry.excerpt || "",
+    category: entry.category || "",
+    date: entry.date || "",
+    publishedAt: entry.publishedAt || "",
+    readingTime: entry.readingTime || "",
+  }));
+}
+
 function extractHero(main) {
   return main.match(/<article\b[^>]*class=(?:"[^"]*\bhero\b[^"]*"|'[^']*\bhero\b[^']*')[^>]*>[\s\S]*?<\/article>/i)?.[0] || "";
 }
@@ -172,7 +184,7 @@ function printStyles() {
   `;
 }
 
-function renderPdfHtml(entry, sourceHtml, sourceFile) {
+function renderPdfHtml(entry, sourceHtml) {
   const main = extractMain(sourceHtml);
   if (!main) throw new Error("Kein <main>-Inhalt gefunden");
   const hero = extractHero(main);
@@ -182,7 +194,8 @@ function renderPdfHtml(entry, sourceHtml, sourceFile) {
   const date = formatDate(entry.date || entry.publishedAt || "");
   const readingTime = entry.readingTime ? ` · ${entry.readingTime}` : "";
   const siteUrl = `https://wirkungsoekonomie.de${normalizeJournalUrl(entry.url)}`;
-  const baseUrl = pathToFileURL(`${path.dirname(sourceFile)}${path.sep}`).href;
+  const articleDirectory = path.posix.dirname(normalizeJournalUrl(entry.url));
+  const baseUrl = `https://wirkungsoekonomie.de${articleDirectory.endsWith("/") ? articleDirectory : `${articleDirectory}/`}`;
   const hasFigures = /<figure\b|<img\b/i.test(main);
 
   return `<!doctype html>
@@ -278,7 +291,7 @@ for (const entry of entries) {
     throw new Error(`${entry.url}: Quelldatei fehlt.`);
   }
   const sourceHtml = fs.readFileSync(sourceFile, "utf8");
-  const sourceHash = hash(sourceHtml);
+  const sourceHash = pdfSourceHash(entry, sourceHtml);
   const relativePdfPath = pdfRelativePath(entry.url);
   const outputPath = path.join(root, relativePdfPath);
   const previous = nextEntries[entry.url];
@@ -289,7 +302,7 @@ for (const entry of entries) {
   }
 
   browser ||= chromeExecutable();
-  renderPdf(browser, renderPdfHtml(entry, sourceHtml, sourceFile), outputPath, entry.title || entry.url);
+  renderPdf(browser, renderPdfHtml(entry, sourceHtml), outputPath, entry.title || entry.url);
   const size = fs.statSync(outputPath).size;
   if (size < 4_096) {
     throw new Error(`${entry.url}: erzeugtes PDF ist unerwartet klein (${size} Bytes).`);
