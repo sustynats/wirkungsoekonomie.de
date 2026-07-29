@@ -7,6 +7,7 @@ const podcastIndexFile = path.join(root, "assets", "data", "podcast-index.json")
 const publicReleaseAssetsFile = path.join(root, "assets", "data", "public-release-assets.json");
 const artifactDir = path.join(root, "_site");
 const maxInlineVideoBytes = 20 * 1024 * 1024;
+const bundledJournalPdfPrefix = "assets/pdf/journal/";
 const publicReleaseAssetRoots = [
   "assets/audio",
   "assets/video",
@@ -83,6 +84,7 @@ const publicReleaseFiles = publicReleaseAssetRoots.flatMap((assetRoot) => walk(p
 
 for (const file of publicReleaseFiles) {
   const rel = toPosixRelative(file);
+  if (rel.startsWith(bundledJournalPdfPrefix) && path.extname(rel).toLowerCase() === ".pdf") continue;
   const releaseUrl = publicReleaseAssets.get(rel);
   if (!releaseUrl) {
     failures.push(`${rel}: public media/doc asset must be listed in ${path.relative(root, publicReleaseAssetsFile)}`);
