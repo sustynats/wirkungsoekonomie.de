@@ -45,6 +45,22 @@
   --shadow-card: 0 16px 44px rgba(11, 16, 32, 0.08);
 }
 
+.journal-pdf-download-row {
+  margin: 1.25rem 0 0;
+}
+
+.journal-pdf-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.journal-pdf-download::before {
+  content: "↓";
+  font-size: 1.1em;
+  line-height: 1;
+}
+
 /* Mein Wirkungsraum */
 .wirkungsraum-hero {
   background:

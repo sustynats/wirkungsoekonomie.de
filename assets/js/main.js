@@ -58,6 +58,38 @@ const i18nPath = (dePath, enPath) => (siteLocale === "en" ? enPath : dePath);
 
 const mainElement = document.querySelector("main");
 
+function journalPdfPath(pathname = window.location.pathname) {
+  let articlePath = decodeURIComponent(String(pathname || ""));
+  if (!articlePath.startsWith("/blog/")) return "";
+  if (articlePath.endsWith("/")) articlePath += "index.html";
+  if (!articlePath.endsWith(".html")) return "";
+  return `/assets/pdf/journal/${articlePath.replace(/^\/blog\//, "").replace(/\.html$/i, ".pdf")}`;
+}
+
+function injectJournalPdfDownload() {
+  const pdfPath = journalPdfPath();
+  if (!pdfPath || document.querySelector("[data-journal-pdf-download]")) return;
+  const heroCopy = document.querySelector(".hero-copy");
+  if (!heroCopy) return;
+  const title = heroCopy.querySelector("h1")?.textContent?.trim() || "diesen Journalartikel";
+  const row = document.createElement("p");
+  const link = document.createElement("a");
+  row.className = "journal-pdf-download-row";
+  row.dataset.searchExclude = "true";
+  link.className = "btn btn-secondary journal-pdf-download";
+  link.dataset.journalPdfDownload = "true";
+  link.href = pdfPath;
+  link.download = "";
+  link.setAttribute("aria-label", `${title} als PDF herunterladen`);
+  link.textContent = "PDF herunterladen";
+  row.append(link);
+  const insertionPoint = heroCopy.querySelector(".meta, .hero-subtitle, .card-text");
+  if (insertionPoint) insertionPoint.insertAdjacentElement("afterend", row);
+  else heroCopy.append(row);
+}
+
+injectJournalPdfDownload();
+
 function relativeSiteUrl(path) {
   const scriptUrl = mainScriptUrl || `${window.location.origin}/assets/js/main.js`;
   return new URL(`../../${String(path).replace(/^\/+/, "")}`, scriptUrl).href;

@@ -596,6 +596,7 @@ function prunePublicArtifact() {
     "assets/downloads/",
     "assets/img/",
     "assets/pdf/",
+    "assets/video/",
     "public/assets/",
     "public/downloads/",
   ];

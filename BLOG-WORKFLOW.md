@@ -11,8 +11,9 @@ Das Journal ist ein statischer Inhaltsbereich mit automatischer Übersichtsseite
 5. Codex pflegt Meta Title und Meta Description in der Artikelseite.
 6. Codex führt `node scripts/blog/build-blog-index.mjs` aus. Der neue Beitrag wird dadurch automatisch in `assets/data/blog-index.json` aufgenommen.
 7. Codex führt `npm run check:journal` aus. Der Check stellt sicher, dass alle veröffentlichten Journalartikel im Index stehen und neueste Beiträge vorne erscheinen.
-8. Codex führt `python3 tools/sync_layout.py` oder `npm run build:search` aus, damit Header/Footer und Suche aktualisiert werden.
-9. Codex prüft lokal, ob die Journalübersicht, der neue Beitrag, Navigation, Footer, Suche und mobile Ansicht funktionieren.
+8. Codex führt `npm run build:journal-pdfs` aus. Der Schritt erzeugt nur für neue oder geänderte veröffentlichte Artikel eine druckoptimierte PDF-Lesefassung unter `assets/pdf/journal/`.
+9. Codex führt `python3 tools/sync_layout.py` oder `npm run build:search` aus, damit Header/Footer und Suche aktualisiert werden.
+10. Codex prüft lokal, ob die Journalübersicht, der neue Beitrag, Navigation, Footer, Suche, PDF-Download und mobile Ansicht funktionieren.
 
 ## Was Natalie liefern muss
 
@@ -31,6 +32,8 @@ Das Journal ist ein statischer Inhaltsbereich mit automatischer Übersichtsseite
 - `blog/<slug>.html`
 - `assets/data/blog-index.json` wird automatisch neu erzeugt
 - `assets/search/search-index.json` wird automatisch neu erzeugt
+- `assets/pdf/journal/<artikelpfad>.pdf` wird automatisch neu erzeugt oder aktualisiert
+- `assets/data/journal-pdf-manifest.json` dokumentiert den jeweiligen Inhaltsstand der PDFs
 - optional `assets/img/blog/<dateiname>`
 - optional weitere interne Seiten, wenn ein Beitrag dort verlinkt werden soll
 
