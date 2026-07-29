@@ -19,10 +19,23 @@ function pdfRelativePath(url = "") {
   );
 }
 
-function sourceHash(url = "") {
-  const source = path.join(root, String(url).replace(/^https?:\/\/wirkungsoekonomie\.de/i, "").replace(/^\//, ""));
+function extractMain(html = "") {
+  return html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || "";
+}
+
+function sourceHash(entry = {}) {
+  const source = path.join(root, String(entry.url || "").replace(/^https?:\/\/wirkungsoekonomie\.de/i, "").replace(/^\//, ""));
   if (!fs.existsSync(source)) return "";
-  return createHash("sha256").update(fs.readFileSync(source, "utf8")).digest("hex");
+  const sourceHtml = fs.readFileSync(source, "utf8");
+  return createHash("sha256").update(JSON.stringify({
+    main: extractMain(sourceHtml),
+    title: entry.title || "",
+    excerpt: entry.excerpt || "",
+    category: entry.category || "",
+    date: entry.date || "",
+    publishedAt: entry.publishedAt || "",
+    readingTime: entry.readingTime || "",
+  })).digest("hex");
 }
 
 if (!fs.existsSync(indexPath) || !fs.existsSync(manifestPath)) {
@@ -45,7 +58,7 @@ for (const entry of entries) {
   if (!manifestEntry?.generatorVersion || manifestEntry.generatorVersion !== manifest.version) {
     errors.push(`${entry.url}: PDF verwendet nicht den aktuellen Gestaltungstand.`);
   }
-  if (!manifestEntry?.sourceHash || manifestEntry.sourceHash !== sourceHash(entry.url)) {
+  if (!manifestEntry?.sourceHash || manifestEntry.sourceHash !== sourceHash(entry)) {
     errors.push(`${entry.url}: PDF ist nicht auf dem aktuellen Inhaltsstand.`);
   }
 }
