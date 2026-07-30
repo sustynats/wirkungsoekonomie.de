@@ -1278,6 +1278,10 @@ function deepGlossarySectionsBlock(term) {
     .map((section) => ({
       title: section.title || "Vertiefung",
       body: section.body || "",
+      links: asList(section.links).map((link) => ({
+        href: String(link?.href || "").trim(),
+        label: String(link?.label || "").trim(),
+      })).filter((link) => link.href && link.label),
       items: asList(section.items).filter((item) => hasRealText(item) && !containsForbiddenPublicText(item) && normalizedPublicText(item) !== formula),
     }))
     .filter((section) => {
@@ -1296,7 +1300,7 @@ function deepGlossarySectionsBlock(term) {
             ${publicSections.map((section) => `<section class="term-section-card">
               <h3>${esc(section.title)}</h3>
               ${paragraphs(section.body)}
-              ${glossaryLinkedListItems(section.items || [])}
+              ${section.links.length ? `${section.links.map((link) => `<p><a href="${esc(link.href)}">${esc(link.label)}</a></p>`).join("\n              ")}\n              ` : ""}${glossaryLinkedListItems(section.items || [])}
             </section>`).join("")}
           </div>
         </section>

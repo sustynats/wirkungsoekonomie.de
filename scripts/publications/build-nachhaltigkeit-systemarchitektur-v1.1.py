@@ -21,6 +21,8 @@ PDF = ROOT / os.environ.get("WOEK_PUBLICATION_PDF", "public/downloads/originals/
 TITLE = os.environ.get("WOEK_PUBLICATION_TITLE", "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.")
 EDITION = os.environ.get("WOEK_PUBLICATION_EDITION", "Version 1.1 · Stand 30. Juli 2026 · Working Paper")
 SHOW_TITLE = os.environ.get("WOEK_PUBLICATION_SHOW_TITLE", "").strip().lower() in {"1", "true", "yes"}
+DOCX_SOURCE_VALUE = os.environ.get("WOEK_PUBLICATION_DOCX", "").strip()
+DOCX_SOURCE = ROOT / DOCX_SOURCE_VALUE if DOCX_SOURCE_VALUE else None
 
 
 def inline(value: str) -> str:
@@ -125,16 +127,43 @@ def build_html(items) -> str:
     return "\n".join(output) + "\n"
 
 
+def soffice_binary() -> Path:
+    return Path(os.environ.get("WOEK_LIBREOFFICE_PATH", "/Applications/LibreOffice.app/Contents/MacOS/soffice"))
+
+
+def build_pdf_from_docx(soffice: Path) -> None:
+    """Export a supplied, CI-branded Word master without losing its formulas or figures."""
+    if DOCX_SOURCE is None or not DOCX_SOURCE.exists():
+        raise RuntimeError("Die konfigurierte DOCX-Quellfassung für den PDF-Export fehlt.")
+    PDF.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix="woek-publication-docx-") as temp:
+        temp_path = Path(temp)
+        subprocess.run(
+            [str(soffice), "--headless", "--convert-to", "pdf", "--outdir", str(temp_path), str(DOCX_SOURCE)],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        exported = temp_path / f"{DOCX_SOURCE.stem}.pdf"
+        if not exported.exists():
+            raise RuntimeError("LibreOffice hat aus der DOCX-Quellfassung keine PDF-Datei erzeugt.")
+        shutil.copyfile(exported, PDF)
+
+
 def build_pdf(items) -> None:
-    body = build_html(items)
-    title_block = f"<h1>{html.escape(TITLE)}</h1>" if SHOW_TITLE else ""
-    document = f'''<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title><style>@page {{ size: A4; margin: 18mm; }} body {{ color:#20242a; font-family:Arial,sans-serif; font-size:10pt; line-height:1.45; }} h1 {{ color:#081126; font-family:Georgia,serif; font-size:29pt; line-height:1.08; margin:0 0 7pt; }} h2 {{ color:#081126; font-family:Georgia,serif; font-size:21pt; line-height:1.15; margin:17pt 0 8pt; }} h3 {{ color:#1f6b4f; font-size:14pt; margin:15pt 0 6pt; }} h4 {{ color:#081126; font-size:11pt; margin:11pt 0 4pt; }} p {{ margin:0 0 7pt; }} blockquote {{ background:#f3f6ef; border-left:3px solid #b6903d; color:#1f6b4f; font-weight:bold; margin:9pt 8mm; padding:7pt; }} ul {{ margin:0 0 6pt 14pt; }} table {{ width:100%; border-collapse:collapse; font-size:8.2pt; margin:8pt 0; }} th {{ background:#081126; color:#fff; text-align:left; }} th, td {{ border:0.5pt solid #b8c0c8; padding:4pt; vertical-align:top; }} tr:nth-child(even) {{ background:#f3f6ef; }}</style></head><body>{title_block}<p><strong>{html.escape(EDITION)}</strong></p>{body}</body></html>'''
-    soffice = Path(os.environ.get("WOEK_LIBREOFFICE_PATH", "/Applications/LibreOffice.app/Contents/MacOS/soffice"))
+    soffice = soffice_binary()
     if not soffice.exists():
         if PDF.exists():
             print(f"LibreOffice nicht verfügbar; vorhandene PDF-Fassung bleibt bestehen: {PDF}")
             return
         raise RuntimeError("LibreOffice ist für den PDF-Export nicht verfügbar und es liegt keine bestehende PDF-Fassung vor.")
+    if DOCX_SOURCE is not None:
+        build_pdf_from_docx(soffice)
+        return
+    body = build_html(items)
+    title_block = f"<h1>{html.escape(TITLE)}</h1>" if SHOW_TITLE else ""
+    document = f'''<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title><style>@page {{ size: A4; margin: 18mm; }} body {{ color:#20242a; font-family:Arial,sans-serif; font-size:10pt; line-height:1.45; }} h1 {{ color:#081126; font-family:Georgia,serif; font-size:29pt; line-height:1.08; margin:0 0 7pt; }} h2 {{ color:#081126; font-family:Georgia,serif; font-size:21pt; line-height:1.15; margin:17pt 0 8pt; }} h3 {{ color:#1f6b4f; font-size:14pt; margin:15pt 0 6pt; }} h4 {{ color:#081126; font-size:11pt; margin:11pt 0 4pt; }} p {{ margin:0 0 7pt; }} blockquote {{ background:#f3f6ef; border-left:3px solid #b6903d; color:#1f6b4f; font-weight:bold; margin:9pt 8mm; padding:7pt; }} ul {{ margin:0 0 6pt 14pt; }} table {{ width:100%; border-collapse:collapse; font-size:8.2pt; margin:8pt 0; }} th {{ background:#081126; color:#fff; text-align:left; }} th, td {{ border:0.5pt solid #b8c0c8; padding:4pt; vertical-align:top; }} tr:nth-child(even) {{ background:#f3f6ef; }}</style></head><body>{title_block}<p><strong>{html.escape(EDITION)}</strong></p>{body}</body></html>'''
     PDF.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="woek-systemarchitektur-") as temp:
         temp_path = Path(temp)

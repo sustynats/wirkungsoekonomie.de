@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T18:16:13.121Z",
+  "generatedAt": "2026-07-30T19:22:19.719Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,19 +205,19 @@
     }
   ],
   "counts": {
-    "total": 3180,
+    "total": 3181,
     "byStatus": {
       "archiviert": 1,
       "führend": 9,
       "aktuell": 2630,
       "Arbeitsfassung": 278,
-      "ältere Fassung": 262
+      "ältere Fassung": 263
     },
     "byType": {
       "Glossar": 47,
       "Grundlagenwerk": 67,
       "Methodik": 110,
-      "Arbeitspapier": 2648,
+      "Arbeitspapier": 2649,
       "Gesetzesentwurf": 39,
       "Beispiel": 16,
       "Dossier": 232,
@@ -226,12 +226,12 @@
       "Whitepaper": 6
     },
     "bySource": {
-      "download-or-document": 885,
+      "download-or-document": 886,
       "curated-publication": 3,
       "leading-reference": 8,
       "online-version": 2284
     },
-    "downloadFiles": 891,
+    "downloadFiles": 892,
     "onlineVersions": 2284
   },
   "documents": [
@@ -47736,7 +47736,7 @@
       ],
       "type": "Grundlagenwerk",
       "status": "aktuell",
-      "version": "1.0",
+      "version": "1.1",
       "dateOrStand": "30. Juli 2026",
       "publicationDate": "2026-07-30",
       "author": "Natalie Weber",
@@ -47748,7 +47748,7 @@
       ],
       "urls": {
         "primary": "bibliothek/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell/",
-        "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf"
+        "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.pdf"
       },
       "topics": [
         "Nachhaltigkeit",
@@ -47770,7 +47770,7 @@
         "Demokratie"
       ],
       "impactClassification": "Die Veröffentlichung erklärt Resilienz als beschreibende Systemfähigkeit und Wirkungsresilienz als normativ an Mensch, Planet und Demokratie gebundene Präzisierung. Nachhaltigkeit wird als langfristig gesicherte Wirkungsresilienz innerhalb nicht beliebig kompensierbarer Grenzen eingeordnet.",
-      "citation": "Weber, Natalie (2026): Nachhaltigkeit als Systemresilienz. Resilienzdefinition, Kugelmodell, Klima-Beispiel und mathematische Herleitung. Version 1.0, 30. Juli 2026.",
+      "citation": "Weber, Natalie (2026): Nachhaltigkeit als Systemresilienz. Resilienzdefinition, Kugelmodell, Klima-Beispiel und mathematische Herleitung. Version 1.1, 30. Juli 2026.",
       "isLeadingReference": false,
       "reviewStatus": "Fachveröffentlichung mit dokumentiertem wissenschaftlichem Anschluss",
       "source": "curated-publication"
@@ -69875,6 +69875,30 @@
         "sourcePath": "portale/migration-vielfalt/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-nachhaltigkeit-als-systemresilienz-definition-un",
+      "title": "Nachhaltigkeit als Systemresilienz Definition und Klimamodell",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
+        "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
