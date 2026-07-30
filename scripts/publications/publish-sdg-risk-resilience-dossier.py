@@ -24,14 +24,13 @@ DOC_ID = "sdgs-sdgplus-risiko-resilienzregister-systemresilienz-v0-1"
 SLUG = "sdgs-sdgplus-risiko-resilienzregister-systemresilienz"
 TITLE = "Die SDGs und SDG+ als globales Risiko- und Resilienzregister"
 SUBTITLE = (
-    "Warum Nachhaltigkeit die diplomatische Oberfläche von Systemresilienz ist - "
-    "und SDG+ die fehlenden Risiko-, Demokratie-, Medien-, Rechtsstaats- und "
-    "Digitalitätsdimensionen ergänzt."
+    "SDGs und SDG+ als Risiko-, Wirkungs- und Rückkopplungsrahmen für die "
+    "langfristige Wirkungsresilienz von Mensch, Planet und Demokratie."
 )
 SHORT_DESCRIPTION = (
     "Dossier zur Lesart der SDGs als globales Risiko- und Resilienzregister: "
-    "Nachhaltigkeit wird als Ergebnis von Systemresilienz verstanden, SDG+ ergänzt "
-    "Demokratie, Medien, Rechtsstaat, Diskursfähigkeit und digitale Integrität."
+    "SDG+ ergänzt Demokratie, Medien, Rechtsstaat, Diskursfähigkeit und digitale "
+    "Integrität. Die zitierfähige Arbeitsfassung v0.1 wird durch den Stand 30. Juli 2026 eingeordnet."
 )
 DOCX_OUT = ROOT / "assets/downloads/woek_dossier_sdgs_sdgplus_risiko_resilienzregister_systemresilienz_v0_1.docx"
 PDF_OUT = DOCX_OUT.with_suffix(".pdf")
@@ -81,6 +80,13 @@ def render_online_text(paragraphs: list[str]) -> str:
             "Dokumentstatus",
             "Dossier · Arbeitsfassung v0.1 · Stand: Juni 2026. Öffentliche WÖk-Konzeptfassung; "
             "kein amtliches SDG-Dokument und keine Risiko- oder Anlageberatung.",
+        ),
+        callout(
+            "Redaktionelle Aktualisierung · 30. Juli 2026",
+            "Die nachfolgende Originalfassung v0.1 bleibt zitierfähig und wird nicht still umgeschrieben. "
+            "Der heutige WÖk-Stand definiert Nachhaltigkeit als langfristige Wirkungsresilienz des gekoppelten "
+            "Systems Mensch–Planet–Demokratie. Die SDGs und SDG+ bilden dafür Referenz-, Risiko- und "
+            "Rückkopplungsdaten; Resilienz ist weder automatisch erwünscht noch mit bloßer Regimestabilität gleichzusetzen.",
         ),
         '<p class="card-text"><strong>Einordnung:</strong> Das Dossier übersetzt die SDGs aus der reinen Nachhaltigkeitssprache in eine Risiko-, Resilienz- und Wirkungslogik. SDG+ ergänzt jene demokratischen, medialen, rechtlichen und digitalen Systemfähigkeiten, die diese Resilienz absichern.</p>',
     ]
@@ -202,20 +208,21 @@ def render_page(online_text: str) -> str:
     {header}
     <main data-pagefind-body>
       <section class="hero compact-hero document-detail-hero">
-        <p class="hero-kicker">Dossier · Arbeitsfassung · Juni 2026</p>
+        <p class="hero-kicker">Dossier · archivierte Arbeitsfassung v0.1 · Juni 2026</p>
         <h1>{html.escape(TITLE)}</h1>
         <p class="hero-subtitle">{html.escape(SUBTITLE)}</p>
         <div class="document-card-badges"><span class="status-badge status-badge--dossier">Dossier</span><span class="status-badge status-badge--arbeitsfassung">Arbeitsfassung</span><span class="status-badge status-badge--methodik">SDG+ / Resilienz</span></div>
       </section>
       <section class="section document-detail-grid">
         <article class="document-detail-main">
-          <div class="callout"><strong>Statushinweis:</strong> Dieses Dossier ist eine öffentliche Konzept- und Arbeitsfassung der Wirkungsökonomie. Es interpretiert die SDGs wirkungsökonomisch; SDG+ ist eine WÖk-Erweiterung und keine offizielle UN-Kategorie.</div>
+          <div class="callout"><strong>Statushinweis:</strong> Dieses Dossier ist eine zitierfähige öffentliche Konzept- und Arbeitsfassung der Wirkungsökonomie. Es interpretiert die SDGs wirkungsökonomisch; SDG+ ist eine WÖk-Erweiterung und keine offizielle UN-Kategorie.</div>
+          <div class="callout"><strong>Redaktionelle Aktualisierung · 30. Juli 2026:</strong> Die Originalfassung v0.1 bleibt im folgenden Online- und PDF-Text erhalten. Der aktuelle WÖk-Stand lautet: Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie. Sie verlangt Schutz, Wiederherstellung, Regeneration, Lernen und Nicht-Externalisierung; sie ist kein Abfallprodukt und keine Regimeresilienz.</div>
           <h2>Kurz gesagt</h2>
-          <p>Das Dossier liest die SDGs nicht als weiche Nachhaltigkeitswunschliste, sondern als globales Risiko- und Resilienzregister. SDG+ ergänzt die demokratischen, medialen, rechtlichen, kulturellen und digitalen Systemfähigkeiten, ohne die Resilienz nicht dauerhaft gelingen kann.</p>
+          <p>Das Dossier liest die SDGs als globales Risiko- und Resilienzregister. SDG+ ergänzt die demokratischen, medialen, rechtlichen, kulturellen und digitalen Systemfähigkeiten, die zur langfristigen Wirkungsresilienz von Mensch, Planet und Demokratie beitragen.</p>
           <h2>Was dich erwartet</h2>
           <p>Eine ausführliche Online- und PDF-Fassung mit Executive Summary, Systemresilienz-Begriff, SDG-Risikolandschaft, SDG+-Erweiterung, Wirkungsnetz, Beispielen und Sprachvorschlägen für die Wirkungsökonomie.</p>
           <h2>Welche Fragen beantwortet das Dokument?</h2>
-          <ul><li>Warum ist Nachhaltigkeit eher Ergebnis als operativer Kern?</li><li>Wie lassen sich die 17 SDGs als Risiko- und Resilienzfelder lesen?</li><li>Welche Systemfähigkeiten ergänzt SDG+ für Demokratie, Medien, Rechtsstaat, Diskurs und Digitalität?</li></ul>
+          <ul><li>Wie lassen sich die 17 SDGs als Risiko- und Resilienzfelder lesen?</li><li>Welche Systemfähigkeiten ergänzt SDG+ für Demokratie, Medien, Rechtsstaat, Diskurs und Digitalität?</li><li>Wie stützen diese Referenzrahmen die langfristige Wirkungsresilienz von Mensch, Planet und Demokratie?</li></ul>
           <h2>Für wen geeignet?</h2>
           <p>Politik, Verwaltung, Unternehmen, Wissenschaft, Bildung, Risikomanagement, Nachhaltigkeitsstrategie, Wirkungssteuerung und öffentliche Kommunikation.</p>
           <h2>Was dieses Dokument nicht ist</h2>
@@ -235,7 +242,7 @@ def render_page(online_text: str) -> str:
             <h2>Metadaten</h2>
             <ul>
               <li><strong>Typ:</strong> Dossier</li>
-              <li><strong>Status:</strong> Arbeitsfassung</li>
+              <li><strong>Status:</strong> Archivierte Arbeitsfassung mit redaktioneller Aktualisierung</li>
               <li><strong>Version:</strong> v0.1</li>
               <li><strong>Stand:</strong> Juni 2026</li>
               <li><strong>Bereich:</strong> SDGs, SDG+, Risiko &amp; Resilienz</li>
@@ -275,7 +282,7 @@ def add_document_registry_entry() -> None:
             "title": TITLE,
             "type": "Dossier",
             "category": "referenzrahmen",
-            "status": "current",
+            "status": "archived",
             "stand": "2026-06-09",
             "summary": SHORT_DESCRIPTION,
             "onlineUrl": f"/bibliothek/{SLUG}/",
@@ -302,7 +309,7 @@ def add_document_registry_entry() -> None:
                 "scorecards",
                 "wirkungspfad-analyse",
             ],
-            "isArchive": False,
+            "isArchive": True,
             "isPublic": True,
         }
     )

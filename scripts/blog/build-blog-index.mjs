@@ -5,6 +5,16 @@ const root = process.cwd();
 const blogDir = path.join(root, "blog");
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
 const entryOverrides = new Map([
+  ["/blog/was-ist-nachhaltigkeit-wirklich.html", {
+    excerpt: "Kurzthese: Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie – mit Regeneration, demokratischer Korrektur, Lernen und Nicht-Externalisierung.",
+    relatedPages: [
+      "/blog/systemresilienz-statt-nachhaltigkeit/",
+      "/begriffe/resilienz/",
+      "/begriffe/systemresilienz/",
+      "/begriffe/wirkungsresilienz/"
+    ],
+    relatedTerms: ["Nachhaltigkeit", "Resilienz", "Systemresilienz", "Wirkungsresilienz", "positive Netto-Wirkung"]
+  }],
   ["/blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html", {
     excerpt: "Journal-Beitrag zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Labels, Zertifikate, Scores, Faktenchecks und Berichte machen Wirkung sichtbar, aber erst Rückkopplung in Preise, Regeln, Kapital, Beschaffung und Öffentlichkeit macht daraus reale Steuerung.",
     tags: [

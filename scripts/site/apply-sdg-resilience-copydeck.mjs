@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const termsOnly = process.argv.includes("--terms-only");
-const today = "2026-06-09";
+const today = "2026-07-30";
 const sourceDocument = "verstehen/sdgs-sdgplus/risiko-resilienzregister/";
 const registryPath = path.join(root, "assets", "data", "term-registry.json");
 
@@ -252,8 +252,8 @@ function resilienceReferenceBlock(prefix = "") {
         </article>
         <article class="card">
           <p class="card-kicker">Journal</p>
-          <h3 class="card-title">Von Nachhaltigkeit zu Systemresilienz</h3>
-          <p class="card-text">Der Journalbeitrag fasst die strategische Verschiebung zusammen: Nachhaltigkeit bleibt anschlussfähig, Systemresilienz wird operativ.</p>
+          <h3 class="card-title">Nachhaltigkeit ist Systemresilienz</h3>
+          <p class="card-text">Der Journalbeitrag erklärt Nachhaltigkeit als langfristige Wirkungsresilienz von Mensch, Planet und Demokratie – mit Rückstellung, Regeneration, Lernen und Nicht-Externalisierung.</p>
           <a class="text-link" href="${prefix}${links.journal.replace(/^\//, "")}">Artikel öffnen</a>
         </article>
         <article class="card">
@@ -356,7 +356,7 @@ function updateSdgReference() {
         <p class="hero-kicker">Neue Lesart</p>
         <h2>Die SDGs sind kommunikativ richtig, aber systemisch unterpräzise.</h2>
         <p>Sie klingen nach Nachhaltigkeit, Entwicklung und Zielbild. Das ist anschlussfähig. Der härtere Kern ist Risiko- und Resilienzmanagement: Wenn Armut, Hunger, Wasserstress, Krankheiten, Energieabhängigkeit, Infrastrukturversagen, Ungleichheit, Klimafolgen, Biodiversitätsverlust, Korruption oder Vertrauensverlust nicht bearbeitet werden, destabilisieren sie Gesellschaften, Märkte, Lieferketten, Kapitalmärkte, Versicherbarkeit, Gesundheit, Ernährung und Demokratie.</p>
-        <blockquote><p>Nachhaltigkeit ist das Nebenprodukt vollständiger Risikointelligenz. Die SDGs beschreiben, welche Zustände stabil bleiben müssen. SDG+ beschreibt, welche Systemfähigkeiten diese Stabilität überhaupt ermöglichen.</p></blockquote>
+        <blockquote><p>Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie. Die SDGs und SDG+ beschreiben Referenz-, Risiko- und Rückkopplungsdaten, die diese Systemfähigkeit prüfbar machen.</p></blockquote>
       </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="risiko-resilienzregister/">Ergänzungsseite öffnen</a>
@@ -566,7 +566,7 @@ function buildRiskRegisterPage() {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Die SDGs als globales Risiko- und Resilienzregister | Wirkungsökonomie</title>
-    <meta name="description" content="Warum Nachhaltigkeit nicht der operative Kern ist und warum die Wirkungsökonomie mit SDG+ die fehlende Korrekturfähigkeit ergänzt.">
+    <meta name="description" content="SDGs und SDG+ als Risiko-, Wirkungs- und Rückkopplungsrahmen für die langfristige Wirkungsresilienz von Mensch, Planet und Demokratie.">
     <meta name="search_title" content="Die SDGs als globales Risiko- und Resilienzregister">
     <meta name="search_description" content="Öffentlich verständliche Ergänzungsseite zum Dossier: SDGs als Risikoregister, SDG+ als Korrekturfähigkeit und Wirkungsökonomie als Rückkopplungsarchitektur.">
     <meta name="search_section" content="Verstehen">
@@ -576,11 +576,11 @@ function buildRiskRegisterPage() {
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
     <meta property="og:title" content="Die SDGs als globales Risiko- und Resilienzregister">
-    <meta property="og:description" content="Warum Nachhaltigkeit nicht der operative Kern ist und warum die Wirkungsökonomie mit SDG+ die fehlende Korrekturfähigkeit ergänzt.">
+    <meta property="og:description" content="SDGs und SDG+ als Risiko-, Wirkungs- und Rückkopplungsrahmen für die langfristige Wirkungsresilienz von Mensch, Planet und Demokratie.">
     <meta property="og:url" content="https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/risiko-resilienzregister/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Die SDGs als globales Risiko- und Resilienzregister">
-    <meta name="twitter:description" content="Warum Nachhaltigkeit nicht der operative Kern ist und warum die Wirkungsökonomie mit SDG+ die fehlende Korrekturfähigkeit ergänzt.">
+    <meta name="twitter:description" content="SDGs und SDG+ als Risiko-, Wirkungs- und Rückkopplungsrahmen für die langfristige Wirkungsresilienz von Mensch, Planet und Demokratie.">
     <link rel="icon" href="../../../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
@@ -592,7 +592,7 @@ ${header}
           <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a> / <a href="../../">Verstehen</a> / <a href="../">SDGs &amp; SDG+</a> / Risiko- und Resilienzregister</nav>
           <p class="hero-kicker">Dossier</p>
           <h1 class="hero-title">Die SDGs als globales Risiko- und Resilienzregister.</h1>
-          <p class="hero-subtitle">Warum Nachhaltigkeit nicht der operative Kern ist - und warum die Wirkungsökonomie mit SDG+ die fehlende Korrekturfähigkeit ergänzt.</p>
+          <p class="hero-subtitle">SDGs und SDG+ als Risiko-, Wirkungs- und Rückkopplungsrahmen für die langfristige Wirkungsresilienz von Mensch, Planet und Demokratie.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="../../../bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/">Vollständiges Dossier lesen</a>
             <a class="btn btn-secondary" href="../../../blog/systemresilienz-statt-nachhaltigkeit/">Journalbeitrag lesen</a>
@@ -603,13 +603,13 @@ ${header}
       <section class="article-page">
         <div class="article-body">
           <div class="callout">
-            <p><strong>Kurzformel:</strong> Die SDGs sind das Risikoregister der Welt. SDG+ ist das Betriebssystem ihrer Korrekturfähigkeit. Die Wirkungsökonomie ist die Architektur, die beides messbar, nicht kompensierbar und entscheidungswirksam macht.</p>
+            <p><strong>Kurzformel:</strong> Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie. Die SDGs sind ein globales Risiko- und Resilienzregister; SDG+ macht seine demokratische Korrektur- und Lernfähigkeit sichtbar.</p>
           </div>
-          <p>Wir sprechen seit Jahren über Nachhaltigkeit. Der Begriff ist wichtig, weil er anschlussfähig ist. Aber wenn man die SDGs unternehmerisch, physikalisch und systemisch liest, geht es um etwas Härteres: um <a href="../../../begriffe/risikomanagement/">Risikomanagement</a>. Und wenn man <a href="../../../begriffe/sdg-plus/">SDG+</a> hinzunimmt, wird klar: Es geht um <a href="../../../begriffe/systemresilienz/">Systemresilienz</a>.</p>
+          <p>Nachhaltigkeit ist die langfristige <a href="../../../begriffe/wirkungsresilienz/">Wirkungsresilienz</a> des gekoppelten Systems Mensch–Planet–Demokratie. Die SDGs lassen sich zusätzlich als globale Risiko- und Resilienzfelder lesen; <a href="../../../begriffe/sdg-plus/">SDG+</a> macht demokratische Korrektur-, Lern- und Schutzfähigkeiten ausdrücklich sichtbar.</p>
           <p>Die 17 SDGs beschreiben keine moralische Wunschliste. Sie beschreiben Risikofelder, deren Nichtbearbeitung Gesellschaften, Märkte, Lieferketten, Kapitalmärkte, Versicherbarkeit, Gesundheit, Ernährung, Demokratie und ökologische Lebensgrundlagen destabilisiert.</p>
           <p>Armut ist dann kein bloßes Sozialthema, sondern ein Nachfrage-, Gesundheits-, Sicherheits- und Demokratierisiko. Hunger ist kein Entwicklungshilfethema, sondern ein Ernährungs-, Preis-, Agrar-, Konflikt- und Lieferkettenrisiko. Wasser ist kein Umweltlabel, sondern Standort-, Produktions-, Gesundheits- und Konfliktrisiko. Bildung ist kein weiches Gesellschaftsziel, sondern Fachkräfte-, Innovations-, Anpassungs- und Demokratierisiko. Klima ist nicht Meinung, sondern Physik mit Zeitverzug. Biodiversität ist nicht Naturromantik, sondern Infrastruktur für Nahrung, Böden, Bestäubung, Wasser, Gesundheit und Rohstoffe.</p>
           <p>SDG+ ergänzt diese Lesart um jene Systemfähigkeiten, die die SDGs voraussetzen, aber nicht tief genug operationalisieren: öffentliche Wahrheit, legitime Teilhabe, Rechtsstaatlichkeit, Diskursfähigkeit, digitale Integrität, institutionelles Vertrauen und gesellschaftliche Schockfestigkeit.</p>
-          <p>Nachhaltigkeit ist damit nicht kleiner, sondern präziser gefasst. Nachhaltigkeit ist der sichtbare Zustand, der entsteht, wenn ökologische, soziale, ökonomische und institutionelle Risiken nicht mehr externalisiert, verdrängt oder schöngerechnet werden. <a href="../../../begriffe/systemresilienz/">Systemresilienz</a> ist die Fähigkeit, diesen Zustand unter Stress zu erhalten.</p>
+          <p>Nachhaltigkeit ist damit nicht kleiner, sondern präziser gefasst: langfristige Wirkungsresilienz. <a href="../../../begriffe/systemresilienz/">Systemresilienz</a> beschreibt das Verhalten eines gekoppelten Systems unter Stress; die WÖk bindet sie an Mensch, Planet, Demokratie, positive Netto-Wirkung und Nicht-Externalisierung.</p>
           <p>Die Wirkungsökonomie geht einen Schritt weiter als klassisches Risikomanagement. Klassisches Risikomanagement fragt: Welche Risiken bedrohen unser Unternehmen, unser Kapital, unsere Lieferfähigkeit, unsere Reputation? Die Wirkungsökonomie fragt zusätzlich: Welche Risiken erzeugen wir selbst für andere, für Lieferketten, für Ökosysteme, für Demokratien und für kommende Generationen - und wann kommen diese Risiken als Kosten, Haftung, Regulierung, Instabilität, Versicherungsprämie oder Vertrauensverlust zurück?</p>
           <p>In der Bilanz kann Wirkung verschwinden. In der Wirklichkeit nicht. Wirkung ändert Ort, Form und Zeitpunkt, aber sie löst sich nicht auf. Genau deshalb reicht Nachhaltigkeitsreporting nicht. Es braucht <a href="../../../begriffe/wirkungsrueckkopplung/">Wirkungsrückkopplung</a>: in Preise, Steuern, Kapitalzugang, Beschaffung, Förderung, Management, Haushalte und demokratische Korrektur.</p>
 
