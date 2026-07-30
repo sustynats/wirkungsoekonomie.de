@@ -5,31 +5,33 @@ import { execFileSync } from "node:child_process";
 const root = process.cwd();
 const sourcePath = process.env.JOURNAL_SOURCE_PATH || process.argv[2] || "Systemresilienz_statt_Nachhaltigkeit_Artikelpaket_SDGplus.docx";
 const slug = "systemresilienz-statt-nachhaltigkeit";
-const title = "Von Nachhaltigkeit zu Systemresilienz";
-const subtitle = "Warum die SDGs wirkungsökonomisch als globales Risiko- und Resilienzregister gelesen werden sollten.";
+const title = "Nachhaltigkeit ist Systemresilienz";
+const subtitle = "Die SDGs als globales Risiko- und Resilienzregister";
+const deck = "Ein wirkungsökonomischer Beitrag zur Neuausrichtung von Nachhaltigkeitsmanagement als Risiko-, Rückkopplungs-, Regenerations- und Lernarchitektur.";
 const date = "2026-06-09";
 const dateLabel = "9. Juni 2026";
-const readingTime = "15 Min.";
+const modifiedDate = "2026-07-30";
+const modifiedDateLabel = "30. Juli 2026";
+const readingTime = "24 Min.";
 const category = "SDG+ & Systemresilienz";
 const image = "/assets/img/blog/2026-05-23-was-ist-nachhaltigkeit-wirklich.png";
 const imageAlt = "Illustration zu Nachhaltigkeit, Systemresilienz, SDGs und Wirkung.";
 const articlePath = path.join(root, "blog", slug, "index.html");
+const blogIndexPath = path.join(root, "assets", "data", "blog-index.json");
 const registryPath = path.join(root, "assets", "data", "term-registry.json");
 const journalIndexPath = path.join(root, "journal", "index.html");
 const sourceDocument = `blog/${slug}/`;
 
 const sourceMap = new Map([
-  ["1", { label: "United Nations: Transforming our world - 2030 Agenda for Sustainable Development", url: "https://sdgs.un.org/2030agenda" }],
-  ["2", { label: "United Nations: The 17 Sustainable Development Goals", url: "https://sdgs.un.org/goals" }],
-  ["3", { label: "ISO: ISO 31000:2018 Risk management - Guidelines", url: "https://www.iso.org/standard/65694.html" }],
-  ["4", { label: "IPCC: Climate Change 2023 - AR6 Synthesis Report", url: "https://www.ipcc.ch/report/ar6/syr/" }],
-  ["5", { label: "UNDRR: Sendai Framework for Disaster Risk Reduction 2015-2030", url: "https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030" }],
-  ["6", { label: "European Commission: Corporate sustainability reporting / CSRD and ESRS", url: "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en" }],
-  ["7", { label: "Wirkungsökonomie: SDGs und SDG+ als Risiko- und Resilienzregister", url: "/bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/" }],
-  ["8", { label: "Wirkungsökonomie-Glossar: Systemresilienz", url: "/begriffe/systemresilienz/" }],
-  ["9", { label: "Wirkungsökonomie-Glossar: Risiko- und Resilienzregister", url: "/begriffe/risiko-und-resilienzregister/" }],
-  ["10", { label: "Wirkungsökonomie-Glossar: Systemische Risikointelligenz", url: "/begriffe/systemische-risikointelligenz/" }],
-  ["11", { label: "Wirkungsökonomie: SDG-/SDG+-Referenzrahmen", url: "/verstehen/sdgs-sdgplus/" }],
+  ["1", { label: "Holling, C. S. (1973): Resilience and Stability of Ecological Systems. Annual Review of Ecology and Systematics, 4, 1-23.", url: "https://doi.org/10.1146/annurev.es.04.110173.000245" }],
+  ["2", { label: "Carpenter, S. R.; Walker, B.; Anderies, J. M.; Abel, N. (2001): From Metaphor to Measurement: Resilience of What to What? Ecosystems, 4, 765-781.", url: "https://doi.org/10.1007/s10021-001-0045-9" }],
+  ["3", { label: "Walker, B.; Holling, C. S.; Carpenter, S. R.; Kinzig, A. (2004): Resilience, Adaptability and Transformability in Social-Ecological Systems. Ecology and Society, 9(2), Article 5.", url: "https://www.ecologyandsociety.org/vol9/iss2/art5/" }],
+  ["4", { label: "Folke, C. (2006): Resilience: The Emergence of a Perspective for Social-Ecological Systems Analyses. Global Environmental Change, 16(3), 253-267.", url: "https://doi.org/10.1016/j.gloenvcha.2006.04.002" }],
+  ["5", { label: "IPCC (2022): Climate Change 2022 - Impacts, Adaptation and Vulnerability. Annex II: Glossary.", url: "https://www.ipcc.ch/report/ar6/wg2/chapter/annex-ii/" }],
+  ["6", { label: "United Nations (2015): Transforming our world: the 2030 Agenda for Sustainable Development.", url: "https://sdgs.un.org/2030agenda" }],
+  ["7", { label: "UNDRR (2015): Sendai Framework for Disaster Risk Reduction 2015-2030.", url: "https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030" }],
+  ["8", { label: "International Organization for Standardization (2018): ISO 31000:2018 Risk management - Guidelines.", url: "https://www.iso.org/standard/65694.html" }],
+  ["9", { label: "Weber, Natalie (2026): Die neue Ordnung des Wohlstands. Kapitel zu Wirkungsrisiko, Wirkungsresilienz, Resilienzstaat und Nachhaltigkeit als Systemarchitektur.", url: "/assets/pdf/die-neue-ordnung-des-wohlstands.pdf" }],
 ]);
 
 const termLinks = [
@@ -37,6 +39,8 @@ const termLinks = [
   ["Systemische Risikointelligenz", "../../begriffe/systemische-risikointelligenz/"],
   ["systemische Risikointelligenz", "../../begriffe/systemische-risikointelligenz/"],
   ["Systemresilienz", "../../begriffe/systemresilienz/"],
+  ["Wirkungsresilienz", "../../begriffe/wirkungsresilienz/"],
+  ["Resilienz", "../../begriffe/resilienz/"],
   ["Nachhaltigkeitsmanagement", "../../begriffe/nachhaltigkeitsmanagement/"],
   ["Wirkungsrisikomanagement", "../../begriffe/wirkungsrisikomanagement/"],
   ["Resilienzarchitektur", "../../begriffe/resilienzarchitektur/"],
@@ -99,21 +103,29 @@ function docxParagraphs(docxPath) {
 
 function articleParts() {
   const paras = docxParagraphs(sourcePath);
-  const start = paras.indexOf("Journalartikel");
-  const end = paras.indexOf("LinkedIn-Artikel");
-  if (start < 0 || end < 0) throw new Error("Journalartikel oder LinkedIn-Grenze im DOCX nicht gefunden.");
-  const raw = paras.slice(start + 1, end);
-  const docTitle = raw[0];
-  const docSubtitle = raw[1];
+  const start = paras.findIndex((paragraph) => paragraph.startsWith("JOURNAL") && paragraph.includes("SYSTEMRESILIENZ"));
+  const sourceIndex = paras.indexOf("Quellen und wissenschaftliche Bezugslinien");
+  if (start < 0 || sourceIndex < 0 || sourceIndex <= start) {
+    throw new Error("Publikationsfertige Journalfassung oder Quellenabschnitt im DOCX nicht gefunden.");
+  }
+  const raw = paras.slice(start, sourceIndex);
+  const docTitle = raw[1] || title;
+  const docSubtitle = raw[2] || subtitle;
+  const docDeck = raw[3] || deck;
+  const author = raw[4] || "Von Natalie Weber - Begründerin der Wirkungsökonomie";
+  const coreIndex = raw.indexOf("Kernthese");
   const abstractIndex = raw.indexOf("Abstract");
-  const abstract = abstractIndex >= 0 ? raw[abstractIndex + 1] : "";
-  const sourceIndex = raw.indexOf("Literatur und Bezugsquellen");
+  const bodyStart = raw.indexOf("Einleitung: Warum „Nachhaltigkeit“ allein operativ nicht genügt");
+  if (coreIndex < 0 || abstractIndex < 0 || bodyStart < 0) {
+    throw new Error("Kernthese, Abstract oder Einleitung im DOCX nicht gefunden.");
+  }
+  const coreThesis = raw[coreIndex + 1] || "";
+  const abstract = raw.slice(abstractIndex + 1, bodyStart);
   const body = raw
-    .slice((abstractIndex >= 0 ? abstractIndex + 2 : 2), sourceIndex >= 0 ? sourceIndex : raw.length)
-    .filter((paragraph) => !/^Keywords:/i.test(paragraph))
+    .slice(bodyStart)
     .map(cleanEditorialLanguage)
     .filter(Boolean);
-  return { docTitle, docSubtitle, abstract, body };
+  return { docTitle, docSubtitle, docDeck, author, coreThesis, abstract, body };
 }
 
 function cleanEditorialLanguage(paragraph) {
@@ -152,12 +164,12 @@ function inline(value) {
     });
 }
 
-function tableHtml(headA, headB, rows) {
+function tableHtml(headers, rows) {
   return `<div class="table-wrap">
             <table class="data-table">
-              <thead><tr><th>${esc(headA)}</th><th>${esc(headB)}</th></tr></thead>
+              <thead><tr>${headers.map((header) => `<th>${esc(header)}</th>`).join("")}</tr></thead>
               <tbody>
-${rows.map(([a, b]) => `                <tr><td>${inline(a)}</td><td>${inline(b)}</td></tr>`).join("\n")}
+${rows.map((row) => `                <tr>${row.map((cell) => `<td>${inline(cell)}</td>`).join("")}</tr>`).join("\n")}
               </tbody>
             </table>
           </div>`;
@@ -166,40 +178,82 @@ ${rows.map(([a, b]) => `                <tr><td>${inline(a)}</td><td>${inline(b)
 function bodyHtml(parts) {
   const html = [];
   const paragraphs = parts.body;
+  const h2 = new Set([
+    "Einleitung: Warum „Nachhaltigkeit“ allein operativ nicht genügt",
+    "Von der Rückkehr zum Gleichgewicht zur sozial-ökologischen Resilienz",
+    "Das Kugel-Becken-Modell",
+    "Die vier Resilienzattribute - auf Nachhaltigkeit übertragen",
+    "Was die vier Punkte allein nicht deutlich genug zeigen: Rückstellung und Regeneration",
+    "Die wirkungsökonomische Herleitung: Warum Nachhaltigkeit Systemresilienz ist",
+    "Warum ein faschistisches System damit nicht nachhaltig ist",
+    "Die SDGs als globales Risiko- und Resilienzregister",
+    "SDG+ als Systemqualität und Korrekturfähigkeit",
+    "Vom Eigenrisiko zum erzeugten Wirkungsrisiko",
+    "Wie Systemresilienz praktisch sichtbar wird",
+    "Konsequenzen für Unternehmen und Management",
+    "Ein operationales Resilienzraster",
+    "Schluss: Der präzisere operative Begriff",
+  ]);
+  const h3 = new Set([
+    "1. Latitude: Wie groß ist der tragfähige Spielraum?",
+    "2. Resistance: Wie leicht lässt sich der Zustand verschieben?",
+    "3. Precariousness: Wie nahe steht die Kugel bereits am Rand?",
+    "4. Panarchy: Welche Ebenen verändern Becken, Rand und Kugel?",
+    "Energie: Pumpspeicher als Rückstell- und Dämpfungsmechanismus",
+    "Produkte und Lieferketten",
+    "Städte und Gesundheit",
+    "Demokratie und Öffentlichkeit",
+  ]);
+  const callouts = new Set([
+    "Wissenschaftlich entscheidend",
+    "Zentrale Definition",
+    "Prägnante Abgrenzung",
+    "Kurzformel",
+    "Schlussformel",
+  ]);
+  const tableSpecs = [
+    { headers: ["Element im Bild", "Systemische Bedeutung", "Übertragung auf Nachhaltigkeit"], rows: 8 },
+    { headers: ["Wirkungsraum", "Beispiele für Rückstell-, Regenerations- und Korrekturmechanismen"], rows: 5 },
+    { headers: ["Logischer Schritt", "Bedeutung"], rows: 8 },
+    { headers: ["SDG", "Resilienz-Lesart"], rows: 17 },
+    { headers: ["SDG+-Feld", "Beitrag zur Systemresilienz"], rows: 9 },
+  ];
+
   for (let i = 0; i < paragraphs.length; i += 1) {
     const paragraph = paragraphs[i];
-    if (paragraph === "SDG" && paragraphs[i + 1] === "Systemresilienz-Lesart") {
-      const rows = [];
-      i += 2;
-      while (i + 1 < paragraphs.length && !paragraphs[i].startsWith("Diese Tabelle")) {
-        rows.push([paragraphs[i], paragraphs[i + 1]]);
-        i += 2;
-      }
-      html.push(tableHtml("SDG", "Systemresilienz-Lesart", rows));
-      if (paragraphs[i]?.startsWith("Diese Tabelle")) html.push(`<p>${inline(paragraphs[i])}</p>`);
+    const table = tableSpecs.find((spec) => spec.headers.every((header, index) => paragraphs[i + index] === header));
+    if (table) {
+      const cellsStart = i + table.headers.length;
+      const cellsCount = table.headers.length * table.rows;
+      const cells = paragraphs.slice(cellsStart, cellsStart + cellsCount);
+      if (cells.length !== cellsCount) throw new Error(`Unvollständige Tabelle: ${table.headers.join(" / ")}`);
+      const rows = Array.from({ length: table.rows }, (_, rowIndex) => cells.slice(rowIndex * table.headers.length, (rowIndex + 1) * table.headers.length));
+      html.push(tableHtml(table.headers, rows));
+      i = cellsStart + cellsCount - 1;
       continue;
     }
-    if (paragraph === "SDG+ Feld" && paragraphs[i + 1] === "Systemresilienz-Lesart") {
-      const rows = [];
-      i += 2;
-      while (i + 1 < paragraphs.length && !paragraphs[i].startsWith("Anschaulich gesagt")) {
-        rows.push([paragraphs[i], paragraphs[i + 1]]);
-        i += 2;
-      }
-      html.push(tableHtml("SDG+ Feld", "Systemresilienz-Lesart", rows));
-      if (paragraphs[i]?.startsWith("Anschaulich gesagt")) html.push(`<p>${inline(paragraphs[i])}</p>`);
+    if (paragraph === "Ein operationales Resilienzraster") {
+      html.push(`<h2>${inline(paragraph)}</h2>`);
+      const intro = paragraphs[i + 1] || "";
+      const questions = paragraphs.slice(i + 2, i + 10);
+      const questionIndex = i + 10;
+      if (intro) html.push(`<p>${inline(intro)}</p>`);
+      html.push(`<ol>${questions.map((question) => `<li>${inline(question)}</li>`).join("")}</ol>`);
+      i = questionIndex - 1;
       continue;
     }
-    if (/^\d+\.\s+/.test(paragraph)) {
-      html.push(`<h2>${inline(paragraph.replace(/^\d+\.\s+/, ""))}</h2>`);
+    if (h2.has(paragraph)) {
+      html.push(`<h2>${inline(paragraph)}</h2>`);
       continue;
     }
-    if (paragraph.startsWith("Formel:") || paragraph.startsWith("Eine präzise Formel lautet:") || paragraph.startsWith("Die zentrale Formel lautet:")) {
-      html.push(`<blockquote><p>${inline(paragraph)}</p></blockquote>`);
+    if (h3.has(paragraph)) {
+      html.push(`<h3>${inline(paragraph.replace(/^\d+\.\s+/, ""))}</h3>`);
       continue;
     }
-    if (paragraph === "Kompakte SDG+-Risikoübersicht:") {
-      html.push(`<h3>${inline(paragraph.replace(/:$/, ""))}</h3>`);
+    if (callouts.has(paragraph)) {
+      const text = paragraphs[i + 1] || "";
+      html.push(`<div class="callout"><p><strong>${inline(paragraph)}:</strong> ${inline(text)}</p></div>`);
+      i += 1;
       continue;
     }
     html.push(`<p>${inline(paragraph)}</p>`);
@@ -334,7 +388,7 @@ function articleHtml() {
   const sourceItems = [...sourceMap.entries()]
     .map(([id, ref]) => `              <li id="quelle-${id}"><a href="${esc(ref.url)}">${esc(ref.label)}</a></li>`)
     .join("\n");
-  const tags = ["Systemresilienz", "SDGs", "SDG+", "Risiko- und Resilienzregister", "Risikomanagement", "Nachhaltigkeitsmanagement", "Wirkungsökonomie"];
+  const tags = ["Systemresilienz", "Wirkungsresilienz", "Resilienz", "SDGs", "SDG+", "Risiko- und Resilienzregister", "Wirkungsrisiko", "Rückkopplung", "Wirkungsökonomie"];
   const body = `
     <main id="inhalt" data-pagefind-body>
       <article class="hero">
@@ -343,23 +397,24 @@ function articleHtml() {
           <p class="hero-kicker">Journal · ${esc(category)} · ${esc(dateLabel)} · ${esc(readingTime)}</p>
           <h1 class="hero-title">${esc(parts.docTitle || title)}</h1>
           <p class="hero-subtitle">${esc(parts.docSubtitle || subtitle)}</p>
-          <p class="meta">Von Natalie Weber - Wirkungsökonomie</p>
+          <p class="meta">${esc(parts.docDeck || deck)}</p>
+          <p class="meta">${esc(parts.author || "Von Natalie Weber - Begründerin der Wirkungsökonomie")}</p>
         </div>
         <figure class="hero-system-visual article-visual">
           <img src="../..${image}" width="1672" height="941" alt="${esc(imageAlt)}" decoding="async" fetchpriority="high">
-          <figcaption>Nachhaltigkeit bleibt der Anschlussbegriff. Systemresilienz wird der operative Steuerungsbegriff.</figcaption>
+          <figcaption>Nachhaltigkeit wird als langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie präzise und steuerbar.</figcaption>
         </figure>
       </article>
 
       <section class="article-page">
         <div class="article-body">
           <div class="callout">
-            <p><strong>Kernthese:</strong> Die SDGs sind wirkungsökonomisch nicht nur eine Nachhaltigkeitsagenda. Sie lassen sich als globales Risiko- und Resilienzregister lesen - ergänzt um SDG+ für Demokratie, Medien, Rechtsstaatlichkeit, digitale Verantwortung und öffentliche Rechenschaft.</p>
+            <p><strong>Kernthese:</strong> ${inline(parts.coreThesis)}</p>
           </div>
 
           <section class="term-summary-card">
             <p class="section-eyebrow">Abstract</p>
-            <p>${inline(parts.abstract)}</p>
+${parts.abstract.map((paragraph) => `            <p>${inline(paragraph)}</p>`).join("\n")}
           </section>
 
           ${bodyHtml(parts)}
@@ -385,7 +440,7 @@ function articleHtml() {
           <section class="term-summary-card">
             <p class="section-eyebrow">Quellenstand</p>
             <h2>Quellen und weiterführende WÖk-Kontexte</h2>
-            <p>Daten- und Quellenstand der redaktionellen Fassung: ${esc(dateLabel)}.</p>
+            <p>Quellenstand der inhaltlich aktualisierten Fassung: ${esc(modifiedDateLabel)}. Das ursprüngliche Veröffentlichungsdatum bleibt der ${esc(dateLabel)}.</p>
             <ol class="source-list">
 ${sourceItems}
             </ol>
@@ -400,9 +455,9 @@ ${sourceItems}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(title)} - Journal der Wirkungsökonomie</title>
-    <meta name="description" content="${esc(subtitle)}">
+    <meta name="description" content="${esc(subtitle)}. Nachhaltigkeit wird als langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie präzise und steuerbar.">
     <meta name="search_title" content="${esc(title)}">
-    <meta name="search_description" content="Die SDGs als globales Risiko- und Resilienzregister: Warum Systemresilienz der präzisere operative Begriff für Nachhaltigkeit, SDG+ und Wirkungssteuerung ist.">
+    <meta name="search_description" content="Nachhaltigkeit als langfristige Wirkungsresilienz: Die SDGs und SDG+ als globales Risiko- und Resilienzregister für Mensch, Planet und Demokratie.">
     <meta name="search_section" content="Journal">
     <meta name="search_type" content="Journalartikel">
     <link rel="canonical" href="https://wirkungsoekonomie.de/blog/${slug}/">
@@ -420,7 +475,7 @@ ${sourceItems}
     <meta name="twitter:image" content="https://wirkungsoekonomie.de${image}">
     <meta name="twitter:image:alt" content="${esc(imageAlt)}">
     <meta property="article:published_time" content="${date}T00:00:00+02:00">
-    <meta property="article:modified_time" content="${date}T00:00:00+02:00">
+    <meta property="article:modified_time" content="${modifiedDate}T00:00:00+02:00">
     <meta property="article:section" content="${esc(category)}">
     ${tags.map((tag) => `<meta property="article:tag" content="${esc(tag)}">`).join("\n    ")}
     <link rel="alternate" type="application/rss+xml" title="Journal der Wirkungsökonomie" href="https://wirkungsoekonomie.de/feeds/journal.xml">
@@ -430,12 +485,12 @@ ${sourceItems}
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: title,
-      description: subtitle,
+      description: `${subtitle}. Nachhaltigkeit wird als langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie präzise und steuerbar.`,
       url: `https://wirkungsoekonomie.de/blog/${slug}/`,
       image: `https://wirkungsoekonomie.de${image}`,
       inLanguage: "de",
       datePublished: `${date}T00:00:00+02:00`,
-      dateModified: `${date}T00:00:00+02:00`,
+      dateModified: `${modifiedDate}T00:00:00+02:00`,
       author: { "@type": "Person", name: "Natalie Weber" },
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: "https://wirkungsoekonomie.de" },
       articleSection: category,
@@ -459,7 +514,7 @@ function upsertJournalIndex() {
   const card = `          <article class="card">
             <p class="card-kicker">${esc(category)} · ${esc(dateLabel)}</p>
             <h3 class="card-title">${esc(title)}</h3>
-            <p class="card-text">Warum die SDGs als Risiko- und Resilienzregister gelesen werden können - und weshalb SDG+ dafür Demokratie, Medien, Recht und digitale Verantwortung sichtbar machen muss.</p>
+            <p class="card-text">Warum Nachhaltigkeit als langfristige Wirkungsresilienz von Mensch, Planet und Demokratie präziser und steuerbar wird.</p>
             <div class="portal-card-actions"><a class="text-link" href="../blog/${slug}/">Artikel lesen</a></div>
           </article>
 `;
@@ -467,8 +522,19 @@ function upsertJournalIndex() {
   fs.writeFileSync(journalIndexPath, next);
 }
 
+function upsertBlogIndex() {
+  const entries = JSON.parse(fs.readFileSync(blogIndexPath, "utf8"));
+  const entry = entries.find((item) => item.url === `/blog/${slug}/index.html`);
+  if (!entry) throw new Error(`Blog-Index-Eintrag für ${slug} nicht gefunden.`);
+  entry.title = title;
+  entry.readingTime = readingTime;
+  entry.excerpt = "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.";
+  entry.tags = ["Systemresilienz", "Wirkungsresilienz", "SDGs", "SDG+", "Risiko- und Resilienzregister", "Wirkungsrisiko", "Rückkopplung", "Wirkungsökonomie"];
+  fs.writeFileSync(blogIndexPath, `${JSON.stringify(entries, null, 2)}\n`);
+}
+
 fs.mkdirSync(path.dirname(articlePath), { recursive: true });
 fs.writeFileSync(articlePath, articleHtml());
-upsertTerms();
+upsertBlogIndex();
 upsertJournalIndex();
 console.log(`Published journal article: blog/${slug}/index.html`);
