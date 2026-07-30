@@ -138,6 +138,18 @@ function cleanEditorialLanguage(paragraph) {
   if (paragraph.startsWith("Armin-Maiwald-Erklärung:")) {
     return paragraph.replace(/^Armin-Maiwald-Erklärung:\s*/, "Anschaulich gesagt: ");
   }
+  if (paragraph === "Schluss: Der präzisere operative Begriff") {
+    return "Schluss: Nachhaltigkeit als langfristige Wirkungsresilienz";
+  }
+  if (paragraph.startsWith("Der Begriff Nachhaltigkeit sollte nicht gestrichen werden.")) {
+    return "Nachhaltigkeit ist weder durch Systemresilienz zu ersetzen noch ein Ergebnis, das nachträglich entsteht. Sie ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie: seine Fähigkeit, unter Belastung tragfähig zu bleiben, lebensnotwendige und demokratische Grundfunktionen zu erhalten oder wiederherzustellen, kritische Schwellen nicht zu überschreiten, zu lernen, sich bei untragbaren Strukturen zu transformieren und Schäden nicht zu verlagern.";
+  }
+  if (paragraph.startsWith("Die SDGs und SDG+ werden damit zu mehr als einer Nachhaltigkeitsagenda.")) {
+    return "Systemresilienz beschreibt dabei das dynamische Verhalten einer Architektur unter Belastung; Systemarchitektur beschreibt Regeln, Daten, Institutionen, Rückkopplungen und Strukturen. Wirkungsresilienz präzisiert diese Fähigkeit normativ auf Mensch, Planet und Demokratie. SDGs und SDG+ dienen als Referenz-, Risiko- und Rückkopplungsrahmen, mit dem positive Netto-Wirkung, Nichtkompensation und Nicht-Externalisierung prüfbar werden.";
+  }
+  if (paragraph.startsWith("Die zentrale Verschiebung lautet deshalb nicht:")) {
+    return "Die entscheidende Frage lautet deshalb immer: Resilienz wovon, gegenüber welcher Störung, für wen und zur Erhaltung welcher Funktionen? Puffer, stabilisierende, korrektive und regenerative Rückkopplungen, Wiederherstellung, Lernen und Transformation sind keine Ergänzung zur Nachhaltigkeit, sondern ihre konkrete Wirkungsresilienz.";
+  }
   return paragraph
     .replaceAll("Armin-Maiwaldisiert", "anschaulich erklärt")
     .replaceAll("armin-maiwaldisiert", "anschaulich erklärt");
@@ -192,7 +204,7 @@ function bodyHtml(parts) {
     "Wie Systemresilienz praktisch sichtbar wird",
     "Konsequenzen für Unternehmen und Management",
     "Ein operationales Resilienzraster",
-    "Schluss: Der präzisere operative Begriff",
+    "Schluss: Nachhaltigkeit als langfristige Wirkungsresilienz",
   ]);
   const h3 = new Set([
     "1. Latitude: Wie groß ist der tragfähige Spielraum?",
