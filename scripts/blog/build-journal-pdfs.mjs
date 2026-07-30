@@ -48,7 +48,9 @@ function pdfRelativePath(url) {
 }
 
 function sourcePathForUrl(url) {
-  return path.join(root, normalizeJournalUrl(url).replace(/^\//, ""));
+  const normalized = normalizeJournalUrl(url);
+  const source = normalized.replace(/^\//, "");
+  return path.join(root, source, normalized.endsWith("/") ? "index.html" : "");
 }
 
 function readManifest() {
@@ -294,6 +296,8 @@ for (const entry of entries) {
   const sourceHash = pdfSourceHash(entry, sourceHtml);
   const relativePdfPath = pdfRelativePath(entry.url);
   const outputPath = path.join(root, relativePdfPath);
+  const legacyIndexUrl = normalizeJournalUrl(entry.url).replace(/\/$/, "/index.html");
+  if (legacyIndexUrl !== entry.url) delete nextEntries[legacyIndexUrl];
   const previous = nextEntries[entry.url];
 
   if (!force && previous?.generatorVersion === generatorVersion && previous?.sourceHash === sourceHash && previous?.pdfPath === `/${relativePdfPath}` && fs.existsSync(outputPath)) {

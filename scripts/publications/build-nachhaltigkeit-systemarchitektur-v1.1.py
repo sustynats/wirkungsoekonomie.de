@@ -32,11 +32,35 @@ def inline(value: str) -> str:
 def blocks(markdown: str):
     lines = markdown.replace("\r\n", "\n").split("\n")
     current: list[str] = []
-    for line in lines + [""]:
+    index = 0
+    while index < len(lines):
+        line = lines[index]
+        if line.strip() == "---":
+            if current:
+                yield ("paragraph", " ".join(current).strip())
+                current = []
+            index += 1
+            continue
+        if line.strip().startswith("|"):
+            if current:
+                yield ("paragraph", " ".join(current).strip())
+                current = []
+            table_lines = []
+            while index < len(lines) and lines[index].strip().startswith("|"):
+                table_lines.append(lines[index].strip())
+                index += 1
+            if len(table_lines) >= 2 and re.match(r"^\|?\s*:?-{3,}", table_lines[1]):
+                def cells(value: str) -> list[str]:
+                    return [cell.strip() for cell in value.strip().strip("|").split("|")]
+                yield ("table", (cells(table_lines[0]), [cells(row) for row in table_lines[2:]]))
+            else:
+                yield ("paragraph", " ".join(table_lines))
+            continue
         if not line.strip():
             if current:
                 yield ("paragraph", " ".join(current).strip())
                 current = []
+            index += 1
             continue
         heading = re.match(r"^(#{1,4})\s+(.+)$", line)
         if heading:
@@ -44,20 +68,26 @@ def blocks(markdown: str):
                 yield ("paragraph", " ".join(current).strip())
                 current = []
             yield (f"h{len(heading.group(1))}", heading.group(2).strip())
+            index += 1
             continue
         if line.startswith("> "):
             if current:
                 yield ("paragraph", " ".join(current).strip())
                 current = []
             yield ("quote", line[2:].strip())
+            index += 1
             continue
         if re.match(r"^[-*]\s+", line):
             if current:
                 yield ("paragraph", " ".join(current).strip())
                 current = []
             yield ("li", re.sub(r"^[-*]\s+", "", line).strip())
+            index += 1
             continue
         current.append(line.strip())
+        index += 1
+    if current:
+        yield ("paragraph", " ".join(current).strip())
 
 
 def slug(value: str) -> str:
@@ -80,6 +110,14 @@ def build_html(items) -> str:
             output.append(f"<blockquote><p>{inline(value)}</p></blockquote>")
         elif kind == "li":
             output.append(f"<ul><li>{inline(value)}</li></ul>")
+        elif kind == "table":
+            headers, rows = value
+            head = "".join(f"<th scope=\"col\">{inline(cell)}</th>" for cell in headers)
+            body = "".join(
+                "<tr>" + "".join(f"<td>{inline(cell)}</td>" for cell in row) + "</tr>"
+                for row in rows
+            )
+            output.append(f'<div class="table-scroll"><table class="data-table"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>')
         else:
             output.append(f"<p>{inline(value)}</p>")
     return "\n".join(output) + "\n"
@@ -87,7 +125,7 @@ def build_html(items) -> str:
 
 def build_pdf(items) -> None:
     body = build_html(items)
-    document = f'''<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title><style>@page {{ size: A4; margin: 18mm; }} body {{ color:#20242a; font-family:Arial,sans-serif; font-size:10pt; line-height:1.45; }} h2 {{ color:#081126; font-family:Georgia,serif; font-size:21pt; line-height:1.15; margin:17pt 0 8pt; }} h3 {{ color:#1f6b4f; font-size:14pt; margin:15pt 0 6pt; }} h4 {{ color:#081126; font-size:11pt; margin:11pt 0 4pt; }} p {{ margin:0 0 7pt; }} blockquote {{ background:#f3f6ef; border-left:3px solid #b6903d; color:#1f6b4f; font-weight:bold; margin:9pt 8mm; padding:7pt; }} ul {{ margin:0 0 6pt 14pt; }}</style></head><body><p><strong>{html.escape(EDITION)}</strong></p>{body}</body></html>'''
+    document = f'''<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title><style>@page {{ size: A4; margin: 18mm; }} body {{ color:#20242a; font-family:Arial,sans-serif; font-size:10pt; line-height:1.45; }} h2 {{ color:#081126; font-family:Georgia,serif; font-size:21pt; line-height:1.15; margin:17pt 0 8pt; }} h3 {{ color:#1f6b4f; font-size:14pt; margin:15pt 0 6pt; }} h4 {{ color:#081126; font-size:11pt; margin:11pt 0 4pt; }} p {{ margin:0 0 7pt; }} blockquote {{ background:#f3f6ef; border-left:3px solid #b6903d; color:#1f6b4f; font-weight:bold; margin:9pt 8mm; padding:7pt; }} ul {{ margin:0 0 6pt 14pt; }} table {{ width:100%; border-collapse:collapse; font-size:8.2pt; margin:8pt 0; }} th {{ background:#081126; color:#fff; text-align:left; }} th, td {{ border:0.5pt solid #b8c0c8; padding:4pt; vertical-align:top; }} tr:nth-child(even) {{ background:#f3f6ef; }}</style></head><body><p><strong>{html.escape(EDITION)}</strong></p>{body}</body></html>'''
     soffice = Path("/Applications/LibreOffice.app/Contents/MacOS/soffice")
     if not soffice.exists():
         raise RuntimeError("LibreOffice ist für den PDF-Export nicht verfügbar.")

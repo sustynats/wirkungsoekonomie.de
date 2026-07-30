@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Stabilitätslandschaft der Wirkungsresilienz</title>
+  <desc id="description">Stabilitätslandschaft mit einem schädlichen Lock-in und einem MPD-tragfähigen Attraktionsraum. Rückstellkräfte führen innerhalb einer Mulde zum stabilen Zustand zurück; eine kritische Schwelle trennt beide Zustandsräume. Panarchy, Anpassung und Transformation können die Landschaft verändern.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e8efe9"/>
+      <stop offset="1" stop-color="#f7f3e9"/>
+    </linearGradient>
+    <linearGradient id="harmful" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9c6b4"/>
+      <stop offset="1" stop-color="#f7f3e9"/>
+    </linearGradient>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f6b4f"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b6903d"/>
+    </marker>
+    <marker id="arrow-navy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#081126"/>
+    </marker>
+    <style>
+      .axis { stroke: #50606d; stroke-width: 2; }
+      .land { fill: url(#ground); stroke: #1f6b4f; stroke-width: 4; }
+      .lock { fill: url(#harmful); stroke: #8a5337; stroke-width: 4; }
+      .label { fill: #081126; font: 600 20px Arial, sans-serif; }
+      .small { fill: #34404f; font: 17px Arial, sans-serif; }
+      .tiny { fill: #34404f; font: 15px Arial, sans-serif; }
+      .pill { fill: #fff; stroke: #b6903d; stroke-width: 2; }
+      .dash { fill: none; stroke: #b6903d; stroke-width: 3; stroke-dasharray: 9 8; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#fbfaf6" rx="22"/>
+  <text x="72" y="64" class="label">Stabilitätslandschaft: Wirkungsresilienz statt bloßer Stabilität</text>
+  <text x="72" y="92" class="small">Eine erklärende Systemanalogie: Rückstellung und Dämpfung wirken innerhalb eines Zustandsraums; Anpassung und Transformation verändern ihn.</text>
+
+  <line x1="95" y1="640" x2="1110" y2="640" class="axis" marker-end="url(#arrow-navy)"/>
+  <line x1="95" y1="640" x2="95" y2="148" class="axis" marker-end="url(#arrow-navy)"/>
+  <text x="520" y="697" class="small">Systemzustand / Wirkungspfad</text>
+  <text x="-505" y="42" transform="rotate(-90)" class="small">Systempotenzial / Stabilitätsbarriere</text>
+
+  <path class="lock" d="M 130 295 C 220 250, 280 260, 345 347 C 410 435, 455 506, 535 450 C 585 415, 605 322, 652 268 L 652 640 L 130 640 Z"/>
+  <path class="land" d="M 652 268 C 740 160, 810 185, 885 352 C 950 500, 1005 438, 1100 218 L 1100 640 L 652 640 Z"/>
+
+  <path class="dash" d="M 670 225 C 760 115, 900 140, 1080 185"/>
+  <text x="770" y="138" class="tiny">veränderte Landschaft durch Regeln, Preise,</text>
+  <text x="770" y="158" class="tiny">Infrastruktur und Wirkungslenkung</text>
+
+  <circle cx="405" cy="492" r="18" fill="#8a5337" stroke="#081126" stroke-width="3"/>
+  <text x="360" y="532" class="small">schädlicher Lock-in</text>
+  <text x="382" y="556" class="tiny">fossil / autoritär</text>
+
+  <circle cx="885" cy="440" r="20" fill="#1f6b4f" stroke="#081126" stroke-width="3"/>
+  <text x="905" y="433" class="label">G</text>
+  <text x="915" y="462" class="small">MPD-tragfähiger Attraktor</text>
+
+  <line x1="770" y1="495" x2="857" y2="449" stroke="#1f6b4f" stroke-width="4" marker-end="url(#arrow-green)"/>
+  <line x1="990" y1="495" x2="915" y2="451" stroke="#1f6b4f" stroke-width="4" marker-end="url(#arrow-green)"/>
+  <text x="745" y="530" class="tiny">Rückstellkräfte</text>
+  <text x="765" y="554" class="tiny">stabilisierend · korrektiv · regenerativ</text>
+
+  <path d="M 865 385 q 22 -26 44 0 q 22 26 44 0" fill="none" stroke="#b6903d" stroke-width="4"/>
+  <text x="872" y="355" class="tiny">Dämpfung: Puffer, Reserven, Redundanz</text>
+
+  <line x1="652" y1="268" x2="652" y2="640" stroke="#b6903d" stroke-width="3" stroke-dasharray="8 7"/>
+  <circle cx="652" cy="268" r="9" fill="#b6903d"/>
+  <text x="670" y="260" class="label">K</text>
+  <text x="670" y="287" class="tiny">kritische Schwelle</text>
+
+  <path d="M 430 405 C 530 180, 735 170, 838 370" fill="none" stroke="#b6903d" stroke-width="5" stroke-dasharray="12 10" marker-end="url(#arrow-gold)"/>
+  <rect x="452" y="158" width="360" height="62" rx="14" class="pill"/>
+  <text x="472" y="187" class="small">Transformation: schädlichen Attraktor verlassen</text>
+  <text x="472" y="210" class="tiny">und einen MPD-tragfähigen Wirkungsraum aufbauen</text>
+
+  <path d="M 110 160 C 225 132, 375 148, 465 255" fill="none" stroke="#081126" stroke-width="3" marker-end="url(#arrow-navy)"/>
+  <text x="122" y="122" class="small">Panarchy: andere Ebenen verändern</text>
+  <text x="122" y="144" class="tiny">Kugel, Mulde, Barriere und Schwelle</text>
+
+  <path d="M 1080 198 C 1018 205, 965 214, 928 236" fill="none" stroke="#1f6b4f" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <text x="930" y="184" class="small">Anpassung</text>
+  <text x="930" y="206" class="tiny">Regeln und Rückkopplungen ändern</text>
+
+  <text x="185" y="609" class="tiny">Tiefe Mulde ≠ wünschenswert</text>
+  <text x="744" y="609" class="tiny">Nachhaltigkeit: langfristige Wirkungsresilienz</text>
+</svg>

@@ -6,8 +6,8 @@ Suche, Glossar und Querverlinkung wurden verbessert, ohne bestehende Inhalte umz
 
 ## Bestehende Struktur
 
-- `src/data/glossary.terms.yml` bleibt die führende Quelle der Glossarbegriffe.
-- `scripts/glossary/build-glossary-registry.mjs` erzeugt Glossar-Registry, Hoverdaten und jetzt zusätzlich ein strukturiertes Glossar-Modell.
+- `assets/data/term-registry.json` ist die führende Quelle der öffentlichen Glossarbegriffe; `src/data/glossary.terms.yml` hält den kompatiblen Datenstand für ältere Datenflüsse vor.
+- `scripts/glossary/build-glossary-registry.mjs` erzeugt daraus Registry, Hover-/Aliasdaten und das strukturierte Glossar-Modell.
 - `scripts/glossary/build-glossary-pages.mjs` erzeugt die Begriff-Detailseiten unter `begriffe/`.
 - `suche.html`, `assets/js/search.js` und `assets/css/search.css` bilden die bestehende Suche mit Index, Wörterbuch, Kuratierung und Filtern.
 

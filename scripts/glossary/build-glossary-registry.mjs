@@ -11,6 +11,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/formalisierte-leistungsbegriffe.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
+const modelOut = path.join(root, "assets/data/glossary-model.json");
 const historyOut = path.join(root, "public/data/glossary-version-history.json");
 const hoverOut = path.join(root, "assets/js/glossaryTerms.js");
 
@@ -238,6 +239,55 @@ const terms = dedupeCanonicalLabels(rawTerms.map(normalizeTerm))
 
 fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, `${JSON.stringify({ generatedAt: new Date().toISOString(), terms }, null, 2)}\n`);
+
+// The structured model feeds the search and cross-link layer. Keep the
+// established association metadata while the term registry remains the single
+// source for names, definitions, aliases and versioning.
+const previousModelTerms = new Map(
+  (fs.existsSync(modelOut) ? JSON.parse(fs.readFileSync(modelOut, "utf8")).terms || [] : [])
+    .map((term) => [term.id, term])
+);
+const associationKeys = [
+  "relatedMethods",
+  "relatedImpactFields",
+  "relatedDemos",
+  "relatedDocuments",
+  "relatedObjections",
+];
+const glossaryModel = {
+  generatedAt: new Date().toISOString(),
+  schema: {
+    term: "canonicalLabel",
+    shortDefinition: "shortDefinition",
+    longDefinition: "longDefinition",
+    synonyms: "synonyms",
+    relatedTerms: "relatedTerms",
+    relatedMethods: "relatedMethods",
+    relatedImpactFields: "relatedImpactFields",
+  },
+  terms: terms.map((term) => {
+    const previous = previousModelTerms.get(term.termId) || {};
+    const associations = Object.fromEntries(associationKeys.map((key) => [
+      key,
+      Array.isArray(term[key]) ? term[key] : (previous[key] || []),
+    ]));
+    return {
+      id: term.termId,
+      term: term.canonicalLabel,
+      slug: term.slug,
+      shortDefinition: term.shortDefinition,
+      longDefinition: term.longDefinition,
+      synonyms: term.synonyms || [],
+      relatedTerms: term.relatedTerms || [],
+      ...associations,
+      category: term.category,
+      status: term.status,
+      version: term.version,
+    };
+  }),
+};
+fs.mkdirSync(path.dirname(modelOut), { recursive: true });
+fs.writeFileSync(modelOut, `${JSON.stringify(glossaryModel, null, 2)}\n`);
 
 const hoverTerms = terms
   .filter((term) => term.classicGlossary !== false)

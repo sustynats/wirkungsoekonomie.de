@@ -15,6 +15,36 @@ const entryOverrides = new Map([
     ],
     relatedTerms: ["Nachhaltigkeit", "Resilienz", "Systemresilienz", "Wirkungsresilienz", "positive Netto-Wirkung"]
   }],
+  ["/blog/systemresilienz-statt-nachhaltigkeit/index.html", {
+    title: "Nachhaltigkeit ist Systemresilienz",
+    url: "/blog/systemresilienz-statt-nachhaltigkeit/",
+    readingTime: "30 Min.",
+    category: "SDG+ & Systemresilienz",
+    excerpt: "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie: Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung und Transformation.",
+    tags: [
+      "Systemresilienz",
+      "Wirkungsresilienz",
+      "Resilienz",
+      "Stabilitätslandschaft",
+      "Latitude",
+      "Resistance",
+      "Precariousness",
+      "Panarchy",
+      "SDGs",
+      "SDG+",
+      "Risiko- und Resilienzregister",
+      "Wirkungsrisiko",
+      "Rückkopplung",
+      "Wirkungsökonomie"
+    ],
+    relatedPages: [
+      "/begriffe/resilienz/",
+      "/begriffe/systemresilienz/",
+      "/begriffe/wirkungsresilienz/",
+      "/begriffe/stabilitaetslandschaft/"
+    ],
+    relatedTerms: ["Resilienz", "Systemresilienz", "Wirkungsresilienz", "Stabilitätslandschaft", "Wirkungsrisiko"]
+  }],
   ["/blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html", {
     excerpt: "Journal-Beitrag zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Labels, Zertifikate, Scores, Faktenchecks und Berichte machen Wirkung sichtbar, aber erst Rückkopplung in Preise, Regeln, Kapital, Beschaffung und Öffentlichkeit macht daraus reale Steuerung.",
     tags: [
@@ -174,12 +204,12 @@ function entryFromHtml(file, existing) {
   const override = entryOverrides.get(url) || {};
 
   return {
-    title,
-    url,
+    title: override.title || title,
+    url: override.url || url,
     date: toDateOnly(published),
     publishedAt: published,
-    category,
-    readingTime,
+    category: override.category || category,
+    readingTime: override.readingTime || readingTime,
     excerpt: override.excerpt || excerpt,
     tags: override.tags || tags,
     type: normalizeType(previous.type),

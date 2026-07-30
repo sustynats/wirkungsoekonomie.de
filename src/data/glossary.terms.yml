@@ -1809,25 +1809,25 @@ terms:
     canonicalLabel: "Wirkungsresilienz"
     slug: "wirkungsresilienz"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Führende Mini-Definitionen"
-    shortDefinition: "Wirkungsresilienz ist die Fähigkeit eines Systems, unter Stress handlungsfähig zu bleiben und positive Netto-Wirkung zu sichern."
-    hoverDefinition: "Wirkungsresilienz heißt: Ein System bleibt unter Stress lernfähig und stärkt Mensch, Planet und Demokratie."
-    longDefinition: "Wirkungsresilienz ist normativ gebunden. Auch destruktive Systeme können robust sein; im WÖk-Sinn ist Resilienz nur positiv, wenn sie Mensch, Planet und Demokratie stärkt."
-    usageNote: "Präzisiert allgemeine Resilienz wirkungsökonomisch; nicht wertneutral verherrlichen."
-    doNotConfuseWith: ["Robustheit", "bloße Anpassungsfähigkeit"]
+    version: "1.2"
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.2-resilienzsystematik.md"
+    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.2-resilienzsystematik.md"
+    sourceSection: "Resilienzsystematik"
+    shortDefinition: "Wirkungsresilienz bezeichnet in der Wirkungsökonomie die lernfähige und normativ gebundene Resilienz des gekoppelten Systems Mensch–Planet–Demokratie."
+    hoverDefinition: "Wirkungsresilienz verbindet erwünschte Systemresilienz mit Lernen, Anpassung, Transformation und Nicht-Externalisierung."
+    longDefinition: "Sie umfasst die Fähigkeit, negative Wirkungen und Störungen früh zu erkennen, Funktionen zu schützen oder wiederherzustellen, Puffer und Regeneration aufzubauen, aus Rückkopplungen zu lernen, sich anzupassen und bei untragbaren Strukturen zu transformieren – ohne Schäden räumlich, sozial oder zeitlich zu externalisieren. Sie fragt: Resilienz wovon, gegenüber was, für wen und welche Funktionen?"
+    usageNote: "Präzisiert allgemeine, zunächst wertneutrale Resilienz im MPD-Referenzrahmen; Regimeresilienz und schädliche Lock-ins nicht als Nachhaltigkeit darstellen."
+    doNotConfuseWith: ["Robustheit", "bloße Anpassungsfähigkeit", "Regimeresilienz"]
     synonyms: ["Resilienz im WÖk-Sinn"]
-    relatedTerms: ["resilienz", "nachhaltigkeit", "positive-netto-wirkung", "wirkungsrueckkopplung"]
+    relatedTerms: ["resilienz", "systemresilienz", "nachhaltigkeit", "positive-netto-wirkung", "wirkungsrueckkopplung", "rueckstellfaehigkeit", "daempfungsfaehigkeit", "anpassungsfaehigkeit", "transformationsfaehigkeit"]
     relatedDocuments: []
     examples: []
-    preferredUsage: "Resilienz normativ an Mensch, Planet und Demokratie binden."
+    preferredUsage: "Resilienz im MPD-Referenzrahmen sowie Rückstell-, Dämpfungs-, Anpassungs- und Transformationsfähigkeit benennen."
     deprecatedUsage: ["Resilienz als bloße Robustheit"]
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungsresilienz"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-07-30"
   - termId: wirkungsrisiko
     canonicalLabel: "Wirkungsrisiko"
     slug: "wirkungsrisiko"

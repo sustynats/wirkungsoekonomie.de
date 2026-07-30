@@ -174,7 +174,7 @@ const LEADING_REFERENCE_PATHS = new Set([
   "glossar.html",
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf"
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf"
 ]);
 
 const LEADING_REFERENCE_PATTERNS = [
@@ -214,16 +214,22 @@ const LEADING_OVERRIDES = new Map([
     shortDescription: "Öffentliche Begriffskarte für zentrale WÖk-Begriffe und Abkürzungen."
   }],
   ["bibliothek/woek-begriffsleitfaden-fuehrend/index.html", {
-    title: "WÖk-Begriffsleitfaden führend v1.0",
+    title: "WÖk-Begriffsleitfaden führend v1.2",
     type: "Glossar",
     status: "führend",
-    shortDescription: "Maßgebliche Sprachreferenz für Wirkung, Wirkungspotenzial, positive Netto-Wirkung, SDG+, Rückkopplung und konsistente WÖk-Sprache."
+    shortDescription: "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristige Wirkungsresilienz, die Acht-Punkte-Systematik der Stabilitätslandschaft und konsistente WÖk-Sprache."
+  }],
+  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf", {
+    title: "WÖk-Begriffsleitfaden führend v1.2",
+    type: "Glossar",
+    status: "führend",
+    shortDescription: "PDF-Fassung der maßgeblichen Sprachreferenz für Nachhaltigkeit als langfristige Wirkungsresilienz und die Acht-Punkte-Systematik der Stabilitätslandschaft."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.0",
     type: "Glossar",
-    status: "führend",
-    shortDescription: "PDF-Fassung der maßgeblichen Sprachreferenz für Wirkung, Wirkungspotenzial, positive Netto-Wirkung, SDG+, Rückkopplung und konsistente WÖk-Sprache."
+    status: "archiviert",
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.2."
   }],
   ["verstehen/sdgs-sdgplus/index.html", {
     title: "SDGs & SDG+",

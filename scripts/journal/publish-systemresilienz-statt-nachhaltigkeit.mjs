@@ -12,7 +12,7 @@ const date = "2026-06-09";
 const dateLabel = "9. Juni 2026";
 const modifiedDate = "2026-07-30";
 const modifiedDateLabel = "30. Juli 2026";
-const readingTime = "24 Min.";
+const readingTime = "30 Min.";
 const category = "SDG+ & Systemresilienz";
 const image = "/assets/img/blog/2026-05-23-was-ist-nachhaltigkeit-wirklich.png";
 const imageAlt = "Illustration zu Nachhaltigkeit, Systemresilienz, SDGs und Wirkung.";
@@ -179,12 +179,44 @@ function inline(value) {
 function tableHtml(headers, rows) {
   return `<div class="table-wrap">
             <table class="data-table">
-              <thead><tr>${headers.map((header) => `<th>${esc(header)}</th>`).join("")}</tr></thead>
+              <thead><tr>${headers.map((header) => `<th scope="col">${esc(header)}</th>`).join("")}</tr></thead>
               <tbody>
 ${rows.map((row) => `                <tr>${row.map((cell) => `<td>${inline(cell)}</td>`).join("")}</tr>`).join("\n")}
               </tbody>
             </table>
-          </div>`;
+  </div>`;
+}
+
+function resilienceSystematicsHtml() {
+  const headers = ["Begriff", "Im Kugel-/Landschaftsmodell", "In einem realen System", "Fachliche Einordnung"];
+  const rows = [
+    ["Latitude", "Breite des Attraktionsraums bis zur kritischen Schwelle", "Wie weit ein Zustand verändert werden kann, bevor Regimewechsel oder Kipppunkt erreicht werden", "Eine der vier Stabilitätslandschafts-Dimensionen bei Walker et al. (2004)"],
+    ["Resistance", "Topologie, Tiefe, Steilheit und Barriere des Beckens; Aufwand, die Kugel vom Attraktor weg oder über die Schwelle zu bewegen", "Widerstand gegen Zustandsveränderung oder Regimewechsel", "Eine der vier Walker-Dimensionen; nicht mit Rückstellfähigkeit gleichsetzen"],
+    ["Precariousness", "Aktuelle Position und Bewegungsrichtung der Kugel relativ zur Schwelle", "Nähe und Trajektorie relativ zu einer kritischen Schwelle", "Eine der vier Stabilitätslandschafts-Dimensionen bei Walker et al. (2004)"],
+    ["Panarchy", "Einflüsse anderer Ebenen, die Kugel, Mulde, Barriere oder Schwelle verändern", "Einflüsse räumlich, zeitlich oder institutionell über- und untergeordneter Systeme", "Eine der vier Stabilitätslandschafts-Dimensionen bei Walker et al. (2004)"],
+    ["Rückstellfähigkeit", "Richtung und Stärke der Bewegung zurück zum Attraktor, nachdem die äußere Störung wegfällt", "Stabilisierende, korrektive und regenerative Rückkopplungen stellen Funktionen wieder her", "Dynamische Ergänzung der WÖk-Erklärung; kein eigener Walker-Punkt"],
+    ["Dämpfungsfähigkeit", "Reibung beziehungsweise Dissipation, durch die Schwingungen abklingen", "Puffer, Reserven, Redundanzen und Institutionen begrenzen Überschwingen, Kaskaden und Sekundärschäden", "Dynamische Ergänzung der WÖk-Erklärung; keine ursprüngliche Walker-Dimension"],
+    ["Anpassungsfähigkeit", "Aktive Veränderung von Lage, Regeln oder Landschaft ohne zwingend neuen Systemtyp", "Verhalten, Regeln, Infrastruktur, Informationsflüsse und Rückkopplungen verändern", "Adaptability bei Walker et al. (2004), verwandte eigenständige Fähigkeit"],
+    ["Transformationsfähigkeit", "Übergang in oder Schaffung einer neuen Mulde beziehungsweise eines neuen Attraktionsraums", "Aufbau eines grundsätzlich anderen, tragfähigen Systems", "Transformability bei Walker et al. (2004), verwandte eigenständige Fähigkeit"],
+  ];
+  return `<section class="article-systematics" aria-labelledby="resilienzsystematik">
+            <h2 id="resilienzsystematik">Die genaue Zuordnung der Resilienzbegriffe</h2>
+            <p><strong>Nachhaltigkeit ist Systemresilienz.</strong> Genauer: Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie. Sie verbindet die Resilienz eines tragfähigen Zustandsraums mit Anpassungs-, Lern- und Transformationsfähigkeit.</p>
+            ${tableHtml(headers, rows)}
+            <p>Die vier Walker-Dimensionen beschreiben die Stabilitätslandschaft; sie sind keine additive Punkteliste. Rückstellfähigkeit ist nicht dasselbe wie Resistance: Resistance beschreibt, wie schwer ein Systemzustand verändert oder eine Schwelle überwunden wird. Rückstellfähigkeit beschreibt, was geschieht, nachdem die äußere Kraft wegfällt.</p>
+            <p>Dämpfung ist nicht dasselbe wie Rückstellung. Rückstellung gibt die Richtung zurück zum Attraktor vor; Dämpfung begrenzt Schwingungen, Überschwingen und Folgekaskaden. Latitude ist nicht einfach die Höhe des Randes, sondern primär die Breite des Zustandsraums bis zur Schwelle. Die Barriere ergibt sich aus der Landschaftstopologie und gehört vor allem zur Resistance.</p>
+            <p>Precariousness ist nicht nur statischer Abstand: Auch die gegenwärtige Trajektorie und Bewegungsrichtung zählen. Panarchy meint keine beliebigen äußeren Faktoren, sondern skalenübergreifende Dynamiken, die Zustandsraum, Schwellen, Barrieren und Rückkopplungen verändern. Adaptability und Transformability sind bei Walker et al. keine der vier Landschaftsdimensionen; die Wirkungsökonomie integriert sie bewusst im weiter gefassten Begriff der Wirkungsresilienz.</p>
+            <h3>Rückstellfähigkeit ist nicht Resistance</h3>
+            <p>Eine Kugel kehrt nach einer Störung nicht deshalb in ihre Mulde zurück, weil diese lediglich einen hohen Rand besitzt. Sie kehrt zurück, weil die Steigung im Inneren eine Rückstellkraft erzeugt. Der Rand bestimmt, wann eine kritische Schwelle überschritten wird; die innere Landschaft bestimmt, was nach dem Loslassen geschieht. Auf reale Systeme übertragen braucht ein zukunftsfähiges System deshalb nicht nur Belastungsgrenzen, sondern stabilisierende, korrektive und regenerative Rückkopplungen.</p>
+            <h3>Warum Dämpfung zusätzlich nötig ist</h3>
+            <p>Ein Rückstellmechanismus allein verhindert nicht, dass ein System nach einem Impuls lange überschwingt oder Sekundärschäden auslöst. Dämpfung entsteht durch Puffer, Reserven, Redundanz, Zeitreserven, soziale Sicherung und belastbare Institutionen. Sie begrenzt Kaskaden und verschafft Raum für Wiederherstellung, Lernen und Korrektur.</p>
+            <h3>Resilienz eines Zustandsraums und Transformation aus einem schädlichen Attraktor</h3>
+            <p>Nicht jede tiefe Mulde ist wünschenswert. Ein fossiler Lock-in, ein autoritärer Machtapparat oder ein ökologisch zerstörerischer Zustand kann hohe Resilienz besitzen. Nachhaltigkeit verlangt deshalb die Resilienz eines MPD-tragfähigen Zustandsraums und zugleich die Fähigkeit, schädliche Attraktoren zu verlassen. Wirkungsresilienz integriert genau diese drei Ebenen: Resilienz im erwünschten Zustandsraum, Anpassung und Lernen innerhalb dieses Raums sowie Transformation, wenn der bisherige Attraktor nicht zukunftsfähig ist.</p>
+            <figure class="article-visual systematics-visual">
+              <img src="../../assets/img/diagrams/stabilitaetslandschaft-wirkungsresilienz.svg" width="1200" height="760" alt="Stabilitätslandschaft mit einem schädlichen Lock-in und einem MPD-tragfähigen Attraktionsraum. Rückstellkräfte führen innerhalb einer Mulde zum stabilen Zustand zurück; eine kritische Schwelle trennt beide Zustandsräume. Panarchy, Anpassung und Transformation können die Landschaft verändern." loading="lazy">
+              <figcaption>Die Stabilitätslandschaft ist eine erklärende Analogie, keine additive Acht-Punkte-Rechenformel.</figcaption>
+            </figure>
+          </section>`;
 }
 
 function bodyHtml(parts) {
@@ -252,6 +284,11 @@ function bodyHtml(parts) {
       if (intro) html.push(`<p>${inline(intro)}</p>`);
       html.push(`<ol>${questions.map((question) => `<li>${inline(question)}</li>`).join("")}</ol>`);
       i = questionIndex - 1;
+      continue;
+    }
+    if (paragraph === "Die wirkungsökonomische Herleitung: Warum Nachhaltigkeit Systemresilienz ist") {
+      html.push(resilienceSystematicsHtml());
+      html.push(`<h2>${inline(paragraph)}</h2>`);
       continue;
     }
     if (h2.has(paragraph)) {
@@ -400,7 +437,7 @@ function articleHtml() {
   const sourceItems = [...sourceMap.entries()]
     .map(([id, ref]) => `              <li id="quelle-${id}"><a href="${esc(ref.url)}">${esc(ref.label)}</a></li>`)
     .join("\n");
-  const tags = ["Systemresilienz", "Wirkungsresilienz", "Resilienz", "SDGs", "SDG+", "Risiko- und Resilienzregister", "Wirkungsrisiko", "Rückkopplung", "Wirkungsökonomie"];
+  const tags = ["Systemresilienz", "Wirkungsresilienz", "Resilienz", "Stabilitätslandschaft", "Latitude", "Resistance", "Precariousness", "Panarchy", "SDGs", "SDG+", "Risiko- und Resilienzregister", "Wirkungsrisiko", "Rückkopplung", "Wirkungsökonomie"];
   const body = `
     <main id="inhalt" data-pagefind-body>
       <article class="hero">
@@ -428,6 +465,10 @@ function articleHtml() {
             <p class="section-eyebrow">Abstract</p>
 ${parts.abstract.map((paragraph) => `            <p>${inline(paragraph)}</p>`).join("\n")}
           </section>
+
+          <div class="callout" role="note">
+            <p><strong>Aktualisierung, ${esc(modifiedDateLabel)}:</strong> Präzisierung um Stabilitätslandschaft, Rückstell- und Dämpfungsfähigkeit sowie korrekte Abgrenzung von Adaptability und Transformability. Das ursprüngliche Veröffentlichungsdatum ${esc(dateLabel)} bleibt bestehen.</p>
+          </div>
 
           ${bodyHtml(parts)}
 
@@ -467,9 +508,9 @@ ${sourceItems}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(title)} - Journal der Wirkungsökonomie</title>
-    <meta name="description" content="${esc(subtitle)}. Nachhaltigkeit wird als langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie präzise und steuerbar.">
+    <meta name="description" content="${esc(subtitle)}. Nachhaltigkeit als langfristige Wirkungsresilienz mit Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung und Transformation.">
     <meta name="search_title" content="${esc(title)}">
-    <meta name="search_description" content="Nachhaltigkeit als langfristige Wirkungsresilienz: Die SDGs und SDG+ als globales Risiko- und Resilienzregister für Mensch, Planet und Demokratie.">
+    <meta name="search_description" content="Nachhaltigkeit als langfristige Wirkungsresilienz: Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung und Transformation im MPD-Referenzrahmen.">
     <meta name="search_section" content="Journal">
     <meta name="search_type" content="Journalartikel">
     <link rel="canonical" href="https://wirkungsoekonomie.de/blog/${slug}/">
@@ -477,13 +518,13 @@ ${sourceItems}
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
     <meta property="og:title" content="${esc(title)}">
-    <meta property="og:description" content="${esc(subtitle)}">
+    <meta property="og:description" content="Nachhaltigkeit als langfristige Wirkungsresilienz mit Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung und Transformation.">
     <meta property="og:url" content="https://wirkungsoekonomie.de/blog/${slug}/">
     <meta property="og:image" content="https://wirkungsoekonomie.de${image}">
     <meta property="og:image:alt" content="${esc(imageAlt)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${esc(title)}">
-    <meta name="twitter:description" content="${esc(subtitle)}">
+    <meta name="twitter:description" content="Nachhaltigkeit als langfristige Wirkungsresilienz mit Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung und Transformation.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de${image}">
     <meta name="twitter:image:alt" content="${esc(imageAlt)}">
     <meta property="article:published_time" content="${date}T00:00:00+02:00">
@@ -497,7 +538,7 @@ ${sourceItems}
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: title,
-      description: `${subtitle}. Nachhaltigkeit wird als langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie präzise und steuerbar.`,
+      description: `${subtitle}. Nachhaltigkeit als langfristige Wirkungsresilienz mit Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung und Transformation.`,
       url: `https://wirkungsoekonomie.de/blog/${slug}/`,
       image: `https://wirkungsoekonomie.de${image}`,
       inLanguage: "de",
@@ -540,8 +581,8 @@ function upsertBlogIndex() {
   if (!entry) throw new Error(`Blog-Index-Eintrag für ${slug} nicht gefunden.`);
   entry.title = title;
   entry.readingTime = readingTime;
-  entry.excerpt = "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.";
-  entry.tags = ["Systemresilienz", "Wirkungsresilienz", "SDGs", "SDG+", "Risiko- und Resilienzregister", "Wirkungsrisiko", "Rückkopplung", "Wirkungsökonomie"];
+  entry.excerpt = "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie – mit Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung und Transformation.";
+  entry.tags = ["Systemresilienz", "Wirkungsresilienz", "Stabilitätslandschaft", "Latitude", "Resistance", "Precariousness", "Panarchy", "SDGs", "SDG+", "Risiko- und Resilienzregister", "Wirkungsrisiko", "Rückkopplung", "Wirkungsökonomie"];
   fs.writeFileSync(blogIndexPath, `${JSON.stringify(entries, null, 2)}\n`);
 }
 
