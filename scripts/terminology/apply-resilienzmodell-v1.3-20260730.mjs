@@ -140,7 +140,16 @@ for (const slug of core) {
       { title: "Systemfrage", body: "Jede Resilienzaussage muss klären: Resilienz wovon, gegenüber welcher Störung, für wen, zur Erhaltung welcher Funktionen und mit welchen Folgen für andere Systeme?" },
       { title: "Acht Analysebausteine", body: "Latitude, Resistance, Precariousness und Panarchy beschreiben die Stabilitätslandschaft. Rückstell- und Dämpfungsfähigkeit erklären die dynamische Antwort. Anpassungs- und Transformationsfähigkeit beschreiben Systementwicklung. Diese acht Bausteine sind keine additive Punkteliste und nicht als acht Walker-Punkte zu bezeichnen." },
       { title: "Einordnung", body: detail },
-      { title: "Vertiefung", body: "Die vollständige Herleitung mit Kugel-Becken-Modell, Klima-Beispiel und MPD-Zustandsraum steht in der Bibliotheksveröffentlichung Nachhaltigkeit als Systemresilienz." },
+      {
+        title: "Vertiefung",
+        body: "Die vollständige Herleitung mit Kugel-Becken-Modell, Klima-Beispiel und MPD-Zustandsraum steht in der Bibliotheksveröffentlichung Nachhaltigkeit als Systemresilienz.",
+        ...(slug === "nachhaltigkeit" ? {
+          links: [{
+            href: "../../bibliothek/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell/",
+            label: "Fachveröffentlichung „Nachhaltigkeit als Systemresilienz“ lesen",
+          }],
+        } : {}),
+      },
       { title: "Querverweise", items: unique([...(term.relatedTerms || []), ...core.filter((candidate) => candidate !== slug)]) },
     ],
     lastUpdated: date,

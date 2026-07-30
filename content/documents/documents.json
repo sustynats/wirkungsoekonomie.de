@@ -46,6 +46,63 @@
   "visibilityRule": "Nur public und expert_public erscheinen in der normalen Bibliothek. Archive erscheint nur im Archiv. review_required, internal und hidden erscheinen nicht als Kachel und nicht als direkter Download.",
   "documents": [
     {
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0",
+      "slug": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0",
+      "title": "Nachhaltigkeit als Systemresilienz v1.0",
+      "subtitle": "Archivierte erste Online-Ausgabe der Fachveröffentlichung",
+      "fileName": "Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
+      "filePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
+      "documentType": "grundlagenpapier",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Methodik"
+      ],
+      "level": "expert",
+      "summaryShort": "Erste Online-Ausgabe der Fachveröffentlichung, für bestehende Zitate unverändert erhalten.",
+      "whatToExpect": "Die kompaktere v1.0-Ausgabe ohne die vollständige Abbildungs- und Formelstrecke. Für die vollständige Fachfassung gilt v1.1.",
+      "keyQuestions": [
+        "Wo liegt die vollständige Fachfassung?",
+        "Welche erste Online-Ausgabe bleibt zitierfähig?"
+      ],
+      "topics": [
+        "Nachhaltigkeit",
+        "Resilienz",
+        "Systemresilienz",
+        "Archiv"
+      ],
+      "methods": [
+        "Systemresilienz",
+        "Wirkungsarchitektur",
+        "Nichtkompensation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell"
+      ],
+      "version": "1.0",
+      "date": "2026-07-30",
+      "replacedBy": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "editorialNote": "Archivierte erste Online-Ausgabe. Nicht still überschrieben; die vollständige Fachfassung mit gesetzten Formeln und Abbildungen ist Version 1.1.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 208,
+      "fileType": "pdf",
+      "fileSize": "175 KB",
+      "pageCount": 7,
+      "estimatedReadingTime": "12 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": ""
+    },
+    {
       "id": "minifest-wirkungsoekonomie",
       "slug": "minifest-wirkungsoekonomie",
       "title": "Minifest Wirkungsökonomie",
@@ -2097,9 +2154,9 @@
       "slug": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
       "title": "Nachhaltigkeit als Systemresilienz",
       "subtitle": "Resilienzdefinition, Kugelmodell, Klima-Beispiel und mathematische Herleitung",
-      "fileName": "Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
-      "filePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
-      "contentHtmlPath": "content/documents/online/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1.0.inc",
+      "fileName": "Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.pdf",
+      "filePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.pdf",
+      "contentHtmlPath": "content/documents/online/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1.1.inc",
       "documentType": "grundlagenpapier",
       "status": "aktuell",
       "visibility": "public",
@@ -2142,19 +2199,21 @@
         "systemmodell-wirkungsoekonomie",
         "grundlagenpapier-wirkungsoekonomie"
       ],
-      "version": "1.0",
+      "version": "1.1",
       "date": "2026-07-30",
       "legalNotice": "Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Unternehmensberatung.",
-      "editorialNote": "Erstveröffentlichung. Sie führt die verbindliche Begriffshierarchie, das Kugel-Becken-Modell, die acht Analysebausteine und die vereinfachte Klima- und MPD-Herleitung zusammen.",
+      "editorialNote": "Vollständige Fachfassung mit gesetzten Formeln und Abbildungen. Die frühere v1.0-PDF bleibt als erste Online-Ausgabe zitierfähig erhalten; v1.1 ist die führende Fassung.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Grundlagen & Leitbild",
       "order": 205,
+      "fileSize": "662 KB",
+      "pageCount": 13,
+      "estimatedReadingTime": "24 Min.",
+      "replaces": [
+        "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0"
+      ],
       "fileType": "pdf",
-      "fileSize": "175 KB",
-      "pageCount": 7,
-      "estimatedReadingTime": "12 Min.",
-      "replaces": [],
       "replacedBy": "",
       "internalNote": ""
     },
