@@ -129,9 +129,12 @@ def build_pdf(items) -> None:
     body = build_html(items)
     title_block = f"<h1>{html.escape(TITLE)}</h1>" if SHOW_TITLE else ""
     document = f'''<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title><style>@page {{ size: A4; margin: 18mm; }} body {{ color:#20242a; font-family:Arial,sans-serif; font-size:10pt; line-height:1.45; }} h1 {{ color:#081126; font-family:Georgia,serif; font-size:29pt; line-height:1.08; margin:0 0 7pt; }} h2 {{ color:#081126; font-family:Georgia,serif; font-size:21pt; line-height:1.15; margin:17pt 0 8pt; }} h3 {{ color:#1f6b4f; font-size:14pt; margin:15pt 0 6pt; }} h4 {{ color:#081126; font-size:11pt; margin:11pt 0 4pt; }} p {{ margin:0 0 7pt; }} blockquote {{ background:#f3f6ef; border-left:3px solid #b6903d; color:#1f6b4f; font-weight:bold; margin:9pt 8mm; padding:7pt; }} ul {{ margin:0 0 6pt 14pt; }} table {{ width:100%; border-collapse:collapse; font-size:8.2pt; margin:8pt 0; }} th {{ background:#081126; color:#fff; text-align:left; }} th, td {{ border:0.5pt solid #b8c0c8; padding:4pt; vertical-align:top; }} tr:nth-child(even) {{ background:#f3f6ef; }}</style></head><body>{title_block}<p><strong>{html.escape(EDITION)}</strong></p>{body}</body></html>'''
-    soffice = Path("/Applications/LibreOffice.app/Contents/MacOS/soffice")
+    soffice = Path(os.environ.get("WOEK_LIBREOFFICE_PATH", "/Applications/LibreOffice.app/Contents/MacOS/soffice"))
     if not soffice.exists():
-        raise RuntimeError("LibreOffice ist für den PDF-Export nicht verfügbar.")
+        if PDF.exists():
+            print(f"LibreOffice nicht verfügbar; vorhandene PDF-Fassung bleibt bestehen: {PDF}")
+            return
+        raise RuntimeError("LibreOffice ist für den PDF-Export nicht verfügbar und es liegt keine bestehende PDF-Fassung vor.")
     PDF.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="woek-systemarchitektur-") as temp:
         temp_path = Path(temp)
