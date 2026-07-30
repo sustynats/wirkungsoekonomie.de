@@ -9,6 +9,7 @@ const ignoreDirs = new Set([
   ".next",
   ".vercel",
   "node_modules",
+  "source-assets",
   ".codex-backup",
   "outputs",
   "woek-akademie-app",
