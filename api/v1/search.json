@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-15T10:58:18.688Z",
+  "generatedAt": "2026-07-30T18:24:51.059Z",
   "version": "v1",
   "source": "assets/search/search-index.json",
   "publicIndexUrl": "/assets/search/search-index.json",
-  "count": 27899,
+  "count": 30214,
   "sections": [
     "Akademie",
     "Anwendungen",
@@ -78,8 +78,6 @@
     "Fachvertiefung / Onlinefassung",
     "Fallstudie",
     "Gesamtdossier / Onlinefassung",
-    "Glossar-Begriff",
-    "Glossar-Cluster",
     "Glossarbegriff",
     "Hub",
     "Interaktiver Rechner",
@@ -132,7 +130,6 @@
     "Analysebereich",
     "Anwendung / Methodik",
     "App",
-    "Begriffe",
     "Beispiel",
     "Bereich",
     "Beta-Tool",
@@ -486,6 +483,27 @@
       ]
     },
     {
+      "id": "woek-term-fraunhofersche-linien",
+      "title": "Fraunhofersche Linien",
+      "url": "/begriffe/fraunhofersche-linien/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "1.0",
+        "approved",
+        "Fraunhofersche Linien",
+        "Fraunhofer-Linien",
+        "Fraunhofersche Linien der Preise",
+        "Fraunhofersche Linien der Wirtschaft",
+        "Fraunhofersche Linien der Kommunikation",
+        "kommunikative Fraunhofer-Linien",
+        "institutionalisierte Fraunhofer-Linien",
+        "indoktrinierte Fraunhofer-Linien"
+      ]
+    },
+    {
       "id": "woek-term-gesundheit",
       "title": "Gesundheit",
       "url": "/begriffe/gesundheit/",
@@ -545,22 +563,6 @@
         "Gesundheitssystem",
         "präventives Gesundheitssystem",
         "wirkungsorientiertes Gesundheitssystem"
-      ]
-    },
-    {
-      "id": "woek-term-gesundheitswirkung",
-      "title": "Gesundheitswirkung",
-      "url": "/begriffe/gesundheitswirkung/",
-      "section": "Begriffe",
-      "type": "Begriff",
-      "format": "Glossarbegriff",
-      "tags": [
-        "führender-begriff",
-        "1.0",
-        "fachlich geprüft im WÖk-Kontext, offen für wissenschaftliche Ergänzung",
-        "Gesundheitswirkung",
-        "Health Impact",
-        "Gesundheits-Impact"
       ]
     }
   ]

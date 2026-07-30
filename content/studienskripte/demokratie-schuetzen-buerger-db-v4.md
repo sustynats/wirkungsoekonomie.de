@@ -203,28 +203,28 @@ Wählen Sie eine Erzählung, der Sie eher zustimmen. Gerade dort ist die Übung 
    - B) Welche Rollen, Kausalkette und Korrekturpunkte stellt die Erzählung her?
    - C) Wer gehört zu welcher politischen Gruppe?
    - D) Wie viele Reaktionen hatte der Beitrag?
-   - ✅ **Richtig: B** — Sie macht den Deutungsrahmen prüfbar.
+   - ✅ **Richtig: B** - Sie macht den Deutungsrahmen prüfbar.
 
 2. **Was ist eine gute Reaktion auf „Alle verschweigen das“?**
    - A) „Dann ist jede Quelle nutzlos.“
    - B) „Welche konkrete Information fehlt in welchem Bericht?“
    - C) „Du darfst das nicht sagen.“
    - D) „Ich teile es sofort weiter.“
-   - ✅ **Richtig: B** — Die Frage führt von einer Pauschale zu einem überprüfbaren Vorgang.
+   - ✅ **Richtig: B** - Die Frage führt von einer Pauschale zu einem überprüfbaren Vorgang.
 
 3. **Welche Aussage trennt Wirkungspotenzial und Wirkung korrekt?**
    - A) „Der Beitrag hat viele Klicks, also hat er Vertrauen zerstört.“
    - B) „Der Beitrag kann Vertrauen beeinflussen; ob das eintritt, muss beobachtet werden.“
    - C) „Jede Erzählung ist schädlich.“
    - D) „Nur Fakten haben Folgen.“
-   - ✅ **Richtig: B** — Möglichkeit und eingetretene Veränderung bleiben getrennt.
+   - ✅ **Richtig: B** - Möglichkeit und eingetretene Veränderung bleiben getrennt.
 
 4. **Was schützt Nichtkompensation?**
    - A) Hohe Reichweite rechtfertigt jedes Mittel.
    - B) Schwere Schutzverletzungen werden nicht gegen Vorteile anderswo verrechnet.
    - C) Jede Debatte muss beendet werden.
    - D) Mehrheiten dürfen alles entscheiden.
-   - ✅ **Richtig: B** — Schutzgrenzen bleiben auch bei nützlichen Nebenfolgen bestehen.
+   - ✅ **Richtig: B** - Schutzgrenzen bleiben auch bei nützlichen Nebenfolgen bestehen.
 
 ## Begriffe zum Mitnehmen
 

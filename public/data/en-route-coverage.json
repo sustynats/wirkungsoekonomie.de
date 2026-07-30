@@ -1,17 +1,17 @@
 {
   "schemaVersion": "2026-07-english-visible-route-coverage",
-  "generatedAt": "2026-07-15",
+  "generatedAt": "2026-07-30",
   "scope": "Public visible HTML routes in the static website, excluding admin, assets, source folders, generated private outputs, redirects and existing English routes.",
   "rule": "Every visible public German route needs an English counterpart below /en/ with translated visible text, translated UI and English-aware media/download routing.",
   "counts": {
-    "total": 14980,
+    "total": 15084,
     "available": 8,
-    "missing": 14972,
+    "missing": 15076,
     "byCategory": {
       "top-level": {
-        "total": 22,
+        "total": 21,
         "available": 1,
-        "missing": 21
+        "missing": 20
       },
       "akademie": {
         "total": 7,
@@ -34,19 +34,19 @@
         "missing": 0
       },
       "begriffe": {
-        "total": 2035,
+        "total": 2058,
         "available": 0,
-        "missing": 2035
+        "missing": 2058
       },
       "bibliothek": {
-        "total": 7851,
+        "total": 7899,
         "available": 1,
-        "missing": 7850
+        "missing": 7898
       },
       "blog": {
-        "total": 151,
+        "total": 153,
         "available": 0,
-        "missing": 151
+        "missing": 153
       },
       "dokumente": {
         "total": 26,
@@ -174,9 +174,9 @@
         "missing": 10
       },
       "quellenarchiv": {
-        "total": 992,
+        "total": 1024,
         "available": 0,
-        "missing": 992
+        "missing": 1024
       },
       "referenz": {
         "total": 1662,
@@ -1022,6 +1022,15 @@
       "englishRoute": "/en/begriffe/ambiguitaetsintoleranz/",
       "category": "begriffe",
       "title": "Ambiguitätsintoleranz | Glossar der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/america-first/index.html",
+      "sourceRoute": "/begriffe/america-first/",
+      "englishFile": "en/begriffe/america-first/index.html",
+      "englishRoute": "/en/begriffe/america-first/",
+      "category": "begriffe",
+      "title": "America First - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -2267,6 +2276,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/cancel-culture/index.html",
+      "sourceRoute": "/begriffe/cancel-culture/",
+      "englishFile": "en/begriffe/cancel-culture/index.html",
+      "englishRoute": "/en/begriffe/cancel-culture/",
+      "category": "begriffe",
+      "title": "Cancel Culture - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/canvas-mindeststandard/index.html",
       "sourceRoute": "/begriffe/canvas-mindeststandard/",
       "englishFile": "en/begriffe/canvas-mindeststandard/index.html",
@@ -2843,6 +2861,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/deep-state/index.html",
+      "sourceRoute": "/begriffe/deep-state/",
+      "englishFile": "en/begriffe/deep-state/index.html",
+      "englishRoute": "/en/begriffe/deep-state/",
+      "category": "begriffe",
+      "title": "Deep State - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/deformation-professionnelle/index.html",
       "sourceRoute": "/begriffe/deformation-professionnelle/",
       "englishFile": "en/begriffe/deformation-professionnelle/index.html",
@@ -2993,6 +3020,15 @@
       "englishRoute": "/en/begriffe/demokratische-erosion/",
       "category": "begriffe",
       "title": "Demokratische Erosion | Glossar der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/demokratische-gegenwirkung/index.html",
+      "sourceRoute": "/begriffe/demokratische-gegenwirkung/",
+      "englishFile": "en/begriffe/demokratische-gegenwirkung/index.html",
+      "englishRoute": "/en/begriffe/demokratische-gegenwirkung/",
+      "category": "begriffe",
+      "title": "Demokratische Gegenwirkung - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -3425,6 +3461,15 @@
       "englishRoute": "/en/begriffe/downcycling/",
       "category": "begriffe",
       "title": "Downcycling | Glossar der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/drain-the-swamp/index.html",
+      "sourceRoute": "/begriffe/drain-the-swamp/",
+      "englishFile": "en/begriffe/drain-the-swamp/index.html",
+      "englishRoute": "/en/begriffe/drain-the-swamp/",
+      "category": "begriffe",
+      "title": "The Swamp / Drain the Swamp - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -3866,6 +3911,15 @@
       "englishRoute": "/en/begriffe/endogenes-geld/",
       "category": "begriffe",
       "title": "Endogenes Geld - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/enemy-of-the-people/index.html",
+      "sourceRoute": "/begriffe/enemy-of-the-people/",
+      "englishFile": "en/begriffe/enemy-of-the-people/index.html",
+      "englishRoute": "/en/begriffe/enemy-of-the-people/",
+      "category": "begriffe",
+      "title": "Enemy of the People - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -4649,6 +4703,15 @@
       "englishRoute": "/en/begriffe/fach-zukunft/",
       "category": "begriffe",
       "title": "Fach Zukunft - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/fake-news/index.html",
+      "sourceRoute": "/begriffe/fake-news/",
+      "englishFile": "en/begriffe/fake-news/index.html",
+      "englishRoute": "/en/begriffe/fake-news/",
+      "category": "begriffe",
+      "title": "Fake News - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -6404,6 +6467,15 @@
       "englishRoute": "/en/begriffe/hitzestress/",
       "category": "begriffe",
       "title": "Hitzestress - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/hoax/index.html",
+      "sourceRoute": "/begriffe/hoax/",
+      "englishFile": "en/begriffe/hoax/index.html",
+      "englishRoute": "/en/begriffe/hoax/",
+      "category": "begriffe",
+      "title": "Hoax - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -8333,6 +8405,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/law-and-order/index.html",
+      "sourceRoute": "/begriffe/law-and-order/",
+      "englishFile": "en/begriffe/law-and-order/index.html",
+      "englishRoute": "/en/begriffe/law-and-order/",
+      "category": "begriffe",
+      "title": "Law &amp; Order - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/lca/index.html",
       "sourceRoute": "/begriffe/lca/",
       "englishFile": "en/begriffe/lca/index.html",
@@ -8816,6 +8897,15 @@
       "englishRoute": "/en/begriffe/machtkonzentration/",
       "category": "begriffe",
       "title": "Machtkonzentration | Glossar der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/maga/index.html",
+      "sourceRoute": "/begriffe/maga/",
+      "englishFile": "en/begriffe/maga/index.html",
+      "englishRoute": "/en/begriffe/maga/",
+      "category": "begriffe",
+      "title": "MAGA (Make America Great Again) - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -9526,7 +9616,7 @@
       "englishFile": "en/begriffe/nachhaltigkeit/index.html",
       "englishRoute": "/en/begriffe/nachhaltigkeit/",
       "category": "begriffe",
-      "title": "Nachhaltigkeit - Wirkungsökonomie",
+      "title": "Nachhaltigkeit | Glossar der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -10196,6 +10286,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/normative-wirkungsarchitektur/index.html",
+      "sourceRoute": "/begriffe/normative-wirkungsarchitektur/",
+      "englishFile": "en/begriffe/normative-wirkungsarchitektur/index.html",
+      "englishRoute": "/en/begriffe/normative-wirkungsarchitektur/",
+      "category": "begriffe",
+      "title": "WÖk-Mehrebenen-Normen- und Zielrahmen - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/normativer-massstab/index.html",
       "sourceRoute": "/begriffe/normativer-massstab/",
       "englishFile": "en/begriffe/normativer-massstab/index.html",
@@ -10832,6 +10931,15 @@
       "englishRoute": "/en/begriffe/patriarchat/",
       "category": "begriffe",
       "title": "Patriarchat | Glossar der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/patriot-not-a-patriot/index.html",
+      "sourceRoute": "/begriffe/patriot-not-a-patriot/",
+      "englishFile": "en/begriffe/patriot-not-a-patriot/index.html",
+      "englishRoute": "/en/begriffe/patriot-not-a-patriot/",
+      "category": "begriffe",
+      "title": "Patriot / Not a Patriot - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -12005,6 +12113,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/radical-left/index.html",
+      "sourceRoute": "/begriffe/radical-left/",
+      "englishFile": "en/begriffe/radical-left/index.html",
+      "englishRoute": "/en/begriffe/radical-left/",
+      "category": "begriffe",
+      "title": "Radical Left / Marxist Left / Communist Left - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/radikal/index.html",
       "sourceRoute": "/begriffe/radikal/",
       "englishFile": "en/begriffe/radikal/index.html",
@@ -12658,7 +12775,7 @@
       "englishFile": "en/begriffe/resilienzarchitektur/index.html",
       "englishRoute": "/en/begriffe/resilienzarchitektur/",
       "category": "begriffe",
-      "title": "Resilienzarchitektur - Wirkungsökonomie",
+      "title": "Resilienzarchitektur | Glossar der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -12667,7 +12784,7 @@
       "englishFile": "en/begriffe/resilienzmanagement/index.html",
       "englishRoute": "/en/begriffe/resilienzmanagement/",
       "category": "begriffe",
-      "title": "Resilienzmanagement - Wirkungsökonomie",
+      "title": "Resilienzmanagement | Glossar der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -12797,6 +12914,24 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/rigged-election/index.html",
+      "sourceRoute": "/begriffe/rigged-election/",
+      "englishFile": "en/begriffe/rigged-election/index.html",
+      "englishRoute": "/en/begriffe/rigged-election/",
+      "category": "begriffe",
+      "title": "Rigged / Rigged Election - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/rino/index.html",
+      "sourceRoute": "/begriffe/rino/",
+      "englishFile": "en/begriffe/rino/index.html",
+      "englishRoute": "/en/begriffe/rino/",
+      "category": "begriffe",
+      "title": "RINO (Republican In Name Only) - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/risiko-und-resilienzregister/index.html",
       "sourceRoute": "/begriffe/risiko-und-resilienzregister/",
       "englishFile": "en/begriffe/risiko-und-resilienzregister/index.html",
@@ -12812,6 +12947,15 @@
       "englishRoute": "/en/begriffe/risikomanagement/",
       "category": "begriffe",
       "title": "Risikomanagement - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/risikoregister/index.html",
+      "sourceRoute": "/begriffe/risikoregister/",
+      "englishFile": "en/begriffe/risikoregister/index.html",
+      "englishRoute": "/en/begriffe/risikoregister/",
+      "category": "begriffe",
+      "title": "Risikoregister - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -14147,6 +14291,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/staatsziele-und-verfassungsauftraege/index.html",
+      "sourceRoute": "/begriffe/staatsziele-und-verfassungsauftraege/",
+      "englishFile": "en/begriffe/staatsziele-und-verfassungsauftraege/index.html",
+      "englishRoute": "/en/begriffe/staatsziele-und-verfassungsauftraege/",
+      "category": "begriffe",
+      "title": "Staatsziele und Verfassungsaufträge - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/stadtwerke/index.html",
       "sourceRoute": "/begriffe/stadtwerke/",
       "englishFile": "en/begriffe/stadtwerke/index.html",
@@ -14764,7 +14917,7 @@
       "englishFile": "en/begriffe/systemresilienz/index.html",
       "englishRoute": "/en/begriffe/systemresilienz/",
       "category": "begriffe",
-      "title": "Systemresilienz - Wirkungsökonomie",
+      "title": "Systemresilienz | Glossar der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -15101,12 +15254,30 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/thought-terminating-cliches/index.html",
+      "sourceRoute": "/begriffe/thought-terminating-cliches/",
+      "englishFile": "en/begriffe/thought-terminating-cliches/index.html",
+      "englishRoute": "/en/begriffe/thought-terminating-cliches/",
+      "category": "begriffe",
+      "title": "Thought-terminating clichés (Denkabbruchformeln) - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/tiere/index.html",
       "sourceRoute": "/begriffe/tiere/",
       "englishFile": "en/begriffe/tiere/index.html",
       "englishRoute": "/en/begriffe/tiere/",
       "category": "begriffe",
       "title": "Tiere / nicht-menschliches Leben - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/tierschutz-und-tierwohl/index.html",
+      "sourceRoute": "/begriffe/tierschutz-und-tierwohl/",
+      "englishFile": "en/begriffe/tierschutz-und-tierwohl/index.html",
+      "englishRoute": "/en/begriffe/tierschutz-und-tierwohl/",
+      "category": "begriffe",
+      "title": "Tierschutz und Tierwohl - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -15241,7 +15412,7 @@
       "englishFile": "en/begriffe/transformationsfaehigkeit/index.html",
       "englishRoute": "/en/begriffe/transformationsfaehigkeit/",
       "category": "begriffe",
-      "title": "Transformationsfähigkeit | Glossar der Wirkungsökonomie",
+      "title": "Transformationsfähigkeit / Transformability | Glossar der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -15413,6 +15584,15 @@
       "englishRoute": "/en/begriffe/triviale-maschine/",
       "category": "begriffe",
       "title": "Triviale Maschine | Glossar der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/trump-derangement-syndrome/index.html",
+      "sourceRoute": "/begriffe/trump-derangement-syndrome/",
+      "englishFile": "en/begriffe/trump-derangement-syndrome/index.html",
+      "englishRoute": "/en/begriffe/trump-derangement-syndrome/",
+      "category": "begriffe",
+      "title": "TDS (Trump Derangement Syndrome) - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -17270,6 +17450,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "begriffe/wirkungsfinanzierung/index.html",
+      "sourceRoute": "/begriffe/wirkungsfinanzierung/",
+      "englishFile": "en/begriffe/wirkungsfinanzierung/index.html",
+      "englishRoute": "/en/begriffe/wirkungsfinanzierung/",
+      "category": "begriffe",
+      "title": "Wirkungsfinanzierung - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "begriffe/wirkungsfinanzpolitik/index.html",
       "sourceRoute": "/begriffe/wirkungsfinanzpolitik/",
       "englishFile": "en/begriffe/wirkungsfinanzpolitik/index.html",
@@ -17365,7 +17554,7 @@
       "englishFile": "en/begriffe/wirkungsgrad/index.html",
       "englishRoute": "/en/begriffe/wirkungsgrad/",
       "category": "begriffe",
-      "title": "Wirkungsgrad | Glossar der Wirkungsökonomie",
+      "title": "Wirkungsgrad - allgemeiner Oberbegriff | Glossar der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -17600,6 +17789,15 @@
       "englishRoute": "/en/begriffe/wirkungsluecke/",
       "category": "begriffe",
       "title": "Wirkungslücke | Glossar der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/wirkungsmanagement/index.html",
+      "sourceRoute": "/begriffe/wirkungsmanagement/",
+      "englishFile": "en/begriffe/wirkungsmanagement/index.html",
+      "englishRoute": "/en/begriffe/wirkungsmanagement/",
+      "category": "begriffe",
+      "title": "Wirkungsmanagement - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -18094,7 +18292,7 @@
       "englishFile": "en/begriffe/wirkungsresilienz/index.html",
       "englishRoute": "/en/begriffe/wirkungsresilienz/",
       "category": "begriffe",
-      "title": "Wirkungsresilienz - Wirkungsökonomie",
+      "title": "Wirkungsresilienz | Glossar der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -18509,6 +18707,15 @@
       "englishRoute": "/en/begriffe/wissensrat/",
       "category": "begriffe",
       "title": "Wissensrat - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "begriffe/witch-hunt/index.html",
+      "sourceRoute": "/begriffe/witch-hunt/",
+      "englishFile": "en/begriffe/witch-hunt/index.html",
+      "englishRoute": "/en/begriffe/witch-hunt/",
+      "category": "begriffe",
+      "title": "Witch Hunt - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -62558,15 +62765,6 @@
       "status": "missing"
     },
     {
-      "sourceFile": "bibliothek/eintraege/journal-blog-systemresilienz-statt-nachhaltigkeit-index-html/index.html",
-      "sourceRoute": "/bibliothek/eintraege/journal-blog-systemresilienz-statt-nachhaltigkeit-index-html/",
-      "englishFile": "en/bibliothek/eintraege/journal-blog-systemresilienz-statt-nachhaltigkeit-index-html/index.html",
-      "englishRoute": "/en/bibliothek/eintraege/journal-blog-systemresilienz-statt-nachhaltigkeit-index-html/",
-      "category": "bibliothek",
-      "title": "Von Nachhaltigkeit zu Systemresilienz | Bibliothek der Wirkungsökonomie",
-      "status": "missing"
-    },
-    {
       "sourceFile": "bibliothek/eintraege/journal-blog-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-html/index.html",
       "sourceRoute": "/bibliothek/eintraege/journal-blog-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-html/",
       "englishFile": "en/bibliothek/eintraege/journal-blog-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-html/index.html",
@@ -65011,7 +65209,7 @@
       "englishFile": "en/bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/index.html",
       "englishRoute": "/en/bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/",
       "category": "bibliothek",
-      "title": "WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie",
+      "title": "WÖk-Begriffsleitfaden führend v1.3 | Bibliothek der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -89549,12 +89747,453 @@
       "status": "missing"
     },
     {
+      "sourceFile": "bibliothek/studienskripte/demokratie-d1/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-d1/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-d1/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-d1/",
+      "category": "bibliothek",
+      "title": "Fehler sichtbar machen, ohne Menschen zu bewerten | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-d2/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-d2/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-d2/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-d2/",
+      "category": "bibliothek",
+      "title": "Öffentlichkeit ordnen, ohne Debatten zu steuern | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-d3/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-d3/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-d3/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-d3/",
+      "category": "bibliothek",
+      "title": "Beteiligen, ohne Zustimmung zu simulieren | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v10/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v10/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v10/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v10/",
+      "category": "bibliothek",
+      "title": "Zivilcourage und demokratische Teilhabe: Den gemeinsamen Raum handlungsfähig halten | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v11/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v11/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v11/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v11/",
+      "category": "bibliothek",
+      "title": "Mein Demokratie-Schutzplan: Im Alltag ruhig und handlungsfähig bleiben | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v2/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v2/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v2/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v2/",
+      "category": "bibliothek",
+      "title": "Wie demokratische Räume kaputtgehen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v3/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v3/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v3/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v3/",
+      "category": "bibliothek",
+      "title": "Faktencheck, Folgencheck, Vertrauenscheck | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v4/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v4/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v4/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v4/",
+      "category": "bibliothek",
+      "title": "Narrative erkennen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v5/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v5/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v5/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v5/",
+      "category": "bibliothek",
+      "title": "Frames erkennen und demokratisch reframen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v6/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v6/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v6/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v6/",
+      "category": "bibliothek",
+      "title": "Emotionen verstehen, ohne Menschen oder Fakten abzuwerten | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v7/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v7/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v7/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v7/",
+      "category": "bibliothek",
+      "title": "Desinformation und Plattformlogik: Den eigenen Anteil am Informationsraum verstehen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v8/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v8/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v8/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v8/",
+      "category": "bibliothek",
+      "title": "Richtig reagieren ohne Verstärkung | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v9/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v9/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v9/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-buerger-db-v9/",
+      "category": "bibliothek",
+      "title": "Gespräche führen, ohne den demokratischen Raum zu verlieren | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v10/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v10/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v10/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v10/",
+      "category": "bibliothek",
+      "title": "Krisenkommunikation und hybride Angriffe: Orientierung veröffentlichen, ohne das Chaos zu verstärken | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v11/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v11/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v11/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v11/",
+      "category": "bibliothek",
+      "title": "Ein Redaktions- und Moderationsprotokoll: Entscheidungen unter Druck nachvollziehbar machen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v2/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v2/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v2/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v2/",
+      "category": "bibliothek",
+      "title": "Die Wirkung von Reichweite | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v3/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v3/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v3/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v3/",
+      "category": "bibliothek",
+      "title": "Moderation und Live-Dynamik | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v4/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v4/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v4/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v4/",
+      "category": "bibliothek",
+      "title": "Taktiken demokratiefeindlicher Kommunikation | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v5/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v5/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v5/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v5/",
+      "category": "bibliothek",
+      "title": "Frame-Management: erkennen und demokratisch reframen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v6/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v6/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v6/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v6/",
+      "category": "bibliothek",
+      "title": "Hart fragen, ohne zu verstärken | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v7/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v7/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v7/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v7/",
+      "category": "bibliothek",
+      "title": "Bild, Ton, Schnitt und Tonalität: Wie Medien ihren eigenen Wirkpfad prüfen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v8/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v8/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v8/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v8/",
+      "category": "bibliothek",
+      "title": "Minderheitenschutz und Entmenschlichung: Kritik, Würde und redaktionelle Verantwortung | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v9/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v9/",
+      "englishFile": "en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v9/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/demokratie-schuetzen-medien-moderation-dm-v9/",
+      "category": "bibliothek",
+      "title": "Quellenklarheit und Korrekturkultur: Wie Fehler sichtbar werden und Vertrauen prüfbar bleibt | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "bibliothek/studienskripte/index.html",
       "sourceRoute": "/bibliothek/studienskripte/",
       "englishFile": "en/bibliothek/studienskripte/index.html",
       "englishRoute": "/en/bibliothek/studienskripte/",
       "category": "bibliothek",
       "title": "Studienskripte | Bibliothek der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/multiplikatoren-mv2/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/multiplikatoren-mv2/",
+      "englishFile": "en/bibliothek/studienskripte/multiplikatoren-mv2/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/multiplikatoren-mv2/",
+      "category": "bibliothek",
+      "title": "Das Wirkungsvokabular sicher erklären | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/multiplikatoren-mv3/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/multiplikatoren-mv3/",
+      "englishFile": "en/bibliothek/studienskripte/multiplikatoren-mv3/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/multiplikatoren-mv3/",
+      "category": "bibliothek",
+      "title": "Vom Messen zum Steuern | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/multiplikatoren-mv4/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/multiplikatoren-mv4/",
+      "englishFile": "en/bibliothek/studienskripte/multiplikatoren-mv4/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/multiplikatoren-mv4/",
+      "category": "bibliothek",
+      "title": "Didaktik der Wirkung – wie man es erklärt | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/multiplikatoren-mv5/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/multiplikatoren-mv5/",
+      "englishFile": "en/bibliothek/studienskripte/multiplikatoren-mv5/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/multiplikatoren-mv5/",
+      "category": "bibliothek",
+      "title": "Wirkungskommunikation ohne Greenwashing | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/multiplikatoren-mv6/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/multiplikatoren-mv6/",
+      "englishFile": "en/bibliothek/studienskripte/multiplikatoren-mv6/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/multiplikatoren-mv6/",
+      "category": "bibliothek",
+      "title": "Medien, Narrative und Gegenwind | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/multiplikatoren-mv7/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/multiplikatoren-mv7/",
+      "englishFile": "en/bibliothek/studienskripte/multiplikatoren-mv7/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/multiplikatoren-mv7/",
+      "category": "bibliothek",
+      "title": "Rolle, Ethik und Autorisierung | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/multiplikatoren-mv8/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/multiplikatoren-mv8/",
+      "englishFile": "en/bibliothek/studienskripte/multiplikatoren-mv8/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/multiplikatoren-mv8/",
+      "category": "bibliothek",
+      "title": "Transfer, Fallarbeit und Prüfungsvorbereitung | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungscontrolling-wc-v1/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungscontrolling-wc-v1/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungscontrolling-wc-v1/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungscontrolling-wc-v1/",
+      "category": "bibliothek",
+      "title": "Von KPI zu KII und der Kennzahlen-Stack | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungscontrolling-wc-v2/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungscontrolling-wc-v2/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungscontrolling-wc-v2/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungscontrolling-wc-v2/",
+      "category": "bibliothek",
+      "title": "Wirkungsdaten &amp; Rahmenwerke | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungscontrolling-wc-v3/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungscontrolling-wc-v3/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungscontrolling-wc-v3/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungscontrolling-wc-v3/",
+      "category": "bibliothek",
+      "title": "WÖk-IDs und Indikatorenarchitektur | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungscontrolling-wc-v4/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungscontrolling-wc-v4/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungscontrolling-wc-v4/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungscontrolling-wc-v4/",
+      "category": "bibliothek",
+      "title": "Scorecards, Benchmarks und Bewertungslogik | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungscontrolling-wc-v5/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungscontrolling-wc-v5/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungscontrolling-wc-v5/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungscontrolling-wc-v5/",
+      "category": "bibliothek",
+      "title": "Reverse Merit Order und Nichtkompensation (operativ) | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungscontrolling-wc-v9/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungscontrolling-wc-v9/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungscontrolling-wc-v9/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungscontrolling-wc-v9/",
+      "category": "bibliothek",
+      "title": "Wirkungsaudit, Datenqualität, Assurance und Missbrauchsschutz | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungsmanagement-v1/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungsmanagement-v1/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungsmanagement-v1/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungsmanagement-v1/",
+      "category": "bibliothek",
+      "title": "Was ist Wirkungsmanagement? | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungsmanagement-v2/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungsmanagement-v2/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungsmanagement-v2/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungsmanagement-v2/",
+      "category": "bibliothek",
+      "title": "Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungsmanagement-v3/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungsmanagement-v3/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungsmanagement-v3/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungsmanagement-v3/",
+      "category": "bibliothek",
+      "title": "Wirkungsziele und Wirkungslogik in Organisationen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungsmanagement-v4/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungsmanagement-v4/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungsmanagement-v4/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungsmanagement-v4/",
+      "category": "bibliothek",
+      "title": "Wesentlichkeit &amp; Priorisierung | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungsmanagement-v5/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungsmanagement-v5/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungsmanagement-v5/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungsmanagement-v5/",
+      "category": "bibliothek",
+      "title": "Wirkungspotenziale und Wirkungsrisiken analysieren | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/wirkungsmanagement-v7/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/wirkungsmanagement-v7/",
+      "englishFile": "en/bibliothek/studienskripte/wirkungsmanagement-v7/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/wirkungsmanagement-v7/",
+      "category": "bibliothek",
+      "title": "Wirkungskompetenz, Führung und Organisationskultur | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/woek-g-v02/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/woek-g-v02/",
+      "englishFile": "en/bibliothek/studienskripte/woek-g-v02/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/woek-g-v02/",
+      "category": "bibliothek",
+      "title": "Wirkung statt Kapital | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/woek-g-v04/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/woek-g-v04/",
+      "englishFile": "en/bibliothek/studienskripte/woek-g-v04/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/woek-g-v04/",
+      "category": "bibliothek",
+      "title": "Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/woek-g-v05/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/woek-g-v05/",
+      "englishFile": "en/bibliothek/studienskripte/woek-g-v05/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/woek-g-v05/",
+      "category": "bibliothek",
+      "title": "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/woek-g-v06/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/woek-g-v06/",
+      "englishFile": "en/bibliothek/studienskripte/woek-g-v06/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/woek-g-v06/",
+      "category": "bibliothek",
+      "title": "Zukunftsfähigkeit, Risiko und Resilienz | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/woek-g-v09/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/woek-g-v09/",
+      "englishFile": "en/bibliothek/studienskripte/woek-g-v09/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/woek-g-v09/",
+      "category": "bibliothek",
+      "title": "Demokratie als Wirkungsdimension | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/woek-g-v10/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/woek-g-v10/",
+      "englishFile": "en/bibliothek/studienskripte/woek-g-v10/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/woek-g-v10/",
+      "category": "bibliothek",
+      "title": "Wirkung ist nicht Absicht | WÖk-Akademie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "bibliothek/studienskripte/woek-g-v11/index.html",
+      "sourceRoute": "/bibliothek/studienskripte/woek-g-v11/",
+      "englishFile": "en/bibliothek/studienskripte/woek-g-v11/index.html",
+      "englishRoute": "/en/bibliothek/studienskripte/woek-g-v11/",
+      "category": "bibliothek",
+      "title": "Positive, negative und neutrale Wirkung | WÖk-Akademie",
       "status": "missing"
     },
     {
@@ -89644,7 +90283,7 @@
       "englishFile": "en/bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
       "englishRoute": "/en/bibliothek/woek-begriffsleitfaden-fuehrend/",
       "category": "bibliothek",
-      "title": "WÖk-Begriffsleitfaden führend v1.0 | Bibliothek der Wirkungsökonomie",
+      "title": "WÖk-Begriffsleitfaden führend v1.3 | Bibliothek der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -89756,6 +90395,15 @@
       "status": "missing"
     },
     {
+      "sourceFile": "blog/das-schachbrett-der-oeffentlichkeit.html",
+      "sourceRoute": "/blog/das-schachbrett-der-oeffentlichkeit.html",
+      "englishFile": "en/blog/das-schachbrett-der-oeffentlichkeit/index.html",
+      "englishRoute": "/en/blog/das-schachbrett-der-oeffentlichkeit/",
+      "category": "blog",
+      "title": "Das Schachbrett der Öffentlichkeit - Journal der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
       "sourceFile": "blog/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.html",
       "sourceRoute": "/blog/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.html",
       "englishFile": "en/blog/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems/index.html",
@@ -89771,6 +90419,15 @@
       "englishRoute": "/en/blog/der-versoehner-und-die-wellen/",
       "category": "blog",
       "title": "Der Versöhner und die Wellen - Journal der Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "blog/die-fraunhoferschen-linien-des-preises.html",
+      "sourceRoute": "/blog/die-fraunhoferschen-linien-des-preises.html",
+      "englishFile": "en/blog/die-fraunhoferschen-linien-des-preises/index.html",
+      "englishRoute": "/en/blog/die-fraunhoferschen-linien-des-preises/",
+      "category": "blog",
+      "title": "Die Fraunhoferschen Linien des Preises - Journal der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -90904,7 +91561,7 @@
       "englishFile": "en/blog/systemresilienz-statt-nachhaltigkeit/index.html",
       "englishRoute": "/en/blog/systemresilienz-statt-nachhaltigkeit/",
       "category": "blog",
-      "title": "Von Nachhaltigkeit zu Systemresilienz - Journal der Wirkungsökonomie",
+      "title": "Nachhaltigkeit ist Systemresilienz - Journal der Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -91436,15 +92093,6 @@
       "englishRoute": "/en/einwaende/",
       "category": "einwaende",
       "title": "Einwände &amp; Missverständnisse | Wirkungsökonomie",
-      "status": "missing"
-    },
-    {
-      "sourceFile": "erleben.html",
-      "sourceRoute": "/erleben.html",
-      "englishFile": "en/erleben/index.html",
-      "englishRoute": "/en/erleben/",
-      "category": "top-level",
-      "title": "Wirkungsökonomie erleben - Produkte, Medien, Risiko und Wirkung",
       "status": "missing"
     },
     {
@@ -98473,7 +99121,7 @@
       "englishFile": "en/quellenarchiv/wok-q-0342/index.html",
       "englishRoute": "/en/quellenarchiv/wok-q-0342/",
       "category": "quellenarchiv",
-      "title": "European Convention on Human Rights - Quellenarchiv - Wirkungsökonomie",
+      "title": "Europäische Menschenrechtskonvention (EMRK) - Quellenarchiv - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -101137,7 +101785,7 @@
       "englishFile": "en/quellenarchiv/wok-q-0638/index.html",
       "englishRoute": "/en/quellenarchiv/wok-q-0638/",
       "category": "quellenarchiv",
-      "title": "Von Nachhaltigkeit zu Systemresilienz - Quellenarchiv - Wirkungsökonomie",
+      "title": "Nachhaltigkeit ist Systemresilienz - Quellenarchiv - Wirkungsökonomie",
       "status": "missing"
     },
     {
@@ -104315,6 +104963,294 @@
       "englishRoute": "/en/quellenarchiv/wok-q-0991/",
       "category": "quellenarchiv",
       "title": "Studien zur klimaneutralen Industrie - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0992/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0992/",
+      "englishFile": "en/quellenarchiv/wok-q-0992/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0992/",
+      "category": "quellenarchiv",
+      "title": "Prof. Dr. Christian Waldhoff: Staatszielbestimmungen als objektives Verfassungsrecht (2023) - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0993/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0993/",
+      "englishFile": "en/quellenarchiv/wok-q-0993/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0993/",
+      "category": "quellenarchiv",
+      "title": "Vertrag über die Europäische Union (EUV), konsolidierte Fassung – Artikel 3 - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0994/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0994/",
+      "englishFile": "en/quellenarchiv/wok-q-0994/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0994/",
+      "category": "quellenarchiv",
+      "title": "Vertrag über die Arbeitsweise der Europäischen Union (AEUV), konsolidierte Fassung – Artikel 11 - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0995/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0995/",
+      "englishFile": "en/quellenarchiv/wok-q-0995/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0995/",
+      "category": "quellenarchiv",
+      "title": "Vertrag über die Arbeitsweise der Europäischen Union (AEUV), konsolidierte Fassung – Artikel 13 - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0996/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0996/",
+      "englishFile": "en/quellenarchiv/wok-q-0996/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0996/",
+      "category": "quellenarchiv",
+      "title": "Checker Shadow Illusion - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0997/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0997/",
+      "englishFile": "en/quellenarchiv/wok-q-0997/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0997/",
+      "category": "quellenarchiv",
+      "title": "Frequency and the Conference of Referential Validity - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0998/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0998/",
+      "englishFile": "en/quellenarchiv/wok-q-0998/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0998/",
+      "category": "quellenarchiv",
+      "title": "Motivated Numeracy and Enlightened Self-Government - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-0999/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-0999/",
+      "englishFile": "en/quellenarchiv/wok-q-0999/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-0999/",
+      "category": "quellenarchiv",
+      "title": "The Case for Motivated Reasoning - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1000/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1000/",
+      "englishFile": "en/quellenarchiv/wok-q-1000/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1000/",
+      "category": "quellenarchiv",
+      "title": "Striking Individual Differences in Color Perception Uncovered by ‘The Dress’ Photograph - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1001/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1001/",
+      "englishFile": "en/quellenarchiv/wok-q-1001/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1001/",
+      "category": "quellenarchiv",
+      "title": "Misinformation and Its Correction: Continued Influence and Successful Debiasing - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1002/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1002/",
+      "englishFile": "en/quellenarchiv/wok-q-1002/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1002/",
+      "category": "quellenarchiv",
+      "title": "Autopoiesis, Structural Coupling and Cognition: A History of These and Other Notions in the Biology of Cognition - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1003/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1003/",
+      "englishFile": "en/quellenarchiv/wok-q-1003/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1003/",
+      "category": "quellenarchiv",
+      "title": "The Agenda-Setting Function of Mass Media - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1004/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1004/",
+      "englishFile": "en/quellenarchiv/wok-q-1004/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1004/",
+      "category": "quellenarchiv",
+      "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1005/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1005/",
+      "englishFile": "en/quellenarchiv/wok-q-1005/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1005/",
+      "category": "quellenarchiv",
+      "title": "Understanding Psychological Reactance: New Developments and Findings - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1006/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1006/",
+      "englishFile": "en/quellenarchiv/wok-q-1006/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1006/",
+      "category": "quellenarchiv",
+      "title": "The Framing of Decisions and the Psychology of Choice - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1007/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1007/",
+      "englishFile": "en/quellenarchiv/wok-q-1007/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1007/",
+      "category": "quellenarchiv",
+      "title": "Voters’ Orientations Towards Democracy: A New Conceptual Framework - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1008/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1008/",
+      "englishFile": "en/quellenarchiv/wok-q-1008/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1008/",
+      "category": "quellenarchiv",
+      "title": "Bundestagswahl 2025: Endgültiges Ergebnis - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1009/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1009/",
+      "englishFile": "en/quellenarchiv/wok-q-1009/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1009/",
+      "category": "quellenarchiv",
+      "title": "The Psychological Drivers of Misinformation Belief and Its Resistance to Correction - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1010/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1010/",
+      "englishFile": "en/quellenarchiv/wok-q-1010/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1010/",
+      "category": "quellenarchiv",
+      "title": "Voting Motives in the 2025 Federal Election - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1011/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1011/",
+      "englishFile": "en/quellenarchiv/wok-q-1011/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1011/",
+      "category": "quellenarchiv",
+      "title": "Resisting the Far Right: A Systematic Analysis of Civil Society Strategies - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1012/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1012/",
+      "englishFile": "en/quellenarchiv/wok-q-1012/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1012/",
+      "category": "quellenarchiv",
+      "title": "#bundestagswahl: Hashtags and Party Visibility in the 2025 German Federal Election on TikTok - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1013/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1013/",
+      "englishFile": "en/quellenarchiv/wok-q-1013/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1013/",
+      "category": "quellenarchiv",
+      "title": "Abgrenzung oder Anpassung? Zum Umgang mit populistischen Parteien - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1014/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1014/",
+      "englishFile": "en/quellenarchiv/wok-q-1014/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1014/",
+      "category": "quellenarchiv",
+      "title": "Psychological Inoculation Improves Resilience Against Misinformation on Social Media - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1015/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1015/",
+      "englishFile": "en/quellenarchiv/wok-q-1015/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1015/",
+      "category": "quellenarchiv",
+      "title": "Far-right Agenda Setting: How the Far Right Influences the Political Mainstream - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1016/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1016/",
+      "englishFile": "en/quellenarchiv/wok-q-1016/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1016/",
+      "category": "quellenarchiv",
+      "title": "How to Explain the German East–West Divide in Support of a Populist Radical Right Party (AfD) - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1017/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1017/",
+      "englishFile": "en/quellenarchiv/wok-q-1017/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1017/",
+      "category": "quellenarchiv",
+      "title": "Engagement with Political Videos on TikTok During the 2025 German Federal Election - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1018/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1018/",
+      "englishFile": "en/quellenarchiv/wok-q-1018/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1018/",
+      "category": "quellenarchiv",
+      "title": "Wirkungsökonomie: Begriffe und Referenztexte - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1019/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1019/",
+      "englishFile": "en/quellenarchiv/wok-q-1019/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1019/",
+      "category": "quellenarchiv",
+      "title": "Resilience and Stability of Ecological Systems - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1020/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1020/",
+      "englishFile": "en/quellenarchiv/wok-q-1020/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1020/",
+      "category": "quellenarchiv",
+      "title": "From Metaphor to Measurement: Resilience of What to What? - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1021/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1021/",
+      "englishFile": "en/quellenarchiv/wok-q-1021/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1021/",
+      "category": "quellenarchiv",
+      "title": "Resilience, Adaptability and Transformability in Social-ecological Systems - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1022/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1022/",
+      "englishFile": "en/quellenarchiv/wok-q-1022/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1022/",
+      "category": "quellenarchiv",
+      "title": "Resilience: The Emergence of a Perspective for Social-ecological Systems Analyses - Quellenarchiv - Wirkungsökonomie",
+      "status": "missing"
+    },
+    {
+      "sourceFile": "quellenarchiv/wok-q-1023/index.html",
+      "sourceRoute": "/quellenarchiv/wok-q-1023/",
+      "englishFile": "en/quellenarchiv/wok-q-1023/index.html",
+      "englishRoute": "/en/quellenarchiv/wok-q-1023/",
+      "category": "quellenarchiv",
+      "title": "IPCC AR6 WGII Annex II: Glossary – Resilience - Quellenarchiv - Wirkungsökonomie",
       "status": "missing"
     },
     {

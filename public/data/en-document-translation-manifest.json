@@ -1,18 +1,18 @@
 {
   "schemaVersion": "2026-07-english-download-documents",
-  "generatedAt": "2026-07-15",
+  "generatedAt": "2026-07-30",
   "locale": "en",
   "targetBaseRule": "English downloadable document variants live next to public download roots under an en/ subfolder and use the .en file-name suffix.",
   "imagePolicy": "Raster images and German text embedded inside raster images remain unchanged for the first English release. SVG and editable text layers may be translated.",
   "routingPolicy": "English pages must prefer englishUrl when status is available. If status is missing, English pages should not silently label the German source as English.",
   "counts": {
-    "total": 728,
+    "total": 877,
     "available": 0,
-    "missing": 728,
-    "p0": 35,
-    "p1": 668,
+    "missing": 877,
+    "p0": 36,
+    "p1": 816,
     "p2": 25,
-    "library": 35,
+    "library": 36,
     "studyScripts": 0
   },
   "items": [
@@ -20936,6 +20936,7 @@
       "referencedBy": [
         "bibliothek/eintraege/leading-reference-buch-html/index.html",
         "bibliothek/standardwerk-neue-ordnung-wohlstands-2026/index.html",
+        "blog/systemresilienz-statt-nachhaltigkeit/index.html",
         "buch.html",
         "dokumente/index.html",
         "export/index.html",
@@ -21412,6 +21413,2866 @@
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
       "priority": "P0"
+    },
+    {
+      "id": "assets-pdf-journal-afd-ideologie-kann-deinen-job-kosten-index-pdf",
+      "sourcePath": "assets/pdf/journal/afd-ideologie-kann-deinen-job-kosten/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/afd-ideologie-kann-deinen-job-kosten/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/afd-ideologie-kann-deinen-job-kosten/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/afd-ideologie-kann-deinen-job-kosten/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-afd-ideologie-kann-deinen-job-kosten-index-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie-pdf",
+      "sourcePath": "assets/pdf/journal/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-co2-preis-warum-wir-ihn-ohnehin-zahlen-pdf",
+      "sourcePath": "assets/pdf/journal/co2-preis-warum-wir-ihn-ohnehin-zahlen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/co2-preis-warum-wir-ihn-ohnehin-zahlen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/co2-preis-warum-wir-ihn-ohnehin-zahlen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/co2-preis-warum-wir-ihn-ohnehin-zahlen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "co2-preis-warum-wir-ihn-ohnehin-zahlen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-co2-preis-warum-wir-ihn-ohnehin-zahlen-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-das-managementmodell-der-zukunft-index-pdf",
+      "sourcePath": "assets/pdf/journal/das-managementmodell-der-zukunft/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/das-managementmodell-der-zukunft/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/das-managementmodell-der-zukunft/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/das-managementmodell-der-zukunft/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-das-managementmodell-der-zukunft-index-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-das-schachbrett-der-oeffentlichkeit-pdf",
+      "sourcePath": "assets/pdf/journal/das-schachbrett-der-oeffentlichkeit.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/das-schachbrett-der-oeffentlichkeit.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/das-schachbrett-der-oeffentlichkeit.pdf",
+      "englishUrl": "/assets/pdf/en/journal/das-schachbrett-der-oeffentlichkeit.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "das-schachbrett-der-oeffentlichkeit",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-das-schachbrett-der-oeffentlichkeit-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems-pdf",
+      "sourcePath": "assets/pdf/journal/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.pdf",
+      "englishUrl": "/assets/pdf/en/journal/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-der-verbrenner-stirbt-durch-risikomanagement-des-finanzs/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-der-versoehner-und-die-wellen-index-pdf",
+      "sourcePath": "assets/pdf/journal/der-versoehner-und-die-wellen/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/der-versoehner-und-die-wellen/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/der-versoehner-und-die-wellen/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/der-versoehner-und-die-wellen/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-der-versoehner-und-die-wellen-index-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-die-fraunhoferschen-linien-des-preises-pdf",
+      "sourcePath": "assets/pdf/journal/die-fraunhoferschen-linien-des-preises.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/die-fraunhoferschen-linien-des-preises.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/die-fraunhoferschen-linien-des-preises.pdf",
+      "englishUrl": "/assets/pdf/en/journal/die-fraunhoferschen-linien-des-preises.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "die-fraunhoferschen-linien-des-preises",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-die-fraunhoferschen-linien-des-preises-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-die-stille-neubewertung-pdf",
+      "sourcePath": "assets/pdf/journal/die-stille-neubewertung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/die-stille-neubewertung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/die-stille-neubewertung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/die-stille-neubewertung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "die-stille-neubewertung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-die-stille-neubewertung-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-geg-wirkungscheck-ioi-t-sroi-pdf",
+      "sourcePath": "assets/pdf/journal/geg-wirkungscheck-ioi-t-sroi.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/geg-wirkungscheck-ioi-t-sroi.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/geg-wirkungscheck-ioi-t-sroi.pdf",
+      "englishUrl": "/assets/pdf/en/journal/geg-wirkungscheck-ioi-t-sroi.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "geg-wirkungscheck-ioi-t-sroi",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-geg-wirkungscheck-ioi-t-sroi-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-ki-souveraenitaet-statt-abhaengigkeit-fable-moment-pdf",
+      "sourcePath": "assets/pdf/journal/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.pdf",
+      "englishUrl": "/assets/pdf/en/journal/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "ki-souveraenitaet-statt-abhaengigkeit-fable-moment",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-ki-souveraenitaet-statt-abhaengigkeit-fable-moment-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-ki-texte-kennzeichnen-wirkung-verantwortung-pdf",
+      "sourcePath": "assets/pdf/journal/ki-texte-kennzeichnen-wirkung-verantwortung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/ki-texte-kennzeichnen-wirkung-verantwortung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/ki-texte-kennzeichnen-wirkung-verantwortung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/ki-texte-kennzeichnen-wirkung-verantwortung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "ki-texte-kennzeichnen-wirkung-verantwortung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-ki-texte-kennzeichnen-wirkung-verantwortung-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-kognitive-dissonanz-als-wirkungsbremse-index-pdf",
+      "sourcePath": "assets/pdf/journal/kognitive-dissonanz-als-wirkungsbremse/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/kognitive-dissonanz-als-wirkungsbremse/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/kognitive-dissonanz-als-wirkungsbremse/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/kognitive-dissonanz-als-wirkungsbremse/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-kognitive-dissonanz-als-wirkungsbremse-index-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus-pdf",
+      "sourcePath": "assets/pdf/journal/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.pdf",
+      "englishUrl": "/assets/pdf/en/journal/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-kollaps-der-zivilisation-systemresilienz-demokratie-sdgp/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-leistung-ohne-wirkung-pdf",
+      "sourcePath": "assets/pdf/journal/leistung-ohne-wirkung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/leistung-ohne-wirkung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/leistung-ohne-wirkung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/leistung-ohne-wirkung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "leistung-ohne-wirkung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-leistung-ohne-wirkung-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-08-09-wirkung-statt-kapital-zeit-fur-eine/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-09-19-die-wirtschaft-ist-keine-marklin-eis/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-06-die-wirkungsokonomie-warum-wir-wirts/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-07-wenn-maschinen-arbeiten-warum-die-wi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-08-solar-verschenken-ware-billiger-als/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-neues-grundsicherungs-kapitel-nur-ei/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-technologieoffenheit-freiheit-oder-f/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-warum-die-freie-marktwirtschaft-sich/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-was-china-mit-solar-macht-und-warum/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-11-warum-das-richtige-endlich-gunstiger-wird-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-11-warum-das-richtige-endlich-gunstiger-wird.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-11-warum-das-richtige-endlich-gunstiger-wird.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-11-warum-das-richtige-endlich-gunstiger-wird.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-11-warum-das-richtige-endlich-gunstiger-wird.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-11-warum-das-richtige-endlich-gunstiger-wird",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-11-warum-das-richtige-endlich-gunstiger/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsm/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-produktbesteuerung-durch-wirkung-wen/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wie-die-wirkungsokonomie-das-rentenp/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-leistung-das-neue-eink/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-zertifikate-wie-die-wi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-14-medien-wirkung-warum-die-zukunft-der/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-16-vom-steuersystem-zum-steuerungssyste/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-10-24-von-werten-zu-wirkung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-10-24-von-werten-zu-wirkung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-10-24-von-werten-zu-wirkung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-10-24-von-werten-zu-wirkung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-10-24-von-werten-zu-wirkung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-10-24-von-werten-zu-wirkung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-24-von-werten-zu-wirkung-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-02-wenn-maschinen-arbeiten-warum-wir-da/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-07-warum-deutschland-wohlstand-verschen/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-18-der-historische-fehler-vor-120-jahre/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-28-die-wirkungsokonomie-warum-wir-ein-n/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-11-wenn-politik-scheitert-ubernimmt-der/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-12-die-wirkungsokonomie-ein-lernendes-k/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-13-warum-demokratie-sich-selbst-destabilisiert-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-13-warum-demokratie-sich-selbst-destabilisiert",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-13-warum-demokratie-sich-selbst-destabi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-15-medien-plattformen-und-wirkung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-15-medien-plattformen-und-wirkung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-15-medien-plattformen-und-wirkung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-15-medien-plattformen-und-wirkung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-15-medien-plattformen-und-wirkung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-15-medien-plattformen-und-wirkung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-15-medien-plattformen-und-wirkung-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-15-was-ist-leistung-im-21-jahrhundert-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-15-was-ist-leistung-im-21-jahrhundert.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-15-was-ist-leistung-im-21-jahrhundert.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-15-was-ist-leistung-im-21-jahrhundert.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-15-was-ist-leistung-im-21-jahrhundert.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-15-was-ist-leistung-im-21-jahrhundert",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-15-was-ist-leistung-im-21-jahrhundert-p/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-16-warum-wir-glauben-nachhaltigkeit-sei/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-16-wirkungsokonomie-wie-wir-wirtschaft/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-18-die-grenzen-der-zukunftsforschung-un/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-22-von-der-pigou-steuer-zur-wirkungsoko/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2025-12-30-wie-die-wirkungsokonomie-funktioniert-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2025-12-30-wie-die-wirkungsokonomie-funktioniert.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2025-12-30-wie-die-wirkungsokonomie-funktioniert.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2025-12-30-wie-die-wirkungsokonomie-funktioniert.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2025-12-30-wie-die-wirkungsokonomie-funktioniert.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2025-12-30-wie-die-wirkungsokonomie-funktioniert",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-30-wie-die-wirkungsokonomie-funktionier/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-04-gedankenspiel-wenn-sich-demokratien/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-05-reverse-merit-order-wie-wirkungsokon/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkun/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-09-soziale-resilienz-gegen-verhetzung-e/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-13-schadenokonomie-wie-aufhetzung-und-s/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-14-warum-leistung-ohne-wirkung-eine-ill/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-17-das-grote-steuersparprogramm-der-geschichte-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-17-das-grote-steuersparprogramm-der-geschichte.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-17-das-grote-steuersparprogramm-der-geschichte.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-17-das-grote-steuersparprogramm-der-geschichte.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-17-das-grote-steuersparprogramm-der-geschichte.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-17-das-grote-steuersparprogramm-der-geschichte",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-17-das-grote-steuersparprogramm-der-ges/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-17-meinungsfreiheit-braucht-mehr-als-gu/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-22-wirkung-schlagt-wahrheit-wie-offentl/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-28-wirkung-statt-weltbild-eine-wirkungs/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-01-29-was-ist-wirkungsokonomie-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-01-29-was-ist-wirkungsokonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-01-29-was-ist-wirkungsokonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-01-29-was-ist-wirkungsokonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-01-29-was-ist-wirkungsokonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-01-29-was-ist-wirkungsokonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-29-was-ist-wirkungsokonomie-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-03-warum-unser-wirtschaftsmodell-an-sei/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-03-wenn-fakten-nicht-mehr-reichen-warum/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-w/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-06-wenn-kommunikation-realitat-formt-wi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-07-macht-ohne-mehrheit-die-afd-strategi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-08-millionen-seiten-und-trotzdem-keine/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-09-von-der-wertschopfungskette-zum-wirk/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-impact-controlling-im-unternehmen-vo/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-warum-die-vollbremsung-von-wind-und/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-wie-setzt-man-die-wirkungsokonomie-u/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-10-wirkungsorientierte-unternehmensfuhrung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-10-wirkungsorientierte-unternehmensfuhrung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-wirkungsorientierte-unternehmensfuhr/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-11-warum-der-ruckhalt-fur-klimaschutz-s/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wu/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-12-wirkungsokonomie-wir-messen-wirkung/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-15-der-co2-preis-konnte-zu-einem-der-wi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-16-der-co2-rucksack-sagt-systemisch-nic/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-16-zeit-der-monster-munchen-macht-und-d/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-17-was-wir-2021-furchteten-und-was-wir/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-18-demokratie-schutzen-menschen-zuruckg/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-19-nachhaltigkeit-ist-keine-strategie-s/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-20-die-unterschatzte-macht-der-tonalita/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-20-multipolare-systemdynamik-2025-siche/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-21-social-media-fur-kinder-jugendschutz/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-22-warum-fakten-nicht-reichen-und-was-s/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-26-energie-ist-infrastruktur-warum-erne/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-02-wirkungsokonomische-einordnung-geopo/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-03-die-grungasstrategie-im-warmemarkt-e/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-04-multikrisen-zeigen-eine-neue-okonomi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-05-wenn-emporung-zum-verstarker-wird-un/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-06-csrd-warum-eine-berichtspflicht-zum/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-07-thermodynamik-des-diskurses-informat/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-10-wirtschaft-in-einer-welt-systemische/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-z/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-13-die-architektur-der-europaischen-nac/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-17-das-grote-missverstandnis-bei-nachha/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-19-25-der-bevolkerung-gegen-unsere-wirt/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-20-integritat-als-blinder-fleck-der-transformation-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-20-integritat-als-blinder-fleck-der-transformation",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-20-integritat-als-blinder-fleck-der-tra/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-fakt/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-wir/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-reporting-burnout-oder-resilienz-cha/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-das-neue-gebaudeenergiegesetz/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-wir-den-klimawandel-systematis/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-24-warum-politik-immer-zu-spat-handelt/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-25-das-ende-der-symbolpolitik-warum-der/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-25-warum-wir-schneller-grun-werden-als/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-02-ai-first-ist-eine-sackgasse-nicht-we/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-14-warum-spates-handeln-immer-teurer-wi/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-15-wenn-politik-unternehmen-nach-argume/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-19-die-afd-im-wirkungscheck-warum-diese/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-linkedin-2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht-pdf",
+      "sourcePath": "assets/pdf/journal/linkedin/2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/linkedin/2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/linkedin/2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht.pdf",
+      "englishUrl": "/assets/pdf/en/journal/linkedin/2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-22-warum-selbst-die-common-good-economy/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-nicht-billiger-werden-besser-werden-index-pdf",
+      "sourcePath": "assets/pdf/journal/nicht-billiger-werden-besser-werden/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/nicht-billiger-werden-besser-werden/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/nicht-billiger-werden-besser-werden/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/nicht-billiger-werden-besser-werden/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-nicht-billiger-werden-besser-werden-index-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln-pdf",
+      "sourcePath": "assets/pdf/journal/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.pdf",
+      "englishUrl": "/assets/pdf/en/journal/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-re/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung-pdf",
+      "sourcePath": "assets/pdf/journal/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkun/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-oeffentlicher-wirkungsraum-debatten-resonanz-resilienz-pdf",
+      "sourcePath": "assets/pdf/journal/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.pdf",
+      "englishUrl": "/assets/pdf/en/journal/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "oeffentlicher-wirkungsraum-debatten-resonanz-resilienz",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-oeffentlicher-wirkungsraum-debatten-resonanz-resilienz-p/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-partei-der-verwundbarkeit-afd-programm-index-pdf",
+      "sourcePath": "assets/pdf/journal/partei-der-verwundbarkeit-afd-programm/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/partei-der-verwundbarkeit-afd-programm/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/partei-der-verwundbarkeit-afd-programm/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/partei-der-verwundbarkeit-afd-programm/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-partei-der-verwundbarkeit-afd-programm-index-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-schadenoekonomie-pdf",
+      "sourcePath": "assets/pdf/journal/schadenoekonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/schadenoekonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/schadenoekonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/schadenoekonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "schadenoekonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-schadenoekonomie-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-schoepferisch-zerstoert-konservative-politik-systemresilienz-index-pdf",
+      "sourcePath": "assets/pdf/journal/schoepferisch-zerstoert-konservative-politik-systemresilienz/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/schoepferisch-zerstoert-konservative-politik-systemresilienz/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/schoepferisch-zerstoert-konservative-politik-systemresilienz/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/schoepferisch-zerstoert-konservative-politik-systemresilienz/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-schoepferisch-zerstoert-konservative-politik-systemresil/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-social-media-verbot-kinder-falscher-ansatz-pdf",
+      "sourcePath": "assets/pdf/journal/social-media-verbot-kinder-falscher-ansatz.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/social-media-verbot-kinder-falscher-ansatz.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/social-media-verbot-kinder-falscher-ansatz.pdf",
+      "englishUrl": "/assets/pdf/en/journal/social-media-verbot-kinder-falscher-ansatz.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "social-media-verbot-kinder-falscher-ansatz",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-social-media-verbot-kinder-falscher-ansatz-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-social-taxonomy-soziale-wirkung-nachhaltige-maerkte-pdf",
+      "sourcePath": "assets/pdf/journal/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.pdf",
+      "englishUrl": "/assets/pdf/en/journal/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "social-taxonomy-soziale-wirkung-nachhaltige-maerkte",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-social-taxonomy-soziale-wirkung-nachhaltige-maerkte-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-soziale-resilienz-gegen-verhetzung-pdf",
+      "sourcePath": "assets/pdf/journal/soziale-resilienz-gegen-verhetzung.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/soziale-resilienz-gegen-verhetzung.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/soziale-resilienz-gegen-verhetzung.pdf",
+      "englishUrl": "/assets/pdf/en/journal/soziale-resilienz-gegen-verhetzung.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "soziale-resilienz-gegen-verhetzung",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-soziale-resilienz-gegen-verhetzung-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-spaltung-ueberwinden-demokratie-wirkungsraeume-pdf",
+      "sourcePath": "assets/pdf/journal/spaltung-ueberwinden-demokratie-wirkungsraeume.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/spaltung-ueberwinden-demokratie-wirkungsraeume.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/spaltung-ueberwinden-demokratie-wirkungsraeume.pdf",
+      "englishUrl": "/assets/pdf/en/journal/spaltung-ueberwinden-demokratie-wirkungsraeume.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "spaltung-ueberwinden-demokratie-wirkungsraeume",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-spaltung-ueberwinden-demokratie-wirkungsraeume-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-sprache-als-politischer-wirkstoff-rechte-narrative-pdf",
+      "sourcePath": "assets/pdf/journal/sprache-als-politischer-wirkstoff-rechte-narrative.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/sprache-als-politischer-wirkstoff-rechte-narrative.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/sprache-als-politischer-wirkstoff-rechte-narrative.pdf",
+      "englishUrl": "/assets/pdf/en/journal/sprache-als-politischer-wirkstoff-rechte-narrative.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "sprache-als-politischer-wirkstoff-rechte-narrative",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-sprache-als-politischer-wirkstoff-rechte-narrative-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-stranded-assets-gebaeudebestand-pdf",
+      "sourcePath": "assets/pdf/journal/stranded-assets-gebaeudebestand.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/stranded-assets-gebaeudebestand.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/stranded-assets-gebaeudebestand.pdf",
+      "englishUrl": "/assets/pdf/en/journal/stranded-assets-gebaeudebestand.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "stranded-assets-gebaeudebestand",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-stranded-assets-gebaeudebestand-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-stranded-germany-afd-politik-refinanzierungsresilienz-pdf",
+      "sourcePath": "assets/pdf/journal/stranded-germany-afd-politik-refinanzierungsresilienz.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/stranded-germany-afd-politik-refinanzierungsresilienz.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/stranded-germany-afd-politik-refinanzierungsresilienz.pdf",
+      "englishUrl": "/assets/pdf/en/journal/stranded-germany-afd-politik-refinanzierungsresilienz.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "stranded-germany-afd-politik-refinanzierungsresilienz",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-stranded-germany-afd-politik-refinanzierungsresilienz-pd/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-strom-vom-nachbarn-energy-sharing-wirkungsoekonomie-pdf",
+      "sourcePath": "assets/pdf/journal/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "strom-vom-nachbarn-energy-sharing-wirkungsoekonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-strom-vom-nachbarn-energy-sharing-wirkungsoekonomie-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-systemresilienz-statt-nachhaltigkeit-index-pdf",
+      "sourcePath": "assets/pdf/journal/systemresilienz-statt-nachhaltigkeit/index.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/systemresilienz-statt-nachhaltigkeit/index.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/systemresilienz-statt-nachhaltigkeit/index.pdf",
+      "englishUrl": "/assets/pdf/en/journal/systemresilienz-statt-nachhaltigkeit/index.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "index",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-systemresilienz-statt-nachhaltigkeit-index-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-pdf",
+      "sourcePath": "assets/pdf/journal/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.pdf",
+      "englishUrl": "/assets/pdf/en/journal/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "technologieoffenheit-wirkungsoffenheit-geg-verbrenner",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-pd/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-vom-gemeinwohl-kompass-zur-wirkungsoekonomie-pdf",
+      "sourcePath": "assets/pdf/journal/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "vom-gemeinwohl-kompass-zur-wirkungsoekonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-vom-gemeinwohl-kompass-zur-wirkungsoekonomie-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-pdf",
+      "sourcePath": "assets/pdf/journal/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.pdf",
+      "englishUrl": "/assets/pdf/en/journal/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "von-der-wissensgesellschaft-zur-wirkungsgesellschaft",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-warum-billig-oft-teuer-ist-pdf",
+      "sourcePath": "assets/pdf/journal/warum-billig-oft-teuer-ist.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/warum-billig-oft-teuer-ist.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/warum-billig-oft-teuer-ist.pdf",
+      "englishUrl": "/assets/pdf/en/journal/warum-billig-oft-teuer-ist.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "warum-billig-oft-teuer-ist",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-warum-billig-oft-teuer-ist-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-warum-ich-das-wirkungsinstitut-gegruendet-habe-pdf",
+      "sourcePath": "assets/pdf/journal/warum-ich-das-wirkungsinstitut-gegruendet-habe.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/warum-ich-das-wirkungsinstitut-gegruendet-habe.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/warum-ich-das-wirkungsinstitut-gegruendet-habe.pdf",
+      "englishUrl": "/assets/pdf/en/journal/warum-ich-das-wirkungsinstitut-gegruendet-habe.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "warum-ich-das-wirkungsinstitut-gegruendet-habe",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-warum-ich-das-wirkungsinstitut-gegruendet-habe-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst-pdf",
+      "sourcePath": "assets/pdf/journal/warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst.pdf",
+      "englishUrl": "/assets/pdf/en/journal/warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie-pdf",
+      "sourcePath": "assets/pdf/journal/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-was-der-staat-wirklich-produziert-steuern-wirkungsoekono/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-was-ist-nachhaltigkeit-wirklich-pdf",
+      "sourcePath": "assets/pdf/journal/was-ist-nachhaltigkeit-wirklich.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/was-ist-nachhaltigkeit-wirklich.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/was-ist-nachhaltigkeit-wirklich.pdf",
+      "englishUrl": "/assets/pdf/en/journal/was-ist-nachhaltigkeit-wirklich.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "was-ist-nachhaltigkeit-wirklich",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-was-ist-nachhaltigkeit-wirklich-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf",
+      "sourcePath": "assets/pdf/journal/wellen-tiefen-modell-oeffentliche-kommunikation.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wellen-tiefen-modell-oeffentliche-kommunikation.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wellen-tiefen-modell-oeffentliche-kommunikation.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wellen-tiefen-modell-oeffentliche-kommunikation.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wellen-tiefen-modell-oeffentliche-kommunikation",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement-pdf",
+      "sourcePath": "assets/pdf/journal/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsma/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wir-messen-das-falsche-pdf",
+      "sourcePath": "assets/pdf/journal/wir-messen-das-falsche.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wir-messen-das-falsche.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wir-messen-das-falsche.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wir-messen-das-falsche.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wir-messen-das-falsche",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wir-messen-das-falsche-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkstoff-narrative-rechte-frames-wirkungspotenzial-pdf",
+      "sourcePath": "assets/pdf/journal/wirkstoff-narrative-rechte-frames-wirkungspotenzial.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkstoff-narrative-rechte-frames-wirkungspotenzial.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkstoff-narrative-rechte-frames-wirkungspotenzial.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkstoff-narrative-rechte-frames-wirkungspotenzial.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkstoff-narrative-rechte-frames-wirkungspotenzial",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkstoff-narrative-rechte-frames-wirkungspotenzial-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkung-schlaegt-wahrheit-pdf",
+      "sourcePath": "assets/pdf/journal/wirkung-schlaegt-wahrheit.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkung-schlaegt-wahrheit.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkung-schlaegt-wahrheit.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkung-schlaegt-wahrheit.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkung-schlaegt-wahrheit",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkung-schlaegt-wahrheit-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkung-statt-weltbild-afd-regierungsprogramm-pdf",
+      "sourcePath": "assets/pdf/journal/wirkung-statt-weltbild-afd-regierungsprogramm.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkung-statt-weltbild-afd-regierungsprogramm.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkung-statt-weltbild-afd-regierungsprogramm.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkung-statt-weltbild-afd-regierungsprogramm.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkung-statt-weltbild-afd-regierungsprogramm",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkung-statt-weltbild-afd-regierungsprogramm-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkungsoekonomie-kein-parteiprogramm-pdf",
+      "sourcePath": "assets/pdf/journal/wirkungsoekonomie-kein-parteiprogramm.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkungsoekonomie-kein-parteiprogramm.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkungsoekonomie-kein-parteiprogramm.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkungsoekonomie-kein-parteiprogramm.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkungsoekonomie-kein-parteiprogramm",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungsoekonomie-kein-parteiprogramm-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkungsoekonomie-lernendes-kreislaufsystem-pdf",
+      "sourcePath": "assets/pdf/journal/wirkungsoekonomie-lernendes-kreislaufsystem.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkungsoekonomie-lernendes-kreislaufsystem.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkungsoekonomie-lernendes-kreislaufsystem.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkungsoekonomie-lernendes-kreislaufsystem.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkungsoekonomie-lernendes-kreislaufsystem",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungsoekonomie-lernendes-kreislaufsystem-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkungspotenzial-warum-fakten-allein-nicht-wirken-pdf",
+      "sourcePath": "assets/pdf/journal/wirkungspotenzial-warum-fakten-allein-nicht-wirken.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkungspotenzial-warum-fakten-allein-nicht-wirken.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkungspotenzial-warum-fakten-allein-nicht-wirken.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkungspotenzial-warum-fakten-allein-nicht-wirken.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkungspotenzial-warum-fakten-allein-nicht-wirken",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/journal-blog-wirkungspotenzial-warum-fakten-allein-nicht-wirken-html/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkungsschule-wirkungspaedagogik-wirkungskompetenz-pdf",
+      "sourcePath": "assets/pdf/journal/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkungsschule-wirkungspaedagogik-wirkungskompetenz",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/online-version-werkstatt-arbeitsbibliothek-wirkungsfelder-bildung-wirkungsschule-wirkungspaedago/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-pdf-journal-wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie-pdf",
+      "sourcePath": "assets/pdf/journal/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.pdf",
+      "englishTargetPath": "assets/pdf/en/journal/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.en.pdf",
+      "sourceUrl": "/assets/pdf/journal/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.pdf",
+      "englishUrl": "/assets/pdf/en/journal/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.en.pdf",
+      "fileType": "pdf",
+      "kind": "pdf-asset",
+      "titleDe": "wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungswissenschaften-wirkungsforschung-wirkungsoekonom/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
     },
     {
       "id": "assets-pdf-leitbild-mensch-planet-demokratie-pdf",
@@ -22427,11 +25288,51 @@
       "priority": "P0"
     },
     {
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
+      "englishTargetPath": "public/downloads/en/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.en.pdf",
+      "sourceUrl": "/public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
+      "englishUrl": "/public/downloads/en/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.en.pdf",
+      "fileType": "pdf",
+      "kind": "public-original",
+      "titleDe": "Nachhaltigkeit als Systemresilienz",
+      "titleEn": "",
+      "libraryVisibility": "public",
+      "librarySection": "Grundlagen & Leitbild",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P0"
+    },
+    {
+      "id": "nachhaltigkeit-systemarchitektur-v1-1",
+      "sourcePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.1.pdf",
+      "englishTargetPath": "public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur-v1.1.en.pdf",
+      "sourceUrl": "/public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.1.pdf",
+      "englishUrl": "/public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur-v1.1.en.pdf",
+      "fileType": "pdf",
+      "kind": "public-original",
+      "titleDe": "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur. v1.1",
+      "titleEn": "",
+      "libraryVisibility": "archive",
+      "librarySection": "Archiv",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-v1-1-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
       "id": "nachhaltigkeit-systemarchitektur",
-      "sourcePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf",
-      "englishTargetPath": "public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur.en.pdf",
-      "sourceUrl": "/public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf",
-      "englishUrl": "/public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur.en.pdf",
+      "sourcePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.2.pdf",
+      "englishTargetPath": "public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur-v1.2.en.pdf",
+      "sourceUrl": "/public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.2.pdf",
+      "englishUrl": "/public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur-v1.2.en.pdf",
       "fileType": "pdf",
       "kind": "public-original",
       "titleDe": "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.",
@@ -22440,13 +25341,33 @@
       "librarySection": "Grundlagen & Leitbild",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-pdf/index.html",
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-pdf/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-v1-2-pdf/index.html",
         "bibliothek/nachhaltigkeit-systemarchitektur/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
       "priority": "P0"
+    },
+    {
+      "id": "public-downloads-originals-nachhaltigkeit-systemarchitektur-pdf",
+      "sourcePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf",
+      "englishTargetPath": "public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur.en.pdf",
+      "sourceUrl": "/public/downloads/originals/Nachhaltigkeit-Systemarchitektur.pdf",
+      "englishUrl": "/public/downloads/en/originals/Nachhaltigkeit-Systemarchitektur.en.pdf",
+      "fileType": "pdf",
+      "kind": "public-original",
+      "titleDe": "Nachhaltigkeit-Systemarchitektur",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-pdf/index.html",
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-pdf/lesen/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
     },
     {
       "id": "nats-woek-allgemein",
@@ -22616,7 +25537,6 @@
       "librarySection": "Grundlagen & Leitbild",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html/index.html",
         "bibliothek/eintraege/online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html/lesen/00-dokumentdaten/index.html",
         "bibliothek/eintraege/online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html/lesen/01-inhaltsverzeichnis/index.html",
         "bibliothek/eintraege/online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html/lesen/02-executive-summary/index.html",
@@ -23019,7 +25939,7 @@
       "priority": "P0"
     },
     {
-      "id": "woek-begriffsleitfaden-fuehrend",
+      "id": "woek-begriffsleitfaden-fuehrend-v1-0",
       "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
       "englishTargetPath": "public/downloads/en/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.en.pdf",
       "sourceUrl": "/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
@@ -23028,11 +25948,11 @@
       "kind": "public-original",
       "titleDe": "WÖk-Begriffsleitfaden führend v1.0",
       "titleEn": "",
-      "libraryVisibility": "public",
-      "librarySection": "Führende Referenzen",
+      "libraryVisibility": "archive",
+      "librarySection": "Archiv",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/index.html",
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/00-fuhrender-begriffsleitfaden-der/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/01-wirkungsokonomie/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/02-1-zweck-dieses-dokuments/index.html",
@@ -23056,7 +25976,67 @@
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/20-13-prufcheckliste-fur-neue-inhalte/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/21-14-fuhrende-mini-definitionen-fur-hover-glossar/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/22-15-schlussformel/index.html",
-        "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/index.html",
+        "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-1-pdf",
+      "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf",
+      "englishTargetPath": "public/downloads/en/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.en.pdf",
+      "sourceUrl": "/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf",
+      "englishUrl": "/public/downloads/en/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.en.pdf",
+      "fileType": "pdf",
+      "kind": "public-original",
+      "titleDe": "WOeK_Begriffsleitfaden_fuehrend_v1.1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-1-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-2",
+      "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
+      "englishTargetPath": "public/downloads/en/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.en.pdf",
+      "sourceUrl": "/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
+      "englishUrl": "/public/downloads/en/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.en.pdf",
+      "fileType": "pdf",
+      "kind": "public-original",
+      "titleDe": "WÖk-Begriffsleitfaden führend v1.2",
+      "titleEn": "",
+      "libraryVisibility": "archive",
+      "librarySection": "Archiv",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-2-pdf/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend",
+      "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
+      "englishTargetPath": "public/downloads/en/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.en.pdf",
+      "sourceUrl": "/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
+      "englishUrl": "/public/downloads/en/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.en.pdf",
+      "fileType": "pdf",
+      "kind": "public-original",
+      "titleDe": "WÖk-Begriffsleitfaden führend v1.3",
+      "titleEn": "",
+      "libraryVisibility": "public",
+      "librarySection": "Führende Referenzen",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/index.html",
         "bibliothek/woek-begriffsleitfaden-fuehrend/index.html"
       ],
       "status": "missing",

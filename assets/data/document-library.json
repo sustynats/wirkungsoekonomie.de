@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T10:33:45.359Z",
+  "generatedAt": "2026-07-30T18:16:47.163Z",
   "documents": [
     {
       "id": "minifest-wirkungsoekonomie",
@@ -937,7 +937,7 @@
     {
       "id": "woek-begriffsleitfaden-fuehrend",
       "slug": "woek-begriffsleitfaden-fuehrend",
-      "title": "WÖk-Begriffsleitfaden führend v1.0",
+      "title": "WÖk-Begriffsleitfaden führend v1.3",
       "subtitle": "Maßgebliche Sprachreferenz der Wirkungsökonomie",
       "documentType": "redaktionsgrundlage",
       "status": "führend",
@@ -948,11 +948,79 @@
         "Akademie"
       ],
       "level": "fortgeschritten",
-      "summaryShort": "Führende Sprachreferenz für Begriffe wie Wirkung, positive Netto-Wirkung, SDG+ und MPD.",
+      "summaryShort": "Führende Sprachreferenz v1.3 mit Nachhaltigkeit als langfristig gesicherter Wirkungsresilienz und acht Analysebausteinen von Resilienz und Systementwicklung.",
       "topics": [
         "Begriffe",
         "Glossar",
-        "Sprachregelwerk"
+        "Sprachregelwerk",
+        "Wirkungsresilienz",
+        "Systemresilienz"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 25,
+      "estimatedReadingTime": "43 Min.",
+      "downloadAllowed": true,
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-2",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-2",
+      "title": "WÖk-Begriffsleitfaden führend v1.2",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.2 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 23,
+      "estimatedReadingTime": "39 Min.",
+      "downloadAllowed": true,
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend-v1-2/"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-0",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-0",
+      "title": "WÖk-Begriffsleitfaden führend v1.0",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.0 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv"
       ],
       "methods": [
         "Begriffliche Orientierung"
@@ -965,7 +1033,7 @@
       "pageCount": 15,
       "estimatedReadingTime": "26 Min.",
       "downloadAllowed": true,
-      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend-v1-0/"
     },
     {
       "id": "sexarbeit-als-soziale-infrastruktur",
@@ -1084,14 +1152,17 @@
         "Methodik"
       ],
       "level": "expert",
-      "summaryShort": "Grundlagenpapier zur systemischen Einordnung von Nachhaltigkeit als interdependente Wirkungsarchitektur.",
+      "summaryShort": "Version 1.2 des Grundlagenpapiers: Nachhaltigkeit als langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.",
       "topics": [
         "Nachhaltigkeit",
         "Systemarchitektur",
+        "Systemresilienz",
+        "Wirkungsresilienz",
         "Transformation"
       ],
       "methods": [
         "Wirkungsarchitektur",
+        "Systemresilienz",
         "SDGs & SDG+",
         "Reverse Merit Order",
         "Nichtkompensation"
@@ -1101,10 +1172,86 @@
         "Planet",
         "Demokratie"
       ],
-      "pageCount": 25,
-      "estimatedReadingTime": "43 Min.",
+      "pageCount": 20,
+      "estimatedReadingTime": "34 Min.",
       "downloadAllowed": true,
       "url": "/bibliothek/nachhaltigkeit-systemarchitektur/"
+    },
+    {
+      "id": "nachhaltigkeit-systemarchitektur-v1-1",
+      "slug": "nachhaltigkeit-systemarchitektur-v1-1",
+      "title": "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur. v1.1",
+      "subtitle": "Zitierfähige Archivfassung der Resilienzpräzisierung",
+      "documentType": "working-paper",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Methodik"
+      ],
+      "level": "expert",
+      "summaryShort": "Archivierte Fassung v1.1 des Grundlagenpapiers; für frühere Zitate unverändert erhalten.",
+      "topics": [
+        "Nachhaltigkeit",
+        "Systemarchitektur",
+        "Systemresilienz",
+        "Archiv"
+      ],
+      "methods": [
+        "Wirkungsarchitektur",
+        "Systemresilienz",
+        "Nichtkompensation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 18,
+      "estimatedReadingTime": "31 Min.",
+      "downloadAllowed": true,
+      "url": "/bibliothek/nachhaltigkeit-systemarchitektur-v1-1/"
+    },
+    {
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "slug": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "title": "Nachhaltigkeit als Systemresilienz",
+      "subtitle": "Resilienzdefinition, Kugelmodell, Klima-Beispiel und mathematische Herleitung",
+      "documentType": "grundlagenpapier",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Fachöffentlichkeit",
+        "Wissenschaft",
+        "Methodik",
+        "Akademie"
+      ],
+      "level": "expert",
+      "summaryShort": "Fachveröffentlichung zur langfristig gesicherten Wirkungsresilienz mit Kugel-Becken-Modell, Klimaformeln und MPD-Herleitung.",
+      "topics": [
+        "Nachhaltigkeit",
+        "Resilienz",
+        "Systemresilienz",
+        "Wirkungsresilienz",
+        "Klima",
+        "Stabilitätslandschaft"
+      ],
+      "methods": [
+        "Systemresilienz",
+        "Wirkungsarchitektur",
+        "Nichtkompensation",
+        "SDGs & SDG+"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 7,
+      "estimatedReadingTime": "12 Min.",
+      "downloadAllowed": true,
+      "url": "/bibliothek/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell/"
     },
     {
       "id": "folgencheck-wirkungspolitische-sprache",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-30T15:13:35.420Z",
-  "count": 2060,
+  "generatedAt": "2026-07-30T18:22:33.615Z",
+  "count": 2071,
   "letters": [
     "#",
     "A",
@@ -77,6 +77,7 @@
       "ankereffekt",
       "anlagenpass",
       "annahmen-und-unsicherheitslandkarte",
+      "anpassungsfaehigkeit",
       "anpassungskapazitaet",
       "anschlussfaehigkeit",
       "anschlusskosten",
@@ -104,6 +105,7 @@
       "assurance",
       "astroturfing",
       "atlas-network",
+      "attraktor",
       "attributionsforschung",
       "audit",
       "aufmerksamkeit",
@@ -270,6 +272,7 @@
     ],
     "D": [
       "d-und-o",
+      "daempfungsfaehigkeit",
       "dao",
       "daoismus",
       "dark-money",
@@ -914,6 +917,7 @@
       "laozi",
       "lastgang",
       "lastmanagement",
+      "latitude",
       "law-and-order",
       "lca",
       "lebensform",
@@ -1195,6 +1199,7 @@
     "P": [
       "pai",
       "paltering",
+      "panarchy",
       "pareto-effizienz",
       "parlament",
       "parlamentarische-demokratie",
@@ -1265,6 +1270,7 @@
       "praeventionsdividende",
       "praeventionsoekonomie",
       "praeventionsschulden",
+      "precariousness",
       "preis-anreiz-und-rueckkopplungs-canvas",
       "pressefreiheit",
       "primaerenergie",
@@ -1416,6 +1422,7 @@
       "resilienz",
       "resilienzarchitektur",
       "resilienzmanagement",
+      "resistance",
       "resonanz",
       "resonanzarchitektur",
       "resonanzprofil",
@@ -1442,6 +1449,7 @@
       "robotersteuer",
       "robotik",
       "robuste-optionen-und-adaptive-wirkungspfade",
+      "robustheit",
       "rohstoffkritikalitaet",
       "roi",
       "rote-linien",
@@ -1457,6 +1465,7 @@
       "ruecknahmefaehigkeit",
       "ruecknahmesystem",
       "rueckschaufehler",
+      "rueckstellfaehigkeit",
       "rueckverstromung"
     ],
     "S": [
@@ -1583,6 +1592,8 @@
       "staatsvolk",
       "staatsziel-umweltschutz",
       "staatsziele-und-verfassungsauftraege",
+      "stabilitaet",
+      "stabilitaetslandschaft",
       "stadtwerke",
       "stafford-beer",
       "stakeholder-ansatz",
@@ -2657,6 +2668,20 @@
       ]
     },
     {
+      "id": "anpassungsfaehigkeit",
+      "label": "Anpassungsfähigkeit / Adaptability",
+      "slug": "anpassungsfaehigkeit",
+      "url": "/begriffe/anpassungsfaehigkeit/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Anpassungsfähigkeit ist die Fähigkeit von Akteuren und Systemen, Regeln, Verhalten, Infrastruktur und Rückkopplungen zu verändern, um Verwundbarkeit innerhalb eines noch tragfähigen Zustandsraums zu reduzieren.",
+      "aliases": [
+        "Anpassungsfähigkeit / Adaptability",
+        "Anpassungsfähigkeit",
+        "Anpassungsfaehigkeit",
+        "Adaptability"
+      ]
+    },
+    {
       "id": "anpassungskapazitaet",
       "label": "Anpassungskapazität",
       "slug": "anpassungskapazitaet",
@@ -2971,6 +2996,19 @@
       "shortDefinition": "Atlas Network ist ein international vernetztes Netzwerk marktwirtschaftlich-libertärer und pro-freedom orientierter Organisationen und Thinktanks.",
       "aliases": [
         "Atlas Network"
+      ]
+    },
+    {
+      "id": "attraktor",
+      "label": "Attraktor",
+      "slug": "attraktor",
+      "url": "/begriffe/attraktor/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Ein Attraktor ist ein Zustand oder Zustandsbereich, zu dem ein dynamisches System unter seinen Bedingungen tendiert.",
+      "aliases": [
+        "Attraktor",
+        "Attraktionsraum",
+        "Basin of attraction"
       ]
     },
     {
@@ -4893,6 +4931,19 @@
       "shortDefinition": "D&O bezeichnet eine Haftpflichtversicherung für Leitungs- und Aufsichtsorgane gegen Vermögensschäden aus Pflichtverletzungen.",
       "aliases": [
         "D&O"
+      ]
+    },
+    {
+      "id": "daempfungsfaehigkeit",
+      "label": "Dämpfungsfähigkeit",
+      "slug": "daempfungsfaehigkeit",
+      "url": "/begriffe/daempfungsfaehigkeit/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Dämpfungsfähigkeit ist die Fähigkeit eines Systems, Schwingungen, Überschwingen, Kaskaden und Sekundärschäden durch Puffer, Reserven, Redundanzen oder institutionelle Mechanismen zu begrenzen.",
+      "aliases": [
+        "Dämpfungsfähigkeit",
+        "Daempfungsfaehigkeit",
+        "Damping capacity"
       ]
     },
     {
@@ -11558,8 +11609,8 @@
       "label": "Kipppunkt / Schwellenwert",
       "slug": "kipppunkt",
       "url": "/begriffe/kipppunkt/",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "shortDefinition": "Ein Kipppunkt ist eine Schwelle, ab der ein System qualitativ in einen anderen Zustand übergeht.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Ein Kipppunkt ist eine kritische Schwelle, ab der ein System qualitativ in einen anderen Zustand oder Attraktionsraum übergeht.",
       "aliases": [
         "Kipppunkt / Schwellenwert",
         "Kipppunkt",
@@ -12661,6 +12712,19 @@
       "shortDefinition": "Lastmanagement steuert Stromverbrauch zeitlich oder mengenmäßig.",
       "aliases": [
         "Lastmanagement"
+      ]
+    },
+    {
+      "id": "latitude",
+      "label": "Latitude",
+      "slug": "latitude",
+      "url": "/begriffe/latitude/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Latitude ist die Breite des Attraktionsraums bis zu einer kritischen Schwelle: der tolerierbare Zustandsbereich vor einem Regimewechsel.",
+      "aliases": [
+        "Latitude",
+        "Toleranzbereich",
+        "Breite des Attraktionsraums"
       ]
     },
     {
@@ -14279,8 +14343,8 @@
       "label": "Nachhaltigkeit",
       "slug": "nachhaltigkeit",
       "url": "/begriffe/nachhaltigkeit/",
-      "category": "Grundbegriff",
-      "shortDefinition": "Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.",
       "aliases": [
         "Nachhaltigkeit",
         "nachhaltig",
@@ -14305,8 +14369,8 @@
       "label": "Nachhaltigkeitsmanagement",
       "slug": "nachhaltigkeitsmanagement",
       "url": "/begriffe/nachhaltigkeitsmanagement/",
-      "category": "Anschlussbegriff / Managementbegriff",
-      "shortDefinition": "Nachhaltigkeitsmanagement umfasst Prozesse, Ziele, Berichte und Maßnahmen, mit denen Organisationen ökologische, soziale und Governance-Themen steuern. WÖk erweitert dies zu Wirkungsmanagement: Nicht nur Berichte, sondern Rückkopplung in Entscheidungen, Preise, Kapital und Strategie zählt.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Nachhaltigkeitsmanagement ist das Management von Beiträgen zur langfristig gesicherten Wirkungsresilienz von Mensch, Planet und Demokratie.",
       "aliases": [
         "Nachhaltigkeitsmanagement"
       ]
@@ -15920,6 +15984,18 @@
       ]
     },
     {
+      "id": "panarchy",
+      "label": "Panarchy",
+      "slug": "panarchy",
+      "url": "/begriffe/panarchy/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Panarchy bezeichnet den Einfluss von Dynamiken anderer räumlicher, zeitlicher oder institutioneller Ebenen auf den betrachteten Systemzustand und seine Stabilitätslandschaft.",
+      "aliases": [
+        "Panarchy",
+        "Skalenübergreifende Dynamik"
+      ]
+    },
+    {
       "id": "pareto-effizienz",
       "label": "Pareto-Effizienz",
       "slug": "pareto-effizienz",
@@ -16787,6 +16863,19 @@
       "shortDefinition": "Präventionsschulden sind öffentliche Schulden, die aufgenommen werden, um absehbare Schäden, Krisen oder Folgekosten zu vermeiden, bevor sie eintreten.",
       "aliases": [
         "Präventionsschulden"
+      ]
+    },
+    {
+      "id": "precariousness",
+      "label": "Precariousness",
+      "slug": "precariousness",
+      "url": "/begriffe/precariousness/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Precariousness beschreibt die aktuelle Nähe und Trajektorie eines Systems relativ zu einer kritischen Schwelle.",
+      "aliases": [
+        "Precariousness",
+        "Prekarität relativ zur Schwelle",
+        "Schwellennähe"
       ]
     },
     {
@@ -18538,8 +18627,8 @@
       "label": "Resilienz",
       "slug": "resilienz",
       "url": "/begriffe/resilienz/",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "shortDefinition": "Resilienz bezeichnet die Fähigkeit eines klar abgegrenzten Systems, Störungen aufzunehmen, sich zu reorganisieren und wesentliche Funktionen, Identität und Rückkopplungen zu erhalten oder wiederherzustellen.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Resilienz ist die Fähigkeit eines Systems, Störungen aufzunehmen, auf sie zu reagieren oder sich neu zu organisieren, dabei wesentliche Funktionen, Identität und Struktur zu erhalten oder wiederherzustellen und zugleich die Fähigkeit zu Anpassung, Lernen und Transformation zu bewahren.",
       "aliases": [
         "Resilienz",
         "soziale Resilienz",
@@ -18551,10 +18640,11 @@
       "label": "Resilienzarchitektur",
       "slug": "resilienzarchitektur",
       "url": "/begriffe/resilienzarchitektur/",
-      "category": "Grundbegriff",
-      "shortDefinition": "Resilienzarchitektur beschreibt das Zusammenspiel von Infrastruktur, Regeln, Kompetenzen, Daten und Beziehungen, das Systeme widerstands- und lernfähig macht.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Resilienzarchitektur ist die gestaltbare Gesamtheit von Grenzen, Daten, Regeln, Institutionen, Puffern, Redundanzen und Rückkopplungen, die Systemresilienz ermöglichen.",
       "aliases": [
-        "Resilienzarchitektur"
+        "Resilienzarchitektur",
+        "Resilience Architecture"
       ]
     },
     {
@@ -18562,12 +18652,24 @@
       "label": "Resilienzmanagement",
       "slug": "resilienzmanagement",
       "url": "/begriffe/resilienzmanagement/",
-      "category": "SDG+, Risiko und Systemresilienz",
-      "shortDefinition": "Resilienzmanagement senkt Verwundbarkeit, erhöht Anpassungsfähigkeit und schützt zentrale Systemfunktionen unter Stress.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Resilienzmanagement ist die bewusste Gestaltung und laufende Prüfung einer Resilienzarchitektur für ein klar bestimmtes System.",
       "aliases": [
         "Resilienzmanagement",
         "Resilience Management",
         "Resilienz-Management"
+      ]
+    },
+    {
+      "id": "resistance",
+      "label": "Resistance",
+      "slug": "resistance",
+      "url": "/begriffe/resistance/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Resistance ist die Schwierigkeit, einen Systemzustand vom Attraktor weg oder über eine Schwelle zu bewegen; sie wird durch Tiefe, Steilheit und Barrieren der Stabilitätslandschaft geprägt.",
+      "aliases": [
+        "Resistance",
+        "Widerstand gegen Zustandsveränderung"
       ]
     },
     {
@@ -18954,6 +19056,17 @@
       ]
     },
     {
+      "id": "robustheit",
+      "label": "Robustheit",
+      "slug": "robustheit",
+      "url": "/begriffe/robustheit/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Robustheit bezeichnet die Fähigkeit eines Systems oder Bauteils, eine gegebene Form oder Leistung trotz Belastung aufrechtzuerhalten.",
+      "aliases": [
+        "Robustheit"
+      ]
+    },
+    {
       "id": "rohstoffkritikalitaet",
       "label": "Rohstoffkritikalität",
       "slug": "rohstoffkritikalitaet",
@@ -19073,8 +19186,8 @@
       "label": "Rückkopplung",
       "slug": "rueckkopplung",
       "url": "/begriffe/rueckkopplung/",
-      "category": "Glossar-Erweiterung",
-      "shortDefinition": "Rückkopplung liegt vor, wenn Ergebnisse, Schäden, Nebenwirkungen oder Verbesserungen wieder auf das System zurückwirken und spätere Entscheidungen verändern.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Rückkopplung liegt vor, wenn Ergebnisse, Schäden, Nebenwirkungen oder Verbesserungen wieder auf ein System zurückwirken und spätere Entscheidungen oder Zustände verändern.",
       "aliases": [
         "Rückkopplung",
         "Feedback"
@@ -19140,6 +19253,19 @@
       "shortDefinition": "Nach einem Ereignis erscheint dessen Eintritt vorhersehbarer, als er tatsächlich war.",
       "aliases": [
         "Rückschaufehler"
+      ]
+    },
+    {
+      "id": "rueckstellfaehigkeit",
+      "label": "Rückstellfähigkeit",
+      "slug": "rueckstellfaehigkeit",
+      "url": "/begriffe/rueckstellfaehigkeit/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Rückstellfähigkeit ist die Fähigkeit eines Systems, nach Wegfall einer Störung durch stabilisierende, korrektive oder regenerative Rückkopplungen in einen tragfähigen Funktionsbereich zurückzukehren.",
+      "aliases": [
+        "Rückstellfähigkeit",
+        "Rueckstellfaehigkeit",
+        "Restorative capacity"
       ]
     },
     {
@@ -20673,6 +20799,32 @@
       ]
     },
     {
+      "id": "stabilitaet",
+      "label": "Stabilität",
+      "slug": "stabilitaet",
+      "url": "/begriffe/stabilitaet/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Stabilität beschreibt die Eigenschaft eines Zustands oder Systems, unter bestimmten Bedingungen nicht stark zu schwanken oder nach einer Abweichung in einen Funktionsbereich zurückzufinden.",
+      "aliases": [
+        "Stabilität",
+        "Systemstabilität"
+      ]
+    },
+    {
+      "id": "stabilitaetslandschaft",
+      "label": "Stabilitätslandschaft",
+      "slug": "stabilitaetslandschaft",
+      "url": "/begriffe/stabilitaetslandschaft/",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Eine Stabilitätslandschaft veranschaulicht Zustandsräume, Attraktoren, Schwellen und Trajektorien als Kugel in einer Landschaft aus Mulden und Barrieren.",
+      "aliases": [
+        "Stabilitätslandschaft",
+        "Stabilitaetslandschaft",
+        "Kugel-Becken-Modell",
+        "Kugelmodell"
+      ]
+    },
+    {
       "id": "stadtwerke",
       "label": "Stadtwerke",
       "slug": "stadtwerke",
@@ -21498,7 +21650,7 @@
       "slug": "systemresilienz",
       "url": "/begriffe/systemresilienz/",
       "category": "Systeme, Steuerung und Resilienz",
-      "shortDefinition": "Systemresilienz bezeichnet die Fähigkeit eines gekoppelten Systems, Belastungen innerhalb tragfähiger Grenzen aufzunehmen, zentrale Funktionen durch stabilisierende, korrektive und regenerative Rückkopplungen zu erhalten oder wiederherzustellen, Abstand zu kritischen Schwellen zu bewahren, Einflüsse anderer Ebenen zu verarbeiten und lernfähig zu bleiben.",
+      "shortDefinition": "Systemresilienz bezeichnet die Fähigkeit eines klar abgegrenzten Systems, Störungen zu verarbeiten, wesentliche Funktionen unter Belastung zu erhalten, wiederherzustellen oder angepasst fortzuführen und seine Anpassungs-, Lern- und Transformationsfähigkeit zu bewahren.",
       "aliases": [
         "Systemresilienz",
         "systemische Resilienz",
@@ -22196,18 +22348,20 @@
     },
     {
       "id": "transformationsfaehigkeit",
-      "label": "Transformationsfähigkeit",
+      "label": "Transformationsfähigkeit / Transformability",
       "slug": "transformationsfaehigkeit",
       "url": "/begriffe/transformationsfaehigkeit/",
-      "category": "Transformation, Lernfähigkeit & Zukunftsfähigkeit",
-      "shortDefinition": "Transformationsfähigkeit ist die Fähigkeit von Menschen, Organisationen, Institutionen und Gesellschaften, notwendige Veränderung als lernfähige Normalität zu gestalten und in Richtung positiver Netto-Wirkung zu steuern.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Transformationsfähigkeit ist die Fähigkeit, einen grundsätzlich neuen, tragfähigen Systemzustand oder Attraktionsraum zu schaffen, wenn der bisherige Zustand unerwünscht oder unhaltbar ist.",
       "aliases": [
+        "Transformationsfähigkeit / Transformability",
         "Transformationsfähigkeit",
         "Transformationsfaehigkeit",
         "Transformationskompetenz",
         "Veränderungsfähigkeit",
         "Veraenderungsfaehigkeit",
-        "Transformation capability"
+        "Transformation capability",
+        "Transformability"
       ]
     },
     {
@@ -26293,8 +26447,8 @@
       "label": "Wirkungsresilienz",
       "slug": "wirkungsresilienz",
       "url": "/begriffe/wirkungsresilienz/",
-      "category": "Risiko, Resilienz & Lernfähigkeit",
-      "shortDefinition": "Wirkungsresilienz bezeichnet in der Wirkungsökonomie die lernfähige und normativ gebundene Resilienz des gekoppelten Systems Mensch–Planet–Demokratie.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "shortDefinition": "Wirkungsresilienz bezeichnet in der Wirkungsökonomie die lernfähige und normativ an Mensch, Planet und Demokratie gebundene Resilienz des gekoppelten Systems.",
       "aliases": [
         "Wirkungsresilienz",
         "Resilienz nach Wirkung",

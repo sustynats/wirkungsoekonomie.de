@@ -1,12 +1,12 @@
 # Public Language Audit
 
-Stand: 2026-07-15T11:12:10.417Z
+Stand: 2026-07-30T18:21:27.771Z
 
 ## Zusammenfassung
 
-- Geprüfte HTML-Dateien: 6161
-- Sichtbare Blocklist-Treffer: 76
-- Technische canonical-Tags: 2390
+- Geprüfte HTML-Dateien: 6181
+- Sichtbare Blocklist-Treffer: 67
+- Technische canonical-Tags: 2409
 
 ## Befunde
 
@@ -20,22 +20,13 @@ Stand: 2026-07-15T11:12:10.417Z
 | `begriffe/index.html` | v0.1 | politik / WÖk-Prägungsbegriff / Risiko- und Zustandsbegriff · Version Glossar-Erweiterung v0.1 Strandinggefährdeter Kredit Ein strandinggefährdeter Kredit ist ein Kredit, dessen Rückza | entfernen oder nutzerverständlich ersetzen |
 | `begriffe/index.html` | v0.1 | litik / WÖk-Prägungsbegriff / Staats- und Governancebegriff · Version Glossar-Erweiterung v0.1 Wirkungskapital Wirkungskapital ist Kapital, das gezielt zur Erzeugung positiver Netto-Wi | entfernen oder nutzerverständlich ersetzen |
 | `begriffe/outcome-und-empfaengerlandkarte/index.html` | Outputs | und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen. Methodenbegriff Stand / Version 2.0 Alle Begriffe Website durchsuchen Auf einen B | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/outcome-und-empfaengerlandkarte/index.html` | Outputs | und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen. Der Begriff gehört zum Bereich WÖMS Methodensystem und dient der präzisen Wirkung | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/outcome-und-empfaengerlandkarte/index.html` | Outputs | und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen. Wirkungsökonomie Einordnung in der Wirkungsökonomie C04 gehört zur Kategorie „Wir | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/outcome-und-empfaengerlandkarte/index.html` | Outputs | und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen. Im Bereich WÖMS Methodensystem hilft der Begriff, nicht nur über ein Schlagwort z | entfernen oder nutzerverständlich ersetzen |
 | `begriffe/refinanzierungsresilienz/index.html` | v0.1 | k / WÖk-Prägungsbegriff / Resilienz- und Makrobegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Refinanzierungsresilienz beschreibt, ob | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/souveraenes-stranding-risiko/index.html` | v0.1 | itik / WÖk-Prägungsbegriff / Risiko- und Makrobegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Souveränes Stranding-Risiko beschreibt  | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/stranded-sovereign/index.html` | v0.1 | k / WÖk-Prägungsbegriff / Risiko- und Zustandsbegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Ein Stranded Sovereign ist ein Staat, d | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/souveraenes-stranding-risiko/index.html` | v0.1 | itik / WÖk-Prägungsbegriff / Risiko- und Makrobegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Souveränes Stranding-Risiko ist das Ris | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/stranded-sovereign/index.html` | v0.1 | k / WÖk-Prägungsbegriff / Risiko- und Zustandsbegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Stranded Sovereign bezeichnet den Zusta | entfernen oder nutzerverständlich ersetzen |
 | `begriffe/wirkpfad/index.html` | Outputs | ffe / Wirkungspfad Methodenbegriff Wirkungspfad Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen. Methodenbegriff | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/wirkpfad/index.html` | Outputs | le Begriffe Website durchsuchen Auf einen Blick Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen. Der Begriff geh | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/wirkpfad/index.html` | Outputs | , Wirkung. Definition Was bedeutet der Begriff? Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen. Wirkungsökonomi | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/wirkpfad/index.html` | Outputs | , welche Wirkungsfrage überhaupt sichtbar wird. Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen. Im Bereich WÖMS | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/wirkungskapazitaet-des-staates/index.html` | v0.1 | / WÖk-Prägungsbegriff / Staats- und Governancebegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Wirkungskapazität bezeichnet die Fähigk | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/wirkungsrealisierungsarchitektur/index.html` | Outputs | erfügbarer Zustandsveränderung. Abgrenzung Abgrenzung Weder Projektplan noch Organigramm; Outputs und installierte Systeme gelten ohne Nutzung, Adoption, Benefit und Wirkungsrückkopplung  | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/wirkungskapazitaet-des-staates/index.html` | v0.1 | / WÖk-Prägungsbegriff / Staats- und Governancebegriff Stand / Version Glossar-Erweiterung v0.1 Alle Begriffe Website durchsuchen Auf einen Blick Wirkungskapazität des Staates beschreib | entfernen oder nutzerverständlich ersetzen |
+| `begriffe/wirkungsrealisierungsarchitektur/index.html` | Outputs | tung der tatsächlichen Wirkung. Abgrenzung Abgrenzung Weder Projektplan noch Organigramm; Outputs und installierte Systeme gelten ohne Nutzung, Adoption, Benefit und Wirkungsrückkopplung  | entfernen oder nutzerverständlich ersetzen |
 | `begriffe/woems-methodenkarte/index.html` | Inputs | odenbegriff WÖMS-Methodenkarte Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln eine | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/woems-methodenkarte/index.html` | Inputs | te durchsuchen Auf einen Blick Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln eine | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/woems-methodenkarte/index.html` | Inputs | tion Was bedeutet der Begriff? Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln eine | entfernen oder nutzerverständlich ersetzen |
-| `begriffe/woems-methodenkarte/index.html` | Inputs | frage überhaupt sichtbar wird. Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln eine | entfernen oder nutzerverständlich ersetzen |
 | `wirkungsradar/embed/index.html` | sichtbarer Markup-Rest | bed/card/migration-kostet-nur/" title="Debattenkarte: Migration kostet nur?" loading="lazy"></iframe> Deutschland nur 2 Prozent? 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirk | HTML/Markdown-Sanitizer prüfen; sichtbare Markup-Reste entfernen |
 | `wirkungsradar/embed/index.html` | sichtbarer Markup-Rest | d/card/migration-kostet-nur/" title="Debattenkarte: Migration kostet nur?" loading="lazy"></iframe> Deutschland nur 2 Prozent? 2 % zählt nur, was hier ausgestoßen wird. Unsere Wirkung läuft | HTML/Markdown-Sanitizer prüfen; sichtbare Markup-Reste entfernen |
 | `wirkungsradar/embed/index.html` | sichtbarer Markup-Rest | schland-nur-zwei-prozent/" title="Debattenkarte: Deutschland nur 2 Prozent?" loading="lazy"></iframe> Windräder zerstören Natur? Gute Windkraft beginnt mit Planung: passende Standort | HTML/Markdown-Sanitizer prüfen; sichtbare Markup-Reste entfernen |
